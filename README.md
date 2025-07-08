@@ -17,8 +17,7 @@ daily-feed/
 │   └── utils/        # 유틸리티 함수
 ├── config.json       # 설정 파일
 ├── feeds.csv         # RSS 피드 목록
-└── main.go           # 기존 코드
-└── main-refactored.go # 리팩토링된 코드
+└── main.go           # 애플리케이션 진입점
 ```
 
 ## 주요 개선사항
@@ -52,12 +51,29 @@ daily-feed/
 
 ### 빌드 및 실행
 ```bash
-# 리팩토링된 버전 실행
-go run main-refactored.go
+# 직접 실행
+go run .
 
 # 또는 빌드 후 실행
-go build -o daily-feed main-refactored.go
+go build -o daily-feed .
 ./daily-feed
+```
+
+### 출력 방식
+프로그램은 결과를 **표준 출력(stdout)**으로 출력합니다.
+
+```bash
+# 표준 출력으로 결과 확인
+./daily-feed
+
+# 파일로 저장
+./daily-feed > daily-feed-$(date +%Y-%m-%d).md
+
+# 클립보드에 복사 (macOS)
+./daily-feed | pbcopy
+
+# 다른 명령과 파이프라인 연결
+./daily-feed | grep "AI" | head -5
 ```
 
 ### 설정 파일 (config.json)
@@ -73,6 +89,15 @@ go build -o daily-feed main-refactored.go
 ### 환경변수
 ```bash
 export GEMINI_API_KEY="your-gemini-api-key"
+```
+
+### macOS 단축어와 연동
+macOS 단축어 앱에서 "셸 스크립트 실행" 액션을 사용하여 연동할 수 있습니다:
+
+```bash
+cd /Users/your-username/path/to/daily-feed
+source ~/.zshrc  # 환경변수 로드
+./daily-feed | pbcopy  # 실행 후 클립보드에 복사
 ```
 
 ## 아키텍처 원칙
