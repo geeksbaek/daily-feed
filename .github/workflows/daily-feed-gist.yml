@@ -27,7 +27,11 @@ jobs:
     
     - name: Build daily-feed
       env:
-        NO_PROXY: "${{ secrets.NO_PROXY }},proxy.golang.org,sum.golang.org,golang.org"
+        HTTP_PROXY: ""
+        HTTPS_PROXY: ""
+        NO_PROXY: ""
+        GOPROXY: direct
+        GOSUMDB: off
       run: go build -o daily-feed .
     
     - name: Generate daily feed and create gist
