@@ -13,6 +13,8 @@ jobs:
       HTTPS_PROXY: ${{ secrets.HTTPS_PROXY }}
       NO_PROXY: ${{ secrets.NO_PROXY }}
       GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      GOPROXY: direct
+      GOSUMDB: off
 
     steps:
     - name: Checkout repository
