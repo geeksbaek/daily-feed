@@ -26,10 +26,9 @@ jobs:
         go-version-file: go.mod
     
     - name: Build daily-feed
-      run: |
-        go env -w GOPROXY=https://proxy.golang.org,direct
-        go env -w GOSUMDB=sum.golang.org
-        go build -o daily-feed .
+      env:
+        NO_PROXY: "${{ secrets.NO_PROXY }},proxy.golang.org,sum.golang.org,golang.org"
+      run: go build -o daily-feed .
     
     - name: Generate daily feed and create gist
       run: |
