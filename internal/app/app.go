@@ -90,5 +90,11 @@ func (a *App) Run(ctx context.Context) error {
 		a.logger.Error("AI 요약 생성 중 오류: %v", summary.Error)
 	}
 
-	return a.outputWriter.WriteMarkdown(allItems, summary)
+	output, err := a.outputWriter.WriteMarkdown(allItems, summary)
+	if err != nil {
+		return fmt.Errorf("출력 생성 실패: %w", err)
+	}
+	
+	fmt.Print(output)
+	return nil
 }
