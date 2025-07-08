@@ -14,12 +14,14 @@ type Logger interface {
 type defaultLogger struct {
 	infoLogger  *log.Logger
 	errorLogger *log.Logger
+	fatalLogger *log.Logger
 }
 
 func New() Logger {
 	return &defaultLogger{
-		infoLogger:  log.New(os.Stdout, "INFO: ", log.LstdFlags),
+		infoLogger:  log.New(os.Stderr, "INFO: ", log.LstdFlags),
 		errorLogger: log.New(os.Stderr, "ERROR: ", log.LstdFlags),
+		fatalLogger: log.New(os.Stderr, "FATAL: ", log.LstdFlags),
 	}
 }
 
@@ -41,8 +43,8 @@ func (l *defaultLogger) Error(msg string, args ...interface{}) {
 
 func (l *defaultLogger) Fatal(msg string, args ...interface{}) {
 	if len(args) > 0 {
-		l.errorLogger.Fatalf(msg, args...)
+		l.fatalLogger.Fatalf(msg, args...)
 	} else {
-		l.errorLogger.Fatal(msg)
+		l.fatalLogger.Fatal(msg)
 	}
 }
