@@ -9,12 +9,7 @@ jobs:
   create-daily-feed-gist:
     runs-on: "kakao-runner"
     env:
-      HTTP_PROXY: ${{ secrets.HTTP_PROXY }}
-      HTTPS_PROXY: ${{ secrets.HTTPS_PROXY }}
-      NO_PROXY: ${{ secrets.NO_PROXY }}
       GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-      GOPROXY: "https://proxy.golang.org,direct"
-      GOSUMDB: "sum.golang.org"
 
     steps:
     - name: Checkout repository
@@ -26,17 +21,15 @@ jobs:
         go-version-file: go.mod
     
     - name: Build daily-feed
-      env:
-        HTTP_PROXY: ""
-        HTTPS_PROXY: ""
-        NO_PROXY: ""
-        GOPROXY: direct
-        GOSUMDB: off
       run: go build -o daily-feed .
     
     - name: Generate daily feed and create gist
+      env:
+        HTTP_PROXY: ${{ secrets.HTTP_PROXY }}
+        HTTPS_PROXY: ${{ secrets.HTTPS_PROXY }}
+        NO_PROXY: ${{ secrets.NO_PROXY }}
       run: |
-        # daily-feed 실행하여 출력을 변수로 저장
+        # daily-feed 실행하여 출력을 변수로 저장 (Gemini API 호출 시 프록시 사용)
         FEED_OUTPUT=$(./daily-feed)
         
         # 현재 날짜 생성
