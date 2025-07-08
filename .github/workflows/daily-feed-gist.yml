@@ -1,0 +1,60 @@
+name: Daily Feed to Gist
+
+on:
+  schedule:
+    - cron: '0 22 * * *'  # 매일 오전 7시 KST (UTC 22:00)
+  workflow_dispatch:  # 수동 실행 가능
+
+jobs:
+  create-daily-feed-gist:
+    runs-on: "kakao-runner"
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    
+    - name: Set up Go
+      uses: actions/setup-go@v4
+      with:
+        go-version-file: go.mod
+    
+    - name: Build daily-feed
+      run: go build -o daily-feed .
+    
+    - name: Generate daily feed
+      run: ./daily-feed
+    
+    - name: Get latest feed file
+      id: get-feed
+      run: |
+        # 가장 최근 생성된 daily-feed 파일 찾기
+        LATEST_FILE=$(ls -t daily-feed-*.md | head -n 1)
+        echo "latest_file=$LATEST_FILE" >> $GITHUB_OUTPUT
+        
+        # 파일 내용 읽기
+        CONTENT=$(cat "$LATEST_FILE")
+        echo "content<<EOF" >> $GITHUB_OUTPUT
+        echo "$CONTENT" >> $GITHUB_OUTPUT
+        echo "EOF" >> $GITHUB_OUTPUT
+        
+        # 파일명에서 날짜 추출
+        DATE=$(echo "$LATEST_FILE" | sed 's/daily-feed-\([0-9-]*\)-.*/\1/')
+        echo "date=$DATE" >> $GITHUB_OUTPUT
+    
+    - name: Create Gist
+      run: |
+        # Gist 생성
+        curl -X POST \
+          -H "Authorization: token ${{ secrets.BEANS_GITHUB_TOKEN }}" \
+          -H "Accept: application/vnd.github.v3+json" \
+          -H "Content-Type: application/json" \
+          https://api.github.com/gists \
+          -d '{
+            "description": "Daily Feed - ${{ steps.get-feed.outputs.date }}",
+            "public": false,
+            "files": {
+              "daily-feed-${{ steps.get-feed.outputs.date }}.md": {
+                "content": ${{ toJson(steps.get-feed.outputs.content) }}
+              }
+            }
+          }'
