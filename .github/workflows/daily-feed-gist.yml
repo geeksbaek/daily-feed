@@ -23,6 +23,8 @@ jobs:
     
     - name: Generate daily feed
       run: ./daily-feed
+      env:
+        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
     
     - name: Get latest feed file
       id: get-feed
