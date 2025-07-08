@@ -39,7 +39,7 @@ jobs:
           -H "Authorization: token ${{ secrets.BEANS_GITHUB_TOKEN }}" \
           -H "Accept: application/vnd.github.v3+json" \
           -H "Content-Type: application/json" \
-          https://api.github.com/gists \
+          https://github.daumkakao.com/api/v3/gists \
           -d "{
             \"description\": \"Daily Feed - $DATE\",
             \"public\": false,
