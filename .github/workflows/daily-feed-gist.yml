@@ -8,7 +8,12 @@ on:
 jobs:
   create-daily-feed-gist:
     runs-on: "kakao-runner"
-    
+    env:
+      HTTP_PROXY: ${{ secrets.HTTP_PROXY }}
+      HTTPS_PROXY: ${{ secrets.HTTPS_PROXY }}
+      NO_PROXY: ${{ secrets.NO_PROXY }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
@@ -44,7 +49,4 @@ jobs:
               }
             }
           }"
-      env:
-        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        NO_PROXY: ${{ secrets.NO_PROXY }}
     
