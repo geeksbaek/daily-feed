@@ -30,7 +30,7 @@ func (c *Config) Validate() error {
 	if c.SummaryPreset == "" {
 		return fmt.Errorf("summary_preset이 설정되지 않았습니다")
 	}
-	validPresets := []string{"default", "simple", "executive", "developer", "casual"}
+	validPresets := []string{"default", "developer", "casual", "community"}
 	isValid := false
 	for _, preset := range validPresets {
 		if c.SummaryPreset == preset {

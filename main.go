@@ -17,7 +17,7 @@ func main() {
 	geminiModel := flag.String("model", "gemini-2.5-pro", "Gemini 모델명")
 	cutoffHours := flag.Int("cutoff", 24, "피드 수집 시간 범위 (시간)")
 	httpTimeout := flag.Int("timeout", 15, "HTTP 요청 타임아웃 (초)")
-	summaryPreset := flag.String("preset", "default", "요약 프리셋 (default, simple, executive, developer, casual)")
+	summaryPreset := flag.String("preset", "default", "요약 프리셋 (default, developer, casual, community)")
 	flag.Parse()
 
 	ctx, cancel := context.WithCancel(context.Background())
