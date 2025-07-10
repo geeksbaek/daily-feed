@@ -1,6 +1,5 @@
 # Daily Feed - 2025-07-10
 
-<REPORT_STRUCTURE_START>
 ## 📊 Executive Summary
 
 생성형 AI가 실험 단계를 지나 소비자 기기, 기업용 클라우드 플랫폼, 핵심 비즈니스 프로세스에 깊숙이 통합되고 있습니다. Google[^2]과 같은 기업들은 Gemini[^9] AI 모델을 검색[^5], 웨어러블[^7], 안드로이드 생태계[^7] 전반에 걸쳐 상용화하며 시장 선점에 나서고 있습니다. 이는 데이터 분석[^1][^8], 고객 경험[^18], 운영 효율성[^2] 측면에서 즉각적인 비즈니스 가치를 창출하고 있습니다.
@@ -34,8 +33,6 @@
 - **대화형 분석 도구 도입 검토:** Conversational Analytics API[^8]와 같은 자연어 기반 데이터 분석 도구를 시범 도입하여 비전문가의 데이터 접근성 및 활용도를 높이는 방안을 평가해야 합니다.
 - **에이전트 AI의 비즈니스 적용 탐색:** 고객 서비스, 내부 업무 자동화 등 특정 영역에서 AI 에이전트[^15] 도입의 ROI를 분석하고, 프로토타입 개발을 고려해야 합니다.
 - **AI 신뢰성 및 주권 정책 수립:** Google Cloud[^2]가 영국 내 데이터 처리를 보장하는 것처럼, 비즈니스에 도입할 AI 서비스의 데이터 주권 및 보안 정책을 명확히 하고, 모델의 신뢰성 검증 방안을 마련해야 합니다.[^2]
-
-<REPORT_STRUCTURE_END>
 [^1]: BigQuery ML TimesFM models now in preview | Google Cloud Blog - https://cloud.google.com/blog/products/data-analytics/bigquery-ml-timesfm-models-now-in-preview/
 [^2]: Powering the UK's AI future: News from Google Cloud Summit London - https://cloud.google.com/blog/topics/inside-google-cloud/london-summit-2025-gen-ai-agents-transforming-business-civil-service/
 [^3]: Target Concrete Score Matching: A Holistic Framework for Discrete Diffusion - https://machinelearning.apple.com/research/target-concrete

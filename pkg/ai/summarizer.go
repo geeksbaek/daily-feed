@@ -165,7 +165,7 @@ func (s *geminiSummarizer) getDefaultSystemPrompt() string {
 - 응답은 반드시 "## 🌅 오늘의 테크 헤드라인"으로 시작해야 합니다
 - 어떤 메타 정보나 과정 설명도 포함하지 말고, 순수한 뉴스 브리핑만 제공하세요
 - GitHub Flavored Markdown을 완벽히 지원하도록 작성하세요
-- ⚠️ <REPORT_STRUCTURE_START>와 <REPORT_STRUCTURE_END> 사이의 구조를 정확히 복제하세요
+- ⚠️ <REPORT_STRUCTURE_START>와 <REPORT_STRUCTURE_END> 사이의 구조만 복제하세요 (태그 자체는 출력하지 마세요)
 
 **인용 규칙:**
 - 🚨 CRITICAL: 본문에 인용 없으면 완전히 실패입니다! 🚨
@@ -224,7 +224,7 @@ func (s *geminiSummarizer) getSimpleSystemPrompt() string {
 - 응답은 반드시 "## 🌅 오늘의 기술 소식"으로 시작해야 합니다
 - 어떤 메타 정보나 과정 설명도 포함하지 말고, 순수한 뉴스 브리핑만 제공하세요
 - GitHub Flavored Markdown을 완벽히 지원하도록 작성하세요
-- ⚠️ <REPORT_STRUCTURE_START>와 <REPORT_STRUCTURE_END> 사이의 구조를 정확히 복제하세요
+- ⚠️ <REPORT_STRUCTURE_START>와 <REPORT_STRUCTURE_END> 사이의 구조만 복제하세요 (태그 자체는 출력하지 마세요)
 
 **인용 규칙:**
 - 🚨 CRITICAL: 본문에 인용 없으면 완전히 실패입니다! 🚨
@@ -282,7 +282,7 @@ func (s *geminiSummarizer) getExecutiveSystemPrompt() string {
 - 응답은 반드시 "## 📊 Executive Summary"로 시작해야 합니다
 - 어떤 메타 정보나 과정 설명도 포함하지 말고, 순수한 전략 브리핑만 제공하세요
 - GitHub Flavored Markdown을 완벽히 지원하도록 작성하세요
-- ⚠️ <REPORT_STRUCTURE_START>와 <REPORT_STRUCTURE_END> 사이의 구조를 정확히 복제하세요
+- ⚠️ <REPORT_STRUCTURE_START>와 <REPORT_STRUCTURE_END> 사이의 구조만 복제하세요 (태그 자체는 출력하지 마세요)
 
 **인용 규칙:**
 - 🚨 CRITICAL: 본문에 인용 없으면 완전히 실패입니다! 🚨
@@ -340,7 +340,7 @@ func (s *geminiSummarizer) getDeveloperSystemPrompt() string {
 - 응답은 반드시 "## 🚀 Dev Daily Digest"로 시작해야 합니다
 - 어떤 메타 정보나 과정 설명도 포함하지 말고, 순수한 개발 뉴스만 제공하세요
 - GitHub Flavored Markdown을 완벽히 지원하도록 작성하세요
-- ⚠️ <REPORT_STRUCTURE_START>와 <REPORT_STRUCTURE_END> 사이의 구조를 정확히 복제하세요
+- ⚠️ <REPORT_STRUCTURE_START>와 <REPORT_STRUCTURE_END> 사이의 구조만 복제하세요 (태그 자체는 출력하지 마세요)
 
 **인용 규칙:**
 - 🚨 CRITICAL: 본문에 인용 없으면 완전히 실패입니다! 🚨
@@ -395,7 +395,7 @@ func (s *geminiSummarizer) getCasualSystemPrompt() string {
 - 응답은 반드시 "## 👋 오늘 뭐 재미있는 일 있었냐면..."으로 시작해야 합니다
 - 어떤 메타 정보나 과정 설명도 포함하지 말고, 순수한 캐주얼 뉴스만 제공하세요
 - GitHub Flavored Markdown을 완벽히 지원하도록 작성하세요
-- ⚠️ <REPORT_STRUCTURE_START>와 <REPORT_STRUCTURE_END> 사이의 구조를 정확히 복제하세요
+- ⚠️ <REPORT_STRUCTURE_START>와 <REPORT_STRUCTURE_END> 사이의 구조만 복제하세요 (태그 자체는 출력하지 마세요)
 
 **인용 규칙:**
 - 🚨 CRITICAL: 본문에 인용 없으면 완전히 실패입니다! 🚨
