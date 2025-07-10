@@ -13,8 +13,11 @@ import (
 
 func main() {
 	// 플래그 정의
-	configFile := flag.String("config", "config.json", "설정 파일 경로")
-	summaryPreset := flag.String("preset", "", "요약 프리셋 (default, simple, executive, developer, casual)")
+	feedsFile := flag.String("feeds", "feeds.csv", "RSS 피드 목록 파일 경로")
+	geminiModel := flag.String("model", "gemini-2.5-pro", "Gemini 모델명")
+	cutoffHours := flag.Int("cutoff", 24, "피드 수집 시간 범위 (시간)")
+	httpTimeout := flag.Int("timeout", 15, "HTTP 요청 타임아웃 (초)")
+	summaryPreset := flag.String("preset", "default", "요약 프리셋 (default, simple, executive, developer, casual)")
 	flag.Parse()
 
 	ctx, cancel := context.WithCancel(context.Background())
@@ -27,7 +30,7 @@ func main() {
 		cancel()
 	}()
 
-	application, err := app.New(*configFile, *summaryPreset)
+	application, err := app.New(*feedsFile, *geminiModel, *cutoffHours, *httpTimeout, *summaryPreset)
 	if err != nil {
 		log.Fatal(err)
 	}
