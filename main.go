@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"flag"
 	"log"
 	"os"
 	"os/signal"
@@ -11,6 +12,11 @@ import (
 )
 
 func main() {
+	// 플래그 정의
+	configFile := flag.String("config", "config.json", "설정 파일 경로")
+	summaryPreset := flag.String("preset", "", "요약 프리셋 (default, simple, executive, developer, casual)")
+	flag.Parse()
+
 	ctx, cancel := context.WithCancel(context.Background())
 	defer cancel()
 
@@ -21,7 +27,7 @@ func main() {
 		cancel()
 	}()
 
-	application, err := app.New("config.json")
+	application, err := app.New(*configFile, *summaryPreset)
 	if err != nil {
 		log.Fatal(err)
 	}
