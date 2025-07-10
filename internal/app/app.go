@@ -23,17 +23,16 @@ type App struct {
 	outputWriter ai.OutputWriter
 }
 
-func New(configFile, summaryPreset string) (*App, error) {
+func New(feedsFile, geminiModel string, cutoffHours, httpTimeout int, summaryPreset string) (*App, error) {
 	logger := logger.New()
 
-	cfg, err := config.Load(configFile)
-	if err != nil {
-		return nil, fmt.Errorf("설정 로드 실패: %w", err)
-	}
-
-	// 플래그로 전달된 프리셋이 있으면 덮어쓰기
-	if summaryPreset != "" {
-		cfg.SummaryPreset = summaryPreset
+	// Config 구조체 직접 생성
+	cfg := &config.Config{
+		FeedsFile:     feedsFile,
+		GeminiModel:   geminiModel,
+		CutoffHours:   cutoffHours,
+		HTTPTimeout:   httpTimeout,
+		SummaryPreset: summaryPreset,
 	}
 
 	if err := cfg.Validate(); err != nil {
