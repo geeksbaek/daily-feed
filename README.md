@@ -37,7 +37,7 @@ daily-feed/
 - **기본값 처리**: 합리적인 기본값 제공
 
 ### 4. 다중 프리셋 시스템
-- **5가지 프리셋**: Executive, Developer, Casual, Default, Simple
+- **4가지 프리셋**: Developer, Casual, Community, Default
 - **유연한 설정**: 명령행 플래그로 실시간 변경 가능
 - **대상별 최적화**: 독자층에 맞는 톤과 구조
 - **확장 가능**: 새로운 프리셋 쉽게 추가 가능
@@ -87,13 +87,12 @@ go build -o daily-feed .
 ./daily-feed
 
 # 프리셋 지정
-./daily-feed --preset executive
 ./daily-feed --preset developer
 ./daily-feed --preset casual
-./daily-feed --preset simple
+./daily-feed --preset community
 
 # 상세 설정
-./daily-feed --feeds feeds.csv --model gemini-2.5-pro --cutoff 24 --timeout 15 --preset executive
+./daily-feed --feeds feeds.csv --model gemini-2.5-pro --cutoff 24 --timeout 15 --preset developer
 
 # 피드 파일 변경
 ./daily-feed --feeds my-feeds.csv --preset developer
@@ -125,18 +124,7 @@ source ~/.zshrc  # 환경변수 로드
 
 ## 요약 프리셋
 
-Daily Feed는 다양한 독자층을 위한 5가지 요약 프리셋을 제공합니다:
-
-### 📊 Executive (`--preset executive`)
-**대상**: 기업 임원, 의사결정자  
-**특징**: 2분 내 읽을 수 있는 전략적 비즈니스 분석
-- 핵심 비즈니스 임팩트 요약
-- 시장 규모, 성장률, 투자 동향
-- 주요 기업 전략, M&A, 파트너십
-- 새로운 기회와 잠재적 위험 요소
-- 검토가 필요한 전략적 포인트
-
-**[샘플 보기](samples/summary_executive.md)**
+Daily Feed는 다양한 독자층을 위한 4가지 요약 프리셋을 제공합니다:
 
 ### 🚀 Developer (`--preset developer`)
 **대상**: 소프트웨어 개발자, 엔지니어  
@@ -149,15 +137,25 @@ Daily Feed는 다양한 독자층을 위한 5가지 요약 프리셋을 제공�
 
 **[샘플 보기](samples/summary_developer.md)**
 
-### 👋 Casual (`--preset casual`)
+### 🗞️ Casual (`--preset casual`)
 **대상**: 일반 기술 관심자  
-**특징**: 친구가 들려주는 편안한 톤의 기술 소식
-- 친근하고 대화체 문장 ("이거 진짜 대박이야")
-- 개인적 의견과 재미있는 관점 포함
-- 유머러스하고 재미있는 분석
-- 기술 관련 잡지식과 TMI
+**특징**: 친구가 카톡으로 보내는 것 같은 편안한 기술 소식
+- 자연스러운 대화체 사용 ("이거 진짜 신기하다")
+- 개인적 해석과 흥미로운 포인트 강조
+- 때로는 비판적이거나 의외의 관점도 제시
+- 생생하고 개성 있는 관점 제공
 
 **[샘플 보기](samples/summary_casual.md)**
+
+### 💬 Community (`--preset community`)
+**대상**: 커뮤니티 활동 베테랑, 밈 문화 애호가  
+**특징**: 인터넷 커뮤니티 특유의 은어와 밈을 활용한 날카로운 기술 소식
+- 디시인사이드, 클리앙, 레딧 등 커뮤니티 말투 완벽 구현
+- 냉소적이면서도 정확한 분석과 예리한 통찰력
+- "ㅋㅋㅋ", "ㄹㅇ", "갓", "레전드", "팩트" 등 커뮤니티 은어 활용
+- 적절한 비꼬기와 츤데레식 표현으로 재미와 정보 전달 양립
+
+**[샘플 보기](samples/summary_community.md)**
 
 ### 🎓 Default (`--preset default`)
 **대상**: 대학생, 일반 성인  
@@ -168,16 +166,6 @@ Daily Feed는 다양한 독자층을 위한 5가지 요약 프리셋을 제공�
 - 자연스럽고 읽기 편한 문체
 
 **[샘플 보기](samples/summary_default.md)**
-
-### 🌟 Simple (`--preset simple`)
-**대상**: 초등학생, 기술 초보자  
-**특징**: 쉬운 단어로 설명하는 친절한 기술 뉴스
-- 초등학생도 이해할 수 있는 쉬운 단어
-- 복잡한 기술 용어를 일상 단어로 변환
-- 비유와 예시를 통한 설명
-- 친근하고 따뜻한 말투
-
-**[샘플 보기](samples/summary_simple.md)**
 
 ## 아키텍처 원칙
 
