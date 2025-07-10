@@ -7,18 +7,20 @@ import (
 )
 
 type Config struct {
-	FeedsFile   string `json:"feeds_file"`
-	GeminiModel string `json:"gemini_model"`
-	CutoffHours int    `json:"cutoff_hours"`
-	HTTPTimeout int    `json:"http_timeout_seconds"`
+	FeedsFile      string `json:"feeds_file"`
+	GeminiModel    string `json:"gemini_model"`
+	CutoffHours    int    `json:"cutoff_hours"`
+	HTTPTimeout    int    `json:"http_timeout_seconds"`
+	SummaryPreset  string `json:"summary_preset"`
 }
 
 func Load(filename string) (*Config, error) {
 	cfg := &Config{
-		FeedsFile:   "feeds.csv",
-		GeminiModel: "gemini-2.5-pro",
-		CutoffHours: 24,
-		HTTPTimeout: 15,
+		FeedsFile:     "feeds.csv",
+		GeminiModel:   "gemini-2.5-pro",
+		CutoffHours:   24,
+		HTTPTimeout:   15,
+		SummaryPreset: "default",
 	}
 
 	if _, err := os.Stat(filename); os.IsNotExist(err) {
@@ -51,6 +53,20 @@ func (c *Config) Validate() error {
 	}
 	if c.HTTPTimeout <= 0 {
 		return fmt.Errorf("http_timeout_seconds는 0보다 커야 합니다")
+	}
+	if c.SummaryPreset == "" {
+		return fmt.Errorf("summary_preset이 설정되지 않았습니다")
+	}
+	validPresets := []string{"default", "simple", "executive", "developer", "casual"}
+	isValid := false
+	for _, preset := range validPresets {
+		if c.SummaryPreset == preset {
+			isValid = true
+			break
+		}
+	}
+	if !isValid {
+		return fmt.Errorf("summary_preset은 다음 중 하나여야 합니다: %v", validPresets)
 	}
 	return nil
 }
