@@ -1,9 +1,7 @@
 package config
 
 import (
-	"encoding/json"
 	"fmt"
-	"os"
 )
 
 type Config struct {
@@ -14,32 +12,7 @@ type Config struct {
 	SummaryPreset  string `json:"summary_preset"`
 }
 
-func Load(filename string) (*Config, error) {
-	cfg := &Config{
-		FeedsFile:     "feeds.csv",
-		GeminiModel:   "gemini-2.5-pro",
-		CutoffHours:   24,
-		HTTPTimeout:   15,
-		SummaryPreset: "default",
-	}
-
-	if _, err := os.Stat(filename); os.IsNotExist(err) {
-		return cfg, nil
-	}
-
-	file, err := os.Open(filename)
-	if err != nil {
-		return nil, fmt.Errorf("설정 파일 열기 실패: %w", err)
-	}
-	defer file.Close()
-
-	decoder := json.NewDecoder(file)
-	if err := decoder.Decode(cfg); err != nil {
-		return nil, fmt.Errorf("설정 파일 파싱 실패: %w", err)
-	}
-
-	return cfg, nil
-}
+// Load 함수는 더 이상 사용하지 않음 - 모든 설정이 플래그로 전달됨
 
 func (c *Config) Validate() error {
 	if c.FeedsFile == "" {
