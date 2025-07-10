@@ -23,12 +23,17 @@ type App struct {
 	outputWriter ai.OutputWriter
 }
 
-func New(configFile string) (*App, error) {
+func New(configFile, summaryPreset string) (*App, error) {
 	logger := logger.New()
 
 	cfg, err := config.Load(configFile)
 	if err != nil {
 		return nil, fmt.Errorf("설정 로드 실패: %w", err)
+	}
+
+	// 플래그로 전달된 프리셋이 있으면 덮어쓰기
+	if summaryPreset != "" {
+		cfg.SummaryPreset = summaryPreset
 	}
 
 	if err := cfg.Validate(); err != nil {
@@ -49,8 +54,8 @@ func New(configFile string) (*App, error) {
 		return nil, fmt.Errorf("Gemini 클라이언트 초기화 실패: %w", err)
 	}
 
-	logger.Info("설정 로드 완료: feeds_file=%s, gemini_model=%s, cutoff_hours=%d, http_timeout=%d", 
-		cfg.FeedsFile, cfg.GeminiModel, cfg.CutoffHours, cfg.HTTPTimeout)
+	logger.Info("설정 로드 완료: feeds_file=%s, gemini_model=%s, cutoff_hours=%d, http_timeout=%d, summary_preset=%s", 
+		cfg.FeedsFile, cfg.GeminiModel, cfg.CutoffHours, cfg.HTTPTimeout, cfg.SummaryPreset)
 
 	return &App{
 		config:       cfg,
