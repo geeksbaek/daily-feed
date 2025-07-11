@@ -1,6 +1,6 @@
 # Daily Feed
 
-AI 기반 RSS 피드 수집 및 요약 도구
+AI 기반 RSS/Atom 피드 수집 및 요약 도구
 
 ## 프로젝트 구조
 
@@ -12,10 +12,10 @@ daily-feed/
 ├── pkg/
 │   ├── models/       # 데이터 모델
 │   ├── config/       # 설정 관리
-│   ├── feed/         # RSS 피드 처리
+│   ├── feed/         # RSS/Atom 피드 처리
 │   ├── ai/           # AI 요약 및 출력
 │   └── utils/        # 유틸리티 함수
-├── feeds.csv         # RSS 피드 목록
+├── feeds.csv         # RSS/Atom 피드 목록
 └── main.go           # 애플리케이션 진입점
 ```
 
@@ -36,18 +36,24 @@ daily-feed/
 - **타입 안전성**: 구조체 기반 설정
 - **기본값 처리**: 합리적인 기본값 제공
 
-### 4. 다중 프리셋 시스템
+### 4. RSS/Atom 피드 지원
+- **RSS 2.0 지원**: 기존 RSS 피드 완벽 지원
+- **Atom 1.0 지원**: Atom 형식 피드 자동 감지 및 파싱
+- **자동 형식 감지**: RSS와 Atom 피드를 자동으로 구분하여 처리
+- **GeekNews 등 다양한 피드 소스 지원**: 한국어 개발 뉴스 서비스 포함
+
+### 5. 다중 프리셋 시스템
 - **4가지 프리셋**: Developer, Casual, Community, Default
 - **유연한 설정**: 명령행 플래그로 실시간 변경 가능
 - **대상별 최적화**: 독자층에 맞는 톤과 구조
 - **확장 가능**: 새로운 프리셋 쉽게 추가 가능
 
-### 5. 로깅 시스템
+### 6. 로깅 시스템
 - **인터페이스 기반**: 테스트 가능한 로거
 - **레벨별 로깅**: Info, Error, Fatal
 - **구조화된 로깅**: 일관된 로그 형식
 
-### 6. 컨텍스트 처리
+### 7. 컨텍스트 처리
 - **취소 가능**: Graceful shutdown 지원
 - **시그널 처리**: SIGINT, SIGTERM 처리
 - **타임아웃**: HTTP 요청 타임아웃 설정
@@ -102,7 +108,7 @@ go build -o daily-feed .
 ```
 
 ### 플래그 옵션
-- `--feeds`: RSS 피드 목록 파일 경로 (기본값: feeds.csv)
+- `--feeds`: RSS/Atom 피드 목록 파일 경로 (기본값: feeds.csv)
 - `--model`: Gemini 모델명 (기본값: gemini-2.5-pro)
 - `--cutoff`: 피드 수집 시간 범위, 시간 단위 (기본값: 24)
 - `--timeout`: HTTP 요청 타임아웃, 초 단위 (기본값: 15)
@@ -166,6 +172,28 @@ Daily Feed는 다양한 독자층을 위한 4가지 요약 프리셋을 제공�
 - 자연스럽고 읽기 편한 문체
 
 **[샘플 보기](samples/summary_default.md)**
+
+## 지원 피드 형식
+
+Daily Feed는 다음과 같은 피드 형식을 지원합니다:
+
+### RSS 2.0
+- 표준 RSS 2.0 형식
+- GitHub Blog, Microsoft AI Blog 등 대부분의 기술 블로그
+
+### Atom 1.0
+- W3C Atom 1.0 표준
+- GeekNews 등 한국 기술 뉴스 사이트
+- 자동 감지 및 파싱으로 별도 설정 불필요
+
+### 피드 목록 (feeds.csv)
+현재 지원하는 주요 피드들:
+- **한국 기술 뉴스**: GeekNews (news.hada.io)
+- **글로벌 기술 기업**: Google, Microsoft, Amazon, GitHub, Meta
+- **개발 도구**: Docker, Kubernetes, VS Code, JetBrains
+- **프로그래밍 언어**: Go, Java, Python, TypeScript, Swift, Kotlin
+- **클라우드 플랫폼**: AWS, Google Cloud, Azure, Cloudflare
+- **AI/ML**: OpenAI, Anthropic, Hugging Face, Stability AI
 
 ## 아키텍처 원칙
 
