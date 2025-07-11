@@ -1,31 +1,45 @@
-# Daily Feed - 2025-07-10
+# Daily Feed - 2025-07-11
 
 ## 🗞️ 오늘 재미있던 기술 소식
 
-진짜 대박 소식! 이제 구글의 AI 비서 제미나이(Gemini)를 스마트워치에서 바로 쓸 수 있게 됐어요. [^1] 폰을 꺼내지 않고도 손목 위에서 바로 AI랑 대화할 수 있다니, 영화 속 한 장면이 현실이 된 느낌이네요.
+오늘 제일 눈에 들어온 건 AWS가 내놓은 VS Code 연동 기능이야.[^4] 이제 내 로컬 VS Code에서 바로 SageMaker Studio의 강력한 AI 개발 환경이랑 컴퓨팅 자원을 쓸 수 있게 됐어. 개발자들은 익숙한 환경에서 작업하면서 클라우드의 파워를 그대로 쓰니까 생산성이 엄청 올라갈 것 같아. 맨날 환경 맞추느라 고생했는데, 이런 업데이트는 진짜 환영이야! [^4]
 
 ## 📰 주목할 만한 이야기들
 
 ### 🏢 기업들 근황
-- **Google의 AI 총공세:** 구글이 완전 작정한 것 같아요. 제미나이를 웨어OS 스마트워치에 탑재하는 것부터 시작해서 [^1], 삼성의 새로운 갤럭시 Z 시리즈와 워치8 시리즈에도 구글의 최신 AI 기능들이 들어간다고 발표했어요. [^2] 비즈니스 쪽에서도 구글 클라우드 런던 서밋에서 영국 공공 부문 인력 10만 명에게 무료로 AI 교육을 제공하겠다는 엄청난 계획을 밝혔습니다. [^3] 이제 AI는 특정 서비스를 넘어 구글 생태계 전체를 움직이는 핵심 동력이 된 것 같아요.
+- **AWS의 AI 개발 생태계 강화**: AWS가 정말 작정했나 봐. SageMaker 업데이트가 쏟아지고 있어. VS Code 연동은 물론이고[^4], 이제 MLflow 3.0을 완전 관리형으로 지원해서 실험 추적부터 앱 관찰까지 한 번에 할 수 있게 됐어.[^7] HyperPod에는 원클릭 관찰 기능이 추가돼서 클러스터 상태랑 GPU 활용도를 쉽게 파악할 수 있게 됐고, 이제 Mistral 같은 외부 모델도 쉽게 연동해서 쓸 수 있대.[^8][^19] 개발자들이 AI 모델 만들고 관리하기 훨씬 편하게 만드는 데 엄청 집중하는 게 보여.
 
-- **Apple의 뚝심 있는 연구:** 애플은 당장 눈에 보이는 제품 출시보다는 AI의 근본적인 문제를 해결하는 데 집중하는 모양새에요. 예를 들어, 웨어러블 기기에서 수집한 25억 시간 분량의 행동 데이터를 분석해서 건강 상태를 예측하는 파운데이션 모델을 개발했다는 논문을 발표했어요. [^6] 이건 단순히 심박수 같은 센서 데이터를 넘어, 사람들의 행동 패턴 자체를 이해해서 건강을 예측하겠다는 거라 훨씬 더 깊이 있는 접근이죠. 겉으로 드러나는 것보다 내실을 다지는 전략이 돋보여요.
+- **Apple의 조용한 ML 혁신**: Apple은 신기한 연구 논문을 대거 발표했어.[^9][^10] 특히 LLM이 얼마나 메모리를 적게 쓰면서도 빠르게 돌아갈 수 있는지에 대한 연구(QuantSpec)가 인상 깊었어.[^9] 이런 연구들은 앞으로 나올 아이폰이나 맥북에 더 강력한 온디바이스 AI 기능이 탑재될 거라는 신호 아닐까? 겉으로 드러나는 신제품 발표는 없어도, 내실을 엄청 다지고 있는 느낌이야.
+
+- **Google의 AI 대중화**: Google은 Gemini 앱에서 사진 한 장을 올리면 그걸로 동영상을 만들어주는 Veo 3 기능을 추가했대.[^26] 진짜 신기하지 않아? 이제 누구나 쉽게 AI로 콘텐츠를 만들 수 있는 시대가 오는 것 같아. 그리고 미국 인프라 개선을 위해 AI를 사용하는 스타트업 17개를 지원하는 프로그램을 시작했다는데, AI 기술로 현실 문제를 해결하려는 모습이 보기 좋았어.[^20]
 
 ### 🚀 눈에 띄는 기술
-- **손목 위의 AI 비서, 제미나이:** 이제 웨어OS 4 이상이 탑재된 스마트워치에서 제미나이를 바로 쓸 수 있게 됐어요. [^1] "오늘 우산 필요해?" 같은 간단한 질문부터 "에밀리가 이메일로 보낸 커피숍 어디야?" 같이 내 정보와 연동된 복잡한 질문까지 손목 위에서 해결할 수 있어요. [^1] 특히 삼성 갤럭시 워치8 시리즈에는 처음부터 제미나이가 탑재되어 나온다고 하니 활용성이 더 기대되네요. [^2]
+- **이제는 기본이 된 RAG**: 요즘 AI 좀 만져본다 하면 RAG (검색 증강 생성) 얘기를 빼놓을 수 없지. 우리 회사 내부 문서나 데이터를 기반으로 똑똑하게 답변하는 AI 챗봇을 만드는 기술인데, AWS 서비스를 활용하는 방법이나 오픈소스인 ChromaDB를 쓰는 방법들이 소개됐어.[^5][^12] 그냥 똑똑한 척하는 AI가 아니라, 진짜 내 데이터에 기반해서 답을 주니까 훨씬 유용해.
 
-- **코딩 없이 데이터 예측, TimesFM:** 구글이 BigQuery라는 데이터 분석 툴에 TimesFM이라는 엄청난 기능을 추가했어요. [^4] 이건 구글 리서치가 4천억 개의 실제 시간 데이터로 미리 훈련시킨 모델인데, 덕분에 개발자들이 복잡한 코딩 없이 간단한 SQL 명령어(`AI.FORECAST`) 하나만으로 미래 데이터를 예측할 수 있게 됐어요. [^4] 이걸 '제로샷(zero-shot)' 예측이라고 부르는데, 따로 모델을 훈련할 필요가 없어서 정말 편하겠더라고요. 데이터 분석의 장벽을 확 낮춘 기술이에요.
+- **Ktor 모듈화로 확장성 잡기**: 가벼운 웹 프레임워크로 알려진 Ktor가 모듈화를 통해 대규모 백엔드도 감당할 수 있게 하는 방법을 공유했어.[^17] 처음에는 너무 미니멀해서 복잡한 프로젝트에 쓸 수 있을까 싶었는데, 의존성 주입(DI) 플러그인 같은 걸로 기능을 깔끔하게 분리하고 확장할 수 있게 만들었더라고. 가벼움과 확장성, 두 마리 토끼를 다 잡으려는 시도가 엿보여.[^17]
 
-- **웨어러블 데이터로 건강 예측:** 애플이 무려 16만 2천 명에게서 수집한 25억 시간 분량의 웨어러블 데이터를 기반으로 건강 예측 모델을 만들었다는 소식이에요. [^6] 단순히 센서 신호를 분석하는 게 아니라, 사람들의 행동 신호(behavioral signals)를 모델링해서 수면 예측 같은 57개 건강 관련 과제를 수행한다고 해요. [^6] 앞으로는 내 스마트워치가 나의 생활 습관을 보고 건강을 코칭해주는 시대가 더 가까워진 것 같아요.
+- **CodeQL로 CORS 취약점 찾기**: GitHub에서 CodeQL로 CORS(Cross-Origin Resource Sharing) 설정 오류를 찾는 방법을 공유했어.[^18] 보안은 항상 중요하잖아. 특히 웹 개발에서 CORS 설정 잘못하면 큰일 나는데, CodeQL 같은 정적 분석 도구를 사용해서 개발 단계에서부터 이런 취약점을 미리 잡아낼 수 있다는 게 중요해. Gin 같은 특정 프레임워크의 구조를 모델링해서 자동으로 찾아준다는 점이 진짜 편할 것 같아.[^18]
 
 ### 💬 솔직한 한마디
-요즘 빅테크들을 보면 AI 전략이 두 갈래로 나뉘는 게 보여요. 구글은 제미나이를 스마트폰, 워치, 검색, 클라우드 등 자기네 제품 구석구석에 빠르게 심으면서 'AI의 일상화'를 밀어붙이고 있어요. [^1][^2][^3][^4] 반면 애플은 LLM의 불확실성이나 데이터 편향성 같은 근본적인 문제들을 해결하는 연구 논문들을 꾸준히 내면서 기술의 완성도를 높이는 데 집중하고 있죠. [^6] '빠른 확장'의 구글과 '완벽주의' 애플, 과연 어떤 전략이 시장을 지배하게 될지 정말 궁금해지네요.
+- **AI 코드, 얼마나 믿어야 할까?**: 개발팀의 코드 중 몇 퍼센트를 AI가 짜는 게 적당할까? 라는 질문에 한 글이 되게 좋은 답을 줬어.[^2] 중요한 건 비율이 아니라 '맥락'과 '신뢰'라는 거야. AI가 아무리 코드를 잘 짜줘도 우리 프로젝트의 아키텍처나 코딩 표준을 이해하지 못하면 결국 사람이 다 뜯어고쳐야 하거든. AI를 그냥 코드 생성기로만 볼 게 아니라, 우리 팀의 맥락을 이해하는 똑똑한 동료로 만드는 게 진짜 과제인 것 같아.
+
+- **디지털 강의실의 빛과 그림자**: 코로나 이후로 원격/하이브리드 수업이 당연해졌는데, 우리가 뭘 얻고 뭘 잃었는지 돌아보는 글이 있었어.[^6] 유연한 학습 환경과 교육 접근성은 좋아졌지만, 인간적인 교류가 줄고 디지털 격차가 심해진 건 뼈아픈 현실이지. 특히 선생님들의 번아웃 문제가 심각하다고 해.[^6] 기술이 만능 해결책은 아니라는 걸 다시 한번 생각하게 됐어. 결국 중요한 건 기술을 '어떻게' 현명하게 사용하느냐인 것 같아.
 
 ## 🎯 오늘의 핵심
-AI는 더 이상 특별한 기능이 아니라, 스마트워치부터 데이터 분석까지 우리 생활 모든 곳에 스며드는 '기반 기술'이 되었다는 점. 이제 어떤 기업이 AI를 더 '똑똑하게' 만드냐가 아니라, 더 '자연스럽고 유용하게' 우리 일상에 녹여내느냐의 싸움이 시작됐어요.
+오늘의 핵심은 **'AI 개발 경험의 대중화'**야. AWS가 VS Code 연동이나 MLflow 지원을 강화하고[^4][^7], Docker가 Compose로 AI 에이전트를 쉽게 만들게 해주는 것처럼[^14], 이제 기업들은 'AI를 만드는 것'을 넘어 '누구나 AI를 쉽고 효율적으로 만들게 하는 것'에 집중하고 있어. 복잡한 인프라 걱정 없이 개발자들이 아이디어만으로 멋진 AI 서비스를 만들 수 있는 시대가 성큼 다가온 거지.
 
-[^1]: How to use Gemini on a Wear OS smartwatch - Google Blog - https://blog.google/products/wear-os/gemini-wear-os-watches/
-[^2]: Android updates and features on Samsung Galaxy devices - https://blog.google/products/android/galaxy-unpacked-2025-android-updates/
-[^3]: Powering the UK's AI future: News from Google Cloud Summit London - https://cloud.google.com/blog/topics/inside-google-cloud/london-summit-2025-gen-ai-agents-transforming-business-civil-service/
-[^4]: BigQuery ML TimesFM models now in preview | Google Cloud Blog - https://cloud.google.com/blog/products/data-analytics/bigquery-ml-timesfm-models-now-in-preview/
-[^6]: Beyond Sensor Data: Foundation Models of Behavioral Data from ... - https://machinelearning.apple.com/research/beyond-sensor
+[^2]: Target Concrete Score Matching: A Holistic Framework for Discrete ... - Apple Machine Learning Research
+[^4]: Supercharge your AI workflows by connecting to SageMaker Studio ... - AWS
+[^5]: Smart Search Meets LLM: AWS-Powered Retrieval-Augmented Generation - DEV Community
+[^6]: 📚 The Digital Classroom: What We’ve Gained—and What We’ve Lost - DEV Community
+[^7]: Accelerating generative AI development with fully managed MLflow ... - AWS
+[^8]: Build an MCP application with Mistral models on AWS | Artificial ... - AWS
+[^9]: QuantSpec: Self-Speculative Decoding with Hierarchical Quantized ... - Apple Machine Learning Research
+[^10]: Addressing Misspecification in Simulation-based Inference through ... - Apple Machine Learning Research
+[^12]: Next-Gen Q&A: Retrieval-Augmented AI with Chroma Vector Store - DEV Community
+[^14]: Docker Brings Compose to the Agent Era: Building AI Agents is Now Easy - Docker Blog
+[^17]: Modular Ktor: Building Backends for Scale | The Kotlin Blog - Kotlin Blog
+[^18]: Modeling CORS frameworks with CodeQL to find security ... - The GitHub Blog
+[^19]: Accelerate foundation model development with one-click ... - AWS - AWS
+[^20]: New cohort for Google for Startups AI Academy: American ... - The Keyword
+[^26]: Turn your photos into videos in Gemini - Gemini
