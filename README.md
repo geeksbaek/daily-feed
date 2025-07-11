@@ -141,7 +141,7 @@ Daily Feed는 다양한 독자층을 위한 4가지 요약 프리셋을 제공�
 - 개발자가 읽어볼 만한 기술 아티클과 리소스
 - 실용적인 개발 팁
 
-**[샘플 보기](samples/summary_developer.md)**
+**[샘플 보기](samples/gemini-2.5-pro/summary_developer.md)**
 
 ### 🗞️ Casual (`--preset casual`)
 **대상**: 일반 기술 관심자  
@@ -151,7 +151,7 @@ Daily Feed는 다양한 독자층을 위한 4가지 요약 프리셋을 제공�
 - 때로는 비판적이거나 의외의 관점도 제시
 - 생생하고 개성 있는 관점 제공
 
-**[샘플 보기](samples/summary_casual.md)**
+**[샘플 보기](samples/gemini-2.5-pro/summary_casual.md)**
 
 ### 💬 Community (`--preset community`)
 **대상**: 커뮤니티 활동 베테랑, 밈 문화 애호가  
@@ -161,7 +161,7 @@ Daily Feed는 다양한 독자층을 위한 4가지 요약 프리셋을 제공�
 - "ㅋㅋㅋ", "ㄹㅇ", "갓", "레전드", "팩트" 등 커뮤니티 은어 활용
 - 적절한 비꼬기와 츤데레식 표현으로 재미와 정보 전달 양립
 
-**[샘플 보기](samples/summary_community.md)**
+**[샘플 보기](samples/gemini-2.5-pro/summary_community.md)**
 
 ### 🎓 Default (`--preset default`)
 **대상**: 대학생, 일반 성인  
@@ -171,7 +171,7 @@ Daily Feed는 다양한 독자층을 위한 4가지 요약 프리셋을 제공�
 - 실용적 의미와 트렌드에 집중
 - 자연스럽고 읽기 편한 문체
 
-**[샘플 보기](samples/summary_default.md)**
+**[샘플 보기](samples/gemini-2.5-pro/summary_default.md)**
 
 ## 지원 피드 형식
 
