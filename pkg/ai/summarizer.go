@@ -16,7 +16,6 @@ import (
 	"github.com/jongyeol/daily-feed/pkg/utils"
 )
 
-const MaxURLs = 20
 
 type Summarizer interface {
 	GenerateSummary(ctx context.Context, items []models.FeedItem) (*models.Summary, error)
@@ -37,8 +36,8 @@ func NewSummarizer(client *genai.Client, cfg *config.Config, logger logger.Logge
 }
 
 func (s *geminiSummarizer) GenerateSummary(ctx context.Context, items []models.FeedItem) (*models.Summary, error) {
-	feedData, urls := s.prepareFeedData(items)
-	systemPrompt, userPrompt := s.generateRoleBasedPrompts(feedData, urls)
+	feedData := s.prepareFeedData(items)
+	systemPrompt, userPrompt := s.generateRoleBasedPrompts(feedData)
 
 	content, err := s.callGeminiAPIWithRoles(ctx, systemPrompt, userPrompt)
 	if err != nil {
@@ -54,11 +53,10 @@ func (s *geminiSummarizer) GenerateSummary(ctx context.Context, items []models.F
 	}, nil
 }
 
-func (s *geminiSummarizer) prepareFeedData(items []models.FeedItem) (string, []string) {
+func (s *geminiSummarizer) prepareFeedData(items []models.FeedItem) string {
 	var feedData strings.Builder
 	feedData.WriteString("다음은 최신 AI 관련 피드 데이터입니다:\n\n")
 
-	var urls []string
 	i := 1
 	for item := range utils.FeedItemIterator(items) {
 		feedData.WriteString(fmt.Sprintf("%d. **%s**\n", i, item.Title))
@@ -68,16 +66,10 @@ func (s *geminiSummarizer) prepareFeedData(items []models.FeedItem) (string, []s
 		i++
 	}
 
-	for url := range utils.URLIterator(items) {
-		urls = append(urls, url)
-	}
-
-	urls = utils.RemoveDuplicateURLs(urls, MaxURLs)
-
-	return feedData.String(), urls
+	return feedData.String()
 }
 
-func (s *geminiSummarizer) generateRoleBasedPrompts(feedData string, urls []string) (string, string) {
+func (s *geminiSummarizer) generateRoleBasedPrompts(feedData string) (string, string) {
 	systemPrompt := s.getSystemPrompt()
 
 	userPrompt := fmt.Sprintf(`다음 RSS 피드 데이터를 분석하여 일간 기술 뉴스 브리핑을 작성해주세요.
@@ -85,9 +77,6 @@ func (s *geminiSummarizer) generateRoleBasedPrompts(feedData string, urls []stri
 %s
 
 **분석 지침:**
-- 위에 나열된 URL들의 전체 내용을 실제로 읽고 분석하세요
-- URL context 도구를 사용해서 각 기사의 상세 내용을 파악하세요
-- 필요시 Google Search 도구를 사용해서 추가 배경 정보나 관련 뉴스를 검색하세요
 - 반드시 위에 명시된 마크다운 헤더 구조를 정확히 따르세요
 - 각 섹션은 2-3개 포인트로 제한
 - 구체적인 수치와 데이터 활용으로 신뢰성 확보
