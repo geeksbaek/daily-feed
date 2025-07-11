@@ -2,35 +2,39 @@
 
 ## 🗞️ 오늘 재미있던 기술 소식
 
-"와, 이게 되네?" 소리가 절로 나오는 날이야. xAI에서 공개한 Grok 4가 주요 AI 성능 테스트에서 1등을 차지했대. [^3] 이제 OpenAI나 구글, 앤트로픽과 어깨를 나란히 하는 수준을 넘어섰다고 주장하고 있어. [^3] 특히 대학원생 수준의 어려운 문제 해결 능력을 강조하던데, 거의 모든 분야에서 인간 전문가를 압도한다고 하니 입이 떡 벌어지지. [^4] SF 영화에서 보던 세상이 진짜 코앞까지 온 느낌이야.
+xAI가 'Grok 4'를 내놓으면서 "우리가 이제 최고"라고 선언했어요. [^11] [^12] 진짜 AI 왕좌의 게임이 시작된 느낌이랄까? 벤치마크 점수로는 기존 강자들을 제쳤다고 하니, 앞으로 판도가 어떻게 바뀔지 너무 궁금하네요.
 
 ## 📰 주목할 만한 이야기들
 
 ### 🏢 기업들 근황
-- **xAI**가 Grok 4를 내놓으면서 AI 모델 왕좌에 도전장을 내밀었어. 기존 모델들보다 코딩, 수학, 추론 능력에서 더 높은 점수를 받았다고 해. [^3] 심지어 Grok 4 Heavy라는 멀티 에이전트 버전도 있는데, 여러 AI가 협력해서 문제를 푼다니, 정말 똑똑하겠지? [^4]
-- **AWS**는 개발자 편의성을 엄청나게 높여주고 있어. 이제 아마존의 AI 개발 플랫폼인 SageMaker를 VS Code에서도 바로 쓸 수 있게 됐고, 복잡한 모델 개발 과정을 관리해주는 MLflow 3.0도 완전 관리형으로 제공한대. [^5] 개발자들이 좀 더 편하게 AI 모델을 만들고 실험할 수 있는 환경을 만들어주는 데 진심인 것 같아.
-- **Docker**도 AI 시대를 제대로 준비하고 있어. Docker Compose를 이용하면 AI 에이전트를 정말 쉽게 만들 수 있게 업데이트됐어. [^2] 여러 AI 모델, 도구를 YAML 파일 하나로 간단하게 엮어서 실행할 수 있다니, 개발자들한테는 희소식이지. [^2]
-- **구글**은 Gemini 앱에 신기한 기능을 추가했어. 이제 사진 한 장을 올리고 간단한 명령어를 입력하면, Veo 3 기술을 사용해서 8초짜리 영상으로 만들어준대. [^9] 내 갤러리에 잠자고 있는 사진들로 뭘 만들 수 있을지 상상만 해도 재밌지 않아?
+- **xAI [^11][^12]:** 완전히 작정하고 나왔어요, Grok 4! 주요 성능 지표에서 OpenAI[^11]나 Google[^11] 모델을 앞섰다고 발표하면서 시장에 충격을 줬습니다. 특히 추론 능력이 엄청나다고 하는데, 이제는 정말 똑똑한 AI를 넘어 '지혜로운' AI를 기대해야 하나 봐요.
+- **Apple [^1][^3][^16]:** 애플은 조용히 논문으로 실력을 증명하고 있어요. LLM을 아이폰 같은 기기에서 더 빠르고 효율적으로 돌리는 기술(QuantSpec)[^1]부터, 웨어러블 데이터로 건강 예측을 더 정확하게 하는 모델[^3], 그리고 AI가 만든 이미지가 특정 이미지를 베끼지 않고 더 다양하게 만들도록 하는 기술(Shielded Diffusion)[^16]까지, 내실을 다지는 모습이 인상적이에요.
+- **AWS [^4][^5]:** 개발자들을 위한 AI 개발 놀이터를 계속 확장하고 있습니다. 이제 아마존 세이지메이커(Amazon SageMaker)[^4]에서 복잡한 AI 실험 과정을 쉽게 관리하고(MLflow 3.0)[^4], 만든 모델을 하이퍼파드(HyperPod)라는 고성능 인프라에 바로 배포까지 할 수 있게 됐어요.[^5] 개발부터 배포까지 한 번에 쭉 이어지게 만들어서 개발자들 시간을 아껴주려는 노력이 엿보여요.
+- **Docker [^18]:** "이제 AI 에이전트도 `docker compose up` 하나로 끝!"이라고 외치는 것 같아요. 복잡한 AI 에이전트 시스템을 도커 컴포즈(Docker Compose) 파일 하나로 간단하게 정의하고 실행할 수 있게 됐습니다.[^18] 로컬 컴퓨터에서 작업이 버거우면 클라우드 GPU를 빌려 쓰는 '도커 오프로드(Docker Offload)' 기능까지 선보였어요.[^18] AI 개발의 복잡함을 도커가 또 한 번 해결해주려나 봐요.
+- **Google [^17][^8]:** 구글은 AI를 더 재밌고 의미 있는 방향으로 활용하는 데 집중하는 모습이에요. 제미나이(Gemini) 앱에서 사진을 올리면 8초짜리 영상으로 만들어주는 기능이 새로 나왔고[^17], AI를 이용해서 사라져가는 소수 언어 30개를 배울 수 있는 '울라루(Woolaroo)' 프로젝트도 업데이트했어요.[^8] 기술로 이런 걸 할 수 있다니, 정말 멋지지 않나요?
 
 ### 🚀 눈에 띄는 기술
-- 이제 AI 비서를 쓸 때 내 정보가 어딘가로 전송될까 봐 걱정하지 않아도 될지 몰라. **NativeMind**라는 크롬 확장 프로그램이 나왔는데, 이건 인터넷 연결 없이 내 컴퓨터 안에서만 돌아가는 AI 어시스턴트야. [^11] 페이지 요약, 번역, 글쓰기 도움 같은 기능을 프라이버시 걱정 없이 쓸 수 있다니, 정말 매력적이지.
-- **Docker Compose**가 AI 에이전트 개발을 위해 진화한 것도 주목할 만해. LangGraph나 CrewAI 같은 요즘 인기 있는 AI 프레임워크랑 바로 연동돼서, 복잡한 AI 애플리케이션도 쉽게 조립하고 실행할 수 있게 됐어. [^2] 로컬에서 개발하다가 클라우드로 옮기는 것도 훨씬 간단해졌다고 해. [^2]
+- **Grok 4 [^11][^12]:** 이건 정말 괴물 스펙이에요. 한 번에 처리할 수 있는 데이터 양(컨텍스트 윈도우)이 256k 토큰에 달하고, 글자뿐만 아니라 이미지도 이해할 수 있다고 해요.[^11] 가격은 좀 비싸지만, 성능만큼은 확실히 보여주려는 것 같아요.
+- **NativeMind [^7]:** 내 모든 대화가 클라우드로 가지 않고 내 컴퓨터 안에서만 처리되는 AI 비서가 나왔어요. '네이티브마인드(NativeMind)'는 크롬 확장 프로그램 형태로 설치해서 쓸 수 있는데, 개인정보에 민감한 사람들에게는 정말 반가운 소식일 것 같아요.[^7]
+- **Ktor 신규 기능 [^13]:** 코틀린(Kotlin)으로 서버 만드는 개발자들에게 희소식이에요. 제트브레인즈(JetBrains)의 Ktor 프레임워크가 모듈 관리를 더 쉽게 해주는 의존성 주입(DI) 플러그인을 기본으로 제공하기 시작했어요.[^13] 덕분에 더 깔끔하고 확장성 있는 서버 개발이 가능해졌습니다.
 
 ### 💬 솔직한 한마디
-- **Sam Altman (OpenAI CEO)**이 최근에 쓴 글이 되게 인상 깊었어. 그는 이미 특이점(Singularity)이 조용히 시작됐다고 말해. [^8] 우리가 매일 쓰는 스마트폰 알고리즘이나 소셜 미디어 피드가 이미 우리를 조종하고 있고, 이게 바로 인간과 기계가 합쳐지는 과정이라는 거지. AI 덕분에 인류의 생산성이 엄청나게 증폭될 거고, 2030년쯤에는 '계량하기엔 너무 저렴한 지능'의 시대가 올 거라고 예측하더라. [^8] 생각해보면 좀 무섭기도 한데, 한편으론 엄청 기대되지 않아?
-- 근데 또 재밌는 연구 결과도 있더라고. 숙련된 오픈소스 개발자들한테 AI 코딩 도구를 쓰게 했더니, 오히려 작업 완료 시간이 평균 19% 더 오래 걸렸대. [^38] 정작 개발자 본인들은 24% 더 빨라졌다고 느꼈다는데, 이 아이러니 어쩔 거야. [^38] AI가 정말 우리를 더 생산적으로 만드는 건지, 아니면 그냥 그렇게 느끼게만 하는 건지 한번 생각해 볼 문제 같아.
-- 웹 개발 쪽에서는 "자바스크립트에 너무 의존하다가 웹이 망가지고 있다"는 목소리가 커지고 있어. [^10] 개발자 경험을 챙기느라 정작 사용자 경험은 느려지고 복잡해졌다는 비판인데, 완전 공감돼. 가끔 너무 무겁고 복잡한 웹사이트들을 보면 '이게 최선이었을까?' 하는 생각이 들거든.
+AI가 우리를 더 빠르게 만들어줄 거라는 기대가 넘쳐나지만, 최근 한 연구에서는 숙련된 오픈소스 개발자들이 AI 도구를 썼을 때 오히려 작업 완료 시간이 평균 19% 더 걸렸다는 결과가 나왔어요.[^35] 다들 AI 쓰면 24%는 빨라질 거라고 기대했는데 말이죠.[^35] 어쩌면 지금의 AI는 숙련자에게는 아직 서툰 조수 같아서, 자꾸 고쳐줘야 하니 시간이 더 걸리는 게 아닐까요? "자바스크립트(JavaScript) 중심 개발이 웹을 망가뜨린다"[^30]는 비판처럼, 새로운 기술이 항상 정답은 아닐 수 있다는 생각을 해보게 되네요.
 
 ## 🎯 오늘의 핵심
+거대한 슈퍼 AI를 만들려는 경쟁(Grok 4 같은)과, 내 손안의 기기에서 가볍고 안전하게 돌아가는 AI(애플의 연구[^1]나 NativeMind[^7] 같은)를 만들려는 노력이 동시에 벌어지고 있다는 점이에요. AI의 미래가 클라우드에만 있는 게 아니라, 우리 각자의 기기 안에도 있다는 걸 보여주는 하루였습니다.
 
-오늘의 핵심은 이거야: **"AI는 이제 공기처럼 당연해지고 있다."** xAI의 Grok 4처럼 성능 경쟁은 점점 치열해지고, AWS나 Docker처럼 개발 도구는 점점 편해지고 있어. Sam Altman의 말처럼 지능이 거의 공짜가 되는 시대가 오고 있는 거지. [^8] 이제 중요한 건 이 강력한 도구를 가지고 누가 더 창의적이고 재미있는 아이디어를 실현하느냐에 달린 것 같아.
-
-[^2]: Docker Brings Compose to the AI Agent Era | Docker - https://www.docker.com/blog/build-ai-agents-with-docker-compose/
-[^3]: Grok 4가 이제 선두 AI 모델임 | GeekNews - https://news.hada.io/topic?id=21919
-[^4]: Grok 4 출시 | GeekNews - https://news.hada.io/topic?id=21917
-[^5]: New capabilities in Amazon SageMaker AI continue to transform ... - https://aws.amazon.com/blogs/machine-learning/new-capabilities-in-amazon-sagemaker-ai-continue-to-transform-how-organizations-develop-ai-models/
-[^8]: The Gentle Singularity - Sam Altman - https://blog.samaltman.com/the-gentle-singularity
-[^9]: Introducing Gemini with photo to video capability - Google Blog - https://blog.google/products/gemini/photo-to-video/
-[^10]: 과도한 JavaScript 중심 개발, 웹을 망가뜨리다 | GeekNews - https://news.hada.io/topic?id=21925
-[^11]: NativeMind - 브라우저에서 실행되는 프라이빗 온디바이스 AI ... - https://news.hada.io/topic?id=21918
-[^38]: 경험 많은 오픈소스 개발자의 생산성에 미치는 "AI의 임팩트" 측정하기 - https://news.hada.io/topic?id=21920
+[^1]: QuantSpec: Self-Speculative Decoding with Hierarchical Quantized KV Cache - https://machinelearning.apple.com/research/quantspec
+[^3]: Beyond Sensor Data: Foundation Models of Behavioral Data from Wearables Improve Health Predictions - https://machinelearning.apple.com/research/beyond-sensor
+[^4]: Accelerating generative AI development with fully managed MLflow 3.0 on Amazon SageMaker AI - https://aws.amazon.com/blogs/machine-learning/accelerating-generative-ai-development-with-fully-managed-mlflow-3-0-on-amazon-sagemaker-ai/
+[^5]: Amazon SageMaker HyperPod launches model deployments to accelerate the generative AI model development lifecycle - https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-hyperpod-launches-model-deployments-to-accelerate-the-generative-ai-model-development-lifecycle/
+[^7]: NativeMind - 브라우저에서 실행되는 프라이빗 온디바이스 AI 어시스턴트 - https://news.hada.io/topic?id=21918
+[^8]: Explore the world around you in 30 endangered languages with Google AI - https://blog.google/outreach-initiatives/arts-culture/explore-the-world-around-you-in-30-endangered-languages-with-google-ai/
+[^11]: Grok 4가 이제 선두 AI 모델임 - https://news.hada.io/topic?id=21919
+[^12]: Grok 4 출시 - https://news.hada.io/topic?id=21917
+[^13]: Modular Ktor: Building Backends for Scale - https://blog.jetbrains.com/kotlin/2025/07/modular-ktor-building-backends-for-scale/
+[^16]: Shielded Diffusion: Generating Novel and Diverse Images using Sparse Repellency - https://machinelearning.apple.com/research/diffusion
+[^17]: Turn your photos into videos in Gemini - https://blog.google/products/gemini/photo-to-video/
+[^18]: Docker Brings Compose to the Agent Era: Building AI Agents is Now Easy - https://www.docker.com/blog/build-ai-agents-with-docker-compose/
+[^30]: 과도한 JavaScript 중심 개발, 웹을 망가뜨리다 - https://news.hada.io/topic?id=21925
+[^35]: 경험 많은 오픈소스 개발자의 생산성에 미치는 "AI의 임팩트" 측정하기 - https://news.hada.io/topic?id=21920

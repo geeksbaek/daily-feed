@@ -2,63 +2,60 @@
 
 ## 🚀 Dev Daily Digest
 
-Docker, AI 에이전트 개발을 위한 Compose 확장 및 VS Code 최신 릴리스 등 개발자 도구의 대대적인 업데이트가 있었습니다. [^5][^54]
+xAI의 Grok 4가 주요 벤치마크에서 1위를 차지했으며, AWS와 Apple은 AI 개발 및 성능 최적화를 위한 새로운 도구들을 대거 출시했습니다. [^10]
 
 ## 💻 Tech Updates
 
 ### 🔧 New Tools & Frameworks
-- **Docker, Compose 기능 대폭 확장**: Docker Compose v2.36.0부터 'Provider services'가 도입되어 컨테이너를 넘어 외부 시스템과 상호작용이 가능해졌습니다. [^1] 또한, AI 에이전트 개발을 용이하게 하는 새로운 기능이 추가되어, Docker Compose를 통해 에이전트 기반 워크로드를 정의, 실행, 공유하는 표준을 마련하고 있습니다. [^5]
-- **TypeScript 5.9 베타 출시**: TypeScript 5.9 베타 버전이 공개되었습니다. [^45] 주요 업데이트로는 `tsc --init`의 미니멀 지원, 지연된 `import` 문(`import defer`), 그리고 `node20` 모듈 지원 등이 포함되어 개발 환경 설정을 간소화합니다. [^45]
-- **VS Code 6월 업데이트 (v1.102)**: Visual Studio Code의 2025년 6월 릴리스에는 GitHub Copilot Chat 확장 기능 오픈소스화, 프로젝트 규칙을 반영하는 사용자 지정 지침 생성, MCP(Model Context Protocol) 지원 정식 버전 전환 등 AI 개발 경험을 향상시키는 여러 기능이 추가되었습니다. [^3][^54]
+- **Ktor, 새로운 의존성 주입(DI) 플러그인 도입** [^16]
+  JetBrains의 Ktor 프레임워크가 모듈 간 의존성 관리를 단순화하는 새로운 DI 플러그인을 출시했습니다. [^16] 이 플러그인은 DSL, 파일 설정, 모듈 파라미터를 통해 유연한 의존성 주입을 지원하며, 특히 테스트 환경에서 Mock 객체 대체를 용이하게 합니다. [^16] 이를 통해 개발자는 더욱 유연하고 확장 가능한 백엔드 아키텍처를 구축할 수 있습니다. [^16]
+- **VS Code 2025년 6월 릴리스, GitHub Copilot Chat 기능 강화** [^7]
+  Visual Studio Code 최신 릴리스(1.102.0)는 GitHub Copilot Chat 확장 기능을 오픈소스로 전환하고, 프로젝트 규칙을 반영하는 커스텀 지침 생성, 터미널 명령어 자동 승인 등 개발자 경험을 향상시키는 다수의 업데이트를 포함했습니다. [^7] 또한, MCP(Model Context Protocol) 지원이 정식 버전으로 전환되어 VS Code 내에서 MCP 서버를 쉽게 설치하고 관리할 수 있게 되었습니다. [^7]
+- **RapidRAW, GPU 가속 기반 RAW 이미지 에디터 공개** [^9]
+  새롭게 공개된 RapidRAW는 Rust, React, Tauri를 기반으로 제작된 경량 RAW 이미지 에디터입니다. [^9] GPU 가속과 비파괴 편집을 지원하며 Windows, macOS, Linux에서 30MB 미만의 작은 크기로 동작하는 것이 특징입니다. [^9]
 
 ### 📦 Platform & Services
-- **AWS, SageMaker AI 기능 강화**: Amazon SageMaker에 완전 관리형 MLflow 3.0 지원, 로컬 VS Code에서 SageMaker Studio로의 원격 연결 기능, SageMaker HyperPod의 모델 배포 및 원클릭 관찰 기능이 추가되었습니다. [^106][^110] 이를 통해 생성형 AI 모델 개발 수명 주기가 단축되고 워크플로우가 간소화됩니다. [^109]
-- **Google Cloud, BigQuery에 TimesFM 통합**: Google Research의 시계열 파운데이션 모델인 TimesFM이 BigQuery에 통합되어 `AI.FORECAST` 함수를 통해 제로샷 예측 기능을 제공합니다. [^140] 이 모델은 4,000억 개의 실제 시계열 데이터 포인트로 사전 훈련되어 별도의 모델 훈련 없이도 정확한 예측이 가능합니다. [^140]
-- **Hugging Face, 비동기 로봇 추론 공개**: 로봇의 행동 예측과 실행을 분리하는 비동기 추론(Asynchronous Robot Inference) 기술이 공개되었습니다. [^4] 이 접근법은 로봇이 다음 행동을 계산하는 동안에도 현재 작업을 수행할 수 있게 하여, 응답성을 크게 향상시키고 유휴 시간을 줄입니다. [^4]
+- **AWS, SageMaker AI 플랫폼 기능 대폭 업데이트**
+  Amazon SageMaker HyperPod는 이제 원클릭으로 가시성(Observability)을 확보할 수 있는 대시보드를 제공하여 분산 훈련 클러스터의 상태 및 성능 모니터링을 간소화합니다. [^3] 또한, 완전 관리형 MLflow 3.0을 지원하여 AI 실험 추적 및 애플리케이션 동작 관찰을 용이하게 했습니다. [^12] 더불어, Mistral AI 모델과 MCP(Model Context Protocol)를 통합하여 외부 데이터 소스와 상호작용하는 지능형 AI 어시스턴트 구축 가이드를 제공합니다. [^8]
+- **Netflix, Tudum 아키텍처를 RAW Hollow 기반으로 전환** [^15]
+  Netflix는 팬 사이트 Tudum의 아키텍처를 기존 Kafka 기반 CQRS에서 자체 개발한 인메모리 데이터베이스인 RAW Hollow로 전환했습니다. [^15] 이 변화로 데이터 전파 시간이 수 분에서 수 초로 단축되었고, 홈페이지 구성 시간은 약 1.4초에서 0.4초로 크게 감소했습니다. [^15] RAW Hollow는 전체 데이터셋을 각 애플리케이션 프로세스의 메모리에 상주시켜 I/O 병목 현상을 해결하고 강력한 '쓰기 후 읽기' 일관성을 제공합니다. [^15]
+- **Google, AI 동영상 도구 Flow 기능 확장** [^14]
+  Google의 AI 영상 제작 도구 Flow가 'Frames to Video' 기능에 음성 생성 기능을 추가했습니다. [^14] 이제 사용자는 자신이 업로드한 이미지를 시작 프레임으로 사용하여 사운드 이펙트, 배경 소음뿐만 아니라 대화까지 포함된 비디오 클립을 생성할 수 있습니다. [^14] 또한 Flow와 Google AI Ultra 플랜의 제공 국가가 76개국 추가되어 총 140개 이상의 국가에서 사용할 수 있게 되었습니다. [^14]
 
 ### 🔒 Security & Performance
-- **Git, 7개 보안 취약점 패치 릴리스**: Git 프로젝트가 모든 이전 버전에 영향을 미치는 7개의 보안 취약점을 해결한 새로운 버전을 발표했습니다. [^26] 개발자들은 즉시 최신 버전으로 업데이트할 것이 권장됩니다.
-- **Apple, LLM 추론 최적화 연구 발표**: Apple 연구진이 긴 컨텍스트 LLM 추론 시 GPU 메모리와 지연 시간 병목 현상을 해결하기 위한 두 가지 새로운 KV 캐시 압축 기술, `CommVQ(Commutative Vector Quantization)`와 `QuantSpec`을 발표했습니다. [^59][^57] 이 기술들은 양자화를 통해 KV 캐시 메모리 사용량을 크게 줄여 엣지 디바이스에서의 성능을 향상시킵니다. [^59][^57]
-- **Cloudflare, 분산 KV 스토어 Quicksilver v2 공개**: Cloudflare가 초당 30억 개 이상의 키를 처리하는 분산 키-값 저장소인 Quicksilver를 재설계한 Quicksilver v2를 공개했습니다. [^90] 이번 업데이트는 전 세계적으로 더 높은 성능과 안정성을 제공하는 데 초점을 맞췄습니다. [^90]
+- **Apple, LLM 추론 속도 및 메모리 효율성 개선 기술 발표** [^17]
+  Apple은 긴 컨텍스트를 가진 LLM(대규모 언어 모델)의 추론 속도를 높이기 위한 새로운 프레임워크 'QuantSpec'을 발표했습니다. [^17] 이 기술은 계층적 4비트 양자화 KV 캐시를 사용하여 기존 방식 대비 최대 2.5배의 속도 향상과 1.3배의 메모리 요구량 감소를 달성했습니다. [^17] 또한 'Shielded Diffusion'이라는 기술을 통해 이미지 생성 모델이 학습 데이터셋의 이미지를 그대로 복제하는 문제와 결과물의 다양성이 부족한 문제를 해결하는 방법을 제시했습니다. [^2]
+- **Apple, 차등 프라이버시 알고리즘 연구 성과 공개** [^5]
+  Apple 연구진은 적대적 밴딧(adversarial bandits) 문제에 대한 새로운 차등 프라이버시(differentially private) 알고리즘을 설계했습니다. [^5] 제안된 알고리즘은 기존보다 향상된 유감 상한(regret upper bound)을 보여주며, 중앙 집중형과 로컬 차등 프라이버시 간의 첫 분리를 확립했습니다. [^5]
+- **JavaScript 중심 개발의 문제점 지적**
+  과도한 JavaScript 프레임워크 사용이 웹사이트의 복잡성을 심화시키고, 개발자 경험(DX)을 사용자 경험(UX)보다 우선시하는 경향이 웹의 성능, 접근성, 유지보수성을 저해하고 있다는 비판이 제기되었습니다. [^33] 이는 웹의 본질적인 기능에서 벗어나 불필요한 기술적 부채를 만든다는 주장입니다. [^33]
 
 ## 📚 Worth Reading
-- **"The Gentle Singularity" - Sam Altman**: OpenAI의 CEO 샘 알트먼은 디지털 초지능의 도래가 이미 시작되었으며, 이는 점진적이고 생각보다 평범한 방식으로 진행되고 있다고 말합니다. [^127] 그는 AI가 과학 발전과 생산성을 극적으로 향상시켜 삶의 질을 높일 것이며, 2030년대에는 지능과 에너지가 풍부해져 인류의 근본적인 한계를 극복할 수 있을 것이라고 전망합니다. [^127]
-- **"How To Be Successful" - Sam Altman**: 성공을 위한 13가지 생각을 공유하는 글로, 자신을 복리처럼 성장시키고, 거의 망상에 가까울 정도로 자신을 믿으며, 독립적으로 생각하는 법을 배우라고 조언합니다. [^134] 또한, 장기적인 안목으로 중요한 소수의 일에 집중하고, 대담해지며, 강력한 네트워크를 구축하는 것의 중요성을 강조합니다. [^134]
-- **"Netflix Tudum Architecture: from CQRS with Kafka to CQRS with RAW Hollow"**: Netflix 기술 블로그에서 자사의 팬 사이트인 Tudum의 아키텍처 변화 과정을 공유했습니다. [^8] 초기 Kafka를 사용한 CQRS(명령 및 쿼리 책임 분리) 모델에서, 데이터 복제 및 전파를 위한 인메모리 데이터스토어 및 라이브러리인 Hollow를 활용하는 방식으로 전환하여 성능과 확장성을 개선한 사례를 자세히 설명합니다. [^8]
+- **Modular Ktor: Building Backends for Scale** [^16]
+  Ktor의 경량 프레임워크 특성을 활용하여 확장 가능한 백엔드 시스템을 구축하기 위한 모듈화 기법을 소개합니다. [^16] Ktor의 내장 DI 플러그인을 활용하여 의존성을 관리하고, 프로젝트를 여러 Gradle 모듈로 분리하여 도메인 중심 아키텍처를 구현하는 방법을 설명합니다. [^16]
+- **Netflix Tudum Architecture: from CQRS with Kafka to CQRS with RAW Hollow** [^15]
+  Netflix가 어떻게 기존의 복잡한 이벤트 기반 아키텍처의 한계를 인식하고, 자체 개발한 인메모리 데이터베이스 'RAW Hollow'를 도입하여 데이터 전파 지연 문제를 해결하고 성능을 극적으로 향상시켰는지 상세히 설명하는 기술 블로그입니다. [^15]
+- **Grok 4가 이제 선두 AI 모델임** [^10]
+  xAI의 새로운 AI 모델 Grok 4가 AAI Index에서 73점을 기록하며 OpenAI의 o3와 Google의 Gemini 2.5 Pro를 제치고 주요 벤치마크에서 1위를 차지했다는 분석입니다. [^10] 특히 코딩과 수학 관련 벤치마크에서 뛰어난 성능을 보였습니다. [^10]
 
 ## 🎯 Quick Takeaway
-AI 페어 프로그래머(예: GitHub Copilot)와 더 나은 파트너가 되기 위해서는 완벽한 프롬프트 작성 기술을 넘어, AI에게 충분한 '컨텍스트'를 제공하는 것이 핵심입니다. [^23] 코드의 품질을 높이려면 AI가 프로젝트의 전체적인 맥락을 이해할 수 있도록 명확하고 구조화된 코드를 작성하고 관련 파일을 함께 열어두는 것이 좋습니다. [^23]
+오늘은 Netflix가 자체 개발한 인메모리 데이터베이스 'RAW Hollow'를 도입하여 CQRS 아키텍처의 고질적인 'eventual consistency' 지연 문제를 해결한 사례가 인상 깊었습니다. [^15] 이는 I/O가 성능에 미치는 영향을 최소화하고, 전체 데이터셋을 메모리에 로드함으로써 캐시 무효화와 같은 복잡한 문제를 원천적으로 제거하는 접근법입니다. [^15] 복잡한 분산 시스템에서 성능 병목을 해결할 때, 때로는 아키텍처의 근본적인 가정을 바꾸는 과감한 시도가 효과적일 수 있다는 점을 배울 수 있었습니다. [^15]
 
-[^1]: Compose your way with Provider services! - https://www.docker.com/blog/docker-compose-with-provider-services/
-[^2]: Gemini is coming to your Wear OS smartwatch - https://blog.google/products/wear-os/gemini-wear-os-watches/
-[^3]: June 2025 (version 1.102) - https://code.visualstudio.com/updates/v1_102
-[^4]: Asynchronous Robot Inference: Decoupling Action Prediction and Execution - https://huggingface.co/blog/async-robot-inference
-[^5]: Docker Brings Compose to the Agent Era: Building AI Agents is Now Easy - https://www.docker.com/blog/build-ai-agents-with-docker-compose/
-[^6]: Sam & Jony - https://openai.com/sam-and-jony
-[^7]: PG and Jessica - https://blog.samaltman.com/pg-and-jessica
-[^8]: Netflix Tudum Architecture: from CQRS with Kafka to CQRS with RAW Hollow - https://netflixtechblog.com/netflix-tudum-architecture-from-cqrs-with-kafka-to-cqrs-with-raw-hollow-86d141b72e52?source=rss----2615bd06b42e---4
-[^9]: Docker MCP Gateway: Open Source, Secure Infrastructure for Agentic AI - https://www.docker.com/blog/docker-mcp-gateway-secure-infrastructure-for-agentic-ai/
-[^10]: Dive deeper with AI Mode and get gaming help in Circle to Search - https://blog.google/products/search/circle-to-search-ai-mode-gaming/
-[^11]: v15.4.0-canary.121 - https://github.com/vercel/next.js/releases/tag/v15.4.0-canary.121
-[^12]: Query Amazon Aurora PostgreSQL using Amazon Bedrock Knowledge Bases structured data - https://aws.amazon.com/blogs/machine-learning/query-amazon-aurora-postgresql-using-amazon-bedrock-knowledge-bases-structured-data/
-[^13]: What I Wish Someone Had Told Me - https://blog.samaltman.com/what-i-wish-someone-had-told-me
-[^14]: Apple announces chief operating officer transition - https://www.apple.com/newsroom/2025/07/apple-announces-chief-operating-officer-transition/
-[^15]: OpenAI 🤝 @teamganassi - https://www.youtube.com/shorts/LxYpRZYPNZ0
-[^16]: Reachy Mini - The Open-Source Robot for Today's and Tomorrow's AI Builders - https://huggingface.co/blog/reachy-mini
-[^17]: Upskill your LLMs with Gradio MCP Servers - https://huggingface.co/blog/gradio-mcp-servers
-[^18]: Target Concrete Score Matching: A Holistic Framework for Discrete Diffusion - https://machinelearning.apple.com/research/target-concrete
-[^19]: Grok 4 출시 - https://news.hada.io/topic?id=21917
-[^20]: Declutter your inbox with Gmail’s newest feature - https://blog.google/products/gmail/new-manage-subscriptions-unsubscribe/
-[^23]: Beyond prompt crafting: How to be a better partner for your AI pair programmer - https://github.blog/ai-and-ml/github-copilot/beyond-prompt-crafting-how-to-be-a-better-partner-for-your-ai-pair-programmer/
-[^26]: Git security vulnerabilities announced - https://github.blog/open-source/git/git-security-vulnerabilities-announced-6/
-[^45]: Announcing TypeScript 5.9 Beta - https://devblogs.microsoft.com/typescript/announcing-typescript-5-9-beta/
-[^54]: June 2025 - https://github.com/microsoft/vscode/releases/tag/1.102.0
-[^57]: QuantSpec: Self-Speculative Decoding with Hierarchical Quantized KV Cache - https://machinelearning.apple.com/research/quantspec
-[^59]: CommVQ: Commutative Vector Quantization for KV Cache Compression - https://machinelearning.apple.com/research/commutative-vector-quantization
-[^90]: Quicksilver v2: evolution of a globally distributed key-value store (Part 1) - https://blog.cloudflare.com/quicksilver-v2-evolution-of-a-globally-distributed-key-value-store-part-1/
-[^106]: New capabilities in Amazon SageMaker AI continue to transform how organizations develop AI models - https://aws.amazon.com/blogs/machine-learning/new-capabilities-in-amazon-sagemaker-ai-continue-to-transform-how-organizations-develop-ai-models/
-[^109]: Amazon SageMaker HyperPod launches model deployments to accelerate the generative AI model development lifecycle - https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-hyperpod-launches-model-deployments-to-accelerate-the-generative-ai-model-development-lifecycle/
-[^110]: Supercharge your AI workflows by connecting to SageMaker Studio from Visual Studio Code - https://aws.amazon.com/blogs/machine-learning/supercharge-your-ai-workflows-by-connecting-to-sagemaker-studio-from-visual-studio-code/
-[^127]: The Gentle Singularity - https://blog.samaltman.com/the-gentle-singularity
-[^134]: How To Be Successful - https://blog.samaltman.com/how-to-be-successful
-[^140]: Zero-shot forecasting in BigQuery with the TimesFM foundation model - https://cloud.google.com/blog/products/data-analytics/bigquery-ml-timesfm-models-now-in-preview/
+[^1]: Target Concrete Score Matching: A Holistic Framework for Discrete ... - https://machinelearning.apple.com/research/target-concrete
+[^2]: Shielded Diffusion: Generating Novel and Diverse Images using ... - https://machinelearning.apple.com/research/diffusion
+[^3]: Accelerate foundation model development with one-click ... - AWS - https://aws.amazon.com/blogs/machine-learning/accelerate-foundation-model-development-with-one-click-observability-in-amazon-sagemaker-hyperpod/
+[^4]: Self-reflective Uncertainties: Do LLMs Know Their Internal Answer Distribution? - https://machinelearning.apple.com/research/self-reflective
+[^5]: Faster Rates for Private Adversarial Bandits - Apple Machine ... - https://machinelearning.apple.com/research/private-adversarial-bandits
+[^6]: A Variational Framework for Improving Naturalness in Generative ... - https://machinelearning.apple.com/research/naturalness
+[^7]: June 2025 - Release notes from vscode - https://github.com/microsoft/vscode/releases/tag/1.102.0
+[^8]: Build an MCP application with Mistral models on AWS | Artificial ... - https://aws.amazon.com/blogs/machine-learning/build-an-mcp-application-with-mistral-models-on-aws/
+[^9]: RapidRAW - GPU 가속 및 비파괴 방식의 RAW 이미지 에디터 - https://news.hada.io/topic?id=21924
+[^10]: Grok 4가 이제 선두 AI 모델임 | GeekNews - https://news.hada.io/topic?id=21919
+[^11]: Beyond Sensor Data: Foundation Models of Behavioral Data from ... - https://machinelearning.apple.com/research/beyond-sensor
+[^12]: Accelerating generative AI development with fully managed MLflow ... - https://aws.amazon.com/blogs/machine-learning/accelerating-generative-ai-development-with-fully-managed-mlflow-3-0-on-amazon-sagemaker-ai/
+[^13]: Build real-time conversational AI experiences using Amazon Nova ... - https://aws.amazon.com/blogs/machine-learning/build-real-time-conversational-ai-experiences-using-amazon-nova-sonic-and-livekit/
+[^14]: Flow adds speech to videos and expands to more countries - https://blog.google/technology/google-labs/flow-adds-speech-expands/
+[^15]: Netflix Tudum Architecture: from CQRS with Kafka to CQRS with ... - https://netflixtechblog.com/netflix-tudum-architecture-from-cqrs-with-kafka-to-cqrs-with-raw-hollow-86d141b72e52
+[^16]: Modular Ktor: Building Backends for Scale | The Kotlin Blog - https://blog.jetbrains.com/kotlin/2025/07/modular-ktor-building-backends-for-scale/
+[^17]: QuantSpec: Self-Speculative Decoding with Hierarchical Quantized ... - https://machinelearning.apple.com/research/quantspec
+[^33]: 과도한 JavaScript 중심 개발, 웹을 망가뜨리다 - https://news.hada.io/topic?id=21925
