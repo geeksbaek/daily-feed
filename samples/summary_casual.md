@@ -2,26 +2,35 @@
 
 ## 🗞️ 오늘 재미있던 기술 소식
 
-진짜 SF 영화에서나 보던 일들이 현실이 되고 있어. OpenAI의 CEO 샘 알트만은 이제 인간과 기계의 통합, 즉 '머지(The Merge)'가 이미 시작되었다고 말했어. [^8] 우리가 스마트폰 알고리즘에 좌우되는 것부터가 그 시작이라는 거야. [^8] 앞으로는 유전자 강화, 뇌-기계 인터페이스까지 현실이 될 거라고. [^8] 조금 무섭기도 한데, 이게 인류에게 최상의 시나리오일 수 있다는 말이 더 소름 돋아. [^8]
+"와, 이게 되네?" 소리가 절로 나오는 날이야. xAI에서 공개한 Grok 4가 주요 AI 성능 테스트에서 1등을 차지했대. [^3] 이제 OpenAI나 구글, 앤트로픽과 어깨를 나란히 하는 수준을 넘어섰다고 주장하고 있어. [^3] 특히 대학원생 수준의 어려운 문제 해결 능력을 강조하던데, 거의 모든 분야에서 인간 전문가를 압도한다고 하니 입이 떡 벌어지지. [^4] SF 영화에서 보던 세상이 진짜 코앞까지 온 느낌이야.
 
 ## 📰 주목할 만한 이야기들
 
 ### 🏢 기업들 근황
-- **Google**, 이제 사진 한 장만 있으면 8초짜리 비디오를 뚝딱 만들어주는 미친 기능을 Gemini에 추가했어. [^1] 최신 AI 모델인 Veo 3를 사용하는데, Google AI Pro나 Ultra 구독자라면 바로 써볼 수 있대. [^1] 심지어 손목 위에서도 AI를 쓸 수 있게 됐어. Wear OS 스마트워치에 Gemini가 탑재돼서 폰 없이도 이메일 요약이나 일정 추가 같은 걸 할 수 있게 된 거지. [^4]
-- **OpenAI**는 미국 교사 연맹(AFT)이랑 손잡고 1,000만 달러를 투자해서 'AI 교육 국립 아카데미'를 만든대. [^10] 목표는 40만 명의 교사들에게 AI 활용법을 가르치는 거라고. [^10] 교실에서 AI를 어떻게 쓸지 교사들이 직접 결정하게 하겠다는 건데, 진짜 멋진 생각인 것 같아.
-- **AWS**는 진짜 개발자랑 기업들을 위한 AI 도구를 쏟아내고 있어. 복잡한 쿠버네티스 클러스터 관리를 도와주는 'K8sGPT'와 Amazon Bedrock 연동 서비스를 내놨고 [^5], 소매업을 위한 AI 비서 'Amazon Q Business'도 출시했어. [^6] 심지어 금융 사기를 잡는 'GraphRAG'라는 기술도 공개했는데, 이건 데이터들 사이의 '관계'를 분석해서 복잡한 사기 수법을 잡아내는 거래. [^11]
-- **Hugging Face**가 Pollen Robotics와 함께 엄청난 걸 내놨어. 'Reachy Mini'라는 오픈소스 로봇인데, 가격이 299달러부터 시작해! [^14] AI를 가지고 놀고, 배우고, 공유할 수 있게 만든 책상 위 작은 로봇이야. [^14] 이제 진짜 1인 1로봇 시대가 멀지 않은 것 같아.
+- **xAI**가 Grok 4를 내놓으면서 AI 모델 왕좌에 도전장을 내밀었어. 기존 모델들보다 코딩, 수학, 추론 능력에서 더 높은 점수를 받았다고 해. [^3] 심지어 Grok 4 Heavy라는 멀티 에이전트 버전도 있는데, 여러 AI가 협력해서 문제를 푼다니, 정말 똑똑하겠지? [^4]
+- **AWS**는 개발자 편의성을 엄청나게 높여주고 있어. 이제 아마존의 AI 개발 플랫폼인 SageMaker를 VS Code에서도 바로 쓸 수 있게 됐고, 복잡한 모델 개발 과정을 관리해주는 MLflow 3.0도 완전 관리형으로 제공한대. [^5] 개발자들이 좀 더 편하게 AI 모델을 만들고 실험할 수 있는 환경을 만들어주는 데 진심인 것 같아.
+- **Docker**도 AI 시대를 제대로 준비하고 있어. Docker Compose를 이용하면 AI 에이전트를 정말 쉽게 만들 수 있게 업데이트됐어. [^2] 여러 AI 모델, 도구를 YAML 파일 하나로 간단하게 엮어서 실행할 수 있다니, 개발자들한테는 희소식이지. [^2]
+- **구글**은 Gemini 앱에 신기한 기능을 추가했어. 이제 사진 한 장을 올리고 간단한 명령어를 입력하면, Veo 3 기술을 사용해서 8초짜리 영상으로 만들어준대. [^9] 내 갤러리에 잠자고 있는 사진들로 뭘 만들 수 있을지 상상만 해도 재밌지 않아?
 
 ### 🚀 눈에 띄는 기술
-- **AI 개발, 더 똑똑하게**: GitHub에서는 이제 Copilot을 더 잘 쓰려면 좋은 프롬프트만으로는 부족하다고 말해. [^3] 코드에 주석을 잘 달고, 프로젝트 맞춤형 지침 파일(`copilot-instructions.md`)을 만들어서 AI에게 컨텍스트를 잘 알려주는 게 핵심이래. [^3] AWS도 비슷한 흐름인데, 머신러닝 프로젝트 관리 도구인 MLflow 3.0을 SageMaker에서 완벽 지원해서 AI 앱의 모든 단계를 추적하고 디버깅하기 쉽게 만들었어. [^12]
-- **데이터 분석의 민주화**: 물류 플랫폼 회사인 Parcel Perform은 이제 데이터 분석가 없이도 비즈니스팀이 자연어로 데이터를 분석할 수 있게 됐어. [^13] AWS Bedrock을 이용한 text-to-SQL AI 에이전트 덕분인데, 며칠씩 걸리던 데이터 분석이 10분 만에 끝난대. [^13] 생산성이 99%나 향상됐다니, 이건 뭐 혁명 수준이야.
-- **보안은 기본, 거버넌스는 필수**: AI 모델을 그냥 막 쓰는 시대는 끝났어. AWS는 SageMaker Unified Studio에서 어떤 사용자가 어떤 AI 모델에 접근할 수 있는지 아주 세밀하게 통제하는 방법을 발표했어. [^15] 기업 입장에선 보안과 거버넌스를 확실히 챙기면서 AI를 도입할 수 있으니 정말 중요하지.
-- **자바의 진화**: 자바의 Z Garbage Collector(ZGC)는 잘 쓰면 기적 같은 성능을 보여주지만, 설정이 잘못되면 성능 저하의 주범이 될 수 있대. [^9] 최근 JavaOne 세션에서는 이런 함정을 피하는 방법과, 앞으로는 복잡한 설정 없이도 ZGC를 쉽게 쓸 수 있도록 개선 중이라는 소식이 전해졌어. [^9]
+- 이제 AI 비서를 쓸 때 내 정보가 어딘가로 전송될까 봐 걱정하지 않아도 될지 몰라. **NativeMind**라는 크롬 확장 프로그램이 나왔는데, 이건 인터넷 연결 없이 내 컴퓨터 안에서만 돌아가는 AI 어시스턴트야. [^11] 페이지 요약, 번역, 글쓰기 도움 같은 기능을 프라이버시 걱정 없이 쓸 수 있다니, 정말 매력적이지.
+- **Docker Compose**가 AI 에이전트 개발을 위해 진화한 것도 주목할 만해. LangGraph나 CrewAI 같은 요즘 인기 있는 AI 프레임워크랑 바로 연동돼서, 복잡한 AI 애플리케이션도 쉽게 조립하고 실행할 수 있게 됐어. [^2] 로컬에서 개발하다가 클라우드로 옮기는 것도 훨씬 간단해졌다고 해. [^2]
 
 ### 💬 솔직한 한마디
-샘 알트만이 쓴 '성공하는 법'이라는 글을 읽어봤는데, "복리처럼 성장하라", "거의 망상에 가까울 정도로 스스로를 믿어라", "결국 중요한 건 소유하는 것이다" 같은 조언들이 인상 깊었어. [^7] 특히 "대담한 아이디어가 사람들을 움직인다"는 말, 이거 완전 팩트 아니야? [^2] 세상을 바꾸는 기술들은 다들 처음엔 '이게 되겠어?' 싶었던 것들이잖아. 지금 쏟아지는 AI 기술들도 마찬가지인 것 같아. 당장은 혼란스러워도 결국 이 기술들을 잘 활용하는 소수의 사람이나 기업이 엄청난 기회를 잡게 되겠지. 우리는 그냥 구경만 할 게 아니라, 이 흐름에 어떻게 올라탈지 진지하게 고민해봐야 할 때야.
+- **Sam Altman (OpenAI CEO)**이 최근에 쓴 글이 되게 인상 깊었어. 그는 이미 특이점(Singularity)이 조용히 시작됐다고 말해. [^8] 우리가 매일 쓰는 스마트폰 알고리즘이나 소셜 미디어 피드가 이미 우리를 조종하고 있고, 이게 바로 인간과 기계가 합쳐지는 과정이라는 거지. AI 덕분에 인류의 생산성이 엄청나게 증폭될 거고, 2030년쯤에는 '계량하기엔 너무 저렴한 지능'의 시대가 올 거라고 예측하더라. [^8] 생각해보면 좀 무섭기도 한데, 한편으론 엄청 기대되지 않아?
+- 근데 또 재밌는 연구 결과도 있더라고. 숙련된 오픈소스 개발자들한테 AI 코딩 도구를 쓰게 했더니, 오히려 작업 완료 시간이 평균 19% 더 오래 걸렸대. [^38] 정작 개발자 본인들은 24% 더 빨라졌다고 느꼈다는데, 이 아이러니 어쩔 거야. [^38] AI가 정말 우리를 더 생산적으로 만드는 건지, 아니면 그냥 그렇게 느끼게만 하는 건지 한번 생각해 볼 문제 같아.
+- 웹 개발 쪽에서는 "자바스크립트에 너무 의존하다가 웹이 망가지고 있다"는 목소리가 커지고 있어. [^10] 개발자 경험을 챙기느라 정작 사용자 경험은 느려지고 복잡해졌다는 비판인데, 완전 공감돼. 가끔 너무 무겁고 복잡한 웹사이트들을 보면 '이게 최선이었을까?' 하는 생각이 들거든.
 
 ## 🎯 오늘의 핵심
-AI는 이제 단순한 도구를 넘어, 우리 일과 삶의 방식을 근본적으로 바꾸는 운영체제(OS)가 되어가고 있어. Gemini가 사진을 영상으로 만들고, Copilot이 내 코드의 맥락을 이해하고, Reachy Mini 같은 로봇이 책상 위 동료가 되는 세상이야. 중요한 건 이 변화의 흐름 위에서 '어떤 질문을 던지고, 무엇을 만들 것인가'를 고민하는 우리 자신인 것 같아.
 
-[^1]: Turn your photos into videos in Gemini - Google Blog[^2]: What I Wish Someone Had Told Me - Sam Altman[^3]: Beyond prompt crafting: How to be a better partner for your AI pair programmer - The GitHub Blog[^4]: How to use Gemini on a Wear OS smartwatch - Google Blog[^5]: Use K8sGPT and Amazon Bedrock for simplified Kubernetes cluster maintenance | Artificial Intelligence - AWS[^6]: Unlock retail intelligence by transforming data into actionable insights using generative AI with Amazon Q Business | Artificial Intelligence - AWS[^7]: How To Be Successful - Sam Altman[^8]: The Merge - Sam Altman[^9]: ZGC - Paving the GC On-Ramp – Inside.java[^10]: Working with 400,000 teachers to shape the future of AI in schools | OpenAI[^11]: Combat financial fraud with GraphRAG on Amazon Bedrock Knowledge Bases | Artificial Intelligence - AWS[^12]: Accelerating generative AI development with fully managed MLflow 3.0 on Amazon SageMaker AI | Artificial Intelligence - AWS[^13]: Democratize data for timely decisions with text-to-SQL at Parcel Perform | Artificial Intelligence - AWS[^14]: Reachy Mini - The Open-Source Robot for Today's and Tomorrow's AI Builders - Hugging Face[^15]: Configure fine-grained access to Amazon Bedrock models using Amazon SageMaker Unified Studio | Artificial Intelligence - AWS
+오늘의 핵심은 이거야: **"AI는 이제 공기처럼 당연해지고 있다."** xAI의 Grok 4처럼 성능 경쟁은 점점 치열해지고, AWS나 Docker처럼 개발 도구는 점점 편해지고 있어. Sam Altman의 말처럼 지능이 거의 공짜가 되는 시대가 오고 있는 거지. [^8] 이제 중요한 건 이 강력한 도구를 가지고 누가 더 창의적이고 재미있는 아이디어를 실현하느냐에 달린 것 같아.
+
+[^2]: Docker Brings Compose to the AI Agent Era | Docker - https://www.docker.com/blog/build-ai-agents-with-docker-compose/
+[^3]: Grok 4가 이제 선두 AI 모델임 | GeekNews - https://news.hada.io/topic?id=21919
+[^4]: Grok 4 출시 | GeekNews - https://news.hada.io/topic?id=21917
+[^5]: New capabilities in Amazon SageMaker AI continue to transform ... - https://aws.amazon.com/blogs/machine-learning/new-capabilities-in-amazon-sagemaker-ai-continue-to-transform-how-organizations-develop-ai-models/
+[^8]: The Gentle Singularity - Sam Altman - https://blog.samaltman.com/the-gentle-singularity
+[^9]: Introducing Gemini with photo to video capability - Google Blog - https://blog.google/products/gemini/photo-to-video/
+[^10]: 과도한 JavaScript 중심 개발, 웹을 망가뜨리다 | GeekNews - https://news.hada.io/topic?id=21925
+[^11]: NativeMind - 브라우저에서 실행되는 프라이빗 온디바이스 AI ... - https://news.hada.io/topic?id=21918
+[^38]: 경험 많은 오픈소스 개발자의 생산성에 미치는 "AI의 임팩트" 측정하기 - https://news.hada.io/topic?id=21920
