@@ -2,8 +2,11 @@ package ai
 
 import (
 	"context"
+	"encoding/json"
 	"fmt"
+	"os"
 	"strings"
+	"time"
 
 	"google.golang.org/genai"
 
@@ -61,10 +64,6 @@ func (s *geminiSummarizer) prepareFeedData(items []models.FeedItem) (string, []s
 		feedData.WriteString(fmt.Sprintf("%d. **%s**\n", i, item.Title))
 		feedData.WriteString(fmt.Sprintf("   - 출처: %s\n", item.Source))
 		feedData.WriteString(fmt.Sprintf("   - 링크: %s\n", item.Link))
-		feedData.WriteString(fmt.Sprintf("   - 날짜: %s\n", item.PubDate.Format("2006-01-02")))
-		if item.Description != "" {
-			feedData.WriteString(fmt.Sprintf("   - 요약: %s\n", utils.CleanHTML(item.Description)))
-		}
 		feedData.WriteString("\n")
 		i++
 	}
@@ -75,20 +74,12 @@ func (s *geminiSummarizer) prepareFeedData(items []models.FeedItem) (string, []s
 
 	urls = utils.RemoveDuplicateURLs(urls, MaxURLs)
 
-	if len(urls) > 0 {
-		feedData.WriteString("위 기사들의 전체 내용을 분석하기 위해 다음 URL들을 참조하세요:\n")
-		for _, url := range urls {
-			feedData.WriteString(fmt.Sprintf("- %s\n", url))
-		}
-		feedData.WriteString("\n")
-	}
-
 	return feedData.String(), urls
 }
 
 func (s *geminiSummarizer) generateRoleBasedPrompts(feedData string, urls []string) (string, string) {
 	systemPrompt := s.getSystemPrompt()
-	
+
 	userPrompt := fmt.Sprintf(`다음 RSS 피드 데이터를 분석하여 일간 기술 뉴스 브리핑을 작성해주세요.
 
 %s
@@ -185,8 +176,6 @@ func (s *geminiSummarizer) getDefaultSystemPrompt() string {
 - 🔥 중요: footnote에서 링크 URL은 반드시 클릭 가능한 형태로 포함해야 합니다
 - 기업 이름은 피드 내용에 등장하는 기업들만 언급하고, 임의로 특정 기업을 예시로 들지 마세요`
 }
-
-
 
 func (s *geminiSummarizer) getDeveloperSystemPrompt() string {
 	return `당신은 개발자들을 위한 기술 뉴스 큐레이터입니다.
@@ -408,6 +397,11 @@ func (s *geminiSummarizer) callGeminiAPIWithRoles(ctx context.Context, systemPro
 		ResponseMIMEType: "text/plain",
 	}
 
+	// 디버그 로그: Gemini API 호출 파라미터 출력
+	if s.config.Debug {
+		s.logGeminiAPIParams(s.config.GeminiModel, content, generateConfig)
+	}
+
 	resp, err := s.client.Models.GenerateContent(ctx, s.config.GeminiModel, content, generateConfig)
 	if err != nil {
 		return "", &utils.AIError{
@@ -417,4 +411,41 @@ func (s *geminiSummarizer) callGeminiAPIWithRoles(ctx context.Context, systemPro
 	}
 
 	return resp.Text(), nil
+}
+
+// logGeminiAPIParams Gemini API 호출 파라미터를 디버그 로그 파일에 출력
+func (s *geminiSummarizer) logGeminiAPIParams(model string, content []*genai.Content, config *genai.GenerateContentConfig) {
+	debugData := map[string]interface{}{
+		"timestamp": time.Now().Format(time.RFC3339),
+		"model":     model,
+		"content":   content,
+		"config":    config,
+	}
+
+	jsonData, err := json.MarshalIndent(debugData, "", "  ")
+	if err != nil {
+		s.logger.Error("디버그 로그 JSON 마샬링 실패: %v", err)
+		return
+	}
+
+	// 디버그 로그 파일에 출력
+	logFile := "gemini-debug.log"
+	file, err := os.OpenFile(logFile, os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0644)
+	if err != nil {
+		s.logger.Error("디버그 로그 파일 열기 실패 (%s): %v", logFile, err)
+		return
+	}
+	defer file.Close()
+
+	if _, err := file.Write(jsonData); err != nil {
+		s.logger.Error("디버그 로그 파일 쓰기 실패 (%s): %v", logFile, err)
+		return
+	}
+
+	if _, err := file.WriteString("\n---\n"); err != nil {
+		s.logger.Error("디버그 로그 구분자 쓰기 실패 (%s): %v", logFile, err)
+		return
+	}
+
+	s.logger.Info("Gemini API 파라미터 디버그 로그 출력: %s", logFile)
 }

@@ -18,6 +18,7 @@ func main() {
 	cutoffHours := flag.Int("cutoff", 24, "피드 수집 시간 범위 (시간)")
 	httpTimeout := flag.Int("timeout", 15, "HTTP 요청 타임아웃 (초)")
 	summaryPreset := flag.String("preset", "default", "요약 프리셋 (default, developer, casual, community)")
+	debug := flag.Bool("debug", false, "디버그 모드 활성화 (Gemini API 파라미터 로그 출력)")
 	flag.Parse()
 
 	ctx, cancel := context.WithCancel(context.Background())
@@ -30,7 +31,7 @@ func main() {
 		cancel()
 	}()
 
-	application, err := app.New(*feedsFile, *geminiModel, *cutoffHours, *httpTimeout, *summaryPreset)
+	application, err := app.New(*feedsFile, *geminiModel, *cutoffHours, *httpTimeout, *summaryPreset, *debug)
 	if err != nil {
 		log.Fatal(err)
 	}

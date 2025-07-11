@@ -23,7 +23,7 @@ type App struct {
 	outputWriter ai.OutputWriter
 }
 
-func New(feedsFile, geminiModel string, cutoffHours, httpTimeout int, summaryPreset string) (*App, error) {
+func New(feedsFile, geminiModel string, cutoffHours, httpTimeout int, summaryPreset string, debug bool) (*App, error) {
 	logger := logger.New()
 
 	// Config 구조체 직접 생성
@@ -33,6 +33,7 @@ func New(feedsFile, geminiModel string, cutoffHours, httpTimeout int, summaryPre
 		CutoffHours:   cutoffHours,
 		HTTPTimeout:   httpTimeout,
 		SummaryPreset: summaryPreset,
+		Debug:         debug,
 	}
 
 	if err := cfg.Validate(); err != nil {
