@@ -452,15 +452,24 @@ func validateAtomFields(t *testing.T, entries []models.AtomEntry, _ models.Feed)
 			t.Logf("  Link: %s", truncateString(link, 50))
 		}
 		
-		// Updated 검증
-		if strings.TrimSpace(entry.Updated) == "" {
-			t.Errorf("  Updated가 비어있음")
+		// Published/Updated 검증
+		dateStr := entry.Published
+		if dateStr == "" {
+			dateStr = entry.Updated
+		}
+		
+		if strings.TrimSpace(dateStr) == "" {
+			t.Errorf("  Published/Updated가 모두 비어있음")
 		} else {
-			updated, err := utils.ParseDate(entry.Updated)
+			pubDate, err := utils.ParseDate(dateStr)
 			if err != nil {
-				t.Errorf("  Updated 파싱 실패: %v (원본: %s)", err, entry.Updated)
+				t.Errorf("  날짜 파싱 실패: %v (원본: %s)", err, dateStr)
 			} else {
-				t.Logf("  Updated: %s", updated.Format(time.RFC3339))
+				if entry.Published != "" {
+					t.Logf("  Published: %s", pubDate.Format(time.RFC3339))
+				} else {
+					t.Logf("  Updated: %s", pubDate.Format(time.RFC3339))
+				}
 			}
 		}
 		

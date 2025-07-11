@@ -158,7 +158,13 @@ func (p *processor) processRSSItems(items []models.Item, feed models.Feed, cutof
 
 func (p *processor) processAtomEntries(entries []models.AtomEntry, feed models.Feed, cutoffTime time.Time, itemsChan chan<- models.FeedItem) error {
 	for _, entry := range entries {
-		pubDate, err := utils.ParseDate(entry.Updated)
+		// published 필드를 우선적으로 사용하고, 없으면 updated 사용
+		dateStr := entry.Published
+		if dateStr == "" {
+			dateStr = entry.Updated
+		}
+		
+		pubDate, err := utils.ParseDate(dateStr)
 		if err != nil {
 			continue
 		}

@@ -43,12 +43,13 @@ type AtomLink struct {
 }
 
 type AtomEntry struct {
-	Title   string      `xml:"title"`
-	Summary string      `xml:"summary"`
-	Content AtomContent `xml:"content"`
-	Link    []AtomLink  `xml:"link"`
-	Updated string      `xml:"updated"`
-	ID      string      `xml:"id"`
+	Title     string      `xml:"title"`
+	Summary   string      `xml:"summary"`
+	Content   AtomContent `xml:"content"`
+	Link      []AtomLink  `xml:"link"`
+	Published string      `xml:"published"`
+	Updated   string      `xml:"updated"`
+	ID        string      `xml:"id"`
 }
 
 type AtomContent struct {
