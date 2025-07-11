@@ -100,7 +100,13 @@ func (s *geminiSummarizer) generateRoleBasedPrompts(feedData string, urls []stri
 - 반드시 위에 명시된 마크다운 헤더 구조를 정확히 따르세요
 - 각 섹션은 2-3개 포인트로 제한
 - 구체적인 수치와 데이터 활용으로 신뢰성 확보
-- 최종 제출 전 필수 검토: 본문에 [^숫자] 인용이 충분히 있는지 다시 한번 확인하세요`, feedData)
+
+**🚨 인용 검수 체크리스트:**
+1. 본문의 모든 사실, 수치, 기업명, 기술명에 [^숫자] 인용이 있는가?
+2. 문서 맨 끝에 모든 footnote 정의가 있고, 각각 클릭 가능한 URL을 포함하는가?
+3. [^1]: 기사제목 - https://링크 형식이 정확한가?
+4. 본문에서 언급한 모든 [^숫자]에 대응하는 footnote가 있는가?
+- 최종 제출 전 필수 검토: 위 체크리스트를 모두 확인하세요`, feedData)
 
 	return systemPrompt, userPrompt
 }
@@ -171,8 +177,9 @@ func (s *geminiSummarizer) getDefaultSystemPrompt() string {
 - 본문 작성 규칙: 문장을 쓸 때마다 "이 정보는 어느 기사에서 왔는가?"를 자문하고 즉시 [^숫자] 추가
 - 중요: 여러 개를 인용할 때 [^3, ^4] 금지! 반드시 [^3][^4] 형태로 연속 작성
 - 반드시 문서 맨 끝에 footnote 정의를 다음 형식으로 추가하세요:
-  [^1]: 기사제목 - 출처 링크
-  [^2]: 기사제목 - 출처 링크
+  [^1]: 기사제목 - https://example.com/article-url
+  [^2]: 기사제목 - https://example.com/article-url
+- 🔥 중요: footnote에서 링크 URL은 반드시 클릭 가능한 형태로 포함해야 합니다
 - 기업 이름은 피드 내용에 등장하는 기업들만 언급하고, 임의로 특정 기업을 예시로 들지 마세요`
 }
 
@@ -231,8 +238,9 @@ func (s *geminiSummarizer) getDeveloperSystemPrompt() string {
 - 본문 작성 규칙: 문장을 쓸 때마다 "이 정보는 어느 기사에서 왔는가?"를 자문하고 즉시 [^숫자] 추가
 - 중요: 여러 개를 인용할 때 [^3, ^4] 금지! 반드시 [^3][^4] 형태로 연속 작성
 - 반드시 문서 맨 끝에 footnote 정의를 다음 형식으로 추가하세요:
-  [^1]: 기사제목 - 출처 링크
-  [^2]: 기사제목 - 출처 링크
+  [^1]: 기사제목 - https://example.com/article-url
+  [^2]: 기사제목 - https://example.com/article-url
+- 🔥 중요: footnote에서 링크 URL은 반드시 클릭 가능한 형태로 포함해야 합니다
 - 기업 이름은 피드 내용에 등장하는 기업들만 언급하고, 임의로 특정 기업을 예시로 들지 마세요`
 }
 
@@ -286,8 +294,9 @@ func (s *geminiSummarizer) getCasualSystemPrompt() string {
 - 본문 작성 규칙: 문장을 쓸 때마다 "이 정보는 어느 기사에서 왔는가?"를 자문하고 즉시 [^숫자] 추가
 - 중요: 여러 개를 인용할 때 [^3, ^4] 금지! 반드시 [^3][^4] 형태로 연속 작성
 - 반드시 문서 맨 끝에 footnote 정의를 다음 형식으로 추가하세요:
-  [^1]: 기사제목 - 출처 링크
-  [^2]: 기사제목 - 출처 링크
+  [^1]: 기사제목 - https://example.com/article-url
+  [^2]: 기사제목 - https://example.com/article-url
+- 🔥 중요: footnote에서 링크 URL은 반드시 클릭 가능한 형태로 포함해야 합니다
 - 기업 이름은 피드 내용에 등장하는 기업들만 언급하고, 임의로 특정 기업을 예시로 들지 마세요`
 }
 
@@ -341,8 +350,9 @@ func (s *geminiSummarizer) getCommunitySystemPrompt() string {
 - 본문 작성 규칙: 문장을 쓸 때마다 "이 정보는 어느 기사에서 왔는가?"를 자문하고 즉시 [^숫자] 추가
 - 중요: 여러 개를 인용할 때 [^3, ^4] 금지! 반드시 [^3][^4] 형태로 연속 작성
 - 반드시 문서 맨 끝에 footnote 정의를 다음 형식으로 추가하세요:
-  [^1]: 기사제목 - 출처 링크
-  [^2]: 기사제목 - 출처 링크
+  [^1]: 기사제목 - https://example.com/article-url
+  [^2]: 기사제목 - https://example.com/article-url
+- 🔥 중요: footnote에서 링크 URL은 반드시 클릭 가능한 형태로 포함해야 합니다
 - 기업 이름은 피드 내용에 등장하는 기업들만 언급하고, 임의로 특정 기업을 예시로 들지 마세요`
 }
 
