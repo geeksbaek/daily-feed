@@ -34,6 +34,12 @@ var problematicFeeds = []models.Feed{
 		Website:  "https://www.microsoft.com/en-us/ai/blog/",
 		Category: "tech",
 	},
+	{
+		Title:    "GeekNews",
+		RSSUrl:   "https://feeds.feedburner.com/geeknews-feed",
+		Website:  "https://news.hada.io/",
+		Category: "tech",
+	},
 }
 
 func TestProblematicFeedsIndividually(t *testing.T) {
@@ -92,7 +98,8 @@ func testSingleFeed(t *testing.T, client *http.Client, feed models.Feed) {
 	}
 
 	// 3. XML 기본 구조 확인
-	if !strings.HasPrefix(strings.TrimSpace(bodyStr), "<?xml") && !strings.HasPrefix(strings.TrimSpace(bodyStr), "<rss") {
+	trimmed := strings.TrimSpace(bodyStr)
+	if !strings.HasPrefix(trimmed, "<?xml") && !strings.HasPrefix(trimmed, "<rss") && !strings.HasPrefix(trimmed, "<feed") {
 		t.Errorf("응답이 XML 형식이 아님: %s", bodyStr[:100])
 	}
 
@@ -100,27 +107,48 @@ func testSingleFeed(t *testing.T, client *http.Client, feed models.Feed) {
 	var rss1 models.RSS
 	err1 := xml.Unmarshal(body, &rss1)
 	
-	// 5. XML Entity 수정 후 파싱 테스트
+	// 5. XML Entity 수정 후 RSS 파싱 테스트
 	fixedBodyStr := utils.FixXMLEntities(bodyStr)
 	var rss2 models.RSS
 	err2 := xml.Unmarshal([]byte(fixedBodyStr), &rss2)
 
-	// 결과 출력
-	t.Logf("원본 XML 파싱 결과: %v", err1)
-	t.Logf("수정된 XML 파싱 결과: %v", err2)
+	// 6. Atom 피드 파싱 시도
+	var atom1 models.AtomFeed
+	err3 := xml.Unmarshal(body, &atom1)
+	
+	var atom2 models.AtomFeed
+	err4 := xml.Unmarshal([]byte(fixedBodyStr), &atom2)
 
-	if err1 != nil && err2 != nil {
-		t.Errorf("두 방법 모두 XML 파싱 실패:")
-		t.Errorf("  원본: %v", err1)
-		t.Errorf("  수정: %v", err2)
+	// 결과 출력
+	t.Logf("원본 RSS 파싱 결과: %v", err1)
+	t.Logf("수정된 RSS 파싱 결과: %v", err2)
+	t.Logf("원본 Atom 파싱 결과: %v", err3)
+	t.Logf("수정된 Atom 파싱 결과: %v", err4)
+
+	// RSS 파싱 성공 확인
+	if err2 == nil && len(rss2.Channel.Items) > 0 {
+		t.Logf("RSS 파싱 성공! 아이템 수: %d", len(rss2.Channel.Items))
+		if len(rss2.Channel.Items) > 0 {
+			t.Logf("첫 번째 RSS 아이템: %s", rss2.Channel.Items[0].Title)
+		}
+	} else if err4 == nil && len(atom2.Entries) > 0 {
+		t.Logf("Atom 파싱 성공! 엔트리 수: %d", len(atom2.Entries))
+		if len(atom2.Entries) > 0 {
+			t.Logf("첫 번째 Atom 엔트리: %s", atom2.Entries[0].Title)
+		}
+	} else {
+		t.Errorf("RSS와 Atom 파싱 모두 실패:")
+		t.Errorf("  원본 RSS: %v", err1)
+		t.Errorf("  수정 RSS: %v", err2)
+		t.Errorf("  원본 Atom: %v", err3)
+		t.Errorf("  수정 Atom: %v", err4)
 		
 		// 구체적인 XML 오류 위치 찾기
-		findXMLError(t, bodyStr, err1)
-		findXMLError(t, fixedBodyStr, err2)
-	} else if err2 == nil {
-		t.Logf("XML 파싱 성공! 아이템 수: %d", len(rss2.Channel.Items))
-		if len(rss2.Channel.Items) > 0 {
-			t.Logf("첫 번째 아이템: %s", rss2.Channel.Items[0].Title)
+		if err2 != nil {
+			findXMLError(t, fixedBodyStr, err2)
+		}
+		if err4 != nil {
+			findXMLError(t, fixedBodyStr, err4)
 		}
 	}
 }
