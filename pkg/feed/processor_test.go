@@ -2,9 +2,11 @@ package feed
 
 import (
 	"context"
+	"encoding/csv"
 	"encoding/xml"
 	"io"
 	"net/http"
+	"os"
 	"regexp"
 	"strings"
 	"testing"
@@ -277,4 +279,353 @@ func min(a, b int) int {
 		return a
 	}
 	return b
+}
+
+// feeds.csv에서 모든 피드 로드
+func loadAllFeeds(t *testing.T) []models.Feed {
+	file, err := os.Open("../../feeds.csv")
+	if err != nil {
+		t.Fatalf("feeds.csv 파일을 열 수 없습니다: %v", err)
+	}
+	defer file.Close()
+
+	reader := csv.NewReader(file)
+	records, err := reader.ReadAll()
+	if err != nil {
+		t.Fatalf("CSV 파일을 읽을 수 없습니다: %v", err)
+	}
+
+	var feeds []models.Feed
+	// 첫 번째 줄(헤더) 건너뛰기
+	for i := 1; i < len(records); i++ {
+		if len(records[i]) >= 4 {
+			feeds = append(feeds, models.Feed{
+				Title:    records[i][0],
+				RSSUrl:   records[i][1],
+				Website:  records[i][2],
+				Category: records[i][3],
+			})
+		}
+	}
+
+	return feeds
+}
+
+// 모든 피드 테스트 (feeds.csv 기반)
+func TestAllFeedsFromCSV(t *testing.T) {
+	feeds := loadAllFeeds(t)
+	
+	client := &http.Client{
+		Timeout: 30 * time.Second,
+	}
+
+	for _, feed := range feeds {
+		t.Run(feed.Title, func(t *testing.T) {
+			testFeedFieldParsing(t, client, feed)
+		})
+	}
+}
+
+// 필드 파싱 검증을 포함한 강화된 테스트
+func testFeedFieldParsing(t *testing.T, client *http.Client, feed models.Feed) {
+	ctx := context.Background()
+	
+	// 1. HTTP 요청 테스트
+	req, err := http.NewRequestWithContext(ctx, "GET", feed.RSSUrl, nil)
+	if err != nil {
+		t.Fatalf("HTTP 요청 생성 실패: %v", err)
+	}
+
+	req.Header.Set("User-Agent", "daily-feed/1.0")
+
+	resp, err := client.Do(req)
+	if err != nil {
+		t.Fatalf("HTTP 요청 실패: %v", err)
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != 200 {
+		t.Fatalf("HTTP 상태 코드 오류: %d", resp.StatusCode)
+	}
+
+	// 2. 응답 본문 읽기
+	body, err := io.ReadAll(resp.Body)
+	if err != nil {
+		t.Fatalf("응답 본문 읽기 실패: %v", err)
+	}
+
+	bodyStr := utils.FixXMLEntities(string(body))
+	
+	// 3. RSS 피드 파싱 시도
+	var rss models.RSS
+	rssErr := xml.Unmarshal([]byte(bodyStr), &rss)
+	
+	// 4. Atom 피드 파싱 시도
+	var atom models.AtomFeed
+	atomErr := xml.Unmarshal([]byte(bodyStr), &atom)
+
+	// 5. 파싱 결과 확인 및 필드 검증
+	if rssErr == nil && len(rss.Channel.Items) > 0 {
+		t.Logf("RSS 파싱 성공! 아이템 수: %d", len(rss.Channel.Items))
+		validateRSSFields(t, rss.Channel.Items, feed)
+	} else if atomErr == nil && len(atom.Entries) > 0 {
+		t.Logf("Atom 파싱 성공! 엔트리 수: %d", len(atom.Entries))
+		validateAtomFields(t, atom.Entries, feed)
+	} else {
+		t.Errorf("RSS와 Atom 파싱 모두 실패:")
+		t.Errorf("  RSS 오류: %v", rssErr)
+		t.Errorf("  Atom 오류: %v", atomErr)
+	}
+}
+
+// RSS 필드 검증
+func validateRSSFields(t *testing.T, items []models.Item, _ models.Feed) {
+	for i, item := range items {
+		if i >= 3 { // 처음 3개 아이템만 검증
+			break
+		}
+		
+		t.Logf("RSS 아이템 #%d 검증:", i+1)
+		
+		// Title 검증
+		if strings.TrimSpace(item.Title) == "" {
+			t.Errorf("  Title이 비어있음")
+		} else {
+			t.Logf("  Title: %s", truncateString(item.Title, 50))
+		}
+		
+		// Link 검증
+		if strings.TrimSpace(item.Link) == "" {
+			t.Errorf("  Link가 비어있음")
+		} else {
+			t.Logf("  Link: %s", truncateString(item.Link, 50))
+		}
+		
+		// PubDate 검증
+		if strings.TrimSpace(item.PubDate) == "" {
+			t.Errorf("  PubDate가 비어있음")
+		} else {
+			pubDate, err := utils.ParseDate(item.PubDate)
+			if err != nil {
+				t.Errorf("  PubDate 파싱 실패: %v (원본: %s)", err, item.PubDate)
+			} else {
+				t.Logf("  PubDate: %s", pubDate.Format(time.RFC3339))
+			}
+		}
+		
+		// Description 검증
+		if strings.TrimSpace(item.Description) == "" {
+			t.Logf("  Description이 비어있음 (선택사항)")
+		} else {
+			t.Logf("  Description: %s", truncateString(item.Description, 50))
+		}
+	}
+}
+
+// Atom 필드 검증
+func validateAtomFields(t *testing.T, entries []models.AtomEntry, _ models.Feed) {
+	for i, entry := range entries {
+		if i >= 3 { // 처음 3개 엔트리만 검증
+			break
+		}
+		
+		t.Logf("Atom 엔트리 #%d 검증:", i+1)
+		
+		// Title 검증
+		if strings.TrimSpace(entry.Title) == "" {
+			t.Errorf("  Title이 비어있음")
+		} else {
+			t.Logf("  Title: %s", truncateString(entry.Title, 50))
+		}
+		
+		// Link 검증
+		var link string
+		for _, l := range entry.Link {
+			if l.Rel == "alternate" || l.Rel == "" {
+				link = l.Href
+				break
+			}
+		}
+		if strings.TrimSpace(link) == "" {
+			t.Errorf("  Link가 비어있음")
+		} else {
+			t.Logf("  Link: %s", truncateString(link, 50))
+		}
+		
+		// Updated 검증
+		if strings.TrimSpace(entry.Updated) == "" {
+			t.Errorf("  Updated가 비어있음")
+		} else {
+			updated, err := utils.ParseDate(entry.Updated)
+			if err != nil {
+				t.Errorf("  Updated 파싱 실패: %v (원본: %s)", err, entry.Updated)
+			} else {
+				t.Logf("  Updated: %s", updated.Format(time.RFC3339))
+			}
+		}
+		
+		// Summary/Content 검증
+		description := entry.Summary
+		if description == "" && entry.Content.Text != "" {
+			description = entry.Content.Text
+		}
+		if strings.TrimSpace(description) == "" {
+			t.Logf("  Description이 비어있음 (선택사항)")
+		} else {
+			t.Logf("  Description: %s", truncateString(description, 50))
+		}
+	}
+}
+
+// cutoffTime 적용 테스트
+func TestCutoffTimeApplication(t *testing.T) {
+	feeds := []models.Feed{
+		{
+			Title:    "GeekNews",
+			RSSUrl:   "https://feeds.feedburner.com/geeknews-feed",
+			Website:  "https://news.hada.io/",
+			Category: "tech",
+		},
+	}
+	
+	client := &http.Client{
+		Timeout: 30 * time.Second,
+	}
+
+	for _, feed := range feeds {
+		t.Run(feed.Title, func(t *testing.T) {
+			testCutoffTime(t, client, feed)
+		})
+	}
+}
+
+func testCutoffTime(t *testing.T, client *http.Client, feed models.Feed) {
+	ctx := context.Background()
+	
+	// 매우 최근 시간 (1시간 전)으로 cutoff 설정
+	cutoffTime := time.Now().Add(-1 * time.Hour)
+	
+	req, err := http.NewRequestWithContext(ctx, "GET", feed.RSSUrl, nil)
+	if err != nil {
+		t.Fatalf("HTTP 요청 생성 실패: %v", err)
+	}
+
+	req.Header.Set("User-Agent", "daily-feed/1.0")
+
+	resp, err := client.Do(req)
+	if err != nil {
+		t.Fatalf("HTTP 요청 실패: %v", err)
+	}
+	defer resp.Body.Close()
+
+	body, err := io.ReadAll(resp.Body)
+	if err != nil {
+		t.Fatalf("응답 본문 읽기 실패: %v", err)
+	}
+
+	bodyStr := utils.FixXMLEntities(string(body))
+	
+	// Atom 피드 파싱 (GeekNews는 Atom 형식)
+	var atom models.AtomFeed
+	if err := xml.Unmarshal([]byte(bodyStr), &atom); err != nil {
+		t.Fatalf("Atom 파싱 실패: %v", err)
+	}
+
+	recentCount := 0
+	oldCount := 0
+	
+	for _, entry := range atom.Entries {
+		updated, err := utils.ParseDate(entry.Updated)
+		if err != nil {
+			t.Logf("날짜 파싱 실패: %v", err)
+			continue
+		}
+		
+		if updated.After(cutoffTime) {
+			recentCount++
+		} else {
+			oldCount++
+		}
+	}
+	
+	t.Logf("총 엔트리 수: %d", len(atom.Entries))
+	t.Logf("cutoff 시간(%s) 이후 엔트리: %d", cutoffTime.Format(time.RFC3339), recentCount)
+	t.Logf("cutoff 시간 이전 엔트리: %d", oldCount)
+	
+	if recentCount == 0 && oldCount == 0 {
+		t.Errorf("모든 엔트리의 날짜 파싱이 실패했습니다")
+	}
+}
+
+// 문자열 자르기 헬퍼 함수
+func truncateString(s string, maxLen int) string {
+	if len(s) <= maxLen {
+		return s
+	}
+	return s[:maxLen] + "..."
+}
+
+// 날짜 파싱 테스트
+func TestDateParsing(t *testing.T) {
+	testCases := []struct {
+		name     string
+		dateStr  string
+		expected bool // 파싱 성공 여부
+	}{
+		{
+			name:     "RFC3339 형식 (Atom 표준)",
+			dateStr:  "2025-07-11T10:30:00Z",
+			expected: true,
+		},
+		{
+			name:     "RFC3339 with timezone",
+			dateStr:  "2025-07-11T10:30:00+09:00",
+			expected: true,
+		},
+		{
+			name:     "RFC3339 with nanoseconds",
+			dateStr:  "2025-07-11T10:30:00.123456789Z",
+			expected: true,
+		},
+		{
+			name:     "RFC1123Z 형식 (RSS 표준)",
+			dateStr:  "Thu, 11 Jul 2025 10:30:00 +0000",
+			expected: true,
+		},
+		{
+			name:     "RFC1123 형식",
+			dateStr:  "Thu, 11 Jul 2025 10:30:00 GMT",
+			expected: true,
+		},
+		{
+			name:     "잘못된 형식",
+			dateStr:  "2025/07/11 10:30:00",
+			expected: false,
+		},
+		{
+			name:     "빈 문자열",
+			dateStr:  "",
+			expected: false,
+		},
+	}
+
+	for _, tc := range testCases {
+		t.Run(tc.name, func(t *testing.T) {
+			parsed, err := utils.ParseDate(tc.dateStr)
+			
+			if tc.expected {
+				if err != nil {
+					t.Errorf("파싱이 성공해야 하지만 실패: %v", err)
+				} else {
+					t.Logf("파싱 성공: %s -> %s", tc.dateStr, parsed.Format(time.RFC3339))
+				}
+			} else {
+				if err == nil {
+					t.Errorf("파싱이 실패해야 하지만 성공: %s", parsed.Format(time.RFC3339))
+				} else {
+					t.Logf("예상대로 파싱 실패: %v", err)
+				}
+			}
+		})
+	}
 }

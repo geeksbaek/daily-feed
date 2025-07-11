@@ -2,44 +2,26 @@
 
 ## 🗞️ 오늘 재미있던 기술 소식
 
-오늘 제일 눈에 들어온 건 AWS가 내놓은 VS Code 연동 기능이야.[^4] 이제 내 로컬 VS Code에서 바로 SageMaker Studio의 강력한 AI 개발 환경이랑 컴퓨팅 자원을 쓸 수 있게 됐어. 개발자들은 익숙한 환경에서 작업하면서 클라우드의 파워를 그대로 쓰니까 생산성이 엄청 올라갈 것 같아. 맨날 환경 맞추느라 고생했는데, 이런 업데이트는 진짜 환영이야! [^4]
+진짜 SF 영화에서나 보던 일들이 현실이 되고 있어. OpenAI의 CEO 샘 알트만은 이제 인간과 기계의 통합, 즉 '머지(The Merge)'가 이미 시작되었다고 말했어. [^8] 우리가 스마트폰 알고리즘에 좌우되는 것부터가 그 시작이라는 거야. [^8] 앞으로는 유전자 강화, 뇌-기계 인터페이스까지 현실이 될 거라고. [^8] 조금 무섭기도 한데, 이게 인류에게 최상의 시나리오일 수 있다는 말이 더 소름 돋아. [^8]
 
 ## 📰 주목할 만한 이야기들
 
 ### 🏢 기업들 근황
-- **AWS의 AI 개발 생태계 강화**: AWS가 정말 작정했나 봐. SageMaker 업데이트가 쏟아지고 있어. VS Code 연동은 물론이고[^4], 이제 MLflow 3.0을 완전 관리형으로 지원해서 실험 추적부터 앱 관찰까지 한 번에 할 수 있게 됐어.[^7] HyperPod에는 원클릭 관찰 기능이 추가돼서 클러스터 상태랑 GPU 활용도를 쉽게 파악할 수 있게 됐고, 이제 Mistral 같은 외부 모델도 쉽게 연동해서 쓸 수 있대.[^8][^19] 개발자들이 AI 모델 만들고 관리하기 훨씬 편하게 만드는 데 엄청 집중하는 게 보여.
-
-- **Apple의 조용한 ML 혁신**: Apple은 신기한 연구 논문을 대거 발표했어.[^9][^10] 특히 LLM이 얼마나 메모리를 적게 쓰면서도 빠르게 돌아갈 수 있는지에 대한 연구(QuantSpec)가 인상 깊었어.[^9] 이런 연구들은 앞으로 나올 아이폰이나 맥북에 더 강력한 온디바이스 AI 기능이 탑재될 거라는 신호 아닐까? 겉으로 드러나는 신제품 발표는 없어도, 내실을 엄청 다지고 있는 느낌이야.
-
-- **Google의 AI 대중화**: Google은 Gemini 앱에서 사진 한 장을 올리면 그걸로 동영상을 만들어주는 Veo 3 기능을 추가했대.[^26] 진짜 신기하지 않아? 이제 누구나 쉽게 AI로 콘텐츠를 만들 수 있는 시대가 오는 것 같아. 그리고 미국 인프라 개선을 위해 AI를 사용하는 스타트업 17개를 지원하는 프로그램을 시작했다는데, AI 기술로 현실 문제를 해결하려는 모습이 보기 좋았어.[^20]
+- **Google**, 이제 사진 한 장만 있으면 8초짜리 비디오를 뚝딱 만들어주는 미친 기능을 Gemini에 추가했어. [^1] 최신 AI 모델인 Veo 3를 사용하는데, Google AI Pro나 Ultra 구독자라면 바로 써볼 수 있대. [^1] 심지어 손목 위에서도 AI를 쓸 수 있게 됐어. Wear OS 스마트워치에 Gemini가 탑재돼서 폰 없이도 이메일 요약이나 일정 추가 같은 걸 할 수 있게 된 거지. [^4]
+- **OpenAI**는 미국 교사 연맹(AFT)이랑 손잡고 1,000만 달러를 투자해서 'AI 교육 국립 아카데미'를 만든대. [^10] 목표는 40만 명의 교사들에게 AI 활용법을 가르치는 거라고. [^10] 교실에서 AI를 어떻게 쓸지 교사들이 직접 결정하게 하겠다는 건데, 진짜 멋진 생각인 것 같아.
+- **AWS**는 진짜 개발자랑 기업들을 위한 AI 도구를 쏟아내고 있어. 복잡한 쿠버네티스 클러스터 관리를 도와주는 'K8sGPT'와 Amazon Bedrock 연동 서비스를 내놨고 [^5], 소매업을 위한 AI 비서 'Amazon Q Business'도 출시했어. [^6] 심지어 금융 사기를 잡는 'GraphRAG'라는 기술도 공개했는데, 이건 데이터들 사이의 '관계'를 분석해서 복잡한 사기 수법을 잡아내는 거래. [^11]
+- **Hugging Face**가 Pollen Robotics와 함께 엄청난 걸 내놨어. 'Reachy Mini'라는 오픈소스 로봇인데, 가격이 299달러부터 시작해! [^14] AI를 가지고 놀고, 배우고, 공유할 수 있게 만든 책상 위 작은 로봇이야. [^14] 이제 진짜 1인 1로봇 시대가 멀지 않은 것 같아.
 
 ### 🚀 눈에 띄는 기술
-- **이제는 기본이 된 RAG**: 요즘 AI 좀 만져본다 하면 RAG (검색 증강 생성) 얘기를 빼놓을 수 없지. 우리 회사 내부 문서나 데이터를 기반으로 똑똑하게 답변하는 AI 챗봇을 만드는 기술인데, AWS 서비스를 활용하는 방법이나 오픈소스인 ChromaDB를 쓰는 방법들이 소개됐어.[^5][^12] 그냥 똑똑한 척하는 AI가 아니라, 진짜 내 데이터에 기반해서 답을 주니까 훨씬 유용해.
-
-- **Ktor 모듈화로 확장성 잡기**: 가벼운 웹 프레임워크로 알려진 Ktor가 모듈화를 통해 대규모 백엔드도 감당할 수 있게 하는 방법을 공유했어.[^17] 처음에는 너무 미니멀해서 복잡한 프로젝트에 쓸 수 있을까 싶었는데, 의존성 주입(DI) 플러그인 같은 걸로 기능을 깔끔하게 분리하고 확장할 수 있게 만들었더라고. 가벼움과 확장성, 두 마리 토끼를 다 잡으려는 시도가 엿보여.[^17]
-
-- **CodeQL로 CORS 취약점 찾기**: GitHub에서 CodeQL로 CORS(Cross-Origin Resource Sharing) 설정 오류를 찾는 방법을 공유했어.[^18] 보안은 항상 중요하잖아. 특히 웹 개발에서 CORS 설정 잘못하면 큰일 나는데, CodeQL 같은 정적 분석 도구를 사용해서 개발 단계에서부터 이런 취약점을 미리 잡아낼 수 있다는 게 중요해. Gin 같은 특정 프레임워크의 구조를 모델링해서 자동으로 찾아준다는 점이 진짜 편할 것 같아.[^18]
+- **AI 개발, 더 똑똑하게**: GitHub에서는 이제 Copilot을 더 잘 쓰려면 좋은 프롬프트만으로는 부족하다고 말해. [^3] 코드에 주석을 잘 달고, 프로젝트 맞춤형 지침 파일(`copilot-instructions.md`)을 만들어서 AI에게 컨텍스트를 잘 알려주는 게 핵심이래. [^3] AWS도 비슷한 흐름인데, 머신러닝 프로젝트 관리 도구인 MLflow 3.0을 SageMaker에서 완벽 지원해서 AI 앱의 모든 단계를 추적하고 디버깅하기 쉽게 만들었어. [^12]
+- **데이터 분석의 민주화**: 물류 플랫폼 회사인 Parcel Perform은 이제 데이터 분석가 없이도 비즈니스팀이 자연어로 데이터를 분석할 수 있게 됐어. [^13] AWS Bedrock을 이용한 text-to-SQL AI 에이전트 덕분인데, 며칠씩 걸리던 데이터 분석이 10분 만에 끝난대. [^13] 생산성이 99%나 향상됐다니, 이건 뭐 혁명 수준이야.
+- **보안은 기본, 거버넌스는 필수**: AI 모델을 그냥 막 쓰는 시대는 끝났어. AWS는 SageMaker Unified Studio에서 어떤 사용자가 어떤 AI 모델에 접근할 수 있는지 아주 세밀하게 통제하는 방법을 발표했어. [^15] 기업 입장에선 보안과 거버넌스를 확실히 챙기면서 AI를 도입할 수 있으니 정말 중요하지.
+- **자바의 진화**: 자바의 Z Garbage Collector(ZGC)는 잘 쓰면 기적 같은 성능을 보여주지만, 설정이 잘못되면 성능 저하의 주범이 될 수 있대. [^9] 최근 JavaOne 세션에서는 이런 함정을 피하는 방법과, 앞으로는 복잡한 설정 없이도 ZGC를 쉽게 쓸 수 있도록 개선 중이라는 소식이 전해졌어. [^9]
 
 ### 💬 솔직한 한마디
-- **AI 코드, 얼마나 믿어야 할까?**: 개발팀의 코드 중 몇 퍼센트를 AI가 짜는 게 적당할까? 라는 질문에 한 글이 되게 좋은 답을 줬어.[^2] 중요한 건 비율이 아니라 '맥락'과 '신뢰'라는 거야. AI가 아무리 코드를 잘 짜줘도 우리 프로젝트의 아키텍처나 코딩 표준을 이해하지 못하면 결국 사람이 다 뜯어고쳐야 하거든. AI를 그냥 코드 생성기로만 볼 게 아니라, 우리 팀의 맥락을 이해하는 똑똑한 동료로 만드는 게 진짜 과제인 것 같아.
-
-- **디지털 강의실의 빛과 그림자**: 코로나 이후로 원격/하이브리드 수업이 당연해졌는데, 우리가 뭘 얻고 뭘 잃었는지 돌아보는 글이 있었어.[^6] 유연한 학습 환경과 교육 접근성은 좋아졌지만, 인간적인 교류가 줄고 디지털 격차가 심해진 건 뼈아픈 현실이지. 특히 선생님들의 번아웃 문제가 심각하다고 해.[^6] 기술이 만능 해결책은 아니라는 걸 다시 한번 생각하게 됐어. 결국 중요한 건 기술을 '어떻게' 현명하게 사용하느냐인 것 같아.
+샘 알트만이 쓴 '성공하는 법'이라는 글을 읽어봤는데, "복리처럼 성장하라", "거의 망상에 가까울 정도로 스스로를 믿어라", "결국 중요한 건 소유하는 것이다" 같은 조언들이 인상 깊었어. [^7] 특히 "대담한 아이디어가 사람들을 움직인다"는 말, 이거 완전 팩트 아니야? [^2] 세상을 바꾸는 기술들은 다들 처음엔 '이게 되겠어?' 싶었던 것들이잖아. 지금 쏟아지는 AI 기술들도 마찬가지인 것 같아. 당장은 혼란스러워도 결국 이 기술들을 잘 활용하는 소수의 사람이나 기업이 엄청난 기회를 잡게 되겠지. 우리는 그냥 구경만 할 게 아니라, 이 흐름에 어떻게 올라탈지 진지하게 고민해봐야 할 때야.
 
 ## 🎯 오늘의 핵심
-오늘의 핵심은 **'AI 개발 경험의 대중화'**야. AWS가 VS Code 연동이나 MLflow 지원을 강화하고[^4][^7], Docker가 Compose로 AI 에이전트를 쉽게 만들게 해주는 것처럼[^14], 이제 기업들은 'AI를 만드는 것'을 넘어 '누구나 AI를 쉽고 효율적으로 만들게 하는 것'에 집중하고 있어. 복잡한 인프라 걱정 없이 개발자들이 아이디어만으로 멋진 AI 서비스를 만들 수 있는 시대가 성큼 다가온 거지.
+AI는 이제 단순한 도구를 넘어, 우리 일과 삶의 방식을 근본적으로 바꾸는 운영체제(OS)가 되어가고 있어. Gemini가 사진을 영상으로 만들고, Copilot이 내 코드의 맥락을 이해하고, Reachy Mini 같은 로봇이 책상 위 동료가 되는 세상이야. 중요한 건 이 변화의 흐름 위에서 '어떤 질문을 던지고, 무엇을 만들 것인가'를 고민하는 우리 자신인 것 같아.
 
-[^2]: Target Concrete Score Matching: A Holistic Framework for Discrete ... - Apple Machine Learning Research
-[^4]: Supercharge your AI workflows by connecting to SageMaker Studio ... - AWS
-[^5]: Smart Search Meets LLM: AWS-Powered Retrieval-Augmented Generation - DEV Community
-[^6]: 📚 The Digital Classroom: What We’ve Gained—and What We’ve Lost - DEV Community
-[^7]: Accelerating generative AI development with fully managed MLflow ... - AWS
-[^8]: Build an MCP application with Mistral models on AWS | Artificial ... - AWS
-[^9]: QuantSpec: Self-Speculative Decoding with Hierarchical Quantized ... - Apple Machine Learning Research
-[^10]: Addressing Misspecification in Simulation-based Inference through ... - Apple Machine Learning Research
-[^12]: Next-Gen Q&A: Retrieval-Augmented AI with Chroma Vector Store - DEV Community
-[^14]: Docker Brings Compose to the Agent Era: Building AI Agents is Now Easy - Docker Blog
-[^17]: Modular Ktor: Building Backends for Scale | The Kotlin Blog - Kotlin Blog
-[^18]: Modeling CORS frameworks with CodeQL to find security ... - The GitHub Blog
-[^19]: Accelerate foundation model development with one-click ... - AWS - AWS
-[^20]: New cohort for Google for Startups AI Academy: American ... - The Keyword
-[^26]: Turn your photos into videos in Gemini - Gemini
+[^1]: Turn your photos into videos in Gemini - Google Blog[^2]: What I Wish Someone Had Told Me - Sam Altman[^3]: Beyond prompt crafting: How to be a better partner for your AI pair programmer - The GitHub Blog[^4]: How to use Gemini on a Wear OS smartwatch - Google Blog[^5]: Use K8sGPT and Amazon Bedrock for simplified Kubernetes cluster maintenance | Artificial Intelligence - AWS[^6]: Unlock retail intelligence by transforming data into actionable insights using generative AI with Amazon Q Business | Artificial Intelligence - AWS[^7]: How To Be Successful - Sam Altman[^8]: The Merge - Sam Altman[^9]: ZGC - Paving the GC On-Ramp – Inside.java[^10]: Working with 400,000 teachers to shape the future of AI in schools | OpenAI[^11]: Combat financial fraud with GraphRAG on Amazon Bedrock Knowledge Bases | Artificial Intelligence - AWS[^12]: Accelerating generative AI development with fully managed MLflow 3.0 on Amazon SageMaker AI | Artificial Intelligence - AWS[^13]: Democratize data for timely decisions with text-to-SQL at Parcel Perform | Artificial Intelligence - AWS[^14]: Reachy Mini - The Open-Source Robot for Today's and Tomorrow's AI Builders - Hugging Face[^15]: Configure fine-grained access to Amazon Bedrock models using Amazon SageMaker Unified Studio | Artificial Intelligence - AWS

@@ -7,7 +7,9 @@ import (
 
 func ParseDate(dateStr string) (time.Time, error) {
 	formats := []string{
-		time.RFC1123Z,
+		time.RFC3339,     // Atom 피드 표준 형식 (2006-01-02T15:04:05Z07:00)
+		time.RFC3339Nano, // Atom 피드 나노초 포함 형식
+		time.RFC1123Z,    // RSS 피드 표준 형식
 		time.RFC1123,
 		time.RFC822Z,
 		time.RFC822,

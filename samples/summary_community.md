@@ -2,42 +2,39 @@
 
 ## 🔥 오늘의 테크 썰
 
-ㄹㅇ 오늘 폼 미쳤다 ㅋㅋㅋ 개발자들 곡소리 나던 AI 에이전트 개발, 이제 Docker가 다 해결해준다고 나섬. [^11] "AI? 그냥 `docker compose up` 해" 이 한마디로 요약 가능. [^11] 예전에 마이크로서비스 아키텍처 나왔을 때 Docker가 '내 컴퓨터에선 되는데' 문제를 해결한 것처럼, 이번엔 AI 개발 생태계를 통째로 삼키려는 각. 이건 그냥 업데이트가 아니라 거의 선전포고 수준임. ㅋㅋㅋ 레전드.
+요즘 AI 판 돌아가는 거 보면 ㄹㅇ 정신없다 ㅋㅋㅋ. [^2] 샘 알트만 형님이 특이점이 이미 시작됐다고 선언했는데, 솔직히 틀린 말 하나도 없음. [^7] 맨날 AI가 어쩌고저쩌고 하더니, 이제는 진짜 우리 삶에 깊숙이 들어와서 인간하고 기계가 합체하는 '머지(The Merge)'가 시작됐다는 거임. [^18] 스마트폰 없으면 하루도 못 살고, 알고리즘이 기분까지 좌우하는 거 보면 이미 우린 AI의 노예나 다름없지 않냐? ㅋㅋㅋ [^18] 2025년에 AI 에이전트가 코딩을 대신해주고 [^7], 2027년엔 로봇이 현실 세계에서 일을 할 거라는데 [^7], 이제 진짜 키보드 두들기는 것만으로 세상을 바꾸는 '아이디어 가이'들의 시대가 온다는 거임. [^7]
 
 ## 💣 폭격당한 소식들
 
 ### 🏢 기업들 현실체크
 
-- **AWS**: 역시 물량공세의 제왕 아마존. SageMaker에 새로운 기능들을 폭탄처럼 쏟아부음. [^16] HyperPod 성능 관측 기능 강화, 로컬 VS Code에서 원격 접속, MLflow 3.0 지원까지... [^16] 개발자들 못 도망가게 생태계에 말뚝 박는 솜씨가 여전함. "우리 거 쓰면 다 돼"라고 속삭이는 소리가 여기까지 들린다. [^16] 거기에 실시간 음성 AI 개발을 쉽게 해준다고 Amazon Nova Sonic이랑 LiveKit을 붙여버림. [^7] 그냥 뭐... 돈으로 다 해결하겠다는 의지.
-
-- **넷플릭스**: 얘네는 뭐 맨날 지들이 직접 만들어서 씀. ㅋㅋㅋ 이번엔 자사 팬사이트 Tudum 아키텍처를 Kafka 쓰다가 느리다고 RAW Hollow라는 자체 인메모리 DB 만들어서 바꿨다고 자랑함. [^5] 덕분에 페이지 구축 시간이 1.4초에서 0.4초로 줄었다나 뭐라나. [^5] 역시 '없으면 만든다'의 장인들. 우리 같은 평민들은 상상도 못할 스케일.
-
-- **애플**: "연구는 우리가 최고" 모드 ON. LLM 추론 속도를 높이는 기술(QuantSpec) [^13], AI가 학습 데이터 표절 못하게 막는 기술(Shielded Diffusion) [^14], AI 목소리를 더 자연스럽게 만드는 기술 [^15] 등등 논문을 그냥 막 쏟아냄. 근데 그래서 이걸로 시리(Siri)는 언제쯤 똑똑해지는 건데? 현실은? 맨날 연구만 하고 출시는 5년 뒤에 할 듯.
-
-- **구글**: AI 영상 도구 Flow에 이미지 올리면 말하는 영상 만들어주는 기능 추가하고, 서비스 국가도 76개나 늘림. [^4] 이제 짤방에 목소리 넣는 게 유행할지도? 한편으로는 AI로 미국 인프라 개선하겠다는 스타트업 17개 모아서 교육도 시켜줌. [^8] 착한 기업 이미지 챙기는 거 잊지 않았네.
+- **xAI, Grok 4로 AI 왕좌 노리나?**: 일론 머스크의 xAI가 Grok 4를 내놓고 주요 벤치마크에서 OpenAI의 o3, 구글의 Gemini 2.5 Pro를 제쳤다고 발표함. [^2] AAI 인덱스에서 73점을 받아 1위를 차지했고, 특히 코딩이랑 수학에서 두각을 나타냈다고. [^2] 근데 뭐, 벤치마크 점수놀음 하루 이틀도 아니고 ㅋㅋㅋ. 진짜 중요한 건 실제 성능인데, 레딧이나 해커뉴스에서는 아직 반신반의하는 분위기. [^2]
+- **AWS, 개발자 생태계 장악 가속화**: AWS는 아마존 세이지메이커(Amazon SageMaker)에 온갖 신기능을 때려 박고 있음. [^13] 이제 로컬 VS Code에서도 세이지메이커 자원을 쓸 수 있게 하고 [^13], MLflow 3.0을 완전 관리형으로 제공해서 AI 개발 과정을 처음부터 끝까지 다 들여다볼 수 있게 만들었음. [^14] Mistral 같은 외부 모델까지 끌어들여 MCP(Model Context Protocol)라는 표준으로 외부 데이터랑 쉽게 연동할 수 있게 지원하는 걸 보면, 개발자들 그냥 AWS 생태계에서 못 빠져나가게 만들려는 큰 그림 아니냐? [^4]
+- **구글, AI로 인프라부터 영상까지 다 해먹을 기세**: 구글은 제미나이(Gemini) 앱에서 Veo 3 기술로 사진을 8초짜리 영상으로 만들어주는 미친 기능을 내놨음. [^17] 그냥 사진 올리고 "이렇게 움직여줘"라고 말만 하면 알아서 영상을 뚝딱 만들어준다. [^17] 거기다 '미국 인프라 개선'을 목표로 17개 AI 스타트업을 뽑아서 지원하는 프로그램을 운영하는 거 보면 [^15], AI로 현실 세계 문제까지 해결하려는 야망을 보란 듯이 드러내는 중. [^15]
 
 ### ⚡ 기술계 ㄹㅇ 소식
 
-- **Docker Compose, AI 에이전트 시대 개막**: 이게 오늘 제일 중요한 소식. 이제 `compose.yaml` 파일 하나로 LLM 모델, 각종 도구, 에이전트까지 다 정의해서 한방에 실행 가능. [^11] LangGraph, CrewAI 같은 요즘 핫한 프레임워크도 다 지원함. [^11] 노트북 사양 딸려서 70B 모델 못 돌리겠다고? 'Docker Offload' 기능으로 클라우드 GPU에 작업을 던져버리면 그만. [^11] ㄹㅇ 개발의 신세계가 열림.
-
-- **Ktor의 의존성 주입(DI) 혁신**: 코틀린 좀 만져본 형들은 알 Ktor 프레임워크가 3.2 버전부터 자체 DI 플러그인을 제공함. [^17] 이전에는 외부 라이브러리 찾아 헤맸어야 했는데, 이제 깔끔하게 내장 기능으로 모듈 관리가 가능해짐. [^17] 덕분에 유지보수 편한 모듈형 백엔드 구축이 한결 수월해질 듯. 뭐, 쓰는 사람만 쓰겠지만.
+- **AI 비서, 이제 진짜 '비서'가 된다**: JetBrains [^11] 같은 개발 도구 회사도 AI 에이전트 'Junie'로 코드 테스트 커버리지를 높이는 기능을 선보이고 있음. [^11] 예전엔 개발자가 머리 싸매고 하던 테스트 케이스 작성을 이제 AI가 대신해주는 시대가 온 거임. [^11] OpenAI [^7] 에서도 말했듯이, 2025년은 진짜 인지노동을 수행하는 AI 에이전트의 원년이 될 전망. [^7]
+- **Ktor, 모듈러 아키텍처로 확장성 잡는다**: 제트브레인(JetBrains)의 경량 웹 프레임워크 Ktor가 모듈(Module) 기반 아키텍처를 강화해서 대규모 백엔드 개발에 더 유리해졌다고 함. [^9] DI(의존성 주입) 플러그인을 기본으로 제공해서, 복잡한 프로젝트도 레고 조립하듯 깔끔하게 관리할 수 있게 됐다는 게 핵심. [^9] 처음엔 미니멀해서 뭐 어쩌라는 건가 싶지만, 써본 사람들은 이거 ㄹㅇ 물건이라고 평가함. [^9]
+- **Apple의 조용한 AI 연구, 개인정보보호에 집중**: Apple은 기계 학습 연구 논문을 통해 '차등 개인정보보호(Differentially Private)' 기술을 적용한 새로운 알고리즘을 공개했음. [^12] 사용자의 프라이버시를 지키면서도 똑똑한 AI를 만들겠다는 건데, 역시 애플답게 보안과 프라이버시는 절대 포기 못 한다는 뚝심을 보여줌. [^12] 맨날 시끄럽게 떠드는 다른 빅테크들이랑은 다른 행보.
 
 ### 🎯 현실적 한마디
 
-빅테크들 보면 다들 "우리 플랫폼이 AI 개발 표준임"이라고 외치는 것 같음. AWS는 SageMaker로, 구글은 Vertex AI로, 이제 Docker는 아예 개발 환경 자체를 집어삼키려 하고 있음. [^11][^16] 결국 기술의 핵심은 '누가 더 똑똑한 모델을 만드냐'에서 '누가 더 개발자 친화적인 생태계를 제공하셔'로 넘어가고 있는 거. 개발자들 편하게 해주는 놈이 최후의 승자가 될 거라는 건 불변의 팩트.
+샘 알트만 형님이 쓴 '성공하는 법'이라는 글을 보면 결국 핵심은 "스스로를 복리처럼 성장시키고, 거의 망상에 가까울 정도로 자신을 믿어라" 이거임. [^8] 남들 다 하는 거 따라 하지 말고, 독립적으로 생각해서 남들이랑 경쟁하기 어려운 자신만의 영역을 만들라는 거지. [^8] 근데 이게 말처럼 쉽나? ㅋㅋㅋ. 현실은 월급 루팡에 익숙해져서 안주하게 되는 게 대부분. [^8] 특이점이니 뭐니 해도 결국 자기 인생 바꾸는 건 자기 자신밖에 없다는 팩트는 변하지 않음.
 
 ## 😎 오늘의 핵심 팩트
 
-Docker Compose가 AI 에이전트 개발을 위해 환골탈태했다는 것. [^11] 로컬 개발부터 클라우드 배포까지 `docker compose up` 하나로 통일하려는 야망은, 과거 마이크로서비스 시대를 평정했던 전략의 재림이다. [^11]
+AI 모델 벤치마크 1위 경쟁은 이제 무의미한 '왕좌의 게임'일 뿐, 진짜 승자는 AWS처럼 개발자들을 자기 생태계에 가둬버리는 플랫폼을 만드는 놈이 될 거임. [^13]
 
-[^2]: Addressing Misspecification in Simulation-based Inference through Data-driven Calibration - Apple Machine Learning Research
-[^4]: Flow adds speech to videos and expands to more countries - The Keyword
-[^5]: Netflix Tudum Architecture: from CQRS with Kafka to CQRS with RAW Hollow - Netflix TechBlog
-[^7]: Build real-time conversational AI experiences using Amazon Nova Sonic and LiveKit - AWS Machine Learning Blog
-[^8]: New cohort for Google for Startups AI Academy: American Infrastructure - The Keyword
-[^11]: Docker Brings Compose to the AI Agent Era - Docker Blog
-[^13]: QuantSpec: Self-Speculative Decoding with Hierarchical Quantized KV Cache - Apple Machine Learning Research
-[^14]: Shielded Diffusion: Generating Novel and Diverse Images using Sparse Repellency - Apple Machine Learning Research
-[^15]: A Variational Framework for Improving Naturalness in Generative Spoken Language Models - Apple Machine Learning Research
-[^16]: New capabilities in Amazon SageMaker AI continue to transform how organizations develop AI models - AWS Machine Learning Blog
-[^17]: Modular Ktor: Building Backends for Scale - The Kotlin Blog
+[^2]: Grok 4가 이제 선두 AI 모델임 - https://news.hada.io/topic?id=21919
+[^4]: Build an MCP application with Mistral models on AWS - https://aws.amazon.com/blogs/machine-learning/build-an-mcp-application-with-mistral-models-on-aws/
+[^7]: The Gentle Singularity - https://blog.samaltman.com/the-gentle-singularity
+[^8]: How To Be Successful - https://blog.samaltman.com/how-to-be-successful
+[^9]: Modular Ktor: Building Backends for Scale - https://blog.jetbrains.com/kotlin/2025/07/modular-ktor-building-backends-for-scale/
+[^11]: Junie Livestream #9: Adding tests with Junie to improve code coverage - https://www.youtube.com/watch?v=l059s9OW4v4
+[^12]: Faster Rates for Private Adversarial Bandits - https://machinelearning.apple.com/research/private-adversarial-bandits
+[^13]: New capabilities in Amazon SageMaker AI continue to transform how organizations develop AI models - https://aws.amazon.com/blogs/machine-learning/new-capabilities-in-amazon-sagemaker-ai-continue-to-transform-how-organizations-develop-ai-models/
+[^14]: Accelerating generative AI development with fully managed MLflow 3.0 on Amazon SageMaker AI - https://aws.amazon.com/blogs/machine-learning/accelerating-generative-ai-development-with-fully-managed-mlflow-3-0-on-amazon-sagemaker-ai/
+[^15]: 17 startups using AI to improve American infrastructure - https://blog.google/outreach-initiatives/entrepreneurs/ai-academy-american-infrastructure/
+[^17]: Turn your photos into videos in Gemini - https://blog.google/products/gemini/photo-to-video/
+[^18]: The Merge - https://blog.samaltman.com/the-merge
