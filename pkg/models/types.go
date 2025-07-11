@@ -28,6 +28,34 @@ type Item struct {
 	GUID        string `xml:"guid"`
 }
 
+// Atom 피드 구조체
+type AtomFeed struct {
+	Title   string      `xml:"title"`
+	Subtitle string     `xml:"subtitle"`
+	Link    []AtomLink  `xml:"link"`
+	Entries []AtomEntry `xml:"entry"`
+}
+
+type AtomLink struct {
+	Href string `xml:"href,attr"`
+	Rel  string `xml:"rel,attr"`
+	Type string `xml:"type,attr"`
+}
+
+type AtomEntry struct {
+	Title   string      `xml:"title"`
+	Summary string      `xml:"summary"`
+	Content AtomContent `xml:"content"`
+	Link    []AtomLink  `xml:"link"`
+	Updated string      `xml:"updated"`
+	ID      string      `xml:"id"`
+}
+
+type AtomContent struct {
+	Type string `xml:"type,attr"`
+	Text string `xml:",chardata"`
+}
+
 type FeedItem struct {
 	Title       string
 	Link        string
