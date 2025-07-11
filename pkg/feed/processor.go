@@ -92,6 +92,9 @@ func (p *processor) processFeed(ctx context.Context, feed models.Feed, cutoffTim
 		}
 	}
 
+	// User-Agent 헤더 추가 (일부 서버에서 Go 기본 User-Agent를 차단함)
+	req.Header.Set("User-Agent", "daily-feed/1.0 (RSS Reader)")
+
 	resp, err := p.client.Do(req)
 	if err != nil {
 		return &utils.FeedError{
