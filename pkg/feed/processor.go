@@ -116,16 +116,27 @@ func (p *processor) processFeed(ctx context.Context, feed models.Feed, cutoffTim
 
 	bodyStr := utils.FixXMLEntities(string(body))
 
+	// RSS 피드 파싱 시도
 	var rss models.RSS
-	if err := xml.Unmarshal([]byte(bodyStr), &rss); err != nil {
-		return &utils.FeedError{
-			FeedTitle: feed.Title,
-			Operation: "XML 파싱",
-			Err:       err,
-		}
+	if err := xml.Unmarshal([]byte(bodyStr), &rss); err == nil && len(rss.Channel.Items) > 0 {
+		return p.processRSSItems(rss.Channel.Items, feed, cutoffTime, itemsChan)
 	}
 
-	for _, item := range rss.Channel.Items {
+	// Atom 피드 파싱 시도
+	var atom models.AtomFeed
+	if err := xml.Unmarshal([]byte(bodyStr), &atom); err == nil && len(atom.Entries) > 0 {
+		return p.processAtomEntries(atom.Entries, feed, cutoffTime, itemsChan)
+	}
+
+	return &utils.FeedError{
+		FeedTitle: feed.Title,
+		Operation: "XML 파싱",
+		Err:       err,
+	}
+}
+
+func (p *processor) processRSSItems(items []models.Item, feed models.Feed, cutoffTime time.Time, itemsChan chan<- models.FeedItem) error {
+	for _, item := range items {
 		pubDate, err := utils.ParseDate(item.PubDate)
 		if err != nil {
 			continue
@@ -142,6 +153,41 @@ func (p *processor) processFeed(ctx context.Context, feed models.Feed, cutoffTim
 			}
 		}
 	}
+	return nil
+}
 
+func (p *processor) processAtomEntries(entries []models.AtomEntry, feed models.Feed, cutoffTime time.Time, itemsChan chan<- models.FeedItem) error {
+	for _, entry := range entries {
+		pubDate, err := utils.ParseDate(entry.Updated)
+		if err != nil {
+			continue
+		}
+
+		if pubDate.After(cutoffTime) {
+			// Atom 피드에서 링크 추출
+			var link string
+			for _, l := range entry.Link {
+				if l.Rel == "alternate" || l.Rel == "" {
+					link = l.Href
+					break
+				}
+			}
+
+			// 설명 추출 (Summary 또는 Content)
+			description := entry.Summary
+			if description == "" && entry.Content.Text != "" {
+				description = entry.Content.Text
+			}
+
+			itemsChan <- models.FeedItem{
+				Title:       entry.Title,
+				Link:        link,
+				PubDate:     pubDate,
+				Description: description,
+				Category:    feed.Category,
+				Source:      feed.Title,
+			}
+		}
+	}
 	return nil
 }
