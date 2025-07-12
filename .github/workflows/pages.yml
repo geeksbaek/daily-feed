@@ -37,8 +37,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # web 디렉토리를 GitHub Pages로 배포
-          path: './web'
+          # 루트 디렉토리를 GitHub Pages로 배포 (index.html이 web/으로 리다이렉트)
+          path: '.'
 
       - name: Deploy to GitHub Pages
         id: deployment
