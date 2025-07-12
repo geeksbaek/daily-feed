@@ -363,7 +363,7 @@ export class ContentViewer extends LitElement {
     let processedContent = content;
     
     // 1. Footnote 정의 수집 및 제거 (맨 아래 [^1]: 링크 형태)
-    const footnoteDefRegex = /^\[^([^\]]+)\]:\s*(.+)$/gm;
+    const footnoteDefRegex = /^\[\^([^\]]+)\]:\s*(.+)$/gm;
     let match;
     
     while ((match = footnoteDefRegex.exec(content)) !== null) {
@@ -374,7 +374,7 @@ export class ContentViewer extends LitElement {
     }
     
     // 2. Footnote 참조를 링크로 변환 ([^1] 형태)
-    const footnoteRefRegex = /\[^([^\]]+)\]/g;
+    const footnoteRefRegex = /\[\^([^\]]+)\]/g;
     processedContent = processedContent.replace(footnoteRefRegex, (match, id) => {
       if (footnotes[id]) {
         return `<a href="#footnote-${id}" class="footnote-ref" title="${this.escapeHtml(footnotes[id])}">[${id}]</a>`;
