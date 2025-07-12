@@ -10,7 +10,9 @@ export class DailyFeedApp extends LitElement {
     statusMessage: { type: String },
     statusType: { type: String },
     showStatus: { type: Boolean },
-    isLoading: { type: Boolean }
+    isLoading: { type: Boolean },
+    notificationEnabled: { type: Boolean },
+    notificationPermission: { type: String }
   };
 
   static styles = css`
@@ -60,7 +62,19 @@ export class DailyFeedApp extends LitElement {
 
     .controls-row {
       display: flex;
-      justify-content: flex-end;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
+    }
+
+    .controls-left {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+    }
+
+    .controls-right {
+      display: flex;
       align-items: flex-start;
       gap: 16px;
     }
@@ -93,7 +107,13 @@ export class DailyFeedApp extends LitElement {
       }
 
       .controls-row {
+        flex-direction: column;
         gap: 12px;
+      }
+
+      .controls-left,
+      .controls-right {
+        justify-content: center;
       }
     }
 
@@ -179,13 +199,18 @@ export class DailyFeedApp extends LitElement {
     this.statusType = 'loading';
     this.showStatus = false;
     this.isLoading = true;
+    this.lastKnownDates = [];
+    this.notificationPermission = 'default';
+    this.notificationEnabled = false;
   }
 
   connectedCallback() {
     super.connectedCallback();
     this.setupMobileOptimizations();
     this.setupOfflineHandlers();
+    this.setupNotifications();
     this.loadAvailableDates();
+    this.setupAutoRefresh();
   }
 
   render() {
@@ -209,16 +234,26 @@ export class DailyFeedApp extends LitElement {
         <div class="main-layout">
           <div class="main-content">
             <div class="controls-row">
-              <preset-tabs 
-                .currentPreset=${this.currentPreset}
-                @preset-changed=${this.handlePresetChange}
-              ></preset-tabs>
+              <div class="controls-left">
+                <notification-toggle
+                  .enabled=${this.notificationEnabled}
+                  .permission=${this.notificationPermission}
+                  @notification-toggle=${this.handleNotificationToggle}
+                ></notification-toggle>
+              </div>
               
-              <date-selector 
-                .dates=${this.allDates}
-                .selectedDate=${this.selectedDate}
-                @date-changed=${this.handleDateChange}
-              ></date-selector>
+              <div class="controls-right">
+                <preset-tabs 
+                  .currentPreset=${this.currentPreset}
+                  @preset-changed=${this.handlePresetChange}
+                ></preset-tabs>
+                
+                <date-selector 
+                  .dates=${this.allDates}
+                  .selectedDate=${this.selectedDate}
+                  @date-changed=${this.handleDateChange}
+                ></date-selector>
+              </div>
             </div>
             
             <status-display 
@@ -252,6 +287,39 @@ export class DailyFeedApp extends LitElement {
     
     // 선택한 프리셋을 로컬 스토리지에 저장
     this.savePresetToStorage(this.currentPreset);
+  }
+
+  async handleNotificationToggle(e) {
+    const enabled = e.detail.enabled;
+    
+    if (enabled) {
+      // 알림 활성화 요청
+      if (this.notificationPermission === 'granted') {
+        this.notificationEnabled = true;
+        localStorage.setItem('daily-feed-notifications', 'true');
+      } else {
+        // 권한 요청
+        try {
+          const permission = await Notification.requestPermission();
+          this.notificationPermission = permission;
+          
+          if (permission === 'granted') {
+            this.notificationEnabled = true;
+            localStorage.setItem('daily-feed-notifications', 'true');
+          } else {
+            this.notificationEnabled = false;
+            localStorage.setItem('daily-feed-notifications', 'false');
+          }
+        } catch (error) {
+          console.error('알림 권한 요청 실패:', error);
+          this.notificationEnabled = false;
+        }
+      }
+    } else {
+      // 알림 비활성화
+      this.notificationEnabled = false;
+      localStorage.setItem('daily-feed-notifications', 'false');
+    }
   }
 
   loadPresetFromStorage() {
@@ -293,8 +361,13 @@ export class DailyFeedApp extends LitElement {
       this.showStatusMessage('날짜 목록을 불러오는 중...', 'loading');
       
       const basePath = this.getBasePath();
-      const url = `${basePath}/data/summaries/index.json`;
-      const response = await fetch(url);
+      const url = `${basePath}/data/summaries/index.json?t=${Date.now()}`;
+      const response = await fetch(url, { 
+        cache: 'no-cache',
+        headers: {
+          'Cache-Control': 'no-cache'
+        }
+      });
       
       if (!response.ok) {
         if (response.status === 503) {
@@ -307,7 +380,12 @@ export class DailyFeedApp extends LitElement {
       }
       
       const index = await response.json();
-      this.allDates = index.map(entry => entry.date).sort().reverse();
+      const newDates = index.map(entry => entry.date).sort().reverse();
+      
+      // 새로운 날짜가 추가되었는지 확인
+      this.checkForNewDates(newDates);
+      
+      this.allDates = newDates;
       
       if (this.allDates.length > 0) {
         this.selectedDate = this.allDates[0];
@@ -346,7 +424,12 @@ export class DailyFeedApp extends LitElement {
       
       const promises = presets.map(async preset => {
         try {
-          const response = await fetch(`${basePath}/data/summaries/${this.selectedDate}/${preset}.json`);
+          const response = await fetch(`${basePath}/data/summaries/${this.selectedDate}/${preset}.json?t=${Date.now()}`, {
+            cache: 'no-cache',
+            headers: {
+              'Cache-Control': 'no-cache'
+            }
+          });
           if (response.ok) {
             const data = await response.json();
             newData.summaries[preset] = data;
@@ -421,6 +504,105 @@ export class DailyFeedApp extends LitElement {
     this.isOffline = !navigator.onLine;
     if (this.isOffline) {
       this.showStatusMessage('오프라인 상태입니다. 캐시된 데이터를 불러옵니다.', 'offline');
+    }
+  }
+
+  setupAutoRefresh() {
+    // 매 5분마다 새 데이터 확인
+    setInterval(() => {
+      if (!this.isOffline && navigator.onLine) {
+        console.log('자동 새로고침: 새 데이터 확인 중...');
+        this.loadAvailableDates();
+      }
+    }, 5 * 60 * 1000); // 5분
+
+    // 페이지 포커스 시 새로고침
+    document.addEventListener('visibilitychange', () => {
+      if (!document.hidden && !this.isOffline && navigator.onLine) {
+        console.log('페이지 포커스: 새 데이터 확인 중...');
+        this.loadAvailableDates();
+      }
+    });
+  }
+
+  async setupNotifications() {
+    // Notification API 지원 확인
+    if (!('Notification' in window)) {
+      console.log('이 브라우저는 데스크톱 알림을 지원하지 않습니다.');
+      return;
+    }
+
+    // 현재 브라우저 권한 상태 확인
+    this.notificationPermission = Notification.permission;
+
+    // 저장된 알림 설정 확인
+    const notificationEnabled = localStorage.getItem('daily-feed-notifications');
+    if (notificationEnabled === 'true' && this.notificationPermission === 'granted') {
+      this.notificationEnabled = true;
+    } else {
+      this.notificationEnabled = false;
+    }
+  }
+
+
+  checkForNewDates(newDates) {
+    // 첫 로드시에는 알림 보내지 않음
+    if (this.lastKnownDates.length === 0) {
+      this.lastKnownDates = [...newDates];
+      return;
+    }
+
+    // 새로운 날짜가 추가되었는지 확인
+    const hasNewDate = newDates.some(date => !this.lastKnownDates.includes(date));
+    
+    if (hasNewDate && this.notificationEnabled && this.notificationPermission === 'granted') {
+      const latestDate = newDates[0];
+      this.showNewDataNotification(latestDate);
+    }
+
+    this.lastKnownDates = [...newDates];
+  }
+
+  showNewDataNotification(date) {
+    if (!('Notification' in window) || this.notificationPermission !== 'granted') {
+      return;
+    }
+
+    try {
+      const formattedDate = new Date(date).toLocaleDateString('ko-KR', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      });
+
+      const notification = new Notification('🗞️ Daily Feed 새 요약', {
+        body: `${formattedDate}의 새로운 기술 뉴스 요약이 준비되었습니다!`,
+        icon: '/favicon-32x32.png',
+        badge: '/favicon-16x16.png',
+        tag: 'daily-feed-new-data',
+        renotify: true,
+        requireInteraction: false,
+        silent: false
+      });
+
+      notification.onclick = () => {
+        window.focus();
+        notification.close();
+        
+        // 새로운 날짜로 이동
+        if (this.selectedDate !== date) {
+          this.selectedDate = date;
+          this.loadSelectedDate();
+        }
+      };
+
+      // 5초 후 자동 닫기
+      setTimeout(() => {
+        notification.close();
+      }, 5000);
+
+    } catch (error) {
+      console.error('알림 표시 실패:', error);
     }
   }
 

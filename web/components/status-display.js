@@ -48,6 +48,12 @@ export class StatusDisplay extends LitElement {
       color: var(--status-offline-text);
     }
 
+    .status.success {
+      background-color: #ecfdf5;
+      border-color: #34d399;
+      color: #065f46;
+    }
+
     .spinner {
       width: 40px;
       height: 20px;
@@ -113,6 +119,8 @@ export class StatusDisplay extends LitElement {
   render() {
     const getIcon = () => {
       switch (this.type) {
+        case 'success':
+          return html`<span>✅</span>`;
         case 'loading':
           return html`
             <div class="spinner">
