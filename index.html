@@ -36,26 +36,16 @@
 
     <main>
         <div class="main-layout">
-            <!-- 좌측 사이드바: 날짜 리스트 -->
-            <aside class="sidebar" id="sidebar" style="display: none;">
-                <div class="sidebar-header">
-                    <h3>날짜 선택</h3>
-                    <button class="sidebar-close" id="sidebar-close" aria-label="날짜 선택 닫기">×</button>
-                </div>
-                <div id="date-list" class="date-list">
-                    <p>로딩중...</p>
-                </div>
-            </aside>
             
             <!-- 메인 콘텐츠 -->
             <div class="main-content">
                 <!-- 상단 컨트롤 바 -->
                 <div class="content-header">
-                    <button class="date-toggle-btn" id="date-toggle-btn">
-                        <span class="date-icon">📅</span>
-                        <span class="current-date" id="current-date-display">오늘</span>
-                        <span class="toggle-arrow">▼</span>
-                    </button>
+                    <div class="date-selector">
+                        <select id="date-select" class="date-select">
+                            <option value="">날짜 로딩중...</option>
+                        </select>
+                    </div>
                 </div>
                 
                 <!-- 프리셋 탭 -->

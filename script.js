@@ -2,10 +2,9 @@
 let allDates = [];
 let currentData = {};
 let isOffline = false;
-let sidebarOpen = false;
 
 // DOM 요소
-const dateList = document.getElementById('date-list');
+const dateSelect = document.getElementById('date-select');
 let currentPreset = 'default';
 let selectedDate = null;
 const statusDiv = document.getElementById('status');
@@ -59,82 +58,35 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('resize', handleOrientationChange);
 });
 
-// 사이드바 토글 기능
-function toggleSidebar() {
-    const sidebar = document.getElementById('sidebar');
-    const overlay = document.getElementById('sidebar-overlay');
-    const toggleArrow = document.querySelector('.toggle-arrow');
+// 날짜 드롭다운 채우기
+function populateDateSelect() {
+    dateSelect.innerHTML = '';
     
-    if (!overlay) {
-        // 오버레이 생성
-        const newOverlay = document.createElement('div');
-        newOverlay.id = 'sidebar-overlay';
-        newOverlay.className = 'sidebar-overlay';
-        document.body.appendChild(newOverlay);
-        
-        // 오버레이 클릭 시 사이드바 닫기
-        newOverlay.addEventListener('click', closeSidebar);
-    }
-    
-    sidebarOpen = !sidebarOpen;
-    
-    if (sidebarOpen) {
-        sidebar.style.display = 'block';
-        sidebar.classList.add('show');
-        document.getElementById('sidebar-overlay').classList.add('show');
-        toggleArrow.classList.add('open');
-        document.body.style.overflow = 'hidden'; // 배경 스크롤 방지
-    } else {
-        closeSidebar();
-    }
+    allDates.forEach((date, index) => {
+        const option = document.createElement('option');
+        option.value = date;
+        option.textContent = formatDateForDisplay(date);
+        if (index === 0) option.selected = true; // 첫 번째 날짜를 기본 선택
+        dateSelect.appendChild(option);
+    });
 }
 
-function closeSidebar() {
-    const sidebar = document.getElementById('sidebar');
-    const overlay = document.getElementById('sidebar-overlay');
-    const toggleArrow = document.querySelector('.toggle-arrow');
-    
-    sidebarOpen = false;
-    sidebar.classList.remove('show');
-    if (overlay) overlay.classList.remove('show');
-    if (toggleArrow) toggleArrow.classList.remove('open');
-    document.body.style.overflow = ''; // 스크롤 복원
-    
-    // 애니메이션 완료 후 숨김
-    setTimeout(() => {
-        if (!sidebarOpen) {
-            sidebar.style.display = 'none';
-        }
-    }, 300);
-}
-
-// 현재 선택된 날짜 표시 업데이트
-function updateCurrentDateDisplay() {
-    const currentDateDisplay = document.getElementById('current-date-display');
-    if (currentDateDisplay && selectedDate) {
-        const formattedDate = formatDateForDisplay(selectedDate);
-        currentDateDisplay.textContent = formattedDate;
+// 날짜 선택 변경 처리
+function handleDateChange() {
+    const newDate = dateSelect.value;
+    if (newDate && newDate !== selectedDate) {
+        selectedDate = newDate;
+        loadSelectedDate();
     }
 }
 
 // 이벤트 리스너 설정
 function setupEventListeners() {
+    // 날짜 선택 드롭다운 변경 이벤트
+    dateSelect.addEventListener('change', handleDateChange);
+    
     // 이벤트 위임을 사용하여 동적 요소에도 이벤트 적용
     document.addEventListener('click', function(e) {
-        // 날짜 토글 버튼 클릭
-        if (e.target.closest('#date-toggle-btn')) {
-            e.preventDefault();
-            toggleSidebar();
-            return;
-        }
-        
-        // 사이드바 닫기 버튼 클릭
-        if (e.target.id === 'sidebar-close') {
-            e.preventDefault();
-            closeSidebar();
-            return;
-        }
-        
         // 탭 버튼 클릭 처리
         if (e.target.classList.contains('tab-button')) {
             // 모든 탭에서 active 클래스 제거
@@ -144,14 +96,6 @@ function setupEventListeners() {
             // 프리셋 변경
             currentPreset = e.target.dataset.preset;
             displayContent();
-        }
-        
-    });
-    
-    // ESC 키로 사이드바 닫기
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && sidebarOpen) {
-            closeSidebar();
         }
     });
 }
@@ -314,12 +258,11 @@ async function loadAvailableDates() {
         const index = await response.json();
         allDates = index.map(entry => entry.date).sort().reverse(); // 최신순
         
-        populateDateList();
+        populateDateSelect();
         
         if (allDates.length > 0) {
             selectedDate = allDates[0];
             await loadSelectedDate();
-            updateCurrentDateDisplay();
         } else {
             showStatus('아직 생성된 요약이 없습니다.', 'error');
         }
@@ -337,34 +280,6 @@ async function loadAvailableDates() {
     }
 }
 
-// 날짜 리스트 채우기
-function populateDateList() {
-    dateList.innerHTML = '';
-    
-    allDates.forEach((date, index) => {
-        const dateItem = document.createElement('div');
-        dateItem.className = 'date-item';
-        if (index === 0) dateItem.classList.add('active'); // 처음 날짜를 기본 선택
-        dateItem.textContent = formatDateForDisplay(date);
-        dateItem.dataset.date = date;
-        
-        dateItem.addEventListener('click', function() {
-            // 모든 날짜 아이템에서 active 클래스 제거
-            document.querySelectorAll('.date-item').forEach(item => item.classList.remove('active'));
-            // 현재 클릭한 날짜에 active 클래스 추가
-            this.classList.add('active');
-            // 날짜 변경
-            selectedDate = this.dataset.date;
-            loadSelectedDate();
-            // 현재 날짜 표시 업데이트
-            updateCurrentDateDisplay();
-            // 사이드바 닫기
-            closeSidebar();
-        });
-        
-        dateList.appendChild(dateItem);
-    });
-}
 
 // 선택된 날짜의 데이터 로드
 async function loadSelectedDate() {
@@ -630,7 +545,7 @@ function tryLoadFromLocalStorage() {
                 currentData = data.currentData || {};
                 
                 if (allDates.length > 0) {
-                    populateDateList();
+                    populateDateSelect();
                     selectedDate = allDates[0];
                     displayContent();
                     showStatus(`캐시된 데이터를 표시합니다 (${Math.round(ageHours)}시간 전 데이터)`, 'offline');
