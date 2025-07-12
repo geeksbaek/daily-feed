@@ -18,8 +18,6 @@ body {
     letter-spacing: -0.005em;
     word-break: keep-all;
     overflow-wrap: break-word;
-    font-feature-settings: "liga" 1, "kern" 1;
-    font-variant-ligatures: common-ligatures;
 }
 
 /* 헤더 */
@@ -250,12 +248,10 @@ header p {
 
 .markdown-content p {
     margin-bottom: 20px;
-    line-height: 1.8;
+    line-height: 1.9;
     font-size: 17px;
     color: #2d3748;
     font-weight: 400;
-    font-variant-numeric: normal;
-    font-feature-settings: "liga" 1, "kern" 1, "calt" 0;
 }
 
 .markdown-content ul, .markdown-content ol {
@@ -267,7 +263,6 @@ header p {
     margin-bottom: 8px;
     line-height: 1.8;
     font-size: 17px;
-    font-feature-settings: "liga" 1, "kern" 1, "calt" 0;
 }
 
 .markdown-content li > p {
@@ -368,13 +363,11 @@ header p {
 
 /* Footnote 스타일 */
 .footnote-ref {
-    color: #4299e1;
+    color: #0969da;
     text-decoration: none;
-    font-size: 0.75em;
+    font-size: 0.9em;
     vertical-align: super;
-    padding: 0 1px;
-    line-height: 0;
-    font-weight: 600;
+    padding: 0 2px;
 }
 
 .footnote-ref:hover {
