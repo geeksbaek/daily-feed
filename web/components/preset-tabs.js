@@ -46,14 +46,12 @@ export class PresetTabs extends LitElement {
 
   constructor() {
     super();
-    this.currentPreset = 'default';
+    this.currentPreset = 'general';
   }
 
   render() {
     const presets = [
-      { key: 'default', label: '📰 일반' },
-      { key: 'developer', label: '🔧 개발자' },
-      { key: 'casual', label: '☕ 캐주얼' },
+      { key: 'general', label: '📰 일반' },
       { key: 'community', label: '💬 커뮤니티' }
     ];
 

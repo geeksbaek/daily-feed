@@ -249,7 +249,7 @@ export class DailyFeedApp extends LitElement {
   loadPresetFromStorage() {
     try {
       const savedPreset = localStorage.getItem('daily-feed-preset');
-      const validPresets = ['default', 'developer', 'casual', 'community'];
+      const validPresets = ['general', 'community'];
       
       if (savedPreset && validPresets.includes(savedPreset)) {
         return savedPreset;
@@ -258,7 +258,7 @@ export class DailyFeedApp extends LitElement {
       console.warn('프리셋 로드 실패:', error);
     }
     
-    return 'default'; // 기본값
+    return 'general'; // 기본값
   }
 
   savePresetToStorage(preset) {
