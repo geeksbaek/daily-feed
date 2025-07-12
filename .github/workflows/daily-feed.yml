@@ -30,13 +30,14 @@ jobs:
         uses: actions/cache@v3
         with:
           path: ~/go/pkg/mod
-          key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum') }}
+          key: ${{ runner.os }}-go-${{ hashFiles('backend/go.sum') }}
           restore-keys: |
             ${{ runner.os }}-go-
 
       - name: Generate daily feeds (4 presets)
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        working-directory: ./backend
         run: |
           echo "Starting daily feed generation..."
           go run cmd/generate/main.go
