@@ -59,9 +59,9 @@ export class DailyFeedApp extends LitElement {
 
     .controls-row {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-end;
       align-items: flex-start;
-      gap: 24px;
+      gap: 16px;
       margin-bottom: 24px;
       min-height: 60px; /* 레이아웃 쉬프트 방지 */
     }
