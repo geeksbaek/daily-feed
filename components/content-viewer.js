@@ -228,7 +228,7 @@ export class ContentViewer extends LitElement {
 
     /* Footnote 스타일 */
     .footnote-ref {
-      color: #9ca3af;
+      color: var(--text-secondary);
       text-decoration: none;
       font-size: 0.7em;
       vertical-align: baseline;
@@ -243,16 +243,17 @@ export class ContentViewer extends LitElement {
 
     .footnote-ref:hover {
       opacity: 1;
-      color: #4299e1;
+      color: var(--accent-color);
       text-decoration: none;
     }
 
     .footnote-definition {
       margin-bottom: 8px;
       padding: 8px 0;
-      border-bottom: 1px solid #f0f0f0;
+      border-bottom: 1px solid var(--border-secondary);
       font-size: 14px;
       line-height: 1.5;
+      color: var(--text-primary);
     }
 
     .footnote-definition:last-child {
@@ -260,17 +261,17 @@ export class ContentViewer extends LitElement {
     }
 
     .footnote-definition strong {
-      color: #0969da;
+      color: var(--link-color);
       margin-right: 8px;
     }
 
     .footnote-definition a {
-      color: #24292f;
+      color: var(--text-primary);
       text-decoration: none;
     }
 
     .footnote-definition a:hover {
-      color: #0969da;
+      color: var(--link-color);
       text-decoration: underline;
     }
 
