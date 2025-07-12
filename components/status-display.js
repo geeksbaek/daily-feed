@@ -16,7 +16,7 @@ export class StatusDisplay extends LitElement {
       padding: 16px;
       margin-bottom: 16px;
       border-radius: 6px;
-      border: 1px solid #d0d7de;
+      border: 1px solid var(--border-secondary);
       display: none;
     }
 

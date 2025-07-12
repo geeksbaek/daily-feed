@@ -24,11 +24,11 @@ export class DateSelector extends LitElement {
 
     .date-select {
       padding: 6px 12px;
-      background-color: transparent;
-      border: 1px solid #d0d7de;
+      background-color: var(--bg-primary);
+      border: 1px solid var(--border-secondary);
       border-radius: 6px;
       font-size: 13px;
-      color: #656d76;
+      color: var(--text-tertiary);
       cursor: pointer;
       appearance: none;
       background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
@@ -41,13 +41,13 @@ export class DateSelector extends LitElement {
     }
 
     .date-select:hover {
-      border-color: #4299e1;
-      background-color: #f7fafc;
+      border-color: var(--accent-color);
+      background-color: var(--bg-secondary);
     }
 
     .date-select:focus {
       outline: none;
-      border-color: #4299e1;
+      border-color: var(--accent-color);
       box-shadow: 0 0 0 2px rgba(66, 153, 225, 0.1);
     }
   `;

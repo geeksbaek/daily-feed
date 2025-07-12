@@ -13,7 +13,7 @@ export class PresetTabs extends LitElement {
     .preset-tabs {
       display: flex;
       margin-bottom: 0;
-      border-bottom: 1px solid #d0d7de;
+      border-bottom: 1px solid var(--border-secondary);
       overflow-x: auto;
       flex: 1;
     }
@@ -26,7 +26,7 @@ export class PresetTabs extends LitElement {
       cursor: pointer;
       font-size: 16px;
       font-weight: 600;
-      color: #718096;
+      color: var(--text-secondary);
       white-space: nowrap;
       transition: all 0.2s ease;
       letter-spacing: -0.01em;
@@ -39,18 +39,18 @@ export class PresetTabs extends LitElement {
     }
 
     .tab-button:hover {
-      color: #2d3748;
-      background-color: #f7fafc;
+      color: var(--text-primary);
+      background-color: var(--bg-secondary);
     }
 
     .tab-button:active {
       transform: scale(0.98);
-      background-color: #e2e8f0;
+      background-color: var(--border-primary);
     }
 
     .tab-button.active {
-      color: #4299e1;
-      border-bottom-color: #4299e1;
+      color: var(--accent-color);
+      border-bottom-color: var(--accent-color);
       font-weight: 700;
     }
 
@@ -70,22 +70,22 @@ export class PresetTabs extends LitElement {
         font-size: 17px;
         border-radius: 8px;
         border-bottom: none;
-        background-color: #f7fafc;
-        border: 1px solid #e2e8f0;
+        background-color: var(--bg-secondary);
+        border: 1px solid var(--border-primary);
         margin-bottom: 0;
         transition: all 0.2s ease;
       }
       
       .tab-button:hover {
-        background-color: #e2e8f0;
-        border-color: #d0d7de;
+        background-color: var(--border-primary);
+        border-color: var(--border-secondary);
       }
       
       .tab-button.active {
-        background-color: #4299e1;
+        background-color: var(--accent-color);
         color: white;
-        border-color: #4299e1;
-        border-bottom-color: #4299e1;
+        border-color: var(--accent-color);
+        border-bottom-color: var(--accent-color);
         box-shadow: 0 2px 4px rgba(66, 153, 225, 0.2);
       }
     }
@@ -94,7 +94,7 @@ export class PresetTabs extends LitElement {
     @media (max-width: 768px) {
       .preset-tabs {
         overflow-x: auto;
-        border-bottom: 1px solid #d0d7de;
+        border-bottom: 1px solid var(--border-secondary);
         -webkit-overflow-scrolling: touch;
         scrollbar-width: none;
         -ms-overflow-style: none;
@@ -115,7 +115,7 @@ export class PresetTabs extends LitElement {
       }
       
       .tab-button.active {
-        border-bottom-color: #0969da;
+        border-bottom-color: var(--accent-color);
       }
     }
   `;

@@ -33,7 +33,7 @@ export class ContentViewer extends LitElement {
       font-weight: 600;
       margin-bottom: 16px;
       padding-bottom: 8px;
-      border-bottom: 1px solid #d0d7de;
+      border-bottom: 1px solid var(--border-secondary);
     }
 
 
@@ -56,8 +56,8 @@ export class ContentViewer extends LitElement {
       font-weight: 700;
       padding-bottom: 12px;
       margin: 32px 0 20px 0;
-      border-bottom: 2px solid #e2e8f0;
-      color: #1a202c;
+      border-bottom: 2px solid var(--border-primary);
+      color: var(--text-primary);
       letter-spacing: -0.02em;
       word-wrap: break-word;
       overflow-wrap: break-word;
@@ -68,8 +68,8 @@ export class ContentViewer extends LitElement {
       font-weight: 700;
       padding-bottom: 10px;
       margin: 28px 0 18px 0;
-      border-bottom: 2px solid #e2e8f0;
-      color: #1a202c;
+      border-bottom: 2px solid var(--border-primary);
+      color: var(--text-primary);
       letter-spacing: -0.015em;
     }
 
@@ -77,7 +77,7 @@ export class ContentViewer extends LitElement {
       font-size: 22px;
       font-weight: 700;
       margin: 24px 0 16px 0;
-      color: #2d3748;
+      color: var(--text-primary);
       letter-spacing: -0.01em;
     }
 
@@ -85,28 +85,28 @@ export class ContentViewer extends LitElement {
       font-size: 19px;
       font-weight: 600;
       margin: 20px 0 14px 0;
-      color: #2d3748;
+      color: var(--text-primary);
     }
 
     .markdown-content h5 {
       font-size: 17px;
       font-weight: 600;
       margin: 18px 0 12px 0;
-      color: #4a5568;
+      color: var(--text-secondary);
     }
 
     .markdown-content h6 {
       font-size: 15px;
       font-weight: 600;
       margin: 16px 0 10px 0;
-      color: #718096;
+      color: var(--text-secondary);
     }
 
     .markdown-content p {
       margin-bottom: 20px;
       line-height: 1.9;
       font-size: 17px;
-      color: #2d3748;
+      color: var(--text-primary);
       font-weight: 400;
       word-wrap: break-word;
       overflow-wrap: break-word;
@@ -208,17 +208,18 @@ export class ContentViewer extends LitElement {
     }
 
     .markdown-content a {
-      color: #0969da;
+      color: var(--link-color);
       text-decoration: none;
     }
 
     .markdown-content a:hover {
       text-decoration: underline;
+      color: var(--link-hover);
     }
 
     .markdown-content strong {
       font-weight: 700;
-      color: #1a202c;
+      color: var(--text-primary);
     }
 
     .markdown-content em {

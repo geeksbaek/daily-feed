@@ -17,8 +17,8 @@ export class DailyFeedApp extends LitElement {
       display: block;
       font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Segoe UI', Roboto, sans-serif;
       line-height: 1.8;
-      color: #2d3748;
-      background-color: #fafbfc;
+      color: var(--text-primary);
+      background-color: var(--bg-primary);
       max-width: 100vw;
       width: 100%;
       margin: 0;
