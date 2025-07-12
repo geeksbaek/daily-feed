@@ -26,12 +26,36 @@ renderer.blockquote = function(quote) {
 };
 marked.setOptions({ renderer: renderer });
 
+// 화면 회전 감지 및 레이아웃 조정
+function handleOrientationChange() {
+    // 태블릿에서 화면 회전 시 레이아웃 재조정
+    if (isTablet()) {
+        setTimeout(() => {
+            // 사이드바 높이 재계산
+            const sidebar = document.querySelector('.sidebar');
+            if (sidebar && window.orientation !== undefined) {
+                if (Math.abs(window.orientation) === 90) {
+                    // 가로 모드
+                    sidebar.style.maxHeight = 'calc(100vh - 48px)';
+                } else {
+                    // 세로 모드
+                    sidebar.style.maxHeight = 'none';
+                }
+            }
+        }, 100);
+    }
+}
+
 // 초기화
 document.addEventListener('DOMContentLoaded', function() {
     setupEventListeners();
     setupMobileOptimizations();
     setupOfflineHandlers();
     loadAvailableDates();
+    
+    // 화면 회전 이벤트 리스너
+    window.addEventListener('orientationchange', handleOrientationChange);
+    window.addEventListener('resize', handleOrientationChange);
 });
 
 // 이벤트 리스너 설정
@@ -52,7 +76,18 @@ function setupEventListeners() {
     });
 }
 
-// 모바일 UX 최적화
+// 디바이스 감지
+function isTablet() {
+    return window.innerWidth >= 768 && window.innerWidth <= 1366 && 
+           ('ontouchstart' in window || navigator.maxTouchPoints > 0);
+}
+
+function isMobile() {
+    return window.innerWidth < 768 && 
+           ('ontouchstart' in window || navigator.maxTouchPoints > 0);
+}
+
+// 모바일/태블릿 UX 최적화
 function setupMobileOptimizations() {
     // 완전한 줌 차단 - 모든 제스처 방지
     let lastTouchEnd = 0;
@@ -118,10 +153,36 @@ function setupMobileOptimizations() {
         }
     }
     
-    // 뷰포트 강제 설정
+    // 뷰포트 강제 설정 - 디바이스별 최적화
     const viewport = document.querySelector('meta[name=viewport]');
     if (viewport) {
-        viewport.setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover, shrink-to-fit=no');
+        if (isTablet()) {
+            // 태블릿은 약간의 줌 허용하되 제한
+            viewport.setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.2, minimum-scale=0.8, user-scalable=yes, viewport-fit=cover');
+        } else if (isMobile()) {
+            // 모바일은 완전 줌 차단
+            viewport.setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover, shrink-to-fit=no');
+        }
+    }
+    
+    // 태블릿 전용 최적화
+    if (isTablet()) {
+        document.body.classList.add('tablet-mode');
+        
+        // 태블릿에서는 터치 하이라이트 더 명확하게
+        const style = document.createElement('style');
+        style.textContent = `
+            .tablet-mode .date-item:active,
+            .tablet-mode .tab-button:active {
+                transform: scale(0.95);
+                transition: transform 0.1s ease;
+            }
+            
+            .tablet-mode .preset-tabs {
+                justify-content: center;
+            }
+        `;
+        document.head.appendChild(style);
     }
 }
 
