@@ -1,13 +1,10 @@
 // 전역 변수
 let allDates = [];
 let currentData = {};
-let searchQuery = '';
 
 // DOM 요소
 const dateSelect = document.getElementById('date-select');
 const presetSelect = document.getElementById('preset-select');
-const searchInput = document.getElementById('search-input');
-const searchBtn = document.getElementById('search-btn');
 const statusDiv = document.getElementById('status');
 const contentDiv = document.getElementById('content');
 
@@ -15,8 +12,16 @@ const contentDiv = document.getElementById('content');
 marked.setOptions({
     gfm: true,
     breaks: true,
-    sanitize: false // DOMPurify를 별도로 사용
+    sanitize: false, // DOMPurify를 별도로 사용
+    renderer: new marked.Renderer()
 });
+
+// 인용문법 렌더러 설정
+const renderer = new marked.Renderer();
+renderer.blockquote = function(quote) {
+    return '<blockquote style="border-left: 3px solid #d1d9e0; padding-left: 16px; margin-left: 0; color: #57606a; font-style: italic;">' + quote + '</blockquote>';
+};
+marked.setOptions({ renderer: renderer });
 
 // 초기화
 document.addEventListener('DOMContentLoaded', function() {
@@ -28,12 +33,6 @@ document.addEventListener('DOMContentLoaded', function() {
 function setupEventListeners() {
     dateSelect.addEventListener('change', loadSelectedDate);
     presetSelect.addEventListener('change', displayContent);
-    searchBtn.addEventListener('click', performSearch);
-    searchInput.addEventListener('keypress', function(e) {
-        if (e.key === 'Enter') {
-            performSearch();
-        }
-    });
 }
 
 // 사용 가능한 날짜 목록 로드
@@ -140,17 +139,6 @@ function displayContent() {
         summariesToShow = [[selectedPreset, summaries[selectedPreset]]];
     }
     
-    // 검색 필터링
-    if (searchQuery) {
-        summariesToShow = summariesToShow.filter(([preset, data]) => {
-            const searchLower = searchQuery.toLowerCase();
-            return data.summary.toLowerCase().includes(searchLower) ||
-                   data.articles.some(article => 
-                       article.title.toLowerCase().includes(searchLower) ||
-                       (article.description && article.description.toLowerCase().includes(searchLower))
-                   );
-        });
-    }
     
     if (summariesToShow.length === 0) {
         contentDiv.innerHTML = '<p>조건에 맞는 요약을 찾을 수 없습니다.</p>';
@@ -218,16 +206,11 @@ function renderArticles(articles) {
             <div class="article-meta">
                 ${article.source} • ${article.category} • ${formatDateForDisplay(article.publishedAt)}
             </div>
-            ${article.description ? `<div class="article-description">${escapeHtml(article.description)}</div>` : ''}
+            ${article.description ? `<div class="article-description">${escapeHtml(truncateText(article.description, 100))}</div>` : ''}
         </div>
     `).join('');
 }
 
-// 검색 수행
-function performSearch() {
-    searchQuery = searchInput.value.trim();
-    displayContent();
-}
 
 // 상태 메시지 표시
 function showStatus(message, type = 'loading') {
@@ -261,6 +244,14 @@ function escapeHtml(text) {
     const div = document.createElement('div');
     div.textContent = text;
     return div.innerHTML;
+}
+
+// 텍스트 자르기
+function truncateText(text, maxLength) {
+    if (!text || text.length <= maxLength) {
+        return text;
+    }
+    return text.slice(0, maxLength) + '...';
 }
 
 // GitHub Pages 기본 경로 감지
