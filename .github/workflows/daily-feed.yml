@@ -7,6 +7,10 @@ on:
   # 수동 실행 가능
   workflow_dispatch:
 
+# GitHub Actions 권한 설정
+permissions:
+  contents: write
+
 jobs:
   generate-feeds:
     runs-on: ubuntu-latest
