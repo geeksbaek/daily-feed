@@ -111,37 +111,35 @@ export class DailyFeedApp extends LitElement {
     }
 
 
-    /* 스켈레톤 로딩 */
-    .skeleton {
-      background: linear-gradient(90deg, var(--border-primary) 25%, var(--border-secondary) 50%, var(--border-primary) 75%);
-      background-size: 200% 100%;
-      animation: skeleton-loading 1.5s infinite;
-    }
-
-    .skeleton-content {
-      min-height: 400px;
-      border-radius: 8px;
-      margin-top: 16px;
+    /* 로딩 오버레이 */
+    .loading-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: var(--bg-primary);
       display: flex;
       align-items: center;
       justify-content: center;
+      z-index: 9999;
     }
 
-    .skeleton-loading-text {
+    .loading-content {
       text-align: center;
       color: var(--text-secondary);
       font-size: 16px;
       font-weight: 500;
     }
 
-    .skeleton-dots {
+    .loading-dots {
       display: inline-flex;
       align-items: center;
       gap: 6px;
       margin-left: 8px;
     }
 
-    .skeleton-dot {
+    .loading-dot {
       width: 6px;
       height: 6px;
       background-color: var(--accent-color);
@@ -149,37 +147,16 @@ export class DailyFeedApp extends LitElement {
       animation: loading-pulse 1.5s ease-in-out infinite;
     }
 
-    .skeleton-dot:nth-child(1) {
+    .loading-dot:nth-child(1) {
       animation-delay: -0.3s;
     }
 
-    .skeleton-dot:nth-child(2) {
+    .loading-dot:nth-child(2) {
       animation-delay: -0.15s;
     }
 
-    .skeleton-dot:nth-child(3) {
+    .loading-dot:nth-child(3) {
       animation-delay: 0s;
-    }
-
-    .skeleton-preset-selector {
-      height: 32px;
-      width: 140px;
-      border-radius: 6px;
-    }
-
-    .skeleton-date-selector {
-      height: 32px;
-      width: 200px;
-      border-radius: 6px;
-    }
-
-    @keyframes skeleton-loading {
-      0% {
-        background-position: 200% 0;
-      }
-      100% {
-        background-position: -200% 0;
-      }
     }
   `;
 
@@ -204,28 +181,36 @@ export class DailyFeedApp extends LitElement {
   }
 
   render() {
+    if (this.isLoading) {
+      return html`
+        <div class="loading-overlay">
+          <div class="loading-content">
+            Daily Feed를 불러오는 중
+            <span class="loading-dots">
+              <div class="loading-dot"></div>
+              <div class="loading-dot"></div>
+              <div class="loading-dot"></div>
+            </span>
+          </div>
+        </div>
+      `;
+    }
+
     return html`
       <main>
         <div class="main-layout">
           <div class="main-content">
             <div class="controls-row">
-              ${this.isLoading ? html`
-                <!-- 스켈레톤 로딩 -->
-                <div class="skeleton skeleton-preset-selector"></div>
-                <div class="skeleton skeleton-date-selector"></div>
-              ` : html`
-                <!-- 실제 컨트롤 -->
-                <preset-tabs 
-                  .currentPreset=${this.currentPreset}
-                  @preset-changed=${this.handlePresetChange}
-                ></preset-tabs>
-                
-                <date-selector 
-                  .dates=${this.allDates}
-                  .selectedDate=${this.selectedDate}
-                  @date-changed=${this.handleDateChange}
-                ></date-selector>
-              `}
+              <preset-tabs 
+                .currentPreset=${this.currentPreset}
+                @preset-changed=${this.handlePresetChange}
+              ></preset-tabs>
+              
+              <date-selector 
+                .dates=${this.allDates}
+                .selectedDate=${this.selectedDate}
+                @date-changed=${this.handleDateChange}
+              ></date-selector>
             </div>
             
             <status-display 
@@ -234,25 +219,10 @@ export class DailyFeedApp extends LitElement {
               .show=${this.showStatus}
             ></status-display>
             
-            ${this.isLoading ? html`
-              <!-- 스켈레톤 콘텐츠 -->
-              <div class="skeleton skeleton-content">
-                <div class="skeleton-loading-text">
-                  Daily Feed를 불러오는 중
-                  <span class="skeleton-dots">
-                    <div class="skeleton-dot"></div>
-                    <div class="skeleton-dot"></div>
-                    <div class="skeleton-dot"></div>
-                  </span>
-                </div>
-              </div>
-            ` : html`
-              <!-- 실제 콘텐츠 -->
-              <content-viewer 
-                .data=${this.currentData}
-                .preset=${this.currentPreset}
-              ></content-viewer>
-            `}
+            <content-viewer 
+              .data=${this.currentData}
+              .preset=${this.currentPreset}
+            ></content-viewer>
           </div>
         </div>
       </main>
