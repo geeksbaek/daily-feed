@@ -150,7 +150,8 @@ export class ContentViewer extends LitElement {
 
     .markdown-content code {
       padding: 2px 6px;
-      background-color: #f6f8fa;
+      background-color: var(--code-bg);
+      color: var(--code-text);
       border-radius: 6px;
       font-size: 85%;
       font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
@@ -159,7 +160,8 @@ export class ContentViewer extends LitElement {
     .markdown-content pre {
       padding: 16px;
       margin-bottom: 16px;
-      background-color: #f6f8fa;
+      background-color: var(--code-bg);
+      color: var(--code-text);
       border-radius: 6px;
       overflow-x: auto;
       font-size: 85%;
