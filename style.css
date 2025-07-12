@@ -6,60 +6,70 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    line-height: 1.6;
-    color: #24292f;
-    background-color: #ffffff;
-    max-width: 980px;
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.8;
+    color: #2d3748;
+    background-color: #fafbfc;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 16px;
+    padding: 24px;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: -0.005em;
+    word-break: keep-all;
+    overflow-wrap: break-word;
 }
 
 /* 헤더 */
 header {
-    border-bottom: 1px solid #d0d7de;
-    padding-bottom: 16px;
-    margin-bottom: 24px;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 24px;
+    margin-bottom: 32px;
+    text-align: center;
 }
 
 header h1 {
-    font-size: 32px;
-    font-weight: 600;
-    margin-bottom: 8px;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #1a202c;
+    letter-spacing: -0.05em;
 }
 
 header p {
-    font-size: 16px;
-    color: #656d76;
+    font-size: 18px;
+    color: #718096;
+    font-weight: 500;
 }
 
 /* 메인 레이아웃 */
 .main-layout {
     display: flex;
-    gap: 24px;
+    gap: 32px;
     align-items: flex-start;
 }
 
 /* 좌측 사이드바 */
 .sidebar {
-    flex: 0 0 250px;
-    background-color: #f6f8fa;
-    border: 1px solid #d0d7de;
-    border-radius: 6px;
-    padding: 16px;
+    flex: 0 0 280px;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 24px;
     position: sticky;
-    top: 16px;
-    max-height: calc(100vh - 32px);
+    top: 24px;
+    max-height: calc(100vh - 48px);
     overflow-y: auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
 .sidebar h3 {
-    margin: 0 0 16px 0;
-    font-size: 16px;
-    font-weight: 600;
-    color: #24292f;
-    border-bottom: 1px solid #d0d7de;
-    padding-bottom: 8px;
+    margin: 0 0 20px 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a202c;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 12px;
 }
 
 /* 날짜 리스트 */
@@ -70,29 +80,36 @@ header p {
 }
 
 .date-item {
-    padding: 8px 12px;
-    border-radius: 6px;
+    padding: 12px 16px;
+    border-radius: 8px;
     cursor: pointer;
-    font-size: 14px;
-    color: #24292f;
-    transition: all 0.2s;
+    font-size: 15px;
+    color: #4a5568;
+    transition: all 0.2s ease;
     border: 1px solid transparent;
+    font-weight: 500;
 }
 
 .date-item:hover {
-    background-color: #e1e4e8;
+    background-color: #f7fafc;
+    color: #2d3748;
 }
 
 .date-item.active {
-    background-color: #0969da;
+    background-color: #4299e1;
     color: white;
-    border-color: #0969da;
+    border-color: #4299e1;
+    font-weight: 600;
 }
 
 /* 메인 콘텐츠 */
 .main-content {
     flex: 1;
     min-width: 0;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 32px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
 /* 프리셋 탭 */
@@ -104,27 +121,28 @@ header p {
 }
 
 .tab-button {
-    padding: 12px 16px;
+    padding: 14px 20px;
     background: none;
     border: none;
-    border-bottom: 2px solid transparent;
+    border-bottom: 3px solid transparent;
     cursor: pointer;
-    font-size: 14px;
-    font-weight: 500;
-    color: #656d76;
+    font-size: 16px;
+    font-weight: 600;
+    color: #718096;
     white-space: nowrap;
-    transition: all 0.2s;
+    transition: all 0.2s ease;
+    letter-spacing: -0.01em;
 }
 
 .tab-button:hover {
-    color: #24292f;
-    background-color: #f6f8fa;
+    color: #2d3748;
+    background-color: #f7fafc;
 }
 
 .tab-button.active {
-    color: #0969da;
-    border-bottom-color: #0969da;
-    font-weight: 600;
+    color: #4299e1;
+    border-bottom-color: #4299e1;
+    font-weight: 700;
 }
 
 
@@ -180,68 +198,86 @@ header p {
 
 /* Markdown 스타일 */
 .markdown-content h1 {
-    font-size: 28px;
-    font-weight: 600;
-    padding-bottom: 8px;
-    margin: 24px 0 16px 0;
-    border-bottom: 1px solid #d0d7de;
+    font-size: 32px;
+    font-weight: 700;
+    padding-bottom: 12px;
+    margin: 32px 0 20px 0;
+    border-bottom: 2px solid #e2e8f0;
+    color: #1a202c;
+    letter-spacing: -0.02em;
 }
 
 .markdown-content h2 {
-    font-size: 24px;
-    font-weight: 600;
-    padding-bottom: 8px;
-    margin: 24px 0 16px 0;
-    border-bottom: 1px solid #d0d7de;
+    font-size: 26px;
+    font-weight: 700;
+    padding-bottom: 10px;
+    margin: 28px 0 18px 0;
+    border-bottom: 2px solid #e2e8f0;
+    color: #1a202c;
+    letter-spacing: -0.015em;
 }
 
 .markdown-content h3 {
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 22px;
+    font-weight: 700;
     margin: 24px 0 16px 0;
+    color: #2d3748;
+    letter-spacing: -0.01em;
 }
 
 .markdown-content h4 {
-    font-size: 16px;
+    font-size: 19px;
     font-weight: 600;
-    margin: 24px 0 16px 0;
+    margin: 20px 0 14px 0;
+    color: #2d3748;
 }
 
 .markdown-content h5 {
-    font-size: 14px;
+    font-size: 17px;
     font-weight: 600;
-    margin: 24px 0 16px 0;
+    margin: 18px 0 12px 0;
+    color: #4a5568;
 }
 
 .markdown-content h6 {
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 600;
-    margin: 24px 0 16px 0;
-    color: #656d76;
+    margin: 16px 0 10px 0;
+    color: #718096;
 }
 
 .markdown-content p {
-    margin-bottom: 16px;
+    margin-bottom: 20px;
+    line-height: 1.9;
+    font-size: 17px;
+    color: #2d3748;
+    font-weight: 400;
 }
 
 .markdown-content ul, .markdown-content ol {
-    margin-bottom: 16px;
-    padding-left: 32px;
+    margin-bottom: 20px;
+    padding-left: 24px;
 }
 
 .markdown-content li {
-    margin-bottom: 4px;
+    margin-bottom: 8px;
+    line-height: 1.8;
+    font-size: 17px;
 }
 
 .markdown-content li > p {
-    margin-bottom: 8px;
+    margin-bottom: 12px;
 }
 
 .markdown-content blockquote {
-    padding: 0 16px;
-    margin-bottom: 16px;
-    color: #656d76;
-    border-left: 4px solid #d0d7de;
+    padding: 16px 20px;
+    margin-bottom: 24px;
+    color: #4a5568;
+    border-left: 4px solid #4299e1;
+    background-color: #f7fafc;
+    border-radius: 0 8px 8px 0;
+    font-size: 16px;
+    line-height: 1.8;
 }
 
 .markdown-content blockquote > :first-child {
@@ -317,7 +353,8 @@ header p {
 }
 
 .markdown-content strong {
-    font-weight: 600;
+    font-weight: 700;
+    color: #1a202c;
 }
 
 .markdown-content em {
@@ -366,49 +403,62 @@ header p {
 
 /* 기사 링크 */
 .articles-section {
-    margin-top: 32px;
-    padding-top: 16px;
-    border-top: 1px solid #d0d7de;
+    margin-top: 40px;
+    padding-top: 24px;
+    border-top: 2px solid #e2e8f0;
 }
 
 .articles-section h3 {
-    margin-bottom: 16px;
-    font-size: 20px;
-    font-weight: 600;
+    margin-bottom: 24px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a202c;
 }
 
 .article-item {
-    margin-bottom: 16px;
-    padding: 12px;
-    background-color: #f6f8fa;
-    border-radius: 6px;
-    border: 1px solid #d0d7de;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f7fafc;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    transition: all 0.2s ease;
+}
+
+.article-item:hover {
+    background-color: #edf2f7;
+    border-color: #cbd5e0;
 }
 
 .article-title {
-    font-weight: 600;
-    margin-bottom: 4px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    font-size: 18px;
+    line-height: 1.5;
 }
 
 .article-title a {
-    color: #24292f;
+    color: #1a202c;
     text-decoration: none;
 }
 
 .article-title a:hover {
-    color: #0969da;
+    color: #4299e1;
     text-decoration: underline;
 }
 
 .article-meta {
-    font-size: 12px;
-    color: #656d76;
-    margin-bottom: 8px;
+    font-size: 14px;
+    color: #718096;
+    margin-bottom: 12px;
+    font-weight: 500;
 }
 
 .article-description {
-    font-size: 14px;
-    color: #656d76;
+    font-size: 16px;
+    color: #4a5568;
+    line-height: 1.7;
+    word-break: keep-all;
+    overflow-wrap: break-word;
 }
 
 /* 푸터 */
