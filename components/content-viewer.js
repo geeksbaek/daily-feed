@@ -340,7 +340,9 @@ export class ContentViewer extends LitElement {
       const html = marked.parse(processedContent);
       
       // DOMPurify로 XSS 방지 (전역에서 사용 가능하다고 가정)
-      return DOMPurify.sanitize(html);
+      return DOMPurify.sanitize(html, {
+        ADD_ATTR: ['target', 'rel']
+      });
     } catch (error) {
       console.error('마크다운 렌더링 실패:', error);
       // 실패 시 기본 HTML 이스케이프
