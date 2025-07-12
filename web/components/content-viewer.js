@@ -292,7 +292,7 @@ export class ContentViewer extends LitElement {
   constructor() {
     super();
     this.data = {};
-    this.preset = 'default';
+    this.preset = 'general';
   }
 
   render() {
@@ -316,9 +316,7 @@ export class ContentViewer extends LitElement {
     }
 
     const presetLabels = {
-      'default': 'Default',
-      'developer': 'Developer', 
-      'casual': 'Casual',
+      'general': 'General',
       'community': 'Community'
     };
 
