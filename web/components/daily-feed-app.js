@@ -113,71 +113,6 @@ export class DailyFeedApp extends LitElement {
       }
     }
 
-    /* 전체 화면 로딩 오버레이 */
-    .loading-overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: var(--bg-primary);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      z-index: 9999;
-      opacity: 1;
-      transition: opacity 0.3s ease;
-    }
-
-    .loading-overlay.hidden {
-      opacity: 0;
-      pointer-events: none;
-    }
-
-    .loading-spinner {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      margin-bottom: 24px;
-    }
-
-    .loading-dot {
-      width: 12px;
-      height: 12px;
-      background-color: var(--accent-color);
-      border-radius: 50%;
-      animation: loading-pulse 1.5s ease-in-out infinite;
-    }
-
-    .loading-dot:nth-child(1) {
-      animation-delay: -0.3s;
-    }
-
-    .loading-dot:nth-child(2) {
-      animation-delay: -0.15s;
-    }
-
-    .loading-dot:nth-child(3) {
-      animation-delay: 0s;
-    }
-
-    .loading-text {
-      color: var(--text-secondary);
-      font-size: 16px;
-      font-weight: 500;
-    }
-
-    @keyframes loading-pulse {
-      0%, 80%, 100% {
-        transform: scale(0.8);
-        opacity: 0.5;
-      }
-      40% {
-        transform: scale(1.2);
-        opacity: 1;
-      }
-    }
 
     /* 스켈레톤 로딩 */
     .skeleton {
@@ -187,9 +122,45 @@ export class DailyFeedApp extends LitElement {
     }
 
     .skeleton-content {
-      min-height: 200px;
+      min-height: 400px;
       border-radius: 8px;
       margin-top: 16px;
+    }
+
+    .skeleton-loading-text {
+      text-align: center;
+      color: var(--text-secondary);
+      font-size: 16px;
+      font-weight: 500;
+      margin-top: 100px;
+      position: relative;
+    }
+
+    .skeleton-dots {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-left: 8px;
+    }
+
+    .skeleton-dot {
+      width: 6px;
+      height: 6px;
+      background-color: var(--accent-color);
+      border-radius: 50%;
+      animation: loading-pulse 1.5s ease-in-out infinite;
+    }
+
+    .skeleton-dot:nth-child(1) {
+      animation-delay: -0.3s;
+    }
+
+    .skeleton-dot:nth-child(2) {
+      animation-delay: -0.15s;
+    }
+
+    .skeleton-dot:nth-child(3) {
+      animation-delay: 0s;
     }
 
     .skeleton-tabs {
@@ -236,16 +207,6 @@ export class DailyFeedApp extends LitElement {
 
   render() {
     return html`
-      <!-- 전체 화면 로딩 오버레이 -->
-      <div class="loading-overlay ${this.isLoading ? '' : 'hidden'}">
-        <div class="loading-spinner">
-          <div class="loading-dot"></div>
-          <div class="loading-dot"></div>
-          <div class="loading-dot"></div>
-        </div>
-        <div class="loading-text">Daily Feed를 불러오는 중...</div>
-      </div>
-
       <main>
         <div class="main-layout">
           <div class="main-content">
@@ -277,7 +238,16 @@ export class DailyFeedApp extends LitElement {
             
             ${this.isLoading ? html`
               <!-- 스켈레톤 콘텐츠 -->
-              <div class="skeleton skeleton-content"></div>
+              <div class="skeleton skeleton-content">
+                <div class="skeleton-loading-text">
+                  Daily Feed를 불러오는 중
+                  <span class="skeleton-dots">
+                    <div class="skeleton-dot"></div>
+                    <div class="skeleton-dot"></div>
+                    <div class="skeleton-dot"></div>
+                  </span>
+                </div>
+              </div>
             ` : html`
               <!-- 실제 콘텐츠 -->
               <content-viewer 
