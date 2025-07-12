@@ -244,6 +244,7 @@ export class DailyFeedApp extends LitElement {
       await Promise.all(promises);
       this.saveToLocalStorage();
       this.hideStatus();
+      this.requestUpdate(); // 컴포넌트 강제 리렌더링
       
     } catch (error) {
       console.error('데이터 로드 실패:', error);
@@ -253,6 +254,7 @@ export class DailyFeedApp extends LitElement {
         if (cachedData) {
           this.currentData = cachedData;
           this.showStatusMessage('오프라인 상태 - 캐시된 데이터를 표시합니다.', 'offline');
+          this.requestUpdate(); // 컴포넌트 강제 리렌더링
           return;
         }
       }
@@ -349,6 +351,7 @@ export class DailyFeedApp extends LitElement {
           if (this.allDates.length > 0) {
             this.selectedDate = this.allDates[0];
             this.showStatusMessage(`캐시된 데이터를 표시합니다 (${Math.round(ageHours)}시간 전 데이터)`, 'offline');
+            this.requestUpdate(); // 컴포넌트 강제 리렌더링
             return true;
           }
         }
