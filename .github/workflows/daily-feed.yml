@@ -49,7 +49,7 @@ jobs:
           
           # 변경사항이 있는지 확인
           if [ -n "$(git status --porcelain)" ]; then
-            git add data/
+            git add web/data/
             git commit -m "🤖 Daily feed: $(TZ='Asia/Seoul' date +%Y-%m-%d)"
             git push
           else

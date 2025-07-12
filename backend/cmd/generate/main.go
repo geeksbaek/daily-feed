@@ -46,8 +46,8 @@ func main() {
 	// 4가지 프리셋
 	presets := []string{"default", "developer", "casual", "community"}
 	
-	// 출력 디렉토리 생성 (프로젝트 루트의 data 디렉토리)
-	outputDir := filepath.Join("..", "data", "summaries", today)
+	// 출력 디렉토리 생성 (web/data/summaries)
+	outputDir := filepath.Join("..", "web", "data", "summaries", today)
 	if err := os.MkdirAll(outputDir, 0755); err != nil {
 		fmt.Printf("디렉토리 생성 실패: %v\n", err)
 		os.Exit(1)
@@ -153,7 +153,7 @@ func saveJSON(data interface{}, filePath string) error {
 }
 
 func updateIndex(date string, presets []string, articleCount int) error {
-	indexPath := filepath.Join("..", "data", "summaries", "index.json")
+	indexPath := filepath.Join("..", "web", "data", "summaries", "index.json")
 	
 	var index []IndexEntry
 	
