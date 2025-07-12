@@ -49,13 +49,32 @@ export class StatusDisplay extends LitElement {
     }
 
     .spinner {
-      width: 20px;
+      width: 40px;
       height: 20px;
-      border: 2px solid transparent;
-      border-top: 2px solid currentColor;
-      border-radius: 50%;
-      animation: spin 1s linear infinite;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       flex-shrink: 0;
+    }
+
+    .spinner-dot {
+      width: 6px;
+      height: 6px;
+      background-color: currentColor;
+      border-radius: 50%;
+      animation: pulse 1.5s ease-in-out infinite;
+    }
+
+    .spinner-dot:nth-child(1) {
+      animation-delay: -0.3s;
+    }
+
+    .spinner-dot:nth-child(2) {
+      animation-delay: -0.15s;
+    }
+
+    .spinner-dot:nth-child(3) {
+      animation-delay: 0s;
     }
 
     .icon {
@@ -68,9 +87,15 @@ export class StatusDisplay extends LitElement {
       font-size: 16px;
     }
 
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
+    @keyframes pulse {
+      0%, 80%, 100% {
+        transform: scale(0.8);
+        opacity: 0.5;
+      }
+      40% {
+        transform: scale(1);
+        opacity: 1;
+      }
     }
 
     .message {
@@ -89,13 +114,25 @@ export class StatusDisplay extends LitElement {
     const getIcon = () => {
       switch (this.type) {
         case 'loading':
-          return html`<div class="spinner"></div>`;
+          return html`
+            <div class="spinner">
+              <div class="spinner-dot"></div>
+              <div class="spinner-dot"></div>
+              <div class="spinner-dot"></div>
+            </div>
+          `;
         case 'error':
           return html`<div class="icon">⚠️</div>`;
         case 'offline':
           return html`<div class="icon">📡</div>`;
         default:
-          return html`<div class="spinner"></div>`;
+          return html`
+            <div class="spinner">
+              <div class="spinner-dot"></div>
+              <div class="spinner-dot"></div>
+              <div class="spinner-dot"></div>
+            </div>
+          `;
       }
     };
 
