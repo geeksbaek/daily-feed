@@ -63,6 +63,7 @@ export class DailyFeedApp extends LitElement {
       align-items: flex-start;
       gap: 24px;
       margin-bottom: 24px;
+      min-height: 60px; /* 레이아웃 쉬프트 방지 */
     }
 
     /* 모바일 반응형 */
@@ -177,6 +178,40 @@ export class DailyFeedApp extends LitElement {
         opacity: 1;
       }
     }
+
+    /* 스켈레톤 로딩 */
+    .skeleton {
+      background: linear-gradient(90deg, var(--border-primary) 25%, var(--border-secondary) 50%, var(--border-primary) 75%);
+      background-size: 200% 100%;
+      animation: skeleton-loading 1.5s infinite;
+    }
+
+    .skeleton-content {
+      min-height: 200px;
+      border-radius: 8px;
+      margin-top: 16px;
+    }
+
+    .skeleton-tabs {
+      height: 44px;
+      border-radius: 6px;
+      flex: 1;
+    }
+
+    .skeleton-selector {
+      height: 44px;
+      width: 200px;
+      border-radius: 6px;
+    }
+
+    @keyframes skeleton-loading {
+      0% {
+        background-position: 200% 0;
+      }
+      100% {
+        background-position: -200% 0;
+      }
+    }
   `;
 
   constructor() {
@@ -215,16 +250,23 @@ export class DailyFeedApp extends LitElement {
         <div class="main-layout">
           <div class="main-content">
             <div class="controls-row">
-              <preset-tabs 
-                .currentPreset=${this.currentPreset}
-                @preset-changed=${this.handlePresetChange}
-              ></preset-tabs>
-              
-              <date-selector 
-                .dates=${this.allDates}
-                .selectedDate=${this.selectedDate}
-                @date-changed=${this.handleDateChange}
-              ></date-selector>
+              ${this.isLoading ? html`
+                <!-- 스켈레톤 로딩 -->
+                <div class="skeleton skeleton-tabs"></div>
+                <div class="skeleton skeleton-selector"></div>
+              ` : html`
+                <!-- 실제 컨트롤 -->
+                <preset-tabs 
+                  .currentPreset=${this.currentPreset}
+                  @preset-changed=${this.handlePresetChange}
+                ></preset-tabs>
+                
+                <date-selector 
+                  .dates=${this.allDates}
+                  .selectedDate=${this.selectedDate}
+                  @date-changed=${this.handleDateChange}
+                ></date-selector>
+              `}
             </div>
             
             <status-display 
@@ -233,10 +275,16 @@ export class DailyFeedApp extends LitElement {
               .show=${this.showStatus}
             ></status-display>
             
-            <content-viewer 
-              .data=${this.currentData}
-              .preset=${this.currentPreset}
-            ></content-viewer>
+            ${this.isLoading ? html`
+              <!-- 스켈레톤 콘텐츠 -->
+              <div class="skeleton skeleton-content"></div>
+            ` : html`
+              <!-- 실제 콘텐츠 -->
+              <content-viewer 
+                .data=${this.currentData}
+                .preset=${this.currentPreset}
+              ></content-viewer>
+            `}
           </div>
         </div>
       </main>
