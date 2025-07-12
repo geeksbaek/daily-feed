@@ -323,12 +323,12 @@ export class DailyFeedApp extends LitElement {
   getBasePath() {
     const path = window.location.pathname;
     
-    if (path.includes('/daily-feed/web')) {
-      return '/daily-feed';
-    } else if (path.includes('/daily-feed')) {
+    // GitHub Pages에서 /daily-feed/ 경로로 서빙되는 경우
+    if (path.includes('/daily-feed')) {
       return '/daily-feed';
     }
     
+    // 로컬 개발 환경
     return '';
   }
 
