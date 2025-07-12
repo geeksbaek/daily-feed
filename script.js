@@ -17,6 +17,7 @@ marked.setOptions({
     renderer: new marked.Renderer()
 });
 
+
 // 인용문법 렌더러 설정
 const renderer = new marked.Renderer();
 renderer.blockquote = function(quote) {
@@ -44,6 +45,7 @@ function setupEventListeners() {
             currentPreset = e.target.dataset.preset;
             displayContent();
         }
+        
     });
 }
 
@@ -243,9 +245,16 @@ function processFootnotes(content) {
             const linkMatch = definition.match(/^(.+?)\s+-\s+(https?:\/\/.+)$/);
             if (linkMatch) {
                 const [, title, url] = linkMatch;
-                processedContent += `<div id="footnote-${id}" class="footnote-definition"><strong>[${id}]</strong> <a href="${url}" target="_blank" rel="noopener noreferrer">${escapeHtml(title)}</a></div>\n`;
+                processedContent += `<div id="footnote-${id}" class="footnote-definition"><strong>[${id}]</strong> <a href="${url}">${escapeHtml(title)}</a></div>\n`;
             } else {
-                processedContent += `<div id="footnote-${id}" class="footnote-definition"><strong>[${id}]</strong> ${escapeHtml(definition)}</div>\n`;
+                // URL만 있는 경우도 처리
+                const urlMatch = definition.match(/^(https?:\/\/.+)$/);
+                if (urlMatch) {
+                    const url = urlMatch[1];
+                    processedContent += `<div id="footnote-${id}" class="footnote-definition"><strong>[${id}]</strong> <a href="${url}">${url}</a></div>\n`;
+                } else {
+                    processedContent += `<div id="footnote-${id}" class="footnote-definition"><strong>[${id}]</strong> ${escapeHtml(definition)}</div>\n`;
+                }
             }
         }
     }
