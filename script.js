@@ -196,8 +196,11 @@ function displayContent() {
 // 마크다운 렌더링 (GitHub Flavored Markdown)
 function renderMarkdown(content) {
     try {
+        // Footnote 전처리
+        const processedContent = processFootnotes(content);
+        
         // Marked.js로 마크다운 파싱
-        const html = marked.parse(content);
+        const html = marked.parse(processedContent);
         
         // DOMPurify로 XSS 방지
         return DOMPurify.sanitize(html);
@@ -209,6 +212,49 @@ function renderMarkdown(content) {
                      .replace(/>/g, '&gt;')
                      .replace(/\n/g, '<br>');
     }
+}
+
+// Footnote 처리 함수
+function processFootnotes(content) {
+    const footnotes = {};
+    let processedContent = content;
+    
+    // 1. Footnote 정의 수집 및 제거 (맨 아래 [^1]: 링크 형태)
+    const footnoteDefRegex = /^\[\^([^\]]+)\]:\s*(.+)$/gm;
+    let match;
+    
+    while ((match = footnoteDefRegex.exec(content)) !== null) {
+        const [fullMatch, id, definition] = match;
+        footnotes[id] = definition.trim();
+        // 정의를 본문에서 제거
+        processedContent = processedContent.replace(fullMatch, '');
+    }
+    
+    // 2. Footnote 참조를 링크로 변환 ([^1] 형태)
+    const footnoteRefRegex = /\[\^([^\]]+)\]/g;
+    processedContent = processedContent.replace(footnoteRefRegex, (match, id) => {
+        if (footnotes[id]) {
+            return `<a href="#footnote-${id}" class="footnote-ref" title="${escapeHtml(footnotes[id])}">[${id}]</a>`;
+        }
+        return match; // 정의가 없으면 원본 유지
+    });
+    
+    // 3. Footnote 섹션을 맨 아래 추가
+    if (Object.keys(footnotes).length > 0) {
+        processedContent += '\n\n## 참고 자료\n\n';
+        for (const [id, definition] of Object.entries(footnotes)) {
+            // 링크 형태 감지 및 처리
+            const linkMatch = definition.match(/^(.+?)\s+-\s+(https?:\/\/.+)$/);
+            if (linkMatch) {
+                const [, title, url] = linkMatch;
+                processedContent += `<div id="footnote-${id}" class="footnote-definition"><strong>[${id}]</strong> <a href="${url}" target="_blank" rel="noopener noreferrer">${escapeHtml(title)}</a></div>\n`;
+            } else {
+                processedContent += `<div id="footnote-${id}" class="footnote-definition"><strong>[${id}]</strong> ${escapeHtml(definition)}</div>\n`;
+            }
+        }
+    }
+    
+    return processedContent;
 }
 
 // 기사 목록 렌더링

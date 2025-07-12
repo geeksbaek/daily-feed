@@ -324,6 +324,46 @@ header p {
     font-style: italic;
 }
 
+/* Footnote 스타일 */
+.footnote-ref {
+    color: #0969da;
+    text-decoration: none;
+    font-size: 0.9em;
+    vertical-align: super;
+    padding: 0 2px;
+}
+
+.footnote-ref:hover {
+    text-decoration: underline;
+}
+
+.footnote-definition {
+    margin-bottom: 8px;
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footnote-definition:last-child {
+    border-bottom: none;
+}
+
+.footnote-definition strong {
+    color: #0969da;
+    margin-right: 8px;
+}
+
+.footnote-definition a {
+    color: #24292f;
+    text-decoration: none;
+}
+
+.footnote-definition a:hover {
+    color: #0969da;
+    text-decoration: underline;
+}
+
 /* 기사 링크 */
 .articles-section {
     margin-top: 32px;
