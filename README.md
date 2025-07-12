@@ -51,7 +51,7 @@ GitHub Actions 탭에서 "Daily Feed Generation" 워크플로우를 수동으로
 
 ## 📱 웹 인터페이스
 
-- **URL**: `https://username.github.io/daily-feed/web/`
+- **URL**: `https://geeksbaek.github.io/daily-feed/`
 - **기능**:
   - 날짜별 요약 조회
   - 프리셋별 필터링
