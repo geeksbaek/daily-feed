@@ -20,10 +20,9 @@ export class DailyFeedApp extends LitElement {
       line-height: 1.8;
       color: var(--text-primary);
       background-color: var(--bg-primary);
-      max-width: 100vw;
       width: 100%;
       margin: 0;
-      padding: 24px;
+      padding: 0;
       font-size: 17px;
       font-weight: 400;
       letter-spacing: -0.005em;
@@ -31,10 +30,6 @@ export class DailyFeedApp extends LitElement {
       overflow-wrap: break-word;
       overflow-x: hidden;
       -webkit-overflow-scrolling: touch;
-      padding-left: max(16px, env(safe-area-inset-left));
-      padding-right: max(16px, env(safe-area-inset-right));
-      padding-top: max(16px, env(safe-area-inset-top));
-      padding-bottom: max(16px, env(safe-area-inset-bottom));
       box-sizing: border-box;
     }
 
@@ -43,7 +38,13 @@ export class DailyFeedApp extends LitElement {
       gap: 32px;
       align-items: flex-start;
       width: 100%;
-      max-width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 24px;
+      padding-left: max(24px, env(safe-area-inset-left));
+      padding-right: max(24px, env(safe-area-inset-right));
+      padding-top: max(24px, env(safe-area-inset-top));
+      padding-bottom: max(24px, env(safe-area-inset-bottom));
       overflow-x: hidden;
       box-sizing: border-box;
       position: relative;
@@ -64,20 +65,27 @@ export class DailyFeedApp extends LitElement {
       gap: 16px;
     }
 
+    /* 대형 데스크톱 */
+    @media (min-width: 1400px) {
+      .main-layout {
+        max-width: 1000px;
+      }
+    }
+
     /* 모바일 반응형 */
     @media (max-width: 768px) {
       :host {
-        padding: 12px;
-        padding-left: max(12px, env(safe-area-inset-left));
-        padding-right: max(12px, env(safe-area-inset-right));
-        padding-top: max(12px, env(safe-area-inset-top));
-        padding-bottom: max(12px, env(safe-area-inset-bottom));
         font-size: 16px;
       }
 
       .main-layout {
         flex-direction: column;
         gap: 0;
+        padding: 12px;
+        padding-left: max(12px, env(safe-area-inset-left));
+        padding-right: max(12px, env(safe-area-inset-right));
+        padding-top: max(12px, env(safe-area-inset-top));
+        padding-bottom: max(12px, env(safe-area-inset-bottom));
       }
 
       .main-content {
@@ -92,17 +100,17 @@ export class DailyFeedApp extends LitElement {
     /* 태블릿 반응형 */
     @media (min-width: 769px) and (max-width: 1024px) {
       :host {
-        padding: 20px;
-        padding-left: max(20px, env(safe-area-inset-left));
-        padding-right: max(20px, env(safe-area-inset-right));
-        padding-top: max(20px, env(safe-area-inset-top));
-        padding-bottom: max(20px, env(safe-area-inset-bottom));
         font-size: 17px;
       }
 
       .main-layout {
         flex-direction: column;
         gap: 0;
+        padding: 20px;
+        padding-left: max(20px, env(safe-area-inset-left));
+        padding-right: max(20px, env(safe-area-inset-right));
+        padding-top: max(20px, env(safe-area-inset-top));
+        padding-bottom: max(20px, env(safe-area-inset-bottom));
       }
 
       .main-content {

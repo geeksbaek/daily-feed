@@ -88,12 +88,15 @@ export class DateSelector extends LitElement {
   formatDateForDisplay(dateString) {
     try {
       const date = new Date(dateString);
-      return date.toLocaleDateString('ko-KR', {
+      const formatted = date.toLocaleDateString('ko-KR', {
         year: 'numeric',
         month: 'long',
-        day: 'numeric',
+        day: 'numeric'
+      });
+      const weekday = date.toLocaleDateString('ko-KR', {
         weekday: 'short'
       });
+      return `${formatted} (${weekday})`;
     } catch {
       return dateString;
     }
