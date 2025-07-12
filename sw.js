@@ -1,10 +1,17 @@
-const CACHE_NAME = 'daily-feed-v1';
+const CACHE_NAME = 'daily-feed-lit-v1';
 const urlsToCache = [
   '/daily-feed/',
   '/daily-feed/index.html',
-  '/daily-feed/style.css',
-  '/daily-feed/script.js',
+  '/daily-feed/components/daily-feed-app.js',
+  '/daily-feed/components/feed-header.js',
+  '/daily-feed/components/date-selector.js',
+  '/daily-feed/components/preset-tabs.js',
+  '/daily-feed/components/status-display.js',
+  '/daily-feed/components/content-viewer.js',
+  '/daily-feed/components/app-footer.js',
   '/daily-feed/manifest.json',
+  'https://unpkg.com/lit@3/index.js',
+  'https://unpkg.com/lit@3/directives/unsafe-html.js',
   'https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css',
   'https://cdn.jsdelivr.net/npm/marked@9.1.6/marked.min.js',
   'https://cdn.jsdelivr.net/npm/dompurify@3.0.5/dist/purify.min.js'
