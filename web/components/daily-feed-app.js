@@ -9,7 +9,8 @@ export class DailyFeedApp extends LitElement {
     isOffline: { type: Boolean },
     statusMessage: { type: String },
     statusType: { type: String },
-    showStatus: { type: Boolean }
+    showStatus: { type: Boolean },
+    isLoading: { type: Boolean }
   };
 
   static styles = css`
@@ -110,6 +111,72 @@ export class DailyFeedApp extends LitElement {
         padding: 24px 24px 0 24px;
       }
     }
+
+    /* 전체 화면 로딩 오버레이 */
+    .loading-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: var(--bg-primary);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      opacity: 1;
+      transition: opacity 0.3s ease;
+    }
+
+    .loading-overlay.hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .loading-spinner {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+
+    .loading-dot {
+      width: 12px;
+      height: 12px;
+      background-color: var(--accent-color);
+      border-radius: 50%;
+      animation: loading-pulse 1.5s ease-in-out infinite;
+    }
+
+    .loading-dot:nth-child(1) {
+      animation-delay: -0.3s;
+    }
+
+    .loading-dot:nth-child(2) {
+      animation-delay: -0.15s;
+    }
+
+    .loading-dot:nth-child(3) {
+      animation-delay: 0s;
+    }
+
+    .loading-text {
+      color: var(--text-secondary);
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    @keyframes loading-pulse {
+      0%, 80%, 100% {
+        transform: scale(0.8);
+        opacity: 0.5;
+      }
+      40% {
+        transform: scale(1.2);
+        opacity: 1;
+      }
+    }
   `;
 
   constructor() {
@@ -122,6 +189,7 @@ export class DailyFeedApp extends LitElement {
     this.statusMessage = '';
     this.statusType = 'loading';
     this.showStatus = false;
+    this.isLoading = true;
   }
 
   connectedCallback() {
@@ -133,6 +201,16 @@ export class DailyFeedApp extends LitElement {
 
   render() {
     return html`
+      <!-- 전체 화면 로딩 오버레이 -->
+      <div class="loading-overlay ${this.isLoading ? '' : 'hidden'}">
+        <div class="loading-spinner">
+          <div class="loading-dot"></div>
+          <div class="loading-dot"></div>
+          <div class="loading-dot"></div>
+        </div>
+        <div class="loading-text">Daily Feed를 불러오는 중...</div>
+      </div>
+
       <main>
         <div class="main-layout">
           <div class="main-content">
@@ -218,8 +296,14 @@ export class DailyFeedApp extends LitElement {
         this.showStatusMessage('아직 생성된 요약이 없습니다.', 'error');
       }
       
+      // 로딩 완료
+      this.isLoading = false;
+      
     } catch (error) {
       console.error('날짜 목록 로드 실패:', error);
+      
+      // 오류 발생 시에도 로딩 숨김
+      this.isLoading = false;
       
       if (error.message === 'OFFLINE') {
         this.showStatusMessage('오프라인 상태입니다. 캐시된 데이터가 없습니다.', 'error');
