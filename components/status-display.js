@@ -15,31 +15,66 @@ export class StatusDisplay extends LitElement {
     .status {
       padding: 16px;
       margin-bottom: 16px;
-      border-radius: 6px;
+      border-radius: 8px;
       border: 1px solid var(--border-secondary);
       display: none;
+      align-items: center;
+      gap: 12px;
+      font-size: 15px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     }
 
     .status.show {
-      display: block;
+      display: flex;
     }
 
     .status.loading {
-      background-color: #ddf4ff;
-      border-color: #54aeff;
-      color: #0969da;
+      background-color: var(--status-loading-bg);
+      border-color: var(--status-loading-border);
+      color: var(--status-loading-text);
     }
 
     .status.error {
-      background-color: #ffebe9;
-      border-color: #ff818266;
-      color: #d1242f;
+      background-color: var(--status-error-bg);
+      border-color: var(--status-error-border);
+      color: var(--status-error-text);
     }
 
     .status.offline {
-      background-color: #fff3cd;
-      border-color: #ffeaa7;
-      color: #856404;
+      background-color: var(--status-offline-bg);
+      border-color: var(--status-offline-border);
+      color: var(--status-offline-text);
+    }
+
+    .spinner {
+      width: 20px;
+      height: 20px;
+      border: 2px solid transparent;
+      border-top: 2px solid currentColor;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      flex-shrink: 0;
+    }
+
+    .icon {
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .message {
+      line-height: 1.4;
     }
   `;
 
@@ -51,9 +86,23 @@ export class StatusDisplay extends LitElement {
   }
 
   render() {
+    const getIcon = () => {
+      switch (this.type) {
+        case 'loading':
+          return html`<div class="spinner"></div>`;
+        case 'error':
+          return html`<div class="icon">⚠️</div>`;
+        case 'offline':
+          return html`<div class="icon">📡</div>`;
+        default:
+          return html`<div class="spinner"></div>`;
+      }
+    };
+
     return html`
       <div class="status ${this.type} ${this.show ? 'show' : ''}">
-        ${this.message}
+        ${getIcon()}
+        <div class="message">${this.message}</div>
       </div>
     `;
   }
