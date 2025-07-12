@@ -62,8 +62,6 @@ export class DailyFeedApp extends LitElement {
       justify-content: flex-end;
       align-items: flex-start;
       gap: 16px;
-      margin-bottom: 24px;
-      min-height: 60px; /* 레이아웃 쉬프트 방지 */
     }
 
     /* 모바일 반응형 */
@@ -87,8 +85,7 @@ export class DailyFeedApp extends LitElement {
       }
 
       .controls-row {
-        flex-direction: column;
-        gap: 16px;
+        gap: 12px;
       }
     }
 
