@@ -29,6 +29,7 @@ marked.setOptions({ renderer: renderer });
 // 초기화
 document.addEventListener('DOMContentLoaded', function() {
     setupEventListeners();
+    setupMobileOptimizations();
     setupOfflineHandlers();
     loadAvailableDates();
 });
@@ -49,6 +50,35 @@ function setupEventListeners() {
         }
         
     });
+}
+
+// 모바일 UX 최적화
+function setupMobileOptimizations() {
+    // 더블 탭 줌 방지
+    let lastTouchEnd = 0;
+    document.addEventListener('touchend', function (event) {
+        const now = (new Date()).getTime();
+        if (now - lastTouchEnd <= 300) {
+            event.preventDefault();
+        }
+        lastTouchEnd = now;
+    }, false);
+    
+    // iOS Safari에서 바운스 스크롤 방지 (선택적)
+    document.addEventListener('touchmove', function(e) {
+        // 스크롤 가능한 요소가 아닌 경우에만 방지
+        if (!e.target.closest('.sidebar, .main-content, .date-list, .preset-tabs')) {
+            e.preventDefault();
+        }
+    }, { passive: false });
+    
+    // 상태바 색상 동적 변경 (다크모드 지원)
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        const metaThemeColor = document.querySelector('meta[name="theme-color"]');
+        if (metaThemeColor) {
+            metaThemeColor.setAttribute('content', '#1a202c');
+        }
+    }
 }
 
 // 오프라인 이벤트 핸들러 설정

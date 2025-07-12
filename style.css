@@ -3,6 +3,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* 모바일 터치 최적화 */
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* 텍스트는 선택 가능하도록 */
+p, span, div, h1, h2, h3, h4, h5, h6, li, td, th, .markdown-content * {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
 }
 
 body {
@@ -18,6 +33,13 @@ body {
     letter-spacing: -0.005em;
     word-break: keep-all;
     overflow-wrap: break-word;
+    /* 모바일 앱 최적화 */
+    -webkit-overflow-scrolling: touch;
+    /* 노치(Safe Area) 대응 */
+    padding-left: max(24px, env(safe-area-inset-left));
+    padding-right: max(24px, env(safe-area-inset-right));
+    padding-top: max(24px, env(safe-area-inset-top));
+    padding-bottom: max(24px, env(safe-area-inset-bottom));
 }
 
 /* 헤더 */
@@ -88,11 +110,23 @@ header p {
     transition: all 0.2s ease;
     border: 1px solid transparent;
     font-weight: 500;
+    /* 터치 최적화 */
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    -webkit-tap-highlight-color: rgba(66, 153, 225, 0.1);
+    position: relative;
 }
 
 .date-item:hover {
     background-color: #f7fafc;
     color: #2d3748;
+}
+
+/* 터치 액티브 상태 */
+.date-item:active {
+    transform: scale(0.98);
+    background-color: #e2e8f0;
 }
 
 .date-item.active {
@@ -132,11 +166,24 @@ header p {
     white-space: nowrap;
     transition: all 0.2s ease;
     letter-spacing: -0.01em;
+    /* 터치 최적화 */
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-tap-highlight-color: rgba(66, 153, 225, 0.1);
+    position: relative;
 }
 
 .tab-button:hover {
     color: #2d3748;
     background-color: #f7fafc;
+}
+
+/* 터치 액티브 상태 */
+.tab-button:active {
+    transform: scale(0.98);
+    background-color: #e2e8f0;
 }
 
 .tab-button.active {
@@ -454,10 +501,46 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/* 스크롤바 스타일링 (웹킷 기반 브라우저) */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* 모바일에서 스크롤바 숨김 */
+@media (max-width: 768px) {
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    
+    * {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+}
+
 /* 반응형 */
 @media (max-width: 768px) {
     body {
-        padding: 8px;
+        padding: 12px;
+        padding-left: max(12px, env(safe-area-inset-left));
+        padding-right: max(12px, env(safe-area-inset-right));
+        padding-top: max(12px, env(safe-area-inset-top));
+        padding-bottom: max(12px, env(safe-area-inset-bottom));
+        font-size: 16px;
     }
     
     .main-layout {
@@ -474,27 +557,46 @@ footer a:hover {
     
     .date-list {
         flex-direction: row;
-        flex-wrap: wrap;
+        overflow-x: auto;
         gap: 8px;
+        padding-bottom: 8px;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+    
+    .date-list::-webkit-scrollbar {
+        display: none;
     }
     
     .date-item {
-        flex: 1;
+        flex: 0 0 auto;
         text-align: center;
-        min-width: 120px;
+        min-width: 140px;
+        white-space: nowrap;
+        justify-content: center;
     }
     
     .preset-tabs {
-        flex-wrap: wrap;
-        border-bottom: none;
+        overflow-x: auto;
+        border-bottom: 1px solid #d0d7de;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        padding-bottom: 0;
+    }
+    
+    .preset-tabs::-webkit-scrollbar {
+        display: none;
     }
     
     .tab-button {
-        flex: 1;
-        min-width: 0;
-        border-bottom: 1px solid #d0d7de;
-        border-radius: 6px 6px 0 0;
-        margin-bottom: 8px;
+        flex: 0 0 auto;
+        min-width: 100px;
+        border-bottom: 3px solid transparent;
+        border-radius: 0;
+        margin-bottom: 0;
+        padding: 16px 24px;
     }
     
     .tab-button.active {
