@@ -164,14 +164,14 @@ export class DailyFeedApp extends LitElement {
       animation-delay: 0s;
     }
 
-    .skeleton-tabs {
-      height: 44px;
+    .skeleton-preset-selector {
+      height: 32px;
+      width: 140px;
       border-radius: 6px;
-      flex: 1;
     }
 
-    .skeleton-selector {
-      height: 44px;
+    .skeleton-date-selector {
+      height: 32px;
       width: 200px;
       border-radius: 6px;
     }
@@ -191,7 +191,7 @@ export class DailyFeedApp extends LitElement {
     this.allDates = [];
     this.currentData = {};
     this.selectedDate = null;
-    this.currentPreset = 'default';
+    this.currentPreset = this.loadPresetFromStorage();
     this.isOffline = false;
     this.statusMessage = '';
     this.statusType = 'loading';
@@ -214,8 +214,8 @@ export class DailyFeedApp extends LitElement {
             <div class="controls-row">
               ${this.isLoading ? html`
                 <!-- 스켈레톤 로딩 -->
-                <div class="skeleton skeleton-tabs"></div>
-                <div class="skeleton skeleton-selector"></div>
+                <div class="skeleton skeleton-preset-selector"></div>
+                <div class="skeleton skeleton-date-selector"></div>
               ` : html`
                 <!-- 실제 컨트롤 -->
                 <preset-tabs 
@@ -274,6 +274,32 @@ export class DailyFeedApp extends LitElement {
 
   handlePresetChange(e) {
     this.currentPreset = e.detail.preset;
+    
+    // 선택한 프리셋을 로컬 스토리지에 저장
+    this.savePresetToStorage(this.currentPreset);
+  }
+
+  loadPresetFromStorage() {
+    try {
+      const savedPreset = localStorage.getItem('daily-feed-preset');
+      const validPresets = ['default', 'developer', 'casual', 'community'];
+      
+      if (savedPreset && validPresets.includes(savedPreset)) {
+        return savedPreset;
+      }
+    } catch (error) {
+      console.warn('프리셋 로드 실패:', error);
+    }
+    
+    return 'default'; // 기본값
+  }
+
+  savePresetToStorage(preset) {
+    try {
+      localStorage.setItem('daily-feed-preset', preset);
+    } catch (error) {
+      console.warn('프리셋 저장 실패:', error);
+    }
   }
 
   showStatusMessage(message, type = 'loading') {

@@ -10,113 +10,37 @@ export class PresetTabs extends LitElement {
       display: block;
     }
 
-    .preset-tabs {
-      display: flex;
-      margin-bottom: 0;
-      border-bottom: 1px solid var(--border-secondary);
-      overflow-x: auto;
-      flex: 1;
-    }
-
-    .tab-button {
-      padding: 14px 20px;
-      background: none;
-      border: none;
-      border-bottom: 3px solid transparent;
-      cursor: pointer;
-      font-size: 16px;
-      font-weight: 600;
-      color: var(--text-secondary);
-      white-space: nowrap;
-      transition: all 0.2s ease;
-      letter-spacing: -0.01em;
-      min-height: 44px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      -webkit-tap-highlight-color: rgba(66, 153, 225, 0.1);
+    .preset-selector {
       position: relative;
     }
 
-    .tab-button:hover {
-      color: var(--text-primary);
+    .preset-select {
+      padding: 6px 12px;
+      background-color: var(--bg-primary);
+      border: 1px solid var(--border-secondary);
+      border-radius: 6px;
+      font-size: 13px;
+      color: var(--text-tertiary);
+      cursor: pointer;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+      background-position: right 8px center;
+      background-repeat: no-repeat;
+      background-size: 12px;
+      padding-right: 32px;
+      min-width: 140px;
+      transition: all 0.2s ease;
+    }
+
+    .preset-select:hover {
+      border-color: var(--accent-color);
       background-color: var(--bg-secondary);
     }
 
-    .tab-button:active {
-      transform: scale(0.98);
-      background-color: var(--border-primary);
-    }
-
-    .tab-button.active {
-      color: var(--accent-color);
-      border-bottom-color: var(--accent-color);
-      font-weight: 700;
-    }
-
-    /* 태블릿 반응형 */
-    @media (min-width: 769px) and (max-width: 1024px) {
-      .preset-tabs {
-        gap: 8px;
-        margin-bottom: 0;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        border-bottom: none;
-      }
-      
-      .tab-button {
-        min-width: 120px;
-        padding: 16px 24px;
-        font-size: 17px;
-        border-radius: 8px;
-        border-bottom: none;
-        background-color: var(--bg-secondary);
-        border: 1px solid var(--border-primary);
-        margin-bottom: 0;
-        transition: all 0.2s ease;
-      }
-      
-      .tab-button:hover {
-        background-color: var(--border-primary);
-        border-color: var(--border-secondary);
-      }
-      
-      .tab-button.active {
-        background-color: var(--accent-color);
-        color: white;
-        border-color: var(--accent-color);
-        border-bottom-color: var(--accent-color);
-        box-shadow: 0 2px 4px rgba(66, 153, 225, 0.2);
-      }
-    }
-
-    /* 모바일 반응형 */
-    @media (max-width: 768px) {
-      .preset-tabs {
-        overflow-x: auto;
-        border-bottom: 1px solid var(--border-secondary);
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
-        -ms-overflow-style: none;
-        padding-bottom: 0;
-      }
-      
-      .preset-tabs::-webkit-scrollbar {
-        display: none;
-      }
-      
-      .tab-button {
-        flex: 0 0 auto;
-        min-width: 100px;
-        border-bottom: 3px solid transparent;
-        border-radius: 0;
-        margin-bottom: 0;
-        padding: 16px 24px;
-      }
-      
-      .tab-button.active {
-        border-bottom-color: var(--accent-color);
-      }
+    .preset-select:focus {
+      outline: none;
+      border-color: var(--accent-color);
+      box-shadow: 0 0 0 2px rgba(66, 153, 225, 0.1);
     }
   `;
 
@@ -134,23 +58,22 @@ export class PresetTabs extends LitElement {
     ];
 
     return html`
-      <div class="preset-tabs">
-        ${presets.map(preset => html`
-          <button 
-            class="tab-button ${preset.key === this.currentPreset ? 'active' : ''}"
-            data-preset=${preset.key}
-            @click=${() => this.handlePresetClick(preset.key)}
-          >
-            ${preset.label}
-          </button>
-        `)}
+      <div class="preset-selector">
+        <select class="preset-select" @change=${this.handlePresetChange}>
+          ${presets.map(preset => html`
+            <option value=${preset.key} ?selected=${preset.key === this.currentPreset}>
+              ${preset.label}
+            </option>
+          `)}
+        </select>
       </div>
     `;
   }
 
-  handlePresetClick(preset) {
+  handlePresetChange(e) {
+    const newPreset = e.target.value;
     this.dispatchEvent(new CustomEvent('preset-changed', {
-      detail: { preset },
+      detail: { preset: newPreset },
       bubbles: true
     }));
   }
