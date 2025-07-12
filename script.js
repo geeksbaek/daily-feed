@@ -182,10 +182,6 @@ function displayContent() {
                 <div class="markdown-content">
                     ${renderMarkdown(data.summary)}
                 </div>
-                <div class="articles-section">
-                    <h3>관련 기사</h3>
-                    ${renderArticles(data.articles)}
-                </div>
             </div>
         `;
     });
@@ -257,24 +253,6 @@ function processFootnotes(content) {
     return processedContent;
 }
 
-// 기사 목록 렌더링
-function renderArticles(articles) {
-    if (!articles || articles.length === 0) {
-        return '<p>관련 기사가 없습니다.</p>';
-    }
-    
-    return articles.map(article => `
-        <div class="article-item">
-            <div class="article-title">
-                <a href="${article.link}" target="_blank" rel="noopener noreferrer">${escapeHtml(article.title)}</a>
-            </div>
-            <div class="article-meta">
-                ${article.source} • ${article.category} • ${formatDateForDisplay(article.publishedAt)}
-            </div>
-            ${article.description ? `<div class="article-description">${escapeHtml(truncateText(article.description, 100))}</div>` : ''}
-        </div>
-    `).join('');
-}
 
 
 // 상태 메시지 표시
