@@ -1,0 +1,52 @@
+name: Daily Feed Generation
+
+on:
+  schedule:
+    # 매일 새벽 2시 (한국 시간) = UTC 17시
+    - cron: '0 17 * * *'
+  # 수동 실행 가능
+  workflow_dispatch:
+
+jobs:
+  generate-feeds:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: '1.23'
+
+      - name: Cache Go modules
+        uses: actions/cache@v3
+        with:
+          path: ~/go/pkg/mod
+          key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum') }}
+          restore-keys: |
+            ${{ runner.os }}-go-
+
+      - name: Generate daily feeds (4 presets)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          echo "Starting daily feed generation..."
+          go run cmd/generate/main.go
+
+      - name: Commit and push generated data
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "Daily Feed Bot"
+          
+          # 변경사항이 있는지 확인
+          if [ -n "$(git status --porcelain)" ]; then
+            git add data/
+            git commit -m "🤖 Daily feed: $(date +%Y-%m-%d)"
+            git push
+          else
+            echo "No changes to commit"
+          fi

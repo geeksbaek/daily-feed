@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Feed - AI 기반 기술 뉴스 요약</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked@9.1.6/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.5/dist/purify.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Daily Feed</h1>
+        <p>AI 기반 기술 뉴스 요약</p>
+    </header>
+
+    <main>
+        <!-- 간단한 네비게이션 -->
+        <nav>
+            <label for="date-select">날짜:</label>
+            <select id="date-select">
+                <option>로딩중...</option>
+            </select>
+            
+            <label for="preset-select">프리셋:</label>
+            <select id="preset-select">
+                <option value="all">전체</option>
+                <option value="default">Default</option>
+                <option value="developer">Developer</option>
+                <option value="casual">Casual</option>
+                <option value="community">Community</option>
+            </select>
+            
+            <input type="text" id="search-input" placeholder="검색">
+            <button id="search-btn">검색</button>
+        </nav>
+
+        <!-- 상태 메시지 -->
+        <div id="status" style="display: none;"></div>
+
+        <!-- 요약 내용 -->
+        <div id="content">
+            <p>데이터를 불러오는 중...</p>
+        </div>
+    </main>
+
+    <footer>
+        <hr>
+        <p>Daily Feed | GitHub Actions + Gemini AI | <a href="https://github.com/jongyeol/daily-feed">GitHub</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

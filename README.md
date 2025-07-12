@@ -1,212 +1,111 @@
-# Daily Feed
+# Daily Feed Web
 
-AI 기반 RSS/Atom 피드 수집 및 요약 도구
+AI 기반 RSS/Atom 피드 수집 및 요약 도구의 웹 버전입니다.
 
-## 프로젝트 구조
+## 🌟 주요 특징
+
+- **100% 무료**: GitHub Actions + GitHub Pages
+- **자동화**: 매일 새벽 2시 자동 실행
+- **4가지 프리셋**: Default, Developer, Casual, Community
+- **GitHub Flavored Markdown**: 완벽한 마크다운 지원
+- **단순한 UI**: 텍스트 중심의 깔끔한 인터페이스
+
+## 🏗️ 아키텍처
 
 ```
-daily-feed/
-├── internal/
-│   ├── app/          # 애플리케이션 진입점
-│   └── logger/       # 로깅 인터페이스
-├── pkg/
-│   ├── models/       # 데이터 모델
-│   ├── config/       # 설정 관리
-│   ├── feed/         # RSS/Atom 피드 처리
-│   ├── ai/           # AI 요약 및 출력
-│   └── utils/        # 유틸리티 함수
-├── feeds.csv         # RSS/Atom 피드 목록
-└── main.go           # 애플리케이션 진입점
+daily-feed-web/
+├── .github/workflows/
+│   └── daily-feed.yml          # 매일 자동 실행
+├── data/summaries/             # JSON 데이터 저장소
+│   ├── 2025-01-15/
+│   │   ├── default.json
+│   │   ├── developer.json
+│   │   ├── casual.json
+│   │   └── community.json
+│   └── index.json              # 날짜 인덱스
+├── web/                        # 프론트엔드
+│   ├── index.html
+│   ├── style.css
+│   └── script.js
+└── cmd/generate/               # 데이터 생성 도구
 ```
 
-## 주요 개선사항
+## 🚀 배포 방법
 
-### 1. 구조적 개선
-- **패키지 분리**: 관심사별로 명확하게 분리
-- **의존성 주입**: 인터페이스 기반 설계로 테스트 가능성 향상
-- **계층 분리**: 비즈니스 로직과 인프라 계층 분리
+### 1. 저장소 설정
 
-### 2. 에러 처리 개선
-- **커스텀 에러 타입**: `FeedError`, `ConfigError`, `AIError`
-- **에러 래핑**: `fmt.Errorf`와 `%w` 사용
-- **구체적 에러 메시지**: 상황별 명확한 에러 정보
+1. 이 저장소를 GitHub에 푸시
+2. GitHub Secrets에 `GEMINI_API_KEY` 추가
+3. GitHub Pages 설정: Settings > Pages > Source를 "GitHub Actions"로 설정
 
-### 3. 설정 관리 개선
-- **검증 로직**: `config.Validate()` 메서드
-- **타입 안전성**: 구조체 기반 설정
-- **기본값 처리**: 합리적인 기본값 제공
+### 2. GitHub Actions 워크플로우
 
-### 4. RSS/Atom 피드 지원
-- **RSS 2.0 지원**: 기존 RSS 피드 완벽 지원
-- **Atom 1.0 지원**: Atom 형식 피드 자동 감지 및 파싱
-- **자동 형식 감지**: RSS와 Atom 피드를 자동으로 구분하여 처리
-- **GeekNews 등 다양한 피드 소스 지원**: 한국어 개발 뉴스 서비스 포함
+매일 새벽 2시(한국 시간)에 자동으로 실행되어:
+1. 4가지 프리셋으로 피드 수집 및 AI 요약 생성
+2. JSON 파일로 저장
+3. GitHub Pages에 자동 배포
 
-### 5. 다중 프리셋 시스템
-- **4가지 프리셋**: Developer, Casual, Community, Default
-- **유연한 설정**: 명령행 플래그로 실시간 변경 가능
-- **대상별 최적화**: 독자층에 맞는 톤과 구조
-- **확장 가능**: 새로운 프리셋 쉽게 추가 가능
+### 3. 수동 실행
 
-### 6. 로깅 시스템
-- **인터페이스 기반**: 테스트 가능한 로거
-- **레벨별 로깅**: Info, Error, Fatal
-- **구조화된 로깅**: 일관된 로그 형식
+GitHub Actions 탭에서 "Daily Feed Generation" 워크플로우를 수동으로 실행할 수 있습니다.
 
-### 7. 컨텍스트 처리
-- **취소 가능**: Graceful shutdown 지원
-- **시그널 처리**: SIGINT, SIGTERM 처리
-- **타임아웃**: HTTP 요청 타임아웃 설정
+## 📱 웹 인터페이스
 
-## 사용법
+- **URL**: `https://username.github.io/daily-feed/web/`
+- **기능**:
+  - 날짜별 요약 조회
+  - 프리셋별 필터링
+  - 키워드 검색
+  - GitHub Flavored Markdown 렌더링
+  - 관련 기사 링크
 
-### 빌드 및 실행
-```bash
-# 직접 실행
-go run .
+## 💰 비용
 
-# 또는 빌드 후 실행
-go build -o daily-feed .
-./daily-feed
-```
+- **GitHub Actions**: 월 2,000분 무료 (실제 사용량: ~150분/월)
+- **GitHub Pages**: 100GB 대역폭 무료
+- **총 비용**: **$0/월**
 
-### 출력 방식
-프로그램은 결과를 **표준 출력(stdout)**으로 출력합니다.
+## 🔧 개발
 
 ```bash
-# 표준 출력으로 결과 확인
-./daily-feed
+# 로컬에서 수동 실행 (테스트용)
+export GEMINI_API_KEY="your-key"
+go run cmd/generate/main.go
 
-# 파일로 저장
-./daily-feed > daily-feed-$(date +%Y-%m-%d).md
-
-# 클립보드에 복사 (macOS)
-./daily-feed | pbcopy
-
-# 다른 명령과 파이프라인 연결
-./daily-feed | grep "AI" | head -5
+# 웹 인터페이스 로컬 개발
+cd web
+python -m http.server 8000  # 또는 다른 정적 서버
 ```
 
-### 명령행 옵션
-```bash
-# 기본 실행 (기본값 사용)
-./daily-feed
+## 📊 데이터 구조
 
-# 프리셋 지정
-./daily-feed --preset developer
-./daily-feed --preset casual
-./daily-feed --preset community
-
-# 상세 설정
-./daily-feed --feeds feeds.csv --model gemini-2.5-pro --cutoff 24 --timeout 15 --preset developer
-
-# 피드 파일 변경
-./daily-feed --feeds my-feeds.csv --preset developer
-
-# 도움말 확인
-./daily-feed --help
+```json
+{
+  "date": "2025-01-15",
+  "preset": "developer",
+  "summary": "마크다운 형식의 AI 요약...",
+  "articles": [
+    {
+      "title": "기사 제목",
+      "link": "https://...",
+      "source": "출처",
+      "category": "카테고리",
+      "publishedAt": "2025-01-15T10:00:00Z",
+      "description": "기사 설명"
+    }
+  ],
+  "generatedAt": "2025-01-15T02:00:00Z"
+}
 ```
 
-### 플래그 옵션
-- `--feeds`: RSS/Atom 피드 목록 파일 경로 (기본값: feeds.csv)
-- `--model`: Gemini 모델명 (기본값: gemini-2.5-pro)
-- `--cutoff`: 피드 수집 시간 범위, 시간 단위 (기본값: 24)
-- `--timeout`: HTTP 요청 타임아웃, 초 단위 (기본값: 15)
-- `--preset`: 요약 프리셋 (기본값: default)
+## 🎯 향후 계획
 
-### 환경변수
-```bash
-export GEMINI_API_KEY="your-gemini-api-key"
-```
+- [ ] RSS 피드 생성
+- [ ] 커스텀 도메인 설정
+- [ ] 다크 모드 지원
+- [ ] 북마크 기능
+- [ ] 이메일 구독
 
-### macOS 단축어와 연동
-macOS 단축어 앱에서 "셸 스크립트 실행" 액션을 사용하여 연동할 수 있습니다:
+## 📄 라이선스
 
-```bash
-cd /Users/your-username/path/to/daily-feed
-source ~/.zshrc  # 환경변수 로드
-./daily-feed --preset casual | pbcopy  # 원하는 프리셋으로 실행 후 클립보드에 복사
-```
-
-## 요약 프리셋
-
-Daily Feed는 다양한 독자층을 위한 4가지 요약 프리셋을 제공합니다:
-
-### 🚀 Developer (`--preset developer`)
-**대상**: 소프트웨어 개발자, 엔지니어  
-**특징**: 실무에 바로 활용 가능한 기술적 정보
-- 새로운 개발 도구, 프레임워크, 라이브러리
-- 클라우드, API, 개발 플랫폼 업데이트
-- 보안 이슈, 성능 개선, 베스트 프랙티스
-- 개발자가 읽어볼 만한 기술 아티클과 리소스
-- 실용적인 개발 팁
-
-**[샘플 보기](samples/gemini-2.5-pro/summary_developer.md)**
-
-### 🗞️ Casual (`--preset casual`)
-**대상**: 일반 기술 관심자  
-**특징**: 친구가 카톡으로 보내는 것 같은 편안한 기술 소식
-- 자연스러운 대화체 사용 ("이거 진짜 신기하다")
-- 개인적 해석과 흥미로운 포인트 강조
-- 때로는 비판적이거나 의외의 관점도 제시
-- 생생하고 개성 있는 관점 제공
-
-**[샘플 보기](samples/gemini-2.5-pro/summary_casual.md)**
-
-### 💬 Community (`--preset community`)
-**대상**: 커뮤니티 활동 베테랑, 밈 문화 애호가  
-**특징**: 인터넷 커뮤니티 특유의 은어와 밈을 활용한 날카로운 기술 소식
-- 디시인사이드, 클리앙, 레딧 등 커뮤니티 말투 완벽 구현
-- 냉소적이면서도 정확한 분석과 예리한 통찰력
-- "ㅋㅋㅋ", "ㄹㅇ", "갓", "레전드", "팩트" 등 커뮤니티 은어 활용
-- 적절한 비꼬기와 츤데레식 표현으로 재미와 정보 전달 양립
-
-**[샘플 보기](samples/gemini-2.5-pro/summary_community.md)**
-
-### 🎓 Default (`--preset default`)
-**대상**: 대학생, 일반 성인  
-**특징**: 3-5분 안에 읽을 수 있는 균형잡힌 기술 뉴스
-- 대학생 수준의 적절한 언어 사용
-- 전문용어는 간단한 설명과 함께 제공
-- 실용적 의미와 트렌드에 집중
-- 자연스럽고 읽기 편한 문체
-
-**[샘플 보기](samples/gemini-2.5-pro/summary_default.md)**
-
-## 지원 피드 형식
-
-Daily Feed는 다음과 같은 피드 형식을 지원합니다:
-
-### RSS 2.0
-- 표준 RSS 2.0 형식
-- GitHub Blog, Microsoft AI Blog 등 대부분의 기술 블로그
-
-### Atom 1.0
-- W3C Atom 1.0 표준
-- GeekNews 등 한국 기술 뉴스 사이트
-- 자동 감지 및 파싱으로 별도 설정 불필요
-
-### 피드 목록 (feeds.csv)
-현재 지원하는 주요 피드들:
-- **한국 기술 뉴스**: GeekNews (news.hada.io)
-- **글로벌 기술 기업**: Google, Microsoft, Amazon, GitHub, Meta
-- **개발 도구**: Docker, Kubernetes, VS Code, JetBrains
-- **프로그래밍 언어**: Go, Java, Python, TypeScript, Swift, Kotlin
-- **클라우드 플랫폼**: AWS, Google Cloud, Azure, Cloudflare
-- **AI/ML**: OpenAI, Anthropic, Hugging Face, Stability AI
-
-## 아키텍처 원칙
-
-1. **단일 책임 원칙**: 각 패키지는 하나의 책임만 가짐
-2. **의존성 역전**: 인터페이스에 의존, 구체 타입에 의존하지 않음
-3. **개방-폐쇄 원칙**: 확장에는 열려있고 수정에는 닫혀있음
-4. **에러 처리**: 모든 에러는 적절히 처리되고 전파됨
-5. **테스트 가능성**: 모든 컴포넌트가 독립적으로 테스트 가능
-
-## 코드 품질
-
-- **Go 관례 준수**: 표준 Go 프로젝트 구조
-- **타입 안전성**: 강타입 언어의 장점 활용
-- **메모리 효율성**: 채널과 고루틴을 활용한 동시성
-- **에러 처리**: Go의 명시적 에러 처리 패턴
-- **문서화**: 패키지와 함수별 명확한 문서화
+MIT License
