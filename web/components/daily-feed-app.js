@@ -125,6 +125,9 @@ export class DailyFeedApp extends LitElement {
       min-height: 400px;
       border-radius: 8px;
       margin-top: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .skeleton-loading-text {
@@ -132,8 +135,6 @@ export class DailyFeedApp extends LitElement {
       color: var(--text-secondary);
       font-size: 16px;
       font-weight: 500;
-      margin-top: 100px;
-      position: relative;
     }
 
     .skeleton-dots {
