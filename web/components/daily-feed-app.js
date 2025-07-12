@@ -12,7 +12,8 @@ export class DailyFeedApp extends LitElement {
     showStatus: { type: Boolean },
     isLoading: { type: Boolean },
     notificationEnabled: { type: Boolean },
-    notificationPermission: { type: String }
+    notificationPermission: { type: String },
+    isRefreshing: { type: Boolean }
   };
 
   static styles = css`
@@ -202,6 +203,7 @@ export class DailyFeedApp extends LitElement {
     this.lastKnownDates = [];
     this.notificationPermission = 'default';
     this.notificationEnabled = false;
+    this.isRefreshing = false;
   }
 
   connectedCallback() {
@@ -240,6 +242,11 @@ export class DailyFeedApp extends LitElement {
                   .permission=${this.notificationPermission}
                   @notification-toggle=${this.handleNotificationToggle}
                 ></notification-toggle>
+                
+                <refresh-button
+                  .isRefreshing=${this.isRefreshing}
+                  @force-refresh=${this.handleForceRefresh}
+                ></refresh-button>
               </div>
               
               <div class="controls-right">
@@ -269,6 +276,8 @@ export class DailyFeedApp extends LitElement {
           </div>
         </div>
       </main>
+      
+      <toast-notification id="toast"></toast-notification>
       
       <app-footer></app-footer>
     `;
@@ -322,6 +331,63 @@ export class DailyFeedApp extends LitElement {
     }
   }
 
+  async handleForceRefresh() {
+    if (this.isRefreshing) return;
+
+    this.isRefreshing = true;
+    
+    try {
+      this.showStatusMessage('캐시를 지우고 새로고침하는 중...', 'loading');
+      
+      // 모든 캐시 제거
+      await this.clearAllCaches();
+      
+      // 강제로 새 데이터 로드
+      await this.loadAvailableDates();
+      
+      // Toast로 성공 메시지 표시
+      this.showToast('새로고침 완료!', 'success');
+      
+      this.hideStatus();
+      
+    } catch (error) {
+      console.error('강제 새로고침 실패:', error);
+      this.showStatusMessage('새로고침 중 오류가 발생했습니다.', 'error');
+    } finally {
+      this.isRefreshing = false;
+    }
+  }
+
+  async clearAllCaches() {
+    try {
+      // 로컬 스토리지에서 캐시 데이터 제거 (설정은 유지)
+      const keysToRemove = [];
+      for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+        if (key && (key.startsWith('daily-feed-cache') || key.startsWith('daily-feed-2'))) {
+          keysToRemove.push(key);
+        }
+      }
+      
+      keysToRemove.forEach(key => {
+        localStorage.removeItem(key);
+      });
+      
+      // 브라우저 캐시 제거 (가능한 경우)
+      if ('caches' in window) {
+        const cacheNames = await caches.keys();
+        await Promise.all(
+          cacheNames.map(cacheName => caches.delete(cacheName))
+        );
+      }
+      
+      console.log('모든 캐시가 제거되었습니다.');
+      
+    } catch (error) {
+      console.warn('캐시 제거 중 일부 오류 발생:', error);
+    }
+  }
+
   loadPresetFromStorage() {
     try {
       const savedPreset = localStorage.getItem('daily-feed-preset');
@@ -353,6 +419,13 @@ export class DailyFeedApp extends LitElement {
 
   hideStatus() {
     this.showStatus = false;
+  }
+
+  showToast(message, type = 'success', autoHide = true, duration = 3000) {
+    const toast = this.shadowRoot.getElementById('toast');
+    if (toast) {
+      toast.showToast(message, type, autoHide, duration);
+    }
   }
 
   // 기존 script.js의 함수들을 이곳으로 이식
@@ -490,7 +563,7 @@ export class DailyFeedApp extends LitElement {
   setupOfflineHandlers() {
     window.addEventListener('online', () => {
       this.isOffline = false;
-      this.showStatusMessage('온라인 상태로 변경되었습니다. 데이터를 새로고침합니다.', 'loading');
+      this.showToast('온라인 상태로 복원되었습니다', 'success');
       setTimeout(() => {
         this.loadAvailableDates();
       }, 1000);
@@ -498,7 +571,7 @@ export class DailyFeedApp extends LitElement {
     
     window.addEventListener('offline', () => {
       this.isOffline = true;
-      this.showStatusMessage('오프라인 상태입니다. 캐시된 데이터를 사용합니다.', 'offline');
+      this.showToast('오프라인 상태입니다', 'offline', true, 5000);
     });
     
     this.isOffline = !navigator.onLine;
