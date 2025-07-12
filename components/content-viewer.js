@@ -36,11 +36,6 @@ export class ContentViewer extends LitElement {
       border-bottom: 1px solid #d0d7de;
     }
 
-    .summary-meta {
-      font-size: 14px;
-      color: #656d76;
-      margin-bottom: 16px;
-    }
 
     /* GitHub Flavored Markdown 스타일 */
     .markdown-content {
@@ -326,9 +321,6 @@ export class ContentViewer extends LitElement {
     return html`
       <div class="content">
         <div class="summary-section">
-          <div class="summary-meta">
-            ${this.formatDateForDisplay(selectedData.date)} • ${selectedData.articles.length}개 기사
-          </div>
           <div class="markdown-content">
             ${unsafeHTML(this.renderMarkdown(selectedData.summary))}
           </div>
@@ -412,19 +404,6 @@ export class ContentViewer extends LitElement {
     return div.innerHTML;
   }
 
-  formatDateForDisplay(dateString) {
-    try {
-      const date = new Date(dateString);
-      return date.toLocaleDateString('ko-KR', {
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric',
-        weekday: 'short'
-      });
-    } catch {
-      return dateString;
-    }
-  }
 }
 
 customElements.define('content-viewer', ContentViewer);
