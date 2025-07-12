@@ -4,7 +4,7 @@ let currentData = {};
 
 // DOM 요소
 const dateList = document.getElementById('date-list');
-let currentPreset = 'all';
+let currentPreset = 'default';
 let selectedDate = null;
 const statusDiv = document.getElementById('status');
 const contentDiv = document.getElementById('content');
@@ -154,15 +154,7 @@ function displayContent() {
     
     // 프리셋 필터링
     let summariesToShow = [];
-    if (selectedPreset === 'all') {
-        // 모든 프리셋을 순서대로 표시
-        const order = ['default', 'developer', 'casual', 'community'];
-        order.forEach(preset => {
-            if (summaries[preset]) {
-                summariesToShow.push([preset, summaries[preset]]);
-            }
-        });
-    } else if (summaries[selectedPreset]) {
+    if (summaries[selectedPreset]) {
         summariesToShow = [[selectedPreset, summaries[selectedPreset]]];
     }
     
