@@ -227,14 +227,14 @@ export class DailyFeedApp extends LitElement {
       
       const basePath = this.getBasePath();
       const presets = ['default', 'developer', 'casual', 'community'];
-      this.currentData = { date: this.selectedDate, summaries: {} };
+      const newData = { date: this.selectedDate, summaries: {} };
       
       const promises = presets.map(async preset => {
         try {
           const response = await fetch(`${basePath}/data/summaries/${this.selectedDate}/${preset}.json`);
           if (response.ok) {
             const data = await response.json();
-            this.currentData.summaries[preset] = data;
+            newData.summaries[preset] = data;
           }
         } catch (error) {
           console.warn(`${preset} 프리셋 로드 실패:`, error);
@@ -242,9 +242,11 @@ export class DailyFeedApp extends LitElement {
       });
       
       await Promise.all(promises);
+      
+      // 새로운 객체로 할당하여 Lit 리액티브 시스템 트리거
+      this.currentData = { ...newData };
       this.saveToLocalStorage();
       this.hideStatus();
-      this.requestUpdate(); // 컴포넌트 강제 리렌더링
       
     } catch (error) {
       console.error('데이터 로드 실패:', error);
@@ -252,9 +254,8 @@ export class DailyFeedApp extends LitElement {
       if (!navigator.onLine || error.message.includes('Failed to fetch')) {
         const cachedData = this.tryLoadDateFromLocalStorage(this.selectedDate);
         if (cachedData) {
-          this.currentData = cachedData;
+          this.currentData = { ...cachedData };
           this.showStatusMessage('오프라인 상태 - 캐시된 데이터를 표시합니다.', 'offline');
-          this.requestUpdate(); // 컴포넌트 강제 리렌더링
           return;
         }
       }
@@ -345,13 +346,12 @@ export class DailyFeedApp extends LitElement {
         const ageHours = (Date.now() - data.timestamp) / (1000 * 60 * 60);
         
         if (ageHours < 24) {
-          this.allDates = data.allDates || [];
-          this.currentData = data.currentData || {};
+          this.allDates = [...(data.allDates || [])];
+          this.currentData = { ...(data.currentData || {}) };
           
           if (this.allDates.length > 0) {
             this.selectedDate = this.allDates[0];
             this.showStatusMessage(`캐시된 데이터를 표시합니다 (${Math.round(ageHours)}시간 전 데이터)`, 'offline');
-            this.requestUpdate(); // 컴포넌트 강제 리렌더링
             return true;
           }
         }
