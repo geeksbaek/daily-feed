@@ -8,12 +8,7 @@ export class AppFooter extends LitElement {
       padding: 32px 0;
       border-top: 1px solid #e2e8f0;
       text-align: center;
-      background-color: #f7fafc;
-      border-radius: 12px;
-      margin-left: -32px;
-      margin-right: -32px;
-      padding-left: 32px;
-      padding-right: 32px;
+      background-color: transparent;
     }
 
     hr {

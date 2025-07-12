@@ -326,7 +326,6 @@ export class ContentViewer extends LitElement {
     return html`
       <div class="content">
         <div class="summary-section">
-          <h2 class="preset-header">${presetLabels[this.preset]}</h2>
           <div class="summary-meta">
             ${this.formatDateForDisplay(selectedData.date)} • ${selectedData.articles.length}개 기사
           </div>
