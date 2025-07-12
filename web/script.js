@@ -281,8 +281,12 @@ function truncateText(text, maxLength) {
 function getBasePath() {
     const path = window.location.pathname;
     
+    // GitHub Pages의 경우: /repository-name/web/에서 접속 시
+    if (path.includes('/daily-feed/web')) {
+        return '/daily-feed';
+    }
     // GitHub Pages의 경우: /repository-name/
-    if (path.includes('/daily-feed')) {
+    else if (path.includes('/daily-feed')) {
         return '/daily-feed';
     }
     
