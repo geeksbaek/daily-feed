@@ -92,9 +92,14 @@ func main() {
 		fmt.Printf("프리셋 '%s' 완료: %d개 기사 처리됨\n", preset, len(articles))
 	}
 	
-	// 인덱스 파일 업데이트
+	// 인덱스 파일 업데이트 (성공한 프리셋이 하나라도 있으면 업데이트)
 	if len(allSummaries) > 0 {
 		if err := updateIndex(today, presets, len(allSummaries[0].Articles)); err != nil {
+			fmt.Printf("인덱스 업데이트 실패: %v\n", err)
+		}
+	} else {
+		// 데이터가 없어도 인덱스는 업데이트 (빈 엔트리라도)
+		if err := updateIndex(today, presets, 0); err != nil {
 			fmt.Printf("인덱스 업데이트 실패: %v\n", err)
 		}
 	}
