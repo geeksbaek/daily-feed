@@ -1,0 +1,28 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- 배경 -->
+  <rect width="512" height="512" rx="80" fill="#4299e1"/>
+  
+  <!-- 메인 아이콘 (뉴스 피드) -->
+  <g fill="white">
+    <!-- 상단 헤더 라인 -->
+    <rect x="96" y="128" width="320" height="24" rx="12"/>
+    
+    <!-- 첫 번째 기사 블록 -->
+    <rect x="96" y="192" width="240" height="16" rx="8"/>
+    <rect x="96" y="220" width="320" height="12" rx="6"/>
+    <rect x="96" y="240" width="280" height="12" rx="6"/>
+    
+    <!-- 두 번째 기사 블록 -->
+    <rect x="96" y="284" width="200" height="16" rx="8"/>
+    <rect x="96" y="312" width="320" height="12" rx="6"/>
+    <rect x="96" y="332" width="240" height="12" rx="6"/>
+    
+    <!-- 세 번째 기사 블록 -->
+    <rect x="96" y="376" width="220" height="16" rx="8"/>
+    <rect x="96" y="404" width="300" height="12" rx="6"/>
+  </g>
+  
+  <!-- AI 표시 -->
+  <circle cx="416" cy="160" r="24" fill="white" opacity="0.9"/>
+  <text x="416" y="168" text-anchor="middle" fill="#4299e1" font-family="Arial, sans-serif" font-size="24" font-weight="bold">AI</text>
+</svg>

@@ -1,0 +1,48 @@
+{
+  "name": "Daily Feed - AI 기술 뉴스",
+  "short_name": "Daily Feed",
+  "description": "AI로 큐레이션된 기술 뉴스 요약 서비스",
+  "start_url": "/daily-feed/",
+  "display": "standalone",
+  "background_color": "#fafbfc",
+  "theme_color": "#4299e1",
+  "orientation": "portrait-primary",
+  "scope": "/daily-feed/",
+  "lang": "ko",
+  "categories": ["news", "productivity", "technology"],
+  "icons": [
+    {
+      "src": "icons/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "icons/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "icons/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshots/desktop.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Daily Feed 데스크톱 화면"
+    },
+    {
+      "src": "screenshots/mobile.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Daily Feed 모바일 화면"
+    }
+  ]
+}

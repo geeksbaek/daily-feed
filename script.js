@@ -1,6 +1,7 @@
 // 전역 변수
 let allDates = [];
 let currentData = {};
+let isOffline = false;
 
 // DOM 요소
 const dateList = document.getElementById('date-list');
@@ -28,6 +29,7 @@ marked.setOptions({ renderer: renderer });
 // 초기화
 document.addEventListener('DOMContentLoaded', function() {
     setupEventListeners();
+    setupOfflineHandlers();
     loadAvailableDates();
 });
 
@@ -49,6 +51,29 @@ function setupEventListeners() {
     });
 }
 
+// 오프라인 이벤트 핸들러 설정
+function setupOfflineHandlers() {
+    // 온라인/오프라인 상태 변경 감지
+    window.addEventListener('online', function() {
+        isOffline = false;
+        showStatus('온라인 상태로 변경되었습니다. 데이터를 새로고침합니다.', 'loading');
+        setTimeout(() => {
+            loadAvailableDates();
+        }, 1000);
+    });
+    
+    window.addEventListener('offline', function() {
+        isOffline = true;
+        showStatus('오프라인 상태입니다. 캐시된 데이터를 사용합니다.', 'offline');
+    });
+    
+    // 초기 온라인 상태 확인
+    isOffline = !navigator.onLine;
+    if (isOffline) {
+        showStatus('오프라인 상태입니다. 캐시된 데이터를 불러옵니다.', 'offline');
+    }
+}
+
 // 사용 가능한 날짜 목록 로드
 async function loadAvailableDates() {
     try {
@@ -61,6 +86,13 @@ async function loadAvailableDates() {
         
         console.log('Response status:', response.status);
         if (!response.ok) {
+            // 503은 오프라인 상태를 의미
+            if (response.status === 503) {
+                const errorData = await response.json();
+                if (errorData.error === 'offline') {
+                    throw new Error('OFFLINE');
+                }
+            }
             throw new Error(`HTTP ${response.status}`);
         }
         
@@ -78,7 +110,14 @@ async function loadAvailableDates() {
         
     } catch (error) {
         console.error('날짜 목록 로드 실패:', error);
-        showStatus('날짜 목록을 불러오는데 실패했습니다.', 'error');
+        
+        if (error.message === 'OFFLINE') {
+            showStatus('오프라인 상태입니다. 캐시된 데이터가 없습니다.', 'error');
+            // 로컬 스토리지에서 마지막 데이터 시도
+            tryLoadFromLocalStorage();
+        } else {
+            showStatus('날짜 목록을 불러오는데 실패했습니다. 잠시 후 다시 시도해주세요.', 'error');
+        }
     }
 }
 
@@ -133,11 +172,26 @@ async function loadSelectedDate() {
         
         await Promise.all(promises);
         
+        // 성공적으로 로드된 데이터를 로컬 스토리지에 백업
+        saveToLocalStorage();
+        
         hideStatus();
         displayContent();
         
     } catch (error) {
         console.error('데이터 로드 실패:', error);
+        
+        // 오프라인이거나 네트워크 오류 시 로컬 스토리지에서 시도
+        if (!navigator.onLine || error.message.includes('Failed to fetch')) {
+            const cachedData = tryLoadDateFromLocalStorage(selectedDate);
+            if (cachedData) {
+                currentData = cachedData;
+                showStatus('오프라인 상태 - 캐시된 데이터를 표시합니다.', 'offline');
+                displayContent();
+                return;
+            }
+        }
+        
         showStatus('데이터를 불러오는데 실패했습니다.', 'error');
     }
 }
@@ -321,4 +375,64 @@ function getBasePath() {
     
     // 커스텀 도메인이나 로컬 개발
     return '';
+}
+
+// 로컬 스토리지에 데이터 저장
+function saveToLocalStorage() {
+    try {
+        const dataToSave = {
+            allDates: allDates,
+            currentData: currentData,
+            timestamp: Date.now()
+        };
+        localStorage.setItem('daily-feed-cache', JSON.stringify(dataToSave));
+        
+        // 개별 날짜 데이터도 저장
+        if (currentData && currentData.date) {
+            localStorage.setItem(`daily-feed-${currentData.date}`, JSON.stringify(currentData));
+        }
+    } catch (error) {
+        console.warn('로컬 스토리지 저장 실패:', error);
+    }
+}
+
+// 로컬 스토리지에서 전체 데이터 로드 시도
+function tryLoadFromLocalStorage() {
+    try {
+        const savedData = localStorage.getItem('daily-feed-cache');
+        if (savedData) {
+            const data = JSON.parse(savedData);
+            const ageHours = (Date.now() - data.timestamp) / (1000 * 60 * 60);
+            
+            // 24시간 이내 데이터만 사용
+            if (ageHours < 24) {
+                allDates = data.allDates || [];
+                currentData = data.currentData || {};
+                
+                if (allDates.length > 0) {
+                    populateDateList();
+                    selectedDate = allDates[0];
+                    displayContent();
+                    showStatus(`캐시된 데이터를 표시합니다 (${Math.round(ageHours)}시간 전 데이터)`, 'offline');
+                    return true;
+                }
+            }
+        }
+    } catch (error) {
+        console.warn('로컬 스토리지 로드 실패:', error);
+    }
+    return false;
+}
+
+// 특정 날짜 데이터를 로컬 스토리지에서 로드
+function tryLoadDateFromLocalStorage(date) {
+    try {
+        const savedData = localStorage.getItem(`daily-feed-${date}`);
+        if (savedData) {
+            return JSON.parse(savedData);
+        }
+    } catch (error) {
+        console.warn('로컬 스토리지에서 날짜 데이터 로드 실패:', error);
+    }
+    return null;
 }
