@@ -54,7 +54,7 @@ jobs:
           
           # 변경사항이 있는지 확인
           if [ -n "$(git status --porcelain)" ]; then
-            git add data/ web/data/
+            git add backend/data/ data/ web/data/
             git commit -m "🤖 Daily feed: $(date +%Y-%m-%d)"
             git push
           else
