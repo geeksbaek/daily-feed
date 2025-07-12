@@ -51,7 +51,7 @@ export class DailyFeedApp extends LitElement {
     .main-content {
       width: 100%;
       background-color: transparent;
-      padding: 0;
+      padding: 24px 0;
       overflow-x: hidden;
       box-sizing: border-box;
     }
@@ -73,7 +73,7 @@ export class DailyFeedApp extends LitElement {
       }
 
       .main-content {
-        padding: 0;
+        padding: 16px 0;
       }
     }
 
@@ -94,7 +94,7 @@ export class DailyFeedApp extends LitElement {
       }
 
       .main-content {
-        padding: 0;
+        padding: 20px 0;
       }
     }
   `;

@@ -5,7 +5,7 @@ export class AppFooter extends LitElement {
     :host {
       display: block;
       margin-top: 64px;
-      padding: 32px 0;
+      padding: 32px 16px;
       border-top: 1px solid #e2e8f0;
       text-align: center;
       background-color: transparent;
