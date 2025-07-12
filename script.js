@@ -54,23 +54,61 @@ function setupEventListeners() {
 
 // 모바일 UX 최적화
 function setupMobileOptimizations() {
-    // 더블 탭 줌 방지
+    // 완전한 줌 차단 - 모든 제스처 방지
     let lastTouchEnd = 0;
+    
+    // 더블 탭 줌 방지
     document.addEventListener('touchend', function (event) {
         const now = (new Date()).getTime();
         if (now - lastTouchEnd <= 300) {
             event.preventDefault();
         }
         lastTouchEnd = now;
-    }, false);
+    }, { passive: false });
     
-    // iOS Safari에서 바운스 스크롤 방지 (선택적)
-    document.addEventListener('touchmove', function(e) {
+    // 핀치 줌 방지
+    document.addEventListener('touchstart', function(event) {
+        if (event.touches.length > 1) {
+            event.preventDefault();
+        }
+    }, { passive: false });
+    
+    document.addEventListener('touchmove', function(event) {
+        if (event.touches.length > 1) {
+            event.preventDefault();
+        }
         // 스크롤 가능한 요소가 아닌 경우에만 방지
-        if (!e.target.closest('.sidebar, .main-content, .date-list, .preset-tabs')) {
+        if (!event.target.closest('.sidebar, .main-content, .date-list, .preset-tabs, .markdown-content')) {
+            event.preventDefault();
+        }
+    }, { passive: false });
+    
+    // 제스처 이벤트 차단
+    document.addEventListener('gesturestart', function(e) {
+        e.preventDefault();
+    }, { passive: false });
+    
+    document.addEventListener('gesturechange', function(e) {
+        e.preventDefault();
+    }, { passive: false });
+    
+    document.addEventListener('gestureend', function(e) {
+        e.preventDefault();
+    }, { passive: false });
+    
+    // 휠 이벤트 차단 (데스크톱에서 Ctrl+휠 줌)
+    document.addEventListener('wheel', function(e) {
+        if (e.ctrlKey) {
             e.preventDefault();
         }
     }, { passive: false });
+    
+    // 키보드 줌 차단 (Ctrl +/-)
+    document.addEventListener('keydown', function(e) {
+        if (e.ctrlKey && (e.keyCode === 61 || e.keyCode === 107 || e.keyCode === 173 || e.keyCode === 109 || e.keyCode === 187 || e.keyCode === 189)) {
+            e.preventDefault();
+        }
+    });
     
     // 상태바 색상 동적 변경 (다크모드 지원)
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
@@ -78,6 +116,12 @@ function setupMobileOptimizations() {
         if (metaThemeColor) {
             metaThemeColor.setAttribute('content', '#1a202c');
         }
+    }
+    
+    // 뷰포트 강제 설정
+    const viewport = document.querySelector('meta[name=viewport]');
+    if (viewport) {
+        viewport.setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover, shrink-to-fit=no');
     }
 }
 
