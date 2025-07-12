@@ -17,8 +17,8 @@ go test ./...
 go test ./pkg/feed/       # Run feed package tests specifically
 
 # Development with specific presets
-go run . --preset casual | pbcopy        # Copy output to clipboard (macOS)
-go run . --preset developer > output.md  # Save to file
+go run . --preset general | pbcopy       # Copy output to clipboard (macOS)
+go run . --preset community > output.md  # Save to file
 ```
 
 ## Architecture Overview
@@ -45,7 +45,7 @@ Daily Feed is a Go-based RSS/Atom feed aggregator with AI-powered summarization:
 ### Key Features
 
 - **Multi-format support**: RSS 2.0 and Atom 1.0 feeds
-- **4 summary presets**: `default`, `developer`, `casual`, `community`
+- **2 summary presets**: `general`, `community`
 - **Robust error handling**: Custom error types with wrapping
 - **Concurrent processing**: Goroutines for feed fetching
 - **XML entity fixing**: Handles malformed XML entities
@@ -60,7 +60,7 @@ Command-line flags:
 - `--model`: Gemini model (default: `gemini-2.5-pro`)
 - `--cutoff`: Hours to look back (default: 24)
 - `--timeout`: HTTP timeout seconds (default: 15)
-- `--preset`: Summary style (default: `default`)
+- `--preset`: Summary style (default: `general`), available: `general`, `community`
 
 ## Testing
 
