@@ -56,6 +56,14 @@ export class DailyFeedApp extends LitElement {
       box-sizing: border-box;
     }
 
+    .controls-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+
     /* 모바일 반응형 */
     @media (max-width: 768px) {
       :host {
@@ -74,6 +82,11 @@ export class DailyFeedApp extends LitElement {
 
       .main-content {
         padding: 20px 20px 0 20px;
+      }
+
+      .controls-row {
+        flex-direction: column;
+        gap: 16px;
       }
     }
 
@@ -123,16 +136,18 @@ export class DailyFeedApp extends LitElement {
       <main>
         <div class="main-layout">
           <div class="main-content">
-            <date-selector 
-              .dates=${this.allDates}
-              .selectedDate=${this.selectedDate}
-              @date-changed=${this.handleDateChange}
-            ></date-selector>
-            
-            <preset-tabs 
-              .currentPreset=${this.currentPreset}
-              @preset-changed=${this.handlePresetChange}
-            ></preset-tabs>
+            <div class="controls-row">
+              <preset-tabs 
+                .currentPreset=${this.currentPreset}
+                @preset-changed=${this.handlePresetChange}
+              ></preset-tabs>
+              
+              <date-selector 
+                .dates=${this.allDates}
+                .selectedDate=${this.selectedDate}
+                @date-changed=${this.handleDateChange}
+              ></date-selector>
+            </div>
             
             <status-display 
               .message=${this.statusMessage}

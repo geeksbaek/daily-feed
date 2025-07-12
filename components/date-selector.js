@@ -15,7 +15,7 @@ export class DateSelector extends LitElement {
       display: flex;
       justify-content: flex-end;
       align-items: center;
-      margin-bottom: 16px;
+      margin-bottom: 0;
     }
 
     .date-selector {

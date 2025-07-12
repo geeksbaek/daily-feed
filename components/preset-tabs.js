@@ -12,9 +12,10 @@ export class PresetTabs extends LitElement {
 
     .preset-tabs {
       display: flex;
-      margin-bottom: 24px;
+      margin-bottom: 0;
       border-bottom: 1px solid #d0d7de;
       overflow-x: auto;
+      flex: 1;
     }
 
     .tab-button {
@@ -57,7 +58,7 @@ export class PresetTabs extends LitElement {
     @media (min-width: 769px) and (max-width: 1024px) {
       .preset-tabs {
         gap: 8px;
-        margin-bottom: 28px;
+        margin-bottom: 0;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         border-bottom: none;
