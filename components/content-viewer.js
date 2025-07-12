@@ -383,13 +383,13 @@ export class ContentViewer extends LitElement {
         const linkMatch = definition.match(/^(.+?)\s+-\s+(https?:\/\/.+)$/);
         if (linkMatch) {
           const [, title, url] = linkMatch;
-          processedContent += `<div id="footnote-${id}" class="footnote-definition"><strong>[${id}]</strong> <a href="${url}">${this.escapeHtml(title)}</a></div>\n`;
+          processedContent += `<div id="footnote-${id}" class="footnote-definition"><strong>[${id}]</strong> <a href="${url}" target="_blank" rel="noopener noreferrer">${this.escapeHtml(title)}</a></div>\n`;
         } else {
           // URL만 있는 경우도 처리
           const urlMatch = definition.match(/^(https?:\/\/.+)$/);
           if (urlMatch) {
             const url = urlMatch[1];
-            processedContent += `<div id="footnote-${id}" class="footnote-definition"><strong>[${id}]</strong> <a href="${url}">${url}</a></div>\n`;
+            processedContent += `<div id="footnote-${id}" class="footnote-definition"><strong>[${id}]</strong> <a href="${url}" target="_blank" rel="noopener noreferrer">${url}</a></div>\n`;
           } else {
             processedContent += `<div id="footnote-${id}" class="footnote-definition"><strong>[${id}]</strong> ${this.escapeHtml(definition)}</div>\n`;
           }
