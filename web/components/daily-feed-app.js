@@ -333,7 +333,7 @@ export class DailyFeedApp extends LitElement {
       this.showStatusMessage('데이터를 불러오는 중...', 'loading');
       
       const basePath = this.getBasePath();
-      const presets = ['default', 'developer', 'casual', 'community'];
+      const presets = ['general', 'community'];
       const newData = { date: this.selectedDate, summaries: {} };
       
       const promises = presets.map(async preset => {

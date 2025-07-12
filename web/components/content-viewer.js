@@ -306,11 +306,17 @@ export class ContentViewer extends LitElement {
       `;
     }
 
+    console.log('Available summaries:', Object.keys(summaries));
+    console.log('Current preset:', this.preset);
+    
     const selectedData = summaries[this.preset];
     if (!selectedData) {
       return html`
         <div class="content">
           <p>조건에 맞는 요약을 찾을 수 없습니다.</p>
+          <p style="font-size: 12px; color: #666;">
+            (현재 프리셋: ${this.preset}, 사용 가능한 프리셋: ${Object.keys(summaries).join(', ')})
+          </p>
         </div>
       `;
     }
