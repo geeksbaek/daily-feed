@@ -3,8 +3,9 @@ let allDates = [];
 let currentData = {};
 
 // DOM 요소
-const dateSelect = document.getElementById('date-select');
-const presetSelect = document.getElementById('preset-select');
+const dateList = document.getElementById('date-list');
+let currentPreset = 'all';
+let selectedDate = null;
 const statusDiv = document.getElementById('status');
 const contentDiv = document.getElementById('content');
 
@@ -31,8 +32,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // 이벤트 리스너 설정
 function setupEventListeners() {
-    dateSelect.addEventListener('change', loadSelectedDate);
-    presetSelect.addEventListener('change', displayContent);
+    // 탭 버튼 이벤트 리스너
+    document.querySelectorAll('.tab-button').forEach(button => {
+        button.addEventListener('click', function() {
+            // 모든 탭에서 active 클래스 제거
+            document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+            // 현재 클릭한 탭에 active 클래스 추가
+            this.classList.add('active');
+            // 프리셋 변경
+            currentPreset = this.dataset.preset;
+            displayContent();
+        });
+    });
 }
 
 // 사용 가능한 날짜 목록 로드
@@ -50,10 +61,10 @@ async function loadAvailableDates() {
         const index = await response.json();
         allDates = index.map(entry => entry.date).sort().reverse(); // 최신순
         
-        populateDateSelect();
+        populateDateList();
         
         if (allDates.length > 0) {
-            dateSelect.value = allDates[0];
+            selectedDate = allDates[0];
             await loadSelectedDate();
         } else {
             showStatus('아직 생성된 요약이 없습니다.', 'error');
@@ -65,21 +76,33 @@ async function loadAvailableDates() {
     }
 }
 
-// 날짜 선택 드롭다운 채우기
-function populateDateSelect() {
-    dateSelect.innerHTML = '';
+// 날짜 리스트 채우기
+function populateDateList() {
+    dateList.innerHTML = '';
     
-    allDates.forEach(date => {
-        const option = document.createElement('option');
-        option.value = date;
-        option.textContent = formatDateForDisplay(date);
-        dateSelect.appendChild(option);
+    allDates.forEach((date, index) => {
+        const dateItem = document.createElement('div');
+        dateItem.className = 'date-item';
+        if (index === 0) dateItem.classList.add('active'); // 처음 날짜를 기본 선택
+        dateItem.textContent = formatDateForDisplay(date);
+        dateItem.dataset.date = date;
+        
+        dateItem.addEventListener('click', function() {
+            // 모든 날짜 아이템에서 active 클래스 제거
+            document.querySelectorAll('.date-item').forEach(item => item.classList.remove('active'));
+            // 현재 클릭한 날짜에 active 클래스 추가
+            this.classList.add('active');
+            // 날짜 변경
+            selectedDate = this.dataset.date;
+            loadSelectedDate();
+        });
+        
+        dateList.appendChild(dateItem);
     });
 }
 
 // 선택된 날짜의 데이터 로드
 async function loadSelectedDate() {
-    const selectedDate = dateSelect.value;
     if (!selectedDate) return;
     
     try {
@@ -115,7 +138,7 @@ async function loadSelectedDate() {
 
 // 콘텐츠 표시
 function displayContent() {
-    const selectedPreset = presetSelect.value;
+    const selectedPreset = currentPreset;
     const summaries = currentData.summaries;
     
     if (!summaries || Object.keys(summaries).length === 0) {

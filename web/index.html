@@ -15,30 +15,34 @@
     </header>
 
     <main>
-        <!-- 간단한 네비게이션 -->
-        <nav>
-            <label for="date-select">날짜:</label>
-            <select id="date-select">
-                <option>로딩중...</option>
-            </select>
+        <div class="main-layout">
+            <!-- 좌측 사이드바: 날짜 리스트 -->
+            <aside class="sidebar">
+                <h3>날짜 선택</h3>
+                <div id="date-list" class="date-list">
+                    <p>로딩중...</p>
+                </div>
+            </aside>
             
-            <label for="preset-select">프리셋:</label>
-            <select id="preset-select">
-                <option value="all">전체</option>
-                <option value="default">Default</option>
-                <option value="developer">Developer</option>
-                <option value="casual">Casual</option>
-                <option value="community">Community</option>
-            </select>
-            
-        </nav>
-
-        <!-- 상태 메시지 -->
-        <div id="status" style="display: none;"></div>
-
-        <!-- 요약 내용 -->
-        <div id="content">
-            <p>데이터를 불러오는 중...</p>
+            <!-- 메인 콘텐츠 -->
+            <div class="main-content">
+                <!-- 프리셋 탭 -->
+                <div class="preset-tabs">
+                    <button class="tab-button active" data-preset="all">전체</button>
+                    <button class="tab-button" data-preset="default">Default</button>
+                    <button class="tab-button" data-preset="developer">Developer</button>
+                    <button class="tab-button" data-preset="casual">Casual</button>
+                    <button class="tab-button" data-preset="community">Community</button>
+                </div>
+        
+                <!-- 상태 메시지 -->
+                <div id="status" style="display: none;"></div>
+        
+                <!-- 요약 내용 -->
+                <div id="content">
+                    <p>데이터를 불러오는 중...</p>
+                </div>
+            </div>
         </div>
     </main>
 

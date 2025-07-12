@@ -33,44 +33,100 @@ header p {
     color: #656d76;
 }
 
-/* 네비게이션 */
-nav {
-    margin-bottom: 24px;
-    padding: 16px;
+/* 메인 레이아웃 */
+.main-layout {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+/* 좌측 사이드바 */
+.sidebar {
+    flex: 0 0 250px;
     background-color: #f6f8fa;
     border: 1px solid #d0d7de;
     border-radius: 6px;
+    padding: 16px;
+    position: sticky;
+    top: 16px;
+    max-height: calc(100vh - 32px);
+    overflow-y: auto;
 }
 
-nav label {
+.sidebar h3 {
+    margin: 0 0 16px 0;
+    font-size: 16px;
     font-weight: 600;
-    margin-right: 8px;
+    color: #24292f;
+    border-bottom: 1px solid #d0d7de;
+    padding-bottom: 8px;
 }
 
-nav select, nav input, nav button {
-    margin-right: 16px;
-    padding: 5px 12px;
-    border: 1px solid #d0d7de;
+/* 날짜 리스트 */
+.date-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.date-item {
+    padding: 8px 12px;
     border-radius: 6px;
+    cursor: pointer;
     font-size: 14px;
+    color: #24292f;
+    transition: all 0.2s;
+    border: 1px solid transparent;
 }
 
-nav select:focus, nav input:focus {
-    outline: 2px solid #0969da;
-    outline-offset: -2px;
+.date-item:hover {
+    background-color: #e1e4e8;
+}
+
+.date-item.active {
+    background-color: #0969da;
+    color: white;
     border-color: #0969da;
 }
 
-nav button {
-    background-color: #0969da;
-    color: white;
-    border: 1px solid #0969da;
-    cursor: pointer;
+/* 메인 콘텐츠 */
+.main-content {
+    flex: 1;
+    min-width: 0;
 }
 
-nav button:hover {
-    background-color: #0860ca;
+/* 프리셋 탭 */
+.preset-tabs {
+    display: flex;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #d0d7de;
+    overflow-x: auto;
 }
+
+.tab-button {
+    padding: 12px 16px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    color: #656d76;
+    white-space: nowrap;
+    transition: all 0.2s;
+}
+
+.tab-button:hover {
+    color: #24292f;
+    background-color: #f6f8fa;
+}
+
+.tab-button.active {
+    color: #0969da;
+    border-bottom-color: #0969da;
+    font-weight: 600;
+}
+
 
 /* 상태 메시지 */
 #status {
@@ -334,15 +390,45 @@ footer a {
         padding: 8px;
     }
     
-    nav {
-        display: block;
+    .main-layout {
+        flex-direction: column;
     }
     
-    nav label, nav select, nav input, nav button {
-        display: block;
+    .sidebar {
+        flex: none;
         width: 100%;
+        position: static;
+        max-height: none;
+        margin-bottom: 16px;
+    }
+    
+    .date-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    
+    .date-item {
+        flex: 1;
+        text-align: center;
+        min-width: 120px;
+    }
+    
+    .preset-tabs {
+        flex-wrap: wrap;
+        border-bottom: none;
+    }
+    
+    .tab-button {
+        flex: 1;
+        min-width: 0;
+        border-bottom: 1px solid #d0d7de;
+        border-radius: 6px 6px 0 0;
         margin-bottom: 8px;
-        margin-right: 0;
+    }
+    
+    .tab-button.active {
+        border-bottom-color: #0969da;
     }
     
     header h1 {
