@@ -3,7 +3,6 @@ const urlsToCache = [
   '/daily-feed/',
   '/daily-feed/index.html',
   '/daily-feed/components/daily-feed-app.js',
-  '/daily-feed/components/feed-header.js',
   '/daily-feed/components/date-selector.js',
   '/daily-feed/components/preset-tabs.js',
   '/daily-feed/components/status-display.js',

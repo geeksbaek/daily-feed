@@ -120,8 +120,6 @@ export class DailyFeedApp extends LitElement {
 
   render() {
     return html`
-      <feed-header></feed-header>
-      
       <main>
         <div class="main-layout">
           <div class="main-content">
