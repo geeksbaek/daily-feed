@@ -26,23 +26,24 @@ marked.setOptions({ renderer: renderer });
 
 // 초기화
 document.addEventListener('DOMContentLoaded', function() {
-    loadAvailableDates();
     setupEventListeners();
+    loadAvailableDates();
 });
 
 // 이벤트 리스너 설정
 function setupEventListeners() {
-    // 탭 버튼 이벤트 리스너
-    document.querySelectorAll('.tab-button').forEach(button => {
-        button.addEventListener('click', function() {
+    // 이벤트 위임을 사용하여 동적 요소에도 이벤트 적용
+    document.addEventListener('click', function(e) {
+        // 탭 버튼 클릭 처리
+        if (e.target.classList.contains('tab-button')) {
             // 모든 탭에서 active 클래스 제거
             document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
             // 현재 클릭한 탭에 active 클래스 추가
-            this.classList.add('active');
+            e.target.classList.add('active');
             // 프리셋 변경
-            currentPreset = this.dataset.preset;
+            currentPreset = e.target.dataset.preset;
             displayContent();
-        });
+        }
     });
 }
 
@@ -52,8 +53,11 @@ async function loadAvailableDates() {
         showStatus('날짜 목록을 불러오는 중...', 'loading');
         
         const basePath = getBasePath();
-        const response = await fetch(`${basePath}/data/summaries/index.json`);
+        const url = `${basePath}/data/summaries/index.json`;
+        console.log('Fetching data from:', url);
+        const response = await fetch(url);
         
+        console.log('Response status:', response.status);
         if (!response.ok) {
             throw new Error(`HTTP ${response.status}`);
         }
