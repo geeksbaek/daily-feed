@@ -14,6 +14,9 @@ export class FirebasePushManager {
 
   async init() {
     try {
+      console.log('Firebase 설정:', this.firebaseConfig);
+      console.log('VAPID 키:', this.vapidKey);
+      
       // 설정 검증
       if (!validateFirebaseConfig(this.firebaseConfig)) {
         throw new Error('Firebase 설정이 불완전합니다. config.js를 확인해주세요.');
