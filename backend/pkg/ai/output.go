@@ -23,7 +23,7 @@ func NewOutputWriter(logger logger.Logger) OutputWriter {
 
 func (w *markdownWriter) WriteMarkdown(items []models.FeedItem, summary *models.Summary) (string, error) {
 	now := time.Now()
-	
+
 	var content strings.Builder
 	content.WriteString(fmt.Sprintf("# Daily Feed - %s\n\n", now.Format("2006-01-02")))
 

@@ -30,10 +30,10 @@ type Item struct {
 
 // Atom 피드 구조체
 type AtomFeed struct {
-	Title   string      `xml:"title"`
-	Subtitle string     `xml:"subtitle"`
-	Link    []AtomLink  `xml:"link"`
-	Entries []AtomEntry `xml:"entry"`
+	Title    string      `xml:"title"`
+	Subtitle string      `xml:"subtitle"`
+	Link     []AtomLink  `xml:"link"`
+	Entries  []AtomEntry `xml:"entry"`
 }
 
 type AtomLink struct {

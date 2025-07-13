@@ -73,9 +73,7 @@ func (p *processor) ProcessFeeds(ctx context.Context, feeds []models.Feed, cutof
 		allItems = append(allItems, item)
 	}
 
-	var errors []error
 	for err := range errChan {
-		errors = append(errors, err)
 		p.logger.Error(err.Error())
 	}
 
@@ -163,7 +161,7 @@ func (p *processor) processAtomEntries(entries []models.AtomEntry, feed models.F
 		if dateStr == "" {
 			dateStr = entry.Updated
 		}
-		
+
 		pubDate, err := utils.ParseDate(dateStr)
 		if err != nil {
 			continue

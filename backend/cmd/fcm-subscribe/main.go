@@ -12,9 +12,9 @@ import (
 func main() {
 	var (
 		serviceAccountFile = flag.String("service-account", "", "Firebase Service Account JSON 파일 경로")
-		token             = flag.String("token", "", "FCM 토큰")
-		topic             = flag.String("topic", "daily-feed", "구독할 토픽")
-		unsubscribe       = flag.Bool("unsubscribe", false, "토픽에서 구독 해제")
+		token              = flag.String("token", "", "FCM 토큰")
+		topic              = flag.String("topic", "daily-feed", "구독할 토픽")
+		unsubscribe        = flag.Bool("unsubscribe", false, "토픽에서 구독 해제")
 	)
 	flag.Parse()
 
@@ -49,7 +49,7 @@ func main() {
 
 	// 토픽 구독/해제
 	tokens := []string{*token}
-	
+
 	if *unsubscribe {
 		log.Printf("토픽 '%s'에서 구독 해제 중...", *topic)
 		err = client.UnsubscribeFromTopic(ctx, tokens, *topic)

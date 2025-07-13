@@ -16,12 +16,12 @@ import (
 func main() {
 	var (
 		serviceAccountFile = flag.String("service-account", "", "Firebase Service Account JSON 파일 경로")
-		token             = flag.String("token", "", "FCM 토큰")
-		topic             = flag.String("topic", "", "FCM 토픽 (토큰 대신 사용 가능)")
-		title             = flag.String("title", "Daily Feed", "알림 제목")
-		body              = flag.String("body", "새로운 기술 뉴스가 준비되었습니다!", "알림 내용")
-		date              = flag.String("date", "", "날짜 (YYYY-MM-DD)")
-		url               = flag.String("url", "https://geeksbaek.github.io/daily-feed/", "이동할 URL")
+		token              = flag.String("token", "", "FCM 토큰")
+		topic              = flag.String("topic", "", "FCM 토픽 (토큰 대신 사용 가능)")
+		title              = flag.String("title", "Daily Feed", "알림 제목")
+		body               = flag.String("body", "새로운 기술 뉴스가 준비되었습니다!", "알림 내용")
+		date               = flag.String("date", "", "날짜 (YYYY-MM-DD)")
+		url                = flag.String("url", "https://geeksbaek.github.io/daily-feed/", "이동할 URL")
 	)
 	flag.Parse()
 
@@ -29,7 +29,7 @@ func main() {
 	if *date == "" {
 		*date = time.Now().Format("2006-01-02")
 	}
-	
+
 	if *url == "https://geeksbaek.github.io/daily-feed/" && *date != "" {
 		*url = fmt.Sprintf("https://geeksbaek.github.io/daily-feed/?date=%s", *date)
 	}
@@ -49,12 +49,11 @@ func main() {
 		if keyData == "" {
 			log.Fatal("Service Account 키를 지정해주세요: --service-account 플래그 또는 FIREBASE_SERVICE_ACCOUNT_KEY 환경변수")
 		}
-		
-		
+
 		// Base64로 인코딩되어 있는지 확인하고 디코딩 시도 (표준 Base64와 URL-safe Base64 모두 시도)
 		var decoded []byte
 		var err error
-		
+
 		// 패딩 추가 함수 (Base64 디코딩을 위해)
 		addPadding := func(s string) string {
 			switch len(s) % 4 {
@@ -65,7 +64,7 @@ func main() {
 			}
 			return s
 		}
-		
+
 		// 먼저 URL-safe Base64 시도 (패딩 추가)
 		paddedKeyData := addPadding(keyData)
 		if decoded, err = base64.URLEncoding.DecodeString(paddedKeyData); err != nil {
@@ -77,7 +76,7 @@ func main() {
 				}
 			}
 		}
-		
+
 		if err == nil {
 			// Base64 디코딩 성공하면 JSON 유효성 검사
 			var temp interface{}

@@ -58,7 +58,7 @@ func TestProblematicFeedsIndividually(t *testing.T) {
 
 func testSingleFeed(t *testing.T, client *http.Client, feed models.Feed) {
 	ctx := context.Background()
-	
+
 	// 1. HTTP 요청 테스트
 	req, err := http.NewRequestWithContext(ctx, "GET", feed.RSSUrl, nil)
 	if err != nil {
@@ -91,7 +91,7 @@ func testSingleFeed(t *testing.T, client *http.Client, feed models.Feed) {
 
 	bodyStr := string(body)
 	t.Logf("응답 크기: %d bytes", len(bodyStr))
-	
+
 	// 첫 500자 출력 (디버깅용)
 	if len(bodyStr) > 500 {
 		t.Logf("응답 본문 시작: %s...", bodyStr[:500])
@@ -108,7 +108,7 @@ func testSingleFeed(t *testing.T, client *http.Client, feed models.Feed) {
 	// 4. XML Entity 수정 전 파싱 테스트
 	var rss1 models.RSS
 	err1 := xml.Unmarshal(body, &rss1)
-	
+
 	// 5. XML Entity 수정 후 RSS 파싱 테스트
 	fixedBodyStr := utils.FixXMLEntities(bodyStr)
 	var rss2 models.RSS
@@ -117,7 +117,7 @@ func testSingleFeed(t *testing.T, client *http.Client, feed models.Feed) {
 	// 6. Atom 피드 파싱 시도
 	var atom1 models.AtomFeed
 	err3 := xml.Unmarshal(body, &atom1)
-	
+
 	var atom2 models.AtomFeed
 	err4 := xml.Unmarshal([]byte(fixedBodyStr), &atom2)
 
@@ -144,7 +144,7 @@ func testSingleFeed(t *testing.T, client *http.Client, feed models.Feed) {
 		t.Errorf("  수정 RSS: %v", err2)
 		t.Errorf("  원본 Atom: %v", err3)
 		t.Errorf("  수정 Atom: %v", err4)
-		
+
 		// 구체적인 XML 오류 위치 찾기
 		if err2 != nil {
 			findXMLError(t, fixedBodyStr, err2)
@@ -258,8 +258,8 @@ func TestHTTPHeaders(t *testing.T) {
 					t.Errorf("User-Agent %s 실패: %v", ua, err)
 					continue
 				}
-				
-				t.Logf("User-Agent: %s, Status: %d, Content-Type: %s", 
+
+				t.Logf("User-Agent: %s, Status: %d, Content-Type: %s",
 					ua, resp.StatusCode, resp.Header.Get("Content-Type"))
 				resp.Body.Close()
 			}
@@ -314,7 +314,7 @@ func loadAllFeeds(t *testing.T) []models.Feed {
 // 모든 피드 테스트 (feeds.csv 기반)
 func TestAllFeedsFromCSV(t *testing.T) {
 	feeds := loadAllFeeds(t)
-	
+
 	client := &http.Client{
 		Timeout: 30 * time.Second,
 	}
@@ -329,7 +329,7 @@ func TestAllFeedsFromCSV(t *testing.T) {
 // 필드 파싱 검증을 포함한 강화된 테스트
 func testFeedFieldParsing(t *testing.T, client *http.Client, feed models.Feed) {
 	ctx := context.Background()
-	
+
 	// 1. HTTP 요청 테스트
 	req, err := http.NewRequestWithContext(ctx, "GET", feed.RSSUrl, nil)
 	if err != nil {
@@ -355,11 +355,11 @@ func testFeedFieldParsing(t *testing.T, client *http.Client, feed models.Feed) {
 	}
 
 	bodyStr := utils.FixXMLEntities(string(body))
-	
+
 	// 3. RSS 피드 파싱 시도
 	var rss models.RSS
 	rssErr := xml.Unmarshal([]byte(bodyStr), &rss)
-	
+
 	// 4. Atom 피드 파싱 시도
 	var atom models.AtomFeed
 	atomErr := xml.Unmarshal([]byte(bodyStr), &atom)
@@ -384,23 +384,23 @@ func validateRSSFields(t *testing.T, items []models.Item, _ models.Feed) {
 		if i >= 3 { // 처음 3개 아이템만 검증
 			break
 		}
-		
+
 		t.Logf("RSS 아이템 #%d 검증:", i+1)
-		
+
 		// Title 검증
 		if strings.TrimSpace(item.Title) == "" {
 			t.Errorf("  Title이 비어있음")
 		} else {
 			t.Logf("  Title: %s", truncateString(item.Title, 50))
 		}
-		
+
 		// Link 검증
 		if strings.TrimSpace(item.Link) == "" {
 			t.Errorf("  Link가 비어있음")
 		} else {
 			t.Logf("  Link: %s", truncateString(item.Link, 50))
 		}
-		
+
 		// PubDate 검증
 		if strings.TrimSpace(item.PubDate) == "" {
 			t.Errorf("  PubDate가 비어있음")
@@ -412,7 +412,7 @@ func validateRSSFields(t *testing.T, items []models.Item, _ models.Feed) {
 				t.Logf("  PubDate: %s", pubDate.Format(time.RFC3339))
 			}
 		}
-		
+
 		// Description 검증
 		if strings.TrimSpace(item.Description) == "" {
 			t.Logf("  Description이 비어있음 (선택사항)")
@@ -428,16 +428,16 @@ func validateAtomFields(t *testing.T, entries []models.AtomEntry, _ models.Feed)
 		if i >= 3 { // 처음 3개 엔트리만 검증
 			break
 		}
-		
+
 		t.Logf("Atom 엔트리 #%d 검증:", i+1)
-		
+
 		// Title 검증
 		if strings.TrimSpace(entry.Title) == "" {
 			t.Errorf("  Title이 비어있음")
 		} else {
 			t.Logf("  Title: %s", truncateString(entry.Title, 50))
 		}
-		
+
 		// Link 검증
 		var link string
 		for _, l := range entry.Link {
@@ -451,13 +451,13 @@ func validateAtomFields(t *testing.T, entries []models.AtomEntry, _ models.Feed)
 		} else {
 			t.Logf("  Link: %s", truncateString(link, 50))
 		}
-		
+
 		// Published/Updated 검증
 		dateStr := entry.Published
 		if dateStr == "" {
 			dateStr = entry.Updated
 		}
-		
+
 		if strings.TrimSpace(dateStr) == "" {
 			t.Errorf("  Published/Updated가 모두 비어있음")
 		} else {
@@ -472,7 +472,7 @@ func validateAtomFields(t *testing.T, entries []models.AtomEntry, _ models.Feed)
 				}
 			}
 		}
-		
+
 		// Summary/Content 검증
 		description := entry.Summary
 		if description == "" && entry.Content.Text != "" {
@@ -496,7 +496,7 @@ func TestCutoffTimeApplication(t *testing.T) {
 			Category: "tech",
 		},
 	}
-	
+
 	client := &http.Client{
 		Timeout: 30 * time.Second,
 	}
@@ -510,10 +510,10 @@ func TestCutoffTimeApplication(t *testing.T) {
 
 func testCutoffTime(t *testing.T, client *http.Client, feed models.Feed) {
 	ctx := context.Background()
-	
+
 	// 매우 최근 시간 (1시간 전)으로 cutoff 설정
 	cutoffTime := time.Now().Add(-1 * time.Hour)
-	
+
 	req, err := http.NewRequestWithContext(ctx, "GET", feed.RSSUrl, nil)
 	if err != nil {
 		t.Fatalf("HTTP 요청 생성 실패: %v", err)
@@ -533,7 +533,7 @@ func testCutoffTime(t *testing.T, client *http.Client, feed models.Feed) {
 	}
 
 	bodyStr := utils.FixXMLEntities(string(body))
-	
+
 	// Atom 피드 파싱 (GeekNews는 Atom 형식)
 	var atom models.AtomFeed
 	if err := xml.Unmarshal([]byte(bodyStr), &atom); err != nil {
@@ -542,25 +542,25 @@ func testCutoffTime(t *testing.T, client *http.Client, feed models.Feed) {
 
 	recentCount := 0
 	oldCount := 0
-	
+
 	for _, entry := range atom.Entries {
 		updated, err := utils.ParseDate(entry.Updated)
 		if err != nil {
 			t.Logf("날짜 파싱 실패: %v", err)
 			continue
 		}
-		
+
 		if updated.After(cutoffTime) {
 			recentCount++
 		} else {
 			oldCount++
 		}
 	}
-	
+
 	t.Logf("총 엔트리 수: %d", len(atom.Entries))
 	t.Logf("cutoff 시간(%s) 이후 엔트리: %d", cutoffTime.Format(time.RFC3339), recentCount)
 	t.Logf("cutoff 시간 이전 엔트리: %d", oldCount)
-	
+
 	if recentCount == 0 && oldCount == 0 {
 		t.Errorf("모든 엔트리의 날짜 파싱이 실패했습니다")
 	}
@@ -621,7 +621,7 @@ func TestDateParsing(t *testing.T) {
 	for _, tc := range testCases {
 		t.Run(tc.name, func(t *testing.T) {
 			parsed, err := utils.ParseDate(tc.dateStr)
-			
+
 			if tc.expected {
 				if err != nil {
 					t.Errorf("파싱이 성공해야 하지만 실패: %v", err)

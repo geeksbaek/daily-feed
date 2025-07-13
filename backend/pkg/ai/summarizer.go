@@ -16,7 +16,6 @@ import (
 	"github.com/jongyeol/daily-feed/pkg/utils"
 )
 
-
 type Summarizer interface {
 	GenerateSummary(ctx context.Context, items []models.FeedItem) (*models.Summary, error)
 }
@@ -186,7 +185,6 @@ func (s *geminiSummarizer) getGeneralSystemPrompt() string {
 - 🔥 중요: footnote에서 링크 URL은 반드시 클릭 가능한 형태로 포함해야 합니다
 - 기업 이름은 피드 내용에 등장하는 기업들만 언급하고, 임의로 특정 기업을 예시로 들지 마세요`
 }
-
 
 func (s *geminiSummarizer) getCasualSystemPrompt() string {
 	return `당신은 친근하고 솔직한 기술 전문가입니다. 편안한 대화체로 기술 뉴스를 전달합니다.

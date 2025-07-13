@@ -1,7 +1,6 @@
 package utils
 
 import (
-	"regexp"
 	"strings"
 )
 
@@ -17,7 +16,3 @@ func FixXMLEntities(bodyStr string) string {
 	return body
 }
 
-func CleanHTML(html string) string {
-	re := regexp.MustCompile(`<[^>]*>`)
-	return strings.TrimSpace(re.ReplaceAllString(html, ""))
-}

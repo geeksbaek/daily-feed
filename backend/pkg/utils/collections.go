@@ -15,4 +15,3 @@ func FeedItemIterator(items []models.FeedItem) iter.Seq[models.FeedItem] {
 		}
 	}
 }
-

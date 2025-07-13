@@ -16,11 +16,11 @@ import (
 )
 
 type App struct {
-	config      *config.Config
-	logger      logger.Logger
-	feedLoader  feed.Loader
-	processor   feed.Processor
-	summarizer  ai.Summarizer
+	config       *config.Config
+	logger       logger.Logger
+	feedLoader   feed.Loader
+	processor    feed.Processor
+	summarizer   ai.Summarizer
 	outputWriter ai.OutputWriter
 }
 
@@ -55,7 +55,7 @@ func New(feedsFile, geminiModel string, cutoffHours, httpTimeout int, summaryPre
 		return nil, fmt.Errorf("Gemini 클라이언트 초기화 실패: %w", err)
 	}
 
-	logger.Info("설정 로드 완료: feeds_file=%s, gemini_model=%s, cutoff_hours=%d, http_timeout=%d, summary_preset=%s", 
+	logger.Info("설정 로드 완료: feeds_file=%s, gemini_model=%s, cutoff_hours=%d, http_timeout=%d, summary_preset=%s",
 		cfg.FeedsFile, cfg.GeminiModel, cfg.CutoffHours, cfg.HTTPTimeout, cfg.SummaryPreset)
 
 	return &App{
@@ -75,7 +75,7 @@ func (a *App) Run(ctx context.Context) error {
 	}
 
 	cutoffTime := time.Now().Add(-time.Duration(a.config.CutoffHours) * time.Hour)
-	
+
 	allItems, err := a.processor.ProcessFeeds(ctx, feeds, cutoffTime)
 	if err != nil {
 		return fmt.Errorf("피드 처리 중 오류: %w", err)
@@ -100,7 +100,7 @@ func (a *App) Run(ctx context.Context) error {
 	if err != nil {
 		return fmt.Errorf("출력 생성 실패: %w", err)
 	}
-	
+
 	fmt.Print(output)
 	return nil
 }
@@ -113,7 +113,7 @@ func (a *App) RunAndReturnData(ctx context.Context) (string, string, string, []m
 	}
 
 	cutoffTime := time.Now().Add(-time.Duration(a.config.CutoffHours) * time.Hour)
-	
+
 	allItems, err := a.processor.ProcessFeeds(ctx, feeds, cutoffTime)
 	if err != nil {
 		return "", "", "", nil, fmt.Errorf("피드 처리 중 오류: %w", err)

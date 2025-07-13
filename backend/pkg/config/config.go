@@ -5,12 +5,12 @@ import (
 )
 
 type Config struct {
-	FeedsFile      string `json:"feeds_file"`
-	GeminiModel    string `json:"gemini_model"`
-	CutoffHours    int    `json:"cutoff_hours"`
-	HTTPTimeout    int    `json:"http_timeout_seconds"`
-	SummaryPreset  string `json:"summary_preset"`
-	Debug          bool   `json:"debug"`
+	FeedsFile     string `json:"feeds_file"`
+	GeminiModel   string `json:"gemini_model"`
+	CutoffHours   int    `json:"cutoff_hours"`
+	HTTPTimeout   int    `json:"http_timeout_seconds"`
+	SummaryPreset string `json:"summary_preset"`
+	Debug         bool   `json:"debug"`
 }
 
 // Load 함수는 더 이상 사용하지 않음 - 모든 설정이 플래그로 전달됨
