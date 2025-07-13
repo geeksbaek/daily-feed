@@ -4,7 +4,8 @@ import { unsafeHTML } from 'https://unpkg.com/lit@3/directives/unsafe-html.js?mo
 export class ContentViewer extends LitElement {
   static properties = {
     data: { type: Object },
-    preset: { type: String }
+    preset: { type: String },
+    showPromptModal: { type: Boolean }
   };
 
   static styles = css`
@@ -26,6 +27,132 @@ export class ContentViewer extends LitElement {
       margin-bottom: 0;
       padding-bottom: 0;
       border-bottom: none;
+    }
+
+    .prompt-button-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 32px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border-secondary);
+    }
+
+    .prompt-button {
+      padding: 8px 16px;
+      background-color: var(--bg-secondary);
+      border: 1px solid var(--border-secondary);
+      border-radius: 6px;
+      color: var(--text-secondary);
+      cursor: pointer;
+      font-size: 13px;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .prompt-button:hover {
+      background-color: var(--accent-color);
+      color: white;
+      border-color: var(--accent-color);
+    }
+
+    .prompt-modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(4px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10000;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .prompt-modal-content {
+      background-color: var(--bg-primary);
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      max-width: 800px;
+      max-height: 80vh;
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .prompt-modal-header {
+      padding: 20px;
+      border-bottom: 1px solid var(--border-secondary);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .prompt-modal-title {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+
+    .prompt-modal-close {
+      background: none;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+      color: var(--text-secondary);
+      padding: 0;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+    }
+
+    .prompt-modal-close:hover {
+      background-color: var(--bg-secondary);
+      color: var(--text-primary);
+    }
+
+    .prompt-modal-body {
+      padding: 20px;
+      overflow-y: auto;
+      flex: 1;
+    }
+
+    .prompt-section {
+      margin-bottom: 24px;
+    }
+
+    .prompt-section-title {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .prompt-text {
+      background-color: var(--code-bg);
+      border: 1px solid var(--border-secondary);
+      border-radius: 6px;
+      padding: 16px;
+      font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+      font-size: 13px;
+      line-height: 1.5;
+      color: var(--code-text);
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      max-height: 200px;
+      overflow-y: auto;
     }
 
     .preset-header {
@@ -293,6 +420,43 @@ export class ContentViewer extends LitElement {
     super();
     this.data = {};
     this.preset = 'general';
+    this.showPromptModal = false;
+    this.originalBodyOverflow = '';
+    this.originalBodyPosition = '';
+    this.originalBodyTop = '';
+    this.originalScrollY = 0;
+  }
+
+  connectedCallback() {
+    super.connectedCallback();
+    this.addEventListener('click', this.handleFootnoteClick.bind(this));
+  }
+
+  disconnectedCallback() {
+    super.disconnectedCallback();
+    // 컴포넌트 제거 시 바깥 스크롤 복원
+    this.enableBodyScroll();
+  }
+
+  handleFootnoteClick(e) {
+    if (e.target.classList.contains('footnote-ref')) {
+      e.preventDefault();
+      const href = e.target.getAttribute('href');
+      if (href && href.startsWith('#footnote-')) {
+        const targetId = href.substring(1);
+        const targetElement = this.shadowRoot.getElementById(targetId);
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          // 잠깐 하이라이트 효과
+          targetElement.style.backgroundColor = 'var(--accent-color)';
+          targetElement.style.opacity = '0.3';
+          setTimeout(() => {
+            targetElement.style.backgroundColor = '';
+            targetElement.style.opacity = '';
+          }, 1000);
+        }
+      }
+    }
   }
 
   render() {
@@ -322,8 +486,11 @@ export class ContentViewer extends LitElement {
     }
 
     const presetLabels = {
-      'general': 'General',
-      'community': 'Community'
+      'general': '📰 뉴스',
+      'casual': '💬 캐주얼',
+      'community': '🏠 커뮤니티',
+      'default': '🔍 기본',
+      'developer': '👨‍💻 개발자'
     };
 
     return html`
@@ -332,8 +499,15 @@ export class ContentViewer extends LitElement {
           <div class="markdown-content">
             ${unsafeHTML(this.renderMarkdown(selectedData.summary))}
           </div>
+          <div class="prompt-button-container">
+            <button class="prompt-button" @click=${this.showPrompt}>
+              🤖 프롬프트 보기
+            </button>
+          </div>
         </div>
       </div>
+      
+      ${this.showPromptModal ? this.renderPromptModal(selectedData) : ''}
     `;
   }
 
@@ -412,6 +586,108 @@ export class ContentViewer extends LitElement {
     const div = document.createElement('div');
     div.textContent = text;
     return div.innerHTML;
+  }
+
+  showPrompt() {
+    this.showPromptModal = true;
+    this.disableBodyScroll();
+  }
+
+  hidePrompt() {
+    this.showPromptModal = false;
+    this.enableBodyScroll();
+  }
+
+  disableBodyScroll() {
+    // 현재 스크롤 위치 저장
+    this.originalScrollY = window.scrollY;
+    this.originalBodyOverflow = document.body.style.overflow;
+    this.originalBodyPosition = document.body.style.position;
+    this.originalBodyTop = document.body.style.top;
+
+    // 스크롤 위치 고정
+    document.body.style.overflow = 'hidden';
+    document.body.style.position = 'fixed';
+    document.body.style.top = `-${this.originalScrollY}px`;
+    document.body.style.width = '100%';
+  }
+
+  enableBodyScroll() {
+    // 원래 스타일 복원
+    document.body.style.overflow = this.originalBodyOverflow;
+    document.body.style.position = this.originalBodyPosition;
+    document.body.style.top = this.originalBodyTop;
+    document.body.style.width = '';
+
+    // 스크롤 위치 복원
+    window.scrollTo(0, this.originalScrollY);
+  }
+
+  renderPromptModal(data) {
+    if (!data.systemPrompt && !data.userPrompt) {
+      return html`
+        <div class="prompt-modal" @click=${this.handleModalClick}>
+          <div class="prompt-modal-content" @click=${this.handleModalContentClick}>
+            <div class="prompt-modal-header">
+              <div class="prompt-modal-title">프롬프트 정보</div>
+              <button class="prompt-modal-close" @click=${this.hidePrompt}>×</button>
+            </div>
+            <div class="prompt-modal-body" @scroll=${this.handleModalScroll}>
+              <p style="text-align: center; color: var(--text-secondary); padding: 40px;">
+                이 데이터에는 프롬프트 정보가 포함되어 있지 않습니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    return html`
+      <div class="prompt-modal" @click=${this.handleModalClick}>
+        <div class="prompt-modal-content" @click=${this.handleModalContentClick}>
+          <div class="prompt-modal-header">
+            <div class="prompt-modal-title">🤖 AI 프롬프트 정보</div>
+            <button class="prompt-modal-close" @click=${this.hidePrompt}>×</button>
+          </div>
+          <div class="prompt-modal-body" @scroll=${this.handleModalScroll}>
+            ${data.systemPrompt ? html`
+              <div class="prompt-section">
+                <div class="prompt-section-title">
+                  ⚙️ 시스템 프롬프트
+                </div>
+                <div class="prompt-text">${data.systemPrompt}</div>
+              </div>
+            ` : ''}
+            
+            ${data.userPrompt ? html`
+              <div class="prompt-section">
+                <div class="prompt-section-title">
+                  💬 사용자 프롬프트
+                </div>
+                <div class="prompt-text">${data.userPrompt}</div>
+              </div>
+            ` : ''}
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
+  handleModalClick(e) {
+    // 모달 배경 클릭 시 닫기
+    if (e.target.classList.contains('prompt-modal')) {
+      this.hidePrompt();
+    }
+  }
+
+  handleModalContentClick(e) {
+    // 모달 내용 클릭 시 이벤트 전파 방지
+    e.stopPropagation();
+  }
+
+  handleModalScroll(e) {
+    // 모달 스크롤 이벤트 전파 방지
+    e.stopPropagation();
   }
 
 }

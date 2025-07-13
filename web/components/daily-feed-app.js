@@ -6,14 +6,13 @@ export class DailyFeedApp extends LitElement {
     currentData: { type: Object },
     selectedDate: { type: String },
     currentPreset: { type: String },
+    availablePresets: { type: Array },
     isOffline: { type: Boolean },
-    statusMessage: { type: String },
-    statusType: { type: String },
-    showStatus: { type: Boolean },
+    showLoadingOverlay: { type: Boolean },
+    loadingMessage: { type: String },
     isLoading: { type: Boolean },
     notificationEnabled: { type: Boolean },
-    notificationPermission: { type: String },
-    isRefreshing: { type: Boolean }
+    notificationPermission: { type: String }
   };
 
   static styles = css`
@@ -56,7 +55,7 @@ export class DailyFeedApp extends LitElement {
     .main-content {
       width: 100%;
       background-color: transparent;
-      padding: 32px 32px 0 32px;
+      padding: 0 16px 0 16px;
       overflow-x: hidden;
       box-sizing: border-box;
     }
@@ -104,18 +103,29 @@ export class DailyFeedApp extends LitElement {
       }
 
       .main-content {
-        padding: 20px 20px 0 20px;
+        padding: 0 16px 0 16px;
       }
 
       .controls-row {
-        flex-direction: column;
-        gap: 12px;
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        align-items: center;
       }
 
       .controls-left,
       .controls-right {
-        justify-content: center;
+        display: contents;
       }
+
+      notification-toggle,
+      preset-tabs,
+      date-selector {
+        flex: 1;
+        min-width: 0;
+        width: 0;
+      }
+
     }
 
     /* 태블릿 반응형 */
@@ -135,7 +145,7 @@ export class DailyFeedApp extends LitElement {
       }
 
       .main-content {
-        padding: 24px 24px 0 24px;
+        padding: 0 16px 0 16px;
       }
     }
 
@@ -187,23 +197,67 @@ export class DailyFeedApp extends LitElement {
     .loading-dot:nth-child(3) {
       animation-delay: 0s;
     }
+
+    /* 새로운 로딩 오버레이 */
+    .simple-loading-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(4px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      gap: 16px;
+    }
+
+    /* 다크모드 지원 */
+    @media (prefers-color-scheme: dark) {
+      .simple-loading-overlay {
+        background-color: rgba(23, 25, 35, 0.9);
+      }
+    }
+
+    .simple-spinner {
+      width: 40px;
+      height: 40px;
+      border: 3px solid var(--border-secondary);
+      border-top: 3px solid var(--accent-color);
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    .simple-loading-text {
+      color: var(--text-secondary);
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
   `;
 
   constructor() {
     super();
     this.allDates = [];
+    this.indexData = {}; // 전체 index 데이터 저장
     this.currentData = {};
     this.selectedDate = null;
     this.currentPreset = this.loadPresetFromStorage();
+    this.availablePresets = [];
     this.isOffline = false;
-    this.statusMessage = '';
-    this.statusType = 'loading';
-    this.showStatus = false;
+    this.showLoadingOverlay = false;
+    this.loadingMessage = '';
     this.isLoading = true;
     this.lastKnownDates = [];
     this.notificationPermission = 'default';
     this.notificationEnabled = false;
-    this.isRefreshing = false;
   }
 
   connectedCallback() {
@@ -211,6 +265,7 @@ export class DailyFeedApp extends LitElement {
     this.setupMobileOptimizations();
     this.setupOfflineHandlers();
     this.setupNotifications();
+    this.setupBrowserRefreshHandler();
     this.loadAvailableDates();
     this.setupAutoRefresh();
   }
@@ -242,16 +297,12 @@ export class DailyFeedApp extends LitElement {
                   .permission=${this.notificationPermission}
                   @notification-toggle=${this.handleNotificationToggle}
                 ></notification-toggle>
-                
-                <refresh-button
-                  .isRefreshing=${this.isRefreshing}
-                  @force-refresh=${this.handleForceRefresh}
-                ></refresh-button>
               </div>
               
               <div class="controls-right">
                 <preset-tabs 
                   .currentPreset=${this.currentPreset}
+                  .availablePresets=${this.availablePresets}
                   @preset-changed=${this.handlePresetChange}
                 ></preset-tabs>
                 
@@ -263,12 +314,6 @@ export class DailyFeedApp extends LitElement {
               </div>
             </div>
             
-            <status-display 
-              .message=${this.statusMessage}
-              .type=${this.statusType}
-              .show=${this.showStatus}
-            ></status-display>
-            
             <content-viewer 
               .data=${this.currentData}
               .preset=${this.currentPreset}
@@ -276,6 +321,13 @@ export class DailyFeedApp extends LitElement {
           </div>
         </div>
       </main>
+      
+      ${this.showLoadingOverlay ? html`
+        <div class="simple-loading-overlay">
+          <div class="simple-spinner"></div>
+          <div class="simple-loading-text">${this.loadingMessage}</div>
+        </div>
+      ` : ''}
       
       <toast-notification id="toast"></toast-notification>
       
@@ -287,6 +339,7 @@ export class DailyFeedApp extends LitElement {
     const newDate = e.detail.date;
     if (newDate && newDate !== this.selectedDate) {
       this.selectedDate = newDate;
+      this.updateAvailablePresets();
       this.loadSelectedDate();
     }
   }
@@ -331,30 +384,27 @@ export class DailyFeedApp extends LitElement {
     }
   }
 
-  async handleForceRefresh() {
-    if (this.isRefreshing) return;
+  setupBrowserRefreshHandler() {
+    // 페이지 로드/새로고침 시 캐시 제거 및 강제 새 데이터 로드
+    if (performance.navigation.type === performance.navigation.TYPE_RELOAD) {
+      // 새로고침으로 페이지에 접근한 경우
+      this.handleBrowserRefresh();
+    }
+  }
 
-    this.isRefreshing = true;
-    
+  async handleBrowserRefresh() {
     try {
-      this.showStatusMessage('캐시를 지우고 새로고침하는 중...', 'loading');
+      console.log('브라우저 새로고침 감지 - 캐시 제거 및 새 데이터 로드');
       
       // 모든 캐시 제거
       await this.clearAllCaches();
       
-      // 강제로 새 데이터 로드
-      await this.loadAvailableDates();
-      
-      // Toast로 성공 메시지 표시
-      this.showToast('새로고침 완료!', 'success');
-      
-      this.hideStatus();
+      // Toast로 알림 표시
+      this.showToast('캐시가 제거되고 새 데이터를 불러옵니다', 'success');
       
     } catch (error) {
-      console.error('강제 새로고침 실패:', error);
-      this.showStatusMessage('새로고침 중 오류가 발생했습니다.', 'error');
-    } finally {
-      this.isRefreshing = false;
+      console.error('브라우저 새로고침 처리 실패:', error);
+      this.showToast('캐시 제거 중 오류가 발생했습니다', 'error');
     }
   }
 
@@ -391,7 +441,7 @@ export class DailyFeedApp extends LitElement {
   loadPresetFromStorage() {
     try {
       const savedPreset = localStorage.getItem('daily-feed-preset');
-      const validPresets = ['general', 'community'];
+      const validPresets = ['general', 'casual', 'community', 'default', 'developer'];
       
       if (savedPreset && validPresets.includes(savedPreset)) {
         return savedPreset;
@@ -411,14 +461,13 @@ export class DailyFeedApp extends LitElement {
     }
   }
 
-  showStatusMessage(message, type = 'loading') {
-    this.statusMessage = message;
-    this.statusType = type;
-    this.showStatus = true;
+  showLoading(message = '로딩 중...') {
+    this.loadingMessage = message;
+    this.showLoadingOverlay = true;
   }
 
-  hideStatus() {
-    this.showStatus = false;
+  hideLoading() {
+    this.showLoadingOverlay = false;
   }
 
   showToast(message, type = 'success', autoHide = true, duration = 3000) {
@@ -428,10 +477,25 @@ export class DailyFeedApp extends LitElement {
     }
   }
 
+  updateAvailablePresets() {
+    if (!this.selectedDate || !this.indexData[this.selectedDate]) {
+      this.availablePresets = [];
+      return;
+    }
+    
+    this.availablePresets = this.indexData[this.selectedDate].presets || [];
+    
+    // 현재 선택된 프리셋이 사용 가능한 목록에 없으면 첫 번째 프리셋으로 변경
+    if (this.availablePresets.length > 0 && !this.availablePresets.includes(this.currentPreset)) {
+      this.currentPreset = this.availablePresets[0];
+      this.savePresetToStorage(this.currentPreset);
+    }
+  }
+
   // 기존 script.js의 함수들을 이곳으로 이식
   async loadAvailableDates() {
     try {
-      this.showStatusMessage('날짜 목록을 불러오는 중...', 'loading');
+      this.showLoading('날짜 목록을 불러오는 중...');
       
       const basePath = this.getBasePath();
       const url = `${basePath}/data/summaries/index.json?t=${Date.now()}`;
@@ -453,6 +517,13 @@ export class DailyFeedApp extends LitElement {
       }
       
       const index = await response.json();
+      
+      // index 전체 데이터 저장
+      this.indexData = {};
+      index.forEach(entry => {
+        this.indexData[entry.date] = entry;
+      });
+      
       const newDates = index.map(entry => entry.date).sort().reverse();
       
       // 새로운 날짜가 추가되었는지 확인
@@ -462,25 +533,29 @@ export class DailyFeedApp extends LitElement {
       
       if (this.allDates.length > 0) {
         this.selectedDate = this.allDates[0];
+        this.updateAvailablePresets();
         await this.loadSelectedDate();
       } else {
-        this.showStatusMessage('아직 생성된 요약이 없습니다.', 'error');
+        this.showToast('아직 생성된 요약이 없습니다.', 'error');
+        this.hideLoading();
       }
       
       // 로딩 완료
       this.isLoading = false;
+      this.hideLoading();
       
     } catch (error) {
       console.error('날짜 목록 로드 실패:', error);
       
       // 오류 발생 시에도 로딩 숨김
       this.isLoading = false;
+      this.hideLoading();
       
       if (error.message === 'OFFLINE') {
-        this.showStatusMessage('오프라인 상태입니다. 캐시된 데이터가 없습니다.', 'error');
+        this.showToast('오프라인 상태입니다. 캐시된 데이터가 없습니다.', 'error', true, 5000);
         this.tryLoadFromLocalStorage();
       } else {
-        this.showStatusMessage('날짜 목록을 불러오는데 실패했습니다. 잠시 후 다시 시도해주세요.', 'error');
+        this.showToast('날짜 목록을 불러오는데 실패했습니다.', 'error', true, 5000);
       }
     }
   }
@@ -489,10 +564,10 @@ export class DailyFeedApp extends LitElement {
     if (!this.selectedDate) return;
     
     try {
-      this.showStatusMessage('데이터를 불러오는 중...', 'loading');
+      this.showLoading('데이터를 불러오는 중...');
       
       const basePath = this.getBasePath();
-      const presets = ['general', 'community'];
+      const presets = this.availablePresets || ['general'];
       const newData = { date: this.selectedDate, summaries: {} };
       
       const promises = presets.map(async preset => {
@@ -517,7 +592,7 @@ export class DailyFeedApp extends LitElement {
       // 새로운 객체로 할당하여 Lit 리액티브 시스템 트리거
       this.currentData = { ...newData };
       this.saveToLocalStorage();
-      this.hideStatus();
+      this.hideLoading();
       
     } catch (error) {
       console.error('데이터 로드 실패:', error);
@@ -526,12 +601,14 @@ export class DailyFeedApp extends LitElement {
         const cachedData = this.tryLoadDateFromLocalStorage(this.selectedDate);
         if (cachedData) {
           this.currentData = { ...cachedData };
-          this.showStatusMessage('오프라인 상태 - 캐시된 데이터를 표시합니다.', 'offline');
+          this.showToast('오프라인 상태 - 캐시된 데이터를 표시합니다.', 'offline', true, 5000);
+          this.hideLoading();
           return;
         }
       }
       
-      this.showStatusMessage('데이터를 불러오는데 실패했습니다.', 'error');
+      this.showToast('데이터를 불러오는데 실패했습니다.', 'error');
+      this.hideLoading();
     }
   }
 
@@ -576,7 +653,7 @@ export class DailyFeedApp extends LitElement {
     
     this.isOffline = !navigator.onLine;
     if (this.isOffline) {
-      this.showStatusMessage('오프라인 상태입니다. 캐시된 데이터를 불러옵니다.', 'offline');
+      this.showToast('오프라인 상태입니다. 캐시된 데이터를 불러옵니다.', 'offline', true, 5000);
     }
   }
 
@@ -721,7 +798,7 @@ export class DailyFeedApp extends LitElement {
           
           if (this.allDates.length > 0) {
             this.selectedDate = this.allDates[0];
-            this.showStatusMessage(`캐시된 데이터를 표시합니다 (${Math.round(ageHours)}시간 전 데이터)`, 'offline');
+            this.showToast(`캐시된 데이터를 표시합니다 (${Math.round(ageHours)}시간 전 데이터)`, 'offline', true, 5000);
             return true;
           }
         }

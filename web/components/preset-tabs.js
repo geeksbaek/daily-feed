@@ -2,7 +2,8 @@ import { LitElement, html, css } from 'https://unpkg.com/lit@3?module';
 
 export class PresetTabs extends LitElement {
   static properties = {
-    currentPreset: { type: String }
+    currentPreset: { type: String },
+    availablePresets: { type: Array }
   };
 
   static styles = css`
@@ -32,6 +33,16 @@ export class PresetTabs extends LitElement {
       transition: all 0.2s ease;
     }
 
+    @media (max-width: 768px) {
+      .preset-select {
+        min-width: unset;
+        width: 100%;
+        padding: 6px 20px 6px 4px;
+        background-position: right 4px center;
+        background-size: 10px;
+      }
+    }
+
     .preset-select:hover {
       border-color: var(--accent-color);
       background-color: var(--bg-secondary);
@@ -47,25 +58,43 @@ export class PresetTabs extends LitElement {
   constructor() {
     super();
     this.currentPreset = 'general';
+    this.availablePresets = [];
   }
 
   render() {
-    const presets = [
-      { key: 'general', label: '📰 일반' },
-      { key: 'community', label: '💬 커뮤니티' }
-    ];
+    const presetLabels = this.getPresetLabels();
+    
+    if (!this.availablePresets || this.availablePresets.length === 0) {
+      return html`
+        <div class="preset-selector">
+          <select class="preset-select" disabled>
+            <option>프리셋 없음</option>
+          </select>
+        </div>
+      `;
+    }
 
     return html`
       <div class="preset-selector">
         <select class="preset-select" @change=${this.handlePresetChange}>
-          ${presets.map(preset => html`
-            <option value=${preset.key} ?selected=${preset.key === this.currentPreset}>
-              ${preset.label}
+          ${this.availablePresets.map(presetKey => html`
+            <option value=${presetKey} ?selected=${presetKey === this.currentPreset}>
+              ${presetLabels[presetKey] || presetKey}
             </option>
           `)}
         </select>
       </div>
     `;
+  }
+
+  getPresetLabels() {
+    return {
+      'general': '📰 뉴스',
+      'casual': '💬 캐주얼',
+      'community': '🏠 커뮤니티',
+      'default': '🔍 기본',
+      'developer': '👨‍💻 개발자'
+    };
   }
 
   handlePresetChange(e) {

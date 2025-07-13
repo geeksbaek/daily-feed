@@ -40,6 +40,16 @@ export class DateSelector extends LitElement {
       transition: all 0.2s ease;
     }
 
+    @media (max-width: 768px) {
+      .date-select {
+        min-width: unset;
+        width: 100%;
+        padding: 6px 20px 6px 4px;
+        background-position: right 4px center;
+        background-size: 10px;
+      }
+    }
+
     .date-select:hover {
       border-color: var(--accent-color);
       background-color: var(--bg-secondary);

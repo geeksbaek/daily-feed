@@ -33,6 +33,15 @@ export class NotificationToggle extends LitElement {
       user-select: none;
     }
 
+    @media (max-width: 768px) {
+      .toggle-button {
+        min-width: unset;
+        width: 100%;
+        padding: 6px 4px;
+        gap: 4px;
+      }
+    }
+
     .toggle-button:hover {
       border-color: var(--accent-color);
       background-color: var(--bg-secondary);
@@ -90,9 +99,9 @@ export class NotificationToggle extends LitElement {
     };
 
     const getText = () => {
-      if (this.permission === 'denied') return '알림 차단됨';
-      if (this.enabled && this.permission === 'granted') return '알림 켜짐';
-      return '알림 꺼짐';
+      if (this.permission === 'denied') return '차단됨';
+      if (this.enabled && this.permission === 'granted') return '켜짐';
+      return '꺼짐';
     };
 
     return html`

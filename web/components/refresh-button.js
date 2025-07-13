@@ -28,6 +28,13 @@ export class RefreshButton extends LitElement {
       user-select: none;
     }
 
+    @media (max-width: 768px) {
+      .refresh-button {
+        width: 100%;
+        padding: 6px 4px;
+      }
+    }
+
     .refresh-button:hover {
       border-color: var(--accent-color);
       background-color: var(--bg-secondary);

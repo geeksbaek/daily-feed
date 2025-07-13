@@ -2,8 +2,8 @@ name: Daily Feed Generation
 
 on:
   schedule:
-    # 매일 새벽 2시 (한국 시간) = UTC 17시
-    - cron: '0 17 * * *'
+    # 매일 오전 7시 (한국 시간) = UTC 22시
+    - cron: '0 22 * * *'
   # 수동 실행 가능
   workflow_dispatch:
 
