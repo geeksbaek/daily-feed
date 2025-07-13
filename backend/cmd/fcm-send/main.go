@@ -2,6 +2,8 @@ package main
 
 import (
 	"context"
+	"encoding/base64"
+	"encoding/json"
 	"flag"
 	"fmt"
 	"log"
@@ -48,8 +50,20 @@ func main() {
 			log.Fatal("Service Account 키를 지정해주세요: --service-account 플래그 또는 FIREBASE_SERVICE_ACCOUNT_KEY 환경변수")
 		}
 		
-		// JSON 데이터로 직접 사용 (GitHub Actions 등에서)
-		serviceAccountKey = []byte(keyData)
+		// Base64로 인코딩되어 있는지 확인하고 디코딩 시도
+		if decoded, err := base64.StdEncoding.DecodeString(keyData); err == nil {
+			// Base64 디코딩 성공하면 JSON 유효성 검사
+			var temp interface{}
+			if json.Unmarshal(decoded, &temp) == nil {
+				serviceAccountKey = decoded
+			} else {
+				// JSON이 아니면 원본 데이터 사용
+				serviceAccountKey = []byte(keyData)
+			}
+		} else {
+			// Base64가 아니면 원본 데이터를 JSON으로 직접 사용
+			serviceAccountKey = []byte(keyData)
+		}
 	}
 
 	// FCM 클라이언트 생성
