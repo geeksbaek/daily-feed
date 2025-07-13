@@ -40,20 +40,35 @@ export class FirebasePushManager {
       console.log('Service Worker 등록 완료:', registration);
       
       // Service Worker가 활성화될 때까지 대기
+      console.log('Service Worker 활성화 대기 시작...');
+      console.log('Registration 상태:', {
+        installing: !!registration.installing,
+        waiting: !!registration.waiting,
+        active: !!registration.active
+      });
+      
       if (registration.installing) {
+        console.log('Service Worker 설치 중, 활성화 대기...');
         await new Promise((resolve) => {
           const worker = registration.installing;
           worker.addEventListener('statechange', () => {
+            console.log('Service Worker 상태 변경:', worker.state);
             if (worker.state === 'activated') {
+              console.log('Service Worker 활성화 완료');
               resolve();
             }
           });
         });
       } else if (!registration.active) {
+        console.log('Service Worker 준비 대기...');
         await navigator.serviceWorker.ready;
+        console.log('Service Worker 준비 완료');
+      } else {
+        console.log('Service Worker 이미 활성화됨');
       }
       
       // 포그라운드 메시지 수신 처리
+      console.log('포그라운드 메시지 핸들러 등록...');
       onMessage(this.messaging, (payload) => {
         console.log('포그라운드 메시지 수신:', payload);
         this.showNotification(payload);
