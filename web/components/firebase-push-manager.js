@@ -114,6 +114,10 @@ export class FirebasePushManager {
 
       if (this.token) {
         console.log('FCM 토큰 획득 성공:', this.token);
+        
+        // daily-feed 토픽에 구독
+        await this.subscribeToTopic(this.token, 'daily-feed');
+        
         await this.sendTokenToServer(this.token);
         return this.token;
       } else {
@@ -216,6 +220,29 @@ export class FirebasePushManager {
       }
     } catch (error) {
       console.error('테스트 알림 발송 실패:', error);
+      throw error;
+    }
+  }
+
+  // 토픽 구독 (GitHub Actions API 호출)
+  async subscribeToTopic(token, topic) {
+    try {
+      console.log(`토픽 '${topic}'에 구독 시도...`);
+      
+      // GitHub Actions의 FCM 토픽 구독 워크플로우 호출
+      // 실제로는 서버 API가 필요하지만, 여기서는 로컬 스토리지에 저장
+      const subscriptions = JSON.parse(localStorage.getItem('fcm-subscriptions') || '[]');
+      if (!subscriptions.includes(topic)) {
+        subscriptions.push(topic);
+        localStorage.setItem('fcm-subscriptions', JSON.stringify(subscriptions));
+        console.log(`토픽 '${topic}' 구독 완료 (로컬 저장)`);
+      }
+      
+      // 실제 Firebase Admin SDK를 통한 토픽 구독은 백엔드에서 처리해야 함
+      // TODO: 서버 API로 토큰과 토픽을 보내서 구독 처리
+      
+    } catch (error) {
+      console.error('토픽 구독 실패:', error);
       throw error;
     }
   }

@@ -1,0 +1,63 @@
+name: FCM Topic Subscribe
+
+on:
+  workflow_dispatch:
+    inputs:
+      token:
+        description: 'FCM Token'
+        required: true
+        type: string
+      topic:
+        description: 'Topic to subscribe'
+        required: false
+        default: 'daily-feed'
+        type: string
+      unsubscribe:
+        description: 'Unsubscribe from topic'
+        required: false
+        default: false
+        type: boolean
+
+jobs:
+  subscribe-to-topic:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Setup Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: '1.23'
+          cache: true
+          
+      - name: Cache Go modules
+        uses: actions/cache@v3
+        with:
+          path: ~/go/pkg/mod
+          key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum') }}
+          restore-keys: |
+            ${{ runner.os }}-go-
+
+      - name: Subscribe to FCM topic
+        if: ${{ !inputs.unsubscribe }}
+        working-directory: backend
+        env:
+          FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
+        run: |
+          echo "📱 토픽 '${{ inputs.topic }}'에 구독 중..."
+          go run cmd/fcm-subscribe/main.go \
+            --token "${{ inputs.token }}" \
+            --topic "${{ inputs.topic }}"
+
+      - name: Unsubscribe from FCM topic
+        if: ${{ inputs.unsubscribe }}
+        working-directory: backend
+        env:
+          FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
+        run: |
+          echo "📱 토픽 '${{ inputs.topic }}'에서 구독 해제 중..."
+          go run cmd/fcm-subscribe/main.go \
+            --token "${{ inputs.token }}" \
+            --topic "${{ inputs.topic }}" \
+            --unsubscribe
