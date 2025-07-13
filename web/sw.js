@@ -127,22 +127,87 @@ self.addEventListener('sync', event => {
 });
 
 // 푸시 알림 (선택적)
+// 푸시 알림 수신
 self.addEventListener('push', event => {
+  console.log('푸시 메시지 수신:', event);
+  
   if (event.data) {
     const data = event.data.json();
+    console.log('푸시 데이터:', data);
+    
     const options = {
-      body: data.body,
-      icon: '/daily-feed/icons/android-chrome-192x192.png',
-      badge: '/daily-feed/icons/favicon-32x32.png',
-      vibrate: [100, 50, 100],
+      body: data.body || '새로운 Daily Feed가 준비되었습니다!',
+      icon: data.icon || '/daily-feed/favicon-32x32.png',
+      badge: data.badge || '/daily-feed/favicon-16x16.png',
+      tag: data.tag || 'daily-feed',
+      renotify: true,
+      requireInteraction: false,
+      actions: [
+        {
+          action: 'open',
+          title: '보기',
+          icon: '/daily-feed/favicon-16x16.png'
+        },
+        {
+          action: 'close',
+          title: '닫기'
+        }
+      ],
       data: {
+        url: data.url || '/daily-feed/',
         dateOfArrival: Date.now(),
-        primaryKey: 1
+        clickAction: data.url
       }
     };
     
     event.waitUntil(
-      self.registration.showNotification(data.title, options)
+      self.registration.showNotification(data.title || 'Daily Feed', options)
+    );
+  } else {
+    // 데이터가 없는 경우 기본 알림
+    event.waitUntil(
+      self.registration.showNotification('Daily Feed', {
+        body: '새로운 기술 뉴스 요약이 준비되었습니다!',
+        icon: '/daily-feed/favicon-32x32.png',
+        badge: '/daily-feed/favicon-16x16.png',
+        tag: 'daily-feed-default'
+      })
     );
   }
+});
+
+// 알림 클릭 처리
+self.addEventListener('notificationclick', event => {
+  console.log('알림 클릭:', event);
+  
+  event.notification.close();
+  
+  const urlToOpen = event.notification.data?.url || '/daily-feed/';
+  
+  event.waitUntil(
+    clients.matchAll({
+      type: 'window',
+      includeUncontrolled: true
+    }).then(clientList => {
+      // 이미 열린 창이 있으면 포커스
+      for (const client of clientList) {
+        if (client.url.includes('/daily-feed') && 'focus' in client) {
+          return client.focus().then(() => {
+            // URL 변경이 필요하면 메시지 전송
+            if (urlToOpen !== client.url) {
+              client.postMessage({
+                type: 'NAVIGATE',
+                url: urlToOpen
+              });
+            }
+          });
+        }
+      }
+      
+      // 열린 창이 없으면 새 창 열기
+      if (clients.openWindow) {
+        return clients.openWindow(urlToOpen);
+      }
+    })
+  );
 });

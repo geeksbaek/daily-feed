@@ -19,6 +19,10 @@ go test ./pkg/feed/       # Run feed package tests specifically
 # Development with specific presets
 go run . --preset general | pbcopy       # Copy output to clipboard (macOS)
 go run . --preset community > output.md  # Save to file
+
+# FCM push notifications
+go run cmd/fcm-send/main.go --token "FCM_TOKEN" --title "Test" --body "Hello"
+go run cmd/fcm-send/main.go --topic "all_users" --title "Daily Feed" --body "New content available"
 ```
 
 ## Architecture Overview
@@ -32,6 +36,7 @@ Daily Feed is a Go-based RSS/Atom feed aggregator with AI-powered summarization:
 - **`pkg/config/`**: Configuration validation and management
 - **`pkg/feed/`**: Feed loading (CSV) and processing (RSS/Atom parsing)
 - **`pkg/ai/`**: AI summarization using Google Gemini API and output formatting
+- **`pkg/fcm/`**: Firebase Cloud Messaging client for push notifications
 - **`pkg/utils/`**: Utilities for XML entity fixing, date parsing, error handling
 
 ### Feed Processing Flow
@@ -54,6 +59,7 @@ Daily Feed is a Go-based RSS/Atom feed aggregator with AI-powered summarization:
 
 Environment variables:
 - `GEMINI_API_KEY`: Required for AI summarization
+- `FIREBASE_SERVICE_ACCOUNT_KEY`: Required for FCM push notifications
 
 Command-line flags:
 - `--feeds`: CSV file path (default: `feeds.csv`)
@@ -76,5 +82,6 @@ Test files are located in `pkg/feed/processor_test.go`.
 ## Dependencies
 
 - **Google Generative AI SDK**: `google.golang.org/genai` for Gemini API
+- **Firebase Admin SDK**: `firebase.google.com/go/v4` for FCM push notifications
 - **Standard library**: Primarily uses Go stdlib for HTTP, XML, CSV processing
 - **Go 1.23+**: Uses modern Go features and toolchain

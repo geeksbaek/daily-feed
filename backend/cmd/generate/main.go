@@ -1,9 +1,11 @@
 package main
 
 import (
+	"bytes"
 	"context"
 	"encoding/json"
 	"fmt"
+	"net/http"
 	"os"
 	"path/filepath"
 	"time"
@@ -112,6 +114,15 @@ func main() {
 	}
 	
 	fmt.Printf("Daily Feed 생성 완료: %s\n", today)
+	
+	// 푸시 알림 발송 (성공한 프리셋이 하나라도 있으면)
+	if len(allSummaries) > 0 {
+		if err := sendPushNotification(today); err != nil {
+			fmt.Printf("푸시 알림 발송 실패: %v\n", err)
+		} else {
+			fmt.Printf("푸시 알림 발송 완료: %s\n", today)
+		}
+	}
 }
 
 // runFeedGeneration은 기존 app.RunAndReturnData를 사용하여 데이터를 반환
@@ -198,4 +209,36 @@ func updateIndex(date string, presets []string, articleCount int) error {
 	}
 	
 	return saveJSON(index, indexPath)
+}
+
+func sendPushNotification(date string) error {
+	pushServerURL := os.Getenv("PUSH_SERVER_URL")
+	if pushServerURL == "" {
+		pushServerURL = "http://localhost:8080/api" // 기본값
+	}
+
+	payload := map[string]string{
+		"date": date,
+	}
+
+	payloadBytes, err := json.Marshal(payload)
+	if err != nil {
+		return fmt.Errorf("payload 직렬화 실패: %w", err)
+	}
+
+	resp, err := http.Post(
+		pushServerURL+"/notify",
+		"application/json",
+		bytes.NewBuffer(payloadBytes),
+	)
+	if err != nil {
+		return fmt.Errorf("푸시 알림 요청 실패: %w", err)
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != http.StatusOK {
+		return fmt.Errorf("푸시 알림 서버 오류: %d", resp.StatusCode)
+	}
+
+	return nil
 }
