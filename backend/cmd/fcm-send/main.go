@@ -21,7 +21,7 @@ func main() {
 		title             = flag.String("title", "Daily Feed", "알림 제목")
 		body              = flag.String("body", "새로운 기술 뉴스가 준비되었습니다!", "알림 내용")
 		date              = flag.String("date", "", "날짜 (YYYY-MM-DD)")
-		url               = flag.String("url", "/daily-feed/", "이동할 URL")
+		url               = flag.String("url", "https://geeksbaek.github.io/daily-feed/", "이동할 URL")
 	)
 	flag.Parse()
 
@@ -30,8 +30,8 @@ func main() {
 		*date = time.Now().Format("2006-01-02")
 	}
 	
-	if *url == "/daily-feed/" && *date != "" {
-		*url = fmt.Sprintf("/daily-feed/?date=%s", *date)
+	if *url == "https://geeksbaek.github.io/daily-feed/" && *date != "" {
+		*url = fmt.Sprintf("https://geeksbaek.github.io/daily-feed/?date=%s", *date)
 	}
 
 	// Service Account 키 로드
@@ -50,12 +50,6 @@ func main() {
 			log.Fatal("Service Account 키를 지정해주세요: --service-account 플래그 또는 FIREBASE_SERVICE_ACCOUNT_KEY 환경변수")
 		}
 		
-		// 환경변수 데이터 앞부분 로깅 (디버깅용)
-		if len(keyData) > 20 {
-			log.Printf("키 데이터 앞부분: %s...", keyData[:20])
-		} else {
-			log.Printf("키 데이터: %s", keyData)
-		}
 		
 		// Base64로 인코딩되어 있는지 확인하고 디코딩 시도 (표준 Base64와 URL-safe Base64 모두 시도)
 		var decoded []byte
@@ -88,14 +82,11 @@ func main() {
 			// Base64 디코딩 성공하면 JSON 유효성 검사
 			var temp interface{}
 			if json.Unmarshal(decoded, &temp) == nil {
-				log.Printf("Base64 디코딩 성공, JSON 유효")
 				serviceAccountKey = decoded
 			} else {
-				log.Printf("Base64 디코딩 성공, 하지만 유효한 JSON이 아님")
 				serviceAccountKey = []byte(keyData)
 			}
 		} else {
-			log.Printf("Base64 디코딩 실패, 원본 데이터를 JSON으로 사용")
 			serviceAccountKey = []byte(keyData)
 		}
 	}
