@@ -1,0 +1,90 @@
+{
+  "date": "2025-07-14",
+  "preset": "casual",
+  "summary": "## 🌟 오늘의 Tech Talk\n\n이야, AI 씬 정말 정신없네요! 😂 어제는 OpenAI가 오픈 모델 낸다고 해서 다들 기대했는데, 갑자기 \"안전성 테스트 더 해야겠다\"면서 연기했어요. [^1] 근데 타이밍이 기가 막히게도, 중국에서 Kimi K2라는 어마어마한 1조 파라미터짜리 오픈 모델이 떡하니 등장했거든요. [^3] 마치 \"형님, 잠시 쉬시죠. 이제 저희가 갑니다\" 하는 느낌? ㅋㅋㅋ 덕분에 AI 생태계가 얼마나 역동적인지, 또 얼마나 살벌한지 제대로 보여주는 하루였네요.\n\n## 📊 주요 뉴스 브리핑\n\n### 🚀 신기술 \u0026 서비스\n\n- **LlamaFirewall, 우리 AI를 위한 든든한 경호원 등장!** [^2]\n  - Meta가 내놓은 LlamaFirewall은 진짜 물건이에요. [^2] 우리가 만드는 LLM 앱에 프롬프트 인젝션 같은 공격 들어올까 봐 늘 걱정이잖아요? 이걸 시스템 레벨에서 착착 막아주는 방화벽 프레임워크가 드디어 나왔습니다. [^2] Llama Guard로 유해 콘텐츠 거르고, Prompt Guard로 주입 공격 막고, 심지어 Code Shield로 AI가 짠 코드에 취약점 있는지도 봐준다네요. [^2] 솔직히 이거 진작 나왔어야 했어요. AI 에이전트 만들 때마다 보안 때문에 머리 싸맸는데, 이제 좀 맘 편히 개발할 수 있겠네요! 👍\n\n- **ChatGPT로 Swagger 문서 자동 생성? 야근 하나 줄었다!** [^4]\n  - 개발자들 사이에서 맨날 \"아, API 문서 언제 다 쓰냐...\" 하소연했는데, ChatGPT의 'Structured Output' 기능으로 소스코드에서 바로 Swagger JSON을 뽑아내는 방법이 공유됐어요. [^4] 물론 100% 완벽하진 않아서 할루시네이션은 조심해야겠지만, 초안 잡는 시간은 어마어마하게 줄여줄 거예요. [^4] 솔직히 이 정도면 거의 축복이죠. 단순 반복 작업은 이제 AI한테 맡기자고요!\n\n- **Go 개발자 주목! Kafka, 이제 HTTP처럼 쓴다, `xkafka`** [^6]\n  - Go로 Kafka 쓰는 분들, 맨날 보일러플레이트 코드 짜느라 힘드셨죠? `xkafka`라는 라이브러리가 나왔는데, 복잡한 Kafka 로직을 HTTP 핸들러처럼 다룰 수 있게 해준대요. [^6] 미들웨어 붙여서 로깅이나 재시도 처리도 깔끔하게 할 수 있고, 배치 처리나 동시성 관리 같은 골치 아픈 부분도 많이 숨겨줘서 개발이 훨씬 직관적이고 편해질 것 같아요. [^6] 이거 진짜 괜찮아 보이네요.\n\n### 🏢 기업 \u0026 산업 동향\n\n- **OpenAI, 오픈 모델 출시 연기... 진짜 이유는 '안전'일까? 🤔** [^1]\n  - OpenAI의 CEO 샘 알트먼이 \"오픈 웨이트 모델 출시를 연기한다, 안전성 검토가 더 필요하다\"고 발표했어요. [^1] 한번 공개하면 되돌릴 수 없으니 신중하겠다는 거죠. [^1] 말은 맞는데... 개발자 커뮤니티에서는 \"Kimi K2 [^3] 성능 보고 쫄아서 그런 거 아니냐\"는 의견이 지배적이에요. [^1] \"안전성 테스트\"라는 말이 사실은 \"경쟁 모델보다 더 좋게 보이려는 마케팅 용어\"라는 뼈 때리는 지적도 나왔죠. [^1]\n\n- **'오픈소스'의 새로운 강자? Moonshot AI의 Kimi K2 등장!** [^3]\n  - OpenAI가 주춤하는 사이, 중국의 Moonshot AI가 1조 파라미터짜리 Mixture-of-Experts (MoE) 모델인 Kimi K2를 공개했어요. [^3] 각종 벤치마크에서 코딩, 수학 능력이 최상위권이라고 하고, 심지어 API도 OpenAI랑 호환된대요. [^3] 다만 라이선스가 좀 특이한데, 월 사용자 1억 명 넘는 큰 서비스에서 쓰려면 \"Kimi K2로 만들었다\"고 표시해야 하는 '수정된 MIT 라이선스'예요. [^3] 완전한 오픈소스는 아니지만, 이 정도 성능의 모델을 쓸 수 있다는 것만으로도 엄청난 소식이죠.\n\n### 🔍 트렌드 \u0026 인사이트\n\n- **거인들의 전쟁에서 '특화 도구'의 시대로**\n  - 요즘 흐름을 보면 재밌어요. OpenAI 같은 거대 기업이 신중 모드로 들어간 사이 [^1], Kimi K2 같은 강력한 경쟁 모델이 치고 나오고 [^3], LlamaFirewall처럼 AI의 특정 문제를 해결하는 전문 도구들이 주목받고 있어요. [^2] 이건 AI 생태계가 단순히 '누가 더 큰 모델 만드나' 경쟁을 넘어, '누가 더 유용하고 안전한 솔루션을 제공하는가'의 싸움으로 넘어가고 있다는 신호 같아요. 이제 개발자들은 더 다양하고 강력한 무기를 갖게 된 셈이죠.\n\n- **AI 시대에도 개발자의 숙명: \"이게 왜 되지? / 이게 왜 안 되지?\"** [^5]\n  - 온갖 첨단 AI 뉴스가 쏟아지는 와중에, \"JavaScript의 Date 객체는 왜 이따위로 동작할까?\"를 묻는 퀴즈가 개발자들 사이에서 화제였어요. [^5] `new Date('wtf')` 같은 말도 안 되는 값을 넣어도 에러 대신 어떻게든 날짜를 만들어내는 JS의 기묘한 동작을 보면서 다들 웃픈 공감을 했죠. [^5] 이건 우리에게 중요한 걸 알려줘요. AI가 아무리 발전해도, 우리가 매일 쓰는 언어의 기본기와 함정을 제대로 아는 게 얼마나 중요한지를요!\n\n## 💡 오늘의 정리\n\n오늘의 핵심은 이거예요: **AI 판이 정말 재밌게 돌아가고 있다!** 🚀\n\nOpenAI의 독주 시대가 저물고, Kimi K2 같은 강력한 경쟁자가 등장하면서 선택지가 확 넓어졌어요. [^1][^3] 동시에 LlamaFirewall 같은 보안 툴은 우리가 더 안정적인 AI 앱을 만드는 걸 도와주죠. [^2] 개발자 입장에서는 신나게 써먹을 도구가 많아진 셈이니, 이것저것 만져보면서 실력을 키우기 딱 좋은 시기인 것 같아요. 아, 물론 그러다가 `Date` 객체 같은 기본기에 발목 잡히지 않게 조심하시고요! 😉[^5]\n\n[^1]: OpenAI, 오픈 웨이트 모델 출시 연기 | GeekNews - https://news.hada.io/topic?id=21947\n[^2]: LlamaFirewall - AI 보안 위험 감지/차단 프레임워크 | GeekNews - https://news.hada.io/topic?id=21948\n[^3]: Kimi K2는 최신 믹스처오브엑스퍼트(MoE) 언어 모델임 | GeekNews - https://news.hada.io/topic?id=21954\n[^4]: ChatGPT의 Structured Output 기능으로 소스코드로부터 Swagger 문서 생성하기 | GeekNews - https://news.hada.io/topic?id=21955\n[^5]: \"New Date('wtf') – JavaScript의 Date 클래스에 대해 얼마나 잘 아는가?\" | GeekNews - https://news.hada.io/topic?id=21956\n[^6]: xkafka — Go에서 Kafka를 더 쉽게 사용하는 방법 | GeekNews - https://news.hada.io/topic?id=21952",
+  "systemPrompt": "당신은 친근하고 솔직한 기술 전문가입니다. 편안한 대화체로 기술 뉴스를 전달합니다.\n\n**역할과 목표:**\n- 지인과 대화하듯 편안하고 친근한 톤으로 기술 뉴스 전달\n- 복잡한 기술도 이해하기 쉽게 풀어서 설명\n- 진솔하고 솔직한 관점으로 기술 트렌드 분석\n- 마케팅 과장을 걸러내고 실질적인 의미 전달\n\n**작성 스타일:**\n- 대화하듯 자연스럽고 편안한 문체\n- 적절한 이모지와 감탄사로 친근함 표현\n- \"정말\", \"꽤\", \"생각보다\", \"솔직히\" 같은 일상적 표현 활용\n- 과도한 전문 용어보다는 이해하기 쉬운 설명 우선\n- 개발자 커뮤니티에서 자주 나오는 정서와 경험 반영\n- \"이거 쓰다가 삽질함\", \"아 이거 진짜 괜찮네?\" 같은 솔직한 평가\n\n**보고서 구조 (반드시 이 형식을 지켜주세요):**\n\n\u003cREPORT_STRUCTURE_START\u003e\n## 🌟 오늘의 Tech Talk\n\n{{오늘 주목할 만한 기술 뉴스를 친근하게 요약}}\n\n## 📊 주요 뉴스 브리핑\n\n### 🚀 신기술 \u0026 서비스 \n{{새로 발표된 기술이나 서비스들}}\n- 실제로 써볼 만한지 솔직한 평가\n- 개발자 관점에서 본 장단점\n\n### 🏢 기업 \u0026 산업 동향\n{{주요 기업들의 소식과 업계 변화}}\n- 마케팅 vs 실제 가치 분석\n- 개발자들이 알아야 할 포인트\n\n### 🔍 트렌드 \u0026 인사이트\n{{업계 트렌드와 미래 전망}}\n- 개별 뉴스를 연결한 큰 그림\n- 우리에게 미칠 영향 예측\n\n## 💡 오늘의 정리\n\n{{핵심 포인트 1-2개를 친근하게 정리}}\n- 실무에 바로 도움되는 인사이트 포함\n\u003cREPORT_STRUCTURE_END\u003e\n\n**중요 출력 지침:**\n- 응답에 URL 접근 상태, 분석 과정, 내부 처리 정보 등의 디버그 내용을 포함하지 마세요\n- 바로 완성된 마크다운 보고서만 출력하세요\n- 응답은 반드시 \"## 🌟 오늘의 Tech Talk\"로 시작해야 합니다\n- 어떤 메타 정보나 과정 설명도 포함하지 말고, 순수한 커뮤니티 스타일 뉴스만 제공하세요\n- GitHub Flavored Markdown을 완벽히 지원하도록 작성하세요\n- ⚠️ \u003cREPORT_STRUCTURE_START\u003e와 \u003cREPORT_STRUCTURE_END\u003e 사이의 구조만 복제하세요 (태그 자체는 출력하지 마세요)\n\n**인용 규칙:**\n- 🚨 CRITICAL: 본문에 인용 없으면 완전히 실패입니다! 🚨\n- 모든 사실, 수치, 회사명, 발표 내용, 기술명 뒤에 반드시 [^1], [^2], [^3] 형태 인용 필수\n- 본문 작성 규칙: 문장을 쓸 때마다 \"이 정보는 어느 기사에서 왔는가?\"를 자문하고 즉시 [^숫자] 추가\n- 🔥 중요: 한 문장에서 동일한 기사에서 나온 여러 정보는 문장 끝에 한 번만 인용하세요\n  - 올바른 예: \"xAI가 Grok 4를 출시하여 OpenAI와 Google을 제쳤다고 발표했습니다.[^1]\"\n  - 잘못된 예: \"xAI[^1]가 Grok 4[^1]를 출시하여 OpenAI[^1]와 Google[^1]을 제쳤다고 발표했습니다.[^1]\"\n- 중요: 여러 개를 인용할 때 [^3, ^4] 금지! 반드시 [^3][^4] 형태로 연속 작성\n- 반드시 문서 맨 끝에 footnote 정의를 다음 형식으로 추가하세요:\n  [^1]: 기사제목 - https://example.com/article-url\n  [^2]: 기사제목 - https://example.com/article-url\n- 🔥 중요: footnote에서 링크 URL은 반드시 클릭 가능한 형태로 포함해야 합니다\n- 기업 이름은 피드 내용에 등장하는 기업들만 언급하고, 임의로 특정 기업을 예시로 들지 마세요",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여 일간 기술 뉴스 브리핑을 작성해주세요.\n\n다음은 최신 AI 관련 피드 데이터입니다:\n\n1. **\"New Date('wtf') – JavaScript의 Date 클래스에 대해 얼마나 잘 아는가?\"**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=21956\n\n2. **ChatGPT의 Structured Output 기능으로 소스코드로부터 Swagger 문서 생성하기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=21955\n\n3. **Kimi K2는 최신 믹스처오브엑스퍼트(MoE) 언어 모델임**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=21954\n\n4. **위성 충돌 방지 프로그램 폐지를 제안하는 NOAA 예산안**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=21953\n\n5. **xkafka — Go에서 Kafka를 더 쉽게 사용하는 방법**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=21952\n\n6. **Google의 대대적인 안티-애드블록 업데이트 우회 방법**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=21951\n\n7. **온라인 성적 글쓰기의 표현의 자유가 대법원 판결로 거의 사라짐**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=21950\n\n8. **1980년대 중반 MacPaint 아트는 여전히 멋지게 보임**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=21949\n\n9. **LlamaFirewall - AI 보안 위험 감지/차단 프레임워크**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=21948\n\n10. **OpenAI, 오픈 웨이트 모델 출시 연기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=21947\n\n\n\n**분석 지침:**\n- 반드시 위에 명시된 마크다운 헤더 구조를 정확히 따르세요\n- 각 섹션은 2-3개 포인트로 제한\n- 구체적인 수치와 데이터 활용으로 신뢰성 확보\n\n**🌟 URL 컨텍스트 활용 지침:**\n- 제공된 URL의 내용을 적극적으로 활용하여 깊이 있는 분석을 제공하세요\n- 단순 요약이 아닌, 기사의 핵심 인사이트와 숨겨진 의미를 발굴하세요\n- 여러 기사 간의 연결점을 찾아 큰 그림을 그려주세요\n- 기술적 세부사항과 실제 영향력을 균형있게 다루세요\n\n**🎯 독자 재미 극대화 지침:**\n- 딱딱한 기술 뉴스를 생동감 있게 전달하세요\n- 적절한 비유와 실생활 예시로 복잡한 개념을 쉽게 설명하세요\n- 놀라운 사실이나 의외의 관점을 제시하여 호기심을 자극하세요\n- 스토리텔링 요소를 활용하여 뉴스를 하나의 이야기로 엮어주세요\n- 각 프리셋의 톤에 맞는 위트와 유머를 적절히 활용하세요\n\n**🚨 인용 검수 체크리스트:**\n1. 본문의 모든 사실, 수치, 기업명, 기술명에 [^숫자] 인용이 있는가?\n2. 문서 맨 끝에 모든 footnote 정의가 있고, 각각 클릭 가능한 URL을 포함하는가?\n3. [^1]: 기사제목 - https://링크 형식이 정확한가?\n4. 본문에서 언급한 모든 [^숫자]에 대응하는 footnote가 있는가?\n- 최종 제출 전 필수 검토: 위 체크리스트를 모두 확인하세요",
+  "articles": [
+    {
+      "title": "\"New Date('wtf') – JavaScript의 Date 클래스에 대해 얼마나 잘 아는가?\"",
+      "link": "https://news.hada.io/topic?id=21956",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-07-13T21:34:19+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eJavaScript의 \u003cstrong\u003eDate 클래스\u003c/strong\u003e 동작에 대한 \u003cstrong\u003e퀴즈\u003c/strong\u003e 제공임\u003c/li\u003e\n\u003cli\u003e예상치 못한 입력값에 대한 \u003cstrong\u003eDate 클래스의 반응\u003c/strong\u003e을 테스트하는 문제 출제임\u003c/li\u003e\n\u003cli\u003e최신 \u003cstrong\u003eNode.js 24.4.0 환경\u003c/strong\u003e에서 모든 질문 검증 완료임\u003c/li\u003e\n\u003cli\u003eMacBook Pro, BST 시간대...\u003c/p\u003e"
+    },
+    {
+      "title": "ChatGPT의 Structured Output 기능으로 소스코드로부터 Swagger 문서 생성하기",
+      "link": "https://news.hada.io/topic?id=21955",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-07-13T21:07:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eChatGPT API의 \u003cstrong\u003e\u003ca href=\"https://platform.openai.com/docs/guides/structured-outputs?api-mode=responses\"\u003eStructured Output 기능\u003c/a\u003e\u003c/strong\u003e 을 활용하여, \u003ca href=\"https://swagger.io/\"\u003eSwagger\u003c/a\u003e 기반 API 정의서 JSON 파일을 \u003cstrong\u003e일반 소스코드로부터 생성\u003c/strong\u003e하는 방법 공유\u003c/li...\u003c/p\u003e"
+    },
+    {
+      "title": "Kimi K2는 최신 믹스처오브엑스퍼트(MoE) 언어 모델임",
+      "link": "https://news.hada.io/topic?id=21954",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-07-13T18:33:55+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eKimi K2\u003c/strong\u003e는 1조 매개변수를 가진 최첨단 \u003cstrong\u003e믹스처오브엑스퍼트(MoE) 언어 모델\u003c/strong\u003e임\u003c/li\u003e\n\u003cli\u003e학습 과정에서 \u003cstrong\u003eMuon 최적화 기법\u003c/strong\u003e을 도입하여 대규모 안정성 문제를 해결함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e도구 사용, 추론, 자율적 문제 해결\u003c/strong\u003e을 위해 에이전트 지능에 ...\u003c/p\u003e"
+    },
+    {
+      "title": "위성 충돌 방지 프로그램 폐지를 제안하는 NOAA 예산안",
+      "link": "https://news.hada.io/topic?id=21953",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-07-13T09:51:20+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e미국 \u003cstrong\u003eNOAA\u003c/strong\u003e가 위성 충돌을 예방하는 \u003cstrong\u003e중요 프로그램\u003c/strong\u003e의 예산 폐지를 제안함\u003c/li\u003e\n\u003cli\u003e이 프로그램은 \u003cstrong\u003e인공위성 및 우주 쓰레기\u003c/strong\u003e의 충돌로 인한 피해를 줄이기 위해 운영됨\u003c/li\u003e\n\u003cli\u003e예산 중단 시 \u003cstrong\u003e위성 산업 및 우주 안전\u003c/strong\u003e에 큰 영향이 발생할 가...\u003c/p\u003e"
+    },
+    {
+      "title": "xkafka — Go에서 Kafka를 더 쉽게 사용하는 방법",
+      "link": "https://news.hada.io/topic?id=21952",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-07-13T09:51:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003exkafka\u003c/strong\u003e는 Go 환경에서 \u003cstrong\u003eKafka\u003c/strong\u003e를 HTTP 서비스처럼 단순하게 사용할 수 있도록 해주는 오픈소스 라이브러리\u003c/li\u003e\n\u003cli\u003e기존 \u003cstrong\u003econfluent-kafka-go\u003c/strong\u003e 사용 시 복잡한 처리 루프와 많은 보일러플레이트 코드가 필요했지만, xkafka는 \u003cstrong\u003eHandler, Middleware, M...\u003c/p\u003e"
+    },
+    {
+      "title": "Google의 대대적인 안티-애드블록 업데이트 우회 방법",
+      "link": "https://news.hada.io/topic?id=21951",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-07-13T09:48:19+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eChrome의 \u003cstrong\u003eMV3 업데이트\u003c/strong\u003e는 기존 애드블로커의 기능을 약화시키기 위해 webRequestBlocking 권한을 제거함\u003c/li\u003e\n\u003cli\u003e필자는 \u003cstrong\u003eMV3 환경에서\u003c/strong\u003e도 webRequestBlocking을 \u003cstrong\u003e우회\u003c/strong\u003e할 수 있는 버그를 2023년에 발견함\u003c/li\u003e\n\u003cli\u003e이 버그는 \u003cstrong\u003eJavaScript 바인딩의 허...\u003c/p\u003e"
+    },
+    {
+      "title": "온라인 성적 글쓰기의 표현의 자유가 대법원 판결로 거의 사라짐",
+      "link": "https://news.hada.io/topic?id=21950",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-07-13T09:45:17+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e미국 \u003cstrong\u003e대법원\u003c/strong\u003e의 최근 판결로 온라인에서 성적인 내용을 포함한 글쓰기의 \u003cstrong\u003e표현의 자유\u003c/strong\u003e가 사실상 무력화됨\u003c/li\u003e\n\u003cli\u003e여러 주의 \u003cstrong\u003e연령 확인(나이 인증) 법\u003c/strong\u003e이 합법화되면서, 다른 주에 있는 창작자들도 막대한 민사적·형사적 책임에 노출됨\u003c/li\u003e\n\u003cli\u003e개인 웹사이...\u003c/p\u003e"
+    },
+    {
+      "title": "1980년대 중반 MacPaint 아트는 여전히 멋지게 보임",
+      "link": "https://news.hada.io/topic?id=21949",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-07-13T09:42:16+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e1980년대 \u003cstrong\u003eMacPaint\u003c/strong\u003e로 제작된 초기 컴퓨터 예술 작품들이 현재 시점에서도 뛰어난 \u003cstrong\u003e시각적 매력\u003c/strong\u003e을 보임\u003c/li\u003e\n\u003cli\u003e작성자는 BMUG CD-ROM과 Discmaster를 통해 \u003cstrong\u003e18,000여 장의 MacPaint 이미지\u003c/strong\u003e를 감상하며 인상적인 작품들을 소개함\u003c/li\u003e\n\u003cli\u003e9인치 1비트 흑백 ...\u003c/p\u003e"
+    },
+    {
+      "title": "LlamaFirewall - AI 보안 위험 감지/차단 프레임워크",
+      "link": "https://news.hada.io/topic?id=21948",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-07-13T09:31:02+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003ePurple Llama\u003c/strong\u003e는 Meta가 주도하는 오픈소스 AI 신뢰성과 보안 생태계의 \u003cstrong\u003e상위(umbrella) 프로젝트\u003c/strong\u003e로, 생성형 AI(LLM) 개발에 필요한 다양한 \u003cstrong\u003e보안 툴·가이드·평가 도구(Eval), 벤치마크\u003c/strong\u003e를 한데 모아 커뮤니티와 함께 발전시키는 것을 목표로 함\u003c/li\u003e\n\u003cli\u003e\n\u003cs...\u003c/p\u003e"
+    },
+    {
+      "title": "OpenAI, 오픈 웨이트 모델 출시 연기",
+      "link": "https://news.hada.io/topic?id=21947",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-07-13T08:35:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eOpenAI는 원래 \u003cstrong\u003e다음 주 오픈 웨이트 모델 출시\u003c/strong\u003e를 계획했으나, 추가적인 \u003cstrong\u003e안전성 테스트와 고위험 영역 리뷰\u003c/strong\u003e를 위해 출시를 연기한다고 발표함\u003c/li\u003e\n\u003cli\u003eSam Altman은 \u0026quot;정확히 얼마나 걸릴지 아직 확신할 수 없다\u0026quot;고 밝힘\u003c/li\u003e\n\u003cli\u003e모델의 \u003cstrong\u003e가중치(Weights)...\u003c/p\u003e"
+    }
+  ],
+  "generatedAt": "2025-07-14T07:08:54.046568002+09:00"
+}
