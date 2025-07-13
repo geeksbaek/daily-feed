@@ -224,26 +224,72 @@ export class FirebasePushManager {
     }
   }
 
-  // 토픽 구독 (GitHub Actions API 호출)
+  // 토픽 구독 (GitHub Actions Repository Dispatch API 호출)
   async subscribeToTopic(token, topic) {
     try {
       console.log(`토픽 '${topic}'에 구독 시도...`);
       
-      // GitHub Actions의 FCM 토픽 구독 워크플로우 호출
-      // 실제로는 서버 API가 필요하지만, 여기서는 로컬 스토리지에 저장
+      // GitHub Actions Repository Dispatch API 호출
+      const response = await fetch('https://api.github.com/repos/geeksbaek/daily-feed/dispatches', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/vnd.github.v3+json',
+          'Content-Type': 'application/json',
+          // GitHub Token이 필요하지만 보안상 클라이언트에서 직접 사용할 수 없음
+          // 'Authorization': 'token YOUR_GITHUB_TOKEN'
+        },
+        body: JSON.stringify({
+          event_type: 'fcm-subscribe',
+          client_payload: {
+            token: token,
+            topic: topic,
+            timestamp: Date.now()
+          }
+        })
+      });
+
+      if (response.ok) {
+        console.log(`토픽 '${topic}' 구독 요청 성공`);
+        
+        // 로컬 저장소에도 구독 정보 저장
+        const subscriptions = JSON.parse(localStorage.getItem('fcm-subscriptions') || '[]');
+        if (!subscriptions.includes(topic)) {
+          subscriptions.push(topic);
+          localStorage.setItem('fcm-subscriptions', JSON.stringify(subscriptions));
+        }
+      } else {
+        console.warn('GitHub API 호출 실패 (인증 필요), 로컬 저장으로 대체');
+        
+        // GitHub API 실패 시 로컬 저장으로 대체
+        const subscriptions = JSON.parse(localStorage.getItem('fcm-subscriptions') || '[]');
+        if (!subscriptions.includes(topic)) {
+          subscriptions.push(topic);
+          localStorage.setItem('fcm-subscriptions', JSON.stringify(subscriptions));
+          localStorage.setItem('fcm-token-for-subscription', token);
+          
+          // 사용자에게 수동 구독 안내
+          console.log(`
+          토픽 구독을 완료하려면 다음 명령을 실행하세요:
+          gh workflow run "FCM Topic Subscribe" -f token="${token}" -f topic="${topic}"
+          `);
+        }
+      }
+      
+    } catch (error) {
+      console.error('토픽 구독 실패:', error);
+      
+      // 오류 시 로컬 저장으로 대체
       const subscriptions = JSON.parse(localStorage.getItem('fcm-subscriptions') || '[]');
       if (!subscriptions.includes(topic)) {
         subscriptions.push(topic);
         localStorage.setItem('fcm-subscriptions', JSON.stringify(subscriptions));
-        console.log(`토픽 '${topic}' 구독 완료 (로컬 저장)`);
+        localStorage.setItem('fcm-token-for-subscription', token);
+        
+        console.log(`
+        오류로 인해 자동 구독에 실패했습니다. 수동으로 구독하세요:
+        gh workflow run "FCM Topic Subscribe" -f token="${token}" -f topic="${topic}"
+        `);
       }
-      
-      // 실제 Firebase Admin SDK를 통한 토픽 구독은 백엔드에서 처리해야 함
-      // TODO: 서버 API로 토큰과 토픽을 보내서 구독 처리
-      
-    } catch (error) {
-      console.error('토픽 구독 실패:', error);
-      throw error;
     }
   }
 

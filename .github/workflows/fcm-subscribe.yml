@@ -17,6 +17,8 @@ on:
         required: false
         default: false
         type: boolean
+  repository_dispatch:
+    types: [fcm-subscribe]
 
 jobs:
   subscribe-to-topic:
@@ -39,25 +41,39 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-go-
 
+      - name: Set variables from repository_dispatch
+        if: github.event_name == 'repository_dispatch'
+        run: |
+          echo "FCM_TOKEN=${{ github.event.client_payload.token }}" >> $GITHUB_ENV
+          echo "FCM_TOPIC=${{ github.event.client_payload.topic || 'daily-feed' }}" >> $GITHUB_ENV
+          echo "FCM_UNSUBSCRIBE=${{ github.event.client_payload.unsubscribe || 'false' }}" >> $GITHUB_ENV
+
+      - name: Set variables from workflow_dispatch
+        if: github.event_name == 'workflow_dispatch'
+        run: |
+          echo "FCM_TOKEN=${{ inputs.token }}" >> $GITHUB_ENV
+          echo "FCM_TOPIC=${{ inputs.topic || 'daily-feed' }}" >> $GITHUB_ENV
+          echo "FCM_UNSUBSCRIBE=${{ inputs.unsubscribe || 'false' }}" >> $GITHUB_ENV
+
       - name: Subscribe to FCM topic
-        if: ${{ !inputs.unsubscribe }}
+        if: env.FCM_UNSUBSCRIBE != 'true'
         working-directory: backend
         env:
           FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
         run: |
-          echo "📱 토픽 '${{ inputs.topic }}'에 구독 중..."
+          echo "📱 토픽 '${{ env.FCM_TOPIC }}'에 구독 중..."
           go run cmd/fcm-subscribe/main.go \
-            --token "${{ inputs.token }}" \
-            --topic "${{ inputs.topic }}"
+            --token "${{ env.FCM_TOKEN }}" \
+            --topic "${{ env.FCM_TOPIC }}"
 
       - name: Unsubscribe from FCM topic
-        if: ${{ inputs.unsubscribe }}
+        if: env.FCM_UNSUBSCRIBE == 'true'
         working-directory: backend
         env:
           FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
         run: |
-          echo "📱 토픽 '${{ inputs.topic }}'에서 구독 해제 중..."
+          echo "📱 토픽 '${{ env.FCM_TOPIC }}'에서 구독 해제 중..."
           go run cmd/fcm-subscribe/main.go \
-            --token "${{ inputs.token }}" \
-            --topic "${{ inputs.topic }}" \
+            --token "${{ env.FCM_TOKEN }}" \
+            --topic "${{ env.FCM_TOPIC }}" \
             --unsubscribe
