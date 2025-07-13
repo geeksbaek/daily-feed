@@ -12,11 +12,13 @@ import (
 )
 
 type SummaryData struct {
-	Date        string         `json:"date"`
-	Preset      string         `json:"preset"`
-	Summary     string         `json:"summary"`
-	Articles    []ArticleData  `json:"articles"`
-	GeneratedAt time.Time      `json:"generatedAt"`
+	Date         string         `json:"date"`
+	Preset       string         `json:"preset"`
+	Summary      string         `json:"summary"`
+	SystemPrompt string         `json:"systemPrompt"`
+	UserPrompt   string         `json:"userPrompt"`
+	Articles     []ArticleData  `json:"articles"`
+	GeneratedAt  time.Time      `json:"generatedAt"`
 }
 
 type ArticleData struct {
@@ -44,7 +46,7 @@ func main() {
 	today := time.Now().In(kst).Format("2006-01-02")
 	
 	// 2가지 프리셋
-	presets := []string{"general", "community"}
+	presets := []string{"general", "casual"}
 	
 	// 출력 디렉토리 생성 (web/data/summaries)
 	outputDir := filepath.Join("..", "web", "data", "summaries", today)
@@ -67,7 +69,7 @@ func main() {
 		}
 		
 		// 피드 데이터 수집 (내부적으로 처리)
-		summary, articles, err := runFeedGeneration(ctx, dailyApp)
+		summary, systemPrompt, userPrompt, articles, err := runFeedGeneration(ctx, dailyApp)
 		if err != nil {
 			fmt.Printf("피드 생성 실패 (%s): %v\n", preset, err)
 			continue
@@ -75,11 +77,13 @@ func main() {
 		
 		// JSON 데이터 구성
 		summaryData := SummaryData{
-			Date:        today,
-			Preset:      preset,
-			Summary:     summary,
-			Articles:    articles,
-			GeneratedAt: time.Now().In(kst),
+			Date:         today,
+			Preset:       preset,
+			Summary:      summary,
+			SystemPrompt: systemPrompt,
+			UserPrompt:   userPrompt,
+			Articles:     articles,
+			GeneratedAt:  time.Now().In(kst),
 		}
 		
 		// JSON 파일로 저장
@@ -111,16 +115,16 @@ func main() {
 }
 
 // runFeedGeneration은 기존 app.RunAndReturnData를 사용하여 데이터를 반환
-func runFeedGeneration(ctx context.Context, dailyApp *app.App) (string, []ArticleData, error) {
+func runFeedGeneration(ctx context.Context, dailyApp *app.App) (string, string, string, []ArticleData, error) {
 	// 앱에서 요약과 피드 아이템 데이터 가져오기
-	summary, feedItems, err := dailyApp.RunAndReturnData(ctx)
+	summary, systemPrompt, userPrompt, feedItems, err := dailyApp.RunAndReturnData(ctx)
 	if err != nil {
-		return "", nil, err
+		return "", "", "", nil, err
 	}
 	
 	// 데이터가 없는 경우
 	if len(feedItems) == 0 {
-		return "최근 24시간 내 새로운 피드가 없습니다.", []ArticleData{}, nil
+		return "최근 24시간 내 새로운 피드가 없습니다.", "", "", []ArticleData{}, nil
 	}
 	
 	// FeedItem을 ArticleData로 변환
@@ -137,7 +141,7 @@ func runFeedGeneration(ctx context.Context, dailyApp *app.App) (string, []Articl
 		articles = append(articles, article)
 	}
 	
-	return summary, articles, nil
+	return summary, systemPrompt, userPrompt, articles, nil
 }
 
 func saveJSON(data interface{}, filePath string) error {

@@ -67,6 +67,8 @@ type FeedItem struct {
 }
 
 type Summary struct {
-	Content string
-	Error   error
+	Content      string
+	SystemPrompt string
+	UserPrompt   string
+	Error        error
 }

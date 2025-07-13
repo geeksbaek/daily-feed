@@ -106,34 +106,34 @@ func (a *App) Run(ctx context.Context) error {
 }
 
 // RunAndReturnData는 JSON 생성을 위해 요약과 아이템 데이터를 반환하는 함수
-func (a *App) RunAndReturnData(ctx context.Context) (string, []models.FeedItem, error) {
+func (a *App) RunAndReturnData(ctx context.Context) (string, string, string, []models.FeedItem, error) {
 	feeds, err := a.feedLoader.LoadFeeds(a.config.FeedsFile)
 	if err != nil {
-		return "", nil, fmt.Errorf("feeds 파일을 읽는 중 오류: %w", err)
+		return "", "", "", nil, fmt.Errorf("feeds 파일을 읽는 중 오류: %w", err)
 	}
 
 	cutoffTime := time.Now().Add(-time.Duration(a.config.CutoffHours) * time.Hour)
 	
 	allItems, err := a.processor.ProcessFeeds(ctx, feeds, cutoffTime)
 	if err != nil {
-		return "", nil, fmt.Errorf("피드 처리 중 오류: %w", err)
+		return "", "", "", nil, fmt.Errorf("피드 처리 중 오류: %w", err)
 	}
 
 	if len(allItems) == 0 {
 		a.logger.Info("최근 %d시간 내 새로운 피드가 없습니다", a.config.CutoffHours)
-		return "", nil, nil
+		return "", "", "", nil, nil
 	}
 
 	a.logger.Info("AI 요약을 생성하고 있습니다...")
 	summary, err := a.summarizer.GenerateSummary(ctx, allItems)
 	if err != nil {
-		return "", allItems, fmt.Errorf("AI 요약 생성 실패: %w", err)
+		return "", "", "", allItems, fmt.Errorf("AI 요약 생성 실패: %w", err)
 	}
 
 	if summary.Error != nil {
 		a.logger.Error("AI 요약 생성 중 오류: %v", summary.Error)
-		return "", allItems, summary.Error
+		return "", "", "", allItems, summary.Error
 	}
 
-	return summary.Content, allItems, nil
+	return summary.Content, summary.SystemPrompt, summary.UserPrompt, allItems, nil
 }
