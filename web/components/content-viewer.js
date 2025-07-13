@@ -85,6 +85,40 @@ export class ContentViewer extends LitElement {
       flex-direction: column;
     }
 
+    /* 모바일 환경에서 더 넓게 표시 */
+    @media (max-width: 768px) {
+      .prompt-modal {
+        padding: 8px;
+      }
+      
+      .prompt-modal-content {
+        max-height: 95vh;
+        border-radius: 12px;
+      }
+      
+      .prompt-modal-header {
+        padding: 16px;
+      }
+      
+      .prompt-modal-title {
+        font-size: 16px;
+      }
+      
+      .prompt-modal-body {
+        padding: 16px;
+      }
+      
+      .prompt-section-title {
+        font-size: 15px;
+      }
+      
+      .prompt-text {
+        padding: 12px;
+        font-size: 12px;
+        max-height: 150px;
+      }
+    }
+
     .prompt-modal-header {
       padding: 20px;
       border-bottom: 1px solid var(--border-secondary);
