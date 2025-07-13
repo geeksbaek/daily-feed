@@ -23,15 +23,21 @@ export class FirebasePushManager {
       }
 
       // Firebase SDK 동적 로드
+      console.log('Firebase SDK 로드 시작...');
       const { initializeApp } = await import('https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js');
       const { getMessaging, getToken, onMessage } = await import('https://www.gstatic.com/firebasejs/9.23.0/firebase-messaging.js');
+      console.log('Firebase SDK 로드 완료');
       
       // Firebase 앱 초기화
+      console.log('Firebase 앱 초기화 시작...');
       const app = initializeApp(this.firebaseConfig);
       this.messaging = getMessaging(app);
+      console.log('Firebase 앱 초기화 완료');
       
       // Service Worker 등록 및 활성화 대기
+      console.log('Service Worker 등록 시작...');
       const registration = await navigator.serviceWorker.register('/daily-feed/firebase-messaging-sw.js');
+      console.log('Service Worker 등록 완료:', registration);
       
       // Service Worker가 활성화될 때까지 대기
       if (registration.installing) {
