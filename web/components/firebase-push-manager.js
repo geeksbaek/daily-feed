@@ -105,9 +105,11 @@ export class FirebasePushManager {
       // Service Worker가 준비될 때까지 대기
       await navigator.serviceWorker.ready;
       
-      // FCM 토큰 획득
+      // FCM 토큰 획득 (등록된 Service Worker 사용)
+      const swRegistration = await navigator.serviceWorker.getRegistration('/daily-feed/');
       this.token = await getToken(this.messaging, {
-        vapidKey: this.vapidKey
+        vapidKey: this.vapidKey,
+        serviceWorkerRegistration: swRegistration
       });
 
       if (this.token) {
