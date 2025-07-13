@@ -394,8 +394,6 @@ export class DailyFeedApp extends LitElement {
 
   async handleBrowserRefresh() {
     try {
-      console.log('브라우저 새로고침 감지 - 캐시 제거 및 새 데이터 로드');
-      
       // 모든 캐시 제거
       await this.clearAllCaches();
       
@@ -430,8 +428,6 @@ export class DailyFeedApp extends LitElement {
           cacheNames.map(cacheName => caches.delete(cacheName))
         );
       }
-      
-      console.log('모든 캐시가 제거되었습니다.');
       
     } catch (error) {
       console.warn('캐시 제거 중 일부 오류 발생:', error);
@@ -661,7 +657,6 @@ export class DailyFeedApp extends LitElement {
     // 매 5분마다 새 데이터 확인
     setInterval(() => {
       if (!this.isOffline && navigator.onLine) {
-        console.log('자동 새로고침: 새 데이터 확인 중...');
         this.loadAvailableDates();
       }
     }, 5 * 60 * 1000); // 5분
@@ -669,7 +664,6 @@ export class DailyFeedApp extends LitElement {
     // 페이지 포커스 시 새로고침
     document.addEventListener('visibilitychange', () => {
       if (!document.hidden && !this.isOffline && navigator.onLine) {
-        console.log('페이지 포커스: 새 데이터 확인 중...');
         this.loadAvailableDates();
       }
     });
@@ -678,7 +672,6 @@ export class DailyFeedApp extends LitElement {
   async setupNotifications() {
     // Notification API 지원 확인
     if (!('Notification' in window)) {
-      console.log('이 브라우저는 데스크톱 알림을 지원하지 않습니다.');
       return;
     }
 

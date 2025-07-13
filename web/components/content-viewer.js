@@ -504,8 +504,6 @@ export class ContentViewer extends LitElement {
       `;
     }
 
-    console.log('Available summaries:', Object.keys(summaries));
-    console.log('Current preset:', this.preset);
     
     const selectedData = summaries[this.preset];
     if (!selectedData) {

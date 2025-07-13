@@ -116,12 +116,10 @@ export class NotificationToggle extends LitElement {
 
   async initializeFirebasePush() {
     try {
-      console.log('Firebase FCM 초기화 시작...');
       await this.firebasePushManager.init();
       this.isInitialized = true;
       this.enabled = this.firebasePushManager.isSubscribed();
       this.permission = Notification.permission;
-      console.log('Firebase FCM 초기화 완료, 구독 상태:', this.enabled);
     } catch (error) {
       console.error('Firebase FCM 초기화 실패:', error);
       console.error('오류 상세:', error.message);
@@ -213,7 +211,6 @@ export class NotificationToggle extends LitElement {
           bubbles: true
         }));
         
-        console.log('Firebase FCM 구독 완료!');
         this.showToast('알림이 활성화되었습니다');
       }
     } catch (error) {

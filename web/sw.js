@@ -20,7 +20,6 @@ self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE_NAME)
       .then(cache => {
-        console.log('캐시 열기');
         return cache.addAll(urlsToCache);
       })
   );
@@ -33,7 +32,6 @@ self.addEventListener('activate', event => {
       return Promise.all(
         cacheNames.map(cacheName => {
           if (cacheName !== CACHE_NAME) {
-            console.log('오래된 캐시 삭제:', cacheName);
             return caches.delete(cacheName);
           }
         })
@@ -126,18 +124,15 @@ self.addEventListener('fetch', event => {
 // 백그라운드 동기화 (선택적)
 self.addEventListener('sync', event => {
   if (event.tag === 'background-sync') {
-    console.log('백그라운드 동기화 실행');
+    // 백그라운드 동기화 로직 (필요시 추가)
   }
 });
 
 // 푸시 알림 (선택적)
 // 푸시 알림 수신
 self.addEventListener('push', event => {
-  console.log('푸시 메시지 수신:', event);
-  
   if (event.data) {
     const data = event.data.json();
-    console.log('푸시 데이터:', data);
     
     const options = {
       body: data.body || '새로운 Daily Feed가 준비되었습니다!',
@@ -182,8 +177,6 @@ self.addEventListener('push', event => {
 
 // 알림 클릭 처리
 self.addEventListener('notificationclick', event => {
-  console.log('알림 클릭:', event);
-  
   event.notification.close();
   
   const urlToOpen = event.notification.data?.url || '/daily-feed/';

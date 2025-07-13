@@ -14,8 +14,6 @@ export class FirebasePushManager {
 
   async init() {
     try {
-      console.log('Firebase 설정:', this.firebaseConfig);
-      console.log('VAPID 키:', this.vapidKey);
       
       // 설정 검증
       if (!validateFirebaseConfig(this.firebaseConfig)) {
@@ -23,41 +21,25 @@ export class FirebasePushManager {
       }
 
       // Firebase SDK 동적 로드
-      console.log('Firebase SDK 로드 시작...');
       const { initializeApp } = await import('https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js');
       const { getMessaging, getToken, onMessage } = await import('https://www.gstatic.com/firebasejs/10.12.2/firebase-messaging.js');
-      console.log('Firebase SDK 로드 완료');
       
       // Firebase 앱 초기화
-      console.log('Firebase 앱 초기화 시작...');
       const app = initializeApp(this.firebaseConfig);
       this.messaging = getMessaging(app);
-      console.log('Firebase 앱 초기화 완료');
       
       // Service Worker 등록 및 활성화 대기
-      console.log('Service Worker 등록 시작...');
       const registration = await navigator.serviceWorker.register('/daily-feed/firebase-messaging-sw.js');
-      console.log('Service Worker 등록 완료:', registration);
       
       // Service Worker가 활성화될 때까지 대기
-      console.log('Service Worker 활성화 대기 시작...');
-      console.log('Registration 상태:', {
-        installing: !!registration.installing,
-        waiting: !!registration.waiting,
-        active: !!registration.active
-      });
       
       if (registration.installing) {
-        console.log('Service Worker 설치 중, 활성화 대기...');
         await new Promise((resolve, reject) => {
           const worker = registration.installing;
           worker.addEventListener('statechange', () => {
-            console.log('Service Worker 상태 변경:', worker.state);
             if (worker.state === 'activated') {
-              console.log('Service Worker 활성화 완료');
               resolve();
             } else if (worker.state === 'redundant') {
-              console.log('Service Worker가 redundant 상태가 됨 (오류 발생)');
               reject(new Error('Service Worker가 redundant 상태가 되었습니다. firebase-messaging-sw.js에 오류가 있을 수 있습니다.'));
             }
           });
@@ -68,22 +50,15 @@ export class FirebasePushManager {
           }, 10000);
         });
       } else if (!registration.active) {
-        console.log('Service Worker 준비 대기...');
         await navigator.serviceWorker.ready;
-        console.log('Service Worker 준비 완료');
-      } else {
-        console.log('Service Worker 이미 활성화됨');
       }
       
       // 포그라운드 메시지 수신 처리
-      console.log('포그라운드 메시지 핸들러 등록...');
       onMessage(this.messaging, (payload) => {
-        console.log('포그라운드 메시지 수신:', payload);
         this.showNotification(payload);
       });
       
       this.isInitialized = true;
-      console.log('Firebase FCM 초기화 성공');
       return true;
       
     } catch (error) {
@@ -113,8 +88,6 @@ export class FirebasePushManager {
       });
 
       if (this.token) {
-        console.log('FCM 토큰 획득 성공:', this.token);
-        
         // daily-feed 토픽에 구독
         await this.subscribeToTopic(this.token, 'daily-feed');
         
@@ -132,7 +105,6 @@ export class FirebasePushManager {
 
   async sendTokenToServer(token) {
     // Firebase Functions를 통해 토큰이 이미 등록되므로 로컬 저장만 수행
-    console.log('FCM 토큰 로컬 저장');
     localStorage.setItem('fcm-token', token);
   }
 
@@ -150,7 +122,6 @@ export class FirebasePushManager {
         localStorage.removeItem('fcm-token');
         localStorage.removeItem('fcm-subscriptions');
         localStorage.removeItem('fcm-token-for-subscription');
-        console.log('FCM 구독 해제 성공');
         return true;
       }
       return false;
@@ -163,8 +134,6 @@ export class FirebasePushManager {
   // 토픽 구독 해제 (Firebase Functions 기반)
   async unsubscribeFromTopic(token, topic) {
     try {
-      console.log(`🔕 FCM 토픽 '${topic}'에서 Firebase Functions로 구독 해제 중...`);
-      
       // Firebase Functions API 호출 (asia-northeast3 리전)
       const response = await fetch('https://unsubscribefcm-5sptcvdphq-du.a.run.app', {
         method: 'POST',
@@ -180,8 +149,6 @@ export class FirebasePushManager {
       const result = await response.json();
       
       if (result.success) {
-        console.log(`✅ 토픽 '${topic}' 구독 해제 완료!`);
-        console.log('구독 해제 결과:', result);
         
         // 로컬 저장소에서 구독 정보 제거
         const subscriptions = JSON.parse(localStorage.getItem('fcm-subscriptions') || '[]');
@@ -198,11 +165,6 @@ export class FirebasePushManager {
       console.error('토픽 구독 해제 Firebase Functions 호출 실패:', error);
       
       // 실패 시 Firebase Functions 배포 준비 안내
-      console.log(`%c🔕 Firebase Functions 배포 준비 중...`, 'font-size: 16px; font-weight: bold; color: #e53e3e;');
-      console.log(`%c토픽: ${topic}`, 'font-size: 14px; color: #2d3748;');
-      console.log(`%c토큰: ${token}`, 'font-size: 12px; color: #718096; font-family: monospace;');
-      console.log(`%cFirebase Functions 배포 준비 중...`, 'font-size: 14px; font-weight: bold; color: #4299e1;');
-      console.log(`%c잠시 후 자동 구독 해제가 가능합니다.`, 'color: #38a169;');
       
       throw error;
     }
@@ -233,8 +195,6 @@ export class FirebasePushManager {
 
   // 테스트용 알림 발송 (Firebase Functions 기반)
   async sendTestNotification(date) {
-    console.log(`테스트 알림 발송은 Firebase Functions를 통해 직접 관리됩니다.`);
-    console.log(`날짜: ${date}`);
     // Firebase Functions에서 직접 알림을 관리하므로 별도 호출 불필요
     return { success: true, message: '테스트 알림 발송 준비 완료' };
   }
@@ -242,8 +202,6 @@ export class FirebasePushManager {
   // 토픽 구독 (Firebase Functions 기반)
   async subscribeToTopic(token, topic) {
     try {
-      console.log(`🔔 FCM 토픽 '${topic}'에 Firebase Functions로 구독 중...`);
-      
       // Firebase Functions API 호출 (asia-northeast3 리전)
       const response = await fetch('https://subscribefcm-5sptcvdphq-du.a.run.app', {
         method: 'POST',
@@ -259,8 +217,6 @@ export class FirebasePushManager {
       const result = await response.json();
       
       if (result.success) {
-        console.log(`✅ 토픽 '${topic}' 구독 완료!`);
-        console.log('구독 결과:', result);
         
         // 로컬 저장소에 구독 정보 저장
         const subscriptions = JSON.parse(localStorage.getItem('fcm-subscriptions') || '[]');
@@ -280,11 +236,6 @@ export class FirebasePushManager {
       console.error('토픽 구독 Firebase Functions 호출 실패:', error);
       
       // 실패 시 Firebase Functions 배포 준비 안내
-      console.log(`%c🔔 Firebase Functions 배포 준비 중...`, 'font-size: 16px; font-weight: bold; color: #e53e3e;');
-      console.log(`%c토픽: ${topic}`, 'font-size: 14px; color: #2d3748;');
-      console.log(`%c토큰: ${token}`, 'font-size: 12px; color: #718096; font-family: monospace;');
-      console.log(`%cFirebase Functions 배포 준비 중...`, 'font-size: 14px; font-weight: bold; color: #4299e1;');
-      console.log(`%c잠시 후 자동 구독이 가능합니다.`, 'color: #38a169;');
       
       throw error;
     }

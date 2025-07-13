@@ -32,7 +32,6 @@ const messaging = firebase.messaging();
 
 // 백그라운드 메시지 처리
 messaging.onBackgroundMessage((payload) => {
-  console.log('백그라운드 메시지 수신:', payload);
 
   const notificationTitle = payload.notification?.title || '🗞️ Daily Feed';
   const notificationOptions = {
@@ -65,8 +64,6 @@ messaging.onBackgroundMessage((payload) => {
 
 // 알림 클릭 처리
 self.addEventListener('notificationclick', (event) => {
-  console.log('FCM 알림 클릭:', event);
-  
   event.notification.close();
 
   const urlToOpen = event.notification.data?.url || '/daily-feed/';
@@ -101,10 +98,5 @@ self.addEventListener('notificationclick', (event) => {
 
 // 알림 닫기 처리
 self.addEventListener('notificationclose', (event) => {
-  console.log('FCM 알림 닫기:', event);
-  
-  // 분석을 위한 이벤트 로깅 (선택적)
-  if (event.notification.data?.date) {
-    console.log('알림 닫힘:', event.notification.data.date);
-  }
+  // 분석을 위한 이벤트 로깅 (필요시 처리)
 });

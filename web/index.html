@@ -183,11 +183,8 @@
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
                 navigator.serviceWorker.register('/daily-feed/sw.js')
-                    .then(registration => {
-                        console.log('SW 등록 성공:', registration.scope);
-                    })
                     .catch(error => {
-                        console.log('SW 등록 실패:', error);
+                        console.error('SW 등록 실패:', error);
                     });
             });
         }
