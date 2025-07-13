@@ -187,7 +187,7 @@ export class FirebasePushManager {
       console.log(`🔕 FCM 토픽 '${topic}'에서 Firebase Functions로 구독 해제 중...`);
       
       // Firebase Functions API 호출 (asia-northeast3 리전)
-      const response = await fetch('https://unsubscribefcm-jrydl3eaqq-du.a.run.app', {
+      const response = await fetch('https://unsubscribefcm-5sptcvdphq-du.a.run.app', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -284,7 +284,7 @@ export class FirebasePushManager {
       console.log(`🔔 FCM 토픽 '${topic}'에 Firebase Functions로 구독 중...`);
       
       // Firebase Functions API 호출 (asia-northeast3 리전)
-      const response = await fetch('https://subscribefcm-jrydl3eaqq-du.a.run.app', {
+      const response = await fetch('https://subscribefcm-5sptcvdphq-du.a.run.app', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

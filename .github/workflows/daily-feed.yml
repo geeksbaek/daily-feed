@@ -63,14 +63,3 @@ jobs:
             echo "changes=false" >> $GITHUB_OUTPUT
           fi
 
-  # FCM 알림 발송 (새로운 데이터가 생성된 경우만)
-  send-notification:
-    needs: generate-feeds
-    if: needs.generate-feeds.outputs.changes == 'true'
-    uses: ./.github/workflows/fcm-notification.yml
-    with:
-      title: "🗞️ Daily Feed"
-      body: "새로운 기술 뉴스 요약이 준비되었습니다!"
-      date: ${{ needs.generate-feeds.outputs.date }}
-      topic: "all_users"
-    secrets: inherit
