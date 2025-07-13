@@ -61,10 +61,27 @@ func main() {
 		var decoded []byte
 		var err error
 		
-		// 먼저 URL-safe Base64 시도
-		if decoded, err = base64.URLEncoding.DecodeString(keyData); err != nil {
-			// 실패하면 표준 Base64 시도
-			decoded, err = base64.StdEncoding.DecodeString(keyData)
+		// 패딩 추가 함수 (Base64 디코딩을 위해)
+		addPadding := func(s string) string {
+			switch len(s) % 4 {
+			case 2:
+				return s + "=="
+			case 3:
+				return s + "="
+			}
+			return s
+		}
+		
+		// 먼저 URL-safe Base64 시도 (패딩 추가)
+		paddedKeyData := addPadding(keyData)
+		if decoded, err = base64.URLEncoding.DecodeString(paddedKeyData); err != nil {
+			// 실패하면 표준 Base64 시도 (패딩 추가)
+			if decoded, err = base64.StdEncoding.DecodeString(paddedKeyData); err != nil {
+				// 패딩 없이 다시 시도
+				if decoded, err = base64.URLEncoding.DecodeString(keyData); err != nil {
+					decoded, err = base64.StdEncoding.DecodeString(keyData)
+				}
+			}
 		}
 		
 		if err == nil {
