@@ -28,7 +28,7 @@ export class FirebasePushManager {
       this.messaging = getMessaging(app);
       
       // Service Worker 등록 및 활성화 대기
-      const registration = await navigator.serviceWorker.register('/firebase-messaging-sw.js');
+      const registration = await navigator.serviceWorker.register('/daily-feed/firebase-messaging-sw.js');
       
       // Service Worker가 활성화될 때까지 대기
       if (registration.installing) {
@@ -144,8 +144,8 @@ export class FirebasePushManager {
     const notificationTitle = payload.notification?.title || 'Daily Feed';
     const notificationOptions = {
       body: payload.notification?.body || '새로운 소식이 있습니다!',
-      icon: payload.notification?.icon || '/daily-feed/favicon-32x32.png',
-      badge: '/daily-feed/favicon-16x16.png',
+      icon: payload.notification?.icon || '/daily-feed/icons/icon.svg',
+      badge: '/daily-feed/icons/icon.svg',
       tag: 'daily-feed-fcm',
       data: payload.data
     };

@@ -37,8 +37,8 @@ messaging.onBackgroundMessage((payload) => {
   const notificationTitle = payload.notification?.title || '🗞️ Daily Feed';
   const notificationOptions = {
     body: payload.notification?.body || '새로운 기술 뉴스 요약이 준비되었습니다!',
-    icon: payload.notification?.icon || '/daily-feed/favicon-32x32.png',
-    badge: '/daily-feed/favicon-16x16.png',
+    icon: payload.notification?.icon || '/daily-feed/icons/icon.svg',
+    badge: '/daily-feed/icons/icon.svg',
     tag: 'daily-feed-' + (payload.data?.date || Date.now()),
     data: {
       url: payload.data?.url || '/daily-feed/',
@@ -49,7 +49,7 @@ messaging.onBackgroundMessage((payload) => {
       {
         action: 'open',
         title: '보기',
-        icon: '/daily-feed/favicon-16x16.png'
+        icon: '/daily-feed/icons/icon.svg'
       },
       {
         action: 'close', 

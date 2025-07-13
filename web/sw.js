@@ -83,6 +83,11 @@ self.addEventListener('fetch', event => {
     return;
   }
   
+  // chrome-extension URL은 캐시하지 않음
+  if (event.request.url.startsWith('chrome-extension://')) {
+    return;
+  }
+  
   // 기타 리소스 처리
   event.respondWith(
     caches.match(event.request)
