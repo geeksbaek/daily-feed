@@ -57,8 +57,17 @@ func main() {
 			log.Printf("키 데이터: %s", keyData)
 		}
 		
-		// Base64로 인코딩되어 있는지 확인하고 디코딩 시도
-		if decoded, err := base64.StdEncoding.DecodeString(keyData); err == nil {
+		// Base64로 인코딩되어 있는지 확인하고 디코딩 시도 (표준 Base64와 URL-safe Base64 모두 시도)
+		var decoded []byte
+		var err error
+		
+		// 먼저 URL-safe Base64 시도
+		if decoded, err = base64.URLEncoding.DecodeString(keyData); err != nil {
+			// 실패하면 표준 Base64 시도
+			decoded, err = base64.StdEncoding.DecodeString(keyData)
+		}
+		
+		if err == nil {
 			// Base64 디코딩 성공하면 JSON 유효성 검사
 			var temp interface{}
 			if json.Unmarshal(decoded, &temp) == nil {
