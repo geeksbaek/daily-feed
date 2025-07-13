@@ -181,77 +181,49 @@ export class FirebasePushManager {
     }
   }
 
-  // 토픽 구독 해제 (GitHub Issues 기반)
+  // 토픽 구독 해제 (Firebase Functions 기반)
   async unsubscribeFromTopic(token, topic) {
     try {
-      console.log(`🔕 FCM 토픽 '${topic}'에서 구독 해제 요청 중...`);
+      console.log(`🔕 FCM 토픽 '${topic}'에서 Firebase Functions로 구독 해제 중...`);
       
-      // GitHub Issues를 통한 구독 해제 요청 생성
-      const issueTitle = `FCM 구독 해제 요청: ${topic} - ${new Date().toISOString()}`;
-      const issueBody = `
-## FCM 토픽 구독 해제 요청
-
-- **토픽**: \`${topic}\`
-- **토큰**: \`${token}\`
-- **요청 시간**: ${new Date().toLocaleString('ko-KR')}
-- **사용자 에이전트**: ${navigator.userAgent}
-
-> 이 이슈는 FCM 토픽 구독 해제를 위해 자동으로 생성되었습니다.
-> GitHub Actions가 이 이슈를 감지하여 구독 해제를 처리합니다.
-
-### 처리 방법
-관리자는 다음 명령으로 구독 해제를 처리할 수 있습니다:
-
-\`\`\`bash
-gh workflow run "FCM Auto Subscribe" -f action="unsubscribe" -f token="${token}" -f topic="${topic}"
-\`\`\`
-      `;
-
-      const response = await fetch('https://api.github.com/repos/geeksbaek/daily-feed/issues', {
+      // Firebase Functions API 호출 (asia-northeast3 리전)
+      const response = await fetch('https://unsubscribefcm-jrydl3eaqq-du.a.run.app', {
         method: 'POST',
         headers: {
-          'Accept': 'application/vnd.github.v3+json',
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          title: issueTitle,
-          body: issueBody,
-          labels: ['fcm-unsubscribe', 'auto-generated']
+          token: token,
+          topic: topic
         })
       });
 
-      if (response.ok) {
-        const issue = await response.json();
-        console.log(`✅ FCM 구독 해제 요청이 GitHub Issues에 등록되었습니다!`);
-        console.log(`이슈 번호: #${issue.number}`);
-        console.log(`이슈 URL: ${issue.html_url}`);
+      const result = await response.json();
+      
+      if (result.success) {
+        console.log(`✅ 토픽 '${topic}' 구독 해제 완료!`);
+        console.log('구독 해제 결과:', result);
         
         // 로컬 저장소에서 구독 정보 제거
         const subscriptions = JSON.parse(localStorage.getItem('fcm-subscriptions') || '[]');
         const updatedSubscriptions = subscriptions.filter(sub => sub !== topic);
         localStorage.setItem('fcm-subscriptions', JSON.stringify(updatedSubscriptions));
-        localStorage.removeItem('fcm-subscription-issue');
-        
-        // 사용자에게 알림
-        alert(`✅ 알림 구독 해제 요청이 등록되었습니다!\n\n관리자가 처리하면 알림이 중단됩니다.\n이슈 #${issue.number}에서 진행 상황을 확인하세요.`);
         
         return true;
       } else {
-        const errorData = await response.json();
-        console.error('GitHub Issues 생성 실패:', response.status, errorData);
-        throw new Error(`이슈 생성 실패: ${errorData.message || response.status}`);
+        console.error('토픽 구독 해제 실패:', result);
+        throw new Error(result.error || result.details || '토픽 구독 해제 실패');
       }
       
     } catch (error) {
-      console.error('토픽 구독 해제 요청 실패:', error);
+      console.error('토픽 구독 해제 Firebase Functions 호출 실패:', error);
       
-      // 실패 시 수동 구독 해제 안내
-      console.log(`%c🔕 자동 구독 해제 요청 실패, 수동 처리가 필요합니다`, 'font-size: 16px; font-weight: bold; color: #e53e3e;');
+      // 실패 시 Firebase Functions 배포 준비 안내
+      console.log(`%c🔕 Firebase Functions 배포 준비 중...`, 'font-size: 16px; font-weight: bold; color: #e53e3e;');
       console.log(`%c토픽: ${topic}`, 'font-size: 14px; color: #2d3748;');
       console.log(`%c토큰: ${token}`, 'font-size: 12px; color: #718096; font-family: monospace;');
-      console.log(`%c수동 구독 해제 명령:`, 'font-size: 14px; font-weight: bold; color: #4299e1;');
-      console.log(`%cgh workflow run "FCM Auto Subscribe" -f action="unsubscribe" -f token="${token}" -f topic="${topic}"`, 
-        'background: #f7fafc; padding: 8px; border-left: 4px solid #4299e1; font-family: monospace; color: #2d3748;');
+      console.log(`%cFirebase Functions 배포 준비 중...`, 'font-size: 14px; font-weight: bold; color: #4299e1;');
+      console.log(`%c잠시 후 자동 구독 해제가 가능합니다.`, 'color: #38a169;');
       
       throw error;
     }
@@ -306,50 +278,28 @@ gh workflow run "FCM Auto Subscribe" -f action="unsubscribe" -f token="${token}"
     }
   }
 
-  // 토픽 구독 (GitHub Issues 기반)
+  // 토픽 구독 (Firebase Functions 기반)
   async subscribeToTopic(token, topic) {
     try {
-      console.log(`🔔 FCM 토픽 '${topic}'에 구독 요청 중...`);
+      console.log(`🔔 FCM 토픽 '${topic}'에 Firebase Functions로 구독 중...`);
       
-      // GitHub Issues를 통한 구독 요청 생성
-      const issueTitle = `FCM 구독 요청: ${topic} - ${new Date().toISOString()}`;
-      const issueBody = `
-## FCM 토픽 구독 요청
-
-- **토픽**: \`${topic}\`
-- **토큰**: \`${token}\`
-- **요청 시간**: ${new Date().toLocaleString('ko-KR')}
-- **사용자 에이전트**: ${navigator.userAgent}
-
-> 이 이슈는 FCM 토픽 구독을 위해 자동으로 생성되었습니다.
-> GitHub Actions가 이 이슈를 감지하여 구독을 처리합니다.
-
-### 처리 방법
-관리자는 다음 명령으로 구독을 처리할 수 있습니다:
-
-\`\`\`bash
-gh workflow run "FCM Auto Subscribe" -f action="subscribe" -f token="${token}" -f topic="${topic}"
-\`\`\`
-      `;
-
-      const response = await fetch('https://api.github.com/repos/geeksbaek/daily-feed/issues', {
+      // Firebase Functions API 호출 (asia-northeast3 리전)
+      const response = await fetch('https://subscribefcm-jrydl3eaqq-du.a.run.app', {
         method: 'POST',
         headers: {
-          'Accept': 'application/vnd.github.v3+json',
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          title: issueTitle,
-          body: issueBody,
-          labels: ['fcm-subscribe', 'auto-generated']
+          token: token,
+          topic: topic
         })
       });
 
-      if (response.ok) {
-        const issue = await response.json();
-        console.log(`✅ FCM 구독 요청이 GitHub Issues에 등록되었습니다!`);
-        console.log(`이슈 번호: #${issue.number}`);
-        console.log(`이슈 URL: ${issue.html_url}`);
+      const result = await response.json();
+      
+      if (result.success) {
+        console.log(`✅ 토픽 '${topic}' 구독 완료!`);
+        console.log('구독 결과:', result);
         
         // 로컬 저장소에 구독 정보 저장
         const subscriptions = JSON.parse(localStorage.getItem('fcm-subscriptions') || '[]');
@@ -358,28 +308,22 @@ gh workflow run "FCM Auto Subscribe" -f action="subscribe" -f token="${token}" -
           localStorage.setItem('fcm-subscriptions', JSON.stringify(subscriptions));
         }
         localStorage.setItem('fcm-token-for-subscription', token);
-        localStorage.setItem('fcm-subscription-issue', issue.number.toString());
-        
-        // 사용자에게 알림
-        alert(`✅ 알림 구독 요청이 등록되었습니다!\n\n관리자가 승인하면 알림을 받을 수 있습니다.\n이슈 #${issue.number}에서 진행 상황을 확인하세요.`);
         
         return true;
       } else {
-        const errorData = await response.json();
-        console.error('GitHub Issues 생성 실패:', response.status, errorData);
-        throw new Error(`이슈 생성 실패: ${errorData.message || response.status}`);
+        console.error('토픽 구독 실패:', result);
+        throw new Error(result.error || result.details || '토픽 구독 실패');
       }
       
     } catch (error) {
-      console.error('토픽 구독 요청 실패:', error);
+      console.error('토픽 구독 Firebase Functions 호출 실패:', error);
       
-      // 실패 시 수동 구독 안내
-      console.log(`%c🔔 자동 구독 요청 실패, 수동 구독이 필요합니다`, 'font-size: 16px; font-weight: bold; color: #e53e3e;');
+      // 실패 시 Firebase Functions 배포 준비 안내
+      console.log(`%c🔔 Firebase Functions 배포 준비 중...`, 'font-size: 16px; font-weight: bold; color: #e53e3e;');
       console.log(`%c토픽: ${topic}`, 'font-size: 14px; color: #2d3748;');
       console.log(`%c토큰: ${token}`, 'font-size: 12px; color: #718096; font-family: monospace;');
-      console.log(`%c수동 구독 명령:`, 'font-size: 14px; font-weight: bold; color: #4299e1;');
-      console.log(`%cgh workflow run "FCM Auto Subscribe" -f action="subscribe" -f token="${token}" -f topic="${topic}"`, 
-        'background: #f7fafc; padding: 8px; border-left: 4px solid #4299e1; font-family: monospace; color: #2d3748;');
+      console.log(`%cFirebase Functions 배포 준비 중...`, 'font-size: 14px; font-weight: bold; color: #4299e1;');
+      console.log(`%c잠시 후 자동 구독이 가능합니다.`, 'color: #38a169;');
       
       throw error;
     }
