@@ -24,8 +24,8 @@ export class FirebasePushManager {
 
       // Firebase SDK 동적 로드
       console.log('Firebase SDK 로드 시작...');
-      const { initializeApp } = await import('https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js');
-      const { getMessaging, getToken, onMessage } = await import('https://www.gstatic.com/firebasejs/9.23.0/firebase-messaging.js');
+      const { initializeApp } = await import('https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js');
+      const { getMessaging, getToken, onMessage } = await import('https://www.gstatic.com/firebasejs/10.12.2/firebase-messaging.js');
       console.log('Firebase SDK 로드 완료');
       
       // Firebase 앱 초기화
@@ -49,15 +49,23 @@ export class FirebasePushManager {
       
       if (registration.installing) {
         console.log('Service Worker 설치 중, 활성화 대기...');
-        await new Promise((resolve) => {
+        await new Promise((resolve, reject) => {
           const worker = registration.installing;
           worker.addEventListener('statechange', () => {
             console.log('Service Worker 상태 변경:', worker.state);
             if (worker.state === 'activated') {
               console.log('Service Worker 활성화 완료');
               resolve();
+            } else if (worker.state === 'redundant') {
+              console.log('Service Worker가 redundant 상태가 됨 (오류 발생)');
+              reject(new Error('Service Worker가 redundant 상태가 되었습니다. firebase-messaging-sw.js에 오류가 있을 수 있습니다.'));
             }
           });
+          
+          // 타임아웃 추가 (10초)
+          setTimeout(() => {
+            reject(new Error('Service Worker 활성화 타임아웃'));
+          }, 10000);
         });
       } else if (!registration.active) {
         console.log('Service Worker 준비 대기...');

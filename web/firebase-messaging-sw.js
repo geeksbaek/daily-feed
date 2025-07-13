@@ -1,8 +1,8 @@
 // Firebase Cloud Messaging Service Worker
 
-// Firebase SDK 임포트
-importScripts('https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js');
-importScripts('https://www.gstatic.com/firebasejs/9.23.0/firebase-messaging-compat.js');
+// Firebase SDK 임포트 (더 안정적인 버전 사용)
+importScripts('https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js');
+importScripts('https://www.gstatic.com/firebasejs/10.12.2/firebase-messaging-compat.js');
 
 // Firebase 설정 로드
 const getFirebaseConfig = () => {
