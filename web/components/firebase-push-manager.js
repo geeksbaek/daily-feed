@@ -162,15 +162,60 @@ export class FirebasePushManager {
       const { deleteToken } = await import('https://www.gstatic.com/firebasejs/9.23.0/firebase-messaging.js');
       
       if (this.token) {
+        // 먼저 토픽에서 구독 해제
+        await this.unsubscribeFromTopic(this.token, 'daily-feed');
+        
+        // 그 다음 토큰 삭제
         await deleteToken(this.messaging);
         this.token = null;
         localStorage.removeItem('fcm-token');
+        localStorage.removeItem('fcm-subscriptions');
+        localStorage.removeItem('fcm-token-for-subscription');
         console.log('FCM 구독 해제 성공');
         return true;
       }
       return false;
     } catch (error) {
       console.error('FCM 구독 해제 실패:', error);
+      throw error;
+    }
+  }
+
+  // 토픽 구독 해제 (자동)
+  async unsubscribeFromTopic(token, topic) {
+    try {
+      console.log(`🔕 FCM 토픽 '${topic}'에서 자동 구독 해제 중...`);
+      
+      // 백엔드 API를 통해 자동 구독 해제
+      const response = await fetch('/api/fcm/unsubscribe', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          token: token,
+          topic: topic
+        })
+      });
+
+      const result = await response.json();
+      
+      if (result.success) {
+        console.log(`✅ 토픽 '${topic}' 구독 해제 완료!`);
+        
+        // 로컬 저장소에서 구독 정보 제거
+        const subscriptions = JSON.parse(localStorage.getItem('fcm-subscriptions') || '[]');
+        const updatedSubscriptions = subscriptions.filter(sub => sub !== topic);
+        localStorage.setItem('fcm-subscriptions', JSON.stringify(updatedSubscriptions));
+        
+        return true;
+      } else {
+        console.error('토픽 구독 해제 실패:', result.message);
+        throw new Error(result.message || '토픽 구독 해제 실패');
+      }
+      
+    } catch (error) {
+      console.error('토픽 구독 해제 API 호출 실패:', error);
       throw error;
     }
   }
@@ -224,72 +269,53 @@ export class FirebasePushManager {
     }
   }
 
-  // 토픽 구독 (GitHub Actions Repository Dispatch API 호출)
+  // 토픽 구독 (자동 구독)
   async subscribeToTopic(token, topic) {
     try {
-      console.log(`토픽 '${topic}'에 구독 시도...`);
+      console.log(`🔔 FCM 토픽 '${topic}'에 자동 구독 중...`);
       
-      // GitHub Actions Repository Dispatch API 호출
-      const response = await fetch('https://api.github.com/repos/geeksbaek/daily-feed/dispatches', {
+      // 백엔드 API를 통해 자동 구독
+      const response = await fetch('/api/fcm/subscribe', {
         method: 'POST',
         headers: {
-          'Accept': 'application/vnd.github.v3+json',
           'Content-Type': 'application/json',
-          // GitHub Token이 필요하지만 보안상 클라이언트에서 직접 사용할 수 없음
-          // 'Authorization': 'token YOUR_GITHUB_TOKEN'
         },
         body: JSON.stringify({
-          event_type: 'fcm-subscribe',
-          client_payload: {
-            token: token,
-            topic: topic,
-            timestamp: Date.now()
-          }
+          token: token,
+          topic: topic
         })
       });
 
-      if (response.ok) {
-        console.log(`토픽 '${topic}' 구독 요청 성공`);
+      const result = await response.json();
+      
+      if (result.success) {
+        console.log(`✅ 토픽 '${topic}' 구독 완료!`);
         
-        // 로컬 저장소에도 구독 정보 저장
+        // 로컬 저장소에 구독 정보 저장
         const subscriptions = JSON.parse(localStorage.getItem('fcm-subscriptions') || '[]');
         if (!subscriptions.includes(topic)) {
           subscriptions.push(topic);
           localStorage.setItem('fcm-subscriptions', JSON.stringify(subscriptions));
         }
+        localStorage.setItem('fcm-token-for-subscription', token);
+        
+        return true;
       } else {
-        console.warn('GitHub API 호출 실패 (인증 필요), 로컬 저장으로 대체');
-        
-        // GitHub API 실패 시 로컬 저장으로 대체
-        const subscriptions = JSON.parse(localStorage.getItem('fcm-subscriptions') || '[]');
-        if (!subscriptions.includes(topic)) {
-          subscriptions.push(topic);
-          localStorage.setItem('fcm-subscriptions', JSON.stringify(subscriptions));
-          localStorage.setItem('fcm-token-for-subscription', token);
-          
-          // 사용자에게 수동 구독 안내
-          console.log(`
-          토픽 구독을 완료하려면 다음 명령을 실행하세요:
-          gh workflow run "FCM Topic Subscribe" -f token="${token}" -f topic="${topic}"
-          `);
-        }
+        console.error('토픽 구독 실패:', result.message);
+        throw new Error(result.message || '토픽 구독 실패');
       }
       
     } catch (error) {
-      console.error('토픽 구독 실패:', error);
+      console.error('토픽 구독 API 호출 실패:', error);
       
-      // 오류 시 로컬 저장으로 대체
-      const subscriptions = JSON.parse(localStorage.getItem('fcm-subscriptions') || '[]');
-      if (!subscriptions.includes(topic)) {
-        subscriptions.push(topic);
-        localStorage.setItem('fcm-subscriptions', JSON.stringify(subscriptions));
-        localStorage.setItem('fcm-token-for-subscription', token);
-        
-        console.log(`
-        오류로 인해 자동 구독에 실패했습니다. 수동으로 구독하세요:
-        gh workflow run "FCM Topic Subscribe" -f token="${token}" -f topic="${topic}"
-        `);
-      }
+      // API 실패 시 fallback으로 수동 구독 안내
+      console.log(`%c🔔 자동 구독 실패, 수동 구독이 필요합니다`, 'font-size: 16px; font-weight: bold; color: #e53e3e;');
+      console.log(`%c토픽: ${topic}`, 'font-size: 14px; color: #2d3748;');
+      console.log(`%c토큰: ${token}`, 'font-size: 12px; color: #718096; font-family: monospace;');
+      console.log(`%cgh workflow run "FCM Topic Subscribe" -f token="${token}" -f topic="${topic}"`, 
+        'background: #f7fafc; padding: 8px; border-left: 4px solid #4299e1; font-family: monospace; color: #2d3748;');
+      
+      throw error;
     }
   }
 

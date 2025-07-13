@@ -4,7 +4,8 @@ import { FirebasePushManager } from './firebase-push-manager.js';
 export class NotificationToggle extends LitElement {
   static properties = {
     enabled: { type: Boolean },
-    permission: { type: String }
+    permission: { type: String },
+    isLoading: { type: Boolean }
   };
 
   static styles = css`
@@ -69,6 +70,11 @@ export class NotificationToggle extends LitElement {
       background-color: var(--bg-primary);
     }
 
+    .toggle-button.loading {
+      opacity: 0.7;
+      cursor: wait;
+    }
+
     .icon {
       font-size: 11px;
     }
@@ -78,12 +84,27 @@ export class NotificationToggle extends LitElement {
       flex: 1;
       text-align: left;
     }
+
+    .loading-spinner {
+      width: 11px;
+      height: 11px;
+      border: 1px solid transparent;
+      border-top: 1px solid currentColor;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
   `;
 
   constructor() {
     super();
     this.enabled = false;
     this.permission = 'default';
+    this.isLoading = false;
     this.firebasePushManager = new FirebasePushManager();
     this.isInitialized = false;
   }
@@ -112,18 +133,21 @@ export class NotificationToggle extends LitElement {
 
   render() {
     const getButtonClass = () => {
+      if (this.isLoading) return 'toggle-button loading';
       if (this.permission === 'denied') return 'toggle-button disabled';
       if (this.enabled && this.permission === 'granted') return 'toggle-button enabled';
       return 'toggle-button';
     };
 
     const getIcon = () => {
+      if (this.isLoading) return html`<div class="loading-spinner"></div>`;
       if (this.permission === 'denied') return '🔕';
       if (this.enabled && this.permission === 'granted') return '🔔';
       return '🔔';
     };
 
     const getText = () => {
+      if (this.isLoading) return '처리중...';
       if (this.permission === 'denied') return '차단됨';
       if (this.enabled && this.permission === 'granted') return '켜짐';
       return '꺼짐';
@@ -131,7 +155,7 @@ export class NotificationToggle extends LitElement {
 
     return html`
       <div class="notification-toggle">
-        <button class="${getButtonClass()}" @click=${this.handleToggle}>
+        <button class="${getButtonClass()}" @click=${this.handleToggle} ?disabled=${this.isLoading}>
           <span class="icon">${getIcon()}</span>
           <span class="status-text">${getText()}</span>
         </button>
@@ -140,6 +164,8 @@ export class NotificationToggle extends LitElement {
   }
 
   async handleToggle() {
+    if (this.isLoading) return;
+
     if (!this.isInitialized) {
       // Firebase 초기화가 안되어도 기본 브라우저 알림은 시도
       console.warn('Firebase 초기화 안됨, 기본 알림 권한만 요청');
@@ -165,6 +191,8 @@ export class NotificationToggle extends LitElement {
       return;
     }
 
+    this.isLoading = true;
+
     try {
       if (this.enabled) {
         // 구독 해제
@@ -174,6 +202,7 @@ export class NotificationToggle extends LitElement {
           detail: { enabled: false, type: 'firebase' },
           bubbles: true
         }));
+        this.showToast('알림이 해제되었습니다');
       } else {
         // 구독 활성화
         await this.firebasePushManager.requestPermissionAndGetToken();
@@ -184,13 +213,23 @@ export class NotificationToggle extends LitElement {
           bubbles: true
         }));
         
-        // 성공 메시지
         console.log('Firebase FCM 구독 완료!');
+        this.showToast('알림이 활성화되었습니다');
       }
     } catch (error) {
       console.error('알림 토글 실패:', error);
-      alert('알림 설정 중 오류가 발생했습니다: ' + error.message);
+      this.showToast('알림 설정 중 오류가 발생했습니다: ' + error.message, 'error');
+    } finally {
+      this.isLoading = false;
     }
+  }
+
+  showToast(message, type = 'success') {
+    // 토스트 알림 이벤트 발송
+    this.dispatchEvent(new CustomEvent('show-toast', {
+      detail: { message, type },
+      bubbles: true
+    }));
   }
 }
 
