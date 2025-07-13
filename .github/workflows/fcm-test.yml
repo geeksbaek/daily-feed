@@ -1,0 +1,63 @@
+name: FCM Test Notification
+
+on:
+  # 수동 실행 가능
+  workflow_dispatch:
+    inputs:
+      title:
+        description: '알림 제목'
+        required: false
+        default: '🧪 테스트 알림'
+      body:
+        description: '알림 내용'
+        required: false
+        default: 'Firebase Functions 기반 FCM 시스템 테스트입니다!'
+      topic:
+        description: 'FCM 토픽'
+        required: false
+        default: 'daily-feed'
+
+# GitHub Actions 권한 설정
+permissions:
+  contents: read
+
+jobs:
+  send-test-notification:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: '1.23'
+
+      - name: Cache Go modules
+        uses: actions/cache@v3
+        with:
+          path: ~/go/pkg/mod
+          key: ${{ runner.os }}-go-${{ hashFiles('backend/go.sum') }}
+          restore-keys: |
+            ${{ runner.os }}-go-
+
+      - name: Send FCM Test Notification
+        env:
+          FIREBASE_PROJECT_ID: daily-feed-notifications
+          FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
+        working-directory: ./backend
+        run: |
+          echo "FCM 테스트 알림 발송 시작..."
+          echo "제목: ${{ github.event.inputs.title || '🧪 테스트 알림' }}"
+          echo "내용: ${{ github.event.inputs.body || 'Firebase Functions 기반 FCM 시스템 테스트입니다!' }}"
+          echo "토픽: ${{ github.event.inputs.topic || 'daily-feed' }}"
+          
+          go run cmd/fcm-send/main.go \
+            -topic "${{ github.event.inputs.topic || 'daily-feed' }}" \
+            -title "${{ github.event.inputs.title || '🧪 테스트 알림' }}" \
+            -body "${{ github.event.inputs.body || 'Firebase Functions 기반 FCM 시스템 테스트입니다!' }}" \
+            -date "$(date +%Y-%m-%d)" \
+            -url "https://geeksbaek.github.io/daily-feed/"
+          
+          echo "✅ FCM 테스트 알림 발송 완료!"
