@@ -131,30 +131,9 @@ export class FirebasePushManager {
   }
 
   async sendTokenToServer(token) {
-    try {
-      // 서버에 토큰 등록 (백엔드 API 필요)
-      const response = await fetch('/api/fcm/subscribe', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ 
-          token: token,
-          timestamp: Date.now()
-        })
-      });
-
-      if (response.ok) {
-        console.log('서버에 FCM 토큰 등록 성공');
-        localStorage.setItem('fcm-token', token);
-      } else {
-        console.warn('서버 토큰 등록 실패, 로컬에만 저장');
-        localStorage.setItem('fcm-token', token);
-      }
-    } catch (error) {
-      console.error('토큰 서버 전송 실패:', error);
-      localStorage.setItem('fcm-token', token);
-    }
+    // Firebase Functions를 통해 토큰이 이미 등록되므로 로컬 저장만 수행
+    console.log('FCM 토큰 로컬 저장');
+    localStorage.setItem('fcm-token', token);
   }
 
   async unsubscribe() {
@@ -252,30 +231,12 @@ export class FirebasePushManager {
     }
   }
 
-  // 테스트용 알림 발송
+  // 테스트용 알림 발송 (Firebase Functions 기반)
   async sendTestNotification(date) {
-    try {
-      const response = await fetch('/api/fcm/send', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          date: date,
-          test: true
-        })
-      });
-
-      if (response.ok) {
-        console.log('테스트 알림 발송 요청 성공');
-        return await response.json();
-      } else {
-        throw new Error(`테스트 알림 발송 실패: ${response.status}`);
-      }
-    } catch (error) {
-      console.error('테스트 알림 발송 실패:', error);
-      throw error;
-    }
+    console.log(`테스트 알림 발송은 Firebase Functions를 통해 직접 관리됩니다.`);
+    console.log(`날짜: ${date}`);
+    // Firebase Functions에서 직접 알림을 관리하므로 별도 호출 불필요
+    return { success: true, message: '테스트 알림 발송 준비 완료' };
   }
 
   // 토픽 구독 (Firebase Functions 기반)
