@@ -181,51 +181,72 @@ export class FirebasePushManager {
     }
   }
 
-  // 토픽 구독 해제 (GitHub Actions 기반)
+  // 토픽 구독 해제 (GitHub Issues 기반)
   async unsubscribeFromTopic(token, topic) {
     try {
-      console.log(`🔕 FCM 토픽 '${topic}'에서 GitHub Actions로 구독 해제 중...`);
+      console.log(`🔕 FCM 토픽 '${topic}'에서 구독 해제 요청 중...`);
       
-      // GitHub Actions repository_dispatch 이벤트 트리거
-      const response = await fetch('https://api.github.com/repos/geeksbaek/daily-feed/dispatches', {
+      // GitHub Issues를 통한 구독 해제 요청 생성
+      const issueTitle = `FCM 구독 해제 요청: ${topic} - ${new Date().toISOString()}`;
+      const issueBody = `
+## FCM 토픽 구독 해제 요청
+
+- **토픽**: \`${topic}\`
+- **토큰**: \`${token}\`
+- **요청 시간**: ${new Date().toLocaleString('ko-KR')}
+- **사용자 에이전트**: ${navigator.userAgent}
+
+> 이 이슈는 FCM 토픽 구독 해제를 위해 자동으로 생성되었습니다.
+> GitHub Actions가 이 이슈를 감지하여 구독 해제를 처리합니다.
+
+### 처리 방법
+관리자는 다음 명령으로 구독 해제를 처리할 수 있습니다:
+
+\`\`\`bash
+gh workflow run "FCM Auto Subscribe" -f action="unsubscribe" -f token="${token}" -f topic="${topic}"
+\`\`\`
+      `;
+
+      const response = await fetch('https://api.github.com/repos/geeksbaek/daily-feed/issues', {
         method: 'POST',
         headers: {
           'Accept': 'application/vnd.github.v3+json',
           'Content-Type': 'application/json',
-          // 실제 환경에서는 GitHub Personal Access Token이 필요
-          // 'Authorization': 'token YOUR_GITHUB_TOKEN'
         },
         body: JSON.stringify({
-          event_type: 'fcm-unsubscribe',
-          client_payload: {
-            token: token,
-            topic: topic,
-            timestamp: Date.now()
-          }
+          title: issueTitle,
+          body: issueBody,
+          labels: ['fcm-unsubscribe', 'auto-generated']
         })
       });
 
       if (response.ok) {
-        console.log(`✅ 토픽 '${topic}' 구독 해제 요청 전송 완료!`);
-        console.log(`GitHub Actions에서 구독 해제를 처리 중입니다...`);
+        const issue = await response.json();
+        console.log(`✅ FCM 구독 해제 요청이 GitHub Issues에 등록되었습니다!`);
+        console.log(`이슈 번호: #${issue.number}`);
+        console.log(`이슈 URL: ${issue.html_url}`);
         
         // 로컬 저장소에서 구독 정보 제거
         const subscriptions = JSON.parse(localStorage.getItem('fcm-subscriptions') || '[]');
         const updatedSubscriptions = subscriptions.filter(sub => sub !== topic);
         localStorage.setItem('fcm-subscriptions', JSON.stringify(updatedSubscriptions));
+        localStorage.removeItem('fcm-subscription-issue');
+        
+        // 사용자에게 알림
+        alert(`✅ 알림 구독 해제 요청이 등록되었습니다!\n\n관리자가 처리하면 알림이 중단됩니다.\n이슈 #${issue.number}에서 진행 상황을 확인하세요.`);
         
         return true;
       } else {
-        const errorText = await response.text();
-        console.error('GitHub Actions 트리거 실패:', response.status, errorText);
-        throw new Error(`GitHub Actions 트리거 실패: ${response.status}`);
+        const errorData = await response.json();
+        console.error('GitHub Issues 생성 실패:', response.status, errorData);
+        throw new Error(`이슈 생성 실패: ${errorData.message || response.status}`);
       }
       
     } catch (error) {
-      console.error('토픽 구독 해제 GitHub Actions 호출 실패:', error);
+      console.error('토픽 구독 해제 요청 실패:', error);
       
       // 실패 시 수동 구독 해제 안내
-      console.log(`%c🔕 자동 구독 해제 실패, 수동 처리가 필요합니다`, 'font-size: 16px; font-weight: bold; color: #e53e3e;');
+      console.log(`%c🔕 자동 구독 해제 요청 실패, 수동 처리가 필요합니다`, 'font-size: 16px; font-weight: bold; color: #e53e3e;');
       console.log(`%c토픽: ${topic}`, 'font-size: 14px; color: #2d3748;');
       console.log(`%c토큰: ${token}`, 'font-size: 12px; color: #718096; font-family: monospace;');
       console.log(`%c수동 구독 해제 명령:`, 'font-size: 14px; font-weight: bold; color: #4299e1;');
@@ -285,33 +306,50 @@ export class FirebasePushManager {
     }
   }
 
-  // 토픽 구독 (GitHub Actions 기반)
+  // 토픽 구독 (GitHub Issues 기반)
   async subscribeToTopic(token, topic) {
     try {
-      console.log(`🔔 FCM 토픽 '${topic}'에 GitHub Actions로 구독 중...`);
+      console.log(`🔔 FCM 토픽 '${topic}'에 구독 요청 중...`);
       
-      // GitHub Actions repository_dispatch 이벤트 트리거
-      const response = await fetch('https://api.github.com/repos/geeksbaek/daily-feed/dispatches', {
+      // GitHub Issues를 통한 구독 요청 생성
+      const issueTitle = `FCM 구독 요청: ${topic} - ${new Date().toISOString()}`;
+      const issueBody = `
+## FCM 토픽 구독 요청
+
+- **토픽**: \`${topic}\`
+- **토큰**: \`${token}\`
+- **요청 시간**: ${new Date().toLocaleString('ko-KR')}
+- **사용자 에이전트**: ${navigator.userAgent}
+
+> 이 이슈는 FCM 토픽 구독을 위해 자동으로 생성되었습니다.
+> GitHub Actions가 이 이슈를 감지하여 구독을 처리합니다.
+
+### 처리 방법
+관리자는 다음 명령으로 구독을 처리할 수 있습니다:
+
+\`\`\`bash
+gh workflow run "FCM Auto Subscribe" -f action="subscribe" -f token="${token}" -f topic="${topic}"
+\`\`\`
+      `;
+
+      const response = await fetch('https://api.github.com/repos/geeksbaek/daily-feed/issues', {
         method: 'POST',
         headers: {
           'Accept': 'application/vnd.github.v3+json',
           'Content-Type': 'application/json',
-          // 실제 환경에서는 GitHub Personal Access Token이 필요
-          // 'Authorization': 'token YOUR_GITHUB_TOKEN'
         },
         body: JSON.stringify({
-          event_type: 'fcm-subscribe',
-          client_payload: {
-            token: token,
-            topic: topic,
-            timestamp: Date.now()
-          }
+          title: issueTitle,
+          body: issueBody,
+          labels: ['fcm-subscribe', 'auto-generated']
         })
       });
 
       if (response.ok) {
-        console.log(`✅ 토픽 '${topic}' 구독 요청 전송 완료!`);
-        console.log(`GitHub Actions에서 구독을 처리 중입니다...`);
+        const issue = await response.json();
+        console.log(`✅ FCM 구독 요청이 GitHub Issues에 등록되었습니다!`);
+        console.log(`이슈 번호: #${issue.number}`);
+        console.log(`이슈 URL: ${issue.html_url}`);
         
         // 로컬 저장소에 구독 정보 저장
         const subscriptions = JSON.parse(localStorage.getItem('fcm-subscriptions') || '[]');
@@ -320,19 +358,23 @@ export class FirebasePushManager {
           localStorage.setItem('fcm-subscriptions', JSON.stringify(subscriptions));
         }
         localStorage.setItem('fcm-token-for-subscription', token);
+        localStorage.setItem('fcm-subscription-issue', issue.number.toString());
+        
+        // 사용자에게 알림
+        alert(`✅ 알림 구독 요청이 등록되었습니다!\n\n관리자가 승인하면 알림을 받을 수 있습니다.\n이슈 #${issue.number}에서 진행 상황을 확인하세요.`);
         
         return true;
       } else {
-        const errorText = await response.text();
-        console.error('GitHub Actions 트리거 실패:', response.status, errorText);
-        throw new Error(`GitHub Actions 트리거 실패: ${response.status}`);
+        const errorData = await response.json();
+        console.error('GitHub Issues 생성 실패:', response.status, errorData);
+        throw new Error(`이슈 생성 실패: ${errorData.message || response.status}`);
       }
       
     } catch (error) {
-      console.error('토픽 구독 GitHub Actions 호출 실패:', error);
+      console.error('토픽 구독 요청 실패:', error);
       
       // 실패 시 수동 구독 안내
-      console.log(`%c🔔 자동 구독 실패, 수동 구독이 필요합니다`, 'font-size: 16px; font-weight: bold; color: #e53e3e;');
+      console.log(`%c🔔 자동 구독 요청 실패, 수동 구독이 필요합니다`, 'font-size: 16px; font-weight: bold; color: #e53e3e;');
       console.log(`%c토픽: ${topic}`, 'font-size: 14px; color: #2d3748;');
       console.log(`%c토큰: ${token}`, 'font-size: 12px; color: #718096; font-family: monospace;');
       console.log(`%c수동 구독 명령:`, 'font-size: 14px; font-weight: bold; color: #4299e1;');

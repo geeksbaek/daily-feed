@@ -1,0 +1,144 @@
+name: FCM Issue Processor
+
+on:
+  issues:
+    types: [opened, labeled]
+
+jobs:
+  process-fcm-request:
+    runs-on: ubuntu-latest
+    if: contains(github.event.issue.labels.*.name, 'fcm-subscribe') || contains(github.event.issue.labels.*.name, 'fcm-unsubscribe')
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Setup Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: '1.23'
+          cache: true
+
+      - name: Parse FCM request from issue
+        id: parse-request
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issueBody = context.payload.issue.body;
+            const labels = context.payload.issue.labels.map(l => l.name);
+            
+            // 토큰과 토픽 추출
+            const tokenMatch = issueBody.match(/- \*\*토큰\*\*: `([^`]+)`/);
+            const topicMatch = issueBody.match(/- \*\*토픽\*\*: `([^`]+)`/);
+            
+            if (!tokenMatch || !topicMatch) {
+              core.setFailed('이슈에서 토큰 또는 토픽을 찾을 수 없습니다.');
+              return;
+            }
+            
+            const token = tokenMatch[1];
+            const topic = topicMatch[1];
+            const isUnsubscribe = labels.includes('fcm-unsubscribe');
+            
+            core.setOutput('token', token);
+            core.setOutput('topic', topic);
+            core.setOutput('action', isUnsubscribe ? 'unsubscribe' : 'subscribe');
+            
+            console.log(`FCM 요청 파싱 완료: ${isUnsubscribe ? '구독 해제' : '구독'} - 토픽: ${topic}`);
+
+      - name: Execute FCM subscription
+        if: steps.parse-request.outputs.action == 'subscribe'
+        working-directory: backend
+        env:
+          FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
+        run: |
+          echo "📱 토픽 '${{ steps.parse-request.outputs.topic }}'에 구독 중..."
+          go run cmd/fcm-subscribe/main.go \
+            --token "${{ steps.parse-request.outputs.token }}" \
+            --topic "${{ steps.parse-request.outputs.topic }}"
+          echo "✅ 구독 완료!"
+
+      - name: Execute FCM unsubscription
+        if: steps.parse-request.outputs.action == 'unsubscribe'
+        working-directory: backend
+        env:
+          FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
+        run: |
+          echo "📱 토픽 '${{ steps.parse-request.outputs.topic }}'에서 구독 해제 중..."
+          go run cmd/fcm-subscribe/main.go \
+            --token "${{ steps.parse-request.outputs.token }}" \
+            --topic "${{ steps.parse-request.outputs.topic }}" \
+            --unsubscribe
+          echo "✅ 구독 해제 완료!"
+
+      - name: Comment on issue with result
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const action = '${{ steps.parse-request.outputs.action }}';
+            const topic = '${{ steps.parse-request.outputs.topic }}';
+            const actionText = action === 'unsubscribe' ? '구독 해제' : '구독';
+            const emoji = action === 'unsubscribe' ? '🔕' : '🔔';
+            
+            const comment = `${emoji} **FCM ${actionText} 완료**
+            
+토픽 \`${topic}\`에 대한 ${actionText}이 성공적으로 처리되었습니다.
+
+- 처리 시간: ${new Date().toLocaleString('ko-KR')}
+- GitHub Actions Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
+${action === 'subscribe' ? '이제 새로운 Daily Feed 업데이트 알림을 받을 수 있습니다!' : '더 이상 알림을 받지 않습니다.'}`;
+
+            await github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: comment
+            });
+
+      - name: Close and label issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const action = '${{ steps.parse-request.outputs.action }}';
+            const completedLabel = action === 'unsubscribe' ? 'fcm-unsubscribed' : 'fcm-subscribed';
+            
+            await github.rest.issues.update({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'closed',
+              labels: [completedLabel, 'auto-processed']
+            });
+
+      - name: Handle error
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const comment = `❌ **FCM 요청 처리 실패**
+            
+요청 처리 중 오류가 발생했습니다.
+
+- 실패 시간: ${new Date().toLocaleString('ko-KR')}
+- GitHub Actions Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
+관리자에게 문의하거나 다음 명령으로 수동 처리할 수 있습니다:
+
+\`\`\`bash
+gh workflow run "FCM Auto Subscribe" -f action="${{ steps.parse-request.outputs.action }}" -f token="${{ steps.parse-request.outputs.token }}" -f topic="${{ steps.parse-request.outputs.topic }}"
+\`\`\``;
+
+            await github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: comment
+            });
+            
+            await github.rest.issues.addLabels({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              labels: ['fcm-error']
+            });
