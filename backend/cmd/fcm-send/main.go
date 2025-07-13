@@ -6,7 +6,6 @@ import (
 	"fmt"
 	"log"
 	"os"
-	"path/filepath"
 	"time"
 
 	"github.com/jongyeol/daily-feed/pkg/fcm"
@@ -44,21 +43,13 @@ func main() {
 		}
 	} else {
 		// 환경 변수에서 키 로드
-		keyPath := os.Getenv("FIREBASE_SERVICE_ACCOUNT_KEY")
-		if keyPath == "" {
+		keyData := os.Getenv("FIREBASE_SERVICE_ACCOUNT_KEY")
+		if keyData == "" {
 			log.Fatal("Service Account 키를 지정해주세요: --service-account 플래그 또는 FIREBASE_SERVICE_ACCOUNT_KEY 환경변수")
 		}
 		
-		// 상대 경로면 절대 경로로 변환
-		if !filepath.IsAbs(keyPath) {
-			wd, _ := os.Getwd()
-			keyPath = filepath.Join(wd, keyPath)
-		}
-		
-		serviceAccountKey, err = os.ReadFile(keyPath)
-		if err != nil {
-			log.Fatalf("환경변수 Service Account 파일 읽기 실패: %v", err)
-		}
+		// JSON 데이터로 직접 사용 (GitHub Actions 등에서)
+		serviceAccountKey = []byte(keyData)
 	}
 
 	// FCM 클라이언트 생성
