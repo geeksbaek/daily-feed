@@ -33,8 +33,9 @@ export class FirebasePushManager {
       // Service Worker가 활성화될 때까지 대기
       if (registration.installing) {
         await new Promise((resolve) => {
-          registration.installing.addEventListener('statechange', () => {
-            if (registration.installing.state === 'activated') {
+          const worker = registration.installing;
+          worker.addEventListener('statechange', () => {
+            if (worker.state === 'activated') {
               resolve();
             }
           });
