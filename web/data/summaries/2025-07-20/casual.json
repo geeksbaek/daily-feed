@@ -1,0 +1,90 @@
+{
+  "date": "2025-07-20",
+  "preset": "casual",
+  "summary": "## 🌟 오늘의 Tech Talk\n\n이야, 오늘 소식들은 정말이지... AI 세상이 얼마나 정신없이 돌아가는지 제대로 보여주는 하루네요. 😅 한쪽에서는 AI에 너무 많은 돈을 쏟아부어서 경제 통계가 휘청거릴 정도라고 하고[^3], 다른 한쪽에선 규제가 너무 심하다며 빅테크가 버티기에 들어갔어요.[^1] 개발자 입장에서는 \"와, 이걸로 뭘 할 수 있을까?\" 싶다가도 \"이러다 큰일 나는 거 아냐?\" 싶은, 딱 그런 느낌이에요. 오늘은 이 정신없는 AI 세상 속에서 우리가 진짜 주목해야 할 것들을 솔직하게 한번 파헤쳐 볼게요!\n\n## 📊 주요 뉴스 브리핑\n\n### 🚀 신기술 \u0026 서비스\n- **`ls` 명령어, 이제 `lsr`로 갈아탈 시간?**: 리눅스에서 파일 목록 볼 때 쓰는 `ls` 명령어, 다들 아시죠? 이거보다 훨씬 빠른 `lsr`이라는 게 나왔어요.[^9] `io_uring`이라는 기술을 썼다는데, 복잡한 건 접어두고 그냥 \"파일 입출력을 미친 듯이 빠르게 처리하는 최신 기술\" 정도로 이해하면 돼요. 용량 큰 디렉토리에서 `ls` 치고 한참 기다렸던 경험, 다들 있잖아요? `lsr`은 그 시간을 확 줄여준대요. 이런 게 진짜 개발자의 삶의 질을 높여주는 거 아닐까요? 한번 써보고 싶네요! [^9]\n- **프론트엔드 JS 없이 댓글 기능을?**: 요즘 웹 개발은 프론트엔드 프레임워크 때문에 머리 아플 때가 많죠. 그런데 자바스크립트 한 줄 없이 순수 HTML/CSS랑 백엔드 코드만으로 깃허브 블로그 댓글 기능을 구현한 분이 나타났어요.[^2] 솔직히 이거 보고 \"와, 천재인데?\" 싶더라고요. 모든 걸 프레임워크에 의존하기보다, 가끔은 이렇게 기본으로 돌아가서 문제를 해결하는 방식이 더 우아해 보일 때가 있는 것 같아요. 미니멀리즘 최고! [^2]\n- **검색엔진 Kagi, 이렇게 쓰고 있었네!**: 유료 검색엔진 Kagi를 쓰는 한 유저의 활용법이 공유됐는데, 꽤 흥미로워요.[^6] 검색 결과를 내 입맛대로 바꾸고, 특정 사이트를 아예 차단하거나 우선순위를 높이는 기능들을 적극적으로 쓰고 있더라고요. 광고 없는 검색이 얼마나 쾌적한지, 그리고 내가 원하는 정보만 딱딱 골라볼 수 있다는 게 얼마나 강력한지 보여주는 사례 같아요. 매일 쓰는 도구에 조금만 투자해도 생산성이 확 오르는 경험, 다들 공감하시죠? [^6]\n\n### 🏢 기업 \u0026 산업 동향\n- **Meta, \"유럽 AI 규제, 너무 나갔다\"**: Meta가 유럽에서 만든 AI 협정에 서명을 거부했어요.[^1] \"혁신을 저해하는 과도한 규제\"라는 게 이유인데, 솔직히 좀 이해는 가요. 기술은 저만치 앞서가는데 규제가 발목을 잡는 경우가 많으니까요. 하지만 동시에 '거대 기업이 책임을 회피하려는 건가?' 하는 생각도 들어요. 기술 발전과 사회적 책임 사이의 줄다리기는 앞으로 계속될 가장 큰 이슈인 것 같아요. [^1]\n- **AI 투자, 경제를 뒤흔들다**: AI 때문에 기업들이 데이터센터 짓고 GPU 사느라 쓰는 돈(자본지출)이 상상을 초월하는 수준이래요.[^3] 얼마나 많으면 미국 경제 전체의 투자 관련 통계가 왜곡될 정도라고... 🤯 이건 그냥 IT 트렌드가 아니라 거의 산업혁명급 변화라는 뜻이겠죠. 한편으로는 이 엄청난 투자가 거품일지 모른다는 불안감도 스멀스멀 올라오네요. [^3]\n- **신용카드사의 압박, 스팀 게임을 내리다**: 이건 좀 충격적인 소식인데, 비자나 마스터카드 같은 신용카드 회사들이 게임 플랫폼 스팀(Steam)을 운영하는 밸브(Valve)에 압력을 넣어서 특정 성인 게임들을 내리게 한 사실이 확인됐어요.[^4] 플랫폼의 자율적인 정책이 아니라 금융 회사의 입김으로 콘텐츠가 사라질 수 있다는 건 정말 무서운 일이에요. 기술 회사가 생각보다 외부의 힘에 얼마나 취약한지 보여주는 사례네요. [^4]\n\n### 🔍 트렌드 \u0026 인사이트\n- **결국 모든 AI 모델은 똑같아질까?**: \"모든 AI 모델이 결국엔 다 비슷해질 수 있다\"는 흥미로운 주장이 나왔어요.[^8] 다들 비슷한 데이터로 학습하고, 비슷한 아키텍처를 쓰다 보니 결과물도 수렴할 거라는 거죠. 우리가 지금 느끼는 모델 간의 차이가 사실은 마케팅이나 미세한 조정의 차이일 뿐일 수도 있다는 거예요. LLM 춘추전국시대의 끝은 '모델의 평준화'일지도 모르겠네요. [^8]\n- **\"내가 만든다\" vs \"남의 것 쓴다\"**: 개발자 커뮤니티의 영원한 숙제죠. 'NIH(Not Invented Here, 우리가 만든 게 아니면 안 써)' 증후군이라고 비판받기도 하지만, \"직접 만드는 게 잘못된 라이브러리에 의존하는 것보다 훨씬 싸다\"는 주장이 다시 주목받고 있어요.[^7] 의존성 지옥에 빠져서 고생해 본 개발자라면 \"아, 이거 진짜 내 얘기다\" 싶을 거예요. 남의 코드 가져다 쓰는 게 당장은 편하지만, 나중에 유지보수 생각하면... 어휴, 끔찍하죠. [^7]\n- **규제를 우회하는 얼굴인식 기술**: 뉴욕 경찰(NYPD)이 법으로 금지된 얼굴인식 기술을 써서 시위대 신원을 확인했다는 소식이 전해졌어요.[^5] 기술의 위험성을 보여주는 대표적인 사례예요. 법이나 규제가 있어도 기술은 어떻게든 길을 찾고, 때로는 이렇게 악용될 수 있다는 걸 보여주죠. 개발자로서 우리가 만드는 기술이 사회에 어떤 영향을 미칠지 항상 고민해야 하는 이유이기도 하고요. [^5]\n\n## 💡 오늘의 정리\n\n오늘의 Tech Talk를 한마디로 요약하면, **\"AI라는 로켓, 어디로 날아갈지 아무도 모른다!\"** 같아요. 한쪽에서는 경제를 뒤흔들 정도로 어마어마한 돈을 쏟아부으며 로켓을 띄우고 있고[^3], 다른 한쪽에서는 \"이러다 큰일 나!\"라며 규제의 브레이크를 걸려고 하죠.[^1]\n\n이런 혼돈 속에서 개발자인 우리는 두 가지를 기억하면 좋을 것 같아요. 첫째, 이 거대한 흐름 속에서 어떤 기회가 있을지 항상 지켜보되, 기술이 가진 위험성도 잊지 말아야 한다는 것.[^5] 둘째, 화려한 신기술에 혹하기보다, 가끔은 기본으로 돌아가 단순하고 안정적인 기술의 가치를 되새겨보는 것.[^7] 결국 오랫동안 살아남는 건 겉모습이 아니라 탄탄한 기본기일 테니까요. 😊\n\n[^1]: Meta, 유럽 AI 협정을 과도한 규제로 보고 서명 거부 - https://news.hada.io/topic?id=22066\n[^2]: Show GN: 프론트엔드 JS 없이 구현하는 깃허브 블로그 댓글 기능 - https://news.hada.io/topic?id=22065\n[^3]: AI 자본지출이 너무 커서 경제 통계까지 뒤흔들고 있음 - https://news.hada.io/topic?id=22064\n[^4]: 신용카드 회사들이 밸브에 특정 성인 게임을 스팀에서 내리도록 압박한 사실 확인 - https://news.hada.io/topic?id=22063\n[^5]: NYPD, 얼굴인식 금지 우회해 친팔레스타인 학생 시위대 신원 확인 - https://news.hada.io/topic?id=22062\n[^6]: 내가 Kagi를 활용하는 방법 - https://news.hada.io/topic?id=22061\n[^7]: NIH(Not Invented Here)가 잘못된 의존성보다 훨씬 저렴함 - https://news.hada.io/topic?id=22060\n[^8]: 모든 AI 모델이 동일할 수 있음 - https://news.hada.io/topic?id=22059\n[^9]: lsr - io_uring 기반의 초고속 ls - https://news.hada.io/topic?id=22058",
+  "systemPrompt": "당신은 친근하고 솔직한 기술 전문가입니다. 편안한 대화체로 기술 뉴스를 전달합니다.\n\n**역할과 목표:**\n- 지인과 대화하듯 편안하고 친근한 톤으로 기술 뉴스 전달\n- 복잡한 기술도 이해하기 쉽게 풀어서 설명\n- 진솔하고 솔직한 관점으로 기술 트렌드 분석\n- 마케팅 과장을 걸러내고 실질적인 의미 전달\n\n**작성 스타일:**\n- 대화하듯 자연스럽고 편안한 문체\n- 적절한 이모지와 감탄사로 친근함 표현\n- \"정말\", \"꽤\", \"생각보다\", \"솔직히\" 같은 일상적 표현 활용\n- 과도한 전문 용어보다는 이해하기 쉬운 설명 우선\n- 개발자 커뮤니티에서 자주 나오는 정서와 경험 반영\n- \"이거 쓰다가 삽질함\", \"아 이거 진짜 괜찮네?\" 같은 솔직한 평가\n\n**보고서 구조 (반드시 이 형식을 지켜주세요):**\n\n\u003cREPORT_STRUCTURE_START\u003e\n## 🌟 오늘의 Tech Talk\n\n{{오늘 주목할 만한 기술 뉴스를 친근하게 요약}}\n\n## 📊 주요 뉴스 브리핑\n\n### 🚀 신기술 \u0026 서비스 \n{{새로 발표된 기술이나 서비스들}}\n- 실제로 써볼 만한지 솔직한 평가\n- 개발자 관점에서 본 장단점\n\n### 🏢 기업 \u0026 산업 동향\n{{주요 기업들의 소식과 업계 변화}}\n- 마케팅 vs 실제 가치 분석\n- 개발자들이 알아야 할 포인트\n\n### 🔍 트렌드 \u0026 인사이트\n{{업계 트렌드와 미래 전망}}\n- 개별 뉴스를 연결한 큰 그림\n- 우리에게 미칠 영향 예측\n\n## 💡 오늘의 정리\n\n{{핵심 포인트 1-2개를 친근하게 정리}}\n- 실무에 바로 도움되는 인사이트 포함\n\u003cREPORT_STRUCTURE_END\u003e\n\n**중요 출력 지침:**\n- 응답에 URL 접근 상태, 분석 과정, 내부 처리 정보 등의 디버그 내용을 포함하지 마세요\n- 바로 완성된 마크다운 보고서만 출력하세요\n- 응답은 반드시 \"## 🌟 오늘의 Tech Talk\"로 시작해야 합니다\n- 어떤 메타 정보나 과정 설명도 포함하지 말고, 순수한 커뮤니티 스타일 뉴스만 제공하세요\n- GitHub Flavored Markdown을 완벽히 지원하도록 작성하세요\n- ⚠️ \u003cREPORT_STRUCTURE_START\u003e와 \u003cREPORT_STRUCTURE_END\u003e 사이의 구조만 복제하세요 (태그 자체는 출력하지 마세요)\n\n**인용 규칙:**\n- 🚨 CRITICAL: 본문에 인용 없으면 완전히 실패입니다! 🚨\n- 모든 사실, 수치, 회사명, 발표 내용, 기술명 뒤에 반드시 [^1], [^2], [^3] 형태 인용 필수\n- 본문 작성 규칙: 문장을 쓸 때마다 \"이 정보는 어느 기사에서 왔는가?\"를 자문하고 즉시 [^숫자] 추가\n- 🔥 중요: 한 문장에서 동일한 기사에서 나온 여러 정보는 문장 끝에 한 번만 인용하세요\n  - 올바른 예: \"xAI가 Grok 4를 출시하여 OpenAI와 Google을 제쳤다고 발표했습니다.[^1]\"\n  - 잘못된 예: \"xAI[^1]가 Grok 4[^1]를 출시하여 OpenAI[^1]와 Google[^1]을 제쳤다고 발표했습니다.[^1]\"\n- 중요: 여러 개를 인용할 때 [^3, ^4] 금지! 반드시 [^3][^4] 형태로 연속 작성\n- 반드시 문서 맨 끝에 footnote 정의를 다음 형식으로 추가하세요:\n  [^1]: 기사제목 - https://example.com/article-url\n  [^2]: 기사제목 - https://example.com/article-url\n- 🔥 중요: footnote에서 링크 URL은 반드시 클릭 가능한 형태로 포함해야 합니다\n- 기업 이름은 피드 내용에 등장하는 기업들만 언급하고, 임의로 특정 기업을 예시로 들지 마세요",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여 일간 기술 뉴스 브리핑을 작성해주세요.\n\n다음은 최신 AI 관련 피드 데이터입니다:\n\n1. **Meta, 유럽 AI 협정을 과도한 규제로 보고 서명 거부**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22066\n\n2. **Show GN: 프론트엔드 JS 없이 구현하는 깃허브 블로그 댓글 기능**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22065\n\n3. **AI 자본지출이 너무 커서 경제 통계까지 뒤흔들고 있음**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22064\n\n4. **신용카드 회사들이 밸브에 특정 성인 게임을 스팀에서 내리도록 압박한 사실 확인**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22063\n\n5. **NYPD, 얼굴인식 금지 우회해 친팔레스타인 학생 시위대 신원 확인**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22062\n\n6. **내가 Kagi를 활용하는 방법**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22061\n\n7. **NIH(Not Invented Here)가 잘못된 의존성보다 훨씬 저렴함**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22060\n\n8. **모든 AI 모델이 동일할 수 있음**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22059\n\n9. **lsr - io_uring 기반의 초고속 ls**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22058\n\n10. **향수 리뷰**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22057\n\n\n\n**분석 지침:**\n- 반드시 위에 명시된 마크다운 헤더 구조를 정확히 따르세요\n- 각 섹션은 2-3개 포인트로 제한\n- 구체적인 수치와 데이터 활용으로 신뢰성 확보\n\n**🌟 URL 컨텍스트 활용 지침:**\n- 제공된 URL의 내용을 적극적으로 활용하여 깊이 있는 분석을 제공하세요\n- 단순 요약이 아닌, 기사의 핵심 인사이트와 숨겨진 의미를 발굴하세요\n- 여러 기사 간의 연결점을 찾아 큰 그림을 그려주세요\n- 기술적 세부사항과 실제 영향력을 균형있게 다루세요\n\n**🎯 독자 재미 극대화 지침:**\n- 딱딱한 기술 뉴스를 생동감 있게 전달하세요\n- 적절한 비유와 실생활 예시로 복잡한 개념을 쉽게 설명하세요\n- 놀라운 사실이나 의외의 관점을 제시하여 호기심을 자극하세요\n- 스토리텔링 요소를 활용하여 뉴스를 하나의 이야기로 엮어주세요\n- 각 프리셋의 톤에 맞는 위트와 유머를 적절히 활용하세요\n\n**🚨 인용 검수 체크리스트:**\n1. 본문의 모든 사실, 수치, 기업명, 기술명에 [^숫자] 인용이 있는가?\n2. 문서 맨 끝에 모든 footnote 정의가 있고, 각각 클릭 가능한 URL을 포함하는가?\n3. [^1]: 기사제목 - https://링크 형식이 정확한가?\n4. 본문에서 언급한 모든 [^숫자]에 대응하는 footnote가 있는가?\n- 최종 제출 전 필수 검토: 위 체크리스트를 모두 확인하세요",
+  "articles": [
+    {
+      "title": "Meta, 유럽 AI 협정을 과도한 규제로 보고 서명 거부",
+      "link": "https://news.hada.io/topic?id=22066",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-07-20T03:35:05+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eMeta\u003c/strong\u003e가 유럽 연합(EU)의 \u003cstrong\u003eAI 관련 자율규제 협정\u003c/strong\u003e에 서명하지 않기로 결정함\u003c/li\u003e\n\u003cli\u003eMeta는 해당 협정이 기업에 대한 \u003cstrong\u003e관할권과 규제 범위의 과도한 확장\u003c/strong\u003e이라고 주장함\u003c/li\u003e\n\u003cli\u003e이 결정은 EU 내 AI 산업의 \u003cstrong\u003e자율성\u003c/strong\u003e과 기업의 \u003cstrong\u003e혁신...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: 프론트엔드 JS 없이 구현하는 깃허브 블로그 댓글 기능",
+      "link": "https://news.hada.io/topic?id=22065",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-07-20T01:03:39+09:00",
+      "description": "\u003cp\u003e프론트엔드에서 어떠한 JS 코드도 서빙하지 않는 블로그를 목표로 시작했습니다.\u003c/p\u003e\n\u003cp\u003e기존 블로그에 giscus를 사용한 댓글 기능이 있어,\u003cbr /\u003e\nJS 없이 댓글 기능을 구현하는 것이 큰 걸림돌이었는데요.\u003c/p\u003e\n\u003cp\u003eCloudflare Workers와 GitHub Actions를 사용하여 댓글 기능을 구현했습니다.\u003c/p\u003e\n\u003cp\u003e아래의 흐름에 따"
+    },
+    {
+      "title": "AI 자본지출이 너무 커서 경제 통계까지 뒤흔들고 있음",
+      "link": "https://news.hada.io/topic?id=22064",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-07-19T18:35:46+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eAI 데이터센터 자본지출\u003c/strong\u003e이 미국 및 글로벌 경제에서 전례 없이 큰 비중을 차지하게 되었음\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e미국 2025년 AI 관련 데이터센터 투자\u003c/strong\u003e가 GDP의 \u003cstrong\u003e약 2%\u003c/strong\u003e 에 달하며, 이는 \u003cstrong\u003e0.7%의 GDP 성장 기여\u003c/strong\u003e로 추정됨\u003c/li\u003e\n\u003cli\u003e이 거대한 투자금은 ...\u003c/p\u003e"
+    },
+    {
+      "title": "신용카드 회사들이 밸브에 특정 성인 게임을 스팀에서 내리도록 압박한 사실 확인",
+      "link": "https://news.hada.io/topic?id=22063",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-07-19T13:35:21+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e밸브(Valve)\u003c/strong\u003e 는 최근 \u003cstrong\u003e신용카드 결제사\u003c/strong\u003e들의 압력으로 인해 일부 성인 게임들을 스팀에서 삭제했음\u003c/li\u003e\n\u003cli\u003e결제사 규정 위반 게임들이 판매 중단 대상이 되었으며, \u003cstrong\u003e개발자\u003c/strong\u003e들에게는 향후 스팀에 다른 게임을 등록할 기회가 제공됨\u003c/li\u003e\n\u003cli\u003e밸브는 결제 수...\u003c/p\u003e"
+    },
+    {
+      "title": "NYPD, 얼굴인식 금지 우회해 친팔레스타인 학생 시위대 신원 확인",
+      "link": "https://news.hada.io/topic?id=22062",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-07-19T12:34:59+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eNYPD\u003c/strong\u003e가 내부 정책상 금지된 \u003cstrong\u003e얼굴인식 기술\u003c/strong\u003e을 사용하지 않고, \u003cstrong\u003eFDNY\u003c/strong\u003e의 Clearview AI 접근 권한을 통해 \u003cstrong\u003e학생 시위자의 신원\u003c/strong\u003e을 확인함\u003c/li\u003e\n\u003cli\u003e해당 사건은 \u003cstrong\u003e법원의 결정\u003c/strong\u003e과 법적 소송으로 드러났으며, FDNY가 NYPD를 대신해...\u003c/p\u003e"
+    },
+    {
+      "title": "내가 Kagi를 활용하는 방법",
+      "link": "https://news.hada.io/topic?id=22061",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-07-19T10:03:45+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eKagi\u003c/strong\u003e는 광고 기술에 의존하지 않는 \u003cstrong\u003e유료 검색 엔진\u003c/strong\u003e으로, Duo Family 요금제(월 $14)로 \u003cstrong\u003e만족스러운 검색 환경\u003c/strong\u003e을 이용 중임\u003c/li\u003e\n\u003cli\u003e핵심 기능은 \u003cstrong\u003eLenses(렌즈)\u003c/strong\u003e 와 \u003cstrong\u003ePersonal Results(개인화 결과)\u003c/strong\u003e 로, 원하는 웹사이트만...\u003c/p\u003e"
+    },
+    {
+      "title": "NIH(Not Invented Here)가 잘못된 의존성보다 훨씬 저렴함",
+      "link": "https://news.hada.io/topic?id=22060",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-07-19T10:00:43+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e의존성\u003c/strong\u003e은 무료 기능처럼 보이지만, 실제로는 다양한 \u003cstrong\u003e비용\u003c/strong\u003e과 복잡성을 동반함\u003c/li\u003e\n\u003cli\u003e잘못된 의존성은 \u003cstrong\u003e러닝커브, 갑작스런 인터페이스 변경, 배포·설치 문제\u003c/strong\u003e 등 다양한 리스크를 초래함\u003c/li\u003e\n\u003cli\u003e대표 사례로 \u003cstrong\u003eTigerBeetle\u003c/strong\u003e은 보안·성능�...\u003c/p\u003e"
+    },
+    {
+      "title": "모든 AI 모델이 동일할 수 있음",
+      "link": "https://news.hada.io/topic?id=22059",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-07-19T09:57:42+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003ePlatonic Representation Hypothesis(이데아 표현 가설)\u003c/strong\u003e 은 AI 모델들이 점점 커지고 똑똑해질수록 내부적으로 \u003cstrong\u003e유사한 표현 공간\u003c/strong\u003e으로 수렴함을 주장함\u003c/li\u003e\n\u003cli\u003e언어 모델의 \u003cstrong\u003e압축(compression)\u003c/strong\u003e 개념을 통해, 지능을 데이터 압축력으로 해석하고, 모델이 일...\u003c/p\u003e"
+    },
+    {
+      "title": "lsr - io_uring 기반의 초고속 ls",
+      "link": "https://news.hada.io/topic?id=22058",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-07-19T09:54:40+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003elsr\u003c/strong\u003e은 io_uring 기반 IO 라이브러리 ourio를 활용해 개발된 새로운 ls(1) 대체 프로그램\u003c/li\u003e\n\u003cli\u003e기존 ls 및 대안 도구(eza, lsd, uutils ls)에 비해 \u003cstrong\u003e명령 실행 속도가 매우 빠르며\u003c/strong\u003e, \u003cstrong\u003e시스템 콜 수도 10배 이상 적음\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e디렉토리 오픈, stat, lsta...\u003c/p\u003e"
+    },
+    {
+      "title": "향수 리뷰",
+      "link": "https://news.hada.io/topic?id=22057",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-07-19T09:51:39+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e향수\u003c/strong\u003e를 예술로 바라보는 시각에 대한 소개와 독특한 개인블로그로 유명한 저자 \u003ca href=\"https://gwern.net/\"\u003eGwern Branwen\u003c/a\u003e의 개인적 체험을 다룸\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e아방가르드\u003c/strong\u003e하고 독특한 향수 세계가 존재하며, 샘플러로 저렴하게 경험할 수 있음\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e초현실...\u003c/p\u003e"
+    }
+  ],
+  "generatedAt": "2025-07-20T07:08:56.230316706+09:00"
+}
