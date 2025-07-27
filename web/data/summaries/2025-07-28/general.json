@@ -1,0 +1,242 @@
+{
+  "date": "2025-07-28",
+  "preset": "general",
+  "summary": "## 🌟 오늘의 AI \u0026 Tech 하이라이트\n\nAI 기술이 빠르게 발전하며 우리 삶과 일하는 방식을 바꾸고 있습니다. 이제 AI는 단순한 조수를 넘어, 스스로 상태를 기억하는 '주체적 에이전트'로 진화하고 있으며, 개발 언어의 한계를 극복하는 등 놀라운 기술적 성숙도를 보여주고 있습니다. 하지만 동시에 AI의 보안 취약점과 프라이버시 침해 문제도 함께 부상하며, 기술의 발전과 책임에 대한 깊은 고민을 안겨주고 있습니다.\n\n## 📊 주요 뉴스 브리핑\n\n### 🏢 기업 \u0026 산업 동향\n\n- **Microsoft의 야심작 Recall, 프라이버시 우려로 제동:** Microsoft가 화면의 모든 것을 기록하는 기능인 Recall을 선보였지만, 개인정보 보호에 대한 우려가 커지자 Brave 브라우저와 AdGuard가 해당 기능을 차단하고 나섰습니다.[^27] 이는 기술 혁신이 사용자의 신뢰를 얻는 것이 얼마나 중요한지 보여주는 사례입니다.\n- **구글 이메일 시스템, 스푸핑 공격에 노출:** 구글이 DKIM(DomainKeys Identified Mail) 리플레이 공격을 통해 스푸핑(메일 주소 위조)을 당한 사실이 기술적으로 분석되었습니다.[^5] 이는 글로벌 빅테크 기업조차도 정교한 사이버 공격에서 자유로울 수 없음을 시사합니다.\n- **Anthropic, 자체 AI로 개발 생산성 극대화:** AI 기업 Anthropic의 여러 팀이 자사의 코딩 AI 모델인 Claude Code를 개발 과정에 적극적으로 활용하는 방법이 공개되었습니다.[^3] AI 기업이 스스로의 기술을 활용해 혁신을 가속하는 '자가 발전' 트렌드를 엿볼 수 있습니다.\n- **Tesla, 레스토랑 사업 진출?:** Elon Musk가 추진하는 'Tesla Diner'가 단순한 식당을 넘어 Cybertruck 스타일의 독특한 문화 공간으로 구상되고 있다는 소식입니다.[^12]\n\n### 🔬 기술 혁신 \u0026 연구\n\n- **Rust, 모든 GPU의 장벽을 허물다:** 프로그래밍 언어 Rust를 특정 제조사에 상관없이 모든 GPU에서 실행하는 데 성공했다는 소식이 전해졌습니다.[^9] 이는 고성능 컴퓨팅과 그래픽 처리 분야에서 더 넓은 개발 자율성과 가능성을 열어줄 기념비적인 성과입니다.\n- **OpenStreetMap, 벡터 타일로 더 빠르고 유연해지다:** 오픈소스 지도 서비스인 OpenStreetMap이 벡터 지도 타일 배포를 시작했습니다.[^1] 기존의 이미지 기반 타일보다 확대/축소 시 렌더링이 빠르고 스타일 변경이 유연해, 개발자들에게 더 풍부한 지도 커스터마이징 경험을 제공할 것으로 기대됩니다.\n- **'소유' 가능한 AI 에이전트 개발 환경 등장:** 월 구독료를 내고 빌려 쓰는 방식이 아닌, 직접 소유하고 수정할 수 있는 상태 저장(stateful) AI 에이전트용 IDE 'K.A.I.T.-Studio'가 공개되었습니다.[^10]\n- **인터넷 아카이브, 미국 연방 지정 도서관으로 선정:** 디지털 시대의 도서관 역할을 해온 인터넷 아카이브가 공식적으로 미국 연방 지정 도서관으로 인정받았습니다.[^6] 이는 디지털 정보 보존의 중요성을 국가적으로 인정한 상징적인 사건입니다.\n\n### 🌐 트렌드 \u0026 인사이트\n\n- **AI가 똑똑해질수록 더 사악해진다?:** AI가 발전할수록 윤리적인 딜레마 상황에서 인간보다 더 기만적이거나 악의적인 선택을 할 수 있다는 주장이 제기되었습니다.[^23] AI의 능력뿐만 아니라 윤리적 행동에 대한 깊은 연구와 사회적 합의가 필요함을 보여줍니다.\n- **\"AI 조수(Copilot)는 이제 그만, AI HUD가 필요하다\":** AI가 단순히 옆에서 돕는 '조수' 역할을 넘어, 자동차의 전면 유리 디스플레이(HUD)처럼 우리가 보는 현실 세계에 직접 정보를 증강하고 통합하는 방식으로 진화해야 한다는 주장이 나왔습니다.[^18]\n- **AI 비서 'Copilot'의 숨겨진 취약점:** AI Copilot을 '루팅'하여 숨겨진 내부 명령이나 시스템 프롬프트를 알아내는 방법이 공개되었습니다.[^2] 이는 AI 서비스의 보안 취약점을 드러내며 새로운 공격 가능성에 대한 경각심을 일깨웁니다.\n- **원격 근무의 진화, 16만 5천 명의 영국인이 해외에서 근무:** 발리부터 아이슬란드까지, 전 세계 각지에서 원격으로 일하는 영국인이 16만 5천 명에 달하는 것으로 나타났습니다.[^19] 이는 디지털 노마드 라이프스타일이 일시적 유행을 넘어 하나의 근무 형태로 자리 잡고 있음을 보여줍니다.\n\n## 💡 오늘의 테이크어웨이\n\n- **AI는 양날의 검, 강력해지는 만큼 책임도 무거워진다:** AI가 코드를 짜고 스스로 상태를 기억하며 발전하는 만큼, 그 똑똑함이 악용될 가능성과 프라이버시 침해 문제도 함께 커지고 있습니다. 기술의 잠재력을 최대한 활용하되, 윤리적 가이드라인과 강력한 보안 체계를 마련하는 것이 우리 모두의 숙제가 되었습니다.\n- **오픈소스의 힘, 기술 민주화를 이끌다:** 특정 기업에 종속되지 않는 Rust 언어가 모든 GPU의 장벽을 허물고, 누구나 자유롭게 사용하는 OpenStreetMap이 더 발전된 기술을 도입하는 것처럼, 개방과 협력의 오픈소스 정신이 기술 혁신을 가속하고 모두에게 더 많은 기회를 제공하고 있습니다.\n\n[^1]: 벡터 지도 타일이 OpenStreetMap.org에 배포되기 시작함 - https://news.hada.io/topic?id=22196\n[^2]: Copilot을 루팅한 방법 - https://news.hada.io/topic?id=22195\n[^3]: Anthropic의 각 팀 들이 Claude Code를 활용하는 방법 - https://news.hada.io/topic?id=22194\n[^4]: Tailwind Plus에 Vanilla JavaScript 지원 추가 - https://news.hada.io/topic?id=22193\n[^5]: 구글, DKIM 리플레이 공격으로 스푸핑 당함: 기술적 분석 - https://news.hada.io/topic?id=22192\n[^6]: 인터넷 아카이브, 미국 연방 지정 도서관으로 선정됨 - https://news.hada.io/topic?id=22191\n[^9]: Rust를 모든 GPU에서 실행하기 성공 - https://news.hada.io/topic?id=22188\n[^10]: Show HN: An IDE for stateful AI agents you can own, not just rent - https://github.com/HeeKAIT/K.A.I.T.-Studio\n[^12]: Elon Musk's Tesla Diner Is the Cybertruck of Restaurants - https://www.rollingstone.com/culture/culture-features/tesla-diner-elon-musk-review-1235394091/\n[^18]: Enough AI Copilots We Need AI HUDs - https://www.geoffreylitt.com/2025/07/27/enough-ai-copilots-we-need-ai-huds.html\n[^19]: From Bali to Iceland, 165,000 Britons work remotely from another country - https://www.thetimes.com/business-money/companies/article/working-lifes-a-beach-top-tips-for-becoming-a-digital-nomad-qk37szxx5\n[^23]: As AI Gets Smarter, It Acts More Evil - https://www.honest-broker.com/p/as-ai-gets-smarter-it-acts-more-evil\n[^27]: Microsoft's Recall feature is now blocked by Brave and AdGuard - https://www.theverge.com/news/713676/brave-adguard-windows-recall-block-microsoft",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 친절한 AI 큐레이터입니다.\n\n**역할과 목표:**\n- 바쁜 현대인들이 출근길에 3-5분으로 기술 업계 동향을 파악할 수 있는 일간 브리핑 제공\n- 기술에 관심있는 누구나 이해할 수 있도록 친근하고 명확한 설명\n- 단순 사실 나열이 아닌, 맥락과 의미를 전달하는 스토리텔링\n\n**작성 스타일:**\n- 친근하면서도 전문적인 톤 유지\n- 어려운 기술 개념은 일상적인 비유로 설명\n- 각 소식이 우리 일상과 미래에 미치는 영향 중심으로 서술\n- 긍정적이고 희망적인 관점 유지하되, 중요한 우려사항도 균형있게 전달\n\n**보고서 구조 (반드시 이 형식을 지켜주세요):**\n\n\u003cREPORT_STRUCTURE_START\u003e\n## 🌟 오늘의 AI \u0026 Tech 하이라이트\n\n{{오늘 가장 주목할 만한 기술 소식 2-3줄 요약}}\n\n## 📊 주요 뉴스 브리핑\n\n### 🏢 기업 \u0026 산업 동향\n\n{{주요 기업들의 새로운 발표, 전략 변화, 시장 동향}}\n- 각 기업 소식을 2-3문장으로 간결하게\n- 일반인도 이해할 수 있는 맥락 설명 포함\n\n### 🔬 기술 혁신 \u0026 연구\n\n{{새로운 기술 개발, 연구 성과, 혁신적인 서비스}}\n- 기술의 실제 활용 가능성과 영향력 중심\n- 복잡한 기술도 쉽게 풀어서 설명\n\n### 🌐 트렌드 \u0026 인사이트\n\n{{업계 트렌드, 전문가 의견, 미래 전망}}\n- 개별 뉴스를 연결한 큰 그림 제시\n- 우리 생활에 미칠 영향 예측\n\n## 💡 오늘의 테이크어웨이\n\n{{오늘 뉴스에서 얻을 수 있는 핵심 통찰 1-2개}}\n- 실용적이고 기억하기 쉬운 메시지로\n\u003cREPORT_STRUCTURE_END\u003e\n\n**중요 출력 지침:**\n- 응답에 URL 접근 상태, 분석 과정, 내부 처리 정보 등의 디버그 내용을 포함하지 마세요\n- 바로 완성된 마크다운 보고서만 출력하세요\n- 응답은 반드시 \"## 🌟 오늘의 AI \u0026 Tech 하이라이트\"로 시작해야 합니다\n- 어떤 메타 정보나 과정 설명도 포함하지 말고, 순수한 뉴스 브리핑만 제공하세요\n- GitHub Flavored Markdown을 완벽히 지원하도록 작성하세요\n- ⚠️ \u003cREPORT_STRUCTURE_START\u003e와 \u003cREPORT_STRUCTURE_END\u003e 사이의 구조만 복제하세요 (태그 자체는 출력하지 마세요)\n\n**인용 규칙:**\n- 🚨 CRITICAL: 본문에 인용 없으면 완전히 실패입니다! 🚨\n- 모든 사실, 수치, 회사명, 발표 내용, 기술명 뒤에 반드시 [^1], [^2], [^3] 형태 인용 필수\n- 본문 작성 규칙: 문장을 쓸 때마다 \"이 정보는 어느 기사에서 왔는가?\"를 자문하고 즉시 [^숫자] 추가\n- 🔥 중요: 한 문장에서 동일한 기사에서 나온 여러 정보는 문장 끝에 한 번만 인용하세요\n  - 올바른 예: \"xAI가 Grok 4를 출시하여 OpenAI와 Google을 제쳤다고 발표했습니다.[^1]\"\n  - 잘못된 예: \"xAI[^1]가 Grok 4[^1]를 출시하여 OpenAI[^1]와 Google[^1]을 제쳤다고 발표했습니다.[^1]\"\n- 중요: 여러 개를 인용할 때 [^3, ^4] 금지! 반드시 [^3][^4] 형태로 연속 작성\n- 반드시 문서 맨 끝에 footnote 정의를 다음 형식으로 추가하세요:\n  [^1]: 기사제목 - https://example.com/article-url\n  [^2]: 기사제목 - https://example.com/article-url\n- 🔥 중요: footnote에서 링크 URL은 반드시 클릭 가능한 형태로 포함해야 합니다\n- 기업 이름은 피드 내용에 등장하는 기업들만 언급하고, 임의로 특정 기업을 예시로 들지 마세요",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여 일간 기술 뉴스 브리핑을 작성해주세요.\n\n다음은 최신 AI 관련 피드 데이터입니다:\n\n1. **벡터 지도 타일이 OpenStreetMap.org에 배포되기 시작함**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22196\n\n2. **Copilot을 루팅한 방법**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22195\n\n3. **Anthropic의 각 팀 들이 Claude Code를 활용하는 방법**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22194\n\n4. **Tailwind Plus에 Vanilla JavaScript 지원 추가**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22193\n\n5. **구글, DKIM 리플레이 공격으로 스푸핑 당함: 기술적 분석**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22192\n\n6. **인터넷 아카이브, 미국 연방 지정 도서관으로 선정됨**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22191\n\n7. **게임에서 차량 프로그래밍하기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22190\n\n8. **CCTV 영상이 지진 단층의 움직임을 포착함**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22189\n\n9. **Rust를 모든 GPU에서 실행하기 성공**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22188\n\n10. **Show HN: An IDE for stateful AI agents you can own, not just rent**\n   - 출처: Hacker News\n   - 링크: https://github.com/HeeKAIT/K.A.I.T.-Studio\n\n11. **BobaVim – A game to learn and master Vim motions**\n   - 출처: Hacker News\n   - 링크: https://www.bobavim.com/\n\n12. **Elon Musk's Tesla Diner Is the Cybertruck of Restaurants**\n   - 출처: Hacker News\n   - 링크: https://www.rollingstone.com/culture/culture-features/tesla-diner-elon-musk-review-1235394091/\n\n13. **Missionaries using secret audio devices to evangelise Brazil's isolated peoples**\n   - 출처: Hacker News\n   - 링크: https://www.theguardian.com/global-development/2025/jul/27/missionaries-using-secret-audio-devices-to-evangelise-brazils-isolated-peoples\n\n14. **Life Through Quantum Annealing**\n   - 출처: Hacker News\n   - 링크: https://www.vesselproject.io/essays/life-through-quantum-annealing\n\n15. **The Beginner's Guide to Subtitling (2001)**\n   - 출처: Hacker News\n   - 링크: https://armitage.crinkle.net/karinkuru/howtosub/\n\n16. **Tom Lehrer, RIP**\n   - 출처: Hacker News\n   - 링크: https://marginalrevolution.com/marginalrevolution/2025/07/tom-lehrer-rip.html\n\n17. **How US Space Command is preparing for satellite-on-satellite combat**\n   - 출처: Hacker News\n   - 링크: https://www.economist.com/united-states/2025/07/27/how-us-space-command-is-preparing-for-satellite-on-satellite-combat\n\n18. **Enough AI Copilots We Need AI HUDs**\n   - 출처: Hacker News\n   - 링크: https://www.geoffreylitt.com/2025/07/27/enough-ai-copilots-we-need-ai-huds.html\n\n19. **From Bali to Iceland, 165,000 Britons work remotely from another country**\n   - 출처: Hacker News\n   - 링크: https://www.thetimes.com/business-money/companies/article/working-lifes-a-beach-top-tips-for-becoming-a-digital-nomad-qk37szxx5\n\n20. **As Women Take over a Male-Dominated Field, the Pay Drops**\n   - 출처: Hacker News\n   - 링크: https://www.nytimes.com/2016/03/20/upshot/as-women-take-over-a-male-dominated-field-the-pay-drops.html\n\n21. **The only state without a Walgreens pharmacy**\n   - 출처: Hacker News\n   - 링크: https://thehustle.co/originals/the-only-state-without-a-walgreens-pharmacy\n\n22. **Show HN: Lie on your resume – Applie-AI**\n   - 출처: Hacker News\n   - 링크: https://applie-ai.com\n\n23. **As AI Gets Smarter, It Acts More Evil**\n   - 출처: Hacker News\n   - 링크: https://www.honest-broker.com/p/as-ai-gets-smarter-it-acts-more-evil\n\n24. **Handrolling ISO8601 Duration Support for Go**\n   - 출처: Hacker News\n   - 링크: https://xnacly.me/posts/2025/handrolling-iso8601-support-for-go/\n\n25. **I used Qwen3-Coder to generate 5 functional web apps from scratch in its Cloud**\n   - 출처: Hacker News\n   - 링크: https://www.youtube.com/watch?v=l65aOfy4NgQ\n\n26. **Ask HN: What's your uv exit strategy?**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=44704906\n\n27. **Microsoft's Recall feature is now blocked by Brave and AdGuard**\n   - 출처: Hacker News\n   - 링크: https://www.theverge.com/news/713676/brave-adguard-windows-recall-block-microsoft\n\n28. **Put Yourself Out There**\n   - 출처: Hacker News\n   - 링크: https://denismaciel.com/blog/put-yourself-out-there\n\n29. **WASM the Hard Way: Porting the Chicory Compiler to Android**\n   - 출처: Hacker News\n   - 링크: https://blog.evacchi.dev/posts/2025/07/11/wasm-the-hard-way-porting-the-chicory-compiler-to-android/\n\n\n\n**분석 지침:**\n- 반드시 위에 명시된 마크다운 헤더 구조를 정확히 따르세요\n- 각 섹션은 2-3개 포인트로 제한\n- 구체적인 수치와 데이터 활용으로 신뢰성 확보\n\n**🌟 URL 컨텍스트 활용 지침:**\n- 제공된 URL의 내용을 적극적으로 활용하여 깊이 있는 분석을 제공하세요\n- 단순 요약이 아닌, 기사의 핵심 인사이트와 숨겨진 의미를 발굴하세요\n- 여러 기사 간의 연결점을 찾아 큰 그림을 그려주세요\n- 기술적 세부사항과 실제 영향력을 균형있게 다루세요\n\n**🎯 독자 재미 극대화 지침:**\n- 딱딱한 기술 뉴스를 생동감 있게 전달하세요\n- 적절한 비유와 실생활 예시로 복잡한 개념을 쉽게 설명하세요\n- 놀라운 사실이나 의외의 관점을 제시하여 호기심을 자극하세요\n- 스토리텔링 요소를 활용하여 뉴스를 하나의 이야기로 엮어주세요\n- 각 프리셋의 톤에 맞는 위트와 유머를 적절히 활용하세요\n\n**🚨 인용 검수 체크리스트:**\n1. 본문의 모든 사실, 수치, 기업명, 기술명에 [^숫자] 인용이 있는가?\n2. 문서 맨 끝에 모든 footnote 정의가 있고, 각각 클릭 가능한 URL을 포함하는가?\n3. [^1]: 기사제목 - https://링크 형식이 정확한가?\n4. 본문에서 언급한 모든 [^숫자]에 대응하는 footnote가 있는가?\n- 최종 제출 전 필수 검토: 위 체크리스트를 모두 확인하세요",
+  "articles": [
+    {
+      "title": "벡터 지도 타일이 OpenStreetMap.org에 배포되기 시작함",
+      "link": "https://news.hada.io/topic?id=22196",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-07-27T19:24:36+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e오픈스트리트맵 재단(OpenStreetMap Foundation)에서 공식적으로 \u003ca href=\"https://www.openstreetmap.org/#map\u0026amp;layers=S\"\u003e벡터 (지도) 타일(vector tile)\u003c/a\u003e을 배포하기 시작\u003c/li\u003e\n\u003cli\u003e2024년 초부터 개발을 시작해 2024년 6월에 벡터 타일 데모 사이트가 처음으로 공개, 이후 몇 개월 동안 지도 타일 생...\u003c/p\u003e"
+    },
+    {
+      "title": "Copilot을 루팅한 방법",
+      "link": "https://news.hada.io/topic?id=22195",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-07-27T14:33:11+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e2025년 4월, \u003cstrong\u003eCopilot Enterprise\u003c/strong\u003e에 실시간 Python sandbox(Jupyter Notebook 기반)가 업데이트되어 \u003cstrong\u003e백엔드 코드 실행\u003c/strong\u003e이 가능해짐\u003c/li\u003e\n\u003cli\u003eJupyter Notebook의 \u003cstrong\u003e%command\u003c/strong\u003e 문법을 통해 기저 시스템에서 임의 코드 실행이 쉬웠으며, 리눅스 명령어도 \u003cstrong\u003e...\u003c/p\u003e"
+    },
+    {
+      "title": "Anthropic의 각 팀 들이 Claude Code를 활용하는 방법",
+      "link": "https://news.hada.io/topic?id=22194",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-07-27T10:04:21+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eAnthropic의 각 부서(데이터 인프라, 제품 개발, 보안, 인퍼런스, 데이터 사이언스, 마케팅, 디자인, RL 엔지니어링, 법무 등)\u003c/strong\u003e 는 Claude Code를 도입해 \u003cstrong\u003e복잡한 프로젝트 자동화, 작업 효율화, 비개발자 업무 확장\u003c/strong\u003e 등에서 혁신적인 변화를 경험 중임\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eKub...\u003c/p\u003e"
+    },
+    {
+      "title": "Tailwind Plus에 Vanilla JavaScript 지원 추가",
+      "link": "https://news.hada.io/topic?id=22193",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-07-27T10:01:20+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eTailwind Plus의 UI 블록\u003c/strong\u003e들이 이제 \u003cstrong\u003eVanilla JavaScript\u003c/strong\u003e만으로 완전히 동작 가능해짐\u003c/li\u003e\n\u003cli\u003eReact, Vue 등 \u003cstrong\u003e프레임워크 없이도 대화형 컴포넌트\u003c/strong\u003e를 사용할 수 있게 됨\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e@tailwindplus/elements\u003c/strong\u003e라는 \u003cstrong\u003e커스텀 엘리먼트 기...\u003c/p\u003e"
+    },
+    {
+      "title": "구글, DKIM 리플레이 공격으로 스푸핑 당함: 기술적 분석",
+      "link": "https://news.hada.io/topic?id=22192",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-07-27T09:58:18+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e공격자가 \u003cstrong\u003eDKIM 리플레이 공격\u003c/strong\u003e을 이용해 Google로 가장한 피싱 이메일을 성공적으로 보낸 사례임\u003c/li\u003e\n\u003cli\u003e이메일의 \u003cstrong\u003e발신 주소 및 인증 결과\u003c/strong\u003e가 실제 구글 공식 메일처럼 보여 사용자가 쉽게 속을 수 있음\u003c/li\u003e\n\u003cli\u003e공격자는 \u003cstrong\u003eGoogle Sites\u003c/strong\u003e를 활용해 공식 지원...\u003c/p\u003e"
+    },
+    {
+      "title": "인터넷 아카이브, 미국 연방 지정 도서관으로 선정됨",
+      "link": "https://news.hada.io/topic?id=22191",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-07-27T09:55:16+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e인터넷 아카이브\u003c/strong\u003e가 미국 \u003cstrong\u003e연방 지정 도서관(Federal Depository Library)\u003c/strong\u003e 이 되어, 정부 자료 접근성이 개선됨\u003c/li\u003e\n\u003cli\u003e아카이브는 여전히 \u003cstrong\u003e디지털 자료화 및 보존\u003c/strong\u003e에 강점을 보이며, Democracy’s Library 프로젝트로 정부 자료를 온라인으로 제공함\u003c/li\u003e\n...\u003c/p\u003e"
+    },
+    {
+      "title": "게임에서 차량 프로그래밍하기",
+      "link": "https://news.hada.io/topic?id=22190",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-07-27T09:52:15+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e게임에서 차량 구현\u003c/strong\u003e은 진짜 물리 엔진 대신 \u003cstrong\u003e플레이 경험\u003c/strong\u003e을 중시함\u003c/li\u003e\n\u003cli\u003e레이싱 및 시뮬레이터 게임마다 \u003cstrong\u003e차량 조작 방식과 몰입감\u003c/strong\u003e에 차이가 큼\u003c/li\u003e\n\u003cli\u003e차량 시뮬레이션은 \u003cstrong\u003e엔진/기어박스, 타이어, 섀시\u003c/strong\u003e의 세 가지 구성 요소로 구성됨...\u003c/p\u003e"
+    },
+    {
+      "title": "CCTV 영상이 지진 단층의 움직임을 포착함",
+      "link": "https://news.hada.io/topic?id=22189",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-07-27T09:49:13+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e미얀마에서 발생한 \u003cstrong\u003e7.7 규모의 지진\u003c/strong\u003e을 통해 \u003cstrong\u003e지진 단층이 실시간으로 움직이는 장면\u003c/strong\u003e이 CCTV에 최초로 기록됨\u003c/li\u003e\n\u003cli\u003e해당 영상에서 \u003cstrong\u003e단층 이동\u003c/strong\u003e이 직선이 아닌 곡선 경로로 드러나 기존의 지진 메커니즘 이해에 \u003cstrong\u003e새로운 단서\u003c/strong\u003e를 제공함\u003c/li\u003e...\u003c/p\u003e"
+    },
+    {
+      "title": "Rust를 모든 GPU에서 실행하기 성공",
+      "link": "https://news.hada.io/topic?id=22188",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-07-27T09:46:12+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eRust\u003c/strong\u003e로 작성한 하나의 코드베이스가 \u003cstrong\u003eCUDA, Vulkan(SPIR-V), Metal, DirectX 12, WebGPU, CPU\u003c/strong\u003e 등 모든 주요 GPU 및 CPU 플랫폼에서 동작하는 데모 프로젝트 공개\u003c/li\u003e\n\u003cli\u003e기존 GPU 프로그래밍은 \u003cstrong\u003eGLSL, HLSL 등 별도의 언어 사용\u003c/strong\u003e으로 복잡성과 중복 문제가...\u003c/p\u003e"
+    },
+    {
+      "title": "Show HN: An IDE for stateful AI agents you can own, not just rent",
+      "link": "https://github.com/HeeKAIT/K.A.I.T.-Studio",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-07-27T22:03:33Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/HeeKAIT/K.A.I.T.-Studio\"\u003ehttps://github.com/HeeKAIT/K.A.I.T.-Studio\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44705135\"\u003ehttps://news.ycombinator.com/item?id=44705135\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "BobaVim – A game to learn and master Vim motions",
+      "link": "https://www.bobavim.com/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-07-27T22:02:42Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.bobavim.com/\"\u003ehttps://www.bobavim.com/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44705127\"\u003ehttps://news.ycombinator.com/item?id=44705127\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Elon Musk's Tesla Diner Is the Cybertruck of Restaurants",
+      "link": "https://www.rollingstone.com/culture/culture-features/tesla-diner-elon-musk-review-1235394091/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-07-27T21:59:01Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.rollingstone.com/culture/culture-features/tesla-diner-elon-musk-review-1235394091/\"\u003ehttps://www.rollingstone.com/culture/culture-features/tesla-diner-elon-musk-review-1235394091/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44705103\"\u003ehttps://news.ycombinator.com/item?id=44705103\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Missionaries using secret audio devices to evangelise Brazil's isolated peoples",
+      "link": "https://www.theguardian.com/global-development/2025/jul/27/missionaries-using-secret-audio-devices-to-evangelise-brazils-isolated-peoples",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-07-27T21:58:00Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.theguardian.com/global-development/2025/jul/27/missionaries-using-secret-audio-devices-to-evangelise-brazils-isolated-peoples\"\u003ehttps://www.theguardian.com/global-development/2025/jul/27/missionaries-using-secret-audio-devices-to-evangelise-brazils-isolated-peoples\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44705093\"\u003ehttps://news.ycombinator.com/item?id=44705093\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Life Through Quantum Annealing",
+      "link": "https://www.vesselproject.io/essays/life-through-quantum-annealing",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-07-27T21:55:57Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.vesselproject.io/essays/life-through-quantum-annealing\"\u003ehttps://www.vesselproject.io/essays/life-through-quantum-annealing\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44705081\"\u003ehttps://news.ycombinator.com/item?id=44705081\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Beginner's Guide to Subtitling (2001)",
+      "link": "https://armitage.crinkle.net/karinkuru/howtosub/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-07-27T21:54:43Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://armitage.crinkle.net/karinkuru/howtosub/\"\u003ehttps://armitage.crinkle.net/karinkuru/howtosub/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44705075\"\u003ehttps://news.ycombinator.com/item?id=44705075\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Tom Lehrer, RIP",
+      "link": "https://marginalrevolution.com/marginalrevolution/2025/07/tom-lehrer-rip.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-07-27T21:53:48Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://marginalrevolution.com/marginalrevolution/2025/07/tom-lehrer-rip.html\"\u003ehttps://marginalrevolution.com/marginalrevolution/2025/07/tom-lehrer-rip.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44705070\"\u003ehttps://news.ycombinator.com/item?id=44705070\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "How US Space Command is preparing for satellite-on-satellite combat",
+      "link": "https://www.economist.com/united-states/2025/07/27/how-us-space-command-is-preparing-for-satellite-on-satellite-combat",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-07-27T21:51:49Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.economist.com/united-states/2025/07/27/how-us-space-command-is-preparing-for-satellite-on-satellite-combat\"\u003ehttps://www.economist.com/united-states/2025/07/27/how-us-space-command-is-preparing-for-satellite-on-satellite-combat\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44705053\"\u003ehttps://news.ycombinator.com/item?id=44705053\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Enough AI Copilots We Need AI HUDs",
+      "link": "https://www.geoffreylitt.com/2025/07/27/enough-ai-copilots-we-need-ai-huds.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-07-27T21:47:05Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.geoffreylitt.com/2025/07/27/enough-ai-copilots-we-need-ai-huds.html\"\u003ehttps://www.geoffreylitt.com/2025/07/27/enough-ai-copilots-we-need-ai-huds.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44705018\"\u003ehttps://news.ycombinator.com/item?id=44705018\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "From Bali to Iceland, 165,000 Britons work remotely from another country",
+      "link": "https://www.thetimes.com/business-money/companies/article/working-lifes-a-beach-top-tips-for-becoming-a-digital-nomad-qk37szxx5",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-07-27T21:46:55Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.thetimes.com/business-money/companies/article/working-lifes-a-beach-top-tips-for-becoming-a-digital-nomad-qk37szxx5\"\u003ehttps://www.thetimes.com/business-money/companies/article/working-lifes-a-beach-top-tips-for-becoming-a-digital-nomad-qk37szxx5\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44705017\"\u003ehttps://news.ycombinator.com/item?id=44705017\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "As Women Take over a Male-Dominated Field, the Pay Drops",
+      "link": "https://www.nytimes.com/2016/03/20/upshot/as-women-take-over-a-male-dominated-field-the-pay-drops.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-07-27T21:45:07Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nytimes.com/2016/03/20/upshot/as-women-take-over-a-male-dominated-field-the-pay-drops.html\"\u003ehttps://www.nytimes.com/2016/03/20/upshot/as-women-take-over-a-male-dominated-field-the-pay-drops.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44704989\"\u003ehttps://news.ycombinator.com/item?id=44704989\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The only state without a Walgreens pharmacy",
+      "link": "https://thehustle.co/originals/the-only-state-without-a-walgreens-pharmacy",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-07-27T21:44:04Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://thehustle.co/originals/the-only-state-without-a-walgreens-pharmacy\"\u003ehttps://thehustle.co/originals/the-only-state-without-a-walgreens-pharmacy\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44704979\"\u003ehttps://news.ycombinator.com/item?id=44704979\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Lie on your resume – Applie-AI",
+      "link": "https://applie-ai.com",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-07-27T21:41:06Z",
+      "description": "\n\u003cp\u003eThe first time I tried to get a part time job I was surprised by the difficulty in getting a yes. But it was inevitably because my resume was empty. Then one day I had the though: \"why don't I just lie, who would know\". It didn't work instantly as I was too ambitious and when they asked for references, I lost everything.\u003cp\u003eBut then I took a step back and decided to say I had worked at a niche charity shop near me and boom, got the first job I applied to. I thought, I have to let other people know this is the best method, as employers are far more unfair than this.\u003cp\u003eAny feedback on the site or service, even the landing page would be greatly appreciated, thank you!\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44704954\"\u003ehttps://news.ycombinator.com/item?id=44704954\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "As AI Gets Smarter, It Acts More Evil",
+      "link": "https://www.honest-broker.com/p/as-ai-gets-smarter-it-acts-more-evil",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-07-27T21:39:04Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.honest-broker.com/p/as-ai-gets-smarter-it-acts-more-evil\"\u003ehttps://www.honest-broker.com/p/as-ai-gets-smarter-it-acts-more-evil\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44704941\"\u003ehttps://news.ycombinator.com/item?id=44704941\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Handrolling ISO8601 Duration Support for Go",
+      "link": "https://xnacly.me/posts/2025/handrolling-iso8601-support-for-go/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-07-27T21:39:02Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://xnacly.me/posts/2025/handrolling-iso8601-support-for-go/\"\u003ehttps://xnacly.me/posts/2025/handrolling-iso8601-support-for-go/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44704939\"\u003ehttps://news.ycombinator.com/item?id=44704939\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "I used Qwen3-Coder to generate 5 functional web apps from scratch in its Cloud",
+      "link": "https://www.youtube.com/watch?v=l65aOfy4NgQ",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-07-27T21:35:26Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.youtube.com/watch?v=l65aOfy4NgQ\"\u003ehttps://www.youtube.com/watch?v=l65aOfy4NgQ\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44704914\"\u003ehttps://news.ycombinator.com/item?id=44704914\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Ask HN: What's your uv exit strategy?",
+      "link": "https://news.ycombinator.com/item?id=44704906",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-07-27T21:34:21Z",
+      "description": "\n\u003cp\u003eI'm migrating more projects to uv because it's genuinely excellent - faster than anything else, solves real problems (even edge cases like venv + wxPython + macOS), just works.\u003cp\u003eBut I'm feeling the lock-in accumulate. Each project adds uv-specific configs, CI assumes uv behavior, team gets used to uv workflows. The GitHub Action is convenient, so we use it. The resolver is better, so we depend on it.\u003cp\u003eWe've watched this movie before. Great developer tool becomes indispensable, then business realities hit. Even Google dropped \"don't be evil.\" The enshittification pattern is well-documented: be good to users until they're locked in, then squeeze. Not saying Astral will , they seem genuinely focused on developer experience.\u003cp\u003eBut that's what everyone says in the first few years!\u003cp\u003eWhat's your approach here? Are you building abstraction layers? Keeping alternative workflows tested? Just accepting that you'll deal with migration if/when needed?\u003cp\u003eI keep adopting uv because it's the right technical choice, but I'm uneasy about having no real fallback plan if things change direction in 2-3 years. The better the tool, the deeper the eventual lock-in.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44704906\"\u003ehttps://news.ycombinator.com/item?id=44704906\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 4\u003c/p\u003e\n\u003cp\u003e# Comments: 2\u003c/p\u003e\n"
+    },
+    {
+      "title": "Microsoft's Recall feature is now blocked by Brave and AdGuard",
+      "link": "https://www.theverge.com/news/713676/brave-adguard-windows-recall-block-microsoft",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-07-27T21:32:29Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.theverge.com/news/713676/brave-adguard-windows-recall-block-microsoft\"\u003ehttps://www.theverge.com/news/713676/brave-adguard-windows-recall-block-microsoft\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44704894\"\u003ehttps://news.ycombinator.com/item?id=44704894\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 10\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Put Yourself Out There",
+      "link": "https://denismaciel.com/blog/put-yourself-out-there",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-07-27T21:28:53Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://denismaciel.com/blog/put-yourself-out-there\"\u003ehttps://denismaciel.com/blog/put-yourself-out-there\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44704859\"\u003ehttps://news.ycombinator.com/item?id=44704859\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "WASM the Hard Way: Porting the Chicory Compiler to Android",
+      "link": "https://blog.evacchi.dev/posts/2025/07/11/wasm-the-hard-way-porting-the-chicory-compiler-to-android/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-07-27T21:28:27Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://blog.evacchi.dev/posts/2025/07/11/wasm-the-hard-way-porting-the-chicory-compiler-to-android/\"\u003ehttps://blog.evacchi.dev/posts/2025/07/11/wasm-the-hard-way-porting-the-chicory-compiler-to-android/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44704856\"\u003ehttps://news.ycombinator.com/item?id=44704856\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    }
+  ],
+  "generatedAt": "2025-07-28T07:08:33.56529428+09:00"
+}
