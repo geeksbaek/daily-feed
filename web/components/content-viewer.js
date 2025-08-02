@@ -459,23 +459,31 @@ export class ContentViewer extends LitElement {
     this.originalBodyPosition = '';
     this.originalBodyTop = '';
     this.originalScrollY = 0;
+    this.boundFootnoteHandler = this.handleFootnoteClick.bind(this);
   }
 
   connectedCallback() {
     super.connectedCallback();
-    this.addEventListener('click', this.handleFootnoteClick.bind(this));
+    if (this.shadowRoot) {
+      this.shadowRoot.addEventListener('click', this.boundFootnoteHandler);
+    }
   }
 
   disconnectedCallback() {
     super.disconnectedCallback();
+    if (this.shadowRoot) {
+      this.shadowRoot.removeEventListener('click', this.boundFootnoteHandler);
+    }
     // 컴포넌트 제거 시 바깥 스크롤 복원
     this.enableBodyScroll();
   }
 
   handleFootnoteClick(e) {
-    if (e.target.classList.contains('footnote-ref')) {
+    const path = e.composedPath();
+    const link = path.find(el => el.classList && el.classList.contains('footnote-ref'));
+    if (link) {
       e.preventDefault();
-      const href = e.target.getAttribute('href');
+      const href = link.getAttribute('href');
       if (href && href.startsWith('#footnote-')) {
         const targetId = href.substring(1);
         const targetElement = this.shadowRoot.getElementById(targetId);
