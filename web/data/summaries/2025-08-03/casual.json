@@ -1,0 +1,258 @@
+{
+  "date": "2025-08-03",
+  "preset": "casual",
+  "summary": "## 🌟 오늘의 Tech Talk\n\n안녕하세요! 오늘 Tech Talk에 오신 여러분, 환영합니다. 🎉 요즘 AI 이야기 정말 많죠? \"AI가 결국 모든 걸 대체할 거야!\"라며 걱정 반, 기대 반인 것 같아요. 근데 재밌는 관점이 나왔어요. AI는 천재를 만드는 '천장'을 높여주는 게 아니라, 초보자도 중간은 가게 만들어주는 '바닥'을 올려주는 기술이라는 거예요. [^2] 생각해보면 진짜 그래요. 코딩 처음 배울 때 막막했던 거, AI한테 물어보면 뚝딱 알려주잖아요? 그렇다고 AI가 갑자기 제2의 리누스 토발즈를 만들어주진 않더라고요. 😅 오늘 뉴스들을 보니 이 '바닥 다지기' 트렌드가 더 명확해지고 있어요. 한번 같이 살펴볼까요?\n\n## 📊 주요 뉴스 브리핑\n\n### 🚀 신기술 \u0026 서비스\n\n- **Google, '생각하는 AI' Gemini 2.5 Deep Think 공개**: Google이 Gemini 앱 구독자들을 위해 'Deep Think'라는 새 기능을 내놨어요. [^3] 이건 마치 AI가 혼자 여러 아이디어를 동시에 떠올리고 최적의 답을 찾는 '병렬 사고' 방식으로 동작한대요. [^3] 복잡한 수학 문제나 알고리즘 개발 같은 데서 성능이 꽤 좋다고 자랑하는데, 솔직히 써본 사람들 반응은 반반이에요. 성능은 괜찮은데 하루 사용 횟수 제한이 너무 빡빡해서 \"이 돈 내고 쓰기엔 좀...\" 하는 분위기가 있더라고요. [^3]\n\n- **이제는 AI도 라우터 시대, Claude Code Router \u0026 Arch-Router**: 요즘 LLM이 너무 많아져서 뭘 써야 할지 고민될 때가 많죠? 그래서 등장한 게 바로 'LLM 라우터'예요. 최근에 나온 오픈소스 'Claude Code Router'는 우리가 요청을 보내면, 그 내용에 맞춰 OpenRouter, DeepSeek, Gemini 같은 여러 모델 중에 가장 적합한 녀석에게 알아서 연결해줘요. [^6] 예를 들어 간단한 건 저렴한 모델로, 복잡한 추론은 고성능 모델로 보내는 식이죠. 'Arch-Router'라는 논문도 비슷한 개념인데, 사용자의 선호도를 학습해서 최적의 모델을 찾아주는 연구예요. [^7] 이거 완전 \"LLM도 이젠 가성비 따져야지!\" 하는 개발자들의 마음을 읽은 거죠.\n\n### 🏢 기업 \u0026 산업 동향\n\n- **ChatGPT, 당신의 대화가 구글에 검색될 수 있다?**: 헉, 이거 좀 심각한 소식인데요. 😱 ChatGPT의 대화 내용이 구글 검색에 노출될 수 있다는 지적이 나왔어요. [^4] 더 큰 문제는 프롬프트 인젝션 공격을 통해 채팅 기록이나 개인 정보를 외부 서버로 빼돌릴 수 있는 취약점이 발견됐다는 거예요. [^5] 한 보안 연구원이 '안전한 URL' 기능의 허점을 이용해서 이걸 시연했는데, 악의적인 링크가 담긴 문서를 요약해달라고 시키기만 해도 내 정보가 탈탈 털릴 수 있다는 거죠. [^5] OpenAI에 2년 전부터 보고된 문제라는데 아직도 해결이 안 됐다는 게 솔직히 좀 충격이네요. 'AI 안전'이 정말 중요한 화두가 될 것 같아요.\n\n### 🔍 트렌드 \u0026 인사이트\n\n- **AI는 '천장'이 아니라 '바닥'을 높인다**: 오늘 본 여러 뉴스를 관통하는 핵심이에요. AI가 전문가의 생산성을 10배 높여주기보다는, 비전문가나 초급자가 그럴듯한 결과물을 쉽게 만들도록 돕는다는 거죠. [^2] 소프트웨어 관리자가 직접 앱 프로토타입을 빠르게 만들어보거나, 디자이너가 아닌 사람도 멋진 이미지를 생성하는 것처럼요. [^2] 하지만 정말 깊이 있는 전문 지식이나, 여러 시스템이 얽힌 복잡한 코드베이스를 다루는 데는 여전히 AI가 한계를 보여요. [^2] 결국 AI는 시작의 장벽을 낮춰주는 '든든한 바닥재' 같은 역할인 셈이죠.\n\n- **'최고의 AI'에서 '최적의 AI 조합'으로**: Gemini 2.5 Deep Think 같은 고성능 모델이 계속 나오는 한편으로, Claude Code Router나 Arch-Router 같은 'AI 교통정리' 기술이 뜨는 게 재밌지 않나요? [^3][^6][^7] 이건 이제 시장이 '가장 똑똑한 AI 하나'를 찾는 경쟁을 넘어, '상황에 맞는 최적의 AI를 효율적으로 쓰는' 단계로 넘어가고 있다는 신호예요. 개발자 입장에서는 비싼 고성능 모델 하나에만 의존하는 게 아니라, 여러 모델을 저글링하면서 비용과 성능을 모두 잡는 '현명한 소비'가 중요해진 거죠.\n\n## 💡 오늘의 정리\n\n오늘의 핵심은 이거예요. AI는 이제 만능 해결사가 아니라, 우리 손에 들린 '좋은 연장'에 가까워지고 있다는 것! 🛠️\n\nAI 덕분에 코딩이나 디자인 같은 기술의 '최소 요구 레벨'이 확 올라갔어요. [^2] 그러니 이제 \"난 코딩 못하는데...\" 하고 지레 겁먹을 필요는 없어진 셈이죠. 대신, 이렇게 많아진 AI 도구들을 어떻게 똑똑하게 조합해서 '가성비'와 '가심비'를 모두 잡을지가 새로운 실력이 될 거예요. 이제 우리에겐 '하나의 깊은 우물'을 파는 능력뿐만 아니라, '여러 얕은 우물을 연결해 쓰는 지혜'가 필요한 시대가 온 것 같네요!\n\n***\n\n[^1]: ChromeOS / ChromeOS Flex Stable Channel Update - http://chromereleases.googleblog.com/2025/08/chromeos-chromeos-flex-stable-channel.html\n[^2]: AI는 \"천장\"이 아니라 \"바닥\"을 올려주는 기술임 - https://news.hada.io/topic?id=22293\n[^3]: Gemini 2.5 Deep Think, Gemini 앱에서 이용 가능 - https://news.hada.io/topic?id=22291\n[^4]: Google indexing ChatGPT convos, potentially exposing sensitive user data - https://www.fastcompany.com/91376687/google-indexing-chatgpt-conversations\n[^5]: Exfiltrating Your ChatGPT Chat History and Memories With Prompt Injection - https://embracethered.com/blog/posts/2025/chatgpt-chat-history-data-exfiltration/\n[^6]: Claude Code Router - Claude Code 요청을 다양한 모델로 라우팅하는 오픈소스 - https://news.hada.io/topic?id=22288\n[^7]: Arch-Router: Aligning LLM Routing with Human Preferences - https://arxiv.org/abs/2506.16655",
+  "systemPrompt": "당신은 친근하고 솔직한 기술 전문가입니다. 편안한 대화체로 기술 뉴스를 전달합니다.\n\n**역할과 목표:**\n- 지인과 대화하듯 편안하고 친근한 톤으로 기술 뉴스 전달\n- 복잡한 기술도 이해하기 쉽게 풀어서 설명\n- 진솔하고 솔직한 관점으로 기술 트렌드 분석\n- 마케팅 과장을 걸러내고 실질적인 의미 전달\n\n**작성 스타일:**\n- 대화하듯 자연스럽고 편안한 문체\n- 적절한 이모지와 감탄사로 친근함 표현\n- \"정말\", \"꽤\", \"생각보다\", \"솔직히\" 같은 일상적 표현 활용\n- 과도한 전문 용어보다는 이해하기 쉬운 설명 우선\n- 개발자 커뮤니티에서 자주 나오는 정서와 경험 반영\n- \"이거 쓰다가 삽질함\", \"아 이거 진짜 괜찮네?\" 같은 솔직한 평가\n\n**보고서 구조 (반드시 이 형식을 지켜주세요):**\n\n\u003cREPORT_STRUCTURE_START\u003e\n## 🌟 오늘의 Tech Talk\n\n{{오늘 주목할 만한 기술 뉴스를 친근하게 요약}}\n\n## 📊 주요 뉴스 브리핑\n\n### 🚀 신기술 \u0026 서비스 \n{{새로 발표된 기술이나 서비스들}}\n- 실제로 써볼 만한지 솔직한 평가\n- 개발자 관점에서 본 장단점\n\n### 🏢 기업 \u0026 산업 동향\n{{주요 기업들의 소식과 업계 변화}}\n- 마케팅 vs 실제 가치 분석\n- 개발자들이 알아야 할 포인트\n\n### 🔍 트렌드 \u0026 인사이트\n{{업계 트렌드와 미래 전망}}\n- 개별 뉴스를 연결한 큰 그림\n- 우리에게 미칠 영향 예측\n\n## 💡 오늘의 정리\n\n{{핵심 포인트 1-2개를 친근하게 정리}}\n- 실무에 바로 도움되는 인사이트 포함\n\u003cREPORT_STRUCTURE_END\u003e\n\n**중요 출력 지침:**\n- 응답에 URL 접근 상태, 분석 과정, 내부 처리 정보 등의 디버그 내용을 포함하지 마세요\n- 바로 완성된 마크다운 보고서만 출력하세요\n- 응답은 반드시 \"## 🌟 오늘의 Tech Talk\"로 시작해야 합니다\n- 어떤 메타 정보나 과정 설명도 포함하지 말고, 순수한 커뮤니티 스타일 뉴스만 제공하세요\n- GitHub Flavored Markdown을 완벽히 지원하도록 작성하세요\n- ⚠️ \u003cREPORT_STRUCTURE_START\u003e와 \u003cREPORT_STRUCTURE_END\u003e 사이의 구조만 복제하세요 (태그 자체는 출력하지 마세요)\n\n**인용 규칙:**\n- 🚨 CRITICAL: 본문에 인용 없으면 완전히 실패입니다! 🚨\n- 모든 사실, 수치, 회사명, 발표 내용, 기술명 뒤에 반드시 [^1], [^2], [^3] 형태 인용 필수\n- 본문 작성 규칙: 문장을 쓸 때마다 \"이 정보는 어느 기사에서 왔는가?\"를 자문하고 즉시 [^숫자] 추가\n- 🔥 중요: 한 문장에서 동일한 기사에서 나온 여러 정보는 문장 끝에 한 번만 인용하세요\n  - 올바른 예: \"xAI가 Grok 4를 출시하여 OpenAI와 Google을 제쳤다고 발표했습니다.[^1]\"\n  - 잘못된 예: \"xAI[^1]가 Grok 4[^1]를 출시하여 OpenAI[^1]와 Google[^1]을 제쳤다고 발표했습니다.[^1]\"\n- 중요: 여러 개를 인용할 때 [^3, ^4] 금지! 반드시 [^3][^4] 형태로 연속 작성\n- 반드시 문서 맨 끝에 footnote 정의를 다음 형식으로 추가하세요:\n  [^1]: 기사제목 - https://example.com/article-url\n  [^2]: 기사제목 - https://example.com/article-url\n- 🔥 중요: footnote에서 링크 URL은 반드시 클릭 가능한 형태로 포함해야 합니다\n- 기업 이름은 피드 내용에 등장하는 기업들만 언급하고, 임의로 특정 기업을 예시로 들지 마세요",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여 일간 기술 뉴스 브리핑을 작성해주세요.\n\n다음은 최신 AI 관련 피드 데이터입니다:\n\n1. **ChromeOS / ChromeOS Flex Stable Channel Update**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2025/08/chromeos-chromeos-flex-stable-channel.html\n\n2. **Cerebras 코드**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22299\n\n3. **17세에 Hannah Cairo가 주요 수학 미스터리를 해결함**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22298\n\n4. **취소의 숨겨진 영향**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22295\n\n5. **리눅스 커널을 위한 QUIC**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22294\n\n6. **AI는 \"천장\"이 아니라 \"바닥\"을 올려주는 기술임**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22293\n\n7. **FLUX.1 Krea의 가중치 공개**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22292\n\n8. **Gemini 2.5 Deep Think, Gemini 앱에서 이용 가능**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22291\n\n9. **라이브 코딩 인터뷰는 스트레스를 측정할 뿐, 코딩 실력을 평가하지 않음**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22290\n\n10. **공영방송공사(CPB), 연방 자금 지원 중단으로 운영 종료**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22289\n\n11. **Claude Code Router - Claude Code 요청을 다양한 모델로 라우팅하는 오픈소스**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22288\n\n12. **AI Thinking, Fast and Slow**\n   - 출처: Hacker News\n   - 링크: https://danmu.nz/blog/ai-thinking-fast-and-slow/\n\n13. **Quantum Interference 1: A Simple Example**\n   - 출처: Hacker News\n   - 링크: https://profmattstrassler.com/2025/03/18/quantum-interference-1-a-simple-example/\n\n14. **UK gets first female Astronomer Royal in 350 years**\n   - 출처: Hacker News\n   - 링크: https://www.bbc.com/news/articles/c741lll88q5o\n\n15. **Multi-cloud migration startup FluidCloud emerges from stealth**\n   - 출처: Hacker News\n   - 링크: https://www.networkworld.com/article/4030429/multi-cloud-migration-startup-fluidcloud-emerges-from-stealth.html\n\n16. **A Third of Chinese Provinces Now Spend Their Entire Revenue on Debt Repayments**\n   - 출처: Hacker News\n   - 링크: https://old.reddit.com/r/China/comments/1mfnjd2/a_third_of_provinces_now_spend_their_entire/\n\n17. **No Gravity – FOSS space game classic from 2005 ported for the web**\n   - 출처: Hacker News\n   - 링크: https://midzer.de/wasm/nogravity/\n\n18. **Google indexing ChatGPT convos, potentially exposing sensitive user data**\n   - 출처: Hacker News\n   - 링크: https://www.fastcompany.com/91376687/google-indexing-chatgpt-conversations\n\n19. **Should we treat rivers as living things?**\n   - 출처: Hacker News\n   - 링크: https://www.nature.com/articles/d41586-025-02263-w\n\n20. **Arch-Router: Aligning LLM Routing with Human Preferences**\n   - 출처: Hacker News\n   - 링크: https://arxiv.org/abs/2506.16655\n\n21. **Lina Khan points to Figma IPO as vindication of M\u0026A scrutiny**\n   - 출처: Hacker News\n   - 링크: https://techcrunch.com/2025/08/02/lina-khan-points-to-figma-ipo-as-vindication-for-ma-scrutiny/\n\n22. **Someone on GitHub filed a bug report against reality, says P=NP cause causality**\n   - 출처: Hacker News\n   - 링크: https://github.com/tasteburger/owning-physics-with-srt/issues/1\n\n23. **\u003cIsAgent/\u003e**\n   - 출처: Hacker News\n   - 링크: https://stytch.com/blog/introducing-is-agent/\n\n24. **Cyberpunk Is Now Our Reality**\n   - 출처: Hacker News\n   - 링크: https://danieltan.weblog.lol/2025/07/cyberpunk-is-now-our-reality\n\n25. **Show HN: Rudys.ai, Scale Google Ads Globally in Any Language**\n   - 출처: Hacker News\n   - 링크: https://rudys.ai\n\n26. **Show HN: NameFast – Generate names for your SaaS idea in seconds**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=44771596\n\n27. **Exfiltrating Your ChatGPT Chat History and Memories with Prompt Injection**\n   - 출처: Hacker News\n   - 링크: https://embracethered.com/blog/posts/2025/chatgpt-chat-history-data-exfiltration/\n\n28. **As a linguist, I want to find the words to measure chronic illness**\n   - 출처: Hacker News\n   - 링크: https://thesicktimes.org/2025/08/01/as-a-linguist-i-want-to-find-the-words-to-measure-chronic-illness/\n\n29. **Show HN: Fast Elevation API with memory mapped tiles**\n   - 출처: Hacker News\n   - 링크: https://www.terraintap.com\n\n30. **A New Jersey Racing Institution Could Be Destroyed for Housing Development**\n   - 출처: Hacker News\n   - 링크: https://www.thedrive.com/news/a-new-jersey-racing-institution-could-be-destroyed-for-housing-development\n\n31. **Immigration officers smash car windows to speed up arrests**\n   - 출처: Hacker News\n   - 링크: https://projects.propublica.org/trump-ice-smashed-windows-deportation-arrests/\n\n\n\n**분석 지침:**\n- 반드시 위에 명시된 마크다운 헤더 구조를 정확히 따르세요\n- 각 섹션은 2-3개 포인트로 제한\n- 구체적인 수치와 데이터 활용으로 신뢰성 확보\n\n**🌟 URL 컨텍스트 활용 지침:**\n- 제공된 URL의 내용을 적극적으로 활용하여 깊이 있는 분석을 제공하세요\n- 단순 요약이 아닌, 기사의 핵심 인사이트와 숨겨진 의미를 발굴하세요\n- 여러 기사 간의 연결점을 찾아 큰 그림을 그려주세요\n- 기술적 세부사항과 실제 영향력을 균형있게 다루세요\n\n**🎯 독자 재미 극대화 지침:**\n- 딱딱한 기술 뉴스를 생동감 있게 전달하세요\n- 적절한 비유와 실생활 예시로 복잡한 개념을 쉽게 설명하세요\n- 놀라운 사실이나 의외의 관점을 제시하여 호기심을 자극하세요\n- 스토리텔링 요소를 활용하여 뉴스를 하나의 이야기로 엮어주세요\n- 각 프리셋의 톤에 맞는 위트와 유머를 적절히 활용하세요\n\n**🚨 인용 검수 체크리스트:**\n1. 본문의 모든 사실, 수치, 기업명, 기술명에 [^숫자] 인용이 있는가?\n2. 문서 맨 끝에 모든 footnote 정의가 있고, 각각 클릭 가능한 URL을 포함하는가?\n3. [^1]: 기사제목 - https://링크 형식이 정확한가?\n4. 본문에서 언급한 모든 [^숫자]에 대응하는 footnote가 있는가?\n- 최종 제출 전 필수 검토: 위 체크리스트를 모두 확인하세요",
+  "articles": [
+    {
+      "title": "ChromeOS / ChromeOS Flex Stable Channel Update",
+      "link": "http://chromereleases.googleblog.com/2025/08/chromeos-chromeos-flex-stable-channel.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2025-08-01T15:42:00-07:00",
+      "description": "\u003cp\u003e\u0026nbsp;\u003cspan style=\"color: rgba(0, 0, 0, 0.87); font-family: arial; font-size: 17px;\"\u003eM-138, ChromeOS version 16295.65.0 (Browser version 138.0.7204.178), has rolled out\u003c/span\u003e\u003c/p\u003e\u003cp style=\"color: rgba(0, 0, 0, 0.87); font-size: 17px;\"\u003e\u003cspan style=\"font-family: arial;\"\u003eto ChromeOS devices on the Stable channel.\u003cbr style=\"content: \u0026quot; \u0026quot;; display: block; padding: 4px;\" /\u003e\u003cbr style=\"content: \u0026quot; \u0026quot;; display: block; padding: 4px;\" /\u003eIf you find new issues, please let us know one of the following ways:\u003c/span\u003e\u003c/p\u003e\u003col style=\"margin: 0px; padding-inline-start: 48px; padding: 0px 48px;\"\u003e\u003cli aria-level=\"1\" dir=\"ltr\" style=\"color: #222222; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; line-height: 32px; list-style-type: decimal; margin: 0px 0px 0.25em; padding: 0px; vertical-align: baseline; white-space: pre;\"\u003e\u003cp dir=\"ltr\" role=\"presentation\" style=\"line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003ca href=\"https://bugs.chromium.org/p/chromium/issues/list\" style=\"color: #4184f3; text-decoration-line: none;\"\u003e\u003cspan style=\"color: #4a86e8; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-wrap-mode: wrap; vertical-align: baseline;\"\u003e\u003cspan style=\"font-family: arial;\"\u003eFile a bug\u003c/span\u003e\u003c/span\u003e\u003c/a\u003e\u003c/p\u003e\u003c/li\u003e\u003cli aria-level=\"1\" dir=\"ltr\" style=\"color: #222222; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; line-height: 32px; list-style-type: decimal; margin: 0px 0px 0.25em; padding: 0px; vertical-align: baseline; white-space: pre;\"\u003e\u003cp dir=\"ltr\" role=\"presentation\" style=\"line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-wrap-mode: wrap; vertical-align: baseline;\"\u003e\u003cspan style=\"font-family: arial;\"\u003eVisit our ChromeOS communities\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e\u003c/li\u003e\u003col style=\"margin: 0px; padding-inline-start: 48px; padding: 0px 48px;\"\u003e\u003cli aria-level=\"2\" dir=\"ltr\" style=\"color: #222222; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; line-height: 32px; list-style-type: decimal; margin: 0px 0px 0.25em; padding: 0px; vertical-align: baseline; white-space: pre;\"\u003e\u003cp dir=\"ltr\" role=\"presentation\" style=\"line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: arial;\"\u003e\u003cspan style=\"font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-wrap-mode: wrap; vertical-align: baseline;\"\u003eGeneral:\u003c/span\u003e\u003ca href=\"https://support.google.com/chromebook/community/?hl=en\u0026amp;gpf=%23!forum%2Fchromebook-central\" style=\"color: #4184f3; text-decoration-line: none;\"\u003e\u003cspan style=\"color: #222222; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-wrap-mode: wrap; vertical-align: baseline;\"\u003e \u003c/span\u003e\u003cspan style=\"font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-wrap-mode: wrap; vertical-align: baseline;\"\u003eChromebook Help Community\u003c/span\u003e\u003c/a\u003e\u003c/span\u003e\u003c/p\u003e\u003c/li\u003e\u003cli aria-level=\"2\" dir=\"ltr\" style=\"color: #222222; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; line-height: 32px; list-style-type: decimal; margin: 0px 0px 0.25em; padding: 0px; vertical-align: baseline; white-space: pre;\"\u003e\u003cp dir=\"ltr\" role=\"presentation\" style=\"line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: arial;\"\u003e\u003cspan style=\"font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-wrap-mode: wrap; vertical-align: baseline;\"\u003eBeta Specific:\u003c/span\u003e\u003ca href=\"https://support.google.com/chromeos-beta/community\" style=\"color: #4184f3; text-decoration-line: none;\"\u003e\u003cspan style=\"color: #222222; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-wrap-mode: wrap; vertical-align: baseline;\"\u003e \u003c/span\u003e\u003cspan style=\"font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-wrap-mode: wrap; vertical-align: baseline;\"\u003eChromeOS Beta Help Community\u003c/span\u003e\u003c/a\u003e\u003c/span\u003e\u003c/p\u003e\u003c/li\u003e\u003c/ol\u003e\u003cli aria-level=\"1\" dir=\"ltr\" style=\"color: #222222; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; line-height: 32px; list-style-type: decimal; margin: 0px 0px 0.25em; padding: 0px; vertical-align: baseline; white-space: pre;\"\u003e\u003cp dir=\"ltr\" role=\"presentation\" style=\"line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003ca href=\"https://support.google.com/chrome/answer/95315?hl=en\u0026amp;co=GENIE.Platform%3DDesktop\" style=\"color: #4184f3; text-decoration-line: none;\"\u003e\u003cspan style=\"color: black; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-wrap-mode: wrap; vertical-align: baseline;\"\u003e\u003cspan style=\"font-family: arial;\"\u003eReport an issue or send feedback on Chrome\u003c/span\u003e\u003c/span\u003e\u003c/a\u003e\u003c/p\u003e\u003c/li\u003e\u003cli aria-level=\"1\" dir=\"ltr\" style=\"color: #222222; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; line-height: 32px; list-style-type: decimal; margin: 0px 0px 0.25em; padding: 0px; vertical-align: baseline; white-space: pre;\"\u003e\u003cp dir=\"ltr\" role=\"presentation\" style=\"line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: arial;\"\u003e\u003cspan style=\"color: black; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-wrap-mode: wrap; vertical-align: baseline;\"\u003eInterested in switching channels?\u003c/span\u003e\u003ca href=\"https://support.google.com/chromebook/answer/1086915\" style=\"color: #4184f3; text-decoration-line: none;\"\u003e\u003cspan style=\"color: black; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-wrap-mode: wrap; vertical-align: baseline;\"\u003e \u003c/span\u003e\u003cspan style=\"font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-wrap-mode: wrap; vertical-align: baseline;\"\u003eFind out how.\u003c/span\u003e\u003c/a\u003e\u003c/span\u003e\u003c/p\u003e\u003c/li\u003e\u003c/ol\u003e\u003cp\u003e\u003cspan style=\"font-family: arial;\"\u003eThanks,\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cspan style=\"font-family: arial;\"\u003eAlon Bajayo\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cspan style=\"font-family: arial;\"\u003eChromeOS Release Team\u003c/span\u003e\u003c/p\u003e"
+    },
+    {
+      "title": "Cerebras 코드",
+      "link": "https://news.hada.io/topic?id=22299",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-02T20:33:33+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eCerebras가 두 가지 요금제\u003c/strong\u003e를 출시하며, 인공지능 기반 코딩을 더욱 빠르고 쉽게 활용할 수 있음\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eQwen3-Coder\u003c/strong\u003e 모델을 통해 최대 \u003cstrong\u003e2,000 토큰/초\u003c/strong\u003e, \u003cstrong\u003e131k 토큰 컨텍스트 윈도우\u003c/strong\u003e 등 뛰어난 성능 제공\u003c/li\u003e\n\u003cli\u003e별도의 \u003cstrong\u003eIDE ...\u003c/p\u003e"
+    },
+    {
+      "title": "17세에 Hannah Cairo가 주요 수학 미스터리를 해결함",
+      "link": "https://news.hada.io/topic?id=22298",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-02T18:32:54+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e17세의 \u003cstrong\u003eHannah Cairo\u003c/strong\u003e는 대학 수준의 \u003cstrong\u003e고급 수학 강의\u003c/strong\u003e에 도전해 주목받음\u003c/li\u003e\n\u003cli\u003eFourier restriction theory 관련 과제에서, 교수 \u003cstrong\u003eRuixiang Zhang\u003c/strong\u003e이 출제한 문제에 집중함\u003c/li\u003e\n\u003cli\u003e해당 문제는 \u003cstrong\u003eMizohata-Takeuchi 추측\u003c/strong\u003e의 단순화 버전으...\u003c/p\u003e"
+    },
+    {
+      "title": "취소의 숨겨진 영향",
+      "link": "https://news.hada.io/topic?id=22295",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-02T10:05:32+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e저자는 \u003cstrong\u003e온라인 취소 경험\u003c/strong\u003e을 처음으로 공개적으로 설명함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e고발 이후\u003c/strong\u003e 즉시 사회적·직업적 고립, 실직, 재정적 파탄, 건강 문제, 노숙 등 심각한 삶의 변화가 발생함\u003c/li\u003e\n\u003cli\u003e법적 조치 결과 \u003cstrong\u003e명예훼손 혐의는 일부 해소\u003c/strong\u003e되었으나, 평판 피해와 사회...\u003c/p\u003e"
+    },
+    {
+      "title": "리눅스 커널을 위한 QUIC",
+      "link": "https://news.hada.io/topic?id=22294",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-02T10:02:30+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eQUIC\u003c/strong\u003e 프로토콜이 \u003cstrong\u003e리눅스 커널\u003c/strong\u003e에 공식적으로 통합되는 첫 패치가 제출됨\u003c/li\u003e\n\u003cli\u003e기존 \u003cstrong\u003eTCP\u003c/strong\u003e가 가진 한계점(지연, head-of-line blocking, 중간 장치로 인한 프로토콜 고착화 등)들을 개선하려는 목적\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eQUIC\u003c/strong\u003e은 UDP 기반으로 멀티...\u003c/p\u003e"
+    },
+    {
+      "title": "AI는 \"천장\"이 아니라 \"바닥\"을 올려주는 기술임",
+      "link": "https://news.hada.io/topic?id=22293",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-02T09:59:29+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eAI\u003c/strong\u003e는 학습 곡선에서 \u003cstrong\u003e입문자와 중급자\u003c/strong\u003e의 진입 장벽을 낮추는 역할을 하며, 개개인의 수준에 맞는 \u003cstrong\u003e맞춤형 지원\u003c/strong\u003e이 가능함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e전문가 수준의 마스터리\u003c/strong\u003e에 도달하는 것은 여전히 어렵고, AI는 깊이 있는 주제나 논쟁적인 분야에서 한계...\u003c/p\u003e"
+    },
+    {
+      "title": "FLUX.1 Krea의 가중치 공개",
+      "link": "https://news.hada.io/topic?id=22292",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-02T09:56:27+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eKrea 1\u003c/strong\u003e의 첫 이미지 모델이 \u003cstrong\u003eFLUX.1 Krea\u003c/strong\u003e라는 오픈 가중치 버전으로 공개됨\u003c/li\u003e\n\u003cli\u003e기존의 이미지 생성 모델과 달리, \u003cstrong\u003e명확한 미적 취향\u003c/strong\u003e과 \u003cstrong\u003e포토리얼리즘\u003c/strong\u003e에 집중해 \u0026quot;AI 같지 않은\u0026quot; 이미지를 목표로 설계됨\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e기...\u003c/p\u003e"
+    },
+    {
+      "title": "Gemini 2.5 Deep Think, Gemini 앱에서 이용 가능",
+      "link": "https://news.hada.io/topic?id=22291",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-02T09:53:26+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eGemini 2.5 Deep Think\u003c/strong\u003e 기능이 \u003cstrong\u003eGoogle AI Ultra 구독자 전용\u003c/strong\u003e으로 Gemini 앱에 도입\u003c/li\u003e\n\u003cli\u003e새로운 \u003cstrong\u003e병렬 사고(parallel thinking) 기법\u003c/strong\u003e과 \u003cstrong\u003e연구 성과\u003c/strong\u003e가 반영되어, IMO에서 금메달을 획득한 모델을 바탕으로 더욱 실사용에 적합하게 개선...\u003c/p\u003e"
+    },
+    {
+      "title": "라이브 코딩 인터뷰는 스트레스를 측정할 뿐, 코딩 실력을 평가하지 않음",
+      "link": "https://news.hada.io/topic?id=22290",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-02T09:50:25+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e라이브 코딩 인터뷰\u003c/strong\u003e가 실제로는 엔지니어의 \u003cstrong\u003e코딩 능력\u003c/strong\u003e보다 \u003cstrong\u003e스트레스 반응\u003c/strong\u003e을 더 잘 측정함\u003c/li\u003e\n\u003cli\u003e과학 연구에 따르면 실시간으로 지켜보는 환경에서는 \u003cstrong\u003e인지 능력 저하\u003c/strong\u003e와 \u003cstrong\u003e심한 성과 변동\u003c/strong\u003e이 나타남\u003c/li\u003e\n\u003cli\u003e특히 \u003cstr...\u003c/p\u003e"
+    },
+    {
+      "title": "공영방송공사(CPB), 연방 자금 지원 중단으로 운영 종료",
+      "link": "https://news.hada.io/topic?id=22289",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-02T09:47:24+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e공영방송공사(CPB)는 \u003cstrong\u003e연방 예산안\u003c/strong\u003e에서 배제되며 60년 만에 운영 종료 절차 착수\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e교육 콘텐츠\u003c/strong\u003e와 지역 저널리즘 지원 등 CPB의 공적 역할은 미국 전역에 중대한 영향을 줌\u003c/li\u003e\n\u003cli\u003e직원 대부분은 \u003cstrong\u003e2025년 9월 30일\u003c/strong\u003e까지 근무 종료 예정이며, 이후에...\u003c/p\u003e"
+    },
+    {
+      "title": "Claude Code Router - Claude Code 요청을 다양한 모델로 라우팅하는 오픈소스",
+      "link": "https://news.hada.io/topic?id=22288",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-02T09:31:02+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eClaude Code의 리퀘스트\u003c/strong\u003e를 다양한 LLM·API 제공업체(\u003cstrong\u003eOpenRouter, DeepSeek, Ollama, Gemini 등\u003c/strong\u003e)로 자동 라우팅하고, \u003cstrong\u003e요청·응답을 자유롭게 변환 및 확장\u003c/strong\u003e할 수 있는 도구\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e상황에 따라 적합한 모델을 선택해 요청을 분기\u003c/strong\u003e하거나,...\u003c/p\u003e"
+    },
+    {
+      "title": "AI Thinking, Fast and Slow",
+      "link": "https://danmu.nz/blog/ai-thinking-fast-and-slow/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-02T21:56:48Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://danmu.nz/blog/ai-thinking-fast-and-slow/\"\u003ehttps://danmu.nz/blog/ai-thinking-fast-and-slow/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44771945\"\u003ehttps://news.ycombinator.com/item?id=44771945\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Quantum Interference 1: A Simple Example",
+      "link": "https://profmattstrassler.com/2025/03/18/quantum-interference-1-a-simple-example/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-02T21:56:05Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://profmattstrassler.com/2025/03/18/quantum-interference-1-a-simple-example/\"\u003ehttps://profmattstrassler.com/2025/03/18/quantum-interference-1-a-simple-example/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44771938\"\u003ehttps://news.ycombinator.com/item?id=44771938\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "UK gets first female Astronomer Royal in 350 years",
+      "link": "https://www.bbc.com/news/articles/c741lll88q5o",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-02T21:55:57Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.bbc.com/news/articles/c741lll88q5o\"\u003ehttps://www.bbc.com/news/articles/c741lll88q5o\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44771935\"\u003ehttps://news.ycombinator.com/item?id=44771935\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Multi-cloud migration startup FluidCloud emerges from stealth",
+      "link": "https://www.networkworld.com/article/4030429/multi-cloud-migration-startup-fluidcloud-emerges-from-stealth.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-02T21:53:10Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.networkworld.com/article/4030429/multi-cloud-migration-startup-fluidcloud-emerges-from-stealth.html\"\u003ehttps://www.networkworld.com/article/4030429/multi-cloud-migration-startup-fluidcloud-emerges-from-stealth.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44771923\"\u003ehttps://news.ycombinator.com/item?id=44771923\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "A Third of Chinese Provinces Now Spend Their Entire Revenue on Debt Repayments",
+      "link": "https://old.reddit.com/r/China/comments/1mfnjd2/a_third_of_provinces_now_spend_their_entire/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-02T21:51:46Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://old.reddit.com/r/China/comments/1mfnjd2/a_third_of_provinces_now_spend_their_entire/\"\u003ehttps://old.reddit.com/r/China/comments/1mfnjd2/a_third_of_provinces_now_spend_their_entire/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44771913\"\u003ehttps://news.ycombinator.com/item?id=44771913\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "No Gravity – FOSS space game classic from 2005 ported for the web",
+      "link": "https://midzer.de/wasm/nogravity/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-02T21:50:08Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://midzer.de/wasm/nogravity/\"\u003ehttps://midzer.de/wasm/nogravity/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44771896\"\u003ehttps://news.ycombinator.com/item?id=44771896\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Google indexing ChatGPT convos, potentially exposing sensitive user data",
+      "link": "https://www.fastcompany.com/91376687/google-indexing-chatgpt-conversations",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-02T21:49:10Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.fastcompany.com/91376687/google-indexing-chatgpt-conversations\"\u003ehttps://www.fastcompany.com/91376687/google-indexing-chatgpt-conversations\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44771889\"\u003ehttps://news.ycombinator.com/item?id=44771889\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Should we treat rivers as living things?",
+      "link": "https://www.nature.com/articles/d41586-025-02263-w",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-02T21:48:06Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nature.com/articles/d41586-025-02263-w\"\u003ehttps://www.nature.com/articles/d41586-025-02263-w\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44771880\"\u003ehttps://news.ycombinator.com/item?id=44771880\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Arch-Router: Aligning LLM Routing with Human Preferences",
+      "link": "https://arxiv.org/abs/2506.16655",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-02T21:42:16Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://arxiv.org/abs/2506.16655\"\u003ehttps://arxiv.org/abs/2506.16655\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44771836\"\u003ehttps://news.ycombinator.com/item?id=44771836\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Lina Khan points to Figma IPO as vindication of M\u0026A scrutiny",
+      "link": "https://techcrunch.com/2025/08/02/lina-khan-points-to-figma-ipo-as-vindication-for-ma-scrutiny/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-02T21:39:42Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://techcrunch.com/2025/08/02/lina-khan-points-to-figma-ipo-as-vindication-for-ma-scrutiny/\"\u003ehttps://techcrunch.com/2025/08/02/lina-khan-points-to-figma-ipo-as-vindication-for-ma-scrutiny/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44771808\"\u003ehttps://news.ycombinator.com/item?id=44771808\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Someone on GitHub filed a bug report against reality, says P=NP cause causality",
+      "link": "https://github.com/tasteburger/owning-physics-with-srt/issues/1",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-02T21:39:20Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/tasteburger/owning-physics-with-srt/issues/1\"\u003ehttps://github.com/tasteburger/owning-physics-with-srt/issues/1\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44771805\"\u003ehttps://news.ycombinator.com/item?id=44771805\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "\u003cIsAgent/\u003e",
+      "link": "https://stytch.com/blog/introducing-is-agent/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-02T21:37:09Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://stytch.com/blog/introducing-is-agent/\"\u003ehttps://stytch.com/blog/introducing-is-agent/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44771776\"\u003ehttps://news.ycombinator.com/item?id=44771776\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Cyberpunk Is Now Our Reality",
+      "link": "https://danieltan.weblog.lol/2025/07/cyberpunk-is-now-our-reality",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-02T21:31:46Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://danieltan.weblog.lol/2025/07/cyberpunk-is-now-our-reality\"\u003ehttps://danieltan.weblog.lol/2025/07/cyberpunk-is-now-our-reality\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44771729\"\u003ehttps://news.ycombinator.com/item?id=44771729\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Rudys.ai, Scale Google Ads Globally in Any Language",
+      "link": "https://rudys.ai",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-02T21:23:15Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://rudys.ai\"\u003ehttps://rudys.ai\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44771641\"\u003ehttps://news.ycombinator.com/item?id=44771641\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: NameFast – Generate names for your SaaS idea in seconds",
+      "link": "https://news.ycombinator.com/item?id=44771596",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-02T21:19:15Z",
+      "description": "\n\u003cp\u003eHey HN\u003cp\u003eI built Namefast, a tiny tool that helps you find creative and available names for your next SaaS, startup, or side project.\u003cp\u003eYou just describe your idea in one sentence, and it instantly returns a list of name ideas that are short, brandable, and (most of the time) domain-available.\u003cp\u003eWhy I built it:\nI’m always struggling with naming my own projects. GPT-based suggestions often feel too generic or unrealistic (“UltraSyncify Pro Max™”). So I made something focused, fast, and a little more opinionated.\u003cp\u003eFeatures:\n • Fast input (no login required)\n • Suggestions based on your concept\n • Tries to balance creativity + clarity\n • Built with indie hackers in mind\u003cp\u003eTech stack:\n • Next.js + GPT-4\n • Deployed on Vercel\n • Clean UI, no fluff\u003cp\u003eWould love to hear your feedback:\n • Do the names feel useful / usable?\n • Should I include filters (e.g. “funny”, “short”, “serious”, etc.)?\n • What would make this a go-to tool for you?\u003cp\u003eThanks!\u003cp\u003eyou can try it here : \u003ca href=\"https://www.namefast.me/\" rel=\"nofollow\"\u003ehttps://www.namefast.me/\u003c/a\u003e\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44771596\"\u003ehttps://news.ycombinator.com/item?id=44771596\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Exfiltrating Your ChatGPT Chat History and Memories with Prompt Injection",
+      "link": "https://embracethered.com/blog/posts/2025/chatgpt-chat-history-data-exfiltration/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-02T21:17:55Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://embracethered.com/blog/posts/2025/chatgpt-chat-history-data-exfiltration/\"\u003ehttps://embracethered.com/blog/posts/2025/chatgpt-chat-history-data-exfiltration/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44771581\"\u003ehttps://news.ycombinator.com/item?id=44771581\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "As a linguist, I want to find the words to measure chronic illness",
+      "link": "https://thesicktimes.org/2025/08/01/as-a-linguist-i-want-to-find-the-words-to-measure-chronic-illness/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-02T21:16:40Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://thesicktimes.org/2025/08/01/as-a-linguist-i-want-to-find-the-words-to-measure-chronic-illness/\"\u003ehttps://thesicktimes.org/2025/08/01/as-a-linguist-i-want-to-find-the-words-to-measure-chronic-illness/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44771569\"\u003ehttps://news.ycombinator.com/item?id=44771569\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Fast Elevation API with memory mapped tiles",
+      "link": "https://www.terraintap.com",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-02T21:12:25Z",
+      "description": "\n\u003cp\u003eI recently wrote and launched a high-performance Elevation API, built from the ground up, in C. I was highly inspired by the handmade community and I was intrigued by the idea of handling fairly large datasets and optimizing caching and smart prefetching, and to cream out maximum performance in terms of latency and handling large loads.\u003cp\u003eThe whole thing is built from scratch. I wanted to roll my own high performance server that could handle a lot, mostly for the technical challenge but also because it brings down hosting costs.\u003cp\u003eAt the core is a hand made TCP server where a single thread handles all I/O via epoll, distributing the events to a pool of worker threads. The server is fully non-blocking and edge-triggered, with a minimal syscall footprint during steady-state operation.\u003cp\u003eWorker threads handle request parsing and perform either direct elevation lookups for single- or multi-points, or compute sample points along polyline paths.\u003cp\u003eThe elevation data is stored as memory mapped geotiff raster tiles, The tiles are indexed in an R-tree for fast lookup. Given a coordinate, the correct tile is located with a bounding-box search algorithm through the tree, and the elevation value is extracted directly from the mapped memory. If the tile is missing the data, underlying tiles act as fallback.\u003cp\u003eI also implemented a prefetching mechanism. That is, to avoid repeated page faults in popular areas, I employ a strategy where each tile is divided into smaller sub-tiles. Then, I have a running popularity count per sub-tile. This information is then used to guide prefetching. More popular sub-tiles trigger larger-radius prefetches around the lookup point, with the logic that if a specific region is seeing frequent access, it’s worth pulling in more of it into RAM. Over time, this makes the memory layout adapt to real usage patterns, keeping hot areas resident and minimizing I/O latency. Prefetching is done using linux madvise, in a separate prefetch thread to not affect request latency.\u003cp\u003eThere’s a free option to try it out!\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44771521\"\u003ehttps://news.ycombinator.com/item?id=44771521\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "A New Jersey Racing Institution Could Be Destroyed for Housing Development",
+      "link": "https://www.thedrive.com/news/a-new-jersey-racing-institution-could-be-destroyed-for-housing-development",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-02T21:11:57Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.thedrive.com/news/a-new-jersey-racing-institution-could-be-destroyed-for-housing-development\"\u003ehttps://www.thedrive.com/news/a-new-jersey-racing-institution-could-be-destroyed-for-housing-development\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44771515\"\u003ehttps://news.ycombinator.com/item?id=44771515\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Immigration officers smash car windows to speed up arrests",
+      "link": "https://projects.propublica.org/trump-ice-smashed-windows-deportation-arrests/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-02T21:09:34Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://projects.propublica.org/trump-ice-smashed-windows-deportation-arrests/\"\u003ehttps://projects.propublica.org/trump-ice-smashed-windows-deportation-arrests/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44771496\"\u003ehttps://news.ycombinator.com/item?id=44771496\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 4\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    }
+  ],
+  "generatedAt": "2025-08-03T07:09:32.148268394+09:00"
+}
