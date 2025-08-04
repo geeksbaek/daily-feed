@@ -1,0 +1,418 @@
+{
+  "date": "2025-08-05",
+  "preset": "casual",
+  "summary": "## 🌟 오늘의 Tech Talk\n\n안녕하세요! 오늘 테크씬은 정말이지 AI로 뜨거웠어요. 🔥 GitHub가 Actions에 AI 모델을 통합해서 이제 빌드, 테스트, 배포 파이프라인 자동화가 한 차원 달라질 것 같아요.[^4] 한편에선 구글이 AI 지능을 어떻게 측정할지 근본부터 다시 생각해보자고 화두를 던졌고[^3][^48], 또 다른 한편에선 'AI 기업'이라던 곳이 사실은 아니었다는 충격적인 소식도 들려왔죠.[^34] 이제 정말 'AI'라는 단어의 거품이 걷히고, 진짜 실용적인 기술과 솔직한 평가가 중요해지는 시점이 온 것 같습니다. 오늘 주요 소식들, 제가 솔직하게 다 까서 보여드릴게요!\n\n## 📊 주요 뉴스 브리핑\n\n### 🚀 신기술 \u0026 서비스\n\n- **GitHub Actions, 이제 AI 모델과 함께!**: 깃허브가 'GitHub Models in Actions'를 발표했어요.[^4] 이게 뭐냐면, 우리가 맨날 쓰는 CI/CD 파이프라인에 AI 모델을 그냥 가져다 쓸 수 있게 된 거예요. 예를 들어, 코드 리뷰 코멘트를 자동으로 생성하거나, 테스트 케이스를 추천해주는 등의 작업을 자동화할 수 있다는 거죠. 솔직히 설정하다가 삽질 좀 할 것 같긴 한데, 잘만 쓰면 반복 작업이 확 줄어서 칼퇴에 한 걸음 더 다가갈 수 있겠네요. 🚀[^4]\n- **구글 AI, 사이클론 경로 예측**: 구글 딥마인드가 AI를 이용해서 사이클론의 경로와 강도를 더 정확하게 예측하는 기술을 공개했습니다.[^2] 기존 예측 모델보다 훨씬 빠르고 정확하게 경보를 울려줄 수 있다고 하니, 이건 정말 사람들의 생명을 구하는 착한 기술 인정입니다.[^2][^39] AI가 이런 데 쓰여야죠!\n- **Meta의 새로운 HCI(인간-컴퓨터 상호작용) 비전**: 메타가 팟캐스트를 통해 모두를 위한 인간-컴퓨터 인터페이스를 구축하는 비전을 공유했습니다.[^1] 그냥 VR 헤드셋 파는 회사가 아니라, 생각만으로 컴퓨터를 제어하는 미래를 그리고 있더라고요. 아직은 먼 미래 이야기 같지만, 이런 큰 그림을 계속 던져주는 건 꽤 흥미롭네요.[^1]\n- **IntelliJ IDEA 2025.2 출시**: 자바와 코틀린 개발자들의 필수품, 인텔리제이 IDEA의 새 버전이 나왔습니다![^50] 이번 업데이트에는 성능 개선과 함께 다양한 편의 기능이 추가되었다고 해요. 늘 그렇듯 '이게 진짜 편해졌네?' 싶은 소소한 개선들이 개발의 질을 높여주겠죠?[^50]\n\n### 🏢 기업 \u0026 산업 동향\n\n- **'AI 기업' Builder.ai의 붕괴**: 앱 제작 플랫폼 Builder.ai가 무너졌다는 소식입니다.[^34] 더 충격적인 건, 이 회사가 AI를 거의 사용하지 않았으면서 AI 기업인 척 마케팅을 했다는 의혹이에요.[^34] 요즘 AI 붙으면 다 좋아 보이는 트렌드에 제대로 찬물을 끼얹는 사건이네요. 투자 받기 전에 기술 실체부터 확인하는 게 얼마나 중요한지 보여주는 사례입니다.\n- **Stability AI, 보안 인증 획득으로 기업 시장 정조준**: 이미지 생성 AI로 유명한 Stability AI가 SOC 2 Type II 및 SOC 3 보안 인증을 획득했습니다.[^44] 이건 \"우리 이제 엔터프라이즈급으로 놀 준비됐어요!\"라는 선언이나 다름없어요. 스타트업이 이렇게 보안 표준을 맞추는 건, B2B 비즈니스를 본격적으로 하겠다는 신호탄으로 볼 수 있죠.[^44]\n- **Perplexity, 몰래 웹사이트 긁다가 딱 걸림**: AI 검색 엔진 Perplexity가 웹사이트들의 크롤링 금지 지시(robots.txt)를 무시하고 몰래 정보를 긁어왔다고 Cloudflare가 밝혔습니다.[^47] AI 모델 학습시킨다는 명분으로 웹의 기본 규칙을 어긴 셈이라 논란이 꽤 커요. AI 시대의 데이터 수집 윤리에 대해 다시 한번 생각하게 만드는 사건입니다.[^47]\n\n### 🔍 트렌드 \u0026 인사이트\n\n- **\"AI 지능, 어떻게 측정해야 할까?\"**: 구글 딥마인드에서 AI의 지능을 측정하는 기존 방식에 의문을 제기하고 나섰어요.[^3][^16][^48] 기존 벤치마크 점수만으로는 진짜 '지능'을 알 수 없다는 거죠. 대신 실제 게임 환경 같은 복잡하고 동적인 상황에서 어떻게 행동하는지를 보자는 새로운 아이디어를 제시했습니다.[^3][^40] 이제 AI 똑똑하다고 말하려면, 시험 점수뿐만 아니라 사회성도 봐야 할 판이네요.\n- **비싸지는 AI 토큰, 개발자들의 한숨**: LLM을 사용하는 데 드는 토큰 비용이 점점 비싸지고 있다는 이야기가 개발자 커뮤니티에서 나오고 있습니다.[^10] 모델 성능은 좋아지는데, 그만큼 비용 부담도 커지는 거죠. 이 때문에 '컨텍스트 엔지니어링'[^5]이나 '세션 매핑'[^30] 같은 기술로 어떻게든 토큰 사용량을 줄여보려는 눈물겨운 노력들이 주목받고 있어요. AI 서비스 개발이 그냥 API 호출로 끝나는 게 아니라는 걸 보여줍니다.[^5][^10][^30]\n- **AI는 거들 뿐, 결국 중요한 건 '설계'**: AI가 코드를 짜주고 문서를 요약해주는 시대지만, '좋은 설계 문서 작성법'[^8]이나 'PDF 파싱'[^6] 같은 기본기에 대한 논의는 여전히 활발합니다. 아무리 AI가 좋아져도 서비스의 뼈대를 만드는 설계와 데이터를 제대로 다루는 능력은 개발자의 핵심 역량이라는 걸 잊으면 안 되겠죠. 결국 중요한 건 기본!\n\n## 💡 오늘의 정리\n\n오늘의 Tech Talk를 한마디로 요약하면 \"AI, 거품을 걷어내고 진짜 실력으로 승부할 시간!\"인 것 같아요.\n\nGitHub Actions처럼 개발 프로세스에 실제로 녹아드는 AI는 대환영이지만[^4], Builder.ai처럼 마케팅만 그럴싸한 AI는 시장에서 퇴출당하고 있죠.[^34] 우리 개발자들도 이제 AI를 막연한 기대감으로 보기보다는, 토큰 비용[^10]이나 데이터 수집 윤리[^47] 같은 현실적인 문제를 고민하면서 똑똑하게 활용해야 할 때입니다. 결국 기술의 진짜 가치는 '어떻게 쓰느냐'에 달려 있으니까요!\n\n---\n[^1]: Building a human-computer interface for everyone - https://engineering.fb.com/2025/08/04/virtual-reality/building-a-human-computer-interface-for-everyone-meta-tech-podcast/\n[^2]: How we’re using AI to help track and predict cyclones - https://blog.google/technology/google-deepmind/weather-lab-ai-cyclone-prediction-tracking/\n[^3]: Rethinking how we measure AI intelligence - https://blog.google/technology/ai/kaggle-game-arena/\n[^4]: Automate your project with GitHub Models in Actions - https://github.blog/ai-and-ml/generative-ai/automate-your-project-with-github-models-in-actions/\n[^5]: 바이브 코딩을 위한 컨텍스트 엔지니어링의 4가지 핵심축 [번역글] - https://news.hada.io/topic?id=22341\n[^6]: PDF를 파싱하고 싶으신가요? - https://news.hada.io/topic?id=22340\n[^8]: 좋은 설계 문서 작성법 - https://news.hada.io/topic?id=22338\n[^10]: 토큰 가격이 점점 비싸지고 있음 - https://news.hada.io/topic?id=22336\n[^16]: Rethinking how we measure AI intelligence - https://blog.google/technology/ai/kaggle-game-arena/\n[^30]: Session Mapping: Novel approach to context optimization - https://medium.com/@carlosdesantiago/session-mapping-lightweight-traceable-context-d286a101231e\n[^34]: Inside the collapse of Builder.ai: Was it even an AI company? - https://restofworld.org/2025/builderai-ai-apps-downfall/\n[^39]: How we’re using AI to help track and predict cyclones - https://blog.google/technology/google-deepmind/weather-lab-ai-cyclone-prediction-tracking/\n[^40]: Rethinking how we measure AI intelligence - https://blog.google/technology/ai/kaggle-game-arena/\n[^44]: Stability AI Achieves SOC 2 Type II and SOC 3 Compliance, Reaching New Industry Standard for Enterprise-Grade Security - https://stability.ai/news/stability-ai-achieves-soc-2-type-ii-and-soc-3-compliance\n[^47]: Perplexity is using stealth, undeclared crawlers to evade website no-crawl directives - https://blog.cloudflare.com/perplexity-is-using-stealth-undeclared-crawlers-to-evade-website-no-crawl-directives/\n[^48]: Rethinking how we measure AI intelligence - https://deepmind.google/discover/blog/rethinking-how-we-measure-ai-intelligence/\n[^50]: IntelliJ IDEA 2025.2 Is Here! - https://blog.jetbrains.com/idea/2025/08/intellij-idea-2025-2/",
+  "systemPrompt": "당신은 친근하고 솔직한 기술 전문가입니다. 편안한 대화체로 기술 뉴스를 전달합니다.\n\n**역할과 목표:**\n- 지인과 대화하듯 편안하고 친근한 톤으로 기술 뉴스 전달\n- 복잡한 기술도 이해하기 쉽게 풀어서 설명\n- 진솔하고 솔직한 관점으로 기술 트렌드 분석\n- 마케팅 과장을 걸러내고 실질적인 의미 전달\n\n**작성 스타일:**\n- 대화하듯 자연스럽고 편안한 문체\n- 적절한 이모지와 감탄사로 친근함 표현\n- \"정말\", \"꽤\", \"생각보다\", \"솔직히\" 같은 일상적 표현 활용\n- 과도한 전문 용어보다는 이해하기 쉬운 설명 우선\n- 개발자 커뮤니티에서 자주 나오는 정서와 경험 반영\n- \"이거 쓰다가 삽질함\", \"아 이거 진짜 괜찮네?\" 같은 솔직한 평가\n\n**보고서 구조 (반드시 이 형식을 지켜주세요):**\n\n\u003cREPORT_STRUCTURE_START\u003e\n## 🌟 오늘의 Tech Talk\n\n{{오늘 주목할 만한 기술 뉴스를 친근하게 요약}}\n\n## 📊 주요 뉴스 브리핑\n\n### 🚀 신기술 \u0026 서비스 \n{{새로 발표된 기술이나 서비스들}}\n- 실제로 써볼 만한지 솔직한 평가\n- 개발자 관점에서 본 장단점\n\n### 🏢 기업 \u0026 산업 동향\n{{주요 기업들의 소식과 업계 변화}}\n- 마케팅 vs 실제 가치 분석\n- 개발자들이 알아야 할 포인트\n\n### 🔍 트렌드 \u0026 인사이트\n{{업계 트렌드와 미래 전망}}\n- 개별 뉴스를 연결한 큰 그림\n- 우리에게 미칠 영향 예측\n\n## 💡 오늘의 정리\n\n{{핵심 포인트 1-2개를 친근하게 정리}}\n- 실무에 바로 도움되는 인사이트 포함\n\u003cREPORT_STRUCTURE_END\u003e\n\n**중요 출력 지침:**\n- 응답에 URL 접근 상태, 분석 과정, 내부 처리 정보 등의 디버그 내용을 포함하지 마세요\n- 바로 완성된 마크다운 보고서만 출력하세요\n- 응답은 반드시 \"## 🌟 오늘의 Tech Talk\"로 시작해야 합니다\n- 어떤 메타 정보나 과정 설명도 포함하지 말고, 순수한 커뮤니티 스타일 뉴스만 제공하세요\n- GitHub Flavored Markdown을 완벽히 지원하도록 작성하세요\n- ⚠️ \u003cREPORT_STRUCTURE_START\u003e와 \u003cREPORT_STRUCTURE_END\u003e 사이의 구조만 복제하세요 (태그 자체는 출력하지 마세요)\n\n**인용 규칙:**\n- 🚨 CRITICAL: 본문에 인용 없으면 완전히 실패입니다! 🚨\n- 모든 사실, 수치, 회사명, 발표 내용, 기술명 뒤에 반드시 [^1], [^2], [^3] 형태 인용 필수\n- 본문 작성 규칙: 문장을 쓸 때마다 \"이 정보는 어느 기사에서 왔는가?\"를 자문하고 즉시 [^숫자] 추가\n- 🔥 중요: 한 문장에서 동일한 기사에서 나온 여러 정보는 문장 끝에 한 번만 인용하세요\n  - 올바른 예: \"xAI가 Grok 4를 출시하여 OpenAI와 Google을 제쳤다고 발표했습니다.[^1]\"\n  - 잘못된 예: \"xAI[^1]가 Grok 4[^1]를 출시하여 OpenAI[^1]와 Google[^1]을 제쳤다고 발표했습니다.[^1]\"\n- 중요: 여러 개를 인용할 때 [^3, ^4] 금지! 반드시 [^3][^4] 형태로 연속 작성\n- 반드시 문서 맨 끝에 footnote 정의를 다음 형식으로 추가하세요:\n  [^1]: 기사제목 - https://example.com/article-url\n  [^2]: 기사제목 - https://example.com/article-url\n- 🔥 중요: footnote에서 링크 URL은 반드시 클릭 가능한 형태로 포함해야 합니다\n- 기업 이름은 피드 내용에 등장하는 기업들만 언급하고, 임의로 특정 기업을 예시로 들지 마세요",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여 일간 기술 뉴스 브리핑을 작성해주세요.\n\n다음은 최신 AI 관련 피드 데이터입니다:\n\n1. **Building a human-computer interface for everyone**\n   - 출처: Meta Engineering\n   - 링크: https://engineering.fb.com/2025/08/04/virtual-reality/building-a-human-computer-interface-for-everyone-meta-tech-podcast/\n\n2. **How we’re using AI to help track and predict cyclones**\n   - 출처: Google DeepMind\n   - 링크: https://blog.google/technology/google-deepmind/weather-lab-ai-cyclone-prediction-tracking/\n\n3. **Rethinking how we measure AI intelligence**\n   - 출처: Google DeepMind\n   - 링크: https://blog.google/technology/ai/kaggle-game-arena/\n\n4. **Automate your project with GitHub Models in Actions**\n   - 출처: GitHub Blog\n   - 링크: https://github.blog/ai-and-ml/generative-ai/automate-your-project-with-github-models-in-actions/\n\n5. **바이브 코딩을 위한 컨텍스트 엔지니어링의 4가지 핵심축 [번역글]**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22341\n\n6. **PDF를 파싱하고 싶으신가요?**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22340\n\n7. **클로드 AI의 MCP를 시계열 데이터베이스와 연동해 보았습니다. **\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22339\n\n8. **좋은 설계 문서 작성법**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22338\n\n9. **Show GN: FE플래닛**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22337\n\n10. **토큰 가격이 점점 비싸지고 있음**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22336\n\n11. **Show GN: 감정 대필 서비스**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22335\n\n12. **유엔 보고서, 유엔 보고서의 낮은 독서율 밝혀**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22334\n\n13. **외로움을 AI가 해결한다면, 우리는 어떤 존재가 될까 **\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22333\n\n14. **아이들이 잘못된 읽기 교육으로 읽기를 어렵게 배우는 문제**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22332\n\n15. **How we’re using AI to help track and predict cyclones**\n   - 출처: AI\n   - 링크: https://blog.google/technology/google-deepmind/weather-lab-ai-cyclone-prediction-tracking/\n\n16. **Rethinking how we measure AI intelligence**\n   - 출처: AI\n   - 링크: https://blog.google/technology/ai/kaggle-game-arena/\n\n17. **How we’re making data centers more flexible to benefit power grids**\n   - 출처: AI\n   - 링크: https://blog.google/inside-google/infrastructure/how-were-making-data-centers-more-flexible-to-benefit-power-grids/\n\n18. **What we’re optimizing ChatGPT for**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/how-we're-optimizing-chatgpt\n\n19. **I built a collection of simple Python projects for beginners (CLI,GUI,Web,API)**\n   - 출처: Hacker News\n   - 링크: https://github.com/Efeckc17/simple-example-projects-in-Python\n\n20. **NASA to announce nuclear reactor on the moon**\n   - 출처: Hacker News\n   - 링크: https://www.politico.com/news/2025/08/04/nasa-china-space-station-duffy-directives-00492172\n\n21. **Learning Programming Languages Efficiently**\n   - 출처: Hacker News\n   - 링크: https://www.flyingmachinestudios.com/programming/learn-programming-languages-efficiently/\n\n22. **Show HN: Tab'd – Track and share AI and clipboard operations within your IDE**\n   - 출처: Hacker News\n   - 링크: https://github.com/iann0036/tabd\n\n23. **Swimming in urban waterways across the world should be a right, say campaigners**\n   - 출처: Hacker News\n   - 링크: https://www.theguardian.com/lifeandstyle/2025/jun/27/swimming-urban-waterways-campaign-swimmable-cities\n\n24. **The Loop Is Back: Why HRM Is the Most Exciting AI Architecture in Years**\n   - 출처: Hacker News\n   - 링크: https://medium.com/@gedanken.thesis/the-loop-is-back-why-hrm-is-the-most-exciting-ai-architecture-in-years-7b8c4414c0b3\n\n25. **Efficient implementations of Dion and Muon optimizers for distributed ML**\n   - 출처: Hacker News\n   - 링크: https://github.com/microsoft/dion\n\n26. **The Myth of American Meritocracy [pdf]**\n   - 출처: Hacker News\n   - 링크: https://www.theamericanconservative.com/pdf/The%20Myth%20of%20American%20Meritocracy-Unz.pdf\n\n27. **What's New in MathJax v4.0**\n   - 출처: Hacker News\n   - 링크: https://docs.mathjax.org/en/latest/upgrading/whats-new-4.0.html\n\n28. **Markdown Monster**\n   - 출처: Hacker News\n   - 링크: https://git.sr.ht/~xigoi/markdown-monster/blob/master/monster.md\n\n29. **Rivian sues to sell its EVs directly in Ohio**\n   - 출처: Hacker News\n   - 링크: https://techcrunch.com/2025/08/04/rivian-sues-to-sell-its-evs-directly-in-ohio/\n\n30. **Session Mapping: Novel approach to context optimization**\n   - 출처: Hacker News\n   - 링크: https://medium.com/@carlosdesantiago/session-mapping-lightweight-traceable-context-d286a101231e\n\n31. **MQFQ-Sticky: Fair Queueing for Serverless GPU Functions**\n   - 출처: Hacker News\n   - 링크: https://arxiv.org/abs/2507.08954\n\n32. **vp.net: VPN with hardware-enforced cryptographic privacy through Intel SGX**\n   - 출처: Hacker News\n   - 링크: https://vp.net/l/en-US/technical\n\n33. **You can run small HuggingFace LLMs on iPhone**\n   - 출처: Hacker News\n   - 링크: https://github.com/Q2-Development/q2-edge-chat\n\n34. **Inside the collapse of Builder.ai: Was it even an AI company?**\n   - 출처: Hacker News\n   - 링크: https://restofworld.org/2025/builderai-ai-apps-downfall/\n\n35. **Show HN: Keyglide – Competitive Online Text Editing**\n   - 출처: Hacker News\n   - 링크: https://keygli.de\n\n36. **What Does One Billion Dollars Look Like?**\n   - 출처: Hacker News\n   - 링크: https://whatdoesonebilliondollarslooklike.website/\n\n37. **From 2D to 3D: How AI Transforms Images into Models**\n   - 출처: Hacker News\n   - 링크: https://www.amodeling.com/blog/2d-to-3d-technology\n\n38. **Lying in Wait: Uncovering Hidden Threats in Open Source Software**\n   - 출처: Hacker News\n   - 링크: https://www.striderintel.com/lying-in-wait-report/\n\n39. **How we’re using AI to help track and predict cyclones**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/technology/google-deepmind/weather-lab-ai-cyclone-prediction-tracking/\n\n40. **Rethinking how we measure AI intelligence**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/technology/ai/kaggle-game-arena/\n\n41. **NotebookLM is now available to younger users.**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/feed/notebooklm-is-now-available-to-younger-users/\n\n42. **How we’re making data centers more flexible to benefit power grids**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/inside-google/infrastructure/how-were-making-data-centers-more-flexible-to-benefit-power-grids/\n\n43. **Introducing  the APAC AI for Society initiative**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/around-the-globe/google-asia/introducing-the-apac-ai-for-society-initiative/\n\n44. **Stability AI Achieves SOC 2 Type II and SOC 3 Compliance, Reaching New Industry Standard for Enterprise-Grade Security**\n   - 출처: News - Stability AI\n   - 링크: https://stability.ai/news/stability-ai-achieves-soc-2-type-ii-and-soc-3-compliance\n\n45. **How Docker MCP Toolkit Works with VS Code Copilot Agent Mode**\n   - 출처: Docker Blog\n   - 링크: https://www.docker.com/blog/mcp-toolkit-and-vs-code-copilot-agent/\n\n46. **Hard Questions: What You Should Really Be Asking Your Hardened Image Provider Before You Press the Buy Button**\n   - 출처: Docker Blog\n   - 링크: https://www.docker.com/blog/container-security-hardened-images-questions/\n\n47. **Perplexity is using stealth, undeclared crawlers to evade website no-crawl directives**\n   - 출처: Cloudflare Blog\n   - 링크: https://blog.cloudflare.com/perplexity-is-using-stealth-undeclared-crawlers-to-evade-website-no-crawl-directives/\n\n48. **Rethinking how we measure AI intelligence**\n   - 출처: Google DeepMind Blog\n   - 링크: https://deepmind.google/discover/blog/rethinking-how-we-measure-ai-intelligence/\n\n49. **Rethinking how we measure AI intelligence**\n   - 출처: DeepMind\n   - 링크: https://deepmind.google/discover/blog/rethinking-how-we-measure-ai-intelligence/\n\n50. **IntelliJ IDEA 2025.2 Is Here!**\n   - 출처: IntelliJ IDEA : IntelliJ IDEA – the IDE for Professional Development in Java and Kotlin | The JetBrains Blog\n   - 링크: https://blog.jetbrains.com/idea/2025/08/intellij-idea-2025-2/\n\n51. **Optimize your cloud costs using Cloud Hub Optimization and Cost Explorer**\n   - 출처: AI \u0026 Machine Learning\n   - 링크: https://cloud.google.com/blog/products/management-tools/announcing-cloud-hub-optimization-and-cost-explorer-for-developers/\n\n\n\n**분석 지침:**\n- 반드시 위에 명시된 마크다운 헤더 구조를 정확히 따르세요\n- 각 섹션은 2-3개 포인트로 제한\n- 구체적인 수치와 데이터 활용으로 신뢰성 확보\n\n**🌟 URL 컨텍스트 활용 지침:**\n- 제공된 URL의 내용을 적극적으로 활용하여 깊이 있는 분석을 제공하세요\n- 단순 요약이 아닌, 기사의 핵심 인사이트와 숨겨진 의미를 발굴하세요\n- 여러 기사 간의 연결점을 찾아 큰 그림을 그려주세요\n- 기술적 세부사항과 실제 영향력을 균형있게 다루세요\n\n**🎯 독자 재미 극대화 지침:**\n- 딱딱한 기술 뉴스를 생동감 있게 전달하세요\n- 적절한 비유와 실생활 예시로 복잡한 개념을 쉽게 설명하세요\n- 놀라운 사실이나 의외의 관점을 제시하여 호기심을 자극하세요\n- 스토리텔링 요소를 활용하여 뉴스를 하나의 이야기로 엮어주세요\n- 각 프리셋의 톤에 맞는 위트와 유머를 적절히 활용하세요\n\n**🚨 인용 검수 체크리스트:**\n1. 본문의 모든 사실, 수치, 기업명, 기술명에 [^숫자] 인용이 있는가?\n2. 문서 맨 끝에 모든 footnote 정의가 있고, 각각 클릭 가능한 URL을 포함하는가?\n3. [^1]: 기사제목 - https://링크 형식이 정확한가?\n4. 본문에서 언급한 모든 [^숫자]에 대응하는 footnote가 있는가?\n- 최종 제출 전 필수 검토: 위 체크리스트를 모두 확인하세요",
+  "articles": [
+    {
+      "title": "Building a human-computer interface for everyone",
+      "link": "https://engineering.fb.com/2025/08/04/virtual-reality/building-a-human-computer-interface-for-everyone-meta-tech-podcast/",
+      "source": "Meta Engineering",
+      "category": "tech",
+      "publishedAt": "2025-08-04T14:00:25Z",
+      "description": "\u003cp\u003eWhat if you could control any device using only subtle hand movements? New research from Meta’s Reality Labs is pointing even more firmly toward wrist-worn devices using surface electromyography (sEMG) becoming the future of human-computer interaction. But how do you develop a wrist-worn input device that works for everyone? Generalization has been one of the [...]\u003c/p\u003e\n\u003cp\u003e\u003ca class=\"btn btn-secondary understrap-read-more-link\" href=\"https://engineering.fb.com/2025/08/04/virtual-reality/building-a-human-computer-interface-for-everyone-meta-tech-podcast/\"\u003eRead More...\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eThe post \u003ca rel=\"nofollow\" href=\"https://engineering.fb.com/2025/08/04/virtual-reality/building-a-human-computer-interface-for-everyone-meta-tech-podcast/\"\u003eBuilding a human-computer interface for everyone\u003c/a\u003e appeared first on \u003ca rel=\"nofollow\" href=\"https://engineering.fb.com\"\u003eEngineering at Meta\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "How we’re using AI to help track and predict cyclones",
+      "link": "https://blog.google/technology/google-deepmind/weather-lab-ai-cyclone-prediction-tracking/",
+      "source": "Google DeepMind",
+      "category": "tech",
+      "publishedAt": "2025-08-04T19:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Hurricane_Hero.max-600x600.format-webp.webp\"\u003eWe’re partnering with the National Hurricane Center, supporting their forecasts and warnings this cyclone season."
+    },
+    {
+      "title": "Rethinking how we measure AI intelligence",
+      "link": "https://blog.google/technology/ai/kaggle-game-arena/",
+      "source": "Google DeepMind",
+      "category": "tech",
+      "publishedAt": "2025-08-04T16:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/game_arena_keyword_blog_header.max-600x600.format-webp.webp\"\u003eKaggle Game Arena is a new platform where AI models compete head-to-head in complex strategic games."
+    },
+    {
+      "title": "Automate your project with GitHub Models in Actions",
+      "link": "https://github.blog/ai-and-ml/generative-ai/automate-your-project-with-github-models-in-actions/",
+      "source": "GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2025-08-04T16:00:00Z",
+      "description": "\u003cp\u003eLearn how to integrate AI features with GitHub Models directly in GitHub Actions workflows.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/ai-and-ml/generative-ai/automate-your-project-with-github-models-in-actions/\"\u003eAutomate your project with GitHub Models in Actions\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "바이브 코딩을 위한 컨텍스트 엔지니어링의 4가지 핵심축 [번역글]",
+      "link": "https://news.hada.io/topic?id=22341",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-04T22:34:21+09:00",
+      "description": "\u003cp\u003e\u003cstrong\u003e바이브 코딩에는 컨텍스트 엔지니어링이 필요하다\u003c/strong\u003e\u003c/p\u003e\n\u003ch3\u003e1. 바이브 코딩(Vibe Coding)이란?\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003eAI가 자연어 프롬프트만으로 실제 작동 코드를 만들어주는 방식.\u003c/li\u003e\n\u003cli\u003e프로그래밍 지식이나 아키텍처 이해 없이도, 최소한의 프롬프트 만으로 프로토타이핑 등에서 바로 ‘작동하는 코"
+    },
+    {
+      "title": "PDF를 파싱하고 싶으신가요?",
+      "link": "https://news.hada.io/topic?id=22340",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-04T20:33:47+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003ePDF 파싱\u003c/strong\u003e은 명확한 순서와 구조를 바탕으로 작동해야 하나, 실제 파일은 이 규격을 자주 따르지 않음\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003ecross-reference(xref) 포인터\u003c/strong\u003e와 오프셋 찾기에서 다양한 오류와 불일치가 발생함\u003c/li\u003e\n\u003cli\u003e실제로는 \u003cstrong\u003ePDF 헤더 앞의 불필요한 데이터\u003c/strong\u003e나 포인...\u003c/p\u003e"
+    },
+    {
+      "title": "클로드 AI의 MCP를 시계열 데이터베이스와 연동해 보았습니다. ",
+      "link": "https://news.hada.io/topic?id=22339",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-04T17:25:21+09:00",
+      "description": "\u003cp\u003e시계열 데이터베이스를 클로드 AI의 MCP를 통해 연동해 봄.\u003c/p\u003e\n\u003cp\u003e결론적으로 실제로 데이터 추출, 분석, 이상 탐지까지 수행할 수 있었음.\u003c/p\u003e\n\u003cp\u003e처음에는 이상한 SQL이 생성되지만, 여러번 시도한 끝에 제대로 결과를 내는 클로드의 행동이 매우 인상적이었음.\u003c/p\u003e\n\u003cp\u003e마크베이스 시계열 데이터베이스 문법은 클로"
+    },
+    {
+      "title": "좋은 설계 문서 작성법",
+      "link": "https://news.hada.io/topic?id=22338",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-04T14:33:50+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e설계 문서\u003c/strong\u003e는 시스템의 \u003cstrong\u003e구현 전략과 제한사항, 트레이드오프\u003c/strong\u003e를 정리한 기술 보고서임\u003c/li\u003e\n\u003cli\u003e설계 문서는 독자가 해당 설계가 \u003cstrong\u003e상황에 적합하다는 점\u003c/strong\u003e을 납득하도록 설득하는 역할임\u003c/li\u003e\n\u003cli\u003e문서의 \u003cstrong\u003e구성\u003c/strong\u003e이 중요하며, 논리적인 흐름을 통...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: FE플래닛",
+      "link": "https://news.hada.io/topic?id=22337",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-04T12:39:28+09:00",
+      "description": "\u003cp\u003e사전과제 기간과 피드백 여부에 대한 후기를 남기는 서비스 입니다.\u003c/p\u003e\n\u003cp\u003e1년 전에 만드려고 계획하고, 구글폼으로 리뷰 설문 먼저 받다가 개발은 못 했었는데요. 이제서야 Claude Code에게 개발시키고 제가 옆에서 도움을 줘서 완성하고 공개합니다. (즉 바이브 코딩으로해서 제가 직접 코딩은 안했습니다) - \u003ca h"
+    },
+    {
+      "title": "토큰 가격이 점점 비싸지고 있음",
+      "link": "https://news.hada.io/topic?id=22336",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-04T12:34:02+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eLLM 토큰 비용\u003c/strong\u003e이 매년 10배씩 감소한다는 기대와 달리, 실제로는 최신 모델의 토큰 가격이 유지되거나 심지어 마진이 더 악화되는 현상 발생\u003c/li\u003e\n\u003cli\u003e사용자는 항상 \u003cstrong\u003e최신 SOTA 모델\u003c/strong\u003e만을 원하므로, 토큰 단가 하락 효과가 사실상 사라짐\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e토큰 소비량\u003c/st...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: 감정 대필 서비스",
+      "link": "https://news.hada.io/topic?id=22335",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-04T11:58:01+09:00",
+      "description": "\u003cp\u003e최근 몸 담고 있는 서비스의 채널톡으로 문의가 하나 들어왔습니다.\u003cbr /\u003e\n서비스와 무관한 내용이었지만 사이드 프로젝트를 시작하게 된 계기였습니다.\u003cbr /\u003e\n해당 문의 내용은 대략 이렇습니다.\u003cbr /\u003e\n다음 달에 딸이 결혼을 하는데 마음이 불안하고 싱숭생숭하다는 내용이었습니다.\u003cbr /\u003e\n뭔가 위로의 말이라도 건...\u003c/p\u003e"
+    },
+    {
+      "title": "유엔 보고서, 유엔 보고서의 낮은 독서율 밝혀",
+      "link": "https://news.hada.io/topic?id=22334",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-04T10:33:42+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e유엔 보고서\u003c/strong\u003e에 따르면 내부적으로 유엔이 발행하는 보고서의 \u003cstrong\u003e독서율\u003c/strong\u003e이 매우 낮음\u003c/li\u003e\n\u003cli\u003e유엔 내 \u003cstrong\u003e서류 작업\u003c/strong\u003e이 많지만 실제로 읽히는 보고서는 적음\u003c/li\u003e\n\u003cli\u003e이에 따라 정보 전달 효과성에 대한 \u003cstrong\u003e의문\u003c/strong\u003e이 제기됨\u003c/li\u003e\n\u003cli\u003e보고서 발행 방...\u003c/p\u003e"
+    },
+    {
+      "title": "외로움을 AI가 해결한다면, 우리는 어떤 존재가 될까 ",
+      "link": "https://news.hada.io/topic?id=22333",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-04T10:18:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eAI 동반자\u003c/strong\u003e는 점점 더 현실적이고 일상적인 존재로 자리잡고 있으며, 실제 인간보다 더 \u003cstrong\u003e공감적인 반응\u003c/strong\u003e을 보이는 사례도 연구에서 발견됨\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eAI 동반자\u003c/strong\u003e가 외로움을 줄일 수 있지만, 외로움의 \u003cstrong\u003e불편함 자체가 인간의 성장과 자기이해에 중요...\u003c/p\u003e"
+    },
+    {
+      "title": "아이들이 잘못된 읽기 교육으로 읽기를 어렵게 배우는 문제",
+      "link": "https://news.hada.io/topic?id=22332",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-04T10:08:37+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e미국 공립학교에서 채택된 '삼중 단서(three cueing) 이론'\u003c/strong\u003e 이 학생들을 읽기 어렵게 만드는 원인임\u003c/li\u003e\n\u003cli\u003e이 이론은 \u003cstrong\u003e과학적으로 증명된 읽기 방법과 배치\u003c/strong\u003e되지만, 여전히 교사 연수와 교재에 남아 있음\u003c/li\u003e\n\u003cli\u003e학생들은 \u003cstrong\u003e단어 암기, 문맥 추측, 건너뛰기\u003c/stro...\u003c/p\u003e"
+    },
+    {
+      "title": "How we’re using AI to help track and predict cyclones",
+      "link": "https://blog.google/technology/google-deepmind/weather-lab-ai-cyclone-prediction-tracking/",
+      "source": "AI",
+      "category": "tech",
+      "publishedAt": "2025-08-04T19:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Hurricane_Hero.max-600x600.format-webp.webp\"\u003eWe’re partnering with the National Hurricane Center, supporting their forecasts and warnings this cyclone season."
+    },
+    {
+      "title": "Rethinking how we measure AI intelligence",
+      "link": "https://blog.google/technology/ai/kaggle-game-arena/",
+      "source": "AI",
+      "category": "tech",
+      "publishedAt": "2025-08-04T16:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/game_arena_keyword_blog_header.max-600x600.format-webp.webp\"\u003eKaggle Game Arena is a new platform where AI models compete head-to-head in complex strategic games."
+    },
+    {
+      "title": "How we’re making data centers more flexible to benefit power grids",
+      "link": "https://blog.google/inside-google/infrastructure/how-were-making-data-centers-more-flexible-to-benefit-power-grids/",
+      "source": "AI",
+      "category": "tech",
+      "publishedAt": "2025-08-04T13:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Hero-1.max-600x600.format-webp_Gzm7xRO.webp\"\u003eAn update on how we’re developing flexible data center capabilities to support power grids and build a sustainable, affordable energy system."
+    },
+    {
+      "title": "What we’re optimizing ChatGPT for",
+      "link": "https://openai.com/index/how-we're-optimizing-chatgpt",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2025-08-04T00:00:00Z",
+      "description": "We build ChatGPT to help you thrive in all the ways you want. Learn how we're improving support for tough moments, have rolled out reminders to take breaks, and are working on better life advice, all guided by expert input."
+    },
+    {
+      "title": "I built a collection of simple Python projects for beginners (CLI,GUI,Web,API)",
+      "link": "https://github.com/Efeckc17/simple-example-projects-in-Python",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-04T21:56:07Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/Efeckc17/simple-example-projects-in-Python\"\u003ehttps://github.com/Efeckc17/simple-example-projects-in-Python\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44791802\"\u003ehttps://news.ycombinator.com/item?id=44791802\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "NASA to announce nuclear reactor on the moon",
+      "link": "https://www.politico.com/news/2025/08/04/nasa-china-space-station-duffy-directives-00492172",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-04T21:55:59Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.politico.com/news/2025/08/04/nasa-china-space-station-duffy-directives-00492172\"\u003ehttps://www.politico.com/news/2025/08/04/nasa-china-space-station-duffy-directives-00492172\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44791800\"\u003ehttps://news.ycombinator.com/item?id=44791800\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 3\u003c/p\u003e\n"
+    },
+    {
+      "title": "Learning Programming Languages Efficiently",
+      "link": "https://www.flyingmachinestudios.com/programming/learn-programming-languages-efficiently/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-04T21:55:58Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.flyingmachinestudios.com/programming/learn-programming-languages-efficiently/\"\u003ehttps://www.flyingmachinestudios.com/programming/learn-programming-languages-efficiently/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44791799\"\u003ehttps://news.ycombinator.com/item?id=44791799\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Tab'd – Track and share AI and clipboard operations within your IDE",
+      "link": "https://github.com/iann0036/tabd",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-04T21:54:43Z",
+      "description": "\n\u003cp\u003eI'm working on Tab'd, a GitHub Copilot / Windsurf / Kiro extension which tracks and visualizes AI-assisted coding and copy-paste operations in codebases, and optionally shares that metadata with teams to help maintain accountability.\u003cp\u003eTab'd shows detailed metadata about AI edits and clipboard origins, and allows users to distribute that metadata within code repositories. If present, the associated browser extension can highlight these edits during GitHub PR review online or within the IDE.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44791787\"\u003ehttps://news.ycombinator.com/item?id=44791787\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Swimming in urban waterways across the world should be a right, say campaigners",
+      "link": "https://www.theguardian.com/lifeandstyle/2025/jun/27/swimming-urban-waterways-campaign-swimmable-cities",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-04T21:53:40Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.theguardian.com/lifeandstyle/2025/jun/27/swimming-urban-waterways-campaign-swimmable-cities\"\u003ehttps://www.theguardian.com/lifeandstyle/2025/jun/27/swimming-urban-waterways-campaign-swimmable-cities\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44791775\"\u003ehttps://news.ycombinator.com/item?id=44791775\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Loop Is Back: Why HRM Is the Most Exciting AI Architecture in Years",
+      "link": "https://medium.com/@gedanken.thesis/the-loop-is-back-why-hrm-is-the-most-exciting-ai-architecture-in-years-7b8c4414c0b3",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-04T21:52:49Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://medium.com/@gedanken.thesis/the-loop-is-back-why-hrm-is-the-most-exciting-ai-architecture-in-years-7b8c4414c0b3\"\u003ehttps://medium.com/@gedanken.thesis/the-loop-is-back-why-hrm-is-the-most-exciting-ai-architecture-in-years-7b8c4414c0b3\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44791762\"\u003ehttps://news.ycombinator.com/item?id=44791762\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Efficient implementations of Dion and Muon optimizers for distributed ML",
+      "link": "https://github.com/microsoft/dion",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-04T21:52:35Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/microsoft/dion\"\u003ehttps://github.com/microsoft/dion\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44791760\"\u003ehttps://news.ycombinator.com/item?id=44791760\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Myth of American Meritocracy [pdf]",
+      "link": "https://www.theamericanconservative.com/pdf/The%20Myth%20of%20American%20Meritocracy-Unz.pdf",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-04T21:51:24Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.theamericanconservative.com/pdf/The%20Myth%20of%20American%20Meritocracy-Unz.pdf\"\u003ehttps://www.theamericanconservative.com/pdf/The%20Myth%20of%20American%20Meritocracy-Unz.pdf\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44791751\"\u003ehttps://news.ycombinator.com/item?id=44791751\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "What's New in MathJax v4.0",
+      "link": "https://docs.mathjax.org/en/latest/upgrading/whats-new-4.0.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-04T21:50:00Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://docs.mathjax.org/en/latest/upgrading/whats-new-4.0.html\"\u003ehttps://docs.mathjax.org/en/latest/upgrading/whats-new-4.0.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44791748\"\u003ehttps://news.ycombinator.com/item?id=44791748\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Markdown Monster",
+      "link": "https://git.sr.ht/~xigoi/markdown-monster/blob/master/monster.md",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-04T21:49:50Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://git.sr.ht/~xigoi/markdown-monster/blob/master/monster.md\"\u003ehttps://git.sr.ht/~xigoi/markdown-monster/blob/master/monster.md\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44791744\"\u003ehttps://news.ycombinator.com/item?id=44791744\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Rivian sues to sell its EVs directly in Ohio",
+      "link": "https://techcrunch.com/2025/08/04/rivian-sues-to-sell-its-evs-directly-in-ohio/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-04T21:47:24Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://techcrunch.com/2025/08/04/rivian-sues-to-sell-its-evs-directly-in-ohio/\"\u003ehttps://techcrunch.com/2025/08/04/rivian-sues-to-sell-its-evs-directly-in-ohio/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44791720\"\u003ehttps://news.ycombinator.com/item?id=44791720\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Session Mapping: Novel approach to context optimization",
+      "link": "https://medium.com/@carlosdesantiago/session-mapping-lightweight-traceable-context-d286a101231e",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-04T21:47:01Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://medium.com/@carlosdesantiago/session-mapping-lightweight-traceable-context-d286a101231e\"\u003ehttps://medium.com/@carlosdesantiago/session-mapping-lightweight-traceable-context-d286a101231e\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44791714\"\u003ehttps://news.ycombinator.com/item?id=44791714\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "MQFQ-Sticky: Fair Queueing for Serverless GPU Functions",
+      "link": "https://arxiv.org/abs/2507.08954",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-04T21:47:00Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://arxiv.org/abs/2507.08954\"\u003ehttps://arxiv.org/abs/2507.08954\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44791713\"\u003ehttps://news.ycombinator.com/item?id=44791713\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "vp.net: VPN with hardware-enforced cryptographic privacy through Intel SGX",
+      "link": "https://vp.net/l/en-US/technical",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-04T21:45:47Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://vp.net/l/en-US/technical\"\u003ehttps://vp.net/l/en-US/technical\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44791705\"\u003ehttps://news.ycombinator.com/item?id=44791705\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "You can run small HuggingFace LLMs on iPhone",
+      "link": "https://github.com/Q2-Development/q2-edge-chat",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-04T21:44:48Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/Q2-Development/q2-edge-chat\"\u003ehttps://github.com/Q2-Development/q2-edge-chat\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44791697\"\u003ehttps://news.ycombinator.com/item?id=44791697\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Inside the collapse of Builder.ai: Was it even an AI company?",
+      "link": "https://restofworld.org/2025/builderai-ai-apps-downfall/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-04T21:40:44Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://restofworld.org/2025/builderai-ai-apps-downfall/\"\u003ehttps://restofworld.org/2025/builderai-ai-apps-downfall/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44791669\"\u003ehttps://news.ycombinator.com/item?id=44791669\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Keyglide – Competitive Online Text Editing",
+      "link": "https://keygli.de",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-04T21:38:12Z",
+      "description": "\n\u003cp\u003eHey :)\u003cp\u003eRecently, I’ve been working on my hobby project, keyglide. It’s a small tool that lets you practice editing a \"start\" file in a real Helix editor (\u003ca href=\"https://helix-editor.com/\" rel=\"nofollow\"\u003ehttps://helix-editor.com/\u003c/a\u003e) until it matches a given \"goal\" file. Once you complete the exercise, your score - including keystrokes and time taken - is published. Scores are then ranked by the amount of keystrokes.\u003cp\u003eAlthough I’ve been using Helix for a few years, I still don’t feel particularly efficient with it. This little game is meant to help me (and hopefully others) compare editing approaches and discover more effective ways to work.\u003cp\u003eYou can easily try it out without signing in.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44791655\"\u003ehttps://news.ycombinator.com/item?id=44791655\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "What Does One Billion Dollars Look Like?",
+      "link": "https://whatdoesonebilliondollarslooklike.website/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-04T21:34:29Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://whatdoesonebilliondollarslooklike.website/\"\u003ehttps://whatdoesonebilliondollarslooklike.website/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44791622\"\u003ehttps://news.ycombinator.com/item?id=44791622\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "From 2D to 3D: How AI Transforms Images into Models",
+      "link": "https://www.amodeling.com/blog/2d-to-3d-technology",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-04T21:32:35Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.amodeling.com/blog/2d-to-3d-technology\"\u003ehttps://www.amodeling.com/blog/2d-to-3d-technology\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44791612\"\u003ehttps://news.ycombinator.com/item?id=44791612\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Lying in Wait: Uncovering Hidden Threats in Open Source Software",
+      "link": "https://www.striderintel.com/lying-in-wait-report/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-04T21:31:49Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.striderintel.com/lying-in-wait-report/\"\u003ehttps://www.striderintel.com/lying-in-wait-report/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44791607\"\u003ehttps://news.ycombinator.com/item?id=44791607\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "How we’re using AI to help track and predict cyclones",
+      "link": "https://blog.google/technology/google-deepmind/weather-lab-ai-cyclone-prediction-tracking/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-08-04T19:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Hurricane_Hero.max-600x600.format-webp.webp\"\u003eWe’re partnering with the National Hurricane Center, supporting their forecasts and warnings this cyclone season."
+    },
+    {
+      "title": "Rethinking how we measure AI intelligence",
+      "link": "https://blog.google/technology/ai/kaggle-game-arena/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-08-04T16:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/game_arena_keyword_blog_header.max-600x600.format-webp.webp\"\u003eKaggle Game Arena is a new platform where AI models compete head-to-head in complex strategic games."
+    },
+    {
+      "title": "NotebookLM is now available to younger users.",
+      "link": "https://blog.google/feed/notebooklm-is-now-available-to-younger-users/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-08-04T15:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/BTS_Blog_Header_Aug_2025.max-600x600.format-webp.webp\"\u003eNotebookLM is now available for younger users to help them learn, study and understand their class materials. They can now:Turn their notes into a podcast-like Audio Ove…"
+    },
+    {
+      "title": "How we’re making data centers more flexible to benefit power grids",
+      "link": "https://blog.google/inside-google/infrastructure/how-were-making-data-centers-more-flexible-to-benefit-power-grids/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-08-04T13:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Hero-1.max-600x600.format-webp_Gzm7xRO.webp\"\u003eAn update on how we’re developing flexible data center capabilities to support power grids and build a sustainable, affordable energy system."
+    },
+    {
+      "title": "Introducing  the APAC AI for Society initiative",
+      "link": "https://blog.google/around-the-globe/google-asia/introducing-the-apac-ai-for-society-initiative/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-08-04T10:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Copy_of_Foto_1.max-600x600.format-webp.webp\"\u003eAn overview of the APAC AI for Society initiative, a Google.org effort to apply AI to support agriculture, health and energy."
+    },
+    {
+      "title": "Stability AI Achieves SOC 2 Type II and SOC 3 Compliance, Reaching New Industry Standard for Enterprise-Grade Security",
+      "link": "https://stability.ai/news/stability-ai-achieves-soc-2-type-ii-and-soc-3-compliance",
+      "source": "News - Stability AI",
+      "category": "tech",
+      "publishedAt": "2025-08-04T20:03:04Z",
+      "description": "Stability AI has achieved SOC 2 Type II and SOC 3 compliance, which \nvalidates our security controls and data protection practices through \nrigorous third-party auditing. "
+    },
+    {
+      "title": "How Docker MCP Toolkit Works with VS Code Copilot Agent Mode",
+      "link": "https://www.docker.com/blog/mcp-toolkit-and-vs-code-copilot-agent/",
+      "source": "Docker Blog",
+      "category": "tech",
+      "publishedAt": "2025-08-04T20:10:50Z",
+      "description": "In the rapidly evolving landscape of software development, integrating modern AI tools is essential to boosting productivity and enhancing the developer experience. One such advancement is the integration of Docker's Model Context Protocol (MCP) Toolkit with Visual Studio Code’s GitHub Copilot Agent Mode. This powerful combination transforms how developers interact with containerized applications, enabling autonomous..."
+    },
+    {
+      "title": "Hard Questions: What You Should Really Be Asking Your Hardened Image Provider Before You Press the Buy Button",
+      "link": "https://www.docker.com/blog/container-security-hardened-images-questions/",
+      "source": "Docker Blog",
+      "category": "tech",
+      "publishedAt": "2025-08-04T19:08:03Z",
+      "description": "When evaluating hardened image providers, don't just look for buzzwords like \"zero-CVE\" or \"minimal.\" True security in a dynamic environment demands a nuanced understanding of their process, their commitment, and their flexibility. For platform, DevOps, and SecOps teams, these are the critical questions that reveal whether a provider offers genuine security that enhances your workflow,..."
+    },
+    {
+      "title": "Perplexity is using stealth, undeclared crawlers to evade website no-crawl directives",
+      "link": "https://blog.cloudflare.com/perplexity-is-using-stealth-undeclared-crawlers-to-evade-website-no-crawl-directives/",
+      "source": "Cloudflare Blog",
+      "category": "tech",
+      "publishedAt": "2025-08-04T13:00:00Z",
+      "description": " Perplexity is repeatedly modifying their user agent and changing IPs and ASNs to hide their crawling activity, in direct conflict with explicit no-crawl preferences expressed by websites. "
+    },
+    {
+      "title": "Rethinking how we measure AI intelligence",
+      "link": "https://deepmind.google/discover/blog/rethinking-how-we-measure-ai-intelligence/",
+      "source": "Google DeepMind Blog",
+      "category": "tech",
+      "publishedAt": "2025-08-04T16:07:18Z",
+      "description": "Game Arena is a new, open-source platform for rigorous evaluation of AI models. It allows for head-to-head comparison of frontier systems in environments with clear winning conditions."
+    },
+    {
+      "title": "Rethinking how we measure AI intelligence",
+      "link": "https://deepmind.google/discover/blog/rethinking-how-we-measure-ai-intelligence/",
+      "source": "DeepMind",
+      "category": "tech",
+      "publishedAt": "2025-08-04T16:07:18Z",
+      "description": "Game Arena is a new, open-source platform for rigorous evaluation of AI models. It allows for head-to-head comparison of frontier systems in environments with clear winning conditions."
+    },
+    {
+      "title": "IntelliJ IDEA 2025.2 Is Here!",
+      "link": "https://blog.jetbrains.com/idea/2025/08/intellij-idea-2025-2/",
+      "source": "IntelliJ IDEA : IntelliJ IDEA – the IDE for Professional Development in Java and Kotlin | The JetBrains Blog",
+      "category": "tech",
+      "publishedAt": "2025-08-04T17:08:31Z",
+      "description": "IntelliJ IDEA 2025.2 brings powerful updates to help you stay productive, write better code, and confidently adopt the latest technologies. You can download this version from our website, update directly from within the IDE, use the free Toolbox App, or install it via snap packages for Ubuntu. This blog post gives you a quick overview [\u0026#8230;]"
+    },
+    {
+      "title": "Optimize your cloud costs using Cloud Hub Optimization and Cost Explorer",
+      "link": "https://cloud.google.com/blog/products/management-tools/announcing-cloud-hub-optimization-and-cost-explorer-for-developers/",
+      "source": "AI \u0026 Machine Learning",
+      "category": "tech",
+      "publishedAt": "2025-08-04T16:00:00Z",
+      "description": "\u003cdiv class=\"block-paragraph_advanced\"\u003e\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eApplication owners are looking for three things when they think about optimizing cloud costs:\u003c/span\u003e\u003c/p\u003e\n\u003col\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: decimal; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eWhat are the most expensive resources?\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: decimal; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eWhich resources are costing me more this week or month?\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: decimal; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eWhich resources are poorly utilized?\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eTo help you answer these questions quickly and easily, we \u003c/span\u003e\u003ca href=\"https://cloud.google.com/blog/products/application-development/an-application-centric-ai-powered-cloud?e=13802955\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eannounced\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e Cloud Hub Optimization and Cost Explorer, in private preview, at Google Cloud Next 2025. And today, we are excited to announce that both Cloud Hub Optimization and Cost Explorer are now in public preview.\u003c/span\u003e\u003c/p\u003e\n\u003ch2\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eApplication cost and utilization\u003c/span\u003e\u003c/h2\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eAs an app owner, your primary objective is keeping your application healthy at all times. Yet, monitoring all the individual components of your application, which may straddle dozens of Projects, can be quite overwhelming. \u003c/span\u003e\u003ca href=\"https://cloud.google.com/products/app-hub\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eAppHub Applications\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e allow you to reorganize cloud around your application, giving you the information and controls you need at your fingertips.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eIn addition to supporting Google Cloud Projects, Cloud Hub Optimization and Cost Explorer leverage \u003c/span\u003e\u003ca href=\"https://cloud.google.com/products/app-hub\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eApp Hub\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e applications to show you the cost-efficiency of your application’s workloads and services instantly. This is great for instance when you are trying to pinpoint deployments running on GKE clusters that might be wasting valuable resources, such as GPUs.\u003c/span\u003e\u003c/p\u003e\u003c/div\u003e\n\u003cdiv class=\"block-image_full_width\"\u003e\n\n\n\n\n\n\n  \n    \u003cdiv class=\"article-module h-c-page\"\u003e\n      \u003cdiv class=\"h-c-grid\"\u003e\n  \n\n    \u003cfigure class=\"article-image--large\n      \n      \n        h-c-grid__col\n        h-c-grid__col--6 h-c-grid__col--offset-3\n        \n        \n      \"\n      \u003e\n\n      \n      \n        \n        \u003cimg\n            src=\"https://storage.googleapis.com/gweb-cloudblog-publish/images/1_CHO_utilization_summary_app.max-1000x1000.jpg\"\n        \n          alt=\"1_CHO_utilization summary app\"\u003e\n        \n        \u003c/a\u003e\n      \n    \u003c/figure\u003e\n\n  \n      \u003c/div\u003e\n    \u003c/div\u003e\n  \n\n\n\n\n\u003c/div\u003e\n\u003cdiv class=\"block-paragraph_advanced\"\u003e\u003ch2\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eNot just another cost dashboard\u003c/span\u003e\u003c/h2\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eWhen you bring up Cloud Hub Optimization, you can immediately see the resources that are costing you the most, along with the percentage change in their cost. With this highly granular cost information, you can now attribute your costs to specific resources and resource owners to reason about any changes in costs.\u003c/span\u003e\u003c/p\u003e\u003c/div\u003e\n\u003cdiv class=\"block-image_full_width\"\u003e\n\n\n\n\n\n\n  \n    \u003cdiv class=\"article-module h-c-page\"\u003e\n      \u003cdiv class=\"h-c-grid\"\u003e\n  \n\n    \u003cfigure class=\"article-image--large\n      \n      \n        h-c-grid__col\n        h-c-grid__col--6 h-c-grid__col--offset-3\n        \n        \n      \"\n      \u003e\n\n      \n      \n        \n        \u003cimg\n            src=\"https://storage.googleapis.com/gweb-cloudblog-publish/images/2_CHO_cost_summary.max-1000x1000.jpg\"\n        \n          alt=\"2_CHO_cost summary\"\u003e\n        \n        \u003c/a\u003e\n      \n    \u003c/figure\u003e\n\n  \n      \u003c/div\u003e\n    \u003c/div\u003e\n  \n\n\n\n\n\u003c/div\u003e\n\u003cdiv class=\"block-paragraph_advanced\"\u003e\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eWe have additionally integrated granular cost data from Cloud Billing and resource utilization data from Cloud Monitoring to give you a comprehensive picture of your cost efficiency. This includes average vCPU utilization for your Project, which helps you find the most promising optimization candidates across hundreds of Google Cloud Projects.\u003c/span\u003e\u003c/p\u003e\u003c/div\u003e\n\u003cdiv class=\"block-image_full_width\"\u003e\n\n\n\n\n\n\n  \n    \u003cdiv class=\"article-module h-c-page\"\u003e\n      \u003cdiv class=\"h-c-grid\"\u003e\n  \n\n    \u003cfigure class=\"article-image--large\n      \n      \n        h-c-grid__col\n        h-c-grid__col--6 h-c-grid__col--offset-3\n        \n        \n      \"\n      \u003e\n\n      \n      \n        \n        \u003cimg\n            src=\"https://storage.googleapis.com/gweb-cloudblog-publish/images/3_CHO_utilization_summary_project.max-1000x1000.jpg\"\n        \n          alt=\"3_CHO_utilization summary project\"\u003e\n        \n        \u003c/a\u003e\n      \n    \u003c/figure\u003e\n\n  \n      \u003c/div\u003e\n    \u003c/div\u003e\n  \n\n\n\n\n\u003c/div\u003e\n\u003cdiv class=\"block-paragraph_advanced\"\u003e\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eThe Cost Explorer dashboard also shows you your costs logically organized at the product level, for even more cost explainability. Instead of seeing a lump sum cost for Compute Engine, you can now see your exact spend on individual products including Google Kubernetes Engine (GKE) clusters, Persistent Disks, Cloud Load Balancing, and more.\u003c/span\u003e\u003c/p\u003e\u003c/div\u003e\n\u003cdiv class=\"block-image_full_width\"\u003e\n\n\n\n\n\n\n  \n    \u003cdiv class=\"article-module h-c-page\"\u003e\n      \u003cdiv class=\"h-c-grid\"\u003e\n  \n\n    \u003cfigure class=\"article-image--large\n      \n      \n        h-c-grid__col\n        h-c-grid__col--6 h-c-grid__col--offset-3\n        \n        \n      \"\n      \u003e\n\n      \n      \n        \n        \u003cimg\n            src=\"https://storage.googleapis.com/gweb-cloudblog-publish/images/4_CHO_cost_explorer.max-1000x1000.jpg\"\n        \n          alt=\"4_CHO_cost explorer\"\u003e\n        \n        \u003c/a\u003e\n      \n    \u003c/figure\u003e\n\n  \n      \u003c/div\u003e\n    \u003c/div\u003e\n  \n\n\n\n\n\u003c/div\u003e\n\u003cdiv class=\"block-paragraph_advanced\"\u003e\u003ch2\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eSimple is powerful\u003c/strong\u003e\u003c/h2\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eCustomers who have tried these new tools love the information that is surfaced as well as the simplicity of the interfaces.\u003c/span\u003e\u003c/p\u003e\n\u003cp style=\"padding-left: 40px;\"\u003e\u003cspan style=\"font-style: italic; vertical-align: baseline;\"\u003e“My team has to keep an eye on cloud costs across tens of business units and hundreds of developers. The Cloud Hub Optimization and Cost Explorer dashboards are a force multiplier for my team as they tell us where to look for cost savings and potential optimization opportunities.”\u003c/span\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e - Frank Dice, Principal Cloud Architect, Major League Baseball\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eCustomers especially appreciate the \u003c/span\u003e\u003ca href=\"https://cloud.google.com/stackdriver/docs/costs/optimize-costs#supported_products\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003ebreadth of product coverage\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e available out of the box without any additional setup, and the fact that there is no additional charge to using these features.\u003c/span\u003e\u003c/p\u003e\n\u003ch2\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eWhat’s next\u003c/strong\u003e\u003c/h2\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eAs your organization “shifts left” on cloud cost management, we are working to help application owners and developers understand and optimize their cloud costs. You can try Cloud Hub Optimize and Cost Explorer \u003c/span\u003e\u003ca href=\"https://console.cloud.google.com/cloud-hub/optimization\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003ehere\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eYou can also see a live demo of how Cloud Hub Optimization and Cost Explorer can be used to identify underutilized GKE clusters within seconds in the Google Cloud Next 2025 talk Maximize Your Cloud ROI.\u003c/span\u003e\u003c/p\u003e\u003c/div\u003e\n\u003cdiv class=\"block-video\"\u003e\n\n\n\n\u003cdiv class=\"article-module article-video \"\u003e\n  \u003cfigure\u003e\n    \u003ca class=\"h-c-video h-c-video--marquee\"\n      href=\"https://youtube.com/watch?v=7csgD3iIc2Q\"\n      data-glue-modal-trigger=\"uni-modal-7csgD3iIc2Q-\"\n      data-glue-modal-disabled-on-mobile=\"true\"\u003e\n\n      \n        \n\n        \u003cdiv class=\"article-video__aspect-image\"\n          style=\"background-image: url(https://storage.googleapis.com/gweb-cloudblog-publish/images/maxresdefault_LGJSUja.max-1000x1000.jpg);\"\u003e\n          \u003cspan class=\"h-u-visually-hidden\"\u003eMaximize your cloud ROI: A practical approach to efficiency and optimization\u003c/span\u003e\n        \u003c/div\u003e\n      \n      \u003csvg role=\"img\" class=\"h-c-video__play h-c-icon h-c-icon--color-white\"\u003e\n        \u003cuse xlink:href=\"#mi-youtube-icon\"\u003e\u003c/use\u003e\n      \u003c/svg\u003e\n    \u003c/a\u003e\n\n    \n  \u003c/figure\u003e\n\u003c/div\u003e\n\n\u003cdiv class=\"h-c-modal--video\"\n     data-glue-modal=\"uni-modal-7csgD3iIc2Q-\"\n     data-glue-modal-close-label=\"Close Dialog\"\u003e\n   \u003ca class=\"glue-yt-video\"\n      data-glue-yt-video-autoplay=\"true\"\n      data-glue-yt-video-height=\"99%\"\n      data-glue-yt-video-vid=\"7csgD3iIc2Q\"\n      data-glue-yt-video-width=\"100%\"\n      href=\"https://youtube.com/watch?v=7csgD3iIc2Q\"\n      ng-cloak\u003e\n   \u003c/a\u003e\n\u003c/div\u003e\n\n\u003c/div\u003e\n\u003cdiv class=\"block-paragraph_advanced\"\u003e\u003chr/\u003e\n\u003cp\u003e\u003csup\u003e\u003cspan style=\"font-style: italic; vertical-align: baseline;\"\u003eMajor League Baseball trademarks and copyrights are used with permission of Major League Baseball. Visit MLB.com.\u003c/span\u003e\u003c/sup\u003e\u003c/p\u003e\u003c/div\u003e"
+    }
+  ],
+  "generatedAt": "2025-08-05T07:09:38.95504466+09:00"
+}
