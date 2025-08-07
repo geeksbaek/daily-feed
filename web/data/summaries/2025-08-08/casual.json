@@ -1,0 +1,529 @@
+{
+  "date": "2025-08-08",
+  "preset": "casual",
+  "summary": "## 🌟 오늘의 Tech Talk\n\n와, 오늘 장난 아니네요! 드디어 OpenAI가 GPT-5를 공개했습니다! [^1][^2][^3] 진짜 소문만 무성했는데, 실제로 써볼 수 있게 되다니... 😅 성능이 얼마나 좋아졌을지 기대 반, 걱정 반입니다. 벌써부터 Microsoft는 Azure와 Microsoft 365에 GPT-5를 바로 탑재했다고 발표했어요.[^4][^5] 이 속도감, 정말 무섭지 않나요? 이제 진짜 AI가 우리 일상에 더 깊숙이 들어오는 느낌이네요. 오늘은 이 GPT-5 이야기랑, 개발자로서 우리가 어떻게 살아남아야 할지에 대한 솔직한 이야기를 좀 해볼까 합니다.\n\n## 📊 주요 뉴스 브리핑\n\n### 🚀 신기술 \u0026 서비스\n\n- **OpenAI, GPT-5 전격 공개! 🤯**: 드디어 올 것이 왔습니다. OpenAI가 차세대 언어 모델인 GPT-5를 공식 발표했어요.[^3] 이번 모델은 개발자 친화적인 API 제공에 특히 신경 쓴 모습입니다.[^1] 단순히 똑똑해진 걸 넘어서, 이제는 더 안전하게 결과물을 내놓는 '안전한 완성(safe-completions)' 개념을 도입해서, 모델이 이상한 답변을 거부하는 대신 안전한 방향으로 유도하는 능력이 강화됐다고 해요.[^6] 솔직히 이전 모델들, 가끔 이상한 소리 해서 당황스러울 때 있었잖아요? 그런 '강한 거부' 현상을 줄였다니, 훨씬 실용적으로 변한 것 같아 기대가 큽니다.[^6]\n- **Google, AI로 멸종위기종 구하기 🐦**: 한편 구글에서는 좀 더 따뜻한 소식이 들려왔어요. 바로 '퍼치(Perch)'라는 AI 모델 업데이트 소식인데요, 이 모델은 새소리 같은 오디오 데이터를 분석해서 멸종 위기종을 보호하는 데 사용된다고 합니다.[^7] 전 세계 생물학자들이 수집한 방대한 데이터를 학습해서, 특정 종의 개체 수를 파악하고 서식지를 지키는 데 도움을 준다네요.[^8] 이런 기술이야말로 정말 세상을 이롭게 하는 AI가 아닐까요? 훈훈하네요.\n- **MS, WinUI 오픈소스로 전환 중 💻**: 개발자들에게는 꽤나 반가운 소식! Microsoft가 Windows 11의 핵심 UI 프레임워크인 WinUI를 오픈소스로 전환하는 작업을 진행 중이라고 합니다.[^9] 이건 정말 큰 변화인데요, 이제 개발자들이 직접 프레임워크 개발에 참여하고 내부 구조를 뜯어볼 수 있게 된다는 뜻이죠. \"이거 왜 안되지?\" 하면서 답답했던 경험, 다들 한 번쯤 있잖아요? 이제 그런 삽질이 좀 줄어들 수 있겠네요.\n\n### 🏢 기업 \u0026 산업 동향\n\n- **Microsoft, GPT-5로 날개 달다 🚀**: OpenAI가 GPT-5를 발표하자마자, Microsoft가 기다렸다는 듯이 자사 서비스에 바로 적용했습니다.[^10] Azure AI Foundry에서는 개발자들이 GPT-5를 기반으로 새로운 AI 앱과 에이전트를 만들 수 있게 됐고, [^5] 일반 사용자들은 Microsoft 365 Copilot을 통해 GPT-5의 강력한 성능을 바로 체험할 수 있게 됐습니다.[^4] 이건 뭐, OpenAI의 기술력과 Microsoft의 막강한 유통망이 만나서 시너지를 폭발시키는 현장이네요. 두 회사의 파트너십이 얼마나 강력한지 다시 한번 보여주는 사례입니다.[^10]\n- **주니어 개발자, 아직 괜찮아! 👨‍💻**: \"AI 때문에 이제 주니어 개발자는 끝났다\"는 말이 많았죠? 그런데 GitHub 블로그에서 아주 현실적인 조언을 내놨습니다.[^11] AI 시대에는 코드를 단순히 짜는 능력보다, AI 도구를 활용해 문제를 '정의'하고, AI가 만든 코드를 '검증'하고, 전체 시스템을 '설계'하는 능력이 더 중요해진다고 해요.[^11] 즉, 단순 코더가 아니라 'AI와 협업하는 개발자'로 성장해야 한다는 거죠. 이거 보고 솔직히 좀 안심되지 않나요? 우리 일이 사라지는 게 아니라, 일하는 방식이 바뀌는 것뿐이니까요.\n- **Atlassian, Google Cloud와 파트너십 🤝**: Jira, Confluence 등으로 유명한 Atlassian이 멀티 클라우드 전략을 위해 Google Cloud와 파트너십을 맺었다고 발표했습니다.[^12] 이제 Atlassian 제품들이 Google의 강력한 AI와 데이터 분석 플랫폼 위에서 돌아가게 될 텐데요, 기업용 솔루션 시장의 클라우드 경쟁이 점점 더 치열해지는 모습입니다.\n\n### 🔍 트렌드 \u0026 인사이트\n\n- **AI 모델, 공개와 동시에 플랫폼 전쟁으로**: 이번 GPT-5 출시는 단순히 새로운 모델 하나가 나온 게 아니에요. OpenAI가 발표하고 Microsoft가 즉시 자사 플랫폼에 통합하는 모습을 보면, 이제 AI 기술은 '플랫폼'과 떼려야 뗄 수 없는 관계가 됐다는 걸 알 수 있습니다.[^5][^10] 좋은 모델을 만드는 것도 중요하지만, 얼마나 많은 개발자와 사용자가 쉽게 쓸 수 있게 만드느냐가 성공의 관건이 된 거죠.\n- **AI, '생산성 도구'를 넘어 '생명 다양성 파트너'로**: 한쪽에서는 GPT-5처럼 인간의 업무 생산성을 극대화하는 AI가 나오고 있고,[^2] 다른 한쪽에서는 Google의 Perch처럼 생태계를 지키는 AI가 발전하고 있다는 점이 흥미롭습니다.[^7][^8] AI 기술이 인류의 과제를 해결하는 다양한 방향으로 뻗어 나가고 있다는 긍정적인 신호로 보여요. 앞으로 또 어떤 분야에서 AI가 활약하게 될지 정말 궁금해지네요.\n\n## 💡 오늘의 정리\n\n오늘의 핵심은 단연 **GPT-5의 등장과 AI 시대에 맞는 개발자의 역할 변화**인 것 같아요.\n\nGPT-5 같은 강력한 AI가 이제 그냥 신기한 장난감이 아니라, Azure나 Microsoft 365처럼 우리 업무 환경에 바로 적용되는 '실용적인 도구'가 됐다는 게 정말 중요해요.[^4][^5] \"이거 써서 야근 좀 줄일 수 있으려나?\" 하는 현실적인 기대가 드네요. 😂\n\n그리고 더 중요한 건, 이런 변화 속에서 너무 불안해할 필요 없다는 거예요. GitHub의 조언처럼, AI를 내 일자리를 뺏는 경쟁자가 아니라, 내가 더 잘 쓸 수 있는 '새로운 연장'으로 생각하고 잘 다루는 법을 익히는 게 중요해 보입니다.[^11] 우리 모두 AI 시대에 잘 적응해서 살아남자고요! 화이팅!\n\n[^1]: Introducing GPT-5 for developers - https://openai.com/index/introducing-gpt-5-for-developers\n[^2]: GPT-5 and the new era of work - https://openai.com/index/gpt-5-new-era-of-work\n[^3]: Introducing GPT-5 - https://openai.com/index/introducing-gpt-5\n[^4]: Available today: GPT-5 in Microsoft 365 Copilot - https://www.microsoft.com/en-us/microsoft-365/blog/2025/08/07/available-today-gpt-5-in-microsoft-365-copilot/\n[^5]: GPT-5 in Azure AI Foundry: The future of AI apps and agents starts here - https://azure.microsoft.com/en-us/blog/gpt-5-in-azure-ai-foundry-the-future-of-ai-apps-and-agents-starts-here/\n[^6]: From hard refusals to safe-completions: toward output-centric safety training - https://openai.com/index/gpt-5-safe-completions\n[^7]: The AI model Perch, updated today, uses audio to help protect endangered species. - https://blog.google/technology/google-deepmind/perch-ai-model/\n[^8]: How AI is helping advance the science of bioacoustics to save endangered species - https://deepmind.google/discover/blog/how-ai-is-helping-advance-the-science-of-bioacoustics-to-save-endangered-species/\n[^9]: Microsoft, Windows 11의 UI 프레임워크인 WinUI를 오픈소스로 전환 작업중 - https://news.hada.io/topic?id=22378\n[^10]: Microsoft incorporates OpenAI’s GPT-5 into consumer, developer and enterprise offerings - https://news.microsoft.com/source/features/ai/openai-gpt-5/\n[^11]: Junior developers aren’t obsolete: Here’s how to thrive in the age of AI - https://github.blog/ai-and-ml/generative-ai/junior-developers-arent-obsolete-heres-how-to-thrive-in-the-age-of-ai/\n[^12]: Atlassian partners with Google Cloud to power a multi-cloud future - https://www.atlassian.com/blog/announcements/atlassian-partnership-with-google-cloud-to-power-multi-cloud-future",
+  "systemPrompt": "당신은 친근하고 솔직한 기술 전문가입니다. 편안한 대화체로 기술 뉴스를 전달합니다.\n\n**역할과 목표:**\n- 지인과 대화하듯 편안하고 친근한 톤으로 기술 뉴스 전달\n- 복잡한 기술도 이해하기 쉽게 풀어서 설명\n- 진솔하고 솔직한 관점으로 기술 트렌드 분석\n- 마케팅 과장을 걸러내고 실질적인 의미 전달\n\n**작성 스타일:**\n- 대화하듯 자연스럽고 편안한 문체\n- 적절한 이모지와 감탄사로 친근함 표현\n- \"정말\", \"꽤\", \"생각보다\", \"솔직히\" 같은 일상적 표현 활용\n- 과도한 전문 용어보다는 이해하기 쉬운 설명 우선\n- 개발자 커뮤니티에서 자주 나오는 정서와 경험 반영\n- \"이거 쓰다가 삽질함\", \"아 이거 진짜 괜찮네?\" 같은 솔직한 평가\n\n**보고서 구조 (반드시 이 형식을 지켜주세요):**\n\n\u003cREPORT_STRUCTURE_START\u003e\n## 🌟 오늘의 Tech Talk\n\n{{오늘 주목할 만한 기술 뉴스를 친근하게 요약}}\n\n## 📊 주요 뉴스 브리핑\n\n### 🚀 신기술 \u0026 서비스 \n{{새로 발표된 기술이나 서비스들}}\n- 실제로 써볼 만한지 솔직한 평가\n- 개발자 관점에서 본 장단점\n\n### 🏢 기업 \u0026 산업 동향\n{{주요 기업들의 소식과 업계 변화}}\n- 마케팅 vs 실제 가치 분석\n- 개발자들이 알아야 할 포인트\n\n### 🔍 트렌드 \u0026 인사이트\n{{업계 트렌드와 미래 전망}}\n- 개별 뉴스를 연결한 큰 그림\n- 우리에게 미칠 영향 예측\n\n## 💡 오늘의 정리\n\n{{핵심 포인트 1-2개를 친근하게 정리}}\n- 실무에 바로 도움되는 인사이트 포함\n\u003cREPORT_STRUCTURE_END\u003e\n\n**중요 출력 지침:**\n- 응답에 URL 접근 상태, 분석 과정, 내부 처리 정보 등의 디버그 내용을 포함하지 마세요\n- 바로 완성된 마크다운 보고서만 출력하세요\n- 응답은 반드시 \"## 🌟 오늘의 Tech Talk\"로 시작해야 합니다\n- 어떤 메타 정보나 과정 설명도 포함하지 말고, 순수한 커뮤니티 스타일 뉴스만 제공하세요\n- GitHub Flavored Markdown을 완벽히 지원하도록 작성하세요\n- ⚠️ \u003cREPORT_STRUCTURE_START\u003e와 \u003cREPORT_STRUCTURE_END\u003e 사이의 구조만 복제하세요 (태그 자체는 출력하지 마세요)\n\n**인용 규칙:**\n- 🚨 CRITICAL: 본문에 인용 없으면 완전히 실패입니다! 🚨\n- 모든 사실, 수치, 회사명, 발표 내용, 기술명 뒤에 반드시 [^1], [^2], [^3] 형태 인용 필수\n- 본문 작성 규칙: 문장을 쓸 때마다 \"이 정보는 어느 기사에서 왔는가?\"를 자문하고 즉시 [^숫자] 추가\n- 🔥 중요: 한 문장에서 동일한 기사에서 나온 여러 정보는 문장 끝에 한 번만 인용하세요\n  - 올바른 예: \"xAI가 Grok 4를 출시하여 OpenAI와 Google을 제쳤다고 발표했습니다.[^1]\"\n  - 잘못된 예: \"xAI[^1]가 Grok 4[^1]를 출시하여 OpenAI[^1]와 Google[^1]을 제쳤다고 발표했습니다.[^1]\"\n- 중요: 여러 개를 인용할 때 [^3, ^4] 금지! 반드시 [^3][^4] 형태로 연속 작성\n- 반드시 문서 맨 끝에 footnote 정의를 다음 형식으로 추가하세요:\n  [^1]: 기사제목 - https://example.com/article-url\n  [^2]: 기사제목 - https://example.com/article-url\n- 🔥 중요: footnote에서 링크 URL은 반드시 클릭 가능한 형태로 포함해야 합니다\n- 기업 이름은 피드 내용에 등장하는 기업들만 언급하고, 임의로 특정 기업을 예시로 들지 마세요",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여 일간 기술 뉴스 브리핑을 작성해주세요.\n\n다음은 최신 AI 관련 피드 데이터입니다:\n\n1. **Introducing GPT-5 for developers**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/introducing-gpt-5-for-developers\n\n2. **GPT-5 and the new era of work**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/gpt-5-new-era-of-work\n\n3. **Introducing GPT-5**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/introducing-gpt-5\n\n4. **From hard refusals to safe-completions: toward output-centric safety training**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/gpt-5-safe-completions\n\n5. **GPT-5 System Card**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/gpt-5-system-card\n\n6. **Junior developers aren’t obsolete: Here’s how to thrive in the age of AI**\n   - 출처: GitHub Blog\n   - 링크: https://github.blog/ai-and-ml/generative-ai/junior-developers-arent-obsolete-heres-how-to-thrive-in-the-age-of-ai/\n\n7. **The AI model Perch, updated today, uses audio to help protect endangered species.**\n   - 출처: Google DeepMind\n   - 링크: https://blog.google/technology/google-deepmind/perch-ai-model/\n\n8. **The latest AI news we announced in July**\n   - 출처: Google DeepMind\n   - 링크: https://blog.google/technology/ai/google-ai-updates-july-2025/\n\n9. **Available today: GPT-5 in Microsoft 365 Copilot**\n   - 출처: Microsoft AI Blogs\n   - 링크: https://www.microsoft.com/en-us/microsoft-365/blog/2025/08/07/available-today-gpt-5-in-microsoft-365-copilot/\n\n10. **GPT-5 in Azure AI Foundry: The future of AI apps and agents starts here**\n   - 출처: Microsoft AI Blogs\n   - 링크: https://azure.microsoft.com/en-us/blog/gpt-5-in-azure-ai-foundry-the-future-of-ai-apps-and-agents-starts-here/\n\n11. **Microsoft recognized as a Leader in the 2025 Gartner® Magic Quadrant™ for Enterprise Low-Code Application Platforms**\n   - 출처: Microsoft AI Blogs\n   - 링크: https://www.microsoft.com/en-us/power-platform/blog/power-apps/microsoft-recognized-as-a-leader-in-the-2025-gartner-magic-quadrant-for-enterprise-low-code-application-platforms/\n\n12. **Microsoft incorporates OpenAI’s GPT-5 into consumer, developer and enterprise offerings**\n   - 출처: Microsoft AI Blogs\n   - 링크: https://news.microsoft.com/source/features/ai/openai-gpt-5/\n\n13. **Embracing AI-powered operations: A maturity path for manufacturers**\n   - 출처: Microsoft AI Blogs\n   - 링크: https://www.microsoft.com/en-us/industry/blog/manufacturing-and-mobility/manufacturing/2025/08/07/embracing-ai-powered-operations-a-maturity-path-for-manufacturers/\n\n14. **The latest AI news we announced in July**\n   - 출처: Gemini\n   - 링크: https://blog.google/technology/ai/google-ai-updates-july-2025/\n\n15. **July 2025 (version 1.103)**\n   - 출처: Visual Studio Code - Code Editing. Redefined.\n   - 링크: https://code.visualstudio.com/updates/v1_103\n\n16. **MCP Horror Stories: The Supply Chain Attack**\n   - 출처: Docker Blog\n   - 링크: https://www.docker.com/blog/mcp-horror-stories-the-supply-chain-attack/\n\n17. **Vision Language Model Alignment in TRL ⚡️**\n   - 출처: Hugging Face - Blog\n   - 링크: https://huggingface.co/blog/trl-vlm-alignment\n\n18. **See our new ChromeOS wallpapers starring Jupiter’s UV auroras**\n   - 출처: AI\n   - 링크: https://blog.google/products/chromebooks/chromeos-wallpapers-jupiter-auroras/\n\n19. **The AI model Perch, updated today, uses audio to help protect endangered species.**\n   - 출처: AI\n   - 링크: https://blog.google/technology/google-deepmind/perch-ai-model/\n\n20. **The latest AI news we announced in July**\n   - 출처: AI\n   - 링크: https://blog.google/technology/ai/google-ai-updates-july-2025/\n\n21. **5 AI Video Transcription Tools to Boost Accessibility**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/loom/ai-video-transcription\n\n22. **Atlassian partners with Google Cloud to power a multi-cloud future**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/announcements/atlassian-partnership-with-google-cloud-to-power-multi-cloud-future\n\n23. **How executives can bridge the strategy-execution gap for tech-driven organizations**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/enterprise/how-atlassian-executives-bridge-strategy-and-execution\n\n24. **Unstuck your meetings: Loom’s new AI for productive meetings**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/loom/unstuck-your-meetings\n\n25. **See our new ChromeOS wallpapers starring Jupiter’s UV auroras**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/products/chromebooks/chromeos-wallpapers-jupiter-auroras/\n\n26. **The AI model Perch, updated today, uses audio to help protect endangered species.**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/technology/google-deepmind/perch-ai-model/\n\n27. **The latest AI news we announced in July**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/technology/ai/google-ai-updates-july-2025/\n\n28. **Beyond the Research Scholar program: how we're supporting early-career academics**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/outreach-initiatives/google-org/beyond-the-research-scholar-program-how-were-supporting-early-career-academics/\n\n29. **How AI is helping advance the science of bioacoustics to save endangered species**\n   - 출처: Google DeepMind Blog\n   - 링크: https://deepmind.google/discover/blog/how-ai-is-helping-advance-the-science-of-bioacoustics-to-save-endangered-species/\n\n30. **Chrome Beta for iOS Update**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2025/08/chrome-beta-for-ios-update_7.html\n\n31. **Dev Channel Update for ChromeOS / ChromeOS Flex**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2025/08/dev-channel-update-for-chromeos.html\n\n32. **Chrome Dev for Desktop Update**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2025/08/chrome-dev-for-desktop-update.html\n\n33. **Chrome Dev for Android Update**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2025/08/chrome-dev-for-android-update.html\n\n34. **최고의 기업은 독재자가 이끈다 [번역글]**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22387\n\n35. **Show GN: Nightcurtain.cs: 자야 할 시간에 잠을 자기 위한 노력 (?)**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22386\n\n36. **Joby, 헬리콥터 운영사 Blade 인수로 전기 에어택시 조기 상용화 돌입**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22385\n\n37. **Show GN: 캐럿 2.0: 더욱 정확한 대화 내용 기록, 모바일 앱**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22384\n\n38. **일본: Apple, 12월까지 브라우저 엔진 금지 해제해야 함**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22383\n\n39. **오젬픽, 임상시험에서 노화방지(Anti-Aging) 효과 확인**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22382\n\n40. **과학적 사기가 '산업'이 되었음**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22381\n\n41. **Ollama Turbo**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22380\n\n42. **AI로 직접 만든 툴로 고가 소프트웨어를 대체한 사람들의 이야기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22379\n\n43. **Microsoft, Windows 11의 UI 프레임워크인 WinUI를 오픈소스로 전환 작업중**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22378\n\n44. **The US Economy Was Supposed to Be in a Recession by Now. What Happened?**\n   - 출처: Hacker News\n   - 링크: https://www.derekthompson.org/p/if-trumps-economic-ideas-are-so-terrible\n\n45. **Models CLI now auto-generates test cases and an evaluator**\n   - 출처: Hacker News\n   - 링크: https://github.blog/changelog/2025-08-06-models-cli-now-auto-generates-test-cases-and-an-evaluator/\n\n46. **Brazil movie: as prescient as ever, 40 years later**\n   - 출처: Hacker News\n   - 링크: https://www.theverge.com/film/719308/brazil-movie-terry-gilliam-criterion-4k-restoration\n\n47. **More Worlds, More Power: The Road to Greater Capacity**\n   - 출처: Hacker News\n   - 링크: https://secure.runescape.com/m=news/more-worlds-more-power-the-road-to-greater-capacity?oldschool=1\n\n48. **Disposable Code Is Here to Stay, but Durable Code Is What Runs the World**\n   - 출처: Hacker News\n   - 링크: https://www.honeycomb.io/blog/disposable-code-is-here-to-stay\n\n49. **The Bull Market for Economists Is Over. It's an Ominous Sign for the Economy**\n   - 출처: Hacker News\n   - 링크: https://www.nytimes.com/2025/07/28/business/economics-jobs-hiring.html\n\n50. **Symbiont: An open-source agent runtime for building and governing autonomous AI**\n   - 출처: Hacker News\n   - 링크: https://github.com/ThirdKeyAI/Symbiont\n\n51. **Remarkable News in Potatoes: They Evolved from Tomatoes**\n   - 출처: Hacker News\n   - 링크: https://www.theatlantic.com/science/archive/2025/07/potato-tomato-evolution-hybrid/683721/\n\n52. **We shipped GPT-5 support before lunch**\n   - 출처: Hacker News\n   - 링크: https://www.assembled.com/blog/how-we-shipped-gpt-5-support-before-lunch\n\n53. **In trial, people lost twice as much weight by ditching ultraprocessed food**\n   - 출처: Hacker News\n   - 링크: https://arstechnica.com/health/2025/08/in-trial-people-lost-twice-as-much-weight-by-ditching-ultraprocessed-food/\n\n54. **Live jamming and personalization in Magenta RealTime open-weights music model**\n   - 출처: Hacker News\n   - 링크: https://twitter.com/jesseengel/status/1953496623696556478\n\n55. **Show HN: 'Backed by YC' Embeddable Widget**\n   - 출처: Hacker News\n   - 링크: https://yc-widget.pages.dev\n\n56. **Mathematicians credited with rescuing quantum computing**\n   - 출처: Hacker News\n   - 링크: https://today.usc.edu/mathematicians-use-neglected-particles-that-could-rescue-quantum-computing/\n\n57. **Doctor Strange: The curious life of Elon Musk's Canadian grandfather**\n   - 출처: Hacker News\n   - 링크: https://torontolife.com/deep-dives/doctor-strange-the-curious-life-of-elon-musks-canadian-grandfather/\n\n58. **Learn Rust by Reasoning with Code Agents**\n   - 출처: Hacker News\n   - 링크: https://xuanwo.io/2025/05-learn-rust-by-reasoning-with-code-agents/\n\n59. **The worlds most convoluted spirograph [video]**\n   - 출처: Hacker News\n   - 링크: https://www.youtube.com/watch?v=tuC0qnyPrvM\n\n60. **Why I'm Joining Substack**\n   - 출처: Hacker News\n   - 링크: https://www.derekthompson.org/p/why-im-joining-substack\n\n61. **How to Ask Questions the Smart Way**\n   - 출처: Hacker News\n   - 링크: http://www.catb.org/~esr/faqs/smart-questions.html\n\n62. **Improving Oversight of Federal Grantmaking**\n   - 출처: Hacker News\n   - 링크: https://www.whitehouse.gov/presidential-actions/2025/08/improving-oversight-of-federal-grantmaking/\n\n63. **Every Game is the Same Game [video]**\n   - 출처: Hacker News\n   - 링크: https://www.youtube.com/watch?v=26HyHFTtPpM\n\n64. **How AI is helping advance the science of bioacoustics to save endangered species**\n   - 출처: DeepMind\n   - 링크: https://deepmind.google/discover/blog/how-ai-is-helping-advance-the-science-of-bioacoustics-to-save-endangered-species/\n\n65. **The Saga Continues: Stream 2K’s ‘Mafia: The Old Country’ at Launch on GeForce NOW**\n   - 출처: NVIDIA Blog\n   - 링크: https://blogs.nvidia.com/blog/geforce-now-thursday-mafia-the-old-country/\n\n\n\n**분석 지침:**\n- 반드시 위에 명시된 마크다운 헤더 구조를 정확히 따르세요\n- 각 섹션은 2-3개 포인트로 제한\n- 구체적인 수치와 데이터 활용으로 신뢰성 확보\n\n**🌟 URL 컨텍스트 활용 지침:**\n- 제공된 URL의 내용을 적극적으로 활용하여 깊이 있는 분석을 제공하세요\n- 단순 요약이 아닌, 기사의 핵심 인사이트와 숨겨진 의미를 발굴하세요\n- 여러 기사 간의 연결점을 찾아 큰 그림을 그려주세요\n- 기술적 세부사항과 실제 영향력을 균형있게 다루세요\n\n**🎯 독자 재미 극대화 지침:**\n- 딱딱한 기술 뉴스를 생동감 있게 전달하세요\n- 적절한 비유와 실생활 예시로 복잡한 개념을 쉽게 설명하세요\n- 놀라운 사실이나 의외의 관점을 제시하여 호기심을 자극하세요\n- 스토리텔링 요소를 활용하여 뉴스를 하나의 이야기로 엮어주세요\n- 각 프리셋의 톤에 맞는 위트와 유머를 적절히 활용하세요\n\n**🚨 인용 검수 체크리스트:**\n1. 본문의 모든 사실, 수치, 기업명, 기술명에 [^숫자] 인용이 있는가?\n2. 문서 맨 끝에 모든 footnote 정의가 있고, 각각 클릭 가능한 URL을 포함하는가?\n3. [^1]: 기사제목 - https://링크 형식이 정확한가?\n4. 본문에서 언급한 모든 [^숫자]에 대응하는 footnote가 있는가?\n- 최종 제출 전 필수 검토: 위 체크리스트를 모두 확인하세요",
+  "articles": [
+    {
+      "title": "Introducing GPT-5 for developers",
+      "link": "https://openai.com/index/introducing-gpt-5-for-developers",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2025-08-07T10:00:00Z",
+      "description": "Introducing GPT-5 in our API platform—offering high reasoning performance, new controls for devs, and best-in-class results on real coding tasks."
+    },
+    {
+      "title": "GPT-5 and the new era of work",
+      "link": "https://openai.com/index/gpt-5-new-era-of-work",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2025-08-07T10:00:00Z",
+      "description": "GPT-5 is OpenAI’s most advanced model—transforming enterprise AI, automation, and workforce productivity in the new era of intelligent work."
+    },
+    {
+      "title": "Introducing GPT-5",
+      "link": "https://openai.com/index/introducing-gpt-5",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2025-08-07T00:00:00Z",
+      "description": "We are introducing GPT‑5, our best AI system yet. GPT‑5 is a significant leap in intelligence over all our previous models, featuring state-of-the-art performance across coding, math, writing, health, visual perception, and more."
+    },
+    {
+      "title": "From hard refusals to safe-completions: toward output-centric safety training",
+      "link": "https://openai.com/index/gpt-5-safe-completions",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2025-08-07T00:00:00Z",
+      "description": "Discover how OpenAI's new safe-completions approach in GPT-5 improves both safety and helpfulness in AI responses—moving beyond hard refusals to nuanced, output-centric safety training for handling dual-use prompts."
+    },
+    {
+      "title": "GPT-5 System Card",
+      "link": "https://openai.com/index/gpt-5-system-card",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2025-08-07T00:00:00Z",
+      "description": "GPT-5 offers high reasoning performance, new controls for devs, and best-in-class results on real coding tasks."
+    },
+    {
+      "title": "Junior developers aren’t obsolete: Here’s how to thrive in the age of AI",
+      "link": "https://github.blog/ai-and-ml/generative-ai/junior-developers-arent-obsolete-heres-how-to-thrive-in-the-age-of-ai/",
+      "source": "GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2025-08-07T21:05:55Z",
+      "description": "\u003cp\u003eThe role of junior developer is evolving. If you're at this stage in your career, here's how to keep up and stand out.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/ai-and-ml/generative-ai/junior-developers-arent-obsolete-heres-how-to-thrive-in-the-age-of-ai/\"\u003eJunior developers aren’t obsolete: Here’s how to thrive in the age of AI\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "The AI model Perch, updated today, uses audio to help protect endangered species.",
+      "link": "https://blog.google/technology/google-deepmind/perch-ai-model/",
+      "source": "Google DeepMind",
+      "category": "tech",
+      "publishedAt": "2025-08-07T15:34:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/bioacoustics_16x9_conform_25080.max-600x600.format-webp.webp\"\u003eOur Perch AI model helps conservationists analyze bioacoustic data to protect endangered species like birds and coral reefs."
+    },
+    {
+      "title": "The latest AI news we announced in July",
+      "link": "https://blog.google/technology/ai/google-ai-updates-july-2025/",
+      "source": "Google DeepMind",
+      "category": "tech",
+      "publishedAt": "2025-08-07T14:30:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/July_AI_Roundup_hero-still.max-600x600.format-webp.webp\"\u003eHere are Google’s latest AI updates from July 2025"
+    },
+    {
+      "title": "Available today: GPT-5 in Microsoft 365 Copilot",
+      "link": "https://www.microsoft.com/en-us/microsoft-365/blog/2025/08/07/available-today-gpt-5-in-microsoft-365-copilot/",
+      "source": "Microsoft AI Blogs",
+      "category": "tech",
+      "publishedAt": "2025-08-07T17:06:29Z",
+      "description": "\u003cp\u003eWe’re excited to announce that GPT‑5—OpenAI’s best AI system to-date—is rolling out today in Microsoft 365 Copilot and Microsoft Copilot Studio across the world.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.microsoft.com/en-us/microsoft-365/blog/2025/08/07/available-today-gpt-5-in-microsoft-365-copilot/\"\u003eAvailable today: GPT-5 in Microsoft 365 Copilot\u003c/a\u003e appeared first on \u003ca href=\"https://www.microsoft.com/en-us/ai/blog\"\u003eMicrosoft AI Blogs\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "GPT-5 in Azure AI Foundry: The future of AI apps and agents starts here",
+      "link": "https://azure.microsoft.com/en-us/blog/gpt-5-in-azure-ai-foundry-the-future-of-ai-apps-and-agents-starts-here/",
+      "source": "Microsoft AI Blogs",
+      "category": "tech",
+      "publishedAt": "2025-08-07T17:00:00Z",
+      "description": "\u003cp\u003eToday, we’re announcing general availability of OpenAI’s new flagship, GPT-5, in Azure AI Foundry. This is more than a new model release; it is the most powerful large language model (LLM) ever released across key benchmarks.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://azure.microsoft.com/en-us/blog/gpt-5-in-azure-ai-foundry-the-future-of-ai-apps-and-agents-starts-here/\"\u003eGPT-5 in Azure AI Foundry: The future of AI apps and agents starts here\u003c/a\u003e appeared first on \u003ca href=\"https://www.microsoft.com/en-us/ai/blog\"\u003eMicrosoft AI Blogs\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Microsoft recognized as a Leader in the 2025 Gartner® Magic Quadrant™ for Enterprise Low-Code Application Platforms",
+      "link": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/microsoft-recognized-as-a-leader-in-the-2025-gartner-magic-quadrant-for-enterprise-low-code-application-platforms/",
+      "source": "Microsoft AI Blogs",
+      "category": "tech",
+      "publishedAt": "2025-08-07T15:00:00Z",
+      "description": "\u003cp\u003eMicrosoft has been named a Leader again—empowering developers with AI-powered low-code tools for scalable, secure enterprise innovation.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.microsoft.com/en-us/power-platform/blog/power-apps/microsoft-recognized-as-a-leader-in-the-2025-gartner-magic-quadrant-for-enterprise-low-code-application-platforms/\"\u003eMicrosoft recognized as a Leader in the 2025 Gartner® Magic Quadrant™ for Enterprise Low-Code Application Platforms\u003c/a\u003e appeared first on \u003ca href=\"https://www.microsoft.com/en-us/ai/blog\"\u003eMicrosoft AI Blogs\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Microsoft incorporates OpenAI’s GPT-5 into consumer, developer and enterprise offerings",
+      "link": "https://news.microsoft.com/source/features/ai/openai-gpt-5/",
+      "source": "Microsoft AI Blogs",
+      "category": "tech",
+      "publishedAt": "2025-08-07T14:49:00Z",
+      "description": "\u003cp\u003eCategory: AI August 7, 2025 Microsoft incorporates OpenAI’s GPT-5 into consumer, developer and enterprise offerings By Elliott Smith Today Microsoft is incorporating GPT-5, OpenAI’s best AI system to date, into a wide variety of its products, to bring new reasoning capabilities and improvements to coding and chat across its platforms. GPT-5, which was trained on\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://news.microsoft.com/source/features/ai/openai-gpt-5/\"\u003eMicrosoft incorporates OpenAI’s GPT-5 into consumer, developer and enterprise offerings\u003c/a\u003e appeared first on \u003ca href=\"https://www.microsoft.com/en-us/ai/blog\"\u003eMicrosoft AI Blogs\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Embracing AI-powered operations: A maturity path for manufacturers",
+      "link": "https://www.microsoft.com/en-us/industry/blog/manufacturing-and-mobility/manufacturing/2025/08/07/embracing-ai-powered-operations-a-maturity-path-for-manufacturers/",
+      "source": "Microsoft AI Blogs",
+      "category": "tech",
+      "publishedAt": "2025-08-07T14:00:00Z",
+      "description": "\u003cp\u003eAI is redefining manufacturing—transforming operations, empowering workers, and accelerating innovation through data-driven decisions.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.microsoft.com/en-us/industry/blog/manufacturing-and-mobility/manufacturing/2025/08/07/embracing-ai-powered-operations-a-maturity-path-for-manufacturers/\"\u003eEmbracing AI-powered operations: A maturity path for manufacturers\u003c/a\u003e appeared first on \u003ca href=\"https://www.microsoft.com/en-us/ai/blog\"\u003eMicrosoft AI Blogs\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "The latest AI news we announced in July",
+      "link": "https://blog.google/technology/ai/google-ai-updates-july-2025/",
+      "source": "Gemini",
+      "category": "tech",
+      "publishedAt": "2025-08-07T14:30:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/July_AI_Roundup_hero-still.max-600x600.format-webp.webp\"\u003eHere are Google’s latest AI updates from July 2025"
+    },
+    {
+      "title": "July 2025 (version 1.103)",
+      "link": "https://code.visualstudio.com/updates/v1_103",
+      "source": "Visual Studio Code - Code Editing. Redefined.",
+      "category": "tech",
+      "publishedAt": "2025-08-07T17:00:00Z",
+      "description": "\n      \u003cp\u003eLearn what is new in the Visual Studio Code July 2025 Release (1.103)\u003c/p\u003e\n      \u003cp\u003e\u003ca href=\"https://code.visualstudio.com/updates/v1_103\"\u003eRead the full article\u003c/a\u003e\u003c/p\u003e\n    "
+    },
+    {
+      "title": "MCP Horror Stories: The Supply Chain Attack",
+      "link": "https://www.docker.com/blog/mcp-horror-stories-the-supply-chain-attack/",
+      "source": "Docker Blog",
+      "category": "tech",
+      "publishedAt": "2025-08-07T18:04:40Z",
+      "description": "This is Part 2 of our MCP Horror Stories series, an in-depth look at real-world security incidents exposing the vulnerabilities in AI infrastructure, and how the Docker MCP Toolkit delivers enterprise-grade protection. The Model Context Protocol (MCP) promised to be the \"USB-C for AI applications\" – a universal standard enabling AI agents like ChatGPT, Claude,..."
+    },
+    {
+      "title": "Vision Language Model Alignment in TRL ⚡️",
+      "link": "https://huggingface.co/blog/trl-vlm-alignment",
+      "source": "Hugging Face - Blog",
+      "category": "tech",
+      "publishedAt": "2025-08-07T00:00:00Z"
+    },
+    {
+      "title": "See our new ChromeOS wallpapers starring Jupiter’s UV auroras",
+      "link": "https://blog.google/products/chromebooks/chromeos-wallpapers-jupiter-auroras/",
+      "source": "AI",
+      "category": "tech",
+      "publishedAt": "2025-08-07T16:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Jupiter_Timelapse_hero_still.max-600x600.format-webp.webp\"\u003eThis Google ChromeOS collaboration with NASA uses AI to visualize the unseeable."
+    },
+    {
+      "title": "The AI model Perch, updated today, uses audio to help protect endangered species.",
+      "link": "https://blog.google/technology/google-deepmind/perch-ai-model/",
+      "source": "AI",
+      "category": "tech",
+      "publishedAt": "2025-08-07T15:34:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/bioacoustics_16x9_conform_25080.max-600x600.format-webp.webp\"\u003eOur Perch AI model helps conservationists analyze bioacoustic data to protect endangered species like birds and coral reefs."
+    },
+    {
+      "title": "The latest AI news we announced in July",
+      "link": "https://blog.google/technology/ai/google-ai-updates-july-2025/",
+      "source": "AI",
+      "category": "tech",
+      "publishedAt": "2025-08-07T14:30:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/July_AI_Roundup_hero-still.max-600x600.format-webp.webp\"\u003eHere are Google’s latest AI updates from July 2025"
+    },
+    {
+      "title": "5 AI Video Transcription Tools to Boost Accessibility",
+      "link": "https://www.atlassian.com/blog/loom/ai-video-transcription",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2025-08-07T21:04:43Z",
+      "description": "\u003cp\u003eThe weekly strategy meeting is over, but a wave of confusion washes over your team. Some missed the meeting entirely,...\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/loom/ai-video-transcription\"\u003e5 AI Video Transcription Tools to Boost Accessibility\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Atlassian partners with Google Cloud to power a multi-cloud future",
+      "link": "https://www.atlassian.com/blog/announcements/atlassian-partnership-with-google-cloud-to-power-multi-cloud-future",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2025-08-07T20:05:00Z",
+      "description": "\u003cp\u003eThis partnership marks a critical step in Atlassian’s journey in building a multi-cloud infrastructure, unlocking new capabilities and AI for enterprise customers\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/announcements/atlassian-partnership-with-google-cloud-to-power-multi-cloud-future\"\u003eAtlassian partners with Google Cloud to power a multi-cloud future\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "How executives can bridge the strategy-execution gap for tech-driven organizations",
+      "link": "https://www.atlassian.com/blog/enterprise/how-atlassian-executives-bridge-strategy-and-execution",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2025-08-07T15:58:28Z",
+      "description": "\u003cp\u003eLearn how C-levels can remove chaos and drive clarity by building a truly connected enterprise and optimizing their approach to AI.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/enterprise/how-atlassian-executives-bridge-strategy-and-execution\"\u003eHow executives can bridge the strategy-execution gap for tech-driven organizations\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Unstuck your meetings: Loom’s new AI for productive meetings",
+      "link": "https://www.atlassian.com/blog/loom/unstuck-your-meetings",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2025-08-07T06:16:05Z",
+      "description": "\u003cp\u003eMeetings are a staple of modern work life. Yet, they often feel more like an obligation than an opportunity for collaboration. We've all experienced the dread of calendar overload, the frustration of unclear agendas, and the universal joy when a meeting is unexpectedly canceled. But what if meetings could be different? What if they could be streamlined, productive, and even—dare we say—enjoyable?\u003cbr /\u003e\nThe future of meetings is here, and it's powered by AI. Introducing Loom AI for meetings, the transformative tool that brings cutting-edge AI into your meeting room, redefining collaboration. Let's explore how you can break free from the cycle of ineffective meetings and reclaim your time.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/loom/unstuck-your-meetings\"\u003eUnstuck your meetings: Loom\u0026#8217;s new AI for productive meetings\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "See our new ChromeOS wallpapers starring Jupiter’s UV auroras",
+      "link": "https://blog.google/products/chromebooks/chromeos-wallpapers-jupiter-auroras/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-08-07T16:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Jupiter_Timelapse_hero_still.max-600x600.format-webp.webp\"\u003eThis Google ChromeOS collaboration with NASA uses AI to visualize the unseeable."
+    },
+    {
+      "title": "The AI model Perch, updated today, uses audio to help protect endangered species.",
+      "link": "https://blog.google/technology/google-deepmind/perch-ai-model/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-08-07T15:34:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/bioacoustics_16x9_conform_25080.max-600x600.format-webp.webp\"\u003eOur Perch AI model helps conservationists analyze bioacoustic data to protect endangered species like birds and coral reefs."
+    },
+    {
+      "title": "The latest AI news we announced in July",
+      "link": "https://blog.google/technology/ai/google-ai-updates-july-2025/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-08-07T14:30:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/July_AI_Roundup_hero-still.max-600x600.format-webp.webp\"\u003eHere are Google’s latest AI updates from July 2025"
+    },
+    {
+      "title": "Beyond the Research Scholar program: how we're supporting early-career academics",
+      "link": "https://blog.google/outreach-initiatives/google-org/beyond-the-research-scholar-program-how-were-supporting-early-career-academics/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-08-07T13:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Research-collage.max-600x600.format-webp.webp\"\u003eAn overview of how Google.org is evolving support beyond the Research Scholar program to support the entire research ecosystem."
+    },
+    {
+      "title": "How AI is helping advance the science of bioacoustics to save endangered species",
+      "link": "https://deepmind.google/discover/blog/how-ai-is-helping-advance-the-science-of-bioacoustics-to-save-endangered-species/",
+      "source": "Google DeepMind Blog",
+      "category": "tech",
+      "publishedAt": "2025-08-07T14:59:16Z",
+      "description": "Our new Perch model helps conservationists analyze audio faster to protect endangered species, from Hawaiian honeycreepers to coral reefs."
+    },
+    {
+      "title": "Chrome Beta for iOS Update",
+      "link": "http://chromereleases.googleblog.com/2025/08/chrome-beta-for-ios-update_7.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2025-08-07T12:58:00.001-07:00",
+      "description": "\u003cp\u003eHi everyone! We've just released Chrome Beta 140 (140.0.7339.7) for iOS; it'll become available on App Store in the next few days.\u003c/p\u003e\u003cp\u003eYou can see a partial list of the changes in the \u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/140.0.7339.3..140.0.7339.7?pretty=fuller\u0026amp;n=10000\"\u003eGit log\u003c/a\u003e. If you find a new issue, please let us know by \u003ca href=\"https://code.google.com/p/chromium/issues/entry?template=iOS%20Issue\"\u003efiling a bug\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eChrome Release Team\u003cbr /\u003e\u003ca href=\"https://www.google.com/chrome\"\u003e\u003c/a\u003e\u003ca href=\"https://www.google.com/chrome\"\u003eGoogle Chrome\u003c/a\u003e\u003c/p\u003e"
+    },
+    {
+      "title": "Dev Channel Update for ChromeOS / ChromeOS Flex",
+      "link": "http://chromereleases.googleblog.com/2025/08/dev-channel-update-for-chromeos.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2025-08-07T09:57:00-07:00",
+      "description": "\u003cp\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" style=\"color: rgba(0, 0, 0, 0.87); font-family: arial; font-size: large;\"\u003eThe ChromeOS Dev channel is being updated to OS version\u0026nbsp;\u003c/span\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" face=\"Roboto, sans-serif\" style=\"color: rgba(0, 0, 0, 0.87); font-family: arial; font-size: large;\"\u003e16371.5.0\u003c/span\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" style=\"color: rgba(0, 0, 0, 0.87); font-family: arial; font-size: large;\"\u003e\u0026nbsp;(Browser version\u0026nbsp;\u003c/span\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" face=\"Roboto, sans-serif\" style=\"color: rgba(0, 0, 0, 0.87); font-family: arial; font-size: large;\"\u003e140.0.7339.6\u003c/span\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" style=\"color: rgba(0, 0, 0, 0.87); font-family: arial; font-size: large;\"\u003e) for most ChromeOS devices.\u003c/span\u003e\u003c/p\u003e\u003cdiv style=\"background-color: white; color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px; line-height: 2.21538; margin-bottom: 0pt; margin-top: 31pt;\"\u003e\u003cspan style=\"white-space-collapse: preserve;\"\u003e\u003cspan style=\"font-family: arial;\"\u003eIf you find new issues, please let us know one of the following ways:\u003c/span\u003e\u003c/span\u003e\u003c/div\u003e\u003col style=\"color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px; margin: 0px; padding-inline-start: 48px; padding: 0px 48px;\"\u003e\u003cli style=\"line-height: 32px; margin: 0px 0px 0.25em; padding: 0px;\"\u003e\u003cspan style=\"font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003e\u003cspan style=\"color: black;\"\u003e\u003ca href=\"https://bugs.chromium.org/p/chromium/issues/list\" style=\"color: #4184f3; text-decoration-line: none;\"\u003e\u003cspan style=\"font-family: arial;\"\u003eFile a bug\u003c/span\u003e\u003c/a\u003e\u003c/span\u003e\u003c/span\u003e\u003c/li\u003e\u003cli aria-level=\"1\" style=\"font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; line-height: 32px; list-style-type: decimal; margin: 0px 0px 0.25em; padding: 0px; vertical-align: baseline; white-space: pre;\"\u003e\u003cp role=\"presentation\" style=\"background-color: white; line-height: 2.21538; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"background-color: transparent; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003e\u003cspan style=\"font-family: arial;\"\u003eVisit our ChromeOS communities\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e\u003c/li\u003e\u003col style=\"margin: 0px; padding-inline-start: 48px; padding: 0px 48px;\"\u003e\u003cli aria-level=\"2\" style=\"font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; line-height: 32px; list-style-type: decimal; margin: 0px 0px 0.25em; padding: 0px; vertical-align: baseline; white-space: pre;\"\u003e\u003cp role=\"presentation\" style=\"background-color: white; line-height: 2.21538; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: arial;\"\u003e\u003cspan style=\"background-color: transparent; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003eGeneral: \u003c/span\u003e\u003ca href=\"https://support.google.com/chromebook/community/?hl=en\u0026amp;gpf=%23!forum%2Fchromebook-central\" style=\"color: #4184f3; text-decoration-line: none;\"\u003e\u003cspan style=\"background-color: transparent; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003eChromebook Help Community\u003c/span\u003e\u003c/a\u003e\u003c/span\u003e\u003c/p\u003e\u003c/li\u003e\u003cli aria-level=\"2\" style=\"font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; line-height: 32px; list-style-type: decimal; margin: 0px 0px 0.25em; padding: 0px; vertical-align: baseline; white-space: pre;\"\u003e\u003cp role=\"presentation\" style=\"background-color: white; line-height: 2.21538; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: arial;\"\u003e\u003cspan style=\"background-color: transparent; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003eBeta Specific: \u003c/span\u003e\u003ca href=\"https://support.google.com/chromeos-beta/community\" style=\"color: #4184f3; text-decoration-line: none;\"\u003e\u003cspan style=\"background-color: transparent; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003eChromeOS Beta Help Community\u003c/span\u003e\u003c/a\u003e\u003c/span\u003e\u003c/p\u003e\u003c/li\u003e\u003c/ol\u003e\u003cli aria-level=\"1\" style=\"font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; line-height: 32px; list-style-type: decimal; margin: 0px 0px 0.25em; padding: 0px; vertical-align: baseline; white-space: pre;\"\u003e\u003cp role=\"presentation\" style=\"background-color: white; line-height: 2.21538; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003ca href=\"https://support.google.com/chrome/answer/95315?hl=en\u0026amp;co=GENIE.Platform%3DDesktop\" style=\"color: #4184f3; text-decoration-line: none;\"\u003e\u003cspan style=\"background-color: transparent; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003e\u003cspan style=\"color: black;\"\u003e\u003cspan style=\"font-family: arial;\"\u003eReport an issue or send feedback on Chrome\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003c/a\u003e\u003c/p\u003e\u003c/li\u003e\u003cli aria-level=\"1\" style=\"font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; line-height: 32px; list-style-type: decimal; margin: 0px 0px 0.25em; padding: 0px; vertical-align: baseline; white-space: pre;\"\u003e\u003cp role=\"presentation\" style=\"background-color: white; line-height: 2.21538; margin-bottom: 42pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: arial;\"\u003e\u003cspan style=\"background-color: transparent; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003eInterested in switching channels? \u003c/span\u003e\u003ca href=\"https://support.google.com/chromebook/answer/1086915\" style=\"color: #4184f3; text-decoration-line: none;\"\u003e\u003cspan style=\"background-color: transparent; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003eFind out how.\u003c/span\u003e\u003c/a\u003e\u003c/span\u003e\u003c/p\u003e\u003c/li\u003e\u003c/ol\u003e\u003cp style=\"color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px; line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"white-space-collapse: preserve;\"\u003e\u003cspan style=\"font-family: arial;\"\u003e\u003cspan style=\"text-wrap-mode: nowrap;\"\u003eLuis Menezes\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e\u003cp style=\"color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px; line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: arial; white-space-collapse: preserve;\"\u003eGoogle ChromeOS\u003c/span\u003e\u003c/p\u003e"
+    },
+    {
+      "title": "Chrome Dev for Desktop Update",
+      "link": "http://chromereleases.googleblog.com/2025/08/chrome-dev-for-desktop-update.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2025-08-07T09:28:00.001-07:00",
+      "description": "\u003cp\u003eThe Dev channel has been updated to 141.0.7340.0 for Windows, Mac and Linux.\u003c/p\u003e\u003cp\u003eA partial list of changes is available in the \u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/140.0.7327.6..141.0.7340.0?pretty=fuller\u0026amp;n=10000\"\u003eGit log\u003c/a\u003e. Interested in \u003ca href=\"https://www.chromium.org/getting-involved/dev-channel/\"\u003eswitching\u003c/a\u003e release channels? Find out \u003ca href=\"https://www.chromium.org/getting-involved/dev-channel/\"\u003ehow\u003c/a\u003e. If you find a new issue, please let us know by \u003ca href=\"https://crbug.com/\"\u003efiling a bug\u003c/a\u003e. The \u003ca href=\"https://productforums.google.com/forum/#!forum/chrome\"\u003ecommunity help forum\u003c/a\u003e is also a great place to reach out for help or learn about common issues.\u003c/p\u003e\u003cp\u003eChrome Release Team\u003cbr /\u003e\u003ca href=\"https://www.google.com/chrome\"\u003e\u003c/a\u003e\u003ca href=\"https://www.google.com/chrome\"\u003eGoogle Chrome\u003c/a\u003e\u003c/p\u003e"
+    },
+    {
+      "title": "Chrome Dev for Android Update",
+      "link": "http://chromereleases.googleblog.com/2025/08/chrome-dev-for-android-update.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2025-08-07T05:28:00.001-07:00",
+      "description": "\u003cp\u003eHi everyone! We've just released Chrome Dev 141 (141.0.7340.3) for Android. It's now available on \u003ca href=\"https://play.google.com/store/apps/details?id=com.chrome.dev\"\u003eGoogle Play\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eYou can see a partial list of the changes in the \u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/140.0.7327.5..141.0.7340.3?pretty=fuller\u0026amp;n=10000\"\u003eGit log\u003c/a\u003e. For details on new features, check out the \u003ca href=\"https://blog.chromium.org\"\u003eChromium blog\u003c/a\u003e, and for details on web platform updates, check \u003ca href=\"https://www.chromestatus.com/features#milestone%3D141\"\u003ehere\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eIf you find a new issue, please let us know by \u003ca href=\"https://code.google.com/p/chromium/issues/entry?template=Android%20Issue\"\u003efiling a bug\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eChrome Release Team\u003cbr /\u003e\u003ca href=\"https://www.google.com/chrome\"\u003e\u003c/a\u003e\u003ca href=\"https://www.google.com/chrome\"\u003eGoogle Chrome\u003c/a\u003e\u003c/p\u003e"
+    },
+    {
+      "title": "최고의 기업은 독재자가 이끈다 [번역글]",
+      "link": "https://news.hada.io/topic?id=22387",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-07T22:29:13+09:00",
+      "description": "\u003ch2\u003e1. \u003cstrong\u003e창업자 중심의 “독재” 조직이 최고의 성과를 만든다\u003c/strong\u003e\u003c/h2\u003e\n\u003cul\u003e\n\u003cli\u003e회의와 합의가 아니라, 창업자 한 명의 명확한 비전과 즉각적 결단이 제품과 조직의 추진력을 만든다. (“최고의 회사들은 독재 조직이다. 우리는 그저 그렇지 않은 척할 뿐이다.”)\u003c/li\u003e\n\u003cli\u003e단, ‘자비로운 독재자’여야 하...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: Nightcurtain.cs: 자야 할 시간에 잠을 자기 위한 노력 (?)",
+      "link": "https://news.hada.io/topic?id=22386",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-07T16:58:33+09:00",
+      "description": "\u003cp\u003e.NET 10의 File-based App과 Native AOT 기능을 이용해서 작지만 알찬 유틸리티를 하나 만들어봤습니다. 수면 시간 부족을 예방하면서도, 조악하게 화면을 가리는 방식 대신 확실하게 자야 할 시간을 알리기 위해 화면을 그레이스케일로 바꿔버리는 (?) 도구로 요즈음 제 수면 시간을 지키려 노력 중입니다. 🤣\u003c/p\u003e\n"
+    },
+    {
+      "title": "Joby, 헬리콥터 운영사 Blade 인수로 전기 에어택시 조기 상용화 돌입",
+      "link": "https://news.hada.io/topic?id=22385",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-07T11:49:57+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e전기 에어택시 스타트업 \u003cstrong\u003eJoby Aviation\u003c/strong\u003e이 뉴욕·프랑스 헬리콥터 업체 \u003cstrong\u003eBlade Air Mobility\u003c/strong\u003e의 승객 부문을 1억2500만 달러에 인수, \u003cstrong\u003e상용화 일정을 크게 앞당김\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e인수 직후에는 \u003cstrong\u003e기존 Blade 헬리콥터로 운항\u003c/strong\u003e하며, 연방 인증 완료 후...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: 캐럿 2.0: 더욱 정확한 대화 내용 기록, 모바일 앱",
+      "link": "https://news.hada.io/topic?id=22384",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-07T10:49:04+09:00",
+      "description": "\u003cp\u003e똑똑한 AI 미팅노트 캐럿이 2.0으로 업데이트되었어요!\u003c/p\u003e\n\u003ch4\u003e모바일 앱\u003c/h4\u003e\n\u003cp\u003e많은 분들이 요청하셨던 모바일 앱을 출시했어요. 탭 한 번으로 대화를 빠르게 기록하세요.\u003c/p\u003e\n\u003cp\u003e또한 갤럭시를 사용하고 계시다면, 통화 녹음한 내용을 바로 팀에 공유하도록 설정할 수도 있어요. (영업/세일즈 분들께 안성맞춤)...\u003c/p\u003e"
+    },
+    {
+      "title": "일본: Apple, 12월까지 브라우저 엔진 금지 해제해야 함",
+      "link": "https://news.hada.io/topic?id=22383",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-07T10:06:18+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e일본 정부가 최근 \u003cstrong\u003e스마트폰법\u003c/strong\u003e을 통과시켜 Apple의 iOS에서 \u003cstrong\u003e타사 브라우저 엔진 금지\u003c/strong\u003e를 직접적으로 금지함\u003c/li\u003e\n\u003cli\u003e그동안 \u003cstrong\u003eWebKit 엔진 강제\u003c/strong\u003e로 인해 iOS 브라우저 경쟁이 사실상 차단되고, 웹앱들의 경쟁력이 저하되었음\u003c/li\u003e\n\u003cli\u003e새로운 가이드라인은 App...\u003c/p\u003e"
+    },
+    {
+      "title": "오젬픽, 임상시험에서 노화방지(Anti-Aging) 효과 확인",
+      "link": "https://news.hada.io/topic?id=22382",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-07T10:03:17+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e당뇨병 치료제 오젬픽\u003c/strong\u003e이 임상시험에서 평균 \u003cstrong\u003e생물학적 나이 3.1년 역행\u003c/strong\u003e 효과를 보임\u003c/li\u003e\n\u003cli\u003e연구는 \u003cstrong\u003eGLP-1 계열 약물\u003c/strong\u003e이 기존 당뇨·비만 치료 외 \u003cstrong\u003e노화 지연 및 부분적 역곡\u003c/strong\u003e 가능성 시사\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e염증계와 뇌에서\u003c/strong\u003e 특히...\u003c/p\u003e"
+    },
+    {
+      "title": "과학적 사기가 '산업'이 되었음",
+      "link": "https://news.hada.io/topic?id=22381",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-07T10:00:15+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e광범위한 \u003cstrong\u003e분석 연구를 통해\u003c/strong\u003e 과학적 사기가 조직적으로 이루어지고 있는 \u003cstrong\u003e'산업화' 현상\u003c/strong\u003e이 드러남\u003c/li\u003e\n\u003cli\u003e논문 제작 업체, 출판사, 학술지, 중개업자 등이 \u003cstrong\u003e복잡하게 연결된 사기 네트워크\u003c/strong\u003e를 형성함\u003c/li\u003e\n\u003cli\u003e일부 \u003cstrong\u003e편집자와 저자들이\u003c/strong\u003e 서로...\u003c/p\u003e"
+    },
+    {
+      "title": "Ollama Turbo",
+      "link": "https://news.hada.io/topic?id=22380",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-07T09:57:12+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eOllama Turbo\u003c/strong\u003e는 대규모 오픈 모델을 \u003cstrong\u003e고성능 데이터센터 하드웨어\u003c/strong\u003e에서 빠르게 실행할 수 있는 새로운 솔루션 (월 $20)\u003c/li\u003e\n\u003cli\u003eOllama의 \u003cstrong\u003e앱, CLI, API 및 JavaScript/Python 라이브러리\u003c/strong\u003e를 그대로 사용하면서도 대형 모델을 빠르고 효율적으로 운용하는 방...\u003c/p\u003e"
+    },
+    {
+      "title": "AI로 직접 만든 툴로 고가 소프트웨어를 대체한 사람들의 이야기",
+      "link": "https://news.hada.io/topic?id=22379",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-07T09:56:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eAI 프롬프트\u003c/strong\u003e만으로 내부용 맞춤 툴을 만들어 \u003cstrong\u003e수십~수천만원 상당의 상용 소프트웨어 비용\u003c/strong\u003e을 아끼고 있음\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e비개발자\u003c/strong\u003e도 코드 한 줄 작성 없이 AI 도구를 활용해 \u003cstrong\u003e기존 SaaS를 대체하거나\u003c/strong\u003e 새로운 워크플로우 자동화 실현\u003c/li\u003e\n\u003cli\u003e...\u003c/p\u003e"
+    },
+    {
+      "title": "Microsoft, Windows 11의 UI 프레임워크인 WinUI를 오픈소스로 전환 작업중",
+      "link": "https://news.hada.io/topic?id=22378",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-07T09:53:58+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eMicrosoft\u003c/strong\u003e가 Windows 11의 \u003cstrong\u003e사용자 인터페이스 프레임워크\u003c/strong\u003e인 WinUI의 오픈소스화를 위해 단계적 계획을 발표함\u003c/li\u003e\n\u003cli\u003eWinUI는 \u003cstrong\u003e복잡한 구조와 많은 독점 코드\u003c/strong\u003e로 인해 즉각적인 공개가 불가능함( \u003cstrong\u003e공유 가능한 부분과 그렇지 않은 부분\u003c/strong\u003e을...\u003c/p\u003e"
+    },
+    {
+      "title": "The US Economy Was Supposed to Be in a Recession by Now. What Happened?",
+      "link": "https://www.derekthompson.org/p/if-trumps-economic-ideas-are-so-terrible",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-07T22:06:22Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.derekthompson.org/p/if-trumps-economic-ideas-are-so-terrible\"\u003ehttps://www.derekthompson.org/p/if-trumps-economic-ideas-are-so-terrible\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44830955\"\u003ehttps://news.ycombinator.com/item?id=44830955\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Models CLI now auto-generates test cases and an evaluator",
+      "link": "https://github.blog/changelog/2025-08-06-models-cli-now-auto-generates-test-cases-and-an-evaluator/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-07T22:03:42Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.blog/changelog/2025-08-06-models-cli-now-auto-generates-test-cases-and-an-evaluator/\"\u003ehttps://github.blog/changelog/2025-08-06-models-cli-now-auto-generates-test-cases-and-an-evaluator/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44830938\"\u003ehttps://news.ycombinator.com/item?id=44830938\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Brazil movie: as prescient as ever, 40 years later",
+      "link": "https://www.theverge.com/film/719308/brazil-movie-terry-gilliam-criterion-4k-restoration",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-07T22:01:48Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.theverge.com/film/719308/brazil-movie-terry-gilliam-criterion-4k-restoration\"\u003ehttps://www.theverge.com/film/719308/brazil-movie-terry-gilliam-criterion-4k-restoration\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44830922\"\u003ehttps://news.ycombinator.com/item?id=44830922\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 4\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "More Worlds, More Power: The Road to Greater Capacity",
+      "link": "https://secure.runescape.com/m=news/more-worlds-more-power-the-road-to-greater-capacity?oldschool=1",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-07T22:01:24Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://secure.runescape.com/m=news/more-worlds-more-power-the-road-to-greater-capacity?oldschool=1\"\u003ehttps://secure.runescape.com/m=news/more-worlds-more-power-the-road-to-greater-capacity?oldschool=1\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44830917\"\u003ehttps://news.ycombinator.com/item?id=44830917\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Disposable Code Is Here to Stay, but Durable Code Is What Runs the World",
+      "link": "https://www.honeycomb.io/blog/disposable-code-is-here-to-stay",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-07T21:58:31Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.honeycomb.io/blog/disposable-code-is-here-to-stay\"\u003ehttps://www.honeycomb.io/blog/disposable-code-is-here-to-stay\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44830890\"\u003ehttps://news.ycombinator.com/item?id=44830890\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Bull Market for Economists Is Over. It's an Ominous Sign for the Economy",
+      "link": "https://www.nytimes.com/2025/07/28/business/economics-jobs-hiring.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-07T21:56:48Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nytimes.com/2025/07/28/business/economics-jobs-hiring.html\"\u003ehttps://www.nytimes.com/2025/07/28/business/economics-jobs-hiring.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44830873\"\u003ehttps://news.ycombinator.com/item?id=44830873\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Symbiont: An open-source agent runtime for building and governing autonomous AI",
+      "link": "https://github.com/ThirdKeyAI/Symbiont",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-07T21:55:20Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/ThirdKeyAI/Symbiont\"\u003ehttps://github.com/ThirdKeyAI/Symbiont\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44830854\"\u003ehttps://news.ycombinator.com/item?id=44830854\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Remarkable News in Potatoes: They Evolved from Tomatoes",
+      "link": "https://www.theatlantic.com/science/archive/2025/07/potato-tomato-evolution-hybrid/683721/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-07T21:54:41Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.theatlantic.com/science/archive/2025/07/potato-tomato-evolution-hybrid/683721/\"\u003ehttps://www.theatlantic.com/science/archive/2025/07/potato-tomato-evolution-hybrid/683721/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44830848\"\u003ehttps://news.ycombinator.com/item?id=44830848\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "We shipped GPT-5 support before lunch",
+      "link": "https://www.assembled.com/blog/how-we-shipped-gpt-5-support-before-lunch",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-07T21:53:01Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.assembled.com/blog/how-we-shipped-gpt-5-support-before-lunch\"\u003ehttps://www.assembled.com/blog/how-we-shipped-gpt-5-support-before-lunch\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44830838\"\u003ehttps://news.ycombinator.com/item?id=44830838\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "In trial, people lost twice as much weight by ditching ultraprocessed food",
+      "link": "https://arstechnica.com/health/2025/08/in-trial-people-lost-twice-as-much-weight-by-ditching-ultraprocessed-food/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-07T21:49:56Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://arstechnica.com/health/2025/08/in-trial-people-lost-twice-as-much-weight-by-ditching-ultraprocessed-food/\"\u003ehttps://arstechnica.com/health/2025/08/in-trial-people-lost-twice-as-much-weight-by-ditching-ultraprocessed-food/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44830813\"\u003ehttps://news.ycombinator.com/item?id=44830813\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Live jamming and personalization in Magenta RealTime open-weights music model",
+      "link": "https://twitter.com/jesseengel/status/1953496623696556478",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-07T21:49:44Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://twitter.com/jesseengel/status/1953496623696556478\"\u003ehttps://twitter.com/jesseengel/status/1953496623696556478\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44830810\"\u003ehttps://news.ycombinator.com/item?id=44830810\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: 'Backed by YC' Embeddable Widget",
+      "link": "https://yc-widget.pages.dev",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-07T21:48:55Z",
+      "description": "\n\u003cp\u003eI thought this would be cool, so I coded it in about 30 minutes, very hacky, but works!\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44830796\"\u003ehttps://news.ycombinator.com/item?id=44830796\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Mathematicians credited with rescuing quantum computing",
+      "link": "https://today.usc.edu/mathematicians-use-neglected-particles-that-could-rescue-quantum-computing/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-07T21:45:29Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://today.usc.edu/mathematicians-use-neglected-particles-that-could-rescue-quantum-computing/\"\u003ehttps://today.usc.edu/mathematicians-use-neglected-particles-that-could-rescue-quantum-computing/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44830762\"\u003ehttps://news.ycombinator.com/item?id=44830762\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Doctor Strange: The curious life of Elon Musk's Canadian grandfather",
+      "link": "https://torontolife.com/deep-dives/doctor-strange-the-curious-life-of-elon-musks-canadian-grandfather/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-07T21:45:19Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://torontolife.com/deep-dives/doctor-strange-the-curious-life-of-elon-musks-canadian-grandfather/\"\u003ehttps://torontolife.com/deep-dives/doctor-strange-the-curious-life-of-elon-musks-canadian-grandfather/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44830760\"\u003ehttps://news.ycombinator.com/item?id=44830760\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Learn Rust by Reasoning with Code Agents",
+      "link": "https://xuanwo.io/2025/05-learn-rust-by-reasoning-with-code-agents/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-07T21:45:15Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://xuanwo.io/2025/05-learn-rust-by-reasoning-with-code-agents/\"\u003ehttps://xuanwo.io/2025/05-learn-rust-by-reasoning-with-code-agents/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44830757\"\u003ehttps://news.ycombinator.com/item?id=44830757\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The worlds most convoluted spirograph [video]",
+      "link": "https://www.youtube.com/watch?v=tuC0qnyPrvM",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-07T21:45:09Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.youtube.com/watch?v=tuC0qnyPrvM\"\u003ehttps://www.youtube.com/watch?v=tuC0qnyPrvM\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44830753\"\u003ehttps://news.ycombinator.com/item?id=44830753\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Why I'm Joining Substack",
+      "link": "https://www.derekthompson.org/p/why-im-joining-substack",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-07T21:42:12Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.derekthompson.org/p/why-im-joining-substack\"\u003ehttps://www.derekthompson.org/p/why-im-joining-substack\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44830729\"\u003ehttps://news.ycombinator.com/item?id=44830729\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "How to Ask Questions the Smart Way",
+      "link": "http://www.catb.org/~esr/faqs/smart-questions.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-07T21:40:51Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"http://www.catb.org/~esr/faqs/smart-questions.html\"\u003ehttp://www.catb.org/~esr/faqs/smart-questions.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44830722\"\u003ehttps://news.ycombinator.com/item?id=44830722\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Improving Oversight of Federal Grantmaking",
+      "link": "https://www.whitehouse.gov/presidential-actions/2025/08/improving-oversight-of-federal-grantmaking/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-07T21:39:26Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.whitehouse.gov/presidential-actions/2025/08/improving-oversight-of-federal-grantmaking/\"\u003ehttps://www.whitehouse.gov/presidential-actions/2025/08/improving-oversight-of-federal-grantmaking/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44830709\"\u003ehttps://news.ycombinator.com/item?id=44830709\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Every Game is the Same Game [video]",
+      "link": "https://www.youtube.com/watch?v=26HyHFTtPpM",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-07T21:38:47Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.youtube.com/watch?v=26HyHFTtPpM\"\u003ehttps://www.youtube.com/watch?v=26HyHFTtPpM\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44830701\"\u003ehttps://news.ycombinator.com/item?id=44830701\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "How AI is helping advance the science of bioacoustics to save endangered species",
+      "link": "https://deepmind.google/discover/blog/how-ai-is-helping-advance-the-science-of-bioacoustics-to-save-endangered-species/",
+      "source": "DeepMind",
+      "category": "tech",
+      "publishedAt": "2025-08-07T14:59:16Z",
+      "description": "Our new Perch model helps conservationists analyze audio faster to protect endangered species, from Hawaiian honeycreepers to coral reefs."
+    },
+    {
+      "title": "The Saga Continues: Stream 2K’s ‘Mafia: The Old Country’ at Launch on GeForce NOW",
+      "link": "https://blogs.nvidia.com/blog/geforce-now-thursday-mafia-the-old-country/",
+      "source": "NVIDIA Blog",
+      "category": "tech",
+      "publishedAt": "2025-08-07T13:00:57Z",
+      "description": "This GFN Thursday brings an offer members can’t refuse — 2K’s highly anticipated Mafia: The Old Country is launching in the cloud today. The prequel to the award-winning action-adventure Mafia series leads five games joining the cloud this week, including the long-awaited launch of Stormgate 1.0 and early access for THQ Nordic’s Titan Quest II.\t\u003ca class=\"read-more\" href=\"https://blogs.nvidia.com/blog/geforce-now-thursday-mafia-the-old-country/\"\u003e\n\t\tRead Article\t\t\u003cspan data-icon=\"y\"\u003e\u003c/span\u003e\n\t\u003c/a\u003e\n\t"
+    }
+  ],
+  "generatedAt": "2025-08-08T07:09:54.266610409+09:00"
+}
