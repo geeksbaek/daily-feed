@@ -335,6 +335,12 @@ export class DailyFeedApp extends LitElement {
     `;
   }
 
+  updated(changedProperties) {
+    if (changedProperties.has('selectedDate')) {
+      this.updateUrl();
+    }
+  }
+
   handleDateChange(e) {
     const newDate = e.detail.date;
     if (newDate && newDate !== this.selectedDate) {
@@ -526,9 +532,16 @@ export class DailyFeedApp extends LitElement {
       this.checkForNewDates(newDates);
       
       this.allDates = newDates;
-      
+
       if (this.allDates.length > 0) {
-        this.selectedDate = this.allDates[0];
+        const urlDate = this.getDateFromUrl();
+        if (urlDate && this.allDates.includes(urlDate)) {
+          this.selectedDate = urlDate;
+        } else if (this.selectedDate && this.allDates.includes(this.selectedDate)) {
+          // keep current selected date
+        } else {
+          this.selectedDate = this.allDates[0];
+        }
         this.updateAvailablePresets();
         await this.loadSelectedDate();
       } else {
@@ -761,6 +774,21 @@ export class DailyFeedApp extends LitElement {
     return '';
   }
 
+  getDateFromUrl() {
+    const params = new URLSearchParams(window.location.search);
+    return params.get('date');
+  }
+
+  updateUrl() {
+    const url = new URL(window.location);
+    if (this.selectedDate) {
+      url.searchParams.set('date', this.selectedDate);
+    } else {
+      url.searchParams.delete('date');
+    }
+    window.history.replaceState({}, '', url);
+  }
+
   saveToLocalStorage() {
     try {
       const dataToSave = {
@@ -790,7 +818,12 @@ export class DailyFeedApp extends LitElement {
           this.currentData = { ...(data.currentData || {}) };
           
           if (this.allDates.length > 0) {
-            this.selectedDate = this.allDates[0];
+            const urlDate = this.getDateFromUrl();
+            if (urlDate && this.allDates.includes(urlDate)) {
+              this.selectedDate = urlDate;
+            } else {
+              this.selectedDate = this.allDates[0];
+            }
             this.showToast(`캐시된 데이터를 표시합니다 (${Math.round(ageHours)}시간 전 데이터)`, 'offline', true, 5000);
             return true;
           }
