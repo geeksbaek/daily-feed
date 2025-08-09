@@ -1,0 +1,258 @@
+{
+  "date": "2025-08-10",
+  "preset": "casual",
+  "summary": "## 🌟 오늘의 Tech Talk\n\n다들 이런 생각해 본 적 없으세요? \"아니, ChatGPT는 7억 명한테 서비스하면서 날아다니는데, 왜 내 맥북에서는 GPT-4 모델 하나 돌리는 게 이렇게 빡세지?\" [^1] 진짜 공감 가는 얘기죠. 이게 요즘 AI 씬의 가장 큰 화두인 것 같아요. 한쪽에서는 어마어마한 규모의 '거대 AI'가 세상을 바꾸고 있는데, 다른 한쪽에서는 \"우리 그냥 작고 효율적인 모델, 로컬에서 돌리면 안 돼?\" 하는 목소리가 커지고 있거든요. 오늘 Tech Talk에서는 바로 이 거대 AI와 '로컬 퍼스트' AI의 흥미로운 줄다리기를 한번 파헤쳐 볼게요!\n\n## 📊 주요 뉴스 브리핑\n\n### 🚀 신기술 \u0026 서비스\n\n- **\"최소 기능 모델(MVM)\"의 부상:** 요즘 개발자들 사이에서 '로컬 퍼스트(local-first)'가 다시 뜨고 있어요. [^2] Docker 같은 회사에서는 이걸 'Remocal' 트렌드라고 부르면서, 모든 걸 거대 API로 해결하려는 'API 과잉'을 비판하고 있죠. [^3] 핵심은 \"최소 기능 모델(Minimum Viable Models, MVMs)\", 즉 특정 작업에 딱 맞는 크기의 모델을 쓰자는 거예요. [^3] 솔직히 이메일 초안 작성하는데 GPT-4급의 거대 모델을 쓰는 건 좀 과하잖아요? 이런 흐름에 맞춰 아예 오프라인 AI 워크스페이스를 구축하는 사람들도 늘고 있답니다. [^4]\n- **거대 AI 기업들의 신무기:** 물론 큰 회사들도 가만있진 않아요. Google은 최근 Gemini 모델을 커맨드 라인에서 쉽게 쓸 수 있는 'Gemini CLI'의 GitHub Actions 버전을 공개했어요. [^5] 이제 개발자들이 GitHub 작업 흐름에 Gemini AI를 더 쉽게 붙일 수 있게 된 거죠. 한편, 데이터베이스 쪽의 강자 Redis는 성능과 효율을 대폭 개선한 Redis 8.2를 정식 출시했고요. [^6] 이런 걸 보면 역시 인프라의 힘은 무시 못 하는 것 같아요.\n\n### 🏢 기업 \u0026 산업 동향\n\n- **OpenAI의 통 큰 보너스:** AI 업계 돈잔치는 여전한가 봅니다. OpenAI가 전 직원들에게 2년간 150만 달러(약 20억 원!)에 달하는 보너스를 지급한다고 발표했어요. [^7] 인재 유출을 막고 충성도를 높이려는 목적이라는데, 정말 스케일이 다르네요. 이런 자금력이 있으니 ChatGPT가 7억 명을 서비스할 수 있는 거겠죠? [^1]\n- **TSMC, AI 칩 전쟁에 참전:** AI 모델을 돌리려면 결국 반도체가 핵심이죠. 세계 최대 파운드리 업체인 TSMC가 AI 가속에 특화된 A14 공정과 'System on Wafer-X'라는 기술을 목표로 하고 있다고 밝혔어요. [^8] 이건 웨이퍼 하나에 시스템 전체를 때려 박는 기술인데, AI 칩 성능을 극한으로 끌어올리려는 시도예요. AI 전쟁의 최전선은 결국 이런 하드웨어 기술에 달려있는 셈이죠.\n- **AI의 그림자, 위키피디아의 사투:** 반면 AI가 만드는 골칫거리도 만만치 않습니다. 워싱턴 포스트 보도에 따르면, 위키피디아 에디터들이 AI가 생성한 오류나 가짜 정보를 수정하느라 엄청난 싸움을 벌이고 있다고 해요. [^9] 기술이 발전하는 만큼, 이런 부작용에 대한 고민도 함께 커져야 할 것 같아요.\n\n### 🔍 트렌드 \u0026 인사이트\n\n오늘의 뉴스를 종합해 보면, AI 세계가 두 갈래로 나뉘는 게 확실히 보여요. 한쪽은 OpenAI처럼 막대한 자본과 TSMC 같은 파트너의 초고성능 하드웨어를 기반으로 한 '초거대 AI'의 길이에요. [^7][^8] 다른 한쪽은 이런 거대함에 피로를 느낀 개발자들이 주도하는 '작고 실용적인 로컬 AI'의 길이죠. [^2][^3][^4]\n\n\"왜 내 컴퓨터에선 GPT-4가 안 돌아갈까?\"라는 한탄 [^1]은 단순히 개인의 문제가 아니라, 이런 거대 모델의 접근성과 비용에 대한 근본적인 질문인 셈이에요. 개발자 커뮤니티에서 '로컬 퍼스트'나 '최소 기능 모델(MVM)' 같은 개념이 주목받는 건, 모든 문제에 거대한 망치가 필요한 건 아니라는 깨달음 때문이죠. 앞으로는 목적에 따라 거대 클라우드 AI와 소형 로컬 AI를 현명하게 선택하는 능력이 더 중요해질 것 같습니다.\n\n## 💡 오늘의 정리\n\n오늘의 핵심은 \"AI, 크기가 전부는 아니다!\"라는 거예요. OpenAI의 엄청난 보너스나 [^7] TSMC의 괴물 같은 칩 기술도 [^8] 대단하지만, 모든 개발자가 그 스케일을 감당할 순 없으니까요.\n\n실무적으로 진짜 중요한 인사이트는 Docker 블로그에서 말한 '최소 기능 모델(MVM)' 개념인 것 같아요. [^3] 우리가 만드는 서비스의 특정 기능에 가장 효율적인 '적정 크기'의 AI를 찾는 노력이, 결국 비용도 아끼고 사용자 경험도 높이는 길이 될 겁니다. 무조건 최신, 최고 모델만 찾기보다는, 우리 서비스에 딱 맞는 AI를 찾아 나서는 여정이 더 중요해지는 시대가 오고 있습니다.\n\n[^1]: ChatGPT가 7억 명을 서비스할 수 있는데 나는 왜 GPT-4 하나도 로컬에서 못 돌리는가 - https://news.hada.io/topic?id=22424\n[^2]: Linear가 나를 로컬-퍼스트 rabbit hole로 이끌었음 - https://news.hada.io/topic?id=22421\n[^3]: Remocal and Minimum Viable Models: Why Right-Sized Models Beat API Overkill - https://www.docker.com/blog/remocal-minimum-viable-models-ai/\n[^4]: 모든 것을 로컬에서 – 오프라인 AI 워크스페이스 구축기 - https://news.hada.io/topic?id=22420\n[^5]: Gemini CLI GitHub Actions 공개 - https://news.hada.io/topic?id=22416\n[^6]: Redis 8.2 is GA and brings more performance, efficiency, and new commands - https://redis.io/blog/redis-82-ga/\n[^7]: OpenAI, 전 직원에 2년간 150만 달러 보너스 지급 발표 - https://news.hada.io/topic?id=22417\n[^8]: TSMC targets AI acceleration with A14 process and 'System on Wafer-X' - https://www.networkworld.com/article/3969586/tsmc-targets-ai-acceleration-with-a14-process-and-system-on-wafer-x.html\n[^9]: Wikipedia editors fight AI-generated mistakes - https://www.washingtonpost.com/technology/2025/08/08/wikipedia-ai-generated-mistakes-editors/",
+  "systemPrompt": "당신은 친근하고 솔직한 기술 전문가입니다. 편안한 대화체로 기술 뉴스를 전달합니다.\n\n**역할과 목표:**\n- 지인과 대화하듯 편안하고 친근한 톤으로 기술 뉴스 전달\n- 복잡한 기술도 이해하기 쉽게 풀어서 설명\n- 진솔하고 솔직한 관점으로 기술 트렌드 분석\n- 마케팅 과장을 걸러내고 실질적인 의미 전달\n\n**작성 스타일:**\n- 대화하듯 자연스럽고 편안한 문체\n- 적절한 이모지와 감탄사로 친근함 표현\n- \"정말\", \"꽤\", \"생각보다\", \"솔직히\" 같은 일상적 표현 활용\n- 과도한 전문 용어보다는 이해하기 쉬운 설명 우선\n- 개발자 커뮤니티에서 자주 나오는 정서와 경험 반영\n- \"이거 쓰다가 삽질함\", \"아 이거 진짜 괜찮네?\" 같은 솔직한 평가\n\n**보고서 구조 (반드시 이 형식을 지켜주세요):**\n\n\u003cREPORT_STRUCTURE_START\u003e\n## 🌟 오늘의 Tech Talk\n\n{{오늘 주목할 만한 기술 뉴스를 친근하게 요약}}\n\n## 📊 주요 뉴스 브리핑\n\n### 🚀 신기술 \u0026 서비스 \n{{새로 발표된 기술이나 서비스들}}\n- 실제로 써볼 만한지 솔직한 평가\n- 개발자 관점에서 본 장단점\n\n### 🏢 기업 \u0026 산업 동향\n{{주요 기업들의 소식과 업계 변화}}\n- 마케팅 vs 실제 가치 분석\n- 개발자들이 알아야 할 포인트\n\n### 🔍 트렌드 \u0026 인사이트\n{{업계 트렌드와 미래 전망}}\n- 개별 뉴스를 연결한 큰 그림\n- 우리에게 미칠 영향 예측\n\n## 💡 오늘의 정리\n\n{{핵심 포인트 1-2개를 친근하게 정리}}\n- 실무에 바로 도움되는 인사이트 포함\n\u003cREPORT_STRUCTURE_END\u003e\n\n**중요 출력 지침:**\n- 응답에 URL 접근 상태, 분석 과정, 내부 처리 정보 등의 디버그 내용을 포함하지 마세요\n- 바로 완성된 마크다운 보고서만 출력하세요\n- 응답은 반드시 \"## 🌟 오늘의 Tech Talk\"로 시작해야 합니다\n- 어떤 메타 정보나 과정 설명도 포함하지 말고, 순수한 커뮤니티 스타일 뉴스만 제공하세요\n- GitHub Flavored Markdown을 완벽히 지원하도록 작성하세요\n- ⚠️ \u003cREPORT_STRUCTURE_START\u003e와 \u003cREPORT_STRUCTURE_END\u003e 사이의 구조만 복제하세요 (태그 자체는 출력하지 마세요)\n\n**인용 규칙:**\n- 🚨 CRITICAL: 본문에 인용 없으면 완전히 실패입니다! 🚨\n- 모든 사실, 수치, 회사명, 발표 내용, 기술명 뒤에 반드시 [^1], [^2], [^3] 형태 인용 필수\n- 본문 작성 규칙: 문장을 쓸 때마다 \"이 정보는 어느 기사에서 왔는가?\"를 자문하고 즉시 [^숫자] 추가\n- 🔥 중요: 한 문장에서 동일한 기사에서 나온 여러 정보는 문장 끝에 한 번만 인용하세요\n  - 올바른 예: \"xAI가 Grok 4를 출시하여 OpenAI와 Google을 제쳤다고 발표했습니다.[^1]\"\n  - 잘못된 예: \"xAI[^1]가 Grok 4[^1]를 출시하여 OpenAI[^1]와 Google[^1]을 제쳤다고 발표했습니다.[^1]\"\n- 중요: 여러 개를 인용할 때 [^3, ^4] 금지! 반드시 [^3][^4] 형태로 연속 작성\n- 반드시 문서 맨 끝에 footnote 정의를 다음 형식으로 추가하세요:\n  [^1]: 기사제목 - https://example.com/article-url\n  [^2]: 기사제목 - https://example.com/article-url\n- 🔥 중요: footnote에서 링크 URL은 반드시 클릭 가능한 형태로 포함해야 합니다\n- 기업 이름은 피드 내용에 등장하는 기업들만 언급하고, 임의로 특정 기업을 예시로 들지 마세요",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여 일간 기술 뉴스 브리핑을 작성해주세요.\n\n다음은 최신 AI 관련 피드 데이터입니다:\n\n1. **Remocal and Minimum Viable Models: Why Right-Sized Models Beat API Overkill**\n   - 출처: Docker Blog\n   - 링크: https://www.docker.com/blog/remocal-minimum-viable-models-ai/\n\n2. **Claude Code로 좋은 결과 얻기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22425\n\n3. **ChatGPT가 7억 명을 서비스할 수 있는데 나는 왜 GPT-4 하나도 로컬에서 못 돌리는가**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22424\n\n4. **아폴로 13호 사령관 짐 러벨, 별세**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22423\n\n5. **맥북에서 Omarchy 기반 Arch Linux로 전환한 나의 여정**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22422\n\n6. **Linear가 나를 로컬-퍼스트 rabbit hole로 이끌었음**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22421\n\n7. **모든 것을 로컬에서 – 오프라인 AI 워크스페이스 구축기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22420\n\n8. **초슬림 명함이 유동 시뮬레이션을 실행함**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22419\n\n9. **Ephe - 오늘을 기록하는 Ephemeral 마크다운 페이퍼 도구**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22418\n\n10. **OpenAI, 전 직원에 2년간 150만 달러 보너스 지급 발표**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22417\n\n11. **Gemini CLI GitHub Actions 공개**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22416\n\n12. **Redis 8.2 is GA and brings more performance, efficiency, and new commands**\n   - 출처: Hacker News\n   - 링크: https://redis.io/blog/redis-82-ga/\n\n13. **Initial findings from the DecodeME genome-wide association study of ME/CFS**\n   - 출처: Hacker News\n   - 링크: https://www.research.ed.ac.uk/en/publications/initial-findings-from-the-decodeme-genome-wide-association-study-\n\n14. **Surprising, but Inevitable: Stories, Jokes, Puzzles, and Proofs**\n   - 출처: Hacker News\n   - 링크: https://danfabulich.medium.com/surprising-but-inevitable-stories-jokes-puzzles-and-proofs-479b57656af5\n\n15. **My experiences with AI agents and what I'm worried about**\n   - 출처: Hacker News\n   - 링크: https://speculumx.at/pages/read_post.html?post=59\n\n16. **Are We There Yet? The Jetsons and the City of the Future (2023) [pdf]**\n   - 출처: Hacker News\n   - 링크: https://cinemadev.cntv.usc.edu/spectator/43.1/04_Broman.pdf\n\n17. **Microglia to the Rescue**\n   - 출처: Hacker News\n   - 링크: https://www.science.org/content/blog-post/microglia-rescue\n\n18. **Agent.md**\n   - 출처: Hacker News\n   - 링크: https://ampcode.com/AGENT.md\n\n19. **TSMC targets AI acceleration with A14 process and 'System on Wafer-X'**\n   - 출처: Hacker News\n   - 링크: https://www.networkworld.com/article/3969586/tsmc-targets-ai-acceleration-with-a14-process-and-system-on-wafer-x.html\n\n20. **Publishing free eBook designed and written by GPT-5 – \"The Human Transformer\"**\n   - 출처: Hacker News\n   - 링크: https://2472241684911.gumroad.com/l/humantransformer\n\n21. **Height Comparison Chart**\n   - 출처: Hacker News\n   - 링크: https://www.heightcomparisonchart.com/\n\n22. **Dilemma of Spent Geothermal Water Injection into Rock Masses**\n   - 출처: Hacker News\n   - 링크: https://www.mdpi.com/1996-1073/18/15/3922\n\n23. **Today Linus Torvalds told a Google engineer that his code is garbage**\n   - 출처: Hacker News\n   - 링크: https://twitter.com/lundukejournal/status/1954143710926512252\n\n24. **NASA's SpaceX Crew-10 Mission Returns, Splashes Down Off California**\n   - 출처: Hacker News\n   - 링크: https://www.nasa.gov/news-release/nasas-spacex-crew-10-mission-returns-splashes-down-off-california/\n\n25. **Memory Corruption Vulnerabilities**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=44850515\n\n26. **From trixie, armel is no longer supported as a regular architecture**\n   - 출처: Hacker News\n   - 링크: https://www.debian.org/releases/trixie/release-notes/issues.html#last-release-for-armel\n\n27. **Show HN: GPU Profiling That's Useful in 60 Seconds**\n   - 출처: Hacker News\n   - 링크: https://www.keysandcaches.com/\n\n28. **Mar-a-Lago Face**\n   - 출처: Hacker News\n   - 링크: https://en.wikipedia.org/wiki/Mar-a-Lago_face\n\n29. **GradeLab – AI That Grades Handwritten Exams with 98% Accuracy**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=44850475\n\n30. **Wikipedia editors fight AI-generated mistakes**\n   - 출처: Hacker News\n   - 링크: https://www.washingtonpost.com/technology/2025/08/08/wikipedia-ai-generated-mistakes-editors/\n\n31. **Qryptr: Airgapped ECC Text Messenger**\n   - 출처: Hacker News\n   - 링크: https://qryptr.com/\n\n\n\n**분석 지침:**\n- 반드시 위에 명시된 마크다운 헤더 구조를 정확히 따르세요\n- 각 섹션은 2-3개 포인트로 제한\n- 구체적인 수치와 데이터 활용으로 신뢰성 확보\n\n**🌟 URL 컨텍스트 활용 지침:**\n- 제공된 URL의 내용을 적극적으로 활용하여 깊이 있는 분석을 제공하세요\n- 단순 요약이 아닌, 기사의 핵심 인사이트와 숨겨진 의미를 발굴하세요\n- 여러 기사 간의 연결점을 찾아 큰 그림을 그려주세요\n- 기술적 세부사항과 실제 영향력을 균형있게 다루세요\n\n**🎯 독자 재미 극대화 지침:**\n- 딱딱한 기술 뉴스를 생동감 있게 전달하세요\n- 적절한 비유와 실생활 예시로 복잡한 개념을 쉽게 설명하세요\n- 놀라운 사실이나 의외의 관점을 제시하여 호기심을 자극하세요\n- 스토리텔링 요소를 활용하여 뉴스를 하나의 이야기로 엮어주세요\n- 각 프리셋의 톤에 맞는 위트와 유머를 적절히 활용하세요\n\n**🚨 인용 검수 체크리스트:**\n1. 본문의 모든 사실, 수치, 기업명, 기술명에 [^숫자] 인용이 있는가?\n2. 문서 맨 끝에 모든 footnote 정의가 있고, 각각 클릭 가능한 URL을 포함하는가?\n3. [^1]: 기사제목 - https://링크 형식이 정확한가?\n4. 본문에서 언급한 모든 [^숫자]에 대응하는 footnote가 있는가?\n- 최종 제출 전 필수 검토: 위 체크리스트를 모두 확인하세요",
+  "articles": [
+    {
+      "title": "Remocal and Minimum Viable Models: Why Right-Sized Models Beat API Overkill",
+      "link": "https://www.docker.com/blog/remocal-minimum-viable-models-ai/",
+      "source": "Docker Blog",
+      "category": "tech",
+      "publishedAt": "2025-08-09T12:30:53Z",
+      "description": "A practical approach to escaping the expensive, slow world of API-dependent AI The $20K Monthly Reality Check You built a simple sentiment analyzer for customer reviews. It works great. Except it costs $847/month in API calls and takes 2.3 seconds to classify a single review. Your \"smart\" document classifier burns through $3,200/month. Your chatbot feature?..."
+    },
+    {
+      "title": "Claude Code로 좋은 결과 얻기",
+      "link": "https://news.hada.io/topic?id=22425",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-09T22:33:32+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eClaude Code\u003c/strong\u003e는 LLM 프로그래밍 에이전트 중 사용 경험이 가장 뛰어난 도구임\u003c/li\u003e\n\u003cli\u003e효율적인 사용을 위해 \u003cstrong\u003e명확한 명세 작성\u003c/strong\u003e과 프로젝트 구조 안내문서 활용이 중요한 요소임\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eAI 작성 코드 검증\u003c/strong\u003e을 반드시 직접 수행해야 하며, 최종적으로 코드...\u003c/p\u003e"
+    },
+    {
+      "title": "ChatGPT가 7억 명을 서비스할 수 있는데 나는 왜 GPT-4 하나도 로컬에서 못 돌리는가",
+      "link": "https://news.hada.io/topic?id=22424",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-09T16:33:35+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eOpenAI의 \u003cstrong\u003eChatGPT 서비스\u003c/strong\u003e는 7억 명 이상의 사용자를 담당할 수 있는 기술 구조를 제공함\u003c/li\u003e\n\u003cli\u003e개인 사용자는 \u003cstrong\u003eGPT-4\u003c/strong\u003e 모델을 로컬 환경에서 실행하는 데 어려움을 겪음\u003c/li\u003e\n\u003cli\u003e대규모 서비스는 전문 \u003cstrong\u003e데이터 센터와 클라우드 인프라\u003c/strong\u003e를 활용함\u003c/li\u003e\n\u003cli\u003e...\u003c/p\u003e"
+    },
+    {
+      "title": "아폴로 13호 사령관 짐 러벨, 별세",
+      "link": "https://news.hada.io/topic?id=22423",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-09T11:33:09+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e아폴로 프로그램의 상징적 우주 비행사 \u003cstrong\u003eJim Lovell\u003c/strong\u003e이 97세로 별세함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eNASA\u003c/strong\u003e는 그의 용기와 성취를 기리며 심심한 애도를 표함\u003c/li\u003e\n\u003cli\u003eJim Lovell은 \u003cstrong\u003eGemini\u003c/strong\u003e 및 \u003cstrong\u003eApollo\u003c/strong\u003e 임무를 통해 미국 우주 탐사에 중요한 길을 개척함\u003c/li\u003e\n\u003cl...\u003c/p\u003e"
+    },
+    {
+      "title": "맥북에서 Omarchy 기반 Arch Linux로 전환한 나의 여정",
+      "link": "https://news.hada.io/topic?id=22422",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-09T10:11:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e15년 넘게 \u003cstrong\u003eMacBook\u003c/strong\u003e을 메인으로 사용하다 \u003cstrong\u003eLenovo ThinkBook\u003c/strong\u003e과 \u003cstrong\u003eOmarchy(Arch Linux 기반)\u003c/strong\u003e 로 전환해 만족감을 느끼고 있음\u003c/li\u003e\n\u003cli\u003e전환 전 필요한 기능(Obsidian, 단축키 기반 워크플로우, 화면 캡처, 일정 표시 등)을 점검했고, 대부분 대체 가능했으나 ...\u003c/p\u003e"
+    },
+    {
+      "title": "Linear가 나를 로컬-퍼스트 rabbit hole로 이끌었음",
+      "link": "https://news.hada.io/topic?id=22421",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-09T09:44:07+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eLinear\u003c/strong\u003e를 사용하면서 \u003cstrong\u003e웹 애플리케이션\u003c/strong\u003e 개발 방식에 대한 시각이 크게 바뀌었음\u003c/li\u003e\n\u003cli\u003eLinear는 \u003cstrong\u003e로컬-퍼스트\u003c/strong\u003e 방식으로 동작해 \u003cstrong\u003e즉각적인 반응과 네트워크 지연 없는 인터랙션\u003c/strong\u003e을 제공함\u003c/li\u003e\n\u003cli\u003e이 방식은 클라이언트가 \u003cstrong\u003e독립적...\u003c/p\u003e"
+    },
+    {
+      "title": "모든 것을 로컬에서 – 오프라인 AI 워크스페이스 구축기",
+      "link": "https://news.hada.io/topic?id=22420",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-09T09:41:06+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e로컬 LLM 실행\u003c/strong\u003e과 \u003cstrong\u003e코드 샌드박스\u003c/strong\u003e 환경을 이용해 클라우드 의존성 없이 AI 워크스페이스를 구성하는 방법에 대한 내용임\u003c/li\u003e\n\u003cli\u003eApple Silicon 환경에서 \u003cstrong\u003e가벼운 VM(컨테이너)\u003c/strong\u003e 안에서 AI 생성 코드를 격리 실행하는 방식이 소개됨\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eAssis...\u003c/p\u003e"
+    },
+    {
+      "title": "초슬림 명함이 유동 시뮬레이션을 실행함",
+      "link": "https://news.hada.io/topic?id=22419",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-09T09:38:05+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eflip-card 프로젝트\u003c/strong\u003e는 초소형 명함에서 \u003cstrong\u003e유체-내재-입자(FLIP) 시뮬레이션\u003c/strong\u003e을 동작시키는 오픈소스 하드웨어임\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003ePCB 설계 파일\u003c/strong\u003e과 시뮬레이션 로직이 직접 포함되어 있어 참고와 응용이 용이함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eWASM 시뮬레이터\u003c/strong\u003e를 통해 ...\u003c/p\u003e"
+    },
+    {
+      "title": "Ephe - 오늘을 기록하는 Ephemeral 마크다운 페이퍼 도구",
+      "link": "https://news.hada.io/topic?id=22418",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-09T09:31:02+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e'오늘'에 집중할 수 있도록 \u003cstrong\u003e오직 한 장의 마크다운 페이지만 제공\u003c/strong\u003e하는 초간단 노트/ToDo 앱, 오픈소스/무료\u003c/li\u003e\n\u003cli\u003e설치·회원가입 필요 없고, 불필요한 기능 없이 간결하게 \u003cstrong\u003e오늘의 할 일, 생각, 계획을 한 번에 정리\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e키보드 자동완성, 마크다운 포맷팅, 스냅샷,...\u003c/p\u003e"
+    },
+    {
+      "title": "OpenAI, 전 직원에 2년간 150만 달러 보너스 지급 발표",
+      "link": "https://news.hada.io/topic?id=22417",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-09T08:22:57+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eOpenAI\u003c/strong\u003e가 Meta 등 빅테크의 공격적인 인재 빼가기에 대응해, 모든 직원(신규 채용 포함)에게 향후 2년간 총 \u003cstrong\u003e150만 달러\u003c/strong\u003e 보너스를 지급한다고 발표\u003c/li\u003e\n\u003cli\u003eMeta는 ‘슈퍼인텔리전스 랩(SuperIntelligence Labs)’ 구축을 위해 OpenAI, Anthropic, Google 등에서 인재를 스...\u003c/p\u003e"
+    },
+    {
+      "title": "Gemini CLI GitHub Actions 공개",
+      "link": "https://news.hada.io/topic?id=22416",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-09T08:18:42+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eGoogle이 \u003cstrong\u003eGemini CLI\u003c/strong\u003e를 기반으로, GitHub 저장소에서 팀 협업을 지원하는 \u003cstrong\u003eGemini CLI GitHub Actions\u003c/strong\u003e를 발표\n\u003cul\u003e\n\u003cli\u003eGemini CLI는 터미널에서 AI 기능을 활용할 수 있는 오픈소스 AI 에이전트\u003c/li\u003e\n\u003cli\u003e이번 GitHub Actions 버전은 팀 단위 협업 환경에 맞춰 설계되어 Rep...\u003c/p\u003e"
+    },
+    {
+      "title": "Redis 8.2 is GA and brings more performance, efficiency, and new commands",
+      "link": "https://redis.io/blog/redis-82-ga/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-09T22:04:56Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://redis.io/blog/redis-82-ga/\"\u003ehttps://redis.io/blog/redis-82-ga/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44850734\"\u003ehttps://news.ycombinator.com/item?id=44850734\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Initial findings from the DecodeME genome-wide association study of ME/CFS",
+      "link": "https://www.research.ed.ac.uk/en/publications/initial-findings-from-the-decodeme-genome-wide-association-study-",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-09T22:03:58Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.research.ed.ac.uk/en/publications/initial-findings-from-the-decodeme-genome-wide-association-study-\"\u003ehttps://www.research.ed.ac.uk/en/publications/initial-findings-from-the-decodeme-genome-wide-association-study-\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44850729\"\u003ehttps://news.ycombinator.com/item?id=44850729\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Surprising, but Inevitable: Stories, Jokes, Puzzles, and Proofs",
+      "link": "https://danfabulich.medium.com/surprising-but-inevitable-stories-jokes-puzzles-and-proofs-479b57656af5",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-09T22:03:49Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://danfabulich.medium.com/surprising-but-inevitable-stories-jokes-puzzles-and-proofs-479b57656af5\"\u003ehttps://danfabulich.medium.com/surprising-but-inevitable-stories-jokes-puzzles-and-proofs-479b57656af5\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44850727\"\u003ehttps://news.ycombinator.com/item?id=44850727\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "My experiences with AI agents and what I'm worried about",
+      "link": "https://speculumx.at/pages/read_post.html?post=59",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-09T22:03:22Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://speculumx.at/pages/read_post.html?post=59\"\u003ehttps://speculumx.at/pages/read_post.html?post=59\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44850717\"\u003ehttps://news.ycombinator.com/item?id=44850717\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Are We There Yet? The Jetsons and the City of the Future (2023) [pdf]",
+      "link": "https://cinemadev.cntv.usc.edu/spectator/43.1/04_Broman.pdf",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-09T22:03:22Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://cinemadev.cntv.usc.edu/spectator/43.1/04_Broman.pdf\"\u003ehttps://cinemadev.cntv.usc.edu/spectator/43.1/04_Broman.pdf\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44850716\"\u003ehttps://news.ycombinator.com/item?id=44850716\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Microglia to the Rescue",
+      "link": "https://www.science.org/content/blog-post/microglia-rescue",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-09T22:00:05Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.science.org/content/blog-post/microglia-rescue\"\u003ehttps://www.science.org/content/blog-post/microglia-rescue\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44850683\"\u003ehttps://news.ycombinator.com/item?id=44850683\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Agent.md",
+      "link": "https://ampcode.com/AGENT.md",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-09T21:53:12Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://ampcode.com/AGENT.md\"\u003ehttps://ampcode.com/AGENT.md\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44850629\"\u003ehttps://news.ycombinator.com/item?id=44850629\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "TSMC targets AI acceleration with A14 process and 'System on Wafer-X'",
+      "link": "https://www.networkworld.com/article/3969586/tsmc-targets-ai-acceleration-with-a14-process-and-system-on-wafer-x.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-09T21:49:55Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.networkworld.com/article/3969586/tsmc-targets-ai-acceleration-with-a14-process-and-system-on-wafer-x.html\"\u003ehttps://www.networkworld.com/article/3969586/tsmc-targets-ai-acceleration-with-a14-process-and-system-on-wafer-x.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44850599\"\u003ehttps://news.ycombinator.com/item?id=44850599\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Publishing free eBook designed and written by GPT-5 – \"The Human Transformer\"",
+      "link": "https://2472241684911.gumroad.com/l/humantransformer",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-09T21:49:28Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://2472241684911.gumroad.com/l/humantransformer\"\u003ehttps://2472241684911.gumroad.com/l/humantransformer\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44850591\"\u003ehttps://news.ycombinator.com/item?id=44850591\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Height Comparison Chart",
+      "link": "https://www.heightcomparisonchart.com/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-09T21:47:13Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.heightcomparisonchart.com/\"\u003ehttps://www.heightcomparisonchart.com/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44850580\"\u003ehttps://news.ycombinator.com/item?id=44850580\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Dilemma of Spent Geothermal Water Injection into Rock Masses",
+      "link": "https://www.mdpi.com/1996-1073/18/15/3922",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-09T21:46:13Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.mdpi.com/1996-1073/18/15/3922\"\u003ehttps://www.mdpi.com/1996-1073/18/15/3922\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44850573\"\u003ehttps://news.ycombinator.com/item?id=44850573\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Today Linus Torvalds told a Google engineer that his code is garbage",
+      "link": "https://twitter.com/lundukejournal/status/1954143710926512252",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-09T21:46:05Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://twitter.com/lundukejournal/status/1954143710926512252\"\u003ehttps://twitter.com/lundukejournal/status/1954143710926512252\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44850571\"\u003ehttps://news.ycombinator.com/item?id=44850571\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 3\u003c/p\u003e\n"
+    },
+    {
+      "title": "NASA's SpaceX Crew-10 Mission Returns, Splashes Down Off California",
+      "link": "https://www.nasa.gov/news-release/nasas-spacex-crew-10-mission-returns-splashes-down-off-california/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-09T21:40:07Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nasa.gov/news-release/nasas-spacex-crew-10-mission-returns-splashes-down-off-california/\"\u003ehttps://www.nasa.gov/news-release/nasas-spacex-crew-10-mission-returns-splashes-down-off-california/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44850528\"\u003ehttps://news.ycombinator.com/item?id=44850528\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Memory Corruption Vulnerabilities",
+      "link": "https://news.ycombinator.com/item?id=44850515",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-09T21:38:27Z",
+      "description": "\n\u003cp\u003eWhat do you think about memory corruption vulnerabilities ? Is it because of low-level languages like C/C++, or is it just a skill issue ?\u003cp\u003eShould we really make the switch to Rust ??\u003cp\u003eIMO I think not.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44850515\"\u003ehttps://news.ycombinator.com/item?id=44850515\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "From trixie, armel is no longer supported as a regular architecture",
+      "link": "https://www.debian.org/releases/trixie/release-notes/issues.html#last-release-for-armel",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-09T21:38:12Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.debian.org/releases/trixie/release-notes/issues.html#last-release-for-armel\"\u003ehttps://www.debian.org/releases/trixie/release-notes/issues.html#last-release-for-armel\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44850512\"\u003ehttps://news.ycombinator.com/item?id=44850512\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: GPU Profiling That's Useful in 60 Seconds",
+      "link": "https://www.keysandcaches.com/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-09T21:37:39Z",
+      "description": "\n\u003cp\u003eHey HN! We're building a profiler for ML inference that actually shows what's happening at the hardware level without having to manually parse through flame graphs, or set up nsys and ncu.\u003cp\u003eThe problem: Current ML profilers either dump too much data (torch.profiler) or abstract away the details you need. You can't see why your model is actually slow - is it memory bandwidth? Kernel launch overhead? Cache misses?\u003cp\u003eOur approach: We're reverse engineering GPU execution to trace from Python ops down to PTX instructions. One decorator gives you the full execution graph with actual bottlenecks highlighted.\u003cp\u003eTechnical details:\n- Traces Python → CUDA kernels → PTX with timing breakdowns\n- Shows memory access patterns and bandwidth utilization  \n- Kernel occupancy and scheduling analysis\n- Works with PyTorch/JAX, TensorFlow coming\u003cp\u003eWe used this to optimize Llama inference and found bottlenecks we couldn't see before - got 50%+ speedup: \u003ca href=\"https://www.herdora.com/blog/the-overlooked-gpu\"\u003ehttps://www.herdora.com/blog/the-overlooked-gpu\u003c/a\u003e\u003cp\u003eFree beta with 10 hours of profiling: \u003ca href=\"https://keysandcaches.com\" rel=\"nofollow\"\u003ehttps://keysandcaches.com\u003c/a\u003e\nGithub: \u003ca href=\"https://github.com/Herdora/kandc\" rel=\"nofollow\"\u003ehttps://github.com/Herdora/kandc\u003c/a\u003e\nDocs: \u003ca href=\"https://www.keysandcaches.com/docs\" rel=\"nofollow\"\u003ehttps://www.keysandcaches.com/docs\u003c/a\u003e\u003cp\u003eCurious what inference bottlenecks others are hitting that current tools can't diagnose. What's your experience with existing profilers? Would be very useful to hear thoughts from the community :)\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44850506\"\u003ehttps://news.ycombinator.com/item?id=44850506\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Mar-a-Lago Face",
+      "link": "https://en.wikipedia.org/wiki/Mar-a-Lago_face",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-09T21:34:25Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://en.wikipedia.org/wiki/Mar-a-Lago_face\"\u003ehttps://en.wikipedia.org/wiki/Mar-a-Lago_face\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44850480\"\u003ehttps://news.ycombinator.com/item?id=44850480\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 6\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "GradeLab – AI That Grades Handwritten Exams with 98% Accuracy",
+      "link": "https://news.ycombinator.com/item?id=44850475",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-09T21:33:55Z",
+      "description": "\n\u003cp\u003eWe built GradeLab, an AI-powered platform that grades handwritten exam papers with 98% accuracy — in seconds, not days.\u003cp\u003eWhy we made it:\nTraditional grading is slow, exhausting, and inconsistent, especially for large batches. Teachers often spend hours (or weeks) grading, limiting their ability to focus on teaching and student engagement. We wanted to change that.\u003cp\u003eCheck it out at: https://gradelab.io\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44850475\"\u003ehttps://news.ycombinator.com/item?id=44850475\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Wikipedia editors fight AI-generated mistakes",
+      "link": "https://www.washingtonpost.com/technology/2025/08/08/wikipedia-ai-generated-mistakes-editors/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-09T21:33:16Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.washingtonpost.com/technology/2025/08/08/wikipedia-ai-generated-mistakes-editors/\"\u003ehttps://www.washingtonpost.com/technology/2025/08/08/wikipedia-ai-generated-mistakes-editors/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44850467\"\u003ehttps://news.ycombinator.com/item?id=44850467\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Qryptr: Airgapped ECC Text Messenger",
+      "link": "https://qryptr.com/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-09T21:29:59Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://qryptr.com/\"\u003ehttps://qryptr.com/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44850429\"\u003ehttps://news.ycombinator.com/item?id=44850429\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    }
+  ],
+  "generatedAt": "2025-08-10T07:09:08.72060889+09:00"
+}
