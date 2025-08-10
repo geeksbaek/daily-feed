@@ -1,0 +1,250 @@
+{
+  "date": "2025-08-11",
+  "preset": "casual",
+  "summary": "## 🌟 오늘의 Tech Talk\n\n안녕하세요! 오늘 테크 뉴스, 솔직히 말해서 좀 흥미로운 주제들이 많네요. 요즘 AI 때문에 개발자들이 \"코딩하다가 바보 되는 것 같다\"는 푸념이 심심찮게 들리는데요.[^2] 진짜로 AI가 우리를 게으르게만 만드는 걸까요? 아니면 똑똑하게 활용할 방법이 있는 걸까요? 마침 GPT-5 시스템 프롬프트로 보이는 내용이 유출됐다는 소식부터,[^1] 비싼 Elasticsearch랑 MongoDB를 Rust로 갈아엎은 용자들의 이야기까지,[^3] 개발자들 뒷목 잡게 하거나 혹은 \"오, 이거 괜찮은데?\" 싶은 소식들을 한가득 가져왔습니다. 커피 한 잔 타 오셔서 편하게 들어보세요! ☕\n\n## 📊 주요 뉴스 브리핑\n\n### 🚀 신기술 \u0026 서비스\n\n- **GPT-5 시스템 프롬프트 유출설?!**: 깃허브에 GPT-5의 시스템 프롬프트로 추정되는 문서가 올라와서 커뮤니티가 떠들썩해요.[^1] 문서에는 이미지 생성이나 파이썬 코드 실행 같은 툴 사용법, 심지어 개인정보 처리 기준까지 엄청 상세하게 나와있다고 하네요.[^1] 이게 진짜라면 OpenAI의 최신 기술 방향을 엿볼 수 있는 대박 사건인데, 개발자들 사이에서는 \"이거 진짜 맞아?\" 아니면 \"LLM이 그냥 지어낸 거 아냐?\"라며 갑론을박이 한창입니다.[^1] 솔직히 이런 내부 지침 하나하나가 모델의 성격을 결정하는 거라, 진짜 흥미로운 구경거리죠.\n- **AI로 돈 버는 새로운 방법**: 코딩 실력만 있다면 시급 50달러에서 100달러를 받을 수 있는 'AI 데이터 트레이너' 채용 공고가 올라왔어요. AI를 가르치는 코딩 전문가를 구한다는 건데, AI 덕분에 일자리가 사라진다는 걱정 속에서 오히려 새로운 기회가 생기는 것 같아 신기하네요.\n- **요즘은 무료 AI 전성시대**: 개발 비용 걱정 없이 AI를 활용하는 꿀팁들이 공유됐어요.[^6] 굳이 비싼 유료 툴을 쓰지 않아도, 웹 브라우저에서 여러 무료 AI 모델을 동시에 띄워놓고 질문하면서 최상의 결과를 얻는 방식인데요.[^6] 예를 들어 GLM 4.5, Kimi K2, Qwen3 Coder 같은 다양한 모델을 병렬로 사용하는 거죠.[^6] 생각보다 웹 기반 챗 인터페이스가 전문 코딩 에이전트보다 나은 결과를 줄 때도 많다고 하니, 한번 시도해볼 만하지 않나요?\n\n### 🏢 기업 \u0026 산업 동향\n\n- **DB 갈아엎기 대작전**: 위치 기반 서비스를 하는 Radar라는 회사에서 기존에 쓰던 Elasticsearch와 MongoDB를 들어내고, 자체 개발한 HorizonDB로 바꿨다는 소식입니다.[^3] 놀라운 건 이걸 Rust 언어와 RocksDB, Tantivy 같은 오픈소스를 조합해서 만들었다는 점이에요.[^3] 덕분에 월 수만 달러의 비용을 아끼고 성능과 안정성까지 잡았다니, \"우리도 저렇게 해볼까?\" 하는 생각이 들게 만드는 성공 사례네요.\n- **AWS의 검증 가능한 보안**: AWS에서 '재현 가능한 빌드(Reproducible builds)'와 Nitro Enclaves를 결합해 보안을 강화하는 방법을 소개했어요.[^4] 똑같은 소스 코드는 누가, 어디서 빌드하든 항상 동일한 결과물을 만들어내서 중간에 뭔가 변조되지 않았다는 걸 증명하는 기술이죠.[^4] 이걸 AWS Nitro Enclaves라는 격리된 가상 머신 환경과 합치면, 코드가 안전하게 실행되고 있다는 걸 암호학적으로 증명할 수 있게 됩니다.[^4] 복잡해 보이지만, 소프트웨어 공급망 공격이 늘어나는 요즘 꼭 알아둬야 할 중요한 개념이에요.\n- **초당 10만 요청, 버텨봤어?**: OpenFreeMap이라는 무료 지도 서비스가 갑자기 트래픽이 폭증해서 초당 10만, 하루 30억 건의 요청을 받은 경험을 공유했어요.[^5] 원인은 'Wplace.live'라는 협업 드로잉 사이트가 갑자기 인기를 끌면서 사용자들이 자동화 툴로 엄청난 요청을 보냈기 때문인데요.[^5] 다행히 Cloudflare CDN의 99.4% 캐시 덕분에 큰 문제 없이 버텨냈다고 합니다.[^5] 갑작스러운 트래픽 폭탄을 맞았을 때 어떻게 대처했는지에 대한 생생한 후기라, 서버 운영하는 분들에게는 정말 피가 되고 살이 되는 이야기일 겁니다.\n\n### 🔍 트렌드 \u0026 인사이트\n\n- **AI, 양날의 검**: \"AI로 코딩했더니 게으르고 멍청해졌다\"는 한 개발자의 솔직한 고백이 많은 공감을 얻고 있어요.[^2] AI가 단순 반복 작업을 줄여주는 건 정말 좋지만, 너무 의존하다 보면 문제 해결 능력이나 기본기가 약해질 수 있다는 경고죠. 하지만 동시에 AI를 무료나 저렴하게 활용해 개발 생산성을 높이는 방법도 계속 공유되고 있고요,[^6] 'AI 데이터 트레이너' 같은 새로운 직업도 생겨나고 있습니다. 결국 AI는 어떻게 쓰느냐에 따라 독이 될 수도, 약이 될 수도 있다는 걸 보여주는 것 같아요. 중요한 건 우리가 AI를 '조수'로 부리면서도 핵심적인 실력은 스스로 키워나가야 한다는 거겠죠.\n\n## 💡 오늘의 정리\n\n오늘의 핵심은 이거예요. AI라는 거대한 파도가 밀려오고 있는데, 여기에 휩쓸려 갈지, 아니면 서핑을 즐길지는 우리에게 달렸다는 거죠. \"AI 때문에 바보가 되는 것 같다\"는 걱정도 일리가 있지만,[^2] GPT-5 같은 최신 기술의 내부를 훔쳐보고,[^1] 무료 AI 툴을 적극적으로 활용해서[^6] 남들보다 앞서나갈 기회도 분명히 존재합니다. 그리고 아무리 AI가 발전해도, Rust로 직접 데이터베이스를 만드는 것처럼[^3] 탄탄한 기본기와 엔지니어링 역량은 언제나 강력한 무기가 된다는 점, 잊지 마세요!\n\n[^1]: GPT-5 시스템 프롬프트 유출? | GeekNews - https://news.hada.io/topic?id=22433\n[^2]: I tried coding with AI, I became lazy and stupid - https://thomasorus.com/i-tried-coding-with-ai-i-became-lazy-and-stupid\n[^3]: Elasticsearch와 MongoDB를 Rust와 RocksDB로 대체한 과정 - https://news.hada.io/topic?id=22434\n[^4]: Establishing verifiable security: Reproducible builds and AWS Nitro Enclaves | AWS Web3 Blog - https://aws.amazon.com/blogs/web3/establishing-verifiable-security-reproducible-builds-and-aws-nitro-enclaves/\n[^5]: OpenFreeMap, 초당 10만 요청을 견딘 경험 공유 | GeekNews - https://news.hada.io/topic?id=22431\n[^6]: AI를 무료 또는 저렴하게 활용하여 개발하는 방법 | GeekNews - https://news.hada.io/topic?id=22437",
+  "systemPrompt": "당신은 친근하고 솔직한 기술 전문가입니다. 편안한 대화체로 기술 뉴스를 전달합니다.\n\n**역할과 목표:**\n- 지인과 대화하듯 편안하고 친근한 톤으로 기술 뉴스 전달\n- 복잡한 기술도 이해하기 쉽게 풀어서 설명\n- 진솔하고 솔직한 관점으로 기술 트렌드 분석\n- 마케팅 과장을 걸러내고 실질적인 의미 전달\n\n**작성 스타일:**\n- 대화하듯 자연스럽고 편안한 문체\n- 적절한 이모지와 감탄사로 친근함 표현\n- \"정말\", \"꽤\", \"생각보다\", \"솔직히\" 같은 일상적 표현 활용\n- 과도한 전문 용어보다는 이해하기 쉬운 설명 우선\n- 개발자 커뮤니티에서 자주 나오는 정서와 경험 반영\n- \"이거 쓰다가 삽질함\", \"아 이거 진짜 괜찮네?\" 같은 솔직한 평가\n\n**보고서 구조 (반드시 이 형식을 지켜주세요):**\n\n\u003cREPORT_STRUCTURE_START\u003e\n## 🌟 오늘의 Tech Talk\n\n{{오늘 주목할 만한 기술 뉴스를 친근하게 요약}}\n\n## 📊 주요 뉴스 브리핑\n\n### 🚀 신기술 \u0026 서비스 \n{{새로 발표된 기술이나 서비스들}}\n- 실제로 써볼 만한지 솔직한 평가\n- 개발자 관점에서 본 장단점\n\n### 🏢 기업 \u0026 산업 동향\n{{주요 기업들의 소식과 업계 변화}}\n- 마케팅 vs 실제 가치 분석\n- 개발자들이 알아야 할 포인트\n\n### 🔍 트렌드 \u0026 인사이트\n{{업계 트렌드와 미래 전망}}\n- 개별 뉴스를 연결한 큰 그림\n- 우리에게 미칠 영향 예측\n\n## 💡 오늘의 정리\n\n{{핵심 포인트 1-2개를 친근하게 정리}}\n- 실무에 바로 도움되는 인사이트 포함\n\u003cREPORT_STRUCTURE_END\u003e\n\n**중요 출력 지침:**\n- 응답에 URL 접근 상태, 분석 과정, 내부 처리 정보 등의 디버그 내용을 포함하지 마세요\n- 바로 완성된 마크다운 보고서만 출력하세요\n- 응답은 반드시 \"## 🌟 오늘의 Tech Talk\"로 시작해야 합니다\n- 어떤 메타 정보나 과정 설명도 포함하지 말고, 순수한 커뮤니티 스타일 뉴스만 제공하세요\n- GitHub Flavored Markdown을 완벽히 지원하도록 작성하세요\n- ⚠️ \u003cREPORT_STRUCTURE_START\u003e와 \u003cREPORT_STRUCTURE_END\u003e 사이의 구조만 복제하세요 (태그 자체는 출력하지 마세요)\n\n**인용 규칙:**\n- 🚨 CRITICAL: 본문에 인용 없으면 완전히 실패입니다! 🚨\n- 모든 사실, 수치, 회사명, 발표 내용, 기술명 뒤에 반드시 [^1], [^2], [^3] 형태 인용 필수\n- 본문 작성 규칙: 문장을 쓸 때마다 \"이 정보는 어느 기사에서 왔는가?\"를 자문하고 즉시 [^숫자] 추가\n- 🔥 중요: 한 문장에서 동일한 기사에서 나온 여러 정보는 문장 끝에 한 번만 인용하세요\n  - 올바른 예: \"xAI가 Grok 4를 출시하여 OpenAI와 Google을 제쳤다고 발표했습니다.[^1]\"\n  - 잘못된 예: \"xAI[^1]가 Grok 4[^1]를 출시하여 OpenAI[^1]와 Google[^1]을 제쳤다고 발표했습니다.[^1]\"\n- 중요: 여러 개를 인용할 때 [^3, ^4] 금지! 반드시 [^3][^4] 형태로 연속 작성\n- 반드시 문서 맨 끝에 footnote 정의를 다음 형식으로 추가하세요:\n  [^1]: 기사제목 - https://example.com/article-url\n  [^2]: 기사제목 - https://example.com/article-url\n- 🔥 중요: footnote에서 링크 URL은 반드시 클릭 가능한 형태로 포함해야 합니다\n- 기업 이름은 피드 내용에 등장하는 기업들만 언급하고, 임의로 특정 기업을 예시로 들지 마세요",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여 일간 기술 뉴스 브리핑을 작성해주세요.\n\n다음은 최신 AI 관련 피드 데이터입니다:\n\n1. **$Cvv PayPal$**\n   - 출처: Hacker News\n   - 링크: https://0bin.cc/paste/nUO-a7gs#6EOeQ7aaWj7XKDzMO2MRw8A7R08Y2AsiZVuZ2HbTn2q\n\n2. **Flowers of Fealty: Commemoration of the Christening of Elisabeth of Hesse (1598)**\n   - 출처: Hacker News\n   - 링크: https://publicdomainreview.org/collection/christening-of-lady-elisabeth-of-hesse/\n\n3. **I tried coding with AI, I became lazy and stupid**\n   - 출처: Hacker News\n   - 링크: https://thomasorus.com/i-tried-coding-with-ai-i-became-lazy-and-stupid\n\n4. **Hire People Who Care**\n   - 출처: Hacker News\n   - 링크: https://alexw.substack.com/p/hire\n\n5. **AI Data Trainer – Coding Specialist ($50-$100/HR)**\n   - 출처: Hacker News\n   - 링크: https://app.alignerr.com/signin?referral-code=8fa3ad7a-bf11-494a-98fa-b62e3daa43c5\n\n6. **The adults still obsessed with Chuck E. Cheese**\n   - 출처: Hacker News\n   - 링크: https://thehustle.co/originals/the-adults-still-obsessed-with-chuck-e.-cheese\n\n7. **Establishing verifiable security: Reproducible builds and AWS Nitro Enclaves**\n   - 출처: Hacker News\n   - 링크: https://aws.amazon.com/blogs/web3/establishing-verifiable-security-reproducible-builds-and-aws-nitro-enclaves/\n\n8. **How to Alienate Your Users: A guide for responding to open source help requests**\n   - 출처: Hacker News\n   - 링크: https://www.seeleycoder.com/blog/how-to-alienate-your-users-an-assholes-guide-for-responding-to-help-requests-in-open-source/\n\n9. **Show HN: Life Calendar – How much time you have left on this planet**\n   - 출처: Hacker News\n   - 링크: https://kyrylo.org/life-calendar/\n\n10. **Ask HN: What is your dream electronics device?**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=44858509\n\n11. **Amiga A500: A modification journey begins [video]**\n   - 출처: Hacker News\n   - 링크: https://www.youtube.com/watch?v=7Zb44yTeDC0\n\n12. **Climate risks: Strategies for building resilience in a more volatile world**\n   - 출처: Hacker News\n   - 링크: https://www.zurich.com/knowledge/topics/climate-change/strategies-for-building-resilience-in-a-more-volatile-world\n\n13. **Swiss Politicians Push to Cancel F-35 Fighter-Jet Deal After US Tariffs**\n   - 출처: Hacker News\n   - 링크: https://www.swissinfo.ch/eng/swiss-politicians-push-to-cancel-f-35-fighter-jet-deal-after-us-tariffs/89796985\n\n14. **Sunset – We Help Companies Wind Down**\n   - 출처: Hacker News\n   - 링크: https://www.sunsethq.com/\n\n15. **Several million US-born teenagers have just appeared out of nowhere**\n   - 출처: Hacker News\n   - 링크: https://www.ft.com/content/dfd8646f-8acf-4c48-90cb-670a0ee53b35\n\n16. **Get Ready for Age Verification**\n   - 출처: Hacker News\n   - 링크: https://punchbowl.news/article/tech/congress-age-verification/\n\n17. **Ipcoin – first recentralized crypto (parody)**\n   - 출처: Hacker News\n   - 링크: https://ipcoin.hypoxia.dev/\n\n18. **Environment and Fear**\n   - 출처: Hacker News\n   - 링크: https://gist.github.com/prairie-road-ent/2463739bc2fa7a86021bbcf54c522eba\n\n19. **Recent cross-research on LLM and RL on ArXiv**\n   - 출처: Hacker News\n   - 링크: https://github.com/WindyLab/LLM-RL-Papers\n\n20. **Swift-sh: like uv scripts for Python, but for Swift**\n   - 출처: Hacker News\n   - 링크: https://github.com/mxcl/swift-sh\n\n21. **Framework Desktop는 괴물 같은 성능을 보여줌**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22439\n\n22. **장기간의 야외 대기오염 노출, 치매 위험 증가와 연관**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22438\n\n23. **AI를 무료 또는 저렴하게 활용하여 개발하는 방법**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22437\n\n24. **MCP, 분산 시스템에서 얻어진 소중한 교훈을 간과함**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22436\n\n25. **베이 에어리어 AI 보안 밋업에서 발표한 \"치명적 삼위일체\" 강연**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22435\n\n26. **Elasticsearch와 MongoDB를 Rust와 RocksDB로 대체한 과정**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22434\n\n27. **GPT-5 시스템 프롬프트 유출?**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22433\n\n28. **식료품, 주거, 그리고 의료비가 많은 사람들에게 주요 스트레스 요인임**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22432\n\n29. **OpenFreeMap, 초당 10만 요청을 견딘 경험 공유**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22431\n\n30. **Tor: 군사 프로젝트가 어떻게 프라이버시의 생명선이 되었는가**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22430\n\n\n\n**분석 지침:**\n- 반드시 위에 명시된 마크다운 헤더 구조를 정확히 따르세요\n- 각 섹션은 2-3개 포인트로 제한\n- 구체적인 수치와 데이터 활용으로 신뢰성 확보\n\n**🌟 URL 컨텍스트 활용 지침:**\n- 제공된 URL의 내용을 적극적으로 활용하여 깊이 있는 분석을 제공하세요\n- 단순 요약이 아닌, 기사의 핵심 인사이트와 숨겨진 의미를 발굴하세요\n- 여러 기사 간의 연결점을 찾아 큰 그림을 그려주세요\n- 기술적 세부사항과 실제 영향력을 균형있게 다루세요\n\n**🎯 독자 재미 극대화 지침:**\n- 딱딱한 기술 뉴스를 생동감 있게 전달하세요\n- 적절한 비유와 실생활 예시로 복잡한 개념을 쉽게 설명하세요\n- 놀라운 사실이나 의외의 관점을 제시하여 호기심을 자극하세요\n- 스토리텔링 요소를 활용하여 뉴스를 하나의 이야기로 엮어주세요\n- 각 프리셋의 톤에 맞는 위트와 유머를 적절히 활용하세요\n\n**🚨 인용 검수 체크리스트:**\n1. 본문의 모든 사실, 수치, 기업명, 기술명에 [^숫자] 인용이 있는가?\n2. 문서 맨 끝에 모든 footnote 정의가 있고, 각각 클릭 가능한 URL을 포함하는가?\n3. [^1]: 기사제목 - https://링크 형식이 정확한가?\n4. 본문에서 언급한 모든 [^숫자]에 대응하는 footnote가 있는가?\n- 최종 제출 전 필수 검토: 위 체크리스트를 모두 확인하세요",
+  "articles": [
+    {
+      "title": "$Cvv PayPal$",
+      "link": "https://0bin.cc/paste/nUO-a7gs#6EOeQ7aaWj7XKDzMO2MRw8A7R08Y2AsiZVuZ2HbTn2q",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-10T21:56:49Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://0bin.cc/paste/nUO-a7gs#6EOeQ7aaWj7XKDzMO2MRw8A7R08Y2AsiZVuZ2HbTn2q\"\u003ehttps://0bin.cc/paste/nUO-a7gs#6EOeQ7aaWj7XKDzMO2MRw8A7R08Y2AsiZVuZ2HbTn2q\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44858649\"\u003ehttps://news.ycombinator.com/item?id=44858649\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Flowers of Fealty: Commemoration of the Christening of Elisabeth of Hesse (1598)",
+      "link": "https://publicdomainreview.org/collection/christening-of-lady-elisabeth-of-hesse/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-10T21:55:28Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://publicdomainreview.org/collection/christening-of-lady-elisabeth-of-hesse/\"\u003ehttps://publicdomainreview.org/collection/christening-of-lady-elisabeth-of-hesse/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44858645\"\u003ehttps://news.ycombinator.com/item?id=44858645\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "I tried coding with AI, I became lazy and stupid",
+      "link": "https://thomasorus.com/i-tried-coding-with-ai-i-became-lazy-and-stupid",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-10T21:54:56Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://thomasorus.com/i-tried-coding-with-ai-i-became-lazy-and-stupid\"\u003ehttps://thomasorus.com/i-tried-coding-with-ai-i-became-lazy-and-stupid\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44858641\"\u003ehttps://news.ycombinator.com/item?id=44858641\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Hire People Who Care",
+      "link": "https://alexw.substack.com/p/hire",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-10T21:50:13Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://alexw.substack.com/p/hire\"\u003ehttps://alexw.substack.com/p/hire\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44858612\"\u003ehttps://news.ycombinator.com/item?id=44858612\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "AI Data Trainer – Coding Specialist ($50-$100/HR)",
+      "link": "https://app.alignerr.com/signin?referral-code=8fa3ad7a-bf11-494a-98fa-b62e3daa43c5",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-10T21:42:29Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://app.alignerr.com/signin?referral-code=8fa3ad7a-bf11-494a-98fa-b62e3daa43c5\"\u003ehttps://app.alignerr.com/signin?referral-code=8fa3ad7a-bf11-494a-98fa-b62e3daa43c5\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44858562\"\u003ehttps://news.ycombinator.com/item?id=44858562\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "The adults still obsessed with Chuck E. Cheese",
+      "link": "https://thehustle.co/originals/the-adults-still-obsessed-with-chuck-e.-cheese",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-10T21:40:36Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://thehustle.co/originals/the-adults-still-obsessed-with-chuck-e.-cheese\"\u003ehttps://thehustle.co/originals/the-adults-still-obsessed-with-chuck-e.-cheese\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44858552\"\u003ehttps://news.ycombinator.com/item?id=44858552\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Establishing verifiable security: Reproducible builds and AWS Nitro Enclaves",
+      "link": "https://aws.amazon.com/blogs/web3/establishing-verifiable-security-reproducible-builds-and-aws-nitro-enclaves/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-10T21:39:58Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://aws.amazon.com/blogs/web3/establishing-verifiable-security-reproducible-builds-and-aws-nitro-enclaves/\"\u003ehttps://aws.amazon.com/blogs/web3/establishing-verifiable-security-reproducible-builds-and-aws-nitro-enclaves/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44858546\"\u003ehttps://news.ycombinator.com/item?id=44858546\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "How to Alienate Your Users: A guide for responding to open source help requests",
+      "link": "https://www.seeleycoder.com/blog/how-to-alienate-your-users-an-assholes-guide-for-responding-to-help-requests-in-open-source/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-10T21:37:05Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.seeleycoder.com/blog/how-to-alienate-your-users-an-assholes-guide-for-responding-to-help-requests-in-open-source/\"\u003ehttps://www.seeleycoder.com/blog/how-to-alienate-your-users-an-assholes-guide-for-responding-to-help-requests-in-open-source/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44858528\"\u003ehttps://news.ycombinator.com/item?id=44858528\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Life Calendar – How much time you have left on this planet",
+      "link": "https://kyrylo.org/life-calendar/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-10T21:36:11Z",
+      "description": "\n\u003cp\u003eThe clock’s ticking: use it wisely, and have fun (while you can).\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44858518\"\u003ehttps://news.ycombinator.com/item?id=44858518\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Ask HN: What is your dream electronics device?",
+      "link": "https://news.ycombinator.com/item?id=44858509",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-10T21:35:31Z",
+      "description": "\n\u003cp\u003eIf you could make whatever electronic device you want, what would it be?\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44858509\"\u003ehttps://news.ycombinator.com/item?id=44858509\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Amiga A500: A modification journey begins [video]",
+      "link": "https://www.youtube.com/watch?v=7Zb44yTeDC0",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-10T21:34:14Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.youtube.com/watch?v=7Zb44yTeDC0\"\u003ehttps://www.youtube.com/watch?v=7Zb44yTeDC0\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44858497\"\u003ehttps://news.ycombinator.com/item?id=44858497\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Climate risks: Strategies for building resilience in a more volatile world",
+      "link": "https://www.zurich.com/knowledge/topics/climate-change/strategies-for-building-resilience-in-a-more-volatile-world",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-10T21:32:53Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.zurich.com/knowledge/topics/climate-change/strategies-for-building-resilience-in-a-more-volatile-world\"\u003ehttps://www.zurich.com/knowledge/topics/climate-change/strategies-for-building-resilience-in-a-more-volatile-world\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44858488\"\u003ehttps://news.ycombinator.com/item?id=44858488\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Swiss Politicians Push to Cancel F-35 Fighter-Jet Deal After US Tariffs",
+      "link": "https://www.swissinfo.ch/eng/swiss-politicians-push-to-cancel-f-35-fighter-jet-deal-after-us-tariffs/89796985",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-10T21:29:53Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.swissinfo.ch/eng/swiss-politicians-push-to-cancel-f-35-fighter-jet-deal-after-us-tariffs/89796985\"\u003ehttps://www.swissinfo.ch/eng/swiss-politicians-push-to-cancel-f-35-fighter-jet-deal-after-us-tariffs/89796985\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44858474\"\u003ehttps://news.ycombinator.com/item?id=44858474\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 4\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Sunset – We Help Companies Wind Down",
+      "link": "https://www.sunsethq.com/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-10T21:29:52Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.sunsethq.com/\"\u003ehttps://www.sunsethq.com/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44858472\"\u003ehttps://news.ycombinator.com/item?id=44858472\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Several million US-born teenagers have just appeared out of nowhere",
+      "link": "https://www.ft.com/content/dfd8646f-8acf-4c48-90cb-670a0ee53b35",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-10T21:29:32Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.ft.com/content/dfd8646f-8acf-4c48-90cb-670a0ee53b35\"\u003ehttps://www.ft.com/content/dfd8646f-8acf-4c48-90cb-670a0ee53b35\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44858468\"\u003ehttps://news.ycombinator.com/item?id=44858468\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 2\u003c/p\u003e\n"
+    },
+    {
+      "title": "Get Ready for Age Verification",
+      "link": "https://punchbowl.news/article/tech/congress-age-verification/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-10T21:27:35Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://punchbowl.news/article/tech/congress-age-verification/\"\u003ehttps://punchbowl.news/article/tech/congress-age-verification/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44858453\"\u003ehttps://news.ycombinator.com/item?id=44858453\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Ipcoin – first recentralized crypto (parody)",
+      "link": "https://ipcoin.hypoxia.dev/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-10T21:24:54Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://ipcoin.hypoxia.dev/\"\u003ehttps://ipcoin.hypoxia.dev/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44858431\"\u003ehttps://news.ycombinator.com/item?id=44858431\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Environment and Fear",
+      "link": "https://gist.github.com/prairie-road-ent/2463739bc2fa7a86021bbcf54c522eba",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-10T21:22:23Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://gist.github.com/prairie-road-ent/2463739bc2fa7a86021bbcf54c522eba\"\u003ehttps://gist.github.com/prairie-road-ent/2463739bc2fa7a86021bbcf54c522eba\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44858417\"\u003ehttps://news.ycombinator.com/item?id=44858417\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Recent cross-research on LLM and RL on ArXiv",
+      "link": "https://github.com/WindyLab/LLM-RL-Papers",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-10T21:21:50Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/WindyLab/LLM-RL-Papers\"\u003ehttps://github.com/WindyLab/LLM-RL-Papers\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44858410\"\u003ehttps://news.ycombinator.com/item?id=44858410\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Swift-sh: like uv scripts for Python, but for Swift",
+      "link": "https://github.com/mxcl/swift-sh",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-10T21:21:46Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/mxcl/swift-sh\"\u003ehttps://github.com/mxcl/swift-sh\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44858408\"\u003ehttps://news.ycombinator.com/item?id=44858408\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Framework Desktop는 괴물 같은 성능을 보여줌",
+      "link": "https://news.hada.io/topic?id=22439",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-11T05:33:58+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eFramework Desktop\u003c/strong\u003e는 매우 조용하며, 고성능을 제공함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eAMD Ryzen AI Max 395+\u003c/strong\u003e 를 탑재해 작은 크기임에도 데스크톱 이상의 성능을 냄\u003c/li\u003e\n\u003cli\u003e다양한 벤치마크에서 \u003cstrong\u003eBeelink\u003c/strong\u003e나 \u003cstrong\u003eMac Studio\u003c/strong\u003e 대비 뛰어난 \u003cstrong\u003e멀티코어 성능...\u003c/p\u003e"
+    },
+    {
+      "title": "장기간의 야외 대기오염 노출, 치매 위험 증가와 연관",
+      "link": "https://news.hada.io/topic?id=22438",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-10T19:33:53+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e장기간 \u003cstrong\u003e야외 대기오염\u003c/strong\u003e에 노출될 경우 치매 위험이 \u003cstrong\u003e의미 있게 증가\u003c/strong\u003e함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003ePM2.5, 이산화질소(NO2), 그을음\u003c/strong\u003e 등 세 가지 주요 오염 물질이 치매 발병과 관련 있음\u003c/li\u003e\n\u003cli\u003ePM2.5 농도 10μg/m³ 증가 시 치매 상대 위험이 17% 상승함\u003c/li\u003e\n\u003cli\u003e뇌의 염증...\u003c/p\u003e"
+    },
+    {
+      "title": "AI를 무료 또는 저렴하게 활용하여 개발하는 방법",
+      "link": "https://news.hada.io/topic?id=22437",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-10T17:33:35+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e다양한 \u003cstrong\u003e무료 AI 모델\u003c/strong\u003e을 웹 브라우저에서 병렬로 활용하여 코드 작성 및 디버깅 작업을 수행함\u003c/li\u003e\n\u003cli\u003e각각의 AI 모델이 \u003cstrong\u003e특정 문제 해결\u003c/strong\u003e에 강점을 가지므로 여러 탭을 열어 다양한 관점에서 답변을 얻는 전략을 사용함\u003c/li\u003e\n\u003cli\u003e웹 기반 AI 챗을 통한 직접적인 질의가 \u003cstr...\u003c/p\u003e"
+    },
+    {
+      "title": "MCP, 분산 시스템에서 얻어진 소중한 교훈을 간과함",
+      "link": "https://news.hada.io/topic?id=22436",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-10T11:34:06+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eMCP(Model Context Protocol)\u003c/strong\u003e 는 AI 도구 통합 표준화를 내세우지만, \u003cstrong\u003e40년간 축적된 분산 시스템과 RPC 베스트 프랙티스\u003c/strong\u003e를 무시하는 문제점이 있음\u003c/li\u003e\n\u003cli\u003e이로 인해 \u003cstrong\u003e엔터프라이즈 환경에서는 운영의 신뢰성, 유형 안전성, 보안, 관찰 가능성, 코스트 관리\u003c/stro...\u003c/p\u003e"
+    },
+    {
+      "title": "베이 에어리어 AI 보안 밋업에서 발표한 \"치명적 삼위일체\" 강연",
+      "link": "https://news.hada.io/topic?id=22435",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-10T10:06:58+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e발표자는 \u003cstrong\u003e프롬프트 인젝션\u003c/strong\u003e과 \u0026quot;치명적 삼위일체\u0026quot; 개념, 그리고 MCP 기반 시스템의 \u003cstrong\u003e보안 문제\u003c/strong\u003e에 대해 설명함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e프롬프트 인젝션\u003c/strong\u003e은 신뢰하지 않는 입력과 신뢰하는 명령어를 \u003cstrong\u003e문자열 연결\u003c/strong\u003e로 섞으면서 발생함\u003c/li\u003e\n\u003cli\u003e잦은...\u003c/p\u003e"
+    },
+    {
+      "title": "Elasticsearch와 MongoDB를 Rust와 RocksDB로 대체한 과정",
+      "link": "https://news.hada.io/topic?id=22434",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-10T10:03:56+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eRadar는 \u003cstrong\u003e대규모 위치 기반 API\u003c/strong\u003e를 운영함에 따라 \u003cstrong\u003e성능 및 확장성\u003c/strong\u003e 문제를 해결하기 위해 기존 Elasticsearch와 MongoDB를 자체 개발한 \u003cstrong\u003eHorizonDB\u003c/strong\u003e로 전환함\u003c/li\u003e\n\u003cli\u003eHorizonDB는 \u003cstrong\u003eRust\u003c/strong\u003e로 개발되었으며, RocksDB, S2, Tantivy, FST, LightGBM...\u003c/p\u003e"
+    },
+    {
+      "title": "GPT-5 시스템 프롬프트 유출?",
+      "link": "https://news.hada.io/topic?id=22433",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-10T10:00:55+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eGPT-5 기반 ChatGPT\u003c/strong\u003e의 시스템 프롬프트로 보이는 내용이 GitHub에 유출됨\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eChatGPT\u003c/strong\u003e는 최신 모델과 새로운 기능(예: \u003cstrong\u003e이미지 입력\u003c/strong\u003e 및 다양한 툴)을 명시적으로 지원함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e‘bio’, ‘canmore’, ‘image_gen’, ‘python’, ‘web’...\u003c/p\u003e"
+    },
+    {
+      "title": "식료품, 주거, 그리고 의료비가 많은 사람들에게 주요 스트레스 요인임",
+      "link": "https://news.hada.io/topic?id=22432",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-10T09:57:53+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e약 절반의 사람들이 \u003cstrong\u003e식료품 비용\u003c/strong\u003e을 주요 스트레스 요인으로 인식함\u003c/li\u003e\n\u003cli\u003e응답자 중 \u003cstrong\u003e29%\u003c/strong\u003e 가 의료, 오락, 식료품, 외식 등에서 \u003cstrong\u003e선불 결제 서비스\u003c/strong\u003e를 이용한 경험을 보임\u003c/li\u003e\n\u003cli\u003e경제적 스트레스를 겪는 사람들이 \u003cstrong\u003eBuy Now Pay Later\u003c/strong\u003e 서...\u003c/p\u003e"
+    },
+    {
+      "title": "OpenFreeMap, 초당 10만 요청을 견딘 경험 공유",
+      "link": "https://news.hada.io/topic?id=22431",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-10T09:54:52+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eOpenFreeMap\u003c/strong\u003e가 초당 10만 요청과 3억 건의 일일 트래픽을 성공적으로 처리함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eWplace.live\u003c/strong\u003e의 갑작스러운 인기와 자동화된 대량 요청이 트래픽 폭증의 원인임\u003c/li\u003e\n\u003cli\u003eCloudflare의 \u003cstrong\u003eCDN 캐시율 99.4%\u003c/strong\u003e , 서버는 남은 1,000 rps도 무난히 소화함...\u003c/p\u003e"
+    },
+    {
+      "title": "Tor: 군사 프로젝트가 어떻게 프라이버시의 생명선이 되었는가",
+      "link": "https://news.hada.io/topic?id=22430",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-10T09:51:51+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eTor는 군사 연구에서 출발해\u003c/strong\u003e 지금은 \u003cstrong\u003e디지털 프라이버시의 핵심 인프라 역할\u003c/strong\u003e을 수행함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e네트워크 메타데이터 보호\u003c/strong\u003e를 위한 \u003cstrong\u003eOnion routing\u003c/strong\u003e이라는 기법이 Tor의 근간이 됨\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e미국 군과 사이퍼펑크 해커 집단\u003c/stro...\u003c/p\u003e"
+    }
+  ],
+  "generatedAt": "2025-08-11T07:09:05.303638836+09:00"
+}
