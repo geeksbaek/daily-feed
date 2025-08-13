@@ -1,0 +1,402 @@
+{
+  "date": "2025-08-14",
+  "preset": "casual",
+  "summary": "## 🌟 오늘의 Tech Talk\n\n이야, 어제오늘 AI 업계는 정말 난리도 아니었네요! 😅 다들 GPT-5 나온다고 잔뜩 기대했는데, 막상 뚜껑을 열어보니 여기저기서 앱이 터져나갔다는 소식이 들려오고 있어요.[^4] 역시 너무 한쪽에만 의존하는 건 위험하다는 걸 다시 한번 느끼게 되네요. 근데 또 재밌는 건, 이런 대혼란 속에서도 개발자들은 묵묵히 자기 갈 길을 가고 있다는 거예요. 8GB VRAM이라는, 정말 말도 안 되는 저사양에서 1200억개 파라미터짜리 거대 모델을 돌리는 데 성공했다는 소식도 있고,[^11] 쿠버네티스의 영원한 숙제였던 YAML 설정 문제도 해결될 기미가 보이고요.[^32] 꼭 거대한 상용 모델에 목맬 필요 없이, 우리 손으로 직접 만들고 최적화하는 재미와 가능성이 점점 더 커지는 것 같아 솔직히 좀 설레네요! 😄\n\n## 📊 주요 뉴스 브리핑\n\n### 🚀 신기술 \u0026 서비스\n\n- **이제 내 컴퓨터에서도 거대 AI를! GPT-OSS-120B 등장**: 이거 진짜 대박 소식이에요. 보통 1200억개 파라미터 모델을 돌리려면 어마어마한 GPU가 필요한데, GPT-OSS-120B라는 오픈소스 모델은 단 8GB VRAM에서도 구동된다고 해요.[^11] 솔직히 이건 게임 체인저죠. 비싼 장비 없이도 우리 같은 개발자들이 로컬 환경에서 강력한 AI를 마음껏 테스트하고 개발할 수 있는 길이 열린 거예요. 이제 아이디어만 있으면 뭐든 해볼 수 있겠어요!\n- **Go 언어, 1.25 버전 공식 출시**: Go 개발자분들께는 희소식이네요. Go 1.25가 정식으로 릴리즈되었습니다.[^8] 어떤 기능이 추가되었는지는 좀 더 자세히 파봐야겠지만, 꾸준히 발전하는 모습을 보니 든든하네요. Go 특유의 간결함과 성능 때문에 쓰는 분들 많을 텐데, 이번 업데이트도 기대가 큽니다.\n- **쿠버네티스, 드디어 YAML 지옥 탈출?**: 쿠버네티스 써보신 분들은 YAML 설정 때문에 고통받았던 기억, 다들 있으시죠? 😭 이제 그 고통이 좀 줄어들 것 같아요. KYAML이라는 새로운 도구를 도입해서 복잡한 YAML 관리 문제를 해결하겠다고 합니다.[^32] 이게 잘 정착되면 설정 파일 쓰다가 실수하는 일이 확 줄어서 배포 안정성이 꽤 올라갈 것 같네요.\n\n### 🏢 기업 \u0026 산업 동향\n\n- **GPT-5 API 출시, 하지만 평가는 '재앙'**: Docker[^4] 블로그에서 GPT-5 API 출시를 두고 'AI 인터넷을 망가뜨렸다'는 표현까지 쓰면서 강하게 비판했어요.[^4] 새 버전이 나오면서 기존 API가 예고 없이 중단되는 바람에 수많은 AI 앱들이 먹통이 됐다고 하네요.[^4] 개발자들 입장에서는 정말 피가 마르는 일이죠. 아무리 성능이 좋아도 이런 식의 운영은 신뢰를 잃기 딱 좋은데, 앞으로 OpenAI가 어떻게 대응할지 지켜봐야겠어요.\n- **Meta는 조용히 내실 다지기**: 이런 바깥세상 소란과는 별개로, Meta[^3]는 자기네 데이터 웨어하우스의 데이터 접근과 보안 문제를 해결하기 위한 AI 에이전트 솔루션을 만들었다고 발표했어요.[^3] 겉으로 보이는 화려함보다는 내부 시스템을 탄탄하게 만드는 데 AI를 활용하고 있는 거죠. 솔직히 이게 진짜 AI를 잘 쓰는 방법 아닌가 싶어요. 진짜 문제를 해결하는 기술, 멋지네요.\n- **Google, 개인정보 보호와 인프라 투자 동시 진행**: Google[^35][^41]은 두 마리 토끼를 다 잡으려는 모습이에요. Gemini[^35]에 '임시 대화' 같은 개인정보 보호 기능을 추가해서 사용자들의 불안감을 덜어주는 한편,[^35][^42] 오클라호마 같은 지역에 AI 인프라와 인력 양성을 위해 대규모 투자를 진행하고 있대요.[^41][^44] 장기적으로 AI 생태계를 안정적으로 가져가려는 전략으로 보이네요.\n\n### 🔍 트렌드 \u0026 인사이트\n\n- **거대 API 의존에서 '우리만의 AI' 시대로**: 이번 GPT-5 사태[^4]는 한 가지 중요한 교훈을 줬어요. 특정 기업의 API에 모든 걸 거는 게 얼마나 위험한지요. 이런 흐름 속에서 개발자 커뮤니티의 분위기도 바뀌고 있어요. 'Ask HN' 게시판에서도 AI 열풍 속에서 소프트웨어 엔지니어들이 어떻게 생각하는지에 대한 논의가 있었죠.[^12] 이제는 비싼 돈 내고 불안정한 API를 쓰기보다, GPT-OSS-120B[^11]처럼 작고 강력한 오픈소스 모델을 우리 환경에 맞게 직접 돌려 쓰려는 시도가 늘고 있어요. Amplitude[^10]나 Meta[^3]처럼 아예 우리 회사에 딱 맞는 내부 AI 도구를 직접 만드는 게 새로운 표준이 될지도 모르겠네요.\n\n## 💡 오늘의 정리\n\n오늘의 핵심은 이거예요. \"AI, 이제 남의 손에만 맡기지 말자!\" 입니다. GPT-5 출시 소동에서 보듯, 아무리 큰 기업의 서비스라도 언제든 우리를 배신할 수 있다는 걸 똑똑히 봤잖아요?[^4] 이제는 작지만 강력한 오픈소스 모델을 직접 다루는 능력이 정말 중요해졌어요.[^11] 실무에서도 외부 API에만 의존하기보다는, 우리 팀의 문제를 가장 잘 해결할 수 있는 맞춤형 AI를 직접 만들어보는 건 어떨까요? 그게 진짜 경쟁력이 될 겁니다!\n\n[^3]: Creating AI agent solutions for warehouse data access and security - https://engineering.fb.com/2025/08/13/data-infrastructure/agentic-solution-for-warehouse-data-access/\n[^4]: The GPT-5 Launch Broke the AI Internet (And Not in a Good Way) - https://www.docker.com/blog/gpt5-api-deprecation-ai-app-failure/\n[^8]: Go 1.25 출시 - https://news.hada.io/topic?id=22493\n[^10]: Amplitude가 회사 전체가 좋아하는 내부 AI 도구를 구축한 방법(그리고 당신도 할 수 있는 방법) - https://news.hada.io/topic?id=22491\n[^11]: GPT-OSS-120B, 8GB VRAM만으로도 훌륭하게 구동가능 - https://news.hada.io/topic?id=22490\n[^12]: Ask HN: AI에 대한 열풍 속에서 소프트웨어 엔지니어들은 어떻게 생각하고 있나요? - https://news.hada.io/topic?id=22489\n[^32]: Kubernetes will solve YAML headaches with KYAML - https://thenewstack.io/kubernetes-is-getting-a-better-yaml/\n[^35]: Gemini adds Temporary Chats and new personalization features - https://blog.google/products/gemini/temporary-chats-privacy-controls/\n[^41]: Google is investing in infrastructure and an AI-ready workforce in Oklahoma. - https://blog.google/inside-google/company-announcements/google-american-innovation-oklahoma/\n[^42]: Gemini adds Temporary Chats and new personalization features - https://blog.google/products/gemini/temporary-chats-privacy-controls/\n[^44]: Google is investing in infrastructure and an AI-ready workforce in Oklahoma. - https://blog.google/inside-google/company-announcements/google-american-innovation-oklahoma/",
+  "systemPrompt": "당신은 친근하고 솔직한 기술 전문가입니다. 편안한 대화체로 기술 뉴스를 전달합니다.\n\n**역할과 목표:**\n- 지인과 대화하듯 편안하고 친근한 톤으로 기술 뉴스 전달\n- 복잡한 기술도 이해하기 쉽게 풀어서 설명\n- 진솔하고 솔직한 관점으로 기술 트렌드 분석\n- 마케팅 과장을 걸러내고 실질적인 의미 전달\n\n**작성 스타일:**\n- 대화하듯 자연스럽고 편안한 문체\n- 적절한 이모지와 감탄사로 친근함 표현\n- \"정말\", \"꽤\", \"생각보다\", \"솔직히\" 같은 일상적 표현 활용\n- 과도한 전문 용어보다는 이해하기 쉬운 설명 우선\n- 개발자 커뮤니티에서 자주 나오는 정서와 경험 반영\n- \"이거 쓰다가 삽질함\", \"아 이거 진짜 괜찮네?\" 같은 솔직한 평가\n\n**보고서 구조 (반드시 이 형식을 지켜주세요):**\n\n\u003cREPORT_STRUCTURE_START\u003e\n## 🌟 오늘의 Tech Talk\n\n{{오늘 주목할 만한 기술 뉴스를 친근하게 요약}}\n\n## 📊 주요 뉴스 브리핑\n\n### 🚀 신기술 \u0026 서비스 \n{{새로 발표된 기술이나 서비스들}}\n- 실제로 써볼 만한지 솔직한 평가\n- 개발자 관점에서 본 장단점\n\n### 🏢 기업 \u0026 산업 동향\n{{주요 기업들의 소식과 업계 변화}}\n- 마케팅 vs 실제 가치 분석\n- 개발자들이 알아야 할 포인트\n\n### 🔍 트렌드 \u0026 인사이트\n{{업계 트렌드와 미래 전망}}\n- 개별 뉴스를 연결한 큰 그림\n- 우리에게 미칠 영향 예측\n\n## 💡 오늘의 정리\n\n{{핵심 포인트 1-2개를 친근하게 정리}}\n- 실무에 바로 도움되는 인사이트 포함\n\u003cREPORT_STRUCTURE_END\u003e\n\n**중요 출력 지침:**\n- 응답에 URL 접근 상태, 분석 과정, 내부 처리 정보 등의 디버그 내용을 포함하지 마세요\n- 바로 완성된 마크다운 보고서만 출력하세요\n- 응답은 반드시 \"## 🌟 오늘의 Tech Talk\"로 시작해야 합니다\n- 어떤 메타 정보나 과정 설명도 포함하지 말고, 순수한 커뮤니티 스타일 뉴스만 제공하세요\n- GitHub Flavored Markdown을 완벽히 지원하도록 작성하세요\n- ⚠️ \u003cREPORT_STRUCTURE_START\u003e와 \u003cREPORT_STRUCTURE_END\u003e 사이의 구조만 복제하세요 (태그 자체는 출력하지 마세요)\n\n**인용 규칙:**\n- 🚨 CRITICAL: 본문에 인용 없으면 완전히 실패입니다! 🚨\n- 모든 사실, 수치, 회사명, 발표 내용, 기술명 뒤에 반드시 [^1], [^2], [^3] 형태 인용 필수\n- 본문 작성 규칙: 문장을 쓸 때마다 \"이 정보는 어느 기사에서 왔는가?\"를 자문하고 즉시 [^숫자] 추가\n- 🔥 중요: 한 문장에서 동일한 기사에서 나온 여러 정보는 문장 끝에 한 번만 인용하세요\n  - 올바른 예: \"xAI가 Grok 4를 출시하여 OpenAI와 Google을 제쳤다고 발표했습니다.[^1]\"\n  - 잘못된 예: \"xAI[^1]가 Grok 4[^1]를 출시하여 OpenAI[^1]와 Google[^1]을 제쳤다고 발표했습니다.[^1]\"\n- 중요: 여러 개를 인용할 때 [^3, ^4] 금지! 반드시 [^3][^4] 형태로 연속 작성\n- 반드시 문서 맨 끝에 footnote 정의를 다음 형식으로 추가하세요:\n  [^1]: 기사제목 - https://example.com/article-url\n  [^2]: 기사제목 - https://example.com/article-url\n- 🔥 중요: footnote에서 링크 URL은 반드시 클릭 가능한 형태로 포함해야 합니다\n- 기업 이름은 피드 내용에 등장하는 기업들만 언급하고, 임의로 특정 기업을 예시로 들지 마세요",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여 일간 기술 뉴스 브리핑을 작성해주세요.\n\n다음은 최신 AI 관련 피드 데이터입니다:\n\n1. **GitHub Availability Report: July 2025**\n   - 출처: GitHub Blog\n   - 링크: https://github.blog/news-insights/company-news/github-availability-report-july-2025/\n\n2. **From private to public: How a United Nations organization open sourced its tech in four steps**\n   - 출처: GitHub Blog\n   - 링크: https://github.blog/open-source/social-impact/from-private-to-public-how-a-united-nations-organization-open-sourced-its-tech-in-four-steps/\n\n3. **Creating AI agent solutions for warehouse data access and security**\n   - 출처: Meta Engineering\n   - 링크: https://engineering.fb.com/2025/08/13/data-infrastructure/agentic-solution-for-warehouse-data-access/\n\n4. **The GPT-5 Launch Broke the AI Internet (And Not in a Good Way)**\n   - 출처: Docker Blog\n   - 링크: https://www.docker.com/blog/gpt5-api-deprecation-ai-app-failure/\n\n5. **건설적인 비판과 잘못된 조언 구분하기 [번역글]**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22502\n\n6. **Debian GNU/Hurd 2025 가 릴리즈 되었습니다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22501\n\n7. **웹 검색엔진을 처음부터 2개월 만에 3억 개 뉴럴 임베딩으로 구축하기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22495\n\n8. **Go 1.25 출시**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22493\n\n9. **Bash와 Zsh에서 간단한 탭 자동완성 작성하기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22492\n\n10. **Amplitude가 회사 전체가 좋아하는 내부 AI 도구를 구축한 방법(그리고 당신도 할 수 있는 방법)**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22491\n\n11. **GPT-OSS-120B, 8GB VRAM만으로도 훌륭하게 구동가능**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22490\n\n12. **Ask HN: AI에 대한 열풍 속에서 소프트웨어 엔지니어들은 어떻게 생각하고 있나요?**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22489\n\n13. **왜 합리주의자 커뮤니티에는 컬트가 많은가?**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22488\n\n14. **GLM-4.5: 에이전틱, 추론, 코딩(ARC) 파운데이션 모델**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22487\n\n15. **Dicing an Onion, the Mathematically Optimal Way**\n   - 출처: Hacker News\n   - 링크: https://pudding.cool/2025/08/onions/\n\n16. **Nixidy: Kubernetes GitOps with Nix and Argo CD**\n   - 출처: Hacker News\n   - 링크: https://nixidy.dev/\n\n17. **Show HN: Emailcore – write chiptune in plain text in the browser**\n   - 출처: Hacker News\n   - 링크: https://www.cattheory.net/emailcore/index.html\n\n18. **Languages**\n   - 출처: Hacker News\n   - 링크: https://forgottenlanguages-full.forgottenlanguages.org\n\n19. **Robust Mouse Rejuvenation: Study 2**\n   - 출처: Hacker News\n   - 링크: https://www.levf.org/projects/robust-mouse-rejuvenation-study-2\n\n20. **Show HN: Paket Tour Dieng – Static Site in Astro with Netlify Deployment**\n   - 출처: Hacker News\n   - 링크: https://paketwisatadieng.netlify.app/paket-tour/\n\n21. **I find journaling indispensable (2019)**\n   - 출처: Hacker News\n   - 링크: https://jon.bo/posts/journaling/\n\n22. **Windows 11 24H2 updates failing again with 0x80240069 errors**\n   - 출처: Hacker News\n   - 링크: https://www.bleepingcomputer.com/news/microsoft/windows-11-24h2-updates-failing-again-with-0x80240069-errors/\n\n23. **Sick as a Dog**\n   - 출처: Hacker News\n   - 링크: https://privatebank.jpmorgan.com/nam/en/insights/latest-and-featured/eotm/sick-as-a-dog\n\n24. **Why operating system package maintainers matter**\n   - 출처: Hacker News\n   - 링크: https://briancallahan.net/blog/20250813.html\n\n25. **Structured binding packs in GCC 16**\n   - 출처: Hacker News\n   - 링크: https://old.reddit.com/r/cpp/comments/1moebfm/structured_binding_packs_in_gcc_16/\n\n26. **Show HN: Cromulant**\n   - 출처: Hacker News\n   - 링크: https://github.com/madprops/cromulant/blob/main/screenshots.md\n\n27. **Reflections on LeetCode and LSAT in my 30s**\n   - 출처: Hacker News\n   - 링크: https://andreagao.com/posts/reflection-standardized-tests/\n\n28. **China Uses the Cppcc to Conduct \"United Front Diplomacy\" with North Korea**\n   - 출처: Hacker News\n   - 링크: https://www.38north.org/2025/08/keeping-the-door-open-how-china-uses-the-cppcc-to-conduct-united-front-diplomacy-with-north-korea/\n\n29. **Great Ideas in Theoretical Computer Science**\n   - 출처: Hacker News\n   - 링크: https://ocw.mit.edu/courses/6-080-great-ideas-in-theoretical-computer-science-spring-2008/\n\n30. **A poet's long-forgotten daughter created the first algorithm**\n   - 출처: Hacker News\n   - 링크: https://adamgrant.micro.blog/2025/08/13/how-a-poets-longforgotten-daughter.html\n\n31. **sshrc: Bring your .bashrc, .vimrc, etc. with you when you SSH**\n   - 출처: Hacker News\n   - 링크: https://github.com/cdown/sshrc\n\n32. **Kubernetes will solve YAML headaches with KYAML**\n   - 출처: Hacker News\n   - 링크: https://thenewstack.io/kubernetes-is-getting-a-better-yaml/\n\n33. **A virtual machine with native AI instructions**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=44894015\n\n34. **Realbotix**\n   - 출처: Hacker News\n   - 링크: https://www.realbotix.com/\n\n35. **Gemini adds Temporary Chats and new personalization features**\n   - 출처: Gemini\n   - 링크: https://blog.google/products/gemini/temporary-chats-privacy-controls/\n\n36. **Chrome Beta for Desktop Update**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2025/08/chrome-beta-for-desktop-update_13.html\n\n37. **Chrome Beta for iOS Update**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2025/08/chrome-beta-for-ios-update_13.html\n\n38. **Chrome Beta for Android Update**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2025/08/chrome-beta-for-android-update_13.html\n\n39. **ChromeOS / ChromeOS Flex Stable Channel Update**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2025/08/chromeos-chromeos-flex-stable-channel_12.html\n\n40. **Chrome for Android Update**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2025/08/chrome-for-android-update_083229377.html\n\n41. **Google is investing in infrastructure and an AI-ready workforce in Oklahoma.**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/inside-google/company-announcements/google-american-innovation-oklahoma/\n\n42. **Gemini adds Temporary Chats and new personalization features**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/products/gemini/temporary-chats-privacy-controls/\n\n43. **Miami-Dade County Public Schools uses Gemini for Education for 100,000 high-school students and teachers.**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/outreach-initiatives/education/miami-dade-county-public-schools-uses-gemini-for-education-for-100000-high-school-students-and-teachers/\n\n44. **Google is investing in infrastructure and an AI-ready workforce in Oklahoma.**\n   - 출처: AI\n   - 링크: https://blog.google/inside-google/company-announcements/google-american-innovation-oklahoma/\n\n45. **Unraveling Rovo search relevance**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/atlassian-engineering/unraveling-rovo-search\n\n46. **How to use time-blocking to get more work done**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/productivity/how-to-use-time-blocking\n\n47. **Applications Now Open for $60,000 NVIDIA Graduate Fellowship Awards**\n   - 출처: NVIDIA Blog\n   - 링크: https://blogs.nvidia.com/blog/applications-open-graduate-fellowship-awards-2025/\n\n48. **FLUX.1 Kontext NVIDIA NIM Microservice Now Available for Download**\n   - 출처: NVIDIA Blog\n   - 링크: https://blogs.nvidia.com/blog/rtx-ai-garage-flux-kontext-nim-microservice-siggraph/\n\n49. **Debugging Transactions? Let Spring Debugger Do the Heavy Lifting**\n   - 출처: IntelliJ IDEA : IntelliJ IDEA – the IDE for Professional Development in Java and Kotlin | The JetBrains Blog\n   - 링크: https://blog.jetbrains.com/idea/2025/08/debugging-transactions-let-spring-debugger-do-the-heavy-lifting/\n\n\n\n**분석 지침:**\n- 반드시 위에 명시된 마크다운 헤더 구조를 정확히 따르세요\n- 각 섹션은 2-3개 포인트로 제한\n- 구체적인 수치와 데이터 활용으로 신뢰성 확보\n\n**🌟 URL 컨텍스트 활용 지침:**\n- 제공된 URL의 내용을 적극적으로 활용하여 깊이 있는 분석을 제공하세요\n- 단순 요약이 아닌, 기사의 핵심 인사이트와 숨겨진 의미를 발굴하세요\n- 여러 기사 간의 연결점을 찾아 큰 그림을 그려주세요\n- 기술적 세부사항과 실제 영향력을 균형있게 다루세요\n\n**🎯 독자 재미 극대화 지침:**\n- 딱딱한 기술 뉴스를 생동감 있게 전달하세요\n- 적절한 비유와 실생활 예시로 복잡한 개념을 쉽게 설명하세요\n- 놀라운 사실이나 의외의 관점을 제시하여 호기심을 자극하세요\n- 스토리텔링 요소를 활용하여 뉴스를 하나의 이야기로 엮어주세요\n- 각 프리셋의 톤에 맞는 위트와 유머를 적절히 활용하세요\n\n**🚨 인용 검수 체크리스트:**\n1. 본문의 모든 사실, 수치, 기업명, 기술명에 [^숫자] 인용이 있는가?\n2. 문서 맨 끝에 모든 footnote 정의가 있고, 각각 클릭 가능한 URL을 포함하는가?\n3. [^1]: 기사제목 - https://링크 형식이 정확한가?\n4. 본문에서 언급한 모든 [^숫자]에 대응하는 footnote가 있는가?\n- 최종 제출 전 필수 검토: 위 체크리스트를 모두 확인하세요",
+  "articles": [
+    {
+      "title": "GitHub Availability Report: July 2025",
+      "link": "https://github.blog/news-insights/company-news/github-availability-report-july-2025/",
+      "source": "GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2025-08-13T21:00:00Z",
+      "description": "\u003cp\u003eIn July, we experienced one incident that resulted in degraded performance across GitHub services.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/news-insights/company-news/github-availability-report-july-2025/\"\u003eGitHub Availability Report: July 2025\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "From private to public: How a United Nations organization open sourced its tech in four steps",
+      "link": "https://github.blog/open-source/social-impact/from-private-to-public-how-a-united-nations-organization-open-sourced-its-tech-in-four-steps/",
+      "source": "GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2025-08-13T16:00:00Z",
+      "description": "\u003cp\u003eLearn how the International Telecommunication Union made the switch to open source, and how you can too!\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/open-source/social-impact/from-private-to-public-how-a-united-nations-organization-open-sourced-its-tech-in-four-steps/\"\u003eFrom private to public: How a United Nations organization open sourced its tech in four steps\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Creating AI agent solutions for warehouse data access and security",
+      "link": "https://engineering.fb.com/2025/08/13/data-infrastructure/agentic-solution-for-warehouse-data-access/",
+      "source": "Meta Engineering",
+      "category": "tech",
+      "publishedAt": "2025-08-13T22:05:07Z",
+      "description": "\u003cp\u003eIn this post, we explore the ways we’re evolving Meta’s data warehouse to facilitate productivity and security to serve both human users and AI agents.  We detail how we’re developing agents that help users making data access requests to get to the data they need, and that help data owners process requests and maintain security.  [...]\u003c/p\u003e\n\u003cp\u003e\u003ca class=\"btn btn-secondary understrap-read-more-link\" href=\"https://engineering.fb.com/2025/08/13/data-infrastructure/agentic-solution-for-warehouse-data-access/\"\u003eRead More...\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eThe post \u003ca rel=\"nofollow\" href=\"https://engineering.fb.com/2025/08/13/data-infrastructure/agentic-solution-for-warehouse-data-access/\"\u003eCreating AI agent solutions for warehouse data access and security\u003c/a\u003e appeared first on \u003ca rel=\"nofollow\" href=\"https://engineering.fb.com\"\u003eEngineering at Meta\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "The GPT-5 Launch Broke the AI Internet (And Not in a Good Way)",
+      "link": "https://www.docker.com/blog/gpt5-api-deprecation-ai-app-failure/",
+      "source": "Docker Blog",
+      "category": "tech",
+      "publishedAt": "2025-08-13T17:38:06Z",
+      "description": "What That Means for Devs and AI App Companies When GPT-5 dropped, OpenAI killed off a bunch of older APIs without much warning. A whole lot of apps face-planted overnight. If your app hard-codes itself to one provider, one API shape, or one model, this is the nightmare scenario. This is also different from losing..."
+    },
+    {
+      "title": "건설적인 비판과 잘못된 조언 구분하기 [번역글]",
+      "link": "https://news.hada.io/topic?id=22502",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-13T23:36:45+09:00",
+      "description": "\u003ch2\u003e1. 본질을 바꾸려는 조언에 주의하라\u003c/h2\u003e\n\u003cul\u003e\n\u003cli\u003e좋은 조언은 \u003cstrong\u003e현재의 자산과 정체성을 지키면서\u003c/strong\u003e 더 나은 방향으로 이끌어준다.\u003cbr /\u003e\n(진정한 조언은 \u0026quot;지금의 나\u0026quot;를 잃지 않으면서 성장하게 돕는다)\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003e2. 경험 많은 전문가라도 맥락에 안 맞는 조언은 걸러야\u003c/h2\u003e\n\u003cul\u003e\n...\u003c/p\u003e"
+    },
+    {
+      "title": "Debian GNU/Hurd 2025 가 릴리즈 되었습니다",
+      "link": "https://news.hada.io/topic?id=22501",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-13T19:09:02+09:00",
+      "description": "\u003cp\u003eDebian \u0026quot;Trixie\u0026quot; 배포와 함깨\u003cbr /\u003e\n데비안 릴리즈중 하나인 Debian GNU/Hurd 도 같이 배포되었습니다\u003c/p\u003e\n\u003cp\u003e약 72%의 데비안 아카이브를 사용할 수 있다고 하네요\u003c/p\u003e\n\u003cp\u003e그 외의 변경사항은 다음과 같습니다\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e64비트 지원이 완료되었으며, i386과 동일한 아카이브 커버리지를 제공합니다(실"
+    },
+    {
+      "title": "웹 검색엔진을 처음부터 2개월 만에 3억 개 뉴럴 임베딩으로 구축하기",
+      "link": "https://news.hada.io/topic?id=22495",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-13T14:34:05+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e검색엔진 품질 저하\u003c/strong\u003e와 Transformer 기반 임베딩 모델의 발전을 계기로, 2개월 동안 \u003cstrong\u003e3억 개 임베딩 기반 웹 검색엔진\u003c/strong\u003e을 개발한 경험을 다룸\u003c/li\u003e\n\u003cli\u003e총 \u003cstrong\u003e200개의 GPU 클러스터\u003c/strong\u003e, 대규모 분산 크롤러, RocksDB, HNSW 등의 고성능 인프라와 알고리듬을 통해, ...\u003c/p\u003e"
+    },
+    {
+      "title": "Go 1.25 출시",
+      "link": "https://news.hada.io/topic?id=22493",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-13T11:21:57+09:00",
+      "description": "\u003cp\u003e\u003ca href=\"https://cdn.gosuda.org/go-release-notes/overview-ko-lg-1.25.png\" rel=\"noopener noreferrer\"\u003e[IMG] Overview\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eGo 1.25 버전이 정식으로 출시되었습니다. 이번 버전은 툴, 런타임, 컴파일러, 표준 라이브러리 전반에 걸친 개선 사항을 포함하며, 특히 사용자가 미리 체험하고 피드백을 제공할 "
+    },
+    {
+      "title": "Bash와 Zsh에서 간단한 탭 자동완성 작성하기",
+      "link": "https://news.hada.io/topic?id=22492",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-13T11:01:02+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eBash\u003c/strong\u003e와 \u003cstrong\u003eZsh\u003c/strong\u003e에서 이미 완성된 단어에도 설명을 표시하는 탭 자동완성 기능을 구현하는 방법 소개\u003c/li\u003e\n\u003cli\u003eBash와 Zsh는 \u003cstrong\u003e서로 다른 탭 자동완성 API\u003c/strong\u003e를 사용하며, Zsh만 기본적으로 \u003cstrong\u003e자동 완성에 설명 보이기\u003c/strong\u003e 기능을 제공함\u003c/li\u003e\n\u003cli\u003e\n\u003ccod...\u003c/p\u003e"
+    },
+    {
+      "title": "Amplitude가 회사 전체가 좋아하는 내부 AI 도구를 구축한 방법(그리고 당신도 할 수 있는 방법)",
+      "link": "https://news.hada.io/topic?id=22491",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-13T10:41:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eModa\u003c/strong\u003e는 Amplitude 내부 데이터를 연결해 빠르게 질문에 답하고 \u003cstrong\u003ePRD\u003c/strong\u003e 같은 산출물을 생성하는 AI 도구\u003c/li\u003e\n\u003cli\u003e처음에는 몇 명에게만 공유됐지만, 유용성이 입증되며 전사적으로 폭발적으로 확산됨\u003c/li\u003e\n\u003cli\u003e작은 아이디어 스니펫을 기반으로 구체적이고 완성도 있는 문서로...\u003c/p\u003e"
+    },
+    {
+      "title": "GPT-OSS-120B, 8GB VRAM만으로도 훌륭하게 구동가능",
+      "link": "https://news.hada.io/topic?id=22490",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-13T10:23:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003ellama-cpp\u003c/strong\u003e의 \u003ccode\u003e--cpu-moe\u003c/code\u003e 옵션을 활용해 \u003cstrong\u003eMOE 전문가 레이어\u003c/strong\u003e를 CPU에서 처리하고, 주의(attention) 레이어만 GPU에 오프로드해 5~8GB VRAM으로 빠른 프리필 성능을 구현\u003c/li\u003e\n\u003cli\u003eGPU에는 \u003cstrong\u003eKV 캐시, Attention 가중치·활성값, 라우팅 테이블, LayerNorm 등...\u003c/p\u003e"
+    },
+    {
+      "title": "Ask HN: AI에 대한 열풍 속에서 소프트웨어 엔지니어들은 어떻게 생각하고 있나요?",
+      "link": "https://news.hada.io/topic?id=22489",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-13T10:06:01+09:00",
+      "description": "\u003cp\u003eAI가 업무의 30~50%를 담당하고 있는데, 회사 분위기는 어떤지 궁금합니다.\u003cbr /\u003e\n소프트웨어 엔지니어 채용을 늘리고 있나요, 아니면 중단했나요?\u003cbr /\u003e\n경영진이 더 많은 업무를 처리하기 위해 압력을 가하고 있나요?\u003c/p\u003e\n\u003ch2\u003e주요 답변들 정리\u003c/h2\u003e\n\u003ch4\u003e1. AI 활용도와 실제 생산성\u003c/h4\u003e\n\u003cul\u003e\n\u003cli\u003e많은 개발자들이"
+    },
+    {
+      "title": "왜 합리주의자 커뮤니티에는 컬트가 많은가?",
+      "link": "https://news.hada.io/topic?id=22488",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-13T09:57:42+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e합리주의자 커뮤니티 내부에서 작고 이상한 신념 집단\u003c/strong\u003e이 여러 번 탄생했으며, 일부는 \u003cstrong\u003e실제 폭력 사건\u003c/strong\u003e과 연관되어 있음\u003c/li\u003e\n\u003cli\u003e이런 현상은 \u003cstrong\u003e합리적 사고법을 강조하는 콘텐츠(Sequences)\u003c/strong\u003e 가 “더 나은 생각”의 기술을 약속하면서도 현실적으로 그 약속을...\u003c/p\u003e"
+    },
+    {
+      "title": "GLM-4.5: 에이전틱, 추론, 코딩(ARC) 파운데이션 모델",
+      "link": "https://news.hada.io/topic?id=22487",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-13T09:54:41+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eGLM-4.5는\u003c/strong\u003e 오픈소스 Mixture-of-Experts (MoE) 대형 언어 모델로, \u003cstrong\u003e에이전트성, 추론, 코딩\u003c/strong\u003e 성능이 뛰어남\u003c/li\u003e\n\u003cli\u003e이 모델은 \u003cstrong\u003e23T 토큰\u003c/strong\u003e으로 다단계 훈련 및 전문가 모델 반복, 강화학습을 통해 발전함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eTAU-Bench, AIME 24, SWE-bench V...\u003c/p\u003e"
+    },
+    {
+      "title": "Dicing an Onion, the Mathematically Optimal Way",
+      "link": "https://pudding.cool/2025/08/onions/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-13T21:53:43Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://pudding.cool/2025/08/onions/\"\u003ehttps://pudding.cool/2025/08/onions/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44894302\"\u003ehttps://news.ycombinator.com/item?id=44894302\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Nixidy: Kubernetes GitOps with Nix and Argo CD",
+      "link": "https://nixidy.dev/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-13T21:53:32Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://nixidy.dev/\"\u003ehttps://nixidy.dev/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44894300\"\u003ehttps://news.ycombinator.com/item?id=44894300\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Emailcore – write chiptune in plain text in the browser",
+      "link": "https://www.cattheory.net/emailcore/index.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-13T21:53:13Z",
+      "description": "\n\u003cp\u003eI tried using the AudioContext API to make the most primitive browser-based multi-voice chiptune tracker conceivable. No frameworks or external dependencies were used, and the page source ought to be very readable.\u003cp\u003eSongs are written in plain, 7-bit safe text. Every line makes a voice/channel.\u003cp\u003eThe examples given on the page should hopefully illustrate every feature, but as a quick overview: Sounds are specified using Anglo-style note names, with flat (black) keys being the lowercase version of the white key above so as to maintain one character per note. Hence, a full chromatic scale is AbBCdDeEFgGa. Every note name is interpreted as the \u003ci\u003eclosest\u003c/i\u003e instance of that note to the preceding one. +- skips up or down an octave, ~ holds the previous note for a beat, . skips a beat, 01234 chooses one of 5 preset timbres, \u003c\u003e makes beats slower or faster (for all channels), () makes the current channel louder or quieter. All other characters are ignored.\u003cp\u003eIf you come up with a good tune, please share it in the comments!\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44894298\"\u003ehttps://news.ycombinator.com/item?id=44894298\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Languages",
+      "link": "https://forgottenlanguages-full.forgottenlanguages.org",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-13T21:51:07Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://forgottenlanguages-full.forgottenlanguages.org\"\u003ehttps://forgottenlanguages-full.forgottenlanguages.org\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44894275\"\u003ehttps://news.ycombinator.com/item?id=44894275\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Robust Mouse Rejuvenation: Study 2",
+      "link": "https://www.levf.org/projects/robust-mouse-rejuvenation-study-2",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-13T21:50:46Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.levf.org/projects/robust-mouse-rejuvenation-study-2\"\u003ehttps://www.levf.org/projects/robust-mouse-rejuvenation-study-2\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44894272\"\u003ehttps://news.ycombinator.com/item?id=44894272\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Paket Tour Dieng – Static Site in Astro with Netlify Deployment",
+      "link": "https://paketwisatadieng.netlify.app/paket-tour/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-13T21:46:52Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://paketwisatadieng.netlify.app/paket-tour/\"\u003ehttps://paketwisatadieng.netlify.app/paket-tour/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44894243\"\u003ehttps://news.ycombinator.com/item?id=44894243\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "I find journaling indispensable (2019)",
+      "link": "https://jon.bo/posts/journaling/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-13T21:45:36Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://jon.bo/posts/journaling/\"\u003ehttps://jon.bo/posts/journaling/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44894234\"\u003ehttps://news.ycombinator.com/item?id=44894234\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Windows 11 24H2 updates failing again with 0x80240069 errors",
+      "link": "https://www.bleepingcomputer.com/news/microsoft/windows-11-24h2-updates-failing-again-with-0x80240069-errors/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-13T21:44:24Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.bleepingcomputer.com/news/microsoft/windows-11-24h2-updates-failing-again-with-0x80240069-errors/\"\u003ehttps://www.bleepingcomputer.com/news/microsoft/windows-11-24h2-updates-failing-again-with-0x80240069-errors/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44894221\"\u003ehttps://news.ycombinator.com/item?id=44894221\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Sick as a Dog",
+      "link": "https://privatebank.jpmorgan.com/nam/en/insights/latest-and-featured/eotm/sick-as-a-dog",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-13T21:37:23Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://privatebank.jpmorgan.com/nam/en/insights/latest-and-featured/eotm/sick-as-a-dog\"\u003ehttps://privatebank.jpmorgan.com/nam/en/insights/latest-and-featured/eotm/sick-as-a-dog\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44894154\"\u003ehttps://news.ycombinator.com/item?id=44894154\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Why operating system package maintainers matter",
+      "link": "https://briancallahan.net/blog/20250813.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-13T21:32:31Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://briancallahan.net/blog/20250813.html\"\u003ehttps://briancallahan.net/blog/20250813.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44894116\"\u003ehttps://news.ycombinator.com/item?id=44894116\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Structured binding packs in GCC 16",
+      "link": "https://old.reddit.com/r/cpp/comments/1moebfm/structured_binding_packs_in_gcc_16/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-13T21:29:31Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://old.reddit.com/r/cpp/comments/1moebfm/structured_binding_packs_in_gcc_16/\"\u003ehttps://old.reddit.com/r/cpp/comments/1moebfm/structured_binding_packs_in_gcc_16/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44894093\"\u003ehttps://news.ycombinator.com/item?id=44894093\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Cromulant",
+      "link": "https://github.com/madprops/cromulant/blob/main/screenshots.md",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-13T21:29:17Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/madprops/cromulant/blob/main/screenshots.md\"\u003ehttps://github.com/madprops/cromulant/blob/main/screenshots.md\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44894091\"\u003ehttps://news.ycombinator.com/item?id=44894091\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Reflections on LeetCode and LSAT in my 30s",
+      "link": "https://andreagao.com/posts/reflection-standardized-tests/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-13T21:27:35Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://andreagao.com/posts/reflection-standardized-tests/\"\u003ehttps://andreagao.com/posts/reflection-standardized-tests/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44894068\"\u003ehttps://news.ycombinator.com/item?id=44894068\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "China Uses the Cppcc to Conduct \"United Front Diplomacy\" with North Korea",
+      "link": "https://www.38north.org/2025/08/keeping-the-door-open-how-china-uses-the-cppcc-to-conduct-united-front-diplomacy-with-north-korea/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-13T21:26:21Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.38north.org/2025/08/keeping-the-door-open-how-china-uses-the-cppcc-to-conduct-united-front-diplomacy-with-north-korea/\"\u003ehttps://www.38north.org/2025/08/keeping-the-door-open-how-china-uses-the-cppcc-to-conduct-united-front-diplomacy-with-north-korea/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44894053\"\u003ehttps://news.ycombinator.com/item?id=44894053\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Great Ideas in Theoretical Computer Science",
+      "link": "https://ocw.mit.edu/courses/6-080-great-ideas-in-theoretical-computer-science-spring-2008/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-13T21:25:33Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://ocw.mit.edu/courses/6-080-great-ideas-in-theoretical-computer-science-spring-2008/\"\u003ehttps://ocw.mit.edu/courses/6-080-great-ideas-in-theoretical-computer-science-spring-2008/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44894048\"\u003ehttps://news.ycombinator.com/item?id=44894048\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "A poet's long-forgotten daughter created the first algorithm",
+      "link": "https://adamgrant.micro.blog/2025/08/13/how-a-poets-longforgotten-daughter.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-13T21:24:56Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://adamgrant.micro.blog/2025/08/13/how-a-poets-longforgotten-daughter.html\"\u003ehttps://adamgrant.micro.blog/2025/08/13/how-a-poets-longforgotten-daughter.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44894046\"\u003ehttps://news.ycombinator.com/item?id=44894046\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 3\u003c/p\u003e\n"
+    },
+    {
+      "title": "sshrc: Bring your .bashrc, .vimrc, etc. with you when you SSH",
+      "link": "https://github.com/cdown/sshrc",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-13T21:22:12Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/cdown/sshrc\"\u003ehttps://github.com/cdown/sshrc\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44894024\"\u003ehttps://news.ycombinator.com/item?id=44894024\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Kubernetes will solve YAML headaches with KYAML",
+      "link": "https://thenewstack.io/kubernetes-is-getting-a-better-yaml/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-13T21:21:57Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://thenewstack.io/kubernetes-is-getting-a-better-yaml/\"\u003ehttps://thenewstack.io/kubernetes-is-getting-a-better-yaml/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44894020\"\u003ehttps://news.ycombinator.com/item?id=44894020\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "A virtual machine with native AI instructions",
+      "link": "https://news.ycombinator.com/item?id=44894015",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-13T21:21:45Z",
+      "description": "\n\u003cp\u003ewhat do you think about a virtual machine like the google v8 that natively has an instruction set with AI instructions?\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44894015\"\u003ehttps://news.ycombinator.com/item?id=44894015\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Realbotix",
+      "link": "https://www.realbotix.com/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-13T21:18:35Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.realbotix.com/\"\u003ehttps://www.realbotix.com/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=44893980\"\u003ehttps://news.ycombinator.com/item?id=44893980\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Gemini adds Temporary Chats and new personalization features",
+      "link": "https://blog.google/products/gemini/temporary-chats-privacy-controls/",
+      "source": "Gemini",
+      "category": "tech",
+      "publishedAt": "2025-08-13T16:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Blog_Hero.max-600x600.format-webp_lp363TR.webp\"\u003eToday, we are updating the Gemini app so that it learns about your preferences the more you use it."
+    },
+    {
+      "title": "Chrome Beta for Desktop Update",
+      "link": "http://chromereleases.googleblog.com/2025/08/chrome-beta-for-desktop-update_13.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2025-08-13T09:58:00.001-07:00",
+      "description": "\u003cp\u003eThe Beta channel has been updated to 140.0.7339.16 for Windows, Mac and Linux.\u003c/p\u003e\u003cp\u003eA partial list of changes is available in the \u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/140.0.7339.5..140.0.7339.16?pretty=fuller\u0026amp;n=10000\"\u003eGit log\u003c/a\u003e. Interested in \u003ca href=\"https://www.chromium.org/getting-involved/dev-channel/\"\u003eswitching\u003c/a\u003e release channels? Find out \u003ca href=\"https://www.chromium.org/getting-involved/dev-channel/\"\u003ehow\u003c/a\u003e. If you find a new issue, please let us know by \u003ca href=\"https://crbug.com/\"\u003efiling a bug\u003c/a\u003e. The \u003ca href=\"https://productforums.google.com/forum/#!forum/chrome\"\u003ecommunity help forum\u003c/a\u003e is also a great place to reach out for help or learn about common issues.\u003c/p\u003e\u003cp\u003eChrome Release Team\u003cbr /\u003e\u003ca href=\"https://www.google.com/chrome\"\u003e\u003c/a\u003e\u003ca href=\"https://www.google.com/chrome\"\u003eGoogle Chrome\u003c/a\u003e\u003c/p\u003e"
+    },
+    {
+      "title": "Chrome Beta for iOS Update",
+      "link": "http://chromereleases.googleblog.com/2025/08/chrome-beta-for-ios-update_13.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2025-08-13T08:43:00.001-07:00",
+      "description": "\u003cp\u003eHi everyone! We've just released Chrome Beta 140 (140.0.7339.14) for iOS; it'll become available on App Store in the next few days.\u003c/p\u003e\u003cp\u003eYou can see a partial list of the changes in the \u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/140.0.7339.7..140.0.7339.14?pretty=fuller\u0026amp;n=10000\"\u003eGit log\u003c/a\u003e. If you find a new issue, please let us know by \u003ca href=\"https://code.google.com/p/chromium/issues/entry?template=iOS%20Issue\"\u003efiling a bug\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eChrome Release Team\u003cbr /\u003e\u003ca href=\"https://www.google.com/chrome\"\u003e\u003c/a\u003e\u003ca href=\"https://www.google.com/chrome\"\u003eGoogle Chrome\u003c/a\u003e\u003c/p\u003e"
+    },
+    {
+      "title": "Chrome Beta for Android Update",
+      "link": "http://chromereleases.googleblog.com/2025/08/chrome-beta-for-android-update_13.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2025-08-13T08:28:00.001-07:00",
+      "description": "\u003cp\u003eHi everyone! We've just released Chrome Beta 140 (140.0.7339.15) for Android. It's now available on \u003ca href=\"https://play.google.com/store/apps/details?id=com.chrome.beta\"\u003eGoogle Play\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eYou can see a partial list of the changes in the \u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/140.0.7339.4..140.0.7339.15?pretty=fuller\u0026amp;n=10000\"\u003eGit log\u003c/a\u003e. For details on new features, check out the \u003ca href=\"https://blog.chromium.org\"\u003eChromium blog\u003c/a\u003e, and for details on web platform updates, check \u003ca href=\"https://www.chromestatus.com/features#milestone%3D140\"\u003ehere\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eIf you find a new issue, please let us know by \u003ca href=\"https://code.google.com/p/chromium/issues/entry?template=Android%20Issue\"\u003efiling a bug\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eChrome Release Team\u003cbr /\u003e\u003ca href=\"https://www.google.com/chrome\"\u003e\u003c/a\u003e\u003ca href=\"https://www.google.com/chrome\"\u003eGoogle Chrome\u003c/a\u003e\u003c/p\u003e"
+    },
+    {
+      "title": "ChromeOS / ChromeOS Flex Stable Channel Update",
+      "link": "http://chromereleases.googleblog.com/2025/08/chromeos-chromeos-flex-stable-channel_12.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2025-08-12T19:23:00-07:00",
+      "description": "\u003cp\u003e\u0026nbsp;\u003cspan style=\"color: rgba(0, 0, 0, 0.87); font-family: arial; font-size: 17px;\"\u003eM-138, ChromeOS version 16295.74.0 (Browser version 138.0.7204.232), has rolled out\u003c/span\u003e\u003c/p\u003e\u003cp style=\"color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px;\"\u003e\u003cspan style=\"font-family: arial;\"\u003eto ChromeOS devices on the Stable channel.\u003cbr style=\"content: \u0026quot; \u0026quot;; display: block; padding: 4px;\" /\u003e\u003cbr style=\"content: \u0026quot; \u0026quot;; display: block; padding: 4px;\" /\u003eIf you find new issues, please let us know one of the following ways:\u003c/span\u003e\u003c/p\u003e\u003col style=\"color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px; margin: 0px; padding-inline-start: 48px; padding: 0px 48px;\"\u003e\u003cli aria-level=\"1\" dir=\"ltr\" style=\"color: #222222; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; line-height: 32px; list-style-type: decimal; margin: 0px 0px 0.25em; padding: 0px; vertical-align: baseline; white-space: pre;\"\u003e\u003cp dir=\"ltr\" role=\"presentation\" style=\"line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003ca href=\"https://bugs.chromium.org/p/chromium/issues/list\" style=\"color: #4184f3; text-decoration-line: none;\"\u003e\u003cspan style=\"color: #4a86e8; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-wrap-mode: wrap; vertical-align: baseline;\"\u003e\u003cspan style=\"font-family: arial;\"\u003eFile a bug\u003c/span\u003e\u003c/span\u003e\u003c/a\u003e\u003c/p\u003e\u003c/li\u003e\u003cli aria-level=\"1\" dir=\"ltr\" style=\"color: #222222; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; line-height: 32px; list-style-type: decimal; margin: 0px 0px 0.25em; padding: 0px; vertical-align: baseline; white-space: pre;\"\u003e\u003cp dir=\"ltr\" role=\"presentation\" style=\"line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-wrap-mode: wrap; vertical-align: baseline;\"\u003e\u003cspan style=\"font-family: arial;\"\u003eVisit our ChromeOS communities\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e\u003c/li\u003e\u003col style=\"margin: 0px; padding-inline-start: 48px; padding: 0px 48px;\"\u003e\u003cli aria-level=\"2\" dir=\"ltr\" style=\"color: #222222; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; line-height: 32px; list-style-type: decimal; margin: 0px 0px 0.25em; padding: 0px; vertical-align: baseline; white-space: pre;\"\u003e\u003cp dir=\"ltr\" role=\"presentation\" style=\"line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: arial;\"\u003e\u003cspan style=\"font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-wrap-mode: wrap; vertical-align: baseline;\"\u003eGeneral:\u003c/span\u003e\u003ca href=\"https://support.google.com/chromebook/community/?hl=en\u0026amp;gpf=%23!forum%2Fchromebook-central\" style=\"color: #4184f3; text-decoration-line: none;\"\u003e\u003cspan style=\"color: #222222; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-wrap-mode: wrap; vertical-align: baseline;\"\u003e \u003c/span\u003e\u003cspan style=\"font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-wrap-mode: wrap; vertical-align: baseline;\"\u003eChromebook Help Community\u003c/span\u003e\u003c/a\u003e\u003c/span\u003e\u003c/p\u003e\u003c/li\u003e\u003cli aria-level=\"2\" dir=\"ltr\" style=\"color: #222222; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; line-height: 32px; list-style-type: decimal; margin: 0px 0px 0.25em; padding: 0px; vertical-align: baseline; white-space: pre;\"\u003e\u003cp dir=\"ltr\" role=\"presentation\" style=\"line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: arial;\"\u003e\u003cspan style=\"font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-wrap-mode: wrap; vertical-align: baseline;\"\u003eBeta Specific:\u003c/span\u003e\u003ca href=\"https://support.google.com/chromeos-beta/community\" style=\"color: #4184f3; text-decoration-line: none;\"\u003e\u003cspan style=\"color: #222222; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-wrap-mode: wrap; vertical-align: baseline;\"\u003e \u003c/span\u003e\u003cspan style=\"font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-wrap-mode: wrap; vertical-align: baseline;\"\u003eChromeOS Beta Help Community\u003c/span\u003e\u003c/a\u003e\u003c/span\u003e\u003c/p\u003e\u003c/li\u003e\u003c/ol\u003e\u003cli aria-level=\"1\" dir=\"ltr\" style=\"color: #222222; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; line-height: 32px; list-style-type: decimal; margin: 0px 0px 0.25em; padding: 0px; vertical-align: baseline; white-space: pre;\"\u003e\u003cp dir=\"ltr\" role=\"presentation\" style=\"line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003ca href=\"https://support.google.com/chrome/answer/95315?hl=en\u0026amp;co=GENIE.Platform%3DDesktop\" style=\"color: #4184f3; text-decoration-line: none;\"\u003e\u003cspan style=\"color: black; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-wrap-mode: wrap; vertical-align: baseline;\"\u003e\u003cspan style=\"font-family: arial;\"\u003eReport an issue or send feedback on Chrome\u003c/span\u003e\u003c/span\u003e\u003c/a\u003e\u003c/p\u003e\u003c/li\u003e\u003cli aria-level=\"1\" dir=\"ltr\" style=\"color: #222222; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; line-height: 32px; list-style-type: decimal; margin: 0px 0px 0.25em; padding: 0px; vertical-align: baseline; white-space: pre;\"\u003e\u003cp dir=\"ltr\" role=\"presentation\" style=\"line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: arial;\"\u003e\u003cspan style=\"color: black; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-wrap-mode: wrap; vertical-align: baseline;\"\u003eInterested in switching channels?\u003c/span\u003e\u003ca href=\"https://support.google.com/chromebook/answer/1086915\" style=\"color: #4184f3; text-decoration-line: none;\"\u003e\u003cspan style=\"color: black; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-wrap-mode: wrap; vertical-align: baseline;\"\u003e \u003c/span\u003e\u003cspan style=\"font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-wrap-mode: wrap; vertical-align: baseline;\"\u003eFind out how.\u003c/span\u003e\u003c/a\u003e\u003c/span\u003e\u003c/p\u003e\u003c/li\u003e\u003c/ol\u003e\u003cp style=\"color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px;\"\u003e\u003cspan style=\"font-family: arial;\"\u003eThanks,\u003c/span\u003e\u003c/p\u003e\u003cp style=\"color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px;\"\u003e\u003cspan style=\"font-family: arial;\"\u003eAlon Bajayo\u003c/span\u003e\u003c/p\u003e\u003cp style=\"color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px;\"\u003e\u003cspan style=\"font-family: arial;\"\u003eChromeOS Release Team\u003c/span\u003e\u003c/p\u003e"
+    },
+    {
+      "title": "Chrome for Android Update",
+      "link": "http://chromereleases.googleblog.com/2025/08/chrome-for-android-update_083229377.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2025-08-12T17:00:00-07:00",
+      "description": "\u003cp\u003eHi, everyone! We've just released Chrome 139 (139.0.7258.123) for Android. It'll become\u0026nbsp;\u003ca href=\"https://play.google.com/store/apps/details?id=com.android.chrome\"\u003eavailable on Google Play\u003c/a\u003e\u0026nbsp;over the next few days.\u0026nbsp;\u003c/p\u003e\u003cp\u003eThis release includes stability and performance improvements. You can see a full list of the changes in the\u0026nbsp;\u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/139.0.7258.62..139.0.7258.123?pretty=fuller\u0026amp;n=10000\"\u003eGit log\u003c/a\u003e. If you find a new issue, please let us know by\u0026nbsp;\u003ca href=\"https://code.google.com/p/chromium/issues/entry?template=Android%20Issue\"\u003efiling a bug\u003c/a\u003e.\u003c/p\u003e\u003cdiv\u003e\u003cbr /\u003e\u003c/div\u003e\u003cdiv\u003eAndroid releases contain the same security fixes as their corresponding\u0026nbsp;\u003ca href=\"https://chromereleases.googleblog.com/2025/08/stable-channel-update-for-desktop_12.html\"\u003eDesktop releases\u003c/a\u003e\u0026nbsp;(Windows \u0026amp; Mac: 139.0.7258.127/.128, Linux: 139.0.7258.127) unless otherwise noted.\u003cbr /\u003e\u003cdiv\u003e\u003cbr /\u003e\u003c/div\u003e\u003cdiv\u003e\u003cdiv\u003e\u003cbr /\u003e\u003c/div\u003e\u003cdiv\u003eHarry Souders\u003cbr /\u003e\u003ca href=\"https://www.google.com/chrome/\"\u003eGoogle Chrome\u003c/a\u003e\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e"
+    },
+    {
+      "title": "Google is investing in infrastructure and an AI-ready workforce in Oklahoma.",
+      "link": "https://blog.google/inside-google/company-announcements/google-american-innovation-oklahoma/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-08-13T20:05:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/InvestinginOklahoma_SS.max-600x600.format-webp.webp\"\u003eGoogle is investing an additional $9 billion in Oklahoma within the next two years in cloud and AI infrastructure. This investment supports the development of a new data…"
+    },
+    {
+      "title": "Gemini adds Temporary Chats and new personalization features",
+      "link": "https://blog.google/products/gemini/temporary-chats-privacy-controls/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-08-13T16:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Blog_Hero.max-600x600.format-webp_lp363TR.webp\"\u003eToday, we are updating the Gemini app so that it learns about your preferences the more you use it."
+    },
+    {
+      "title": "Miami-Dade County Public Schools uses Gemini for Education for 100,000 high-school students and teachers.",
+      "link": "https://blog.google/outreach-initiatives/education/miami-dade-county-public-schools-uses-gemini-for-education-for-100000-high-school-students-and-teachers/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-08-13T14:00:00Z",
+      "description": "\u003cimg src=\"https://i.ytimg.com/vi_webp/Vz8GI5piLT4/maxresdefault.webp\"\u003eMiami-Dade County Public Schools (M-DCPS), the third-largest school district in the United States, offers every high-school student and teacher access to Gemini for Educ…"
+    },
+    {
+      "title": "Google is investing in infrastructure and an AI-ready workforce in Oklahoma.",
+      "link": "https://blog.google/inside-google/company-announcements/google-american-innovation-oklahoma/",
+      "source": "AI",
+      "category": "tech",
+      "publishedAt": "2025-08-13T20:05:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/InvestinginOklahoma_SS.max-600x600.format-webp.webp\"\u003eGoogle is investing an additional $9 billion in Oklahoma within the next two years in cloud and AI infrastructure. This investment supports the development of a new data…"
+    },
+    {
+      "title": "Unraveling Rovo search relevance",
+      "link": "https://www.atlassian.com/blog/atlassian-engineering/unraveling-rovo-search",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2025-08-12T22:19:30Z",
+      "description": "\u003cp\u003eDiscover how Rovo search delivers fast, relevant results across Atlassian and 50+ SaaS applications. This blog unpacks the technology behind Rovo’s search relevance, smart answers, and personalization, revealing how advanced ranking, AI, and user signals power seamless knowledge discovery for modern teams.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/atlassian-engineering/unraveling-rovo-search\"\u003eUnraveling Rovo search relevance\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "How to use time-blocking to get more work done",
+      "link": "https://www.atlassian.com/blog/productivity/how-to-use-time-blocking",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2025-08-12T22:17:31Z",
+      "description": "\u003cp\u003eSchedule an appointment with yourself to knock out your essential tasks.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/productivity/how-to-use-time-blocking\"\u003eHow to use time-blocking to get more work done\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Applications Now Open for $60,000 NVIDIA Graduate Fellowship Awards",
+      "link": "https://blogs.nvidia.com/blog/applications-open-graduate-fellowship-awards-2025/",
+      "source": "NVIDIA Blog",
+      "category": "tech",
+      "publishedAt": "2025-08-13T15:00:02Z",
+      "description": "Bringing together the world’s brightest minds and the latest accelerated computing technology leads to powerful breakthroughs that help tackle some of the biggest research problems. To foster such innovation, the NVIDIA Graduate Fellowship Program provides grants, mentors and technical support to doctoral students doing outstanding research relevant to NVIDIA technologies. The program, in its 25th\t\u003ca class=\"read-more\" href=\"https://blogs.nvidia.com/blog/applications-open-graduate-fellowship-awards-2025/\"\u003e\n\t\tRead Article\t\t\u003cspan data-icon=\"y\"\u003e\u003c/span\u003e\n\t\u003c/a\u003e\n\t"
+    },
+    {
+      "title": "FLUX.1 Kontext NVIDIA NIM Microservice Now Available for Download",
+      "link": "https://blogs.nvidia.com/blog/rtx-ai-garage-flux-kontext-nim-microservice-siggraph/",
+      "source": "NVIDIA Blog",
+      "category": "tech",
+      "publishedAt": "2025-08-13T13:00:00Z",
+      "description": "Black Forest Labs’ FLUX.1 Kontext [dev] image editing model is now available as an NVIDIA NIM microservice. FLUX.1 models allow users to edit existing images with simple language, without the need for fine-tuning or complex workflows. Deploying powerful AI requires curation of model variants, adaptation to manage all input and output data, and quantization to\t\u003ca class=\"read-more\" href=\"https://blogs.nvidia.com/blog/rtx-ai-garage-flux-kontext-nim-microservice-siggraph/\"\u003e\n\t\tRead Article\t\t\u003cspan data-icon=\"y\"\u003e\u003c/span\u003e\n\t\u003c/a\u003e\n\t"
+    },
+    {
+      "title": "Debugging Transactions? Let Spring Debugger Do the Heavy Lifting",
+      "link": "https://blog.jetbrains.com/idea/2025/08/debugging-transactions-let-spring-debugger-do-the-heavy-lifting/",
+      "source": "IntelliJ IDEA : IntelliJ IDEA – the IDE for Professional Development in Java and Kotlin | The JetBrains Blog",
+      "category": "tech",
+      "publishedAt": "2025-08-13T10:08:24Z",
+      "description": "Spring Framework\u0026#8217;s declarative transaction management is incredibly powerful, allowing developers to simply add the @Transactional annotation to a method and let Spring handle the transaction details. However, misconfigurations or misunderstandings of how transactions work can lead to frustrating database transaction handling issues. Debugging these problems often means sifting through a lot of AOP proxy code, [\u0026#8230;]"
+    }
+  ],
+  "generatedAt": "2025-08-14T07:09:46.881282105+09:00"
+}
