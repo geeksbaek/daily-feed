@@ -1,0 +1,362 @@
+{
+  "date": "2025-08-28",
+  "preset": "casual",
+  "summary": "## 🌟 오늘의 Tech Talk\n\n안녕하세요! 오늘 테크씬은 정말 흥미진진하네요. 🔥 한쪽에서는 OpenAI와 Anthropic이 손잡고 \"AI를 어떻게 더 안전하게 만들까?\"라는 중요한 질문에 대한 답을 함께 찾기 시작했고, 다른 한쪽에서는 Cloudflare가 개발자들을 위해 AI 모델을 더 쉽고 저렴하게 쓸 수 있는 판을 깔아주고 있어요. 마치 한쪽에서는 브레이크를, 다른 쪽에서는 액셀을 동시에 개발하는 느낌이랄까요? 개발자 입장에선 정말 신나는 소식들이 많으니, 바로 한번 파고 들어가 보죠!\n\n## 📊 주요 뉴스 브리핑\n\n### 🚀 신기술 \u0026 서비스\n\n- **Cloudflare, AI 개발자들의 '스위스 아미 나이프'를 꿈꾸다?**: Cloudflare가 AI Gateway라는 걸 내놨는데, 이거 꽤 물건이에요. [^41] 여러 AI 모델을 하나의 API 엔드포인트로 관리하게 해줘서, 특정 회사에 종속될 걱정을 덜어주죠. [^41] 여기에 Workers AI에 Leonardo의 이미지 생성 모델과 Deepgram의 음성 모델까지 추가했어요. [^43] 솔직히 말해서, 이건 Cloudflare가 \"AI 모델은 누가 만들든 상관없어, 너희는 우리 플랫폼 위에서 편하게 쓰기만 해!\"라고 선언하는 거나 다름없어요. 개발자 입장에선 정말 환영할 만한 일이죠! 👍[^41][^43]\n- **Docker, 이제 2주마다 폭풍 업데이트!**: Docker Desktop이 이제 2주마다 새로운 버전을 출시한다고 발표했어요. [^14] 최신 기능을 빠르게 써볼 수 있다는 건 장점이지만, 솔직히 \"또 업데이트하라고?\" 하는 팝업을 더 자주 보게 될 것 같아 살짝 귀찮을 수도 있겠네요. 😂 그래도 혁신을 가속화하겠다는 의지는 정말 대단한 것 같아요. [^14]\n- **오늘의 꿀템, GitHub 기반 오픈소스들**: 개발자 커뮤니티에서 재미있는 도구들이 많이 나왔어요. `techGiterview`는 GitHub 프로필 기반으로 기술 면접 질문을 만들어주는 생성기인데, 채용 담당자에게 유용해 보여요. [^5] 또, GitHub Actions의 SHA 고정(pinning)을 도와주는 대화형 CLI 도구도 등장했어요. [^6] 이런 것들이야말로 진짜 개발자들의 '가려운 곳'을 긁어주는 실용적인 도구죠.\n\n### 🏢 기업 \u0026 산업 동향\n\n- **OpenAI와 Anthropic, 어제의 경쟁자가 오늘의 동지?**: 정말 놀라운 소식이에요! OpenAI와 Anthropic이 공동으로 AI 안전성 평가 결과를 발표했습니다. [^15] 업계의 두 거물이 함께 움직였다는 건, AI 안전 문제가 더 이상 무시할 수 없는 수준에 이르렀다는 걸 보여줘요. [^1] \"우리 기술이 위험하게 사용될 수 있다\"는 걸 인정하고 함께 해결책을 찾는 모습은 꽤 긍정적으로 보여요. 물론 이게 마케팅 전략일 수도 있지만, 방향 자체는 옳다고 봐야겠죠? [^15]\n- **Google, 버지니아에 대규모 투자 단행**: Google이 미국 버지니아 주에 혁신 가속화를 위해 대규모 투자를 진행하고 있어요. [^16][^19] 이게 왜 중요하냐면, 결국 AI 경쟁은 데이터센터, 즉 인프라 싸움이기 때문이에요. 이런 투자는 Google의 AI 서비스가 앞으로도 안정적으로 돌아갈 거라는 강력한 신호죠.\n- **TikTok의 주인, ByteDance의 무서운 성장**: TikTok의 모회사인 ByteDance의 기업 가치가 3,300억 달러를 넘어섰고, 매출은 이미 Meta를 추월했다고 해요. [^33] 우리가 숏폼 비디오에 빠져있는 동안, 그 뒤에서는 정말 거대한 기술 기업이 탄생한 거죠. 이들의 추천 알고리즘 기술력은 여전히 업계 최고 수준이라는 걸 잊으면 안 돼요.\n\n### 🔍 트렌드 \u0026 인사이트\n\n- **LLM 보안, 여전히 '답 없는' 문제**: \"악의적인 입력으로부터 LLM을 보호하는 건 여전히 불가능하다\"는 목소리가 커지고 있어요. [^29] 이게 바로 OpenAI와 Anthropic이 안전성 연구에 힘을 쏟는 이유이기도 하죠. [^15] LLM이 똑똑하고 유연해서 좋은 건데, 바로 그 점 때문에 공격에 취약하다는 딜레마가 있어요. 현재로서는 방어보다 공격이 더 쉬운 '창과 방패의 싸움'이 계속되고 있는 셈입니다.\n- **지난 5년간 LLM 컨텍스트 창은 얼마나 커졌을까?**: 지난 5년간 LLM의 컨텍스트 창(한 번에 처리할 수 있는 정보의 양) 크기 변화 타임라인을 보면 정말 입이 떡 벌어져요. [^12] 수천 토큰 수준에서 시작해서 이제는 수백만 토큰을 다루는 시대가 됐죠. 모델의 크기(파라미터 수) 경쟁만큼이나, 이 컨텍스트 창의 확장이 AI가 더 복잡하고 긴 호흡의 작업을 처리할 수 있게 만든 핵심 동력이라고 볼 수 있습니다.\n\n## 💡 오늘의 정리\n\n오늘의 핵심은 이거예요. 첫째, AI는 이제 '누가 더 좋은 모델을 만드냐'의 경쟁을 넘어 **'누가 더 좋은 개발 생태계와 플랫폼을 제공하느냐'**의 싸움으로 넘어가고 있다는 것. Cloudflare의 행보가 바로 그 증거죠. [^41][^44] 둘째, AI가 점점 더 강력해지면서 **'안전'과 '책임'**이 업계의 가장 중요한 화두로 떠오르고 있다는 점이에요. OpenAI와 Anthropic의 협력은 시작에 불과할 겁니다. [^15] 개발자로서 우리는 이 두 가지 큰 흐름 속에서 기회를 잡아야겠죠? 😉\n\n[^1]: Detecting and countering misuse of AI: August 2025 - https://www.anthropic.com/news/detecting-countering-misuse-aug-2025\n[^2]: How to use GitHub Copilot on github.com: A power user’s guide - https://github.blog/ai-and-ml/github-copilot/how-to-use-github-copilot-on-github-com-a-power-users-guide/\n[^3]: How to use GitHub Copilot on github.com: A power user’s guide - https://github.blog/ai-and-ml/github-copilot/how-to-use-github-copilot-on-github-com-a-power-users-guide/\n[^4]: BYTE 매거진의 확대 및 검색 가능한 아카이브 - https://news.hada.io/topic?id=22761\n[^5]: Show GN: github 기반 기술 면접 생성기, techGiterview - https://news.hada.io/topic?id=22760\n[^6]: Show GN: SHA 고정 기능을 통해 GitHub Actions를 업데이트하는 대화형 CLI 도구 - https://news.hada.io/topic?id=22759\n[^7]: 저희 투자사(!)에서 저희 앱의 JS SDK를 만들어주셨습니다 - https://news.hada.io/topic?id=22757\n[^8]: 유령 구직 공고 금지 제안 - https://news.hada.io/topic?id=22756\n[^9]: 미국 정부의 Intel 지분 인수 - https://news.hada.io/topic?id=22755\n[^10]: Framework Laptop 16 - https://news.hada.io/topic?id=22754\n[^11]: [2025/08/18 ~ 24] 이번 주에 살펴볼 만한 AI/ML 논문 모음 - https://news.hada.io/topic?id=22753\n[^12]: 지난 5년간 LLM 컨텍스트 윈도우의 크기 확장 타임라인 - https://news.hada.io/topic?id=22752\n[^13]: 미국행 우편물 접수 일시 중단 안내 - https://news.hada.io/topic?id=22751\n[^14]: Docker Desktop Accelerates Innovation with Faster Release Cadence - https://www.docker.com/blog/docker-desktop-updates-every-two-weeks/\n[^15]: OpenAI and Anthropic share findings from a joint safety evaluation - https://openai.com/index/openai-anthropic-safety-evaluation\n[^16]: How Google is investing in Virginia to accelerate innovation for the U.S. - https://blog.google/inside-google/company-announcements/google-american-innovation-virginia/\n[^17]: Protect your new devices with Pixel Care+ - https://blog.google/products/pixel/google-pixel-care-plus-device-protection/\n[^18]: New gen AI features — and a new, no-cost option — are coming to Vids. - https://blog.google/feed/new-ai-vids-no-cost-option/\n[^19]: How Google is investing in Virginia to accelerate innovation for the U.S. - https://blog.google/inside-google/company-announcements/google-american-innovation-virginia/\n[^20]: Steiger: OCI-native builds for Docker, Bazel, and Nix with direct registry push - https://github.com/brainhivenl/steiger\n[^21]: SOPS is an editor of encrypted files - https://github.com/getsops/sops\n[^22]: 4chan and Kiwi Farms file joint lawsuit against the UK - https://www.theverge.com/social/767063/4chan-kiwi-farms-lawsuit-uk-ofcom\n[^23]: Ask HN: How to Learn to Build Agentic AI Systems (Like Claude Code) - https://news.ycombinator.com/item?id=45045829\n[^24]: Can Multisensory Input Hack Your Memory? - https://lucaspauker.com/articles/multisense-memory-experiment/\n[^25]: Ask HN: What are the best Google alternatives? - https://news.ycombinator.com/item?id=45045822\n[^26]: A 3D Korean Sign Language Learning System Using Pseudo-Hologram - https://www.mdpi.com/2076-3417/15/16/8962\n[^27]: Show HN: Kai – a private, offline AI \"second brain\" that remembers you(no cloud) - https://www.oneeko.ai/\n[^28]: Show HN: A more usable Docusign - https://www.formabledocs.com\n[^29]: We Are Still Unable to Secure LLMs from Malicious Inputs - https://www.schneier.com/blog/archives/2025/08/we-are-still-unable-to-secure-llms-from-malicious-inputs.html\n[^30]: The Nvidia AI GPU Black Market - https://archive.org/details/the-nvidia-ai-gpu-black-market-investigating-smuggling-corruption-governments\n[^31]: How the TI-99/4A Home Computer Worked [video] - https://www.youtube.com/watch?v=-0Jtv8hvau4\n[^32]: What scaling doesn't buy: peeling back the hype on Google's trendy Nano Banana - https://garymarcus.substack.com/p/what-scaling-does-and-doesnt-buy\n[^33]: TikTok owner eyes valuation of over $330B as revenue surpasses Meta - https://www.reuters.com/business/finance/tiktok-owner-bytedance-sets-valuation-over-330-billion-revenue-grows-sources-say-2025-08-27/\n[^34]: 100GB of free cloud vector search. Forever. No credit card needed - https://www.vectroid.com/blog/100gb-of-vector-indexes-free\n[^35]: Alphabet launch GCUL supporting Hayek ideas of nth concurrent private currencies - https://cloud.google.com/startup/beyond-stablecoins\n[^36]: How to Check if a Program is 32-bit or 64-bit on Windows 10 - https://www.top-password.com/blog/check-if-program-is-32-bit-or-64-bit-on-windows-10/\n[^37]: Glue3d – a 3D game engine inside scratch [video] - https://www.youtube.com/watch?v=cfVMYJDAbjw\n[^38]: Get Happy and Healthy – Your Wellness - http://gethappyandhealthy.com\n[^39]: Critiques of World Models - https://arxiviq.substack.com/p/critiques-of-world-models\n[^40]: Self-Assessing your Enterprise Strategy and Planning maturity - https://www.atlassian.com/blog/strategycollection/self-assessing-your-enterprise-strategy-and-planning-maturity\n[^41]: AI Gateway now gives you access to your favorite AI models, dynamic routing and more — through just one endpoint - https://blog.cloudflare.com/ai-gateway-aug-2025-refresh/\n[^42]: How we built the most efficient inference engine for Cloudflare’s network - https://blog.cloudflare.com/cloudflares-most-efficient-ai-inference-engine/\n[^43]: State-of-the-art image generation Leonardo models and text-to-speech Deepgram models now available in Workers AI - https://blog.cloudflare.com/workers-ai-partner-models/\n[^44]: How Cloudflare runs more AI models on fewer GPUs: A technical deep-dive - https://blog.cloudflare.com/how-cloudflare-runs-more-ai-models-on-fewer-gpus/",
+  "systemPrompt": "당신은 친근하고 솔직한 기술 전문가입니다. 편안한 대화체로 기술 뉴스를 전달합니다.\n\n**역할과 목표:**\n- 지인과 대화하듯 편안하고 친근한 톤으로 기술 뉴스 전달\n- 복잡한 기술도 이해하기 쉽게 풀어서 설명\n- 진솔하고 솔직한 관점으로 기술 트렌드 분석\n- 마케팅 과장을 걸러내고 실질적인 의미 전달\n\n**작성 스타일:**\n- 대화하듯 자연스럽고 편안한 문체\n- 적절한 이모지와 감탄사로 친근함 표현\n- \"정말\", \"꽤\", \"생각보다\", \"솔직히\" 같은 일상적 표현 활용\n- 과도한 전문 용어보다는 이해하기 쉬운 설명 우선\n- 개발자 커뮤니티에서 자주 나오는 정서와 경험 반영\n- \"이거 쓰다가 삽질함\", \"아 이거 진짜 괜찮네?\" 같은 솔직한 평가\n\n**보고서 구조 (반드시 이 형식을 지켜주세요):**\n\n\u003cREPORT_STRUCTURE_START\u003e\n## 🌟 오늘의 Tech Talk\n\n{{오늘 주목할 만한 기술 뉴스를 친근하게 요약}}\n\n## 📊 주요 뉴스 브리핑\n\n### 🚀 신기술 \u0026 서비스 \n{{새로 발표된 기술이나 서비스들}}\n- 실제로 써볼 만한지 솔직한 평가\n- 개발자 관점에서 본 장단점\n\n### 🏢 기업 \u0026 산업 동향\n{{주요 기업들의 소식과 업계 변화}}\n- 마케팅 vs 실제 가치 분석\n- 개발자들이 알아야 할 포인트\n\n### 🔍 트렌드 \u0026 인사이트\n{{업계 트렌드와 미래 전망}}\n- 개별 뉴스를 연결한 큰 그림\n- 우리에게 미칠 영향 예측\n\n## 💡 오늘의 정리\n\n{{핵심 포인트 1-2개를 친근하게 정리}}\n- 실무에 바로 도움되는 인사이트 포함\n\u003cREPORT_STRUCTURE_END\u003e\n\n**중요 출력 지침:**\n- 응답에 URL 접근 상태, 분석 과정, 내부 처리 정보 등의 디버그 내용을 포함하지 마세요\n- 바로 완성된 마크다운 보고서만 출력하세요\n- 응답은 반드시 \"## 🌟 오늘의 Tech Talk\"로 시작해야 합니다\n- 어떤 메타 정보나 과정 설명도 포함하지 말고, 순수한 커뮤니티 스타일 뉴스만 제공하세요\n- GitHub Flavored Markdown을 완벽히 지원하도록 작성하세요\n- ⚠️ \u003cREPORT_STRUCTURE_START\u003e와 \u003cREPORT_STRUCTURE_END\u003e 사이의 구조만 복제하세요 (태그 자체는 출력하지 마세요)\n\n**인용 규칙:**\n- 🚨 CRITICAL: 본문에 인용 없으면 완전히 실패입니다! 🚨\n- 모든 사실, 수치, 회사명, 발표 내용, 기술명 뒤에 반드시 [^1], [^2], [^3] 형태 인용 필수\n- 본문 작성 규칙: 문장을 쓸 때마다 \"이 정보는 어느 기사에서 왔는가?\"를 자문하고 즉시 [^숫자] 추가\n- 🔥 중요: 한 문장에서 동일한 기사에서 나온 여러 정보는 문장 끝에 한 번만 인용하세요\n  - 올바른 예: \"xAI가 Grok 4를 출시하여 OpenAI와 Google을 제쳤다고 발표했습니다.[^1]\"\n  - 잘못된 예: \"xAI[^1]가 Grok 4[^1]를 출시하여 OpenAI[^1]와 Google[^1]을 제쳤다고 발표했습니다.[^1]\"\n- 중요: 여러 개를 인용할 때 [^3, ^4] 금지! 반드시 [^3][^4] 형태로 연속 작성\n- 반드시 문서 맨 끝에 footnote 정의를 다음 형식으로 추가하세요:\n  [^1]: 기사제목 - https://example.com/article-url\n  [^2]: 기사제목 - https://example.com/article-url\n- 🔥 중요: footnote에서 링크 URL은 반드시 클릭 가능한 형태로 포함해야 합니다\n- 기업 이름은 피드 내용에 등장하는 기업들만 언급하고, 임의로 특정 기업을 예시로 들지 마세요",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여 일간 기술 뉴스 브리핑을 작성해주세요.\n\n다음은 최신 AI 관련 피드 데이터입니다:\n\n1. **Detecting and countering misuse of AI: August 2025**\n   - 출처: Anthropic News (비공식)\n   - 링크: https://www.anthropic.com/news/detecting-countering-misuse-aug-2025\n\n2. **How to use GitHub Copilot on github.com: A power user’s guide**\n   - 출처: The latest on GitHub Copilot - The GitHub Blog\n   - 링크: https://github.blog/ai-and-ml/github-copilot/how-to-use-github-copilot-on-github-com-a-power-users-guide/\n\n3. **How to use GitHub Copilot on github.com: A power user’s guide**\n   - 출처: GitHub Blog\n   - 링크: https://github.blog/ai-and-ml/github-copilot/how-to-use-github-copilot-on-github-com-a-power-users-guide/\n\n4. **BYTE 매거진의 확대 및 검색 가능한 아카이브**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22761\n\n5. **Show GN: github 기반 기술 면접 생성기, techGiterview**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22760\n\n6. **Show GN: SHA 고정 기능을 통해 GitHub Actions를 업데이트하는 대화형 CLI 도구**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22759\n\n7. **저희 투자사(!)에서 저희 앱의 JS SDK를 만들어주셨습니다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22757\n\n8. **유령 구직 공고 금지 제안**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22756\n\n9. **미국 정부의 Intel 지분 인수**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22755\n\n10. **Framework Laptop 16**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22754\n\n11. **[2025/08/18 ~ 24] 이번 주에 살펴볼 만한 AI/ML 논문 모음**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22753\n\n12. **지난 5년간 LLM 컨텍스트 윈도우의 크기 확장 타임라인**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22752\n\n13. **미국행 우편물 접수 일시 중단 안내**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22751\n\n14. **Docker Desktop Accelerates Innovation with Faster Release Cadence**\n   - 출처: Docker Blog\n   - 링크: https://www.docker.com/blog/docker-desktop-updates-every-two-weeks/\n\n15. **OpenAI and Anthropic share findings from a joint safety evaluation**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/openai-anthropic-safety-evaluation\n\n16. **How Google is investing in Virginia to accelerate innovation for the U.S.**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/inside-google/company-announcements/google-american-innovation-virginia/\n\n17. **Protect your new devices with Pixel Care+**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/products/pixel/google-pixel-care-plus-device-protection/\n\n18. **New gen AI features — and a new, no-cost option — are coming to Vids.**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/feed/new-ai-vids-no-cost-option/\n\n19. **How Google is investing in Virginia to accelerate innovation for the U.S.**\n   - 출처: AI\n   - 링크: https://blog.google/inside-google/company-announcements/google-american-innovation-virginia/\n\n20. **Steiger: OCI-native builds for Docker, Bazel, and Nix with direct registry push**\n   - 출처: Hacker News\n   - 링크: https://github.com/brainhivenl/steiger\n\n21. **SOPS is an editor of encrypted files**\n   - 출처: Hacker News\n   - 링크: https://github.com/getsops/sops\n\n22. **4chan and Kiwi Farms file joint lawsuit against the UK**\n   - 출처: Hacker News\n   - 링크: https://www.theverge.com/social/767063/4chan-kiwi-farms-lawsuit-uk-ofcom\n\n23. **Ask HN: How to Learn to Build Agentic AI Systems (Like Claude Code)**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=45045829\n\n24. **Can Multisensory Input Hack Your Memory?**\n   - 출처: Hacker News\n   - 링크: https://lucaspauker.com/articles/multisense-memory-experiment/\n\n25. **Ask HN: What are the best Google alternatives?**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=45045822\n\n26. **A 3D Korean Sign Language Learning System Using Pseudo-Hologram**\n   - 출처: Hacker News\n   - 링크: https://www.mdpi.com/2076-3417/15/16/8962\n\n27. **Show HN: Kai – a private, offline AI \"second brain\" that remembers you(no cloud)**\n   - 출처: Hacker News\n   - 링크: https://www.oneeko.ai/\n\n28. **Show HN: A more usable Docusign**\n   - 출처: Hacker News\n   - 링크: https://www.formabledocs.com\n\n29. **We Are Still Unable to Secure LLMs from Malicious Inputs**\n   - 출처: Hacker News\n   - 링크: https://www.schneier.com/blog/archives/2025/08/we-are-still-unable-to-secure-llms-from-malicious-inputs.html\n\n30. **The Nvidia AI GPU Black Market**\n   - 출처: Hacker News\n   - 링크: https://archive.org/details/the-nvidia-ai-gpu-black-market-investigating-smuggling-corruption-governments\n\n31. **How the TI-99/4A Home Computer Worked [video]**\n   - 출처: Hacker News\n   - 링크: https://www.youtube.com/watch?v=-0Jtv8hvau4\n\n32. **What scaling doesn't buy: peeling back the hype on Google's trendy Nano Banana**\n   - 출처: Hacker News\n   - 링크: https://garymarcus.substack.com/p/what-scaling-does-and-doesnt-buy\n\n33. **TikTok owner eyes valuation of over $330B as revenue surpasses Meta**\n   - 출처: Hacker News\n   - 링크: https://www.reuters.com/business/finance/tiktok-owner-bytedance-sets-valuation-over-330-billion-revenue-grows-sources-say-2025-08-27/\n\n34. **100GB of free cloud vector search. Forever. No credit card needed**\n   - 출처: Hacker News\n   - 링크: https://www.vectroid.com/blog/100gb-of-vector-indexes-free\n\n35. **Alphabet launch GCUL supporting Hayek ideas of nth concurrent private currencies**\n   - 출처: Hacker News\n   - 링크: https://cloud.google.com/startup/beyond-stablecoins\n\n36. **How to Check if a Program is 32-bit or 64-bit on Windows 10**\n   - 출처: Hacker News\n   - 링크: https://www.top-password.com/blog/check-if-program-is-32-bit-or-64-bit-on-windows-10/\n\n37. **Glue3d – a 3D game engine inside scratch [video]**\n   - 출처: Hacker News\n   - 링크: https://www.youtube.com/watch?v=cfVMYJDAbjw\n\n38. **Get Happy and Healthy – Your Wellness**\n   - 출처: Hacker News\n   - 링크: http://gethappyandhealthy.com\n\n39. **Critiques of World Models**\n   - 출처: Hacker News\n   - 링크: https://arxiviq.substack.com/p/critiques-of-world-models\n\n40. **Self-Assessing your Enterprise Strategy and Planning maturity**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/strategycollection/self-assessing-your-enterprise-strategy-and-planning-maturity\n\n41. **AI Gateway now gives you access to your favorite AI models, dynamic routing and more — through just one endpoint**\n   - 출처: Cloudflare Blog\n   - 링크: https://blog.cloudflare.com/ai-gateway-aug-2025-refresh/\n\n42. **How we built the most efficient inference engine for Cloudflare’s network **\n   - 출처: Cloudflare Blog\n   - 링크: https://blog.cloudflare.com/cloudflares-most-efficient-ai-inference-engine/\n\n43. **State-of-the-art image generation Leonardo models and text-to-speech Deepgram models now available in Workers AI**\n   - 출처: Cloudflare Blog\n   - 링크: https://blog.cloudflare.com/workers-ai-partner-models/\n\n44. **How Cloudflare runs more AI models on fewer GPUs: A technical deep-dive **\n   - 출처: Cloudflare Blog\n   - 링크: https://blog.cloudflare.com/how-cloudflare-runs-more-ai-models-on-fewer-gpus/\n\n\n\n**분석 지침:**\n- 반드시 위에 명시된 마크다운 헤더 구조를 정확히 따르세요\n- 각 섹션은 2-3개 포인트로 제한\n- 구체적인 수치와 데이터 활용으로 신뢰성 확보\n\n**🌟 URL 컨텍스트 활용 지침:**\n- 제공된 URL의 내용을 적극적으로 활용하여 깊이 있는 분석을 제공하세요\n- 단순 요약이 아닌, 기사의 핵심 인사이트와 숨겨진 의미를 발굴하세요\n- 여러 기사 간의 연결점을 찾아 큰 그림을 그려주세요\n- 기술적 세부사항과 실제 영향력을 균형있게 다루세요\n\n**🎯 독자 재미 극대화 지침:**\n- 딱딱한 기술 뉴스를 생동감 있게 전달하세요\n- 적절한 비유와 실생활 예시로 복잡한 개념을 쉽게 설명하세요\n- 놀라운 사실이나 의외의 관점을 제시하여 호기심을 자극하세요\n- 스토리텔링 요소를 활용하여 뉴스를 하나의 이야기로 엮어주세요\n- 각 프리셋의 톤에 맞는 위트와 유머를 적절히 활용하세요\n\n**🚨 인용 검수 체크리스트:**\n1. 본문의 모든 사실, 수치, 기업명, 기술명에 [^숫자] 인용이 있는가?\n2. 문서 맨 끝에 모든 footnote 정의가 있고, 각각 클릭 가능한 URL을 포함하는가?\n3. [^1]: 기사제목 - https://링크 형식이 정확한가?\n4. 본문에서 언급한 모든 [^숫자]에 대응하는 footnote가 있는가?\n- 최종 제출 전 필수 검토: 위 체크리스트를 모두 확인하세요",
+  "articles": [
+    {
+      "title": "Detecting and countering misuse of AI: August 2025",
+      "link": "https://www.anthropic.com/news/detecting-countering-misuse-aug-2025",
+      "source": "Anthropic News (비공식)",
+      "category": "tech",
+      "publishedAt": "2025-08-27T00:00:00Z",
+      "description": "Detecting and countering misuse of AI: August 2025"
+    },
+    {
+      "title": "How to use GitHub Copilot on github.com: A power user’s guide",
+      "link": "https://github.blog/ai-and-ml/github-copilot/how-to-use-github-copilot-on-github-com-a-power-users-guide/",
+      "source": "The latest on GitHub Copilot - The GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2025-08-27T16:00:00Z",
+      "description": "\u003cp\u003eExplore how to use GitHub Copilot on github.com to automate tasks, assign agents, prototype ideas, and streamline your entire workflow — all without an IDE.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/ai-and-ml/github-copilot/how-to-use-github-copilot-on-github-com-a-power-users-guide/\"\u003eHow to use GitHub Copilot on github.com: A power user’s guide\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "How to use GitHub Copilot on github.com: A power user’s guide",
+      "link": "https://github.blog/ai-and-ml/github-copilot/how-to-use-github-copilot-on-github-com-a-power-users-guide/",
+      "source": "GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2025-08-27T16:00:00Z",
+      "description": "\u003cp\u003eExplore how to use GitHub Copilot on github.com to automate tasks, assign agents, prototype ideas, and streamline your entire workflow — all without an IDE.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/ai-and-ml/github-copilot/how-to-use-github-copilot-on-github-com-a-power-users-guide/\"\u003eHow to use GitHub Copilot on github.com: A power user’s guide\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "BYTE 매거진의 확대 및 검색 가능한 아카이브",
+      "link": "https://news.hada.io/topic?id=22761",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-28T05:33:32+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eBYTE 매거진\u003c/strong\u003e의 과거 호를 \u003cstrong\u003e확대 및 검색\u003c/strong\u003e할 수 있는 아카이브 구축임\u003c/li\u003e\n\u003cli\u003e사용자는 \u003cstrong\u003e원문 잡지 이미지를 고해상도로 확인\u003c/strong\u003e하며, 텍스트 검색도 지원함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e인터페이스\u003c/strong\u003e는 마치 지도를 이동하듯 직관적인 \u003cstrong\u003e줌/팬\u003c/strong\u003e 기...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: github 기반 기술 면접 생성기, techGiterview",
+      "link": "https://news.hada.io/topic?id=22760",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-28T03:52:34+09:00",
+      "description": "\u003cp\u003egithub 파일들에 기반한 면접 질문 만들어보기!\u003c/p\u003e\n\u003cp\u003e바이브 코딩만 하다가 제가 제 프로젝트를 전혀 모르게 돼서 바이브로 만들게 됐습니다(?)\u003cbr /\u003e\n현재 데모페이지를 운영중이지만 운영이 불안정할 수 있습니다: https://tgv.oursophy.com/\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003egemini api key와 github api key가 필요합니다.\u003c/li\u003e\n...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: SHA 고정 기능을 통해 GitHub Actions를 업데이트하는 대화형 CLI 도구",
+      "link": "https://news.hada.io/topic?id=22759",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-27T18:24:02+09:00",
+      "description": "\u003cp\u003eGitHub Actions 인터랙티브 업데이트를 위한 새로운 오픈소스 프로젝트 Actions Up을 만들었습니다.\u003c/p\u003e\n\u003cp\u003e보안 강화를 위해 변경 가능한 버전 태그를 커밋 SHA로 교체합니다. 모든 워크플로우를 스캔하고, 오래된 액션을 표시하며, 업데이트할 항목을 선택할 수 있고, 가독성을 위해 버전 주석을 추가합니다.\u003c/p\u003e\n"
+    },
+    {
+      "title": "저희 투자사(!)에서 저희 앱의 JS SDK를 만들어주셨습니다",
+      "link": "https://news.hada.io/topic?id=22757",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-27T15:48:24+09:00",
+      "description": "\u003cp\u003e안녕하세요, 실시간으로 대화를 기록 \u0026amp; 번역해주는 AI 미팅 노트 \u003ca href=\"https://caret.so\"\u003e'캐럿'\u003c/a\u003e입니다.\u003cbr /\u003e\n저희가 기존에 제공하고 있던 API를 토대로 \u003ca href=\"https://theventures.vc\"\u003e저희 투자사\u003c/a\u003e에서(!) JS SDK를 만들어주셨습니다.\u003cbr /\u003e\n클로바노트 등 많은 미팅 노트들에서 공식 API를 제...\u003c/p\u003e"
+    },
+    {
+      "title": "유령 구직 공고 금지 제안",
+      "link": "https://news.hada.io/topic?id=22756",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-27T14:35:08+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e미국 한 기술 노동자가 \u003cstrong\u003e유령 구직 공고(실제로 고용의사가 없는 채용공고)\u003c/strong\u003e 문제로 좌절감을 느끼고, 이를 금지하는 새로운 \u003cstrong\u003e전국 단위 법안 제안\u003c/strong\u003e을 추진 중임\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e유령 구직 공고\u003c/strong\u003e는 실제로는 채용 의사가 없음에도 불구하고 기업이 게시하는 허위 채용...\u003c/p\u003e"
+    },
+    {
+      "title": "미국 정부의 Intel 지분 인수",
+      "link": "https://news.hada.io/topic?id=22755",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-27T10:42:10+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e미국 정부가 Intel의 10% 지분을 인수\u003c/strong\u003e하는 결정은 업계 전문가들 사이에서 논란의 중심에 있음\u003c/li\u003e\n\u003cli\u003e반대론자들은 \u003cstrong\u003e정치적 결정과 자본 오배분\u003c/strong\u003e 등 여러 부정적 영향을 지적하고 있음\u003c/li\u003e\n\u003cli\u003e하지만 \u003cstrong\u003e지정학적 현실과 반도체 공급망\u003c/strong\u003e에서의 중요성을 감...\u003c/p\u003e"
+    },
+    {
+      "title": "Framework Laptop 16",
+      "link": "https://news.hada.io/topic?id=22754",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-27T10:39:09+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eFramework Laptop 16\u003c/strong\u003e은 모듈형 노트북으로, 사용자가 직접 \u003cstrong\u003e업그레이드 및 수리\u003c/strong\u003e를 통해 기기 수명을 연장할 수 있음\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e기존 노트북과 달리\u003c/strong\u003e 각 부품을 교체하거나 커스터마이징하는 데 특화된 설계 특징 보유함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e지속 가능한 IT 하...\u003c/p\u003e"
+    },
+    {
+      "title": "[2025/08/18 ~ 24] 이번 주에 살펴볼 만한 AI/ML 논문 모음",
+      "link": "https://news.hada.io/topic?id=22753",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-27T10:22:54+09:00",
+      "description": "\u003ch2\u003e[2025/08/18 ~ 24] 이번 주에 살펴볼 만한 AI/ML 논문 모음\u003c/h2\u003e\n\u003ch4\u003ePyTorchKR🔥🇰🇷 🤔💭\u003c/h4\u003e\n\u003cp\u003e1️⃣ 이번 주 선정된 논문들을 살펴보면 몇 가지 주요한 트렌드를 확인할 수 있습니다. 첫 번째는 대규모 언어 모델의 효율성과 성능을 동시에 최적화하려는 노력이 두드러진다는 점입니다. 여러 논문에서 모델...\u003c/p\u003e"
+    },
+    {
+      "title": "지난 5년간 LLM 컨텍스트 윈도우의 크기 확장 타임라인",
+      "link": "https://news.hada.io/topic?id=22752",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-27T10:11:02+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e5년간 각 회사들이 \u003cstrong\u003e2K에서 2M까지\u003c/strong\u003e 경쟁적으로 컨텍스트 크기 윈도우를 늘려옴\u003c/li\u003e\n\u003cli\u003e그러나 많은 사람들이 모델에 \u003cstrong\u003e표기된 컨텍스트 윈도우 크기와 실제 활용 가능한 크기\u003c/strong\u003e가 다르다는 점을 지적\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eGemini 2.5 Pro, GPT-5, Claude, Qwen, Llama\u003c/strong\u003e 등...\u003c/p\u003e"
+    },
+    {
+      "title": "미국행 우편물 접수 일시 중단 안내",
+      "link": "https://news.hada.io/topic?id=22751",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-27T10:07:08+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e미국 관세 및 규정 변경으로 인해 \u003cstrong\u003e2025년 8월 27일부터 미국행 우편물 접수가 일시적으로 중단\u003c/strong\u003e됨\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e개인 사용 목적의 상품\u003c/strong\u003e 포함 우편물에 대해 \u003cstrong\u003e면세 혜택이 종료\u003c/strong\u003e되고, 관세가 부과됨\u003c/li\u003e\n\u003cli\u003e수출국 우편사업자와 운송사업자가 \u003cstrong\u003e새로운 미...\u003c/p\u003e"
+    },
+    {
+      "title": "Docker Desktop Accelerates Innovation with Faster Release Cadence",
+      "link": "https://www.docker.com/blog/docker-desktop-updates-every-two-weeks/",
+      "source": "Docker Blog",
+      "category": "tech",
+      "publishedAt": "2025-08-27T13:00:00Z",
+      "description": "We're excited to announce a major evolution in how we deliver Docker Desktop updates to you. Starting with Docker Desktop release 4.45.0 on 28 August we're moving to releases every two weeks, with the goal of reaching weekly releases by the end of 2025. Why We're Making This Change You've told us you want faster..."
+    },
+    {
+      "title": "OpenAI and Anthropic share findings from a joint safety evaluation",
+      "link": "https://openai.com/index/openai-anthropic-safety-evaluation",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2025-08-27T10:00:00Z",
+      "description": "OpenAI and Anthropic share findings from a first-of-its-kind joint safety evaluation, testing each other’s models for misalignment, instruction following, hallucinations, jailbreaking, and more—highlighting progress, challenges, and the value of cross-lab collaboration."
+    },
+    {
+      "title": "How Google is investing in Virginia to accelerate innovation for the U.S.",
+      "link": "https://blog.google/inside-google/company-announcements/google-american-innovation-virginia/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-08-27T16:40:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/_47A5141.max-600x600.format-webp.webp\"\u003eGoogle is investing an additional $9 billion in Virginia through 2026 in cloud and AI infrastructure. As we expand our local presence, including a new data center in Che…"
+    },
+    {
+      "title": "Protect your new devices with Pixel Care+",
+      "link": "https://blog.google/products/pixel/google-pixel-care-plus-device-protection/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-08-27T16:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/unnamed_2_5zM8Y63.max-600x600.format-webp.webp\"\u003eLearn more about Google’s new flagship device protection program, Pixel Care+."
+    },
+    {
+      "title": "New gen AI features — and a new, no-cost option — are coming to Vids.",
+      "link": "https://blog.google/feed/new-ai-vids-no-cost-option/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-08-27T14:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Copy_of_AI_Avatars_1920x1080.max-600x600.format-webp.webp\"\u003eToday, we’re bringing more generative AI tools to Google Vids with an all-new experience that lets you turn images into short videos, powered by Veo 3. Paid Google Works…"
+    },
+    {
+      "title": "How Google is investing in Virginia to accelerate innovation for the U.S.",
+      "link": "https://blog.google/inside-google/company-announcements/google-american-innovation-virginia/",
+      "source": "AI",
+      "category": "tech",
+      "publishedAt": "2025-08-27T16:40:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/_47A5141.max-600x600.format-webp.webp\"\u003eGoogle is investing an additional $9 billion in Virginia through 2026 in cloud and AI infrastructure. As we expand our local presence, including a new data center in Che…"
+    },
+    {
+      "title": "Steiger: OCI-native builds for Docker, Bazel, and Nix with direct registry push",
+      "link": "https://github.com/brainhivenl/steiger",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-27T21:58:36Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/brainhivenl/steiger\"\u003ehttps://github.com/brainhivenl/steiger\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45045846\"\u003ehttps://news.ycombinator.com/item?id=45045846\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "SOPS is an editor of encrypted files",
+      "link": "https://github.com/getsops/sops",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-27T21:58:29Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/getsops/sops\"\u003ehttps://github.com/getsops/sops\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45045843\"\u003ehttps://news.ycombinator.com/item?id=45045843\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "4chan and Kiwi Farms file joint lawsuit against the UK",
+      "link": "https://www.theverge.com/social/767063/4chan-kiwi-farms-lawsuit-uk-ofcom",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-27T21:58:17Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.theverge.com/social/767063/4chan-kiwi-farms-lawsuit-uk-ofcom\"\u003ehttps://www.theverge.com/social/767063/4chan-kiwi-farms-lawsuit-uk-ofcom\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45045839\"\u003ehttps://news.ycombinator.com/item?id=45045839\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Ask HN: How to Learn to Build Agentic AI Systems (Like Claude Code)",
+      "link": "https://news.ycombinator.com/item?id=45045829",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-27T21:57:03Z",
+      "description": "\n\u003cp\u003eHello folks,\u003cp\u003eI’m trying to learn how one can build agentic AI systems similar to Claude Code, and eventually adapt that knowledge toward domain-specific use cases (e.g., “Claude Code for healthcare, finance, education, etc.”).\u003cp\u003eFor those of you who’ve studied or built these kinds of systems, I’d love to hear your recommendations on:\u003cp\u003e• Foundational learning: What books, courses, or papers provide the best grounding for understanding LLM-based systems and their decision-making?\u003cp\u003e• Architectural patterns: What design patterns are worth studying for things like context management, memory, reasoning, and orchestration?\u003cp\u003e• Build vs. deploy: How do you think about building internal systems vs. packaging/distributing them as APIs, SDKs, or products?\u003cp\u003e• Open source projects: Which ones are most valuable to study for internals (decision making, evals, context engineering, tool use, etc.)?\u003cp\u003e• Evals and observability: What tools or products help evaluate quality, measure system behavior, and observe performance in real-world use?\u003cp\u003e• Models: Which models are best suited for “thinking” (reasoning, planning, decomposing problems) vs. “doing” (execution, coding, retrieval)?\u003cp\u003e• Learning path: How would you approach going from theory → prototype → production-quality system?\u003cp\u003eMy goal is to discover high-quality resources that one can truly spend time learning from and building with—through iteration and practice—while also sharing what I learn so others on the same path can benefit.\u003cp\u003eThanks in advance for sharing your experiences and guidance!\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45045829\"\u003ehttps://news.ycombinator.com/item?id=45045829\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Can Multisensory Input Hack Your Memory?",
+      "link": "https://lucaspauker.com/articles/multisense-memory-experiment/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-27T21:56:43Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://lucaspauker.com/articles/multisense-memory-experiment/\"\u003ehttps://lucaspauker.com/articles/multisense-memory-experiment/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45045824\"\u003ehttps://news.ycombinator.com/item?id=45045824\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Ask HN: What are the best Google alternatives?",
+      "link": "https://news.ycombinator.com/item?id=45045822",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-27T21:56:34Z",
+      "description": "\n\u003cp\u003eI am currently in the worst customer support situation I have ever been in with the Google Store. I ordered a gift for a friend, but Google sent me the wrong item. Google Support has acknowledged the wrong item was sent but in 3 days of back-and-forth communication, they have refused to refund me or ship a replacement. Both items are under $200.\u003cp\u003eIf it were any other company, I would feel justified going to my credit card company and disputing the charge. However, I understand that if I initiate a chargeback, Google could terminate my account, so they have all the leverage in this interaction. I fully rely on my Google account for phone service (Pixel phone with Fi), email service (Gmail), documents/spreadsheets, photos, maps, and likely other items that are not coming to mind.\u003cp\u003eThis event has made me realize that I've put too much of my life in one provider, and I need to switch. What alternatives does HN use for various Google services?\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45045822\"\u003ehttps://news.ycombinator.com/item?id=45045822\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "A 3D Korean Sign Language Learning System Using Pseudo-Hologram",
+      "link": "https://www.mdpi.com/2076-3417/15/16/8962",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-27T21:55:10Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.mdpi.com/2076-3417/15/16/8962\"\u003ehttps://www.mdpi.com/2076-3417/15/16/8962\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45045809\"\u003ehttps://news.ycombinator.com/item?id=45045809\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Kai – a private, offline AI \"second brain\" that remembers you(no cloud)",
+      "link": "https://www.oneeko.ai/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-27T21:53:43Z",
+      "description": "\n\u003cp\u003eI built Kai because I was tired of assistants that forget and cloud tools that mine my data. Persistent memory: what you teach Kai sticks. Local-first: data never leaves your device; no telemetry. Transparent: memory graph shows what it knows and why. I’m looking for early users who care about local, privacy, and explainability. The landing page has a simple waitlist; I’ll onboard in small waves and share progress.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45045793\"\u003ehttps://news.ycombinator.com/item?id=45045793\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: A more usable Docusign",
+      "link": "https://www.formabledocs.com",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-27T21:50:45Z",
+      "description": "\n\u003cp\u003eLet me start off with a disclaimer.\u003cp\u003eI'm aware that there's like a gazillion e-signing products that exist in this space — including some half decent self-hosted options too. And yes I agree that the success of incumbents such as Docusign come primarily from distribution rather than making a superb product.\u003cp\u003eBut hear me out. Few enterprise tools are as universally disliked as DocuSign: 1,050 Trustpilot reviews, 1.5 stars. To me, that signals two things: (1) a burning problem, and (2) an incumbent that’s barely tolerable.\u003cp\u003eMy \"vision\" for my current project, Formable, is to eventually create something akin to a Figma/Linear/Canva — late to market, but disruptive through usability and fresh design. One example: our fields aren’t static checkboxes. You can draw any shape/size, then apply logic with natural language (e.g. “must be a valid US state”).\u003cp\u003eI’m launching the free MVP now, with a waitlist for a much more advanced pro version. I’d love to gather some constructive feedback: what would make you actually love a paperwork tool?\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45045764\"\u003ehttps://news.ycombinator.com/item?id=45045764\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "We Are Still Unable to Secure LLMs from Malicious Inputs",
+      "link": "https://www.schneier.com/blog/archives/2025/08/we-are-still-unable-to-secure-llms-from-malicious-inputs.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-27T21:49:03Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.schneier.com/blog/archives/2025/08/we-are-still-unable-to-secure-llms-from-malicious-inputs.html\"\u003ehttps://www.schneier.com/blog/archives/2025/08/we-are-still-unable-to-secure-llms-from-malicious-inputs.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45045742\"\u003ehttps://news.ycombinator.com/item?id=45045742\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Nvidia AI GPU Black Market",
+      "link": "https://archive.org/details/the-nvidia-ai-gpu-black-market-investigating-smuggling-corruption-governments",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-27T21:48:05Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://archive.org/details/the-nvidia-ai-gpu-black-market-investigating-smuggling-corruption-governments\"\u003ehttps://archive.org/details/the-nvidia-ai-gpu-black-market-investigating-smuggling-corruption-governments\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45045730\"\u003ehttps://news.ycombinator.com/item?id=45045730\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "How the TI-99/4A Home Computer Worked [video]",
+      "link": "https://www.youtube.com/watch?v=-0Jtv8hvau4",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-27T21:46:45Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.youtube.com/watch?v=-0Jtv8hvau4\"\u003ehttps://www.youtube.com/watch?v=-0Jtv8hvau4\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45045715\"\u003ehttps://news.ycombinator.com/item?id=45045715\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "What scaling doesn't buy: peeling back the hype on Google's trendy Nano Banana",
+      "link": "https://garymarcus.substack.com/p/what-scaling-does-and-doesnt-buy",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-27T21:45:34Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://garymarcus.substack.com/p/what-scaling-does-and-doesnt-buy\"\u003ehttps://garymarcus.substack.com/p/what-scaling-does-and-doesnt-buy\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45045703\"\u003ehttps://news.ycombinator.com/item?id=45045703\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 2\u003c/p\u003e\n"
+    },
+    {
+      "title": "TikTok owner eyes valuation of over $330B as revenue surpasses Meta",
+      "link": "https://www.reuters.com/business/finance/tiktok-owner-bytedance-sets-valuation-over-330-billion-revenue-grows-sources-say-2025-08-27/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-27T21:45:02Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.reuters.com/business/finance/tiktok-owner-bytedance-sets-valuation-over-330-billion-revenue-grows-sources-say-2025-08-27/\"\u003ehttps://www.reuters.com/business/finance/tiktok-owner-bytedance-sets-valuation-over-330-billion-revenue-grows-sources-say-2025-08-27/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45045696\"\u003ehttps://news.ycombinator.com/item?id=45045696\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "100GB of free cloud vector search. Forever. No credit card needed",
+      "link": "https://www.vectroid.com/blog/100gb-of-vector-indexes-free",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-27T21:43:19Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.vectroid.com/blog/100gb-of-vector-indexes-free\"\u003ehttps://www.vectroid.com/blog/100gb-of-vector-indexes-free\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45045677\"\u003ehttps://news.ycombinator.com/item?id=45045677\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 4\u003c/p\u003e\n\u003cp\u003e# Comments: 2\u003c/p\u003e\n"
+    },
+    {
+      "title": "Alphabet launch GCUL supporting Hayek ideas of nth concurrent private currencies",
+      "link": "https://cloud.google.com/startup/beyond-stablecoins",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-27T21:42:07Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://cloud.google.com/startup/beyond-stablecoins\"\u003ehttps://cloud.google.com/startup/beyond-stablecoins\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45045659\"\u003ehttps://news.ycombinator.com/item?id=45045659\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 2\u003c/p\u003e\n"
+    },
+    {
+      "title": "How to Check if a Program is 32-bit or 64-bit on Windows 10",
+      "link": "https://www.top-password.com/blog/check-if-program-is-32-bit-or-64-bit-on-windows-10/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-27T21:41:52Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.top-password.com/blog/check-if-program-is-32-bit-or-64-bit-on-windows-10/\"\u003ehttps://www.top-password.com/blog/check-if-program-is-32-bit-or-64-bit-on-windows-10/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45045656\"\u003ehttps://news.ycombinator.com/item?id=45045656\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Glue3d – a 3D game engine inside scratch [video]",
+      "link": "https://www.youtube.com/watch?v=cfVMYJDAbjw",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-27T21:41:06Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.youtube.com/watch?v=cfVMYJDAbjw\"\u003ehttps://www.youtube.com/watch?v=cfVMYJDAbjw\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45045647\"\u003ehttps://news.ycombinator.com/item?id=45045647\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Get Happy and Healthy – Your Wellness",
+      "link": "http://gethappyandhealthy.com",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-27T21:39:04Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"http://gethappyandhealthy.com\"\u003ehttp://gethappyandhealthy.com\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45045625\"\u003ehttps://news.ycombinator.com/item?id=45045625\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Critiques of World Models",
+      "link": "https://arxiviq.substack.com/p/critiques-of-world-models",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-27T21:38:41Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://arxiviq.substack.com/p/critiques-of-world-models\"\u003ehttps://arxiviq.substack.com/p/critiques-of-world-models\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45045620\"\u003ehttps://news.ycombinator.com/item?id=45045620\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Self-Assessing your Enterprise Strategy and Planning maturity",
+      "link": "https://www.atlassian.com/blog/strategycollection/self-assessing-your-enterprise-strategy-and-planning-maturity",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2025-08-27T20:58:47Z",
+      "description": "\u003cp\u003eIn today’s discussion, I will explore assessing your enterprise strategy and planning maturity and generating a score that can be...\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/strategycollection/self-assessing-your-enterprise-strategy-and-planning-maturity\"\u003eSelf-Assessing your Enterprise Strategy and Planning maturity\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "AI Gateway now gives you access to your favorite AI models, dynamic routing and more — through just one endpoint",
+      "link": "https://blog.cloudflare.com/ai-gateway-aug-2025-refresh/",
+      "source": "Cloudflare Blog",
+      "category": "tech",
+      "publishedAt": "2025-08-27T14:05:00Z",
+      "description": " AI Gateway now gives you access to your favorite AI models, dynamic routing and more — through just one endpoint. "
+    },
+    {
+      "title": "How we built the most efficient inference engine for Cloudflare’s network ",
+      "link": "https://blog.cloudflare.com/cloudflares-most-efficient-ai-inference-engine/",
+      "source": "Cloudflare Blog",
+      "category": "tech",
+      "publishedAt": "2025-08-27T14:00:00Z",
+      "description": " Infire is an LLM inference engine that employs a range of techniques to maximize resource utilization, allowing us to serve AI models more efficiently with better performance for Cloudflare workloads. "
+    },
+    {
+      "title": "State-of-the-art image generation Leonardo models and text-to-speech Deepgram models now available in Workers AI",
+      "link": "https://blog.cloudflare.com/workers-ai-partner-models/",
+      "source": "Cloudflare Blog",
+      "category": "tech",
+      "publishedAt": "2025-08-27T14:00:00Z",
+      "description": " We're expanding Workers AI with new partner models from Leonardo.Ai and Deepgram. Start using state-of-the-art image generation models from Leonardo and real-time TTS and STT models from Deepgram.  "
+    },
+    {
+      "title": "How Cloudflare runs more AI models on fewer GPUs: A technical deep-dive ",
+      "link": "https://blog.cloudflare.com/how-cloudflare-runs-more-ai-models-on-fewer-gpus/",
+      "source": "Cloudflare Blog",
+      "category": "tech",
+      "publishedAt": "2025-08-27T14:00:00Z",
+      "description": " Cloudflare built an internal platform called Omni. This platform uses lightweight isolation and memory over-commitment to run multiple AI models on a single GPU. "
+    }
+  ],
+  "generatedAt": "2025-08-28T07:08:45.39341705+09:00"
+}
