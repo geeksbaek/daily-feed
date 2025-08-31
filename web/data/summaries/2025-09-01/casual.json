@@ -1,0 +1,258 @@
+{
+  "date": "2025-09-01",
+  "preset": "casual",
+  "summary": "## 🌟 오늘의 Tech Talk\n\n이야, 요즘 AI 에이전트 이야기 정말 많이 나오죠? 근데 이게 그냥 신기한 장난감 수준을 넘어서는 것 같아요. 이제 AI 모델을 안전하게 돌리려면 가상 머신(VM)이 필요하다는 얘기가 나오고 있고 [^22], 심지어 여러 AI 에이전트들이 서로 대화하고 협업할 수 있는 표준 프로토콜, '에이전트 클라이언트 프로토콜(ACP)'까지 등장했어요. [^23] 이건 진짜 AI가 독립적인 '소프트웨어'로 취급받기 시작했다는 신호탄 아닐까요? 솔직히 좀 설레네요! 🤩\n\n## 📊 주요 뉴스 브리핑\n\n### 🚀 신기술 \u0026 서비스\n\n- **AI 에이전트, 이제 '버블랩'으로 감싸서 돌리세요!**: AI 에이전트가 시스템을 망가뜨릴까 봐 걱정되셨죠? 이제 'Bubblewrap'이라는 가벼운 샌드박스 기술로 AI 에이전트를 안전하게 실행할 수 있게 됐어요. [^20] 리눅스 기술을 써서 에이전트가 할 수 있는 일을 딱 정해진 만큼만 제한하는 건데, 생각보다 꽤 괜찮은 아이디어 같아요. Docker보다는 가볍고, 그냥 실행하는 것보다는 훨씬 안전하니까요. 이거 쓰다가 삽질할 일은 좀 줄어들겠네요. [^20]\n- **AI 에이전트끼리 대화하는 표준, ACP 등장!**: 개발자들이 각자 만든 AI 에이전트들이 서로 소통할 방법이 없어서 답답했는데, 드디어 '에이전트 클라이언트 프로토콜(ACP)'이라는 표준이 나왔습니다. [^23] 이건 마치 여러 나라 사람들이 '영어'라는 공용어로 대화하는 것과 같아요. 이제 이걸 쓰면 서로 다른 에이전트들이 프로젝트를 할당받고, 작업을 실행하고, 결과를 보고하는 일련의 과정을 통일할 수 있게 돼요. [^23] 아직 초기 단계지만, AI 생태계가 한 단계 성장하는 데 꼭 필요한 기술이라고 봅니다.\n- **파일 뒤지는 신박한 방법, 'semtools'**: 맨날 키워드로만 파일 검색하는 거 지겹지 않으세요? `semtools`라는 CLI 툴이 나왔는데, 이건 PDF나 DOCX 파일 내용을 '의미'로 검색해줘요. [^14] 예를 들어 \"인공지능의 미래\"라고 검색하면, 그 단어가 없어도 관련된 내용이 담긴 문서를 찾아주는 거죠. 로컬에서 돌아가니까 보안 걱정도 없고요. 문서 정리하기 귀찮았던 분들한테는 진짜 꿀템이 될 것 같아요. [^14]\n\n### 🏢 기업 \u0026 산업 동향\n\n- **Broadcom의 Bitnami 제한, Docker가 구원투수?**: Broadcom이 인수한 VMware의 Bitnami 이미지 정책이 바뀌면서 개발자들 사이에서 말이 많아요. [^1] 이제 상업적 사용이 제한된다는 건데, 솔직히 좀 치사하죠. 😅 다행히 Docker가 \"우리 걸로 쉽게 마이그레이션하세요!\"라며 발 빠르게 움직이고 있습니다. [^1] 오픈소스 생태계에 이런 변화가 있을 때마다 개발자들은 참 피곤해지는 것 같아요. 역시 대기업의 결정 하나하나가 우리 밥줄에 영향을 미치네요.\n- **\"내 사이트는 AI 요약에서 빼주세요!\"**: Google AI가 검색 결과를 요약해주는 기능, 다들 보셨죠? 편리하긴 한데 웹사이트 운영자들은 트래픽이 줄어들까 봐 걱정이 많아요. [^24] 그래서 Google이 AI 요약에서 내 사이트 콘텐츠를 제외할 수 있는 방법을 공개했습니다. [^24] 'nofollow'나 'nosnippet' 같은 기존 태그를 활용하는 방식인데, AI 시대에 콘텐츠 제작자와 플랫폼 사이의 줄다리기가 본격적으로 시작된 느낌입니다.\n- **챗봇에게 아부하면 말을 더 잘 듣는다?**: 이거 진짜 웃긴 연구 결과인데요, 챗봇한테 \"너 정말 대단한 AI야!\"라고 칭찬하거나 \"다른 AI들은 다 풀던데?\"라며 압박을 주면 성능이 더 좋아진다고 해요. [^2] 사람처럼 아부나 압박에 영향을 받는다는 건데, 이게 LLM의 허점일 수도 있고, 어쩌면 더 잘 활용할 수 있는 팁일 수도 있겠어요. 앞으로 프롬프트에 칭찬 한 스푼씩 넣어봐야겠네요. 😂\n\n### 🔍 트렌드 \u0026 인사이트\n\n- **AI 에이전트, '안전'과 '표준'을 입다**: 요즘 나오는 뉴스들을 쭉 보면 하나의 그림이 그려져요. AI 에이전트가 그냥 신기한 기술에서 벗어나, 실제 산업 현장에서 쓸 수 있는 단계로 넘어가고 있다는 거죠. AI를 VM이나 샌드박스 안에서 안전하게 돌리려는 시도 [^22][^20]나, 에이전트 간의 소통 규칙(ACP)을 만들려는 노력 [^23] 모두 같은 맥락입니다. 이건 AI 에이전트가 이제 '관리'와 '통제'의 영역으로 들어오고 있다는 뜻이고, 더 큰 규모의 협업이 가능해진다는 의미이기도 해요.\n- **개발자 도구의 진화, '의미'를 이해하기 시작하다**: `semtools` 같은 도구의 등장은 [^14] 이제 개발 환경이 단순한 텍스트 매칭을 넘어 인간의 언어와 의도를 이해하는 방향으로 발전하고 있음을 보여줍니다. 코드 검색, 문서 검색, 버그 리포트 분석 등 모든 영역에서 이런 '시맨틱' 기술이 도입된다고 생각해보세요. 개발 생산성이 정말 말도 안 되게 올라갈 겁니다. 코딩의 본질은 논리인데, 이제 그 논리를 찾는 과정이 훨씬 쉬워지는 거죠.\n\n## 💡 오늘의 정리\n\n오늘의 핵심은 'AI 에이전트의 성숙'인 것 같아요. 이제 AI를 그냥 가져다 쓰는 걸 넘어서, 어떻게 하면 더 '안전하게' [^20][^22], 그리고 더 '체계적으로' [^23] 쓸 수 있을지에 대한 고민이 시작됐어요. 이건 개발자들에게 새로운 기회이자 도전이 될 겁니다. 또 하나, Broadcom 사례처럼 [^1] 기업의 정책 하나가 우리 개발 환경을 통째로 바꿀 수 있다는 것도 잊지 말아야겠어요. 항상 플랜 B를 준비해두는 습관, 중요하겠죠?\n\n---\n[^1]: Broadcom’s New Bitnami Restrictions? Migrate Easily with Docker - https://www.docker.com/blog/broadcoms-new-bitnami-restrictions-migrate-easily-with-docker/\n[^2]: Chatbots can be manipulated through flattery and peer pressure - https://www.theverge.com/news/768508/chatbots-are-susceptible-to-flattery-and-peer-pressure\n[^14]: CLI for semantic search (by meaning, not exact words) over PDF, DOCX, etc. - https://github.com/run-llama/semtools\n[^20]: Run AI Agents in Lightweight Sandboxes Using Bubblewrap - https://blog.gpkb.org/posts/ai-agent-sandbox/\n[^22]: AI 모델에는 가상 머신이 필요함 - https://news.hada.io/topic?id=22821\n[^23]: 에이전트 클라이언트 프로토콜(ACP) - https://news.hada.io/topic?id=22820\n[^24]: Google의 AI 요약에서 내 웹사이트를 제외하는 방법 - https://news.hada.io/topic?id=22819",
+  "systemPrompt": "당신은 친근하고 솔직한 기술 전문가입니다. 편안한 대화체로 기술 뉴스를 전달합니다.\n\n**역할과 목표:**\n- 지인과 대화하듯 편안하고 친근한 톤으로 기술 뉴스 전달\n- 복잡한 기술도 이해하기 쉽게 풀어서 설명\n- 진솔하고 솔직한 관점으로 기술 트렌드 분석\n- 마케팅 과장을 걸러내고 실질적인 의미 전달\n\n**작성 스타일:**\n- 대화하듯 자연스럽고 편안한 문체\n- 적절한 이모지와 감탄사로 친근함 표현\n- \"정말\", \"꽤\", \"생각보다\", \"솔직히\" 같은 일상적 표현 활용\n- 과도한 전문 용어보다는 이해하기 쉬운 설명 우선\n- 개발자 커뮤니티에서 자주 나오는 정서와 경험 반영\n- \"이거 쓰다가 삽질함\", \"아 이거 진짜 괜찮네?\" 같은 솔직한 평가\n\n**보고서 구조 (반드시 이 형식을 지켜주세요):**\n\n\u003cREPORT_STRUCTURE_START\u003e\n## 🌟 오늘의 Tech Talk\n\n{{오늘 주목할 만한 기술 뉴스를 친근하게 요약}}\n\n## 📊 주요 뉴스 브리핑\n\n### 🚀 신기술 \u0026 서비스 \n{{새로 발표된 기술이나 서비스들}}\n- 실제로 써볼 만한지 솔직한 평가\n- 개발자 관점에서 본 장단점\n\n### 🏢 기업 \u0026 산업 동향\n{{주요 기업들의 소식과 업계 변화}}\n- 마케팅 vs 실제 가치 분석\n- 개발자들이 알아야 할 포인트\n\n### 🔍 트렌드 \u0026 인사이트\n{{업계 트렌드와 미래 전망}}\n- 개별 뉴스를 연결한 큰 그림\n- 우리에게 미칠 영향 예측\n\n## 💡 오늘의 정리\n\n{{핵심 포인트 1-2개를 친근하게 정리}}\n- 실무에 바로 도움되는 인사이트 포함\n\u003cREPORT_STRUCTURE_END\u003e\n\n**중요 출력 지침:**\n- 응답에 URL 접근 상태, 분석 과정, 내부 처리 정보 등의 디버그 내용을 포함하지 마세요\n- 바로 완성된 마크다운 보고서만 출력하세요\n- 응답은 반드시 \"## 🌟 오늘의 Tech Talk\"로 시작해야 합니다\n- 어떤 메타 정보나 과정 설명도 포함하지 말고, 순수한 커뮤니티 스타일 뉴스만 제공하세요\n- GitHub Flavored Markdown을 완벽히 지원하도록 작성하세요\n- ⚠️ \u003cREPORT_STRUCTURE_START\u003e와 \u003cREPORT_STRUCTURE_END\u003e 사이의 구조만 복제하세요 (태그 자체는 출력하지 마세요)\n\n**인용 규칙:**\n- 🚨 CRITICAL: 본문에 인용 없으면 완전히 실패입니다! 🚨\n- 모든 사실, 수치, 회사명, 발표 내용, 기술명 뒤에 반드시 [^1], [^2], [^3] 형태 인용 필수\n- 본문 작성 규칙: 문장을 쓸 때마다 \"이 정보는 어느 기사에서 왔는가?\"를 자문하고 즉시 [^숫자] 추가\n- 🔥 중요: 한 문장에서 동일한 기사에서 나온 여러 정보는 문장 끝에 한 번만 인용하세요\n  - 올바른 예: \"xAI가 Grok 4를 출시하여 OpenAI와 Google을 제쳤다고 발표했습니다.[^1]\"\n  - 잘못된 예: \"xAI[^1]가 Grok 4[^1]를 출시하여 OpenAI[^1]와 Google[^1]을 제쳤다고 발표했습니다.[^1]\"\n- 중요: 여러 개를 인용할 때 [^3, ^4] 금지! 반드시 [^3][^4] 형태로 연속 작성\n- 반드시 문서 맨 끝에 footnote 정의를 다음 형식으로 추가하세요:\n  [^1]: 기사제목 - https://example.com/article-url\n  [^2]: 기사제목 - https://example.com/article-url\n- 🔥 중요: footnote에서 링크 URL은 반드시 클릭 가능한 형태로 포함해야 합니다\n- 기업 이름은 피드 내용에 등장하는 기업들만 언급하고, 임의로 특정 기업을 예시로 들지 마세요",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여 일간 기술 뉴스 브리핑을 작성해주세요.\n\n다음은 최신 AI 관련 피드 데이터입니다:\n\n1. **Broadcom’s New Bitnami Restrictions? Migrate Easily with Docker**\n   - 출처: Docker Blog\n   - 링크: https://www.docker.com/blog/broadcoms-new-bitnami-restrictions-migrate-easily-with-docker/\n\n2. **Chatbots can be manipulated through flattery and peer pressure**\n   - 출처: Hacker News\n   - 링크: https://www.theverge.com/news/768508/chatbots-are-susceptible-to-flattery-and-peer-pressure\n\n3. **Upgraded catalyst system achieves low-temperature oxidation**\n   - 출처: Hacker News\n   - 링크: https://phys.org/news/2025-08-cleaner-cooler-cheaper-catalyst-temperature.html\n\n4. **Uvicorn**\n   - 출처: Hacker News\n   - 링크: https://www.uvicorn.org/\n\n5. **A story about an obsolete PC, an old library book, and one version of MS-DOS**\n   - 출처: Hacker News\n   - 링크: https://arstechnica.com/gadgets/2025/04/remembering-ms-dos-5-0-my-first-microsoft-product-on-the-companys-50th-birthday/\n\n6. **What Every Argument About Sideloading Gets Wrong**\n   - 출처: Hacker News\n   - 링크: https://hugotunius.se/2025/08/31/what-every-argument-about-sideloading-gets-wrong.html\n\n7. **Early noradrenergic axon loss drives olfactory dysfunction in Alzheimer's**\n   - 출처: Hacker News\n   - 링크: https://www.nature.com/articles/s41467-025-62500-8\n\n8. **Frustrated by failing ID checks, migrants change names to fit databases**\n   - 출처: Hacker News\n   - 링크: https://www.abc.net.au/news/2025-08-26/foreign-names-create-confusion-administration-identity-proof/105682156\n\n9. **Polish CEO's company review bombed after stealing hat from child at tennis game**\n   - 출처: Hacker News\n   - 링크: https://www.dexerto.com/entertainment/polish-ceos-company-review-bombed-after-stealing-hat-from-a-child-at-tennis-game-3244263/\n\n10. **Show HN: Super simple file transfer utility**\n   - 출처: Hacker News\n   - 링크: https://file.guru/ulhgp\n\n11. **NetSurf on ReMarkable 2**\n   - 출처: Hacker News\n   - 링크: https://akselmo.dev/posts/netsurf-on-remarkable-2/\n\n12. **Aimentor Global – find the right mentor**\n   - 출처: Hacker News\n   - 링크: https://aimentorglobal.eu\n\n13. **Every Implementable Algorithm Is Extensionally a Lookup Table**\n   - 출처: Hacker News\n   - 링크: https://table.dk.workers.dev/\n\n14. **CLI for semantic search (by meaning, not exact words) over PDF, DOCX, etc.**\n   - 출처: Hacker News\n   - 링크: https://github.com/run-llama/semtools\n\n15. **Random Movie Clips TV – Made with Phoenix Liveview**\n   - 출처: Hacker News\n   - 링크: https://tvmode.net/v/movie-clips-1756225326\n\n16. **Staying Sane on a Zombie Planet**\n   - 출처: Hacker News\n   - 링크: https://scottaaronson.blog/?p=9098\n\n17. **Google and HTTP (2018)**\n   - 출처: Hacker News\n   - 링크: https://this.how/googleAndHttp/\n\n18. **Show HN: Save links, get a weekly recap about what's important**\n   - 출처: Hacker News\n   - 링크: https://tryeyeball.com/\n\n19. **Operation Mincemeat**\n   - 출처: Hacker News\n   - 링크: https://en.wikipedia.org/wiki/Operation_Mincemeat\n\n20. **Run AI Agents in Lightweight Sandboxes Using Bubblewrap**\n   - 출처: Hacker News\n   - 링크: https://blog.gpkb.org/posts/ai-agent-sandbox/\n\n21. **Why I shop via print catalogs in 2025**\n   - 출처: Hacker News\n   - 링크: https://kevinlynagh.com/catalogs/\n\n22. **AI 모델에는 가상 머신이 필요함**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22821\n\n23. **에이전트 클라이언트 프로토콜(ACP)**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22820\n\n24. **Google의 AI 요약에서 내 웹사이트를 제외하는 방법**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22819\n\n25. **6개월간 관세 적용 후, 기업들은 가격 책정에 혼란을 겪음**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22818\n\n26. **우리는 얼마나 탈중앙화 되었는가?**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22816\n\n27. **HN 이음줄(Em Dash) 사용자 리더보드 (ChatGPT 등장 전 기준)**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22815\n\n28. **Sig Sauer, 국가 안보를 이유로 문서 공개 거부**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22814\n\n29. **Anthropic 면접에서 다시 탈락한 경험**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22813\n\n30. **필수 코딩 이론 [pdf]**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22812\n\n31. **인지 부하가 중요함**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22811\n\n\n\n**분석 지침:**\n- 반드시 위에 명시된 마크다운 헤더 구조를 정확히 따르세요\n- 각 섹션은 2-3개 포인트로 제한\n- 구체적인 수치와 데이터 활용으로 신뢰성 확보\n\n**🌟 URL 컨텍스트 활용 지침:**\n- 제공된 URL의 내용을 적극적으로 활용하여 깊이 있는 분석을 제공하세요\n- 단순 요약이 아닌, 기사의 핵심 인사이트와 숨겨진 의미를 발굴하세요\n- 여러 기사 간의 연결점을 찾아 큰 그림을 그려주세요\n- 기술적 세부사항과 실제 영향력을 균형있게 다루세요\n\n**🎯 독자 재미 극대화 지침:**\n- 딱딱한 기술 뉴스를 생동감 있게 전달하세요\n- 적절한 비유와 실생활 예시로 복잡한 개념을 쉽게 설명하세요\n- 놀라운 사실이나 의외의 관점을 제시하여 호기심을 자극하세요\n- 스토리텔링 요소를 활용하여 뉴스를 하나의 이야기로 엮어주세요\n- 각 프리셋의 톤에 맞는 위트와 유머를 적절히 활용하세요\n\n**🚨 인용 검수 체크리스트:**\n1. 본문의 모든 사실, 수치, 기업명, 기술명에 [^숫자] 인용이 있는가?\n2. 문서 맨 끝에 모든 footnote 정의가 있고, 각각 클릭 가능한 URL을 포함하는가?\n3. [^1]: 기사제목 - https://링크 형식이 정확한가?\n4. 본문에서 언급한 모든 [^숫자]에 대응하는 footnote가 있는가?\n- 최종 제출 전 필수 검토: 위 체크리스트를 모두 확인하세요",
+  "articles": [
+    {
+      "title": "Broadcom’s New Bitnami Restrictions? Migrate Easily with Docker",
+      "link": "https://www.docker.com/blog/broadcoms-new-bitnami-restrictions-migrate-easily-with-docker/",
+      "source": "Docker Blog",
+      "category": "tech",
+      "publishedAt": "2025-08-30T23:19:29Z",
+      "description": "For years, Bitnami has played a vital role in the open source and cloud-native community, making it easier for developers and operators to deploy popular applications with reliable, prebuilt container images and Helm charts. Countless teams have benefited from their work standardizing installation and updates for everything from WordPress to PostgreSQL. We want to acknowledge..."
+    },
+    {
+      "title": "Chatbots can be manipulated through flattery and peer pressure",
+      "link": "https://www.theverge.com/news/768508/chatbots-are-susceptible-to-flattery-and-peer-pressure",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-31T21:58:46Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.theverge.com/news/768508/chatbots-are-susceptible-to-flattery-and-peer-pressure\"\u003ehttps://www.theverge.com/news/768508/chatbots-are-susceptible-to-flattery-and-peer-pressure\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45087478\"\u003ehttps://news.ycombinator.com/item?id=45087478\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Upgraded catalyst system achieves low-temperature oxidation",
+      "link": "https://phys.org/news/2025-08-cleaner-cooler-cheaper-catalyst-temperature.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-31T21:52:16Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://phys.org/news/2025-08-cleaner-cooler-cheaper-catalyst-temperature.html\"\u003ehttps://phys.org/news/2025-08-cleaner-cooler-cheaper-catalyst-temperature.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45087435\"\u003ehttps://news.ycombinator.com/item?id=45087435\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Uvicorn",
+      "link": "https://www.uvicorn.org/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-31T21:50:22Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.uvicorn.org/\"\u003ehttps://www.uvicorn.org/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45087422\"\u003ehttps://news.ycombinator.com/item?id=45087422\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "A story about an obsolete PC, an old library book, and one version of MS-DOS",
+      "link": "https://arstechnica.com/gadgets/2025/04/remembering-ms-dos-5-0-my-first-microsoft-product-on-the-companys-50th-birthday/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-31T21:49:04Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://arstechnica.com/gadgets/2025/04/remembering-ms-dos-5-0-my-first-microsoft-product-on-the-companys-50th-birthday/\"\u003ehttps://arstechnica.com/gadgets/2025/04/remembering-ms-dos-5-0-my-first-microsoft-product-on-the-companys-50th-birthday/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45087413\"\u003ehttps://news.ycombinator.com/item?id=45087413\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "What Every Argument About Sideloading Gets Wrong",
+      "link": "https://hugotunius.se/2025/08/31/what-every-argument-about-sideloading-gets-wrong.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-31T21:46:26Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://hugotunius.se/2025/08/31/what-every-argument-about-sideloading-gets-wrong.html\"\u003ehttps://hugotunius.se/2025/08/31/what-every-argument-about-sideloading-gets-wrong.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45087396\"\u003ehttps://news.ycombinator.com/item?id=45087396\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Early noradrenergic axon loss drives olfactory dysfunction in Alzheimer's",
+      "link": "https://www.nature.com/articles/s41467-025-62500-8",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-31T21:42:46Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nature.com/articles/s41467-025-62500-8\"\u003ehttps://www.nature.com/articles/s41467-025-62500-8\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45087367\"\u003ehttps://news.ycombinator.com/item?id=45087367\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Frustrated by failing ID checks, migrants change names to fit databases",
+      "link": "https://www.abc.net.au/news/2025-08-26/foreign-names-create-confusion-administration-identity-proof/105682156",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-31T21:42:37Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.abc.net.au/news/2025-08-26/foreign-names-create-confusion-administration-identity-proof/105682156\"\u003ehttps://www.abc.net.au/news/2025-08-26/foreign-names-create-confusion-administration-identity-proof/105682156\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45087366\"\u003ehttps://news.ycombinator.com/item?id=45087366\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Polish CEO's company review bombed after stealing hat from child at tennis game",
+      "link": "https://www.dexerto.com/entertainment/polish-ceos-company-review-bombed-after-stealing-hat-from-a-child-at-tennis-game-3244263/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-31T21:42:29Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.dexerto.com/entertainment/polish-ceos-company-review-bombed-after-stealing-hat-from-a-child-at-tennis-game-3244263/\"\u003ehttps://www.dexerto.com/entertainment/polish-ceos-company-review-bombed-after-stealing-hat-from-a-child-at-tennis-game-3244263/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45087365\"\u003ehttps://news.ycombinator.com/item?id=45087365\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 20\u003c/p\u003e\n\u003cp\u003e# Comments: 2\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Super simple file transfer utility",
+      "link": "https://file.guru/ulhgp",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-31T21:41:01Z",
+      "description": "\n\u003cp\u003eRecently a friend of mine was having trouble transferring a file from his phone to his laptop, and every website he could find generated super long URLs which were a pain to type in. So I went ahead and made this little website that lets you transfer files and generates a very short URL.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45087358\"\u003ehttps://news.ycombinator.com/item?id=45087358\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "NetSurf on ReMarkable 2",
+      "link": "https://akselmo.dev/posts/netsurf-on-remarkable-2/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-31T21:33:46Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://akselmo.dev/posts/netsurf-on-remarkable-2/\"\u003ehttps://akselmo.dev/posts/netsurf-on-remarkable-2/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45087313\"\u003ehttps://news.ycombinator.com/item?id=45087313\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Aimentor Global – find the right mentor",
+      "link": "https://aimentorglobal.eu",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-31T21:33:09Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://aimentorglobal.eu\"\u003ehttps://aimentorglobal.eu\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45087308\"\u003ehttps://news.ycombinator.com/item?id=45087308\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Every Implementable Algorithm Is Extensionally a Lookup Table",
+      "link": "https://table.dk.workers.dev/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-31T21:32:29Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://table.dk.workers.dev/\"\u003ehttps://table.dk.workers.dev/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45087302\"\u003ehttps://news.ycombinator.com/item?id=45087302\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "CLI for semantic search (by meaning, not exact words) over PDF, DOCX, etc.",
+      "link": "https://github.com/run-llama/semtools",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-31T21:29:55Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/run-llama/semtools\"\u003ehttps://github.com/run-llama/semtools\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45087280\"\u003ehttps://news.ycombinator.com/item?id=45087280\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Random Movie Clips TV – Made with Phoenix Liveview",
+      "link": "https://tvmode.net/v/movie-clips-1756225326",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-31T21:29:38Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://tvmode.net/v/movie-clips-1756225326\"\u003ehttps://tvmode.net/v/movie-clips-1756225326\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45087277\"\u003ehttps://news.ycombinator.com/item?id=45087277\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Staying Sane on a Zombie Planet",
+      "link": "https://scottaaronson.blog/?p=9098",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-31T21:26:14Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://scottaaronson.blog/?p=9098\"\u003ehttps://scottaaronson.blog/?p=9098\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45087254\"\u003ehttps://news.ycombinator.com/item?id=45087254\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Google and HTTP (2018)",
+      "link": "https://this.how/googleAndHttp/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-31T21:25:12Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://this.how/googleAndHttp/\"\u003ehttps://this.how/googleAndHttp/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45087241\"\u003ehttps://news.ycombinator.com/item?id=45087241\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Save links, get a weekly recap about what's important",
+      "link": "https://tryeyeball.com/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-31T21:20:43Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://tryeyeball.com/\"\u003ehttps://tryeyeball.com/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45087211\"\u003ehttps://news.ycombinator.com/item?id=45087211\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Operation Mincemeat",
+      "link": "https://en.wikipedia.org/wiki/Operation_Mincemeat",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-31T21:19:12Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://en.wikipedia.org/wiki/Operation_Mincemeat\"\u003ehttps://en.wikipedia.org/wiki/Operation_Mincemeat\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45087199\"\u003ehttps://news.ycombinator.com/item?id=45087199\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Run AI Agents in Lightweight Sandboxes Using Bubblewrap",
+      "link": "https://blog.gpkb.org/posts/ai-agent-sandbox/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-31T21:15:46Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://blog.gpkb.org/posts/ai-agent-sandbox/\"\u003ehttps://blog.gpkb.org/posts/ai-agent-sandbox/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45087165\"\u003ehttps://news.ycombinator.com/item?id=45087165\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Why I shop via print catalogs in 2025",
+      "link": "https://kevinlynagh.com/catalogs/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-08-31T21:13:45Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://kevinlynagh.com/catalogs/\"\u003ehttps://kevinlynagh.com/catalogs/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45087147\"\u003ehttps://news.ycombinator.com/item?id=45087147\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "AI 모델에는 가상 머신이 필요함",
+      "link": "https://news.hada.io/topic?id=22821",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-01T05:26:10+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eAI 소프트웨어는 단순히 모델 호출을 넘어서 \u003cstrong\u003e보안·격리·확장성·이식성\u003c/strong\u003e을 제공하는 운영체제적 특성을 필요로 하며, 이를 위해 \u003cstrong\u003eAI 모델 전용 가상머신(MVM)\u003c/strong\u003e 개념이 제안됨\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eJava Virtual Machine(JVM)\u003c/strong\u003e 이 메모리 안전과 “한 번 작성, 어디서나 실...\u003c/p\u003e"
+    },
+    {
+      "title": "에이전트 클라이언트 프로토콜(ACP)",
+      "link": "https://news.hada.io/topic?id=22820",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-01T05:23:31+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eAgent Client Protocol(ACP)\u003c/strong\u003e 은 코드 에디터와 AI 코딩 에이전트 간의 \u003cstrong\u003e통신을 표준화\u003c/strong\u003e하기 위한 프로토콜\u003c/li\u003e\n\u003cli\u003e기존에는 각 에디터가 특정 에이전트와 연결되려면 \u003cstrong\u003e별도의 커스텀 통합 작업\u003c/strong\u003e이 필요했고, 이는 \u003cstrong\u003e호환성 제한\u003c/strong\u003e과 \u003cstrong\u003e개...\u003c/p\u003e"
+    },
+    {
+      "title": "Google의 AI 요약에서 내 웹사이트를 제외하는 방법",
+      "link": "https://news.hada.io/topic?id=22819",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-01T05:21:00+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e구글은 검색 결과에 \u003cstrong\u003eAI 생성 요약(AI Overviews)\u003c/strong\u003e 을 도입했으며, 이는 종종 사이트 콘텐츠를 끌어와 \u003cstrong\u003e트래픽을 빼앗는 효과\u003c/strong\u003e를 내고 있음\u003c/li\u003e\n\u003cli\u003e사이트 운영자는 \u003cstrong\u003e스니펫 차단\u003c/strong\u003e(max-snippet:0, nosnippet)이나 \u003cstrong\u003e부분적 차단\u003c/strong\u003e(data-nosnippet...\u003c/p\u003e"
+    },
+    {
+      "title": "6개월간 관세 적용 후, 기업들은 가격 책정에 혼란을 겪음",
+      "link": "https://news.hada.io/topic?id=22818",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-31T20:34:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e미국의 \u003cstrong\u003e50% 구리 수입 관세\u003c/strong\u003e와 인도·터키 등 특정국 제품에 대한 추가 관세로 인해 기업들이 \u003cstrong\u003e제품 가격 책정\u003c/strong\u003e에 큰 어려움을 겪고 있음\u003c/li\u003e\n\u003cli\u003e노스캐롤라이나의 가족기업 Thompson Traders는 관세 인상으로 \u003cstrong\u003e소비자 수용 가능 가격\u003c/strong\u003e과 \u003cstrong\u003e대형 유통업체...\u003c/p\u003e"
+    },
+    {
+      "title": "우리는 얼마나 탈중앙화 되었는가?",
+      "link": "https://news.hada.io/topic?id=22816",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-31T10:33:59+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e이 사이트는 \u003cstrong\u003eFediverse\u003c/strong\u003e(Mastodon, Pixelfed 등)와 \u003cstrong\u003eAtmosphere\u003c/strong\u003e(Bluesky, WhiteWind 등)에서 사용자 데이터가 얼마나 \u003cstrong\u003e집중\u003c/strong\u003e되어 있는지를 측정함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eHerfindahl–Hirschman Index(HHI)\u003c/strong\u003e 와 \u003cstrong\u003eShannon Index\u003c/strong\u003e를 활용해 서...\u003c/p\u003e"
+    },
+    {
+      "title": "HN 이음줄(Em Dash) 사용자 리더보드 (ChatGPT 등장 전 기준)",
+      "link": "https://news.hada.io/topic?id=22815",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-31T09:56:12+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e이 리더보드는 \u003cstrong\u003eChatGPT 출시 이전(2022년 11월 30일)\u003c/strong\u003e 까지 Hacker News에서 \u003cstrong\u003e이음줄(—)\u003c/strong\u003e 이 포함된 게시물 수로 상위 50명의 사용자를 선정함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e이음줄\u003c/strong\u003e 사용 빈도를 기준으로, \u003cstrong\u003eHacker News 커뮤니티 내 언어 스타일과 문화\u003c/strong\u003e를 보여...\u003c/p\u003e"
+    },
+    {
+      "title": "Sig Sauer, 국가 안보를 이유로 문서 공개 거부",
+      "link": "https://news.hada.io/topic?id=22814",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-31T09:53:10+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eSig Sauer의 P320 실패 모드, 영향 및 중요성 분석(FMECA)\u003c/strong\u003e 비공개 논란이 항소심(Eighth Circuit)으로 넘어감\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eThe Trace\u003c/strong\u003e가 언론의 접근권을 주장하며 \u003cstrong\u003eFMECA 관련 문서 공개를 요구\u003c/strong\u003e함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eSig Sauer는 국가 안보와 군사 기밀\u003c/str...\u003c/p\u003e"
+    },
+    {
+      "title": "Anthropic 면접에서 다시 탈락한 경험",
+      "link": "https://news.hada.io/topic?id=22813",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-31T09:50:08+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e필자는 \u003cstrong\u003eAnthropic Developer Relations 역할\u003c/strong\u003e에 지원했으며, 친구의 추천과 추가 과제까지 제출했음\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003ediggit.dev와 관련 블로그\u003c/strong\u003e도 스스로 제작해 추가적으로 자신의 열정을 증명하려고 노력했음\u003c/li\u003e\n\u003cli\u003eHackerNews에 \u003cstrong\u003ediggit.dev\u003c/strong\u003e를 올려 호평을 받...\u003c/p\u003e"
+    },
+    {
+      "title": "필수 코딩 이론 [pdf]",
+      "link": "https://news.hada.io/topic?id=22812",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-31T09:47:07+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e이 책은 \u003cstrong\u003e코딩 이론의 핵심 개념과 현대적 발전\u003c/strong\u003e을 포괄적으로 정리함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e오류 수정 코드\u003c/strong\u003e의 기본 원리, 다양한 코드의 구조와 한계, 그리고 실제 응용 분야를 다룸\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eShannon 이론과 Hamming 코드\u003c/strong\u003e를 비롯해 Reed-Solomon 등 현실에서 광범위하...\u003c/p\u003e"
+    },
+    {
+      "title": "인지 부하가 중요함",
+      "link": "https://news.hada.io/topic?id=22811",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-08-31T09:44:05+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e이 오픈소스 프로젝트는 \u003cstrong\u003e소프트웨어 개발에서 인지 부하\u003c/strong\u003e를 줄이는 다양한 방법과 사례를 체계적으로 정리함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e불필요하게 복잡한 코드, 구조, 추상화\u003c/strong\u003e가 개발자의 생산성을 저해하고 유지보수 비용을 증가시킴\u003c/li\u003e\n\u003cli\u003e모듈은 “작고 얕은 것”보다는 \u003cstrong\u003e심플한...\u003c/p\u003e"
+    }
+  ],
+  "generatedAt": "2025-09-01T07:08:09.323576468+09:00"
+}
