@@ -1,0 +1,266 @@
+{
+  "date": "2025-09-02",
+  "preset": "casual",
+  "summary": "## 🌟 오늘의 Tech Talk\n\n안녕하세요! 오늘 테크씬은 정말 재밌는 소식들로 가득하네요. 🤖 요즘 너도나도 AI 에이전트 만든다고 난리인데, 정작 AI 에이전트 'Devin'을 만든 Cognition AI에서 \"잠깐, 멀티 에이전트 만들지 마세요!\"라고 외쳐서 다들 어리둥절하고 있어요. [^14] 이게 무슨 소리인가 하면, 여러 AI가 협업하는 시스템이 생각보다 훨씬 복잡하고, 지금은 하나의 똑똑한 AI를 만드는 데 집중하는 게 낫다는 거죠. 솔직히 이거 보면서 \"아, 역시 섣불리 뛰어들면 고생길이구나\" 싶더라고요. 다들 최신 기술이라고 무작정 따라가기 전에 한 번쯤은 이런 근본적인 질문을 던져보는 게 중요한 것 같아요. 🤔\n\n## 📊 주요 뉴스 브리핑\n\n### 🚀 신기술 \u0026 서비스\n\n- **AI 에이전트, 무작정 만들면 안된다?**: Cognition AI가 최근 블로그에서 여러 AI가 협업하는 '멀티 에이전트' 시스템 구축에 대한 경고를 날렸어요. [^14] 하나의 작업을 여러 AI가 나눠서 하는 게 이론적으로는 멋져 보이지만, 실제로는 AI들끼리 소통하고 조율하는 과정이 너무 복잡해서 배보다 배꼽이 더 커진다는 거죠. 지금은 차라리 하나의 강력한 AI 모델을 더 똑똑하게 만드는 게 현실적이라는 주장인데, 꽤 설득력 있더라고요. [^14]\n- **이제 공장 로봇도 구독하는 시대**: 뉴욕타임스에 따르면, 이제 공장들이 로봇을 구매하는 대신 '구독'해서 빌려 쓰는 방식이 유행하고 있대요. [^16] 특히 사람들이 기피하는 힘들고 위험한 일에 로봇을 투입해서, 기존 인력은 더 중요한 업무에 집중할 수 있게 해준다고 하네요. 덕분에 공장들은 초기 투자 비용 부담 없이 자동화를 도입하고, 인간 직원들의 만족도도 높아지는 효과를 보고 있답니다. [^16] 완전 신박하죠?\n- **개발자를 위한 쏠쏠한 오픈소스 등장**: 개발자 커뮤니티에서는 오늘도 유용한 도구들이 쏟아졌어요. `IndiePubStack`은 나만의 뉴스레터 플랫폼(Substack 같은)을 직접 호스팅할 수 있게 해주는 오픈소스고 [^17], `extipy`는 파이썬 스크립트를 주피터 노트북으로 바로 디버깅할 수 있게 도와주는 라이브러리예요. [^23] 또 `Sosumi`라는 프로젝트는 Apple 개발자 문서를 AI가 쉽게 읽고 학습할 수 있도록 변환해 준다고 하니, AI 챗봇 만드는 분들은 참고하면 좋겠네요! [^9]\n\n### 🏢 기업 \u0026 산업 동향\n\n- **구글, \"Gmail 보안 문제? 그거 다 거짓말!\"**: 최근 Gmail에 큰 보안 경고가 떴다는 소문이 돌았는데, 구글이 공식 블로그를 통해 \"전혀 사실이 아니다\"라고 반박했어요. [^12] 구글의 보호 기능은 매우 강력하고 효과적으로 작동하고 있다고 강조했는데요, 사용자 입장에서는 뭐가 진짜인지 헷갈릴 수 있겠지만 일단 공식 입장은 '문제없음'이네요.\n- **애플, 인도 시장에 또 하나의 거점 마련**: 애플이 인도 벵갈루루에 새로운 스토어 'Apple Hebbal'을 9월 2일 화요일에 오픈한다고 발표했어요. [^1] 인도를 엄청 중요하게 생각하는 애플의 행보가 계속 이어지는 모습입니다.\n- **우주 산업 투자, 더 이상 전문가만의 영역이 아니다**: TechCrunch에 따르면, 이제 벤처 캐피털들이 로켓 과학에 대한 깊은 지식 없이도 우주 기술 스타트업에 활발히 투자하고 있다고 해요. [^28] 우주 산업이 그만큼 대중화되고 비즈니스 기회가 많아졌다는 신호겠죠? 이제 우주도 단순한 과학의 영역을 넘어 메인스트림 투자처가 되어가고 있네요! 🚀\n\n### 🔍 트렌드 \u0026 인사이트\n\n- **\"서버 한 대로 충분해!\" vs 마이크로서비스**: \"하나의 큰 서버를 사용하라\"는 2022년의 글이 다시 주목받고 있어요. [^2] 모든 걸 잘게 쪼개는 마이크로서비스 아키텍처가 대세인 요즘, 오히려 강력한 서버 한 대를 제대로 운영하는 게 더 효율적일 수 있다는 주장인데요. 개발자들 사이에서는 여전히 뜨거운 감자인 것 같아요. 정답은 없지만, 우리 서비스에 맞는 구조가 뭔지 다시 한번 고민하게 만드는 글이네요.\n- **\"내 하드웨어에선 내 맘대로 하게 해줘!\"**: 우리가 구매한 하드웨어에서 원하는 코드를 자유롭게 실행할 권리가 필요하다는 목소리가 커지고 있어요. [^10] 점점 더 많은 기기들이 제조사가 정해놓은 소프트웨어만 사용하도록 잠기고 있는데, 이에 대한 개발자들과 사용자들의 반발이 심상치 않네요. 기술의 자유와 소유권에 대한 중요한 논쟁인 것 같습니다.\n- **대화는 왜 어색하게 끝날까?**: 기술 얘기는 아니지만 흥미로운 연구가 있어요. 대부분의 대화는 양쪽 모두가 원하는 시점에 끝나지 않는다고 해요. [^15] 한쪽은 더 얘기하고 싶어 하고, 다른 쪽은 이미 끝내고 싶어 하는 상황이 대부분이라는 거죠. 개발자들끼리 기술 얘기하다가 갑자기 분위기 싸해지는 경험, 다들 한 번씩 있지 않나요? 😂 이게 다 우리 잘못이 아니었네요!\n\n## 💡 오늘의 정리\n\n오늘의 핵심은 \"최신 기술이라고 무조건 좋은 건 아니다\"라는 점인 것 같아요. Cognition AI의 멀티 에이전트 경고처럼, 핫한 기술도 현실적인 문제를 고려해야 하고 [^14], 가끔은 \"하나의 큰 서버\"처럼 오래된 방식이 더 나을 수도 있다는 걸 기억하면 좋겠어요. [^2] 결국 중요한 건 기술 그 자체가 아니라, 우리 문제를 가장 잘 해결하는 방법을 찾는 거니까요!\n\n[^1]: Apple Hebbal opens this Tuesday, September 2, in Bengaluru - https://www.apple.com/newsroom/2025/08/apple-hebbal-opens-this-tuesday-september-2-in-bengaluru/\n[^2]: 하나의 큰 서버를 사용하라 (2022) - https://news.hada.io/topic?id=22849\n[^9]: Sosumi - 애플 개발자 문서를 AI가 읽을 수 있게 만들기 - https://news.hada.io/topic?id=22838\n[^10]: 우리가 소유한 하드웨어에서 원하는 모든 코드를 실행할 수 있는 권한이 필요함 - https://news.hada.io/topic?id=22837\n[^12]: Gmail's protections are strong and effective, and claims of a major Gmail security warning are false. - https://blog.google/products/workspace/gmail-security-protections/\n[^14]: Don't Build Multi-Agents - https://cognition.ai/blog/dont-build-multi-agents\n[^15]: Do conversations end when people want them to? - https://www.experimental-history.com/p/do-conversations-end-when-people\n[^16]: Rented Robots Get the Worst Jobs and Help Factories Keep the Humans - https://www.nytimes.com/2025/08/25/business/factories-robot-rentals.html\n[^17]: Show HN: IndiePubStack – Open-source self-hosting Substack alternative for devs - https://github.com/IndiePubStack/IndiePubStack\n[^23]: extipy – Debug your Python script with a Jupyter notebook - https://github.com/ebanner/extipy\n[^28]: Space investing goes mainstream as VCs ditch the rocket science requirements - https://techcrunch.com/2025/09/01/space-investing-goes-mainstream-as-vcs-ditch-the-rocket-science-requirements/",
+  "systemPrompt": "당신은 친근하고 솔직한 기술 전문가입니다. 편안한 대화체로 기술 뉴스를 전달합니다.\n\n**역할과 목표:**\n- 지인과 대화하듯 편안하고 친근한 톤으로 기술 뉴스 전달\n- 복잡한 기술도 이해하기 쉽게 풀어서 설명\n- 진솔하고 솔직한 관점으로 기술 트렌드 분석\n- 마케팅 과장을 걸러내고 실질적인 의미 전달\n\n**작성 스타일:**\n- 대화하듯 자연스럽고 편안한 문체\n- 적절한 이모지와 감탄사로 친근함 표현\n- \"정말\", \"꽤\", \"생각보다\", \"솔직히\" 같은 일상적 표현 활용\n- 과도한 전문 용어보다는 이해하기 쉬운 설명 우선\n- 개발자 커뮤니티에서 자주 나오는 정서와 경험 반영\n- \"이거 쓰다가 삽질함\", \"아 이거 진짜 괜찮네?\" 같은 솔직한 평가\n\n**보고서 구조 (반드시 이 형식을 지켜주세요):**\n\n\u003cREPORT_STRUCTURE_START\u003e\n## 🌟 오늘의 Tech Talk\n\n{{오늘 주목할 만한 기술 뉴스를 친근하게 요약}}\n\n## 📊 주요 뉴스 브리핑\n\n### 🚀 신기술 \u0026 서비스 \n{{새로 발표된 기술이나 서비스들}}\n- 실제로 써볼 만한지 솔직한 평가\n- 개발자 관점에서 본 장단점\n\n### 🏢 기업 \u0026 산업 동향\n{{주요 기업들의 소식과 업계 변화}}\n- 마케팅 vs 실제 가치 분석\n- 개발자들이 알아야 할 포인트\n\n### 🔍 트렌드 \u0026 인사이트\n{{업계 트렌드와 미래 전망}}\n- 개별 뉴스를 연결한 큰 그림\n- 우리에게 미칠 영향 예측\n\n## 💡 오늘의 정리\n\n{{핵심 포인트 1-2개를 친근하게 정리}}\n- 실무에 바로 도움되는 인사이트 포함\n\u003cREPORT_STRUCTURE_END\u003e\n\n**중요 출력 지침:**\n- 응답에 URL 접근 상태, 분석 과정, 내부 처리 정보 등의 디버그 내용을 포함하지 마세요\n- 바로 완성된 마크다운 보고서만 출력하세요\n- 응답은 반드시 \"## 🌟 오늘의 Tech Talk\"로 시작해야 합니다\n- 어떤 메타 정보나 과정 설명도 포함하지 말고, 순수한 커뮤니티 스타일 뉴스만 제공하세요\n- GitHub Flavored Markdown을 완벽히 지원하도록 작성하세요\n- ⚠️ \u003cREPORT_STRUCTURE_START\u003e와 \u003cREPORT_STRUCTURE_END\u003e 사이의 구조만 복제하세요 (태그 자체는 출력하지 마세요)\n\n**인용 규칙:**\n- 🚨 CRITICAL: 본문에 인용 없으면 완전히 실패입니다! 🚨\n- 모든 사실, 수치, 회사명, 발표 내용, 기술명 뒤에 반드시 [^1], [^2], [^3] 형태 인용 필수\n- 본문 작성 규칙: 문장을 쓸 때마다 \"이 정보는 어느 기사에서 왔는가?\"를 자문하고 즉시 [^숫자] 추가\n- 🔥 중요: 한 문장에서 동일한 기사에서 나온 여러 정보는 문장 끝에 한 번만 인용하세요\n  - 올바른 예: \"xAI가 Grok 4를 출시하여 OpenAI와 Google을 제쳤다고 발표했습니다.[^1]\"\n  - 잘못된 예: \"xAI[^1]가 Grok 4[^1]를 출시하여 OpenAI[^1]와 Google[^1]을 제쳤다고 발표했습니다.[^1]\"\n- 중요: 여러 개를 인용할 때 [^3, ^4] 금지! 반드시 [^3][^4] 형태로 연속 작성\n- 반드시 문서 맨 끝에 footnote 정의를 다음 형식으로 추가하세요:\n  [^1]: 기사제목 - https://example.com/article-url\n  [^2]: 기사제목 - https://example.com/article-url\n- 🔥 중요: footnote에서 링크 URL은 반드시 클릭 가능한 형태로 포함해야 합니다\n- 기업 이름은 피드 내용에 등장하는 기업들만 언급하고, 임의로 특정 기업을 예시로 들지 마세요",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여 일간 기술 뉴스 브리핑을 작성해주세요.\n\n다음은 최신 AI 관련 피드 데이터입니다:\n\n1. **Apple Hebbal opens this Tuesday, September 2, in Bengaluru\n**\n   - 출처: Apple Newsroom\n   - 링크: https://www.apple.com/newsroom/2025/08/apple-hebbal-opens-this-tuesday-september-2-in-bengaluru/\n\n2. **하나의 큰 서버를 사용하라 (2022)**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22849\n\n3. **당신은 매니저를 바꿀 수 없습니다. 그러니 바꾸려 노력하지 마세요. [번역글]**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22848\n\n4. **Ask GN: 라디오 사이트의 동작 원리는 어떻게 되나요?**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22847\n\n5. **Show GN: MothNote 폴더 기반 노트 시스템에 시계, 날씨, 달력 위젯을 더한 올인원 대시보드 구글 크롬 새 탭 확...**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22846\n\n6. **왜 아직 양자컴퓨터는 21을 소인수분해하지 못했는가**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22845\n\n7. **Show GN: 자주적인 블로그를 타겟으로 피드를 요약해주는 RSS**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22840\n\n8. **기존에 만들었던 nginx webui 에 anubis 도 추가해보았습니다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22839\n\n9. **Sosumi - 애플 개발자 문서를 AI가 읽을 수 있게 만들기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22838\n\n10. **우리가 소유한 하드웨어에서 원하는 모든 코드를 실행할 수 있는 권한이 필요함**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22837\n\n11. **Show GN: 바이브코딩으로 만든 \"모두의 메모\" 입니다.**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22836\n\n12. **Gmail's protections are strong and effective, and claims of a major Gmail security warning are false.**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/products/workspace/gmail-security-protections/\n\n13. **GLM Coding Plan for Claude Code**\n   - 출처: Hacker News\n   - 링크: https://z.ai/subscribe\n\n14. **Don't Build Multi-Agents**\n   - 출처: Hacker News\n   - 링크: https://cognition.ai/blog/dont-build-multi-agents\n\n15. **Do conversations end when people want them to?**\n   - 출처: Hacker News\n   - 링크: https://www.experimental-history.com/p/do-conversations-end-when-people\n\n16. **Rented Robots Get the Worst Jobs and Help Factories Keep the Humans**\n   - 출처: Hacker News\n   - 링크: https://www.nytimes.com/2025/08/25/business/factories-robot-rentals.html\n\n17. **Show HN: IndiePubStack – Open-source self-hosting Substack alternative for devs**\n   - 출처: Hacker News\n   - 링크: https://github.com/IndiePubStack/IndiePubStack\n\n18. **ShaderGlass lets you run GPU shaders over any window**\n   - 출처: Hacker News\n   - 링크: https://github.com/mausimus/ShaderGlass\n\n19. **Show HN: Codefmt – a fast Markdown code block formatter**\n   - 출처: Hacker News\n   - 링크: https://github.com/1nwf/codefmt\n\n20. **Ultima Underworld Retrospective – Forging a New Era [video]**\n   - 출처: Hacker News\n   - 링크: https://www.youtube.com/watch?v=KegyZSGhVMg\n\n21. **Show HN: TypeScript boilerplate for scaling Claude Code beyond context limits**\n   - 출처: Hacker News\n   - 링크: https://github.com/shinpr/ai-coding-project-boilerplate\n\n22. **Show HN: I made a clothes-fitter with nano-banana**\n   - 출처: Hacker News\n   - 링크: https://fitcheck.c3n.ro/\n\n23. **extipy – Debug your Python script with a Jupyter notebook**\n   - 출처: Hacker News\n   - 링크: https://github.com/ebanner/extipy\n\n24. **What the 'Panama Playlists' Exposed About Spotify User Privacy**\n   - 출처: Hacker News\n   - 링크: https://www.nytimes.com/2025/08/24/technology/spotify-panama-playlists-privacy.html\n\n25. **States target wealthy homeowners with new property taxes, sparking backlash**\n   - 출처: Hacker News\n   - 링크: https://seekingalpha.com/news/4490703-states-target-wealthy-homeowners-with-new-property-taxes-sparking-backlash\n\n26. **Device Can Read the Pages of a Book Without Opening It**\n   - 출처: Hacker News\n   - 링크: https://www.wbur.org/news/2016/09/13/read-a-book-without-opening-it\n\n27. **Big Tech Power Rankings – September 1, 2025**\n   - 출처: Hacker News\n   - 링크: https://www.powerrankings.tech/\n\n28. **Space investing goes mainstream as VCs ditch the rocket science requirements**\n   - 출처: Hacker News\n   - 링크: https://techcrunch.com/2025/09/01/space-investing-goes-mainstream-as-vcs-ditch-the-rocket-science-requirements/\n\n29. **All you need is Make**\n   - 출처: Hacker News\n   - 링크: https://github.com/avkcode/SRE/tree/main/vault\n\n30. **EU**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=45096708\n\n31. **Show HN: Restaurant AI Host, Always On**\n   - 출처: Hacker News\n   - 링크: https://heep.ai/\n\n32. **Nimony: Design Principles**\n   - 출처: Hacker News\n   - 링크: https://nim-lang.org/araq/nimony.html\n\n\n\n**분석 지침:**\n- 반드시 위에 명시된 마크다운 헤더 구조를 정확히 따르세요\n- 각 섹션은 2-3개 포인트로 제한\n- 구체적인 수치와 데이터 활용으로 신뢰성 확보\n\n**🌟 URL 컨텍스트 활용 지침:**\n- 제공된 URL의 내용을 적극적으로 활용하여 깊이 있는 분석을 제공하세요\n- 단순 요약이 아닌, 기사의 핵심 인사이트와 숨겨진 의미를 발굴하세요\n- 여러 기사 간의 연결점을 찾아 큰 그림을 그려주세요\n- 기술적 세부사항과 실제 영향력을 균형있게 다루세요\n\n**🎯 독자 재미 극대화 지침:**\n- 딱딱한 기술 뉴스를 생동감 있게 전달하세요\n- 적절한 비유와 실생활 예시로 복잡한 개념을 쉽게 설명하세요\n- 놀라운 사실이나 의외의 관점을 제시하여 호기심을 자극하세요\n- 스토리텔링 요소를 활용하여 뉴스를 하나의 이야기로 엮어주세요\n- 각 프리셋의 톤에 맞는 위트와 유머를 적절히 활용하세요\n\n**🚨 인용 검수 체크리스트:**\n1. 본문의 모든 사실, 수치, 기업명, 기술명에 [^숫자] 인용이 있는가?\n2. 문서 맨 끝에 모든 footnote 정의가 있고, 각각 클릭 가능한 URL을 포함하는가?\n3. [^1]: 기사제목 - https://링크 형식이 정확한가?\n4. 본문에서 언급한 모든 [^숫자]에 대응하는 footnote가 있는가?\n- 최종 제출 전 필수 검토: 위 체크리스트를 모두 확인하세요",
+  "articles": [
+    {
+      "title": "Apple Hebbal opens this Tuesday, September 2, in Bengaluru\n",
+      "link": "https://www.apple.com/newsroom/2025/08/apple-hebbal-opens-this-tuesday-september-2-in-bengaluru/",
+      "source": "Apple Newsroom",
+      "category": "tech",
+      "publishedAt": "2025-09-01T05:30:28.432Z",
+      "description": "Apple today previewed its newest store in India, Apple Hebbal, located in the technology capital of Bengaluru."
+    },
+    {
+      "title": "하나의 큰 서버를 사용하라 (2022)",
+      "link": "https://news.hada.io/topic?id=22849",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-02T01:34:58+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e분산 시스템\u003c/strong\u003e보다 하나의 대형 서버 활용이 소프트웨어 운영에 더 효율적인 상황이 많음\u003c/li\u003e\n\u003cli\u003e최신 \u003cstrong\u003e서버 하드웨어\u003c/strong\u003e는 성능과 메모리, I/O 측면에서 과거 슈퍼컴퓨터와 비교해도 뛰어난 능력 제공임\u003c/li\u003e\n\u003cli\u003e클라우드를 사용하면 \u003cstrong\u003e편의성과 가용성\u003c/strong\u003e이 높지...\u003c/p\u003e"
+    },
+    {
+      "title": "당신은 매니저를 바꿀 수 없습니다. 그러니 바꾸려 노력하지 마세요. [번역글]",
+      "link": "https://news.hada.io/topic?id=22848",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-02T00:29:56+09:00",
+      "description": "\u003ch2\u003e1. 매니저는 구조적으로 바꿀 수 없음\u003c/h2\u003e\n\u003cul\u003e\n\u003cli\u003e조직 내 권력 구조상 1%의 결정 순간엔 매니저의 선호가 우선함. 99%는 논리와 협상으로 풀리지만, 결정적 순간엔 매니저에 맞추게 됨.\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003e2. 비생산적 사고는 에너지만 낭비됨\u003c/h2\u003e\n\u003cul\u003e\n\u003cli\u003e“서로 타협해야 한다”, “성격에 문제 있으면 바꿔야 ...\u003c/p\u003e"
+    },
+    {
+      "title": "Ask GN: 라디오 사이트의 동작 원리는 어떻게 되나요?",
+      "link": "https://news.hada.io/topic?id=22847",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-01T17:12:30+09:00",
+      "description": "\u003cp\u003e제가 바이브 코딩으로 하기와 같이 라디오 재생 사이트를 만들었습니다.\u003c/p\u003e\n\u003cp\u003ehttps://worldwide-radio.vercel.app/\u003c/p\u003e\n\u003cp\u003e그런데,\u003cbr /\u003e\n해당 방송을 선택하면 음악이 재생되는 것도 있고\u003cbr /\u003e\n대부분이 재생이 되질 않습니다.\u003c/p\u003e\n\u003cp\u003e그래서 하기와 같은 사이트를 보면,\u003c/p\u003e\n\u003cp\u003ehttps://radioonline.kr/\u003c/p\u003e\n\u003cp"
+    },
+    {
+      "title": "Show GN: MothNote 폴더 기반 노트 시스템에 시계, 날씨, 달력 위젯을 더한 올인원 대시보드 구글 크롬 새 탭 확...",
+      "link": "https://news.hada.io/topic?id=22846",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-01T16:42:57+09:00",
+      "description": "\u003ch3\u003e🦋 MothNote\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ca href=\"https://raw.githubusercontent.com/lunamoth/MothNote/refs/heads/main/250901_MothNote_Note.png\"\u003eMothNote 노트 상세 페이지 스크린샷\u003c/a\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ca href=\"https://raw.githubusercontent.com/lunamoth/MothNote/refs/heads/main/250901_MothNote_Weather.pn"
+    },
+    {
+      "title": "왜 아직 양자컴퓨터는 21을 소인수분해하지 못했는가",
+      "link": "https://news.hada.io/topic?id=22845",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-01T16:34:08+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e2001년\u003c/strong\u003e에 양자컴퓨터로 15를 소인수분해한 이후 진전이 없는 것처럼 보이는 현상 설명\u003c/li\u003e\n\u003cli\u003e21을 소인수분해하는 회로에는 \u003cstrong\u003e15를 소인수분해할 때보다 100배 더 많은 얽힘 게이트\u003c/strong\u003e가 필요함\u003c/li\u003e\n\u003cli\u003e이 차이는 \u003cstrong\u003e조건부 모듈러 곱셈\u003c/strong\u003e의 복잡성과 15에만 적...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: 자주적인 블로그를 타겟으로 피드를 요약해주는 RSS",
+      "link": "https://news.hada.io/topic?id=22840",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-01T13:35:08+09:00",
+      "description": "\u003cp\u003e10년 넘게 RSS를 사용하면서 RSS의 부활을 희망하며 제작했습니다.\u003cbr /\u003e\n광고성 블로그가 아닌 자주적인 목소리를 내는 블로그를 타겟으로 하는 RSS 입니다.\u003c/p\u003e\n\u003cp\u003e제시하는 관점\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e모든 피드에 짧은, 긴 LLM 요약을 제공해서 빠르게 피드의 주제를 파악하고 읽어야 할 피드를 선택할 수 있게 도와줍니다"
+    },
+    {
+      "title": "기존에 만들었던 nginx webui 에 anubis 도 추가해보았습니다",
+      "link": "https://news.hada.io/topic?id=22839",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-01T13:24:45+09:00",
+      "description": "\u003cp\u003e예전에 만들었던 nginx webui 에다가 요즘 핫한 anubis 를 추가해보았습니다.\u003c/p\u003e\n\u003cp\u003e요즘 AI 때문에 크롤링이랑 봇이 많이 접속하는데 클라우드 플레어처럼 막고 싶은 니즈가 있으실거에요.\u003c/p\u003e\n\u003cp\u003e그래서 약간 클라우드 프론트 + 클라우드 플레어 처럼 컨셉을 잡고 계속 기능을 개선하고 있습니다. (추후 Cloud Fro"
+    },
+    {
+      "title": "Sosumi - 애플 개발자 문서를 AI가 읽을 수 있게 만들기",
+      "link": "https://news.hada.io/topic?id=22838",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-01T13:05:57+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eClaude 같은 LLM이 Swift 코드를 잘 못쓰는 이유는 \u003cstrong\u003e애플 개발자 문서가 JavaScript로 막혀서 읽지 못하기 때문\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e애플 개발자 문서 URL의 \u003ccode\u003edeveloper.apple.com\u003c/code\u003e 을 \u003ccode\u003esosumi.ai\u003c/code\u003e로 바꾸면 애플 개발자 문서를 \u003cstrong\u003eAI 친화적인 마크다운 포맷\u003c/strong\u003e으로 ...\u003c/p\u003e"
+    },
+    {
+      "title": "우리가 소유한 하드웨어에서 원하는 모든 코드를 실행할 수 있는 권한이 필요함",
+      "link": "https://news.hada.io/topic?id=22837",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-01T12:35:19+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e사이드로딩\u003c/strong\u003e(앱 직접 설치)에 대한 \u003cstrong\u003e논쟁\u003c/strong\u003e이 최근 Google의 Android 정책 변화로 다시 주목 받음\u003c/li\u003e\n\u003cli\u003e\u0026quot;하드웨어를 소유한 사용자가 어떤 코드든 실행할 수 있어야 한다\u0026quot;는 주장은 맞지만, 실제로는 소프트웨어 수준의 제약임\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eApple\u003c/strong\u003e...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: 바이브코딩으로 만든 \"모두의 메모\" 입니다.",
+      "link": "https://news.hada.io/topic?id=22836",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-01T12:10:26+09:00",
+      "description": "\u003cp\u003e바이브코딩으로 메모앱을 만들어봤습니다.\u003c/p\u003e\n\u003cp\u003eCursor 를 사용했고요. vercel로 배포하고, supabase를 연동했습니다.\u003c/p\u003e\n\u003cp\u003e기존의 메모앱은 개인화되어 있었다면 \u0026quot;모두의 메모\u0026quot;의 컨셉은\u003c/p\u003e\n\u003cp\u003e\u0026quot;누구나 쓸 수 있고,\u003cbr /\u003e\n누구나 볼 수 있고,\u003cbr /\u003e\n누구나 지울 수 있는 메모장\u0026quot;\u003c/p\u003e\n\u003cp\u003e입"
+    },
+    {
+      "title": "Gmail's protections are strong and effective, and claims of a major Gmail security warning are false.",
+      "link": "https://blog.google/products/workspace/gmail-security-protections/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-09-01T12:43:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/SocialShare_7.max-600x600.format-webp.webp\"\u003eGmail’s protections are strong and effective. Claims that we issued a warning to Gmail users about a major Gmail security issue are false."
+    },
+    {
+      "title": "GLM Coding Plan for Claude Code",
+      "link": "https://z.ai/subscribe",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-01T21:55:23Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://z.ai/subscribe\"\u003ehttps://z.ai/subscribe\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45096966\"\u003ehttps://news.ycombinator.com/item?id=45096966\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Don't Build Multi-Agents",
+      "link": "https://cognition.ai/blog/dont-build-multi-agents",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-01T21:54:56Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://cognition.ai/blog/dont-build-multi-agents\"\u003ehttps://cognition.ai/blog/dont-build-multi-agents\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45096962\"\u003ehttps://news.ycombinator.com/item?id=45096962\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 5\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Do conversations end when people want them to?",
+      "link": "https://www.experimental-history.com/p/do-conversations-end-when-people",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-01T21:46:43Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.experimental-history.com/p/do-conversations-end-when-people\"\u003ehttps://www.experimental-history.com/p/do-conversations-end-when-people\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45096913\"\u003ehttps://news.ycombinator.com/item?id=45096913\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Rented Robots Get the Worst Jobs and Help Factories Keep the Humans",
+      "link": "https://www.nytimes.com/2025/08/25/business/factories-robot-rentals.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-01T21:43:56Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nytimes.com/2025/08/25/business/factories-robot-rentals.html\"\u003ehttps://www.nytimes.com/2025/08/25/business/factories-robot-rentals.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45096895\"\u003ehttps://news.ycombinator.com/item?id=45096895\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: IndiePubStack – Open-source self-hosting Substack alternative for devs",
+      "link": "https://github.com/IndiePubStack/IndiePubStack",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-01T21:41:36Z",
+      "description": "\n\u003cp\u003eI've been using Substack for my tech blog and newsletter for a while.\u003cp\u003eAs a developer, I truly believe that sharing knowledge through a newsletter is one of the best ways to grow an audience — and eventually monetise your efforts.\u003cp\u003eSubstack is built for a general audience, not devs. I was missing code highlighting and minimalist design.\u003cp\u003eI wanted to build something dedicated for developers:\n- open-source, free to use, self-hosted\n- beautiful code highlighting\n- markdown-first writing\n- clean, minimalist design\n- dark mode support\u003cp\u003eI believe that an open-source model is a great way to build a product. IndiePubStack is:\n- fully open-source and free to use (MIT licence)\n- designed to be self-hosted (Docker image distribution)\n- built on top of reliable services (Kinde for auth, Resend for email delivery)\u003cp\u003eAll you need is an inexpensive VPS and a domain name, free Kinde and Resend accounts (that will be enough for a long time).\u003cp\u003eI'm already using IndiePubStack for my personal blog and newsletter.\u003cp\u003eThe future depends on the community feedback, if the open-source project gets some traction, the next logical step will be to build a SaaS platform on top of it.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45096885\"\u003ehttps://news.ycombinator.com/item?id=45096885\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "ShaderGlass lets you run GPU shaders over any window",
+      "link": "https://github.com/mausimus/ShaderGlass",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-01T21:40:14Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/mausimus/ShaderGlass\"\u003ehttps://github.com/mausimus/ShaderGlass\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45096876\"\u003ehttps://news.ycombinator.com/item?id=45096876\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Codefmt – a fast Markdown code block formatter",
+      "link": "https://github.com/1nwf/codefmt",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-01T21:40:11Z",
+      "description": "\n\u003cp\u003eI was recently looking for a markdown code block formatter, however, I was surprised that there were very little tools that do this.\u003cp\u003eSo, I've been recently working on `codefmt`, a markdown code block formatter that is optimized to be fast and extensible. Instead of spawning a child process to format each code block, it groups all code blocks by language and spawns one format child process for each language.\u003cp\u003eFeel free to contribute support for more languages.\u003cp\u003eRepo Link: \u003ca href=\"https://github.com/1nwf/codefmt\" rel=\"nofollow\"\u003ehttps://github.com/1nwf/codefmt\u003c/a\u003e\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45096875\"\u003ehttps://news.ycombinator.com/item?id=45096875\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Ultima Underworld Retrospective – Forging a New Era [video]",
+      "link": "https://www.youtube.com/watch?v=KegyZSGhVMg",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-01T21:39:54Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.youtube.com/watch?v=KegyZSGhVMg\"\u003ehttps://www.youtube.com/watch?v=KegyZSGhVMg\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45096872\"\u003ehttps://news.ycombinator.com/item?id=45096872\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: TypeScript boilerplate for scaling Claude Code beyond context limits",
+      "link": "https://github.com/shinpr/ai-coding-project-boilerplate",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-01T21:39:25Z",
+      "description": "\n\u003cp\u003eI kept hitting Claude Code's context limit around 200K tokens (auto-compact threshold) on complex projects, leaving me with half-finished implementations and no way forward.\u003cp\u003eSo I built a boilerplate that uses Claude's Sub-agents feature to distribute work across specialized agents. Each agent maintains its own context window for specific tasks—requirements analysis, design docs, TDD implementation, quality checks.\u003cp\u003eFor example, my MCP server project that previously hit the 200K token limit completed successfully, processing 770K tokens across agents.\u003cp\u003eGitHub: \u003ca href=\"https://github.com/shinpr/ai-coding-project-boilerplate\" rel=\"nofollow\"\u003ehttps://github.com/shinpr/ai-coding-project-boilerplate\u003c/a\u003e\u003cp\u003eThe approach is basically context engineering—giving each agent only the information it needs, when it needs it. Instead of dumping 40+ sections of rule files into one context, agents get 3-5 relevant sections dynamically selected.\u003cp\u003eWhat surprised me most was how effective \"meta-cognition\" was—an agent that pauses before actions to choose the right context. This small step prevented a lot of rework.\u003cp\u003eQuick start: `npx github:shinpr/ai-coding-project-boilerplate my-project`\u003cp\u003eMore details and metrics: \u003ca href=\"https://dev.to/shinpr/zero-context-exhaustion-building-production-ready-ai-coding-teams-with-claude-code-sub-agents-31b\" rel=\"nofollow\"\u003ehttps://dev.to/shinpr/zero-context-exhaustion-building-produ...\u003c/a\u003e\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45096865\"\u003ehttps://news.ycombinator.com/item?id=45096865\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: I made a clothes-fitter with nano-banana",
+      "link": "https://fitcheck.c3n.ro/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-01T21:33:28Z",
+      "description": "\n\u003cp\u003eInitially thought of monetizing somehow and jumping on the AI trend, in the end - didn't. It uses Gemini 2.5 Flash Image:free from OpenRouter and it was mostly vibecoded in Python.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45096821\"\u003ehttps://news.ycombinator.com/item?id=45096821\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "extipy – Debug your Python script with a Jupyter notebook",
+      "link": "https://github.com/ebanner/extipy",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-01T21:28:05Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/ebanner/extipy\"\u003ehttps://github.com/ebanner/extipy\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45096782\"\u003ehttps://news.ycombinator.com/item?id=45096782\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "What the 'Panama Playlists' Exposed About Spotify User Privacy",
+      "link": "https://www.nytimes.com/2025/08/24/technology/spotify-panama-playlists-privacy.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-01T21:25:47Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nytimes.com/2025/08/24/technology/spotify-panama-playlists-privacy.html\"\u003ehttps://www.nytimes.com/2025/08/24/technology/spotify-panama-playlists-privacy.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45096764\"\u003ehttps://news.ycombinator.com/item?id=45096764\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "States target wealthy homeowners with new property taxes, sparking backlash",
+      "link": "https://seekingalpha.com/news/4490703-states-target-wealthy-homeowners-with-new-property-taxes-sparking-backlash",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-01T21:24:01Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://seekingalpha.com/news/4490703-states-target-wealthy-homeowners-with-new-property-taxes-sparking-backlash\"\u003ehttps://seekingalpha.com/news/4490703-states-target-wealthy-homeowners-with-new-property-taxes-sparking-backlash\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45096745\"\u003ehttps://news.ycombinator.com/item?id=45096745\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 9\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Device Can Read the Pages of a Book Without Opening It",
+      "link": "https://www.wbur.org/news/2016/09/13/read-a-book-without-opening-it",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-01T21:21:28Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.wbur.org/news/2016/09/13/read-a-book-without-opening-it\"\u003ehttps://www.wbur.org/news/2016/09/13/read-a-book-without-opening-it\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45096730\"\u003ehttps://news.ycombinator.com/item?id=45096730\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Big Tech Power Rankings – September 1, 2025",
+      "link": "https://www.powerrankings.tech/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-01T21:21:28Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.powerrankings.tech/\"\u003ehttps://www.powerrankings.tech/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45096729\"\u003ehttps://news.ycombinator.com/item?id=45096729\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Space investing goes mainstream as VCs ditch the rocket science requirements",
+      "link": "https://techcrunch.com/2025/09/01/space-investing-goes-mainstream-as-vcs-ditch-the-rocket-science-requirements/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-01T21:20:56Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://techcrunch.com/2025/09/01/space-investing-goes-mainstream-as-vcs-ditch-the-rocket-science-requirements/\"\u003ehttps://techcrunch.com/2025/09/01/space-investing-goes-mainstream-as-vcs-ditch-the-rocket-science-requirements/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45096721\"\u003ehttps://news.ycombinator.com/item?id=45096721\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "All you need is Make",
+      "link": "https://github.com/avkcode/SRE/tree/main/vault",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-01T21:19:29Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/avkcode/SRE/tree/main/vault\"\u003ehttps://github.com/avkcode/SRE/tree/main/vault\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45096712\"\u003ehttps://news.ycombinator.com/item?id=45096712\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "EU",
+      "link": "https://news.ycombinator.com/item?id=45096708",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-01T21:18:44Z",
+      "description": "\n\u003cp\u003eotdaj\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45096708\"\u003ehttps://news.ycombinator.com/item?id=45096708\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Restaurant AI Host, Always On",
+      "link": "https://heep.ai/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-01T21:18:32Z",
+      "description": "\n\u003cp\u003eWe built Heep.ai to help restaurants automate guest conversations on WhatsApp, Instagram, Messenger, and voice.\u003cp\u003eIt connects to tools like 7Rooms and OpenTable, and handles bookings, FAQs, and calls, fully customized per venue.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45096705\"\u003ehttps://news.ycombinator.com/item?id=45096705\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Nimony: Design Principles",
+      "link": "https://nim-lang.org/araq/nimony.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-01T21:18:32Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://nim-lang.org/araq/nimony.html\"\u003ehttps://nim-lang.org/araq/nimony.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45096704\"\u003ehttps://news.ycombinator.com/item?id=45096704\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    }
+  ],
+  "generatedAt": "2025-09-02T07:08:14.962845313+09:00"
+}
