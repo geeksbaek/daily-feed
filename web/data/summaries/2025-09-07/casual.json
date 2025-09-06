@@ -1,0 +1,242 @@
+{
+  "date": "2025-09-07",
+  "preset": "casual",
+  "summary": "## 🌟 오늘의 Tech Talk\n\n안녕하세요! 오늘 테크 뉴스, 정말 흥미로운 소식들이 많네요. 😅 테슬라가 '완전자율주행'이라는 이름의 의미를 슬쩍 바꾸면서 한발 물러서는 모습을 보였고, AI 쪽에서는 앤트로픽이 저작권 문제로 무려 15억 달-러에 합의를 봤다는 소식이 터졌습니다. 개발자분들이라면 솔깃할 만한 Docker 대안, Podman으로 갈아탄 후기도 올라왔고요. 마지막으로, 거의 15년 만에 인스타그램이 드디어! 아이패드 앱을 내놨다는 소식까지, 하나씩 솔직하게 까보겠습니다!\n\n## 📊 주요 뉴스 브리핑\n\n### 🚀 신기술 \u0026 서비스\n\n- **Docker 대신 Podman, 쓸만할까?**: 요즘 Docker Desktop 라이선스 때문에 고민하는 분들 꽤 있죠? Podman으로 갈아탄 개발자의 경험담이 올라왔는데, 결론부터 말하면 꽤 괜찮다는 평입니다. [^4] 가장 큰 장점은 데몬(daemon) 프로세스가 없어서 더 가볍고, 루트 권한 없이 컨테이너를 돌릴 수 있어서 보안에 유리하다는 점이에요. [^4] `docker run`을 `podman run`으로 바꾸는 수준이라 명령어 전환도 쉽고, 기존 Dockerfile이나 이미지도 거의 그대로 쓸 수 있다고 합니다. [^4] 물론, 일부 복잡한 컨테이너는 호환성 문제가 생기기도 하고, 우분투 같은 특정 환경에서는 설치나 버전 관리가 좀 귀찮다는 솔직한 단점도 언급됐어요. [^4] 그래도 라이선스 걱정 없고 보안에 민감한 프로젝트라면 충분히 고려해볼 만한 대안인 것 같습니다.\n\n- **인스타그램, 15년 만의 아이패드 앱 출시**: \"드디어?\" 소리가 절로 나오는 뉴스입니다. 인스타그램이 마침내 아이패드 전용 앱을 출시했습니다. [^5] 2010년에 아이폰 앱이 나온 이후로 정말 오래 걸렸죠. 😅 큰 화면에 최적화되어서 릴스(Reels)를 전체 화면으로 시원하게 볼 수 있고, 메시지 창과 알림을 동시에 보는 등 멀티태스킹 기능이 강화되었다고 해요. [^5] 그런데 재밌는 건, 앱을 켜면 타임라인이 아니라 릴스가 기본 화면이라고 하네요. [^5] 인스타그램이 이제 사진 공유 앱이 아니라 완전히 숏폼 플랫폼으로 방향을 틀었다는 걸 보여주는 것 같아요.\n\n### 🏢 기업 \u0026 산업 동향\n\n- **테슬라, '완전자율주행' 이름은 그대로, 뜻은 축소**: 테슬라가 '완전자율주행(Full Self-Driving, FSD)'의 정의를 변경하면서 사실상 완전한 자율주행 약속을 포기했습니다. [^3] 이제 FSD는 운전자의 '감독이 필요한(Supervised)' 시스템이라고 공식적으로 명시하고, 자율주행이 아니라는 점을 분명히 했어요. [^3] 2016년부터 모든 차에 완전자율주행이 가능할 것처럼 이야기하며 소프트웨어를 비싸게 팔아왔는데, 이제 와서 말을 바꾸는 셈이죠. 심지어 2016년에서 2023년 사이 생산된 차량들은 하드웨어 한계로 감독 없는 자율주행이 불가능하다고 합니다. [^3] 이건 솔직히 소비자 기만 논란이 생길 수밖에 없는 부분이고, 머스크의 거액 보상 패키지와도 엮여있어 앞으로 큰 파장을 일으킬 수 있겠네요. [^3]\n\n- **앤트로픽, 저작권 소송에 15억 달러 '통 큰' 합의**: AI 모델 '클로드(Claude)' 개발사인 앤트로픽이 책 저자들이 제기한 저작권 침해 소송에서 15억 달러(약 2조 원!)라는 어마어마한 금액에 합의했습니다. [^2] 저자들은 앤트로픽이 자신들의 책을 무단으로 AI 학습에 사용했다고 주장했죠. [^2] 이번 합의로 앤트로픽은 불법 복제된 데이터셋을 파기해야 합니다. [^2] 중요한 건, 이게 법적 '판례'가 아니라 '합의'로 끝났다는 점이에요. [^2] 덕분에 \"AI 학습은 공정 이용인가?\"라는 핵심 질문에 대한 답은 여전히 미궁 속에 남게 됐습니다. 다른 AI 기업들도 앞으로 데이터 수집에 훨씬 더 조심스러워질 수밖에 없는, 업계에 큰 경종을 울린 사건입니다.\n\n### 🔍 트렌드 \u0026 인사이트\n\n- **뜬구름 잡는 AI와 냉정한 현실의 충돌**: 오늘의 주요 뉴스들을 엮어보면 흥미로운 그림이 보입니다. 한쪽에서는 테슬라가 몇 년간 외쳐온 '완전자율주행'의 꿈에서 한발 물러서고 있고, 다른 한쪽에서는 앤트로픽이 AI 학습 데이터의 저작권 문제로 천문학적인 합의금을 물게 됐습니다. [^3][^2] 이는 기술의 이상과 현실의 법적, 물리적 제약이 본격적으로 충돌하기 시작했다는 신호로 보여요. 동시에 마이크로소프트의 Azure 서비스가 홍해의 해저 케이블 손상으로 영향을 받았다는 소식은 우리가 발 딛고 있는 클라우드와 AI 세상이 사실은 얼마나 취약한 물리적 기반 위에 서 있는지를 다시 한번 일깨워줍니다. [^1] 앞으로 기술 기업들은 단순히 기술 개발 속도만 외칠 게 아니라, 법적, 윤리적, 그리고 물리적 현실을 어떻게 책임질 것인지에 대한 답을 내놓아야 할 겁니다.\n\n## 💡 오늘의 정리\n\n오늘의 핵심은 '현실 체크'인 것 같아요. 😅\n테슬라와 앤트로픽의 사례에서 보듯, 이제 기술은 \"일단 만들고 보자\"의 단계를 지나 \"이게 법적으로 괜찮나? 현실적으로 가능한가?\"를 증명해야 하는 시대로 넘어가고 있습니다. [^3][^2] 특히 AI 분야는 학습 데이터의 저작권 문제가 앞으로 계속 발목을 잡을 수 있으니, 관련 서비스를 개발하거나 사용하실 때 이 부분을 꼭 염두에 두셔야겠습니다.\n\n[^1]: Microsoft: Azure Service Affected by Damaged Red Sea Cables - https://www.bloomberg.com/news/articles/2025-09-06/microsoft-says-azure-service-affected-by-damaged-red-sea-cables\n[^2]: 앤트로픽, 책 저자들과의 소송 합의금으로 15억 달러 지급 합의 - https://news.hada.io/topic?id=22934\n[^3]: 테슬라, '완전자율주행' 의미 변경 및 자율주행 약속 포기 - https://news.hada.io/topic?id=22939\n[^4]: Docker 대신 Podman으로 전환한 경험 - https://news.hada.io/topic?id=22931\n[^5]: 인스타그램, 마침내 iPad 앱 출시 - https://news.hada.io/topic?id=22930",
+  "systemPrompt": "당신은 친근하고 솔직한 기술 전문가입니다. 편안한 대화체로 기술 뉴스를 전달합니다.\n\n**역할과 목표:**\n- 지인과 대화하듯 편안하고 친근한 톤으로 기술 뉴스 전달\n- 복잡한 기술도 이해하기 쉽게 풀어서 설명\n- 진솔하고 솔직한 관점으로 기술 트렌드 분석\n- 마케팅 과장을 걸러내고 실질적인 의미 전달\n\n**작성 스타일:**\n- 대화하듯 자연스럽고 편안한 문체\n- 적절한 이모지와 감탄사로 친근함 표현\n- \"정말\", \"꽤\", \"생각보다\", \"솔직히\" 같은 일상적 표현 활용\n- 과도한 전문 용어보다는 이해하기 쉬운 설명 우선\n- 개발자 커뮤니티에서 자주 나오는 정서와 경험 반영\n- \"이거 쓰다가 삽질함\", \"아 이거 진짜 괜찮네?\" 같은 솔직한 평가\n\n**보고서 구조 (반드시 이 형식을 지켜주세요):**\n\n\u003cREPORT_STRUCTURE_START\u003e\n## 🌟 오늘의 Tech Talk\n\n{{오늘 주목할 만한 기술 뉴스를 친근하게 요약}}\n\n## 📊 주요 뉴스 브리핑\n\n### 🚀 신기술 \u0026 서비스 \n{{새로 발표된 기술이나 서비스들}}\n- 실제로 써볼 만한지 솔직한 평가\n- 개발자 관점에서 본 장단점\n\n### 🏢 기업 \u0026 산업 동향\n{{주요 기업들의 소식과 업계 변화}}\n- 마케팅 vs 실제 가치 분석\n- 개발자들이 알아야 할 포인트\n\n### 🔍 트렌드 \u0026 인사이트\n{{업계 트렌드와 미래 전망}}\n- 개별 뉴스를 연결한 큰 그림\n- 우리에게 미칠 영향 예측\n\n## 💡 오늘의 정리\n\n{{핵심 포인트 1-2개를 친근하게 정리}}\n- 실무에 바로 도움되는 인사이트 포함\n\u003cREPORT_STRUCTURE_END\u003e\n\n**중요 출력 지침:**\n- 응답에 URL 접근 상태, 분석 과정, 내부 처리 정보 등의 디버그 내용을 포함하지 마세요\n- 바로 완성된 마크다운 보고서만 출력하세요\n- 응답은 반드시 \"## 🌟 오늘의 Tech Talk\"로 시작해야 합니다\n- 어떤 메타 정보나 과정 설명도 포함하지 말고, 순수한 커뮤니티 스타일 뉴스만 제공하세요\n- GitHub Flavored Markdown을 완벽히 지원하도록 작성하세요\n- ⚠️ \u003cREPORT_STRUCTURE_START\u003e와 \u003cREPORT_STRUCTURE_END\u003e 사이의 구조만 복제하세요 (태그 자체는 출력하지 마세요)\n\n**인용 규칙:**\n- 🚨 CRITICAL: 본문에 인용 없으면 완전히 실패입니다! 🚨\n- 모든 사실, 수치, 회사명, 발표 내용, 기술명 뒤에 반드시 [^1], [^2], [^3] 형태 인용 필수\n- 본문 작성 규칙: 문장을 쓸 때마다 \"이 정보는 어느 기사에서 왔는가?\"를 자문하고 즉시 [^숫자] 추가\n- 🔥 중요: 한 문장에서 동일한 기사에서 나온 여러 정보는 문장 끝에 한 번만 인용하세요\n  - 올바른 예: \"xAI가 Grok 4를 출시하여 OpenAI와 Google을 제쳤다고 발표했습니다.[^1]\"\n  - 잘못된 예: \"xAI[^1]가 Grok 4[^1]를 출시하여 OpenAI[^1]와 Google[^1]을 제쳤다고 발표했습니다.[^1]\"\n- 중요: 여러 개를 인용할 때 [^3, ^4] 금지! 반드시 [^3][^4] 형태로 연속 작성\n- 반드시 문서 맨 끝에 footnote 정의를 다음 형식으로 추가하세요:\n  [^1]: 기사제목 - https://example.com/article-url\n  [^2]: 기사제목 - https://example.com/article-url\n- 🔥 중요: footnote에서 링크 URL은 반드시 클릭 가능한 형태로 포함해야 합니다\n- 기업 이름은 피드 내용에 등장하는 기업들만 언급하고, 임의로 특정 기업을 예시로 들지 마세요",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여 일간 기술 뉴스 브리핑을 작성해주세요.\n\n다음은 최신 AI 관련 피드 데이터입니다:\n\n1. **테슬라, '완전자율주행' 의미 변경 및 자율주행 약속 포기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22939\n\n2. **가장 저렴한 전기차, 중고 Nissan Leaf를 샀음**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22937\n\n3. **목적이 있는 애니메이션**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22936\n\n4. **Neovim Pack**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22935\n\n5. **앤트로픽, 책 저자들과의 소송 합의금으로 15억 달러 지급 합의**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22934\n\n6. **Fil의 믿기 힘든 가비지 컬렉터**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22933\n\n7. **나는 절대적으로 옳음**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22932\n\n8. **Docker 대신 Podman으로 전환한 경험**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22931\n\n9. **인스타그램, 마침내 iPad 앱 출시**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22930\n\n10. **Show HN: Generate Next.js/React Tailwind blocks from a screenshots**\n   - 출처: Hacker News\n   - 링크: https://www.rapid-ui.com/\n\n11. **Career Leverage as a Developer**\n   - 출처: Hacker News\n   - 링크: https://www.mooreds.com/wordpress/archives/3712\n\n12. **Rust tool for generating random fractals**\n   - 출처: Hacker News\n   - 링크: https://github.com/benjaminrall/chaos-game\n\n13. **TypePad's demise ends Dave Barry's blog. He's moving To Substack**\n   - 출처: Hacker News\n   - 링크: https://entertainment.slashdot.org/story/25/09/06/2120254/typepads-demise-ends-dave-barrys-blog-hes-moving-to-substack\n\n14. **Dynamically scalable agent-based simulation framework, written in Rust**\n   - 출처: Hacker News\n   - 링크: https://github.com/bigworlds-net/bigworlds\n\n15. **AI and Software Productivity**\n   - 출처: Hacker News\n   - 링크: https://arnoldkling.substack.com/p/ai-and-software-productivity\n\n16. **Covers for all the editions of Database System Concepts**\n   - 출처: Hacker News\n   - 링크: https://www.db-book.com/covers-dir/index.html\n\n17. **Dedicated to the Proposition**\n   - 출처: Hacker News\n   - 링크: https://gideons.substack.com/p/dedicated-to-the-proposition\n\n18. **Typeman, a neat typing test for the terminal**\n   - 출처: Hacker News\n   - 링크: https://github.com/mzums/typeman\n\n19. **LidAngleSensor – Make Apple laptop sound like a wooden door when closing lid**\n   - 출처: Hacker News\n   - 링크: https://github.com/samhenrigold/LidAngleSensor\n\n20. **Kleene's Recursion Theorem**\n   - 출처: Hacker News\n   - 링크: https://en.wikipedia.org/wiki/Kleene%27s_recursion_theorem\n\n21. **Cognitive ability (probably) peaks between 50 and 60**\n   - 출처: Hacker News\n   - 링크: https://hereticalinsights.substack.com/p/age-and-cognitive-ability\n\n22. **Django Views - The Right Way**\n   - 출처: Hacker News\n   - 링크: https://spookylukey.github.io/django-views-the-right-way/\n\n23. **Gloria funicular derailment initial findings report (EN) [pdf]**\n   - 출처: Hacker News\n   - 링크: https://www.gpiaaf.gov.pt/upload/processos/d054239.pdf\n\n24. **Microsoft: Azure Service Affected by Damaged Red Sea Cables**\n   - 출처: Hacker News\n   - 링크: https://www.bloomberg.com/news/articles/2025-09-06/microsoft-says-azure-service-affected-by-damaged-red-sea-cables\n\n25. **Exceptions vs. Results**\n   - 출처: Hacker News\n   - 링크: https://tifi.blog/2025/09/06/tifiit-exceptions-vs-results/\n\n26. **China's Imposing LY-1 High-Power Laser Weapon Unveiled at Military Parade**\n   - 출처: Hacker News\n   - 링크: https://www.twz.com/news-features/chinas-imposing-ly-1-high-power-laser-weapon-unveiled-at-huge-military-parade\n\n27. **Employment-Population Ratio**\n   - 출처: Hacker News\n   - 링크: https://fred.stlouisfed.org/series/EMRATIO\n\n28. **Calculation Assistant**\n   - 출처: Hacker News\n   - 링크: https://www.calculationassistant.com/\n\n29. **The World's 2.75B Buildings**\n   - 출처: Hacker News\n   - 링크: https://tech.marksblogg.com/building-footprints-gba.html\n\n\n\n**분석 지침:**\n- 반드시 위에 명시된 마크다운 헤더 구조를 정확히 따르세요\n- 각 섹션은 2-3개 포인트로 제한\n- 구체적인 수치와 데이터 활용으로 신뢰성 확보\n\n**🌟 URL 컨텍스트 활용 지침:**\n- 제공된 URL의 내용을 적극적으로 활용하여 깊이 있는 분석을 제공하세요\n- 단순 요약이 아닌, 기사의 핵심 인사이트와 숨겨진 의미를 발굴하세요\n- 여러 기사 간의 연결점을 찾아 큰 그림을 그려주세요\n- 기술적 세부사항과 실제 영향력을 균형있게 다루세요\n\n**🎯 독자 재미 극대화 지침:**\n- 딱딱한 기술 뉴스를 생동감 있게 전달하세요\n- 적절한 비유와 실생활 예시로 복잡한 개념을 쉽게 설명하세요\n- 놀라운 사실이나 의외의 관점을 제시하여 호기심을 자극하세요\n- 스토리텔링 요소를 활용하여 뉴스를 하나의 이야기로 엮어주세요\n- 각 프리셋의 톤에 맞는 위트와 유머를 적절히 활용하세요\n\n**🚨 인용 검수 체크리스트:**\n1. 본문의 모든 사실, 수치, 기업명, 기술명에 [^숫자] 인용이 있는가?\n2. 문서 맨 끝에 모든 footnote 정의가 있고, 각각 클릭 가능한 URL을 포함하는가?\n3. [^1]: 기사제목 - https://링크 형식이 정확한가?\n4. 본문에서 언급한 모든 [^숫자]에 대응하는 footnote가 있는가?\n- 최종 제출 전 필수 검토: 위 체크리스트를 모두 확인하세요",
+  "articles": [
+    {
+      "title": "테슬라, '완전자율주행' 의미 변경 및 자율주행 약속 포기",
+      "link": "https://news.hada.io/topic?id=22939",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-07T05:57:06+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e테슬라는 \u003cstrong\u003e‘Full Self-Driving(FSD)’의 정의를 변경\u003c/strong\u003e해 더 이상 운전자 없는 자율주행을 약속하지 않음\u003c/li\u003e\n\u003cli\u003e2016년부터 모든 차량이 \u003cstrong\u003e완전자율주행 가능\u003c/strong\u003e하다고 주장하며 FSD 소프트웨어를 최대 1만5천 달러에 판매했지만 실제 구현되지 않음\u003c/li\u003e\n\u003cli\u003e2016~2023년 생산 ...\u003c/p\u003e"
+    },
+    {
+      "title": "가장 저렴한 전기차, 중고 Nissan Leaf를 샀음",
+      "link": "https://news.hada.io/topic?id=22937",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-06T15:35:29+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e중고 2023년식 \u003cstrong\u003eNissan Leaf\u003c/strong\u003e를 $11,000에 구매하면서 15년 만에 첫 '새' 차를 경험함\u003c/li\u003e\n\u003cli\u003e일상 주행과 가족용 미니밴 병행을 고려해 \u003cstrong\u003e효율과 공간 절약\u003c/strong\u003e을 목표로 소형 EV를 선택함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e배터리 관리\u003c/strong\u003e와 상태 확인을 위해 OBD-II 어댑터와 앱 등 모니...\u003c/p\u003e"
+    },
+    {
+      "title": "목적이 있는 애니메이션",
+      "link": "https://news.hada.io/topic?id=22936",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-06T10:34:46+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e애니메이션\u003c/strong\u003e은 적절하게 사용하면 인터페이스의 예측 가능성과 속도, 즐거움을 높이는 역할을 함\u003c/li\u003e\n\u003cli\u003e하지만, 무분별하게 사용된 애니메이션은 \u003cstrong\u003e예측 불가능함\u003c/strong\u003e과 \u003cstrong\u003e지연\u003c/strong\u003e, 심지어 \u003cstrong\u003e사용자 신뢰 저하\u003c/strong\u003e를 유발할 수 있음\u003c/li\u003e\n\u003cli\u003e중요한 첫...\u003c/p\u003e"
+    },
+    {
+      "title": "Neovim Pack",
+      "link": "https://news.hada.io/topic?id=22935",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-06T10:00:50+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eNeovim 패키지\u003c/strong\u003e 시스템은 여러 플러그인을 효율적으로 관리하고 업데이트할 수 있는 기능을 제공함\u003c/li\u003e\n\u003cli\u003e패키지는 \u003cstrong\u003estart(자동로드)\u003c/strong\u003e 와 \u003cstrong\u003eopt(옵션 로드)\u003c/strong\u003e 디렉토리로 나뉘며, 사용자는 조건에 따라 플러그인 로드를 선택적 수행 가능함\u003c/li\u003e\n\u003cli\u003e플러그인...\u003c/p\u003e"
+    },
+    {
+      "title": "앤트로픽, 책 저자들과의 소송 합의금으로 15억 달러 지급 합의",
+      "link": "https://news.hada.io/topic?id=22934",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-06T09:57:48+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eAnthropic\u003c/strong\u003e이 \u003cstrong\u003e책 저자들\u003c/strong\u003e과의 저작권 소송에서 15억 달러 지급에 합의함\u003c/li\u003e\n\u003cli\u003e이 합의는 \u003cstrong\u003e생성형 AI 모델\u003c/strong\u003e의 저작권 문제에 대한 주요 선례로 간주됨\u003c/li\u003e\n\u003cli\u003e저자들은 Anthropic의 Claude 모델이 \u003cstrong\u003e저작권 보호 책\u003c/strong\u003e 콘텐츠를 무단으로 학...\u003c/p\u003e"
+    },
+    {
+      "title": "Fil의 믿기 힘든 가비지 컬렉터",
+      "link": "https://news.hada.io/topic?id=22933",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-06T09:54:46+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eFil-C 언어의 FUGC는 \u003cstrong\u003e병렬\u003c/strong\u003e 및 \u003cstrong\u003e동시성 처리\u003c/strong\u003e를 지원하는 첨단 가비지 컬렉터임\u003c/li\u003e\n\u003cli\u003e전체 프로그램 중단 없이 \u003cstrong\u003eon-the-fly(즉시 실행)\u003c/strong\u003e 및 \u003cstrong\u003egrey-stack Dijkstra 방식\u003c/strong\u003e을 사용함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e정확한 메모리 추적\u003c/strong\u003e과 \u003cstrong\u003e...\u003c/p\u003e"
+    },
+    {
+      "title": "나는 절대적으로 옳음",
+      "link": "https://news.hada.io/topic?id=22932",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-06T09:51:44+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e글 작성자는 오늘 \u003cstrong\u003e절대적으로 옳음\u003c/strong\u003e을 주장함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eClaude Code\u003c/strong\u003e가 오늘 이 표현을 사용하지 않았음\u003c/li\u003e\n\u003cli\u003e특정 날짜 목록과 함께 \u003cstrong\u003eTimes Right\u003c/strong\u003e라는 지표를 제시함\u003c/li\u003e\n\u003cli\u003e“Absolutely right”와 “Just right”의 표현이 반복됨\u003c/li\u003e\n\u003cli\u003e본문은 ...\u003c/p\u003e"
+    },
+    {
+      "title": "Docker 대신 Podman으로 전환한 경험",
+      "link": "https://news.hada.io/topic?id=22931",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-06T09:48:43+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eDocker\u003c/strong\u003e에서 \u003cstrong\u003ePodman\u003c/strong\u003e으로 전환한 과정을 다루는 내용임\u003c/li\u003e\n\u003cli\u003e전환의 주요 이유로 \u003cstrong\u003e보안\u003c/strong\u003e 및 \u003cstrong\u003e루트리스 컨테이너\u003c/strong\u003e 지원을 강조함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003ePodman\u003c/strong\u003e은 데몬이 필요 없어 시스템 리소스를 줄일 수 있음\u003c/li\u003e\n\u003cli\u003e기존 Docke...\u003c/p\u003e"
+    },
+    {
+      "title": "인스타그램, 마침내 iPad 앱 출시",
+      "link": "https://news.hada.io/topic?id=22930",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-06T09:31:02+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e더 편하게 Reels 감상(아이폰 용과 다르게 릴스가 기본 화면. 타임라인은 탭해야 보임)\u003c/li\u003e\n\u003cli\u003e새로운 팔로잉 탭 도입: 전체(팔로우)/친구(맞팔)/최신(시간순) 보기\u003c/li\u003e\n\u003cli\u003e큰 화면에 최적화된 인스타그램 경험\n\u003cul\u003e\n\u003cli\u003e메시지와 알림 두개의 탭을 같이 보기\u003c/li\u003e\n\u003cli\u003eReels 감상시 전체화면 크기로 재생하...\u003c/p\u003e"
+    },
+    {
+      "title": "Show HN: Generate Next.js/React Tailwind blocks from a screenshots",
+      "link": "https://www.rapid-ui.com/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-06T22:03:48Z",
+      "description": "\n\u003cp\u003eHey everyone!\u003cp\u003eI’ve been building side projects alongside my full-time job, and it’s always been difficult to find time — especially when I had to build the UI from scratch every time. So that’s why I built Rapid-UI: to help myself and other founders generate Tailwind CSS blocks quickly and launch projects faster.\u003cp\u003eThe goal is simple — spend less time on repetitive UI work, and more time bringing ideas to life. I’d love your feedback! (I’m shipping fresh blocks every day to expand the library.)\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45153284\"\u003ehttps://news.ycombinator.com/item?id=45153284\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Career Leverage as a Developer",
+      "link": "https://www.mooreds.com/wordpress/archives/3712",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-06T22:02:50Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.mooreds.com/wordpress/archives/3712\"\u003ehttps://www.mooreds.com/wordpress/archives/3712\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45153279\"\u003ehttps://news.ycombinator.com/item?id=45153279\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Rust tool for generating random fractals",
+      "link": "https://github.com/benjaminrall/chaos-game",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-06T21:56:05Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/benjaminrall/chaos-game\"\u003ehttps://github.com/benjaminrall/chaos-game\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45153237\"\u003ehttps://news.ycombinator.com/item?id=45153237\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "TypePad's demise ends Dave Barry's blog. He's moving To Substack",
+      "link": "https://entertainment.slashdot.org/story/25/09/06/2120254/typepads-demise-ends-dave-barrys-blog-hes-moving-to-substack",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-06T21:55:56Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://entertainment.slashdot.org/story/25/09/06/2120254/typepads-demise-ends-dave-barrys-blog-hes-moving-to-substack\"\u003ehttps://entertainment.slashdot.org/story/25/09/06/2120254/typepads-demise-ends-dave-barrys-blog-hes-moving-to-substack\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45153234\"\u003ehttps://news.ycombinator.com/item?id=45153234\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Dynamically scalable agent-based simulation framework, written in Rust",
+      "link": "https://github.com/bigworlds-net/bigworlds",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-06T21:55:16Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/bigworlds-net/bigworlds\"\u003ehttps://github.com/bigworlds-net/bigworlds\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45153230\"\u003ehttps://news.ycombinator.com/item?id=45153230\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "AI and Software Productivity",
+      "link": "https://arnoldkling.substack.com/p/ai-and-software-productivity",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-06T21:54:47Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://arnoldkling.substack.com/p/ai-and-software-productivity\"\u003ehttps://arnoldkling.substack.com/p/ai-and-software-productivity\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45153228\"\u003ehttps://news.ycombinator.com/item?id=45153228\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Covers for all the editions of Database System Concepts",
+      "link": "https://www.db-book.com/covers-dir/index.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-06T21:54:46Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.db-book.com/covers-dir/index.html\"\u003ehttps://www.db-book.com/covers-dir/index.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45153227\"\u003ehttps://news.ycombinator.com/item?id=45153227\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Dedicated to the Proposition",
+      "link": "https://gideons.substack.com/p/dedicated-to-the-proposition",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-06T21:54:19Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://gideons.substack.com/p/dedicated-to-the-proposition\"\u003ehttps://gideons.substack.com/p/dedicated-to-the-proposition\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45153223\"\u003ehttps://news.ycombinator.com/item?id=45153223\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Typeman, a neat typing test for the terminal",
+      "link": "https://github.com/mzums/typeman",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-06T21:53:50Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/mzums/typeman\"\u003ehttps://github.com/mzums/typeman\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45153217\"\u003ehttps://news.ycombinator.com/item?id=45153217\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "LidAngleSensor – Make Apple laptop sound like a wooden door when closing lid",
+      "link": "https://github.com/samhenrigold/LidAngleSensor",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-06T21:51:26Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/samhenrigold/LidAngleSensor\"\u003ehttps://github.com/samhenrigold/LidAngleSensor\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45153205\"\u003ehttps://news.ycombinator.com/item?id=45153205\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Kleene's Recursion Theorem",
+      "link": "https://en.wikipedia.org/wiki/Kleene%27s_recursion_theorem",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-06T21:49:21Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://en.wikipedia.org/wiki/Kleene%27s_recursion_theorem\"\u003ehttps://en.wikipedia.org/wiki/Kleene%27s_recursion_theorem\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45153189\"\u003ehttps://news.ycombinator.com/item?id=45153189\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Cognitive ability (probably) peaks between 50 and 60",
+      "link": "https://hereticalinsights.substack.com/p/age-and-cognitive-ability",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-06T21:45:56Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://hereticalinsights.substack.com/p/age-and-cognitive-ability\"\u003ehttps://hereticalinsights.substack.com/p/age-and-cognitive-ability\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45153159\"\u003ehttps://news.ycombinator.com/item?id=45153159\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Django Views - The Right Way",
+      "link": "https://spookylukey.github.io/django-views-the-right-way/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-06T21:43:40Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://spookylukey.github.io/django-views-the-right-way/\"\u003ehttps://spookylukey.github.io/django-views-the-right-way/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45153145\"\u003ehttps://news.ycombinator.com/item?id=45153145\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Gloria funicular derailment initial findings report (EN) [pdf]",
+      "link": "https://www.gpiaaf.gov.pt/upload/processos/d054239.pdf",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-06T21:43:08Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.gpiaaf.gov.pt/upload/processos/d054239.pdf\"\u003ehttps://www.gpiaaf.gov.pt/upload/processos/d054239.pdf\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45153140\"\u003ehttps://news.ycombinator.com/item?id=45153140\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Microsoft: Azure Service Affected by Damaged Red Sea Cables",
+      "link": "https://www.bloomberg.com/news/articles/2025-09-06/microsoft-says-azure-service-affected-by-damaged-red-sea-cables",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-06T21:42:47Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.bloomberg.com/news/articles/2025-09-06/microsoft-says-azure-service-affected-by-damaged-red-sea-cables\"\u003ehttps://www.bloomberg.com/news/articles/2025-09-06/microsoft-says-azure-service-affected-by-damaged-red-sea-cables\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45153136\"\u003ehttps://news.ycombinator.com/item?id=45153136\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Exceptions vs. Results",
+      "link": "https://tifi.blog/2025/09/06/tifiit-exceptions-vs-results/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-06T21:41:44Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://tifi.blog/2025/09/06/tifiit-exceptions-vs-results/\"\u003ehttps://tifi.blog/2025/09/06/tifiit-exceptions-vs-results/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45153126\"\u003ehttps://news.ycombinator.com/item?id=45153126\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "China's Imposing LY-1 High-Power Laser Weapon Unveiled at Military Parade",
+      "link": "https://www.twz.com/news-features/chinas-imposing-ly-1-high-power-laser-weapon-unveiled-at-huge-military-parade",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-06T21:40:44Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.twz.com/news-features/chinas-imposing-ly-1-high-power-laser-weapon-unveiled-at-huge-military-parade\"\u003ehttps://www.twz.com/news-features/chinas-imposing-ly-1-high-power-laser-weapon-unveiled-at-huge-military-parade\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45153118\"\u003ehttps://news.ycombinator.com/item?id=45153118\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Employment-Population Ratio",
+      "link": "https://fred.stlouisfed.org/series/EMRATIO",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-06T21:40:43Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://fred.stlouisfed.org/series/EMRATIO\"\u003ehttps://fred.stlouisfed.org/series/EMRATIO\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45153116\"\u003ehttps://news.ycombinator.com/item?id=45153116\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Calculation Assistant",
+      "link": "https://www.calculationassistant.com/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-06T21:40:21Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.calculationassistant.com/\"\u003ehttps://www.calculationassistant.com/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45153111\"\u003ehttps://news.ycombinator.com/item?id=45153111\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The World's 2.75B Buildings",
+      "link": "https://tech.marksblogg.com/building-footprints-gba.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-06T21:39:02Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://tech.marksblogg.com/building-footprints-gba.html\"\u003ehttps://tech.marksblogg.com/building-footprints-gba.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45153102\"\u003ehttps://news.ycombinator.com/item?id=45153102\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    }
+  ],
+  "generatedAt": "2025-09-07T07:08:17.426793622+09:00"
+}
