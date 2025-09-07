@@ -1,0 +1,250 @@
+{
+  "date": "2025-09-08",
+  "preset": "casual",
+  "summary": "## 🌟 오늘의 Tech Talk\n\n안녕하세요! 오늘 기술 뉴스 판을 보니, 정말 흥미로운 일들이 많네요. 특히 AI 쪽은 하루가 다르게 뜨거운데, 사용자들은 이제 마냥 박수만 치진 않는 것 같아요. GitHub Copilot [^10] 강제 기능 때문에 개발자들이 \"제발 그만!\"을 외치고 있고, OpenAI 스스로도 \"우리 모델이 왜 헛소리를 하는지\"에 대해 진지하게 고민하고 있거든요. [^2] 한쪽에서는 엄청난 기술 발전이, 다른 한쪽에서는 \"이거 정말 괜찮은 거 맞아?\" 하는 현실적인 목소리가 터져 나오는, 딱 그런 분위기입니다. 기술의 명과 암을 제대로 짚어보는 하루가 될 것 같네요!\n\n## 📊 주요 뉴스 브리핑\n\n### 🚀 신기술 \u0026 서비스\n\n- **\"ML을 위한 새로운 언어가 필요해!\"**: 무려 Swift 언어의 창시자이자 머신러닝 분야의 구루, Chris Lattner가 인터뷰에서 작심 발언을 했어요. [^7] 현재 ML 개발이 너무 복잡하고 파편화되어 있어서, 이걸 통합할 새로운 프로그래밍 언어가 절실하다는 거죠. 솔직히 맨날 Python 라이브러리 버전 맞추느라 고생하는 걸 생각하면, \"아, 이거 진짜 필요한데?\" 싶더라고요. 물론 새로운 언어를 또 배워야 한다는 게 함정이지만요. [^7]\n- **Rust와 Python, 이제 데이터 막 공유 가능?**: Rust의 성능과 Python의 편리함, 둘 다 포기 못 하는 분들께 희소식입니다. PyO3를 써서 둘 사이의 가변 데이터를 공유하는 기법이 소개됐어요. [^5] 이게 생각보다 까다로워서 맨날 데이터 복사하느라 성능 손해를 봤는데, 이젠 그럴 필요가 줄어들겠네요. 실제 프로젝트에 적용해볼 만한 꽤 실용적인 팁이에요.\n- **내 손글씨로 나만의 폰트 만들기**: 코딩만 하다 보면 가끔 아날로그 감성이 그리울 때가 있죠. 내 손글씨를 그대로 폰트로 만들어주는 서비스가 등장했어요. [^8] 개발자 블로그나 포트폴리오에 개성을 더하고 싶을 때 써보면 정말 재밌을 것 같아요. 물론 제 악필이 공개되는 건 좀 두렵지만요. 😂\n\n### 🏢 기업 \u0026 산업 동향\n\n- **GitHub Copilot, 선 넘었다?**: GitHub이 Copilot의 새로운 기능을 강제로 활성화하면서 개발자 커뮤니티가 폭발 직전입니다. [^10] \"도와주는 건 고마운데, 원치 않을 때도 불쑥 튀어나오는 건 참을 수 없다\"는 반응이 대부분이에요. 개발 효율을 높이려는 시도였겠지만, 개발자의 작업 흐름을 존중하지 않는다는 비판을 피하기 어려워 보이네요.\n- **구글, 광고 기술 남용으로 또 거액 벌금**: 유럽연합 집행위원회가 구글에 29억 5,000만 유로라는 어마어마한 벌금을 부과했습니다. [^9] 광고 기술 시장에서 지배적 지위를 남용했다는 건데, 이건 뭐 거의 연례행사 같네요. IT 공룡들의 독점 문제는 앞으로도 계속해서 뜨거운 감자가 될 것 같습니다.\n- **버거킹 드라이브 스루, 해킹에 무방비 노출**: 보안 연구원들이 버거킹 시스템의 인증 절차를 우회해서 드라이브 스루에서 오가는 오디오를 감시하는 데 성공했어요. [^6] 사소해 보이지만, 우리 주변의 IoT 기기들이 얼마나 취약할 수 있는지 보여주는 정말 소름 돋는 사례입니다. 역시 기본 보안이 제일 중요하다는 걸 다시 한번 깨닫게 되네요.\n\n### 🔍 트렌드 \u0026 인사이트\n\n- **LLM의 '환각', 과연 해결될까?**: OpenAI가 직접 언어 모델이 왜 환각, 즉 그럴듯한 거짓말을 만들어내는지에 대한 분석을 내놨어요. [^2] 정말 복잡한 문제라 단번에 해결하긴 어렵다고 사실상 인정하는 분위기인데요. 때마침 GPT-5가 다른 AI 모델보다 지리적 위치를 추정하는 능력에서 더 낮은 성능을 보였다는 분석까지 나왔습니다. [^26] 모델이 커진다고 무조건 똑똑해지는 건 아니라는 거죠. AI의 신뢰성 문제는 앞으로 몇 년간 계속해서 우리를 괴롭힐(?) 주요 과제가 될 것 같습니다.\n- **보안의 기본은 사람, 북한 해킹 수법 공개**: 북한의 해킹 그룹이 어떻게 사람들을 속여 계정 정보를 훔치는지 그 수법이 공개됐어요. [^4] 기술이 아무리 발전해도 결국 가장 약한 고리는 '사람'이라는 걸 보여줍니다. 피싱 메일이나 수상한 링크는 정말 조심 또 조심해야 해요.\n\n## 💡 오늘의 정리\n\n오늘의 핵심은 \"AI, 기대는 하되 맹신은 금물!\"인 것 같아요. GitHub Copilot 사례처럼 [^10] 아무리 좋은 기술도 사용자를 불편하게 만들면 외면받기 쉽고, GPT-5 성능 이슈처럼 [^26] 최신 모델이라고 모든 걸 다 잘하는 건 아니라는 걸 기억해야 합니다. 우리 개발자들은 화려한 신기술에 혹하기보다, 지금 내 손안의 코드를 더 안정적이고 효율적으로 만드는 기본에 충실하는 게 역시 최고인 것 같습니다!\n\n[^2]: 왜 언어 모델은 환각을 발생시킬까? by OpenAI - https://news.hada.io/topic?id=22952\n[^3]: Show GN: 한국 주식 투자를 위한 오픈소스 분석 도구, Cluefin - https://news.hada.io/topic?id=22951\n[^4]: 북한의 크리덴셜 탈취 수법이 'Kim' 덤프를 통해 드러난 방법 - https://news.hada.io/topic?id=22950\n[^5]: PyO3를 이용한 Rust와 Python의 가변 데이터 공유 기법 - https://news.hada.io/topic?id=22949\n[^6]: 버거킹 해킹: 인증 우회로 드라이브 스루 오디오 감시 성공 - https://news.hada.io/topic?id=22948\n[^7]: 머신러닝에는 새로운 프로그래밍 언어가 필요함 – Chris Lattner 인터뷰 - https://news.hada.io/topic?id=22947\n[^8]: 내 손글씨로 폰트 만들기 - https://news.hada.io/topic?id=22946\n[^9]: 유럽연합 집행위원회, 구글에 29억 5,000만 유로 벌금 부과 – 광고 기술 남용 관련 - https://news.hada.io/topic?id=22945\n[^10]: GitHub Copilot 강제 기능에 분노한 사용자들, \"이제 그만 없애자\" 요구 - https://news.hada.io/topic?id=22944\n[^26]: LLMs vs. Geolocation: GPT-5 Performs Worse Than Other AI Models - https://www.bellingcat.com/resources/2025/08/14/llms-vs-geolocation-gpt-5-performs-worse-than-other-ai-models/",
+  "systemPrompt": "당신은 친근하고 솔직한 기술 전문가입니다. 편안한 대화체로 기술 뉴스를 전달합니다.\n\n**역할과 목표:**\n- 지인과 대화하듯 편안하고 친근한 톤으로 기술 뉴스 전달\n- 복잡한 기술도 이해하기 쉽게 풀어서 설명\n- 진솔하고 솔직한 관점으로 기술 트렌드 분석\n- 마케팅 과장을 걸러내고 실질적인 의미 전달\n\n**작성 스타일:**\n- 대화하듯 자연스럽고 편안한 문체\n- 적절한 이모지와 감탄사로 친근함 표현\n- \"정말\", \"꽤\", \"생각보다\", \"솔직히\" 같은 일상적 표현 활용\n- 과도한 전문 용어보다는 이해하기 쉬운 설명 우선\n- 개발자 커뮤니티에서 자주 나오는 정서와 경험 반영\n- \"이거 쓰다가 삽질함\", \"아 이거 진짜 괜찮네?\" 같은 솔직한 평가\n\n**보고서 구조 (반드시 이 형식을 지켜주세요):**\n\n\u003cREPORT_STRUCTURE_START\u003e\n## 🌟 오늘의 Tech Talk\n\n{{오늘 주목할 만한 기술 뉴스를 친근하게 요약}}\n\n## 📊 주요 뉴스 브리핑\n\n### 🚀 신기술 \u0026 서비스 \n{{새로 발표된 기술이나 서비스들}}\n- 실제로 써볼 만한지 솔직한 평가\n- 개발자 관점에서 본 장단점\n\n### 🏢 기업 \u0026 산업 동향\n{{주요 기업들의 소식과 업계 변화}}\n- 마케팅 vs 실제 가치 분석\n- 개발자들이 알아야 할 포인트\n\n### 🔍 트렌드 \u0026 인사이트\n{{업계 트렌드와 미래 전망}}\n- 개별 뉴스를 연결한 큰 그림\n- 우리에게 미칠 영향 예측\n\n## 💡 오늘의 정리\n\n{{핵심 포인트 1-2개를 친근하게 정리}}\n- 실무에 바로 도움되는 인사이트 포함\n\u003cREPORT_STRUCTURE_END\u003e\n\n**중요 출력 지침:**\n- 응답에 URL 접근 상태, 분석 과정, 내부 처리 정보 등의 디버그 내용을 포함하지 마세요\n- 바로 완성된 마크다운 보고서만 출력하세요\n- 응답은 반드시 \"## 🌟 오늘의 Tech Talk\"로 시작해야 합니다\n- 어떤 메타 정보나 과정 설명도 포함하지 말고, 순수한 커뮤니티 스타일 뉴스만 제공하세요\n- GitHub Flavored Markdown을 완벽히 지원하도록 작성하세요\n- ⚠️ \u003cREPORT_STRUCTURE_START\u003e와 \u003cREPORT_STRUCTURE_END\u003e 사이의 구조만 복제하세요 (태그 자체는 출력하지 마세요)\n\n**인용 규칙:**\n- 🚨 CRITICAL: 본문에 인용 없으면 완전히 실패입니다! 🚨\n- 모든 사실, 수치, 회사명, 발표 내용, 기술명 뒤에 반드시 [^1], [^2], [^3] 형태 인용 필수\n- 본문 작성 규칙: 문장을 쓸 때마다 \"이 정보는 어느 기사에서 왔는가?\"를 자문하고 즉시 [^숫자] 추가\n- 🔥 중요: 한 문장에서 동일한 기사에서 나온 여러 정보는 문장 끝에 한 번만 인용하세요\n  - 올바른 예: \"xAI가 Grok 4를 출시하여 OpenAI와 Google을 제쳤다고 발표했습니다.[^1]\"\n  - 잘못된 예: \"xAI[^1]가 Grok 4[^1]를 출시하여 OpenAI[^1]와 Google[^1]을 제쳤다고 발표했습니다.[^1]\"\n- 중요: 여러 개를 인용할 때 [^3, ^4] 금지! 반드시 [^3][^4] 형태로 연속 작성\n- 반드시 문서 맨 끝에 footnote 정의를 다음 형식으로 추가하세요:\n  [^1]: 기사제목 - https://example.com/article-url\n  [^2]: 기사제목 - https://example.com/article-url\n- 🔥 중요: footnote에서 링크 URL은 반드시 클릭 가능한 형태로 포함해야 합니다\n- 기업 이름은 피드 내용에 등장하는 기업들만 언급하고, 임의로 특정 기업을 예시로 들지 마세요",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여 일간 기술 뉴스 브리핑을 작성해주세요.\n\n다음은 최신 AI 관련 피드 데이터입니다:\n\n1. **555 타이머 집적회로를 나바호 천으로 직조하다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22954\n\n2. **왜 언어 모델은 환각을 발생시킬까? by OpenAI**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22952\n\n3. **Show GN: 한국 주식 투자를 위한 오픈소스 분석 도구, Cluefin**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22951\n\n4. **북한의 크리덴셜 탈취 수법이 'Kim' 덤프를 통해 드러난 방법**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22950\n\n5. **PyO3를 이용한 Rust와 Python의 가변 데이터 공유 기법**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22949\n\n6. **버거킹 해킹: 인증 우회로 드라이브 스루 오디오 감시 성공**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22948\n\n7. **머신러닝에는 새로운 프로그래밍 언어가 필요함 – Chris Lattner 인터뷰**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22947\n\n8. **내 손글씨로 폰트 만들기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22946\n\n9. **유럽연합 집행위원회, 구글에 29억 5,000만 유로 벌금 부과 – 광고 기술 남용 관련**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22945\n\n10. **GitHub Copilot 강제 기능에 분노한 사용자들, \"이제 그만 없애자\" 요구**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22944\n\n11. **You're right: Lessons learned vibe coding our asset management system**\n   - 출처: Hacker News\n   - 링크: https://dannorris.me/lessons-learned-vibe-coding-our-asset-management-system/\n\n12. **Fabric8Labs ECAM Enabled Thermal Solutions at Hot Chips 2025**\n   - 출처: Hacker News\n   - 링크: https://www.servethehome.com/fabric8labs-ecam-enabled-thermal-solutions-at-hot-chips-2025/\n\n13. **Self-hosting a static site with OpenBSD, httpd, and relayd**\n   - 출처: Hacker News\n   - 링크: https://citizen428.net/blog/self-hosting-static-site-openbsd-httpd-relayd/\n\n14. **Creative Technology: The Sound Blaster**\n   - 출처: Hacker News\n   - 링크: https://www.abortretry.fail/p/the-story-of-creative-technology\n\n15. **Show HN: AI Gen sprite sheets for multiplayer spaceship game**\n   - 출처: Hacker News\n   - 링크: https://benlirio.com/space-ship-client/\n\n16. **A Six-Story Apartment Building Is Tearing This Small California Town Apart**\n   - 출처: Hacker News\n   - 링크: https://www.wsj.com/real-estate/a-six-story-apartment-building-is-tearing-this-small-california-town-apart-59f924ae\n\n17. **GPT-5: The Case of the Missing Agent**\n   - 출처: Hacker News\n   - 링크: https://secondthoughts.ai/p/gpt-5-the-case-of-the-missing-agent\n\n18. **A comprehensive guide to go generate**\n   - 출처: Hacker News\n   - 링크: https://eli.thegreenplace.net/2021/a-comprehensive-guide-to-go-generate\n\n19. **My Video Production Stack (For YouTube)**\n   - 출처: Hacker News\n   - 링크: https://vivekhaldar.com/articles/my-video-production-stack/\n\n20. **OmniOS – open-source server OS with native ZFS**\n   - 출처: Hacker News\n   - 링크: https://omnios.org/\n\n21. **Scientists just created spacetime crystals made of knotted light**\n   - 출처: Hacker News\n   - 링크: https://www.sciencedaily.com/releases/2025/08/250827010722.htm\n\n22. **Ever shared a Spotify link on the internet? Someone you don't know can now mess**\n   - 출처: Hacker News\n   - 링크: https://www.androidauthority.com/psa-spotify-messages-tracker-urls-3593498/\n\n23. **Show HN: OpenCV over WebRTC (in Go)**\n   - 출처: Hacker News\n   - 링크: https://github.com/pion/example-webrtc-applications/blob/master/gocv-to-webrtc/README.md\n\n24. **Nimony: Design Principles**\n   - 출처: Hacker News\n   - 링크: https://nim-lang.org/araq/nimony.html\n\n25. **Treasury Secretary warns of massive refunds if Supreme Court voids Trump tariffs**\n   - 출처: Hacker News\n   - 링크: https://www.cnbc.com/2025/09/07/trump-trade-supreme-court-refunds-bessent.html\n\n26. **LLMs vs. Geolocation: GPT-5 Performs Worse Than Other AI Models**\n   - 출처: Hacker News\n   - 링크: https://www.bellingcat.com/resources/2025/08/14/llms-vs-geolocation-gpt-5-performs-worse-than-other-ai-models/\n\n27. **1940s New York City Streetview**\n   - 출처: Hacker News\n   - 링크: https://1940s.nyc\n\n28. **Neural Logic Gates**\n   - 출처: Hacker News\n   - 링크: https://blog.typeobject.com/posts/2025-neural-logic-gates/\n\n29. **Taco Bell AI Drive-Thru**\n   - 출처: Hacker News\n   - 링크: https://aidarwinawards.org/nominees/taco-bell-ai-drive-thru.html\n\n30. **How We Ship ML Algorithms to Prod Without Rewrites (Or ML Engineers)**\n   - 출처: Hacker News\n   - 링크: https://shlep.ai/zero-touch-algorithm-handoffs-how-we-ship-ml-algorithms-to-prod-without-rewrites-or-ml-engineers/\n\n\n\n**분석 지침:**\n- 반드시 위에 명시된 마크다운 헤더 구조를 정확히 따르세요\n- 각 섹션은 2-3개 포인트로 제한\n- 구체적인 수치와 데이터 활용으로 신뢰성 확보\n\n**🌟 URL 컨텍스트 활용 지침:**\n- 제공된 URL의 내용을 적극적으로 활용하여 깊이 있는 분석을 제공하세요\n- 단순 요약이 아닌, 기사의 핵심 인사이트와 숨겨진 의미를 발굴하세요\n- 여러 기사 간의 연결점을 찾아 큰 그림을 그려주세요\n- 기술적 세부사항과 실제 영향력을 균형있게 다루세요\n\n**🎯 독자 재미 극대화 지침:**\n- 딱딱한 기술 뉴스를 생동감 있게 전달하세요\n- 적절한 비유와 실생활 예시로 복잡한 개념을 쉽게 설명하세요\n- 놀라운 사실이나 의외의 관점을 제시하여 호기심을 자극하세요\n- 스토리텔링 요소를 활용하여 뉴스를 하나의 이야기로 엮어주세요\n- 각 프리셋의 톤에 맞는 위트와 유머를 적절히 활용하세요\n\n**🚨 인용 검수 체크리스트:**\n1. 본문의 모든 사실, 수치, 기업명, 기술명에 [^숫자] 인용이 있는가?\n2. 문서 맨 끝에 모든 footnote 정의가 있고, 각각 클릭 가능한 URL을 포함하는가?\n3. [^1]: 기사제목 - https://링크 형식이 정확한가?\n4. 본문에서 언급한 모든 [^숫자]에 대응하는 footnote가 있는가?\n- 최종 제출 전 필수 검토: 위 체크리스트를 모두 확인하세요",
+  "articles": [
+    {
+      "title": "555 타이머 집적회로를 나바호 천으로 직조하다",
+      "link": "https://news.hada.io/topic?id=22954",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-08T04:33:54+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e나바호(Diné) 직조가 Marilou Schultz가 \u003cstrong\u003e555 타이머 집적회로\u003c/strong\u003e의 내부 회로를 모티브로 한 독특한 \u003cstrong\u003e러그를 완성함\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e해당 러그는 \u003cstrong\u003e실리콘 칩과 배선 구조\u003c/strong\u003e를 예술적으로 표현하여 기술과 전통 예술의 결합을 보여줌\u003c/li\u003e\n\u003cli\u003e555 타이머는 다양한 \u003cstr...\u003c/p\u003e"
+    },
+    {
+      "title": "왜 언어 모델은 환각을 발생시킬까? by OpenAI",
+      "link": "https://news.hada.io/topic?id=22952",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-08T00:38:20+09:00",
+      "description": "\u003ch4\u003eAI 시스템의 신뢰성 문제\u003c/h4\u003e\n\u003col\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003eAI 시스템의 유용성과 신뢰성 향상 노력\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eOpenAI는 \u003cstrong\u003eAI 시스템\u003c/strong\u003e을 더욱 유용하고 신뢰할 수 있도록 만들기 위해 노력하고 있다.\u003c/li\u003e\n\u003cli\u003e이러한 노력에도 불구하고, \u003cstrong\u003e언어 모델\u003c/strong\u003e이 더욱 능력 있게 발전하더"
+    },
+    {
+      "title": "Show GN: 한국 주식 투자를 위한 오픈소스 분석 도구, Cluefin",
+      "link": "https://news.hada.io/topic?id=22951",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-07T23:11:03+09:00",
+      "description": "\u003cp\u003e안녕하세요.\u003cbr /\u003e\n주식투자하는데 자신만의 투자 기준을 갖기 위해선\u003cbr /\u003e\n오랜 기간 반복 해야 하는데\u003cbr /\u003e\n퇴근하고 기업 하나 알아보는데 (제 기준) 최소 2시간 이상 걸리다 보니 지속하기가 어렵습니다.\u003c/p\u003e\n\u003cp\u003e'과연 데이터 양과 투자 성과가 정비례한가?' '시간을 줄이면 반복할 수 있지 않을까?'라는 생각이"
+    },
+    {
+      "title": "북한의 크리덴셜 탈취 수법이 'Kim' 덤프를 통해 드러난 방법",
+      "link": "https://news.hada.io/topic?id=22950",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-07T20:33:49+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e최근 \u003cstrong\u003e'Kim' 덤프\u003c/strong\u003e 사건을 통해 북한의 \u003cstrong\u003e크리덴셜 탈취 수법\u003c/strong\u003e이 밝혀졌음\u003c/li\u003e\n\u003cli\u003e북한 해커들은 \u003cstrong\u003e피싱 사이트\u003c/strong\u003e 및 소셜 엔지니어링 기법을 적극적으로 활용함\u003c/li\u003e\n\u003cli\u003e이들은 \u003cstrong\u003e서방 국가\u003c/strong\u003e 및 IT 기업을 주요 타깃으로 삼음\u003c/li\u003e\n\u003cli\u003e공격 방식...\u003c/p\u003e"
+    },
+    {
+      "title": "PyO3를 이용한 Rust와 Python의 가변 데이터 공유 기법",
+      "link": "https://news.hada.io/topic?id=22949",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-07T18:41:59+09:00",
+      "description": "\u003ch4\u003e\u003cstrong\u003e결론 (Conclusion)\u003c/strong\u003e\u003c/h4\u003e\n\u003cp\u003ePyO3가 Rust의 라이프타임(lifetime)을 사용하는 구조체를 직접 Python에 노출하지 못하는 것은 처음에는 한계처럼 보일 수 있습니다. 하지만 Rust 표준 라이브러리와 PyO3는 이러한 한계를 극복할 강력한 도구들을 제공합니다. \u003ccode\u003estd::mem::take\u003c/code\u003e와 \u003ccode\u003est...\u003c/p\u003e"
+    },
+    {
+      "title": "버거킹 해킹: 인증 우회로 드라이브 스루 오디오 감시 성공",
+      "link": "https://news.hada.io/topic?id=22948",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-07T10:12:10+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e한 \u003cstrong\u003e보안 연구팀\u003c/strong\u003e이 Burger King의 드라이브 스루 시스템에서 \u003cstrong\u003e인증 우회 취약점\u003c/strong\u003e을 발견함\u003c/li\u003e\n\u003cli\u003e이 취약점으로 인해 \u003cstrong\u003e드라이브 스루 오디오 스트림\u003c/strong\u003e에 \u003cstrong\u003e무단 접근\u003c/strong\u003e 가능성 확인됨\u003c/li\u003e\n\u003cli\u003e내부 통제 미흡으로 \u003cstrong\u003e실시간 감시\u003c/strong\u003e...\u003c/p\u003e"
+    },
+    {
+      "title": "머신러닝에는 새로운 프로그래밍 언어가 필요함 – Chris Lattner 인터뷰",
+      "link": "https://news.hada.io/topic?id=22947",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-07T10:09:08+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eChris Lattner\u003c/strong\u003e는 LLVM과 Swift 언어의 핵심 개발자이며, 최신 ML 하드웨어의 \u003cstrong\u003e성능\u003c/strong\u003e을 최대한 활용하기 위해 새로운 언어 Mojo를 개발하고 있음\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eMojo\u003c/strong\u003e는 사용성과 하드웨어 세부 제어를 모두 제공하는 언어 설계가 목표이며, \u003cstrong\u003e타입 안전 메...\u003c/p\u003e"
+    },
+    {
+      "title": "내 손글씨로 폰트 만들기",
+      "link": "https://news.hada.io/topic?id=22946",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-07T10:06:07+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e개인 웹사이트의 개성을 살리기\u003c/strong\u003e 위해 직접 손글씨 폰트를 시도했음\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eFontForge와 Inkscape 등 오픈소스 도구 사용\u003c/strong\u003e이 직관적이지 않고 불편함을 겪음\u003c/li\u003e\n\u003cli\u003e결국 \u003cstrong\u003eCalligraphr 유료 서비스를 통해\u003c/strong\u003e 손글씨 폰트를 간편하게 생성하고 수정할 수 있...\u003c/p\u003e"
+    },
+    {
+      "title": "유럽연합 집행위원회, 구글에 29억 5,000만 유로 벌금 부과 – 광고 기술 남용 관련",
+      "link": "https://news.hada.io/topic?id=22945",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-07T10:03:06+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e유럽연합 집행위원회\u003c/strong\u003e가 \u003cstrong\u003eGoogle\u003c/strong\u003e에 대해 \u003cstrong\u003e2.95억 유로\u003c/strong\u003e의 벌금을 부과함\u003c/li\u003e\n\u003cli\u003eGoogle의 \u003cstrong\u003e광고 기술 시장 지배력 남용\u003c/strong\u003e이 주요 원인임\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e경쟁사 광고 중개 서비스\u003c/strong\u003e의 시장 진입 및 성장이 제약됨\u003c/li\u003e\n\u003cli\u003e집행위원...\u003c/p\u003e"
+    },
+    {
+      "title": "GitHub Copilot 강제 기능에 분노한 사용자들, \"이제 그만 없애자\" 요구",
+      "link": "https://news.hada.io/topic?id=22944",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-07T10:00:05+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eMicrosoft의 \u003cstrong\u003eGitHub Copilot\u003c/strong\u003e이 코드 저장소에서 \u003cstrong\u003e이슈와 PR을 강제로 생성\u003c/strong\u003e하는 문제로 개발자들의 불만이 폭발적으로 증가함\u003c/li\u003e\n\u003cli\u003eCopilot 코드 리뷰를 \u003cstrong\u003e비활성화할 수 없는 버그\u003c/strong\u003e 역시 두 번째로 큰 논란이 되어 수많은 개발자가 개선을 요구하고 있음...\u003c/p\u003e"
+    },
+    {
+      "title": "You're right: Lessons learned vibe coding our asset management system",
+      "link": "https://dannorris.me/lessons-learned-vibe-coding-our-asset-management-system/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-07T21:55:37Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://dannorris.me/lessons-learned-vibe-coding-our-asset-management-system/\"\u003ehttps://dannorris.me/lessons-learned-vibe-coding-our-asset-management-system/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45162544\"\u003ehttps://news.ycombinator.com/item?id=45162544\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Fabric8Labs ECAM Enabled Thermal Solutions at Hot Chips 2025",
+      "link": "https://www.servethehome.com/fabric8labs-ecam-enabled-thermal-solutions-at-hot-chips-2025/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-07T21:52:58Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.servethehome.com/fabric8labs-ecam-enabled-thermal-solutions-at-hot-chips-2025/\"\u003ehttps://www.servethehome.com/fabric8labs-ecam-enabled-thermal-solutions-at-hot-chips-2025/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45162523\"\u003ehttps://news.ycombinator.com/item?id=45162523\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Self-hosting a static site with OpenBSD, httpd, and relayd",
+      "link": "https://citizen428.net/blog/self-hosting-static-site-openbsd-httpd-relayd/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-07T21:52:41Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://citizen428.net/blog/self-hosting-static-site-openbsd-httpd-relayd/\"\u003ehttps://citizen428.net/blog/self-hosting-static-site-openbsd-httpd-relayd/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45162521\"\u003ehttps://news.ycombinator.com/item?id=45162521\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Creative Technology: The Sound Blaster",
+      "link": "https://www.abortretry.fail/p/the-story-of-creative-technology",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-07T21:50:30Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.abortretry.fail/p/the-story-of-creative-technology\"\u003ehttps://www.abortretry.fail/p/the-story-of-creative-technology\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45162501\"\u003ehttps://news.ycombinator.com/item?id=45162501\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: AI Gen sprite sheets for multiplayer spaceship game",
+      "link": "https://benlirio.com/space-ship-client/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-07T21:49:37Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://benlirio.com/space-ship-client/\"\u003ehttps://benlirio.com/space-ship-client/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45162495\"\u003ehttps://news.ycombinator.com/item?id=45162495\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "A Six-Story Apartment Building Is Tearing This Small California Town Apart",
+      "link": "https://www.wsj.com/real-estate/a-six-story-apartment-building-is-tearing-this-small-california-town-apart-59f924ae",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-07T21:45:08Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.wsj.com/real-estate/a-six-story-apartment-building-is-tearing-this-small-california-town-apart-59f924ae\"\u003ehttps://www.wsj.com/real-estate/a-six-story-apartment-building-is-tearing-this-small-california-town-apart-59f924ae\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45162460\"\u003ehttps://news.ycombinator.com/item?id=45162460\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "GPT-5: The Case of the Missing Agent",
+      "link": "https://secondthoughts.ai/p/gpt-5-the-case-of-the-missing-agent",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-07T21:44:33Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://secondthoughts.ai/p/gpt-5-the-case-of-the-missing-agent\"\u003ehttps://secondthoughts.ai/p/gpt-5-the-case-of-the-missing-agent\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45162454\"\u003ehttps://news.ycombinator.com/item?id=45162454\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "A comprehensive guide to go generate",
+      "link": "https://eli.thegreenplace.net/2021/a-comprehensive-guide-to-go-generate",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-07T21:44:32Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://eli.thegreenplace.net/2021/a-comprehensive-guide-to-go-generate\"\u003ehttps://eli.thegreenplace.net/2021/a-comprehensive-guide-to-go-generate\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45162451\"\u003ehttps://news.ycombinator.com/item?id=45162451\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "My Video Production Stack (For YouTube)",
+      "link": "https://vivekhaldar.com/articles/my-video-production-stack/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-07T21:43:55Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://vivekhaldar.com/articles/my-video-production-stack/\"\u003ehttps://vivekhaldar.com/articles/my-video-production-stack/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45162447\"\u003ehttps://news.ycombinator.com/item?id=45162447\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "OmniOS – open-source server OS with native ZFS",
+      "link": "https://omnios.org/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-07T21:43:15Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://omnios.org/\"\u003ehttps://omnios.org/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45162441\"\u003ehttps://news.ycombinator.com/item?id=45162441\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Scientists just created spacetime crystals made of knotted light",
+      "link": "https://www.sciencedaily.com/releases/2025/08/250827010722.htm",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-07T21:37:35Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.sciencedaily.com/releases/2025/08/250827010722.htm\"\u003ehttps://www.sciencedaily.com/releases/2025/08/250827010722.htm\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45162415\"\u003ehttps://news.ycombinator.com/item?id=45162415\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Ever shared a Spotify link on the internet? Someone you don't know can now mess",
+      "link": "https://www.androidauthority.com/psa-spotify-messages-tracker-urls-3593498/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-07T21:34:23Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.androidauthority.com/psa-spotify-messages-tracker-urls-3593498/\"\u003ehttps://www.androidauthority.com/psa-spotify-messages-tracker-urls-3593498/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45162388\"\u003ehttps://news.ycombinator.com/item?id=45162388\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: OpenCV over WebRTC (in Go)",
+      "link": "https://github.com/pion/example-webrtc-applications/blob/master/gocv-to-webrtc/README.md",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-07T21:31:29Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/pion/example-webrtc-applications/blob/master/gocv-to-webrtc/README.md\"\u003ehttps://github.com/pion/example-webrtc-applications/blob/master/gocv-to-webrtc/README.md\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45162368\"\u003ehttps://news.ycombinator.com/item?id=45162368\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Nimony: Design Principles",
+      "link": "https://nim-lang.org/araq/nimony.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-07T21:26:00Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://nim-lang.org/araq/nimony.html\"\u003ehttps://nim-lang.org/araq/nimony.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45162311\"\u003ehttps://news.ycombinator.com/item?id=45162311\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Treasury Secretary warns of massive refunds if Supreme Court voids Trump tariffs",
+      "link": "https://www.cnbc.com/2025/09/07/trump-trade-supreme-court-refunds-bessent.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-07T21:25:30Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.cnbc.com/2025/09/07/trump-trade-supreme-court-refunds-bessent.html\"\u003ehttps://www.cnbc.com/2025/09/07/trump-trade-supreme-court-refunds-bessent.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45162305\"\u003ehttps://news.ycombinator.com/item?id=45162305\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "LLMs vs. Geolocation: GPT-5 Performs Worse Than Other AI Models",
+      "link": "https://www.bellingcat.com/resources/2025/08/14/llms-vs-geolocation-gpt-5-performs-worse-than-other-ai-models/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-07T21:23:03Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.bellingcat.com/resources/2025/08/14/llms-vs-geolocation-gpt-5-performs-worse-than-other-ai-models/\"\u003ehttps://www.bellingcat.com/resources/2025/08/14/llms-vs-geolocation-gpt-5-performs-worse-than-other-ai-models/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45162286\"\u003ehttps://news.ycombinator.com/item?id=45162286\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "1940s New York City Streetview",
+      "link": "https://1940s.nyc",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-07T21:22:44Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://1940s.nyc\"\u003ehttps://1940s.nyc\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45162282\"\u003ehttps://news.ycombinator.com/item?id=45162282\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Neural Logic Gates",
+      "link": "https://blog.typeobject.com/posts/2025-neural-logic-gates/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-07T21:14:37Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://blog.typeobject.com/posts/2025-neural-logic-gates/\"\u003ehttps://blog.typeobject.com/posts/2025-neural-logic-gates/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45162225\"\u003ehttps://news.ycombinator.com/item?id=45162225\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Taco Bell AI Drive-Thru",
+      "link": "https://aidarwinawards.org/nominees/taco-bell-ai-drive-thru.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-07T21:14:08Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://aidarwinawards.org/nominees/taco-bell-ai-drive-thru.html\"\u003ehttps://aidarwinawards.org/nominees/taco-bell-ai-drive-thru.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45162220\"\u003ehttps://news.ycombinator.com/item?id=45162220\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "How We Ship ML Algorithms to Prod Without Rewrites (Or ML Engineers)",
+      "link": "https://shlep.ai/zero-touch-algorithm-handoffs-how-we-ship-ml-algorithms-to-prod-without-rewrites-or-ml-engineers/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-07T21:11:56Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://shlep.ai/zero-touch-algorithm-handoffs-how-we-ship-ml-algorithms-to-prod-without-rewrites-or-ml-engineers/\"\u003ehttps://shlep.ai/zero-touch-algorithm-handoffs-how-we-ship-ml-algorithms-to-prod-without-rewrites-or-ml-engineers/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45162198\"\u003ehttps://news.ycombinator.com/item?id=45162198\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    }
+  ],
+  "generatedAt": "2025-09-08T07:08:25.546489457+09:00"
+}
