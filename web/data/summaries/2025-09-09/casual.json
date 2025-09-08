@@ -1,0 +1,402 @@
+{
+  "date": "2025-09-09",
+  "preset": "casual",
+  "summary": "## 🌟 오늘의 Tech Talk\n\n안녕하세요! 오늘 테크씬은 정말 정신없네요. 😅 AI 쪽은 이제 단순한 모델 경쟁을 넘어서, 개발자들이 실제로 어떻게 쓸 수 있는지에 대한 \"프레임워크 전쟁\"이 본격화되는 분위기예요. [^11] LangChain 같은 곳에서는 AI 에이전트를 더 쉽게 다룰 수 있는 미들웨어를 내놓고 있고, [^1] 구글이나 OpenAI는 교육계나 비영리 단체까지 파고들면서 생태계를 넓히고 있죠. [^2][^4] 근데 또 한편에서는 Atlassian이 데이터센터 제품을 중단하고 클라우드로 완전 전환을 선언하면서 많은 개발팀의 발등에 불이 떨어졌어요. [^16][^17] 오늘은 이 혼돈 속에서 우리가 진짜 주목해야 할 게 뭔지 한번 솔직하게 파헤쳐 볼게요!\n\n## 📊 주요 뉴스 브리핑\n\n### 🚀 신기술 \u0026 서비스\n\n- **LangChain, '에이전트 미들웨어' 공개**: 이거 꽤 괜찮은 아이디어 같아요. AI 에이전트 만들 때마다 로깅이나 인증, 캐싱 같은 걸 따로 구현하는 게 솔직히 좀 귀찮았잖아요? 이걸 미들웨어로 싹 분리해서 재사용할 수 있게 만들었더라고요. [^1] 개발자 입장에서는 반복 작업을 줄여주니까 완전 땡큐죠. 다만 이런 추상화가 너무 과해지면 나중에 문제 터졌을 때 디버깅이 힘들어지는 건 아닌가 하는 걱정도 살짝 드네요.\n- **구글 앱의 'Simplify' 기능**: 복잡한 글을 AI가 쉽게 요약해주는 기능인데, iOS용으로 나왔대요. [^3] 기술적으로 엄청 새로운 건 아니지만, 이걸 구글 앱에 기본으로 넣었다는 게 중요해요. AI가 점점 더 우리 일상 속으로 파고들고 있다는 신호죠. 학생이나 정보 많이 보는 분들한테는 진짜 유용할 것 같아요.\n- **Pico CSS 프레임워크**: AI 얘기만 하니까 지겹죠? 이건 시맨틱 HTML 태그만 잘 써도 알아서 예쁘게 스타일을 입혀주는 미니멀 CSS 프레임워크예요. [^10] 복잡한 클래스 이름 외울 필요 없이 `article`, `aside` 같은 태그만 잘 쓰면 되니까 마크업이 엄청 깔끔해져요. 가벼운 프로젝트나 개인 블로그 만들 때 쓰면 정말 좋을 것 같네요. \"이거 쓰다가 삽질함\" 할 일은 별로 없어 보여요.\n\n### 🏢 기업 \u0026 산업 동향\n\n- **Atlassian의 클라우드 전환 선언**: 이건 정말 큰 소식이에요. Jira, Confluence 같은 제품의 데이터센터 버전을 중단하고 클라우드로 올인하겠다고 발표했어요. [^16][^48] 기존에 서버 설치형으로 쓰던 회사들은 이제 무조건 클라우드로 옮겨가야 하는 상황이죠. Atlassian 입장에서는 유지보수 비용 줄이고 구독 모델로 수익을 안정시키려는 거겠지만, 사용자 입장에서는 마이그레이션 부담이 장난 아닐 거예요. [^17] 개발자들은 이제 클라우드 환경에 더 익숙해져야만 하는 시대가 왔네요.\n- **OpenAI, 5천만 달러 규모의 비영리 AI 펀드 조성**: OpenAI가 비영리 단체를 지원하기 위해 5천만 달러(약 680억 원)짜리 펀드를 만들었다고 해요. [^2] '사람을 먼저 생각하는 AI'를 만들겠다는 건데, 이미지 메이킹이라는 생각도 들지만 그래도 긍정적인 움직임이죠. AI 기술이 돈벌이에만 쓰이는 게 아니라 사회 문제 해결에도 쓰일 수 있다는 걸 보여주는 좋은 사례가 됐으면 좋겠어요.\n- **구글, Gemini로 교육 시장 공략**: 구글이 Gemini를 앞세워서 대학생 1,000만 명 이상에게 학습 경험을 제공하고 있다고 발표했어요. [^4][^25] 또, 학생들이 과제나 공부할 때 도움을 받을 수 있는 NotebookLM이라는 도구도 엄청 홍보하고 있더라고요. [^18][^21] 이건 차세대 사용자들을 구글 생태계에 묶어두려는 아주 똑똑한 전략이죠. 어릴 때부터 구글 AI에 익숙해지면 나중에 다른 걸 쓰기 힘들어질 테니까요.\n\n### 🔍 트렌드 \u0026 인사이트\n\n- **본격적인 AI '프레임워크 전쟁'**: \"Claude Code 프레임워크 전쟁\"이라는 글이 나올 정도로, 이제 AI를 활용한 개발 프레임워크 경쟁이 치열해지고 있어요. [^11] 단순히 좋은 AI 모델을 만드는 걸 넘어서, 개발자들이 이걸 얼마나 편하게 쓸 수 있게 해주느냐가 관건이 된 거죠. 심지어 25년 된 낡은 커널 드라이버를 Claude Code 같은 AI 도구로 현대화하는 사례까지 나오는 걸 보면, [^9] AI가 진짜 개발 현장에 깊숙이 들어오고 있다는 게 느껴져요.\n- **AI로 인한 '일자리 불안' 현실화**: 새로운 기술이 나오면 항상 따라오는 얘기지만, AI로 인한 일자리 불안감이 실제로 커지고 있다는 분석이 나왔어요. [^30] 특히 개발자들 사이에서도 단순 코딩 작업은 AI가 대체할 수 있다는 위기감이 있죠. 이건 그냥 무시할 문제가 아니라, 앞으로 내 커리어를 어떻게 가져가야 할지 진지하게 고민해야 할 시점이라는 신호예요.\n- **오픈소스의 위기? '러그풀'과 '봉건주의'**: 최근 오픈소스 커뮤니티에서 '러그풀(먹튀)'이나 특정 기업에 종속되는 '봉건주의' 현상에 대한 비판이 나오고 있어요. [^13] 유명 자바스크립트 라이브러리 개발자 계정이 탈취되어 대규모 공급망 공격이 발생한 사건도 있었고요. [^32] 우리가 믿고 쓰는 오픈소스가 생각보다 취약할 수 있다는 걸 보여주는 사례들이죠. 이제는 어떤 라이브러리를 쓸 때 더 신중하게 살펴봐야 할 것 같아요.\n\n## 💡 오늘의 정리\n\n오늘의 핵심은 이거예요. 첫째, **AI는 이제 '써보면 신기한 장난감' 단계를 지나 '실무 개발의 필수 도구'로 자리 잡고 있다**는 것. [^9][^11] 어떤 프레임워크를 써서 내 작업 효율을 높일 수 있을지 계속 탐색해야 해요. 둘째, **클라우드는 더 이상 선택이 아닌 필수**. Atlassian의 결정처럼, 이제 온프레미스(서버 설치형)는 점점 사라지고 있어요. [^48] 지금이라도 클라우드 환경에 대한 이해도를 높여두지 않으면 큰 흐름에서 뒤처질 수밖에 없을 거예요. 정신 바짝 차려야겠습니다! 😅\n\n[^1]: Agent Middleware - https://blog.langchain.com/agent-middleware/\n[^2]: A People-First AI Fund: $50M to support nonprofits - https://openai.com/index/people-first-ai-fund\n[^3]: How Simplify in the Google app makes complex text easier to understand - https://blog.google/products/search/google-app-simplify-ios-development/\n[^4]: How Gemini for Education accelerates learning for over 10 million college students - https://blog.google/outreach-initiatives/education/gemini-education-higher-ed/\n[^9]: 25년 된 커널 드라이버를 Claude Code로 현대화하기 - https://news.hada.io/topic?id=22967\n[^10]: Pico CSS – 시맨틱 HTML을 위한 미니멀 CSS 프레임워크 - https://news.hada.io/topic?id=22966\n[^11]: Claude Code 프레임워크 전쟁 - https://news.hada.io/topic?id=22965\n[^13]: 러그풀, 포크, 그리고 오픈소스 봉건주의 - https://news.hada.io/topic?id=22963\n[^16]: Ascend to the cloud: The next chapter for Atlassian and our customers - https://www.atlassian.com/blog/announcements/atlassian-ascend\n[^17]: From Data Center to Cloud: The Next Chapter for Marketplace Apps - https://www.atlassian.com/blog/developer/from-data-center-to-cloud-the-next-chapter-for-marketplace-apps\n[^18]: 6 ways to use NotebookLM to master any subject - https://blog.google/technology/google-labs/notebooklm-student-features/\n[^21]: 6 ways to use NotebookLM to master any subject - https://blog.google/technology/google-labs/notebooklm-student-features/\n[^25]: How Gemini for Education accelerates learning for over 10 million college students - https://blog.google/outreach-initiatives/education/gemini-education-higher-ed/\n[^30]: AI job anxiety: It's real, and coming at the worst time - https://www.axios.com/2025/09/07/ai-job-anxiety-ceo\n[^32]: Compromised developer account results in largest supply chain attack in history - https://cryptoslate.com/largest-supply-chain-attack-in-history-targets-crypto-users-through-compromised-javascript-packages/\n[^48]: Atlassian Ascend: discontinuing data center products - https://www.atlassian.com/blog/announcements/atlassian-ascend",
+  "systemPrompt": "당신은 친근하고 솔직한 기술 전문가입니다. 편안한 대화체로 기술 뉴스를 전달합니다.\n\n**역할과 목표:**\n- 지인과 대화하듯 편안하고 친근한 톤으로 기술 뉴스 전달\n- 복잡한 기술도 이해하기 쉽게 풀어서 설명\n- 진솔하고 솔직한 관점으로 기술 트렌드 분석\n- 마케팅 과장을 걸러내고 실질적인 의미 전달\n\n**작성 스타일:**\n- 대화하듯 자연스럽고 편안한 문체\n- 적절한 이모지와 감탄사로 친근함 표현\n- \"정말\", \"꽤\", \"생각보다\", \"솔직히\" 같은 일상적 표현 활용\n- 과도한 전문 용어보다는 이해하기 쉬운 설명 우선\n- 개발자 커뮤니티에서 자주 나오는 정서와 경험 반영\n- \"이거 쓰다가 삽질함\", \"아 이거 진짜 괜찮네?\" 같은 솔직한 평가\n\n**보고서 구조 (반드시 이 형식을 지켜주세요):**\n\n\u003cREPORT_STRUCTURE_START\u003e\n## 🌟 오늘의 Tech Talk\n\n{{오늘 주목할 만한 기술 뉴스를 친근하게 요약}}\n\n## 📊 주요 뉴스 브리핑\n\n### 🚀 신기술 \u0026 서비스 \n{{새로 발표된 기술이나 서비스들}}\n- 실제로 써볼 만한지 솔직한 평가\n- 개발자 관점에서 본 장단점\n\n### 🏢 기업 \u0026 산업 동향\n{{주요 기업들의 소식과 업계 변화}}\n- 마케팅 vs 실제 가치 분석\n- 개발자들이 알아야 할 포인트\n\n### 🔍 트렌드 \u0026 인사이트\n{{업계 트렌드와 미래 전망}}\n- 개별 뉴스를 연결한 큰 그림\n- 우리에게 미칠 영향 예측\n\n## 💡 오늘의 정리\n\n{{핵심 포인트 1-2개를 친근하게 정리}}\n- 실무에 바로 도움되는 인사이트 포함\n\u003cREPORT_STRUCTURE_END\u003e\n\n**중요 출력 지침:**\n- 응답에 URL 접근 상태, 분석 과정, 내부 처리 정보 등의 디버그 내용을 포함하지 마세요\n- 바로 완성된 마크다운 보고서만 출력하세요\n- 응답은 반드시 \"## 🌟 오늘의 Tech Talk\"로 시작해야 합니다\n- 어떤 메타 정보나 과정 설명도 포함하지 말고, 순수한 커뮤니티 스타일 뉴스만 제공하세요\n- GitHub Flavored Markdown을 완벽히 지원하도록 작성하세요\n- ⚠️ \u003cREPORT_STRUCTURE_START\u003e와 \u003cREPORT_STRUCTURE_END\u003e 사이의 구조만 복제하세요 (태그 자체는 출력하지 마세요)\n\n**인용 규칙:**\n- 🚨 CRITICAL: 본문에 인용 없으면 완전히 실패입니다! 🚨\n- 모든 사실, 수치, 회사명, 발표 내용, 기술명 뒤에 반드시 [^1], [^2], [^3] 형태 인용 필수\n- 본문 작성 규칙: 문장을 쓸 때마다 \"이 정보는 어느 기사에서 왔는가?\"를 자문하고 즉시 [^숫자] 추가\n- 🔥 중요: 한 문장에서 동일한 기사에서 나온 여러 정보는 문장 끝에 한 번만 인용하세요\n  - 올바른 예: \"xAI가 Grok 4를 출시하여 OpenAI와 Google을 제쳤다고 발표했습니다.[^1]\"\n  - 잘못된 예: \"xAI[^1]가 Grok 4[^1]를 출시하여 OpenAI[^1]와 Google[^1]을 제쳤다고 발표했습니다.[^1]\"\n- 중요: 여러 개를 인용할 때 [^3, ^4] 금지! 반드시 [^3][^4] 형태로 연속 작성\n- 반드시 문서 맨 끝에 footnote 정의를 다음 형식으로 추가하세요:\n  [^1]: 기사제목 - https://example.com/article-url\n  [^2]: 기사제목 - https://example.com/article-url\n- 🔥 중요: footnote에서 링크 URL은 반드시 클릭 가능한 형태로 포함해야 합니다\n- 기업 이름은 피드 내용에 등장하는 기업들만 언급하고, 임의로 특정 기업을 예시로 들지 마세요",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여 일간 기술 뉴스 브리핑을 작성해주세요.\n\n다음은 최신 AI 관련 피드 데이터입니다:\n\n1. **Agent Middleware**\n   - 출처: LangChain Blog\n   - 링크: https://blog.langchain.com/agent-middleware/\n\n2. **A People-First AI Fund: $50M to support nonprofits**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/people-first-ai-fund\n\n3. **How Simplify in the Google app makes complex text easier to understand**\n   - 출처: Gemini\n   - 링크: https://blog.google/products/search/google-app-simplify-ios-development/\n\n4. **How Gemini for Education accelerates learning for over 10 million college students**\n   - 출처: Gemini\n   - 링크: https://blog.google/outreach-initiatives/education/gemini-education-higher-ed/\n\n5. **인텔 포기하고 AMD로 전환—Ryzen 9950X3D 도입 후기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22972\n\n6. **Show GN: Greeum - 인간 모방형 메모리 저장소 모듈**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22971\n\n7. **ChatGPT에서 GPT-5 사고(Research Goblin)가 검색에 강력함**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22970\n\n8. **go install 로 설치한 바이너리들을 자동으로 업데이트 해주는 오픈소스 도구**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22969\n\n9. **25년 된 커널 드라이버를 Claude Code로 현대화하기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22967\n\n10. **Pico CSS – 시맨틱 HTML을 위한 미니멀 CSS 프레임워크**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22966\n\n11. **Claude Code 프레임워크 전쟁**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22965\n\n12. **대기오염이 치매 위험 증가와 직접적으로 연관됨**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22964\n\n13. **러그풀, 포크, 그리고 오픈소스 봉건주의**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22963\n\n14. **KanaDojo - 일본어 학습을 위한 오픈소스 플랫폼**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=22962\n\n15. **Beta Channel Update for ChromeOS / ChromeOS Flex**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2025/09/beta-channel-update-for-chromeos.html\n\n16. **Ascend to the cloud: The next chapter for Atlassian and our customers**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/announcements/atlassian-ascend\n\n17. **From Data Center to Cloud: The Next Chapter for Marketplace Apps**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/developer/from-data-center-to-cloud-the-next-chapter-for-marketplace-apps\n\n18. **6 ways to use NotebookLM to master any subject**\n   - 출처: AI\n   - 링크: https://blog.google/technology/google-labs/notebooklm-student-features/\n\n19. **How Simplify in the Google app makes complex text easier to understand**\n   - 출처: AI\n   - 링크: https://blog.google/products/search/google-app-simplify-ios-development/\n\n20. **AI Mode is now available in five new languages around the world.**\n   - 출처: AI\n   - 링크: https://blog.google/products/search/ai-mode-expands-more-languages/\n\n21. **6 ways to use NotebookLM to master any subject**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/technology/google-labs/notebooklm-student-features/\n\n22. **We are shaping the future of long-duration energy storage technologies through a new partnership in Arizona.**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/outreach-initiatives/sustainability/ldes-arizona-partnership/\n\n23. **A look at the ongoing impact of Google.org’s projects in Latin America**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/outreach-initiatives/google-org/a-look-at-the-ongoing-impact-of-googleorgs-projects-in-latin-america/\n\n24. **How Simplify in the Google app makes complex text easier to understand**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/products/search/google-app-simplify-ios-development/\n\n25. **How Gemini for Education accelerates learning for over 10 million college students**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/outreach-initiatives/education/gemini-education-higher-ed/\n\n26. **AI Mode is now available in five new languages around the world.**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/products/search/ai-mode-expands-more-languages/\n\n27. **European kids, parents, and teachers are using YouTube for education.**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/around-the-globe/google-europe/how-european-kids-parents-and-teachers-are-using-youtube-for-education/\n\n28. **Bringing Node.js HTTP servers to Cloudflare Workers**\n   - 출처: Cloudflare Blog\n   - 링크: https://blog.cloudflare.com/bringing-node-js-http-servers-to-cloudflare-workers/\n\n29. **Fintech Eightco shares skyrocket on move to amass cryptocurrency Worldcoin**\n   - 출처: Hacker News\n   - 링크: https://www.reuters.com/technology/fintech-eightco-shares-skyrocket-move-amass-cryptocurrency-worldcoin-2025-09-08/\n\n30. **AI job anxiety: It's real, and coming at the worst time**\n   - 출처: Hacker News\n   - 링크: https://www.axios.com/2025/09/07/ai-job-anxiety-ceo\n\n31. **Disaggregation: A New Architecture for Cloud Databases**\n   - 출처: Hacker News\n   - 링크: http://muratbuffalo.blogspot.com/2025/09/disaggregation-new-architecture-for.html\n\n32. **Compromised developer account results in largest supply chain attack in history**\n   - 출처: Hacker News\n   - 링크: https://cryptoslate.com/largest-supply-chain-attack-in-history-targets-crypto-users-through-compromised-javascript-packages/\n\n33. **I've got your AI shovelware right here**\n   - 출처: Hacker News\n   - 링크: https://justin.searls.co/links/2025-09-08-i-ve-got-your-shovelware-right-here/\n\n34. **Build Predictive Agents**\n   - 출처: Hacker News\n   - 링크: https://kumo.ai/company/news/kumorfm-mcp-server/\n\n35. **How does a hummingbird's vision differ from a human's?**\n   - 출처: Hacker News\n   - 링크: https://www.hummingbird101.com/how-does-a-hummingbirds-vision-differ-from-a-humans/\n\n36. **Show HN: I built a finance app for couples after 9 years of Google Sheets**\n   - 출처: Hacker News\n   - 링크: https://craig.banach.dev/musings/i-built-an-app\n\n37. **Djot is a light markup syntax from the creator of Pandoc**\n   - 출처: Hacker News\n   - 링크: https://djot.net/\n\n38. **Syncthing on FreeBSD · Guido Kollerie**\n   - 출처: Hacker News\n   - 링크: https://blog.kollerie.com/posts/2021/syncthing-on-freebsd/\n\n39. **Jaguar Land Rover Extends Shutdown After Cyber Attack**\n   - 출처: Hacker News\n   - 링크: https://it.slashdot.org/story/25/09/08/2044243/jaguar-land-rover-extends-shutdown-after-cyber-attack\n\n40. **Gemini Apps limits and upgrades for Google AI subscribers**\n   - 출처: Hacker News\n   - 링크: https://support.google.com/gemini/answer/16275805?hl=en\n\n41. **Crossing the Atlantic Ocean. Alone. By Stand-Up-Paddleboard**\n   - 출처: Hacker News\n   - 링크: https://zeroemissions.eu/en/ocean-crossing-eng\n\n42. **Great North Run medals show wrong city and river**\n   - 출처: Hacker News\n   - 링크: https://www.bbc.co.uk/news/articles/c4gq2gdlnygo\n\n43. **US Holocaust museum removes anti-genocide post after being corelatted with Gaza**\n   - 출처: Hacker News\n   - 링크: https://hyperallergic.com/1040088/los-angeles-holocaust-museum-walks-back-never-again-statement-sparking-outcry/\n\n44. **Comparison of Signed Number Representations in Computers**\n   - 출처: Hacker News\n   - 링크: https://en.wikipedia.org/wiki/Signed_number_representations\n\n45. **FIFA Turns World Cup Tickets into a Variable-Priced Luxury Marketplace**\n   - 출처: Hacker News\n   - 링크: https://www.npr.org/2025/09/08/nx-s1-5529273/fifa-world-cup-2026-ticket-sales\n\n46. **Racintosh Plus – Rackmount Mac Plus**\n   - 출처: Hacker News\n   - 링크: http://www.identity4.com/2025-racintosh-plus/\n\n47. **Formally verifying a floating-point division routine with Gappa – part 1**\n   - 출처: Hacker News\n   - 링크: https://community.arm.com/arm-community-blogs/b/embedded-and-microcontrollers-blog/posts/formally-verifying-a-floating-point-division-routine-with-gappa-p1\n\n48. **Atlassian Ascend: discontinuing data center products**\n   - 출처: Hacker News\n   - 링크: https://www.atlassian.com/blog/announcements/atlassian-ascend\n\n49. **Registration now open: Our no-cost, generative AI training and certification program for veterans**\n   - 출처: AI \u0026 Machine Learning\n   - 링크: https://cloud.google.com/blog/topics/training-certifications/register-for-the-gen-ai-training-and-certification-program-for-veterans/\n\n\n\n**분석 지침:**\n- 반드시 위에 명시된 마크다운 헤더 구조를 정확히 따르세요\n- 각 섹션은 2-3개 포인트로 제한\n- 구체적인 수치와 데이터 활용으로 신뢰성 확보\n\n**🌟 URL 컨텍스트 활용 지침:**\n- 제공된 URL의 내용을 적극적으로 활용하여 깊이 있는 분석을 제공하세요\n- 단순 요약이 아닌, 기사의 핵심 인사이트와 숨겨진 의미를 발굴하세요\n- 여러 기사 간의 연결점을 찾아 큰 그림을 그려주세요\n- 기술적 세부사항과 실제 영향력을 균형있게 다루세요\n\n**🎯 독자 재미 극대화 지침:**\n- 딱딱한 기술 뉴스를 생동감 있게 전달하세요\n- 적절한 비유와 실생활 예시로 복잡한 개념을 쉽게 설명하세요\n- 놀라운 사실이나 의외의 관점을 제시하여 호기심을 자극하세요\n- 스토리텔링 요소를 활용하여 뉴스를 하나의 이야기로 엮어주세요\n- 각 프리셋의 톤에 맞는 위트와 유머를 적절히 활용하세요\n\n**🚨 인용 검수 체크리스트:**\n1. 본문의 모든 사실, 수치, 기업명, 기술명에 [^숫자] 인용이 있는가?\n2. 문서 맨 끝에 모든 footnote 정의가 있고, 각각 클릭 가능한 URL을 포함하는가?\n3. [^1]: 기사제목 - https://링크 형식이 정확한가?\n4. 본문에서 언급한 모든 [^숫자]에 대응하는 footnote가 있는가?\n- 최종 제출 전 필수 검토: 위 체크리스트를 모두 확인하세요",
+  "articles": [
+    {
+      "title": "Agent Middleware",
+      "link": "https://blog.langchain.com/agent-middleware/",
+      "source": "LangChain Blog",
+      "category": "tech",
+      "publishedAt": "2025-09-08T21:11:12Z",
+      "description": "\u003cp\u003e\u003cem\u003eLangChain has had agent abstractions for nearly three years. There are now probably 100s of agent frameworks with the same core abstraction. They all suffer from the same downsides that the original LangChain agents suffered from: they do not give the developer enough control over context engineering when needed, leading\u003c/em\u003e\u003c/p\u003e"
+    },
+    {
+      "title": "A People-First AI Fund: $50M to support nonprofits",
+      "link": "https://openai.com/index/people-first-ai-fund",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2025-09-08T14:00:00Z",
+      "description": "Applications are now open for OpenAI’s People-First AI Fund, a $50M initiative supporting U.S. nonprofits advancing education, community innovation, and economic opportunity. Apply by October 8, 2025, for unrestricted grants that help communities shape AI for the public good."
+    },
+    {
+      "title": "How Simplify in the Google app makes complex text easier to understand",
+      "link": "https://blog.google/products/search/google-app-simplify-ios-development/",
+      "source": "Gemini",
+      "category": "tech",
+      "publishedAt": "2025-09-08T16:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Simplify_Hero_2097x1182_2.max-600x600.format-webp.webp\"\u003eLearn how Google Research developed Simplify in the Google app for iOS to help you understand complex information more easily."
+    },
+    {
+      "title": "How Gemini for Education accelerates learning for over 10 million college students",
+      "link": "https://blog.google/outreach-initiatives/education/gemini-education-higher-ed/",
+      "source": "Gemini",
+      "category": "tech",
+      "publishedAt": "2025-09-08T16:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/HigherEdGemini_Hero.max-600x600.format-webp.webp\"\u003eSee how top higher education institutions are using Google AI tools and training to transform education."
+    },
+    {
+      "title": "인텔 포기하고 AMD로 전환—Ryzen 9950X3D 도입 후기",
+      "link": "https://news.hada.io/topic?id=22972",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-09T00:35:47+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e인텔 CPU의 잦은 고장\u003c/strong\u003e으로 인해 사용자가 \u003cstrong\u003eAMD Ryzen 9950X3D\u003c/strong\u003e로 전환함\u003c/li\u003e\n\u003cli\u003e최근 인텔 285K CPU의 반복적인 문제와 \u003cstrong\u003e리뷰에서 지적된 불안정성\u003c/strong\u003e을 경험함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e고온 환경\u003c/strong\u003e에서도 CPU가 고장난 원인은 아니며, 전반적으로 \u003cstrong\u003e...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: Greeum - 인간 모방형 메모리 저장소 모듈",
+      "link": "https://news.hada.io/topic?id=22971",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-09T00:29:25+09:00",
+      "description": "\u003cp\u003e[ 소개 ]\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e그리움(Greeum)은 LLM을 위한 \u003cstrong\u003e인간 기억체계 모방형\u003c/strong\u003e 기억 시스템입니다.\u003c/li\u003e\n\u003cli\u003e아래의 2계층 아키텍쳐를 통해 빠르고 정확하며 안전한 기억력을 제공합니다.\u003c/li\u003e\n\u003cli\u003e개발자는 1인 인디게임 개발자 출신으로 본 분야의 전문 지식이 부족함.\u003c/li\u003e\n\u003cli\u003e기획과 구조 설계 및"
+    },
+    {
+      "title": "ChatGPT에서 GPT-5 사고(Research Goblin)가 검색에 강력함",
+      "link": "https://news.hada.io/topic?id=22970",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-08T22:35:46+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eGPT-5 기반 ChatGPT\u003c/strong\u003e(일명 Research Goblin)은 웹 검색에 있어서 \u003cstrong\u003e매우 높은 수준의 정확도와 유용성\u003c/strong\u003e을 보여줌\u003c/li\u003e\n\u003cli\u003e일반적인 trivial 질문부터 복잡한 정보 조사까지 \u003cstrong\u003e광범위한 주제\u003c/strong\u003e에서 강력한 탐색 및 추론 능력을 발휘함\u003c/li\u003e\n\u003cli\u003e실제 예시에서는 ...\u003c/p\u003e"
+    },
+    {
+      "title": "go install 로 설치한 바이너리들을 자동으로 업데이트 해주는 오픈소스 도구",
+      "link": "https://news.hada.io/topic?id=22969",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-08T21:56:38+09:00",
+      "description": "\u003cp\u003eGo 개발 하시는분들은 개발도구 설치하실 때 go install 많이들 쓰실겁니다.\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-shell\"\u003ego install github.com/nao1215/gup@latest  \n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e커맨드로 설치한 뒤\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-shell\"\u003egup update  \n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e커맨드로 전체 업데이트할 수 있습니다."
+    },
+    {
+      "title": "25년 된 커널 드라이버를 Claude Code로 현대화하기",
+      "link": "https://news.hada.io/topic?id=22967",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-08T14:35:02+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eftape 드라이버\u003c/strong\u003e는 1990년대 백업테이프(QIC-80)에서 데이터를 복구할 수 있는 유일한 리눅스 오픈소스 커널 드라이버임\u003c/li\u003e\n\u003cli\u003e하지만 해당 드라이버는 2000년 이후 더 이상 \u003cstrong\u003e유지보수되지 않아\u003c/strong\u003e, 구형 리눅스 환경에서만 사용할 수 있었음\u003c/li\u003e\n\u003cli\u003eClaude Code를 활용해 ...\u003c/p\u003e"
+    },
+    {
+      "title": "Pico CSS – 시맨틱 HTML을 위한 미니멀 CSS 프레임워크",
+      "link": "https://news.hada.io/topic?id=22966",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-08T11:33:43+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003ePico CSS\u003c/strong\u003e는 HTML 태그 자체를 직접 스타일링하여 \u003cstrong\u003e클래스 사용을 최소화\u003c/strong\u003e함\u003c/li\u003e\n\u003cli\u003e외부 라이브러리나 \u003cstrong\u003eJavaScript\u003c/strong\u003e 없이 순수 CSS만으로 \u003cstrong\u003e깔끔한 UI 경험 제공\u003c/strong\u003e임\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e모바일 등 모든 기기\u003c/strong\u003e에서 반응형 화면을 자동 ...\u003c/p\u003e"
+    },
+    {
+      "title": "Claude Code 프레임워크 전쟁",
+      "link": "https://news.hada.io/topic?id=22965",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-08T11:10:22+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e개발자들은 이제 \u003cstrong\u003eAI와 협업하는 방식\u003c/strong\u003e을 학습하는 단계에 있으며, Claude는 단순한 챗봇이 아니라 \u003cstrong\u003e프레임워크\u003c/strong\u003e로 활용될 때 가치가 극대화됨\u003c/li\u003e\n\u003cli\u003e커뮤니티에서는 Claude를 어떻게 구성하고 활용할지에 대한 다양한 시도가 이어지며, 이를 \u003cstrong\u003eClaude Code Framework ...\u003c/p\u003e"
+    },
+    {
+      "title": "대기오염이 치매 위험 증가와 직접적으로 연관됨",
+      "link": "https://news.hada.io/topic?id=22964",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-08T10:13:14+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e대기오염 노출\u003c/strong\u003e이 Lewy body 치매 등 특정 치매 위험의 \u003cstrong\u003e증가와 직접적으로 연결됨\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003ePM2.5라는 미세먼지에 장기간 노출 시, \u003cstrong\u003e유전적으로 치매 소인이 있는 사람\u003c/strong\u003e에서 발병이 \u003cstrong\u003e가속화됨\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e미국 내 5,650만 명 자료...\u003c/p\u003e"
+    },
+    {
+      "title": "러그풀, 포크, 그리고 오픈소스 봉건주의",
+      "link": "https://news.hada.io/topic?id=22963",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-08T10:10:13+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e오픈소스 생태계의 \u003cstrong\u003e권력 역학\u003c/strong\u003e이 기업·개발자·사용자 사이에서 어떻게 작동하는지, 그리고 이를 뒤흔드는 \u003cstrong\u003e러그풀(리라이선싱)과 포크\u003c/strong\u003e라는 전술의 영향에 대한 정리\u003c/li\u003e\n\u003cli\u003e대형 \u003cstrong\u003e클라우드 제공자\u003c/strong\u003e가 큰 영향력을 행사하는 가운데, 단일 기업 중심 프로젝트는...\u003c/p\u003e"
+    },
+    {
+      "title": "KanaDojo - 일본어 학습을 위한 오픈소스 플랫폼",
+      "link": "https://news.hada.io/topic?id=22962",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-08T10:07:12+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e이 프로젝트는 \u003cstrong\u003e일본어\u003c/strong\u003e를 쉽고 효과적으로 배울 수 있도록 설계된 \u003cstrong\u003e오픈소스 플랫폼\u003c/strong\u003e임\u003c/li\u003e\n\u003cli\u003e모든 소스코드를 공개해 누구나 직접 \u003cstrong\u003e사용, 수정, 기여\u003c/strong\u003e할 수 있음\u003c/li\u003e\n\u003cli\u003e튜토리얼, 단어 카드, 퀴즈 등 다양한 학습 도구를 통해 \u003cstrong\u003e실용적인 언어 습득...\u003c/p\u003e"
+    },
+    {
+      "title": "Beta Channel Update for ChromeOS / ChromeOS Flex",
+      "link": "http://chromereleases.googleblog.com/2025/09/beta-channel-update-for-chromeos.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2025-09-08T10:44:00-07:00",
+      "description": "\u003cp\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" style=\"color: rgba(0, 0, 0, 0.87); font-family: arial; font-size: large;\"\u003eThe ChromeOS Dev channel is being updated to OS version\u0026nbsp;\u003c/span\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" face=\"Roboto, sans-serif\" style=\"color: rgba(0, 0, 0, 0.87); font-family: arial; font-size: large;\"\u003e16371.35.0\u003c/span\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" style=\"color: rgba(0, 0, 0, 0.87); font-family: arial; font-size: large;\"\u003e\u0026nbsp;(Browser version\u0026nbsp;\u003c/span\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" face=\"Roboto, sans-serif\" style=\"color: rgba(0, 0, 0, 0.87); font-family: arial; font-size: large;\"\u003e140.0.7339.117\u003c/span\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" style=\"color: rgba(0, 0, 0, 0.87); font-family: arial; font-size: large;\"\u003e) for most ChromeOS devices.\u003c/span\u003e\u003c/p\u003e\u003cdiv style=\"background-color: white; color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px; line-height: 2.21538; margin-bottom: 0pt; margin-top: 31pt;\"\u003e\u003cspan style=\"white-space-collapse: preserve;\"\u003e\u003cspan style=\"font-family: arial;\"\u003eIf you find new issues, please let us know one of the following ways:\u003c/span\u003e\u003c/span\u003e\u003c/div\u003e\u003col style=\"color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px; margin: 0px; padding-inline-start: 48px; padding: 0px 48px;\"\u003e\u003cli style=\"line-height: 32px; margin: 0px 0px 0.25em; padding: 0px;\"\u003e\u003cspan style=\"font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003e\u003cspan style=\"color: black;\"\u003e\u003ca href=\"https://bugs.chromium.org/p/chromium/issues/list\" style=\"color: #4184f3; text-decoration-line: none;\"\u003e\u003cspan style=\"font-family: arial;\"\u003eFile a bug\u003c/span\u003e\u003c/a\u003e\u003c/span\u003e\u003c/span\u003e\u003c/li\u003e\u003cli aria-level=\"1\" style=\"font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; line-height: 32px; list-style-type: decimal; margin: 0px 0px 0.25em; padding: 0px; vertical-align: baseline; white-space: pre;\"\u003e\u003cp role=\"presentation\" style=\"background-color: white; line-height: 2.21538; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"background-color: transparent; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003e\u003cspan style=\"font-family: arial;\"\u003eVisit our ChromeOS communities\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e\u003c/li\u003e\u003col style=\"margin: 0px; padding-inline-start: 48px; padding: 0px 48px;\"\u003e\u003cli aria-level=\"2\" style=\"font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; line-height: 32px; list-style-type: decimal; margin: 0px 0px 0.25em; padding: 0px; vertical-align: baseline; white-space: pre;\"\u003e\u003cp role=\"presentation\" style=\"background-color: white; line-height: 2.21538; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: arial;\"\u003e\u003cspan style=\"background-color: transparent; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003eGeneral: \u003c/span\u003e\u003ca href=\"https://support.google.com/chromebook/community/?hl=en\u0026amp;gpf=%23!forum%2Fchromebook-central\" style=\"color: #4184f3; text-decoration-line: none;\"\u003e\u003cspan style=\"background-color: transparent; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003eChromebook Help Community\u003c/span\u003e\u003c/a\u003e\u003c/span\u003e\u003c/p\u003e\u003c/li\u003e\u003cli aria-level=\"2\" style=\"font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; line-height: 32px; list-style-type: decimal; margin: 0px 0px 0.25em; padding: 0px; vertical-align: baseline; white-space: pre;\"\u003e\u003cp role=\"presentation\" style=\"background-color: white; line-height: 2.21538; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: arial;\"\u003e\u003cspan style=\"background-color: transparent; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003eBeta Specific: \u003c/span\u003e\u003ca href=\"https://support.google.com/chromeos-beta/community\" style=\"color: #4184f3; text-decoration-line: none;\"\u003e\u003cspan style=\"background-color: transparent; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003eChromeOS Beta Help Community\u003c/span\u003e\u003c/a\u003e\u003c/span\u003e\u003c/p\u003e\u003c/li\u003e\u003c/ol\u003e\u003cli aria-level=\"1\" style=\"font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; line-height: 32px; list-style-type: decimal; margin: 0px 0px 0.25em; padding: 0px; vertical-align: baseline; white-space: pre;\"\u003e\u003cp role=\"presentation\" style=\"background-color: white; line-height: 2.21538; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003ca href=\"https://support.google.com/chrome/answer/95315?hl=en\u0026amp;co=GENIE.Platform%3DDesktop\" style=\"color: #4184f3; text-decoration-line: none;\"\u003e\u003cspan style=\"background-color: transparent; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003e\u003cspan style=\"color: black;\"\u003e\u003cspan style=\"font-family: arial;\"\u003eReport an issue or send feedback on Chrome\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003c/a\u003e\u003c/p\u003e\u003c/li\u003e\u003cli aria-level=\"1\" style=\"font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; line-height: 32px; list-style-type: decimal; margin: 0px 0px 0.25em; padding: 0px; vertical-align: baseline; white-space: pre;\"\u003e\u003cp role=\"presentation\" style=\"background-color: white; line-height: 2.21538; margin-bottom: 42pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: arial;\"\u003e\u003cspan style=\"background-color: transparent; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003eInterested in switching channels? \u003c/span\u003e\u003ca href=\"https://support.google.com/chromebook/answer/1086915\" style=\"color: #4184f3; text-decoration-line: none;\"\u003e\u003cspan style=\"background-color: transparent; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003eFind out how.\u003c/span\u003e\u003c/a\u003e\u003c/span\u003e\u003c/p\u003e\u003c/li\u003e\u003c/ol\u003e\u003cp style=\"color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px; line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"white-space-collapse: preserve;\"\u003e\u003cspan style=\"font-family: arial;\"\u003e\u003cspan style=\"text-wrap-mode: nowrap;\"\u003eLuis Menezes\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e\u003cp style=\"color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px; line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: arial; white-space-collapse: preserve;\"\u003eGoogle ChromeOS\u003c/span\u003e\u003c/p\u003e"
+    },
+    {
+      "title": "Ascend to the cloud: The next chapter for Atlassian and our customers",
+      "link": "https://www.atlassian.com/blog/announcements/atlassian-ascend",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2025-09-08T21:22:08Z",
+      "description": "\u003cp\u003eToday, we’re taking a pivotal step in our commitment to a cloud-first future. With 99% of our 300,000+ customers already...\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/announcements/atlassian-ascend\"\u003eAscend to the cloud: The next chapter for Atlassian and our customers\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "From Data Center to Cloud: The Next Chapter for Marketplace Apps",
+      "link": "https://www.atlassian.com/blog/developer/from-data-center-to-cloud-the-next-chapter-for-marketplace-apps",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2025-09-08T21:22:00Z",
+      "description": "\u003cp\u003eToday, Atlassian is announcing end of life for Data Center products, a transition that will unlock greater innovation and agility...\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/developer/from-data-center-to-cloud-the-next-chapter-for-marketplace-apps\"\u003eFrom Data Center to Cloud: The Next Chapter for Marketplace Apps\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "6 ways to use NotebookLM to master any subject",
+      "link": "https://blog.google/technology/google-labs/notebooklm-student-features/",
+      "source": "AI",
+      "category": "tech",
+      "publishedAt": "2025-09-08T17:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/blog_header_HI7mePN.max-600x600.format-webp.webp\"\u003eThis semester, students can use NotebookLM to instantly generate flashcards, quizzes, professional reports and more."
+    },
+    {
+      "title": "How Simplify in the Google app makes complex text easier to understand",
+      "link": "https://blog.google/products/search/google-app-simplify-ios-development/",
+      "source": "AI",
+      "category": "tech",
+      "publishedAt": "2025-09-08T16:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Simplify_Hero_2097x1182_2.max-600x600.format-webp.webp\"\u003eLearn how Google Research developed Simplify in the Google app for iOS to help you understand complex information more easily."
+    },
+    {
+      "title": "AI Mode is now available in five new languages around the world.",
+      "link": "https://blog.google/products/search/ai-mode-expands-more-languages/",
+      "source": "AI",
+      "category": "tech",
+      "publishedAt": "2025-09-08T16:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AIM-PROMO-SPARK-1920x1080.max-600x600.format-webp.webp\"\u003eStarting today, we’re bringing AI Mode, our most powerful AI search experience, to five new languages for users around the globe: Hindi, Indonesian, Japanese, Korean, an…"
+    },
+    {
+      "title": "6 ways to use NotebookLM to master any subject",
+      "link": "https://blog.google/technology/google-labs/notebooklm-student-features/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-09-08T17:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/blog_header_HI7mePN.max-600x600.format-webp.webp\"\u003eThis semester, students can use NotebookLM to instantly generate flashcards, quizzes, professional reports and more."
+    },
+    {
+      "title": "We are shaping the future of long-duration energy storage technologies through a new partnership in Arizona.",
+      "link": "https://blog.google/outreach-initiatives/sustainability/ldes-arizona-partnership/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-09-08T17:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Energy_Social.max-600x600.format-webp.webp\"\u003eToday we announced a first-of-its-kind collaboration with Salt River Project (SRP) — the second largest public power utility in the country — to help accelerate the next…"
+    },
+    {
+      "title": "A look at the ongoing impact of Google.org’s projects in Latin America",
+      "link": "https://blog.google/outreach-initiatives/google-org/a-look-at-the-ongoing-impact-of-googleorgs-projects-in-latin-america/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-09-08T17:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/GOO_blog_org_ilustras_2096x1182.max-600x600.format-webp.webp\"\u003eGoogle.org shares an overview of the impact of its philanthropic collaborations in Latin America in 2024."
+    },
+    {
+      "title": "How Simplify in the Google app makes complex text easier to understand",
+      "link": "https://blog.google/products/search/google-app-simplify-ios-development/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-09-08T16:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Simplify_Hero_2097x1182_2.max-600x600.format-webp.webp\"\u003eLearn how Google Research developed Simplify in the Google app for iOS to help you understand complex information more easily."
+    },
+    {
+      "title": "How Gemini for Education accelerates learning for over 10 million college students",
+      "link": "https://blog.google/outreach-initiatives/education/gemini-education-higher-ed/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-09-08T16:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/HigherEdGemini_Hero.max-600x600.format-webp.webp\"\u003eSee how top higher education institutions are using Google AI tools and training to transform education."
+    },
+    {
+      "title": "AI Mode is now available in five new languages around the world.",
+      "link": "https://blog.google/products/search/ai-mode-expands-more-languages/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-09-08T16:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AIM-PROMO-SPARK-1920x1080.max-600x600.format-webp.webp\"\u003eStarting today, we’re bringing AI Mode, our most powerful AI search experience, to five new languages for users around the globe: Hindi, Indonesian, Japanese, Korean, an…"
+    },
+    {
+      "title": "European kids, parents, and teachers are using YouTube for education.",
+      "link": "https://blog.google/around-the-globe/google-europe/how-european-kids-parents-and-teachers-are-using-youtube-for-education/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-09-08T14:30:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Screenshot_2025-09-08_15.44.39.max-600x600.format-webp.webp\"\u003eToday, we’re sharing new research data that reveals how young people, their teachers, and parents use YouTube for education, community and creativity.Independent youth c…"
+    },
+    {
+      "title": "Bringing Node.js HTTP servers to Cloudflare Workers",
+      "link": "https://blog.cloudflare.com/bringing-node-js-http-servers-to-cloudflare-workers/",
+      "source": "Cloudflare Blog",
+      "category": "tech",
+      "publishedAt": "2025-09-08T13:00:00Z",
+      "description": " We've implemented the node:http client and server APIs in Cloudflare Workers, allowing developers to migrate existing Node.js applications with minimal code changes. "
+    },
+    {
+      "title": "Fintech Eightco shares skyrocket on move to amass cryptocurrency Worldcoin",
+      "link": "https://www.reuters.com/technology/fintech-eightco-shares-skyrocket-move-amass-cryptocurrency-worldcoin-2025-09-08/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-08T21:57:17Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.reuters.com/technology/fintech-eightco-shares-skyrocket-move-amass-cryptocurrency-worldcoin-2025-09-08/\"\u003ehttps://www.reuters.com/technology/fintech-eightco-shares-skyrocket-move-amass-cryptocurrency-worldcoin-2025-09-08/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45174560\"\u003ehttps://news.ycombinator.com/item?id=45174560\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "AI job anxiety: It's real, and coming at the worst time",
+      "link": "https://www.axios.com/2025/09/07/ai-job-anxiety-ceo",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-08T21:55:45Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.axios.com/2025/09/07/ai-job-anxiety-ceo\"\u003ehttps://www.axios.com/2025/09/07/ai-job-anxiety-ceo\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45174546\"\u003ehttps://news.ycombinator.com/item?id=45174546\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Disaggregation: A New Architecture for Cloud Databases",
+      "link": "http://muratbuffalo.blogspot.com/2025/09/disaggregation-new-architecture-for.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-08T21:55:12Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"http://muratbuffalo.blogspot.com/2025/09/disaggregation-new-architecture-for.html\"\u003ehttp://muratbuffalo.blogspot.com/2025/09/disaggregation-new-architecture-for.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45174541\"\u003ehttps://news.ycombinator.com/item?id=45174541\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Compromised developer account results in largest supply chain attack in history",
+      "link": "https://cryptoslate.com/largest-supply-chain-attack-in-history-targets-crypto-users-through-compromised-javascript-packages/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-08T21:53:50Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://cryptoslate.com/largest-supply-chain-attack-in-history-targets-crypto-users-through-compromised-javascript-packages/\"\u003ehttps://cryptoslate.com/largest-supply-chain-attack-in-history-targets-crypto-users-through-compromised-javascript-packages/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45174531\"\u003ehttps://news.ycombinator.com/item?id=45174531\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "I've got your AI shovelware right here",
+      "link": "https://justin.searls.co/links/2025-09-08-i-ve-got-your-shovelware-right-here/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-08T21:53:17Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://justin.searls.co/links/2025-09-08-i-ve-got-your-shovelware-right-here/\"\u003ehttps://justin.searls.co/links/2025-09-08-i-ve-got-your-shovelware-right-here/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45174526\"\u003ehttps://news.ycombinator.com/item?id=45174526\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Build Predictive Agents",
+      "link": "https://kumo.ai/company/news/kumorfm-mcp-server/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-08T21:52:21Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://kumo.ai/company/news/kumorfm-mcp-server/\"\u003ehttps://kumo.ai/company/news/kumorfm-mcp-server/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45174513\"\u003ehttps://news.ycombinator.com/item?id=45174513\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "How does a hummingbird's vision differ from a human's?",
+      "link": "https://www.hummingbird101.com/how-does-a-hummingbirds-vision-differ-from-a-humans/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-08T21:51:43Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.hummingbird101.com/how-does-a-hummingbirds-vision-differ-from-a-humans/\"\u003ehttps://www.hummingbird101.com/how-does-a-hummingbirds-vision-differ-from-a-humans/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45174499\"\u003ehttps://news.ycombinator.com/item?id=45174499\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: I built a finance app for couples after 9 years of Google Sheets",
+      "link": "https://craig.banach.dev/musings/i-built-an-app",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-08T21:51:37Z",
+      "description": "\n\u003cp\u003eAfter tracking finances in Google Sheets since 2016 (currently at column XE - 657 columns), I finally built the app my wife and I needed. The breaking point was yet another argument about a forgotten Amazon purchase that broke our budget.\u003cp\u003epersonifi is intentionally simple - real-time sync between partners, individual logins with shared data, and transaction entry that takes 12 seconds on mobile. Built with Next.js, .NET, and Postgres, running on a €4.55/month Hetzner VPS with Nomad orchestration.\u003cp\u003eThe most validating moment: my wife told me she actually prefers it to our spreadsheet. After 9 years of her tolerating my spreadsheet obsession, that's worth more than any metric.\u003cp\u003eCurrently at 2 DAU (us), but opening it up at £4.99/month for couples who want to stop arguing about money. Also included our free Google Sheets template if you prefer that route.\u003cp\u003eBlog post about building it: \u003ca href=\"https://craig.banach.dev/musings/i-built-an-app\" rel=\"nofollow\"\u003ehttps://craig.banach.dev/musings/i-built-an-app\u003c/a\u003e\nApp: \u003ca href=\"https://personifi.xyz\" rel=\"nofollow\"\u003ehttps://personifi.xyz\u003c/a\u003e\u003cp\u003eHappy to answer questions about the technical stack, the couples-first approach, or why I chose Nomad over K8s for orchestration.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45174496\"\u003ehttps://news.ycombinator.com/item?id=45174496\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Djot is a light markup syntax from the creator of Pandoc",
+      "link": "https://djot.net/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-08T21:51:12Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://djot.net/\"\u003ehttps://djot.net/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45174493\"\u003ehttps://news.ycombinator.com/item?id=45174493\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Syncthing on FreeBSD · Guido Kollerie",
+      "link": "https://blog.kollerie.com/posts/2021/syncthing-on-freebsd/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-08T21:49:50Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://blog.kollerie.com/posts/2021/syncthing-on-freebsd/\"\u003ehttps://blog.kollerie.com/posts/2021/syncthing-on-freebsd/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45174481\"\u003ehttps://news.ycombinator.com/item?id=45174481\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Jaguar Land Rover Extends Shutdown After Cyber Attack",
+      "link": "https://it.slashdot.org/story/25/09/08/2044243/jaguar-land-rover-extends-shutdown-after-cyber-attack",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-08T21:43:25Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://it.slashdot.org/story/25/09/08/2044243/jaguar-land-rover-extends-shutdown-after-cyber-attack\"\u003ehttps://it.slashdot.org/story/25/09/08/2044243/jaguar-land-rover-extends-shutdown-after-cyber-attack\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45174419\"\u003ehttps://news.ycombinator.com/item?id=45174419\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Gemini Apps limits and upgrades for Google AI subscribers",
+      "link": "https://support.google.com/gemini/answer/16275805?hl=en",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-08T21:42:47Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://support.google.com/gemini/answer/16275805?hl=en\"\u003ehttps://support.google.com/gemini/answer/16275805?hl=en\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45174411\"\u003ehttps://news.ycombinator.com/item?id=45174411\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Crossing the Atlantic Ocean. Alone. By Stand-Up-Paddleboard",
+      "link": "https://zeroemissions.eu/en/ocean-crossing-eng",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-08T21:42:36Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://zeroemissions.eu/en/ocean-crossing-eng\"\u003ehttps://zeroemissions.eu/en/ocean-crossing-eng\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45174408\"\u003ehttps://news.ycombinator.com/item?id=45174408\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Great North Run medals show wrong city and river",
+      "link": "https://www.bbc.co.uk/news/articles/c4gq2gdlnygo",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-08T21:42:33Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.bbc.co.uk/news/articles/c4gq2gdlnygo\"\u003ehttps://www.bbc.co.uk/news/articles/c4gq2gdlnygo\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45174406\"\u003ehttps://news.ycombinator.com/item?id=45174406\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "US Holocaust museum removes anti-genocide post after being corelatted with Gaza",
+      "link": "https://hyperallergic.com/1040088/los-angeles-holocaust-museum-walks-back-never-again-statement-sparking-outcry/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-08T21:41:43Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://hyperallergic.com/1040088/los-angeles-holocaust-museum-walks-back-never-again-statement-sparking-outcry/\"\u003ehttps://hyperallergic.com/1040088/los-angeles-holocaust-museum-walks-back-never-again-statement-sparking-outcry/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45174397\"\u003ehttps://news.ycombinator.com/item?id=45174397\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 4\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Comparison of Signed Number Representations in Computers",
+      "link": "https://en.wikipedia.org/wiki/Signed_number_representations",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-08T21:40:37Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://en.wikipedia.org/wiki/Signed_number_representations\"\u003ehttps://en.wikipedia.org/wiki/Signed_number_representations\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45174385\"\u003ehttps://news.ycombinator.com/item?id=45174385\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "FIFA Turns World Cup Tickets into a Variable-Priced Luxury Marketplace",
+      "link": "https://www.npr.org/2025/09/08/nx-s1-5529273/fifa-world-cup-2026-ticket-sales",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-08T21:39:42Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.npr.org/2025/09/08/nx-s1-5529273/fifa-world-cup-2026-ticket-sales\"\u003ehttps://www.npr.org/2025/09/08/nx-s1-5529273/fifa-world-cup-2026-ticket-sales\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45174371\"\u003ehttps://news.ycombinator.com/item?id=45174371\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Racintosh Plus – Rackmount Mac Plus",
+      "link": "http://www.identity4.com/2025-racintosh-plus/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-08T21:39:00Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"http://www.identity4.com/2025-racintosh-plus/\"\u003ehttp://www.identity4.com/2025-racintosh-plus/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45174366\"\u003ehttps://news.ycombinator.com/item?id=45174366\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Formally verifying a floating-point division routine with Gappa – part 1",
+      "link": "https://community.arm.com/arm-community-blogs/b/embedded-and-microcontrollers-blog/posts/formally-verifying-a-floating-point-division-routine-with-gappa-p1",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-08T21:35:41Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://community.arm.com/arm-community-blogs/b/embedded-and-microcontrollers-blog/posts/formally-verifying-a-floating-point-division-routine-with-gappa-p1\"\u003ehttps://community.arm.com/arm-community-blogs/b/embedded-and-microcontrollers-blog/posts/formally-verifying-a-floating-point-division-routine-with-gappa-p1\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45174328\"\u003ehttps://news.ycombinator.com/item?id=45174328\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Atlassian Ascend: discontinuing data center products",
+      "link": "https://www.atlassian.com/blog/announcements/atlassian-ascend",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-08T21:33:51Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.atlassian.com/blog/announcements/atlassian-ascend\"\u003ehttps://www.atlassian.com/blog/announcements/atlassian-ascend\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45174307\"\u003ehttps://news.ycombinator.com/item?id=45174307\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Registration now open: Our no-cost, generative AI training and certification program for veterans",
+      "link": "https://cloud.google.com/blog/topics/training-certifications/register-for-the-gen-ai-training-and-certification-program-for-veterans/",
+      "source": "AI \u0026 Machine Learning",
+      "category": "tech",
+      "publishedAt": "2025-09-08T16:00:00Z",
+      "description": "\u003cdiv class=\"block-paragraph_advanced\"\u003e\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eGrowing up in a Navy family instilled a strong sense of purpose in me. My father’s remarkable 42 years of naval service not only shaped my values, but inspired me to join the Navy myself. Today, as the leader of Google Public Sector, I'm honored to continue that tradition of service in support of our federal government.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eOver the past year, Google Public Sector has made significant strides in delivering AI and secure cloud infrastructure to government agencies. We introduced a Google Workspace discount through \u003c/span\u003e\u003ca href=\"https://cloud.google.com/blog/topics/public-sector/new-google-workspace-cost-saving-offer-available-for-us-federal-government?e=48754805\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eGSA’s OneGov Strategy\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e in April, and just last month expanded that partnership with the introduction of a \u003c/span\u003e\u003ca href=\"https://cloud.google.com/blog/topics/public-sector/introducing-gemini-for-government-supporting-the-us-governments-transformation-with-ai\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003e“Gemini for Government” offering\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e to provide a comprehensive set of AI tools to federal agencies at less than \u003c/span\u003e\u003ca href=\"https://cloud.google.com/blog/topics/public-sector/introducing-gemini-for-government-supporting-the-us-governments-transformation-with-ai?e=48754805\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003e$.50 per government agency\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e for a year. In addition, Google Public Sector secured a $200 million contract with the \u003c/span\u003e\u003ca href=\"https://cloud.google.com/blog/topics/public-sector/google-public-sector-awarded-200-million-contract-to-accelerate-ai-and-cloud-capabilities-across-department-of-defenses-chief-digital-and-artificial-intelligence-office-cdao/?e=48754805\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eDepartment of Defense's (DoD) Chief Digital and Artificial Intelligence Office (CDAO)\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e to accelerate the adoption of AI and cloud capabilities. These are just a few examples of Google’s commitment to the federal workforce.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eIn addition to these efforts, my role at Google Public Sector affords me the opportunity to work closely with a community I know well: our nation's veterans. I've seen firsthand the immense value and leadership skills veterans bring to the table, yet the transition to civilian life can be difficult, with veterans facing challenges ranging from underemployment to difficulties securing meaningful work. \u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eAt Google Public Sector, we’ve long been committed to changing this narrative by empowering the veteran community with the skills and resources needed for successful career transitions. \u003c/span\u003e\u003c/p\u003e\n\u003ch3\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eSign up today for Google Launchpad for Veterans\u003c/strong\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eI’m excited to share that registration is officially open for the next cohort of \u003c/span\u003e\u003ca href=\"https://rsvp.withgoogle.com/events/google_cloud_launchpad_for_vets_2025\" rel=\"noopener\" target=\"_blank\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eGoogle Launchpad for Veterans\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e. Introduced in 2024, this three-week, no-cost, virtual training program provides veterans with the foundational skills necessary to jump start rewarding careers with generative AI. The program is open to US and Canada military veterans and service members. \u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eLast year, we trained over 4,000 veterans to help them transition into high-paying tech roles. This next cohort of learners will gain in-demand skills that enable them to thrive in both functional and technical positions, along with the knowledge to help drive digital transformation through AI within their organization.\u003c/span\u003e\u003c/p\u003e\n\u003ch3\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eBecome a leader in AI digital transformation with this virtual, no-cost program\u003c/strong\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eThe \u003c/span\u003e\u003ca href=\"https://cloud.google.com/learn/certification/generative-ai-leader\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eGen AI Leader training\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e, which does not require previous technical experience, kicks off with a two-day virtual \u003c/span\u003e\u003ca href=\"https://rsvp.withgoogle.com/events/google_cloud_launchpad_for_vets_2025\" rel=\"noopener\" target=\"_blank\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eevent\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e on November 13th and 14th. You’ll enjoy interactive training sessions and a panel discussion with veterans from Google and learn:\u003c/span\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eFoundational generative AI knowledge\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e: Grasp the core concepts of generative AI, including Large Language Models (LLMs), machine learning paradigms, and various data types.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eAI ecosystem navigation:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e Learn to navigate the broader AI landscape, encompassing infrastructure, models, platforms, agents, and applications.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003ePractical business applications:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e Explore real-world uses of generative AI within business, with a focus on powerful Google Cloud tools like Gemini and NotebookLM.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eStrategic perspective\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e: Understand how generative AI agents can drive organizational transformation.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eAfter completing the program, you’ll receive a complimentary voucher to take the Gen AI Leader exam. Attendees are encouraged to take the exam between November 21st and December 19th, 2025. After successful completion, you’ll receive Google’s industry-recognized Gen AI Leader certification, a valuable credential to help you advance your career.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eIf you’d like additional practice before taking the exam, we're offering optional exam preparation sessions on November 17th, and 21st. As a bonus, the first 500 individuals to pass the exam will receive a voucher for their very own pair of \u003c/span\u003e\u003ca href=\"https://shop.merch.google/shop/apparel/socks\" rel=\"noopener\" target=\"_blank\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eGoogle socks\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e! \u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"https://rsvp.withgoogle.com/events/google_cloud_launchpad_for_vets_2025\" rel=\"noopener\" target=\"_blank\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eRegister today\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e and get ready to translate your military experience to a powerful career where you can apply the latest in AI, security, and cloud technologies to public sector missions. \u003c/span\u003e\u003c/p\u003e\n\u003ch3\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eLearn more about Google Public Sector\u003c/strong\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eTo learn more about Google Public Sector partners, peers, and partners are building the future, join us for our \u003c/span\u003e\u003ca href=\"https://cloudonair.withgoogle.com/events/public-sector-summit-2025\" rel=\"noopener\" target=\"_blank\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003ePublic Sector Summit\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e, held in Washington, DC on October 29th. You can explore more content at publicsector.google.\u003c/span\u003e\u003c/p\u003e\u003c/div\u003e"
+    }
+  ],
+  "generatedAt": "2025-09-09T07:08:57.023276406+09:00"
+}
