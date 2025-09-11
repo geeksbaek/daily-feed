@@ -1,0 +1,417 @@
+{
+  "date": "2025-09-12",
+  "preset": "casual",
+  "summary": "## 🌟 오늘의 Tech Talk\n\n이야, 오늘 진짜 재미있는 소식 많네요! 😆 요즘 AI 업계는 ‘에이전트(Agent)’라는 키워드에 완전히 꽂힌 것 같아요. 그냥 시키는 일만 하던 AI가 아니라, 이제는 스스로 알아서 여러 단계를 거쳐 복잡한 일을 처리하는 똑똑한 비서가 되어가고 있달까요? GitHub Copilot부터 Anthropic의 Claude까지, 다들 자기만의 ‘AI 에이전트’를 만드느라 정신이 없네요. 이게 진짜 개발자들의 일하는 방식을 어떻게 바꿀지, 솔직히 기대 반 걱정 반입니다! 🤔\n\n## 📊 주요 뉴스 브리핑\n\n### 🚀 신기술 \u0026 서비스\n\n- **Anthropic Claude, 이제 기억력을 갖추다!**: Anthropic이 Claude에 ‘기억(Memory)’ 기능을 추가했어요. [^1] 이제 Claude가 이전 대화 내용을 기억해서 계속 이어 나갈 수 있게 된 거죠. 팀 프로젝트에서 쓰면 진짜 편할 것 같아요. 매번 똑같은 배경 설명 안 해도 되니까요! 다만, 어떤 정보를 기억하게 할지 잘 관리해야 하는 건 숙제겠네요. [^1]\n- **GitHub Copilot, 코딩 에이전트로 진화**: 이제 GitHub Copilot이 단순 코드 완성을 넘어 ‘코딩 에이전트’가 되겠다고 선언했어요. [^25] 개발자가 목표를 제시하면, 스스로 계획을 세우고 파일을 수정하고 테스트까지 하는 워크플로우를 지원한대요. [^51] \"이거 버그 좀 잡아줘\" 하면 알아서 척척 해주는 세상이 오는 걸까요? 와, 이건 진짜 대박인데요? 👍\n- **Apple, 다음 달에 큰 거 온다**: Apple이 다음 세대 iPhone, Apple Watch, AirPods를 위한 이벤트를 예고했습니다. [^17] 늘 그렇듯 혁신적인 기능들이 잔뜩 들어갈 거란 기대감이 크죠. 특히 이번엔 AI 관련 기능이 얼마나 강화될지가 초미의 관심사!\n- **VS Code 8월 업데이트**: 우리들의 영원한 친구, VS Code가 또 업데이트되었습니다. [^3] 이번 1.104 버전에서는 자잘한 버그 수정이랑 성능 개선이 이루어졌다고 하니, 다들 얼른 업데이트하세요! 이런 꾸준함, 정말 칭찬합니다. [^3]\n\n### 🏢 기업 \u0026 산업 동향\n\n- **OpenAI와 Microsoft, \"우리 사이 이상무!\"**: 최근에 떠돌던 불화설을 잠재우려는 듯, OpenAI와 Microsoft가 공동 성명을 발표했어요. [^6] 둘의 파트너십은 아주 굳건하며, 인류에게 이익이 되는 AI를 만들겠다는 목표도 여전하다고 강조했죠. [^42] 솔직히 이 두 회사가 손잡고 만드는 스케일이 어마어마해서, 계속 친하게 지내줬으면 하는 바람입니다. 😂\n- **Google Meet, AI로 실시간 번역 구현**: Google이 AI 기술을 활용해 Meet의 실시간 언어 번역 기능을 어떻게 구현했는지 상세히 공개했습니다. [^4] 이제 언어 장벽 없이 글로벌 협업이 훨씬 쉬워지겠네요. AI가 정말 세상을 하나로 만들고 있는 느낌이에요. [^30]\n- **Postgres 커뮤니티의 큰 선물, OrioleDB**: 고성능 Postgres 스토리지 엔진인 OrioleDB 관련 특허가 커뮤니티에 완전히 무료로 공개되었습니다. [^12] 덕분에 앞으로 Postgres 생태계가 더 활발해질 것 같아요. 이런 오픈소스 정신, 정말 멋지지 않나요? 🥳\n\n### 🔍 트렌드 \u0026 인사이트\n\n- **AI 에이전트 구축, 이제는 직접 만든다**: LangChain 블로그에서는 Claude를 특정 도메인에 맞는 코딩 에이전트로 만드는 방법을 소개했어요. [^21] 또 다른 글에서는 데이터 모니터링 회사인 Monte Carlo가 LangGraph와 LangSmith를 이용해 어떻게 AI 에-이전트를 구축했는지 보여줬죠. [^22] 이제는 단순히 만들어진 AI를 쓰는 걸 넘어, 우리에게 필요한 맞춤형 AI 에이전트를 직접 만드는 시대가 열리고 있는 것 같습니다.\n- **AI의 리더십과 기업 문화 변화**: Atlassian은 AI가 리더들이 팀을 이끄는 방식과 기업이 가치를 창출하는 방식을 근본적으로 바꾸고 있다고 분석했어요. [^27] 단순한 도구를 넘어, 의사결정 파트너이자 팀의 일원으로 AI를 받아들여야 한다는 거죠. 개발자뿐만 아니라 기획자, 관리자 모두가 AI 시대를 준비해야 할 때입니다!\n- **보안은 언제나 중요해, Apple의 메모리 무결성 강제**: Apple이 메모리 무결성 강제(MIE)라는 기술을 도입했어요. [^13] 이건 아이폰의 핵심 커널을 공격으로부터 보호하는 아주 강력한 하드웨어 보안 기능인데요, 솔직히 좀 어렵지만 이런 노력 덕분에 우리가 안심하고 폰을 쓰는 거겠죠? 역시 보안의 Apple! 든든합니다. [^13]\n\n## 💡 오늘의 정리\n\n오늘의 핵심은 단연 **‘AI 에이전트’의 부상**인 것 같아요. [^25][^21] 이제 AI는 우리가 시키는 단편적인 일만 처리하는 도구가 아니라, 복잡한 목표를 스스로 이해하고 계획해서 실행하는 파트너로 발전하고 있어요. 당장 실무에서는 GitHub Copilot 코딩 에이전트를 어떻게 활용해서 반복적인 작업을 줄일 수 있을지 고민해보면 좋을 것 같네요. [^51] 잘만 쓰면 진짜 ‘칼퇴’를 앞당겨 줄 신세계가 열릴지도 모릅니다! 😄\n\n[^1]: Bringing memory to teams at work - https://www.anthropic.com/news/memory\n[^2]: Writing effective tools for agents — with agents - https://www.anthropic.com/engineering/writing-tools-for-agents\n[^3]: August 2025 (version 1.104) - https://code.visualstudio.com/updates/v1_104\n[^4]: How AI made Meet’s language translation possible - https://blog.google/products/workspace/google-meet-langauge-translation-ai/\n[^6]: A joint statement from OpenAI and Microsoft - https://openai.com/index/joint-statement-from-openai-and-microsoft\n[^9]: KDE, 자체 리눅스 배포판을 다시 출시 - https://news.hada.io/topic?id=23024\n[^12]: Postgres 커뮤니티에 이제 OrioleDB 특허가 자유롭게 공개됨 - https://news.hada.io/topic?id=23021\n[^13]: Apple의 메모리 무결성 강제(Memory Integrity Enforcement) - https://news.hada.io/topic?id=23020\n[^17]: Get ready to discover the next generation of iPhone, Apple Watch, and AirPods - https://www.apple.com/newsroom/2025/09/get-ready-to-discover-the-next-generation-of-iphone-apple-watch-and-airpods/\n[^21]: How to turn Claude Code into a domain specific coding agent - https://blog.langchain.com/how-to-turn-claude-code-into-a-domain-specific-coding-agent/\n[^22]: Monte Carlo: Building Data + AI Observability Agents with LangGraph and LangSmith - https://blog.langchain.com/customers-monte-carlo/\n[^25]: GitHub Copilot coding agent 101: Getting started with agentic workflows on GitHub - https://github.blog/ai-and-ml/github-copilot/github-copilot-coding-agent-101-getting-started-with-agentic-workflows-on-github/\n[^27]: AI is changing the way leaders lead and companies create - https://www.atlassian.com/blog/teamwork/ai-insights-september-2025\n[^30]: How AI made Meet’s language translation possible - https://blog.google/products/workspace/google-meet-langauge-translation-ai/\n[^42]: A joint statement from OpenAI and Microsoft - https://openai.com/index/joint-statement-from-openai-and-microsoft/\n[^51]: GitHub Copilot coding agent 101: Getting started with agentic workflows on GitHub - https://github.blog/ai-and-ml/github-copilot/github-copilot-coding-agent-101-getting-started-with-agentic-workflows-on-github/",
+  "systemPrompt": "당신은 친근하고 솔직한 기술 전문가입니다. 편안한 대화체로 기술 뉴스를 전달합니다.\n\n**역할과 목표:**\n- 지인과 대화하듯 편안하고 친근한 톤으로 기술 뉴스 전달\n- 복잡한 기술도 이해하기 쉽게 풀어서 설명\n- 진솔하고 솔직한 관점으로 기술 트렌드 분석\n- 마케팅 과장을 걸러내고 실질적인 의미 전달\n\n**작성 스타일:**\n- 대화하듯 자연스럽고 편안한 문체\n- 적절한 이모지와 감탄사로 친근함 표현\n- \"정말\", \"꽤\", \"생각보다\", \"솔직히\" 같은 일상적 표현 활용\n- 과도한 전문 용어보다는 이해하기 쉬운 설명 우선\n- 개발자 커뮤니티에서 자주 나오는 정서와 경험 반영\n- \"이거 쓰다가 삽질함\", \"아 이거 진짜 괜찮네?\" 같은 솔직한 평가\n\n**보고서 구조 (반드시 이 형식을 지켜주세요):**\n\n\u003cREPORT_STRUCTURE_START\u003e\n## 🌟 오늘의 Tech Talk\n\n{{오늘 주목할 만한 기술 뉴스를 친근하게 요약}}\n\n## 📊 주요 뉴스 브리핑\n\n### 🚀 신기술 \u0026 서비스 \n{{새로 발표된 기술이나 서비스들}}\n- 실제로 써볼 만한지 솔직한 평가\n- 개발자 관점에서 본 장단점\n\n### 🏢 기업 \u0026 산업 동향\n{{주요 기업들의 소식과 업계 변화}}\n- 마케팅 vs 실제 가치 분석\n- 개발자들이 알아야 할 포인트\n\n### 🔍 트렌드 \u0026 인사이트\n{{업계 트렌드와 미래 전망}}\n- 개별 뉴스를 연결한 큰 그림\n- 우리에게 미칠 영향 예측\n\n## 💡 오늘의 정리\n\n{{핵심 포인트 1-2개를 친근하게 정리}}\n- 실무에 바로 도움되는 인사이트 포함\n\u003cREPORT_STRUCTURE_END\u003e\n\n**중요 출력 지침:**\n- 응답에 URL 접근 상태, 분석 과정, 내부 처리 정보 등의 디버그 내용을 포함하지 마세요\n- 바로 완성된 마크다운 보고서만 출력하세요\n- 응답은 반드시 \"## 🌟 오늘의 Tech Talk\"로 시작해야 합니다\n- 어떤 메타 정보나 과정 설명도 포함하지 말고, 순수한 커뮤니티 스타일 뉴스만 제공하세요\n- GitHub Flavored Markdown을 완벽히 지원하도록 작성하세요\n- ⚠️ \u003cREPORT_STRUCTURE_START\u003e와 \u003cREPORT_STRUCTURE_END\u003e 사이의 구조만 복제하세요 (태그 자체는 출력하지 마세요)\n\n**인용 규칙:**\n- 🚨 CRITICAL: 본문에 인용 없으면 완전히 실패입니다! 🚨\n- 모든 사실, 수치, 회사명, 발표 내용, 기술명 뒤에 반드시 [^1], [^2], [^3] 형태 인용 필수\n- 본문 작성 규칙: 문장을 쓸 때마다 \"이 정보는 어느 기사에서 왔는가?\"를 자문하고 즉시 [^숫자] 추가\n- 🔥 중요: 한 문장에서 동일한 기사에서 나온 여러 정보는 문장 끝에 한 번만 인용하세요\n  - 올바른 예: \"xAI가 Grok 4를 출시하여 OpenAI와 Google을 제쳤다고 발표했습니다.[^1]\"\n  - 잘못된 예: \"xAI[^1]가 Grok 4[^1]를 출시하여 OpenAI[^1]와 Google[^1]을 제쳤다고 발표했습니다.[^1]\"\n- 중요: 여러 개를 인용할 때 [^3, ^4] 금지! 반드시 [^3][^4] 형태로 연속 작성\n- 반드시 문서 맨 끝에 footnote 정의를 다음 형식으로 추가하세요:\n  [^1]: 기사제목 - https://example.com/article-url\n  [^2]: 기사제목 - https://example.com/article-url\n- 🔥 중요: footnote에서 링크 URL은 반드시 클릭 가능한 형태로 포함해야 합니다\n- 기업 이름은 피드 내용에 등장하는 기업들만 언급하고, 임의로 특정 기업을 예시로 들지 마세요",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여 일간 기술 뉴스 브리핑을 작성해주세요.\n\n다음은 최신 AI 관련 피드 데이터입니다:\n\n1. **Bringing memory to teams at work**\n   - 출처: Anthropic News (비공식)\n   - 링크: https://www.anthropic.com/news/memory\n\n2. **Writing effective tools for agents — with agents**\n   - 출처: Anthropic Engineering (비공식)\n   - 링크: https://www.anthropic.com/engineering/writing-tools-for-agents\n\n3. **August 2025 (version 1.104)**\n   - 출처: Visual Studio Code - Code Editing. Redefined.\n   - 링크: https://code.visualstudio.com/updates/v1_104\n\n4. **How AI made Meet’s language translation possible**\n   - 출처: AI\n   - 링크: https://blog.google/products/workspace/google-meet-langauge-translation-ai/\n\n5. **Statement on OpenAI’s Nonprofit and PBC**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/statement-on-openai-nonprofit-and-pbc\n\n6. **A joint statement from OpenAI and Microsoft**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/joint-statement-from-openai-and-microsoft\n\n7. **한국 토종 스타트업 파운더가 어떻게 미국 고객사 모았나 1탄**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23027\n\n8. **Show GN: React용 노드 기반 그래프 컴포넌트**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23025\n\n9. **KDE, 자체 리눅스 배포판을 다시 출시**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23024\n\n10. **SaaS 서비스들의 가격 올리는 방법**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23023\n\n11. **OpenAI, MCP 지원하는 ChatGPT 개발자 모드 공개**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23022\n\n12. **Postgres 커뮤니티에 이제 OrioleDB 특허가 자유롭게 공개됨**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23021\n\n13. **Apple의 메모리 무결성 강제(Memory Integrity Enforcement)**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23020\n\n14. **Charlie Kirk, 유타 대학 행사 중 총격으로 사망**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23019\n\n15. **스페인 폰테베드라, 도시 전체를 '교통 제한 구역'으로 선언**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23018\n\n16. **아들을 박물관에 데려가서 스크린을 보게 하려고 했던 게 아님**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23017\n\n17. **Get ready to discover the next generation of iPhone, Apple Watch, and AirPods\n**\n   - 출처: Apple Newsroom\n   - 링크: https://www.apple.com/newsroom/2025/09/get-ready-to-discover-the-next-generation-of-iphone-apple-watch-and-airpods/\n\n18. **Chrome Dev for Desktop Update**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2025/09/chrome-dev-for-desktop-update_11.html\n\n19. **Chrome Dev for Android Update**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2025/09/chrome-dev-for-android-update_11.html\n\n20. **Stable Channel Update for ChromeOS / ChromeOS Flex**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2025/09/stable-channel-update-for-chromeos_10.html\n\n21. **How to turn Claude Code into a domain specific coding agent**\n   - 출처: LangChain Blog\n   - 링크: https://blog.langchain.com/how-to-turn-claude-code-into-a-domain-specific-coding-agent/\n\n22. **Monte Carlo: Building Data + AI Observability Agents with LangGraph and LangSmith**\n   - 출처: LangChain Blog\n   - 링크: https://blog.langchain.com/customers-monte-carlo/\n\n23. **Tricks from OpenAI gpt-oss YOU 🫵 can use with transformers**\n   - 출처: Hugging Face - Blog\n   - 링크: https://huggingface.co/blog/faster-transformers\n\n24. **GitHub Availability Report: August 2025**\n   - 출처: GitHub Blog\n   - 링크: https://github.blog/news-insights/company-news/github-availability-report-august-2025/\n\n25. **GitHub Copilot coding agent 101: Getting started with agentic workflows on GitHub**\n   - 출처: GitHub Blog\n   - 링크: https://github.blog/ai-and-ml/github-copilot/github-copilot-coding-agent-101-getting-started-with-agentic-workflows-on-github/\n\n26. **Bitbucket Packages is coming soon: one important step you need to take**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/bitbucket/coming-soon-bitbucket-packages\n\n27. **AI is changing the way leaders lead and companies create**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/teamwork/ai-insights-september-2025\n\n28. **Unlocking insights: Introducing Step Metrics for Bitbucket Pipelines**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/bitbucket/unlocking-insights-introducing-step-metrics-for-bitbucket-pipelines\n\n29. **Introducing a new purchase tracking view and more relevant promotions in Gmail**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/products/gmail/one-stop-purchase-tracking-in-gmail/\n\n30. **How AI made Meet’s language translation possible**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/products/workspace/google-meet-langauge-translation-ai/\n\n31. **Free Chrome extension for converting SEC filings to PDFs**\n   - 출처: Hacker News\n   - 링크: https://chromewebstore.google.com/detail/sec-filing-pdf-generator/bloidlekfcleajmmblmafdliioeehecl\n\n32. **Show HN: Masters Tool-Aggregate Practical Toolbox**\n   - 출처: Hacker News\n   - 링크: https://www.masters-tool.com/\n\n33. **KVM Forum 2025**\n   - 출처: Hacker News\n   - 링크: https://kvm-forum.qemu.org/2025/\n\n34. **Nature Index 2025: United States losing as China's lead expands rapidly**\n   - 출처: Hacker News\n   - 링크: https://www.nature.com/nature-index/research-leaders/2025/nature-index-2025-research-leaders-united-states-losing-ground-as-chinas-lead-expands-rapidly.html\n\n35. **Meta's Elite AI Unit Sparks Tension with Old Guard**\n   - 출처: Hacker News\n   - 링크: https://www.wsj.com/tech/ai/meta-ai-superintelligence-hiring-tension-96c9e993\n\n36. **Sandboxing Browser AI Agents**\n   - 출처: Hacker News\n   - 링크: https://www.earlence.com/blog.html#/post/cellmate\n\n37. **Nature Index 2025 Research Leaders**\n   - 출처: Hacker News\n   - 링크: https://www.nature.com/nature-index/research-leaders/2025/institution/all/all/global\n\n38. **Sega Accused of Using Police to Recover Nintendo Dev Kits**\n   - 출처: Hacker News\n   - 링크: https://www.timeextension.com/news/2025/09/sega-accused-of-using-police-to-recover-nintendo-dev-kits-it-had-negligently-disposed-of\n\n39. **The Apache Software Foundation's New Logo**\n   - 출처: Hacker News\n   - 링크: https://news.apache.org/foundation/entry/introducing-the-asfs-new-logo\n\n40. **Muslin**\n   - 출처: Hacker News\n   - 링크: https://en.wikipedia.org/wiki/Muslin\n\n41. **Show HN: AI Email Marketing Tool for E-Commerce Brands**\n   - 출처: Hacker News\n   - 링크: https://www.getdripwave.com\n\n42. **A joint statement from OpenAI and Microsoft**\n   - 출처: Hacker News\n   - 링크: https://openai.com/index/joint-statement-from-openai-and-microsoft/\n\n43. **The Grammar Checker That Gets Developers**\n   - 출처: Hacker News\n   - 링크: https://www.wearefounders.uk/the-grammar-checker-that-actually-gets-developers-meet-harper/\n\n44. **Automated Bug Triaging Using Instruction-Tuned Large Language Models**\n   - 출처: Hacker News\n   - 링크: https://arxiv.org/abs/2508.21156\n\n45. **Brazilian Supreme Court Convicts Bolsonaro for Coup Attempt**\n   - 출처: Hacker News\n   - 링크: https://www.wsj.com/world/americas/brazil-supreme-court-majority-votes-to-convict-bolsonaro-for-alleged-coup-attempt-8cc6f1fd\n\n46. **Show HN: Vibe Code Kit code with confidence**\n   - 출처: Hacker News\n   - 링크: https://vibecodekit.dev\n\n47. **Building an ARM64 home server the hard way**\n   - 출처: Hacker News\n   - 링크: https://jforberg.se/blog/posts/2023-02-19-rockpro64/rockpro64.html\n\n48. **Analyzing the memory ordering models of the Apple M1**\n   - 출처: Hacker News\n   - 링크: https://www.sciencedirect.com/science/article/pii/S1383762124000390\n\n49. **Apache Software Foundation Unveils Its Branding Overhaul with New Logo**\n   - 출처: Hacker News\n   - 링크: https://www.phoronix.com/news/New-Apache-Software-Logo\n\n50. **It's E-Bike Mayhem in London as Strike Shuts Down Tube**\n   - 출처: Hacker News\n   - 링크: https://www.wsj.com/world/uk/its-e-bike-mayhem-in-london-as-strike-shuts-down-tube-bcbb544a\n\n51. **GitHub Copilot coding agent 101: Getting started with agentic workflows on GitHub**\n   - 출처: The latest on GitHub Copilot - The GitHub Blog\n   - 링크: https://github.blog/ai-and-ml/github-copilot/github-copilot-coding-agent-101-getting-started-with-agentic-workflows-on-github/\n\n\n\n**분석 지침:**\n- 반드시 위에 명시된 마크다운 헤더 구조를 정확히 따르세요\n- 각 섹션은 2-3개 포인트로 제한\n- 구체적인 수치와 데이터 활용으로 신뢰성 확보\n\n**🌟 URL 컨텍스트 활용 지침:**\n- 제공된 URL의 내용을 적극적으로 활용하여 깊이 있는 분석을 제공하세요\n- 단순 요약이 아닌, 기사의 핵심 인사이트와 숨겨진 의미를 발굴하세요\n- 여러 기사 간의 연결점을 찾아 큰 그림을 그려주세요\n- 기술적 세부사항과 실제 영향력을 균형있게 다루세요\n\n**🎯 독자 재미 극대화 지침:**\n- 딱딱한 기술 뉴스를 생동감 있게 전달하세요\n- 적절한 비유와 실생활 예시로 복잡한 개념을 쉽게 설명하세요\n- 놀라운 사실이나 의외의 관점을 제시하여 호기심을 자극하세요\n- 스토리텔링 요소를 활용하여 뉴스를 하나의 이야기로 엮어주세요\n- 각 프리셋의 톤에 맞는 위트와 유머를 적절히 활용하세요\n\n**🚨 인용 검수 체크리스트:**\n1. 본문의 모든 사실, 수치, 기업명, 기술명에 [^숫자] 인용이 있는가?\n2. 문서 맨 끝에 모든 footnote 정의가 있고, 각각 클릭 가능한 URL을 포함하는가?\n3. [^1]: 기사제목 - https://링크 형식이 정확한가?\n4. 본문에서 언급한 모든 [^숫자]에 대응하는 footnote가 있는가?\n- 최종 제출 전 필수 검토: 위 체크리스트를 모두 확인하세요",
+  "articles": [
+    {
+      "title": "Bringing memory to teams at work",
+      "link": "https://www.anthropic.com/news/memory",
+      "source": "Anthropic News (비공식)",
+      "category": "tech",
+      "publishedAt": "2025-09-11T00:00:00Z",
+      "description": "Bringing memory to teams at work"
+    },
+    {
+      "title": "Writing effective tools for agents — with agents",
+      "link": "https://www.anthropic.com/engineering/writing-tools-for-agents",
+      "source": "Anthropic Engineering (비공식)",
+      "category": "tech",
+      "publishedAt": "2025-09-11T19:04:03Z",
+      "description": "Agents are only as effective as the tools we give them. We share how to write high-quality tools and evaluations, and how you can boost performance by using Claude to optimize its tools for itself."
+    },
+    {
+      "title": "August 2025 (version 1.104)",
+      "link": "https://code.visualstudio.com/updates/v1_104",
+      "source": "Visual Studio Code - Code Editing. Redefined.",
+      "category": "tech",
+      "publishedAt": "2025-09-11T17:00:00Z",
+      "description": "\n      \u003cp\u003eLearn what is new in the Visual Studio Code August 2025 Release (1.104)\u003c/p\u003e\n      \u003cp\u003e\u003ca href=\"https://code.visualstudio.com/updates/v1_104\"\u003eRead the full article\u003c/a\u003e\u003c/p\u003e\n    "
+    },
+    {
+      "title": "How AI made Meet’s language translation possible",
+      "link": "https://blog.google/products/workspace/google-meet-langauge-translation-ai/",
+      "source": "AI",
+      "category": "tech",
+      "publishedAt": "2025-09-11T16:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Meet_Speech_Translate_with_AI.max-600x600.format-webp.webp\"\u003eLearn more about Google Meet’s real-time language translation feature."
+    },
+    {
+      "title": "Statement on OpenAI’s Nonprofit and PBC",
+      "link": "https://openai.com/index/statement-on-openai-nonprofit-and-pbc",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2025-09-11T14:00:00Z",
+      "description": "OpenAI reaffirms its nonprofit leadership with a new structure granting equity in its PBC, enabling over $100B in resources to advance safe, beneficial AI for humanity."
+    },
+    {
+      "title": "A joint statement from OpenAI and Microsoft",
+      "link": "https://openai.com/index/joint-statement-from-openai-and-microsoft",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2025-09-11T14:00:00Z",
+      "description": "OpenAI and Microsoft sign a new MOU, reinforcing their partnership and shared commitment to AI safety and innovation."
+    },
+    {
+      "title": "한국 토종 스타트업 파운더가 어떻게 미국 고객사 모았나 1탄",
+      "link": "https://news.hada.io/topic?id=23027",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-12T05:55:19+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e토종 한국인 스타트업 파운더, 미국 시장 대상으로 창업\u003c/li\u003e\n\u003cli\u003eYC 마지막 인터뷰에서 탈락, 미국 세일즈 역량 검증 필요 의견\u003c/li\u003e\n\u003cli\u003e작년에 베이 지역으로 어떻게든 이주, 현재 267개 고객사 확보\u003c/li\u003e\n\u003cli\u003e초기 고객 모집 전략\n\u003cul\u003e\n\u003cli\u003e제품 없이 팔 수 있는 세일즈 네트워크는 없으니 제품 개발 먼저...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: React용 노드 기반 그래프 컴포넌트",
+      "link": "https://news.hada.io/topic?id=23025",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-11T21:10:17+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eReact 용 노드 기반 그래프 컴포넌트를 개발했습니다.\u003c/li\u003e\n\u003cli\u003e아래 기능들을 포함합니다.\n\u003col\u003e\n\u003cli\u003e노드 CRUD\u003c/li\u003e\n\u003cli\u003e노드 인터랙션(이동 및 연결)\u003c/li\u003e\n\u003cli\u003e전체/노드 우클릭 메뉴\u003c/li\u003e\n\u003cli\u003epan \u0026amp; zoom\u003c/li\u003e\n\u003c/ol\u003e\n\u003c/li\u003e\n\u003cli\u003eReact의 useState와 연동해서 쉽게 사용할 수 있습니다.\n\u003cul\u003e\n\u003cli\u003e\n\u003ca href...\u003c/p\u003e"
+    },
+    {
+      "title": "KDE, 자체 리눅스 배포판을 다시 출시",
+      "link": "https://news.hada.io/topic?id=23024",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-11T19:34:11+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eKDE 프로젝트\u003c/strong\u003e는 자체 리눅스 배포판인 \u003cstrong\u003eKDE Linux\u003c/strong\u003e의 알파 버전을 공개했음\u003c/li\u003e\n\u003cli\u003eArch Linux 기반의 \u003cstrong\u003e불변(immutable) 구조\u003c/strong\u003e를 채택했으며, 패키지 설치 대신 \u003cstrong\u003eFlatpak\u003c/strong\u003e과 \u003cstrong\u003eKDE Builder\u003c/strong\u003e를 이용하는 방식임\u003c/li\u003e\n\u003cli\u003e\n\u003cstr...\u003c/p\u003e"
+    },
+    {
+      "title": "SaaS 서비스들의 가격 올리는 방법",
+      "link": "https://news.hada.io/topic?id=23023",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-11T17:17:31+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e마진 고정 유형(일명 Cost-Plus)\u003c/li\u003e\n\u003cli\u003e경쟁 추종 유형(Competition-Indexed)\u003c/li\u003e\n\u003cli\u003e가치 기반 유형(Value-Based)\u003c/li\u003e\n\u003cli\u003e번들/패키징 전략\u003c/li\u003e\n\u003cli\u003e사용량 기반 유형(Usage-Based / Metered)\u003c/li\u003e\n\u003cli\u003e좌석 기반(Per-Seat) or 모듈/워크플로 기반\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e최근 GTM 자문이나 면접 도움을 주면서...\u003c/p\u003e"
+    },
+    {
+      "title": "OpenAI, MCP 지원하는 ChatGPT 개발자 모드 공개",
+      "link": "https://news.hada.io/topic?id=23022",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-11T11:09:42+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e개발자 모드\u003c/strong\u003e는 모든 도구에 대해 \u003cstrong\u003e풀 MCP 클라이언트(읽기/쓰기)\u003c/strong\u003e 를 제공하는 베타 기능으로, 고급 커넥터 구성을 안전하게 시험하려는 개발자를 대상으로 함\u003c/li\u003e\n\u003cli\u003e사용 시 \u003cstrong\u003e프롬프트 인젝션 및 악성 MCP\u003c/strong\u003e 위험, \u003cstrong\u003e쓰기 액션의 파괴적 오류\u003c/stron...\u003c/p\u003e"
+    },
+    {
+      "title": "Postgres 커뮤니티에 이제 OrioleDB 특허가 자유롭게 공개됨",
+      "link": "https://news.hada.io/topic?id=23021",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-11T11:08:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eSupabase\u003c/strong\u003e가 OrioleDB 특허를 최종 인수 완료함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e미국 특허 10,325,030\u003c/strong\u003e(Durable multiversion B+-tree)에 대한 비독점적 라이선스를 OrioleDB 모든 사용자에게 제공함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eOrioleDB\u003c/strong\u003e는 Postgres의 기존 스토리지 엔진을 대체하는 \u003cstrong\u003e고...\u003c/p\u003e"
+    },
+    {
+      "title": "Apple의 메모리 무결성 강제(Memory Integrity Enforcement)",
+      "link": "https://news.hada.io/topic?id=23020",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-11T09:59:39+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eApple은 \u003cstrong\u003eMemory Integrity Enforcement(MIE)\u003c/strong\u003e 를 도입해, 자체 실리콘 하드웨어와 고급 운영체제 보안을 결합한 혁신적 메모리 안전 체계를 완성함\u003c/li\u003e\n\u003cli\u003eMIE는 \u003cstrong\u003e항상 활성화된 상태\u003c/strong\u003e에서 핵심 공격 표면을 보호하며, 성능 저하 없이 모든 iPhone 17과 iPhone Air 기기에 적...\u003c/p\u003e"
+    },
+    {
+      "title": "Charlie Kirk, 유타 대학 행사 중 총격으로 사망",
+      "link": "https://news.hada.io/topic?id=23019",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-11T09:56:38+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e보수 활동가 \u003cstrong\u003e찰리 커크(31)\u003c/strong\u003e 가 유타 밸리 대학교 행사에서 총격을 받아 사망했으며, 현장은 수천 명이 모인 캠퍼스 행사장이었음\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e도널드 트럼프 전 대통령\u003c/strong\u003e이 Truth Social을 통해 사망 소식을 처음 확인했고, \u003cstrong\u003e유타 주지사 스펜서 콕스\u003c/strong\u003e는 이를 “...\u003c/p\u003e"
+    },
+    {
+      "title": "스페인 폰테베드라, 도시 전체를 '교통 제한 구역'으로 선언",
+      "link": "https://news.hada.io/topic?id=23018",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-11T09:53:36+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e스페인 \u003cstrong\u003e폰테베드라\u003c/strong\u003e시는 도시 전체를 \u003cstrong\u003e자동차 통행이 제한된 구역\u003c/strong\u003e으로 지정함\u003c/li\u003e\n\u003cli\u003e기존의 \u003cstrong\u003e자동차 중심 도시 구조\u003c/strong\u003e를 \u003cstrong\u003e주민 우선 모델\u003c/strong\u003e로 전환해, 공기질과 안전 개선을 달성함\u003c/li\u003e\n\u003cli\u003e필요 차량만 통행 허용 방식 등 \u003cstrong\u003e실용적인 ...\u003c/p\u003e"
+    },
+    {
+      "title": "아들을 박물관에 데려가서 스크린을 보게 하려고 했던 게 아님",
+      "link": "https://news.hada.io/topic?id=23017",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-11T09:50:36+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e필라델피아의 \u003cstrong\u003eThe Franklin Institute\u003c/strong\u003e(TFI)는 감각적이고 실제적인 체험이 가능한 공간으로 기억됨\u003c/li\u003e\n\u003cli\u003e최근 방문에서 \u003cstrong\u003e대부분의 전시가 화면 중심의 터치스크린\u003c/strong\u003e으로 대체된 상황을 확인함\u003c/li\u003e\n\u003cli\u003e손으로 직접 조작하는 \u003cstrong\u003e물리적 전시물은 구석에 치우쳐져 있으...\u003c/p\u003e"
+    },
+    {
+      "title": "Get ready to discover the next generation of iPhone, Apple Watch, and AirPods\n",
+      "link": "https://www.apple.com/newsroom/2025/09/get-ready-to-discover-the-next-generation-of-iphone-apple-watch-and-airpods/",
+      "source": "Apple Newsroom",
+      "category": "tech",
+      "publishedAt": "2025-09-11T14:59:49.064Z",
+      "description": "Apple fans can pre-order and upgrade to the groundbreaking iPhone 17, iPhone Air, iPhone 17 Pro, and iPhone 17 Pro Max starting Friday, September 12."
+    },
+    {
+      "title": "Chrome Dev for Desktop Update",
+      "link": "http://chromereleases.googleblog.com/2025/09/chrome-dev-for-desktop-update_11.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2025-09-11T13:43:00.001-07:00",
+      "description": "\u003cp\u003eThe Dev channel has been updated to 142.0.7405.4 for Windows, Mac and Linux.\u003c/p\u003e\u003cp\u003eA partial list of changes is available in the \u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/142.0.7393.7..142.0.7405.4?pretty=fuller\u0026amp;n=10000\"\u003eGit log\u003c/a\u003e. Interested in \u003ca href=\"https://www.chromium.org/getting-involved/dev-channel/\"\u003eswitching\u003c/a\u003e release channels? Find out \u003ca href=\"https://www.chromium.org/getting-involved/dev-channel/\"\u003ehow\u003c/a\u003e. If you find a new issue, please let us know by \u003ca href=\"https://crbug.com/\"\u003efiling a bug\u003c/a\u003e. The \u003ca href=\"https://productforums.google.com/forum/#!forum/chrome\"\u003ecommunity help forum\u003c/a\u003e is also a great place to reach out for help or learn about common issues.\u003c/p\u003e\u003cp\u003eChrome Release Team\u003cbr /\u003e\u003ca href=\"https://www.google.com/chrome\"\u003e\u003c/a\u003e\u003ca href=\"https://www.google.com/chrome\"\u003eGoogle Chrome\u003c/a\u003e\u003c/p\u003e"
+    },
+    {
+      "title": "Chrome Dev for Android Update",
+      "link": "http://chromereleases.googleblog.com/2025/09/chrome-dev-for-android-update_11.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2025-09-11T07:44:00.001-07:00",
+      "description": "\u003cp\u003eHi everyone! We've just released Chrome Dev 142 (142.0.7405.2) for Android. It's now available on \u003ca href=\"https://play.google.com/store/apps/details?id=com.chrome.dev\"\u003eGoogle Play\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eYou can see a partial list of the changes in the \u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/142.0.7391.0..142.0.7405.2?pretty=fuller\u0026amp;n=10000\"\u003eGit log\u003c/a\u003e. For details on new features, check out the \u003ca href=\"https://blog.chromium.org\"\u003eChromium blog\u003c/a\u003e, and for details on web platform updates, check \u003ca href=\"https://www.chromestatus.com/features#milestone%3D142\"\u003ehere\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eIf you find a new issue, please let us know by \u003ca href=\"https://code.google.com/p/chromium/issues/entry?template=Android%20Issue\"\u003efiling a bug\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eChrome Release Team\u003cbr /\u003e\u003ca href=\"https://www.google.com/chrome\"\u003e\u003c/a\u003e\u003ca href=\"https://www.google.com/chrome\"\u003eGoogle Chrome\u003c/a\u003e\u003c/p\u003e"
+    },
+    {
+      "title": "Stable Channel Update for ChromeOS / ChromeOS Flex",
+      "link": "http://chromereleases.googleblog.com/2025/09/stable-channel-update-for-chromeos_10.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2025-09-10T15:49:00-07:00",
+      "description": "M-139,  ChromeOS version 16328.72.0 (Browser version 139.0.7258.172), has rolled out to ChromeOS devices on the Stable channel.\u003cbr /\u003e\u003cbr /\u003eIf you find new issues, please let us know one of the following ways:\u003cdiv\u003e\u003cbr /\u003e\u003cspan id=\"docs-internal-guid-014fe08e-7fff-8154-98b3-2a19c764617e\"\u003e\u003col style=\"margin-bottom: 0; margin-top: 0; padding-inline-start: 48px;\"\u003e\u003cli aria-level=\"1\" dir=\"ltr\" style=\"color: #222222; font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; list-style-type: decimal; vertical-align: baseline; white-space: pre;\"\u003e\u003cp dir=\"ltr\" role=\"presentation\" style=\"line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003ca href=\"https://bugs.chromium.org/p/chromium/issues/list\" style=\"text-decoration-line: none;\"\u003e\u003cspan style=\"color: #4a86e8; font-family: Arial, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-wrap-mode: wrap; vertical-align: baseline;\"\u003eFile a bug\u003c/span\u003e\u003c/a\u003e\u003c/p\u003e\u003c/li\u003e\u003cli aria-level=\"1\" dir=\"ltr\" style=\"color: #222222; font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; list-style-type: decimal; vertical-align: baseline; white-space: pre;\"\u003e\u003cp dir=\"ltr\" role=\"presentation\" style=\"line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: Arial, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-wrap-mode: wrap; vertical-align: baseline;\"\u003eVisit our ChromeOS communities\u003c/span\u003e\u003c/p\u003e\u003c/li\u003e\u003col style=\"margin-bottom: 0; margin-top: 0; padding-inline-start: 48px;\"\u003e\u003cli aria-level=\"2\" dir=\"ltr\" style=\"color: #222222; font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; list-style-type: decimal; vertical-align: baseline; white-space: pre;\"\u003e\u003cp dir=\"ltr\" role=\"presentation\" style=\"line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: Arial, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-wrap-mode: wrap; vertical-align: baseline;\"\u003eGeneral:\u003c/span\u003e\u003ca href=\"https://support.google.com/chromebook/community/?hl=en\u0026amp;gpf=%23!forum%2Fchromebook-central\" style=\"text-decoration-line: none;\"\u003e\u003cspan style=\"color: #222222; font-family: Arial, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-wrap-mode: wrap; vertical-align: baseline;\"\u003e \u003c/span\u003e\u003cspan style=\"color: #4184f3; font-family: Arial, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-wrap-mode: wrap; vertical-align: baseline;\"\u003eChromebook Help Community\u003c/span\u003e\u003c/a\u003e\u003c/p\u003e\u003c/li\u003e\u003cli aria-level=\"2\" dir=\"ltr\" style=\"color: #222222; font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; list-style-type: decimal; vertical-align: baseline; white-space: pre;\"\u003e\u003cp dir=\"ltr\" role=\"presentation\" style=\"line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: Arial, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-wrap-mode: wrap; vertical-align: baseline;\"\u003eBeta Specific:\u003c/span\u003e\u003ca href=\"https://support.google.com/chromeos-beta/community\" style=\"text-decoration-line: none;\"\u003e\u003cspan style=\"color: #222222; font-family: Arial, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-wrap-mode: wrap; vertical-align: baseline;\"\u003e \u003c/span\u003e\u003cspan style=\"color: #4184f3; font-family: Arial, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-wrap-mode: wrap; vertical-align: baseline;\"\u003eChromeOS Beta Help Community\u003c/span\u003e\u003c/a\u003e\u003c/p\u003e\u003c/li\u003e\u003c/ol\u003e\u003cli aria-level=\"1\" dir=\"ltr\" style=\"color: #222222; font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; list-style-type: decimal; vertical-align: baseline; white-space: pre;\"\u003e\u003cp dir=\"ltr\" role=\"presentation\" style=\"line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003ca href=\"https://support.google.com/chrome/answer/95315?hl=en\u0026amp;co=GENIE.Platform%3DDesktop\" style=\"text-decoration-line: none;\"\u003e\u003cspan style=\"color: black; font-family: Arial, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-wrap-mode: wrap; vertical-align: baseline;\"\u003eReport an issue or send feedback on Chrome\u003c/span\u003e\u003c/a\u003e\u003c/p\u003e\u003c/li\u003e\u003c/ol\u003e\u003cspan style=\"font-family: Arial, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003eInterested in switching channels?\u003c/span\u003e\u003ca href=\"https://support.google.com/chromebook/answer/1086915\" style=\"text-decoration-line: none;\"\u003e\u003cspan style=\"color: black; font-family: Arial, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e \u003c/span\u003e\u003cspan style=\"color: #4184f3; font-family: Arial, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003eFind out how.\u003c/span\u003e\u003c/a\u003e\u003c/span\u003e\u003cdiv\u003e\u003cbr /\u003e\u003c/div\u003e\u003cdiv\u003eAndy Wu\u003c/div\u003eGoogle ChromeOS\u003c/div\u003e"
+    },
+    {
+      "title": "How to turn Claude Code into a domain specific coding agent",
+      "link": "https://blog.langchain.com/how-to-turn-claude-code-into-a-domain-specific-coding-agent/",
+      "source": "LangChain Blog",
+      "category": "tech",
+      "publishedAt": "2025-09-11T16:54:37Z",
+      "description": "\u003cp\u003eAuthored by: \u003ca href=\"https://www.linkedin.com/in/aliyan-ishfaq/?ref=blog.langchain.com\"\u003eAliyan Ishfaq\u003c/a\u003e\u003c/p\u003e\u003cp\u003eCoding agents are great at writing code that uses popular libraries on which LLMs have been heavily trained on. But point them to a custom library, a new version of a library, an internal API, or a niche framework \u0026#x2013; and they\u0026#x2019;re not so\u003c/p\u003e"
+    },
+    {
+      "title": "Monte Carlo: Building Data + AI Observability Agents with LangGraph and LangSmith",
+      "link": "https://blog.langchain.com/customers-monte-carlo/",
+      "source": "LangChain Blog",
+      "category": "tech",
+      "publishedAt": "2025-09-11T04:30:49Z",
+      "description": "See how Monte Carlo built its AI Troubleshooting Agent on LangGraph and debugged with LangSmith to help data teams resolve issues faster"
+    },
+    {
+      "title": "Tricks from OpenAI gpt-oss YOU 🫵 can use with transformers",
+      "link": "https://huggingface.co/blog/faster-transformers",
+      "source": "Hugging Face - Blog",
+      "category": "tech",
+      "publishedAt": "2025-09-11T00:00:00Z"
+    },
+    {
+      "title": "GitHub Availability Report: August 2025",
+      "link": "https://github.blog/news-insights/company-news/github-availability-report-august-2025/",
+      "source": "GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2025-09-11T19:53:44Z",
+      "description": "\u003cp\u003eIn August, we experienced three incidents that resulted in degraded performance across GitHub services.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/news-insights/company-news/github-availability-report-august-2025/\"\u003eGitHub Availability Report: August 2025\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "GitHub Copilot coding agent 101: Getting started with agentic workflows on GitHub",
+      "link": "https://github.blog/ai-and-ml/github-copilot/github-copilot-coding-agent-101-getting-started-with-agentic-workflows-on-github/",
+      "source": "GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2025-09-11T16:00:00Z",
+      "description": "\u003cp\u003eDelegate it a task, and coding agent can independently write, run, and test code. Here’s how you can make the most of it.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/ai-and-ml/github-copilot/github-copilot-coding-agent-101-getting-started-with-agentic-workflows-on-github/\"\u003eGitHub Copilot coding agent 101: Getting started with agentic workflows on GitHub\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Bitbucket Packages is coming soon: one important step you need to take",
+      "link": "https://www.atlassian.com/blog/bitbucket/coming-soon-bitbucket-packages",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2025-09-11T17:48:32Z",
+      "description": "\u003cp\u003eWe’re excited to announce that Bitbucket\u0026#160;Packages\u0026#160;will be launching later this year. Packages will provide a central place to publish, manage,...\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/bitbucket/coming-soon-bitbucket-packages\"\u003eBitbucket Packages is coming soon: one important step you need to take\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "AI is changing the way leaders lead and companies create",
+      "link": "https://www.atlassian.com/blog/teamwork/ai-insights-september-2025",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2025-09-11T15:27:36Z",
+      "description": "\u003cp\u003eMonthly insights into human-AI collaboration – and how to make it work for your teams.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/teamwork/ai-insights-september-2025\"\u003eAI is changing the way leaders lead and companies create\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Unlocking insights: Introducing Step Metrics for Bitbucket Pipelines",
+      "link": "https://www.atlassian.com/blog/bitbucket/unlocking-insights-introducing-step-metrics-for-bitbucket-pipelines",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2025-09-11T01:11:20Z",
+      "description": "\u003cp\u003eWe’re excited to announce step metrics \u0026#8211; a new capability coming to Bitbucket Pipelines to help you better manage and...\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/bitbucket/unlocking-insights-introducing-step-metrics-for-bitbucket-pipelines\"\u003eUnlocking insights: Introducing Step Metrics for Bitbucket Pipelines\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Introducing a new purchase tracking view and more relevant promotions in Gmail",
+      "link": "https://blog.google/products/gmail/one-stop-purchase-tracking-in-gmail/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-09-11T16:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gmail_tracking_hero_lGwndb9.max-600x600.format-webp.webp\"\u003eA look at the latest Gmail updates that make it easier to track purchases and discover relevant deals and offers ahead of the holidays."
+    },
+    {
+      "title": "How AI made Meet’s language translation possible",
+      "link": "https://blog.google/products/workspace/google-meet-langauge-translation-ai/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-09-11T16:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Meet_Speech_Translate_with_AI.max-600x600.format-webp.webp\"\u003eLearn more about Google Meet’s real-time language translation feature."
+    },
+    {
+      "title": "Free Chrome extension for converting SEC filings to PDFs",
+      "link": "https://chromewebstore.google.com/detail/sec-filing-pdf-generator/bloidlekfcleajmmblmafdliioeehecl",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-11T21:57:40Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://chromewebstore.google.com/detail/sec-filing-pdf-generator/bloidlekfcleajmmblmafdliioeehecl\"\u003ehttps://chromewebstore.google.com/detail/sec-filing-pdf-generator/bloidlekfcleajmmblmafdliioeehecl\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45216527\"\u003ehttps://news.ycombinator.com/item?id=45216527\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Masters Tool-Aggregate Practical Toolbox",
+      "link": "https://www.masters-tool.com/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-11T21:56:33Z",
+      "description": "\n\u003cp\u003eThe purpose of masters-tool Practical Tools Website is to provide practical tools for programmers, front-end engineers, server administrators, webmasters and other friends, such as code formatting, code obfuscation, code encryption, encoding conversion, webmaster query, color comparison table, color value conversion and other commonly used tools. More practical and easy-to-use tools are being continuously added. Welcome to visit!\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45216517\"\u003ehttps://news.ycombinator.com/item?id=45216517\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "KVM Forum 2025",
+      "link": "https://kvm-forum.qemu.org/2025/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-11T21:56:17Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://kvm-forum.qemu.org/2025/\"\u003ehttps://kvm-forum.qemu.org/2025/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45216516\"\u003ehttps://news.ycombinator.com/item?id=45216516\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Nature Index 2025: United States losing as China's lead expands rapidly",
+      "link": "https://www.nature.com/nature-index/research-leaders/2025/nature-index-2025-research-leaders-united-states-losing-ground-as-chinas-lead-expands-rapidly.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-11T21:53:31Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nature.com/nature-index/research-leaders/2025/nature-index-2025-research-leaders-united-states-losing-ground-as-chinas-lead-expands-rapidly.html\"\u003ehttps://www.nature.com/nature-index/research-leaders/2025/nature-index-2025-research-leaders-united-states-losing-ground-as-chinas-lead-expands-rapidly.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45216501\"\u003ehttps://news.ycombinator.com/item?id=45216501\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Meta's Elite AI Unit Sparks Tension with Old Guard",
+      "link": "https://www.wsj.com/tech/ai/meta-ai-superintelligence-hiring-tension-96c9e993",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-11T21:53:16Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.wsj.com/tech/ai/meta-ai-superintelligence-hiring-tension-96c9e993\"\u003ehttps://www.wsj.com/tech/ai/meta-ai-superintelligence-hiring-tension-96c9e993\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45216498\"\u003ehttps://news.ycombinator.com/item?id=45216498\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Sandboxing Browser AI Agents",
+      "link": "https://www.earlence.com/blog.html#/post/cellmate",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-11T21:48:47Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.earlence.com/blog.html#/post/cellmate\"\u003ehttps://www.earlence.com/blog.html#/post/cellmate\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45216460\"\u003ehttps://news.ycombinator.com/item?id=45216460\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Nature Index 2025 Research Leaders",
+      "link": "https://www.nature.com/nature-index/research-leaders/2025/institution/all/all/global",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-11T21:48:45Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nature.com/nature-index/research-leaders/2025/institution/all/all/global\"\u003ehttps://www.nature.com/nature-index/research-leaders/2025/institution/all/all/global\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45216459\"\u003ehttps://news.ycombinator.com/item?id=45216459\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Sega Accused of Using Police to Recover Nintendo Dev Kits",
+      "link": "https://www.timeextension.com/news/2025/09/sega-accused-of-using-police-to-recover-nintendo-dev-kits-it-had-negligently-disposed-of",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-11T21:47:36Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.timeextension.com/news/2025/09/sega-accused-of-using-police-to-recover-nintendo-dev-kits-it-had-negligently-disposed-of\"\u003ehttps://www.timeextension.com/news/2025/09/sega-accused-of-using-police-to-recover-nintendo-dev-kits-it-had-negligently-disposed-of\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45216450\"\u003ehttps://news.ycombinator.com/item?id=45216450\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Apache Software Foundation's New Logo",
+      "link": "https://news.apache.org/foundation/entry/introducing-the-asfs-new-logo",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-11T21:43:52Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://news.apache.org/foundation/entry/introducing-the-asfs-new-logo\"\u003ehttps://news.apache.org/foundation/entry/introducing-the-asfs-new-logo\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45216415\"\u003ehttps://news.ycombinator.com/item?id=45216415\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Muslin",
+      "link": "https://en.wikipedia.org/wiki/Muslin",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-11T21:42:43Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://en.wikipedia.org/wiki/Muslin\"\u003ehttps://en.wikipedia.org/wiki/Muslin\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45216407\"\u003ehttps://news.ycombinator.com/item?id=45216407\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: AI Email Marketing Tool for E-Commerce Brands",
+      "link": "https://www.getdripwave.com",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-11T21:38:42Z",
+      "description": "\n\u003cp\u003eWe have built an AI app called Dripwave that helps marketers create stunning, on-brand marketing email campaigns and flows instantly instead of hours for e-commerce brands.\u003cp\u003eDripwave integrates with Shopify to pull product and brand information. Once the AI generates the first draft of marketing email, you can edit it through our built-in editor. You can also export the finalized email to Klaviyo/HTML in 1-click.\u003cp\u003eWe will add more integrations soon! Check it out and let me know your thoughts!\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45216377\"\u003ehttps://news.ycombinator.com/item?id=45216377\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "A joint statement from OpenAI and Microsoft",
+      "link": "https://openai.com/index/joint-statement-from-openai-and-microsoft/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-11T21:38:31Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://openai.com/index/joint-statement-from-openai-and-microsoft/\"\u003ehttps://openai.com/index/joint-statement-from-openai-and-microsoft/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45216376\"\u003ehttps://news.ycombinator.com/item?id=45216376\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 7\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Grammar Checker That Gets Developers",
+      "link": "https://www.wearefounders.uk/the-grammar-checker-that-actually-gets-developers-meet-harper/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-11T21:36:23Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.wearefounders.uk/the-grammar-checker-that-actually-gets-developers-meet-harper/\"\u003ehttps://www.wearefounders.uk/the-grammar-checker-that-actually-gets-developers-meet-harper/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45216349\"\u003ehttps://news.ycombinator.com/item?id=45216349\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Automated Bug Triaging Using Instruction-Tuned Large Language Models",
+      "link": "https://arxiv.org/abs/2508.21156",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-11T21:35:47Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://arxiv.org/abs/2508.21156\"\u003ehttps://arxiv.org/abs/2508.21156\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45216345\"\u003ehttps://news.ycombinator.com/item?id=45216345\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Brazilian Supreme Court Convicts Bolsonaro for Coup Attempt",
+      "link": "https://www.wsj.com/world/americas/brazil-supreme-court-majority-votes-to-convict-bolsonaro-for-alleged-coup-attempt-8cc6f1fd",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-11T21:35:33Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.wsj.com/world/americas/brazil-supreme-court-majority-votes-to-convict-bolsonaro-for-alleged-coup-attempt-8cc6f1fd\"\u003ehttps://www.wsj.com/world/americas/brazil-supreme-court-majority-votes-to-convict-bolsonaro-for-alleged-coup-attempt-8cc6f1fd\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45216343\"\u003ehttps://news.ycombinator.com/item?id=45216343\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 7\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Vibe Code Kit code with confidence",
+      "link": "https://vibecodekit.dev",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-11T21:34:46Z",
+      "description": "\n\u003cp\u003eThe Problem We're Solving\u003cp\u003eSetting up a production-ready Vue.js project takes days. You need to configure TypeScript, set up build tools, choose the right state management, configure linting, add UI components, set up testing—and then teach your AI coding assistant how to work with your specific stack and patterns.\u003cp\u003eBy the time you're done with setup, you've lost momentum on your actual idea.\u003cp\u003eThe pattern is predictable:\u003cp\u003eDay 1-2: Research and configure build tools, TypeScript, linting \nDay 3-4: Set up state management, routing, UI components\nDay 5-6: Configure development workflow, AI coding instructions \nDay 7+: Finally start building your actual application\u003cp\u003eMost developers either skip best practices to move fast, or spend weeks on setup instead of building.\u003cp\u003eOur Solution: Production-Ready Starter + AI Instructions\u003cp\u003eVibe Code Kit eliminates the setup phase entirely. You get a battle-tested Vue.js stack that's been refined through dozens of production applications, plus AI development instructions that teach Claude Code how to work effectively with your specific setup.\u003cp\u003eTechnology Stack:\u003cp\u003e- Vue 3 with Composition API and TypeScript support\n- Vite for lightning-fast development and optimized builds\n- Pinia for global state management + Pinia Colada for data fetching\n- Tailwind CSS + DaisyUI for rapid UI development\n- VueUse composables library for common patterns\n- ESLint, Prettier, Husky for code quality\u003cp\u003eEach technology includes AI coding best practices that prevent Claude Code from reinventing patterns.\u003cp\u003eHow It Works\u003cp\u003e- Blueprint-Driven Development: Enhanced R\u0026D workflow commands guide Claude Code through proper project analysis and feature planning\n- Specialized AI Agents: Built-in agents for standards checking, code validation, and codebase research\n- Stack-Specific Instructions: AI learns the proper patterns for each library in your stack\n- Production Configuration: Everything pre-configured for deployment from day one\n- The result: Turn your ideas into production Vue.js apps in minutes, not days.\u003cp\u003eReal Impact\nSince using this approach:\u003cp\u003e- New Vue.js projects start with feature development, not configuration\n- Claude Code consistently follows Vue 3 Composition API best practices\n- AI agents catch architectural issues before they become problems\n- Production deployments work from day one\u003cp\u003eTechnical Details\u003cp\u003eBuilt on Vue 3 ecosystem best practices. Includes comprehensive Claude Code integration with specialized agents for Vue.js development. Works with existing AI-assisted development workflows and supports rapid prototyping to production scaling.\u003cp\u003eCurrently supporting Vue.js projects with plans for React and other frameworks.\u003cp\u003eTry It\nEarly access available at \u003ca href=\"https://vibecodekit.dev\" rel=\"nofollow\"\u003ehttps://vibecodekit.dev\u003c/a\u003e\u003cp\u003eThis isn't about replacing Vue CLI or Vite—it's about getting a production-ready foundation with AI that actually understands your stack. Would love feedback from Vue.js developers who've struggled with project setup overhead.\u003cp\u003eQuestions I'm curious about:\u003cp\u003e- How much time do you spend on initial Vue.js project configuration?\n- What's been your experience with AI coding assistants on Vue projects?\n- What would convince you to use a pre-configured starter over building from scratch?\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45216336\"\u003ehttps://news.ycombinator.com/item?id=45216336\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Building an ARM64 home server the hard way",
+      "link": "https://jforberg.se/blog/posts/2023-02-19-rockpro64/rockpro64.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-11T21:34:14Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://jforberg.se/blog/posts/2023-02-19-rockpro64/rockpro64.html\"\u003ehttps://jforberg.se/blog/posts/2023-02-19-rockpro64/rockpro64.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45216331\"\u003ehttps://news.ycombinator.com/item?id=45216331\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 4\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Analyzing the memory ordering models of the Apple M1",
+      "link": "https://www.sciencedirect.com/science/article/pii/S1383762124000390",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-11T21:33:46Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.sciencedirect.com/science/article/pii/S1383762124000390\"\u003ehttps://www.sciencedirect.com/science/article/pii/S1383762124000390\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45216327\"\u003ehttps://news.ycombinator.com/item?id=45216327\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Apache Software Foundation Unveils Its Branding Overhaul with New Logo",
+      "link": "https://www.phoronix.com/news/New-Apache-Software-Logo",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-11T21:32:05Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.phoronix.com/news/New-Apache-Software-Logo\"\u003ehttps://www.phoronix.com/news/New-Apache-Software-Logo\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45216321\"\u003ehttps://news.ycombinator.com/item?id=45216321\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "It's E-Bike Mayhem in London as Strike Shuts Down Tube",
+      "link": "https://www.wsj.com/world/uk/its-e-bike-mayhem-in-london-as-strike-shuts-down-tube-bcbb544a",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-11T21:30:57Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.wsj.com/world/uk/its-e-bike-mayhem-in-london-as-strike-shuts-down-tube-bcbb544a\"\u003ehttps://www.wsj.com/world/uk/its-e-bike-mayhem-in-london-as-strike-shuts-down-tube-bcbb544a\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45216313\"\u003ehttps://news.ycombinator.com/item?id=45216313\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "GitHub Copilot coding agent 101: Getting started with agentic workflows on GitHub",
+      "link": "https://github.blog/ai-and-ml/github-copilot/github-copilot-coding-agent-101-getting-started-with-agentic-workflows-on-github/",
+      "source": "The latest on GitHub Copilot - The GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2025-09-11T16:00:00Z",
+      "description": "\u003cp\u003eDelegate it a task, and coding agent can independently write, run, and test code. Here’s how you can make the most of it.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/ai-and-ml/github-copilot/github-copilot-coding-agent-101-getting-started-with-agentic-workflows-on-github/\"\u003eGitHub Copilot coding agent 101: Getting started with agentic workflows on GitHub\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    }
+  ],
+  "generatedAt": "2025-09-12T07:08:30.461575798+09:00"
+}
