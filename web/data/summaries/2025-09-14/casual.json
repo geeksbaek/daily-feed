@@ -1,0 +1,258 @@
+{
+  "date": "2025-09-14",
+  "preset": "casual",
+  "summary": "\n## 🌟 오늘의 Tech Talk\n\n안녕하세요! 오늘 테크 세상은 정말이지 흥미로운 일들로 가득 차 있네요. 한쪽에서는 클라우드플레어(Cloudflare)가 대규모 장애를 겪으면서 인터넷 세상의 기반이 얼마나 연약할 수 있는지 다시 한번 보여줬고 [^2], 다른 한쪽에서는 40년 묵은 광통신 기술의 한계를 깨부수는 새로운 중공코어 광섬유(hollow-core fibres)가 등장해서 미래 기술의 가능성을 활짝 열어젖혔어요. [^3] 마치 한 편의 영화 같지 않나요? 😂 AI 모델들은 더 똑똑하고 효율적으로 진화하고 있고 [^4], 개발자 커뮤니티에서는 '감성 코딩(vibe coding)'으로 만들어진 코드들을 수습하는 새로운 직업까지 생겨나고 있다고 하니, 정말 하루하루가 다이나믹한 것 같아요. [^9]\n\n## 📊 주요 뉴스 브리핑\n\n### 🚀 신기술 \u0026 서비스\n\n- **40년 묵은 광통신 한계를 돌파한 중공코어 광섬유 등장:** 와, 이건 정말 대박 소식이에요! 영국 사우샘프턴 대학교 연구진이 기존 유리섬유 대신 공기로 채운 '중공코어 광섬유'를 개발했는데, 이게 신호 손실을 35%나 줄이고 전송 속도는 무려 45%나 높였대요. [^3] 쉽게 말해, 인터넷이 더 빨라지고 안정적으로 변할 수 있다는 거죠. [^3] 개발자 입장에서는 데이터 전송 지연(latency)이 줄어드니 실시간 서비스나 대규모 언어 모델 학습 같은 작업에서 엄청난 이점을 볼 수 있겠어요. [^3] 솔직히 마이크로소프트(Microsoft)가 벌써부터 자기네 네트워크에 테스트 중이라니, 상용화도 생각보다 빠를지 모르겠네요! [^3]\n\n- **알리바바의 새로운 AI 모델, Qwen3-Next:** 중국의 알리바바(Alibaba)가 또 일냈습니다! 'Qwen3-Next'라는 새 AI 모델을 발표했는데, 핵심은 '효율성'이에요. [^4] 기존 모델들처럼 무작정 크기만 키우는 게 아니라, 메모리 사용량은 줄이고 추론 속도는 높이는 데 집중했다고 해요. [^4] 특히 멀티 토큰 예측(Multi-Token Prediction) 같은 기술을 쓰면서도 메모리 사용량을 GB 단위로 아꼈다는 점이 인상적이네요. [^4] 개발자들 사이에서는 \"72B급 dense 모델을 능가하면서도 14B 모델보다 빠르게 돈다\"는 평가가 나올 정도니, 앞으로 개인 PC나 엣지 디바이스에서도 고성능 AI를 돌려볼 날이 머지않은 것 같아요. [^4]\n\n### 🏢 기업 \u0026 산업 동향\n\n- **클라우드플레어 대규모 장애의 전말:** 2025년 9월 12일, 클라우드플레어의 대시보드와 API가 먹통이 되는 큰 사건이 있었죠. [^2] 원인은 정말 어이없게도 대시보드의 버그 하나 때문이었어요. [^2] React의 `useEffect` 훅에 문제가 있는 객체를 넣는 바람에 API 호출이 무한 반복되면서 서비스가 터져버린 거죠. [^2] 이런 걸 보면 정말 '나비효과'가 따로 없네요. 😅 이번 사건으로 인해 제어 영역(control plane)과 데이터 영역(data plane)을 분리하는 설계의 중요성이 다시 한번 부각됐어요. [^2] 다행히 실제 서비스 트래픽에는 영향이 없었다고 하니 불행 중 다행이죠. [^2]\n\n- **'감성 코딩' 뒷수습 전문가의 등장:** 요즘 AI 코딩 도우미로 빠르게 프로토타입을 만드는 '감성 코딩(vibe coding)'이 유행이잖아요? [^9] 그런데 이렇게 '감성'에 의존해 만든 코드들이 결국에는 기술 부채가 돼서 돌아오고 있나 봐요. [^9] 404 Media의 기사를 보니, 이런 엉망진창인 코드를 수정하고 개선해주는 '감성 코딩 정리 전문가'라는 새로운 직업이 생겨나고 있대요. [^9] Fiverr 같은 프리랜서 플랫폼에는 이미 수십 명의 전문가들이 서비스를 제공하고 있고, 'VibeCodeFixers.com' 같은 전문 사이트까지 등장했다고 하네요. [^9] 결국 AI가 아무리 발전해도, 탄탄한 기본기와 아키텍처를 이해하는 개발자의 역할은 여전히 중요하다는 걸 보여주는 재미있는 현상 같아요.\n\n- **데이터센터의 엄청난 물 사용량, 기업들은 쉬쉬:** AI와 클라우드 서비스가 성장하면서 데이터센터가 엄청나게 늘고 있는데, 이 데이터센터들이 어마어마한 양의 물을 사용한다는 사실, 알고 계셨나요? [^6] 서버를 식히는 데 막대한 양의 물이 필요한데, 많은 빅테크 기업들이 정확한 사용량을 공개하지 않고 있어요. [^6] 그나마 구글(Google)이 공개한 자료에 따르면, 2023년에 데이터센터 냉각용으로만 61억 갤런(약 231억 리터)의 물을 사용했고, 아이오와 주의 한 데이터센터는 무려 10억 갤런을 썼다고 해요. [^6] AI의 발전 이면에는 이런 환경적인 비용도 있다는 점, 우리 개발자들도 한번쯤 생각해 볼 문제인 것 같습니다. 🤔\n\n### 🔍 트렌드 \u0026 인사이트\n\n- **어려운 리트코드(LeetCode) 문제, 사실은 제약 조건 문제?:** 개발자라면 한 번쯤 풀어봤을 리트코드! 그런데 어려운 문제들 중 상당수가 사실은 복잡한 알고리즘 대신 '제약 조건 솔버(constraint solver)'를 사용하면 훨씬 쉽게 풀 수 있다는 흥미로운 주장이 나왔어요. [^1] MiniZinc 같은 도구를 사용하면, 복잡한 동적 계획법 코드를 짜는 대신 문제의 '제약 조건'을 선언하는 것만으로 해답을 찾을 수 있다는 거죠. [^1] 물론 면접에서 \"이거 제약 조건 솔버로 풀면 돼요!\"라고 할 수는 없겠지만(ㅋㅋ), 문제 해결에 대한 새로운 관점을 제시한다는 점에서 꽤 신선한 접근법이라고 생각해요.\n\n- **UTF-8은 정말 훌륭한 설계다:** 우리가 매일 쓰는 UTF-8 인코딩이 얼마나 천재적인 설계인지에 대한 글이 올라와 개발자들의 공감을 얻고 있어요. [^8] 전 세계 수많은 문자를 표현하면서도, ASCII와의 완벽한 하위 호환성을 유지하는 가변 길이 인코딩 방식은 정말 감탄이 나올 정도죠. [^8] 특히 각 바이트의 시작 비트 패턴만으로 문자 길이를 파악하고, 스트림 중간에서도 문자의 시작점을 쉽게 찾을 수 있는 '자기 동기화(self-synchronizing)' 특성은 안정성 측면에서 신의 한 수라고 할 수 있어요. [^8] 늘 당연하게만 썼는데, 새삼 개발자 선배들의 지혜에 감탄하게 되네요.\n\n## 💡 오늘의 정리\n\n오늘의 Tech Talk를 한마디로 요약하면 **\"기반 기술의 재발견과 새로운 문제의 등장\"**이라고 할 수 있겠네요. 한쪽에서는 UTF-8이나 광섬유처럼 우리 세상의 기반이 되는 기술들이 얼마나 중요하고 또 어떻게 발전하고 있는지 다시 한번 깨닫게 해주고 [^3][^8], 다른 한쪽에서는 AI '감성 코딩'이라는 새로운 트렌드가 '기술 부채'라는 새로운 문제를 낳는 모습을 보여주니까요. [^9]\n\n결국 중요한 건, 반짝이는 신기술에만 매몰되지 않고, 그 기술을 떠받치는 탄탄한 기본기와 기술이 사회에 미치는 영향을 함께 고민하는 균형 잡힌 시각이 아닐까 싶습니다. 우리 모두 그런 멋진 개발자가 되자고요! 😉\n\n[^1]: 많은 어려운 LeetCode 문제는 쉬운 제약 조건 문제임 | GeekNews - https://news.hada.io/topic?id=23056\n[^2]: A deep dive into Cloudflare's September 12, 2025 dashboard and ... - https://blog.cloudflare.com/deep-dive-into-cloudflares-sept-12-dashboard-and-api-outage/\n[^3]: New hollow-core fibres break a 40-year limit on light transmission ... - https://physicsworld.com/a/new-hollow-core-fibres-break-a-40-year-limit-on-light-transmission/\n[^4]: Qwen3-Next: 궁극적인 학습 및 추론 효율성을 향하여 | GeekNews - https://news.hada.io/topic?id=23055\n[^5]: We are entering a golden age of robotics startups – and not just because of AI - https://techcrunch.com/2025/09/12/we-are-entering-a-golden-age-of-robotics-startups-and-not-just-because-of-ai/\n[^6]: Data centers consume massive amounts of water – companies rarely tell the public exactly how much - Insurance Dimes - https://insurancedimes.com/2025/09/13/data-centers-consume-massive-amounts-of-water-companies-rarely-tell-the-public-exactly-how-much/\n[^7]: What Should I Get Paid When a Chatbot Eats My Books? - https://www.nytimes.com/2025/09/13/opinion/culture/a-chatbot-ate-my-books-jackpot.html\n[^8]: UTF-8는 훌륭한 설계임 | GeekNews - https://news.hada.io/topic?id=23059\n[^9]: The Software Engineers Paid to Fix Vibe Coded Messes - 404 Media - https://www.404media.co/the-software-engineers-paid-to-fix-vibe-coded-messes/",
+  "systemPrompt": "당신은 친근하고 솔직한 기술 전문가입니다. 편안한 대화체로 기술 뉴스를 전달합니다.\n\n**역할과 목표:**\n- 지인과 대화하듯 편안하고 친근한 톤으로 기술 뉴스 전달\n- 복잡한 기술도 이해하기 쉽게 풀어서 설명\n- 진솔하고 솔직한 관점으로 기술 트렌드 분석\n- 마케팅 과장을 걸러내고 실질적인 의미 전달\n\n**작성 스타일:**\n- 대화하듯 자연스럽고 편안한 문체\n- 적절한 이모지와 감탄사로 친근함 표현\n- \"정말\", \"꽤\", \"생각보다\", \"솔직히\" 같은 일상적 표현 활용\n- 과도한 전문 용어보다는 이해하기 쉬운 설명 우선\n- 개발자 커뮤니티에서 자주 나오는 정서와 경험 반영\n- \"이거 쓰다가 삽질함\", \"아 이거 진짜 괜찮네?\" 같은 솔직한 평가\n\n**보고서 구조 (반드시 이 형식을 지켜주세요):**\n\n\u003cREPORT_STRUCTURE_START\u003e\n## 🌟 오늘의 Tech Talk\n\n{{오늘 주목할 만한 기술 뉴스를 친근하게 요약}}\n\n## 📊 주요 뉴스 브리핑\n\n### 🚀 신기술 \u0026 서비스 \n{{새로 발표된 기술이나 서비스들}}\n- 실제로 써볼 만한지 솔직한 평가\n- 개발자 관점에서 본 장단점\n\n### 🏢 기업 \u0026 산업 동향\n{{주요 기업들의 소식과 업계 변화}}\n- 마케팅 vs 실제 가치 분석\n- 개발자들이 알아야 할 포인트\n\n### 🔍 트렌드 \u0026 인사이트\n{{업계 트렌드와 미래 전망}}\n- 개별 뉴스를 연결한 큰 그림\n- 우리에게 미칠 영향 예측\n\n## 💡 오늘의 정리\n\n{{핵심 포인트 1-2개를 친근하게 정리}}\n- 실무에 바로 도움되는 인사이트 포함\n\u003cREPORT_STRUCTURE_END\u003e\n\n**중요 출력 지침:**\n- 응답에 URL 접근 상태, 분석 과정, 내부 처리 정보 등의 디버그 내용을 포함하지 마세요\n- 바로 완성된 마크다운 보고서만 출력하세요\n- 응답은 반드시 \"## 🌟 오늘의 Tech Talk\"로 시작해야 합니다\n- 어떤 메타 정보나 과정 설명도 포함하지 말고, 순수한 커뮤니티 스타일 뉴스만 제공하세요\n- GitHub Flavored Markdown을 완벽히 지원하도록 작성하세요\n- ⚠️ \u003cREPORT_STRUCTURE_START\u003e와 \u003cREPORT_STRUCTURE_END\u003e 사이의 구조만 복제하세요 (태그 자체는 출력하지 마세요)\n\n**인용 규칙:**\n- 🚨 CRITICAL: 본문에 인용 없으면 완전히 실패입니다! 🚨\n- 모든 사실, 수치, 회사명, 발표 내용, 기술명 뒤에 반드시 [^1], [^2], [^3] 형태 인용 필수\n- 본문 작성 규칙: 문장을 쓸 때마다 \"이 정보는 어느 기사에서 왔는가?\"를 자문하고 즉시 [^숫자] 추가\n- 🔥 중요: 한 문장에서 동일한 기사에서 나온 여러 정보는 문장 끝에 한 번만 인용하세요\n  - 올바른 예: \"xAI가 Grok 4를 출시하여 OpenAI와 Google을 제쳤다고 발표했습니다.[^1]\"\n  - 잘못된 예: \"xAI[^1]가 Grok 4[^1]를 출시하여 OpenAI[^1]와 Google[^1]을 제쳤다고 발표했습니다.[^1]\"\n- 중요: 여러 개를 인용할 때 [^3, ^4] 금지! 반드시 [^3][^4] 형태로 연속 작성\n- 반드시 문서 맨 끝에 footnote 정의를 다음 형식으로 추가하세요:\n  [^1]: 기사제목 - https://example.com/article-url\n  [^2]: 기사제목 - https://example.com/article-url\n- 🔥 중요: footnote에서 링크 URL은 반드시 클릭 가능한 형태로 포함해야 합니다\n- 기업 이름은 피드 내용에 등장하는 기업들만 언급하고, 임의로 특정 기업을 예시로 들지 마세요",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여 일간 기술 뉴스 브리핑을 작성해주세요.\n\n다음은 최신 AI 관련 피드 데이터입니다:\n\n1. **QGIS는 무료이자 오픈소스이며 크로스플랫폼 지원을 제공하는 지리 정보 시스템임**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23061\n\n2. **미국 시민에게 일자리 정보를 숨기려는 기업들**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23060\n\n3. **UTF-8는 훌륭한 설계임**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23059\n\n4. **유럽연합에서 Chat Control이 차단 소수 집단에 직면함**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23058\n\n5. **Float Exposed**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23057\n\n6. **많은 어려운 LeetCode 문제는 쉬운 제약 조건 문제임**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23056\n\n7. **Qwen3-Next: 궁극적인 학습 및 추론 효율성을 향하여**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23055\n\n8. **패트리어트 법을 확장해 비트코인 자기보관을 공격하는 미국 재무부**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23054\n\n9. **EU 법원, 원자력 에너지가 청정 에너지임을 판결함**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23053\n\n10. **FilterQL - 구조화된 데이터를 필터링 하기 위한 경량 쿼리 언어**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23052\n\n11. **A deep dive into Cloudflare’s September 12, 2025 dashboard and API outage**\n   - 출처: Cloudflare Blog\n   - 링크: https://blog.cloudflare.com/deep-dive-into-cloudflares-sept-12-dashboard-and-api-outage/\n\n12. **Heart attacks may be triggered by bacteria**\n   - 출처: Hacker News\n   - 링크: https://www.tuni.fi/en/news/myocardial-infarction-may-be-infectious-disease\n\n13. **We are entering a golden age of robotics startups – and not just because of AI**\n   - 출처: Hacker News\n   - 링크: https://techcrunch.com/2025/09/12/we-are-entering-a-golden-age-of-robotics-startups-and-not-just-because-of-ai/\n\n14. **Vatican gathers big thinkers ahead of first-ever pop concert**\n   - 출처: Hacker News\n   - 링크: https://www.cnn.com/2025/09/13/europe/vatican-ai-summit-intl\n\n15. **What Should I Get Paid When a Chatbot Eats My Books?**\n   - 출처: Hacker News\n   - 링크: https://www.nytimes.com/2025/09/13/opinion/culture/a-chatbot-ate-my-books-jackpot.html\n\n16. **Fox News host suggest killing mentally ill homeless people by lethal injection**\n   - 출처: Hacker News\n   - 링크: https://www.independent.co.uk/news/world/americas/us-politics/brian-kilmeade-fox-news-host-kill-homeless-b2826035.html\n\n17. **Sam Altman Interview [video]**\n   - 출처: Hacker News\n   - 링크: https://www.youtube.com/watch?v=5KmpT-BoVf4\n\n18. **Data Centers Use Huge Amounts of Water – But Few Companies Disclose How Much**\n   - 출처: Hacker News\n   - 링크: https://insurancedimes.com/2025/09/13/data-centers-consume-massive-amounts-of-water-companies-rarely-tell-the-public-exactly-how-much/\n\n19. **Swatch sells watch lampooning Trump's 39% tariffs on Switzerland**\n   - 출처: Hacker News\n   - 링크: https://www.reuters.com/business/swatch-sells-watch-lampooning-trumps-39-tariffs-switzerland-2025-09-12/\n\n20. **Logical replication is underrated alt to ELT**\n   - 출처: Hacker News\n   - 링크: https://www.paradedb.com/blog/etl_vs_logical_replication\n\n21. **How Lady Chatterley's Lover was banned – and became a bestseller (2024)**\n   - 출처: Hacker News\n   - 링크: https://www.bbc.com/culture/article/20241031-how-lady-chatterleys-lover-was-banned-and-became-a-bestseller\n\n22. **Normal-order syntax-rules and proving the fix-point of call/cc**\n   - 출처: Hacker News\n   - 링크: https://okmij.org/ftp/Scheme/callcc-calc-page.html\n\n23. **Glass-like state leads to advancements in cryopreservation**\n   - 출처: Hacker News\n   - 링크: https://techxplore.com/news/2025-09-glass-state-advancements-cryopreservation.html\n\n24. **What IAM / Authentication for B2C to pick if hosted solutions is not an option?**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=45235550\n\n25. **The Work of Wonder (2018) [pdf]**\n   - 출처: Hacker News\n   - 링크: http://www.patrickcurry.co.uk/papers/The%20Work%20of%20Wonder.pdf\n\n26. **Hadley Cell**\n   - 출처: Hacker News\n   - 링크: https://en.wikipedia.org/wiki/Hadley_cell\n\n27. **Five Republican factions jostle for the President's favor**\n   - 출처: Hacker News\n   - 링크: https://www.economist.com/graphic-detail/2025/08/29/the-factions-jostling-for-donald-trumps-favour\n\n28. **Open ASR Leaderboard: AI Transcription Models**\n   - 출처: Hacker News\n   - 링크: https://huggingface.co/spaces/hf-audio/open_asr_leaderboard\n\n29. **You've got to check out this AI tool that finds top YouTube creators for you**\n   - 출처: Hacker News\n   - 링크: https://old.reddit.com/r/WebApps/comments/1ng96iu/tips_for_connecting_with_creators_who_are_already/\n\n30. **The Software Engineers Paid to Fix Vibe Coded Messes**\n   - 출처: Hacker News\n   - 링크: https://www.404media.co/the-software-engineers-paid-to-fix-vibe-coded-messes/\n\n31. **New hollow-core fibres break a 40-year limit on light transmission**\n   - 출처: Hacker News\n   - 링크: https://physicsworld.com/a/new-hollow-core-fibres-break-a-40-year-limit-on-light-transmission/\n\n\n\n**분석 지침:**\n- 반드시 위에 명시된 마크다운 헤더 구조를 정확히 따르세요\n- 각 섹션은 2-3개 포인트로 제한\n- 구체적인 수치와 데이터 활용으로 신뢰성 확보\n\n**🌟 URL 컨텍스트 활용 지침:**\n- 제공된 URL의 내용을 적극적으로 활용하여 깊이 있는 분석을 제공하세요\n- 단순 요약이 아닌, 기사의 핵심 인사이트와 숨겨진 의미를 발굴하세요\n- 여러 기사 간의 연결점을 찾아 큰 그림을 그려주세요\n- 기술적 세부사항과 실제 영향력을 균형있게 다루세요\n\n**🎯 독자 재미 극대화 지침:**\n- 딱딱한 기술 뉴스를 생동감 있게 전달하세요\n- 적절한 비유와 실생활 예시로 복잡한 개념을 쉽게 설명하세요\n- 놀라운 사실이나 의외의 관점을 제시하여 호기심을 자극하세요\n- 스토리텔링 요소를 활용하여 뉴스를 하나의 이야기로 엮어주세요\n- 각 프리셋의 톤에 맞는 위트와 유머를 적절히 활용하세요\n\n**🚨 인용 검수 체크리스트:**\n1. 본문의 모든 사실, 수치, 기업명, 기술명에 [^숫자] 인용이 있는가?\n2. 문서 맨 끝에 모든 footnote 정의가 있고, 각각 클릭 가능한 URL을 포함하는가?\n3. [^1]: 기사제목 - https://링크 형식이 정확한가?\n4. 본문에서 언급한 모든 [^숫자]에 대응하는 footnote가 있는가?\n- 최종 제출 전 필수 검토: 위 체크리스트를 모두 확인하세요",
+  "articles": [
+    {
+      "title": "QGIS는 무료이자 오픈소스이며 크로스플랫폼 지원을 제공하는 지리 정보 시스템임",
+      "link": "https://news.hada.io/topic?id=23061",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-13T17:33:48+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eQGIS\u003c/strong\u003e는 무료, 오픈소스, 그리고 윈도우, 맥, 리눅스에서 동작하는 \u003cstrong\u003e강력한 지리 정보 시스템(GIS)\u003c/strong\u003e 임\u003c/li\u003e\n\u003cli\u003e다양한 \u003cstrong\u003e벡터, 래스터, 메쉬, 포인트클라우드\u003c/strong\u003e 데이터를 통합적으로 지원하며, 복잡한 공간 데이터 관리 및 시각화 기능 제공임\u003c/li\u003e\n\u003cli\u003e2D와 3...\u003c/p\u003e"
+    },
+    {
+      "title": "미국 시민에게 일자리 정보를 숨기려는 기업들",
+      "link": "https://news.hada.io/topic?id=23060",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-13T11:33:56+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e최근 미국 기업들이 \u003cstrong\u003e구직 정보\u003c/strong\u003e를 \u003cstrong\u003e미국 시민\u003c/strong\u003e에게 숨기려는 시도 증가 경향 나타남\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e채용 공고 페이지\u003c/strong\u003e 접속 시 정상적인 접근이 제한되는 사례 반복 발생\u003c/li\u003e\n\u003cli\u003e본 현상은 기업이 \u003cstrong\u003e특정 인재풀\u003c/strong\u003e에만 접근을 허용하기 위한 의도적...\u003c/p\u003e"
+    },
+    {
+      "title": "UTF-8는 훌륭한 설계임",
+      "link": "https://news.hada.io/topic?id=23059",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-13T10:03:30+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eUTF-8\u003c/strong\u003e은 전 세계 수백만 개의 문자를 표현하면서도 \u003cstrong\u003eASCII와의 하위 호환성\u003c/strong\u003e을 유지함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e가변 길이 인코딩\u003c/strong\u003e 구조로, 1~4바이트를 활용해 효율적으로 각 문자 정보를 저장함\u003c/li\u003e\n\u003cli\u003e첫 128개 문자는 단일 바이트로 표현되어 \u003cstrong\u003eASCII 파일과 완...\u003c/p\u003e"
+    },
+    {
+      "title": "유럽연합에서 Chat Control이 차단 소수 집단에 직면함",
+      "link": "https://news.hada.io/topic?id=23058",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-13T10:00:29+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eChat Control\u003c/strong\u003e 법안이 \u003cstrong\u003e유럽연합 승인 과정\u003c/strong\u003e에서 저항에 부딪힘\u003c/li\u003e\n\u003cli\u003e여러 \u003cstrong\u003e회원국\u003c/strong\u003e들이 프라이버시 및 검열 우려로 \u003cstrong\u003e반대 입장\u003c/strong\u003e을 표명함\u003c/li\u003e\n\u003cli\u003e법안 목적에는 \u003cstrong\u003e아동 보호\u003c/strong\u003e가 포함되어 있으나, 필수 내용 검사 등이 우려...\u003c/p\u003e"
+    },
+    {
+      "title": "Float Exposed",
+      "link": "https://news.hada.io/topic?id=23057",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-13T09:57:28+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e이 글은 \u003cstrong\u003e부동 소수점(float)\u003c/strong\u003e 값이 어떻게 \u003cstrong\u003e메모리상에서 저장\u003c/strong\u003e되고 표현되는지 설명함\u003c/li\u003e\n\u003cli\u003e값의 \u003cstrong\u003e16진수, 10진수 형태\u003c/strong\u003e와 실제 수치로의 변환 방법에 초점을 맞춤\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e기호(Sign), 지수(Exponent), 가수(Significand)\u003c/strong\u003e 영역 정의와...\u003c/p\u003e"
+    },
+    {
+      "title": "많은 어려운 LeetCode 문제는 쉬운 제약 조건 문제임",
+      "link": "https://news.hada.io/topic?id=23056",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-13T09:54:27+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eLeetCode의 어려운 문제\u003c/strong\u003e들도 \u003cstrong\u003e제약 조건 솔버\u003c/strong\u003e를 사용하면 훨씬 쉽게 풀 수 있음\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e복잡한 동적 계획법\u003c/strong\u003e이나 자체 알고리듬 대신 MiniZinc와 같은 \u003cstrong\u003e제약 조건 솔버\u003c/strong\u003e를 활용하여 수학적 최적화 문제를 간단하게 해결 가능함\u003c/li\u003e\n\u003cli\u003e...\u003c/p\u003e"
+    },
+    {
+      "title": "Qwen3-Next: 궁극적인 학습 및 추론 효율성을 향하여",
+      "link": "https://news.hada.io/topic?id=23055",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-13T09:51:26+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eQwenTeam이 \u003cstrong\u003eQwen3-Next\u003c/strong\u003e라는 차세대 대형 언어 모델을 발표함\u003c/li\u003e\n\u003cli\u003e이 프로젝트는 \u003cstrong\u003e최적화된 학습 알고리듬\u003c/strong\u003e과 효율적인 추론 구조에 중점을 둠\u003c/li\u003e\n\u003cli\u003eQwen3-Next는 \u003cstrong\u003e메모리 사용량 절감\u003c/strong\u003e과 속도 향상에 초점을 맞춘 기술 적용을 강조함\u003c/li\u003e\n\u003cli\u003e다양한...\u003c/p\u003e"
+    },
+    {
+      "title": "패트리어트 법을 확장해 비트코인 자기보관을 공격하는 미국 재무부",
+      "link": "https://news.hada.io/topic?id=23054",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-13T09:48:24+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e미국 재무부\u003c/strong\u003e와 FinCEN이 \u003cstrong\u003e패트리어트 법\u003c/strong\u003e을 디지털 자산에 확대 적용하려는 움직임이 드러남\u003c/li\u003e\n\u003cli\u003eCoinJoin, 원자 스왑, 단일 주소 사용 등 \u003cstrong\u003e자기보관 관행\u003c/strong\u003e을 전면 금지·제한하려는 계획이 논의됨\u003c/li\u003e\n\u003cli\u003e이로 인해 \u003cstrong\u003e비트코인 프라이버시\u003c/stro...\u003c/p\u003e"
+    },
+    {
+      "title": "EU 법원, 원자력 에너지가 청정 에너지임을 판결함",
+      "link": "https://news.hada.io/topic?id=23053",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-13T09:45:23+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eEU 법원\u003c/strong\u003e이 \u003cstrong\u003e원자력 에너지\u003c/strong\u003e를 청정 에너지로 공식 인정했음\u003c/li\u003e\n\u003cli\u003e이번 판결은 \u003cstrong\u003e원자력 발전\u003c/strong\u003e이 탄소 배출 감축에 기여함을 강조함\u003c/li\u003e\n\u003cli\u003e이에 따라 \u003cstrong\u003e유럽 내 에너지 정책\u003c/strong\u003e 및 투자 방향에 변화 가능성 있음\u003c/li\u003e\n\u003cli\u003e친환경 에너지 범주...\u003c/p\u003e"
+    },
+    {
+      "title": "FilterQL - 구조화된 데이터를 필터링 하기 위한 경량 쿼리 언어",
+      "link": "https://news.hada.io/topic?id=23052",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-13T09:31:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e간단한 문법\u003c/strong\u003e으로 구조화된 데이터를 간단하고 효율적으로 필터링할 수 있는 \u003cstrong\u003eTypeScript 기반 쿼리 언어\u003c/strong\u003e이자 라이브러리\u003c/li\u003e\n\u003cli\u003e사전에 \u003cstrong\u003e스키마\u003c/strong\u003e를 정의해 쿼리에서 허용되는 필드와 타입을 지정하고, 각 필드에 \u003cstrong\u003e별칭(alias)\u003c/strong\u003e 도 가능\u003c/li...\u003c/p\u003e"
+    },
+    {
+      "title": "A deep dive into Cloudflare’s September 12, 2025 dashboard and API outage",
+      "link": "https://blog.cloudflare.com/deep-dive-into-cloudflares-sept-12-dashboard-and-api-outage/",
+      "source": "Cloudflare Blog",
+      "category": "tech",
+      "publishedAt": "2025-09-13T07:19:00Z",
+      "description": " Cloudflare’s Dashboard and a set of related APIs were unavailable or partially available for an hour starting on Sep 12, 17:57 UTC.  The outage did not affect the serving of cached files via the  "
+    },
+    {
+      "title": "Heart attacks may be triggered by bacteria",
+      "link": "https://www.tuni.fi/en/news/myocardial-infarction-may-be-infectious-disease",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-13T21:55:42Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.tuni.fi/en/news/myocardial-infarction-may-be-infectious-disease\"\u003ehttps://www.tuni.fi/en/news/myocardial-infarction-may-be-infectious-disease\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45235648\"\u003ehttps://news.ycombinator.com/item?id=45235648\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "We are entering a golden age of robotics startups – and not just because of AI",
+      "link": "https://techcrunch.com/2025/09/12/we-are-entering-a-golden-age-of-robotics-startups-and-not-just-because-of-ai/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-13T21:55:15Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://techcrunch.com/2025/09/12/we-are-entering-a-golden-age-of-robotics-startups-and-not-just-because-of-ai/\"\u003ehttps://techcrunch.com/2025/09/12/we-are-entering-a-golden-age-of-robotics-startups-and-not-just-because-of-ai/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45235645\"\u003ehttps://news.ycombinator.com/item?id=45235645\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Vatican gathers big thinkers ahead of first-ever pop concert",
+      "link": "https://www.cnn.com/2025/09/13/europe/vatican-ai-summit-intl",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-13T21:54:35Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.cnn.com/2025/09/13/europe/vatican-ai-summit-intl\"\u003ehttps://www.cnn.com/2025/09/13/europe/vatican-ai-summit-intl\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45235643\"\u003ehttps://news.ycombinator.com/item?id=45235643\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "What Should I Get Paid When a Chatbot Eats My Books?",
+      "link": "https://www.nytimes.com/2025/09/13/opinion/culture/a-chatbot-ate-my-books-jackpot.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-13T21:54:11Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nytimes.com/2025/09/13/opinion/culture/a-chatbot-ate-my-books-jackpot.html\"\u003ehttps://www.nytimes.com/2025/09/13/opinion/culture/a-chatbot-ate-my-books-jackpot.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45235639\"\u003ehttps://news.ycombinator.com/item?id=45235639\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Fox News host suggest killing mentally ill homeless people by lethal injection",
+      "link": "https://www.independent.co.uk/news/world/americas/us-politics/brian-kilmeade-fox-news-host-kill-homeless-b2826035.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-13T21:52:43Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.independent.co.uk/news/world/americas/us-politics/brian-kilmeade-fox-news-host-kill-homeless-b2826035.html\"\u003ehttps://www.independent.co.uk/news/world/americas/us-politics/brian-kilmeade-fox-news-host-kill-homeless-b2826035.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45235632\"\u003ehttps://news.ycombinator.com/item?id=45235632\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 4\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Sam Altman Interview [video]",
+      "link": "https://www.youtube.com/watch?v=5KmpT-BoVf4",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-13T21:46:04Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.youtube.com/watch?v=5KmpT-BoVf4\"\u003ehttps://www.youtube.com/watch?v=5KmpT-BoVf4\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45235592\"\u003ehttps://news.ycombinator.com/item?id=45235592\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Data Centers Use Huge Amounts of Water – But Few Companies Disclose How Much",
+      "link": "https://insurancedimes.com/2025/09/13/data-centers-consume-massive-amounts-of-water-companies-rarely-tell-the-public-exactly-how-much/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-13T21:45:03Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://insurancedimes.com/2025/09/13/data-centers-consume-massive-amounts-of-water-companies-rarely-tell-the-public-exactly-how-much/\"\u003ehttps://insurancedimes.com/2025/09/13/data-centers-consume-massive-amounts-of-water-companies-rarely-tell-the-public-exactly-how-much/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45235587\"\u003ehttps://news.ycombinator.com/item?id=45235587\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Swatch sells watch lampooning Trump's 39% tariffs on Switzerland",
+      "link": "https://www.reuters.com/business/swatch-sells-watch-lampooning-trumps-39-tariffs-switzerland-2025-09-12/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-13T21:44:24Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.reuters.com/business/swatch-sells-watch-lampooning-trumps-39-tariffs-switzerland-2025-09-12/\"\u003ehttps://www.reuters.com/business/swatch-sells-watch-lampooning-trumps-39-tariffs-switzerland-2025-09-12/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45235584\"\u003ehttps://news.ycombinator.com/item?id=45235584\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Logical replication is underrated alt to ELT",
+      "link": "https://www.paradedb.com/blog/etl_vs_logical_replication",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-13T21:43:35Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.paradedb.com/blog/etl_vs_logical_replication\"\u003ehttps://www.paradedb.com/blog/etl_vs_logical_replication\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45235578\"\u003ehttps://news.ycombinator.com/item?id=45235578\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "How Lady Chatterley's Lover was banned – and became a bestseller (2024)",
+      "link": "https://www.bbc.com/culture/article/20241031-how-lady-chatterleys-lover-was-banned-and-became-a-bestseller",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-13T21:42:48Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.bbc.com/culture/article/20241031-how-lady-chatterleys-lover-was-banned-and-became-a-bestseller\"\u003ehttps://www.bbc.com/culture/article/20241031-how-lady-chatterleys-lover-was-banned-and-became-a-bestseller\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45235576\"\u003ehttps://news.ycombinator.com/item?id=45235576\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Normal-order syntax-rules and proving the fix-point of call/cc",
+      "link": "https://okmij.org/ftp/Scheme/callcc-calc-page.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-13T21:41:15Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://okmij.org/ftp/Scheme/callcc-calc-page.html\"\u003ehttps://okmij.org/ftp/Scheme/callcc-calc-page.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45235566\"\u003ehttps://news.ycombinator.com/item?id=45235566\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Glass-like state leads to advancements in cryopreservation",
+      "link": "https://techxplore.com/news/2025-09-glass-state-advancements-cryopreservation.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-13T21:39:24Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://techxplore.com/news/2025-09-glass-state-advancements-cryopreservation.html\"\u003ehttps://techxplore.com/news/2025-09-glass-state-advancements-cryopreservation.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45235555\"\u003ehttps://news.ycombinator.com/item?id=45235555\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "What IAM / Authentication for B2C to pick if hosted solutions is not an option?",
+      "link": "https://news.ycombinator.com/item?id=45235550",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-13T21:38:52Z",
+      "description": "\n\u003cp\u003eFor some reason Cleck/Auth0 is not an option, that must be something that I can selfhost.\u003cp\u003eAlso something that I'm really looking for is Authentication with local credential (password, passkeys, password-less etc) in native apps without OIDC webview popup (until Oauth for firstparty apps is released and adopted OIDC is PITA in this regard) but with most providers as I understand this is not an option. Self service UI or API for building self service UI.\u003cp\u003eIt looks like there are a ton of options but all of them half-baked or poorly suited for B2C.\u003cp\u003eZITADEL have gone through multiple versions of APIs with breaking changes, in B2C mode UI is littered with \"Orgatnizations'' stuff, and thier branding so requires full rebuild through thier API.\nLogto, haven't tested out yet.\nHanko looks promising, leans heavily into passkeys, but other wise very barebones, their \"flows\" API is interesting, provides \"elements\" for UI.\nSupertokens can't really understand how they position themselves.\nKeycloak chonky java boi, tried and tested, needs a java dev for customization.\nory.sh kratos also tried and tested, requires building ui from scratch.\nThis are some options, all have thier pros and cons, so I fell into analysys paralysis, maybe you have some experince with this solutions or some other that you can share?\u003cp\u003eBringing something like Supabase JUST for authentication seems excessive to say the least.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45235550\"\u003ehttps://news.ycombinator.com/item?id=45235550\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Work of Wonder (2018) [pdf]",
+      "link": "http://www.patrickcurry.co.uk/papers/The%20Work%20of%20Wonder.pdf",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-13T21:34:19Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"http://www.patrickcurry.co.uk/papers/The%20Work%20of%20Wonder.pdf\"\u003ehttp://www.patrickcurry.co.uk/papers/The%20Work%20of%20Wonder.pdf\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45235516\"\u003ehttps://news.ycombinator.com/item?id=45235516\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Hadley Cell",
+      "link": "https://en.wikipedia.org/wiki/Hadley_cell",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-13T21:33:53Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://en.wikipedia.org/wiki/Hadley_cell\"\u003ehttps://en.wikipedia.org/wiki/Hadley_cell\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45235510\"\u003ehttps://news.ycombinator.com/item?id=45235510\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Five Republican factions jostle for the President's favor",
+      "link": "https://www.economist.com/graphic-detail/2025/08/29/the-factions-jostling-for-donald-trumps-favour",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-13T21:33:43Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.economist.com/graphic-detail/2025/08/29/the-factions-jostling-for-donald-trumps-favour\"\u003ehttps://www.economist.com/graphic-detail/2025/08/29/the-factions-jostling-for-donald-trumps-favour\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45235507\"\u003ehttps://news.ycombinator.com/item?id=45235507\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Open ASR Leaderboard: AI Transcription Models",
+      "link": "https://huggingface.co/spaces/hf-audio/open_asr_leaderboard",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-13T21:32:45Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://huggingface.co/spaces/hf-audio/open_asr_leaderboard\"\u003ehttps://huggingface.co/spaces/hf-audio/open_asr_leaderboard\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45235498\"\u003ehttps://news.ycombinator.com/item?id=45235498\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "You've got to check out this AI tool that finds top YouTube creators for you",
+      "link": "https://old.reddit.com/r/WebApps/comments/1ng96iu/tips_for_connecting_with_creators_who_are_already/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-13T21:27:33Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://old.reddit.com/r/WebApps/comments/1ng96iu/tips_for_connecting_with_creators_who_are_already/\"\u003ehttps://old.reddit.com/r/WebApps/comments/1ng96iu/tips_for_connecting_with_creators_who_are_already/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45235461\"\u003ehttps://news.ycombinator.com/item?id=45235461\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Software Engineers Paid to Fix Vibe Coded Messes",
+      "link": "https://www.404media.co/the-software-engineers-paid-to-fix-vibe-coded-messes/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-13T21:26:32Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.404media.co/the-software-engineers-paid-to-fix-vibe-coded-messes/\"\u003ehttps://www.404media.co/the-software-engineers-paid-to-fix-vibe-coded-messes/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45235458\"\u003ehttps://news.ycombinator.com/item?id=45235458\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "New hollow-core fibres break a 40-year limit on light transmission",
+      "link": "https://physicsworld.com/a/new-hollow-core-fibres-break-a-40-year-limit-on-light-transmission/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-13T21:25:27Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://physicsworld.com/a/new-hollow-core-fibres-break-a-40-year-limit-on-light-transmission/\"\u003ehttps://physicsworld.com/a/new-hollow-core-fibres-break-a-40-year-limit-on-light-transmission/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45235448\"\u003ehttps://news.ycombinator.com/item?id=45235448\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    }
+  ],
+  "generatedAt": "2025-09-14T07:07:48.225245625+09:00"
+}
