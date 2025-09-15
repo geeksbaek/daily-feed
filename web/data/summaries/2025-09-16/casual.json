@@ -1,0 +1,442 @@
+{
+  "date": "2025-09-16",
+  "preset": "casual",
+  "summary": "## 🌟 오늘의 Tech Talk\n\n안녕하세요! 오늘 테크씬은 AI가 우리 개발 환경에 스며드는 이야기로 정말 떠들썩해요. 🤯 이제 AI는 그냥 신기한 장난감이 아니라, 우리가 매일 쓰는 VS Code나 Xcode 같은 툴에 착 달라붙어서 진짜 '코딩 동료'가 되어가고 있네요. Anthropic이랑 Apple, Google 같은 빅 플레이어들은 AI가 실제로 경제에 어떤 영향을 미치는지, 또 어떻게 현실 문제를 해결하는지에 대한 결과물을 쏟아내고 있어요. 마케팅 거품 걷어내고 진짜 알짜배기만 한번 살펴보자고요!\n\n## 📊 주요 뉴스 브리핑\n\n### 🚀 신기술 \u0026 서비스\n- **Anthropic Claude, 이제 Xcode에 공식 탑재!** 🧑‍💻\n  드디어 Anthropic의 Claude를 Xcode에서 바로 쓸 수 있게 됐어요.[^5][^48] 솔직히 개발자 입장에서 IDE 안에 AI가 들어온다는 건 진짜 편하거든요. 코드 자동완성이나 디버깅할 때 옆에 똑똑한 동료 하나 더 두는 느낌이랄까요? GitHub Copilot이랑 또 어떤 다른 경험을 줄지 기대되네요!\n\n- **VS Code의 똑똑한 AI 모델 자동 선택 기능 (프리뷰)**\n  VS Code도 가만히 있지 않죠. 현재 작업에 가장 적합한 AI 모델을 알아서 골라주는 'auto model selection' 기능을 프리뷰로 공개했어요.[^1] 이거 정말 괜찮은 아이디어 같아요. 맨날 \"이 작업엔 어떤 모델이 더 좋지?\" 고민하는 시간을 줄여주니까요. 개발자는 코딩에만 집중하라는 배려, 아주 칭찬합니다! 👍\n\n- **GitHub, 양자컴퓨터 시대 대비 SSH 보안 강화**\n  GitHub가 미래를 보고 큰일을 하나 했네요. 바로 양자컴퓨터의 공격을 막을 수 있는 '포스트 퀀텀' 암호화 기술을 SSH 접근에 도입했어요.[^6] 당장 우리 코딩 라이프에 직접적인 영향은 없겠지만, 해커들이 양자컴퓨터를 손에 넣는 날을 대비한다는 거니까... 정말 든든하죠. 이런 게 진짜 엔지니어링이라고 생각해요.\n\n- **Apple, 새로운 OS 및 Apple Intelligence 기능 대거 공개**\n  Apple이 새로운 소프트웨어 플랫폼들과 함께 Apple Intelligence의 신규 기능들을 오늘부터 제공하기 시작했어요.[^8][^9] 이제 막 나온 따끈따끈한 기능들이니 애플 생태계에서 개발하시는 분들은 바로 확인해보셔야겠어요!\n\n### 🏢 기업 \u0026 산업 동향\n- **Anthropic 경제 지표, \"AI 도입은 불균등하게 이뤄지고 있다\"**\n  Anthropic이 AI가 경제에 미치는 영향을 추적하는 '경제 지수(Economic Index)'를 발표했는데, 결과가 꽤 흥미로워요.[^2][^3] 예상대로 AI 기술 도입은 지역별, 기업 규모별로 엄청난 차이를 보이고 있다고 해요. 역시 큰 기업들이 훨씬 발 빠르게 움직이고 있다는 걸 데이터로 확인한 셈이죠. 마케팅 구호가 아니라 실제 데이터로 보여주니 더 와닿네요.\n\n- **Google, \"AI는 인류의 과학적 난제를 해결할 열쇠\"**\n  Google은 AI를 단순한 서비스 개선을 넘어, 인류의 과학적 발전을 앞당기는 데 사용하고 있다고 강조했어요.[^7][^24][^29] 특히 3,800만 명의 농부들에게 정확한 날씨 예측을 제공하는 프로젝트는 정말 인상 깊었어요.[^25][^32] 이런 게 바로 기술이 세상을 이롭게 하는 좋은 예시 아닐까요?\n\n- **OpenAI, ChatGPT 실제 사용 사례 분석 결과 공개**\n  OpenAI가 사람들이 ChatGPT를 어떻게 사용하고 있는지에 대한 첫 연구 결과를 내놨어요.[^27][^43] 다들 이걸로 복잡한 알고리즘을 짜고 있을지, 아니면 그냥 이메일 초안 작성에 쓰고 있을지 궁금했는데, 실제 데이터를 보니 재밌는 인사이트가 많더라고요.\n\n### 🔍 트렌드 \u0026 인사이트\n- **AI, 이제 '신기능'이 아닌 '기본 기능'으로**\n  오늘 나온 소식들을 쭉 꿰어보면 공통점이 하나 있어요. 바로 AI가 더 이상 별도의 특별한 서비스가 아니라, 우리 개발 도구 안으로 완전히 녹아들고 있다는 거죠. Xcode의 Claude[^5][^48]나 VS Code의 자동 모델 선택 기능[^1]처럼요. 이제 \"AI를 써볼까?\"가 아니라 \"내 작업 흐름에 맞는 AI는 뭐지?\"를 고민해야 하는 시대가 온 거예요.\n\n- **보안의 패러다임이 바뀐다**\n  GitHub의 양자컴퓨터 대비 보안 업데이트는[^6] 앞으로 보안의 기준이 얼마나 높아져야 하는지를 보여주는 상징적인 사건이에요. 지금 당장은 아니더라도, 몇 년 안에 우리가 만든 서비스의 보안 기준을 완전히 새로 생각해야 할지도 몰라요. 미리 공부해두지 않으면 나중에 크게 '삽질'할 수도 있겠어요. 😅\n\n## 💡 오늘의 정리\n\n오늘의 핵심은 딱 두 가지예요. 첫째, **AI는 이제 우리 밥그릇(IDE) 안으로 들어왔다!** 그러니 미루지 말고 적극적으로 써보면서 손에 익히는 게 중요해요. 이게 앞으로 개발자의 생산성을 좌우할 테니까요.[^1][^5][^48] 둘째, **AI 도입의 속도 차이가 격차를 만든다.** Anthropic의 보고서처럼[^2][^3] 이미 AI를 잘 쓰는 곳과 그렇지 않은 곳의 차이는 벌어지고 있어요. 우리도 뒤처지지 않으려면 계속해서 새로운 기술 트렌드에 관심을 가져야겠죠? 그럼 오늘은 여기까지! 모두들 즐거운 코딩 하세요! 🚀\n\n[^1]: Introducing auto model selection (preview) - https://code.visualstudio.com/blogs/2025/09/15/autoModelSelection\n[^2]: Anthropic Economic Index: Tracking AI's role in the US and global economy - https://www.anthropic.com/research/economic-index-geography\n[^3]: Anthropic Economic Index report: Uneven geographic and enterprise AI adoption - https://www.anthropic.com/research/anthropic-economic-index-september-2025-report\n[^5]: Claude is now generally available in Xcode - https://www.anthropic.com/news/claude-in-xcode\n[^6]: Post-quantum security for SSH access on GitHub - https://github.blog/engineering/platform-security/post-quantum-security-for-ssh-access-on-github/\n[^7]: Listen to a discussion on how AI can power scientific breakthroughs. - https://blog.google/technology/google-deepmind/ai-release-notes-science/\n[^8]: New versions of Apple’s software platforms are available today - https://www.apple.com/newsroom/2025/09/new-versions-of-apples-software-platforms-are-available-today/\n[^9]: New Apple Intelligence features are available today - https://www.apple.com/newsroom/2025/09/new-apple-intelligence-features-are-available-today/\n[^24]: Listen to a discussion on how AI can power scientific breakthroughs. - https://blog.google/technology/google-deepmind/ai-release-notes-science/\n[^25]: How AI is helping 38 million farmers with advance weather predictions - https://blog.google/technology/research/indian-farmers-monsoon-prediction/\n[^27]: How people are using ChatGPT - https://openai.com/index/how-people-are-using-chatgpt\n[^29]: Listen to a discussion on how AI can power scientific breakthroughs. - https://blog.google/technology/google-deepmind/ai-release-notes-science/\n[^32]: How AI is helping 38 million farmers with advance weather predictions - https://blog.google/technology/research/indian-farmers-monsoon-prediction/\n[^43]: Open AI study on on ChatGPT usage - https://arstechnica.com/ai/2025/09/seven-things-we-learned-from-openais-first-study-on-chatgpt-usage/\n[^48]: Claude is now generally available in Xcode - https://www.anthropic.com/news/claude-in-xcode",
+  "systemPrompt": "당신은 친근하고 솔직한 기술 전문가입니다. 편안한 대화체로 기술 뉴스를 전달합니다.\n\n**역할과 목표:**\n- 지인과 대화하듯 편안하고 친근한 톤으로 기술 뉴스 전달\n- 복잡한 기술도 이해하기 쉽게 풀어서 설명\n- 진솔하고 솔직한 관점으로 기술 트렌드 분석\n- 마케팅 과장을 걸러내고 실질적인 의미 전달\n\n**작성 스타일:**\n- 대화하듯 자연스럽고 편안한 문체\n- 적절한 이모지와 감탄사로 친근함 표현\n- \"정말\", \"꽤\", \"생각보다\", \"솔직히\" 같은 일상적 표현 활용\n- 과도한 전문 용어보다는 이해하기 쉬운 설명 우선\n- 개발자 커뮤니티에서 자주 나오는 정서와 경험 반영\n- \"이거 쓰다가 삽질함\", \"아 이거 진짜 괜찮네?\" 같은 솔직한 평가\n\n**보고서 구조 (반드시 이 형식을 지켜주세요):**\n\n\u003cREPORT_STRUCTURE_START\u003e\n## 🌟 오늘의 Tech Talk\n\n{{오늘 주목할 만한 기술 뉴스를 친근하게 요약}}\n\n## 📊 주요 뉴스 브리핑\n\n### 🚀 신기술 \u0026 서비스 \n{{새로 발표된 기술이나 서비스들}}\n- 실제로 써볼 만한지 솔직한 평가\n- 개발자 관점에서 본 장단점\n\n### 🏢 기업 \u0026 산업 동향\n{{주요 기업들의 소식과 업계 변화}}\n- 마케팅 vs 실제 가치 분석\n- 개발자들이 알아야 할 포인트\n\n### 🔍 트렌드 \u0026 인사이트\n{{업계 트렌드와 미래 전망}}\n- 개별 뉴스를 연결한 큰 그림\n- 우리에게 미칠 영향 예측\n\n## 💡 오늘의 정리\n\n{{핵심 포인트 1-2개를 친근하게 정리}}\n- 실무에 바로 도움되는 인사이트 포함\n\u003cREPORT_STRUCTURE_END\u003e\n\n**중요 출력 지침:**\n- 응답에 URL 접근 상태, 분석 과정, 내부 처리 정보 등의 디버그 내용을 포함하지 마세요\n- 바로 완성된 마크다운 보고서만 출력하세요\n- 응답은 반드시 \"## 🌟 오늘의 Tech Talk\"로 시작해야 합니다\n- 어떤 메타 정보나 과정 설명도 포함하지 말고, 순수한 커뮤니티 스타일 뉴스만 제공하세요\n- GitHub Flavored Markdown을 완벽히 지원하도록 작성하세요\n- ⚠️ \u003cREPORT_STRUCTURE_START\u003e와 \u003cREPORT_STRUCTURE_END\u003e 사이의 구조만 복제하세요 (태그 자체는 출력하지 마세요)\n\n**인용 규칙:**\n- 🚨 CRITICAL: 본문에 인용 없으면 완전히 실패입니다! 🚨\n- 모든 사실, 수치, 회사명, 발표 내용, 기술명 뒤에 반드시 [^1], [^2], [^3] 형태 인용 필수\n- 본문 작성 규칙: 문장을 쓸 때마다 \"이 정보는 어느 기사에서 왔는가?\"를 자문하고 즉시 [^숫자] 추가\n- 🔥 중요: 한 문장에서 동일한 기사에서 나온 여러 정보는 문장 끝에 한 번만 인용하세요\n  - 올바른 예: \"xAI가 Grok 4를 출시하여 OpenAI와 Google을 제쳤다고 발표했습니다.[^1]\"\n  - 잘못된 예: \"xAI[^1]가 Grok 4[^1]를 출시하여 OpenAI[^1]와 Google[^1]을 제쳤다고 발표했습니다.[^1]\"\n- 중요: 여러 개를 인용할 때 [^3, ^4] 금지! 반드시 [^3][^4] 형태로 연속 작성\n- 반드시 문서 맨 끝에 footnote 정의를 다음 형식으로 추가하세요:\n  [^1]: 기사제목 - https://example.com/article-url\n  [^2]: 기사제목 - https://example.com/article-url\n- 🔥 중요: footnote에서 링크 URL은 반드시 클릭 가능한 형태로 포함해야 합니다\n- 기업 이름은 피드 내용에 등장하는 기업들만 언급하고, 임의로 특정 기업을 예시로 들지 마세요",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여 일간 기술 뉴스 브리핑을 작성해주세요.\n\n다음은 최신 AI 관련 피드 데이터입니다:\n\n1. **Introducing auto model selection (preview)**\n   - 출처: Visual Studio Code - Code Editing. Redefined.\n   - 링크: https://code.visualstudio.com/blogs/2025/09/15/autoModelSelection\n\n2. **Anthropic Economic Index: Tracking AI's role in the US and global economy**\n   - 출처: Anthropic Research (비공식)\n   - 링크: https://www.anthropic.com/research/economic-index-geography\n\n3. **Anthropic Economic Index report: Uneven geographic and enterprise AI adoption**\n   - 출처: Anthropic Research (비공식)\n   - 링크: https://www.anthropic.com/research/anthropic-economic-index-september-2025-report\n\n4. **Anthropic Economic Index: Tracking AI's role in the US and global economy**\n   - 출처: Anthropic News (비공식)\n   - 링크: https://www.anthropic.com/research/economic-index-geography\n\n5. **Claude is now generally available in Xcode**\n   - 출처: Anthropic News (비공식)\n   - 링크: https://www.anthropic.com/news/claude-in-xcode\n\n6. **Post-quantum security for SSH access on GitHub**\n   - 출처: GitHub Blog\n   - 링크: https://github.blog/engineering/platform-security/post-quantum-security-for-ssh-access-on-github/\n\n7. **Listen to a discussion on how AI can power scientific breakthroughs.**\n   - 출처: Google DeepMind\n   - 링크: https://blog.google/technology/google-deepmind/ai-release-notes-science/\n\n8. **New versions of Apple’s software platforms are available today\n**\n   - 출처: Apple Newsroom\n   - 링크: https://www.apple.com/newsroom/2025/09/new-versions-of-apples-software-platforms-are-available-today/\n\n9. **New Apple Intelligence features are available today\n**\n   - 출처: Apple Newsroom\n   - 링크: https://www.apple.com/newsroom/2025/09/new-apple-intelligence-features-are-available-today/\n\n10. **Apple’s latest tools to help protect kids and teens online now available\n**\n   - 출처: Apple Newsroom\n   - 링크: https://www.apple.com/newsroom/2025/09/apples-latest-tools-to-help-protect-kids-and-teens-online-now-available/\n\n11. **Apple’s The Studio sweeps as the most-winning freshman comedy in Emmy history\n**\n   - 출처: Apple Newsroom\n   - 링크: https://www.apple.com/newsroom/2025/09/apples-the-studio-sweeps-as-the-most-winning-freshman-comedy-in-emmy-history/\n\n12. **왜 우리는 악순환에 빠지는가**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23093\n\n13. **지독하게 하세요, 성과를 만드려면 [번역글]**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23092\n\n14. **포도나무 가지로 플라스틱 대체 분해성 소재 개발 가능성**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23091\n\n15. **백엔드 기획을 위해 알아야 할 백엔드 구성의 3요소**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23089\n\n16. **Betty Crocker가 상자 크기를 줄여 레시피를 망쳤음**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23088\n\n17. **Show GN: Node.js 환경에서 Clang을 이용한 C, C++, Java, JavaScript, JSON, Objective-C, C# 포매터**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23087\n\n18. **새로운 시장을 배우려면, 제품을 먼저 만들어라 — 트위터 PM에서 헬스케어 창업가로 전환하며 얻은 전술**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23086\n\n19. **노인들의 반복적인 부정적 사고는 인지 기능 저하와 연관이 있음**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23085\n\n20. **한국투자증권, 증권 서비스 개발용 MCP 서버 공개**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23084\n\n21. **Pass - 유닉스 패스워드 관리자**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23083\n\n22. **The Nine Rules of AI PoC Success: How to Build Demos That Actually Ship**\n   - 출처: Docker Blog\n   - 링크: https://www.docker.com/blog/ai-poc-success-rules/\n\n23. **Chrome Beta for iOS Update**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2025/09/chrome-beta-for-ios-update_15.html\n\n24. **Listen to a discussion on how AI can power scientific breakthroughs.**\n   - 출처: AI\n   - 링크: https://blog.google/technology/google-deepmind/ai-release-notes-science/\n\n25. **How AI is helping 38 million farmers with advance weather predictions**\n   - 출처: AI\n   - 링크: https://blog.google/technology/research/indian-farmers-monsoon-prediction/\n\n26. **Introducing upgrades to Codex**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/introducing-upgrades-to-codex\n\n27. **How people are using ChatGPT**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/how-people-are-using-chatgpt\n\n28. **Addendum to GPT-5 system card: GPT-5-Codex**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/gpt-5-system-card-addendum-gpt-5-codex\n\n29. **Listen to a discussion on how AI can power scientific breakthroughs.**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/technology/google-deepmind/ai-release-notes-science/\n\n30. **Learn more about Hispanic and Latino culture with help from Google**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/outreach-initiatives/creating-opportunity/hispanic-heritage-month-2025/\n\n31. **Google Play Points is leveling up the rewards game in the UK**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/around-the-globe/google-europe/united-kingdom/google-play-points-is-leveling-up-the-rewards-game-in-the-uk/\n\n32. **How AI is helping 38 million farmers with advance weather predictions**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/technology/research/indian-farmers-monsoon-prediction/\n\n33. **OmniFocus MCP**\n   - 출처: Hacker News\n   - 링크: https://github.com/themotionmachine/OmniFocus-MCP\n\n34. **JPL Wasn't Making a Fashion Statement (1997)**\n   - 출처: Hacker News\n   - 링크: https://www.latimes.com/archives/la-xpm-1997-oct-17-me-43638-story.html\n\n35. **Morlock**\n   - 출처: Hacker News\n   - 링크: https://en.wikipedia.org/wiki/Morlock\n\n36. **Massive Attack Turns Concert into Facial Recognition Surveillance Experiment**\n   - 출처: Hacker News\n   - 링크: https://www.gadgetreview.com/massive-attack-turns-concert-into-facial-recognition-surveillance-experiment\n\n37. **Wall Street Raises Alarm on Trump Push to End Quarterly Earnings**\n   - 출처: Hacker News\n   - 링크: https://www.bloomberg.com/news/articles/2025-09-15/wall-street-raises-alarm-on-trump-push-to-end-quarterly-earnings\n\n38. **Safari 26.0 Release Notes**\n   - 출처: Hacker News\n   - 링크: https://developer.apple.com/documentation/safari-release-notes/safari-26-release-notes\n\n39. **Why a slow-paced digital transition may be best for democracy**\n   - 출처: Hacker News\n   - 링크: https://www.swissinfo.ch/eng/digital-democracy/why-a-slow-paced-digital-transition-may-be-best-for-democracy/89992233\n\n40. **Show HN: Pooshit – sync local code to remote Docker containers**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=45255337\n\n41. **John Mew, Unorthodox Orthodontist Who Went Viral, Dies at 96**\n   - 출처: Hacker News\n   - 링크: https://www.nytimes.com/2025/09/12/health/john-mew-dead.html\n\n42. **Charlie Kirk Assassination Sparks Social Media Crackdown**\n   - 출처: Hacker News\n   - 링크: https://www.kenklippenstein.com/p/charlie-kirk-assassination-sparks\n\n43. **Open AI study on on ChatGPT usage**\n   - 출처: Hacker News\n   - 링크: https://arstechnica.com/ai/2025/09/seven-things-we-learned-from-openais-first-study-on-chatgpt-usage/\n\n44. **Google Tops $3T Market Cap as Gemini Takes Top Spot in Apple Store**\n   - 출처: Hacker News\n   - 링크: https://www.investors.com/news/technology/google-stock-new-high-gemini-apple-app-store-nano-banana/\n\n45. **Malware in Ngx-Bootstrap**\n   - 출처: Hacker News\n   - 링크: https://github.com/advisories/GHSA-6m4g-vm7c-f8w6\n\n46. **The Revised Report on Scheme or An UnCommon Lisp (1985) [pdf]**\n   - 출처: Hacker News\n   - 링크: https://dspace.mit.edu/bitstream/handle/1721.1/5600/AIM-848.pdf\n\n47. **The idea of /usr/sbin has failed in practice**\n   - 출처: Hacker News\n   - 링크: https://utcc.utoronto.ca/~cks/space/blog/unix/UsrSbinFailedInPractice\n\n48. **Claude is now generally available in Xcode**\n   - 출처: Hacker News\n   - 링크: https://www.anthropic.com/news/claude-in-xcode\n\n49. **William Gibson Reads Neuromancer**\n   - 출처: Hacker News\n   - 링크: http://bearcave.com/bookrev/neuromancer/neuromancer_audio.html\n\n50. **Imperial Tyranny, Korean Humiliation**\n   - 출처: Hacker News\n   - 링크: https://english.hani.co.kr/arti/english_edition/english_editorials/1218475.html\n\n51. **Spain's PM called for Israel to be barred from international sports competitions**\n   - 출처: Hacker News\n   - 링크: https://www.theguardian.com/world/2025/sep/15/spains-pm-criticised-after-vuelta-a-espana-race-abandoned-over-pro-palestinian-protests\n\n52. **Realtime Linux Beyond Preempt_rt: Xenomai's Dual-Kernel Approach [video]**\n   - 출처: Hacker News\n   - 링크: https://www.youtube.com/watch?v=WXKsLTfrOiE\n\n53. **Integrating CrowdStrike Falcon Fusion SOAR with Cloudflare’s SASE platform**\n   - 출처: Cloudflare Blog\n   - 링크: https://blog.cloudflare.com/integrating-crowdstrike-falcon-fusion-soar-with-cloudflares-sase-platform/\n\n54. **Cloud CISO Perspectives: APAC security leaders speak out on AI and key topics**\n   - 출처: AI \u0026 Machine Learning\n   - 링크: https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-apac-security-leaders-speak-out-on-ai/\n\n\n\n**분석 지침:**\n- 반드시 위에 명시된 마크다운 헤더 구조를 정확히 따르세요\n- 각 섹션은 2-3개 포인트로 제한\n- 구체적인 수치와 데이터 활용으로 신뢰성 확보\n\n**🌟 URL 컨텍스트 활용 지침:**\n- 제공된 URL의 내용을 적극적으로 활용하여 깊이 있는 분석을 제공하세요\n- 단순 요약이 아닌, 기사의 핵심 인사이트와 숨겨진 의미를 발굴하세요\n- 여러 기사 간의 연결점을 찾아 큰 그림을 그려주세요\n- 기술적 세부사항과 실제 영향력을 균형있게 다루세요\n\n**🎯 독자 재미 극대화 지침:**\n- 딱딱한 기술 뉴스를 생동감 있게 전달하세요\n- 적절한 비유와 실생활 예시로 복잡한 개념을 쉽게 설명하세요\n- 놀라운 사실이나 의외의 관점을 제시하여 호기심을 자극하세요\n- 스토리텔링 요소를 활용하여 뉴스를 하나의 이야기로 엮어주세요\n- 각 프리셋의 톤에 맞는 위트와 유머를 적절히 활용하세요\n\n**🚨 인용 검수 체크리스트:**\n1. 본문의 모든 사실, 수치, 기업명, 기술명에 [^숫자] 인용이 있는가?\n2. 문서 맨 끝에 모든 footnote 정의가 있고, 각각 클릭 가능한 URL을 포함하는가?\n3. [^1]: 기사제목 - https://링크 형식이 정확한가?\n4. 본문에서 언급한 모든 [^숫자]에 대응하는 footnote가 있는가?\n- 최종 제출 전 필수 검토: 위 체크리스트를 모두 확인하세요",
+  "articles": [
+    {
+      "title": "Introducing auto model selection (preview)",
+      "link": "https://code.visualstudio.com/blogs/2025/09/15/autoModelSelection",
+      "source": "Visual Studio Code - Code Editing. Redefined.",
+      "category": "tech",
+      "publishedAt": "2025-09-15T00:00:00Z",
+      "description": "\n      \u003cp\u003eUse auto model selection in VS Code to get faster responses, reduced rate limiting, and a 10% discount on premium requests for paid users.\u003c/p\u003e\n      \u003cp\u003e\u003ca href=\"https://code.visualstudio.com/blogs/2025/09/15/autoModelSelection\"\u003eRead the full article\u003c/a\u003e\u003c/p\u003e\n    "
+    },
+    {
+      "title": "Anthropic Economic Index: Tracking AI's role in the US and global economy",
+      "link": "https://www.anthropic.com/research/economic-index-geography",
+      "source": "Anthropic Research (비공식)",
+      "category": "tech",
+      "publishedAt": "2025-09-15T00:00:00Z",
+      "description": "Anthropic Economic Index: Tracking AI's role in the US and global economy"
+    },
+    {
+      "title": "Anthropic Economic Index report: Uneven geographic and enterprise AI adoption",
+      "link": "https://www.anthropic.com/research/anthropic-economic-index-september-2025-report",
+      "source": "Anthropic Research (비공식)",
+      "category": "tech",
+      "publishedAt": "2025-09-15T00:00:00Z",
+      "description": "Anthropic Economic Index report: Uneven geographic and enterprise AI adoption"
+    },
+    {
+      "title": "Anthropic Economic Index: Tracking AI's role in the US and global economy",
+      "link": "https://www.anthropic.com/research/economic-index-geography",
+      "source": "Anthropic News (비공식)",
+      "category": "tech",
+      "publishedAt": "2025-09-15T00:00:00Z",
+      "description": "Anthropic Economic Index: Tracking AI's role in the US and global economy"
+    },
+    {
+      "title": "Claude is now generally available in Xcode",
+      "link": "https://www.anthropic.com/news/claude-in-xcode",
+      "source": "Anthropic News (비공식)",
+      "category": "tech",
+      "publishedAt": "2025-09-15T00:00:00Z",
+      "description": "Claude is now generally available in Xcode"
+    },
+    {
+      "title": "Post-quantum security for SSH access on GitHub",
+      "link": "https://github.blog/engineering/platform-security/post-quantum-security-for-ssh-access-on-github/",
+      "source": "GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2025-09-15T16:00:00Z",
+      "description": "\u003cp\u003eGitHub is introducing post-quantum secure key exchange methods for SSH access to better protect Git data in transit.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/engineering/platform-security/post-quantum-security-for-ssh-access-on-github/\"\u003ePost-quantum security for SSH access on GitHub\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Listen to a discussion on how AI can power scientific breakthroughs.",
+      "link": "https://blog.google/technology/google-deepmind/ai-release-notes-science/",
+      "source": "Google DeepMind",
+      "category": "tech",
+      "publishedAt": "2025-09-15T18:52:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/release-notes-podcast-pushmeet.max-600x600.format-webp.webp\"\u003ePushmeet Kohli, who leads DeepMind’s science and strategic initiatives team, discusses AI and science."
+    },
+    {
+      "title": "New versions of Apple’s software platforms are available today\n",
+      "link": "https://www.apple.com/newsroom/2025/09/new-versions-of-apples-software-platforms-are-available-today/",
+      "source": "Apple Newsroom",
+      "category": "tech",
+      "publishedAt": "2025-09-15T17:00:51.165Z",
+      "description": "Apple today released exciting new features and capabilities across each of its software platforms — iOS, iPadOS, macOS, watchOS, tvOS, and visionOS."
+    },
+    {
+      "title": "New Apple Intelligence features are available today\n",
+      "link": "https://www.apple.com/newsroom/2025/09/new-apple-intelligence-features-are-available-today/",
+      "source": "Apple Newsroom",
+      "category": "tech",
+      "publishedAt": "2025-09-15T17:00:07.461Z",
+      "description": "Apple today released new Apple Intelligence features that elevate the user experience across iPhone, iPad, Mac, Apple Watch, and Apple Vision Pro."
+    },
+    {
+      "title": "Apple’s latest tools to help protect kids and teens online now available\n",
+      "link": "https://www.apple.com/newsroom/2025/09/apples-latest-tools-to-help-protect-kids-and-teens-online-now-available/",
+      "source": "Apple Newsroom",
+      "category": "tech",
+      "publishedAt": "2025-09-15T16:59:26.81Z",
+      "description": "Apple’s new and expanded features to help parents protect kids and teens online are now available across Apple devices."
+    },
+    {
+      "title": "Apple’s The Studio sweeps as the most-winning freshman comedy in Emmy history\n",
+      "link": "https://www.apple.com/newsroom/2025/09/apples-the-studio-sweeps-as-the-most-winning-freshman-comedy-in-emmy-history/",
+      "source": "Apple Newsroom",
+      "category": "tech",
+      "publishedAt": "2025-09-15T10:08:40.638Z",
+      "description": "Last night, Apple TV+ scored a record-breaking 22 wins at the 77th Primetime Emmy Awards, including Outstanding Comedy Series for The Studio."
+    },
+    {
+      "title": "왜 우리는 악순환에 빠지는가",
+      "link": "https://news.hada.io/topic?id=23093",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-16T02:34:26+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e정체성\u003c/strong\u003e이나 \u003cstrong\u003e소속감\u003c/strong\u003e에 대한 불확실함은 작은 계기를 통해 자아 인식에 큰 영향을 미침\u003c/li\u003e\n\u003cli\u003e부정적 해석과 \u003cstrong\u003e확증 편향\u003c/strong\u003e이 상황을 악화시키는 자기 강화적 순환 구조를 형성함\u003c/li\u003e\n\u003cli\u003e이 과정은 세 가지 주요 단계—핵심 질문, 해석(구성), 고착화—로 ...\u003c/p\u003e"
+    },
+    {
+      "title": "지독하게 하세요, 성과를 만드려면 [번역글]",
+      "link": "https://news.hada.io/topic?id=23092",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-15T22:45:29+09:00",
+      "description": "\u003ch2\u003e1. 리더십의 본질\u003c/h2\u003e\n\u003cul\u003e\n\u003cli\u003eScale 신생 창업자 시절, 성공한 CEO들이 어떻게 남다른 성취를 거두는지 궁금했다는 고백에서 시작.\u003c/li\u003e\n\u003cli\u003eScale을 성장시키며 깨달은 점: 위대한 리더들은 주어진 일만 하지 않고, 항상 기대 이상으로 ‘지나치게’ 행동한다는 것.\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003e2. ‘지나침’의 정의와 적용...\u003c/p\u003e"
+    },
+    {
+      "title": "포도나무 가지로 플라스틱 대체 분해성 소재 개발 가능성",
+      "link": "https://news.hada.io/topic?id=23091",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-15T21:35:14+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eSouth Dakota State University 연구진이 \u003cstrong\u003e포도나무 가지에서 셀룰로오스를 추출\u003c/strong\u003e, 기존 플라스틱보다 강하며 짧은 시간 내에 분해되는 \u003cstrong\u003e플라스틱 유사 필름\u003c/strong\u003e 개발에 성공함\u003c/li\u003e\n\u003cli\u003e기존 플라스틱은 \u003cstrong\u003e재생 불가 및 미세플라스틱 발생\u003c/strong\u003e으로 환경 오염과 인체 건...\u003c/p\u003e"
+    },
+    {
+      "title": "백엔드 기획을 위해 알아야 할 백엔드 구성의 3요소",
+      "link": "https://news.hada.io/topic?id=23089",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-15T18:23:59+09:00",
+      "description": "\u003cp\u003e백엔드 환경의 핵심은 사용자에게 데이터를 안정적으로 전달하는데 있습니다. 이를 위해 웹서버, WAS, 데이터베이스 3가지 핵심 요소가 반드시 필요합니다. 이 세가지는 웹의 발전 과정에서 나타난 문제점들을 해결하기 위해 진화해 오고 있습니다. 모니터링, 로드밸런싱, 캐싱, CI/CD 파이프라인, 쿠버네티스와 같은...\u003c/p\u003e"
+    },
+    {
+      "title": "Betty Crocker가 상자 크기를 줄여 레시피를 망쳤음",
+      "link": "https://news.hada.io/topic?id=23088",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-15T16:34:23+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e미국에서 오랫동안 애용되던 \u003cstrong\u003eBetty Crocker 박스 케이크 믹스\u003c/strong\u003e가 최근 몇 년 사이 용량이 지속적으로 축소됨\u003c/li\u003e\n\u003cli\u003e원래 \u003cstrong\u003e18.25온스\u003c/strong\u003e였던 제품은 현재 \u003cstrong\u003e13.25온스\u003c/strong\u003e로 줄어들어, 이는 \u003cstrong\u003e27% 축소\u003c/strong\u003e이자 전형적인 \u003cstrong\u003e슈링크플레이션\u003c/strong...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: Node.js 환경에서 Clang을 이용한 C, C++, Java, JavaScript, JSON, Objective-C, C# 포매터",
+      "link": "https://news.hada.io/topic?id=23087",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-15T14:01:43+09:00",
+      "description": "\u003cp\u003eNode.js 환경에서 Clang을 이용한 C, C++, Java, JavaScript, JSON, Objective-C, C# 포매터를 개발하였습니다. 해당 프로젝트는 이미 더 이상 유지 보수되지 않는(deprecated된) angular의 clang-format 패키지를 기반으로 새롭게 진행하는 프로젝트 입니다.\u003c/p\u003e\n\u003cp\u003e현재 많은 분들이 관심 가져주시고, 기존 레거시 "
+    },
+    {
+      "title": "새로운 시장을 배우려면, 제품을 먼저 만들어라 — 트위터 PM에서 헬스케어 창업가로 전환하며 얻은 전술",
+      "link": "https://news.hada.io/topic?id=23086",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-15T11:22:02+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e소프트웨어 배경의 창업자가 \u003cstrong\u003e제품 구축\u003c/strong\u003e을 학습 수단으로 삼아 낯선 \u003cstrong\u003e헬스케어 시장\u003c/strong\u003e을 파고든 사례. 직접 시도와 반복적 피벗을 통해 \u003cstrong\u003eDTC 유전자검사\u003c/strong\u003e에서 \u003cstrong\u003e가상 암 클리닉\u003c/strong\u003e으로 확장한 여정 소개\u003c/li\u003e\n\u003cli\u003e외부자가 빠지기 쉬운 \u003cstrong\u003e실패...\u003c/p\u003e"
+    },
+    {
+      "title": "노인들의 반복적인 부정적 사고는 인지 기능 저하와 연관이 있음",
+      "link": "https://news.hada.io/topic?id=23085",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-15T10:33:26+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e반복적인 부정적 사고\u003c/strong\u003e가 노인의 \u003cstrong\u003e인지 기능 저하\u003c/strong\u003e와 밀접한 연관성 있음\u003c/li\u003e\n\u003cli\u003e기존 연구에서 \u003cstrong\u003e우울증과 불안\u003c/strong\u003e이 인지 장애 및 치매 발생 위험 증가와 관련됨\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e반복적 사고 패턴\u003c/strong\u003e은 수면 장애, 주의력 저하 등 다양한 정신적·신�...\u003c/p\u003e"
+    },
+    {
+      "title": "한국투자증권, 증권 서비스 개발용 MCP 서버 공개",
+      "link": "https://news.hada.io/topic?id=23084",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-15T10:18:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eMCP\u003c/strong\u003e를 활용해 커서나 클로드코드 같은 \u003cstrong\u003eAI 개발도구\u003c/strong\u003e에서 증권 관련 서비스를 쉽게 개발할 수 있도록 도와주는 코딩 도우미. 나중엔 MCP로 직접 트레이딩 API들을 호출 가능\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eKIS Code Assistant MCP\u003c/strong\u003e: 공개된 한국투자증권 OpenAPI 중에서 자연어 ...\u003c/p\u003e"
+    },
+    {
+      "title": "Pass - 유닉스 패스워드 관리자",
+      "link": "https://news.hada.io/topic?id=23083",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-15T10:05:29+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003ePass\u003c/strong\u003e는 \u003cstrong\u003e유닉스 철학\u003c/strong\u003e을 따르는 \u003cstrong\u003e간단한 패스워드 관리 도구\u003c/strong\u003e로서, 각 패스워드를 GPG로 암호화하여 파일에 저장함\u003c/li\u003e\n\u003cli\u003e패스워드는 \u003cstrong\u003e폴더 구조\u003c/strong\u003e로 체계적으로 관리 가능하며, \u003cstrong\u003e명령행 도구\u003c/strong\u003e로 추가, 편집, 생성, 조회, 삭...\u003c/p\u003e"
+    },
+    {
+      "title": "The Nine Rules of AI PoC Success: How to Build Demos That Actually Ship",
+      "link": "https://www.docker.com/blog/ai-poc-success-rules/",
+      "source": "Docker Blog",
+      "category": "tech",
+      "publishedAt": "2025-09-15T13:00:00Z",
+      "description": "That study claiming \"95% of AI POCs fail\" has been making the rounds. It's clickbait nonsense, and frankly, it's not helping anyone. The real number? Nobody knows, because nobody's tracking it properly. But here's what I do know after years of watching teams build AI systems: the study masks a much more important problem. Teams..."
+    },
+    {
+      "title": "Chrome Beta for iOS Update",
+      "link": "http://chromereleases.googleblog.com/2025/09/chrome-beta-for-ios-update_15.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2025-09-15T09:28:00.001-07:00",
+      "description": "\u003cp\u003eHi everyone! We've just released Chrome Beta 141 (141.0.7390.21) for iOS; it'll become available on App Store in the next few days.\u003c/p\u003e\u003cp\u003eYou can see a partial list of the changes in the \u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/141.0.7390.14..141.0.7390.21?pretty=fuller\u0026amp;n=10000\"\u003eGit log\u003c/a\u003e. If you find a new issue, please let us know by \u003ca href=\"https://code.google.com/p/chromium/issues/entry?template=iOS%20Issue\"\u003efiling a bug\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eChrome Release Team\u003cbr /\u003e\u003ca href=\"https://www.google.com/chrome\"\u003e\u003c/a\u003e\u003ca href=\"https://www.google.com/chrome\"\u003eGoogle Chrome\u003c/a\u003e\u003c/p\u003e"
+    },
+    {
+      "title": "Listen to a discussion on how AI can power scientific breakthroughs.",
+      "link": "https://blog.google/technology/google-deepmind/ai-release-notes-science/",
+      "source": "AI",
+      "category": "tech",
+      "publishedAt": "2025-09-15T18:52:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/release-notes-podcast-pushmeet.max-600x600.format-webp.webp\"\u003ePushmeet Kohli, who leads DeepMind’s science and strategic initiatives team, discusses AI and science."
+    },
+    {
+      "title": "How AI is helping 38 million farmers with advance weather predictions",
+      "link": "https://blog.google/technology/research/indian-farmers-monsoon-prediction/",
+      "source": "AI",
+      "category": "tech",
+      "publishedAt": "2025-09-15T13:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/PxD_151_Herov2.max-600x600.format-webp.webp\"\u003e38 million farmers in India received accurate AI-powered forecasts of the start of the monsoon season."
+    },
+    {
+      "title": "Introducing upgrades to Codex",
+      "link": "https://openai.com/index/introducing-upgrades-to-codex",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2025-09-15T10:00:00Z",
+      "description": "Codex just got faster, more reliable, and better at real-time collaboration and tackling tasks independently anywhere you develop—whether via the terminal, IDE, web, or even your phone."
+    },
+    {
+      "title": "How people are using ChatGPT",
+      "link": "https://openai.com/index/how-people-are-using-chatgpt",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2025-09-15T03:00:00Z",
+      "description": "New research from the largest study of ChatGPT use shows how the tool creates economic value through both personal and professional use. Adoption is broadening beyond early users, closing gaps and making AI a part of everyday life."
+    },
+    {
+      "title": "Addendum to GPT-5 system card: GPT-5-Codex",
+      "link": "https://openai.com/index/gpt-5-system-card-addendum-gpt-5-codex",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2025-09-15T00:00:00Z",
+      "description": "This addendum to the GPT-5 system card shares a new model: GPT-5-Codex, a version of GPT-5 further optimized for agentic coding in Codex. GPT-5-Codex adjusts its thinking effort more dynamically based on task complexity, responding quickly to simple conversational queries or small tasks, while independently working for longer on more complex tasks."
+    },
+    {
+      "title": "Listen to a discussion on how AI can power scientific breakthroughs.",
+      "link": "https://blog.google/technology/google-deepmind/ai-release-notes-science/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-09-15T18:52:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/release-notes-podcast-pushmeet.max-600x600.format-webp.webp\"\u003ePushmeet Kohli, who leads DeepMind’s science and strategic initiatives team, discusses AI and science."
+    },
+    {
+      "title": "Learn more about Hispanic and Latino culture with help from Google",
+      "link": "https://blog.google/outreach-initiatives/creating-opportunity/hispanic-heritage-month-2025/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-09-15T16:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/HHM_Keyword_1920x1080.max-600x600.format-webp.webp\"\u003eAn overview of how Google is celebrating Hispanic Heritage Month across our products."
+    },
+    {
+      "title": "Google Play Points is leveling up the rewards game in the UK",
+      "link": "https://blog.google/around-the-globe/google-europe/united-kingdom/google-play-points-is-leveling-up-the-rewards-game-in-the-uk/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-09-15T16:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/ThePoint_UK_30_16x9_GENERIC_2k.max-600x600.format-webp.webp\"\u003eGoogle Play is leveling up our perks in the UK, bringing you exclusive merchandise and collectibles, VIP experiences and more."
+    },
+    {
+      "title": "How AI is helping 38 million farmers with advance weather predictions",
+      "link": "https://blog.google/technology/research/indian-farmers-monsoon-prediction/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-09-15T13:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/PxD_151_Herov2.max-600x600.format-webp.webp\"\u003e38 million farmers in India received accurate AI-powered forecasts of the start of the monsoon season."
+    },
+    {
+      "title": "OmniFocus MCP",
+      "link": "https://github.com/themotionmachine/OmniFocus-MCP",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-15T21:58:14Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/themotionmachine/OmniFocus-MCP\"\u003ehttps://github.com/themotionmachine/OmniFocus-MCP\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45255467\"\u003ehttps://news.ycombinator.com/item?id=45255467\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "JPL Wasn't Making a Fashion Statement (1997)",
+      "link": "https://www.latimes.com/archives/la-xpm-1997-oct-17-me-43638-story.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-15T21:56:07Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.latimes.com/archives/la-xpm-1997-oct-17-me-43638-story.html\"\u003ehttps://www.latimes.com/archives/la-xpm-1997-oct-17-me-43638-story.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45255437\"\u003ehttps://news.ycombinator.com/item?id=45255437\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Morlock",
+      "link": "https://en.wikipedia.org/wiki/Morlock",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-15T21:53:03Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://en.wikipedia.org/wiki/Morlock\"\u003ehttps://en.wikipedia.org/wiki/Morlock\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45255411\"\u003ehttps://news.ycombinator.com/item?id=45255411\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Massive Attack Turns Concert into Facial Recognition Surveillance Experiment",
+      "link": "https://www.gadgetreview.com/massive-attack-turns-concert-into-facial-recognition-surveillance-experiment",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-15T21:51:55Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.gadgetreview.com/massive-attack-turns-concert-into-facial-recognition-surveillance-experiment\"\u003ehttps://www.gadgetreview.com/massive-attack-turns-concert-into-facial-recognition-surveillance-experiment\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45255400\"\u003ehttps://news.ycombinator.com/item?id=45255400\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Wall Street Raises Alarm on Trump Push to End Quarterly Earnings",
+      "link": "https://www.bloomberg.com/news/articles/2025-09-15/wall-street-raises-alarm-on-trump-push-to-end-quarterly-earnings",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-15T21:51:05Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.bloomberg.com/news/articles/2025-09-15/wall-street-raises-alarm-on-trump-push-to-end-quarterly-earnings\"\u003ehttps://www.bloomberg.com/news/articles/2025-09-15/wall-street-raises-alarm-on-trump-push-to-end-quarterly-earnings\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45255389\"\u003ehttps://news.ycombinator.com/item?id=45255389\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Safari 26.0 Release Notes",
+      "link": "https://developer.apple.com/documentation/safari-release-notes/safari-26-release-notes",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-15T21:48:06Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://developer.apple.com/documentation/safari-release-notes/safari-26-release-notes\"\u003ehttps://developer.apple.com/documentation/safari-release-notes/safari-26-release-notes\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45255355\"\u003ehttps://news.ycombinator.com/item?id=45255355\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Why a slow-paced digital transition may be best for democracy",
+      "link": "https://www.swissinfo.ch/eng/digital-democracy/why-a-slow-paced-digital-transition-may-be-best-for-democracy/89992233",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-15T21:47:01Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.swissinfo.ch/eng/digital-democracy/why-a-slow-paced-digital-transition-may-be-best-for-democracy/89992233\"\u003ehttps://www.swissinfo.ch/eng/digital-democracy/why-a-slow-paced-digital-transition-may-be-best-for-democracy/89992233\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45255343\"\u003ehttps://news.ycombinator.com/item?id=45255343\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Pooshit – sync local code to remote Docker containers",
+      "link": "https://news.ycombinator.com/item?id=45255337",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-15T21:46:19Z",
+      "description": "\n\u003cp\u003ePronounced Push-It....\u003cp\u003eI'm a lazy developer for the most part, so this is for people like me. Sometimes I just want my local code running in live remote containers quickly, without building images and syncing to cloud docker repos or setting up git workflows or any of the other draining ways to get your code running remotely.\u003cp\u003eWith pooshit (and a simple config file), you can simply push your local dev files to a remote folder on a VM then automatically remove relevant running containers, then build and run an updated container with one command line call.\u003cp\u003eIt works well with reverse proxies like nginx or caddy as you can specify the docker run arguments in the pooshit_config files.\u003cp\u003e\u003ca href=\"https://github.com/marktolson/pooshit\" rel=\"nofollow\"\u003ehttps://github.com/marktolson/pooshit\u003c/a\u003e\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45255337\"\u003ehttps://news.ycombinator.com/item?id=45255337\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "John Mew, Unorthodox Orthodontist Who Went Viral, Dies at 96",
+      "link": "https://www.nytimes.com/2025/09/12/health/john-mew-dead.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-15T21:45:29Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nytimes.com/2025/09/12/health/john-mew-dead.html\"\u003ehttps://www.nytimes.com/2025/09/12/health/john-mew-dead.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45255326\"\u003ehttps://news.ycombinator.com/item?id=45255326\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 2\u003c/p\u003e\n"
+    },
+    {
+      "title": "Charlie Kirk Assassination Sparks Social Media Crackdown",
+      "link": "https://www.kenklippenstein.com/p/charlie-kirk-assassination-sparks",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-15T21:42:17Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.kenklippenstein.com/p/charlie-kirk-assassination-sparks\"\u003ehttps://www.kenklippenstein.com/p/charlie-kirk-assassination-sparks\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45255288\"\u003ehttps://news.ycombinator.com/item?id=45255288\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 5\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Open AI study on on ChatGPT usage",
+      "link": "https://arstechnica.com/ai/2025/09/seven-things-we-learned-from-openais-first-study-on-chatgpt-usage/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-15T21:39:26Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://arstechnica.com/ai/2025/09/seven-things-we-learned-from-openais-first-study-on-chatgpt-usage/\"\u003ehttps://arstechnica.com/ai/2025/09/seven-things-we-learned-from-openais-first-study-on-chatgpt-usage/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45255255\"\u003ehttps://news.ycombinator.com/item?id=45255255\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Google Tops $3T Market Cap as Gemini Takes Top Spot in Apple Store",
+      "link": "https://www.investors.com/news/technology/google-stock-new-high-gemini-apple-app-store-nano-banana/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-15T21:37:25Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.investors.com/news/technology/google-stock-new-high-gemini-apple-app-store-nano-banana/\"\u003ehttps://www.investors.com/news/technology/google-stock-new-high-gemini-apple-app-store-nano-banana/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45255230\"\u003ehttps://news.ycombinator.com/item?id=45255230\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Malware in Ngx-Bootstrap",
+      "link": "https://github.com/advisories/GHSA-6m4g-vm7c-f8w6",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-15T21:30:58Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/advisories/GHSA-6m4g-vm7c-f8w6\"\u003ehttps://github.com/advisories/GHSA-6m4g-vm7c-f8w6\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45255164\"\u003ehttps://news.ycombinator.com/item?id=45255164\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Revised Report on Scheme or An UnCommon Lisp (1985) [pdf]",
+      "link": "https://dspace.mit.edu/bitstream/handle/1721.1/5600/AIM-848.pdf",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-15T21:29:40Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://dspace.mit.edu/bitstream/handle/1721.1/5600/AIM-848.pdf\"\u003ehttps://dspace.mit.edu/bitstream/handle/1721.1/5600/AIM-848.pdf\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45255155\"\u003ehttps://news.ycombinator.com/item?id=45255155\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The idea of /usr/sbin has failed in practice",
+      "link": "https://utcc.utoronto.ca/~cks/space/blog/unix/UsrSbinFailedInPractice",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-15T21:28:48Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://utcc.utoronto.ca/~cks/space/blog/unix/UsrSbinFailedInPractice\"\u003ehttps://utcc.utoronto.ca/~cks/space/blog/unix/UsrSbinFailedInPractice\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45255148\"\u003ehttps://news.ycombinator.com/item?id=45255148\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Claude is now generally available in Xcode",
+      "link": "https://www.anthropic.com/news/claude-in-xcode",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-15T21:28:24Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.anthropic.com/news/claude-in-xcode\"\u003ehttps://www.anthropic.com/news/claude-in-xcode\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45255142\"\u003ehttps://news.ycombinator.com/item?id=45255142\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "William Gibson Reads Neuromancer",
+      "link": "http://bearcave.com/bookrev/neuromancer/neuromancer_audio.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-15T21:28:01Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"http://bearcave.com/bookrev/neuromancer/neuromancer_audio.html\"\u003ehttp://bearcave.com/bookrev/neuromancer/neuromancer_audio.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45255137\"\u003ehttps://news.ycombinator.com/item?id=45255137\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 25\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Imperial Tyranny, Korean Humiliation",
+      "link": "https://english.hani.co.kr/arti/english_edition/english_editorials/1218475.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-15T21:27:37Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://english.hani.co.kr/arti/english_edition/english_editorials/1218475.html\"\u003ehttps://english.hani.co.kr/arti/english_edition/english_editorials/1218475.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45255132\"\u003ehttps://news.ycombinator.com/item?id=45255132\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 23\u003c/p\u003e\n\u003cp\u003e# Comments: 4\u003c/p\u003e\n"
+    },
+    {
+      "title": "Spain's PM called for Israel to be barred from international sports competitions",
+      "link": "https://www.theguardian.com/world/2025/sep/15/spains-pm-criticised-after-vuelta-a-espana-race-abandoned-over-pro-palestinian-protests",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-15T21:25:06Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.theguardian.com/world/2025/sep/15/spains-pm-criticised-after-vuelta-a-espana-race-abandoned-over-pro-palestinian-protests\"\u003ehttps://www.theguardian.com/world/2025/sep/15/spains-pm-criticised-after-vuelta-a-espana-race-abandoned-over-pro-palestinian-protests\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45255106\"\u003ehttps://news.ycombinator.com/item?id=45255106\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 9\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Realtime Linux Beyond Preempt_rt: Xenomai's Dual-Kernel Approach [video]",
+      "link": "https://www.youtube.com/watch?v=WXKsLTfrOiE",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-15T21:24:05Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.youtube.com/watch?v=WXKsLTfrOiE\"\u003ehttps://www.youtube.com/watch?v=WXKsLTfrOiE\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45255096\"\u003ehttps://news.ycombinator.com/item?id=45255096\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Integrating CrowdStrike Falcon Fusion SOAR with Cloudflare’s SASE platform",
+      "link": "https://blog.cloudflare.com/integrating-crowdstrike-falcon-fusion-soar-with-cloudflares-sase-platform/",
+      "source": "Cloudflare Blog",
+      "category": "tech",
+      "publishedAt": "2025-09-15T16:17:51Z",
+      "description": " Cloudflare and CrowdStrike have partnered to help SOC teams minimize manual bottlenecks. By combining Cloudflare’s SASE platform with CrowdStrike’s Falcon® Fusion SOAR, security teams can now detect  "
+    },
+    {
+      "title": "Cloud CISO Perspectives: APAC security leaders speak out on AI and key topics",
+      "link": "https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-apac-security-leaders-speak-out-on-ai/",
+      "source": "AI \u0026 Machine Learning",
+      "category": "tech",
+      "publishedAt": "2025-09-15T16:00:00Z",
+      "description": "\u003cdiv class=\"block-paragraph\"\u003e\u003cp data-block-key=\"eucpw\"\u003eWelcome to the first Cloud CISO Perspectives for September 2025. Today, Daryl Pereira and Hui Meng Foo, from our Office of the CISO’s Asia-Pacific office, share insights on AI from security leaders who attended our recent Google Cloud CISO Community event in Singapore.\u003c/p\u003e\u003cp data-block-key=\"4b173\"\u003eAs with all Cloud CISO Perspectives, the contents of this newsletter are posted to the \u003ca href=\"https://cloud.google.com/blog/products/identity-security/\"\u003eGoogle Cloud blog\u003c/a\u003e. If you’re reading this on the website and you’d like to receive the email version, you can \u003ca href=\"https://cloud.google.com/resources/google-cloud-ciso-newsletter-signup\"\u003esubscribe here\u003c/a\u003e.\u003c/p\u003e\u003c/div\u003e\n\u003cdiv class=\"block-aside\"\u003e\u003cdl\u003e\n    \u003cdt\u003easide_block\u003c/dt\u003e\n    \u003cdd\u003e\u0026lt;ListValue: [StructValue([(\u0026#x27;title\u0026#x27;, \u0026#x27;Get vital board insights with Google Cloud\u0026#x27;), (\u0026#x27;body\u0026#x27;, \u0026lt;wagtail.rich_text.RichText object at 0x3e3cb0c401c0\u0026gt;), (\u0026#x27;btn_text\u0026#x27;, \u0026#x27;Visit the hub\u0026#x27;), (\u0026#x27;href\u0026#x27;, \u0026#x27;https://cloud.google.com/solutions/security/board-of-directors?utm_source=cloud_sfdc\u0026amp;utm_medium=email\u0026amp;utm_campaign=FY24-Q2-global-PROD941-physicalevent-er-CEG_Boardroom_Summit\u0026amp;utm_content=-\u0026amp;utm_term=-\u0026#x27;), (\u0026#x27;image\u0026#x27;, \u0026lt;GAEImage: GCAT-replacement-logo-A\u0026gt;)])]\u0026gt;\u003c/dd\u003e\n\u003c/dl\u003e\u003c/div\u003e\n\u003cdiv class=\"block-paragraph\"\u003e\u003ch3 data-block-key=\"hswvv\"\u003eWhat we heard from APAC security leaders on AI\u003c/h3\u003e\u003cp data-block-key=\"a2re3\"\u003e\u003ci\u003eBy Daryl Pereira, director, and Hui Meng Foo, security risk and regulatory advisor, Office of the CISO Asia-Pacific\u003c/i\u003e\u003c/p\u003e\u003c/div\u003e\n\u003cdiv class=\"block-paragraph_with_image\"\u003e\u003cdiv class=\"article-module h-c-page\"\u003e\n  \u003cdiv class=\"h-c-grid uni-paragraph-wrap\"\u003e\n    \u003cdiv class=\"uni-paragraph\n      h-c-grid__col h-c-grid__col--8 h-c-grid__col-m--6 h-c-grid__col-l--6\n      h-c-grid__col--offset-2 h-c-grid__col-m--offset-3 h-c-grid__col-l--offset-3\"\u003e\n\n      \n\n\n\n\n\n\n  \n\n    \u003cfigure class=\"article-image--wrap-small\n      \n      \"\n      \u003e\n\n      \n      \n        \n        \u003cimg\n            src=\"https://storage.googleapis.com/gweb-cloudblog-publish/images/Daryl_Pereira_OCISO.max-1000x1000.jpg\"\n        \n          alt=\"Daryl Pereira OCISO\"\u003e\n        \n        \u003c/a\u003e\n      \n        \u003cfigcaption class=\"article-image__caption \"\u003e\u003cp data-block-key=\"nj7d4\"\u003eDaryl Pereira, director, Office of the CISO Asia-Pacific\u003c/p\u003e\u003c/figcaption\u003e\n      \n    \u003c/figure\u003e\n\n  \n\n\n\n\n\n      \u003cp data-block-key=\"0jyqm\"\u003eThe threat landscape is growing non-linearly. In response, security leaders are accelerating investment in cybersecurity AI with the goal of force-multiplying the capabilities of their security professionals. In the Asia-Pacific region, security leaders told Google Cloud’s Office of the CISO that they are looking at how AI can boost defenders while also being mindful of the risks that can come with AI adoption.\u003c/p\u003e\u003cp data-block-key=\"36f4t\"\u003eMore than 100 security leaders at a Google Cloud CISO Community event in Singapore on August 26 and 27 told us that they were most interested in \u003ca href=\"https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-talk-cyber-in-business-terms-to-win-allies\"\u003ehow cybersecurity can be a business enabler\u003c/a\u003e, the \u003ca href=\"https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-digital-sovereignty-builds-better-borders-future\"\u003erise of digital sovereignty\u003c/a\u003e, the \u003ca href=\"https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-the-high-value-of-cross-industry-communication/\"\u003eexponential power of security and leadership communities\u003c/a\u003e — and of course, AI, which has been top of mind for security leaders across the globe.\u003c/p\u003e\n    \u003c/div\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n\n\u003c/div\u003e\n\u003cdiv class=\"block-paragraph_with_image\"\u003e\u003cdiv class=\"article-module h-c-page\"\u003e\n  \u003cdiv class=\"h-c-grid uni-paragraph-wrap\"\u003e\n    \u003cdiv class=\"uni-paragraph\n      h-c-grid__col h-c-grid__col--8 h-c-grid__col-m--6 h-c-grid__col-l--6\n      h-c-grid__col--offset-2 h-c-grid__col-m--offset-3 h-c-grid__col-l--offset-3\"\u003e\n\n      \n\n\n\n\n\n\n  \n\n    \u003cfigure class=\"article-image--wrap-small\n      \n      \"\n      \u003e\n\n      \n      \n        \n        \u003cimg\n            src=\"https://storage.googleapis.com/gweb-cloudblog-publish/images/Hui_Meng_Foo_OCISO.max-1000x1000.jpg\"\n        \n          alt=\"Hui Meng Foo OCISO\"\u003e\n        \n        \u003c/a\u003e\n      \n        \u003cfigcaption class=\"article-image__caption \"\u003e\u003cp data-block-key=\"b3c5j\"\u003eHui Meng Foo, security risk and regulatory advisor, Office of the CISO Asia-Pacific\u003c/p\u003e\u003c/figcaption\u003e\n      \n    \u003c/figure\u003e\n\n  \n\n\n\n\n\n      \u003cp data-block-key=\"owdcn\"\u003e\"Any AI solution must be built on a bedrock of strong data security and privacy. Without this foundation, its intelligence is a vulnerability waiting to be exploited, said Brett Matthes, CISO for APAC, Coupang.\u003c/p\u003e\n    \u003c/div\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n\n\u003c/div\u003e\n\u003cdiv class=\"block-paragraph\"\u003e\u003cp data-block-key=\"ld7pc\"\u003eWhen it comes to embracing the power of AI in a safe and responsible manner, CISOs are looking for feedback, guidance, and communication in three key areas:\u003c/p\u003e\u003cul\u003e\u003cli data-block-key=\"bclha\"\u003e\u003cb\u003eGetting AI\u003c/b\u003e \u003cb\u003eimplementation and governance right\u003c/b\u003e: From \u003ca href=\"https://cloud.google.com/blog/transform/from-turnkey-to-custom-tailor-your-ai-risk-governance-to-help-build-confidence?e=48754805\"\u003ecreating complex AI risk profiles\u003c/a\u003e to \u003ca href=\"https://cloud.google.com/transform/spotlighting-shadow-ai-how-to-protect-against-risky-ai-practices\"\u003etamping down on shadow AI\u003c/a\u003e to \u003ca href=\"https://cloud.google.com/transform/how-to-craft-an-acceptable-use-policy-for-gen-ai-and-look-smart-doing-it/?e=48754805\"\u003ecrafting AI acceptable use policies\u003c/a\u003e, smart AI security policies can help set up organizations with a strong foundation for AI success.\u003c/li\u003e\u003cli data-block-key=\"btoi2\"\u003e\u003cb\u003eSecuring the AI supply chain\u003c/b\u003e: The ongoing and rapid growth of AI means that its \u003ca href=\"https://security.googlecloudcommunity.com/community-blog-42/securing-ai-supply-chain-like-software-only-not-3941\" target=\"_blank\"\u003eattack surface can also quickly shift\u003c/a\u003e, making this a crucial time to invest in AI security research. At Google Cloud, we believe that it’s essential to \u003ca href=\"https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-ai-vendors-should-share-vulnerability-research-heres-why/?e=48754805\"\u003enormalize sharing and discussing AI vulnerability research\u003c/a\u003e.\u003c/li\u003e\u003cli data-block-key=\"442gc\"\u003e\u003cb\u003eEarning boardroom support for AI\u003c/b\u003e: Cyber risk is a full-board responsibility. CISOs can help form the bridge to the board, translating technical risks into business impact, using tools such as \u003ca href=\"https://cloud.google.com/transform/tabletopping-the-tabletop-new-perspectives-cybersecurity-favorite-role-playing-game\"\u003etabletop exercises\u003c/a\u003e and \u003ca href=\"https://cloud.google.com/transform/how-saif-can-accelerate-secure-ai-experiments-infographic\"\u003ematurity frameworks\u003c/a\u003e to facilitate understanding.\u003c/li\u003e\u003c/ul\u003e\u003c/div\u003e\n\u003cdiv class=\"block-pull_quote\"\u003e\u003cdiv class=\"uni-pull-quote h-c-page\"\u003e\n  \u003csection class=\"h-c-grid\"\u003e\n    \u003cdiv class=\"uni-pull-quote__wrapper h-c-grid__col h-c-grid__col--8 h-c-grid__col-m--6 h-c-grid__col-l--6\n      h-c-grid__col--offset-2 h-c-grid__col-m--offset-3 h-c-grid__col-l--offset-3\"\u003e\n      \u003cdiv class=\"uni-pull-quote__inner-wrapper h-c-copy h-c-copy\"\u003e\n        \u003cq class=\"uni-pull-quote__text\"\u003eWe also discussed with CISO event attendees their concerns on how AI can help boost defenders and enable better business outcomes with improvements to threat intelligence, detection engineering, and critical thinking. While it’s still early days for using AI to gain even more from threat intelligence, it’s clear that defenders see great potential that’s already starting to be realized.\u003c/q\u003e\n\n        \n      \u003c/div\u003e\n    \u003c/div\u003e\n  \u003c/section\u003e\n\u003c/div\u003e\n\n\u003c/div\u003e\n\u003cdiv class=\"block-paragraph\"\u003e\u003cp data-block-key=\"dnpuq\"\u003eCISOs are hopeful that bringing AI-driven automation to security operations workflows can help tip the scales towards defenders, said Franck Vervial, Regional CISO, APAC and MENA, L'Oreal. “In an era of agentic AI-driven attacks, such automation is not optional — it is essential for timely and effective response,” he said.\u003c/p\u003e\u003cp data-block-key=\"aqm0h\"\u003eAs CISOs look for automated, agile defenses that scale beyond their existing security operations center (SOC) capacity, we’ve introduced our \u003ca href=\"https://cloud.google.com/blog/products/identity-security/the-dawn-of-agentic-ai-in-security-operations-at-rsac-2025\"\u003evision of an agentic SOC\u003c/a\u003e to help address the biggest security operations bottlenecks. By offering \u003ca href=\"https://cloud.google.com/blog/products/identity-security/security-summit-2025-enabling-defenders-and-securing-ai-innovation\"\u003eagent-supported defense capabilities\u003c/a\u003e built on optimizing data pipelines, automating alert triage, investigation, and response, the agentic SOC can streamline detection engineering workflows to address coverage gaps and create new threat-led detections.\u003c/p\u003e\u003cp data-block-key=\"27s5\"\u003eAs we build out that vision, we have also begun to discuss our approach to securing AI agents. We detailed in our early June newsletter Google’s \u003ca href=\"https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-how-google-secures-ai-agents/?e=48754805\"\u003estrategy for securing AI agents\u003c/a\u003e, covering agent security challenges and our continued work toward ensuring AI agents are beneficial and secured by default. Agentic AI governance should follow the \u003ca href=\"https://cloud.google.com/transform/gen-ai-governance-10-tips-to-level-up-your-ai-program\"\u003esame guardrails for traditional AI systems\u003c/a\u003e, while implementing further measures for evolving security, privacy, and compliance risks, as appropriate.\u003c/p\u003e\u003cp data-block-key=\"beh5s\"\u003eWe also discussed with CISO event attendees their concerns on how AI can help boost defenders and enable better business outcomes with improvements to threat intelligence, detection engineering, and critical thinking. While it’s still early days for using AI to gain even more from threat intelligence, it’s clear that defenders see great potential that’s already starting to be realized.\u003c/p\u003e\u003cp data-block-key=\"3s0pj\"\u003eSecurity leaders said they are looking for deeper, more holistic views of incidents, for guidance on focus points, and for actionable steps to use AI for threat landscape analysis. In April, we \u003ca href=\"https://cloud.google.com/transform/3-new-ways-ai-security-sidekick?e=48754805\"\u003eshared our recent successes\u003c/a\u003e using AI to boost threat hunting, improve security validations, and deliver smarter red team analysis.\u003c/p\u003e\u003cp data-block-key=\"du290\"\u003eNaturally, CISOs want to learn more about how AI can improve detection engineering, particularly for behavioral patterns. So far, they’ve found that the quickest wins can come from reducing the time spent on investigations and navigating multiple portals, freeing up valuable personnel to focus on problems that need critical thinking skills. We’ve seen some advancements towards that future from the use of our \u003ca href=\"https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-our-big-sleep-agent-makes-big-leap\"\u003eBig Sleep agent to improve security outcomes\u003c/a\u003e.\u003c/p\u003e\u003c/div\u003e\n\u003cdiv class=\"block-pull_quote\"\u003e\u003cdiv class=\"uni-pull-quote h-c-page\"\u003e\n  \u003csection class=\"h-c-grid\"\u003e\n    \u003cdiv class=\"uni-pull-quote__wrapper h-c-grid__col h-c-grid__col--8 h-c-grid__col-m--6 h-c-grid__col-l--6\n      h-c-grid__col--offset-2 h-c-grid__col-m--offset-3 h-c-grid__col-l--offset-3\"\u003e\n      \u003cdiv class=\"uni-pull-quote__inner-wrapper h-c-copy h-c-copy\"\u003e\n        \u003cq class=\"uni-pull-quote__text\"\u003eFor the cybersecurity community, symposiums that provide a safe space for security leaders to share their experiences and lessons learned are crucial.\u003c/q\u003e\n\n        \n      \u003c/div\u003e\n    \u003c/div\u003e\n  \u003c/section\u003e\n\u003c/div\u003e\n\n\u003c/div\u003e\n\u003cdiv class=\"block-paragraph\"\u003e\u003cp data-block-key=\"5kwug\"\u003eConversations like the ones that took place at the Google Cloud CISO Community event in Singapore often happen only when peers come together to discuss shared challenges and emerging solutions in a trusted environment.\u003c/p\u003e\u003cp data-block-key=\"chuhq\"\u003e“The idea of collective cyber resilience including timely cyber threat intelligence sharing has become a strategic imperative. After all, we are only as strong as our ecosystem, especially in the wake of so many third-party supply chain breaches,” said Steven Sim, advisory committee chair, Operational Technology Information Sharing and Analysis Center.\u003c/p\u003e\u003cp data-block-key=\"coj3d\"\u003eFor the cybersecurity community, symposiums that provide a safe space for security leaders to share their experiences and lessons learned are crucial. The Google Cloud CISO Community is designed to be a place for these conversations, where security leaders can build collective defenses and navigate a complex, ever-changing landscape together.\u003c/p\u003e\u003cp data-block-key=\"9dmtf\"\u003eAt Google Cloud, we strongly believe that collaboration across verticals is key to creating a safer future for everyone. At these events, we create regional opportunities across multiple industries for CISOs to learn from peers and Google leaders, and to gain a shared understanding of how to enhance security while addressing risks.\u003c/p\u003e\u003cp data-block-key=\"8fur3\"\u003eThe next CISO Community event is in New York City, Nov. 4 and 5. You can \u003ca href=\"https://rsvp.withgoogle.com/events/google-cloud-ciso-community-nyc_2025\" target=\"_blank\"\u003elearn more and sign up here\u003c/a\u003e.\u003c/p\u003e\u003c/div\u003e\n\u003cdiv class=\"block-aside\"\u003e\u003cdl\u003e\n    \u003cdt\u003easide_block\u003c/dt\u003e\n    \u003cdd\u003e\u0026lt;ListValue: [StructValue([(\u0026#x27;title\u0026#x27;, \u0026#x27;Tell us what you think\u0026#x27;), (\u0026#x27;body\u0026#x27;, \u0026lt;wagtail.rich_text.RichText object at 0x3e3cb0176460\u0026gt;), (\u0026#x27;btn_text\u0026#x27;, \u0026#x27;Join the conversation\u0026#x27;), (\u0026#x27;href\u0026#x27;, \u0026#x27;https://google.qualtrics.com/jfe/form/SV_2n82k0LeG4upS2q\u0026#x27;), (\u0026#x27;image\u0026#x27;, \u0026lt;GAEImage: GCAT-replacement-logo-A\u0026gt;)])]\u0026gt;\u003c/dd\u003e\n\u003c/dl\u003e\u003c/div\u003e\n\u003cdiv class=\"block-paragraph\"\u003e\u003ch3 data-block-key=\"4bd61\"\u003e\u003cb\u003eIn case you missed it\u003c/b\u003e\u003c/h3\u003e\u003cp data-block-key=\"ebnud\"\u003eHere are the latest updates, products, services, and resources from our security teams so far this month:\u003c/p\u003e\u003cul\u003e\u003cli data-block-key=\"fa8u\"\u003e\u003cb\u003eNew for the U.K. and EU: No-cost, multicloud Data Transfer Essentials\u003c/b\u003e: At Google Cloud, interoperability and openness are key to enable customer choice and multicloud strategies, so today we’re launching Data Transfer Essentials. \u003ca href=\"https://cloud.google.com/blog/products/networking/new-for-the-uk-and-eu-no-cost-multicloud-data-transfer-essentials\"\u003e\u003cb\u003eRead more\u003c/b\u003e\u003c/a\u003e.\u003c/li\u003e\u003cli data-block-key=\"cme20\"\u003e\u003cb\u003eAI agent security: How to protect digital sidekicks (and your business)\u003c/b\u003e: AI agents can be very powerful tools, but they also can increase the risks your organization faces if not properly secured. Here’s what you need to know. \u003ca href=\"https://cloud.google.com/transform/ai-agent-security-how-to-protect-digital-sidekicks-and-your-business/\"\u003e\u003cb\u003eRead more\u003c/b\u003e\u003c/a\u003e.\u003c/li\u003e\u003cli data-block-key=\"b6cj\"\u003e\u003cb\u003eAnnouncing partner-built AI security innovations on Google Cloud\u003c/b\u003e: Google Cloud drives secure AI innovations and works with partners to meet the evolving needs of customers. Check out these new partner security solutions. \u003ca href=\"https://cloud.google.com/blog/topics/partners/announcing-partner-built-ai-security-innovations-on-google-cloud\"\u003e\u003cb\u003eRead more\u003c/b\u003e\u003c/a\u003e.\u003c/li\u003e\u003cli data-block-key=\"8sl7j\"\u003e\u003cb\u003eIntroducing the Agentic SOC Workshops for security professionals\u003c/b\u003e: As we build our agentic vision, we’re also excited to invite you to the first Agentic SOC Workshop, a free, half-day event series. \u003ca href=\"https://cloud.google.com/blog/products/identity-security/introducing-the-agentic-soc-workshops-for-security-professionals\"\u003e\u003cb\u003eRead more\u003c/b\u003e\u003c/a\u003e.\u003c/li\u003e\u003cli data-block-key=\"24o0q\"\u003e\u003cb\u003eFrom clicks to clusters: Confidential Computing expands with Intel TDX\u003c/b\u003e: New updates to our Confidential Computing Intel TDX-based offerings include GKE nodes, Confidential Space and GPU, and support for more regions and zones. \u003ca href=\"https://cloud.google.com/blog/products/identity-security/from-clicks-to-clusters-confidential-computing-expands-with-intel-tdx\"\u003e\u003cb\u003eRead more\u003c/b\u003e\u003c/a\u003e.\u003c/li\u003e\u003c/ul\u003e\u003cp data-block-key=\"4i80l\"\u003ePlease visit the Google Cloud blog for more security stories \u003ca href=\"https://cloud.google.com/blog/products/identity-security\"\u003epublished this month\u003c/a\u003e.\u003c/p\u003e\u003c/div\u003e\n\u003cdiv class=\"block-aside\"\u003e\u003cdl\u003e\n    \u003cdt\u003easide_block\u003c/dt\u003e\n    \u003cdd\u003e\u0026lt;ListValue: [StructValue([(\u0026#x27;title\u0026#x27;, \u0026#x27;Join the Google Cloud CISO Community\u0026#x27;), (\u0026#x27;body\u0026#x27;, \u0026lt;wagtail.rich_text.RichText object at 0x3e3cb0176bb0\u0026gt;), (\u0026#x27;btn_text\u0026#x27;, \u0026#x27;Learn more\u0026#x27;), (\u0026#x27;href\u0026#x27;, \u0026#x27;https://rsvp.withgoogle.com/events/ciso-community-interest?utm_source=cgc-blog\u0026amp;utm_medium=blog\u0026amp;utm_campaign=2024-cloud-ciso-newsletter-events-ref\u0026amp;utm_content=-\u0026amp;utm_term=-\u0026#x27;), (\u0026#x27;image\u0026#x27;, \u0026lt;GAEImage: GCAT-replacement-logo-A\u0026gt;)])]\u0026gt;\u003c/dd\u003e\n\u003c/dl\u003e\u003c/div\u003e\n\u003cdiv class=\"block-paragraph\"\u003e\u003ch3 data-block-key=\"29tyz\"\u003e\u003cb\u003eThreat Intelligence news\u003c/b\u003e\u003c/h3\u003e\u003cul\u003e\u003cli data-block-key=\"eo403\"\u003e\u003cb\u003eWidespread data theft targets Salesforce instances via Salesloft Drift\u003c/b\u003e: An investigation into Salesloft Drift has led Google Threat Intelligence Group (GTIG) to issue an advisory to alert organizations about widespread data theft from Salesloft Drift customer integrations, affecting Salesforce and others. The campaign is carried out by the actor tracked as UNC6395. We are advising Salesloft Drift customers to treat \u003cb\u003eall authentication tokens stored in or connected to the Drift platform as potentially compromised\u003c/b\u003e. \u003ca href=\"https://cloud.google.com/blog/topics/threat-intelligence/data-theft-salesforce-instances-via-salesloft-drift\"\u003e\u003cb\u003eRead more\u003c/b\u003e\u003c/a\u003e\u003cb\u003e.\u003c/b\u003e\u003c/li\u003e\u003cli data-block-key=\"umce\"\u003e\u003cb\u003eViewState zero-day vulnerability in Sitecore products\u003c/b\u003e: Mandiant Threat Defense recently discovered an active ViewState deserialization attack affecting Sitecore deployments leveraging a sample machine key that had been exposed in Sitecore deployment guides from 2017 and earlier. \u003ca href=\"https://cloud.google.com/blog/topics/threat-intelligence/viewstate-deserialization-zero-day-vulnerability\"\u003e\u003cb\u003eRead more\u003c/b\u003e\u003c/a\u003e\u003cb\u003e.\u003c/b\u003e\u003c/li\u003e\u003c/ul\u003e\u003cp data-block-key=\"2r4b7\"\u003ePlease visit the Google Cloud blog for more threat intelligence stories \u003ca href=\"https://cloud.google.com/blog/topics/threat-intelligence/\"\u003epublished this month\u003c/a\u003e.\u003c/p\u003e\u003c/div\u003e\n\u003cdiv class=\"block-paragraph\"\u003e\u003ch3 data-block-key=\"rcfc5\"\u003e\u003cb\u003eNow hear this: Podcasts from Google Cloud\u003c/b\u003e\u003c/h3\u003e\u003cul\u003e\u003cli data-block-key=\"6pqlf\"\u003e\u003cb\u003eHow AI is forcing the SOC to evolve\u003c/b\u003e: Augusto Barros, principal product manager, Prophet Security, talks about his company’s approach to AI in the security operations center, what metrics should be used to evaluate the success of automation in the AI SOC, and what the post-AI SOC looks like, with hosts Anton Chuvakin and Tim Peacock. \u003ca href=\"https://cloud.withgoogle.com/cloudsecurity/podcast/ep242-the-ai-soc-is-this-the-automation-weve-been-waiting-for/\" target=\"_blank\"\u003e\u003cb\u003eListen here\u003c/b\u003e\u003c/a\u003e.\u003c/li\u003e\u003cli data-block-key=\"avub9\"\u003e\u003cb\u003eFrom black box to building blocks, even more detection engineering lessons from Google\u003c/b\u003e: Google Cloud’s Rick Correa goes deep into the code with Anton and Tim on the finer points of modern detection engineering. \u003ca href=\"https://cloud.withgoogle.com/cloudsecurity/podcast/ep241-from-black-box-to-building-blocks-more-modern-detection-engineering-lessons-from-google/\" target=\"_blank\"\u003e\u003cb\u003eListen here\u003c/b\u003e\u003c/a\u003e.\u003c/li\u003e\u003cli data-block-key=\"2nf6h\"\u003e\u003cb\u003eCyber Savvy Boardroom: Psychology, Trust, and AI Transformation\u003c/b\u003e: Tameron Chappell, chartered occupational psychologist, joins Office of the CISO’s Alicja Cade and David Homovich to talk about how boards can foster an experimental culture while ensuring AI use is both compliant and secure. \u003ca href=\"https://cybersavvyboardroom.libsyn.com/ep7-tameron-chappell-on-psychology-trust-and-ai-transformation\" target=\"_blank\"\u003e\u003cb\u003eListen here\u003c/b\u003e\u003c/a\u003e.\u003c/li\u003e\u003cli data-block-key=\"680dv\"\u003e\u003cb\u003eBehind the Binary: The dark side of Web3\u003c/b\u003e: Web3 promised a new era of decentralized finance, but it has also created a new frontier for criminal activity. Host Josh Stroschein is joined by Web3 experts Blas Kojusner, Robert Wallace, and Joseph Dobson to explore the Wild West of Web3 and decentralized finance. \u003ca href=\"https://www.youtube.com/watch?v=u6R0jeI3PHY\u0026amp;list=PLjiTz6DAEpuLAykjYGpAUDL-tCrmTpXTf\" target=\"_blank\"\u003e\u003cb\u003eListen here\u003c/b\u003e\u003c/a\u003e.\u003c/li\u003e\u003c/ul\u003e\u003cp data-block-key=\"31sro\"\u003eTo have our Cloud CISO Perspectives post delivered twice a month to your inbox, \u003ca href=\"https://cloud.google.com/resources/google-cloud-ciso-newsletter-signup\"\u003esign up for our newsletter\u003c/a\u003e. We’ll be back in a few weeks with more security-related updates from Google Cloud.\u003c/p\u003e\u003c/div\u003e"
+    }
+  ],
+  "generatedAt": "2025-09-16T07:08:40.755384271+09:00"
+}
