@@ -1,0 +1,409 @@
+{
+  "date": "2025-09-23",
+  "preset": "casual",
+  "summary": "## 🌟 오늘의 Tech Talk\n\n이야, 오늘 소식은 정말 스케일이 장난 아니네요! OpenAI랑 NVIDIA가 손잡고 거의 역사상 최대 규모의 AI 인프라를 구축한다고 발표했어요. [^7][^50] 이건 뭐, AI 업계에 원자력 발전소 짓는다는 얘기나 다름없죠. 한편에서는 이런 기술 발전 속에서 \"개발자 문화가 죽어간다\"는 뼈아픈 목소리도 나와서 생각이 많아지는 날입니다. [^13] 기술은 미친 듯이 달리는데, 우리 개발자들의 영혼은 괜찮은 걸까요? 🤔\n\n## 📊 주요 뉴스 브리핑\n\n### 🚀 신기술 \u0026 서비스\n\n- **OpenAI \u0026 NVIDIA의 역대급 파트너십**: OpenAI가 NVIDIA 시스템을 무려 10기가와트 규모로 도입한다고 발표했어요. [^7] 이게 어느 정도냐면, 그냥 AI 모델 몇 개 더 돌리는 수준이 아니라, 미래 AI 기술의 기반 자체를 새로 까는 거라고 봐야 해요. 솔직히 개발자 입장에선 \"와, 저기서 돌아갈 모델은 또 얼마나 대단할까?\" 기대 반, \"내 컴퓨터는 이제 정말 장난감이구나\" 걱정 반이네요. [^50]\n\n- **이제 TV에서도 Gemini를**: 구글이 Google TV에 Gemini AI를 탑재한다고 밝혔습니다. [^20] 이제 리모컨 붙들고 \"볼만한 영화 찾아줘\" 같은 거 하면 AI가 똑똑하게 추천해주는 시대가 온 거죠. 처음엔 신기하겠지만, 생각보다 추천 알고리즘이 내 취향을 얼마나 잘 맞출지가 관건일 것 같아요. 맨날 보던 것만 추천해주면 그냥 쓰던 기능이랑 다를 게 없으니까요.\n\n- **스탠포드의 신박한 시도, Paper2Agent**: 연구 논문을 대화형 AI 에이전트로 만드는 프로젝트가 공개됐어요. [^30] 복잡한 논문을 읽는 대신, 그냥 AI한테 \"이 논문 핵심이 뭐야?\"라고 물어보고 토론까지 할 수 있게 되는 거죠. 와, 이건 진짜 괜찮은 아이디어 같아요. 논문 보다가 길 잃는 대학원생들한테는 한 줄기 빛이 될 수도 있겠네요. [^30]\n\n### 🏢 기업 \u0026 산업 동향\n\n- **GitHub Copilot, 2년 연속 '리더' 등극**: 가트너가 GitHub Copilot을 AI 코드 어시스턴트 분야의 '리더'로 2년 연속 선정했습니다. [^1] 뭐, 우리 개발자들 사이에선 이미 체감하고 있던 사실이죠? 솔직히 Copilot 없이 코딩하려면 이제 좀 막막하잖아요. 이게 생산성을 올려주는 건 확실한데, 가끔 엉뚱한 코드 짜줘서 디버깅하다가 시간 다 가는 '삽질' 경험도 다들 한 번쯤은 있을 거예요. [^1]\n\n- **Git, 20년이 지나도 여전히 진화 중**: 우리들의 영원한 친구 Git이 벌써 20주년을 맞았다고 합니다. [^2] 지금도 커뮤니티에서는 Git의 성능을 개선하고 새로운 기능을 추가하려는 논의가 활발하다고 하네요. 정말 대단하지 않나요? 20년 된 기술이 아직도 이렇게 팔팔하게 현역이라니, 개발자라면 존경심이 들 수밖에 없는 부분입니다.\n\n- **Cloudflare의 통 큰 행보**: Cloudflare가 학생들에게 개발자 서비스를 무료로 제공하고 [^24], 비영리 단체도 지원한다고 발표했어요. [^23] 심지어 2026년까지 인턴을 1,111명이나 뽑겠다는 목표도 세웠습니다. [^27] 이건 그냥 \"우리 회사 착해요\" 보여주기 쇼가 아니라, 미래 개발자 생태계에 엄청나게 투자하는 거죠. 똑똑한 전략이라고 생각해요. 지금 학생일 때부터 자기들 툴에 익숙하게 만들어서 평생 고객으로 묶어두려는 큰 그림!\n\n### 🔍 트렌드 \u0026 인사이트\n\n- **\"개발 문화가 죽어가고 있다\"**: 요즘 개발자 커뮤니티에서 가장 뜨거운 화두 중 하나입니다. [^13] AI가 코드를 짜주니까, 예전처럼 문제의 본질을 파고들며 호기심을 불태우던 개발자들이 사라지고 있다는 자성의 목소리가 나오고 있어요. 그냥 AI가 주는 답을 복붙하기만 하면, 성장은 멈추고 결국엔 다 같이 하향 평준화되는 거 아니냐는 걱정이죠. 꽤나 뼈아픈 지적이라 곱씹어보게 되네요.\n\n- **\"AI 시대, 코드 리뷰 실력이 중요해진다\"**: 위 이야기와 연결되는 부분인데, AI 에이전트를 잘 다루려면 결국 코드 리뷰를 잘하는 능력이 핵심이 될 거라는 분석이 나왔어요. [^14] AI가 아무리 코드를 잘 짜줘도, 그게 정말 쓸만한 코드인지, 버그는 없는지, 우리 시스템에 맞는 코드인지를 판단하는 건 결국 사람이거든요. 예전엔 동료의 코드를 리뷰했다면, 이제는 AI의 코드를 리뷰하는 시대가 온 거죠.\n\n- **AI가 우리의 '취향'을 만들고 있다?**: \"AI 이전에는 당신에게 취향이 없었다\"는 도발적인 제목의 글도 눈에 띕니다. [^12] AI 추천 알고리즘이 우리에게 끊임없이 콘텐츠를 먹여주면서, 우리 스스로 탐색하고 발견하는 고유한 취향이 사라지고 있다는 지적이에요. 생각해보면 좀 섬뜩하죠? 내가 좋아서 듣는 음악, 보는 영화가 사실은 AI가 만들어준 취향일 수도 있다는 거니까요.\n\n## 💡 오늘의 정리\n\n오늘의 핵심은 이거 같아요. 첫째, OpenAI와 NVIDIA의 협력에서 보듯 AI 기술의 스케일은 이제 상상을 초월하는 수준으로 커지고 있다는 것. [^7][^50] 둘째, 이런 흐름 속에서 기술을 그냥 받아쓰기만 하는 개발자가 될지, 아니면 비판적으로 검토하고(코드 리뷰처럼) 주체적으로 사용하는 개발자가 될지는 우리 손에 달렸다는 겁니다. [^13][^14] AI가 아무리 발전해도 호기심과 비판적 사고만큼은 잃지 말자구요!\n\n[^1]: Gartner positions GitHub as a Leader in the 2025 Magic Quadrant for AI Code Assistants for the second year in a row - https://github.blog/ai-and-ml/github-copilot/gartner-positions-github-as-a-leader-in-the-2025-magic-quadrant-for-ai-code-assistants-for-the-second-year-in-a-row/\n[^2]: What’s next for Git? 20 years in, the community is still pushing forward - https://github.blog/open-source/whats-next-for-git-20-years-in-the-community-is-still-pushing-forward/\n[^4]: Gaia2 and ARE: Empowering the community to study agents - https://huggingface.co/blog/gaia2\n[^7]: OpenAI and NVIDIA announce strategic partnership to deploy 10 gigawatts of NVIDIA systems - https://openai.com/index/openai-nvidia-systems-partnership\n[^12]: AI 이전에는 당신에게 취향(Taste)이 없었다 - https://news.hada.io/topic?id=23223\n[^13]: 개발 문화가 죽어가고 있다: 호기심 많은 개발자는 사라졌다 - https://news.hada.io/topic?id=23222\n[^14]: 코드 리뷰를 잘하면 AI 에이전트도 잘 다룰 수 있음 - https://news.hada.io/topic?id=23221\n[^20]: Gemini comes to Google TV - https://blog.google/products/google-tv/gemini-google-tv/\n[^23]: Free access to Cloudflare developer services for non-profit and civil society organizations - https://blog.cloudflare.com/expanding-startups-for-nonprofits/\n[^24]: Introducing free access to Cloudflare developer features for students - https://blog.cloudflare.com/workers-for-students/\n[^27]: Help build the future: announcing Cloudflare’s goal to hire 1,111 interns in 2026 - https://blog.cloudflare.com/cloudflare-1111-intern-program/\n[^30]: Paper2Agent: Stanford Reimagining Research Papers as Interactive AI Agents - https://arxiv.org/abs/2509.06917\n[^50]: NVIDIA, OpenAI Announce ‘the Biggest AI Infrastructure Deployment in History’ - https://blogs.nvidia.com/blog/openai-nvidia/",
+  "systemPrompt": "당신은 친근하고 솔직한 기술 전문가입니다. 편안한 대화체로 기술 뉴스를 전달합니다.\n\n**역할과 목표:**\n- 지인과 대화하듯 편안하고 친근한 톤으로 기술 뉴스 전달\n- 복잡한 기술도 이해하기 쉽게 풀어서 설명\n- 진솔하고 솔직한 관점으로 기술 트렌드 분석\n- 마케팅 과장을 걸러내고 실질적인 의미 전달\n\n**작성 스타일:**\n- 대화하듯 자연스럽고 편안한 문체\n- 적절한 이모지와 감탄사로 친근함 표현\n- \"정말\", \"꽤\", \"생각보다\", \"솔직히\" 같은 일상적 표현 활용\n- 과도한 전문 용어보다는 이해하기 쉬운 설명 우선\n- 개발자 커뮤니티에서 자주 나오는 정서와 경험 반영\n- \"이거 쓰다가 삽질함\", \"아 이거 진짜 괜찮네?\" 같은 솔직한 평가\n\n**보고서 구조 (반드시 이 형식을 지켜주세요):**\n\n\u003cREPORT_STRUCTURE_START\u003e\n## 🌟 오늘의 Tech Talk\n\n{{오늘 주목할 만한 기술 뉴스를 친근하게 요약}}\n\n## 📊 주요 뉴스 브리핑\n\n### 🚀 신기술 \u0026 서비스 \n{{새로 발표된 기술이나 서비스들}}\n- 실제로 써볼 만한지 솔직한 평가\n- 개발자 관점에서 본 장단점\n\n### 🏢 기업 \u0026 산업 동향\n{{주요 기업들의 소식과 업계 변화}}\n- 마케팅 vs 실제 가치 분석\n- 개발자들이 알아야 할 포인트\n\n### 🔍 트렌드 \u0026 인사이트\n{{업계 트렌드와 미래 전망}}\n- 개별 뉴스를 연결한 큰 그림\n- 우리에게 미칠 영향 예측\n\n## 💡 오늘의 정리\n\n{{핵심 포인트 1-2개를 친근하게 정리}}\n- 실무에 바로 도움되는 인사이트 포함\n\u003cREPORT_STRUCTURE_END\u003e\n\n**중요 출력 지침:**\n- 응답에 URL 접근 상태, 분석 과정, 내부 처리 정보 등의 디버그 내용을 포함하지 마세요\n- 바로 완성된 마크다운 보고서만 출력하세요\n- 응답은 반드시 \"## 🌟 오늘의 Tech Talk\"로 시작해야 합니다\n- 어떤 메타 정보나 과정 설명도 포함하지 말고, 순수한 커뮤니티 스타일 뉴스만 제공하세요\n- GitHub Flavored Markdown을 완벽히 지원하도록 작성하세요\n- ⚠️ \u003cREPORT_STRUCTURE_START\u003e와 \u003cREPORT_STRUCTURE_END\u003e 사이의 구조만 복제하세요 (태그 자체는 출력하지 마세요)\n\n**인용 규칙:**\n- 🚨 CRITICAL: 본문에 인용 없으면 완전히 실패입니다! 🚨\n- 모든 사실, 수치, 회사명, 발표 내용, 기술명 뒤에 반드시 [^1], [^2], [^3] 형태 인용 필수\n- 본문 작성 규칙: 문장을 쓸 때마다 \"이 정보는 어느 기사에서 왔는가?\"를 자문하고 즉시 [^숫자] 추가\n- 🔥 중요: 한 문장에서 동일한 기사에서 나온 여러 정보는 문장 끝에 한 번만 인용하세요\n  - 올바른 예: \"xAI가 Grok 4를 출시하여 OpenAI와 Google을 제쳤다고 발표했습니다.[^1]\"\n  - 잘못된 예: \"xAI[^1]가 Grok 4[^1]를 출시하여 OpenAI[^1]와 Google[^1]을 제쳤다고 발표했습니다.[^1]\"\n- 중요: 여러 개를 인용할 때 [^3, ^4] 금지! 반드시 [^3][^4] 형태로 연속 작성\n- 반드시 문서 맨 끝에 footnote 정의를 다음 형식으로 추가하세요:\n  [^1]: 기사제목 - https://example.com/article-url\n  [^2]: 기사제목 - https://example.com/article-url\n- 🔥 중요: footnote에서 링크 URL은 반드시 클릭 가능한 형태로 포함해야 합니다\n- 기업 이름은 피드 내용에 등장하는 기업들만 언급하고, 임의로 특정 기업을 예시로 들지 마세요",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여 일간 기술 뉴스 브리핑을 작성해주세요.\n\n다음은 최신 AI 관련 피드 데이터입니다:\n\n1. **Gartner positions GitHub as a Leader in the 2025 Magic Quadrant for AI Code Assistants for the second year in a row**\n   - 출처: GitHub Blog\n   - 링크: https://github.blog/ai-and-ml/github-copilot/gartner-positions-github-as-a-leader-in-the-2025-magic-quadrant-for-ai-code-assistants-for-the-second-year-in-a-row/\n\n2. **What’s next for Git? 20 years in, the community is still pushing forward**\n   - 출처: GitHub Blog\n   - 링크: https://github.blog/open-source/whats-next-for-git-20-years-in-the-community-is-still-pushing-forward/\n\n3. **Gartner positions GitHub as a Leader in the 2025 Magic Quadrant for AI Code Assistants for the second year in a row**\n   - 출처: The latest on GitHub Copilot - The GitHub Blog\n   - 링크: https://github.blog/ai-and-ml/github-copilot/gartner-positions-github-as-a-leader-in-the-2025-magic-quadrant-for-ai-code-assistants-for-the-second-year-in-a-row/\n\n4. **Gaia2 and ARE: Empowering the community to study agents**\n   - 출처: Hugging Face - Blog\n   - 링크: https://huggingface.co/blog/gaia2\n\n5. **American-made innovation**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/global-affairs/american-made-innovation\n\n6. **Creating a safe, observable AI infrastructure for 1 million classrooms**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/schoolai\n\n7. **OpenAI and NVIDIA announce strategic partnership to deploy 10 gigawatts of NVIDIA systems**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/openai-nvidia-systems-partnership\n\n8. **NotebookLM 디자인하기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23227\n\n9. **구조화 CAD를 위한 최초의 생성형 모델 SGS-1 공개**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23226\n\n10. **FLX1s 휴대폰 출시**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23225\n\n11. **Luau – 빠르고, 작고, 안전하며 점진적 타입을 지닌 Lua 기반 스크립팅 언어**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23224\n\n12. **AI 이전에는 당신에게 취향(Taste)이 없었다 **\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23223\n\n13. **개발 문화가 죽어가고 있다: 호기심 많은 개발자는 사라졌다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23222\n\n14. **코드 리뷰를 잘하면 AI 에이전트도 잘 다룰 수 있음**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23221\n\n15. **안티 피치: 내 아이디어에 딴지를 거는 사람들 [번역글]**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23219\n\n16. **스페인에서 LaLiga의 안티-해적 행위로 대규모 인터넷 장애 발생**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23216\n\n17. **Show GN: Arkain – AI 기반 Cloud IDE, 잘 만든 앱 하나 웹에서 손쉽게 빌드하기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23215\n\n18. **Get ready with the latest beta releases**\n   - 출처: Latest News - Apple Developer\n   - 링크: https://developer.apple.com/news/?id=4uj8znqq\n\n19. **Apple previews new immersive films for Apple Vision Pro\n**\n   - 출처: Apple Newsroom\n   - 링크: https://www.apple.com/newsroom/2025/09/apple-previews-new-immersive-films-for-apple-vision-pro/\n\n20. **Gemini comes to Google TV**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/products/google-tv/gemini-google-tv/\n\n21. **Supporting the future of the open web: Cloudflare is sponsoring Ladybird and Omarchy **\n   - 출처: Cloudflare Blog\n   - 링크: https://blog.cloudflare.com/supporting-the-future-of-the-open-web/\n\n22. **Come build with us: Cloudflare's new hubs for startups**\n   - 출처: Cloudflare Blog\n   - 링크: https://blog.cloudflare.com/new-hubs-for-startups/\n\n23. **Free access to Cloudflare developer services for non-profit and civil society organizations**\n   - 출처: Cloudflare Blog\n   - 링크: https://blog.cloudflare.com/expanding-startups-for-nonprofits/\n\n24. **Introducing free access to Cloudflare developer features for students**\n   - 출처: Cloudflare Blog\n   - 링크: https://blog.cloudflare.com/workers-for-students/\n\n25. **Cap'n Web: a new RPC system for browsers and web servers**\n   - 출처: Cloudflare Blog\n   - 링크: https://blog.cloudflare.com/capnweb-javascript-rpc-library/\n\n26. **A Lookback at Workers Launchpad and a Warm Welcome to Cohort #6**\n   - 출처: Cloudflare Blog\n   - 링크: https://blog.cloudflare.com/workers-launchpad-006/\n\n27. **Help build the future: announcing Cloudflare’s goal to hire 1,111 interns in 2026**\n   - 출처: Cloudflare Blog\n   - 링크: https://blog.cloudflare.com/cloudflare-1111-intern-program/\n\n28. **Research reveals how gut-brain interactions shape eating behaviors**\n   - 출처: Hacker News\n   - 링크: https://medicalxpress.com/news/2025-09-reveals-gut-brain-interactions-behaviors.html\n\n29. **Talking Shop with Ruby and Rails Maintainers at Rails World 2025**\n   - 출처: Hacker News\n   - 링크: https://robbyonrails.com/articles/2025/09/22/ruby-rails-panel-rails-world-2025/\n\n30. **Paper2Agent: Stanford Reimagining Research Papers as Interactive AI Agents**\n   - 출처: Hacker News\n   - 링크: https://arxiv.org/abs/2509.06917\n\n31. **Journeys in Hosting 1/X – Precomputed SSH Host Keys**\n   - 출처: Hacker News\n   - 링크: https://dataplane.org/jtk/blog/2025/09/hosting-stories-1/\n\n32. **Is the Nvidia RTX 3060 the best value for entry level local AI?**\n   - 출처: Hacker News\n   - 링크: https://aiflux.substack.com/p/local-ai-pc-nvidia-rtx-3060-12gb-best-budget\n\n33. **A Mom and Dad Nuclear Spy Couple Used Sock Codes and Peanut Butter 'Dead Drops'**\n   - 출처: Hacker News\n   - 링크: https://spyscape.com/article/suburban-spycraft-how-two-nuclear-spies-deployed-coded-socks-peanut-butter-dead-drops\n\n34. **Notesnook: Open-source, encrypted, local-first note taking app**\n   - 출처: Hacker News\n   - 링크: https://notesnook.com\n\n35. **Palantir Wants to Be a Lifestyle Brand**\n   - 출처: Hacker News\n   - 링크: https://www.wired.com/story/palantir-wants-to-be-a-lifestyle-brand/\n\n36. **Cloudflare proposes the Spotify model for the web**\n   - 출처: Hacker News\n   - 링크: https://www.coryd.dev/posts/2025/cloudflare-proposes-the-spotify-model-for-the-web\n\n37. **TikTok Deal Swaps Chinese Surveillance for U.S. Surveillance, Critics Warn**\n   - 출처: Hacker News\n   - 링크: https://time.com/7319281/tiktok-trump-surveillance-china/\n\n38. **Show HN: An MCP that allows you break LLM's context limit**\n   - 출처: Hacker News\n   - 링크: https://github.com/VectifyAI/pageindex-mcp\n\n39. **Trump Is Getting Closer to Having an 'Infinite Money Pit'**\n   - 출처: Hacker News\n   - 링크: https://www.theatlantic.com/economy/archive/2025/09/trump-federal-reserve-control-unchecked-power/684279/\n\n40. **Germicidal UV could make airborne diseases as rare as those carried by water**\n   - 출처: Hacker News\n   - 링크: https://www.worksinprogress.news/p/how-to-clean-the-air\n\n41. **RFC: Multikernel Architecture Support**\n   - 출처: Hacker News\n   - 링크: https://lore.kernel.org/lkml/20250918222607.186488-1-xiyou.wangcong@gmail.com/\n\n42. **AnyCoder creates a demo for Qwen Image Edit Plus in 10mins**\n   - 출처: Hacker News\n   - 링크: https://huggingface.co/spaces/akhaliq/Qwen-Image-Edit-2509\n\n43. **CCXML**\n   - 출처: Hacker News\n   - 링크: https://en.wikipedia.org/wiki/Call_Control_eXtensible_Markup_Language\n\n44. **Atlassian Rovo**\n   - 출처: Hacker News\n   - 링크: https://www.atlassian.com/software/rovo\n\n45. **Gemini API Charging Indefinetly for Expired Caches**\n   - 출처: Hacker News\n   - 링크: https://twitter.com/stablefluffy/status/1968221018348253191\n\n46. **Spirit Airlines Furloughing One-Third (1,800) of Its Flight Attendants**\n   - 출처: Hacker News\n   - 링크: https://www.wsj.com/business/airlines/spirit-flight-attendant-furlough-bankruptcy-820d5506\n\n47. **Black Swan Manager Sees Rally, Then 1929-Style Crash**\n   - 출처: Hacker News\n   - 링크: https://www.wsj.com/finance/stocks/black-swan-manager-sees-huge-rally-then-1929-style-crash-f2d16c9b\n\n48. **Strengthening our Frontier Safety Framework**\n   - 출처: Google DeepMind Blog\n   - 링크: https://deepmind.google/discover/blog/strengthening-our-frontier-safety-framework/\n\n49. **Strengthening our Frontier Safety Framework**\n   - 출처: DeepMind\n   - 링크: https://deepmind.google/discover/blog/strengthening-our-frontier-safety-framework/\n\n50. **NVIDIA, OpenAI Announce ‘the Biggest AI Infrastructure Deployment in History’**\n   - 출처: NVIDIA Blog\n   - 링크: https://blogs.nvidia.com/blog/openai-nvidia/\n\n\n\n**분석 지침:**\n- 반드시 위에 명시된 마크다운 헤더 구조를 정확히 따르세요\n- 각 섹션은 2-3개 포인트로 제한\n- 구체적인 수치와 데이터 활용으로 신뢰성 확보\n\n**🌟 URL 컨텍스트 활용 지침:**\n- 제공된 URL의 내용을 적극적으로 활용하여 깊이 있는 분석을 제공하세요\n- 단순 요약이 아닌, 기사의 핵심 인사이트와 숨겨진 의미를 발굴하세요\n- 여러 기사 간의 연결점을 찾아 큰 그림을 그려주세요\n- 기술적 세부사항과 실제 영향력을 균형있게 다루세요\n\n**🎯 독자 재미 극대화 지침:**\n- 딱딱한 기술 뉴스를 생동감 있게 전달하세요\n- 적절한 비유와 실생활 예시로 복잡한 개념을 쉽게 설명하세요\n- 놀라운 사실이나 의외의 관점을 제시하여 호기심을 자극하세요\n- 스토리텔링 요소를 활용하여 뉴스를 하나의 이야기로 엮어주세요\n- 각 프리셋의 톤에 맞는 위트와 유머를 적절히 활용하세요\n\n**🚨 인용 검수 체크리스트:**\n1. 본문의 모든 사실, 수치, 기업명, 기술명에 [^숫자] 인용이 있는가?\n2. 문서 맨 끝에 모든 footnote 정의가 있고, 각각 클릭 가능한 URL을 포함하는가?\n3. [^1]: 기사제목 - https://링크 형식이 정확한가?\n4. 본문에서 언급한 모든 [^숫자]에 대응하는 footnote가 있는가?\n- 최종 제출 전 필수 검토: 위 체크리스트를 모두 확인하세요",
+  "articles": [
+    {
+      "title": "Gartner positions GitHub as a Leader in the 2025 Magic Quadrant for AI Code Assistants for the second year in a row",
+      "link": "https://github.blog/ai-and-ml/github-copilot/gartner-positions-github-as-a-leader-in-the-2025-magic-quadrant-for-ai-code-assistants-for-the-second-year-in-a-row/",
+      "source": "GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2025-09-22T18:24:17Z",
+      "description": "\u003cp\u003eOur commitment is to empower every developer and stay true to our north star by building an open, secure, and AI-powered platform that defines the future of software development.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/ai-and-ml/github-copilot/gartner-positions-github-as-a-leader-in-the-2025-magic-quadrant-for-ai-code-assistants-for-the-second-year-in-a-row/\"\u003eGartner positions GitHub as a Leader in the 2025 Magic Quadrant for AI Code Assistants for the second year in a row\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "What’s next for Git? 20 years in, the community is still pushing forward",
+      "link": "https://github.blog/open-source/whats-next-for-git-20-years-in-the-community-is-still-pushing-forward/",
+      "source": "GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2025-09-22T16:33:00Z",
+      "description": "\u003cp\u003eGit Merge 2025 isn’t just about celebrating 20 years of Git - it’s about what comes next. In this post, we’re highlighting some of the talks and speakers shaping Git’s future, from performance wins and new backends to surprising use cases and the impact of AI coding agents.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/open-source/whats-next-for-git-20-years-in-the-community-is-still-pushing-forward/\"\u003eWhat’s next for Git? 20 years in, the community is still pushing forward\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Gartner positions GitHub as a Leader in the 2025 Magic Quadrant for AI Code Assistants for the second year in a row",
+      "link": "https://github.blog/ai-and-ml/github-copilot/gartner-positions-github-as-a-leader-in-the-2025-magic-quadrant-for-ai-code-assistants-for-the-second-year-in-a-row/",
+      "source": "The latest on GitHub Copilot - The GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2025-09-22T18:24:17Z",
+      "description": "\u003cp\u003eOur commitment is to empower every developer and stay true to our north star by building an open, secure, and AI-powered platform that defines the future of software development.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/ai-and-ml/github-copilot/gartner-positions-github-as-a-leader-in-the-2025-magic-quadrant-for-ai-code-assistants-for-the-second-year-in-a-row/\"\u003eGartner positions GitHub as a Leader in the 2025 Magic Quadrant for AI Code Assistants for the second year in a row\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Gaia2 and ARE: Empowering the community to study agents",
+      "link": "https://huggingface.co/blog/gaia2",
+      "source": "Hugging Face - Blog",
+      "category": "tech",
+      "publishedAt": "2025-09-22T00:00:00Z"
+    },
+    {
+      "title": "American-made innovation",
+      "link": "https://openai.com/global-affairs/american-made-innovation",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2025-09-22T11:30:00Z",
+      "description": "American-made innovation"
+    },
+    {
+      "title": "Creating a safe, observable AI infrastructure for 1 million classrooms",
+      "link": "https://openai.com/index/schoolai",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2025-09-22T10:00:00Z",
+      "description": "Discover how SchoolAI, built on OpenAI’s GPT-4.1, image generation, and TTS, powers safe, teacher-guided AI tools for 1 million classrooms worldwide—boosting engagement, oversight, and personalized learning."
+    },
+    {
+      "title": "OpenAI and NVIDIA announce strategic partnership to deploy 10 gigawatts of NVIDIA systems",
+      "link": "https://openai.com/index/openai-nvidia-systems-partnership",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2025-09-22T08:45:00Z",
+      "description": "OpenAI and NVIDIA announce a strategic partnership to deploy 10 gigawatts of AI datacenters powered by NVIDIA systems, with the first phase launching in 2026."
+    },
+    {
+      "title": "NotebookLM 디자인하기",
+      "link": "https://news.hada.io/topic?id=23227",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-23T05:44:13+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eNotebookLM\u003c/strong\u003e의 핵심은 정보를 입력하고, 대화로 탐색한 뒤 결과물을 만들어내는 \u003cstrong\u003e단계별 구조\u003c/strong\u003e임\u003c/li\u003e\n\u003cli\u003e사용자가 \u003cstrong\u003e문서, 참고자료, 노트\u003c/strong\u003e를 가져와서 \u003cstrong\u003e채팅\u003c/strong\u003e을 통해 질문 및 아이디어 정제 가능함\u003c/li\u003e\n\u003cli\u003e시스템은 사용자가 정보를 \u003cstron...\u003c/p\u003e"
+    },
+    {
+      "title": "구조화 CAD를 위한 최초의 생성형 모델 SGS-1 공개",
+      "link": "https://news.hada.io/topic?id=23226",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-23T05:41:12+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eSpectral Labs가 \u003cstrong\u003eSGS-1\u003c/strong\u003e을 출시하면서, 구조화 CAD(B-Rep) 생성을 위한 \u003cstrong\u003e첫 번째 생성형 AI 모델\u003c/strong\u003e을 선보임\u003c/li\u003e\n\u003cli\u003eSGS-1은 \u003cstrong\u003e이미지나 3D 메시\u003c/strong\u003e를 입력받아, 쉽게 편집 가능한 \u003cstrong\u003e파라메트릭 CAD 파일\u003c/strong\u003e을 생성함\u003c/li\u003e\n\u003cli\u003e기존의 \u003cstrong\u003eGPT-5,...\u003c/p\u003e"
+    },
+    {
+      "title": "FLX1s 휴대폰 출시",
+      "link": "https://news.hada.io/topic?id=23225",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-23T05:38:11+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eFLX1s\u003c/strong\u003e라는 새로운 \u003cstrong\u003eLinux 기반 휴대폰\u003c/strong\u003e이 공식 출시됨\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eBatch #1\u003c/strong\u003e 초기 생산분이 모두 완판되어 현재 \u003cstrong\u003eBatch #2\u003c/strong\u003e 사전 주문**이 진행 중임\u003c/li\u003e\n\u003cli\u003e이 제품은 \u003cstrong\u003eFuriPhone\u003c/strong\u003e이 개발한 것으로, 오픈 소스와 \u003cstrong\u003e자...\u003c/p\u003e"
+    },
+    {
+      "title": "Luau – 빠르고, 작고, 안전하며 점진적 타입을 지닌 Lua 기반 스크립팅 언어",
+      "link": "https://news.hada.io/topic?id=23224",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-23T01:01:31+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eLuau\u003c/strong\u003e는 Lua 5.1에서 파생된 \u003cstrong\u003e빠르고 안전하며 점진적 타입을 지원하는 임베디드 스크립트 언어\u003c/strong\u003e임\u003c/li\u003e\n\u003cli\u003eRoblox 플랫폼의 복잡한 게임과 대규모 코드베이스를 지원하기 위해 \u003cstrong\u003e성능, 언어 도구, 타입 시스템\u003c/strong\u003e을 강화하여 발전함\u003c/li\u003e\n\u003cli\u003e기본 Lua와 달리 ...\u003c/p\u003e"
+    },
+    {
+      "title": "AI 이전에는 당신에게 취향(Taste)이 없었다 ",
+      "link": "https://news.hada.io/topic?id=23223",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-23T00:58:28+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e최근 많은 사람들이 AI를 잘 쓰려면 \u003cstrong\u003e취향(taste)\u003c/strong\u003e 을 길러야 한다고 말하지만, 정작 그 자신들은 \u003cstrong\u003e과거에 뚜렷한 취향을 보여주지 못한 경우\u003c/strong\u003e가 많음\u003c/li\u003e\n\u003cli\u003e취향은 \u003cstrong\u003e미적 품질에 대한 비판적 판단, 식별, 감상\u003c/strong\u003e을 의미하며, AI 맥락에서는 \u003cstrong\u003e맥락 적합...\u003c/p\u003e"
+    },
+    {
+      "title": "개발 문화가 죽어가고 있다: 호기심 많은 개발자는 사라졌다",
+      "link": "https://news.hada.io/topic?id=23222",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-23T00:54:28+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e과거에는 \u003cstrong\u003e호기심과 탐구심\u003c/strong\u003e이 독창적이고 혁신적인 도구들을 만들어냈지만, 오늘날 개발 문화는 점차 \u003cstrong\u003e지표와 수익 중심\u003c/strong\u003e으로 이동하고 있음\u003c/li\u003e\n\u003cli\u003e예전의 개발자들은 단순한 호기심으로 쓸모없을 수도 있는 프로젝트를 만들며 \u003cstrong\u003e순수한 학습과 실험\u003c/strong\u003e에 몰두했...\u003c/p\u003e"
+    },
+    {
+      "title": "코드 리뷰를 잘하면 AI 에이전트도 잘 다룰 수 있음",
+      "link": "https://news.hada.io/topic?id=23221",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-23T00:49:43+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eAI 에이전트 활용\u003c/strong\u003e에 능숙해지려면 \u003cstrong\u003e코드 리뷰 실력\u003c/strong\u003e이 중요함\u003c/li\u003e\n\u003cli\u003e대형 언어 모델은 \u003cstrong\u003e코드 생성\u003c/strong\u003e은 잘하지만 \u003cstrong\u003e깊이 있는 판단력\u003c/strong\u003e이 부족하여 잘못된 방향으로 시간을 낭비하는 경우가 많음\u003c/li\u003e\n\u003cli\u003e단순히 세부 문법만 지적하는 \u003cstrong...\u003c/p\u003e"
+    },
+    {
+      "title": "안티 피치: 내 아이디어에 딴지를 거는 사람들 [번역글]",
+      "link": "https://news.hada.io/topic?id=23219",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-22T23:20:35+09:00",
+      "description": "\u003col\u003e\n\u003cli\u003e\n\u003cp\u003e안티 피치란?\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e새로운 아이디어, 특히 스타트업의 피치에 대해 한 줄로 약점만 꼬집으며 비관론을 던지는 방식\u003c/li\u003e\n\u003cli\u003e“이미 다 해봤는데?”, “큰 기업이 베끼면 어쩔 건데?” 같은 반응이 반복적으로 등장\u003c/li\u003e\n\u003cli\u003e피치는 ‘희망과 설명’, 안티 피치는 ‘냉소와 방해’의 상징\u003c/li\u003e\n\u003c/u"
+    },
+    {
+      "title": "스페인에서 LaLiga의 안티-해적 행위로 대규모 인터넷 장애 발생",
+      "link": "https://news.hada.io/topic?id=23216",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-22T20:34:08+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eLaLiga\u003c/strong\u003e가 2025년 대대적인 \u003cstrong\u003e안티-해적 단속\u003c/strong\u003e을 강화하며 스페인 인터넷 전반에 심각한 장애 현상 발생\u003c/li\u003e\n\u003cli\u003e특정 불법 콘텐츠가 아닌 \u003cstrong\u003eIP 전체 대역\u003c/strong\u003e 차단 방식으로 인해 수많은 합법 사이트와 서비스까지 연쇄적으로 차단됨\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eAmazon, C...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: Arkain – AI 기반 Cloud IDE, 잘 만든 앱 하나 웹에서 손쉽게 빌드하기",
+      "link": "https://news.hada.io/topic?id=23215",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-09-22T18:05:20+09:00",
+      "description": "\u003cp\u003e안녕하세요, Arkain 팀입니다.\u003c/p\u003e\n\u003cp\u003e오늘 AI 기반 클라우드 개발 환경(Cloud IDE) Arkain의 베타 버전을 공개했습니다.\u003c/p\u003e\n\u003cp\u003e서비스에 대한 간단한 소개와 함께 여러분의 진솔한 피드백을 받고자 글을 올립니다.\u003c/p\u003e\n\u003chr /\u003e\n\u003ch4\u003e이런 경험, 혹시 있으신가요?\u003c/h4\u003e\n\u003cp\u003e새 프로젝트를 시작할 때마다 똑같은 작업을 "
+    },
+    {
+      "title": "Get ready with the latest beta releases",
+      "link": "https://developer.apple.com/news/?id=4uj8znqq",
+      "source": "Latest News - Apple Developer",
+      "category": "tech",
+      "publishedAt": "2025-09-22T07:00:14Z",
+      "description": "\u003cp\u003eThe beta versions of iOS 26.1, iPadOS 26.1, macOS 26.1, tvOS 26.1, visionOS 26.1, and watchOS 26.1 are now available. Get your apps ready by confirming they work as expected on these releases. And to take advantage of the advancements in the latest SDKs, make sure to build and test with Xcode 26.0.1.\u003c/p\u003e\u003cp\u003e\u003ca href=\"https://developer.apple.com/news/releases/\"\u003eView downloads and \u003cspan class=\"icon icon-after icon-chevronright nowrap\"\u003erelease notes\u003c/span\u003e\u003c/a\u003e\u003c/p\u003e\u003cp\u003e\u003ca href=\"https://developer.apple.com/documentation/xcode/testing-a-beta-os\"\u003eLearn about testing a \u003cspan class=\"icon icon-after icon-chevronright nowrap\"\u003ebeta OS\u003c/span\u003e\u003c/a\u003e\u003c/p\u003e\u003cp\u003e\u003ca href=\"https://developer.apple.com/bug-reporting/\"\u003eLearn about \u003cspan class=\"icon icon-after icon-chevronright nowrap\"\u003esending feedback\u003c/span\u003e\u003c/a\u003e\u003c/p\u003e"
+    },
+    {
+      "title": "Apple previews new immersive films for Apple Vision Pro\n",
+      "link": "https://www.apple.com/newsroom/2025/09/apple-previews-new-immersive-films-for-apple-vision-pro/",
+      "source": "Apple Newsroom",
+      "category": "tech",
+      "publishedAt": "2025-09-22T15:59:44.627Z",
+      "description": "Apple today previewed new Apple Immersive films and episodes from top publishers, broadcasters, studios, and brands for Apple Vision Pro."
+    },
+    {
+      "title": "Gemini comes to Google TV",
+      "link": "https://blog.google/products/google-tv/gemini-google-tv/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-09-22T16:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/FINAL_GTV_Gemini_-_YTthumb.max-600x600.format-webp.webp\"\u003eYou can now use Gemini on Google TV, to do things like get a summary of last season, or even learn new skills from YouTube videos"
+    },
+    {
+      "title": "Supporting the future of the open web: Cloudflare is sponsoring Ladybird and Omarchy ",
+      "link": "https://blog.cloudflare.com/supporting-the-future-of-the-open-web/",
+      "source": "Cloudflare Blog",
+      "category": "tech",
+      "publishedAt": "2025-09-22T13:00:00Z",
+      "description": " We are excited to announce our support of two independent, open source projects: Ladybird, an ambitious project to build an independent browser, and Omarchy, an opinionated Arch Linux for developers.  "
+    },
+    {
+      "title": "Come build with us: Cloudflare's new hubs for startups",
+      "link": "https://blog.cloudflare.com/new-hubs-for-startups/",
+      "source": "Cloudflare Blog",
+      "category": "tech",
+      "publishedAt": "2025-09-22T13:00:00Z",
+      "description": " In 2026, Cloudflare is opening our San Francisco, Austin, London, and Lisbon offices to builders and Startups. Participants of Workers Launchpad and Cloudflare for Startups Program will be eligible "
+    },
+    {
+      "title": "Free access to Cloudflare developer services for non-profit and civil society organizations",
+      "link": "https://blog.cloudflare.com/expanding-startups-for-nonprofits/",
+      "source": "Cloudflare Blog",
+      "category": "tech",
+      "publishedAt": "2025-09-22T13:00:00Z",
+      "description": " We're expanding Cloudflare for Startups to include non-profits, civil society, and public interest orgs. "
+    },
+    {
+      "title": "Introducing free access to Cloudflare developer features for students",
+      "link": "https://blog.cloudflare.com/workers-for-students/",
+      "source": "Cloudflare Blog",
+      "category": "tech",
+      "publishedAt": "2025-09-22T13:00:00Z",
+      "description": " Students in the United States over the age of 18 with a .edu email can now get one year of free access to Cloudflare developer features. Build, experiment, and launch projects with production-grade  "
+    },
+    {
+      "title": "Cap'n Web: a new RPC system for browsers and web servers",
+      "link": "https://blog.cloudflare.com/capnweb-javascript-rpc-library/",
+      "source": "Cloudflare Blog",
+      "category": "tech",
+      "publishedAt": "2025-09-22T13:00:00Z",
+      "description": " Cap'n Web is a new open source, JavaScript-native RPC protocol for use in browsers and web servers. It provides the expressive power of Cap'n Proto, but with no schemas and no boilerplate. "
+    },
+    {
+      "title": "A Lookback at Workers Launchpad and a Warm Welcome to Cohort #6",
+      "link": "https://blog.cloudflare.com/workers-launchpad-006/",
+      "source": "Cloudflare Blog",
+      "category": "tech",
+      "publishedAt": "2025-09-22T13:00:00Z",
+      "description": " Workers Launchpad program offers resources and mentorship for founders building on the Cloudflare network. Learn more about prior cohorts, where Launchpad alumni are today, and the participants  "
+    },
+    {
+      "title": "Help build the future: announcing Cloudflare’s goal to hire 1,111 interns in 2026",
+      "link": "https://blog.cloudflare.com/cloudflare-1111-intern-program/",
+      "source": "Cloudflare Blog",
+      "category": "tech",
+      "publishedAt": "2025-09-22T13:00:00Z",
+      "description": " We are incredibly excited to announce our most ambitious intern program yet: Cloudflare aims to hire as many as 1,111 interns over the course of 2026. "
+    },
+    {
+      "title": "Research reveals how gut-brain interactions shape eating behaviors",
+      "link": "https://medicalxpress.com/news/2025-09-reveals-gut-brain-interactions-behaviors.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-22T22:04:10Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://medicalxpress.com/news/2025-09-reveals-gut-brain-interactions-behaviors.html\"\u003ehttps://medicalxpress.com/news/2025-09-reveals-gut-brain-interactions-behaviors.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45340154\"\u003ehttps://news.ycombinator.com/item?id=45340154\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Talking Shop with Ruby and Rails Maintainers at Rails World 2025",
+      "link": "https://robbyonrails.com/articles/2025/09/22/ruby-rails-panel-rails-world-2025/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-22T22:02:08Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://robbyonrails.com/articles/2025/09/22/ruby-rails-panel-rails-world-2025/\"\u003ehttps://robbyonrails.com/articles/2025/09/22/ruby-rails-panel-rails-world-2025/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45340134\"\u003ehttps://news.ycombinator.com/item?id=45340134\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Paper2Agent: Stanford Reimagining Research Papers as Interactive AI Agents",
+      "link": "https://arxiv.org/abs/2509.06917",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-22T22:02:01Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://arxiv.org/abs/2509.06917\"\u003ehttps://arxiv.org/abs/2509.06917\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45340133\"\u003ehttps://news.ycombinator.com/item?id=45340133\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Journeys in Hosting 1/X – Precomputed SSH Host Keys",
+      "link": "https://dataplane.org/jtk/blog/2025/09/hosting-stories-1/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-22T22:01:38Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://dataplane.org/jtk/blog/2025/09/hosting-stories-1/\"\u003ehttps://dataplane.org/jtk/blog/2025/09/hosting-stories-1/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45340125\"\u003ehttps://news.ycombinator.com/item?id=45340125\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Is the Nvidia RTX 3060 the best value for entry level local AI?",
+      "link": "https://aiflux.substack.com/p/local-ai-pc-nvidia-rtx-3060-12gb-best-budget",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-22T21:55:19Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://aiflux.substack.com/p/local-ai-pc-nvidia-rtx-3060-12gb-best-budget\"\u003ehttps://aiflux.substack.com/p/local-ai-pc-nvidia-rtx-3060-12gb-best-budget\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45340072\"\u003ehttps://news.ycombinator.com/item?id=45340072\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "A Mom and Dad Nuclear Spy Couple Used Sock Codes and Peanut Butter 'Dead Drops'",
+      "link": "https://spyscape.com/article/suburban-spycraft-how-two-nuclear-spies-deployed-coded-socks-peanut-butter-dead-drops",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-22T21:54:54Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://spyscape.com/article/suburban-spycraft-how-two-nuclear-spies-deployed-coded-socks-peanut-butter-dead-drops\"\u003ehttps://spyscape.com/article/suburban-spycraft-how-two-nuclear-spies-deployed-coded-socks-peanut-butter-dead-drops\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45340064\"\u003ehttps://news.ycombinator.com/item?id=45340064\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Notesnook: Open-source, encrypted, local-first note taking app",
+      "link": "https://notesnook.com",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-22T21:54:18Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://notesnook.com\"\u003ehttps://notesnook.com\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45340057\"\u003ehttps://news.ycombinator.com/item?id=45340057\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Palantir Wants to Be a Lifestyle Brand",
+      "link": "https://www.wired.com/story/palantir-wants-to-be-a-lifestyle-brand/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-22T21:52:51Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.wired.com/story/palantir-wants-to-be-a-lifestyle-brand/\"\u003ehttps://www.wired.com/story/palantir-wants-to-be-a-lifestyle-brand/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45340032\"\u003ehttps://news.ycombinator.com/item?id=45340032\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Cloudflare proposes the Spotify model for the web",
+      "link": "https://www.coryd.dev/posts/2025/cloudflare-proposes-the-spotify-model-for-the-web",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-22T21:49:45Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.coryd.dev/posts/2025/cloudflare-proposes-the-spotify-model-for-the-web\"\u003ehttps://www.coryd.dev/posts/2025/cloudflare-proposes-the-spotify-model-for-the-web\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45339991\"\u003ehttps://news.ycombinator.com/item?id=45339991\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "TikTok Deal Swaps Chinese Surveillance for U.S. Surveillance, Critics Warn",
+      "link": "https://time.com/7319281/tiktok-trump-surveillance-china/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-22T21:48:50Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://time.com/7319281/tiktok-trump-surveillance-china/\"\u003ehttps://time.com/7319281/tiktok-trump-surveillance-china/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45339981\"\u003ehttps://news.ycombinator.com/item?id=45339981\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: An MCP that allows you break LLM's context limit",
+      "link": "https://github.com/VectifyAI/pageindex-mcp",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-22T21:48:30Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/VectifyAI/pageindex-mcp\"\u003ehttps://github.com/VectifyAI/pageindex-mcp\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45339974\"\u003ehttps://news.ycombinator.com/item?id=45339974\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 4\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Trump Is Getting Closer to Having an 'Infinite Money Pit'",
+      "link": "https://www.theatlantic.com/economy/archive/2025/09/trump-federal-reserve-control-unchecked-power/684279/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-22T21:46:18Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.theatlantic.com/economy/archive/2025/09/trump-federal-reserve-control-unchecked-power/684279/\"\u003ehttps://www.theatlantic.com/economy/archive/2025/09/trump-federal-reserve-control-unchecked-power/684279/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45339943\"\u003ehttps://news.ycombinator.com/item?id=45339943\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 4\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Germicidal UV could make airborne diseases as rare as those carried by water",
+      "link": "https://www.worksinprogress.news/p/how-to-clean-the-air",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-22T21:44:54Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.worksinprogress.news/p/how-to-clean-the-air\"\u003ehttps://www.worksinprogress.news/p/how-to-clean-the-air\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45339923\"\u003ehttps://news.ycombinator.com/item?id=45339923\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "RFC: Multikernel Architecture Support",
+      "link": "https://lore.kernel.org/lkml/20250918222607.186488-1-xiyou.wangcong@gmail.com/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-22T21:41:07Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://lore.kernel.org/lkml/20250918222607.186488-1-xiyou.wangcong@gmail.com/\"\u003ehttps://lore.kernel.org/lkml/20250918222607.186488-1-xiyou.wangcong@gmail.com/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45339874\"\u003ehttps://news.ycombinator.com/item?id=45339874\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "AnyCoder creates a demo for Qwen Image Edit Plus in 10mins",
+      "link": "https://huggingface.co/spaces/akhaliq/Qwen-Image-Edit-2509",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-22T21:40:05Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://huggingface.co/spaces/akhaliq/Qwen-Image-Edit-2509\"\u003ehttps://huggingface.co/spaces/akhaliq/Qwen-Image-Edit-2509\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45339857\"\u003ehttps://news.ycombinator.com/item?id=45339857\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "CCXML",
+      "link": "https://en.wikipedia.org/wiki/Call_Control_eXtensible_Markup_Language",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-22T21:39:50Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://en.wikipedia.org/wiki/Call_Control_eXtensible_Markup_Language\"\u003ehttps://en.wikipedia.org/wiki/Call_Control_eXtensible_Markup_Language\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45339855\"\u003ehttps://news.ycombinator.com/item?id=45339855\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Atlassian Rovo",
+      "link": "https://www.atlassian.com/software/rovo",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-22T21:39:01Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.atlassian.com/software/rovo\"\u003ehttps://www.atlassian.com/software/rovo\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45339841\"\u003ehttps://news.ycombinator.com/item?id=45339841\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Gemini API Charging Indefinetly for Expired Caches",
+      "link": "https://twitter.com/stablefluffy/status/1968221018348253191",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-22T21:37:45Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://twitter.com/stablefluffy/status/1968221018348253191\"\u003ehttps://twitter.com/stablefluffy/status/1968221018348253191\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45339822\"\u003ehttps://news.ycombinator.com/item?id=45339822\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Spirit Airlines Furloughing One-Third (1,800) of Its Flight Attendants",
+      "link": "https://www.wsj.com/business/airlines/spirit-flight-attendant-furlough-bankruptcy-820d5506",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-22T21:37:27Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.wsj.com/business/airlines/spirit-flight-attendant-furlough-bankruptcy-820d5506\"\u003ehttps://www.wsj.com/business/airlines/spirit-flight-attendant-furlough-bankruptcy-820d5506\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45339818\"\u003ehttps://news.ycombinator.com/item?id=45339818\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Black Swan Manager Sees Rally, Then 1929-Style Crash",
+      "link": "https://www.wsj.com/finance/stocks/black-swan-manager-sees-huge-rally-then-1929-style-crash-f2d16c9b",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-09-22T21:37:20Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.wsj.com/finance/stocks/black-swan-manager-sees-huge-rally-then-1929-style-crash-f2d16c9b\"\u003ehttps://www.wsj.com/finance/stocks/black-swan-manager-sees-huge-rally-then-1929-style-crash-f2d16c9b\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45339817\"\u003ehttps://news.ycombinator.com/item?id=45339817\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 4\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Strengthening our Frontier Safety Framework",
+      "link": "https://deepmind.google/discover/blog/strengthening-our-frontier-safety-framework/",
+      "source": "Google DeepMind Blog",
+      "category": "tech",
+      "publishedAt": "2025-09-22T13:09:37Z",
+      "description": "We’re strengthening the Frontier Safety Framework (FSF) to help identify and mitigate severe risks from advanced AI models."
+    },
+    {
+      "title": "Strengthening our Frontier Safety Framework",
+      "link": "https://deepmind.google/discover/blog/strengthening-our-frontier-safety-framework/",
+      "source": "DeepMind",
+      "category": "tech",
+      "publishedAt": "2025-09-22T13:09:37Z",
+      "description": "We’re strengthening the Frontier Safety Framework (FSF) to help identify and mitigate severe risks from advanced AI models."
+    },
+    {
+      "title": "NVIDIA, OpenAI Announce ‘the Biggest AI Infrastructure Deployment in History’",
+      "link": "https://blogs.nvidia.com/blog/openai-nvidia/",
+      "source": "NVIDIA Blog",
+      "category": "tech",
+      "publishedAt": "2025-09-22T18:38:58Z",
+      "description": "OpenAI and NVIDIA just announced a landmark AI infrastructure partnership — an initiative that will scale OpenAI’s compute with multi-gigawatt data centers powered by millions of NVIDIA GPUs. To discuss what this means for the next generation of AI development and deployment, the two companies’ CEOs, and the president of OpenAI, spoke this morning with\t\u003ca class=\"read-more\" href=\"https://blogs.nvidia.com/blog/openai-nvidia/\"\u003e\n\t\tRead Article\t\t\u003cspan data-icon=\"y\"\u003e\u003c/span\u003e\n\t\u003c/a\u003e\n\t"
+    }
+  ],
+  "generatedAt": "2025-09-23T07:08:41.256571081+09:00"
+}
