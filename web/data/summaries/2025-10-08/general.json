@@ -1,0 +1,498 @@
+{
+  "date": "2025-10-08",
+  "preset": "general",
+  "summary": "## 🌟 오늘의 AI \u0026 Tech 하이라이트\n\nAI 업계의 경쟁이 그 어느 때보다 뜨겁습니다. Anthropic이 대규모 투자 유치와 함께 새로운 모델을 선보이며 구글, OpenAI와의 경쟁 구도를 명확히 했고, Meta와 퀄컴 등 빅테크 기업들도 각각 오픈소스와 하드웨어 인수를 통해 미래를 준비하는 모습입니다.\n\n## 📊 주요 뉴스 브리핑\n\n### 🏢 기업 \u0026 산업 동향\n\n- **Anthropic, 130억 달러 투자 유치로 몸값 1,830억 달러 달성**: AI 안전을 강조해 온 Anthropic이 시리즈 F 투자 라운드에서 130억 달러라는 천문학적인 금액을 유치했습니다.[^1] 이는 AI 기술의 상업적 가능성에 대한 시장의 엄청난 기대를 보여주는 동시에, OpenAI와 Google이 주도하는 시장에 강력한 경쟁자가 나타났음을 의미합니다. 또한, 새로운 최고기술책임자(CTO)로 Rahul Patil을 영입하며 기술 리더십 강화에 나섰습니다.[^2]\n- **퀄컴, 아두이노 인수**: 스마트폰 칩의 강자 퀄컴이 DIY 하드웨어 및 프로토타이핑 플랫폼의 대명사인 아두이노를 인수했습니다.[^3] 이번 인수는 고성능 컴퓨팅 기술을 누구나 쉽게 접근하고 실험할 수 있는 개발자 생태계와 결합하려는 전략으로, 향후 사물인터넷(IoT) 및 엣지 AI 분야에서 큰 시너지를 낼 것으로 기대됩니다.[^3]\n- **Meta, React 재단 설립**: Meta가 JavaScript 라이브러리인 React와 React Native의 발전을 위해 'React 재단'을 출범시켰습니다.[^4] 이는 핵심 웹 및 앱 개발 기술의 소유권을 커뮤니티와 공유하고, 보다 투명하고 개방적인 방식으로 생태계를 성장시키려는 의도로 풀이됩니다.[^4]\n\n### 🔬 기술 혁신 \u0026 연구\n\n- **Anthropic, Claude Sonnet 4.5 출시**: 대규모 투자 유치 소식과 함께, Anthropic은 새로운 AI 모델인 Claude Sonnet 4.5를 공개했습니다.[^5] 최신 모델 출시로 기술 경쟁력을 지속적으로 강화하며 사용자들에게 더 향상된 AI 경험을 제공하려는 행보입니다.[^5]\n- **Google, Gemini 2.5 컴퓨터 사용 모델 공개**: Google DeepMind는 사용자의 컴퓨터 작업을 이해하고 수행할 수 있는 Gemini 2.5 컴퓨터 사용 모델을 선보였습니다.[^6] 이 기술은 복잡한 소프트웨어 조작이나 데이터 정리 같은 반복적인 작업을 자동화하여, 인간의 생산성을 획기적으로 높일 수 있는 잠재력을 가집니다.[^6]\n- **Meta, 고성능 압축 솔루션 'OpenZL' 오픈소스 공개**: Meta가 내부적으로 사용하던 AI용 데이터 압축 프레임워크 'OpenZL'을 오픈소스로 전환했습니다.[^7] AI 모델과 데이터셋의 크기가 기하급수적으로 커지는 상황에서, 효율적인 압축 기술은 개발 비용을 절감하고 더 많은 연구자들이 AI 기술에 접근할 수 있게 돕는 중요한 열쇠가 될 것입니다.[^7]\n\n### 🌐 트렌드 \u0026 인사이트\n\n- **AI 생태계 확장과 안전 동시 추구**: OpenAI는 악의적인 AI 사용을 막기 위한 노력을 발표하는 동시에, 개발자들이 앱을 쉽게 만들 수 있는 Apps SDK를 공개했습니다.[^8][^9] 이는 AI 기업들이 기술의 확산과 함께 책임감 있는 사용 환경을 조성하는 데에도 큰 노력을 기울이고 있음을 보여주는 트렌드입니다.\n- **스트리밍 서비스의 통합 가속화**: Disney가 20년간 운영해 온 Hulu 서비스를 종료하고, 자사의 핵심 스트리밍 플랫폼인 Disney+에 통합한다고 발표했습니다.[^10][^11] 이는 치열한 스트리밍 시장에서 구독자 이탈을 막고 콘텐츠 라이브러리를 강화하려는 '선택과 집중' 전략으로, 앞으로 더 많은 서비스 통합이 이루어질 수 있음을 시사합니다.\n\n## 💡 오늘의 테이크어웨이\n\n- **거대 자본이 AI 기술의 진화를 이끌고 있습니다.** Anthropic의 사례처럼, 이제 AI 경쟁은 단순히 기술력을 넘어 자본력의 싸움이 되었습니다. 이는 더 빠르고 강력한 AI의 등장을 예고하지만, 소규모 기업이나 연구 그룹의 진입 장벽이 높아질 수 있다는 점도 생각해야 합니다.\n- **기술은 다시 '개발자'에게로 향하고 있습니다.** Meta의 React 재단 설립, 퀄컴의 아두이노 인수, OpenAI의 SDK 공개 등은 모두 개발자 생태계를 장악하는 것이 미래 기술 패권의 핵심임을 보여줍니다. 결국 혁신은 기술을 활용해 새로운 가치를 만드는 개발자들의 손에서 시작되기 때문입니다.\n\n[^1]: Anthropic raises $13B Series F at $183B post-money valuation - https://www.anthropic.com/news/anthropic-raises-series-f-at-usd183b-post-money-valuation\n[^2]: Rahul Patil joins Anthropic as Chief Technology Officer - https://www.anthropic.com/news/rahul-patil-joins-anthropic\n[^3]: 퀄컴의 아두이노 인수 - https://news.hada.io/topic?id=23502\n[^4]: Introducing the React Foundation: The New Home for React \u0026 React Native - https://engineering.fb.com/2025/10/07/open-source/introducing-the-react-foundation-the-new-home-for-react-react-native/\n[^5]: Introducing Claude Sonnet 4.5 - https://www.anthropic.com/news/claude-sonnet-4-5\n[^6]: Introducing the Gemini 2.5 Computer Use model - https://blog.google/technology/google-deepmind/gemini-computer-use-model/\n[^7]: Meta(구 Facebook), 내부 사용하던 AI용 고성능 압축 솔루션 'OpenZL' 오픈소스로 공개 - https://news.hada.io/topic?id=23498\n[^8]: Disrupting malicious uses of AI: October 2025 - https://openai.com/global-affairs/disrupting-malicious-uses-of-ai-october-2025\n[^9]: OpenAI Apps SDK - https://news.hada.io/topic?id=23495\n[^10]: Hulu Becomes Global General Entertainment Brand on Disney+ Beginning October 8 - https://thewaltdisneycompany.com/hulu-global-brand-disney-plus/\n[^11]: Disney Is Officially Shutting Down Hulu After 20 Years - https://wibc.com/749914/disney-is-officially-shutting-down-hulu-after-20-years/",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 친절한 AI 큐레이터입니다.\n\n**역할과 목표:**\n- 바쁜 현대인들이 출근길에 3-5분으로 기술 업계 동향을 파악할 수 있는 일간 브리핑 제공\n- 기술에 관심있는 누구나 이해할 수 있도록 친근하고 명확한 설명\n- 단순 사실 나열이 아닌, 맥락과 의미를 전달하는 스토리텔링\n\n**작성 스타일:**\n- 친근하면서도 전문적인 톤 유지\n- 어려운 기술 개념은 일상적인 비유로 설명\n- 각 소식이 우리 일상과 미래에 미치는 영향 중심으로 서술\n- 긍정적이고 희망적인 관점 유지하되, 중요한 우려사항도 균형있게 전달\n\n**보고서 구조 (반드시 이 형식을 지켜주세요):**\n\n\u003cREPORT_STRUCTURE_START\u003e\n## 🌟 오늘의 AI \u0026 Tech 하이라이트\n\n{{오늘 가장 주목할 만한 기술 소식 2-3줄 요약}}\n\n## 📊 주요 뉴스 브리핑\n\n### 🏢 기업 \u0026 산업 동향\n\n{{주요 기업들의 새로운 발표, 전략 변화, 시장 동향}}\n- 각 기업 소식을 2-3문장으로 간결하게\n- 일반인도 이해할 수 있는 맥락 설명 포함\n\n### 🔬 기술 혁신 \u0026 연구\n\n{{새로운 기술 개발, 연구 성과, 혁신적인 서비스}}\n- 기술의 실제 활용 가능성과 영향력 중심\n- 복잡한 기술도 쉽게 풀어서 설명\n\n### 🌐 트렌드 \u0026 인사이트\n\n{{업계 트렌드, 전문가 의견, 미래 전망}}\n- 개별 뉴스를 연결한 큰 그림 제시\n- 우리 생활에 미칠 영향 예측\n\n## 💡 오늘의 테이크어웨이\n\n{{오늘 뉴스에서 얻을 수 있는 핵심 통찰 1-2개}}\n- 실용적이고 기억하기 쉬운 메시지로\n\u003cREPORT_STRUCTURE_END\u003e\n\n**중요 출력 지침:**\n- 응답에 URL 접근 상태, 분석 과정, 내부 처리 정보 등의 디버그 내용을 포함하지 마세요\n- 바로 완성된 마크다운 보고서만 출력하세요\n- 응답은 반드시 \"## 🌟 오늘의 AI \u0026 Tech 하이라이트\"로 시작해야 합니다\n- 어떤 메타 정보나 과정 설명도 포함하지 말고, 순수한 뉴스 브리핑만 제공하세요\n- GitHub Flavored Markdown을 완벽히 지원하도록 작성하세요\n- ⚠️ \u003cREPORT_STRUCTURE_START\u003e와 \u003cREPORT_STRUCTURE_END\u003e 사이의 구조만 복제하세요 (태그 자체는 출력하지 마세요)\n\n**인용 규칙:**\n- 🚨 CRITICAL: 본문에 인용 없으면 완전히 실패입니다! 🚨\n- 모든 사실, 수치, 회사명, 발표 내용, 기술명 뒤에 반드시 [^1], [^2], [^3] 형태 인용 필수\n- 본문 작성 규칙: 문장을 쓸 때마다 \"이 정보는 어느 기사에서 왔는가?\"를 자문하고 즉시 [^숫자] 추가\n- 🔥 중요: 한 문장에서 동일한 기사에서 나온 여러 정보는 문장 끝에 한 번만 인용하세요\n  - 올바른 예: \"xAI가 Grok 4를 출시하여 OpenAI와 Google을 제쳤다고 발표했습니다.[^1]\"\n  - 잘못된 예: \"xAI[^1]가 Grok 4[^1]를 출시하여 OpenAI[^1]와 Google[^1]을 제쳤다고 발표했습니다.[^1]\"\n- 중요: 여러 개를 인용할 때 [^3, ^4] 금지! 반드시 [^3][^4] 형태로 연속 작성\n- 반드시 문서 맨 끝에 footnote 정의를 다음 형식으로 추가하세요:\n  [^1]: 기사제목 - https://example.com/article-url\n  [^2]: 기사제목 - https://example.com/article-url\n- 🔥 중요: footnote에서 링크 URL은 반드시 클릭 가능한 형태로 포함해야 합니다\n- 기업 이름은 피드 내용에 등장하는 기업들만 언급하고, 임의로 특정 기업을 예시로 들지 마세요",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여 일간 기술 뉴스 브리핑을 작성해주세요.\n\n다음은 최신 AI 관련 피드 데이터입니다:\n\n1. **Rahul Patil joins Anthropic as Chief Technology Officer**\n   - 출처: Anthropic News (비공식)\n   - 링크: https://www.anthropic.com/news/rahul-patil-joins-anthropic\n\n2. **Anthropic raises $13B Series F at $183B post-money valuation**\n   - 출처: Anthropic News (비공식)\n   - 링크: https://www.anthropic.com/news/anthropic-raises-series-f-at-usd183b-post-money-valuation\n\n3. **Thoughts on America’s AI Action Plan**\n   - 출처: Anthropic News (비공식)\n   - 링크: https://www.anthropic.com/news/thoughts-on-america-s-ai-action-plan\n\n4. **Introducing Claude Sonnet 4.5**\n   - 출처: Anthropic News (비공식)\n   - 링크: https://www.anthropic.com/news/claude-sonnet-4-5\n\n5. **Build dynasties in Football Manager 26 Touch on Apple Arcade\n**\n   - 출처: Apple Newsroom\n   - 링크: https://www.apple.com/newsroom/2025/10/build-dynasties-in-football-manager-26-touch-on-apple-arcade/\n\n6. **Hello Developer: October 2025**\n   - 출처: Latest News - Apple Developer\n   - 링크: https://developer.apple.com/news/?id=glqa1owr\n\n7. **Disrupting malicious uses of AI: October 2025**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/global-affairs/disrupting-malicious-uses-of-ai-october-2025\n\n8. **Powered by Docker: How Open Source Genius Cut Entropy Debt with Docker MCP Toolkit and Claude Desktop**\n   - 출처: Docker Blog\n   - 링크: https://www.docker.com/blog/open-source-genius-cut-entropy-debt-docker-mcp-claude/\n\n9. **하루에 한두 개의 Starlink 위성이 지구로 떨어지고 있음**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23504\n\n10. **개인 재무 추적기 Write It Down 소개**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23503\n\n11. **퀄컴의 아두이노 인수**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23502\n\n12. **Windows 11에서 Microsoft 계정 없이 설치하는 우회 방법 차단 중**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23501\n\n13. **최소한의 CSS로 괜찮은 사이트 만들기 (2023)**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23500\n\n14. **OpenZL: 구조 인식이 가능한 오픈소스 압축 프레임워크**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23499\n\n15. **Meta(구 Facebook), 내부 사용하던 AI용 고성능 압축 솔루션 'OpenZL' 오픈소스로 공개**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23498\n\n16. **Mise: 모노레포 작업(Task) 기능 소개**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23497\n\n17. **OpenAI DevDay 2025에서 공개한 모든 것들**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23496\n\n18. **OpenAI Apps SDK**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23495\n\n19. **Stable Channel Update for Desktop**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2025/10/stable-channel-update-for-desktop.html\n\n20. **Extended Stable Updates for Desktop**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2025/10/extended-stable-updates-for-desktop.html\n\n21. **Chrome Stable for iOS Update**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2025/10/chrome-stable-for-ios-update.html\n\n22. **Investing in America 2025**\n   - 출처: Gemini\n   - 링크: https://blog.google/inside-google/company-announcements/investing-in-america-2025/\n\n23. **Introducing the Gemini 2.5 Computer Use model**\n   - 출처: Gemini\n   - 링크: https://blog.google/technology/google-deepmind/gemini-computer-use-model/\n\n24. **Google AI Plus is coming to 36 more countries.**\n   - 출처: Gemini\n   - 링크: https://blog.google/products/google-one/google-ai-plus-36-countries/\n\n25. **Introducing the Gemini 2.5 Computer Use model**\n   - 출처: Google DeepMind\n   - 링크: https://blog.google/technology/google-deepmind/gemini-computer-use-model/\n\n26. **Introducing the React Foundation: The New Home for React \u0026 React Native**\n   - 출처: Meta Engineering\n   - 링크: https://engineering.fb.com/2025/10/07/open-source/introducing-the-react-foundation-the-new-home-for-react-react-native/\n\n27. **Investing in America 2025**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/inside-google/company-announcements/investing-in-america-2025/\n\n28. **Introducing the Gemini 2.5 Computer Use model**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/technology/google-deepmind/gemini-computer-use-model/\n\n29. **Google AI Plus is coming to 36 more countries.**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/products/google-one/google-ai-plus-36-countries/\n\n30. **Expanding access to Opal, our no-code AI mini-app builder**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/technology/google-labs/opal-expansion/\n\n31. **Googler Michel Devoret awarded the Nobel Prize in Physics**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/inside-google/company-announcements/googler-michel-devoret-awarded-the-nobel-prize-in-physics/\n\n32. **AI Mode is now available in more languages and locations around the world.**\n   - 출처: AI\n   - 링크: https://blog.google/products/search/ai-mode-expands-languages-locations/\n\n33. **Investing in America 2025**\n   - 출처: AI\n   - 링크: https://blog.google/inside-google/company-announcements/investing-in-america-2025/\n\n34. **Introducing the Gemini 2.5 Computer Use model**\n   - 출처: AI\n   - 링크: https://blog.google/technology/google-deepmind/gemini-computer-use-model/\n\n35. **Google AI Plus is coming to 36 more countries.**\n   - 출처: AI\n   - 링크: https://blog.google/products/google-one/google-ai-plus-36-countries/\n\n36. **Googler Michel Devoret awarded the Nobel Prize in Physics**\n   - 출처: AI\n   - 링크: https://blog.google/inside-google/company-announcements/googler-michel-devoret-awarded-the-nobel-prize-in-physics/\n\n37. **How GitHub Copilot enabled accessibility governance process improvements in record time**\n   - 출처: GitHub Blog\n   - 링크: https://github.blog/ai-and-ml/github-copilot/how-we-automated-accessibility-compliance-in-five-hours-with-github-copilot/\n\n38. **How a top bug bounty researcher got their start in security**\n   - 출처: GitHub Blog\n   - 링크: https://github.blog/security/how-a-top-bug-bounty-researcher-got-their-start-in-security/\n\n39. **Not Another Workflow Builder**\n   - 출처: LangChain Blog\n   - 링크: https://blog.langchain.com/not-another-workflow-builder/\n\n40. **Hulu Becomes Global General Entertainment Brand on Disney+ Beginning October 8**\n   - 출처: Hacker News\n   - 링크: https://thewaltdisneycompany.com/hulu-global-brand-disney-plus/\n\n41. **Disney Is Officially Shutting Down Hulu After 20 Years**\n   - 출처: Hacker News\n   - 링크: https://wibc.com/749914/disney-is-officially-shutting-down-hulu-after-20-years/\n\n42. **Investing in America 2025**\n   - 출처: Hacker News\n   - 링크: https://blog.google/inside-google/company-announcements/investing-in-america-2025/\n\n43. **N.J. Attorney General Investigating Uber over Handling of Sexual Assaults**\n   - 출처: Hacker News\n   - 링크: https://www.nytimes.com/2025/10/07/business/uber-nj-attorney-general-sexual-assaults.html\n\n44. **RIP Robert Murray-Smith (1963 – 2025) [video]**\n   - 출처: Hacker News\n   - 링크: https://www.youtube.com/watch?v=GhramXiUrY4\n\n45. **Brazil's Finance Minister confirms studies on eliminating public transport fares**\n   - 출처: Hacker News\n   - 링크: https://www.reuters.com/world/americas/brazils-finance-minister-confirms-studies-eliminating-public-transport-fares-2025-10-07/\n\n46. **We evaluated Google's new computer use model on real websites**\n   - 출처: Hacker News\n   - 링크: https://www.browserbase.com/blog/evaluating-browser-agents\n\n47. **What's new in Python 3.14**\n   - 출처: Hacker News\n   - 링크: https://docs.python.org/3/whatsnew/3.14.html\n\n48. **Agentic workflow integrating any REST API into a graph using GraphOS MCP Tools**\n   - 출처: Hacker News\n   - 링크: https://www.youtube.com/watch?v=MoPYTN4piQc\n\n49. **Is the \"Nintendo Classics\" collection good value?**\n   - 출처: Hacker News\n   - 링크: https://sethmlarson.dev/nintendo-classics\n\n50. **Month MiniPC Mini-Review: Minisforum AI X1 Pro**\n   - 출처: Hacker News\n   - 링크: https://ivoras.substack.com/p/2-month-minipc-mini-review-minisforum\n\n51. **Easy Claude Code devcontainer workflows**\n   - 출처: Hacker News\n   - 링크: https://github.com/smithclay/claudetainer\n\n52. **Joint statement of scientists and researchers on the EU Chat Control regulation**\n   - 출처: Hacker News\n   - 링크: https://csa-scientist-open-letter.org/Sep2025\n\n53. **Closer to production quality Python notebooks with `marimo check`**\n   - 출처: Hacker News\n   - 링크: https://marimo.io/blog/marimo-check\n\n54. **Become unbannable from your email**\n   - 출처: Hacker News\n   - 링크: https://karboosx.net/post/PJOveGVa/become-unbannable-from-your-emailgmail\n\n55. **Katherina Lynn Faked Her Way into Yale. Then She Got Expelled**\n   - 출처: Hacker News\n   - 링크: https://airmail.news/issues/2025-10-4/she-faked-her-way-into-yale-then-things-unraveled\n\n56. **Cold war power play: how the Stasi got into computer games**\n   - 출처: Hacker News\n   - 링크: https://www.theguardian.com/games/2025/oct/07/stasi-coldwargames-its-all-a-game-alliiertenmuseum-berlin\n\n57. **Let's Encrypt – Ten Years of Community Support**\n   - 출처: Hacker News\n   - 링크: https://letsencrypt.org/2025/10/07/ten-yrs-community-forum\n\n58. **Tinderbox, the Tool for Notes: Hookmark's Partner of the Month for October**\n   - 출처: Hacker News\n   - 링크: https://hookproductivity.com/blog/2025/10/tinderbox-the-tool-for-notes-hookmarks-partner-of-the-month-for-october/\n\n59. **Social exposome and brain health outcomes of dementia across Latin America**\n   - 출처: Hacker News\n   - 링크: https://www.nature.com/articles/s41467-025-63277-6\n\n60. **Announcing Atlas Camp: Amsterdam Call for Speakers**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/developer/announcing-atlas-camp-amsterdam-2026-call-for-speakers\n\n61. **How GitHub Copilot enabled accessibility governance process improvements in record time**\n   - 출처: The latest on GitHub Copilot - The GitHub Blog\n   - 링크: https://github.blog/ai-and-ml/github-copilot/how-we-automated-accessibility-compliance-in-five-hours-with-github-copilot/\n\n\n\n**분석 지침:**\n- 반드시 위에 명시된 마크다운 헤더 구조를 정확히 따르세요\n- 각 섹션은 2-3개 포인트로 제한\n- 구체적인 수치와 데이터 활용으로 신뢰성 확보\n\n**🌟 URL 컨텍스트 활용 지침:**\n- 제공된 URL의 내용을 적극적으로 활용하여 깊이 있는 분석을 제공하세요\n- 단순 요약이 아닌, 기사의 핵심 인사이트와 숨겨진 의미를 발굴하세요\n- 여러 기사 간의 연결점을 찾아 큰 그림을 그려주세요\n- 기술적 세부사항과 실제 영향력을 균형있게 다루세요\n\n**🎯 독자 재미 극대화 지침:**\n- 딱딱한 기술 뉴스를 생동감 있게 전달하세요\n- 적절한 비유와 실생활 예시로 복잡한 개념을 쉽게 설명하세요\n- 놀라운 사실이나 의외의 관점을 제시하여 호기심을 자극하세요\n- 스토리텔링 요소를 활용하여 뉴스를 하나의 이야기로 엮어주세요\n- 각 프리셋의 톤에 맞는 위트와 유머를 적절히 활용하세요\n\n**🚨 인용 검수 체크리스트:**\n1. 본문의 모든 사실, 수치, 기업명, 기술명에 [^숫자] 인용이 있는가?\n2. 문서 맨 끝에 모든 footnote 정의가 있고, 각각 클릭 가능한 URL을 포함하는가?\n3. [^1]: 기사제목 - https://링크 형식이 정확한가?\n4. 본문에서 언급한 모든 [^숫자]에 대응하는 footnote가 있는가?\n- 최종 제출 전 필수 검토: 위 체크리스트를 모두 확인하세요",
+  "articles": [
+    {
+      "title": "Rahul Patil joins Anthropic as Chief Technology Officer",
+      "link": "https://www.anthropic.com/news/rahul-patil-joins-anthropic",
+      "source": "Anthropic News (비공식)",
+      "category": "tech",
+      "publishedAt": "2025-10-07T00:00:00Z",
+      "description": "Rahul Patil joins Anthropic as Chief Technology Officer"
+    },
+    {
+      "title": "Anthropic raises $13B Series F at $183B post-money valuation",
+      "link": "https://www.anthropic.com/news/anthropic-raises-series-f-at-usd183b-post-money-valuation",
+      "source": "Anthropic News (비공식)",
+      "category": "tech",
+      "publishedAt": "2025-10-07T21:05:23Z",
+      "description": "Anthropic raises $13B Series F at $183B post-money valuation"
+    },
+    {
+      "title": "Thoughts on America’s AI Action Plan",
+      "link": "https://www.anthropic.com/news/thoughts-on-america-s-ai-action-plan",
+      "source": "Anthropic News (비공식)",
+      "category": "tech",
+      "publishedAt": "2025-10-07T21:05:23Z",
+      "description": "Thoughts on America’s AI Action Plan"
+    },
+    {
+      "title": "Introducing Claude Sonnet 4.5",
+      "link": "https://www.anthropic.com/news/claude-sonnet-4-5",
+      "source": "Anthropic News (비공식)",
+      "category": "tech",
+      "publishedAt": "2025-10-07T21:05:23Z",
+      "description": "Introducing Claude Sonnet 4.5"
+    },
+    {
+      "title": "Build dynasties in Football Manager 26 Touch on Apple Arcade\n",
+      "link": "https://www.apple.com/newsroom/2025/10/build-dynasties-in-football-manager-26-touch-on-apple-arcade/",
+      "source": "Apple Newsroom",
+      "category": "tech",
+      "publishedAt": "2025-10-07T13:59:41.219Z",
+      "description": "Chase trophies, build a dynasty, and make the calls that define champions with Football Manager 26 Touch, returning to Apple Arcade on November 4."
+    },
+    {
+      "title": "Hello Developer: October 2025",
+      "link": "https://developer.apple.com/news/?id=glqa1owr",
+      "source": "Latest News - Apple Developer",
+      "category": "tech",
+      "publishedAt": "2025-10-07T05:00:16Z",
+      "description": "\u003cdiv class=\"inline-article-image\"\u003e\u003cimg src=\"https://devimages-cdn.apple.com/wwdc-services/articles/images/E206D9F1-1004-404F-B0D8-3AD73090DB6F/2048.jpeg\" data-img-dark=\"https://devimages-cdn.apple.com/wwdc-services/articles/images/E206D9F1-1004-404F-B0D8-3AD73090DB6F/2048.jpeg\" data-hires=\"false\" alt=\"\"\u003e\u003c/div\u003e\u003cp\u003eThis month: Watch a new code-along video to discover how to use the Foundation Models framework to access the on-device LLM that powers Apple Intelligence.\u003c/p\u003e\u003cp\u003ePlus, dive into new games offerings, explore new App Store Connect features, and find out how the air-quality app \u003cem\u003ePaku\u003c/em\u003e is helping its users breathe easy.\u003c/p\u003e\u003cp\u003e\u003ca class=\"icon icon-after icon-chevronright\" href=\"https://developer.apple.com/hello/october25\"\u003eRead the full story\u003c/a\u003e\u003c/p\u003e"
+    },
+    {
+      "title": "Disrupting malicious uses of AI: October 2025",
+      "link": "https://openai.com/global-affairs/disrupting-malicious-uses-of-ai-october-2025",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2025-10-07T03:00:00Z",
+      "description": "Discover how OpenAI is detecting and disrupting malicious uses of AI in our October 2025 report. Learn how we’re countering misuse, enforcing policies, and protecting users from real-world harms."
+    },
+    {
+      "title": "Powered by Docker: How Open Source Genius Cut Entropy Debt with Docker MCP Toolkit and Claude Desktop",
+      "link": "https://www.docker.com/blog/open-source-genius-cut-entropy-debt-docker-mcp-claude/",
+      "source": "Docker Blog",
+      "category": "tech",
+      "publishedAt": "2025-10-07T13:00:00Z",
+      "description": "This is part of the Powered by Docker series, where we feature use cases and success stories from Docker partners and practitioners. This story was contributed by Ryan Wanner. Ryan has more than fifteen years of experience as an entrepreneur and 3 years in AI space developing software and is the founder of Open Source..."
+    },
+    {
+      "title": "하루에 한두 개의 Starlink 위성이 지구로 떨어지고 있음",
+      "link": "https://news.hada.io/topic?id=23504",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-10-08T04:36:02+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e현재 하루에 \u003cstrong\u003e1~2개의 Starlink 위성\u003c/strong\u003e이 지구 대기권으로 재진입해 \u003cstrong\u003e소멸 현상\u003c/strong\u003e을 보여줌\u003c/li\u003e\n\u003cli\u003e가까운 시일 내에 \u003cstrong\u003e하루 5개의 위성\u003c/strong\u003e도 재진입할 수 있다는 \u003cstrong\u003e전문가 예측\u003c/strong\u003e이 제시됨\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e태양 활동의 영향\u003c/strong\u003e이나 \u003cstrong\u003e...\u003c/p\u003e"
+    },
+    {
+      "title": "개인 재무 추적기 Write It Down 소개",
+      "link": "https://news.hada.io/topic?id=23503",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-10-08T03:34:53+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eWrite It Down\u003c/strong\u003e은 개인의 \u003cstrong\u003e수입과 지출\u003c/strong\u003e을 효과적으로 추적할 수 있게 해주는 툴임\u003c/li\u003e\n\u003cli\u003e간단한 \u003cstrong\u003e입력 방식\u003c/strong\u003e을 통해 누구나 쉽게 재무 기록을 관리할 수 있음\u003c/li\u003e\n\u003cli\u003e사용자는 개인적인 \u003cstrong\u003e재정 계획 및 소비 습관 분석\u003c/strong\u003e에 도움을 받을 수 ...\u003c/p\u003e"
+    },
+    {
+      "title": "퀄컴의 아두이노 인수",
+      "link": "https://news.hada.io/topic?id=23502",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-10-08T00:41:15+09:00",
+      "description": "\u003cp\u003e로이터: Qualcomm이 오픈소스 전자 플랫폼 Arduino 인수\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e\n\u003cp\u003e인수 발표\u003cbr /\u003e\n미국 샌디에이고 기반의 반도체 기업 \u003cstrong\u003e퀄컴(Qualcomm)\u003c/strong\u003e 이 이탈리아의 비영리 기관 \u003cstrong\u003e아두이노(Arduino)\u003c/strong\u003e 를 인수한다고 발표했습니다. 아두이노는 로봇이나 전자 기기의 프로토타입을 개발하는"
+    },
+    {
+      "title": "Windows 11에서 Microsoft 계정 없이 설치하는 우회 방법 차단 중",
+      "link": "https://news.hada.io/topic?id=23501",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-10-07T17:41:35+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eMicrosoft\u003c/strong\u003e는 Windows 11 설치 시 \u003cstrong\u003e로컬 계정 생성 우회 방법\u003c/strong\u003e을 적극적으로 차단 중임\u003c/li\u003e\n\u003cli\u003e향후 Windows 11에서는 \u003cstrong\u003e인터넷 연결 및 MS 계정 필수\u003c/strong\u003e 조건이 강화될 예정임\u003c/li\u003e\n\u003cli\u003e기존에 널리 사용되던 “bypassnro”와 “start ms-cxh:localonly” 등 ...\u003c/p\u003e"
+    },
+    {
+      "title": "최소한의 CSS로 괜찮은 사이트 만들기 (2023)",
+      "link": "https://news.hada.io/topic?id=23500",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-10-07T17:38:34+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e많은 개발자가 \u003cstrong\u003eCSS 설계의 과도함\u003c/strong\u003e으로 인해 불필요한 문제를 겪음\u003c/li\u003e\n\u003cli\u003e최소한의 \u003cstrong\u003e글로벌 스타일\u003c/strong\u003e만으로도 충분히 깔끔하고 반응형인 페이지 제작 가능함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e이미지, SVG, 비디오\u003c/strong\u003e 요소의 크기 제한과 블록 표시만으로 기본 레이아웃 문제를 해결할...\u003c/p\u003e"
+    },
+    {
+      "title": "OpenZL: 구조 인식이 가능한 오픈소스 압축 프레임워크",
+      "link": "https://news.hada.io/topic?id=23499",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-10-07T16:33:47+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eMeta에서 \u003cstrong\u003eOpenZL\u003c/strong\u003e을 공개하여, 구조화된 데이터에 대한 손실 없는 압축을 제공함\u003c/li\u003e\n\u003cli\u003eOpenZL은 다양한 파일 형식별 변환 과정을 활용해 \u003cstrong\u003e최적의 압축률과 빠른 속도\u003c/strong\u003e를 동시에 달성함\u003c/li\u003e\n\u003cli\u003e압축기에 데이터 구조 정보를 명시적으로 전달하고, 오프라인 트레이너가 \u003cst...\u003c/p\u003e"
+    },
+    {
+      "title": "Meta(구 Facebook), 내부 사용하던 AI용 고성능 압축 솔루션 'OpenZL' 오픈소스로 공개",
+      "link": "https://news.hada.io/topic?id=23498",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-10-07T16:12:33+09:00",
+      "description": "\u003cp\u003eMeta(구 Facebook)가 내부적으로 사용해 온 고성능 데이터 압축 프레임워크 'OpenZL'을 오픈소스로 공개했습니다. 특히 AI 및 머신러닝 워크로드와 같이 방대한 양의 특수 데이터셋 처리에 최적화된 OpenZL은, 기존 범용 압축 솔루션의 한계를 뛰어넘는 \u003cstrong\u003e높은 압축률\u003c/strong\u003e과 \u003cstrong\u003e빠른 속도\u003c/strong\u003e를...\u003c/p\u003e"
+    },
+    {
+      "title": "Mise: 모노레포 작업(Task) 기능 소개",
+      "link": "https://news.hada.io/topic?id=23497",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-10-07T15:34:47+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003emise\u003c/strong\u003e가 새로운 \u003cstrong\u003e모노레포 작업 기능\u003c/strong\u003e을 발표\u003c/li\u003e\n\u003cli\u003e다수 프로젝트에서 \u003cstrong\u003e각각의 환경, 도구, 작업\u003c/strong\u003e을 손쉽게 관리할 수 있는 통합 작업 네임스페이스를 제공함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e강력한 와일드카드 패턴\u003c/strong\u003e, 환경/도구 상속, 일관된 실행 컨텍스트 등...\u003c/p\u003e"
+    },
+    {
+      "title": "OpenAI DevDay 2025에서 공개한 모든 것들",
+      "link": "https://news.hada.io/topic?id=23496",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-10-07T12:53:11+09:00",
+      "description": "\u003ch2\u003eChatGPT 안의 새로운 App 과 Apps SDK\u003c/h2\u003e\n\u003cul\u003e\n\u003cli\u003eChatGPT 내부에서 \u003cstrong\u003e대화형 앱\u003c/strong\u003e을 사용할 수 있는 기능이 공개됨\u003c/li\u003e\n\u003cli\u003e새로운 앱들은 \u003cstrong\u003e대화 흐름 속에서 자연스럽게 작동\u003c/strong\u003e하도록 설계되어, 사용자가 필요할 때 \u003cstrong\u003e자동으로 제안\u003c/strong\u003e됨\n\u003cul\u003e\n\u003cli\u003e예: “Spotify, 이번...\u003c/p\u003e"
+    },
+    {
+      "title": "OpenAI Apps SDK",
+      "link": "https://news.hada.io/topic?id=23495",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-10-07T12:34:33+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eOpenAI는 \u003cstrong\u003eChatGPT\u003c/strong\u003e 내에서 동작하는 앱을 개발할 수 있도록 지원하는 프레임워크인 \u003cstrong\u003eApps SDK\u003c/strong\u003e를 공개함\u003c/li\u003e\n\u003cli\u003e개발자들이 이 SDK를 활용해 ChatGPT내에서 동작하는 새로운 앱을 만들고, 실험적 기능을 자유롭게 테스트할 수 있는 환경 제공\u003c/li\u003e\n\u003cli\u003eApps SDK는 현재 \u003cstro...\u003c/p\u003e"
+    },
+    {
+      "title": "Stable Channel Update for Desktop",
+      "link": "http://chromereleases.googleblog.com/2025/10/stable-channel-update-for-desktop.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2025-10-07T14:28:00-07:00",
+      "description": "\u003cp\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" style=\"color: rgba(0, 0, 0, 0.87); font-family: arial; font-size: 17px;\"\u003e\u003cspan style=\"color: #666666;\"\u003eThe Stable channel has been updated to\u0026nbsp;141.0.7390.65/.66 for Windows and Mac and\u0026nbsp;\u003c/span\u003e\u003c/span\u003e\u003cspan style=\"color: #666666; font-family: arial; font-size: 17px;\"\u003e141.0.7390.65 for Linux\u003c/span\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" style=\"color: rgba(0, 0, 0, 0.87); font-family: arial; font-size: 17px;\"\u003e\u003cspan style=\"color: #666666;\"\u003e,\u0026nbsp;\u003c/span\u003e\u003c/span\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" style=\"color: rgba(0, 0, 0, 0.87); font-family: arial; font-size: 17px;\"\u003e\u003cspan style=\"color: #666666;\"\u003ewhich will roll out over the coming days/weeks. A full list of changes in this build is available in the\u003c/span\u003e\u0026nbsp;\u003c/span\u003e\u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/140.0.7339.209..141.0.7390.65?pretty=fuller\u0026amp;n=10000\" style=\"color: #4184f3; font-family: Roboto, sans-serif; font-size: 17px; text-decoration-line: none;\"\u003eLog\u003c/a\u003e\u003cspan face=\"Roboto, sans-serif\" style=\"color: #666666; font-family: Roboto, sans-serif; font-size: 17px;\"\u003e.\u003c/span\u003e\u003c/p\u003e\u003cp style=\"color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px;\"\u003e\u003cbr style=\"content: \u0026quot; \u0026quot;; display: block; padding: 4px;\" /\u003e\u003c/p\u003e\u003cp style=\"color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px;\"\u003e\u003cspan style=\"color: #666666; font-size: medium;\"\u003eI\u003c/span\u003e\u003cspan style=\"color: #666666; font-family: arial; font-size: large;\"\u003enterested in switching release channels? Find out how\u0026nbsp;\u003c/span\u003e\u003ca href=\"https://www.chromium.org/getting-involved/dev-channel\" style=\"color: #4184f3; font-family: arial; font-size: large; text-decoration-line: none;\"\u003ehere\u003c/a\u003e\u003cspan style=\"color: #666666; font-family: arial; font-size: large;\"\u003e. If you find a new issue, please let us know by\u0026nbsp;\u003c/span\u003e\u003ca href=\"https://crbug.com/\" style=\"color: #4184f3; font-family: arial; font-size: large; text-decoration-line: none;\"\u003efiling a bug\u003c/a\u003e\u003cspan style=\"color: #666666; font-family: arial; font-size: large;\"\u003e. The\u0026nbsp;\u003c/span\u003e\u003ca href=\"https://support.google.com/chrome/community\" style=\"color: #4184f3; font-family: arial; font-size: large; text-decoration-line: none;\"\u003ecommunity help forum\u003c/a\u003e\u003cspan style=\"color: #666666; font-family: arial; font-size: large;\"\u003e\u0026nbsp;is also a great place to reach out for help or learn about common issues.\u003c/span\u003e\u003c/p\u003e\u003cp style=\"color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px;\"\u003e\u003cspan style=\"color: #666666; font-family: arial; font-size: medium; white-space-collapse: preserve;\"\u003e\u003cbr style=\"content: \u0026quot; \u0026quot;; display: block; padding: 4px;\" /\u003e\u003c/span\u003e\u003c/p\u003e\u003cp style=\"color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px;\"\u003e\u003cspan style=\"font-family: arial; font-size: medium;\"\u003e\u003cspan color=\"rgba(0, 0, 0, 0.54)\" style=\"display: block; font-size: 14px; line-height: 24px; margin-bottom: 16px;\"\u003e\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e\u003cp style=\"color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px;\"\u003e\u003cspan face=\"Roboto, sans-serif\" style=\"color: #666666;\"\u003e\u003c/span\u003e\u003c/p\u003e\u003cp style=\"color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px;\"\u003e\u003cspan face=\"Roboto, sans-serif\" style=\"color: #666666;\"\u003e\u003c/span\u003e\u003c/p\u003e\u003cdiv style=\"color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px;\"\u003e\u003cspan style=\"font-size: medium;\"\u003e\u003cspan style=\"color: #666666; font-family: arial; white-space-collapse: preserve;\"\u003eSrinivas Sista\u003cbr style=\"content: \u0026quot; \u0026quot;; display: block; padding: 4px;\" /\u003e\u003c/span\u003e\u003cspan style=\"color: #666666; font-family: arial;\"\u003eGoogle Chrome\u003c/span\u003e\u003c/span\u003e\u003c/div\u003e"
+    },
+    {
+      "title": "Extended Stable Updates for Desktop",
+      "link": "http://chromereleases.googleblog.com/2025/10/extended-stable-updates-for-desktop.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2025-10-07T12:56:00-07:00",
+      "description": "\u003cp\u003e\u003cspan style=\"color: #666666; font-family: arial; font-size: large; vertical-align: baseline; white-space-collapse: preserve;\"\u003eThe Extended Stable channel has been updated to 140.0.7339.240\u003c/span\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" style=\"color: rgba(0, 0, 0, 0.87); font-family: arial; font-size: large; text-wrap: nowrap; vertical-align: baseline;\"\u003e\u0026nbsp;\u003c/span\u003e\u003cspan style=\"color: #666666; font-family: arial; font-size: large; vertical-align: baseline; white-space-collapse: preserve;\"\u003efor Windows and Mac \u003c/span\u003e\u003cspan style=\"color: #666666; font-family: arial; font-size: large; white-space-collapse: preserve;\"\u003ewhich will roll out over the coming days/weeks.\u003c/span\u003e\u003cspan style=\"color: #666666; font-family: arial; font-size: large; white-space-collapse: preserve;\"\u003e \u003c/span\u003e\u003c/p\u003e\u003cdiv style=\"color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px;\"\u003e\u003cdiv\u003e\u003cspan style=\"font-size: large;\"\u003e\u003cspan style=\"font-family: arial;\"\u003e\u003cspan style=\"vertical-align: baseline; white-space-collapse: preserve;\"\u003e\u003cspan style=\"color: #666666;\"\u003eA full list of changes in this build is available in the \u003c/span\u003e\u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/140.0.7339.230..140.0.7339.240?pretty=fuller\u0026amp;n=10000\" style=\"color: #4184f3; text-decoration-line: none;\"\u003e\u003cspan style=\"color: black;\"\u003elog\u003c/span\u003e\u003c/a\u003e\u003c/span\u003e\u003cspan style=\"color: #666666; vertical-align: baseline; white-space-collapse: preserve;\"\u003e. Interested in switching release channels? Find out how \u003c/span\u003e\u003ca href=\"https://www.chromium.org/getting-involved/dev-channel\" style=\"color: #4184f3; text-decoration-line: none; white-space-collapse: preserve;\"\u003e\u003cspan style=\"color: black; font-weight: 700; vertical-align: baseline;\"\u003ehere\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"color: #666666; vertical-align: baseline; white-space-collapse: preserve;\"\u003e. If you find a new issue, please let us know by \u003c/span\u003e\u003ca href=\"https://crbug.com/\" style=\"color: #4184f3; text-decoration-line: none; white-space-collapse: preserve;\"\u003e\u003cspan style=\"color: black; font-weight: 700; vertical-align: baseline;\"\u003efiling a bug\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"color: #666666; vertical-align: baseline; white-space-collapse: preserve;\"\u003e. \u003c/span\u003e\u003cspan style=\"background-color: white; color: #666666; vertical-align: baseline; white-space-collapse: preserve;\"\u003eThe \u003c/span\u003e\u003ca href=\"https://productforums.google.com/forum/#!forum/chrome\" style=\"color: #4184f3; text-decoration-line: none; white-space-collapse: preserve;\"\u003e\u003cspan style=\"background-color: white; color: black; font-weight: 700; vertical-align: baseline;\"\u003ecommunity help forum\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"background-color: white; color: #666666; vertical-align: baseline; white-space-collapse: preserve;\"\u003e is also a great place to reach out for help or learn about common issues.\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003c/div\u003e\u003cdiv class=\"post-body\" style=\"width: 660px;\"\u003e\u003cdiv class=\"post-content post-original\" itemprop=\"articleBody\" style=\"line-height: 32px; margin: 25px 0px 36px; overflow-wrap: break-word;\"\u003e\u003cp\u003e\u003cspan style=\"font-family: arial;\"\u003e\u003cspan style=\"color: #666666; font-size: large; font-variant-east-asian: normal; font-variant-numeric: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e\u003cdiv\u003e\u003cdiv style=\"background-color: white; line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"color: #666666;\"\u003e\u003cspan style=\"white-space-collapse: preserve;\"\u003e\u003cspan style=\"font-family: arial; font-size: large;\"\u003eSrinivas Sista\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003c/div\u003e\u003cdiv style=\"background-color: white; line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"color: #666666; vertical-align: baseline; white-space-collapse: preserve;\"\u003e\u003cspan style=\"font-family: arial; font-size: large;\"\u003eGoogle Chrome\u003c/span\u003e\u003c/span\u003e\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e"
+    },
+    {
+      "title": "Chrome Stable for iOS Update",
+      "link": "http://chromereleases.googleblog.com/2025/10/chrome-stable-for-ios-update.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2025-10-07T10:43:00.001-07:00",
+      "description": "\u003cp\u003eHi everyone! We've just released Chrome Stable 141 (141.0.7390.69) for iOS; it'll become available on App Store in the next few hours.\u003c/p\u003e\u003cp\u003eThis release includes stability and performance improvements. You can see a full list of the changes in the \u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/141.0.7390.41..141.0.7390.69?pretty=fuller\u0026amp;n=10000\"\u003eGit log\u003c/a\u003e. If you find a new issue, please let us know by \u003ca href=\"https://code.google.com/p/chromium/issues/entry?template=iOS%20Issue\"\u003efiling a bug\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eChrome Release Team\u003cbr /\u003e\u003ca href=\"https://www.google.com/chrome\"\u003e\u003c/a\u003e\u003ca href=\"https://www.google.com/chrome\"\u003eGoogle Chrome\u003c/a\u003e\u003c/p\u003e"
+    },
+    {
+      "title": "Investing in America 2025",
+      "link": "https://blog.google/inside-google/company-announcements/investing-in-america-2025/",
+      "source": "Gemini",
+      "category": "tech",
+      "publishedAt": "2025-10-07T20:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/ANEAI-Lockup_Center-aligned_Gra.max-600x600.format-webp.webp\"\u003eGoogle’s deep investments in American technical infrastructure, R\u0026amp;D and the workforce will help the U.S. continue to lead the world in AI."
+    },
+    {
+      "title": "Introducing the Gemini 2.5 Computer Use model",
+      "link": "https://blog.google/technology/google-deepmind/gemini-computer-use-model/",
+      "source": "Gemini",
+      "category": "tech",
+      "publishedAt": "2025-10-07T19:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/CTU_2096x1182_RD6-V01.max-600x600.format-webp.webp\"\u003eToday we are releasing the Gemini 2.5 Computer Use model via the API, which outperforms leading alternatives at browser and mobile tasks."
+    },
+    {
+      "title": "Google AI Plus is coming to 36 more countries.",
+      "link": "https://blog.google/products/google-one/google-ai-plus-36-countries/",
+      "source": "Gemini",
+      "category": "tech",
+      "publishedAt": "2025-10-07T19:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/GoogleAIPlus.max-600x600.format-webp.webp\"\u003eGoogle AI Plus — our newest AI plan — expands to 36 more countries."
+    },
+    {
+      "title": "Introducing the Gemini 2.5 Computer Use model",
+      "link": "https://blog.google/technology/google-deepmind/gemini-computer-use-model/",
+      "source": "Google DeepMind",
+      "category": "tech",
+      "publishedAt": "2025-10-07T19:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/CTU_2096x1182_RD6-V01.max-600x600.format-webp.webp\"\u003eToday we are releasing the Gemini 2.5 Computer Use model via the API, which outperforms leading alternatives at browser and mobile tasks."
+    },
+    {
+      "title": "Introducing the React Foundation: The New Home for React \u0026 React Native",
+      "link": "https://engineering.fb.com/2025/10/07/open-source/introducing-the-react-foundation-the-new-home-for-react-react-native/",
+      "source": "Meta Engineering",
+      "category": "tech",
+      "publishedAt": "2025-10-07T18:00:01Z",
+      "description": "\u003cp\u003eMeta open-sourced React over a decade ago to help developers build better user experiences. Since then, React has grown into one of the world’s most popular open source projects, powering over 50 million websites and products built by companies such as Microsoft, Shopify, Bloomberg, Discord, Coinbase, the NFL, and many others. With React Native, React [...]\u003c/p\u003e\n\u003cp\u003e\u003ca class=\"btn btn-secondary understrap-read-more-link\" href=\"https://engineering.fb.com/2025/10/07/open-source/introducing-the-react-foundation-the-new-home-for-react-react-native/\"\u003eRead More...\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eThe post \u003ca rel=\"nofollow\" href=\"https://engineering.fb.com/2025/10/07/open-source/introducing-the-react-foundation-the-new-home-for-react-react-native/\"\u003eIntroducing the React Foundation: The New Home for React \u0026#038; React Native\u003c/a\u003e appeared first on \u003ca rel=\"nofollow\" href=\"https://engineering.fb.com\"\u003eEngineering at Meta\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Investing in America 2025",
+      "link": "https://blog.google/inside-google/company-announcements/investing-in-america-2025/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-10-07T20:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/ANEAI-Lockup_Center-aligned_Gra.max-600x600.format-webp.webp\"\u003eGoogle’s deep investments in American technical infrastructure, R\u0026amp;D and the workforce will help the U.S. continue to lead the world in AI."
+    },
+    {
+      "title": "Introducing the Gemini 2.5 Computer Use model",
+      "link": "https://blog.google/technology/google-deepmind/gemini-computer-use-model/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-10-07T19:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/CTU_2096x1182_RD6-V01.max-600x600.format-webp.webp\"\u003eToday we are releasing the Gemini 2.5 Computer Use model via the API, which outperforms leading alternatives at browser and mobile tasks."
+    },
+    {
+      "title": "Google AI Plus is coming to 36 more countries.",
+      "link": "https://blog.google/products/google-one/google-ai-plus-36-countries/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-10-07T19:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/GoogleAIPlus.max-600x600.format-webp.webp\"\u003eGoogle AI Plus — our newest AI plan — expands to 36 more countries."
+    },
+    {
+      "title": "Expanding access to Opal, our no-code AI mini-app builder",
+      "link": "https://blog.google/technology/google-labs/opal-expansion/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-10-07T18:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/opal_thumbnail_16x9.max-600x600.format-webp.webp\"\u003eWe’re bringing Opal to 15 new countries and making it even easier to build."
+    },
+    {
+      "title": "Googler Michel Devoret awarded the Nobel Prize in Physics",
+      "link": "https://blog.google/inside-google/company-announcements/googler-michel-devoret-awarded-the-nobel-prize-in-physics/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-10-07T17:30:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Devoret_Hero_1.max-600x600.format-webp.webp\"\u003eGoogle now celebrates five Nobel laureates, including three prizes in the past two years."
+    },
+    {
+      "title": "AI Mode is now available in more languages and locations around the world.",
+      "link": "https://blog.google/products/search/ai-mode-expands-languages-locations/",
+      "source": "AI",
+      "category": "tech",
+      "publishedAt": "2025-10-07T22:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Bonjour_AiMode_Social.max-600x600.format-webp.webp\"\u003eStarting today, we’re bringing AI Mode in Google Search to more people around the world, launching in more than 35 new languages and over 40 new countries and territorie…"
+    },
+    {
+      "title": "Investing in America 2025",
+      "link": "https://blog.google/inside-google/company-announcements/investing-in-america-2025/",
+      "source": "AI",
+      "category": "tech",
+      "publishedAt": "2025-10-07T20:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/ANEAI-Lockup_Center-aligned_Gra.max-600x600.format-webp.webp\"\u003eGoogle’s deep investments in American technical infrastructure, R\u0026amp;D and the workforce will help the U.S. continue to lead the world in AI."
+    },
+    {
+      "title": "Introducing the Gemini 2.5 Computer Use model",
+      "link": "https://blog.google/technology/google-deepmind/gemini-computer-use-model/",
+      "source": "AI",
+      "category": "tech",
+      "publishedAt": "2025-10-07T19:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/CTU_2096x1182_RD6-V01.max-600x600.format-webp.webp\"\u003eToday we are releasing the Gemini 2.5 Computer Use model via the API, which outperforms leading alternatives at browser and mobile tasks."
+    },
+    {
+      "title": "Google AI Plus is coming to 36 more countries.",
+      "link": "https://blog.google/products/google-one/google-ai-plus-36-countries/",
+      "source": "AI",
+      "category": "tech",
+      "publishedAt": "2025-10-07T19:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/GoogleAIPlus.max-600x600.format-webp.webp\"\u003eGoogle AI Plus — our newest AI plan — expands to 36 more countries."
+    },
+    {
+      "title": "Googler Michel Devoret awarded the Nobel Prize in Physics",
+      "link": "https://blog.google/inside-google/company-announcements/googler-michel-devoret-awarded-the-nobel-prize-in-physics/",
+      "source": "AI",
+      "category": "tech",
+      "publishedAt": "2025-10-07T17:30:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Devoret_Hero_1.max-600x600.format-webp.webp\"\u003eGoogle now celebrates five Nobel laureates, including three prizes in the past two years."
+    },
+    {
+      "title": "How GitHub Copilot enabled accessibility governance process improvements in record time",
+      "link": "https://github.blog/ai-and-ml/github-copilot/how-we-automated-accessibility-compliance-in-five-hours-with-github-copilot/",
+      "source": "GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2025-10-07T17:00:00Z",
+      "description": "\u003cp\u003eSee how we turned weekly accessibility grade signals into an automated, accountable remediation workflow—powered by GitHub Copilot and cross‑functional collaboration.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/ai-and-ml/github-copilot/how-we-automated-accessibility-compliance-in-five-hours-with-github-copilot/\"\u003eHow GitHub Copilot enabled accessibility governance process improvements in record time\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "How a top bug bounty researcher got their start in security",
+      "link": "https://github.blog/security/how-a-top-bug-bounty-researcher-got-their-start-in-security/",
+      "source": "GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2025-10-07T16:00:00Z",
+      "description": "\u003cp\u003eFor this year’s Cybersecurity Awareness Month, the GitHub Bug Bounty team is excited to feature another spotlight on a talented security researcher — @xiridium!\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/security/how-a-top-bug-bounty-researcher-got-their-start-in-security/\"\u003eHow a top bug bounty researcher got their start in security\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Not Another Workflow Builder",
+      "link": "https://blog.langchain.com/not-another-workflow-builder/",
+      "source": "LangChain Blog",
+      "category": "tech",
+      "publishedAt": "2025-10-07T16:38:16Z",
+      "description": "\u003cp\u003eOne of the most common requests we\u0026#x2019;ve gotten from day zero of LangChain has been a visual workflow builder. We never pursued it and instead let others (LangFlow, Flowise, n8n) build on top of us. With OpenAI launching a \u003ca href=\"https://openai.com/index/introducing-agentkit/?ref=blog.langchain.com\"\u003eworkflow builder\u003c/a\u003e at Dev Day yesterday, I thought it\u003c/p\u003e"
+    },
+    {
+      "title": "Hulu Becomes Global General Entertainment Brand on Disney+ Beginning October 8",
+      "link": "https://thewaltdisneycompany.com/hulu-global-brand-disney-plus/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-07T22:03:30Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://thewaltdisneycompany.com/hulu-global-brand-disney-plus/\"\u003ehttps://thewaltdisneycompany.com/hulu-global-brand-disney-plus/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45509494\"\u003ehttps://news.ycombinator.com/item?id=45509494\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Disney Is Officially Shutting Down Hulu After 20 Years",
+      "link": "https://wibc.com/749914/disney-is-officially-shutting-down-hulu-after-20-years/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-07T22:00:59Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://wibc.com/749914/disney-is-officially-shutting-down-hulu-after-20-years/\"\u003ehttps://wibc.com/749914/disney-is-officially-shutting-down-hulu-after-20-years/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45509464\"\u003ehttps://news.ycombinator.com/item?id=45509464\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Investing in America 2025",
+      "link": "https://blog.google/inside-google/company-announcements/investing-in-america-2025/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-07T22:00:20Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://blog.google/inside-google/company-announcements/investing-in-america-2025/\"\u003ehttps://blog.google/inside-google/company-announcements/investing-in-america-2025/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45509454\"\u003ehttps://news.ycombinator.com/item?id=45509454\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "N.J. Attorney General Investigating Uber over Handling of Sexual Assaults",
+      "link": "https://www.nytimes.com/2025/10/07/business/uber-nj-attorney-general-sexual-assaults.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-07T22:00:14Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nytimes.com/2025/10/07/business/uber-nj-attorney-general-sexual-assaults.html\"\u003ehttps://www.nytimes.com/2025/10/07/business/uber-nj-attorney-general-sexual-assaults.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45509451\"\u003ehttps://news.ycombinator.com/item?id=45509451\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "RIP Robert Murray-Smith (1963 – 2025) [video]",
+      "link": "https://www.youtube.com/watch?v=GhramXiUrY4",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-07T21:57:32Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.youtube.com/watch?v=GhramXiUrY4\"\u003ehttps://www.youtube.com/watch?v=GhramXiUrY4\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45509431\"\u003ehttps://news.ycombinator.com/item?id=45509431\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Brazil's Finance Minister confirms studies on eliminating public transport fares",
+      "link": "https://www.reuters.com/world/americas/brazils-finance-minister-confirms-studies-eliminating-public-transport-fares-2025-10-07/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-07T21:57:02Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.reuters.com/world/americas/brazils-finance-minister-confirms-studies-eliminating-public-transport-fares-2025-10-07/\"\u003ehttps://www.reuters.com/world/americas/brazils-finance-minister-confirms-studies-eliminating-public-transport-fares-2025-10-07/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45509423\"\u003ehttps://news.ycombinator.com/item?id=45509423\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "We evaluated Google's new computer use model on real websites",
+      "link": "https://www.browserbase.com/blog/evaluating-browser-agents",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-07T21:56:59Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.browserbase.com/blog/evaluating-browser-agents\"\u003ehttps://www.browserbase.com/blog/evaluating-browser-agents\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45509422\"\u003ehttps://news.ycombinator.com/item?id=45509422\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "What's new in Python 3.14",
+      "link": "https://docs.python.org/3/whatsnew/3.14.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-07T21:56:10Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://docs.python.org/3/whatsnew/3.14.html\"\u003ehttps://docs.python.org/3/whatsnew/3.14.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45509416\"\u003ehttps://news.ycombinator.com/item?id=45509416\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Agentic workflow integrating any REST API into a graph using GraphOS MCP Tools",
+      "link": "https://www.youtube.com/watch?v=MoPYTN4piQc",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-07T21:54:47Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.youtube.com/watch?v=MoPYTN4piQc\"\u003ehttps://www.youtube.com/watch?v=MoPYTN4piQc\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45509404\"\u003ehttps://news.ycombinator.com/item?id=45509404\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Is the \"Nintendo Classics\" collection good value?",
+      "link": "https://sethmlarson.dev/nintendo-classics",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-07T21:54:02Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://sethmlarson.dev/nintendo-classics\"\u003ehttps://sethmlarson.dev/nintendo-classics\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45509395\"\u003ehttps://news.ycombinator.com/item?id=45509395\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Month MiniPC Mini-Review: Minisforum AI X1 Pro",
+      "link": "https://ivoras.substack.com/p/2-month-minipc-mini-review-minisforum",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-07T21:49:24Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://ivoras.substack.com/p/2-month-minipc-mini-review-minisforum\"\u003ehttps://ivoras.substack.com/p/2-month-minipc-mini-review-minisforum\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45509353\"\u003ehttps://news.ycombinator.com/item?id=45509353\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Easy Claude Code devcontainer workflows",
+      "link": "https://github.com/smithclay/claudetainer",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-07T21:49:12Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/smithclay/claudetainer\"\u003ehttps://github.com/smithclay/claudetainer\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45509348\"\u003ehttps://news.ycombinator.com/item?id=45509348\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Joint statement of scientists and researchers on the EU Chat Control regulation",
+      "link": "https://csa-scientist-open-letter.org/Sep2025",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-07T21:44:20Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://csa-scientist-open-letter.org/Sep2025\"\u003ehttps://csa-scientist-open-letter.org/Sep2025\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45509304\"\u003ehttps://news.ycombinator.com/item?id=45509304\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Closer to production quality Python notebooks with `marimo check`",
+      "link": "https://marimo.io/blog/marimo-check",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-07T21:44:18Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://marimo.io/blog/marimo-check\"\u003ehttps://marimo.io/blog/marimo-check\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45509301\"\u003ehttps://news.ycombinator.com/item?id=45509301\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Become unbannable from your email",
+      "link": "https://karboosx.net/post/PJOveGVa/become-unbannable-from-your-emailgmail",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-07T21:39:07Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://karboosx.net/post/PJOveGVa/become-unbannable-from-your-emailgmail\"\u003ehttps://karboosx.net/post/PJOveGVa/become-unbannable-from-your-emailgmail\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45509243\"\u003ehttps://news.ycombinator.com/item?id=45509243\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 29\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Katherina Lynn Faked Her Way into Yale. Then She Got Expelled",
+      "link": "https://airmail.news/issues/2025-10-4/she-faked-her-way-into-yale-then-things-unraveled",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-07T21:37:11Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://airmail.news/issues/2025-10-4/she-faked-her-way-into-yale-then-things-unraveled\"\u003ehttps://airmail.news/issues/2025-10-4/she-faked-her-way-into-yale-then-things-unraveled\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45509226\"\u003ehttps://news.ycombinator.com/item?id=45509226\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Cold war power play: how the Stasi got into computer games",
+      "link": "https://www.theguardian.com/games/2025/oct/07/stasi-coldwargames-its-all-a-game-alliiertenmuseum-berlin",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-07T21:36:05Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.theguardian.com/games/2025/oct/07/stasi-coldwargames-its-all-a-game-alliiertenmuseum-berlin\"\u003ehttps://www.theguardian.com/games/2025/oct/07/stasi-coldwargames-its-all-a-game-alliiertenmuseum-berlin\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45509205\"\u003ehttps://news.ycombinator.com/item?id=45509205\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Let's Encrypt – Ten Years of Community Support",
+      "link": "https://letsencrypt.org/2025/10/07/ten-yrs-community-forum",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-07T21:34:46Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://letsencrypt.org/2025/10/07/ten-yrs-community-forum\"\u003ehttps://letsencrypt.org/2025/10/07/ten-yrs-community-forum\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45509186\"\u003ehttps://news.ycombinator.com/item?id=45509186\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Tinderbox, the Tool for Notes: Hookmark's Partner of the Month for October",
+      "link": "https://hookproductivity.com/blog/2025/10/tinderbox-the-tool-for-notes-hookmarks-partner-of-the-month-for-october/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-07T21:32:33Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://hookproductivity.com/blog/2025/10/tinderbox-the-tool-for-notes-hookmarks-partner-of-the-month-for-october/\"\u003ehttps://hookproductivity.com/blog/2025/10/tinderbox-the-tool-for-notes-hookmarks-partner-of-the-month-for-october/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45509159\"\u003ehttps://news.ycombinator.com/item?id=45509159\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Social exposome and brain health outcomes of dementia across Latin America",
+      "link": "https://www.nature.com/articles/s41467-025-63277-6",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-07T21:31:10Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nature.com/articles/s41467-025-63277-6\"\u003ehttps://www.nature.com/articles/s41467-025-63277-6\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45509140\"\u003ehttps://news.ycombinator.com/item?id=45509140\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Announcing Atlas Camp: Amsterdam Call for Speakers",
+      "link": "https://www.atlassian.com/blog/developer/announcing-atlas-camp-amsterdam-2026-call-for-speakers",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2025-10-07T17:16:03Z",
+      "description": "\u003cp\u003eEvery developer has that breakthrough moment—cracking a stubborn bug, discovering a game-changing tool, or shipping a feature users actually love....\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/developer/announcing-atlas-camp-amsterdam-2026-call-for-speakers\"\u003eAnnouncing Atlas Camp: Amsterdam Call for Speakers\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "How GitHub Copilot enabled accessibility governance process improvements in record time",
+      "link": "https://github.blog/ai-and-ml/github-copilot/how-we-automated-accessibility-compliance-in-five-hours-with-github-copilot/",
+      "source": "The latest on GitHub Copilot - The GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2025-10-07T17:00:00Z",
+      "description": "\u003cp\u003eSee how we turned weekly accessibility grade signals into an automated, accountable remediation workflow—powered by GitHub Copilot and cross‑functional collaboration.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/ai-and-ml/github-copilot/how-we-automated-accessibility-compliance-in-five-hours-with-github-copilot/\"\u003eHow GitHub Copilot enabled accessibility governance process improvements in record time\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    }
+  ],
+  "generatedAt": "2025-10-08T07:08:22.861722785+09:00"
+}
