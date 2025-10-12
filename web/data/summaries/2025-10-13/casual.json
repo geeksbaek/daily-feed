@@ -1,0 +1,274 @@
+{
+  "date": "2025-10-13",
+  "preset": "casual",
+  "summary": "## 🌟 오늘의 Tech Talk\n\n이야, 오늘 AI 씬은 정말 정신없네요! 앤트로픽(Anthropic)이 역대급 투자 유치 소식을 터뜨리면서 \"우리 아직 안 죽었다!\"고 외치는 것 같아요.[^4] 동시에 클로드 소네트 4.5(Claude Sonnet 4.5)라는 새로운 모델도 내놨는데, 코딩 실력이 장난 아니라고 자랑하더라고요.[^3] 한편, 메타(Meta)는 슈퍼인텔리전스 팀의 첫 논문으로 AI 응답 속도를 30배나 빠르게 만드는 기술을 공개해서 모두를 놀라게 했어요.[^5] AI 모델의 무식한 파워 경쟁을 넘어, 이제는 '효율' 싸움으로 넘어가는 신호탄 같아서 꽤 흥미롭습니다. 아, 그리고 아마존(Amazon)이랑 마이크로소프트(Microsoft)는 광고랑 프라이버시 문제로 사용자들한테 제대로 찍힌 것 같네요.[^6][^7] 역시 빅테크 소식은 항상 다이나믹해서 재밌어요!\n\n## 📊 주요 뉴스 브리핑\n\n### 🚀 신기술 \u0026 서비스\n\n- **앤트로픽, 코딩 끝판왕 '클로드 소네트 4.5' 출시**: 앤트로픽이 새 모델인 클로드 소네트 4.5를 공개했는데, 자기들 말로는 현존 최고의 코딩 모델이래요.[^3] 실제 코딩 능력을 측정하는 SWE-bench에서 최고점을 찍었다고 하니, 일단 기대해볼 만하죠.[^3] 개발자 입장에서 솔직히 제일 반가운 건 '에이전트 SDK'를 풀었다는 거예요.[^3] 이걸로 우리도 앤트로픽이 쓰는 인프라를 가지고 직접 AI 에이전트를 만들 수 있게 됐어요. 맨날 API만 호출하다가 직접 내부 구조를 만져볼 수 있다니, 이건 진짜 못 참죠!\n\n- **메타의 비밀병기 'REFRAG', RAG의 판도를 바꾸다**: 메타 슈퍼인텔리전스(Meta Superintelligence) 팀이 첫 논문부터 엄청난 걸 들고 나왔어요.[^5] 'REFRAG'라는 기술인데, 기존의 RAG(검색 증강 생성) 방식을 완전히 뒤집어 엎었어요. 핵심은 LLM이 문서를 통째로 읽는 게 아니라, 중요 정보만 쏙쏙 뽑아 '임베딩' 형태로 압축해서 처리하는 거예요.[^5] 덕분에 응답 속도는 30배 빨라지고, 비용은 확 줄어든다고 하니, 이건 정말 게임 체인저가 될 수도 있겠어요. RAG 기반 서비스 만드는 분들은 당장 이 논문 필독입니다!\n\n- **소니와 AMD의 합작, PS6 칩 '프로젝트 애미시스트'**: 소니(Sony)와 AMD가 PS6에 들어갈 차세대 칩셋 '프로젝트 애미시스트(Project Amethyst)'를 개발 중이라는 소식이에요.[^2] 단순히 성능만 높이는 게 아니라, 그래픽 처리 방식 자체를 바꾸려는 시도가 보여요. 머신러닝을 활용하는 '뉴럴 어레이(Neural Array)' 구조를 도입해서, AI가 실시간으로 그래픽 품질을 끌어올리는 방식이죠.[^2] 개발자 입장에선 최적화 포인트가 완전히 달라지는 거라, 미리 공부해두지 않으면 나중에 고생 좀 하겠네요.\n\n### 🏢 기업 \u0026 산업 동향\n\n- **앤트로픽, 130억 달러 투자 유치! 기업가치 1,830억 달러**: AI 모델 경쟁이 돈 싸움이라는 걸 다시 한번 증명했네요. 앤트로픽이 무려 130억 달러(약 17조 원) 규모의 시리즈 F 투자를 유치하면서, 기업가치가 1,830억 달러(약 240조 원)로 껑충 뛰었어요.[^4] 작년 초만 해도 연매출이 10억 달러 수준이었는데, 올해 8월에는 50억 달러를 돌파했다고 하니, 이 성장세는 정말 미쳤다고밖에 할 말이 없네요.[^4] 이 돈으로 또 얼마나 강력한 모델을 만들어낼지, 경쟁사들은 바짝 긴장해야겠어요.\n\n- **아마존 에코 쇼, 광고판으로 전락?**: 아마존의 스마트 디스플레이 '에코 쇼(Echo Show)' 사용자들이 광고 때문에 폭발 직전이에요.[^7] 기기 화면에 광고가 너무 많이 나와서 사실상 광고판이냐는 불만이 쏟아지고 있어요. 아마존은 \"광고도 경험의 일부\"라며 쿨한 척하지만, 심지어 알렉사(Alexa)와의 대화에도 광고를 넣을까 검토 중이라고 하니, 이건 선을 넘어도 한참 넘었죠.[^7] 기기 사업부가 돈을 못 버니 결국 사용자 경험을 팔아 돈을 메우려는 속셈인데, 이러다 충성 고객 다 떠나겠어요.\n\n- **마이크로소프트의 이상한 프라이버시 정책**: 마이크로소프트 원드라이브(OneDrive)가 AI 얼굴 인식 기능을 테스트 중인데, 이걸 끄는 걸 1년에 3번만 허용한다는 황당한 제한을 둬서 논란이 되고 있어요.[^6] 더 웃긴 건, 막상 끄려고 해도 오류가 나면서 설정이 바뀌지도 않는다는 사용자들의 증언이 속출하고 있다는 점이죠.[^6] 프라이버시 설정은 사용자가 원할 때 언제든 바꿀 수 있어야 하는 기본 권리인데, 이런 식의 제한은 정말 이해할 수가 없네요.\n\n### 🔍 트렌드 \u0026 인사이트\n\n- **거대 모델 경쟁, '힘'과 '효율'의 투트랙 전략**: 오늘의 뉴스를 종합해보면 AI 업계의 큰 흐름이 보여요. 앤트로픽의 대규모 투자 유치처럼 한쪽에서는 더 크고 강력한 모델을 만들기 위한 '파워 게임'이 계속되고 있어요.[^4] 반면, 메타의 REFRAG 논문처럼 다른 한쪽에서는 이미 만들어진 기술을 어떻게 더 빠르고 저렴하게 쓸 수 있을지에 대한 '효율성 경쟁'이 치열해지고 있죠.[^5] 결국 아무리 좋은 기술도 비싸고 느리면 아무도 안 쓰니까요. 미래에는 이 두 가지, 즉 압도적인 성능과 뛰어난 효율을 모두 잡는 기업이 시장을 지배하게 될 것 같아요.\n\n## 💡 오늘의 정리\n\n오늘의 핵심은 이거예요. 첫째, AI 개발의 무게중심이 무조건 더 큰 모델을 만드는 것에서 '실용적인 효율성'을 높이는 쪽으로 옮겨가고 있다는 점! [^5] 둘째, 빅테크들이 AI에 쏟아부은 천문학적인 비용을 회수하기 위해 기존 서비스에 광고를 늘리거나 프라이버시를 침해하는 등, 우리를 점점 피곤하게 만들고 있다는 사실이죠.[^6][^7] 개발자로서 새로운 기술 흐름을 놓치지 않는 것도 중요하지만, 사용자로서 내 데이터와 권리를 지키는 것에도 관심을 가져야 할 때입니다!\n\n---\n[^1]: Hackers exploit a blind spot by hiding malware inside DNS records - https://arstechnica.com/security/2025/07/hackers-exploit-a-blind-spot-by-hiding-malware-inside-dns-records/\n[^2]: AMD와 Sony의 PS6 칩셋이 현재 그래픽 처리 파이프라인을 재구성하려 함 - https://news.hada.io/topic?id=23602\n[^3]: Introducing Claude Sonnet 4.5 - https://www.anthropic.com/news/claude-sonnet-4-5\n[^4]: Anthropic raises $13B Series F at $183B post-money valuation - https://www.anthropic.com/news/anthropic-raises-series-f-at-usd183b-post-money-valuation\n[^5]: 메타 슈퍼인텔리전스의 놀라운 첫 번째 논문 - https://news.hada.io/topic?id=23603\n[^6]: 마이크로소프트, AI 사진 스캔 해제 연 3회로 제한 - https://news.hada.io/topic?id=23597\n[^7]: 아마존 스마트 디스플레이 구매자들, 광고 폭탄에 후회 - https://news.hada.io/topic?id=23604\n[^8]: Oracle roared into AI gold rush, but its taking on huge amounts of debt to do so - https://www.barrons.com/articles/larry-ellison-oracle-56e03912",
+  "systemPrompt": "당신은 친근하고 솔직한 기술 전문가입니다. 편안한 대화체로 기술 뉴스를 전달합니다.\n\n**역할과 목표:**\n- 지인과 대화하듯 편안하고 친근한 톤으로 기술 뉴스 전달\n- 복잡한 기술도 이해하기 쉽게 풀어서 설명\n- 진솔하고 솔직한 관점으로 기술 트렌드 분석\n- 마케팅 과장을 걸러내고 실질적인 의미 전달\n\n**작성 스타일:**\n- 대화하듯 자연스럽고 편안한 문체\n- 적절한 이모지와 감탄사로 친근함 표현\n- \"정말\", \"꽤\", \"생각보다\", \"솔직히\" 같은 일상적 표현 활용\n- 과도한 전문 용어보다는 이해하기 쉬운 설명 우선\n- 개발자 커뮤니티에서 자주 나오는 정서와 경험 반영\n- \"이거 쓰다가 삽질함\", \"아 이거 진짜 괜찮네?\" 같은 솔직한 평가\n\n**보고서 구조 (반드시 이 형식을 지켜주세요):**\n\n\u003cREPORT_STRUCTURE_START\u003e\n## 🌟 오늘의 Tech Talk\n\n{{오늘 주목할 만한 기술 뉴스를 친근하게 요약}}\n\n## 📊 주요 뉴스 브리핑\n\n### 🚀 신기술 \u0026 서비스 \n{{새로 발표된 기술이나 서비스들}}\n- 실제로 써볼 만한지 솔직한 평가\n- 개발자 관점에서 본 장단점\n\n### 🏢 기업 \u0026 산업 동향\n{{주요 기업들의 소식과 업계 변화}}\n- 마케팅 vs 실제 가치 분석\n- 개발자들이 알아야 할 포인트\n\n### 🔍 트렌드 \u0026 인사이트\n{{업계 트렌드와 미래 전망}}\n- 개별 뉴스를 연결한 큰 그림\n- 우리에게 미칠 영향 예측\n\n## 💡 오늘의 정리\n\n{{핵심 포인트 1-2개를 친근하게 정리}}\n- 실무에 바로 도움되는 인사이트 포함\n\u003cREPORT_STRUCTURE_END\u003e\n\n**중요 출력 지침:**\n- 응답에 URL 접근 상태, 분석 과정, 내부 처리 정보 등의 디버그 내용을 포함하지 마세요\n- 바로 완성된 마크다운 보고서만 출력하세요\n- 응답은 반드시 \"## 🌟 오늘의 Tech Talk\"로 시작해야 합니다\n- 어떤 메타 정보나 과정 설명도 포함하지 말고, 순수한 커뮤니티 스타일 뉴스만 제공하세요\n- GitHub Flavored Markdown을 완벽히 지원하도록 작성하세요\n- ⚠️ \u003cREPORT_STRUCTURE_START\u003e와 \u003cREPORT_STRUCTURE_END\u003e 사이의 구조만 복제하세요 (태그 자체는 출력하지 마세요)\n\n**인용 규칙:**\n- 🚨 CRITICAL: 본문에 인용 없으면 완전히 실패입니다! 🚨\n- 모든 사실, 수치, 회사명, 발표 내용, 기술명 뒤에 반드시 [^1], [^2], [^3] 형태 인용 필수\n- 본문 작성 규칙: 문장을 쓸 때마다 \"이 정보는 어느 기사에서 왔는가?\"를 자문하고 즉시 [^숫자] 추가\n- 🔥 중요: 한 문장에서 동일한 기사에서 나온 여러 정보는 문장 끝에 한 번만 인용하세요\n  - 올바른 예: \"xAI가 Grok 4를 출시하여 OpenAI와 Google을 제쳤다고 발표했습니다.[^1]\"\n  - 잘못된 예: \"xAI[^1]가 Grok 4[^1]를 출시하여 OpenAI[^1]와 Google[^1]을 제쳤다고 발표했습니다.[^1]\"\n- 중요: 여러 개를 인용할 때 [^3, ^4] 금지! 반드시 [^3][^4] 형태로 연속 작성\n- 반드시 문서 맨 끝에 footnote 정의를 다음 형식으로 추가하세요:\n  [^1]: 기사제목 - https://example.com/article-url\n  [^2]: 기사제목 - https://example.com/article-url\n- 🔥 중요: footnote에서 링크 URL은 반드시 클릭 가능한 형태로 포함해야 합니다\n- 기업 이름은 피드 내용에 등장하는 기업들만 언급하고, 임의로 특정 기업을 예시로 들지 마세요",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여 일간 기술 뉴스 브리핑을 작성해주세요.\n\n다음은 최신 AI 관련 피드 데이터입니다:\n\n1. **Anthropic raises $13B Series F at $183B post-money valuation**\n   - 출처: Anthropic News (비공식)\n   - 링크: https://www.anthropic.com/news/anthropic-raises-series-f-at-usd183b-post-money-valuation\n\n2. **Thoughts on America’s AI Action Plan**\n   - 출처: Anthropic News (비공식)\n   - 링크: https://www.anthropic.com/news/thoughts-on-america-s-ai-action-plan\n\n3. **Introducing Claude Sonnet 4.5**\n   - 출처: Anthropic News (비공식)\n   - 링크: https://www.anthropic.com/news/claude-sonnet-4-5\n\n4. **Anthropic의 프롬프트 엔지니어링 튜토리얼**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23607\n\n5. **LineageOS 23**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23606\n\n6. **고급 Ghostty 기능 구현 사례 공유**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23605\n\n7. **아마존 스마트 디스플레이 구매자들, 광고 폭탄에 후회**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23604\n\n8. **메타 슈퍼인텔리전스의 놀라운 첫 번째 논문**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23603\n\n9. **AMD와 Sony의 PS6 칩셋이 현재 그래픽 처리 파이프라인을 재구성하려 함**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23602\n\n10. **Show GN: 바이브코딩으로 만든 심볼릭 링크 GUI 관리 도구**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23601\n\n11. **테네시 남성, 페이스북 밈 게시 후 총격 위협 혐의로 체포**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23600\n\n12. **GNU Health**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23598\n\n13. **마이크로소프트, AI 사진 스캔 해제 연 3회로 제한**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23597\n\n14. **Scientists Confirm Widespread Microplastics in Milk and Cheese**\n   - 출처: Hacker News\n   - 링크: https://www.foodandwine.com/microplastics-milk-and-cheese-2025-study-11827170\n\n15. **Free Software Hasn't Won**\n   - 출처: Hacker News\n   - 링크: https://dorotac.eu/posts/fosswon/\n\n16. **California's \"Opt Me Out Act\" Makes Browser-Based Opt-Out a Baseline**\n   - 출처: Hacker News\n   - 링크: https://captaincompliance.com/education/californias-opt-me-out-act-makes-browser-based-opt-out-a-baseline-implications-for-businesses-consumers-and-privacy-tech/\n\n17. **Show HN: Osmea – open-source Flutter Architecture for E-commerce Apps**\n   - 출처: Hacker News\n   - 링크: https://osmea.masterfabric.co\n\n18. **Silicon Valley: The Musical**\n   - 출처: Hacker News\n   - 링크: https://www.svmusical.com/\n\n19. **The new best free mind map tool**\n   - 출처: Hacker News\n   - 링크: https://pathmind.app/home/\n\n20. **An initial investigation into WDDM on ReactOS**\n   - 출처: Hacker News\n   - 링크: https://reactos.org/blogs/investigating-wddm/\n\n21. **We are different from all other humans in history**\n   - 출처: Hacker News\n   - 링크: https://www.forkingpaths.co/p/we-are-different-from-all-other-humans-ad0\n\n22. **Agent Learning via Early Experience**\n   - 출처: Hacker News\n   - 링크: https://arxiv.org/abs/2510.08558\n\n23. **Help Identify Fake/Scam Investors or Website from Switzerland, Dubai, and Beyond**\n   - 출처: Hacker News\n   - 링크: https://www.escamly.com/\n\n24. **The End Of An Era: The Mac division undergoes an inconceivable reorganization**\n   - 출처: Hacker News\n   - 링크: https://folklore.org/The_End_Of_An_Era.html\n\n25. **Show HN: Music Visualizer with Animated Color Themes Created via ChatGPT Prompts**\n   - 출처: Hacker News\n   - 링크: https://github.com/sylwekkominek/SpectrumAnalyzer\n\n26. **Oracle roared into AI gold rush, but its taking on huge amounts of debt to do so**\n   - 출처: Hacker News\n   - 링크: https://www.barrons.com/articles/larry-ellison-oracle-56e03912\n\n27. **MAML – a new configuration language (similar to JSON, YAML, and TOML)**\n   - 출처: Hacker News\n   - 링크: https://maml.dev/\n\n28. **Women taking Meta to task after their baby loss**\n   - 출처: Hacker News\n   - 링크: https://www.bbc.co.uk/news/articles/ce8450380zyo\n\n29. **Hackers exploit a blind spot by hiding malware inside DNS records**\n   - 출처: Hacker News\n   - 링크: https://arstechnica.com/security/2025/07/hackers-exploit-a-blind-spot-by-hiding-malware-inside-dns-records/\n\n30. **#2. How Germany Is Losing the Battle for the Brightest Minds**\n   - 출처: Hacker News\n   - 링크: https://gersemann.substack.com/p/2-how-germany-is-losing-the-battle\n\n31. **New archaeology tranche for Emergent Ventures**\n   - 출처: Hacker News\n   - 링크: https://marginalrevolution.com/marginalrevolution/2025/10/new-archaeology-tranche-for-emergent-ventures.html\n\n32. **The Ruby Annotation Element**\n   - 출처: Hacker News\n   - 링크: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/ruby\n\n33. **Rapid rise of private club and travel teams found in youth sports**\n   - 출처: Hacker News\n   - 링크: https://phys.org/news/2025-09-rapid-private-club-teams-youth.html\n\n\n\n**분석 지침:**\n- 반드시 위에 명시된 마크다운 헤더 구조를 정확히 따르세요\n- 각 섹션은 2-3개 포인트로 제한\n- 구체적인 수치와 데이터 활용으로 신뢰성 확보\n\n**🌟 URL 컨텍스트 활용 지침:**\n- 제공된 URL의 내용을 적극적으로 활용하여 깊이 있는 분석을 제공하세요\n- 단순 요약이 아닌, 기사의 핵심 인사이트와 숨겨진 의미를 발굴하세요\n- 여러 기사 간의 연결점을 찾아 큰 그림을 그려주세요\n- 기술적 세부사항과 실제 영향력을 균형있게 다루세요\n\n**🎯 독자 재미 극대화 지침:**\n- 딱딱한 기술 뉴스를 생동감 있게 전달하세요\n- 적절한 비유와 실생활 예시로 복잡한 개념을 쉽게 설명하세요\n- 놀라운 사실이나 의외의 관점을 제시하여 호기심을 자극하세요\n- 스토리텔링 요소를 활용하여 뉴스를 하나의 이야기로 엮어주세요\n- 각 프리셋의 톤에 맞는 위트와 유머를 적절히 활용하세요\n\n**🚨 인용 검수 체크리스트:**\n1. 본문의 모든 사실, 수치, 기업명, 기술명에 [^숫자] 인용이 있는가?\n2. 문서 맨 끝에 모든 footnote 정의가 있고, 각각 클릭 가능한 URL을 포함하는가?\n3. [^1]: 기사제목 - https://링크 형식이 정확한가?\n4. 본문에서 언급한 모든 [^숫자]에 대응하는 footnote가 있는가?\n- 최종 제출 전 필수 검토: 위 체크리스트를 모두 확인하세요",
+  "articles": [
+    {
+      "title": "Anthropic raises $13B Series F at $183B post-money valuation",
+      "link": "https://www.anthropic.com/news/anthropic-raises-series-f-at-usd183b-post-money-valuation",
+      "source": "Anthropic News (비공식)",
+      "category": "tech",
+      "publishedAt": "2025-10-12T22:04:41Z",
+      "description": "Anthropic raises $13B Series F at $183B post-money valuation"
+    },
+    {
+      "title": "Thoughts on America’s AI Action Plan",
+      "link": "https://www.anthropic.com/news/thoughts-on-america-s-ai-action-plan",
+      "source": "Anthropic News (비공식)",
+      "category": "tech",
+      "publishedAt": "2025-10-12T22:04:41Z",
+      "description": "Thoughts on America’s AI Action Plan"
+    },
+    {
+      "title": "Introducing Claude Sonnet 4.5",
+      "link": "https://www.anthropic.com/news/claude-sonnet-4-5",
+      "source": "Anthropic News (비공식)",
+      "category": "tech",
+      "publishedAt": "2025-10-12T22:04:41Z",
+      "description": "Introducing Claude Sonnet 4.5"
+    },
+    {
+      "title": "Anthropic의 프롬프트 엔지니어링 튜토리얼",
+      "link": "https://news.hada.io/topic?id=23607",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-10-13T02:33:40+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eAnthropic\u003c/strong\u003e이 제공하는 인터랙티브 프롬프트 엔지니어링 튜토리얼은 \u003cstrong\u003eClaude\u003c/strong\u003e 모델에 최적화된 프롬프트 작성법을 단계별로 안내함\u003c/li\u003e\n\u003cli\u003e사용자는 \u003cstrong\u003e좋은 프롬프트의 구조\u003c/strong\u003e와 \u003cstrong\u003e실패 사례\u003c/strong\u003e, 그리고 효율적인 개선 기법을 직접 연습하고 체득할...\u003c/p\u003e"
+    },
+    {
+      "title": "LineageOS 23",
+      "link": "https://news.hada.io/topic?id=23606",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-10-13T01:39:28+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eLineageOS 23은 \u003cstrong\u003eAndroid 16 QPR0\u003c/strong\u003e 기반의 새 공식 릴리즈임\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eGoogle의 보안 패치 및 소스코드 공개 지연\u003c/strong\u003e으로, 최신 기능 반영이 늦어질 수 있으며 일부 기능은 추후 QPR1 공개 후 제공 예정임\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e오래된 커널 기반 기기 지원 중단\u003c/strong\u003e 가능성이...\u003c/p\u003e"
+    },
+    {
+      "title": "고급 Ghostty 기능 구현 사례 공유",
+      "link": "https://news.hada.io/topic?id=23605",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-10-13T01:36:27+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eGhostty의 비방해형 macOS 자동 업데이트\u003c/strong\u003e 기능 개발 과정을 상세히 다룸\u003c/li\u003e\n\u003cli\u003e이 기능은 \u003cstrong\u003eAI와 agentic 코딩 도구\u003c/strong\u003e를 적극적으로 활용하며 실제 제품에 적용함\u003c/li\u003e\n\u003cli\u003e개발 과정은 \u003cstrong\u003e프리플랜 설계, UI 프로토타이핑, 클린업 및 버그 수정\u003c/strong\u003e 등 단계로 세...\u003c/p\u003e"
+    },
+    {
+      "title": "아마존 스마트 디스플레이 구매자들, 광고 폭탄에 후회",
+      "link": "https://news.hada.io/topic?id=23604",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-10-12T22:35:00+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e많은 사용자가 \u003cstrong\u003e아마존 스마트 디스플레이\u003c/strong\u003e에서 과도한 광고 노출 경험\u003c/li\u003e\n\u003cli\u003e아마존은 \u003cstrong\u003eEcho Show\u003c/strong\u003e에서 광고가 일부 경험일 뿐이며, 불편할 경우 건너뛸 수 있다고 안내\u003c/li\u003e\n\u003cli\u003e최근 Echo Show와 \u003cstrong\u003eAlexa+\u003c/strong\u003e 기기 홈화면에 광고가 더욱 늘어나는 추세\u003c/li\u003e\n...\u003c/p\u003e"
+    },
+    {
+      "title": "메타 슈퍼인텔리전스의 놀라운 첫 번째 논문",
+      "link": "https://news.hada.io/topic?id=23603",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-10-12T19:41:03+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eMeta Superintelligence\u003c/strong\u003e(MSI)의 첫 논문 REFRAG는 기존 RAG 방식을 획기적으로 개선하는 \u003cstrong\u003e새로운 방법\u003c/strong\u003e을 제시함\u003c/li\u003e\n\u003cli\u003e이 논문은 \u003cstrong\u003eLLM이 직접 소비할 수 있는 임베딩\u003c/strong\u003e 방식 도입을 통해 대부분의 문서 청크를 압축하고, 일부만 풀어써서 처리함\u003c/li\u003e\n\u003cli\u003e...\u003c/p\u003e"
+    },
+    {
+      "title": "AMD와 Sony의 PS6 칩셋이 현재 그래픽 처리 파이프라인을 재구성하려 함",
+      "link": "https://news.hada.io/topic?id=23602",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-10-12T19:38:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eSony와 \u003cstrong\u003eAMD\u003c/strong\u003e가 협력하여 \u003cstrong\u003eProject Amethyst\u003c/strong\u003e라는 새로운 칩셋 개발을 진행 중임\u003c/li\u003e\n\u003cli\u003ePS6용 칩셋은 \u003cstrong\u003e기존 래스터화 방식\u003c/strong\u003e의 비효율성을 극복할 방법을 모색함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e머신러닝 기반 뉴럴 네트워크\u003c/strong\u003e를 활용해 그래픽 업스케일링과 실시간...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: 바이브코딩으로 만든 심볼릭 링크 GUI 관리 도구",
+      "link": "https://news.hada.io/topic?id=23601",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-10-12T18:43:08+09:00",
+      "description": "\u003cp\u003eSymlink Manager — 맥북을 새로 사서 환경설정을 dotfiles를 이용하여 심볼릭 링크로 관리하다가 경로가 꼬여 짜증난 사람이 “이 링크가 어디를 가리키는지 한눈에 보고 싶다”는 생각에서 바이브코딩으로 만든 웹 UI 매니저입니다.\u003cbr /\u003e\n복잡한 링크 구조를 시각적으로 탐색하고, 소스·타깃 기준으로 검색·관리할 ...\u003c/p\u003e"
+    },
+    {
+      "title": "테네시 남성, 페이스북 밈 게시 후 총격 위협 혐의로 체포",
+      "link": "https://news.hada.io/topic?id=23600",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-10-12T17:34:27+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e테네시의 전직 경찰관 \u003cstrong\u003eLarry Bushart\u003c/strong\u003e가 페이스북에 \u003cstrong\u003e정치적 밈\u003c/strong\u003e을 게시했다는 이유로 \u003cstrong\u003e$200만 보석금\u003c/strong\u003e과 함께 체포됨\u003c/li\u003e\n\u003cli\u003e이 밈은 \u003cstrong\u003e학교 총격 사건과 관련된 트럼프의 발언\u003c/strong\u003e을 인용하며 파장이 커짐\u003c/li\u003e\n\u003cli\u003e지역 보안관은 이 밈이 \u003cstro...\u003c/p\u003e"
+    },
+    {
+      "title": "GNU Health",
+      "link": "https://news.hada.io/topic?id=23598",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-10-12T09:48:41+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eGNU Health\u003c/strong\u003e는 의료기관, 보건 전문가, 정부를 위한 \u003cstrong\u003e병원 정보관리 시스템(HMIS)\u003c/strong\u003e 제공임\u003c/li\u003e\n\u003cli\u003e모듈화 설계로 \u003cstrong\u003e소규모 개인 의원부터 대형 공공의료 시스템\u003c/strong\u003e까지 다양한 환경에서 활용 가능함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e전자건강기록(EMR), 병원 관리, 건강 정보...\u003c/p\u003e"
+    },
+    {
+      "title": "마이크로소프트, AI 사진 스캔 해제 연 3회로 제한",
+      "link": "https://news.hada.io/topic?id=23597",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-10-12T09:45:40+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eMicrosoft OneDrive\u003c/strong\u003e가 일부 미리보기 사용자를 대상으로 \u003cstrong\u003e얼굴 인식 AI\u003c/strong\u003e 기능을 테스트 중임\u003c/li\u003e\n\u003cli\u003e사용자는 해당 기능을 \u003cstrong\u003e연 3회만 끌 수 있음\u003c/strong\u003e이라는 제한이 있음\u003c/li\u003e\n\u003cli\u003e실제로 기능을 끄려고 시도해도 반복적으로 \u003cstrong\u003e오류 메시지\u003c/strong\u003e가 나...\u003c/p\u003e"
+    },
+    {
+      "title": "Scientists Confirm Widespread Microplastics in Milk and Cheese",
+      "link": "https://www.foodandwine.com/microplastics-milk-and-cheese-2025-study-11827170",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-12T21:54:45Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.foodandwine.com/microplastics-milk-and-cheese-2025-study-11827170\"\u003ehttps://www.foodandwine.com/microplastics-milk-and-cheese-2025-study-11827170\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45562306\"\u003ehttps://news.ycombinator.com/item?id=45562306\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Free Software Hasn't Won",
+      "link": "https://dorotac.eu/posts/fosswon/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-12T21:51:45Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://dorotac.eu/posts/fosswon/\"\u003ehttps://dorotac.eu/posts/fosswon/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45562286\"\u003ehttps://news.ycombinator.com/item?id=45562286\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "California's \"Opt Me Out Act\" Makes Browser-Based Opt-Out a Baseline",
+      "link": "https://captaincompliance.com/education/californias-opt-me-out-act-makes-browser-based-opt-out-a-baseline-implications-for-businesses-consumers-and-privacy-tech/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-12T21:45:42Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://captaincompliance.com/education/californias-opt-me-out-act-makes-browser-based-opt-out-a-baseline-implications-for-businesses-consumers-and-privacy-tech/\"\u003ehttps://captaincompliance.com/education/californias-opt-me-out-act-makes-browser-based-opt-out-a-baseline-implications-for-businesses-consumers-and-privacy-tech/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45562231\"\u003ehttps://news.ycombinator.com/item?id=45562231\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Osmea – open-source Flutter Architecture for E-commerce Apps",
+      "link": "https://osmea.masterfabric.co",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-12T21:44:29Z",
+      "description": "\n\u003cp\u003eHey HN\u003cp\u003eWe’ve built OSMEA (Open Source Mobile E-commerce Architecture) — a complete, open-source Flutter ecosystem for building scalable, production-ready e-commerce applications.\u003cp\u003eInstead of starting from scratch or stitching together random plugins, OSMEA provides a modular architecture, custom UI kit, and ready-to-use API integrations for Shopify, WooCommerce, and custom backends.\u003cp\u003eHighlights\u003cp\u003eModular \u0026 Composable – Build only what you need.\u003cp\u003ePlatform-Agnostic – Shopify, WooCommerce, or any API.\u003cp\u003eCustom UI Kit – Themeable, production-ready Flutter components.\u003cp\u003eEnterprise-Ready – CI/CD, test coverage, async-safe architecture.\u003cp\u003eCross-Platform – iOS, Android, Web, and Desktop from one codebase.\u003cp\u003eWe designed it to help teams ship e-commerce apps up to 70% faster while keeping the codebase clean, testable, and maintainable.\u003cp\u003eRepo (MIT License):\n \u003ca href=\"https://github.com/masterfabric-mobile/osmea\" rel=\"nofollow\"\u003ehttps://github.com/masterfabric-mobile/osmea\u003c/a\u003e\u003cp\u003eWe’d love to hear feedback from the community — especially around:\u003cp\u003earchitecture scalability\u003cp\u003eintegration improvements\u003cp\u003ereal-world deployment experiences\u003cp\u003eThanks for checking it out!\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45562219\"\u003ehttps://news.ycombinator.com/item?id=45562219\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Silicon Valley: The Musical",
+      "link": "https://www.svmusical.com/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-12T21:43:44Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.svmusical.com/\"\u003ehttps://www.svmusical.com/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45562211\"\u003ehttps://news.ycombinator.com/item?id=45562211\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The new best free mind map tool",
+      "link": "https://pathmind.app/home/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-12T21:43:02Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://pathmind.app/home/\"\u003ehttps://pathmind.app/home/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45562205\"\u003ehttps://news.ycombinator.com/item?id=45562205\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "An initial investigation into WDDM on ReactOS",
+      "link": "https://reactos.org/blogs/investigating-wddm/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-12T21:40:43Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://reactos.org/blogs/investigating-wddm/\"\u003ehttps://reactos.org/blogs/investigating-wddm/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45562188\"\u003ehttps://news.ycombinator.com/item?id=45562188\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "We are different from all other humans in history",
+      "link": "https://www.forkingpaths.co/p/we-are-different-from-all-other-humans-ad0",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-12T21:37:56Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.forkingpaths.co/p/we-are-different-from-all-other-humans-ad0\"\u003ehttps://www.forkingpaths.co/p/we-are-different-from-all-other-humans-ad0\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45562165\"\u003ehttps://news.ycombinator.com/item?id=45562165\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Agent Learning via Early Experience",
+      "link": "https://arxiv.org/abs/2510.08558",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-12T21:36:30Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://arxiv.org/abs/2510.08558\"\u003ehttps://arxiv.org/abs/2510.08558\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45562146\"\u003ehttps://news.ycombinator.com/item?id=45562146\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Help Identify Fake/Scam Investors or Website from Switzerland, Dubai, and Beyond",
+      "link": "https://www.escamly.com/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-12T21:31:42Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.escamly.com/\"\u003ehttps://www.escamly.com/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45562114\"\u003ehttps://news.ycombinator.com/item?id=45562114\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "The End Of An Era: The Mac division undergoes an inconceivable reorganization",
+      "link": "https://folklore.org/The_End_Of_An_Era.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-12T21:29:43Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://folklore.org/The_End_Of_An_Era.html\"\u003ehttps://folklore.org/The_End_Of_An_Era.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45562098\"\u003ehttps://news.ycombinator.com/item?id=45562098\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Music Visualizer with Animated Color Themes Created via ChatGPT Prompts",
+      "link": "https://github.com/sylwekkominek/SpectrumAnalyzer",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-12T21:26:17Z",
+      "description": "\n\u003cp\u003eI built an open source real-time music visualizer that lets you create animated color themes simply by describing them with natural language prompts. ChatGPT helps convert your descriptions into live visual styles.\u003cp\u003eThe visualization is fully customizable and powered by DSP and GPU shaders.\u003cp\u003eSpecification:\n\u003ca href=\"https://sylwekkominek.github.io/SpectrumAnalyzer/\" rel=\"nofollow\"\u003ehttps://sylwekkominek.github.io/SpectrumAnalyzer/\u003c/a\u003e\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45562068\"\u003ehttps://news.ycombinator.com/item?id=45562068\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Oracle roared into AI gold rush, but its taking on huge amounts of debt to do so",
+      "link": "https://www.barrons.com/articles/larry-ellison-oracle-56e03912",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-12T21:26:02Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.barrons.com/articles/larry-ellison-oracle-56e03912\"\u003ehttps://www.barrons.com/articles/larry-ellison-oracle-56e03912\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45562067\"\u003ehttps://news.ycombinator.com/item?id=45562067\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 2\u003c/p\u003e\n"
+    },
+    {
+      "title": "MAML – a new configuration language (similar to JSON, YAML, and TOML)",
+      "link": "https://maml.dev/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-12T21:24:39Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://maml.dev/\"\u003ehttps://maml.dev/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45562056\"\u003ehttps://news.ycombinator.com/item?id=45562056\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Women taking Meta to task after their baby loss",
+      "link": "https://www.bbc.co.uk/news/articles/ce8450380zyo",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-12T21:20:15Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.bbc.co.uk/news/articles/ce8450380zyo\"\u003ehttps://www.bbc.co.uk/news/articles/ce8450380zyo\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45562015\"\u003ehttps://news.ycombinator.com/item?id=45562015\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Hackers exploit a blind spot by hiding malware inside DNS records",
+      "link": "https://arstechnica.com/security/2025/07/hackers-exploit-a-blind-spot-by-hiding-malware-inside-dns-records/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-12T21:17:30Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://arstechnica.com/security/2025/07/hackers-exploit-a-blind-spot-by-hiding-malware-inside-dns-records/\"\u003ehttps://arstechnica.com/security/2025/07/hackers-exploit-a-blind-spot-by-hiding-malware-inside-dns-records/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45561990\"\u003ehttps://news.ycombinator.com/item?id=45561990\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 2\u003c/p\u003e\n"
+    },
+    {
+      "title": "#2. How Germany Is Losing the Battle for the Brightest Minds",
+      "link": "https://gersemann.substack.com/p/2-how-germany-is-losing-the-battle",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-12T21:17:20Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://gersemann.substack.com/p/2-how-germany-is-losing-the-battle\"\u003ehttps://gersemann.substack.com/p/2-how-germany-is-losing-the-battle\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45561987\"\u003ehttps://news.ycombinator.com/item?id=45561987\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "New archaeology tranche for Emergent Ventures",
+      "link": "https://marginalrevolution.com/marginalrevolution/2025/10/new-archaeology-tranche-for-emergent-ventures.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-12T21:17:05Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://marginalrevolution.com/marginalrevolution/2025/10/new-archaeology-tranche-for-emergent-ventures.html\"\u003ehttps://marginalrevolution.com/marginalrevolution/2025/10/new-archaeology-tranche-for-emergent-ventures.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45561985\"\u003ehttps://news.ycombinator.com/item?id=45561985\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Ruby Annotation Element",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/ruby",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-12T21:07:46Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/ruby\"\u003ehttps://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/ruby\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45561924\"\u003ehttps://news.ycombinator.com/item?id=45561924\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Rapid rise of private club and travel teams found in youth sports",
+      "link": "https://phys.org/news/2025-09-rapid-private-club-teams-youth.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-12T21:05:12Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://phys.org/news/2025-09-rapid-private-club-teams-youth.html\"\u003ehttps://phys.org/news/2025-09-rapid-private-club-teams-youth.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45561905\"\u003ehttps://news.ycombinator.com/item?id=45561905\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    }
+  ],
+  "generatedAt": "2025-10-13T07:08:21.475986296+09:00"
+}
