@@ -312,6 +312,112 @@ func loadAllFeeds(t *testing.T) []models.Feed {
 }
 
 // 모든 피드 테스트 (feeds.csv 기반)
+func TestAnthropicRSSHubFeeds(t *testing.T) {
+	if testing.Short() {
+		t.Skip("Anthropic RSSHub feed reachability test requires network access")
+	}
+
+	feeds := []models.Feed{
+		{
+			Title:    "Anthropic News (비공식)",
+			RSSUrl:   "https://rsshub.app/anthropic/news",
+			Website:  "https://www.anthropic.com/news",
+			Category: "tech",
+		},
+		{
+			Title:    "Anthropic Engineering (비공식)",
+			RSSUrl:   "https://rsshub.app/anthropic/engineering",
+			Website:  "https://www.anthropic.com/engineering",
+			Category: "tech",
+		},
+		{
+			Title:    "Anthropic Research (비공식)",
+			RSSUrl:   "https://rsshub.app/anthropic/research",
+			Website:  "https://www.anthropic.com/research",
+			Category: "tech",
+		},
+	}
+
+	client := &http.Client{
+		Timeout: 30 * time.Second,
+	}
+
+	backoffs := []time.Duration{0, 2 * time.Second, 4 * time.Second}
+
+	for _, feed := range feeds {
+		feed := feed
+		t.Run(feed.Title, func(t *testing.T) {
+			ctx := context.Background()
+			var body []byte
+			var lastStatus int
+			var rssErr, atomErr error
+
+			for attempt, delay := range backoffs {
+				if delay > 0 {
+					time.Sleep(delay)
+				}
+
+				req, err := http.NewRequestWithContext(ctx, "GET", feed.RSSUrl, nil)
+				if err != nil {
+					t.Fatalf("HTTP 요청 생성 실패: %v", err)
+				}
+				req.Header.Set("User-Agent", "daily-feed/1.0")
+
+				resp, err := client.Do(req)
+				if err != nil {
+					t.Fatalf("HTTP 요청 실패: %v", err)
+				}
+
+				lastStatus = resp.StatusCode
+
+				if resp.StatusCode == http.StatusTooManyRequests {
+					resp.Body.Close()
+					if attempt == len(backoffs)-1 {
+						t.Fatalf("HTTP 상태 코드 오류: %d", resp.StatusCode)
+					}
+					continue
+				}
+
+				if resp.StatusCode != http.StatusOK {
+					resp.Body.Close()
+					t.Fatalf("HTTP 상태 코드 오류: %d", resp.StatusCode)
+				}
+
+				var errRead error
+				body, errRead = io.ReadAll(resp.Body)
+				resp.Body.Close()
+				if errRead != nil {
+					t.Fatalf("응답 본문 읽기 실패: %v", errRead)
+				}
+
+				bodyStr := utils.FixXMLEntities(string(body))
+
+				var rss models.RSS
+				rssErr = xml.Unmarshal([]byte(bodyStr), &rss)
+				if rssErr == nil && len(rss.Channel.Items) > 0 {
+					t.Logf("RSS 파싱 성공! 아이템 수: %d", len(rss.Channel.Items))
+					validateRSSFields(t, rss.Channel.Items, feed)
+					return
+				}
+
+				var atom models.AtomFeed
+				atomErr = xml.Unmarshal([]byte(bodyStr), &atom)
+				if atomErr == nil && len(atom.Entries) > 0 {
+					t.Logf("Atom 파싱 성공! 엔트리 수: %d", len(atom.Entries))
+					validateAtomFields(t, atom.Entries, feed)
+					return
+				}
+
+				if attempt < len(backoffs)-1 {
+					time.Sleep(2 * time.Second)
+				}
+			}
+
+			t.Fatalf("RSS와 Atom 파싱 실패 (마지막 HTTP 상태: %d): rssErr=%v atomErr=%v", lastStatus, rssErr, atomErr)
+		})
+	}
+}
+
 func TestAllFeedsFromCSV(t *testing.T) {
 	feeds := loadAllFeeds(t)
 
