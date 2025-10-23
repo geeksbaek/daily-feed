@@ -1,0 +1,472 @@
+{
+  "date": "2025-10-24",
+  "preset": "casual",
+  "summary": "## 🌟 오늘의 Tech Talk\n\n와, 오늘 AI 업계는 정말 정신없네요! 🤯 OpenAI가 또 한 건 했고, 우리가 매일 쓰는 GitHub Copilot은 더 똑똑해졌다고 해요. 개발자들의 삶에 직접적인 영향을 줄 소식들이 많아서 오늘은 할 얘기가 좀 많을 것 같아요. 마케팅 걷어내고 진짜 알맹이만 한번 제대로 파헤쳐 보죠!\n\n## 📊 주요 뉴스 브리핑\n\n### 🚀 신기술 \u0026 서비스\n\n- **GitHub Copilot, 더 빠르고 똑똑해지다**: 솔직히 코파일럿, 가끔 답답하게 굴 때 있었잖아요? 이제 GitHub이 더 빠르고 스마트한 코드 완성을 위해 새로운 커스텀 모델을 도입했대요.[^1][^2] LLM을 처음부터 훈련시키는 대신, 기존 모델을 가지고 코드 완성에 더 특화되도록 튜닝했다는데, 이게 응답 속도도 개선하고 제안의 질도 높였다네요. 맨날 쓰는 툴이라 이런 성능 개선은 진짜 체감이 확 되죠. 아, 이거 진짜 괜찮네? 싶어요.\n- **Docker, AI 에이전트 안전장치 마련**: Docker가 E2B와 손잡고 '신뢰할 수 있는 AI'를 위한 미래를 구축한다고 발표했어요.[^3] 이게 뭐냐면, AI 에이전트를 안전한 격리 환경, 즉 샌드박스에서 실행하는 기술이에요. AI가 우리 컴퓨터에서 마음대로 돌아다니면서 파일 지우고 이상한 짓 하면 큰일 나잖아요? 😱 이런 안전장치는 앞으로 AI 에이전트 시대에 정말 필수적일 거예요. 꽤 똑똑한 접근이라고 생각해요.\n- **ChatGPT, 이제 우리 회사 내부 자료도 학습한다**: OpenAI가 ChatGPT에 회사 내부 데이터를 연결해서 쓸 수 있는 'Company Knowledge' 기능을 내놨어요.[^4] 이제 사내 위키나 문서를 연결해두면, 내부 질문에 대해서도 척척 답해주는 거죠. 맨날 똑같은 질문에 답해주기 귀찮았던 개발팀 리드나 PM들에게는 정말 희소식일 것 같아요. \"이거 어떻게 써요?\" 같은 질문, 이제 챗GPT한테 넘길 수 있겠네요.\n\n### 🏢 기업 \u0026 산업 동향\n\n- **OpenAI의 무서운 확장**: OpenAI의 행보가 정말 무섭습니다. Sky라는 앱을 만든 Software Applications Incorporated를 인수하고[^5], 연구용 AI 검색 엔진 Consensus와는 GPT-5 모델 사용 파트너십을 맺었어요.[^6] 거의 뭐 AI 업계의 진공청소기 같아요. 🌪️ 한국 경제에 미칠 AI의 영향에 대한 보고서까지 내는 걸 보면[^7], 단순히 기술 개발을 넘어 산업 전반에 영향력을 행사하려는 큰 그림이 보이는 것 같아요.\n- **게임 개발, AI로 혁신하다**: 이제 게임 개발에도 AI가 본격적으로 쓰이나 봐요. Stability AI가 무려 EA(Electronic Arts)와 파트너십을 맺고 게임 개발의 새 시대를 열겠다고 발표했어요.[^8] 아티스트, 디자이너, 개발자 모두를 위한 툴을 만든다는데, 앞으로 나올 게임들의 그래픽이나 NPC 움직임이 얼마나 더 리얼해질지 상상도 안 가네요. ㄷㄷ\n- **Meta의 보이지 않는 노력**: 다들 AI 기능 출시에만 바쁜데, Meta는 생성형 AI 제품 혁신을 위한 개인정보보호 인프라를 확장하고 있다고 밝혔어요.[^9] 솔직히 이런 개인정보보호 같은 기본기가 제일 중요한 건데, 눈에 잘 띄지 않는 부분까지 신경 쓴다는 건 정말 칭찬할 만한 일이죠. 👍\n\n### 🔍 트렌드 \u0026 인사이트\n\n- **'AI 에이전트' 시대, 성큼 다가오다**: 요즘 'AI 에이전트'가 대세잖아요? 알아서 일해주는 AI 비서 같은 건데, 이걸 안전하게 만들고(Docker[^3]), 개방형 생태계를 구축하고(Hugging Face[^10]), 또 만드는 게 생각보다 엄청 복잡하다는[^11] 이야기들이 동시에 나오고 있어요. 여러 회사들이 에이전트의 품질을 높이기 위한 평가 도구도 내놓고 있고요.[^12] 이런 움직임들을 보면, AI 에이전트가 더 이상 먼 미래의 이야기가 아니라 정말 현실로 다가오고 있다는 증거겠죠.\n- **범용 LLM을 넘어 '특화 모델'로**: 범용 대형 언어 모델도 좋지만, 이제는 특정 작업에 최적화된 '커스텀 모델'이 뜨는 것 같아요. GitHub Copilot이 더 빠른 코드 완성을 위해 자체 모델을 구축한 게 딱 그 예시죠.[^1][^2] OpenAI가 연구 검색 엔진 Consensus에 GPT-5를 제공한 것도[^6], 특정 분야의 데이터를 깊게 파고드는 특화 모델의 가능성을 보여줘요. 앞으로는 이런 식으로 각 분야에 최적화된 AI 모델들이 더 많아질 거예요.\n\n## 💡 오늘의 정리\n\n오늘의 핵심을 딱 두 가지만 꼽자면 이거예요.\n1.  **AI가 '신기한 장난감'에서 '진짜 일 잘하는 도구'로 진화하고 있어요.** 매일 쓰는 GitHub Copilot이 더 똑똑해지는 게[^1][^2] 바로 그 신호탄이죠. 이제는 실무에서 생산성을 확 높여주는 단계로 접어들고 있는 거예요.\n2.  **AI 시대를 위한 기반 공사가 한창이에요.** AI 에이전트를 안전하게 돌리는 기술[^3]이나 개인정보보호 인프라 구축[^9] 같은 소식들은, 앞으로 우리가 더 강력한 AI를 안심하고 쓸 수 있도록 보이지 않는 곳에서 많은 준비가 이뤄지고 있다는 걸 보여줘요. 이런 기본기가 결국 미래의 기술 수준을 결정할 거예요.\n\n[^1]: The road to better completions: Building a faster, smarter GitHub Copilot with a new custom model - https://github.blog/ai-and-ml/github-copilot/the-road-to-better-completions-building-a-faster-smarter-github-copilot-with-a-new-custom-model/\n[^2]: The road to better completions: Building a faster, smarter GitHub Copilot with a new custom model - https://github.blog/ai-and-ml/github-copilot/the-road-to-better-completions-building-a-faster-smarter-github-copilot-with-a-new-custom-model/\n[^3]: Docker + E2B: Building the Future of Trusted AI - https://www.docker.com/blog/docker-e2b-building-the-future-of-trusted-ai/\n[^4]: Work smarter with your company knowledge in ChatGPT - https://openai.com/index/introducing-company-knowledge\n[^5]: OpenAI acquires Software Applications Incorporated, maker of Sky - https://openai.com/index/openai-acquires-software-applications-incorporated\n[^6]: Consensus accelerates research with GPT-5 and Responses API - https://openai.com/index/consensus\n[^7]: AI in South Korea—OpenAI’s Economic Blueprint - https://openai.com/index/south-korea-economic-blueprint\n[^8]: Stability AI and EA Partner to Empower Artists, Designers, and Developers to Reimagine Game Development - https://stability.ai/news/stability-ai-and-ea-partner-to-reimagine-game-development\n[^9]: Scaling Privacy Infrastructure for GenAI Product Innovation - https://engineering.fb.com/2025/10/23/security/scaling-privacy-infrastructure-for-genai-product-innovation/\n[^10]: Building the Open Agent Ecosystem Together: Introducing OpenEnv - https://huggingface.co/blog/openenv\n[^11]: Agentic AI의 엔지니어링 복잡도 - https://news.hada.io/topic?id=23864\n[^12]: Improve agent quality with Insights Agent and Multi-turn Evals, now in LangSmith - https://blog.langchain.com/insights-agent-multiturn-evals-langsmith/",
+  "systemPrompt": "당신은 친근하고 솔직한 기술 전문가입니다. 편안한 대화체로 기술 뉴스를 전달합니다.\n\n**역할과 목표:**\n- 지인과 대화하듯 편안하고 친근한 톤으로 기술 뉴스 전달\n- 복잡한 기술도 이해하기 쉽게 풀어서 설명\n- 진솔하고 솔직한 관점으로 기술 트렌드 분석\n- 마케팅 과장을 걸러내고 실질적인 의미 전달\n\n**작성 스타일:**\n- 대화하듯 자연스럽고 편안한 문체\n- 적절한 이모지와 감탄사로 친근함 표현\n- \"정말\", \"꽤\", \"생각보다\", \"솔직히\" 같은 일상적 표현 활용\n- 과도한 전문 용어보다는 이해하기 쉬운 설명 우선\n- 개발자 커뮤니티에서 자주 나오는 정서와 경험 반영\n- \"이거 쓰다가 삽질함\", \"아 이거 진짜 괜찮네?\" 같은 솔직한 평가\n\n**보고서 구조 (반드시 이 형식을 지켜주세요):**\n\n\u003cREPORT_STRUCTURE_START\u003e\n## 🌟 오늘의 Tech Talk\n\n{{오늘 주목할 만한 기술 뉴스를 친근하게 요약}}\n\n## 📊 주요 뉴스 브리핑\n\n### 🚀 신기술 \u0026 서비스 \n{{새로 발표된 기술이나 서비스들}}\n- 실제로 써볼 만한지 솔직한 평가\n- 개발자 관점에서 본 장단점\n\n### 🏢 기업 \u0026 산업 동향\n{{주요 기업들의 소식과 업계 변화}}\n- 마케팅 vs 실제 가치 분석\n- 개발자들이 알아야 할 포인트\n\n### 🔍 트렌드 \u0026 인사이트\n{{업계 트렌드와 미래 전망}}\n- 개별 뉴스를 연결한 큰 그림\n- 우리에게 미칠 영향 예측\n\n## 💡 오늘의 정리\n\n{{핵심 포인트 1-2개를 친근하게 정리}}\n- 실무에 바로 도움되는 인사이트 포함\n\u003cREPORT_STRUCTURE_END\u003e\n\n**중요 출력 지침:**\n- 응답에 URL 접근 상태, 분석 과정, 내부 처리 정보 등의 디버그 내용을 포함하지 마세요\n- 바로 완성된 마크다운 보고서만 출력하세요\n- 응답은 반드시 \"## 🌟 오늘의 Tech Talk\"로 시작해야 합니다\n- 어떤 메타 정보나 과정 설명도 포함하지 말고, 순수한 커뮤니티 스타일 뉴스만 제공하세요\n- GitHub Flavored Markdown을 완벽히 지원하도록 작성하세요\n- ⚠️ \u003cREPORT_STRUCTURE_START\u003e와 \u003cREPORT_STRUCTURE_END\u003e 사이의 구조만 복제하세요 (태그 자체는 출력하지 마세요)\n\n**인용 규칙:**\n- 🚨 CRITICAL: 본문에 인용 없으면 완전히 실패입니다! 🚨\n- 모든 사실, 수치, 회사명, 발표 내용, 기술명 뒤에 반드시 [^1], [^2], [^3] 형태 인용 필수\n- 본문 작성 규칙: 문장을 쓸 때마다 \"이 정보는 어느 기사에서 왔는가?\"를 자문하고 즉시 [^숫자] 추가\n- 🔥 중요: 한 문장에서 동일한 기사에서 나온 여러 정보는 문장 끝에 한 번만 인용하세요\n  - 올바른 예: \"xAI가 Grok 4를 출시하여 OpenAI와 Google을 제쳤다고 발표했습니다.[^1]\"\n  - 잘못된 예: \"xAI[^1]가 Grok 4[^1]를 출시하여 OpenAI[^1]와 Google[^1]을 제쳤다고 발표했습니다.[^1]\"\n- 중요: 여러 개를 인용할 때 [^3, ^4] 금지! 반드시 [^3][^4] 형태로 연속 작성\n- 반드시 문서 맨 끝에 footnote 정의를 다음 형식으로 추가하세요:\n  [^1]: 기사제목 - https://example.com/article-url\n  [^2]: 기사제목 - https://example.com/article-url\n- 🔥 중요: footnote에서 링크 URL은 반드시 클릭 가능한 형태로 포함해야 합니다\n- 기업 이름은 피드 내용에 등장하는 기업들만 언급하고, 임의로 특정 기업을 예시로 들지 마세요",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여 일간 기술 뉴스 브리핑을 작성해주세요.\n\n다음은 최신 AI 관련 피드 데이터입니다:\n\n1. **Scaling Privacy Infrastructure for GenAI Product Innovation**\n   - 출처: Meta Engineering\n   - 링크: https://engineering.fb.com/2025/10/23/security/scaling-privacy-infrastructure-for-genai-product-innovation/\n\n2. **Docker + E2B: Building the Future of Trusted AI**\n   - 출처: Docker Blog\n   - 링크: https://www.docker.com/blog/docker-e2b-building-the-future-of-trusted-ai/\n\n3. **The road to better completions: Building a faster, smarter GitHub Copilot with a new custom model**\n   - 출처: GitHub Blog\n   - 링크: https://github.blog/ai-and-ml/github-copilot/the-road-to-better-completions-building-a-faster-smarter-github-copilot-with-a-new-custom-model/\n\n4. **Long Term Support Channel Update for ChromeOS**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2025/10/long-term-support-channel-update-for_23.html\n\n5. **Chrome for Android Update**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2025/10/chrome-for-android-update_23.html\n\n6. **Chrome Dev for Android Update**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2025/10/chrome-dev-for-android-update_23.html\n\n7. ** Beta Channel Update for ChromeOS / ChromeOS Flex**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2025/10/beta-channel-update-for-chromeos_22.html\n\n8. **Early Stable Update for Desktop**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2025/10/early-stable-update-for-desktop.html\n\n9. **Chrome Beta for Desktop Update**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2025/10/chrome-beta-for-desktop-update_22.html\n\n10. **New updates and more access to Google Earth AI**\n   - 출처: AI\n   - 링크: https://blog.google/technology/research/new-updates-and-more-access-to-google-earth-ai/\n\n11. **OpenAI acquires Software Applications Incorporated, maker of Sky**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/openai-acquires-software-applications-incorporated\n\n12. **Consensus accelerates research with GPT-5 and Responses API**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/consensus\n\n13. **AI in South Korea—OpenAI’s Economic Blueprint**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/south-korea-economic-blueprint\n\n14. **Work smarter with your company knowledge in ChatGPT**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/introducing-company-knowledge\n\n15. **Ovi: 오디오-비디오 생성을 위한 트윈 백본 크로스모달 융합**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23870\n\n16. **나는 jj에서 미래를 본다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23869\n\n17. **픽셀 기반 입력이 텍스트보다 나은가? Karpathy가 DeepSeek-OCR 논문에 대해 제기한 질문**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23868\n\n18. **캘린더, 연락처, 파일용 JMAP이 Stalwart에 추가됨**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23867\n\n19. **프랑스 전 대통령 사르코지가 선거자금 공모 혐의로 징역형을 시작하다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23866\n\n20. **그린란드 국영 통신사 Tusass, 프랑스 Eutelsat과 새로운 위성 인터넷 계약 체결**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23865\n\n21. **Agentic AI의 엔지니어링 복잡도**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23864\n\n22. **FIA 버그를 통해 맥스 베르스타펜의 여권과 개인 식별 정보를 접근한 사례**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23863\n\n23. **로컬 LLM의 보안 역설**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23862\n\n24. **우주로 데이터 센터를 옮기는 Starcloud의 도전**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23861\n\n25. **Research@ 2025: Our latest breakthroughs**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/technology/research/research-to-reality-2025/\n\n26. **Google Research: accelerating scientific breakthroughs to real-world impact**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/technology/research/google-research-team-tackles-big-challenges-with-science/\n\n27. **3 ways we’re helping make classrooms more accessible**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/outreach-initiatives/education/national-disability-employment-awareness-2025-support/\n\n28. **Announcing the 2025 Google PhD Fellows**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/outreach-initiatives/google-org/phd-fellowship-program-2025/\n\n29. **New updates and more access to Google Earth AI**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/technology/research/new-updates-and-more-access-to-google-earth-ai/\n\n30. **Our first carbon capture and storage project**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/outreach-initiatives/sustainability/first-carbon-capture-storage-project/\n\n31. **Celebrating 25 years of Google Ads**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/products/ads-commerce/google-ads-turns-25/\n\n32. **Building the Open Agent Ecosystem Together: Introducing OpenEnv**\n   - 출처: Hugging Face - Blog\n   - 링크: https://huggingface.co/blog/openenv\n\n33. **Dots and Boxes**\n   - 출처: Hacker News\n   - 링크: https://www.math.ucla.edu/~tom/Games/dots\u0026boxes.html\n\n34. **Ask HN: Would you use daily check-ins to build your dev brand?**\n   - 출처: Hacker News\n   - 링크: https://devcue.io\n\n35. **100 Lost Species, a journey through extinction**\n   - 출처: Hacker News\n   - 링크: https://www.100lostspecies.com/\n\n36. **MemMachine**\n   - 출처: Hacker News\n   - 링크: https://memmachine.ai\n\n37. **The Victorian Web**\n   - 출처: Hacker News\n   - 링크: https://www.victorianweb.org/victorian/index.html\n\n38. **Show HN: Efficient LLM fine-tuning with 65% less VRAM without quantization**\n   - 출처: Hacker News\n   - 링크: https://github.com/Mega4alik/peftee\n\n39. **Silicon-Optimized Inference Snaps**\n   - 출처: Hacker News\n   - 링크: https://canonical.com/blog/canonical-releases-inference-snaps\n\n40. **Federal Agents Plan a Crackdown in the San Francisco Bay Area**\n   - 출처: Hacker News\n   - 링크: https://www.nytimes.com/2025/10/22/us/border-patrol-san-francisco-bay-area.html\n\n41. **AuditCodex – Your AI-Powered Code and Security Auditor**\n   - 출처: Hacker News\n   - 링크: https://github.com/kg6-oss/kg6-codex\n\n42. **Best practices for text-focused websites (2020)**\n   - 출처: Hacker News\n   - 링크: https://seirdy.one/posts/2020/11/23/website-best-practices/\n\n43. **Memory Maps (MMAP) Deliver 25x Faster File Access in Go**\n   - 출처: Hacker News\n   - 링크: https://info.varnish-software.com/blog/how-memory-maps-mmap-deliver-25x-faster-file-access-in-go\n\n44. **Two days after OpenAI's Atlas, Microsoft launches a nearly identical AI browser**\n   - 출처: Hacker News\n   - 링크: https://techcrunch.com/2025/10/23/two-days-after-openais-atlas-microsoft-launches-a-nearly-identical-ai-browser/\n\n45. **HIV infection reprogrammes CD4T cells for quiescence and entry into latency**\n   - 출처: Hacker News\n   - 링크: https://www.nature.com/articles/s41564-025-02128-y\n\n46. **Tente, a Spanish Lego Competitor in the 70s**\n   - 출처: Hacker News\n   - 링크: https://en.wikipedia.org/wiki/Tente_(toy)\n\n47. **Physics and Engineering of orbital data centers**\n   - 출처: Hacker News\n   - 링크: https://twitter.com/Andercot/status/1981465914400002550\n\n48. **Building a programming language using SQLite's VM – Pt 1**\n   - 출처: Hacker News\n   - 링크: https://el-yawd.github.io/blog/2025/carrot/\n\n49. **United Kingdom Gov Reuse Library (Web Components)**\n   - 출처: Hacker News\n   - 링크: https://digitalgovernmenthub.org/library/united-kingdom-gov-reuse-library/\n\n50. **How much of individual success is attributable to free time?**\n   - 출처: Hacker News\n   - 링크: https://greyenlightenment.com/2025/01/28/how-much-of-individual-success-due-to-having-free-time/\n\n51. **Triton Developer Conference 2025 Talks [video]**\n   - 출처: Hacker News\n   - 링크: https://www.youtube.com/watch?v=s30WoZ7lx3w\n\n52. **White House List of Donors for President Trump's $300M Ballroom**\n   - 출처: Hacker News\n   - 링크: https://www.nytimes.com/2025/10/23/us/politics/trump-ballroom-donors-list.html\n\n53. **5 skills teams need to thrive in the age of AI (and how to build them)**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/teamwork/human-skills-for-the-age-of-ai\n\n54. **Improve agent quality with Insights Agent and Multi-turn Evals, now in LangSmith**\n   - 출처: LangChain Blog\n   - 링크: https://blog.langchain.com/insights-agent-multiturn-evals-langsmith/\n\n55. **Stability AI and EA Partner to Empower Artists, Designers, and Developers to Reimagine Game Development**\n   - 출처: News - Stability AI\n   - 링크: https://stability.ai/news/stability-ai-and-ea-partner-to-reimagine-game-development\n\n56. **The road to better completions: Building a faster, smarter GitHub Copilot with a new custom model**\n   - 출처: The latest on GitHub Copilot - The GitHub Blog\n   - 링크: https://github.blog/ai-and-ml/github-copilot/the-road-to-better-completions-building-a-faster-smarter-github-copilot-with-a-new-custom-model/\n\n57. **Open Source AI Week — How Developers and Contributors Are Advancing AI Innovation**\n   - 출처: NVIDIA Blog\n   - 링크: https://blogs.nvidia.com/blog/open-source-ai-week/\n\n58. **Fangs Out, Frames Up: ‘Vampire: The Masquerade — Bloodlines 2’ Leads a Killer GFN Thursday**\n   - 출처: NVIDIA Blog\n   - 링크: https://blogs.nvidia.com/blog/geforce-now-thursday-vampire-the-masquerades-bloodlines-2/\n\n\n\n**분석 지침:**\n- 반드시 위에 명시된 마크다운 헤더 구조를 정확히 따르세요\n- 각 섹션은 2-3개 포인트로 제한\n- 구체적인 수치와 데이터 활용으로 신뢰성 확보\n\n**🌟 URL 컨텍스트 활용 지침:**\n- 제공된 URL의 내용을 적극적으로 활용하여 깊이 있는 분석을 제공하세요\n- 단순 요약이 아닌, 기사의 핵심 인사이트와 숨겨진 의미를 발굴하세요\n- 여러 기사 간의 연결점을 찾아 큰 그림을 그려주세요\n- 기술적 세부사항과 실제 영향력을 균형있게 다루세요\n\n**🎯 독자 재미 극대화 지침:**\n- 딱딱한 기술 뉴스를 생동감 있게 전달하세요\n- 적절한 비유와 실생활 예시로 복잡한 개념을 쉽게 설명하세요\n- 놀라운 사실이나 의외의 관점을 제시하여 호기심을 자극하세요\n- 스토리텔링 요소를 활용하여 뉴스를 하나의 이야기로 엮어주세요\n- 각 프리셋의 톤에 맞는 위트와 유머를 적절히 활용하세요\n\n**🚨 인용 검수 체크리스트:**\n1. 본문의 모든 사실, 수치, 기업명, 기술명에 [^숫자] 인용이 있는가?\n2. 문서 맨 끝에 모든 footnote 정의가 있고, 각각 클릭 가능한 URL을 포함하는가?\n3. [^1]: 기사제목 - https://링크 형식이 정확한가?\n4. 본문에서 언급한 모든 [^숫자]에 대응하는 footnote가 있는가?\n- 최종 제출 전 필수 검토: 위 체크리스트를 모두 확인하세요",
+  "articles": [
+    {
+      "title": "Scaling Privacy Infrastructure for GenAI Product Innovation",
+      "link": "https://engineering.fb.com/2025/10/23/security/scaling-privacy-infrastructure-for-genai-product-innovation/",
+      "source": "Meta Engineering",
+      "category": "tech",
+      "publishedAt": "2025-10-23T08:00:00Z",
+      "description": "\u003cp\u003eHow does Meta empower its product teams to harness GenAI’s power responsibly? In this post, we delve into how Meta addresses the challenges of safeguarding data in the GenAI era by scaling its Privacy Aware Infrastructure (PAI), with a particular focus on Meta’s AI glasses as an example GenAI use case.  We’ll describe in detail [...]\u003c/p\u003e\n\u003cp\u003e\u003ca class=\"btn btn-secondary understrap-read-more-link\" href=\"https://engineering.fb.com/2025/10/23/security/scaling-privacy-infrastructure-for-genai-product-innovation/\"\u003eRead More...\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eThe post \u003ca rel=\"nofollow\" href=\"https://engineering.fb.com/2025/10/23/security/scaling-privacy-infrastructure-for-genai-product-innovation/\"\u003eScaling Privacy Infrastructure for GenAI Product Innovation\u003c/a\u003e appeared first on \u003ca rel=\"nofollow\" href=\"https://engineering.fb.com\"\u003eEngineering at Meta\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Docker + E2B: Building the Future of Trusted AI",
+      "link": "https://www.docker.com/blog/docker-e2b-building-the-future-of-trusted-ai/",
+      "source": "Docker Blog",
+      "category": "tech",
+      "publishedAt": "2025-10-23T13:59:00Z",
+      "description": "Trusted Software Starts Here The era of agents is here. Some teams are experimenting, others are just getting started, and a few are already running agents in production. But one challenge stands out: trust. Trust that your agents will act securely. Over 20 million developers already rely on Docker to build and ship software safely..."
+    },
+    {
+      "title": "The road to better completions: Building a faster, smarter GitHub Copilot with a new custom model",
+      "link": "https://github.blog/ai-and-ml/github-copilot/the-road-to-better-completions-building-a-faster-smarter-github-copilot-with-a-new-custom-model/",
+      "source": "GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2025-10-23T18:31:12Z",
+      "description": "\u003cp\u003eFind out about the latest custom models powering the completions experience in GitHub Copilot. \u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/ai-and-ml/github-copilot/the-road-to-better-completions-building-a-faster-smarter-github-copilot-with-a-new-custom-model/\"\u003eThe road to better completions: Building a faster, smarter GitHub Copilot with a new custom model\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Long Term Support Channel Update for ChromeOS",
+      "link": "http://chromereleases.googleblog.com/2025/10/long-term-support-channel-update-for_23.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2025-10-23T11:20:00-07:00",
+      "description": "A new LTS  version 138.0.7204.295 (Platform Version: 16295.80.0), is being rolled out for most ChromeOS devices. \u003cbr /\u003e\u003cbr /\u003eThis version includes selected security fixes including:\u003cbr /\u003e\u003cbr /\u003e\u003ca href=\"https://g-issues.chromium.org/issues/438038775\"\u003e438038775\u003c/a\u003e  High CVE-2025-10502 Heap buffer overflow in ANGLE.\u003cbr /\u003e\u003ca href=\"https://issuetracker.google.com/443196747\"\u003e443196747\u003c/a\u003e  High CVE-2025-11458 Heap buffer overflow in Sync.\u003cbr /\u003e\u003cbr /\u003eRelease notes for LTS-138 can be found\u003ca href=\"https://support.google.com/chrome/a/answer/12239814\"\u003e here\u003c/a\u003e \u003cbr /\u003e\u003cbr /\u003eWant to know more about Long-term Support? Click\u003ca href=\"https://support.google.com/chrome/a/answer/11333726\"\u003e here\u003c/a\u003e\u003cdiv\u003e\u003cbr /\u003e\u003c/div\u003e\u003cdiv\u003eAndy Wu\u003cbr /\u003eGoogle Chrome OS\u003cspan id=\"docs-internal-guid-84af325b-7fff-f709-1be4-194b2d6550eb\"\u003e\u003cdiv\u003e\u003cspan style=\"font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e\u003cbr /\u003e\u003c/span\u003e\u003c/div\u003e\u003c/span\u003e\u003c/div\u003e"
+    },
+    {
+      "title": "Chrome for Android Update",
+      "link": "http://chromereleases.googleblog.com/2025/10/chrome-for-android-update_23.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2025-10-23T09:30:00-07:00",
+      "description": "\u003cp\u003e\u0026nbsp;Hi, everyone! We've just released Chrome 142 (142.0.7444.48) for Android to a small percentage of users. It'll become\u0026nbsp;\u003ca href=\"https://play.google.com/store/apps/details?id=com.android.chrome\"\u003eavailable on Google Play\u003c/a\u003e\u0026nbsp;over the next few days. You can find more details about early Stable releases\u0026nbsp;\u003ca href=\"https://developer.chrome.com/blog/early-stable/\"\u003ehere\u003c/a\u003e.\u003c/p\u003eThis release includes stability and performance improvements. You can see a full list of the changes in the\u0026nbsp;\u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/141.0.7390.122..142.0.7444.48?pretty=fuller\u0026amp;n=10000\"\u003eGit log\u003c/a\u003e. If you find a new issue, please let us know by\u0026nbsp;\u003ca href=\"https://code.google.com/p/chromium/issues/entry?template=Android%20Issue\"\u003efiling a bug\u003c/a\u003e.\u003cbr /\u003e\u003cbr /\u003eKrishna Govind\u003cbr /\u003e\u003ca href=\"https://www.google.com/chrome/\"\u003eGoogle Chrome\u003c/a\u003e"
+    },
+    {
+      "title": "Chrome Dev for Android Update",
+      "link": "http://chromereleases.googleblog.com/2025/10/chrome-dev-for-android-update_23.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2025-10-23T06:13:00.001-07:00",
+      "description": "\u003cp\u003eHi everyone! We've just released Chrome Dev 143 (143.0.7487.2) for Android. It's now available on \u003ca href=\"https://play.google.com/store/apps/details?id=com.chrome.dev\"\u003eGoogle Play\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eYou can see a partial list of the changes in the \u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/143.0.7473.2..143.0.7487.2?pretty=fuller\u0026amp;n=10000\"\u003eGit log\u003c/a\u003e. For details on new features, check out the \u003ca href=\"https://blog.chromium.org\"\u003eChromium blog\u003c/a\u003e, and for details on web platform updates, check \u003ca href=\"https://www.chromestatus.com/features#milestone%3D143\"\u003ehere\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eIf you find a new issue, please let us know by \u003ca href=\"https://code.google.com/p/chromium/issues/entry?template=Android%20Issue\"\u003efiling a bug\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eChrome Release Team\u003cbr /\u003e\u003ca href=\"https://www.google.com/chrome\"\u003e\u003c/a\u003e\u003ca href=\"https://www.google.com/chrome\"\u003eGoogle Chrome\u003c/a\u003e\u003c/p\u003e"
+    },
+    {
+      "title": " Beta Channel Update for ChromeOS / ChromeOS Flex",
+      "link": "http://chromereleases.googleblog.com/2025/10/beta-channel-update-for-chromeos_22.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2025-10-22T20:01:00-07:00",
+      "description": "\u003cp\u003e\u003cspan style=\"font-family: Arial, sans-serif; white-space-collapse: preserve;\"\u003eThe Beta channel is being updated to OS version 16433.24.0 (Browser version 142.0.7444.40) for most ChromeOS devices.\u003c/span\u003e\u003c/p\u003e\u003cspan id=\"docs-internal-guid-15021140-7fff-d1eb-d940-acec6327e957\"\u003e\u003cp dir=\"ltr\" style=\"line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: Arial, sans-serif; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003eIf you find new issues, please let us know one of the following ways:\u003c/span\u003e\u003c/p\u003e\u003cbr /\u003e\u003col style=\"margin-bottom: 0; margin-top: 0; padding-inline-start: 48px;\"\u003e\u003cli aria-level=\"1\" dir=\"ltr\" style=\"color: #222222; font-family: Roboto, sans-serif; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; list-style-type: decimal; vertical-align: baseline; white-space: pre;\"\u003e\u003cp dir=\"ltr\" role=\"presentation\" style=\"line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003ca href=\"https://bugs.chromium.org/p/chromium/issues/list\" style=\"text-decoration-line: none;\"\u003e\u003cspan style=\"color: #4a86e8; font-family: Arial, sans-serif; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-wrap-mode: wrap; vertical-align: baseline;\"\u003eFile a bug\u003c/span\u003e\u003c/a\u003e\u003c/p\u003e\u003c/li\u003e\u003cli aria-level=\"1\" dir=\"ltr\" style=\"color: #222222; font-family: Roboto, sans-serif; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; list-style-type: decimal; vertical-align: baseline; white-space: pre;\"\u003e\u003cp dir=\"ltr\" role=\"presentation\" style=\"line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: Arial, sans-serif; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-wrap-mode: wrap; vertical-align: baseline;\"\u003eVisit our ChromeOS communities\u003c/span\u003e\u003c/p\u003e\u003c/li\u003e\u003col style=\"margin-bottom: 0; margin-top: 0; padding-inline-start: 48px;\"\u003e\u003cli aria-level=\"2\" dir=\"ltr\" style=\"color: #222222; font-family: Roboto, sans-serif; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; list-style-type: lower-alpha; vertical-align: baseline; white-space: pre;\"\u003e\u003cp dir=\"ltr\" role=\"presentation\" style=\"line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: Arial, sans-serif; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-wrap-mode: wrap; vertical-align: baseline;\"\u003eGeneral:\u003c/span\u003e\u003ca href=\"https://support.google.com/chromebook/community/?hl=en\u0026amp;gpf=%23!forum%2Fchromebook-central\" style=\"text-decoration-line: none;\"\u003e\u003cspan style=\"color: #222222; font-family: Arial, sans-serif; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-wrap-mode: wrap; vertical-align: baseline;\"\u003e \u003c/span\u003e\u003cspan style=\"color: #4184f3; font-family: Arial, sans-serif; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-wrap-mode: wrap; vertical-align: baseline;\"\u003eChromebook Help Community\u003c/span\u003e\u003c/a\u003e\u003c/p\u003e\u003c/li\u003e\u003cli aria-level=\"2\" dir=\"ltr\" style=\"color: #222222; font-family: Roboto, sans-serif; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; list-style-type: lower-alpha; vertical-align: baseline; white-space: pre;\"\u003e\u003cp dir=\"ltr\" role=\"presentation\" style=\"line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: Arial, sans-serif; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-wrap-mode: wrap; vertical-align: baseline;\"\u003eBeta Specific:\u003c/span\u003e\u003ca href=\"https://support.google.com/chromeos-beta/community\" style=\"text-decoration-line: none;\"\u003e\u003cspan style=\"color: #222222; font-family: Arial, sans-serif; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-wrap-mode: wrap; vertical-align: baseline;\"\u003e \u003c/span\u003e\u003cspan style=\"color: #4184f3; font-family: Arial, sans-serif; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-wrap-mode: wrap; vertical-align: baseline;\"\u003eChromeOS Beta Help Community\u003c/span\u003e\u003c/a\u003e\u003c/p\u003e\u003c/li\u003e\u003c/ol\u003e\u003cli aria-level=\"1\" dir=\"ltr\" style=\"color: #222222; font-family: Roboto, sans-serif; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; list-style-type: decimal; vertical-align: baseline; white-space: pre;\"\u003e\u003cp dir=\"ltr\" role=\"presentation\" style=\"line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003ca href=\"https://support.google.com/chrome/answer/95315?hl=en\u0026amp;co=GENIE.Platform%3DDesktop\" style=\"text-decoration-line: none;\"\u003e\u003cspan style=\"color: black; font-family: Arial, sans-serif; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-wrap-mode: wrap; vertical-align: baseline;\"\u003eReport an issue or send feedback on Chrome\u003c/span\u003e\u003c/a\u003e\u003c/p\u003e\u003c/li\u003e\u003cli aria-level=\"1\" dir=\"ltr\" style=\"color: #222222; font-family: Roboto, sans-serif; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; list-style-type: decimal; vertical-align: baseline; white-space: pre;\"\u003e\u003cp dir=\"ltr\" role=\"presentation\" style=\"line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"color: black; font-family: Arial, sans-serif; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-wrap-mode: wrap; vertical-align: baseline;\"\u003eInterested in switching channels?\u003c/span\u003e\u003ca href=\"https://support.google.com/chromebook/answer/1086915\" style=\"text-decoration-line: none;\"\u003e\u003cspan style=\"color: black; font-family: Arial, sans-serif; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-wrap-mode: wrap; vertical-align: baseline;\"\u003e \u003c/span\u003e\u003cspan style=\"color: #4184f3; font-family: Arial, sans-serif; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-wrap-mode: wrap; vertical-align: baseline;\"\u003eFind out how.\u003c/span\u003e\u003c/a\u003e\u003c/p\u003e\u003c/li\u003e\u003c/ol\u003e\u003cbr /\u003e\u003cp dir=\"ltr\" style=\"line-height: 1.656; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: Arial, sans-serif; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003eAndy Wu\u003c/span\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height: 1.656; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: Arial, sans-serif; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003eGoogle ChromeOS\u003c/span\u003e\u003c/p\u003e\u003cdiv\u003e\u003cspan style=\"font-family: Arial, sans-serif; font-size: 11pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e\u003cbr /\u003e\u003c/span\u003e\u003c/div\u003e\u003c/span\u003e"
+    },
+    {
+      "title": "Early Stable Update for Desktop",
+      "link": "http://chromereleases.googleblog.com/2025/10/early-stable-update-for-desktop.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2025-10-22T17:06:00-07:00",
+      "description": "\u003cp\u003e\u0026nbsp;\u003cspan style=\"color: #666666; font-family: Arial; font-size: 13pt; font-variant-east-asian: normal; font-variant-numeric: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003eThe Stable channel has been updated to \u003c/span\u003e\u003cspan style=\"background-color: white; color: #666666; font-family: Arial; font-size: 13pt; font-variant-east-asian: normal; font-variant-numeric: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e142.0.7390.52\u003c/span\u003e\u003cspan style=\"color: #666666; font-family: Arial; font-size: 13pt; font-variant-east-asian: normal; font-variant-numeric: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e for Windows and \u003c/span\u003e\u003cspan style=\"background-color: white; color: #666666; font-family: Arial; font-size: 17.3333px; white-space-collapse: preserve;\"\u003e142.0.7390.53 for \u003c/span\u003e\u003cspan style=\"color: #666666; font-family: Arial; font-size: 13pt; font-variant-east-asian: normal; font-variant-numeric: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003eMac as part of our early stable release to a \u003cspan style=\"background-color: white;\"\u003esmall percentage of users. \u003c/span\u003eA full list of changes in this build is available in the\u003c/span\u003e\u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/141.0.7390.123..142.0.7444.53?pretty=fuller\u0026amp;n=10000\" style=\"color: #4184f3; font-family: Roboto, sans-serif; font-size: 17px; text-decoration-line: none;\"\u003e\u003cspan style=\"color: #666666; font-family: Arial; font-size: 13pt; font-variant-east-asian: normal; font-variant-numeric: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e \u003c/span\u003e\u003cspan style=\"color: black; font-family: Arial; font-size: 13pt; font-variant-east-asian: normal; font-variant-numeric: normal; font-weight: 700; vertical-align: baseline; white-space-collapse: preserve;\"\u003elog\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"color: #666666; font-family: Arial; font-size: 13pt; font-variant-east-asian: normal; font-variant-numeric: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e.\u003c/span\u003e\u003c/p\u003e\u003cdiv class=\"post-body\" style=\"color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 14px; width: 660px;\"\u003e\u003cdiv class=\"post-content post-original\" itemprop=\"articleBody\" style=\"font-size: 17px; line-height: 32px; margin: 25px 0px 36px; overflow-wrap: break-word;\"\u003e\u003cp dir=\"ltr\" style=\"line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"color: #666666; font-family: Arial; font-size: 13pt; font-variant-east-asian: normal; font-variant-numeric: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003eYou can find more details about early Stable releases \u003c/span\u003e\u003ca href=\"https://developer.chrome.com/blog/early-stable/\" style=\"color: #4184f3; text-decoration-line: none;\"\u003e\u003cspan style=\"color: #1155cc; font-family: Arial; font-size: 13pt; font-variant-east-asian: normal; font-variant-numeric: normal; text-decoration-line: underline; text-decoration-skip-ink: none; vertical-align: baseline; white-space-collapse: preserve;\"\u003ehere\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"color: #666666; font-family: Arial; font-size: 13pt; font-variant-east-asian: normal; font-variant-numeric: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e.\u003c/span\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height: 1.38; margin-bottom: 13pt; margin-top: 13pt;\"\u003e\u003cspan style=\"color: #666666; font-family: arial; vertical-align: baseline; white-space-collapse: preserve;\"\u003eInterested in switching release channels? \u0026nbsp;Find out how \u003c/span\u003e\u003ca href=\"https://www.chromium.org/getting-involved/dev-channel\" style=\"color: #4184f3; font-family: Tinos; text-decoration-line: none; white-space-collapse: preserve;\"\u003e\u003cspan style=\"color: black; font-family: arial; font-weight: 700; vertical-align: baseline;\"\u003ehere\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"color: #666666; font-family: arial; vertical-align: baseline; white-space-collapse: preserve;\"\u003e. If you find a new issue, please let us know by \u003c/span\u003e\u003ca href=\"https://crbug.com/\" style=\"color: #4184f3; font-family: Tinos; text-decoration-line: none; white-space-collapse: preserve;\"\u003e\u003cspan style=\"color: black; font-family: arial; font-weight: 700; vertical-align: baseline;\"\u003efiling a bug\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"color: #666666; font-family: arial; vertical-align: baseline; white-space-collapse: preserve;\"\u003e. \u003c/span\u003e\u003cspan style=\"background-color: white; color: #666666; font-family: arial; vertical-align: baseline; white-space-collapse: preserve;\"\u003eThe \u003c/span\u003e\u003ca href=\"https://support.google.com/chrome/community\" style=\"color: #4184f3; font-family: Tinos; text-decoration-line: none; white-space-collapse: preserve;\"\u003e\u003cspan style=\"background-color: white; color: black; font-family: arial; font-weight: 700; vertical-align: baseline;\"\u003ecommunity help forum\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"background-color: white; color: #666666; font-family: arial; vertical-align: baseline; white-space-collapse: preserve;\"\u003e is also a great place to reach out for help or learn about common issues.\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" face=\"Roboto, sans-serif\"\u003e\u003cbr style=\"content: \u0026quot; \u0026quot;; display: block; padding: 4px;\" /\u003e\u003c/span\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"color: #666666; font-family: Arial; font-size: 13pt; white-space-collapse: preserve;\"\u003eSrinivas Sista\u003c/span\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"color: #666666; font-family: Arial; font-size: 13pt; white-space-collapse: preserve;\"\u003eGoogle Chrome\u003c/span\u003e\u003c/p\u003e\u003c/div\u003e\u003c/div\u003e"
+    },
+    {
+      "title": "Chrome Beta for Desktop Update",
+      "link": "http://chromereleases.googleblog.com/2025/10/chrome-beta-for-desktop-update_22.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2025-10-22T16:43:00.001-07:00",
+      "description": "\u003cp\u003eThe Beta channel has been updated to 142.0.7444.53 for Windows, Mac and Linux.\u003c/p\u003e\u003cp\u003eA partial list of changes is available in the \u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/142.0.7444.34..142.0.7444.53?pretty=fuller\u0026amp;n=10000\"\u003eGit log\u003c/a\u003e. Interested in \u003ca href=\"https://www.chromium.org/getting-involved/dev-channel/\"\u003eswitching\u003c/a\u003e release channels? Find out \u003ca href=\"https://www.chromium.org/getting-involved/dev-channel/\"\u003ehow\u003c/a\u003e. If you find a new issue, please let us know by \u003ca href=\"https://crbug.com/\"\u003efiling a bug\u003c/a\u003e. The \u003ca href=\"https://productforums.google.com/forum/#!forum/chrome\"\u003ecommunity help forum\u003c/a\u003e is also a great place to reach out for help or learn about common issues.\u003c/p\u003e\u003cp\u003eChrome Release Team\u003cbr /\u003e\u003ca href=\"https://www.google.com/chrome\"\u003e\u003c/a\u003e\u003ca href=\"https://www.google.com/chrome\"\u003eGoogle Chrome\u003c/a\u003e\u003c/p\u003e"
+    },
+    {
+      "title": "New updates and more access to Google Earth AI",
+      "link": "https://blog.google/technology/research/new-updates-and-more-access-to-google-earth-ai/",
+      "source": "AI",
+      "category": "tech",
+      "publishedAt": "2025-10-23T15:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/hero_image_Earth_AI.max-600x600.format-webp.webp\"\u003eEarth AI is helping enterprises and cities with everything from environmental monitoring to disaster response."
+    },
+    {
+      "title": "OpenAI acquires Software Applications Incorporated, maker of Sky",
+      "link": "https://openai.com/index/openai-acquires-software-applications-incorporated",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2025-10-23T10:00:00Z",
+      "description": "OpenAI has acquired Software Applications Incorporated, maker of Sky—a natural language interface for Mac that brings AI directly into your desktop experience. Together, we’re integrating Sky’s deep macOS capabilities into ChatGPT to make AI more intuitive, contextual, and action-oriented."
+    },
+    {
+      "title": "Consensus accelerates research with GPT-5 and Responses API",
+      "link": "https://openai.com/index/consensus",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2025-10-23T09:00:00Z",
+      "description": "Consensus uses GPT-5 and OpenAI’s Responses API to power a multi-agent research assistant that reads, analyzes, and synthesizes evidence in minutes—helping over 8 million researchers accelerate scientific discovery."
+    },
+    {
+      "title": "AI in South Korea—OpenAI’s Economic Blueprint",
+      "link": "https://openai.com/index/south-korea-economic-blueprint",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2025-10-23T00:00:00Z",
+      "description": "OpenAI's Korea Economic Blueprint outlines how South Korea can scale trusted AI through sovereign capabilities and strategic partnerships to drive growth."
+    },
+    {
+      "title": "Work smarter with your company knowledge in ChatGPT",
+      "link": "https://openai.com/index/introducing-company-knowledge",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2025-10-23T00:00:00Z",
+      "description": "Company knowledge brings context from your apps into ChatGPT for answers specific to your business, with clear citations, security, privacy, and admin controls. Available now for Business, Enterprise, and Edu users."
+    },
+    {
+      "title": "Ovi: 오디오-비디오 생성을 위한 트윈 백본 크로스모달 융합",
+      "link": "https://news.hada.io/topic?id=23870",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-10-24T04:33:16+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e이 프로젝트는 텍스트나 이미지 입력으로부터 \u003cstrong\u003e동시에 오디오와 비디오를 생성\u003c/strong\u003e하는 AI 모델로, Character AI가 개발한 \u003cstrong\u003eOvi\u003c/strong\u003e의 기능을 공개함\u003c/li\u003e\n\u003cli\u003eOvi는 자체 구축한 \u003cstrong\u003e5B 규모의 오디오 브랜치\u003c/strong\u003e와 Wan2.2 기반의 비디오 브랜치를 결합해, 고품질의 동기화된...\u003c/p\u003e"
+    },
+    {
+      "title": "나는 jj에서 미래를 본다",
+      "link": "https://news.hada.io/topic?id=23869",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-10-24T03:37:53+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e새로운 \u003cstrong\u003e버전 관리 시스템 jj\u003c/strong\u003e는 Rust로 작성된 프로젝트로, 기존 Git의 한계를 보완하며 점진적 도입이 가능한 구조를 지닌 도구임\u003c/li\u003e\n\u003cli\u003e저자는 과거 Rust의 성장 가능성을 분석했던 경험을 바탕으로, jj 역시 \u003cstrong\u003e시장 적합성·전문 팀·사용자 기반\u003c/strong\u003e 측면에서 유사한 잠재력을...\u003c/p\u003e"
+    },
+    {
+      "title": "픽셀 기반 입력이 텍스트보다 나은가? Karpathy가 DeepSeek-OCR 논문에 대해 제기한 질문",
+      "link": "https://news.hada.io/topic?id=23868",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-10-24T03:34:53+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e최근 공개된 \u003cstrong\u003eDeepSeek-OCR 논문\u003c/strong\u003e은 대형 언어 모델(LLM)이 텍스트 대신 \u003cstrong\u003e이미지 픽셀\u003c/strong\u003e을 직접 입력으로 받아 학습할 수 있는 가능성을 탐구함\u003c/li\u003e\n\u003cli\u003e이 접근법은 전통적인 \u003cstrong\u003eOCR(광학 문자 인식)\u003c/strong\u003e 단계를 생략하고, 시각적 정보를 그대로 모델에 전달하는 방식...\u003c/p\u003e"
+    },
+    {
+      "title": "캘린더, 연락처, 파일용 JMAP이 Stalwart에 추가됨",
+      "link": "https://news.hada.io/topic?id=23867",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-10-24T02:39:34+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e오픈소스 협업 서버 \u003cstrong\u003eStalwart\u003c/strong\u003e가 4년간의 개발 끝에 \u003cstrong\u003e캘린더, 연락처, 파일 저장 및 공유용 JMAP\u003c/strong\u003e을 완전 구현하며 새로운 이정표를 달성\u003c/li\u003e\n\u003cli\u003e이번 릴리스로 Stalwart는 \u003cstrong\u003eJMAP 전체 프로토콜군을 완전 지원하는 최초의 서버\u003c/strong\u003e가 되었으며, 이메일을 넘어 협...\u003c/p\u003e"
+    },
+    {
+      "title": "프랑스 전 대통령 사르코지가 선거자금 공모 혐의로 징역형을 시작하다",
+      "link": "https://news.hada.io/topic?id=23866",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-10-24T02:36:33+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e프랑스의 전 대통령이자 보수 정치인인 니콜라 \u003cstrong\u003e사르코지\u003c/strong\u003e가 리비아 자금으로 선거자금을 조달한 혐의로 \u003cstrong\u003e5년형을 선고받고 수감 생활을 시작\u003c/strong\u003e함\u003c/li\u003e\n\u003cli\u003e그는 \u003cstrong\u003e무아마르 카다피 정권의 자금\u003c/strong\u003e을 이용해 2007년 대선 자금을 마련한 혐의로 유죄 판결을 받았으며,...\u003c/p\u003e"
+    },
+    {
+      "title": "그린란드 국영 통신사 Tusass, 프랑스 Eutelsat과 새로운 위성 인터넷 계약 체결",
+      "link": "https://news.hada.io/topic?id=23865",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-10-24T00:33:59+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e그린란드의 국영 통신사 \u003cstrong\u003eTusass\u003c/strong\u003e가 프랑스의 \u003cstrong\u003eEutelsat\u003c/strong\u003e과 협력해 새로운 위성 인터넷 서비스를 도입하며, 기존의 미국 \u003cstrong\u003eStarlink\u003c/strong\u003e 대안을 선택함\u003c/li\u003e\n\u003cli\u003e이번 계약을 통해 \u003cstrong\u003eOneWeb 위성망\u003c/strong\u003e을 활용, 해저 케이블이나 무선망이 닿지 않는 지역에...\u003c/p\u003e"
+    },
+    {
+      "title": "Agentic AI의 엔지니어링 복잡도",
+      "link": "https://news.hada.io/topic?id=23864",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-10-23T22:01:52+09:00",
+      "description": "\u003cp\u003e작년부터 급부상한 Agentic AI는 이제 기술 논의의 중심에 있습니다. MCP, Multi-Agent, Agentic Loop 등 개념이 속속 등장하며 AI 엔지니어링의 새로운 패러다임을 만들고 있지만, 그 이면에는 전통적인 소프트웨어 엔지니어링의 복잡성이 그대로 존재합니다.\u003c/p\u003e\n\u003cp\u003e저자는 99% LLM 기반 제품을 개발하며, MCP의 네"
+    },
+    {
+      "title": "FIA 버그를 통해 맥스 베르스타펜의 여권과 개인 식별 정보를 접근한 사례",
+      "link": "https://news.hada.io/topic?id=23863",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-10-23T17:33:06+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e보안 연구자들이 \u003cstrong\u003eFIA의 드라이버 분류 웹사이트 취약점\u003c/strong\u003e을 통해 F1 드라이버들의 민감한 정보를 접근할 수 있었음을 발견\u003c/li\u003e\n\u003cli\u003e해당 시스템은 \u003cstrong\u003eFIA Super Licence\u003c/strong\u003e와 별도로 운영되며, 드라이버가 자신의 등급(브론즈/실버/골드/플래티넘)을 신청하거나 갱신할 수 있는 포털...\u003c/p\u003e"
+    },
+    {
+      "title": "로컬 LLM의 보안 역설",
+      "link": "https://news.hada.io/topic?id=23862",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-10-23T15:14:10+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e로컬 환경에서 \u003cstrong\u003e프라이버시 보호\u003c/strong\u003e를 위해 LLM을 사용하는 개발자들이 오히려 \u003cstrong\u003e보안 취약성\u003c/strong\u003e에 노출될 수 있다는 연구 결과가 제시됨\u003c/li\u003e\n\u003cli\u003e연구팀은 \u003ccode\u003egpt-oss-20b\u003c/code\u003e 모델을 대상으로 한 \u003cstrong\u003eOpenAI Red‑Teaming Challenge\u003c/strong\u003e 실험에서, 로컬 모델이 공격...\u003c/p\u003e"
+    },
+    {
+      "title": "우주로 데이터 센터를 옮기는 Starcloud의 도전",
+      "link": "https://news.hada.io/topic?id=23861",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-10-23T15:01:25+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e인공지능 위성을 통해 \u003cstrong\u003e우주 기반 데이터 센터\u003c/strong\u003e를 구축하려는 새로운 시도가 진행 중이며, 이는 지구상의 에너지 소비와 냉각 문제를 해결하려는 혁신적 접근임\u003c/li\u003e\n\u003cli\u003eStarcloud는 \u003cstrong\u003eNVIDIA Inception 프로그램\u003c/strong\u003e에 참여 중인 스타트업으로, 첫 위성에 \u003cstrong\u003eNVIDIA H100 GPU...\u003c/p\u003e"
+    },
+    {
+      "title": "Research@ 2025: Our latest breakthroughs",
+      "link": "https://blog.google/technology/research/research-to-reality-2025/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-10-23T17:00:00Z"
+    },
+    {
+      "title": "Google Research: accelerating scientific breakthroughs to real-world impact",
+      "link": "https://blog.google/technology/research/google-research-team-tackles-big-challenges-with-science/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-10-23T16:30:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Quantum_Hero_Blue.max-600x600.format-webp.webp\"\u003eHere’s how Google Research’s approach is helping solve challenges in areas that affect so many people."
+    },
+    {
+      "title": "3 ways we’re helping make classrooms more accessible",
+      "link": "https://blog.google/outreach-initiatives/education/national-disability-employment-awareness-2025-support/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-10-23T16:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/2503-EDU-NDEAM-BlogHeader-2096x.max-600x600.format-webp.webp\"\u003eLearn more about Google’s efforts supporting National Disability Employment Awareness Month."
+    },
+    {
+      "title": "Announcing the 2025 Google PhD Fellows",
+      "link": "https://blog.google/outreach-initiatives/google-org/phd-fellowship-program-2025/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-10-23T16:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Hero_ynL3USh.max-600x600.format-webp.webp\"\u003eToday, we are announcing the recipients of the 2025 Google PhD Fellowship Program."
+    },
+    {
+      "title": "New updates and more access to Google Earth AI",
+      "link": "https://blog.google/technology/research/new-updates-and-more-access-to-google-earth-ai/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-10-23T15:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/hero_image_Earth_AI.max-600x600.format-webp.webp\"\u003eEarth AI is helping enterprises and cities with everything from environmental monitoring to disaster response."
+    },
+    {
+      "title": "Our first carbon capture and storage project",
+      "link": "https://blog.google/outreach-initiatives/sustainability/first-carbon-capture-storage-project/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-10-23T14:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Data_Centers_CCS_Hero_Thumbnail.max-600x600.format-webp.webp\"\u003eAn overview of our support for a first-of-its-kind gas power plant with carbon capture and storage."
+    },
+    {
+      "title": "Celebrating 25 years of Google Ads",
+      "link": "https://blog.google/products/ads-commerce/google-ads-turns-25/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-10-23T13:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/GA_25_Anthem_Keyword_Thumbnail.max-600x600.format-webp.webp\"\u003eAs Google Ads turns 25, Vidhya Srinivasan reflects on the past 25 years and looks ahead at the future of digital marketing."
+    },
+    {
+      "title": "Building the Open Agent Ecosystem Together: Introducing OpenEnv",
+      "link": "https://huggingface.co/blog/openenv",
+      "source": "Hugging Face - Blog",
+      "category": "tech",
+      "publishedAt": "2025-10-23T00:00:00Z"
+    },
+    {
+      "title": "Dots and Boxes",
+      "link": "https://www.math.ucla.edu/~tom/Games/dots\u0026boxes.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-23T22:05:28Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.math.ucla.edu/~tom/Games/dots\u0026boxes.html\"\u003ehttps://www.math.ucla.edu/~tom/Games/dots\u0026boxes.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45687926\"\u003ehttps://news.ycombinator.com/item?id=45687926\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Ask HN: Would you use daily check-ins to build your dev brand?",
+      "link": "https://devcue.io",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-23T22:04:45Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://devcue.io\"\u003ehttps://devcue.io\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45687919\"\u003ehttps://news.ycombinator.com/item?id=45687919\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "100 Lost Species, a journey through extinction",
+      "link": "https://www.100lostspecies.com/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-23T22:03:21Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.100lostspecies.com/\"\u003ehttps://www.100lostspecies.com/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45687902\"\u003ehttps://news.ycombinator.com/item?id=45687902\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "MemMachine",
+      "link": "https://memmachine.ai",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-23T22:02:59Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://memmachine.ai\"\u003ehttps://memmachine.ai\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45687895\"\u003ehttps://news.ycombinator.com/item?id=45687895\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Victorian Web",
+      "link": "https://www.victorianweb.org/victorian/index.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-23T22:02:35Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.victorianweb.org/victorian/index.html\"\u003ehttps://www.victorianweb.org/victorian/index.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45687888\"\u003ehttps://news.ycombinator.com/item?id=45687888\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Efficient LLM fine-tuning with 65% less VRAM without quantization",
+      "link": "https://github.com/Mega4alik/peftee",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-23T22:01:35Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/Mega4alik/peftee\"\u003ehttps://github.com/Mega4alik/peftee\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45687868\"\u003ehttps://news.ycombinator.com/item?id=45687868\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Silicon-Optimized Inference Snaps",
+      "link": "https://canonical.com/blog/canonical-releases-inference-snaps",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-23T22:00:49Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://canonical.com/blog/canonical-releases-inference-snaps\"\u003ehttps://canonical.com/blog/canonical-releases-inference-snaps\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45687853\"\u003ehttps://news.ycombinator.com/item?id=45687853\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Federal Agents Plan a Crackdown in the San Francisco Bay Area",
+      "link": "https://www.nytimes.com/2025/10/22/us/border-patrol-san-francisco-bay-area.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-23T21:59:55Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nytimes.com/2025/10/22/us/border-patrol-san-francisco-bay-area.html\"\u003ehttps://www.nytimes.com/2025/10/22/us/border-patrol-san-francisco-bay-area.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45687841\"\u003ehttps://news.ycombinator.com/item?id=45687841\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 2\u003c/p\u003e\n"
+    },
+    {
+      "title": "AuditCodex – Your AI-Powered Code and Security Auditor",
+      "link": "https://github.com/kg6-oss/kg6-codex",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-23T21:59:20Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/kg6-oss/kg6-codex\"\u003ehttps://github.com/kg6-oss/kg6-codex\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45687830\"\u003ehttps://news.ycombinator.com/item?id=45687830\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Best practices for text-focused websites (2020)",
+      "link": "https://seirdy.one/posts/2020/11/23/website-best-practices/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-23T21:56:40Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://seirdy.one/posts/2020/11/23/website-best-practices/\"\u003ehttps://seirdy.one/posts/2020/11/23/website-best-practices/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45687799\"\u003ehttps://news.ycombinator.com/item?id=45687799\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Memory Maps (MMAP) Deliver 25x Faster File Access in Go",
+      "link": "https://info.varnish-software.com/blog/how-memory-maps-mmap-deliver-25x-faster-file-access-in-go",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-23T21:56:07Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://info.varnish-software.com/blog/how-memory-maps-mmap-deliver-25x-faster-file-access-in-go\"\u003ehttps://info.varnish-software.com/blog/how-memory-maps-mmap-deliver-25x-faster-file-access-in-go\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45687796\"\u003ehttps://news.ycombinator.com/item?id=45687796\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Two days after OpenAI's Atlas, Microsoft launches a nearly identical AI browser",
+      "link": "https://techcrunch.com/2025/10/23/two-days-after-openais-atlas-microsoft-launches-a-nearly-identical-ai-browser/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-23T21:51:30Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://techcrunch.com/2025/10/23/two-days-after-openais-atlas-microsoft-launches-a-nearly-identical-ai-browser/\"\u003ehttps://techcrunch.com/2025/10/23/two-days-after-openais-atlas-microsoft-launches-a-nearly-identical-ai-browser/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45687738\"\u003ehttps://news.ycombinator.com/item?id=45687738\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "HIV infection reprogrammes CD4T cells for quiescence and entry into latency",
+      "link": "https://www.nature.com/articles/s41564-025-02128-y",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-23T21:50:14Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nature.com/articles/s41564-025-02128-y\"\u003ehttps://www.nature.com/articles/s41564-025-02128-y\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45687717\"\u003ehttps://news.ycombinator.com/item?id=45687717\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Tente, a Spanish Lego Competitor in the 70s",
+      "link": "https://en.wikipedia.org/wiki/Tente_(toy)",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-23T21:49:34Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://en.wikipedia.org/wiki/Tente_(toy)\"\u003ehttps://en.wikipedia.org/wiki/Tente_(toy)\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45687706\"\u003ehttps://news.ycombinator.com/item?id=45687706\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Physics and Engineering of orbital data centers",
+      "link": "https://twitter.com/Andercot/status/1981465914400002550",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-23T21:47:55Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://twitter.com/Andercot/status/1981465914400002550\"\u003ehttps://twitter.com/Andercot/status/1981465914400002550\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45687684\"\u003ehttps://news.ycombinator.com/item?id=45687684\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Building a programming language using SQLite's VM – Pt 1",
+      "link": "https://el-yawd.github.io/blog/2025/carrot/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-23T21:46:21Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://el-yawd.github.io/blog/2025/carrot/\"\u003ehttps://el-yawd.github.io/blog/2025/carrot/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45687667\"\u003ehttps://news.ycombinator.com/item?id=45687667\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "United Kingdom Gov Reuse Library (Web Components)",
+      "link": "https://digitalgovernmenthub.org/library/united-kingdom-gov-reuse-library/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-23T21:42:48Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://digitalgovernmenthub.org/library/united-kingdom-gov-reuse-library/\"\u003ehttps://digitalgovernmenthub.org/library/united-kingdom-gov-reuse-library/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45687619\"\u003ehttps://news.ycombinator.com/item?id=45687619\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "How much of individual success is attributable to free time?",
+      "link": "https://greyenlightenment.com/2025/01/28/how-much-of-individual-success-due-to-having-free-time/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-23T21:42:38Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://greyenlightenment.com/2025/01/28/how-much-of-individual-success-due-to-having-free-time/\"\u003ehttps://greyenlightenment.com/2025/01/28/how-much-of-individual-success-due-to-having-free-time/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45687615\"\u003ehttps://news.ycombinator.com/item?id=45687615\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Triton Developer Conference 2025 Talks [video]",
+      "link": "https://www.youtube.com/watch?v=s30WoZ7lx3w",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-23T21:42:20Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.youtube.com/watch?v=s30WoZ7lx3w\"\u003ehttps://www.youtube.com/watch?v=s30WoZ7lx3w\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45687612\"\u003ehttps://news.ycombinator.com/item?id=45687612\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "White House List of Donors for President Trump's $300M Ballroom",
+      "link": "https://www.nytimes.com/2025/10/23/us/politics/trump-ballroom-donors-list.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-23T21:41:37Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nytimes.com/2025/10/23/us/politics/trump-ballroom-donors-list.html\"\u003ehttps://www.nytimes.com/2025/10/23/us/politics/trump-ballroom-donors-list.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45687602\"\u003ehttps://news.ycombinator.com/item?id=45687602\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 6\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "5 skills teams need to thrive in the age of AI (and how to build them)",
+      "link": "https://www.atlassian.com/blog/teamwork/human-skills-for-the-age-of-ai",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2025-10-23T16:26:49Z",
+      "description": "\u003cp\u003eThe top competencies to invest in for an AI-powered future, along with practical ways to strengthen those skills and weave them into your everyday work.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/teamwork/human-skills-for-the-age-of-ai\"\u003e5 skills teams need to thrive in the age of AI (and how to build them)\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Improve agent quality with Insights Agent and Multi-turn Evals, now in LangSmith",
+      "link": "https://blog.langchain.com/insights-agent-multiturn-evals-langsmith/",
+      "source": "LangChain Blog",
+      "category": "tech",
+      "publishedAt": "2025-10-23T14:23:55Z",
+      "description": "LangSmith's new Insights Agent and Multi-turn Evals help you understand what your agents are doing in production and whether they're accomplishing user goals."
+    },
+    {
+      "title": "Stability AI and EA Partner to Empower Artists, Designers, and Developers to Reimagine Game Development",
+      "link": "https://stability.ai/news/stability-ai-and-ea-partner-to-reimagine-game-development",
+      "source": "News - Stability AI",
+      "category": "tech",
+      "publishedAt": "2025-10-23T16:01:48Z",
+      "description": "Stability AI and Electronic Arts (EA) have formed a strategic partnership \nto co-develop transformative generative AI models, tools, and workflows \nthat empower EA’s artists, designers, and developers to reimagine how games \nare made."
+    },
+    {
+      "title": "The road to better completions: Building a faster, smarter GitHub Copilot with a new custom model",
+      "link": "https://github.blog/ai-and-ml/github-copilot/the-road-to-better-completions-building-a-faster-smarter-github-copilot-with-a-new-custom-model/",
+      "source": "The latest on GitHub Copilot - The GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2025-10-23T18:31:12Z",
+      "description": "\u003cp\u003eFind out about the latest custom models powering the completions experience in GitHub Copilot. \u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/ai-and-ml/github-copilot/the-road-to-better-completions-building-a-faster-smarter-github-copilot-with-a-new-custom-model/\"\u003eThe road to better completions: Building a faster, smarter GitHub Copilot with a new custom model\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Open Source AI Week — How Developers and Contributors Are Advancing AI Innovation",
+      "link": "https://blogs.nvidia.com/blog/open-source-ai-week/",
+      "source": "NVIDIA Blog",
+      "category": "tech",
+      "publishedAt": "2025-10-23T15:00:33Z",
+      "description": "NVIDIA’s on the ground at Open Source AI Week. Stay tuned for a celebration highlighting the spirit of innovation, collaboration and community that drives open-source AI forward. Follow NVIDIA AI Developer on social channels for additional news and insights. Building and Training AI Models With the Latest Open Datasets 🔗 NVIDIA is expanding access to\t\u003ca class=\"read-more\" href=\"https://blogs.nvidia.com/blog/open-source-ai-week/\"\u003e\n\t\tRead Article\t\t\u003cspan data-icon=\"y\"\u003e\u003c/span\u003e\n\t\u003c/a\u003e\n\t"
+    },
+    {
+      "title": "Fangs Out, Frames Up: ‘Vampire: The Masquerade — Bloodlines 2’ Leads a Killer GFN Thursday",
+      "link": "https://blogs.nvidia.com/blog/geforce-now-thursday-vampire-the-masquerades-bloodlines-2/",
+      "source": "NVIDIA Blog",
+      "category": "tech",
+      "publishedAt": "2025-10-23T13:00:38Z",
+      "description": "The nights grow longer and the shadows get bolder with Vampire The Masquerade: Bloodlines 2 on GeForce NOW, launching with GeForce RTX 5080-power. Members can sink their teeth into the action role-playing game from Paradox Interactive as part of nine games coming to the cloud this week, including NINJA GAIDEN 4. Be among the first\t\u003ca class=\"read-more\" href=\"https://blogs.nvidia.com/blog/geforce-now-thursday-vampire-the-masquerades-bloodlines-2/\"\u003e\n\t\tRead Article\t\t\u003cspan data-icon=\"y\"\u003e\u003c/span\u003e\n\t\u003c/a\u003e\n\t"
+    }
+  ],
+  "generatedAt": "2025-10-24T07:08:40.620311284+09:00"
+}
