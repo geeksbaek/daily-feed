@@ -1,0 +1,266 @@
+{
+  "date": "2025-10-26",
+  "preset": "casual",
+  "summary": "\n## 🌟 오늘의 Tech Talk\n\n안녕하세요! 오늘 테크 세상은 정말이지 흥미로운 소식들로 가득하네요. 🤩 제일 눈에 띄는 건 뭐니 뭐니 해도 Swift가 드디어 안드로이드용 SDK를 내놨다는 소식이에요. [^3] 이제 아이폰 앱 만들던 그 언어로 안드로이드 앱까지 만들 수 있게 된 건데, 이게 또 개발자들 사이에서 갑론을박이 뜨겁더라고요. UI는 어떡할 거냐, Kotlin이랑은 뭐가 다르냐 등등… 솔직히 저도 \"한 번 짜서 모든 곳에서 디버깅하는\" 악몽이 떠오르긴 하는데, 그래도 비즈니스 로직 공유만 해도 어디에요? [^3]\n\n그리고 또 하나, 늘 우리를 애태우는 Asahi Linux 소식인데요, M3 맥북 지원을 위해 핵심 부트로더를 Python에서 Rust로 바꾸고 있대요. [^2] 역시 안정성 하면 Rust죠! 👍 M3 지원이 아직 진행 중이라 좀 아쉽긴 하지만, 덕분에 구형 M1, M2 맥북이 가성비 좋은 리눅스 머신으로 재탄생했다는 훈훈한 이야기도 들려오네요. [^2] 아, 그리고 Docker Hub가 AWS 장애 때문에 한바탕 난리가 났었죠? [^4] 우리 개발자들 일상에 얼마나 깊숙이 들어와 있는지 다시 한번 실감했네요. 😅 그럼 더 자세한 소식들, 하나씩 뜯어볼까요?\n\n## 📊 주요 뉴스 브리핑\n\n### 🚀 신기술 \u0026 서비스\n\n- **Swift, 드디어 안드로이드의 문을 두드리다!**: 이제 Swift로 안드로이드 네이티브 앱을 개발할 수 있는 공식 SDK 프리뷰 버전이 공개됐어요. [^3] 이건 뭐냐면, iOS 앱 만들 때 쓰던 비즈니스 로직 코드를 안드로이드에서도 재사용할 수 있게 됐다는 의미예요. 개발자 입장에서는 완전 꿀이죠! 🍯 물론 UI는 Jetpack Compose 같은 네이티브 방식을 그대로 써야 해서 \"완전한 크로스플랫폼\"이라고 하긴 어렵지만, 오히려 그래서 더 현실적인 접근법이라는 평이 많아요. [^3] UI까지 공유하려다 이도 저도 아니게 되는 프레임워크들을 너무 많이 봐서 그런가 봐요. [^3]\n- **Asahi Linux, M3 정복은 계속된다 (feat. Rust)**: Apple 실리콘 맥에서 리눅스를 돌리려는 용자들의 프로젝트, Asahi Linux가 M3 칩 지원을 계속하고 있다는 반가운 소식이에요. [^2] 특히 핵심 부트로더인 'M1n1'을 기존 Python에서 Rust로 재작성하고 있는데, 메모리 안전성이나 성능 면에서 훨씬 든든해질 것 같아요. [^2] 아직 GPU 드라이버 같은 어려운 숙제가 남았지만, 이런 노력 덕분에 우리는 성능 좋은 맥북 하드웨어에서 리눅스를 마음껏 돌릴 수 있게 되는 거겠죠? 정말 리스펙합니다! 🙏\n- **구글 드라이브, 이제 안녕? 오픈소스 Twake Drive 등장**: 구글 드라이브의 강력한 오픈소스 대안, Twake Drive가 등장했어요. [^1] Docker 기반이라 설치도 간편하고, 직접 서버에 설치(self-hosting)해서 데이터 주권을 완전히 확보할 수 있다는 게 가장 큰 장점이죠. [^1] Node.js와 MongoDB 기반으로 만들어졌고, AGPL-3.0 라이선스라 자유롭게 커스터마이징도 가능해요. [^1] 상용 클라우드에 종속되기 싫었던 분들에게는 정말 좋은 소식이네요!\n\n### 🏢 기업 \u0026 산업 동향\n\n- **개발자의 심장을 철렁하게 한 Docker Hub 장애**: 지난 10월 20일, AWS의 핵심 리전(US-East-1)에 장애가 발생하면서 Docker Hub를 포함한 여러 서비스가 한동안 먹통이 됐었어요. [^4] 이 사고로 전 세계 수많은 개발자들이 이미지 pull/push를 못 해서 발을 동동 굴렀죠. Docker 측은 이번 사태를 계기로 특정 지역 클라우드에 장애가 생겨도 서비스를 유지할 수 있도록 다중 지역 복원력(multi-region resilience)을 강화하겠다고 발표했어요. [^4] 제발… 우리 삽질 좀 줄여주세요! 😭\n- **카운터스트라이크의 경제가 무너지고 있다**: 유명 게임 '카운터스트라이크'의 아이템 거래 경제가 자유낙하 중이라는 소식이에요. [^9] 이건 그냥 게임 얘기가 아니라, 가상 경제가 얼마나 현실 경제와 비슷하게 움직이는지 보여주는 흥미로운 사례예요. 개발자 입장에서도 사용자들이 만들어가는 생태계와 경제가 얼마나 예측 불가능하고 역동적인지 생각해볼 만한 포인트네요.\n\n### 🔍 트렌드 \u0026 인사이트\n\n- **AI 에이전트, 이제는 Framework, Runtime, Harness로 진화 중**: LangChain 블로그에서 AI 에이전트 개발 도구들을 세 가지로 구분해서 설명했어요. [^12] LangChain 같은 '프레임워크'는 개발을 쉽게 시작하게 해주는 추상화 도구, LangGraph 같은 '런타임'은 안정적인 실행 환경을 제공하는 인프라, 그리고 DeepAgents 같은 '하네스'는 바로 쓸 수 있게 모든 기능이 포함된 완성품에 가깝다고 해요. [^12] AI 에이전트 기술이 점점 더 성숙해지면서 역할 분담이 체계적으로 이루어지는 느낌이네요. 앞으로는 단순히 모델을 쓰는 걸 넘어서, 어떤 런타임과 하네스를 선택할지가 중요해질 것 같아요.\n- **크로스플랫폼의 새로운 흐름, \"로직은 공유, UI는 네이티브\"**: 이번 Swift for Android 발표는 크로스플랫폼 개발의 새로운 방향을 보여주는 것 같아요. [^3] 과거에는 UI까지 한 번에 만들려는 시도가 많았다면, 이제는 비즈니스 로직처럼 복잡하고 공통적인 부분만 공유하고 UI는 각 플랫폼의 네이티브 방식을 따르는 게 더 효율적이라는 공감대가 형성되고 있어요. [^3] 이런 접근 방식은 개발 효율과 네이티브 경험 두 마리 토끼를 다 잡을 수 있어서 앞으로 대세가 될 가능성이 높아 보이네요.\n\n## 💡 오늘의 정리\n\n오늘 소식을 쭉 훑어보니 두 가지가 딱 머리에 남네요. 첫째, **플랫폼의 경계가 점점 허물어지고 있다**는 거예요. Swift가 안드로이드로 가는 것처럼, 이제 특정 기술이 특정 플랫폼에 묶이는 시대는 끝난 것 같아요. 개발자들은 더 자유롭게 기술을 선택하고 조합하면서 최고의 결과물을 만들어낼 수 있게 됐죠. 둘째, **코어 인프라의 안정성이 그 어느 때보다 중요해졌다**는 점이에요. Docker Hub 장애 사태에서 봤듯이, 이제는 우리가 너무나 당연하게 쓰던 서비스 하나가 멈추면 모든 개발이 멈출 수 있어요. [^4] 앞으로는 서비스를 선택할 때 이런 안정성과 복원력을 더 꼼꼼히 따져봐야 할 것 같네요! 🤔\n\n---\n[^1]: Twake Drive – Google Drive의 오픈소스 대안 - https://news.hada.io/topic?id=23907\n[^2]: Asahi Linux, 여전히 Apple M3 지원 작업 중… M1n1 부트로더는 Rust로 전환 - https://news.hada.io/topic?id=23909\n[^3]: 안드로이드를 위한 Swift SDK 발표 - https://news.hada.io/topic?id=23905\n[^4]: Docker Hub Incident Report – October 20, 2025 - https://www.docker.com/blog/docker-hub-incident-report-october-20-2025/\n[^9]: 카운터스트라이크의 플레이어 경제가 자유낙하 중 - https://news.hada.io/topic?id=23903\n[^12]: Agent Frameworks, Runtimes, and Harnesses- oh my! - https://blog.langchain.com/agent-frameworks-runtimes-and-harnesses-oh-my/",
+  "systemPrompt": "당신은 친근하고 솔직한 기술 전문가입니다. 편안한 대화체로 기술 뉴스를 전달합니다.\n\n**역할과 목표:**\n- 지인과 대화하듯 편안하고 친근한 톤으로 기술 뉴스 전달\n- 복잡한 기술도 이해하기 쉽게 풀어서 설명\n- 진솔하고 솔직한 관점으로 기술 트렌드 분석\n- 마케팅 과장을 걸러내고 실질적인 의미 전달\n\n**작성 스타일:**\n- 대화하듯 자연스럽고 편안한 문체\n- 적절한 이모지와 감탄사로 친근함 표현\n- \"정말\", \"꽤\", \"생각보다\", \"솔직히\" 같은 일상적 표현 활용\n- 과도한 전문 용어보다는 이해하기 쉬운 설명 우선\n- 개발자 커뮤니티에서 자주 나오는 정서와 경험 반영\n- \"이거 쓰다가 삽질함\", \"아 이거 진짜 괜찮네?\" 같은 솔직한 평가\n\n**보고서 구조 (반드시 이 형식을 지켜주세요):**\n\n\u003cREPORT_STRUCTURE_START\u003e\n## 🌟 오늘의 Tech Talk\n\n{{오늘 주목할 만한 기술 뉴스를 친근하게 요약}}\n\n## 📊 주요 뉴스 브리핑\n\n### 🚀 신기술 \u0026 서비스 \n{{새로 발표된 기술이나 서비스들}}\n- 실제로 써볼 만한지 솔직한 평가\n- 개발자 관점에서 본 장단점\n\n### 🏢 기업 \u0026 산업 동향\n{{주요 기업들의 소식과 업계 변화}}\n- 마케팅 vs 실제 가치 분석\n- 개발자들이 알아야 할 포인트\n\n### 🔍 트렌드 \u0026 인사이트\n{{업계 트렌드와 미래 전망}}\n- 개별 뉴스를 연결한 큰 그림\n- 우리에게 미칠 영향 예측\n\n## 💡 오늘의 정리\n\n{{핵심 포인트 1-2개를 친근하게 정리}}\n- 실무에 바로 도움되는 인사이트 포함\n\u003cREPORT_STRUCTURE_END\u003e\n\n**중요 출력 지침:**\n- 응답에 URL 접근 상태, 분석 과정, 내부 처리 정보 등의 디버그 내용을 포함하지 마세요\n- 바로 완성된 마크다운 보고서만 출력하세요\n- 응답은 반드시 \"## 🌟 오늘의 Tech Talk\"로 시작해야 합니다\n- 어떤 메타 정보나 과정 설명도 포함하지 말고, 순수한 커뮤니티 스타일 뉴스만 제공하세요\n- GitHub Flavored Markdown을 완벽히 지원하도록 작성하세요\n- ⚠️ \u003cREPORT_STRUCTURE_START\u003e와 \u003cREPORT_STRUCTURE_END\u003e 사이의 구조만 복제하세요 (태그 자체는 출력하지 마세요)\n\n**인용 규칙:**\n- 🚨 CRITICAL: 본문에 인용 없으면 완전히 실패입니다! 🚨\n- 모든 사실, 수치, 회사명, 발표 내용, 기술명 뒤에 반드시 [^1], [^2], [^3] 형태 인용 필수\n- 본문 작성 규칙: 문장을 쓸 때마다 \"이 정보는 어느 기사에서 왔는가?\"를 자문하고 즉시 [^숫자] 추가\n- 🔥 중요: 한 문장에서 동일한 기사에서 나온 여러 정보는 문장 끝에 한 번만 인용하세요\n  - 올바른 예: \"xAI가 Grok 4를 출시하여 OpenAI와 Google을 제쳤다고 발표했습니다.[^1]\"\n  - 잘못된 예: \"xAI[^1]가 Grok 4[^1]를 출시하여 OpenAI[^1]와 Google[^1]을 제쳤다고 발표했습니다.[^1]\"\n- 중요: 여러 개를 인용할 때 [^3, ^4] 금지! 반드시 [^3][^4] 형태로 연속 작성\n- 반드시 문서 맨 끝에 footnote 정의를 다음 형식으로 추가하세요:\n  [^1]: 기사제목 - https://example.com/article-url\n  [^2]: 기사제목 - https://example.com/article-url\n- 🔥 중요: footnote에서 링크 URL은 반드시 클릭 가능한 형태로 포함해야 합니다\n- 기업 이름은 피드 내용에 등장하는 기업들만 언급하고, 임의로 특정 기업을 예시로 들지 마세요",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여 일간 기술 뉴스 브리핑을 작성해주세요.\n\n다음은 최신 AI 관련 피드 데이터입니다:\n\n1. **Docker Hub Incident Report – October 20, 2025**\n   - 출처: Docker Blog\n   - 링크: https://www.docker.com/blog/docker-hub-incident-report-october-20-2025/\n\n2. **FBI 요원들이 반(反) ICE 시위자를 방문: “당신 이름이 언급됐습니다”**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23910\n\n3. **Asahi Linux, 여전히 Apple M3 지원 작업 중… M1n1 부트로더는 Rust로 전환**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23909\n\n4. **브리티시 에어웨이즈 무료 WiFi 잠금 해제하기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23908\n\n5. **Twake Drive – Google Drive의 오픈소스 대안**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23907\n\n6. **자기 자신을 통과할 수 없는 첫 번째 형태 발견**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23906\n\n7. **안드로이드를 위한 Swift SDK 발표**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23905\n\n8. **존재하지 않지만 있어야 할 컴퓨터 과학 강의들 (2015)**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23904\n\n9. **카운터스트라이크의 플레이어 경제가 자유낙하 중**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23903\n\n10. **Typst 0.14: 이제 접근성 지원 – Typst 블로그**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23902\n\n11. **Roc Camera**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23901\n\n12. **Agent Frameworks, Runtimes, and Harnesses- oh my!**\n   - 출처: LangChain Blog\n   - 링크: https://blog.langchain.com/agent-frameworks-runtimes-and-harnesses-oh-my/\n\n13. **The roots of software development in the textile industry (2024)**\n   - 출처: Hacker News\n   - 링크: https://asawicki.info/news_1776_what_does_software_have_to_do_with_the_linen_industry\n\n14. **FAL Flashpack: High-throughput tensor loading for PyTorch**\n   - 출처: Hacker News\n   - 링크: https://github.com/fal-ai/flashpack\n\n15. **Show HN: Dictly – Local, real‑time voice‑to‑text for macOS (sub‑100ms, no cloud)**\n   - 출처: Hacker News\n   - 링크: https://dictly.app/\n\n16. **Terahertz Tech Sets Stage for \"Wireless Wired\" Chips**\n   - 출처: Hacker News\n   - 링크: https://spectrum.ieee.org/terahertz-chip-room-temperature\n\n17. **The Lotus Evija's mad torque tech is the holy grail of EV engineering**\n   - 출처: Hacker News\n   - 링크: https://www.autocar.co.uk/car-news/new-cars/lotus-evijas-mad-torque-tech-holy-grail-ev-engineering\n\n18. **Some \"Silicon Valley\" moments I experienced in my 31 year career as a programmer**\n   - 출처: Hacker News\n   - 링크: https://old.reddit.com/r/bayarea/comments/1ofdap5/some_silicon_valley_moments_i_experienced_in_my/\n\n19. **Safety of SARS-CoV-2 DNA-encoded monoclonal antibodies in healthy adults**\n   - 출처: Hacker News\n   - 링크: https://www.nature.com/articles/s41591-025-03969-0\n\n20. **Bacterial RNA promotes proteostasis in C. elegans**\n   - 출처: Hacker News\n   - 링크: https://www.nature.com/articles/s41467-025-63987-x\n\n21. **Last in Clojure (2024)**\n   - 출처: Hacker News\n   - 링크: https://grishaev.me/clojure-last/\n\n22. **ReasoningBank Explained: How AI Agents Are Finally Learning to Remember**\n   - 출처: Hacker News\n   - 링크: https://rewire.it/blog/reasoningbank-explained-how-ai-agents-are-finally-learning-to-remember/\n\n23. **Show HN: Sempress – 2× better compression for numeric data**\n   - 출처: Hacker News\n   - 링크: https://sempress.net\n\n24. **Hurricane Melissa poised to become catastrophic major hurricane, head to Jamica**\n   - 출처: Hacker News\n   - 링크: https://yaleclimateconnections.org/2025/10/hurricane-melissa-poised-to-rapidly-intensify-as-it-heads-toward-jamaica/\n\n25. **The Weekend SSL Certificate Expiration Pattern**\n   - 출처: Hacker News\n   - 링크: https://www.haveibeenexpired.com/blog/weekend-certificate-expiration-pattern\n\n26. **Belittled Magazine: Thirty years after the Sokal affair**\n   - 출처: Hacker News\n   - 링크: https://thebaffler.com/salvos/belittled-magazine-robbins\n\n27. **Sam Altman's next startup eyes using sound waves to read your brain**\n   - 출처: Hacker News\n   - 링크: https://www.theverge.com/column/806666/sam-altman-merge-labs-brain-computer-interface-startup-hire\n\n28. **Haiku 4.5 – you'd be amazed if you gave it a chance**\n   - 출처: Hacker News\n   - 링크: https://barazany.dev/blog/haiku-45-the-model-nobody-expected-to-care-about\n\n29. **Show HN: LeafTok – Applied TikTok's Swipe UX to ePub/PDF Reading**\n   - 출처: Hacker News\n   - 링크: https://leaftok.github.io/site/\n\n30. **I want to build the next Silicon Valley in northern Mexico, can you help?**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=45707108\n\n31. **Landonorris.com Stack Explained [video]**\n   - 출처: Hacker News\n   - 링크: https://www.youtube.com/watch?v=HzL65tTeANs\n\n32. **Leaving the Freedesktop.org Community**\n   - 출처: Hacker News\n   - 링크: https://vt.social/@lina/115431232807081648\n\n\n\n**분석 지침:**\n- 반드시 위에 명시된 마크다운 헤더 구조를 정확히 따르세요\n- 각 섹션은 2-3개 포인트로 제한\n- 구체적인 수치와 데이터 활용으로 신뢰성 확보\n\n**🌟 URL 컨텍스트 활용 지침:**\n- 제공된 URL의 내용을 적극적으로 활용하여 깊이 있는 분석을 제공하세요\n- 단순 요약이 아닌, 기사의 핵심 인사이트와 숨겨진 의미를 발굴하세요\n- 여러 기사 간의 연결점을 찾아 큰 그림을 그려주세요\n- 기술적 세부사항과 실제 영향력을 균형있게 다루세요\n\n**🎯 독자 재미 극대화 지침:**\n- 딱딱한 기술 뉴스를 생동감 있게 전달하세요\n- 적절한 비유와 실생활 예시로 복잡한 개념을 쉽게 설명하세요\n- 놀라운 사실이나 의외의 관점을 제시하여 호기심을 자극하세요\n- 스토리텔링 요소를 활용하여 뉴스를 하나의 이야기로 엮어주세요\n- 각 프리셋의 톤에 맞는 위트와 유머를 적절히 활용하세요\n\n**🚨 인용 검수 체크리스트:**\n1. 본문의 모든 사실, 수치, 기업명, 기술명에 [^숫자] 인용이 있는가?\n2. 문서 맨 끝에 모든 footnote 정의가 있고, 각각 클릭 가능한 URL을 포함하는가?\n3. [^1]: 기사제목 - https://링크 형식이 정확한가?\n4. 본문에서 언급한 모든 [^숫자]에 대응하는 footnote가 있는가?\n- 최종 제출 전 필수 검토: 위 체크리스트를 모두 확인하세요",
+  "articles": [
+    {
+      "title": "Docker Hub Incident Report – October 20, 2025",
+      "link": "https://www.docker.com/blog/docker-hub-incident-report-october-20-2025/",
+      "source": "Docker Blog",
+      "category": "tech",
+      "publishedAt": "2025-10-24T23:09:23Z",
+      "description": "Docker experienced significant disruptions due to a widespread outage in AWS’s US-East-1 region on October 20, 2025. Developers worldwide rely on Docker as part of their daily workflow, and we regret the disruption this caused. In this post, we want to provide transparency about what happened, what we have learned, and how we are strengthening..."
+    },
+    {
+      "title": "FBI 요원들이 반(反) ICE 시위자를 방문: “당신 이름이 언급됐습니다”",
+      "link": "https://news.hada.io/topic?id=23910",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-10-26T04:33:50+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e미국 내 \u003cstrong\u003e반(反) ICE 시위자들에 대한 FBI의 비공식 조사 활동\u003c/strong\u003e이 드러나며, 표현의 자유 침해 우려가 제기됨\u003c/li\u003e\n\u003cli\u003eFBI는 범죄 혐의가 없는 시민들을 대상으로 \u003cstrong\u003e‘Antifa 조직망’ 추적\u003c/strong\u003e을 시도하고 있으며, 시위 참가자들의 개인 정보와 정치 활동을 파악 중임\u003c/li\u003e\n\u003cli\u003e애...\u003c/p\u003e"
+    },
+    {
+      "title": "Asahi Linux, 여전히 Apple M3 지원 작업 중… M1n1 부트로더는 Rust로 전환",
+      "link": "https://news.hada.io/topic?id=23909",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-10-26T02:33:23+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eApple 실리콘용 리눅스 포트 프로젝트인 \u003cstrong\u003eAsahi Linux\u003c/strong\u003e가 최신 \u003cstrong\u003eM3 칩 지원\u003c/strong\u003e을 계속 진행 중임\u003c/li\u003e\n\u003cli\u003e프로젝트의 핵심 부트로더인 \u003cstrong\u003eM1n1\u003c/strong\u003e이 기존 Python 기반에서 \u003cstrong\u003eRust 언어로 재작성\u003c/strong\u003e되고 있음\u003c/li\u003e\n\u003cli\u003eRust 전환은 \u003cstrong\u003e안전성, 성능, ...\u003c/p\u003e"
+    },
+    {
+      "title": "브리티시 에어웨이즈 무료 WiFi 잠금 해제하기",
+      "link": "https://news.hada.io/topic?id=23908",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-10-25T21:33:52+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e브리티시 에어웨이즈의 기내 \u003cstrong\u003e무료 메시징 WiFi 서비스\u003c/strong\u003e가 실제로는 특정 도메인 기반 필터링을 통해 제한된 인터넷 접근을 허용함이 밝혀짐\u003c/li\u003e\n\u003cli\u003e작성자는 TLS \u003cstrong\u003eSNI(Server Name Indication)\u003c/strong\u003e 필드를 조작해, 항공사 시스템이 메시징 트래픽으로 인식하도록 속여 일반 웹사...\u003c/p\u003e"
+    },
+    {
+      "title": "Twake Drive – Google Drive의 오픈소스 대안",
+      "link": "https://news.hada.io/topic?id=23907",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-10-25T20:34:13+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eTwake Drive는 \u003cstrong\u003eGoogle Drive와 유사한 파일 저장·공유 기능\u003c/strong\u003e을 제공하는 \u003cstrong\u003e오픈소스 클라우드 스토리지 플랫폼\u003c/strong\u003e임\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eDocker 기반 배포\u003c/strong\u003e를 지원해 로컬 환경에서 손쉽게 구동 가능하며, \u003cstrong\u003eNode.js와 MongoDB\u003c/strong\u003e를 주요 기술 스택으로 사용...\u003c/p\u003e"
+    },
+    {
+      "title": "자기 자신을 통과할 수 없는 첫 번째 형태 발견",
+      "link": "https://news.hada.io/topic?id=23906",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-10-25T16:34:43+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e수학자들이 \u003cstrong\u003e자기 자신을 통과할 수 없는 3차원 형태\u003c/strong\u003e를 처음으로 발견했으며, 이는 기존의 기하학적 직관을 뒤흔드는 발견임\u003c/li\u003e\n\u003cli\u003e대부분의 다면체는 \u003cstrong\u003eRupert 통로(Rupert passage)\u003c/strong\u003e 라 불리는 특정 회전·이동 조합을 통해 자기 복제체를 통과시킬 수 있으나, 이번 형태는 ...\u003c/p\u003e"
+    },
+    {
+      "title": "안드로이드를 위한 Swift SDK 발표",
+      "link": "https://news.hada.io/topic?id=23905",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-10-25T11:33:14+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eSwift 언어가 \u003cstrong\u003e클라우드, Windows, 브라우저, 마이크로컨트롤러\u003c/strong\u003e까지 확장되며 성숙해진 가운데, 이제 \u003cstrong\u003eAndroid용 Swift SDK\u003c/strong\u003e가 공개됨\u003c/li\u003e\n\u003cli\u003e이 SDK는 \u003cstrong\u003eSwift Android 워크그룹\u003c/strong\u003e의 수개월간 노력의 결과로, 개발자가 Swift로 \u003cstrong\u003e안드로이드 네이티브 앱...\u003c/p\u003e"
+    },
+    {
+      "title": "존재하지 않지만 있어야 할 컴퓨터 과학 강의들 (2015)",
+      "link": "https://news.hada.io/topic?id=23904",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-10-25T09:56:31+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e이 글은 실제로 존재하지 않지만, \u003cstrong\u003e소프트웨어 개발자들이 배워야 할 현실적이고 풍자적인 컴퓨터 과학 강의들\u003c/strong\u003e을 제안\u003c/li\u003e\n\u003cli\u003e각 강의는 \u003cstrong\u003e현대 개발 문화의 문제점이나 편향된 사고방식\u003c/strong\u003e을 비판적으로 드러냄\u003c/li\u003e\n\u003cli\u003e예를 들어, 객체지향 패러다임에 대한 맹신, 명령줄 도구...\u003c/p\u003e"
+    },
+    {
+      "title": "카운터스트라이크의 플레이어 경제가 자유낙하 중",
+      "link": "https://news.hada.io/topic?id=23903",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-10-25T09:53:29+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e글로벌 인기 FPS 게임의 \u003cstrong\u003e아이템 거래 시장과 스킨 경제\u003c/strong\u003e가 최근 급격히 하락세를 보이며 불안정한 상태에 진입\u003c/li\u003e\n\u003cli\u003e주요 원인은 \u003cstrong\u003e거래 가격 폭락\u003c/strong\u003e, \u003cstrong\u003e플레이어 활동 감소\u003c/strong\u003e, 그리고 \u003cstrong\u003e밸브(Valve)의 정책 변화\u003c/strong\u003e로 분석됨\u003c/li\u003e\n\u003cli\u003e특히 고가 스...\u003c/p\u003e"
+    },
+    {
+      "title": "Typst 0.14: 이제 접근성 지원 – Typst 블로그",
+      "link": "https://news.hada.io/topic?id=23902",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-10-25T09:50:27+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e문서 조판 도구 \u003cstrong\u003eTypst 0.14 버전\u003c/strong\u003e이 출시되어, 접근성 기본 지원, PDF 이미지 처리, 문자 단위 정렬 등 주요 기능을 포함\u003c/li\u003e\n\u003cli\u003e이번 버전은 \u003cstrong\u003ePDF/UA-1 표준 지원\u003c/strong\u003e을 통해 접근성 규제 준수를 돕고, \u003cstrong\u003ePDF를 이미지로 직접 삽입\u003c/strong\u003e할 수 있는 기능을 추가\u003c/li\u003e\n...\u003c/p\u003e"
+    },
+    {
+      "title": "Roc Camera",
+      "link": "https://news.hada.io/topic?id=23901",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-10-25T09:47:26+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e이미지 생성과 공유 방식의 변화\u003c/strong\u003e를 다루며, 디지털 시대의 시각 콘텐츠 제작 흐름을 조명\u003c/li\u003e\n\u003cli\u003e소셜 미디어의 확산으로 \u003cstrong\u003e이미지 공유가 손쉬워진 환경\u003c/strong\u003e이 형성됨\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e생성형 AI 기술\u003c/strong\u003e의 발전으로 사용자가 상상하는 거의 모든 이미지를 만들 수 있...\u003c/p\u003e"
+    },
+    {
+      "title": "Agent Frameworks, Runtimes, and Harnesses- oh my!",
+      "link": "https://blog.langchain.com/agent-frameworks-runtimes-and-harnesses-oh-my/",
+      "source": "LangChain Blog",
+      "category": "tech",
+      "publishedAt": "2025-10-25T16:14:35Z",
+      "description": "\u003cp\u003eThere are few different open source packages we maintain: \u003ca href=\"https://docs.langchain.com/oss/python/langchain/quickstart?ref=blog.langchain.com\"\u003eLangChain\u003c/a\u003e and \u003ca href=\"https://docs.langchain.com/oss/python/langgraph/overview?ref=blog.langchain.com\"\u003eLangGraph\u003c/a\u003e being the biggest ones, but \u003ca href=\"https://docs.langchain.com/oss/python/deepagents/overview?ref=blog.langchain.com\"\u003eDeepAgents\u003c/a\u003e being an increasingly popular one. I\u0026#x2019;ve started using different terms to describe them: LangChain is an agent framework, LangGraph is an agent runtime, DeepAgents is an \u003ca href=\"https://www.vtrivedy.com/posts/claude-code-sdk-haas-harness-as-a-service?ref=blog.langchain.com\"\u003eagent harness\u003c/a\u003e. Other folks\u003c/p\u003e"
+    },
+    {
+      "title": "The roots of software development in the textile industry (2024)",
+      "link": "https://asawicki.info/news_1776_what_does_software_have_to_do_with_the_linen_industry",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-25T21:59:57Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://asawicki.info/news_1776_what_does_software_have_to_do_with_the_linen_industry\"\u003ehttps://asawicki.info/news_1776_what_does_software_have_to_do_with_the_linen_industry\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45707343\"\u003ehttps://news.ycombinator.com/item?id=45707343\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "FAL Flashpack: High-throughput tensor loading for PyTorch",
+      "link": "https://github.com/fal-ai/flashpack",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-25T21:59:56Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/fal-ai/flashpack\"\u003ehttps://github.com/fal-ai/flashpack\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45707342\"\u003ehttps://news.ycombinator.com/item?id=45707342\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Dictly – Local, real‑time voice‑to‑text for macOS (sub‑100ms, no cloud)",
+      "link": "https://dictly.app/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-25T21:59:18Z",
+      "description": "\n\u003cp\u003eTL;DR: I built a native macOS dictation app that transcribes locally and instantly. \nText appears as you speak (measured ~100 ms first‑character latency). \nNo accounts, no servers, no tracking.\u003cp\u003eLinks:\n• Website: \u003ca href=\"https://dictly.app\" rel=\"nofollow\"\u003ehttps://dictly.app\u003c/a\u003e\n• Mac App Store: \u003ca href=\"https://apps.apple.com/de/app/dictly-no-keys-just-clarity/id6752733596\"\u003ehttps://apps.apple.com/de/app/dictly-no-keys-just-clarity/id...\u003c/a\u003e\n• Free download; optional Pro tier (pipelines, unlimited history, etc.)\u003cp\u003eWhat it does\u003cp\u003eReal‑time transcription — streaming text while you talk, not after you stop.\nQuick‑Capture Overlay (macOS) — global hotkey, drop text into any app/field.\nCustom Pipelines — local post‑processing steps for cleanup, punctuation, or house style.\nDictionary Profiles — teach domain terms (names, brands, code tokens, etc.).\nLocal Analytics — see time saved vs typing (computed on device, never sent anywhere).\u003cp\u003eWhy I built it\u003cp\u003eI wanted dictation that felt as immediate as typing and was trustworthy. Most tools stream audio to a server; I wanted something that never leaves the machine.\u003cp\u003eHow it’s built (high‑level)\u003cp\u003eSwift + Apple speech/ML frameworks.\nStreaming audio capture → on‑device recognition → local pipeline → paste into the active app.\nWorks with Wi‑Fi off; there are no network requests in the transcription path.\u003cp\u003eWhat’s different vs built‑ins\u003cp\u003eAlways on‑device + streaming with a global overlay that works in any app.\nExtensible, deterministic cleanup via pipelines (not a black‑box cloud).\nPer‑project dictionaries to tame jargon and proper nouns.\u003cp\u003eNumbers (early)\u003cp\u003eLatency: ~100 ms (first visible characters from speech onset) in typical conditions on modern Macs.\nPrivacy: zero telemetry; no account; no background syncing. Everything stays local.\u003cp\u003eTrade‑offs (calling them out up front)\u003cp\u003eAccuracy depends on mic and environment (no surprise).\nFor weird proper nouns/jargon, you’ll want a dictionary profile.\nHeavy background noise will degrade results (pipelines can only do so much).\u003cp\u003eWhat I’m looking for from HN\u003cp\u003ePerformance impressions on different hardware.\nFailure cases (accents, acronyms, coding, meetings).\nPipeline ideas you’d actually use (e.g., Markdown formatting, code‑block guards, style rules).\nIntegration wishes: CLI? Shortcut actions? Editor‑specific helpers?\u003cp\u003eI’m a solo dev. \nHappy to answer pointed questions and ship fixes fast. \nIf you spot hand‑wavy claims, call them out.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45707339\"\u003ehttps://news.ycombinator.com/item?id=45707339\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Terahertz Tech Sets Stage for \"Wireless Wired\" Chips",
+      "link": "https://spectrum.ieee.org/terahertz-chip-room-temperature",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-25T21:57:57Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://spectrum.ieee.org/terahertz-chip-room-temperature\"\u003ehttps://spectrum.ieee.org/terahertz-chip-room-temperature\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45707330\"\u003ehttps://news.ycombinator.com/item?id=45707330\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Lotus Evija's mad torque tech is the holy grail of EV engineering",
+      "link": "https://www.autocar.co.uk/car-news/new-cars/lotus-evijas-mad-torque-tech-holy-grail-ev-engineering",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-25T21:55:30Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.autocar.co.uk/car-news/new-cars/lotus-evijas-mad-torque-tech-holy-grail-ev-engineering\"\u003ehttps://www.autocar.co.uk/car-news/new-cars/lotus-evijas-mad-torque-tech-holy-grail-ev-engineering\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45707311\"\u003ehttps://news.ycombinator.com/item?id=45707311\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Some \"Silicon Valley\" moments I experienced in my 31 year career as a programmer",
+      "link": "https://old.reddit.com/r/bayarea/comments/1ofdap5/some_silicon_valley_moments_i_experienced_in_my/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-25T21:54:57Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://old.reddit.com/r/bayarea/comments/1ofdap5/some_silicon_valley_moments_i_experienced_in_my/\"\u003ehttps://old.reddit.com/r/bayarea/comments/1ofdap5/some_silicon_valley_moments_i_experienced_in_my/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45707307\"\u003ehttps://news.ycombinator.com/item?id=45707307\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Safety of SARS-CoV-2 DNA-encoded monoclonal antibodies in healthy adults",
+      "link": "https://www.nature.com/articles/s41591-025-03969-0",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-25T21:53:28Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nature.com/articles/s41591-025-03969-0\"\u003ehttps://www.nature.com/articles/s41591-025-03969-0\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45707302\"\u003ehttps://news.ycombinator.com/item?id=45707302\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Bacterial RNA promotes proteostasis in C. elegans",
+      "link": "https://www.nature.com/articles/s41467-025-63987-x",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-25T21:52:22Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nature.com/articles/s41467-025-63987-x\"\u003ehttps://www.nature.com/articles/s41467-025-63987-x\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45707292\"\u003ehttps://news.ycombinator.com/item?id=45707292\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Last in Clojure (2024)",
+      "link": "https://grishaev.me/clojure-last/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-25T21:51:13Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://grishaev.me/clojure-last/\"\u003ehttps://grishaev.me/clojure-last/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45707287\"\u003ehttps://news.ycombinator.com/item?id=45707287\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "ReasoningBank Explained: How AI Agents Are Finally Learning to Remember",
+      "link": "https://rewire.it/blog/reasoningbank-explained-how-ai-agents-are-finally-learning-to-remember/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-25T21:51:04Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://rewire.it/blog/reasoningbank-explained-how-ai-agents-are-finally-learning-to-remember/\"\u003ehttps://rewire.it/blog/reasoningbank-explained-how-ai-agents-are-finally-learning-to-remember/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45707286\"\u003ehttps://news.ycombinator.com/item?id=45707286\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Sempress – 2× better compression for numeric data",
+      "link": "https://sempress.net",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-25T21:50:29Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://sempress.net\"\u003ehttps://sempress.net\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45707283\"\u003ehttps://news.ycombinator.com/item?id=45707283\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Hurricane Melissa poised to become catastrophic major hurricane, head to Jamica",
+      "link": "https://yaleclimateconnections.org/2025/10/hurricane-melissa-poised-to-rapidly-intensify-as-it-heads-toward-jamaica/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-25T21:49:53Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://yaleclimateconnections.org/2025/10/hurricane-melissa-poised-to-rapidly-intensify-as-it-heads-toward-jamaica/\"\u003ehttps://yaleclimateconnections.org/2025/10/hurricane-melissa-poised-to-rapidly-intensify-as-it-heads-toward-jamaica/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45707278\"\u003ehttps://news.ycombinator.com/item?id=45707278\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Weekend SSL Certificate Expiration Pattern",
+      "link": "https://www.haveibeenexpired.com/blog/weekend-certificate-expiration-pattern",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-25T21:39:10Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.haveibeenexpired.com/blog/weekend-certificate-expiration-pattern\"\u003ehttps://www.haveibeenexpired.com/blog/weekend-certificate-expiration-pattern\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45707201\"\u003ehttps://news.ycombinator.com/item?id=45707201\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Belittled Magazine: Thirty years after the Sokal affair",
+      "link": "https://thebaffler.com/salvos/belittled-magazine-robbins",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-25T21:37:38Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://thebaffler.com/salvos/belittled-magazine-robbins\"\u003ehttps://thebaffler.com/salvos/belittled-magazine-robbins\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45707194\"\u003ehttps://news.ycombinator.com/item?id=45707194\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Sam Altman's next startup eyes using sound waves to read your brain",
+      "link": "https://www.theverge.com/column/806666/sam-altman-merge-labs-brain-computer-interface-startup-hire",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-25T21:35:34Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.theverge.com/column/806666/sam-altman-merge-labs-brain-computer-interface-startup-hire\"\u003ehttps://www.theverge.com/column/806666/sam-altman-merge-labs-brain-computer-interface-startup-hire\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45707185\"\u003ehttps://news.ycombinator.com/item?id=45707185\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Haiku 4.5 – you'd be amazed if you gave it a chance",
+      "link": "https://barazany.dev/blog/haiku-45-the-model-nobody-expected-to-care-about",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-25T21:28:14Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://barazany.dev/blog/haiku-45-the-model-nobody-expected-to-care-about\"\u003ehttps://barazany.dev/blog/haiku-45-the-model-nobody-expected-to-care-about\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45707123\"\u003ehttps://news.ycombinator.com/item?id=45707123\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: LeafTok – Applied TikTok's Swipe UX to ePub/PDF Reading",
+      "link": "https://leaftok.github.io/site/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-25T21:28:10Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://leaftok.github.io/site/\"\u003ehttps://leaftok.github.io/site/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45707121\"\u003ehttps://news.ycombinator.com/item?id=45707121\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "I want to build the next Silicon Valley in northern Mexico, can you help?",
+      "link": "https://news.ycombinator.com/item?id=45707108",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-25T21:26:08Z",
+      "description": "\n\u003cp\u003eWell connected with government, investors. Please comment\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45707108\"\u003ehttps://news.ycombinator.com/item?id=45707108\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Landonorris.com Stack Explained [video]",
+      "link": "https://www.youtube.com/watch?v=HzL65tTeANs",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-25T21:25:37Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.youtube.com/watch?v=HzL65tTeANs\"\u003ehttps://www.youtube.com/watch?v=HzL65tTeANs\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45707101\"\u003ehttps://news.ycombinator.com/item?id=45707101\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Leaving the Freedesktop.org Community",
+      "link": "https://vt.social/@lina/115431232807081648",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-25T21:23:50Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://vt.social/@lina/115431232807081648\"\u003ehttps://vt.social/@lina/115431232807081648\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45707095\"\u003ehttps://news.ycombinator.com/item?id=45707095\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    }
+  ],
+  "generatedAt": "2025-10-26T07:08:09.608307473+09:00"
+}
