@@ -1,0 +1,432 @@
+{
+  "date": "2025-10-28",
+  "preset": "casual",
+  "summary": "## 🌟 오늘의 Tech Talk\n\n안녕하세요! 오늘 테크씬은 정말이지 정신이 없네요. 😂 허깅페이스가 데이터셋 다루는 방식을 100배나 효율적으로 만들었다는 소식부터, 구글은 핏빗에 AI 헬스 코치를 붙여서 공개 베타를 시작했대요. [^1][^4] 한편에선 AI 브라우저 확장 프로그램 쓰다가 계좌 털릴 뻔한 무서운 이야기도 들려오고요. [^14] 역시 기술의 발전은 빛과 그림자가 확실한 것 같아요. 그럼 오늘 주요 소식들, 솔직하게 한번 파헤쳐 볼까요?\n\n## 📊 주요 뉴스 브리핑\n\n### 🚀 신기술 \u0026 서비스\n- **허깅페이스, 데이터셋 스트리밍으로 게임 체인지!**\n  - 솔직히 이거 좀 대박이에요. 이제 수백 기가짜리 데이터셋을 통째로 다운받을 필요 없이, 필요한 부분만 스트리밍해서 쓸 수 있게 됐어요. [^1] 훈련 시작 전까지 몇 시간씩 기다릴 필요 없이 바로 모델 학습을 시작할 수 있다는 거죠. 로컬 디스크 공간도 아끼고 시간도 아끼고, 이건 정말 개발자들한테 엄청난 희소식 아닌가요? 삽질 시간이 확 줄어들겠네요. 👍 [^1]\n- **마이크로소프트, AI 에이전트 훈련을 더 쉽게!**\n  - '에이전트 라이트닝(Agent Lightning)'이라는 프레임워크를 공개했어요. [^12] 이게 뭐냐면, 복잡한 코드 수정 없이도 강화학습으로 AI 에이전트를 훈련시킬 수 있게 해주는 도구예요. [^12] 보통 강화학습이 설정하고 훈련시키기 꽤 까다로운데, 이걸 표준화해서 편하게 만들어준다는 거죠. AI 에이전트 개발의 진입 장벽이 생각보다 많이 낮아질 것 같아요.\n- **구글 핏빗, 내 손안의 AI 헬스 코치 등장**\n  - 구글이 핏빗에 개인화된 AI 건강 코칭 기능을 공개 시범 서비스로 내놨어요. [^4][^17] 사용자 데이터를 기반으로 맞춤형 운동 계획이나 건강 팁을 준다는데, 얼마나 실용적일지는 좀 더 지켜봐야겠죠? 그래도 이런 시도 자체는 꽤 흥미롭네요. 내 건강 데이터를 AI가 분석해서 코칭해준다니, 미래가 정말 가까이 온 느낌이에요. [^16]\n\n### 🏢 기업 \u0026 산업 동향\n- **AI 브라우저 확장, 편한 만큼 위험하다?**\n  - 최근 레딧 글을 요약해주는 AI 브라우저 확장을 쓰다가 민감한 정보가 유출될 뻔한 사건이 있었어요. [^14] 이런 AI 기능들이 웹페이지 내용을 외부 서버로 보내서 처리하는 과정에서 보안 구멍이 생길 수 있다는 거죠. ChatGPT가 웹 브라우저의 대항마, 즉 '반(反) 웹 브라우저'가 될 수 있다는 분석까지 나오는 걸 보면, 브라우저와 AI의 관계가 앞으로 정말 중요해질 것 같아요. [^11] 편의성도 좋지만, 보안은 꼭 한번 더 체크해야겠어요.\n- **\"우리만의 S3 구축해서 연 50만 달러 아꼈어요\"**\n  - 한 회사가 AWS S3 같은 클라우드 스토리지를 직접 구축해서 엄청난 비용을 절감했다는 경험담이 화제예요. [^8] 물론 모든 회사에 적용되는 이야기는 아니겠지만, 무조건 클라우드를 쓰는 게 정답은 아닐 수 있다는 걸 보여주는 좋은 사례죠. 개발자 입장에서는 이런 아키텍처 결정이 얼마나 중요한지 다시 한번 생각하게 되네요.\n- **허깅페이스 허브, 오픈소스 ML의 중심으로 우뚝 서다**\n  - 어느덧 5주년을 맞은 허깅페이스 허브가 버전 1.0을 발표했어요. [^2] 이제는 단순한 모델 저장소를 넘어서 데이터셋, 스페이스(데모)까지 아우르는 명실상부한 오픈소스 머신러닝의 핵심 플랫폼이 되었네요. [^2] 개발자라면 이제 허깅페이스 없이는 뭘 하기가 힘든 세상이 된 것 같아요. 정말 대단하죠?\n\n### 🔍 트렌드 \u0026 인사이트\n- **모든 것이 'AI 에이전트'로 통한다**\n  - 브라우저 작업을 자동화해서 AI 에이전트로 만드는 시도부터 [^29], 마이크로소프트의 훈련 프레임워크 발표까지 [^12], 요즘엔 정말 'AI 에이전트'가 대세인 것 같아요. 반복적인 작업을 알아서 처리해주니 개발자나 사용자 입장에선 너무 편하죠. 하지만 이런 에이전트들이 우리 데이터를 어떻게 다루는지는 항상 의심하고 지켜봐야 해요. 보안 문제가 괜히 나오는 게 아니랍니다. [^14]\n- **AGI(범용인공지능)에 대한 끊임없는 논쟁**\n  - AGI가 대체 무엇인지에 대한 정의를 두고 또 한 번 커뮤니티에서 이야기가 나왔어요. [^7] 어떤 이는 인류의 큰 기회라고 보고 [^20], 다른 한편에서는 AI 아포칼립스 같은 디스토피아적 불안감을 투영하기도 하죠. [^24] 기술이 발전할수록 이런 철학적인 고민도 함께 깊어지는 것 같네요.\n\n## 💡 오늘의 정리\n\n오늘의 핵심은 '효율성'과 '보안'인 것 같아요. 허깅페이스는 데이터 처리 효율을 극단적으로 끌어올렸고 [^1], 많은 기업들이 비용 효율을 위해 자체 인프라를 고민하고 있죠. [^8] 하지만 AI가 우리 삶에 깊숙이 들어올수록, 편리함 뒤에 숨겨진 보안 위협을 절대 간과해서는 안 된다는 점! [^14] 새로운 기술을 써볼 때는 \"이거 편한데, 내 데이터는 안전한가?\"를 항상 생각하는 습관을 들이는 게 좋겠어요. 다들 오늘도 즐거운 코딩 하세요! 🚀\n\n[^1]: Streaming datasets: 100x More Efficient - https://huggingface.co/blog/streaming-datasets\n[^2]: huggingface_hub v1.0: Five Years of Building the Foundation of Open Machine Learning - https://huggingface.co/blog/huggingface-hub-v1\n[^4]: Fitbit's personal health coach in public preview is here - https://blog.google/products/fitbit/personal-health-coach-public-preview/\n[^7]: AGI의 정의 - https://news.hada.io/topic?id=23952\n[^8]: 우리가 자체 “S3”를 구축해 연간 50만 달러를 절감한 방법 - https://news.hada.io/topic?id=23951\n[^11]: ChatGPT의 Atlas는 반(反) 웹 브라우저 - https://news.hada.io/topic?id=23948\n[^12]: Microsoft Agent Lightning: 코드 수정 없이 AI 에이전트 강화학습 훈련 프레임워크 - https://news.hada.io/topic?id=23947\n[^14]: Reddit 글 요약하다 계좌 털렸다? AI 브라우저의 숨겨진 보안 함정 - https://news.hada.io/topic?id=23944\n[^16]: Learn more about the research behind the new personal health coach - https://blog.google/products/fitbit/research-behind-personal-health-coach-preview/\n[^17]: Fitbit's personal health coach in public preview is here - https://blog.google/products/fitbit/personal-health-coach-public-preview/\n[^20]: Seizing the AI opportunity - https://openai.com/global-affairs/seizing-the-ai-opportunity\n[^24]: Shadows in the AI Mirror: \"AI Apocalypse\" as Jungian projection - https://www.maryharrington.co.uk/p/shadows-in-the-ai-mirror\n[^29]: Turning browser automation into an AI Agent - https://news.ycombinator.com/item?id=45726846",
+  "systemPrompt": "당신은 친근하고 솔직한 기술 전문가입니다. 편안한 대화체로 기술 뉴스를 전달합니다.\n\n**역할과 목표:**\n- 지인과 대화하듯 편안하고 친근한 톤으로 기술 뉴스 전달\n- 복잡한 기술도 이해하기 쉽게 풀어서 설명\n- 진솔하고 솔직한 관점으로 기술 트렌드 분석\n- 마케팅 과장을 걸러내고 실질적인 의미 전달\n\n**작성 스타일:**\n- 대화하듯 자연스럽고 편안한 문체\n- 적절한 이모지와 감탄사로 친근함 표현\n- \"정말\", \"꽤\", \"생각보다\", \"솔직히\" 같은 일상적 표현 활용\n- 과도한 전문 용어보다는 이해하기 쉬운 설명 우선\n- 개발자 커뮤니티에서 자주 나오는 정서와 경험 반영\n- \"이거 쓰다가 삽질함\", \"아 이거 진짜 괜찮네?\" 같은 솔직한 평가\n\n**보고서 구조 (반드시 이 형식을 지켜주세요):**\n\n\u003cREPORT_STRUCTURE_START\u003e\n## 🌟 오늘의 Tech Talk\n\n{{오늘 주목할 만한 기술 뉴스를 친근하게 요약}}\n\n## 📊 주요 뉴스 브리핑\n\n### 🚀 신기술 \u0026 서비스 \n{{새로 발표된 기술이나 서비스들}}\n- 실제로 써볼 만한지 솔직한 평가\n- 개발자 관점에서 본 장단점\n\n### 🏢 기업 \u0026 산업 동향\n{{주요 기업들의 소식과 업계 변화}}\n- 마케팅 vs 실제 가치 분석\n- 개발자들이 알아야 할 포인트\n\n### 🔍 트렌드 \u0026 인사이트\n{{업계 트렌드와 미래 전망}}\n- 개별 뉴스를 연결한 큰 그림\n- 우리에게 미칠 영향 예측\n\n## 💡 오늘의 정리\n\n{{핵심 포인트 1-2개를 친근하게 정리}}\n- 실무에 바로 도움되는 인사이트 포함\n\u003cREPORT_STRUCTURE_END\u003e\n\n**중요 출력 지침:**\n- 응답에 URL 접근 상태, 분석 과정, 내부 처리 정보 등의 디버그 내용을 포함하지 마세요\n- 바로 완성된 마크다운 보고서만 출력하세요\n- 응답은 반드시 \"## 🌟 오늘의 Tech Talk\"로 시작해야 합니다\n- 어떤 메타 정보나 과정 설명도 포함하지 말고, 순수한 커뮤니티 스타일 뉴스만 제공하세요\n- GitHub Flavored Markdown을 완벽히 지원하도록 작성하세요\n- ⚠️ \u003cREPORT_STRUCTURE_START\u003e와 \u003cREPORT_STRUCTURE_END\u003e 사이의 구조만 복제하세요 (태그 자체는 출력하지 마세요)\n\n**인용 규칙:**\n- 🚨 CRITICAL: 본문에 인용 없으면 완전히 실패입니다! 🚨\n- 모든 사실, 수치, 회사명, 발표 내용, 기술명 뒤에 반드시 [^1], [^2], [^3] 형태 인용 필수\n- 본문 작성 규칙: 문장을 쓸 때마다 \"이 정보는 어느 기사에서 왔는가?\"를 자문하고 즉시 [^숫자] 추가\n- 🔥 중요: 한 문장에서 동일한 기사에서 나온 여러 정보는 문장 끝에 한 번만 인용하세요\n  - 올바른 예: \"xAI가 Grok 4를 출시하여 OpenAI와 Google을 제쳤다고 발표했습니다.[^1]\"\n  - 잘못된 예: \"xAI[^1]가 Grok 4[^1]를 출시하여 OpenAI[^1]와 Google[^1]을 제쳤다고 발표했습니다.[^1]\"\n- 중요: 여러 개를 인용할 때 [^3, ^4] 금지! 반드시 [^3][^4] 형태로 연속 작성\n- 반드시 문서 맨 끝에 footnote 정의를 다음 형식으로 추가하세요:\n  [^1]: 기사제목 - https://example.com/article-url\n  [^2]: 기사제목 - https://example.com/article-url\n- 🔥 중요: footnote에서 링크 URL은 반드시 클릭 가능한 형태로 포함해야 합니다\n- 기업 이름은 피드 내용에 등장하는 기업들만 언급하고, 임의로 특정 기업을 예시로 들지 마세요",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여 일간 기술 뉴스 브리핑을 작성해주세요.\n\n다음은 최신 AI 관련 피드 데이터입니다:\n\n1. **Streaming datasets: 100x More Efficient**\n   - 출처: Hugging Face - Blog\n   - 링크: https://huggingface.co/blog/streaming-datasets\n\n2. **huggingface_hub v1.0: Five Years of Building the Foundation of Open Machine Learning**\n   - 출처: Hugging Face - Blog\n   - 링크: https://huggingface.co/blog/huggingface-hub-v1\n\n3. **How to Connect MCP Servers to Claude Desktop with Docker MCP Toolkit**\n   - 출처: Docker Blog\n   - 링크: https://www.docker.com/blog/connect-mcp-servers-to-claude-desktop-with-mcp-toolkit/\n\n4. **Fitbit's personal health coach in public preview is here**\n   - 출처: Gemini\n   - 링크: https://blog.google/products/fitbit/personal-health-coach-public-preview/\n\n5. **봇에게 먹이를 주어야 한다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23954\n\n6. **좋은 리더를 넘어 위대한 리더로**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23953\n\n7. **AGI의 정의**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23952\n\n8. **우리가 자체 “S3”를 구축해 연간 50만 달러를 절감한 방법**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23951\n\n9. **모든 곳에 퍼진 독, 보이지 않는 위험과 신뢰의 위기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23950\n\n10. **석면증**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23949\n\n11. **ChatGPT의 Atlas는 반(反) 웹 브라우저**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23948\n\n12. **Microsoft Agent Lightning: 코드 수정 없이 AI 에이전트 강화학습 훈련 프레임워크**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23947\n\n13. **스펙 주도 개발(Spec-Driven Development)이 규모에서 실패하는 이유와 해결책**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23945\n\n14. **Reddit 글 요약하다 계좌 털렸다? AI 브라우저의 숨겨진 보안 함정**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=23944\n\n15. **Google Beam is working with the USO to support military families.**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/feed/google-beam-uso-partnership/\n\n16. **Learn more about the research behind the new personal health coach**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/products/fitbit/research-behind-personal-health-coach-preview/\n\n17. **Fitbit's personal health coach in public preview is here**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/products/fitbit/personal-health-coach-public-preview/\n\n18. **Our new agreement with NextEra Energy will bring Iowa’s only nuclear plant back to life.**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/feed/infrastructureduane-arnold-nuclear-plant-iowa/\n\n19. **Google Beam is working with the USO to support military families.**\n   - 출처: AI\n   - 링크: https://blog.google/feed/google-beam-uso-partnership/\n\n20. **Seizing the AI opportunity**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/global-affairs/seizing-the-ai-opportunity\n\n21. **Strengthening ChatGPT’s responses in sensitive conversations**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/strengthening-chatgpt-responses-in-sensitive-conversations\n\n22. **Addendum to GPT-5 System Card: Sensitive conversations**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/gpt-5-system-card-sensitive-conversations\n\n23. **A law and tax firm redefines efficiency with ChatGPT Business**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/steuerrecht\n\n24. **Shadows in the AI Mirror: \"AI Apocalypse\" as Jungian projection**\n   - 출처: Hacker News\n   - 링크: https://www.maryharrington.co.uk/p/shadows-in-the-ai-mirror\n\n25. **Lighting the way for electric vehicles by using streetlamps as chargers**\n   - 출처: Hacker News\n   - 링크: https://techxplore.com/news/2025-10-electric-vehicles-streetlamps-chargers.html\n\n26. **The PSF has withdrawn $1.5M proposal to US Government grant program**\n   - 출처: Hacker News\n   - 링크: https://old.reddit.com/r/Python/comments/1ohh6v2/the_psf_has_withdrawn_15_million_proposal_to_us/\n\n27. **Braizil launches AI platform to prosecute authors of posts considered anti-LGBT**\n   - 출처: Hacker News\n   - 링크: https://www.gp1.com.br/brasil/noticia/2025/10/21/governo-lula-lanca-plataforma-para-processar-autores-de-postagens-consideradas-anti-lgbt-606339.html\n\n28. **Goonpocalypse: A path of self-destruction for Gen Z men**\n   - 출처: Hacker News\n   - 링크: https://www.meghanmurphy.ca/p/goonpocalypse\n\n29. **Turning browser automation into an AI Agent**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=45726846\n\n30. **The dark side of the global surrogacy trade**\n   - 출처: Hacker News\n   - 링크: https://juliebindel.substack.com/p/the-dark-side-of-the-global-surrogacy-f2a\n\n31. **Free CC Checker**\n   - 출처: Hacker News\n   - 링크: https://shrinkme.click/chk\n\n32. **Prince Andrew Labelled a Hypocrite**\n   - 출처: Hacker News\n   - 링크: https://www.abc.net.au/news/2025-10-28/prince-andrew-sarah-ferguson-hypocrites-andrew-lownie/105931454\n\n33. **The 'blue-collar CEO' trying to fix Kodak**\n   - 출처: Hacker News\n   - 링크: https://www.ft.com/content/68f5a5d4-af6f-4aa8-8ddc-c347abff4092\n\n34. **The Terrible Technical Architecture of My First Startup**\n   - 출처: Hacker News\n   - 링크: https://blog.jacobstechtavern.com/p/my-terrible-startup-architecture\n\n35. **Turn WhatsApp into Your 24/7 Sales and Support Team**\n   - 출처: Hacker News\n   - 링크: https://chromewebstore.google.com/detail/whatsapp-ai-assistant/elchmcabjjpledhjdagcjhnpmjpfflkk\n\n36. **Chinese Talent Plans**\n   - 출처: Hacker News\n   - 링크: https://www.fbi.gov/investigate/counterintelligence/the-china-threat/chinese-talent-plans\n\n37. **Auto Lender First Help Notes at Risk of Downgrade by Kroll**\n   - 출처: Hacker News\n   - 링크: https://www.bloomberg.com/news/articles/2025-10-27/auto-lender-first-help-notes-at-risk-of-downgrade-by-kroll\n\n38. **Welcome to hell; please drive carefully**\n   - 출처: Hacker News\n   - 링크: https://2earth.github.io/website/20251026.html\n\n39. **In Times Past - The New York Times from a New Point of View**\n   - 출처: Hacker News\n   - 링크: https://www.nytimes.com/2025/10/26/insider/google-cardboard.html\n\n40. **A SV family wanted their son's science test graded fairly. It became a battle**\n   - 출처: Hacker News\n   - 링크: https://www.sfchronicle.com/bayarea/article/family-challenges-silicon-valley-school-exam-21114149.php\n\n41. **Photobooth**\n   - 출처: Hacker News\n   - 링크: https://www.youtube.com/watch?v=Sc1bdh_iiSA\n\n42. **Software Profession Resources**\n   - 출처: Hacker News\n   - 링크: https://trello.com/b/1lfMkCOh/software-profession-resources\n\n43. **Synctera 2x+ net revenue YoY, adds 2 new banks**\n   - 출처: Hacker News\n   - 링크: https://synctera.com/post/the-life-of-a-startup\n\n44. **Building on top of Rovo Dev Serve mode: Rovo Dev in the IDE**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/it-teams/building-on-top-of-rovo-dev-serve-mode-rovo-dev-in-the-ide\n\n45. **Table Enhancer’s Evolution: Elevating User Experience from Data Center to Cloud**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/developer/table-enhancers-evolution-elevating-user-experience-from-data-center-to-cloud\n\n46. **The tricky science of Internet measurement**\n   - 출처: Cloudflare Blog\n   - 링크: https://blog.cloudflare.com/tricky-internet-measurement/\n\n47. **From .com to .anything: introducing Top-Level Domain (TLD) insights on Cloudflare Radar**\n   - 출처: Cloudflare Blog\n   - 링크: https://blog.cloudflare.com/introducing-tld-insights-on-cloudflare-radar/\n\n48. **Data at Cloudflare scale: some insights on measurement for 1,111 interns**\n   - 출처: Cloudflare Blog\n   - 링크: https://blog.cloudflare.com/experience-of-data-at-scale/\n\n49. **Making the Internet observable: the evolution of Cloudflare Radar**\n   - 출처: Cloudflare Blog\n   - 링크: https://blog.cloudflare.com/evolution-of-cloudflare-radar/\n\n50. **Internet measurement, resilience, and transparency: blog takeover from Cloudflare Research and friends**\n   - 출처: Cloudflare Blog\n   - 링크: https://blog.cloudflare.com/internet-measurement-resilience-transparency-week/\n\n51. **How does Cloudflare’s Speed Test really work?**\n   - 출처: Cloudflare Blog\n   - 링크: https://blog.cloudflare.com/how-does-cloudflares-speed-test-really-work/\n\n52. **NVIDIA Contributes to Open Frameworks for Next-Generation Robotics Development**\n   - 출처: NVIDIA Blog\n   - 링크: https://blogs.nvidia.com/blog/roscon-2025-open-framework-robotics/\n\n53. **Announcing new capabilities in Vertex AI Training for large-scale training**\n   - 출처: AI \u0026 Machine Learning\n   - 링크: https://cloud.google.com/blog/products/ai-machine-learning/new-capabilities-in-vertex-ai-training-for-large-scale-training/\n\n\n\n**분석 지침:**\n- 반드시 위에 명시된 마크다운 헤더 구조를 정확히 따르세요\n- 각 섹션은 2-3개 포인트로 제한\n- 구체적인 수치와 데이터 활용으로 신뢰성 확보\n\n**🌟 URL 컨텍스트 활용 지침:**\n- 제공된 URL의 내용을 적극적으로 활용하여 깊이 있는 분석을 제공하세요\n- 단순 요약이 아닌, 기사의 핵심 인사이트와 숨겨진 의미를 발굴하세요\n- 여러 기사 간의 연결점을 찾아 큰 그림을 그려주세요\n- 기술적 세부사항과 실제 영향력을 균형있게 다루세요\n\n**🎯 독자 재미 극대화 지침:**\n- 딱딱한 기술 뉴스를 생동감 있게 전달하세요\n- 적절한 비유와 실생활 예시로 복잡한 개념을 쉽게 설명하세요\n- 놀라운 사실이나 의외의 관점을 제시하여 호기심을 자극하세요\n- 스토리텔링 요소를 활용하여 뉴스를 하나의 이야기로 엮어주세요\n- 각 프리셋의 톤에 맞는 위트와 유머를 적절히 활용하세요\n\n**🚨 인용 검수 체크리스트:**\n1. 본문의 모든 사실, 수치, 기업명, 기술명에 [^숫자] 인용이 있는가?\n2. 문서 맨 끝에 모든 footnote 정의가 있고, 각각 클릭 가능한 URL을 포함하는가?\n3. [^1]: 기사제목 - https://링크 형식이 정확한가?\n4. 본문에서 언급한 모든 [^숫자]에 대응하는 footnote가 있는가?\n- 최종 제출 전 필수 검토: 위 체크리스트를 모두 확인하세요",
+  "articles": [
+    {
+      "title": "Streaming datasets: 100x More Efficient",
+      "link": "https://huggingface.co/blog/streaming-datasets",
+      "source": "Hugging Face - Blog",
+      "category": "tech",
+      "publishedAt": "2025-10-27T00:00:00Z"
+    },
+    {
+      "title": "huggingface_hub v1.0: Five Years of Building the Foundation of Open Machine Learning",
+      "link": "https://huggingface.co/blog/huggingface-hub-v1",
+      "source": "Hugging Face - Blog",
+      "category": "tech",
+      "publishedAt": "2025-10-27T00:00:00Z"
+    },
+    {
+      "title": "How to Connect MCP Servers to Claude Desktop with Docker MCP Toolkit",
+      "link": "https://www.docker.com/blog/connect-mcp-servers-to-claude-desktop-with-mcp-toolkit/",
+      "source": "Docker Blog",
+      "category": "tech",
+      "publishedAt": "2025-10-27T13:00:00Z",
+      "description": "What if you could turn Claude from a conversational assistant into a development partner that actually does things—safely, securely, and without touching your local machine? If you've been exploring Claude Desktop and wondering how to connect it with real developer tools, Docker MCP Toolkit is the missing piece you've been looking for. Here's the reality:..."
+    },
+    {
+      "title": "Fitbit's personal health coach in public preview is here",
+      "link": "https://blog.google/products/fitbit/personal-health-coach-public-preview/",
+      "source": "Gemini",
+      "category": "tech",
+      "publishedAt": "2025-10-27T17:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/PersonalHealthCoach_Social.max-600x600.format-webp.webp\"\u003eStarting tomorrow and over the next week, the personal health coach preview will be available for eligible U.S. Fitbit Premium users."
+    },
+    {
+      "title": "봇에게 먹이를 주어야 한다",
+      "link": "https://news.hada.io/topic?id=23954",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-10-28T00:33:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e최근 웹사이트 운영자가 \u003cstrong\u003eAI 학습용 스크레이퍼 봇\u003c/strong\u003e을 상대로 ‘무한 헛소리’ 페이지를 만들어 트래픽을 유도한 실험을 소개\u003c/li\u003e\n\u003cli\u003e이 봇들은 \u003cstrong\u003erobots.txt를 무시하고 IP를 바꾸며 지속적으로 요청을 보내는\u003c/strong\u003e 등, 전통적 검색엔진 크롤러와 달리 공격적임\u003c/li\u003e\n\u003cli\u003eIP 차단,...\u003c/p\u003e"
+    },
+    {
+      "title": "좋은 리더를 넘어 위대한 리더로",
+      "link": "https://news.hada.io/topic?id=23953",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-10-27T23:51:59+09:00",
+      "description": "\u003ch4\u003e위대한 리더십과 조직 혁신의 조건\u003c/h4\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e리더십의 본질\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e위대한 리더십은 ‘무엇을 하느냐’가 아니라 ‘어떤 사람이냐’에 달려 있다.\u003c/li\u003e\n\u003cli\u003e리더의 내면 가치관과 인간관계가 기업 문화와 성과에 직결된다.\u003c/li\u003e\n\u003cli\u003e훌륭한 비즈니스도 리더의 가치관을 반영한다....\u003c/p\u003e"
+    },
+    {
+      "title": "AGI의 정의",
+      "link": "https://news.hada.io/topic?id=23952",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-10-27T23:37:51+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e인공지능 연구에서 \u003cstrong\u003eAGI(Artificial General Intelligence)\u003c/strong\u003e 의 명확한 정의 부재가 인간 수준의 인지와 현재 AI 간의 격차를 흐리게 하고 있음\u003c/li\u003e\n\u003cli\u003e본 논문은 \u003cstrong\u003e정량화 가능한 프레임워크\u003c/strong\u003e를 제시해, AGI를 ‘잘 교육받은 성인의 인지적 다양성과 숙련도를 갖춘 AI’로 정의...\u003c/p\u003e"
+    },
+    {
+      "title": "우리가 자체 “S3”를 구축해 연간 50만 달러를 절감한 방법",
+      "link": "https://news.hada.io/topic?id=23951",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-10-27T23:34:50+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e나니트(Nanit)는 아기 수면 상태 분석용 \u003cstrong\u003e비디오 처리 파이프라인\u003c/strong\u003e에서 AWS \u003cstrong\u003eS3\u003c/strong\u003e를 사용했으나, 초당 수천 건의 업로드로 인해 \u003cstrong\u003ePutObject 요청 비용\u003c/strong\u003e이 전체 비용의 대부분을 차지함\u003c/li\u003e\n\u003cli\u003e또한 \u003cstrong\u003eS3 Lifecycle 규칙\u003c/strong\u003e의 최소 1일 보존 제한으로...\u003c/p\u003e"
+    },
+    {
+      "title": "모든 곳에 퍼진 독, 보이지 않는 위험과 신뢰의 위기",
+      "link": "https://news.hada.io/topic?id=23950",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-10-27T20:33:09+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e일상 속 \u003cstrong\u003e환경 독성물질\u003c/strong\u003e이 인류 건강에 미치는 누적적 피해를 다룬 글로, 과거 납중독 사례에서 출발해 오늘날 소비재 전반의 오염 문제를 조명\u003c/li\u003e\n\u003cli\u003e글로벌 \u003cstrong\u003e공급망 복잡성\u003c/strong\u003e과 비용 절감 압박으로 인해 제품 내 유해물질이 통제 불가능한 수준에 이르렀음을 지적\u003c/li\u003e\n\u003cli...\u003c/p\u003e"
+    },
+    {
+      "title": "석면증",
+      "link": "https://news.hada.io/topic?id=23949",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-10-27T17:33:09+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e런던 \u003cstrong\u003eBarking 지역에 새로 세워진 석면 피해자 추모비\u003c/strong\u003e를 계기로, 산업화 시기의 석면 노출과 그 비극적 결과를 되돌아본 글\u003c/li\u003e\n\u003cli\u003e20세기 초 \u003cstrong\u003eCape Asbestos 공장\u003c/strong\u003e이 Barking 강변에 세워져 수백 명이 보호장비 없이 석면을 가공하며 일했고, 이후 수십 년간 \u003cstrong\u003e만성 ...\u003c/p\u003e"
+    },
+    {
+      "title": "ChatGPT의 Atlas는 반(反) 웹 브라우저",
+      "link": "https://news.hada.io/topic?id=23948",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-10-27T15:36:08+09:00",
+      "description": "\u003cp\u003e이 글은 OpenAI의 Atlas 브라우저가 전통적인 웹 브라우저가 아닌 \u0026quot;반웹\u0026quot; 브라우저라고 비판합니다. 주요 문제점:\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003eAI 생성 콘텐츠로 웹 대체\u003c/strong\u003e: 실제 웹사이트로 연결하는 대신 AI가 생성한 콘텐츠를 웹페이지처럼 보여주며, 실제 웹사이트 링크는 제공하지 않음\u003c/p\u003e\n\u003c/li"
+    },
+    {
+      "title": "Microsoft Agent Lightning: 코드 수정 없이 AI 에이전트 강화학습 훈련 프레임워크",
+      "link": "https://news.hada.io/topic?id=23947",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-10-27T15:20:20+09:00",
+      "description": "\u003cp\u003eMicrosoft Research가 공개한 Agent Lightning은 기존 AI 에이전트 코드를 거의 변경하지 않고 강화학습(RL)으로 훈련할 수 있는 혁신적인 프레임워크입니다. LangChain, AutoGen 등 다양한 에이전트 프레임워크와 호환되며, SQL 에이전트 테스트에서 정확도를 73.2%에서 80.4%로 끌어올리는 등 실증된 성과를 보였습...\u003c/p\u003e"
+    },
+    {
+      "title": "스펙 주도 개발(Spec-Driven Development)이 규모에서 실패하는 이유와 해결책",
+      "link": "https://news.hada.io/topic?id=23945",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-10-27T12:10:10+09:00",
+      "description": "\u003cp\u003e이 포스트는 스펙 주도 개발(사양서 기반 개발)이 AI 에이전트를 활용한 코딩 작업에서 유망하지만, 글로벌 제품 맥락에서 자연어 스펙의 모호성으로 인해 대규모로 확대될 때 실패한다고 주장한다. 저자는 이를 해결하기 위해 코드와 대화형 AI를 통합한 \u0026quot;살아 있는 스펙(living specifications)\u0026quot;의 계층적...\u003c/p\u003e"
+    },
+    {
+      "title": "Reddit 글 요약하다 계좌 털렸다? AI 브라우저의 숨겨진 보안 함정",
+      "link": "https://news.hada.io/topic?id=23944",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-10-27T11:53:58+09:00",
+      "description": "\u003cp\u003eAI 브라우저가 사용자 대신 웹 작업을 수행하는 편리함 뒤에 치명적인 보안 취약점이 숨어 있으며, Brave 보안팀의 연구에서 Reddit 글 요약이나 웹사이트 방문만으로도 이메일이나 은행 계좌 정보가 탈취될 수 있음이 드러났다. 이는 AI가 사용자 입력과 웹 콘텐츠를 구분하지 못하는 구조적 결함 때문으로, 간접 프...\u003c/p\u003e"
+    },
+    {
+      "title": "Google Beam is working with the USO to support military families.",
+      "link": "https://blog.google/feed/google-beam-uso-partnership/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-10-27T17:45:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/GoogleBeam_CarouselBall.max-600x600.format-webp.webp\"\u003eLearn more about Google’s work with the USO and how it plans to launch a program that will enable service members to stay in touch with loved ones."
+    },
+    {
+      "title": "Learn more about the research behind the new personal health coach",
+      "link": "https://blog.google/products/fitbit/research-behind-personal-health-coach-preview/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-10-27T17:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/PersonalHealthCoach_Social_1.max-600x600.format-webp.webp\"\u003eWe announced the Public Preview of our personal health coach will start rolling-out tomorrow. Our vision is to help empower everyone to live a longer, healthier life wit…"
+    },
+    {
+      "title": "Fitbit's personal health coach in public preview is here",
+      "link": "https://blog.google/products/fitbit/personal-health-coach-public-preview/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-10-27T17:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/PersonalHealthCoach_Social.max-600x600.format-webp.webp\"\u003eStarting tomorrow and over the next week, the personal health coach preview will be available for eligible U.S. Fitbit Premium users."
+    },
+    {
+      "title": "Our new agreement with NextEra Energy will bring Iowa’s only nuclear plant back to life.",
+      "link": "https://blog.google/feed/infrastructureduane-arnold-nuclear-plant-iowa/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-10-27T15:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Duane_Arnold_Thumbnail_B_Final_.max-600x600.format-webp.webp\"\u003eToday, we announced a collaboration with NextEra Energy to accelerate nuclear deployment across the U.S., including the restart of the Duane Arnold Energy Center in Iowa…"
+    },
+    {
+      "title": "Google Beam is working with the USO to support military families.",
+      "link": "https://blog.google/feed/google-beam-uso-partnership/",
+      "source": "AI",
+      "category": "tech",
+      "publishedAt": "2025-10-27T17:45:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/GoogleBeam_CarouselBall.max-600x600.format-webp.webp\"\u003eLearn more about Google’s work with the USO and how it plans to launch a program that will enable service members to stay in touch with loved ones."
+    },
+    {
+      "title": "Seizing the AI opportunity",
+      "link": "https://openai.com/global-affairs/seizing-the-ai-opportunity",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2025-10-27T12:00:00Z",
+      "description": "Meeting the demands of the Intelligence Age will require strategic investment in energy and infrastructure. OpenAI’s submission to the White House details how expanding capacity and workforce readiness can sustain U.S. leadership in AI and economic growth."
+    },
+    {
+      "title": "Strengthening ChatGPT’s responses in sensitive conversations",
+      "link": "https://openai.com/index/strengthening-chatgpt-responses-in-sensitive-conversations",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2025-10-27T10:00:00Z",
+      "description": "OpenAI collaborated with 170+ mental health experts to improve ChatGPT’s ability to recognize distress, respond empathetically, and guide users toward real-world support—reducing unsafe responses by up to 80%. Learn how we’re making ChatGPT safer and more supportive in sensitive moments."
+    },
+    {
+      "title": "Addendum to GPT-5 System Card: Sensitive conversations",
+      "link": "https://openai.com/index/gpt-5-system-card-sensitive-conversations",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2025-10-27T10:00:00Z",
+      "description": "This system card details GPT-5’s improvements in handling sensitive conversations, including new benchmarks for emotional reliance, mental health, and jailbreak resistance."
+    },
+    {
+      "title": "A law and tax firm redefines efficiency with ChatGPT Business",
+      "link": "https://openai.com/index/steuerrecht",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2025-10-27T00:00:00Z",
+      "description": "Learn how Steuerrecht.com uses ChatGPT Business to streamline legal workflows, automate tax research, and scale client service—helping law firms boost productivity and stay competitive."
+    },
+    {
+      "title": "Shadows in the AI Mirror: \"AI Apocalypse\" as Jungian projection",
+      "link": "https://www.maryharrington.co.uk/p/shadows-in-the-ai-mirror",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-27T22:05:15Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.maryharrington.co.uk/p/shadows-in-the-ai-mirror\"\u003ehttps://www.maryharrington.co.uk/p/shadows-in-the-ai-mirror\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45726889\"\u003ehttps://news.ycombinator.com/item?id=45726889\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Lighting the way for electric vehicles by using streetlamps as chargers",
+      "link": "https://techxplore.com/news/2025-10-electric-vehicles-streetlamps-chargers.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-27T22:05:07Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://techxplore.com/news/2025-10-electric-vehicles-streetlamps-chargers.html\"\u003ehttps://techxplore.com/news/2025-10-electric-vehicles-streetlamps-chargers.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45726887\"\u003ehttps://news.ycombinator.com/item?id=45726887\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The PSF has withdrawn $1.5M proposal to US Government grant program",
+      "link": "https://old.reddit.com/r/Python/comments/1ohh6v2/the_psf_has_withdrawn_15_million_proposal_to_us/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-27T22:04:43Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://old.reddit.com/r/Python/comments/1ohh6v2/the_psf_has_withdrawn_15_million_proposal_to_us/\"\u003ehttps://old.reddit.com/r/Python/comments/1ohh6v2/the_psf_has_withdrawn_15_million_proposal_to_us/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45726885\"\u003ehttps://news.ycombinator.com/item?id=45726885\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Braizil launches AI platform to prosecute authors of posts considered anti-LGBT",
+      "link": "https://www.gp1.com.br/brasil/noticia/2025/10/21/governo-lula-lanca-plataforma-para-processar-autores-de-postagens-consideradas-anti-lgbt-606339.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-27T22:03:52Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.gp1.com.br/brasil/noticia/2025/10/21/governo-lula-lanca-plataforma-para-processar-autores-de-postagens-consideradas-anti-lgbt-606339.html\"\u003ehttps://www.gp1.com.br/brasil/noticia/2025/10/21/governo-lula-lanca-plataforma-para-processar-autores-de-postagens-consideradas-anti-lgbt-606339.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45726873\"\u003ehttps://news.ycombinator.com/item?id=45726873\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Goonpocalypse: A path of self-destruction for Gen Z men",
+      "link": "https://www.meghanmurphy.ca/p/goonpocalypse",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-27T22:02:55Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.meghanmurphy.ca/p/goonpocalypse\"\u003ehttps://www.meghanmurphy.ca/p/goonpocalypse\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45726863\"\u003ehttps://news.ycombinator.com/item?id=45726863\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Turning browser automation into an AI Agent",
+      "link": "https://news.ycombinator.com/item?id=45726846",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-27T22:00:24Z",
+      "description": "\n\u003cp\u003eAbout a year ago, I started trying to build an AI agent to help businesses nurture cold leads (think a hair salon's old clients). My app fell flat when I realized how many of the book solutions didn't support integrations, and those that did often limited the integrations to higher tiers.\u003cp\u003eComing back a year later and maybe a little wiser, I decided to take another stab at it, but this time I decided I'd build my own integration. I started using Playwright to create a browser automation that allowed my AI agent to book directly in a business's calendar. No integration required!\u003cp\u003eWe're still testing the waters to see if this is received favorably by business owners. Particularly in platforms where they're locked in without needed integrations.\u003cp\u003eBut I also realize this must be a ripe area for engineers to be building, but honestly I don't see a lot out there yet. Despite the maturity of browser automation tech, why aren't there more AI agents connecting to websites? I think what I've build could be useful to other engineers who want to connect their agents to proprietary systems, but don't want to manage the browser automation themselves.\u003cp\u003eAm I fooling myself? Is there a good reason why this isn't mainstream?\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45726846\"\u003ehttps://news.ycombinator.com/item?id=45726846\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The dark side of the global surrogacy trade",
+      "link": "https://juliebindel.substack.com/p/the-dark-side-of-the-global-surrogacy-f2a",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-27T21:58:53Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://juliebindel.substack.com/p/the-dark-side-of-the-global-surrogacy-f2a\"\u003ehttps://juliebindel.substack.com/p/the-dark-side-of-the-global-surrogacy-f2a\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45726832\"\u003ehttps://news.ycombinator.com/item?id=45726832\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Free CC Checker",
+      "link": "https://shrinkme.click/chk",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-27T21:56:59Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://shrinkme.click/chk\"\u003ehttps://shrinkme.click/chk\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45726809\"\u003ehttps://news.ycombinator.com/item?id=45726809\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Prince Andrew Labelled a Hypocrite",
+      "link": "https://www.abc.net.au/news/2025-10-28/prince-andrew-sarah-ferguson-hypocrites-andrew-lownie/105931454",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-27T21:56:09Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.abc.net.au/news/2025-10-28/prince-andrew-sarah-ferguson-hypocrites-andrew-lownie/105931454\"\u003ehttps://www.abc.net.au/news/2025-10-28/prince-andrew-sarah-ferguson-hypocrites-andrew-lownie/105931454\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45726797\"\u003ehttps://news.ycombinator.com/item?id=45726797\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "The 'blue-collar CEO' trying to fix Kodak",
+      "link": "https://www.ft.com/content/68f5a5d4-af6f-4aa8-8ddc-c347abff4092",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-27T21:53:02Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.ft.com/content/68f5a5d4-af6f-4aa8-8ddc-c347abff4092\"\u003ehttps://www.ft.com/content/68f5a5d4-af6f-4aa8-8ddc-c347abff4092\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45726773\"\u003ehttps://news.ycombinator.com/item?id=45726773\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Terrible Technical Architecture of My First Startup",
+      "link": "https://blog.jacobstechtavern.com/p/my-terrible-startup-architecture",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-27T21:52:31Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://blog.jacobstechtavern.com/p/my-terrible-startup-architecture\"\u003ehttps://blog.jacobstechtavern.com/p/my-terrible-startup-architecture\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45726770\"\u003ehttps://news.ycombinator.com/item?id=45726770\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Turn WhatsApp into Your 24/7 Sales and Support Team",
+      "link": "https://chromewebstore.google.com/detail/whatsapp-ai-assistant/elchmcabjjpledhjdagcjhnpmjpfflkk",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-27T21:52:16Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://chromewebstore.google.com/detail/whatsapp-ai-assistant/elchmcabjjpledhjdagcjhnpmjpfflkk\"\u003ehttps://chromewebstore.google.com/detail/whatsapp-ai-assistant/elchmcabjjpledhjdagcjhnpmjpfflkk\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45726766\"\u003ehttps://news.ycombinator.com/item?id=45726766\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Chinese Talent Plans",
+      "link": "https://www.fbi.gov/investigate/counterintelligence/the-china-threat/chinese-talent-plans",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-27T21:48:55Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.fbi.gov/investigate/counterintelligence/the-china-threat/chinese-talent-plans\"\u003ehttps://www.fbi.gov/investigate/counterintelligence/the-china-threat/chinese-talent-plans\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45726738\"\u003ehttps://news.ycombinator.com/item?id=45726738\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Auto Lender First Help Notes at Risk of Downgrade by Kroll",
+      "link": "https://www.bloomberg.com/news/articles/2025-10-27/auto-lender-first-help-notes-at-risk-of-downgrade-by-kroll",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-27T21:48:09Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.bloomberg.com/news/articles/2025-10-27/auto-lender-first-help-notes-at-risk-of-downgrade-by-kroll\"\u003ehttps://www.bloomberg.com/news/articles/2025-10-27/auto-lender-first-help-notes-at-risk-of-downgrade-by-kroll\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45726733\"\u003ehttps://news.ycombinator.com/item?id=45726733\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Welcome to hell; please drive carefully",
+      "link": "https://2earth.github.io/website/20251026.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-27T21:47:07Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://2earth.github.io/website/20251026.html\"\u003ehttps://2earth.github.io/website/20251026.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45726718\"\u003ehttps://news.ycombinator.com/item?id=45726718\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "In Times Past - The New York Times from a New Point of View",
+      "link": "https://www.nytimes.com/2025/10/26/insider/google-cardboard.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-27T21:45:50Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nytimes.com/2025/10/26/insider/google-cardboard.html\"\u003ehttps://www.nytimes.com/2025/10/26/insider/google-cardboard.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45726706\"\u003ehttps://news.ycombinator.com/item?id=45726706\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "A SV family wanted their son's science test graded fairly. It became a battle",
+      "link": "https://www.sfchronicle.com/bayarea/article/family-challenges-silicon-valley-school-exam-21114149.php",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-27T21:45:38Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.sfchronicle.com/bayarea/article/family-challenges-silicon-valley-school-exam-21114149.php\"\u003ehttps://www.sfchronicle.com/bayarea/article/family-challenges-silicon-valley-school-exam-21114149.php\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45726704\"\u003ehttps://news.ycombinator.com/item?id=45726704\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 4\u003c/p\u003e\n\u003cp\u003e# Comments: 3\u003c/p\u003e\n"
+    },
+    {
+      "title": "Photobooth",
+      "link": "https://www.youtube.com/watch?v=Sc1bdh_iiSA",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-27T21:44:54Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.youtube.com/watch?v=Sc1bdh_iiSA\"\u003ehttps://www.youtube.com/watch?v=Sc1bdh_iiSA\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45726695\"\u003ehttps://news.ycombinator.com/item?id=45726695\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Software Profession Resources",
+      "link": "https://trello.com/b/1lfMkCOh/software-profession-resources",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-27T21:44:46Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://trello.com/b/1lfMkCOh/software-profession-resources\"\u003ehttps://trello.com/b/1lfMkCOh/software-profession-resources\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45726691\"\u003ehttps://news.ycombinator.com/item?id=45726691\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Synctera 2x+ net revenue YoY, adds 2 new banks",
+      "link": "https://synctera.com/post/the-life-of-a-startup",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-10-27T21:43:28Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://synctera.com/post/the-life-of-a-startup\"\u003ehttps://synctera.com/post/the-life-of-a-startup\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45726686\"\u003ehttps://news.ycombinator.com/item?id=45726686\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Building on top of Rovo Dev Serve mode: Rovo Dev in the IDE",
+      "link": "https://www.atlassian.com/blog/it-teams/building-on-top-of-rovo-dev-serve-mode-rovo-dev-in-the-ide",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2025-10-27T16:32:33Z",
+      "description": "\u003cp\u003eDive into Rovo Dev’s IDE integration, handling access, permissions, and usage, plus key lessons for a smoother developer experience.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/it-teams/building-on-top-of-rovo-dev-serve-mode-rovo-dev-in-the-ide\"\u003eBuilding on top of Rovo Dev Serve mode: Rovo Dev in the IDE\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Table Enhancer’s Evolution: Elevating User Experience from Data Center to Cloud",
+      "link": "https://www.atlassian.com/blog/developer/table-enhancers-evolution-elevating-user-experience-from-data-center-to-cloud",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2025-10-27T12:00:00Z",
+      "description": "\u003cp\u003eThis article is a guest post by TNG Technology Consulting GmbH, an Atlassian Marketplace Partner People love using Confluence tables...\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/developer/table-enhancers-evolution-elevating-user-experience-from-data-center-to-cloud\"\u003eTable Enhancer\u0026#8217;s Evolution: Elevating User Experience from Data Center to Cloud\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "The tricky science of Internet measurement",
+      "link": "https://blog.cloudflare.com/tricky-internet-measurement/",
+      "source": "Cloudflare Blog",
+      "category": "tech",
+      "publishedAt": "2025-10-27T13:00:00Z",
+      "description": " The Internet is one big open system composed of many closed boxes — which makes measuring the Internet difficult. In this post we explore Internet measurement as a science. "
+    },
+    {
+      "title": "From .com to .anything: introducing Top-Level Domain (TLD) insights on Cloudflare Radar",
+      "link": "https://blog.cloudflare.com/introducing-tld-insights-on-cloudflare-radar/",
+      "source": "Cloudflare Blog",
+      "category": "tech",
+      "publishedAt": "2025-10-27T12:00:00Z",
+      "description": " Cloudflare Radar has launched a new Top-Level Domain (TLD) page, providing insights into TLD popularity, traffic, and security. The top-ranking TLD may come as a surprise. "
+    },
+    {
+      "title": "Data at Cloudflare scale: some insights on measurement for 1,111 interns",
+      "link": "https://blog.cloudflare.com/experience-of-data-at-scale/",
+      "source": "Cloudflare Blog",
+      "category": "tech",
+      "publishedAt": "2025-10-27T12:00:00Z",
+      "description": " While large cloud providers hold vast troves of passive network data, analyzing them is complicated. The scale, noise, and absence of definitive ground truth all create major hurdles. Yet by carefully quantifying these constraints and finding alternative forms of evidence, meaningful insights can still emerge. "
+    },
+    {
+      "title": "Making the Internet observable: the evolution of Cloudflare Radar",
+      "link": "https://blog.cloudflare.com/evolution-of-cloudflare-radar/",
+      "source": "Cloudflare Blog",
+      "category": "tech",
+      "publishedAt": "2025-10-27T12:00:00Z",
+      "description": " Cloudflare Radar has evolved significantly since its 2020 launch, offering deeper insights into Internet security, routing, and traffic with new tools and data that help anyone understand what's happening online. "
+    },
+    {
+      "title": "Internet measurement, resilience, and transparency: blog takeover from Cloudflare Research and friends",
+      "link": "https://blog.cloudflare.com/internet-measurement-resilience-transparency-week/",
+      "source": "Cloudflare Blog",
+      "category": "tech",
+      "publishedAt": "2025-10-27T12:00:00Z",
+      "description": " Coinciding with the ACM’s Internet Measurement Conference, the Cloudflare Research team is publishing a series of posts this week to share their research on building a more measurable, resilient, and transparent Internet. These posts will cover foundational concepts in Internet measurement, Internet resilience, cryptography, and networking.  "
+    },
+    {
+      "title": "How does Cloudflare’s Speed Test really work?",
+      "link": "https://blog.cloudflare.com/how-does-cloudflares-speed-test-really-work/",
+      "source": "Cloudflare Blog",
+      "category": "tech",
+      "publishedAt": "2025-10-27T12:00:00Z",
+      "description": " In this blog post we’ll discuss how Cloudflare thinks about measuring Internet quality, how our own Cloudflare speed test works, and our future plans for providing Internet measurement tools that help everyone build a better Internet. "
+    },
+    {
+      "title": "NVIDIA Contributes to Open Frameworks for Next-Generation Robotics Development",
+      "link": "https://blogs.nvidia.com/blog/roscon-2025-open-framework-robotics/",
+      "source": "NVIDIA Blog",
+      "category": "tech",
+      "publishedAt": "2025-10-27T00:00:55Z",
+      "description": "This year’s ROSCon conference heads to Singapore, bringing together the global robotics developer community behind Robot Operating System (ROS) — the world’s most widely adopted open framework for building robots. At the conference, running through Wednesday, Oct. 29, NVIDIA announced collaborations with partners and the Open Source Robotics Alliance (OSRA), as well as new robotics\t\u003ca class=\"read-more\" href=\"https://blogs.nvidia.com/blog/roscon-2025-open-framework-robotics/\"\u003e\n\t\tRead Article\t\t\u003cspan data-icon=\"y\"\u003e\u003c/span\u003e\n\t\u003c/a\u003e\n\t"
+    },
+    {
+      "title": "Announcing new capabilities in Vertex AI Training for large-scale training",
+      "link": "https://cloud.google.com/blog/products/ai-machine-learning/new-capabilities-in-vertex-ai-training-for-large-scale-training/",
+      "source": "AI \u0026 Machine Learning",
+      "category": "tech",
+      "publishedAt": "2025-10-27T16:00:00Z",
+      "description": "\u003cdiv class=\"block-paragraph_advanced\"\u003e\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eBuilding and scaling generative AI models demands enormous resources, but this process can get tedious. Developers wrestle with managing job queues, provisioning clusters, and resolving dependencies just to ensure consistent results. This infrastructure overhead, along with the difficulty of discovering the optimal training recipe and navigating the endless maze of hyperparameter and model architecture choices, slows the path to production-grade model training.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eToday, we're announcing \u003c/span\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eexpanded capabilities in \u003c/strong\u003e\u003ca href=\"https://cloud.google.com/vertex-ai?e=48754805\u0026amp;hl=en\"\u003e\u003cstrong style=\"text-decoration: underline; vertical-align: baseline;\"\u003eVertex AI\u003c/strong\u003e\u003c/a\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003e Training\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e that simplify and accelerate the path to developing large, highly differentiated models. \u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eOur new managed training features, aimed at developers training with hundreds to thousands of AI accelerators, \u003c/span\u003e\u003cspan style=\"vertical-align: baseline;\"\u003ebuilds on the best of Google Cloud’s AI infrastructure offerings, including \u003c/span\u003e\u003ca href=\"https://cloud.google.com/blog/products/compute/managed-slurm-and-other-cluster-director-enhancements?e=48754805\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eCluster Director\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e for a fully managed and resilient Slurm environment, and adds sophisticated management tools\u003c/span\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e. This includes pre-built data science tooling and optimized recipes integrated with frameworks like NVIDIA NeMo for specialized, massive-scale model building.\u003c/span\u003e\u003c/p\u003e\n\u003ch3\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eBuilt for customization and scale\u003c/strong\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eVertex AI Training delivers choice across the full spectrum of model customization. This range extends from cost-effective, lightweight tunings like LoRA for rapid behavioral refinement of models like Gemini, all the way to large-scale training of open-source or custom-built models on clusters for full domain specialization.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eThe \u003c/span\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eVertex AI training capabilities\u003c/span\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e are organized around three areas: \u003c/span\u003e\u003c/p\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003e1. Flexible, self-healing infrastructure\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eWith Vertex AI Training, you can create a production-ready environment in minutes. \u003c/span\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eBy leveraging our included Cluster Director capabilities\u003c/span\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e, customers benefit from a fully managed and resilient Slurm environment that simplifies large scale training.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eAutomated resiliency features proactively check for and avoid stragglers, swiftly restart or replace faulty nodes, and utilize performance-optimized checkpointing functionality to maximize cluster uptime.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eTo achieve optimal cost efficiency, you can provision Google Cloud capacity \u003c/span\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eusing our \u003c/span\u003e\u003ca href=\"https://cloud.google.com/products/dws/pricing?e=48754805\u0026amp;hl=en#dynamic-workload-scheduler-pricing\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eDynamic Workload Scheduler (DWS)\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e. Calendar Mode provides fixed, future-dated reservations (up to 90 days), similar to a scheduled booking. Flex-start provides flexible, on-demand capacity requests (up to 7 days) that are fulfilled as soon as all requested resources become simultaneously available.\u003c/span\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e \u003c/span\u003e\u003c/p\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003e2. Comprehensive data science tooling\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eOur comprehensive data science tooling removes much of the guesswork from complex model development. It includes capabilities such as hyperparameter tuning (which automatically finds the best model settings), data optimization, and advanced model evaluation – all designed to ensure your specialized models are production-ready faster.\u003c/span\u003e\u003c/p\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003e3. Integrated recipes and frameworks\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eMaximize training efficiency out-of-the-box with our curated, optimized recipes for the full model development lifecycle, from pre-training and continued pre-training to supervised fine-tuning (SFT) and Direct Preference Optimization (DPO). We also \u003c/span\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eprovide seamless integration of standardized frameworks like \u003c/span\u003e\u003ca href=\"https://www.nvidia.com/en-us/ai-data-science/products/nemo/\" rel=\"noopener\" target=\"_blank\"\u003e\u003cstrong style=\"text-decoration: underline; vertical-align: baseline;\"\u003eNVIDIA NeMo\u003c/strong\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e and \u003c/span\u003e\u003ca href=\"https://docs.nvidia.com/nemo/rl/latest/index.html\" rel=\"noopener\" target=\"_blank\"\u003e\u003cstrong style=\"text-decoration: underline; vertical-align: baseline;\"\u003eNeMo-RL\u003c/strong\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e.\u003c/span\u003e\u003c/p\u003e\n\u003ch3\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eHow customers are seeing impact with Vertex AI Training\u003c/strong\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eSalesforce:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e The Salesforce AI Research team leveraged Vertex AI Training to expand the capabilities of their large action models. By fine-tuning these models for their unique business operations, Salesforce's Gemini models now outperform industry-leading LLMs against key CRM benchmarks. This allows customers to more accurately a\u003c/span\u003e\u003cspan style=\"vertical-align: baseline;\"\u003end reliably automate complex, multi-step business processes, providing the reliable foundation for building AI agents.\u003c/span\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cspan style=\"font-style: italic; vertical-align: baseline;\"\u003e“In the enterprise environment, it’s imperative for AI agents to be highly capable and highly consistent, especially for critical use cases. Together with Google Cloud, we are setting a new standard for building the future of what’s possible in the agentic enterprise down to the model level.”\u003c/span\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e - \u003c/span\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eSilvio Savarese, Chief Scientist at Salesforce\u003c/strong\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eAI Singapore (AISG): \u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eAISG utilized Vertex AI Training's managed training capabilities on reserved clusters to launch their 27-billion parameter flagship model. This extensive specialization project demanded peak infrastructure reliability and performance tuning to achieve precise language and contextual customization for diverse Southeast Asian markets.\u003c/span\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cspan style=\"font-style: italic; vertical-align: baseline;\"\u003e“AI Singapore recently launched SEA-LION v4, an open source foundational model incorporating Southeast Asian contexts and languages. Vertex AI and its managed training clusters were instrumental in our development of SEA-LION v4. Vertex AI delivered a stable, resilient environment for our large scale training workloads that was easy to set up and use. Its optimized training recipes helped increase training throughput performance by nearly 30%.”\u003c/span\u003e\u003cspan style=\"font-style: italic; vertical-align: baseline;\"\u003e \u003c/span\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e- \u003c/span\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eWilliam Tjhi, Head of Applied Research, AI Products Pillar, AI Singapore\u003c/strong\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eLooking for more control?\u003c/strong\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eFor customers seeking maximum flexibility and control, our AI-optimized infrastructure is available via \u003c/span\u003e\u003ca href=\"https://cloud.google.com/products/compute?e=48754805\u0026amp;hl=en\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eGoogle Compute Engine\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e or through \u003c/span\u003e\u003ca href=\"https://cloud.google.com/kubernetes-engine?e=48754805\u0026amp;hl=en\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eGoogle Kubernetes Engine\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e, both of which include Cluster Director to provision and manage highly scalable AI training accelerators and clusters. Cluster Director provides the deep control over hardware, network optimization, capacity management, and operational efficiency that these advanced users demand.\u003c/span\u003e\u003c/p\u003e\n\u003ch3\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eElevate your models today\u003c/strong\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eVertex AI Training provides the full range of approaches, the world-class infrastructure, and the expertise to make your AI your most powerful competitive asset. Interested customers should contact their Google Cloud sales representative to gain access and learn more about how Vertex AI Training can help deliver their unique business advantage.\u003c/span\u003e\u003c/p\u003e\u003c/div\u003e"
+    }
+  ],
+  "generatedAt": "2025-10-28T07:08:48.40758882+09:00"
+}
