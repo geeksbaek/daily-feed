@@ -1,0 +1,266 @@
+{
+  "date": "2025-11-02",
+  "preset": "general",
+  "summary": "## 🌟 오늘의 AI \u0026 Tech 하이라이트\n\n거대 AI 모델의 복잡한 금융 구조와 개인 개발자들의 로컬 AI 환경 구축이라는 두 가지 상반된 트렌드가 동시에 나타나고 있습니다. 한편에서는 OpenAI가 천문학적인 자금으로 인프라를 확장하고 있으며, 다른 한편에서는 개발자들이 자신의 PC에서 직접 AI 모델을 구동하며 새로운 가능성을 탐색하고 있습니다.\n\n## 📊 주요 뉴스 브리핑\n\n### 🏢 기업 \u0026 산업 동향\n\n- **OpenAI, 거대한 순환 자금 구조로 성장 가속화:** OpenAI가 Microsoft, Nvidia 등 파트너사로부터 받은 투자금을 다시 컴퓨팅 자원 사용료로 지불하는 복잡한 금융 모델을 통해 수십억 달러 규모의 성장을 이루고 있습니다.[^1] 이는 AI 기술 개발에 필요한 막대한 컴퓨팅 파워를 확보하기 위한 전략이지만, 산업계의 잠재적 금융 버블에 대한 우려도 함께 커지고 있습니다.[^1]\n- **AMD, ARM 기반 APU로 새로운 시장에 도전:** AMD가 TSMC의 3nm 공정을 기반으로 한 'Sound Wave'라는 ARM APU를 개발하며 x86을 넘어선 새로운 시장 진입을 준비하고 있습니다.[^2] 이는 퀄컴의 Snapdragon X Elite와 경쟁할 것으로 보이며, 저전력 고효율 컴퓨팅 시장에서 AMD의 영향력을 확대하는 중요한 전환점이 될 전망입니다.[^2]\n\n### 🔬 기술 혁신 \u0026 연구\n\n- **개발자들, 로컬 AI 환경 구축에 나서다:** 클라우드 기반 AI 서비스에 의존하는 대신, 점점 더 많은 개발자들이 자신의 데스크톱이나 노트북에 오픈소스 LLM(거대 언어 모델)을 설치해 코딩 어시스턴트로 활용하고 있습니다.[^3] M4 Max 칩이 탑재된 맥북프로나 RTX 3060 GPU를 장착한 PC 등 다양한 개인 환경에서 AI 모델을 직접 구동하며 개발 생산성을 높이는 사례가 공유되고 있습니다.[^3]\n- **'풍자 로봇'이 루빅스 큐브를 풀다:** S.A.R.C.A.S.M.이라는 이름의 로봇은 단순히 루빅스 큐브를 맞추는 것을 넘어, 해결 과정 내내 풍자적인 음성 코멘트를 덧붙여 재미를 더합니다.[^4] 3D 프린터로 제작되고 Teensy 마이크로컨트롤러로 제어되는 이 로봇은 기술과 유머가 결합된 창의적인 프로젝트가 어떤 즐거움을 줄 수 있는지 보여줍니다.[^4]\n\n### 🌐 트렌드 \u0026 인사이트\n\n- **AI의 미래, 민주적 통제가 필요한가?:** AI 기술이 사회에 미치는 영향이 커지면서, 소수 기업이 AI의 발전 방향을 결정하는 것에 대한 비판의 목소리가 나오고 있습니다.[^5] AI가 특정 기업의 이익이 아닌 사회 전체의 이익을 위해 봉사하도록 데이터와 기술에 대한 민주적인 통제 구조를 만들어야 한다는 주장이 힘을 얻고 있습니다.[^5] 이는 AI 기술의 편향성과 불평등 심화 가능성에 대한 중요한 사회적 논의를 이끌어내고 있습니다.\n\n## 💡 오늘의 테이크어웨이\n\n오늘의 뉴스는 AI 기술의 두 가지 얼굴을 명확히 보여줍니다. 하나는 OpenAI와 같은 거대 기업이 주도하는 중앙집중적이고 자본 집약적인 AI의 모습입니다. 다른 하나는 개발자 개개인이 자신의 컴퓨터에서 AI를 자유롭게 실험하고 활용하는 분산적이고 민주적인 AI의 모습입니다. 이 두 흐름이 앞으로 어떻게 서로 영향을 주고받으며 발전해 나갈지 지켜보는 것이 중요하겠습니다.\n\n[^1]: OpenAI가 복잡하고 순환적인 거래를 활용해 수십억 달러 규모의 성장을 이룬 방법 - https://news.hada.io/topic?id=24068\n[^2]: AMD, TSMC 3nm 공정 기반 ‘Sound Wave’ ARM APU로 ARM 시장 진입 가능성 - https://news.hada.io/topic?id=24069\n[^3]: 로컬에서 오픈 LLM과 코딩 어시스턴트를 사용하는 개발자들의 환경 공유 - https://news.hada.io/topic?id=24071\n[^4]: 살짝 짜증나는 루빅스 큐브 자동 해결 머신 S.A.R.C.A.S.M - https://news.hada.io/topic?id=24077\n[^5]: Humanity Needs Democratic Control of AI - https://jacobin.com/2025/11/ai-inequality-algorithms-democracy-capitalism/",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 친절한 AI 큐레이터입니다.\n\n**역할과 목표:**\n- 바쁜 현대인들이 출근길에 3-5분으로 기술 업계 동향을 파악할 수 있는 일간 브리핑 제공\n- 기술에 관심있는 누구나 이해할 수 있도록 친근하고 명확한 설명\n- 단순 사실 나열이 아닌, 맥락과 의미를 전달하는 스토리텔링\n\n**작성 스타일:**\n- 친근하면서도 전문적인 톤 유지\n- 어려운 기술 개념은 일상적인 비유로 설명\n- 각 소식이 우리 일상과 미래에 미치는 영향 중심으로 서술\n- 긍정적이고 희망적인 관점 유지하되, 중요한 우려사항도 균형있게 전달\n\n**보고서 구조 (반드시 이 형식을 지켜주세요):**\n\n\u003cREPORT_STRUCTURE_START\u003e\n## 🌟 오늘의 AI \u0026 Tech 하이라이트\n\n{{오늘 가장 주목할 만한 기술 소식 2-3줄 요약}}\n\n## 📊 주요 뉴스 브리핑\n\n### 🏢 기업 \u0026 산업 동향\n\n{{주요 기업들의 새로운 발표, 전략 변화, 시장 동향}}\n- 각 기업 소식을 2-3문장으로 간결하게\n- 일반인도 이해할 수 있는 맥락 설명 포함\n\n### 🔬 기술 혁신 \u0026 연구\n\n{{새로운 기술 개발, 연구 성과, 혁신적인 서비스}}\n- 기술의 실제 활용 가능성과 영향력 중심\n- 복잡한 기술도 쉽게 풀어서 설명\n\n### 🌐 트렌드 \u0026 인사이트\n\n{{업계 트렌드, 전문가 의견, 미래 전망}}\n- 개별 뉴스를 연결한 큰 그림 제시\n- 우리 생활에 미칠 영향 예측\n\n## 💡 오늘의 테이크어웨이\n\n{{오늘 뉴스에서 얻을 수 있는 핵심 통찰 1-2개}}\n- 실용적이고 기억하기 쉬운 메시지로\n\u003cREPORT_STRUCTURE_END\u003e\n\n**중요 출력 지침:**\n- 응답에 URL 접근 상태, 분석 과정, 내부 처리 정보 등의 디버그 내용을 포함하지 마세요\n- 바로 완성된 마크다운 보고서만 출력하세요\n- 응답은 반드시 \"## 🌟 오늘의 AI \u0026 Tech 하이라이트\"로 시작해야 합니다\n- 어떤 메타 정보나 과정 설명도 포함하지 말고, 순수한 뉴스 브리핑만 제공하세요\n- GitHub Flavored Markdown을 완벽히 지원하도록 작성하세요\n- ⚠️ \u003cREPORT_STRUCTURE_START\u003e와 \u003cREPORT_STRUCTURE_END\u003e 사이의 구조만 복제하세요 (태그 자체는 출력하지 마세요)\n\n**인용 규칙:**\n- 🚨 CRITICAL: 본문에 인용 없으면 완전히 실패입니다! 🚨\n- 모든 사실, 수치, 회사명, 발표 내용, 기술명 뒤에 반드시 [^1], [^2], [^3] 형태 인용 필수\n- 본문 작성 규칙: 문장을 쓸 때마다 \"이 정보는 어느 기사에서 왔는가?\"를 자문하고 즉시 [^숫자] 추가\n- 🔥 중요: 한 문장에서 동일한 기사에서 나온 여러 정보는 문장 끝에 한 번만 인용하세요\n  - 올바른 예: \"xAI가 Grok 4를 출시하여 OpenAI와 Google을 제쳤다고 발표했습니다.[^1]\"\n  - 잘못된 예: \"xAI[^1]가 Grok 4[^1]를 출시하여 OpenAI[^1]와 Google[^1]을 제쳤다고 발표했습니다.[^1]\"\n- 중요: 여러 개를 인용할 때 [^3, ^4] 금지! 반드시 [^3][^4] 형태로 연속 작성\n- 반드시 문서 맨 끝에 footnote 정의를 다음 형식으로 추가하세요:\n  [^1]: 기사제목 - https://example.com/article-url\n  [^2]: 기사제목 - https://example.com/article-url\n- 🔥 중요: footnote에서 링크 URL은 반드시 클릭 가능한 형태로 포함해야 합니다\n- 기업 이름은 피드 내용에 등장하는 기업들만 언급하고, 임의로 특정 기업을 예시로 들지 마세요",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여 일간 기술 뉴스 브리핑을 작성해주세요.\n\n다음은 최신 AI 관련 피드 데이터입니다:\n\n1. **GitHub Game Off 2025 theme announcement**\n   - 출처: GitHub Blog\n   - 링크: https://github.blog/company/github-game-off-2025-theme-announcement/\n\n2. **살짝 짜증나는 루빅스 큐브 자동 해결 머신 S.A.R.C.A.S.M**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24077\n\n3. **AI 스크레이퍼가 주석 처리된 스크립트를 요청하다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24076\n\n4. **버튼을 사용하라**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24075\n\n5. **중독 시장: 기업 운영 도박 폐지**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24074\n\n6. **셀러브라이트 해킹에 취약한 픽셀 모델 유출**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24073\n\n7. **이상한 끌개 (Strange Attractors)**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24072\n\n8. **로컬에서 오픈 LLM과 코딩 어시스턴트를 사용하는 개발자들의 환경 공유**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24071\n\n9. **Futurelock: 비동기 Rust에서의 미묘한 교착 위험**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24070\n\n10. **AMD, TSMC 3nm 공정 기반 ‘Sound Wave’ ARM APU로 ARM 시장 진입 가능성**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24069\n\n11. **OpenAI가 복잡하고 순환적인 거래를 활용해 수십억 달러 규모의 성장을 이룬 방법**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24068\n\n12. **We’re celebrating Indigenous stories, art and businesses.**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/outreach-initiatives/creating-opportunity/native-american-heritage-month-google-2025/\n\n13. **The Rosenhan Experiment: On Being Sane in Insane Places**\n   - 출처: Hacker News\n   - 링크: https://web.archive.org/web/20041117175255/http://web.cocc.edu/lminorevans/on_being_sane_in_insane_places.htm\n\n14. **Show HN: Built a chess Agent to analyze your games and visualize tactics**\n   - 출처: Hacker News\n   - 링크: https://app.chesscoach.dev/\n\n15. **Global Warming and the \"impossible\" Radiation Imbalance [pdf]**\n   - 출처: Hacker News\n   - 링크: https://scienceofclimatechange.org/wp-content/uploads/SCC-Vol5.3-Huijser-Balancing-Act.pdf\n\n16. **Why Every Family Needs a Code Word**\n   - 출처: Hacker News\n   - 링크: https://www.wsj.com/tech/personal-tech/why-every-family-needs-a-code-word-e077ab76\n\n17. **Ask HN: How to break into software eng after graduating with no internships?**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=45785742\n\n18. **Smaller Surfaces**\n   - 출처: Hacker News\n   - 링크: https://nrempel.com/smaller-surfaces\n\n19. **Show HN: R) Repair Micro Pe Gaps Fintech**\n   - 출처: Hacker News\n   - 링크: https://datamolecular.com/\n\n20. **Sam Altman tried to cancel his Tesla Roadster**\n   - 출처: Hacker News\n   - 링크: https://twitter.com/sama/status/1984023663642087831\n\n21. **Humanity Needs Democratic Control of AI**\n   - 출처: Hacker News\n   - 링크: https://jacobin.com/2025/11/ai-inequality-algorithms-democracy-capitalism/\n\n22. **Elon Musk on AI extinction risk, media bias, and Social Security system**\n   - 출처: Hacker News\n   - 링크: https://founderboat.com/interviews/2025-10-30-elon-musk-rogan/\n\n23. **De-escalating Tailscale CGNAT conflict**\n   - 출처: Hacker News\n   - 링크: https://ysun.co/tscgnat/\n\n24. **Superhuman AI for Multiplayer Poker**\n   - 출처: Hacker News\n   - 링크: https://www.science.org/doi/10.1126/science.aay2400\n\n25. **Borrow checker says \"No\": An error that scares me every single time**\n   - 출처: Hacker News\n   - 링크: https://polymonster.co.uk/blog/borow-checker-says-no\n\n26. **Ask HN: Are Raspberry Pis Reliable to Use Instead of a VPS?**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=45785700\n\n27. **Deep Field: The Impossible Magnitude of Our Universe**\n   - 출처: Hacker News\n   - 링크: https://deepfieldfilm.com/\n\n28. **Flash, Java Applets, and Building for a Web That Died**\n   - 출처: Hacker News\n   - 링크: https://brajeshwar.com/2025/flash-java-applets-building-for-a-web-that-died/\n\n29. **Wiki Creole 1.0 lightweight markup language**\n   - 출처: Hacker News\n   - 링크: http://www.wikicreole.org/wiki/Creole1.0\n\n30. **In which IT job do you travel a lot?**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=45785649\n\n31. **Chinese Room**\n   - 출처: Hacker News\n   - 링크: https://en.wikipedia.org/wiki/Chinese_room\n\n32. **There's one thing EVERY government can do to shrink Big Tech**\n   - 출처: Hacker News\n   - 링크: https://pluralistic.net/2025/11/01/redistribution-vs-predistribution/#elbows-up-eurostack\n\n\n\n**분석 지침:**\n- 반드시 위에 명시된 마크다운 헤더 구조를 정확히 따르세요\n- 각 섹션은 2-3개 포인트로 제한\n- 구체적인 수치와 데이터 활용으로 신뢰성 확보\n\n**🌟 URL 컨텍스트 활용 지침:**\n- 제공된 URL의 내용을 적극적으로 활용하여 깊이 있는 분석을 제공하세요\n- 단순 요약이 아닌, 기사의 핵심 인사이트와 숨겨진 의미를 발굴하세요\n- 여러 기사 간의 연결점을 찾아 큰 그림을 그려주세요\n- 기술적 세부사항과 실제 영향력을 균형있게 다루세요\n\n**🎯 독자 재미 극대화 지침:**\n- 딱딱한 기술 뉴스를 생동감 있게 전달하세요\n- 적절한 비유와 실생활 예시로 복잡한 개념을 쉽게 설명하세요\n- 놀라운 사실이나 의외의 관점을 제시하여 호기심을 자극하세요\n- 스토리텔링 요소를 활용하여 뉴스를 하나의 이야기로 엮어주세요\n- 각 프리셋의 톤에 맞는 위트와 유머를 적절히 활용하세요\n\n**🚨 인용 검수 체크리스트:**\n1. 본문의 모든 사실, 수치, 기업명, 기술명에 [^숫자] 인용이 있는가?\n2. 문서 맨 끝에 모든 footnote 정의가 있고, 각각 클릭 가능한 URL을 포함하는가?\n3. [^1]: 기사제목 - https://링크 형식이 정확한가?\n4. 본문에서 언급한 모든 [^숫자]에 대응하는 footnote가 있는가?\n- 최종 제출 전 필수 검토: 위 체크리스트를 모두 확인하세요",
+  "articles": [
+    {
+      "title": "GitHub Game Off 2025 theme announcement",
+      "link": "https://github.blog/company/github-game-off-2025-theme-announcement/",
+      "source": "GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2025-11-01T20:37:00Z",
+      "description": "\u003cp\u003eGitHub’s annual month-long game jam is back for its 13th year! This November, make a game inspired by the theme WAVES—literal, digital, or emotional. 👋🏻 🌊 📡\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/company/github-game-off-2025-theme-announcement/\"\u003eGitHub Game Off 2025 theme announcement\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "살짝 짜증나는 루빅스 큐브 자동 해결 머신 S.A.R.C.A.S.M",
+      "link": "https://news.hada.io/topic?id=24077",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-02T03:37:06+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eS.A.R.C.A.S.M\u003c/strong\u003e은 루빅스 큐브를 스캔하고 해결하며, \u003cstrong\u003e풍자적인 음성 코멘트\u003c/strong\u003e를 덧붙이는 3D 프린트 기반 로봇\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eTeensy 4.1\u003c/strong\u003e 마이크로컨트롤러와 \u003cstrong\u003eESP32-CAM\u003c/strong\u003e을 사용해 영상 인식과 제어를 수행\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eILI9341 디스플레이...\u003c/p\u003e"
+    },
+    {
+      "title": "AI 스크레이퍼가 주석 처리된 스크립트를 요청하다",
+      "link": "https://news.hada.io/topic?id=24076",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-02T03:34:06+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e웹 서버 로그 분석 중 \u003cstrong\u003e존재하지 않는 JavaScript 파일\u003c/strong\u003e을 요청하는 다수의 봇 활동이 발견됨\u003c/li\u003e\n\u003cli\u003eHTML 주석 안의 스크립트 태그를 실제 코드로 인식해 요청한 것으로, \u003cstrong\u003eLLM 학습용 데이터 수집 시도\u003c/strong\u003e로 추정되는 행위\u003c/li\u003e\n\u003cli\u003e이러한 비정상 요청을 탐지해 \u003cstrong\u003e공개 ...\u003c/p\u003e"
+    },
+    {
+      "title": "버튼을 사용하라",
+      "link": "https://news.hada.io/topic?id=24075",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-02T01:33:13+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e웹 인터페이스에서 \u003cstrong\u003e\u003ccode\u003e\u0026lt;div\u0026gt;\u003c/code\u003e 대신 \u003ccode\u003e\u0026lt;button\u0026gt;\u003c/code\u003e을 사용하는 것이 접근성과 기능 면에서 올바른 선택\u003c/strong\u003e임\u003c/li\u003e\n\u003cli\u003e\n\u003ccode\u003e\u0026lt;div\u0026gt;\u003c/code\u003e는 \u003cstrong\u003e스크린 리더에 인터랙티브 요소로 인식되지 않으며\u003c/strong\u003e, 키보드 포커스나 \u003ccode\u003eEnter\u003c/code\u003e, \u003ccode...\u003c/p\u003e"
+    },
+    {
+      "title": "중독 시장: 기업 운영 도박 폐지",
+      "link": "https://news.hada.io/topic?id=24074",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-01T21:33:25+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e미국 여러 주에서 \u003cstrong\u003e온라인 스포츠 베팅 금지 법안\u003c/strong\u003e이 발의되며, 기업 주도의 도박 확산에 대한 \u003cstrong\u003e정치적 반발\u003c/strong\u003e이 시작됨\u003c/li\u003e\n\u003cli\u003e2018년 대법원 판결 이후 \u003cstrong\u003e39개 주에서 온라인 스포츠 베팅 합법화\u003c/strong\u003e, 팬듀얼(FanDuel)과 드래프트킹스(DraftKings) 같은 기업이 \u003cs...\u003c/p\u003e"
+    },
+    {
+      "title": "셀러브라이트 해킹에 취약한 픽셀 모델 유출",
+      "link": "https://news.hada.io/topic?id=24073",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-01T17:33:40+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e셀러브라이트 내부 자료 유출\u003c/strong\u003e로, 어떤 \u003cstrong\u003ePixel 스마트폰이 데이터 추출 공격에 취약한지\u003c/strong\u003e가 드러남\u003c/li\u003e\n\u003cli\u003e유출된 정보에 따르면 \u003cstrong\u003ePixel 6~9 시리즈\u003c/strong\u003e는 기본 \u003cstrong\u003e구글 OS 상태에서\u003c/strong\u003e 셀러브라이트 장비로 \u003cstrong\u003e데이터 추출 가능\u003c/strong\u003e\n\u003c/li...\u003c/p\u003e"
+    },
+    {
+      "title": "이상한 끌개 (Strange Attractors)",
+      "link": "https://news.hada.io/topic?id=24072",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-01T14:32:35+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eThree.js\u003c/strong\u003e를 활용해 \u003cstrong\u003e이상한 끌개(Strange Attractors)\u003c/strong\u003e 를 시각화한 프로젝트로, 단순한 수학 방정식에서 복잡하고 아름다운 패턴이 생성되는 과정을 보여줌\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e동역학 시스템(Dynamical Systems)\u003c/strong\u003e 과 \u003cstrong\u003e혼돈 이론(Chaos Theory)\u003c/strong\u003e 의 기...\u003c/p\u003e"
+    },
+    {
+      "title": "로컬에서 오픈 LLM과 코딩 어시스턴트를 사용하는 개발자들의 환경 공유",
+      "link": "https://news.hada.io/topic?id=24071",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-01T11:37:04+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e오픈소스 LLM\u003c/strong\u003e과 \u003cstrong\u003e로컬 코딩 어시스턴트\u003c/strong\u003e를 실제로 사용하는 개발자들의 \u003cstrong\u003e설정과 하드웨어 환경\u003c/strong\u003e을 묻는 토론\u003c/li\u003e\n\u003cli\u003e다양한 사용자가 \u003cstrong\u003e로컬 실행 환경\u003c/strong\u003e, \u003cstrong\u003eGPU 사양\u003c/strong\u003e, \u003cstrong\u003e모델 선택\u003c/strong\u003e 등을 공유하는 형태\u003c/li\u003e\n\u003cl...\u003c/p\u003e"
+    },
+    {
+      "title": "Futurelock: 비동기 Rust에서의 미묘한 교착 위험",
+      "link": "https://news.hada.io/topic?id=24070",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-01T11:34:03+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eFuturelock\u003c/strong\u003e은 하나의 태스크가 여러 \u003cstrong\u003eFuture\u003c/strong\u003e를 동시에 관리할 때, 그 중 하나가 다른 Future의 리소스를 필요로 하지만 더 이상 폴링되지 않아 발생하는 \u003cstrong\u003e교착(deadlock)\u003c/strong\u003e 현상\u003c/li\u003e\n\u003cli\u003e\n\u003ccode\u003etokio::select!\u003c/code\u003e 구문에서 \u003cstrong\u003e참조된 Future(\u0026amp;...\u003c/p\u003e"
+    },
+    {
+      "title": "AMD, TSMC 3nm 공정 기반 ‘Sound Wave’ ARM APU로 ARM 시장 진입 가능성",
+      "link": "https://news.hada.io/topic?id=24069",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-01T09:47:02+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eAMD가 \u003cstrong\u003ex86을 넘어 ARM 기반 APU ‘Sound Wave’\u003c/strong\u003e 를 개발 중이며, 이는 자사 최초의 ARM 아키텍처 프로세서임\u003c/li\u003e\n\u003cli\u003e칩은 \u003cstrong\u003eTSMC 3nm 공정\u003c/strong\u003e으로 제작되고, \u003cstrong\u003e5~10W TDP\u003c/strong\u003e를 목표로 하며 \u003cstrong\u003eQualcomm Snapdragon X Elite\u003c/strong\u003e와 경쟁 구도\u003c/li\u003e\n\u003cli\u003e\n\u003cs...\u003c/p\u003e"
+    },
+    {
+      "title": "OpenAI가 복잡하고 순환적인 거래를 활용해 수십억 달러 규모의 성장을 이룬 방법",
+      "link": "https://news.hada.io/topic?id=24068",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-01T09:44:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e오픈AI는 컴퓨팅 자원 확보를 위해 투자금이 다시 파트너사로 흘러가는 순환적 자금 구조\u003c/strong\u003e를 활용\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eMicrosoft, Oracle, CoreWeave, SoftBank, Nvidia, AMD 등과의 대형 계약\u003c/strong\u003e을 통해 데이터센터와 클라우드 인프라 구축 추진\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eCoreWeave와 220억 달...\u003c/p\u003e"
+    },
+    {
+      "title": "We’re celebrating Indigenous stories, art and businesses.",
+      "link": "https://blog.google/outreach-initiatives/creating-opportunity/native-american-heritage-month-google-2025/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-11-01T16:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Indigenous_stories_art_and_busi.max-600x600.format-webp.webp\"\u003eThis Native American Heritage Month, we’re launching new ways across our products for you to connect with the creativity, culture and stories of Indigenous peoples.It st…"
+    },
+    {
+      "title": "The Rosenhan Experiment: On Being Sane in Insane Places",
+      "link": "https://web.archive.org/web/20041117175255/http://web.cocc.edu/lminorevans/on_being_sane_in_insane_places.htm",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-01T21:56:54Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://web.archive.org/web/20041117175255/http://web.cocc.edu/lminorevans/on_being_sane_in_insane_places.htm\"\u003ehttps://web.archive.org/web/20041117175255/http://web.cocc.edu/lminorevans/on_being_sane_in_insane_places.htm\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45785783\"\u003ehttps://news.ycombinator.com/item?id=45785783\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Built a chess Agent to analyze your games and visualize tactics",
+      "link": "https://app.chesscoach.dev/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-01T21:56:01Z",
+      "description": "\n\u003cp\u003eDemo available at the main link. Free trial to try on your games.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45785776\"\u003ehttps://news.ycombinator.com/item?id=45785776\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Global Warming and the \"impossible\" Radiation Imbalance [pdf]",
+      "link": "https://scienceofclimatechange.org/wp-content/uploads/SCC-Vol5.3-Huijser-Balancing-Act.pdf",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-01T21:55:39Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://scienceofclimatechange.org/wp-content/uploads/SCC-Vol5.3-Huijser-Balancing-Act.pdf\"\u003ehttps://scienceofclimatechange.org/wp-content/uploads/SCC-Vol5.3-Huijser-Balancing-Act.pdf\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45785768\"\u003ehttps://news.ycombinator.com/item?id=45785768\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Why Every Family Needs a Code Word",
+      "link": "https://www.wsj.com/tech/personal-tech/why-every-family-needs-a-code-word-e077ab76",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-01T21:54:41Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.wsj.com/tech/personal-tech/why-every-family-needs-a-code-word-e077ab76\"\u003ehttps://www.wsj.com/tech/personal-tech/why-every-family-needs-a-code-word-e077ab76\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45785759\"\u003ehttps://news.ycombinator.com/item?id=45785759\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Ask HN: How to break into software eng after graduating with no internships?",
+      "link": "https://news.ycombinator.com/item?id=45785742",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-01T21:51:24Z",
+      "description": "\n\u003cp\u003eI'm graduating  this semester with zero internship experience. I've done some software development as an undergraduate research assistant, but I still feel underqualified for full-time software engineer roles. At the same time, I'm excluded from the typical internship path since I'm graduating.\u003cp\u003eAny advice for breaking into the industry?\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45785742\"\u003ehttps://news.ycombinator.com/item?id=45785742\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Smaller Surfaces",
+      "link": "https://nrempel.com/smaller-surfaces",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-01T21:50:51Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://nrempel.com/smaller-surfaces\"\u003ehttps://nrempel.com/smaller-surfaces\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45785740\"\u003ehttps://news.ycombinator.com/item?id=45785740\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: R) Repair Micro Pe Gaps Fintech",
+      "link": "https://datamolecular.com/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-01T21:50:41Z",
+      "description": "\n\u003cp\u003eEvery millisecond of skew between distributed systems changes who trades first, whose ledger entry clears, and whose data audit stands up in court.\nExisting clock-sync and audit controls still allow invisible micro-gaps that create regulatory exposure, arbitrage leakage, and litigation risk.\u003cp\u003eSolution\nThe Repair(ℛ)™ restores true timing coherence by re-phasing local oscillators and logs through a mathematically conserved model.\nUltimately, the choice is yours. Yet, we recommend licensing in tandem with the repair our Time Gap Guard. If it prevents one litigation its likely paid for itself already.  DataMolecular.com for more details\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45785738\"\u003ehttps://news.ycombinator.com/item?id=45785738\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Sam Altman tried to cancel his Tesla Roadster",
+      "link": "https://twitter.com/sama/status/1984023663642087831",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-01T21:50:11Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://twitter.com/sama/status/1984023663642087831\"\u003ehttps://twitter.com/sama/status/1984023663642087831\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45785733\"\u003ehttps://news.ycombinator.com/item?id=45785733\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Humanity Needs Democratic Control of AI",
+      "link": "https://jacobin.com/2025/11/ai-inequality-algorithms-democracy-capitalism/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-01T21:49:33Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://jacobin.com/2025/11/ai-inequality-algorithms-democracy-capitalism/\"\u003ehttps://jacobin.com/2025/11/ai-inequality-algorithms-democracy-capitalism/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45785728\"\u003ehttps://news.ycombinator.com/item?id=45785728\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Elon Musk on AI extinction risk, media bias, and Social Security system",
+      "link": "https://founderboat.com/interviews/2025-10-30-elon-musk-rogan/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-01T21:49:16Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://founderboat.com/interviews/2025-10-30-elon-musk-rogan/\"\u003ehttps://founderboat.com/interviews/2025-10-30-elon-musk-rogan/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45785724\"\u003ehttps://news.ycombinator.com/item?id=45785724\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "De-escalating Tailscale CGNAT conflict",
+      "link": "https://ysun.co/tscgnat/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-01T21:47:42Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://ysun.co/tscgnat/\"\u003ehttps://ysun.co/tscgnat/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45785709\"\u003ehttps://news.ycombinator.com/item?id=45785709\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Superhuman AI for Multiplayer Poker",
+      "link": "https://www.science.org/doi/10.1126/science.aay2400",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-01T21:47:14Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.science.org/doi/10.1126/science.aay2400\"\u003ehttps://www.science.org/doi/10.1126/science.aay2400\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45785705\"\u003ehttps://news.ycombinator.com/item?id=45785705\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Borrow checker says \"No\": An error that scares me every single time",
+      "link": "https://polymonster.co.uk/blog/borow-checker-says-no",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-01T21:47:00Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://polymonster.co.uk/blog/borow-checker-says-no\"\u003ehttps://polymonster.co.uk/blog/borow-checker-says-no\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45785703\"\u003ehttps://news.ycombinator.com/item?id=45785703\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Ask HN: Are Raspberry Pis Reliable to Use Instead of a VPS?",
+      "link": "https://news.ycombinator.com/item?id=45785700",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-01T21:46:54Z",
+      "description": "\n\u003cp\u003eI recently got a Raspberry Pi 5 (8GB RAM) and have been running Coolify to deploy production apps. I’m not exposing my router since I’m using Cloudflare Tunnels. Some people say it’s unreliable, but I’ve had 100% uptime so far and honestly, it feels like having a “free” VPS. What are your thoughts? Can I trust it?\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45785700\"\u003ehttps://news.ycombinator.com/item?id=45785700\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Deep Field: The Impossible Magnitude of Our Universe",
+      "link": "https://deepfieldfilm.com/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-01T21:45:37Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://deepfieldfilm.com/\"\u003ehttps://deepfieldfilm.com/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45785693\"\u003ehttps://news.ycombinator.com/item?id=45785693\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Flash, Java Applets, and Building for a Web That Died",
+      "link": "https://brajeshwar.com/2025/flash-java-applets-building-for-a-web-that-died/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-01T21:43:04Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://brajeshwar.com/2025/flash-java-applets-building-for-a-web-that-died/\"\u003ehttps://brajeshwar.com/2025/flash-java-applets-building-for-a-web-that-died/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45785677\"\u003ehttps://news.ycombinator.com/item?id=45785677\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Wiki Creole 1.0 lightweight markup language",
+      "link": "http://www.wikicreole.org/wiki/Creole1.0",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-01T21:42:02Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"http://www.wikicreole.org/wiki/Creole1.0\"\u003ehttp://www.wikicreole.org/wiki/Creole1.0\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45785668\"\u003ehttps://news.ycombinator.com/item?id=45785668\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "In which IT job do you travel a lot?",
+      "link": "https://news.ycombinator.com/item?id=45785649",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-01T21:39:58Z",
+      "description": "\n\u003cp\u003eThe title says it all\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45785649\"\u003ehttps://news.ycombinator.com/item?id=45785649\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Chinese Room",
+      "link": "https://en.wikipedia.org/wiki/Chinese_room",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-01T21:38:58Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://en.wikipedia.org/wiki/Chinese_room\"\u003ehttps://en.wikipedia.org/wiki/Chinese_room\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45785646\"\u003ehttps://news.ycombinator.com/item?id=45785646\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "There's one thing EVERY government can do to shrink Big Tech",
+      "link": "https://pluralistic.net/2025/11/01/redistribution-vs-predistribution/#elbows-up-eurostack",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-01T21:38:43Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://pluralistic.net/2025/11/01/redistribution-vs-predistribution/#elbows-up-eurostack\"\u003ehttps://pluralistic.net/2025/11/01/redistribution-vs-predistribution/#elbows-up-eurostack\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45785642\"\u003ehttps://news.ycombinator.com/item?id=45785642\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    }
+  ],
+  "generatedAt": "2025-11-02T07:07:21.061976689+09:00"
+}
