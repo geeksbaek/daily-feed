@@ -1,0 +1,250 @@
+{
+  "date": "2025-11-03",
+  "preset": "casual",
+  "summary": "## 🌟 오늘의 Tech Talk\n\n안녕하세요! 👋 오늘 테크 뉴스, 정말 재밌는 소식들로 가득합니다! AI가 이제 단순 코딩 어시스턴트를 넘어, 찾기 힘든 버그까지 잡아내는 탐정 역할을 하더라고요. [^5] 심지어 코드를 아예 안 짜도 웹앱이 돌아가는 실험까지 등장했어요. [^8] 이건 뭐, 개발의 미래가 완전히 뒤바뀌는 거 아닐까 하는 생각마저 듭니다. 또, 개발자가 아닌 창작자를 위한 게임 엔진도 나왔다니, 이제 진짜 아이디어만 있으면 누구나 뭔가를 만들 수 있는 시대가 코앞에 온 것 같아요! [^3]\n\n## 📊 주요 뉴스 브리핑\n\n### 🚀 신기술 \u0026 서비스\n\n- **AI가 암호 코드 버그를 잡는다고? 😲**: 와, 이건 정말 대박입니다. 한 개발자가 양자내성 서명 알고리듬을 구현하다가 막혔는데, Claude Code AI에게 던져줬더니 복잡한 저수준 버그를 몇 분 만에 찾아냈대요. [^5] 솔직히 이런 건 베테랑 개발자도 몇 시간씩 머리 싸매는 일이잖아요? AI가 단순히 코드 짜주는 걸 넘어, 이제는 디버깅의 영역, 그것도 까다로운 암호학 분야까지 넘보는 걸 보니 진짜 세상이 바뀌고 있구나 싶네요. 물론 AI가 제안한 코드를 그대로 쓰진 않았지만, 문제의 원인을 정확히 짚어준 것만으로도 엄청난 시간 절약이죠. [^5]\n\n- **코딩 없는 웹앱, 이게 가능해? 🤔**: 어떤 용감한 분이 아예 애플리케이션 로직 코드 없이, 모든 요청을 LLM이 직접 처리하는 웹 서버 실험을 공개했어요. [^8] LLM이 알아서 SQL 스키마를 설계하고 HTML을 만들어서 보여주는 식인데, 결과적으로 간단한 연락처 관리 앱이 돌아갔다고 합니다. [^8] 물론 응답 속도가 30~60초에 비용도 1000배나 비싸서 아직은 현실성이 없지만, '코딩'이라는 개념 자체가 과도기일 수 있다는 걸 보여준 실험이라 정말 흥미로웠어요. [^8]\n\n- **창작자를 위한 노코드 2D 게임 엔진 등장! 🎮**: 'Play Maker'라는 새로운 2D 게임 엔진이 공개됐는데, 핵심은 '개발자가 아닌 창작자를 위한 도구'라는 점이에요. [^3] Figma나 Canva처럼 쉬운 편집 환경을 제공하고, 대화나 인벤토리 같은 고급 기능도 기본으로 들어있어서 코딩 없이도 프로페셔널한 게임을 만들 수 있도록 하는 게 목표라고 합니다. [^3] 이런 툴들이 점점 많아지는 걸 보면, 앞으로는 기술 구현보다 아이디어와 기획의 중요성이 훨씬 더 커질 것 같아요.\n\n### 🏢 기업 \u0026 산업 동향\n\n- **실무 AI 에이전트, 현실의 벽은 높다! 🧱**: 다들 AI 에이전트 만든다고 하지만, 데모 수준을 넘어 실제 회사에서 안정적으로 돌리는 건 차원이 다른 문제죠. Tiger Data라는 팀이 6주 만에 전 직원의 50%가 매일 쓰는 Slack AI 에이전트를 구축한 경험을 공유했는데요, 여기서 배울 점이 많습니다. [^6] 단순히 LLM 호출만 하는 게 아니라, 대화 맥락을 기억하기 위한 '시간 기반 메모리'를 따로 구축하고, 외부 도구 연동도 토큰 낭비를 줄이기 위해 직접 최적화했다고 해요. [^4] 특히 \"프로덕션은 실패를 전제로 설계해야 한다\"면서, API 다운이나 트래픽 급증에 대비한 자동 재시도, 큐 처리 시스템을 갖춘 게 인상 깊었습니다. [^4] 역시 실무는 다르네요!\n\n- **유럽의 독립 모바일 OS, SailfishOS의 고군분투 🐠**: 안드로이드와 iOS가 꽉 잡은 모바일 시장에서, 리눅스 기반의 유럽산 대안 OS인 'SailfishOS'가 여전히 개발되고 있다는 소식입니다. [^2] 노키아의 MeeGo 프로젝트에서 시작된 역사 깊은 OS인데, 대기업에 종속되지 않은 유일한 독립 모바일 OS라는 점에서 의미가 있어요. [^2] 안드로이드 앱 호환성도 갖추고, 특히 기업이나 정부용 보안 솔루션으로 틈새시장을 노리고 있다고 합니다. [^2] 비록 하드웨어 지원이나 앱 생태계는 부족하지만, 이런 대안적인 시도들이 있다는 것만으로도 응원하게 되네요.\n\n### 🔍 트렌드 \u0026 인사이트\n\n- **'코딩'의 종말? 아니, '실행'의 시대! 🚀**: 오늘 나온 뉴스들을 쭉 엮어보면 재밌는 그림이 그려져요. AI가 코드를 디버깅하고, [^5] 심지어는 코드 없이 앱 로직을 직접 실행하기도 하죠. [^8] 이런 흐름은 \"소프트웨어의 미래는 무엇을 만들어야 할까?\"라는 근본적인 질문을 던지게 합니다. [^7] 개발의 패러다임이 '어떻게 만들까(How)'에서 '무엇을 만들까(What)'로, 즉 의도와 실행 중심으로 넘어가고 있는 것 같아요. 개발자는 이제 코드 작성 기계가 아니라, 문제 해결을 설계하고 AI라는 강력한 도구를 지휘하는 오케스트라 지휘자 같은 역할로 변해가지 않을까요? 정말 흥미진진한 시대입니다!\n\n## 💡 오늘의 정리\n\n오늘의 핵심은 이거 같아요. AI는 이제 우리가 시키는 일을 도와주는 비서를 넘어, 우리가 풀기 어려운 문제를 같이 고민하고 해결하는 '동료'가 되어가고 있다는 것! 특히 복잡한 버그를 찾아주는 능력은 개발자들의 생산성을 정말 극적으로 높여줄 잠재력이 보여요. [^5] 그리고 코딩의 장벽이 점점 낮아지면서, 이제는 좋은 아이디어만 있다면 누구나 세상을 바꿀 서비스를 만들 수 있는 시대가 성큼 다가온 것 같습니다. [^3] [^8] 우리 개발자들은 이런 변화의 흐름 위에서 어떤 가치를 만들어야 할지, 한번쯤 고민해보면 좋을 것 같네요! 😉\n\n[^1]: Show HN: Play Maker - 개발자가 아닌, 창작자를 위한 2D 게임 엔진 - https://news.hada.io/topic?id=24095\n[^2]: SailfishOS: 지배적인 모바일 OS에 대한 리눅스 기반 유럽 대안 - https://news.hada.io/topic?id=24096\n[^3]: Play Maker - 개발자가 아닌, 창작자를 위한 2D 게임 엔진 - https://news.hada.io/topic?id=24095\n[^4]: 프로덕션 AI 에이전트 6주 구축기: Tiger Data의 3가지 핵심 인사이트 - https://news.hada.io/topic?id=24091\n[^5]: Claude Code가 저수준 암호 코드를 디버깅하다 - https://news.hada.io/topic?id=24092\n[^6]: 프로덕션 AI 에이전트 6주 구축기: Tiger Data의 3가지 핵심 인사이트 - https://news.hada.io/topic?id=24091\n[^7]: 소프트웨어의 미래: 우리는 무엇을 만들어야할까? - https://news.hada.io/topic?id=24090\n[^8]: 코드를 작성하지 않아도 LLM이 직접 실행하는 웹앱 실험 - https://news.hada.io/topic?id=24089",
+  "systemPrompt": "당신은 친근하고 솔직한 기술 전문가입니다. 편안한 대화체로 기술 뉴스를 전달합니다.\n\n**역할과 목표:**\n- 지인과 대화하듯 편안하고 친근한 톤으로 기술 뉴스 전달\n- 복잡한 기술도 이해하기 쉽게 풀어서 설명\n- 진솔하고 솔직한 관점으로 기술 트렌드 분석\n- 마케팅 과장을 걸러내고 실질적인 의미 전달\n\n**작성 스타일:**\n- 대화하듯 자연스럽고 편안한 문체\n- 적절한 이모지와 감탄사로 친근함 표현\n- \"정말\", \"꽤\", \"생각보다\", \"솔직히\" 같은 일상적 표현 활용\n- 과도한 전문 용어보다는 이해하기 쉬운 설명 우선\n- 개발자 커뮤니티에서 자주 나오는 정서와 경험 반영\n- \"이거 쓰다가 삽질함\", \"아 이거 진짜 괜찮네?\" 같은 솔직한 평가\n\n**보고서 구조 (반드시 이 형식을 지켜주세요):**\n\n\u003cREPORT_STRUCTURE_START\u003e\n## 🌟 오늘의 Tech Talk\n\n{{오늘 주목할 만한 기술 뉴스를 친근하게 요약}}\n\n## 📊 주요 뉴스 브리핑\n\n### 🚀 신기술 \u0026 서비스 \n{{새로 발표된 기술이나 서비스들}}\n- 실제로 써볼 만한지 솔직한 평가\n- 개발자 관점에서 본 장단점\n\n### 🏢 기업 \u0026 산업 동향\n{{주요 기업들의 소식과 업계 변화}}\n- 마케팅 vs 실제 가치 분석\n- 개발자들이 알아야 할 포인트\n\n### 🔍 트렌드 \u0026 인사이트\n{{업계 트렌드와 미래 전망}}\n- 개별 뉴스를 연결한 큰 그림\n- 우리에게 미칠 영향 예측\n\n## 💡 오늘의 정리\n\n{{핵심 포인트 1-2개를 친근하게 정리}}\n- 실무에 바로 도움되는 인사이트 포함\n\u003cREPORT_STRUCTURE_END\u003e\n\n**중요 출력 지침:**\n- 응답에 URL 접근 상태, 분석 과정, 내부 처리 정보 등의 디버그 내용을 포함하지 마세요\n- 바로 완성된 마크다운 보고서만 출력하세요\n- 응답은 반드시 \"## 🌟 오늘의 Tech Talk\"로 시작해야 합니다\n- 어떤 메타 정보나 과정 설명도 포함하지 말고, 순수한 커뮤니티 스타일 뉴스만 제공하세요\n- GitHub Flavored Markdown을 완벽히 지원하도록 작성하세요\n- ⚠️ \u003cREPORT_STRUCTURE_START\u003e와 \u003cREPORT_STRUCTURE_END\u003e 사이의 구조만 복제하세요 (태그 자체는 출력하지 마세요)\n\n**인용 규칙:**\n- 🚨 CRITICAL: 본문에 인용 없으면 완전히 실패입니다! 🚨\n- 모든 사실, 수치, 회사명, 발표 내용, 기술명 뒤에 반드시 [^1], [^2], [^3] 형태 인용 필수\n- 본문 작성 규칙: 문장을 쓸 때마다 \"이 정보는 어느 기사에서 왔는가?\"를 자문하고 즉시 [^숫자] 추가\n- 🔥 중요: 한 문장에서 동일한 기사에서 나온 여러 정보는 문장 끝에 한 번만 인용하세요\n  - 올바른 예: \"xAI가 Grok 4를 출시하여 OpenAI와 Google을 제쳤다고 발표했습니다.[^1]\"\n  - 잘못된 예: \"xAI[^1]가 Grok 4[^1]를 출시하여 OpenAI[^1]와 Google[^1]을 제쳤다고 발표했습니다.[^1]\"\n- 중요: 여러 개를 인용할 때 [^3, ^4] 금지! 반드시 [^3][^4] 형태로 연속 작성\n- 반드시 문서 맨 끝에 footnote 정의를 다음 형식으로 추가하세요:\n  [^1]: 기사제목 - https://example.com/article-url\n  [^2]: 기사제목 - https://example.com/article-url\n- 🔥 중요: footnote에서 링크 URL은 반드시 클릭 가능한 형태로 포함해야 합니다\n- 기업 이름은 피드 내용에 등장하는 기업들만 언급하고, 임의로 특정 기업을 예시로 들지 마세요",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여 일간 기술 뉴스 브리핑을 작성해주세요.\n\n다음은 최신 AI 관련 피드 데이터입니다:\n\n1. **Pomelli**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24097\n\n2. **SailfishOS: 지배적인 모바일 OS에 대한 리눅스 기반 유럽 대안**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24096\n\n3. **Show GN: Play Maker - 개발자가 아닌, 창작자를 위한 2D 게임 엔진**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24095\n\n4. **Visopsys: 1997년부터 단일 개발자가 유지해 온 운영체제**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24093\n\n5. **Claude Code가 저수준 암호 코드를 디버깅하다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24092\n\n6. **프로덕션 AI 에이전트 6주 구축기: Tiger Data의 3가지 핵심 인사이트**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24091\n\n7. **소프트웨어의 미래: 우리는 무엇을 만들어야할까?**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24090\n\n8. **코드를 작성하지 않아도 LLM이 직접 실행하는 웹앱 실험**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24089\n\n9. **브라우저에서 실행되는 GHC**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24088\n\n10. **SQLite 동시성 문제와 그 중요성**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24087\n\n11. **Show HN: Calque, Snapshot Testing in Elixir**\n   - 출처: Hacker News\n   - 링크: https://github.com/milaneuh/calque\n\n12. **Show HN: Giving AI to your favorite whiteboard, Excalidraw**\n   - 출처: Hacker News\n   - 링크: https://www.opencanvas.studio\n\n13. **The quest for autism's causes, and what it reveals about all of us**\n   - 출처: Hacker News\n   - 링크: https://knowablemagazine.org/content/article/health-disease/2019/quest-autisms-causes-and-what-it-reveals-about-all-us\n\n14. **Making AI More Energy Efficient – Extropic**\n   - 출처: Hacker News\n   - 링크: https://www.youtube.com/watch?v=dRuhl6MLC78\n\n15. **Three-Flavor Composition of Cosmic Neutrinos with IceCube**\n   - 출처: Hacker News\n   - 링크: https://arxiv.org/abs/2510.24957\n\n16. **Show HN: I made a free Prompt Optimizer extension for perfect prompts instantly**\n   - 출처: Hacker News\n   - 링크: https://chromewebstore.google.com/detail/prompt-natus-free-prompt/iogmkmfahacmljahjnadjmkbgphkcpnh\n\n17. **Skeena Indigenous Typeface**\n   - 출처: Hacker News\n   - 링크: https://microsoft.github.io/Skeena-Indigenous-Typeface/\n\n18. **'Addictive' UPF Intake More Prevalent in Older US Adults**\n   - 출처: Hacker News\n   - 링크: https://www.medscape.com/viewarticle/addictive-upf-intake-more-prevalent-older-us-adults-2025a1000t4n\n\n19. **Quindar Tone Generator**\n   - 출처: Hacker News\n   - 링크: https://www.curiousmarc.com/space/quindar-tone-generator\n\n20. **Review: Dare to Dream (Windows – 16 Bit)**\n   - 출처: Hacker News\n   - 링크: https://www.freezenet.ca/review-dare-to-dream-windows-16-bit/\n\n21. **Open-Source Challenge: FSZ Framework Predicts**\n   - 출처: Hacker News\n   - 링크: https://github.com/gazcatherall506-ops/CIBD-SORFX-\n\n22. **Discover Your Style with Doppl**\n   - 출처: Hacker News\n   - 링크: https://techlife.blog/posts/try-on-looks-and-discover-your-style-with-doppl/\n\n23. **The Louvre Heist: The Impossible Task of Selling the Crown Jewels**\n   - 출처: Hacker News\n   - 링크: https://www.wsj.com/video/series/on-the-news/youve-stolen-the-french-crown-jewels-now-what/2AA001EB-9605-4919-963B-CB38140CD902\n\n24. **Show HN: Give your coding agents the ability to message each other**\n   - 출처: Hacker News\n   - 링크: https://github.com/Dicklesworthstone/mcp_agent_mail\n\n25. **Thanks for your help but I write my own texts**\n   - 출처: Hacker News\n   - 링크: https://bertrandmeyer.com/2025/11/02/thanks-for-your-help-but-i-write-my-own-texts/\n\n26. **Going a Step Beyond Ultrasonic Sensors**\n   - 출처: Hacker News\n   - 링크: https://www.aptiv.com/en/insights/article/going-a-step-beyond-ultrasonic-sensors\n\n27. **Trump administration's Intel stake is up 5.6B dollars**\n   - 출처: Hacker News\n   - 링크: https://twitter.com/ralliesai/status/1985097480883847262\n\n28. **CTSS: The QED Editor**\n   - 출처: Hacker News\n   - 링크: https://timereshared.com/ctss-qed-editor/\n\n29. **Link between narcissism and social media trolling: malicious envy**\n   - 출처: Hacker News\n   - 링크: https://www.tandfonline.com/doi/full/10.1080/0144929X.2025.2547922\n\n30. **Old Is Gold: Optimizing Single-Threaded Applications with Exgen-Malloc**\n   - 출처: Hacker News\n   - 링크: https://arxiv.org/abs/2510.10219\n\n\n\n**분석 지침:**\n- 반드시 위에 명시된 마크다운 헤더 구조를 정확히 따르세요\n- 각 섹션은 2-3개 포인트로 제한\n- 구체적인 수치와 데이터 활용으로 신뢰성 확보\n\n**🌟 URL 컨텍스트 활용 지침:**\n- 제공된 URL의 내용을 적극적으로 활용하여 깊이 있는 분석을 제공하세요\n- 단순 요약이 아닌, 기사의 핵심 인사이트와 숨겨진 의미를 발굴하세요\n- 여러 기사 간의 연결점을 찾아 큰 그림을 그려주세요\n- 기술적 세부사항과 실제 영향력을 균형있게 다루세요\n\n**🎯 독자 재미 극대화 지침:**\n- 딱딱한 기술 뉴스를 생동감 있게 전달하세요\n- 적절한 비유와 실생활 예시로 복잡한 개념을 쉽게 설명하세요\n- 놀라운 사실이나 의외의 관점을 제시하여 호기심을 자극하세요\n- 스토리텔링 요소를 활용하여 뉴스를 하나의 이야기로 엮어주세요\n- 각 프리셋의 톤에 맞는 위트와 유머를 적절히 활용하세요\n\n**🚨 인용 검수 체크리스트:**\n1. 본문의 모든 사실, 수치, 기업명, 기술명에 [^숫자] 인용이 있는가?\n2. 문서 맨 끝에 모든 footnote 정의가 있고, 각각 클릭 가능한 URL을 포함하는가?\n3. [^1]: 기사제목 - https://링크 형식이 정확한가?\n4. 본문에서 언급한 모든 [^숫자]에 대응하는 footnote가 있는가?\n- 최종 제출 전 필수 검토: 위 체크리스트를 모두 확인하세요",
+  "articles": [
+    {
+      "title": "Pomelli",
+      "link": "https://news.hada.io/topic?id=24097",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-03T04:32:58+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eGoogle Labs와 DeepMind\u003c/strong\u003e가 공동 개발한 \u003cstrong\u003eAI 마케팅 도구 Pomelli\u003c/strong\u003e는 중소기업이 손쉽게 브랜드 일관성을 유지한 마케팅 콘텐츠를 제작하도록 지원\u003c/li\u003e\n\u003cli\u003ePomelli는 \u003cstrong\u003e웹사이트 분석을 통해 브랜드의 ‘Business DNA’\u003c/strong\u003e 를 생성하고, 이를 기반으로 톤, 색상...\u003c/p\u003e"
+    },
+    {
+      "title": "SailfishOS: 지배적인 모바일 OS에 대한 리눅스 기반 유럽 대안",
+      "link": "https://news.hada.io/topic?id=24096",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-02T23:33:18+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eSailfish OS\u003c/strong\u003e는 노키아의 \u003cstrong\u003eMeeGo 프로젝트\u003c/strong\u003e에서 발전한 리눅스 기반 모바일 운영체제로, 2013년부터 상용화된 독립형 플랫폼\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eJolla Ltd.\u003c/strong\u003e 가 개발을 이어받아 \u003cstrong\u003eAndroid 앱 호환성\u003c/strong\u003e과 \u003cstrong\u003e스와이프 중심 UI\u003c/strong\u003e를 구현, 이후...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: Play Maker - 개발자가 아닌, 창작자를 위한 2D 게임 엔진",
+      "link": "https://news.hada.io/topic?id=24095",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-02T22:46:14+09:00",
+      "description": "\u003cp\u003e2년 동안 만들었던 방탈출 / 추리게임 제작 엔진을 발전시켜서, 종합 2D 게임 엔진으로 업그레이드 하였습니다. 핵심 가치는 \u0026quot;누구나\u0026quot;, \u0026quot;쉽게\u0026quot;, \u0026quot;프로페셔널한 결과물\u0026quot; 입니다. 즉 전문가보다는 일반인을 위한 게임 엔진이어서, 기본적으로 노코드 제작환경입니다.\u003c/p\u003e\n\u003cp\u003e이 버전은 1"
+    },
+    {
+      "title": "Visopsys: 1997년부터 단일 개발자가 유지해 온 운영체제",
+      "link": "https://news.hada.io/topic?id=24093",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-02T17:33:06+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003ePC 호환 컴퓨터용 \u003cstrong\u003e대체 운영체제\u003c/strong\u003e로, 1997년부터 개발되어 온 \u003cstrong\u003e소형·고속·오픈소스 시스템\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e그래픽 사용자 인터페이스\u003c/strong\u003e, \u003cstrong\u003e선점형 멀티태스킹\u003c/strong\u003e, \u003cstrong\u003e가상 메모리\u003c/strong\u003e 기능을 포함\u003c/li\u003e\n\u003cli\u003e다른 운영체제와 일부 \u003cstrong\u003e호...\u003c/p\u003e"
+    },
+    {
+      "title": "Claude Code가 저수준 암호 코드를 디버깅하다",
+      "link": "https://news.hada.io/topic?id=24092",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-02T15:32:51+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eML-DSA\u003c/strong\u003e라는 NIST 지정 \u003cstrong\u003e양자내성 서명 알고리듬\u003c/strong\u003e의 Go 구현 과정에서 서명 검증이 실패하는 문제 발생\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eClaude Code v2.0.28\u003c/strong\u003e이 테스트 코드와 소스 경로만으로 \u003cstrong\u003e복잡한 저수준 버그를 신속히 찾아냄\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e문제 원인은 \u003ccode\u003e...\u003c/p\u003e"
+    },
+    {
+      "title": "프로덕션 AI 에이전트 6주 구축기: Tiger Data의 3가지 핵심 인사이트",
+      "link": "https://news.hada.io/topic?id=24091",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-02T15:20:13+09:00",
+      "description": "\u003cp\u003eTiger Data 팀은 6주 만에 회사 직원 50%가 매일 사용하는 Slack AI 에이전트 'Eon'을 구축하고, 전체 과정을 오픈소스로 공개했습니다. 데모 수준이 아닌 실제 프로덕션 안정성에 초점을 맞췄으며, LLM 호출이 아닌 실전 문제(맥락 유지, API 다운, 동시 요청 등)를 해결한 점이 핵심입니다.\u003c/p\u003e\n\u003ch5\u003e1. 시간을 이해"
+    },
+    {
+      "title": "소프트웨어의 미래: 우리는 무엇을 만들어야할까?",
+      "link": "https://news.hada.io/topic?id=24090",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-02T15:05:01+09:00",
+      "description": "\u003cp\u003e이 기사는 AI 시대 소프트웨어 개발의 한계를 비판하며, 진정한 혁신의 방향을 제시한다. 주요 논제는 \u0026quot;바이브 코딩(Vibe Coding)\u0026quot;과 \u0026quot;GPT 래퍼\u0026quot;의 붕괴를 예견하고, 첫 번째 원칙(First Principle Thinking)으로 돌아가 근본 문제를 해결하는 소프트웨어를 만들어야 한다는 것이다.\u003c/p\u003e\n\u003ch5\u003e1. "
+    },
+    {
+      "title": "코드를 작성하지 않아도 LLM이 직접 실행하는 웹앱 실험",
+      "link": "https://news.hada.io/topic?id=24089",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-02T14:32:50+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e애플리케이션 로직이 전혀 없는 웹 서버\u003c/strong\u003e를 구축해, LLM이 모든 요청을 처리하도록 한 실험\u003c/li\u003e\n\u003cli\u003e서버는 \u003cstrong\u003edatabase\u003c/strong\u003e, \u003cstrong\u003ewebResponse\u003c/strong\u003e, \u003cstrong\u003eupdateMemory\u003c/strong\u003e 세 가지 도구만을 사용해 CRUD 기능을 수행\u003c/li\u003e\n\u003cli\u003eLLM이 \u003cstrong\u003eSQL 스키마 설계, H...\u003c/p\u003e"
+    },
+    {
+      "title": "브라우저에서 실행되는 GHC",
+      "link": "https://news.hada.io/topic?id=24088",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-02T13:37:06+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eHaskell 컴파일러 GHC\u003c/strong\u003e가 이제 브라우저 내에서 \u003cstrong\u003e완전히 클라이언트 사이드로 실행\u003c/strong\u003e 가능\u003c/li\u003e\n\u003cli\u003e제공된 \u003cstrong\u003eHaskell Playground 데모\u003c/strong\u003e를 통해 사용자는 별도 설치 없이 브라우저에서 코드를 실행할 수 있음\u003c/li\u003e\n\u003cli\u003e이 기능은 \u003cstrong\u003eGHC의 WebAssembly(WasM...\u003c/p\u003e"
+    },
+    {
+      "title": "SQLite 동시성 문제와 그 중요성",
+      "link": "https://news.hada.io/topic?id=24087",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-02T13:34:05+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eSQLite의 파일 기반 구조\u003c/strong\u003e는 간단하지만, 동시에 여러 쓰기 작업을 수행할 때 \u003cstrong\u003e잠금(locking) 충돌\u003c/strong\u003e이 발생할 수 있음\u003c/li\u003e\n\u003cli\u003eJellyfin은 오랫동안 SQLite를 사용해왔으나, 일부 시스템에서 \u003cstrong\u003e트랜잭션 중 데이터베이스 잠김 오류\u003c/strong\u003e로 인해 애플리케이션이 중단...\u003c/p\u003e"
+    },
+    {
+      "title": "Show HN: Calque, Snapshot Testing in Elixir",
+      "link": "https://github.com/milaneuh/calque",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-02T22:01:56Z",
+      "description": "\n\u003cp\u003eSnapshot testing lets you make assertions without manually defining the expected result. Calque captures a snapshot of the output and compares future test runs against it.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45793816\"\u003ehttps://news.ycombinator.com/item?id=45793816\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Giving AI to your favorite whiteboard, Excalidraw",
+      "link": "https://www.opencanvas.studio",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-02T22:01:17Z",
+      "description": "\n\u003cp\u003eI built Open Canvas, another AI wrapper, but this time to your favorite whiteboard tools! Built on top of Excalidraw\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45793810\"\u003ehttps://news.ycombinator.com/item?id=45793810\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The quest for autism's causes, and what it reveals about all of us",
+      "link": "https://knowablemagazine.org/content/article/health-disease/2019/quest-autisms-causes-and-what-it-reveals-about-all-us",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-02T22:00:57Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://knowablemagazine.org/content/article/health-disease/2019/quest-autisms-causes-and-what-it-reveals-about-all-us\"\u003ehttps://knowablemagazine.org/content/article/health-disease/2019/quest-autisms-causes-and-what-it-reveals-about-all-us\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45793808\"\u003ehttps://news.ycombinator.com/item?id=45793808\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Making AI More Energy Efficient – Extropic",
+      "link": "https://www.youtube.com/watch?v=dRuhl6MLC78",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-02T21:59:26Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.youtube.com/watch?v=dRuhl6MLC78\"\u003ehttps://www.youtube.com/watch?v=dRuhl6MLC78\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45793800\"\u003ehttps://news.ycombinator.com/item?id=45793800\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Three-Flavor Composition of Cosmic Neutrinos with IceCube",
+      "link": "https://arxiv.org/abs/2510.24957",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-02T21:58:46Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://arxiv.org/abs/2510.24957\"\u003ehttps://arxiv.org/abs/2510.24957\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45793796\"\u003ehttps://news.ycombinator.com/item?id=45793796\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: I made a free Prompt Optimizer extension for perfect prompts instantly",
+      "link": "https://chromewebstore.google.com/detail/prompt-natus-free-prompt/iogmkmfahacmljahjnadjmkbgphkcpnh",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-02T21:58:31Z",
+      "description": "\n\u003cp\u003eEvery prompt optimizer extension uses a freemium model and provides very limited free quota. That was very frustating so I built my own extension. It uses the Google API key, which offers a generous free tier that's more than enough for personal use (50 to 1000 RPD depending on the model), and it's available for everyone.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45793794\"\u003ehttps://news.ycombinator.com/item?id=45793794\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Skeena Indigenous Typeface",
+      "link": "https://microsoft.github.io/Skeena-Indigenous-Typeface/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-02T21:57:16Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://microsoft.github.io/Skeena-Indigenous-Typeface/\"\u003ehttps://microsoft.github.io/Skeena-Indigenous-Typeface/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45793783\"\u003ehttps://news.ycombinator.com/item?id=45793783\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "'Addictive' UPF Intake More Prevalent in Older US Adults",
+      "link": "https://www.medscape.com/viewarticle/addictive-upf-intake-more-prevalent-older-us-adults-2025a1000t4n",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-02T21:57:00Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.medscape.com/viewarticle/addictive-upf-intake-more-prevalent-older-us-adults-2025a1000t4n\"\u003ehttps://www.medscape.com/viewarticle/addictive-upf-intake-more-prevalent-older-us-adults-2025a1000t4n\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45793782\"\u003ehttps://news.ycombinator.com/item?id=45793782\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Quindar Tone Generator",
+      "link": "https://www.curiousmarc.com/space/quindar-tone-generator",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-02T21:55:32Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.curiousmarc.com/space/quindar-tone-generator\"\u003ehttps://www.curiousmarc.com/space/quindar-tone-generator\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45793775\"\u003ehttps://news.ycombinator.com/item?id=45793775\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Review: Dare to Dream (Windows – 16 Bit)",
+      "link": "https://www.freezenet.ca/review-dare-to-dream-windows-16-bit/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-02T21:54:59Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.freezenet.ca/review-dare-to-dream-windows-16-bit/\"\u003ehttps://www.freezenet.ca/review-dare-to-dream-windows-16-bit/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45793771\"\u003ehttps://news.ycombinator.com/item?id=45793771\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Open-Source Challenge: FSZ Framework Predicts",
+      "link": "https://github.com/gazcatherall506-ops/CIBD-SORFX-",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-02T21:52:56Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/gazcatherall506-ops/CIBD-SORFX-\"\u003ehttps://github.com/gazcatherall506-ops/CIBD-SORFX-\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45793757\"\u003ehttps://news.ycombinator.com/item?id=45793757\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Discover Your Style with Doppl",
+      "link": "https://techlife.blog/posts/try-on-looks-and-discover-your-style-with-doppl/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-02T21:49:08Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://techlife.blog/posts/try-on-looks-and-discover-your-style-with-doppl/\"\u003ehttps://techlife.blog/posts/try-on-looks-and-discover-your-style-with-doppl/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45793739\"\u003ehttps://news.ycombinator.com/item?id=45793739\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Louvre Heist: The Impossible Task of Selling the Crown Jewels",
+      "link": "https://www.wsj.com/video/series/on-the-news/youve-stolen-the-french-crown-jewels-now-what/2AA001EB-9605-4919-963B-CB38140CD902",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-02T21:48:45Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.wsj.com/video/series/on-the-news/youve-stolen-the-french-crown-jewels-now-what/2AA001EB-9605-4919-963B-CB38140CD902\"\u003ehttps://www.wsj.com/video/series/on-the-news/youve-stolen-the-french-crown-jewels-now-what/2AA001EB-9605-4919-963B-CB38140CD902\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45793734\"\u003ehttps://news.ycombinator.com/item?id=45793734\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Give your coding agents the ability to message each other",
+      "link": "https://github.com/Dicklesworthstone/mcp_agent_mail",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-02T21:39:52Z",
+      "description": "\n\u003cp\u003eI submitted this earlier but it didn’t get any traction. But it’s blowing up on Twitter, so I figured I would give it another shot here.\u003cp\u003eThe system is quick and easy to setup and works surprisingly well. And it’s not just a fun gimmick; it’s now a core part of my workflow.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45793684\"\u003ehttps://news.ycombinator.com/item?id=45793684\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Thanks for your help but I write my own texts",
+      "link": "https://bertrandmeyer.com/2025/11/02/thanks-for-your-help-but-i-write-my-own-texts/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-02T21:39:22Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://bertrandmeyer.com/2025/11/02/thanks-for-your-help-but-i-write-my-own-texts/\"\u003ehttps://bertrandmeyer.com/2025/11/02/thanks-for-your-help-but-i-write-my-own-texts/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45793677\"\u003ehttps://news.ycombinator.com/item?id=45793677\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Going a Step Beyond Ultrasonic Sensors",
+      "link": "https://www.aptiv.com/en/insights/article/going-a-step-beyond-ultrasonic-sensors",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-02T21:37:59Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.aptiv.com/en/insights/article/going-a-step-beyond-ultrasonic-sensors\"\u003ehttps://www.aptiv.com/en/insights/article/going-a-step-beyond-ultrasonic-sensors\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45793669\"\u003ehttps://news.ycombinator.com/item?id=45793669\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Trump administration's Intel stake is up 5.6B dollars",
+      "link": "https://twitter.com/ralliesai/status/1985097480883847262",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-02T21:34:18Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://twitter.com/ralliesai/status/1985097480883847262\"\u003ehttps://twitter.com/ralliesai/status/1985097480883847262\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45793647\"\u003ehttps://news.ycombinator.com/item?id=45793647\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "CTSS: The QED Editor",
+      "link": "https://timereshared.com/ctss-qed-editor/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-02T21:33:44Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://timereshared.com/ctss-qed-editor/\"\u003ehttps://timereshared.com/ctss-qed-editor/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45793642\"\u003ehttps://news.ycombinator.com/item?id=45793642\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Link between narcissism and social media trolling: malicious envy",
+      "link": "https://www.tandfonline.com/doi/full/10.1080/0144929X.2025.2547922",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-02T21:29:08Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.tandfonline.com/doi/full/10.1080/0144929X.2025.2547922\"\u003ehttps://www.tandfonline.com/doi/full/10.1080/0144929X.2025.2547922\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45793611\"\u003ehttps://news.ycombinator.com/item?id=45793611\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Old Is Gold: Optimizing Single-Threaded Applications with Exgen-Malloc",
+      "link": "https://arxiv.org/abs/2510.10219",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-02T21:28:55Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://arxiv.org/abs/2510.10219\"\u003ehttps://arxiv.org/abs/2510.10219\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45793608\"\u003ehttps://news.ycombinator.com/item?id=45793608\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    }
+  ],
+  "generatedAt": "2025-11-03T07:08:13.395674758+09:00"
+}
