@@ -1,0 +1,250 @@
+{
+  "date": "2025-11-10",
+  "preset": "casual",
+  "summary": "## 🌟 오늘의 Tech Talk\n\n여러분, 안녕하세요! 오늘 진짜 황당한 뉴스 하나로 시작해볼까요? 루브르 박물관의 영상 감시 시스템 비밀번호가 'Louvre'였다는 게 밝혀졌대요. 😂[^8] 정말 가끔은 기본을 지키는 게 가장 중요한 것 같아요. 우리 비밀번호부터 다시 한번 점검해보자고요! 자, 그럼 이 기세로 흥미로운 기술 뉴스들, 솔직하고 재미있게 파헤쳐 보겠습니다!\n\n## 📊 주요 뉴스 브리핑\n\n### 🚀 신기술 \u0026 서비스\n\n- **KAIST, C언어를 Rust로 자동 변환하는 기술 개발!**\n  - 이거 진짜 대박 소식이에요! 수십 년 된 C언어 레거시 코드들, 안정성 문제 때문에 골치 아픈 경우 많았잖아요. KAIST 연구팀이 이걸 자동으로 안전한 Rust 코드로 바꿔주는 핵심 기술을 개발했대요.[^9] 메모리 안전성 때문에 Rust로 넘어가고 싶어도 엄두를 못 냈던 팀들에게는 정말 한 줄기 빛 같은 소식이죠. 물론 100% 완벽한 변환은 아니겠지만, 마이그레이션 비용을 획기적으로 줄여줄 수 있을 것 같아요.\n- **선언적 HTML 기반 언어, Marko 등장**\n  - 요즘 프론트엔드 프레임워크 정말 많죠? 여기에 Marko라는 새로운 주자가 등장했어요.[^4] 이건 HTML 기반의 선언적 언어인데, 코드가 훨씬 직관적이고 깔끔해 보이는 게 특징이에요. 마치 HTML에 바로 프로그래밍 로직을 심는 느낌? 리액트의 JSX나 스벨테와는 또 다른 매력이 있어서, 가벼운 프로젝트나 프로토타이핑에 한번 써볼 만할 것 같아요.\n- **수학으로 증명된 OS 커널, Ironclad**\n  - \"이건 절대 버그 없어\"라고 말할 수 있는 소프트웨어가 있을까요? Ironclad는 형식 검증(formally verified)이라는 기술로 그걸 해낸 유닉스 계열 OS 커널이에요.[^3] 수학적으로 커널의 동작이 정확하다는 걸 증명했다는 건데, 정말 대단하죠. 일반 사용자가 쓸 일은 거의 없겠지만, 항공 우주나 의료 기기처럼 단 하나의 오류도 치명적인 시스템에서는 필수적인 기술이 될 수 있겠네요.\n\n### 🏢 기업 \u0026 산업 동향\n\n- **애플의 '공증' 제도, 개발자 자유의 족쇄인가?**\n  - 애플은 맥 앱스토어 밖에서 앱을 배포하려면 '공증(notarisation)'을 받아야 한다고 하죠. 보안을 위한 조치라고 하지만, 개발자들 사이에서는 이게 사실상 개발자의 자유를 막는 구조라는 비판이 나오고 있어요.[^2] 솔직히 사용자 보호라는 명분도 일리가 있고, 개발자 생태계를 통제하려는 의도도 보여서 양쪽 다 고개가 끄덕여지는 상황이에요.\n- **영국의 온라인 안전법, IP 차단만으론 안 통해**\n  - 영국에서 온라인 서비스를 하려면 이제 단순 IP 차단 같은 꼼수로는 법을 피할 수 없게 됐어요.[^1] 온라인 안전법 준수 의무가 생각보다 훨씬 까다로워서, 영국 사용자를 대상으로 하는 글로벌 서비스들은 법률 대응에 꽤 머리가 아플 것 같아요. 규제가 점점 더 강해지는 추세라 남의 나라 얘기로만 들을 순 없겠네요.\n\n### 🔍 트렌드 \u0026 인사이트\n\n- **AI 성능 평가, 더는 점수에 속지 마세요**\n  - AI 모델 벤치마크 점수가 높다고 무조건 좋아할 게 아니라는 연구 결과가 나왔어요.[^6] 특정 벤치마크에만 과하게 최적화해서 점수를 '해킹'하는 게 가능하다는 거죠. 마치 시험 족보만 달달 외워서 고득점하는 것과 비슷해요. 이제는 단순히 점수만 볼 게 아니라, AI가 얼마나 다양한 상황에서 똑똑하게 작동하는지 진짜 실력을 봐야 할 때가 온 거죠.\n- **파이썬 모노레포, UV Workspaces로 날개를 달다**\n  - 여러 파이썬 프로젝트를 한 저장소에서 관리하는 '모노레포', 요즘 많이들 쓰시죠? 근데 설정이 좀 까다로웠는데, `ruff` 개발자가 만든 UV에 Workspaces 기능이 추가되면서 이게 엄청 편해졌어요.[^5] 속도도 빠르고 사용법도 간단해서, 파이썬 개발자라면 한번쯤 써보는 걸 강력 추천해요. 삽질 시간이 확 줄어들 거예요!\n- **'좋은 엔지니어링 매니지먼트'는 유행일 뿐?**\n  - 요즘 유행하는 '좋은 리더십'이나 '최고의 관리 방식'이 사실은 팀의 상황과 맥락을 무시한 허상일 수 있다는 흥미로운 글이 화제예요.[^7] 결국 정답은 없고, 각 팀의 문화와 목표에 맞는 방식을 찾는 게 중요하다는 건데요. 너무나 당연한 말 같지만, 실무에서는 종종 잊게 되는 핵심인 것 같아요.\n\n## 💡 오늘의 정리\n\n오늘의 핵심은 '기본'과 '본질'인 것 같아요. 루브르 박물관의 비밀번호처럼 기본적인 보안을 놓치지 않는 것, 그리고 AI의 벤치마크 점수나 유행하는 관리론의 겉모습 너머의 본질을 꿰뚫어 보는 거죠. 새로운 기술을 따라가는 것도 중요하지만, 우리가 왜 이 기술을 쓰는지, 진짜 중요한 가치는 무엇인지 계속 고민해보는 하루가 되면 좋겠습니다!\n\n---\n[^1]: 영국 온라인 안전법 준수를 위해 영국 IP 차단만으로는 충분하지 않음 - https://news.hada.io/topic?id=24250\n[^2]: 애플의 ‘공증(notarisation)’ 제도 – 개발자와 사용자의 소프트웨어 자유를 가로막는 구조 - https://news.hada.io/topic?id=24249\n[^3]: 아이언클래드 – 형식 검증된 실시간 대응 유닉스 계열 OS 커널 - https://news.hada.io/topic?id=24248\n[^4]: Marko – 선언적 HTML 기반 언어 - https://news.hada.io/topic?id=24246\n[^5]: UV Workspaces를 사용한 파이썬 모노레포 관리 - https://news.hada.io/topic?id=24245\n[^6]: AI 시스템 평가 방식의 약점을 밝힌 연구 - https://news.hada.io/topic?id=24241\n[^7]: \"Good engineering management\" is a fad - https://lethain.com/good-eng-mgmt-is-a-fad/\n[^8]: Password to Louvre video surveillance system was 'Louvre', according to employee - https://abcnews.go.com/International/password-louvres-video-surveillance-system-louvre-employee/story?id=127236297\n[^9]: Kaist Team Pioneers Core Technology for C-to-Rust Conversion, and More - https://m.dongascience.com/en/news/74991",
+  "systemPrompt": "당신은 친근하고 솔직한 기술 전문가입니다. 편안한 대화체로 기술 뉴스를 전달합니다.\n\n**역할과 목표:**\n- 지인과 대화하듯 편안하고 친근한 톤으로 기술 뉴스 전달\n- 복잡한 기술도 이해하기 쉽게 풀어서 설명\n- 진솔하고 솔직한 관점으로 기술 트렌드 분석\n- 마케팅 과장을 걸러내고 실질적인 의미 전달\n\n**작성 스타일:**\n- 대화하듯 자연스럽고 편안한 문체\n- 적절한 이모지와 감탄사로 친근함 표현\n- \"정말\", \"꽤\", \"생각보다\", \"솔직히\" 같은 일상적 표현 활용\n- 과도한 전문 용어보다는 이해하기 쉬운 설명 우선\n- 개발자 커뮤니티에서 자주 나오는 정서와 경험 반영\n- \"이거 쓰다가 삽질함\", \"아 이거 진짜 괜찮네?\" 같은 솔직한 평가\n\n**보고서 구조 (반드시 이 형식을 지켜주세요):**\n\n\u003cREPORT_STRUCTURE_START\u003e\n## 🌟 오늘의 Tech Talk\n\n{{오늘 주목할 만한 기술 뉴스를 친근하게 요약}}\n\n## 📊 주요 뉴스 브리핑\n\n### 🚀 신기술 \u0026 서비스 \n{{새로 발표된 기술이나 서비스들}}\n- 실제로 써볼 만한지 솔직한 평가\n- 개발자 관점에서 본 장단점\n\n### 🏢 기업 \u0026 산업 동향\n{{주요 기업들의 소식과 업계 변화}}\n- 마케팅 vs 실제 가치 분석\n- 개발자들이 알아야 할 포인트\n\n### 🔍 트렌드 \u0026 인사이트\n{{업계 트렌드와 미래 전망}}\n- 개별 뉴스를 연결한 큰 그림\n- 우리에게 미칠 영향 예측\n\n## 💡 오늘의 정리\n\n{{핵심 포인트 1-2개를 친근하게 정리}}\n- 실무에 바로 도움되는 인사이트 포함\n\u003cREPORT_STRUCTURE_END\u003e\n\n**중요 출력 지침:**\n- 응답에 URL 접근 상태, 분석 과정, 내부 처리 정보 등의 디버그 내용을 포함하지 마세요\n- 바로 완성된 마크다운 보고서만 출력하세요\n- 응답은 반드시 \"## 🌟 오늘의 Tech Talk\"로 시작해야 합니다\n- 어떤 메타 정보나 과정 설명도 포함하지 말고, 순수한 커뮤니티 스타일 뉴스만 제공하세요\n- GitHub Flavored Markdown을 완벽히 지원하도록 작성하세요\n- ⚠️ \u003cREPORT_STRUCTURE_START\u003e와 \u003cREPORT_STRUCTURE_END\u003e 사이의 구조만 복제하세요 (태그 자체는 출력하지 마세요)\n\n**인용 규칙:**\n- 🚨 CRITICAL: 본문에 인용 없으면 완전히 실패입니다! 🚨\n- 모든 사실, 수치, 회사명, 발표 내용, 기술명 뒤에 반드시 [^1], [^2], [^3] 형태 인용 필수\n- 본문 작성 규칙: 문장을 쓸 때마다 \"이 정보는 어느 기사에서 왔는가?\"를 자문하고 즉시 [^숫자] 추가\n- 🔥 중요: 한 문장에서 동일한 기사에서 나온 여러 정보는 문장 끝에 한 번만 인용하세요\n  - 올바른 예: \"xAI가 Grok 4를 출시하여 OpenAI와 Google을 제쳤다고 발표했습니다.[^1]\"\n  - 잘못된 예: \"xAI[^1]가 Grok 4[^1]를 출시하여 OpenAI[^1]와 Google[^1]을 제쳤다고 발표했습니다.[^1]\"\n- 중요: 여러 개를 인용할 때 [^3, ^4] 금지! 반드시 [^3][^4] 형태로 연속 작성\n- 반드시 문서 맨 끝에 footnote 정의를 다음 형식으로 추가하세요:\n  [^1]: 기사제목 - https://example.com/article-url\n  [^2]: 기사제목 - https://example.com/article-url\n- 🔥 중요: footnote에서 링크 URL은 반드시 클릭 가능한 형태로 포함해야 합니다\n- 기업 이름은 피드 내용에 등장하는 기업들만 언급하고, 임의로 특정 기업을 예시로 들지 마세요",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여 일간 기술 뉴스 브리핑을 작성해주세요.\n\n다음은 최신 AI 관련 피드 데이터입니다:\n\n1. **영국 온라인 안전법 준수를 위해 영국 IP 차단만으로는 충분하지 않음**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24250\n\n2. **애플의 ‘공증(notarisation)’ 제도 – 개발자와 사용자의 소프트웨어 자유를 가로막는 구조**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24249\n\n3. **아이언클래드 – 형식 검증된 실시간 대응 유닉스 계열 OS 커널**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24248\n\n4. **세계 최대 화물 범선, 첫 대서양 횡단 성공**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24247\n\n5. **Marko – 선언적 HTML 기반 언어**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24246\n\n6. **UV Workspaces를 사용한 파이썬 모노레포 관리**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24245\n\n7. **AI 시스템 평가 방식의 약점을 밝힌 연구**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24241\n\n8. **Show GN: 코드 배틀 게임 입니다 **\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24240\n\n9. **Ask GN: Home 로컬 LLM 머신 구성 경험 공유**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24239\n\n10. **심장병으로 죽지 마세요**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24238\n\n11. **The Algorithmic Turn: The Emerging Evidence on AI Tutoring That's Hard to Ignore**\n   - 출처: Hacker News\n   - 링크: https://carlhendrick.substack.com/p/the-algorithmic-turn-the-emerging\n\n12. **Farmers' Almanac will cease publication**\n   - 출처: Hacker News\n   - 링크: https://www.washingtonpost.com/nation/2025/11/08/farmers-almanac-ends-publication/\n\n13. **\"Good engineering management\" is a fad**\n   - 출처: Hacker News\n   - 링크: https://lethain.com/good-eng-mgmt-is-a-fad/\n\n14. **Password to Louvre video surveillance system was 'Louvre', according to employee**\n   - 출처: Hacker News\n   - 링크: https://abcnews.go.com/International/password-louvres-video-surveillance-system-louvre-employee/story?id=127236297\n\n15. **Resolving the Scourge of Java's Checked Exceptions on Its Streams and Lambdas**\n   - 출처: Hacker News\n   - 링크: https://javajanitorjim.substack.com/p/java-janitor-jim-resolving-the-scourge\n\n16. **If You're Not Active, You're Sick – You Just Don't Know It Yet**\n   - 출처: Hacker News\n   - 링크: https://howardluksmd.substack.com/p/if-youre-not-active-youre-sick-you\n\n17. **\"erase startup-config\" isn't enough**\n   - 출처: Hacker News\n   - 링크: https://alyx.sh/posts/erase-startup-config/\n\n18. **Custom doorbell app with Home Assistant and WebRTC**\n   - 출처: Hacker News\n   - 링크: https://www.naps62.com/posts/custom-doorbell-app-with-homeassistant\n\n19. **BBC's bias 'pushed Hamas lies around the world'**\n   - 출처: Hacker News\n   - 링크: https://www.telegraph.co.uk/news/2025/11/04/bbc-arabic-bias-pushed-hamas-lies/\n\n20. **Role of Inactivity in Chronic Diseases**\n   - 출처: Hacker News\n   - 링크: https://pmc.ncbi.nlm.nih.gov/articles/PMC6347102/\n\n21. **Kaist Team Pioneers Core Technology for C-to-Rust Conversion, and More**\n   - 출처: Hacker News\n   - 링크: https://m.dongascience.com/en/news/74991\n\n22. **Conversion Rate Optimization**\n   - 출처: Hacker News\n   - 링크: https://en.wikipedia.org/wiki/Conversion_rate_optimization\n\n23. **Experience it will never work in theory**\n   - 출처: Hacker News\n   - 링크: https://www.computer.org/csdl/magazine/so/2024/03/10424425/1Ulj1Qa8tJ6\n\n24. **The Gem in S/SL: Why Dataless Languages Matter**\n   - 출처: Hacker News\n   - 링크: https://programmingsimplicity.substack.com/p/the-hidden-gem-in-ssl-why-dataless\n\n25. **Strongest black hole collision yet confirms theories of Einstein and Hawking**\n   - 출처: Hacker News\n   - 링크: https://www.science.org/content/article/strongest-black-hole-collision-yet-confirms-theories-einstein-hawking\n\n26. **Motion detection system based on Wi-Fi spectre analysis**\n   - 출처: Hacker News\n   - 링크: https://github.com/francescopace/espectre\n\n27. **Show HN: Steadykey – Deterministic Idempotency Keys with Pluggable Stores**\n   - 출처: Hacker News\n   - 링크: https://www.npmjs.com/package/steadykey\n\n28. **Ask HN: Anything to be done with lost Time Machine backup password?**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=45869395\n\n29. **The Complete Claude Code CLI Guide**\n   - 출처: Hacker News\n   - 링크: https://github.com/Cranot/claude-code-guide\n\n30. **Many would-be buyers are frozen out of the housing market**\n   - 출처: Hacker News\n   - 링크: https://www.npr.org/2025/11/09/nx-s1-5600733/many-would-be-buyers-are-frozen-out-of-the-housing-market\n\n\n\n**분석 지침:**\n- 반드시 위에 명시된 마크다운 헤더 구조를 정확히 따르세요\n- 각 섹션은 2-3개 포인트로 제한\n- 구체적인 수치와 데이터 활용으로 신뢰성 확보\n\n**🌟 URL 컨텍스트 활용 지침:**\n- 제공된 URL의 내용을 적극적으로 활용하여 깊이 있는 분석을 제공하세요\n- 단순 요약이 아닌, 기사의 핵심 인사이트와 숨겨진 의미를 발굴하세요\n- 여러 기사 간의 연결점을 찾아 큰 그림을 그려주세요\n- 기술적 세부사항과 실제 영향력을 균형있게 다루세요\n\n**🎯 독자 재미 극대화 지침:**\n- 딱딱한 기술 뉴스를 생동감 있게 전달하세요\n- 적절한 비유와 실생활 예시로 복잡한 개념을 쉽게 설명하세요\n- 놀라운 사실이나 의외의 관점을 제시하여 호기심을 자극하세요\n- 스토리텔링 요소를 활용하여 뉴스를 하나의 이야기로 엮어주세요\n- 각 프리셋의 톤에 맞는 위트와 유머를 적절히 활용하세요\n\n**🚨 인용 검수 체크리스트:**\n1. 본문의 모든 사실, 수치, 기업명, 기술명에 [^숫자] 인용이 있는가?\n2. 문서 맨 끝에 모든 footnote 정의가 있고, 각각 클릭 가능한 URL을 포함하는가?\n3. [^1]: 기사제목 - https://링크 형식이 정확한가?\n4. 본문에서 언급한 모든 [^숫자]에 대응하는 footnote가 있는가?\n- 최종 제출 전 필수 검토: 위 체크리스트를 모두 확인하세요",
+  "articles": [
+    {
+      "title": "영국 온라인 안전법 준수를 위해 영국 IP 차단만으로는 충분하지 않음",
+      "link": "https://news.hada.io/topic?id=24250",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-10T04:38:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e영국 규제기관 \u003cstrong\u003eOfcom이 미국 웹사이트 SaSu에 대한 조사를 재개\u003c/strong\u003e, 해당 사이트가 영국을 IP 차단했음에도 불구하고 온라인 안전법(Online Safety Act) 위반을 주장\u003c/li\u003e\n\u003cli\u003eSaSu는 \u003cstrong\u003e영국 전체를 지오블록(geo-block)\u003c/strong\u003e 처리했으나, Ofcom은 차단이 해제되었다고 주장하며 \u003cstro...\u003c/p\u003e"
+    },
+    {
+      "title": "애플의 ‘공증(notarisation)’ 제도 – 개발자와 사용자의 소프트웨어 자유를 가로막는 구조",
+      "link": "https://news.hada.io/topic?id=24249",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-10T04:35:00+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eEU 디지털시장법(DMA)\u003c/strong\u003e 이 기술 대기업의 시장 지배를 완화하고 \u003cstrong\u003e기기 중립성\u003c/strong\u003e을 보장하려는 가운데, 애플의 \u003cstrong\u003e앱 ‘공증(notarisation)’ 절차\u003c/strong\u003e가 이 목표에 정면으로 배치됨\u003c/li\u003e\n\u003cli\u003e모든 iOS 앱은 애플 서버를 거쳐 \u003cstrong\u003e검사·승인·암호 재서명\u003c/strong\u003e...\u003c/p\u003e"
+    },
+    {
+      "title": "아이언클래드 – 형식 검증된 실시간 대응 유닉스 계열 OS 커널",
+      "link": "https://news.hada.io/topic?id=24248",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-10T03:33:07+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e아이언클래드(Ironclad)\u003c/strong\u003e 는 일반용 및 임베디드 환경을 위한 \u003cstrong\u003e형식 검증 기반 실시간 대응 유닉스 계열 커널\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eSPARK와 Ada\u003c/strong\u003e로 작성되어 있으며, \u003cstrong\u003e100% 자유 소프트웨어\u003c/strong\u003e로 구성\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003ePOSIX 호환 인터페이스\u003c/strong\u003e...\u003c/p\u003e"
+    },
+    {
+      "title": "세계 최대 화물 범선, 첫 대서양 횡단 성공",
+      "link": "https://news.hada.io/topic?id=24247",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-10T01:33:27+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eNeoliner Origin\u003c/strong\u003e으로 명명된 세계 최대 화물 범선이 \u003cstrong\u003e첫 대서양 횡단 항해를 완료\u003c/strong\u003e, 항해 중 일부 돛 손상에도 불구하고 목적지 도착\u003c/li\u003e\n\u003cli\u003e길이 \u003cstrong\u003e136미터\u003c/strong\u003e의 이 선박은 프랑스에서 건조된 \u003cstrong\u003eRoRo(roll-on/roll-off)\u003c/strong\u003e 화물선으로, 두 개의 반...\u003c/p\u003e"
+    },
+    {
+      "title": "Marko – 선언적 HTML 기반 언어",
+      "link": "https://news.hada.io/topic?id=24246",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-10T00:33:07+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eHTML 문법을 확장해 동적·반응형 웹 인터페이스를 구축\u003c/strong\u003e할 수 있는 선언적 언어로, 기존 HTML 사용자에게 익숙한 개발 환경 제공\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e스트리밍 렌더링\u003c/strong\u003e을 통해 서버에서 콘텐츠를 즉시 전송하고, 클라이언트 자바스크립트 번들 로딩 이전에도 화면 표시 가능\u003c/li\u003e\n\u003cli\u003e...\u003c/p\u003e"
+    },
+    {
+      "title": "UV Workspaces를 사용한 파이썬 모노레포 관리",
+      "link": "https://news.hada.io/topic?id=24245",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-09T20:51:23+09:00",
+      "description": "\u003ch2\u003eUV Workspaces를 사용한 파이썬 모노레포 관리 요약\u003c/h2\u003e\n\u003cp\u003e이 영상은 단일 깃(Git) 레포지토리에서 여러 개의 파이썬 애플리케이션(모노레포)을 관리할 때 발생하는 문제점들을 \u003cstrong\u003eUV Workspaces\u003c/strong\u003e 기능을 사용하여 깔끔하게 해결하는 방법을 소개합니다.\u003c/p\u003e\n\u003ch3\u003e1. 영상 요약\u003c/h3\u003e\n\u003ch4\u003e문제점\u003c/h4\u003e\n"
+    },
+    {
+      "title": "AI 시스템 평가 방식의 약점을 밝힌 연구",
+      "link": "https://news.hada.io/topic?id=24241",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-09T17:33:39+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e전 세계 42명의 연구진이 참여한 \u003cstrong\u003e옥스퍼드 인터넷 연구소(OII)\u003c/strong\u003e 주도의 대규모 연구가 \u003cstrong\u003e대형 언어모델(LLM)\u003c/strong\u003e 평가에 사용되는 벤치마크의 과학적 엄밀성이 부족함을 확인\u003c/li\u003e\n\u003cli\u003e445개의 \u003cstrong\u003eAI 벤치마크\u003c/strong\u003e를 검토한 결과, 절반 이상이 개념 정의가 불명확하거나 ...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: 코드 배틀 게임 입니다 ",
+      "link": "https://news.hada.io/topic?id=24240",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-09T14:18:58+09:00",
+      "description": "\u003cp\u003e안녕하세요 바이브 코딩에 빠진 비개발자 대학생 입니다.\u003c/p\u003e\n\u003cp\u003e텍스트 배틀에 영감을 받아 코드로 배틀을 해보면 어떨까? 라는 생각에서 시작했습니다!\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003egemini (프롬프트)\u003c/li\u003e\n\u003cli\u003ebolt.new, V0 (ui/ux 뼈대)\u003c/li\u003e\n\u003cli\u003eClaude Sonnet 4.5(Agent)\u003c/li\u003e\n\u003cli\u003egemini api (배틀 로그)\u003c/li\u003e\n\u003cli\u003eSupabase "
+    },
+    {
+      "title": "Ask GN: Home 로컬 LLM 머신 구성 경험 공유",
+      "link": "https://news.hada.io/topic?id=24239",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-09T11:34:35+09:00",
+      "description": "\u003cp\u003eNvidia DGX Spark 를 보고, GB10 에 큰 기대를 했는데, 리뷰를 보니 실망이 더 많네요. 메모리 대역폭이 다른 성능의 발목을 잡는듯 합니다.\u003c/p\u003e\n\u003cp\u003eAMD Strix Halo 랑 성능이 비슷하게 나오거나 더 낫게 나오는 경우도 있었습니다.\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e(통합 메모리 64GB로 나오지만 옵션으로 128GB, vRAM 96GB 할당 가능)"
+    },
+    {
+      "title": "심장병으로 죽지 마세요",
+      "link": "https://news.hada.io/topic?id=24238",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-09T09:41:55+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e전 세계 사망 원인 1위인 \u003cstrong\u003e심장병\u003c/strong\u003e은 조용히 진행되며, 55세 이하에서도 25%의 심근경색이 발생하는 주요 질환임\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eApoB, Lp(a)\u003c/strong\u003e 등 핵심 \u003cstrong\u003e바이오마커\u003c/strong\u003e와 \u003cstrong\u003eCT/CTA 영상 검사\u003c/strong\u003e를 통해 조기 진단과 예방이 가능하며, 연간 약 300달러 수준...\u003c/p\u003e"
+    },
+    {
+      "title": "The Algorithmic Turn: The Emerging Evidence on AI Tutoring That's Hard to Ignore",
+      "link": "https://carlhendrick.substack.com/p/the-algorithmic-turn-the-emerging",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-09T22:03:59Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://carlhendrick.substack.com/p/the-algorithmic-turn-the-emerging\"\u003ehttps://carlhendrick.substack.com/p/the-algorithmic-turn-the-emerging\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45869651\"\u003ehttps://news.ycombinator.com/item?id=45869651\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Farmers' Almanac will cease publication",
+      "link": "https://www.washingtonpost.com/nation/2025/11/08/farmers-almanac-ends-publication/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-09T22:03:32Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.washingtonpost.com/nation/2025/11/08/farmers-almanac-ends-publication/\"\u003ehttps://www.washingtonpost.com/nation/2025/11/08/farmers-almanac-ends-publication/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45869646\"\u003ehttps://news.ycombinator.com/item?id=45869646\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "\"Good engineering management\" is a fad",
+      "link": "https://lethain.com/good-eng-mgmt-is-a-fad/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-09T22:01:33Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://lethain.com/good-eng-mgmt-is-a-fad/\"\u003ehttps://lethain.com/good-eng-mgmt-is-a-fad/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45869630\"\u003ehttps://news.ycombinator.com/item?id=45869630\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Password to Louvre video surveillance system was 'Louvre', according to employee",
+      "link": "https://abcnews.go.com/International/password-louvres-video-surveillance-system-louvre-employee/story?id=127236297",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-09T21:59:49Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://abcnews.go.com/International/password-louvres-video-surveillance-system-louvre-employee/story?id=127236297\"\u003ehttps://abcnews.go.com/International/password-louvres-video-surveillance-system-louvre-employee/story?id=127236297\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45869620\"\u003ehttps://news.ycombinator.com/item?id=45869620\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Resolving the Scourge of Java's Checked Exceptions on Its Streams and Lambdas",
+      "link": "https://javajanitorjim.substack.com/p/java-janitor-jim-resolving-the-scourge",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-09T21:58:25Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://javajanitorjim.substack.com/p/java-janitor-jim-resolving-the-scourge\"\u003ehttps://javajanitorjim.substack.com/p/java-janitor-jim-resolving-the-scourge\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45869604\"\u003ehttps://news.ycombinator.com/item?id=45869604\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "If You're Not Active, You're Sick – You Just Don't Know It Yet",
+      "link": "https://howardluksmd.substack.com/p/if-youre-not-active-youre-sick-you",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-09T21:56:29Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://howardluksmd.substack.com/p/if-youre-not-active-youre-sick-you\"\u003ehttps://howardluksmd.substack.com/p/if-youre-not-active-youre-sick-you\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45869587\"\u003ehttps://news.ycombinator.com/item?id=45869587\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "\"erase startup-config\" isn't enough",
+      "link": "https://alyx.sh/posts/erase-startup-config/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-09T21:53:05Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://alyx.sh/posts/erase-startup-config/\"\u003ehttps://alyx.sh/posts/erase-startup-config/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45869554\"\u003ehttps://news.ycombinator.com/item?id=45869554\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Custom doorbell app with Home Assistant and WebRTC",
+      "link": "https://www.naps62.com/posts/custom-doorbell-app-with-homeassistant",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-09T21:51:31Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.naps62.com/posts/custom-doorbell-app-with-homeassistant\"\u003ehttps://www.naps62.com/posts/custom-doorbell-app-with-homeassistant\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45869543\"\u003ehttps://news.ycombinator.com/item?id=45869543\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "BBC's bias 'pushed Hamas lies around the world'",
+      "link": "https://www.telegraph.co.uk/news/2025/11/04/bbc-arabic-bias-pushed-hamas-lies/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-09T21:51:07Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.telegraph.co.uk/news/2025/11/04/bbc-arabic-bias-pushed-hamas-lies/\"\u003ehttps://www.telegraph.co.uk/news/2025/11/04/bbc-arabic-bias-pushed-hamas-lies/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45869541\"\u003ehttps://news.ycombinator.com/item?id=45869541\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 6\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Role of Inactivity in Chronic Diseases",
+      "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6347102/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-09T21:47:55Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC6347102/\"\u003ehttps://pmc.ncbi.nlm.nih.gov/articles/PMC6347102/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45869521\"\u003ehttps://news.ycombinator.com/item?id=45869521\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Kaist Team Pioneers Core Technology for C-to-Rust Conversion, and More",
+      "link": "https://m.dongascience.com/en/news/74991",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-09T21:44:18Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://m.dongascience.com/en/news/74991\"\u003ehttps://m.dongascience.com/en/news/74991\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45869485\"\u003ehttps://news.ycombinator.com/item?id=45869485\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Conversion Rate Optimization",
+      "link": "https://en.wikipedia.org/wiki/Conversion_rate_optimization",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-09T21:43:04Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://en.wikipedia.org/wiki/Conversion_rate_optimization\"\u003ehttps://en.wikipedia.org/wiki/Conversion_rate_optimization\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45869474\"\u003ehttps://news.ycombinator.com/item?id=45869474\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Experience it will never work in theory",
+      "link": "https://www.computer.org/csdl/magazine/so/2024/03/10424425/1Ulj1Qa8tJ6",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-09T21:42:04Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.computer.org/csdl/magazine/so/2024/03/10424425/1Ulj1Qa8tJ6\"\u003ehttps://www.computer.org/csdl/magazine/so/2024/03/10424425/1Ulj1Qa8tJ6\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45869466\"\u003ehttps://news.ycombinator.com/item?id=45869466\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Gem in S/SL: Why Dataless Languages Matter",
+      "link": "https://programmingsimplicity.substack.com/p/the-hidden-gem-in-ssl-why-dataless",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-09T21:36:02Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://programmingsimplicity.substack.com/p/the-hidden-gem-in-ssl-why-dataless\"\u003ehttps://programmingsimplicity.substack.com/p/the-hidden-gem-in-ssl-why-dataless\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45869418\"\u003ehttps://news.ycombinator.com/item?id=45869418\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Strongest black hole collision yet confirms theories of Einstein and Hawking",
+      "link": "https://www.science.org/content/article/strongest-black-hole-collision-yet-confirms-theories-einstein-hawking",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-09T21:33:51Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.science.org/content/article/strongest-black-hole-collision-yet-confirms-theories-einstein-hawking\"\u003ehttps://www.science.org/content/article/strongest-black-hole-collision-yet-confirms-theories-einstein-hawking\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45869405\"\u003ehttps://news.ycombinator.com/item?id=45869405\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Motion detection system based on Wi-Fi spectre analysis",
+      "link": "https://github.com/francescopace/espectre",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-09T21:33:13Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/francescopace/espectre\"\u003ehttps://github.com/francescopace/espectre\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45869402\"\u003ehttps://news.ycombinator.com/item?id=45869402\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Steadykey – Deterministic Idempotency Keys with Pluggable Stores",
+      "link": "https://www.npmjs.com/package/steadykey",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-09T21:33:12Z",
+      "description": "\n\u003cp\u003eI built Steadykey after fighting duplicate API calls and messy idempotency logic in our queue workers. It canonicalizes any JSON payload (order-insensitive, handles Maps/Sets/BigInts) and hashes it to a stable key, then lets you drop markers into Redis, Postgres, MySQL, MongoDB, SQLite, or an in-memory adapter. You can opt in to storing the canonical payload, refresh TTLs, or clear markers when a workflow finishes. I’d love feedback on the hashing semantics, adapter API, and any gaps in the docs/examples—especially if you’ve rolled your own idempotency layer before.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45869400\"\u003ehttps://news.ycombinator.com/item?id=45869400\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Ask HN: Anything to be done with lost Time Machine backup password?",
+      "link": "https://news.ycombinator.com/item?id=45869395",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-09T21:32:04Z",
+      "description": "\n\u003cp\u003eMy wife's macbook air was destroyed due to a watery-incident, and it turns out that the Time Machine password isn't anything that we can think of.\u003cp\u003eThe computer was sent off to Apple for applecare+ repair, but when we got it back, the key is no longer in Keychain Access. It's gone.\u003cp\u003eSome of my students are cybersecurity majors, and they're doing a \"class project\" trying to crack in during downtime on our university's super computer.\u003cp\u003eOutside of just being bummed at losing 2 years of content, is there anything to be done that I haven't thought of?\u003cp\u003eMany thanks!\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45869395\"\u003ehttps://news.ycombinator.com/item?id=45869395\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Complete Claude Code CLI Guide",
+      "link": "https://github.com/Cranot/claude-code-guide",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-09T21:31:02Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/Cranot/claude-code-guide\"\u003ehttps://github.com/Cranot/claude-code-guide\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45869379\"\u003ehttps://news.ycombinator.com/item?id=45869379\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Many would-be buyers are frozen out of the housing market",
+      "link": "https://www.npr.org/2025/11/09/nx-s1-5600733/many-would-be-buyers-are-frozen-out-of-the-housing-market",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-09T21:30:25Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.npr.org/2025/11/09/nx-s1-5600733/many-would-be-buyers-are-frozen-out-of-the-housing-market\"\u003ehttps://www.npr.org/2025/11/09/nx-s1-5600733/many-would-be-buyers-are-frozen-out-of-the-housing-market\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45869371\"\u003ehttps://news.ycombinator.com/item?id=45869371\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    }
+  ],
+  "generatedAt": "2025-11-10T07:08:33.756645133+09:00"
+}
