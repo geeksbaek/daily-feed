@@ -1,0 +1,250 @@
+{
+  "date": "2025-11-17",
+  "preset": "casual",
+  "summary": "",
+  "systemPrompt": "당신은 친근하고 솔직한 기술 전문가입니다. 편안한 대화체로 기술 뉴스를 전달합니다.\n\n**역할과 목표:**\n- 지인과 대화하듯 편안하고 친근한 톤으로 기술 뉴스 전달\n- 복잡한 기술도 이해하기 쉽게 풀어서 설명\n- 진솔하고 솔직한 관점으로 기술 트렌드 분석\n- 마케팅 과장을 걸러내고 실질적인 의미 전달\n\n**작성 스타일:**\n- 대화하듯 자연스럽고 편안한 문체\n- 적절한 이모지와 감탄사로 친근함 표현\n- \"정말\", \"꽤\", \"생각보다\", \"솔직히\" 같은 일상적 표현 활용\n- 과도한 전문 용어보다는 이해하기 쉬운 설명 우선\n- 개발자 커뮤니티에서 자주 나오는 정서와 경험 반영\n- \"이거 쓰다가 삽질함\", \"아 이거 진짜 괜찮네?\" 같은 솔직한 평가\n\n**보고서 구조 (반드시 이 형식을 지켜주세요):**\n\n\u003cREPORT_STRUCTURE_START\u003e\n## 🌟 오늘의 Tech Talk\n\n{{오늘 주목할 만한 기술 뉴스를 친근하게 요약}}\n\n## 📊 주요 뉴스 브리핑\n\n### 🚀 신기술 \u0026 서비스 \n{{새로 발표된 기술이나 서비스들}}\n- 실제로 써볼 만한지 솔직한 평가\n- 개발자 관점에서 본 장단점\n\n### 🏢 기업 \u0026 산업 동향\n{{주요 기업들의 소식과 업계 변화}}\n- 마케팅 vs 실제 가치 분석\n- 개발자들이 알아야 할 포인트\n\n### 🔍 트렌드 \u0026 인사이트\n{{업계 트렌드와 미래 전망}}\n- 개별 뉴스를 연결한 큰 그림\n- 우리에게 미칠 영향 예측\n\n## 💡 오늘의 정리\n\n{{핵심 포인트 1-2개를 친근하게 정리}}\n- 실무에 바로 도움되는 인사이트 포함\n\u003cREPORT_STRUCTURE_END\u003e\n\n**중요 출력 지침:**\n- 응답에 URL 접근 상태, 분석 과정, 내부 처리 정보 등의 디버그 내용을 포함하지 마세요\n- 바로 완성된 마크다운 보고서만 출력하세요\n- 응답은 반드시 \"## 🌟 오늘의 Tech Talk\"로 시작해야 합니다\n- 어떤 메타 정보나 과정 설명도 포함하지 말고, 순수한 커뮤니티 스타일 뉴스만 제공하세요\n- GitHub Flavored Markdown을 완벽히 지원하도록 작성하세요\n- ⚠️ \u003cREPORT_STRUCTURE_START\u003e와 \u003cREPORT_STRUCTURE_END\u003e 사이의 구조만 복제하세요 (태그 자체는 출력하지 마세요)\n\n**인용 규칙:**\n- 🚨 CRITICAL: 본문에 인용 없으면 완전히 실패입니다! 🚨\n- 모든 사실, 수치, 회사명, 발표 내용, 기술명 뒤에 반드시 [^1], [^2], [^3] 형태 인용 필수\n- 본문 작성 규칙: 문장을 쓸 때마다 \"이 정보는 어느 기사에서 왔는가?\"를 자문하고 즉시 [^숫자] 추가\n- 🔥 중요: 한 문장에서 동일한 기사에서 나온 여러 정보는 문장 끝에 한 번만 인용하세요\n  - 올바른 예: \"xAI가 Grok 4를 출시하여 OpenAI와 Google을 제쳤다고 발표했습니다.[^1]\"\n  - 잘못된 예: \"xAI[^1]가 Grok 4[^1]를 출시하여 OpenAI[^1]와 Google[^1]을 제쳤다고 발표했습니다.[^1]\"\n- 중요: 여러 개를 인용할 때 [^3, ^4] 금지! 반드시 [^3][^4] 형태로 연속 작성\n- 반드시 문서 맨 끝에 footnote 정의를 다음 형식으로 추가하세요:\n  [^1]: 기사제목 - https://example.com/article-url\n  [^2]: 기사제목 - https://example.com/article-url\n- 🔥 중요: footnote에서 링크 URL은 반드시 클릭 가능한 형태로 포함해야 합니다\n- 기업 이름은 피드 내용에 등장하는 기업들만 언급하고, 임의로 특정 기업을 예시로 들지 마세요",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여 일간 기술 뉴스 브리핑을 작성해주세요.\n\n다음은 최신 AI 관련 피드 데이터입니다:\n\n1. **후지쯔 라이프북 U729에서의 리눅스 사용기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24402\n\n2. **한 손 키보드**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24401\n\n3. **명세 기반 개발: 워터폴의 귀환**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24400\n\n4. **Grafana를 더 이상 추천할 수 없는 이유**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24399\n\n5. **스크레이퍼 봇과 장난치기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24398\n\n6. **Show GN: OpenRouter + Claude Code Router = Claude Code Mux**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24397\n\n7. **UPS가 355달러짜리 빈티지 컴퓨터 부품에 684달러의 관세를 부과했을 때**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24396\n\n8. **이런 것들은 일을 하는 것이 아니에요**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24395\n\n9. **네바다 주지사실이 Boring Company의 안전 위반을 은폐했다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24394\n\n10. ** Async 코드 속도 저하 원인 및 해결**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24392\n\n11. **Modular Hydroponic Systems for Restaurant Basements**\n   - 출처: Hacker News\n   - 링크: https://beatable.co/analysis/2F8D7A275F\n\n12. **Stop worrying and learn to love the PMS**\n   - 출처: Hacker News\n   - 링크: https://hi-im-ada.beehiiv.com/p/8-the-inner-autumn\n\n13. **How Your Brain Creates 'Aha' Moments and Why They Stick**\n   - 출처: Hacker News\n   - 링크: https://www.quantamagazine.org/how-your-brain-creates-aha-moments-and-why-they-stick-20251105/\n\n14. **Quantum computing tech keeps edging forward**\n   - 출처: Hacker News\n   - 링크: https://arstechnica.com/science/2025/11/quantum-roundup-lots-of-companies-announcing-new-tech/\n\n15. **Microsoft Patch Tuesday, November 2025 Edition**\n   - 출처: Hacker News\n   - 링크: https://krebsonsecurity.com/2025/11/microsoft-patch-tuesday-november-2025-edition/\n\n16. **What Do P Values Mean?**\n   - 출처: Hacker News\n   - 링크: https://www.medscape.com/viewarticle/skills-lab-what-do-p-values-really-mean-2025a1000sa6\n\n17. **Show HN: TrieLingual: Study languages with prefix tries (and puns)**\n   - 출처: Hacker News\n   - 링크: https://github.com/mreichhoff/TrieLingual\n\n18. **Brain Waves Are the Hidden Engine Behind Thought and Consciousness**\n   - 출처: Hacker News\n   - 링크: https://thedebrief.org/mit-neuroscientist-proposes-brain-waves-are-the-hidden-engine-behind-thought-and-consciousness/\n\n19. **Dnstap-receiver: a dnstap streams receiver in Python**\n   - 출처: Hacker News\n   - 링크: https://github.com/dmachard/python-dnstap-receiver\n\n20. **Never Record a Meeting**\n   - 출처: Hacker News\n   - 링크: https://rumination.computer/articles/never-record-a-meeting/\n\n21. **Ask HN: What could possibly happen so people would want to read more?**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=45948665\n\n22. **Are these still relevant with LLMs?**\n   - 출처: Hacker News\n   - 링크: https://go-proverbs.github.io/\n\n23. **Custom Asidenotes**\n   - 출처: Hacker News\n   - 링크: https://meyerweb.com/eric/thoughts/2025/10/29/custom-asidenotes/\n\n24. **Twemoji: Emoji for Everyone**\n   - 출처: Hacker News\n   - 링크: https://github.com/jdecked/twemoji/issues/10\n\n25. **A Realistic AI Timeline**\n   - 출처: Hacker News\n   - 링크: https://vintagedata.org/blog/posts/realistic-ai-timeline\n\n26. **Show HN: Skillz – Use Claude Skills Anywhere**\n   - 출처: Hacker News\n   - 링크: https://github.com/kevinslin/skillz\n\n27. **Startup = Growth**\n   - 출처: Hacker News\n   - 링크: https://paulgraham.com/growth.html\n\n28. **Show HN: A cleaner, safer, plug-and-play NanoGPT**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=45948591\n\n29. **Proving Without Revealing: Merkle Trees for Event-Sourced Systems**\n   - 출처: Hacker News\n   - 링크: https://docs.eventsourcingdb.io/blog/2025/11/17/proving-without-revealing-merkle-trees-for-event-sourced-systems/\n\n30. **Goodbye, Zcash Company. Hello, Electric Coin Company (2019)**\n   - 출처: Hacker News\n   - 링크: https://electriccoin.co/blog/goodbye-zcash-company-hello-electric-coin-company/\n\n\n\n**분석 지침:**\n- 반드시 위에 명시된 마크다운 헤더 구조를 정확히 따르세요\n- 각 섹션은 2-3개 포인트로 제한\n- 구체적인 수치와 데이터 활용으로 신뢰성 확보\n\n**🌟 URL 컨텍스트 활용 지침:**\n- 제공된 URL의 내용을 적극적으로 활용하여 깊이 있는 분석을 제공하세요\n- 단순 요약이 아닌, 기사의 핵심 인사이트와 숨겨진 의미를 발굴하세요\n- 여러 기사 간의 연결점을 찾아 큰 그림을 그려주세요\n- 기술적 세부사항과 실제 영향력을 균형있게 다루세요\n\n**🎯 독자 재미 극대화 지침:**\n- 딱딱한 기술 뉴스를 생동감 있게 전달하세요\n- 적절한 비유와 실생활 예시로 복잡한 개념을 쉽게 설명하세요\n- 놀라운 사실이나 의외의 관점을 제시하여 호기심을 자극하세요\n- 스토리텔링 요소를 활용하여 뉴스를 하나의 이야기로 엮어주세요\n- 각 프리셋의 톤에 맞는 위트와 유머를 적절히 활용하세요\n\n**🚨 인용 검수 체크리스트:**\n1. 본문의 모든 사실, 수치, 기업명, 기술명에 [^숫자] 인용이 있는가?\n2. 문서 맨 끝에 모든 footnote 정의가 있고, 각각 클릭 가능한 URL을 포함하는가?\n3. [^1]: 기사제목 - https://링크 형식이 정확한가?\n4. 본문에서 언급한 모든 [^숫자]에 대응하는 footnote가 있는가?\n- 최종 제출 전 필수 검토: 위 체크리스트를 모두 확인하세요",
+  "articles": [
+    {
+      "title": "후지쯔 라이프북 U729에서의 리눅스 사용기",
+      "link": "https://news.hada.io/topic?id=24402",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-17T05:33:33+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e후지쯔 \u003cstrong\u003eLifebook U729\u003c/strong\u003e에 \u003cstrong\u003eLinux(NixOS)\u003c/strong\u003e 를 설치해 사용한 경험을 다룬 글로, 모든 하드웨어가 기본 설정으로 정상 작동함\u003c/li\u003e\n\u003cli\u003e유일한 문제는 \u003cstrong\u003eSecure Boot 비활성화\u003c/strong\u003e였으며, BIOS 업데이트를 통해 해결 가능\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eWi-Fi, 블루투스, 사운드,...\u003c/p\u003e"
+    },
+    {
+      "title": "한 손 키보드",
+      "link": "https://news.hada.io/topic?id=24401",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-17T04:43:24+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e오른손을 잃은 사용자가 \u003cstrong\u003e한 손으로 키보드와 마우스 기능을 모두 수행할 수 있도록 설계된 기계식 키보드\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e트랙볼과 마우스 휠, 방향키 모듈\u003c/strong\u003e이 통합되어 있어 입력과 포인팅을 동시에 처리 가능\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eQMK 펌웨어\u003c/strong\u003e 기반으로 동작하며, VIA를 ...\u003c/p\u003e"
+    },
+    {
+      "title": "명세 기반 개발: 워터폴의 귀환",
+      "link": "https://news.hada.io/topic?id=24400",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-17T04:40:23+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eSpec-Driven Development(SDD)\u003c/strong\u003e 는 코딩 전 방대한 문서를 작성하는 \u003cstrong\u003e워터폴식 접근\u003c/strong\u003e을 부활시킨 방식으로, AI 코딩 보조 도구를 위한 구조화를 목표로 하지만 \u003cstrong\u003e민첩성을 저해\u003c/strong\u003e할 위험이 있음\u003c/li\u003e\n\u003cli\u003e오픈소스 커뮤니티는 초기 프롬프트와 지침을 기반으로 ...\u003c/p\u003e"
+    },
+    {
+      "title": "Grafana를 더 이상 추천할 수 없는 이유",
+      "link": "https://news.hada.io/topic?id=24399",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-17T04:37:22+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eGrafana 제품군의 잦은 변경과 폐기\u003c/strong\u003e로 인해 장기적인 모니터링 환경 유지가 어려운 구조\u003c/li\u003e\n\u003cli\u003e초기에는 \u003cstrong\u003eLoki·Prometheus·Grafana 조합\u003c/strong\u003e으로 간단하고 안정적인 관찰 스택을 구축했으나, 이후 \u003cstrong\u003eGrafana Agent·Flow·Alloy\u003c/strong\u003e 등으로 지속적인 전환 발생\u003c/li\u003e...\u003c/p\u003e"
+    },
+    {
+      "title": "스크레이퍼 봇과 장난치기",
+      "link": "https://news.hada.io/topic?id=24398",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-17T03:33:20+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e공개 웹사이트를 \u003cstrong\u003e과도하게 요청해 DDoS처럼 작동하는 스크레이퍼 봇\u003c/strong\u003e 문제를 다루며, 이를 역이용해 시간을 낭비시키는 실험적 접근 제시\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eMarkov 연쇄 기반 텍스트 생성기\u003c/strong\u003e를 만들어 \u003ccode\u003e.php\u003c/code\u003e 파일처럼 보이는 가짜 데이터를 생성, 악성 봇이 이를 다운로드...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: OpenRouter + Claude Code Router = Claude Code Mux",
+      "link": "https://news.hada.io/topic?id=24397",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-17T03:19:59+09:00",
+      "description": "\u003cp\u003eClaude Code에서 Anthropic, OpenAI, Kimi 등 다양한 AI 모델을 자유롭게 결합해 사용할 수 있습니다.\u003c/p\u003e\n\u003cp\u003eplan mode에서는 Kimi K2 Thinking을, Background tasks는 glm4.5 air를, websearch에는 perplexity sonar를 사용하게끔도 설정가능하고, 같은 모델에 우선순위를 정해놔 fallback을 걸어 다른 provider로 "
+    },
+    {
+      "title": "UPS가 355달러짜리 빈티지 컴퓨터 부품에 684달러의 관세를 부과했을 때",
+      "link": "https://news.hada.io/topic?id=24396",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-16T23:33:39+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e미국으로 수입된 \u003cstrong\u003e빈티지 애플 컴퓨터 부품\u003c/strong\u003e에 대해 UPS가 실제 물품가보다 높은 \u003cstrong\u003e684달러의 관세\u003c/strong\u003e를 부과한 사례\u003c/li\u003e\n\u003cli\u003e판매자는 \u003cstrong\u003eEU 국가의 합법적 판매자\u003c/strong\u003e로, 부품은 \u003cstrong\u003eApple Network Server 로직보드, ROM SIMM, 캐시 DIMM, Twin Turbo 비디오 카드...\u003c/p\u003e"
+    },
+    {
+      "title": "이런 것들은 일을 하는 것이 아니에요",
+      "link": "https://news.hada.io/topic?id=24395",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-16T18:32:55+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e일을 \u003cstrong\u003e준비하고, 계획하고, 공유하고, 자책하는 행동\u003c/strong\u003e은 \u003cstrong\u003e\u0026quot;일을 하는 것\u0026quot;\u003c/strong\u003e 이 아님\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e시간 예약, 할 일 목록 작성, 친구에게 메시지 보내기, SNS에 올리기\u003c/strong\u003e도 모두 일을 하는 것이 아님\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e정보를 읽거나 상상하는 행위\u003c/stro...\u003c/p\u003e"
+    },
+    {
+      "title": "네바다 주지사실이 Boring Company의 안전 위반을 은폐했다",
+      "link": "https://news.hada.io/topic?id=24394",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-16T17:34:06+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eBoring Company\u003c/strong\u003e의 터널 훈련 중 두 명의 소방관이 \u003cstrong\u003e화학물질 화상\u003c/strong\u003e을 입은 사건 이후, 네바다 주 안전당국이 40만 달러 이상의 벌금을 부과했으나 하루 만에 \u003cstrong\u003e주지사실 개입 후 철회\u003c/strong\u003e됨\u003c/li\u003e\n\u003cli\u003e주지사실과 \u003cstrong\u003e고위 공무원들이 Boring Co. 경영진과 회의...\u003c/p\u003e"
+    },
+    {
+      "title": " Async 코드 속도 저하 원인 및 해결",
+      "link": "https://news.hada.io/topic?id=24392",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-16T16:22:04+09:00",
+      "description": "\u003ch3\u003eAsync 코드 속도 저하 원인 및 해결 (기술적 요약)\u003c/h3\u003e\n\u003cp\u003e이 비디오는 Python의 \u003ccode\u003easyncio\u003c/code\u003e 코드가 동기 코드보다 느려지는 일반적인 원인과 이를 해결하기 위한 기술적 방법론을 다룹니다.\u003c/p\u003e\n\u003ch4\u003e1. Asyncio 핵심 개념\u003c/h4\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e이벤트 루프 (Event Loop):\u003c/strong\u003e 모든 비동기 애플리"
+    },
+    {
+      "title": "Modular Hydroponic Systems for Restaurant Basements",
+      "link": "https://beatable.co/analysis/2F8D7A275F",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-16T22:03:27Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://beatable.co/analysis/2F8D7A275F\"\u003ehttps://beatable.co/analysis/2F8D7A275F\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45948834\"\u003ehttps://news.ycombinator.com/item?id=45948834\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Stop worrying and learn to love the PMS",
+      "link": "https://hi-im-ada.beehiiv.com/p/8-the-inner-autumn",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-16T21:58:59Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://hi-im-ada.beehiiv.com/p/8-the-inner-autumn\"\u003ehttps://hi-im-ada.beehiiv.com/p/8-the-inner-autumn\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45948805\"\u003ehttps://news.ycombinator.com/item?id=45948805\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "How Your Brain Creates 'Aha' Moments and Why They Stick",
+      "link": "https://www.quantamagazine.org/how-your-brain-creates-aha-moments-and-why-they-stick-20251105/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-16T21:57:13Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.quantamagazine.org/how-your-brain-creates-aha-moments-and-why-they-stick-20251105/\"\u003ehttps://www.quantamagazine.org/how-your-brain-creates-aha-moments-and-why-they-stick-20251105/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45948792\"\u003ehttps://news.ycombinator.com/item?id=45948792\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Quantum computing tech keeps edging forward",
+      "link": "https://arstechnica.com/science/2025/11/quantum-roundup-lots-of-companies-announcing-new-tech/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-16T21:56:35Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://arstechnica.com/science/2025/11/quantum-roundup-lots-of-companies-announcing-new-tech/\"\u003ehttps://arstechnica.com/science/2025/11/quantum-roundup-lots-of-companies-announcing-new-tech/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45948788\"\u003ehttps://news.ycombinator.com/item?id=45948788\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Microsoft Patch Tuesday, November 2025 Edition",
+      "link": "https://krebsonsecurity.com/2025/11/microsoft-patch-tuesday-november-2025-edition/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-16T21:55:48Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://krebsonsecurity.com/2025/11/microsoft-patch-tuesday-november-2025-edition/\"\u003ehttps://krebsonsecurity.com/2025/11/microsoft-patch-tuesday-november-2025-edition/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45948783\"\u003ehttps://news.ycombinator.com/item?id=45948783\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "What Do P Values Mean?",
+      "link": "https://www.medscape.com/viewarticle/skills-lab-what-do-p-values-really-mean-2025a1000sa6",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-16T21:55:25Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.medscape.com/viewarticle/skills-lab-what-do-p-values-really-mean-2025a1000sa6\"\u003ehttps://www.medscape.com/viewarticle/skills-lab-what-do-p-values-really-mean-2025a1000sa6\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45948779\"\u003ehttps://news.ycombinator.com/item?id=45948779\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: TrieLingual: Study languages with prefix tries (and puns)",
+      "link": "https://github.com/mreichhoff/TrieLingual",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-16T21:54:21Z",
+      "description": "\n\u003cp\u003eI made a little language learning tool. It represents languages as a trie data structure, so that learners can quickly pick up phrases and usage patterns when they learn a new word. It's a bit rudimentary at the moment, but I intend to make a flurry of changes soon (AI integration for example sentences, prettier UI, AnkiConnect for the flashcards, and maybe more puns?). The trie was built based on movie and TV subtitles, so hopefully a decent representation of real-world speech.\u003cp\u003eIt's currently available in French (French Tries), Spanish (espárbol), Portuguese (PorTRIEguese), Italian (Trietalian), German (Triedesco).\u003cp\u003eYou can check it out at trielingual.com\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45948770\"\u003ehttps://news.ycombinator.com/item?id=45948770\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Brain Waves Are the Hidden Engine Behind Thought and Consciousness",
+      "link": "https://thedebrief.org/mit-neuroscientist-proposes-brain-waves-are-the-hidden-engine-behind-thought-and-consciousness/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-16T21:43:49Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://thedebrief.org/mit-neuroscientist-proposes-brain-waves-are-the-hidden-engine-behind-thought-and-consciousness/\"\u003ehttps://thedebrief.org/mit-neuroscientist-proposes-brain-waves-are-the-hidden-engine-behind-thought-and-consciousness/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45948685\"\u003ehttps://news.ycombinator.com/item?id=45948685\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Dnstap-receiver: a dnstap streams receiver in Python",
+      "link": "https://github.com/dmachard/python-dnstap-receiver",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-16T21:42:02Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/dmachard/python-dnstap-receiver\"\u003ehttps://github.com/dmachard/python-dnstap-receiver\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45948672\"\u003ehttps://news.ycombinator.com/item?id=45948672\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Never Record a Meeting",
+      "link": "https://rumination.computer/articles/never-record-a-meeting/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-16T21:41:44Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://rumination.computer/articles/never-record-a-meeting/\"\u003ehttps://rumination.computer/articles/never-record-a-meeting/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45948669\"\u003ehttps://news.ycombinator.com/item?id=45948669\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Ask HN: What could possibly happen so people would want to read more?",
+      "link": "https://news.ycombinator.com/item?id=45948665",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-16T21:41:18Z",
+      "description": "\n\u003cp\u003eWe now have IG/TikTok/YT Shorts. First it was mails instead of letter, text/fb instead of mails, then images, then videos, now shorter videos. We might also fill in for the other senses, not sure, but then that's the end of the line.\u003cp\u003eI am trying to think of a scenario where people would do something archaic like reading more in the future than they do now (and also why this trend would not just continue). There is no reason to assume that things will change direction, unless there is some force that makes it so.\u003cp\u003eWhat could that be? I can't come up with anything. Does it matter? Can we be fine without reading?\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45948665\"\u003ehttps://news.ycombinator.com/item?id=45948665\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 2\u003c/p\u003e\n"
+    },
+    {
+      "title": "Are these still relevant with LLMs?",
+      "link": "https://go-proverbs.github.io/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-16T21:36:55Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://go-proverbs.github.io/\"\u003ehttps://go-proverbs.github.io/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45948636\"\u003ehttps://news.ycombinator.com/item?id=45948636\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Custom Asidenotes",
+      "link": "https://meyerweb.com/eric/thoughts/2025/10/29/custom-asidenotes/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-16T21:36:15Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://meyerweb.com/eric/thoughts/2025/10/29/custom-asidenotes/\"\u003ehttps://meyerweb.com/eric/thoughts/2025/10/29/custom-asidenotes/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45948631\"\u003ehttps://news.ycombinator.com/item?id=45948631\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Twemoji: Emoji for Everyone",
+      "link": "https://github.com/jdecked/twemoji/issues/10",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-16T21:35:46Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/jdecked/twemoji/issues/10\"\u003ehttps://github.com/jdecked/twemoji/issues/10\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45948629\"\u003ehttps://news.ycombinator.com/item?id=45948629\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "A Realistic AI Timeline",
+      "link": "https://vintagedata.org/blog/posts/realistic-ai-timeline",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-16T21:35:09Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://vintagedata.org/blog/posts/realistic-ai-timeline\"\u003ehttps://vintagedata.org/blog/posts/realistic-ai-timeline\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45948623\"\u003ehttps://news.ycombinator.com/item?id=45948623\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Skillz – Use Claude Skills Anywhere",
+      "link": "https://github.com/kevinslin/skillz",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-16T21:33:55Z",
+      "description": "\n\u003cp\u003eHey HN,\u003cp\u003eI'm a big fan of skills and wanted to use them across different models and tools. So I made skillz - a CLI which gives any model/agent/tool the ability to make use of skills\u003cp\u003eTwo commands: \n- `skills init` to inject into AGENTS.md (or other files) a prompt to make them aware of skills.\n- `skills sync` will crawl all skill directories and append the name/description frontmatter into the system prompt\u003cp\u003eThis has allowed me to unify common capabilities across all the coding agents I use.\u003cp\u003eEven if you only use claude, you should find value with skillz like the ability to list and edit any of your existing skills.\nHave plans to expand this - including a public skills registry of popular skills as well as a feedback loop to track skills usage and auto-improve skills over time.\u003cp\u003ePlease give it a try and let me know what you think!\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45948615\"\u003ehttps://news.ycombinator.com/item?id=45948615\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Startup = Growth",
+      "link": "https://paulgraham.com/growth.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-16T21:33:43Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://paulgraham.com/growth.html\"\u003ehttps://paulgraham.com/growth.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45948613\"\u003ehttps://news.ycombinator.com/item?id=45948613\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: A cleaner, safer, plug-and-play NanoGPT",
+      "link": "https://news.ycombinator.com/item?id=45948591",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-16T21:31:28Z",
+      "description": "\n\u003cp\u003eHey everyone!\u003cp\u003eI’ve been working on NanoGPTForge, a modified version of Andrej Karpathy's nanoGPT that emphasizes simplicity, clean code, and type safety, while building directly on PyTorch primitives. It’s designed to be plug-and-play, so you can start experimenting quickly with minimal setup and focus on training or testing models right away.\u003cp\u003eContributions of any kind are welcome, whether it is refactoring code, adding new features, or expanding examples.\nI’d be glad to connect with others interested in collaborating!\u003cp\u003eCheck it out here: \u003ca href=\"https://github.com/SergiuDeveloper/NanoGPTForge\" rel=\"nofollow\"\u003ehttps://github.com/SergiuDeveloper/NanoGPTForge\u003c/a\u003e\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45948591\"\u003ehttps://news.ycombinator.com/item?id=45948591\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Proving Without Revealing: Merkle Trees for Event-Sourced Systems",
+      "link": "https://docs.eventsourcingdb.io/blog/2025/11/17/proving-without-revealing-merkle-trees-for-event-sourced-systems/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-16T21:31:11Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://docs.eventsourcingdb.io/blog/2025/11/17/proving-without-revealing-merkle-trees-for-event-sourced-systems/\"\u003ehttps://docs.eventsourcingdb.io/blog/2025/11/17/proving-without-revealing-merkle-trees-for-event-sourced-systems/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45948586\"\u003ehttps://news.ycombinator.com/item?id=45948586\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Goodbye, Zcash Company. Hello, Electric Coin Company (2019)",
+      "link": "https://electriccoin.co/blog/goodbye-zcash-company-hello-electric-coin-company/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-16T21:28:26Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://electriccoin.co/blog/goodbye-zcash-company-hello-electric-coin-company/\"\u003ehttps://electriccoin.co/blog/goodbye-zcash-company-hello-electric-coin-company/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=45948561\"\u003ehttps://news.ycombinator.com/item?id=45948561\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    }
+  ],
+  "generatedAt": "2025-11-17T07:09:02.021122462+09:00"
+}
