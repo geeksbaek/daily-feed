@@ -14,7 +14,7 @@ import (
 func main() {
 	// 플래그 정의
 	feedsFile := flag.String("feeds", "feeds.csv", "RSS 피드 목록 파일 경로")
-	geminiModel := flag.String("model", "gemini-2.5-pro", "Gemini 모델명")
+	geminiModel := flag.String("model", "gemini-3-pro-preview", "Gemini 모델명")
 	cutoffHours := flag.Int("cutoff", 24, "피드 수집 시간 범위 (시간)")
 	httpTimeout := flag.Int("timeout", 15, "HTTP 요청 타임아웃 (초)")
 	summaryPreset := flag.String("preset", "general", "요약 프리셋 (general, casual)")
