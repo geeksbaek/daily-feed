@@ -63,8 +63,8 @@ func main() {
 	for _, preset := range presets {
 		fmt.Printf("프리셋 '%s' 처리 중...\n", preset)
 
-// 기존 daily-feed 앱 생성 및 실행
-dailyApp, err := app.New("feeds.csv", "gemini-3-pro-preview", 24, 15, preset, false)
+		// 기존 daily-feed 앱 생성 및 실행
+		dailyApp, err := app.New("feeds.csv", "gemini-3-pro-preview", 24, 15, preset, false)
 		if err != nil {
 			fmt.Printf("앱 생성 실패 (%s): %v\n", preset, err)
 			continue
