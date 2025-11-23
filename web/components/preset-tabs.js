@@ -57,7 +57,7 @@ export class PresetTabs extends LitElement {
 
   constructor() {
     super();
-    this.currentPreset = 'general';
+    this.currentPreset = 'magazine';
     this.availablePresets = [];
   }
 
@@ -89,11 +89,7 @@ export class PresetTabs extends LitElement {
 
   getPresetLabels() {
     return {
-      'general': '📰 뉴스',
-      'casual': '💬 캐주얼',
-      'community': '🏠 커뮤니티',
-      'default': '🔍 기본',
-      'developer': '👨‍💻 개발자'
+      'magazine': '📰 매거진'
     };
   }
 

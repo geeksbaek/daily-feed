@@ -47,8 +47,8 @@ func main() {
 	// 오늘 날짜 (한국 시간 기준)
 	today := time.Now().In(kst).Format("2006-01-02")
 
-	// 2가지 프리셋
-	presets := []string{"general", "casual"}
+	// 매거진 프리셋만 사용
+	presets := []string{"magazine"}
 
 	// 출력 디렉토리 생성 (web/data/summaries)
 	outputDir := filepath.Join("..", "web", "data", "summaries", today)
