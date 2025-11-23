@@ -549,9 +549,13 @@ export class ContentViewer extends LitElement {
   }
 
   renderMarkdown(content) {
+    let cleanedContent = content;
     try {
+      // 보고서 구조 마커 제거
+      cleanedContent = this.cleanReportStructureMarkers(content);
+
       // Footnote 전처리
-      const processedContent = this.processFootnotes(content);
+      const processedContent = this.processFootnotes(cleanedContent);
       
       // Marked.js로 마크다운 파싱 (전역에서 사용 가능하다고 가정)
       const html = marked.parse(processedContent);
@@ -563,11 +567,18 @@ export class ContentViewer extends LitElement {
     } catch (error) {
       console.error('마크다운 렌더링 실패:', error);
       // 실패 시 기본 HTML 이스케이프
-      return content.replace(/&/g, '&amp;')
+      return cleanedContent.replace(/&/g, '&amp;')
                    .replace(/</g, '&lt;')
                    .replace(/>/g, '&gt;')
                    .replace(/\n/g, '<br>');
     }
+  }
+
+  cleanReportStructureMarkers(content) {
+    return content
+      .replace(/<REPORT_STRUCTURE_START>\s*/g, '')
+      .replace(/\s*<REPORT_STRUCTURE_END>/g, '')
+      .trim();
   }
 
   processFootnotes(content) {
