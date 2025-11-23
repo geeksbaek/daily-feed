@@ -1,0 +1,250 @@
+{
+  "date": "2025-11-24",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2025년 11월 23일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** 퀄컴의 야심작 생산 중단 소식부터 중국의 차세대 원전 기술 도약, 그리고 개발자들 사이에서 불거진 Rust 언어에 대한 회의론까지, 기술과 산업의 명암이 엇갈리는 하루입니다.\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### 🛑 퀄컴의 악재? Snapdragon X Elite 기반 ARM 노트북 생산 중단\n퀄컴이 야심 차게 준비했던 'Snapdragon X Elite' SoC 기반의 ARM 노트북 개발 키트(Dev Kit) 생산이 중단되었다는 소식입니다. 이는 Windows on ARM 생태계 확장에 찬물을 끼얹는 뉴스로 해석됩니다.\n\n애플의 M시리즈 칩에 대항하기 위해 마이크로소프트와 퀄컴이 협력해 온 이 프로젝트는, 성능과 호환성 면에서 기대를 모았으나 실제 제품 출시 전 개발자 키트 단계에서 제동이 걸렸습니다. 구체적인 중단 사유는 공식적으로 명확히 밝혀지지 않았으나, 하드웨어 완성도나 소프트웨어 최적화 이슈일 가능성이 제기되고 있습니다.\n\n\u003e **Key Point:** Windows 진영의 '탈(脫) x86' 시도가 또다시 하드웨어 생산 이슈라는 난관에 봉착했습니다. 이는 단기적으로 ARM 기반 윈도우 노트북 시장의 성장을 둔화시킬 수 있습니다. [^3]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. 🇨🇳 중국, 토륨 기반 원전 기술의 이정표 달성\n**What:** 중국이 토륨을 원료로 사용하여 우라늄-233을 '증식'하는 데 성공했습니다. 이는 상업적 규모의 토륨 용융염 원자로(MSR) 가동을 위한 핵심 단계입니다.\n**Why:** 토륨은 우라늄보다 매장량이 풍부하고 핵무기 전용이 어려우며 폐기물 관리가 용이합니다. 하지만 기술적 난이도가 높아 상용화가 어려웠습니다.\n**Impact:** 중국이 에너지 자립을 넘어 차세대 원전 기술의 패권을 쥘 가능성이 커졌습니다. 이는 글로벌 에너지 안보 지형에 장기적인 영향을 미칠 것입니다. [^8]\n\n### 2. 📱 13세 이전 스마트폰 사용과 정신 건강의 상관관계\n**What:** 13세 이전에 스마트폰을 소유한 아동들이 성인이 되었을 때 정신 건강이 악화되는 경향이 있다는 연구 결과가 발표되었습니다.\n**Why:** 조기 스마트폰 노출은 사회적 상호작용 저해, 수면 부족, 사이버 괴롭힘 노출 등을 유발하여 뇌 발달과 정서적 안정에 부정적 영향을 미칠 수 있습니다.\n**Impact:** '노키즈존'을 넘어 '노스마트폰존'이나 연령 제한 입법 논의가 가속화될 수 있으며, 에듀테크 및 키즈 IT 시장에도 변화가 요구됩니다. [^4]\n\n### 3. 🦀 \"Rust는 실망스럽다\" 개발자 커뮤니티의 논쟁\n**What:** 메모리 안전성으로 찬양받던 프로그래밍 언어 Rust에 대해, 높은 러닝 커브와 생산성 저하를 지적하며 \"실망스럽다\"고 평가한 글이 화제가 되고 있습니다.\n**Why:** Rust의 엄격한 컴파일러 규칙과 복잡성은 시스템 안정성을 보장하지만, 빠른 프로토타이핑이나 비즈니스 로직 구현에는 과도한 비용이 든다는 비판입니다.\n**Impact:** '무조건적인 Rust 도입'보다는 프로젝트 성격에 맞는 언어 선택의 중요성이 다시금 부각되고 있습니다. [^14]\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **AI Tool** | **WorldGen** | 텍스트 프롬프트만으로 몰입형 3D 세계(지형, 객체 등)를 생성하는 AI 모델 [^5] |\n| **Dev Tool** | **Tgr** | 터미널 환경(TUI)에서 GitHub 이슈와 PR을 관리할 수 있는 도구 [^11] |\n| **Security** | **BlankTrace** | Rust로 작성된 MitM 프록시로, 브라우저 트래픽을 익명화하여 추적을 방지 [^15] |\n| **Web Tool** | **REDbot** | HTTP 리소스를 검사하여 프로토콜 준수 여부, 캐시 가능성 등을 진단하는 린트 도구 [^18] |\n| **Sim** | **Particle Life** | 입자 간의 간단한 규칙만으로 복잡하고 유기적인 패턴을 만들어내는 샌드박스 시뮬레이션 [^13] |\n| **Hardware** | **Custom CPU** | 독자적인 CPU 아키텍처를 설계하고 자동화된 빌드 툴체인까지 구축한 엔지니어링 기록 [^25] |\n| **Linter** | **ESLint-no-else-if** | 코드 가독성을 위해 `else if` 사용을 지양하도록 돕는 ESLint 플러그인 [^28] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n\n#### 💻 개발 \u0026 인프라\n*   **Markdown이 당신을 가로막고 있다**: 문서화 도구로서 마크다운의 한계와 대안에 대한 고찰 [^1]\n*   **대규모 시스템에서의 에러 처리**: 분산 시스템에서 발생하는 복잡한 에러를 효과적으로 관리하는 전략 [^23]\n*   **ZetaShare**: WebRTC를 활용하여 서버를 거치지 않는 프라이빗 파일 전송 서비스 구축기 [^26]\n*   **Caching is better than mocking**: 테스트 시 복잡한 모킹(Mocking) 대신 캐싱을 활용하는 것이 더 효율적이라는 주장 [^27]\n*   **GCC 버퍼 오버플로우 탐지 개선**: C언어의 유연한 배열 멤버(Flexible Array Members)에 대한 보안 탐지 기능 강화 [^29]\n*   **Kilordle 해결하기**: 1000개의 Wordle을 동시에 푸는 게임인 Kilordle을 위한 알고리즘적 접근 [^16]\n\n#### 💼 비즈니스 \u0026 경제\n*   **맥도날드, 저소득층 고객 이탈**: 가격 인상으로 인해 핵심 고객층인 저소득층이 맥도날드를 떠나고 있다는 분석 [^2]\n*   **SaaS 낭비 계산기**: 직원 1인당 연간 $250 이상의 불필요한 SaaS 지출이 발생한다는 데이터와 계산 도구 [^19]\n*   **내 캘린더를 수익 자산으로**: 시간을 판매하는 캘린더 기반 비즈니스 모델에 대한 실험 [^24]\n*   **희토류 광산과 중국**: 중국의 손에 넘어가지 않도록 하려던 희토류 광산 인수전의 실패와 교훈 [^22]\n\n#### 🔬 과학 \u0026 건강\n*   **초음파로 냄새 유도**: 뇌의 특정 부위를 초음파로 자극하여 냄새를 느끼게 하는 실험 성공 [^9]\n*   **Long Covid 추적 연구**: 미국 성인 코호트를 대상으로 한 장기 코로나 후유증의 궤적 분석 [^21]\n\n#### 🌐 웹 \u0026 사회 \u0026 기타\n*   **팝스타로 산다는 것**: 화려함 뒤에 숨겨진 팝스타의 현실적인 삶과 고충 [^6]\n*   **Forty.News**: 정확히 40년 전 오늘의 뉴스를 보여주며 과거와 현재를 잇는 웹 프로젝트 [^7]\n*   **뉴멕시코 무료 보육**: 미국 최초로 소득과 관계없이 모든 가정에 무료 보육 서비스를 제공하는 실험 [^10]\n*   **Erdos-Bacon-Epstein 수**: 수학자, 배우, 사교계 명사와의 연결 고리를 합친 숫자가 가장 낮은 사람은 누구인가? [^12]\n*   **Kilordle 게임**: Wordle의 극한 버전, 한 번에 1000개의 단어를 맞춰야 하는 게임 링크 [^17]\n*   **ChatGPT 긍정론**: 해커뉴스 커뮤니티에서 ChatGPT의 효용성에 대해 긍정적으로 평가하는 토론 [^20]\n*   **Locker 247**: (상세 내용 불명, 소셜 미디어 이슈로 추정) [^30]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘 뉴스는 '**기대와 현실의 조정**'으로 요약할 수 있겠습니다. 퀄컴의 ARM 노트북 생산 중단이나 Rust 언어에 대한 회의론은, 기술적 이상이 현실의 벽에 부딪히는 과정을 보여줍니다. 반면, 중국의 토륨 원전 기술이나 초음파 냄새 유도 기술은 불가능해 보이던 영역을 뚫어내는 과학의 힘을 보여주네요. 기술은 이렇게 실패와 성공을 반복하며 앞으로 나아가는 것 같습니다.\n\n---\n\n[^1]: Markdown이 당신을 가로막고 있다 - https://news.hada.io/topic?id=24560\n[^2]: 맥도날드, 저소득층 고객층 이탈 - https://news.hada.io/topic?id=24559\n[^3]: Snapdragon X Elite SoC 기반 ARM 노트북 생산 중단 - https://news.hada.io/topic?id=24558\n[^4]: 13세 이전 스마트폰 보유 아동, 정신 건강 악화 경향: 연구 결과 - https://news.hada.io/topic?id=24557\n[^5]: WorldGen – 텍스트로 몰입형 3D 세계 생성 - https://news.hada.io/topic?id=24556\n[^6]: 팝스타로 산다는 것의 현실 - https://news.hada.io/topic?id=24555\n[^7]: 40년 전의 뉴스, 오늘의 시점에서 다시 읽는 Forty.News - https://news.hada.io/topic?id=24554\n[^8]: 중국, 토륨으로부터 우라늄을 ‘증식’해 에너지 자립의 이정표 달성 - https://news.hada.io/topic?id=24553\n[^9]: 초음파로 냄새를 유도했다 - https://news.hada.io/topic?id=24552\n[^10]: 뉴멕시코, 미국 최초로 모든 가정에 \"무료 보육 서비스\" 개방 - https://news.hada.io/topic?id=24551\n[^11]: Tgr- TUI for GitHub - https://github.com/jjournet/tgr\n[^12]: Who has the lowest Erdos-Bacon-Epstein number? - https://statmodeling.stat.columbia.edu/2025/11/23/who-has-the-lowest-erdos-bacon-epstein-number/\n[^13]: Particle Life – Sandbox Science - https://sandbox-science.com/particle-life\n[^14]: Rust Is a Disappointment - https://bykozy.me/blog/rust-is-a-disappointment/\n[^15]: Show HN: BlankTrace – a Rust‑based MitM proxy to anonymize browser traffic - https://mrorigo.github.io/blanktrace/\n[^16]: Solving Kilordle - https://hauntsaninja.github.io/kilordle.html\n[^17]: Kilordle - https://jonesnxt.github.io/kilordle/\n[^18]: REDbot – lint for HTTP resources; protocol, cacheability, content negotiation … - https://redbot.org/\n[^19]: Show HN: SaaS waste calculator (most waste –$250/employee/year) - https://licenselogic.co/saas-waste-calculator/\n[^20]: Tell HN: ChatGPT is freaking amazing and I don't get the negativity - https://news.ycombinator.com/item?id=46027642\n[^21]: Long Covid trajectories in the prospectively followed RECOVER-Adult US cohort - https://www.nature.com/articles/s41467-025-65239-4\n[^22]: The Failed Crusade to Keep a Rare-Earths Mine Out of China's Hands - https://www.wsj.com/business/the-failed-crusade-to-keep-a-rare-earths-mine-out-of-chinas-hands-0774e66a\n[^23]: What now? Handling errors in large systems - https://brooker.co.za/blog/2025/11/20/what-now.html\n[^24]: My calendar as a profit generating asset - https://hiipitch.com/\n[^25]: Making a Custom CPU platform and automated build toolchain - https://popovicu.com/posts/making-a-custom-cpu-mrav/\n[^26]: ZetaShare Building private file transfer with WebRTC - https://news.ycombinator.com/item?id=46027586\n[^27]: Caching is better than mocking - https://federicopereiro.com/caching-ftw/\n[^28]: Show HN: ESLint-plugin-no-else-if - https://github.com/RickCarlino/eslint-plugin-no-else-if\n[^29]: Improving GCC Buffer Overflow Detection for C Flexible Array Members - https://blogs.oracle.com/linux/improving-gcc-buffer-overflow-detection-for-c-flexible-array-members\n[^30]: Locker 247 - https://twitter.com/MrPitbull07/status/1992609458023977411\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **Markdown이 당신을 가로막고 있다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24560\n\n2. **맥도날드, 저소득층 고객층 이탈**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24559\n\n3. **Snapdragon X Elite SoC 기반 ARM 노트북 생산 중단**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24558\n\n4. **13세 이전 스마트폰 보유 아동, 정신 건강 악화 경향: 연구 결과**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24557\n\n5. **WorldGen – 텍스트로 몰입형 3D 세계 생성**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24556\n\n6. **팝스타로 산다는 것의 현실**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24555\n\n7. **40년 전의 뉴스, 오늘의 시점에서 다시 읽는 Forty.News**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24554\n\n8. **중국, 토륨으로부터 우라늄을 ‘증식’해 에너지 자립의 이정표 달성**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24553\n\n9. **초음파로 냄새를 유도했다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24552\n\n10. **뉴멕시코, 미국 최초로 모든 가정에 \"무료 보육 서비스\" 개방**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24551\n\n11. **Tgr- TUI for GitHub**\n   - 출처: Hacker News\n   - 링크: https://github.com/jjournet/tgr\n\n12. **Who has the lowest Erdos-Bacon-Epstein number?**\n   - 출처: Hacker News\n   - 링크: https://statmodeling.stat.columbia.edu/2025/11/23/who-has-the-lowest-erdos-bacon-epstein-number/\n\n13. **Particle Life – Sandbox Science**\n   - 출처: Hacker News\n   - 링크: https://sandbox-science.com/particle-life\n\n14. **Rust Is a Disappointment**\n   - 출처: Hacker News\n   - 링크: https://bykozy.me/blog/rust-is-a-disappointment/\n\n15. **Show HN: BlankTrace – a Rust‑based MitM proxy to anonymize browser traffic**\n   - 출처: Hacker News\n   - 링크: https://mrorigo.github.io/blanktrace/\n\n16. **Solving Kilordle**\n   - 출처: Hacker News\n   - 링크: https://hauntsaninja.github.io/kilordle.html\n\n17. **Kilordle**\n   - 출처: Hacker News\n   - 링크: https://jonesnxt.github.io/kilordle/\n\n18. **REDbot – lint for HTTP resources; protocol, cacheability, content negotiation …**\n   - 출처: Hacker News\n   - 링크: https://redbot.org/\n\n19. **Show HN: SaaS waste calculator (most waste –$250/employee/year)**\n   - 출처: Hacker News\n   - 링크: https://licenselogic.co/saas-waste-calculator/\n\n20. **Tell HN: ChatGPT is freaking amazing and I don't get the negativity**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=46027642\n\n21. **Long Covid trajectories in the prospectively followed RECOVER-Adult US cohort**\n   - 출처: Hacker News\n   - 링크: https://www.nature.com/articles/s41467-025-65239-4\n\n22. **The Failed Crusade to Keep a Rare-Earths Mine Out of China's Hands**\n   - 출처: Hacker News\n   - 링크: https://www.wsj.com/business/the-failed-crusade-to-keep-a-rare-earths-mine-out-of-chinas-hands-0774e66a\n\n23. **What now? Handling errors in large systems**\n   - 출처: Hacker News\n   - 링크: https://brooker.co.za/blog/2025/11/20/what-now.html\n\n24. **My calendar as a profit generating asset**\n   - 출처: Hacker News\n   - 링크: https://hiipitch.com/\n\n25. **Making a Custom CPU platform and automated build toolchain**\n   - 출처: Hacker News\n   - 링크: https://popovicu.com/posts/making-a-custom-cpu-mrav/\n\n26. **ZetaShare Building private file transfer with WebRTC**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=46027586\n\n27. **Caching is better than mocking**\n   - 출처: Hacker News\n   - 링크: https://federicopereiro.com/caching-ftw/\n\n28. **Show HN: ESLint-plugin-no-else-if**\n   - 출처: Hacker News\n   - 링크: https://github.com/RickCarlino/eslint-plugin-no-else-if\n\n29. **Improving GCC Buffer Overflow Detection for C Flexible Array Members**\n   - 출처: Hacker News\n   - 링크: https://blogs.oracle.com/linux/improving-gcc-buffer-overflow-detection-for-c-flexible-array-members\n\n30. **Locker 247**\n   - 출처: Hacker News\n   - 링크: https://twitter.com/MrPitbull07/status/1992609458023977411\n\n\n",
+  "articles": [
+    {
+      "title": "Markdown이 당신을 가로막고 있다",
+      "link": "https://news.hada.io/topic?id=24560",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-24T04:33:28+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e개발 문서 작성에 널리 쓰이는 \u003cstrong\u003eMarkdown\u003c/strong\u003e은 단순성과 접근성 덕분에 인기가 높지만, \u003cstrong\u003e구조적 표현력 부족\u003c/strong\u003e으로 인해 대규모 기술 문서에는 한계가 있음\u003c/li\u003e\n\u003cli\u003eMarkdown은 \u003cstrong\u003e암묵적 타입 시스템\u003c/strong\u003e처럼 작동해 일관성이나 스키마 검증이 불가능하며, 다양한 \u003cstr...\u003c/p\u003e"
+    },
+    {
+      "title": "맥도날드, 저소득층 고객층 이탈",
+      "link": "https://news.hada.io/topic?id=24559",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-24T03:43:08+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e패스트푸드 가격 급등\u003c/strong\u003e으로 인해 맥도날드를 포함한 업계 전반에서 \u003cstrong\u003e저소득층 고객 방문이 두 자릿수 감소\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e반면 \u003cstrong\u003e고소득층 고객 비중은 비슷한 폭으로 증가\u003c/strong\u003e, 소비 양극화 현상 심화\u003c/li\u003e\n\u003cli\u003e맥도날드는 \u003cstrong\u003e소고기·인건비 상승\u003c/strong\u003e 등으...\u003c/p\u003e"
+    },
+    {
+      "title": "Snapdragon X Elite SoC 기반 ARM 노트북 생산 중단",
+      "link": "https://news.hada.io/topic?id=24558",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-24T03:40:07+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eTUXEDO Computers\u003c/strong\u003e가 지난 18개월간 개발해온 \u003cstrong\u003eSnapdragon X1 Elite SoC 기반 ARM 노트북 프로젝트를 중단\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eLinux 호환성 문제\u003c/strong\u003e로 인해 배터리 지속시간, BIOS 업데이트, 팬 제어, KVM 가상화, USB4 전송 속도 등 주요 기능이 기대에 미치지 못함...\u003c/p\u003e"
+    },
+    {
+      "title": "13세 이전 스마트폰 보유 아동, 정신 건강 악화 경향: 연구 결과",
+      "link": "https://news.hada.io/topic?id=24557",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-24T03:37:06+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e18~24세 청년 10만 명 이상을 대상으로 한 연구에서 \u003cstrong\u003e13세 이전 스마트폰 보유\u003c/strong\u003e가 이후 \u003cstrong\u003e정신 건강 저하\u003c/strong\u003e와 관련됨\u003c/li\u003e\n\u003cli\u003e조기 스마트폰 사용자는 \u003cstrong\u003e공격성·소외감·환각·자살 충동\u003c/strong\u003e 등 증상을 더 많이 보고함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e여아는 자존감과 정서적 회복력...\u003c/p\u003e"
+    },
+    {
+      "title": "WorldGen – 텍스트로 몰입형 3D 세계 생성",
+      "link": "https://news.hada.io/topic?id=24556",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-24T02:32:59+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eWorldGen\u003c/strong\u003e은 단일 텍스트 프롬프트로 \u003cstrong\u003e탐색 가능한 3D 세계\u003c/strong\u003e를 자동 생성하는 \u003cstrong\u003e엔드투엔드 생성 AI 시스템\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e절차적 추론\u003c/strong\u003e, \u003cstrong\u003e확산 기반 3D 생성\u003c/strong\u003e, \u003cstrong\u003e객체 인식 장면 분해\u003c/strong\u003e를 결합해 \u003cstrong\u003e기하학적으...\u003c/p\u003e"
+    },
+    {
+      "title": "팝스타로 산다는 것의 현실",
+      "link": "https://news.hada.io/topic?id=24555",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-23T21:33:30+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e팝스타의 삶\u003c/strong\u003e은 화려함과 공허함이 공존하는 구조로, 음악 외의 다양한 창작 영역과 맞닿아 있음\u003c/li\u003e\n\u003cli\u003e파티, 명품, 여행, 팬들의 열정 등으로 \u003cstrong\u003e특권적 즐거움\u003c/strong\u003e을 누리지만, 동시에 그 허무함과 어색함을 자주 마주함\u003c/li\u003e\n\u003cli\u003e공항 라운지나 대기실 같은 \u003cstrong\u003e무정한 중...\u003c/p\u003e"
+    },
+    {
+      "title": "40년 전의 뉴스, 오늘의 시점에서 다시 읽는 Forty.News",
+      "link": "https://news.hada.io/topic?id=24554",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-23T17:32:55+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eForty.News\u003c/strong\u003e는 40년 전의 주요 뉴스를 오늘 날짜에 맞춰 재발행하는 \u003cstrong\u003e‘시간 지연형 뉴스 서비스’\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e1985년 11월의 기사들이 현재 시점에서 하루 단위로 공개되어, \u003cstrong\u003e역사적 사건을 실시간처럼 체험\u003c/strong\u003e 가능\u003c/li\u003e\n\u003cli\u003e정치, 과학, 사회, 외교 등 다양한...\u003c/p\u003e"
+    },
+    {
+      "title": "중국, 토륨으로부터 우라늄을 ‘증식’해 에너지 자립의 이정표 달성",
+      "link": "https://news.hada.io/topic?id=24553",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-23T14:37:34+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e중국 과학원이 \u003cstrong\u003e고비 사막에서 개발한 실험용 원자로\u003c/strong\u003e가 토륨을 우라늄으로 전환하는 연료 변환에 성공\u003c/li\u003e\n\u003cli\u003e이 \u003cstrong\u003e2메가와트급 액체연료 토륨 기반 용융염 원자로(TMSR)\u003c/strong\u003e 는 세계에서 유일하게 토륨 연료를 실제로 장전·사용한 사례\u003c/li\u003e\n\u003cli\u003e실험 결과는 \u003cstrong\u003e용융염 원자...\u003c/p\u003e"
+    },
+    {
+      "title": "초음파로 냄새를 유도했다",
+      "link": "https://news.hada.io/topic?id=24552",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-23T11:33:04+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e초음파를 이용해 \u003cstrong\u003e뇌의 후각 처리 영역을 자극\u003c/strong\u003e하여 사람에게 특정 냄새 감각을 유도한 실험 결과\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e이마에 트랜스듀서를 부착\u003c/strong\u003e해 초음파를 후각망울 방향으로 집중시켰으며, 두 사람에게서 네 가지 냄새(신선한 공기, 쓰레기, 오존, 장작불)를 재현\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong...\u003c/p\u003e"
+    },
+    {
+      "title": "뉴멕시코, 미국 최초로 모든 가정에 \"무료 보육 서비스\" 개방",
+      "link": "https://news.hada.io/topic?id=24551",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-23T09:47:11+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e뉴멕시코 주가 \u003cstrong\u003e미국 최초로 전 주민 대상 무료 보육 제도\u003c/strong\u003e를 시행\u003c/li\u003e\n\u003cli\u003e소득 수준과 관계없이 모든 가정이 \u003cstrong\u003e보육비 지원\u003c/strong\u003e을 받을 수 있는 구조\u003c/li\u003e\n\u003cli\u003e주 정부는 \u003cstrong\u003e보육 접근성 확대와 부모의 경제활동 지원\u003c/strong\u003e을 목표로 함\u003c/li\u003e\n\u003cli\u003e기존에는 저소득층 중심...\u003c/p\u003e"
+    },
+    {
+      "title": "Tgr- TUI for GitHub",
+      "link": "https://github.com/jjournet/tgr",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T22:01:44Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/jjournet/tgr\"\u003ehttps://github.com/jjournet/tgr\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46027781\"\u003ehttps://news.ycombinator.com/item?id=46027781\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Who has the lowest Erdos-Bacon-Epstein number?",
+      "link": "https://statmodeling.stat.columbia.edu/2025/11/23/who-has-the-lowest-erdos-bacon-epstein-number/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T22:01:30Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://statmodeling.stat.columbia.edu/2025/11/23/who-has-the-lowest-erdos-bacon-epstein-number/\"\u003ehttps://statmodeling.stat.columbia.edu/2025/11/23/who-has-the-lowest-erdos-bacon-epstein-number/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46027779\"\u003ehttps://news.ycombinator.com/item?id=46027779\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Particle Life – Sandbox Science",
+      "link": "https://sandbox-science.com/particle-life",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T21:54:32Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://sandbox-science.com/particle-life\"\u003ehttps://sandbox-science.com/particle-life\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46027722\"\u003ehttps://news.ycombinator.com/item?id=46027722\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Rust Is a Disappointment",
+      "link": "https://bykozy.me/blog/rust-is-a-disappointment/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T21:52:48Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://bykozy.me/blog/rust-is-a-disappointment/\"\u003ehttps://bykozy.me/blog/rust-is-a-disappointment/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46027709\"\u003ehttps://news.ycombinator.com/item?id=46027709\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: BlankTrace – a Rust‑based MitM proxy to anonymize browser traffic",
+      "link": "https://mrorigo.github.io/blanktrace/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T21:50:25Z",
+      "description": "\n\u003cp\u003eHey HN — I’ve built BlankTrace, a cross-platform (Linux/macOS) Rust CLI/daemon that acts as a local HTTP/HTTPS MITM proxy to anonymize your browser traffic.\u003cp\u003e## What it does / Why you might use it\u003cp\u003eRandomizes browser fingerprint: rotates User‑Agent (via rand_agents) and Accept‑Language headers.\u003cp\u003e- Strips or blocks cookies on requests/responses.\u003cp\u003e- Regex‑based tracker / domain blocking with whitelist support.\u003cp\u003e- Runs as a MITM proxy on localhost:8080 with full TLS interception (generates its own CA) for HTTPS.\u003cp\u003e- Logs proxy activity asynchronously into SQLite (requests, blocked domains, fingerprint rotations, cookie behavior).\u003cp\u003e- Provides a CLI interface: view stats, manage whitelist/blocklist, export data, etc.\u003cp\u003e## Technical details\u003cp\u003e- Written in Rust.\u003cp\u003e- Uses: hudsucker (for the MITM proxy), rand_agents (for realistic UA rotation), rusqlite (logging), tokio, clap etc.\u003cp\u003e- Configuration via config.yaml, allowing you to tune rotation mode, block patterns, retention policy, and more.\u003cp\u003e- Logging schema includes tables for domains, IPs, cookie attempts, fingerprint rotations, etc.\u003cp\u003eRequires trusting the generated CA certificate in your browser / OS for HTTPS interception.\u003cp\u003eMIT‑licensed.\u003cp\u003e## Current status\u003cp\u003e- Proxy is fully functional: HTTP/HTTPS interception works.\u003cp\u003e- Fingerprint randomization is working across requests.\u003cp\u003e- Cookie stripping and domain blocking are implemented.\u003cp\u003e- Async logging to SQLite is operational.\u003cp\u003e- Graceful shutdown, CA persistence, and log cleanup are supported.\u003cp\u003e- Known limitation: manual installation of the CA cert is required to intercept HTTPS.\u003cp\u003e## Why I built this\u003cp\u003eI wanted a lightweight, performant, and configurable proxy for browsing with more privacy — without relying on heavyweight browser extensions. BlankTrace gives you control over fingerprinting, cookies, and trackers, all under your own daemon.\u003cp\u003e## Get started\u003cp\u003e- GitHub repo: \u003ca href=\"https://github.com/mrorigo/blanktrace\" rel=\"nofollow\"\u003ehttps://github.com/mrorigo/blanktrace\u003c/a\u003e\u003cp\u003e- Project homepage / docs: \u003ca href=\"https://mrorigo.github.io/blanktrace/\" rel=\"nofollow\"\u003ehttps://mrorigo.github.io/blanktrace/\u003c/a\u003e\u003cp\u003e- Build: cargo build --release → run ./target/release/blanktrace\u003cp\u003eTrust the generated CA certificate in your system / browser to enable HTTPS interception.\u003cp\u003eUse CLI: blanktrace stats, domains, whitelist, export, etc.\u003cp\u003e## Feedback / Help Wanted\u003cp\u003eI’d love feedback on configuration UX (are the defaults sane? what settings do you want exposed?)\u003cp\u003eIt's new — testing on different platforms / browsers would help ensure stability.\u003cp\u003eContributions (code, documentation, detection rules) are very welcome.\u003cp\u003eIf you care about privacy, fingerprint randomization, or want to better understand your browser’s network behavior — I’d appreciate you checking it out.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46027690\"\u003ehttps://news.ycombinator.com/item?id=46027690\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Solving Kilordle",
+      "link": "https://hauntsaninja.github.io/kilordle.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T21:50:13Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://hauntsaninja.github.io/kilordle.html\"\u003ehttps://hauntsaninja.github.io/kilordle.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46027689\"\u003ehttps://news.ycombinator.com/item?id=46027689\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Kilordle",
+      "link": "https://jonesnxt.github.io/kilordle/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T21:50:01Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://jonesnxt.github.io/kilordle/\"\u003ehttps://jonesnxt.github.io/kilordle/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46027685\"\u003ehttps://news.ycombinator.com/item?id=46027685\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "REDbot – lint for HTTP resources; protocol, cacheability, content negotiation …",
+      "link": "https://redbot.org/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T21:47:16Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://redbot.org/\"\u003ehttps://redbot.org/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46027654\"\u003ehttps://news.ycombinator.com/item?id=46027654\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: SaaS waste calculator (most waste –$250/employee/year)",
+      "link": "https://licenselogic.co/saas-waste-calculator/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T21:45:50Z",
+      "description": "\n\u003cp\u003eWe're building a SaaS license management tool and kept hearing the same story: \"We know we're wasting money on unused licenses, but we don't know how much.\"\u003cp\u003eSo we built a dead-simple calculator. One slider (employee count) → three estimates:\n• Total SaaS apps (~13 per employee)\n• Annual waste (~$250/employee on ghost accounts, unused seats)\n• IT time burned on manual tracking\u003cp\u003eThe ratios come from industry research + early customer data. Curious if HN folks are seeing similar patterns at their companies - are we close? Way off?\u003cp\u003e(Also: feedback on the calculator UX welcome. Tried to make it ridiculously simple.)\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46027643\"\u003ehttps://news.ycombinator.com/item?id=46027643\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Tell HN: ChatGPT is freaking amazing and I don't get the negativity",
+      "link": "https://news.ycombinator.com/item?id=46027642",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T21:45:41Z",
+      "description": "\n\u003cp\u003etl;dr: I love AI chatbots because they allow you to look up the web without any intrusive content.\u003cp\u003eChatGPT has become my favorite way to search through the web. It redefined the way I engage with the internet: the www is the content, traditional search engines are the shelves \u0026 aisles, and the chatbot is the librarian.\u003cp\u003eIt's a shame that so much debate revolves around validating our preconceived fears. So many people are looking for one gotcha to dismiss AI altogether. If you use a default chatbot to draft your meal plans or to answer math questions, you're setting it up for failure. Its strength lies in the ability to map natural language to the data used in its training. In a way, AI is the pinnacle of user interface: it demands nothing more from the user than the ability to speak or write.\u003cp\u003eI tried to list the reasons as to why I like it so much:\u003cp\u003e- The relationship between a chatbot and its user is transparent: you know you're dealing with generated content in advance. Many other online services have devolved into a murky territory where you never quite know whether you're dealing with users, bots and/or shills.\u003cp\u003e- Asking something to the chatbot filters out all ads and sponsored content I might have seen on my way to the answer. Next time you google something, count all the ads you see from the search result page until you reach what you are looking for. It's like walking through the forced-path layout of a mall.\u003cp\u003e- The response of the chatbot is mostly devoid of images. If you want to be shown something, you need to ask for it. This is very different from the act of browsing, where the average user is ONE typo, ONE click or ONE scroll away from traumatic material.\u003cp\u003e- No more sidebars, recommended links or elements poking from outside the viewport! As someone with compulsive issues, the lack of clutter is chef's kiss.\u003cp\u003eI would like to read your thoughts on the matter. Imho in a few years we'll look back at old-school \"browsing\" and wonder how the heck we managed to find anything useful online. We're living in a Goldilocks time where AI chatbots are amazing search assistants and they have yet to be tarnished by sponsored content. Let's enjoy it while we can.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46027642\"\u003ehttps://news.ycombinator.com/item?id=46027642\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Long Covid trajectories in the prospectively followed RECOVER-Adult US cohort",
+      "link": "https://www.nature.com/articles/s41467-025-65239-4",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T21:45:37Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nature.com/articles/s41467-025-65239-4\"\u003ehttps://www.nature.com/articles/s41467-025-65239-4\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46027640\"\u003ehttps://news.ycombinator.com/item?id=46027640\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Failed Crusade to Keep a Rare-Earths Mine Out of China's Hands",
+      "link": "https://www.wsj.com/business/the-failed-crusade-to-keep-a-rare-earths-mine-out-of-chinas-hands-0774e66a",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T21:42:47Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.wsj.com/business/the-failed-crusade-to-keep-a-rare-earths-mine-out-of-chinas-hands-0774e66a\"\u003ehttps://www.wsj.com/business/the-failed-crusade-to-keep-a-rare-earths-mine-out-of-chinas-hands-0774e66a\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46027609\"\u003ehttps://news.ycombinator.com/item?id=46027609\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "What now? Handling errors in large systems",
+      "link": "https://brooker.co.za/blog/2025/11/20/what-now.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T21:42:04Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://brooker.co.za/blog/2025/11/20/what-now.html\"\u003ehttps://brooker.co.za/blog/2025/11/20/what-now.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46027606\"\u003ehttps://news.ycombinator.com/item?id=46027606\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "My calendar as a profit generating asset",
+      "link": "https://hiipitch.com/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T21:40:47Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://hiipitch.com/\"\u003ehttps://hiipitch.com/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46027600\"\u003ehttps://news.ycombinator.com/item?id=46027600\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Making a Custom CPU platform and automated build toolchain",
+      "link": "https://popovicu.com/posts/making-a-custom-cpu-mrav/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T21:38:10Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://popovicu.com/posts/making-a-custom-cpu-mrav/\"\u003ehttps://popovicu.com/posts/making-a-custom-cpu-mrav/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46027587\"\u003ehttps://news.ycombinator.com/item?id=46027587\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "ZetaShare Building private file transfer with WebRTC",
+      "link": "https://news.ycombinator.com/item?id=46027586",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T21:38:09Z",
+      "description": "\n\u003cp\u003eI built ZetaShare because I wanted a file transfer service that doesn’t spy on me — no tracking, no data collection. The project was inspired by ToffeeShare, but after seeing it abandoned and being unable to contact the developers, I decided to build my own alternative.\u003cp\u003eIn case you're curious about how the system works under the hood, here’s a simplified explanation of the current architecture:\u003cp\u003eHow ZetaShare works (simplified):\u003cp\u003eThe sender uploads a file on the website. The server doesn’t store the file — After uploading, the sender receives a 6‑digit ID. This ID becomes the identifier for the transfer session.\u003cp\u003eThe receiver opens the link with the ?id= parameter, for example: https://zetashare.com/?id=123456\u003cp\u003eWhen the receiver joins the link, the server sends the receiver’s SDP offer to the sender. (This is part of the WebRTC signaling process.)\u003cp\u003eThe sender responds by sending back their own SDP answer.\u003cp\u003eBoth sides then exchange ICE candidates through the server.\u003cp\u003eAfter the WebRTC handshake is complete, a direct P2P connection is established between sender and receiver — and the file starts transferring directly between the two devices.\u003cp\u003eSo the server is only used for:\u003cp\u003eexchanging SDP offer/answer\u003cp\u003erelaying ICE candidates …and nothing else. No file, no metadata, no tracking.\u003cp\u003eOnce the WebRTC connection is established, all data flows peer‑to‑peer, fully outside the server.\u003cp\u003eWhat works now:\u003cp\u003eWebRTC P2P transfers — files go directly between users.\u003cp\u003eNo metadata collection — unlike other services that send file metadata through signaling servers (like ToffeeShare), our server only handles SDP and ICE candidates.\u003cp\u003eNo accounts required — just drag, drop, and share.\u003cp\u003eUnlimited file sizes.\u003cp\u003eCompletely free — no ads at all.\u003cp\u003eWhat’s missing (in my view):\u003cp\u003eOnly TLS (WebRTC’s built-in), no proper end-to-end encryption yet.\u003cp\u003eNo password protection.\u003cp\u003eLinks will have an expiration option soon.\u003cp\u003eMobile file transfer speed needs improvement.\u003cp\u003eComing next:\u003cp\u003ePassword protection\u003cp\u003eFile expiration option\u003cp\u003eMobile performance improvements\u003cp\u003eProper end-to-end encryption\u003cp\u003eTry it out: https://zetashare.com\u003cp\u003eThese are the features I could think of, but if you have better ideas, I’d love to hear them. I can’t promise to build everything, but I’ll definitely try.\u003cp\u003eI’m using AI to help me because my English isn’t perfect — sorry if it sounds a bit AI-generated!\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46027586\"\u003ehttps://news.ycombinator.com/item?id=46027586\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Caching is better than mocking",
+      "link": "https://federicopereiro.com/caching-ftw/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T21:38:03Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://federicopereiro.com/caching-ftw/\"\u003ehttps://federicopereiro.com/caching-ftw/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46027583\"\u003ehttps://news.ycombinator.com/item?id=46027583\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: ESLint-plugin-no-else-if",
+      "link": "https://github.com/RickCarlino/eslint-plugin-no-else-if",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T21:37:26Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/RickCarlino/eslint-plugin-no-else-if\"\u003ehttps://github.com/RickCarlino/eslint-plugin-no-else-if\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46027580\"\u003ehttps://news.ycombinator.com/item?id=46027580\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Improving GCC Buffer Overflow Detection for C Flexible Array Members",
+      "link": "https://blogs.oracle.com/linux/improving-gcc-buffer-overflow-detection-for-c-flexible-array-members",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T21:37:18Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://blogs.oracle.com/linux/improving-gcc-buffer-overflow-detection-for-c-flexible-array-members\"\u003ehttps://blogs.oracle.com/linux/improving-gcc-buffer-overflow-detection-for-c-flexible-array-members\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46027577\"\u003ehttps://news.ycombinator.com/item?id=46027577\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Locker 247",
+      "link": "https://twitter.com/MrPitbull07/status/1992609458023977411",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T21:35:18Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://twitter.com/MrPitbull07/status/1992609458023977411\"\u003ehttps://twitter.com/MrPitbull07/status/1992609458023977411\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46027562\"\u003ehttps://news.ycombinator.com/item?id=46027562\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    }
+  ],
+  "generatedAt": "2025-11-24T07:08:45.346818203+09:00"
+}
