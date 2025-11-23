@@ -200,7 +200,7 @@ func (s *geminiSummarizer) callGeminiAPIWithRoles(ctx context.Context, systemPro
 		}
 	}
 
-	return resp.Text(), nil
+	return normalizeBoldQuotes(resp.Text()), nil
 }
 
 // logGeminiAPIParams Gemini API 호출 파라미터를 디버그 로그 파일에 출력
