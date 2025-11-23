@@ -1,266 +1,250 @@
 {
   "date": "2025-11-23",
   "preset": "general",
-  "summary": "## 🌟 오늘의 AI \u0026 Tech 하이라이트\n\n오늘 기술계는 **현실로 다가온 미래**와 **거품론에 대한 반박**으로 요약됩니다. 자율주행차 웨이모가 활동 영역을 대폭 넓히며 우리 일상 속으로 더 깊이 들어왔고, 엔비디아는 생성형 AI 거품 붕괴 우려에도 불구하고 성장을 지속할 것이라는 분석이 나왔습니다. 소프트웨어의 발전이 실제 물리적 세상(자동차, 우주 정거장, 의학)을 어떻게 바꾸고 있는지 확인해 보세요.\n\n## 📊 주요 뉴스 브리핑\n\n### 🏢 기업 \u0026 산업 동향\n\n**🚗 웨이모, 캘리포니아에서 자율주행 영토 확장**\n구글의 자율주행 자회사 웨이모(Waymo)가 캘리포니아 차량국(DMV)으로부터 운행 지역 확대 승인을 받았습니다.[^1] 이는 단순한 테스트 확장이 아니라, 완전 무인 택시 서비스가 샌프란시스코를 넘어 더 넓은 지역의 일상 교통수단으로 자리 잡고 있음을 의미합니다.[^1]\n\n**📉 HP와 델, 비용 절감 위해 '영상 코덱' 싹둑?**\nHP와 델(Dell)이 최신 노트북 CPU에 내장된 HEVC(고효율 비디오 코딩) 하드웨어 가속 기능을 비활성화한 채 출하하고 있다는 소식입니다.[^2] 이는 제조사가 기기당 발생하는 라이선스 비용을 아끼기 위한 조치로 보이는데, 소비자는 고성능 하드웨어를 사고도 넷플릭스 고화질 재생 등에서 손해를 볼 수 있는 상황입니다.[^2]\n\n**📈 엔비디아, \"AI 거품? 우린 상관없어\"**\n생성형 AI(GenAI) 시장에 거품이 끼었다는 우려가 있지만, 거품이 터지더라도 엔비디아는 계속 성장할 것이라는 분석이 제기되었습니다.[^3] 엔비디아의 GPU는 단순히 챗봇을 만드는 데만 쓰이는 것이 아니라, 기상 예측이나 신약 개발 같은 고성능 컴퓨팅(HPC) 분야의 필수재이기 때문입니다.[^3]\n\n### 🔬 기술 혁신 \u0026 연구\n\n**🎈 풍선처럼 부풀려 만드는 우주 정거장**\n무겁고 비싼 금속 대신, 팽창식 모듈을 활용한 우주 정거장 아이디어가 주목받고 있습니다.[^4] 마치 튼튼한 풍선처럼 우주에서 부풀려 공간을 만드는 이 기술은, 발사 비용을 획기적으로 줄여 더 많은 사람들이 우주에 머물 수 있는 미래를 앞당길 수 있습니다.[^4]\n\n**🧬 내 암세포를 밖에서 키워 약물을 테스트한다?**\n생의학자 한스 클레버스(Hans Clevers)는 환자의 대장암 세포를 채취해 체외에서 미니 장기(오가노이드)로 배양한 뒤, 다양한 약물을 미리 시험해볼 수 있다고 설명했습니다.[^5] 이는 환자가 직접 부작용을 겪으며 맞는 약을 찾는 고통스러운 과정을 생략하고, '아바타'에게 먼저 약을 써보는 맞춤형 치료의 혁신입니다.[^5]\n\n**🎮 자바스크립트로 PS2 게임을 만든다고?**\n웹 브라우저를 돌리는 언어인 자바스크립트(JavaScript)로 플레이스테이션 2(PS2) 게임을 개발할 수 있는 가능성이 열렸습니다.[^6] 이는 웹 기술의 성능이 과거 고사양 콘솔 게임을 다룰 만큼 강력해졌음을 보여주는 재미있는 사례이자 기술적 도약입니다.[^6]\n\n### 🌐 트렌드 \u0026 인사이트\n\n**💻 개발자 도구의 진화: 채팅창에서 터미널로**\n아틀라시안(Atlassian)이 AI 에이전트 'Rovo'를 개발자들의 명령줄 인터페이스(CLI)에 직접 통합했습니다.[^7] 이제 개발자들은 코드를 짜다가 웹브라우저로 나갈 필요 없이, 검은색 터미널 화면 안에서 바로 AI의 도움을 받아 복잡한 작업을 처리할 수 있게 되었습니다.[^7]\n\n**🤝 HPC와 AI의 행복한 동거**\n고성능 컴퓨팅(HPC) 분야가 단순히 AI 열풍에 편승하는 것이 아니라는 주장이 나왔습니다.[^8] 전통적인 슈퍼컴퓨팅(HPC)과 최신 AI 기술은 서로 다른 길을 가는 듯했으나, 이제는 서로의 발전을 이끄는 강력한 동반자 관계가 되어 과학적 발견을 가속화하고 있습니다.[^8]\n\n## 💡 오늘의 테이크어웨이\n\n오늘 소식들은 **\"기술의 물리적 실체화\"**를 보여줍니다.\n소프트웨어 코드는 이제 화면을 넘어 자율주행차를 움직이고(웨이모), 우주 공간을 확장하며(팽창식 정거장), 생명을 구하는(오가노이드) 물리적 현실로 구현되고 있습니다. 기술을 바라볼 때 단순히 '어떤 앱이 나왔나'를 넘어, '이 기술이 현실 세계의 비용과 공간을 어떻게 바꾸는가'에 주목해보세요.\n\n[^1]: 캘리포니아 DMV, Waymo 자율주행차 운행 지역 확대 승인 - https://news.hada.io/topic?id=24544\n[^2]: HP와 Dell, 노트북 CPU에 내장된 HEVC 지원 기능 비활성화 - https://news.hada.io/topic?id=24543\n[^3]: If the GenAI Bubble Bursts, Nvidia Will Still Keep Growing - https://www.nextplatform.com/2025/11/21/if-the-genai-bubble-bursts-nvidia-will-still-keep-growing/\n[^4]: Inflatable Space Stations - https://worksinprogress.co/issue/inflatable-space-stations/\n[^5]: 'If I had colon cancer, I could grow my own tumor, and see which drug kills it' - https://english.elpais.com/science-tech/2025-11-07/hans-clevers-biomedical-scientist-if-i-had-colon-cancer-i-could-grow-my-own-tumor-test-it-with-drugs-and-see-which-one-eliminates-it.html\n[^6]: 자바스크립트로 PS2 게임을 만들 수 있다 - https://news.hada.io/topic?id=24539\n[^7]: Rovo Dev agent, now available in the CLI - https://www.atlassian.com/blog/announcements/rovo-dev-command-line-interface\n[^8]: HPC Is Not Just Riding the Coattails of AI - https://www.nextplatform.com/2025/11/21/hpc-is-not-just-riding-the-coattails-of-ai/",
-  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 친절한 AI 큐레이터입니다.\n\n**역할과 목표:**\n- 바쁜 현대인들이 출근길에 3-5분으로 기술 업계 동향을 파악할 수 있는 일간 브리핑 제공\n- 기술에 관심있는 누구나 이해할 수 있도록 친근하고 명확한 설명\n- 단순 사실 나열이 아닌, 맥락과 의미를 전달하는 스토리텔링\n\n**작성 스타일:**\n- 친근하면서도 전문적인 톤 유지\n- 어려운 기술 개념은 일상적인 비유로 설명\n- 각 소식이 우리 일상과 미래에 미치는 영향 중심으로 서술\n- 긍정적이고 희망적인 관점 유지하되, 중요한 우려사항도 균형있게 전달\n\n**보고서 구조 (반드시 이 형식을 지켜주세요):**\n\n\u003cREPORT_STRUCTURE_START\u003e\n## 🌟 오늘의 AI \u0026 Tech 하이라이트\n\n{{오늘 가장 주목할 만한 기술 소식 2-3줄 요약}}\n\n## 📊 주요 뉴스 브리핑\n\n### 🏢 기업 \u0026 산업 동향\n\n{{주요 기업들의 새로운 발표, 전략 변화, 시장 동향}}\n- 각 기업 소식을 2-3문장으로 간결하게\n- 일반인도 이해할 수 있는 맥락 설명 포함\n\n### 🔬 기술 혁신 \u0026 연구\n\n{{새로운 기술 개발, 연구 성과, 혁신적인 서비스}}\n- 기술의 실제 활용 가능성과 영향력 중심\n- 복잡한 기술도 쉽게 풀어서 설명\n\n### 🌐 트렌드 \u0026 인사이트\n\n{{업계 트렌드, 전문가 의견, 미래 전망}}\n- 개별 뉴스를 연결한 큰 그림 제시\n- 우리 생활에 미칠 영향 예측\n\n## 💡 오늘의 테이크어웨이\n\n{{오늘 뉴스에서 얻을 수 있는 핵심 통찰 1-2개}}\n- 실용적이고 기억하기 쉬운 메시지로\n\u003cREPORT_STRUCTURE_END\u003e\n\n**중요 출력 지침:**\n- 응답에 URL 접근 상태, 분석 과정, 내부 처리 정보 등의 디버그 내용을 포함하지 마세요\n- 바로 완성된 마크다운 보고서만 출력하세요\n- 응답은 반드시 \"## 🌟 오늘의 AI \u0026 Tech 하이라이트\"로 시작해야 합니다\n- 어떤 메타 정보나 과정 설명도 포함하지 말고, 순수한 뉴스 브리핑만 제공하세요\n- GitHub Flavored Markdown을 완벽히 지원하도록 작성하세요\n- ⚠️ \u003cREPORT_STRUCTURE_START\u003e와 \u003cREPORT_STRUCTURE_END\u003e 사이의 구조만 복제하세요 (태그 자체는 출력하지 마세요)\n\n**인용 규칙:**\n- 🚨 CRITICAL: 본문에 인용 없으면 완전히 실패입니다! 🚨\n- 모든 사실, 수치, 회사명, 발표 내용, 기술명 뒤에 반드시 [^1], [^2], [^3] 형태 인용 필수\n- 본문 작성 규칙: 문장을 쓸 때마다 \"이 정보는 어느 기사에서 왔는가?\"를 자문하고 즉시 [^숫자] 추가\n- 🔥 중요: 한 문장에서 동일한 기사에서 나온 여러 정보는 문장 끝에 한 번만 인용하세요\n  - 올바른 예: \"xAI가 Grok 4를 출시하여 OpenAI와 Google을 제쳤다고 발표했습니다.[^1]\"\n  - 잘못된 예: \"xAI[^1]가 Grok 4[^1]를 출시하여 OpenAI[^1]와 Google[^1]을 제쳤다고 발표했습니다.[^1]\"\n- 중요: 여러 개를 인용할 때 [^3, ^4] 금지! 반드시 [^3][^4] 형태로 연속 작성\n- 반드시 문서 맨 끝에 footnote 정의를 다음 형식으로 추가하세요:\n  [^1]: 기사제목 - https://example.com/article-url\n  [^2]: 기사제목 - https://example.com/article-url\n- 🔥 중요: footnote에서 링크 URL은 반드시 클릭 가능한 형태로 포함해야 합니다\n- 기업 이름은 피드 내용에 등장하는 기업들만 언급하고, 임의로 특정 기업을 예시로 들지 마세요",
-  "userPrompt": "다음 RSS 피드 데이터를 분석하여 일간 기술 뉴스 브리핑을 작성해주세요.\n\n다음은 최신 AI 관련 피드 데이터입니다:\n\n1. **캘리포니아 DMV, Waymo 자율주행차 운행 지역 확대 승인**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24544\n\n2. **HP와 Dell, 노트북 CPU에 내장된 HEVC 지원 기능 비활성화**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24543\n\n3. **홈스쿨링, 사상 최고 수준으로 증가**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24542\n\n4. **프로작, 아동 우울증 치료에서 위약과 효과 차이 없어**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24541\n\n5. **Show GN: GemBack - Gemini API Fallback Library**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24540\n\n6. **자바스크립트로 PS2 게임을 만들 수 있다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24539\n\n7. **개인 블로그의 부활, 다음은 니치 블로그인가?**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24538\n\n8. **모두가 의존성 쿨다운을 사용해야 하는 이유**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24537\n\n9. **퀄컴, 아두이노를 완전히 죽였는가?**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24536\n\n10. **미국에 의해 디지털적으로 차단된 프랑스 판사**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24534\n\n11. **The Rising Importance of Governance at SwampUP Berlin 2025**\n   - 출처: Docker Blog\n   - 링크: https://www.docker.com/blog/the-rising-importance-of-governance-at-swampup-berlin-2025/\n\n12. **Task Based Management [video]**\n   - 출처: Hacker News\n   - 링크: https://www.youtube.com/watch?v=55XUt5Ve6Mk\n\n13. **Designing an Open Source Micro-Manipulator**\n   - 출처: Hacker News\n   - 링크: https://hackaday.com/2025/09/04/designing-an-open-source-micro-manipulator/\n\n14. **'If I had colon cancer, I could grow my own tumor, and see which drug kills it'**\n   - 출처: Hacker News\n   - 링크: https://english.elpais.com/science-tech/2025-11-07/hans-clevers-biomedical-scientist-if-i-had-colon-cancer-i-could-grow-my-own-tumor-test-it-with-drugs-and-see-which-one-eliminates-it.html\n\n15. **Export messages and Legacy (Duo) call history**\n   - 출처: Hacker News\n   - 링크: https://support.google.com/meet/answer/16176860?hl=en\u0026co=GENIE.Platform%3DAndroid\n\n16. **Tech Is Opt-In**\n   - 출처: Hacker News\n   - 링크: https://coppolaemilio.com/entries/tech-is-opt-in/\n\n17. **People test Nano Banana with PDF paper to whiteboard. I did the exact opposite**\n   - 출처: Hacker News\n   - 링크: https://quickchat.ai/post/nano-banana-pro-whiteboard-to-research-paper\n\n18. **Isochrone Curve**\n   - 출처: Hacker News\n   - 링크: https://www.youtube.com/watch?v=eBc827pwKf0\n\n19. **Show HN: Christmas Neovim Theme**\n   - 출처: Hacker News\n   - 링크: https://github.com/ChaseRensberger/christmas.nvim\n\n20. **America's WW2 Combat Drone That Bombed the Japanese – The TDR-1 [video]**\n   - 출처: Hacker News\n   - 링크: https://www.youtube.com/watch?v=9K5v3Jwz89w\n\n21. **HPC Is Not Just Riding the Coattails of AI**\n   - 출처: Hacker News\n   - 링크: https://www.nextplatform.com/2025/11/21/hpc-is-not-just-riding-the-coattails-of-ai/\n\n22. **Updating the Golang Memory Model**\n   - 출처: Hacker News\n   - 링크: https://research.swtch.com/gomm\n\n23. **Running a 270M LLM on Android (architecture and benchmarks)**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=46018506\n\n24. **Bayesian cohort-level ARPU Model**\n   - 출처: Hacker News\n   - 링크: https://world.hey.com/apetrov/bayesian-cohort-level-arpu-model-8647f862\n\n25. **Picturing a Voice: Margaret Watts Hughes and the Eidophone**\n   - 출처: Hacker News\n   - 링크: https://publicdomainreview.org/essay/picturing-a-voice-margaret-watts-hughes-and-the-eidophone/\n\n26. **Accepting that you won't know it all**\n   - 출처: Hacker News\n   - 링크: https://blog.prdai.dev/\n\n27. **SC25: HACCing over 500 Petaflops on Frontier**\n   - 출처: Hacker News\n   - 링크: https://chipsandcheese.com/p/sc25-haccing-over-500-petaflops-on\n\n28. **How to write a great agents.md: Lessons from over 2,500 repositories**\n   - 출처: Hacker News\n   - 링크: https://github.blog/ai-and-ml/github-copilot/how-to-write-a-great-agents-md-lessons-from-over-2500-repositories/\n\n29. **Show HN: Another JSON Alternative**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=46018420\n\n30. **Inflatable Space Stations**\n   - 출처: Hacker News\n   - 링크: https://worksinprogress.co/issue/inflatable-space-stations/\n\n31. **If the GenAI Bubble Bursts, Nvidia Will Still Keep Growing**\n   - 출처: Hacker News\n   - 링크: https://www.nextplatform.com/2025/11/21/if-the-genai-bubble-bursts-nvidia-will-still-keep-growing/\n\n32. **Rovo Dev agent, now available in the CLI**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/announcements/rovo-dev-command-line-interface\n\n\n\n**분석 지침:**\n- 반드시 위에 명시된 마크다운 헤더 구조를 정확히 따르세요\n- 각 섹션은 2-3개 포인트로 제한\n- 구체적인 수치와 데이터 활용으로 신뢰성 확보\n\n**🌟 URL 컨텍스트 활용 지침:**\n- 제공된 URL의 내용을 적극적으로 활용하여 깊이 있는 분석을 제공하세요\n- 단순 요약이 아닌, 기사의 핵심 인사이트와 숨겨진 의미를 발굴하세요\n- 여러 기사 간의 연결점을 찾아 큰 그림을 그려주세요\n- 기술적 세부사항과 실제 영향력을 균형있게 다루세요\n\n**🎯 독자 재미 극대화 지침:**\n- 딱딱한 기술 뉴스를 생동감 있게 전달하세요\n- 적절한 비유와 실생활 예시로 복잡한 개념을 쉽게 설명하세요\n- 놀라운 사실이나 의외의 관점을 제시하여 호기심을 자극하세요\n- 스토리텔링 요소를 활용하여 뉴스를 하나의 이야기로 엮어주세요\n- 각 프리셋의 톤에 맞는 위트와 유머를 적절히 활용하세요\n\n**🚨 인용 검수 체크리스트:**\n1. 본문의 모든 사실, 수치, 기업명, 기술명에 [^숫자] 인용이 있는가?\n2. 문서 맨 끝에 모든 footnote 정의가 있고, 각각 클릭 가능한 URL을 포함하는가?\n3. [^1]: 기사제목 - https://링크 형식이 정확한가?\n4. 본문에서 언급한 모든 [^숫자]에 대응하는 footnote가 있는가?\n- 최종 제출 전 필수 검토: 위 체크리스트를 모두 확인하세요",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2025년 11월 23일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** 애플의 '숨 고르기' 전략 전환과 아마존의 기록적인 엔지니어 감원, 그리고 협업 도구로 진화하는 ChatGPT.\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### 🍎 애플 iOS 27, 기능 추가 대신 '완성도'에 집중한다\n애플이 차기 운영체제인 iOS 27 업데이트의 방향성을 과거 호평받았던 '스노우 레오파드(Snow Leopard)' 방식으로 선회했습니다. 화려한 신기능 추가보다는 시스템 안정성, 버그 수정, 성능 최적화에 집중하겠다는 전략입니다. 단, 새로운 AI 기능 탑재는 예외적으로 강력하게 추진될 예정입니다.\n\n이는 최근 몇 년간 iOS의 버그와 성능 저하에 대한 사용자 불만이 누적된 데 따른 결단으로 보입니다. 팀 쿡의 은퇴설과 맞물려, 애플이 하드웨어 혁신 정체기를 소프트웨어의 내실 다지기와 AI 통합으로 돌파하려는 의도로 해석됩니다.\n\n\u003e **Key Point:** '기능의 홍수'를 멈추고 '품질'과 'AI'라는 두 마리 토끼를 잡으려는 애플의 전략적 회귀. [^4]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. 아마존, 엔지니어 1,800명 포함 대규모 감원 단행\n- **What:** 아마존이 기록적인 규모의 해고를 단행했으며, 이 중 1,800명 이상의 엔지니어가 포함되었습니다.\n- **Why:** 팬데믹 기간의 과잉 고용 해소와 더불어, AI 도입을 통한 업무 효율화가 개발 인력 수요에 직접적인 영향을 미치기 시작한 것으로 분석됩니다.\n- **Impact:** 빅테크 기업들의 '개발자 모시기' 경쟁이 종료되고, AI가 코딩 업무를 대체하는 흐름이 가속화되면서 IT 채용 시장의 구조적 변화가 예상됩니다. [^5]\n\n### 2. OpenAI, ChatGPT에 '그룹 채팅' 기능 도입\n- **What:** OpenAI가 ChatGPT에 여러 사용자가 함께 대화할 수 있는 그룹 채팅 기능을 출시했습니다.\n- **Why:** 단순한 질의응답 도구를 넘어, 팀 협업 및 브레인스토밍 도구로 플랫폼을 확장하려는 시도입니다.\n- **Impact:** 슬랙(Slack)이나 디스코드(Discord) 같은 기존 협업 툴과의 경계가 모호해지며, AI가 회의의 주재자나 보조자로 참여하는 새로운 협업 문화가 형성될 것입니다. [^11]\n\n### 3. 중국, 토륨 기반 원전으로 에너지 자립 이정표\n- **What:** 중국이 토륨을 사용하여 우라늄을 증식하고 이를 연료로 사용하는 기술적 이정표를 달성했습니다.\n- **Why:** 토륨은 우라늄보다 매장량이 풍부하고 안전성이 높아 차세대 원전의 핵심 자원으로 꼽힙니다.\n- **Impact:** 중국의 에너지 자립 속도가 빨라짐에 따라 글로벌 원자력 기술 패권 경쟁이 심화될 전망입니다. [^23]\n\n### 4. 자율주행의 시대가 도래했다\n- **What:** 자율주행 기술이 실험실을 넘어 실제 도로에서 유의미한 성과를 내고 있다는 분석입니다.\n- **Why:** 센서 기술의 발전과 AI 모델의 고도화가 임계점을 넘어서며 상용화 가능성이 현실화되었습니다.\n- **Impact:** 물류 및 운송 산업의 근본적인 비용 구조 변화와 함께, 규제 및 보험 제도 정비가 시급한 과제로 떠오를 것입니다. [^13]\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **RegreSQL** | SQL 쿼리의 회귀 테스트를 자동화하여 데이터베이스 변경 시 안정성을 보장하는 도구 [^29] |\n| **Tool** | **Tosijs-schema** | 초경량 스키마 우선(Schema-first) 접근 방식을 취하는 LLM 네이티브 JSON 스키마 라이브러리 [^8] |\n| **Tool** | **PyBrowserAutomation** | 코딩 없이 브라우저 자동화를 구축하여 OSINT(공개출처정보) 수집을 돕는 시스템 [^2] |\n| **Tool** | **Promptsref** | 미드저니(Midjourney)의 SREF 코드를 전체 프롬프트와 함께 큐레이션한 라이브러리 [^9] |\n| **Lang** | **Racket v9.0** | 리스프(Lisp) 계열 프로그래밍 언어 Racket의 메이저 버전 업데이트 [^12] |\n| **Paper** | **Text Embeddings** | 텍스트 임베딩 공간에서 고유명사(Proper Names)가 어떻게 작동하는지에 대한 심층 분석 [^16] |\n| **Edu** | **What Is a Shader?** | 셰이더의 개념과 작동 원리를 시각적으로 쉽게 설명한 교육 자료 [^1] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n\n#### 💻 개발 \u0026 인프라\n* **Microsoft File Explorer**: 윈도우 11 파일 탐색기의 성능 저하를 해결하기 위해 백그라운드에서 미리 로드하는 방식을 도입합니다. [^14]\n* **Recursive Merge Sort**: 병합 정렬 알고리즘을 재귀적 시퀀스 다이어그램으로 시각화하여 보여주는 데모입니다. [^20]\n* **Agent Design**: AI 에이전트 설계가 여전히 어려운 이유와 엔지니어링 관점에서의 난제들을 분석했습니다. [^27]\n* **Browser Fingerprinting**: 브라우저 핑거프린팅 기술이 개인정보 보호에 미치는 악영향과 프라이버시 악몽을 다룹니다. [^28]\n* **iOS Scanner App**: 개인정보 보호를 최우선으로 하는 빠르고 간단한 아이폰용 문서 스캐너 앱 개발기입니다. [^10]\n* **Security BSidesLjubljana**: 슬로베니아 류블랴나에서 열리는 보안 컨퍼런스(0x7EA)의 발표자 모집(CFP)이 시작되었습니다. [^15]\n\n#### 🤖 AI \u0026 비즈니스\n* **AI Valuation Bubble**: 현재의 AI 기업 가치 평가가 버블인지, 그리고 버블이 터질 경우에 대한 우려를 다룬 칼럼입니다. [^18]\n* **AI Agents for Enterprise**: C-레벨 경영진을 위한 엔터프라이즈 환경에서의 AI 에이전트 도입 실무 가이드입니다. [^19]\n* **Nano Banana Pro**: 이미지당 0.04달러라는 초저가로 4K 이미지를 생성하는 AI 서비스가 등장했습니다. [^3]\n\n#### 🌍 사회 \u0026 과학\n* **UK Food Bank**: 영국 푸드뱅크 수요가 전년 대비 15% 급증하며 생활비 위기의 심각성을 보여주고 있습니다. [^6]\n* **DOGE Charter**: 미 정부 효율화 부서(DOGE)의 활동 시한이 8개월 남았다는 점을 지적하며 그 실효성을 논합니다. [^7]\n* **Ultrasound Smell**: 초음파를 이용해 특정 냄새를 유도하는 기술이 개발되었습니다. [^24]\n* **Inertia Physics**: 관성과 역학의 기하학적 기원을 다룬 물리학 논문(PDF)입니다. [^17]\n* **New Mexico Childcare**: 뉴멕시코주가 미국 최초로 모든 가정에 무료 보육 서비스를 개방했습니다. [^25]\n* **LAPD Helicopter**: LA 경찰 헬리콥터의 실시간 위치와 비용을 추적하는 시민 감시 프로젝트입니다. [^30]\n\n#### 🎨 문화 \u0026 역사\n* **Superman Auction**: 슈퍼맨 오리지널 만화책이 사상 최고가인 912만 달러(약 120억 원)에 낙찰되었습니다. [^26]\n* **Popstar Reality**: 화려함 뒤에 감춰진 팝스타의 현실적인 삶과 고충을 다룬 이야기입니다. [^21]\n* **Forty.News**: 정확히 40년 전의 오늘 뉴스를 현재 시점에서 다시 읽어보는 아카이브 서비스입니다. [^22]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘 뉴스에서는 **'성숙기'로 접어드는 기술 생태계**의 모습이 뚜렷합니다. 애플은 무리한 확장 대신 '내실(Snow Leopard)'을 택했고, 아마존은 AI 효율화를 통해 인력 구조를 재편하고 있습니다. 반면, 중국의 토륨 원전이나 초음파 냄새 유도 같은 기초 과학 분야의 혁신은 계속되고 있네요. 기술이 일상에 깊숙이 스며들수록, '새로운 것'보다 '제대로 작동하는 것'의 가치가 높아짐을 느낍니다.\n\n---\n\n[^1]: What Is a Shader? - https://www.makingsoftware.com/chapters/shaders#email\n[^2]: Show HN: Building a no-code browser automation system for OSINT - https://github.com/FauvidoTechnologies/PyBrowserAutomation\n[^3]: Nano Banana Pro (4K) at $0.04/image - https://seedreamimage.com/nano-banana-pro\n[^4]: Apple iOS 27 to Be No-Frills 'Snow Leopard' Update, Other Than New AI - https://www.bloomberg.com/news/newsletters/2025-11-23/apple-ios-27-snow-leopard-like-quality-focus-ai-features-tim-cook-retirement-mibq7jv8\n[^5]: Amazon cut more than 1,800 engineers in record layoffs - https://www.cnbc.com/2025/11/21/amazon-cut-thousands-of-engineers-in-its-record-layoffs-filings-show.html\n[^6]: Demand for UK Food Bank Up 15% Year on Year - https://www.theguardian.com/society/2025/nov/23/food-banks-demand-prices-frontline-cost-of-living-crisis\n[^7]: Doge 'doesn't exist' with eight months left on its charter - https://www.reuters.com/world/us/doge-doesnt-exist-with-eight-months-left-its-charter-2025-11-23/\n[^8]: Tosijs-schema is a super lightweight schema-first LLM-native JSON schema library - https://www.npmjs.com/package/tosijs-schema\n[^9]: Show HN: Promptsref – Curated Midjourney SREF library with full prompts - https://promptsref.com/\n[^10]: Show HN: I built a simple, fast, privacy-first document scanner for iPhone - https://apps.apple.com/us/app/scan-convert-to-pdf-images/id6727013863\n[^11]: OpenAI is launching group chats in ChatGPT - https://www.theverge.com/news/825544/openai-chatgpt-group-chats-launch\n[^12]: Racket v9.0 - https://blog.racket-lang.org/2025/11/racket-v9-0.html\n[^13]: The Arrival of Self Driving - https://avc.xyz/the-arrival-of-self-driving\n[^14]: Microsoft Will Preload Windows 11 File Explorer to Fix Bad Performance - https://www.techpowerup.com/343149/microsoft-will-preload-windows-11-file-explorer-to-fix-bad-performance\n[^15]: Security BSidesLjubljana 0x7EA – CFP Open - https://0x7ea.bsidesljubljana.si/\n[^16]: How Proper Names Behave in Text Embedding Space - https://vectors.run/posts/your-embeddings-know-more-about-names-than-you-think/\n[^17]: The Geometric Origin of Inertia and Dynamics [pdf] - https://zenodo.org/records/17672563\n[^18]: Is AI Valuation Bubble About to Burst ? - https://medium.com/@anwarzaid76/ai-valuation-bubble-will-burst-and-nobody-is-ready-01d622cfc1bb\n[^19]: AI Agents for Enterprise – A Practical Guide for C-Level Leaders - https://lightrains.com/blogs/ai-agents-enterprise-practical-guide-c-level-leaders/\n[^20]: Recursive merge sort as a recursive sequence diagram - https://app.ilograph.com/demo.ilograph.Merge%2520Sort/Merge%2520Sort%2520Main\n[^21]: 팝스타로 산다는 것의 현실 - https://news.hada.io/topic?id=24555\n[^22]: 40년 전의 뉴스, 오늘의 시점에서 다시 읽는 Forty.News - https://news.hada.io/topic?id=24554\n[^23]: 중국, 토륨으로부터 우라늄을 ‘증식’해 에너지 자립의 이정표 달성 - https://news.hada.io/topic?id=24553\n[^24]: 초음파로 냄새를 유도했다 - https://news.hada.io/topic?id=24552\n[^25]: 뉴멕시코, 미국 최초로 모든 가정에 \"무료 보육 서비스\" 개방 - https://news.hada.io/topic?id=24551\n[^26]: 슈퍼맨 오리지널 만화책, 사상 최고가 9.12백만 달러에 낙찰 - https://news.hada.io/topic?id=24550\n[^27]: 에이전트 설계는 여전히 어렵다 - https://news.hada.io/topic?id=24549\n[^28]: 브라우저 핑거프린팅의 프라이버시 악몽 - https://news.hada.io/topic?id=24548\n[^29]: RegreSQL - SQL 쿼리의 회귀 테스트를 자동화하는 도구 - https://news.hada.io/topic?id=24547\n[^30]: LAPD 헬리콥터 추적기 – 실시간 경찰 항공 모니터링 및 비용 계산기 - https://news.hada.io/topic?id=24546\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **What Is a Shader?**\n   - 출처: Hacker News\n   - 링크: https://www.makingsoftware.com/chapters/shaders#email\n\n2. **Show HN: Building a no-code browser automation system for OSINT**\n   - 출처: Hacker News\n   - 링크: https://github.com/FauvidoTechnologies/PyBrowserAutomation\n\n3. **Nano Banana Pro (4K) at $0.04/image**\n   - 출처: Hacker News\n   - 링크: https://seedreamimage.com/nano-banana-pro\n\n4. **Apple iOS 27 to Be No-Frills 'Snow Leopard' Update, Other Than New AI**\n   - 출처: Hacker News\n   - 링크: https://www.bloomberg.com/news/newsletters/2025-11-23/apple-ios-27-snow-leopard-like-quality-focus-ai-features-tim-cook-retirement-mibq7jv8\n\n5. **Amazon cut more than 1,800 engineers in record layoffs**\n   - 출처: Hacker News\n   - 링크: https://www.cnbc.com/2025/11/21/amazon-cut-thousands-of-engineers-in-its-record-layoffs-filings-show.html\n\n6. **Demand for UK Food Bank Up 15% Year on Year**\n   - 출처: Hacker News\n   - 링크: https://www.theguardian.com/society/2025/nov/23/food-banks-demand-prices-frontline-cost-of-living-crisis\n\n7. **Doge 'doesn't exist' with eight months left on its charter**\n   - 출처: Hacker News\n   - 링크: https://www.reuters.com/world/us/doge-doesnt-exist-with-eight-months-left-its-charter-2025-11-23/\n\n8. **Tosijs-schema is a super lightweight schema-first LLM-native JSON schema library**\n   - 출처: Hacker News\n   - 링크: https://www.npmjs.com/package/tosijs-schema\n\n9. **Show HN: Promptsref – Curated Midjourney SREF library with full prompts**\n   - 출처: Hacker News\n   - 링크: https://promptsref.com/\n\n10. **Show HN: I built a simple, fast, privacy-first document scanner for iPhone**\n   - 출처: Hacker News\n   - 링크: https://apps.apple.com/us/app/scan-convert-to-pdf-images/id6727013863\n\n11. **OpenAI is launching group chats in ChatGPT**\n   - 출처: Hacker News\n   - 링크: https://www.theverge.com/news/825544/openai-chatgpt-group-chats-launch\n\n12. **Racket v9.0**\n   - 출처: Hacker News\n   - 링크: https://blog.racket-lang.org/2025/11/racket-v9-0.html\n\n13. **The Arrival of Self Driving**\n   - 출처: Hacker News\n   - 링크: https://avc.xyz/the-arrival-of-self-driving\n\n14. **Microsoft Will Preload Windows 11 File Explorer to Fix Bad Performance**\n   - 출처: Hacker News\n   - 링크: https://www.techpowerup.com/343149/microsoft-will-preload-windows-11-file-explorer-to-fix-bad-performance\n\n15. **Security BSidesLjubljana 0x7EA – CFP Open**\n   - 출처: Hacker News\n   - 링크: https://0x7ea.bsidesljubljana.si/\n\n16. **How Proper Names Behave in Text Embedding Space**\n   - 출처: Hacker News\n   - 링크: https://vectors.run/posts/your-embeddings-know-more-about-names-than-you-think/\n\n17. **The Geometric Origin of Inertia and Dynamics [pdf]**\n   - 출처: Hacker News\n   - 링크: https://zenodo.org/records/17672563\n\n18. **Is AI Valuation Bubble About to Burst ?**\n   - 출처: Hacker News\n   - 링크: https://medium.com/@anwarzaid76/ai-valuation-bubble-will-burst-and-nobody-is-ready-01d622cfc1bb\n\n19. **AI Agents for Enterprise – A Practical Guide for C-Level Leaders**\n   - 출처: Hacker News\n   - 링크: https://lightrains.com/blogs/ai-agents-enterprise-practical-guide-c-level-leaders/\n\n20. **Recursive merge sort as a recursive sequence diagram**\n   - 출처: Hacker News\n   - 링크: https://app.ilograph.com/demo.ilograph.Merge%2520Sort/Merge%2520Sort%2520Main\n\n21. **팝스타로 산다는 것의 현실**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24555\n\n22. **40년 전의 뉴스, 오늘의 시점에서 다시 읽는 Forty.News**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24554\n\n23. **중국, 토륨으로부터 우라늄을 ‘증식’해 에너지 자립의 이정표 달성**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24553\n\n24. **초음파로 냄새를 유도했다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24552\n\n25. **뉴멕시코, 미국 최초로 모든 가정에 \"무료 보육 서비스\" 개방**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24551\n\n26. **슈퍼맨 오리지널 만화책, 사상 최고가 9.12백만 달러에 낙찰**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24550\n\n27. **에이전트 설계는 여전히 어렵다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24549\n\n28. **브라우저 핑거프린팅의 프라이버시 악몽**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24548\n\n29. **RegreSQL - SQL 쿼리의 회귀 테스트를 자동화하는 도구**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24547\n\n30. **LAPD 헬리콥터 추적기 – 실시간 경찰 항공 모니터링 및 비용 계산기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24546\n\n\n",
   "articles": [
     {
-      "title": "캘리포니아 DMV, Waymo 자율주행차 운행 지역 확대 승인",
-      "link": "https://news.hada.io/topic?id=24544",
+      "title": "What Is a Shader?",
+      "link": "https://www.makingsoftware.com/chapters/shaders#email",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T13:59:34Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.makingsoftware.com/chapters/shaders#email\"\u003ehttps://www.makingsoftware.com/chapters/shaders#email\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46023614\"\u003ehttps://news.ycombinator.com/item?id=46023614\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Building a no-code browser automation system for OSINT",
+      "link": "https://github.com/FauvidoTechnologies/PyBrowserAutomation",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T13:59:04Z",
+      "description": "\n\u003cp\u003eI have been working on a browser automation system for OSINT analysts. I took this up because the tools that exist today have a few problems:\u003cp\u003e1. They require a little more precise notions of what needs to be done by the system (like, go here, click here, then do this, then do that etc.)\u003cp\u003e2. To perform complex tasks, the few tools that exist, they need some knowledge of the system itself (like telling it to call a specific function or a class etc.)\u003cp\u003eMy goal with this project (I call it `pyba`) was to abstract everything from the user's side. I have two \"exploratory\" modes built into it, these are for Depth First Search (wherein, it will pick one train of thought, and execute that in full, then revert), or Breadth First Search (where it executes multiple tangential plans in parallel).\u003cp\u003eAll an analyst has to do is type out in words, everything they already know and can share, and what all they'd like to find out more. To ensure that there are no roadblocks in this journey, I also have hardcoded logins, which read your credentials from the environment and log you in to websites like gmail, facebook and instagram (so your credentials never go to the LLM).\u003cp\u003eAnd of course, you can use it for normal stuff as well (like tell it to scroll reels for you if you want)!\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46023610\"\u003ehttps://news.ycombinator.com/item?id=46023610\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Nano Banana Pro (4K) at $0.04/image",
+      "link": "https://seedreamimage.com/nano-banana-pro",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T13:59:03Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://seedreamimage.com/nano-banana-pro\"\u003ehttps://seedreamimage.com/nano-banana-pro\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46023608\"\u003ehttps://news.ycombinator.com/item?id=46023608\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Apple iOS 27 to Be No-Frills 'Snow Leopard' Update, Other Than New AI",
+      "link": "https://www.bloomberg.com/news/newsletters/2025-11-23/apple-ios-27-snow-leopard-like-quality-focus-ai-features-tim-cook-retirement-mibq7jv8",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T13:57:23Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.bloomberg.com/news/newsletters/2025-11-23/apple-ios-27-snow-leopard-like-quality-focus-ai-features-tim-cook-retirement-mibq7jv8\"\u003ehttps://www.bloomberg.com/news/newsletters/2025-11-23/apple-ios-27-snow-leopard-like-quality-focus-ai-features-tim-cook-retirement-mibq7jv8\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46023599\"\u003ehttps://news.ycombinator.com/item?id=46023599\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Amazon cut more than 1,800 engineers in record layoffs",
+      "link": "https://www.cnbc.com/2025/11/21/amazon-cut-thousands-of-engineers-in-its-record-layoffs-filings-show.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T13:56:50Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.cnbc.com/2025/11/21/amazon-cut-thousands-of-engineers-in-its-record-layoffs-filings-show.html\"\u003ehttps://www.cnbc.com/2025/11/21/amazon-cut-thousands-of-engineers-in-its-record-layoffs-filings-show.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46023590\"\u003ehttps://news.ycombinator.com/item?id=46023590\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Demand for UK Food Bank Up 15% Year on Year",
+      "link": "https://www.theguardian.com/society/2025/nov/23/food-banks-demand-prices-frontline-cost-of-living-crisis",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T13:51:51Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.theguardian.com/society/2025/nov/23/food-banks-demand-prices-frontline-cost-of-living-crisis\"\u003ehttps://www.theguardian.com/society/2025/nov/23/food-banks-demand-prices-frontline-cost-of-living-crisis\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46023573\"\u003ehttps://news.ycombinator.com/item?id=46023573\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Doge 'doesn't exist' with eight months left on its charter",
+      "link": "https://www.reuters.com/world/us/doge-doesnt-exist-with-eight-months-left-its-charter-2025-11-23/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T13:43:28Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.reuters.com/world/us/doge-doesnt-exist-with-eight-months-left-its-charter-2025-11-23/\"\u003ehttps://www.reuters.com/world/us/doge-doesnt-exist-with-eight-months-left-its-charter-2025-11-23/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46023535\"\u003ehttps://news.ycombinator.com/item?id=46023535\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Tosijs-schema is a super lightweight schema-first LLM-native JSON schema library",
+      "link": "https://www.npmjs.com/package/tosijs-schema",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T13:43:24Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.npmjs.com/package/tosijs-schema\"\u003ehttps://www.npmjs.com/package/tosijs-schema\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46023531\"\u003ehttps://news.ycombinator.com/item?id=46023531\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 5\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Promptsref – Curated Midjourney SREF library with full prompts",
+      "link": "https://promptsref.com/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T13:40:41Z",
+      "description": "\n\u003cp\u003eI'm a product manager-turned-solo dev, and I'm building Promptsref, a curated Midjourney SREF library with full prompts, images and examples.\u003cp\u003ePromptsref helps you:\nQuickly discover good SREF styles without trawling X/Discord/paid PDFs\nReuse full prompts + SREF to reliably reproduce a style\nExplore by “vibe” (comic, cyberpunk, film still, etc.) instead of guessing keywords\u003cp\u003eWhy I built it：\nI started Promptsref after getting frustrated with Midjourney. As a beginner I kept seeing amazing styles, but they were:\n1. buried in long X threads or Discord chats\n2. shared as just a code or a partial prompt\n3. almost impossible to reliably reproduce later\nI wanted a place where I could save only the styles that consistently look good, with the exact prompt + SREF + example images in one place. That slowly turned into this project.\u003cp\u003eHow it works：\nFor each SREF on Promptsref I store: the SREF code, the full prompt I used, example images (and sometimes video styles)\nYou can browse by tags and “style vibe”, copy a code you like, paste the full prompt into Midjourney, and usually get a similar result in a few generations. I update the library based on the styles I use in my own work and what the small community around the site seems to like.\u003cp\u003eTech details:\nFrontend: Next.js, deployed on Vercel\nBackend: Supabase/Postgres to store SREFs, prompts, metadata and favorites\u003cp\u003eThings I’ve learned / had to work around:\nDesigning search for non-technical creatives is harder than just “add a search box”\nKeeping SREFs useful when Midjourney updates models requires pruning and re-curating\nPeople care a lot about consistency (series, brands, comics), not just one-off pretty images\u003cp\u003eWhat I’d love feedback on:\nIf you use Midjourney, I’d really appreciate feedback on:\nIs the search / navigation understandable?\nWhat information about a style do you wish you saw first?\nIs there a better way to show series / collections of styles?\nAny obvious technical improvements you’d make to the stack or data model?\u003cp\u003eLink: \u003ca href=\"https://promptsref.com\" rel=\"nofollow\"\u003ehttps://promptsref.com\u003c/a\u003e\u003cp\u003eThanks for reading, and I’m happy to answer any questions about the implementation, data model, or the SREF curation process.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46023503\"\u003ehttps://news.ycombinator.com/item?id=46023503\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: I built a simple, fast, privacy-first document scanner for iPhone",
+      "link": "https://apps.apple.com/us/app/scan-convert-to-pdf-images/id6727013863",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T13:39:34Z",
+      "description": "\n\u003cp\u003eI’m an indie iOS developer and I built a small tool because I couldn’t find a simple, fast, privacy-respecting document scanner on the App Store.\u003cp\u003eMost scanners today require an account, upload files to their cloud, or push subscriptions aggressively. I wanted something that opens instantly, works offline, exports clean PDFs, and doesn’t track anything.\u003cp\u003eSo I made Scan.\u003cp\u003eIt opens as fast as the Camera app, processes documents locally, and doesn’t require an account. The design is inspired by the older, simpler iOS UI from the iOS 6 era because I’ve always liked how clean and fast it felt.\u003cp\u003eI’d love feedback, especially from other developers:\n– Is the interaction flow intuitive enough?\n– Does the “privacy-first + old-school design” direction make sense in 2025?\n– Anything obviously missing for a 1.0?\u003cp\u003eHappy to answer questions.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46023491\"\u003ehttps://news.ycombinator.com/item?id=46023491\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "OpenAI is launching group chats in ChatGPT",
+      "link": "https://www.theverge.com/news/825544/openai-chatgpt-group-chats-launch",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T13:36:40Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.theverge.com/news/825544/openai-chatgpt-group-chats-launch\"\u003ehttps://www.theverge.com/news/825544/openai-chatgpt-group-chats-launch\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46023466\"\u003ehttps://news.ycombinator.com/item?id=46023466\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Racket v9.0",
+      "link": "https://blog.racket-lang.org/2025/11/racket-v9-0.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T13:35:27Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://blog.racket-lang.org/2025/11/racket-v9-0.html\"\u003ehttps://blog.racket-lang.org/2025/11/racket-v9-0.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46023460\"\u003ehttps://news.ycombinator.com/item?id=46023460\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Arrival of Self Driving",
+      "link": "https://avc.xyz/the-arrival-of-self-driving",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T13:34:39Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://avc.xyz/the-arrival-of-self-driving\"\u003ehttps://avc.xyz/the-arrival-of-self-driving\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46023455\"\u003ehttps://news.ycombinator.com/item?id=46023455\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Microsoft Will Preload Windows 11 File Explorer to Fix Bad Performance",
+      "link": "https://www.techpowerup.com/343149/microsoft-will-preload-windows-11-file-explorer-to-fix-bad-performance",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T13:33:32Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.techpowerup.com/343149/microsoft-will-preload-windows-11-file-explorer-to-fix-bad-performance\"\u003ehttps://www.techpowerup.com/343149/microsoft-will-preload-windows-11-file-explorer-to-fix-bad-performance\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46023449\"\u003ehttps://news.ycombinator.com/item?id=46023449\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Security BSidesLjubljana 0x7EA – CFP Open",
+      "link": "https://0x7ea.bsidesljubljana.si/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T13:33:09Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://0x7ea.bsidesljubljana.si/\"\u003ehttps://0x7ea.bsidesljubljana.si/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46023442\"\u003ehttps://news.ycombinator.com/item?id=46023442\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "How Proper Names Behave in Text Embedding Space",
+      "link": "https://vectors.run/posts/your-embeddings-know-more-about-names-than-you-think/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T13:32:20Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://vectors.run/posts/your-embeddings-know-more-about-names-than-you-think/\"\u003ehttps://vectors.run/posts/your-embeddings-know-more-about-names-than-you-think/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46023432\"\u003ehttps://news.ycombinator.com/item?id=46023432\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Geometric Origin of Inertia and Dynamics [pdf]",
+      "link": "https://zenodo.org/records/17672563",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T13:31:01Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://zenodo.org/records/17672563\"\u003ehttps://zenodo.org/records/17672563\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46023423\"\u003ehttps://news.ycombinator.com/item?id=46023423\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Is AI Valuation Bubble About to Burst ?",
+      "link": "https://medium.com/@anwarzaid76/ai-valuation-bubble-will-burst-and-nobody-is-ready-01d622cfc1bb",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T13:28:01Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://medium.com/@anwarzaid76/ai-valuation-bubble-will-burst-and-nobody-is-ready-01d622cfc1bb\"\u003ehttps://medium.com/@anwarzaid76/ai-valuation-bubble-will-burst-and-nobody-is-ready-01d622cfc1bb\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46023401\"\u003ehttps://news.ycombinator.com/item?id=46023401\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "AI Agents for Enterprise – A Practical Guide for C-Level Leaders",
+      "link": "https://lightrains.com/blogs/ai-agents-enterprise-practical-guide-c-level-leaders/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T13:26:58Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://lightrains.com/blogs/ai-agents-enterprise-practical-guide-c-level-leaders/\"\u003ehttps://lightrains.com/blogs/ai-agents-enterprise-practical-guide-c-level-leaders/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46023392\"\u003ehttps://news.ycombinator.com/item?id=46023392\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Recursive merge sort as a recursive sequence diagram",
+      "link": "https://app.ilograph.com/demo.ilograph.Merge%2520Sort/Merge%2520Sort%2520Main",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T13:25:21Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://app.ilograph.com/demo.ilograph.Merge%2520Sort/Merge%2520Sort%2520Main\"\u003ehttps://app.ilograph.com/demo.ilograph.Merge%2520Sort/Merge%2520Sort%2520Main\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46023372\"\u003ehttps://news.ycombinator.com/item?id=46023372\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "팝스타로 산다는 것의 현실",
+      "link": "https://news.hada.io/topic?id=24555",
       "source": "GeekNews",
       "category": "tech",
-      "publishedAt": "2025-11-23T04:33:13+09:00",
-      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eWaymo의 자율주행차 운행 허가 지역\u003c/strong\u003e이 캘리포니아 전역으로 확대되어, 여러 카운티와 도시에서 \u003cstrong\u003e운전자 없는 테스트 및 상용 운행\u003c/strong\u003e 가능\u003c/li\u003e\n\u003cli\u003e새로 승인된 지역에는 \u003cstrong\u003e로스앤젤레스, 샌디에이고, 오렌지, 샌프란시스코, 새크라멘토\u003c/strong\u003e 등 주요 대도시권 포함...\u003c/p\u003e"
+      "publishedAt": "2025-11-23T21:33:30+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e팝스타의 삶\u003c/strong\u003e은 화려함과 공허함이 공존하는 구조로, 음악 외의 다양한 창작 영역과 맞닿아 있음\u003c/li\u003e\n\u003cli\u003e파티, 명품, 여행, 팬들의 열정 등으로 \u003cstrong\u003e특권적 즐거움\u003c/strong\u003e을 누리지만, 동시에 그 허무함과 어색함을 자주 마주함\u003c/li\u003e\n\u003cli\u003e공항 라운지나 대기실 같은 \u003cstrong\u003e무정한 중...\u003c/p\u003e"
     },
     {
-      "title": "HP와 Dell, 노트북 CPU에 내장된 HEVC 지원 기능 비활성화",
-      "link": "https://news.hada.io/topic?id=24543",
+      "title": "40년 전의 뉴스, 오늘의 시점에서 다시 읽는 Forty.News",
+      "link": "https://news.hada.io/topic?id=24554",
       "source": "GeekNews",
       "category": "tech",
-      "publishedAt": "2025-11-23T03:34:59+09:00",
-      "description": "\u003cul\u003e\n\u003cli\u003e일부 \u003cstrong\u003eHP와 Dell 노트북\u003c/strong\u003e에서 CPU에 내장된 \u003cstrong\u003eHEVC(H.265) 하드웨어 디코딩 기능\u003c/strong\u003e이 비활성화되어 브라우저에서 영상 재생이 불가능한 사례 발생\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eHP ProBook 460 G11, 465 G11, EliteBook 665 G11\u003c/strong\u003e 등은 제품 사양서에 “HEVC 하드웨어 가속 비활성화”...\u003c/p\u003e"
+      "publishedAt": "2025-11-23T17:32:55+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eForty.News\u003c/strong\u003e는 40년 전의 주요 뉴스를 오늘 날짜에 맞춰 재발행하는 \u003cstrong\u003e‘시간 지연형 뉴스 서비스’\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e1985년 11월의 기사들이 현재 시점에서 하루 단위로 공개되어, \u003cstrong\u003e역사적 사건을 실시간처럼 체험\u003c/strong\u003e 가능\u003c/li\u003e\n\u003cli\u003e정치, 과학, 사회, 외교 등 다양한...\u003c/p\u003e"
     },
     {
-      "title": "홈스쿨링, 사상 최고 수준으로 증가",
-      "link": "https://news.hada.io/topic?id=24542",
+      "title": "중국, 토륨으로부터 우라늄을 ‘증식’해 에너지 자립의 이정표 달성",
+      "link": "https://news.hada.io/topic?id=24553",
       "source": "GeekNews",
       "category": "tech",
-      "publishedAt": "2025-11-23T01:35:10+09:00",
-      "description": "\u003cul\u003e\n\u003cli\u003e미국에서 \u003cstrong\u003e가정 주도 학습(홈스쿨링)\u003c/strong\u003e 이 팬데믹 이후에도 지속적으로 확산, 전통적 공교육에 대한 불만이 주요 배경\u003c/li\u003e\n\u003cli\u003e2024–2025학년도 홈스쿨링은 \u003cstrong\u003e전년 대비 평균 5.4% 증가\u003c/strong\u003e, 팬데믹 이전 성장률(2%)의 약 세 배 수준\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e22개 주 중 18개 주\u003c/strong...\u003c/p\u003e"
+      "publishedAt": "2025-11-23T14:37:34+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e중국 과학원이 \u003cstrong\u003e고비 사막에서 개발한 실험용 원자로\u003c/strong\u003e가 토륨을 우라늄으로 전환하는 연료 변환에 성공\u003c/li\u003e\n\u003cli\u003e이 \u003cstrong\u003e2메가와트급 액체연료 토륨 기반 용융염 원자로(TMSR)\u003c/strong\u003e 는 세계에서 유일하게 토륨 연료를 실제로 장전·사용한 사례\u003c/li\u003e\n\u003cli\u003e실험 결과는 \u003cstrong\u003e용융염 원자...\u003c/p\u003e"
     },
     {
-      "title": "프로작, 아동 우울증 치료에서 위약과 효과 차이 없어",
-      "link": "https://news.hada.io/topic?id=24541",
+      "title": "초음파로 냄새를 유도했다",
+      "link": "https://news.hada.io/topic?id=24552",
       "source": "GeekNews",
       "category": "tech",
-      "publishedAt": "2025-11-23T00:33:33+09:00",
-      "description": "\u003cul\u003e\n\u003cli\u003e새로운 \u003cstrong\u003e임상 데이터 메타분석\u003c/strong\u003e 결과, 항우울제 \u003cstrong\u003e플루옥세틴(프로작)\u003c/strong\u003e 이 아동·청소년 우울증 치료에서 위약과 임상적으로 유의미한 차이가 없음\u003c/li\u003e\n\u003cli\u003e연구진은 1997~2024년 사이 진행된 \u003cstrong\u003e12건의 대규모 임상시험\u003c/strong\u003e을 분석해, 증상 개선 폭이 임상적으로 의미...\u003c/p\u003e"
+      "publishedAt": "2025-11-23T11:33:04+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e초음파를 이용해 \u003cstrong\u003e뇌의 후각 처리 영역을 자극\u003c/strong\u003e하여 사람에게 특정 냄새 감각을 유도한 실험 결과\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e이마에 트랜스듀서를 부착\u003c/strong\u003e해 초음파를 후각망울 방향으로 집중시켰으며, 두 사람에게서 네 가지 냄새(신선한 공기, 쓰레기, 오존, 장작불)를 재현\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong...\u003c/p\u003e"
     },
     {
-      "title": "Show GN: GemBack - Gemini API Fallback Library",
-      "link": "https://news.hada.io/topic?id=24540",
+      "title": "뉴멕시코, 미국 최초로 모든 가정에 \"무료 보육 서비스\" 개방",
+      "link": "https://news.hada.io/topic?id=24551",
       "source": "GeekNews",
       "category": "tech",
-      "publishedAt": "2025-11-22T23:39:41+09:00",
-      "description": "\u003cp\u003e매번 새로운 걸 만들 때마다, Gemini 무료 API를 유용하게 쓰고 있는데요.\u003cbr /\u003e\nModel마다 주어진 분당 Quota가 달라서, 매번 똑같은 Gemini API Fallback 로직을 만들고 있더라고요.\u003cbr /\u003e\n그래서 해당 로직을 가진 NPM Library를 만들어 보았습니다.\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003ca href=\"https://github.com/Laeyoung/gem-back"
+      "publishedAt": "2025-11-23T09:47:11+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e뉴멕시코 주가 \u003cstrong\u003e미국 최초로 전 주민 대상 무료 보육 제도\u003c/strong\u003e를 시행\u003c/li\u003e\n\u003cli\u003e소득 수준과 관계없이 모든 가정이 \u003cstrong\u003e보육비 지원\u003c/strong\u003e을 받을 수 있는 구조\u003c/li\u003e\n\u003cli\u003e주 정부는 \u003cstrong\u003e보육 접근성 확대와 부모의 경제활동 지원\u003c/strong\u003e을 목표로 함\u003c/li\u003e\n\u003cli\u003e기존에는 저소득층 중심...\u003c/p\u003e"
     },
     {
-      "title": "자바스크립트로 PS2 게임을 만들 수 있다",
-      "link": "https://news.hada.io/topic?id=24539",
+      "title": "슈퍼맨 오리지널 만화책, 사상 최고가 9.12백만 달러에 낙찰",
+      "link": "https://news.hada.io/topic?id=24550",
       "source": "GeekNews",
       "category": "tech",
-      "publishedAt": "2025-11-22T22:33:07+09:00",
-      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eAthenaEnv\u003c/strong\u003e라는 오픈소스 환경을 통해 \u003cstrong\u003ePlayStation 2에서 자바스크립트 코드 실행\u003c/strong\u003e이 가능해짐\u003c/li\u003e\n\u003cli\u003e이 환경은 \u003cstrong\u003eQuickJS 엔진을 내장\u003c/strong\u003e해 자바스크립트를 해석하고, 렌더링·입력·사운드·파일 처리 등 \u003cstrong\u003e게임 개발용 API\u003c/strong\u003e를 제공\u003c/li\u003e\n\u003cli\u003e개...\u003c/p\u003e"
+      "publishedAt": "2025-11-23T09:44:09+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e미국 캘리포니아의 한 다락방에서 발견된 \u003cstrong\u003e1939년판 슈퍼맨 1호 원본\u003c/strong\u003e이 경매에서 9.12백만 달러(약 7백만 파운드)에 판매되어 사상 최고가 만화책 기록을 경신\u003c/li\u003e\n\u003cli\u003e세 형제가 어머니의 유품을 정리하던 중 \u003cstrong\u003e신문 더미 아래 상자 속에서 보존 상태가 뛰어난 슈퍼맨 1호\u003c/strong\u003e를 ...\u003c/p\u003e"
     },
     {
-      "title": "개인 블로그의 부활, 다음은 니치 블로그인가?",
-      "link": "https://news.hada.io/topic?id=24538",
+      "title": "에이전트 설계는 여전히 어렵다",
+      "link": "https://news.hada.io/topic?id=24549",
       "source": "GeekNews",
       "category": "tech",
-      "publishedAt": "2025-11-22T20:33:25+09:00",
-      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e개인 블로그의 부활\u003c/strong\u003e이 진행 중이며, 이는 소셜 미디어 피로감과 \u003cstrong\u003eIndieWeb/SmallWeb 커뮤니티\u003c/strong\u003e의 성장과 맞물린 흐름\u003c/li\u003e\n\u003cli\u003e과거 블로그 전성기에는 \u003cstrong\u003eProblogger\u003c/strong\u003e 같은 사이트가 상업적 블로깅과 \u003cstrong\u003e전문 주제 중심의 니치 블로그\u003c/strong\u003e를 대표\u003c/l...\u003c/p\u003e"
+      "publishedAt": "2025-11-23T09:41:08+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e에이전트 구축 과정\u003c/strong\u003e은 여전히 복잡하며, SDK 추상화가 실제 도구 사용 단계에서 자주 깨지는 문제 존재\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e캐싱 관리\u003c/strong\u003e는 플랫폼마다 달라 수동 관리가 더 예측 가능하고 효율적이며, Anthropic SDK의 명시적 캐시 포인트 방식이 선호됨\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e강화 루프(...\u003c/p\u003e"
     },
     {
-      "title": "모두가 의존성 쿨다운을 사용해야 하는 이유",
-      "link": "https://news.hada.io/topic?id=24537",
+      "title": "브라우저 핑거프린팅의 프라이버시 악몽",
+      "link": "https://news.hada.io/topic?id=24548",
       "source": "GeekNews",
       "category": "tech",
-      "publishedAt": "2025-11-22T16:33:14+09:00",
-      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e의존성 쿨다운(dependency cooldown)\u003c/strong\u003e 은 오픈소스 공급망 공격의 대부분을 완화할 수 있는 \u003cstrong\u003e간단하고 효과적인 보안 기법\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e공격자는 보통 인기 오픈소스 프로젝트를 탈취해 악성 코드를 배포하지만, 대부분의 공격 \u003cstrong\u003e노출 기간이 일주일 이하\u003c/strong\u003e로 짧음...\u003c/p\u003e"
+      "publishedAt": "2025-11-23T09:38:08+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e브라우저 지문 채취(browser fingerprinting)\u003c/strong\u003e 는 쿠키나 VPN으로도 막기 어려운 \u003cstrong\u003e심각한 추적 기술\u003c/strong\u003e로, 사용자의 환경 정보를 조합해 고유 식별자를 생성\u003c/li\u003e\n\u003cli\u003e운영체제, 브라우저 버전, 언어, 시간대, 폰트, 확장 기능, \u003cstrong\u003e캔버스 렌더링 결과\u003c/strong\u003e 등 다양한 ...\u003c/p\u003e"
     },
     {
-      "title": "퀄컴, 아두이노를 완전히 죽였는가?",
-      "link": "https://news.hada.io/topic?id=24536",
+      "title": "RegreSQL - SQL 쿼리의 회귀 테스트를 자동화하는 도구",
+      "link": "https://news.hada.io/topic?id=24547",
       "source": "GeekNews",
       "category": "tech",
-      "publishedAt": "2025-11-22T10:33:35+09:00",
-      "description": "\u003cul\u003e\n\u003cli\u003e퀄컴이 \u003cstrong\u003e아두이노를 인수한 지 6주 후\u003c/strong\u003e, 새 \u003cstrong\u003e이용약관과 개인정보정책\u003c/strong\u003e이 공개되며 오픈소스 기반이 사라졌다는 우려 확산\u003c/li\u003e\n\u003cli\u003e새 약관에는 \u003cstrong\u003e의무적 중재 조항\u003c/strong\u003e, \u003cstrong\u003e퀄컴 생태계와의 데이터 통합\u003c/strong\u003e, \u003cstrong\u003eAI 사용 제한\u003c/strong\u003e, \u003cstrong\u003e역...\u003c/p\u003e"
+      "publishedAt": "2025-11-23T09:31:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003ePostgreSQL용 SQL 회귀 테스트 도구\u003c/strong\u003e로, 쿼리 결과가 변경되지 않았는지 자동으로 비교\u003c/li\u003e\n\u003cli\u003eSQL 파일을 스캔해 쿼리별 \u003cstrong\u003eexpected JSON 결과\u003c/strong\u003e, \u003cstrong\u003eEXPLAIN 비용 baseline\u003c/strong\u003e, \u003cstrong\u003e테스트 plan\u003c/strong\u003e을 생성하고 관리\u003c/li\u003e\n\u003cli\u003eYAML 기반 \u003cstrong\u003eFixtur...\u003c/p\u003e"
     },
     {
-      "title": "미국에 의해 디지털적으로 차단된 프랑스 판사",
-      "link": "https://news.hada.io/topic?id=24534",
+      "title": "LAPD 헬리콥터 추적기 – 실시간 경찰 항공 모니터링 및 비용 계산기",
+      "link": "https://news.hada.io/topic?id=24546",
       "source": "GeekNews",
       "category": "tech",
-      "publishedAt": "2025-11-22T09:43:17+09:00",
-      "description": "\u003cul\u003e\n\u003cli\u003e국제형사재판소(ICC) 판사 \u003cstrong\u003e니콜라 기유(Nicolas Guillou)\u003c/strong\u003e 가 미국의 제재 대상이 되면서 \u003cstrong\u003e디지털 생활 전반에서 배제된 상황\u003c/strong\u003e에 놓임\u003c/li\u003e\n\u003cli\u003e제재는 \u003cstrong\u003e이스라엘 총리 네타냐후와 국방장관 갈란트에 대한 전범 혐의 체포영장\u003c/strong\u003e 발부 이후 미국 재무부가 \u003cstron...\u003c/p\u003e"
-    },
-    {
-      "title": "The Rising Importance of Governance at SwampUP Berlin 2025",
-      "link": "https://www.docker.com/blog/the-rising-importance-of-governance-at-swampup-berlin-2025/",
-      "source": "Docker Blog",
-      "category": "tech",
-      "publishedAt": "2025-11-21T22:43:00Z",
-      "description": "On November 12-14, the Docker team was out in numbers at JFrog SwampUP Berlin 2025. We joined technical sessions, put on a fireside chat, and had conversations with attendees there. We’d like to thank the folks at JFrog for having us there and putting on such a great show! Here's our takeaways from the event about software..."
-    },
-    {
-      "title": "Task Based Management [video]",
-      "link": "https://www.youtube.com/watch?v=55XUt5Ve6Mk",
-      "source": "Hacker News",
-      "category": "tech",
-      "publishedAt": "2025-11-22T21:59:12Z",
-      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.youtube.com/watch?v=55XUt5Ve6Mk\"\u003ehttps://www.youtube.com/watch?v=55XUt5Ve6Mk\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46018621\"\u003ehttps://news.ycombinator.com/item?id=46018621\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
-    },
-    {
-      "title": "Designing an Open Source Micro-Manipulator",
-      "link": "https://hackaday.com/2025/09/04/designing-an-open-source-micro-manipulator/",
-      "source": "Hacker News",
-      "category": "tech",
-      "publishedAt": "2025-11-22T21:58:24Z",
-      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://hackaday.com/2025/09/04/designing-an-open-source-micro-manipulator/\"\u003ehttps://hackaday.com/2025/09/04/designing-an-open-source-micro-manipulator/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46018614\"\u003ehttps://news.ycombinator.com/item?id=46018614\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
-    },
-    {
-      "title": "'If I had colon cancer, I could grow my own tumor, and see which drug kills it'",
-      "link": "https://english.elpais.com/science-tech/2025-11-07/hans-clevers-biomedical-scientist-if-i-had-colon-cancer-i-could-grow-my-own-tumor-test-it-with-drugs-and-see-which-one-eliminates-it.html",
-      "source": "Hacker News",
-      "category": "tech",
-      "publishedAt": "2025-11-22T21:58:22Z",
-      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://english.elpais.com/science-tech/2025-11-07/hans-clevers-biomedical-scientist-if-i-had-colon-cancer-i-could-grow-my-own-tumor-test-it-with-drugs-and-see-which-one-eliminates-it.html\"\u003ehttps://english.elpais.com/science-tech/2025-11-07/hans-clevers-biomedical-scientist-if-i-had-colon-cancer-i-could-grow-my-own-tumor-test-it-with-drugs-and-see-which-one-eliminates-it.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46018613\"\u003ehttps://news.ycombinator.com/item?id=46018613\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
-    },
-    {
-      "title": "Export messages and Legacy (Duo) call history",
-      "link": "https://support.google.com/meet/answer/16176860?hl=en\u0026co=GENIE.Platform%3DAndroid",
-      "source": "Hacker News",
-      "category": "tech",
-      "publishedAt": "2025-11-22T21:57:35Z",
-      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://support.google.com/meet/answer/16176860?hl=en\u0026co=GENIE.Platform%3DAndroid\"\u003ehttps://support.google.com/meet/answer/16176860?hl=en\u0026co=GENIE.Platform%3DAndroid\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46018608\"\u003ehttps://news.ycombinator.com/item?id=46018608\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
-    },
-    {
-      "title": "Tech Is Opt-In",
-      "link": "https://coppolaemilio.com/entries/tech-is-opt-in/",
-      "source": "Hacker News",
-      "category": "tech",
-      "publishedAt": "2025-11-22T21:57:15Z",
-      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://coppolaemilio.com/entries/tech-is-opt-in/\"\u003ehttps://coppolaemilio.com/entries/tech-is-opt-in/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46018605\"\u003ehttps://news.ycombinator.com/item?id=46018605\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
-    },
-    {
-      "title": "People test Nano Banana with PDF paper to whiteboard. I did the exact opposite",
-      "link": "https://quickchat.ai/post/nano-banana-pro-whiteboard-to-research-paper",
-      "source": "Hacker News",
-      "category": "tech",
-      "publishedAt": "2025-11-22T21:50:08Z",
-      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://quickchat.ai/post/nano-banana-pro-whiteboard-to-research-paper\"\u003ehttps://quickchat.ai/post/nano-banana-pro-whiteboard-to-research-paper\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46018558\"\u003ehttps://news.ycombinator.com/item?id=46018558\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
-    },
-    {
-      "title": "Isochrone Curve",
-      "link": "https://www.youtube.com/watch?v=eBc827pwKf0",
-      "source": "Hacker News",
-      "category": "tech",
-      "publishedAt": "2025-11-22T21:49:57Z",
-      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.youtube.com/watch?v=eBc827pwKf0\"\u003ehttps://www.youtube.com/watch?v=eBc827pwKf0\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46018557\"\u003ehttps://news.ycombinator.com/item?id=46018557\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
-    },
-    {
-      "title": "Show HN: Christmas Neovim Theme",
-      "link": "https://github.com/ChaseRensberger/christmas.nvim",
-      "source": "Hacker News",
-      "category": "tech",
-      "publishedAt": "2025-11-22T21:48:52Z",
-      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/ChaseRensberger/christmas.nvim\"\u003ehttps://github.com/ChaseRensberger/christmas.nvim\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46018551\"\u003ehttps://news.ycombinator.com/item?id=46018551\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
-    },
-    {
-      "title": "America's WW2 Combat Drone That Bombed the Japanese – The TDR-1 [video]",
-      "link": "https://www.youtube.com/watch?v=9K5v3Jwz89w",
-      "source": "Hacker News",
-      "category": "tech",
-      "publishedAt": "2025-11-22T21:45:42Z",
-      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.youtube.com/watch?v=9K5v3Jwz89w\"\u003ehttps://www.youtube.com/watch?v=9K5v3Jwz89w\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46018527\"\u003ehttps://news.ycombinator.com/item?id=46018527\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
-    },
-    {
-      "title": "HPC Is Not Just Riding the Coattails of AI",
-      "link": "https://www.nextplatform.com/2025/11/21/hpc-is-not-just-riding-the-coattails-of-ai/",
-      "source": "Hacker News",
-      "category": "tech",
-      "publishedAt": "2025-11-22T21:45:03Z",
-      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nextplatform.com/2025/11/21/hpc-is-not-just-riding-the-coattails-of-ai/\"\u003ehttps://www.nextplatform.com/2025/11/21/hpc-is-not-just-riding-the-coattails-of-ai/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46018518\"\u003ehttps://news.ycombinator.com/item?id=46018518\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
-    },
-    {
-      "title": "Updating the Golang Memory Model",
-      "link": "https://research.swtch.com/gomm",
-      "source": "Hacker News",
-      "category": "tech",
-      "publishedAt": "2025-11-22T21:42:02Z",
-      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://research.swtch.com/gomm\"\u003ehttps://research.swtch.com/gomm\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46018507\"\u003ehttps://news.ycombinator.com/item?id=46018507\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
-    },
-    {
-      "title": "Running a 270M LLM on Android (architecture and benchmarks)",
-      "link": "https://news.ycombinator.com/item?id=46018506",
-      "source": "Hacker News",
-      "category": "tech",
-      "publishedAt": "2025-11-22T21:41:56Z",
-      "description": "\n\u003cp\u003eI’ve been experimenting with running small LLMs directly on mobile hardware (low-range Android devices), without relying on cloud inference. This is a summary of what worked, what didn’t, and why.\u003cp\u003eCloud-based LLM APIs are convenient, but come with:\u003cp\u003e-latency from network round-trips\n-unpredictable API costs\n-privacy concerns (content leaving device)\n-the need for connectivity\u003cp\u003eFor simple tasks like news summarization, small models seem “good enough,” so I tested whether a ~270M parameter model gemma3-270m could run entirely on-device.\u003cp\u003eModel - Gemma3-270M INT8 Quantized\nRuntime - Cactus SDK (Android NPU/GPU acceleration)\nApp Framework - Flutter\nDevice - Mediatek 7300 with 8GB RAM\u003cp\u003eArchitecture\n- User shares a URL to the app (Android share sheet).\n- App fetches article HTML → extracts readable text.\n- Local model generates a summary.\n- device TTS reads the summary.\nEverything runs offline except the initial page fetch.\u003cp\u003ePerformace\n- ~450–900ms Latency for a short summary (100–200 tokens).\n- On devices without NPU acceleration, CPU-only inference takes 2–3× longer.\n- Peak RAM: ~350–450MB\u003cp\u003eLimitation\n-Quality is noticeably worse than GPT-5 for complex articles.\n-Long-form summarization (\u003e1k words) gets inconsistent.\n-Web scraping is fragile for JS-heavy or paywalled sites.\n-Some low-end phones throttle CPU/GPU aggressively.\u003cp\u003e| Metric  | Local (Gemma 270M)   | GPT-4o Cloud         |\n| ------- | -------------------- | -------------------- |\n| Latency | 0.5–1.5s             | 0.7–1.5s + network   |\n| Cost    | 0                    | API cost per request |\n| Privacy | Text stays on device | Sent over network    |\n| Quality | Medium               | High                 |\u003cp\u003eGithub - https://github.com/ayusrjn/briefly\u003cp\u003eRunning small LLMs on-device is viable for narrow tasks like summarization. For more complex reasoning tasks, cloud models still outperform by a large margin, but the “local-first” approach seems promising for privacy-sensitive or offline-first applications.\nCactus SDK does a pretty good job for handling the model and accelarations.\u003cp\u003eHappy to answer Questions :)\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46018506\"\u003ehttps://news.ycombinator.com/item?id=46018506\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
-    },
-    {
-      "title": "Bayesian cohort-level ARPU Model",
-      "link": "https://world.hey.com/apetrov/bayesian-cohort-level-arpu-model-8647f862",
-      "source": "Hacker News",
-      "category": "tech",
-      "publishedAt": "2025-11-22T21:40:31Z",
-      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://world.hey.com/apetrov/bayesian-cohort-level-arpu-model-8647f862\"\u003ehttps://world.hey.com/apetrov/bayesian-cohort-level-arpu-model-8647f862\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46018497\"\u003ehttps://news.ycombinator.com/item?id=46018497\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
-    },
-    {
-      "title": "Picturing a Voice: Margaret Watts Hughes and the Eidophone",
-      "link": "https://publicdomainreview.org/essay/picturing-a-voice-margaret-watts-hughes-and-the-eidophone/",
-      "source": "Hacker News",
-      "category": "tech",
-      "publishedAt": "2025-11-22T21:39:35Z",
-      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://publicdomainreview.org/essay/picturing-a-voice-margaret-watts-hughes-and-the-eidophone/\"\u003ehttps://publicdomainreview.org/essay/picturing-a-voice-margaret-watts-hughes-and-the-eidophone/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46018491\"\u003ehttps://news.ycombinator.com/item?id=46018491\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
-    },
-    {
-      "title": "Accepting that you won't know it all",
-      "link": "https://blog.prdai.dev/",
-      "source": "Hacker News",
-      "category": "tech",
-      "publishedAt": "2025-11-22T21:33:29Z",
-      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://blog.prdai.dev/\"\u003ehttps://blog.prdai.dev/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46018463\"\u003ehttps://news.ycombinator.com/item?id=46018463\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
-    },
-    {
-      "title": "SC25: HACCing over 500 Petaflops on Frontier",
-      "link": "https://chipsandcheese.com/p/sc25-haccing-over-500-petaflops-on",
-      "source": "Hacker News",
-      "category": "tech",
-      "publishedAt": "2025-11-22T21:32:53Z",
-      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://chipsandcheese.com/p/sc25-haccing-over-500-petaflops-on\"\u003ehttps://chipsandcheese.com/p/sc25-haccing-over-500-petaflops-on\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46018461\"\u003ehttps://news.ycombinator.com/item?id=46018461\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
-    },
-    {
-      "title": "How to write a great agents.md: Lessons from over 2,500 repositories",
-      "link": "https://github.blog/ai-and-ml/github-copilot/how-to-write-a-great-agents-md-lessons-from-over-2500-repositories/",
-      "source": "Hacker News",
-      "category": "tech",
-      "publishedAt": "2025-11-22T21:29:56Z",
-      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.blog/ai-and-ml/github-copilot/how-to-write-a-great-agents-md-lessons-from-over-2500-repositories/\"\u003ehttps://github.blog/ai-and-ml/github-copilot/how-to-write-a-great-agents-md-lessons-from-over-2500-repositories/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46018448\"\u003ehttps://news.ycombinator.com/item?id=46018448\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
-    },
-    {
-      "title": "Show HN: Another JSON Alternative",
-      "link": "https://news.ycombinator.com/item?id=46018420",
-      "source": "Hacker News",
-      "category": "tech",
-      "publishedAt": "2025-11-22T21:26:13Z",
-      "description": "\n\u003cp\u003eI realize that there are 1001 alternatives to JSON encoding, that are leaner, faster, or just completely different, but I still have my own that I'd like to share.\u003cp\u003eLOEN stands for Lean Object Encoding Notation and aims to reduce the character count compared to JSON, especially in the case of arrays of objects; JSON is crazy verbose in this regard, and so using an alternative when transmitting lists or database results, is pretty much a must-do.\u003cp\u003eOther than being lean, the MVP of LOEN is that it is backwards compatible with JSON. JSON is valid LOEN but not the other way around. This is useful in that it allows for a LOEN interpreter to be used for both LOEN and JSON requests. If by magic LOEN were to become commonplace, it would allow for legacy apps using JSON to continue to function.\u003cp\u003eAnyway not expecting anything but happy to here what you think.\u003cp\u003eHere's an article I wrote about it:\n\u003ca href=\"https://www.offthebricks.com/articles/lean-object-encoding-alternative-to-json\" rel=\"nofollow\"\u003ehttps://www.offthebricks.com/articles/lean-object-encoding-a...\u003c/a\u003e\u003cp\u003eHere's a link to the GitHub repo:\n\u003ca href=\"https://github.com/offthebricks/LOEN/tree/master\" rel=\"nofollow\"\u003ehttps://github.com/offthebricks/LOEN/tree/master\u003c/a\u003e\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46018420\"\u003ehttps://news.ycombinator.com/item?id=46018420\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
-    },
-    {
-      "title": "Inflatable Space Stations",
-      "link": "https://worksinprogress.co/issue/inflatable-space-stations/",
-      "source": "Hacker News",
-      "category": "tech",
-      "publishedAt": "2025-11-22T21:25:11Z",
-      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://worksinprogress.co/issue/inflatable-space-stations/\"\u003ehttps://worksinprogress.co/issue/inflatable-space-stations/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46018415\"\u003ehttps://news.ycombinator.com/item?id=46018415\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
-    },
-    {
-      "title": "If the GenAI Bubble Bursts, Nvidia Will Still Keep Growing",
-      "link": "https://www.nextplatform.com/2025/11/21/if-the-genai-bubble-bursts-nvidia-will-still-keep-growing/",
-      "source": "Hacker News",
-      "category": "tech",
-      "publishedAt": "2025-11-22T21:23:33Z",
-      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nextplatform.com/2025/11/21/if-the-genai-bubble-bursts-nvidia-will-still-keep-growing/\"\u003ehttps://www.nextplatform.com/2025/11/21/if-the-genai-bubble-bursts-nvidia-will-still-keep-growing/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46018396\"\u003ehttps://news.ycombinator.com/item?id=46018396\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 2\u003c/p\u003e\n"
-    },
-    {
-      "title": "Rovo Dev agent, now available in the CLI",
-      "link": "https://www.atlassian.com/blog/announcements/rovo-dev-command-line-interface",
-      "source": "Atlassian Developer Blog",
-      "category": "tech",
-      "publishedAt": "2025-11-22T01:32:24Z",
-      "description": "\u003cp\u003eAgentic AI in your terminal, built for developers\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/announcements/rovo-dev-command-line-interface\"\u003eRovo Dev agent, now available in the CLI\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+      "publishedAt": "2025-11-23T06:37:24+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e로스앤젤레스 경찰국(LAPD)\u003c/strong\u003e 헬리콥터의 실시간 비행 활동과 \u003cstrong\u003e운영 비용\u003c/strong\u003e을 추적하는 웹 기반 도구\u003c/li\u003e\n\u003cli\u003e활성 비행, 비행 시간, 시간당 운영비를 실시간으로 표시하며 \u003cstrong\u003e납세자 부담 비용\u003c/strong\u003e을 계산\u003c/li\u003e\n\u003cli\u003e2023년 \u003cstrong\u003eMejia 감사 보고서\u003c/strong\u003e에 따...\u003c/p\u003e"
     }
   ],
-  "generatedAt": "2025-11-23T07:08:06.223407284+09:00"
+  "generatedAt": "2025-11-23T23:12:57.886178251+09:00"
 }
