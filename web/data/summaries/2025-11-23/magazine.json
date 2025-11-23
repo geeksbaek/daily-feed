@@ -1,0 +1,250 @@
+{
+  "date": "2025-11-23",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2025년 11월 23일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** 애플의 '스노우 레퍼드'식 안정화 전략 선회부터 중국의 토륨 원전 가동, 그리고 원격 근무 감시(Bossware)의 부상까지 기술과 사회의 접점을 파헤칩니다.\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### 🍎 애플 iOS 27, 기능 추가 대신 '완성도' 택한다 (제2의 스노우 레퍼드)\n애플이 차기 운영체제인 iOS 27의 개발 방향을 대대적으로 수정했습니다. 블룸버그에 따르면, 애플은 새로운 기능을 쏟아내는 대신 시스템의 안정성과 성능 최적화에 집중하는 이른바 '스노우 레퍼드(Snow Leopard)' 전략을 채택할 예정입니다. 이는 과거 Mac OS X Snow Leopard가 그랬듯, 혁신적인 기능보다는 버그 수정과 기반 기술 강화에 주력하겠다는 의미입니다. 단, AI 기능 강화는 예외적으로 지속될 전망이며, 팀 쿡의 은퇴설과 맞물려 애플의 경영 전략 변화도 주목받고 있습니다.\n\n\u003e **Key Point:** 무리한 기능 확장보다 '내실 다지기'를 선택한 애플, AI를 제외한 모든 영역에서 품질(Quality)이 최우선 순위가 될 전망입니다. [^20]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. 중국, 토륨 원전으로 에너지 자립의 이정표를 세우다\n- **What:** 중국이 토륨을 이용해 우라늄을 증식하고 이를 연료로 사용하는 원자력 기술을 실증하며 에너지 자립의 중요한 마일스톤을 달성했습니다.\n- **Why:** 토륨은 우라늄보다 매장량이 풍부하고 핵폐기물 발생량이 적어 차세대 원전의 핵심 자원으로 꼽혀왔으나, 기술적 난이도가 높았습니다.\n- **Impact:** 중국의 이번 성공은 글로벌 에너지 패권 경쟁에서 우위를 점하는 계기가 될 것이며, 탄소 중립 목표 달성에도 큰 영향을 미칠 것입니다. [^23]\n\n### 2. 원격 근무의 그림자, '보스웨어(Bossware)'의 부상\n- **What:** 고용주들이 원격 근무자의 업무를 실시간으로 감시하는 소프트웨어, 일명 '보스웨어'의 도입을 늘리고 있습니다.\n- **Why:** 원격 근무가 정착되면서 생산성 저하를 우려한 기업들이 키보드 입력, 화면 캡처 등을 통해 직원을 통제하려 하기 때문입니다.\n- **Impact:** 이는 프라이버시 침해 논란과 함께 노사 간의 신뢰를 무너뜨리는 부작용을 낳고 있어, 향후 노동법 및 윤리적 규제 논의가 가속화될 전망입니다. [^15]\n\n### 3. 실명 위기 환자에게 빛을, 줄기세포 치료의 진전\n- **What:** 노인성 황반변성(AMD) 환자들에게 줄기세포 치료를 적용하여 시력을 회복시키는 임상 결과가 발표되었습니다.\n- **Why:** AMD는 고령화 사회의 주요 실명 원인이지만 근본적인 치료법이 부족했습니다. 이번 연구는 손상된 망막 세포를 재생하는 길을 열었습니다.\n- **Impact:** 재생 의학 분야의 획기적인 발전으로, 향후 다양한 퇴행성 질환 치료에 줄기세포 기술이 적극적으로 도입될 것으로 기대됩니다. [^8]\n\n### 4. 브라우저 핑거프린팅, 프라이버시의 악몽\n- **What:** 쿠키 없이도 사용자의 브라우저 설정, 화면 해상도, 폰트 목록 등을 조합해 개인을 식별하는 '핑거프린팅' 기술의 위험성이 재조명되었습니다.\n- **Why:** 사용자가 추적 방지 기능을 켜더라도, 핑거프린팅을 통해 여전히 동선이 파악될 수 있어 기존 보안 수단을 무력화합니다.\n- **Impact:** 웹 표준 기구와 브라우저 벤더들의 대응이 시급하며, 사용자 입장에서는 더욱 고도화된 프라이버시 보호 도구의 필요성이 커지고 있습니다. [^28]\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n개발자와 엔지니어를 위한 엄선된 도구와 기술 아티클입니다.\n\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **DevOps** | **RegreSQL** | SQL 쿼리의 변경 사항이 기존 기능에 영향을 주는지 검증하는 회귀 테스트 자동화 도구입니다. [^29] |\n| **Web** | **Fuzzy-redirect** | 사용자가 오타를 냈을 때 404 에러 대신 가장 유사한 유효 경로로 자동 리다이렉트해주는 라이브러리입니다. [^1] |\n| **AI Tool** | **Lyra (MCP Client)** | 설정 없이(Zero-config) 바로 사용할 수 있는 MCP(Model Context Protocol) 클라이언트로, 2,700개 이상의 에이전트를 지원합니다. [^4] |\n| **System** | **Liballocs** | 유닉스 프로세스를 위한 메타 레벨 런타임 서비스로, 메모리 할당 및 관리를 위한 저수준 도구입니다. [^14] |\n| **Lang** | **Defer_h** | C99 및 GNU11 C 언어에서 Zig 언어의 `defer` 및 `errdefer` 기능을 매크로로 구현한 헤더입니다. [^16] |\n| **OSINT** | **PyBrowserAutomation** | 코딩 없이 브라우저 자동화를 구축하여 공개 출처 정보(OSINT) 수집을 돕는 도구입니다. [^18] |\n| **Infra** | **DNS Deep Dive** | \"항상 DNS가 문제다\"라는 격언을 파헤치며, 이름 해석(Name Resolution)의 내부 작동 원리를 심층 분석한 글입니다. [^9] |\n| **Graphics** | **What Is a Shader?** | 셰이더의 개념과 작동 원리를 초보자도 이해하기 쉽게 설명한 기술 아티클입니다. [^17] |\n| **CMS** | **WordPress Deep Dive** | 워드프레스의 핵심 구조와 개발 방법론을 깊이 있게 다룬 시리즈의 서막입니다. [^12] |\n| **AI Dev** | **Agent Design** | AI 에이전트 설계가 왜 여전히 어려운지, 그 기술적 난제와 해결 방향을 논의합니다. [^27] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n\n#### 🤖 AI \u0026 Tech\n* **Watching People Experience Their AI Eureka Moment**: 사람들이 AI의 진가를 깨닫는 '유레카 모멘트'를 관찰하며 얻은 통찰을 공유합니다. [^6]\n* **Nano Banana Pro (4K) at $0.04/image**: 이미지당 0.04달러라는 저렴한 비용으로 4K 이미지를 생성하는 새로운 AI 서비스가 등장했습니다. [^19]\n* **초음파로 냄새를 유도했다**: 초음파를 이용해 특정 냄새를 느끼게 하거나 유도하는 새로운 감각 인터페이스 기술이 소개되었습니다. [^24]\n\n#### 🏛️ 사회 \u0026 정책\n* **The Doge Succession Drama Elon Musk Left Behind**: 일론 머스크가 남긴 'DOGE(정부 효율성 부서)' 관련 승계 드라마와 정치적 파장을 다룹니다. [^3]\n* **Hey America, Are You Ready for Fair Taxation?**: 미국의 조세 제도 개편과 공정한 과세에 대한 경제학적 제언을 담은 글입니다. [^7]\n* **뉴멕시코, 미국 최초로 모든 가정에 \"무료 보육 서비스\" 개방**: 소득과 관계없이 모든 가정에 무료 보육을 제공하는 파격적인 복지 정책이 시행됩니다. [^25]\n* **LAPD 헬리콥터 추적기**: LA 경찰국 헬리콥터의 비행 경로와 비용을 실시간으로 추적하여 시민 감시 예산을 시각화한 프로젝트입니다. [^30]\n\n#### 🎬 문화 \u0026 미디어\n* **'The public has been lied to': made documentary insists aliens exist**: 외계인의 존재를 주장하며 대중이 속고 있다고 폭로하는 새로운 다큐멘터리가 화제입니다. [^2]\n* **A podcast host's guide to getting on podcasts**: 팟캐스트 호스트가 직접 알려주는 '게스트로 섭외되는 법'에 대한 실전 가이드입니다. [^5]\n* **팝스타로 산다는 것의 현실**: 화려함 뒤에 감춰진 팝스타들의 현실적인 고충과 삶의 이면을 조명합니다. [^21]\n* **40년 전의 뉴스, 오늘의 시점에서 다시 읽는 Forty.News**: 정확히 40년 전의 뉴스를 현재 시점에서 다시 큐레이션하여 보여주는 흥미로운 프로젝트입니다. [^22]\n* **슈퍼맨 오리지널 만화책, 사상 최고가 9.12백만 달러에 낙찰**: 희귀한 슈퍼맨 초판 만화책이 경매 역사상 최고가를 경신했습니다. [^26]\n\n#### 💼 커리어 \u0026 라이프\n* **Subtle Signs That You Are Ready to Retire**: 은퇴 준비가 되었음을 알리는 미묘한 심리적, 재정적 신호들을 분석했습니다. [^10]\n* **CS Batik Air 관련 문의 (Community)**: 바틱 에어 고객센터 연락처를 묻거나 공유하는 커뮤니티 게시글들이 올라왔습니다. [^11] [^13]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘의 뉴스는 **'기본으로의 회귀'**와 **'기술의 양면성'**으로 요약됩니다. 애플은 혁신 대신 안정성을 택했고(Top Story), 중국은 에너지의 기본인 원자력 기술을 진일보시켰습니다(Deep Dive 1). 반면, 원격 근무 감시 도구(Deep Dive 2)와 브라우저 핑거프린팅(Deep Dive 4)은 기술이 인간의 자유를 어떻게 침해할 수 있는지 경고합니다. 기술의 발전 속도만큼이나, 그 기술을 어떻게 '잘' 쓸 것인지에 대한 고민이 필요한 시점입니다.\n\n---\n\n[^1]: Show HN: Fuzzy-redirect preventing 404s by auto-redirect to closest valid route - https://github.com/Kuberwastaken/fuzzy-redirect\n[^2]: 'The public has been lied to': made documentary insists aliens exist - https://www.theguardian.com/film/2025/nov/22/age-of-disclosure-documentary-aliens\n[^3]: The Doge Succession Drama Elon Musk Left Behind - https://www.politico.com/news/magazine/2025/11/21/doge-elon-musk-succession-00641110\n[^4]: Show HN: MCP setup sucks – so I built a zero-config client with 2,700 agents - https://www.trylyra.com/mcp\n[^5]: A podcast host's guide to getting on podcasts - https://scalingdevtools.com/blog/a-podcast-hosts-guide-to-getting-on-podcasts\n[^6]: Watching People Experience Their AI Eureka Moment - https://www.rickmanelius.com/p/watching-people-experience-their\n[^7]: Hey America, Are You Ready for Fair Taxation? - https://optimisteconomy.substack.com/p/tax-cuts-kathryn-edwards\n[^8]: Stem cell therapy helps AMD patients see again - https://www.sciencedaily.com/releases/2025/11/251121090736.htm\n[^9]: It's Not Always DNS: Exploring How Name Resolution Works - https://cefboud.com/posts/dns-name-resolution-deep-dive-internals/\n[^10]: Subtle Signs That You Are Ready to Retire - https://www.wsj.com/lifestyle/careers/retirement-ready-when-signs-d0c99bd3\n[^11]: Bagaimana Cara Menghubungi CS Batik Air - https://news.ycombinator.com/item?id=46023695\n[^12]: WordPress Deep Dive - https://wiktorjarosz.com/wordpress/introduction/\n[^13]: CS Batik Air? +62.811.323.170 - https://news.ycombinator.com/item?id=46023677\n[^14]: Liballocs: Meta-level run-time services for Unix processes a.k.a. dragging U - https://github.com/stephenrkell/liballocs\n[^15]: Bossware rises as employers keep closer tabs on remote staff - https://www.theregister.com/2025/11/23/bossware_monitor_remote_employees/\n[^16]: Show HN: Zig's defer/errdefer for c99 and gnu11 C via macros - https://github.com/Trainraider/defer_h\n[^17]: What Is a Shader? - https://www.makingsoftware.com/chapters/shaders#email\n[^18]: Show HN: Building a no-code browser automation system for OSINT - https://github.com/FauvidoTechnologies/PyBrowserAutomation\n[^19]: Nano Banana Pro (4K) at $0.04/image - https://seedreamimage.com/nano-banana-pro\n[^20]: Apple iOS 27 to Be No-Frills 'Snow Leopard' Update, Other Than New AI - https://www.bloomberg.com/news/newsletters/2025-11-23/apple-ios-27-snow-leopard-like-quality-focus-ai-features-tim-cook-retirement-mibq7jv8\n[^21]: 팝스타로 산다는 것의 현실 - https://news.hada.io/topic?id=24555\n[^22]: 40년 전의 뉴스, 오늘의 시점에서 다시 읽는 Forty.News - https://news.hada.io/topic?id=24554\n[^23]: 중국, 토륨으로부터 우라늄을 ‘증식’해 에너지 자립의 이정표 달성 - https://news.hada.io/topic?id=24553\n[^24]: 초음파로 냄새를 유도했다 - https://news.hada.io/topic?id=24552\n[^25]: 뉴멕시코, 미국 최초로 모든 가정에 \"무료 보육 서비스\" 개방 - https://news.hada.io/topic?id=24551\n[^26]: 슈퍼맨 오리지널 만화책, 사상 최고가 9.12백만 달러에 낙찰 - https://news.hada.io/topic?id=24550\n[^27]: 에이전트 설계는 여전히 어렵다 - https://news.hada.io/topic?id=24549\n[^28]: 브라우저 핑거프린팅의 프라이버시 악몽 - https://news.hada.io/topic?id=24548\n[^29]: RegreSQL - SQL 쿼리의 회귀 테스트를 자동화하는 도구 - https://news.hada.io/topic?id=24547\n[^30]: LAPD 헬리콥터 추적기 – 실시간 경찰 항공 모니터링 및 비용 계산기 - https://news.hada.io/topic?id=24546\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **Show HN: Fuzzy-redirect preventing 404s by auto-redirect to closest valid route**\n   - 출처: Hacker News\n   - 링크: https://github.com/Kuberwastaken/fuzzy-redirect\n\n2. **'The public has been lied to': made documentary insists aliens exist**\n   - 출처: Hacker News\n   - 링크: https://www.theguardian.com/film/2025/nov/22/age-of-disclosure-documentary-aliens\n\n3. **The Doge Succession Drama Elon Musk Left Behind**\n   - 출처: Hacker News\n   - 링크: https://www.politico.com/news/magazine/2025/11/21/doge-elon-musk-succession-00641110\n\n4. **Show HN: MCP setup sucks – so I built a zero-config client with 2,700 agents**\n   - 출처: Hacker News\n   - 링크: https://www.trylyra.com/mcp\n\n5. **A podcast host's guide to getting on podcasts**\n   - 출처: Hacker News\n   - 링크: https://scalingdevtools.com/blog/a-podcast-hosts-guide-to-getting-on-podcasts\n\n6. **Watching People Experience Their AI Eureka Moment**\n   - 출처: Hacker News\n   - 링크: https://www.rickmanelius.com/p/watching-people-experience-their\n\n7. **Hey America, Are You Ready for Fair Taxation?**\n   - 출처: Hacker News\n   - 링크: https://optimisteconomy.substack.com/p/tax-cuts-kathryn-edwards\n\n8. **Stem cell therapy helps AMD patients see again**\n   - 출처: Hacker News\n   - 링크: https://www.sciencedaily.com/releases/2025/11/251121090736.htm\n\n9. **It's Not Always DNS: Exploring How Name Resolution Works**\n   - 출처: Hacker News\n   - 링크: https://cefboud.com/posts/dns-name-resolution-deep-dive-internals/\n\n10. **Subtle Signs That You Are Ready to Retire**\n   - 출처: Hacker News\n   - 링크: https://www.wsj.com/lifestyle/careers/retirement-ready-when-signs-d0c99bd3\n\n11. **Bagaimana Cara Menghubungi CS Batik Air**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=46023695\n\n12. **WordPress Deep Dive**\n   - 출처: Hacker News\n   - 링크: https://wiktorjarosz.com/wordpress/introduction/\n\n13. **CS Batik Air? +62.811.323.170**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=46023677\n\n14. **Liballocs: Meta-level run-time services for Unix processes a.k.a. dragging U**\n   - 출처: Hacker News\n   - 링크: https://github.com/stephenrkell/liballocs\n\n15. **Bossware rises as employers keep closer tabs on remote staff**\n   - 출처: Hacker News\n   - 링크: https://www.theregister.com/2025/11/23/bossware_monitor_remote_employees/\n\n16. **Show HN: Zig's defer/errdefer for c99 and gnu11 C via macros**\n   - 출처: Hacker News\n   - 링크: https://github.com/Trainraider/defer_h\n\n17. **What Is a Shader?**\n   - 출처: Hacker News\n   - 링크: https://www.makingsoftware.com/chapters/shaders#email\n\n18. **Show HN: Building a no-code browser automation system for OSINT**\n   - 출처: Hacker News\n   - 링크: https://github.com/FauvidoTechnologies/PyBrowserAutomation\n\n19. **Nano Banana Pro (4K) at $0.04/image**\n   - 출처: Hacker News\n   - 링크: https://seedreamimage.com/nano-banana-pro\n\n20. **Apple iOS 27 to Be No-Frills 'Snow Leopard' Update, Other Than New AI**\n   - 출처: Hacker News\n   - 링크: https://www.bloomberg.com/news/newsletters/2025-11-23/apple-ios-27-snow-leopard-like-quality-focus-ai-features-tim-cook-retirement-mibq7jv8\n\n21. **팝스타로 산다는 것의 현실**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24555\n\n22. **40년 전의 뉴스, 오늘의 시점에서 다시 읽는 Forty.News**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24554\n\n23. **중국, 토륨으로부터 우라늄을 ‘증식’해 에너지 자립의 이정표 달성**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24553\n\n24. **초음파로 냄새를 유도했다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24552\n\n25. **뉴멕시코, 미국 최초로 모든 가정에 \"무료 보육 서비스\" 개방**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24551\n\n26. **슈퍼맨 오리지널 만화책, 사상 최고가 9.12백만 달러에 낙찰**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24550\n\n27. **에이전트 설계는 여전히 어렵다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24549\n\n28. **브라우저 핑거프린팅의 프라이버시 악몽**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24548\n\n29. **RegreSQL - SQL 쿼리의 회귀 테스트를 자동화하는 도구**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24547\n\n30. **LAPD 헬리콥터 추적기 – 실시간 경찰 항공 모니터링 및 비용 계산기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24546\n\n\n",
+  "articles": [
+    {
+      "title": "Show HN: Fuzzy-redirect preventing 404s by auto-redirect to closest valid route",
+      "link": "https://github.com/Kuberwastaken/fuzzy-redirect",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T14:30:58Z",
+      "description": "\n\u003cp\u003eneeded this for some of my own websites so I made my very first npm library today :)\u003cp\u003ethe idea is pretty simple but useful - if a user lands on your website and encounters a 404, this uses a basic fuzzy URL matching to redirect to the closest valid URL\nvery low effort to set up, just 46kb, no dependencies and I'm quite happy with it !\u003cp\u003ehappy to hear feedback/ potential improvements\u003cp\u003e\u003ca href=\"https://www.npmjs.com/package/fuzzy-redirect\" rel=\"nofollow\"\u003ehttps://www.npmjs.com/package/fuzzy-redirect\u003c/a\u003e\n\u003ca href=\"https://github.com/Kuberwastaken/fuzzy-redirect\" rel=\"nofollow\"\u003ehttps://github.com/Kuberwastaken/fuzzy-redirect\u003c/a\u003e\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46023832\"\u003ehttps://news.ycombinator.com/item?id=46023832\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "'The public has been lied to': made documentary insists aliens exist",
+      "link": "https://www.theguardian.com/film/2025/nov/22/age-of-disclosure-documentary-aliens",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T14:29:59Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.theguardian.com/film/2025/nov/22/age-of-disclosure-documentary-aliens\"\u003ehttps://www.theguardian.com/film/2025/nov/22/age-of-disclosure-documentary-aliens\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46023827\"\u003ehttps://news.ycombinator.com/item?id=46023827\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Doge Succession Drama Elon Musk Left Behind",
+      "link": "https://www.politico.com/news/magazine/2025/11/21/doge-elon-musk-succession-00641110",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T14:28:29Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.politico.com/news/magazine/2025/11/21/doge-elon-musk-succession-00641110\"\u003ehttps://www.politico.com/news/magazine/2025/11/21/doge-elon-musk-succession-00641110\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46023813\"\u003ehttps://news.ycombinator.com/item?id=46023813\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: MCP setup sucks – so I built a zero-config client with 2,700 agents",
+      "link": "https://www.trylyra.com/mcp",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T14:27:03Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.trylyra.com/mcp\"\u003ehttps://www.trylyra.com/mcp\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46023805\"\u003ehttps://news.ycombinator.com/item?id=46023805\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "A podcast host's guide to getting on podcasts",
+      "link": "https://scalingdevtools.com/blog/a-podcast-hosts-guide-to-getting-on-podcasts",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T14:26:53Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://scalingdevtools.com/blog/a-podcast-hosts-guide-to-getting-on-podcasts\"\u003ehttps://scalingdevtools.com/blog/a-podcast-hosts-guide-to-getting-on-podcasts\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46023803\"\u003ehttps://news.ycombinator.com/item?id=46023803\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Watching People Experience Their AI Eureka Moment",
+      "link": "https://www.rickmanelius.com/p/watching-people-experience-their",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T14:26:19Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.rickmanelius.com/p/watching-people-experience-their\"\u003ehttps://www.rickmanelius.com/p/watching-people-experience-their\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46023795\"\u003ehttps://news.ycombinator.com/item?id=46023795\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Hey America, Are You Ready for Fair Taxation?",
+      "link": "https://optimisteconomy.substack.com/p/tax-cuts-kathryn-edwards",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T14:25:38Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://optimisteconomy.substack.com/p/tax-cuts-kathryn-edwards\"\u003ehttps://optimisteconomy.substack.com/p/tax-cuts-kathryn-edwards\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46023789\"\u003ehttps://news.ycombinator.com/item?id=46023789\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Stem cell therapy helps AMD patients see again",
+      "link": "https://www.sciencedaily.com/releases/2025/11/251121090736.htm",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T14:19:15Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.sciencedaily.com/releases/2025/11/251121090736.htm\"\u003ehttps://www.sciencedaily.com/releases/2025/11/251121090736.htm\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46023739\"\u003ehttps://news.ycombinator.com/item?id=46023739\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "It's Not Always DNS: Exploring How Name Resolution Works",
+      "link": "https://cefboud.com/posts/dns-name-resolution-deep-dive-internals/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T14:18:08Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://cefboud.com/posts/dns-name-resolution-deep-dive-internals/\"\u003ehttps://cefboud.com/posts/dns-name-resolution-deep-dive-internals/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46023732\"\u003ehttps://news.ycombinator.com/item?id=46023732\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Subtle Signs That You Are Ready to Retire",
+      "link": "https://www.wsj.com/lifestyle/careers/retirement-ready-when-signs-d0c99bd3",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T14:13:25Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.wsj.com/lifestyle/careers/retirement-ready-when-signs-d0c99bd3\"\u003ehttps://www.wsj.com/lifestyle/careers/retirement-ready-when-signs-d0c99bd3\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46023703\"\u003ehttps://news.ycombinator.com/item?id=46023703\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 2\u003c/p\u003e\n"
+    },
+    {
+      "title": "Bagaimana Cara Menghubungi CS Batik Air",
+      "link": "https://news.ycombinator.com/item?id=46023695",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T14:11:52Z",
+      "description": "\n\u003cp\u003eAnda dapat menghubungi Cs Batik Air; 0811-323-170 melalui nomor WhatsApp O811323170 layanan pengaduan Reschedule tiket 24Jam.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46023695\"\u003ehttps://news.ycombinator.com/item?id=46023695\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "WordPress Deep Dive",
+      "link": "https://wiktorjarosz.com/wordpress/introduction/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T14:10:37Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://wiktorjarosz.com/wordpress/introduction/\"\u003ehttps://wiktorjarosz.com/wordpress/introduction/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46023688\"\u003ehttps://news.ycombinator.com/item?id=46023688\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "CS Batik Air? +62.811.323.170",
+      "link": "https://news.ycombinator.com/item?id=46023677",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T14:09:07Z",
+      "description": "\n\u003cp\u003eCustomer Service Batik Air di nomor; 0811323170 layanan whatsapp dapat diakses 24 jam setiap hari.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46023677\"\u003ehttps://news.ycombinator.com/item?id=46023677\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Liballocs: Meta-level run-time services for Unix processes a.k.a. dragging U",
+      "link": "https://github.com/stephenrkell/liballocs",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T14:07:15Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/stephenrkell/liballocs\"\u003ehttps://github.com/stephenrkell/liballocs\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46023667\"\u003ehttps://news.ycombinator.com/item?id=46023667\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Bossware rises as employers keep closer tabs on remote staff",
+      "link": "https://www.theregister.com/2025/11/23/bossware_monitor_remote_employees/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T14:07:11Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.theregister.com/2025/11/23/bossware_monitor_remote_employees/\"\u003ehttps://www.theregister.com/2025/11/23/bossware_monitor_remote_employees/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46023666\"\u003ehttps://news.ycombinator.com/item?id=46023666\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Zig's defer/errdefer for c99 and gnu11 C via macros",
+      "link": "https://github.com/Trainraider/defer_h",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T14:04:35Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/Trainraider/defer_h\"\u003ehttps://github.com/Trainraider/defer_h\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46023647\"\u003ehttps://news.ycombinator.com/item?id=46023647\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "What Is a Shader?",
+      "link": "https://www.makingsoftware.com/chapters/shaders#email",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T13:59:34Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.makingsoftware.com/chapters/shaders#email\"\u003ehttps://www.makingsoftware.com/chapters/shaders#email\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46023614\"\u003ehttps://news.ycombinator.com/item?id=46023614\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Building a no-code browser automation system for OSINT",
+      "link": "https://github.com/FauvidoTechnologies/PyBrowserAutomation",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T13:59:04Z",
+      "description": "\n\u003cp\u003eI have been working on a browser automation system for OSINT analysts. I took this up because the tools that exist today have a few problems:\u003cp\u003e1. They require a little more precise notions of what needs to be done by the system (like, go here, click here, then do this, then do that etc.)\u003cp\u003e2. To perform complex tasks, the few tools that exist, they need some knowledge of the system itself (like telling it to call a specific function or a class etc.)\u003cp\u003eMy goal with this project (I call it `pyba`) was to abstract everything from the user's side. I have two \"exploratory\" modes built into it, these are for Depth First Search (wherein, it will pick one train of thought, and execute that in full, then revert), or Breadth First Search (where it executes multiple tangential plans in parallel).\u003cp\u003eAll an analyst has to do is type out in words, everything they already know and can share, and what all they'd like to find out more. To ensure that there are no roadblocks in this journey, I also have hardcoded logins, which read your credentials from the environment and log you in to websites like gmail, facebook and instagram (so your credentials never go to the LLM).\u003cp\u003eAnd of course, you can use it for normal stuff as well (like tell it to scroll reels for you if you want)!\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46023610\"\u003ehttps://news.ycombinator.com/item?id=46023610\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Nano Banana Pro (4K) at $0.04/image",
+      "link": "https://seedreamimage.com/nano-banana-pro",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T13:59:03Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://seedreamimage.com/nano-banana-pro\"\u003ehttps://seedreamimage.com/nano-banana-pro\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46023608\"\u003ehttps://news.ycombinator.com/item?id=46023608\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Apple iOS 27 to Be No-Frills 'Snow Leopard' Update, Other Than New AI",
+      "link": "https://www.bloomberg.com/news/newsletters/2025-11-23/apple-ios-27-snow-leopard-like-quality-focus-ai-features-tim-cook-retirement-mibq7jv8",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-23T13:57:23Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.bloomberg.com/news/newsletters/2025-11-23/apple-ios-27-snow-leopard-like-quality-focus-ai-features-tim-cook-retirement-mibq7jv8\"\u003ehttps://www.bloomberg.com/news/newsletters/2025-11-23/apple-ios-27-snow-leopard-like-quality-focus-ai-features-tim-cook-retirement-mibq7jv8\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46023599\"\u003ehttps://news.ycombinator.com/item?id=46023599\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "팝스타로 산다는 것의 현실",
+      "link": "https://news.hada.io/topic?id=24555",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-23T21:33:30+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e팝스타의 삶\u003c/strong\u003e은 화려함과 공허함이 공존하는 구조로, 음악 외의 다양한 창작 영역과 맞닿아 있음\u003c/li\u003e\n\u003cli\u003e파티, 명품, 여행, 팬들의 열정 등으로 \u003cstrong\u003e특권적 즐거움\u003c/strong\u003e을 누리지만, 동시에 그 허무함과 어색함을 자주 마주함\u003c/li\u003e\n\u003cli\u003e공항 라운지나 대기실 같은 \u003cstrong\u003e무정한 중...\u003c/p\u003e"
+    },
+    {
+      "title": "40년 전의 뉴스, 오늘의 시점에서 다시 읽는 Forty.News",
+      "link": "https://news.hada.io/topic?id=24554",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-23T17:32:55+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eForty.News\u003c/strong\u003e는 40년 전의 주요 뉴스를 오늘 날짜에 맞춰 재발행하는 \u003cstrong\u003e‘시간 지연형 뉴스 서비스’\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e1985년 11월의 기사들이 현재 시점에서 하루 단위로 공개되어, \u003cstrong\u003e역사적 사건을 실시간처럼 체험\u003c/strong\u003e 가능\u003c/li\u003e\n\u003cli\u003e정치, 과학, 사회, 외교 등 다양한...\u003c/p\u003e"
+    },
+    {
+      "title": "중국, 토륨으로부터 우라늄을 ‘증식’해 에너지 자립의 이정표 달성",
+      "link": "https://news.hada.io/topic?id=24553",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-23T14:37:34+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e중국 과학원이 \u003cstrong\u003e고비 사막에서 개발한 실험용 원자로\u003c/strong\u003e가 토륨을 우라늄으로 전환하는 연료 변환에 성공\u003c/li\u003e\n\u003cli\u003e이 \u003cstrong\u003e2메가와트급 액체연료 토륨 기반 용융염 원자로(TMSR)\u003c/strong\u003e 는 세계에서 유일하게 토륨 연료를 실제로 장전·사용한 사례\u003c/li\u003e\n\u003cli\u003e실험 결과는 \u003cstrong\u003e용융염 원자...\u003c/p\u003e"
+    },
+    {
+      "title": "초음파로 냄새를 유도했다",
+      "link": "https://news.hada.io/topic?id=24552",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-23T11:33:04+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e초음파를 이용해 \u003cstrong\u003e뇌의 후각 처리 영역을 자극\u003c/strong\u003e하여 사람에게 특정 냄새 감각을 유도한 실험 결과\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e이마에 트랜스듀서를 부착\u003c/strong\u003e해 초음파를 후각망울 방향으로 집중시켰으며, 두 사람에게서 네 가지 냄새(신선한 공기, 쓰레기, 오존, 장작불)를 재현\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong...\u003c/p\u003e"
+    },
+    {
+      "title": "뉴멕시코, 미국 최초로 모든 가정에 \"무료 보육 서비스\" 개방",
+      "link": "https://news.hada.io/topic?id=24551",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-23T09:47:11+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e뉴멕시코 주가 \u003cstrong\u003e미국 최초로 전 주민 대상 무료 보육 제도\u003c/strong\u003e를 시행\u003c/li\u003e\n\u003cli\u003e소득 수준과 관계없이 모든 가정이 \u003cstrong\u003e보육비 지원\u003c/strong\u003e을 받을 수 있는 구조\u003c/li\u003e\n\u003cli\u003e주 정부는 \u003cstrong\u003e보육 접근성 확대와 부모의 경제활동 지원\u003c/strong\u003e을 목표로 함\u003c/li\u003e\n\u003cli\u003e기존에는 저소득층 중심...\u003c/p\u003e"
+    },
+    {
+      "title": "슈퍼맨 오리지널 만화책, 사상 최고가 9.12백만 달러에 낙찰",
+      "link": "https://news.hada.io/topic?id=24550",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-23T09:44:09+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e미국 캘리포니아의 한 다락방에서 발견된 \u003cstrong\u003e1939년판 슈퍼맨 1호 원본\u003c/strong\u003e이 경매에서 9.12백만 달러(약 7백만 파운드)에 판매되어 사상 최고가 만화책 기록을 경신\u003c/li\u003e\n\u003cli\u003e세 형제가 어머니의 유품을 정리하던 중 \u003cstrong\u003e신문 더미 아래 상자 속에서 보존 상태가 뛰어난 슈퍼맨 1호\u003c/strong\u003e를 ...\u003c/p\u003e"
+    },
+    {
+      "title": "에이전트 설계는 여전히 어렵다",
+      "link": "https://news.hada.io/topic?id=24549",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-23T09:41:08+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e에이전트 구축 과정\u003c/strong\u003e은 여전히 복잡하며, SDK 추상화가 실제 도구 사용 단계에서 자주 깨지는 문제 존재\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e캐싱 관리\u003c/strong\u003e는 플랫폼마다 달라 수동 관리가 더 예측 가능하고 효율적이며, Anthropic SDK의 명시적 캐시 포인트 방식이 선호됨\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e강화 루프(...\u003c/p\u003e"
+    },
+    {
+      "title": "브라우저 핑거프린팅의 프라이버시 악몽",
+      "link": "https://news.hada.io/topic?id=24548",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-23T09:38:08+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e브라우저 지문 채취(browser fingerprinting)\u003c/strong\u003e 는 쿠키나 VPN으로도 막기 어려운 \u003cstrong\u003e심각한 추적 기술\u003c/strong\u003e로, 사용자의 환경 정보를 조합해 고유 식별자를 생성\u003c/li\u003e\n\u003cli\u003e운영체제, 브라우저 버전, 언어, 시간대, 폰트, 확장 기능, \u003cstrong\u003e캔버스 렌더링 결과\u003c/strong\u003e 등 다양한 ...\u003c/p\u003e"
+    },
+    {
+      "title": "RegreSQL - SQL 쿼리의 회귀 테스트를 자동화하는 도구",
+      "link": "https://news.hada.io/topic?id=24547",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-23T09:31:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003ePostgreSQL용 SQL 회귀 테스트 도구\u003c/strong\u003e로, 쿼리 결과가 변경되지 않았는지 자동으로 비교\u003c/li\u003e\n\u003cli\u003eSQL 파일을 스캔해 쿼리별 \u003cstrong\u003eexpected JSON 결과\u003c/strong\u003e, \u003cstrong\u003eEXPLAIN 비용 baseline\u003c/strong\u003e, \u003cstrong\u003e테스트 plan\u003c/strong\u003e을 생성하고 관리\u003c/li\u003e\n\u003cli\u003eYAML 기반 \u003cstrong\u003eFixtur...\u003c/p\u003e"
+    },
+    {
+      "title": "LAPD 헬리콥터 추적기 – 실시간 경찰 항공 모니터링 및 비용 계산기",
+      "link": "https://news.hada.io/topic?id=24546",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-23T06:37:24+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e로스앤젤레스 경찰국(LAPD)\u003c/strong\u003e 헬리콥터의 실시간 비행 활동과 \u003cstrong\u003e운영 비용\u003c/strong\u003e을 추적하는 웹 기반 도구\u003c/li\u003e\n\u003cli\u003e활성 비행, 비행 시간, 시간당 운영비를 실시간으로 표시하며 \u003cstrong\u003e납세자 부담 비용\u003c/strong\u003e을 계산\u003c/li\u003e\n\u003cli\u003e2023년 \u003cstrong\u003eMejia 감사 보고서\u003c/strong\u003e에 따...\u003c/p\u003e"
+    }
+  ],
+  "generatedAt": "2025-11-23T23:40:11.345910373+09:00"
+}
