@@ -10,15 +10,15 @@ go run .
 go build -o daily-feed .
 
 # Run with custom options
-go run . --preset developer --feeds feeds.csv --cutoff 24 --timeout 15
+go run . --preset magazine --feeds feeds.csv --cutoff 24 --timeout 15
 
 # Run tests
 go test ./...
 go test ./pkg/feed/       # Run feed package tests specifically
 
 # Development with specific presets
-go run . --preset general | pbcopy       # Copy output to clipboard (macOS)
-go run . --preset community > output.md  # Save to file
+go run . --preset magazine | pbcopy       # Copy output to clipboard (macOS)
+go run . --preset magazine > output.md    # Save to file
 
 # FCM push notifications
 go run cmd/fcm-send/main.go --token "FCM_TOKEN" --title "Test" --body "Hello"
@@ -50,7 +50,7 @@ Daily Feed is a Go-based RSS/Atom feed aggregator with AI-powered summarization:
 ### Key Features
 
 - **Multi-format support**: RSS 2.0 and Atom 1.0 feeds
-- **2 summary presets**: `general`, `community`
+- **단일 요약 프리셋**: `magazine`
 - **Robust error handling**: Custom error types with wrapping
 - **Concurrent processing**: Goroutines for feed fetching
 - **XML entity fixing**: Handles malformed XML entities
@@ -66,7 +66,7 @@ Command-line flags:
 - `--model`: Gemini model (default: `gemini-3-pro-preview`)
 - `--cutoff`: Hours to look back (default: 24)
 - `--timeout`: HTTP timeout seconds (default: 15)
-- `--preset`: Summary style (default: `general`), available: `general`, `community`
+- `--preset`: Summary style (default: `magazine`), available: `magazine`
 
 ## Testing
 

@@ -155,7 +155,7 @@ go run cmd/fcm-send/main.go -topic "daily-feed" -title "테스트" -body "테스
 
 # CLI 도구 빌드 및 실행
 go build -o daily-feed
-./daily-feed --preset developer --feeds feeds.csv
+./daily-feed --preset magazine --feeds feeds.csv
 ```
 
 ### 웹 UI
@@ -192,7 +192,7 @@ firebase deploy --only functions
 ```json
 {
   "date": "2025-01-15",
-  "preset": "developer", 
+  "preset": "magazine",
   "summary": "마크다운 형식의 AI 요약...",
   "prompt": {
     "system": "시스템 프롬프트...",

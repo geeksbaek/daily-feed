@@ -442,8 +442,8 @@ export class DailyFeedApp extends LitElement {
 
   loadPresetFromStorage() {
     try {
-      const savedPreset = localStorage.getItem('daily-feed-preset');
-      const validPresets = ['general', 'casual', 'community', 'default', 'developer'];
+    const savedPreset = localStorage.getItem('daily-feed-preset');
+    const validPresets = ['magazine'];
       
       if (savedPreset && validPresets.includes(savedPreset)) {
         return savedPreset;
@@ -452,7 +452,7 @@ export class DailyFeedApp extends LitElement {
       console.warn('프리셋 로드 실패:', error);
     }
     
-    return 'general'; // 기본값
+    return 'magazine'; // 기본값
   }
 
   savePresetToStorage(preset) {
@@ -485,7 +485,7 @@ export class DailyFeedApp extends LitElement {
       return;
     }
     
-    this.availablePresets = this.indexData[this.selectedDate].presets || [];
+    this.availablePresets = (this.indexData[this.selectedDate].presets || []).filter(preset => preset === 'magazine');
     
     // 현재 선택된 프리셋이 사용 가능한 목록에 없으면 첫 번째 프리셋으로 변경
     if (this.availablePresets.length > 0 && !this.availablePresets.includes(this.currentPreset)) {
@@ -576,7 +576,7 @@ export class DailyFeedApp extends LitElement {
       this.showLoading('데이터를 불러오는 중...');
       
       const basePath = this.getBasePath();
-      const presets = this.availablePresets || ['general'];
+    const presets = this.availablePresets && this.availablePresets.length > 0 ? this.availablePresets : ['magazine'];
       const newData = { date: this.selectedDate, summaries: {} };
       
       const promises = presets.map(async preset => {

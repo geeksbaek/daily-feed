@@ -453,7 +453,7 @@ export class ContentViewer extends LitElement {
   constructor() {
     super();
     this.data = {};
-    this.preset = 'general';
+    this.preset = 'magazine';
     this.showPromptModal = false;
     this.originalBodyOverflow = '';
     this.originalBodyPosition = '';
@@ -526,11 +526,7 @@ export class ContentViewer extends LitElement {
     }
 
     const presetLabels = {
-      'general': '📰 뉴스',
-      'casual': '💬 캐주얼',
-      'community': '🏠 커뮤니티',
-      'default': '🔍 기본',
-      'developer': '👨‍💻 개발자'
+      'magazine': '📰 매거진'
     };
 
     return html`
