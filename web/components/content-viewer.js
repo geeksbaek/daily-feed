@@ -293,9 +293,9 @@ export class ContentViewer extends LitElement {
     .markdown-content blockquote {
       padding: 16px 20px;
       margin-bottom: 24px;
-      color: #4a5568;
-      border-left: 4px solid #4299e1;
-      background-color: #f7fafc;
+      color: var(--blockquote-text);
+      border-left: 4px solid var(--blockquote-border);
+      background-color: var(--blockquote-bg);
       border-radius: 0 8px 8px 0;
       font-size: 16px;
       line-height: 1.8;
@@ -350,16 +350,17 @@ export class ContentViewer extends LitElement {
     .markdown-content table th,
     .markdown-content table td {
       padding: 6px 13px;
-      border: 1px solid #d0d7de;
+      border: 1px solid var(--table-border);
+      color: var(--text-primary);
     }
 
     .markdown-content table th {
       font-weight: 600;
-      background-color: #f6f8fa;
+      background-color: var(--table-header-bg);
     }
 
     .markdown-content table tr:nth-child(even) {
-      background-color: #f6f8fa;
+      background-color: var(--table-row-alt-bg);
     }
 
     .markdown-content hr {

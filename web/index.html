@@ -41,7 +41,7 @@
         // 인용문법 렌더러 설정
         const renderer = new marked.Renderer();
         renderer.blockquote = function(quote) {
-            return '<blockquote style="border-left: 3px solid #d1d9e0; padding-left: 16px; margin-left: 0; color: #57606a; font-style: italic;">' + quote + '</blockquote>';
+            return `<blockquote class="markdown-blockquote">${quote}</blockquote>`;
         };
         marked.setOptions({ renderer: renderer });
     </script>
@@ -71,6 +71,12 @@
             --status-offline-bg: #fff3cd;
             --status-offline-border: #ffeaa7;
             --status-offline-text: #856404;
+            --blockquote-bg: #f7fafc;
+            --blockquote-border: #4299e1;
+            --blockquote-text: #4a5568;
+            --table-border: #d0d7de;
+            --table-header-bg: #f6f8fa;
+            --table-row-alt-bg: #f6f8fa;
         }
 
         /* 다크 모드 */
@@ -97,6 +103,12 @@
                 --status-offline-bg: #2d2a1e;
                 --status-offline-border: #d29922;
                 --status-offline-text: #f2cc60;
+                --blockquote-bg: #161b22;
+                --blockquote-border: #58a6ff;
+                --blockquote-text: #c9d1d9;
+                --table-border: #30363d;
+                --table-header-bg: #161b22;
+                --table-row-alt-bg: #0f1720;
             }
         }
 
