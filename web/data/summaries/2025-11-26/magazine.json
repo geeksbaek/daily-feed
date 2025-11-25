@@ -1,0 +1,496 @@
+{
+  "date": "2025-11-26",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2025년 11월 25일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** 차세대 이미지 모델 **FLUX.2**의 전방위적 출시와 **OpenAI-JetBrains**의 코딩 혁신 파트너십, 그리고 **Google**의 새로운 TPU Ironwood 공개가 기술 생태계를 뒤흔들고 있습니다.\n\n---\n\n## 🏆 Top Story: 생성형 AI 이미지의 새로운 표준\n### 🎨 FLUX.2 출시: NVIDIA, Cloudflare, Hugging Face 동시 지원\n오픈 소스 이미지 생성 모델의 강자 FLUX가 버전 2로 돌아왔습니다. 이번 출시는 단순한 모델 공개를 넘어, 주요 인프라 기업들의 즉각적인 지원 사격이 돋보입니다.\n\n*   **광폭 행보:** Hugging Face의 호스팅은 물론, Cloudflare Workers AI를 통한 엣지 배포, NVIDIA RTX GPU에 최적화된 로컬 구동까지 동시에 지원합니다.\n*   **성능 향상:** 이전 버전 대비 프롬프트 이해도와 이미지 디테일이 비약적으로 상승했으며, 특히 상업적 이용이 가능한 라이선스 정책이 개발자들의 환영을 받고 있습니다.\n*   **접근성:** 고사양 서버뿐만 아니라 로컬 PC(RTX 시리즈)에서도 원활하게 돌아가도록 경량화 및 최적화가 이루어졌습니다.\n\n\u003e **Key Point:** FLUX.2는 '접근성'과 '성능' 두 마리 토끼를 잡으며, Midjourney와 DALL-E가 장악한 시장에서 오픈 모델의 강력한 대안으로 자리 잡았습니다. [^4][^54][^61]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. OpenAI와 JetBrains가 그리는 '코딩의 미래'\nOpenAI가 이례적으로 JetBrains의 내부 이야기를 다룬 리포트를 공개했습니다. 이는 단순한 고객 사례를 넘어, 세계 최대 AI 기업과 세계 최대 IDE 기업의 전략적 동맹을 시사합니다.\n- **What:** JetBrains의 2025년 비전과 OpenAI 모델의 깊은 통합을 다룹니다.\n- **Why:** AI 코딩 도구(Cursor 등)의 부상에 맞서, 기존 IDE 생태계의 주도권을 유지하기 위함입니다.\n- **Impact:** IntelliJ를 비롯한 JetBrains 도구들이 단순한 자동 완성을 넘어, 프로젝트 전체를 이해하는 'AI 에이전트'로 진화할 전망입니다. [^8]\n\n### 2. Google의 하드웨어 반격: TPU 'Ironwood' \u0026 에이전트\nGoogle이 자체 AI 칩셋인 TPU의 최신 버전 'Ironwood'를 공개하고, 이를 활용한 실생활 AI 기능을 선보였습니다.\n- **What:** 전력 효율과 추론 속도를 극대화한 Ironwood TPU 발표 및 쇼핑/예약 대행 AI 에이전트 기능 출시.\n- **Why:** NVIDIA 의존도를 줄이고, 자사 서비스(Gemini)의 운영 비용을 낮추기 위한 필수적인 하드웨어 혁신입니다.\n- **Impact:** 더 빠르고 저렴한 AI 추론이 가능해지며, Google 검색과 쇼핑 경험이 '대화형'에서 '실행형'으로 바뀝니다. [^12][^14][^30]\n\n### 3. GitHub의 '에이전트 보안' 선언\nAI가 코드를 직접 수정하는 시대, GitHub가 'Agentic Security' 원칙을 발표했습니다.\n- **What:** 자율 AI 에이전트가 코드를 생성하고 배포할 때 지켜야 할 보안 가이드라인과 기술적 안전장치.\n- **Why:** AI가 만든 취약점이 소프트웨어 공급망 전체를 위협할 수 있다는 우려가 커지고 있기 때문입니다.\n- **Impact:** 기업들이 안심하고 Copilot과 같은 AI 코딩 에이전트를 도입할 수 있는 기준점이 될 것입니다. [^3][^32]\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n개발자와 엔지니어를 위한 핵심 도구와 논문을 정리했습니다.\n\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **IDE** | **VS Code Insiders (v1.107)** | 2025년 11월 최신 빌드. 새로운 편집 기능과 성능 최적화 포함. [^1] |\n| **IDE** | **IntelliJ IDEA Open Source** | 커뮤니티 기여를 쉽게 만들기 위한 오픈소스 프로젝트 구조 단순화. [^60] |\n| **Tool** | **Docker Sandboxes** | AI 코딩 에이전트의 안전한 실행을 위한 격리 환경(Sandbox) 기술. [^9] |\n| **Tool** | **MCP Specification** | Model Context Protocol의 2025-11-25 최신 명세. AI 컨텍스트 표준. [^44] |\n| **Code** | **Rs-Utcp** | Universal Tool Calling Protocol의 Rust 구현체. [^45] |\n| **Code** | **unegg** | macOS/Linux에서 .egg 파일을 쉽게 압축 해제하는 CLI 도구. [^22] |\n| **Paper** | **Continuous Batching** | LLM 추론 속도를 높이는 연속 배치(Continuous batching)의 원리 심층 분석. [^5] |\n| **Paper** | **Monty** | 신피질 원리를 따르는 감각운동(sensorimotor) 학습 시스템. [^33] |\n| **Lib** | **PyTorch Memory Solver** | 피크 RAM 사용량을 20배 줄여주는 새로운 메모리 예산 솔버. [^34] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n\n#### 🤖 AI \u0026 ML Updates\n*   **Guido van Rossum 인터뷰**: 파이썬 창시자가 말하는 가독성, AI, 그리고 프로그래밍의 미래. [^2]\n*   **LangChain Deep Agents**: 심층 에이전트(Deep Agents)에서 스킬(Skills)을 효과적으로 활용하는 방법. [^53]\n*   **Google Flow**: 콘텐츠 제작 흐름을 개선하는 4가지 새로운 기능. [^13][^29]\n*   **DeepMind 다큐멘터리**: 'The Thinking Game' 다큐멘터리 유튜브 무료 공개. [^15][^31]\n*   **Google India AI Fund**: 인도의 AI 혁신 가속화를 위한 펀드 및 프로그램 런칭. [^17]\n*   **AI와 학교 교육**: AI 도입이 학교 현장에 미치는 실질적 영향에 대한 논의. [^18]\n\n#### ☁️ Cloud \u0026 DevOps \u0026 Infra\n*   **OpenAI Data Residency**: 전 세계 비즈니스 고객을 위한 데이터 거주지(Residency) 옵션 확대. [^6]\n*   **Docker Supply Chain**: 소프트웨어 공급망 보안을 단순화하는 Docker의 접근 방식. [^10]\n*   **Atlassian Updates**: Bitbucket 파이프라인 동적 조건 [^55], Rovo Dev CLI 서브에이전트 [^56], JSM 가상 에이전트 자동화 [^57].\n*   **전략 관리 도구**: CNA 보험 [^58]과 Datasite [^59]의 Atlassian Strategy Collection 도입 사례.\n*   **Fastly \u0026 OpenStreetMap**: 전 세계 사용자에게 지도를 빠르게 제공하기 위한 Fastly 도입. [^43]\n*   **SSD 데이터 손실**: 전원이 꺼진 SSD는 시간이 지나면 데이터를 잃는다는 경고. [^24]\n\n#### 🛡️ Security \u0026 Privacy\n*   **Shai Hulud 공격**: 두 번째 소프트웨어 공급망 공격 개시, 주의 요망. [^27]\n*   **비밀번호 재사용 금지**: 무작위 웹사이트에 비밀번호를 입력하는 습관의 위험성 경고. [^52]\n*   **OpenAI 소송 대응**: 정신 건강 관련 소송에 대한 OpenAI의 공식 입장. [^7]\n\n#### 💻 Dev Culture \u0026 General\n*   **DHH의 백업 철학**: \"백업 없이도 괜찮아\" - 37signals의 독특한 데이터 관리 철학. [^26]\n*   **StackOverflow의 위기**: 커뮤니티가 소유권을 가져야 한다는 주장. [^39]\n*   **정적 사이트 생성기(SSG)**: 왜 SSG는 사용하기 복잡한가에 대한 고찰. [^48]\n*   **DRAM 가격 급등**: 64GB DDR5 메모리 가격이 $600를 돌파, PS5보다 비싸짐. [^23]\n*   **Google Holiday Tips**: Gemini를 활용한 연말 휴가 계획 가이드. [^11][^28]\n*   **Google Arts \u0026 Culture**: AI로 탐험하는 철도 200년의 역사. [^16]\n*   **Hacker News 시뮬레이터**: HN의 토론 분위기를 재현한 시뮬레이터 등장. [^21]\n*   **루비(RuBee)**: 새로운 프로그래밍 언어 혹은 프로젝트 소개. [^19]\n*   **Ad Astra**: 버킷리스트로 나만의 우주를 만드는 서비스 소개. [^20]\n\n#### 🧪 Science \u0026 Society (Hacker News)\n*   **뭄바이 데이터센터**: 석탄 발전 의존으로 인한 뭄바이 대기 오염 문제. [^36]\n*   **개인정보 보호 음성 비서**: 스파이 행위 없는 저렴한 음성 비서 만들기 (2022). [^37]\n*   **Techmeme 의혹**: 특정 기사를 부스팅하기 위해 돈을 받는가에 대한 의문 제기. [^38]\n*   **Google 보험 논란**: 미국인들을 '정크 보험'으로 유도한다는 비판. [^40]\n*   **페니실린 신화**: 페니실린 발견에 얽힌 잘못된 신화 바로잡기. [^41]\n*   **뇌와 신체 내부**: 뇌가 신체 내부 상황을 감지하는 메커니즘 매핑. [^42]\n*   **Windows 2000 NVMe**: 윈도우 2000용 NVMe 드라이버 개발 (x86/Alpha). [^46]\n*   **Techrights 15주년**: 기술 권리 사이트 Techrights의 15주년. [^47]\n*   **AI vs Blockchain**: 신뢰의 미래를 둔 AI와 블록체인의 조용한 전쟁. [^49]\n*   **Unix vs Linux**: 유닉스가 더 대중적이었다면 리눅스 대신 썼을까? [^50]\n*   **아라비아 숫자 트롤**: 우파 인플루언서들이 '아라비아 숫자' 교육 반대에 낚인 영상. [^51]\n*   **아람어 방언**: 앙카와(Ankawa) 지역 신아람어 방언의 아랍어 차용어 연구. [^35]\n*   **보청기 트렌드**: 최신 보청기 제품과 기술 동향. [^25]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘 뉴스는 '**AI의 실체화**'로 요약됩니다. FLUX.2는 이미지 생성의 품질을 높였고, Google의 Ironwood는 이를 뒷받침할 하드웨어이며, OpenAI와 JetBrains의 협력은 AI가 개발 도구 깊숙이 들어왔음을 보여줍니다. 한편, GitHub와 Docker가 강조하는 '에이전트 보안'은 이제 AI 도입의 걸림돌이 '성능'이 아니라 '안전'으로 넘어가고 있음을 시사합니다.\n\n---\n\n### Footnotes\n[^1]: November 2025 Insiders (version 1.107) - https://code.visualstudio.com/updates/v1_107\n[^2]: Why developers still flock to Python - https://github.blog/developer-skills/programming-languages-and-frameworks/why-developers-still-flock-to-python-guido-van-rossum-on-readability-ai-and-the-future-of-programming/\n[^3]: How GitHub’s agentic security principles make our AI agents as secure as possible - https://github.blog/ai-and-ml/github-copilot/how-githubs-agentic-security-principles-make-our-ai-agents-as-secure-as-possible/\n[^4]: Diffusers welcomes FLUX-2 - https://huggingface.co/blog/flux-2\n[^5]: Continuous batching from first principles - https://huggingface.co/blog/continuous_batching\n[^6]: Expanding data residency access to business customers worldwide - https://openai.com/index/expanding-data-residency-access-to-business-customers-worldwide\n[^7]: Our approach to mental health-related litigation - https://openai.com/index/mental-health-litigation-approach\n[^8]: Inside JetBrains—the company reshaping how the world writes code - https://openai.com/index/jetbrains-2025\n[^9]: A New Approach for Coding Agent Safety - https://www.docker.com/blog/docker-sandboxes-a-new-approach-for-coding-agent-safety/\n[^10]: Securing the software supply chain shouldn’t be hard - https://www.docker.com/blog/securing-the-software-supply-chain-shouldnt-be-hard-according-to-thecube-research-docker-makes-it-simple/\n[^11]: The Google guide for holiday help - https://blog.google/technology/ai/holiday-planning-ai-gemini-tips/\n[^12]: Ask Google to call local businesses for you - https://blog.google/products/shopping/how-to-agentic-calling-let-google-call/\n[^13]: 4 ways to refine your content in Flow - https://blog.google/technology/google-labs/flow-refine-videos/\n[^14]: 3 things to know about Ironwood, our latest TPU - https://blog.google/products/google-cloud/ironwood-google-tpu-things-to-know/\n[^15]: Watch ‘The Thinking Game,’ a documentary about Google DeepMind - https://blog.google/technology/google-deepmind/the-thinking-game/\n[^16]: Explore 200 years of the railway with Google Arts \u0026 Culture and AI - https://blog.google/outreach-initiatives/arts-culture/beyond-the-tracks/\n[^17]: Google’s AI Futures Fund and Accel Atoms - https://blog.google/technology/google-labs/accel-atoms-ai-futures-fund/\n[^18]: AI가 학교 교육에 미치는 영향 - https://news.hada.io/topic?id=24609\n[^19]: 루비(RuBee) - https://news.hada.io/topic?id=24608\n[^20]: Show GN: Ad Astra - 버킷리스트로 만드는 나만의 우주 - https://news.hada.io/topic?id=24606\n[^21]: Hacker News 시뮬레이터 - https://news.hada.io/topic?id=24604\n[^22]: Show GN: unegg - https://news.hada.io/topic?id=24603\n[^23]: PS5보다 비싼 64GB DDR5 메모리 - https://news.hada.io/topic?id=24601\n[^24]: 전원이 꺼진 SSD는 서서히 데이터를 잃는다 - https://news.hada.io/topic?id=24600\n[^25]: 보청기 사용자들에게 인기 있는 최신 제품과 기술 - https://news.hada.io/topic?id=24599\n[^26]: 백업 없이도 괜찮아(No backup, no cry) - DHH의 백업 철학 - https://news.hada.io/topic?id=24598\n[^27]: Shai Hulud이 두 번째 공급망 공격을 개시 - https://news.hada.io/topic?id=24597\n[^28]: The Google guide for holiday help (AI Feed) - https://blog.google/technology/ai/holiday-planning-ai-gemini-tips/\n[^29]: 4 ways to refine your content in Flow (AI Feed) - https://blog.google/technology/google-labs/flow-refine-videos/\n[^30]: 3 things to know about Ironwood, our latest TPU (AI Feed) - https://blog.google/products/google-cloud/ironwood-google-tpu-things-to-know/\n[^31]: Watch ‘The Thinking Game’ (DeepMind Feed) - https://blog.google/technology/google-deepmind/the-thinking-game/\n[^32]: How GitHub’s agentic security principles make our AI agents as secure as possible (GitHub Feed) - https://github.blog/ai-and-ml/github-copilot/how-githubs-agentic-security-principles-make-our-ai-agents-as-secure-as-possible/\n[^33]: Monty – a sensorimotor learning system - https://github.com/thousandbrainsproject/tbp.monty\n[^34]: 20x less peak RAM usage - a new PyTorch memory budget solver - https://jedrzej.maczan.pl/2025_11_21_dp_knapsack_sliding_hirschberg\n[^35]: Arabic Loanwords in the Neo-Aramaic Dialect of Ankawa - https://books.openbookpublishers.com/10.11647/obp.0209/ch16.xhtml\n[^36]: Mumbai families suffer as datacentres keep the city hooked on coal - https://www.theguardian.com/technology/2025/nov/24/mumbai-datacentres-coal-air-pollution\n[^37]: An Affordable Voice Assistant That Won't Spy on You (2022) - https://blog.tjll.net/build-your-own-voice-asistant/\n[^38]: Ask HN: Is Techmeme getting paid to boost certain articles? - https://news.ycombinator.com/item?id=46051184\n[^39]: Let go of StackOverflow; communities must take ownership - https://ahelwer.ca/post/2025-11-25-stackoverflow/\n[^40]: Google steers Americans looking for health care into \"junk insurance\" - https://pluralistic.net/2025/11/25/open-season/\n[^41]: The Penicillin Myth - https://www.asimov.press/p/penicillin-myth\n[^42]: Mapping the Brain's Sense of What Goes on Inside the Body - https://www.nytimes.com/2025/11/25/science/brain-neuroscience-interoception.html\n[^43]: OpenStreetMap scales to serve users worldwide with Fastly - https://www.fastly.com/customers/openstreetmap\n[^44]: New Version of the MCP Specification - https://modelcontextprotocol.io/specification/2025-11-25\n[^45]: Show HN: Rs-Utcp, a Rust Implementation of the Universal Tool Calling Protocol - https://github.com/universal-tool-calling-protocol/rs-utcp\n[^46]: NVMe driver for Windows 2000 - https://github.com/techomancer/nvme2k\n[^47]: Techrights the Name Turns 15 - https://techrights.org/n/2025/09/20/Techrights_the_Name_Turns_15.shtml\n[^48]: Why are static site generators so complicated to use? - https://thejollyteapot.com/2024/10/15/why-are-static-site-generators-so-complicated-to-use/\n[^49]: The Silent War Between AI and Blockchain for the Future of Trust - https://thinkmintmedia.blogspot.com/2025/11/the-silent-war-between-ai-and.html\n[^50]: Ask HN: If Unix gets more popular would you use it instead of Linux? - https://news.ycombinator.com/item?id=46051004\n[^51]: Rightwing Influencers Fall for Mamdani's 'Arabic Numerals' in School Troll - https://www.youtube.com/watch?v=zujUUI0WEvk\n[^52]: Stop Putting Your Passwords into Random Websites - https://labs.watchtowr.com/stop-putting-your-passwords-into-random-websites-yes-seriously-you-are-the-problem/\n[^53]: Using skills with Deep Agents - https://blog.langchain.com/using-skills-with-deep-agents/\n[^54]: Partnering with Black Forest Labs to bring FLUX.2 [dev] to Workers AI - https://blog.cloudflare.com/flux-2-workers-ai/\n[^55]: Introducing Dynamic Step Condition for Bitbucket Pipelines - https://www.atlassian.com/blog/bitbucket/introducing-dynamic-step-condition-for-bitbucket-pipelines\n[^56]: Ship faster with focused Subagents in Rovo Dev CLI - https://www.atlassian.com/blog/developer/ship-faster-with-focused-subagents-in-rovo-dev-cli\n[^57]: Automating Customer Support with JSM Virtual Agent - https://www.atlassian.com/blog/atlassian-engineering/automating-customer-support-with-jsm-virtual-agent\n[^58]: How CNA Insurance unified planning with Atlassian’s Strategy Collection - https://www.atlassian.com/blog/strategycollection/how-cna-insurance-unified-planning-with-atlassians-strategy-collection\n[^59]: How Datasite transformed its system of work with Strategy Collection - https://www.atlassian.com/blog/strategycollection/how-datasite-transformed-its-system-of-work-with-strategy-collection\n[^60]: Open-source IntelliJ IDEA: A Simpler Way to Build and Contribute - https://blog.jetbrains.com/idea/2025/11/intellij-idea-open-source/\n[^61]: FLUX.2 Image Generation Models Now Released, Optimized for NVIDIA RTX GPUs - https://blogs.nvidia.com/blog/rtx-ai-garage-flux-2-comfyui/\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **November 2025 Insiders (version 1.107)**\n   - 출처: Visual Studio Code - Code Editing. Redefined.\n   - 링크: https://code.visualstudio.com/updates/v1_107\n\n2. **Why developers still flock to Python: Guido van Rossum on readability, AI, and the future of programming**\n   - 출처: GitHub Blog\n   - 링크: https://github.blog/developer-skills/programming-languages-and-frameworks/why-developers-still-flock-to-python-guido-van-rossum-on-readability-ai-and-the-future-of-programming/\n\n3. **How GitHub’s agentic security principles make our AI agents as secure as possible**\n   - 출처: GitHub Blog\n   - 링크: https://github.blog/ai-and-ml/github-copilot/how-githubs-agentic-security-principles-make-our-ai-agents-as-secure-as-possible/\n\n4. **Diffusers welcomes FLUX-2**\n   - 출처: Hugging Face - Blog\n   - 링크: https://huggingface.co/blog/flux-2\n\n5. **Continuous batching from first principles**\n   - 출처: Hugging Face - Blog\n   - 링크: https://huggingface.co/blog/continuous_batching\n\n6. **Expanding data residency access to business customers worldwide**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/expanding-data-residency-access-to-business-customers-worldwide\n\n7. **Our approach to mental health-related litigation**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/mental-health-litigation-approach\n\n8. **Inside JetBrains—the company reshaping how the world writes code**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/jetbrains-2025\n\n9. **A New Approach for Coding Agent Safety**\n   - 출처: Docker Blog\n   - 링크: https://www.docker.com/blog/docker-sandboxes-a-new-approach-for-coding-agent-safety/\n\n10. **Securing the software supply chain shouldn’t be hard. According to theCUBE Research, Docker makes it simple**\n   - 출처: Docker Blog\n   - 링크: https://www.docker.com/blog/securing-the-software-supply-chain-shouldnt-be-hard-according-to-thecube-research-docker-makes-it-simple/\n\n11. **The Google guide for holiday help**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/technology/ai/holiday-planning-ai-gemini-tips/\n\n12. **Ask Google to call local businesses for you.**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/products/shopping/how-to-agentic-calling-let-google-call/\n\n13. **4 ways to refine your content in Flow**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/technology/google-labs/flow-refine-videos/\n\n14. **3 things to know about Ironwood, our latest TPU**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/products/google-cloud/ironwood-google-tpu-things-to-know/\n\n15. **Watch ‘The Thinking Game,’ a documentary about Google DeepMind, for free on YouTube.**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/technology/google-deepmind/the-thinking-game/\n\n16. **Explore 200 years of the railway with Google Arts \u0026 Culture and AI**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/outreach-initiatives/arts-culture/beyond-the-tracks/\n\n17. **Google’s AI Futures Fund and Accel Atoms are launching a program to accelerate AI innovation in India.**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/technology/google-labs/accel-atoms-ai-futures-fund/\n\n18. **AI가 학교 교육에 미치는 영향**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24609\n\n19. **루비(RuBee)**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24608\n\n20. **Show GN: Ad Astra - 버킷리스트로 만드는 나만의 우주**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24606\n\n21. **Hacker News 시뮬레이터**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24604\n\n22. **Show GN: unegg: macOS과 Linux에서 사용할 수 있는 .egg 파일 압축 해제 CLI 도구**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24603\n\n23. **PS5보다 비싼 64GB DDR5 메모리, DRAM 공급난으로 가격 600달러 돌파**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24601\n\n24. **전원이 꺼진 SSD는 서서히 데이터를 잃는다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24600\n\n25. **보청기 사용자들에게 인기 있는 최신 제품과 기술은 무엇인가요?**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24599\n\n26. **백업 없이도 괜찮아(No backup, no cry) - DHH의 백업 철학**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24598\n\n27. **Shai Hulud이 두 번째 공급망 공격을 개시**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24597\n\n28. **The Google guide for holiday help**\n   - 출처: AI\n   - 링크: https://blog.google/technology/ai/holiday-planning-ai-gemini-tips/\n\n29. **4 ways to refine your content in Flow**\n   - 출처: AI\n   - 링크: https://blog.google/technology/google-labs/flow-refine-videos/\n\n30. **3 things to know about Ironwood, our latest TPU**\n   - 출처: AI\n   - 링크: https://blog.google/products/google-cloud/ironwood-google-tpu-things-to-know/\n\n31. **Watch ‘The Thinking Game,’ a documentary about Google DeepMind, for free on YouTube.**\n   - 출처: Google DeepMind\n   - 링크: https://blog.google/technology/google-deepmind/the-thinking-game/\n\n32. **How GitHub’s agentic security principles make our AI agents as secure as possible**\n   - 출처: The latest on GitHub Copilot - The GitHub Blog\n   - 링크: https://github.blog/ai-and-ml/github-copilot/how-githubs-agentic-security-principles-make-our-ai-agents-as-secure-as-possible/\n\n33. **Monty – a sensorimotor learning system following the principles of the neocortex**\n   - 출처: Hacker News\n   - 링크: https://github.com/thousandbrainsproject/tbp.monty\n\n34. **20x less peak RAM usage - a new PyTorch memory budget solver**\n   - 출처: Hacker News\n   - 링크: https://jedrzej.maczan.pl/2025_11_21_dp_knapsack_sliding_hirschberg\n\n35. **Arabic Loanwords in the Neo-Aramaic Dialect of Ankawa**\n   - 출처: Hacker News\n   - 링크: https://books.openbookpublishers.com/10.11647/obp.0209/ch16.xhtml\n\n36. **Mumbai families suffer as datacentres keep the city hooked on coal**\n   - 출처: Hacker News\n   - 링크: https://www.theguardian.com/technology/2025/nov/24/mumbai-datacentres-coal-air-pollution\n\n37. **An Affordable Voice Assistant That Won't Spy on You (2022)**\n   - 출처: Hacker News\n   - 링크: https://blog.tjll.net/build-your-own-voice-asistant/\n\n38. **Ask HN: Is Techmeme getting paid to boost certain articles?**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=46051184\n\n39. **Let go of StackOverflow; communities must take ownership**\n   - 출처: Hacker News\n   - 링크: https://ahelwer.ca/post/2025-11-25-stackoverflow/\n\n40. **Google steers Americans looking for health care into \"junk insurance\"**\n   - 출처: Hacker News\n   - 링크: https://pluralistic.net/2025/11/25/open-season/\n\n41. **The Penicillin Myth**\n   - 출처: Hacker News\n   - 링크: https://www.asimov.press/p/penicillin-myth\n\n42. **Mapping the Brain's Sense of What Goes on Inside the Body**\n   - 출처: Hacker News\n   - 링크: https://www.nytimes.com/2025/11/25/science/brain-neuroscience-interoception.html\n\n43. **OpenStreetMap scales to serve users worldwide with Fastly**\n   - 출처: Hacker News\n   - 링크: https://www.fastly.com/customers/openstreetmap\n\n44. **New Version of the MCP Specification**\n   - 출처: Hacker News\n   - 링크: https://modelcontextprotocol.io/specification/2025-11-25\n\n45. **Show HN: Rs-Utcp, a Rust Implementation of the Universal Tool Calling Protocol**\n   - 출처: Hacker News\n   - 링크: https://github.com/universal-tool-calling-protocol/rs-utcp\n\n46. **NVMe driver for Windows 2000, targeting both x86 and Alpha AXP platforms**\n   - 출처: Hacker News\n   - 링크: https://github.com/techomancer/nvme2k\n\n47. **Techrights the Name Turns 15**\n   - 출처: Hacker News\n   - 링크: https://techrights.org/n/2025/09/20/Techrights_the_Name_Turns_15.shtml\n\n48. **Why are static site generators so complicated to use?**\n   - 출처: Hacker News\n   - 링크: https://thejollyteapot.com/2024/10/15/why-are-static-site-generators-so-complicated-to-use/\n\n49. **The Silent War Between AI and Blockchain for the Future of Trust**\n   - 출처: Hacker News\n   - 링크: https://thinkmintmedia.blogspot.com/2025/11/the-silent-war-between-ai-and.html\n\n50. **Ask HN: If Unix gets more popular would you use it instead of Linux?**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=46051004\n\n51. **Rightwing Influencers Fall for Mamdani's 'Arabic Numerals' in School Troll [video]**\n   - 출처: Hacker News\n   - 링크: https://www.youtube.com/watch?v=zujUUI0WEvk\n\n52. **Stop Putting Your Passwords into Random Websites (Yes, Seriously, You Are the PR**\n   - 출처: Hacker News\n   - 링크: https://labs.watchtowr.com/stop-putting-your-passwords-into-random-websites-yes-seriously-you-are-the-problem/\n\n53. **Using skills with Deep Agents**\n   - 출처: LangChain Blog\n   - 링크: https://blog.langchain.com/using-skills-with-deep-agents/\n\n54. **Partnering with Black Forest Labs to bring FLUX.2 [dev] to Workers AI**\n   - 출처: Cloudflare Blog\n   - 링크: https://blog.cloudflare.com/flux-2-workers-ai/\n\n55. **Introducing Dynamic Step Condition for Bitbucket Pipelines**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/bitbucket/introducing-dynamic-step-condition-for-bitbucket-pipelines\n\n56. **Ship faster with focused Subagents in Rovo Dev CLI**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/developer/ship-faster-with-focused-subagents-in-rovo-dev-cli\n\n57. **Automating Customer Support with JSM Virtual Agent**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/atlassian-engineering/automating-customer-support-with-jsm-virtual-agent\n\n58. **From static spreadsheets to strategic agility: How CNA Insurance unified planning with Atlassian’s Strategy Collection**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/strategycollection/how-cna-insurance-unified-planning-with-atlassians-strategy-collection\n\n59. **How Datasite transformed its system of work with Strategy Collection**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/strategycollection/how-datasite-transformed-its-system-of-work-with-strategy-collection\n\n60. **Open-source IntelliJ IDEA: A Simpler Way to Build and Contribute to the Community**\n   - 출처: IntelliJ IDEA : IntelliJ IDEA – the IDE for Professional Development in Java and Kotlin | The JetBrains Blog\n   - 링크: https://blog.jetbrains.com/idea/2025/11/intellij-idea-open-source/\n\n61. **FLUX.2 Image Generation Models Now Released, Optimized for NVIDIA RTX GPUs**\n   - 출처: NVIDIA Blog\n   - 링크: https://blogs.nvidia.com/blog/rtx-ai-garage-flux-2-comfyui/\n\n\n",
+  "articles": [
+    {
+      "title": "November 2025 Insiders (version 1.107)",
+      "link": "https://code.visualstudio.com/updates/v1_107",
+      "source": "Visual Studio Code - Code Editing. Redefined.",
+      "category": "tech",
+      "publishedAt": "2025-12-10T17:00:00Z",
+      "description": "\n      \u003cp\u003eLearn what is new in the Visual Studio Code November 2025 Release (1.107).\u003c/p\u003e\n      \u003cp\u003e\u003ca href=\"https://code.visualstudio.com/updates/v1_107\"\u003eRead the full article\u003c/a\u003e\u003c/p\u003e\n    "
+    },
+    {
+      "title": "Why developers still flock to Python: Guido van Rossum on readability, AI, and the future of programming",
+      "link": "https://github.blog/developer-skills/programming-languages-and-frameworks/why-developers-still-flock-to-python-guido-van-rossum-on-readability-ai-and-the-future-of-programming/",
+      "source": "GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2025-11-25T17:00:00Z",
+      "description": "\u003cp\u003eDiscover how Python changed developer culture—and see why it keeps evolving.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/developer-skills/programming-languages-and-frameworks/why-developers-still-flock-to-python-guido-van-rossum-on-readability-ai-and-the-future-of-programming/\"\u003eWhy developers still flock to Python: Guido van Rossum on readability, AI, and the future of programming\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "How GitHub’s agentic security principles make our AI agents as secure as possible",
+      "link": "https://github.blog/ai-and-ml/github-copilot/how-githubs-agentic-security-principles-make-our-ai-agents-as-secure-as-possible/",
+      "source": "GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2025-11-25T16:00:00Z",
+      "description": "\u003cp\u003eLearn more about the agentic security principles that we use to build secure AI products—and how you can apply them to your own agents.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/ai-and-ml/github-copilot/how-githubs-agentic-security-principles-make-our-ai-agents-as-secure-as-possible/\"\u003eHow GitHub\u0026#8217;s agentic security principles make our AI agents as secure as possible\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Diffusers welcomes FLUX-2",
+      "link": "https://huggingface.co/blog/flux-2",
+      "source": "Hugging Face - Blog",
+      "category": "tech",
+      "publishedAt": "2025-11-25T00:00:00Z"
+    },
+    {
+      "title": "Continuous batching from first principles",
+      "link": "https://huggingface.co/blog/continuous_batching",
+      "source": "Hugging Face - Blog",
+      "category": "tech",
+      "publishedAt": "2025-11-25T00:00:00Z"
+    },
+    {
+      "title": "Expanding data residency access to business customers worldwide",
+      "link": "https://openai.com/index/expanding-data-residency-access-to-business-customers-worldwide",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2025-11-25T22:00:00Z",
+      "description": "OpenAI expands data residency for ChatGPT Enterprise, ChatGPT Edu, and the API Platform, enabling eligible customers to store data at rest in-region."
+    },
+    {
+      "title": "Our approach to mental health-related litigation",
+      "link": "https://openai.com/index/mental-health-litigation-approach",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2025-11-25T12:00:00Z",
+      "description": "We’re sharing our approach to mental health-related litigation. O handle sensitive cases with care, transparency, and respect while continuing to strengthen safety and support in ChatGPT."
+    },
+    {
+      "title": "Inside JetBrains—the company reshaping how the world writes code",
+      "link": "https://openai.com/index/jetbrains-2025",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2025-11-25T00:00:00Z",
+      "description": "JetBrains is integrating GPT-5 across its coding tools, helping millions of developers design, reason, and build software faster."
+    },
+    {
+      "title": "A New Approach for Coding Agent Safety",
+      "link": "https://www.docker.com/blog/docker-sandboxes-a-new-approach-for-coding-agent-safety/",
+      "source": "Docker Blog",
+      "category": "tech",
+      "publishedAt": "2025-11-25T15:00:00Z",
+      "description": "Coding agents like Claude Code, Gemini CLI, Codex, Kiro, and OpenCode are changing how developers work. But as these agents become more autonomous with capabilities like deleting repos, modifying files, and accessing secrets, developers face a real problem: how do you give agents enough access to be useful without adding unnecessary risk to your local..."
+    },
+    {
+      "title": "Securing the software supply chain shouldn’t be hard. According to theCUBE Research, Docker makes it simple",
+      "link": "https://www.docker.com/blog/securing-the-software-supply-chain-shouldnt-be-hard-according-to-thecube-research-docker-makes-it-simple/",
+      "source": "Docker Blog",
+      "category": "tech",
+      "publishedAt": "2025-11-25T14:04:33Z",
+      "description": "In today’s software-driven economy, securing software supply chains is no longer optional, it’s mission-critical. Yet enterprises often struggle to balance developer speed and security. According to theCUBE Research, 95% of organizations say Docker improved their ability to identify and remediate vulnerabilities, while 79% rate it highly effective at maintaining compliance with security standards. Docker embeds..."
+    },
+    {
+      "title": "The Google guide for holiday help",
+      "link": "https://blog.google/technology/ai/holiday-planning-ai-gemini-tips/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-11-25T18:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Holiday_Collection_header.max-600x600.format-webp.webp\"\u003eLearn more about using Google products like Gemini, Search, Shopping, Pixel and more over the holidays."
+    },
+    {
+      "title": "Ask Google to call local businesses for you.",
+      "link": "https://blog.google/products/shopping/how-to-agentic-calling-let-google-call/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-11-25T18:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/HowtoaskAgentic_Social.max-600x600.format-webp.webp\"\u003eWe recently released a new agentic calling feature in the U.S. where you can ask Google to call local businesses for you to gather information about what’s available nea…"
+    },
+    {
+      "title": "4 ways to refine your content in Flow",
+      "link": "https://blog.google/technology/google-labs/flow-refine-videos/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-11-25T17:40:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Changetheweather_social.max-600x600.format-webp.webp\"\u003eYou’ll now get more creative control in Flow with new refinement and editing capabilities."
+    },
+    {
+      "title": "3 things to know about Ironwood, our latest TPU",
+      "link": "https://blog.google/products/google-cloud/ironwood-google-tpu-things-to-know/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-11-25T16:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/ironwood-hero.max-600x600.format-webp.webp\"\u003eGoogle’s seventh-gen Tensor Processing Unit is here! Learn what makes Ironwood our most powerful and energy-efficient custom silicon to date."
+    },
+    {
+      "title": "Watch ‘The Thinking Game,’ a documentary about Google DeepMind, for free on YouTube.",
+      "link": "https://blog.google/technology/google-deepmind/the-thinking-game/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-11-25T16:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/The_Thinking_Game-Tribeca_with_.max-600x600.format-webp.webp\"\u003eWe’re bringing “The Thinking Game\" to the Google DeepMind YouTube channel."
+    },
+    {
+      "title": "Explore 200 years of the railway with Google Arts \u0026 Culture and AI",
+      "link": "https://blog.google/outreach-initiatives/arts-culture/beyond-the-tracks/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-11-25T10:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/External_View_of_Locomotion_Shi.max-600x600.format-webp.webp\"\u003eCelebrate the National Railway Museum’s 50th \u0026 the railway’s 200th anniversaries with 1000 artifacts, 360° tours and untold stories."
+    },
+    {
+      "title": "Google’s AI Futures Fund and Accel Atoms are launching a program to accelerate AI innovation in India.",
+      "link": "https://blog.google/technology/google-labs/accel-atoms-ai-futures-fund/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-11-25T00:30:00Z",
+      "description": "\u003cimg src=\"https://i.ytimg.com/vi_webp/WZCJmcq6oHg/maxresdefault.webp\"\u003eGoogle is teaming up with Accel Atoms to launch a new cohort dedicated to kick-starting the next wave of AI innovation in India."
+    },
+    {
+      "title": "AI가 학교 교육에 미치는 영향",
+      "link": "https://news.hada.io/topic?id=24609",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-26T04:38:05+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eAI 도구의 확산\u003c/strong\u003e이 학교 교육 환경에 새로운 변화를 유발\u003c/li\u003e\n\u003cli\u003e학생들이 \u003cstrong\u003e과제 작성과 학습 과정\u003c/strong\u003e에서 AI를 활용할 가능성 증가\u003c/li\u003e\n\u003cli\u003e교사들은 \u003cstrong\u003e평가 방식과 학습 목표\u003c/strong\u003e를 재검토해야 하는 상황\u003c/li\u003e\n\u003cli\u003e교육 기관은 \u003cstrong\u003e윤리적 사용 지침과 기술...\u003c/p\u003e"
+    },
+    {
+      "title": "루비(RuBee)",
+      "link": "https://news.hada.io/topic?id=24608",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-26T04:35:04+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eRuBee\u003c/strong\u003e는 미국 에너지부(DoE) 시설 등에서 사용되는 \u003cstrong\u003e저주파 자기 결합 기반 개인 영역 네트워크(PAN)\u003c/strong\u003e 프로토콜로, 금속이나 물에 의한 차폐에도 강한 \u003cstrong\u003e자산 추적용 무선 기술\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eVisible Assets Inc.(VAI)\u003c/strong\u003e 가 2004년 설립되어 개발...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: Ad Astra - 버킷리스트로 만드는 나만의 우주",
+      "link": "https://news.hada.io/topic?id=24606",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-25T22:26:29+09:00",
+      "description": "\u003cp\u003e안녕하세요, 사이드 프로젝트로 버킷리스트 앱을 하나 만들어 소개드립니다.\u003c/p\u003e\n\u003cp\u003e새해의 다짐, 늘 흐지부지 되지 않으신가요? 뭘 하고 싶었는지 까먹기도 하고, 귀찮아서 미루게 되죠.\u003c/p\u003e\n\u003cp\u003e그래서 친구와 Ad Astra라는 앱을 만들었습니다!\u003cbr /\u003e\n이 앱에서는 각 버킷리스트가 하나의 행성이 되고, 목표를 향해 "
+    },
+    {
+      "title": "Hacker News 시뮬레이터",
+      "link": "https://news.hada.io/topic?id=24604",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-25T21:32:47+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eHacker News 시뮬레이터\u003c/strong\u003e는 실제 Hacker News 게시판을 모방한 \u003cstrong\u003e인터랙티브 웹 버전\u003c/strong\u003e으로, 모든 게시물과 댓글이 \u003cstrong\u003eAI에 의해 생성\u003c/strong\u003e됨\u003c/li\u003e\n\u003cli\u003e게시물 목록에는 \u003cstrong\u003eAsk HN\u003c/strong\u003e, \u003cstrong\u003eShow HN\u003c/strong\u003e, \u003cstrong\u003e뉴스 링크\u003c/strong\u003e, \u003cstrong\u003e기술...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: unegg: macOS과 Linux에서 사용할 수 있는 .egg 파일 압축 해제 CLI 도구",
+      "link": "https://news.hada.io/topic?id=24603",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-25T21:12:47+09:00",
+      "description": "\u003cp\u003e최근에 egg 파일을 압축 해제할 일이 생겼는데, macOS에서 egg 파일 압축을 해제할 수 있는 도구가 마땅치 않아 공개된 포맷 스펙을 기반으로 압축 해제 도구를 만들었습니다.\u003c/p\u003e\n\u003cp\u003e무료 도구 중 Keka는 egg를 지원하지 않고, 반디집X는 제가 가진 파일 압축 해제에 계속 실패할뿐더러 지원이 중단되었기 때문에 직"
+    },
+    {
+      "title": "PS5보다 비싼 64GB DDR5 메모리, DRAM 공급난으로 가격 600달러 돌파",
+      "link": "https://news.hada.io/topic?id=24601",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-25T16:34:12+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eAI 수요 급증\u003c/strong\u003e으로 전 세계 메모리와 저장장치 공급이 소진되며, 일반 소비자용 \u003cstrong\u003eDDR5 RAM 가격이 사상 최고치\u003c/strong\u003e에 도달\u003c/li\u003e\n\u003cli\u003eG.Skill의 \u003cstrong\u003eTrident Z5 Neo 64GB(6000MT/s)\u003c/strong\u003e 키트가 현재 \u003cstrong\u003e599.99달러\u003c/strong\u003e로, PS5 Slim보다 200달러 비싸고 PS5 Pro...\u003c/p\u003e"
+    },
+    {
+      "title": "전원이 꺼진 SSD는 서서히 데이터를 잃는다",
+      "link": "https://news.hada.io/topic?id=24600",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-25T15:33:54+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eSSD의 비휘발성 플래시 메모리\u003c/strong\u003e는 전원이 꺼진 상태에서도 데이터를 유지하지만, 장기간 방치 시 \u003cstrong\u003e전하 손실로 인한 데이터 손상\u003c/strong\u003e이 발생\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eQLC·TLC NAND\u003c/strong\u003e 기반 소비자용 SSD는 전원 없이 각각 약 \u003cstrong\u003e1~3년\u003c/strong\u003e 정도만 안전하게 데이터 보존...\u003c/p\u003e"
+    },
+    {
+      "title": "보청기 사용자들에게 인기 있는 최신 제품과 기술은 무엇인가요?",
+      "link": "https://news.hada.io/topic?id=24599",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-25T14:33:14+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e보청기 사용자\u003c/strong\u003e들이 현재 주목하는 \u003cstrong\u003e최신 제품과 기술 동향\u003c/strong\u003e에 대한 질문 제기\u003c/li\u003e\n\u003cli\u003e다양한 사용자가 \u003cstrong\u003e개인 경험과 추천 모델\u003c/strong\u003e을 공유하는 형태의 토론 구조\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e음질, 배터리 수명, 블루투스 연결성\u003c/strong\u003e 등 실제 사용 편의성 중심의 논...\u003c/p\u003e"
+    },
+    {
+      "title": "백업 없이도 괜찮아(No backup, no cry) - DHH의 백업 철학",
+      "link": "https://news.hada.io/topic?id=24598",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-25T12:14:46+09:00",
+      "description": "\u003cp\u003e\u003cstrong\u003e모든 기기를 일회용으로 취급\u003c/strong\u003e - 컴퓨터를 도난당하거나 분실해도 걱정 없도록 시스템을 구축.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e핵심 전략\u003c/strong\u003e:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eDropbox와 Git으로 중요한 데이터를 모두 동기화\u003c/li\u003e\n\u003cli\u003e전체 디스크 암호화로 보안 유지\u003c/li\u003e\n\u003cli\u003e여러 기기에 로컬 복사본이 자동으로 분산 저장됨"
+    },
+    {
+      "title": "Shai Hulud이 두 번째 공급망 공격을 개시",
+      "link": "https://news.hada.io/topic?id=24597",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-25T11:33:17+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eShai Hulud 2.0\u003c/strong\u003e이 npm 생태계를 다시 공격하며 \u003cstrong\u003eZapier, ENS Domains, AsyncAPI, PostHog, Postman\u003c/strong\u003e 등 주요 프로젝트의 패키지를 감염\u003c/li\u003e\n\u003cli\u003e악성코드는 설치 과정 중 자동 실행되어 \u003cstrong\u003e개발자 시스템과 클라우드 환경의 비밀정보 탈취\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e감염된 시...\u003c/p\u003e"
+    },
+    {
+      "title": "The Google guide for holiday help",
+      "link": "https://blog.google/technology/ai/holiday-planning-ai-gemini-tips/",
+      "source": "AI",
+      "category": "tech",
+      "publishedAt": "2025-11-25T18:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Holiday_Collection_header.max-600x600.format-webp.webp\"\u003eLearn more about using Google products like Gemini, Search, Shopping, Pixel and more over the holidays."
+    },
+    {
+      "title": "4 ways to refine your content in Flow",
+      "link": "https://blog.google/technology/google-labs/flow-refine-videos/",
+      "source": "AI",
+      "category": "tech",
+      "publishedAt": "2025-11-25T17:40:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Changetheweather_social.max-600x600.format-webp.webp\"\u003eYou’ll now get more creative control in Flow with new refinement and editing capabilities."
+    },
+    {
+      "title": "3 things to know about Ironwood, our latest TPU",
+      "link": "https://blog.google/products/google-cloud/ironwood-google-tpu-things-to-know/",
+      "source": "AI",
+      "category": "tech",
+      "publishedAt": "2025-11-25T16:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/ironwood-hero.max-600x600.format-webp.webp\"\u003eGoogle’s seventh-gen Tensor Processing Unit is here! Learn what makes Ironwood our most powerful and energy-efficient custom silicon to date."
+    },
+    {
+      "title": "Watch ‘The Thinking Game,’ a documentary about Google DeepMind, for free on YouTube.",
+      "link": "https://blog.google/technology/google-deepmind/the-thinking-game/",
+      "source": "Google DeepMind",
+      "category": "tech",
+      "publishedAt": "2025-11-25T16:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/The_Thinking_Game-Tribeca_with_.max-600x600.format-webp.webp\"\u003eWe’re bringing “The Thinking Game\" to the Google DeepMind YouTube channel."
+    },
+    {
+      "title": "How GitHub’s agentic security principles make our AI agents as secure as possible",
+      "link": "https://github.blog/ai-and-ml/github-copilot/how-githubs-agentic-security-principles-make-our-ai-agents-as-secure-as-possible/",
+      "source": "The latest on GitHub Copilot - The GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2025-11-25T16:00:00Z",
+      "description": "\u003cp\u003eLearn more about the agentic security principles that we use to build secure AI products—and how you can apply them to your own agents.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/ai-and-ml/github-copilot/how-githubs-agentic-security-principles-make-our-ai-agents-as-secure-as-possible/\"\u003eHow GitHub\u0026#8217;s agentic security principles make our AI agents as secure as possible\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Monty – a sensorimotor learning system following the principles of the neocortex",
+      "link": "https://github.com/thousandbrainsproject/tbp.monty",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-25T21:53:41Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/thousandbrainsproject/tbp.monty\"\u003ehttps://github.com/thousandbrainsproject/tbp.monty\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46051249\"\u003ehttps://news.ycombinator.com/item?id=46051249\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "20x less peak RAM usage - a new PyTorch memory budget solver",
+      "link": "https://jedrzej.maczan.pl/2025_11_21_dp_knapsack_sliding_hirschberg",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-25T21:52:19Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://jedrzej.maczan.pl/2025_11_21_dp_knapsack_sliding_hirschberg\"\u003ehttps://jedrzej.maczan.pl/2025_11_21_dp_knapsack_sliding_hirschberg\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46051241\"\u003ehttps://news.ycombinator.com/item?id=46051241\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Arabic Loanwords in the Neo-Aramaic Dialect of Ankawa",
+      "link": "https://books.openbookpublishers.com/10.11647/obp.0209/ch16.xhtml",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-25T21:52:17Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://books.openbookpublishers.com/10.11647/obp.0209/ch16.xhtml\"\u003ehttps://books.openbookpublishers.com/10.11647/obp.0209/ch16.xhtml\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46051240\"\u003ehttps://news.ycombinator.com/item?id=46051240\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Mumbai families suffer as datacentres keep the city hooked on coal",
+      "link": "https://www.theguardian.com/technology/2025/nov/24/mumbai-datacentres-coal-air-pollution",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-25T21:50:53Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.theguardian.com/technology/2025/nov/24/mumbai-datacentres-coal-air-pollution\"\u003ehttps://www.theguardian.com/technology/2025/nov/24/mumbai-datacentres-coal-air-pollution\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46051222\"\u003ehttps://news.ycombinator.com/item?id=46051222\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "An Affordable Voice Assistant That Won't Spy on You (2022)",
+      "link": "https://blog.tjll.net/build-your-own-voice-asistant/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-25T21:50:24Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://blog.tjll.net/build-your-own-voice-asistant/\"\u003ehttps://blog.tjll.net/build-your-own-voice-asistant/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46051218\"\u003ehttps://news.ycombinator.com/item?id=46051218\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Ask HN: Is Techmeme getting paid to boost certain articles?",
+      "link": "https://news.ycombinator.com/item?id=46051184",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-25T21:46:25Z",
+      "description": "\n\u003cp\u003ehttps://imgur.com/a/EcBT3Cc\u003cp\u003eI noticed that Techmeme is currently boosting some guy's podcast to the very top of their website as a headline. I've also noticed the website overall becoming very deafeningly pro-AI in the past six months, often using the same idea in my screenshot to boost pro-AI content to the same headline spot or \"above the fold\" at the very least.\u003cp\u003eAre they taking kickbacks somehow? I don't see how a random podcast deserves headline treatment like this unless they got paid or some kind of kickback to promote it. And even then, it's not labeled as promoted content. The whole thing smells fishy to me.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46051184\"\u003ehttps://news.ycombinator.com/item?id=46051184\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Let go of StackOverflow; communities must take ownership",
+      "link": "https://ahelwer.ca/post/2025-11-25-stackoverflow/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-25T21:46:21Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://ahelwer.ca/post/2025-11-25-stackoverflow/\"\u003ehttps://ahelwer.ca/post/2025-11-25-stackoverflow/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46051182\"\u003ehttps://news.ycombinator.com/item?id=46051182\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Google steers Americans looking for health care into \"junk insurance\"",
+      "link": "https://pluralistic.net/2025/11/25/open-season/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-25T21:45:01Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://pluralistic.net/2025/11/25/open-season/\"\u003ehttps://pluralistic.net/2025/11/25/open-season/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46051169\"\u003ehttps://news.ycombinator.com/item?id=46051169\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Penicillin Myth",
+      "link": "https://www.asimov.press/p/penicillin-myth",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-25T21:42:04Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.asimov.press/p/penicillin-myth\"\u003ehttps://www.asimov.press/p/penicillin-myth\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46051145\"\u003ehttps://news.ycombinator.com/item?id=46051145\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Mapping the Brain's Sense of What Goes on Inside the Body",
+      "link": "https://www.nytimes.com/2025/11/25/science/brain-neuroscience-interoception.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-25T21:38:07Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nytimes.com/2025/11/25/science/brain-neuroscience-interoception.html\"\u003ehttps://www.nytimes.com/2025/11/25/science/brain-neuroscience-interoception.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46051107\"\u003ehttps://news.ycombinator.com/item?id=46051107\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "OpenStreetMap scales to serve users worldwide with Fastly",
+      "link": "https://www.fastly.com/customers/openstreetmap",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-25T21:37:16Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.fastly.com/customers/openstreetmap\"\u003ehttps://www.fastly.com/customers/openstreetmap\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46051099\"\u003ehttps://news.ycombinator.com/item?id=46051099\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "New Version of the MCP Specification",
+      "link": "https://modelcontextprotocol.io/specification/2025-11-25",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-25T21:36:32Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://modelcontextprotocol.io/specification/2025-11-25\"\u003ehttps://modelcontextprotocol.io/specification/2025-11-25\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46051090\"\u003ehttps://news.ycombinator.com/item?id=46051090\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Rs-Utcp, a Rust Implementation of the Universal Tool Calling Protocol",
+      "link": "https://github.com/universal-tool-calling-protocol/rs-utcp",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-25T21:35:52Z",
+      "description": "\n\u003cp\u003eI’ve been working on a Rust implementation of UTCP, a vendor-neutral protocol for LLM tool calling. The goal is to avoid every model/vendor defining its own schema and instead make tool ↔ model interoperability predictable and boring.\nWhat works:\u003cp\u003e- Full UTCP message parse/serialize\n- Strongly typed request/response model\n- Transport-agnostic (stdin/stdout, HTTP, WS, anything)\n- Minimal dependencies, straightforward API\u003cp\u003eStill to do:\u003cp\u003e- Validation helpers\n- Higher-level client/server wrappers\n- More real-world examples\u003cp\u003eRepo: \u003ca href=\"https://github.com/universal-tool-calling-protocol/rs-utcp\" rel=\"nofollow\"\u003ehttps://github.com/universal-tool-calling-protocol/rs-utcp\u003c/a\u003e\u003cp\u003eFeedback + contributions welcome!\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46051084\"\u003ehttps://news.ycombinator.com/item?id=46051084\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "NVMe driver for Windows 2000, targeting both x86 and Alpha AXP platforms",
+      "link": "https://github.com/techomancer/nvme2k",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-25T21:35:29Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/techomancer/nvme2k\"\u003ehttps://github.com/techomancer/nvme2k\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46051077\"\u003ehttps://news.ycombinator.com/item?id=46051077\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Techrights the Name Turns 15",
+      "link": "https://techrights.org/n/2025/09/20/Techrights_the_Name_Turns_15.shtml",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-25T21:34:42Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://techrights.org/n/2025/09/20/Techrights_the_Name_Turns_15.shtml\"\u003ehttps://techrights.org/n/2025/09/20/Techrights_the_Name_Turns_15.shtml\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46051072\"\u003ehttps://news.ycombinator.com/item?id=46051072\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Why are static site generators so complicated to use?",
+      "link": "https://thejollyteapot.com/2024/10/15/why-are-static-site-generators-so-complicated-to-use/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-25T21:31:09Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://thejollyteapot.com/2024/10/15/why-are-static-site-generators-so-complicated-to-use/\"\u003ehttps://thejollyteapot.com/2024/10/15/why-are-static-site-generators-so-complicated-to-use/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46051039\"\u003ehttps://news.ycombinator.com/item?id=46051039\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Silent War Between AI and Blockchain for the Future of Trust",
+      "link": "https://thinkmintmedia.blogspot.com/2025/11/the-silent-war-between-ai-and.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-25T21:27:02Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://thinkmintmedia.blogspot.com/2025/11/the-silent-war-between-ai-and.html\"\u003ehttps://thinkmintmedia.blogspot.com/2025/11/the-silent-war-between-ai-and.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46051005\"\u003ehttps://news.ycombinator.com/item?id=46051005\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Ask HN: If Unix gets more popular would you use it instead of Linux?",
+      "link": "https://news.ycombinator.com/item?id=46051004",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-25T21:27:02Z",
+      "description": "\n\u003cp\u003eIn a hypoethical scenario Unix Operating Systems get as much popular and supported in both hardware and software as Linux is currently is. Would you use it instead of Linux as your daily driver?\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46051004\"\u003ehttps://news.ycombinator.com/item?id=46051004\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 4\u003c/p\u003e\n"
+    },
+    {
+      "title": "Rightwing Influencers Fall for Mamdani's 'Arabic Numerals' in School Troll [video]",
+      "link": "https://www.youtube.com/watch?v=zujUUI0WEvk",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-25T21:26:36Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.youtube.com/watch?v=zujUUI0WEvk\"\u003ehttps://www.youtube.com/watch?v=zujUUI0WEvk\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46051001\"\u003ehttps://news.ycombinator.com/item?id=46051001\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Stop Putting Your Passwords into Random Websites (Yes, Seriously, You Are the PR",
+      "link": "https://labs.watchtowr.com/stop-putting-your-passwords-into-random-websites-yes-seriously-you-are-the-problem/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-25T21:26:14Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://labs.watchtowr.com/stop-putting-your-passwords-into-random-websites-yes-seriously-you-are-the-problem/\"\u003ehttps://labs.watchtowr.com/stop-putting-your-passwords-into-random-websites-yes-seriously-you-are-the-problem/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46050997\"\u003ehttps://news.ycombinator.com/item?id=46050997\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Using skills with Deep Agents",
+      "link": "https://blog.langchain.com/using-skills-with-deep-agents/",
+      "source": "LangChain Blog",
+      "category": "tech",
+      "publishedAt": "2025-11-25T16:45:09Z",
+      "description": "\u003cp\u003etl;dr: Anthropic recently introduced the idea of \u003ca href=\"https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills?ref=blog.langchain.com\" rel=\"noopener noreferrer\"\u003eagent skills\u003c/a\u003e. Skills are simply folders containing a \u003ca href=\"http://skill.md/?ref=blog.langchain.com\" rel=\"noopener noreferrer\"\u003eSKILL.md\u003c/a\u003e file along with any associated files (e.g., documents or scripts) that an agent can discover and load dynamically to perform better at specific tasks. \u003cstrong\u003eWe\u0026apos;ve added skills support\u003c/strong\u003e to\u003c/p\u003e"
+    },
+    {
+      "title": "Partnering with Black Forest Labs to bring FLUX.2 [dev] to Workers AI",
+      "link": "https://blog.cloudflare.com/flux-2-workers-ai/",
+      "source": "Cloudflare Blog",
+      "category": "tech",
+      "publishedAt": "2025-11-25T00:00:00Z",
+      "description": " FLUX.2 [dev] by Black Forest Labs is now on Workers AI! This advanced open-weight image model offers superior photorealism, multi-reference inputs, and granular control with JSON prompting. "
+    },
+    {
+      "title": "Introducing Dynamic Step Condition for Bitbucket Pipelines",
+      "link": "https://www.atlassian.com/blog/bitbucket/introducing-dynamic-step-condition-for-bitbucket-pipelines",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2025-11-24T23:53:13Z",
+      "description": "\u003cp\u003eWe’re excited to introduce a new step condition that lets you dynamically skip a step based on a boolean expression...\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/bitbucket/introducing-dynamic-step-condition-for-bitbucket-pipelines\"\u003eIntroducing Dynamic Step Condition for Bitbucket Pipelines\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Ship faster with focused Subagents in Rovo Dev CLI",
+      "link": "https://www.atlassian.com/blog/developer/ship-faster-with-focused-subagents-in-rovo-dev-cli",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2025-11-24T23:21:45Z",
+      "description": "\u003cp\u003eSubagents turn one big, brittle prompt into a small team of specialized helpers you can test, reuse, and permission separately,...\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/developer/ship-faster-with-focused-subagents-in-rovo-dev-cli\"\u003eShip faster with focused Subagents in Rovo Dev CLI\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Automating Customer Support with JSM Virtual Agent",
+      "link": "https://www.atlassian.com/blog/atlassian-engineering/automating-customer-support-with-jsm-virtual-agent",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2025-11-24T23:20:46Z",
+      "description": "\u003cp\u003eExplore how Atlassian’s JSM Virtual Agent uses AI to automate customer support, streamline chat workflows, and deliver faster, more accurate resolutions for teams worldwide.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/atlassian-engineering/automating-customer-support-with-jsm-virtual-agent\"\u003eAutomating Customer Support with JSM Virtual Agent\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "From static spreadsheets to strategic agility: How CNA Insurance unified planning with Atlassian’s Strategy Collection",
+      "link": "https://www.atlassian.com/blog/strategycollection/how-cna-insurance-unified-planning-with-atlassians-strategy-collection",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2025-11-24T23:17:35Z",
+      "description": "\u003cp\u003eFind out how a century-old insurance leader initiated a culture of constant improvement and agile strategy, dismantling silos to align the whole organization.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/strategycollection/how-cna-insurance-unified-planning-with-atlassians-strategy-collection\"\u003eFrom static spreadsheets to strategic agility: How CNA Insurance unified planning with Atlassian’s Strategy Collection\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "How Datasite transformed its system of work with Strategy Collection",
+      "link": "https://www.atlassian.com/blog/strategycollection/how-datasite-transformed-its-system-of-work-with-strategy-collection",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2025-11-24T23:07:42Z",
+      "description": "\u003cp\u003eExplore how a leading M\u0026#38;A enterprise maximized flexibility, decision-making, and leadership visibility by adopting Atlassian’s top solution for innovative executives.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/strategycollection/how-datasite-transformed-its-system-of-work-with-strategy-collection\"\u003eHow Datasite transformed its system of work with Strategy Collection\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Open-source IntelliJ IDEA: A Simpler Way to Build and Contribute to the Community",
+      "link": "https://blog.jetbrains.com/idea/2025/11/intellij-idea-open-source/",
+      "source": "IntelliJ IDEA : IntelliJ IDEA – the IDE for Professional Development in Java and Kotlin | The JetBrains Blog",
+      "category": "tech",
+      "publishedAt": "2025-11-25T12:07:11Z",
+      "description": "IntelliJ IDEA’s source code has been publicly available for more than 15 years, helping millions of developers learn, experiment, and contribute to their IDE and build their own tools. Now, we\u0026#8217;re taking our commitment to open-source to the next level by making it even easier for the community to explore, build, and contribute! What’s New? [\u0026#8230;]"
+    },
+    {
+      "title": "FLUX.2 Image Generation Models Now Released, Optimized for NVIDIA RTX GPUs",
+      "link": "https://blogs.nvidia.com/blog/rtx-ai-garage-flux-2-comfyui/",
+      "source": "NVIDIA Blog",
+      "category": "tech",
+      "publishedAt": "2025-11-25T15:53:21Z",
+      "description": "Black Forest Labs — the frontier AI research lab developing visual generative AI models — today released the FLUX.2 family of state-of-the-art image generation models. FLUX.2 is packed with new tools and capabilities, including a multi-reference feature that can generate dozens of similar image variations, in photorealistic detail and with cleaner fonts — even at\t\u003ca class=\"read-more\" href=\"https://blogs.nvidia.com/blog/rtx-ai-garage-flux-2-comfyui/\"\u003e\n\t\tRead Article\t\t\u003cspan data-icon=\"y\"\u003e\u003c/span\u003e\n\t\u003c/a\u003e\n\t"
+    }
+  ],
+  "generatedAt": "2025-11-26T07:09:45.217473743+09:00"
+}
