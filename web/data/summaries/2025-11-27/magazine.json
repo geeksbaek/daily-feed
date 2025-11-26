@@ -1,0 +1,346 @@
+{
+  "date": "2025-11-27",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2025년 11월 26일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** 구글 Gemini 3의 등장과 AI 연구 패러다임의 변화(Scaling → Reasoning), 그리고 EU의 채팅 검열 법안 통과가 가져올 프라이버시 논쟁이 뜨거운 하루입니다.\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### 구글 CEO 순다르 피차이, Gemini 3 심층 공개\n구글이 차세대 AI 모델인 **Gemini 3**에 대한 세부 정보를 공개했습니다. 순다르 피차이 CEO는 팟캐스트 형식을 통해 이번 릴리스의 기술적 진보와 전략적 의미를 직접 설명했습니다. 단순한 성능 향상을 넘어, AI가 텍스트와 코드를 넘어선 복합적인 추론 능력을 갖추는 데 초점을 맞추고 있음을 시사합니다. 이는 경쟁사들의 모델이 정체기에 접어들었다는 논란 속에서 구글이 기술적 우위를 점하려는 시도로 해석됩니다.\n\u003e **Key Point:** Gemini 3는 단순한 언어 모델을 넘어선 '멀티모달 추론 엔진'으로의 진화를 목표로 하며, 구글의 AI 생태계 전반에 즉각적인 영향을 미칠 것입니다. [^13][^14][^15]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. AI 연구의 패러다임 시프트: \"확장에서 연구로\"\n- **What:** OpenAI의 전 수석 과학자 일리야 수츠케버(Ilya Sutskever)가 \"우리는 확장의 시대(Age of Scaling)에서 연구의 시대(Age of Discovery/Research)로 이동하고 있다\"고 언급했습니다.\n- **Why:** 단순히 데이터와 컴퓨팅 파워를 늘려 성능을 높이는 '스케일링 법칙'이 한계에 봉착했거나 효율이 떨어지고 있다는 신호입니다. 이제는 모델의 구조와 학습 방법론 자체를 혁신해야 하는 단계입니다.\n- **Impact:** 기업들은 무조건적인 GPU 확보 경쟁에서 벗어나, 더 효율적이고 똑똑한 '추론형 AI' 개발 경쟁으로 태세를 전환할 것입니다. [^11]\n\n### 2. EU, '채팅 통제(Chat Control)' 법안 승인\n- **What:** 유럽연합(EU) 입법자들이 개인 채팅 내용을 스캔할 수 있도록 허용하는 논란의 '채팅 통제' 정책에 합의했습니다.\n- **Why:** 아동 성학대 자료(CSAM) 확산을 막기 위함이라는 명분이지만, 이는 사실상 종단간 암호화(E2EE)의 무력화를 의미합니다.\n- **Impact:** 프라이버시 옹호자들의 거센 반발이 예상되며, 텔레그램이나 시그널 같은 보안 메신저 서비스들이 유럽 내에서 서비스 방식 변경을 강요받거나 철수할 가능성이 생겼습니다. [^25]\n\n### 3. 미국 에너지부, 과학 가속화를 위한 'Genesis Mission' 발표\n- **What:** 미국 에너지부(DOE)가 AI를 활용해 과학적 발견을 가속화하는 국가적 미션인 'Genesis'를 출범했습니다.\n- **Why:** 생물학, 물리학, 신소재 등 기초 과학 분야의 복잡한 데이터를 AI로 분석하여 인간 연구자가 놓칠 수 있는 패턴을 발견하기 위함입니다.\n- **Impact:** AI의 적용 범위가 상업적 챗봇을 넘어 국가 경쟁력을 좌우하는 기초 과학 기술 개발의 핵심 도구로 자리 잡게 됩니다. [^19]\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **VS Code Nov 2025** | 버전 1.107 업데이트. 새로운 편집 기능과 성능 개선이 포함된 인사이더 빌드입니다. [^1] |\n| **Tool** | **KiDoom** | PCB 회로 기판의 배선(Trace) 자체를 활용해 DOOM 게임을 실행하는 기발한 하드웨어 해킹 프로젝트입니다. [^5] |\n| **AI** | **FLUX.2** | 시각적 지능(Visual Intelligence)의 최전선을 보여주는 새로운 이미지 생성/분석 모델입니다. [^8] |\n| **Dev** | **CSS Subgrid** | 복잡한 웹 레이아웃을 획기적으로 단순화하는 CSS Subgrid의 실전 구현 가이드입니다. [^2] |\n| **Dev** | **Worktrunk** | Rust로 작성된 병렬 에이전트 작업을 위한 Git 워크트리(worktree) 매니저입니다. [^36] |\n| **Dev** | **Xtd** | 모던 C++20을 위한 프레임워크로 CLI, GUI, 유닛 테스트 기능을 통합 제공합니다. [^18] |\n| **Dev** | **Flowglad** | 웹훅 없이 결제 프로세스를 처리할 수 있는 오픈소스 결제 솔루션입니다. [^9] |\n| **Dev** | **White-Box-Coder** | 자신의 코드를 스스로 리뷰하고 수정하는 AI 에이전트 오픈소스입니다. [^21] |\n| **Dev** | **PyOpenSci** | 파이썬 패키지의 품질과 표준을 높이기 위한 공식 가이드라인입니다. [^32] |\n| **Java** | **Spring Data AOT** | IntelliJ IDEA에서 Spring Data의 AOT(Ahead-of-Time) 컴파일을 마스터하는 방법입니다. [^41] |\n| **Sec** | **Docker Security** | CVE-2025-12735 취약점에 대응하는 Docker의 업스트림 보안 접근 방식입니다. [^16] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n\n#### 💻 개발 \u0026 인프라\n*   **파이썬은 데이터 사이언스에 적합하지 않다**: 파이썬의 태생적 한계와 데이터 과학 언어로서의 비효율성을 지적하는 도발적인 칼럼입니다. [^6]\n*   **AI가 이 코드의 작동 방식을 이해한다**: 복잡한 레거시 코드를 AI가 얼마나 깊이 있게 분석할 수 있는지 보여주는 사례입니다. [^7]\n*   **Tailwind CSS 2025**: 2025년 시점에서 바라본 Tailwind CSS의 효용성과 CSS 작성 방식에 대한 고찰입니다. [^23]\n*   **ChromeOS 베타 업데이트**: ChromeOS 및 Flex 버전을 위한 최신 베타 채널 릴리스 노트입니다. [^12]\n*   **Prepared Statements 취약점**: 보안의 정석으로 여겨지던 Prepared Statements에서도 발생할 수 있는 취약점을 경고합니다. [^29]\n\n#### 🔬 과학 \u0026 건강\n*   **뇌 발달의 5가지 시대**: 인간의 뇌는 평생 5번의 뚜렷한 변화 시기를 겪으며, 성인 모드는 30대 초반에 시작됩니다. [^4][^33]\n*   **뇌의 고립 모드(Isolation Mode)**: 아플 때 사회적 접촉을 피하게 만드는 뇌의 신경학적 메커니즘이 밝혀졌습니다. [^27]\n*   **Juno 중성미자 관측소**: 우주의 비밀을 풀 열쇠인 중성미자 관측소에서 첫 번째 연구 결과가 발표되었습니다. [^26]\n*   **자폐 아동의 어휘 발달**: 네트워크 성장 분석을 통해 자폐 아동의 언어 습득 패턴을 연구한 논문입니다. [^34]\n*   **학계의 암살(Academic Assassinations)**: 과학계 내부의 정치적 공격이 글로벌 과학 발전을 저해한다는 비판입니다. [^35]\n*   **반물질 개발 프로그램**: Casey Handmer가 제안하는 반물질(Antimatter) 연구 및 개발 로드맵입니다. [^24]\n\n#### 📱 앱 \u0026 비즈니스 \u0026 기타\n*   **NVIDIA AI Day Seoul**: 엔비디아가 서울에서 정부, 게임 등 한국의 디지털 기반 강화를 위한 AI 협력을 강조했습니다. [^42]\n*   **그리스 IPTV 단속**: 그리스 사이버 범죄 수사대가 불법 IPTV를 폐쇄하고 사용자 68명에게 벌금을 부과했습니다. [^22]\n*   **Atlassian \u0026 Loom**: 디자인 시스템 핸드오프, 마케팅 효율화, 경쟁사 분석 등 Loom과 Rovo를 활용한 협업 가이드 시리즈입니다. [^37][^38][^39][^40]\n*   **Raspberry Pi NTP**: 열 관리를 통해 라즈베리 파이의 시간 동기화(NTP) 정확도를 81% 향상시킨 실험입니다. [^3]\n*   **Focus Lounge**: 혼자 작업하는 사람들을 위해 소소한 소속감을 주는 데스크톱 프로그램입니다. [^10]\n*   **Kerns.ai**: LLM을 활용해 책, 논문, 주제를 시각적으로 이해하도록 돕는 AI 인터페이스입니다. [^17]\n*   **WeDo**: 연말 선물 조율의 골치 아픈 문제를 해결해주는 협업 선물 레지스트리 서비스입니다. [^28]\n*   **Online Tools Aggregator**: 유용한 온라인 도구들을 한곳에 모아둔 웹사이트입니다. [^20]\n*   **문화적 정체(Cultural Stagnation)**: 현대 사회의 문화적 발전이 정체된 숨겨진 원인을 분석한 에세이입니다. [^30]\n*   **David Lerner 별세**: Tekserve의 공동 창립자이자 기술계의 아이콘이었던 David Lerner가 별세했습니다. [^31]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘 뉴스는 '**한계 돌파**'라는 키워드로 묶입니다. 구글은 Gemini 3로, 일리야 수츠케버는 새로운 연구 방법론으로 기존 AI의 한계를 넘으려 합니다. 반면 EU의 채팅 통제 법안은 프라이버시의 한계를 시험하고 있네요. 개발자들에게는 **KiDoom** 같은 긱(Geek)한 프로젝트가 신선한 자극이 될 것 같습니다. PCB 회로 위에서 둠을 돌리다니, 낭만이 살아있네요!\n\n---\n\n[^1]: November 2025 Insiders (version 1.107) - https://code.visualstudio.com/updates/v1_107\n[^2]: CSS Subgrid로 구현하는 새로운 레이아웃 - https://news.hada.io/topic?id=24642\n[^3]: 가장 안정적인 Raspberry Pi? 열 관리로 81% 향상된 NTP 정확도 - https://news.hada.io/topic?id=24641\n[^4]: 뇌에는 다섯 개의 ‘시대’가 있으며, 성인 모드는 30대 초반에 시작됨 - https://news.hada.io/topic?id=24640\n[^5]: KiDoom – PCB 회로선 위에서 실행되는 DOOM - https://news.hada.io/topic?id=24639\n[^6]: 파이썬은 데이터 사이언스에 적합한 언어가 아니다 - https://news.hada.io/topic?id=24638\n[^7]: AI가 이 코드의 작동 방식을 깊이 이해하고 있다 - https://news.hada.io/topic?id=24637\n[^8]: FLUX.2: 프런티어 비주얼 인텔리전스 - https://news.hada.io/topic?id=24636\n[^9]: 오픈소스 웹훅 없는 결제 프로세서 Flowglad - https://news.hada.io/topic?id=24635\n[^10]: Show GN: Focus Lounge 혼자 작업하는 외로운 사람들을 위한 소소한 프로그램 - https://news.hada.io/topic?id=24634\n[^11]: Ilya Sutskever: 우리는 확장의 시대에서 연구의 시대로 이동하고 있다 - https://news.hada.io/topic?id=24633\n[^12]: Beta Channel Update for ChromeOS / ChromeOS Flex - http://chromereleases.googleblog.com/2025/11/beta-channel-update-for-chromeos_25.html\n[^13]: Get an in-depth look at Gemini 3 with CEO Sundar Pichai. - https://blog.google/technology/ai/sundar-pichai-ai-release-notes-podcast/\n[^14]: Get an in-depth look at Gemini 3 with CEO Sundar Pichai. - https://blog.google/technology/ai/sundar-pichai-ai-release-notes-podcast/\n[^15]: Get an in-depth look at Gemini 3 with CEO Sundar Pichai. - https://blog.google/technology/ai/sundar-pichai-ai-release-notes-podcast/\n[^16]: Security that strengthens the ecosystem: Docker’s upstream approach to CVE-2025-12735 - https://www.docker.com/blog/security-that-strengthens-the-ecosystem-dockers-upstream-approach-to-cve-2025-12735/\n[^17]: Show HN: A visual AI interface to understand topics/books/papers with LLMs - https://www.kerns.ai/\n[^18]: Xtd: Modern C++20 framework (CLI, GUI, unit tests) - https://gammasoft71.github.io/xtd/\n[^19]: Genesis Mission: A National Mission to Accelerate Science Through AI - https://genesis.energy.gov/\n[^20]: Online Tools Aggregator - https://www.tools-best.com/\n[^21]: Show HN: White-Box-Coder – AI that self-reviews and fixes its own code\" - https://github.com/EMMA019/WHITE-BOX-CODER\n[^22]: Greek Cybercrime Unit Shuts Down IPTV Pirates, 68 End Users Face Fines - https://torrentfreak.com/cybercrime-unit-shuts-down-iptv-pirates-68-end-users-face-fines-251126/\n[^23]: Tailwind - How I think about CSS authorship in 2025 - https://wlls.dev/blog/on-tailwind\n[^24]: Antimatter Development Program – Casey Handmer's Blog - https://caseyhandmer.wordpress.com/2025/11/26/antimatter-development-program/\n[^25]: EU approves Chat Control policy - https://www.techradar.com/vpn/vpn-privacy-security/chat-control-eu-lawmakers-finally-agree-on-the-voluntary-scanning-of-your-private-chats\n[^26]: Juno Neutrino Observatory Releases First Results - https://www.scientificamerican.com/article/juno-neutrino-observatory-releases-first-results/\n[^27]: Brain Has a Built-In Isolation Mode - https://neurosciencenews.com/neuroscience-sickness-isolation-29979/\n[^28]: WeDo: Collaborative gift registry that solves the holiday coordination headache - https://www.wedoto.day\n[^29]: Prepared Statements? Prepared to Be Vulnerable - https://blog.mantrainfosec.com/blog/18/prepared-statements-prepared-to-be-vulnerable\n[^30]: The Cause of Cultural Stagnation - https://www.slowboring.com/p/the-hidden-cause-of-cultural-stagnation\n[^31]: David Lerner, cofounder of Tekserve, has died - https://www.nytimes.com/2025/11/26/technology/personaltech/david-lerner-dead.html\n[^32]: PyOpenSci Python Package Guide - https://www.pyopensci.org/python-package-guide/index.html\n[^33]: Human brains have 5 distinct 'epochs' in a lifetime - https://www.nbcnews.com/science/science-news/human-brains-5-epochs-development-rcna245663\n[^34]: Vocabulary development in autistic children: a network growth analysis - https://acamh.onlinelibrary.wiley.com/doi/10.1111/jcpp.70076\n[^35]: Academic assassinations are a threat to global science - https://physicsworld.com/a/academic-assassinations-are-a-threat-to-global-science/\n[^36]: Worktrunk: Git worktree manager, designed for parallel agents, written in Rust - https://github.com/max-sixty/worktrunk\n[^37]: Turning Handoffs into Handshakes: Integrating Design Systems for AI Prototyping at Scale - https://www.atlassian.com/blog/design/turning-handoffs-into-handshakes-integrating-design-systems-for-ai-prototyping-at-scale\n[^38]: How Marketing Leaders Get More Done: Tips from Loom × ServiceRocket - https://www.atlassian.com/blog/loom/marketing-leaders-get-more-done-with-loom\n[^39]: How I Use Loom \u0026 Rovo for Competitive Analysis (and Actually Have Fun Doing It) - https://www.atlassian.com/blog/loom/how-to-use-loom-and-rovo-for-compete\n[^40]: How Loom Supercharges Cross-Functional Alignment for Go-to-Market Success - https://www.atlassian.com/blog/loom/how-loom-supercharges-gtm-success\n[^41]: Master Spring Data AOT in IntelliJ IDEA - https://blog.jetbrains.com/idea/2025/11/spring-data-aot/\n[^42]: From Government to Gaming, AI Is ‘Strengthening Korea’s Digital Foundation,’ NVIDIA Leader Says at AI Day Seoul - https://blogs.nvidia.com/blog/ai-day-seoul/\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **November 2025 Insiders (version 1.107)**\n   - 출처: Visual Studio Code - Code Editing. Redefined.\n   - 링크: https://code.visualstudio.com/updates/v1_107\n\n2. **CSS Subgrid로 구현하는 새로운 레이아웃**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24642\n\n3. **가장 안정적인 Raspberry Pi? 열 관리로 81% 향상된 NTP 정확도**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24641\n\n4. **뇌에는 다섯 개의 ‘시대’가 있으며, 성인 모드는 30대 초반에 시작됨**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24640\n\n5. **KiDoom – PCB 회로선 위에서 실행되는 DOOM**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24639\n\n6. **파이썬은 데이터 사이언스에 적합한 언어가 아니다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24638\n\n7. **AI가 이 코드의 작동 방식을 깊이 이해하고 있다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24637\n\n8. **FLUX.2: 프런티어 비주얼 인텔리전스**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24636\n\n9. **오픈소스 웹훅 없는 결제 프로세서 Flowglad**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24635\n\n10. **Show GN: Focus Lounge 혼자 작업하는 외로운 사람들을 위한 소소한 프로그램**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24634\n\n11. **Ilya Sutskever: 우리는 확장의 시대에서 연구의 시대로 이동하고 있다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24633\n\n12. **Beta Channel Update for ChromeOS / ChromeOS Flex**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2025/11/beta-channel-update-for-chromeos_25.html\n\n13. **Get an in-depth look at Gemini 3 with CEO Sundar Pichai.**\n   - 출처: Gemini\n   - 링크: https://blog.google/technology/ai/sundar-pichai-ai-release-notes-podcast/\n\n14. **Get an in-depth look at Gemini 3 with CEO Sundar Pichai.**\n   - 출처: AI\n   - 링크: https://blog.google/technology/ai/sundar-pichai-ai-release-notes-podcast/\n\n15. **Get an in-depth look at Gemini 3 with CEO Sundar Pichai.**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/technology/ai/sundar-pichai-ai-release-notes-podcast/\n\n16. **Security that strengthens the ecosystem: Docker’s upstream approach to CVE-2025-12735**\n   - 출처: Docker Blog\n   - 링크: https://www.docker.com/blog/security-that-strengthens-the-ecosystem-dockers-upstream-approach-to-cve-2025-12735/\n\n17. **Show HN: A visual AI interface to understand topics/books/papers with LLMs**\n   - 출처: Hacker News\n   - 링크: https://www.kerns.ai/\n\n18. **Xtd: Modern C++20 framework (CLI, GUI, unit tests)**\n   - 출처: Hacker News\n   - 링크: https://gammasoft71.github.io/xtd/\n\n19. **Genesis Mission: A National Mission to Accelerate Science Through AI**\n   - 출처: Hacker News\n   - 링크: https://genesis.energy.gov/\n\n20. **Online Tools Aggregator**\n   - 출처: Hacker News\n   - 링크: https://www.tools-best.com/\n\n21. **Show HN: White-Box-Coder – AI that self-reviews and fixes its own code\"**\n   - 출처: Hacker News\n   - 링크: https://github.com/EMMA019/WHITE-BOX-CODER\n\n22. **Greek Cybercrime Unit Shuts Down IPTV Pirates, 68 End Users Face Fines**\n   - 출처: Hacker News\n   - 링크: https://torrentfreak.com/cybercrime-unit-shuts-down-iptv-pirates-68-end-users-face-fines-251126/\n\n23. **Tailwind - How I think about CSS authorship in 2025**\n   - 출처: Hacker News\n   - 링크: https://wlls.dev/blog/on-tailwind\n\n24. **Antimatter Development Program – Casey Handmer's Blog**\n   - 출처: Hacker News\n   - 링크: https://caseyhandmer.wordpress.com/2025/11/26/antimatter-development-program/\n\n25. **EU approves Chat Control policy**\n   - 출처: Hacker News\n   - 링크: https://www.techradar.com/vpn/vpn-privacy-security/chat-control-eu-lawmakers-finally-agree-on-the-voluntary-scanning-of-your-private-chats\n\n26. **Juno Neutrino Observatory Releases First Results**\n   - 출처: Hacker News\n   - 링크: https://www.scientificamerican.com/article/juno-neutrino-observatory-releases-first-results/\n\n27. **Brain Has a Built-In Isolation Mode**\n   - 출처: Hacker News\n   - 링크: https://neurosciencenews.com/neuroscience-sickness-isolation-29979/\n\n28. **WeDo: Collaborative gift registry that solves the holiday coordination headache**\n   - 출처: Hacker News\n   - 링크: https://www.wedoto.day\n\n29. **Prepared Statements? Prepared to Be Vulnerable**\n   - 출처: Hacker News\n   - 링크: https://blog.mantrainfosec.com/blog/18/prepared-statements-prepared-to-be-vulnerable\n\n30. **The Cause of Cultural Stagnation**\n   - 출처: Hacker News\n   - 링크: https://www.slowboring.com/p/the-hidden-cause-of-cultural-stagnation\n\n31. **David Lerner, cofounder of Tekserve, has died**\n   - 출처: Hacker News\n   - 링크: https://www.nytimes.com/2025/11/26/technology/personaltech/david-lerner-dead.html\n\n32. **PyOpenSci Python Package Guide**\n   - 출처: Hacker News\n   - 링크: https://www.pyopensci.org/python-package-guide/index.html\n\n33. **Human brains have 5 distinct 'epochs' in a lifetime**\n   - 출처: Hacker News\n   - 링크: https://www.nbcnews.com/science/science-news/human-brains-5-epochs-development-rcna245663\n\n34. **Vocabulary development in autistic children: a network growth analysis**\n   - 출처: Hacker News\n   - 링크: https://acamh.onlinelibrary.wiley.com/doi/10.1111/jcpp.70076\n\n35. **Academic assassinations are a threat to global science**\n   - 출처: Hacker News\n   - 링크: https://physicsworld.com/a/academic-assassinations-are-a-threat-to-global-science/\n\n36. **Worktrunk: Git worktree manager, designed for parallel agents, written in Rust**\n   - 출처: Hacker News\n   - 링크: https://github.com/max-sixty/worktrunk\n\n37. **Turning Handoffs into Handshakes: Integrating Design Systems for AI Prototyping at Scale**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/design/turning-handoffs-into-handshakes-integrating-design-systems-for-ai-prototyping-at-scale\n\n38. **How Marketing Leaders Get More Done: Tips from Loom × ServiceRocket**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/loom/marketing-leaders-get-more-done-with-loom\n\n39. **How I Use Loom \u0026 Rovo for Competitive Analysis (and Actually Have Fun Doing It)**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/loom/how-to-use-loom-and-rovo-for-compete\n\n40. **How Loom Supercharges Cross-Functional Alignment for Go-to-Market Success**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/loom/how-loom-supercharges-gtm-success\n\n41. **Master Spring Data AOT in IntelliJ IDEA**\n   - 출처: IntelliJ IDEA : IntelliJ IDEA – the IDE for Professional Development in Java and Kotlin | The JetBrains Blog\n   - 링크: https://blog.jetbrains.com/idea/2025/11/spring-data-aot/\n\n42. **From Government to Gaming, AI Is ‘Strengthening Korea’s Digital Foundation,’ NVIDIA Leader Says at AI Day Seoul**\n   - 출처: NVIDIA Blog\n   - 링크: https://blogs.nvidia.com/blog/ai-day-seoul/\n\n\n",
+  "articles": [
+    {
+      "title": "November 2025 Insiders (version 1.107)",
+      "link": "https://code.visualstudio.com/updates/v1_107",
+      "source": "Visual Studio Code - Code Editing. Redefined.",
+      "category": "tech",
+      "publishedAt": "2025-12-10T17:00:00Z",
+      "description": "\n      \u003cp\u003eLearn what is new in the Visual Studio Code November 2025 Release (1.107).\u003c/p\u003e\n      \u003cp\u003e\u003ca href=\"https://code.visualstudio.com/updates/v1_107\"\u003eRead the full article\u003c/a\u003e\u003c/p\u003e\n    "
+    },
+    {
+      "title": "CSS Subgrid로 구현하는 새로운 레이아웃",
+      "link": "https://news.hada.io/topic?id=24642",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-27T05:51:14+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eCSS Subgrid\u003c/strong\u003e는 기존 Grid의 한계를 넘어, 부모 그리드 구조를 하위 DOM 요소까지 \u003cstrong\u003e확장\u003c/strong\u003e할 수 있는 기능\u003c/li\u003e\n\u003cli\u003e기존에는 \u003cstrong\u003e직계 자식만\u003c/strong\u003e 그리드에 참여할 수 있었으나, subgrid를 사용하면 \u003ccode\u003e\u0026lt;ul\u0026gt;\u003c/code\u003e·\u003ccode\u003e\u0026lt;li\u0026gt;\u003c/code\u003e 같은 중첩 구조...\u003c/p\u003e"
+    },
+    {
+      "title": "가장 안정적인 Raspberry Pi? 열 관리로 81% 향상된 NTP 정확도",
+      "link": "https://news.hada.io/topic?id=24641",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-27T05:48:12+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eRaspberry Pi 기반 NTP 서버\u003c/strong\u003e의 주파수 변동을 줄이기 위해 \u003cstrong\u003eCPU 코어 고정과 열 안정화\u003c/strong\u003e를 결합한 실험 결과 소개\u003c/li\u003e\n\u003cli\u003eCPU 온도 변화가 \u003cstrong\u003e크리스털 오실레이터의 주파수 드리프트\u003c/strong\u003e를 유발함을 관찰하고, 이를 일정 온도로 유지해 안정화\u003c/li\u003e\n\u003cli\u003e\n\u003cstron...\u003c/p\u003e"
+    },
+    {
+      "title": "뇌에는 다섯 개의 ‘시대’가 있으며, 성인 모드는 30대 초반에 시작됨",
+      "link": "https://news.hada.io/topic?id=24640",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-27T05:45:11+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e인간의 \u003cstrong\u003e뇌 발달 과정\u003c/strong\u003e이 생애 전반에 걸쳐 다섯 개의 주요 시기로 구분된다는 연구 결과 제시\u003c/li\u003e\n\u003cli\u003e약 \u003cstrong\u003e4,000명의 0세~90세 뇌 스캔 데이터\u003c/strong\u003e를 분석해, 뇌 구조 변화의 \u003cstrong\u003e네 번의 전환점\u003c/strong\u003e(9세, 32세, 66세, 83세)을 확인\u003c/li\u003e\n\u003cli\u003e출생~9세는 \u003cstrong\u003e아동기...\u003c/p\u003e"
+    },
+    {
+      "title": "KiDoom – PCB 회로선 위에서 실행되는 DOOM",
+      "link": "https://news.hada.io/topic?id=24639",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-27T05:42:09+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eKiDoom\u003c/strong\u003e은 1993년 고전 슈팅 게임 DOOM을 \u003cstrong\u003eKiCad PCB 편집기\u003c/strong\u003e 내에서 벡터 기반으로 렌더링하는 프로젝트\u003c/li\u003e\n\u003cli\u003ePCB 회로선(trace)을 그래픽 출력 경로로 사용하며, \u003cstrong\u003e초당 10~25프레임\u003c/strong\u003e의 속도로 구동\u003c/li\u003e\n\u003cli\u003e같은 개발자는 \u003cstrong\u003eScopeDoom\u003c/strong\u003e을...\u003c/p\u003e"
+    },
+    {
+      "title": "파이썬은 데이터 사이언스에 적합한 언어가 아니다",
+      "link": "https://news.hada.io/topic?id=24638",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-27T05:39:07+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e데이터 분석과 시각화\u003c/strong\u003e 중심의 작업에서 파이썬은 충분히 사용 가능하지만, \u003cstrong\u003e사용 경험 측면에서는 비효율적 구조\u003c/strong\u003e가 많음\u003c/li\u003e\n\u003cli\u003e연구실 사례에서 \u003cstrong\u003eR보다 파이썬이 단순한 시각화나 통계 계산에도 더 많은 코드와 시간\u003c/strong\u003e을 요구하는 경향 확인\u003c/li\u003e\n\u003cli\u003e\n\u003cst...\u003c/p\u003e"
+    },
+    {
+      "title": "AI가 이 코드의 작동 방식을 깊이 이해하고 있다",
+      "link": "https://news.hada.io/topic?id=24637",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-27T04:38:24+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eOCaml 네이티브 컴파일러에 \u003cstrong\u003eDWARF v5 디버깅 정보\u003c/strong\u003e를 추가해 macOS와 Linux에서 \u003cstrong\u003eGDB·LLDB 소스 수준 디버깅\u003c/strong\u003e을 지원하는 대규모 PR이 제출됨\u003c/li\u003e\n\u003cli\u003e구현 내용에는 \u003cstrong\u003e함수·라인 단위 브레이크포인트\u003c/strong\u003e, \u003cstrong\u003e매개변수 및 지역 변수 추적\u003c/strong\u003e, \u003cstrong\u003e...\u003c/p\u003e"
+    },
+    {
+      "title": "FLUX.2: 프런티어 비주얼 인텔리전스",
+      "link": "https://news.hada.io/topic?id=24636",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-27T04:35:23+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eFLUX.2\u003c/strong\u003e는 실제 \u003cstrong\u003e창의적 워크플로우\u003c/strong\u003e를 위한 고품질 이미지 생성 모델로, 다중 참조 이미지 간 \u003cstrong\u003e캐릭터·스타일 일관성\u003c/strong\u003e을 유지하며 텍스트 처리와 브랜드 가이드라인 준수 기능을 지원\u003c/li\u003e\n\u003cli\u003e최대 \u003cstrong\u003e4메가픽셀 해상도\u003c/strong\u003e에서 세밀한 이미지 편집...\u003c/p\u003e"
+    },
+    {
+      "title": "오픈소스 웹훅 없는 결제 프로세서 Flowglad",
+      "link": "https://news.hada.io/topic?id=24635",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-27T03:33:03+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eFlowglad\u003c/strong\u003e는 웹훅 없이 작동하는 오픈소스 결제 처리 플랫폼으로, 개발자가 최소한의 코드로 \u003cstrong\u003e청구·결제 기능을 통합\u003c/strong\u003e할 수 있는 구조\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eStateless 아키텍처\u003c/strong\u003e를 통해 \u003ccode\u003esubscriptions\u003c/code\u003e 테이블이나 \u003ccode\u003ecustomer_id\u003c/code\u003e 관리 없이 자체...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: Focus Lounge 혼자 작업하는 외로운 사람들을 위한 소소한 프로그램",
+      "link": "https://news.hada.io/topic?id=24634",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-27T01:33:54+09:00",
+      "description": "\u003cp\u003e오늘 AI를 활용해 약 한 시간 동안 재미있는 프로젝트를 하나 만들어보았습니다.\u003c/p\u003e\n\u003cp\u003e혼자 작업을 하다 보면 집중이 흐트러지거나 외로움을 느끼기 마련인데, 이를 해결하기 위해 Body Doubling 효과를 활용한 함께 작업할 수 있는 간단한 서비스를 직접 제작했습니다.\u003c/p\u003e\n\u003cp\u003e실시간으로 감정 표현을 하거나 현재"
+    },
+    {
+      "title": "Ilya Sutskever: 우리는 확장의 시대에서 연구의 시대로 이동하고 있다",
+      "link": "https://news.hada.io/topic?id=24633",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-26T23:34:53+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eAI 모델의 일반화 한계\u003c/strong\u003e와 \u003cstrong\u003e강화학습(RL) 중심 훈련의 편향\u003c/strong\u003e을 지적하며, 현재 시스템이 인간처럼 유연하게 사고하지 못하는 구조를 설명\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e전이학습(pre-training)\u003c/strong\u003e 은 방대한 데이터로부터 자연스러운 지식을 얻지만, 실제 환경에서의 적응력은 부족...\u003c/p\u003e"
+    },
+    {
+      "title": "Beta Channel Update for ChromeOS / ChromeOS Flex",
+      "link": "http://chromereleases.googleblog.com/2025/11/beta-channel-update-for-chromeos_25.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2025-11-25T15:27:00-08:00",
+      "description": "\u003cp\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" style=\"color: rgba(0, 0, 0, 0.87); font-family: arial; font-size: large;\"\u003eThe ChromeOS Beta channel is being updated to OS version\u0026nbsp;\u003c/span\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" style=\"color: rgba(0, 0, 0, 0.87); font-family: arial; font-size: large;\"\u003e16463.28.0\u003c/span\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" style=\"color: rgba(0, 0, 0, 0.87); font-family: arial; font-size: large;\"\u003e\u0026nbsp;(Browser version\u0026nbsp;\u003c/span\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" style=\"color: rgba(0, 0, 0, 0.87); font-family: arial; font-size: large;\"\u003e143.0.7499.46\u003c/span\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" style=\"color: rgba(0, 0, 0, 0.87); font-family: arial; font-size: large;\"\u003e) for most ChromeOS devices.\u003c/span\u003e\u003c/p\u003e\u003cdiv style=\"background-color: white; color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px; line-height: 2.21538; margin-bottom: 0pt; margin-top: 31pt;\"\u003e\u003cspan style=\"white-space-collapse: preserve;\"\u003e\u003cspan style=\"font-family: arial;\"\u003eIf you find new issues, please let us know one of the following ways:\u003c/span\u003e\u003c/span\u003e\u003c/div\u003e\u003col style=\"color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px; margin: 0px; padding-inline-start: 48px; padding: 0px 48px;\"\u003e\u003cli style=\"line-height: 32px; margin: 0px 0px 0.25em; padding: 0px;\"\u003e\u003cspan style=\"font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003e\u003cspan style=\"color: black;\"\u003e\u003ca href=\"https://bugs.chromium.org/p/chromium/issues/list\" style=\"color: #4184f3; text-decoration-line: none;\"\u003e\u003cspan style=\"font-family: arial;\"\u003eFile a bug\u003c/span\u003e\u003c/a\u003e\u003c/span\u003e\u003c/span\u003e\u003c/li\u003e\u003cli aria-level=\"1\" style=\"font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; line-height: 32px; list-style-type: decimal; margin: 0px 0px 0.25em; padding: 0px; vertical-align: baseline; white-space: pre;\"\u003e\u003cp role=\"presentation\" style=\"background-color: white; line-height: 2.21538; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"background-color: transparent; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003e\u003cspan style=\"font-family: arial;\"\u003eVisit our ChromeOS communities\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e\u003c/li\u003e\u003col style=\"margin: 0px; padding-inline-start: 48px; padding: 0px 48px;\"\u003e\u003cli aria-level=\"2\" style=\"font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; line-height: 32px; list-style-type: decimal; margin: 0px 0px 0.25em; padding: 0px; vertical-align: baseline; white-space: pre;\"\u003e\u003cp role=\"presentation\" style=\"background-color: white; line-height: 2.21538; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: arial;\"\u003e\u003cspan style=\"background-color: transparent; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003eGeneral: \u003c/span\u003e\u003ca href=\"https://support.google.com/chromebook/community/?hl=en\u0026amp;gpf=%23!forum%2Fchromebook-central\" style=\"color: #4184f3; text-decoration-line: none;\"\u003e\u003cspan style=\"background-color: transparent; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003eChromebook Help Community\u003c/span\u003e\u003c/a\u003e\u003c/span\u003e\u003c/p\u003e\u003c/li\u003e\u003cli aria-level=\"2\" style=\"font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; line-height: 32px; list-style-type: decimal; margin: 0px 0px 0.25em; padding: 0px; vertical-align: baseline; white-space: pre;\"\u003e\u003cp role=\"presentation\" style=\"background-color: white; line-height: 2.21538; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: arial;\"\u003e\u003cspan style=\"background-color: transparent; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003eBeta Specific: \u003c/span\u003e\u003ca href=\"https://support.google.com/chromeos-beta/community\" style=\"color: #4184f3; text-decoration-line: none;\"\u003e\u003cspan style=\"background-color: transparent; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003eChromeOS Beta Help Community\u003c/span\u003e\u003c/a\u003e\u003c/span\u003e\u003c/p\u003e\u003c/li\u003e\u003c/ol\u003e\u003cli aria-level=\"1\" style=\"font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; line-height: 32px; list-style-type: decimal; margin: 0px 0px 0.25em; padding: 0px; vertical-align: baseline; white-space: pre;\"\u003e\u003cp role=\"presentation\" style=\"background-color: white; line-height: 2.21538; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003ca href=\"https://support.google.com/chrome/answer/95315?hl=en\u0026amp;co=GENIE.Platform%3DDesktop\" style=\"color: #4184f3; text-decoration-line: none;\"\u003e\u003cspan style=\"background-color: transparent; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003e\u003cspan style=\"color: black;\"\u003e\u003cspan style=\"font-family: arial;\"\u003eReport an issue or send feedback on Chrome\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003c/a\u003e\u003c/p\u003e\u003c/li\u003e\u003cli aria-level=\"1\" style=\"font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; line-height: 32px; list-style-type: decimal; margin: 0px 0px 0.25em; padding: 0px; vertical-align: baseline; white-space: pre;\"\u003e\u003cp role=\"presentation\" style=\"background-color: white; line-height: 2.21538; margin-bottom: 42pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: arial;\"\u003e\u003cspan style=\"background-color: transparent; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003eInterested in switching channels? \u003c/span\u003e\u003ca href=\"https://support.google.com/chromebook/answer/1086915\" style=\"color: #4184f3; text-decoration-line: none;\"\u003e\u003cspan style=\"background-color: transparent; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003eFind out how.\u003c/span\u003e\u003c/a\u003e\u003c/span\u003e\u003c/p\u003e\u003c/li\u003e\u003c/ol\u003e\u003cp style=\"color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px; line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"white-space-collapse: preserve;\"\u003e\u003cspan style=\"font-family: arial;\"\u003e\u003cspan style=\"text-wrap-mode: nowrap;\"\u003eLuis Menezes\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e\u003cp style=\"color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px; line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: arial; white-space-collapse: preserve;\"\u003eGoogle ChromeOS\u003c/span\u003e\u003c/p\u003e"
+    },
+    {
+      "title": "Get an in-depth look at Gemini 3 with CEO Sundar Pichai.",
+      "link": "https://blog.google/technology/ai/sundar-pichai-ai-release-notes-podcast/",
+      "source": "Gemini",
+      "category": "tech",
+      "publishedAt": "2025-11-25T23:39:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Release_Notes_Sundar_Pichai_003.max-600x600.format-webp.webp\"\u003eSundar Pichai sits down with Logan Kilpatrick to discuss Gemini 3 on the Google AI: Release Notes podcast."
+    },
+    {
+      "title": "Get an in-depth look at Gemini 3 with CEO Sundar Pichai.",
+      "link": "https://blog.google/technology/ai/sundar-pichai-ai-release-notes-podcast/",
+      "source": "AI",
+      "category": "tech",
+      "publishedAt": "2025-11-25T23:39:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Release_Notes_Sundar_Pichai_003.max-600x600.format-webp.webp\"\u003eSundar Pichai sits down with Logan Kilpatrick to discuss Gemini 3 on the Google AI: Release Notes podcast."
+    },
+    {
+      "title": "Get an in-depth look at Gemini 3 with CEO Sundar Pichai.",
+      "link": "https://blog.google/technology/ai/sundar-pichai-ai-release-notes-podcast/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-11-25T23:39:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Release_Notes_Sundar_Pichai_003.max-600x600.format-webp.webp\"\u003eSundar Pichai sits down with Logan Kilpatrick to discuss Gemini 3 on the Google AI: Release Notes podcast."
+    },
+    {
+      "title": "Security that strengthens the ecosystem: Docker’s upstream approach to CVE-2025-12735",
+      "link": "https://www.docker.com/blog/security-that-strengthens-the-ecosystem-dockers-upstream-approach-to-cve-2025-12735/",
+      "source": "Docker Blog",
+      "category": "tech",
+      "publishedAt": "2025-11-26T17:06:24Z",
+      "description": "On November 24, 2025, Docker Hardened Images resolved CVE-2025-12735 in the Kibana project, which is the visualization and user interface layer for Elasticsearch. This CVE is a critical remote code execution vulnerability that scored 9.8 on the CVSS scale. While images from other hardened image vendors were still carrying the vulnerability, Docker’s security team and..."
+    },
+    {
+      "title": "Show HN: A visual AI interface to understand topics/books/papers with LLMs",
+      "link": "https://www.kerns.ai/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-26T21:59:40Z",
+      "description": "\n\u003cp\u003eLLMs make us feel like we can learn anything, but chat is just one primitive. I'm trying to build interfaces which let us cover a topic our sources at length with AI.\nThese interfaces let us consolidate our understanding at glance so we don't get lost in long chat message histories, zoom in and zoom out of information fast and minimize tedious work such as context engineering.\nCurious if you find this interesting, and have feedback! Please try it (it's free).\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46062851\"\u003ehttps://news.ycombinator.com/item?id=46062851\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Xtd: Modern C++20 framework (CLI, GUI, unit tests)",
+      "link": "https://gammasoft71.github.io/xtd/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-26T21:58:22Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://gammasoft71.github.io/xtd/\"\u003ehttps://gammasoft71.github.io/xtd/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46062838\"\u003ehttps://news.ycombinator.com/item?id=46062838\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Genesis Mission: A National Mission to Accelerate Science Through AI",
+      "link": "https://genesis.energy.gov/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-26T21:58:20Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://genesis.energy.gov/\"\u003ehttps://genesis.energy.gov/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46062836\"\u003ehttps://news.ycombinator.com/item?id=46062836\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Online Tools Aggregator",
+      "link": "https://www.tools-best.com/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-26T21:57:46Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.tools-best.com/\"\u003ehttps://www.tools-best.com/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46062827\"\u003ehttps://news.ycombinator.com/item?id=46062827\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: White-Box-Coder – AI that self-reviews and fixes its own code\"",
+      "link": "https://github.com/EMMA019/WHITE-BOX-CODER",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-26T21:57:16Z",
+      "description": "\n\u003cp\u003eSingle-Shot Architecture: Optimized for speed and cost-efficiency using a single API call to handle the entire generation-review-fix cycle.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46062820\"\u003ehttps://news.ycombinator.com/item?id=46062820\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Greek Cybercrime Unit Shuts Down IPTV Pirates, 68 End Users Face Fines",
+      "link": "https://torrentfreak.com/cybercrime-unit-shuts-down-iptv-pirates-68-end-users-face-fines-251126/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-26T21:57:13Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://torrentfreak.com/cybercrime-unit-shuts-down-iptv-pirates-68-end-users-face-fines-251126/\"\u003ehttps://torrentfreak.com/cybercrime-unit-shuts-down-iptv-pirates-68-end-users-face-fines-251126/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46062819\"\u003ehttps://news.ycombinator.com/item?id=46062819\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Tailwind - How I think about CSS authorship in 2025",
+      "link": "https://wlls.dev/blog/on-tailwind",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-26T21:55:34Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://wlls.dev/blog/on-tailwind\"\u003ehttps://wlls.dev/blog/on-tailwind\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46062805\"\u003ehttps://news.ycombinator.com/item?id=46062805\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Antimatter Development Program – Casey Handmer's Blog",
+      "link": "https://caseyhandmer.wordpress.com/2025/11/26/antimatter-development-program/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-26T21:54:36Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://caseyhandmer.wordpress.com/2025/11/26/antimatter-development-program/\"\u003ehttps://caseyhandmer.wordpress.com/2025/11/26/antimatter-development-program/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46062794\"\u003ehttps://news.ycombinator.com/item?id=46062794\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "EU approves Chat Control policy",
+      "link": "https://www.techradar.com/vpn/vpn-privacy-security/chat-control-eu-lawmakers-finally-agree-on-the-voluntary-scanning-of-your-private-chats",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-26T21:52:14Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.techradar.com/vpn/vpn-privacy-security/chat-control-eu-lawmakers-finally-agree-on-the-voluntary-scanning-of-your-private-chats\"\u003ehttps://www.techradar.com/vpn/vpn-privacy-security/chat-control-eu-lawmakers-finally-agree-on-the-voluntary-scanning-of-your-private-chats\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46062777\"\u003ehttps://news.ycombinator.com/item?id=46062777\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 7\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Juno Neutrino Observatory Releases First Results",
+      "link": "https://www.scientificamerican.com/article/juno-neutrino-observatory-releases-first-results/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-26T21:49:11Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.scientificamerican.com/article/juno-neutrino-observatory-releases-first-results/\"\u003ehttps://www.scientificamerican.com/article/juno-neutrino-observatory-releases-first-results/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46062746\"\u003ehttps://news.ycombinator.com/item?id=46062746\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 4\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Brain Has a Built-In Isolation Mode",
+      "link": "https://neurosciencenews.com/neuroscience-sickness-isolation-29979/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-26T21:46:59Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://neurosciencenews.com/neuroscience-sickness-isolation-29979/\"\u003ehttps://neurosciencenews.com/neuroscience-sickness-isolation-29979/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46062720\"\u003ehttps://news.ycombinator.com/item?id=46062720\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "WeDo: Collaborative gift registry that solves the holiday coordination headache",
+      "link": "https://www.wedoto.day",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-26T21:42:07Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.wedoto.day\"\u003ehttps://www.wedoto.day\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46062679\"\u003ehttps://news.ycombinator.com/item?id=46062679\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Prepared Statements? Prepared to Be Vulnerable",
+      "link": "https://blog.mantrainfosec.com/blog/18/prepared-statements-prepared-to-be-vulnerable",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-26T21:40:11Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://blog.mantrainfosec.com/blog/18/prepared-statements-prepared-to-be-vulnerable\"\u003ehttps://blog.mantrainfosec.com/blog/18/prepared-statements-prepared-to-be-vulnerable\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46062664\"\u003ehttps://news.ycombinator.com/item?id=46062664\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Cause of Cultural Stagnation",
+      "link": "https://www.slowboring.com/p/the-hidden-cause-of-cultural-stagnation",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-26T21:39:42Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.slowboring.com/p/the-hidden-cause-of-cultural-stagnation\"\u003ehttps://www.slowboring.com/p/the-hidden-cause-of-cultural-stagnation\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46062659\"\u003ehttps://news.ycombinator.com/item?id=46062659\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "David Lerner, cofounder of Tekserve, has died",
+      "link": "https://www.nytimes.com/2025/11/26/technology/personaltech/david-lerner-dead.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-26T21:38:44Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nytimes.com/2025/11/26/technology/personaltech/david-lerner-dead.html\"\u003ehttps://www.nytimes.com/2025/11/26/technology/personaltech/david-lerner-dead.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46062650\"\u003ehttps://news.ycombinator.com/item?id=46062650\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "PyOpenSci Python Package Guide",
+      "link": "https://www.pyopensci.org/python-package-guide/index.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-26T21:38:25Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.pyopensci.org/python-package-guide/index.html\"\u003ehttps://www.pyopensci.org/python-package-guide/index.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46062646\"\u003ehttps://news.ycombinator.com/item?id=46062646\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Human brains have 5 distinct 'epochs' in a lifetime",
+      "link": "https://www.nbcnews.com/science/science-news/human-brains-5-epochs-development-rcna245663",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-26T21:36:35Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nbcnews.com/science/science-news/human-brains-5-epochs-development-rcna245663\"\u003ehttps://www.nbcnews.com/science/science-news/human-brains-5-epochs-development-rcna245663\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46062627\"\u003ehttps://news.ycombinator.com/item?id=46062627\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Vocabulary development in autistic children: a network growth analysis",
+      "link": "https://acamh.onlinelibrary.wiley.com/doi/10.1111/jcpp.70076",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-26T21:33:16Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://acamh.onlinelibrary.wiley.com/doi/10.1111/jcpp.70076\"\u003ehttps://acamh.onlinelibrary.wiley.com/doi/10.1111/jcpp.70076\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46062594\"\u003ehttps://news.ycombinator.com/item?id=46062594\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Academic assassinations are a threat to global science",
+      "link": "https://physicsworld.com/a/academic-assassinations-are-a-threat-to-global-science/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-26T21:32:13Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://physicsworld.com/a/academic-assassinations-are-a-threat-to-global-science/\"\u003ehttps://physicsworld.com/a/academic-assassinations-are-a-threat-to-global-science/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46062583\"\u003ehttps://news.ycombinator.com/item?id=46062583\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Worktrunk: Git worktree manager, designed for parallel agents, written in Rust",
+      "link": "https://github.com/max-sixty/worktrunk",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-26T21:30:08Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/max-sixty/worktrunk\"\u003ehttps://github.com/max-sixty/worktrunk\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46062561\"\u003ehttps://news.ycombinator.com/item?id=46062561\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Turning Handoffs into Handshakes: Integrating Design Systems for AI Prototyping at Scale",
+      "link": "https://www.atlassian.com/blog/design/turning-handoffs-into-handshakes-integrating-design-systems-for-ai-prototyping-at-scale",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2025-11-26T19:17:23Z",
+      "description": "\u003cp\u003eDesign is changing, and so are our tools. At Atlassian, we’re bringing AI into design and engineering with purpose. Early...\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/design/turning-handoffs-into-handshakes-integrating-design-systems-for-ai-prototyping-at-scale\"\u003eTurning Handoffs into Handshakes: Integrating Design Systems for AI Prototyping at Scale\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "How Marketing Leaders Get More Done: Tips from Loom × ServiceRocket",
+      "link": "https://www.atlassian.com/blog/loom/marketing-leaders-get-more-done-with-loom",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2025-11-25T23:41:01Z",
+      "description": "\u003cp\u003eIn today’s hybrid, global world, marketing leaders are navigating more complexity than ever—distributed teams, endless meetings, and pressure to prove...\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/loom/marketing-leaders-get-more-done-with-loom\"\u003eHow Marketing Leaders Get More Done: Tips from Loom × ServiceRocket\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "How I Use Loom \u0026 Rovo for Competitive Analysis (and Actually Have Fun Doing It)",
+      "link": "https://www.atlassian.com/blog/loom/how-to-use-loom-and-rovo-for-compete",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2025-11-25T23:39:53Z",
+      "description": "\u003cp\u003eWhy Competitive Analysis Needs an Upgrade Competitive analysis is essential, but it can be overwhelming—digging through scattered docs, piecing together...\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/loom/how-to-use-loom-and-rovo-for-compete\"\u003eHow I Use Loom \u0026amp; Rovo for Competitive Analysis (and Actually Have Fun Doing It)\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "How Loom Supercharges Cross-Functional Alignment for Go-to-Market Success",
+      "link": "https://www.atlassian.com/blog/loom/how-loom-supercharges-gtm-success",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2025-11-25T23:38:11Z",
+      "description": "\u003cp\u003eIn today’s fast-paced, distributed work environment, aligning cross-functional teams on go-to-market (GTM) strategy is more critical and more challenging than...\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/loom/how-loom-supercharges-gtm-success\"\u003eHow Loom Supercharges Cross-Functional Alignment for Go-to-Market Success\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Master Spring Data AOT in IntelliJ IDEA",
+      "link": "https://blog.jetbrains.com/idea/2025/11/spring-data-aot/",
+      "source": "IntelliJ IDEA : IntelliJ IDEA – the IDE for Professional Development in Java and Kotlin | The JetBrains Blog",
+      "category": "tech",
+      "publishedAt": "2025-11-26T14:50:05Z",
+      "description": "Spring’s AOT engine has been around since the Spring Native days, but Spring Data never really benefited from it – until now. Repository infrastructure is one of the most dynamic parts of the framework, and for years it relied heavily on proxies, reflection, and queries generated at runtime. That flexibility has a price: it slows [\u0026#8230;]"
+    },
+    {
+      "title": "From Government to Gaming, AI Is ‘Strengthening Korea’s Digital Foundation,’ NVIDIA Leader Says at AI Day Seoul",
+      "link": "https://blogs.nvidia.com/blog/ai-day-seoul/",
+      "source": "NVIDIA Blog",
+      "category": "tech",
+      "publishedAt": "2025-11-26T17:00:32Z",
+      "description": "Last week, more than 1,000 attendees joined NVIDIA AI Day Seoul to learn about sovereign AI — including breakout sessions on agentic and physical AI, hands-on workshops and a startup reception for members of the NVIDIA Inception program, all offering insights into the current and future landscape of the AI ecosystem in Korea. "
+    }
+  ],
+  "generatedAt": "2025-11-27T07:09:17.944849022+09:00"
+}
