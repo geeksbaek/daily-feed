@@ -1,0 +1,306 @@
+{
+  "date": "2025-11-28",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2025년 11월 27일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** T1과 Grok AI의 '롤' 대결 성사부터 CPU에서 돌아가는 고성능 임베딩 모델 LEAF, 그리고 S\u0026box의 오픈소스 전환까지, AI와 개발 생태계의 경계가 확장되는 하루입니다.\n\n---\n\n## 🏆 Top Story: AI vs 인간, 최후의 승부처\n### T1, 일론 머스크의 'Grok AI'와 리그 오브 레전드 대결 수락\n전설적인 e스포츠 팀 T1이 일론 머스크의 xAI가 개발한 'Grok'과의 리그 오브 레전드(LoL) 대결 제안을 공식 수락했습니다. 체스(Deep Blue), 바둑(AlphaGo)에 이어, 실시간 전략과 팀워크가 필수적인 MOBA 장르에서도 AI가 인간 정점을 넘어설 수 있을지 전 세계의 이목이 쏠리고 있습니다. 단순한 이벤트 매치를 넘어, 복잡한 의사결정 환경에서의 AI 성능을 검증하는 중요한 기술적 이정표가 될 전망입니다.\n\u003e **Key Point:** 단순 연산을 넘어선 AI의 '전략적 직관'과 '팀플레이' 능력이 시험대에 오릅니다. [^29]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. LEAF: CPU만으로 OpenAI급 성능을 내는 임베딩 모델\n새로운 임베딩 모델 LEAF가 공개되었습니다. 단 2,300만(23M) 개의 파라미터만으로 OpenAI의 임베딩 모델 성능의 97%를 달성했습니다.\n- **What:** GPU 없이 CPU만으로도 고속 작동하며, 영어와 코드 검색 벤치마크(MTEB)에서 뛰어난 성과를 기록했습니다.\n- **Why:** 거대 모델의 비용과 인프라 제약 없이, 로컬 환경이나 엣지 디바이스에서도 고품질 검색/RAG(검색 증강 생성) 구현이 가능해집니다.\n- **Impact:** 온디바이스 AI와 개인정보 보호가 중요한 기업 환경에서 강력한 대안이 될 것입니다. [^11]\n\n### 2. S\u0026box 게임 엔진, 오픈소스로 전격 전환\n'게리 모드(Garry's Mod)'의 후속작이자 샌드박스 플랫폼인 S\u0026box가 자체 게임 엔진을 오픈소스로 공개한다고 발표했습니다.\n- **What:** 개발자들은 이제 S\u0026box의 엔진 코드를 자유롭게 수정하고 배포할 수 있게 됩니다.\n- **Why:** 유니티(Unity) 등의 상용 엔진 라이선스 이슈 이후, 개발자 주권과 커뮤니티 주도 개발의 중요성이 커졌기 때문입니다.\n- **Impact:** 인디 게임 개발 생태계에 새로운 활력을 불어넣고, 모딩(Modding) 커뮤니티의 기술적 자유도가 극대화될 것으로 보입니다. [^9]\n\n### 3. DRAM 가격 급등, 업계의 '공급 부족' 주장에 의구심\n메모리 반도체(DRAM) 가격이 다시 치솟고 있지만, 시장 분석가들은 제조사들의 설명을 전적으로 신뢰하기 어렵다는 반응입니다.\n- **What:** 주요 제조사들은 AI 수요 폭증을 이유로 들지만, 실제 범용 DRAM 재고와 수요 사이의 괴리가 지적되고 있습니다.\n- **Why:** AI용 HBM(고대역폭 메모리) 생산 집중으로 인한 레거시 라인 축소가 원인일 수 있으나, 가격 인상을 위한 전략적 공급 조절 의혹도 제기됩니다.\n- **Impact:** PC 및 서버 구축 비용 상승으로 이어져, IT 인프라 투자에 단기적인 부담이 될 전망입니다. [^5]\n\n### 4. \"앱을 다운로드하지 마라\": 웹의 반격\n최근 기술 트렌드는 네이티브 앱 설치보다 웹(Web) 기반 접근을 다시 강조하고 있습니다.\n- **What:** PWA(프로그레시브 웹 앱) 기술의 발전과 앱 스토어의 수수료/검열 문제로 인해, 브라우저를 통한 서비스 이용이 권장되는 추세입니다.\n- **Why:** 사용자는 저장 공간을 아끼고, 개발자는 배포의 자유를 얻을 수 있습니다.\n- **Impact:** 모바일 생태계가 폐쇄적인 앱 스토어 중심에서 다시 개방형 웹으로 무게 중심을 옮길지 주목됩니다. [^10]\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **VS Code v1.107 (Insiders)** | 2025년 11월 최신 빌드. 향상된 코드 편집 기능과 성능 개선 포함 [^1] |\n| **Tool** | **Gemini CLI** | 터미널에서 구글 Gemini를 활용해 에이전트 기반 코딩을 수행하는 팁과 트릭 [^8] |\n| **Dev** | **AWS Lambda Roadmap** | AWS 람다의 향후 기능 추가 및 개선 사항을 확인할 수 있는 공식 깃허브 로드맵 [^31] |\n| **Dev** | **IntelliJ Nullability** | 코드 작성 중 null 체크를 자동으로 지원하여 안정성을 높이는 IDE 기능 소개 [^37] |\n| **Concept** | **HATEOAS** | REST API의 핵심이지만 자주 간과되는 '애플리케이션 상태 엔진으로서의 하이퍼미디어' 개념 정리 [^13] |\n| **Data** | **Nixpkgs Graph** | 오픈소스 소프트웨어의 의존성 관계를 시각화하여 생태계 지도를 그리는 프로젝트 [^18] |\n| **Video** | **Bending Emacs** | Emacs의 Overlays 기능을 활용하여 에디터를 커스터마이징하는 심층 가이드 영상 [^15] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n\n#### 💻 개발 \u0026 인프라\n* **.NET 빌드/배포 재창조**: .NET 생태계의 빌드 및 배포 파이프라인을 현대적으로 재설계하려는 시도와 논의 [^3]\n* **파이썬 통계적 공정 관리**: 파이썬을 활용해 제조 및 품질 관리 데이터를 통계적으로 분석하는 방법론 [^4]\n* **Managed Code**: 닷넷 등 관리형 코드(Managed Code) 개발자를 위한 새로운 리소스 사이트 오픈 [^21]\n* **Cloudwashing to O11ywashing**: 클라우드 전환 흉내(Cloudwashing)에 이어, 관찰 가능성(Observability) 도입을 흉내만 내는 세태 비판 [^28]\n\n#### 🧪 과학 \u0026 우주\n* **무한의 수학과 CS**: 수학적 무한의 개념과 컴퓨터 과학을 연결하는 새로운 이론적 접근 [^6]\n* **최소한의 세포**: 생명 유지에 필요한 최소 유전자만 남긴 세포 연구를 통해 생명의 정의를 재탐구 [^7]\n* **반물질 추진체 가속화**: 우주 탐사 속도 혁신을 위해 반물질 추진 기술 개발을 서둘러야 한다는 주장 [^22]\n* **바이코누르 발사대 손상**: 러시아 소유즈 로켓 발사 후 국제우주정거장(ISS) 미션 중 발사대 손상 발생 [^24]\n* **수소 연료의 친환경성 논란**: 수소 연료가 생산 방식에 따라 항상 친환경적인 선택은 아닐 수 있다는 네이처 기고 [^16]\n* **십진법 미로의 심연**: 숫자와 철학을 연결하는 난해하고 기묘한 수비학적 탐구 [^30]\n\n#### 🤖 AI \u0026 데이터\n* **AlphaFold 아태지역 활용**: 아시아-태평양 지역 연구자들이 구글의 AlphaFold를 활용해 생물학 난제를 해결하는 사례 [^32] [^35]\n* **구글 아트 \u0026 컬처 AI**: 이번 연휴 시즌에 즐길 수 있는 예술, 과학, 여행 테마의 3가지 새로운 AI 경험 [^33]\n* **텔아비브 대학 AI 파트너십**: 구글이 이스라엘 텔아비브 대학과의 AI 연구 협력을 심화한다고 발표 [^34]\n* **Data Science Weekly 627호**: 최신 데이터 사이언스 뉴스, 튜토리얼, 채용 정보를 담은 주간 뉴스레터 [^12]\n* **OpenReview 데이터 유출**: 학술 논문 리뷰 플랫폼 OpenReview에서 발생한 모든 데이터 유출 사건 정리 [^17]\n\n#### 📱 하드웨어 \u0026 모바일 \u0026 기타\n* **비공식 iOS 실행**: 지원이 중단된 구형 기기에서 최신 iOS를 비공식적으로 구동하는 해킹 프로젝트 [^2]\n* **드론 전쟁의 진화**: 현대전의 양상을 바꾼 드론이 또 한 번의 군사적 혁명을 예고한다는 분석 [^25]\n* **시청각 중복 장애용 점자**: 시각과 청각 장애를 동시에 가진 분들을 위한 진동 점자(Vibro-Braille) 기술 [^19]\n* **NVIDIA 블랙 프라이데이**: 지포스 나우(GeForce Now) 클라우드 게이밍 서비스의 대규모 할인 프로모션 [^36]\n* **초기 블로그에 대한 진혼곡**: 소셜 미디어 이전, 초기 블로그 시대의 감성과 문화를 회고하는 에세이 [^23]\n* **캐나다 송유관 계약**: 캐나다 브리티시컬럼비아주가 유조선 금지 조치를 뒤집을 수 있는 송유관 계약 체결 [^14]\n* **92세 육상 선수**: 92세의 나이로 육상 기록을 경신하며 운동 수명의 정의를 다시 쓰는 Emma Mazzenga [^27]\n* **스위트 증후군**: 급성 열성 호중구 피부증(Sweet Syndrome)에 대한 의학적 개요 및 정보 [^20]\n* **Lucas Abela 라이브**: 유리를 악기로 사용하는 독특한 노이즈 뮤지션의 라이브 퍼포먼스 영상 [^26]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘 뉴스는 '**경계의 붕괴**'로 요약됩니다. T1과 AI의 대결은 인간과 기계의 경계를, LEAF 모델은 고성능 AI와 저사양 하드웨어의 경계를, S\u0026box는 상용 엔진과 오픈소스의 경계를 허물고 있습니다. 특히 개발자분들은 CPU에서 가볍게 돌아가는 임베딩 모델(LEAF)과 VS Code의 새로운 업데이트를 눈여겨보시면 좋겠습니다.\n\n---\n\n[^1]: November 2025 Insiders (version 1.107) - https://code.visualstudio.com/updates/v1_107\n[^2]: 지원 중단된 기기에서 비공식 iOS 실행하기 - https://news.hada.io/topic?id=24668\n[^3]: .NET 빌드와 배포 방식의 재창조 (다시) - https://news.hada.io/topic?id=24667\n[^4]: 파이썬에서의 통계적 공정 관리 - https://news.hada.io/topic?id=24666\n[^5]: DRAM 가격이 급등하고 있지만 업계의 설명을 신뢰하기 어렵다 - https://news.hada.io/topic?id=24664\n[^6]: 무한의 기묘한 수학과 컴퓨터 과학을 잇는 새로운 다리 - https://news.hada.io/topic?id=24663\n[^7]: 생명의 정의를 흔드는 최소한의 세포 - https://news.hada.io/topic?id=24662\n[^8]: Gemini CLI를 활용한 에이전틱 코딩 팁과 트릭 - https://news.hada.io/topic?id=24661\n[^9]: S\u0026box가 오픈소스 게임 엔진으로 전환 - https://news.hada.io/topic?id=24660\n[^10]: 앱을 다운로드하지 말라 - https://news.hada.io/topic?id=24658\n[^11]: LEAF: 23M 파라미터로 OpenAI 임베딩 성능 97% 달성, CPU만으로 작동 - https://news.hada.io/topic?id=24657\n[^12]: Data Science Weekly – Issue 627 - https://datascienceweekly.substack.com/p/data-science-weekly-issue-627\n[^13]: What Is HATEOAS? - https://blog.hmpl-lang.dev/2025/11/27/what-is-hateoas/\n[^14]: Canada signs pipeline deal that could reverse oil tanker ban - https://apnews.com/article/canada-oil-pipeline-alberta-oil-british-columbia-carney-bdbd13b337ee12a34a708af0ea63da97\n[^15]: Bending Emacs – Episode 6: Overlays [video] - https://www.youtube.com/watch?v=93wWCroTKnM\n[^16]: Hydrogen fuel isn't always the green choice - https://www.nature.com/articles/d41586-025-03695-0\n[^17]: All OpenReview Data Leaks - https://twitter.com/iclr_conf/status/1994104147373903893\n[^18]: Mapping a universe of open source software: the Nixpkgs dependency graph - https://www.tweag.io/blog/2019-02-06-mapping-open-source/\n[^19]: Vibro-Braille for Deaf-Blind - https://news.ycombinator.com/item?id=46073459\n[^20]: Acute Febrile Neutrophilic Dermatosis (Sweet Syndrome) - https://emedicine.medscape.com/article/1122152-overview\n[^21]: Managed Code – New Site - https://www.managed-code.com/\n[^22]: It's time to accelerate the development of antimatter for space propulsion - https://caseyhandmer.wordpress.com/2025/11/26/antimatter-development-program/\n[^23]: Requiem for Early Blogging - https://www.elizabethspiers.com/requiem-for-early-blogging/\n[^24]: Baikonur launch pad damaged after Russian Soyuz launch to Space Station - https://www.reuters.com/science/baikonur-launch-pad-damaged-after-russian-soyuz-launch-international-space-2025-11-27/\n[^25]: Drones have revolutionized warfare. They're about to do it again - https://www.cnn.com/2025/11/27/world/history-future-of-drones-intl-hnk-ml-dst\n[^26]: Lucas 'Granpa' Abela live [video] - https://www.youtube.com/watch?v=2aMBMbEWc6I\u0026list=RD2aMBMbEWc6I\n[^27]: Emma Mazzenga is redefining athletic longevity at 92 years old - https://www.cnn.com/2025/11/27/sport/athletics-emma-mazzenga-redefining-longevity-92-intl\n[^28]: From Cloudwashing to O11ywashing - https://charity.wtf/2025/11/24/from-cloudwashing-to-o11ywashing/\n[^29]: T1 accepts Elon Musk's challenge for top LoL team to compete against Grok AI - https://www.dexerto.com/league-of-legends/t1-accepts-elon-musks-challenge-for-top-lol-team-to-compete-against-grok-ai-3286754/\n[^30]: Yawning Abyss of the Decimal Labyrinth - https://oh4.co/site/numogrammaticism.html\n[^31]: AWS-Lambda-Roadmap - https://github.com/aws/aws-lambda-roadmap\n[^32]: Here’s how researchers in Asia-Pacific are using AlphaFold - https://blog.google/around-the-globe/google-asia/researchers-asia-pacific-alphafold-five-years/\n[^33]: Art, science, travel: 3 new AI-powered experiences this holiday season - https://blog.google/outreach-initiatives/arts-culture/ai-cultural-learning/\n[^34]: Deepening our AI research partnership with Tel Aviv University - https://blog.google/outreach-initiatives/google-org/deepening-our-ai-research-partnership-with-tel-aviv-university/\n[^35]: Here’s how researchers in Asia-Pacific are using AlphaFold - https://blog.google/around-the-globe/google-asia/researchers-asia-pacific-alphafold-five-years/\n[^36]: The Ultimate Black Friday Deal Is Here - https://blogs.nvidia.com/blog/geforce-now-thursday-black-friday-2025/\n[^37]: One Could Simply Add Nullability Check Support… Without Even Noticing It - https://blog.jetbrains.com/idea/2025/11/one-could-simply-add-nullability-check-support-without-even-noticing-it/\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **November 2025 Insiders (version 1.107)**\n   - 출처: Visual Studio Code - Code Editing. Redefined.\n   - 링크: https://code.visualstudio.com/updates/v1_107\n\n2. **지원 중단된 기기에서 비공식 iOS 실행하기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24668\n\n3. **.NET 빌드와 배포 방식의 재창조 (다시)**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24667\n\n4. **파이썬에서의 통계적 공정 관리**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24666\n\n5. **DRAM 가격이 급등하고 있지만 업계의 설명을 신뢰하기 어렵다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24664\n\n6. **무한의 기묘한 수학과 컴퓨터 과학을 잇는 새로운 다리**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24663\n\n7. **생명의 정의를 흔드는 최소한의 세포**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24662\n\n8. **Gemini CLI를 활용한 에이전틱 코딩 팁과 트릭**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24661\n\n9. **S\u0026box가 오픈소스 게임 엔진으로 전환**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24660\n\n10. **앱을 다운로드하지 말라**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24658\n\n11. **LEAF: 23M 파라미터로 OpenAI 임베딩 성능 97% 달성, CPU만으로 작동**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24657\n\n12. **Data Science Weekly – Issue 627**\n   - 출처: Hacker News\n   - 링크: https://datascienceweekly.substack.com/p/data-science-weekly-issue-627\n\n13. **What Is HATEOAS?**\n   - 출처: Hacker News\n   - 링크: https://blog.hmpl-lang.dev/2025/11/27/what-is-hateoas/\n\n14. **Canada signs pipeline deal that could reverse oil tanker ban**\n   - 출처: Hacker News\n   - 링크: https://apnews.com/article/canada-oil-pipeline-alberta-oil-british-columbia-carney-bdbd13b337ee12a34a708af0ea63da97\n\n15. **Bending Emacs – Episode 6: Overlays [video]**\n   - 출처: Hacker News\n   - 링크: https://www.youtube.com/watch?v=93wWCroTKnM\n\n16. **Hydrogen fuel isn't always the green choice**\n   - 출처: Hacker News\n   - 링크: https://www.nature.com/articles/d41586-025-03695-0\n\n17. **All OpenReview Data Leaks**\n   - 출처: Hacker News\n   - 링크: https://twitter.com/iclr_conf/status/1994104147373903893\n\n18. **Mapping a universe of open source software: the Nixpkgs dependency graph**\n   - 출처: Hacker News\n   - 링크: https://www.tweag.io/blog/2019-02-06-mapping-open-source/\n\n19. **Vibro-Braille for Deaf-Blind**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=46073459\n\n20. **Acute Febrile Neutrophilic Dermatosis (Sweet Syndrome)**\n   - 출처: Hacker News\n   - 링크: https://emedicine.medscape.com/article/1122152-overview\n\n21. **Managed Code – New Site**\n   - 출처: Hacker News\n   - 링크: https://www.managed-code.com/\n\n22. **It's time to accelerate the development of antimatter for space propulsion**\n   - 출처: Hacker News\n   - 링크: https://caseyhandmer.wordpress.com/2025/11/26/antimatter-development-program/\n\n23. **Requiem for Early Blogging**\n   - 출처: Hacker News\n   - 링크: https://www.elizabethspiers.com/requiem-for-early-blogging/\n\n24. **Baikonur launch pad damaged after Russian Soyuz launch to Space Station**\n   - 출처: Hacker News\n   - 링크: https://www.reuters.com/science/baikonur-launch-pad-damaged-after-russian-soyuz-launch-international-space-2025-11-27/\n\n25. **Drones have revolutionized warfare. They're about to do it again**\n   - 출처: Hacker News\n   - 링크: https://www.cnn.com/2025/11/27/world/history-future-of-drones-intl-hnk-ml-dst\n\n26. **Lucas 'Granpa' Abela live [video]**\n   - 출처: Hacker News\n   - 링크: https://www.youtube.com/watch?v=2aMBMbEWc6I\u0026list=RD2aMBMbEWc6I\n\n27. **Emma Mazzenga is redefining athletic longevity at 92 years old**\n   - 출처: Hacker News\n   - 링크: https://www.cnn.com/2025/11/27/sport/athletics-emma-mazzenga-redefining-longevity-92-intl\n\n28. **From Cloudwashing to O11ywashing**\n   - 출처: Hacker News\n   - 링크: https://charity.wtf/2025/11/24/from-cloudwashing-to-o11ywashing/\n\n29. **T1 accepts Elon Musk's challenge for top LoL team to compete against Grok AI**\n   - 출처: Hacker News\n   - 링크: https://www.dexerto.com/league-of-legends/t1-accepts-elon-musks-challenge-for-top-lol-team-to-compete-against-grok-ai-3286754/\n\n30. **Yawning Abyss of the Decimal Labyrinth**\n   - 출처: Hacker News\n   - 링크: https://oh4.co/site/numogrammaticism.html\n\n31. **AWS-Lambda-Roadmap**\n   - 출처: Hacker News\n   - 링크: https://github.com/aws/aws-lambda-roadmap\n\n32. **Here’s how researchers in Asia-Pacific are using AlphaFold**\n   - 출처: AI\n   - 링크: https://blog.google/around-the-globe/google-asia/researchers-asia-pacific-alphafold-five-years/\n\n33. **Art, science, travel: 3 new AI-powered experiences this holiday season**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/outreach-initiatives/arts-culture/ai-cultural-learning/\n\n34. **Deepening our AI research partnership with Tel Aviv University**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/outreach-initiatives/google-org/deepening-our-ai-research-partnership-with-tel-aviv-university/\n\n35. **Here’s how researchers in Asia-Pacific are using AlphaFold**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/around-the-globe/google-asia/researchers-asia-pacific-alphafold-five-years/\n\n36. **The Ultimate Black Friday Deal Is Here**\n   - 출처: NVIDIA Blog\n   - 링크: https://blogs.nvidia.com/blog/geforce-now-thursday-black-friday-2025/\n\n37. **One Could Simply Add Nullability Check Support… Without Even Noticing It**\n   - 출처: IntelliJ IDEA : IntelliJ IDEA – the IDE for Professional Development in Java and Kotlin | The JetBrains Blog\n   - 링크: https://blog.jetbrains.com/idea/2025/11/one-could-simply-add-nullability-check-support-without-even-noticing-it/\n\n\n",
+  "articles": [
+    {
+      "title": "November 2025 Insiders (version 1.107)",
+      "link": "https://code.visualstudio.com/updates/v1_107",
+      "source": "Visual Studio Code - Code Editing. Redefined.",
+      "category": "tech",
+      "publishedAt": "2025-12-10T17:00:00Z",
+      "description": "\n      \u003cp\u003eLearn what is new in the Visual Studio Code November 2025 Release (1.107).\u003c/p\u003e\n      \u003cp\u003e\u003ca href=\"https://code.visualstudio.com/updates/v1_107\"\u003eRead the full article\u003c/a\u003e\u003c/p\u003e\n    "
+    },
+    {
+      "title": "지원 중단된 기기에서 비공식 iOS 실행하기",
+      "link": "https://news.hada.io/topic?id=24668",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-28T06:37:18+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eiPod touch 3세대\u003c/strong\u003e에서 공식적으로 지원되지 않는 \u003cstrong\u003eiOS 6\u003c/strong\u003e을 구동하기 위한 기술적 과정을 상세히 설명한 프로젝트\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eDeviceTree\u003c/strong\u003e, \u003cstrong\u003eiBoot\u003c/strong\u003e, \u003cstrong\u003eKernelcache\u003c/strong\u003e, \u003cstrong\u003eRestore Ramdisk\u003c/strong\u003e, \u003cstrong\u003eRoot Filesyst...\u003c/p\u003e"
+    },
+    {
+      "title": ".NET 빌드와 배포 방식의 재창조 (다시)",
+      "link": "https://news.hada.io/topic?id=24667",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-28T06:34:17+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e.NET Unified Build 프로젝트\u003c/strong\u003e는 기존 분산형 저장소 기반 빌드 구조의 복잡성과 비효율을 줄이기 위해, 제품 전체를 \u003cstrong\u003e‘가상 단일 저장소(Virtual Monolithic Repository, VMR)’\u003c/strong\u003e 형태로 통합한 새로운 빌드 체계\u003c/li\u003e\n\u003cli\u003e기존의 \u003cstrong\u003e분산형 제품 구성 방식\u003c/strong\u003e은...\u003c/p\u003e"
+    },
+    {
+      "title": "파이썬에서의 통계적 공정 관리",
+      "link": "https://news.hada.io/topic?id=24666",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-28T05:32:53+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e통계적 공정 관리(SPC)\u003c/strong\u003e 를 파이썬으로 구현해 제품 품질의 \u003cstrong\u003e시간적 변동과 개입 시점\u003c/strong\u003e을 파악하는 방법 소개\u003c/li\u003e\n\u003cli\u003e\n\u003ccode\u003epandas\u003c/code\u003e, \u003ccode\u003eplotnine\u003c/code\u003e, \u003ccode\u003escipy\u003c/code\u003e를 활용해 \u003cstrong\u003e데이터 처리·시각화·통계 계산\u003c/strong\u003e 수행\u003c/li\u003e\n\u003cli\u003e일본 가고시...\u003c/p\u003e"
+    },
+    {
+      "title": "DRAM 가격이 급등하고 있지만 업계의 설명을 신뢰하기 어렵다",
+      "link": "https://news.hada.io/topic?id=24664",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-28T04:33:39+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e2025년 전 세계 \u003cstrong\u003eDRAM 가격이 폭등\u003c/strong\u003e하며, 업계는 \u003cstrong\u003eAI 데이터센터 수요 급증\u003c/strong\u003e을 주요 원인으로 제시\u003c/li\u003e\n\u003cli\u003eDDR5 메모리 모듈 가격은 1년 전보다 \u003cstrong\u003e171.8% 상승\u003c/strong\u003e, 일부 제품은 \u003cstrong\u003e4배 이상 인상\u003c/strong\u003e된 사례도 존재\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e삼성·SK하이닉스·M...\u003c/p\u003e"
+    },
+    {
+      "title": "무한의 기묘한 수학과 컴퓨터 과학을 잇는 새로운 다리",
+      "link": "https://news.hada.io/topic?id=24663",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-28T03:33:19+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e무한 집합의 구조\u003c/strong\u003e를 연구하는 기술적 분야인 기술적 집합론이 \u003cstrong\u003e알고리듬 언어로 재해석\u003c/strong\u003e될 수 있음이 밝혀짐\u003c/li\u003e\n\u003cli\u003e수학자 Anton Bernshteyn은 \u003cstrong\u003e무한 그래프의 문제\u003c/strong\u003e가 \u003cstrong\u003e컴퓨터 네트워크의 통신 문제\u003c/strong\u003e로 다시 쓸 수 있음을 증명\u003c/li\u003e\n\u003cli\u003e이...\u003c/p\u003e"
+    },
+    {
+      "title": "생명의 정의를 흔드는 최소한의 세포",
+      "link": "https://news.hada.io/topic?id=24662",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-28T02:33:07+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e유전체가 극도로 축소된 단세포 생물\u003c/strong\u003e이 발견되어, 생명체의 정의를 다시 생각하게 하는 사례로 주목됨\u003c/li\u003e\n\u003cli\u003e이 미생물은 \u003cstrong\u003e대사 관련 유전자 대부분을 잃어\u003c/strong\u003e, 스스로 영양분을 처리하거나 성장할 수 없으며 \u003cstrong\u003e숙주 세포에 완전히 의존\u003c/strong\u003e함\u003c/li\u003e\n\u003cli\u003e연구진은...\u003c/p\u003e"
+    },
+    {
+      "title": "Gemini CLI를 활용한 에이전틱 코딩 팁과 트릭",
+      "link": "https://news.hada.io/topic?id=24661",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-28T01:33:39+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eGemini CLI\u003c/strong\u003e는 Google의 Gemini 모델을 터미널에서 직접 활용할 수 있는 오픈소스 AI 도우미로, 자연어 명령을 통해 코드 작성, 디버깅, 자동화 작업을 수행하는 \u003cstrong\u003e대화형 명령줄 도구\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e약 30개의 \u003cstrong\u003e전문가용 팁\u003c/strong\u003e을 통해 지속적 컨텍스트 관리(\u003ccode\u003eG...\u003c/p\u003e"
+    },
+    {
+      "title": "S\u0026box가 오픈소스 게임 엔진으로 전환",
+      "link": "https://news.hada.io/topic?id=24660",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-27T21:33:04+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eS\u0026amp;box\u003c/strong\u003e가 기존 상용 형태에서 \u003cstrong\u003e오픈소스 게임 엔진\u003c/strong\u003e으로 공개됨\u003c/li\u003e\n\u003cli\u003e개발자들이 \u003cstrong\u003e코드 접근과 수정\u003c/strong\u003e을 자유롭게 할 수 있는 구조로 변경\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e커뮤니티 중심 개발\u003c/strong\u003e이 가능해져 기능 확장과 협업이 용이해짐\u003c/li\u003e\n\u003cli\u003e기존 사용자...\u003c/p\u003e"
+    },
+    {
+      "title": "앱을 다운로드하지 말라",
+      "link": "https://news.hada.io/topic?id=24658",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-27T16:33:08+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e대만 등에서 \u003cstrong\u003e기업들이 앱 설치를 강요하며 개인정보를 수집하는 관행\u003c/strong\u003e이 확산되고 있음\u003c/li\u003e\n\u003cli\u003e매장 할인, 포인트 적립 등으로 유도하지만, \u003cstrong\u003e앱 설치 시 제공되는 데이터가 기업의 감시 자본주의 구조\u003c/strong\u003e로 흘러감\u003c/li\u003e\n\u003cli\u003e기업은 수집한 데이터를 통해 \u003cstrong\u003e개인별 가격 차...\u003c/p\u003e"
+    },
+    {
+      "title": "LEAF: 23M 파라미터로 OpenAI 임베딩 성능 97% 달성, CPU만으로 작동",
+      "link": "https://news.hada.io/topic?id=24657",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-27T16:19:21+09:00",
+      "description": "\u003cp\u003eLEAF(Lightweight Embedding Alignment Framework)은 MongoDB Research가 개발한 임베딩 모델로 지식 증류 기법을 이용, RAG(Retrieval-Augmented Generation) 시스템의 비용과 속도 문제를 해결하는 혁신적인 솔루션. 기존 고성능 임베딩 모델은 GPU 서버가 필수지만, LEAF는 23M 파라미터 규모의 소형 모델로 OpenA...\u003c/p\u003e"
+    },
+    {
+      "title": "Data Science Weekly – Issue 627",
+      "link": "https://datascienceweekly.substack.com/p/data-science-weekly-issue-627",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-27T21:58:46Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://datascienceweekly.substack.com/p/data-science-weekly-issue-627\"\u003ehttps://datascienceweekly.substack.com/p/data-science-weekly-issue-627\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46073584\"\u003ehttps://news.ycombinator.com/item?id=46073584\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "What Is HATEOAS?",
+      "link": "https://blog.hmpl-lang.dev/2025/11/27/what-is-hateoas/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-27T21:55:42Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://blog.hmpl-lang.dev/2025/11/27/what-is-hateoas/\"\u003ehttps://blog.hmpl-lang.dev/2025/11/27/what-is-hateoas/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46073567\"\u003ehttps://news.ycombinator.com/item?id=46073567\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Canada signs pipeline deal that could reverse oil tanker ban",
+      "link": "https://apnews.com/article/canada-oil-pipeline-alberta-oil-british-columbia-carney-bdbd13b337ee12a34a708af0ea63da97",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-27T21:52:12Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://apnews.com/article/canada-oil-pipeline-alberta-oil-british-columbia-carney-bdbd13b337ee12a34a708af0ea63da97\"\u003ehttps://apnews.com/article/canada-oil-pipeline-alberta-oil-british-columbia-carney-bdbd13b337ee12a34a708af0ea63da97\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46073547\"\u003ehttps://news.ycombinator.com/item?id=46073547\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Bending Emacs – Episode 6: Overlays [video]",
+      "link": "https://www.youtube.com/watch?v=93wWCroTKnM",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-27T21:50:34Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.youtube.com/watch?v=93wWCroTKnM\"\u003ehttps://www.youtube.com/watch?v=93wWCroTKnM\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46073541\"\u003ehttps://news.ycombinator.com/item?id=46073541\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Hydrogen fuel isn't always the green choice",
+      "link": "https://www.nature.com/articles/d41586-025-03695-0",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-27T21:45:21Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nature.com/articles/d41586-025-03695-0\"\u003ehttps://www.nature.com/articles/d41586-025-03695-0\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46073509\"\u003ehttps://news.ycombinator.com/item?id=46073509\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "All OpenReview Data Leaks",
+      "link": "https://twitter.com/iclr_conf/status/1994104147373903893",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-27T21:42:05Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://twitter.com/iclr_conf/status/1994104147373903893\"\u003ehttps://twitter.com/iclr_conf/status/1994104147373903893\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46073488\"\u003ehttps://news.ycombinator.com/item?id=46073488\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Mapping a universe of open source software: the Nixpkgs dependency graph",
+      "link": "https://www.tweag.io/blog/2019-02-06-mapping-open-source/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-27T21:42:02Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.tweag.io/blog/2019-02-06-mapping-open-source/\"\u003ehttps://www.tweag.io/blog/2019-02-06-mapping-open-source/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46073487\"\u003ehttps://news.ycombinator.com/item?id=46073487\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Vibro-Braille for Deaf-Blind",
+      "link": "https://news.ycombinator.com/item?id=46073459",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-27T21:37:07Z",
+      "description": "\n\u003cp\u003eWe've build a prototype of method potentially feasible to become the basis for assistive apps for deaf-blind individuals. For instance in communication or spatial navigation with just a sensor screen of a smartphone and haptic feedback.\u003cp\u003eWondering how to better approach real patients to test. And also curious how steep the learning curve would be.\u003cp\u003eAny thoughts and advices are highly appreciated.\u003cp\u003ehttps://www.kaggle.com/competitions/google-gemma-3n-hackathon/writeups/feelu-is-a-mobile-assistant-for-deaf-blind-individ\u003cp\u003ehttps://github.com/nullhtp/feelu\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46073459\"\u003ehttps://news.ycombinator.com/item?id=46073459\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Acute Febrile Neutrophilic Dermatosis (Sweet Syndrome)",
+      "link": "https://emedicine.medscape.com/article/1122152-overview",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-27T21:36:19Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://emedicine.medscape.com/article/1122152-overview\"\u003ehttps://emedicine.medscape.com/article/1122152-overview\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46073452\"\u003ehttps://news.ycombinator.com/item?id=46073452\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Managed Code – New Site",
+      "link": "https://www.managed-code.com/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-27T21:34:34Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.managed-code.com/\"\u003ehttps://www.managed-code.com/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46073434\"\u003ehttps://news.ycombinator.com/item?id=46073434\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "It's time to accelerate the development of antimatter for space propulsion",
+      "link": "https://caseyhandmer.wordpress.com/2025/11/26/antimatter-development-program/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-27T21:31:50Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://caseyhandmer.wordpress.com/2025/11/26/antimatter-development-program/\"\u003ehttps://caseyhandmer.wordpress.com/2025/11/26/antimatter-development-program/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46073414\"\u003ehttps://news.ycombinator.com/item?id=46073414\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Requiem for Early Blogging",
+      "link": "https://www.elizabethspiers.com/requiem-for-early-blogging/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-27T21:31:13Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.elizabethspiers.com/requiem-for-early-blogging/\"\u003ehttps://www.elizabethspiers.com/requiem-for-early-blogging/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46073402\"\u003ehttps://news.ycombinator.com/item?id=46073402\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Baikonur launch pad damaged after Russian Soyuz launch to Space Station",
+      "link": "https://www.reuters.com/science/baikonur-launch-pad-damaged-after-russian-soyuz-launch-international-space-2025-11-27/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-27T21:30:51Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.reuters.com/science/baikonur-launch-pad-damaged-after-russian-soyuz-launch-international-space-2025-11-27/\"\u003ehttps://www.reuters.com/science/baikonur-launch-pad-damaged-after-russian-soyuz-launch-international-space-2025-11-27/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46073398\"\u003ehttps://news.ycombinator.com/item?id=46073398\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Drones have revolutionized warfare. They're about to do it again",
+      "link": "https://www.cnn.com/2025/11/27/world/history-future-of-drones-intl-hnk-ml-dst",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-27T21:30:24Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.cnn.com/2025/11/27/world/history-future-of-drones-intl-hnk-ml-dst\"\u003ehttps://www.cnn.com/2025/11/27/world/history-future-of-drones-intl-hnk-ml-dst\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46073393\"\u003ehttps://news.ycombinator.com/item?id=46073393\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Lucas 'Granpa' Abela live [video]",
+      "link": "https://www.youtube.com/watch?v=2aMBMbEWc6I\u0026list=RD2aMBMbEWc6I",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-27T21:29:46Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.youtube.com/watch?v=2aMBMbEWc6I\u0026list=RD2aMBMbEWc6I\"\u003ehttps://www.youtube.com/watch?v=2aMBMbEWc6I\u0026list=RD2aMBMbEWc6I\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46073390\"\u003ehttps://news.ycombinator.com/item?id=46073390\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Emma Mazzenga is redefining athletic longevity at 92 years old",
+      "link": "https://www.cnn.com/2025/11/27/sport/athletics-emma-mazzenga-redefining-longevity-92-intl",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-27T21:29:02Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.cnn.com/2025/11/27/sport/athletics-emma-mazzenga-redefining-longevity-92-intl\"\u003ehttps://www.cnn.com/2025/11/27/sport/athletics-emma-mazzenga-redefining-longevity-92-intl\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46073383\"\u003ehttps://news.ycombinator.com/item?id=46073383\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "From Cloudwashing to O11ywashing",
+      "link": "https://charity.wtf/2025/11/24/from-cloudwashing-to-o11ywashing/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-27T21:25:42Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://charity.wtf/2025/11/24/from-cloudwashing-to-o11ywashing/\"\u003ehttps://charity.wtf/2025/11/24/from-cloudwashing-to-o11ywashing/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46073358\"\u003ehttps://news.ycombinator.com/item?id=46073358\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "T1 accepts Elon Musk's challenge for top LoL team to compete against Grok AI",
+      "link": "https://www.dexerto.com/league-of-legends/t1-accepts-elon-musks-challenge-for-top-lol-team-to-compete-against-grok-ai-3286754/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-27T21:25:01Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.dexerto.com/league-of-legends/t1-accepts-elon-musks-challenge-for-top-lol-team-to-compete-against-grok-ai-3286754/\"\u003ehttps://www.dexerto.com/league-of-legends/t1-accepts-elon-musks-challenge-for-top-lol-team-to-compete-against-grok-ai-3286754/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46073352\"\u003ehttps://news.ycombinator.com/item?id=46073352\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 2\u003c/p\u003e\n"
+    },
+    {
+      "title": "Yawning Abyss of the Decimal Labyrinth",
+      "link": "https://oh4.co/site/numogrammaticism.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-27T21:24:10Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://oh4.co/site/numogrammaticism.html\"\u003ehttps://oh4.co/site/numogrammaticism.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46073346\"\u003ehttps://news.ycombinator.com/item?id=46073346\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "AWS-Lambda-Roadmap",
+      "link": "https://github.com/aws/aws-lambda-roadmap",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-27T21:22:01Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/aws/aws-lambda-roadmap\"\u003ehttps://github.com/aws/aws-lambda-roadmap\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46073330\"\u003ehttps://news.ycombinator.com/item?id=46073330\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Here’s how researchers in Asia-Pacific are using AlphaFold",
+      "link": "https://blog.google/around-the-globe/google-asia/researchers-asia-pacific-alphafold-five-years/",
+      "source": "AI",
+      "category": "tech",
+      "publishedAt": "2025-11-26T23:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AlphaFold_-_APAC_Keyword_Header.max-600x600.format-webp.webp\"\u003eLearn more about AlphaFold, Google’s AI system that accurately predicts protein structures."
+    },
+    {
+      "title": "Art, science, travel: 3 new AI-powered experiences this holiday season",
+      "link": "https://blog.google/outreach-initiatives/arts-culture/ai-cultural-learning/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-11-27T10:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Hero_imagery_LE_WTV_AC.max-600x600.format-webp.webp\"\u003eThree new AI-powered experiments from Google give you new and creative ways to learn about topics across art, science and travel"
+    },
+    {
+      "title": "Deepening our AI research partnership with Tel Aviv University",
+      "link": "https://blog.google/outreach-initiatives/google-org/deepening-our-ai-research-partnership-with-tel-aviv-university/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-11-27T08:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/IMG-20251126-WA0007_Tj62OQg.max-600x600.format-webp.webp\"\u003eGoogle and Tel Aviv University (TAU) have a history of substantial partnership. Formalized in 2020, the Google-TAU partnership has since led to successful collaborations…"
+    },
+    {
+      "title": "Here’s how researchers in Asia-Pacific are using AlphaFold",
+      "link": "https://blog.google/around-the-globe/google-asia/researchers-asia-pacific-alphafold-five-years/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-11-26T23:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AlphaFold_-_APAC_Keyword_Header.max-600x600.format-webp.webp\"\u003eLearn more about AlphaFold, Google’s AI system that accurately predicts protein structures."
+    },
+    {
+      "title": "The Ultimate Black Friday Deal Is Here",
+      "link": "https://blogs.nvidia.com/blog/geforce-now-thursday-black-friday-2025/",
+      "source": "NVIDIA Blog",
+      "category": "tech",
+      "publishedAt": "2025-11-27T14:00:37Z",
+      "description": "Black Friday is leveling up. Get ready to score one of the biggest deals of the season — 50% off the first three months of a new GeForce NOW Ultimate membership. That’s GeForce RTX 5080-class power in the cloud for half the price. The NVIDIA Blackwell RTX upgrade is now fully live across all servers\t\u003ca class=\"read-more\" href=\"https://blogs.nvidia.com/blog/geforce-now-thursday-black-friday-2025/\"\u003e\n\t\tRead Article\t\t\u003cspan data-icon=\"y\"\u003e\u003c/span\u003e\n\t\u003c/a\u003e\n\t"
+    },
+    {
+      "title": "One Could Simply Add Nullability Check Support… Without Even Noticing It",
+      "link": "https://blog.jetbrains.com/idea/2025/11/one-could-simply-add-nullability-check-support-without-even-noticing-it/",
+      "source": "IntelliJ IDEA : IntelliJ IDEA – the IDE for Professional Development in Java and Kotlin | The JetBrains Blog",
+      "category": "tech",
+      "publishedAt": "2025-11-27T13:07:00Z",
+      "description": "(The Growing Pains of a Good Idea: What Happens After JSpecify Adoption Begins) The good news: JSpecify is finally here JSpecify adoption is accelerating. You don’t even need to “install” it – nullability support now arrives automatically with your dependencies.\u0026#160; If you somehow missed the long history behind the JSpecify effort and want a quick [\u0026#8230;]"
+    }
+  ],
+  "generatedAt": "2025-11-28T07:09:10.253479908+09:00"
+}
