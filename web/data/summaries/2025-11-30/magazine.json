@@ -1,0 +1,266 @@
+{
+  "date": "2025-11-30",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2025년 11월 29일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** 안드레아 카파시가 정의한 새로운 AI의 지평, 태양 복사로 인한 에어버스 A320의 치명적 버그, 그리고 개발자들의 자기검열과 코드 품질에 대한 성찰.\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### 🧠 안드레아 카파시(Andrej Karpathy): 마음의 공간(The Space of Minds)\nAI 분야의 석학 안드레아 카파시가 인공지능과 인간 지성의 미래를 조망하는 새로운 에세이를 공개했습니다. 그는 현재의 AI 모델들이 단순히 인간의 텍스트를 모방하는 것을 넘어, 인간이 아직 탐험하지 못한 '마음의 공간(Space of Minds)'으로 확장해 나가는 과정을 탐구합니다.\n\n카파시는 AI가 인간의 인지 능력을 시뮬레이션하는 단계를 지나, 완전히 새로운 형태의 추론과 창의성을 발휘하는 영역으로 진입하고 있다고 주장합니다. 이는 단순히 더 똑똑한 도구가 아니라, 우리가 이해해야 할 새로운 종류의 '지성'이 탄생하고 있음을 시사합니다. 개발자와 연구자들에게는 모델의 성능 지표를 넘어, AI가 탐색하고 있는 인지적 영토가 어디인지에 대한 철학적, 공학적 질문을 던집니다.\n\n\u003e **Key Point:** AI는 인간의 모방을 넘어 미지의 '인지 영역'을 개척하고 있으며, 이는 AGI(일반 인공지능)로 가는 중요한 이정표가 될 것입니다. [^2]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. ☀️ 태양 복사가 비행기를 추락시킬 수 있다? (에어버스 A320 이슈)\n- **What:** 에어버스 A320 시리즈(A319, A320, A321 등)의 비행 제어 컴퓨터가 특정 조건에서 태양 복사(Solar Radiation)로 인한 데이터 손상 가능성이 제기되었습니다. 이에 따라 즉각적인 소프트웨어 업그레이드가 요구되고 있습니다.\n- **Why:** 고고도에서 강력한 우주선(Cosmic Rays)이나 태양 입자가 반도체 메모리에 충돌하여 비트 플립(Bit Flip)을 유발, 비행 제어 시스템의 핵심 데이터를 오염시킬 수 있기 때문입니다.\n- **Impact:** 이는 하드웨어 오류가 아닌 자연 현상이 소프트웨어 안정성에 치명적인 영향을 미치는 사례로, 항공 우주 및 임베디드 시스템 개발자들에게 'Soft Error'에 대한 방어 코드 작성의 중요성을 다시금 일깨워줍니다. [^5][^23][^30]\n\n### 2. 🤖 Claude 4.5 Opus의 '영혼'을 해부하다\n- **What:** LessWrong 커뮤니티에서 'Claude 4.5 Opus Soul Document'라는 제목으로, 최신 AI 모델의 내부 작동 원리와 정렬(Alignment)에 대한 심층 분석이 화제가 되고 있습니다.\n- **Why:** 모델이 점점 고도화됨에 따라, AI가 생성하는 답변의 기저에 깔린 '시스템 프롬프트'와 '윤리적 가이드라인'이 어떻게 상호작용하여 일종의 성격(Persona)을 형성하는지 이해하려는 시도입니다.\n- **Impact:** AI의 환각(Hallucination) 문제와 더불어, 초거대 모델의 행동을 예측하고 제어하는 'AI 심리학'이 엔지니어링의 중요한 한 축으로 자리 잡고 있음을 보여줍니다. [^15][^19]\n\n### 3. 💻 \"나쁜 코드는 왜 만들어지는가\": 개발 문화의 명과 암\n- **What:** 대기업의 유능한 엔지니어들이 왜 유지보수가 불가능한 코드를 양산하는지에 대한 분석과, 개발자들의 '자기검열'을 멈추라는 호소가 동시에 주목받고 있습니다.\n- **Why:** 복잡한 관료주의, 촉박한 마감, 그리고 실패를 용인하지 않는 문화가 기술적 부채를 강요하고 있습니다. 동시에 개발자들은 자신의 목소리를 내기보다 조직의 논리에 순응하며 창의성을 잃어가고 있습니다.\n- **Impact:** 기술적 탁월함은 개인의 역량뿐만 아니라, 이를 뒷받침하는 조직 문화와 심리적 안전감(Psychological Safety)에서 나온다는 점을 시사합니다. [^3][^6]\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **VS Code v1.107** | 'Insiders' 빌드 업데이트. 코드 편집 경험을 재정의하는 새로운 기능들과 성능 개선이 포함되었습니다. [^1] |\n| **Tool** | **Molly** | 보안 메신저 Signal의 포크 버전. 추적기를 제거하고 보안 기능을 강화한 독립 오픈소스 안드로이드 클라이언트입니다. [^7] |\n| **Tool** | **Portless** | 맥용 메뉴바 앱. 개발 중 좀비 프로세스로 남아있는 포트(Port)를 터미널 명령 없이 클릭 한 번으로 죽일 수 있습니다. [^12] |\n| **Tool** | **bfs** | 유닉스 `find` 명령어를 너비 우선 탐색(Breadth-First Search) 방식으로 구현하여 더 빠른 탐색 속도를 제공합니다. [^22] |\n| **Tool** | **Wikidata-Toolkit** | 위키데이터(Wikibase)와 상호작용하기 위한 강력한 Java 라이브러리입니다. [^14] |\n| **Tool** | **Landlock** | 리눅스 애플리케이션을 위한 샌드박싱 기능. 권한을 세밀하게 제어하여 보안을 강화하는 방법을 소개합니다. [^31] |\n| **Dev** | **OpenForge** | Gemini 3.0을 활용하여 단 1주일 만에 구축한 뉴로-심볼릭(Neuro-symbolic) 제조 엔진입니다. [^27] |\n| **Dev** | **Genesis CLI** | 미국 에너지부(DOE)의 제네시스 미션을 위한 과학 데이터셋 검증용 Rust 기반 CLI 도구입니다. [^26] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n\n#### 🤖 AI \u0026 ML\n* **로컬 RAG 구축 가이드**: 민감한 데이터를 외부로 보내지 않고 로컬에서 검색 증강 생성(RAG) 시스템을 구축하는 실전 노하우입니다. [^4]\n* **A16Z의 놀라운 주장**: 실리콘밸리 벤처캐피털 A16Z가 테크/AI 산업에 대해 던진 파격적인 전망과 주장입니다. [^9]\n* **AI로 되살린 Cube World**: 고전 게임 큐브 월드(Cube World)를 AI 기술을 활용해 리마스터하거나 콘텐츠를 확장하려는 시도입니다. [^13]\n\n#### 🌐 인터넷 \u0026 사회\n* **Imgur의 지역 차단 역효과**: 이미지 호스팅 업체 Imgur가 영국을 차단하자, 오히려 네트워크 전체의 차단이 해제되어버린 아이러니한 기술적 해프닝입니다. [^10]\n* **인터넷 감시와 에로티시즘**: 과도한 검열과 감시가 온라인상의 표현의 자유와 문화적 다양성을 어떻게 위축시키는지 분석했습니다. [^11]\n* **스마트 시티의 사생활 침해**: 스마트 시티 데이터 수집 과정에서 드러난 심각한 개인정보 보호 우려를 다룹니다. [^21]\n* **24시간 수명 채팅방**: 생성된 지 24시간 후에 자동으로 사라지는 휘발성 채팅 서비스가 등장했습니다. [^24]\n\n#### ⚙️ 하드웨어 \u0026 인프라\n* **구리 도둑의 습격**: 미국 전역에서 통신망의 핵심인 구리 케이블 절도 사건이 급증하여 인프라를 위협하고 있습니다. [^20]\n* **고대역폭 플래시 메모리의 지연**: 기대를 모았던 High Bandwidth Flash 기술이 복잡성 문제로 인해 상용화까지 수년이 더 걸릴 전망입니다. [^32]\n* **레트로브라이트의 배신**: 누렇게 변한 플라스틱을 하얗게 만드는 '레트로브라이트' 처리가 장기적으로 플라스틱을 손상시킨다는 10년 실험 결과입니다. [^18]\n\n#### 💼 비즈니스 \u0026 기타\n* **오라클 신용 경고**: 모건 스탠리가 오라클의 신용 부도 위험(Credit Protection)이 역대 최고치에 근접했다고 경고했습니다. [^29]\n* **건축가 로버트 A.M. 스턴 별세**: 전전(Prewar) 시대의 화려함을 현대 건축에 되살린 거장 로버트 A.M. 스턴이 86세로 타계했습니다. [^17]\n* **인도 위성 요격 잔해**: 2019년 인도의 위성 요격 실험(ASAT)으로 발생한 파편들이 여전히 궤도를 돌고 있음이 확인되었습니다. [^25]\n* **케이팝 데몬 헌터스**: 케이팝 컨셉과 판타지를 결합한 독특한 디지털 아트북 프로젝트입니다. [^8]\n* **페미니스트와 세계관 구축**: 작가들이 무의식적으로 성차별적인 세계관을 구축하는 함정에 빠지는 이유와 이를 피하는 방법에 대한 에세이입니다. [^28]\n* **Agoda 고객 센터 이슈**: 아고다 고객 서비스와 관련된 연락처 정보가 공유되었으나, 스팸 또는 피싱 가능성이 있으니 주의가 필요합니다. [^16]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘 브리핑에서 가장 눈에 띄는 키워드는 '**한계의 확장**'과 '**예상치 못한 오류**'입니다. 카파시는 AI가 인간 지성의 한계를 넘어설 것이라 예고했지만, 반대로 에어버스 사례는 우주 방사선이라는 자연 현상이 최첨단 소프트웨어를 무력화할 수 있음을 보여줍니다. 기술이 고도화될수록 우리는 더 넓은 '마음의 공간'을 탐험해야 함과 동시에, '비트 플립' 같은 가장 기초적인 물리적 제약도 다시 살펴야 하는 역설적인 상황에 놓여 있습니다. 주말 동안 여러분의 코드는 안녕하신가요?\n\n---\n\n[^1]: November 2025 Insiders (version 1.107) - https://code.visualstudio.com/updates/v1_107\n[^2]: The space of minds - https://karpathy.bearblog.dev/the-space-of-minds/\n[^3]: 소프트웨어 개발자의 고백: 더 이상 자기검열은 없다 - https://news.hada.io/topic?id=24713\n[^4]: 로컬 RAG를 구축하고 싶다고? - https://news.hada.io/topic?id=24712\n[^5]: 에어버스 A320 – 강한 태양 복사로 인해 비행 제어 핵심 데이터 손상 가능성 - https://news.hada.io/topic?id=24711\n[^6]: 대기업에서 유능한 엔지니어들이 나쁜 코드를 작성하는 이유 - https://news.hada.io/topic?id=24710\n[^7]: Molly - Signal 앱을 개선한 독립 오픈소스 버전 - https://news.hada.io/topic?id=24709\n[^8]: 케이팝 데몬 헌터스 - 디지털 아트북 - https://news.hada.io/topic?id=24708\n[^9]: A16Z의 놀라운 주장 - https://news.hada.io/topic?id=24707\n[^10]: Imgur가 영국을 지역 차단하자, 네트워크 전체를 지역 차단 해제한 사례 - https://news.hada.io/topic?id=24706\n[^11]: 인터넷 감시가 에로티시즘을 죽였다 - https://news.hada.io/topic?id=24705\n[^12]: Show GN: 개발할 때 매번 포트 죽이기 귀찮아서, 맥용 메뉴바 앱 하나 만들었습니다 (Portless) - https://news.hada.io/topic?id=24704\n[^13]: AI-Revived Cube World - https://news.ycombinator.com/item?id=46091173\n[^14]: Wikidata-Toolkit: Java library to interact with Wikibase - https://github.com/Wikidata-Toolkit/Wikidata-Toolkit\n[^15]: Claude 4.5 Opus' Soul Document - https://www.lesswrong.com/posts/vpNG99GhbBoLov9og/claude-4-5-opus-soul-document\n[^16]: Nomor Call Center Agoda Reschedule: Layanan Agoda Reschedule – Bantuan Pelangga - https://sites.google.com/view/layanan-agoda-whatsapp-agoda\n[^17]: Robert A.M. Stern, Architect Who Reinvented Prewar Splendor, Dies at 86 - https://www.nytimes.com/2025/11/27/arts/design/robert-am-stern-dead.html\n[^18]: Retrobright Damages Plastics – 10 Year Test [video] - https://www.youtube.com/watch?v=_n_WpjseCXA\n[^19]: The AI Hallucination Debate Is Missing the Point - https://maxbraglia.substack.com/p/the-ai-hallucination-debate-is-missing-the-point\n[^20]: Copper Thieves Are Wreaking Havoc Across America - https://www.wsj.com/business/telecom/copper-thieves-are-wreaking-havoc-across-america-9135906f\n[^21]: Smart City Data Walks Reveal Privacy Concerns - https://spectrum.ieee.org/smart-city-personal-data-collection\n[^22]: Bfs: A breadth-first version of the Unix find command - https://github.com/tavianator/bfs\n[^23]: Airbus calls for 'immediate' software upgrade to A320 aircraft - https://www.npr.org/2025/11/28/nx-s1-5624379/airbus-software-upgrade-a320-aircraft\n[^24]: Chatrooms with a 24 Life Time - https://cobbic.com\n[^25]: First debris pieces from the Indian ASAT test of 27 March catalogued - https://sattrackcam.blogspot.com/2019/04/first-debris-pieces-from-indian-asat.html\n[^26]: Show HN: Rust CLI validates scientific datasets for DOE's Genesis Mission - https://github.com/clay-good/genesis-preflight\n[^27]: Show HN: A neuro-symbolic manufacturing engine built in 1 week with Gemini 3.0 - https://github.com/globalhawk04/OpenForge\n[^28]: Even Feminists Can Build Sexist Worlds - https://mythcreants.com/blog/how-even-feminists-can-build-sexist-worlds/\n[^29]: Morgan Stanley Warns Oracle Credit Protection Nearing Record High - https://finance.yahoo.com/news/morgan-stanley-warns-oracle-credit-215223845.html\n[^30]: Airbus A320 Software updates using PDL - https://old.reddit.com/r/cyberDeck/comments/1p9rafp/airbus_a320_software_updates_using_pdl/\n[^31]: Landlock-Ing Linux - https://blog.prizrak.me/post/landlock/\n[^32]: High Bandwidth Flash is years away despite its promise - https://blocksandfiles.com/2025/11/27/stacked-layers-of-stacked-layers-hbf-capacity-and-complexity/\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **November 2025 Insiders (version 1.107)**\n   - 출처: Visual Studio Code - Code Editing. Redefined.\n   - 링크: https://code.visualstudio.com/updates/v1_107\n\n2. **The space of minds**\n   - 출처: karpathy\n   - 링크: https://karpathy.bearblog.dev/the-space-of-minds/\n\n3. **소프트웨어 개발자의 고백: 더 이상 자기검열은 없다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24713\n\n4. **로컬 RAG를 구축하고 싶다고?**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24712\n\n5. **에어버스 A320 – 강한 태양 복사로 인해 비행 제어 핵심 데이터 손상 가능성**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24711\n\n6. **대기업에서 유능한 엔지니어들이 나쁜 코드를 작성하는 이유**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24710\n\n7. **Molly - Signal 앱을 개선한 독립 오픈소스 버전 **\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24709\n\n8. **케이팝 데몬 헌터스 - 디지털 아트북**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24708\n\n9. **A16Z의 놀라운 주장**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24707\n\n10. **Imgur가 영국을 지역 차단하자, 네트워크 전체를 지역 차단 해제한 사례**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24706\n\n11. **인터넷 감시가 에로티시즘을 죽였다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24705\n\n12. **Show GN: 개발할 때 매번 포트 죽이기 귀찮아서, 맥용 메뉴바 앱 하나 만들었습니다 (Portless)**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24704\n\n13. **AI-Revived Cube World**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=46091173\n\n14. **Wikidata-Toolkit: Java library to interact with Wikibase**\n   - 출처: Hacker News\n   - 링크: https://github.com/Wikidata-Toolkit/Wikidata-Toolkit\n\n15. **Claude 4.5 Opus' Soul Document**\n   - 출처: Hacker News\n   - 링크: https://www.lesswrong.com/posts/vpNG99GhbBoLov9og/claude-4-5-opus-soul-document\n\n16. **Nomor Call Center Agoda Reschedule: Layanan Agoda Reschedule – Bantuan Pelangga**\n   - 출처: Hacker News\n   - 링크: https://sites.google.com/view/layanan-agoda-whatsapp-agoda\n\n17. **Robert A.M. Stern, Architect Who Reinvented Prewar Splendor, Dies at 86**\n   - 출처: Hacker News\n   - 링크: https://www.nytimes.com/2025/11/27/arts/design/robert-am-stern-dead.html\n\n18. **Retrobright Damages Plastics – 10 Year Test [video]**\n   - 출처: Hacker News\n   - 링크: https://www.youtube.com/watch?v=_n_WpjseCXA\n\n19. **The AI Hallucination Debate Is Missing the Point**\n   - 출처: Hacker News\n   - 링크: https://maxbraglia.substack.com/p/the-ai-hallucination-debate-is-missing-the-point\n\n20. **Copper Thieves Are Wreaking Havoc Across America**\n   - 출처: Hacker News\n   - 링크: https://www.wsj.com/business/telecom/copper-thieves-are-wreaking-havoc-across-america-9135906f\n\n21. **Smart City Data Walks Reveal Privacy Concerns**\n   - 출처: Hacker News\n   - 링크: https://spectrum.ieee.org/smart-city-personal-data-collection\n\n22. **Bfs: A breadth-first version of the Unix find command**\n   - 출처: Hacker News\n   - 링크: https://github.com/tavianator/bfs\n\n23. **Airbus calls for 'immediate' software upgrade to A320 aircraft**\n   - 출처: Hacker News\n   - 링크: https://www.npr.org/2025/11/28/nx-s1-5624379/airbus-software-upgrade-a320-aircraft\n\n24. **Chatrooms with a 24 Life Time**\n   - 출처: Hacker News\n   - 링크: https://cobbic.com\n\n25. **First debris pieces from the Indian ASAT test of 27 March catalogued**\n   - 출처: Hacker News\n   - 링크: https://sattrackcam.blogspot.com/2019/04/first-debris-pieces-from-indian-asat.html\n\n26. **Show HN: Rust CLI validates scientific datasets for DOE's Genesis Mission**\n   - 출처: Hacker News\n   - 링크: https://github.com/clay-good/genesis-preflight\n\n27. **Show HN: A neuro-symbolic manufacturing engine built in 1 week with Gemini 3.0**\n   - 출처: Hacker News\n   - 링크: https://github.com/globalhawk04/OpenForge\n\n28. **Even Feminists Can Build Sexist Worlds**\n   - 출처: Hacker News\n   - 링크: https://mythcreants.com/blog/how-even-feminists-can-build-sexist-worlds/\n\n29. **Morgan Stanley Warns Oracle Credit Protection Nearing Record High**\n   - 출처: Hacker News\n   - 링크: https://finance.yahoo.com/news/morgan-stanley-warns-oracle-credit-215223845.html\n\n30. **Airbus A320 Software updates using PDL**\n   - 출처: Hacker News\n   - 링크: https://old.reddit.com/r/cyberDeck/comments/1p9rafp/airbus_a320_software_updates_using_pdl/\n\n31. **Landlock-Ing Linux**\n   - 출처: Hacker News\n   - 링크: https://blog.prizrak.me/post/landlock/\n\n32. **High Bandwidth Flash is years away despite its promise**\n   - 출처: Hacker News\n   - 링크: https://blocksandfiles.com/2025/11/27/stacked-layers-of-stacked-layers-hbf-capacity-and-complexity/\n\n\n",
+  "articles": [
+    {
+      "title": "November 2025 Insiders (version 1.107)",
+      "link": "https://code.visualstudio.com/updates/v1_107",
+      "source": "Visual Studio Code - Code Editing. Redefined.",
+      "category": "tech",
+      "publishedAt": "2025-12-10T17:00:00Z",
+      "description": "\n      \u003cp\u003eLearn what is new in the Visual Studio Code November 2025 Release (1.107).\u003c/p\u003e\n      \u003cp\u003e\u003ca href=\"https://code.visualstudio.com/updates/v1_107\"\u003eRead the full article\u003c/a\u003e\u003c/p\u003e\n    "
+    },
+    {
+      "title": "The space of minds",
+      "link": "https://karpathy.bearblog.dev/the-space-of-minds/",
+      "source": "karpathy",
+      "category": "tech",
+      "publishedAt": "2025-11-29T18:00:00Z",
+      "description": "On the space of minds and the optimizations that give rise to them."
+    },
+    {
+      "title": "소프트웨어 개발자의 고백: 더 이상 자기검열은 없다",
+      "link": "https://news.hada.io/topic?id=24713",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-30T05:33:26+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e두려움과 자기검열을 멈추고\u003c/strong\u003e, 그동안 인정하지 못했던 기술적·개인적 부족함을 공개한 개발자의 고백\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e다형성(polymorphism)\u003c/strong\u003e 개념을 10년 넘게 이해하지 못했고, \u003cstrong\u003eSQL 실력을 잃었으며\u003c/strong\u003e, 대부분의 코드를 \u003cstrong\u003e자동화 테스트 없이 배포\u003c/strong...\u003c/p\u003e"
+    },
+    {
+      "title": "로컬 RAG를 구축하고 싶다고?",
+      "link": "https://news.hada.io/topic?id=24712",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-30T01:32:51+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eSkald\u003c/strong\u003e는 데이터를 제3자에게 전송하지 않고 완전히 \u003cstrong\u003e자체 호스팅 가능한 RAG 시스템\u003c/strong\u003e을 목표로 개발됨\u003c/li\u003e\n\u003cli\u003eRAG 구성요소는 \u003cstrong\u003e벡터 데이터베이스, 임베딩 모델, LLM, 리랭커, 문서 파서\u003c/strong\u003e로 나뉘며, 각 요소에 대해 \u003cstrong\u003e오픈소스 대안\u003c/strong\u003e을 제시...\u003c/p\u003e"
+    },
+    {
+      "title": "에어버스 A320 – 강한 태양 복사로 인해 비행 제어 핵심 데이터 손상 가능성",
+      "link": "https://news.hada.io/topic?id=24711",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-29T21:32:58+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e최근 \u003cstrong\u003eA320 패밀리 항공기\u003c/strong\u003e에서 발생한 사건 분석 결과, \u003cstrong\u003e강한 태양 복사\u003c/strong\u003e가 비행 제어에 필요한 핵심 데이터를 손상시킬 수 있음이 확인됨\u003c/li\u003e\n\u003cli\u003e에어버스는 이에 따라 \u003cstrong\u003e운항 중인 다수의 A320 계열 항공기\u003c/strong\u003e가 영향을 받을 가능성을 식별함\u003c/li\u003e\n\u003cli\u003e회사는 ...\u003c/p\u003e"
+    },
+    {
+      "title": "대기업에서 유능한 엔지니어들이 나쁜 코드를 작성하는 이유",
+      "link": "https://news.hada.io/topic?id=24710",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-29T20:33:11+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e대형 기술기업의 \u003cstrong\u003e짧은 근속 기간과 잦은 조직 개편\u003c/strong\u003e으로 인해, 많은 엔지니어가 자신이 익숙하지 않은 코드베이스에서 작업을 함\u003c/li\u003e\n\u003cli\u003e코드 변경의 상당 부분이 \u003cstrong\u003e입사 6개월 이내의 ‘초보자’ 수준 엔지니어\u003c/strong\u003e에 의해 이루어지는 현실\u003c/li\u003e\n\u003cli\u003e일부 숙련된 \u003cstrong\u003e‘올드...\u003c/p\u003e"
+    },
+    {
+      "title": "Molly - Signal 앱을 개선한 독립 오픈소스 버전 ",
+      "link": "https://news.hada.io/topic?id=24709",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-29T18:32:52+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eMolly\u003c/strong\u003e는 Android용 \u003cstrong\u003eSignal 포크\u003c/strong\u003e로, 보안성과 사용자 제어를 강화한 \u003cstrong\u003e완전한 오픈소스(FOSS)\u003c/strong\u003e 메신저\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e독점 코드가 포함되지 않으며\u003c/strong\u003e, 데이터베이스를 \u003cstrong\u003e암호문구(Passphrase)\u003c/strong\u003e 로 암호화해 보호\u003c/li\u003e\n\u003cli\u003e하나의 계...\u003c/p\u003e"
+    },
+    {
+      "title": "케이팝 데몬 헌터스 - 디지털 아트북",
+      "link": "https://news.hada.io/topic?id=24708",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-29T16:18:39+09:00",
+      "description": "\u003cp\u003e넷플릭스랑 같이해서 공개한 걸로 보입니다.\u003c/p\u003e\n\u003cp\u003e노래가 재생됩니다.\u003c/p\u003e\n"
+    },
+    {
+      "title": "A16Z의 놀라운 주장",
+      "link": "https://news.hada.io/topic?id=24707",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-29T15:33:06+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eA16Z의 \u003cstrong\u003e추천 도서 목록\u003c/strong\u003e에 포함된 일부 작품 설명에서 “대부분의 책이 문장 중간에서 멈춘다”는 \u003cstrong\u003e사실과 다른 문구\u003c/strong\u003e가 발견됨\u003c/li\u003e\n\u003cli\u003eNeal Stephenson은 자신의 소설들이 논란의 여지는 있어도 \u003cstrong\u003e실제로 문장 중간에서 끝난 적은 없다\u003c/strong\u003e고 명확히 지적\u003c/li\u003e\n...\u003c/p\u003e"
+    },
+    {
+      "title": "Imgur가 영국을 지역 차단하자, 네트워크 전체를 지역 차단 해제한 사례",
+      "link": "https://news.hada.io/topic?id=24706",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-29T14:32:43+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eImgur의 영국 사용자 차단\u003c/strong\u003e으로 인해 Reddit, 포럼, 문서 등 곳곳의 이미지 링크가 모두 “unavailable”로 표시되는 문제 발생\u003c/li\u003e\n\u003cli\u003e개인 VPN 대신 \u003cstrong\u003e네트워크 전체 수준의 자동 우회 구조\u003c/strong\u003e를 구축해 모든 기기에서 Imgur 접근 가능하도록 구성\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003ePi-hole...\u003c/p\u003e"
+    },
+    {
+      "title": "인터넷 감시가 에로티시즘을 죽였다",
+      "link": "https://news.hada.io/topic?id=24705",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-29T13:33:20+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e온라인 감시와 자기검열\u003c/strong\u003e이 인간의 성적 사생활과 욕망의 자유를 억압하는 구조로 작동\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e#MeToo 운동 이후의 감시 문화\u003c/strong\u003e가 연대보다는 처벌 중심으로 변질되며, 개인의 내면적 욕망까지 공개 심판의 대상이 됨\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e소셜미디어의 노출과 감시 기술\u003c/st...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: 개발할 때 매번 포트 죽이기 귀찮아서, 맥용 메뉴바 앱 하나 만들었습니다 (Portless)",
+      "link": "https://news.hada.io/topic?id=24704",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-29T12:44:15+09:00",
+      "description": "\u003cp\u003e개발하시면서 가장 자주 겪는 문제 중 하나가 포트 충돌일 거라 생각합니다.\u003cbr /\u003e\n서버를 실행하면 \u0026quot;Error: Port 3000 is already in use\u0026quot;가 뜨고, 결국 lsof로 프로세스를 찾고 kill로 종료하는 과정을 반복하게 되죠.\u003c/p\u003e\n\u003cp\u003e저도 이 과정을 하루 평균 10번 정도 했습니다.\u003cbr /\u003e\n그래서 아예 작은 도구"
+    },
+    {
+      "title": "AI-Revived Cube World",
+      "link": "https://news.ycombinator.com/item?id=46091173",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-29T21:57:23Z",
+      "description": "\n\u003cp\u003eHi, hackers. Are you interested in Cube World?\u003cp\u003eHere is the introduction:\nhttps://www.youtube.com/watch?v=PDptwH_Rl8k\u003cp\u003eIt was a successful product 20 years ago. We wanted to create an AI-version Cube World.\u003cp\u003eHow do you think about it?\u003cp\u003eThank\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46091173\"\u003ehttps://news.ycombinator.com/item?id=46091173\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Wikidata-Toolkit: Java library to interact with Wikibase",
+      "link": "https://github.com/Wikidata-Toolkit/Wikidata-Toolkit",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-29T21:54:56Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/Wikidata-Toolkit/Wikidata-Toolkit\"\u003ehttps://github.com/Wikidata-Toolkit/Wikidata-Toolkit\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46091149\"\u003ehttps://news.ycombinator.com/item?id=46091149\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Claude 4.5 Opus' Soul Document",
+      "link": "https://www.lesswrong.com/posts/vpNG99GhbBoLov9og/claude-4-5-opus-soul-document",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-29T21:54:06Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.lesswrong.com/posts/vpNG99GhbBoLov9og/claude-4-5-opus-soul-document\"\u003ehttps://www.lesswrong.com/posts/vpNG99GhbBoLov9og/claude-4-5-opus-soul-document\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46091143\"\u003ehttps://news.ycombinator.com/item?id=46091143\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Nomor Call Center Agoda Reschedule: Layanan Agoda Reschedule – Bantuan Pelangga",
+      "link": "https://sites.google.com/view/layanan-agoda-whatsapp-agoda",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-29T21:53:55Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://sites.google.com/view/layanan-agoda-whatsapp-agoda\"\u003ehttps://sites.google.com/view/layanan-agoda-whatsapp-agoda\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46091138\"\u003ehttps://news.ycombinator.com/item?id=46091138\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Robert A.M. Stern, Architect Who Reinvented Prewar Splendor, Dies at 86",
+      "link": "https://www.nytimes.com/2025/11/27/arts/design/robert-am-stern-dead.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-29T21:53:05Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nytimes.com/2025/11/27/arts/design/robert-am-stern-dead.html\"\u003ehttps://www.nytimes.com/2025/11/27/arts/design/robert-am-stern-dead.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46091131\"\u003ehttps://news.ycombinator.com/item?id=46091131\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Retrobright Damages Plastics – 10 Year Test [video]",
+      "link": "https://www.youtube.com/watch?v=_n_WpjseCXA",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-29T21:51:15Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.youtube.com/watch?v=_n_WpjseCXA\"\u003ehttps://www.youtube.com/watch?v=_n_WpjseCXA\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46091118\"\u003ehttps://news.ycombinator.com/item?id=46091118\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The AI Hallucination Debate Is Missing the Point",
+      "link": "https://maxbraglia.substack.com/p/the-ai-hallucination-debate-is-missing-the-point",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-29T21:51:00Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://maxbraglia.substack.com/p/the-ai-hallucination-debate-is-missing-the-point\"\u003ehttps://maxbraglia.substack.com/p/the-ai-hallucination-debate-is-missing-the-point\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46091113\"\u003ehttps://news.ycombinator.com/item?id=46091113\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 2\u003c/p\u003e\n"
+    },
+    {
+      "title": "Copper Thieves Are Wreaking Havoc Across America",
+      "link": "https://www.wsj.com/business/telecom/copper-thieves-are-wreaking-havoc-across-america-9135906f",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-29T21:49:20Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.wsj.com/business/telecom/copper-thieves-are-wreaking-havoc-across-america-9135906f\"\u003ehttps://www.wsj.com/business/telecom/copper-thieves-are-wreaking-havoc-across-america-9135906f\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46091100\"\u003ehttps://news.ycombinator.com/item?id=46091100\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Smart City Data Walks Reveal Privacy Concerns",
+      "link": "https://spectrum.ieee.org/smart-city-personal-data-collection",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-29T21:47:49Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://spectrum.ieee.org/smart-city-personal-data-collection\"\u003ehttps://spectrum.ieee.org/smart-city-personal-data-collection\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46091087\"\u003ehttps://news.ycombinator.com/item?id=46091087\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Bfs: A breadth-first version of the Unix find command",
+      "link": "https://github.com/tavianator/bfs",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-29T21:45:38Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/tavianator/bfs\"\u003ehttps://github.com/tavianator/bfs\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46091075\"\u003ehttps://news.ycombinator.com/item?id=46091075\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Airbus calls for 'immediate' software upgrade to A320 aircraft",
+      "link": "https://www.npr.org/2025/11/28/nx-s1-5624379/airbus-software-upgrade-a320-aircraft",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-29T21:45:24Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.npr.org/2025/11/28/nx-s1-5624379/airbus-software-upgrade-a320-aircraft\"\u003ehttps://www.npr.org/2025/11/28/nx-s1-5624379/airbus-software-upgrade-a320-aircraft\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46091074\"\u003ehttps://news.ycombinator.com/item?id=46091074\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Chatrooms with a 24 Life Time",
+      "link": "https://cobbic.com",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-29T21:42:50Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://cobbic.com\"\u003ehttps://cobbic.com\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46091062\"\u003ehttps://news.ycombinator.com/item?id=46091062\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "First debris pieces from the Indian ASAT test of 27 March catalogued",
+      "link": "https://sattrackcam.blogspot.com/2019/04/first-debris-pieces-from-indian-asat.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-29T21:42:02Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://sattrackcam.blogspot.com/2019/04/first-debris-pieces-from-indian-asat.html\"\u003ehttps://sattrackcam.blogspot.com/2019/04/first-debris-pieces-from-indian-asat.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46091050\"\u003ehttps://news.ycombinator.com/item?id=46091050\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Rust CLI validates scientific datasets for DOE's Genesis Mission",
+      "link": "https://github.com/clay-good/genesis-preflight",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-29T21:40:07Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/clay-good/genesis-preflight\"\u003ehttps://github.com/clay-good/genesis-preflight\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46091036\"\u003ehttps://news.ycombinator.com/item?id=46091036\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: A neuro-symbolic manufacturing engine built in 1 week with Gemini 3.0",
+      "link": "https://github.com/globalhawk04/OpenForge",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-29T21:37:04Z",
+      "description": "\n\u003cp\u003eLast week I challenged myself to test the new Gemini 3.0 to see how far its reasoning capabilities could push actual engineering tasks. The result is OpenForge: a Neuro-Symbolic Manufacturing Engine that translates user intent into flight-proven hardware designs and generates a physics-based simulation to test them.\u003cp\u003eI’ve built complex systems before, but the reasoning performance of Gemini 3.0 cut my development time by roughly 70-80%. It allowed me to go from concept to a working Digital Twin pipeline in less than a week.\u003cp\u003eThe Architecture (Neuro-Symbolic):\nWe know LLMs hallucinate. In hardware design, a hallucination leads to parts that don't fit or drones that fall out of the sky. To solve this, I used a neuro-symbolic approach:\nThe Neuro Layer (Gemini 3.0): Handles the semantic reasoning. It translates vague intents (e.g., \"I need a drone to inspect fences on a cattle ranch\") into engineering constraints, selects components from scraped data, and acts as the Systems Architect.\nThe Symbolic Layer (Python/Deterministic): The guardrails. We use trimesh for geometry collision, cannon.js/Isaac Sim for physics simulation, and rigid math for Thrust-to-Weight ratios.\nHow it works:\nRecon: Agents scrape real e-commerce sites for parts (Motors, FCs, Frames).\nFusion: Gemini reads spec sheets (even from images) to build a structured component database.\nAssembly: An Engineer agent creates a Bill of Materials.\nValidation: Python scripts mathematically verify voltage matching (6S vs 4S), physical clearance, and electronic interconnects (preventing the Pixhawk without an ESC error).\nSimulation: The system generates OpenSCAD models -\u003e USD files -\u003e runs a flight sim to test the build.\nThe Gemini 3.0 Factor:\nThe standout feature wasn't code generation, but context adherence. By front-loading heavy architectural context and strict schemas, the model avoided the Garbage In, Garbage Out cycle that usually plagues complex AI workflows. It acted less like a chatbot and more like a junior engineer following a spec sheet.\u003cp\u003eThe project is open source. I’m curious to hear what others think about using newer reasoning models for hardware constraint solving.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46091019\"\u003ehttps://news.ycombinator.com/item?id=46091019\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Even Feminists Can Build Sexist Worlds",
+      "link": "https://mythcreants.com/blog/how-even-feminists-can-build-sexist-worlds/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-29T21:36:25Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://mythcreants.com/blog/how-even-feminists-can-build-sexist-worlds/\"\u003ehttps://mythcreants.com/blog/how-even-feminists-can-build-sexist-worlds/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46091014\"\u003ehttps://news.ycombinator.com/item?id=46091014\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Morgan Stanley Warns Oracle Credit Protection Nearing Record High",
+      "link": "https://finance.yahoo.com/news/morgan-stanley-warns-oracle-credit-215223845.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-29T21:36:15Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://finance.yahoo.com/news/morgan-stanley-warns-oracle-credit-215223845.html\"\u003ehttps://finance.yahoo.com/news/morgan-stanley-warns-oracle-credit-215223845.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46091012\"\u003ehttps://news.ycombinator.com/item?id=46091012\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 6\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Airbus A320 Software updates using PDL",
+      "link": "https://old.reddit.com/r/cyberDeck/comments/1p9rafp/airbus_a320_software_updates_using_pdl/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-29T21:33:32Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://old.reddit.com/r/cyberDeck/comments/1p9rafp/airbus_a320_software_updates_using_pdl/\"\u003ehttps://old.reddit.com/r/cyberDeck/comments/1p9rafp/airbus_a320_software_updates_using_pdl/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46090998\"\u003ehttps://news.ycombinator.com/item?id=46090998\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Landlock-Ing Linux",
+      "link": "https://blog.prizrak.me/post/landlock/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-29T21:30:53Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://blog.prizrak.me/post/landlock/\"\u003ehttps://blog.prizrak.me/post/landlock/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46090969\"\u003ehttps://news.ycombinator.com/item?id=46090969\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 4\u003c/p\u003e\n\u003cp\u003e# Comments: 2\u003c/p\u003e\n"
+    },
+    {
+      "title": "High Bandwidth Flash is years away despite its promise",
+      "link": "https://blocksandfiles.com/2025/11/27/stacked-layers-of-stacked-layers-hbf-capacity-and-complexity/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-29T21:28:52Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://blocksandfiles.com/2025/11/27/stacked-layers-of-stacked-layers-hbf-capacity-and-complexity/\"\u003ehttps://blocksandfiles.com/2025/11/27/stacked-layers-of-stacked-layers-hbf-capacity-and-complexity/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46090956\"\u003ehttps://news.ycombinator.com/item?id=46090956\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    }
+  ],
+  "generatedAt": "2025-11-30T07:08:51.204831326+09:00"
+}
