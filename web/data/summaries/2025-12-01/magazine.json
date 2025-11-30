@@ -1,0 +1,258 @@
+{
+  "date": "2025-12-01",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2025년 11월 30일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** 에어버스의 우주 방사선 취약점 리콜부터 구글의 기업용 문자 공유 정책 변화, 그리고 AI 코딩 툴 시장의 통합까지, 물리적 안전과 디지털 프라이버시가 동시에 위협받고 재정의되는 하루입니다.\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### ✈️ 에어버스, '우주 방사선' 문제로 항공기 6,000대 긴급 수정 요청\n에어버스(Airbus)가 자사 항공기 약 6,000대에 대해 태양 방사선(Solar Radiation) 취약점을 해결하기 위한 하드웨어 및 소프트웨어 수정을 요청했습니다. 이는 단순한 버그 픽스가 아니라, 고도에서 발생하는 우주 방사선이 항공기 전자 장비에 '비트 플립(Bit Flip)'을 유발하여 제어 시스템에 오류를 일으킬 가능성이 발견되었기 때문입니다.\n\n*   **핵심 문제:** 태양 폭발 등으로 인한 방사선이 항공기 항법 장치에 간섭, 잠재적인 운항 차질이나 안전 사고를 유발할 수 있음.\n*   **조치 사항:** 항공사들은 에어버스의 지침에 따라 관련 부품을 교체하거나 쉴딩(Shielding) 처리를 강화해야 합니다.\n*   **시사점:** 소프트웨어 보안뿐만 아니라, 극한 환경에서의 '하드웨어 무결성'이 항공 안전의 새로운 과제로 떠올랐음을 시사합니다.\n\n\u003e **Key Point:** 사이버 공격이 아닌 '자연 현상(우주 날씨)'이 최첨단 항공기의 가장 큰 위협으로 부상했습니다. [^2]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n\n### 1. 📱 구글, 직원 문자 메시지를 고용주와 공유 시작 (Enterprise)\n**What:** 구글이 안드로이드 엔터프라이즈(Android Enterprise) 정책을 업데이트하여, 업무용 프로필이 적용된 기기의 문자 메시지(SMS/MMS) 내용을 고용주가 모니터링할 수 있는 기능을 강화했습니다.\n**Why:** 금융 및 규제 산업군에서 컴플라이언스(규정 준수) 요구가 강화됨에 따라, 업무상 대화 기록 보존의 필요성이 커졌기 때문입니다.\n**Impact:** 기업 보안에는 긍정적이나, BYOD(개인 기기 업무 활용) 환경에서 직원의 프라이버시 침해 논란이 거세질 전망입니다. [^27]\n\n### 2. 🤖 Supermaven, Cursor 인수 1년 만에 서비스 종료\n**What:** 초고속 AI 코딩 보조 도구로 인기를 끌었던 Supermaven이 AI 에디터 Cursor에 인수된 지 1년 만에 독립 서비스를 완전히 종료합니다.\n**Why:** 기술 통합이 완료됨에 따라, Supermaven의 독자적인 '긴 문맥 처리(Long-context)' 엔진이 Cursor의 핵심 기능으로 흡수되었습니다.\n**Impact:** AI 코딩 툴 시장이 '플러그인' 형태에서 '통합 IDE' 형태로 빠르게 재편되고 있음을 보여줍니다. 개발자들은 이제 선택지가 줄어드는 대신 더 강력한 단일 도구를 얻게 되었습니다. [^8]\n\n### 3. 📉 엔비디아, AI 거품론을 잠재우다?\n**What:** 최근 시장의 우려에도 불구하고, 엔비디아의 실적과 데이터 센터 수요가 AI 거품론(AI Bubble)이 근거 없음을 증명했다는 분석이 제기되었습니다.\n**Why:** 단순한 기대감이 아니라 실제 기업들의 AI 인프라 지출(CapEx)이 매출로 전환되는 구조가 확립되었기 때문입니다.\n**Impact:** AI 투자가 '실험 단계'를 넘어 '필수 인프라 구축 단계'로 진입했음을 시사하며, 향후 반도체 시장의 지속적인 성장을 예고합니다. [^14]\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **VS Code v1.107** | 2025년 11월 최신 업데이트. 코드 편집 경험을 재정의하는 새로운 기능들과 성능 개선이 포함되었습니다. [^1] |\n| **Tool** | **Ty** | Python 툴링의 강자 Astral(Ruff 제작사)에서 내놓은 새로운 도구로 추정됩니다. (상세 기능 문서 확인 필요) [^28] |\n| **Security** | **Landlock** | 리눅스 커널의 보안 모듈인 Landlock을 애플리케이션에 적용하여 샌드박싱을 강화하는 가이드입니다. [^5] |\n| **Tool** | **Spotifyd** | 무거운 스포티파이 공식 클라이언트 대신, 가볍게 백그라운드에서 실행되는 데몬 형태의 리눅스/macOS용 플레이어입니다. [^21] |\n| **Resource** | **AoC C++ Template** | Advent of Code(AoC) 시즌을 맞아 C++로 문제를 빠르게 풀 수 있도록 돕는 부트스트랩 템플릿입니다. [^25] |\n| **App** | **Tracktrip** | 여행 경비를 간편하게 기록하고 정산할 수 있는 새로운 여행 비용 트래커 앱입니다. [^29] |\n| **Gaming** | **Decky Loader** | 스팀 덱(Steam Deck)의 잠재력을 해제하는 다양한 플러그인 모음집입니다. [^12] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n\n#### 💻 개발 \u0026 인프라 \u0026 하드웨어\n*   **우주 데이터센터의 비현실성**: 우주 공간에 데이터센터를 짓는 아이디어는 방열 문제와 유지보수 비용 때문에 현실적으로 작동하기 어렵다는 비판적 분석입니다. [^11]\n*   **Mac mini G4 \u0026 System 7**: 구형 Mac mini G4 하드웨어에서 고전 OS인 System 7을 네이티브로 부팅하는 데 성공했습니다. [^9]\n*   **Linus Torvalds의 PC 조립**: 리눅스의 창시자 리누스 토발즈가 직접 자신의 리눅스 PC를 조립하는 영상이 공개되었습니다. [^24]\n*   **시스템 아키텍처 기본 정리**: 시스템 설계와 변경 관리에 대한 불변의 법칙을 정리한 페이스트빈 문서가 화제입니다. [^30]\n*   **물리학 법칙과 컴퓨팅**: 14가지 물리학 법칙을 컴퓨팅 시스템에 대입하여 얻은 흥미로운 통찰을 공유합니다. [^19]\n\n#### 🧠 AI \u0026 데이터\n*   **AoC 2024와 LLM 성능**: 작년 Advent of Code 문제들을 대상으로 한 LLM들의 코딩 성능 벤치마크 분석입니다. (2025 시즌 시작 전 참고용) [^15]\n\n#### 🎓 수학 \u0026 교육 \u0026 과학\n*   **수학자의 요령**: 모든 수학자가 복잡한 문제를 풀 때 사용하는 몇 가지 공통적인 사고의 요령(Tricks)을 소개합니다. [^3]\n*   **파인만의 적분 트릭**: 리처드 파인만이 즐겨 사용했던 독특한 적분 해결 기법을 배울 수 있는 가이드입니다. [^4]\n*   **4년제 대학의 가치 하락**: 미국인의 다수가 비용 대비 4년제 대학 학위의 가치가 없다고 생각한다는 설문 결과입니다. [^10]\n\n#### 💼 사회 \u0026 비즈니스 \u0026 보안\n*   **군대 인플루언서와 펜타곤**: 군인들이 SNS 인플루언서로 활동하면서 발생하는 보안 및 윤리 문제에 대해 미 국방부 규정이 따라가지 못하고 있습니다. [^31]\n*   **라이브 스트림 판매의 세계**: 틱톡 등을 통한 라이브 커머스 판매자들의 수익 구조와 치열한 경쟁 세계를 조명합니다. [^22]\n*   **이메일 설정 스캠**: 이메일 설정을 가장하여 사용자를 속이는 정교한 피싱 기법에 대한 경고입니다. [^18]\n*   **효율적 이타주의의 그림자**: '효율적 이타주의(Effective Altruism)' 그룹이 비판자들을 침묵시키기 위해 협박과 괴롭힘을 사용했다는 폭로입니다. [^17]\n*   **프로세스가 문제다**: 조직의 문제는 결국 사람이나 도구가 아닌 잘못된 '프로세스'에서 기인한다는 경영학적 통찰입니다. [^6]\n\n#### 🎨 문화 \u0026 라이프스타일\n*   **Clippy처럼 행동하라**: 사용자의 의도를 미리 파악하고 돕는 '클리피'의 긍정적인 UX 측면을 재조명합니다. [^7]\n*   **NerdPoetry**: 기술과 언어의 경계를 넘나드는 '너드(Nerd)'들을 위한 시(Poetry) 프로젝트입니다. [^13]\n*   **자신의 부고 기사 쓰기**: 자신의 부고를 미리 써보고, 그 내용에 부합하는 삶을 살라는 철학적 조언입니다. [^26]\n\n#### 🏥 건강 \u0026 의학\n*   **성인 ADHD와 운동**: 표준 치료에 운동을 병행하는 것이 성인 ADHD 증상 완화에 유의미한 효과가 있다는 연구입니다. [^16]\n*   **요거트와 당뇨병**: FDA가 요거트 섭취가 제2형 당뇨병 위험을 줄일 수 있다는 한정적 건강 강조 표시(Qualified Health Claim)를 허용했습니다. [^20]\n*   **실로시빈과 정신의학**: 환각 버섯 성분인 실로시빈(Psilocybin)이 임상 정신의학에서 정식 치료제로 인정받을 날이 머지않았다는 전망입니다. [^23]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘 뉴스는 '**경계의 확장과 그에 따른 부작용**'으로 요약됩니다. 항공기는 대기권을 넘어 우주 방사선의 위협을 받고, 기업의 관리 영역은 직원의 개인 문자 메시지까지 확장되었습니다. AI 도구들은 서로 합쳐지며 경계를 허물고 있습니다. 기술이 발전할수록 우리가 지켜야 할 '안전'과 '프라이버시'의 정의도 계속해서 업데이트가 필요해 보입니다.\n\n---\n\n[^1]: November 2025 Insiders (version 1.107) - https://code.visualstudio.com/updates/v1_107\n[^2]: 에어버스, 태양 방사선 취약점 문제로 6,000대 항공기 수정 요청…운항 차질 경고 - https://news.hada.io/topic?id=24728\n[^3]: 모든 수학자는 몇 가지 요령만 가지고 있다 (2020) - https://news.hada.io/topic?id=24727\n[^4]: 적분을 위한 파인만의 트릭 배우기 - https://news.hada.io/topic?id=24726\n[^5]: 리눅스에 Landlock 적용하기 - https://news.hada.io/topic?id=24725\n[^6]: 항상 문제는 ‘프로세스’다, 바보야 - https://news.hada.io/topic?id=24724\n[^7]: 클리피처럼 행동하라 - https://news.hada.io/topic?id=24723\n[^8]: Supermaven, Cursor 인수 1년 만에 서비스 종료 - https://news.hada.io/topic?id=24722\n[^9]: Mac mini G4에서 System 7이 네이티브로 부팅 성공 - https://news.hada.io/topic?id=24721\n[^10]: 4년제 대학 학위가 비용 대비 가치 없다고 보는 미국인 다수 - https://news.hada.io/topic?id=24720\n[^11]: 우주에 데이터센터를 짓는 것은 작동하지 않을 것이다 - https://news.hada.io/topic?id=24719\n[^12]: Plugins to choose from: Unlock your Steam Deck's potential - https://decky.xyz/\n[^13]: NerdPoetry – Poetry after language. Presence as form - https://www.nerdpoetry.com/\n[^14]: Did Nvidia Just Prove There Is No AI Bubble - https://www.planetearthandbeyond.co/p/did-nvidia-just-prove-there-is-no\n[^15]: Performance of LLMs on Advent of Code 2024 - https://www.jerpint.io/blog/2024-12-30-advent-of-code-llms/\n[^16]: Exercise Added to Standard Care Promising for Adult ADHD - https://www.medscape.com/viewarticle/exercise-added-standard-care-promising-adult-adhd-2025a1000woc\n[^17]: Effective Altruists Use Threats and Harassment to Silence Their Critics - https://www.realtimetechpocalypse.com/p/how-effective-altruists-use-threats\n[^18]: A pretty good email scam - https://cassidoo.co/post/email-settings-scam/\n[^19]: I applied 14 physics laws to computing – here's what happened – Humotica - https://www.humotica.com\n[^20]: FDA: Qualified Health Claim for Yogurt and Reduced Risk of Type 2 Diabetes - https://www.fda.gov/food/hfp-constituent-updates/fda-announces-qualified-health-claim-yogurt-and-reduced-risk-type-2-diabetes\n[^21]: Free yourself from the Spotify desktop client with spotifyd - https://jonathanchang.org/blog/setting-up-spotifyd-on-macos/\n[^22]: The wild and lucrative world of live stream sellers - https://www.businessinsider.com/live-selling-streaming-tiktok-whatnot-palmstreet-ecommerce-entrepreneurs-side-hustle-2025-11\n[^23]: Will Psilocybin Have Its Day in Clinical Psychiatry? - https://www.medscape.com/viewarticle/will-psilocybin-finally-have-its-day-clinical-psychiatry-2025a1000xan\n[^24]: Building the Perfect Linux PC with Linus Torvalds - https://youtu.be/mfv0V1SxbNA\n[^25]: AoC is starting! This project will help you bootstrap in C++ - https://github.com/jphjsoares/aoc-cpp-template\n[^26]: Write Your Own Obituary – Then live up to it - https://jeffreylminch.substack.com/p/write-your-own-obituary\n[^27]: Google Starts Sharing All Your Text Messages with Your Employer - https://www.forbes.com/sites/zakdoffman/2025/11/30/google-starts-sharing-all-your-text-messages-with-your-employer/\n[^28]: Ty - https://docs.astral.sh/ty/\n[^29]: Show HN: Tracktrip, Travel Expense Tracker - https://tracktrip.app/\n[^30]: The Fundamental Theorem of System Architecture and Change Management - https://pastebin.com/P14SUSFm\n[^31]: Pentagon's social media rules can't keep up with viral military influencers - https://www.businessinsider.com/military-influencers-social-media-pentagon-ethics-policy-gray-area-2025-11\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **November 2025 Insiders (version 1.107)**\n   - 출처: Visual Studio Code - Code Editing. Redefined.\n   - 링크: https://code.visualstudio.com/updates/v1_107\n\n2. **에어버스, 태양 방사선 취약점 문제로 6,000대 항공기 수정 요청…운항 차질 경고**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24728\n\n3. **모든 수학자는 몇 가지 요령만 가지고 있다 (2020)**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24727\n\n4. **적분을 위한 파인만의 트릭 배우기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24726\n\n5. **리눅스에 Landlock 적용하기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24725\n\n6. **항상 문제는 ‘프로세스’다, 바보야**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24724\n\n7. **클리피처럼 행동하라**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24723\n\n8. **Supermaven, Cursor 인수 1년 만에 서비스 종료**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24722\n\n9. **Mac mini G4에서 System 7이 네이티브로 부팅 성공**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24721\n\n10. **4년제 대학 학위가 비용 대비 가치 없다고 보는 미국인 다수**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24720\n\n11. **우주에 데이터센터를 짓는 것은 작동하지 않을 것이다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24719\n\n12. **Plugins to choose from: Unlock your Steam Deck's potential**\n   - 출처: Hacker News\n   - 링크: https://decky.xyz/\n\n13. **NerdPoetry – Poetry after language. Presence as form**\n   - 출처: Hacker News\n   - 링크: https://www.nerdpoetry.com/\n\n14. **Did Nvidia Just Prove There Is No AI Bubble**\n   - 출처: Hacker News\n   - 링크: https://www.planetearthandbeyond.co/p/did-nvidia-just-prove-there-is-no\n\n15. **Performance of LLMs on Advent of Code 2024**\n   - 출처: Hacker News\n   - 링크: https://www.jerpint.io/blog/2024-12-30-advent-of-code-llms/\n\n16. **Exercise Added to Standard Care Promising for Adult ADHD**\n   - 출처: Hacker News\n   - 링크: https://www.medscape.com/viewarticle/exercise-added-standard-care-promising-adult-adhd-2025a1000woc\n\n17. **Effective Altruists Use Threats and Harassment to Silence Their Critics**\n   - 출처: Hacker News\n   - 링크: https://www.realtimetechpocalypse.com/p/how-effective-altruists-use-threats\n\n18. **A pretty good email scam**\n   - 출처: Hacker News\n   - 링크: https://cassidoo.co/post/email-settings-scam/\n\n19. **I applied 14 physics laws to computing – here's what happened – Humotica**\n   - 출처: Hacker News\n   - 링크: https://www.humotica.com\n\n20. **FDA: Qualified Health Claim for Yogurt and Reduced Risk of Type 2 Diabetes**\n   - 출처: Hacker News\n   - 링크: https://www.fda.gov/food/hfp-constituent-updates/fda-announces-qualified-health-claim-yogurt-and-reduced-risk-type-2-diabetes\n\n21. **Free yourself from the Spotify desktop client with spotifyd**\n   - 출처: Hacker News\n   - 링크: https://jonathanchang.org/blog/setting-up-spotifyd-on-macos/\n\n22. **The wild and lucrative world of live stream sellers**\n   - 출처: Hacker News\n   - 링크: https://www.businessinsider.com/live-selling-streaming-tiktok-whatnot-palmstreet-ecommerce-entrepreneurs-side-hustle-2025-11\n\n23. **Will Psilocybin Have Its Day in Clinical Psychiatry?**\n   - 출처: Hacker News\n   - 링크: https://www.medscape.com/viewarticle/will-psilocybin-finally-have-its-day-clinical-psychiatry-2025a1000xan\n\n24. **Building the Perfect Linux PC with Linus Torvalds**\n   - 출처: Hacker News\n   - 링크: https://youtu.be/mfv0V1SxbNA\n\n25. **AoC is starting! This project will help you bootstrap in C++**\n   - 출처: Hacker News\n   - 링크: https://github.com/jphjsoares/aoc-cpp-template\n\n26. **Write Your Own Obituary – Then live up to it**\n   - 출처: Hacker News\n   - 링크: https://jeffreylminch.substack.com/p/write-your-own-obituary\n\n27. **Google Starts Sharing All Your Text Messages with Your Employer**\n   - 출처: Hacker News\n   - 링크: https://www.forbes.com/sites/zakdoffman/2025/11/30/google-starts-sharing-all-your-text-messages-with-your-employer/\n\n28. **Ty**\n   - 출처: Hacker News\n   - 링크: https://docs.astral.sh/ty/\n\n29. **Show HN: Tracktrip, Travel Expense Tracker**\n   - 출처: Hacker News\n   - 링크: https://tracktrip.app/\n\n30. **The Fundamental Theorem of System Architecture and Change Management**\n   - 출처: Hacker News\n   - 링크: https://pastebin.com/P14SUSFm\n\n31. **Pentagon's social media rules can't keep up with viral military influencers**\n   - 출처: Hacker News\n   - 링크: https://www.businessinsider.com/military-influencers-social-media-pentagon-ethics-policy-gray-area-2025-11\n\n\n",
+  "articles": [
+    {
+      "title": "November 2025 Insiders (version 1.107)",
+      "link": "https://code.visualstudio.com/updates/v1_107",
+      "source": "Visual Studio Code - Code Editing. Redefined.",
+      "category": "tech",
+      "publishedAt": "2025-12-10T17:00:00Z",
+      "description": "\n      \u003cp\u003eLearn what is new in the Visual Studio Code November 2025 Release (1.107).\u003c/p\u003e\n      \u003cp\u003e\u003ca href=\"https://code.visualstudio.com/updates/v1_107\"\u003eRead the full article\u003c/a\u003e\u003c/p\u003e\n    "
+    },
+    {
+      "title": "에어버스, 태양 방사선 취약점 문제로 6,000대 항공기 수정 요청…운항 차질 경고",
+      "link": "https://news.hada.io/topic?id=24728",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-01T06:32:54+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e유럽 항공기 제조사 \u003cstrong\u003eAirbus\u003c/strong\u003e가 태양에서 오는 \u003cstrong\u003e강한 방사선으로 비행 제어용 데이터가 손상될 수 있는 소프트웨어 문제\u003c/strong\u003e를 확인하고, 약 \u003cstrong\u003e6,000대 A320 계열 항공기\u003c/strong\u003e에 대한 즉각적인 수정을 지시하면서 전 세계 운항 일정에 차질이 발생 중임\u003c/li\u003e\n\u003cli\u003e문제는 ...\u003c/p\u003e"
+    },
+    {
+      "title": "모든 수학자는 몇 가지 요령만 가지고 있다 (2020)",
+      "link": "https://news.hada.io/topic?id=24727",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-01T04:42:46+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e서로 교환 가능한 행렬은 동시에 대각화할 수 있다\u003c/strong\u003e는 원리를 중심으로, 물리학적 관점에서 여러 시스템의 해석 방법을 설명\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e병진 대칭\u003c/strong\u003e을 가진 시스템에서는 \u003cstrong\u003e푸리에 변환\u003c/strong\u003e을 사용해 파동 방정식, 열 방정식 등 다양한 물리 현상을 해결\u003c/li\u003e\n\u003cli\u003e...\u003c/p\u003e"
+    },
+    {
+      "title": "적분을 위한 파인만의 트릭 배우기",
+      "link": "https://news.hada.io/topic?id=24726",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-01T04:39:44+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e적분 계산을 단순화\u003c/strong\u003e하기 위해 매개변수에 대해 적분 기호 아래에서 미분하는 \u003cstrong\u003e파인만의 트릭(Feynman’s Trick)\u003c/strong\u003e 을 단계별로 설명\u003c/li\u003e\n\u003cli\u003e이 기법은 \u003cstrong\u003e라이프니츠 적분법칙(Leibniz Integral Rule)\u003c/strong\u003e 에 기반하며, 리처드 파인만이 대중화시켜 널리 알려짐...\u003c/p\u003e"
+    },
+    {
+      "title": "리눅스에 Landlock 적용하기",
+      "link": "https://news.hada.io/topic?id=24725",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-01T04:36:43+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eLandlock\u003c/strong\u003e은 애플리케이션이 접근 가능한 리소스를 명시적으로 선언해, 커널 수준에서 \u003cstrong\u003e자체 샌드박싱\u003c/strong\u003e을 수행하도록 하는 \u003cstrong\u003e리눅스 보안 API\u003c/strong\u003e임\u003c/li\u003e\n\u003cli\u003e기존 \u003cstrong\u003eSELinux\u003c/strong\u003e나 \u003cstrong\u003eAppArmor\u003c/strong\u003e보다 단순하며, \u003cstrong\u003e개발자 권한 없이...\u003c/p\u003e"
+    },
+    {
+      "title": "항상 문제는 ‘프로세스’다, 바보야",
+      "link": "https://news.hada.io/topic?id=24724",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-01T03:37:42+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eAI 도입만으로 비즈니스 문제를 해결할 수 없으며\u003c/strong\u003e, 비효율적인 프로세스를 자동화하면 단지 ‘쓰레기를 더 빨리 생산하는’ 결과로 이어짐\u003c/li\u003e\n\u003cli\u003e기업들은 \u003cstrong\u003eAI를 마법 지팡이처럼 착각\u003c/strong\u003e하지만, AI는 조직을 더 똑똑하게 만드는 것이 아니라 단지 \u003cstrong\u003e속도를 높이는 도...\u003c/p\u003e"
+    },
+    {
+      "title": "클리피처럼 행동하라",
+      "link": "https://news.hada.io/topic?id=24723",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-01T03:34:40+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e사용자 데이터 남용\u003c/strong\u003e과 \u003cstrong\u003eAI 학습용 데이터 전용\u003c/strong\u003e에 대한 불만에서 출발한 캠페인으로, 기술 기업의 행태를 비판\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eClippy\u003c/strong\u003e는 데이터를 판매하거나 인질로 잡지 않았고, 오직 사용자를 돕는 존재로 묘사됨\u003c/li\u003e\n\u003cli\u003e참여자는 프로필 사진을 Clippy로 바...\u003c/p\u003e"
+    },
+    {
+      "title": "Supermaven, Cursor 인수 1년 만에 서비스 종료",
+      "link": "https://news.hada.io/topic?id=24722",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-01T02:56:30+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003eCursor에 인수된 지 1년 만에 Supermaven이 서비스를 종료한다고 발표\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eSupermaven의 기능들은 Cursor Tab에 통합되었으며, VS Code 사용자들에게는 Cursor로의 마이그레이션을 권장\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e기존 사용자들에게는 남은 구독 기간에 대한 전액 환불을 즉시 제공\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n"
+    },
+    {
+      "title": "Mac mini G4에서 System 7이 네이티브로 부팅 성공",
+      "link": "https://news.hada.io/topic?id=24721",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-01T02:33:11+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eMac mini G4\u003c/strong\u003e에서 \u003cstrong\u003eSystem 7 및 Mac OS 8\u003c/strong\u003e이 네이티브로 부팅되는 데 성공, 이는 기존에 Mac OS 9.2.2까지만 가능했던 한계를 넘어선 사례임\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eCHRP(공통 하드웨어 참조 플랫폼)\u003c/strong\u003e 기반의 유출된 Mac OS 7.6~8.0 빌드와 \u003cstrong\u003eSystem Enabler 패치...\u003c/p\u003e"
+    },
+    {
+      "title": "4년제 대학 학위가 비용 대비 가치 없다고 보는 미국인 다수",
+      "link": "https://news.hada.io/topic?id=24720",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-30T23:34:04+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e최근 \u003cstrong\u003eNBC News 여론조사\u003c/strong\u003e에서 등록 유권자의 약 3분의 2가 4년제 대학 학위가 비용 대비 가치가 없다고 응답\u003c/li\u003e\n\u003cli\u003e2013년에는 53%가 학위가 가치 있다고 답했으나, 2025년에는 \u003cstrong\u003e33%만이 가치 있다고 평가\u003c/strong\u003e, 12년간 20포인트 하락\u003c/li\u003e\n\u003cli\u003e응답자들은 \u003cstrong\u003e높은 등록금과...\u003c/p\u003e"
+    },
+    {
+      "title": "우주에 데이터센터를 짓는 것은 작동하지 않을 것이다",
+      "link": "https://news.hada.io/topic?id=24719",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-11-30T22:33:39+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e우주 데이터센터는 \u003cstrong\u003e전력, 냉각, 방사선, 통신\u003c/strong\u003e 등 모든 핵심 요소에서 지구 기반 센터보다 불리한 조건을 가짐\u003c/li\u003e\n\u003cli\u003e태양광이나 핵전원 모두 \u003cstrong\u003eGPU 구동에 필요한 전력\u003c/strong\u003e을 충분히 공급하지 못하며, ISS 규모의 태양 전지판으로도 200개 GPU 정도만 가동 가능\u003c/li\u003e\n\u003cli\u003e\n\u003cstr...\u003c/p\u003e"
+    },
+    {
+      "title": "Plugins to choose from: Unlock your Steam Deck's potential",
+      "link": "https://decky.xyz/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-30T22:00:34Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://decky.xyz/\"\u003ehttps://decky.xyz/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46100865\"\u003ehttps://news.ycombinator.com/item?id=46100865\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "NerdPoetry – Poetry after language. Presence as form",
+      "link": "https://www.nerdpoetry.com/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-30T21:57:11Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nerdpoetry.com/\"\u003ehttps://www.nerdpoetry.com/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46100832\"\u003ehttps://news.ycombinator.com/item?id=46100832\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Did Nvidia Just Prove There Is No AI Bubble",
+      "link": "https://www.planetearthandbeyond.co/p/did-nvidia-just-prove-there-is-no",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-30T21:55:15Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.planetearthandbeyond.co/p/did-nvidia-just-prove-there-is-no\"\u003ehttps://www.planetearthandbeyond.co/p/did-nvidia-just-prove-there-is-no\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46100815\"\u003ehttps://news.ycombinator.com/item?id=46100815\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Performance of LLMs on Advent of Code 2024",
+      "link": "https://www.jerpint.io/blog/2024-12-30-advent-of-code-llms/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-30T21:53:58Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.jerpint.io/blog/2024-12-30-advent-of-code-llms/\"\u003ehttps://www.jerpint.io/blog/2024-12-30-advent-of-code-llms/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46100805\"\u003ehttps://news.ycombinator.com/item?id=46100805\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Exercise Added to Standard Care Promising for Adult ADHD",
+      "link": "https://www.medscape.com/viewarticle/exercise-added-standard-care-promising-adult-adhd-2025a1000woc",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-30T21:51:50Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.medscape.com/viewarticle/exercise-added-standard-care-promising-adult-adhd-2025a1000woc\"\u003ehttps://www.medscape.com/viewarticle/exercise-added-standard-care-promising-adult-adhd-2025a1000woc\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46100790\"\u003ehttps://news.ycombinator.com/item?id=46100790\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Effective Altruists Use Threats and Harassment to Silence Their Critics",
+      "link": "https://www.realtimetechpocalypse.com/p/how-effective-altruists-use-threats",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-30T21:50:39Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.realtimetechpocalypse.com/p/how-effective-altruists-use-threats\"\u003ehttps://www.realtimetechpocalypse.com/p/how-effective-altruists-use-threats\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46100784\"\u003ehttps://news.ycombinator.com/item?id=46100784\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "A pretty good email scam",
+      "link": "https://cassidoo.co/post/email-settings-scam/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-30T21:47:17Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://cassidoo.co/post/email-settings-scam/\"\u003ehttps://cassidoo.co/post/email-settings-scam/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46100762\"\u003ehttps://news.ycombinator.com/item?id=46100762\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "I applied 14 physics laws to computing – here's what happened – Humotica",
+      "link": "https://www.humotica.com",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-30T21:45:36Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.humotica.com\"\u003ehttps://www.humotica.com\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46100750\"\u003ehttps://news.ycombinator.com/item?id=46100750\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "FDA: Qualified Health Claim for Yogurt and Reduced Risk of Type 2 Diabetes",
+      "link": "https://www.fda.gov/food/hfp-constituent-updates/fda-announces-qualified-health-claim-yogurt-and-reduced-risk-type-2-diabetes",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-30T21:42:17Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.fda.gov/food/hfp-constituent-updates/fda-announces-qualified-health-claim-yogurt-and-reduced-risk-type-2-diabetes\"\u003ehttps://www.fda.gov/food/hfp-constituent-updates/fda-announces-qualified-health-claim-yogurt-and-reduced-risk-type-2-diabetes\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46100727\"\u003ehttps://news.ycombinator.com/item?id=46100727\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 2\u003c/p\u003e\n"
+    },
+    {
+      "title": "Free yourself from the Spotify desktop client with spotifyd",
+      "link": "https://jonathanchang.org/blog/setting-up-spotifyd-on-macos/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-30T21:42:02Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://jonathanchang.org/blog/setting-up-spotifyd-on-macos/\"\u003ehttps://jonathanchang.org/blog/setting-up-spotifyd-on-macos/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46100724\"\u003ehttps://news.ycombinator.com/item?id=46100724\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The wild and lucrative world of live stream sellers",
+      "link": "https://www.businessinsider.com/live-selling-streaming-tiktok-whatnot-palmstreet-ecommerce-entrepreneurs-side-hustle-2025-11",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-30T21:41:40Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.businessinsider.com/live-selling-streaming-tiktok-whatnot-palmstreet-ecommerce-entrepreneurs-side-hustle-2025-11\"\u003ehttps://www.businessinsider.com/live-selling-streaming-tiktok-whatnot-palmstreet-ecommerce-entrepreneurs-side-hustle-2025-11\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46100720\"\u003ehttps://news.ycombinator.com/item?id=46100720\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Will Psilocybin Have Its Day in Clinical Psychiatry?",
+      "link": "https://www.medscape.com/viewarticle/will-psilocybin-finally-have-its-day-clinical-psychiatry-2025a1000xan",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-30T21:40:05Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.medscape.com/viewarticle/will-psilocybin-finally-have-its-day-clinical-psychiatry-2025a1000xan\"\u003ehttps://www.medscape.com/viewarticle/will-psilocybin-finally-have-its-day-clinical-psychiatry-2025a1000xan\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46100708\"\u003ehttps://news.ycombinator.com/item?id=46100708\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Building the Perfect Linux PC with Linus Torvalds",
+      "link": "https://youtu.be/mfv0V1SxbNA",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-30T21:40:03Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://youtu.be/mfv0V1SxbNA\"\u003ehttps://youtu.be/mfv0V1SxbNA\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46100707\"\u003ehttps://news.ycombinator.com/item?id=46100707\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "AoC is starting! This project will help you bootstrap in C++",
+      "link": "https://github.com/jphjsoares/aoc-cpp-template",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-30T21:35:04Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/jphjsoares/aoc-cpp-template\"\u003ehttps://github.com/jphjsoares/aoc-cpp-template\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46100664\"\u003ehttps://news.ycombinator.com/item?id=46100664\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Write Your Own Obituary – Then live up to it",
+      "link": "https://jeffreylminch.substack.com/p/write-your-own-obituary",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-30T21:33:32Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://jeffreylminch.substack.com/p/write-your-own-obituary\"\u003ehttps://jeffreylminch.substack.com/p/write-your-own-obituary\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46100653\"\u003ehttps://news.ycombinator.com/item?id=46100653\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Google Starts Sharing All Your Text Messages with Your Employer",
+      "link": "https://www.forbes.com/sites/zakdoffman/2025/11/30/google-starts-sharing-all-your-text-messages-with-your-employer/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-30T21:31:37Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.forbes.com/sites/zakdoffman/2025/11/30/google-starts-sharing-all-your-text-messages-with-your-employer/\"\u003ehttps://www.forbes.com/sites/zakdoffman/2025/11/30/google-starts-sharing-all-your-text-messages-with-your-employer/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46100641\"\u003ehttps://news.ycombinator.com/item?id=46100641\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 4\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Ty",
+      "link": "https://docs.astral.sh/ty/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-30T21:30:51Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://docs.astral.sh/ty/\"\u003ehttps://docs.astral.sh/ty/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46100637\"\u003ehttps://news.ycombinator.com/item?id=46100637\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Tracktrip, Travel Expense Tracker",
+      "link": "https://tracktrip.app/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-30T21:29:58Z",
+      "description": "\n\u003cp\u003eHello HN!\u003cp\u003eI'm a European traveler, and during my last 6 months of travel I created an app to keep track of my expenses. I made it open-source and started to build a website and a documentation for other people to use it!\u003cp\u003eIt's a fairly simple PWA that you can install on mobile that can help you set a budget, keep track of expenses and analyse what you spend.\u003cp\u003eThanks for any feedback and keep traveling guys!\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46100623\"\u003ehttps://news.ycombinator.com/item?id=46100623\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Fundamental Theorem of System Architecture and Change Management",
+      "link": "https://pastebin.com/P14SUSFm",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-30T21:29:40Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://pastebin.com/P14SUSFm\"\u003ehttps://pastebin.com/P14SUSFm\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46100622\"\u003ehttps://news.ycombinator.com/item?id=46100622\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Pentagon's social media rules can't keep up with viral military influencers",
+      "link": "https://www.businessinsider.com/military-influencers-social-media-pentagon-ethics-policy-gray-area-2025-11",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-11-30T21:29:40Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.businessinsider.com/military-influencers-social-media-pentagon-ethics-policy-gray-area-2025-11\"\u003ehttps://www.businessinsider.com/military-influencers-social-media-pentagon-ethics-policy-gray-area-2025-11\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46100621\"\u003ehttps://news.ycombinator.com/item?id=46100621\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    }
+  ],
+  "generatedAt": "2025-12-01T07:09:08.056158962+09:00"
+}
