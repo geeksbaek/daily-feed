@@ -1,0 +1,369 @@
+{
+  "date": "2025-12-02",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2025년 12월 1일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** 구글이 Gemini 3를 통해 검색 경험을 재정의하고, OpenAI는 기업 시장과 연말 시즌을 동시에 공략하며, 개발자 생태계는 Transformers v5와 새로운 오픈소스 도구들로 더욱 풍성해졌습니다.\n\n---\n\n## 🏆 Top Story: AI 검색의 새로운 장(章)\n### 🚀 구글, Gemini 3 및 'Nano Banana Pro' 글로벌 검색 도입\n구글이 자사의 최신 AI 모델인 **Gemini 3**와 온디바이스에 특화된 것으로 보이는 **Nano Banana Pro** 모드를 전 세계 검색 서비스에 확대 적용합니다. 이는 단순한 검색 결과 나열을 넘어, 복합적인 추론과 개인화된 답변을 제공하려는 구글의 승부수로 해석됩니다.\n*   **핵심:** Gemini 3의 강력한 추론 능력이 검색 엔진의 백본으로 통합됨.\n*   **관전 포인트:** 'Nano Banana Pro'라는 독특한 네이밍의 모델이 모바일 환경에서 어떤 최적화 성능을 보여줄지 주목됩니다. [^5][^7][^21]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. OpenAI의 전방위 확장: 기업(Enterprise)에서 산타(Santa)까지\nOpenAI가 비즈니스와 대중성을 동시에 잡는 광폭 행보를 보이고 있습니다.\n- **What:** 액센츄어(Accenture)와의 파트너십 강화 및 Thrive Holdings 지분 확보를 통해 기업용 AI 도입을 가속화합니다. 동시에 NORAD(북미항공우주방위사령부)와 협력하여 '산타 추적기'에 AI 마법을 더했습니다.\n- **Why:** 기업 시장에서는 확실한 수익 모델과 도입 사례를 구축하고(B2B), 대중에게는 친근한 브랜드 이미지를 심어주기 위함(B2C)입니다.\n- **Impact:** 엔터프라이즈 AI 시장의 표준이 OpenAI 중심으로 재편될 가능성이 높습니다. [^1][^2][^3]\n\n### 2. Hugging Face, 'Transformers v5' 공개\nAI 개발의 표준 라이브러리나 다름없는 Transformers가 v5로 메이저 업데이트되었습니다.\n- **What:** 모델 정의 방식을 획기적으로 단순화하여 생태계의 복잡성을 줄였습니다.\n- **Why:** AI 모델이 거대해지고 다양해짐에 따라, 개발자 진입 장벽을 낮추고 호환성을 높일 필요가 있었습니다.\n- **Impact:** 새로운 아키텍처의 모델들이 더 빠르게 연구되고 배포될 수 있는 기반이 마련되었습니다. [^4]\n\n### 3. 인프라의 결합: Replicate, Cloudflare 합류\nAI 모델 실행 플랫폼인 Replicate가 글로벌 엣지 네트워크 기업 Cloudflare와 손을 잡았습니다(또는 합류했습니다).\n- **What:** Replicate의 모델 서빙 능력과 Cloudflare의 전 세계 분산 네트워크가 결합됩니다.\n- **Why:** AI 추론(Inference) 속도를 높이고 지연 시간(Latency)을 최소화하기 위해서는 사용자와 가까운 '엣지'에서의 처리가 필수적입니다.\n- **Impact:** 서버리스 AI 배포가 더욱 빨라지고 저렴해질 전망입니다. [^8]\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **VS Code v1.107** | 2025년 11월 업데이트. 에디팅 경험이 재정의되었습니다. [^9] |\n| **Tool** | **Olares \u0026 One** | 오픈소스 퍼스널 클라우드 및 로컬 AI 데스크톱 환경. 데이터 주권을 되찾으려는 시도. [^24][^25] |\n| **Model** | **Arcee AI Trinity** | 미국 기반의 새로운 오픈 웨이트(Open Weight) 모델 (Mini/Nano). [^26] |\n| **Lib** | **PyAppExec** | 파이썬 앱을 위한 네이티브 스타일의 런처 실행기. [^29] |\n| **Event** | **Advent of SQL 2025** | 크리스마스 시즌을 맞아 SQL 문제를 풀며 실력을 겨루는 이벤트. [^16] |\n| **Tool** | **Locu** | 엔지니어를 위한 딥워크(Deep work) 세션 관리 도구 (Linear/Jira 연동). [^41] |\n| **Paper** | **Programmer as Navigator** | 찰스 바크만의 고전 논문. 프로그래머의 역할을 항해사에 비유. [^23] |\n| **Video** | **AI Wet Labs** | AI가 실제 생물학/화학 실험실(Wet Lab)을 어떻게 혁신하는지에 대한 영상. [^35] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n\n#### 💻 개발 \u0026 인프라\n*   **Confluence Race Mode**: 아틀라시안이 컨플루언스에 도입한 실시간 협업 동기화 기술('Race Mode')의 내부 구조를 공개했습니다. [^6]\n*   **GitHub Agents Orchestration**: 'Mission Control'을 사용하여 여러 AI 에이전트를 조율하는 방법을 소개했습니다. [^20][^44]\n*   **Docker Model Runner**: 도커 컨테이너를 활용해 임베딩 모델을 실행하고 시맨틱 검색을 구현하는 가이드입니다. [^42]\n*   **Git 기반 이슈 트래커**: 복잡한 도구 대신 Git 자체를 활용한 가벼운 이슈 관리 방법론이 제안되었습니다. [^14]\n*   **GitHub to Codeberg**: 깃허브를 떠나 오픈소스 친화적인 Codeberg로 프로젝트를 이전한 개발자의 경험담입니다. [^12]\n*   **Dillo 브라우저 이전**: 경량 브라우저 Dillo 프로젝트도 깃허브에서 이전했습니다. [^18]\n*   **FreeBSD 러브레터**: 리눅스와는 다른 FreeBSD만의 철학(완전한 OS로서의 일관성 등)을 예찬한 글입니다. [^15]\n*   **Sokol Vulkan Backend**: 그래픽 라이브러리 Sokol의 실험적인 Vulkan 백엔드 구현기입니다. [^33]\n*   **Spring Boot 4 토크**: 젯브레인스 엔지니어들이 스프링 부트 4와 개발자의 삶에 대해 나눈 라이브스트림 요약입니다. [^45]\n*   **최적화 알고리즘**: 다양한 최적화 문제 해결을 위한 알고리즘 모음입니다. [^11]\n*   **MyGeekNews**: 내가 'Upvote'한 긱뉴스 게시글을 검색할 수 있는 개인화 도구입니다. [^13]\n*   **Commits on Christmas**: 매년 크리스마스에 커밋을 했는지(스트릭) 확인해주는 재미있는 서비스입니다. [^17]\n*   **CDN 트래픽 분석 기법**: 특정 문자열(\"Boobs check\"라 불리는 기법)을 통해 사이트가 이란 등 특정 국가에서 호스팅되는지 확인하는 기술적 분석입니다. [^10]\n*   **C++ Unicode \u0026 Locales**: C++에서의 인코딩, 유니코드 처리에 대한 심도 있는 기술 문서(PDF)입니다. [^40]\n*   **Mozilla의 딜레마**: 모질라 재단이 직면한 최근의 전략적/재정적 곤경에 대한 분석입니다. [^38]\n\n#### 🤖 AI \u0026 로보틱스\n*   **NVIDIA @ NeurIPS**: 엔비디아가 신경정보처리시스템학회(NeurIPS)에서 디지털 및 물리적 AI를 위한 오픈 모델 개발 성과를 발표했습니다. [^43]\n*   **Rockstar 창업자의 AI 비판**: 락스타 게임즈 공동 창업자가 AI 열풍을 '광우병'에 비유하며, 이를 추진하는 경영진을 비판했습니다. [^37]\n*   **Unitree Robotics**: 사족보행 로봇 등으로 유명한 유니트리 로보틱스의 최신 동향입니다. [^39]\n\n#### 💼 비즈니스 \u0026 사회\n*   **나이키의 위기(Nike's Crisis)**: 브랜드 가치 하락의 경제학적 원인을 분석하고 나이키의 현재 위기를 진단했습니다. [^31]\n*   **경쟁사 제품을 사는 이유**: 고객이 우리 제품 대신 경쟁사를 선택하거나, 둘 다 구매하는 심리에 대한 비즈니스 인사이트입니다. [^19]\n*   **하이브리드 워크와 행복**: 자유로운 하이브리드 근무 형태가 실제로 직장인의 행복도를 높였는지에 대한 분석입니다. [^28]\n*   **미국 출산 비용 $40k**: 아이를 낳는 데 4만 달러(약 5천만 원)가 드는 미국 의료 시스템의 현실을 꼬집은 글입니다. [^36]\n*   **콜롬비아 코카인 논란**: 3,000톤의 코카인 생산량 수치를 두고 콜롬비아 정부와 UN 간의 갈등이 빚어지고 있습니다. [^22]\n*   **식용유와 비만**: 미국에서 가장 인기 있는 식용유가 비만에 직접적인 영향을 줄 수 있다는 새로운 연구 결과입니다. [^27]\n\n#### 🧪 과학 \u0026 역사\n*   **성간 분자 목록**: 우주 공간(성간 및 별 주변)에서 발견된 다양한 분자들의 위키피디아 목록이 화제입니다. [^30]\n*   **루이스와 클라크의 위치 추적**: 역사적인 탐험가 루이스와 클라크의 여정을 현대의 지리 위치 기술로 재조명했습니다. [^32]\n*   **데이터 독립성의 역사**: 관계형 모델(Relational Model)의 역사와 데이터 독립성 개념의 진화를 다룬 글입니다. [^34]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘 뉴스는 '**확장(Expansion)**'과 '**성찰(Reflection)**'로 요약됩니다. 구글과 OpenAI는 각각 검색과 기업 시장으로 영토를 확장하고 있지만, 한편에서는 AI에 대한 비판(Rockstar 창업자)과 브랜드의 몰락(나이키), 그리고 오픈소스 생태계의 이동(GitHub 탈출)과 같은 성찰적인 목소리도 큽니다. 기술의 속도가 빨라질수록, 그 방향성을 고민하는 글들이 더욱 눈에 띄는 하루입니다.\n\n---\n\n### Footnotes\n[^1]: OpenAI and NORAD team up to bring new magic to “NORAD Tracks Santa” - OpenAI News\n[^2]: Accenture and OpenAI accelerate enterprise AI success - OpenAI News\n[^3]: OpenAI takes an ownership stake in Thrive Holdings to accelerate enterprise AI adoption - OpenAI News\n[^4]: Transformers v5: Simple model definitions powering the AI ecosystem - Hugging Face - Blog\n[^5]: Gemini 3 and Nano Banana Pro in Search are coming to more countries around the world. - Gemini\n[^6]: Under the Hood of Confluence Race Mode - Atlassian Developer Blog\n[^7]: Gemini 3 and Nano Banana Pro in Search are coming to more countries around the world. - AI\n[^8]: Why Replicate is joining Cloudflare - Cloudflare Blog\n[^9]: November 2025 Insiders (version 1.107) - Visual Studio Code\n[^10]: CDN 뒤에 있는 사이트가 이란에서 호스팅되는지 확인하는 “Boobs check” 기법 - GeekNews\n[^11]: 최적화를 위한 알고리듬 - GeekNews\n[^12]: GitHub에서 Codeberg로: 나의 경험 - GeekNews\n[^13]: Show GN: MyGeekNews - 내가 Upvote한 GeekNews 게시글 검색기 - GeekNews\n[^14]: git 기반의 가벼운 이슈트래커 - GeekNews\n[^15]: FreeBSD에 대한 러브레터 - GeekNews\n[^16]: Show GN: Advent of SQL 2025 - GeekNews\n[^17]: Show GN: Commits on Christmas - 매년 크리스마스의 커밋 스트릭을 확인해보세요 - GeekNews\n[^18]: GitHub에서 Dillo 프로젝트 이전 - GeekNews\n[^19]: 고객이 경쟁사 제품을 샀는데… 당신 제품도 사는 이유 - GeekNews\n[^20]: How to orchestrate agents using mission control - GitHub Blog\n[^21]: Gemini 3 and Nano Banana Pro in Search are coming to more countries around the world. - The Official Google Blog\n[^22]: 3k tons of cocaine: controversial figure pits Colombia against the UN - Hacker News\n[^23]: The Programmer as Navigator by Charles W. Bachman - Hacker News\n[^24]: Olares: An Open-Source Personal Cloud to Reclaim Your Data - Hacker News\n[^25]: Olares One: Local AI Desktop by Olares - Hacker News\n[^26]: Arcee AI Trinity Mini and Nano – US based open weight models - Hacker News\n[^27]: Most popular cooking oil in America may directly contribute to obesity - Hacker News\n[^28]: Has the freedom of hybrid work made us happier? - Hacker News\n[^29]: HN: Want to ship a native-like launcher for your Python app? Meet PyAppExec - Hacker News\n[^30]: List of Interstellar and Circumstellar Molecules - Hacker News\n[^31]: Nike's Crisis and the Economics of Brand Decay - Hacker News\n[^32]: Lewis and Clark Geolocation - Hacker News\n[^33]: The experimental Sokol Vulkan back end - Hacker News\n[^34]: More Data Independence and the History of the Relational Model - Hacker News\n[^35]: AI Wet Labs – Chapter 1 [video] - Hacker News\n[^36]: Why Am I Paying $40k for the Birth of My Child? - Hacker News\n[^37]: Rockstar co-founder compares AI to 'mad cow disease' - Hacker News\n[^38]: Mozilla's Latest Quagmire - Hacker News\n[^39]: Unitree Robotics - Hacker News\n[^40]: Locales, encodings, Unicode, and C++ [pdf] - Hacker News\n[^41]: Show HN: Locu – Deep work sessions for engineers (Linear/Jira, local-first) - Hacker News\n[^42]: Run Embedding Models and Unlock Semantic Search with Docker Model Runner - Docker Blog\n[^43]: At NeurIPS, NVIDIA Advances Open Model Development for Digital and Physical AI - NVIDIA Blog\n[^44]: How to orchestrate agents using mission control - The GitHub Blog\n[^45]: New Livestream: Engineers Talk About Spring Boot 4, Life, and Other Stuff - IntelliJ IDEA Blog\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **OpenAI and NORAD team up to bring new magic to “NORAD Tracks Santa”**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/norad-holiday-collaboration\n\n2. **Accenture and OpenAI accelerate enterprise AI success**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/accenture-partnership\n\n3. **OpenAI takes an ownership stake in Thrive Holdings to accelerate enterprise AI adoption**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/thrive-holdings\n\n4. **Transformers v5: Simple model definitions powering the AI ecosystem**\n   - 출처: Hugging Face - Blog\n   - 링크: https://huggingface.co/blog/transformers-v5\n\n5. **Gemini 3 and Nano Banana Pro in Search are coming to more countries around the world.**\n   - 출처: Gemini\n   - 링크: https://blog.google/products/search/gemini-3-ai-mode-more-countries/\n\n6. **Under the Hood of Confluence Race Mode**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/atlassian-engineering/under-the-hood-of-confluence-race-mode\n\n7. **Gemini 3 and Nano Banana Pro in Search are coming to more countries around the world.**\n   - 출처: AI\n   - 링크: https://blog.google/products/search/gemini-3-ai-mode-more-countries/\n\n8. **Why Replicate is joining Cloudflare**\n   - 출처: Cloudflare Blog\n   - 링크: https://blog.cloudflare.com/why-replicate-joining-cloudflare/\n\n9. **November 2025 Insiders (version 1.107)**\n   - 출처: Visual Studio Code - Code Editing. Redefined.\n   - 링크: https://code.visualstudio.com/updates/v1_107\n\n10. **CDN 뒤에 있는 사이트가 이란에서 호스팅되는지 확인하는 “Boobs check” 기법**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24758\n\n11. **최적화를 위한 알고리듬**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24757\n\n12. **GitHub에서 Codeberg로: 나의 경험**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24756\n\n13. **Show GN: MyGeekNews - 내가 Upvote한 GeekNews 게시글 검색기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24755\n\n14. **git 기반의 가벼운 이슈트래커**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24754\n\n15. **FreeBSD에 대한 러브레터**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24753\n\n16. **Show GN: Advent of SQL 2025**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24752\n\n17. **Show GN: Commits on Christmas - 매년 크리스마스의 커밋 스트릭을 확인해보세요**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24751\n\n18. **GitHub에서 Dillo 프로젝트 이전**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24750\n\n19. **고객이 경쟁사 제품을 샀는데… 당신 제품도 사는 이유**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24749\n\n20. **How to orchestrate agents using mission control**\n   - 출처: GitHub Blog\n   - 링크: https://github.blog/ai-and-ml/github-copilot/how-to-orchestrate-agents-using-mission-control/\n\n21. **Gemini 3 and Nano Banana Pro in Search are coming to more countries around the world.**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/products/search/gemini-3-ai-mode-more-countries/\n\n22. **3k tons of cocaine: controversial figure pits Colombia against the UN**\n   - 출처: Hacker News\n   - 링크: https://english.elpais.com/international/2025-11-18/3000-tons-of-cocaine-the-controversial-figure-that-pits-colombia-against-the-united-nations.html\n\n23. **The Programmer as Navigator by Charles W. Bachman**\n   - 출처: Hacker News\n   - 링크: https://dl.acm.org/doi/pdf/10.1145/355611.362534\n\n24. **Olares: An Open-Source Personal Cloud to Reclaim Your Data**\n   - 출처: Hacker News\n   - 링크: https://github.com/beclab/Olares\n\n25. **Olares One: Local AI Desktop by Olares**\n   - 출처: Hacker News\n   - 링크: https://one.olares.com/\n\n26. **Arcee AI Trinity Mini and Nano – US based open weight models**\n   - 출처: Hacker News\n   - 링크: https://www.arcee.ai/blog/the-trinity-manifesto\n\n27. **Most popular cooking oil in America may directly contribute to obesity**\n   - 출처: Hacker News\n   - 링크: https://www.foxnews.com/health/americas-most-popular-cooking-oil-may-linked-obesity-new-study-finds\n\n28. **Has the freedom of hybrid work made us happier?**\n   - 출처: Hacker News\n   - 링크: https://www.rnz.co.nz/life/wellbeing/has-the-freedom-of-hybrid-work-made-us-happier\n\n29. **HN: Want to ship a native-like launcher for your Python app? Meet PyAppExec**\n   - 출처: Hacker News\n   - 링크: https://github.com/hyperfield/pyappexec\n\n30. **List of Interstellar and Circumstellar Molecules**\n   - 출처: Hacker News\n   - 링크: https://en.wikipedia.org/wiki/List_of_interstellar_and_circumstellar_molecules\n\n31. **Nike's Crisis and the Economics of Brand Decay**\n   - 출처: Hacker News\n   - 링크: https://philippdubach.com/2025/12/01/nikes-crisis-and-the-economics-of-brand-decay/\n\n32. **Lewis and Clark Geolocation**\n   - 출처: Hacker News\n   - 링크: https://www.johndcook.com/blog/2025/12/01/lewis-clark-geolocation/\n\n33. **The experimental Sokol Vulkan back end**\n   - 출처: Hacker News\n   - 링크: https://floooh.github.io/2025/12/01/sokol-vulkan-backend-1.html\n\n34. **More Data Independence and the History of the Relational Model**\n   - 출처: Hacker News\n   - 링크: https://buttondown.com/jaffray/archive/more-data-independence-and-the-history-of-the/\n\n35. **AI Wet Labs – Chapter 1 [video]**\n   - 출처: Hacker News\n   - 링크: https://www.youtube.com/watch?v=XhKbq8Jzp0U\n\n36. **Why Am I Paying $40k for the Birth of My Child?**\n   - 출처: Hacker News\n   - 링크: https://aaronstannard.com/40k-baby/\n\n37. **Rockstar co-founder compares AI to 'mad cow disease'**\n   - 출처: Hacker News\n   - 링크: https://www.pcgamer.com/software/ai/rockstar-co-founder-compares-ai-to-mad-cow-disease-and-says-the-execs-pushing-it-arent-fully-rounded-humans/\n\n38. **Mozilla's Latest Quagmire**\n   - 출처: Hacker News\n   - 링크: https://rubenerd.com/mozillas-latest-quagmire/\n\n39. **Unitree Robotics**\n   - 출처: Hacker News\n   - 링크: https://www.unitree.com/\n\n40. **Locales, encodings, Unicode, and C++ [pdf]**\n   - 출처: Hacker News\n   - 링크: http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/p2020r0.pdf\n\n41. **Show HN: Locu – Deep work sessions for engineers (Linear/Jira, local-first)**\n   - 출처: Hacker News\n   - 링크: https://locu.app\n\n42. **Run Embedding Models and Unlock Semantic Search with Docker Model Runner**\n   - 출처: Docker Blog\n   - 링크: https://www.docker.com/blog/run-embedding-models-for-semantic-search/\n\n43. **At NeurIPS, NVIDIA Advances Open Model Development for Digital and Physical AI**\n   - 출처: NVIDIA Blog\n   - 링크: https://blogs.nvidia.com/blog/neurips-open-source-digital-physical-ai/\n\n44. **How to orchestrate agents using mission control**\n   - 출처: The latest on GitHub Copilot - The GitHub Blog\n   - 링크: https://github.blog/ai-and-ml/github-copilot/how-to-orchestrate-agents-using-mission-control/\n\n45. **New Livestream: Engineers Talk About Spring Boot 4, Life, and Other Stuff**\n   - 출처: IntelliJ IDEA : IntelliJ IDEA – the IDE for Professional Development in Java and Kotlin | The JetBrains Blog\n   - 링크: https://blog.jetbrains.com/idea/2025/12/new-livestream-engineers-talk-about-spring-boot-4-life-and-other-stuff/\n\n\n",
+  "articles": [
+    {
+      "title": "OpenAI and NORAD team up to bring new magic to “NORAD Tracks Santa”",
+      "link": "https://openai.com/index/norad-holiday-collaboration",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2025-12-01T06:00:00Z",
+      "description": "OpenAI and NORAD are bringing new magic to “NORAD Tracks Santa” with three ChatGPT holiday tools that let families create festive elves, toy coloring pages, and custom Christmas stories."
+    },
+    {
+      "title": "Accenture and OpenAI accelerate enterprise AI success",
+      "link": "https://openai.com/index/accenture-partnership",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2025-12-01T05:00:00Z",
+      "description": "Accenture and OpenAI are collaborating to help enterprises bring agentic AI capabilities into the core of their business and unlock new levels of growth."
+    },
+    {
+      "title": "OpenAI takes an ownership stake in Thrive Holdings to accelerate enterprise AI adoption",
+      "link": "https://openai.com/index/thrive-holdings",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2025-12-01T05:00:00Z",
+      "description": "OpenAI takes an ownership stake in Thrive Holdings to accelerate enterprise AI adoption, embedding frontier research and engineering directly into accounting and IT services to boost speed, accuracy, and efficiency while creating a scalable model for industry-wide transformation."
+    },
+    {
+      "title": "Transformers v5: Simple model definitions powering the AI ecosystem",
+      "link": "https://huggingface.co/blog/transformers-v5",
+      "source": "Hugging Face - Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-01T00:00:00Z"
+    },
+    {
+      "title": "Gemini 3 and Nano Banana Pro in Search are coming to more countries around the world.",
+      "link": "https://blog.google/products/search/gemini-3-ai-mode-more-countries/",
+      "source": "Gemini",
+      "category": "tech",
+      "publishedAt": "2025-12-01T20:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gemini3inGoogleSearch_Social.max-600x600.format-webp.webp\"\u003eWe're bringing our most intelligent model yet, Gemini 3 Pro, to Google Search in more countries around the world."
+    },
+    {
+      "title": "Under the Hood of Confluence Race Mode",
+      "link": "https://www.atlassian.com/blog/atlassian-engineering/under-the-hood-of-confluence-race-mode",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-01T17:50:07Z",
+      "description": "\u003cp\u003eDiscover how we built Race Mode, a mini-game in Confluence whiteboards, combining play, performance, and fun for teams. \u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/atlassian-engineering/under-the-hood-of-confluence-race-mode\"\u003eUnder the Hood of Confluence Race Mode\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Gemini 3 and Nano Banana Pro in Search are coming to more countries around the world.",
+      "link": "https://blog.google/products/search/gemini-3-ai-mode-more-countries/",
+      "source": "AI",
+      "category": "tech",
+      "publishedAt": "2025-12-01T20:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gemini3inGoogleSearch_Social.max-600x600.format-webp.webp\"\u003eWe're bringing our most intelligent model yet, Gemini 3 Pro, to Google Search in more countries around the world."
+    },
+    {
+      "title": "Why Replicate is joining Cloudflare",
+      "link": "https://blog.cloudflare.com/why-replicate-joining-cloudflare/",
+      "source": "Cloudflare Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-01T06:00:00Z",
+      "description": " Today, we’re excited to announce that Replicate is officially part of Cloudflare. We wanted to share a bit about our journey and why we made this decision.  "
+    },
+    {
+      "title": "November 2025 Insiders (version 1.107)",
+      "link": "https://code.visualstudio.com/updates/v1_107",
+      "source": "Visual Studio Code - Code Editing. Redefined.",
+      "category": "tech",
+      "publishedAt": "2025-12-10T17:00:00Z",
+      "description": "\n      \u003cp\u003eLearn what is new in the Visual Studio Code November 2025 Release (1.107).\u003c/p\u003e\n      \u003cp\u003e\u003ca href=\"https://code.visualstudio.com/updates/v1_107\"\u003eRead the full article\u003c/a\u003e\u003c/p\u003e\n    "
+    },
+    {
+      "title": "CDN 뒤에 있는 사이트가 이란에서 호스팅되는지 확인하는 “Boobs check” 기법",
+      "link": "https://news.hada.io/topic?id=24758",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-02T06:40:15+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eCDN 뒤에 숨겨진 웹사이트의 실제 호스팅 위치\u003c/strong\u003e를 판별하기 위한 간단한 검증 방법 소개\u003c/li\u003e\n\u003cli\u003e“\u003cstrong\u003eBoobs check\u003c/strong\u003e”이라 불리는 이 기법은 사이트가 \u003cstrong\u003e이란 내 서버에 위치하는지 여부\u003c/strong\u003e를 확인하는 데 사용\u003c/li\u003e\n\u003cli\u003e트위터 스레드 형태로 공유되었으며, \u003cstro...\u003c/p\u003e"
+    },
+    {
+      "title": "최적화를 위한 알고리듬",
+      "link": "https://news.hada.io/topic?id=24757",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-02T01:33:23+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e수학적 최적화의 원리와 알고리듬 전반\u003c/strong\u003e을 체계적으로 다루는 교재로, 연속·이산 문제 모두를 포괄\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e도함수 기반 기법\u003c/strong\u003e부터 \u003cstrong\u003e확률적·진화적 방법\u003c/strong\u003e까지 다양한 접근법을 단계적으로 설명\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e제약 조건, 이중성, 선형·이차 프로그래밍...\u003c/p\u003e"
+    },
+    {
+      "title": "GitHub에서 Codeberg로: 나의 경험",
+      "link": "https://news.hada.io/topic?id=24756",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-02T00:33:40+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e개인 프로젝트와 웹사이트를 \u003cstrong\u003eGitHub에서 Codeberg로 이전한 과정과 결과\u003c/strong\u003e를 구체적으로 설명\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eForgejo의 “migrate from GitHub” 기능\u003c/strong\u003e을 이용해 저장소, 이슈, PR, 위키, 릴리스를 완전하게 이전\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e링크 재지정과 GitHub 저장소 스텁 처리\u003c/strong...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: MyGeekNews - 내가 Upvote한 GeekNews 게시글 검색기",
+      "link": "https://news.hada.io/topic?id=24755",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-01T23:47:17+09:00",
+      "description": "\u003cp\u003e안녕하세요.\u003cbr /\u003e\nGeekNews에서 Upvote 한 글들이 많아지다보니, 제가 Upvote 한 글들을 찾기가 어려워서, 스크래핑 후 upvote한 글을 검색 할 수 있게 해주는 웹서비스를 만들었습니다.\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eGithub - https://github.com/Laeyoung/MyGeekNews\u003c/li\u003e\n\u003cli\u003e데모 - https://my-geeknews.vercel.app\u003c/li\u003e\n\u003c/ul\u003e\n"
+    },
+    {
+      "title": "git 기반의 가벼운 이슈트래커",
+      "link": "https://news.hada.io/topic?id=24754",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-01T22:18:42+09:00",
+      "description": "\u003cp\u003eAI 시대의 개발환경에서는 맥락을 전달하는것이 중요합니다. 보통 맥락은 JIRA와 같은 이슈트래커에서 관리하곤 합니다. 현재 AI에이전트에게 이슈트래커의 내용을 전달하기 위해서는 번거로운 과정을 거쳐야 합니다. 연동을 위해 추가로 작업을 하던지 아니면 복사 붙여넣기와 같은 작업이 필요합니다.\u003c/p\u003e\n\u003cp\u003egit-i"
+    },
+    {
+      "title": "FreeBSD에 대한 러브레터",
+      "link": "https://news.hada.io/topic?id=24753",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-01T20:33:07+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eFreeBSD의 단단하고 일관된 설계 철학\u003c/strong\u003e을 찬양하며, 과거의 조용하고 신뢰성 높은 컴퓨팅 문화를 떠올림\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e업타임과 안정성\u003c/strong\u003e을 핵심 목표로 삼아, 수년간의 지속 운용이 가능한 시스템으로 자리 잡아야 함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e데스크톱 확장과 서버 안정성의 균형\u003c/st...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: Advent of SQL 2025",
+      "link": "https://news.hada.io/topic?id=24752",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-01T15:43:24+09:00",
+      "description": "\u003cp\u003e\u003ca href=\"https://news.hada.io/topic?id=18046\"\u003e작년\u003c/a\u003e에 이어 올해에도 Advent of SQL 2025 챌린지를 준비했습니다.\u003c/p\u003e\n\u003cp\u003e12월 1일부터 25일간 매일 SQL 문제가 1개씩 공개가 됩니다. 간단한 SELECT문만 사용하는 쉬운 문제부터 실제 데이터 분석에 활용되는 쿼리들까지 다양하게 구성해보려고 노력했습니다....\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: Commits on Christmas - 매년 크리스마스의 커밋 스트릭을 확인해보세요",
+      "link": "https://news.hada.io/topic?id=24751",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-01T13:50:44+09:00",
+      "description": "\u003cp\u003e작년 크리스마스엔 무엇을 하셨나요? 재작년에는요? 혹시 집에서 커밋을 하시진 않았나요?\u003c/p\u003e\n\u003cp\u003e매년 크리스마스의 Github Contribution 여부를 확인하고, 몇 년 연속인지 streak을 보여주는 서비스를 만들어봤습니다 🎄\u003c/p\u003e\n\u003cp\u003e🎅 커밋이 많으면 산타할아버지가 선물을 안주신대요! 😱\u003c/p\u003e\n\u003chr /\u003e\n\u003cp\u003e작년에 Next."
+    },
+    {
+      "title": "GitHub에서 Dillo 프로젝트 이전",
+      "link": "https://news.hada.io/topic?id=24750",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-01T13:33:10+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e웹 브라우저 \u003cstrong\u003eDillo 프로젝트가 GitHub에서 자체 호스팅 서버로 이전\u003c/strong\u003e을 진행 중임\u003c/li\u003e\n\u003cli\u003eGitHub의 \u003cstrong\u003eJavaScript 의존성, 단일 통제 구조, 느린 성능\u003c/strong\u003e 등이 주요 이전 이유로 제시됨\u003c/li\u003e\n\u003cli\u003e새 서버는 \u003cstrong\u003edillo-browser.org 도메인\u003c/strong\u003e에서 운영되며, \u003cstrong\u003ecgi...\u003c/p\u003e"
+    },
+    {
+      "title": "고객이 경쟁사 제품을 샀는데… 당신 제품도 사는 이유",
+      "link": "https://news.hada.io/topic?id=24749",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-01T11:46:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e기업이 \u003cstrong\u003e수백만 달러짜리 엔터프라이즈 툴\u003c/strong\u003e을 이미 쓰고 있어도, 개인이 카드로 바로 결제할 수 있는 \u003cstrong\u003e저가 툴\u003c/strong\u003e을 함께 구매하는 상황이 흔함\u003c/li\u003e\n\u003cli\u003e거대 모니터링 제품 \u003cstrong\u003eHP OpenView\u003c/strong\u003e를 쓰던 병원에서, 별도 승인 없이 카드로 살 수 있고 특정 작업이 빠른 ...\u003c/p\u003e"
+    },
+    {
+      "title": "How to orchestrate agents using mission control",
+      "link": "https://github.blog/ai-and-ml/github-copilot/how-to-orchestrate-agents-using-mission-control/",
+      "source": "GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-01T17:00:00Z",
+      "description": "\u003cp\u003eRun multiple Copilot agents from one place. Learn prompt techniques, how to spot drift early, and how to review agent work efficiently.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/ai-and-ml/github-copilot/how-to-orchestrate-agents-using-mission-control/\"\u003eHow to orchestrate agents using mission control\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Gemini 3 and Nano Banana Pro in Search are coming to more countries around the world.",
+      "link": "https://blog.google/products/search/gemini-3-ai-mode-more-countries/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-01T20:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gemini3inGoogleSearch_Social.max-600x600.format-webp.webp\"\u003eWe're bringing our most intelligent model yet, Gemini 3 Pro, to Google Search in more countries around the world."
+    },
+    {
+      "title": "3k tons of cocaine: controversial figure pits Colombia against the UN",
+      "link": "https://english.elpais.com/international/2025-11-18/3000-tons-of-cocaine-the-controversial-figure-that-pits-colombia-against-the-united-nations.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-01T21:58:47Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://english.elpais.com/international/2025-11-18/3000-tons-of-cocaine-the-controversial-figure-that-pits-colombia-against-the-united-nations.html\"\u003ehttps://english.elpais.com/international/2025-11-18/3000-tons-of-cocaine-the-controversial-figure-that-pits-colombia-against-the-united-nations.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46113870\"\u003ehttps://news.ycombinator.com/item?id=46113870\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Programmer as Navigator by Charles W. Bachman",
+      "link": "https://dl.acm.org/doi/pdf/10.1145/355611.362534",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-01T21:58:36Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://dl.acm.org/doi/pdf/10.1145/355611.362534\"\u003ehttps://dl.acm.org/doi/pdf/10.1145/355611.362534\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46113868\"\u003ehttps://news.ycombinator.com/item?id=46113868\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Olares: An Open-Source Personal Cloud to Reclaim Your Data",
+      "link": "https://github.com/beclab/Olares",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-01T21:57:26Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/beclab/Olares\"\u003ehttps://github.com/beclab/Olares\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46113861\"\u003ehttps://news.ycombinator.com/item?id=46113861\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Olares One: Local AI Desktop by Olares",
+      "link": "https://one.olares.com/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-01T21:56:21Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://one.olares.com/\"\u003ehttps://one.olares.com/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46113850\"\u003ehttps://news.ycombinator.com/item?id=46113850\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Arcee AI Trinity Mini and Nano – US based open weight models",
+      "link": "https://www.arcee.ai/blog/the-trinity-manifesto",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-01T21:56:05Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.arcee.ai/blog/the-trinity-manifesto\"\u003ehttps://www.arcee.ai/blog/the-trinity-manifesto\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46113841\"\u003ehttps://news.ycombinator.com/item?id=46113841\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Most popular cooking oil in America may directly contribute to obesity",
+      "link": "https://www.foxnews.com/health/americas-most-popular-cooking-oil-may-linked-obesity-new-study-finds",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-01T21:55:32Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.foxnews.com/health/americas-most-popular-cooking-oil-may-linked-obesity-new-study-finds\"\u003ehttps://www.foxnews.com/health/americas-most-popular-cooking-oil-may-linked-obesity-new-study-finds\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46113832\"\u003ehttps://news.ycombinator.com/item?id=46113832\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Has the freedom of hybrid work made us happier?",
+      "link": "https://www.rnz.co.nz/life/wellbeing/has-the-freedom-of-hybrid-work-made-us-happier",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-01T21:54:34Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.rnz.co.nz/life/wellbeing/has-the-freedom-of-hybrid-work-made-us-happier\"\u003ehttps://www.rnz.co.nz/life/wellbeing/has-the-freedom-of-hybrid-work-made-us-happier\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46113812\"\u003ehttps://news.ycombinator.com/item?id=46113812\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "HN: Want to ship a native-like launcher for your Python app? Meet PyAppExec",
+      "link": "https://github.com/hyperfield/pyappexec",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-01T21:49:39Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/hyperfield/pyappexec\"\u003ehttps://github.com/hyperfield/pyappexec\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46113760\"\u003ehttps://news.ycombinator.com/item?id=46113760\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "List of Interstellar and Circumstellar Molecules",
+      "link": "https://en.wikipedia.org/wiki/List_of_interstellar_and_circumstellar_molecules",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-01T21:48:48Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://en.wikipedia.org/wiki/List_of_interstellar_and_circumstellar_molecules\"\u003ehttps://en.wikipedia.org/wiki/List_of_interstellar_and_circumstellar_molecules\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46113752\"\u003ehttps://news.ycombinator.com/item?id=46113752\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Nike's Crisis and the Economics of Brand Decay",
+      "link": "https://philippdubach.com/2025/12/01/nikes-crisis-and-the-economics-of-brand-decay/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-01T21:47:53Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://philippdubach.com/2025/12/01/nikes-crisis-and-the-economics-of-brand-decay/\"\u003ehttps://philippdubach.com/2025/12/01/nikes-crisis-and-the-economics-of-brand-decay/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46113738\"\u003ehttps://news.ycombinator.com/item?id=46113738\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Lewis and Clark Geolocation",
+      "link": "https://www.johndcook.com/blog/2025/12/01/lewis-clark-geolocation/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-01T21:47:03Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.johndcook.com/blog/2025/12/01/lewis-clark-geolocation/\"\u003ehttps://www.johndcook.com/blog/2025/12/01/lewis-clark-geolocation/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46113725\"\u003ehttps://news.ycombinator.com/item?id=46113725\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The experimental Sokol Vulkan back end",
+      "link": "https://floooh.github.io/2025/12/01/sokol-vulkan-backend-1.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-01T21:46:33Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://floooh.github.io/2025/12/01/sokol-vulkan-backend-1.html\"\u003ehttps://floooh.github.io/2025/12/01/sokol-vulkan-backend-1.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46113720\"\u003ehttps://news.ycombinator.com/item?id=46113720\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "More Data Independence and the History of the Relational Model",
+      "link": "https://buttondown.com/jaffray/archive/more-data-independence-and-the-history-of-the/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-01T21:46:02Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://buttondown.com/jaffray/archive/more-data-independence-and-the-history-of-the/\"\u003ehttps://buttondown.com/jaffray/archive/more-data-independence-and-the-history-of-the/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46113712\"\u003ehttps://news.ycombinator.com/item?id=46113712\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "AI Wet Labs – Chapter 1 [video]",
+      "link": "https://www.youtube.com/watch?v=XhKbq8Jzp0U",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-01T21:45:40Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.youtube.com/watch?v=XhKbq8Jzp0U\"\u003ehttps://www.youtube.com/watch?v=XhKbq8Jzp0U\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46113708\"\u003ehttps://news.ycombinator.com/item?id=46113708\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Why Am I Paying $40k for the Birth of My Child?",
+      "link": "https://aaronstannard.com/40k-baby/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-01T21:44:34Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://aaronstannard.com/40k-baby/\"\u003ehttps://aaronstannard.com/40k-baby/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46113689\"\u003ehttps://news.ycombinator.com/item?id=46113689\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 12\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Rockstar co-founder compares AI to 'mad cow disease'",
+      "link": "https://www.pcgamer.com/software/ai/rockstar-co-founder-compares-ai-to-mad-cow-disease-and-says-the-execs-pushing-it-arent-fully-rounded-humans/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-01T21:44:28Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.pcgamer.com/software/ai/rockstar-co-founder-compares-ai-to-mad-cow-disease-and-says-the-execs-pushing-it-arent-fully-rounded-humans/\"\u003ehttps://www.pcgamer.com/software/ai/rockstar-co-founder-compares-ai-to-mad-cow-disease-and-says-the-execs-pushing-it-arent-fully-rounded-humans/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46113687\"\u003ehttps://news.ycombinator.com/item?id=46113687\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 4\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Mozilla's Latest Quagmire",
+      "link": "https://rubenerd.com/mozillas-latest-quagmire/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-01T21:44:07Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://rubenerd.com/mozillas-latest-quagmire/\"\u003ehttps://rubenerd.com/mozillas-latest-quagmire/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46113682\"\u003ehttps://news.ycombinator.com/item?id=46113682\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Unitree Robotics",
+      "link": "https://www.unitree.com/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-01T21:42:23Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.unitree.com/\"\u003ehttps://www.unitree.com/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46113655\"\u003ehttps://news.ycombinator.com/item?id=46113655\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Locales, encodings, Unicode, and C++ [pdf]",
+      "link": "http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/p2020r0.pdf",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-01T21:42:02Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/p2020r0.pdf\"\u003ehttp://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/p2020r0.pdf\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46113651\"\u003ehttps://news.ycombinator.com/item?id=46113651\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Locu – Deep work sessions for engineers (Linear/Jira, local-first)",
+      "link": "https://locu.app",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-01T21:39:18Z",
+      "description": "\n\u003cp\u003eLocu is a desktop app for engineers who want to do focused work consistently. We're 3 engineers who built it for ourselves - started as a Pomodoro replacement, grew into the system we use daily for all work-related stuff.\u003cp\u003eHow it works:\nImport tasks from Linear/Jira. Break them down, add private notes. Each morning, pick your priorities for the day. Then execute: pick a task, enter focus mode, distractions blocked (apps + websites), work on one thing.\nSessions are based on ultradian cycles (90 min focus blocks) - Andrew Huberman covered this on his podcast. Works way better than Pomodoro for actual coding.\u003cp\u003eTime tracking happens automatically as you work. Useful if you're contractor or just want to see where your hours went.\u003cp\u003eOther stuff:\n- Google Calendar integration: see all your meetings for the day, capture meeting notes\n- Slack integration: turn messages into tasks and sync your DnD status\n- Brag book: log achievements for perf reviews\n- Rich Text Editor for work-related knowledge base: code snippets, small docs for yourself.\n- Local-first (powered by Replicache) - especially relevant for Jira users since we almost entirely eliminate the need for visiting Jira website :) for Linear users it's just a native persona extension ;)\n- Available on both macOs and Windows, Linux and Mobile are coming as well\u003cp\u003eCurious how other engineers here structure their day. Do you do any kind of planning ritual? Time-block? Or just working as it goes? We landed on this session-based approach after trying a bunch of things, but always interested in what works for others.\u003cp\u003eAlso happy to hear what's missing.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46113607\"\u003ehttps://news.ycombinator.com/item?id=46113607\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Run Embedding Models and Unlock Semantic Search with Docker Model Runner",
+      "link": "https://www.docker.com/blog/run-embedding-models-for-semantic-search/",
+      "source": "Docker Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-01T13:13:47Z",
+      "description": "Embeddings have become the backbone of many modern AI applications. From semantic search to retrieval-augmented generation (RAG) and intelligent recommendation systems, embedding models enable systems to understand the meaning behind text, code, or documents, not just the literal words. But generating embeddings comes with trade-offs. Using a hosted API for embedding generation often results in..."
+    },
+    {
+      "title": "At NeurIPS, NVIDIA Advances Open Model Development for Digital and Physical AI",
+      "link": "https://blogs.nvidia.com/blog/neurips-open-source-digital-physical-ai/",
+      "source": "NVIDIA Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-01T17:00:48Z",
+      "description": "Researchers worldwide rely on open-source technologies as the foundation of their work. To equip the community with the latest advancements in digital and physical AI, NVIDIA is further expanding its collection of open AI models, datasets and tools — with potential applications in virtually every research field. At NeurIPS, one of the world’s top AI\t\u003ca class=\"read-more\" href=\"https://blogs.nvidia.com/blog/neurips-open-source-digital-physical-ai/\"\u003e\n\t\tRead Article\t\t\u003cspan data-icon=\"y\"\u003e\u003c/span\u003e\n\t\u003c/a\u003e\n\t"
+    },
+    {
+      "title": "How to orchestrate agents using mission control",
+      "link": "https://github.blog/ai-and-ml/github-copilot/how-to-orchestrate-agents-using-mission-control/",
+      "source": "The latest on GitHub Copilot - The GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-01T17:00:00Z",
+      "description": "\u003cp\u003eRun multiple Copilot agents from one place. Learn prompt techniques, how to spot drift early, and how to review agent work efficiently.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/ai-and-ml/github-copilot/how-to-orchestrate-agents-using-mission-control/\"\u003eHow to orchestrate agents using mission control\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "New Livestream: Engineers Talk About Spring Boot 4, Life, and Other Stuff",
+      "link": "https://blog.jetbrains.com/idea/2025/12/new-livestream-engineers-talk-about-spring-boot-4-life-and-other-stuff/",
+      "source": "IntelliJ IDEA : IntelliJ IDEA – the IDE for Professional Development in Java and Kotlin | The JetBrains Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-01T14:22:36Z",
+      "description": "Join us as we welcome the Spring team and Evgeny Borisov for a new IntelliJ IDEA livestream, where we’ll discuss what’s new in Spring Boot 4 and how all the new updates work in IntelliJ IDEA. Date: December 11, 2025 Time: 4:00–5:00 pm UTC REGISTER FOR THE LIVESTREAM Session abstract In this livestream, we’ll explore [\u0026#8230;]"
+    }
+  ],
+  "generatedAt": "2025-12-02T07:08:49.459242382+09:00"
+}
