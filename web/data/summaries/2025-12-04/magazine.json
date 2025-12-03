@@ -1,0 +1,450 @@
+{
+  "date": "2025-12-04",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2025년 12월 3일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** 개발자 도구의 'AI 에이전트화'가 가속화(GitHub, Docker, Atlassian)되는 가운데, 보안 생태계는 인증서 유효기간 단축과 리액트 취약점 대응으로 긴박하게 움직이고 있습니다.\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### GitHub Copilot, '커스텀 에이전트'로 진화하다\nGitHub가 Copilot에 **커스텀 에이전트(Custom Agents)** 기능을 도입했습니다. 이제 Copilot은 단순한 코드 자동 완성을 넘어, 사용자의 기술 스택(New Relic, Datadog 등)과 직접 연동하여 관측 가능성(Observability), 인프라 코드(IaC), 보안 문제를 해결할 수 있게 되었습니다. 이는 개발자가 IDE를 벗어나지 않고도 복잡한 워크플로우를 AI와 함께 처리할 수 있음을 의미합니다. [^24][^52]\n\n\u003e **Key Point:** AI 코딩 도구가 '텍스트 생성기'에서 외부 툴과 연동해 작업을 수행하는 '워크플로우 자동화 에이전트'로 진화했습니다.\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. '에이전트(Agentic)' 생태계의 대폭발\n개발 도구들이 단순 기능을 넘어 '에이전트' 형태로 진화하고 있습니다.\n- **What:** **Docker**는 MCP(Model Context Protocol) 카탈로그 보안을 강화하며 에이전트 신뢰성을 높였고 [^3], **Atlassian**은 Rovo MCP 서버를 통해 자사 도구들을 AI 에이전트 생태계에 연결했습니다 [^28]. **Databricks**는 수천 개의 데이터베이스를 디버깅하는 AI 에이전트를 구축해 사고 대응 시간을 90% 단축했습니다 [^30].\n- **Why:** LLM이 실제 인프라 및 데이터와 상호작용하려면 표준화된 프로토콜(MCP 등)과 신뢰할 수 있는 실행 환경이 필수적이기 때문입니다.\n- **Impact:** 개발 및 운영(DevOps) 환경이 인간의 명령을 AI 에이전트가 수행하는 'AgentOps' 형태로 빠르게 재편될 전망입니다. [^23]\n\n### 2. 웹 보안의 긴급한 경고와 변화\n프론트엔드와 보안 인프라에서 중요한 이슈가 동시에 발생했습니다.\n- **What:** **Next.js**에서 서비스 거부(DoS) 공격이 가능한 보안 취약점(CVE-2025-66478)이 발견되었습니다 [^2]. 동시에 **Cloudflare**는 React 취약점을 방어하는 WAF 규칙을 배포했습니다 [^53]. 한편, **Let's Encrypt**는 인증서 유효기간을 90일에서 45일로 단축하겠다고 발표했습니다 [^18].\n- **Why:** 자동화된 봇넷(Aisuru 등)의 공격이 고도화됨에 따라 [^54], 방어 주기를 짧게 가져가고 보안 구멍을 즉각 메워야 할 필요성이 커졌습니다.\n- **Impact:** 웹 개발자들은 즉각적인 패치 적용과 함께, 더 빈번해질 인증서 갱신 자동화 프로세스를 점검해야 합니다.\n\n### 3. 테크 업계의 '일하는 방식'과 '채용'의 양극화\n기술 발전과 별개로 조직 문화와 고용 시장은 격동 중입니다.\n- **What:** **인스타그램** CEO는 2026년부터 전 직원 주 5일 사무실 출근을 명령했습니다 [^14]. 반면, 한국에서는 **주니어 개발자 채용 위기**가 심화되고 있습니다 [^13].\n- **Why:** 빅테크는 대면 협업을 통한 효율성을 강조하는 반면, 기업들은 AI 도입으로 인해 신입 교육 비용을 줄이고 숙련된 시니어만 찾는 경향이 강해졌습니다.\n- **Impact:** 신입 개발자의 설 자리가 좁아지는 가운데, AI가 대체할 수 없는 '문제 해결 능력'이 더욱 중요해지고 있습니다. [^20]\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **VS Code Insiders (v1.107)** | 코드 편집 경험을 재정의하는 최신 빌드 업데이트 [^1] |\n| **Tool** | **Devup-UI** | Emotion 및 styled-components 문법을 공식 지원하는 새로운 UI 라이브러리 [^19] |\n| **Tool** | **Yoloe** | 실시간으로 '모든 것'을 식별(Seeing Anything)하는 최신 비전 모델 [^41] |\n| **Infra** | **DiskBBQ** | Elasticsearch가 사용하는 벡터 스토리지 포맷에 대한 심층 분석 [^39] |\n| **Paper** | **LLM vs Search** | LLM과 웹 검색이 학습의 깊이에 미치는 영향을 비교한 연구 [^37] |\n| **Paper** | **Honest LLMs** | 언어 모델이 자신의 실수를 '고백'하게 하여 정직성을 높이는 방법 [^50] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n\n#### 💻 개발 \u0026 인프라\n* **Zig 비동기 설계**: Zig 언어가 새로운 비동기 프로그램 설계를 공개했습니다. [^15]\n* **Ruby 논쟁**: \"루비는 진지한 언어가 아니다\"라는 주장에 대한 커뮤니티의 뜨거운 반박과 토론이 이어졌습니다. [^21][^22]\n* **Docker Compose Models**: 도커 컴포즈 모델에 대한 상세한 설명이 공개되었습니다. [^40]\n* **Postgres \u0026 ClickHouse**: ClickHouse에서의 Postgres CDC(Change Data Capture) 1년 회고 [^43] 및 ImageVolume을 이용한 Postgres 확장 관리법 [^38].\n* **Atlassian 생태계**: Forge 자격증 출시 [^27] 및 Bitbucket의 새로운 UI/UX 업데이트 예고 [^29].\n* **JPEG XL 해킹**: JPEG XL MD5 해시를 이용한 콰인(Quine) 생성 기법. [^44]\n* **Emacs 이메일**: Emacs와 Mu4e를 이용한 이메일 관리 셋업 가이드. [^42]\n\n#### 🌍 구글 \u0026 컨슈머 테크\n* **Chrome 업데이트**: 안드로이드, 데스크탑, iOS용 크롬 베타 및 정식 버전이 일제히 업데이트되었습니다. [^4][^5][^6][^7]\n* **Google Photos 2025**: 구글 포토가 2025년 추억을 정리해주는 Recap 기능을 제공합니다. [^8][^25]\n* **Waze x 스폰지밥**: 내비게이션 Waze에서 스폰지밥 테마 주행이 가능해졌습니다. [^9]\n* **Google Health \u0026 Edu**: 유럽 헬스 AI 펀딩 발표 [^11][^26] 및 2025년 교육 도구 활용 보고서 [^10].\n* **가상 피팅**: 구글 쇼핑의 가상 의류 피팅 기능이 영국과 인도로 확대되었습니다. [^12]\n* **Starlink 한국**: 스페이스X의 스타링크가 한국 서비스를 시작했습니다. [^16]\n\n#### 🧠 AI \u0026 모델\n* **Claude 4.5 Opus**: 앤스로픽의 최신 모델 Claude 4.5 Opus의 '소울 문서(Soul Document)'가 화제입니다. [^17]\n* **NVIDIA Blackwell**: 전문가 혼합 모델(MoE)이 NVIDIA Blackwell NVL72에서 10배 더 빠르게 실행됩니다. [^55]\n* **OpenAI 펀드**: '사람 중심(People-First)' AI 펀드의 첫 번째 수혜자가 발표되었습니다. [^51]\n\n#### 🚀 비즈니스 \u0026 사회\n* **Omnicom 합병 \u0026 해고**: 대규모 합병 발표와 동시에 1만 명의 직원을 해고했습니다. [^31]\n* **Techdirt 코인**: Techdirt가 후원자를 위한 첫 번째 기념 코인을 발행했습니다. [^48]\n* **트럼프 \u0026 자동차**: 트럼프가 자동차 연료로 다시 가솔린을 선호한다는 보도가 나왔습니다. [^49]\n* **독일의 기이한 트렌드**: 개 없이 개 산책을 하는 척하는 'Hobby dogging'이 유행 중입니다. [^32]\n\n#### 🔬 과학 \u0026 기타\n* **화성 전기 불꽃**: NASA 로버가 화성의 먼지 회오리에서 전기 불꽃을 감지했습니다. [^45]\n* **3D 프린팅 혈관**: 혈전 연구를 위한 3D 프린팅 경동맥 칩이 개발되었습니다. [^46]\n* **고양이의 수다**: 집고양이는 남성 보호자와 있을 때 더 자주 울음소리를 낸다는 연구 결과. [^34]\n* **야생동물 갈등 해결**: IoT와 AI를 활용한 인간-야생동물 갈등 해결 솔루션. [^47]\n* **포트폴리오**: Grok 스타일의 'curl 가능한' 이력서 사이트가 등장했습니다. [^36]\n* **디자인 에세이**: 그리드 시스템에서 프롬프트 엔지니어링으로의 전환에 대한 단상. [^35]\n* **워드프레스 강의**: 셀프 호스팅 워드프레스 구축 강의 코스. [^33]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘 뉴스는 '**연결'과 '단절**'로 요약됩니다. AI는 GitHub와 Docker를 통해 개발 도구와 더 긴밀하게 **연결**되고 있지만, 인간 개발자 시장은 신입 채용 위기와 사무실 복귀 명령으로 인해 기존의 유연함과 **단절**되고 있습니다. 기술은 에이전트(Agent)가 되어 우리를 돕겠다고 하지만, 정작 우리는 그 에이전트를 통제하고 보안을 지키기 위해 더 바빠진 것 같네요. 보안 패치 잊지 마세요!\n\n---\n\n### Footnotes\n[^1]: November 2025 Insiders (version 1.107) - https://code.visualstudio.com/updates/v1_107\n[^2]: Security Advisory: CVE-2025-66478 - https://nextjs.org/blog/CVE-2025-66478\n[^3]: Securing the Docker MCP Catalog - https://www.docker.com/blog/enhancing-mcp-trust-with-the-docker-mcp-catalog/\n[^4]: Chrome Beta for Android Update - http://chromereleases.googleblog.com/2025/12/chrome-beta-for-android-update.html\n[^5]: Chrome Beta for Desktop Update - http://chromereleases.googleblog.com/2025/12/chrome-beta-for-desktop-update.html\n[^6]: Chrome Beta for iOS Update - http://chromereleases.googleblog.com/2025/12/chrome-beta-for-ios-update.html\n[^7]: Chrome for Android Update - http://chromereleases.googleblog.com/2025/12/chrome-for-android-update.html\n[^8]: Look back on your 2025 with Google Photos Recap - https://blog.google/products/photos/google-photos-2025-recap/\n[^9]: Drive with “SpongeBob” on Waze - https://blog.google/waze/waze-spongebob/\n[^10]: How institutions worldwide used Google for Education tools in 2025 - https://blog.google/outreach-initiatives/education/google-for-education-year-in-review-2025/\n[^11]: We’re announcing new health AI funding... - https://blog.google/technology/health/ai-health-fund-eu/\n[^12]: Virtual Apparel Try On tool comes to the UK and India... - https://blog.google/products/shopping/virtual-apparel-try-on-uk-india/\n[^13]: 주니어 채용 위기 - https://news.hada.io/topic?id=24811\n[^14]: 인스타그램 CEO, 2026년부터 직원 전원 주 5일 사무실 근무 명령 - https://news.hada.io/topic?id=24810\n[^15]: Zig의 새로운 비동기 프로그램 설계 - https://news.hada.io/topic?id=24809\n[^16]: 스타링크, 한국 서비스 시작 - https://news.hada.io/topic?id=24808\n[^17]: Claude 4.5 Opus의 ‘소울 문서’ - https://news.hada.io/topic?id=24807\n[^18]: Let’s Encrypt 인증서 유효기간 90일 → 45일 축소 발표 - https://news.hada.io/topic?id=24806\n[^19]: Show GN: Devup-UI, 이제 styled 문법을 공식 지원합니다 - https://news.hada.io/topic?id=24804\n[^20]: AI 콘텐츠 과잉 시대, 우리가 잃어버린 것들 - https://news.hada.io/topic?id=24803\n[^21]: \"루비는 진지한 프로그래밍 언어가 아니다\"에 대한 응답 - https://news.hada.io/topic?id=24802\n[^22]: 루비는 진지한 프로그래밍 언어가 아니다 - https://news.hada.io/topic?id=24801\n[^23]: Evaluating Deep Agents: Our Learnings - https://blog.langchain.com/evaluating-deep-agents-our-learnings/\n[^24]: Your stack, your rules: Introducing custom agents in GitHub Copilot... - https://github.blog/news-insights/product-news/your-stack-your-rules-introducing-custom-agents-in-github-copilot-for-observability-iac-and-security/\n[^25]: Look back on your 2025 with Google Photos Recap (AI) - https://blog.google/products/photos/google-photos-2025-recap/\n[^26]: We’re announcing new health AI funding... (AI) - https://blog.google/technology/health/ai-health-fund-eu/\n[^27]: The Forge Fundamentals Certificate Is Now Available - https://www.atlassian.com/blog/developer/forge-fundamentals-certificate-now-available\n[^28]: Powering the agentic ecosystem with Atlassian Rovo MCP Server - https://www.atlassian.com/blog/announcements/atlassian-rovo-mcp-connector-chatgpt\n[^29]: Bitbucket’s new look... - https://www.atlassian.com/blog/bitbucket/bitbuckets-new-look-user-experience-and-navigation-updates-coming-soon\n[^30]: We Built an AI-Agent to Debug 1000s of Databases... - https://www.databricks.com/blog/how-we-debug-1000s-databases-ai-databricks\n[^31]: CEO announces \"Big Day\" merger while laying off 10k employees - https://www.axios.com/2025/12/02/omnicom-ipg-layoffs\n[^32]: 'Hobby dogging': Germany's viral trend... - https://www.uniondemocrat.com/lifestyle/article_f3ca9ff5-9e32-4641-820e-aec6d565458d.html\n[^33]: Self-Hosting WordPress Course - https://wpshell.com\n[^34]: Greeting Vocalizations in Domestic Cats... - https://onlinelibrary.wiley.com/doi/10.1111/eth.70033\n[^35]: From the Grid to the Prompt - https://edwardjliebig.substack.com/p/from-the-grid-to-the-prompt\n[^36]: Grok: 'It's basically the curlable Résumé.' - https://www.cssdesignawards.com/sites/kiarash-adl-portfolio/48521/\n[^37]: Study: Effects of LLMs versus Web Search on Depth of Learning - https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5104064\n[^38]: Managing Postgres Extensions with ImageVolume - https://www.gabrielebartolini.it/articles/2025/12/cnpg-recipe-23-managing-extensions-with-imagevolume-in-cloudnativepg/\n[^39]: DiskBBQ – Elasticsearch's vector storage format - https://www.elastic.co/search-labs/blog/diskbbq-elasticsearch-introduction\n[^40]: Docker Compose Models Explained - https://oneuptime.com/blog/post/2025-12-03-docker-compose-models-explained/view\n[^41]: Yoloe: Real-Time Seeing Anything - https://docs.ultralytics.com/models/yoloe/\n[^42]: Putting email in its place with Emacs and Mu4e - https://eamonnsullivan.co.uk/posts-output/email-setup/2025-12-3-putting-email-in-its-place/\n[^43]: Postgres CDC in ClickHouse, A year in review - https://clickhouse.com/blog/postgres-cdc-year-in-review-2025\n[^44]: Constructing a JPEG XL MD5 hash quine - https://stackchk.fail/blog/jxl_hashquine_writeup\n[^45]: NASA Rover Detects Electric Sparks in Mars Dust Devils, Storms - https://www.jpl.nasa.gov/news/nasa-rover-detects-electric-sparks-in-mars-dust-devils-storms/\n[^46]: 3D-Printed Carotid Artery-on-Chips... - https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202508890\n[^47]: IoT and AI-driven solutions for human-wildlife conflict - https://www.sciencedirect.com/science/article/pii/S2772375525000620\n[^48]: Support Techdirt's Uncompromising Coverage... - https://www.techdirt.com/2025/12/03/support-techdirts-uncompromising-coverage-get-our-first-commemorative-coin/\n[^49]: Trump Returns to Gasoline as Fuel of Choice for Cars - https://www.nytimes.com/2025/12/03/climate/trump-fuel-economy-car-rules.html\n[^50]: How confessions can keep language models honest - https://openai.com/index/how-confessions-can-keep-language-models-honest\n[^51]: Announcing the initial People-First AI Fund grantees - https://openai.com/index/people-first-ai-fund-grantees\n[^52]: Your stack, your rules (GitHub Blog) - https://github.blog/news-insights/product-news/your-stack-your-rules-introducing-custom-agents-in-github-copilot-for-observability-iac-and-security/\n[^53]: Cloudflare WAF proactively protects against React vulnerability - https://blog.cloudflare.com/waf-rules-react-vulnerability/\n[^54]: Cloudflare's 2025 Q3 DDoS threat report - https://blog.cloudflare.com/ddos-threat-report-2025-q3/\n[^55]: Mixture of Experts Powers the Most Intelligent Frontier AI Models... - https://blogs.nvidia.com/blog/mixture-of-experts-frontier-models/\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **November 2025 Insiders (version 1.107)**\n   - 출처: Visual Studio Code - Code Editing. Redefined.\n   - 링크: https://code.visualstudio.com/updates/v1_107\n\n2. **Security Advisory: CVE-2025-66478**\n   - 출처: Next.js Blog\n   - 링크: https://nextjs.org/blog/CVE-2025-66478\n\n3. **Securing the Docker MCP Catalog: Commit Pinning, Agentic Auditing, and Publisher Trust Levels**\n   - 출처: Docker Blog\n   - 링크: https://www.docker.com/blog/enhancing-mcp-trust-with-the-docker-mcp-catalog/\n\n4. **Chrome Beta for Android Update**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2025/12/chrome-beta-for-android-update.html\n\n5. **Chrome Beta for Desktop Update**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2025/12/chrome-beta-for-desktop-update.html\n\n6. **Chrome Beta for iOS Update**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2025/12/chrome-beta-for-ios-update.html\n\n7. **Chrome for Android Update**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2025/12/chrome-for-android-update.html\n\n8. **Look back on your 2025 with Google Photos Recap**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/products/photos/google-photos-2025-recap/\n\n9. **Drive with “SpongeBob” on Waze**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/waze/waze-spongebob/\n\n10. **How institutions worldwide used Google for Education tools in 2025**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/outreach-initiatives/education/google-for-education-year-in-review-2025/\n\n11. **We’re announcing new health AI funding, while a new report signals a turning point for health in Europe.**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/technology/health/ai-health-fund-eu/\n\n12. **Virtual Apparel Try On tool comes to the UK and India this festive season.**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/products/shopping/virtual-apparel-try-on-uk-india/\n\n13. **주니어 채용 위기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24811\n\n14. **인스타그램 CEO, 2026년부터 직원 전원 주 5일 사무실 근무 명령**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24810\n\n15. **Zig의 새로운 비동기 프로그램 설계**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24809\n\n16. **스타링크, 한국 서비스 시작**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24808\n\n17. **Claude 4.5 Opus의 ‘소울 문서’**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24807\n\n18. **Let’s Encrypt 인증서 유효기간 90일 → 45일 축소 발표 (2028년까지 단계적 적용)**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24806\n\n19. **Show GN: Devup-UI, 이제 styled 문법을 공식 지원합니다 (Emotion / styled-components 호환)**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24804\n\n20. **AI 콘텐츠 과잉 시대, 우리가 잃어버린 것들**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24803\n\n21. **\"루비는 진지한 프로그래밍 언어가 아니다\"에 대한 응답**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24802\n\n22. **루비는 진지한 프로그래밍 언어가 아니다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24801\n\n23. **Evaluating Deep Agents: Our Learnings**\n   - 출처: LangChain Blog\n   - 링크: https://blog.langchain.com/evaluating-deep-agents-our-learnings/\n\n24. **Your stack, your rules: Introducing custom agents in GitHub Copilot for observability, IaC, and security**\n   - 출처: GitHub Blog\n   - 링크: https://github.blog/news-insights/product-news/your-stack-your-rules-introducing-custom-agents-in-github-copilot-for-observability-iac-and-security/\n\n25. **Look back on your 2025 with Google Photos Recap**\n   - 출처: AI\n   - 링크: https://blog.google/products/photos/google-photos-2025-recap/\n\n26. **We’re announcing new health AI funding, while a new report signals a turning point for health in Europe.**\n   - 출처: AI\n   - 링크: https://blog.google/technology/health/ai-health-fund-eu/\n\n27. **The Forge Fundamentals Certificate Is Now Available**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/developer/forge-fundamentals-certificate-now-available\n\n28. **Powering the agentic ecosystem with Atlassian Rovo MCP Server**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/announcements/atlassian-rovo-mcp-connector-chatgpt\n\n29. **Bitbucket’s new look: user experience and navigation updates coming soon**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/bitbucket/bitbuckets-new-look-user-experience-and-navigation-updates-coming-soon\n\n30. **We Built an AI-Agent to Debug 1000s of Databases – and Cut Incident Time by 90%**\n   - 출처: Hacker News\n   - 링크: https://www.databricks.com/blog/how-we-debug-1000s-databases-ai-databricks\n\n31. **CEO announces \"Big Day\" merger while laying off 10k employees**\n   - 출처: Hacker News\n   - 링크: https://www.axios.com/2025/12/02/omnicom-ipg-layoffs\n\n32. **'Hobby dogging': Germany's viral trend of pretending to walk a dog**\n   - 출처: Hacker News\n   - 링크: https://www.uniondemocrat.com/lifestyle/article_f3ca9ff5-9e32-4641-820e-aec6d565458d.html\n\n33. **Self-Hosting WordPress Course**\n   - 출처: Hacker News\n   - 링크: https://wpshell.com\n\n34. **Greeting Vocalizations in Domestic Cats Are More Frequent with Male Caregivers**\n   - 출처: Hacker News\n   - 링크: https://onlinelibrary.wiley.com/doi/10.1111/eth.70033\n\n35. **From the Grid to the Prompt**\n   - 출처: Hacker News\n   - 링크: https://edwardjliebig.substack.com/p/from-the-grid-to-the-prompt\n\n36. **Grok: 'It's basically the curlable Résumé.'**\n   - 출처: Hacker News\n   - 링크: https://www.cssdesignawards.com/sites/kiarash-adl-portfolio/48521/\n\n37. **Study: Effects of LLMs versus Web Search on Depth of Learning**\n   - 출처: Hacker News\n   - 링크: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5104064\n\n38. **Managing Postgres Extensions with ImageVolume**\n   - 출처: Hacker News\n   - 링크: https://www.gabrielebartolini.it/articles/2025/12/cnpg-recipe-23-managing-extensions-with-imagevolume-in-cloudnativepg/\n\n39. **DiskBBQ – Elasticsearch's vector storage format**\n   - 출처: Hacker News\n   - 링크: https://www.elastic.co/search-labs/blog/diskbbq-elasticsearch-introduction\n\n40. **Docker Compose Models Explained**\n   - 출처: Hacker News\n   - 링크: https://oneuptime.com/blog/post/2025-12-03-docker-compose-models-explained/view\n\n41. **Yoloe: Real-Time Seeing Anything**\n   - 출처: Hacker News\n   - 링크: https://docs.ultralytics.com/models/yoloe/\n\n42. **Putting email in its place with Emacs and Mu4e**\n   - 출처: Hacker News\n   - 링크: https://eamonnsullivan.co.uk/posts-output/email-setup/2025-12-3-putting-email-in-its-place/\n\n43. **Postgres CDC in ClickHouse, A year in review**\n   - 출처: Hacker News\n   - 링크: https://clickhouse.com/blog/postgres-cdc-year-in-review-2025\n\n44. **Constructing a JPEG XL MD5 hash quine**\n   - 출처: Hacker News\n   - 링크: https://stackchk.fail/blog/jxl_hashquine_writeup\n\n45. **NASA Rover Detects Electric Sparks in Mars Dust Devils, Storms**\n   - 출처: Hacker News\n   - 링크: https://www.jpl.nasa.gov/news/nasa-rover-detects-electric-sparks-in-mars-dust-devils-storms/\n\n46. **3D-Printed Carotid Artery-on-Chips for Personalized Thrombosis Investigation**\n   - 출처: Hacker News\n   - 링크: https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202508890\n\n47. **IoT and AI-driven solutions for human-wildlife conflict**\n   - 출처: Hacker News\n   - 링크: https://www.sciencedirect.com/science/article/pii/S2772375525000620\n\n48. **Support Techdirt's Uncompromising Coverage, Get Our First Commemorative Coin**\n   - 출처: Hacker News\n   - 링크: https://www.techdirt.com/2025/12/03/support-techdirts-uncompromising-coverage-get-our-first-commemorative-coin/\n\n49. **Trump Returns to Gasoline as Fuel of Choice for Cars**\n   - 출처: Hacker News\n   - 링크: https://www.nytimes.com/2025/12/03/climate/trump-fuel-economy-car-rules.html\n\n50. **How confessions can keep language models honest**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/how-confessions-can-keep-language-models-honest\n\n51. **Announcing the initial People-First AI Fund grantees**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/people-first-ai-fund-grantees\n\n52. **Your stack, your rules: Introducing custom agents in GitHub Copilot for observability, IaC, and security**\n   - 출처: The latest on GitHub Copilot - The GitHub Blog\n   - 링크: https://github.blog/news-insights/product-news/your-stack-your-rules-introducing-custom-agents-in-github-copilot-for-observability-iac-and-security/\n\n53. **Cloudflare WAF proactively protects against React vulnerability**\n   - 출처: Cloudflare Blog\n   - 링크: https://blog.cloudflare.com/waf-rules-react-vulnerability/\n\n54. **Cloudflare's 2025 Q3 DDoS threat report -- including Aisuru, the apex of botnets**\n   - 출처: Cloudflare Blog\n   - 링크: https://blog.cloudflare.com/ddos-threat-report-2025-q3/\n\n55. **Mixture of Experts Powers the Most Intelligent Frontier AI Models, Runs 10x Faster on NVIDIA Blackwell NVL72**\n   - 출처: NVIDIA Blog\n   - 링크: https://blogs.nvidia.com/blog/mixture-of-experts-frontier-models/\n\n\n",
+  "articles": [
+    {
+      "title": "November 2025 Insiders (version 1.107)",
+      "link": "https://code.visualstudio.com/updates/v1_107",
+      "source": "Visual Studio Code - Code Editing. Redefined.",
+      "category": "tech",
+      "publishedAt": "2025-12-10T17:00:00Z",
+      "description": "\n      \u003cp\u003eLearn what is new in the Visual Studio Code November 2025 Release (1.107).\u003c/p\u003e\n      \u003cp\u003e\u003ca href=\"https://code.visualstudio.com/updates/v1_107\"\u003eRead the full article\u003c/a\u003e\u003c/p\u003e\n    "
+    },
+    {
+      "title": "Security Advisory: CVE-2025-66478",
+      "link": "https://nextjs.org/blog/CVE-2025-66478",
+      "source": "Next.js Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-03T16:00:00Z",
+      "description": "A critical vulnerability (CVE-2025-66478) has been identified in the React Server Components protocol. Users should upgrade to patched versions immediately."
+    },
+    {
+      "title": "Securing the Docker MCP Catalog: Commit Pinning, Agentic Auditing, and Publisher Trust Levels",
+      "link": "https://www.docker.com/blog/enhancing-mcp-trust-with-the-docker-mcp-catalog/",
+      "source": "Docker Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-03T13:21:25Z",
+      "description": "Trust is the most important consideration when you connect AI assistants to real tools. While MCP containerization provides strong isolation and limits the blast radius of malfunctioning or compromised servers, we’re continuously strengthening trust and security across the Docker MCP solutions to further reduce exposure to malicious code. As the MCP ecosystem scales from hundreds..."
+    },
+    {
+      "title": "Chrome Beta for Android Update",
+      "link": "http://chromereleases.googleblog.com/2025/12/chrome-beta-for-android-update.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2025-12-03T12:58:32.207-08:00",
+      "description": "\u003cp\u003eHi everyone! We've just released Chrome Beta 144 (144.0.7559.3) for Android. It's now available on \u003ca href=\"https://play.google.com/store/apps/details?id=com.chrome.beta\"\u003eGoogle Play\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eYou can see a partial list of the changes in the \u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/143.0.7499.34..144.0.7559.3?pretty=fuller\u0026amp;n=10000\"\u003eGit log\u003c/a\u003e. For details on new features, check out the \u003ca href=\"https://blog.chromium.org\"\u003eChromium blog\u003c/a\u003e, and for details on web platform updates, check \u003ca href=\"https://www.chromestatus.com/features#milestone%3D144\"\u003ehere\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eIf you find a new issue, please let us know by \u003ca href=\"https://code.google.com/p/chromium/issues/entry?template=Android%20Issue\"\u003efiling a bug\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eChrome Release Team\u003cbr /\u003e\u003ca href=\"https://www.google.com/chrome\"\u003e\u003c/a\u003e\u003ca href=\"https://www.google.com/chrome\"\u003eGoogle Chrome\u003c/a\u003e\u003c/p\u003e"
+    },
+    {
+      "title": "Chrome Beta for Desktop Update",
+      "link": "http://chromereleases.googleblog.com/2025/12/chrome-beta-for-desktop-update.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2025-12-03T12:43:34.15-08:00",
+      "description": "\u003cp\u003eThe Chrome team is excited to announce the promotion of Chrome 144 to the Beta channel for Windows, Mac ( 144.0.7559.4)\u0026nbsp; and Linux. Chrome 144.0.7559.3/.4 contains our usual under-the-hood performance and stability tweaks, but there are also some cool new features to explore - please head to the \u003ca href=\"https://blog.chromium.org/\"\u003eChromium blog\u003c/a\u003e to learn more!\u003c/p\u003e\u003cp\u003eA partial list of changes is available in the \u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/143.0.7499.40..144.0.7559.3?pretty=fuller\u0026amp;n=10000\"\u003eGit log\u003c/a\u003e. Interested in \u003ca href=\"https://www.chromium.org/getting-involved/dev-channel/\"\u003eswitching\u003c/a\u003e release channels? Find out \u003ca href=\"https://www.chromium.org/getting-involved/dev-channel/\"\u003ehow\u003c/a\u003e. If you find a new issue, please let us know by \u003ca href=\"https://crbug.com/\"\u003efiling a bug\u003c/a\u003e. The \u003ca href=\"https://productforums.google.com/forum/#!forum/chrome\"\u003ecommunity help forum\u003c/a\u003e is also a great place to reach out for help or learn about common issues.\u003c/p\u003e\u003cp\u003eChrome Release Team\u003cbr /\u003e\u003ca href=\"https://www.google.com/chrome\"\u003e\u003c/a\u003e\u003ca href=\"https://www.google.com/chrome\"\u003eGoogle Chrome\u003c/a\u003e\u003c/p\u003e"
+    },
+    {
+      "title": "Chrome Beta for iOS Update",
+      "link": "http://chromereleases.googleblog.com/2025/12/chrome-beta-for-ios-update.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2025-12-03T07:44:01.091-08:00",
+      "description": "\u003cp\u003eHi everyone! We've just released Chrome Beta 144 (144.0.7559.2) for iOS; it'll become available on App Store in the next few days.\u003c/p\u003e\u003cp\u003eYou can see a partial list of the changes in the \u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/143.0.7499.39..144.0.7559.2?pretty=fuller\u0026amp;n=10000\"\u003eGit log\u003c/a\u003e. If you find a new issue, please let us know by \u003ca href=\"https://code.google.com/p/chromium/issues/entry?template=iOS%20Issue\"\u003efiling a bug\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eChrome Release Team\u003cbr /\u003e\u003ca href=\"https://www.google.com/chrome\"\u003e\u003c/a\u003e\u003ca href=\"https://www.google.com/chrome\"\u003eGoogle Chrome\u003c/a\u003e\u003c/p\u003e"
+    },
+    {
+      "title": "Chrome for Android Update",
+      "link": "http://chromereleases.googleblog.com/2025/12/chrome-for-android-update.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2025-12-02T17:00:00-08:00",
+      "description": "\u003cp\u003eHi, everyone! We've just released Chrome 143 (143.0.7499.52) for Android. It'll become\u0026nbsp;\u003ca href=\"https://play.google.com/store/apps/details?id=com.android.chrome\"\u003eavailable on Google Play\u003c/a\u003e\u0026nbsp;over the next few days.\u0026nbsp;\u003c/p\u003e\u003cp\u003eThis release includes stability and performance improvements. You can see a full list of the changes in the\u0026nbsp;\u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/143.0.7499.34..143.0.7499.52?pretty=fuller\u0026amp;n=10000\"\u003eGit log.\u003c/a\u003e\u0026nbsp;If you find a new issue, please let us know by\u0026nbsp;\u003ca href=\"https://code.google.com/p/chromium/issues/entry?template=Android%20Issue\"\u003efiling a bug\u003c/a\u003e.\u003c/p\u003e\u003cdiv\u003e\u003cbr /\u003e\u003c/div\u003e\u003cdiv\u003eAndroid releases contain the same security fixes as their corresponding\u0026nbsp;\u003ca href=\"https://chromereleases.googleblog.com/2025/12/stable-channel-update-for-desktop.html\"\u003eDesktop releases\u003c/a\u003e\u0026nbsp;(Windows \u0026amp; Mac: 143.0.7499.40/.41, Linux: 143.0.7499.40) unless otherwise noted.\u003c/div\u003e\u003cdiv\u003e\u003cdiv\u003e\u003cbr /\u003e\u003c/div\u003e\u003cdiv\u003e\u003cdiv\u003e\u003cbr /\u003e\u003c/div\u003e\u003cdiv\u003eKrishna Govind\u003cbr /\u003e\u003ca href=\"https://www.google.com/chrome/\"\u003eGoogle Chrome\u003c/a\u003e\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e"
+    },
+    {
+      "title": "Look back on your 2025 with Google Photos Recap",
+      "link": "https://blog.google/products/photos/google-photos-2025-recap/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-03T16:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/BlogPostIn-Line_ShareCard_ANV01.max-600x600.format-webp.webp\"\u003eLearn more about Google Photos Recap — now available for 2025 — and how you can explore, customize and share it today."
+    },
+    {
+      "title": "Drive with “SpongeBob” on Waze",
+      "link": "https://blog.google/waze/waze-spongebob/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-03T14:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Spongebob-KeyVisual-BlogShareIm.max-600x600.format-webp.webp\"\u003eThe world’s favorite sponge is jumping in as a navigator for an open-road adventure! To celebrate the upcoming release of ‘The SpongeBob Movie: Search for SquarePants’ i…"
+    },
+    {
+      "title": "How institutions worldwide used Google for Education tools in 2025",
+      "link": "https://blog.google/outreach-initiatives/education/google-for-education-year-in-review-2025/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-03T12:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/2025YiR_Hero.max-600x600.format-webp.webp\"\u003eHere are the top ways that institutions around the world used new Google for Education features in 2025."
+    },
+    {
+      "title": "We’re announcing new health AI funding, while a new report signals a turning point for health in Europe.",
+      "link": "https://blog.google/technology/health/ai-health-fund-eu/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-03T12:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/image_61.max-600x600.format-webp.webp\"\u003eAt the European Health Summit in Brussels, Greg Corrado, Distinguished Scientist at Google, released a new report authored by Implement Consulting Group and commissioned…"
+    },
+    {
+      "title": "Virtual Apparel Try On tool comes to the UK and India this festive season.",
+      "link": "https://blog.google/products/shopping/virtual-apparel-try-on-uk-india/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-03T00:01:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Fall_looks_stills.max-600x600.format-webp.webp\"\u003eShoppers in the UK and India can virtually try billions of apparel listings on themselves, just by uploading a photo."
+    },
+    {
+      "title": "주니어 채용 위기",
+      "link": "https://news.hada.io/topic?id=24811",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-04T04:33:32+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eAI 도입 기업의 주니어 채용 감소\u003c/strong\u003e와 \u003cstrong\u003e초기 경력자 실업 증가\u003c/strong\u003e가 동시에 나타나며, 기술 산업의 인재 사다리가 붕괴 중임\u003c/li\u003e\n\u003cli\u003e대학 현장에서는 졸업생들이 첫 직장을 구하기 어려워하고 있으며, \u003cstrong\u003e진정성 있는 네트워킹과 멘토십 부족\u003c/strong\u003e이 주요 문제로 지적...\u003c/p\u003e"
+    },
+    {
+      "title": "인스타그램 CEO, 2026년부터 직원 전원 주 5일 사무실 근무 명령",
+      "link": "https://news.hada.io/topic?id=24810",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-04T02:33:34+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e인스타그램은 2026년 2월부터 \u003cstrong\u003e미국 내 직원 전원 주 5일 사무실 근무\u003c/strong\u003e 체제로 전환\u003c/li\u003e\n\u003cli\u003e이 조치는 \u003cstrong\u003e창의성과 협업 강화\u003c/strong\u003e를 목표로 하며, 경쟁 심화 속 조직의 민첩성을 높이기 위한 방안\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e정기 회의 축소\u003c/strong\u003e, \u003cstrong\u003e프로토타입 중심의 업무 전환...\u003c/p\u003e"
+    },
+    {
+      "title": "Zig의 새로운 비동기 프로그램 설계",
+      "link": "https://news.hada.io/topic?id=24809",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-04T01:33:43+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eZig 언어\u003c/strong\u003e가 기존 비동기 I/O 설계의 복잡성을 줄이기 위해 \u003cstrong\u003e새로운 \u003ccode\u003eIo\u003c/code\u003e 인터페이스 기반 모델\u003c/strong\u003e을 도입\u003c/li\u003e\n\u003cli\u003e이 모델은 \u003cstrong\u003e동기·비동기 코드의 구분 없이 동일한 함수 구조\u003c/strong\u003e를 유지하며, \u003ccode\u003eIo.Threaded\u003c/code\u003e와 \u003ccode\u003eIo.Evented\u003c/code\u003e 두...\u003c/p\u003e"
+    },
+    {
+      "title": "스타링크, 한국 서비스 시작",
+      "link": "https://news.hada.io/topic?id=24808",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-04T00:49:24+09:00",
+      "description": "\u003cp\u003e스타링크가 한국 서비스를 시작했습니다.\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e기기 가격: 550,000원\u003c/li\u003e\n\u003cli\u003e주거용: 월 87,000원\n\u003cul\u003e\n\u003cli\u003e데이터 무제한\u003c/li\u003e\n\u003cli\u003e30일 무료체험\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e로밍: 아직 지원하지 않음\u003c/li\u003e\n\u003c/ul\u003e\n"
+    },
+    {
+      "title": "Claude 4.5 Opus의 ‘소울 문서’",
+      "link": "https://news.hada.io/topic?id=24807",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-04T00:33:30+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eClaude 4.5 Opus\u003c/strong\u003e 내부에서 발견된 ‘소울 문서(Soul Document)’가 실제 존재하며, Anthropic이 모델 훈련에 사용한 것으로 \u003cstrong\u003eAmanda Askell\u003c/strong\u003e이 확인함\u003c/li\u003e\n\u003cli\u003e문서에는 Claude가 \u003cstrong\u003e“안전하고 유익하며 정직한 AI 어시스턴트”\u003c/strong\u003e 로 행동하도록 하는 가치·윤�...\u003c/p\u003e"
+    },
+    {
+      "title": "Let’s Encrypt 인증서 유효기간 90일 → 45일 축소 발표 (2028년까지 단계적 적용)",
+      "link": "https://news.hada.io/topic?id=24806",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-03T22:09:18+09:00",
+      "description": "\u003cp\u003e\u003cstrong\u003e변경 이유\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eCA/Browser Forum 기준 요구사항 (전 세계 모든 공인 CA 동일 적용)\u003c/li\u003e\n\u003cli\u003e인터넷 보안 강화 (유효기간 짧아져 해킹 시 피해 범위 제한 + 폐지 효율성 ↑)\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cstrong\u003e인증서 유효기간 변화\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e현재: 90일\u003c/li\u003e\n\u003cli\u003e2028년 이후: 45일\u003c/li"
+    },
+    {
+      "title": "Show GN: Devup-UI, 이제 styled 문법을 공식 지원합니다 (Emotion / styled-components 호환)",
+      "link": "https://news.hada.io/topic?id=24804",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-03T19:46:34+09:00",
+      "description": "\u003cp\u003eReact/Next.js용 Zero Runtime CSS-in-JS 엔진 Devup-UI가\u003cbr /\u003e\n이번 업데이트로 Emotion / styled-components와 동일한 styled 문법을 완전히 지원하게 되었습니다.\u003c/p\u003e\n\u003cp\u003e🔥 주요 변화\u003c/p\u003e\n\u003cp\u003estyled API 정식 지원\u003c/p\u003e\n\u003cp\u003eEmotion / styled-components 문법 100% 호환\u003c/p\u003e\n\u003cp\u003eobject / template literal 스타일 "
+    },
+    {
+      "title": "AI 콘텐츠 과잉 시대, 우리가 잃어버린 것들",
+      "link": "https://news.hada.io/topic?id=24803",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-03T17:34:15+09:00",
+      "description": "\u003cp\u003eAI 생성 콘텐츠가 과도해지면서 정보 소비자들이 기시감을 느끼며, '신호 퇴화'(수사적 장치 남발로 의미 상실)와 '검증 붕괴'(생성 쉬움 vs. 확인 어려움) 문제가 발생. 이는 정보 판단 능력을 약화시킴.\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e신호 퇴화 문제\u003c/strong\u003e:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e은유, 볼드체, Em-dash 등 수사적 도구가 A"
+    },
+    {
+      "title": "\"루비는 진지한 프로그래밍 언어가 아니다\"에 대한 응답",
+      "link": "https://news.hada.io/topic?id=24802",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-03T16:57:42+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e루비(Ruby)\u003c/strong\u003e 를 ‘진지하지 않은 언어’로 보는 시각에 반해, 루비는 \u003cstrong\u003e프로그래밍을 인간적이고 즐겁게 만드는 언어\u003c/strong\u003e임\u003c/li\u003e\n\u003cli\u003e초기 루비 커뮤니티는 \u003cstrong\u003e작고 유쾌한 반란\u003c/strong\u003e처럼 출발했으며, 복잡함보다 \u003cstrong\u003e명료함과 접근성\u003c/strong\u003e을 중시\u003c/li\u003e\n\u003cli\u003e\n\u003cst...\u003c/p\u003e"
+    },
+    {
+      "title": "루비는 진지한 프로그래밍 언어가 아니다",
+      "link": "https://news.hada.io/topic?id=24801",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-03T16:39:46+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e첫 언어가 남기는 \u003cstrong\u003e각인 효과\u003c/strong\u003e가 Ruby에 대한 독특한 애정을 만들어, 많은 개발자가 결함을 ‘개성’처럼 받아들이고 있음\u003c/li\u003e\n\u003cli\u003e뒤늦게 Ruby를 접하면 화려한 겉모습 아래에 있는 \u003cstrong\u003e동적 타이핑의 허점·footgun·느린 성능\u003c/strong\u003e이 그대로 드러나며, 한 세대 전에 머물러 있는 느낌...\u003c/p\u003e"
+    },
+    {
+      "title": "Evaluating Deep Agents: Our Learnings",
+      "link": "https://blog.langchain.com/evaluating-deep-agents-our-learnings/",
+      "source": "LangChain Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-03T17:44:17Z",
+      "description": "\u003cp\u003eOver the past month at LangChain, we shipped four applications on top of the Deep Agents harness:\u003c/p\u003e\u003cul\u003e\u003cli\u003e\u003ca href=\"https://blog.langchain.com/introducing-deepagents-cli/\"\u003eDeepAgents CLI\u003c/a\u003e: a coding agent\u003c/li\u003e\u003cli\u003eLangSmith Assist: an in-app agent to help with various things in LangSmith\u003c/li\u003e\u003cli\u003ePersonal Email Assistant: an email assistant that learns from interactions with each user\u003c/li\u003e\u003cli\u003e\u003ca href=\"https://blog.langchain.com/langsmith-agent-builder-now-in-public-beta/\"\u003eAgent Builder\u003c/a\u003e: a\u003c/li\u003e\u003c/ul\u003e"
+    },
+    {
+      "title": "Your stack, your rules: Introducing custom agents in GitHub Copilot for observability, IaC, and security",
+      "link": "https://github.blog/news-insights/product-news/your-stack-your-rules-introducing-custom-agents-in-github-copilot-for-observability-iac-and-security/",
+      "source": "GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-03T17:00:45Z",
+      "description": "\u003cp\u003eUse partner-built Copilot agents to debug, secure, and automate engineering workflows across your terminal, editor, and github.com.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/news-insights/product-news/your-stack-your-rules-introducing-custom-agents-in-github-copilot-for-observability-iac-and-security/\"\u003eYour stack, your rules: Introducing custom agents in GitHub Copilot for observability, IaC, and security\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Look back on your 2025 with Google Photos Recap",
+      "link": "https://blog.google/products/photos/google-photos-2025-recap/",
+      "source": "AI",
+      "category": "tech",
+      "publishedAt": "2025-12-03T16:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/BlogPostIn-Line_ShareCard_ANV01.max-600x600.format-webp.webp\"\u003eLearn more about Google Photos Recap — now available for 2025 — and how you can explore, customize and share it today."
+    },
+    {
+      "title": "We’re announcing new health AI funding, while a new report signals a turning point for health in Europe.",
+      "link": "https://blog.google/technology/health/ai-health-fund-eu/",
+      "source": "AI",
+      "category": "tech",
+      "publishedAt": "2025-12-03T12:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/image_61.max-600x600.format-webp.webp\"\u003eAt the European Health Summit in Brussels, Greg Corrado, Distinguished Scientist at Google, released a new report authored by Implement Consulting Group and commissioned…"
+    },
+    {
+      "title": "The Forge Fundamentals Certificate Is Now Available",
+      "link": "https://www.atlassian.com/blog/developer/forge-fundamentals-certificate-now-available",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-03T17:16:13Z",
+      "description": "\u003cp\u003eWe\u0026#8217;re excited to announce the Forge Fundamentals certificate is now available! It\u0026#8217;s free, it\u0026#8217;s official, and it validates your Forge...\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/developer/forge-fundamentals-certificate-now-available\"\u003eThe Forge Fundamentals Certificate Is Now Available\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Powering the agentic ecosystem with Atlassian Rovo MCP Server",
+      "link": "https://www.atlassian.com/blog/announcements/atlassian-rovo-mcp-connector-chatgpt",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-03T17:00:00Z",
+      "description": "\u003cp\u003eBring your Atlassian context to ChatGPT with our new connector\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/announcements/atlassian-rovo-mcp-connector-chatgpt\"\u003ePowering the agentic ecosystem with Atlassian Rovo MCP Server\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Bitbucket’s new look: user experience and navigation updates coming soon",
+      "link": "https://www.atlassian.com/blog/bitbucket/bitbuckets-new-look-user-experience-and-navigation-updates-coming-soon",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-03T00:36:20Z",
+      "description": "\u003cp\u003eWe\u0026#8217;re giving Bitbucket a fresh new look and more streamlined navigation as part of Atlassian’s broader visual system journey. Teams...\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/bitbucket/bitbuckets-new-look-user-experience-and-navigation-updates-coming-soon\"\u003eBitbucket’s new look: user experience and navigation updates coming soon\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "We Built an AI-Agent to Debug 1000s of Databases – and Cut Incident Time by 90%",
+      "link": "https://www.databricks.com/blog/how-we-debug-1000s-databases-ai-databricks",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-03T22:06:20Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.databricks.com/blog/how-we-debug-1000s-databases-ai-databricks\"\u003ehttps://www.databricks.com/blog/how-we-debug-1000s-databases-ai-databricks\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46140863\"\u003ehttps://news.ycombinator.com/item?id=46140863\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "CEO announces \"Big Day\" merger while laying off 10k employees",
+      "link": "https://www.axios.com/2025/12/02/omnicom-ipg-layoffs",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-03T22:06:06Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.axios.com/2025/12/02/omnicom-ipg-layoffs\"\u003ehttps://www.axios.com/2025/12/02/omnicom-ipg-layoffs\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46140861\"\u003ehttps://news.ycombinator.com/item?id=46140861\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "'Hobby dogging': Germany's viral trend of pretending to walk a dog",
+      "link": "https://www.uniondemocrat.com/lifestyle/article_f3ca9ff5-9e32-4641-820e-aec6d565458d.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-03T22:02:18Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.uniondemocrat.com/lifestyle/article_f3ca9ff5-9e32-4641-820e-aec6d565458d.html\"\u003ehttps://www.uniondemocrat.com/lifestyle/article_f3ca9ff5-9e32-4641-820e-aec6d565458d.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46140815\"\u003ehttps://news.ycombinator.com/item?id=46140815\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Self-Hosting WordPress Course",
+      "link": "https://wpshell.com",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-03T21:57:18Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://wpshell.com\"\u003ehttps://wpshell.com\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46140756\"\u003ehttps://news.ycombinator.com/item?id=46140756\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Greeting Vocalizations in Domestic Cats Are More Frequent with Male Caregivers",
+      "link": "https://onlinelibrary.wiley.com/doi/10.1111/eth.70033",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-03T21:56:37Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://onlinelibrary.wiley.com/doi/10.1111/eth.70033\"\u003ehttps://onlinelibrary.wiley.com/doi/10.1111/eth.70033\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46140753\"\u003ehttps://news.ycombinator.com/item?id=46140753\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "From the Grid to the Prompt",
+      "link": "https://edwardjliebig.substack.com/p/from-the-grid-to-the-prompt",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-03T21:56:25Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://edwardjliebig.substack.com/p/from-the-grid-to-the-prompt\"\u003ehttps://edwardjliebig.substack.com/p/from-the-grid-to-the-prompt\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46140750\"\u003ehttps://news.ycombinator.com/item?id=46140750\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Grok: 'It's basically the curlable Résumé.'",
+      "link": "https://www.cssdesignawards.com/sites/kiarash-adl-portfolio/48521/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-03T21:51:28Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.cssdesignawards.com/sites/kiarash-adl-portfolio/48521/\"\u003ehttps://www.cssdesignawards.com/sites/kiarash-adl-portfolio/48521/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46140693\"\u003ehttps://news.ycombinator.com/item?id=46140693\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Study: Effects of LLMs versus Web Search on Depth of Learning",
+      "link": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5104064",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-03T21:50:06Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5104064\"\u003ehttps://papers.ssrn.com/sol3/papers.cfm?abstract_id=5104064\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46140672\"\u003ehttps://news.ycombinator.com/item?id=46140672\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Managing Postgres Extensions with ImageVolume",
+      "link": "https://www.gabrielebartolini.it/articles/2025/12/cnpg-recipe-23-managing-extensions-with-imagevolume-in-cloudnativepg/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-03T21:49:21Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.gabrielebartolini.it/articles/2025/12/cnpg-recipe-23-managing-extensions-with-imagevolume-in-cloudnativepg/\"\u003ehttps://www.gabrielebartolini.it/articles/2025/12/cnpg-recipe-23-managing-extensions-with-imagevolume-in-cloudnativepg/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46140666\"\u003ehttps://news.ycombinator.com/item?id=46140666\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "DiskBBQ – Elasticsearch's vector storage format",
+      "link": "https://www.elastic.co/search-labs/blog/diskbbq-elasticsearch-introduction",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-03T21:48:53Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.elastic.co/search-labs/blog/diskbbq-elasticsearch-introduction\"\u003ehttps://www.elastic.co/search-labs/blog/diskbbq-elasticsearch-introduction\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46140657\"\u003ehttps://news.ycombinator.com/item?id=46140657\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Docker Compose Models Explained",
+      "link": "https://oneuptime.com/blog/post/2025-12-03-docker-compose-models-explained/view",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-03T21:45:43Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://oneuptime.com/blog/post/2025-12-03-docker-compose-models-explained/view\"\u003ehttps://oneuptime.com/blog/post/2025-12-03-docker-compose-models-explained/view\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46140620\"\u003ehttps://news.ycombinator.com/item?id=46140620\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Yoloe: Real-Time Seeing Anything",
+      "link": "https://docs.ultralytics.com/models/yoloe/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-03T21:43:48Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://docs.ultralytics.com/models/yoloe/\"\u003ehttps://docs.ultralytics.com/models/yoloe/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46140592\"\u003ehttps://news.ycombinator.com/item?id=46140592\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Putting email in its place with Emacs and Mu4e",
+      "link": "https://eamonnsullivan.co.uk/posts-output/email-setup/2025-12-3-putting-email-in-its-place/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-03T21:42:48Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://eamonnsullivan.co.uk/posts-output/email-setup/2025-12-3-putting-email-in-its-place/\"\u003ehttps://eamonnsullivan.co.uk/posts-output/email-setup/2025-12-3-putting-email-in-its-place/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46140579\"\u003ehttps://news.ycombinator.com/item?id=46140579\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Postgres CDC in ClickHouse, A year in review",
+      "link": "https://clickhouse.com/blog/postgres-cdc-year-in-review-2025",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-03T21:42:17Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://clickhouse.com/blog/postgres-cdc-year-in-review-2025\"\u003ehttps://clickhouse.com/blog/postgres-cdc-year-in-review-2025\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46140576\"\u003ehttps://news.ycombinator.com/item?id=46140576\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Constructing a JPEG XL MD5 hash quine",
+      "link": "https://stackchk.fail/blog/jxl_hashquine_writeup",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-03T21:42:04Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://stackchk.fail/blog/jxl_hashquine_writeup\"\u003ehttps://stackchk.fail/blog/jxl_hashquine_writeup\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46140573\"\u003ehttps://news.ycombinator.com/item?id=46140573\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "NASA Rover Detects Electric Sparks in Mars Dust Devils, Storms",
+      "link": "https://www.jpl.nasa.gov/news/nasa-rover-detects-electric-sparks-in-mars-dust-devils-storms/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-03T21:42:01Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.jpl.nasa.gov/news/nasa-rover-detects-electric-sparks-in-mars-dust-devils-storms/\"\u003ehttps://www.jpl.nasa.gov/news/nasa-rover-detects-electric-sparks-in-mars-dust-devils-storms/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46140571\"\u003ehttps://news.ycombinator.com/item?id=46140571\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "3D-Printed Carotid Artery-on-Chips for Personalized Thrombosis Investigation",
+      "link": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202508890",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-03T21:40:55Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202508890\"\u003ehttps://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202508890\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46140554\"\u003ehttps://news.ycombinator.com/item?id=46140554\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "IoT and AI-driven solutions for human-wildlife conflict",
+      "link": "https://www.sciencedirect.com/science/article/pii/S2772375525000620",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-03T21:40:26Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.sciencedirect.com/science/article/pii/S2772375525000620\"\u003ehttps://www.sciencedirect.com/science/article/pii/S2772375525000620\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46140544\"\u003ehttps://news.ycombinator.com/item?id=46140544\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Support Techdirt's Uncompromising Coverage, Get Our First Commemorative Coin",
+      "link": "https://www.techdirt.com/2025/12/03/support-techdirts-uncompromising-coverage-get-our-first-commemorative-coin/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-03T21:40:08Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.techdirt.com/2025/12/03/support-techdirts-uncompromising-coverage-get-our-first-commemorative-coin/\"\u003ehttps://www.techdirt.com/2025/12/03/support-techdirts-uncompromising-coverage-get-our-first-commemorative-coin/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46140539\"\u003ehttps://news.ycombinator.com/item?id=46140539\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Trump Returns to Gasoline as Fuel of Choice for Cars",
+      "link": "https://www.nytimes.com/2025/12/03/climate/trump-fuel-economy-car-rules.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-03T21:39:02Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nytimes.com/2025/12/03/climate/trump-fuel-economy-car-rules.html\"\u003ehttps://www.nytimes.com/2025/12/03/climate/trump-fuel-economy-car-rules.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46140527\"\u003ehttps://news.ycombinator.com/item?id=46140527\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "How confessions can keep language models honest",
+      "link": "https://openai.com/index/how-confessions-can-keep-language-models-honest",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2025-12-03T10:00:00Z",
+      "description": "OpenAI researchers are testing “confessions,” a method that trains models to admit when they make mistakes or act undesirably, helping improve AI honesty, transparency, and trust in model outputs."
+    },
+    {
+      "title": "Announcing the initial People-First AI Fund grantees",
+      "link": "https://openai.com/index/people-first-ai-fund-grantees",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2025-12-03T08:00:00Z",
+      "description": "The OpenAI Foundation announces the initial recipients of the People-First AI Fund, awarding $40.5M in unrestricted grants to 208 nonprofits supporting community innovation and opportunity."
+    },
+    {
+      "title": "Your stack, your rules: Introducing custom agents in GitHub Copilot for observability, IaC, and security",
+      "link": "https://github.blog/news-insights/product-news/your-stack-your-rules-introducing-custom-agents-in-github-copilot-for-observability-iac-and-security/",
+      "source": "The latest on GitHub Copilot - The GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-03T17:00:45Z",
+      "description": "\u003cp\u003eUse partner-built Copilot agents to debug, secure, and automate engineering workflows across your terminal, editor, and github.com.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/news-insights/product-news/your-stack-your-rules-introducing-custom-agents-in-github-copilot-for-observability-iac-and-security/\"\u003eYour stack, your rules: Introducing custom agents in GitHub Copilot for observability, IaC, and security\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Cloudflare WAF proactively protects against React vulnerability",
+      "link": "https://blog.cloudflare.com/waf-rules-react-vulnerability/",
+      "source": "Cloudflare Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-03T14:20:00Z",
+      "description": " Cloudflare offers protection against a new high profile vulnerability for React Server Components: CVE-2025-55182. All WAF customers are automatically protected as long as the WAF is deployed. "
+    },
+    {
+      "title": "Cloudflare's 2025 Q3 DDoS threat report -- including Aisuru, the apex of botnets",
+      "link": "https://blog.cloudflare.com/ddos-threat-report-2025-q3/",
+      "source": "Cloudflare Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-03T14:00:00Z",
+      "description": " Welcome to the 23rd edition of Cloudflare’s Quarterly DDoS Threat Report. This report offers a comprehensive analysis of the evolving threat landscape of Distributed Denial of Service (DDoS) attacks based on data from the Cloudflare network. In this edition, we focus on the third quarter of 2025. "
+    },
+    {
+      "title": "Mixture of Experts Powers the Most Intelligent Frontier AI Models, Runs 10x Faster on NVIDIA Blackwell NVL72",
+      "link": "https://blogs.nvidia.com/blog/mixture-of-experts-frontier-models/",
+      "source": "NVIDIA Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-03T16:00:32Z",
+      "description": "The top 10 most intelligent open-source models all use a mixture-of-experts architecture. Kimi K2 Thinking, DeepSeek-R1, Mistral Large 3 and others run 10x faster on NVIDIA GB200 NVL72. A look under the hood of virtually any frontier model today will reveal a mixture-of-experts (MoE) model architecture that mimics the efficiency of the human brain. Just\t\u003ca class=\"read-more\" href=\"https://blogs.nvidia.com/blog/mixture-of-experts-frontier-models/\"\u003e\n\t\tRead Article\t\t\u003cspan data-icon=\"y\"\u003e\u003c/span\u003e\n\t\u003c/a\u003e\n\t"
+    }
+  ],
+  "generatedAt": "2025-12-04T07:10:18.656082329+09:00"
+}
