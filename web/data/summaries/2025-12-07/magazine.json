@@ -1,0 +1,258 @@
+{
+  "date": "2025-12-07",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2025년 12월 6일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** 구글의 Gemini 3 Pro가 비전 AI의 새로운 지평을 열었고, React/Next.js 생태계는 치명적인 RCE 취약점으로 비상이 걸렸습니다.\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### 👁️ Gemini 3 Pro: 비전 AI의 프론티어\n구글이 멀티모달 AI 경쟁에서 다시 한번 승부수를 던졌습니다. 'Gemini 3 Pro'는 텍스트 처리를 넘어 시각 정보(Vision) 처리 능력에서 압도적인 성능 향상을 보여주며 '비전 AI의 프론티어'로 명명되었습니다. 이는 단순한 이미지 인식을 넘어, 복잡한 비디오 맥락 이해와 실시간 시각 추론 능력이 비약적으로 상승했음을 시사합니다. 개발자와 기업들은 이제 더 정교한 시각 기반 자동화 시스템을 구축할 수 있게 되었습니다.\n\u003e **Key Point:** 텍스트를 넘어선 '시각적 추론' 능력의 비약적 발전, 멀티모달 AI 시장의 판도 변화 예고 [^8]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. React와 Next.js 생태계를 뒤흔든 'React2Shell'\n- **What:** React와 Next.js 환경에서 원격 코드 실행(RCE)이 가능한 치명적 취약점(CVE-2025-55182)이 발견되었습니다.\n- **Why:** 서버 사이드 렌더링(SSR) 및 서버 액션 처리 과정에서의 검증 미흡이 원인으로, 공격자가 서버 제어권을 탈취할 수 있습니다.\n- **Impact:** 모던 웹의 표준이 된 Next.js 기반 서비스들의 긴급 보안 패치가 요구되며, 프론트엔드/백엔드 경계가 흐려지는 트렌드에 대한 보안 경각심을 일깨웁니다. [^6]\n\n### 2. 인텔을 떠나며: 반도체 제국의 황혼?\n- **What:** 한때 반도체 제왕이었던 인텔의 최근 행보와 인재 유출, 혹은 CEO(팻 겔싱어 등)의 퇴임과 관련된 회고적 분석입니다.\n- **Why:** 파운드리 경쟁 실패, AI 칩 시장 대응 지연 등이 복합적으로 작용하여 기업의 정체성이 흔들리고 있습니다.\n- **Impact:** x86 제국의 몰락과 ARM/RISC-V의 부상, 그리고 미국 반도체 패권 전략의 수정이 불가피해 보입니다. [^2]\n\n### 3. VS Code 2025년 11월 업데이트 (v1.107)\n- **What:** 전 세계 개발자가 가장 많이 사용하는 에디터의 최신 인사이더 빌드 업데이트입니다.\n- **Why:** 코딩 생산성을 높이기 위한 새로운 AI 기능 통합과 디버깅 UX 개선이 포함되었습니다.\n- **Impact:** 개발자들의 일상적인 워크플로우 효율성을 미세하게 그러나 확실하게 향상시킬 것입니다. [^1]\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **Hodu** | Rust로 개발된 사용자 친화적인 머신러닝 툴킷. 성능과 편의성을 동시에 잡음 [^9] |\n| **Tool** | **Apex** | 모든 환경에서 작동하는 유니버설 마크다운 프로세서. 문서화 도구의 새로운 표준 제안 [^13] |\n| **Paper** | **Targeted Model Editing** | LLM 전체를 재학습하지 않고 특정 개념 하위 공간만 수정하는 효율적인 방법론 [^12] |\n| **Guide** | **Unit Test SQL** | 데이터베이스 로직(SQL)을 단위 테스트하는 실질적인 방법과 전략 가이드 [^31] |\n| **App** | **Simple iOS Rec \u0026 Stream** | 복잡한 설정 없이 녹화 및 스트리밍이 가능한 iOS 앱 (Show HN) [^28] |\n| **Guide** | **Fine-Tuning w/ Claude** | Claude의 스킬을 활용하여 오픈소스 LLM을 미세 조정하는 허깅페이스 가이드 [^21] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n\n#### 💻 개발 \u0026 인프라 \u0026 보안\n* **현대식 SVG 클릭재킹 공격**: 사용자를 속여 경고창을 우회하는 새로운 SVG 활용 공격 기법 주의 [^4]\n* **UniFi 5G**: 유비쿼티(Ubiquiti)의 5G 네트워크 장비 관련 소식 혹은 리뷰 [^5]\n* **Copy-Item 속도 이슈**: 윈도우 PowerShell의 `Copy-Item`이 파일 탐색기보다 27% 느리다는 벤치마크 분석 [^19]\n* **무선 SSD의 효용성**: 무선 SSD가 실제 유용한지, 단순 기믹인지에 대한 레딧의 솔직한 토론 [^24]\n* **레거시 시스템 다루기**: 책 'Kill It With Fire' 리뷰, 노후화된 시스템을 현대화하는 전략 [^25]\n* **잃어버린 프로그램을 찾아서**: 2018년 작성된 고전, 디버깅과 레트로 컴퓨팅에 대한 탐구 [^26]\n* **청소년을 위한 디지털 보안(Opsec)**: 디지털 네이티브 세대를 위한 필수 보안 가이드 [^27]\n* **카오스 엔지니어링**: 시스템의 불확실성을 견디기 위해 고의로 장애를 주입하는 엔지니어링 기법 [^29]\n* **Agile Release Trains OS**: 애자일 조직의 지속적 개선을 위한 운영 체제 프레임워크 [^30]\n* **Hacklore 와이파이 문제**: 특정 보안 하드웨어/툴에 대한 비판적 리뷰 [^16]\n\n#### 🌍 사회 \u0026 경제 \u0026 환경\n* **케냐 종자 공유 금지 위헌 판결**: 농부들의 종자 교환 권리를 인정한 기념비적 판결 [^3]\n* **BMW PHEV 퓨즈 비용**: 플러그인 하이브리드 차량의 안전 퓨즈 교체 비용이 터무니없이 비싸다는 소비자 불만 [^10]\n* **EU 기후법과 미국 기업**: 미국 오염 유발 기업들이 EU의 인권 및 기후 규제를 약화시키려 로비 중 [^11]\n* **페루의 중국 항구**: 중국 자본으로 건설된 항구가 아마존 열대우림 파괴를 가속화할 우려 [^14]\n* **27년 세계 일주**: 전직 영국 공수부대원이 27년간의 도보 세계 일주를 마무리하는 감동적 여정 [^23]\n\n#### 🧠 인사이트 \u0026 문화\n* **기술 문제는 사람 문제다**: 대부분의 엔지니어링 난제는 기술이 아닌 커뮤니케이션과 조직 문화에서 기인함 [^7]\n* **LLM은 어휘적 Thijarians**: 거대언어모델의 언어 처리 방식을 언어학적 관점에서 분석한 에세이 [^15]\n* **선잠(Hypnagogic state)과 창의성**: 잠들기 직전의 비몽사몽한 상태가 창의적 문제 해결에 도움을 준다는 연구 [^17]\n* **개발자 스크린샷 (2002 vs 2015)**: 13년 간의 개발 환경 UI 변화를 비교한 향수 어린 게시물 [^18]\n* **과거는 귀엽지 않았다**: 과거를 미화하는 경향에 반대하며, 실제 역사의 척박함을 지적하는 에세이 [^20]\n* **'Vibes'라고 그만해**: 모호한 단어 'Vibes' 남용에 대한 언어적 비평 [^22]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘은 **AI의 진화(Gemini 3 Pro)**와 **웹 생태계의 위기(React RCE)**가 극명하게 대비되는 하루입니다. 기술은 빛의 속도로 발전하지만, 그 기반이 되는 보안과 '사람 문제(Soft Skills)'는 여전히 우리가 풀어야 할 숙제로 남아있습니다. 특히 케냐의 종자법 판결이나 아마존 항구 이슈는 기술 밖의 세상도 치열하게 돌아가고 있음을 상기시켜 줍니다. 주말에는 잠들기 직전의 '선잠' 상태를 즐기며 창의적인 아이디어를 떠올려보시는 건 어떨까요?\n\n---\n\n[^1]: November 2025 Insiders (version 1.107) - https://code.visualstudio.com/updates/v1_107\n[^2]: 인텔을 떠나며 - https://news.hada.io/topic?id=24879\n[^3]: 케냐 법원이 종자 공유 금지법을 위헌으로 판결 - https://news.hada.io/topic?id=24878\n[^4]: 사용자를 속이고 경고를 우회하는 현대식 SVG 클릭재킹 공격 - https://news.hada.io/topic?id=24877\n[^5]: UniFi 5G - https://news.hada.io/topic?id=24875\n[^6]: React와 Next.js에서 원격 코드 실행이 가능한 취약점 CVE-2025-55182(React2Shell) - https://news.hada.io/topic?id=24874\n[^7]: 대부분의 기술 문제는 사람 문제다 - https://news.hada.io/topic?id=24873\n[^8]: Gemini 3 Pro: 비전 AI의 프론티어 - https://news.hada.io/topic?id=24872\n[^9]: Show GN: Hodu: Rust로 개발된 사용자 친화적 ML 툴킷 - https://news.hada.io/topic?id=24871\n[^10]: BMW PHEV: 안전 퓨즈 교체 비용이 매우 비쌈 - https://news.hada.io/topic?id=24870\n[^11]: 미국 오염기업들이 EU의 인권 및 기후법을 다시 쓰고 있다 - https://news.hada.io/topic?id=24869\n[^12]: Targeted Model Editing - https://www.gojiberries.io/concept-subspaces-for-targeted-model-editing/\n[^13]: Apex: Universal Markdown Processor - https://brettterpstra.com/2025/12/06/introducing-apex-universal-markdown-processor/\n[^14]: A Chinese-backed port could push the Amazon Rainforest over the edge - https://insideclimatenews.org/news/01122025/china-port-in-peru-impact-on-amazon-rainforest/\n[^15]: LLMs Are Lexical Thijarians - https://vinayprabhu.substack.com/p/llms-as-lexical-thijarians\n[^16]: My Problem with Hacklore (WiFi) - https://thecontractor.io/hacklore/\n[^17]: How the 'hypnagogic state' of drowsiness could enhance your creativity - https://theconversation.com/how-the-hypnagogic-state-of-drowsiness-could-enhance-your-creativity-269724\n[^18]: Screenshots from developers: 2002 vs. 2015 (2015) - https://anders.unix.se/2015/12/10/screenshots-from-developers--2002-vs.-2015/\n[^19]: Copy-Item is 27% slower than File Explorer - https://til.andrew-quinn.me/posts/copy-item-is-27-percent-slower-than-file-explorer-drag-and-drop-on-windows/\n[^20]: The past was not that cute - https://juliawise.net/the-past-was-not-that-cute/\n[^21]: Fine-Tuning an Open Source LLM using Claude Skills - https://huggingface.co/blog/hf-skills-training\n[^22]: Stop Saying Vibes - https://www.whitenoise.email/p/stop-saying-vibes\n[^23]: British ex-paratrooper on track to complete 27 year walk around the world - https://www.msn.com/en-us/news/world/british-globe-trekker-faces-changed-world-on-final-leg-of-27-year-journey/ar-AA1RhW8V\n[^24]: Are wireless SSDs actually useful or just pointless? Need honest takes - https://old.reddit.com/r/DataHoarder/comments/1oyltuj/are_wireless_ssds_actually_useful_or_just/\n[^25]: Kill It With Fire: dealing with legacy systems. (book review) - https://www.usenix.org/publications/loginonline/kill-it-fire\n[^26]: In Search of the Lost Program (2018) - http://www.codersnotes.com/notes/the-lost-program/\n[^27]: The Wired Guide to Digital Opsec for Teens - https://www.wired.com/story/digital-opsec-for-teens/\n[^28]: Show HN: Simple iOS Recording and Streaming App - https://demoscope.app/app\n[^29]: Chaos Engineering - https://en.wikipedia.org/wiki/Chaos_engineering\n[^30]: The Continuous Improvement OS for Agile Release Trains - https://agileglow.io/\n[^31]: How do you unit test SQL? - https://github.com/gurmeetsaran/sqltesting\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **November 2025 Insiders (version 1.107)**\n   - 출처: Visual Studio Code - Code Editing. Redefined.\n   - 링크: https://code.visualstudio.com/updates/v1_107\n\n2. **인텔을 떠나며**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24879\n\n3. **케냐 법원이 종자 공유 금지법을 위헌으로 판결**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24878\n\n4. **사용자를 속이고 경고를 우회하는 현대식 SVG 클릭재킹 공격**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24877\n\n5. **UniFi 5G**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24875\n\n6. **React와 Next.js에서 원격 코드 실행이 가능한 취약점 CVE-2025-55182(React2Shell)**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24874\n\n7. **대부분의 기술 문제는 사람 문제다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24873\n\n8. **Gemini 3 Pro: 비전 AI의 프론티어**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24872\n\n9. **Show GN: Hodu: Rust로 개발된 사용자 친화적 ML 툴킷**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24871\n\n10. **BMW PHEV: 안전 퓨즈 교체 비용이 매우 비쌈**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24870\n\n11. **미국 오염기업들이 EU의 인권 및 기후법을 다시 쓰고 있다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24869\n\n12. **Targeted Model Editing**\n   - 출처: Hacker News\n   - 링크: https://www.gojiberries.io/concept-subspaces-for-targeted-model-editing/\n\n13. **Apex: Universal Markdown Processor**\n   - 출처: Hacker News\n   - 링크: https://brettterpstra.com/2025/12/06/introducing-apex-universal-markdown-processor/\n\n14. **A Chinese-backed port could push the Amazon Rainforest over the edge**\n   - 출처: Hacker News\n   - 링크: https://insideclimatenews.org/news/01122025/china-port-in-peru-impact-on-amazon-rainforest/\n\n15. **LLMs Are Lexical Thijarians**\n   - 출처: Hacker News\n   - 링크: https://vinayprabhu.substack.com/p/llms-as-lexical-thijarians\n\n16. **My Problem with Hacklore (WiFi)**\n   - 출처: Hacker News\n   - 링크: https://thecontractor.io/hacklore/\n\n17. **How the 'hypnagogic state' of drowsiness could enhance your creativity**\n   - 출처: Hacker News\n   - 링크: https://theconversation.com/how-the-hypnagogic-state-of-drowsiness-could-enhance-your-creativity-269724\n\n18. **Screenshots from developers: 2002 vs. 2015 (2015)**\n   - 출처: Hacker News\n   - 링크: https://anders.unix.se/2015/12/10/screenshots-from-developers--2002-vs.-2015/\n\n19. **Copy-Item is 27% slower than File Explorer**\n   - 출처: Hacker News\n   - 링크: https://til.andrew-quinn.me/posts/copy-item-is-27-percent-slower-than-file-explorer-drag-and-drop-on-windows/\n\n20. **The past was not that cute**\n   - 출처: Hacker News\n   - 링크: https://juliawise.net/the-past-was-not-that-cute/\n\n21. **Fine-Tuning an Open Source LLM using Claude Skills**\n   - 출처: Hacker News\n   - 링크: https://huggingface.co/blog/hf-skills-training\n\n22. **Stop Saying Vibes**\n   - 출처: Hacker News\n   - 링크: https://www.whitenoise.email/p/stop-saying-vibes\n\n23. **British ex-paratrooper on track to complete 27 year walk around the world**\n   - 출처: Hacker News\n   - 링크: https://www.msn.com/en-us/news/world/british-globe-trekker-faces-changed-world-on-final-leg-of-27-year-journey/ar-AA1RhW8V\n\n24. **Are wireless SSDs actually useful or just pointless? Need honest takes**\n   - 출처: Hacker News\n   - 링크: https://old.reddit.com/r/DataHoarder/comments/1oyltuj/are_wireless_ssds_actually_useful_or_just/\n\n25. **Kill It With Fire: dealing with legacy systems. (book review)**\n   - 출처: Hacker News\n   - 링크: https://www.usenix.org/publications/loginonline/kill-it-fire\n\n26. **In Search of the Lost Program (2018)**\n   - 출처: Hacker News\n   - 링크: http://www.codersnotes.com/notes/the-lost-program/\n\n27. **The Wired Guide to Digital Opsec for Teens**\n   - 출처: Hacker News\n   - 링크: https://www.wired.com/story/digital-opsec-for-teens/\n\n28. **Show HN: Simple iOS Recording and Streaming App**\n   - 출처: Hacker News\n   - 링크: https://demoscope.app/app\n\n29. **Chaos Engineering**\n   - 출처: Hacker News\n   - 링크: https://en.wikipedia.org/wiki/Chaos_engineering\n\n30. **The Continuous Improvement OS for Agile Release Trains**\n   - 출처: Hacker News\n   - 링크: https://agileglow.io/\n\n31. **How do you unit test SQL?**\n   - 출처: Hacker News\n   - 링크: https://github.com/gurmeetsaran/sqltesting\n\n\n",
+  "articles": [
+    {
+      "title": "November 2025 Insiders (version 1.107)",
+      "link": "https://code.visualstudio.com/updates/v1_107",
+      "source": "Visual Studio Code - Code Editing. Redefined.",
+      "category": "tech",
+      "publishedAt": "2025-12-10T17:00:00Z",
+      "description": "\n      \u003cp\u003eLearn what is new in the Visual Studio Code November 2025 Release (1.107).\u003c/p\u003e\n      \u003cp\u003e\u003ca href=\"https://code.visualstudio.com/updates/v1_107\"\u003eRead the full article\u003c/a\u003e\u003c/p\u003e\n    "
+    },
+    {
+      "title": "인텔을 떠나며",
+      "link": "https://news.hada.io/topic?id=24879",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-07T05:33:17+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eBrendan Gregg은 인텔에서의 \u003cstrong\u003e3년 반 근무를 마치고 퇴사\u003c/strong\u003e하고 새로운 기회를 수락했다고 밝혔다\u003c/li\u003e\n\u003cli\u003e인텔 재직 중 \u003cstrong\u003eAI Flame Graphs\u003c/strong\u003e를 개발해 오픈소스로 공개하고, \u003cstrong\u003eGPU 히트맵\u003c/strong\u003e 및 \u003cstrong\u003eLinux 스택 워킹 지원\u003c/strong\u003e을 추진함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003ee...\u003c/p\u003e"
+    },
+    {
+      "title": "케냐 법원이 종자 공유 금지법을 위헌으로 판결",
+      "link": "https://news.hada.io/topic?id=24878",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-07T04:32:28+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e케냐 고등법원이 \u003cstrong\u003e토종 종자 공유와 판매를 금지한 법 조항\u003c/strong\u003e을 위헌으로 결정, 식량 안보를 위한 중요한 판결로 평가됨\u003c/li\u003e\n\u003cli\u003e해당 법은 2012년 제정되어 \u003cstrong\u003e종자 공유 시 최대 2년 징역 또는 100만 실링 벌금\u003c/strong\u003e을 부과하고, 정부가 종자은행을 단속할 권한을 부여함\u003c/li\u003e\n\u003cli\u003e법...\u003c/p\u003e"
+    },
+    {
+      "title": "사용자를 속이고 경고를 우회하는 현대식 SVG 클릭재킹 공격",
+      "link": "https://news.hada.io/topic?id=24877",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-07T02:33:05+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eSVG 필터를 이용한 새로운 클릭재킹 기법\u003c/strong\u003e이 제시되며, 기존 단순 클릭 유도 공격을 복잡한 상호작용형 공격으로 확장함\u003c/li\u003e\n\u003cli\u003e\n\u003ccode\u003efeColorMatrix\u003c/code\u003e, \u003ccode\u003efeDisplacementMap\u003c/code\u003e 등 \u003cstrong\u003eSVG 필터 요소들이 cross-origin iframe에도 적용 가능\u003c/strong\u003e함이 확인되어, 이를...\u003c/p\u003e"
+    },
+    {
+      "title": "UniFi 5G",
+      "link": "https://news.hada.io/topic?id=24875",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-06T23:33:37+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eUniFi 5G Max 라인업\u003c/strong\u003e은 다양한 환경에서 손쉽게 설치 가능한 고성능 5G 인터넷 경험을 제공하도록 설계된 제품군임\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eUniFi 5G Max\u003c/strong\u003e는 PoE 포트에 연결만 하면 자동으로 WAN 인터페이스로 인식되며, 책상·벽·창문 등 다양한 위치에 설치 가능함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e5...\u003c/p\u003e"
+    },
+    {
+      "title": "React와 Next.js에서 원격 코드 실행이 가능한 취약점 CVE-2025-55182(React2Shell)",
+      "link": "https://news.hada.io/topic?id=24874",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-06T23:27:26+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eReact 서버 컴포넌트\u003c/strong\u003e에서 인증 없이 임의 코드를 실행할 수 있는 \u003cstrong\u003e원격 코드 실행(RCE)\u003c/strong\u003e 취약점이 발견되어 \u003cstrong\u003e즉시 업그레이드 필요\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eNext.js\u003c/strong\u003e도 영향을 받으며, App Router 기능을 사용하는 경우 취약함. Next.js는 이를 CVE-2025...\u003c/p\u003e"
+    },
+    {
+      "title": "대부분의 기술 문제는 사람 문제다",
+      "link": "https://news.hada.io/topic?id=24873",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-06T20:33:27+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e대규모 \u003cstrong\u003e기술 부채\u003c/strong\u003e를 가진 회사에서 코드 복제와 구식 프레임워크로 인한 비효율이 발생함\u003c/li\u003e\n\u003cli\u003e프로젝트 진행 중 \u003cstrong\u003e관리 신뢰 상실\u003c/strong\u003e과 조직 내 변화 저항이 주요 장애로 작용함\u003c/li\u003e\n\u003cli\u003e기술 부채의 근본 원인은 \u003cstrong\u003e요구 불명확, 비현실적 일정, 구식 기술 선호, 경영...\u003c/p\u003e"
+    },
+    {
+      "title": "Gemini 3 Pro: 비전 AI의 프론티어",
+      "link": "https://news.hada.io/topic?id=24872",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-06T17:33:22+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eGemini 3 Pro\u003c/strong\u003e는 단순 인식 단계를 넘어 \u003cstrong\u003e시각적·공간적 추론\u003c/strong\u003e을 수행하는 차세대 \u003cstrong\u003e멀티모달 모델\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e문서, 공간, 화면, 영상 이해 등 다양한 영역에서 \u003cstrong\u003e최첨단 성능\u003c/strong\u003e을 기록하며, 복잡한 시각 추론 벤치마크에서 최고 수준을 달성\u003c/li...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: Hodu: Rust로 개발된 사용자 친화적 ML 툴킷",
+      "link": "https://news.hada.io/topic?id=24871",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-06T14:03:59+09:00",
+      "description": "\u003cp\u003e프로토타이핑부터 배포까지, 메모리 안전성과 제로코스트 추상화를 갖춘 사용하기 쉬운 머신러닝 툴킷입니다.\u003c/p\u003e\n\u003cp\u003e현재 1인 개발로 진행 중인 프로젝트입니다. 아직 개발 초기 단계이지만, 핵심 기능들이 어느 정도 안정화되어 공유드리게 되었습니다. 피드백이나 의견 주시면 감사하겠습니다.\u003c/p\u003e\n\u003cp\u003eHodu가 제공"
+    },
+    {
+      "title": "BMW PHEV: 안전 퓨즈 교체 비용이 매우 비쌈",
+      "link": "https://news.hada.io/topic?id=24870",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-06T09:55:47+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eBMW 플러그인 하이브리드(PHEV)의 \u003cstrong\u003e고전압 배터리 안전 퓨즈\u003c/strong\u003e가 사고 감지 시 즉시 시스템을 차단하도록 설계되어 있으나, 교체 비용이 \u003cstrong\u003e최소 5,000유로\u003c/strong\u003e에 달함\u003c/li\u003e\n\u003cli\u003e해당 퓨즈가 포함된 \u003cstrong\u003eiBMUCP 모듈\u003c/strong\u003e은 완전히 용접되어 있어 분해나 수리가 불가능하며, 교...\u003c/p\u003e"
+    },
+    {
+      "title": "미국 오염기업들이 EU의 인권 및 기후법을 다시 쓰고 있다",
+      "link": "https://news.hada.io/topic?id=24869",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-06T09:52:47+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e유출된 문서에 따르면 \u003cstrong\u003eChevron, ExxonMobil, Koch 등 11개 다국적 기업\u003c/strong\u003e이 ‘Competitiveness Roundtable’이라는 이름으로 \u003cstrong\u003eEU의 기업 지속가능성 실사 지침(CSDDD)\u003c/strong\u003e 을 무력화하려 한 것으로 드러남\u003c/li\u003e\n\u003cli\u003e이들은 \u003cstrong\u003eEU 의회·위원회·회원국 정부뿐 아니라 트럼프 행정...\u003c/p\u003e"
+    },
+    {
+      "title": "Targeted Model Editing",
+      "link": "https://www.gojiberries.io/concept-subspaces-for-targeted-model-editing/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-06T22:05:41Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.gojiberries.io/concept-subspaces-for-targeted-model-editing/\"\u003ehttps://www.gojiberries.io/concept-subspaces-for-targeted-model-editing/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46176984\"\u003ehttps://news.ycombinator.com/item?id=46176984\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Apex: Universal Markdown Processor",
+      "link": "https://brettterpstra.com/2025/12/06/introducing-apex-universal-markdown-processor/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-06T22:02:36Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://brettterpstra.com/2025/12/06/introducing-apex-universal-markdown-processor/\"\u003ehttps://brettterpstra.com/2025/12/06/introducing-apex-universal-markdown-processor/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46176965\"\u003ehttps://news.ycombinator.com/item?id=46176965\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "A Chinese-backed port could push the Amazon Rainforest over the edge",
+      "link": "https://insideclimatenews.org/news/01122025/china-port-in-peru-impact-on-amazon-rainforest/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-06T22:02:33Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://insideclimatenews.org/news/01122025/china-port-in-peru-impact-on-amazon-rainforest/\"\u003ehttps://insideclimatenews.org/news/01122025/china-port-in-peru-impact-on-amazon-rainforest/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46176964\"\u003ehttps://news.ycombinator.com/item?id=46176964\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "LLMs Are Lexical Thijarians",
+      "link": "https://vinayprabhu.substack.com/p/llms-as-lexical-thijarians",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-06T22:00:48Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://vinayprabhu.substack.com/p/llms-as-lexical-thijarians\"\u003ehttps://vinayprabhu.substack.com/p/llms-as-lexical-thijarians\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46176952\"\u003ehttps://news.ycombinator.com/item?id=46176952\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "My Problem with Hacklore (WiFi)",
+      "link": "https://thecontractor.io/hacklore/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-06T21:57:11Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://thecontractor.io/hacklore/\"\u003ehttps://thecontractor.io/hacklore/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46176918\"\u003ehttps://news.ycombinator.com/item?id=46176918\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "How the 'hypnagogic state' of drowsiness could enhance your creativity",
+      "link": "https://theconversation.com/how-the-hypnagogic-state-of-drowsiness-could-enhance-your-creativity-269724",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-06T21:55:29Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://theconversation.com/how-the-hypnagogic-state-of-drowsiness-could-enhance-your-creativity-269724\"\u003ehttps://theconversation.com/how-the-hypnagogic-state-of-drowsiness-could-enhance-your-creativity-269724\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46176908\"\u003ehttps://news.ycombinator.com/item?id=46176908\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Screenshots from developers: 2002 vs. 2015 (2015)",
+      "link": "https://anders.unix.se/2015/12/10/screenshots-from-developers--2002-vs.-2015/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-06T21:55:09Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://anders.unix.se/2015/12/10/screenshots-from-developers--2002-vs.-2015/\"\u003ehttps://anders.unix.se/2015/12/10/screenshots-from-developers--2002-vs.-2015/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46176905\"\u003ehttps://news.ycombinator.com/item?id=46176905\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Copy-Item is 27% slower than File Explorer",
+      "link": "https://til.andrew-quinn.me/posts/copy-item-is-27-percent-slower-than-file-explorer-drag-and-drop-on-windows/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-06T21:55:08Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://til.andrew-quinn.me/posts/copy-item-is-27-percent-slower-than-file-explorer-drag-and-drop-on-windows/\"\u003ehttps://til.andrew-quinn.me/posts/copy-item-is-27-percent-slower-than-file-explorer-drag-and-drop-on-windows/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46176904\"\u003ehttps://news.ycombinator.com/item?id=46176904\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The past was not that cute",
+      "link": "https://juliawise.net/the-past-was-not-that-cute/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-06T21:53:35Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://juliawise.net/the-past-was-not-that-cute/\"\u003ehttps://juliawise.net/the-past-was-not-that-cute/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46176893\"\u003ehttps://news.ycombinator.com/item?id=46176893\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Fine-Tuning an Open Source LLM using Claude Skills",
+      "link": "https://huggingface.co/blog/hf-skills-training",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-06T21:52:03Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://huggingface.co/blog/hf-skills-training\"\u003ehttps://huggingface.co/blog/hf-skills-training\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46176889\"\u003ehttps://news.ycombinator.com/item?id=46176889\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Stop Saying Vibes",
+      "link": "https://www.whitenoise.email/p/stop-saying-vibes",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-06T21:45:49Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.whitenoise.email/p/stop-saying-vibes\"\u003ehttps://www.whitenoise.email/p/stop-saying-vibes\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46176855\"\u003ehttps://news.ycombinator.com/item?id=46176855\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "British ex-paratrooper on track to complete 27 year walk around the world",
+      "link": "https://www.msn.com/en-us/news/world/british-globe-trekker-faces-changed-world-on-final-leg-of-27-year-journey/ar-AA1RhW8V",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-06T21:44:03Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.msn.com/en-us/news/world/british-globe-trekker-faces-changed-world-on-final-leg-of-27-year-journey/ar-AA1RhW8V\"\u003ehttps://www.msn.com/en-us/news/world/british-globe-trekker-faces-changed-world-on-final-leg-of-27-year-journey/ar-AA1RhW8V\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46176842\"\u003ehttps://news.ycombinator.com/item?id=46176842\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Are wireless SSDs actually useful or just pointless? Need honest takes",
+      "link": "https://old.reddit.com/r/DataHoarder/comments/1oyltuj/are_wireless_ssds_actually_useful_or_just/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-06T21:42:22Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://old.reddit.com/r/DataHoarder/comments/1oyltuj/are_wireless_ssds_actually_useful_or_just/\"\u003ehttps://old.reddit.com/r/DataHoarder/comments/1oyltuj/are_wireless_ssds_actually_useful_or_just/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46176832\"\u003ehttps://news.ycombinator.com/item?id=46176832\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Kill It With Fire: dealing with legacy systems. (book review)",
+      "link": "https://www.usenix.org/publications/loginonline/kill-it-fire",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-06T21:42:02Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.usenix.org/publications/loginonline/kill-it-fire\"\u003ehttps://www.usenix.org/publications/loginonline/kill-it-fire\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46176829\"\u003ehttps://news.ycombinator.com/item?id=46176829\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "In Search of the Lost Program (2018)",
+      "link": "http://www.codersnotes.com/notes/the-lost-program/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-06T21:40:42Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"http://www.codersnotes.com/notes/the-lost-program/\"\u003ehttp://www.codersnotes.com/notes/the-lost-program/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46176820\"\u003ehttps://news.ycombinator.com/item?id=46176820\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Wired Guide to Digital Opsec for Teens",
+      "link": "https://www.wired.com/story/digital-opsec-for-teens/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-06T21:40:27Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.wired.com/story/digital-opsec-for-teens/\"\u003ehttps://www.wired.com/story/digital-opsec-for-teens/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46176819\"\u003ehttps://news.ycombinator.com/item?id=46176819\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Simple iOS Recording and Streaming App",
+      "link": "https://demoscope.app/app",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-06T21:40:04Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://demoscope.app/app\"\u003ehttps://demoscope.app/app\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46176813\"\u003ehttps://news.ycombinator.com/item?id=46176813\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Chaos Engineering",
+      "link": "https://en.wikipedia.org/wiki/Chaos_engineering",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-06T21:39:38Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://en.wikipedia.org/wiki/Chaos_engineering\"\u003ehttps://en.wikipedia.org/wiki/Chaos_engineering\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46176811\"\u003ehttps://news.ycombinator.com/item?id=46176811\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Continuous Improvement OS for Agile Release Trains",
+      "link": "https://agileglow.io/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-06T21:39:28Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://agileglow.io/\"\u003ehttps://agileglow.io/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46176808\"\u003ehttps://news.ycombinator.com/item?id=46176808\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "How do you unit test SQL?",
+      "link": "https://github.com/gurmeetsaran/sqltesting",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-06T21:39:24Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/gurmeetsaran/sqltesting\"\u003ehttps://github.com/gurmeetsaran/sqltesting\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46176806\"\u003ehttps://news.ycombinator.com/item?id=46176806\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    }
+  ],
+  "generatedAt": "2025-12-07T07:08:48.200717923+09:00"
+}
