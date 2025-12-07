@@ -1,0 +1,258 @@
+{
+  "date": "2025-12-08",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2025년 12월 7일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** 1조 달러 규모의 AI 거품 논란 속에서도 인프라 투자는 계속되고 있으며, 아카마이의 퍼미온(Fermyon) 인수로 서버리스 시장의 판도가 웹어셈블리(Wasm) 중심으로 재편되고 있습니다.\n\n---\n\n## 🏆 Top Story: AI 거품론 vs 인프라 확장\n### 1조 달러 AI 버블 논란과 샘 올트먼의 하드웨어 광폭 행보\nAI 시장이 과열되었다는 경고음이 커지고 있습니다. 기술 리더들이 1조 달러(약 1400조 원) 규모의 'AI 버블'을 형성하고 있으면서도 이를 부인하고 있다는 비판이 제기되었습니다 [^30]. 반면, 오픈AI의 샘 올트먼은 이러한 우려를 비웃듯 독자적인 DRAM 공급망 확보를 위한 대규모 거래를 추진하며 하드웨어 인프라 확장에 박차를 가하고 있습니다 [^10]. 이는 소프트웨어의 수익성 증명보다 하드웨어 주도권 확보가 우선이라는 판단으로 보입니다. 한편, 한때 시장을 뜨겁게 달궜던 메타버스는 월가에서 사실상 '종료' 판정을 받으며, 기술 트렌드의 흥망성쇠를 극명하게 보여줍니다 [^28].\n\n\u003e **Key Point:** 시장의 거품 경고에도 불구하고, 주요 플레이어들은 AI 인프라(메모리, 칩) 확보에 사활을 걸며 '치킨 게임'을 지속하고 있습니다. [^10][^30]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. 클라우드의 미래는 Wasm? 아카마이, 퍼미온 인수\n- **What:** CDN 강자 아카마이(Akamai)가 웹어셈블리(Wasm) 기반 서버리스 스타트업 '퍼미온(Fermyon)'을 인수했습니다. [^19]\n- **Why:** 클라우드플레어 워커(Cloudflare Workers)에 대항하여, 더 가볍고 빠른 엣지 컴퓨팅 환경을 구축하기 위함입니다.\n- **Impact:** 컨테이너(Docker)보다 가벼운 Wasm이 차세대 서버리스 표준으로 자리 잡는 속도가 빨라질 것이며, 엣지 컴퓨팅 시장 경쟁이 격화될 전망입니다.\n\n### 2. 기술보다 '문화': 펄(Perl)의 몰락과 엔지니어링 리더십\n- **What:** 한때 웹을 지배했던 언어 Perl의 쇠퇴 원인이 기술적 결함이 아닌 '문화적 폐쇄성'에 있다는 분석이 나왔습니다. [^4]\n- **Why:** 커뮤니티가 신규 유입을 배척하고 고인물화되면서 생태계가 무너졌기 때문입니다. 이는 훌륭한 엔지니어는 지시가 필요 없고, 훌륭한 PM은 통제하지 않는다는 리더십 원칙과도 연결됩니다. [^7]\n- **Impact:** 기술 스택 선정 시 커뮤니티의 개방성과 건강함이 성능만큼이나 중요한 척도임을 시사합니다.\n\n### 3. 감시 사회의 그림자: 차량 추적과 해킹\n- **What:** 민간 기업 Flock의 데이터베이스를 통해 내 차량 이동 경로가 감시되고 있는지 확인할 수 있는 방법이 공개되었습니다. [^6] 동시에 CVE-2025-66478 취약점을 통해 해커가 얼마나 수익을 올렸는지 추적한 사례도 보고되었습니다. [^12]\n- **Why:** 공공 안전을 명목으로 한 민간 감시망이 통제 없이 확장되고 있으며, 개인의 디지털 흔적은 언제든 금전적 탈취의 대상이 될 수 있습니다.\n- **Impact:** 프라이버시 보호 기술과 개인 보안(OpSec)에 대한 대중적 요구가 더욱 거세질 것입니다.\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **VS Code 1.107** | 2025년 11월 업데이트, 코드 편집 기능이 대폭 개선된 최신 인사이더 빌드 [^1] |\n| **Tool** | **ai-bindgen** | AI를 활용해 컴파일 타임에 Rust 코드를 생성해주는 절차적 매크로 [^16] |\n| **Tool** | **iced 0.14** | Rust 기반의 크로스 플랫폼 GUI 라이브러리 최신 릴리스 [^31] |\n| **Tool** | **Chrome LLM Ext** | 로컬 LLM을 사용하여 브라우저의 비공개 페이지 내용과 채팅할 수 있는 확장 프로그램 [^21] |\n| **Paper** | **tritonBLAS** | Triton 언어 기반의 GEMM 커널 파라미터 선택을 위한 분석적 접근법 제안 [^20] |\n| **Paper** | **F-35 C++ Standard** | F-35 전투기 개발에 적용된 엄격한 C++ 코딩 표준 문서 (안전성 중심) [^27] |\n| **Theory** | **Hyperoperations** | C++로 구현된 하이퍼 연산(거듭제곱 이상의 연산) 라이브러리 및 이론 [^18] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 🧪 과학 \u0026 에너지\n* **지구 복사 에너지 발전**: 지구의 주변 복사 에너지를 이용한 기계적 발전 기술이 사이언스지에 게재되었습니다. [^14]\n* **우주로 열 방출 발전**: 열을 우주로 방출하여 전력을 생산하는 새로운 장치가 개발되었습니다. [^17]\n* **디트로이트 태양광**: 디트로이트 시가 'Solar Neighborhoods' 프로젝트를 통해 주거 지역 에너지 자립을 시도합니다. [^13]\n* **화산 웹캠 파손**: 하와이 킬라우에아 화산 분출로 인해 설치된 웹캠이 파손되는 생생한 영상이 공개되었습니다. [^11]\n* **코끼리 수명 미스터리**: 코끼리의 장수 비결을 진화생물학적 관점에서 분석한 글입니다. [^24]\n* **자폐증 연구**: 자폐증과 관련된 유전적, 신경학적 '사촌' 증상들에 대한 심층 분석입니다. [^8]\n* **뇌 구축 아키텍처**: 뇌를 바텀업/탑다운 방식으로 구축하는 공학적 접근에 대한 팟캐스트입니다. [^26]\n\n#### 🏛️ 사회 \u0026 역사\n* **약값의 진실**: 유럽에서 2만원인 약이 미국에서 80만원이 되는 기형적인 의료비 구조를 파헤쳤습니다. [^3]\n* **논문용 HTML**: 접근성을 위해 학술 논문을 PDF 대신 HTML로 작성해야 한다는 제안입니다. [^2]\n* **과거의 민낯**: 과거를 미화하는 경향과 달리, 실제 역사는 훨씬 가혹했다는 점을 지적합니다. [^5]\n* **개발자 스크린샷**: 2002년과 2015년의 개발 환경 스크린샷을 비교하며 UI/UX의 변화를 보여줍니다. [^9]\n* **고지도 도서관**: 역사적인 지도들을 고해상도로 열람할 수 있는 Osher Map Library가 주목받고 있습니다. [^15]\n* **초기 컴퓨터 코드**: 맨체스터 머신(초기 컴퓨터)에서 사용된 오토코드(Autocodes)의 역사적 중요성을 다룹니다. [^23]\n\n#### 💼 비즈니스 \u0026 웹\n* **넷플릭스 합병**: 넷플릭스와 워너의 합병 과정에서 경영진의 '황금 낙하산(거액 퇴직금)' 조항이 어떻게 작동했는지 분석했습니다. [^22]\n* **자바의 귀환**: 애플릿은 사라졌지만, 브라우저 환경에서 자바(Java) 기술이 다시 부상하고 있습니다. [^25]\n* **파일 공유 조언**: 기술을 잘 모르는 사람들과 민감한 파일을 안전하게 공유하는 방법에 대한 해커뉴스 토론입니다. [^29]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘 뉴스는 '**거품과 실체**'의 대결입니다. AI 버블론 속에서도 인프라 투자는 멈추지 않고 있고, 펄(Perl)의 사례는 기술의 우위보다 커뮤니티 문화가 생존에 더 중요함을 일깨워줍니다. 아카마이의 행보는 '서버리스'의 정의가 컨테이너에서 Wasm으로 이동하고 있음을 보여주는 중요한 신호입니다. 주말 동안 F-35 C++ 코딩 표준 문서를 읽어보며 '안전한 코드'란 무엇인지 사색해보는 것도 좋겠네요.\n\n[^1]: November 2025 Insiders (version 1.107) - https://code.visualstudio.com/updates/v1_107\n[^2]: 논문을 위한 접근 가능한 형식으로서의 HTML (2023) - https://news.hada.io/topic?id=24897\n[^3]: 유럽에서 20달러인 일반의약품이 미국에서는 처방전이 필요하고 800달러가 되는 이유 - https://news.hada.io/topic?id=24896\n[^4]: Perl의 쇠퇴는 기술적 문제가 아니라 문화적 문제였다 - https://news.hada.io/topic?id=24895\n[^5]: 과거는 그렇게 귀엽지 않았다 - https://news.hada.io/topic?id=24894\n[^6]: 내 차량 번호판이 감시되고 있는가 – Flock 데이터베이스에서 조회 여부 확인 - https://news.hada.io/topic?id=24893\n[^7]: 훌륭한 엔지니어는 지시가 필요 없고, 훌륭한 PM은 팀이나 로드맵을 통제하지 않는다 [번역글] - https://news.hada.io/topic?id=24892\n[^8]: 자폐증의 혼란스러운 사촌들 - https://news.hada.io/topic?id=24891\n[^9]: 개발자들의 스크린샷: 2002년 vs. 2015년 - https://news.hada.io/topic?id=24890\n[^10]: 샘 올트먼의 DRAM 거래 - https://news.hada.io/topic?id=24889\n[^11]: 킬라우에아 화산 분출로 웹캠 파손 [영상] - https://news.hada.io/topic?id=24888\n[^12]: I Got Hacked – and Traced How Much Money Hacker Made (CVE-2025-66478) - https://twitter.com/duborges/status/1997293892090183772\n[^13]: Solar Neighborhoods (In Detroit) - https://detroitmi.gov/government/mayors-office/office-sustainability/energy/solar-neighborhoods\n[^14]: Mechanical power generation using Earth's ambient radiation - https://www.science.org/doi/10.1126/sciadv.adw6833\n[^15]: Osher Map Library - https://oshermaps.org/\n[^16]: A procedural macro that generates Rust code at compile-time using AI - https://github.com/germangb/ai-bindgen\n[^17]: New Device Generates Power by Beaming Heat to Space - https://spectrum.ieee.org/radiative-cooling-power\n[^18]: Hyperoperations in C++ - https://khz.ac/software/hyperop.html\n[^19]: Akamai buys Fermyon for WASM-based serverless function - https://devclass.com/2025/12/04/akamai-acquires-fermyon-for-wasm-based-serverless-functions-a-possible-answer-to-cloudflare-workers/\n[^20]: tritonBLAS: Triton-based Analytical Approach for GEMM Kernel Parameter Selection - https://arxiv.org/abs/2512.04226\n[^21]: Chrome browser extension for chatting about private pages with local LLMs - https://github.com/ivoras/llmaboutpage\n[^22]: The mechanics of Golden Parachute clauses in the Netflix/Warner merger - https://riskparody.substack.com/p/netflix-just-bought-my-company-what\n[^23]: The significance of Brooker's autocodes in taking the early Manchester machines - https://www.curation.cs.manchester.ac.uk/computer50/www.computer50.org/mark1/gethomas/manchester_autocodes.html\n[^24]: Puzzling Out Elephant Longevity - https://trevorklee.substack.com/p/puzzling-out-elephant-longevity\n[^25]: Applets Are Officially Gone, But Java Is Back In The Browser - https://frequal.com/java/AppletsGoneButJavaInTheBrowserBetterThanEver.html\n[^26]: An Architecture for Building Brains from Top to Bottom? – EE Times Podcast - https://www.eetimes.com/podcasts/an-architecture-for-building-brains-from-top-to-bottom/\n[^27]: F-35 Fighter Jet's C++ Coding Standards [pdf] - https://www.stroustrup.com/JSF-AV-rules.pdf\n[^28]: The metaverse is cooked, and Wall Street couldn't be happier - https://www.cnn.com/2025/12/04/business/meta-metaverse-stock-nightcap\n[^29]: Ask HN: What's your go to for sharing sensitive files with non tech people? - https://news.ycombinator.com/item?id=46185355\n[^30]: Tech leaders fill $1T AI bubble, insist it doesn't exist - https://www.theregister.com/2025/12/05/ai_is_not_a_bubble/\n[^31]: iced 0.14 has been released (Rust GUI library) - https://github.com/iced-rs/iced/releases/tag/0.14.0\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **November 2025 Insiders (version 1.107)**\n   - 출처: Visual Studio Code - Code Editing. Redefined.\n   - 링크: https://code.visualstudio.com/updates/v1_107\n\n2. **논문을 위한 접근 가능한 형식으로서의 HTML (2023)**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24897\n\n3. **유럽에서 20달러인 일반의약품이 미국에서는 처방전이 필요하고 800달러가 되는 이유**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24896\n\n4. **Perl의 쇠퇴는 기술적 문제가 아니라 문화적 문제였다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24895\n\n5. **과거는 그렇게 귀엽지 않았다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24894\n\n6. **내 차량 번호판이 감시되고 있는가 – Flock 데이터베이스에서 조회 여부 확인**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24893\n\n7. **훌륭한 엔지니어는 지시가 필요 없고, 훌륭한 PM은 팀이나 로드맵을 통제하지 않는다 [번역글]**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24892\n\n8. **자폐증의 혼란스러운 사촌들**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24891\n\n9. **개발자들의 스크린샷: 2002년 vs. 2015년**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24890\n\n10. **샘 올트먼의 DRAM 거래**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24889\n\n11. **킬라우에아 화산 분출로 웹캠 파손 [영상]**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24888\n\n12. **I Got Hacked – and Traced How Much Money Hacker Made (CVE-2025-66478)**\n   - 출처: Hacker News\n   - 링크: https://twitter.com/duborges/status/1997293892090183772\n\n13. **Solar Neighborhoods (In Detroit)**\n   - 출처: Hacker News\n   - 링크: https://detroitmi.gov/government/mayors-office/office-sustainability/energy/solar-neighborhoods\n\n14. **Mechanical power generation using Earth's ambient radiation**\n   - 출처: Hacker News\n   - 링크: https://www.science.org/doi/10.1126/sciadv.adw6833\n\n15. **Osher Map Library**\n   - 출처: Hacker News\n   - 링크: https://oshermaps.org/\n\n16. **A procedural macro that generates Rust code at compile-time using AI**\n   - 출처: Hacker News\n   - 링크: https://github.com/germangb/ai-bindgen\n\n17. **New Device Generates Power by Beaming Heat to Space**\n   - 출처: Hacker News\n   - 링크: https://spectrum.ieee.org/radiative-cooling-power\n\n18. **Hyperoperations in C++**\n   - 출처: Hacker News\n   - 링크: https://khz.ac/software/hyperop.html\n\n19. **Akamai buys Fermyon for WASM-based serverless function**\n   - 출처: Hacker News\n   - 링크: https://devclass.com/2025/12/04/akamai-acquires-fermyon-for-wasm-based-serverless-functions-a-possible-answer-to-cloudflare-workers/\n\n20. **tritonBLAS: Triton-based Analytical Approach for GEMM Kernel Parameter Selection**\n   - 출처: Hacker News\n   - 링크: https://arxiv.org/abs/2512.04226\n\n21. **Chrome browser extension for chatting about private pages with local LLMs**\n   - 출처: Hacker News\n   - 링크: https://github.com/ivoras/llmaboutpage\n\n22. **The mechanics of Golden Parachute clauses in the Netflix/Warner merger**\n   - 출처: Hacker News\n   - 링크: https://riskparody.substack.com/p/netflix-just-bought-my-company-what\n\n23. **The significance of Brooker's autocodes in taking the early Manchester machines**\n   - 출처: Hacker News\n   - 링크: https://www.curation.cs.manchester.ac.uk/computer50/www.computer50.org/mark1/gethomas/manchester_autocodes.html\n\n24. **Puzzling Out Elephant Longevity**\n   - 출처: Hacker News\n   - 링크: https://trevorklee.substack.com/p/puzzling-out-elephant-longevity\n\n25. **Applets Are Officially Gone, But Java Is Back In The Browser**\n   - 출처: Hacker News\n   - 링크: https://frequal.com/java/AppletsGoneButJavaInTheBrowserBetterThanEver.html\n\n26. **An Architecture for Building Brains from Top to Bottom? – EE Times Podcast**\n   - 출처: Hacker News\n   - 링크: https://www.eetimes.com/podcasts/an-architecture-for-building-brains-from-top-to-bottom/\n\n27. **F-35 Fighter Jet's C++ Coding Standards [pdf]**\n   - 출처: Hacker News\n   - 링크: https://www.stroustrup.com/JSF-AV-rules.pdf\n\n28. **The metaverse is cooked, and Wall Street couldn't be happier**\n   - 출처: Hacker News\n   - 링크: https://www.cnn.com/2025/12/04/business/meta-metaverse-stock-nightcap\n\n29. **Ask HN: What's your go to for sharing sensitive files with non tech people?**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=46185355\n\n30. **Tech leaders fill $1T AI bubble, insist it doesn't exist**\n   - 출처: Hacker News\n   - 링크: https://www.theregister.com/2025/12/05/ai_is_not_a_bubble/\n\n31. **iced 0.14 has been released (Rust GUI library)**\n   - 출처: Hacker News\n   - 링크: https://github.com/iced-rs/iced/releases/tag/0.14.0\n\n\n",
+  "articles": [
+    {
+      "title": "November 2025 Insiders (version 1.107)",
+      "link": "https://code.visualstudio.com/updates/v1_107",
+      "source": "Visual Studio Code - Code Editing. Redefined.",
+      "category": "tech",
+      "publishedAt": "2025-12-10T17:00:00Z",
+      "description": "\n      \u003cp\u003eLearn what is new in the Visual Studio Code November 2025 Release (1.107).\u003c/p\u003e\n      \u003cp\u003e\u003ca href=\"https://code.visualstudio.com/updates/v1_107\"\u003eRead the full article\u003c/a\u003e\u003c/p\u003e\n    "
+    },
+    {
+      "title": "논문을 위한 접근 가능한 형식으로서의 HTML (2023)",
+      "link": "https://news.hada.io/topic?id=24897",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-08T03:32:51+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003earXiv는 연구 접근성 향상을 위해 \u003cstrong\u003ePDF와 함께 HTML 형식의 논문 제공\u003c/strong\u003e을 시작함\u003c/li\u003e\n\u003cli\u003e200만 편이 넘는 논문 중 일부는 \u003cstrong\u003e자동 변환 한계로 HTML 버전이 제공되지 않음\u003c/strong\u003e, 변환 품질은 지속 개선 예정\u003c/li\u003e\n\u003cli\u003eHTML은 \u003cstrong\u003e스크린 리더, 음성 변환, 모바일 기기\u003c/strong\u003e ...\u003c/p\u003e"
+    },
+    {
+      "title": "유럽에서 20달러인 일반의약품이 미국에서는 처방전이 필요하고 800달러가 되는 이유",
+      "link": "https://news.hada.io/topic?id=24896",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-08T02:33:23+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eMiebo\u003c/strong\u003e는 미국에서 한 달치 가격이 800달러 이상인 \u003cstrong\u003eBausch \u0026amp; Lomb의 안구건조증 치료제\u003c/strong\u003e로, 유럽에서는 \u003cstrong\u003eEvoTears\u003c/strong\u003e라는 이름으로 약 20달러에 일반의약품으로 판매됨\u003c/li\u003e\n\u003cli\u003e동일한 약물이지만, 미국에서는 \u003cstrong\u003eFDA 처방약 승인 절차\u003c/strong\u003e를 거...\u003c/p\u003e"
+    },
+    {
+      "title": "Perl의 쇠퇴는 기술적 문제가 아니라 문화적 문제였다",
+      "link": "https://news.hada.io/topic?id=24895",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-08T01:33:23+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003ePerl의 쇠퇴 원인은 \u003cstrong\u003e기술적 한계가 아니라 보수적이고 폐쇄적인 개발 문화\u003c/strong\u003e에 있었다는 분석\u003c/li\u003e\n\u003cli\u003e초기 UNIX \u003cstrong\u003e시스템 관리자 문화\u003c/strong\u003e에서 비롯된 배타적 태도와 ‘전문가 중심’의 자부심이 언어 발전을 가로막음\u003c/li\u003e\n\u003cli\u003ePerl 6의 분열은 기술적 실패보다 \u003cstrong\u003e커뮤니티...\u003c/p\u003e"
+    },
+    {
+      "title": "과거는 그렇게 귀엽지 않았다",
+      "link": "https://news.hada.io/topic?id=24894",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-08T00:33:36+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e‘코티지코어(cottagecore)’\u003c/strong\u003e 유행을 반가워했지만, 그 안에는 과거가 실제로 더 아름다웠다고 믿는 시선이 존재함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e로라 잉걸스 와일더의 『초원의 작은 집』\u003c/strong\u003e 은 가족과 근면의 미덕을 그렸지만, 실제로는 장애가 있는 가족을 부양하며 겪은 \u003cstrong\u003e가난과 실패...\u003c/p\u003e"
+    },
+    {
+      "title": "내 차량 번호판이 감시되고 있는가 – Flock 데이터베이스에서 조회 여부 확인",
+      "link": "https://news.hada.io/topic?id=24893",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-07T23:33:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eFlock Safety의 차량 번호판 인식(Automatic License Plate Reader, ALPR)\u003c/strong\u003e 시스템에 자신의 번호판이 기록되었는지 확인할 수 있는 웹 도구\u003c/li\u003e\n\u003cli\u003e사용자는 번호판을 입력해 \u003cstrong\u003e대규모 감시 데이터베이스\u003c/strong\u003e 내 검색 여부를 조회 가능\u003c/li\u003e\n\u003cli\u003e이 서비스는 \u003cstrong\u003eFlock Saf...\u003c/p\u003e"
+    },
+    {
+      "title": "훌륭한 엔지니어는 지시가 필요 없고, 훌륭한 PM은 팀이나 로드맵을 통제하지 않는다 [번역글]",
+      "link": "https://news.hada.io/topic?id=24892",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-07T22:50:34+09:00",
+      "description": "\u003col\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003ePM의 진짜 역할 재정의\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e훌륭한 PM은 팀이나 로드맵을 통제하지 않는다.\u003c/li\u003e\n\u003cli\u003e대신 시장 인사이트를 깊게 발굴해 팀이 잘못된 방향으로 가지 않도록 가이드한다.\u003c/li\u003e\n\u003cli\u003e(원문: \u0026quot;훌륭한 PM은 팀을 통제하지 않는다. 인사이트를 발굴하고 방향 이탈을 막는다.\u0026quot"
+    },
+    {
+      "title": "자폐증의 혼란스러운 사촌들",
+      "link": "https://news.hada.io/topic?id=24891",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-07T22:33:29+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e자폐증과 유사한 행동 특성을 보이지만 다른 원인을 가진 여러 정신질환\u003c/strong\u003e이 임상 현장에서 자주 혼동됨\u003c/li\u003e\n\u003cli\u003e많은 사람들이 \u003cstrong\u003e불안, 사회적 서투름, 강박적 성향\u003c/strong\u003e 등을 이유로 스스로 자폐증이라 생각하지만, 실제로는 \u003cstrong\u003e불안장애나 성격장애\u003c/strong\u003e일 가능성도 높...\u003c/p\u003e"
+    },
+    {
+      "title": "개발자들의 스크린샷: 2002년 vs. 2015년",
+      "link": "https://news.hada.io/topic?id=24890",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-07T20:33:11+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e2002년에 여러 \u003cstrong\u003eUnix 개발자들의 데스크톱 스크린샷\u003c/strong\u003e을 수집했던 프로젝트가 13년 후 다시 진행되어, 같은 인물들의 2015년 환경이 공개됨\u003c/li\u003e\n\u003cli\u003e대부분의 개발자들은 여전히 \u003cstrong\u003e터미널 중심의 작업 환경\u003c/strong\u003e을 유지하며, GUI 사용은 최소화된 형태\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eBram Moolen...\u003c/p\u003e"
+    },
+    {
+      "title": "샘 올트먼의 DRAM 거래",
+      "link": "https://news.hada.io/topic?id=24889",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-07T19:33:19+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e2025년 10월 OpenAI가 \u003cstrong\u003e삼성전자와 SK하이닉스\u003c/strong\u003e와 동시에 체결한 대규모 DRAM 공급 계약이 전 세계 메모리 시장을 뒤흔듦\u003c/li\u003e\n\u003cli\u003e두 계약은 \u003cstrong\u003e전 세계 DRAM 생산량의 최대 40%\u003c/strong\u003e 를 확보하는 규모로, 업계 전체가 사전 인지 없이 충격에 빠짐\u003c/li\u003e\n\u003cli\u003e이로 인해 \u003cstrong\u003e패닉 바...\u003c/p\u003e"
+    },
+    {
+      "title": "킬라우에아 화산 분출로 웹캠 파손 [영상]",
+      "link": "https://news.hada.io/topic?id=24888",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-07T18:33:02+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e하와이의 \u003cstrong\u003e킬라우에아 화산\u003c/strong\u003e이 분출하며 인근 지역의 웹캠이 파손되는 장면이 영상으로 촬영됨\u003c/li\u003e\n\u003cli\u003e영상에는 \u003cstrong\u003e용암 분출과 연기 상승\u003c/strong\u003e 등 화산 활동의 강도가 뚜렷하게 나타남\u003c/li\u003e\n\u003cli\u003e웹캠은 분출 현장을 실시간으로 기록하던 중 \u003cstrong\u003e용암 또는 열 영향\u003c/strong\u003e으로...\u003c/p\u003e"
+    },
+    {
+      "title": "I Got Hacked – and Traced How Much Money Hacker Made (CVE-2025-66478)",
+      "link": "https://twitter.com/duborges/status/1997293892090183772",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-07T21:55:53Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://twitter.com/duborges/status/1997293892090183772\"\u003ehttps://twitter.com/duborges/status/1997293892090183772\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46185587\"\u003ehttps://news.ycombinator.com/item?id=46185587\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Solar Neighborhoods (In Detroit)",
+      "link": "https://detroitmi.gov/government/mayors-office/office-sustainability/energy/solar-neighborhoods",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-07T21:55:22Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://detroitmi.gov/government/mayors-office/office-sustainability/energy/solar-neighborhoods\"\u003ehttps://detroitmi.gov/government/mayors-office/office-sustainability/energy/solar-neighborhoods\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46185581\"\u003ehttps://news.ycombinator.com/item?id=46185581\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Mechanical power generation using Earth's ambient radiation",
+      "link": "https://www.science.org/doi/10.1126/sciadv.adw6833",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-07T21:55:01Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.science.org/doi/10.1126/sciadv.adw6833\"\u003ehttps://www.science.org/doi/10.1126/sciadv.adw6833\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46185576\"\u003ehttps://news.ycombinator.com/item?id=46185576\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Osher Map Library",
+      "link": "https://oshermaps.org/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-07T21:54:57Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://oshermaps.org/\"\u003ehttps://oshermaps.org/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46185571\"\u003ehttps://news.ycombinator.com/item?id=46185571\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "A procedural macro that generates Rust code at compile-time using AI",
+      "link": "https://github.com/germangb/ai-bindgen",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-07T21:54:34Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/germangb/ai-bindgen\"\u003ehttps://github.com/germangb/ai-bindgen\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46185567\"\u003ehttps://news.ycombinator.com/item?id=46185567\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "New Device Generates Power by Beaming Heat to Space",
+      "link": "https://spectrum.ieee.org/radiative-cooling-power",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-07T21:54:01Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://spectrum.ieee.org/radiative-cooling-power\"\u003ehttps://spectrum.ieee.org/radiative-cooling-power\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46185561\"\u003ehttps://news.ycombinator.com/item?id=46185561\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Hyperoperations in C++",
+      "link": "https://khz.ac/software/hyperop.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-07T21:53:50Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://khz.ac/software/hyperop.html\"\u003ehttps://khz.ac/software/hyperop.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46185557\"\u003ehttps://news.ycombinator.com/item?id=46185557\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Akamai buys Fermyon for WASM-based serverless function",
+      "link": "https://devclass.com/2025/12/04/akamai-acquires-fermyon-for-wasm-based-serverless-functions-a-possible-answer-to-cloudflare-workers/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-07T21:50:54Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://devclass.com/2025/12/04/akamai-acquires-fermyon-for-wasm-based-serverless-functions-a-possible-answer-to-cloudflare-workers/\"\u003ehttps://devclass.com/2025/12/04/akamai-acquires-fermyon-for-wasm-based-serverless-functions-a-possible-answer-to-cloudflare-workers/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46185533\"\u003ehttps://news.ycombinator.com/item?id=46185533\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "tritonBLAS: Triton-based Analytical Approach for GEMM Kernel Parameter Selection",
+      "link": "https://arxiv.org/abs/2512.04226",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-07T21:49:58Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://arxiv.org/abs/2512.04226\"\u003ehttps://arxiv.org/abs/2512.04226\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46185522\"\u003ehttps://news.ycombinator.com/item?id=46185522\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Chrome browser extension for chatting about private pages with local LLMs",
+      "link": "https://github.com/ivoras/llmaboutpage",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-07T21:46:36Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/ivoras/llmaboutpage\"\u003ehttps://github.com/ivoras/llmaboutpage\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46185496\"\u003ehttps://news.ycombinator.com/item?id=46185496\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The mechanics of Golden Parachute clauses in the Netflix/Warner merger",
+      "link": "https://riskparody.substack.com/p/netflix-just-bought-my-company-what",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-07T21:42:19Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://riskparody.substack.com/p/netflix-just-bought-my-company-what\"\u003ehttps://riskparody.substack.com/p/netflix-just-bought-my-company-what\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46185466\"\u003ehttps://news.ycombinator.com/item?id=46185466\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "The significance of Brooker's autocodes in taking the early Manchester machines",
+      "link": "https://www.curation.cs.manchester.ac.uk/computer50/www.computer50.org/mark1/gethomas/manchester_autocodes.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-07T21:42:04Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.curation.cs.manchester.ac.uk/computer50/www.computer50.org/mark1/gethomas/manchester_autocodes.html\"\u003ehttps://www.curation.cs.manchester.ac.uk/computer50/www.computer50.org/mark1/gethomas/manchester_autocodes.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46185463\"\u003ehttps://news.ycombinator.com/item?id=46185463\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Puzzling Out Elephant Longevity",
+      "link": "https://trevorklee.substack.com/p/puzzling-out-elephant-longevity",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-07T21:38:33Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://trevorklee.substack.com/p/puzzling-out-elephant-longevity\"\u003ehttps://trevorklee.substack.com/p/puzzling-out-elephant-longevity\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46185421\"\u003ehttps://news.ycombinator.com/item?id=46185421\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Applets Are Officially Gone, But Java Is Back In The Browser",
+      "link": "https://frequal.com/java/AppletsGoneButJavaInTheBrowserBetterThanEver.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-07T21:36:31Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://frequal.com/java/AppletsGoneButJavaInTheBrowserBetterThanEver.html\"\u003ehttps://frequal.com/java/AppletsGoneButJavaInTheBrowserBetterThanEver.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46185401\"\u003ehttps://news.ycombinator.com/item?id=46185401\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "An Architecture for Building Brains from Top to Bottom? – EE Times Podcast",
+      "link": "https://www.eetimes.com/podcasts/an-architecture-for-building-brains-from-top-to-bottom/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-07T21:35:40Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.eetimes.com/podcasts/an-architecture-for-building-brains-from-top-to-bottom/\"\u003ehttps://www.eetimes.com/podcasts/an-architecture-for-building-brains-from-top-to-bottom/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46185397\"\u003ehttps://news.ycombinator.com/item?id=46185397\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "F-35 Fighter Jet's C++ Coding Standards [pdf]",
+      "link": "https://www.stroustrup.com/JSF-AV-rules.pdf",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-07T21:34:45Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.stroustrup.com/JSF-AV-rules.pdf\"\u003ehttps://www.stroustrup.com/JSF-AV-rules.pdf\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46185393\"\u003ehttps://news.ycombinator.com/item?id=46185393\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 24\u003c/p\u003e\n\u003cp\u003e# Comments: 6\u003c/p\u003e\n"
+    },
+    {
+      "title": "The metaverse is cooked, and Wall Street couldn't be happier",
+      "link": "https://www.cnn.com/2025/12/04/business/meta-metaverse-stock-nightcap",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-07T21:34:32Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.cnn.com/2025/12/04/business/meta-metaverse-stock-nightcap\"\u003ehttps://www.cnn.com/2025/12/04/business/meta-metaverse-stock-nightcap\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46185391\"\u003ehttps://news.ycombinator.com/item?id=46185391\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Ask HN: What's your go to for sharing sensitive files with non tech people?",
+      "link": "https://news.ycombinator.com/item?id=46185355",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-07T21:31:04Z",
+      "description": "\n\u003cp\u003eMy accountant asked me to send tax documents. My parents needed help with medical records. A client wanted API credentials. Every time I hit the same problem: PGP is way too complex for them, Signal requires installing an app, email attachments feel insecure, and I don't trust random file sharing sites.\u003cp\u003eWhat do you all actually use in practice? Curious if there's something obvious, I'm missing.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46185355\"\u003ehttps://news.ycombinator.com/item?id=46185355\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 2\u003c/p\u003e\n"
+    },
+    {
+      "title": "Tech leaders fill $1T AI bubble, insist it doesn't exist",
+      "link": "https://www.theregister.com/2025/12/05/ai_is_not_a_bubble/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-07T21:27:39Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.theregister.com/2025/12/05/ai_is_not_a_bubble/\"\u003ehttps://www.theregister.com/2025/12/05/ai_is_not_a_bubble/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46185325\"\u003ehttps://news.ycombinator.com/item?id=46185325\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "iced 0.14 has been released (Rust GUI library)",
+      "link": "https://github.com/iced-rs/iced/releases/tag/0.14.0",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-07T21:27:28Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/iced-rs/iced/releases/tag/0.14.0\"\u003ehttps://github.com/iced-rs/iced/releases/tag/0.14.0\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46185323\"\u003ehttps://news.ycombinator.com/item?id=46185323\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 12\u003c/p\u003e\n\u003cp\u003e# Comments: 3\u003c/p\u003e\n"
+    }
+  ],
+  "generatedAt": "2025-12-08T07:09:07.390013811+09:00"
+}
