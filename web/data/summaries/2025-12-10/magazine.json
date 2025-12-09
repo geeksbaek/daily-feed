@@ -1,0 +1,465 @@
+{
+  "date": "2025-12-10",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2025년 12월 9일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** AI 에이전트 표준화를 위한 리눅스 재단의 MCP 도입과 구글·OpenAI의 엔터프라이즈 시장 격전, 그리고 개발자를 위한 새로운 '에이전트 엔지니어링' 시대의 도래.\n\n---\n\n## 🏆 Top Story: AI 연결의 표준화, MCP 리눅스 재단 합류\n### MCP(Model Context Protocol)의 리눅스 재단 합류와 그 의미\nAnthropic이 주도하던 MCP(Model Context Protocol)가 리눅스 재단의 품에 안겼습니다. 이는 AI 모델이 데이터 소스(GitHub, Slack, Google Drive 등)와 상호작용하는 방식이 특정 기업의 소유가 아닌, **업계 표준(Open Standard)**으로 자리 잡게 됨을 의미합니다.\n\n*   **핵심 변화:** 개발자들은 이제 각 AI 모델마다 별도의 연동 코드를 짤 필요 없이, MCP 표준 하나로 모든 AI 에이전트와 데이터 소스를 연결할 수 있습니다.\n*   **시장 영향:** 이는 \"AI 애플리케이션을 위한 USB-C 포트\"가 생기는 것과 같습니다. 폐쇄적인 생태계를 지향하던 기업들에게는 압박이, 오픈 생태계를 지향하는 개발자들에게는 엄청난 생산성 향상을 예고합니다.\n\u003e **Key Point:** AI 에이전트와 데이터 간의 연결이 표준화되면서, 2025년은 '고립된 챗봇'에서 '시스템을 제어하는 에이전트'로 넘어가는 원년이 될 것입니다. [^2]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n\n### 1. '에이전트 엔지니어링(Agent Engineering)'의 부상\nOpenAI와 Docker 등이 'Agentic AI Foundation'을 공동 설립하며 AI 에이전트 생태계 확장에 나섰습니다. 동시에 LangChain은 '에이전트 엔지니어링'을 새로운 직군으로 정의했습니다.\n- **What:** 단순한 프롬프트 작성을 넘어, AI가 도구를 사용하고 추론하며 작업을 수행하도록 시스템을 설계하는 새로운 엔지니어링 분야입니다.\n- **Why:** LLM이 단순 채팅을 넘어 실제 업무 자동화(코딩, 인프라 관리 등)에 투입되면서, 신뢰성 있는 제어 루프(Control Loop)가 필요해졌기 때문입니다.\n- **Impact:** Spotify의 사례처럼 백그라운드에서 코딩을 수행하는 에이전트가 보편화되며, 개발자의 역할은 '코딩'에서 '에이전트 감독'으로 이동할 것입니다. [^6][^22][^33][^34]\n\n### 2. 구글의 2025년 비전: 실험실에서 일터로\n구글이 \"2025 at Google\"을 통해 내년도 비전을 발표했습니다. 핵심은 AI의 '일상적 업무 통합'입니다.\n- **What:** Gemini를 Workspace 깊숙이 통합하고, Data Manager API를 통해 광고주가 AI로 데이터를 측정하게 하며, 안드로이드 XR 기기와의 연동을 강화합니다.\n- **Why:** AI 기술 과시 단계를 지나, 실제 기업과 사용자의 워크플로우에서 수익을 창출해야 하는 시점이 도래했기 때문입니다.\n- **Impact:** 기업 내 AI 도입이 가속화되며, DORA 모델 등을 통한 AI 도입 성과 측정이 중요해질 것입니다. [^4][^23][^24][^30][^31][^56]\n\n### 3. OpenAI의 기업화(Corporatization) 가속\nOpenAI가 첫 공식 인증(Certification) 과정을 런칭하고, 최고매출책임자(CRO)를 선임했습니다.\n- **What:** 개발자와 기업을 위한 공식 교육 과정을 개설하고, 도이치 텔레콤과 파트너십을 맺어 유럽 시장 확장을 꾀합니다.\n- **Why:** 엔터프라이즈 시장에서의 신뢰도 확보와 안정적인 수익 모델 구축이 절실하기 때문입니다.\n- **Impact:** AI 기술이 단순한 '도구'를 넘어 IT 자격증과 같은 '커리어의 필수 요소'로 제도화되고 있음을 시사합니다. [^7][^8][^9]\n\n### 4. LLM의 획일화 경고: 인공 하이브마인드(Hivemind)\nNeurIPS 2025의 주요 논문 분석에 따르면, LLM들이 서로의 데이터를 학습하며 점차 비슷해지는 현상이 발견되었습니다.\n- **What:** 모델들이 서로 유사한 답변을 내놓으며 '다양성'이 사라지는 '모델 붕괴(Model Collapse)'의 징후입니다.\n- **Why:** 인터넷상의 데이터가 AI 생성물로 오염되면서, 독창적인 인간 데이터의 비중이 줄어들고 있습니다.\n- **Impact:** 향후 AI 모델의 성능 향상이 정체될 수 있으며, 원본(Human-generated) 데이터의 가치가 폭등할 것입니다. [^41]\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스 \u0026 논문\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **VS Code v1.107** | 2025년 11월 업데이트. 코드 편집 기능이 재정의되었습니다. [^1] |\n| **Model** | **Apriel-1.6-15b** | ServiceNow가 공개한 비용 효율적인 최첨단 멀티모달 모델(Thinker). [^5] |\n| **Hack** | **Kindle Tailscale** | 탈옥한 킨들에 VPN 서비스인 Tailscale을 설치하여 네트워크에 연결하는 가이드. [^13] |\n| **Tool** | **VirtualTablet** | 안드로이드 기기를 PC와 연결해 무선 그래픽 태블릿으로 활용하는 앱. [^18] |\n| **Infra** | **AlphaEvolve** | 구글 클라우드 기반의 에이전트 발견 및 최적화를 위한 AI 도구. [^57] |\n| **Dev** | **V8 for RISC-V** | 오픈 소스 하드웨어 아키텍처인 RISC-V를 위한 V8 자바스크립트 엔진 개발 현황. [^52] |\n| **App** | **iScribby** | 화면의 모든 요소 위에 자유롭게 그림을 그릴 수 있는 앱 (Show HN). [^51] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n\n#### 💻 개발 \u0026 인프라 \u0026 보안\n*   **GitHub AI 품질론**: 속도보다 제어(Control)가 중요하며, AI 시대에도 품질 유지가 핵심이라는 제언. [^3]\n*   **npm 보안 강화**: npm 게시 워크플로우에서 토큰 사용을 중단하고 보안을 강화합니다. [^43]\n*   **Cloudflare IaC**: 엔터프라이즈 규모에서 인프라를 코드로 관리(IaC)하는 Cloudflare의 노하우. [^35]\n*   **테스트 불안정성 해결**: Atlassian이 대규모 시스템에서 'Flaky Test'를 감지하고 관리하는 도구 구축기. [^26]\n*   **Let's Encrypt 10주년**: 웹 보안의 표준을 바꾼 무료 인증서 발급 기관의 10년 회고. [^38]\n*   **소프트웨어 개발 비용**: AI 도입으로 개발 비용이 정말 90% 감소했는지에 대한 비판적 고찰. [^14]\n*   **AI 탐지기의 한계**: 현재의 AI 텍스트 탐지 도구는 신뢰할 수 없다는 분석. [^15]\n\n#### 📱 모바일 \u0026 컨슈머 \u0026 구글\n*   **Chrome iOS 업데이트**: iOS용 크롬 브라우저의 안정화 버전 업데이트. [^20]\n*   **Pixel Watch 제스처**: 새로운 AI 기반 제스처 제어와 스마트 답장 기능 추가. [^29]\n*   **Google Photos 비디오**: 구글 포토에 5가지 새로운 비디오 편집 도구 추가. [^27]\n*   **Android XR \u0026 Show**: 갤럭시 XR 등 미래 기기를 위한 안드로이드의 새로운 기능 소개. [^32]\n*   **Sneaky Sasquatch**: 애플 아케이드 인기 게임이 홀리데이 시즌 애플 스토어에 등장. [^21]\n*   **Google AI 광고**: 구글의 AI 검색 모드(AI Overview)에 광고가 표시되기 시작했습니다. [^49]\n\n#### 💼 비즈니스 \u0026 빅테크\n*   **엔비디아-OpenAI-오라클**: 협력과 경쟁이 공존하는 미묘한 '프레너미(Frenemy)' 관계 분석. [^11]\n*   **파라마운트 인수전**: 워너브라더스가 파라마운트 스카이댄스 인수에 적대적 제안을 던졌습니다. [^19]\n*   **RAM 가격 상승**: RAM 부족 현상이 PC 게임과 스마트폰 가격 상승을 주도하고 있습니다. [^42]\n*   **기기 교체 주기**: 미국인들이 전자기기를 더 오래 쓰면서 경제에 미치는 영향 분석. [^36]\n*   **Runway**: 투자자 데이터베이스를 AI로 검색할 수 있는 무료 도구 런칭. [^47]\n*   **Mastodon \u0026 EU**: EU의 디지털 주권 강화 움직임에 대한 마스토돈의 입장. [^53]\n\n#### 🌍 사회 \u0026 과학 \u0026 문화\n*   **북한 광섬유 추적**: 위성 사진 등을 통해 북한 내부의 인터넷 인프라를 추적한 흥미로운 분석. [^10]\n*   **일본 지진 주의보**: 북일본 강진 후 초대형 지진 주의보가 발령되었습니다. [^17]\n*   **구글을 만드는 법**: 폴 그레이엄이 쓴 '구글 같은 스타트업을 시작하는 방법' 번역 에세이. [^12]\n*   **백혈병 치료제**: '기성품(Ready-made)' T세포 유전자 치료제가 불치병 백혈병 치료에 성과를 보임. [^54]\n*   **캐나다 여행 보이콧**: 캐나다인의 미국 여행 보이콧이 오히려 국경 검문 강화라는 역효과를 낳고 있음. [^55]\n*   **일론 머스크와 EU**: X(트위터)가 민주주의에 위협이 되고 있다는 비판적 시각. [^46]\n*   **젠슨 황 구술 역사**: 엔비디아 CEO 젠슨 황의 컴퓨터 역사 박물관 인터뷰 영상. [^45]\n*   **기타 에세이**: 미루는 습관의 분류학 [^44], 산타 역할을 하며 겪은 기이한 경험 [^40], 아시아인을 위한 Athletic Greens 만들기 도전기 [^48], 켄트 벡의 '선택권(Optionality)'에 대한 팟캐스트 [^39].\n*   **Show GN**: 쉽고 빠른 해외 여행 정산 요청 서비스 '돈줘'. [^16]\n*   **학술 출판 모델**: 동료 심사(Peer-review) 전 논문 공개(Preprint) 모델에 대한 고찰. [^50]\n*   **F1 게임 사운드**: 픽셀에서 비트까지, F1 게임의 사운드 디자인 제작 과정. [^25]\n*   **OS AI vs 모델 AI**: 운영체제 레벨의 AI 에이전트와 파운데이션 모델 에이전트의 비교. [^37]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘 뉴스의 핵심 키워드는 '**연결(Connection)**'과 '**현실화(Realization)**'입니다.\nMCP를 통해 AI와 데이터가 표준화된 방식으로 **연결**되기 시작했고, 구글과 OpenAI는 AI를 연구실에서 꺼내 기업의 실제 수익 모델로 **현실화**하고 있습니다.\n한편, '인공 하이브마인드'에 대한 경고는 AI가 생성한 데이터만으로는 한계가 있음을 명확히 보여줍니다. 결국 가장 중요한 자원은 여전히 '인간의 고유한 경험'일지도 모르겠습니다.\n\n---\n\n### Footnotes\n[^1]: November 2025 Insiders (version 1.107) - https://code.visualstudio.com/updates/v1_107\n[^2]: MCP joins the Linux Foundation - https://github.blog/open-source/maintainers/mcp-joins-the-linux-foundation-what-this-means-for-developers-building-the-next-era-of-ai-tools-and-agents/\n[^3]: Speed is nothing without control - https://github.blog/ai-and-ml/generative-ai/speed-is-nothing-without-control-how-to-keep-quality-high-in-the-ai-era/\n[^4]: 2025 at Google (Gemini Blog) - https://blog.google/technology/ai/look-back-2025/\n[^5]: Apriel-1.6-15b-Thinker - https://huggingface.co/blog/ServiceNow-AI/apriel-1p6-15b-thinker\n[^6]: OpenAI co-founds Agentic AI Foundation - https://openai.com/index/agentic-ai-foundation\n[^7]: Launching our first OpenAI Certifications courses - https://openai.com/index/openai-certificate-courses\n[^8]: OpenAI appoints Denise Dresser as CRO - https://openai.com/index/openai-appoints-denise-dresser\n[^9]: Deutsche Telekom Collaboration - https://openai.com/index/deutsche-telekom-collaboration\n[^10]: 북한의 광섬유 케이블을 추적하기 - https://news.hada.io/topic?id=24951\n[^11]: 엔비디아와 오픈AI·오라클의 ‘프레너미’ 관계 - https://news.hada.io/topic?id=24950\n[^12]: 구글을 만드는 법 (Paul Graham) - https://news.hada.io/topic?id=24949\n[^13]: 탈옥한 Kindle에 Tailscale을 설치하기 - https://news.hada.io/topic?id=24948\n[^14]: 소프트웨어 개발 비용이 90%나 감소했는가? - https://news.hada.io/topic?id=24946\n[^15]: AI 검사 도구는 이 글이 AI로 쓰였는지 확인할 수 없다 - https://news.hada.io/topic?id=24944\n[^16]: Show GN: 돈줘 - 해외 여행 정산 서비스 - https://news.hada.io/topic?id=24943\n[^17]: 북일본 강진 발생 후 일본, ‘초대형 지진’ 주의보 - https://news.hada.io/topic?id=24942\n[^18]: Show GN: VirtualTablet - https://news.hada.io/topic?id=24941\n[^19]: 워너브라더스, 파라마운트 적대적 인수 제안 - https://news.hada.io/topic?id=24940\n[^20]: Chrome Stable for iOS Update - http://chromereleases.googleblog.com/2025/12/chrome-stable-for-ios-update_0921169938.html\n[^21]: Sneaky Sasquatch comes to Apple Store - https://www.apple.com/newsroom/2025/12/sneaky-sasquatch-comes-to-apple-store-locations-this-holiday-season/\n[^22]: Docker Joins the Agentic AI Foundation - https://www.docker.com/blog/docker-joins-the-agentic-ai-foundation/\n[^23]: AI in the workplace research report (AI Blog) - https://blog.google/products/workspace/gemini-ai-workplace-research-report/\n[^24]: 2025 at Google (AI Blog) - https://blog.google/technology/ai/look-back-2025/\n[^25]: From pixels to beats: F1 Games sound design - https://www.atlassian.com/blog/design/from-pixels-to-beats-the-making-of-the-f1-games-sound-design\n[^26]: Taming Test Flakiness - https://www.atlassian.com/blog/atlassian-engineering/taming-test-flakiness-how-we-built-a-scalable-tool-to-detect-and-manage-flaky-tests\n[^27]: 5 new video editing tools in Google Photos - https://blog.google/products/photos/new-video-editor-templates-custom-text/\n[^28]: AI in the workplace research report (Google Blog) - https://blog.google/products/workspace/gemini-ai-workplace-research-report/\n[^29]: New AI-powered gestures for Pixel Watch - https://blog.google/products/pixel/pixel-watch-4-gestures-smart-reply-updates/\n[^30]: 2025 at Google (Google Blog) - https://blog.google/technology/ai/look-back-2025/\n[^31]: Data Manager API helps advertisers - https://blog.google/products/ads-commerce/data-manager-api-helps-advertisers-improve-measurement-and-get-better-results-from-google-ai/\n[^32]: The Android Show: Galaxy XR updates - https://blog.google/products/android/android-show-xr-edition-updates/\n[^33]: Background Coding Agents (Spotify) - https://engineering.atspotify.com/2025/12/feedback-loops-background-coding-agents-part-3/\n[^34]: Agent Engineering: A New Discipline - https://blog.langchain.com/agent-engineering-a-new-discipline/\n[^35]: Shifting left at enterprise scale (Cloudflare) - https://blog.cloudflare.com/shift-left-enterprise-scale/\n[^36]: Americans are holding onto devices longer - https://www.cnbc.com/2025/11/23/how-device-hoarding-by-americans-is-costing-economy.html\n[^37]: OS AI Agent versus Foundation Model AI Agent - https://www.wreflection.com/p/software-gets-a-new-layer\n[^38]: 10 Years of Let's Encrypt Certificates - https://letsencrypt.org/2025/12/09/10-years.html\n[^39]: Kent L Beck: You're Ignoring Optionality - https://maintainable.fm/episodes/kent-l-beck-youre-ignoring-optionality-and-paying-for-it\n[^40]: Playing Santa Does Strange Things to a Man - https://www.esquire.com/lifestyle/a69597294/santaland-bob-rutan/\n[^41]: NeurIPS 2025: LLMs Are Collapsing into Artificial Hivemind - https://interviewready.io/blog/neurips-2025-top-paper-breakdown-llms-are-collapsing-into-an-artificial-hivemind?srsltid=AfmBOooCUvRK-C3Lzk6vD6YeURbhmTBO8X94LJ_z0EwqjkxZ0U-egNMN\n[^42]: RAM Is Ruining Everything - https://www.theverge.com/report/839506/ram-shortage-price-increases-pc-gaming-smartphones\n[^43]: No more tokens: Locking down NPM Publish - https://www.zachleat.com/web/npm-security/\n[^44]: Taxonomy of Procrastination - https://dynomight.net/procrastination/\n[^45]: Oral History of Jensen Huang - https://www.youtube.com/watch?v=0c8i4T9BSqY\n[^46]: Elon Musk Has Made X a Threat to Democracy - https://bylinetimes.com/2025/12/08/elon-musk-has-made-x-a-threat-to-democracy-and-his-war-on-the-eu-proves-it/\n[^47]: AI-Powered Investor Database for Fundraising - https://www.findrunway.com/\n[^48]: I tried making Athletic Greens for Asians - https://datastream.substack.com/p/when-i-tried-to-make-athletic-greens\n[^49]: Ads are showing up on Google's AI Mode now - https://sherwood.news/tech/ads-are-showing-up-on-googles-ai-mode-now/\n[^50]: Peer-reviewed preprints model - https://www.coalition-s.org/blog/peer-reviewed-preprints-and-the-publish-review-curate-model/\n[^51]: Show HN: An app that allows you to draw over everything - https://iscribby.com/\n[^52]: A glimpse into V8 development for RISC-V - https://riseproject.dev/2025/12/09/a-glimpse-into-v8-development-for-risc-v/\n[^53]: Mastodon on EU Digital Sovereignty - https://mastodon.social/@Mastodon/115689198997943088\n[^54]: 'Ready-made' T-cell gene therapy - https://www.gosh.nhs.uk/news/ready-made-t-cell-gene-therapy-tackles-incurable-t-cell-leukaemia/\n[^55]: Canada's US Travel Boycott Is Backfiring - https://www.thetravel.com/canadas-us-travel-boycott-is-backfiring-canadians-face-more-detailed-border-controls/\n[^56]: From adoption to impact: DORA AI Capabilities Model - https://cloud.google.com/blog/products/ai-machine-learning/from-adoption-to-impact-putting-the-dora-ai-capabilities-model-to-work/\n[^57]: AlphaEvolve on Google Cloud - https://cloud.google.com/blog/products/ai-machine-learning/alphaevolve-on-google-cloud/\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **November 2025 Insiders (version 1.107)**\n   - 출처: Visual Studio Code - Code Editing. Redefined.\n   - 링크: https://code.visualstudio.com/updates/v1_107\n\n2. **MCP joins the Linux Foundation: What this means for developers building the next era of AI tools and agents**\n   - 출처: GitHub Blog\n   - 링크: https://github.blog/open-source/maintainers/mcp-joins-the-linux-foundation-what-this-means-for-developers-building-the-next-era-of-ai-tools-and-agents/\n\n3. **Speed is nothing without control: How to keep quality high in the AI era**\n   - 출처: GitHub Blog\n   - 링크: https://github.blog/ai-and-ml/generative-ai/speed-is-nothing-without-control-how-to-keep-quality-high-in-the-ai-era/\n\n4. **2025 at Google**\n   - 출처: Gemini\n   - 링크: https://blog.google/technology/ai/look-back-2025/\n\n5. **Apriel-1.6-15b-Thinker: Cost-efficient Frontier Multimodal Performance**\n   - 출처: Hugging Face - Blog\n   - 링크: https://huggingface.co/blog/ServiceNow-AI/apriel-1p6-15b-thinker\n\n6. **OpenAI co-founds Agentic AI Foundation, donates AGENTS.md**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/agentic-ai-foundation\n\n7. **Launching our first OpenAI Certifications courses**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/openai-certificate-courses\n\n8. **OpenAI appoints Denise Dresser as Chief Revenue Officer**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/openai-appoints-denise-dresser\n\n9. **Bringing powerful AI to millions across Europe with Deutsche Telekom**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/deutsche-telekom-collaboration\n\n10. **북한의 광섬유 케이블을 추적하기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24951\n\n11. **엔비디아와 오픈AI·오라클의 ‘프레너미’ 관계**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24950\n\n12. **구글을 만드는 법 | How To Start Google by Paul Graham [번역]**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24949\n\n13. **탈옥한 Kindle에 Tailscale을 설치하기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24948\n\n14. **소프트웨어 개발 비용이 90%나 감소했는가?**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24946\n\n15. **AI 검사 도구는 이 글이 AI로 쓰였는지 확인할 수 없다 [번역글]**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24944\n\n16. **Show GN: 돈줘 - 쉽고 빠른 해외 여행 정산 요청 서비스 **\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24943\n\n17. **북일본 강진 발생 후 일본, ‘초대형 지진’ 주의보 발령**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24942\n\n18. **Show GN: VirtualTablet: Bluetooth - 안드로이드 기기를 무선 그래픽 타블렛으로 사용해보세요!**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24941\n\n19. **워너브라더스 인수를 위한 파라마운트 스카이댄스의 적대적 인수 제안**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=24940\n\n20. **Chrome Stable for iOS Update**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2025/12/chrome-stable-for-ios-update_0921169938.html\n\n21. **Sneaky Sasquatch comes to Apple Store locations this holiday season\n**\n   - 출처: Apple Newsroom\n   - 링크: https://www.apple.com/newsroom/2025/12/sneaky-sasquatch-comes-to-apple-store-locations-this-holiday-season/\n\n22. **Docker Joins the Agentic AI Foundation**\n   - 출처: Docker Blog\n   - 링크: https://www.docker.com/blog/docker-joins-the-agentic-ai-foundation/\n\n23. **Learn more about AI in the workplace in our new research report.**\n   - 출처: AI\n   - 링크: https://blog.google/products/workspace/gemini-ai-workplace-research-report/\n\n24. **2025 at Google**\n   - 출처: AI\n   - 링크: https://blog.google/technology/ai/look-back-2025/\n\n25. **From pixels to beats: the making of the F1 Games sound design**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/design/from-pixels-to-beats-the-making-of-the-f1-games-sound-design\n\n26. **Taming Test Flakiness: How We Built a Scalable Tool to Detect and Manage Flaky Tests**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/atlassian-engineering/taming-test-flakiness-how-we-built-a-scalable-tool-to-detect-and-manage-flaky-tests\n\n27. **5 new video editing tools in Google Photos**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/products/photos/new-video-editor-templates-custom-text/\n\n28. **Learn more about AI in the workplace in our new research report.**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/products/workspace/gemini-ai-workplace-research-report/\n\n29. **New AI-powered gestures and Smart Reply updates for Pixel Watch**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/products/pixel/pixel-watch-4-gestures-smart-reply-updates/\n\n30. **2025 at Google**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/technology/ai/look-back-2025/\n\n31. **Data Manager API helps advertisers improve measurement and get better results from Google AI.**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/products/ads-commerce/data-manager-api-helps-advertisers-improve-measurement-and-get-better-results-from-google-ai/\n\n32. **The Android Show: New features for Galaxy XR and a look at future devices**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/products/android/android-show-xr-edition-updates/\n\n33. **Background Coding Agents: Predictable Results Through Strong Feedback Loops (Part 3)**\n   - 출처: Spotify Engineering\n   - 링크: https://engineering.atspotify.com/2025/12/feedback-loops-background-coding-agents-part-3/\n\n34. **Agent Engineering: A New Discipline**\n   - 출처: LangChain Blog\n   - 링크: https://blog.langchain.com/agent-engineering-a-new-discipline/\n\n35. **Shifting left at enterprise scale: how we manage Cloudflare with Infrastructure as Code**\n   - 출처: Cloudflare Blog\n   - 링크: https://blog.cloudflare.com/shift-left-enterprise-scale/\n\n36. **Americans are holding onto devices longer than ever and it's costing the economy**\n   - 출처: Hacker News\n   - 링크: https://www.cnbc.com/2025/11/23/how-device-hoarding-by-americans-is-costing-economy.html\n\n37. **Operating System AI Agent versus Foundation Model AI Agent**\n   - 출처: Hacker News\n   - 링크: https://www.wreflection.com/p/software-gets-a-new-layer\n\n38. **10 Years of Let's Encrypt Certificates**\n   - 출처: Hacker News\n   - 링크: https://letsencrypt.org/2025/12/09/10-years.html\n\n39. **Kent L Beck: You're Ignoring Optionality and Paying for It [audio]**\n   - 출처: Hacker News\n   - 링크: https://maintainable.fm/episodes/kent-l-beck-youre-ignoring-optionality-and-paying-for-it\n\n40. **Playing Santa Does Strange Things to a Man**\n   - 출처: Hacker News\n   - 링크: https://www.esquire.com/lifestyle/a69597294/santaland-bob-rutan/\n\n41. **NeurIPS 2025 Top Paper Breakdown: LLMs Are Collapsing into Artificial Hivemind**\n   - 출처: Hacker News\n   - 링크: https://interviewready.io/blog/neurips-2025-top-paper-breakdown-llms-are-collapsing-into-an-artificial-hivemind?srsltid=AfmBOooCUvRK-C3Lzk6vD6YeURbhmTBO8X94LJ_z0EwqjkxZ0U-egNMN\n\n42. **RAM Is Ruining Everything**\n   - 출처: Hacker News\n   - 링크: https://www.theverge.com/report/839506/ram-shortage-price-increases-pc-gaming-smartphones\n\n43. **No more tokens Locking down NPM Publish Workflows**\n   - 출처: Hacker News\n   - 링크: https://www.zachleat.com/web/npm-security/\n\n44. **Taxonomy of Procrastination (2023)**\n   - 출처: Hacker News\n   - 링크: https://dynomight.net/procrastination/\n\n45. **Oral History of Jensen Huang – Computer History Museum [video]**\n   - 출처: Hacker News\n   - 링크: https://www.youtube.com/watch?v=0c8i4T9BSqY\n\n46. **Elon Musk Has Made X a Threat to Democracy and His War on the EU Proves It**\n   - 출처: Hacker News\n   - 링크: https://bylinetimes.com/2025/12/08/elon-musk-has-made-x-a-threat-to-democracy-and-his-war-on-the-eu-proves-it/\n\n47. **AI-Powered Investor Database for Fundraising – Free Forever**\n   - 출처: Hacker News\n   - 링크: https://www.findrunway.com/\n\n48. **I tried making Athletic Greens for Asians**\n   - 출처: Hacker News\n   - 링크: https://datastream.substack.com/p/when-i-tried-to-make-athletic-greens\n\n49. **Ads are showing up on Google's AI Mode now**\n   - 출처: Hacker News\n   - 링크: https://sherwood.news/tech/ads-are-showing-up-on-googles-ai-mode-now/\n\n50. **Peer-reviewed preprints and the Publish-Review-Curate model**\n   - 출처: Hacker News\n   - 링크: https://www.coalition-s.org/blog/peer-reviewed-preprints-and-the-publish-review-curate-model/\n\n51. **Show HN: An app that allows you to draw over everything**\n   - 출처: Hacker News\n   - 링크: https://iscribby.com/\n\n52. **A glimpse into V8 development for RISC-V**\n   - 출처: Hacker News\n   - 링크: https://riseproject.dev/2025/12/09/a-glimpse-into-v8-development-for-risc-v/\n\n53. **Mastodon on EU Digital Sovereignty**\n   - 출처: Hacker News\n   - 링크: https://mastodon.social/@Mastodon/115689198997943088\n\n54. **'Ready-made' T-cell gene therapy tackles 'incurable' T-Cell leukaemia**\n   - 출처: Hacker News\n   - 링크: https://www.gosh.nhs.uk/news/ready-made-t-cell-gene-therapy-tackles-incurable-t-cell-leukaemia/\n\n55. **Canada's US Travel Boycott Is Backfiring in the Most Unexpected Way at US Border**\n   - 출처: Hacker News\n   - 링크: https://www.thetravel.com/canadas-us-travel-boycott-is-backfiring-canadians-face-more-detailed-border-controls/\n\n56. **From adoption to impact: Putting the DORA AI Capabilities Model to work**\n   - 출처: AI \u0026 Machine Learning\n   - 링크: https://cloud.google.com/blog/products/ai-machine-learning/from-adoption-to-impact-putting-the-dora-ai-capabilities-model-to-work/\n\n57. **AlphaEvolve on Google Cloud: AI for agentic discovery and optimization**\n   - 출처: AI \u0026 Machine Learning\n   - 링크: https://cloud.google.com/blog/products/ai-machine-learning/alphaevolve-on-google-cloud/\n\n\n",
+  "articles": [
+    {
+      "title": "November 2025 Insiders (version 1.107)",
+      "link": "https://code.visualstudio.com/updates/v1_107",
+      "source": "Visual Studio Code - Code Editing. Redefined.",
+      "category": "tech",
+      "publishedAt": "2025-12-10T17:00:00Z",
+      "description": "\n      \u003cp\u003eLearn what is new in the Visual Studio Code November 2025 Release (1.107).\u003c/p\u003e\n      \u003cp\u003e\u003ca href=\"https://code.visualstudio.com/updates/v1_107\"\u003eRead the full article\u003c/a\u003e\u003c/p\u003e\n    "
+    },
+    {
+      "title": "MCP joins the Linux Foundation: What this means for developers building the next era of AI tools and agents",
+      "link": "https://github.blog/open-source/maintainers/mcp-joins-the-linux-foundation-what-this-means-for-developers-building-the-next-era-of-ai-tools-and-agents/",
+      "source": "GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-09T21:00:13Z",
+      "description": "\u003cp\u003eMCP is moving to the Linux Foundation. Here's how that will affect developers.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/open-source/maintainers/mcp-joins-the-linux-foundation-what-this-means-for-developers-building-the-next-era-of-ai-tools-and-agents/\"\u003eMCP joins the Linux Foundation: What this means for developers building the next era of AI tools and agents\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Speed is nothing without control: How to keep quality high in the AI era",
+      "link": "https://github.blog/ai-and-ml/generative-ai/speed-is-nothing-without-control-how-to-keep-quality-high-in-the-ai-era/",
+      "source": "GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-09T17:00:00Z",
+      "description": "\u003cp\u003eAI can help you build faster than ever, but it can also produce bugs, issues, and problems. Use these strategies to keep your speed without losing control of your code.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/ai-and-ml/generative-ai/speed-is-nothing-without-control-how-to-keep-quality-high-in-the-ai-era/\"\u003eSpeed is nothing without control: How to keep quality high in the AI era\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "2025 at Google",
+      "link": "https://blog.google/technology/ai/look-back-2025/",
+      "source": "Gemini",
+      "category": "tech",
+      "publishedAt": "2025-12-09T16:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/EOY_2025_Header.max-600x600.format-webp.webp\"\u003eLearn more about Google’s launches, milestones and more from 2025."
+    },
+    {
+      "title": "Apriel-1.6-15b-Thinker: Cost-efficient Frontier Multimodal Performance",
+      "link": "https://huggingface.co/blog/ServiceNow-AI/apriel-1p6-15b-thinker",
+      "source": "Hugging Face - Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-09T20:06:56Z"
+    },
+    {
+      "title": "OpenAI co-founds Agentic AI Foundation, donates AGENTS.md",
+      "link": "https://openai.com/index/agentic-ai-foundation",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2025-12-09T09:00:00Z",
+      "description": "OpenAI co-founds the Agentic AI Foundation under the Linux Foundation and donates AGENTS.md to support open, interoperable standards for safe agentic AI."
+    },
+    {
+      "title": "Launching our first OpenAI Certifications courses",
+      "link": "https://openai.com/index/openai-certificate-courses",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2025-12-09T06:00:00Z",
+      "description": "Learn how OpenAI’s new certifications and AI Foundations courses help people build real-world AI skills, boost career opportunities, and prepare for the future of work."
+    },
+    {
+      "title": "OpenAI appoints Denise Dresser as Chief Revenue Officer",
+      "link": "https://openai.com/index/openai-appoints-denise-dresser",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2025-12-09T00:00:00Z",
+      "description": "Denise Dresser is joining as Chief Revenue Officer, overseeing OpenAI’s global revenue strategy across enterprise and customer success. She will help more businesses put AI to work in their day-to-day operations as OpenAI continues to scale."
+    },
+    {
+      "title": "Bringing powerful AI to millions across Europe with Deutsche Telekom",
+      "link": "https://openai.com/index/deutsche-telekom-collaboration",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2025-12-09T00:00:00Z",
+      "description": "OpenAI is collaborating with Deutsche Telekom to bring advanced, multilingual AI experiences to millions of people across Europe. ChatGPT Enterprise will also be deployed to help employees at Deutsche Telekom improve workflows and accelerate innovation."
+    },
+    {
+      "title": "북한의 광섬유 케이블을 추적하기",
+      "link": "https://news.hada.io/topic?id=24951",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-10T04:33:08+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e북한의 \u003cstrong\u003e국내 광섬유 네트워크 구조\u003c/strong\u003e를 파악하기 위해 다양한 공개 자료와 위성·사진 정보를 분석한 조사\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e러시아 TTK와의 연결선\u003c/strong\u003e, \u003cstrong\u003e중국 단둥을 통한 연결선\u003c/strong\u003e, 그리고 \u003cstrong\u003e평양 중심의 내부망 ‘광명(Kwangmyong)’\u003c/strong\u003e 구조가 주요 축으로...\u003c/p\u003e"
+    },
+    {
+      "title": "엔비디아와 오픈AI·오라클의 ‘프레너미’ 관계",
+      "link": "https://news.hada.io/topic?id=24950",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-10T03:33:07+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e엔비디아의 \u003cstrong\u003e2026 회계연도 3분기 실적\u003c/strong\u003e은 매출 620억 달러로 호조를 보였지만, \u003cstrong\u003e현금흐름·재고·매출채권\u003c/strong\u003e에서 불안 신호가 드러남\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e순이익 319억 달러\u003c/strong\u003e에 비해 \u003cstrong\u003e영업현금흐름 238억 달러\u003c/strong\u003e로 80억 달러 차이가 발생했고, \u003cstrong\u003e재고는...\u003c/p\u003e"
+    },
+    {
+      "title": "구글을 만드는 법 | How To Start Google by Paul Graham [번역]",
+      "link": "https://news.hada.io/topic?id=24949",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-10T02:05:17+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e직장을 가지는 건 대부분의 사람들이 “현실”이라고 믿는 선택지다. 하지만 그건 유일한 길이 아니다. 평생 한 번도 직장을 다니지 않을 수 있는 방법이 있다. 자기 회사를 만드는 것이다.\u003c/li\u003e\n\u003cli\u003e회사는 일을 피하는 수단이 아니다. 오히려 가장 빡센 일이다. 다만 남이 정한 우선순위, 상사의 기분, 조직에...\u003c/p\u003e"
+    },
+    {
+      "title": "탈옥한 Kindle에 Tailscale을 설치하기",
+      "link": "https://news.hada.io/topic?id=24948",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-10T01:32:55+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eTailscale을 탈옥한 Kindle에 설치\u003c/strong\u003e하면 제한된 전자책 리더를 네트워크 연결이 가능한 소형 Linux 장치로 확장할 수 있음\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e탈옥(jailbreaking)\u003c/strong\u003e 을 통해 Kindle의 루트 접근 권한을 얻고, \u003cstrong\u003eKOReader\u003c/strong\u003e나 \u003cstrong\u003eKindleForge 앱\u003c/strong\u003e 같은 비공식...\u003c/p\u003e"
+    },
+    {
+      "title": "소프트웨어 개발 비용이 90%나 감소했는가?",
+      "link": "https://news.hada.io/topic?id=24946",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-09T23:33:44+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e에이전틱 코딩(Agentic Coding)\u003c/strong\u003e 도구의 등장으로 소프트웨어 개발의 \u003cstrong\u003e노동 비용이 급격히 감소\u003c/strong\u003e하고 있음\u003c/li\u003e\n\u003cli\u003e과거 한 달 걸리던 내부용 웹앱 프로젝트가 \u003cstrong\u003e일주일 내 완성\u003c/strong\u003e될 정도로 구현 속도가 단축됨\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eClaude Code\u003c/strong\u003e 등 도구...\u003c/p\u003e"
+    },
+    {
+      "title": "AI 검사 도구는 이 글이 AI로 쓰였는지 확인할 수 없다 [번역글]",
+      "link": "https://news.hada.io/topic?id=24944",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-09T23:09:51+09:00",
+      "description": "\u003col\u003e\n\u003cli\u003e\n\u003cp\u003e문제의식: AI 글 생성이 쉬워진 만큼 감지 압박도 폭증\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e누구나 ChatGPT 등으로 글을 뽑아낼 수 있지만, 학교·기업·클라이언트가 AI 감지기를 맹신해 사람 글도 AI로 오인(false positive)하는 사례가 급증.\u003c/li\u003e\n\u003cli\u003e원문은 \u0026quot;AI 콘텐츠 홍수 속에서 진짜 인간 글을 구분해야 한다\u0026quot;는"
+    },
+    {
+      "title": "Show GN: 돈줘 - 쉽고 빠른 해외 여행 정산 요청 서비스 ",
+      "link": "https://news.hada.io/topic?id=24943",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-09T22:38:19+09:00",
+      "description": "\u003cp\u003e안녕하세요. 최근 친구들과 해외여행을 다녀오며 총무를 맡았는데, 여행이 끝나고 영수증 뭉치를 하나하나 입력하고 정리해서 공유하는 과정이 너무 번거로워 만든 웹 서비스 \u003cstrong\u003e돈줘\u003c/strong\u003e를 공유합니다.\u003c/p\u003e\n\u003cp\u003eAI 코딩 도구를 적극 활용해(Vibe Coding) 하루 만에 완성했습니다.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e1. 만들게"
+    },
+    {
+      "title": "북일본 강진 발생 후 일본, ‘초대형 지진’ 주의보 발령",
+      "link": "https://news.hada.io/topic?id=24942",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-09T22:33:05+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e일본 북부 해역에서 \u003cstrong\u003e규모 7.5 지진\u003c/strong\u003e이 발생해 쓰나미 경보가 내려졌으며, 정부는 향후 며칠을 \u003cstrong\u003e중대 시기\u003c/strong\u003e로 보고 있음\u003c/li\u003e\n\u003cli\u003e진원은 아오모리현 동쪽 해역, 깊이 54km로, 하치노헤시는 \u003cstrong\u003e진도 6강\u003c/strong\u003e을 기록하고 33명이 부상\u003c/li\u003e\n\u003cli\u003e기상청은 \u003cstrong\u003e일본 해...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: VirtualTablet: Bluetooth - 안드로이드 기기를 무선 그래픽 타블렛으로 사용해보세요!",
+      "link": "https://news.hada.io/topic?id=24941",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-09T22:02:28+09:00",
+      "description": "\u003cp\u003eVirtualTablet: Bluetooth는 안드로이드 기기를 PC에(Windows, macOS, Linux 모두 지원)  연결하여 무선 그래픽 태블릿으로 사용할 수 있게 해주는 앱 입니다.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eS Pen\u003c/strong\u003e이 있는 \u003cstrong\u003e갤럭시 탭, 노트, 울트라 시리즈\u003c/strong\u003e 디바이스만 있으면 와콤 태블릿을 별도 구입하지 않아도 해당 기"
+    },
+    {
+      "title": "워너브라더스 인수를 위한 파라마운트 스카이댄스의 적대적 인수 제안",
+      "link": "https://news.hada.io/topic?id=24940",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-09T20:33:36+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e파라마운트 스카이댄스\u003c/strong\u003e가 넷플릭스에 밀려 워너브라더스디스커버리(WBD) 인수 경쟁에서 패한 뒤, \u003cstrong\u003e주주 직접 상대의 적대적 인수 제안\u003c/strong\u003e을 발표\u003c/li\u003e\n\u003cli\u003e제안은 \u003cstrong\u003e주당 30달러 전액 현금\u003c/strong\u003e으로, 총 \u003cstrong\u003e기업가치 1,084억 달러\u003c/strong\u003e 규모이며, 엘리슨 가...\u003c/p\u003e"
+    },
+    {
+      "title": "Chrome Stable for iOS Update",
+      "link": "http://chromereleases.googleblog.com/2025/12/chrome-stable-for-ios-update_0921169938.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2025-12-09T09:58:33.212-08:00",
+      "description": "\u003cp\u003eHi everyone! We've just released Chrome Stable 143 (143.0.7499.108) for iOS; it'll become available on App Store in the next few hours.\u003c/p\u003e\u003cp\u003eThis release includes stability and performance improvements. You can see a full list of the changes in the \u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/143.0.7499.92..143.0.7499.108?pretty=fuller\u0026amp;n=10000\"\u003eGit log\u003c/a\u003e. If you find a new issue, please let us know by \u003ca href=\"https://code.google.com/p/chromium/issues/entry?template=iOS%20Issue\"\u003efiling a bug\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eChrome Release Team\u003cbr /\u003e\u003ca href=\"https://www.google.com/chrome\"\u003e\u003c/a\u003e\u003ca href=\"https://www.google.com/chrome\"\u003eGoogle Chrome\u003c/a\u003e\u003c/p\u003e"
+    },
+    {
+      "title": "Sneaky Sasquatch comes to Apple Store locations this holiday season\n",
+      "link": "https://www.apple.com/newsroom/2025/12/sneaky-sasquatch-comes-to-apple-store-locations-this-holiday-season/",
+      "source": "Apple Newsroom",
+      "category": "tech",
+      "publishedAt": "2025-12-09T14:59:50.159Z",
+      "description": "This holiday season, Apple Arcade players can dive deeper into the world of the hit game Sneaky Sasquatch."
+    },
+    {
+      "title": "Docker Joins the Agentic AI Foundation",
+      "link": "https://www.docker.com/blog/docker-joins-the-agentic-ai-foundation/",
+      "source": "Docker Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-09T19:32:56Z",
+      "description": "Today, the Linux Foundation launched the Agentic AI Foundation with three founding projects: Anthropic's Model Context Protocol (MCP), Block's goose agent framework, and OpenAI's AGENTS.md standard. The foundation brings together the companies building the infrastructure layer for agents: Anthropic, Block, OpenAI, Amazon, Google, Microsoft, Cloudflare, and Bloomberg, alongside key tooling and platform companies.  Docker is..."
+    },
+    {
+      "title": "Learn more about AI in the workplace in our new research report.",
+      "link": "https://blog.google/products/workspace/gemini-ai-workplace-research-report/",
+      "source": "AI",
+      "category": "tech",
+      "publishedAt": "2025-12-09T17:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/airesearchsocial.max-600x600.format-webp.webp\"\u003eA new global survey of executives, decision makers and knowledge workers reveals that organizations truly transforming with AI are seeing real results that move their bu…"
+    },
+    {
+      "title": "2025 at Google",
+      "link": "https://blog.google/technology/ai/look-back-2025/",
+      "source": "AI",
+      "category": "tech",
+      "publishedAt": "2025-12-09T16:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/EOY_2025_Header.max-600x600.format-webp.webp\"\u003eLearn more about Google’s launches, milestones and more from 2025."
+    },
+    {
+      "title": "From pixels to beats: the making of the F1 Games sound design",
+      "link": "https://www.atlassian.com/blog/design/from-pixels-to-beats-the-making-of-the-f1-games-sound-design",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-09T20:47:05Z",
+      "description": "\u003cp\u003eAt Atlassian, play is often where the real ideas begin. Earlier this year, during our ShipIt hackathon (where Atlassians drop...\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/design/from-pixels-to-beats-the-making-of-the-f1-games-sound-design\"\u003eFrom pixels to beats: the making of the F1 Games sound design\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Taming Test Flakiness: How We Built a Scalable Tool to Detect and Manage Flaky Tests",
+      "link": "https://www.atlassian.com/blog/atlassian-engineering/taming-test-flakiness-how-we-built-a-scalable-tool-to-detect-and-manage-flaky-tests",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-08T23:10:45Z",
+      "description": "\u003cp\u003eFlaky tests erode trust in CI and waste thousands of engineering hours. This article explains how Atlassian built Flakinator, a scalable, stack‑agnostic platform that automatically detects, quarantines, and manages flaky tests across millions of daily executions.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/atlassian-engineering/taming-test-flakiness-how-we-built-a-scalable-tool-to-detect-and-manage-flaky-tests\"\u003eTaming Test Flakiness: How We Built a Scalable Tool to Detect and Manage Flaky Tests\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "5 new video editing tools in Google Photos",
+      "link": "https://blog.google/products/photos/new-video-editor-templates-custom-text/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-09T18:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Copy_of_Google_Photos_Dec25_VEB.max-600x600.format-webp.webp\"\u003eLearn more about how you can use Google Photos to create videos using the app’s new, redesigned video editor."
+    },
+    {
+      "title": "Learn more about AI in the workplace in our new research report.",
+      "link": "https://blog.google/products/workspace/gemini-ai-workplace-research-report/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-09T17:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/airesearchsocial.max-600x600.format-webp.webp\"\u003eA new global survey of executives, decision makers and knowledge workers reveals that organizations truly transforming with AI are seeing real results that move their bu…"
+    },
+    {
+      "title": "New AI-powered gestures and Smart Reply updates for Pixel Watch",
+      "link": "https://blog.google/products/pixel/pixel-watch-4-gestures-smart-reply-updates/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-09T17:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/WatchGestures_Hero.max-600x600.format-webp.webp\"\u003eLearn more about Google’s latest updates for Pixel Watch 4, including AI-powered additions."
+    },
+    {
+      "title": "2025 at Google",
+      "link": "https://blog.google/technology/ai/look-back-2025/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-09T16:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/EOY_2025_Header.max-600x600.format-webp.webp\"\u003eLearn more about Google’s launches, milestones and more from 2025."
+    },
+    {
+      "title": "Data Manager API helps advertisers improve measurement and get better results from Google AI.",
+      "link": "https://blog.google/products/ads-commerce/data-manager-api-helps-advertisers-improve-measurement-and-get-better-results-from-google-ai/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-09T14:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/GCard.max-600x600.format-webp.webp\"\u003eMarketers who have deeply integrated AI tools report 60% greater revenue growth than their peers. To make it simpler for marketers to connect first-party data with Googl…"
+    },
+    {
+      "title": "The Android Show: New features for Galaxy XR and a look at future devices",
+      "link": "https://blog.google/products/android/android-show-xr-edition-updates/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-08T22:41:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/TAS_XR_Blog_Header_1.max-600x600.format-webp.webp\"\u003eWe’re releasing new updates for the Galaxy XR headset starting today, and announcing updates for Android XR."
+    },
+    {
+      "title": "Background Coding Agents: Predictable Results Through Strong Feedback Loops (Part 3)",
+      "link": "https://engineering.atspotify.com/2025/12/feedback-loops-background-coding-agents-part-3/",
+      "source": "Spotify Engineering",
+      "category": "tech",
+      "publishedAt": "2025-12-09T15:14:19Z",
+      "description": "\u003cp\u003eThe system we built to ensure our AI agents produce predictable, trustworthy code.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://engineering.atspotify.com/2025/12/feedback-loops-background-coding-agents-part-3/\"\u003eBackground Coding Agents: Predictable Results Through Strong Feedback Loops (Part 3)\u003c/a\u003e appeared first on \u003ca href=\"https://engineering.atspotify.com\"\u003eSpotify Engineering\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Agent Engineering: A New Discipline",
+      "link": "https://blog.langchain.com/agent-engineering-a-new-discipline/",
+      "source": "LangChain Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-09T16:20:35Z",
+      "description": "\u003cp\u003eIf you\u0026#x2019;ve built an agent, you know that the delta between \u0026#x201C;it works on my machine\u0026#x201D; and \u0026#x201C;it works in production\u0026#x201D; can be huge. Traditional software assumes you mostly know the inputs and can define the outputs. Agents give you neither: users can say\u003c/p\u003e"
+    },
+    {
+      "title": "Shifting left at enterprise scale: how we manage Cloudflare with Infrastructure as Code",
+      "link": "https://blog.cloudflare.com/shift-left-enterprise-scale/",
+      "source": "Cloudflare Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-09T06:00:00Z",
+      "description": " Cloudflare has shifted to Infrastructure as Code and policy enforcement to manage internal Cloudflare accounts. This new architecture uses Terraform, custom tooling, and Open Policy Agent to enforce security baselines and increase engineering velocity. "
+    },
+    {
+      "title": "Americans are holding onto devices longer than ever and it's costing the economy",
+      "link": "https://www.cnbc.com/2025/11/23/how-device-hoarding-by-americans-is-costing-economy.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-09T22:02:50Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.cnbc.com/2025/11/23/how-device-hoarding-by-americans-is-costing-economy.html\"\u003ehttps://www.cnbc.com/2025/11/23/how-device-hoarding-by-americans-is-costing-economy.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46211356\"\u003ehttps://news.ycombinator.com/item?id=46211356\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Operating System AI Agent versus Foundation Model AI Agent",
+      "link": "https://www.wreflection.com/p/software-gets-a-new-layer",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-09T22:02:33Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.wreflection.com/p/software-gets-a-new-layer\"\u003ehttps://www.wreflection.com/p/software-gets-a-new-layer\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46211348\"\u003ehttps://news.ycombinator.com/item?id=46211348\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "10 Years of Let's Encrypt Certificates",
+      "link": "https://letsencrypt.org/2025/12/09/10-years.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-09T22:02:25Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://letsencrypt.org/2025/12/09/10-years.html\"\u003ehttps://letsencrypt.org/2025/12/09/10-years.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46211346\"\u003ehttps://news.ycombinator.com/item?id=46211346\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Kent L Beck: You're Ignoring Optionality and Paying for It [audio]",
+      "link": "https://maintainable.fm/episodes/kent-l-beck-youre-ignoring-optionality-and-paying-for-it",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-09T21:58:12Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://maintainable.fm/episodes/kent-l-beck-youre-ignoring-optionality-and-paying-for-it\"\u003ehttps://maintainable.fm/episodes/kent-l-beck-youre-ignoring-optionality-and-paying-for-it\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46211311\"\u003ehttps://news.ycombinator.com/item?id=46211311\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Playing Santa Does Strange Things to a Man",
+      "link": "https://www.esquire.com/lifestyle/a69597294/santaland-bob-rutan/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-09T21:56:41Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.esquire.com/lifestyle/a69597294/santaland-bob-rutan/\"\u003ehttps://www.esquire.com/lifestyle/a69597294/santaland-bob-rutan/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46211280\"\u003ehttps://news.ycombinator.com/item?id=46211280\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "NeurIPS 2025 Top Paper Breakdown: LLMs Are Collapsing into Artificial Hivemind",
+      "link": "https://interviewready.io/blog/neurips-2025-top-paper-breakdown-llms-are-collapsing-into-an-artificial-hivemind?srsltid=AfmBOooCUvRK-C3Lzk6vD6YeURbhmTBO8X94LJ_z0EwqjkxZ0U-egNMN",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-09T21:56:40Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://interviewready.io/blog/neurips-2025-top-paper-breakdown-llms-are-collapsing-into-an-artificial-hivemind?srsltid=AfmBOooCUvRK-C3Lzk6vD6YeURbhmTBO8X94LJ_z0EwqjkxZ0U-egNMN\"\u003ehttps://interviewready.io/blog/neurips-2025-top-paper-breakdown-llms-are-collapsing-into-an-artificial-hivemind?srsltid=AfmBOooCUvRK-C3Lzk6vD6YeURbhmTBO8X94LJ_z0EwqjkxZ0U-egNMN\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46211279\"\u003ehttps://news.ycombinator.com/item?id=46211279\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "RAM Is Ruining Everything",
+      "link": "https://www.theverge.com/report/839506/ram-shortage-price-increases-pc-gaming-smartphones",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-09T21:55:53Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.theverge.com/report/839506/ram-shortage-price-increases-pc-gaming-smartphones\"\u003ehttps://www.theverge.com/report/839506/ram-shortage-price-increases-pc-gaming-smartphones\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46211273\"\u003ehttps://news.ycombinator.com/item?id=46211273\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "No more tokens Locking down NPM Publish Workflows",
+      "link": "https://www.zachleat.com/web/npm-security/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-09T21:55:09Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.zachleat.com/web/npm-security/\"\u003ehttps://www.zachleat.com/web/npm-security/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46211265\"\u003ehttps://news.ycombinator.com/item?id=46211265\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Taxonomy of Procrastination (2023)",
+      "link": "https://dynomight.net/procrastination/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-09T21:52:22Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://dynomight.net/procrastination/\"\u003ehttps://dynomight.net/procrastination/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46211230\"\u003ehttps://news.ycombinator.com/item?id=46211230\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Oral History of Jensen Huang – Computer History Museum [video]",
+      "link": "https://www.youtube.com/watch?v=0c8i4T9BSqY",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-09T21:50:55Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.youtube.com/watch?v=0c8i4T9BSqY\"\u003ehttps://www.youtube.com/watch?v=0c8i4T9BSqY\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46211212\"\u003ehttps://news.ycombinator.com/item?id=46211212\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Elon Musk Has Made X a Threat to Democracy and His War on the EU Proves It",
+      "link": "https://bylinetimes.com/2025/12/08/elon-musk-has-made-x-a-threat-to-democracy-and-his-war-on-the-eu-proves-it/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-09T21:49:25Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://bylinetimes.com/2025/12/08/elon-musk-has-made-x-a-threat-to-democracy-and-his-war-on-the-eu-proves-it/\"\u003ehttps://bylinetimes.com/2025/12/08/elon-musk-has-made-x-a-threat-to-democracy-and-his-war-on-the-eu-proves-it/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46211190\"\u003ehttps://news.ycombinator.com/item?id=46211190\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 6\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "AI-Powered Investor Database for Fundraising – Free Forever",
+      "link": "https://www.findrunway.com/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-09T21:45:10Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.findrunway.com/\"\u003ehttps://www.findrunway.com/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46211134\"\u003ehttps://news.ycombinator.com/item?id=46211134\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "I tried making Athletic Greens for Asians",
+      "link": "https://datastream.substack.com/p/when-i-tried-to-make-athletic-greens",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-09T21:42:31Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://datastream.substack.com/p/when-i-tried-to-make-athletic-greens\"\u003ehttps://datastream.substack.com/p/when-i-tried-to-make-athletic-greens\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46211104\"\u003ehttps://news.ycombinator.com/item?id=46211104\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Ads are showing up on Google's AI Mode now",
+      "link": "https://sherwood.news/tech/ads-are-showing-up-on-googles-ai-mode-now/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-09T21:42:28Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://sherwood.news/tech/ads-are-showing-up-on-googles-ai-mode-now/\"\u003ehttps://sherwood.news/tech/ads-are-showing-up-on-googles-ai-mode-now/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46211102\"\u003ehttps://news.ycombinator.com/item?id=46211102\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Peer-reviewed preprints and the Publish-Review-Curate model",
+      "link": "https://www.coalition-s.org/blog/peer-reviewed-preprints-and-the-publish-review-curate-model/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-09T21:42:03Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.coalition-s.org/blog/peer-reviewed-preprints-and-the-publish-review-curate-model/\"\u003ehttps://www.coalition-s.org/blog/peer-reviewed-preprints-and-the-publish-review-curate-model/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46211099\"\u003ehttps://news.ycombinator.com/item?id=46211099\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: An app that allows you to draw over everything",
+      "link": "https://iscribby.com/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-09T21:41:19Z",
+      "description": "\n\u003cp\u003eA neat little application that allows you to draw on your screen. Use it from anywhere you want - be it your desktop, while browsing internet or even while in a video game.\u003cp\u003eQuick preview: \u003ca href=\"https://streamable.com/j7aklk\" rel=\"nofollow\"\u003ehttps://streamable.com/j7aklk\u003c/a\u003e\u003cp\u003eAny feedback much appreciated!\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46211091\"\u003ehttps://news.ycombinator.com/item?id=46211091\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "A glimpse into V8 development for RISC-V",
+      "link": "https://riseproject.dev/2025/12/09/a-glimpse-into-v8-development-for-risc-v/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-09T21:39:27Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://riseproject.dev/2025/12/09/a-glimpse-into-v8-development-for-risc-v/\"\u003ehttps://riseproject.dev/2025/12/09/a-glimpse-into-v8-development-for-risc-v/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46211072\"\u003ehttps://news.ycombinator.com/item?id=46211072\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Mastodon on EU Digital Sovereignty",
+      "link": "https://mastodon.social/@Mastodon/115689198997943088",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-09T21:38:53Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://mastodon.social/@Mastodon/115689198997943088\"\u003ehttps://mastodon.social/@Mastodon/115689198997943088\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46211061\"\u003ehttps://news.ycombinator.com/item?id=46211061\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 4\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "'Ready-made' T-cell gene therapy tackles 'incurable' T-Cell leukaemia",
+      "link": "https://www.gosh.nhs.uk/news/ready-made-t-cell-gene-therapy-tackles-incurable-t-cell-leukaemia/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-09T21:36:47Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.gosh.nhs.uk/news/ready-made-t-cell-gene-therapy-tackles-incurable-t-cell-leukaemia/\"\u003ehttps://www.gosh.nhs.uk/news/ready-made-t-cell-gene-therapy-tackles-incurable-t-cell-leukaemia/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46211031\"\u003ehttps://news.ycombinator.com/item?id=46211031\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Canada's US Travel Boycott Is Backfiring in the Most Unexpected Way at US Border",
+      "link": "https://www.thetravel.com/canadas-us-travel-boycott-is-backfiring-canadians-face-more-detailed-border-controls/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-09T21:34:06Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.thetravel.com/canadas-us-travel-boycott-is-backfiring-canadians-face-more-detailed-border-controls/\"\u003ehttps://www.thetravel.com/canadas-us-travel-boycott-is-backfiring-canadians-face-more-detailed-border-controls/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46210994\"\u003ehttps://news.ycombinator.com/item?id=46210994\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 6\u003c/p\u003e\n\u003cp\u003e# Comments: 6\u003c/p\u003e\n"
+    },
+    {
+      "title": "From adoption to impact: Putting the DORA AI Capabilities Model to work",
+      "link": "https://cloud.google.com/blog/products/ai-machine-learning/from-adoption-to-impact-putting-the-dora-ai-capabilities-model-to-work/",
+      "source": "AI \u0026 Machine Learning",
+      "category": "tech",
+      "publishedAt": "2025-12-09T17:00:00Z",
+      "description": "\u003cdiv class=\"block-paragraph_advanced\"\u003e\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eThe \u003c/span\u003e\u003ca href=\"https://cloud.google.com/blog/products/ai-machine-learning/announcing-the-2025-dora-report\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003e2025 State of AI-assisted Software Development report\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e revealed a critical truth: AI is an amplifier. It magnifies the strengths of high-performing organizations and the dysfunctions of struggling ones.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eWhile AI adoption is now near-universal, with 90% of developers using it in their daily workflows, success is not guaranteed. Our cluster analysis of nearly 5,000 technology professionals reveals significant variation in team performance: Not everyone experiences the same outcomes from adopting AI. \u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eFrom this disparity, we can conclude that how they are using AI is a critical factor. We wanted to understand the particular capabilities and conditions that enable teams to achieve positive outcomes, leading us to develop the \u003c/span\u003e\u003ca href=\"https://cloud.google.com/resources/content/2025-dora-ai-capabilities-model-report\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eDORA AI Capabilities Model report\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e. \u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eThis companion guide to the 2025 DORA Report is designed to help you navigate our new reality. It provides actionable strategies, implementation tactics, and measurement frameworks to help technology leaders build an environment where AI thrives.\u003c/span\u003e\u003c/p\u003e\n\u003ch3\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eSeven capabilities that amplify success\u003c/strong\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eSuccessfully using AI requires cultivating your technical and cultural environment. From the same set of respondents who participated in the 2025 DORA survey, we identified seven foundational capabilities that are proven to amplify the positive impact of AI on organizational performance:\u003c/span\u003e\u003c/p\u003e\n\u003col\u003e\n\u003cli role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eClear and communicated AI stance\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e: Ambiguity creates risk. A clear policy provides the psychological safety developers need to experiment effectively.\u003c/span\u003e\u003c/li\u003e\n\u003cli role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eHealthy data ecosystems\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e: AI is only as good as the data it learns from. Investing in high-quality, accessible, and unified internal data significantly amplifies AI's benefits.\u003c/span\u003e\u003c/li\u003e\n\u003cli role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eAI-accessible internal data\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e: This involves \"context engineering,\" moving beyond simple prompts to securely connect AI tools to your internal documentation and codebases.\u003c/span\u003e\u003c/li\u003e\n\u003cli role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eStrong version control practices\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e: As AI increases the volume and velocity of code generation, version control becomes your critical safety net. Frequent commits and robust rollback capabilities are essential for maintaining stability in an AI-assisted world.\u003c/span\u003e\u003c/li\u003e\n\u003cli role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eWorking in small batches\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e: AI can easily generate massive blocks of code, which are hard to review and test. Enforcing the discipline of small batches counteracts this risk, ensuring that speed translates to product performance rather than instability.\u003c/span\u003e\u003c/li\u003e\n\u003cli role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eUser-centric focus\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e: Speed is irrelevant if you are moving in the wrong direction. Adopting AI tools can actually harm teams that lack a user-centric focus. Keeping user needs as your North Star is essential for guiding AI-assisted development.\u003c/span\u003e\u003c/li\u003e\n\u003cli\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eQuality internal platforms\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e: A platform provides the automated, secure \"paved roads\" that allow AI benefits to scale across the organization. It prevents individual productivity gains from being lost to downstream bottlenecks.\u003c/span\u003e\u003c/li\u003e\n\u003c/ol\u003e\u003c/div\u003e\n\u003cdiv class=\"block-image_full_width\"\u003e\n\n\n\n\n\n\n  \n    \u003cdiv class=\"article-module h-c-page\"\u003e\n      \u003cdiv class=\"h-c-grid\"\u003e\n  \n\n    \u003cfigure class=\"article-image--large\n      \n      \n        h-c-grid__col\n        h-c-grid__col--6 h-c-grid__col--offset-3\n        \n        \n      \"\n      \u003e\n\n      \n      \n        \n        \u003cimg\n            src=\"https://storage.googleapis.com/gweb-cloudblog-publish/images/dora-ai-capabilities-model.max-1000x1000.jpg\"\n        \n          alt=\"dora-ai-capabilities-model\"\u003e\n        \n        \u003c/a\u003e\n      \n        \u003cfigcaption class=\"article-image__caption \"\u003e\u003cp data-block-key=\"y4u85\"\u003eThe DORA AI Capabilities Model shows which capabilities amplify the effect of AI adoption on\u003c/p\u003e\u003cp data-block-key=\"7k909\"\u003especific outcomes\u003c/p\u003e\u003c/figcaption\u003e\n      \n    \u003c/figure\u003e\n\n  \n      \u003c/div\u003e\n    \u003c/div\u003e\n  \n\n\n\n\n\u003c/div\u003e\n\u003cdiv class=\"block-paragraph_advanced\"\u003e\u003ch3\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eWhere to start: Assessing your team\u003c/strong\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eEvery organization starts their AI journey differently. To help you prioritize, this report introduces seven distinct team archetypes derived from our cluster analysis. These profiles range from \"harmonious high-achievers,\" who excel in both performance and well-being, to teams facing \"foundational challenges\" or those stuck in a \"legacy bottleneck,\" where unstable systems undermine morale.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eIdentifying the profile that best matches your team can help pinpoint the most impactful interventions. For example, a \"high impact, low cadence\" team might prioritize automation to improve stability, while a team \"constrained by process\" might focus on reducing friction through a better AI stance.\u003c/span\u003e\u003c/p\u003e\n\u003ch3\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eDigging deeper with Value Stream Mapping\u003c/strong\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eOnce you understand your team's profile, how do you direct your efforts? The report includes a step-by-step facilitation guide for running a Value Stream Mapping (VSM) exercise.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eVSM acts as an AI force multiplier. By visualizing your flow from idea to customer, you can identify where work waits and where friction exists. This ensures that the efficiency gains from AI aren't just creating local optimizations that pile up work downstream, but are instead channeled into solving system-level constraints.\u003c/span\u003e\u003c/p\u003e\n\u003ch3\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eGet better at getting better\u003c/strong\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eAI adoption is an organizational transformation. The greatest returns come not from the tools themselves, but from investing in the foundational systems that enable them.\u003c/span\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003ca href=\"https://cloud.google.com/resources/content/2025-dora-ai-capabilities-model-report\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eDownload the full report\u003c/span\u003e\u003c/a\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eJoin the \u003c/span\u003e\u003ca href=\"https://dora.community/\" rel=\"noopener\" target=\"_blank\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eDORA community\u003c/span\u003e\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\u003c/div\u003e"
+    },
+    {
+      "title": "AlphaEvolve on Google Cloud: AI for agentic discovery and optimization",
+      "link": "https://cloud.google.com/blog/products/ai-machine-learning/alphaevolve-on-google-cloud/",
+      "source": "AI \u0026 Machine Learning",
+      "category": "tech",
+      "publishedAt": "2025-12-09T17:00:00Z",
+      "description": "\u003cdiv class=\"block-paragraph_advanced\"\u003e\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eInnovators in science and engineering face a common barrier: the search space for solving complex problems — like designing a new chip or discovering a drug molecule — is often too vast for standard brute-force methods to explore effectively. \u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eTo help you overcome this challenge, we are releasing \u003c/span\u003e\u003ca href=\"https://deepmind.google/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/\" rel=\"noopener\" target=\"_blank\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eAlphaEvolve\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e, a Gemini-powered coding agent for designing advanced algorithms, to Google Cloud, in private preview..\u003c/span\u003e\u003c/p\u003e\n\u003ch3\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eThe challenge for innovators in science \u003c/strong\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eMany of the most challenging and potentially valuable problems  in the world are related to optimization. You might be trying to minimize latency in a data center, maximize the stability of a protein, or find the most efficient route for a logistics fleet.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eAlphaEvolve pairs the creative problem-solving capabilities of our Gemini models with automated evaluators that verify answers, along with an evolutionary framework to improve upon the most promising ideas.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eIt then tests these changes against a \"ground truth\" evaluator that you define. If the new code performs better, it becomes the parent for the next generation. This creates a feedback loop that allows the system to learn and improve over time, eventually discovering algorithms that are significantly more efficient than the ones you started with.\u003c/span\u003e\u003c/p\u003e\n\u003ch3\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eHow it works:\u003c/strong\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eHere is how Alphaevolve discovers and improves upon existing algorithms in more detail:\u003c/span\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eInput: \u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eYou define a problem specification, evaluation logic (to measure how well a proposed solution works), and a seed initialization program. The seed is a compile-ready piece of code that is the algorithm that you want to optimize. To start, it solves the problem, even if sub-optimally.\u003c/span\u003e\u003c/li\u003e\n\u003cli role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eMutation\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e: Gemini models (Flash for speed, Pro for depth) process the context and generate mutated, optimized versions of the code that are added to the “population space.”\u003c/span\u003e\u003c/li\u003e\n\u003cli role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eEvolution\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e: Evolution algorithms select which of the various code mutations from the population space to combine and further mutate to prioritize as the starting point for the next evolution of mutations.  \u003c/span\u003e\u003c/li\u003e\n\u003cli\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eLoop: \u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eThe results from the Evaluation scores are then used by the ensemble of LLMs to generate the next set of improved solutions. The cycle repeats recursively, evolving the codebase from the initial seeds to state-of-the-art algorithms.\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eProven impact at Google\u003c/strong\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eAt Google, we have already used this technology to tackle some of our own hardest engineering problems.\u003c/span\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eData center efficiency:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e AlphaEvolve found a better way to schedule tasks in our data centers, continuously recovering on average 0.7% of our global compute resources.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eGemini training:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e AlphaEvolve sped up a vital kernel in Gemini’s architecture by 23%, leading to a 1% reduction in Gemini's training time.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eHardware design:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e It accelerated the design of our next-generation TPUs by discovering more efficient arithmetic circuits.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eTo learn more about impact, read \u003c/span\u003e\u003ca href=\"https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/AlphaEvolve.pdf\" rel=\"noopener\" target=\"_blank\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eour paper\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e.\u003c/span\u003e\u003c/p\u003e\n\u003ch3\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eHow AlphaEvolve can help businesses across industries \u003c/strong\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eYou can apply this same engine to your own proprietary data and unique algorithmic challenges. Here are a few ways improved algorithms can potentially help different industries:\u003c/span\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eBiotech and pharma:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e Optimize the algorithms used for molecular simulation, which helps shorten the timelines for drug discovery and increases the success rate of new therapeutics.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eLogistics and supply chain:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e Discover superior heuristics for routing and inventory management, helping you reduce fuel costs and build more resilient delivery networks.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eFinancial services:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e Evolve algorithmic risk models to manage complex portfolios more effectively.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eEnergy:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e Optimize load balancing on smart grids to improve stability and better integrate renewable energy sources.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eGet started on Google Cloud\u003c/strong\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eAlphaEvolve is made to help with complex optimization problems that you can define in code and objectively measure. The AlphaEvolve Service API is now available through an Early access program with Google Cloud. If you have one of these problems and are interested in participating in the Early Access Program, please reach out to your Google Cloud \u003cspan\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eRepresentative\u003c/span\u003e\u003c/span\u003e.\u003c/span\u003e\u003c/p\u003e\u003c/div\u003e"
+    }
+  ],
+  "generatedAt": "2025-12-10T07:10:01.360140202+09:00"
+}
