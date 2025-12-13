@@ -1,0 +1,258 @@
+{
+  "date": "2025-12-14",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2025년 12월 13일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** OpenAI가 코딩 및 작업 수행 능력을 강화한 '스킬'을 조용히 배포하기 시작했으며, 구글은 AI 전력 수요를 감당하기 위해 탄소 포집 기술을 적용한 화석 연료 데이터센터라는 역설적인 카드를 꺼내 들었습니다.\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### OpenAI, 조용히 ‘스킬(Skills)’ 도입: 챗봇을 넘어 에이전트로\nOpenAI가 ChatGPT와 Codex CLI 환경에서 사용할 수 있는 '스킬(Skills)' 기능을 조용히 도입했습니다. 이는 단순한 텍스트 생성을 넘어, AI가 특정 도구를 사용하거나 복잡한 워크플로우를 수행할 수 있도록 하는 '에이전트(Agent)'화의 중요한 단계로 보입니다. 개발자들은 이제 CLI를 통해 AI가 직접 코드를 실행하고 수정하는 더 강력한 상호작용을 경험할 수 있게 되었습니다.\n\u003e **Key Point:** AI가 단순 대화를 넘어 실제 도구와 연동되는 '실행 능력'을 갖추기 시작했습니다. [^10]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. Id Software, 마이크로소프트 내 첫 '포괄적(Wall-to-Wall)' 노조 결성\n- **What:** '둠(DOOM)'과 '퀘이크'의 개발사 Id Software의 개발자들이 제니맥스(ZeniMax)와 마이크로소프트 산하 최초로 전 직군을 포함하는 노조를 결성했습니다.\n- **Why:** 게임 업계의 고질적인 크런치 모드와 고용 불안정성, 그리고 거대 테크 기업 내에서의 목소리를 내기 위함입니다.\n- **Impact:** 테스터(QA)뿐만 아니라 프로그래머, 아티스트 등 핵심 개발 직군이 모두 포함된 사례로, 향후 북미 테크 및 게임 업계의 노동 운동에 큰 파장을 미칠 전망입니다. [^5]\n\n### 2. 보안의 대명사 'Tor 프로젝트', C언어 버리고 Rust로 전면 전환 중\n- **What:** 익명 네트워크 Tor 프로젝트가 기존 C언어 기반의 코드베이스를 메모리 안전성이 보장되는 Rust 언어로 재작성하고 있습니다.\n- **Why:** C언어의 고질적인 메모리 취약점 문제를 해결하고, 프로젝트의 장기적인 보안성과 유지보수성을 확보하기 위함입니다.\n- **Impact:** 보안이 핵심인 인프라 프로젝트들이 Rust를 채택하는 흐름이 가속화되고 있음을 보여주는 상징적인 사례입니다. [^6]\n\n### 3. 구글의 역설: \"배출가스 없는\" 화석 연료 데이터센터 계획\n- **What:** 구글이 급증하는 AI 전력 수요를 충당하기 위해, 탄소 포집 기술을 적용한 화석 연료 기반 데이터센터 구축을 계획하고 있습니다.\n- **Why:** 재생 에너지만으로는 AI가 요구하는 막대한 전력을 안정적으로 공급하기 어렵다는 현실적인 판단 때문입니다.\n- **Impact:** '넷제로' 목표와 현실적인 에너지 수급 사이의 딜레마를 보여주며, 빅테크 기업들의 에너지 전략 수정이 불가피함을 시사합니다. [^16]\n\n### 4. 중국이 발명한 완전히 새로운 혁신 방식\n- **What:** 중국이 기존 서구권의 혁신 모델과는 다른, 제조 생태계와 공급망의 속도를 극대화하는 독자적인 혁신 방식을 구축했다는 분석입니다.\n- **Why:** 단순 모방을 넘어, 아이디어를 제품화하는 속도(Velocity)와 규모의 경제를 결합하여 시장을 장악하고 있습니다.\n- **Impact:** 글로벌 기술 패권 경쟁에서 하드웨어 및 제조 혁신의 중요성이 다시금 부각되고 있습니다. [^24]\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **agentjson** | Rust로 제작된 JSON 파서로, LLM이 생성한 '깨진 JSON'을 자동으로 복구하여 파싱해주는 유용한 도구입니다. [^7] |\n| **Tool** | **Dashfrog** | Grafana 대시보드를 외부에 쉽게 공유할 수 있도록 해주는 오픈소스 도구입니다. [^30] |\n| **Tool** | **GitDB** | 오픈소스 프로젝트를 발견하고 분석할 수 있는 새로운 플랫폼입니다. [^18] |\n| **Tool** | **Spaw** | 텍스트 프롬프트만으로 고품질의 비트와 음악을 생성해주는 AI 플랫폼입니다. [^22] |\n| **Project** | **Resume CMS** | Next.js와 Puppeteer를 활용해 이력서를 'Headless CMS'처럼 관리하고 PDF로 생성하는 프로젝트입니다. [^25] |\n| **API** | **REVE EEG** | 뇌파(EEG) 파운데이션 모델을 활용할 수 있는 무료 API가 공개되었습니다. [^27] |\n| **App** | **Retreat** | 영수증과 제품 보증 기간(Warranty)을 추적하고 관리해주는 소규모 도구입니다. [^28] |\n| **Resource** | **GNU Unifont** | 전 세계의 모든 문자를 하나의 폰트에 담는 것을 목표로 하는 GNU 프로젝트의 업데이트 소식입니다. [^3] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n\n#### 💻 개발 \u0026 인프라 \u0026 커리어\n* **GitHub in 2025**: 2025년의 GitHub와 개발자 생태계가 어떻게 변화할지에 대한 RedMonk의 전망 보고서입니다. [^31]\n* **Velocity Coding**: 개발 속도를 높이면서도 품질을 유지하는 코딩 방법론에 대한 에세이입니다. [^26]\n* **How to Avoid IaC Drift**: 테라폼 등 IaC(Infrastructure as Code) 환경에서 설정과 실제 인프라가 달라지는 '드리프트' 현상을 방지하는 가이드입니다. [^29]\n* **21 Lessons from 14 Years at Google**: 구글에서 14년간 근무한 엔지니어가 전하는 커리어와 조직 생활에 대한 21가지 조언입니다. [^19]\n* **ChromeOS LTS Update**: 크롬OS의 장기 지원(LTS) 채널에 대한 최신 보안 및 기능 업데이트가 발표되었습니다. [^11]\n\n#### 🔬 과학 \u0026 바이오 \u0026 미래기술\n* **CRISPR 균류**: 유전자 가위 기술로 균류를 편집하여 고기 맛이 나고 단백질이 풍부한 지속 가능한 식량을 개발했습니다. [^1]\n* **쥐가 DOOM을 플레이하다**: 신경 인터페이스를 통해 쥐가 고전 게임 둠(DOOM)을 플레이하게 만든 실험이 화제입니다. [^8]\n* **포탈은 중력을 휘어야 한다**: 게임 '포탈'의 물리학을 현실 물리학(중력 렌즈 효과 등)에 대입하여 분석한 흥미로운 글입니다. [^2]\n* **자동차 키 vs 달 착륙선**: 현대의 자동차 스마트키가 아폴로 달 착륙선보다 더 높은 연산 능력을 가졌는지 분석한 팟캐스트입니다. [^23]\n\n#### 🛡️ 프라이버시 \u0026 사회\n* **스마트 TV 프라이버시 가이드**: TV의 광고 추적을 막고 개인정보를 보호하기 위한 설정 및 기기 선택 가이드입니다. [^9]\n* **DuckDuckGo의 놀라운 사실들**: 검색 엔진 DuckDuckGo에 대해 잘 알려지지 않은 기능과 프라이버시 철학을 소개합니다. [^12]\n* **Firefox ResistFingerprinting**: 파이어폭스 브라우저의 강력한 '핑거프린팅(지문 채취) 방지' 기능에 대한 기술 문서입니다. [^15]\n* **미 의회 재정 책임성 강화 제안**: 의회의 무분별한 재정 지출을 감시하고 책임을 묻기 위한 시민 단체의 제안입니다. [^17]\n* **Fediverse의 힘**: 탈중앙화 소셜 네트워크(Fediverse)가 실제로 어떻게 작동하고 어떤 잠재력을 가졌는지 보여주는 글입니다. [^20]\n\n#### 🎮 게임 \u0026 레트로 \u0026 문화\n* **코랄름(Coral Realm) 철도**: 마인크래프트 혹은 디지털 아트 프로젝트로 추정되는 거대한 산호 왕국 철도 건설 프로젝트입니다. [^4]\n* **HyperCard on Macintosh**: 초기 매킨토시의 혁신적인 하이퍼미디어 저작 도구였던 '하이퍼카드'를 웹에서 체험하고 회고합니다. [^13]\n* **We Loved Sierra Games**: 킹스 퀘스트 등 80-90년대를 풍미한 시에라 엔터테인먼트의 게임들을 추억하는 다큐멘터리 영상입니다. [^14]\n* **금주법이 발명가들을 망쳤다**: 미국의 금주법 시대가 어떻게 발명가들의 창의성을 억압했는지 역사적 관점에서 조명합니다. [^21]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘 뉴스는 '**AI의 물리적 확장**'과 '**개발자 생태계의 변화**'로 요약됩니다. OpenAI는 챗봇을 넘어 도구를 쓰는 에이전트로 진화하고 있고, 구글은 AI를 돌리기 위해 화석 연료까지 다시 꺼내 들었습니다. 한편, Id Software의 노조 결성과 Tor의 Rust 전환은 소프트웨어 산업이 노동권과 보안성 측면에서 성숙해지고 있음을 보여줍니다. 쥐가 둠을 플레이하는 세상, 기술의 발전 속도가 때로는 기이하게 느껴지기도 하네요.\n\n---\n\n[^1]: CRISPR 균류: 단백질이 풍부하고 지속 가능하며 고기 같은 맛 - https://news.hada.io/topic?id=25053\n[^2]: 포탈은 중력을 휘어야 한다. - https://news.hada.io/topic?id=25052\n[^3]: GNU Unifont - https://news.hada.io/topic?id=25051\n[^4]: 코랄름 철도 - https://news.hada.io/topic?id=25050\n[^5]: Id Software 개발자들이 ‘벽에서 벽까지(wall-to-wall)’ 노조를 결성 - https://news.hada.io/topic?id=25049\n[^6]: Tor 프로젝트가 Rust로 전환 중 - https://news.hada.io/topic?id=25048\n[^7]: Show GN: agentjson - Rust로 만든, LLM의 '깨진 JSON' 을 알아서 고쳐주는 JSON 파서 - https://news.hada.io/topic?id=25047\n[^8]: 쥐가 DOOM을 플레이하다 - https://news.hada.io/topic?id=25046\n[^9]: 스마트 TV에 질렸다면? 광고와 추적에서 벗어나는 최선의 선택지 - https://news.hada.io/topic?id=25045\n[^10]: OpenAI가 조용히 ‘스킬(Skills)’을 도입, ChatGPT와 Codex CLI에서 사용 가능 - https://news.hada.io/topic?id=25044\n[^11]: Long Term Support Channel Update for ChromeOS - http://chromereleases.googleblog.com/2025/12/long-term-support-channel-update-for.html\n[^12]: Some surprising things about DuckDuckGo you probably don't know - https://gabrielweinberg.com/p/some-surprising-things-about-duckduckgo\n[^13]: HyperCard on the Macintosh - https://stonetools.ghost.io/hypercard-mac/\n[^14]: We Loved Sierra Games (2015) [video] - https://www.youtube.com/watch?v=wua96SI6SBE\u0026list=PLPAVYgFfeddJzax1X4VUj69Z1Vs4PqGlA\u0026index=1\n[^15]: Firefox ResistFingerprinting - https://support.mozilla.org/en-US/kb/resist-fingerprinting\n[^16]: Google plans to power a data center with fossil fuels with almost no emissions - https://theconversation.com/google-plans-to-power-a-new-data-center-with-fossil-fuels-yet-release-almost-no-emissions-heres-how-its-carbon-capture-tech-works-270425\n[^17]: A plain-language proposal to enforce fiscal accountability in Congress - https://add28th.org\n[^18]: Show HN: Open-Source Project Discovery and Analytics - https://gitdb.net\n[^19]: 21 Lessons from 14 Years at Google - https://addyo.substack.com/p/21-lessons-from-14-years-at-google\n[^20]: Now witness the power of this operational Fediverse – Terence Eden's Blog - https://shkspr.mobi/blog/2025/11/now-witness-the-power-of-this-fully-operational-fediverse/\n[^21]: Prohibition tossed a wet blanket on America's inventors - https://www.atlasobscura.com/articles/things-invented-in-bars\n[^22]: Spaw – AI music platform for making banging beats with text - https://drive.google.com/file/d/1SUk7x7xSMMjne9jwDVy4w0wiOuAHGdu9/view?usp=sharing\n[^23]: Does my key fob have more computing power than the Lunar lander? - https://www.buzzsprout.com/2469780/episodes/18340142-17-does-my-key-fob-have-more-computing-power-than-the-lunar-lander\n[^24]: China has invented a whole new way to do innovation - https://www.noahpinion.blog/p/china-has-invented-a-whole-new-way\n[^25]: Show HN: I built a \"Headless CMS\" for my resume (Next.js and Puppeteer) - https://news.ycombinator.com/item?id=46258366\n[^26]: Velocity Coding - https://0thernet.substack.com/p/velocity-coding\n[^27]: Show HN: Free API for REVE EEG Foundation Model - https://web-production-73111.up.railway.app/docs\n[^28]: Show HN: I built a small tool to track receipts and warranty dates - https://www.retreat-app.tech/\n[^29]: How to Avoid IaC Drift - https://newsletter.masterpoint.io/p/how-to-avoid-iac-drift\n[^30]: Show HN: A Grafana you can share with anyone - https://github.com/towlabs/dashfrog\n[^31]: GitHub in 2025 - https://redmonk.com/sogrady/2025/11/07/github-2025/\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **CRISPR 균류: 단백질이 풍부하고 지속 가능하며 고기 같은 맛**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25053\n\n2. **포탈은 중력을 휘어야 한다.**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25052\n\n3. **GNU Unifont**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25051\n\n4. **코랄름 철도**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25050\n\n5. **Id Software 개발자들이 ‘벽에서 벽까지(wall-to-wall)’ 노조를 결성**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25049\n\n6. **Tor 프로젝트가 Rust로 전환 중**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25048\n\n7. **Show GN: agentjson - Rust로 만든, LLM의 '깨진 JSON' 을 알아서 고쳐주는 JSON 파서**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25047\n\n8. **쥐가 DOOM을 플레이하다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25046\n\n9. **스마트 TV에 질렸다면? 광고와 추적에서 벗어나는 최선의 선택지**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25045\n\n10. **OpenAI가 조용히 ‘스킬(Skills)’을 도입, ChatGPT와 Codex CLI에서 사용 가능**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25044\n\n11. **Long Term Support Channel Update for ChromeOS**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2025/12/long-term-support-channel-update-for.html\n\n12. **Some surprising things about DuckDuckGo you probably don't know**\n   - 출처: Hacker News\n   - 링크: https://gabrielweinberg.com/p/some-surprising-things-about-duckduckgo\n\n13. **HyperCard on the Macintosh**\n   - 출처: Hacker News\n   - 링크: https://stonetools.ghost.io/hypercard-mac/\n\n14. **We Loved Sierra Games (2015) [video]**\n   - 출처: Hacker News\n   - 링크: https://www.youtube.com/watch?v=wua96SI6SBE\u0026list=PLPAVYgFfeddJzax1X4VUj69Z1Vs4PqGlA\u0026index=1\n\n15. **Firefox ResistFingerprinting**\n   - 출처: Hacker News\n   - 링크: https://support.mozilla.org/en-US/kb/resist-fingerprinting\n\n16. **Google plans to power a data center with fossil fuels with almost no emissions**\n   - 출처: Hacker News\n   - 링크: https://theconversation.com/google-plans-to-power-a-new-data-center-with-fossil-fuels-yet-release-almost-no-emissions-heres-how-its-carbon-capture-tech-works-270425\n\n17. **A plain-language proposal to enforce fiscal accountability in Congress**\n   - 출처: Hacker News\n   - 링크: https://add28th.org\n\n18. **Show HN: Open-Source Project Discovery and Analytics**\n   - 출처: Hacker News\n   - 링크: https://gitdb.net\n\n19. **21 Lessons from 14 Years at Google**\n   - 출처: Hacker News\n   - 링크: https://addyo.substack.com/p/21-lessons-from-14-years-at-google\n\n20. **Now witness the power of this operational Fediverse – Terence Eden's Blog**\n   - 출처: Hacker News\n   - 링크: https://shkspr.mobi/blog/2025/11/now-witness-the-power-of-this-fully-operational-fediverse/\n\n21. **Prohibition tossed a wet blanket on America's inventors**\n   - 출처: Hacker News\n   - 링크: https://www.atlasobscura.com/articles/things-invented-in-bars\n\n22. **Spaw – AI music platform for making banging beats with text**\n   - 출처: Hacker News\n   - 링크: https://drive.google.com/file/d/1SUk7x7xSMMjne9jwDVy4w0wiOuAHGdu9/view?usp=sharing\n\n23. **Does my key fob have more computing power than the Lunar lander?**\n   - 출처: Hacker News\n   - 링크: https://www.buzzsprout.com/2469780/episodes/18340142-17-does-my-key-fob-have-more-computing-power-than-the-lunar-lander\n\n24. **China has invented a whole new way to do innovation**\n   - 출처: Hacker News\n   - 링크: https://www.noahpinion.blog/p/china-has-invented-a-whole-new-way\n\n25. **Show HN: I built a \"Headless CMS\" for my resume (Next.js and Puppeteer)**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=46258366\n\n26. **Velocity Coding**\n   - 출처: Hacker News\n   - 링크: https://0thernet.substack.com/p/velocity-coding\n\n27. **Show HN: Free API for REVE EEG Foundation Model**\n   - 출처: Hacker News\n   - 링크: https://web-production-73111.up.railway.app/docs\n\n28. **Show HN: I built a small tool to track receipts and warranty dates**\n   - 출처: Hacker News\n   - 링크: https://www.retreat-app.tech/\n\n29. **How to Avoid IaC Drift**\n   - 출처: Hacker News\n   - 링크: https://newsletter.masterpoint.io/p/how-to-avoid-iac-drift\n\n30. **Show HN: A Grafana you can share with anyone**\n   - 출처: Hacker News\n   - 링크: https://github.com/towlabs/dashfrog\n\n31. **GitHub in 2025**\n   - 출처: Hacker News\n   - 링크: https://redmonk.com/sogrady/2025/11/07/github-2025/\n\n\n",
+  "articles": [
+    {
+      "title": "CRISPR 균류: 단백질이 풍부하고 지속 가능하며 고기 같은 맛",
+      "link": "https://news.hada.io/topic?id=25053",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-14T05:32:52+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eCRISPR 유전자 편집 기술\u003c/strong\u003e을 이용해 기존보다 효율적이고 영양가 높으며 지속 가능한 새로운 균주가 개발됨\u003c/li\u003e\n\u003cli\u003e이 균은 \u003cstrong\u003eFusarium venenatum\u003c/strong\u003e으로, 고기와 유사한 맛과 질감을 지녀 여러 나라에서 식품용으로 승인된 종임\u003c/li\u003e\n\u003cli\u003e연구진은 \u003cstrong\u003e키틴 합성효소 유전...\u003c/p\u003e"
+    },
+    {
+      "title": "포탈은 중력을 휘어야 한다.",
+      "link": "https://news.hada.io/topic?id=25052",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-14T04:47:39+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e순진한(naive) 중력 모델의 문제점\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e포털이 있어도 중력은 항상 “아래로”만 향한다고 가정함 (0:23).\u003c/li\u003e\n\u003cli\u003e에너지 보존 법칙을 위반해서 영구기관(무한히 에너지 뽑기)이 가능해짐 (0:47).\u003c/li\u003e\n\u003cli\u003e“포털 동작은 표면 모양에 의존하지 않는다”는 포털 공리를 깨뜨림 (3:13).\u003c/li\u003e\n\u003c/u"
+    },
+    {
+      "title": "GNU Unifont",
+      "link": "https://news.hada.io/topic?id=25051",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-14T04:41:42+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e전 세계 유니코드 문자에 대한 \u003cstrong\u003e글리프(문자 도형)\u003c/strong\u003e 를 포함한 자유 폰트로, \u003cstrong\u003eGNU 프로젝트\u003c/strong\u003e의 일부로 유지되는 공개 폰트임\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eBMP(기본 다국어 평면)\u003c/strong\u003e 전체 65,536 코드포인트를 지원하며, \u003cstrong\u003eSMP(보조 다국어 평면)\u003c/strong\u003e 및 \u003cstrong\u003eCSUR(Co...\u003c/p\u003e"
+    },
+    {
+      "title": "코랄름 철도",
+      "link": "https://news.hada.io/topic?id=25050",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-14T04:38:42+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e오스트리아의 \u003cstrong\u003e슈타이어마르크주와 케른텐주를 연결하는 고속 철도 노선\u003c/strong\u003e으로, 남부 노선(Southern Line)의 핵심 구간이자 유럽 주요 인프라 프로젝트 중 하나\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e그라츠와 클라겐푸르트 간 이동 시간\u003c/strong\u003e을 기존 약 3시간에서 \u003cstrong\u003e45분으로 단축\u003c/strong\u003e하며, 코랄페...\u003c/p\u003e"
+    },
+    {
+      "title": "Id Software 개발자들이 ‘벽에서 벽까지(wall-to-wall)’ 노조를 결성",
+      "link": "https://news.hada.io/topic?id=25049",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-14T04:35:42+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eDoom\u003c/strong\u003e과 \u003cstrong\u003eQuake\u003c/strong\u003e을 개발한 id Software의 165명 직원이 \u003cstrong\u003e미국 통신노동자협회(CWA)\u003c/strong\u003e 산하로 노조 결성을 승인함\u003c/li\u003e\n\u003cli\u003e이번 노조는 \u003cstrong\u003e개발자, 아티스트, 프로그래머 등 전 직군\u003c/strong\u003e을 포함하는 ‘wall-to-wall’ 형태로, 2023년 결성된 \u003cstrong\u003e...\u003c/p\u003e"
+    },
+    {
+      "title": "Tor 프로젝트가 Rust로 전환 중",
+      "link": "https://news.hada.io/topic?id=25048",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-14T01:33:21+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eTor 네트워크의 핵심 코드\u003c/strong\u003e가 기존 C 언어에서 \u003cstrong\u003eRust 기반의 Arti\u003c/strong\u003e로 전환되고 있음\u003c/li\u003e\n\u003cli\u003e기존 C 코드에는 \u003cstrong\u003e버퍼 오버플로우, use-after-free, 메모리 손상\u003c/strong\u003e 등 취약점이 존재\u003c/li\u003e\n\u003cli\u003e새 버전 \u003cstrong\u003eArti 1.8.0\u003c/strong\u003e은 \u003cstrong\u003e회로 타임아웃 재설...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: agentjson - Rust로 만든, LLM의 '깨진 JSON' 을 알아서 고쳐주는 JSON 파서",
+      "link": "https://news.hada.io/topic?id=25047",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-14T00:37:32+09:00",
+      "description": "\u003cp\u003eLLM을 활용해서 서비스를 만들다 보면 결과물을 JSON 형식으로 받아야 할 때가 많은데, 이게 항상 깔끔하게 오질 않더라고요. 보통 마크다운 코드 블록(json ... )으로 감싸져서 오거나, 가끔은 문법이 살짝 깨진 채로 와서 파싱 에러가 나기도 하고요.\u003c/p\u003e\n\u003cp\u003e매번 이걸 정규식으로 발라내거나 예외 처리 코드 넣기가"
+    },
+    {
+      "title": "쥐가 DOOM을 플레이하다",
+      "link": "https://news.hada.io/topic?id=25046",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-14T00:33:17+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e쥐를 위한 완전한 VR 시스템\u003c/strong\u003e을 제작해, 실제 쥐가 고전 게임 DOOM을 조작하고 탐험할 수 있도록 구현\u003c/li\u003e\n\u003cli\u003e시스템은 \u003cstrong\u003e모션 트래킹 볼\u003c/strong\u003e, \u003cstrong\u003e파노라마형 헤드셋\u003c/strong\u003e, \u003cstrong\u003e입력 트리거\u003c/strong\u003e, \u003cstrong\u003e보상 회로\u003c/strong\u003e로 구성되며, 모든 하드웨어와 소프...\u003c/p\u003e"
+    },
+    {
+      "title": "스마트 TV에 질렸다면? 광고와 추적에서 벗어나는 최선의 선택지",
+      "link": "https://news.hada.io/topic?id=25045",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-13T21:33:02+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e현대의 \u003cstrong\u003e스마트 TV는 광고와 사용자 추적 기능\u003c/strong\u003e으로 가득해, 단순하고 사생활이 보호되는 ‘덤 TV’의 수요가 다시 높아지고 있음\u003c/li\u003e\n\u003cli\u003e가장 현실적인 대안은 \u003cstrong\u003e스마트 TV를 오프라인으로 전환하고 Apple TV 박스를 연결\u003c/strong\u003e하는 방식으로, 빠르고 안정적인 \u003cstrong\u003etvOS 환경...\u003c/p\u003e"
+    },
+    {
+      "title": "OpenAI가 조용히 ‘스킬(Skills)’을 도입, ChatGPT와 Codex CLI에서 사용 가능",
+      "link": "https://news.hada.io/topic?id=25044",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-13T18:32:47+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e스킬(Skill)\u003c/strong\u003e 은 마크다운 파일과 선택적 리소스로 구성된 폴더 형태로, LLM이 파일 시스템을 탐색해 기능을 수행할 수 있게 하는 구조\u003c/li\u003e\n\u003cli\u003eChatGPT의 \u003cstrong\u003eCode Interpreter\u003c/strong\u003e 환경에는 \u003ccode\u003e/home/oai/skills\u003c/code\u003e 폴더가 추가되어, 스프레드시트·DOCX·PDF 처리용 스킬이...\u003c/p\u003e"
+    },
+    {
+      "title": "Long Term Support Channel Update for ChromeOS",
+      "link": "http://chromereleases.googleblog.com/2025/12/long-term-support-channel-update-for.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2025-12-12T14:56:00-08:00",
+      "description": "A new LTS-138  version 138.0.7204.299 (Platform Version: 16295.84.0), is being rolled out for most ChromeOS devices. \u003cbr /\u003e\u003cbr /\u003eThis version includes selected security fixes including:\u003cbr /\u003e\u003cbr /\u003e\u003ca href=\"https://g-issues.chromium.org/issues/457351015\"\u003e457351015\u003c/a\u003e\u0026nbsp; High\u0026nbsp; CVE-2025-13042\u0026nbsp; Inappropriate implementation in V8.\u003cbr /\u003e\u003cbr /\u003e\u003cdiv\u003eRelease notes for LTS-138 can be found\u003ca href=\"https://support.google.com/chrome/a/answer/12239814\"\u003e here\u003c/a\u003e \u003cbr /\u003e\u003cbr /\u003e\u003c/div\u003e\u003cdiv\u003eWant to know more about Long-term Support? Click\u003ca href=\"https://support.google.com/chrome/a/answer/11333726\"\u003e here\u003c/a\u003e\u003cbr /\u003e\u003cbr /\u003eAndy Wu\u003cbr /\u003eGoogle ChromeOS\u003cspan id=\"docs-internal-guid-28efd699-7fff-93ad-2195-a899eb2e9c5f\"\u003e\u003cdiv\u003e\u003cspan face=\"Roboto, sans-serif\" style=\"font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e\u003cbr /\u003e\u003c/span\u003e\u003c/div\u003e\u003c/span\u003e\u003c/div\u003e"
+    },
+    {
+      "title": "Some surprising things about DuckDuckGo you probably don't know",
+      "link": "https://gabrielweinberg.com/p/some-surprising-things-about-duckduckgo",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-13T21:57:28Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://gabrielweinberg.com/p/some-surprising-things-about-duckduckgo\"\u003ehttps://gabrielweinberg.com/p/some-surprising-things-about-duckduckgo\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46258529\"\u003ehttps://news.ycombinator.com/item?id=46258529\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "HyperCard on the Macintosh",
+      "link": "https://stonetools.ghost.io/hypercard-mac/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-13T21:55:18Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://stonetools.ghost.io/hypercard-mac/\"\u003ehttps://stonetools.ghost.io/hypercard-mac/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46258511\"\u003ehttps://news.ycombinator.com/item?id=46258511\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "We Loved Sierra Games (2015) [video]",
+      "link": "https://www.youtube.com/watch?v=wua96SI6SBE\u0026list=PLPAVYgFfeddJzax1X4VUj69Z1Vs4PqGlA\u0026index=1",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-13T21:54:16Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.youtube.com/watch?v=wua96SI6SBE\u0026list=PLPAVYgFfeddJzax1X4VUj69Z1Vs4PqGlA\u0026index=1\"\u003ehttps://www.youtube.com/watch?v=wua96SI6SBE\u0026list=PLPAVYgFfeddJzax1X4VUj69Z1Vs4PqGlA\u0026index=1\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46258500\"\u003ehttps://news.ycombinator.com/item?id=46258500\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Firefox ResistFingerprinting",
+      "link": "https://support.mozilla.org/en-US/kb/resist-fingerprinting",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-13T21:53:10Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://support.mozilla.org/en-US/kb/resist-fingerprinting\"\u003ehttps://support.mozilla.org/en-US/kb/resist-fingerprinting\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46258490\"\u003ehttps://news.ycombinator.com/item?id=46258490\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Google plans to power a data center with fossil fuels with almost no emissions",
+      "link": "https://theconversation.com/google-plans-to-power-a-new-data-center-with-fossil-fuels-yet-release-almost-no-emissions-heres-how-its-carbon-capture-tech-works-270425",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-13T21:44:56Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://theconversation.com/google-plans-to-power-a-new-data-center-with-fossil-fuels-yet-release-almost-no-emissions-heres-how-its-carbon-capture-tech-works-270425\"\u003ehttps://theconversation.com/google-plans-to-power-a-new-data-center-with-fossil-fuels-yet-release-almost-no-emissions-heres-how-its-carbon-capture-tech-works-270425\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46258416\"\u003ehttps://news.ycombinator.com/item?id=46258416\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "A plain-language proposal to enforce fiscal accountability in Congress",
+      "link": "https://add28th.org",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-13T21:44:45Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://add28th.org\"\u003ehttps://add28th.org\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46258414\"\u003ehttps://news.ycombinator.com/item?id=46258414\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Open-Source Project Discovery and Analytics",
+      "link": "https://gitdb.net",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-13T21:43:52Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://gitdb.net\"\u003ehttps://gitdb.net\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46258408\"\u003ehttps://news.ycombinator.com/item?id=46258408\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "21 Lessons from 14 Years at Google",
+      "link": "https://addyo.substack.com/p/21-lessons-from-14-years-at-google",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-13T21:43:38Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://addyo.substack.com/p/21-lessons-from-14-years-at-google\"\u003ehttps://addyo.substack.com/p/21-lessons-from-14-years-at-google\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46258405\"\u003ehttps://news.ycombinator.com/item?id=46258405\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Now witness the power of this operational Fediverse – Terence Eden's Blog",
+      "link": "https://shkspr.mobi/blog/2025/11/now-witness-the-power-of-this-fully-operational-fediverse/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-13T21:42:14Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://shkspr.mobi/blog/2025/11/now-witness-the-power-of-this-fully-operational-fediverse/\"\u003ehttps://shkspr.mobi/blog/2025/11/now-witness-the-power-of-this-fully-operational-fediverse/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46258393\"\u003ehttps://news.ycombinator.com/item?id=46258393\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Prohibition tossed a wet blanket on America's inventors",
+      "link": "https://www.atlasobscura.com/articles/things-invented-in-bars",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-13T21:42:02Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.atlasobscura.com/articles/things-invented-in-bars\"\u003ehttps://www.atlasobscura.com/articles/things-invented-in-bars\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46258390\"\u003ehttps://news.ycombinator.com/item?id=46258390\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Spaw – AI music platform for making banging beats with text",
+      "link": "https://drive.google.com/file/d/1SUk7x7xSMMjne9jwDVy4w0wiOuAHGdu9/view?usp=sharing",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-13T21:41:31Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://drive.google.com/file/d/1SUk7x7xSMMjne9jwDVy4w0wiOuAHGdu9/view?usp=sharing\"\u003ehttps://drive.google.com/file/d/1SUk7x7xSMMjne9jwDVy4w0wiOuAHGdu9/view?usp=sharing\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46258380\"\u003ehttps://news.ycombinator.com/item?id=46258380\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Does my key fob have more computing power than the Lunar lander?",
+      "link": "https://www.buzzsprout.com/2469780/episodes/18340142-17-does-my-key-fob-have-more-computing-power-than-the-lunar-lander",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-13T21:41:28Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.buzzsprout.com/2469780/episodes/18340142-17-does-my-key-fob-have-more-computing-power-than-the-lunar-lander\"\u003ehttps://www.buzzsprout.com/2469780/episodes/18340142-17-does-my-key-fob-have-more-computing-power-than-the-lunar-lander\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46258377\"\u003ehttps://news.ycombinator.com/item?id=46258377\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "China has invented a whole new way to do innovation",
+      "link": "https://www.noahpinion.blog/p/china-has-invented-a-whole-new-way",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-13T21:41:12Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.noahpinion.blog/p/china-has-invented-a-whole-new-way\"\u003ehttps://www.noahpinion.blog/p/china-has-invented-a-whole-new-way\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46258375\"\u003ehttps://news.ycombinator.com/item?id=46258375\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: I built a \"Headless CMS\" for my resume (Next.js and Puppeteer)",
+      "link": "https://news.ycombinator.com/item?id=46258366",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-13T21:40:40Z",
+      "description": "\n\u003cp\u003eI got tired of maintaining resume_google.docx, resume_amazon.docx, and resume_v5_final.pdf.\u003cp\u003eVersion control for resumes is broken. So I built a \"Single Source of Truth\" system.\u003cp\u003eThe Logic:\u003cp\u003eThe Database: You dump everything (all projects, 10 years of history) into one JSON-like structure.\u003cp\u003eThe Query: You paste a Job Description.\u003cp\u003eThe Render: The system \"queries\" your history for matching skills/bullets and renders a tailored 1-page PDF using a custom Puppeteer engine.\u003cp\u003eIt’s basically CI/CD for job applications.\u003cp\u003eTech Stack:\u003cp\u003eNext.js 15 (App Router)\u003cp\u003eNestJS (Backend logic)\u003cp\u003ePuppeteer (Custom rendering engine to fix page-break issues)\u003cp\u003eLive Demo: \u003ca href=\"https://resumefy.pro\" rel=\"nofollow\"\u003ehttps://resumefy.pro\u003c/a\u003e\u003cp\u003eI’m open to roasting on the code or the \"matching\" logic.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46258366\"\u003ehttps://news.ycombinator.com/item?id=46258366\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Velocity Coding",
+      "link": "https://0thernet.substack.com/p/velocity-coding",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-13T21:38:28Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://0thernet.substack.com/p/velocity-coding\"\u003ehttps://0thernet.substack.com/p/velocity-coding\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46258352\"\u003ehttps://news.ycombinator.com/item?id=46258352\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Free API for REVE EEG Foundation Model",
+      "link": "https://web-production-73111.up.railway.app/docs",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-13T21:37:31Z",
+      "description": "\n\u003cp\u003eI built a REST API for REVE (the 60K-hour EEG foundation model \nreleased in October). It's free to use: \u003ca href=\"https://web-production-73111.up.railway.app/docs\" rel=\"nofollow\"\u003ehttps://web-production-73111.up.railway.app/docs\u003c/a\u003e\u003cp\u003eUse case: If you're building anything with EEG and don't want to \ndeploy the model yourself, just hit the API with raw signals and \nget back embeddings.\u003cp\u003eAlso working on training a better model on private data from devices/\nlabs. If you're collecting EEG data and want to partner, DM me.\u003cp\u003eFeedback welcome!\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46258343\"\u003ehttps://news.ycombinator.com/item?id=46258343\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: I built a small tool to track receipts and warranty dates",
+      "link": "https://www.retreat-app.tech/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-13T21:33:48Z",
+      "description": "\n\u003cp\u003eI kept losing receipts and missing warranty deadlines, so I built this tool for myself.\u003cp\u003eThe idea is simple:\nYou forward purchase emails, and it extracts receipt details (store, amount, warranty dates) and reminds you before warranties expire. Also there is manual data entry, pdf drag and drop too\u003cp\u003eIt’s intentionally small and boring, but useful.\nBuilt with Go and React.\u003cp\u003eHappy to answer questions.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46258307\"\u003ehttps://news.ycombinator.com/item?id=46258307\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "How to Avoid IaC Drift",
+      "link": "https://newsletter.masterpoint.io/p/how-to-avoid-iac-drift",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-13T21:30:42Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://newsletter.masterpoint.io/p/how-to-avoid-iac-drift\"\u003ehttps://newsletter.masterpoint.io/p/how-to-avoid-iac-drift\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46258275\"\u003ehttps://news.ycombinator.com/item?id=46258275\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: A Grafana you can share with anyone",
+      "link": "https://github.com/towlabs/dashfrog",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-13T21:30:01Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/towlabs/dashfrog\"\u003ehttps://github.com/towlabs/dashfrog\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46258269\"\u003ehttps://news.ycombinator.com/item?id=46258269\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "GitHub in 2025",
+      "link": "https://redmonk.com/sogrady/2025/11/07/github-2025/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-13T21:29:31Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://redmonk.com/sogrady/2025/11/07/github-2025/\"\u003ehttps://redmonk.com/sogrady/2025/11/07/github-2025/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46258262\"\u003ehttps://news.ycombinator.com/item?id=46258262\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    }
+  ],
+  "generatedAt": "2025-12-14T07:08:45.096920808+09:00"
+}
