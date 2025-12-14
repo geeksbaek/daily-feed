@@ -1,0 +1,258 @@
+{
+  "date": "2025-12-15",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2025년 12월 14일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** AI 에이전트 개발을 위한 인프라(Docker/MCP)가 표준화되고 있으며, 동시에 AI 코딩 도구(Cursor)로 1인 개발의 한계가 파괴되고 있습니다. 반면, 거대 AI 서비스(Anthropic)의 장애는 의존성 리스크를 상기시킵니다.\n\n---\n\n## 🏆 Top Story: 엔터프라이즈 AI의 새로운 표준\n### Docker와 MCP: 기업형 AI 에이전트의 연결 고리\nDocker가 'Private MCP(Model Context Protocol) Catalog'를 통해 기업 내 AI 에이전트 구축의 판도를 바꾸려 합니다. MCP는 Anthropic이 제안한 개방형 표준으로, AI 모델이 데이터 소스와 도구에 안전하게 접근하도록 돕습니다. Docker는 이를 자사 생태계에 통합하여, 개발자가 컨테이너화된 환경에서 안전하고 조합 가능한(Composable) AI 애플리케이션을 배포할 수 있는 길을 열었습니다. 이는 기업이 민감한 데이터를 외부로 유출하지 않으면서도 강력한 AI 에이전트를 구축할 수 있는 핵심 인프라가 될 전망입니다.\n\u003e **Key Point:** Docker 컨테이너 기술과 MCP 표준의 결합으로, 기업은 보안이 보장된 '사설 AI 에이전트 생태계'를 구축할 수 있게 되었습니다. [^1]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n\n### 1. AI 코딩 도구의 진화: 100일 만의 데이팅 앱 출시\nAI 코드 에디터인 'Cursor'($20/월)만을 활용해 코딩 지식이 부족한 창업자가 100일 만에 데이팅 앱을 개발하고 구글/애플 스토어에 동시 출시한 사례가 화제입니다. 이는 소프트웨어 개발의 진입 장벽이 완전히 무너졌음을 시사합니다. 동시에 AWS는 'AI 주도 개발 수명 주기(AI-driven development life cycle)'를 제안하며, 소프트웨어 엔지니어링의 패러다임이 '작성'에서 '지시 및 검토'로 바뀌고 있음을 강조했습니다.\n- **What:** Cursor를 활용한 노코드/로우코드 수준의 앱 상용화 성공 및 AWS의 새로운 개발 방법론 제안.\n- **Why:** LLM의 코딩 능력이 실제 상용 제품을 바닥부터 끝까지 만들어낼 수준에 도달함.\n- **Impact:** 개발자의 역할이 '코더'에서 '아키텍트'로 급격히 이동하며, 1인 유니콘 기업의 탄생 가능성이 높아짐. [^10][^11][^31]\n\n### 2. 마이크로서비스의 역습? Twilio Segment의 모놀리식 회귀\nTwilio Segment가 복잡한 마이크로서비스 아키텍처를 버리고 다시 모놀리식(Monolithic) 아키텍처로 회귀한 이유를 공개했습니다. 이는 \"무조건적인 마이크로서비스 도입\"에 대한 업계의 자성을 불러일으키고 있습니다. 운영 복잡도 증가와 오버헤드 비용이 분산 시스템의 장점을 상쇄했기 때문입니다.\n- **What:** Twilio Segment 엔지니어링 팀의 아키텍처 단순화 결정.\n- **Why:** 마이크로서비스의 관리 비용과 복잡성이 개발 생산성을 저해.\n- **Impact:** '적정 기술'에 대한 논의가 재점화되며, 스타트업 초기 단계에서의 모놀리식 접근이 다시 힘을 얻을 것. [^7]\n\n### 3. Anthropic 대규모 서비스 장애 발생\nClaude 3.5를 잇는 차세대 모델인 Opus 4.5와 Sonnet 4/4.5를 포함한 Anthropic의 모든 서비스에서 대규모 중단 사태가 발생했습니다. 기업들의 AI 의존도가 높아진 시점에서 발생한 이번 장애는 단일 AI 공급자에 대한 의존성 리스크(Vendor Lock-in)와 이중화 전략의 필요성을 강하게 시사합니다.\n- **What:** Anthropic 전 서비스(API 포함) 다운.\n- **Why:** (상세 원인은 조사 중이나) 트래픽 급증 또는 인프라 업데이트 오류 추정.\n- **Impact:** 멀티 LLM 전략 및 온프레미스/로컬 LLM 백업 시스템 구축의 중요성 대두. [^15]\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **Datakit** | 브라우저 내에서 즉시 실행 가능한 데이터 탐색 및 시각화 툴킷 (Show HN) [^12] |\n| **Tool** | **Opik Agent Optimizer** | LLM 프롬프트를 자동으로 최적화해주는 오픈소스 프레임워크 [^27] |\n| **Tool** | **Carolina Cloud** | 데이터 사이언스 워크로드에 특화하여 AWS 대비 1/3 비용을 제시하는 클라우드 [^23] |\n| **Tool** | **Distropack** | RPM, DEB, PKG 외에 TAR 아카이브 지원을 추가한 패키지 배포 도구 [^20] |\n| **Lang** | **Gleam (AoC 후기)** | 타입 안전성과 동시성을 지원하는 Gleam 언어로 Advent of Code를 풀며 느낀 장단점 분석 [^9] |\n| **Security** | **Fil-C \u0026 Linux Sandbox** | 메모리 안전성을 보장하는 Fil-C 컴파일러와 리눅스 샌드박싱 기술의 결합 [^8] |\n| **Paper** | **Axelrod's 2nd Tournament** | 게임 이론의 고전인 악셀로드의 죄수의 딜레마 토너먼트를 현대적으로 재현 및 분석 [^29] |\n| **Paper** | **Math Notation for LLMs** | LLM 애플리케이션에 적합하도록 수학적 표기법을 재고찰한 제안 [^22] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n\n#### 💻 개발 \u0026 인프라\n*   **Linux-rs 프로젝트의 미래**: 리눅스 커널 내 Rust 도입 프로젝트의 현황과 향후 로드맵에 대한 개발자 회고. [^13]\n*   **프로덕션 환경의 Datetime 전쟁**: 개발자를 괴롭히는 날짜/시간 처리 문제에 대한 생생한 경험담과 조언. [^19]\n*   **Fallback과 Cold Path 피하기**: 시스템 안정성을 위해 자주 실행되지 않는 코드 경로(Cold Path)를 최소화하는 전략. [^24]\n*   **계획이 곧 프로그램이다**: 소프트웨어 개발에서 명확한 계획 수립이 코딩 그 자체만큼 중요하다는 철학적 고찰. [^17]\n*   **Ozymandias**: (상세 내용 불분명하나) 기술의 덧없음이나 레거시 시스템에 대한 은유적 에세이로 추정. [^16]\n\n#### 🤖 AI \u0026 데이터\n*   **AI는 과학을 어떻게 바꿀까**: 우리가 생각하는 방식(단순 자동화)이 아니라, 과학적 발견의 프로세스 자체를 변혁할 것이라는 주장. [^18]\n*   **마르코프 모델 실험**: 24년 치 블로그 글을 마르코프 체인에 학습시켜 문체를 흉내 낸 재미있는 실험. [^4]\n\n#### 💼 커리어 \u0026 경제\n*   **AI 시대의 직업 안정성**: AI가 대체하기 힘든 '주정부 면허(State License)'가 필요한 직업(배관, 전기 등)의 가치가 재조명됨. [^21]\n*   **스타트업 실패는 수치인가?**: 창업 실패를 개인의 수치가 아닌 하나의 '전쟁' 경험으로 바라봐야 한다는 조언. [^28]\n*   **캘리포니아 교사 채용 난항**: 트럼프 행정부의 새로운 비자 수수료 정책이 캘리포니아 교사 채용에 미치는 부정적 영향. [^25]\n*   **컴퓨터 앞에서의 집중력**: 하루 종일 모니터를 보며 일하는 개발자들을 위한 집중력 유지 노하우 토론. [^26]\n\n#### 🎨 문화 \u0026 기타\n*   **유튜브 CEO의 자녀 교육**: 닐 모한 등 테크 거물들이 정작 자신의 자녀에게는 소셜 미디어 사용을 엄격히 제한한다는 역설. [^2]\n*   **지브리 스튜디오 이미지 무료 공개**: '그대들은 어떻게 살 것인가' 등 지브리 작품의 고화질 장면 사진 무료 제공. [^3]\n*   **딕 반 다이크 100세**: 전설적인 배우이자 90년대부터 3D 애니메이션(Amiga) 덕후였던 그가 100세를 맞이함. [^6]\n*   **앤서니 보데인의 유산**: 고인이 된 셰프 앤서니 보데인이 남긴 Li.st 게시물들을 디지털 아카이빙으로 복원. [^5]\n*   **무슬림 영웅의 희생**: 타인을 구하기 위해 자신의 목숨을 건 한 무슬림 영웅의 이야기. [^14]\n*   **2025-2026 FTC 게임 공개**: 퍼스트 테크 챌린지(로봇 대회)의 새로운 시즌 게임 규칙과 자료 발표. [^30]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘은 '**도구의 진화'와 '기본의 회귀**'가 동시에 관찰된 날입니다. Docker와 Cursor는 AI를 통해 개발의 장벽을 낮추고 속도를 높이고 있지만, Twilio는 마이크로서비스에서 모놀리식으로 돌아가며 '단순함'의 가치를 증명했습니다. 또한, 최첨단 AI 모델인 Anthropic의 장애는 역설적으로 우리가 얼마나 취약한 기반 위에 서 있는지를 보여줍니다. 기술은 빠르게 변하지만, **안정성(Reliability)**과 **단순성(Simplicity)**이라는 본질은 변하지 않습니다.\n\n---\n\n[^1]: Private MCP Catalogs and the Path to Composable Enterprise AI - https://www.docker.com/blog/private-mcp-catalogs-oci-composable-enterprise-ai/\n[^2]: 유튜브 CEO, 자녀의 소셜미디어 사용 제한…다른 기술 경영자들도 같은 선택 - https://news.hada.io/topic?id=25070\n[^3]: 너희들은 어떻게 살 것인가’의 장면 사진을 제공합니다 - 스튜디오 지브리 - https://news.hada.io/topic?id=25069\n[^4]: 24년간의 블로그 글을 마르코프 모델에 학습시킨 실험 - https://news.hada.io/topic?id=25068\n[^5]: 앤서니 보데인의 잃어버린 Li.st 게시물 복원 - https://news.hada.io/topic?id=25067\n[^6]: 딕 반 다이크, 컴퓨터 애니메이터이자 아미가 팬, 100세 맞이 - https://news.hada.io/topic?id=25066\n[^7]: Twilio Segment가 마이크로서비스에서 모놀리식 아키텍처로 회귀한 이유 - https://news.hada.io/topic?id=25065\n[^8]: Linux 샌드박스와 Fil-C - https://news.hada.io/topic?id=25064\n[^9]: Advent of Code를 위해 Gleam을 사용해 본 후기 - https://news.hada.io/topic?id=25063\n[^10]: Show GN: Cursor($20/mo)로 100일 만에 데이팅 앱개발. Google Play, App Store 동시 출시 - https://news.hada.io/topic?id=25062\n[^11]: AI를 활용한 프로그래밍 역량을 높이는 방법 - https://news.hada.io/topic?id=25060\n[^12]: Show HN: In-browser data exploration toolkit - https://github.com/Datakitpage/Datakit\n[^13]: The Future of the Linux-rs Project - https://mateolafalce.github.io/2025/The%20Future%20of%20the%20Linux-rs%20Project/TheFutureoftheLinuxrsProject.html\n[^14]: Muslim hero risked his own life to save others - https://ahmedelahmed.com\n[^15]: Anthropic Outage for Opus 4.5 and Sonnet 4/4.5 across all services - https://status.claude.com/incidents/9g6qpr72ttbr\n[^16]: Ozymandias - https://blog.engora.com/2025/12/ozymandias.html\n[^17]: The Plan Is the Program - https://www.proofofconcept.pub/p/the-plan-is-the-program\n[^18]: AI will transform science. Just not the way you think - https://ischemist.com/writings/long-form/will-ai-transform-science\n[^19]: My Battle with Datetimes in Prod - https://www.datacompose.io/blog/fun-with-datetimes\n[^20]: Distropack now supports TAR archives aside from RPM DEB and PKG - https://distropack.dev/Blog/Post?slug=introducing-tar-package-support-simple-distribution-without-repository-complexity\n[^21]: Job security in the age of AI? Get a state license – any state license - https://www.theguardian.com/business/2025/dec/15/job-security-state-license\n[^22]: Rethinking a Mathematical Notation for Possible LLM Applications - https://ursaxza.substack.com/p/a-hole-new-word\n[^23]: Show HN: Carolina Cloud – 1/3 the cost of AWS for data science workloads - https://carolinacloud.io/\n[^24]: Avoiding Fallback and Cold Paths - https://timkellogg.me/blog/2021/01/29/cold-paths\n[^25]: Trump's new visa fee inhibits hiring teachers in California – CalMatters - https://calmatters.org/education/2025/12/teaching-jobs-california-foreign-worker-visa/\n[^26]: How do you stay focused while working on a computer all day? - https://news.ycombinator.com/item?id=46267160\n[^27]: Opik Agent Optimizer – Open-Source Prompt Optimization Framework - https://github.com/comet-ml/opik/tree/main/sdks/opik_optimizer\n[^28]: Is Your Startup Failure Your War or Shame? - https://manidoraisamy.com/startup-failure.html\n[^29]: Reviving, reproducing, and revisiting Axelrod's second tournament - https://arxiv.org/abs/2510.15438\n[^30]: Current Game and Season Materials (First Tech Challenge 2025-2026) - https://ftc-resources.firstinspires.org/ftc/game\n[^31]: AI-Driven Development Life Cycle: Reimagining Software Engineering - https://aws.amazon.com/blogs/devops/ai-driven-development-life-cycle/\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **Private MCP Catalogs and the Path to Composable Enterprise AI**\n   - 출처: Docker Blog\n   - 링크: https://www.docker.com/blog/private-mcp-catalogs-oci-composable-enterprise-ai/\n\n2. **유튜브 CEO, 자녀의 소셜미디어 사용 제한…다른 기술 경영자들도 같은 선택**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25070\n\n3. **너희들은 어떻게 살 것인가’의 장면 사진을 제공합니다 - 스튜디오 지브리**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25069\n\n4. **24년간의 블로그 글을 마르코프 모델에 학습시킨 실험**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25068\n\n5. **앤서니 보데인의 잃어버린 Li.st 게시물 복원**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25067\n\n6. **딕 반 다이크, 컴퓨터 애니메이터이자 아미가 팬, 100세 맞이**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25066\n\n7. **Twilio Segment가 마이크로서비스에서 모놀리식 아키텍처로 회귀한 이유**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25065\n\n8. **Linux 샌드박스와 Fil-C**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25064\n\n9. **Advent of Code를 위해 Gleam을 사용해 본 후기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25063\n\n10. **Show GN: Cursor($20/mo)로 100일 만에 데이팅 앱개발. Google Play, App Store 동시 출시**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25062\n\n11. **AI를 활용한 프로그래밍 역량을 높이는 방법**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25060\n\n12. **Show HN: In-browser data exploration toolkit**\n   - 출처: Hacker News\n   - 링크: https://github.com/Datakitpage/Datakit\n\n13. **The Future of the Linux-rs Project**\n   - 출처: Hacker News\n   - 링크: https://mateolafalce.github.io/2025/The%20Future%20of%20the%20Linux-rs%20Project/TheFutureoftheLinuxrsProject.html\n\n14. **Muslim hero risked his own life to save others**\n   - 출처: Hacker News\n   - 링크: https://ahmedelahmed.com\n\n15. **Anthropic Outage for Opus 4.5 and Sonnet 4/4.5 across all services**\n   - 출처: Hacker News\n   - 링크: https://status.claude.com/incidents/9g6qpr72ttbr\n\n16. **Ozymandias**\n   - 출처: Hacker News\n   - 링크: https://blog.engora.com/2025/12/ozymandias.html\n\n17. **The Plan Is the Program**\n   - 출처: Hacker News\n   - 링크: https://www.proofofconcept.pub/p/the-plan-is-the-program\n\n18. **AI will transform science. Just not the way you think**\n   - 출처: Hacker News\n   - 링크: https://ischemist.com/writings/long-form/will-ai-transform-science\n\n19. **My Battle with Datetimes in Prod**\n   - 출처: Hacker News\n   - 링크: https://www.datacompose.io/blog/fun-with-datetimes\n\n20. **Distropack now supports TAR archives aside from RPM DEB and PKG**\n   - 출처: Hacker News\n   - 링크: https://distropack.dev/Blog/Post?slug=introducing-tar-package-support-simple-distribution-without-repository-complexity\n\n21. **Job security in the age of AI? Get a state license – any state license**\n   - 출처: Hacker News\n   - 링크: https://www.theguardian.com/business/2025/dec/15/job-security-state-license\n\n22. **Rethinking a Mathematical Notation for Possible LLM Applications**\n   - 출처: Hacker News\n   - 링크: https://ursaxza.substack.com/p/a-hole-new-word\n\n23. **Show HN: Carolina Cloud – 1/3 the cost of AWS for data science workloads**\n   - 출처: Hacker News\n   - 링크: https://carolinacloud.io/\n\n24. **Avoiding Fallback and Cold Paths**\n   - 출처: Hacker News\n   - 링크: https://timkellogg.me/blog/2021/01/29/cold-paths\n\n25. **Trump's new visa fee inhibits hiring teachers in California – CalMatters**\n   - 출처: Hacker News\n   - 링크: https://calmatters.org/education/2025/12/teaching-jobs-california-foreign-worker-visa/\n\n26. **How do you stay focused while working on a computer all day?**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=46267160\n\n27. **Opik Agent Optimizer – Open-Source Prompt Optimization Framework**\n   - 출처: Hacker News\n   - 링크: https://github.com/comet-ml/opik/tree/main/sdks/opik_optimizer\n\n28. **Is Your Startup Failure Your War or Shame?**\n   - 출처: Hacker News\n   - 링크: https://manidoraisamy.com/startup-failure.html\n\n29. **Reviving, reproducing, and revisiting Axelrod's second tournament**\n   - 출처: Hacker News\n   - 링크: https://arxiv.org/abs/2510.15438\n\n30. **Current Game and Season Materials (First Tech Challenge 2025-2026)**\n   - 출처: Hacker News\n   - 링크: https://ftc-resources.firstinspires.org/ftc/game\n\n31. **AI-Driven Development Life Cycle: Reimagining Software Engineering**\n   - 출처: Hacker News\n   - 링크: https://aws.amazon.com/blogs/devops/ai-driven-development-life-cycle/\n\n\n",
+  "articles": [
+    {
+      "title": "Private MCP Catalogs and the Path to Composable Enterprise AI",
+      "link": "https://www.docker.com/blog/private-mcp-catalogs-oci-composable-enterprise-ai/",
+      "source": "Docker Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-14T14:00:00Z",
+      "description": "Most discussions about Model Context Protocol infrastructure ask how to govern thousands of AI tools and monitor which MCP servers are running. This question is table stakes but undershoots the possibilities. A better question is how we can unleash MCP to drive developer creativity from a trusted foundation. The first question produces a phone book..."
+    },
+    {
+      "title": "유튜브 CEO, 자녀의 소셜미디어 사용 제한…다른 기술 경영자들도 같은 선택",
+      "link": "https://news.hada.io/topic?id=25070",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-15T06:33:16+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e유튜브 CEO 닐 모한\u003c/strong\u003e은 자녀의 \u003cstrong\u003e소셜미디어 사용 시간을 제한\u003c/strong\u003e하고 있으며, 이는 여러 기술 경영자들이 취하고 있는 공통된 태도임\u003c/li\u003e\n\u003cli\u003e그는 평일에는 엄격하게, 주말에는 다소 완화된 규칙을 적용하며, \u003cstrong\u003e“모든 것은 적당히”\u003c/strong\u003e 라는 원칙을 강조함\u003c/li\u003e\n...\u003c/p\u003e"
+    },
+    {
+      "title": "너희들은 어떻게 살 것인가’의 장면 사진을 제공합니다 - 스튜디오 지브리",
+      "link": "https://news.hada.io/topic?id=25069",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-15T04:32:57+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e스튜디오 지브리가 영화 \u003cstrong\u003e「君たちはどう生きるか(너희들은 어떻게 살 것인가)」\u003c/strong\u003e 의 \u003cstrong\u003e장면 사진 14장\u003c/strong\u003e을 새로 공개함\u003c/li\u003e\n\u003cli\u003e이 이미지는 \u003cstrong\u003e2023년 8월 18일\u003c/strong\u003e부터 제공되며, \u003cstrong\u003e극장 상영 중인 작품\u003c/strong\u003e의 일부 장면을 포함함\u003c/li\u003e\n\u003cli\u003e지브리는 “...\u003c/p\u003e"
+    },
+    {
+      "title": "24년간의 블로그 글을 마르코프 모델에 학습시킨 실험",
+      "link": "https://news.hada.io/topic?id=25068",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-15T02:33:00+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e1980년대의 \u003cstrong\u003eMark V. Shaney\u003c/strong\u003e 프로그램에서 영감을 받아, 약 \u003cstrong\u003e30줄의 Python 코드\u003c/strong\u003e로 구현된 간단한 마르코프 텍스트 생성기 \u003cstrong\u003eMark V. Shaney Junior\u003c/strong\u003e를 제작\u003c/li\u003e\n\u003cli\u003e이 모델은 \u003cstrong\u003e세 단어(trigram)\u003c/strong\u003e 기반으로 다음 단어를 확률적으로 예측하며, ...\u003c/p\u003e"
+    },
+    {
+      "title": "앤서니 보데인의 잃어버린 Li.st 게시물 복원",
+      "link": "https://news.hada.io/topic?id=25067",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-15T01:32:43+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e앤서니 보데인의 사라진 Li.st 게시물\u003c/strong\u003e을 공개 웹 크롤링 데이터에서 복원한 프로젝트\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eCommon Crawl\u003c/strong\u003e과 \u003cstrong\u003eInternet Archive\u003c/strong\u003e를 활용해 li.st 도메인의 잔존 HTML을 탐색하고 복원\u003c/li\u003e\n\u003cli\u003ePython 스크립트 \u003ccode\u003ecommoncrawl_search.py\u003c/code\u003e를 사...\u003c/p\u003e"
+    },
+    {
+      "title": "딕 반 다이크, 컴퓨터 애니메이터이자 아미가 팬, 100세 맞이",
+      "link": "https://news.hada.io/topic?id=25066",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-14T23:37:03+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e미국 배우이자 \u003cstrong\u003e컴퓨터 애니메이션 애호가 딕 반 다이크\u003c/strong\u003e가 100세 생일을 맞이함\u003c/li\u003e\n\u003cli\u003e그는 \u003cstrong\u003eAmiga 컴퓨터\u003c/strong\u003e를 활용한 초기 디지털 애니메이션 작업으로도 알려짐\u003c/li\u003e\n\u003cli\u003e오랜 기간 \u003cstrong\u003e기술과 예술의 융합\u003c/strong\u003e에 관심을 보여 왔음\u003c/li\u003e\n\u003cli\u003e그의 생애는 \u003cstrong\u003e...\u003c/p\u003e"
+    },
+    {
+      "title": "Twilio Segment가 마이크로서비스에서 모놀리식 아키텍처로 회귀한 이유",
+      "link": "https://news.hada.io/topic?id=25065",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-14T23:34:03+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eTwilio Segment는 수백 개의 \u003cstrong\u003e마이크로서비스 구조\u003c/strong\u003e를 운영하다가 복잡성과 유지보수 부담으로 인해 \u003cstrong\u003e단일 서비스(모놀리식)\u003c/strong\u003e 로 전환함\u003c/li\u003e\n\u003cli\u003e초기에는 각 \u003cstrong\u003e데스티네이션 API\u003c/strong\u003e 를 분리해 장애 격리와 확장성을 확보했으나, 서비스 수가 140개 이상으로 늘며 ...\u003c/p\u003e"
+    },
+    {
+      "title": "Linux 샌드박스와 Fil-C",
+      "link": "https://news.hada.io/topic?id=25064",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-14T22:33:00+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e메모리 안전성\u003c/strong\u003e과 \u003cstrong\u003e샌드박싱\u003c/strong\u003e은 서로 독립적인 보안 개념으로, 두 가지를 모두 갖춰야 강력한 방어 체계를 형성함\u003c/li\u003e\n\u003cli\u003eFil-C는 C/C++의 \u003cstrong\u003e메모리 안전 구현체\u003c/strong\u003e로, Linux 시스템 호출 수준까지 안전성을 보장하며 OpenSSH 같은 시스템 구성요소에서도 사용 ...\u003c/p\u003e"
+    },
+    {
+      "title": "Advent of Code를 위해 Gleam을 사용해 본 후기",
+      "link": "https://news.hada.io/topic?id=25063",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-14T17:33:00+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eAdvent of Code 2025\u003c/strong\u003e의 12일간 퍼즐을 Gleam으로 해결하며, 언어의 \u003cstrong\u003eRust 수준 오류 메시지\u003c/strong\u003e와 \u003cstrong\u003e파이프라인 중심 함수형 스타일\u003c/strong\u003e이 특히 인상적이었음\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e\u003ccode\u003eecho\u003c/code\u003e\u003c/strong\u003e , \u003cstrong\u003e\u003ccode\u003efold_until\u003c/code\u003e\u003c/strong\u003e , \u003cstrong\u003e...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: Cursor($20/mo)로 100일 만에 데이팅 앱개발. Google Play, App Store 동시 출시",
+      "link": "https://news.hada.io/topic?id=25062",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-14T17:19:40+09:00",
+      "description": "\u003cp\u003e바이브코딩에 대한 관심이 뜨거운 것 같습니다.\u003cbr /\u003e\nCursor($20/월)로 기획부터 디자인, 프론트 \u0026amp; 백엔드, 앱 출시까지... 100일 동안의 프로젝트 기록을 공유합니다.\u003c/p\u003e\n\u003cp\u003e📱 프로젝트: WeConnect\u003cbr /\u003e\n전 세계 유저 대상의 언어 교환 및 데이팅 앱입니다.\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eiOS/Android: Flutter (크로스 플랫"
+    },
+    {
+      "title": "AI를 활용한 프로그래밍 역량을 높이는 방법",
+      "link": "https://news.hada.io/topic?id=25060",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-14T13:32:38+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eAI 코딩 도구를 써서 사람이 1~2시간 걸리던 변환 작업을 15~20분 리뷰 수준으로 줄이고 싶음\u003c/li\u003e\n\u003cli\u003e하지만, 현재는 AI가 만들어주는 코드 품질이 직접 짠 코드의 90%에도 못 미쳐서 실질적인 도움이 되지 않는것 같음\u003c/li\u003e\n\u003cli\u003e그래서 AI를 어떻게 써야 생산성과 코드 품질을 동시에 끌어올릴 수 있는지 방...\u003c/p\u003e"
+    },
+    {
+      "title": "Show HN: In-browser data exploration toolkit",
+      "link": "https://github.com/Datakitpage/Datakit",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-14T21:58:51Z",
+      "description": "\n\u003cp\u003eHey HN,\u003cp\u003eWe’re Amin and Parsa, and we’re excited to share DataKit, a fully in-browser data analysis platform that lets you work with large datasets directly in a browser tab, with no servers, no setup, and no data leaving your machine.\u003cp\u003e- GitHub: \u003ca href=\"https://github.com/datakitpage/datakit\" rel=\"nofollow\"\u003ehttps://github.com/datakitpage/datakit\u003c/a\u003e\u003cp\u003e- Live demo: \u003ca href=\"https://datakit.page\" rel=\"nofollow\"\u003ehttps://datakit.page\u003c/a\u003e\u003cp\u003eDataKit processes multi-gigabyte datasets (CSV, Parquet, JSON, Excel) entirely client-side using DuckDB compiled to WebAssembly. Your data stays local to your browser, and nothing is uploaded anywhere by default.\u003cp\u003eWe were frustrated by having to choose between cloud tools that require uploading sensitive data and heavyweight local setups that are painful to install and maintain. We wanted something that just works in a browser tab, but still has real analytical power.\u003cp\u003eSome of its core features are:\u003cp\u003e\u003cpre\u003e\u003ccode\u003e  - Client-side processing of large files (tested up to ~20GB) with no backend\n  - Full SQL interface powered by DuckDB-WASM\n  - Python notebooks via Pyodide for data science workflows\n  - Optional connections to remote sources (Postgres, MotherDuck, S3) via a proxy\n  - An AI assistant that only sees schemas and metadata — never raw data\n\u003c/code\u003e\u003c/pre\u003e\nLicensing: DataKit is AGPL-licensed, with commercial licenses available for enterprise use.\u003cp\u003eWe’ve been building DataKit as a side project over the past few months and would really love feedback on:\u003cp\u003e\u003cpre\u003e\u003ccode\u003e  - Performance bottlenecks you run into\n  - Features you’d need for your workflows\n  - Thoughts on the all-client-side architecture vs hybrid approaches\n\u003c/code\u003e\u003c/pre\u003e\nThanks for checking it out, and we’re happy to answer any questions.\u003cp\u003e— Amin \u0026 Parsa\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46267450\"\u003ehttps://news.ycombinator.com/item?id=46267450\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Future of the Linux-rs Project",
+      "link": "https://mateolafalce.github.io/2025/The%20Future%20of%20the%20Linux-rs%20Project/TheFutureoftheLinuxrsProject.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-14T21:57:26Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://mateolafalce.github.io/2025/The%20Future%20of%20the%20Linux-rs%20Project/TheFutureoftheLinuxrsProject.html\"\u003ehttps://mateolafalce.github.io/2025/The%20Future%20of%20the%20Linux-rs%20Project/TheFutureoftheLinuxrsProject.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46267439\"\u003ehttps://news.ycombinator.com/item?id=46267439\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Muslim hero risked his own life to save others",
+      "link": "https://ahmedelahmed.com",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-14T21:56:49Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://ahmedelahmed.com\"\u003ehttps://ahmedelahmed.com\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46267428\"\u003ehttps://news.ycombinator.com/item?id=46267428\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 2\u003c/p\u003e\n"
+    },
+    {
+      "title": "Anthropic Outage for Opus 4.5 and Sonnet 4/4.5 across all services",
+      "link": "https://status.claude.com/incidents/9g6qpr72ttbr",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-14T21:53:13Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://status.claude.com/incidents/9g6qpr72ttbr\"\u003ehttps://status.claude.com/incidents/9g6qpr72ttbr\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46267385\"\u003ehttps://news.ycombinator.com/item?id=46267385\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 4\u003c/p\u003e\n\u003cp\u003e# Comments: 3\u003c/p\u003e\n"
+    },
+    {
+      "title": "Ozymandias",
+      "link": "https://blog.engora.com/2025/12/ozymandias.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-14T21:53:13Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://blog.engora.com/2025/12/ozymandias.html\"\u003ehttps://blog.engora.com/2025/12/ozymandias.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46267384\"\u003ehttps://news.ycombinator.com/item?id=46267384\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Plan Is the Program",
+      "link": "https://www.proofofconcept.pub/p/the-plan-is-the-program",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-14T21:51:54Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.proofofconcept.pub/p/the-plan-is-the-program\"\u003ehttps://www.proofofconcept.pub/p/the-plan-is-the-program\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46267371\"\u003ehttps://news.ycombinator.com/item?id=46267371\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "AI will transform science. Just not the way you think",
+      "link": "https://ischemist.com/writings/long-form/will-ai-transform-science",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-14T21:50:29Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://ischemist.com/writings/long-form/will-ai-transform-science\"\u003ehttps://ischemist.com/writings/long-form/will-ai-transform-science\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46267355\"\u003ehttps://news.ycombinator.com/item?id=46267355\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "My Battle with Datetimes in Prod",
+      "link": "https://www.datacompose.io/blog/fun-with-datetimes",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-14T21:50:07Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.datacompose.io/blog/fun-with-datetimes\"\u003ehttps://www.datacompose.io/blog/fun-with-datetimes\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46267348\"\u003ehttps://news.ycombinator.com/item?id=46267348\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Distropack now supports TAR archives aside from RPM DEB and PKG",
+      "link": "https://distropack.dev/Blog/Post?slug=introducing-tar-package-support-simple-distribution-without-repository-complexity",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-14T21:47:16Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://distropack.dev/Blog/Post?slug=introducing-tar-package-support-simple-distribution-without-repository-complexity\"\u003ehttps://distropack.dev/Blog/Post?slug=introducing-tar-package-support-simple-distribution-without-repository-complexity\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46267323\"\u003ehttps://news.ycombinator.com/item?id=46267323\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Job security in the age of AI? Get a state license – any state license",
+      "link": "https://www.theguardian.com/business/2025/dec/15/job-security-state-license",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-14T21:46:45Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.theguardian.com/business/2025/dec/15/job-security-state-license\"\u003ehttps://www.theguardian.com/business/2025/dec/15/job-security-state-license\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46267315\"\u003ehttps://news.ycombinator.com/item?id=46267315\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Rethinking a Mathematical Notation for Possible LLM Applications",
+      "link": "https://ursaxza.substack.com/p/a-hole-new-word",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-14T21:44:23Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://ursaxza.substack.com/p/a-hole-new-word\"\u003ehttps://ursaxza.substack.com/p/a-hole-new-word\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46267292\"\u003ehttps://news.ycombinator.com/item?id=46267292\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Carolina Cloud – 1/3 the cost of AWS for data science workloads",
+      "link": "https://carolinacloud.io/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-14T21:43:35Z",
+      "description": "\n\u003cp\u003eWe're Carolina Cloud - managed data science infrastructure at ~1/3 the cost of AWS.\u003cp\u003eI left my job earlier this year after watching companies get crushed by cloud bills for workloads that didn't need hyperscaler complexity. Some examples from my previous life:\n- $1k/month for a basic 16 vCPU VM\n- $50k/month for a high-RAM instance\n- Over $1k/month for notebook platform start-stop execution\u003cp\u003eWe built Carolina Cloud for data scientists and small teams who need serious compute without the sticker shock. Our sweet spot: if you're running VMs, notebooks, or RStudio and not deeply tied to AWS/Azure/GCP service ecosystems, we can save you a lot of money.\u003cp\u003eWhat we offer:\n- Standard Ubuntu VMs\n- One-click Marimo notebooks\n- One-click RStudio Server and Shiny hosting\n- S3-compatible object storage (launching soon)\n- Prepay discounts for commitments as short as 2 weeks\n- SOC2-certified, HIPAA-compliant datacenter in Charlotte, NC\u003cp\u003eSimple pricing: $0.005/vCPU/hr, $0.005/GiB RAM/hr, and $0.0001/GiB of hot storage/hr on AMD EPYC Turin processors. A 32 vCPU, 128GB RAM instance runs ~$240/month vs $800+ on AWS.\u003cp\u003eWe're not trying to replicate every AWS service - if you need Lambda + Secrets Manager + S3 with pre-signed URLs, stick with AWS. But if you're a hedge fund running backtests, a biotech team analyzing genomics data, or a researcher who just needs a beefy VM without surprise egress fees, we're 1/3 the price.\u003cp\u003eCheck us out at console.carolinacloud.io - happy to answer questions about our infrastructure, pricing, or why we think there's room for regional clouds built on owned hardware.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46267283\"\u003ehttps://news.ycombinator.com/item?id=46267283\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Avoiding Fallback and Cold Paths",
+      "link": "https://timkellogg.me/blog/2021/01/29/cold-paths",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-14T21:42:02Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://timkellogg.me/blog/2021/01/29/cold-paths\"\u003ehttps://timkellogg.me/blog/2021/01/29/cold-paths\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46267264\"\u003ehttps://news.ycombinator.com/item?id=46267264\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Trump's new visa fee inhibits hiring teachers in California – CalMatters",
+      "link": "https://calmatters.org/education/2025/12/teaching-jobs-california-foreign-worker-visa/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-14T21:35:59Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://calmatters.org/education/2025/12/teaching-jobs-california-foreign-worker-visa/\"\u003ehttps://calmatters.org/education/2025/12/teaching-jobs-california-foreign-worker-visa/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46267205\"\u003ehttps://news.ycombinator.com/item?id=46267205\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "How do you stay focused while working on a computer all day?",
+      "link": "https://news.ycombinator.com/item?id=46267160",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-14T21:31:28Z",
+      "description": "\n\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46267160\"\u003ehttps://news.ycombinator.com/item?id=46267160\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 2\u003c/p\u003e\n"
+    },
+    {
+      "title": "Opik Agent Optimizer – Open-Source Prompt Optimization Framework",
+      "link": "https://github.com/comet-ml/opik/tree/main/sdks/opik_optimizer",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-14T21:29:27Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/comet-ml/opik/tree/main/sdks/opik_optimizer\"\u003ehttps://github.com/comet-ml/opik/tree/main/sdks/opik_optimizer\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46267143\"\u003ehttps://news.ycombinator.com/item?id=46267143\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 4\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Is Your Startup Failure Your War or Shame?",
+      "link": "https://manidoraisamy.com/startup-failure.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-14T21:29:22Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://manidoraisamy.com/startup-failure.html\"\u003ehttps://manidoraisamy.com/startup-failure.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46267141\"\u003ehttps://news.ycombinator.com/item?id=46267141\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Reviving, reproducing, and revisiting Axelrod's second tournament",
+      "link": "https://arxiv.org/abs/2510.15438",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-14T21:27:36Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://arxiv.org/abs/2510.15438\"\u003ehttps://arxiv.org/abs/2510.15438\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46267119\"\u003ehttps://news.ycombinator.com/item?id=46267119\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Current Game and Season Materials (First Tech Challenge 2025-2026)",
+      "link": "https://ftc-resources.firstinspires.org/ftc/game",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-14T21:27:02Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://ftc-resources.firstinspires.org/ftc/game\"\u003ehttps://ftc-resources.firstinspires.org/ftc/game\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46267112\"\u003ehttps://news.ycombinator.com/item?id=46267112\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "AI-Driven Development Life Cycle: Reimagining Software Engineering",
+      "link": "https://aws.amazon.com/blogs/devops/ai-driven-development-life-cycle/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-14T21:23:57Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://aws.amazon.com/blogs/devops/ai-driven-development-life-cycle/\"\u003ehttps://aws.amazon.com/blogs/devops/ai-driven-development-life-cycle/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46267084\"\u003ehttps://news.ycombinator.com/item?id=46267084\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    }
+  ],
+  "generatedAt": "2025-12-15T07:09:04.547317157+09:00"
+}
