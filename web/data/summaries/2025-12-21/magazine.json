@@ -1,0 +1,266 @@
+{
+  "date": "2025-12-21",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2025년 12월 20일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** AI 코딩 도구의 통합(Graphite+Cursor)이 가속화되는 가운데, 2025년 소프트웨어 개발의 지형 변화와 인프라 회복 탄력성(Cloudflare)에 대한 깊은 성찰이 이어지고 있습니다.\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### Graphite, AI 코드 에디터 Cursor에 합류\nAI 기반 코드 에디터 시장을 선도하는 Cursor가 'Stacking' 방식의 코드 리뷰 및 워크플로우 도구인 Graphite와 손을 잡았습니다. 이는 단순한 도구의 결합을 넘어, **\"코드 작성(Editing)\"과 \"코드 리뷰/병합(Review/Merging)\"의 경계가 AI를 통해 완전히 허물어짐**을 의미합니다. 개발자는 이제 IDE를 벗어나지 않고도 복잡한 PR(Pull Request) 의존성을 관리하고, AI가 제안한 변경 사항을 즉시 프로덕션 파이프라인에 태울 수 있게 되었습니다. 이는 2025년 개발 생산성 도구의 통합 트렌드를 상징하는 사건입니다.\n\u003e **Key Point:** AI 코딩 에디터(Cursor)와 워크플로우 자동화(Graphite)의 결합으로 개발 라이프사이클의 '작성-리뷰' 단계가 단일화됨. [^1]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. 2025년 LLM 연례 리뷰: 과대광고를 넘어 실용으로\n- **What:** 지난 1년간의 거대언어모델(LLM) 발전사를 총망라한 리뷰가 발표되었습니다. 모델의 성능 향상뿐만 아니라, 실제 프로덕션 환경에서의 적용 사례와 한계점을 분석합니다.\n- **Why:** 2024년이 '가능성'을 탐색하는 해였다면, 2025년은 '수익화'와 '실질적 효용'을 증명해야 하는 시기였기 때문입니다.\n- **Impact:** 기업들은 이제 단순한 챗봇을 넘어, 복잡한 추론과 에이전트(Agent) 기능을 갖춘 모델을 선호하며, 이는 2026년 AI 투자의 방향성을 결정지을 것입니다. [^5]\n\n### 2. Cloudflare의 'Fail Small': 회복 탄력성을 위한 설계\n- **What:** Cloudflare가 최근 발생한 인프라 사고 이후, 시스템 전체 셧다운을 방지하기 위한 'Fail Small(작게 실패하기)' 전략을 공개했습니다.\n- **Why:** 거대 단일 장애 지점(SPOF)을 제거하고, 장애가 발생하더라도 그 영향 범위를 최소화하여 전체 서비스의 생존성을 보장하기 위함입니다.\n- **Impact:** 이는 전 세계 트래픽을 처리하는 대규모 분산 시스템 아키텍처의 새로운 표준이 될 가능성이 높으며, SRE(사이트 신뢰성 엔지니어링) 팀들에게 중요한 참고 자료가 됩니다. [^32]\n\n### 3. TikTok 거래 완료, 그러나 최악의 결과\n- **What:** 오랫동안 끌어온 TikTok의 매각/구조조정 거래가 완료되었으나, 결과적으로 플랫폼의 독립성과 사용자 경험, 데이터 주권 모두를 해치는 방향으로 귀결되었다는 비판이 제기되었습니다.\n- **Why:** 정치적 압력과 기업의 이익이 충돌하며, 기술적 합리성보다는 규제 회피를 위한 기형적인 구조가 탄생했기 때문입니다.\n- **Impact:** 글로벌 테크 기업들이 지정학적 리스크를 해소하는 과정에서 제품의 본질적 가치를 훼손할 수 있다는 나쁜 선례를 남겼습니다. [^3]\n\n### 4. IoT 보안의 역설: TP-Link Tapo C200과 AI 리버스 엔지니어링\n- **What:** 인기 있는 가정용 CCTV인 Tapo C200에서 하드코딩된 키와 버퍼 오버플로 취약점이 발견되었습니다. 특히 AI 도구를 활용해 펌웨어를 리버스 엔지니어링하는 과정이 상세히 공개되었습니다.\n- **Why:** 제조사의 보안 불감증과 더불어, 공격자(또는 연구자)가 AI를 통해 취약점을 찾아내는 속도가 방어 속도를 앞지르고 있음을 보여줍니다.\n- **Impact:** 스마트홈 기기의 프라이버시 위협이 현실화되었으며, AI 기반 보안 점검의 의무화 필요성이 대두됩니다. [^6]\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Infra** | **Garage** | 데이터센터 밖에서도 실행 가능한 고신뢰성 S3 호환 객체 저장소. [^9] |\n| **AI Model** | **Mistral OCR 3** | 문서 인식 및 처리에 특화된 Mistral의 최신 OCR 모델 공개. [^10] |\n| **Web** | **CSS Grid Lanes** | 복잡한 그리드 레이아웃을 더 직관적으로 제어할 수 있는 새로운 CSS 제안. [^8] |\n| **Tool** | **FileZen** | WebAssembly를 사용하여 서버 전송 없이 클라이언트 측에서 PDF/비디오를 편집하는 도구. [^24] |\n| **Lang** | **Granule** | 등급 모달 타입(graded modal types)을 지원하는 정적 타입 선형 함수형 언어. [^28] |\n| **Python** | **Simple SDF** | Python으로 부호 거리 함수(SDF) 기반의 3D 메쉬를 생성하는 라이브러리. [^17] |\n| **AI UX** | **Claude Agent Audit** | 사용자가 기다리는 동안의 UX를 감사(Audit)하고 개선점을 제안하는 Claude 기반 에이전트 스킬. [^15] |\n| **AI Dev** | **Skill capsules** | LLM을 위한 '가난한 자의 지속적 학습(Continual Learning)' 구현체. [^16] |\n| **Tool** | **Slack GIF Creator** | 샌드박스 환경에서 안전하게 실행되는 Claude 기반 슬랙 GIF 생성기. [^22] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n\n#### 💻 개발 \u0026 인프라\n* **Docker 2025 Recap**: 소프트웨어 개발의 형태가 어떻게 변화했는지 회고하는 도커의 연말 결산. [^11]\n* **Unix는 에이전트(Agent)를 위한 러브레터였다**: 유닉스의 파이프라인 철학이 현대 AI 에이전트 시스템의 원형이라는 통찰. [^19]\n* **인텔의 혼란스러운 명명 체계**: 복잡한 CPU 네이밍으로 인해 소비자와 개발자가 겪는 혼란에 대한 비판. [^2]\n\n#### 📱 모바일 \u0026 웹\n* **브라우저에서 GTA: Vice City 플레이**: 최신 웹 기술을 활용해 고전 명작 게임을 브라우저로 이식한 프로젝트. [^7]\n* **iOS 26 강제 업데이트 논란**: iOS 18 사용자가 원치 않는 버전(iOS 26)으로 업데이트되는 문제와 해결책(현재 막힘). [^12]\n* **Minimal Wim**: 그리드 기반의 실험적인 타이포그래피 디자인 웹사이트. [^18]\n\n#### 🤖 AI \u0026 데이터\n* **Chrome에 들어온 Claude**: 브라우저 사이드바에서 바로 Claude를 사용할 수 있는 공식 확장 기능. [^27]\n* **Anthropic 계정 이메일 변경 불가**: 보안상의 이유로 Claude 계정 이메일 변경을 지원하지 않는다는 정책 안내. [^30]\n* **일론 머스크, 사토시 정체 추측에 침묵**: 트위터(X)에서 비트코인 창시자 정체에 대한 논의에 머스크가 이례적으로 침묵 중. [^21]\n* **예측 시장의 수익성 한계**: 예측 시장(Prediction markets)보다 스포츠 도박 사이트가 훨씬 더 많은 돈을 번다는 경제 분석. [^26]\n\n#### ⚖️ 사회, 비즈니스 \u0026 기타\n* **Mullvad VPN vs EU**: EU 집행위원회의 메타데이터 보존 정책이 프라이버시를 침해한다고 강력 비판. [^25]\n* **PayPal의 Honey 소송 기각**: 인플루언서들에게 45일 내에 오해의 소지가 있는 주장을 수정하라는 명령과 함께 소송 기각. [^23]\n* **오픈소스 전기차(EV) 가이드**: 전기차 구매자를 위한 커뮤니티 주도의 오픈소스 가이드북. [^29]\n* **캐나다 눈사태 데이터베이스**: 눈사태 사망 사고를 추적하고 예방하기 위한 새로운 공공 데이터베이스 런칭. [^13]\n* **Humanist Plumbing**: 엔지니어링과 인문학적 가치의 교차점에 대한 에세이. [^14]\n* **Deep Onboarding**: 신규 입사자를 조직에 깊이 있게 적응시키는 온보딩 방법론. [^20]\n* **8비트 볼레로**: 라벨의 볼레로를 8비트 레트로 사운드로 재해석한 프로젝트. [^4]\n* **Stranger Things 제스처 장난**: 온디바이스 제스처 감지를 이용해 기묘한 이야기(Stranger Things) 컨셉의 장난을 치는 웹사이트. [^31]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘은 '**통합'과 '회복**'이라는 키워드가 눈에 띕니다. Graphite와 Cursor의 결합은 개발 도구의 파편화를 해결하려는 움직임이며, Cloudflare의 'Fail Small'은 거대 시스템의 취약성을 인정하고 회복력을 내재화하려는 시도입니다. 한편, 브라우저에서 GTA를 돌리거나(WebGPU/WASM의 발전), AI로 펌웨어를 뚫는 창과 방패의 싸움은 기술이 얼마나 빠르게 일상과 보안의 영역을 파고드는지 보여줍니다. 주말에는 '8비트 볼레로'를 들으며 잠시 쉬어가시는 건 어떨까요?\n\n---\n\n### Footnotes\n[^1]: Graphite가 Cursor에 합류 - https://news.hada.io/topic?id=25212\n[^2]: 인텔의 혼란스러운 명명 체계에 당한 경험 - https://news.hada.io/topic?id=25211\n[^3]: TikTok 거래가 완료되었지만 모든 것을 더 악화시키는 최악의 결과 - https://news.hada.io/topic?id=25210\n[^4]: 8비트 볼레로 - https://news.hada.io/topic?id=25209\n[^5]: LLM 연례 리뷰 - https://news.hada.io/topic?id=25208\n[^6]: TP-Link Tapo C200: 하드코딩 키, 버퍼 오버플로, 그리고 AI 기반 리버스 엔지니어링 시대의 프라이버시 - https://news.hada.io/topic?id=25207\n[^7]: 이제 브라우저에서 Grand Theft Auto: Vice City를 플레이할 수 있음 - https://news.hada.io/topic?id=25206\n[^8]: CSS Grid Lanes - https://news.hada.io/topic?id=25205\n[^9]: 데이터센터 밖에서도 실행 가능한 고신뢰성 S3 객체 저장소 Garage - https://news.hada.io/topic?id=25204\n[^10]: Mistral OCR 3 - https://news.hada.io/topic?id=25203\n[^11]: 2025 Recap: The Year Software Development Changed Shape - https://www.docker.com/blog/2025-recap-the-year-software-development-changed-shape/\n[^12]: Don't Want iOS 26? Here's How to Stay on iOS 18 [Update: Now Unavailable] - https://www.macrumors.com/2025/12/19/ios-18-forced-ios-26-upgrade/\n[^13]: Avalanche Canada launches new database for fatal avalanche incidents - https://ntv.ca/news/avalanche-canada-launches-new-database-for-fatal-avalanche-incidents/\n[^14]: Humanist Plumbing - https://www.tbray.org/ongoing/When/202x/2025/12/18/Humanist-Plumbing\n[^15]: Claude (Agent) skill to audit waiting UX - https://github.com/BayramAnnakov/ux-waiting-audit\n[^16]: Show HN: Skill capsules\" for LLMs, a \"poor man's continual learning\" - https://github.com/killerstorm/set_v4/blob/main/REPORT.md\n[^17]: Simple SDF mesh generation in Python - https://github.com/fogleman/sdf\n[^18]: Minimal Wim: a grid-based typography experiment - https://raffinaderij.booreiland.amsterdam/minimalwim/\n[^19]: Unix Was a Love Letter to Agents - https://vivekhaldar.com/articles/unix-love-letter-to-agents/\n[^20]: Deep Onboarding - https://bits.logic.inc/p/deep-onboarding\n[^21]: Tell HN: Elon Musk is radio silent on Twitter for guessing Satoshi's identity - https://news.ycombinator.com/item?id=46339849\n[^22]: Sandboxed Claude Slack GIF Creator - https://github.com/modal-projects/claude-slack-gif-creator\n[^23]: PayPal's Honey Lawsuit Dismissed - https://allaboutlawyer.com/paypals-honey-lawsuit-dismissed-federal-judge-gives-influencers-45-days-to-fix-potentially-misleading-claims/\n[^24]: Show HN: FileZen – Client-side PDF and Video tools using WebAssembly - https://filezen.online/\n[^25]: Mullvad VPN: \"The EU Commission wants to save metadata” - https://mastodon.online/@mullvadnet/115742532164170066\n[^26]: Prediction markets barely make money; sportsbooks make money - https://www.ft.com/content/1ac03f57-bd5d-4196-85ff-4bd96dc69e0d\n[^27]: Claude in Chrome - https://claude.com/chrome\n[^28]: Granule – A statically-typed linear functional language with graded modal types - https://github.com/granule-project/granule\n[^29]: Show HN: Open-source EV buyer's guide - https://ev.makr.io\n[^30]: Anthropic: You can't change your Claude account email address - https://support.claude.com/en/articles/8452276-how-do-i-change-the-email-address-associated-with-my-account\n[^31]: Show HN: On device gesture detection used for a Stranger Things inspired prank - https://stranger-browsers.stream/\n[^32]: Code Orange: Fail Small — our resilience plan following recent incidents - https://blog.cloudflare.com/fail-small-resilience-plan/\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **Graphite가 Cursor에 합류**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25212\n\n2. **인텔의 혼란스러운 명명 체계에 당한 경험**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25211\n\n3. **TikTok 거래가 완료되었지만 모든 것을 더 악화시키는 최악의 결과**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25210\n\n4. **8비트 볼레로**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25209\n\n5. **LLM 연례 리뷰**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25208\n\n6. **TP-Link Tapo C200: 하드코딩 키, 버퍼 오버플로, 그리고 AI 기반 리버스 엔지니어링 시대의 프라이버시**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25207\n\n7. **이제 브라우저에서 Grand Theft Auto: Vice City를 플레이할 수 있음**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25206\n\n8. **CSS Grid Lanes**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25205\n\n9. **데이터센터 밖에서도 실행 가능한 고신뢰성 S3 객체 저장소 Garage**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25204\n\n10. **Mistral OCR 3**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25203\n\n11. **2025 Recap: The Year Software Development Changed Shape**\n   - 출처: Docker Blog\n   - 링크: https://www.docker.com/blog/2025-recap-the-year-software-development-changed-shape/\n\n12. **Don't Want iOS 26? Here's How to Stay on iOS 18 [Update: Now Unavailable]**\n   - 출처: Hacker News\n   - 링크: https://www.macrumors.com/2025/12/19/ios-18-forced-ios-26-upgrade/\n\n13. **Avalanche Canada launches new database for fatal avalanche incidents**\n   - 출처: Hacker News\n   - 링크: https://ntv.ca/news/avalanche-canada-launches-new-database-for-fatal-avalanche-incidents/\n\n14. **Humanist Plumbing**\n   - 출처: Hacker News\n   - 링크: https://www.tbray.org/ongoing/When/202x/2025/12/18/Humanist-Plumbing\n\n15. **Claude (Agent) skill to audit waiting UX**\n   - 출처: Hacker News\n   - 링크: https://github.com/BayramAnnakov/ux-waiting-audit\n\n16. **Show HN: Skill capsules\" for LLMs, a \"poor man's continual learning\"**\n   - 출처: Hacker News\n   - 링크: https://github.com/killerstorm/set_v4/blob/main/REPORT.md\n\n17. **Simple SDF mesh generation in Python**\n   - 출처: Hacker News\n   - 링크: https://github.com/fogleman/sdf\n\n18. **Minimal Wim: a grid-based typography experiment**\n   - 출처: Hacker News\n   - 링크: https://raffinaderij.booreiland.amsterdam/minimalwim/\n\n19. **Unix Was a Love Letter to Agents**\n   - 출처: Hacker News\n   - 링크: https://vivekhaldar.com/articles/unix-love-letter-to-agents/\n\n20. **Deep Onboarding**\n   - 출처: Hacker News\n   - 링크: https://bits.logic.inc/p/deep-onboarding\n\n21. **Tell HN: Elon Musk is radio silent on Twitter for guessing Satoshi's identity**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=46339849\n\n22. **Sandboxed Claude Slack GIF Creator**\n   - 출처: Hacker News\n   - 링크: https://github.com/modal-projects/claude-slack-gif-creator\n\n23. **PayPal's Honey Lawsuit Dismissed**\n   - 출처: Hacker News\n   - 링크: https://allaboutlawyer.com/paypals-honey-lawsuit-dismissed-federal-judge-gives-influencers-45-days-to-fix-potentially-misleading-claims/\n\n24. **Show HN: FileZen – Client-side PDF and Video tools using WebAssembly**\n   - 출처: Hacker News\n   - 링크: https://filezen.online/\n\n25. **Mullvad VPN: \"The EU Commission wants to save metadata”**\n   - 출처: Hacker News\n   - 링크: https://mastodon.online/@mullvadnet/115742532164170066\n\n26. **Prediction markets barely make money; sportsbooks make money**\n   - 출처: Hacker News\n   - 링크: https://www.ft.com/content/1ac03f57-bd5d-4196-85ff-4bd96dc69e0d\n\n27. **Claude in Chrome**\n   - 출처: Hacker News\n   - 링크: https://claude.com/chrome\n\n28. **Granule – A statically-typed linear functional language with graded modal types**\n   - 출처: Hacker News\n   - 링크: https://github.com/granule-project/granule\n\n29. **Show HN: Open-source EV buyer's guide**\n   - 출처: Hacker News\n   - 링크: https://ev.makr.io\n\n30. **Anthropic: You can't change your Claude account email address**\n   - 출처: Hacker News\n   - 링크: https://support.claude.com/en/articles/8452276-how-do-i-change-the-email-address-associated-with-my-account\n\n31. **Show HN: On device gesture detection used for a Stranger Things inspired prank**\n   - 출처: Hacker News\n   - 링크: https://stranger-browsers.stream/\n\n32. **Code Orange: Fail Small — our resilience plan following recent incidents**\n   - 출처: Cloudflare Blog\n   - 링크: https://blog.cloudflare.com/fail-small-resilience-plan/\n\n\n",
+  "articles": [
+    {
+      "title": "Graphite가 Cursor에 합류",
+      "link": "https://news.hada.io/topic?id=25212",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-21T05:37:00+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e코드 작성과 협업 간의 단절\u003c/strong\u003e이 여전히 개발 효율의 병목으로 지적됨\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eGraphite\u003c/strong\u003e는 수년간 코드 리뷰 워크플로우를 연구하며, 수십만 명의 엔지니어가 사용하는 \u003cstrong\u003e코드 리뷰 플랫폼\u003c/strong\u003e을 구축함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eCursor가 Graphite를 인수\u003c/strong\u003e하...\u003c/p\u003e"
+    },
+    {
+      "title": "인텔의 혼란스러운 명명 체계에 당한 경험",
+      "link": "https://news.hada.io/topic?id=25211",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-21T05:34:00+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e오래된 \u003cstrong\u003eDell Precision T3610 워크스테이션\u003c/strong\u003e에 Proxmox를 설치하고 CPU 업그레이드를 시도하는 과정에서 \u003cstrong\u003e소켓 명칭 혼동 문제\u003c/strong\u003e가 발생\u003c/li\u003e\n\u003cli\u003e기존 CPU \u003cstrong\u003eXeon E5-1650 v2\u003c/strong\u003e는 Intel 공식 문서상 \u003cstrong\u003eFCLGA2011 소켓\u003c/strong\u003e을 사용한다고 명시되어 있었음...\u003c/p\u003e"
+    },
+    {
+      "title": "TikTok 거래가 완료되었지만 모든 것을 더 악화시키는 최악의 결과",
+      "link": "https://news.hada.io/topic?id=25210",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-21T04:37:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eTikTok의 \u003cstrong\u003e미국 운영 지분 45%\u003c/strong\u003e 가 Oracle, Silver Lake, MGX에 넘어가며, \u003cstrong\u003eByteDance와 중국 투자자들의 참여\u003c/strong\u003e도 여전히 유지됨\u003c/li\u003e\n\u003cli\u003e거래는 \u003cstrong\u003e트럼프 행정부와 측근 억만장자들의 이해관계\u003c/strong\u003e 속에서 진행되었으며, 법적 절차와 규제 기한이 무시된 채 추진됨...\u003c/p\u003e"
+    },
+    {
+      "title": "8비트 볼레로",
+      "link": "https://news.hada.io/topic?id=25209",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-21T04:34:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e모리스 라벨의 \u003cstrong\u003e‘Boléro’\u003c/strong\u003e 를 여러 \u003cstrong\u003e자작 8비트 악기\u003c/strong\u003e로 연주한 프로젝트로, 전자음악과 클래식의 결합을 보여줌\u003c/li\u003e\n\u003cli\u003e총 \u003cstrong\u003e9종의 악기\u003c/strong\u003e와 \u003cstrong\u003e52개의 믹서 채널\u003c/strong\u003e, \u003cstrong\u003e13개의 넥타이와 보타이\u003c/strong\u003e, 그리고 \u003cstrong\u003e1대의 오토마톤\u003c/s...\u003c/p\u003e"
+    },
+    {
+      "title": "LLM 연례 리뷰",
+      "link": "https://news.hada.io/topic?id=25208",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-21T02:33:16+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e2025년은 \u003cstrong\u003e대규모 언어 모델(LLM)\u003c/strong\u003e 발전이 두드러진 해로, 여러 \u003cstrong\u003e패러다임 전환\u003c/strong\u003e이 등장함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eRLVR(Reinforcement Learning from Verifiable Rewards)\u003c/strong\u003e 이 기존 RLHF 단계를 대체하며, 검증 가능한 보상 기반 학습으로 \u003cstrong\u003e추론 능력 향상\u003c/strong\u003e을...\u003c/p\u003e"
+    },
+    {
+      "title": "TP-Link Tapo C200: 하드코딩 키, 버퍼 오버플로, 그리고 AI 기반 리버스 엔지니어링 시대의 프라이버시",
+      "link": "https://news.hada.io/topic?id=25207",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-21T01:37:05+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e저가형 \u003cstrong\u003eTP-Link Tapo C200 IP 카메라\u003c/strong\u003e의 펌웨어를 AI 기반 리버스 엔지니어링으로 분석한 결과, 다수의 \u003cstrong\u003e보안 취약점\u003c/strong\u003e이 발견됨\u003c/li\u003e\n\u003cli\u003e펌웨어에는 \u003cstrong\u003e하드코딩된 SSL 개인키\u003c/strong\u003e가 포함되어 있어, 동일 네트워크 내에서 \u003cstrong\u003eHTTPS 트래픽 복호화\u003c/strong\u003e가 가...\u003c/p\u003e"
+    },
+    {
+      "title": "이제 브라우저에서 Grand Theft Auto: Vice City를 플레이할 수 있음",
+      "link": "https://news.hada.io/topic?id=25206",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-21T01:34:05+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e고전 게임 \u003cstrong\u003eGTA: Vice City\u003c/strong\u003e의 오픈소스 엔진 \u003cstrong\u003ereVC\u003c/strong\u003e가 브라우저에서 직접 실행되는 형태로 구현됨\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eDOS.Zone\u003c/strong\u003e에서 제공되는 데모는 WebAssembly 기반으로, 렌더링·입력·오디오·파일 접근 등 저수준 시스템을 브라우저 환경에 맞게 재설계함\u003c/li\u003e\n\u003cli...\u003c/p\u003e"
+    },
+    {
+      "title": "CSS Grid Lanes",
+      "link": "https://news.hada.io/topic?id=25205",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-20T21:32:51+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e웹에서 \u003cstrong\u003emasonry 레이아웃\u003c/strong\u003e을 구현하기 위한 새로운 CSS 기능 \u003cstrong\u003eGrid Lanes\u003c/strong\u003e가 Safari Technology Preview 234에 도입됨\u003c/li\u003e\n\u003cli\u003e\n\u003ccode\u003edisplay: grid-lanes\u003c/code\u003e 속성을 사용해 \u003cstrong\u003e미디어 쿼리 없이 반응형 그리드\u003c/strong\u003e를 구성할 수 있으며, \u003ccode\u003egrid-template-c...\u003c/p\u003e"
+    },
+    {
+      "title": "데이터센터 밖에서도 실행 가능한 고신뢰성 S3 객체 저장소 Garage",
+      "link": "https://news.hada.io/topic?id=25204",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-20T10:32:51+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eGarage\u003c/strong\u003e는 데이터센터 외부 환경에서도 안정적으로 동작할 수 있는 \u003cstrong\u003eS3 호환 객체 저장소\u003c/strong\u003e로 설계됨\u003c/li\u003e\n\u003cli\u003e단일 \u003cstrong\u003e의존성 없는 바이너리\u003c/strong\u003e로 제공되어 모든 Linux 배포판에서 쉽게 실행 가능\u003c/li\u003e\n\u003cli\u003e데이터는 \u003cstrong\u003e3개 존(zone)\u003c/strong\u003e 에 복제되어 높...\u003c/p\u003e"
+    },
+    {
+      "title": "Mistral OCR 3",
+      "link": "https://news.hada.io/topic?id=25203",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-20T10:32:19+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e문서 처리 정확도와 효율성\u003c/strong\u003e을 동시에 향상시킨 차세대 OCR 모델로, 다양한 문서 유형에서 높은 인식 성능을 제공\u003c/li\u003e\n\u003cli\u003e이전 버전 대비 \u003cstrong\u003e74%의 전반적 성능 향상\u003c/strong\u003e을 기록하며, 필기체·양식·복잡한 표·스캔 문서 등에서 우수한 결과를 달성\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eHTML 기반 표...\u003c/p\u003e"
+    },
+    {
+      "title": "2025 Recap: The Year Software Development Changed Shape",
+      "link": "https://www.docker.com/blog/2025-recap-the-year-software-development-changed-shape/",
+      "source": "Docker Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-20T13:45:00Z",
+      "description": "2025 was the year software teams stopped optimizing models and started optimizing systems. By December, a few truths were impossible to ignore. 1. Developer Productivity Became the Real Competitive Advantage By mid-year, every major AI lab had cleared the “good enough reasoning” bar. With model quality converging, the differentiator was no longer raw intelligence. It..."
+    },
+    {
+      "title": "Don't Want iOS 26? Here's How to Stay on iOS 18 [Update: Now Unavailable]",
+      "link": "https://www.macrumors.com/2025/12/19/ios-18-forced-ios-26-upgrade/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-20T21:53:22Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.macrumors.com/2025/12/19/ios-18-forced-ios-26-upgrade/\"\u003ehttps://www.macrumors.com/2025/12/19/ios-18-forced-ios-26-upgrade/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46339979\"\u003ehttps://news.ycombinator.com/item?id=46339979\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Avalanche Canada launches new database for fatal avalanche incidents",
+      "link": "https://ntv.ca/news/avalanche-canada-launches-new-database-for-fatal-avalanche-incidents/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-20T21:51:42Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://ntv.ca/news/avalanche-canada-launches-new-database-for-fatal-avalanche-incidents/\"\u003ehttps://ntv.ca/news/avalanche-canada-launches-new-database-for-fatal-avalanche-incidents/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46339969\"\u003ehttps://news.ycombinator.com/item?id=46339969\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Humanist Plumbing",
+      "link": "https://www.tbray.org/ongoing/When/202x/2025/12/18/Humanist-Plumbing",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-20T21:49:34Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.tbray.org/ongoing/When/202x/2025/12/18/Humanist-Plumbing\"\u003ehttps://www.tbray.org/ongoing/When/202x/2025/12/18/Humanist-Plumbing\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46339954\"\u003ehttps://news.ycombinator.com/item?id=46339954\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Claude (Agent) skill to audit waiting UX",
+      "link": "https://github.com/BayramAnnakov/ux-waiting-audit",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-20T21:49:00Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/BayramAnnakov/ux-waiting-audit\"\u003ehttps://github.com/BayramAnnakov/ux-waiting-audit\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46339950\"\u003ehttps://news.ycombinator.com/item?id=46339950\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Skill capsules\" for LLMs, a \"poor man's continual learning\"",
+      "link": "https://github.com/killerstorm/set_v4/blob/main/REPORT.md",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-20T21:46:44Z",
+      "description": "\n\u003cp\u003e\"Continual learning\" is considered one of the \"blockers\" for LLMs: they can't learn on the job, don't improve over time, etc. In particular, Dwarkesh Patel  describes it as a number of problem which has to be solved to get to AGI.\u003cp\u003eMany academic article propose some kind of a memory system for LLM which might be considered a form of \"continual learning\". But most evals focus on memorizing facts which is just not very useful (it's better to fetch facts via tool use than to store it in neural memory) and these proposals might not fit well into common LLM API use patterns.\u003cp\u003eIn this article I'm proposing a \"new\" method called \"skill capsules\" which is highly pragmatic, easy to understand and evaluate and might integrate well into existing tooling.\u003cp\u003eSkill capsule is a concrete object - it's a bunch of vectors, basically. You can insert it somewhere into a middle of LLM context and it improves performance on a particular skill, e.g. get tool calls more reliable, use particular writing style, coding style, etc. In theory, it can be used to patch any LLM inadequacy. A capsule can include knowledge (e.g. how to call a particular API or write code involving particular library).\u003cp\u003eSkill capsule can be produced using a single forward pass from a _single example_, not gradients or \"fine-tuning\" is required. So it might allow LLM to \"learn on the job\" - i.e. a single demonstration of how to perform something correctly can be used to create a capsule.\u003cp\u003eYou might ask - why is a \"Show HN\" and not an academic article? Because researchers already know the method - it's known as \"soft prompts\", \"hypernetworks\", \"steering vectors\", prefix tuning, etc. All these terms are horrible and do not convey possibilities of this method. I just want more people to know that LLMs can be improved on the fly. And a better term -- \"skill capsules\" -- might help people to think how to apply these techniques (I hope).\u003cp\u003eAnother reasons it's \"Show HN\" is that:\u003cp\u003e\u003cpre\u003e\u003ccode\u003e  * it shows one can do a kinda cool ML experiment in \n    a few days using Claude Code and few dollars to pay for GPUs\n  * a somewhat-interesting story of how I got there\u003c/code\u003e\u003c/pre\u003e\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46339929\"\u003ehttps://news.ycombinator.com/item?id=46339929\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Simple SDF mesh generation in Python",
+      "link": "https://github.com/fogleman/sdf",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-20T21:45:39Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/fogleman/sdf\"\u003ehttps://github.com/fogleman/sdf\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46339920\"\u003ehttps://news.ycombinator.com/item?id=46339920\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Minimal Wim: a grid-based typography experiment",
+      "link": "https://raffinaderij.booreiland.amsterdam/minimalwim/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-20T21:42:02Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://raffinaderij.booreiland.amsterdam/minimalwim/\"\u003ehttps://raffinaderij.booreiland.amsterdam/minimalwim/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46339892\"\u003ehttps://news.ycombinator.com/item?id=46339892\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Unix Was a Love Letter to Agents",
+      "link": "https://vivekhaldar.com/articles/unix-love-letter-to-agents/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-20T21:40:50Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://vivekhaldar.com/articles/unix-love-letter-to-agents/\"\u003ehttps://vivekhaldar.com/articles/unix-love-letter-to-agents/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46339884\"\u003ehttps://news.ycombinator.com/item?id=46339884\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Deep Onboarding",
+      "link": "https://bits.logic.inc/p/deep-onboarding",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-20T21:37:58Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://bits.logic.inc/p/deep-onboarding\"\u003ehttps://bits.logic.inc/p/deep-onboarding\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46339867\"\u003ehttps://news.ycombinator.com/item?id=46339867\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Tell HN: Elon Musk is radio silent on Twitter for guessing Satoshi's identity",
+      "link": "https://news.ycombinator.com/item?id=46339849",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-20T21:35:38Z",
+      "description": "\n\u003cp\u003eMusk's usual pattern is to tweet, joke, and engage heavily with high-profile topics. His restraint and total silence on Twitter/X guessing Satoshi's identity (outside of a few prompted denials) are atypical and give rise to the question, Why?\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46339849\"\u003ehttps://news.ycombinator.com/item?id=46339849\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 3\u003c/p\u003e\n"
+    },
+    {
+      "title": "Sandboxed Claude Slack GIF Creator",
+      "link": "https://github.com/modal-projects/claude-slack-gif-creator",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-20T21:34:12Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/modal-projects/claude-slack-gif-creator\"\u003ehttps://github.com/modal-projects/claude-slack-gif-creator\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46339840\"\u003ehttps://news.ycombinator.com/item?id=46339840\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "PayPal's Honey Lawsuit Dismissed",
+      "link": "https://allaboutlawyer.com/paypals-honey-lawsuit-dismissed-federal-judge-gives-influencers-45-days-to-fix-potentially-misleading-claims/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-20T21:33:40Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://allaboutlawyer.com/paypals-honey-lawsuit-dismissed-federal-judge-gives-influencers-45-days-to-fix-potentially-misleading-claims/\"\u003ehttps://allaboutlawyer.com/paypals-honey-lawsuit-dismissed-federal-judge-gives-influencers-45-days-to-fix-potentially-misleading-claims/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46339835\"\u003ehttps://news.ycombinator.com/item?id=46339835\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: FileZen – Client-side PDF and Video tools using WebAssembly",
+      "link": "https://filezen.online/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-20T21:33:31Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://filezen.online/\"\u003ehttps://filezen.online/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46339833\"\u003ehttps://news.ycombinator.com/item?id=46339833\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Mullvad VPN: \"The EU Commission wants to save metadata”",
+      "link": "https://mastodon.online/@mullvadnet/115742532164170066",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-20T21:29:20Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://mastodon.online/@mullvadnet/115742532164170066\"\u003ehttps://mastodon.online/@mullvadnet/115742532164170066\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46339804\"\u003ehttps://news.ycombinator.com/item?id=46339804\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Prediction markets barely make money; sportsbooks make money",
+      "link": "https://www.ft.com/content/1ac03f57-bd5d-4196-85ff-4bd96dc69e0d",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-20T21:26:44Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.ft.com/content/1ac03f57-bd5d-4196-85ff-4bd96dc69e0d\"\u003ehttps://www.ft.com/content/1ac03f57-bd5d-4196-85ff-4bd96dc69e0d\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46339782\"\u003ehttps://news.ycombinator.com/item?id=46339782\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Claude in Chrome",
+      "link": "https://claude.com/chrome",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-20T21:26:14Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://claude.com/chrome\"\u003ehttps://claude.com/chrome\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46339777\"\u003ehttps://news.ycombinator.com/item?id=46339777\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Granule – A statically-typed linear functional language with graded modal types",
+      "link": "https://github.com/granule-project/granule",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-20T21:24:55Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/granule-project/granule\"\u003ehttps://github.com/granule-project/granule\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46339766\"\u003ehttps://news.ycombinator.com/item?id=46339766\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Open-source EV buyer's guide",
+      "link": "https://ev.makr.io",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-20T21:24:31Z",
+      "description": "\n\u003cp\u003eGot tired of piecing together EV info from Reddit threads, YouTube reviews, and manufacturer sites.\u003cp\u003eMade this to collect vehicle comparisons, charging network details, and cost calculators in one place.\u003cp\u003eEverything’s stored as JSON/MDX files, so it’s easy to contribute specs or fix outdated info. Built with Next.js. MIT licensed.\u003cp\u003eSource: \u003ca href=\"https://github.com/renedeanda/ev.makr.io\" rel=\"nofollow\"\u003ehttps://github.com/renedeanda/ev.makr.io\u003c/a\u003e\u003cp\u003eWhat did you wish you knew before buying your first EV?\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46339762\"\u003ehttps://news.ycombinator.com/item?id=46339762\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Anthropic: You can't change your Claude account email address",
+      "link": "https://support.claude.com/en/articles/8452276-how-do-i-change-the-email-address-associated-with-my-account",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-20T21:21:14Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://support.claude.com/en/articles/8452276-how-do-i-change-the-email-address-associated-with-my-account\"\u003ehttps://support.claude.com/en/articles/8452276-how-do-i-change-the-email-address-associated-with-my-account\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46339741\"\u003ehttps://news.ycombinator.com/item?id=46339741\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: On device gesture detection used for a Stranger Things inspired prank",
+      "link": "https://stranger-browsers.stream/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-20T21:20:39Z",
+      "description": "\n\u003cp\u003eA browser experiment: a webcam gesture triggers an Upside Down transformation.\nPrivacy: on device detection only, no recording, no upload.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46339738\"\u003ehttps://news.ycombinator.com/item?id=46339738\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Code Orange: Fail Small — our resilience plan following recent incidents",
+      "link": "https://blog.cloudflare.com/fail-small-resilience-plan/",
+      "source": "Cloudflare Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-19T22:35:30Z",
+      "description": " We have declared “Code Orange: Fail Small” to focus everyone at Cloudflare on a set of high-priority workstreams with one simple goal: ensure that the cause of our last two global outages never happens again. "
+    }
+  ],
+  "generatedAt": "2025-12-21T07:08:32.112059438+09:00"
+}
