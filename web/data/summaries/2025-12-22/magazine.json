@@ -1,0 +1,250 @@
+{
+  "date": "2025-12-22",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2025년 12월 22일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** 헐리우드급 AI 월드 시뮬레이터의 등장, 정전 사태로 멈춰 선 웨이모의 딜레마, 그리고 브로드컴의 라이선스 정책 변경이 불러올 파장.\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### 🌍 Odyssey: 월드 시뮬레이터의 서막 (The Dawn of a World Simulator)\nAI가 단순히 텍스트나 이미지를 생성하는 것을 넘어, 물리 법칙이 적용되는 가상 세계를 구축하는 단계로 진입했습니다. 'Odyssey'는 헐리우드 영화 수준의 시각적 충실도와 실제 세계의 물리적 상호작용을 결합한 새로운 AI 모델을 공개했습니다. 이는 게임 개발, 로봇 학습, 그리고 영화 제작 방식에 혁명적인 변화를 예고합니다. 단순한 비디오 생성을 넘어, 조작 가능한 3D 환경을 생성한다는 점에서 '생성형 AI'의 다음 챕터를 열었다는 평가입니다.\n\u003e **Key Point:** 텍스트-비디오 변환을 넘어, 물리 엔진이 적용된 '상호작용 가능한 가상 세계'를 생성하는 AI의 등장. [^11]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. 샌프란시스코 정전과 웨이모(Waymo)의 마비\n- **What:** 샌프란시스코에서 발생한 대규모 정전 사태 중, 웨이모의 자율주행 택시들이 교차로에서 멈춰 서며 교통 체증을 유발했습니다. 신호등이 꺼지자 차량들이 안전 모드로 진입하며 그대로 정지해버린 것입니다.\n- **Why:** 자율주행 AI는 불확실성이 극대화된 상황(수신호 부재, 신호등 소등 등)에서 보수적으로 작동하도록 설계되어 있습니다.\n- **Impact:** 자율주행 차량이 인프라 장애 상황에서 오히려 도로의 장애물이 될 수 있다는 '엣지 케이스'가 현실화됨에 따라, 비상 상황 대응 로직에 대한 규제 논의가 가속화될 전망입니다. [^24]\n\n### 2. 브로드컴(Broadcom), 라이선스 정책을 BSL로 변경\n- **What:** 브로드컴이 자사 소프트웨어 제품군의 라이선스를 BSL(Business Source License)로 변경하고 있습니다.\n- **Why:** VMware 인수 이후 수익성 강화를 위한 전략의 일환으로 보이며, 오픈소스의 자유로운 사용을 제한하고 상업적 이용에 대해 비용을 청구하겠다는 의도입니다.\n- **Impact:** 하시코프(HashiCorp) 등의 사례처럼, 엔터프라이즈 IT 생태계에서 '오픈소스'의 정의와 지속 가능성에 대한 논쟁이 다시 불붙을 것으로 보입니다. 기업들은 대안을 찾거나 비용 증가를 감수해야 합니다. [^14]\n\n### 3. 파키스탄의 태양광 붐: 완벽한 폭풍\n- **What:** 파키스탄에서 태양광 발전이 폭발적으로 성장하고 있습니다. 이는 정부의 주도가 아닌, 치솟는 전기 요금과 불안정한 전력 공급 때문에 시민들이 생존을 위해 선택한 결과입니다.\n- **Why:** 그리드 전력 비용 상승과 태양광 패널 가격 하락이 맞물리며 '그리드 패리티'를 넘어섰습니다.\n- **Impact:** 개발도상국에서 에너지 전환이 정책이 아닌 '경제적 필요'에 의해 얼마나 빠르게 일어날 수 있는지 보여주는 사례로, 글로벌 분산형 에너지 시장의 중요한 참고 모델이 되고 있습니다. [^19]\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **Flamehaven Tensor-Canon** | PyTorch/NumPy 텐서의 Shape과 데이터 드리프트(MMD)를 경량으로 검증하는 도구 (v0.1.4) [^3] |\n| **Tool** | **Charles Proxy** | HTTP 모니터링, 리버스 프록시 기능을 제공하는 개발자들의 필수 네트워크 디버깅 툴 [^7] |\n| **Tool** | **DiceBear** | 디자이너와 개발자를 위한 무료 오픈소스 아바타 이미지 생성 라이브러리 [^8] |\n| **Tool** | **PrivateStater** | Google Analytics를 대체하기 위해 개발된, 방문자 프라이버시 중심의 경량 분석 도구 [^9] |\n| **Demo** | **Pure Silicon Demo** | CPU나 메모리 없이 오직 4,000개의 로직 게이트만으로 구현한 놀라운 데모 코딩 [^10] |\n| **Tool** | **OpenSCAD** | 코드로 3D 모델을 설계하는 '프로그래머를 위한 3D CAD'의 매력 재조명 [^5] |\n| **Benchmark** | **Darts Vision** | 다트 게임 점수 계산을 위한 컴퓨터 비전 모델 성능 벤치마크 [^29] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n\n#### 💻 개발 \u0026 인프라\n* **Codex의 Skills 기능 도입**: GitHub Copilot의 기반인 Codex에 더 정교한 코딩 스킬 기능이 공식 추가됨. [^4]\n* **엔지니어링 도그마 은퇴시키기**: \"DRY(반복하지 마라)\" 등 무비판적으로 수용되는 엔지니어링 격언들에 대한 비판적 고찰. [^30]\n* **IaC(Infrastructure as Code) 확장 전략**: 바퀴를 다시 발명하지 않고 오픈소스를 활용해 인프라를 확장하는 방법론 [Video]. [^21]\n* **개발자를 위한 글쓰기**: Piotr Sarna와 함께하는 기술적 글쓰기의 중요성과 노하우 [Audio]. [^20]\n\n#### 🤖 AI \u0026 데이터\n* **크롬에서 사용하는 Claude**: 브라우저 환경에서 Anthropic의 Claude를 더 효율적으로 활용하는 방법. [^1]\n* **DeepMind 창업자의 2009년 예언**: 셰인 레그(Shane Legg)가 예측했던 AGI 도래 시점과 현재의 비교. [^22]\n* **맥킨지 경쟁 차트 10선**: 차세대 경쟁이 펼쳐질 주요 기술 및 비즈니스 아레나 분석 보고서. [^23]\n\n#### 🔬 과학 \u0026 미래 기술\n* **자기장 은폐 장치(Cloaking Device)**: 외부 자기장으로부터 전자기기를 보호하는 새로운 차폐 기술 개념. [^26]\n* **10억 년 된 곰팡이 화석**: 초기 균류로 추정되는 10억 년 전 화석 발견, 생명 진화의 비밀. [^16]\n* **말벌도 꿀을 만들까?**: 꿀벌과 달리 말벌은 꿀을 저장하지 않는 생태학적 이유 설명. [^27]\n* **운전자 40% THC 양성**: 차량 사고 사망 운전자 중 상당수가 대마초 성분(THC) 양성 반응을 보였다는 충격적 연구. [^6]\n\n#### 🎮 게임 \u0026 문화\n* **엑셀 월드 챔피언십 우승**: 아일랜드의 Diarmuid Early가 마이크로소프트 엑셀 세계 대회에서 우승 차지. [^2]\n* **디즈니의 로봇 올라프**: 디즈니 이매지니어링이 공개한 차세대 로봇 캐릭터, 애니메이션 같은 움직임 구현. [^15]\n* **GameNative**: 안드로이드에서 PC 게임을 구동할 수 있게 해주는 에뮬레이션/호환 레이어 프로젝트. [^28]\n* **Minecraft 플러그인을 Hytale로**: 차세대 샌드박스 게임 Hytale로 기존 마인크래프트 생태계를 이식하려는 시도. [^17]\n\n#### 🌐 웹 \u0026 라이프스타일\n* **스트리밍 서비스 대신 내 음악을**: 상용 스트리밍 대신 개인 소장 음악을 직접 스트리밍하는 방법론(2023). [^13]\n* **Pixels.rocks**: r/place처럼 누구나 픽셀을 찍어 그림을 그리는 실시간 협업 캔버스. [^18]\n* **YesRemoteJobs**: 더 깔끔하고 직관적인 UI를 제공하는 원격 근무 구인구직 플랫폼. [^25]\n* **1달러 피드백 툴**: 일요일 사이드 프로젝트로 개발된 초저가 사용자 피드백 수집 도구. [^12]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘 뉴스는 '**시뮬레이션과 현실의 충돌**'로 요약할 수 있습니다. AI는 'Odyssey'를 통해 현실을 더 정교하게 모방하려 하고, 현실의 도로 위에서는 'Waymo'가 예상치 못한 물리적 한계(정전)에 부딪혔습니다. 또한, 4,000개의 게이트만으로 데모를 구현한 장인 정신(Pure Silicon)과 엑셀로 세계 챔피언을 가리는 인간의 유희 본능이 기술과 어우러진 모습이 흥미롭습니다. 기술은 계속 발전하지만, 그 기술을 다루는 방식과 제도는 여전히 많은 고민이 필요해 보입니다.\n\n[^1]: 크롬에서 사용하는 Claude - https://news.hada.io/topic?id=25235\n[^2]: 아일랜드의 Diarmuid Early, 세계 Microsoft Excel 챔피언십 우승 - https://news.hada.io/topic?id=25234\n[^3]: Show GN: Flamehaven Tensor-Canon v0.1.4 - https://news.hada.io/topic?id=25233\n[^4]: Codex에 공식적으로 도입된 Skills 기능 - https://news.hada.io/topic?id=25231\n[^5]: OpenSCAD은 꽤 멋지다 - https://news.hada.io/topic?id=25230\n[^6]: 차량 사고 사망 운전자 중 40% 이상이 THC 양성 반응을 보였다는 연구 결과 - https://news.hada.io/topic?id=25229\n[^7]: Charles Proxy - https://news.hada.io/topic?id=25228\n[^8]: DiceBear - 무료 아바타 이미지 생성 라이브러리 - https://news.hada.io/topic?id=25227\n[^9]: Show GN: 쉬운 사용과 방문자 프라이버시를 위해 개발한 애널리틱스 도구 - PrivateStater - https://news.hada.io/topic?id=25226\n[^10]: 순수 실리콘 데모 코딩: CPU도 메모리도 없이 4천 게이트만으로 구현 - https://news.hada.io/topic?id=25225\n[^11]: The Dawn of a World Simulator - https://odyssey.ml/the-dawn-of-a-world-simulator\n[^12]: Show HN: I built a 1‑dollar feedback tool as a Sunday side project - https://onedollarfeedback.com/\n[^13]: I don't want streaming music, I just want to stream my music (2023) - https://www.coryd.dev/posts/2023/i-dont-want-streaming-music-i-just-want-to-stream-my-music\n[^14]: Broadcom Changing Licensing to BSL - https://news.ycombinator.com/item?id=46348861\n[^15]: Disney Imagineering Debuts Next-Generation Robotic Character, Olaf - https://disneyparksblog.com/disney-experiences/robotic-olaf-marks-new-era-of-disney-innovation/\n[^16]: Billion-year-old fossils may be early fungus - https://arstechnica.com/science/2019/05/billion-year-old-fossils-may-be-early-fungus/\n[^17]: Porting Minecraft Plugins to Hytale - https://hytaleservers.com.br\n[^18]: Show HN: Pixels.rocks – Collaborative pixel canvas like R/place, always online - https://pixels.rocks/\n[^19]: The Perfect Storm Fueling Pakistan's Solar Boom - https://www.wri.org/insights/pakistan-solar-energy-boom\n[^20]: Writing for Developers with Piotr Sarna [audio] - https://overcommitted.dev/ep-38-writing-for-developers-with-piotr-sarna/\n[^21]: Don't reinvent the wheel: open-source and IaC at scale [video] - https://www.youtube.com/watch?v=V2UFz9_IjAw\n[^22]: DeepMind CoFounder Shane Legg: Tick, tock, tick, tock Bing [2009] - http://www.vetta.org/2009/12/tick-tock-tick-tock-bing/\n[^23]: Capturing the next big arenas of competition in 10 charts - https://www.mckinsey.com/mgi/our-research/capturing-the-next-big-arenas-of-competition-in-ten-charts\n[^24]: Waymos Froze, Blocked Traffic During San Francisco Power Outage - https://www.bloomberg.com/news/articles/2025-12-21/waymos-froze-blocked-traffic-during-san-francisco-power-outage\n[^25]: Show HN: YesRemoteJobs – a cleaner way to find remote work - https://yesremotejobs.com\n[^26]: New 'cloaking device' shields electronics from disruptive magnetic fields - https://phys.org/news/2025-12-cloaking-device-concept-shields-electronics.html\n[^27]: Do Wasps Make Honey - https://waspworld.com/do-wasps-make-honey/\n[^28]: GameNative: PC Gaming on Android - https://gamenative.app/\n[^29]: Show HN: Darts Vision Benchmark - https://darteval.vercel.app/darts-vision/dashboard\n[^30]: Engineering dogmas it's time to retire – by Anton Zaides - https://newsletter.manager.dev/p/5-engineering-dogmas-its-time-to\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **크롬에서 사용하는 Claude**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25235\n\n2. **아일랜드의 Diarmuid Early, 세계 Microsoft Excel 챔피언십 우승**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25234\n\n3. **Show GN: Flamehaven Tensor-Canon v0.1.4 - 파이토치/넘파이 텐서 Shape + Drift(MMD) 경량 검증기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25233\n\n4. **Codex에 공식적으로 도입된 Skills 기능**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25231\n\n5. **OpenSCAD은 꽤 멋지다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25230\n\n6. **차량 사고 사망 운전자 중 40% 이상이 THC 양성 반응을 보였다는 연구 결과**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25229\n\n7. **Charles Proxy**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25228\n\n8. **DiceBear - 무료 아바타 이미지 생성 라이브러리**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25227\n\n9. **Show GN: 쉬운 사용과 방문자 프라이버시를 위해 개발한 애널리틱스 도구 - PrivateStater**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25226\n\n10. **순수 실리콘 데모 코딩: CPU도 메모리도 없이 4천 게이트만으로 구현**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25225\n\n11. **The Dawn of a World Simulator**\n   - 출처: Hacker News\n   - 링크: https://odyssey.ml/the-dawn-of-a-world-simulator\n\n12. **Show HN: I built a 1‑dollar feedback tool as a Sunday side project**\n   - 출처: Hacker News\n   - 링크: https://onedollarfeedback.com/\n\n13. **I don't want streaming music, I just want to stream my music (2023)**\n   - 출처: Hacker News\n   - 링크: https://www.coryd.dev/posts/2023/i-dont-want-streaming-music-i-just-want-to-stream-my-music\n\n14. **Broadcom Changing Licensing to BSL**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=46348861\n\n15. **Disney Imagineering Debuts Next-Generation Robotic Character, Olaf**\n   - 출처: Hacker News\n   - 링크: https://disneyparksblog.com/disney-experiences/robotic-olaf-marks-new-era-of-disney-innovation/\n\n16. **Billion-year-old fossils may be early fungus**\n   - 출처: Hacker News\n   - 링크: https://arstechnica.com/science/2019/05/billion-year-old-fossils-may-be-early-fungus/\n\n17. **Porting Minecraft Plugins to Hytale**\n   - 출처: Hacker News\n   - 링크: https://hytaleservers.com.br\n\n18. **Show HN: Pixels.rocks – Collaborative pixel canvas like R/place, always online**\n   - 출처: Hacker News\n   - 링크: https://pixels.rocks/\n\n19. **The Perfect Storm Fueling Pakistan's Solar Boom**\n   - 출처: Hacker News\n   - 링크: https://www.wri.org/insights/pakistan-solar-energy-boom\n\n20. **Writing for Developers with Piotr Sarna [audio]**\n   - 출처: Hacker News\n   - 링크: https://overcommitted.dev/ep-38-writing-for-developers-with-piotr-sarna/\n\n21. **Don't reinvent the wheel: open-source and IaC at scale [video]**\n   - 출처: Hacker News\n   - 링크: https://www.youtube.com/watch?v=V2UFz9_IjAw\n\n22. **DeepMind CoFounder Shane Legg: Tick, tock, tick, tock Bing [2009]**\n   - 출처: Hacker News\n   - 링크: http://www.vetta.org/2009/12/tick-tock-tick-tock-bing/\n\n23. **Capturing the next big arenas of competition in 10 charts**\n   - 출처: Hacker News\n   - 링크: https://www.mckinsey.com/mgi/our-research/capturing-the-next-big-arenas-of-competition-in-ten-charts\n\n24. **Waymos Froze, Blocked Traffic During San Francisco Power Outage**\n   - 출처: Hacker News\n   - 링크: https://www.bloomberg.com/news/articles/2025-12-21/waymos-froze-blocked-traffic-during-san-francisco-power-outage\n\n25. **Show HN: YesRemoteJobs – a cleaner way to find remote work**\n   - 출처: Hacker News\n   - 링크: https://yesremotejobs.com\n\n26. **New 'cloaking device' shields electronics from disruptive magnetic fields**\n   - 출처: Hacker News\n   - 링크: https://phys.org/news/2025-12-cloaking-device-concept-shields-electronics.html\n\n27. **Do Wasps Make Honey**\n   - 출처: Hacker News\n   - 링크: https://waspworld.com/do-wasps-make-honey/\n\n28. **GameNative: PC Gaming on Android**\n   - 출처: Hacker News\n   - 링크: https://gamenative.app/\n\n29. **Show HN: Darts Vision Benchmark**\n   - 출처: Hacker News\n   - 링크: https://darteval.vercel.app/darts-vision/dashboard\n\n30. **Engineering dogmas it's time to retire – by Anton Zaides**\n   - 출처: Hacker News\n   - 링크: https://newsletter.manager.dev/p/5-engineering-dogmas-its-time-to\n\n\n",
+  "articles": [
+    {
+      "title": "크롬에서 사용하는 Claude",
+      "link": "https://news.hada.io/topic?id=25235",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-22T05:33:04+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eClaude in Chrome\u003c/strong\u003e은 브라우저 내에서 버튼 클릭, 폼 작성, 페이지 탐색을 수행할 수 있는 \u003cstrong\u003eAI 확장 프로그램\u003c/strong\u003e으로, 현재 \u003cstrong\u003e베타 버전\u003c/strong\u003e으로 제공됨\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e유료 구독자 전용 기능\u003c/strong\u003e이며, Claude Code 및 Claude Desktop과 연동되어 개발·업무 ...\u003c/p\u003e"
+    },
+    {
+      "title": "아일랜드의 Diarmuid Early, 세계 Microsoft Excel 챔피언십 우승",
+      "link": "https://news.hada.io/topic?id=25234",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-22T04:32:53+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eExcel e스포츠 세계대회\u003c/strong\u003e에서 아일랜드 출신 Diarmuid Early가 2025년 우승을 차지하며 ‘스프레드시트의 LeBron James’로 불림\u003c/li\u003e\n\u003cli\u003e라스베이거스 HyperX 아레나에서 열린 결승전에는 \u003cstrong\u003e256명의 참가자\u003c/strong\u003e가 예선을 거쳐 24명이 최종 진출\u003c/li\u003e\n\u003cli\u003e대회는 \u003cstrong\u003e30분 제...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: Flamehaven Tensor-Canon v0.1.4 - 파이토치/넘파이 텐서 Shape + Drift(MMD) 경량 검증기",
+      "link": "https://news.hada.io/topic?id=25233",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-22T03:35:07+09:00",
+      "description": "\u003cp\u003e안녕하세요.\u003cbr /\u003e\n이번 주에는 \u003cstrong\u003eFlamehaven Tensor-Canon (v0.1.4)\u003c/strong\u003e 를 공유합니다.\u003c/p\u003e\n\u003chr /\u003e\n\u003cp\u003e파이토치(PyTorch)로 개발하다 보면 텐서 \u003cstrong\u003eshape\u003c/strong\u003e가 늘 신경 쓰입니다.\u003cbr /\u003e\n예를 들어 이미지 입력이면 보통 \u003cstrong\u003eNCHW\u003c/strong\u003e\u003cbr /\u003e\n(배치 N, 채널 C, 높이 H, 너비 W) 같은 "
+    },
+    {
+      "title": "Codex에 공식적으로 도입된 Skills 기능",
+      "link": "https://news.hada.io/topic?id=25231",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-22T02:37:08+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eAgent Skills\u003c/strong\u003e은 Codex에 \u003cstrong\u003e작업별 전문 능력\u003c/strong\u003e을 추가해 특정 워크플로를 안정적으로 수행하게 하는 확장 구조\u003c/li\u003e\n\u003cli\u003e각 스킬은 \u003ccode\u003eSKILL.md\u003c/code\u003e 파일과 선택적 \u003cstrong\u003e스크립트·리소스·에셋\u003c/strong\u003e으로 구성되어, 팀이나 커뮤니티 간 \u003cstrong\u003e공유 가능\u003c/strong\u003e\n...\u003c/p\u003e"
+    },
+    {
+      "title": "OpenSCAD은 꽤 멋지다",
+      "link": "https://news.hada.io/topic?id=25230",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-22T02:34:07+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eOpenSCAD\u003c/strong\u003e를 이용해 간단한 \u003cstrong\u003e배터리 홀더\u003c/strong\u003e를 설계하며 코드 기반 CAD의 기본 개념을 탐구한 사례\u003c/li\u003e\n\u003cli\u003e기존에는 \u003cstrong\u003eAutodesk Fusion\u003c/strong\u003e으로 AA·AAA 배터리용 파라미터화된 상자를 만들었으나, 이를 \u003cstrong\u003eOpenSCAD로 재구현\u003c/strong\u003e하며 학습 진행\u003c/li\u003e\n\u003cli...\u003c/p\u003e"
+    },
+    {
+      "title": "차량 사고 사망 운전자 중 40% 이상이 THC 양성 반응을 보였다는 연구 결과",
+      "link": "https://news.hada.io/topic?id=25229",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-22T01:33:31+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e오하이오주 몽고메리 카운티에서 6년간 조사된 \u003cstrong\u003e246명의 사망 운전자 중 41.9%\u003c/strong\u003e 가 혈중에서 \u003cstrong\u003e활성 THC\u003c/strong\u003e 양성 반응을 보임\u003c/li\u003e\n\u003cli\u003e평균 \u003cstrong\u003eTHC 농도는 30.7ng/mL\u003c/strong\u003e로, 대부분 주의 법적 운전 기준치(2~5ng/mL)를 크게 초과\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e2023년 오하이오주의...\u003c/p\u003e"
+    },
+    {
+      "title": "Charles Proxy",
+      "link": "https://news.hada.io/topic?id=25228",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-21T22:32:56+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eHTTP 및 HTTPS 트래픽을 시각적으로 분석\u003c/strong\u003e할 수 있는 웹 디버깅 프록시 도구로, 요청·응답·헤더 정보를 모두 확인 가능\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eReverse Proxy, SSL Proxy, HTTP Monitor\u003c/strong\u003e 기능을 통합해 개발자가 네트워크 통신을 세밀하게 추적할 수 있음\u003c/li\u003e\n\u003cli\u003e최신 버전 \u003cstrong\u003eCha...\u003c/p\u003e"
+    },
+    {
+      "title": "DiceBear - 무료 아바타 이미지 생성 라이브러리",
+      "link": "https://news.hada.io/topic?id=25227",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-21T22:05:07+09:00",
+      "description": "\u003cp\u003e프로필 이미지를 자동생성해주는 라이브러리를 찾던 중 좋은 서비스? 라이브러리? 를 발견해서 공유합니다.\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eidenticon 처럼 딱딱하고 지루하지 않은 아바타 생성기\u003c/li\u003e\n\u003cli\u003eJS 라이브러리, command line 명령어, http api 제공 (무료)\u003c/li\u003e\n\u003cli\u003e현재 \u003ca href=\"https://www.dicebear.com/styles/\"\u003e30개 "
+    },
+    {
+      "title": "Show GN: 쉬운 사용과 방문자 프라이버시를 위해 개발한 애널리틱스 도구 - PrivateStater",
+      "link": "https://news.hada.io/topic?id=25226",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-21T18:49:51+09:00",
+      "description": "\u003ch2\u003e개발한 이유\u003c/h2\u003e\n\u003cp\u003e기존에는 웹사이트 애널리틱스 도구로 구글 애널리틱스를 사용했었는데 기능은 많지만 많은만큼 어렵습니다.\u003cbr /\u003e\n지금 몇명이 접속해있는지는 쉽게 알수 있는데 어떤 브라우저, 어떤 경로, 어떤 캠페인을 통해 들어왔는지를 보려면 검색해서 찾아봐야할 정도로 초보자가 사용하기 쉽지 않습니...\u003c/p\u003e"
+    },
+    {
+      "title": "순수 실리콘 데모 코딩: CPU도 메모리도 없이 4천 게이트만으로 구현",
+      "link": "https://news.hada.io/topic?id=25225",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-21T17:32:37+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eTiny Tapeout 8\u003c/strong\u003e 데모 대회에서 약 4천개의 논리 게이트만으로 \u003cstrong\u003eVGA 그래픽과 1비트 오디오\u003c/strong\u003e를 출력하는 두 가지 ASIC 데모를 제작\u003c/li\u003e\n\u003cli\u003e첫 번째 작품은 \u003cstrong\u003e3D 체커보드, 별 배경, 스크롤 텍스트, 음악\u003c/strong\u003e을 포함한 전통적 데모씬 스타일의 인트로로, \u003cstrong\u003e...\u003c/p\u003e"
+    },
+    {
+      "title": "The Dawn of a World Simulator",
+      "link": "https://odyssey.ml/the-dawn-of-a-world-simulator",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-21T21:57:56Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://odyssey.ml/the-dawn-of-a-world-simulator\"\u003ehttps://odyssey.ml/the-dawn-of-a-world-simulator\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46348959\"\u003ehttps://news.ycombinator.com/item?id=46348959\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: I built a 1‑dollar feedback tool as a Sunday side project",
+      "link": "https://onedollarfeedback.com/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-21T21:52:03Z",
+      "description": "\n\u003cp\u003eI’ve always found it funny how simple feedback widgets end up as $20–$30/month products.\nThe tech is dead simple, infra is cheap, and most of us here could rebuild one in a weekend.\u003cp\u003eSo as a “principle experiment” I built my own today as a side project and priced it at 1 dollar.\nJust because if something is cheap to run and easy to replicate, it should be priced accordingly, and it’s also fun marketing.\u003cp\u003e1$ feedback tool.\u003cp\u003eShipped today, got the first users/moneys today, writing this post today.\nSide Sunday project, then back to the main product tomorrow.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46348900\"\u003ehttps://news.ycombinator.com/item?id=46348900\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "I don't want streaming music, I just want to stream my music (2023)",
+      "link": "https://www.coryd.dev/posts/2023/i-dont-want-streaming-music-i-just-want-to-stream-my-music",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-21T21:49:48Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.coryd.dev/posts/2023/i-dont-want-streaming-music-i-just-want-to-stream-my-music\"\u003ehttps://www.coryd.dev/posts/2023/i-dont-want-streaming-music-i-just-want-to-stream-my-music\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46348879\"\u003ehttps://news.ycombinator.com/item?id=46348879\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Broadcom Changing Licensing to BSL",
+      "link": "https://news.ycombinator.com/item?id=46348861",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-21T21:47:35Z",
+      "description": "\n\u003cp\u003eI am not sure if this is part of the Bitnami Helm Chart Fiasco, but they seem to be changing open source projects from Apache to BSL.\u003cp\u003eWas looking at chart-syncer, and found: https://github.com/bitnami/charts-syncer/issues/307\u003cp\u003eAnd it depends on some tooling from VMware, which has the same notice: https://github.com/vmware-labs/distribution-tooling-for-helm/issues/132\u003cp\u003eNot that I'm surprised, just stumbled across this.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46348861\"\u003ehttps://news.ycombinator.com/item?id=46348861\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Disney Imagineering Debuts Next-Generation Robotic Character, Olaf",
+      "link": "https://disneyparksblog.com/disney-experiences/robotic-olaf-marks-new-era-of-disney-innovation/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-21T21:46:20Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://disneyparksblog.com/disney-experiences/robotic-olaf-marks-new-era-of-disney-innovation/\"\u003ehttps://disneyparksblog.com/disney-experiences/robotic-olaf-marks-new-era-of-disney-innovation/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46348847\"\u003ehttps://news.ycombinator.com/item?id=46348847\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Billion-year-old fossils may be early fungus",
+      "link": "https://arstechnica.com/science/2019/05/billion-year-old-fossils-may-be-early-fungus/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-21T21:46:09Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://arstechnica.com/science/2019/05/billion-year-old-fossils-may-be-early-fungus/\"\u003ehttps://arstechnica.com/science/2019/05/billion-year-old-fossils-may-be-early-fungus/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46348843\"\u003ehttps://news.ycombinator.com/item?id=46348843\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Porting Minecraft Plugins to Hytale",
+      "link": "https://hytaleservers.com.br",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-21T21:44:10Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://hytaleservers.com.br\"\u003ehttps://hytaleservers.com.br\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46348830\"\u003ehttps://news.ycombinator.com/item?id=46348830\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Pixels.rocks – Collaborative pixel canvas like R/place, always online",
+      "link": "https://pixels.rocks/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-21T21:39:55Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://pixels.rocks/\"\u003ehttps://pixels.rocks/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46348795\"\u003ehttps://news.ycombinator.com/item?id=46348795\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Perfect Storm Fueling Pakistan's Solar Boom",
+      "link": "https://www.wri.org/insights/pakistan-solar-energy-boom",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-21T21:39:49Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.wri.org/insights/pakistan-solar-energy-boom\"\u003ehttps://www.wri.org/insights/pakistan-solar-energy-boom\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46348794\"\u003ehttps://news.ycombinator.com/item?id=46348794\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Writing for Developers with Piotr Sarna [audio]",
+      "link": "https://overcommitted.dev/ep-38-writing-for-developers-with-piotr-sarna/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-21T21:38:57Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://overcommitted.dev/ep-38-writing-for-developers-with-piotr-sarna/\"\u003ehttps://overcommitted.dev/ep-38-writing-for-developers-with-piotr-sarna/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46348785\"\u003ehttps://news.ycombinator.com/item?id=46348785\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Don't reinvent the wheel: open-source and IaC at scale [video]",
+      "link": "https://www.youtube.com/watch?v=V2UFz9_IjAw",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-21T21:38:35Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.youtube.com/watch?v=V2UFz9_IjAw\"\u003ehttps://www.youtube.com/watch?v=V2UFz9_IjAw\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46348779\"\u003ehttps://news.ycombinator.com/item?id=46348779\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "DeepMind CoFounder Shane Legg: Tick, tock, tick, tock Bing [2009]",
+      "link": "http://www.vetta.org/2009/12/tick-tock-tick-tock-bing/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-21T21:38:24Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"http://www.vetta.org/2009/12/tick-tock-tick-tock-bing/\"\u003ehttp://www.vetta.org/2009/12/tick-tock-tick-tock-bing/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46348777\"\u003ehttps://news.ycombinator.com/item?id=46348777\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Capturing the next big arenas of competition in 10 charts",
+      "link": "https://www.mckinsey.com/mgi/our-research/capturing-the-next-big-arenas-of-competition-in-ten-charts",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-21T21:37:19Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.mckinsey.com/mgi/our-research/capturing-the-next-big-arenas-of-competition-in-ten-charts\"\u003ehttps://www.mckinsey.com/mgi/our-research/capturing-the-next-big-arenas-of-competition-in-ten-charts\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46348766\"\u003ehttps://news.ycombinator.com/item?id=46348766\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Waymos Froze, Blocked Traffic During San Francisco Power Outage",
+      "link": "https://www.bloomberg.com/news/articles/2025-12-21/waymos-froze-blocked-traffic-during-san-francisco-power-outage",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-21T21:36:34Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.bloomberg.com/news/articles/2025-12-21/waymos-froze-blocked-traffic-during-san-francisco-power-outage\"\u003ehttps://www.bloomberg.com/news/articles/2025-12-21/waymos-froze-blocked-traffic-during-san-francisco-power-outage\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46348762\"\u003ehttps://news.ycombinator.com/item?id=46348762\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: YesRemoteJobs – a cleaner way to find remote work",
+      "link": "https://yesremotejobs.com",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-21T21:35:07Z",
+      "description": "\n\u003cp\u003eI just launched YesRemoteJobs.\u003cp\u003eAlready 223 companies integrated. I will add new ones daily.\u003cp\u003e100% free to use - no account needed.\u003cp\u003eWhat features would make this more useful for your job search?\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46348750\"\u003ehttps://news.ycombinator.com/item?id=46348750\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "New 'cloaking device' shields electronics from disruptive magnetic fields",
+      "link": "https://phys.org/news/2025-12-cloaking-device-concept-shields-electronics.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-21T21:33:08Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://phys.org/news/2025-12-cloaking-device-concept-shields-electronics.html\"\u003ehttps://phys.org/news/2025-12-cloaking-device-concept-shields-electronics.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46348733\"\u003ehttps://news.ycombinator.com/item?id=46348733\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Do Wasps Make Honey",
+      "link": "https://waspworld.com/do-wasps-make-honey/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-21T21:31:01Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://waspworld.com/do-wasps-make-honey/\"\u003ehttps://waspworld.com/do-wasps-make-honey/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46348711\"\u003ehttps://news.ycombinator.com/item?id=46348711\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 2\u003c/p\u003e\n"
+    },
+    {
+      "title": "GameNative: PC Gaming on Android",
+      "link": "https://gamenative.app/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-21T21:29:46Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://gamenative.app/\"\u003ehttps://gamenative.app/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46348697\"\u003ehttps://news.ycombinator.com/item?id=46348697\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Darts Vision Benchmark",
+      "link": "https://darteval.vercel.app/darts-vision/dashboard",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-21T21:27:26Z",
+      "description": "\n\u003cp\u003eDetecting the correct score from a dartboard photo is unexpectedly hard for LLMs.\u003cp\u003eThe task appears to stress spatial reasoning: Gemini 3 models lead this benchmark by a decent margin.\u003cp\u003eCounterintuitively, “more reasoning” often reduces accuracy.\u003cp\u003eEven the top-performing model scores only ~36% of darts correctly.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46348679\"\u003ehttps://news.ycombinator.com/item?id=46348679\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Engineering dogmas it's time to retire – by Anton Zaides",
+      "link": "https://newsletter.manager.dev/p/5-engineering-dogmas-its-time-to",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-21T21:26:09Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://newsletter.manager.dev/p/5-engineering-dogmas-its-time-to\"\u003ehttps://newsletter.manager.dev/p/5-engineering-dogmas-its-time-to\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46348660\"\u003ehttps://news.ycombinator.com/item?id=46348660\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    }
+  ],
+  "generatedAt": "2025-12-22T07:09:08.10314385+09:00"
+}
