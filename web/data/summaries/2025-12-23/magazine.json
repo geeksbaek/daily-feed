@@ -1,0 +1,354 @@
+{
+  "date": "2025-12-23",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2025년 12월 22일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** OpenAI와 Google의 AI 안전성 및 성과 대결, 자율주행의 현실적 한계, 그리고 개발자를 위한 Python 및 인프라 도구들의 대거 업데이트.\n\n---\n\n## 🏆 Top Story: AI 보안의 최전선\n### OpenAI, 프롬프트 인젝션 방어를 위한 'Atlas' 강화\nOpenAI가 대규모 언어 모델(LLM)의 고질적인 취약점인 '프롬프트 인젝션(Prompt Injection)'과 '탈옥(Jailbreak)'을 방지하기 위해 내부 보안 도구인 **Atlas**를 대폭 강화했습니다. 이는 모델이 사용자의 악의적인 명령을 따르지 않도록 훈련 데이터와 추론 과정을 정제하는 기술입니다.\n*   **핵심 기술:** 적대적 훈련(Adversarial Training) 자동화 및 실시간 방어 메커니즘 적용.\n*   **의의:** 기업용 AI 도입의 가장 큰 걸림돌인 보안 문제를 해결하려는 의지로, 엔터프라이즈 시장에서의 신뢰도 확보가 목표입니다.\n\u003e **Key Point:** AI 모델의 '방패'를 튼튼히 하여, 악의적 공격으로부터 시스템을 보호하고 기업 도입을 가속화하려는 전략입니다. [^1]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. Google의 2025년 AI 대공세 결산\nGoogle이 2025년 한 해 동안 발표한 60가지 주요 AI 뉴스를 정리했습니다. Gemini 모델의 진화부터 영상 생성 AI인 Veo, 그리고 각종 인프라 혁신까지 포함됩니다.\n- **What:** 검색, 워크스페이스, 안드로이드 전반에 걸친 AI 통합 및 모델 성능 향상.\n- **Why:** OpenAI 및 앤스로픽과의 경쟁에서 생태계 우위를 점하기 위함.\n- **Impact:** 2026년에는 단순한 '생성'을 넘어 구글 생태계 내에서 '행동'하는 에이전트 AI가 주류가 될 전망입니다. [^3][^18][^21]\n\n### 2. a16z 선정 2025 B2C AI 앱 트렌드\n실리콘밸리 벤처캐피탈 a16z가 소비자 대상(B2C) AI 애플리케이션 시장을 분석했습니다.\n- **What:** 챗봇을 넘어선 창작, 교육, 엔터테인먼트 분야의 특화 앱 부상.\n- **Why:** 범용 모델(ChatGPT 등)이 해결해주지 못하는 니치(Niche)한 요구사항을 공략.\n- **Impact:** 'AI의 소비'가 아닌 'AI를 활용한 생산'과 '개인화된 경험'이 비즈니스 모델의 핵심이 되고 있습니다. [^12]\n\n### 3. 샌프란시스코 정전과 Waymo의 멈춤\n샌프란시스코에서 발생한 정전 사태 중 Waymo 자율주행 택시들이 교통 혼잡을 유발하고 서비스를 중단했습니다.\n- **What:** 신호등이 꺼진 교차로 등 돌발 상황에서 자율주행 차량들이 적절히 대응하지 못하고 정체 유발.\n- **Why:** 통신망 불안정 및 예외 상황(Edge Case)에 대한 판단 알고리즘의 한계.\n- **Impact:** 완전 자율주행 상용화를 위해서는 차량 자체의 지능뿐만 아니라, 도시 인프라와의 연계 및 비상 대응 프로토콜이 필수적임을 시사합니다. [^9]\n\n### 4. 비상 상황에서 빛난 'Autoland' 기술\n조종사가 의식을 잃은 킹에어(King Air) 비행기가 '오토랜드(Autoland)' 기능을 통해 스스로 안전하게 착륙했습니다.\n- **What:** 조종사 무통신 상태를 감지하고 자동으로 가장 가까운 공항을 찾아 착륙까지 수행.\n- **Why:** 민간 항공기 안전 기술의 비약적 발전.\n- **Impact:** FAA와 NTSB가 조사에 착수했으나, 이 기술이 실제 인명을 구한 사례로 기록되며 항공 안전 시스템의 표준이 될 가능성이 높습니다. [^7]\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **Bloom** | Anthropic에서 공개한 AI 모델 행동 평가(Evals) 자동화 오픈소스 도구. [^29] |\n| **Tool** | **Spring AI Playground** | 노코드 툴 스튜디오, 라이브 MCP 서버, 에이전트 챗을 지원하는 Spring 기반 개발 환경. [^16] |\n| **Survey** | **Python Typing 2025** | Meta 조사 결과, 개발자들이 파이썬의 타입 힌트를 도입하는 주된 이유는 '코드 품질'과 '유연성' 때문임. [^6] |\n| **Guide** | **Ingress Nginx Migration** | Ingress Nginx 컨트롤러 은퇴에 따른 포괄적인 마이그레이션 가이드. [^36] |\n| **Lib** | **TanStack Query** | React Query에서 병렬 쿼리 중복을 제거(Deduplicating)하는 고급 패턴 분석. [^23] |\n| **HW** | **Txtempus** | 라즈베리 파이를 사용하여 전파 시계(Radio time station) 신호를 송출하는 송신기 프로젝트. [^25] |\n| **App** | **SkiBlackBox** | 데이터가 폰 밖으로 나가지 않는 100% 오프라인 AI 스키 코칭 앱. [^26] |\n| **Science** | **4D Human Genome** | 과학자들이 인간 게놈을 3차원 구조에 '시간'을 더해 4차원으로 매핑하는 데 성공. [^28] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n\n#### 💻 개발 \u0026 인프라 \u0026 보안\n*   **Chrome Dev Update**: 데스크톱(134.0.6998.2) 및 안드로이드용 크롬 개발자 버전이 업데이트되었습니다. [^4][^5]\n*   **Phantom Shuttle 주의보**: VPN으로 위장하여 데이터를 가로채는 악성 크롬 확장프로그램이 발견되었습니다. [^27]\n*   **Cloudflare Workers**: 클라우드플레어가 내부 유지보수 스케줄링 파이프라인을 자사의 Workers로 구축한 사례를 공유했습니다. [^42]\n*   **로컬 코딩 모델 가이드**: 클라우드 의존 없이 로컬에서 돌릴 수 있는 코딩용 AI 모델 정리. [^14]\n*   **Passkeys 설명**: 비밀번호 없는 미래, 패스키(Passkeys)의 원리와 장점을 설명한 영상입니다. [^37]\n*   **배포의 의식(The Ritual of the Deploy)**: 소프트웨어 배포 과정의 심리적, 기술적 의식을 다룬 에세이(2021). [^41]\n\n#### 🤖 AI \u0026 데이터 \u0026 이슈\n*   **Google 의료 AI의 환각**: 구글의 의료용 AI(Med-Gemini)가 존재하지 않는 신체 부위를 지어낸 사례가 보고되어 의료계의 우려를 낳고 있습니다. [^24]\n*   **AI의 진짜 초능력**: AI의 핵심은 콘텐츠 '생성'이 아니라 방대한 정보를 처리하는 '소비' 능력에 있다는 통찰. [^15]\n*   **AI 누드 이미지 퇴학 사건**: 남학생들이 여학생의 AI 생성 누드 이미지를 공유하여 퇴학당한 사건이 발생했습니다. [^34]\n*   **NVIDIA \u0026 해양생물학**: NVIDIA가 AI와 VR을 활용해 해양생물연구소(MBL)와 함께 인간 기억의 메커니즘을 연구합니다. [^43]\n*   **Your Year with ChatGPT**: OpenAI가 제공하는 ChatGPT 사용 기록 연말 결산 기능입니다. [^30]\n*   **One in a million**: OpenAI가 AI의 미래를 만들어가는 혁신적인 고객 사례들을 소개했습니다. [^2]\n\n#### 🔬 과학 \u0026 하드웨어 \u0026 기타\n*   **CO₂ 배터리 확산**: 이산화탄소를 활용해 전력망 에너지를 저장하는 친환경 배터리 기술이 전 세계로 퍼지고 있습니다. [^10]\n*   **디즈니 로봇 '올라프'**: 디즈니 이매지니어링이 걷고 상호작용하는 차세대 로봇 캐릭터를 공개했습니다. [^8]\n*   **SunCalc**: 지도상에서 일출/일몰 라인을 시각적으로 오버레이하여 보여주는 도구. [^38]\n*   **DACs and ADCs**: 디지털-아날로그 변환의 원리와 역사에 대한 심층 기술 블로그. [^39]\n*   **Brimar 밸브 프로젝트**: 영국의 진공관(Valve) 제조 부활 프로젝트 소식. [^33]\n\n#### 📚 문화 \u0026 사회 \u0026 인사이트\n*   **번아웃 vs 존재적 굶주림**: 당신이 지친 것은 일이 많아서가 아니라, 영혼을 채워줄 의미 있는 활동이 부족해서일 수 있습니다. [^11]\n*   **인터넷의 끝**: AI로 생성된 스팸과 콘텐츠로 인해 우리가 알던 인터넷이 종말을 고하고 있다는 비평. [^13]\n*   **Google Arts \u0026 Culture**: 2025년 연말을 즐기는 5가지 예술적 방법. [^17]\n*   **Google Photos**: 2025년 사진 결산(Recap)을 만드는 5가지 팁. [^19]\n*   **Google Energy**: 미국 에너지 혁신을 위한 'Intersect' 프로젝트 추진 현황. [^20]\n*   **2026 추천 도서**: 해커뉴스 유저들이 추천하는 틈새 주제에 대한 깊은 통찰을 주는 책들. [^22]\n*   **뜨거운 손의 오류(Hot Hand)**: 제퍼디(Jeopardy) 게임 데이터를 통해 본 인간의 합리적/비합리적 믿음에 관한 연구. [^35]\n*   **블레이드 러너 특수효과**: 1982년 영화의 전설적인 특수 촬영 기법을 다룬 2020년 기사. [^40]\n*   **엡스타인 영상 공개**: 미 법무부(DOJ)가 엡스타인의 자살 시도 장면이 담긴 12초 분량의 영상을 공개했습니다. [^31]\n*   **편향(Bias)에 대한 경고**: 편향이 어떻게 삶을 망치는지 설명하는 교육 영상. [^32]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘은 **AI의 '빛과 그림자'**가 뚜렷하게 대비되는 날입니다. OpenAI와 Google은 기술의 정점을 자랑하고 있지만, 한편으론 의료 AI의 환각(Hallucination)과 자율주행차의 정체 유발, 딥페이크 악용 같은 부작용도 동시에 터져 나오고 있습니다. 기술의 발전 속도만큼이나, 이를 통제하고 올바르게 사용하는 '안전장치'에 대한 고민이 더욱 깊어져야 할 시점입니다. 개발자분들은 Meta의 파이썬 타이핑 조사나 Anthropic의 Bloom 도구 같은 실용적인 리소스를 꼭 챙겨보시길 바랍니다.\n\n{{Footnotes}}\n[^1]: Continuously hardening ChatGPT Atlas against prompt injection - https://openai.com/index/hardening-atlas-against-prompt-injection\n[^2]: One in a million: celebrating the customers shaping AI’s future - https://openai.com/index/one-in-a-million-customers\n[^3]: 60 of our biggest AI announcements in 2025 - https://blog.google/technology/ai/google-ai-news-recap-2025/\n[^4]: Chrome Dev for Desktop Update - http://chromereleases.googleblog.com/2025/12/chrome-dev-for-desktop-update_0199271887.html\n[^5]: Chrome Dev for Android Update - http://chromereleases.googleblog.com/2025/12/chrome-dev-for-android-update_01311105310.html\n[^6]: Python Typing Survey 2025: Code Quality and Flexibility As Top Reasons for Typing Adoption - https://engineering.fb.com/2025/12/22/developer-tools/python-typing-survey-2025-code-quality-flexibility-typing-adoption/\n[^7]: 킹에어 비행기, 조종사 무통신 상태서 **Autoland**로 안전 착륙…FAA·NTSB 조사 착수 - https://news.hada.io/topic?id=25257\n[^8]: 디즈니 이매지니어링, 차세대 로봇 캐릭터 ‘올라프’ 공개 - https://news.hada.io/topic?id=25256\n[^9]: 샌프란시스코 정전 사태 중 교통 혼잡을 일으킨 후 Waymo 서비스 중단 - https://news.hada.io/topic?id=25255\n[^10]: 전력망 에너지를 저장하는 CO₂ 배터리, 전 세계로 확산 - https://news.hada.io/topic?id=25254\n[^11]: 당신은 번아웃된 게 아니라 존재적으로 굶주려 있다 - https://news.hada.io/topic?id=25253\n[^12]: a16z에서 발행한 2025 B2C AI 앱 결산 [번역글] - https://news.hada.io/topic?id=25252\n[^13]: 인터넷의 끝 - https://news.hada.io/topic?id=25251\n[^14]: 로컬 코딩 모델 가이드 - https://news.hada.io/topic?id=25250\n[^15]: AI의 진짜 초능력은 생성이 아닌 소비 - https://news.hada.io/topic?id=25249\n[^16]: Show GN: Spring AI Playground - No-code Tool Studio + Live MCP 서버 + Inspector + Agentic Chat - https://news.hada.io/topic?id=25248\n[^17]: Here are 5 ways to feast, celebrate and explore with Google Arts \u0026 Culture. - https://blog.google/outreach-initiatives/arts-culture/festive-fun-2025/\n[^18]: 60 of our biggest AI announcements in 2025 - https://blog.google/technology/ai/google-ai-news-recap-2025/\n[^19]: 5 ways to make 2025 photo recaps with Google Photos - https://blog.google/products/photos/photo-dump-look-back-2025/\n[^20]: We're advancing U.S. energy innovation with Intersect. - https://blog.google/inside-google/infrastructure/energy-innovation-intersect/\n[^21]: 60 of our biggest AI announcements in 2025 - https://blog.google/technology/ai/google-ai-news-recap-2025/\n[^22]: Ask HN: 2026 books recommendation for deeper insights into niche crucial topics - https://news.ycombinator.com/item?id=46359657\n[^23]: Deduplicating Parallel Queries in TanStack Query (React Query) - https://matthuggins.com/blog/posts/deduplicating-parallel-queries-in-tanstack-query-react-query\n[^24]: Google's healthcare AI made up a body part – what if doctors don't notice? - https://www.theverge.com/health/718049/google-med-gemini-basilar-ganglia-paper-typo-hallucination\n[^25]: Txtempus: Radio time station transmitter using the Raspberry Pi - https://github.com/hzeller/txtempus\n[^26]: Show HN: The SkiBlackBox–100% offline AI ski coach, zero data leaves your phone - https://theskiblackbox.com\n[^27]: Malicious Chrome Extensions \"Phantom Shuttle\" Masquerade as a VPN to Intercept - https://socket.dev/blog/malicious-chrome-extensions-phantom-shuttle\n[^28]: Scientists Map the Human Genome in 4D - https://news.feinberg.northwestern.edu/2025/12/22/scientists-map-the-human-genome-in-4d/\n[^29]: Bloom: An open source tool for automated behavioral evaluations - https://alignment.anthropic.com/2025/bloom-auto-evals/\n[^30]: Your Year with ChatGPT - https://www.chatgpt.com/?q=YourYearWithChatGPT\n[^31]: DOJ uploaded a 12-SEC video showing Epstein attempting suicide - https://twitter.com/rtwlz/status/2003211685650374823\n[^32]: Bias Is Ruining Your Life (Here's Why) [video] - https://www.youtube.com/watch?v=QFqUSYTylFU\n[^33]: Brimar thermionic products great British valve project - https://brimaruk.com/menugbvp/about-the-gbvp/\n[^34]: Boys at her school shared AI-generated, nude images of her. She was expelled - https://abcnews.go.com/US/wireStory/boys-school-shared-ai-generated-nude-images-after-128611202\n[^35]: Rational and Irrational Belief in the Hot Hand: Evidence from \"Jeopardy \" - https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5062536\n[^36]: Comprehensive Migration Guide for Ingress Nginx Controller Retirement - https://ingressnginxmigration.org/\n[^37]: Passkeys Explained [video] - https://www.youtube.com/watch?v=xYfiOnufBSk\n[^38]: See sunrise and sunset lines overlaid on any street map - https://www.suncalc.org\n[^39]: DACs and ADCs, or there and back again - https://lcamtuf.substack.com/p/dacs-and-adcs-or-there-and-back-again\n[^40]: Blade Runner: Special Photographic Effects (2020) - https://theasc.com/articles/blade-runner-photographic-effects\n[^41]: The Ritual of the Deploy (2021) - https://vickiboykis.com/2021/06/20/the-ritual-of-the-deploy/\n[^42]: How Workers powers our internal maintenance scheduling pipeline - https://blog.cloudflare.com/building-our-maintenance-scheduler-on-workers/\n[^43]: Marine Biological Laboratory Explores Human Memory With AI and Virtual Reality - https://blogs.nvidia.com/blog/mbl-human-memory-ai-vr-rtx/\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **Continuously hardening ChatGPT Atlas against prompt injection**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/hardening-atlas-against-prompt-injection\n\n2. **One in a million: celebrating the customers shaping AI’s future**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/one-in-a-million-customers\n\n3. **60 of our biggest AI announcements in 2025**\n   - 출처: Gemini\n   - 링크: https://blog.google/technology/ai/google-ai-news-recap-2025/\n\n4. **Chrome Dev for Desktop Update**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2025/12/chrome-dev-for-desktop-update_0199271887.html\n\n5. **Chrome Dev for Android Update**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2025/12/chrome-dev-for-android-update_01311105310.html\n\n6. **Python Typing Survey 2025: Code Quality and Flexibility As Top Reasons for Typing Adoption**\n   - 출처: Meta Engineering\n   - 링크: https://engineering.fb.com/2025/12/22/developer-tools/python-typing-survey-2025-code-quality-flexibility-typing-adoption/\n\n7. **킹에어 비행기, 조종사 무통신 상태서 **Autoland**로 안전 착륙…FAA·NTSB 조사 착수**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25257\n\n8. **디즈니 이매지니어링, 차세대 로봇 캐릭터 ‘올라프’ 공개**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25256\n\n9. **샌프란시스코 정전 사태 중 교통 혼잡을 일으킨 후 Waymo 서비스 중단**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25255\n\n10. **전력망 에너지를 저장하는 CO₂ 배터리, 전 세계로 확산**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25254\n\n11. **당신은 번아웃된 게 아니라 존재적으로 굶주려 있다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25253\n\n12. **a16z에서 발행한 2025 B2C AI 앱 결산 [번역글]**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25252\n\n13. **인터넷의 끝**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25251\n\n14. **로컬 코딩 모델 가이드**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25250\n\n15. **AI의 진짜 초능력은 생성이 아닌 소비**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25249\n\n16. **Show GN: Spring AI Playground - No-code Tool Studio + Live MCP 서버 + Inspector + Agentic Chat**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25248\n\n17. **Here are 5 ways to feast, celebrate and explore with Google Arts \u0026 Culture.**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/outreach-initiatives/arts-culture/festive-fun-2025/\n\n18. **60 of our biggest AI announcements in 2025**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/technology/ai/google-ai-news-recap-2025/\n\n19. **5 ways to make 2025 photo recaps with Google Photos**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/products/photos/photo-dump-look-back-2025/\n\n20. **We're advancing U.S. energy innovation with Intersect.**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/inside-google/infrastructure/energy-innovation-intersect/\n\n21. **60 of our biggest AI announcements in 2025**\n   - 출처: AI\n   - 링크: https://blog.google/technology/ai/google-ai-news-recap-2025/\n\n22. **Ask HN: 2026 books recommendation for deeper insights into niche crucial topics**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=46359657\n\n23. **Deduplicating Parallel Queries in TanStack Query (React Query)**\n   - 출처: Hacker News\n   - 링크: https://matthuggins.com/blog/posts/deduplicating-parallel-queries-in-tanstack-query-react-query\n\n24. **Google's healthcare AI made up a body part – what if doctors don't notice?**\n   - 출처: Hacker News\n   - 링크: https://www.theverge.com/health/718049/google-med-gemini-basilar-ganglia-paper-typo-hallucination\n\n25. **Txtempus: Radio time station transmitter using the Raspberry Pi**\n   - 출처: Hacker News\n   - 링크: https://github.com/hzeller/txtempus\n\n26. **Show HN: The SkiBlackBox–100% offline AI ski coach, zero data leaves your phone**\n   - 출처: Hacker News\n   - 링크: https://theskiblackbox.com\n\n27. **Malicious Chrome Extensions \"Phantom Shuttle\" Masquerade as a VPN to Intercept**\n   - 출처: Hacker News\n   - 링크: https://socket.dev/blog/malicious-chrome-extensions-phantom-shuttle\n\n28. **Scientists Map the Human Genome in 4D**\n   - 출처: Hacker News\n   - 링크: https://news.feinberg.northwestern.edu/2025/12/22/scientists-map-the-human-genome-in-4d/\n\n29. **Bloom: An open source tool for automated behavioral evaluations**\n   - 출처: Hacker News\n   - 링크: https://alignment.anthropic.com/2025/bloom-auto-evals/\n\n30. **Your Year with ChatGPT**\n   - 출처: Hacker News\n   - 링크: https://www.chatgpt.com/?q=YourYearWithChatGPT\n\n31. **DOJ uploaded a 12-SEC video showing Epstein attempting suicide**\n   - 출처: Hacker News\n   - 링크: https://twitter.com/rtwlz/status/2003211685650374823\n\n32. **Bias Is Ruining Your Life (Here's Why) [video]**\n   - 출처: Hacker News\n   - 링크: https://www.youtube.com/watch?v=QFqUSYTylFU\n\n33. **Brimar thermionic products great British valve project**\n   - 출처: Hacker News\n   - 링크: https://brimaruk.com/menugbvp/about-the-gbvp/\n\n34. **Boys at her school shared AI-generated, nude images of her. She was expelled**\n   - 출처: Hacker News\n   - 링크: https://abcnews.go.com/US/wireStory/boys-school-shared-ai-generated-nude-images-after-128611202\n\n35. **Rational and Irrational Belief in the Hot Hand: Evidence from \"Jeopardy \"**\n   - 출처: Hacker News\n   - 링크: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5062536\n\n36. **Comprehensive Migration Guide for Ingress Nginx Controller Retirement**\n   - 출처: Hacker News\n   - 링크: https://ingressnginxmigration.org/\n\n37. **Passkeys Explained [video]**\n   - 출처: Hacker News\n   - 링크: https://www.youtube.com/watch?v=xYfiOnufBSk\n\n38. **See sunrise and sunset lines overlaid on any street map**\n   - 출처: Hacker News\n   - 링크: https://www.suncalc.org\n\n39. **DACs and ADCs, or there and back again**\n   - 출처: Hacker News\n   - 링크: https://lcamtuf.substack.com/p/dacs-and-adcs-or-there-and-back-again\n\n40. **Blade Runner: Special Photographic Effects (2020)**\n   - 출처: Hacker News\n   - 링크: https://theasc.com/articles/blade-runner-photographic-effects\n\n41. **The Ritual of the Deploy (2021)**\n   - 출처: Hacker News\n   - 링크: https://vickiboykis.com/2021/06/20/the-ritual-of-the-deploy/\n\n42. **How Workers powers our internal maintenance scheduling pipeline**\n   - 출처: Cloudflare Blog\n   - 링크: https://blog.cloudflare.com/building-our-maintenance-scheduler-on-workers/\n\n43. **Marine Biological Laboratory Explores Human Memory With AI and Virtual Reality**\n   - 출처: NVIDIA Blog\n   - 링크: https://blogs.nvidia.com/blog/mbl-human-memory-ai-vr-rtx/\n\n\n",
+  "articles": [
+    {
+      "title": "Continuously hardening ChatGPT Atlas against prompt injection",
+      "link": "https://openai.com/index/hardening-atlas-against-prompt-injection",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2025-12-22T00:00:00Z",
+      "description": "OpenAI is strengthening ChatGPT Atlas against prompt injection attacks using automated red teaming trained with reinforcement learning. This proactive discover-and-patch loop helps identify novel exploits early and harden the browser agent’s defenses as AI becomes more agentic."
+    },
+    {
+      "title": "One in a million: celebrating the customers shaping AI’s future",
+      "link": "https://openai.com/index/one-in-a-million-customers",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2025-12-22T00:00:00Z",
+      "description": "More than one million customers around the world now use OpenAI to empower their teams and unlock new opportunities. This post highlights how companies like PayPal, Virgin Atlantic, BBVA, Cisco, Moderna, and Canva are transforming the way work gets done with AI."
+    },
+    {
+      "title": "60 of our biggest AI announcements in 2025",
+      "link": "https://blog.google/technology/ai/google-ai-news-recap-2025/",
+      "source": "Gemini",
+      "category": "tech",
+      "publishedAt": "2025-12-22T17:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/2025AI_Hero.max-600x600.format-webp.webp\"\u003eLook back on Google AI news in 2025 across Gemini, Search, Pixel and more products."
+    },
+    {
+      "title": "Chrome Dev for Desktop Update",
+      "link": "http://chromereleases.googleblog.com/2025/12/chrome-dev-for-desktop-update_0199271887.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2025-12-22T11:58:33.046-08:00",
+      "description": "\u003cp\u003eThe Dev channel has been updated to 145.0.7587.5 for Windows, Mac and Linux.\u003c/p\u003e\u003cp\u003eA partial list of changes is available in the \u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/145.0.7572.3..145.0.7587.5?pretty=fuller\u0026amp;n=10000\"\u003eGit log\u003c/a\u003e. Interested in \u003ca href=\"https://www.chromium.org/getting-involved/dev-channel/\"\u003eswitching\u003c/a\u003e release channels? Find out \u003ca href=\"https://www.chromium.org/getting-involved/dev-channel/\"\u003ehow\u003c/a\u003e. If you find a new issue, please let us know by \u003ca href=\"https://crbug.com/\"\u003efiling a bug\u003c/a\u003e. The \u003ca href=\"https://productforums.google.com/forum/#!forum/chrome\"\u003ecommunity help forum\u003c/a\u003e is also a great place to reach out for help or learn about common issues.\u003c/p\u003e\u003cp\u003eChrome Release Team\u003cbr /\u003e\u003ca href=\"https://www.google.com/chrome\"\u003e\u003c/a\u003e\u003ca href=\"https://www.google.com/chrome\"\u003eGoogle Chrome\u003c/a\u003e\u003c/p\u003e"
+    },
+    {
+      "title": "Chrome Dev for Android Update",
+      "link": "http://chromereleases.googleblog.com/2025/12/chrome-dev-for-android-update_01311105310.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2025-12-22T05:43:32.749-08:00",
+      "description": "\u003cp\u003eHi everyone! We've just released Chrome Dev 145 (145.0.7587.4) for Android. It's now available on \u003ca href=\"https://play.google.com/store/apps/details?id=com.chrome.dev\"\u003eGoogle Play\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eYou can see a partial list of the changes in the \u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/145.0.7572.2..145.0.7587.4?pretty=fuller\u0026amp;n=10000\"\u003eGit log\u003c/a\u003e. For details on new features, check out the \u003ca href=\"https://blog.chromium.org\"\u003eChromium blog\u003c/a\u003e, and for details on web platform updates, check \u003ca href=\"https://www.chromestatus.com/features#milestone%3D145\"\u003ehere\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eIf you find a new issue, please let us know by \u003ca href=\"https://code.google.com/p/chromium/issues/entry?template=Android%20Issue\"\u003efiling a bug\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eChrome Release Team\u003cbr /\u003e\u003ca href=\"https://www.google.com/chrome\"\u003e\u003c/a\u003e\u003ca href=\"https://www.google.com/chrome\"\u003eGoogle Chrome\u003c/a\u003e\u003c/p\u003e"
+    },
+    {
+      "title": "Python Typing Survey 2025: Code Quality and Flexibility As Top Reasons for Typing Adoption",
+      "link": "https://engineering.fb.com/2025/12/22/developer-tools/python-typing-survey-2025-code-quality-flexibility-typing-adoption/",
+      "source": "Meta Engineering",
+      "category": "tech",
+      "publishedAt": "2025-12-22T14:00:16Z",
+      "description": "\u003cp\u003eThe 2025 Typed Python Survey, conducted by contributors from JetBrains, Meta, and the broader Python typing community, offers a comprehensive look at the current state of Python’s type system and developer tooling. With 1,241 responses (a 15% increase from last year), the survey captures the evolving sentiment, challenges, and opportunities around Python typing in the [...]\u003c/p\u003e\n\u003cp\u003e\u003ca class=\"btn btn-secondary understrap-read-more-link\" href=\"https://engineering.fb.com/2025/12/22/developer-tools/python-typing-survey-2025-code-quality-flexibility-typing-adoption/\"\u003eRead More...\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eThe post \u003ca rel=\"nofollow\" href=\"https://engineering.fb.com/2025/12/22/developer-tools/python-typing-survey-2025-code-quality-flexibility-typing-adoption/\"\u003ePython Typing Survey 2025: Code Quality and Flexibility As Top Reasons for Typing Adoption\u003c/a\u003e appeared first on \u003ca rel=\"nofollow\" href=\"https://engineering.fb.com\"\u003eEngineering at Meta\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "킹에어 비행기, 조종사 무통신 상태서 **Autoland**로 안전 착륙…FAA·NTSB 조사 착수",
+      "link": "https://news.hada.io/topic?id=25257",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-23T06:32:51+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e콜로라도에서 \u003cstrong\u003eBeechcraft King Air 200\u003c/strong\u003e 항공기가 조종사와의 교신이 끊긴 뒤 \u003cstrong\u003eGarmin Autoland 시스템\u003c/strong\u003e을 통해 자동 착륙함\u003c/li\u003e\n\u003cli\u003eFAA는 “조종사와의 교신 두절 후 비상 자동착륙 시스템이 작동해 로키마운틴 메트로폴리탄 공항에 안전 착륙했다”고 발표\u003c/li\u003e\n\u003cli\u003e\n\u003cstro...\u003c/p\u003e"
+    },
+    {
+      "title": "디즈니 이매지니어링, 차세대 로봇 캐릭터 ‘올라프’ 공개",
+      "link": "https://news.hada.io/topic?id=25256",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-23T04:37:34+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e디즈니랜드 파리\u003c/strong\u003e에서 공개된 로봇 올라프는 영화 \u003cem\u003e겨울왕국\u003c/em\u003e 속 캐릭터를 실제로 구현한 차세대 \u003cstrong\u003e로보틱 캐릭터\u003c/strong\u003e임\u003c/li\u003e\n\u003cli\u003e움직임, 표정, 눈처럼 빛나는 외형까지 세밀하게 재현해 \u003cstrong\u003e가장 생동감 있는 캐릭터 중 하나\u003c/strong\u003e로 평가됨\u003c/li\u003e\n\u003cli\u003e제작 과정에...\u003c/p\u003e"
+    },
+    {
+      "title": "샌프란시스코 정전 사태 중 교통 혼잡을 일으킨 후 Waymo 서비스 중단",
+      "link": "https://news.hada.io/topic?id=25255",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-23T04:34:34+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e샌프란시스코 전역에서 발생한 \u003cstrong\u003e대규모 정전\u003c/strong\u003e 중 Waymo의 \u003cstrong\u003e자율주행 차량\u003c/strong\u003e들이 교통 혼잡을 유발하며 멈춰섬\u003c/li\u003e\n\u003cli\u003eWaymo는 \u003cstrong\u003e승차 서비스 전면 중단\u003c/strong\u003e을 발표하고, 승객 안전 확보와 \u003cstrong\u003e긴급 구조 인력의 접근 보장\u003c/strong\u003e을 이유로 제시\u003c/li\u003e\n\u003cli\u003e정전...\u003c/p\u003e"
+    },
+    {
+      "title": "전력망 에너지를 저장하는 CO₂ 배터리, 전 세계로 확산",
+      "link": "https://news.hada.io/topic?id=25254",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-23T02:33:38+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e이탈리아 \u003cstrong\u003eEnergy Dome\u003c/strong\u003e이 개발한 CO₂ 기반 장기 에너지 저장 시스템이 \u003cstrong\u003e전력망 규모의 재생에너지 저장\u003c/strong\u003e을 실현\u003c/li\u003e\n\u003cli\u003e사르데냐 섬의 첫 상용 플랜트는 \u003cstrong\u003e2,000톤의 CO₂\u003c/strong\u003e를 밀폐 시스템 내에서 압축·팽창시켜 \u003cstrong\u003e200MWh 전력\u003c/strong\u003e을 생산\u003c/li\u003e\n\u003cli...\u003c/p\u003e"
+    },
+    {
+      "title": "당신은 번아웃된 게 아니라 존재적으로 굶주려 있다",
+      "link": "https://news.hada.io/topic?id=25253",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-23T00:33:47+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e삶의 조건이 충분히 안정적임에도 불구하고 공허함과 피로를 느끼는 현상\u003c/strong\u003e을 ‘존재적 결핍’으로 규정\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e빅터 프랭클의 ‘존재적 진공’ 개념\u003c/strong\u003e을 인용하며, 이 감정은 제거해야 할 불편이 아니라 \u003cstrong\u003e의미를 향한 신호\u003c/strong\u003e로 설명\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e편안함...\u003c/p\u003e"
+    },
+    {
+      "title": "a16z에서 발행한 2025 B2C AI 앱 결산 [번역글]",
+      "link": "https://news.hada.io/topic?id=25252",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-22T23:29:50+09:00",
+      "description": "\u003ch4\u003e1. OpenAI (ChatGPT/GPT-4o)\u003c/h4\u003e\n\u003cul\u003e\n\u003cli\u003e사용자 10억 돌파 1위지만 활성률 20% 미만, 신규성 소진 후 포기 심각 (원문: \u0026quot;usage drop-off after novelty wears off\u0026quot;).\u003c/li\u003e\n\u003cli\u003e멀티모달(텍스트·이미지·음성·비디오) 강점으로 일상 창작·대화 도구화, 생산성 25%↑. 그러나 환각(정확도 85%)으로 신뢰 ...\u003c/p\u003e"
+    },
+    {
+      "title": "인터넷의 끝",
+      "link": "https://news.hada.io/topic?id=25251",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-22T15:35:00+09:00",
+      "description": "\u003ch2\u003e축하합니다!\u003c/h2\u003e\n\u003cp\u003e드디어 인터넷의 끝까지 도달하셨군요!\u003cbr /\u003e\n더 이상 볼 것도, 방문할 링크도 없습니다.\u003cbr /\u003e\n모든 것을 해내셨습니다.\u003cbr /\u003e\n이곳은 인터넷의 가장 먼 끝에 위치한 마지막 서버의 마지막 페이지입니다.\u003c/p\u003e\n\u003cp\u003e이제 컴퓨터를 끄고 남은 인생을 유용하게 보내시기 바랍니다. *\u003c/p\u003e\n\u003cp\u003e추천 사"
+    },
+    {
+      "title": "로컬 코딩 모델 가이드",
+      "link": "https://news.hada.io/topic?id=25250",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-22T15:33:02+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e클라우드 기반 \u003cstrong\u003eAI 코딩 구독 서비스 대신 로컬 모델을 활용하는 방법과 한계\u003c/strong\u003e를 실험적으로 검증한 사례\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e로컬 모델은 약 90%의 개발 작업을 충분히 수행할 수 있지만\u003c/strong\u003e, 나머지 10%의 정밀한 작업에서는 여전히 상용 서비스가 우위\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e비용 절감·보안�...\u003c/p\u003e"
+    },
+    {
+      "title": "AI의 진짜 초능력은 생성이 아닌 소비",
+      "link": "https://news.hada.io/topic?id=25249",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-22T13:55:21+09:00",
+      "description": "\u003cp\u003e\u003cstrong\u003e기존 인식의 문제\u003c/strong\u003e\u003cbr /\u003e\nAI를 주로 “생성 도구”로 사용 (이메일 쓰기, 코드 생성, 글쓰기 등)\u003cbr /\u003e\n→ 슈퍼컴퓨터를 타자기로 쓰는 격\u003cbr /\u003e\n→ 시간은 절약되지만, AI의 진짜 잠재력을 낭비\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e진짜 강점: 소비(Consumption)\u003c/strong\u003e\u003cbr /\u003e\nAI는 “내가 이미 생각하고 경험한 모든"
+    },
+    {
+      "title": "Show GN: Spring AI Playground - No-code Tool Studio + Live MCP 서버 + Inspector + Agentic Chat",
+      "link": "https://news.hada.io/topic?id=25248",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-22T13:49:29+09:00",
+      "description": "\u003cp\u003e한 줄 소개\u003cbr /\u003e\nSpring AI Playground는 Spring AI 기반의 self-hosted 실험용 웹 UI로, No-code/low-code 툴 제작부터 MCP 연결·인스펙션·에이전트 채팅 테스트까지 한 곳에서 반복(iterate)할 수 있게 만든 프로젝트입니다.\u003cbr /\u003e\n​\u003cbr /\u003e\n이번 업데이트(핵심)\u003cbr /\u003e\nSpring AI 공식 인큐베이팅 프로젝트 등록 이...\u003c/p\u003e"
+    },
+    {
+      "title": "Here are 5 ways to feast, celebrate and explore with Google Arts \u0026 Culture.",
+      "link": "https://blog.google/outreach-initiatives/arts-culture/festive-fun-2025/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-22T18:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/festivefun_v2.max-600x600.format-webp.webp\"\u003eThis holiday season, transform screen-time into a festive cultural journey with Google Arts \u0026amp; Culture's dedicated \"Festive Fun\" page. Consider this your AI-powered c…"
+    },
+    {
+      "title": "60 of our biggest AI announcements in 2025",
+      "link": "https://blog.google/technology/ai/google-ai-news-recap-2025/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-22T17:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/2025AI_Hero.max-600x600.format-webp.webp\"\u003eLook back on Google AI news in 2025 across Gemini, Search, Pixel and more products."
+    },
+    {
+      "title": "5 ways to make 2025 photo recaps with Google Photos",
+      "link": "https://blog.google/products/photos/photo-dump-look-back-2025/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-22T16:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Photos_Tips_hero.max-600x600.format-webp.webp\"\u003eLearn how to use Google Photos to post, share or just look back on your 2025 in photos and videos."
+    },
+    {
+      "title": "We're advancing U.S. energy innovation with Intersect.",
+      "link": "https://blog.google/inside-google/infrastructure/energy-innovation-intersect/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-22T16:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/close-look-at-server-aisles-at-.max-600x600.format-webp.webp\"\u003eToday, Alphabet announced a definitive agreement to acquire Intersect, which provides data center and energy infrastructure solutions. The acquisition will enable more d…"
+    },
+    {
+      "title": "60 of our biggest AI announcements in 2025",
+      "link": "https://blog.google/technology/ai/google-ai-news-recap-2025/",
+      "source": "AI",
+      "category": "tech",
+      "publishedAt": "2025-12-22T17:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/2025AI_Hero.max-600x600.format-webp.webp\"\u003eLook back on Google AI news in 2025 across Gemini, Search, Pixel and more products."
+    },
+    {
+      "title": "Ask HN: 2026 books recommendation for deeper insights into niche crucial topics",
+      "link": "https://news.ycombinator.com/item?id=46359657",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-22T22:01:38Z",
+      "description": "\n\u003cp\u003eI'm trying to create a reading list of \"deep dive\" types of books that might help me understand how niche, but crucial, aspects of modern life work.\u003cp\u003eExtra points for newer or lesser known books.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46359657\"\u003ehttps://news.ycombinator.com/item?id=46359657\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Deduplicating Parallel Queries in TanStack Query (React Query)",
+      "link": "https://matthuggins.com/blog/posts/deduplicating-parallel-queries-in-tanstack-query-react-query",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-22T22:00:45Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://matthuggins.com/blog/posts/deduplicating-parallel-queries-in-tanstack-query-react-query\"\u003ehttps://matthuggins.com/blog/posts/deduplicating-parallel-queries-in-tanstack-query-react-query\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46359645\"\u003ehttps://news.ycombinator.com/item?id=46359645\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Google's healthcare AI made up a body part – what if doctors don't notice?",
+      "link": "https://www.theverge.com/health/718049/google-med-gemini-basilar-ganglia-paper-typo-hallucination",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-22T22:00:36Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.theverge.com/health/718049/google-med-gemini-basilar-ganglia-paper-typo-hallucination\"\u003ehttps://www.theverge.com/health/718049/google-med-gemini-basilar-ganglia-paper-typo-hallucination\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46359643\"\u003ehttps://news.ycombinator.com/item?id=46359643\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Txtempus: Radio time station transmitter using the Raspberry Pi",
+      "link": "https://github.com/hzeller/txtempus",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-22T21:50:52Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/hzeller/txtempus\"\u003ehttps://github.com/hzeller/txtempus\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46359568\"\u003ehttps://news.ycombinator.com/item?id=46359568\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: The SkiBlackBox–100% offline AI ski coach, zero data leaves your phone",
+      "link": "https://theskiblackbox.com",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-22T21:49:48Z",
+      "description": "\n\u003cp\u003eHi HN,\nI’m a solo developer from Austria. After 18 months, I built SkiCoach - an AI ski coaching app based on a simple philosophy: your data is yours.\nThe Black Box Concept:\nLike an airplane black box, the app records everything - GPS, accelerometer, gyroscope, barometer - but nothing ever leaves your device. No cloud sync. No accounts. No tracking. Full AI processing happens on-device.\nWhat it does:\n ∙ Analyzes ski technique via phone sensors (phone stays in pocket)\n ∙ Real-time audio coaching while skiing\n ∙ Technique score 0-100 per run\n ∙ Auto-detects when you start skiing (\u003e10km/h + altitude \u003e1000m)\n ∙ Works completely offline (no signal needed on mountain)\nTech:\n ∙ Flutter (iOS + Android)\n ∙ TensorFlow Lite for on-device AI\n ∙ 4 languages (EN/DE/FR/IT)\nBusiness model:\nOne-time €19.99 purchase. No subscription. I believe ski apps shouldn’t cost €25/year forever.\nMore on the philosophy: theskiblackbox.com\nLive on iOS, Android this week: skicoach.app\nWould love feedback from skiers and privacy-focused folks.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46359562\"\u003ehttps://news.ycombinator.com/item?id=46359562\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Malicious Chrome Extensions \"Phantom Shuttle\" Masquerade as a VPN to Intercept",
+      "link": "https://socket.dev/blog/malicious-chrome-extensions-phantom-shuttle",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-22T21:47:32Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://socket.dev/blog/malicious-chrome-extensions-phantom-shuttle\"\u003ehttps://socket.dev/blog/malicious-chrome-extensions-phantom-shuttle\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46359544\"\u003ehttps://news.ycombinator.com/item?id=46359544\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Scientists Map the Human Genome in 4D",
+      "link": "https://news.feinberg.northwestern.edu/2025/12/22/scientists-map-the-human-genome-in-4d/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-22T21:47:12Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://news.feinberg.northwestern.edu/2025/12/22/scientists-map-the-human-genome-in-4d/\"\u003ehttps://news.feinberg.northwestern.edu/2025/12/22/scientists-map-the-human-genome-in-4d/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46359540\"\u003ehttps://news.ycombinator.com/item?id=46359540\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Bloom: An open source tool for automated behavioral evaluations",
+      "link": "https://alignment.anthropic.com/2025/bloom-auto-evals/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-22T21:46:53Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://alignment.anthropic.com/2025/bloom-auto-evals/\"\u003ehttps://alignment.anthropic.com/2025/bloom-auto-evals/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46359536\"\u003ehttps://news.ycombinator.com/item?id=46359536\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Your Year with ChatGPT",
+      "link": "https://www.chatgpt.com/?q=YourYearWithChatGPT",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-22T21:44:54Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.chatgpt.com/?q=YourYearWithChatGPT\"\u003ehttps://www.chatgpt.com/?q=YourYearWithChatGPT\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46359517\"\u003ehttps://news.ycombinator.com/item?id=46359517\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "DOJ uploaded a 12-SEC video showing Epstein attempting suicide",
+      "link": "https://twitter.com/rtwlz/status/2003211685650374823",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-22T21:44:45Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://twitter.com/rtwlz/status/2003211685650374823\"\u003ehttps://twitter.com/rtwlz/status/2003211685650374823\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46359515\"\u003ehttps://news.ycombinator.com/item?id=46359515\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 4\u003c/p\u003e\n\u003cp\u003e# Comments: 3\u003c/p\u003e\n"
+    },
+    {
+      "title": "Bias Is Ruining Your Life (Here's Why) [video]",
+      "link": "https://www.youtube.com/watch?v=QFqUSYTylFU",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-22T21:42:54Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.youtube.com/watch?v=QFqUSYTylFU\"\u003ehttps://www.youtube.com/watch?v=QFqUSYTylFU\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46359498\"\u003ehttps://news.ycombinator.com/item?id=46359498\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Brimar thermionic products great British valve project",
+      "link": "https://brimaruk.com/menugbvp/about-the-gbvp/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-22T21:42:02Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://brimaruk.com/menugbvp/about-the-gbvp/\"\u003ehttps://brimaruk.com/menugbvp/about-the-gbvp/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46359492\"\u003ehttps://news.ycombinator.com/item?id=46359492\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Boys at her school shared AI-generated, nude images of her. She was expelled",
+      "link": "https://abcnews.go.com/US/wireStory/boys-school-shared-ai-generated-nude-images-after-128611202",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-22T21:40:14Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://abcnews.go.com/US/wireStory/boys-school-shared-ai-generated-nude-images-after-128611202\"\u003ehttps://abcnews.go.com/US/wireStory/boys-school-shared-ai-generated-nude-images-after-128611202\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46359473\"\u003ehttps://news.ycombinator.com/item?id=46359473\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Rational and Irrational Belief in the Hot Hand: Evidence from \"Jeopardy \"",
+      "link": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5062536",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-22T21:39:05Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5062536\"\u003ehttps://papers.ssrn.com/sol3/papers.cfm?abstract_id=5062536\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46359466\"\u003ehttps://news.ycombinator.com/item?id=46359466\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Comprehensive Migration Guide for Ingress Nginx Controller Retirement",
+      "link": "https://ingressnginxmigration.org/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-22T21:37:47Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://ingressnginxmigration.org/\"\u003ehttps://ingressnginxmigration.org/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46359452\"\u003ehttps://news.ycombinator.com/item?id=46359452\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Passkeys Explained [video]",
+      "link": "https://www.youtube.com/watch?v=xYfiOnufBSk",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-22T21:37:19Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.youtube.com/watch?v=xYfiOnufBSk\"\u003ehttps://www.youtube.com/watch?v=xYfiOnufBSk\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46359442\"\u003ehttps://news.ycombinator.com/item?id=46359442\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "See sunrise and sunset lines overlaid on any street map",
+      "link": "https://www.suncalc.org",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-22T21:36:57Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.suncalc.org\"\u003ehttps://www.suncalc.org\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46359437\"\u003ehttps://news.ycombinator.com/item?id=46359437\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "DACs and ADCs, or there and back again",
+      "link": "https://lcamtuf.substack.com/p/dacs-and-adcs-or-there-and-back-again",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-22T21:36:43Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://lcamtuf.substack.com/p/dacs-and-adcs-or-there-and-back-again\"\u003ehttps://lcamtuf.substack.com/p/dacs-and-adcs-or-there-and-back-again\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46359433\"\u003ehttps://news.ycombinator.com/item?id=46359433\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Blade Runner: Special Photographic Effects (2020)",
+      "link": "https://theasc.com/articles/blade-runner-photographic-effects",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-22T21:36:07Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://theasc.com/articles/blade-runner-photographic-effects\"\u003ehttps://theasc.com/articles/blade-runner-photographic-effects\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46359427\"\u003ehttps://news.ycombinator.com/item?id=46359427\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Ritual of the Deploy (2021)",
+      "link": "https://vickiboykis.com/2021/06/20/the-ritual-of-the-deploy/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-22T21:36:01Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://vickiboykis.com/2021/06/20/the-ritual-of-the-deploy/\"\u003ehttps://vickiboykis.com/2021/06/20/the-ritual-of-the-deploy/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46359426\"\u003ehttps://news.ycombinator.com/item?id=46359426\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "How Workers powers our internal maintenance scheduling pipeline",
+      "link": "https://blog.cloudflare.com/building-our-maintenance-scheduler-on-workers/",
+      "source": "Cloudflare Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-22T14:00:00Z",
+      "description": " Physical data center maintenance is risky on a global network. We built a maintenance scheduler on Workers to safely plan disruptive operations, while solving scaling challenges by viewing the state of our infrastructure through a graph interface on top of multiple data sources and metrics pipelines. "
+    },
+    {
+      "title": "Marine Biological Laboratory Explores Human Memory With AI and Virtual Reality",
+      "link": "https://blogs.nvidia.com/blog/mbl-human-memory-ai-vr-rtx/",
+      "source": "NVIDIA Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-22T16:00:10Z",
+      "description": "The works of Plato state that when humans have an experience, some level of change occurs in their brain, which is powered by memory — specifically long-term memory. This change is what Andre Fenton, professor of neural science at New York University, and Abhishek Kumar, assistant professor of cell and regenerative biology at the University\t\u003ca class=\"read-more\" href=\"https://blogs.nvidia.com/blog/mbl-human-memory-ai-vr-rtx/\"\u003e\n\t\tRead Article\t\t\u003cspan data-icon=\"y\"\u003e\u003c/span\u003e\n\t\u003c/a\u003e\n\t"
+    }
+  ],
+  "generatedAt": "2025-12-23T07:09:27.367970321+09:00"
+}
