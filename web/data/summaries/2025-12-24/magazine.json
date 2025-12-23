@@ -1,0 +1,337 @@
+{
+  "date": "2025-12-24",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2025년 12월 23일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** 구글이 발표한 2025년 AI 연구 성과 총결산부터 npm 생태계를 위협하는 악성 패키지 발견, 그리고 개발자들을 위한 최신 오픈소스 도구들까지 연말 기술 트렌드를 한눈에 확인하세요.\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### 🚀 구글의 2025년 연구 결산: 8가지 AI 혁신 분야\n구글과 구글 딥마인드(Google DeepMind)가 2025년을 마무리하며 한 해 동안 이룩한 8가지 핵심 연구 성과를 발표했습니다. 이번 발표는 단순한 기술 나열을 넘어, AI가 실험실을 벗어나 실제 과학적 발견과 제품 혁신에 어떻게 기여했는지를 보여주는 중요한 이정표입니다. 특히 생성형 AI 모델인 Gemini의 진화와 더불어, 생물학, 기후 과학, 소재 공학 등 'AI for Science' 분야에서의 획기적인 진전이 두드러집니다. 이는 AI가 단순한 챗봇을 넘어 인류의 난제를 해결하는 도구로 자리 잡았음을 시사합니다.\n\n\u003e **Key Point:** 2025년은 구글이 AI를 통해 순수 과학 및 응용 기술 분야에서 실질적인 'Breakthrough'를 증명한 해로 기록될 것입니다. [^2][^16][^38][^39][^40]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. npm 생태계의 위협: Lotusbail 패키지 주의보\n- **What:** 널리 쓰이는 자바스크립트 패키지 저장소인 npm에서 'Lotusbail'이라는 악성 패키지가 발견되었습니다. 이 패키지는 설치 시 사용자의 WhatsApp 메시지와 연락처 정보를 몰래 수집하여 외부로 유출하는 기능을 포함하고 있었습니다.\n- **Why:** 오픈소스 생태계의 신뢰를 악용하는 공급망 공격(Supply Chain Attack)의 전형적인 사례입니다. 개발자들이 패키지 이름을 혼동하거나 검증 없이 설치하는 습관을 노렸습니다.\n- **Impact:** 개인정보 유출 피해뿐만 아니라, 기업 내부 시스템에 침투할 수 있는 백도어로 활용될 가능성이 있어 개발자들의 각별한 주의와 의존성 검사가 요구됩니다. [^8]\n\n### 2. LLM 안전을 위한 가드레일: AprielGuard\n- **What:** Hugging Face와 ServiceNow가 협력하여 최신 LLM 시스템을 위한 안전 장치인 'AprielGuard'를 공개했습니다. 이는 모델이 유해한 콘텐츠를 생성하거나 적대적 공격(Adversarial Attacks)에 무너지는 것을 방지하는 기술입니다.\n- **Why:** LLM이 기업과 서비스에 널리 도입됨에 따라, 모델의 답변을 조작하거나 윤리적 기준을 우회하려는 시도가 늘어나고 있기 때문입니다.\n- **Impact:** 오픈소스 형태의 강력한 가드레일 제공은 기업들이 자체 LLM을 구축할 때 안전성 검증 비용을 낮추고, 신뢰할 수 있는 AI 서비스를 배포하는 데 크게 기여할 것입니다. [^3]\n\n### 3. 텍사스 앱스토어 연령 인증법, 연방 판사에 의해 제동\n- **What:** 텍사스주가 추진하던 앱스토어 연령 인증 의무화 법안이 연방 판사에 의해 시행 중단(Blocked)되었습니다.\n- **Why:** 미성년자 보호라는 입법 취지에도 불구하고, 과도한 개인정보 수집과 표현의 자유 침해 우려가 제기되었기 때문입니다.\n- **Impact:** 이번 판결은 미국 내 다른 주들의 유사한 기술 규제 법안에도 영향을 미칠 것으로 보이며, 온라인 플랫폼의 책임 범위와 사용자 프라이버시 간의 법적 공방이 2026년에도 지속될 것임을 예고합니다. [^17]\n\n### 4. '착한 매니저'의 역설: 팀원의 성장을 막는다?\n- **What:** 갈등을 회피하고 듣기 좋은 말만 하는 소위 '착한(Nice)' 매니저가 오히려 팀원의 커리어에는 독이 될 수 있다는 주장이 제기되었습니다.\n- **Why:** 성장을 위해서는 솔직하고 건설적인 피드백이 필수적이지만, 관계가 불편해질 것을 우려해 문제를 덮어두면 팀원은 자신의 약점을 개선할 기회를 영영 잃게 됩니다.\n- **Impact:** 리더십의 본질은 '친절함'이 아니라 '명확함'에 있음을 상기시키며, 조직 내 피드백 문화에 대한 재점검이 필요함을 시사합니다. [^12]\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **Nano Banana Pro** | 구글 Gemini Nano를 엣지 디바이스에서 구동하기 위한 하드웨어/소프트웨어 가이드로 추정됩니다. [^1][^37] |\n| **Tool** | **Greed.js** | WebGPU를 활용하여 브라우저 상에서 PyTorch 코드를 직접 실행할 수 있게 해주는 라이브러리입니다. [^29] |\n| **Tool** | **DR Web Engine** | 웹사이트 구조가 변경되어도 깨지지 않는 JSON 기반의 견고한 웹 스크래핑 엔진입니다. [^23] |\n| **Tool** | **X-ray** | PDF 문서 내에서 불완전하게 가려진(Redaction) 민감 정보를 찾아내는 Python 라이브러리입니다. [^27] |\n| **Tool** | **FCast** | 특정 제조사에 종속되지 않는 오픈소스 기반의 미디어 캐스팅 프로토콜입니다. [^25] |\n| **Tool** | **Polyglot-image** | 여러 CPU 아키텍처에서 모두 부팅 가능한 마법 같은 디스크 이미지입니다. [^32] |\n| **Tool** | **Kick Assembler** | 레트로 코딩을 위한 C64 어셈블러 매뉴얼 및 도구입니다. [^35] |\n| **Data** | **Languagecat** | 언어 학습 앱 개발자들을 위해 무료로 제공되는 방대한 언어 데이터셋입니다. [^24] |\n| **Paper** | **Unger Parsing** | 문맥 자유 문법(CFG)을 위한 파싱 알고리즘에 대한 심층 분석 글입니다. [^22] |\n| **Paper** | **3I/ATLAS** | 비중력 가속도를 통해 천체 3I/ATLAS의 크기를 추정한 천문학 논문입니다. [^30] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **Project Loom \u0026 Thread Dumps**: Java의 가상 스레드(Virtual Threads) 도입에 따른 스레드 덤프 분석 방법의 변화를 다룹니다. [^41]\n* **TCP_NODELAY**: 네트워크 성능 문제의 주범으로 자주 지목되는 Nagle 알고리즘 비활성화 옵션에 대한 기술적 고찰입니다. [^14]\n* **No-Code의 현실**: 노코드 툴이 초기 개발은 빠르지만, 운영 단계에서 마주하는 한계와 복잡성을 지적합니다. [^9]\n* **대규모 코드베이스와 LLM**: 방대한 양의 코드를 LLM에 효과적으로 입력하고 처리하는 확장 전략을 소개합니다. [^7]\n* **GitHub 2026 팟캐스트**: 다가오는 2026년, 개발자들의 자신감을 높여줄 추천 팟캐스트 5선입니다. [^4]\n* **올해의 오픈소스**: GitHub가 선정한 올해 가장 영향력 있었던 오픈소스 프로젝트 리스트입니다. [^5]\n* **Claude Code 알림**: 터미널 노티파이어를 활용해 Claude Code 사용 시 커스텀 알림을 받는 팁입니다. [^20]\n* **Harper 프로젝트**: 경량화된 정보 관리 도구인 Harper를 도입하는 새로운 프로젝트들의 사례입니다. [^18]\n* **Switching It Up**: 기술 스택이나 개발 환경 전환에 대한 개발자의 경험담으로 보입니다. [^19]\n\n#### 🤖 AI \u0026 데이터\n* **피지컬 AI란?**: 로봇 공학 등 물리적 세계와 상호작용하는 AI 기술의 개념과 현황을 설명합니다. [^15]\n* **428억 토큰 비용**: LLM 사용 시 발생하는 막대한 토큰 비용을 시각화하여 보여주는 흥미로운 프로젝트입니다. [^13]\n* **AI Context 분리**: 모델과 컨텍스트(상태)를 분리하여 팀원 간에 AI 작업 상태를 공유하는 기술입니다. [^33]\n\n#### 🔬 하드웨어 \u0026 과학\n* **중국 재사용 로켓**: 중국이 3주 만에 두 번째로 재사용 발사체 실험을 수행하며 우주 기술 경쟁에 속도를 내고 있습니다. [^36]\n* **초음파 암 치료**: 비침습적으로 음파를 이용해 종양을 공격하는 새로운 암 치료 기술이 소개되었습니다. [^10]\n* **NIST 시간 지연**: 지난주 정전 사태로 인해 미국 표준기술연구소(NIST)의 시간이 UTC보다 5마이크로초 늦어지는 일이 발생했습니다. [^11]\n* **Sony PVM-4300**: 레트로 하드웨어 매니아들을 설레게 하는 소니의 가장 큰 CRT 모니터에 대한 이야기입니다. [^6]\n* **LG TV 스파잉**: LG 스마트 TV의 특정 설정을 끄지 않으면 시청 데이터가 수집된다는 사실이 밝혀졌습니다. [^31]\n\n#### 📜 기타 \u0026 역사\n* **Linus Torvalds (1999)**: 리눅스의 창시자 리누스 토르발스의 1999년 인터뷰를 통해 당시의 비전을 엿볼 수 있습니다. [^28]\n* **Gitlow v. New York**: 미국 수정헌법 제1조(표현의 자유)와 관련된 역사적인 대법원 판례입니다. [^21]\n* **SF 인턴십 찾기**: 샌프란시스코 스타트업에서 여름 인턴십을 구하는 방법에 대한 Hacker News의 질의응답입니다. [^34]\n* **운전 시간 계산기**: 면도 시간을 고려하여 운전 시간을 계산해주는 틈새 유틸리티입니다. [^26]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘 뉴스는 '**보안과 안전**'이라는 키워드로 관통됩니다. npm 생태계의 악성 패키지(Lotusbail)부터 LLM을 위한 가드레일(AprielGuard), 그리고 PDF 개인정보 유출 방지 도구(X-ray)까지, 기술이 발전할수록 이를 안전하게 지키려는 노력 또한 치열해지고 있습니다. 한편, 구글의 2025년 연구 결산은 AI가 이제 '신기한 도구'를 넘어 '과학적 발견의 엔진'이 되었음을 보여줍니다. 연말을 맞아 한 해의 기술적 부채를 점검하고(TCP_NODELAY, 착한 매니저 이슈 등), 내년을 위한 새로운 도구(Greed.js, Loom)들을 살펴보기에 좋은 시점입니다.\n\n---\n\n[^1]: Here’s where you can use Nano Banana Pro - https://blog.google/products/gemini/where-to-use-nano-banana-pro/\n[^2]: Google's year in review: 8 areas with research breakthroughs in 2025 - https://blog.google/technology/ai/2025-research-breakthroughs/\n[^3]: AprielGuard: A Guardrail for Safety and Adversarial Robustness in Modern LLM Systems - https://huggingface.co/blog/ServiceNow-AI/aprielguard\n[^4]: 5 podcast episodes to help you build with confidence in 2026 - https://github.blog/open-source/maintainers/5-podcast-episodes-to-help-you-build-with-confidence-in-2026/\n[^5]: This year’s most influential open source projects - https://github.blog/open-source/maintainers/this-years-most-influential-open-source-projects/\n[^6]: 가장 큰 CRT TV, Sony의 PVM-4300 - https://news.hada.io/topic?id=25286\n[^7]: 대규모 코드베이스로 LLM 확장하기 - https://news.hada.io/topic?id=25285\n[^8]: WhatsApp 메시지와 연락처를 수집한 Lotusbail npm 패키지 발견 - https://news.hada.io/topic?id=25284\n[^9]: \"No-Code Hype\"가 부딪히는 현실: 운영의 장벽 - https://news.hada.io/topic?id=25283\n[^10]: 초음파 암 치료: 음파로 종양을 공격 - https://news.hada.io/topic?id=25282\n[^11]: NIST, 지난주 정전으로 UTC 기준시보다 5마이크로초 늦어져 - https://news.hada.io/topic?id=25281\n[^12]: 착한 매니저들이 팀원의 커리어를 망치는 법 [번역글] - https://news.hada.io/topic?id=25280\n[^13]: Show GN: 428억 토큰 쓰는 사람들 줄 세워보기 - https://news.hada.io/topic?id=25278\n[^14]: 항상 문제는 TCP_NODELAY다 - https://news.hada.io/topic?id=25277\n[^15]: 그래서 도대체 피지컬 AI가 뭔데? - https://news.hada.io/topic?id=25275\n[^16]: Google's year in review: 8 areas with research breakthroughs in 2025 - https://blog.google/technology/ai/2025-research-breakthroughs/\n[^17]: Texas App Store Age Verification Law Blocked by Federal Judge - https://www.macrumors.com/2025/12/23/texas-app-store-law-blocked/\n[^18]: Some New Projects Are Using Harper - https://elijahpotter.dev/articles/projects-using-harper\n[^19]: Switching It Up a Bit - https://xania.org/202512/23-switching-it-up\n[^20]: Using terminal-notifier in Claude Code to get custom notifications - https://www.andreagrandi.it/posts/using-terminal-notifier-claude-code-custom-notifications/\n[^21]: Gitlow vs. New York - https://en.wikipedia.org/wiki/Gitlow_v._New_York\n[^22]: Unger Parsing - https://buttondown.com/jaffray/archive/unger-parsing/\n[^23]: Show HN: DR Web Engine – JSON-based web scraping that doesn't break on change - https://github.com/starlitlog/dr-web-engine\n[^24]: Show HN: Languagecat, a free dataset for people making language-learning apps - https://language.cat/\n[^25]: FCast: Open-Source Casting Protocol - https://fcast.org\n[^26]: Show HN: Drive Time Shaver Calculator - https://shave.greg.technology/\n[^27]: X-ray: a Python library for finding bad redactions in PDF documents - https://github.com/freelawproject/x-ray\n[^28]: Linus Torvalds on Linus Torvalds (1999) - https://www.yarchive.net/comp/linux/linus.html\n[^29]: Show HN: Greed.js – Run PyTorch code in browser using WebGPU - https://github.com/Deep-ML-codebase/greed\n[^30]: The size of 3I/ATLAS from non-gravitational acceleration - https://arxiv.org/abs/2512.18341\n[^31]: I didn't realize my LG TV was spying on me until I turned off this setting - https://www.pocket-lint.com/lg-tv-turn-off-live-plus/\n[^32]: Polyglot-image: A disk image that boots on multiple architectures - https://github.com/blitz/polyglot-image\n[^33]: Separating AI \"context\" from models so teams can switch without losing state - https://www.anywr.ai/\n[^34]: Ask HN: How to find summer internships at startups in SF? - https://news.ycombinator.com/item?id=46369837\n[^35]: Kick Assembler Manual - https://www.theweb.dk/KickAssembler/webhelp/content/cpt_Introduction.html\n[^36]: China just carried out its second reusable launch attempt in three weeks - https://arstechnica.com/space/2025/12/china-just-carried-out-its-second-reusable-launch-attempt-in-three-weeks/\n[^37]: Here’s where you can use Nano Banana Pro - https://blog.google/products/gemini/where-to-use-nano-banana-pro/\n[^38]: Google's year in review: 8 areas with research breakthroughs in 2025 - https://blog.google/technology/ai/2025-research-breakthroughs/\n[^39]: Google's year in review: 8 areas with research breakthroughs in 2025 - https://deepmind.google/blog/googles-year-in-review-8-areas-with-research-breakthroughs-in-2025/\n[^40]: Google's year in review: 8 areas with research breakthroughs in 2025 - https://deepmind.google/blog/googles-year-in-review-8-areas-with-research-breakthroughs-in-2025/\n[^41]: Thread Dumps and Project Loom (Virtual Threads) - https://blog.jetbrains.com/idea/2025/12/thread-dumps-and-project-loom-virtual-threads/\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **Here’s where you can use Nano Banana Pro**\n   - 출처: Gemini\n   - 링크: https://blog.google/products/gemini/where-to-use-nano-banana-pro/\n\n2. **Google's year in review: 8 areas with research breakthroughs in 2025**\n   - 출처: Google DeepMind\n   - 링크: https://blog.google/technology/ai/2025-research-breakthroughs/\n\n3. **AprielGuard: A Guardrail for Safety and Adversarial Robustness in Modern LLM Systems**\n   - 출처: Hugging Face - Blog\n   - 링크: https://huggingface.co/blog/ServiceNow-AI/aprielguard\n\n4. **5 podcast episodes to help you build with confidence in 2026**\n   - 출처: GitHub Blog\n   - 링크: https://github.blog/open-source/maintainers/5-podcast-episodes-to-help-you-build-with-confidence-in-2026/\n\n5. **This year’s most influential open source projects**\n   - 출처: GitHub Blog\n   - 링크: https://github.blog/open-source/maintainers/this-years-most-influential-open-source-projects/\n\n6. **가장 큰 CRT TV, Sony의 PVM-4300**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25286\n\n7. **대규모 코드베이스로 LLM 확장하기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25285\n\n8. **WhatsApp 메시지와 연락처를 수집한 Lotusbail npm 패키지 발견**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25284\n\n9. **\"No-Code Hype\"가 부딪히는 현실: 운영의 장벽**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25283\n\n10. **초음파 암 치료: 음파로 종양을 공격**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25282\n\n11. **NIST, 지난주 정전으로 UTC 기준시보다 5마이크로초 늦어져**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25281\n\n12. **착한 매니저들이 팀원의 커리어를 망치는 법 [번역글]**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25280\n\n13. **Show GN: 428억 토큰 쓰는 사람들 줄 세워보기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25278\n\n14. **항상 문제는 TCP_NODELAY다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25277\n\n15. **그래서 도대체 피지컬 AI가 뭔데?**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25275\n\n16. **Google's year in review: 8 areas with research breakthroughs in 2025**\n   - 출처: AI\n   - 링크: https://blog.google/technology/ai/2025-research-breakthroughs/\n\n17. **Texas App Store Age Verification Law Blocked by Federal Judge**\n   - 출처: Hacker News\n   - 링크: https://www.macrumors.com/2025/12/23/texas-app-store-law-blocked/\n\n18. **Some New Projects Are Using Harper**\n   - 출처: Hacker News\n   - 링크: https://elijahpotter.dev/articles/projects-using-harper\n\n19. **Switching It Up a Bit**\n   - 출처: Hacker News\n   - 링크: https://xania.org/202512/23-switching-it-up\n\n20. **Using terminal-notifier in Claude Code to get custom notifications**\n   - 출처: Hacker News\n   - 링크: https://www.andreagrandi.it/posts/using-terminal-notifier-claude-code-custom-notifications/\n\n21. **Gitlow vs. New York**\n   - 출처: Hacker News\n   - 링크: https://en.wikipedia.org/wiki/Gitlow_v._New_York\n\n22. **Unger Parsing**\n   - 출처: Hacker News\n   - 링크: https://buttondown.com/jaffray/archive/unger-parsing/\n\n23. **Show HN: DR Web Engine – JSON-based web scraping that doesn't break on change**\n   - 출처: Hacker News\n   - 링크: https://github.com/starlitlog/dr-web-engine\n\n24. **Show HN: Languagecat, a free dataset for people making language-learning apps**\n   - 출처: Hacker News\n   - 링크: https://language.cat/\n\n25. **FCast: Open-Source Casting Protocol**\n   - 출처: Hacker News\n   - 링크: https://fcast.org\n\n26. **Show HN: Drive Time Shaver Calculator**\n   - 출처: Hacker News\n   - 링크: https://shave.greg.technology/\n\n27. **X-ray: a Python library for finding bad redactions in PDF documents**\n   - 출처: Hacker News\n   - 링크: https://github.com/freelawproject/x-ray\n\n28. **Linus Torvalds on Linus Torvalds (1999)**\n   - 출처: Hacker News\n   - 링크: https://www.yarchive.net/comp/linux/linus.html\n\n29. **Show HN: Greed.js – Run PyTorch code in browser using WebGPU**\n   - 출처: Hacker News\n   - 링크: https://github.com/Deep-ML-codebase/greed\n\n30. **The size of 3I/ATLAS from non-gravitational acceleration**\n   - 출처: Hacker News\n   - 링크: https://arxiv.org/abs/2512.18341\n\n31. **I didn't realize my LG TV was spying on me until I turned off this setting**\n   - 출처: Hacker News\n   - 링크: https://www.pocket-lint.com/lg-tv-turn-off-live-plus/\n\n32. **Polyglot-image: A disk image that boots on multiple architectures**\n   - 출처: Hacker News\n   - 링크: https://github.com/blitz/polyglot-image\n\n33. **Separating AI \"context\" from models so teams can switch without losing state**\n   - 출처: Hacker News\n   - 링크: https://www.anywr.ai/\n\n34. **Ask HN: How to find summer internships at startups in SF?**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=46369837\n\n35. **Kick Assembler Manual**\n   - 출처: Hacker News\n   - 링크: https://www.theweb.dk/KickAssembler/webhelp/content/cpt_Introduction.html\n\n36. **China just carried out its second reusable launch attempt in three weeks**\n   - 출처: Hacker News\n   - 링크: https://arstechnica.com/space/2025/12/china-just-carried-out-its-second-reusable-launch-attempt-in-three-weeks/\n\n37. **Here’s where you can use Nano Banana Pro**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/products/gemini/where-to-use-nano-banana-pro/\n\n38. **Google's year in review: 8 areas with research breakthroughs in 2025**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/technology/ai/2025-research-breakthroughs/\n\n39. **Google's year in review: 8 areas with research breakthroughs in 2025**\n   - 출처: Google DeepMind Blog\n   - 링크: https://deepmind.google/blog/googles-year-in-review-8-areas-with-research-breakthroughs-in-2025/\n\n40. **Google's year in review: 8 areas with research breakthroughs in 2025**\n   - 출처: DeepMind\n   - 링크: https://deepmind.google/blog/googles-year-in-review-8-areas-with-research-breakthroughs-in-2025/\n\n41. **Thread Dumps and Project Loom (Virtual Threads)**\n   - 출처: IntelliJ IDEA : IntelliJ IDEA – the IDE for Professional Development in Java and Kotlin | The JetBrains Blog\n   - 링크: https://blog.jetbrains.com/idea/2025/12/thread-dumps-and-project-loom-virtual-threads/\n\n\n",
+  "articles": [
+    {
+      "title": "Here’s where you can use Nano Banana Pro",
+      "link": "https://blog.google/products/gemini/where-to-use-nano-banana-pro/",
+      "source": "Gemini",
+      "category": "tech",
+      "publishedAt": "2025-12-23T17:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/everywhere_nanobanana_hero.max-600x600.format-webp.webp\"\u003eLearn more about Nano Banana Pro, Google’s state-of-the-art image generation and editing model, and where you can use it now."
+    },
+    {
+      "title": "Google's year in review: 8 areas with research breakthroughs in 2025",
+      "link": "https://blog.google/technology/ai/2025-research-breakthroughs/",
+      "source": "Google DeepMind",
+      "category": "tech",
+      "publishedAt": "2025-12-23T17:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/end-of-year-blog_header_light_2.max-600x600.format-webp.webp\"\u003eThis year saw new AI models, transformative products and new breakthroughs in science and robotics."
+    },
+    {
+      "title": "AprielGuard: A Guardrail for Safety and Adversarial Robustness in Modern LLM Systems",
+      "link": "https://huggingface.co/blog/ServiceNow-AI/aprielguard",
+      "source": "Hugging Face - Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-23T14:07:35Z"
+    },
+    {
+      "title": "5 podcast episodes to help you build with confidence in 2026",
+      "link": "https://github.blog/open-source/maintainers/5-podcast-episodes-to-help-you-build-with-confidence-in-2026/",
+      "source": "GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-23T00:15:00Z",
+      "description": "\u003cp\u003eLooking ahead to the New Year? These GitHub Podcast episodes help you cut through the noise and build with more confidence across AI, open source, and developer tools.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/open-source/maintainers/5-podcast-episodes-to-help-you-build-with-confidence-in-2026/\"\u003e5 podcast episodes to help you build with confidence in 2026\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "This year’s most influential open source projects",
+      "link": "https://github.blog/open-source/maintainers/this-years-most-influential-open-source-projects/",
+      "source": "GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-22T23:48:52Z",
+      "description": "\u003cp\u003eFrom Appwrite to Zulip, Universe 2025’s Open Source Zone was stacked with standout projects showing just how far open source can go. Meet the maintainers—and if you want to join them in 2026, you can now apply for next year’s cohort.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/open-source/maintainers/this-years-most-influential-open-source-projects/\"\u003eThis year’s most influential open source projects\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "가장 큰 CRT TV, Sony의 PVM-4300",
+      "link": "https://news.hada.io/topic?id=25286",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-24T05:33:05+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e1989년 일본에서 출시된 \u003cstrong\u003eSony PVM-4300(KV-45ED1)\u003c/strong\u003e 은 45인치 튜브를 탑재한 세계 최대의 \u003cstrong\u003eTrinitron CRT TV\u003c/strong\u003e로, 43인치의 가시 화면을 제공\u003c/li\u003e\n\u003cli\u003e본체 무게는 약 \u003cstrong\u003e450파운드(약 204kg)\u003c/strong\u003e 로, 일반 문을 통과할 수 없을 정도로 크며, 일본에서는 260만 엔, 미...\u003c/p\u003e"
+    },
+    {
+      "title": "대규모 코드베이스로 LLM 확장하기",
+      "link": "https://news.hada.io/topic?id=25285",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-24T04:37:54+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e대규모 코드베이스에서 LLM을 효과적으로 활용하기 위해서는 ‘가이드(guide)’와 ‘감독(oversight)’에 대한 투자가 핵심\u003c/strong\u003e임\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e가이드는 문맥과 환경을 제공\u003c/strong\u003e해 LLM이 더 나은 선택을 하도록 돕고, \u003cstrong\u003e감독은 결과를 검증하고 방향을 제시하는 역할\u003c/strong\u003e을...\u003c/p\u003e"
+    },
+    {
+      "title": "WhatsApp 메시지와 연락처를 수집한 Lotusbail npm 패키지 발견",
+      "link": "https://news.hada.io/topic?id=25284",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-24T04:34:54+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eLotusbail\u003c/strong\u003e 패키지는 합법적인 WhatsApp Web API 라이브러리인 \u003cstrong\u003eBaileys\u003c/strong\u003e를 포크한 형태로, 6개월간 npm에서 5만6천 회 이상 다운로드된 \u003cstrong\u003e악성 코드 포함 패키지\u003c/strong\u003e임\u003c/li\u003e\n\u003cli\u003e정상적으로 작동하는 API 기능을 제공하면서 \u003cstrong\u003eWhatsApp 인증 정보, 메시지, ...\u003c/p\u003e"
+    },
+    {
+      "title": "\"No-Code Hype\"가 부딪히는 현실: 운영의 장벽",
+      "link": "https://news.hada.io/topic?id=25283",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-24T03:53:00+09:00",
+      "description": "\u003ch4\u003e요약 (Summary)\u003c/h4\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e데모와 현실의 괴리: 'Vibe Coding'과 노코드/AI 툴은 UI 데모를 만드는 데는 효과적이나, 실제 SaaS 제품화 단계에서 필수적인 인증(Auth), 결제(Billing), 데이터 마이그레이션, 보안 등 \u003cstrong\u003e'운영의 장벽(Operational Wall)'\u003c/strong\u003e 에 부딪힘.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e리스크"
+    },
+    {
+      "title": "초음파 암 치료: 음파로 종양을 공격",
+      "link": "https://news.hada.io/topic?id=25282",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-24T02:37:11+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e초음파 기반 ‘히스토트립시(histotripsy)’ 기술\u003c/strong\u003e이 열이나 방사선 없이 종양을 파괴하는 \u003cstrong\u003e비절개 치료법\u003c/strong\u003e으로 주목받고 있음\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eHistoSonics의 Edison 시스템\u003c/strong\u003e은 물이 채워진 막을 통해 초점을 맞춘 초음파를 전달해 \u003cstrong\u003e기포를 생성·붕괴시켜 암...\u003c/p\u003e"
+    },
+    {
+      "title": "NIST, 지난주 정전으로 UTC 기준시보다 5마이크로초 늦어져",
+      "link": "https://news.hada.io/topic?id=25281",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-24T02:34:11+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e미국 콜로라도 볼더의 \u003cstrong\u003eNIST 시간 시설이 정전으로 수일간 가동 중단\u003c/strong\u003e, 백업 발전기 고장으로 \u003cstrong\u003eUTC 기준시와 최대 5μs 오차\u003c/strong\u003e 발생\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eNTP 서버 6대\u003c/strong\u003e를 운영하는 이 시설은 발전기 고장에도 불구하고 \u003cstrong\u003e시간 편차를 5μs 이하로 유지\u003c/strong\u003e, 일반...\u003c/p\u003e"
+    },
+    {
+      "title": "착한 매니저들이 팀원의 커리어를 망치는 법 [번역글]",
+      "link": "https://news.hada.io/topic?id=25280",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-23T23:25:26+09:00",
+      "description": "\u003cp\u003e착한 매니저들은 친절을 핑계로 피드백을 주지 않고 기대치를 낮춰 팀원의 잠재력을 억압. 이는 골렘 이펙트로, 낮은 기대가 실제 성과 저하와 커리어 정체를 초래.\u003c/p\u003e\n\u003ch4\u003e1. 착한 매니저의 5대 문제점\u003c/h4\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e기대치 미 전달\u003c/strong\u003e: \u0026quot;좋아, 천천히 해도 돼\u0026quot; 같은 말로 팀원이 도전 과"
+    },
+    {
+      "title": "Show GN: 428억 토큰 쓰는 사람들 줄 세워보기",
+      "link": "https://news.hada.io/topic?id=25278",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-23T21:38:10+09:00",
+      "description": "\u003cp\u003eTLDR: https://github.com/junhoyeo/tokscale\u003c/p\u003e\n\u003ch3\u003e배경\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e올해 상반기 출시된 Claude Code를 시작으로, OpenAI Codex CLI, Google Gemini CLI 등 여러 LLM Provider들이 본격적으로 에이전틱 코딩 툴(Agentic Coding Tool)을 제공하기 시작함. 그럼에도 불구하고 대부분의 일은 직접 하고 있었음\u003c/li"
+    },
+    {
+      "title": "항상 문제는 TCP_NODELAY다",
+      "link": "https://news.hada.io/topic?id=25277",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-23T21:33:08+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e분산 시스템의 \u003cstrong\u003e지연(latency) 문제를 디버깅할 때 가장 먼저 확인해야 하는 항목이 TCP_NODELAY 설정\u003c/strong\u003e임\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eNagle 알고리듬\u003c/strong\u003e은 1984년 RFC896에서 제안된 방식으로, 작은 패킷 전송 시 TCP 헤더 오버헤드를 줄이기 위해 설계됨\u003c/li\u003e\n\u003cli\u003e그러나 \u003cstrong\u003e지연된 ACK(del...\u003c/p\u003e"
+    },
+    {
+      "title": "그래서 도대체 피지컬 AI가 뭔데?",
+      "link": "https://news.hada.io/topic?id=25275",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-23T20:43:31+09:00",
+      "description": "\u003ch3\u003e전문보기, https://maily.so/kkumaeunsonyeon/posts/10z3095jzlw\u003c/h3\u003e\n\u003cp\u003e바야흐로 인공지능이 소프트웨어를 넘어 물리적 실체와 결합해 현실 세계에서 자율적으로 이해하고, 행동할 수 있는 기술인 '피지컬 AI (Physical Artificial Intelligence)' 가 AI 패러다임의 상승 기류를 타고 산업 분야 혁신의 핵심으로 비...\u003c/p\u003e"
+    },
+    {
+      "title": "Google's year in review: 8 areas with research breakthroughs in 2025",
+      "link": "https://blog.google/technology/ai/2025-research-breakthroughs/",
+      "source": "AI",
+      "category": "tech",
+      "publishedAt": "2025-12-23T17:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/end-of-year-blog_header_light_2.max-600x600.format-webp.webp\"\u003eThis year saw new AI models, transformative products and new breakthroughs in science and robotics."
+    },
+    {
+      "title": "Texas App Store Age Verification Law Blocked by Federal Judge",
+      "link": "https://www.macrumors.com/2025/12/23/texas-app-store-law-blocked/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-23T22:03:46Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.macrumors.com/2025/12/23/texas-app-store-law-blocked/\"\u003ehttps://www.macrumors.com/2025/12/23/texas-app-store-law-blocked/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46370012\"\u003ehttps://news.ycombinator.com/item?id=46370012\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Some New Projects Are Using Harper",
+      "link": "https://elijahpotter.dev/articles/projects-using-harper",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-23T22:02:38Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://elijahpotter.dev/articles/projects-using-harper\"\u003ehttps://elijahpotter.dev/articles/projects-using-harper\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46370002\"\u003ehttps://news.ycombinator.com/item?id=46370002\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Switching It Up a Bit",
+      "link": "https://xania.org/202512/23-switching-it-up",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-23T22:01:55Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://xania.org/202512/23-switching-it-up\"\u003ehttps://xania.org/202512/23-switching-it-up\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46369993\"\u003ehttps://news.ycombinator.com/item?id=46369993\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Using terminal-notifier in Claude Code to get custom notifications",
+      "link": "https://www.andreagrandi.it/posts/using-terminal-notifier-claude-code-custom-notifications/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-23T22:01:50Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.andreagrandi.it/posts/using-terminal-notifier-claude-code-custom-notifications/\"\u003ehttps://www.andreagrandi.it/posts/using-terminal-notifier-claude-code-custom-notifications/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46369992\"\u003ehttps://news.ycombinator.com/item?id=46369992\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Gitlow vs. New York",
+      "link": "https://en.wikipedia.org/wiki/Gitlow_v._New_York",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-23T22:01:43Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://en.wikipedia.org/wiki/Gitlow_v._New_York\"\u003ehttps://en.wikipedia.org/wiki/Gitlow_v._New_York\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46369990\"\u003ehttps://news.ycombinator.com/item?id=46369990\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Unger Parsing",
+      "link": "https://buttondown.com/jaffray/archive/unger-parsing/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-23T22:01:36Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://buttondown.com/jaffray/archive/unger-parsing/\"\u003ehttps://buttondown.com/jaffray/archive/unger-parsing/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46369988\"\u003ehttps://news.ycombinator.com/item?id=46369988\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: DR Web Engine – JSON-based web scraping that doesn't break on change",
+      "link": "https://github.com/starlitlog/dr-web-engine",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-23T21:59:14Z",
+      "description": "\n\u003cp\u003eBuilt this during my PhD research after getting frustrated with traditional web scrapers breaking every time sites updated their HTML. DR Web Engine uses declarative JSON5 queries instead of imperative scraping code.\u003cp\u003e\u003cpre\u003e\u003ccode\u003e  Key features:\n  - JSON5 query language (can still use XPath for field selectors)\n  - AI-powered element selection (describe what you want in natural language)\n  - Plugin architecture for extensibility\n  - Modern browser automation (Playwright-based)\n  - Handles dynamic content and JavaScript\n\n  The core insight: define WHAT data to extract in a structured format, not HOW to extract it step-by-step. Makes scraping more maintainable and less brittle.\n\n  Started as academic research but rebuilt it for real-world use. Published the methodology in arXiv and now actively developing the open source version.\n\n  Looking for feedback on the query language design and real-world use cases!\u003c/code\u003e\u003c/pre\u003e\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46369967\"\u003ehttps://news.ycombinator.com/item?id=46369967\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Languagecat, a free dataset for people making language-learning apps",
+      "link": "https://language.cat/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-23T21:58:54Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://language.cat/\"\u003ehttps://language.cat/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46369958\"\u003ehttps://news.ycombinator.com/item?id=46369958\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "FCast: Open-Source Casting Protocol",
+      "link": "https://fcast.org",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-23T21:58:53Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://fcast.org\"\u003ehttps://fcast.org\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46369957\"\u003ehttps://news.ycombinator.com/item?id=46369957\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Drive Time Shaver Calculator",
+      "link": "https://shave.greg.technology/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-23T21:55:53Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://shave.greg.technology/\"\u003ehttps://shave.greg.technology/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46369935\"\u003ehttps://news.ycombinator.com/item?id=46369935\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "X-ray: a Python library for finding bad redactions in PDF documents",
+      "link": "https://github.com/freelawproject/x-ray",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-23T21:54:30Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/freelawproject/x-ray\"\u003ehttps://github.com/freelawproject/x-ray\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46369923\"\u003ehttps://news.ycombinator.com/item?id=46369923\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Linus Torvalds on Linus Torvalds (1999)",
+      "link": "https://www.yarchive.net/comp/linux/linus.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-23T21:52:13Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.yarchive.net/comp/linux/linus.html\"\u003ehttps://www.yarchive.net/comp/linux/linus.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46369901\"\u003ehttps://news.ycombinator.com/item?id=46369901\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Greed.js – Run PyTorch code in browser using WebGPU",
+      "link": "https://github.com/Deep-ML-codebase/greed",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-23T21:51:54Z",
+      "description": "\n\u003cp\u003eGreed.js is a javascript library that allows executing PyTorch code right in the browser. It uses the WebGPU of the browser to execute PyTorch operations.\u003cp\u003eWe have written the core PyTorch operations in WGSL, which speedup the calculations.\u003cp\u003eAlso for devices/browsers which don't have GPU support. We have implemented fallback to CPU with NumPy polyfills implementing the PyTorch functions.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46369897\"\u003ehttps://news.ycombinator.com/item?id=46369897\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The size of 3I/ATLAS from non-gravitational acceleration",
+      "link": "https://arxiv.org/abs/2512.18341",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-23T21:51:08Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://arxiv.org/abs/2512.18341\"\u003ehttps://arxiv.org/abs/2512.18341\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46369891\"\u003ehttps://news.ycombinator.com/item?id=46369891\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "I didn't realize my LG TV was spying on me until I turned off this setting",
+      "link": "https://www.pocket-lint.com/lg-tv-turn-off-live-plus/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-23T21:47:33Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.pocket-lint.com/lg-tv-turn-off-live-plus/\"\u003ehttps://www.pocket-lint.com/lg-tv-turn-off-live-plus/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46369860\"\u003ehttps://news.ycombinator.com/item?id=46369860\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 5\u003c/p\u003e\n\u003cp\u003e# Comments: 2\u003c/p\u003e\n"
+    },
+    {
+      "title": "Polyglot-image: A disk image that boots on multiple architectures",
+      "link": "https://github.com/blitz/polyglot-image",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-23T21:47:33Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/blitz/polyglot-image\"\u003ehttps://github.com/blitz/polyglot-image\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46369859\"\u003ehttps://news.ycombinator.com/item?id=46369859\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Separating AI \"context\" from models so teams can switch without losing state",
+      "link": "https://www.anywr.ai/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-23T21:45:53Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.anywr.ai/\"\u003ehttps://www.anywr.ai/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46369840\"\u003ehttps://news.ycombinator.com/item?id=46369840\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Ask HN: How to find summer internships at startups in SF?",
+      "link": "https://news.ycombinator.com/item?id=46369837",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-23T21:45:34Z",
+      "description": "\n\u003cp\u003eGraduating soon, likely will do a Masters, but looking for an internship in between.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46369837\"\u003ehttps://news.ycombinator.com/item?id=46369837\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Kick Assembler Manual",
+      "link": "https://www.theweb.dk/KickAssembler/webhelp/content/cpt_Introduction.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-23T21:44:45Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.theweb.dk/KickAssembler/webhelp/content/cpt_Introduction.html\"\u003ehttps://www.theweb.dk/KickAssembler/webhelp/content/cpt_Introduction.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46369829\"\u003ehttps://news.ycombinator.com/item?id=46369829\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "China just carried out its second reusable launch attempt in three weeks",
+      "link": "https://arstechnica.com/space/2025/12/china-just-carried-out-its-second-reusable-launch-attempt-in-three-weeks/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-23T21:44:27Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://arstechnica.com/space/2025/12/china-just-carried-out-its-second-reusable-launch-attempt-in-three-weeks/\"\u003ehttps://arstechnica.com/space/2025/12/china-just-carried-out-its-second-reusable-launch-attempt-in-three-weeks/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46369826\"\u003ehttps://news.ycombinator.com/item?id=46369826\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Here’s where you can use Nano Banana Pro",
+      "link": "https://blog.google/products/gemini/where-to-use-nano-banana-pro/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-23T17:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/everywhere_nanobanana_hero.max-600x600.format-webp.webp\"\u003eLearn more about Nano Banana Pro, Google’s state-of-the-art image generation and editing model, and where you can use it now."
+    },
+    {
+      "title": "Google's year in review: 8 areas with research breakthroughs in 2025",
+      "link": "https://blog.google/technology/ai/2025-research-breakthroughs/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-23T17:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/end-of-year-blog_header_light_2.max-600x600.format-webp.webp\"\u003eThis year saw new AI models, transformative products and new breakthroughs in science and robotics."
+    },
+    {
+      "title": "Google's year in review: 8 areas with research breakthroughs in 2025",
+      "link": "https://deepmind.google/blog/googles-year-in-review-8-areas-with-research-breakthroughs-in-2025/",
+      "source": "Google DeepMind Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-23T17:01:02Z",
+      "description": "Google 2025 recap: Research breakthroughs of the year"
+    },
+    {
+      "title": "Google's year in review: 8 areas with research breakthroughs in 2025",
+      "link": "https://deepmind.google/blog/googles-year-in-review-8-areas-with-research-breakthroughs-in-2025/",
+      "source": "DeepMind",
+      "category": "tech",
+      "publishedAt": "2025-12-23T17:01:02Z",
+      "description": "Google 2025 recap: Research breakthroughs of the year"
+    },
+    {
+      "title": "Thread Dumps and Project Loom (Virtual Threads)",
+      "link": "https://blog.jetbrains.com/idea/2025/12/thread-dumps-and-project-loom-virtual-threads/",
+      "source": "IntelliJ IDEA : IntelliJ IDEA – the IDE for Professional Development in Java and Kotlin | The JetBrains Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-23T14:14:55Z",
+      "description": "If you’ve been keeping up with Java virtual threads, you already know that this hot new feature significantly improves hardware utilization for parallel I/O-bound operations. Virtual threads map multiple concurrent I/O operations to a single OS thread without blocking. The novel aspect of this approach is that it requires minimal changes to the codebase, as [\u0026#8230;]"
+    }
+  ],
+  "generatedAt": "2025-12-24T07:09:36.753436621+09:00"
+}
