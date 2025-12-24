@@ -1,0 +1,258 @@
+{
+  "date": "2025-12-25",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2025년 12월 24일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** AI 추론 시장을 뒤흔들 Groq와 Nvidia의 동맹, 10년간의 부트스트랩 성공 신화, 그리고 잘못된 PDF 가림 처리가 불러온 보안 참사.\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### Groq와 Nvidia, AI 추론 가속화를 위한 라이선스 계약 체결\nAI 칩 분야의 떠오르는 강자 Groq가 업계 절대 강자 Nvidia와 비독점적 기술 라이선스 계약을 체결했습니다. 이는 AI 추론(Inference) 시장의 판도를 바꿀 수 있는 중요한 사건입니다.\n*   **핵심 내용:** Groq는 자사의 LPU(Language Processing Unit) 기술과 Nvidia의 생태계를 연결하거나, Nvidia의 특정 IP를 활용하여 글로벌 확장을 가속화할 것으로 보입니다.\n*   **의의:** 경쟁 관계인 두 기업의 협력은 AI 하드웨어 시장이 '단순 경쟁'을 넘어 '표준화 및 생태계 확장' 단계로 진입했음을 시사합니다. Groq의 빠른 처리 속도와 Nvidia의 범용성이 만났을 때의 시너지가 기대됩니다.\n\u003e **Key Point:** AI 추론 비용 절감과 속도 향상을 위한 하드웨어 거인들의 전략적 제휴 [^26]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. 보안의 기본을 망각한 대가: 엡스타인 문서와 'X-ray'\n최근 엡스타인 관련 법원 문서의 검은색 가림 처리(Redaction)가 해킹으로 뚫려 원본 내용이 드러나는 사고가 발생했습니다. 이는 단순한 실수가 아니라 기술적 무지에서 비롯된 참사입니다.\n- **What:** PDF 위에 검은색 박스를 덧칠하는 방식은 텍스트 레이어를 삭제하지 않으므로, 이를 제거하면 원본이 그대로 노출됩니다.\n- **Why:** 이를 기술적으로 해결하기 위해 PDF의 잘못된 가림 처리를 탐지하는 Python 라이브러리 'X-ray'가 주목받고 있습니다.\n- **Impact:** 공공기관 및 기업의 문서 보안 프로세스에 대한 전면적인 재검토가 필요하며, 개발자들은 `X-ray` 같은 도구를 통해 배포 전 검증을 자동화해야 합니다. [^9] [^10]\n\n### 2. GitHub의 경고: 차세대 공급망 공격에 대비하라\n세계 최대 오픈소스 저장소 GitHub가 공급망 보안 강화를 위한 새로운 가이드를 발표했습니다.\n- **What:** 단순한 코드 취약점을 넘어, 패키지 레지스트리(NPM, PyPI 등)를 통한 악성코드 배포가 정교해지고 있습니다.\n- **Why:** 공격자들은 개발자의 계정을 탈취하거나, 인기 패키지와 유사한 이름(Typosquatting)을 사용하여 침투합니다.\n- **Impact:** GitHub는 2FA 의무화 확대와 더불어, 서명된 커밋(Signed Commits) 및 출처 증명(Provenance) 도구의 도입을 강력히 권장하고 있습니다. [^1]\n\n### 3. VC 없이 10년, 연매출 650만 유로 달성한 '부트스트랩' 신화\n투자금 없이 고객 매출만으로 성장하는 '부트스트랩(Bootstrap)' 방식의 성공 사례가 화제입니다.\n- **What:** 13명의 소수 정예 팀이 외부 투자 없이 10년 만에 연 매출 650만 유로(약 95억 원)를 달성했습니다.\n- **Why:** 무리한 확장 대신 제품의 본질과 고객 만족에 집중하는 '느리지만 단단한 성장' 전략이 유효했습니다.\n- **Impact:** 스타트업 혹한기인 현재, 무조건적인 VC 투자 유치보다 자생력을 갖춘 비즈니스 모델의 중요성을 일깨워줍니다. [^3]\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **Spec Kit** | AI를 활용한 '스펙 주도 개발(Spec-driven development)' 오픈소스 툴킷 [^31] |\n| **Tool** | **Snitch** | 복잡한 `ss`나 `netstat` 대신, 직관적인 UI로 네트워크 연결 상태를 보여주는 도구 [^4] |\n| **Tool** | **CineCLI** | 터미널에서 영화 정보를 검색하고 토렌트 스트리밍까지 연결해주는 CLI 도구 [^6] |\n| **Tool** | **pgvectorscale** | PostgreSQL의 벡터 검색 성능과 확장성을 높여주는 Timescale의 확장 모듈 [^12] |\n| **Tool** | **FileKit.dev** | 썸네일 생성 및 다중 업로드 기능을 지원하는 새로운 파일 관리 컴포넌트 [^17] |\n| **Tool** | **Early Retirement Calc** | 50년치 시뮬레이션을 통해 조기 은퇴 가능 여부를 계산해주는 계산기 [^30] |\n| **Service** | **Show GN: AI 면접** | 개발자 기술 면접을 AI와 함께 준비할 수 있는 서비스 [^7] |\n| **Service** | **Pic2Cook** | 냉장고 속 재료 사진 한 장으로 레시피를 생성해주는 AI 서비스 [^8] |\n| **Paper** | **Squeak History** | Squeak Smalltalk 언어가 어떻게 자체적으로 작성되었는지 다룬 역사적 문서 (PDF) [^28] |\n| **Data** | **LA Wastewater** | 2023-2024년 LA 하수 데이터를 통한 메타전사체 시퀀싱 연구 데이터 [^24] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n\n#### 💻 개발 \u0026 인프라\n*   **느림은 미덕이다**: 소프트웨어 개발에서 속도보다 신중함과 품질이 중요한 이유에 대한 고찰 [^5]\n*   **AI 검색 vs SEO**: AI 검색이 성장 중이지만, 여전히 트래픽의 대부분은 전통적인 SEO 원칙에서 나옴 [^11]\n*   **Phoenix Channels 위젯**: Phoenix Channels를 사용하여 임베더블 위젯을 구축하는 기술 가이드 [^29]\n\n#### 🔐 보안 \u0026 사회\n*   **텍사스 앱스토어 연령 확인 차단**: 연방법원 판사가 텍사스의 앱스토어 연령 확인 의무화 법안 제동 [^2]\n*   **한국, 허위조작정보 방지법 통과**: 민주주의 국가 중 가장 강력한 수준의 허위정보(딥페이크 등) 규제 법안 통과 [^21]\n*   **Minecraft 서버 해킹**: 게임 내 메커니즘을 이용한 메모리 오버플로우로 자바 서버를 해킹하는 방법 시연 [^20]\n*   **Indiegogo 언론 탄압 논란**: 이스라엘 관련 폭로를 한 인디 저널리스트를 탄압했다는 의혹 제기 [^25]\n\n#### 🌍 사회 \u0026 경제\n*   **2026년 미국 최저임금 인상**: 미국 전역의 노동자들이 2026년에 최저임금 인상 혜택을 받게 됨 [^13]\n*   **트럼프의 이민 정책 악몽**: \"그것은 이미 여기서 일어나고 있다\"는 제목의 이민 정책 비판 칼럼 [^14]\n*   **폰 기반의 은퇴 생활**: 부모님 세대가 스마트폰 중독 문제를 겪고 있다는 사회적 현상 분석 [^19]\n*   **골프는 조정(Rowing)이 아니다**: 노력의 총량보다 '올바른 방향'이 중요하다는 에세이 [^27]\n\n#### 🕹️ 문화 \u0026 기타\n*   **스팀 스토어 오프라인**: Steam 상점이 일시적으로 접속 불가 상태가 됨 [^22]\n*   **유튜브를 떠나며**: 한 크리에이터가 YouTube 플랫폼을 떠나게 된 이유와 과정 [^16]\n*   **기본 설정이 너무 높다**: 현대 사회의 삶의 기준(Default Settings)이 너무 높게 설정되어 있다는 철학적 에세이 [^18]\n*   **89년 전 SF-하와이 비행**: 세계를 바꾼 샌프란시스코-하와이 간 비행의 역사 [^23]\n*   **My Little Pony 이미지보드**: 선형적인 구조를 가진 마이 리틀 포니 아트 아카이브 소개 [^15]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘 뉴스는 '**기술의 양면성**'을 극명하게 보여줍니다. Groq와 Nvidia의 협력처럼 기술의 최첨단은 빠르게 발전하지만, PDF 가림 처리 실패(#9)나 Minecraft 해킹(#20)처럼 아주 기본적인 곳에서 보안 구멍이 뚫리기도 합니다. 또한, '느림의 미덕'(#5)과 '부트스트랩 성공기'(#3)는 속도 지상주의인 테크 업계에 시사하는 바가 큽니다. 기술은 빠르지만, 그것을 다루는 우리는 조금 더 신중해야 할지도 모르겠습니다.\n\n---\n\n[^1]: Strengthening supply chain security - https://github.blog/security/supply-chain-security/strengthening-supply-chain-security-preparing-for-the-next-malware-campaign/\n[^2]: 텍사스 앱스토어 연령 확인 법안 차단 - https://news.hada.io/topic?id=25313\n[^3]: 10년간 부트스트랩으로 성장 - https://news.hada.io/topic?id=25312\n[^4]: Snitch – 더 친숙한 ss/netstat 도구 - https://news.hada.io/topic?id=25311\n[^5]: 느림은 미덕이다 - https://news.hada.io/topic?id=25310\n[^6]: CineCLI - https://news.hada.io/topic?id=25309\n[^7]: Show GN: AI 기반 개발자 기술면접 - https://news.hada.io/topic?id=25308\n[^8]: Show GN: Pic2Cook - https://news.hada.io/topic?id=25307\n[^9]: 엡스타인 문서 가림처리 해킹 - https://news.hada.io/topic?id=25306\n[^10]: PDF 가림 탐지 라이브러리 X-ray - https://news.hada.io/topic?id=25305\n[^11]: AI 검색과 SEO - https://news.hada.io/topic?id=25304\n[^12]: Postgres extension pgvectorscale - https://github.com/timescale/pgvectorscale\n[^13]: Workers across the U.S. minimum wage - https://www.cbsnews.com/news/2026-minimum-wage-increases/\n[^14]: It Is Happening Here - https://newrepublic.com/article/204227/trump-immigration-nightmare-happening-here\n[^15]: A linear imageboru for My Little Pony - https://derpibooru.org/\n[^16]: I Left YouTube - https://zhach.news/how-i-left-youtube/\n[^17]: FileKit.dev - https://filekit.dev/documentation\n[^18]: Maybe the Default Settings Are Too High - https://www.raptitude.com/2025/12/maybe-the-default-settings-are-too-high/\n[^19]: The Phone-Based Retirement Is Here - https://www.theatlantic.com/technology/2025/12/do-your-parents-have-screen-time-problem/685424/\n[^20]: Hacking a Java Minecraft server - https://www.youtube.com/watch?v=Zy6Ci-K-0K8\n[^21]: South Korea Passes Disinformation Law - https://www.koreaherald.com/article/10642910\n[^22]: Steam Store Is Offline - https://steamstat.us/\n[^23]: 89 years ago, SF-to-Hawaii flight - https://www.sfgate.com/hawaii/article/hawaii-air-travel-history-21246817.php\n[^24]: Deep metatranscriptomic sequencing - https://www.nature.com/articles/s41597-025-06475-7\n[^25]: Indiegogo suppressing indie journalists - https://www.youtube.com/watch?v=nIePTGWF15k\n[^26]: Groq and Nvidia Licensing Agreement - https://groq.com/newsroom/groq-and-nvidia-enter-non-exclusive-inference-technology-licensing-agreement-to-accelerate-ai-inference-at-global-scale\n[^27]: Golfing Is Not Rowing - https://taylor.town/golf-vs-rowing\n[^28]: Back to the future: the story of Squeak - http://www.vpri.org/pdf/tr1997001_backto.pdf\n[^29]: Building Embeddable Widgets - https://zarar.dev/building-embeddable-widgets-with-phoenix-channels/\n[^30]: Early retirement calculator - https://earlyretirementrunway.com/\n[^31]: Spec Kit: Spec-driven development with AI - https://github.blog/ai-and-ml/generative-ai/spec-driven-development-with-ai-get-started-with-a-new-open-source-toolkit/\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **Strengthening supply chain security: Preparing for the next malware campaign**\n   - 출처: GitHub Blog\n   - 링크: https://github.blog/security/supply-chain-security/strengthening-supply-chain-security-preparing-for-the-next-malware-campaign/\n\n2. **텍사스 앱스토어 연령 확인 법안, 연방법원 판사에 의해 차단**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25313\n\n3. **10년간 부트스트랩으로 성장: 13명 팀이 연매출 €6.5M 달성**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25312\n\n4. **Snitch – 더 친숙한 ss/netstat 도구**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25311\n\n5. **느림은 미덕이다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25310\n\n6. **터미널에서 직접 영화 검색 및 토렌트 실행이 가능한 CineCLI**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25309\n\n7. **Show GN: AI 기반 개발자 기술면접 준비 서비스**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25308\n\n8. **Show GN: Pic2Cook 사진 한 장으로 레시피를 만들어주는 서비스**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25307\n\n9. **엡스타인 관련 문서의 일부 검은색 가림처리가 해킹으로 해제됨**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25306\n\n10. **PDF 문서의 잘못된 가림(블랙박스 처리)을 탐지하는 Python 라이브러리 X-ray**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25305\n\n11. **AI 검색은 성장 중이지만, SEO 기본 원칙이 여전히 대부분의 트래픽을 만든다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25304\n\n12. **Postgres extension complements pgvector for performance and scale**\n   - 출처: Hacker News\n   - 링크: https://github.com/timescale/pgvectorscale\n\n13. **Workers across the U.S. are set for minimum wage increases in 2026**\n   - 출처: Hacker News\n   - 링크: https://www.cbsnews.com/news/2026-minimum-wage-increases/\n\n14. **It Is Happening Here**\n   - 출처: Hacker News\n   - 링크: https://newrepublic.com/article/204227/trump-immigration-nightmare-happening-here\n\n15. **A linear imageboru for My Little Pony art**\n   - 출처: Hacker News\n   - 링크: https://derpibooru.org/\n\n16. **I Left YouTube**\n   - 출처: Hacker News\n   - 링크: https://zhach.news/how-i-left-youtube/\n\n17. **FileKit.dev – New Thumbnail Component and Multi Upload Support**\n   - 출처: Hacker News\n   - 링크: https://filekit.dev/documentation\n\n18. **Maybe the Default Settings Are Too High**\n   - 출처: Hacker News\n   - 링크: https://www.raptitude.com/2025/12/maybe-the-default-settings-are-too-high/\n\n19. **The Phone-Based Retirement Is Here**\n   - 출처: Hacker News\n   - 링크: https://www.theatlantic.com/technology/2025/12/do-your-parents-have-screen-time-problem/685424/\n\n20. **Hacking a Java Minecraft server with memory overflows using in-game mechanics**\n   - 출처: Hacker News\n   - 링크: https://www.youtube.com/watch?v=Zy6Ci-K-0K8\n\n21. **South Korea Passes Strictest Disinformation Law in Any Democracy**\n   - 출처: Hacker News\n   - 링크: https://www.koreaherald.com/article/10642910\n\n22. **Steam Store Is Offline**\n   - 출처: Hacker News\n   - 링크: https://steamstat.us/\n\n23. **89 years ago, an SF-to-Hawaii flight changed the world forever**\n   - 출처: Hacker News\n   - 링크: https://www.sfgate.com/hawaii/article/hawaii-air-travel-history-21246817.php\n\n24. **Deep metatranscriptomic sequencing data of wastewater from Los Angeles 2023–2024**\n   - 출처: Hacker News\n   - 링크: https://www.nature.com/articles/s41597-025-06475-7\n\n25. **Indiegogo suppressing indie journalists exposing israel**\n   - 출처: Hacker News\n   - 링크: https://www.youtube.com/watch?v=nIePTGWF15k\n\n26. **Groq and Nvidia Licensing Agreement**\n   - 출처: Hacker News\n   - 링크: https://groq.com/newsroom/groq-and-nvidia-enter-non-exclusive-inference-technology-licensing-agreement-to-accelerate-ai-inference-at-global-scale\n\n27. **Golfing Is Not Rowing**\n   - 출처: Hacker News\n   - 링크: https://taylor.town/golf-vs-rowing\n\n28. **Back to the future: the story of Squeak, a practical Smalltalk written in itself [pdf]**\n   - 출처: Hacker News\n   - 링크: http://www.vpri.org/pdf/tr1997001_backto.pdf\n\n29. **Building Embeddable Widgets with Phoenix Channels**\n   - 출처: Hacker News\n   - 링크: https://zarar.dev/building-embeddable-widgets-with-phoenix-channels/\n\n30. **Early retirement calculator that models a full 50-years(for retiring young)**\n   - 출처: Hacker News\n   - 링크: https://earlyretirementrunway.com/\n\n31. **Spec Kit: Spec-driven development with AI, a new open-source toolkit**\n   - 출처: Hacker News\n   - 링크: https://github.blog/ai-and-ml/generative-ai/spec-driven-development-with-ai-get-started-with-a-new-open-source-toolkit/\n\n\n",
+  "articles": [
+    {
+      "title": "Strengthening supply chain security: Preparing for the next malware campaign",
+      "link": "https://github.blog/security/supply-chain-security/strengthening-supply-chain-security-preparing-for-the-next-malware-campaign/",
+      "source": "GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-23T23:52:08Z",
+      "description": "\u003cp\u003eSecurity advice for users and maintainers to help reduce the impact of the next supply chain malware attack.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/security/supply-chain-security/strengthening-supply-chain-security-preparing-for-the-next-malware-campaign/\"\u003eStrengthening supply chain security: Preparing for the next malware campaign\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "텍사스 앱스토어 연령 확인 법안, 연방법원 판사에 의해 차단",
+      "link": "https://news.hada.io/topic?id=25313",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-25T06:32:51+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e텍사스에서 2026년 1월 1일 시행 예정이던 \u003cstrong\u003e앱스토어 연령 확인 법안(SB2420)\u003c/strong\u003e 이 연방법원 판사의 결정으로 일시 중단됨\u003c/li\u003e\n\u003cli\u003e이 법은 \u003cstrong\u003eApple과 다른 앱 마켓플레이스가 계정 생성 시 사용자 연령을 확인\u003c/strong\u003e하도록 요구하며, 18세 미만은 \u003cstrong\u003eFamily Sharing 그룹에 가입...\u003c/p\u003e"
+    },
+    {
+      "title": "10년간 부트스트랩으로 성장: 13명 팀이 연매출 €6.5M 달성",
+      "link": "https://news.hada.io/topic?id=25312",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-25T05:32:57+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eDatoCMS\u003c/strong\u003e는 2025년 한 해 동안 매출 \u003cstrong\u003e€650만\u003c/strong\u003e, 전년 대비 \u003cstrong\u003e10% 성장\u003c/strong\u003e을 기록하며 10년 차 SaaS 기업으로서도 두 자릿수 성장을 유지\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eEBIT 마진 65%\u003c/strong\u003e , SaaS 업계 상위 \u003cstrong\u003e5% 수준의 수익성\u003c/strong\u003e을 달성하며 ‘Rule of 40’...\u003c/p\u003e"
+    },
+    {
+      "title": "Snitch – 더 친숙한 ss/netstat 도구",
+      "link": "https://news.hada.io/topic?id=25311",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-25T03:37:09+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eSnitch\u003c/strong\u003e는 기존 \u003ccode\u003ess\u003c/code\u003e나 \u003ccode\u003enetstat\u003c/code\u003e보다 \u003cstrong\u003e사람이 보기 쉬운 네트워크 연결 검사 도구\u003c/strong\u003e로, 터미널 UI(TUI)와 스타일링된 표 형식을 지원\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e실시간 인터랙티브 화면\u003c/strong\u003e 또는 \u003cstrong\u003e한 번에 출력되는 표 형식\u003c/strong\u003e으로 연결 상태...\u003c/p\u003e"
+    },
+    {
+      "title": "느림은 미덕이다",
+      "link": "https://news.hada.io/topic?id=25310",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-25T03:35:44+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e현대 연구 환경이 \u003cstrong\u003e빠른 결과 중심\u003c/strong\u003e으로 변하면서, 진정한 탐구형 연구가 설 자리를 잃고 있음\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e연구(research)\u003c/strong\u003e 는 명확한 계획 없이 직관과 추측을 따라가는 과정이며, \u003cstrong\u003e개발(development)\u003c/strong\u003e 은 이미 정해진 목표를 향한 실행 과정임\u003c/li\u003e\n\u003cli\u003e\n\u003cstro...\u003c/p\u003e"
+    },
+    {
+      "title": "터미널에서 직접 영화 검색 및 토렌트 실행이 가능한 CineCLI",
+      "link": "https://news.hada.io/topic?id=25309",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-25T03:34:09+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eCineCLI\u003c/strong\u003e는 터미널 환경에서 영화 정보를 검색하고 토렌트를 직접 실행할 수 있는 \u003cstrong\u003e크로스플랫폼 CLI 도구\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eYTS API\u003c/strong\u003e를 통해 영화 데이터를 불러오며, \u003cstrong\u003e최고 품질과 건강한 시드\u003c/strong\u003e를 자동으로 선택\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003ePython 3.11+...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: AI 기반 개발자 기술면접 준비 서비스",
+      "link": "https://news.hada.io/topic?id=25308",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-24T23:02:17+09:00",
+      "description": "\u003ch2\u003e만들게 된 계기\u003c/h2\u003e\n\u003cp\u003e최근 이직 준비를 하면서 기술면접 공부할 때 클로드 코드를 많이 활용했는데요. 클로드코드와 티키타카하면서 학습하고, 복습 노트를 만들고, 모의 면접을 구성하여 평가를 받는 방식으로 공부를 진행했었습니다.\u003c/p\u003e\n\u003cp\u003e저는 이 방식으로 공부하여 기술면접 대비에 정말 많은 도움이 되었고"
+    },
+    {
+      "title": "Show GN: Pic2Cook 사진 한 장으로 레시피를 만들어주는 서비스",
+      "link": "https://news.hada.io/topic?id=25307",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-24T18:51:42+09:00",
+      "description": "\u003cp\u003e메리 크리스마스! 🎄 연말 잘 보내고 계신가요?\u003cbr /\u003e\n유튜브나 인스타에서 맛있는 음식 보다가 “이거 해먹어보고 싶은데…” 생각해본 적 있으시죠? 연말에 뭐 먹을지도 은근 고민되고요.\u003c/p\u003e\n\u003cp\u003e그래서 사진 한 장으로 레시피를 만들어주는 서비스를 런칭했습니다!\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003e\u003ca href=\"https://bit.ly/4"
+    },
+    {
+      "title": "엡스타인 관련 문서의 일부 검은색 가림처리가 해킹으로 해제됨",
+      "link": "https://news.hada.io/topic?id=25306",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-24T17:33:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e미 법무부가 공개한 \u003cstrong\u003e제프리 엡스타인 사건 관련 문서\u003c/strong\u003e의 일부 가림처리가 \u003cstrong\u003e포토샵이나 텍스트 복사\u003c/strong\u003e로 쉽게 해제되는 것으로 드러남\u003c/li\u003e\n\u003cli\u003e가려졌던 내용은 \u003cstrong\u003e어린이 성학대 조장 및 은폐 행위\u003c/strong\u003e, \u003cstrong\u003e금전 지급 내역\u003c/strong\u003e, \u003cstrong\u003e증거 파기 지시\u003c/s...\u003c/p\u003e"
+    },
+    {
+      "title": "PDF 문서의 잘못된 가림(블랙박스 처리)을 탐지하는 Python 라이브러리 X-ray",
+      "link": "https://news.hada.io/topic?id=25305",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-24T16:32:52+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003ePDF 문서의 부적절한 가림 처리\u003c/strong\u003e를 자동으로 찾아내는 Python 라이브러리로, 텍스트가 단순히 검은 사각형으로 덮여 있는 경우를 식별\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eFree Law Project\u003c/strong\u003e가 수백만 개의 PDF를 수집하는 과정에서 발견된 반복적 문제를 해결하기 위해 개발\u003c/li\u003e\n\u003cli\u003e명령줄 또는 Py...\u003c/p\u003e"
+    },
+    {
+      "title": "AI 검색은 성장 중이지만, SEO 기본 원칙이 여전히 대부분의 트래픽을 만든다",
+      "link": "https://news.hada.io/topic?id=25304",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-24T16:07:34+09:00",
+      "description": "\u003cp\u003eAI 검색 성장 vs SEO 기본 원칙\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e주요 주장\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eAI 검색(Generative AI, AI Overviews 등)은 빠르게 성장 중\u003c/li\u003e\n\u003cli\u003e그러나 AI 플랫폼에서 오는 트래픽은 전체의 극소수에 불과\u003c/li\u003e\n\u003cli\u003e모든 LLM 플랫폼 합산 트래픽: Google 유기적 트래픽의 2~3% 수준\u003c/li\u003e\n\u003cli\u003e웹사이트 대부분"
+    },
+    {
+      "title": "Postgres extension complements pgvector for performance and scale",
+      "link": "https://github.com/timescale/pgvectorscale",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-24T22:04:57Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/timescale/pgvectorscale\"\u003ehttps://github.com/timescale/pgvectorscale\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46379765\"\u003ehttps://news.ycombinator.com/item?id=46379765\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Workers across the U.S. are set for minimum wage increases in 2026",
+      "link": "https://www.cbsnews.com/news/2026-minimum-wage-increases/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-24T22:03:47Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.cbsnews.com/news/2026-minimum-wage-increases/\"\u003ehttps://www.cbsnews.com/news/2026-minimum-wage-increases/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46379758\"\u003ehttps://news.ycombinator.com/item?id=46379758\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "It Is Happening Here",
+      "link": "https://newrepublic.com/article/204227/trump-immigration-nightmare-happening-here",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-24T22:01:45Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://newrepublic.com/article/204227/trump-immigration-nightmare-happening-here\"\u003ehttps://newrepublic.com/article/204227/trump-immigration-nightmare-happening-here\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46379743\"\u003ehttps://news.ycombinator.com/item?id=46379743\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 4\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "A linear imageboru for My Little Pony art",
+      "link": "https://derpibooru.org/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-24T21:57:46Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://derpibooru.org/\"\u003ehttps://derpibooru.org/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46379710\"\u003ehttps://news.ycombinator.com/item?id=46379710\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "I Left YouTube",
+      "link": "https://zhach.news/how-i-left-youtube/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-24T21:54:48Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://zhach.news/how-i-left-youtube/\"\u003ehttps://zhach.news/how-i-left-youtube/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46379677\"\u003ehttps://news.ycombinator.com/item?id=46379677\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "FileKit.dev – New Thumbnail Component and Multi Upload Support",
+      "link": "https://filekit.dev/documentation",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-24T21:54:48Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://filekit.dev/documentation\"\u003ehttps://filekit.dev/documentation\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46379676\"\u003ehttps://news.ycombinator.com/item?id=46379676\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Maybe the Default Settings Are Too High",
+      "link": "https://www.raptitude.com/2025/12/maybe-the-default-settings-are-too-high/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-24T21:54:22Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.raptitude.com/2025/12/maybe-the-default-settings-are-too-high/\"\u003ehttps://www.raptitude.com/2025/12/maybe-the-default-settings-are-too-high/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46379671\"\u003ehttps://news.ycombinator.com/item?id=46379671\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Phone-Based Retirement Is Here",
+      "link": "https://www.theatlantic.com/technology/2025/12/do-your-parents-have-screen-time-problem/685424/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-24T21:54:08Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.theatlantic.com/technology/2025/12/do-your-parents-have-screen-time-problem/685424/\"\u003ehttps://www.theatlantic.com/technology/2025/12/do-your-parents-have-screen-time-problem/685424/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46379670\"\u003ehttps://news.ycombinator.com/item?id=46379670\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Hacking a Java Minecraft server with memory overflows using in-game mechanics",
+      "link": "https://www.youtube.com/watch?v=Zy6Ci-K-0K8",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-24T21:53:44Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.youtube.com/watch?v=Zy6Ci-K-0K8\"\u003ehttps://www.youtube.com/watch?v=Zy6Ci-K-0K8\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46379665\"\u003ehttps://news.ycombinator.com/item?id=46379665\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "South Korea Passes Strictest Disinformation Law in Any Democracy",
+      "link": "https://www.koreaherald.com/article/10642910",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-24T21:51:36Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.koreaherald.com/article/10642910\"\u003ehttps://www.koreaherald.com/article/10642910\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46379643\"\u003ehttps://news.ycombinator.com/item?id=46379643\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 4\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Steam Store Is Offline",
+      "link": "https://steamstat.us/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-24T21:50:20Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://steamstat.us/\"\u003ehttps://steamstat.us/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46379630\"\u003ehttps://news.ycombinator.com/item?id=46379630\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "89 years ago, an SF-to-Hawaii flight changed the world forever",
+      "link": "https://www.sfgate.com/hawaii/article/hawaii-air-travel-history-21246817.php",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-24T21:46:21Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.sfgate.com/hawaii/article/hawaii-air-travel-history-21246817.php\"\u003ehttps://www.sfgate.com/hawaii/article/hawaii-air-travel-history-21246817.php\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46379594\"\u003ehttps://news.ycombinator.com/item?id=46379594\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 2\u003c/p\u003e\n"
+    },
+    {
+      "title": "Deep metatranscriptomic sequencing data of wastewater from Los Angeles 2023–2024",
+      "link": "https://www.nature.com/articles/s41597-025-06475-7",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-24T21:46:11Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nature.com/articles/s41597-025-06475-7\"\u003ehttps://www.nature.com/articles/s41597-025-06475-7\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46379593\"\u003ehttps://news.ycombinator.com/item?id=46379593\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Indiegogo suppressing indie journalists exposing israel",
+      "link": "https://www.youtube.com/watch?v=nIePTGWF15k",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-24T21:45:02Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.youtube.com/watch?v=nIePTGWF15k\"\u003ehttps://www.youtube.com/watch?v=nIePTGWF15k\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46379587\"\u003ehttps://news.ycombinator.com/item?id=46379587\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Groq and Nvidia Licensing Agreement",
+      "link": "https://groq.com/newsroom/groq-and-nvidia-enter-non-exclusive-inference-technology-licensing-agreement-to-accelerate-ai-inference-at-global-scale",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-24T21:44:57Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://groq.com/newsroom/groq-and-nvidia-enter-non-exclusive-inference-technology-licensing-agreement-to-accelerate-ai-inference-at-global-scale\"\u003ehttps://groq.com/newsroom/groq-and-nvidia-enter-non-exclusive-inference-technology-licensing-agreement-to-accelerate-ai-inference-at-global-scale\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46379585\"\u003ehttps://news.ycombinator.com/item?id=46379585\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Golfing Is Not Rowing",
+      "link": "https://taylor.town/golf-vs-rowing",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-24T21:44:04Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://taylor.town/golf-vs-rowing\"\u003ehttps://taylor.town/golf-vs-rowing\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46379579\"\u003ehttps://news.ycombinator.com/item?id=46379579\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Back to the future: the story of Squeak, a practical Smalltalk written in itself [pdf]",
+      "link": "http://www.vpri.org/pdf/tr1997001_backto.pdf",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-24T21:42:07Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"http://www.vpri.org/pdf/tr1997001_backto.pdf\"\u003ehttp://www.vpri.org/pdf/tr1997001_backto.pdf\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46379562\"\u003ehttps://news.ycombinator.com/item?id=46379562\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Building Embeddable Widgets with Phoenix Channels",
+      "link": "https://zarar.dev/building-embeddable-widgets-with-phoenix-channels/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-24T21:40:26Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://zarar.dev/building-embeddable-widgets-with-phoenix-channels/\"\u003ehttps://zarar.dev/building-embeddable-widgets-with-phoenix-channels/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46379545\"\u003ehttps://news.ycombinator.com/item?id=46379545\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Early retirement calculator that models a full 50-years(for retiring young)",
+      "link": "https://earlyretirementrunway.com/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-24T21:39:49Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://earlyretirementrunway.com/\"\u003ehttps://earlyretirementrunway.com/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46379538\"\u003ehttps://news.ycombinator.com/item?id=46379538\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Spec Kit: Spec-driven development with AI, a new open-source toolkit",
+      "link": "https://github.blog/ai-and-ml/generative-ai/spec-driven-development-with-ai-get-started-with-a-new-open-source-toolkit/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-24T21:38:34Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.blog/ai-and-ml/generative-ai/spec-driven-development-with-ai-get-started-with-a-new-open-source-toolkit/\"\u003ehttps://github.blog/ai-and-ml/generative-ai/spec-driven-development-with-ai-get-started-with-a-new-open-source-toolkit/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46379526\"\u003ehttps://news.ycombinator.com/item?id=46379526\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    }
+  ],
+  "generatedAt": "2025-12-25T07:09:32.139643477+09:00"
+}
