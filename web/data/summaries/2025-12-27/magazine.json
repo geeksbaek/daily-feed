@@ -1,0 +1,274 @@
+{
+  "date": "2025-12-27",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2025년 12월 26일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** GitHub Copilot이 단순 보조를 넘어 '에이전트'로 진화하며 개발 백로그를 처리하기 시작했고, AI 도입의 이면에는 '버그 증가'와 '책임 소재'라는 새로운 과제가 떠오르고 있습니다.\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### GitHub Copilot, 이제 '코딩 에이전트'로 진화하여 백로그 직접 처리\nGitHub가 Copilot의 기능을 단순한 코드 자동 완성을 넘어, 자율적으로 작업을 수행하는 '**코딩 에이전트(Coding Agent)**' 모드로 확장했습니다. 이제 개발자는 Copilot에게 단순한 코드 조각이 아닌, 백로그에 쌓인 이슈 해결을 통째로 위임할 수 있게 됩니다. 이는 AI가 IDE(통합 개발 환경) 내에서 파일 생성, 수정, 터미널 명령 실행 등을 스스로 판단하여 수행한다는 것을 의미하며, 개발자의 역할이 '작성자'에서 '검토자'로 이동하는 중요한 분기점이 될 것입니다. [^1][^33]\n\n\u003e **Key Point:** AI가 코드 제안을 넘어 '작업 완료(Task Completion)' 단계로 진입했습니다. 개발자는 이제 \"이 함수 짜줘\"가 아니라 \"이 버그 고쳐줘\"라고 명령하게 됩니다.\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n\n### 1. AI 개발의 명과 암: 속도는 2배, 버그는 1.7배?\nAI 코딩 도구의 도입이 가속화되는 가운데, 흥미로운 통계와 전망이 동시에 나왔습니다.\n- **What:** AI 도구를 사용하면 개발 속도는 빨라지지만, 코드 품질 저하로 인해 버그 발생률이 약 1.7배 증가한다는 분석이 제기되었습니다. [^11]\n- **Why:** 개발자가 AI가 작성한 코드를 완벽히 이해하지 못한 채 적용하거나, 검증 과정이 속도를 따라가지 못하기 때문입니다.\n- **Impact:** 이에 따라 2026년 AI 도입의 핵심 승부처는 \"더 똑똑한 모델\"이 아니라, AI가 저지른 실수를 되돌리는 **'롤백(Undo)' 기능과 책임 소재를 명확히 하는 거버넌스**가 될 것이라는 전망이 힘을 얻고 있습니다. [^6]\n\n### 2. Google의 변화: Gmail 주소 변경 허용과 인재 재영입\nGoogle이 오랫동안 유지해 온 정책과 채용 기조에 변화를 주고 있습니다.\n- **What:** Google이 그동안 불가능했던 **Gmail 주소 변경 기능**을 점진적으로 도입하고 있으며 [^3], 2025년 채용된 AI 엔지니어의 20%가 과거 Google을 떠났던 **'부메랑(재입사)' 직원**인 것으로 나타났습니다. [^22]\n- **Why:** 사용자 측면에서는 디지털 신원 유연성에 대한 요구 증가, 조직 측면에서는 검증된 시니어급 AI 인재 확보 경쟁이 치열해졌기 때문입니다.\n- **Impact:** 레거시 시스템의 유연화와 함께, 빅테크 기업 간의 인재 쟁탈전이 '새로운 피' 수혈에서 '집토끼 단속 및 회귀'로 바뀌고 있음을 시사합니다.\n\n### 3. 안전과 혁신의 충돌: 중국의 EV 규제와 군사 기술\n중국 기술 업계에서 안전 규제와 군사 기술 확장이 동시에 주목받고 있습니다.\n- **What:** 중국 규제 당국이 안전 우려를 이유로 2027년부터 전기차(EV)의 **'매립형(Retractable) 도어 핸들'을 금지**하기로 했습니다. [^31] 반면, 군사 분야에서는 모듈식 미사일 발사대를 가득 실은 화물선이 포착되었습니다. [^17]\n- **Why:** 매립형 핸들은 사고 시 구조를 방해한다는 치명적 단점이 지적되어 왔으며, 미사일 화물선은 민간 선박을 위장한 비대칭 전력 강화를 의미합니다.\n- **Impact:** 자동차 디자인 트렌드가 '미니멀리즘'에서 다시 '안전/직관성'으로 회귀할 가능성이 높으며, 해상 물류망을 이용한 군사 위협이 새로운 지정학적 리스크로 떠오를 것입니다.\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **ff** | fzf, fd, ripgrep을 결합하여 파일 탐색과 검색을 동시에 수행하는 강력한 CLI 도구 [^5] |\n| **Tool** | **Candid** | 사용자가 자신의 AI 모델(BYOM)을 가져와 이메일을 수정/작성할 수 있는 프라이버시 중심 도구 [^13] |\n| **Tool** | **Pdf X-ray** | PDF 파일에서 마스킹(Redacted) 처리된 데이터 뒤에 숨겨진 정보 유출을 찾아내는 보안 도구 [^29] |\n| **Dev** | **PHP SAPI in Safe Rust** | PHP의 서버 API를 메모리 안전성이 보장된 Rust로 재작성하려는 시도 [^14] |\n| **Dev** | **WASM C Threads** | Python/WASM 환경에서 C 스레드를 활성화하여 브라우저 내 병렬 처리를 가능하게 하는 기술 [^23] |\n| **Resource** | **Understanding Deep Learning** | 딥러닝의 기초부터 심화까지 다루는 오픈 소스 교과서 (Simon J.D. Prince 저) [^19] |\n| **Design** | **AI UX Patterns** | AI 기반 제품을 디자인할 때 고려해야 할 사용자 경험 패턴 모음 [^16] |\n| **Model** | **Multiverse** | 최초의 AI 멀티플레이어 월드 모델로, 가상 세계 시뮬레이션의 새로운 가능성 제시 [^30] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n\n#### 💻 개발 \u0026 인프라 \u0026 OS\n* **ChromeOS 베타 업데이트**: ChromeOS 및 Flex의 새로운 베타 채널 업데이트가 배포되었습니다. [^2]\n* **Asahi Linux on M2**: M2 MacBook Air에서 Sway 윈도우 매니저를 구동하는 Asahi Linux 사용기가 공유되었습니다. [^4]\n* **도커 컨테이너 관리**: 다수의 컨테이너를 운용하는 서버 관리에 대한 커뮤니티의 노하우 토론입니다. [^10]\n* **Raku 2025 리뷰**: 프로그래밍 언어 Raku의 2025년 주요 변경 사항과 회고입니다. [^21]\n* **QUIC 핸드셰이크 압축**: QUIC 프로토콜의 속도 향상을 위해 압축이 필수적인지에 대한 기술적 분석입니다. [^28]\n* **반복문 시각화**: 코루틴(Coroutine) 없이 반복문(Iteration)을 시각화하는 디버깅 기법입니다. [^32]\n\n#### 🚀 과학 \u0026 미래 기술\n* **달의 기원 시뮬레이션**: 슈퍼컴퓨터를 이용한 새로운 시뮬레이션이 달의 형성 과정에 대한 단서를 제공합니다. [^20]\n* **그린란드 심해 발견**: 그린란드 해 심해에서 가스 하이드레이트와 화학합성 생물군이 발견되었습니다. [^24]\n* **Garmin 비상 착륙 시스템**: 조종사 불능 시 승객을 위해 자동으로 착륙하는 Garmin Autoland가 실제 상황에서 처음 작동했습니다. [^27]\n* **Waymo vs Tesla**: 실제 두 로보택시를 모두 이용해본 사용자들이 느끼는 비교 경험담입니다. [^18]\n\n#### 💼 비즈니스 \u0026 커리어 \u0026 문화\n* **39C3 일정표**: 유럽 최대 해커 컨퍼런스인 39C3의 세션 일정표가 공개되었습니다. [^7]\n* **은(Silver)값 최고치**: 은 가격이 9% 급등하며 사상 최고치를 경신했습니다. [^15]\n* **번아웃과 퇴사**: 번아웃이 왔을 때 퇴사가 정답인지에 대한 심층적인 조언입니다. [^26]\n* **최고 북마크 책임자(CBO)**: 정보 과잉 시대에 개인에게 필요한 것은 정보를 저장하고 관리할 '북마크 책임자'라는 흥미로운 에세이입니다. [^12]\n* **기본 설정의 함정**: 소프트웨어의 기본 설정(Default)이 사용자에게 불필요하게 높게 설정되어 있을 수 있다는 비판적 시각입니다. [^8]\n* **바이브(Vibe)의 해**: 2025년을 관통하는 문화적 키워드로 'Vibe(분위기/느낌)'를 조명합니다. [^9]\n* **인지부조화**: 인지부조화가 실제로 존재하는 현상인지, 문화적 담론인지에 대한 뉴요커의 분석입니다. [^25]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘의 뉴스는 '**AI의 실용화 단계 진입**'과 그에 따른 '**부작용에 대한 성찰**'이 공존하고 있습니다. GitHub Copilot이 '에이전트'가 되어 개발자의 손발이 되어주는 동안, 한편에서는 AI가 만든 코드의 버그를 걱정하고, \"Undo\" 버튼을 2026년의 핵심 키워드로 꼽고 있습니다. 기술은 언제나 문제를 해결하며 새로운 문제를 낳습니다. 이제 우리는 '얼마나 빨리 만드느냐'보다 '**얼마나 안전하고 수정 가능하게 만드느냐**'를 고민해야 할 시점입니다.\n\n---\n\n### Footnotes\n[^1]: WRAP up your backlog with GitHub Copilot coding agent - https://github.blog/ai-and-ml/github-copilot/wrap-up-your-backlog-with-github-copilot-coding-agent/\n[^2]: Beta Channel Update for ChromeOS / ChromeOS Flex - http://chromereleases.googleblog.com/2025/12/beta-channel-update-for-chromeos_26.html\n[^3]: Gmail 주소 변경 기능을 점진적으로 도입 중인 Google - https://news.hada.io/topic?id=25359\n[^4]: MacBook Air M2에서 Sway를 사용하는 Asahi Linux (2024) - https://news.hada.io/topic?id=25358\n[^5]: Show GN: ff - fzf, fd, ripgrep을 결합한 파일 탐색/검색 도구 - https://news.hada.io/topic?id=25357\n[^6]: 2026년 AI 도입의 승부처는 “더 똑똑한 모델”이 아니라 롤백(Undo)과 책임소재 - https://news.hada.io/topic?id=25356\n[^7]: 39C3 일정표 (Fahrplan) - https://news.hada.io/topic?id=25355\n[^8]: 기본 설정이 너무 높게 되어 있는지도 모른다 - https://news.hada.io/topic?id=25353\n[^9]: 바이브의 해 - https://news.hada.io/topic?id=25352\n[^10]: Ask GN: 도커 컨테이너 많이 운용하는 서버는 어떻게 관리해야 합니까? - https://news.hada.io/topic?id=25351\n[^11]: AI는 개발 속도를 높이지만 버그는 1.7배 더 많다 - https://news.hada.io/topic?id=25350\n[^12]: 당신에겐 Chief Bookmark Officer가 필요하다 - https://news.hada.io/topic?id=25349\n[^13]: Show HN: Candid – Minimal Private Bring Your Own Model Email Revision Tool - https://github.com/candacelabs/candid\n[^14]: New PHP SAPI in Safe Rust - https://news.ycombinator.com/item?id=46396765\n[^15]: Silver rises 9% to hit fresh record high - https://www.reuters.com/world/india/silver-rises-9-hit-fresh-record-high-2025-12-26/\n[^16]: AI UX Design Patterns - https://nikitisza.substack.com/p/ai-ux-design-patterns\n[^17]: Chinese Cargo Ship Packed Full of Modular Missile Launchers Emerges - https://www.twz.com/sea/chinese-cargo-ship-packed-full-of-modular-missile-launchers-emerges\n[^18]: Ask HN: People who tried both, how does Waymo compare to Tesla Robotaxi? - https://news.ycombinator.com/item?id=46396726\n[^19]: Understanding Deep Learning - https://udlbook.github.io/udlbook/\n[^20]: New Supercomputer Simulation Sheds Light on Moon's Origin - https://www.youtube.com/watch?v=kRlhlCWplqk\n[^21]: Raku 2025 Review - https://raku-advent.blog/2025/12/25/day-25-raku-2025-review/\n[^22]: Google's boomerang year: 20% of AI engineers/SWE hired in 2025 were ex-employees - https://www.cnbc.com/2025/12/19/google-boomerang-year-20percent-ai-software-devs-hired-2025-ex-employees.html\n[^23]: \"Enabling\" C threads in a Python / WASM environment - https://yosefk.com/blog/enabling-c-threads-in-a-python-wasm-environment.html\n[^24]: Deep-sea gas hydrates and chemosynthetic fauna discovered on the Greenland Sea - https://www.nature.com/articles/s41467-025-67165-x\n[^25]: Is Cognitive Dissonance a Thing? - https://www.newyorker.com/culture/the-lede/is-cognitive-dissonance-actually-a-thing\n[^26]: Burnout: Should You Quit Your Job? - https://nikitisza.substack.com/p/burnout-should-you-quit-your-job\n[^27]: Garmin Emergency Autoland Deployed For the First Time - https://www.flightradar24.com/blog/aviation-news/aviation-safety/garmin-emergency-autoland-deployed-first-time/\n[^28]: Does the QUIC handshake require compression to be fast? - https://www.fastly.com/blog/quic-handshake-tls-compression-certificates-extension-study\n[^29]: Show HN: Pdf X-ray – find data leaks in the redacted pdf files - https://pdfxray.fly.dev/app/\n[^30]: Multiverse: The First AI Multiplayer World Model - https://enigma.inc/blog\n[^31]: China Bans (2027) Retractable EV Door Handles over Safety Concerns - https://www.sixthtone.com/news/1018021\n[^32]: Coroutine-less way to visualize iterations - https://jakubtomsu.github.io/posts/iter_debug/\n[^33]: WRAP up your backlog with GitHub Copilot coding agent - https://github.blog/ai-and-ml/github-copilot/wrap-up-your-backlog-with-github-copilot-coding-agent/\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **WRAP up your backlog with GitHub Copilot coding agent**\n   - 출처: GitHub Blog\n   - 링크: https://github.blog/ai-and-ml/github-copilot/wrap-up-your-backlog-with-github-copilot-coding-agent/\n\n2. **Beta Channel Update for ChromeOS / ChromeOS Flex**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2025/12/beta-channel-update-for-chromeos_26.html\n\n3. **Gmail 주소 변경 기능을 점진적으로 도입 중인 Google**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25359\n\n4. **MacBook Air M2에서 Sway를 사용하는 Asahi Linux (2024)**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25358\n\n5. **Show GN: ff - fzf, fd, ripgrep을 결합한 파일 탐색/검색 도구**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25357\n\n6. **2026년 AI 도입의 승부처는 “더 똑똑한 모델”이 아니라 롤백(Undo)과 책임소재**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25356\n\n7. **39C3 일정표 (Fahrplan)**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25355\n\n8. **기본 설정이 너무 높게 되어 있는지도 모른다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25353\n\n9. **바이브의 해**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25352\n\n10. **Ask GN: 도커 컨테이너 많이 운용하는 서버는 어떻게 관리해야 합니까?**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25351\n\n11. **AI는 개발 속도를 높이지만 버그는 1.7배 더 많다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25350\n\n12. **당신에겐 Chief Bookmark Officer가 필요하다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25349\n\n13. **Show HN: Candid – Minimal Private Bring Your Own Model Email Revision Tool**\n   - 출처: Hacker News\n   - 링크: https://github.com/candacelabs/candid\n\n14. **New PHP SAPI in Safe Rust**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=46396765\n\n15. **Silver rises 9% to hit fresh record high**\n   - 출처: Hacker News\n   - 링크: https://www.reuters.com/world/india/silver-rises-9-hit-fresh-record-high-2025-12-26/\n\n16. **AI UX Design Patterns**\n   - 출처: Hacker News\n   - 링크: https://nikitisza.substack.com/p/ai-ux-design-patterns\n\n17. **Chinese Cargo Ship Packed Full of Modular Missile Launchers Emerges**\n   - 출처: Hacker News\n   - 링크: https://www.twz.com/sea/chinese-cargo-ship-packed-full-of-modular-missile-launchers-emerges\n\n18. **Ask HN: People who tried both, how does Waymo compare to Tesla Robotaxi?**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=46396726\n\n19. **Understanding Deep Learning**\n   - 출처: Hacker News\n   - 링크: https://udlbook.github.io/udlbook/\n\n20. **New Supercomputer Simulation Sheds Light on Moon's Origin**\n   - 출처: Hacker News\n   - 링크: https://www.youtube.com/watch?v=kRlhlCWplqk\n\n21. **Raku 2025 Review**\n   - 출처: Hacker News\n   - 링크: https://raku-advent.blog/2025/12/25/day-25-raku-2025-review/\n\n22. **Google's boomerang year: 20% of AI engineers/SWE hired in 2025 were ex-employees**\n   - 출처: Hacker News\n   - 링크: https://www.cnbc.com/2025/12/19/google-boomerang-year-20percent-ai-software-devs-hired-2025-ex-employees.html\n\n23. **\"Enabling\" C threads in a Python / WASM environment**\n   - 출처: Hacker News\n   - 링크: https://yosefk.com/blog/enabling-c-threads-in-a-python-wasm-environment.html\n\n24. **Deep-sea gas hydrates and chemosynthetic fauna discovered on the Greenland Sea**\n   - 출처: Hacker News\n   - 링크: https://www.nature.com/articles/s41467-025-67165-x\n\n25. **Is Cognitive Dissonance a Thing?**\n   - 출처: Hacker News\n   - 링크: https://www.newyorker.com/culture/the-lede/is-cognitive-dissonance-actually-a-thing\n\n26. **Burnout: Should You Quit Your Job?**\n   - 출처: Hacker News\n   - 링크: https://nikitisza.substack.com/p/burnout-should-you-quit-your-job\n\n27. **Garmin Emergency Autoland Deployed For the First Time**\n   - 출처: Hacker News\n   - 링크: https://www.flightradar24.com/blog/aviation-news/aviation-safety/garmin-emergency-autoland-deployed-first-time/\n\n28. **Does the QUIC handshake require compression to be fast?**\n   - 출처: Hacker News\n   - 링크: https://www.fastly.com/blog/quic-handshake-tls-compression-certificates-extension-study\n\n29. **Show HN: Pdf X-ray – find data leaks in the redacted pdf files**\n   - 출처: Hacker News\n   - 링크: https://pdfxray.fly.dev/app/\n\n30. **Multiverse: The First AI Multiplayer World Model**\n   - 출처: Hacker News\n   - 링크: https://enigma.inc/blog\n\n31. **China Bans (2027) Retractable EV Door Handles over Safety Concerns**\n   - 출처: Hacker News\n   - 링크: https://www.sixthtone.com/news/1018021\n\n32. **Coroutine-less way to visualize iterations**\n   - 출처: Hacker News\n   - 링크: https://jakubtomsu.github.io/posts/iter_debug/\n\n33. **WRAP up your backlog with GitHub Copilot coding agent**\n   - 출처: The latest on GitHub Copilot - The GitHub Blog\n   - 링크: https://github.blog/ai-and-ml/github-copilot/wrap-up-your-backlog-with-github-copilot-coding-agent/\n\n\n",
+  "articles": [
+    {
+      "title": "WRAP up your backlog with GitHub Copilot coding agent",
+      "link": "https://github.blog/ai-and-ml/github-copilot/wrap-up-your-backlog-with-github-copilot-coding-agent/",
+      "source": "GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-26T17:56:38Z",
+      "description": "\u003cp\u003eAn easy-to-remember acronym, WRAP will help you write effective issues, refine your instructions, and get the most out of Copilot coding agent.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/ai-and-ml/github-copilot/wrap-up-your-backlog-with-github-copilot-coding-agent/\"\u003eWRAP up your backlog with GitHub Copilot coding agent\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Beta Channel Update for ChromeOS / ChromeOS Flex",
+      "link": "http://chromereleases.googleblog.com/2025/12/beta-channel-update-for-chromeos_26.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2025-12-26T10:39:00-08:00",
+      "description": "\u003cp\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" style=\"color: rgba(0, 0, 0, 0.87); font-family: arial; font-size: 17px;\"\u003eThe ChromeOS Beta channel was updated on Dec 23rd to OS version\u0026nbsp;\u003c/span\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" style=\"color: rgba(0, 0, 0, 0.87); font-family: arial; font-size: 17px;\"\u003e16503.25.0\u003c/span\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" style=\"color: rgba(0, 0, 0, 0.87); font-family: arial; font-size: 17px;\"\u003e\u0026nbsp;(Browser version\u0026nbsp;\u003c/span\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" style=\"color: rgba(0, 0, 0, 0.87); font-family: arial; font-size: 17px;\"\u003e144.0.7559.37\u003c/span\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" style=\"color: rgba(0, 0, 0, 0.87); font-family: arial; font-size: 17px;\"\u003e) for most ChromeOS devices.\u003c/span\u003e\u003c/p\u003e\u003cdiv style=\"background-color: white; color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px; line-height: 2.21538; margin-bottom: 0pt; margin-top: 31pt;\"\u003e\u003cspan style=\"white-space-collapse: preserve;\"\u003e\u003cspan style=\"font-family: arial;\"\u003eIf you find new issues, please let us know one of the following ways:\u003c/span\u003e\u003c/span\u003e\u003c/div\u003e\u003col style=\"color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px; margin: 0px; padding-inline-start: 48px; padding: 0px 48px;\"\u003e\u003cli style=\"line-height: 32px; margin: 0px 0px 0.25em; padding: 0px;\"\u003e\u003cspan style=\"font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003e\u003cspan style=\"color: black;\"\u003e\u003ca href=\"https://bugs.chromium.org/p/chromium/issues/list\" style=\"color: #4184f3; text-decoration-line: none;\"\u003e\u003cspan style=\"font-family: arial;\"\u003eFile a bug\u003c/span\u003e\u003c/a\u003e\u003c/span\u003e\u003c/span\u003e\u003c/li\u003e\u003cli aria-level=\"1\" style=\"font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; line-height: 32px; list-style-type: decimal; margin: 0px 0px 0.25em; padding: 0px; vertical-align: baseline; white-space: pre;\"\u003e\u003cp role=\"presentation\" style=\"background-color: white; line-height: 2.21538; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"background-color: transparent; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003e\u003cspan style=\"font-family: arial;\"\u003eVisit our ChromeOS communities\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e\u003c/li\u003e\u003col style=\"margin: 0px; padding-inline-start: 48px; padding: 0px 48px;\"\u003e\u003cli aria-level=\"2\" style=\"font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; line-height: 32px; list-style-type: decimal; margin: 0px 0px 0.25em; padding: 0px; vertical-align: baseline; white-space: pre;\"\u003e\u003cp role=\"presentation\" style=\"background-color: white; line-height: 2.21538; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: arial;\"\u003e\u003cspan style=\"background-color: transparent; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003eGeneral: \u003c/span\u003e\u003ca href=\"https://support.google.com/chromebook/community/?hl=en\u0026amp;gpf=%23!forum%2Fchromebook-central\" style=\"color: #4184f3; text-decoration-line: none;\"\u003e\u003cspan style=\"background-color: transparent; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003eChromebook Help Community\u003c/span\u003e\u003c/a\u003e\u003c/span\u003e\u003c/p\u003e\u003c/li\u003e\u003cli aria-level=\"2\" style=\"font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; line-height: 32px; list-style-type: decimal; margin: 0px 0px 0.25em; padding: 0px; vertical-align: baseline; white-space: pre;\"\u003e\u003cp role=\"presentation\" style=\"background-color: white; line-height: 2.21538; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: arial;\"\u003e\u003cspan style=\"background-color: transparent; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003eBeta Specific: \u003c/span\u003e\u003ca href=\"https://support.google.com/chromeos-beta/community\" style=\"color: #4184f3; text-decoration-line: none;\"\u003e\u003cspan style=\"background-color: transparent; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003eChromeOS Beta Help Community\u003c/span\u003e\u003c/a\u003e\u003c/span\u003e\u003c/p\u003e\u003c/li\u003e\u003c/ol\u003e\u003cli aria-level=\"1\" style=\"font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; line-height: 32px; list-style-type: decimal; margin: 0px 0px 0.25em; padding: 0px; vertical-align: baseline; white-space: pre;\"\u003e\u003cp role=\"presentation\" style=\"background-color: white; line-height: 2.21538; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003ca href=\"https://support.google.com/chrome/answer/95315?hl=en\u0026amp;co=GENIE.Platform%3DDesktop\" style=\"color: #4184f3; text-decoration-line: none;\"\u003e\u003cspan style=\"background-color: transparent; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003e\u003cspan style=\"color: black;\"\u003e\u003cspan style=\"font-family: arial;\"\u003eReport an issue or send feedback on Chrome\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003c/a\u003e\u003c/p\u003e\u003c/li\u003e\u003cli aria-level=\"1\" style=\"font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; line-height: 32px; list-style-type: decimal; margin: 0px 0px 0.25em; padding: 0px; vertical-align: baseline; white-space: pre;\"\u003e\u003cp role=\"presentation\" style=\"background-color: white; line-height: 2.21538; margin-bottom: 42pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: arial;\"\u003e\u003cspan style=\"background-color: transparent; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003eInterested in switching channels? \u003c/span\u003e\u003ca href=\"https://support.google.com/chromebook/answer/1086915\" style=\"color: #4184f3; text-decoration-line: none;\"\u003e\u003cspan style=\"background-color: transparent; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003eFind out how.\u003c/span\u003e\u003c/a\u003e\u003c/span\u003e\u003c/p\u003e\u003c/li\u003e\u003c/ol\u003e\u003cdiv style=\"color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px;\"\u003e\u003cspan style=\"white-space: pre;\"\u003e\u003cspan style=\"font-family: arial;\"\u003eGiuliana Pritchard\u003c/span\u003e\u003c/span\u003e\u003c/div\u003e\u003cdiv style=\"color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px;\"\u003e\u003cspan style=\"white-space: pre;\"\u003e\u003cspan style=\"font-family: arial;\"\u003eGoogle ChromeOS Release\u003c/span\u003e\u003c/span\u003e\u003c/div\u003e"
+    },
+    {
+      "title": "Gmail 주소 변경 기능을 점진적으로 도입 중인 Google",
+      "link": "https://news.hada.io/topic?id=25359",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-27T06:32:46+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eGoogle이 \u003cstrong\u003e@gmail.com 주소를 변경할 수 있는 기능\u003c/strong\u003e을 단계적으로 배포 중임을 지원 페이지를 통해 공개\u003c/li\u003e\n\u003cli\u003e기존에는 \u003cstrong\u003e타사 이메일 주소만 변경 가능\u003c/strong\u003e했으나, 이제 Gmail 사용자도 새 Gmail 주소로 전환 가능\u003c/li\u003e\n\u003cli\u003e변경 후에도 \u003cstrong\u003e기존 주소는 별칭(alias)\u003c/stro...\u003c/p\u003e"
+    },
+    {
+      "title": "MacBook Air M2에서 Sway를 사용하는 Asahi Linux (2024)",
+      "link": "https://news.hada.io/topic?id=25358",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-27T04:33:34+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eMacBook Air M2\u003c/strong\u003e에 \u003cstrong\u003eAsahi Linux와 Sway 윈도우 매니저\u003c/strong\u003e를 설치해 일상용으로 사용하는 과정을 다룸\u003c/li\u003e\n\u003cli\u003e설치는 \u003cstrong\u003eFedora minimal\u003c/strong\u003e 기반으로 진행되었으며, \u003cstrong\u003e터미널 한 줄 명령어\u003c/strong\u003e로 Asahi Linux를 설치 가능\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e노치 영역 ...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: ff - fzf, fd, ripgrep을 결합한 파일 탐색/검색 도구",
+      "link": "https://news.hada.io/topic?id=25357",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-26T22:27:39+09:00",
+      "description": "\u003cp\u003e안녕하세요.\u003cbr /\u003e\n터미널에서 파일 탐색(Find)과 내용 검색(Grep)을 더 빠르게 하기 위해 만든 쉘 스크립트 도구 ff를 소개합니다.\u003c/p\u003e\n\u003cp\u003e터미널 작업을 하다 보면 파일명을 찾을 때와 코드 내용을 찾을 때 명령어를 따로 쓰는 게 번거로울 때가 많았습니다. 그래서 자주 쓰는 fzf, fd, ripgrep을 엮어서 ff(Flexib"
+    },
+    {
+      "title": "2026년 AI 도입의 승부처는 “더 똑똑한 모델”이 아니라 롤백(Undo)과 책임소재",
+      "link": "https://news.hada.io/topic?id=25356",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-26T22:14:04+09:00",
+      "description": "\u003ch2\u003e2026 AI Adoption: Miracle → Air\u003c/h2\u003e\n\u003ch3\u003e한 줄 요약\u003c/h3\u003e\n\u003cblockquote\u003e\n\u003cp\u003e2026년 AI 채택 승부처 = 모델 성능 \u0026lt; \u003cstrong\u003e프로덕션 안전 운영 가능 여부(가드레일·감사로그·롤백·책임소재)\u003c/strong\u003e\u003cbr /\u003e\n“더 똑똑함”보다 “안전하게 굴릴 수 있음”이 채택을 밀어 올림\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003chr /\u003e\n\u003ch3\u003e20"
+    },
+    {
+      "title": "39C3 일정표 (Fahrplan)",
+      "link": "https://news.hada.io/topic?id=25355",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-26T21:33:00+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e해커와 기술 커뮤니티가 모이는 \u003cstrong\u003eChaos Communication Congress(39C3)\u003c/strong\u003e 의 공식 일정표로, 2025년 12월 27일부터 30일까지 진행\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eAI, 보안, 디지털 권리, 예술, 사회 문제\u003c/strong\u003e 등 다양한 주제를 다루는 수백 개의 세션 구성\u003c/li\u003e\n\u003cli\u003e첫날은 개막식과 함께 \u003cstrong\u003eAI·사�...\u003c/p\u003e"
+    },
+    {
+      "title": "기본 설정이 너무 높게 되어 있는지도 모른다",
+      "link": "https://news.hada.io/topic?id=25353",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-26T12:33:02+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e읽기와 먹기 속도를 줄이는 실험\u003c/strong\u003e을 통해, 느린 속도가 오히려 더 깊은 몰입과 만족을 가져온다는 경험을 다룸\u003c/li\u003e\n\u003cli\u003e『반지의 제왕』을 \u003cstrong\u003e입으로 소리 내어 천천히 읽으며\u003c/strong\u003e, 각 문장에 세 배의 주의를 기울였을 때 이야기의 \u003cstrong\u003e의미와 감정이 더 풍부하게 전달됨\u003c/str...\u003c/p\u003e"
+    },
+    {
+      "title": "바이브의 해",
+      "link": "https://news.hada.io/topic?id=25352",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-26T11:31:02+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e2025년은 \u003cstrong\u003e에이전틱 코딩 도구\u003c/strong\u003e가 본격적으로 프로그래밍 방식을 바꾼 해로, 직접 키보드를 치는 대신 가상 인턴 프로그래머를 이끄는 \u003cstrong\u003e엔지니어링 리드 역할로 전환\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eClaude Code\u003c/strong\u003e에 대한 집착으로 시작해 자체 에이전트 구축과 활용을 반복하며, 코...\u003c/p\u003e"
+    },
+    {
+      "title": "Ask GN: 도커 컨테이너 많이 운용하는 서버는 어떻게 관리해야 합니까?",
+      "link": "https://news.hada.io/topic?id=25351",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-26T11:11:30+09:00",
+      "description": "\u003cp\u003e수십명이 공용으로 사용하는 서버가 있습니다.\u003c/p\u003e\n\u003cp\u003e각자 컨테이너로 프로젝트를 서빙하고 있는데,\u003c/p\u003e\n\u003cp\u003e서버의 재부팅 등의 이슈가 발생했을 때, 이 컨테이너들을 관리자가 어떻게 대응하기가 곤란합니다.\u003c/p\u003e\n\u003cp\u003e일일히 평소에 도커 컨테이너 실행 커맨드를 제출하라 해서 그걸 실행해 주어야 할지,\u003cbr /\u003e\n아니"
+    },
+    {
+      "title": "AI는 개발 속도를 높이지만 버그는 1.7배 더 많다",
+      "link": "https://news.hada.io/topic?id=25350",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-26T11:11:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e오픈소스 \u003cstrong\u003e470개 PR 분석 결과\u003c/strong\u003e, AI가 작성한 코드가 인간 작성 코드보다 \u003cstrong\u003e평균 1.7배 더 많은 문제\u003c/strong\u003e를 포함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e논리 오류·가독성 저하·보안 취약점\u003c/strong\u003e 등 주요 결함이 AI 코드에서 현저히 많았으며, 특히 가독성 문제는 3배 이상 증가\u003c/li\u003e\n\u003cli\u003eAI 코드의...\u003c/p\u003e"
+    },
+    {
+      "title": "당신에겐 Chief Bookmark Officer가 필요하다",
+      "link": "https://news.hada.io/topic?id=25349",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-26T10:31:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e모든 회사에는 항상 \u003cstrong\u003e필요한 링크를 즉시 찾아주는 사람\u003c/strong\u003e이 한명쯤 존재함\u003c/li\u003e\n\u003cli\u003e누군가 \u0026quot;X에 관한 기사 가지고 계신 분 있나요?\u0026quot;라고 물어보면 즉시 정확한 URL을 공유해 줌\u003c/li\u003e\n\u003cli\u003e우린 \u003cstrong\u003e북마크 더미에 파묻혀 있음\u003c/strong\u003e: 브라우저 곳곳, 슬랙 스레드, 이메일에 링...\u003c/p\u003e"
+    },
+    {
+      "title": "Show HN: Candid – Minimal Private Bring Your Own Model Email Revision Tool",
+      "link": "https://github.com/candacelabs/candid",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-26T21:59:08Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/candacelabs/candid\"\u003ehttps://github.com/candacelabs/candid\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46396768\"\u003ehttps://news.ycombinator.com/item?id=46396768\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "New PHP SAPI in Safe Rust",
+      "link": "https://news.ycombinator.com/item?id=46396765",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-26T21:58:42Z",
+      "description": "\n\u003cp\u003eI recently published the initial ripht-php-sapi RC.\u003cp\u003eIt’s safe Rust bindings for PHP's embed SAPI. Lets you execute PHP scripts from Rust without touching unsafe code.\u003cp\u003eGitHub: \nhttps://github.com/jhavenz/ripht-php-sapi\u003cp\u003eCrate: \nhttps://crates.io/crates/ripht-php-sapi\u003cp\u003eI'd plan to build some higher level Rust-based PHP tooling but need the proverbial clean slate. I also didn’t see any existing SAPI implementations for Rust, so ~3 months later, here it is. A good chunk of that was research. It’s surprising how scarce and archaic the educational material is out there. So, good thing there was 20+ years of battle-tested source code to learn from! Thank you to Nginx unit, php/php-fpm, apache, and Frankenphp. Being able to compare and contrast implementations was extremely helpful. Also gauging interest in content about PHP SAPI internals and Rust FFI if anyone's curious about that rabbit hole: https://www.patreon.com/posts/gauging-php-sapi-146489023\u003cp\u003eI’m open to feedback\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46396765\"\u003ehttps://news.ycombinator.com/item?id=46396765\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Silver rises 9% to hit fresh record high",
+      "link": "https://www.reuters.com/world/india/silver-rises-9-hit-fresh-record-high-2025-12-26/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-26T21:57:45Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.reuters.com/world/india/silver-rises-9-hit-fresh-record-high-2025-12-26/\"\u003ehttps://www.reuters.com/world/india/silver-rises-9-hit-fresh-record-high-2025-12-26/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46396755\"\u003ehttps://news.ycombinator.com/item?id=46396755\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "AI UX Design Patterns",
+      "link": "https://nikitisza.substack.com/p/ai-ux-design-patterns",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-26T21:55:35Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://nikitisza.substack.com/p/ai-ux-design-patterns\"\u003ehttps://nikitisza.substack.com/p/ai-ux-design-patterns\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46396740\"\u003ehttps://news.ycombinator.com/item?id=46396740\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Chinese Cargo Ship Packed Full of Modular Missile Launchers Emerges",
+      "link": "https://www.twz.com/sea/chinese-cargo-ship-packed-full-of-modular-missile-launchers-emerges",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-26T21:54:56Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.twz.com/sea/chinese-cargo-ship-packed-full-of-modular-missile-launchers-emerges\"\u003ehttps://www.twz.com/sea/chinese-cargo-ship-packed-full-of-modular-missile-launchers-emerges\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46396729\"\u003ehttps://news.ycombinator.com/item?id=46396729\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Ask HN: People who tried both, how does Waymo compare to Tesla Robotaxi?",
+      "link": "https://news.ycombinator.com/item?id=46396726",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-26T21:54:40Z",
+      "description": "\n\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46396726\"\u003ehttps://news.ycombinator.com/item?id=46396726\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Understanding Deep Learning",
+      "link": "https://udlbook.github.io/udlbook/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-26T21:52:03Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://udlbook.github.io/udlbook/\"\u003ehttps://udlbook.github.io/udlbook/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46396699\"\u003ehttps://news.ycombinator.com/item?id=46396699\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "New Supercomputer Simulation Sheds Light on Moon's Origin",
+      "link": "https://www.youtube.com/watch?v=kRlhlCWplqk",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-26T21:51:20Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.youtube.com/watch?v=kRlhlCWplqk\"\u003ehttps://www.youtube.com/watch?v=kRlhlCWplqk\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46396691\"\u003ehttps://news.ycombinator.com/item?id=46396691\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Raku 2025 Review",
+      "link": "https://raku-advent.blog/2025/12/25/day-25-raku-2025-review/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-26T21:51:16Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://raku-advent.blog/2025/12/25/day-25-raku-2025-review/\"\u003ehttps://raku-advent.blog/2025/12/25/day-25-raku-2025-review/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46396690\"\u003ehttps://news.ycombinator.com/item?id=46396690\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Google's boomerang year: 20% of AI engineers/SWE hired in 2025 were ex-employees",
+      "link": "https://www.cnbc.com/2025/12/19/google-boomerang-year-20percent-ai-software-devs-hired-2025-ex-employees.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-26T21:46:53Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.cnbc.com/2025/12/19/google-boomerang-year-20percent-ai-software-devs-hired-2025-ex-employees.html\"\u003ehttps://www.cnbc.com/2025/12/19/google-boomerang-year-20percent-ai-software-devs-hired-2025-ex-employees.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46396647\"\u003ehttps://news.ycombinator.com/item?id=46396647\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "\"Enabling\" C threads in a Python / WASM environment",
+      "link": "https://yosefk.com/blog/enabling-c-threads-in-a-python-wasm-environment.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-26T21:45:24Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://yosefk.com/blog/enabling-c-threads-in-a-python-wasm-environment.html\"\u003ehttps://yosefk.com/blog/enabling-c-threads-in-a-python-wasm-environment.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46396632\"\u003ehttps://news.ycombinator.com/item?id=46396632\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Deep-sea gas hydrates and chemosynthetic fauna discovered on the Greenland Sea",
+      "link": "https://www.nature.com/articles/s41467-025-67165-x",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-26T21:44:05Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nature.com/articles/s41467-025-67165-x\"\u003ehttps://www.nature.com/articles/s41467-025-67165-x\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46396621\"\u003ehttps://news.ycombinator.com/item?id=46396621\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Is Cognitive Dissonance a Thing?",
+      "link": "https://www.newyorker.com/culture/the-lede/is-cognitive-dissonance-actually-a-thing",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-26T21:43:48Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.newyorker.com/culture/the-lede/is-cognitive-dissonance-actually-a-thing\"\u003ehttps://www.newyorker.com/culture/the-lede/is-cognitive-dissonance-actually-a-thing\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46396620\"\u003ehttps://news.ycombinator.com/item?id=46396620\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Burnout: Should You Quit Your Job?",
+      "link": "https://nikitisza.substack.com/p/burnout-should-you-quit-your-job",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-26T21:43:34Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://nikitisza.substack.com/p/burnout-should-you-quit-your-job\"\u003ehttps://nikitisza.substack.com/p/burnout-should-you-quit-your-job\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46396618\"\u003ehttps://news.ycombinator.com/item?id=46396618\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Garmin Emergency Autoland Deployed For the First Time",
+      "link": "https://www.flightradar24.com/blog/aviation-news/aviation-safety/garmin-emergency-autoland-deployed-first-time/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-26T21:42:20Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.flightradar24.com/blog/aviation-news/aviation-safety/garmin-emergency-autoland-deployed-first-time/\"\u003ehttps://www.flightradar24.com/blog/aviation-news/aviation-safety/garmin-emergency-autoland-deployed-first-time/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46396604\"\u003ehttps://news.ycombinator.com/item?id=46396604\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Does the QUIC handshake require compression to be fast?",
+      "link": "https://www.fastly.com/blog/quic-handshake-tls-compression-certificates-extension-study",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-26T21:42:02Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.fastly.com/blog/quic-handshake-tls-compression-certificates-extension-study\"\u003ehttps://www.fastly.com/blog/quic-handshake-tls-compression-certificates-extension-study\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46396599\"\u003ehttps://news.ycombinator.com/item?id=46396599\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Pdf X-ray – find data leaks in the redacted pdf files",
+      "link": "https://pdfxray.fly.dev/app/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-26T21:40:26Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://pdfxray.fly.dev/app/\"\u003ehttps://pdfxray.fly.dev/app/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46396585\"\u003ehttps://news.ycombinator.com/item?id=46396585\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Multiverse: The First AI Multiplayer World Model",
+      "link": "https://enigma.inc/blog",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-26T21:40:23Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://enigma.inc/blog\"\u003ehttps://enigma.inc/blog\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46396584\"\u003ehttps://news.ycombinator.com/item?id=46396584\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "China Bans (2027) Retractable EV Door Handles over Safety Concerns",
+      "link": "https://www.sixthtone.com/news/1018021",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-26T21:38:07Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.sixthtone.com/news/1018021\"\u003ehttps://www.sixthtone.com/news/1018021\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46396559\"\u003ehttps://news.ycombinator.com/item?id=46396559\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Coroutine-less way to visualize iterations",
+      "link": "https://jakubtomsu.github.io/posts/iter_debug/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-26T21:37:59Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://jakubtomsu.github.io/posts/iter_debug/\"\u003ehttps://jakubtomsu.github.io/posts/iter_debug/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46396557\"\u003ehttps://news.ycombinator.com/item?id=46396557\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "WRAP up your backlog with GitHub Copilot coding agent",
+      "link": "https://github.blog/ai-and-ml/github-copilot/wrap-up-your-backlog-with-github-copilot-coding-agent/",
+      "source": "The latest on GitHub Copilot - The GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-26T17:56:38Z",
+      "description": "\u003cp\u003eAn easy-to-remember acronym, WRAP will help you write effective issues, refine your instructions, and get the most out of Copilot coding agent.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/ai-and-ml/github-copilot/wrap-up-your-backlog-with-github-copilot-coding-agent/\"\u003eWRAP up your backlog with GitHub Copilot coding agent\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    }
+  ],
+  "generatedAt": "2025-12-27T07:09:14.056361311+09:00"
+}
