@@ -1,0 +1,250 @@
+{
+  "date": "2025-12-28",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2025년 12월 27일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** 전설적인 개발자 롭 파이크가 AI의 어설픈 코드 수정 제안에 분노했고, 윈도우 11의 웹 기반 UX 전환에 대해 자바스크립트 창시자가 경고를 날렸으며, 비만 치료제의 요요 현상에 대한 과학적 분석이 쏟아졌습니다.\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### Go 언어의 아버지 롭 파이크, AI의 '선 넘은 친절'에 분노하다\n구글의 저명한 엔지니어이자 Go 언어와 유닉스(Unix)의 핵심 개발자인 롭 파이크(Rob Pike)가 AI가 생성한 스팸성 풀 리퀘스트(PR) 또는 코드 수정 제안에 대해 강한 불쾌감을 드러냈습니다. 최근 오픈소스 생태계에서는 AI 봇이 기여 실적을 위해 무의미하거나 문맥을 파악하지 못한 '친절한 수정(Helpful act)'을 대량으로 발송하는 문제가 대두되고 있습니다. 롭 파이크는 이러한 행위가 실제 개발자들의 시간을 낭비하게 하고 커뮤니티의 신뢰를 저해한다고 지적했습니다. 이는 AI가 코딩을 돕는 도구를 넘어, 스팸 생성기로 전락할 수 있다는 우려를 낳고 있습니다.\n\n\u003e **Key Point:** AI가 생성한 무분별한 코드 기여가 오픈소스 생태계의 노이즈(Noise)가 되고 있으며, 이에 대해 원로 개발자가 직접적인 경고를 보냈습니다. [^2][^10]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. 윈도우 11의 웹 기반 UX 전환, \"성급하다\" 경고\n- **What:** 자바스크립트(JavaScript)의 창시자 브렌던 아이크(Brendan Eich)가 윈도우 11이 네이티브 앱 대신 WebView2와 일렉트론(Electron) 기반의 웹 기술을 과도하게 도입하는 것에 대해 경고했습니다.\n- **Why:** 마이크로소프트는 개발 효율성을 위해 웹 기술을 적극 도입하고 있지만, 이는 메모리 사용량 증가와 반응 속도 저하 등 사용자 경험(UX) 품질을 떨어뜨릴 수 있습니다.\n- **Impact:** 운영체제의 기본 앱조차 웹 기술로 대체되면서 하드웨어 리소스 낭비가 심화될 수 있으며, 이는 '네이티브 성능'을 중시하는 사용자들의 이탈을 부를 수 있습니다. [^27]\n\n### 2. 비만 치료제(GLP-1) 중단 시 요요 현상의 과학적 원인\n- **What:** 오젬픽, 위고비 등 GLP-1 계열 비만 치료제 복용을 중단하면 1년 내에 원래 체중으로 돌아간다는 연구 결과와 그 생물학적 원인이 조명되었습니다. 화이자(Pfizer)가 90년대 초반에 이 기술을 놓친 비하인드 스토리도 함께 공개되었습니다.\n- **Why:** 우리 몸은 체중 감소를 '생존 위협'으로 인식하여 대사량을 줄이고 식욕을 높이는 항상성 시스템을 가동하기 때문입니다. 약물은 이를 억제하지만, 중단 시 억제된 본능이 폭발합니다.\n- **Impact:** 비만 치료제는 '완치제'가 아닌 고혈압 약처럼 '평생 관리제'로 인식되어야 하며, 제약사들의 장기 처방 시장은 더욱 커질 전망입니다. [^15][^19][^25]\n\n### 3. \"나는 노트북 괴짜다\": Framework 13이 사랑받는 이유\n- **What:** 수리 용이성과 모듈성을 극대화한 노트북 'Framework 13'에 대한 심층 리뷰가 주목받고 있습니다.\n- **Why:** 대부분의 최신 노트북이 부품을 납땜하여 수리가 불가능한 반면, Framework는 사용자가 모든 부품을 직접 교체하고 업그레이드할 수 있는 철학을 고수합니다.\n- **Impact:** '소유권'과 '수리할 권리'를 중시하는 테크 애호가들에게 강력한 지지를 받고 있으며, 지속 가능한 하드웨어 생태계의 가능성을 보여줍니다. [^1]\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **Witr** | 리눅스에서 특정 프로세스가 왜 실행 중인지 원인을 추적하고 설명해주는 도구 [^5] |\n| **Tool** | **Seoulism** | 도쿄 나이트(Tokyo Night) 테마가 지겨운 분들을 위한, 한국적인 감성의 Vim 컬러 테마 [^9] |\n| **Tool** | **Exe.dev** | 실행 파일(exe) 분석 또는 개발 관련 도구로 추정되는 새로운 서비스 [^4] |\n| **Extension** | **VSCode Run Configs** | 인텔리제이(IntelliJ)의 편리한 실행 환경 구성을 VSCode에서도 사용할 수 있게 해주는 확장 프로그램 [^6] |\n| **Tool** | **RawRequest** | 개발자를 위해 만들어진 간소화된 HTTP 요청 테스트 도구 (Postman 대체제) [^17] |\n| **Tool** | **HookVerify** | 프로덕션 시스템에서 웹훅(Webhook) 전송 상태와 가시성을 확보해주는 모니터링 도구 [^28] |\n| **Library** | **TwisterJS** | 인디 게임 개발자를 위한 초경량 자바스크립트 모듈 모음 [^23] |\n| **Paper** | **CHERI Safety** | C/C++ 언어에 CHERI 기능을 활용하여 완전한 공간 안전성(Spatial Safety)을 확보하는 기술 보고서 [^21] |\n| **Guide** | **Unit Test Naming** | 유닛 테스트 명명 규칙 논쟁: 'It Should' 스타일 vs 'Given/When/Then' 스타일 비교 [^18] |\n| **Security** | **CVE-2025-68260** | 리눅스 커널의 rust_binder 모듈에서 발견된 경쟁 상태(Race Condition) 취약점 패치 [^29] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n\n#### 💻 개발 \u0026 인프라 \u0026 웹\n*   **항상 텍스트에 베팅하라 (2014)**: 기술이 변해도 텍스트 데이터의 가치와 호환성은 영원하다는 통찰을 담은 글 [^3]\n*   **vst3-rs 빌드 프로세스 단순화**: Rust로 오디오 플러그인(VST3)을 개발할 때 복잡한 빌드 과정을 개선하는 방법 [^16]\n*   **Skills Are All You Need**: AI 에이전트 개발 시 복잡한 프롬프트보다 명확한 '스킬(도구)' 정의가 더 중요하다는 주장 [^11]\n*   **1995년 넷스케이프의 10일짜리 해킹**: 자바스크립트가 단 10일 만에 만들어져 현재 인터넷을 지배하게 된 역사적 배경 [^30]\n*   **구글, 다크 웹 리포트 중단**: 구글 원(Google One) 등에서 제공하던 다크 웹 모니터링 리포트 서비스 종료 안내 [^14]\n\n#### 🔬 과학 \u0026 건강 \u0026 사회\n*   **동화 같은 환각 버섯 연구**: 기존에 알려지지 않은 새로운 환각 버섯 종을 연구하는 전문가들의 이야기 [^8]\n*   **다국어 구사와 건강 수명**: 2개 국어 이상 사용이 뇌 건강과 수명 연장에 긍정적 영향을 미친다는 에릭 토폴의 분석 [^22]\n*   **전문가 증인의 수익 경제학**: 법정에서 활동하는 전문가 증인들이 어떻게 고수익을 올리는지 분석한 경제 기사 [^20]\n*   **놀이 시간은 길고 정리 시간은 짧은 장난감**: 부모와 아이 모두를 만족시키는 장난감 디자인에 대한 고찰 [^7]\n\n#### ⚖️ 윤리 \u0026 역사 \u0026 기타\n*   **AI가 우리를 암흑기로 되돌린다**: AI가 인간을 계몽하는 것이 아니라, 새로운 봉건 영주처럼 군림한다는 비판적 칼럼 [^12]\n*   **뻔한 거짓말이 완벽한 선전이 되는 이유**: 명백한 거짓말이 어떻게 대중을 선동하는 도구로 작동하는지 분석한 영상 [^13]\n*   **COINTELPRO는 어떻게 발각되었나 (2014)**: FBI의 불법 사찰 프로그램이 시민 활동가들에 의해 폭로된 역사적 사건 [^24]\n*   **국제우주정거장(ISS)과 교신하기**: 아마추어 무선 등을 통해 ISS 우주비행사와 직접 교신하는 방법 안내 [^26]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘 뉴스는 '**기본으로 돌아가라(Back to Basics)**'는 메시지가 강하게 느껴집니다. 롭 파이크는 AI의 어설픈 기교보다 인간의 명확한 코드를 옹호했고, 브렌던 아이크는 웹 기술의 남용보다 네이티브의 성능을 강조했습니다. 심지어 2014년의 \"텍스트에 베팅하라\"는 글이 다시 주목받는 것도 우연이 아닐 겁니다. 화려한 AI 도구들이 쏟아지는 지금, 오히려 **텍스트, 네이티브 성능, 그리고 인간의 검증 능력** 같은 본질적인 가치가 더 빛나는 하루입니다.\n\n---\n\n### Footnotes\n[^1]: 나는 노트북 괴짜다, 그래서 새 Framework 13이 마음에 든다 - https://news.hada.io/topic?id=25380\n[^2]: 로브 파이크, AI가 보낸 ‘친절 행위’ 스팸 메일에 분노 - https://news.hada.io/topic?id=25379\n[^3]: 항상 텍스트에 베팅하라 (2014) - https://news.hada.io/topic?id=25378\n[^4]: Exe.dev - https://news.hada.io/topic?id=25377\n[^5]: 리눅스 시스템에서 프로세스가 실행 중인 이유를 설명하는 도구 Witr - https://news.hada.io/topic?id=25376\n[^6]: VSCode Run Configurations - IntelliJ 스타일의 실행 환경 구성 Extension - https://news.hada.io/topic?id=25374\n[^7]: 놀이 시간은 길고 정리 시간은 짧은 장난감 - https://news.hada.io/topic?id=25373\n[^8]: 동화 같은 환각을 일으키는 새로운 버섯을 연구하는 전문가들 - https://news.hada.io/topic?id=25372\n[^9]: Show GN: Tokyo Night에 질리셨나요? 한국인을 위한 Vim 테마, 서울리즘 - https://news.hada.io/topic?id=25371\n[^10]: Rob Pike가 AI로부터 스팸성 '친절한 행동'을 받게 된 경위 - https://news.hada.io/topic?id=25370\n[^11]: Skills Are All You Need - https://enact.tools/blog/skills-are-all-you-need/\n[^12]: Our king, our priest, our feudal lord –how AI is taking us back to the dark ages - https://www.theguardian.com/commentisfree/2025/dec/26/ai-dark-ages-enlightenment\n[^13]: Why Obvious Lies Make Perfect Propaganda [video] - https://www.youtube.com/watch?v=IrLoulzqXMM\n[^14]: Google discontinuing the dark web report - https://support.google.com/websearch/answer/16767242?hl=en\u0026co=GENIE.Platform%3DDesktop\n[^15]: People who stop weight loss drugs return to original weight within year - https://www.theguardian.com/society/2025/may/14/people-who-stop-weight-loss-drugs-return-to-original-weight-within-year-analysis-finds\n[^16]: Simplifying the build process for vst3-rs - https://micahrj.github.io/posts/vst3/\n[^17]: Show HN: HTTP Request tool made for devs - https://github.com/PortableSheep/RawRequest\n[^18]: Naming Your Unit Tests: It Should vs. Given/When/Then - https://markus.oberlehner.net/blog/naming-your-unit-tests-it-should-vs-given-when-then\n[^19]: The science of why your body resists weight loss - https://www.nationalgeographic.com/health/article/why-most-people-regain-weight\n[^20]: The lucrative economics of expert witnesses - https://thehustle.co/the-lucrative-economics-of-expert-witnesses\n[^21]: Complete spatial safety for C and C++ using CHERI capabilities - https://www.cl.cam.ac.uk/techreports/UCAM-CL-TR-949.html\n[^22]: Multilingualism and Extending Healthspan - https://erictopol.substack.com/p/multilingualism-and-extending-healthspan\n[^23]: TwisterJS – Tiny Modules for Indie Game Developers - https://twisterjs.com/\n[^24]: How We Found Out About COINTELPRO (2014) - https://monthlyreview.org/articles/how-we-found-out-about-cointelpro/\n[^25]: How Pfizer ended up passing on my GLP-1 work back in the early '90s - https://www.statnews.com/2024/09/09/glp-1-history-pfizer-john-baxter-jeffrey-flier-calbio-metabio/\n[^26]: Contact the ISS - https://www.ariss.org/contact-the-iss.html\n[^27]: JavaScript creator warns against \"rushed web UX over native\" for Windows 11 - https://www.windowslatest.com/2025/12/27/javascript-creator-warns-against-rushed-web-ux-over-native-as-windows-11-leans-harder-on-webview2-and-electron/\n[^28]: Show HN: HookVerify – Webhook delivery visibility for production systems - https://hookverify.com\n[^29]: CVE-2025-68260: rust_binder: fix race condition on death_list - https://lore.kernel.org/linux-cve-announce/2025121614-CVE-2025-68260-558d@gregkh/T/#u\n[^30]: In 1995, a Netscape employee wrote a hack in 10 days that now runs the Internet - https://arstechnica.com/gadgets/2025/12/in-1995-a-netscape-employee-wrote-a-hack-in-10-days-that-now-runs-the-internet/\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **나는 노트북 괴짜다, 그래서 새 Framework 13이 마음에 든다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25380\n\n2. **로브 파이크, AI가 보낸 ‘친절 행위’ 스팸 메일에 분노**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25379\n\n3. **항상 텍스트에 베팅하라 (2014)**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25378\n\n4. **Exe.dev**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25377\n\n5. **리눅스 시스템에서 프로세스가 실행 중인 이유를 설명하는 도구 Witr**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25376\n\n6. **VSCode Run Configurations - IntelliJ 스타일의 실행 환경 구성 Extension**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25374\n\n7. **놀이 시간은 길고 정리 시간은 짧은 장난감**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25373\n\n8. **동화 같은 환각을 일으키는 새로운 버섯을 연구하는 전문가들**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25372\n\n9. **Show GN: Tokyo Night에 질리셨나요? 한국인을 위한 Vim 테마, 서울리즘**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25371\n\n10. **Rob Pike가 AI로부터 스팸성 '친절한 행동'을 받게 된 경위**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25370\n\n11. **Skills Are All You Need**\n   - 출처: Hacker News\n   - 링크: https://enact.tools/blog/skills-are-all-you-need/\n\n12. **Our king, our priest, our feudal lord –how AI is taking us back to the dark ages**\n   - 출처: Hacker News\n   - 링크: https://www.theguardian.com/commentisfree/2025/dec/26/ai-dark-ages-enlightenment\n\n13. **Why Obvious Lies Make Perfect Propaganda [video]**\n   - 출처: Hacker News\n   - 링크: https://www.youtube.com/watch?v=IrLoulzqXMM\n\n14. **Google discontinuing the dark web report**\n   - 출처: Hacker News\n   - 링크: https://support.google.com/websearch/answer/16767242?hl=en\u0026co=GENIE.Platform%3DDesktop\n\n15. **People who stop weight loss drugs return to original weight within year**\n   - 출처: Hacker News\n   - 링크: https://www.theguardian.com/society/2025/may/14/people-who-stop-weight-loss-drugs-return-to-original-weight-within-year-analysis-finds\n\n16. **Simplifying the build process for vst3-rs**\n   - 출처: Hacker News\n   - 링크: https://micahrj.github.io/posts/vst3/\n\n17. **Show HN: HTTP Request tool made for devs**\n   - 출처: Hacker News\n   - 링크: https://github.com/PortableSheep/RawRequest\n\n18. **Naming Your Unit Tests: It Should vs. Given/When/Then**\n   - 출처: Hacker News\n   - 링크: https://markus.oberlehner.net/blog/naming-your-unit-tests-it-should-vs-given-when-then\n\n19. **The science of why your body resists weight loss**\n   - 출처: Hacker News\n   - 링크: https://www.nationalgeographic.com/health/article/why-most-people-regain-weight\n\n20. **The lucrative economics of expert witnesses**\n   - 출처: Hacker News\n   - 링크: https://thehustle.co/the-lucrative-economics-of-expert-witnesses\n\n21. **Complete spatial safety for C and C++ using CHERI capabilities**\n   - 출처: Hacker News\n   - 링크: https://www.cl.cam.ac.uk/techreports/UCAM-CL-TR-949.html\n\n22. **Multilingualism and Extending Healthspan**\n   - 출처: Hacker News\n   - 링크: https://erictopol.substack.com/p/multilingualism-and-extending-healthspan\n\n23. **TwisterJS – Tiny Modules for Indie Game Developers**\n   - 출처: Hacker News\n   - 링크: https://twisterjs.com/\n\n24. **How We Found Out About COINTELPRO (2014)**\n   - 출처: Hacker News\n   - 링크: https://monthlyreview.org/articles/how-we-found-out-about-cointelpro/\n\n25. **How Pfizer ended up passing on my GLP-1 work back in the early '90s**\n   - 출처: Hacker News\n   - 링크: https://www.statnews.com/2024/09/09/glp-1-history-pfizer-john-baxter-jeffrey-flier-calbio-metabio/\n\n26. **Contact the ISS**\n   - 출처: Hacker News\n   - 링크: https://www.ariss.org/contact-the-iss.html\n\n27. **JavaScript creator warns against \"rushed web UX over native\" for Windows 11**\n   - 출처: Hacker News\n   - 링크: https://www.windowslatest.com/2025/12/27/javascript-creator-warns-against-rushed-web-ux-over-native-as-windows-11-leans-harder-on-webview2-and-electron/\n\n28. **Show HN: HookVerify – Webhook delivery visibility for production systems**\n   - 출처: Hacker News\n   - 링크: https://hookverify.com\n\n29. **CVE-2025-68260: rust_binder: fix race condition on death_list**\n   - 출처: Hacker News\n   - 링크: https://lore.kernel.org/linux-cve-announce/2025121614-CVE-2025-68260-558d@gregkh/T/#u\n\n30. **In 1995, a Netscape employee wrote a hack in 10 days that now runs the Internet**\n   - 출처: Hacker News\n   - 링크: https://arstechnica.com/gadgets/2025/12/in-1995-a-netscape-employee-wrote-a-hack-in-10-days-that-now-runs-the-internet/\n\n\n",
+  "articles": [
+    {
+      "title": "나는 노트북 괴짜다, 그래서 새 Framework 13이 마음에 든다",
+      "link": "https://news.hada.io/topic?id=25380",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-28T05:33:19+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e2008년 삼성 \u003cstrong\u003eNC10 넷북\u003c/strong\u003e부터 시작해, 다양한 노트북을 분해·개조하며 성능을 끌어올리는 실험을 반복해 온 개인적 경험을 회고\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eRAM·SSD 업그레이드\u003c/strong\u003e, \u003cstrong\u003eHackintosh 설치\u003c/strong\u003e, \u003cstrong\u003eArch Linux 세팅\u003c/strong\u003e 등으로 하드웨어 한계를 넘는 시도를 즐겼...\u003c/p\u003e"
+    },
+    {
+      "title": "로브 파이크, AI가 보낸 ‘친절 행위’ 스팸 메일에 분노",
+      "link": "https://news.hada.io/topic?id=25379",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-28T02:32:57+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e컴퓨터 과학자 \u003cstrong\u003e로브 파이크\u003c/strong\u003e가 AI가 생성한 감사 이메일을 받아 강한 분노를 표출함\u003c/li\u003e\n\u003cli\u003e이메일은 비영리 단체 \u003cstrong\u003eSage\u003c/strong\u003e가 운영하는 \u003cstrong\u003eAI Village\u003c/strong\u003e 프로젝트의 에이전트가 자동으로 발송한 것으로, “친절한 행위(Act of Kindness)” 실험의 일환이었음\u003c/li\u003e\n...\u003c/p\u003e"
+    },
+    {
+      "title": "항상 텍스트에 베팅하라 (2014)",
+      "link": "https://news.hada.io/topic?id=25378",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-28T01:33:09+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eDreamwidth 페이지는 \u003cstrong\u003eCAPTCHA 인증 절차\u003c/strong\u003e를 요구하는 로그인 화면으로 구성됨\u003c/li\u003e\n\u003cli\u003e사용자는 요청을 검증하기 위해 \u003cstrong\u003e보안 문자 입력\u003c/strong\u003e을 완료해야 함\u003c/li\u003e\n\u003cli\u003e로그인, 비밀번호 찾기, OpenID 로그인 등 \u003cstrong\u003e기본 계정 접근 옵션\u003c/strong\u003e이 제공됨\u003c/li\u003e\n\u003cli\u003e메뉴에는 ...\u003c/p\u003e"
+    },
+    {
+      "title": "Exe.dev",
+      "link": "https://news.hada.io/topic?id=25377",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-27T23:36:47+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e원격 SSH 환경\u003c/strong\u003e을 통해 사용자가 직접 접속할 수 있는 \u003cstrong\u003e인터랙티브 개발 서버\u003c/strong\u003e 형태의 서비스\u003c/li\u003e\n\u003cli\u003e접속 명령은 \u003ccode\u003essh exe.dev\u003c/code\u003e로, 별도 계정 생성 없이 바로 \u003cstrong\u003e터미널 세션\u003c/strong\u003e을 시작할 수 있음\u003c/li\u003e\n\u003cli\u003e세션 내에서는 \u003cstrong\u003e디스크가 지속(per...\u003c/p\u003e"
+    },
+    {
+      "title": "리눅스 시스템에서 프로세스가 실행 중인 이유를 설명하는 도구 Witr",
+      "link": "https://news.hada.io/topic?id=25376",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-27T21:32:55+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eWitr\u003c/strong\u003e는 리눅스 시스템에서 특정 \u003cstrong\u003e프로세스, 서비스, 또는 포트가 왜 실행 중인지\u003c/strong\u003e를 명확히 보여주는 도구\u003c/li\u003e\n\u003cli\u003e기존 \u003ccode\u003eps\u003c/code\u003e, \u003ccode\u003etop\u003c/code\u003e, \u003ccode\u003elsof\u003c/code\u003e 등이 단순히 “무엇이 실행 중인지”만 보여주는 것과 달리, \u003cstrong\u003e“왜 실행 중인지”의 인...\u003c/p\u003e"
+    },
+    {
+      "title": "VSCode Run Configurations - IntelliJ 스타일의 실행 환경 구성 Extension",
+      "link": "https://news.hada.io/topic?id=25374",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-27T20:21:57+09:00",
+      "description": "\u003cp\u003e평소 IntelliJ IDEA를 사용하다가 여러 프로젝트를 동시에 열어 작업하니 너무 무거워져서 VSCode로 넘어오려고 했습니다.\u003c/p\u003e\n\u003cp\u003e그런데 실행 환경을 그대로 옮겨오기가 생각보다 어려웠습니다. 환경변수를 launch.json에서 일일이 설정하거나 .env 파일로 따로 관리해야 하는 등 불편한 점이 많았습니다.\u003c/p\u003e\n\u003cp\u003e그"
+    },
+    {
+      "title": "놀이 시간은 길고 정리 시간은 짧은 장난감",
+      "link": "https://news.hada.io/topic?id=25373",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-27T17:33:07+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e놀이 시간 대비 정리 효율\u003c/strong\u003e이 높은 장난감을 찾기 위해, 세 가지 기준(반복성, 놀이 세션 길이, 정리 용이성)으로 점수를 매긴 평가 방식 제시\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eMagna-tiles\u003c/strong\u003e, \u003cstrong\u003eGiant Magna-tiles\u003c/strong\u003e, \u003cstrong\u003eMagnet foam blocks\u003c/strong\u003e가 가장 높은 점수를 받았으...\u003c/p\u003e"
+    },
+    {
+      "title": "동화 같은 환각을 일으키는 새로운 버섯을 연구하는 전문가들",
+      "link": "https://news.hada.io/topic?id=25372",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-27T14:34:29+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eLanmaoa asiatica\u003c/strong\u003e라는 새로운 버섯이 발견되어, 섭취 시 수백 명의 작은 사람들을 보는 \u003cstrong\u003e‘릴리푸트 환각’\u003c/strong\u003e 을 유발하는 것으로 보고됨\u003c/li\u003e\n\u003cli\u003e이 버섯은 기존의 \u003cstrong\u003e‘매직머시룸’\u003c/strong\u003e 과는 전혀 다른 균류 계통에 속하며, \u003cstrong\u003e중국 윈난성\u003c/strong\u003e에서 ‘...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: Tokyo Night에 질리셨나요? 한국인을 위한 Vim 테마, 서울리즘",
+      "link": "https://news.hada.io/topic?id=25371",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-27T14:24:30+09:00",
+      "description": "\u003cp\u003e안녕하세요, 오늘은 좀 한국적인 주제로 포스트를 작성하게 되었습니다.\u003cbr /\u003e\n지방에 거주하는 사람이 서울 테마를 만들 수가 있나, 하고 생각하실 수 있습니다.\u003cbr /\u003e\n그래서 이건 지역과 상관없이 익숙한 상징에서 빌려왔습니다.\u003cbr /\u003e\n나날이 대단해지는 한류도 겨냥하면 좋지만 이건 한국인을 위한 Vim 테마인데...\u003c/p\u003e"
+    },
+    {
+      "title": "Rob Pike가 AI로부터 스팸성 '친절한 행동'을 받게 된 경위",
+      "link": "https://news.hada.io/topic?id=25370",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-27T12:24:37+09:00",
+      "description": "\u003cp\u003e제목: Rob Pike가 AI로부터 스팸성 '친절한 행동'을 받게 된 경위 (How Rob Pike got spammed with an AI slop “act of kindness”)\u003c/p\u003e\n\u003cp\u003e요약:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eGo 언어와 Plan 9의 공동 창시자인 Rob Pike가 'AI Village'라는 프로젝트의 AI 에이전트로부터 원치 않는 감사 이메일을 받고 크게 분노했습니다.\u003c/li\u003e\n"
+    },
+    {
+      "title": "Skills Are All You Need",
+      "link": "https://enact.tools/blog/skills-are-all-you-need/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-27T22:03:24Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://enact.tools/blog/skills-are-all-you-need/\"\u003ehttps://enact.tools/blog/skills-are-all-you-need/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46405752\"\u003ehttps://news.ycombinator.com/item?id=46405752\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Our king, our priest, our feudal lord –how AI is taking us back to the dark ages",
+      "link": "https://www.theguardian.com/commentisfree/2025/dec/26/ai-dark-ages-enlightenment",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-27T21:58:00Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.theguardian.com/commentisfree/2025/dec/26/ai-dark-ages-enlightenment\"\u003ehttps://www.theguardian.com/commentisfree/2025/dec/26/ai-dark-ages-enlightenment\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46405708\"\u003ehttps://news.ycombinator.com/item?id=46405708\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Why Obvious Lies Make Perfect Propaganda [video]",
+      "link": "https://www.youtube.com/watch?v=IrLoulzqXMM",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-27T21:56:44Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.youtube.com/watch?v=IrLoulzqXMM\"\u003ehttps://www.youtube.com/watch?v=IrLoulzqXMM\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46405692\"\u003ehttps://news.ycombinator.com/item?id=46405692\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Google discontinuing the dark web report",
+      "link": "https://support.google.com/websearch/answer/16767242?hl=en\u0026co=GENIE.Platform%3DDesktop",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-27T21:51:42Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://support.google.com/websearch/answer/16767242?hl=en\u0026co=GENIE.Platform%3DDesktop\"\u003ehttps://support.google.com/websearch/answer/16767242?hl=en\u0026co=GENIE.Platform%3DDesktop\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46405641\"\u003ehttps://news.ycombinator.com/item?id=46405641\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "People who stop weight loss drugs return to original weight within year",
+      "link": "https://www.theguardian.com/society/2025/may/14/people-who-stop-weight-loss-drugs-return-to-original-weight-within-year-analysis-finds",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-27T21:46:36Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.theguardian.com/society/2025/may/14/people-who-stop-weight-loss-drugs-return-to-original-weight-within-year-analysis-finds\"\u003ehttps://www.theguardian.com/society/2025/may/14/people-who-stop-weight-loss-drugs-return-to-original-weight-within-year-analysis-finds\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46405591\"\u003ehttps://news.ycombinator.com/item?id=46405591\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Simplifying the build process for vst3-rs",
+      "link": "https://micahrj.github.io/posts/vst3/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-27T21:46:02Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://micahrj.github.io/posts/vst3/\"\u003ehttps://micahrj.github.io/posts/vst3/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46405582\"\u003ehttps://news.ycombinator.com/item?id=46405582\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: HTTP Request tool made for devs",
+      "link": "https://github.com/PortableSheep/RawRequest",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-27T21:45:23Z",
+      "description": "\n\u003cp\u003eHttp request client that removes the need for complex UI (postman) and instead focuses on text to support requests, chained requests, pre/post scripts, load testing, and more.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46405570\"\u003ehttps://news.ycombinator.com/item?id=46405570\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Naming Your Unit Tests: It Should vs. Given/When/Then",
+      "link": "https://markus.oberlehner.net/blog/naming-your-unit-tests-it-should-vs-given-when-then",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-27T21:44:31Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://markus.oberlehner.net/blog/naming-your-unit-tests-it-should-vs-given-when-then\"\u003ehttps://markus.oberlehner.net/blog/naming-your-unit-tests-it-should-vs-given-when-then\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46405561\"\u003ehttps://news.ycombinator.com/item?id=46405561\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The science of why your body resists weight loss",
+      "link": "https://www.nationalgeographic.com/health/article/why-most-people-regain-weight",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-27T21:43:36Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nationalgeographic.com/health/article/why-most-people-regain-weight\"\u003ehttps://www.nationalgeographic.com/health/article/why-most-people-regain-weight\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46405549\"\u003ehttps://news.ycombinator.com/item?id=46405549\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The lucrative economics of expert witnesses",
+      "link": "https://thehustle.co/the-lucrative-economics-of-expert-witnesses",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-27T21:42:20Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://thehustle.co/the-lucrative-economics-of-expert-witnesses\"\u003ehttps://thehustle.co/the-lucrative-economics-of-expert-witnesses\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46405536\"\u003ehttps://news.ycombinator.com/item?id=46405536\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Complete spatial safety for C and C++ using CHERI capabilities",
+      "link": "https://www.cl.cam.ac.uk/techreports/UCAM-CL-TR-949.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-27T21:42:02Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.cl.cam.ac.uk/techreports/UCAM-CL-TR-949.html\"\u003ehttps://www.cl.cam.ac.uk/techreports/UCAM-CL-TR-949.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46405532\"\u003ehttps://news.ycombinator.com/item?id=46405532\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Multilingualism and Extending Healthspan",
+      "link": "https://erictopol.substack.com/p/multilingualism-and-extending-healthspan",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-27T21:39:09Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://erictopol.substack.com/p/multilingualism-and-extending-healthspan\"\u003ehttps://erictopol.substack.com/p/multilingualism-and-extending-healthspan\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46405503\"\u003ehttps://news.ycombinator.com/item?id=46405503\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "TwisterJS – Tiny Modules for Indie Game Developers",
+      "link": "https://twisterjs.com/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-27T21:36:49Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://twisterjs.com/\"\u003ehttps://twisterjs.com/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46405483\"\u003ehttps://news.ycombinator.com/item?id=46405483\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "How We Found Out About COINTELPRO (2014)",
+      "link": "https://monthlyreview.org/articles/how-we-found-out-about-cointelpro/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-27T21:36:27Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://monthlyreview.org/articles/how-we-found-out-about-cointelpro/\"\u003ehttps://monthlyreview.org/articles/how-we-found-out-about-cointelpro/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46405481\"\u003ehttps://news.ycombinator.com/item?id=46405481\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 14\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "How Pfizer ended up passing on my GLP-1 work back in the early '90s",
+      "link": "https://www.statnews.com/2024/09/09/glp-1-history-pfizer-john-baxter-jeffrey-flier-calbio-metabio/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-27T21:36:22Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.statnews.com/2024/09/09/glp-1-history-pfizer-john-baxter-jeffrey-flier-calbio-metabio/\"\u003ehttps://www.statnews.com/2024/09/09/glp-1-history-pfizer-john-baxter-jeffrey-flier-calbio-metabio/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46405480\"\u003ehttps://news.ycombinator.com/item?id=46405480\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 4\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Contact the ISS",
+      "link": "https://www.ariss.org/contact-the-iss.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-27T21:35:10Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.ariss.org/contact-the-iss.html\"\u003ehttps://www.ariss.org/contact-the-iss.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46405463\"\u003ehttps://news.ycombinator.com/item?id=46405463\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "JavaScript creator warns against \"rushed web UX over native\" for Windows 11",
+      "link": "https://www.windowslatest.com/2025/12/27/javascript-creator-warns-against-rushed-web-ux-over-native-as-windows-11-leans-harder-on-webview2-and-electron/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-27T21:29:18Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.windowslatest.com/2025/12/27/javascript-creator-warns-against-rushed-web-ux-over-native-as-windows-11-leans-harder-on-webview2-and-electron/\"\u003ehttps://www.windowslatest.com/2025/12/27/javascript-creator-warns-against-rushed-web-ux-over-native-as-windows-11-leans-harder-on-webview2-and-electron/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46405419\"\u003ehttps://news.ycombinator.com/item?id=46405419\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: HookVerify – Webhook delivery visibility for production systems",
+      "link": "https://hookverify.com",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-27T21:27:44Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://hookverify.com\"\u003ehttps://hookverify.com\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46405410\"\u003ehttps://news.ycombinator.com/item?id=46405410\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "CVE-2025-68260: rust_binder: fix race condition on death_list",
+      "link": "https://lore.kernel.org/linux-cve-announce/2025121614-CVE-2025-68260-558d@gregkh/T/#u",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-27T21:24:17Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://lore.kernel.org/linux-cve-announce/2025121614-CVE-2025-68260-558d@gregkh/T/#u\"\u003ehttps://lore.kernel.org/linux-cve-announce/2025121614-CVE-2025-68260-558d@gregkh/T/#u\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46405388\"\u003ehttps://news.ycombinator.com/item?id=46405388\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "In 1995, a Netscape employee wrote a hack in 10 days that now runs the Internet",
+      "link": "https://arstechnica.com/gadgets/2025/12/in-1995-a-netscape-employee-wrote-a-hack-in-10-days-that-now-runs-the-internet/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-27T21:22:44Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://arstechnica.com/gadgets/2025/12/in-1995-a-netscape-employee-wrote-a-hack-in-10-days-that-now-runs-the-internet/\"\u003ehttps://arstechnica.com/gadgets/2025/12/in-1995-a-netscape-employee-wrote-a-hack-in-10-days-that-now-runs-the-internet/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46405375\"\u003ehttps://news.ycombinator.com/item?id=46405375\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 11\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    }
+  ],
+  "generatedAt": "2025-12-28T07:08:48.074616114+09:00"
+}
