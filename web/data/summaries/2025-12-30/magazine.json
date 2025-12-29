@@ -1,0 +1,314 @@
+{
+  "date": "2025-12-30",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2025년 12월 29일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** 구글의 12월 AI 총결산과 검색 품질에 대한 날카로운 비평, 그리고 개발자들을 위한 퍼징(Fuzzing) 테스트의 한계점 분석까지, 기술의 명과 암을 동시에 조명합니다.\n\n---\n\n## 🏆 Top Story: 구글의 연말 AI 총공세\n### Google AI Updates: 12월의 주요 발표 총정리\n구글이 12월 한 달간 쏟아낸 AI 기술 업데이트를 종합했습니다. DeepMind와 Gemini 팀이 주도한 이번 업데이트는 모델의 성능 향상뿐만 아니라, 실제 제품(Gemini)에 적용된 'Nano Banana' 트렌드와 같은 사용자 경험 중심의 데이터도 포함하고 있습니다. 특히 연말을 맞아 AI가 어떻게 일상과 업무 도구에 깊숙이 파고들었는지를 보여주는 지표들이 대거 공개되었습니다.\n\u003e **Key Point:** 단순한 모델 업데이트를 넘어, 2025년 한 해 동안 AI가 만들어낸 트렌드와 실제 활용 사례를 집대성했습니다. [^1][^2][^16][^37]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. 검색의 제왕은 어떻게 무너졌는가 (The Man Who Killed Google Search)\n- **What:** 구글 검색의 품질 저하와 광고 수익 중심의 의사결정 구조를 비판한 에세이가 다시금 화제입니다. 검색 결과의 정확성보다 매출을 우선시한 경영진의 결정이 어떻게 사용자 경험을 해쳤는지 분석합니다.\n- **Why:** 생성형 AI의 등장으로 '검색'의 패러다임이 바뀌는 시점에서, 기존 검색 엔진의 신뢰도 하락은 업계의 가장 큰 화두이기 때문입니다.\n- **Impact:** 검색 엔진 최적화(SEO) 생태계의 붕괴와 AI 검색(SearchGPT 등)으로의 사용자 이탈을 가속화할 수 있는 중요한 신호탄입니다. [^19]\n\n### 2. 지속적인 퍼징(Fuzzing)을 살아남는 버그들\n- **What:** GitHub 보안 팀이 지속적인 퍼징 테스트(무작위 데이터 입력 테스트)를 거치고도 살아남은 버그들의 특성을 분석했습니다.\n- **Why:** 자동화된 보안 도구가 만능이 아님을 보여줍니다. 특정 상태(State)가 전제되어야만 발생하는 복잡한 버그들은 여전히 인간의 직관이나 더 정교한 시나리오가 필요합니다.\n- **Impact:** 보안 엔지니어들에게 단순 자동화를 넘어선 '상태 기반(State-aware)' 테스팅 전략의 필요성을 시사합니다. [^4]\n\n### 3. 소프트웨어 엔지니어링의 현실: 복잡성과 냉소\n- **What:** \"소프트웨어 제품이 실제로 어떻게 돌아가는지는 아무도 모른다\"는 글과 \"엔지니어는 약간의 냉소주의를 가져야 한다\"는 조언이 동시에 주목받았습니다.\n- **Why:** 현대의 소프트웨어는 한 사람이 전체를 파악하기 불가능할 정도로 복잡해졌으며, 이에 따른 유지보수의 어려움과 심리적 부담이 커지고 있습니다.\n- **Impact:** 10년 만에 물러난 Mockito 유지관리자의 사례처럼, 오픈소스 메인테이너와 시니어 엔지니어들의 번아웃 관리 및 시스템 복잡도 축소가 2026년의 주요 과제가 될 것입니다. [^7][^8][^12]\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **NeuronDB** | PostgreSQL을 위한 임베딩 및 벡터 검색 지원 도구. SQL로 AI 검색 구현 가능. [^24] |\n| **Tool** | **Code-Chunk** | RAG(검색 증강 생성) 시스템을 위해 코드 청킹(Chunking)을 최적화해주는 라이브러리. [^28] |\n| **Tool** | **Portdetective** | Rust로 작성된 작고 빠른 포트 검사 CLI 도구. 네트워크 디버깅에 유용. [^31] |\n| **Tool** | **fish shell 4.3.0** | 사용자 친화적인 쉘 'fish'의 최신 릴리즈. 성능 개선 및 버그 수정 포함. [^25] |\n| **Tool** | **Home Stories** | 리노베이션 예산, 사진, 타이머 등을 추적 관리하는 iOS 앱. [^36] |\n| **Tool** | **Chess Helios** | 체스 실력 향상을 도와주는 AI 튜터. [^27] |\n| **Data** | **AI Domain Data Standard** | AI 학습용 도메인 데이터를 위한 표준화 도구 모음. [^35] |\n| **Paper** | **How LLMs Work** | MIT Sloan에서 경영진을 위해 정리한 LLM 작동 원리 해설. [^33] |\n| **Edu** | **Computer Graphics** | 바닥부터 배우는 컴퓨터 그래픽스 무료 강의 자료. [^13] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n\n#### 💻 개발 \u0026 인프라\n* **Unity Mono 이슈**: C# 코드가 예상보다 느린 원인으로 Mono 런타임의 한계를 지적한 분석. [^6]\n* **Linux 7.0**: 차기 커널에서 IO_uring 폴링 성능이 대폭 개선될 예정. [^20]\n* **Fedora 2025**: 리눅스 혁신의 최전선에 있는 페도라의 2025년 주요 성과 정리. [^29]\n* **C++ Volatile**: C++ 표준에서 `volatile` 키워드의 일부 기능을 지원 중단(Deprecating)하려는 움직임. [^32]\n* **Mac Thermal App**: 내 맥북이 열 때문에 느려지는지(스로틀링) 알려주는 앱 개발기. [^11]\n* **Chrome Beta iOS**: iOS용 크롬 베타 버전 업데이트 소식. [^15]\n\n#### 🤖 AI \u0026 트렌드\n* **Gemini Trends**: 2025년 구글 트렌드 중 'Nano Banana' 등 재미있는 검색어 13선. [^3][^38]\n* **AI 메모리 소비**: AI 기능 탑재로 인한 메모리 칩 소비 급증이 기기 가격 상승을 유발할 가능성. [^9]\n* **토픽 모델링의 종말?**: LLM 시대에 기존의 토픽 모델링 기법이 여전히 유효한지에 대한 기술적 고찰. [^17]\n* **데이터 추출 벤치마크**: 데이터 추출 및 분석 파이프라인의 성능을 어떻게 측정할 것인가에 대한 HN 토론. [^18]\n* **금주의 AI 논문**: 12월 4주차에 주목해야 할 AI/ML 논문 큐레이션. [^14]\n\n#### 🛡️ 보안 \u0026 사회\n* **MongoBleed**: 몽고DB 관련 보안 취약점 이슈에 대한 간단한 설명. [^5]\n* **GitHub 스타의 배신**: 4,800개 스타를 받은 프로젝트가 어떻게 신뢰를 잃었는지 분석. [^10]\n* **USPS 소인 변경**: 미국 우정국(USPS)의 소인 날짜 시스템 변경 발표. [^26]\n* **기술 언어와 스포츠**: 'Value-add', 'Networking' 같은 기술 업계 용어가 스포츠 중계를 어떻게 지루하게 만들었나. [^30]\n* **종말론적 콘도**: 냉전 시대 벙커가 최고급 종말 대비 콘도로 변신 중. [^34]\n* **HN 블로그 순위**: 2025년 해커뉴스에서 가장 많은 포인트를 얻은 개인 블로그 리스트. [^23]\n* **The Precipice**: 기술적 특이점 혹은 위기 상황에 대한 에세이. [^21]\n* **Different Arguments**: 논쟁의 방식에 대한 철학적 고찰. [^22]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘 뉴스는 '**화려한 AI의 발전**'과 '**소프트웨어 엔지니어링의 고뇌**'가 극명하게 대비됩니다. 구글은 연말을 맞아 AI 성과를 자축하고 있지만, 한편에서는 검색 품질 저하에 대한 비판과 복잡해지는 코드 유지보수에 지친 엔지니어들의 목소리가 들려옵니다. 특히 \"**소프트웨어 제품이 실제로 어떻게 돌아가는지는 아무도 모른다**\"는 문장은, AI가 코드를 짜주는 시대에 우리가 '통제권'을 잃지 않기 위해 무엇을 해야 할지 묵직한 질문을 던집니다.\n\n---\n\n### References\n[^1]: The latest AI news we announced in December - https://blog.google/technology/ai/google-ai-updates-december-2025/\n[^2]: The latest AI news we announced in December - https://blog.google/technology/ai/google-ai-updates-december-2025/\n[^3]: 13 of the best Nano Banana trends from 2025 - https://blog.google/products/gemini/nano-banana-google-trends-2025/\n[^4]: Bugs that survive the heat of continuous fuzzing - https://github.blog/security/vulnerability-research/bugs-that-survive-the-heat-of-continuous-fuzzing/\n[^5]: MongoBleed 간단 설명 - https://news.hada.io/topic?id=25422\n[^6]: Unity의 Mono 문제: 왜 당신의 C# 코드는 기대보다 느리게 실행되는가 - https://news.hada.io/topic?id=25421\n[^7]: 소프트웨어 엔지니어는 약간의 냉소주의를 가져야 한다 - https://news.hada.io/topic?id=25420\n[^8]: Mockito 유지관리자가 10년 만에 자리에서 물러남 - https://news.hada.io/topic?id=25419\n[^9]: AI가 메모리 칩을 대량 소비하면서 기기 가격 상승 가능성 - https://news.hada.io/topic?id=25418\n[^10]: 4,800개의 GitHub 스타가 신뢰를 무너뜨린 이유 - https://news.hada.io/topic?id=25417\n[^11]: Mac이 열로 인해 성능 저하(thermal throttling) 상태인지 알려주는 macOS 앱 개발기 - https://news.hada.io/topic?id=25416\n[^12]: 소프트웨어 제품이 실제로 어떻게 돌아가는지는 아무도 모른다 [번역글] - https://news.hada.io/topic?id=25415\n[^13]: 컴퓨터 그래픽스를 처음부터 무료로 배우기 - https://news.hada.io/topic?id=25414\n[^14]: [2025/12/22 ~ 28] 이번 주에 살펴볼 만한 AI/ML 논문 모음 - https://news.hada.io/topic?id=25413\n[^15]: Chrome Beta for iOS Update - http://chromereleases.googleblog.com/2025/12/chrome-beta-for-ios-update_0809853519.html\n[^16]: The latest AI news we announced in December - https://blog.google/technology/ai/google-ai-updates-december-2025/\n[^17]: Is Topic Modelling Obsolete? - https://languagetechnology.substack.com/p/is-topic-modelling-obsolete\n[^18]: Ask HN: How do we benchmark data extraction, analysis and subsequent enrichment - https://news.ycombinator.com/item?id=46426255\n[^19]: The Man Who Killed Google Search (2024) - https://www.wheresyoured.at/the-men-who-killed-google/\n[^20]: Linux 7.0 Expected to Bring IO_uring Iopoll Polling Improvements - https://www.phoronix.com/news/Linux-7.0-IO-uring-Polling\n[^21]: The Precipice - https://samirvarma.substack.com/p/the-precipice\n[^22]: Different Arguments - https://daviddfriedman.substack.com/p/different-arguments\n[^23]: Top personal blogs on Hacker News in 2025, by points - https://twitter.com/jonobelotti_IO/status/2005737476069933272\n[^24]: Show HN: NeuronDB – Embeddings and vector search for PostgreSQL - https://github.com/neurondb/neurondb\n[^25]: Release fish 4.3.0 · fish-shell/fish-shell - https://github.com/fish-shell/fish-shell/releases/tag/4.3.0\n[^26]: USPS Announces Changes to the Postmark Date System - https://nstp.org/article/usps-announces-changes-postmark-date-system\n[^27]: Show HN: An automated tutor to help you understand chess - https://chess-helios.vercel.app/\n[^28]: Show HN: Code-Chunk for RAG - https://github.com/supermemoryai/code-chunk\n[^29]: Fedora Continued at the Forefront of Upstream Linux Innovations in 2025 - https://www.phoronix.com/news/Fedora-Linux-2025-Highlights\n[^30]: How the weird language of tech dulled sport - https://www.theguardian.com/sport/2025/nov/28/from-value-adds-to-networking-superconductor-how-the-weird-language-of-tech-dulled-sport\n[^31]: Show HN: Portdetective – A tiny, fast rust CLI for port inspection - https://github.com/cmakafui/portdetective\n[^32]: Deprecating Volatile in C++ - http://wg21.link/P1152R3\n[^33]: How LLMs Work: Top Executive-Level Questions - https://sloanreview.mit.edu/article/how-llms-work/\n[^34]: Cold War bomb shelter in Nova Scotia being converted to high-end doomsday condos - https://www.ctvnews.ca/canada/article/cold-war-bomb-shelter-in-nova-scotia-being-converted-into-high-end-doomsday-condos/\n[^35]: Show HN: AI Domain Data Standard – Complete Tooling Suite - https://ai-domain-data.org/\n[^36]: Show HN: Home Stories – Track renovations with budgets, photos, timers - https://apps.apple.com/dk/app/home-stories-renovation-app/id6754754960HomeStories:RenovationApp\n[^37]: The latest AI news we announced in December - https://blog.google/technology/ai/google-ai-updates-december-2025/\n[^38]: 13 of the best Nano Banana trends from 2025 - https://blog.google/products/gemini/nano-banana-google-trends-2025/\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **The latest AI news we announced in December**\n   - 출처: Google DeepMind\n   - 링크: https://blog.google/technology/ai/google-ai-updates-december-2025/\n\n2. **The latest AI news we announced in December**\n   - 출처: Gemini\n   - 링크: https://blog.google/technology/ai/google-ai-updates-december-2025/\n\n3. **13 of the best Nano Banana trends from 2025**\n   - 출처: Gemini\n   - 링크: https://blog.google/products/gemini/nano-banana-google-trends-2025/\n\n4. **Bugs that survive the heat of continuous fuzzing**\n   - 출처: GitHub Blog\n   - 링크: https://github.blog/security/vulnerability-research/bugs-that-survive-the-heat-of-continuous-fuzzing/\n\n5. **MongoBleed 간단 설명**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25422\n\n6. **Unity의 Mono 문제: 왜 당신의 C# 코드는 기대보다 느리게 실행되는가**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25421\n\n7. **소프트웨어 엔지니어는 약간의 냉소주의를 가져야 한다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25420\n\n8. **Mockito 유지관리자가 10년 만에 자리에서 물러남**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25419\n\n9. **AI가 메모리 칩을 대량 소비하면서 기기 가격 상승 가능성**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25418\n\n10. **4,800개의 GitHub 스타가 신뢰를 무너뜨린 이유**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25417\n\n11. **Mac이 열로 인해 성능 저하(thermal throttling) 상태인지 알려주는 macOS 앱 개발기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25416\n\n12. **소프트웨어 제품이 실제로 어떻게 돌아가는지는 아무도 모른다 [번역글]**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25415\n\n13. **컴퓨터 그래픽스를 처음부터 무료로 배우기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25414\n\n14. **[2025/12/22 ~ 28] 이번 주에 살펴볼 만한 AI/ML 논문 모음**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25413\n\n15. **Chrome Beta for iOS Update**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2025/12/chrome-beta-for-ios-update_0809853519.html\n\n16. **The latest AI news we announced in December**\n   - 출처: AI\n   - 링크: https://blog.google/technology/ai/google-ai-updates-december-2025/\n\n17. **Is Topic Modelling Obsolete?**\n   - 출처: Hacker News\n   - 링크: https://languagetechnology.substack.com/p/is-topic-modelling-obsolete\n\n18. **Ask HN: How do we benchmark data extraction, analysis and subsequent enrichment**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=46426255\n\n19. **The Man Who Killed Google Search (2024)**\n   - 출처: Hacker News\n   - 링크: https://www.wheresyoured.at/the-men-who-killed-google/\n\n20. **Linux 7.0 Expected to Bring IO_uring Iopoll Polling Improvements**\n   - 출처: Hacker News\n   - 링크: https://www.phoronix.com/news/Linux-7.0-IO-uring-Polling\n\n21. **The Precipice**\n   - 출처: Hacker News\n   - 링크: https://samirvarma.substack.com/p/the-precipice\n\n22. **Different Arguments**\n   - 출처: Hacker News\n   - 링크: https://daviddfriedman.substack.com/p/different-arguments\n\n23. **Top personal blogs on Hacker News in 2025, by points**\n   - 출처: Hacker News\n   - 링크: https://twitter.com/jonobelotti_IO/status/2005737476069933272\n\n24. **Show HN: NeuronDB – Embeddings and vector search for PostgreSQL**\n   - 출처: Hacker News\n   - 링크: https://github.com/neurondb/neurondb\n\n25. **Release fish 4.3.0 · fish-shell/fish-shell**\n   - 출처: Hacker News\n   - 링크: https://github.com/fish-shell/fish-shell/releases/tag/4.3.0\n\n26. **USPS Announces Changes to the Postmark Date System**\n   - 출처: Hacker News\n   - 링크: https://nstp.org/article/usps-announces-changes-postmark-date-system\n\n27. **Show HN: An automated tutor to help you understand chess**\n   - 출처: Hacker News\n   - 링크: https://chess-helios.vercel.app/\n\n28. **Show HN: Code-Chunk for RAG**\n   - 출처: Hacker News\n   - 링크: https://github.com/supermemoryai/code-chunk\n\n29. **Fedora Continued at the Forefront of Upstream Linux Innovations in 2025**\n   - 출처: Hacker News\n   - 링크: https://www.phoronix.com/news/Fedora-Linux-2025-Highlights\n\n30. **How the weird language of tech dulled sport**\n   - 출처: Hacker News\n   - 링크: https://www.theguardian.com/sport/2025/nov/28/from-value-adds-to-networking-superconductor-how-the-weird-language-of-tech-dulled-sport\n\n31. **Show HN: Portdetective – A tiny, fast rust CLI for port inspection**\n   - 출처: Hacker News\n   - 링크: https://github.com/cmakafui/portdetective\n\n32. **Deprecating Volatile in C++**\n   - 출처: Hacker News\n   - 링크: http://wg21.link/P1152R3\n\n33. **How LLMs Work: Top Executive-Level Questions**\n   - 출처: Hacker News\n   - 링크: https://sloanreview.mit.edu/article/how-llms-work/\n\n34. **Cold War bomb shelter in Nova Scotia being converted to high-end doomsday condos**\n   - 출처: Hacker News\n   - 링크: https://www.ctvnews.ca/canada/article/cold-war-bomb-shelter-in-nova-scotia-being-converted-into-high-end-doomsday-condos/\n\n35. **Show HN: AI Domain Data Standard – Complete Tooling Suite**\n   - 출처: Hacker News\n   - 링크: https://ai-domain-data.org/\n\n36. **Show HN: Home Stories – Track renovations with budgets, photos, timers**\n   - 출처: Hacker News\n   - 링크: https://apps.apple.com/dk/app/home-stories-renovation-app/id6754754960HomeStories:RenovationApp\n\n37. **The latest AI news we announced in December**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/technology/ai/google-ai-updates-december-2025/\n\n38. **13 of the best Nano Banana trends from 2025**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/products/gemini/nano-banana-google-trends-2025/\n\n\n",
+  "articles": [
+    {
+      "title": "The latest AI news we announced in December",
+      "link": "https://blog.google/technology/ai/google-ai-updates-december-2025/",
+      "source": "Google DeepMind",
+      "category": "tech",
+      "publishedAt": "2025-12-29T18:15:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Dec_AI_Recap_still.max-600x600.format-webp.webp\"\u003eHere are Google’s latest AI updates from December 2025"
+    },
+    {
+      "title": "The latest AI news we announced in December",
+      "link": "https://blog.google/technology/ai/google-ai-updates-december-2025/",
+      "source": "Gemini",
+      "category": "tech",
+      "publishedAt": "2025-12-29T18:15:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Dec_AI_Recap_still.max-600x600.format-webp.webp\"\u003eHere are Google’s latest AI updates from December 2025"
+    },
+    {
+      "title": "13 of the best Nano Banana trends from 2025",
+      "link": "https://blog.google/products/gemini/nano-banana-google-trends-2025/",
+      "source": "Gemini",
+      "category": "tech",
+      "publishedAt": "2025-12-29T16:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/NB_Hero_.max-600x600.format-webp.webp\"\u003eFrom pet figurines to isometric images, here are some of our favorite Nano Banana trends of the year."
+    },
+    {
+      "title": "Bugs that survive the heat of continuous fuzzing",
+      "link": "https://github.blog/security/vulnerability-research/bugs-that-survive-the-heat-of-continuous-fuzzing/",
+      "source": "GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-29T22:01:14Z",
+      "description": "\u003cp\u003eLearn why some long-enrolled OSS-Fuzz projects still contain vulnerabilities and how you can find them.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/security/vulnerability-research/bugs-that-survive-the-heat-of-continuous-fuzzing/\"\u003eBugs that survive the heat of continuous fuzzing\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "MongoBleed 간단 설명",
+      "link": "https://news.hada.io/topic?id=25422",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-30T06:34:36+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eMongoBleed(CVE-2025-14847)\u003c/strong\u003e 은 2017년 이후 모든 \u003cstrong\u003eMongoDB 버전\u003c/strong\u003e에 존재한 심각한 메모리 누출 취약점으로, 공격자가 데이터베이스의 \u003cstrong\u003e힙 메모리 임의 데이터\u003c/strong\u003e를 읽을 수 있음\u003c/li\u003e\n\u003cli\u003e취약점은 \u003cstrong\u003ezlib 압축 경로의 버그\u003c/strong\u003e로 인해 발생하며, 인...\u003c/p\u003e"
+    },
+    {
+      "title": "Unity의 Mono 문제: 왜 당신의 C# 코드는 기대보다 느리게 실행되는가",
+      "link": "https://news.hada.io/topic?id=25421",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-30T04:33:14+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eUnity가 사용하는 \u003cstrong\u003eMono 런타임\u003c/strong\u003e은 최신 .NET 대비 현저히 느린 실행 속도를 보이며, 동일한 C# 코드가 \u003cstrong\u003e최대 15배까지\u003c/strong\u003e 차이 나는 사례가 있음\u003c/li\u003e\n\u003cli\u003e실제 게임 코드에서 \u003cstrong\u003eMono 기반 Unity 실행은 100초\u003c/strong\u003e, 동일 코드의 .NET 실행은 \u003cstrong\u003e38초\u003c/strong\u003e로 ...\u003c/p\u003e"
+    },
+    {
+      "title": "소프트웨어 엔지니어는 약간의 냉소주의를 가져야 한다",
+      "link": "https://news.hada.io/topic?id=25420",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-30T03:42:08+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e대형 기술 기업에서 일하는 \u003cstrong\u003e소프트웨어 엔지니어의 현실적 태도\u003c/strong\u003e를 다루며, 조직 내에서 효과적으로 일하기 위해서는 약간의 \u003cstrong\u003e냉소주의\u003c/strong\u003e가 필요함을 강조\u003c/li\u003e\n\u003cli\u003e이상주의적 관점은 기업과 동료를 지나치게 부정적으로 보는 \u003cstrong\u003e더 깊은 냉소주의\u003c/strong\u003e로 이어질 수 있...\u003c/p\u003e"
+    },
+    {
+      "title": "Mockito 유지관리자가 10년 만에 자리에서 물러남",
+      "link": "https://news.hada.io/topic?id=25419",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-30T03:39:08+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eJava에서 가장 널리 사용되는 \u003cstrong\u003e모킹 프레임워크 Mockito\u003c/strong\u003e가 현재 5.x 버전으로 유지되고 있음\u003c/li\u003e\n\u003cli\u003e최신 버전은 \u003cstrong\u003e기본 mockmaker를 mockito-inline으로 전환\u003c/strong\u003e하고, \u003cstrong\u003eJava 11 이상\u003c/strong\u003e을 요구함\u003c/li\u003e\n\u003cli\u003e프로젝트는 \u003cstrong\u003eTidelift 구독 서비스\u003c/strong\u003e를 통...\u003c/p\u003e"
+    },
+    {
+      "title": "AI가 메모리 칩을 대량 소비하면서 기기 가격 상승 가능성",
+      "link": "https://news.hada.io/topic?id=25418",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-30T03:36:08+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eAI 데이터센터의 폭발적 성장\u003c/strong\u003e으로 인해 \u003cstrong\u003eRAM(랜덤 액세스 메모리)\u003c/strong\u003e 수요가 공급을 초과하며 전 세계적인 메모리 부족 현상 발생\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eDRAM 가격이 분기 대비 50% 상승\u003c/strong\u003e, 다음 분기에도 \u003cstrong\u003e40% 추가 상승\u003c/strong\u003e이 예상되며, 2026년까지 가격 하락...\u003c/p\u003e"
+    },
+    {
+      "title": "4,800개의 GitHub 스타가 신뢰를 무너뜨린 이유",
+      "link": "https://news.hada.io/topic?id=25417",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-30T03:17:16+09:00",
+      "description": "\u003ch3\u003e📌 핵심 요지 (TL;DR)\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e중국계 GitHub 리포지토리에서 코드·릴리즈·활동 변화 없이 Star가 4,000 → 4,800으로 급증한 사례 확인\u003c/li\u003e\n\u003cli\u003e이를 계기로 “GitHub Star = 인기/품질”이라는 전제 자체에 문제 제기\u003c/li\u003e\n\u003cli\u003e결론: GitHub Star 수는 프로젝트 품질이나 신뢰도를 판단하는 지표로 부적합...\u003c/p\u003e"
+    },
+    {
+      "title": "Mac이 열로 인해 성능 저하(thermal throttling) 상태인지 알려주는 macOS 앱 개발기",
+      "link": "https://news.hada.io/topic?id=25416",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-29T23:33:24+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eMacThrottle\u003c/strong\u003e은 Mac이 과열로 인해 성능을 제한할 때 이를 메뉴 막대에서 시각적으로 알려주는 \u003cstrong\u003eSwiftUI 기반 앱\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003emacOS의 \u003cstrong\u003e\u003ccode\u003eProcessInfo.thermalState\u003c/code\u003e\u003c/strong\u003e API와 \u003cstrong\u003e\u003ccode\u003epowermetrics\u003c/code\u003e\u003c/strong\u003e 명령어를 비교하며, 시스템의...\u003c/p\u003e"
+    },
+    {
+      "title": "소프트웨어 제품이 실제로 어떻게 돌아가는지는 아무도 모른다 [번역글]",
+      "link": "https://news.hada.io/topic?id=25415",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-29T21:59:53+09:00",
+      "description": "\u003col\u003e\n\u003cli\u003e\n\u003cstrong\u003e대형 테크 시스템의 불투명성\u003c/strong\u003e\n\u003c/li\u003e\n\u003c/ol\u003e\n\u003cul\u003e\n\u003cli\u003e대형 테크 회사들은 자사 시스템조차 \u0026quot;전쟁터의 안개(fog of war)\u0026quot; 속에서 운영된다.\u003c/li\u003e\n\u003cli\u003e\u0026quot;Y 타입 유저가 기능 X를 쓸 수 있나?\u0026quot;, \u0026quot;액션 Z 시 정확히 무슨 일이?\u0026quot;, \u0026quot;현재 요금제는 몇 가지?\u0026quot...\u003c/p\u003e"
+    },
+    {
+      "title": "컴퓨터 그래픽스를 처음부터 무료로 배우기",
+      "link": "https://news.hada.io/topic?id=25414",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-29T19:32:39+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eScratchapixel\u003c/strong\u003e은 컴퓨터 그래픽스의 기초부터 고급 주제까지 무료로 학습할 수 있는 온라인 교육 플랫폼\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e3D 렌더링\u003c/strong\u003e, \u003cstrong\u003e수학적 기초\u003c/strong\u003e, \u003cstrong\u003e디지털 이미징\u003c/strong\u003e, \u003cstrong\u003e절차적 생성\u003c/strong\u003e, \u003cstrong\u003e툴링\u003c/strong\u003e 등 다양한 주제를 체계...\u003c/p\u003e"
+    },
+    {
+      "title": "[2025/12/22 ~ 28] 이번 주에 살펴볼 만한 AI/ML 논문 모음",
+      "link": "https://news.hada.io/topic?id=25413",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-29T14:45:16+09:00",
+      "description": "\u003ch2\u003e[2025/12/22 ~ 28] 이번 주에 살펴볼 만한 AI/ML 논문 모음\u003c/h2\u003e\n\u003ch4\u003ePyTorchKR🔥🇰🇷 🤔💭\u003c/h4\u003e\n\u003cp\u003e1️⃣ \u003cstrong\u003e심층적인 환각 탐지와 완화 전략 (Deep Hallucination Detection \u0026amp; Mitigation)\u003c/strong\u003e: 이번 주 선정된 논문들을 살펴보면, 단순히 모델의 크기를 키우는 것을 넘어, LLM의 고질적인 문제인...\u003c/p\u003e"
+    },
+    {
+      "title": "Chrome Beta for iOS Update",
+      "link": "http://chromereleases.googleblog.com/2025/12/chrome-beta-for-ios-update_0809853519.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2025-12-29T07:58:52.112-08:00",
+      "description": "\u003cp\u003eHi everyone! We've just released Chrome Beta 144 (144.0.7559.41) for iOS; it'll become available on App Store in the next few days.\u003c/p\u003e\u003cp\u003eYou can see a partial list of the changes in the \u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/144.0.7559.31..144.0.7559.41?pretty=fuller\u0026amp;n=10000\"\u003eGit log\u003c/a\u003e. If you find a new issue, please let us know by \u003ca href=\"https://code.google.com/p/chromium/issues/entry?template=iOS%20Issue\"\u003efiling a bug\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eChrome Release Team\u003cbr /\u003e\u003ca href=\"https://www.google.com/chrome\"\u003e\u003c/a\u003e\u003ca href=\"https://www.google.com/chrome\"\u003eGoogle Chrome\u003c/a\u003e\u003c/p\u003e"
+    },
+    {
+      "title": "The latest AI news we announced in December",
+      "link": "https://blog.google/technology/ai/google-ai-updates-december-2025/",
+      "source": "AI",
+      "category": "tech",
+      "publishedAt": "2025-12-29T18:15:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Dec_AI_Recap_still.max-600x600.format-webp.webp\"\u003eHere are Google’s latest AI updates from December 2025"
+    },
+    {
+      "title": "Is Topic Modelling Obsolete?",
+      "link": "https://languagetechnology.substack.com/p/is-topic-modelling-obsolete",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-29T21:58:47Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://languagetechnology.substack.com/p/is-topic-modelling-obsolete\"\u003ehttps://languagetechnology.substack.com/p/is-topic-modelling-obsolete\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46426271\"\u003ehttps://news.ycombinator.com/item?id=46426271\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Ask HN: How do we benchmark data extraction, analysis and subsequent enrichment",
+      "link": "https://news.ycombinator.com/item?id=46426255",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-29T21:57:29Z",
+      "description": "\n\u003cp\u003eI have been working on this system that essentially has to extract data from a bunch or structured and unstructured sources, analyse relevance and correctness of the data (im sorry this part is vague) and using the data obtained to fill forms and create write-ups. i do not want to mindlessly use any llm. i want to improve with proof for each of those (broadly, 3) steps. how do we do that? if there are any benchmarks for all these, what systems are leading these benchmarks?\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46426255\"\u003ehttps://news.ycombinator.com/item?id=46426255\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Man Who Killed Google Search (2024)",
+      "link": "https://www.wheresyoured.at/the-men-who-killed-google/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-29T21:56:44Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.wheresyoured.at/the-men-who-killed-google/\"\u003ehttps://www.wheresyoured.at/the-men-who-killed-google/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46426244\"\u003ehttps://news.ycombinator.com/item?id=46426244\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Linux 7.0 Expected to Bring IO_uring Iopoll Polling Improvements",
+      "link": "https://www.phoronix.com/news/Linux-7.0-IO-uring-Polling",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-29T21:55:30Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.phoronix.com/news/Linux-7.0-IO-uring-Polling\"\u003ehttps://www.phoronix.com/news/Linux-7.0-IO-uring-Polling\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46426237\"\u003ehttps://news.ycombinator.com/item?id=46426237\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Precipice",
+      "link": "https://samirvarma.substack.com/p/the-precipice",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-29T21:54:59Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://samirvarma.substack.com/p/the-precipice\"\u003ehttps://samirvarma.substack.com/p/the-precipice\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46426230\"\u003ehttps://news.ycombinator.com/item?id=46426230\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Different Arguments",
+      "link": "https://daviddfriedman.substack.com/p/different-arguments",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-29T21:54:27Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://daviddfriedman.substack.com/p/different-arguments\"\u003ehttps://daviddfriedman.substack.com/p/different-arguments\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46426220\"\u003ehttps://news.ycombinator.com/item?id=46426220\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Top personal blogs on Hacker News in 2025, by points",
+      "link": "https://twitter.com/jonobelotti_IO/status/2005737476069933272",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-29T21:52:24Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://twitter.com/jonobelotti_IO/status/2005737476069933272\"\u003ehttps://twitter.com/jonobelotti_IO/status/2005737476069933272\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46426199\"\u003ehttps://news.ycombinator.com/item?id=46426199\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 2\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: NeuronDB – Embeddings and vector search for PostgreSQL",
+      "link": "https://github.com/neurondb/neurondb",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-29T21:49:54Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/neurondb/neurondb\"\u003ehttps://github.com/neurondb/neurondb\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46426171\"\u003ehttps://news.ycombinator.com/item?id=46426171\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Release fish 4.3.0 · fish-shell/fish-shell",
+      "link": "https://github.com/fish-shell/fish-shell/releases/tag/4.3.0",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-29T21:47:27Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/fish-shell/fish-shell/releases/tag/4.3.0\"\u003ehttps://github.com/fish-shell/fish-shell/releases/tag/4.3.0\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46426145\"\u003ehttps://news.ycombinator.com/item?id=46426145\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "USPS Announces Changes to the Postmark Date System",
+      "link": "https://nstp.org/article/usps-announces-changes-postmark-date-system",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-29T21:46:43Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://nstp.org/article/usps-announces-changes-postmark-date-system\"\u003ehttps://nstp.org/article/usps-announces-changes-postmark-date-system\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46426131\"\u003ehttps://news.ycombinator.com/item?id=46426131\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: An automated tutor to help you understand chess",
+      "link": "https://chess-helios.vercel.app/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-29T21:46:43Z",
+      "description": "\n\u003cp\u003eBuilt a quick demo for something that could help players understand the nuances of a position without needing to translate a bunch of complicated lines. Could be helpful for new players or maybe even moderately experienced players. Let me know what you guys think and if this is something worth working on. (Please excuse the mobile version, couldn't get around to making it look good)\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46426130\"\u003ehttps://news.ycombinator.com/item?id=46426130\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Code-Chunk for RAG",
+      "link": "https://github.com/supermemoryai/code-chunk",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-29T21:45:56Z",
+      "description": "\n\u003cp\u003eAST-aware chunking of code for contextual retrieval\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46426122\"\u003ehttps://news.ycombinator.com/item?id=46426122\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Fedora Continued at the Forefront of Upstream Linux Innovations in 2025",
+      "link": "https://www.phoronix.com/news/Fedora-Linux-2025-Highlights",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-29T21:45:46Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.phoronix.com/news/Fedora-Linux-2025-Highlights\"\u003ehttps://www.phoronix.com/news/Fedora-Linux-2025-Highlights\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46426119\"\u003ehttps://news.ycombinator.com/item?id=46426119\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "How the weird language of tech dulled sport",
+      "link": "https://www.theguardian.com/sport/2025/nov/28/from-value-adds-to-networking-superconductor-how-the-weird-language-of-tech-dulled-sport",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-29T21:44:32Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.theguardian.com/sport/2025/nov/28/from-value-adds-to-networking-superconductor-how-the-weird-language-of-tech-dulled-sport\"\u003ehttps://www.theguardian.com/sport/2025/nov/28/from-value-adds-to-networking-superconductor-how-the-weird-language-of-tech-dulled-sport\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46426103\"\u003ehttps://news.ycombinator.com/item?id=46426103\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Portdetective – A tiny, fast rust CLI for port inspection",
+      "link": "https://github.com/cmakafui/portdetective",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-29T21:42:57Z",
+      "description": "\n\u003cp\u003eHi HN,\u003cp\u003eI kept getting annoyed having to track down which process was sitting on a port so I could kill it, so I built a tiny CLI tool that shows you exactly what’s using a given port and having the option to kill it. Sharing it here in case it helps someone else too.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46426086\"\u003ehttps://news.ycombinator.com/item?id=46426086\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Deprecating Volatile in C++",
+      "link": "http://wg21.link/P1152R3",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-29T21:42:02Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"http://wg21.link/P1152R3\"\u003ehttp://wg21.link/P1152R3\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46426073\"\u003ehttps://news.ycombinator.com/item?id=46426073\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "How LLMs Work: Top Executive-Level Questions",
+      "link": "https://sloanreview.mit.edu/article/how-llms-work/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-29T21:41:14Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://sloanreview.mit.edu/article/how-llms-work/\"\u003ehttps://sloanreview.mit.edu/article/how-llms-work/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46426062\"\u003ehttps://news.ycombinator.com/item?id=46426062\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Cold War bomb shelter in Nova Scotia being converted to high-end doomsday condos",
+      "link": "https://www.ctvnews.ca/canada/article/cold-war-bomb-shelter-in-nova-scotia-being-converted-into-high-end-doomsday-condos/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-29T21:40:12Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.ctvnews.ca/canada/article/cold-war-bomb-shelter-in-nova-scotia-being-converted-into-high-end-doomsday-condos/\"\u003ehttps://www.ctvnews.ca/canada/article/cold-war-bomb-shelter-in-nova-scotia-being-converted-into-high-end-doomsday-condos/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46426055\"\u003ehttps://news.ycombinator.com/item?id=46426055\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: AI Domain Data Standard – Complete Tooling Suite",
+      "link": "https://ai-domain-data.org/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-29T21:39:26Z",
+      "description": "\n\u003cp\u003eAI, agents, and other robots frequently get domain details wrong. The AI Domain Data Standard fixes this by letting domains publish a canonical JSON profile at /.well-known/domain-profile.json that AI tools read directly.\u003cp\u003eWe've just completed the full tooling suite:\u003cp\u003ePLATFORM INTEGRATIONS:\n- WordPress: \u003ca href=\"https://wordpress.org/plugins/ai-domain-data/\" rel=\"nofollow\"\u003ehttps://wordpress.org/plugins/ai-domain-data/\u003c/a\u003e\n- Jekyll: \u003ca href=\"https://rubygems.org/gems/jekyll-ai-domain-data\" rel=\"nofollow\"\u003ehttps://rubygems.org/gems/jekyll-ai-domain-data\u003c/a\u003e\n- Next.js: npm install @ai-domain-data/nextjs\n- Cloudflare Worker: \u003ca href=\"https://github.com/ai-domain-data/cloudflare-worker-ai-domain-data\" rel=\"nofollow\"\u003ehttps://github.com/ai-domain-data/cloudflare-worker-ai-domai...\u003c/a\u003e\u003cp\u003eDEVELOPER TOOLS:\n- CLI: npm install -g @ai-domain-data/cli\n- GitHub Action: \u003ca href=\"https://github.com/ai-domain-data/ai-domain-data-validate-action\" rel=\"nofollow\"\u003ehttps://github.com/ai-domain-data/ai-domain-data-validate-ac...\u003c/a\u003e\n- Resolver SDK: TypeScript/Node.js for programmatic access\u003cp\u003eWEB TOOLS:\n- Generator: \u003ca href=\"https://ai-domain-data.org/generator\" rel=\"nofollow\"\u003ehttps://ai-domain-data.org/generator\u003c/a\u003e\n- Checker: \u003ca href=\"https://ai-domain-data.org/checker\" rel=\"nofollow\"\u003ehttps://ai-domain-data.org/checker\u003c/a\u003e\u003cp\u003eThe standard is intentionally minimal (name, description, website, contact, plus optional fields) and works with any domain type. All tooling is open source (MIT) and self-hosted by design.\u003cp\u003eSpec: \u003ca href=\"https://ai-domain-data.org/spec/v0.1\" rel=\"nofollow\"\u003ehttps://ai-domain-data.org/spec/v0.1\u003c/a\u003e\nGitHub: \u003ca href=\"https://github.com/ai-domain-data/spec\" rel=\"nofollow\"\u003ehttps://github.com/ai-domain-data/spec\u003c/a\u003e\u003cp\u003eWhat platforms should we support next?\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46426045\"\u003ehttps://news.ycombinator.com/item?id=46426045\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Home Stories – Track renovations with budgets, photos, timers",
+      "link": "https://apps.apple.com/dk/app/home-stories-renovation-app/id6754754960HomeStories:RenovationApp",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-29T21:35:47Z",
+      "description": "\n\u003cp\u003eSolo indie dev from Denmark. Built this to organize my own renovation chaos – budgets, photos, tasks, time tracking in one place. Just shipped v1.4. Feedback welcome!\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46426010\"\u003ehttps://news.ycombinator.com/item?id=46426010\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The latest AI news we announced in December",
+      "link": "https://blog.google/technology/ai/google-ai-updates-december-2025/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-29T18:15:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Dec_AI_Recap_still.max-600x600.format-webp.webp\"\u003eHere are Google’s latest AI updates from December 2025"
+    },
+    {
+      "title": "13 of the best Nano Banana trends from 2025",
+      "link": "https://blog.google/products/gemini/nano-banana-google-trends-2025/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-29T16:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/NB_Hero_.max-600x600.format-webp.webp\"\u003eFrom pet figurines to isometric images, here are some of our favorite Nano Banana trends of the year."
+    }
+  ],
+  "generatedAt": "2025-12-30T07:09:14.726975404+09:00"
+}
