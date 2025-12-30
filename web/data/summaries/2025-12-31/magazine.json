@@ -1,0 +1,258 @@
+{
+  "date": "2025-12-31",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2025년 12월 30일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** 2025년을 관통한 '에이전틱 AI'와 MCP의 부상, 광고 생태계를 뒤흔든 브라우저 확장 프로그램의 사기 의혹, 그리고 AI 시대에도 여전히 유효한 '직접 코딩'의 가치를 조명합니다.\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### 2025년 개발 생태계의 회고: Agentic AI와 MCP의 시대\nGitHub가 2025년 상위 블로그 포스트를 통해 올해의 기술 트렌드를 결산했습니다. 핵심 키워드는 단연 '**에이전틱 AI(Agentic AI)**'와 '**MCP(Model Context Protocol)**'입니다. 단순한 챗봇을 넘어 스스로 도구를 사용하고 작업을 수행하는 AI 에이전트가 주류로 부상했으며, 이를 표준화하는 MCP가 개발자들의 필수 스펙으로 자리 잡았습니다. 또한, AI가 코드를 작성하는 시대에 오히려 명세(Spec)를 명확히 정의하는 '스펙 주도 개발(Spec-driven development)'의 중요성이 다시금 강조되고 있습니다.\n\n\u003e **Key Point:** 2025년은 AI가 '대화'에서 '행동'으로 진화한 원년이며, 이를 제어하기 위한 명세 정의 능력과 MCP 활용 능력이 개발자의 핵심 역량이 되었습니다. [^1]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n\n### 1. '허니(Honey)'의 디젤게이트? 광고 사기 스캔들\n브라우저 확장 프로그램 생태계에서 '디젤게이트'급 사기 의혹이 제기되었습니다. 유명 쇼핑 도우미 서비스 등이 테스트 환경을 감지하면 정상 작동하는 척하다가, 실제 사용자 환경에서는 어트리뷰션(기여도)을 조작해 광고비를 가로채는 방식(Affiliate Fraud)을 사용했다는 분석입니다.\n- **What:** 테스트 봇과 실제 사용자를 구분하여 동작을 다르게 하는 코드가 발견됨.\n- **Why:** 광고 수익을 극대화하기 위해 쇼핑몰의 트래픽을 자신들의 성과로 위조하려는 목적.\n- **Impact:** 디지털 광고 생태계의 신뢰도 하락과 대규모 소송전, 그리고 브라우저 샌드박스 정책 강화로 이어질 전망입니다. [^17][^27]\n\n### 2. 2026년 전망: AI 지출이 인건비를 넘어설까?\n2026년에는 기업들이 사람을 고용하는 비용보다 AI 인프라와 운영에 더 많은 돈을 쓸 것이라는 도발적인 전망이 나왔습니다. 동시에 OpenAI의 막대한 현금 소진(Cash burn)이 2026년 거품 붕괴의 뇌관이 될 수 있다는 우려도 제기됩니다.\n- **What:** AI 자동화에 대한 기업의 투자가 인건비 상승분을 압도하는 현상 예측.\n- **Why:** AI 모델의 성능 향상으로 인한 대체 가능 영역 확대 및 경쟁적 인프라 투자.\n- **Impact:** 노동 시장의 구조적 변화와 함께, 수익성을 증명하지 못한 AI 기업들의 연쇄적인 위기(Bubble Burst) 가능성이 공존합니다. [^5][^25]\n\n### 3. \"코드를 만지지 않으면 설계도 없다\"\nAI가 코딩을 대신해 주는 시대에도, 소프트웨어 엔지니어링의 본질은 변하지 않는다는 주장이 힘을 얻고 있습니다.\n- **What:** 소프트웨어를 직접 다루고 깊이 파고들지 않으면 유효한 아키텍처 설계가 불가능하다는 비판.\n- **Why:** 추상화된 AI 도구에만 의존하면 시스템의 복잡성과 엣지 케이스를 이해하지 못해 '피상적인 설계'에 그치기 때문.\n- **Impact:** 'Vibe-Coding'(느낌대로 코딩) 트렌드에 대한 반작용으로, 로우 레벨 이해도를 갖춘 시니어 개발자의 가치가 재평가될 것입니다. [^4][^6][^21]\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **Linux DAW** | 리눅스 뮤지션을 위한 DAW 및 플러그인 검색/설정 도구 [^2] |\n| **Tool** | **aipack** | BGE-M3 기반 시맨틱 청킹을 지원하는 파킷 생성기 및 MCP 서버 [^11] |\n| **Tool** | **Gemini Watermark Remover** | 이미지의 나노 바나나(Nano Banana) 워터마크를 제거하는 오픈소스 크롬 확장 [^15] |\n| **Tool** | **Virtual Try-On** | 내 사진에 제품을 가상으로 입혀볼 수 있는 크롬 확장 프로그램 [^28] |\n| **Tool** | **GDB JIT Interface** | JIT 컴파일러 디버깅을 위한 GDB 인터페이스 심층 가이드 [^29] |\n| **Paper** | **Neuroscience \u0026 AI** | 뇌과학의 통찰을 활용해 적응형(Adaptive) AI를 구축하는 방법에 대한 네이처 논문 [^26] |\n| **Science** | **Starry Night Physics** | 고흐의 '별이 빛나는 밤' 소용돌이와 실제 난류 물리학 간의 논쟁 [^13] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n\n#### 💻 개발 \u0026 인프라\n* **EU 기반 스택 이전 사례**: 미국 클라우드를 떠나 EU 스택으로 이전하며 연간 500유로를 절감한 개인 개발자의 경험담입니다. [^7]\n* **Claude Code 책장 프로젝트**: AI 코딩 도구인 Claude Code를 활용해 실제 책장 관리 시스템을 구현한 사례입니다. [^8]\n* **펌웨어 와치독 리셋 분석**: 펌웨어 캐시 동기화 문제로 발생한 시스템 리셋 원인을 깊이 있게 분석했습니다. [^10]\n* **XFCE-Winxp-Tc**: 리눅스 XFCE 데스크톱 환경을 윈도우 XP 스타일로 완벽하게 변환해 주는 테마 팩입니다. [^20]\n* **C# 생태계 기부**: '스타듀 밸리' 개발자 에릭 바론이 모노게임(MonoGame) 프레임워크에 12만 5천 달러를 기부했습니다. [^24]\n\n#### 🤖 AI \u0026 트렌드\n* **AI 시대 팀 리더의 역할**: AI가 오케스트레이션까지 수행하는 시대, 인간 리더는 '방향성 제시'와 '품질 보증'에 집중해야 합니다. [^9]\n* **윤리적 AI의 신기루**: '윤리적 AI'라는 개념이 실제로는 마케팅 용어에 불과할 수 있다는 비판적 에세이입니다. [^16]\n* **일론 머스크의 빗나간 예측**: 2025년에 실현될 것이라 호언장담했으나 결국 이루어지지 않은 테슬라 관련 예측 5가지입니다. [^18]\n\n#### 🛡️ 보안 \u0026 사회\n* **ALPHV 랜섬웨어 유죄 인정**: 악명 높은 랜섬웨어 그룹 ALPHV/BlackCat 관련 사이버 보안 직원들이 유죄를 인정했습니다. [^22]\n* **번아웃 방지 앱**: 5개의 프로젝트를 실패하고 번아웃을 겪은 개발자가 만든 '강제 휴식' 앱이 화제입니다. [^12]\n* **루 거스너 별세**: IBM을 위기에서 구해낸 전설적인 CEO 루 거스너가 향년 83세로 별세했습니다. [^23]\n\n#### 🎨 문화 \u0026 기타\n* **기묘한 이야기 설정 팁**: 제작진이 넷플릭스 시청 시 TV의 '모션 스무딩(프레임 보간)' 기능을 끄고 볼 것을 당부했습니다. [^3]\n* **허블의 발견**: 허블 망원경이 역대 가장 큰 행성 탄생 성운에서 혼돈스러운 형성 과정을 포착했습니다. [^14]\n* **Gapminder 퀴즈**: 대부분의 사람들이 잘못 알고 있는 중요한 글로벌 통계(빈곤, 인구 등)를 교정해 주는 퀴즈입니다. [^19]\n* **Commodore 64 Ultimate**: 레트로 컴퓨팅의 전설, 코모도어 64의 현대적 복각판에 대한 와이어드 리뷰입니다. [^30]\n* **혈액과의 사투**: 희귀 혈액 질환과 싸우는 개인의 투병기를 다룬 뉴요커의 에세이입니다. [^31]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘 뉴스는 '**본질로의 회귀**'와 '**거품에 대한 경고**'가 공존합니다. GitHub는 AI 시대일수록 명세(Spec)가 중요하다고 말하고, 시니어 개발자들은 \"직접 만져야 설계할 수 있다\"고 조언합니다. 반면, 광고 업계의 데이터 조작 의혹과 AI 거품론은 기술의 화려한 겉모습 뒤에 숨겨진 리스크를 상기시킵니다. 도구는 강력해졌지만, 그것을 다루는 인간의 '검증 능력'과 '윤리'가 그 어느 때보다 중요한 시점입니다.\n\n---\n\n### Footnotes\n[^1]: Agentic AI, MCP, and spec-driven development: Top blog posts of 2025 - https://github.blog/developer-skills/agentic-ai-mcp-and-spec-driven-development-top-blog-posts-of-2025/\n[^2]: 리눅스 DAW: 리눅스 뮤지션이 필요한 도구를 빠르고 쉽게 찾을 수 있도록 지원 - https://news.hada.io/topic?id=25450\n[^3]: 기묘한 이야기 제작자, “쓰레기 설정” 끄고 시청하라 - https://news.hada.io/topic?id=25449\n[^4]: 소프트웨어 개발의 미래는 소프트웨어 개발자들이다 - https://news.hada.io/topic?id=25448\n[^5]: 2026년, 기업들은 사람보다 AI에 더 많은 돈을 쓸 것이다 - https://news.hada.io/topic?id=25447\n[^6]: 소프트웨어를 직접 다루지 않으면 설계할 수 없다 - https://news.hada.io/topic?id=25445\n[^7]: 거의 전부 EU 기반 스택으로 이전해 연간 500유로 절감한 사례 - https://news.hada.io/topic?id=25444\n[^8]: Claude Code로 구현한 책장 프로젝트 - https://news.hada.io/topic?id=25443\n[^9]: Ask GN: AI가 오케스트레이션까지 하는 시대, 팀 리더의 역할은 어디까지일까요? - https://news.hada.io/topic?id=25442\n[^10]: 펌웨어 캐시 동기화 문제로 발생한 와치독 리셋 분석 - https://news.hada.io/topic?id=25441\n[^11]: Show GN: aipack: BGE-M3 기반의 중립적 시맨틱 청킹된 파킷 생성기 + MCP 서버 - https://news.hada.io/topic?id=25440\n[^12]: Show HN: I quit 5 projects from burnout, so I built an app that forces breaks - https://www.kensho.zone/\n[^13]: Feuding physicists and the bitter battle over the swirls in 'The Starry Night' - https://www.washingtonpost.com/science/2025/12/27/starry-night-turbulence-debate/\n[^14]: Hubble Reveals Chaos in the Largest Planet Nursery Ever Seen - https://www.universetoday.com/articles/hubble-reveals-chaos-in-the-largest-planet-nursery-ever-seen\n[^15]: Open Source Chrome Extension to Remove Nano Banana Watermarks - https://github.com/dinoBOLT/Gemini-Watermark-Remover\n[^16]: Chasing the Mirage of \"Ethical\" AI - https://thereader.mitpress.mit.edu/chasing-the-mirage-of-ethical-ai/\n[^17]: Honey's Dieselgate: Detecting and Tricking Testers - https://vptdigital.com/blog/honey-detecting-testers/\n[^18]: Elon Musk's top Tesla predictions for 2025 that didn't happen - https://electrek.co/2025/12/30/elon-musk-top-5-tesla-predictions-2025-didnt-happen/\n[^19]: Important stuff most people get wrong - https://upgrader.gapminder.org/\n[^20]: XFCE-Winxp-Tc - https://github.com/rozniak/xfce-winxp-tc\n[^21]: A Hand for Daenerys: Why Tyrion Is Missing from Your Vibe-Coding Council - https://scienceisneato.substack.com/p/a-hand-for-daenerys-why-tyrion-is\n[^22]: Cybersecurity Employees Plead Guilty to Ransomware Attacks Using ALPHV BlackCat - https://www.justice.gov/opa/pr/two-americans-plead-guilty-targeting-multiple-us-victims-using-alphv-blackcat-ransomware\n[^23]: Former IBM CEO Lou Gerstner passes, aged 83 - https://www.theregister.com/2025/12/29/lou_gerstner/\n[^24]: Eric Barone makes $125,000 donation to the C# framework - https://xcancel.com/MonoGameTeam/status/2006010313112490446\n[^25]: OpenAI's cash burn will be one of the big bubble questions of 2026 - https://www.economist.com/leaders/2025/12/30/openais-cash-burn-will-be-one-of-the-big-bubble-questions-of-2026\n[^26]: Leveraging insights from neuroscience to build adaptive artificial intelligence - https://www.nature.com/articles/s41593-025-02169-w.epdf?sharing_token=sKV6GrdLVdSQW1UR9ICREtRgN0jAjWel9jnR3ZoTv0Nn55e0kftaHm_-DbeHPoR-1ZrGZztGyq0dJx4d3Djrw77aBu2023qF50mMuZPBCb47E3ZaYsZ3lSRxgLchlG2rYYR3RP5swnJNtwXIQnIyzi16xKe83jOpR9u55euXyA8%3D\n[^27]: The Honey Files Expose Major Fraud - https://docs.google.com/document/d/1Rj2AEI_Gr5WJbkor_sqVu4t9VhQtYcTazVwxJx9QYzU/edit\n[^28]: Show HN: Virtual Try-On Chrome extension to see how products look on you - https://www.tryaing.com\n[^29]: The GDB JIT Interface - https://bernsteinbear.com/blog/gdb-jit/\n[^30]: Review: Commodore 64 Ultimate - https://www.wired.com/review/commodore-64-ultimate/\n[^31]: A Battle with My Blood - https://www.newyorker.com/culture/the-weekend-essay/a-battle-with-my-blood\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **Agentic AI, MCP, and spec-driven development: Top blog posts of 2025**\n   - 출처: GitHub Blog\n   - 링크: https://github.blog/developer-skills/agentic-ai-mcp-and-spec-driven-development-top-blog-posts-of-2025/\n\n2. **리눅스 DAW: 리눅스 뮤지션이 필요한 도구를 빠르고 쉽게 찾을 수 있도록 지원**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25450\n\n3. **기묘한 이야기 제작자, “쓰레기 설정” 끄고 시청하라**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25449\n\n4. **소프트웨어 개발의 미래는 소프트웨어 개발자들이다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25448\n\n5. **2026년, 기업들은 사람보다 AI에 더 많은 돈을 쓸 것이다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25447\n\n6. **소프트웨어를 직접 다루지 않으면 설계할 수 없다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25445\n\n7. **거의 전부 EU 기반 스택으로 이전해 연간 500유로 절감한 사례**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25444\n\n8. **Claude Code로 구현한 책장 프로젝트**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25443\n\n9. **Ask GN: AI가 오케스트레이션까지 하는 시대, 팀 리더의 역할은 어디까지일까요?**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25442\n\n10. **펌웨어 캐시 동기화 문제로 발생한 와치독 리셋 분석**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25441\n\n11. **Show GN: aipack: BGE-M3 기반의 중립적 시맨틱 청킹된 파킷 생성기 + MCP 서버**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25440\n\n12. **Show HN: I quit 5 projects from burnout, so I built an app that forces breaks**\n   - 출처: Hacker News\n   - 링크: https://www.kensho.zone/\n\n13. **Feuding physicists and the bitter battle over the swirls in 'The Starry Night'**\n   - 출처: Hacker News\n   - 링크: https://www.washingtonpost.com/science/2025/12/27/starry-night-turbulence-debate/\n\n14. **Hubble Reveals Chaos in the Largest Planet Nursery Ever Seen**\n   - 출처: Hacker News\n   - 링크: https://www.universetoday.com/articles/hubble-reveals-chaos-in-the-largest-planet-nursery-ever-seen\n\n15. **Open Source Chrome Extension to Remove Nano Banana Watermarks**\n   - 출처: Hacker News\n   - 링크: https://github.com/dinoBOLT/Gemini-Watermark-Remover\n\n16. **Chasing the Mirage of \"Ethical\" AI**\n   - 출처: Hacker News\n   - 링크: https://thereader.mitpress.mit.edu/chasing-the-mirage-of-ethical-ai/\n\n17. **Honey's Dieselgate: Detecting and Tricking Testers**\n   - 출처: Hacker News\n   - 링크: https://vptdigital.com/blog/honey-detecting-testers/\n\n18. **Elon Musk's top Tesla predictions for 2025 that didn't happen**\n   - 출처: Hacker News\n   - 링크: https://electrek.co/2025/12/30/elon-musk-top-5-tesla-predictions-2025-didnt-happen/\n\n19. **Important stuff most people get wrong**\n   - 출처: Hacker News\n   - 링크: https://upgrader.gapminder.org/\n\n20. **XFCE-Winxp-Tc**\n   - 출처: Hacker News\n   - 링크: https://github.com/rozniak/xfce-winxp-tc\n\n21. **A Hand for Daenerys: Why Tyrion Is Missing from Your Vibe-Coding Council**\n   - 출처: Hacker News\n   - 링크: https://scienceisneato.substack.com/p/a-hand-for-daenerys-why-tyrion-is\n\n22. **Cybersecurity Employees Plead Guilty to Ransomware Attacks Using ALPHV BlackCat**\n   - 출처: Hacker News\n   - 링크: https://www.justice.gov/opa/pr/two-americans-plead-guilty-targeting-multiple-us-victims-using-alphv-blackcat-ransomware\n\n23. **Former IBM CEO Lou Gerstner passes, aged 83**\n   - 출처: Hacker News\n   - 링크: https://www.theregister.com/2025/12/29/lou_gerstner/\n\n24. **Eric Barone makes $125,000 donation to the C# framework**\n   - 출처: Hacker News\n   - 링크: https://xcancel.com/MonoGameTeam/status/2006010313112490446\n\n25. **OpenAI's cash burn will be one of the big bubble questions of 2026**\n   - 출처: Hacker News\n   - 링크: https://www.economist.com/leaders/2025/12/30/openais-cash-burn-will-be-one-of-the-big-bubble-questions-of-2026\n\n26. **Leveraging insights from neuroscience to build adaptive artificial intelligence**\n   - 출처: Hacker News\n   - 링크: https://www.nature.com/articles/s41593-025-02169-w.epdf?sharing_token=sKV6GrdLVdSQW1UR9ICREtRgN0jAjWel9jnR3ZoTv0Nn55e0kftaHm_-DbeHPoR-1ZrGZztGyq0dJx4d3Djrw77aBu2023qF50mMuZPBCb47E3ZaYsZ3lSRxgLchlG2rYYR3RP5swnJNtwXIQnIyzi16xKe83jOpR9u55euXyA8%3D\n\n27. **The Honey Files Expose Major Fraud**\n   - 출처: Hacker News\n   - 링크: https://docs.google.com/document/d/1Rj2AEI_Gr5WJbkor_sqVu4t9VhQtYcTazVwxJx9QYzU/edit\n\n28. **Show HN: Virtual Try-On Chrome extension to see how products look on you**\n   - 출처: Hacker News\n   - 링크: https://www.tryaing.com\n\n29. **The GDB JIT Interface**\n   - 출처: Hacker News\n   - 링크: https://bernsteinbear.com/blog/gdb-jit/\n\n30. **Review: Commodore 64 Ultimate**\n   - 출처: Hacker News\n   - 링크: https://www.wired.com/review/commodore-64-ultimate/\n\n31. **A Battle with My Blood**\n   - 출처: Hacker News\n   - 링크: https://www.newyorker.com/culture/the-weekend-essay/a-battle-with-my-blood\n\n\n",
+  "articles": [
+    {
+      "title": "Agentic AI, MCP, and spec-driven development: Top blog posts of 2025",
+      "link": "https://github.blog/developer-skills/agentic-ai-mcp-and-spec-driven-development-top-blog-posts-of-2025/",
+      "source": "GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2025-12-30T17:20:10Z",
+      "description": "\u003cp\u003eExplore the GitHub Blog’s top posts covering the biggest software development topics of the year.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/developer-skills/agentic-ai-mcp-and-spec-driven-development-top-blog-posts-of-2025/\"\u003eAgentic AI, MCP, and spec-driven development: Top blog posts of 2025\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "리눅스 DAW: 리눅스 뮤지션이 필요한 도구를 빠르고 쉽게 찾을 수 있도록 지원",
+      "link": "https://news.hada.io/topic?id=25450",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-31T02:33:10+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e리눅스 기반 음악 제작자\u003c/strong\u003e가 사용할 수 있는 다양한 \u003cstrong\u003eDAW(디지털 오디오 워크스테이션) 관련 플러그인과 소프트웨어\u003c/strong\u003e를 한곳에 모은 검색 플랫폼\u003c/li\u003e\n\u003cli\u003e사이트는 \u003cstrong\u003e무료(FOSS)\u003c/strong\u003e 및 \u003cstrong\u003e유료 상용 플러그인\u003c/strong\u003e을 모두 포함하며, \u003cstrong\u003e이펙트·신�...\u003c/p\u003e"
+    },
+    {
+      "title": "기묘한 이야기 제작자, “쓰레기 설정” 끄고 시청하라",
+      "link": "https://news.hada.io/topic?id=25449",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-31T00:33:03+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eRoss Duffer\u003c/strong\u003e는 시즌 5 첫 방송을 앞두고 시청자들에게 TV의 \u003cstrong\u003e영상 설정을 직접 조정하라\u003c/strong\u003e고 권고\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e동적 대비, 슈퍼 해상도, 엣지 강화, 색상 필터\u003c/strong\u003e 등을 “** 쓰레기 설정**”이라 부르며 모두 끌 것을 지시\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e노이즈 감소, 트루모...\u003c/p\u003e"
+    },
+    {
+      "title": "소프트웨어 개발의 미래는 소프트웨어 개발자들이다",
+      "link": "https://news.hada.io/topic?id=25448",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-30T23:33:10+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e수십 년간 반복된 \u003cstrong\u003e“프로그래머의 종말” 예언\u003c/strong\u003e은 매번 틀렸으며, 기술 발전은 오히려 더 많은 \u003cstrong\u003e개발자와 프로그램의 증가\u003c/strong\u003e로 이어져 왔음\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eWYSIWYG, 4GL, No-Code, LLM\u003c/strong\u003e 등 다양한 자동화 기술이 등장했지만, 실제로는 개발자의 필요성을 줄이지 못했...\u003c/p\u003e"
+    },
+    {
+      "title": "2026년, 기업들은 사람보다 AI에 더 많은 돈을 쓸 것이다",
+      "link": "https://news.hada.io/topic?id=25447",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-30T23:09:22+09:00",
+      "description": "\u003ch3\u003e1. 기업이 처음으로 사람보다 AI 에이전트에 더 많은 비용을 지불한다.\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e소비자 부문에서는 이미 이런 일이 벌어지고 있다.\u003c/li\u003e\n\u003cli\u003eWaymo(웨이모) 탑승료는 Uber(우버)보다 평균 31% 비싸지만, 수요는 계속 증가 중이다\u003c/li\u003e\n\u003cli\u003e승객들은 자율주행 차량의 안전성과 신뢰성을 선호하기 때문이다.\u003c/li...\u003c/p\u003e"
+    },
+    {
+      "title": "소프트웨어를 직접 다루지 않으면 설계할 수 없다",
+      "link": "https://news.hada.io/topic?id=25445",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-30T22:32:53+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e대규모 시스템의 \u003cstrong\u003e실질적 설계 참여는 해당 코드를 직접 다루는 엔지니어만 가능\u003c/strong\u003e하며, 추상적 조언은 대부분 무의미함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e일반적 설계 조언(generic design)\u003c/strong\u003e 은 코드베이스를 모르는 상태에서 도메인만 이해한 채 제시되는 경우가 많음\u003c/li\u003e\n\u003cli\u003e실제 업무에서는 \u003cstr...\u003c/p\u003e"
+    },
+    {
+      "title": "거의 전부 EU 기반 스택으로 이전해 연간 500유로 절감한 사례",
+      "link": "https://news.hada.io/topic?id=25444",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-30T21:33:13+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e개인 디지털 생태계를 미국 빅테크 중심에서 EU 호스팅 서비스로 완전히 이전\u003c/strong\u003e, 개인정보 보호와 데이터 주권을 확보한 구성\u003c/li\u003e\n\u003cli\u003e핵심 기반은 \u003cstrong\u003eProton 생태계\u003c/strong\u003e로, 메일·캘린더·드라이브·패스워드 관리·VPN·노트·AI 도구까지 통합 제공\u003c/li\u003e\n\u003cli\u003eAI 활용은 \u003cstrong\u003eLumo ...\u003c/p\u003e"
+    },
+    {
+      "title": "Claude Code로 구현한 책장 프로젝트",
+      "link": "https://news.hada.io/topic?id=25443",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-30T20:33:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e약 \u003cstrong\u003e500권의 책을 자동으로 분류·시각화\u003c/strong\u003e하기 위해 AI 도구 \u003cstrong\u003eClaude Code\u003c/strong\u003e를 활용한 개인 프로젝트 사례\u003c/li\u003e\n\u003cli\u003e기존 \u003cstrong\u003eISBN 스캐너나 Goodreads\u003c/strong\u003e가 루마니아어 판본을 인식하지 못해 실패했던 문제를, \u003cstrong\u003eOpenAI Vision API\u003c/strong\u003e와 Claude의 스크립트...\u003c/p\u003e"
+    },
+    {
+      "title": "Ask GN: AI가 오케스트레이션까지 하는 시대, 팀 리더의 역할은 어디까지일까요?",
+      "link": "https://news.hada.io/topic?id=25442",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-30T16:35:43+09:00",
+      "description": "\u003cp\u003e새해가 되면서 팀 운영에 대해 고민이 많아졌습니다.\u003cbr /\u003e\n특히 최근 AI 발전 속도가 워낙 빠르다 보니, 팀이 일하는 방식 자체를 재설계해야 하는 시점이 아닌가라는 생각이 자주 듭니다.\u003c/p\u003e\n\u003cp\u003e기존의 매니징 역할 중 오케스트레이션 부분이 있는데,\u003cbr /\u003e\n이제는 그 역할 중 상당 부분을 AI가 아주 효율적으로 수"
+    },
+    {
+      "title": "펌웨어 캐시 동기화 문제로 발생한 와치독 리셋 분석",
+      "link": "https://news.hada.io/topic?id=25441",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-30T15:20:58+09:00",
+      "description": "\u003cp\u003eESP32 기반 펌웨어를 개발하면서,\u003cbr /\u003e\n플래시 암호화(Flash Encryption)와 PSRAM을 함께 사용하는 환경에서\u003cbr /\u003e\nInterrupt Watchdog Reset이 발생하는 문제를 겪었는데, 이 문제를 해결하는 과정을 정리한 글입니다.\u003c/p\u003e\n\u003cblockquote\u003e\n\u003cp\u003eESP32는 IoT·임베디드 환경에서 널리 사용되는 MCU로,\u003cbr /\u003e\nRTOS 기반에서"
+    },
+    {
+      "title": "Show GN: aipack: BGE-M3 기반의 중립적 시맨틱 청킹된 파킷 생성기 + MCP 서버",
+      "link": "https://news.hada.io/topic?id=25440",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-30T13:46:38+09:00",
+      "description": "\u003cp\u003eBGE-M3, MarkItDown, 그리고 마크다운 구조 파서를 이용해 시맨틱 청킹을 수행하고, 그 결과를 Parquet 파일에 저장하는 aipack 프레임워크의 첫 버전을 릴리스합니다. 모델과 데이터베이스에 종속되지 않는 중립적 상태를 유지하여 언제든 재사용할 수 있는 파일 포맷을 기반으로 RAG를 구현하고, MCP 서버까지 구동...\u003c/p\u003e"
+    },
+    {
+      "title": "Show HN: I quit 5 projects from burnout, so I built an app that forces breaks",
+      "link": "https://www.kensho.zone/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-30T22:02:18Z",
+      "description": "\n\u003cp\u003ePattern: Work 8 hours straight - burn out by Wednesday - abandon project by Friday.\u003cp\u003eBuilt something that physically stops me:\n- Focus timer locks at 100 min until you rest 10 min (meditation/breaks)\n- Task manager locks at 5 tasks until you write 1 reflection\n- No override buttons. No \"just one more.\"\u003cp\u003eTerminal UI. ASCII progress bars. Zero dopamine hits.\u003cp\u003eDay 47 using it. Haven't quit yet.\u003cp\u003eTry it yourself: kensho.zone (or app.kensho.zone)\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46438552\"\u003ehttps://news.ycombinator.com/item?id=46438552\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Feuding physicists and the bitter battle over the swirls in 'The Starry Night'",
+      "link": "https://www.washingtonpost.com/science/2025/12/27/starry-night-turbulence-debate/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-30T22:02:00Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.washingtonpost.com/science/2025/12/27/starry-night-turbulence-debate/\"\u003ehttps://www.washingtonpost.com/science/2025/12/27/starry-night-turbulence-debate/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46438548\"\u003ehttps://news.ycombinator.com/item?id=46438548\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Hubble Reveals Chaos in the Largest Planet Nursery Ever Seen",
+      "link": "https://www.universetoday.com/articles/hubble-reveals-chaos-in-the-largest-planet-nursery-ever-seen",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-30T22:01:46Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.universetoday.com/articles/hubble-reveals-chaos-in-the-largest-planet-nursery-ever-seen\"\u003ehttps://www.universetoday.com/articles/hubble-reveals-chaos-in-the-largest-planet-nursery-ever-seen\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46438544\"\u003ehttps://news.ycombinator.com/item?id=46438544\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Open Source Chrome Extension to Remove Nano Banana Watermarks",
+      "link": "https://github.com/dinoBOLT/Gemini-Watermark-Remover",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-30T22:01:20Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/dinoBOLT/Gemini-Watermark-Remover\"\u003ehttps://github.com/dinoBOLT/Gemini-Watermark-Remover\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46438538\"\u003ehttps://news.ycombinator.com/item?id=46438538\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Chasing the Mirage of \"Ethical\" AI",
+      "link": "https://thereader.mitpress.mit.edu/chasing-the-mirage-of-ethical-ai/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-30T22:01:06Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://thereader.mitpress.mit.edu/chasing-the-mirage-of-ethical-ai/\"\u003ehttps://thereader.mitpress.mit.edu/chasing-the-mirage-of-ethical-ai/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46438535\"\u003ehttps://news.ycombinator.com/item?id=46438535\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Honey's Dieselgate: Detecting and Tricking Testers",
+      "link": "https://vptdigital.com/blog/honey-detecting-testers/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-30T21:59:35Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://vptdigital.com/blog/honey-detecting-testers/\"\u003ehttps://vptdigital.com/blog/honey-detecting-testers/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46438522\"\u003ehttps://news.ycombinator.com/item?id=46438522\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Elon Musk's top Tesla predictions for 2025 that didn't happen",
+      "link": "https://electrek.co/2025/12/30/elon-musk-top-5-tesla-predictions-2025-didnt-happen/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-30T21:58:27Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://electrek.co/2025/12/30/elon-musk-top-5-tesla-predictions-2025-didnt-happen/\"\u003ehttps://electrek.co/2025/12/30/elon-musk-top-5-tesla-predictions-2025-didnt-happen/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46438516\"\u003ehttps://news.ycombinator.com/item?id=46438516\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Important stuff most people get wrong",
+      "link": "https://upgrader.gapminder.org/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-30T21:57:48Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://upgrader.gapminder.org/\"\u003ehttps://upgrader.gapminder.org/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46438507\"\u003ehttps://news.ycombinator.com/item?id=46438507\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "XFCE-Winxp-Tc",
+      "link": "https://github.com/rozniak/xfce-winxp-tc",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-30T21:57:01Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/rozniak/xfce-winxp-tc\"\u003ehttps://github.com/rozniak/xfce-winxp-tc\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46438503\"\u003ehttps://news.ycombinator.com/item?id=46438503\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "A Hand for Daenerys: Why Tyrion Is Missing from Your Vibe-Coding Council",
+      "link": "https://scienceisneato.substack.com/p/a-hand-for-daenerys-why-tyrion-is",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-30T21:56:59Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://scienceisneato.substack.com/p/a-hand-for-daenerys-why-tyrion-is\"\u003ehttps://scienceisneato.substack.com/p/a-hand-for-daenerys-why-tyrion-is\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46438501\"\u003ehttps://news.ycombinator.com/item?id=46438501\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Cybersecurity Employees Plead Guilty to Ransomware Attacks Using ALPHV BlackCat",
+      "link": "https://www.justice.gov/opa/pr/two-americans-plead-guilty-targeting-multiple-us-victims-using-alphv-blackcat-ransomware",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-30T21:55:28Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.justice.gov/opa/pr/two-americans-plead-guilty-targeting-multiple-us-victims-using-alphv-blackcat-ransomware\"\u003ehttps://www.justice.gov/opa/pr/two-americans-plead-guilty-targeting-multiple-us-victims-using-alphv-blackcat-ransomware\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46438478\"\u003ehttps://news.ycombinator.com/item?id=46438478\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Former IBM CEO Lou Gerstner passes, aged 83",
+      "link": "https://www.theregister.com/2025/12/29/lou_gerstner/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-30T21:51:26Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.theregister.com/2025/12/29/lou_gerstner/\"\u003ehttps://www.theregister.com/2025/12/29/lou_gerstner/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46438449\"\u003ehttps://news.ycombinator.com/item?id=46438449\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Eric Barone makes $125,000 donation to the C# framework",
+      "link": "https://xcancel.com/MonoGameTeam/status/2006010313112490446",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-30T21:45:11Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://xcancel.com/MonoGameTeam/status/2006010313112490446\"\u003ehttps://xcancel.com/MonoGameTeam/status/2006010313112490446\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46438401\"\u003ehttps://news.ycombinator.com/item?id=46438401\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "OpenAI's cash burn will be one of the big bubble questions of 2026",
+      "link": "https://www.economist.com/leaders/2025/12/30/openais-cash-burn-will-be-one-of-the-big-bubble-questions-of-2026",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-30T21:44:07Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.economist.com/leaders/2025/12/30/openais-cash-burn-will-be-one-of-the-big-bubble-questions-of-2026\"\u003ehttps://www.economist.com/leaders/2025/12/30/openais-cash-burn-will-be-one-of-the-big-bubble-questions-of-2026\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46438390\"\u003ehttps://news.ycombinator.com/item?id=46438390\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Leveraging insights from neuroscience to build adaptive artificial intelligence",
+      "link": "https://www.nature.com/articles/s41593-025-02169-w.epdf?sharing_token=sKV6GrdLVdSQW1UR9ICREtRgN0jAjWel9jnR3ZoTv0Nn55e0kftaHm_-DbeHPoR-1ZrGZztGyq0dJx4d3Djrw77aBu2023qF50mMuZPBCb47E3ZaYsZ3lSRxgLchlG2rYYR3RP5swnJNtwXIQnIyzi16xKe83jOpR9u55euXyA8%3D",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-30T21:44:01Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nature.com/articles/s41593-025-02169-w.epdf?sharing_token=sKV6GrdLVdSQW1UR9ICREtRgN0jAjWel9jnR3ZoTv0Nn55e0kftaHm_-DbeHPoR-1ZrGZztGyq0dJx4d3Djrw77aBu2023qF50mMuZPBCb47E3ZaYsZ3lSRxgLchlG2rYYR3RP5swnJNtwXIQnIyzi16xKe83jOpR9u55euXyA8%3D\"\u003ehttps://www.nature.com/articles/s41593-025-02169-w.epdf?sharing_token=sKV6GrdLVdSQW1UR9ICREtRgN0jAjWel9jnR3ZoTv0Nn55e0kftaHm_-DbeHPoR-1ZrGZztGyq0dJx4d3Djrw77aBu2023qF50mMuZPBCb47E3ZaYsZ3lSRxgLchlG2rYYR3RP5swnJNtwXIQnIyzi16xKe83jOpR9u55euXyA8%3D\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46438388\"\u003ehttps://news.ycombinator.com/item?id=46438388\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Honey Files Expose Major Fraud",
+      "link": "https://docs.google.com/document/d/1Rj2AEI_Gr5WJbkor_sqVu4t9VhQtYcTazVwxJx9QYzU/edit",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-30T21:42:56Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://docs.google.com/document/d/1Rj2AEI_Gr5WJbkor_sqVu4t9VhQtYcTazVwxJx9QYzU/edit\"\u003ehttps://docs.google.com/document/d/1Rj2AEI_Gr5WJbkor_sqVu4t9VhQtYcTazVwxJx9QYzU/edit\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46438372\"\u003ehttps://news.ycombinator.com/item?id=46438372\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Virtual Try-On Chrome extension to see how products look on you",
+      "link": "https://www.tryaing.com",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-30T21:42:07Z",
+      "description": "\n\u003cp\u003eJust launched TryAing — a virtual try-on tool that uses AI to show you how outfits/shoes/accessories would look on you before you buy them. Upload your photo, add the product, and get realistic try-on visuals instantly. Saves time and returns. Try it now: \u003ca href=\"https://www.tryaing.com\" rel=\"nofollow\"\u003ehttps://www.tryaing.com\u003c/a\u003e\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46438363\"\u003ehttps://news.ycombinator.com/item?id=46438363\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The GDB JIT Interface",
+      "link": "https://bernsteinbear.com/blog/gdb-jit/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-30T21:37:18Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://bernsteinbear.com/blog/gdb-jit/\"\u003ehttps://bernsteinbear.com/blog/gdb-jit/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46438314\"\u003ehttps://news.ycombinator.com/item?id=46438314\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Review: Commodore 64 Ultimate",
+      "link": "https://www.wired.com/review/commodore-64-ultimate/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-30T21:33:39Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.wired.com/review/commodore-64-ultimate/\"\u003ehttps://www.wired.com/review/commodore-64-ultimate/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46438285\"\u003ehttps://news.ycombinator.com/item?id=46438285\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "A Battle with My Blood",
+      "link": "https://www.newyorker.com/culture/the-weekend-essay/a-battle-with-my-blood",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-30T21:32:17Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.newyorker.com/culture/the-weekend-essay/a-battle-with-my-blood\"\u003ehttps://www.newyorker.com/culture/the-weekend-essay/a-battle-with-my-blood\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46438270\"\u003ehttps://news.ycombinator.com/item?id=46438270\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    }
+  ],
+  "generatedAt": "2025-12-31T07:08:56.845010185+09:00"
+}
