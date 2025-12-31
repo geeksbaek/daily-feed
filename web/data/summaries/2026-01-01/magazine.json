@@ -1,0 +1,250 @@
+{
+  "date": "2026-01-01",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2025년 12월 31일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** 테슬라가 최초의 완전 자율주행 대륙 횡단에 성공하며 2025년의 마지막을 장식했고, 워런 버핏의 은퇴와 OpenAI의 수익성 논란이 겹치며 2026년 기술 업계의 거대한 지각 변동을 예고하고 있습니다.\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### 🚗 테슬라, 최초의 '완전 자율주행' 미국 대륙 횡단 성공\n2025년의 마지막 날, 테슬라 소유주가 개입 없이 미국 대륙을 횡단하는 첫 번째 완전 자율주행(Full Self-Driving) 드라이브를 완료했습니다. 이는 기술적으로 '성배'로 여겨지던 마일스톤으로, 일론 머스크 역시 이 역사적인 로드트립에 대해 언급했습니다. 단순한 기술 시연을 넘어, 규제 당국과 대중에게 자율주행의 안전성을 증명하는 결정적인 계기가 될 것으로 보입니다. 반면, 샌프란시스코에서는 웨이모(Waymo)가 귀한 주차 공간을 차지하기 시작하며 도시 인프라와의 새로운 갈등을 빚고 있습니다.\n\n\u003e **Key Point:** 테슬라가 FSD의 기술적 완성을 증명하며 2026년 자율주행 상용화의 원년을 예고했습니다. [^18][^14]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n\n### 1. 2026년 전망: '증명'의 해 vs '거품'의 붕괴\n2026년을 앞두고 기술 업계의 전망이 엇갈리고 있습니다. 'Tech Trends 2026' 보고서는 내년을 기술이 실질적인 가치를 입증해야 하는 \"증명의 해\"로 정의했습니다. 반면, OpenAI의 막대한 현금 소모(Cash Burn)가 2026년 AI 거품 논쟁의 핵심이 될 것이라는 분석도 제기됩니다. 특히 \"AI가 요약해줘도 왜 지식은 남지 않을까?\"라는 비판적 시각과, AI에 의존한 'Vibe Coding'이 프로젝트를 망친 사례는 AI 효용성에 대한 근본적인 질문을 던지고 있습니다.\n- **What:** 2026년 기술 트렌드 전망과 AI 거품론 대두.\n- **Why:** 천문학적인 AI 투자 대비 수익성 증명 압박 심화.\n- **Impact:** 2026년은 AI 기업들의 옥석 가리기가 본격화되는 해가 될 것입니다. [^10][^9][^8][^20]\n\n### 2. 워런 버핏, 60년 만에 버크셔 해서웨이 CEO 사임\n투자의 귀재 워런 버핏이 60년 만에 버크셔 해서웨이 CEO직에서 물러납니다. 기술주 투자에 보수적이었던 그가 애플 등 빅테크 투자를 늘려왔던 만큼, 그의 퇴진이 향후 거대 자본의 기술 섹터 투자 흐름에 어떤 변화를 가져올지 주목됩니다.\n- **What:** 워런 버핏의 경영 일선 퇴진.\n- **Why:** 고령 및 경영 승계 계획의 일환.\n- **Impact:** 글로벌 자본 시장의 리더십 교체와 기술주 투자 심리에 미묘한 파장 예상. [^25]\n\n### 3. 신뢰의 위기: Honey의 '디젤게이트'와 보안 이슈\n유명 쇼핑 도우미 확장 프로그램 'Honey'가 테스터를 탐지하여 동작을 바꾸는, 마치 폭스바겐의 '디젤게이트'와 유사한 기만 행위를 했다는 의혹이 제기되었습니다. 이는 소프트웨어의 투명성에 치명적인 타격을 줍니다. 한편, 암호화 라이브러리 Libsodium의 취약점 발견과 C/C++에서의 `strcpy` 사용 금지 움직임은 2026년에도 '보안'과 '메모리 안전성'이 개발의 최우선 과제임을 시사합니다.\n- **What:** Honey 확장 프로그램의 기만적 동작 및 주요 라이브러리 보안 이슈.\n- **Why:** 사용자 데이터 수집 및 보안 취약점 은폐 시도.\n- **Impact:** 브라우저 확장 프로그램 및 오픈소스 라이브러리에 대한 검증 강화 예상. [^5][^3][^1]\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **Alma** | 다양한 AI 제공자를 통합하여 영구 메모리(Persistent Memory)와 도구 사용 기능을 갖춘 AI 데스크톱 앱. [^15] |\n| **Tool** | **DynamicHorizon** | macOS를 위한 다이내믹 아일랜드(Dynamic Island) 구현 앱. [^24] |\n| **Tool** | **loss32** | Win32와 Linux 환경을 동시에 구축하고 테스트할 수 있는 프로젝트. [^4] |\n| **Data** | **Open Schematics** | 하드웨어 설계도를 모은 대규모 데이터셋 (HuggingFace). [^30] |\n| **Dev** | **Postgres Custom GUCs** | Postgres 확장 기능 개발 시 커스텀 설정값(GUC)을 다루는 방법 가이드. [^12] |\n| **Algo** | **Dynamic Array Survey** | 동적 배열 구조(Dynamic Array Structures)에 대한 심층 조사 및 분석. [^13] |\n| **Lib** | **C++ Date Algos** | `std::chrono`와 호환되는 저수준 날짜 알고리즘 라이브러리. [^27] |\n| **Hacking** | **Smartwatch RE** | 스마트워치를 리버스 엔지니어링하여 LED 제어권을 얻어낸 하드웨어 해킹기. [^29] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n\n#### 💻 개발 \u0026 인프라\n* **TIL: I am an open-source contributor**: 오픈소스 기여자가 되는 과정에서 배운 점을 공유한 회고록. [^17]\n* **The Context Graph Manifesto**: AI와 데이터의 맥락을 연결하는 새로운 그래프 구조에 대한 선언문. [^22]\n* **A Box of Many Inputs**: 브라우저, 로컬 분류기, 그리고 웹 입력 처리에 대한 기술적 에세이. [^26]\n\n#### 🔬 과학 \u0026 우주\n* **우주 마지막 문명: Iron Star**: 우주의 열역학적 죽음 이후 등장할 가상의 천체 '철의 별'에 대한 과학적 고찰. [^6]\n* **VC is subsidizing U.S. Material Science Research**: 벤처 캐피털이 미국 재료 과학 연구의 자금줄 역할을 하고 있다는 분석. [^21]\n\n#### ⚖️ 사회 \u0026 정책\n* **California schools phone ban**: 캘리포니아 학교들이 2026년부터 학생들의 휴대폰 사용을 제한하거나 금지해야 합니다. [^23]\n* **TorrentFreak's Retrospective**: 지난 20년간의 불법 복제 및 저작권 보도 역사를 정리한 회고. [^19]\n\n#### 🎨 디자인 \u0026 문화\n* **타임스 뉴 아메리칸: 두 글꼴의 이야기**: 서체 디자인의 역사와 미학적 변화를 다룬 흥미로운 이야기. [^2]\n* **FediMeteo**: 4유로짜리 저가 VPS로 전 세계 수천 명에게 기상 정보를 제공하게 된 인디 개발기. [^7]\n* **DDD Demo Recordings 1971-1975**: 70년대 장거리 전화 네트워크(DDD) 해킹 및 탐구 기록 영상. [^11]\n* **Happy New Year**: 해커뉴스 커뮤니티의 새해 인사 스레드. [^16]\n\n#### 🎮 게임 \u0026 엔터테인먼트\n* **Qq-pwn**: 브라우저 기반의 방치형(Idler) 게임 소개. [^28]\n\n---\n\n## 📝 큐레이터의 한마디\n2025년의 마지막 날, 테크 업계는 '자율주행의 완성'이라는 희망과 'AI 거품'이라는 우려가 공존하고 있습니다. 워런 버핏의 퇴장은 한 시대의 종말을, 테슬라의 횡단은 새로운 시대의 시작을 알리는 듯합니다. 2026년은 기술이 단순한 '기대감'을 넘어 실질적인 '증명'을 해내야 하는 치열한 한 해가 될 것입니다. 새해 복 많이 받으세요! 🙇‍♂️\n\n[^1]: strcpy도 사용 금지 - https://news.hada.io/topic?id=25474\n[^2]: 타임스 뉴 아메리칸: 두 글꼴의 이야기 - https://news.hada.io/topic?id=25473\n[^3]: Libsodium의 취약점 - https://news.hada.io/topic?id=25472\n[^4]: Win32/Linux를 함께 구축하자: loss32 프로젝트 - https://news.hada.io/topic?id=25471\n[^5]: Honey의 디젤게이트: 테스터 탐지 및 속이기 - https://news.hada.io/topic?id=25470\n[^6]: 우주 마지막 문명: Iron Star - https://news.hada.io/topic?id=25469\n[^7]: FediMeteo: 4유로짜리 FreeBSD VPS가 전 세계 수천 명을 위한 기상 서비스가 되기까지 - https://news.hada.io/topic?id=25468\n[^8]: AI가 요약해줘도, 왜 지식은 남지 않을까? - https://news.hada.io/topic?id=25467\n[^9]: 오픈AI의 현금 소모는 2026년 거품 논쟁의 핵심 쟁점이 될 것 - https://news.hada.io/topic?id=25466\n[^10]: Tech Trends 2026 : 증명의 해 [49p 슬라이드] - https://news.hada.io/topic?id=25465\n[^11]: The Sounds of Long Distance pgm 13: DDD Demo Recordings 1971-1975 [video] - https://www.youtube.com/watch?v=QSsd8kreDOU\n[^12]: Working with custom GUCs in Postgres extension - https://clickhouse.com/blog/taming-postgres-guc-extra-data\n[^13]: A Survey of Dynamic Array Structures - https://azmr.uk/dyn/\n[^14]: Waymos are now coming for your coveted San Francisco parking spots - https://www.sfchronicle.com/sf/article/waymo-parking-21268658.php\n[^15]: Alma – AI desktop app with persistent memory and tool use across AI providers - https://alma.now/\n[^16]: Happy New Year - https://news.ycombinator.com/item?id=46448810\n[^17]: TIL: I am an open-source contributor - https://beasthacker.com/til/i-am-an-open-source-contributor.html\n[^18]: Tesla owner completes first autonomous drive across America - https://nypost.com/2025/12/31/tech/tesla-owner-completes-first-fully-autonomous-drive-across-america-and-elon-musk-weighs-in-on-the-historic-road-trip/\n[^19]: 2025: Two Decades of Piracy Reporting: TorrentFreak's Retrospective - https://torrentfreak.com/2025-two-decades-of-piracy-reporting-torrentfreaks-retrospective/\n[^20]: Vibe coding lead to my project's downfall - https://old.reddit.com/r/gamedev/comments/1q043ym/how_vibe_coding_lead_to_my_projects_downfall/\n[^21]: VC is subsidizing U.S. Material Science Research - https://ml4sci.substack.com/p/venture-capital-is-subsidizing-us\n[^22]: The Context Graph Manifesto - https://twitter.com/TrustSpooky/status/2006481858289361339\n[^23]: California schools will be required to restrict, prohibit student cell phone use - https://ktla.com/news/california/california-schools-will-be-required-to-restrict-prohibit-student-cell-phone-use-in-2026/\n[^24]: Show HN: DynamicHorizon – Dynamic Island for macOS - https://www.dynamichorizon.app\n[^25]: Warren Buffett steps down as Berkshire Hathaway CEO after six decades - https://www.latimes.com/business/story/2025-12-31/warren-buffett-steps-down-as-berkshire-hathaway-ceo-after-six-decades\n[^26]: A Box of Many Inputs: Browsers, Local Classifiers, and Roger Rabbit - https://allenpike.com/2025/a-box-of-many-inputs\n[^27]: C++ chrono-compatible low-level date algorithms - http://howardhinnant.github.io/date_algorithms.html\n[^28]: Show HN: Qq-pwn – A browser-based idler game - https://qq-pwn.com\n[^29]: A modern tale of blinkenlights (reverse engineering a smartwatch) - https://blog.quarkslab.com/./modern-tale-blinkenlights.html\n[^30]: Show HN: Open Schematics – Largest Hardware Schematic Dataset - https://huggingface.co/datasets/bshada/open-schematics\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **strcpy도 사용 금지**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25474\n\n2. **타임스 뉴 아메리칸: 두 글꼴의 이야기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25473\n\n3. **Libsodium의 취약점**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25472\n\n4. **Win32/Linux를 함께 구축하자: loss32 프로젝트**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25471\n\n5. **Honey의 디젤게이트: 테스터 탐지 및 속이기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25470\n\n6. **우주 마지막 문명: Iron Star**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25469\n\n7. **FediMeteo: 4유로짜리 FreeBSD VPS가 전 세계 수천 명을 위한 기상 서비스가 되기까지**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25468\n\n8. **AI가 요약해줘도, 왜 지식은 남지 않을까?**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25467\n\n9. **오픈AI의 현금 소모는 2026년 거품 논쟁의 핵심 쟁점이 될 것**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25466\n\n10. **Tech Trends 2026 : 증명의 해 [49p 슬라이드]**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25465\n\n11. **The Sounds of Long Distance pgm 13: DDD Demo Recordings 1971-1975 [video]**\n   - 출처: Hacker News\n   - 링크: https://www.youtube.com/watch?v=QSsd8kreDOU\n\n12. **Working with custom GUCs in Postgres extension**\n   - 출처: Hacker News\n   - 링크: https://clickhouse.com/blog/taming-postgres-guc-extra-data\n\n13. **A Survey of Dynamic Array Structures**\n   - 출처: Hacker News\n   - 링크: https://azmr.uk/dyn/\n\n14. **Waymos are now coming for your coveted San Francisco parking spots**\n   - 출처: Hacker News\n   - 링크: https://www.sfchronicle.com/sf/article/waymo-parking-21268658.php\n\n15. **Alma – AI desktop app with persistent memory and tool use across AI providers**\n   - 출처: Hacker News\n   - 링크: https://alma.now/\n\n16. **Happy New Year**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=46448810\n\n17. **TIL: I am an open-source contributor**\n   - 출처: Hacker News\n   - 링크: https://beasthacker.com/til/i-am-an-open-source-contributor.html\n\n18. **Tesla owner completes first autonomous drive across America**\n   - 출처: Hacker News\n   - 링크: https://nypost.com/2025/12/31/tech/tesla-owner-completes-first-fully-autonomous-drive-across-america-and-elon-musk-weighs-in-on-the-historic-road-trip/\n\n19. **2025: Two Decades of Piracy Reporting: TorrentFreak's Retrospective**\n   - 출처: Hacker News\n   - 링크: https://torrentfreak.com/2025-two-decades-of-piracy-reporting-torrentfreaks-retrospective/\n\n20. **Vibe coding lead to my project's downfall**\n   - 출처: Hacker News\n   - 링크: https://old.reddit.com/r/gamedev/comments/1q043ym/how_vibe_coding_lead_to_my_projects_downfall/\n\n21. **VC is subsidizing U.S. Material Science Research**\n   - 출처: Hacker News\n   - 링크: https://ml4sci.substack.com/p/venture-capital-is-subsidizing-us\n\n22. **The Context Graph Manifesto**\n   - 출처: Hacker News\n   - 링크: https://twitter.com/TrustSpooky/status/2006481858289361339\n\n23. **California schools will be required to restrict, prohibit student cell phone use**\n   - 출처: Hacker News\n   - 링크: https://ktla.com/news/california/california-schools-will-be-required-to-restrict-prohibit-student-cell-phone-use-in-2026/\n\n24. **Show HN: DynamicHorizon – Dynamic Island for macOS**\n   - 출처: Hacker News\n   - 링크: https://www.dynamichorizon.app\n\n25. **Warren Buffett steps down as Berkshire Hathaway CEO after six decades**\n   - 출처: Hacker News\n   - 링크: https://www.latimes.com/business/story/2025-12-31/warren-buffett-steps-down-as-berkshire-hathaway-ceo-after-six-decades\n\n26. **A Box of Many Inputs: Browsers, Local Classifiers, and Roger Rabbit**\n   - 출처: Hacker News\n   - 링크: https://allenpike.com/2025/a-box-of-many-inputs\n\n27. **C++ chrono-compatible low-level date algorithms**\n   - 출처: Hacker News\n   - 링크: http://howardhinnant.github.io/date_algorithms.html\n\n28. **Show HN: Qq-pwn – A browser-based idler game**\n   - 출처: Hacker News\n   - 링크: https://qq-pwn.com\n\n29. **A modern tale of blinkenlights (reverse engineering a smartwatch)**\n   - 출처: Hacker News\n   - 링크: https://blog.quarkslab.com/./modern-tale-blinkenlights.html\n\n30. **Show HN: Open Schematics – Largest Hardware Schematic Dataset**\n   - 출처: Hacker News\n   - 링크: https://huggingface.co/datasets/bshada/open-schematics\n\n\n",
+  "articles": [
+    {
+      "title": "strcpy도 사용 금지",
+      "link": "https://news.hada.io/topic?id=25474",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-01T06:32:45+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003ecURL 프로젝트가 기존에 \u003ccode\u003estrncpy()\u003c/code\u003e를 제거한 데 이어, 이제 \u003cstrong\u003e\u003ccode\u003estrcpy()\u003c/code\u003e도 코드베이스에서 완전히 금지\u003c/strong\u003e함\u003c/li\u003e\n\u003cli\u003e\n\u003ccode\u003estrcpy()\u003c/code\u003e는 API가 단순하지만 \u003cstrong\u003e버퍼 크기 검증이 분리될 위험\u003c/strong\u003e이 있어, 장기 유지보수 시 안전하지 않음\u003c/li\u003e\n\u003cli\u003e이를...\u003c/p\u003e"
+    },
+    {
+      "title": "타임스 뉴 아메리칸: 두 글꼴의 이야기",
+      "link": "https://news.hada.io/topic?id=25473",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-01T05:33:09+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e미국 국무부가 \u003cstrong\u003eTimes New Roman\u003c/strong\u003e으로 공식 문서 서체를 되돌리는 결정을 내리며, 서체 선택이 \u003cstrong\u003e정치적 상징\u003c/strong\u003e으로 작용하고 있음\u003c/li\u003e\n\u003cli\u003eRubio 장관의 메모는 세 가지 근거를 제시했으며, 그중 하나는 \u003cstrong\u003e세리프 글꼴이 전문성과 권위를 표현한다는 주장\u003c/strong\u003e임\u003c/li\u003e...\u003c/p\u003e"
+    },
+    {
+      "title": "Libsodium의 취약점",
+      "link": "https://news.hada.io/topic?id=25472",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-01T04:37:06+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003elibsodium\u003c/strong\u003e의 저수준 함수 \u003ccode\u003ecrypto_core_ed25519_is_valid_point()\u003c/code\u003e에서 \u003cstrong\u003eEdwards25519 곡선의 부적절한 점 검증 오류\u003c/strong\u003e가 발견됨\u003c/li\u003e\n\u003cli\u003e이 함수는 점이 주된 암호학적 그룹에 속하는지 확인해야 하지만, \u003cstrong\u003e혼합 차수(subgroup)\u003c/strong\u003e 의 일부 점을 잘못...\u003c/p\u003e"
+    },
+    {
+      "title": "Win32/Linux를 함께 구축하자: loss32 프로젝트",
+      "link": "https://news.hada.io/topic?id=25471",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-01T04:34:06+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eloss32\u003c/strong\u003e는 \u003cstrong\u003eWINE과 ReactOS 구성요소\u003c/strong\u003e를 활용해 \u003cstrong\u003eWin32 환경을 기본 데스크톱으로 사용하는 Linux 배포판\u003c/strong\u003e을 목표로 함\u003c/li\u003e\n\u003cli\u003e사용자는 \u003cstrong\u003e.exe 파일을 직접 다운로드해 실행\u003c/strong\u003e할 수 있으며, 완전한 \u003cstrong\u003e오픈소스 운영체제\u003c/strong\u003e 형태로...\u003c/p\u003e"
+    },
+    {
+      "title": "Honey의 디젤게이트: 테스터 탐지 및 속이기",
+      "link": "https://news.hada.io/topic?id=25470",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-01T03:32:47+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e브라우저 쇼핑 플러그인 \u003cstrong\u003eHoney\u003c/strong\u003e가 테스트 상황을 감지해 행동을 바꾸는 \u003cstrong\u003e‘디젤게이트식’ 조작 코드\u003c/strong\u003e를 사용한 정황이 드러남\u003c/li\u003e\n\u003cli\u003eHoney는 계정 생성일, 포인트 누적치, 블랙리스트, \u003cstrong\u003e제휴 네트워크 쿠키 탐지\u003c/strong\u003e 등 네 가지 기준으로 사용자가 테스터인지 ...\u003c/p\u003e"
+    },
+    {
+      "title": "우주 마지막 문명: Iron Star",
+      "link": "https://news.hada.io/topic?id=25469",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-31T22:39:43+09:00",
+      "description": "\u003cp\u003e아주 오랜 시간이 지나 우주의 별들도 수명이 다하고, 블랙홀조차 호킹복사로 모두 증발해버린 먼 미래에 문명은 어떻게 생존할 수 있을까?\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e[블랙홀 시대의 문명 (1:45–6:06)]\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e블랙홀에서 에너지를 얻는 문명의 아이디어를 되짚으며, 특히 더 작은 블랙홀일수록 강력해지는 호"
+    },
+    {
+      "title": "FediMeteo: 4유로짜리 FreeBSD VPS가 전 세계 수천 명을 위한 기상 서비스가 되기까지",
+      "link": "https://news.hada.io/topic?id=25468",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-31T22:32:49+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eFediMeteo\u003c/strong\u003e는 4유로짜리 \u003cstrong\u003eFreeBSD VPS\u003c/strong\u003e에서 시작된 \u003cstrong\u003e전 세계 기상 정보 서비스\u003c/strong\u003e로, Fediverse를 통해 각 도시의 날씨를 자동 게시함\u003c/li\u003e\n\u003cli\u003e각 국가는 \u003cstrong\u003eFreeBSD jail\u003c/strong\u003e로 분리되어 관리되며, \u003cstrong\u003esnac\u003c/strong\u003e 소프트웨어와 \u003cstrong\u003eOpen...\u003c/p\u003e"
+    },
+    {
+      "title": "AI가 요약해줘도, 왜 지식은 남지 않을까?",
+      "link": "https://news.hada.io/topic?id=25467",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-31T18:49:03+09:00",
+      "description": "\u003col\u003e\n\u003cli\u003e요약\u003cbr /\u003e\n\u0026quot;왜 또 노트법인가: 제텔카스텐이 AI 시대에 다시 뜨는 이유\u0026quot;\u003c/li\u003e\n\u003c/ol\u003e\n\u003cul\u003e\n\u003cli\u003eAI로 요약은 쉬워졌지만 이해·내재화는 별개\u003c/li\u003e\n\u003cli\u003e기존 노트법은 정리에 강하지만 사고를 확장하진 못함\u003c/li\u003e\n\u003cli\u003e제텔카스텐은 노트를 ‘생각의 부품’으로 만들어서 연결을 통해 스스로 커지는 구조...\u003c/p\u003e"
+    },
+    {
+      "title": "오픈AI의 현금 소모는 2026년 거품 논쟁의 핵심 쟁점이 될 것",
+      "link": "https://news.hada.io/topic?id=25466",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-31T17:33:38+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e2025년 \u003cstrong\u003e생성형 AI 기업\u003c/strong\u003e들의 급격한 성장 속에서, 투자자들은 과열된 \u003cstrong\u003e시장 가치 평가\u003c/strong\u003e에 불안을 느끼고 있음\u003c/li\u003e\n\u003cli\u003e반면 \u003cstrong\u003e비상장 시장\u003c/strong\u003e에서는 여전히 낙관적 분위기가 이어지며, 벤처캐피털 업계가 \u003cstrong\u003e오픈AI·Anthropic 등 대형 AI 스타트업\u003c/strong\u003e에...\u003c/p\u003e"
+    },
+    {
+      "title": "Tech Trends 2026 : 증명의 해 [49p 슬라이드]",
+      "link": "https://news.hada.io/topic?id=25465",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2025-12-31T14:02:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e가트너, 딜로이트, a16z 등 35개 정도의 자료들로부터 취합해본 \u003cstrong\u003e2026년 전망 종합\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e공통적으로 2026년을 AI가 '신기한 기술'에서 벗어나 \u003cstrong\u003e'실질적인 경제 주체(Agent)'\u003c/strong\u003e 이자 \u003cstrong\u003e'물리적 현실(Physical AI/Robotics)'로 진입하는 해\u003c/strong\u003e로 보고 있으며, 동...\u003c/p\u003e"
+    },
+    {
+      "title": "The Sounds of Long Distance pgm 13: DDD Demo Recordings 1971-1975 [video]",
+      "link": "https://www.youtube.com/watch?v=QSsd8kreDOU",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-31T22:03:25Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.youtube.com/watch?v=QSsd8kreDOU\"\u003ehttps://www.youtube.com/watch?v=QSsd8kreDOU\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46448830\"\u003ehttps://news.ycombinator.com/item?id=46448830\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Working with custom GUCs in Postgres extension",
+      "link": "https://clickhouse.com/blog/taming-postgres-guc-extra-data",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-31T22:01:57Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://clickhouse.com/blog/taming-postgres-guc-extra-data\"\u003ehttps://clickhouse.com/blog/taming-postgres-guc-extra-data\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46448821\"\u003ehttps://news.ycombinator.com/item?id=46448821\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "A Survey of Dynamic Array Structures",
+      "link": "https://azmr.uk/dyn/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-31T22:01:43Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://azmr.uk/dyn/\"\u003ehttps://azmr.uk/dyn/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46448819\"\u003ehttps://news.ycombinator.com/item?id=46448819\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Waymos are now coming for your coveted San Francisco parking spots",
+      "link": "https://www.sfchronicle.com/sf/article/waymo-parking-21268658.php",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-31T22:01:01Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.sfchronicle.com/sf/article/waymo-parking-21268658.php\"\u003ehttps://www.sfchronicle.com/sf/article/waymo-parking-21268658.php\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46448816\"\u003ehttps://news.ycombinator.com/item?id=46448816\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Alma – AI desktop app with persistent memory and tool use across AI providers",
+      "link": "https://alma.now/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-31T22:00:18Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://alma.now/\"\u003ehttps://alma.now/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46448812\"\u003ehttps://news.ycombinator.com/item?id=46448812\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Happy New Year",
+      "link": "https://news.ycombinator.com/item?id=46448810",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-31T22:00:06Z",
+      "description": "\n\u003cp\u003eHappy New Year everyone. I’m a programmer, and I just want to wish that the next year will be a bit safer than the last one. Even in 2025, we’ve seen how many risks are still around us in networks, devices, services, and in how easily people can be misled. At the same time, new ideas and tools keep appearing that can truly make things better, if we focus not only on speed and features, but also on protecting people. I really hope that next year we make security the default, not the exception. Wishing you all a calm and safe year ahead.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46448810\"\u003ehttps://news.ycombinator.com/item?id=46448810\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "TIL: I am an open-source contributor",
+      "link": "https://beasthacker.com/til/i-am-an-open-source-contributor.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-31T21:59:53Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://beasthacker.com/til/i-am-an-open-source-contributor.html\"\u003ehttps://beasthacker.com/til/i-am-an-open-source-contributor.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46448809\"\u003ehttps://news.ycombinator.com/item?id=46448809\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Tesla owner completes first autonomous drive across America",
+      "link": "https://nypost.com/2025/12/31/tech/tesla-owner-completes-first-fully-autonomous-drive-across-america-and-elon-musk-weighs-in-on-the-historic-road-trip/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-31T21:58:16Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://nypost.com/2025/12/31/tech/tesla-owner-completes-first-fully-autonomous-drive-across-america-and-elon-musk-weighs-in-on-the-historic-road-trip/\"\u003ehttps://nypost.com/2025/12/31/tech/tesla-owner-completes-first-fully-autonomous-drive-across-america-and-elon-musk-weighs-in-on-the-historic-road-trip/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46448796\"\u003ehttps://news.ycombinator.com/item?id=46448796\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "2025: Two Decades of Piracy Reporting: TorrentFreak's Retrospective",
+      "link": "https://torrentfreak.com/2025-two-decades-of-piracy-reporting-torrentfreaks-retrospective/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-31T21:54:13Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://torrentfreak.com/2025-two-decades-of-piracy-reporting-torrentfreaks-retrospective/\"\u003ehttps://torrentfreak.com/2025-two-decades-of-piracy-reporting-torrentfreaks-retrospective/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46448769\"\u003ehttps://news.ycombinator.com/item?id=46448769\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Vibe coding lead to my project's downfall",
+      "link": "https://old.reddit.com/r/gamedev/comments/1q043ym/how_vibe_coding_lead_to_my_projects_downfall/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-31T21:52:58Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://old.reddit.com/r/gamedev/comments/1q043ym/how_vibe_coding_lead_to_my_projects_downfall/\"\u003ehttps://old.reddit.com/r/gamedev/comments/1q043ym/how_vibe_coding_lead_to_my_projects_downfall/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46448762\"\u003ehttps://news.ycombinator.com/item?id=46448762\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 2\u003c/p\u003e\n"
+    },
+    {
+      "title": "VC is subsidizing U.S. Material Science Research",
+      "link": "https://ml4sci.substack.com/p/venture-capital-is-subsidizing-us",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-31T21:52:22Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://ml4sci.substack.com/p/venture-capital-is-subsidizing-us\"\u003ehttps://ml4sci.substack.com/p/venture-capital-is-subsidizing-us\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46448756\"\u003ehttps://news.ycombinator.com/item?id=46448756\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Context Graph Manifesto",
+      "link": "https://twitter.com/TrustSpooky/status/2006481858289361339",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-31T21:48:44Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://twitter.com/TrustSpooky/status/2006481858289361339\"\u003ehttps://twitter.com/TrustSpooky/status/2006481858289361339\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46448731\"\u003ehttps://news.ycombinator.com/item?id=46448731\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "California schools will be required to restrict, prohibit student cell phone use",
+      "link": "https://ktla.com/news/california/california-schools-will-be-required-to-restrict-prohibit-student-cell-phone-use-in-2026/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-31T21:47:18Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://ktla.com/news/california/california-schools-will-be-required-to-restrict-prohibit-student-cell-phone-use-in-2026/\"\u003ehttps://ktla.com/news/california/california-schools-will-be-required-to-restrict-prohibit-student-cell-phone-use-in-2026/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46448725\"\u003ehttps://news.ycombinator.com/item?id=46448725\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: DynamicHorizon – Dynamic Island for macOS",
+      "link": "https://www.dynamichorizon.app",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-31T21:45:14Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.dynamichorizon.app\"\u003ehttps://www.dynamichorizon.app\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46448709\"\u003ehttps://news.ycombinator.com/item?id=46448709\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Warren Buffett steps down as Berkshire Hathaway CEO after six decades",
+      "link": "https://www.latimes.com/business/story/2025-12-31/warren-buffett-steps-down-as-berkshire-hathaway-ceo-after-six-decades",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-31T21:44:42Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.latimes.com/business/story/2025-12-31/warren-buffett-steps-down-as-berkshire-hathaway-ceo-after-six-decades\"\u003ehttps://www.latimes.com/business/story/2025-12-31/warren-buffett-steps-down-as-berkshire-hathaway-ceo-after-six-decades\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46448705\"\u003ehttps://news.ycombinator.com/item?id=46448705\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "A Box of Many Inputs: Browsers, Local Classifiers, and Roger Rabbit",
+      "link": "https://allenpike.com/2025/a-box-of-many-inputs",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-31T21:44:24Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://allenpike.com/2025/a-box-of-many-inputs\"\u003ehttps://allenpike.com/2025/a-box-of-many-inputs\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46448701\"\u003ehttps://news.ycombinator.com/item?id=46448701\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "C++ chrono-compatible low-level date algorithms",
+      "link": "http://howardhinnant.github.io/date_algorithms.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-31T21:42:02Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"http://howardhinnant.github.io/date_algorithms.html\"\u003ehttp://howardhinnant.github.io/date_algorithms.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46448673\"\u003ehttps://news.ycombinator.com/item?id=46448673\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Qq-pwn – A browser-based idler game",
+      "link": "https://qq-pwn.com",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-31T21:41:45Z",
+      "description": "\n\u003cp\u003eYes, the URL is qq-pwn. No, it's not malware.\u003cp\u003eIt is supposed to be a browser-based incremental roguelike game.\u003cp\u003eThe Twist: The code is 100% AI-generated. I am running this as an experiment to see if an LLM can handle game creation and balancing without human intervention (apart from guidance).\u003cp\u003eHuman feedback on the progression is appreciated!\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46448670\"\u003ehttps://news.ycombinator.com/item?id=46448670\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "A modern tale of blinkenlights (reverse engineering a smartwatch)",
+      "link": "https://blog.quarkslab.com/./modern-tale-blinkenlights.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-31T21:38:54Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://blog.quarkslab.com/./modern-tale-blinkenlights.html\"\u003ehttps://blog.quarkslab.com/./modern-tale-blinkenlights.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46448642\"\u003ehttps://news.ycombinator.com/item?id=46448642\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Open Schematics – Largest Hardware Schematic Dataset",
+      "link": "https://huggingface.co/datasets/bshada/open-schematics",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2025-12-31T21:38:31Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://huggingface.co/datasets/bshada/open-schematics\"\u003ehttps://huggingface.co/datasets/bshada/open-schematics\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46448636\"\u003ehttps://news.ycombinator.com/item?id=46448636\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    }
+  ],
+  "generatedAt": "2026-01-01T07:09:43.078463589+09:00"
+}
