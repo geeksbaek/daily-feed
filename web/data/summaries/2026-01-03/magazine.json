@@ -1,0 +1,266 @@
+{
+  "date": "2026-01-03",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2026년 1월 2일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** 2026년 새해, 전기차 시장의 왕좌가 흔들리는 가운데(테슬라 하락, BYD 급성장), AI 생태계는 '채팅'을 넘어 '에이전트'로의 실질적 전환을 모색하고 있습니다.\n\n---\n\n## 🏆 Top Story: 전기차 시장의 지각 변동\n### 테슬라의 후퇴와 BYD의 질주: 2025년 성적표의 의미\n2026년 새해 벽두부터 전기차(EV) 업계의 희비가 엇갈렸습니다. 테슬라는 2025년 판매량이 9% 감소하며 2년 연속 연간 판매량 감소를 기록한 반면 [^17], 중국의 BYD는 460만 대 판매를 달성하며 수정된 목표치를 충족했습니다 [^4].\n\n이는 단순한 판매량 차이를 넘어, 글로벌 EV 시장의 주도권이 '혁신의 아이콘'에서 '대량 생산과 가격 경쟁력'을 갖춘 기업으로 넘어가고 있음을 시사합니다. 테슬라의 감소세는 모델 노후화와 경쟁 심화가 원인으로 지목되며, BYD의 성장은 다양한 라인업과 공격적인 글로벌 확장이 주효했습니다.\n\n\u003e **Key Point:** 전기차 시장이 '얼리어답터' 단계를 지나 '대중화' 단계로 접어들며, 브랜드 파워보다 가성비와 라인업 다양성이 승패를 가르고 있습니다. [^4][^17]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. AI 에이전트: 복잡성을 넘어 '실행'의 단계로\n구글 클라우드는 2026년이 'AI 에이전트'의 해가 될 것이라 전망했습니다 [^12]. 하지만 개발자들은 현재의 에이전트 프레임워크가 지나치게 복잡하다고 지적합니다. 마치 과거 웹 개발의 복잡함을 해결해 준 'Ruby on Rails'처럼, AI 에이전트 개발에도 직관적이고 표준화된 프레임워크가 필요하다는 목소리가 높습니다 [^10].\n- **What:** AI가 단순 답변 생성을 넘어 작업을 수행(Action)하는 에이전트로 진화 중.\n- **Why:** 현재 도구들은 너무 파편화되어 있어, 안드레이 카파시가 언급한 '에이전트 AI를 위한 매뉴얼' 같은 체계적 접근이 절실함 [^19].\n- **Impact:** 2026년은 AI가 실질적인 업무 자동화를 수행하는 원년이 될 것이며, 이를 뒷받침할 단순하고 강력한 도구(Agentfix 등)들이 쏟아져 나올 것 [^24].\n\n### 2. 개발 아키텍처의 회귀: 마이크로서비스의 종말?\n스타트업 생태계에서 \"마이크로서비스가 우리를 죽였다\"는 자조 섞인 회고가 화제입니다 [^15]. 초기 단계의 스타트업이 섣불리 복잡한 마이크로서비스 아키텍처를 도입했다가 개발 속도 저하로 실패한 사례입니다.\n- **What:** 모놀리식(Monolith) 아키텍처의 재평가.\n- **Why:** 복잡한 분산 시스템은 운영 비용과 인지 부하를 증가시킴.\n- **Impact:** '적정 기술'에 대한 중요성이 커지며, 2019년 사례지만 정적 HTML 페이지 하나로 18,000달러를 벌어들인 사례처럼 [^13], 기술의 화려함보다 비즈니스 가치와 단순함이 다시 주목받고 있습니다.\n\n### 3. 기술과 윤리, 그리고 사회적 비용\n기술 발전의 이면에는 여전히 해결되지 않은 윤리적 문제들이 존재합니다. 스탠포드 연구에 따르면 AI 학습 데이터셋에서 아동 학대 이미지가 발견되어 충격을 주고 있으며 [^32], 듀오링고는 아이폰의 '다이내믹 아일랜드'를 광고판으로 활용해 애플의 디자인 가이드라인을 위반했다는 논란에 휩싸였습니다 [^14].\n- **What:** AI 데이터 윤리 문제와 UI 패턴의 상업적 오용.\n- **Why:** 기술 기업들의 성장 우선주의가 윤리적 가이드라인과 충돌.\n- **Impact:** 플랫폼 기업(애플 등)의 규제 강화와 AI 학습 데이터에 대한 법적/윤리적 검열이 더욱 엄격해질 전망입니다.\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n개발자와 파워 유저를 위한 실용적인 도구와 흥미로운 기술 자료입니다.\n\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **mac-cleanup-go** | Go 언어로 작성된 TUI 기반의 맥(Mac) 캐시 및 쓰레기 파일 정리 도구. 빠르고 가볍습니다. [^9] |\n| **Tool** | **Apptron** | 브라우저 환경에서 리눅스 애플리케이션을 실행할 수 있게 해주는 기술. 웹과 OS의 경계를 허뭅니다. [^23] |\n| **Tool** | **Agentfix** | 해커톤 프로젝트로 시작해, 실시간 코드 에러를 AI가 즉시 수정해주는 도구. [^24] |\n| **Game** | **Cursor Party** | 엘릭서(Elixir) 기반으로 1시간 만에 만든 실시간 커서 공유 게임. 피닉스 라이브뷰의 강력함을 보여줍니다. [^8] |\n| **Info** | **Python Perf** | 파이썬 프로그래머가 반드시 알아야 할 주요 성능 수치 모음. 최적화의 기준점이 됩니다. [^7] |\n| **Info** | **USB-C Guide** | 복잡한 USB-C 케이블의 기능과 사양을 정리한 스프레드시트. 케이블 지옥 탈출을 위한 필수 자료. [^22] |\n| **Dev** | **Bundler vs uv** | 루비의 Bundler가 파이썬의 초고속 패키지 매니저 uv만큼 빨라질 수 있을지에 대한 기술적 고찰. [^3] |\n| **Dev** | **WinBoat** | OpenSUSE 리눅스에서 윈도우 앱을 매끄럽게 실행하도록 돕는 통합 도구. [^16] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n\n#### 💻 개발 \u0026 인프라 \u0026 AI\n* **OpenAI Grove Cohort 2**: OpenAI가 두 번째 그로브(Grove) 코호트를 발표하며 AI 인재 양성 및 지원을 강화합니다. [^2]\n* **State of the Server 2026**: 2026년 시점의 서버 호스팅 및 홈랩(HomeLab) 트렌드를 정리한 회고. [^18]\n* **Global SE Jobs 2026**: 2026년 1월 기준, 전 세계 소프트웨어 엔지니어링 일자리 전망 분석. [^20]\n* **Year of the Positron**: 데이터 과학 IDE 또는 관련 기술 스택으로서 'Positron'이 주목받는 한 해가 될 것이라는 전망. [^25]\n* **Linux Kernel Security**: 리눅스 커널의 보안 강화 작업 현황과 2026년의 주요 업데이트 사항. [^29]\n* **Orthogonality at High Dimensions**: 고차원 공간에서의 직교성(Orthogonality)에 대한 수학적/전산학적 고찰 (2022년 글). [^30]\n\n#### 🍎 애플 \u0026 모바일\n* **Apple Watch New Year**: 애플이 새해를 맞아 애플워치를 활용한 건강 관리 및 활동성 증진 캠페인을 시작했습니다. [^1]\n\n#### 🛡️ 보안 \u0026 사회\n* **Ferry Malware Arrest**: 이탈리아 페리 시스템에 악성코드를 설치한 라트비아인이 프랑스에서 체포되었습니다. [^21]\n* **University Destruction**: 대학 시스템이 어떻게 스스로의 가치를 훼손하고 있는지에 대한 비판적 에세이. [^11]\n* **Swiss NYE Fire**: 스위스 스키 리조트에서 새해 전야 불꽃놀이(Sparklers)로 추정되는 화재가 발생해 40명이 사망하는 비극이 있었습니다. [^26]\n\n#### 💡 생산성 \u0026 문화 \u0026 기타\n* **2025년의 편지**: 폴 그레이엄 혹은 저명한 인사가 2025년을 회고하거나 전망하며 쓴 에세이로 추정됩니다. [^5]\n* **Mandalart 2026**: 2026년 목표 달성을 위해 '실행'에 초점을 맞춘 만다라트 차트 작성법 소개. [^6]\n* **AI Portfolio for $1**: AI를 활용해 단돈 1달러로 포트폴리오 웹사이트를 구축한 경험담. [^27]\n* **Generative Art \u0026 Divine Principle**: 생성형 예술과 수학적 원리(신성한 원리)를 결합한 시각적 실험. [^28]\n* **Daft Punk Easter Egg**: 다프트 펑크의 노래 BPM 속에 숨겨진 이스터 에그를 분석한 흥미로운 글. [^31]\n\n---\n\n## 📝 큐레이터의 한마디\n2026년의 첫 테크 브리핑은 '**거품이 꺼지고 실질이 남는 과정**'으로 요약됩니다. 전기차 시장은 테슬라라는 상징보다 BYD라는 실적을 택했고, 개발자들은 복잡한 마이크로서비스보다 단단한 모놀리스를 다시 쳐다보고 있습니다. AI 역시 '신기함'을 넘어 '실제 내 코드를 고쳐주는(Agentfix)' 도구로 진화하고 있네요. 올해는 \"무엇이 힙한가?\"보다 \"무엇이 작동하는가?\"를 묻는 한 해가 될 것 같습니다.\n\n---\n\n### References\n[^1]: Stay active in the new year with Apple Watch - https://www.apple.com/newsroom/2026/01/stay-active-in-the-new-year-with-apple-watch/\n[^2]: Announcing OpenAI Grove Cohort 2 - https://openai.com/index/openai-grove\n[^3]: Bundler가 uv만큼 빠를 수 있을까? - https://news.hada.io/topic?id=25520\n[^4]: BYD, 2025년 460만 대 판매 달성하며 수정된 목표치 충족 - https://news.hada.io/topic?id=25519\n[^5]: 2025년의 편지 - https://news.hada.io/topic?id=25518\n[^6]: Show GN: 2026년, ‘목표’ 말고 ‘실행’이 남는 만다라트 차트 만들기 - https://news.hada.io/topic?id=25517\n[^7]: 파이썬 프로그래머가 알아야 할 주요 성능 수치 - https://news.hada.io/topic?id=25516\n[^8]: Show GN: 1시간 만에 만든 엘릭서 기반 실시간 커서 공유 게임 'Cursor Party' - https://news.hada.io/topic?id=25515\n[^9]: Show GN: mac-cleanup-go - TUI 기반 mac 캐시 정리 도구 - https://news.hada.io/topic?id=25514\n[^10]: AI 에이전트 프레임워크는 왜 복잡할까? Rails처럼 혁신적인 프레임워크가 필요하다 - https://news.hada.io/topic?id=25513\n[^11]: 대학은 어떻게 스스로를 파괴하고 있는가 - https://news.hada.io/topic?id=25512\n[^12]: 구글 클라우드가 발표한 2026년 AI 에이전트 트렌드 - https://news.hada.io/topic?id=25511\n[^13]: I charged $18,000 for a Static HTML Page (2019) - https://idiallo.com/blog/18000-dollars-static-web-page\n[^14]: Duolingo Used iPhone's Dynamic Island to Display Ads, Violating Apple Design GUI - https://www.macrumors.com/2026/01/02/duolingo-dynamic-island-ad/\n[^15]: Microservices Killed Our Startup. Monoliths Would've Saved Us - https://medium.com/lets-code-future/microservices-killed-our-startup-monoliths-wouldve-saved-us-4ebadf584a6d\n[^16]: Achieve Windows Freedom on OpenSUSE with WinBoat Integration - https://cubiclenate.com/2026/01/02/seamless-windows-apps-on-opensuse-with-winboat/\n[^17]: Tesla sales fell by 9 percent in 2025, its second yearly decline - https://arstechnica.com/cars/2026/01/tesla-sales-fell-by-9-percent-in-2025-its-second-yearly-decline/\n[^18]: State of the Server 2026 - https://theorangeone.net/posts/state-of-the-server-2026/\n[^19]: I wrote the manual Karpathy said was missing for agentic AI - https://github.com/nicolasahar/morphic-programming\n[^20]: Global software engineering job postings outlook – 2026 - https://jobswithgpt.com/blog/global_software-engineering_jobs_january_2026/\n[^21]: France arrests Latvian for installing malware on Italian ferry - https://www.bleepingcomputer.com/news/security/france-arrests-latvian-for-installing-malware-on-italian-ferry/\n[^22]: A summary of USB-C cable features - https://docs.google.com/spreadsheets/d/1vnpEXfo2HCGADdd9G2x9dMDWqENiY2kgBJUu29f_TX8/pubhtml#\n[^23]: Apptron – Run Linux in the Browser - https://github.com/tractordev/apptron\n[^24]: Trusting AI to Fix Live Code Errors Instantly (I Built Agentfix at a Hackathon) - https://www.npmjs.com/package/agentfix\n[^25]: Year of the Positron - https://positron.solutions/articles/year-of-the-positron\n[^26]: Swiss Authorities Say Sparklers Probably Caused NYE's Fire, Killing 40 people - https://www.nytimes.com/live/2026/01/02/world/switzerland-ski-resort-fire\n[^27]: Tell HN: I asked AI to build me my Portfolio for $1 - https://vednig.site\n[^28]: More than generative art – a little divine principle, still unknown - https://number-garden.netlify.app/?114336224149876\n[^29]: Linux kernel security work - http://www.kroah.com/log/blog/2026/01/02/linux-kernel-security-work/\n[^30]: Orthogonality Expected at High Dimensions (2022) - https://softwaredoug.com/blog/2022/12/26/surpries-at-hi-dimensions-orthoginality\n[^31]: Daft Punk Easter Egg in the BPM Tempo of Harder, Better, Faster, Stronger? - https://www.madebywindmill.com/tempi/blog/hbfs-bpm/\n[^32]: Child abuse images found in AI training data [2023] - https://www.axios.com/2023/12/20/ai-training-data-child-abuse-images-stanford\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **Stay active in the new year with Apple Watch\n**\n   - 출처: Apple Newsroom\n   - 링크: https://www.apple.com/newsroom/2026/01/stay-active-in-the-new-year-with-apple-watch/\n\n2. **Announcing OpenAI Grove Cohort 2**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/openai-grove\n\n3. **Bundler가 uv만큼 빠를 수 있을까?**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25520\n\n4. **BYD, 2025년 460만 대 판매 달성하며 수정된 목표치 충족**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25519\n\n5. **2025년의 편지**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25518\n\n6. **Show GN: 2026년, ‘목표’ 말고 ‘실행’이 남는 만다라트 차트 만들기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25517\n\n7. **파이썬 프로그래머가 알아야 할 주요 성능 수치**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25516\n\n8. **Show GN: 1시간 만에 만든 엘릭서 기반 실시간 커서 공유 게임 'Cursor Party'**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25515\n\n9. **Show GN: mac-cleanup-go - TUI 기반 mac 캐시 정리 도구**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25514\n\n10. **AI 에이전트 프레임워크는 왜 복잡할까? Rails처럼 혁신적인 프레임워크가 필요하다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25513\n\n11. **대학은 어떻게 스스로를 파괴하고 있는가**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25512\n\n12. **구글 클라우드가 발표한 2026년 AI 에이전트 트렌드**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25511\n\n13. **I charged $18,000 for a Static HTML Page (2019)**\n   - 출처: Hacker News\n   - 링크: https://idiallo.com/blog/18000-dollars-static-web-page\n\n14. **Duolingo Used iPhone's Dynamic Island to Display Ads, Violating Apple Design GUI**\n   - 출처: Hacker News\n   - 링크: https://www.macrumors.com/2026/01/02/duolingo-dynamic-island-ad/\n\n15. **Microservices Killed Our Startup. Monoliths Would've Saved Us**\n   - 출처: Hacker News\n   - 링크: https://medium.com/lets-code-future/microservices-killed-our-startup-monoliths-wouldve-saved-us-4ebadf584a6d\n\n16. **Achieve Windows Freedom on OpenSUSE with WinBoat Integration**\n   - 출처: Hacker News\n   - 링크: https://cubiclenate.com/2026/01/02/seamless-windows-apps-on-opensuse-with-winboat/\n\n17. **Tesla sales fell by 9 percent in 2025, its second yearly decline**\n   - 출처: Hacker News\n   - 링크: https://arstechnica.com/cars/2026/01/tesla-sales-fell-by-9-percent-in-2025-its-second-yearly-decline/\n\n18. **State of the Server 2026**\n   - 출처: Hacker News\n   - 링크: https://theorangeone.net/posts/state-of-the-server-2026/\n\n19. **I wrote the manual Karpathy said was missing for agentic AI**\n   - 출처: Hacker News\n   - 링크: https://github.com/nicolasahar/morphic-programming\n\n20. **Global software engineering job postings outlook – 2026**\n   - 출처: Hacker News\n   - 링크: https://jobswithgpt.com/blog/global_software-engineering_jobs_january_2026/\n\n21. **France arrests Latvian for installing malware on Italian ferry**\n   - 출처: Hacker News\n   - 링크: https://www.bleepingcomputer.com/news/security/france-arrests-latvian-for-installing-malware-on-italian-ferry/\n\n22. **A summary of USB-C cable features**\n   - 출처: Hacker News\n   - 링크: https://docs.google.com/spreadsheets/d/1vnpEXfo2HCGADdd9G2x9dMDWqENiY2kgBJUu29f_TX8/pubhtml#\n\n23. **Apptron – Run Linux in the Browser**\n   - 출처: Hacker News\n   - 링크: https://github.com/tractordev/apptron\n\n24. **Trusting AI to Fix Live Code Errors Instantly (I Built Agentfix at a Hackathon)**\n   - 출처: Hacker News\n   - 링크: https://www.npmjs.com/package/agentfix\n\n25. **Year of the Positron**\n   - 출처: Hacker News\n   - 링크: https://positron.solutions/articles/year-of-the-positron\n\n26. **Swiss Authorities Say Sparklers Probably Caused NYE's Fire, Killing 40 people**\n   - 출처: Hacker News\n   - 링크: https://www.nytimes.com/live/2026/01/02/world/switzerland-ski-resort-fire\n\n27. **Tell HN: I asked AI to build me my Portfolio for $1**\n   - 출처: Hacker News\n   - 링크: https://vednig.site\n\n28. **More than generative art – a little divine principle, still unknown**\n   - 출처: Hacker News\n   - 링크: https://number-garden.netlify.app/?114336224149876\n\n29. **Linux kernel security work**\n   - 출처: Hacker News\n   - 링크: http://www.kroah.com/log/blog/2026/01/02/linux-kernel-security-work/\n\n30. **Orthogonality Expected at High Dimensions (2022)**\n   - 출처: Hacker News\n   - 링크: https://softwaredoug.com/blog/2022/12/26/surpries-at-hi-dimensions-orthoginality\n\n31. **Daft Punk Easter Egg in the BPM Tempo of Harder, Better, Faster, Stronger?**\n   - 출처: Hacker News\n   - 링크: https://www.madebywindmill.com/tempi/blog/hbfs-bpm/\n\n32. **Child abuse images found in AI training data [2023]**\n   - 출처: Hacker News\n   - 링크: https://www.axios.com/2023/12/20/ai-training-data-child-abuse-images-stanford\n\n\n",
+  "articles": [
+    {
+      "title": "Stay active in the new year with Apple Watch\n",
+      "link": "https://www.apple.com/newsroom/2026/01/stay-active-in-the-new-year-with-apple-watch/",
+      "source": "Apple Newsroom",
+      "category": "tech",
+      "publishedAt": "2026-01-02T13:59:28.439Z",
+      "description": "Apple Fitness+ is introducing new programming to help users to stay active and motivated to kick off 2026."
+    },
+    {
+      "title": "Announcing OpenAI Grove Cohort 2",
+      "link": "https://openai.com/index/openai-grove",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2026-01-02T10:00:00Z",
+      "description": "Applications are now open for OpenAI Grove Cohort 2, a 5-week founder program designed for individuals at any stage, from pre-idea to product. Participants receive $50K in API credits, early access to AI tools, and hands-on mentorship from the OpenAI team."
+    },
+    {
+      "title": "Bundler가 uv만큼 빠를 수 있을까?",
+      "link": "https://news.hada.io/topic?id=25520",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-03T04:32:54+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eBundler의 성능 한계\u003c/strong\u003e를 분석하며, Python의 패키지 관리자 \u003cstrong\u003euv\u003c/strong\u003e가 빠른 이유를 비교\u003c/li\u003e\n\u003cli\u003euv의 속도는 Rust 언어 때문이 아니라 \u003cstrong\u003e병렬 다운로드, 글로벌 캐시, 메타데이터 기반 의존성 처리\u003c/strong\u003e 등 구조적 설계 덕분임\u003c/li\u003e\n\u003cli\u003eBundler는 \u003cstrong\u003e다운로드와...\u003c/p\u003e"
+    },
+    {
+      "title": "BYD, 2025년 460만 대 판매 달성하며 수정된 목표치 충족",
+      "link": "https://news.hada.io/topic?id=25519",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-03T03:33:28+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e중국 전기차 제조사 \u003cstrong\u003eBYD\u003c/strong\u003e가 2025년 한 해 동안 \u003cstrong\u003e460만 대의 차량 판매 목표를 달성\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e이로써 \u003cstrong\u003eTesla를 제치고 세계 최대 전기차 제조사\u003c/strong\u003e가 될 가능성이 제기됨\u003c/li\u003e\n\u003cli\u003eBYD의 \u003cstrong\u003e홍콩 상장 주가가 새해 첫 거래일에 최대 2.3% 상승\u003c/strong\u003e\n\u003c/l...\u003c/p\u003e"
+    },
+    {
+      "title": "2025년의 편지",
+      "link": "https://news.hada.io/topic?id=25518",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-02T23:33:31+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e실리콘밸리와 중국 공산당\u003c/strong\u003e은 모두 진지하고 유머가 결여된 권력 집단으로, 자기중심적 태도가 세계 질서에 큰 영향을 미치고 있음\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e샌프란시스코의 기술 문화\u003c/strong\u003e는 AI 중심으로 급격히 변했으며, 개방성과 공동체 정신을 유지하면서도 점점 더 내향적이고 자기 강화적...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: 2026년, ‘목표’ 말고 ‘실행’이 남는 만다라트 차트 만들기",
+      "link": "https://news.hada.io/topic?id=25517",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-02T22:59:27+09:00",
+      "description": "\u003cp\u003e올해는 AWS 자격증 따고, 사이드 프로젝트 런칭하고, 기술 블로그 시작해야지!\u003c/p\u003e\n\u003cp\u003e1월 1일엔 이렇게 적지만, 2월쯤이면 \u0026quot;...그래서 오늘은 뭘 하지?\u0026quot; 여기서 멈춥니다. 저도 매년 그랬고요.\u003c/p\u003e\n\u003cp\u003e그래서 2026년에는 달라져야겠다 생각하고 만다라트 방식으로 목표를 세워봤는데, 막연한 목표가 '측정"
+    },
+    {
+      "title": "파이썬 프로그래머가 알아야 할 주요 성능 수치",
+      "link": "https://news.hada.io/topic?id=25516",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-02T18:33:06+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e파이썬의 연산·메모리·입출력 성능 수치\u003c/strong\u003e를 체계적으로 측정한 벤치마크 결과로, 각 연산의 시간과 메모리 사용량을 정량화함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e속도 측면\u003c/strong\u003e에서는 속성 접근 14ns, 리스트 추가 29ns, 파일 열기 9μs, FastAPI 응답 8.6μs 등 다양한 연산의 상대적 지연시간을 제시\u003c/l...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: 1시간 만에 만든 엘릭서 기반 실시간 커서 공유 게임 'Cursor Party'",
+      "link": "https://news.hada.io/topic?id=25515",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-02T17:24:36+09:00",
+      "description": "\u003cp\u003e안녕하세요. 엘릭서와 피닉스가 자랑하는 \u003cstrong\u003e분산 처리의 장점\u003c/strong\u003e을 직접 경험해보고 싶어, 딱 \u003cstrong\u003e1시간을 투자\u003c/strong\u003e해 만든 토이 프로젝트 \u0026quot;Cursor Party\u0026quot;를 소개합니다.\u003c/p\u003e\n\u003cp\u003e접속한 모든 사용자의 마우스 커서가 실시간으로 공유되며, 함께 클릭하여 보스 몬스터를 잡는 협동 게임"
+    },
+    {
+      "title": "Show GN: mac-cleanup-go - TUI 기반 mac 캐시 정리 도구",
+      "link": "https://news.hada.io/topic?id=25514",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-02T17:00:51+09:00",
+      "description": "\u003cp\u003e맥 사용하다 보면 캐시와 앱 데이터가 디스크의 20%~40% 이상을 차지하는 경우가 많습니다.\u003cbr /\u003e\n매번 스크립트로 수동으로 정리하는 게 번거로워서 만들었습니다 ㅎㅎ..\u003c/p\u003e\n\u003cp\u003e기존에도 비슷한 도구들이 있지만, 어떤 항목이 어떤 카테고리에 속하는지 등.. 알아보기 어려워서\u003cbr /\u003e\nTUI 기반으로 정리 대상을 미리"
+    },
+    {
+      "title": "AI 에이전트 프레임워크는 왜 복잡할까? Rails처럼 혁신적인 프레임워크가 필요하다",
+      "link": "https://news.hada.io/topic?id=25513",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-02T14:43:56+09:00",
+      "description": "\u003cp\u003e\u003cstrong\u003e현재 AI 에이전트 프레임워크의 주요 문제\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e컨텍스트 윈도우 고갈\n\u003cul\u003e\n\u003cli\u003e복잡한 작업 시 모델이 원래 목표 잊음\u003c/li\u003e\n\u003cli\u003e할루시네이션, 무한 루프 발생\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e프레임워크의 얇은 래퍼 역할\n\u003cul\u003e\n\u003cli\u003e모델 선택, 임베딩 제공자, 도구 구조화 등 개발자에게 떠넘김\u003c/l"
+    },
+    {
+      "title": "대학은 어떻게 스스로를 파괴하고 있는가",
+      "link": "https://news.hada.io/topic?id=25512",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-02T13:15:44+09:00",
+      "description": "\u003ch3\u003e대학은 어떻게 스스로를 파괴하고 있는가\u003c/h3\u003e\n\u003cp\u003e이 글이 겨누는 표적은 “AI가 교육을 돕는다”는 순진한 기대가 아니다. 대학은 예산을 줄이고 교수·학과·학생지원부터 도려내면서, 그 빈자리를 \u003cstrong\u003e챗봇 라이선스\u003c/strong\u003e로 메우는 방식으로 스스로의 존재 이유를 팔아치우고 있다. 표절 공포로 시작된 패닉...\u003c/p\u003e"
+    },
+    {
+      "title": "구글 클라우드가 발표한 2026년 AI 에이전트 트렌드",
+      "link": "https://news.hada.io/topic?id=25511",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-02T13:14:30+09:00",
+      "description": "\u003cp\u003e비즈니스 가치를 재정의하는 에이전트형 AI의 부상\u003c/p\u003e\n\u003cp\u003e2026년의 비즈니스 환경은 단순히 질문에 답하는 수준을 넘어 스스로 계획을 세우고 실행하는 Agentic AI(에이전틱 AI)에 의해 근본적으로 변화할 것입니다.\u003c/p\u003e\n\u003cp\u003eGoogle Cloud의 리포트에 따르면, 에이전틱 AI는 목표를 이해하고 계획을 수립하며 다양한 "
+    },
+    {
+      "title": "I charged $18,000 for a Static HTML Page (2019)",
+      "link": "https://idiallo.com/blog/18000-dollars-static-web-page",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-02T21:54:56Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://idiallo.com/blog/18000-dollars-static-web-page\"\u003ehttps://idiallo.com/blog/18000-dollars-static-web-page\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46469877\"\u003ehttps://news.ycombinator.com/item?id=46469877\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Duolingo Used iPhone's Dynamic Island to Display Ads, Violating Apple Design GUI",
+      "link": "https://www.macrumors.com/2026/01/02/duolingo-dynamic-island-ad/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-02T21:52:58Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.macrumors.com/2026/01/02/duolingo-dynamic-island-ad/\"\u003ehttps://www.macrumors.com/2026/01/02/duolingo-dynamic-island-ad/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46469852\"\u003ehttps://news.ycombinator.com/item?id=46469852\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Microservices Killed Our Startup. Monoliths Would've Saved Us",
+      "link": "https://medium.com/lets-code-future/microservices-killed-our-startup-monoliths-wouldve-saved-us-4ebadf584a6d",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-02T21:52:36Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://medium.com/lets-code-future/microservices-killed-our-startup-monoliths-wouldve-saved-us-4ebadf584a6d\"\u003ehttps://medium.com/lets-code-future/microservices-killed-our-startup-monoliths-wouldve-saved-us-4ebadf584a6d\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46469845\"\u003ehttps://news.ycombinator.com/item?id=46469845\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Achieve Windows Freedom on OpenSUSE with WinBoat Integration",
+      "link": "https://cubiclenate.com/2026/01/02/seamless-windows-apps-on-opensuse-with-winboat/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-02T21:50:15Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://cubiclenate.com/2026/01/02/seamless-windows-apps-on-opensuse-with-winboat/\"\u003ehttps://cubiclenate.com/2026/01/02/seamless-windows-apps-on-opensuse-with-winboat/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46469818\"\u003ehttps://news.ycombinator.com/item?id=46469818\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Tesla sales fell by 9 percent in 2025, its second yearly decline",
+      "link": "https://arstechnica.com/cars/2026/01/tesla-sales-fell-by-9-percent-in-2025-its-second-yearly-decline/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-02T21:48:59Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://arstechnica.com/cars/2026/01/tesla-sales-fell-by-9-percent-in-2025-its-second-yearly-decline/\"\u003ehttps://arstechnica.com/cars/2026/01/tesla-sales-fell-by-9-percent-in-2025-its-second-yearly-decline/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46469811\"\u003ehttps://news.ycombinator.com/item?id=46469811\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 18\u003c/p\u003e\n\u003cp\u003e# Comments: 4\u003c/p\u003e\n"
+    },
+    {
+      "title": "State of the Server 2026",
+      "link": "https://theorangeone.net/posts/state-of-the-server-2026/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-02T21:46:33Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://theorangeone.net/posts/state-of-the-server-2026/\"\u003ehttps://theorangeone.net/posts/state-of-the-server-2026/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46469789\"\u003ehttps://news.ycombinator.com/item?id=46469789\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "I wrote the manual Karpathy said was missing for agentic AI",
+      "link": "https://github.com/nicolasahar/morphic-programming",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-02T21:45:40Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/nicolasahar/morphic-programming\"\u003ehttps://github.com/nicolasahar/morphic-programming\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46469780\"\u003ehttps://news.ycombinator.com/item?id=46469780\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Global software engineering job postings outlook – 2026",
+      "link": "https://jobswithgpt.com/blog/global_software-engineering_jobs_january_2026/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-02T21:44:41Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://jobswithgpt.com/blog/global_software-engineering_jobs_january_2026/\"\u003ehttps://jobswithgpt.com/blog/global_software-engineering_jobs_january_2026/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46469771\"\u003ehttps://news.ycombinator.com/item?id=46469771\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "France arrests Latvian for installing malware on Italian ferry",
+      "link": "https://www.bleepingcomputer.com/news/security/france-arrests-latvian-for-installing-malware-on-italian-ferry/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-02T21:42:55Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.bleepingcomputer.com/news/security/france-arrests-latvian-for-installing-malware-on-italian-ferry/\"\u003ehttps://www.bleepingcomputer.com/news/security/france-arrests-latvian-for-installing-malware-on-italian-ferry/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46469755\"\u003ehttps://news.ycombinator.com/item?id=46469755\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 4\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "A summary of USB-C cable features",
+      "link": "https://docs.google.com/spreadsheets/d/1vnpEXfo2HCGADdd9G2x9dMDWqENiY2kgBJUu29f_TX8/pubhtml#",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-02T21:42:02Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://docs.google.com/spreadsheets/d/1vnpEXfo2HCGADdd9G2x9dMDWqENiY2kgBJUu29f_TX8/pubhtml#\"\u003ehttps://docs.google.com/spreadsheets/d/1vnpEXfo2HCGADdd9G2x9dMDWqENiY2kgBJUu29f_TX8/pubhtml#\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46469740\"\u003ehttps://news.ycombinator.com/item?id=46469740\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Apptron – Run Linux in the Browser",
+      "link": "https://github.com/tractordev/apptron",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-02T21:41:02Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/tractordev/apptron\"\u003ehttps://github.com/tractordev/apptron\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46469731\"\u003ehttps://news.ycombinator.com/item?id=46469731\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Trusting AI to Fix Live Code Errors Instantly (I Built Agentfix at a Hackathon)",
+      "link": "https://www.npmjs.com/package/agentfix",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-02T21:40:07Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.npmjs.com/package/agentfix\"\u003ehttps://www.npmjs.com/package/agentfix\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46469724\"\u003ehttps://news.ycombinator.com/item?id=46469724\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Year of the Positron",
+      "link": "https://positron.solutions/articles/year-of-the-positron",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-02T21:37:51Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://positron.solutions/articles/year-of-the-positron\"\u003ehttps://positron.solutions/articles/year-of-the-positron\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46469697\"\u003ehttps://news.ycombinator.com/item?id=46469697\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Swiss Authorities Say Sparklers Probably Caused NYE's Fire, Killing 40 people",
+      "link": "https://www.nytimes.com/live/2026/01/02/world/switzerland-ski-resort-fire",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-02T21:36:52Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nytimes.com/live/2026/01/02/world/switzerland-ski-resort-fire\"\u003ehttps://www.nytimes.com/live/2026/01/02/world/switzerland-ski-resort-fire\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46469691\"\u003ehttps://news.ycombinator.com/item?id=46469691\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Tell HN: I asked AI to build me my Portfolio for $1",
+      "link": "https://vednig.site",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-02T21:36:35Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://vednig.site\"\u003ehttps://vednig.site\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46469690\"\u003ehttps://news.ycombinator.com/item?id=46469690\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "More than generative art – a little divine principle, still unknown",
+      "link": "https://number-garden.netlify.app/?114336224149876",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-02T21:32:33Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://number-garden.netlify.app/?114336224149876\"\u003ehttps://number-garden.netlify.app/?114336224149876\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46469640\"\u003ehttps://news.ycombinator.com/item?id=46469640\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Linux kernel security work",
+      "link": "http://www.kroah.com/log/blog/2026/01/02/linux-kernel-security-work/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-02T21:31:34Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"http://www.kroah.com/log/blog/2026/01/02/linux-kernel-security-work/\"\u003ehttp://www.kroah.com/log/blog/2026/01/02/linux-kernel-security-work/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46469623\"\u003ehttps://news.ycombinator.com/item?id=46469623\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 4\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Orthogonality Expected at High Dimensions (2022)",
+      "link": "https://softwaredoug.com/blog/2022/12/26/surpries-at-hi-dimensions-orthoginality",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-02T21:31:01Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://softwaredoug.com/blog/2022/12/26/surpries-at-hi-dimensions-orthoginality\"\u003ehttps://softwaredoug.com/blog/2022/12/26/surpries-at-hi-dimensions-orthoginality\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46469618\"\u003ehttps://news.ycombinator.com/item?id=46469618\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Daft Punk Easter Egg in the BPM Tempo of Harder, Better, Faster, Stronger?",
+      "link": "https://www.madebywindmill.com/tempi/blog/hbfs-bpm/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-02T21:27:44Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.madebywindmill.com/tempi/blog/hbfs-bpm/\"\u003ehttps://www.madebywindmill.com/tempi/blog/hbfs-bpm/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46469577\"\u003ehttps://news.ycombinator.com/item?id=46469577\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 4\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Child abuse images found in AI training data [2023]",
+      "link": "https://www.axios.com/2023/12/20/ai-training-data-child-abuse-images-stanford",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-02T21:26:59Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.axios.com/2023/12/20/ai-training-data-child-abuse-images-stanford\"\u003ehttps://www.axios.com/2023/12/20/ai-training-data-child-abuse-images-stanford\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46469568\"\u003ehttps://news.ycombinator.com/item?id=46469568\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    }
+  ],
+  "generatedAt": "2026-01-03T07:09:19.901152441+09:00"
+}
