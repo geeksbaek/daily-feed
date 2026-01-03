@@ -1,0 +1,250 @@
+{
+  "date": "2026-01-04",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2026년 1월 3일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** 1995년 빌 게이츠의 인터넷 메모가 주는 교훈부터 2026년 퍼블릭 도메인의 해방, 그리고 여전히 해결되지 않은 IPv6의 미스터리까지 과거와 현재를 잇는 기술 인사이트.\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### 📜 역사는 반복된다: 빌 게이츠의 '인터넷 해일(Internet Tidal Wave)' 메모 재조명\n1995년 5월, 빌 게이츠가 마이크로소프트 임직원에게 보낸 전설적인 메모가 다시금 화제입니다. 당시 그는 인터넷을 \"모든 규칙을 바꿀 해일\"로 규정하며 회사의 방향을 완전히 틀었습니다. 2026년 현재, 이 메모가 다시 회자되는 이유는 명확합니다. 현재의 AI 혁명이 당시의 인터넷 혁명과 놀랍도록 유사한 패턴을 보이기 때문입니다. 기술의 변곡점에서 리더가 가져야 할 통찰력과 위기감을 보여주는 역사적 사료입니다.\n\u003e **Key Point:** 기술의 거대한 파도 앞에서 기존의 성공 방정식(당시의 윈도우 독점 등)을 과감히 버리고 새로운 흐름에 올라타야 생존할 수 있다는 교훈은 AI 시대인 오늘날에도 유효합니다. [^12]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. DoorDash는 무엇이 다른가: 배달 앱 그 이상의 물류\n- **What:** DoorDash가 단순한 음식 배달 앱이 아닌, 초지역적(Hyper-local) 물류 플랫폼으로서의 차별점을 강조했습니다.\n- **Why:** 경쟁사들이 마케팅에 집중할 때, DoorDash는 운영 효율성과 데이터 기반의 물류 최적화에 집중하여 수익성을 개선했습니다.\n- **Impact:** 이는 O2O(Online to Offline) 비즈니스에서 기술적 해자(Moat)가 결국 '물류 최적화 알고리즘'과 '운영 효율성'에서 온다는 점을 시사합니다. [^1]\n\n### 2. IPv6 30주년: 왜 아직도 세계를 장악하지 못했나\n- **What:** 인터넷 주소 고갈 문제를 해결하기 위해 등장한 IPv6가 30주년을 맞았지만, 여전히 완전한 전환은 이루어지지 않았습니다.\n- **Why:** NAT(Network Address Translation) 기술이 IPv4의 수명을 연장시켰고, 레거시 인프라를 교체하는 비용과 복잡성이 예상보다 컸기 때문입니다.\n- **Impact:** IoT와 모바일 기기의 폭발적 증가로 IPv6 전환은 필연적이지만, 그 속도는 기술적 필요성보다 경제적 논리에 의해 결정되고 있음을 보여줍니다. [^25]\n\n### 3. 2026년 퍼블릭 도메인 데이: 문화 유산의 해방\n- **What:** 2026년을 맞아 1930년(미국 기준)의 문학, 예술 작품들이 저작권 만료로 퍼블릭 도메인이 되었습니다. 스탠더드 이북스(Standard Ebooks) 등에서 이를 기념하고 있습니다.\n- **Why:** 저작권 보호 기간 종료는 창작물에 대한 자유로운 접근과 2차 창작을 가능하게 하여 문화적 풍요를 가져옵니다.\n- **Impact:** 고전 작품들의 디지털 복원과 AI 학습 데이터로서의 활용이 더욱 활발해질 전망입니다. [^21][^29]\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **Birthday-Cake Loading** | 저사양 기기에서도 성능 저하 없이 화려한 로딩 애니메이션을 구현하는 Next.js용 라이브러리. [^7] |\n| **Tool** | **Logicrepo** | 비즈니스 로직을 YAML로 정의하고 CI 환경에서 테스트할 수 있게 해주는 도구. [^15] |\n| **Tool** | **DocDucky** | 복잡한 문서와 정책을 AI를 활용해 명확하고 이해하기 쉬운 설명으로 변환해주는 서비스. [^10] |\n| **Tool** | **typed-pytest** | Python 테스트 시 MagicMock 사용으로 잃어버린 IDE 자동완성과 타입 안전성을 복구해주는 플러그인. [^27] |\n| **Arch** | **Execution Control Layer** | AI 에이전트를 위한 참조 아키텍처(v1.1.0). 실행 제어 계층을 명확히 분리. [^20] |\n| **Theory** | **Dynamic Array Survey** | 동적 배열(Dynamic Array) 구조에 대한 심층적인 조사 및 분석 자료. [^17] |\n| **Conf** | **39C3 영상 모음** | 제39회 카오스 커뮤니케이션 콩그레스(해킹/보안 컨퍼런스)의 발표 영상 아카이브. [^23] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **State of the Server 2026**: 2026년 시점에서의 개인 서버 호스팅 및 셀프 호스팅 현황 점검. [^5]\n* **Git 이야기: 이번엔 재미없다**: Git 사용 중 겪은 끔찍한 실수와 복구 과정에 대한 경험담. [^19]\n* **POSSE (Publish Own Site...)**: 콘텐츠를 자신의 사이트에 먼저 올리고 다른 플랫폼으로 배포하는 전략의 중요성. [^28]\n* **텍스트 파일 가계부 10년**: 10년간 일반 텍스트 파일(Plain text)로 개인 재정을 관리해온 미니멀리즘 사례. [^30]\n\n#### 🤖 AI \u0026 미래 기술\n* **AI 산업의 신호와 소음**: 현재 AI 업계의 수많은 뉴스 중 진짜 '신호'를 구별하는 방법에 대한 고찰. [^6]\n* **안전장치 없는 챗봇**: 안전성 정렬(Safety Alignment)을 제거한 챗봇 공개 (논란 예상). [^13]\n* **Office365 Copilot 비활성화 방법**: 기업 환경에서 강제되는 AI 기능을 끄고 싶어 하는 사용자들의 기술적 논의. [^8]\n* **멘탈 모델 형성을 위한 프로그래밍 교육**: 단순 코딩이 아닌 사고의 틀(Mental Model)을 구축하는 교육 방법론. [^9]\n\n#### 🌍 사회 \u0026 글로벌 이슈\n* **베네수엘라 침공의 합법성**: 국제법 관점에서 본 베네수엘라 사태 분석. [^2]\n* **이란 시위 사망자 발생**: 이란 내 시위 도중 최소 10명의 사망자가 발생했다는 안타까운 소식. [^4]\n* **부모 통제 기능의 역설**: 디지털 기기의 부모 통제 기능이 실제로는 부모의 편의를 위한 것이지 아이를 위한 것이 아니라는 비판. [^24]\n* **작은 한 걸음 (Take One Small Step)**: 거창한 목표보다 작은 실천의 중요성을 강조하는 에세이. [^3]\n* **J.C. Kumarappa**: 간디 경제학의 기초를 닦은 경제학자 조셉 첼라두라이 쿠마라파 조명. [^18]\n\n#### ⚙️ 하드웨어 \u0026 비즈니스\n* **Sandvik 배터리 교체형 채굴 장비**: Eldorado 금광에 도입된 전기(EV) 채굴 장비와 배터리 교체 시스템. [^11]\n* **2026년 컴퓨터 부품 가격 예측**: 향후 하드웨어 시장 가격 변동에 대한 커뮤니티의 예측과 토론. [^16]\n* **Clicks Communicator**: 물리 키보드 액세서리 등 새로운 입력 장치에 대한 소식. [^22]\n* **산드라 블록의 1995년**: 1995년 영화 \u003c네트\u003e 등에서 보여준 초기 인터넷 사용 모습에 대한 향수. [^14]\n* **Daft Punk 이스터에그**: 명곡 ‘Harder, Better, Faster, Stronger’의 BPM에 숨겨진 비밀. [^26]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘은 1995년과 2026년이 교차하는 날입니다. 빌 게이츠의 1995년 메모와 산드라 블록의 인터넷 사용 모습은 과거를 상기시키고, 2026년의 퍼블릭 도메인 해방과 서버 현황은 현재를 보여줍니다. 기술은 변하지만, \"변화에 적응하지 못하면 도태된다\"는 진리는 변하지 않습니다. 주말 동안 여러분만의 '개인 서버'나 '텍스트 파일'을 점검해보는 건 어떨까요?\n\n---\n\n[^1]: How DoorDash Is Different - https://about.doordash.com/en-us/news/how-doordash-is-different\n[^2]: The Legality of the Venezuela Invasion - https://www.execfunctions.org/p/on-the-legality-of-the-venezuela\n[^3]: Take One Small Step - https://thinkhuman.com/take-one-small-step/\n[^4]: Iranian Islamic Regime kills at least 10 protestors - https://www.msn.com/en-us/news/world/death-toll-rises-to-at-least-10-in-violence-around-iran-protests/ar-AA1TuHXW\n[^5]: State of the Server 2026 - https://theorangeone.net/posts/state-of-the-server-2026/\n[^6]: AI Industry Signals from Noise - https://neosignal.io\n[^7]: Show HN: Birthday-Cake Loading – Rich Next.js without punishing slow devices - https://github.com/shiftbloom-studio/birthday-cake-loading\n[^8]: Ask HN: How to Disable Copilot in Office365? - https://news.ycombinator.com/item?id=46482002\n[^9]: Teaching Programming with the Aim of Building a Mental Model - http://andersource.dev/2026/01/03/programming-mental-model.html\n[^10]: DocDucky – turn messy docs and policies into clear, usable explanations (EN/ES) - https://docducky.com/\n[^11]: Sandvik bringing battery-swap mining rigs to Eldorado Gold mine - https://electrek.co/2026/01/03/sandvik-bringing-battery-swap-mining-rigs-to-eldorado-gold-mine/\n[^12]: Internet Tidal Wave Memo Transcript (May 1995, Bill Gates) - https://ends.substack.com/p/internet-tidal-wave\n[^13]: Show HN: Chatbot Without Safety Alignment - https://coralflavor.com/truth\n[^14]: Actress Sandra Bullock purchasing a movie ticket online (1995) - https://twitter.com/Todd_Spence/status/2007155860544594211\n[^15]: Logicrepo – Define business logic in YAML, test it in CI - https://github.com/alexdrimbe/logicrepo\n[^16]: Ask HN: What is your prediction for the price of computer parts in 2026? - https://news.ycombinator.com/item?id=46481925\n[^17]: A survey of dynamic array structures - https://azmr.uk/dyn/\n[^18]: Joseph Chelladurai Kumarappa - https://en.wikipedia.org/wiki/J._C._Kumarappa\n[^19]: A Git story: Not so fun this time - https://blog.brachiosoft.com/en/posts/git/\n[^20]: Execution Control Layer: a reference architecture for AI agents - https://github.com/Rick-Kirby/execution-control-layer/releases/tag/v1.1.0\n[^21]: 스탠더드 이북스: 2026년 문학 분야 퍼블릭 도메인 데이 - https://news.hada.io/topic?id=25537\n[^22]: Clicks Communicator - https://news.hada.io/topic?id=25536\n[^23]: 39번째 카오스 커뮤니케이션 콩그레스(39C3) 영상 모음 - https://news.hada.io/topic?id=25535\n[^24]: 부모 통제 기능은 부모를 위한 것이 아니다 - https://news.hada.io/topic?id=25534\n[^25]: IPv6가 30주년을 맞았지만 여전히 세계를 장악하지 못한 이유 - https://news.hada.io/topic?id=25533\n[^26]: Daft Punk의 ‘Harder, Better, Faster, Stronger’ BPM에 숨겨진 이스터에그? - https://news.hada.io/topic?id=25531\n[^27]: typed-pytest: MagicMock에서 잃어버린 IDE 자동완성과 타입 안전성 되찾기 - https://news.hada.io/topic?id=25530\n[^28]: 자신의 사이트에 게시하고, 다른 곳에 동시 배포하기 - https://news.hada.io/topic?id=25529\n[^29]: 2026년 퍼블릭 도메인 데이 축하 - https://news.hada.io/topic?id=25528\n[^30]: 10년간의 개인 재정을 일반 텍스트 파일로 관리한 기록 - https://news.hada.io/topic?id=25527\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **How DoorDash Is Different**\n   - 출처: Hacker News\n   - 링크: https://about.doordash.com/en-us/news/how-doordash-is-different\n\n2. **The Legality of the Venezuela Invasion**\n   - 출처: Hacker News\n   - 링크: https://www.execfunctions.org/p/on-the-legality-of-the-venezuela\n\n3. **Take One Small Step**\n   - 출처: Hacker News\n   - 링크: https://thinkhuman.com/take-one-small-step/\n\n4. **Iranian Islamic Regime kills at least 10 protestors**\n   - 출처: Hacker News\n   - 링크: https://www.msn.com/en-us/news/world/death-toll-rises-to-at-least-10-in-violence-around-iran-protests/ar-AA1TuHXW\n\n5. **State of the Server 2026**\n   - 출처: Hacker News\n   - 링크: https://theorangeone.net/posts/state-of-the-server-2026/\n\n6. **AI Industry Signals from Noise**\n   - 출처: Hacker News\n   - 링크: https://neosignal.io\n\n7. **Show HN: Birthday-Cake Loading – Rich Next.js without punishing slow devices**\n   - 출처: Hacker News\n   - 링크: https://github.com/shiftbloom-studio/birthday-cake-loading\n\n8. **Ask HN: How to Disable Copilot in Office365?**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=46482002\n\n9. **Teaching Programming with the Aim of Building a Mental Model**\n   - 출처: Hacker News\n   - 링크: http://andersource.dev/2026/01/03/programming-mental-model.html\n\n10. **DocDucky – turn messy docs and policies into clear, usable explanations (EN/ES)**\n   - 출처: Hacker News\n   - 링크: https://docducky.com/\n\n11. **Sandvik bringing battery-swap mining rigs to Eldorado Gold mine**\n   - 출처: Hacker News\n   - 링크: https://electrek.co/2026/01/03/sandvik-bringing-battery-swap-mining-rigs-to-eldorado-gold-mine/\n\n12. **Internet Tidal Wave Memo Transcript (May 1995, Bill Gates)**\n   - 출처: Hacker News\n   - 링크: https://ends.substack.com/p/internet-tidal-wave\n\n13. **Show HN: Chatbot Without Safety Alignment**\n   - 출처: Hacker News\n   - 링크: https://coralflavor.com/truth\n\n14. **Actress Sandra Bullock purchasing a movie ticket online (1995)**\n   - 출처: Hacker News\n   - 링크: https://twitter.com/Todd_Spence/status/2007155860544594211\n\n15. **Logicrepo – Define business logic in YAML, test it in CI**\n   - 출처: Hacker News\n   - 링크: https://github.com/alexdrimbe/logicrepo\n\n16. **Ask HN: What is your prediction for the price of computer parts in 2026?**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=46481925\n\n17. **A survey of dynamic array structures**\n   - 출처: Hacker News\n   - 링크: https://azmr.uk/dyn/\n\n18. **Joseph Chelladurai Kumarappa**\n   - 출처: Hacker News\n   - 링크: https://en.wikipedia.org/wiki/J._C._Kumarappa\n\n19. **A Git story: Not so fun this time**\n   - 출처: Hacker News\n   - 링크: https://blog.brachiosoft.com/en/posts/git/\n\n20. **Execution Control Layer: a reference architecture for AI agents**\n   - 출처: Hacker News\n   - 링크: https://github.com/Rick-Kirby/execution-control-layer/releases/tag/v1.1.0\n\n21. **스탠더드 이북스: 2026년 문학 분야 퍼블릭 도메인 데이**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25537\n\n22. **Clicks Communicator**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25536\n\n23. **39번째 카오스 커뮤니케이션 콩그레스(39C3) 영상 모음**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25535\n\n24. **부모 통제 기능은 부모를 위한 것이 아니다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25534\n\n25. **IPv6가 30주년을 맞았지만 여전히 세계를 장악하지 못한 이유**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25533\n\n26. **Daft Punk의 ‘Harder, Better, Faster, Stronger’ BPM에 숨겨진 이스터에그?**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25531\n\n27. **typed-pytest: MagicMock에서 잃어버린 IDE 자동완성과 타입 안전성 되찾기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25530\n\n28. **자신의 사이트에 게시하고, 다른 곳에 동시 배포하기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25529\n\n29. **2026년 퍼블릭 도메인 데이 축하**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25528\n\n30. **10년간의 개인 재정을 일반 텍스트 파일로 관리한 기록**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25527\n\n\n",
+  "articles": [
+    {
+      "title": "How DoorDash Is Different",
+      "link": "https://about.doordash.com/en-us/news/how-doordash-is-different",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-03T22:02:13Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://about.doordash.com/en-us/news/how-doordash-is-different\"\u003ehttps://about.doordash.com/en-us/news/how-doordash-is-different\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46482143\"\u003ehttps://news.ycombinator.com/item?id=46482143\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Legality of the Venezuela Invasion",
+      "link": "https://www.execfunctions.org/p/on-the-legality-of-the-venezuela",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-03T22:00:21Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.execfunctions.org/p/on-the-legality-of-the-venezuela\"\u003ehttps://www.execfunctions.org/p/on-the-legality-of-the-venezuela\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46482127\"\u003ehttps://news.ycombinator.com/item?id=46482127\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Take One Small Step",
+      "link": "https://thinkhuman.com/take-one-small-step/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-03T21:58:30Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://thinkhuman.com/take-one-small-step/\"\u003ehttps://thinkhuman.com/take-one-small-step/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46482107\"\u003ehttps://news.ycombinator.com/item?id=46482107\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Iranian Islamic Regime kills at least 10 protestors",
+      "link": "https://www.msn.com/en-us/news/world/death-toll-rises-to-at-least-10-in-violence-around-iran-protests/ar-AA1TuHXW",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-03T21:56:48Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.msn.com/en-us/news/world/death-toll-rises-to-at-least-10-in-violence-around-iran-protests/ar-AA1TuHXW\"\u003ehttps://www.msn.com/en-us/news/world/death-toll-rises-to-at-least-10-in-violence-around-iran-protests/ar-AA1TuHXW\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46482083\"\u003ehttps://news.ycombinator.com/item?id=46482083\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "State of the Server 2026",
+      "link": "https://theorangeone.net/posts/state-of-the-server-2026/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-03T21:54:52Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://theorangeone.net/posts/state-of-the-server-2026/\"\u003ehttps://theorangeone.net/posts/state-of-the-server-2026/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46482058\"\u003ehttps://news.ycombinator.com/item?id=46482058\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "AI Industry Signals from Noise",
+      "link": "https://neosignal.io",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-03T21:54:32Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://neosignal.io\"\u003ehttps://neosignal.io\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46482052\"\u003ehttps://news.ycombinator.com/item?id=46482052\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Birthday-Cake Loading – Rich Next.js without punishing slow devices",
+      "link": "https://github.com/shiftbloom-studio/birthday-cake-loading",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-03T21:53:43Z",
+      "description": "\n\u003cp\u003eHey HN,\nI overloaded my personal Next.js portfolio with ambient audio, sound effects, and heavy animations. It felt magical on my machine—but on mobile or slower connections, it crawled. Users bounced before hearing a note or seeing a transition.\nStandard fixes (lazy loading, code splitting) helped marginally, but I wanted real progressive enhancement: deliver a fast, accessible baseline first, then upgrade to the rich stuff only when the device/network could truly afford it.\nSo I built Birthday-Cake Loading (BCL)—a tiny runtime that detects capability signals (memory, CPU, network, reduced-motion/data prefs), buckets them into conservative tiers (base → ultra), and lets you gate features with simple components like \u003cCakeLayer\u003e and \u003cCakeUpgrade\u003e.\nNow my site loads instantly with static fallbacks, then smoothly adds motion/audio/images when safe. Lighthouse scores improved dramatically, and it respects user preferences out of the box.\nOpen source (Apache 2.0), tree-shakeable, Next.js App Router ready with SSR bootstrap support.\nGitHub: \u003ca href=\"https://github.com/shiftbloom-studio/birthday-cake-loading\" rel=\"nofollow\"\u003ehttps://github.com/shiftbloom-studio/birthday-cake-loading\u003c/a\u003e\nnpm: @shiftbloom-studio/birthday-cake-loading\nDemo in the repo (examples/next-demo) (W.I.P.)\nWould love your thoughts, brutal feedback, or war stories from media-heavy sites!\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46482039\"\u003ehttps://news.ycombinator.com/item?id=46482039\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Ask HN: How to Disable Copilot in Office365?",
+      "link": "https://news.ycombinator.com/item?id=46482002",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-03T21:50:31Z",
+      "description": "\n\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46482002\"\u003ehttps://news.ycombinator.com/item?id=46482002\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 2\u003c/p\u003e\n"
+    },
+    {
+      "title": "Teaching Programming with the Aim of Building a Mental Model",
+      "link": "http://andersource.dev/2026/01/03/programming-mental-model.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-03T21:49:09Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"http://andersource.dev/2026/01/03/programming-mental-model.html\"\u003ehttp://andersource.dev/2026/01/03/programming-mental-model.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46481986\"\u003ehttps://news.ycombinator.com/item?id=46481986\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "DocDucky – turn messy docs and policies into clear, usable explanations (EN/ES)",
+      "link": "https://docducky.com/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-03T21:48:41Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://docducky.com/\"\u003ehttps://docducky.com/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46481984\"\u003ehttps://news.ycombinator.com/item?id=46481984\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Sandvik bringing battery-swap mining rigs to Eldorado Gold mine",
+      "link": "https://electrek.co/2026/01/03/sandvik-bringing-battery-swap-mining-rigs-to-eldorado-gold-mine/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-03T21:47:39Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://electrek.co/2026/01/03/sandvik-bringing-battery-swap-mining-rigs-to-eldorado-gold-mine/\"\u003ehttps://electrek.co/2026/01/03/sandvik-bringing-battery-swap-mining-rigs-to-eldorado-gold-mine/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46481974\"\u003ehttps://news.ycombinator.com/item?id=46481974\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Internet Tidal Wave Memo Transcript (May 1995, Bill Gates)",
+      "link": "https://ends.substack.com/p/internet-tidal-wave",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-03T21:47:07Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://ends.substack.com/p/internet-tidal-wave\"\u003ehttps://ends.substack.com/p/internet-tidal-wave\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46481971\"\u003ehttps://news.ycombinator.com/item?id=46481971\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Chatbot Without Safety Alignment",
+      "link": "https://coralflavor.com/truth",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-03T21:46:40Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://coralflavor.com/truth\"\u003ehttps://coralflavor.com/truth\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46481967\"\u003ehttps://news.ycombinator.com/item?id=46481967\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 4\u003c/p\u003e\n\u003cp\u003e# Comments: 2\u003c/p\u003e\n"
+    },
+    {
+      "title": "Actress Sandra Bullock purchasing a movie ticket online (1995)",
+      "link": "https://twitter.com/Todd_Spence/status/2007155860544594211",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-03T21:45:15Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://twitter.com/Todd_Spence/status/2007155860544594211\"\u003ehttps://twitter.com/Todd_Spence/status/2007155860544594211\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46481953\"\u003ehttps://news.ycombinator.com/item?id=46481953\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Logicrepo – Define business logic in YAML, test it in CI",
+      "link": "https://github.com/alexdrimbe/logicrepo",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-03T21:44:00Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/alexdrimbe/logicrepo\"\u003ehttps://github.com/alexdrimbe/logicrepo\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46481935\"\u003ehttps://news.ycombinator.com/item?id=46481935\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Ask HN: What is your prediction for the price of computer parts in 2026?",
+      "link": "https://news.ycombinator.com/item?id=46481925",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-03T21:42:17Z",
+      "description": "\n\u003cp\u003eI am considering doing a build but the pricing makes me want to gag. RAM pricing particularly seems to be climbing aggressively with no end in sight. I feel like I should build a computer ASAP and buy as much as I can afford now. Due to AI there will be significant pressure on RAM and GPUs IMO. There is a rumor that Samsung will pull out of the NAND/Storage market. In a situation where there is a problem in Taiwan, CPUs would increase drastically. What are your predictions? Do you think if you were to hold out 6-12 months things would improve? Maybe tariffs or some other factor will change and pricing will fall? What do you think the general parts market trends are for 2026?\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46481925\"\u003ehttps://news.ycombinator.com/item?id=46481925\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "A survey of dynamic array structures",
+      "link": "https://azmr.uk/dyn/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-03T21:42:08Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://azmr.uk/dyn/\"\u003ehttps://azmr.uk/dyn/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46481923\"\u003ehttps://news.ycombinator.com/item?id=46481923\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Joseph Chelladurai Kumarappa",
+      "link": "https://en.wikipedia.org/wiki/J._C._Kumarappa",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-03T21:39:28Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://en.wikipedia.org/wiki/J._C._Kumarappa\"\u003ehttps://en.wikipedia.org/wiki/J._C._Kumarappa\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46481902\"\u003ehttps://news.ycombinator.com/item?id=46481902\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "A Git story: Not so fun this time",
+      "link": "https://blog.brachiosoft.com/en/posts/git/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-03T21:37:44Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://blog.brachiosoft.com/en/posts/git/\"\u003ehttps://blog.brachiosoft.com/en/posts/git/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46481883\"\u003ehttps://news.ycombinator.com/item?id=46481883\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Execution Control Layer: a reference architecture for AI agents",
+      "link": "https://github.com/Rick-Kirby/execution-control-layer/releases/tag/v1.1.0",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-03T21:34:36Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/Rick-Kirby/execution-control-layer/releases/tag/v1.1.0\"\u003ehttps://github.com/Rick-Kirby/execution-control-layer/releases/tag/v1.1.0\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46481850\"\u003ehttps://news.ycombinator.com/item?id=46481850\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "스탠더드 이북스: 2026년 문학 분야 퍼블릭 도메인 데이",
+      "link": "https://news.hada.io/topic?id=25537",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-04T05:32:45+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e매년 1월 1일은 전 세계에서 \u003cstrong\u003e퍼블릭 도메인 데이\u003c/strong\u003e로, 저작권이 만료된 작품들이 자유롭게 공개되는 날임\u003c/li\u003e\n\u003cli\u003e2026년에는 \u003cstrong\u003e1930년에 출판된 책들\u003c/strong\u003e이 미국 퍼블릭 도메인에 편입되어 누구나 읽고, 공유하고, 재활용할 수 있게 됨\u003c/li\u003e\n\u003cli\u003e스탠더드 이북스는 이를 맞아 \u003cstr...\u003c/p\u003e"
+    },
+    {
+      "title": "Clicks Communicator",
+      "link": "https://news.hada.io/topic?id=25536",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-04T03:33:09+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e물리 키보드와 최신 스마트폰 기능을 결합한 \u003cstrong\u003e커뮤니케이션 특화 스마트폰\u003c/strong\u003e으로, 소음 많은 환경에서도 효율적 소통을 지원\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e인체공학적 키보드\u003c/strong\u003e와 \u003cstrong\u003e터치 감응식 패드\u003c/strong\u003e를 통해 타이핑과 스크롤을 동시에 수행 가능\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e음성 입력 버튼...\u003c/p\u003e"
+    },
+    {
+      "title": "39번째 카오스 커뮤니케이션 콩그레스(39C3) 영상 모음",
+      "link": "https://news.hada.io/topic?id=25535",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-04T01:38:14+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e독일 함부르크에서 열리는 \u003cstrong\u003e39번째 카오스 커뮤니케이션 콩그레스(39C3)\u003c/strong\u003e 는 기술, 사회, 유토피아를 주제로 한 4일간의 국제 해커 컨퍼런스임\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eChaos Computer Club(CCC)\u003c/strong\u003e 과 자원봉사자들이 주최하며, 정보기술을 비롯한 다양한 분야의 강연, 워크숍, 이벤트를 포함...\u003c/p\u003e"
+    },
+    {
+      "title": "부모 통제 기능은 부모를 위한 것이 아니다",
+      "link": "https://news.hada.io/topic?id=25534",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-04T01:35:14+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e‘아동용 안전폰’ Gabb 기기에서 낯선 성인이 12세 아들과 연락한 사건\u003c/strong\u003e을 통해, 부모 통제 기능의 실효성이 드러남\u003c/li\u003e\n\u003cli\u003eGabb의 \u003cstrong\u003e승인 앱 목록에 위험 앱 GroupMe가 포함\u003c/strong\u003e되어 있었고, 실제로는 낯선 사람과의 대화가 가능했음\u003c/li\u003e\n\u003cli\u003eNintendo Switch와 \u003cstrong\u003eMicr...\u003c/p\u003e"
+    },
+    {
+      "title": "IPv6가 30주년을 맞았지만 여전히 세계를 장악하지 못한 이유",
+      "link": "https://news.hada.io/topic?id=25533",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-03T23:33:31+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e1995년 등장한 \u003cstrong\u003eIPv6\u003c/strong\u003e는 32비트에서 128비트로 확장된 주소 체계를 통해 \u003cstrong\u003e인터넷 주소 고갈 문제\u003c/strong\u003e를 해결하려 했음\u003c/li\u003e\n\u003cli\u003e그러나 \u003cstrong\u003eIPv4와의 비호환성\u003c/strong\u003e, \u003cstrong\u003e기능적 차별성 부족\u003c/strong\u003e, \u003cstrong\u003eNAT의 확산\u003c/strong\u003e 등으로 인해 전환이 지연됨\u003c/li\u003e\n\u003cl...\u003c/p\u003e"
+    },
+    {
+      "title": "Daft Punk의 ‘Harder, Better, Faster, Stronger’ BPM에 숨겨진 이스터에그?",
+      "link": "https://news.hada.io/topic?id=25531",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-03T17:32:39+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eDaft Punk의 대표곡 \u003cstrong\u003e‘Harder, Better, Faster, Stronger’\u003c/strong\u003e 의 실제 템포가 일반적으로 알려진 123 BPM이 아닌 \u003cstrong\u003e123.45 BPM\u003c/strong\u003e으로 측정됨\u003c/li\u003e\n\u003cli\u003e작성자는 자신의 \u003cstrong\u003eBPM 측정 앱 Tempi\u003c/strong\u003e를 이용해 정밀 분석을 수행, 두 가지 음원 버전 모두 123.45에 근접한 결...\u003c/p\u003e"
+    },
+    {
+      "title": "typed-pytest: MagicMock에서 잃어버린 IDE 자동완성과 타입 안전성 되찾기",
+      "link": "https://news.hada.io/topic?id=25530",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-03T15:12:23+09:00",
+      "description": "\u003cp\u003ePytest로 테스트 코드를 작성하면서 MagicMock을 사용할 때, IDE 자동완성이 안 되거나 메서드 이름을 잘못 적어(오타) 삽질했던 경험이 다들 한두 번씩은 있으실 겁니다.\u003c/p\u003e\n\u003cp\u003e기존의 mock은 매우 강력하지만, 타입 힌트가 소실되어 mypy나 pyright 같은 타입 검사기의 도움을 받기 어려웠습니다. 이를 해결하기 위"
+    },
+    {
+      "title": "자신의 사이트에 게시하고, 다른 곳에 동시 배포하기",
+      "link": "https://news.hada.io/topic?id=25529",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-03T12:33:09+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003ePOSSE(Publish on your Own Site, Syndicate Elsewhere)\u003c/strong\u003e 는 개인 사이트에 먼저 게시한 뒤, 소셜미디어 등 외부 플랫폼에 복제본이나 링크를 배포하는 \u003cstrong\u003e콘텐츠 자율 배포 방식\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e이 방식은 \u003cstrong\u003e콘텐츠 소유권과 원본 URL\u003c/strong\u003e을 유지하면서도, \u003cstrong\u003e친구...\u003c/p\u003e"
+    },
+    {
+      "title": "2026년 퍼블릭 도메인 데이 축하",
+      "link": "https://news.hada.io/topic?id=25528",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-03T09:56:13+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e매년 1월 1일은 전 세계에서 \u003cstrong\u003e저작권이 만료된 작품들이 퍼블릭 도메인으로 편입되는 날\u003c/strong\u003e로, 2026년에는 다양한 문학·음악·영화 작품이 새로 포함됨\u003c/li\u003e\n\u003cli\u003e올해는 \u003cstrong\u003e윌리엄 포크너, 랭스턴 휴즈, 아가사 크리스티, 헤르만 헤세, 로버트 무질\u003c/strong\u003e 등의 대표작이 미국에서 공개 영역...\u003c/p\u003e"
+    },
+    {
+      "title": "10년간의 개인 재정을 일반 텍스트 파일로 관리한 기록",
+      "link": "https://news.hada.io/topic?id=25527",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-03T09:53:13+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eBeancount\u003c/strong\u003e를 이용해 10년간 개인 재정을 \u003cstrong\u003e일반 텍스트 파일\u003c/strong\u003e로 기록하며, 약 45,000줄의 데이터와 10,000건의 거래를 관리\u003c/li\u003e\n\u003cli\u003e매달 30~45분을 들여 \u003cstrong\u003e은행 명세서 CSV 파일을 가져와 수동·자동으로 정리\u003c/strong\u003e하고, 연도별 파일로 분리해 가독성을 유지\u003c/li\u003e\n...\u003c/p\u003e"
+    }
+  ],
+  "generatedAt": "2026-01-04T07:08:51.200830325+09:00"
+}
