@@ -1,0 +1,250 @@
+{
+  "date": "2026-01-05",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2026년 1월 4일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** 중국 반도체 굴기의 새로운 도전장, 안드로이드 생태계로 확장되는 Swift, 그리고 드론을 격추하는 레이저 무기까지 기술과 지정학이 교차하는 하루입니다.\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### 🇨🇳 중국 CXMT, 42억 달러 IPO로 글로벌 메모리 시장 도전장\n중국의 주요 DRAM 제조사인 창신메모리테크놀로지(CXMT)가 약 42억 달러(약 5조 9천억 원) 규모의 기업공개(IPO)를 추진합니다. 이는 미국의 대중국 반도체 제재 속에서도 중국이 자체 공급망을 강화하려는 강력한 의지를 보여줍니다. 삼성전자, SK하이닉스, 마이크론이 장악한 글로벌 메모리 시장에서, 중국 정부의 전폭적인 지원을 등에 업은 CXMT가 가격 경쟁력을 앞세워 시장 점유율을 얼마나 잠식할지가 관전 포인트입니다.\n\u003e **Key Point:** 미국의 제재에도 불구하고 중국의 '반도체 자립' 시도가 자본 시장을 통해 구체화되고 있으며, 이는 장기적으로 메모리 반도체 치킨게임을 재점화할 가능성이 있습니다. [^1]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. 🍎 안드로이드 품으로 들어온 Swift\n애플 생태계의 전유물이었던 프로그래밍 언어 'Swift'로 이제 완전한 안드로이드 네이티브 앱 개발이 가능해졌습니다. 이는 단순한 크로스 플랫폼 프레임워크를 넘어, Swift 언어 자체가 안드로이드 툴체인과 결합되는 진화를 의미합니다.\n- **What:** 별도의 브리지 없이 Swift 코드로 안드로이드 UI와 로직을 제어하는 기술적 진보.\n- **Why:** 개발자들은 단일 언어(Swift)로 iOS와 안드로이드 양대 플랫폼을 모두 고성능 네이티브로 제어하기를 원해왔습니다.\n- **Impact:** Flutter나 React Native 같은 기존 크로스 플랫폼 도구와 경쟁 구도를 형성하거나, Swift가 '모바일 공용어'로 부상할 잠재력이 생겼습니다. [^3]\n\n### 2. 🪖 드론 잡는 20kW 레이저, 미 육군 실전 테스트\n미 육군이 차량에 탑재 가능한 20,000W(20kW)급 레이저 무기 시스템을 테스트하고 있습니다.\n- **What:** 드론 무력화를 위해 개발된 고출력 레이저 시스템으로, 기존의 물리적 요격 미사일보다 비용 효율이 압도적입니다.\n- **Why:** 현대전에서 드론 스웜(군집 드론) 공격이 핵심 위협으로 부상함에 따라, 저비용으로 다수의 목표물을 신속하게 처리할 방어 수단이 필수적입니다.\n- **Impact:** 방산 기술의 트렌드가 '화약'에서 '에너지'로 이동하고 있음을 시사하며, 드론 방어 체계(Anti-Drone) 시장의 급성장이 예상됩니다. [^28]\n\n### 3. 🚫 MS, 윈도우 11 '인터넷 없는 설치' 공식 차단\n마이크로소프트가 윈도우 11/10 설치 시 인터넷 연결 없이 로컬 계정으로 활성화하던 우회 경로를 공식적으로 중단했습니다.\n- **What:** 기존에 사용되던 명령 프롬프트 우회 등의 방법이 막히고, 설치 시 인터넷 연결과 MS 계정 로그인이 강제됩니다.\n- **Why:** 사용자 데이터를 클라우드 서비스(OneDrive, Copilot 등)와 결합하여 생태계 락인(Lock-in) 효과를 극대화하려는 전략입니다.\n- **Impact:** 개인정보 보호를 중시하거나 오프라인 환경을 선호하는 사용자들의 반발이 예상되며, 리눅스 등 대안 OS에 대한 관심이 소폭 증가할 수 있습니다. [^8]\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n개발자와 엔지니어를 위한 큐레이션입니다.\n\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Lang** | **C3** | C의 진화형을 표방하는 시스템 프로그래밍 언어. C ABI 호환성을 유지하며 현대적 문법 도입 [^7] |\n| **Tool** | **Redimo** | Redis 및 Valkey를 위한 GUI 툴. 큐(Queue) 관리와 작업 스케줄링 기능이 통합된 것이 특징 [^9] |\n| **Tool** | **Clawdbot** | 개인용 AI 어시스턴트 봇. 사용자의 데이터를 기반으로 맞춤형 작업을 수행하는 오픈소스 프로젝트 [^13] |\n| **Tool** | **C-Sentinel** | 시스템의 '지문(fingerprint)'을 캡처하여 AI 분석을 돕는 시스템 프로버(Prober) 도구 [^25] |\n| **Tool** | **Keeper** | 오픈소스 캘린더 동기화 도구. 여러 플랫폼의 일정을 안전하게 통합 관리 [^26] |\n| **Tool** | **Traceformer** | LLM을 활용한 PCB 회로도 검사 도구. 하드웨어 설계 오류를 AI가 사전에 탐지 [^29] |\n| **Tool** | **Stache AI** | Claude MCP(Model Context Protocol)와 통합된 AI 전용 큐레이션 스토리지 [^30] |\n| **Tool** | **TGForwarder** | 텔레그램 메시지를 다른 곳으로 자동 전달해주는 유틸리티 [^24] |\n| **Paper** | **Sculpin** | JSON 데이터를 직접 조작(Direct-Manipulation)하여 변환하는 기술에 관한 ACM 논문 [^21] |\n| **Algo** | **Infinity** | 게임 개발이나 알고리즘에서 '무한대(Infinity)' 개념을 다루는 방법에 대한 심층 가이드 [^14] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n\n#### 🌍 세계 \u0026 사회 (Breaking)\n* **트럼프, 마두로 생포 발표**: 베네수엘라 카라카스 폭발 사고와 함께 트럼프 전 대통령이 마두로 부부 생포를 주장하는 대형 지정학적 이슈가 발생했습니다. [^5]\n* **우리가 힘든 이유**: 현대인의 고통과 심리에 대한 철학적 고찰을 담은 에세이입니다. [^6]\n* **식물 생물학과 우주 탐사**: 우주 환경에서의 지속 가능성을 위해 식물 생물학을 어떻게 활용할지에 대한 연구입니다. [^17]\n\n#### 💻 개발 \u0026 인프라\n* **AI 뉴스 큐레이터 (n8n+OpenAI)**: RSS 피드를 AI로 필터링하여 개인화된 뉴스를 받아보는 자동화 워크플로우 구축기입니다. [^22]\n* **맥에서 리눅스로 10년 만의 이주**: 10년 넘게 Mac을 쓰던 개발자가 리눅스로 넘어가며 느낀 장단점과 설정기입니다. [^23]\n* **링크드인 디플랫폼 방지**: 링크드인 계정 차단이나 데이터 소실에 대비해 자신의 데이터를 백업하고 보호하는 방법에 대한 논의입니다. [^11]\n* **일단 그냥 하세요 (Just do stuff)**: 복잡한 계획보다 실행의 중요성을 강조하는 개발자 커리어 조언입니다. [^12]\n\n#### 🤖 AI \u0026 데이터\n* **AI 구술시험 감독관**: AI 음성 에이전트를 활용해 학생들의 구술시험을 확장하고 평가하는 실험적 시도입니다. [^2]\n* **실시간 복권 확률 시각화**: 매초 복권 추첨을 시뮬레이션하여 확률의 무자비함을 시각적으로 보여주는 프로젝트입니다. [^4]\n* **CoinFountains**: 세상에서 잘 작동하고 있는 프로젝트나 아이디어를 발굴하고 성장시키는 플랫폼입니다. [^15]\n\n#### 🕹️ 게임 \u0026 레트로\n* **3일 만에 만든 타워디펜스**: 파이썬 라이브러리 `antigravity`를 활용해 단기간에 게임을 제작한 개발기입니다. [^10]\n* **영국 비디오 게임 아카이브**: 셰필드에서 영국 최초의 비디오 게임 보존 아카이브를 구축하려는 프로젝트가 시작되었습니다. [^18]\n* **C64 오토부트 분석**: 코모도어 64의 오토부트 프로그램이 작동하는 원리를 로우 레벨에서 분석했습니다. [^16]\n* **아미가 데스크탑 갤러리**: 레트로 감성이 물씬 풍기는 아미가(Amiga) OS의 데스크탑 스크린샷 모음입니다. [^19]\n* **Thinky Dailies**: 매일 새로운 퍼즐을 제공하는 두뇌 유희 게임 사이트입니다. [^20]\n* **에롤 모리스의 인터로트론**: 다큐멘터리 감독 에롤 모리스가 인터뷰 대상과 눈을 맞추기 위해 고안한 특수 장치에 대한 이야기입니다. [^27]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘 뉴스는 '**경계의 붕괴**'로 요약됩니다. 중국 반도체는 미국의 제재를 뚫고 자본 시장으로 나왔고(CXMT), Swift 언어는 애플의 담장을 넘어 안드로이드로 향했습니다(Swift on Android). 물리적 전쟁터에서는 레이저가 미사일을 대체하려 합니다(Laser Weapon). 기술은 끊임없이 기존의 장벽을 허물고 새로운 표준을 만들어내고 있습니다. 특히 베네수엘라 관련 소식은 기술 외적인 뉴스지만, 글로벌 정세가 급변하고 있음을 시사하므로 주목할 필요가 있습니다.\n\n---\n\n### Footnotes\n[^1]: 중국 DRAM 제조사 CXMT, 삼성·SK하이닉스·마이크론에 맞서 42억 달러 IPO 추진 - https://news.hada.io/topic?id=25559\n[^2]: AI 음성 에이전트를 활용한 구술시험 확장 실험 - https://news.hada.io/topic?id=25558\n[^3]: 안드로이드에서 Swift로 완전한 네이티브 앱 개발이 가능해짐 - https://news.hada.io/topic?id=25557\n[^4]: 매초 복권 추첨 - 확률이 무너지는 모습을 실시간으로 보기 - https://news.hada.io/topic?id=25556\n[^5]: 베네수엘라 수도 카라카스에서 폭발 발생, 트럼프 “미국이 마두로 대통령 부부를 생포했다” 발표 - https://news.hada.io/topic?id=25555\n[^6]: 우리가 ‘힘듦’을 겪는 이유 - https://news.hada.io/topic?id=25554\n[^7]: C3 프로그래밍 언어 - https://news.hada.io/topic?id=25553\n[^8]: Microsoft가 인터넷 없이 Windows 11/10을 정식으로 활성화하는 방법을 중단 - https://news.hada.io/topic?id=25552\n[^9]: Show GN: Redis / Valkey용 GUI 툴 (근데 이제 큐·스케줄을 곁들인) - Redimo - https://news.hada.io/topic?id=25551\n[^10]: Show GN: 3일만에 antigravity로 만들어본 타워디펜스 - https://news.hada.io/topic?id=25549\n[^11]: LinkedIn Prevents You from Deplatforming - https://news.ycombinator.com/item?id=46492774\n[^12]: You can just do stuff - https://ivie.codes/posts/just-do-stuff/\n[^13]: Clawdbot – Personal AI Assistant - https://github.com/clawdbot/clawdbot\n[^14]: Dealing with Infinity - https://www.boristhebrave.com/docs/sylves/1/articles/concepts/infinity.html\n[^15]: Show HN: CoinFountains – Grow what's working in the world - https://coinfountains.com/\n[^16]: Dissecting a C64 Autoboot Program - https://bumbershootsoft.wordpress.com/2026/01/03/dissecting-a-c64-autoboot-program/\n[^17]: Harnessing plant biology for space exploration and planetary sustainability - https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.70662\n[^18]: Sheffield project aims to build first UK video games archive - https://www.bbc.com/news/articles/cy8424xzngwo\n[^19]: Amiga Desktops Worth Seeing - https://www.datagubbe.se/wbshots/\n[^20]: Thinky Dailies, a daily puzzle adventure - https://thinkygames.com/dailies/\n[^21]: Sculpin: Direct-Manipulation Transformation of JSON - https://dl.acm.org/doi/10.1145/3746059.3747651\n[^22]: Show HN: I built a personal AI news curator to filter RSS feeds (n8n and OpenAI) - https://news.ycombinator.com/item?id=46492685\n[^23]: Moving to Linux after 10 years of Mac - https://staydecent.ca/blog/moving-to-linux-after-10-years-of-mac/\n[^24]: Telegram Forwarder - https://github.com/Linuxmaster14/TGForwarder\n[^25]: C-Sentinel: System prober that captures \"system fingerprints\" for AI analysis - https://github.com/williamofai/c-sentinel\n[^26]: Keeper: Open-Source Calendar Syncing - https://www.keeper.sh/\n[^27]: Errol Morris Interrotron - https://telepromptermirror.com/errol-morris-interrotron/\n[^28]: US Army tests 20,000W vehicle-mounted laser systems for drone defense - https://www.tomshardware.com/tech-industry/us-army-tests-20-000w-vehicle-mounted-laser-systems-for-drone-defense-updated-locust-device-is-now-more-lethal-against-drones\n[^29]: Show HN: An LLM-Powered PCB Schematic Checker (Major Update) - https://traceformer.io/\n[^30]: Show HN: Stache AI: Curated Storage for AI with Claude MCP Integration - https://github.com/orgs/stache-ai/discussions/3\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **중국 DRAM 제조사 CXMT, 삼성·SK하이닉스·마이크론에 맞서 42억 달러 IPO 추진**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25559\n\n2. **AI 음성 에이전트를 활용한 구술시험 확장 실험**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25558\n\n3. **안드로이드에서 Swift로 완전한 네이티브 앱 개발이 가능해짐**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25557\n\n4. **매초 복권 추첨 - 확률이 무너지는 모습을 실시간으로 보기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25556\n\n5. **베네수엘라 수도 카라카스에서 폭발 발생, 트럼프 “미국이 마두로 대통령 부부를 생포했다” 발표**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25555\n\n6. **우리가 ‘힘듦’을 겪는 이유**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25554\n\n7. **C3 프로그래밍 언어**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25553\n\n8. **Microsoft가 인터넷 없이 Windows 11/10을 정식으로 활성화하는 방법을 중단**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25552\n\n9. **Show GN: Redis / Valkey용 GUI 툴 (근데 이제 큐·스케줄을 곁들인) - Redimo**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25551\n\n10. **Show GN: 3일만에 antigravity로 만들어본 타워디펜스**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25549\n\n11. **LinkedIn Prevents You from Deplatforming**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=46492774\n\n12. **You can just do stuff**\n   - 출처: Hacker News\n   - 링크: https://ivie.codes/posts/just-do-stuff/\n\n13. **Clawdbot – Personal AI Assistant**\n   - 출처: Hacker News\n   - 링크: https://github.com/clawdbot/clawdbot\n\n14. **Dealing with Infinity**\n   - 출처: Hacker News\n   - 링크: https://www.boristhebrave.com/docs/sylves/1/articles/concepts/infinity.html\n\n15. **Show HN: CoinFountains – Grow what's working in the world**\n   - 출처: Hacker News\n   - 링크: https://coinfountains.com/\n\n16. **Dissecting a C64 Autoboot Program**\n   - 출처: Hacker News\n   - 링크: https://bumbershootsoft.wordpress.com/2026/01/03/dissecting-a-c64-autoboot-program/\n\n17. **Harnessing plant biology for space exploration and planetary sustainability**\n   - 출처: Hacker News\n   - 링크: https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.70662\n\n18. **Sheffield project aims to build first UK video games archive**\n   - 출처: Hacker News\n   - 링크: https://www.bbc.com/news/articles/cy8424xzngwo\n\n19. **Amiga Desktops Worth Seeing**\n   - 출처: Hacker News\n   - 링크: https://www.datagubbe.se/wbshots/\n\n20. **Thinky Dailies, a daily puzzle adventure**\n   - 출처: Hacker News\n   - 링크: https://thinkygames.com/dailies/\n\n21. **Sculpin: Direct-Manipulation Transformation of JSON**\n   - 출처: Hacker News\n   - 링크: https://dl.acm.org/doi/10.1145/3746059.3747651\n\n22. **Show HN: I built a personal AI news curator to filter RSS feeds (n8n and OpenAI)**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=46492685\n\n23. **Moving to Linux after 10 years of Mac**\n   - 출처: Hacker News\n   - 링크: https://staydecent.ca/blog/moving-to-linux-after-10-years-of-mac/\n\n24. **Telegram Forwarder**\n   - 출처: Hacker News\n   - 링크: https://github.com/Linuxmaster14/TGForwarder\n\n25. **C-Sentinel: System prober that captures \"system fingerprints\" for AI analysis**\n   - 출처: Hacker News\n   - 링크: https://github.com/williamofai/c-sentinel\n\n26. **Keeper: Open-Source Calendar Syncing**\n   - 출처: Hacker News\n   - 링크: https://www.keeper.sh/\n\n27. **Errol Morris Interrotron**\n   - 출처: Hacker News\n   - 링크: https://telepromptermirror.com/errol-morris-interrotron/\n\n28. **US Army tests 20,000W vehicle-mounted laser systems for drone defense**\n   - 출처: Hacker News\n   - 링크: https://www.tomshardware.com/tech-industry/us-army-tests-20-000w-vehicle-mounted-laser-systems-for-drone-defense-updated-locust-device-is-now-more-lethal-against-drones\n\n29. **Show HN: An LLM-Powered PCB Schematic Checker (Major Update)**\n   - 출처: Hacker News\n   - 링크: https://traceformer.io/\n\n30. **Show HN: Stache AI: Curated Storage for AI with Claude MCP Integration**\n   - 출처: Hacker News\n   - 링크: https://github.com/orgs/stache-ai/discussions/3\n\n\n",
+  "articles": [
+    {
+      "title": "중국 DRAM 제조사 CXMT, 삼성·SK하이닉스·마이크론에 맞서 42억 달러 IPO 추진",
+      "link": "https://news.hada.io/topic?id=25559",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-05T04:32:55+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e중국 \u003cstrong\u003eDRAM 제조사 CXMT\u003c/strong\u003e가 상하이 증권거래소 STAR 마켓 상장을 위해 약 \u003cstrong\u003e42억 달러(295억 위안)\u003c/strong\u003e 규모의 IPO를 신청\u003c/li\u003e\n\u003cli\u003e조달 자금은 \u003cstrong\u003e대량 생산 라인 업그레이드\u003c/strong\u003e, \u003cstrong\u003eDRAM 공정 기술 고도화\u003c/strong\u003e, \u003cstrong\u003e차세대 메모리 R\u0026amp;D\u003c/strong\u003e에 투...\u003c/p\u003e"
+    },
+    {
+      "title": "AI 음성 에이전트를 활용한 구술시험 확장 실험",
+      "link": "https://news.hada.io/topic?id=25558",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-05T03:33:16+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e대형 언어모델(LLM)\u003c/strong\u003e 의 확산으로 기존 과제·시험이 학습 이해도를 측정하지 못하게 되자, 교수진은 \u003cstrong\u003eElevenLabs 음성 AI\u003c/strong\u003e를 이용해 실시간 구술시험을 도입함\u003c/li\u003e\n\u003cli\u003e시험은 프로젝트 설명과 사례 질의 두 부분으로 구성되어, 학생이 직접 \u003cstrong\u003e결정 근거와 사고 과정...\u003c/p\u003e"
+    },
+    {
+      "title": "안드로이드에서 Swift로 완전한 네이티브 앱 개발이 가능해짐",
+      "link": "https://news.hada.io/topic?id=25557",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-05T00:32:50+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eSwift 언어로 안드로이드 네이티브 앱을 개발할 수 있는 환경\u003c/strong\u003e이 공개되어, 기존 iOS 중심의 Swift 생태계가 확장됨\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eDroid 프레임워크\u003c/strong\u003e는 AndroidX, Flexbox, Material Design을 포함한 풍부한 구성요소를 제공\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eSwiftUI와 유사한 선언형 문법\u003c/s...\u003c/p\u003e"
+    },
+    {
+      "title": "매초 복권 추첨 - 확률이 무너지는 모습을 실시간으로 보기",
+      "link": "https://news.hada.io/topic?id=25556",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-04T23:37:16+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003ePowerball과 EuroJackpot을 \u003cstrong\u003e매초 자동으로 추첨\u003c/strong\u003e해 복권 당첨 확률의 현실을 시각화하는 웹사이트\u003c/li\u003e\n\u003cli\u003ePowerball의 \u003cstrong\u003e잭팟 확률은 2억9,220만분의 1\u003c/strong\u003e, EuroJackpot은 \u003cstrong\u003e1억3,980만분의 1\u003c/strong\u003e로, 인간이 체감하기 어려운 수준의 낮은 확률\u003c/li\u003e\n\u003cli\u003e사이트는 이 ...\u003c/p\u003e"
+    },
+    {
+      "title": "베네수엘라 수도 카라카스에서 폭발 발생, 트럼프 “미국이 마두로 대통령 부부를 생포했다” 발표",
+      "link": "https://news.hada.io/topic?id=25555",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-04T23:34:16+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e미국이 \u003cstrong\u003e니콜라스 마두로 베네수엘라 대통령과 부인 실리아 플로레스\u003c/strong\u003e를 새벽 기습 작전으로 체포해 국외로 이송했다고 도널드 트럼프가 발표\u003c/li\u003e\n\u003cli\u003e트럼프는 이를 “\u003cstrong\u003e훌륭한 작전\u003c/strong\u003e”이라 칭하며 미군의 대규모 공습과 지상 작전이 동반됐다고 언급\u003c/li\u003e\n\u003cli\u003e미국 법무장관 팸...\u003c/p\u003e"
+    },
+    {
+      "title": "우리가 ‘힘듦’을 겪는 이유",
+      "link": "https://news.hada.io/topic?id=25554",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-04T21:33:03+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e한 필자가 자신의 글 스타일을 모방한 \u003cstrong\u003eAI 글쓰기 모델\u003c/strong\u003e을 실험한 사례를 통해, 인공지능이 인간의 사고 과정을 대체할 수 없음을 보여줌\u003c/li\u003e\n\u003cli\u003eAI가 생성한 글은 겉보기엔 자연스럽지만, 세부적으로 보면 \u003cstrong\u003e논리의 방향과 어조가 어긋나는 ‘언캐니 밸리’ 현상\u003c/strong\u003e을 보임\u003c/li\u003e...\u003c/p\u003e"
+    },
+    {
+      "title": "C3 프로그래밍 언어",
+      "link": "https://news.hada.io/topic?id=25553",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-04T20:32:49+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eC 언어의 문법과 의미를 계승하면서 안전성과 사용성을 강화한 진화형 언어\u003c/strong\u003e로, 기존 C 개발자에게 익숙한 환경을 유지\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e완전한 C ABI 호환성\u003c/strong\u003e을 제공해 C/C++ 프로젝트에 바로 통합 가능하며, vkQuake 일부 코드가 C3로 변환되어 c3c 컴파일러로 빌드된 사례 존재...\u003c/p\u003e"
+    },
+    {
+      "title": "Microsoft가 인터넷 없이 Windows 11/10을 정식으로 활성화하는 방법을 중단",
+      "link": "https://news.hada.io/topic?id=25552",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-04T19:33:22+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eWindows 11과 10의 오프라인 정품 인증 기능\u003c/strong\u003e이 공식적으로 중단되어, 인터넷 연결 없이 제품을 활성화할 수 없게 됨\u003c/li\u003e\n\u003cli\u003e기존에는 \u003cstrong\u003e전화 인증(telephone activation)\u003c/strong\u003e 방식을 통해 네트워크 없이도 정품 인증이 가능했음\u003c/li\u003e\n\u003cli\u003eMicrosoft가 이 방식을 \u003cstrong\u003e조용히...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: Redis / Valkey용 GUI 툴 (근데 이제 큐·스케줄을 곁들인) - Redimo",
+      "link": "https://news.hada.io/topic?id=25551",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-04T19:24:56+09:00",
+      "description": "\u003cp\u003eRedis / Valkey를 쓰면서 기존 GUI 툴들이 제 사용 패턴과 잘 맞지 않아 직접 하나 만들어봤습니다.\u003c/p\u003e\n\u003cp\u003e이 툴은 Tauri 기반이라 비교적 가볍게 동작하고,\u003cbr /\u003e\n실제로 Redis를 많이 사용하는 유즈케이스인 큐나 스케줄 관리에 맞춘 전용 뷰를 제공합니다.\u003cbr /\u003e\n(BullMQ, Celery 같은 케이스를 염두에 두고 만들"
+    },
+    {
+      "title": "Show GN: 3일만에 antigravity로 만들어본 타워디펜스",
+      "link": "https://news.hada.io/topic?id=25549",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-04T14:36:20+09:00",
+      "description": "\u003cp\u003e원래는 claude code와 cursor를 쓰다가 작년 퇴사 후 11월부터 antigravity로 갈아타고나서 이것저것 토이 웹서비스 프로젝트를 하루마다 만들고 있었는데, 갑자기 3일전(1/2)에 타워디펜스 게임을 만들어 보고 싶어졌습니다.\u003cbr /\u003e\n원래 웹frontend개발자라 앱으로 감싸기는 귀찮고, 그냥 데스크탑 브라우저 환경에서...\u003c/p\u003e"
+    },
+    {
+      "title": "LinkedIn Prevents You from Deplatforming",
+      "link": "https://news.ycombinator.com/item?id=46492774",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-04T22:04:57Z",
+      "description": "\n\u003cp\u003eSo I realized, I have a good set of contacts on LinkedIn that I want to be able to segment and reach out to this year. When I tried to download all my data, I realized that 95% of all the contacts did not have emails. So I then decided to go through each profile sequentially and look at the contact info and get the email and fill out my spreadsheet. After I spend an hour and got about 200 contacts, I got a warning that I was using an automation tool and that I needed to click to comply to not use an automation tool anymore. However, I never used an automation tool in the first place for this. I manually was extracting the emails available to me through my own contact list.  They are accusing me of abuse, but I think that in this case they are not allowing me to have access to my own data which I think is much worse. Has anyone else experienced this? Is there a solution?\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46492774\"\u003ehttps://news.ycombinator.com/item?id=46492774\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "You can just do stuff",
+      "link": "https://ivie.codes/posts/just-do-stuff/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-04T22:04:04Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://ivie.codes/posts/just-do-stuff/\"\u003ehttps://ivie.codes/posts/just-do-stuff/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46492765\"\u003ehttps://news.ycombinator.com/item?id=46492765\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Clawdbot – Personal AI Assistant",
+      "link": "https://github.com/clawdbot/clawdbot",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-04T22:03:41Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/clawdbot/clawdbot\"\u003ehttps://github.com/clawdbot/clawdbot\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46492758\"\u003ehttps://news.ycombinator.com/item?id=46492758\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Dealing with Infinity",
+      "link": "https://www.boristhebrave.com/docs/sylves/1/articles/concepts/infinity.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-04T22:03:20Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.boristhebrave.com/docs/sylves/1/articles/concepts/infinity.html\"\u003ehttps://www.boristhebrave.com/docs/sylves/1/articles/concepts/infinity.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46492754\"\u003ehttps://news.ycombinator.com/item?id=46492754\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: CoinFountains – Grow what's working in the world",
+      "link": "https://coinfountains.com/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-04T22:03:12Z",
+      "description": "\n\u003cp\u003eThird pivot of my app.\u003cp\u003eCoinFountains now allows you to Share what you're grateful for and who you wish could feel it too. See how many people want to grow the same thing.\u003cp\u003eWho uses Coinfountains?\nEarly adopters\nFind and share what's working before everyone else.\u003cp\u003eEntrepreneurs\nHelp grow and scale what's already working.\u003cp\u003eVisionaries\nSee potential in what's working and help it grow.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46492753\"\u003ehttps://news.ycombinator.com/item?id=46492753\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Dissecting a C64 Autoboot Program",
+      "link": "https://bumbershootsoft.wordpress.com/2026/01/03/dissecting-a-c64-autoboot-program/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-04T22:02:47Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://bumbershootsoft.wordpress.com/2026/01/03/dissecting-a-c64-autoboot-program/\"\u003ehttps://bumbershootsoft.wordpress.com/2026/01/03/dissecting-a-c64-autoboot-program/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46492747\"\u003ehttps://news.ycombinator.com/item?id=46492747\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Harnessing plant biology for space exploration and planetary sustainability",
+      "link": "https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.70662",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-04T22:00:21Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.70662\"\u003ehttps://nph.onlinelibrary.wiley.com/doi/10.1111/nph.70662\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46492733\"\u003ehttps://news.ycombinator.com/item?id=46492733\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Sheffield project aims to build first UK video games archive",
+      "link": "https://www.bbc.com/news/articles/cy8424xzngwo",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-04T21:58:30Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.bbc.com/news/articles/cy8424xzngwo\"\u003ehttps://www.bbc.com/news/articles/cy8424xzngwo\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46492722\"\u003ehttps://news.ycombinator.com/item?id=46492722\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Amiga Desktops Worth Seeing",
+      "link": "https://www.datagubbe.se/wbshots/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-04T21:57:42Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.datagubbe.se/wbshots/\"\u003ehttps://www.datagubbe.se/wbshots/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46492713\"\u003ehttps://news.ycombinator.com/item?id=46492713\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Thinky Dailies, a daily puzzle adventure",
+      "link": "https://thinkygames.com/dailies/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-04T21:57:29Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://thinkygames.com/dailies/\"\u003ehttps://thinkygames.com/dailies/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46492711\"\u003ehttps://news.ycombinator.com/item?id=46492711\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Sculpin: Direct-Manipulation Transformation of JSON",
+      "link": "https://dl.acm.org/doi/10.1145/3746059.3747651",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-04T21:55:04Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://dl.acm.org/doi/10.1145/3746059.3747651\"\u003ehttps://dl.acm.org/doi/10.1145/3746059.3747651\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46492693\"\u003ehttps://news.ycombinator.com/item?id=46492693\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: I built a personal AI news curator to filter RSS feeds (n8n and OpenAI)",
+      "link": "https://news.ycombinator.com/item?id=46492685",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-04T21:53:35Z",
+      "description": "\n\u003cp\u003eHi HN,\u003cp\u003eI found myself wasting too much time doomscrolling through tech news and RSS feeds, scanning hundreds of headlines just to find the 3-4 items that actually mattered to my work.\u003cp\u003eTo fix this, I built a self-hosted automation workflow using n8n that acts as a personal editor.\u003cp\u003eThe Architecture:\u003cp\u003eIngest: Pulls RSS feeds (TechCrunch, Hacker News, etc.) every morning.\u003cp\u003eFilter (The Agent): Passes headlines to GPT-4o-mini with a system prompt to \"act as a senior editor.\" It scores each article 0-10 based on specific interests (e.g., \"High interest in Local LLMs,\" \"Low interest in crypto gossip\").\u003cp\u003eLogic: Discards anything with a score \u003c 7.\u003cp\u003eResearch: Uses Tavily API to scrape and summarize the full content of the high-scoring articles.\u003cp\u003eDelivery: Sends a single, clean email digest via SMTP.\u003cp\u003eThe Hardest Part (SSE \u0026 Timeouts): The biggest technical hurdle was handling timeouts. Since the AI research step takes time, the HTTP requests would often drop. I had to configure Server-Sent Events (SSE) and adjust the execution timeout env variables in Node.js to keep the connection alive during the deep-dive research phase.\u003cp\u003eResources:\u003cp\u003eWorkflow/Source (JSON): \u003ca href=\"https://github.com/sojojp-hue/NewsSummarizer/tree/main\" rel=\"nofollow\"\u003ehttps://github.com/sojojp-hue/NewsSummarizer/tree/main\u003c/a\u003e\u003cp\u003eVideo Walkthrough \u0026 Demo: \u003ca href=\"https://youtu.be/mOnbK6DuFhc\" rel=\"nofollow\"\u003ehttps://youtu.be/mOnbK6DuFhc\u003c/a\u003e\u003cp\u003eI’d love to hear how others are handling information overload or if there are better ways to handle the long-polling for the AI agents.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46492685\"\u003ehttps://news.ycombinator.com/item?id=46492685\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Moving to Linux after 10 years of Mac",
+      "link": "https://staydecent.ca/blog/moving-to-linux-after-10-years-of-mac/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-04T21:49:34Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://staydecent.ca/blog/moving-to-linux-after-10-years-of-mac/\"\u003ehttps://staydecent.ca/blog/moving-to-linux-after-10-years-of-mac/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46492652\"\u003ehttps://news.ycombinator.com/item?id=46492652\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Telegram Forwarder",
+      "link": "https://github.com/Linuxmaster14/TGForwarder",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-04T21:48:25Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/Linuxmaster14/TGForwarder\"\u003ehttps://github.com/Linuxmaster14/TGForwarder\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46492636\"\u003ehttps://news.ycombinator.com/item?id=46492636\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "C-Sentinel: System prober that captures \"system fingerprints\" for AI analysis",
+      "link": "https://github.com/williamofai/c-sentinel",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-04T21:46:34Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/williamofai/c-sentinel\"\u003ehttps://github.com/williamofai/c-sentinel\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46492617\"\u003ehttps://news.ycombinator.com/item?id=46492617\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Keeper: Open-Source Calendar Syncing",
+      "link": "https://www.keeper.sh/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-04T21:46:25Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.keeper.sh/\"\u003ehttps://www.keeper.sh/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46492616\"\u003ehttps://news.ycombinator.com/item?id=46492616\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Errol Morris Interrotron",
+      "link": "https://telepromptermirror.com/errol-morris-interrotron/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-04T21:45:22Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://telepromptermirror.com/errol-morris-interrotron/\"\u003ehttps://telepromptermirror.com/errol-morris-interrotron/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46492608\"\u003ehttps://news.ycombinator.com/item?id=46492608\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "US Army tests 20,000W vehicle-mounted laser systems for drone defense",
+      "link": "https://www.tomshardware.com/tech-industry/us-army-tests-20-000w-vehicle-mounted-laser-systems-for-drone-defense-updated-locust-device-is-now-more-lethal-against-drones",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-04T21:45:08Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.tomshardware.com/tech-industry/us-army-tests-20-000w-vehicle-mounted-laser-systems-for-drone-defense-updated-locust-device-is-now-more-lethal-against-drones\"\u003ehttps://www.tomshardware.com/tech-industry/us-army-tests-20-000w-vehicle-mounted-laser-systems-for-drone-defense-updated-locust-device-is-now-more-lethal-against-drones\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46492606\"\u003ehttps://news.ycombinator.com/item?id=46492606\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: An LLM-Powered PCB Schematic Checker (Major Update)",
+      "link": "https://traceformer.io/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-04T21:43:26Z",
+      "description": "\n\u003cp\u003eTraceformer.io is a web application that ingests KiCad projects or Altium netlists along with relevant datasheets, enabling LLM-based schematic review. The system is designed to identify datasheet-driven schematic issues that traditional ERC tools can't detect.\u003cp\u003eSince our first launch (formerly as Netlist.io), we've made some big changes:\u003cp\u003e- Full KiCad project parsing via an open-source plugin\u003cp\u003e- Pass-through API pricing with a small platform fee\u003cp\u003e- Automatic datasheet retrieval\u003cp\u003e- ERC/DRC-style review UI\u003cp\u003e- Revamped review workflow with selectable frontier models (GPT 5.2, Opus 4.5, and more)\u003cp\u003e- Configurable review parameters (token limits, design rules, and parallel reviews)\u003cp\u003eAdditionally, we continue to offer a free plan which lets you evaluate a design before subscribing. We're looking forward to hearing your feedback!\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46492601\"\u003ehttps://news.ycombinator.com/item?id=46492601\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 4\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Stache AI: Curated Storage for AI with Claude MCP Integration",
+      "link": "https://github.com/orgs/stache-ai/discussions/3",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-04T21:37:17Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/orgs/stache-ai/discussions/3\"\u003ehttps://github.com/orgs/stache-ai/discussions/3\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46492550\"\u003ehttps://news.ycombinator.com/item?id=46492550\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    }
+  ],
+  "generatedAt": "2026-01-05T07:09:08.109747825+09:00"
+}
