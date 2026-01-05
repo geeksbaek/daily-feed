@@ -1,0 +1,336 @@
+{
+  "date": "2026-01-06",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2026년 1월 5일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** AWS의 기습적인 GPU 가격 인상이 AI 업계에 충격을 주는 가운데, CES 2026을 맞아 구글과 엔비디아가 각각 TV와 자동차 분야에서 새로운 AI 비전을 제시했습니다.\n\n---\n\n## 🏆 Top Story: 클라우드 비용의 역습\n### AWS, 주말 사이 GPU 인스턴스 가격 15% 기습 인상\n아마존 웹 서비스(AWS)가 예고 없이 GPU 인스턴스 가격을 약 15% 인상했습니다. 특히 기업들이 대응하기 어려운 토요일에 변경 사항이 적용되어 논란이 되고 있습니다. 이는 AI 모델 학습 및 추론 비용의 직접적인 상승으로 이어질 전망입니다.\n\u003e **Key Point:** AI 붐으로 인한 하드웨어 수요 폭증 속에서, 클라우드 비용 최적화가 2026년 기업들의 최대 과제가 될 것임을 시사합니다. [^27]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. CES 2026: 구글의 거실과 거리 점령 작전\n- **What:** 구글이 CES 2026을 맞아 'Google TV'에 제미나이(Gemini) 기반의 새로운 기능을 도입하고, 라스베이거스 '스피어(Sphere)'에 안드로이드 XR 광고를 띄웠습니다. [^1][^38][^39]\n- **Why:** TV 콘텐츠 요약, AI 기반 추천 등 거실 내 사용자 경험을 장악하고, 애플 비전 프로에 대항하는 안드로이드 XR 생태계의 존재감을 과시하기 위함입니다.\n- **Impact:** 스마트 TV가 단순한 디스플레이를 넘어 AI 에이전트 허브로 진화하며, XR 플랫폼 경쟁이 본격화될 것입니다.\n\n### 2. 엔비디아, 자동차와 오픈 AI 생태계 동시 공략\n- **What:** 엔비디아가 메르세데스-벤츠 신형 CLA에 'DRIVE AV' 소프트웨어를 탑재하고, 산업 전반을 위한 새로운 오픈 모델과 데이터를 공개했습니다. [^40][^41]\n- **Why:** 자율주행 기술의 상용화 단계를 높이고, 폐쇄적인 생태계라는 비판을 넘어서 오픈 소스 AI 진영에서도 주도권을 유지하려는 전략입니다.\n- **Impact:** 소프트웨어 중심 자동차(SDV)의 표준이 엔비디아 칩셋 기반으로 굳어질 가능성이 높으며, 기업용 AI 개발 도구 시장이 확장될 것입니다.\n\n### 3. 'Microsoft 365' 앱, 'Copilot' 앱으로 전면 개편\n- **What:** 마이크로소프트가 기존의 'Microsoft 365' 앱을 'Microsoft 365 Copilot' 앱으로 전환한다고 발표했습니다. [^30]\n- **Why:** 오피스 제품군의 정체성을 '문서 도구'에서 'AI 비서'로 완전히 탈바꿈하려는 의도입니다.\n- **Impact:** 전 세계 수억 명의 사용자가 업무 환경에서 AI를 기본 인터페이스로 사용하게 되는 중요한 전환점이 될 것입니다.\n\n---\n\n## 🛠️ Geek's Corner: 개발자 \u0026 엔지니어 필독\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **taws** | 터미널 기반의 AWS 리소스 뷰어 및 관리 도구로, CLI 환경을 선호하는 데브옵스 엔지니어에게 유용합니다. [^8] |\n| **Guide** | **브라우저 작동 원리** | 웹 브라우저의 내부 동작 방식을 시각적으로 설명한 인터랙티브 가이드입니다. [^4] |\n| **Data** | **DuckDB + dplyr** | DuckDB 위에서 R의 dplyr 스타일 파이프라인을 구현하여 데이터 처리 효율을 높이는 실험입니다. [^6] |\n| **Dev** | **Llama.cpp Multi-GPU** | 멀티 GPU 환경에서 Llama.cpp의 성능을 획기적으로 개선한 기술적 돌파구입니다. [^28] |\n| **Paper** | **Fault-tolerant Quantum** | 양자 컴퓨팅의 리소스 비용을 줄이는 새로운 결함 허용(Fault-tolerant) 프로토콜이 발표되었습니다. [^36] |\n| **Util** | **TTF** | Tailscale 사용 시 발생하는 TPM 오류를 해결해주는 유틸리티입니다. [^11] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n\n#### 💻 개발 \u0026 인프라\n* **Jeffgeerling.com 마이그레이션**: 유명 테크 블로거가 Drupal에서 Hugo(정적 사이트 생성기)로 이전한 경험을 공유했습니다. [^3]\n* **Claude Code On-the-Go**: 이동 중에도 코딩할 수 있는 Claude 기반의 새로운 개발 환경이 소개되었습니다. [^12]\n* **Rovo Dev 프롬프트**: 아틀라시안이 UI 컴포넌트 리팩토링을 위한 다단계 프롬프트 활용법을 공개했습니다. [^15]\n* **Forge Billing**: 아틀라시안 앱 개발자를 위한 새로운 결제 시스템 준비 가이드입니다. [^16]\n* **ChromeOS LTS 업데이트**: 기업용 크롬OS의 장기 지원 채널(LTS) 업데이트가 발표되었습니다. [^17]\n* **ESLint 추천 규칙**: 개발 생산성을 높여주는 11가지 최애 ESLint 규칙 모음입니다. [^29]\n* **Claude API + Google Maps**: Claude API를 활용해 구글 지도 데이터를 실시간으로 연동하는 튜토리얼입니다. [^31]\n* **이메일 OCR 변환**: 스캔한 PDF를 이메일로 보내면 텍스트로 변환해주는 서비스(영어/네덜란드어 지원)입니다. [^32]\n\n#### 🤖 AI \u0026 데이터 사이언스\n* **최소제곱 적합의 편향**: 단순 데이터에 최소제곱법을 적용할 때 발생하는 편향에 대한 수학적 분석입니다. [^5]\n* **음성 에이전트 확장**: 캐시 인식 스트리밍 ASR을 통해 실시간 음성 AI를 확장하는 기술입니다. [^13]\n* **Falcon-H1-Arabic**: 아랍어 처리에 특화된 하이브리드 아키텍처 기반의 새로운 AI 모델입니다. [^14]\n* **AI와 연구 논문**: AI가 학술 논문 작성과 연구 방식에 미치는 영향에 대한 고찰입니다. [^18]\n* **AI 거물들의 설전**: AI의 대부(힌튼 등)가 Meta AI의 수장 알렉산더 왕을 '경험 부족'이라며 비판했습니다. [^34]\n* **AI 격차 해소 2026**: 최첨단 AI 기술과 일상적 사용 사이의 격차가 2026년에는 줄어들 것이라는 전망입니다. [^37]\n\n#### 🕶️ XR \u0026 퓨처 테크\n* **Spectrum on Vision Pro**: 미국 통신사 Spectrum이 1월 9일 애플 비전 프로용 앱을 출시합니다. [^2]\n* **ArmSoM CM5**: 엣지 인텔리전스를 활용한 차세대 실시간 해양 음향 모니터링 하드웨어입니다. [^10]\n* **무릎 연골 재생 주사**: 관절염 예방 및 연골 재생을 돕는 항노화 주사 기술이 주목받고 있습니다. [^9]\n\n#### 🌏 사회, 문화 \u0026 기타\n* **바이브코딩(Vibe Coding)**: AI 코딩 시대에 과몰입(터널 시야)을 피하고 진정한 몰입을 유지하는 방법에 대한 조언입니다. [^7]\n* **유전적 키메라**: 당신의 몸속 세포 중 일부는 유전적으로 당신의 것이 아닐 수 있다는 흥미로운 생물학적 사실입니다. [^19]\n* **21세기 2분기 시작**: 2026년은 21세기의 두 번째 분기(Q2)가 시작되는 시점이라는 관점입니다. [^20]\n* **Slackmoji 중단**: 인기 이모지 사이트가 저작권 문제로 운영 중단 통보(Cease \u0026 Desist)를 받았습니다. [^21]\n* **마이크로 팁(Micro-Tipping)**: 웹 콘텐츠의 새로운 수익 모델로 소액 후원이 부상하고 있습니다. [^23]\n* **Kling 사용 풍자**: 복잡한 비디오 생성 툴 대신 \"그냥 Kling을 써라\"는 풍자 섞인 쇼케이스입니다. [^24]\n* **구글 검색의 배신**: 구글 검색 알고리즘 변화로 인한 개인 블로그의 트래픽 하락과 좌절을 다룬 글입니다. [^26]\n* **오래된 기술의 가치**: 최신 시대에 구형 기술(Old Tech)을 사용하는 것의 의미를 재조명합니다. [^35]\n* **국제 정세**: 트럼프 전 대통령이 쿠바와 베네수엘라 정세, 그리고 그린란드 매입 의사를 언급하며 지정학적 긴장을 높이고 있습니다. [^25][^33]\n* **Repo Man 에세이**: 열역학, 납치, 그리고 베스트팔렌 체제의 붕괴를 엮은 철학적 에세이입니다. [^22]\n\n---\n\n## 📝 큐레이터의 한마디\n2026년 새해 벽두부터 **AWS의 가격 인상**이라는 현실적인 뉴스와 **CES의 화려한 미래 기술**이 교차하고 있습니다. 특히 마이크로소프트가 앱 명칭을 'Copilot'으로 바꾼 것은, 이제 AI가 '기능'이 아니라 '제품 그 자체'가 되었음을 선언하는 상징적인 사건입니다. 개발자분들은 오늘 소개된 **taws**나 **Llama.cpp** 최적화 소식을 꼭 챙겨보시기 바랍니다.\n\n---\n\n[^1]: Google introduces new Gemini for Google TV features. - https://blog.google/products/google-tv/ces-2026/\n[^2]: Spectrum Front Row tips off January 9 on Apple Vision Pro - https://www.apple.com/newsroom/2026/01/spectrum-front-row-tips-off-january-9-on-apple-vision-pro/\n[^3]: Jeffgeerling.com이 Hugo로 마이그레이션됨 - https://news.hada.io/topic?id=25587\n[^4]: 브라우저가 작동하는 방식에 대한 인터랙티브 가이드 - https://news.hada.io/topic?id=25586\n[^5]: 단순한 데이터에 최소제곱 적합을 적용할 때 왜 편향이 있는 것처럼 보이는가 - https://news.hada.io/topic?id=25585\n[^6]: Show GN: DuckDB 위에서 dplyr 스타일 파이프라인을 실험해봤습니다 - https://news.hada.io/topic?id=25584\n[^7]: 바이브코딩을 하면서 과몰입(터널)에 빠지지 않고, 진짜 몰입하는 법 - https://news.hada.io/topic?id=25583\n[^8]: AWS용 터미널 UI (taws) – 터미널 기반 AWS 리소스 뷰어 및 관리자 - https://news.hada.io/topic?id=25582\n[^9]: 무릎 연골을 재생하고 관절염을 예방하는 항노화 주사 - https://news.hada.io/topic?id=25581\n[^10]: ArmSoM CM5, 에지 인텔리전스로 차세대 실시간 해양 음향 모니터링 구현 - https://news.hada.io/topic?id=25580\n[^11]: Show GN: TTF - Tailscale TPM 오류 해결 유틸리티 - https://news.hada.io/topic?id=25579\n[^12]: Claude Code On-the-Go - https://news.hada.io/topic?id=25578\n[^13]: Scaling Real-Time Voice Agents with Cache-Aware Streaming ASR - https://huggingface.co/blog/nvidia/nemotron-speech-asr-scaling-voice-agents\n[^14]: Introducing Falcon-H1-Arabic: Pushing the Boundaries of Arabic Language AI with Hybrid Architecture - https://huggingface.co/blog/tiiuae/falcon-h1-arabic\n[^15]: Using Rovo Dev multi‑stage prompts for refactoring UI components - https://www.atlassian.com/blog/developer/using-rovo-dev-multi%e2%80%91stage-prompts-for-refactoring-ui-components\n[^16]: Getting Ready for Forge Billing - https://www.atlassian.com/blog/developer/getting-ready-for-forge-billing\n[^17]: Long Term Support Channel Update for ChromeOS - http://chromereleases.googleblog.com/2026/01/long-term-support-channel-update-for.html\n[^18]: AI and Research Papers - https://blog.computationalcomplexity.org/2026/01/ai-and-research-papers.html\n[^19]: Some of Your Cells Are Not Genetically Yours - https://www.nature.com/articles/d41586-025-04102-4\n[^20]: Its now Q2 of the 21st century - https://news.ycombinator.com/item?id=46505624\n[^21]: We Got Cease'd and Desist'd - https://slackmoji.com/\n[^22]: Repo Man Cometh: Thermodynamics, Kidnapping, \u0026 the Fall of the Westphalian Order - https://theuaob.substack.com/p/the-repo-man-cometh-thermodynamics\n[^23]: Why Micro-Tipping Is the Fuel for Original Content on the Open Web - https://olshansky.substack.com/p/why-micro-tipping-is-the-fuel-for\n[^24]: Show HN: Just Fucking Use Kling - https://justfuckingusekling.com\n[^25]: Trump Says Cuba Is 'Ready to Fall' - https://www.nytimes.com/2026/01/05/world/americas/trump-venezuela-cuba.html\n[^26]: Google Broke My Heart - https://perishablepress.com/google-broke-my-heart/\n[^27]: AWS raises GPU prices 15% on a Saturday, hopes you weren't paying attention - https://www.theregister.com/2026/01/05/aws_price_increase/\n[^28]: Llama.cpp performance breakthrough for multi-GPU setups - https://medium.com/@jagusztinl/llama-cpp-performance-breakthrough-for-multi-gpu-setups-04c83a66feb2\n[^29]: My 11 Favorite ESLint Rules - https://ali-dev.medium.com/my-11-favorite-eslint-rules-1cfd66667b6f\n[^30]: The Microsoft 365 app transition to the Microsoft 365 Copilot app - https://support.microsoft.com/en-us/office/the-microsoft-365-app-transition-to-the-microsoft-365-copilot-app-22eac811-08d6-4df3-92dd-77f193e354a5\n[^31]: Connect Google Maps with Claude API - https://onebite.dev/access-real-time-data-from-claude-api/\n[^32]: Turn Scanned PDFs into OCR'd Text via Email (Supports English and Dutch) - https://clearinghouse.wallflux.com/ocrmypdf/\n[^33]: \"We will deal with Greenland in about two months\" - https://www.politico.eu/article/europe-must-unite-or-its-finished-poland-donald-tusk-warns-us-donald-trump-salivates-over-greenland/\n[^34]: AI godfather calls Meta AI boss Alexander Wang 'inexperienced' - https://www.cnbc.com/2026/01/05/ai-godfather-calls-meta-ai-boss-alexander-wang-inexperienced-.html\n[^35]: Using Old Tech in the New Age - https://blog.webb.page\n[^36]: Fault-tolerant quantum computing: Novel protocol reduces resource cost - https://phys.org/news/2026-01-fault-tolerant-quantum-protocol-efficiently.html\n[^37]: Closing the capability gap between frontier AI and everyday use in 2026 - https://fidjisimo.substack.com/p/closing-the-capability-gap\n[^38]: Android XR lights up Sphere in Las Vegas for CES. - https://blog.google/technology/xr-ar/android-xr-sphere-ces-2026/\n[^39]: Google introduces new Gemini for Google TV features. - https://blog.google/products/google-tv/ces-2026/\n[^40]: NVIDIA DRIVE AV Software Debuts in All-New Mercedes-Benz CLA - https://blogs.nvidia.com/blog/drive-av-software-mercedes-benz-cla/\n[^41]: NVIDIA Unveils New Open Models, Data and Tools to Advance AI Across Every Industry - https://blogs.nvidia.com/blog/open-models-data-tools-accelerate-ai/\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **Google introduces new Gemini for Google TV features.**\n   - 출처: Gemini\n   - 링크: https://blog.google/products/google-tv/ces-2026/\n\n2. **Spectrum Front Row tips off January 9 on Apple Vision Pro\n**\n   - 출처: Apple Newsroom\n   - 링크: https://www.apple.com/newsroom/2026/01/spectrum-front-row-tips-off-january-9-on-apple-vision-pro/\n\n3. **Jeffgeerling.com이 Hugo로 마이그레이션됨**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25587\n\n4. **브라우저가 작동하는 방식에 대한 인터랙티브 가이드**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25586\n\n5. **단순한 데이터에 최소제곱 적합을 적용할 때 왜 편향이 있는 것처럼 보이는가**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25585\n\n6. **Show GN: DuckDB 위에서 dplyr 스타일 파이프라인을 실험해봤습니다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25584\n\n7. **바이브코딩을 하면서 과몰입(터널)에 빠지지 않고, 진짜 몰입하는 법**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25583\n\n8. **AWS용 터미널 UI (taws) – 터미널 기반 AWS 리소스 뷰어 및 관리자**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25582\n\n9. **무릎 연골을 재생하고 관절염을 예방하는 항노화 주사**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25581\n\n10. **ArmSoM CM5, 에지 인텔리전스로 차세대 실시간 해양 음향 모니터링 구현**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25580\n\n11. **Show GN: TTF - Tailscale TPM 오류 해결 유틸리티**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25579\n\n12. **Claude Code On-the-Go**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25578\n\n13. **Scaling Real-Time Voice Agents with  Cache-Aware Streaming ASR**\n   - 출처: Hugging Face - Blog\n   - 링크: https://huggingface.co/blog/nvidia/nemotron-speech-asr-scaling-voice-agents\n\n14. **Introducing Falcon-H1-Arabic: Pushing the Boundaries of Arabic Language AI with Hybrid Architecture**\n   - 출처: Hugging Face - Blog\n   - 링크: https://huggingface.co/blog/tiiuae/falcon-h1-arabic\n\n15. **Using Rovo Dev multi‑stage prompts for refactoring UI components**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/developer/using-rovo-dev-multi%e2%80%91stage-prompts-for-refactoring-ui-components\n\n16. **Getting Ready for Forge Billing**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/developer/getting-ready-for-forge-billing\n\n17. **Long Term Support Channel Update for ChromeOS**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2026/01/long-term-support-channel-update-for.html\n\n18. **AI and Research Papers**\n   - 출처: Hacker News\n   - 링크: https://blog.computationalcomplexity.org/2026/01/ai-and-research-papers.html\n\n19. **Some of Your Cells Are Not Genetically Yours**\n   - 출처: Hacker News\n   - 링크: https://www.nature.com/articles/d41586-025-04102-4\n\n20. **Its now Q2 of the 21st century**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=46505624\n\n21. **We Got Cease'd and Desist'd**\n   - 출처: Hacker News\n   - 링크: https://slackmoji.com/\n\n22. **Repo Man Cometh: Thermodynamics, Kidnapping, \u0026 the Fall of the Westphalian Order**\n   - 출처: Hacker News\n   - 링크: https://theuaob.substack.com/p/the-repo-man-cometh-thermodynamics\n\n23. **Why Micro-Tipping Is the Fuel for Original Content on the Open Web**\n   - 출처: Hacker News\n   - 링크: https://olshansky.substack.com/p/why-micro-tipping-is-the-fuel-for\n\n24. **Show HN: Just Fucking Use Kling**\n   - 출처: Hacker News\n   - 링크: https://justfuckingusekling.com\n\n25. **Trump Says Cuba Is 'Ready to Fall'**\n   - 출처: Hacker News\n   - 링크: https://www.nytimes.com/2026/01/05/world/americas/trump-venezuela-cuba.html\n\n26. **Google Broke My Heart**\n   - 출처: Hacker News\n   - 링크: https://perishablepress.com/google-broke-my-heart/\n\n27. **AWS raises GPU prices 15% on a Saturday, hopes you weren't paying attention**\n   - 출처: Hacker News\n   - 링크: https://www.theregister.com/2026/01/05/aws_price_increase/\n\n28. **Llama.cpp performance breakthrough for multi-GPU setups**\n   - 출처: Hacker News\n   - 링크: https://medium.com/@jagusztinl/llama-cpp-performance-breakthrough-for-multi-gpu-setups-04c83a66feb2\n\n29. **My 11 Favorite ESLint Rules**\n   - 출처: Hacker News\n   - 링크: https://ali-dev.medium.com/my-11-favorite-eslint-rules-1cfd66667b6f\n\n30. **The Microsoft 365 app transition to the Microsoft 365 Copilot app**\n   - 출처: Hacker News\n   - 링크: https://support.microsoft.com/en-us/office/the-microsoft-365-app-transition-to-the-microsoft-365-copilot-app-22eac811-08d6-4df3-92dd-77f193e354a5\n\n31. **Connect Google Maps with Claude API**\n   - 출처: Hacker News\n   - 링크: https://onebite.dev/access-real-time-data-from-claude-api/\n\n32. **Turn Scanned PDFs into OCR'd Text via Email (Supports English and Dutch)**\n   - 출처: Hacker News\n   - 링크: https://clearinghouse.wallflux.com/ocrmypdf/\n\n33. **\"We will deal with Greenland in about two months\"**\n   - 출처: Hacker News\n   - 링크: https://www.politico.eu/article/europe-must-unite-or-its-finished-poland-donald-tusk-warns-us-donald-trump-salivates-over-greenland/\n\n34. **AI godfather calls Meta AI boss Alexander Wang 'inexperienced'**\n   - 출처: Hacker News\n   - 링크: https://www.cnbc.com/2026/01/05/ai-godfather-calls-meta-ai-boss-alexander-wang-inexperienced-.html\n\n35. **Using Old Tech in the New Age**\n   - 출처: Hacker News\n   - 링크: https://blog.webb.page\n\n36. **Fault-tolerant quantum computing: Novel protocol reduces resource cost**\n   - 출처: Hacker News\n   - 링크: https://phys.org/news/2026-01-fault-tolerant-quantum-protocol-efficiently.html\n\n37. **Closing the capability gap between frontier AI and everyday use in 2026**\n   - 출처: Hacker News\n   - 링크: https://fidjisimo.substack.com/p/closing-the-capability-gap\n\n38. **Android XR lights up Sphere in Las Vegas for CES.**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/technology/xr-ar/android-xr-sphere-ces-2026/\n\n39. **Google introduces new Gemini for Google TV features.**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/products/google-tv/ces-2026/\n\n40. **NVIDIA DRIVE AV Software Debuts in All-New Mercedes-Benz CLA**\n   - 출처: NVIDIA Blog\n   - 링크: https://blogs.nvidia.com/blog/drive-av-software-mercedes-benz-cla/\n\n41. **NVIDIA Unveils New Open Models, Data and Tools to Advance AI Across Every Industry**\n   - 출처: NVIDIA Blog\n   - 링크: https://blogs.nvidia.com/blog/open-models-data-tools-accelerate-ai/\n\n\n",
+  "articles": [
+    {
+      "title": "Google introduces new Gemini for Google TV features.",
+      "link": "https://blog.google/products/google-tv/ces-2026/",
+      "source": "Gemini",
+      "category": "tech",
+      "publishedAt": "2026-01-05T14:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/We_previewed_new_Gemini_for_Goo.max-600x600.format-webp.webp\"\u003eSee how Gemini is making Google TV even more helpful, and bringing more ways to engage with your TV."
+    },
+    {
+      "title": "Spectrum Front Row tips off January 9 on Apple Vision Pro\n",
+      "link": "https://www.apple.com/newsroom/2026/01/spectrum-front-row-tips-off-january-9-on-apple-vision-pro/",
+      "source": "Apple Newsroom",
+      "category": "tech",
+      "publishedAt": "2026-01-05T17:00:32.297Z",
+      "description": "Apple and Spectrum unveiled the schedule for The Lakers in Apple Immersive, a series of live basketball games in a revolutionary storytelling format available only on Apple Vision Pro."
+    },
+    {
+      "title": "Jeffgeerling.com이 Hugo로 마이그레이션됨",
+      "link": "https://news.hada.io/topic?id=25587",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-06T05:33:20+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e2009년부터 \u003cstrong\u003eDrupal 기반\u003c/strong\u003e으로 운영되던 JeffGeerling.com이 개인 블로그 효율성을 위해 \u003cstrong\u003eHugo 정적 사이트 생성기(SSG)\u003c/strong\u003e 로 전환됨\u003c/li\u003e\n\u003cli\u003eDrupal 6부터 10까지 이어진 다수의 \u003cstrong\u003e업그레이드와 유지보수 부담\u003c/strong\u003e이 전환의 주요 계기\u003c/li\u003e\n\u003cli\u003eHugo는 \u003cstrong\u003eMark...\u003c/p\u003e"
+    },
+    {
+      "title": "브라우저가 작동하는 방식에 대한 인터랙티브 가이드",
+      "link": "https://news.hada.io/topic?id=25586",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-06T03:32:50+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e웹 엔지니어와 일반 사용자가 \u003cstrong\u003e브라우저의 내부 동작 원리\u003c/strong\u003e를 직관적으로 이해할 수 있도록 만든 \u003cstrong\u003e인터랙티브 학습 가이드\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e주소창 입력부터 \u003cstrong\u003eHTTP 요청 생성, DNS 해석, TCP 연결, HTML 파싱, DOM 구성, 렌더링 파이프라인\u003c/strong\u003e까지 과정을 단계별로 시각...\u003c/p\u003e"
+    },
+    {
+      "title": "단순한 데이터에 최소제곱 적합을 적용할 때 왜 편향이 있는 것처럼 보이는가",
+      "link": "https://news.hada.io/topic?id=25585",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-06T02:33:20+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e선형 최소제곱 회귀선\u003c/strong\u003e이 단순한 테스트 데이터에서 실제보다 기울어져 보이는 이유는 \u003cstrong\u003e데이터 생성 과정의 특성\u003c/strong\u003e 때문임\u003c/li\u003e\n\u003cli\u003e회귀모형은 \u003cstrong\u003e오차항이 X와 독립\u003c/strong\u003e이라는 가정하에 ( Y = \\beta_0 + \\beta_1 X + \\varepsilon ) 형태를 따름\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: DuckDB 위에서 dplyr 스타일 파이프라인을 실험해봤습니다",
+      "link": "https://news.hada.io/topic?id=25584",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-06T00:07:48+09:00",
+      "description": "\u003cp\u003eDuckDB를 분석 작업에 쓰면서\u003cbr /\u003e\nSQL만으로도 충분히 많은 일을 할 수 있다고 느꼈습니다.\u003c/p\u003e\n\u003cp\u003e다만 개인적으로는,\u003cbr /\u003e\nSQL을 쓰다 보면 분석 과정이 길어질수록\u003cbr /\u003e\nCTE를 점점 많이 쓰게 되는 패턴이 반복됐습니다.\u003c/p\u003e\n\u003cp\u003e중간 상태를 이름 붙여 고정하지 않으면\u003cbr /\u003e\n제가 어떤 생각 순서로 이 쿼리를"
+    },
+    {
+      "title": "바이브코딩을 하면서 과몰입(터널)에 빠지지 않고, 진짜 몰입하는 법",
+      "link": "https://news.hada.io/topic?id=25583",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-05T20:23:24+09:00",
+      "description": "\u003cp\u003e이 글은 바이브 코딩 중 생기는 \u003cstrong\u003e과몰입(터널)\u003c/strong\u003e 상태를 스스로 알아차리고, 짧은 실행‑루프로 다시 \u003cstrong\u003e의도적 몰입\u003c/strong\u003e으로 돌아오는 실전 프로토콜을 제안합니다.[1]\u003c/p\u003e\n\u003ch3\u003e몰입 vs 과몰입(터널)\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e몰입은 세 축이 동시에 살아 있는 상태로 정의됩니다: \u003cstrong\u003e주도감\u003c/st"
+    },
+    {
+      "title": "AWS용 터미널 UI (taws) – 터미널 기반 AWS 리소스 뷰어 및 관리자",
+      "link": "https://news.hada.io/topic?id=25582",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-05T17:32:56+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003etaws\u003c/strong\u003e는 터미널 환경에서 AWS 리소스를 탐색하고 관리할 수 있는 \u003cstrong\u003eRust 기반 UI 도구\u003c/strong\u003e로, AWS 인프라를 실시간으로 관찰하고 제어할 수 있음\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e94개 이상의 리소스 유형\u003c/strong\u003e과 \u003cstrong\u003e60개 이상의 AWS 서비스\u003c/strong\u003e를 지원하며, \u003cstrong\u003e프로필 및 리...\u003c/p\u003e"
+    },
+    {
+      "title": "무릎 연골을 재생하고 관절염을 예방하는 항노화 주사",
+      "link": "https://news.hada.io/topic?id=25581",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-05T16:32:57+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e15-PGDH 단백질 억제제\u003c/strong\u003e가 노화나 부상으로 손상된 무릎 연골을 재생시키고 관절염 발생을 막는 효과를 보임\u003c/li\u003e\n\u003cli\u003e이 치료법은 \u003cstrong\u003e줄기세포를 사용하지 않고 기존 연골세포(연골세포, chondrocyte)\u003c/strong\u003e 의 유전자 발현을 젊은 상태로 되돌려 재생을 유도함\u003c/li\u003e\n\u003cli\u003e노화한 생쥐...\u003c/p\u003e"
+    },
+    {
+      "title": "ArmSoM CM5, 에지 인텔리전스로 차세대 실시간 해양 음향 모니터링 구현",
+      "link": "https://news.hada.io/topic?id=25580",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-05T15:28:31+09:00",
+      "description": "\u003cp\u003e주요 진전: 뉴질랜드 웡아레이 항구에서 13개월 이상 성공적으로 가동된 후, ArmSoM CM5 시스템 온 모듈을 탑재한 세계 최초 AI 고래 조난 조기 경보 부표가 2025년 12월 골든베이 ‘Farewell Spit’ 해역에 정식 배치되었습니다.\u003c/p\u003e\n\u003cp\u003e기술적 과제와 해결방안: 기존 해양 음향 모니터링의 데이터 지연, 높은 비용,"
+    },
+    {
+      "title": "Show GN: TTF - Tailscale TPM 오류 해결 유틸리티",
+      "link": "https://news.hada.io/topic?id=25579",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-05T14:35:57+09:00",
+      "description": "\u003cp\u003e안녕하세요!\u003c/p\u003e\n\u003cp\u003e최근에 메인보드를 교체했는데, 멀쩡하던 Tailscale 노드가 연결되지 않는 현상이 있었습니다.\u003c/p\u003e\n\u003cp\u003e문서를 찾아본 결과 TPM 변경 으로 인한 문제가 발생하는 사안이었는데, 제 환경에서는 이것저것 테스트로 인해 여러 번 변경하게 되어서 TPM 관련 파일을 지우고 초기화하는 작업을 수행하는 "
+    },
+    {
+      "title": "Claude Code On-the-Go",
+      "link": "https://news.hada.io/topic?id=25578",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-05T11:32:50+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e스마트폰만으로 6개의 Claude Code 에이전트를 병렬 실행\u003c/strong\u003e하며 개발 작업을 수행하는 구성 설명\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eTermius와 mosh\u003c/strong\u003e, \u003cstrong\u003eTailscale VPN\u003c/strong\u003e, \u003cstrong\u003eVultr VM\u003c/strong\u003e을 조합해 노트북 없이도 안정적인 원격 개발 환경 유지\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003etmux 세션 ...\u003c/p\u003e"
+    },
+    {
+      "title": "Scaling Real-Time Voice Agents with  Cache-Aware Streaming ASR",
+      "link": "https://huggingface.co/blog/nvidia/nemotron-speech-asr-scaling-voice-agents",
+      "source": "Hugging Face - Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-05T22:04:58Z"
+    },
+    {
+      "title": "Introducing Falcon-H1-Arabic: Pushing the Boundaries of Arabic Language AI with Hybrid Architecture",
+      "link": "https://huggingface.co/blog/tiiuae/falcon-h1-arabic",
+      "source": "Hugging Face - Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-05T09:16:51Z"
+    },
+    {
+      "title": "Using Rovo Dev multi‑stage prompts for refactoring UI components",
+      "link": "https://www.atlassian.com/blog/developer/using-rovo-dev-multi%e2%80%91stage-prompts-for-refactoring-ui-components",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-05T18:17:30Z",
+      "description": "\u003cp\u003eLLMs are good at individual, well‑specified tasks. But they struggle when we ask them to do too many things at...\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/developer/using-rovo-dev-multi%e2%80%91stage-prompts-for-refactoring-ui-components\"\u003eUsing Rovo Dev multi‑stage prompts for refactoring UI components\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Getting Ready for Forge Billing",
+      "link": "https://www.atlassian.com/blog/developer/getting-ready-for-forge-billing",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-05T14:00:00Z",
+      "description": "\u003cp\u003eForge usage began counting toward billing on January 1, 2026, and developers will receive their first invoices in February. In...\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/developer/getting-ready-for-forge-billing\"\u003eGetting Ready for Forge Billing\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Long Term Support Channel Update for ChromeOS",
+      "link": "http://chromereleases.googleblog.com/2026/01/long-term-support-channel-update-for.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2026-01-05T11:11:00-08:00",
+      "description": "\u003cbr /\u003eA new LTS  version 138.0.7204.300 (Platform Version: 16295.85.0), is being rolled out for most ChromeOS devices. \u003cbr /\u003e\u003cbr /\u003eThis version includes selected security fixes including:\u003cbr /\u003e\u003cbr /\u003e\u003ca href=\"http://b/452071845\"\u003e452071845\u003c/a\u003e Medium CVE-2025-12443 Out of bounds read in WebXR.\u003cbr /\u003e\u003ca href=\"http://b/457818670\"\u003e457818670\u003c/a\u003e Medium CVE-2025-13720 Bad cast in Loader.\u003cbr /\u003e\u003ca href=\"https://b.corp.google.com/issues/432752043\"\u003e432752043\u003c/a\u003e High CVE-2025-38349 use-after-free vulnerability with an attack surface on the epoll system call interface.\u003cdiv\u003e\u003ca href=\"https://g-issues.chromium.org/issues/439058242\"\u003e439058242\u003c/a\u003e  Medium CVE-2025-13632 Inappropriate implementation in DevTools.\u003c/div\u003e\u003cdiv\u003e\u003cbr /\u003eRelease notes for LTS-138 can be found\u003ca href=\"https://support.google.com/chrome/a/answer/12239814\"\u003e here\u003c/a\u003e \u003cbr /\u003e\u003cbr /\u003eWant to know more about Long-term Support? Click\u003ca href=\"https://support.google.com/chrome/a/answer/11333726\"\u003e here\u003c/a\u003e\u003cbr /\u003e\u003cbr /\u003eAndy Wu\u003cbr /\u003eGoogle ChromeOS\u003cdiv\u003e\u003cspan id=\"docs-internal-guid-d0492081-7fff-b7d4-5556-dd5c2d8d380e\"\u003e\u003cdiv\u003e\u003cspan style=\"font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e\u003cbr /\u003e\u003c/span\u003e\u003c/div\u003e\u003c/span\u003e\u003c/div\u003e\u003c/div\u003e"
+    },
+    {
+      "title": "AI and Research Papers",
+      "link": "https://blog.computationalcomplexity.org/2026/01/ai-and-research-papers.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-05T22:05:17Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://blog.computationalcomplexity.org/2026/01/ai-and-research-papers.html\"\u003ehttps://blog.computationalcomplexity.org/2026/01/ai-and-research-papers.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46505678\"\u003ehttps://news.ycombinator.com/item?id=46505678\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Some of Your Cells Are Not Genetically Yours",
+      "link": "https://www.nature.com/articles/d41586-025-04102-4",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-05T22:03:52Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nature.com/articles/d41586-025-04102-4\"\u003ehttps://www.nature.com/articles/d41586-025-04102-4\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46505661\"\u003ehttps://news.ycombinator.com/item?id=46505661\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Its now Q2 of the 21st century",
+      "link": "https://news.ycombinator.com/item?id=46505624",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-05T22:00:29Z",
+      "description": "\n\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46505624\"\u003ehttps://news.ycombinator.com/item?id=46505624\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "We Got Cease'd and Desist'd",
+      "link": "https://slackmoji.com/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-05T22:00:13Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://slackmoji.com/\"\u003ehttps://slackmoji.com/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46505620\"\u003ehttps://news.ycombinator.com/item?id=46505620\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 3\u003c/p\u003e\n"
+    },
+    {
+      "title": "Repo Man Cometh: Thermodynamics, Kidnapping, \u0026 the Fall of the Westphalian Order",
+      "link": "https://theuaob.substack.com/p/the-repo-man-cometh-thermodynamics",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-05T21:59:11Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://theuaob.substack.com/p/the-repo-man-cometh-thermodynamics\"\u003ehttps://theuaob.substack.com/p/the-repo-man-cometh-thermodynamics\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46505601\"\u003ehttps://news.ycombinator.com/item?id=46505601\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Why Micro-Tipping Is the Fuel for Original Content on the Open Web",
+      "link": "https://olshansky.substack.com/p/why-micro-tipping-is-the-fuel-for",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-05T21:58:49Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://olshansky.substack.com/p/why-micro-tipping-is-the-fuel-for\"\u003ehttps://olshansky.substack.com/p/why-micro-tipping-is-the-fuel-for\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46505596\"\u003ehttps://news.ycombinator.com/item?id=46505596\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Just Fucking Use Kling",
+      "link": "https://justfuckingusekling.com",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-05T21:54:04Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://justfuckingusekling.com\"\u003ehttps://justfuckingusekling.com\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46505536\"\u003ehttps://news.ycombinator.com/item?id=46505536\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Trump Says Cuba Is 'Ready to Fall'",
+      "link": "https://www.nytimes.com/2026/01/05/world/americas/trump-venezuela-cuba.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-05T21:53:44Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nytimes.com/2026/01/05/world/americas/trump-venezuela-cuba.html\"\u003ehttps://www.nytimes.com/2026/01/05/world/americas/trump-venezuela-cuba.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46505530\"\u003ehttps://news.ycombinator.com/item?id=46505530\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 5\u003c/p\u003e\n\u003cp\u003e# Comments: 2\u003c/p\u003e\n"
+    },
+    {
+      "title": "Google Broke My Heart",
+      "link": "https://perishablepress.com/google-broke-my-heart/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-05T21:52:22Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://perishablepress.com/google-broke-my-heart/\"\u003ehttps://perishablepress.com/google-broke-my-heart/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46505518\"\u003ehttps://news.ycombinator.com/item?id=46505518\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "AWS raises GPU prices 15% on a Saturday, hopes you weren't paying attention",
+      "link": "https://www.theregister.com/2026/01/05/aws_price_increase/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-05T21:52:17Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.theregister.com/2026/01/05/aws_price_increase/\"\u003ehttps://www.theregister.com/2026/01/05/aws_price_increase/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46505515\"\u003ehttps://news.ycombinator.com/item?id=46505515\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Llama.cpp performance breakthrough for multi-GPU setups",
+      "link": "https://medium.com/@jagusztinl/llama-cpp-performance-breakthrough-for-multi-gpu-setups-04c83a66feb2",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-05T21:52:17Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://medium.com/@jagusztinl/llama-cpp-performance-breakthrough-for-multi-gpu-setups-04c83a66feb2\"\u003ehttps://medium.com/@jagusztinl/llama-cpp-performance-breakthrough-for-multi-gpu-setups-04c83a66feb2\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46505513\"\u003ehttps://news.ycombinator.com/item?id=46505513\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "My 11 Favorite ESLint Rules",
+      "link": "https://ali-dev.medium.com/my-11-favorite-eslint-rules-1cfd66667b6f",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-05T21:49:31Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://ali-dev.medium.com/my-11-favorite-eslint-rules-1cfd66667b6f\"\u003ehttps://ali-dev.medium.com/my-11-favorite-eslint-rules-1cfd66667b6f\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46505487\"\u003ehttps://news.ycombinator.com/item?id=46505487\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Microsoft 365 app transition to the Microsoft 365 Copilot app",
+      "link": "https://support.microsoft.com/en-us/office/the-microsoft-365-app-transition-to-the-microsoft-365-copilot-app-22eac811-08d6-4df3-92dd-77f193e354a5",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-05T21:49:16Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://support.microsoft.com/en-us/office/the-microsoft-365-app-transition-to-the-microsoft-365-copilot-app-22eac811-08d6-4df3-92dd-77f193e354a5\"\u003ehttps://support.microsoft.com/en-us/office/the-microsoft-365-app-transition-to-the-microsoft-365-copilot-app-22eac811-08d6-4df3-92dd-77f193e354a5\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46505483\"\u003ehttps://news.ycombinator.com/item?id=46505483\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 8\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Connect Google Maps with Claude API",
+      "link": "https://onebite.dev/access-real-time-data-from-claude-api/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-05T21:48:20Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://onebite.dev/access-real-time-data-from-claude-api/\"\u003ehttps://onebite.dev/access-real-time-data-from-claude-api/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46505474\"\u003ehttps://news.ycombinator.com/item?id=46505474\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Turn Scanned PDFs into OCR'd Text via Email (Supports English and Dutch)",
+      "link": "https://clearinghouse.wallflux.com/ocrmypdf/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-05T21:48:12Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://clearinghouse.wallflux.com/ocrmypdf/\"\u003ehttps://clearinghouse.wallflux.com/ocrmypdf/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46505469\"\u003ehttps://news.ycombinator.com/item?id=46505469\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "\"We will deal with Greenland in about two months\"",
+      "link": "https://www.politico.eu/article/europe-must-unite-or-its-finished-poland-donald-tusk-warns-us-donald-trump-salivates-over-greenland/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-05T21:47:32Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.politico.eu/article/europe-must-unite-or-its-finished-poland-donald-tusk-warns-us-donald-trump-salivates-over-greenland/\"\u003ehttps://www.politico.eu/article/europe-must-unite-or-its-finished-poland-donald-tusk-warns-us-donald-trump-salivates-over-greenland/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46505462\"\u003ehttps://news.ycombinator.com/item?id=46505462\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 4\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "AI godfather calls Meta AI boss Alexander Wang 'inexperienced'",
+      "link": "https://www.cnbc.com/2026/01/05/ai-godfather-calls-meta-ai-boss-alexander-wang-inexperienced-.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-05T21:46:50Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.cnbc.com/2026/01/05/ai-godfather-calls-meta-ai-boss-alexander-wang-inexperienced-.html\"\u003ehttps://www.cnbc.com/2026/01/05/ai-godfather-calls-meta-ai-boss-alexander-wang-inexperienced-.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46505450\"\u003ehttps://news.ycombinator.com/item?id=46505450\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Using Old Tech in the New Age",
+      "link": "https://blog.webb.page",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-05T21:46:37Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://blog.webb.page\"\u003ehttps://blog.webb.page\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46505448\"\u003ehttps://news.ycombinator.com/item?id=46505448\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Fault-tolerant quantum computing: Novel protocol reduces resource cost",
+      "link": "https://phys.org/news/2026-01-fault-tolerant-quantum-protocol-efficiently.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-05T21:46:09Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://phys.org/news/2026-01-fault-tolerant-quantum-protocol-efficiently.html\"\u003ehttps://phys.org/news/2026-01-fault-tolerant-quantum-protocol-efficiently.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46505445\"\u003ehttps://news.ycombinator.com/item?id=46505445\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Closing the capability gap between frontier AI and everyday use in 2026",
+      "link": "https://fidjisimo.substack.com/p/closing-the-capability-gap",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-05T21:45:11Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://fidjisimo.substack.com/p/closing-the-capability-gap\"\u003ehttps://fidjisimo.substack.com/p/closing-the-capability-gap\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46505434\"\u003ehttps://news.ycombinator.com/item?id=46505434\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Android XR lights up Sphere in Las Vegas for CES.",
+      "link": "https://blog.google/technology/xr-ar/android-xr-sphere-ces-2026/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-05T17:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/16x9_Push_In_-_Revised_Color_-_.max-600x600.format-webp.webp\"\u003eDuring CES 2026, Sphere in Las Vegas is lit up with an Android XR animation."
+    },
+    {
+      "title": "Google introduces new Gemini for Google TV features.",
+      "link": "https://blog.google/products/google-tv/ces-2026/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-05T14:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/We_previewed_new_Gemini_for_Goo.max-600x600.format-webp.webp\"\u003eSee how Gemini is making Google TV even more helpful, and bringing more ways to engage with your TV."
+    },
+    {
+      "title": "NVIDIA DRIVE AV Software Debuts in All-New Mercedes-Benz CLA",
+      "link": "https://blogs.nvidia.com/blog/drive-av-software-mercedes-benz-cla/",
+      "source": "NVIDIA Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-05T21:57:11Z",
+      "description": "NVIDIA is enabling a new era of AI-defined driving, bringing its NVIDIA DRIVE AV software with enhanced level 2 point-to-point driver assistance capabilities to U.S. roads, expected by end of this year — starting with Mercedes-Benz, a long-standing partner in advancing safe, intelligent mobility. The all-new Mercedes-Benz CLA — the brand’s first vehicle featuring the\t\u003ca class=\"read-more\" href=\"https://blogs.nvidia.com/blog/drive-av-software-mercedes-benz-cla/\"\u003e\n\t\tRead Article\t\t\u003cspan data-icon=\"y\"\u003e\u003c/span\u003e\n\t\u003c/a\u003e\n\t"
+    },
+    {
+      "title": "NVIDIA Unveils New Open Models, Data and Tools to Advance AI Across Every Industry",
+      "link": "https://blogs.nvidia.com/blog/open-models-data-tools-accelerate-ai/",
+      "source": "NVIDIA Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-05T21:50:50Z",
+      "description": "Expanding the open model universe, NVIDIA today released new open models, data and tools to advance AI across every industry. These models — spanning the NVIDIA Nemotron family for agentic AI, the NVIDIA Cosmos platform for physical AI, the new NVIDIA Alpamayo family for autonomous vehicle development, NVIDIA Isaac GR00T for robotics and NVIDIA Clara\t\u003ca class=\"read-more\" href=\"https://blogs.nvidia.com/blog/open-models-data-tools-accelerate-ai/\"\u003e\n\t\tRead Article\t\t\u003cspan data-icon=\"y\"\u003e\u003c/span\u003e\n\t\u003c/a\u003e\n\t"
+    }
+  ],
+  "generatedAt": "2026-01-06T07:09:43.883609957+09:00"
+}
