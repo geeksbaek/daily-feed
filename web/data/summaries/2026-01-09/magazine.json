@@ -1,0 +1,338 @@
+{
+  "date": "2026-01-09",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2026년 1월 8일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** 애플 카드의 새로운 파트너로 Chase 선정, OpenAI와 구글의 헬스케어 및 이메일 AI 통합 가속화, 그리고 소비자의 외면을 받은 AI PC 마케팅의 현실.\n\n---\n\n## 🏆 Top Story: 핀테크 지각변동\n### Apple Card, 골드만삭스와 결별하고 'Chase'와 손잡다\n애플이 2019년 출시 이후 파트너였던 골드만삭스와의 관계를 정리하고, 미국 최대 은행인 **JPMorgan Chase**를 Apple Card의 새로운 발행사로 선정했습니다.\n\n*   **핵심 변화:** 기존 골드만삭스가 담당하던 Apple Card의 신용 대출 및 관리 업무가 Chase로 이관됩니다.\n*   **배경:** 골드만삭스는 소비자 금융 부문에서의 손실 누적으로 인해 파트너십 종료를 원해왔으며, 애플은 안정적인 글로벌 파트너를 모색해 왔습니다.\n*   **전망:** Chase의 방대한 뱅킹 네트워크와 결합하여 Apple Card의 혜택이나 국제적 확장이 가속화될 가능성이 큽니다. 사용자 입장에서는 서비스의 연속성이 보장되면서도, 향후 Chase 계좌와의 연동 등 새로운 시너지가 기대됩니다.\n\u003e **Key Point:** 애플의 핀테크 전략이 '실험' 단계를 넘어 '메가 뱅크'와의 협력을 통해 안정화 단계로 진입했습니다. [^1]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n\n### 1. OpenAI, 의료 분야 본격 진출 (OpenAI for Healthcare)\nOpenAI가 헬스케어 전용 솔루션을 공식화하며 의료 시장 공략에 나섰습니다.\n- **What:** 'OpenAI for Healthcare' 이니셔티브와 'ChatGPT Health' 관련 소식이 동시에 전해졌습니다. 의료 데이터 분석, 환자 상담 보조 등에 특화된 모델이 예상됩니다.\n- **Why:** 의료 분야는 AI 도입 시 부가가치가 가장 높은 영역 중 하나지만, 데이터 보안과 정확성 문제로 진입 장벽이 높았습니다. OpenAI는 이를 해결할 기술적 자신감을 내비친 것입니다.\n- **Impact:** 의사의 행정 업무 부담 감소와 진단 보조의 정확성 향상이 기대되지만, 오진 책임 소재와 데이터 프라이버시 논쟁도 함께 가열될 것입니다. [^3][^11]\n\n### 2. Gmail, 'Gemini 시대' 선언\n구글이 Gmail에 자사의 AI 모델인 Gemini를 전면적으로 통합합니다.\n- **What:** 단순한 문장 자동 완성을 넘어, 이메일 요약, 답장 초안 작성, 복잡한 검색 등을 Gemini가 처리하게 됩니다.\n- **Why:** MS Copilot과의 경쟁에서 우위를 점하고, 구글 워크스페이스 생태계의 '락인(Lock-in)' 효과를 강화하기 위함입니다.\n- **Impact:** 전 세계 수십억 명의 사용자가 매일 쓰는 도구에 AI가 깊숙이 침투함에 따라, 일반 대중의 AI 활용 경험이 급격히 보편화될 것입니다. [^4][^17]\n\n### 3. Dell의 고백: \"소비자는 AI PC에 관심 없다\"\nPC 제조사 Dell이 최근 마케팅 트렌드와 소비자의 실제 반응 사이의 괴리를 인정했습니다.\n- **What:** Dell은 소비자들이 PC를 구매할 때 'AI 기능'보다는 여전히 가격, 사양, 디자인을 중시한다는 사실을 인정했습니다.\n- **Why:** NPU(신경망처리장치) 탑재 등을 내세운 'AI PC'가 쏟아져 나왔지만, 정작 소비자가 체감할 만한 '킬러 앱'이 부재했기 때문입니다.\n- **Impact:** 향후 하드웨어 제조사들의 마케팅 포인트가 막연한 'AI 탑재'에서 '실질적인 사용자 경험 개선'으로 선회할 것으로 보입니다. [^6]\n\n---\n\n## 🛠️ Geek's Corner: 개발자 \u0026 리서치\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **VS Code v1.108** | 2025년 12월 업데이트 배포. 새로운 편집 기능 및 확장성 개선 포함. [^41] |\n| **Tool** | **Tailscale** | 상태 파일 암호화 기능이 기본 설정에서 비활성화됨. 보안 설정 확인 필요. [^9] |\n| **Library** | **TikZ Folding** | LaTeX에서 종이 접기(Paper-Folding) 다이어그램을 그릴 수 있는 라이브러리. [^22] |\n| **Framework** | **Sigment** | 빠르고 반응성 높은 앱 구축을 위한 세밀한(fine-grained) 리액티브 프레임워크. [^36] |\n| **Paper** | **P vs NP Syntax** | P vs NP 문제의 공식화 내부에 구문론적 불일치가 존재할 가능성을 제기한 논문. [^30] |\n| **Tool** | **Rovo Dev CLI** | 아틀라시안(Atlassian) 제품 분석을 개선하기 위한 새로운 CLI 도구. [^16] |\n| **Fun** | **LaTeX Coffee Stains** | 문서에 리얼한 커피 얼룩을 추가해주는 LaTeX 패키지. [^12] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n\n#### 🤖 AI \u0026 LLM 인사이트\n*   **Netomi의 교훈**: 에이전트 시스템(Agentic Systems)을 기업 규모로 확장할 때의 노하우를 OpenAI가 공유했습니다. [^2]\n*   **AI 코딩 팁**: 'Ralph Wiggum' 스타일로 AI 코딩을 더 효과적으로 하는 방법이 논의되었습니다. [^18]\n*   **경찰 보고서 오류**: AI가 작성한 경찰 보고서에서 경관을 '개구리'로 묘사하는 황당한 오류가 발생했습니다. [^23]\n*   **Scaling의 한계?**: GPT-6는 단순한 모델 크기 확장이 아닌 다른 차원의 변화를 가져올 것이라는 분석입니다. [^24]\n*   **AI 도덕성 비교**: 다양한 AI 모델들이 도덕적 딜레마에 어떻게 답하는지 비교한 연구입니다. [^25]\n*   **DevX에서 BotX로**: 개발자 경험(DevX)을 넘어 봇 경험(BotX)이 중요해지는 시대로의 전환을 다룹니다. [^26]\n*   **Open Slopware**: 생성형 AI로 만들어진 저품질 코드(Slop)의 투명성을 다루는 프로젝트입니다. [^37]\n*   **Claude 실패 모음**: Claude의 답변 실패/성공 사례를 공유하는 웹사이트가 등장했습니다. [^28]\n*   **AI 기업 되기**: 일반 기업이 'AI 기업'으로 전환하는 과정에 대한 가이드입니다. [^29]\n\n#### 💻 하드웨어 \u0026 인프라\n*   **NVIDIA \u0026 버클리**: AI 코파일럿이 버클리 연구소의 X-Ray 입자 가속기 운영을 돕고 있습니다. [^38]\n*   **NVIDIA 로봇**: 일본 과학기술진흥기구(JST)가 엔비디아 기반의 노인 돌봄 로봇을 개발했습니다. [^39]\n*   **GeForce NOW**: 리눅스 지원, Fire TV 앱, 비행 스틱 컨트롤 지원 등 CES 업데이트를 발표했습니다. [^40]\n*   **Chrome Dev 안드로이드**: 안드로이드용 크롬 개발자 버전이 업데이트되었습니다. [^15]\n*   **A4 용지 이야기**: 우리가 매일 쓰는 A4 용지 규격에 담긴 수학과 역사 이야기입니다. [^13]\n\n#### 🌍 사회, 정책 \u0026 보안\n*   **Polymarket 지급 거부**: 미국의 베네수엘라 개입 관련 베팅에서 Polymarket이 지급을 거부해 논란입니다. [^5]\n*   **ICE 감시 기술**: 미 이민세관단속국(ICE)이 대규모 감시 기술 구매에 나섰습니다. [^7]\n*   **ICE 총격 사건**: 미니애폴리스에서 ICE 요원의 총격으로 운전자가 사망하는 사건이 발생했습니다. [^8]\n*   **Cloudflare 벌금**: 해적판 콘텐츠 차단 실패를 이유로 이탈리아 당국이 1,400만 유로의 벌금을 부과했습니다. [^19]\n*   **미국 구인 감소**: 미국의 구인 건수가 1년 넘게 최저 수준으로 떨어지며 노동 시장 냉각을 시사했습니다. [^10]\n*   **이란 인터넷 차단**: 시위가 격화되자 이란 정부가 인터넷 서비스를 차단하거나 제한했습니다. [^32]\n*   **중국의 희토류**: 지난 60년간 중국이 희토류 시장을 장악해온 과정을 심층 분석했습니다. [^35]\n\n#### 🔬 과학 \u0026 기타 도구\n*   **슈퍼박테리아 희망**: 약물 내성 박테리아에 대항할 수 있는 미세한 바이러스 '스위치'가 발견되었습니다. [^20]\n*   **Clip to Discourse**: 웹 콘텐츠를 Discourse 포럼으로 쉽게 스크랩하는 크롬 확장 프로그램입니다. [^21]\n*   **레거시 코드의 미래**: 유지보수하기 힘든 오래된 코드베이스의 미래에 대한 개발자들의 토론입니다. [^27]\n*   **인스타그램 배너 툴**: 인스타그램 스토리 배너를 만드는 데 걸리는 시간을 줄여주는 도구(Craffted)입니다. [^31]\n*   **1955년 컴퓨터의 교훈**: 초기 컴퓨터 역사를 통해 현대 컴퓨팅에 대한 통찰을 얻습니다. [^33]\n*   **Grokcode**: 코드 이해를 돕는 새로운 도구로 보입니다. [^34]\n*   **개미 투자자용 AI**: '바이브 코딩'으로 만든 투자 분석 서비스 'deep-dives.ai'가 소개되었습니다. [^14]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘 뉴스는 '**AI의 현실화**'와 '**비즈니스의 재편**'으로 요약됩니다. 애플은 금융 파트너를 교체하며 내실을 다지고, 구글과 OpenAI는 각자의 주력 분야(이메일, 헬스케어)에 AI를 깊숙이 심고 있습니다. 반면, Dell의 고백처럼 \"AI니까 산다\"는 거품은 꺼지고 \"유용하니까 산다\"는 실용주의가 자리 잡고 있습니다. 기술이 마케팅 용어를 넘어 실제 삶의 도구가 되는 과도기적 현상입니다.\n\n---\n\n### Footnotes\n[^1]: Chase to become new issuer of Apple Card - https://www.apple.com/newsroom/2026/01/chase-to-become-new-issuer-of-apple-card/\n[^2]: Netomi’s lessons for scaling agentic systems into the enterprise - https://openai.com/index/netomi\n[^3]: OpenAI for Healthcare - https://openai.com/index/openai-for-healthcare\n[^4]: Gmail is entering the Gemini era - https://blog.google/products-and-platforms/products/gmail/gmail-is-entering-the-gemini-era/\n[^5]: 미국의 베네수엘라 ‘침공’에 대한 베팅 지급을 거부한 Polymarket - https://news.hada.io/topic?id=25670\n[^6]: 델, 소비자들은 AI PC에 관심 없다는 사실을 인정 - https://news.hada.io/topic?id=25669\n[^7]: 미 이민세관단속국(ICE), 감시 기술 대규모 구매에 나서다 - https://news.hada.io/topic?id=25668\n[^8]: 미니애폴리스에서 ICE 요원 총격으로 운전자 사망 - https://news.hada.io/topic?id=25667\n[^9]: Tailscale 상태 파일 암호화, 기본 설정에서 비활성화됨 - https://news.hada.io/topic?id=25666\n[^10]: 미국 구인 건수, 1년 넘게 최저 수준으로 감소 - https://news.hada.io/topic?id=25665\n[^11]: ChatGPT Health - https://news.hada.io/topic?id=25664\n[^12]: LaTeX 커피 얼룩 (LaTeX Coffee Stains) - https://news.hada.io/topic?id=25663\n[^13]: A4 용지 이야기 - https://news.hada.io/topic?id=25662\n[^14]: Show GN: deep-dives.ai - 바이브 코딩으로 만든 개미 투자자용 AI 서비스 - https://news.hada.io/topic?id=25661\n[^15]: Chrome Dev for Android Update - http://chromereleases.googleblog.com/2026/01/chrome-dev-for-android-update.html\n[^16]: Improving product analytics with Rovo Dev CLI - https://www.atlassian.com/blog/developer/improving-product-analytics-with-rovo-dev-cli\n[^17]: Gmail is entering the Gemini era - https://blog.google/products-and-platforms/products/gmail/gmail-is-entering-the-gemini-era/\n[^18]: Tips for AI Coding with Ralph Wiggum - https://www.aihero.dev/tips-for-ai-coding-with-ralph-wiggum\n[^19]: Agcom: 14M fine to Cloudflare for failing to block pirated content - https://en.ilsole24ore.com/art/agcom-sanctions-14-million-cloudflare-for-not-blocking-pirated-content-AIJzbul\n[^20]: Tiny viral 'switch' offers hope against drug-resistant bacteria - https://phys.org/news/2025-12-tiny-viral-drug-resistant-bacteria.html\n[^21]: 'Clip to Discourse' Chrome Extension - https://chromewebstore.google.com/detail/clip-to-discourse/copdhiejkkdblhdcdjapcoalldkondhi\n[^22]: TikZ Paper-Folding Diagrams Library - https://tikz.dev/library-folding\n[^23]: AI-generated police report states Utah officer was turned into a frog - https://www.upi.com/Odd_News/2026/01/05/Heber-City-Police-Department-AI-program-officer-frog/9641767634540/\n[^24]: Scaling is not the story anymore. What GPT 6 might change - https://otieu.com/4/10436307\n[^25]: Side-by-side comparison of how AI models answer moral dilemmas - https://civai.org/p/ai-values\n[^26]: DevX to BotX - https://slowtechred.substack.com/p/devx-vs-botx\n[^27]: Ask HN: Where is legacy codebase maintenance headed? - https://news.ycombinator.com/item?id=46547015\n[^28]: Made a website where you can share Claude fails/wins with a questionable name - https://www.isclauderetarded.today/\n[^29]: Becoming an AI Company - https://candid.dev/blog/becoming-an-ai-company\n[^30]: A possible syntactic inconsistency inside the P vs. NP formulation - https://zenodo.org/records/18107880/files/On%20the%20Syntactic%20Ill-Formedness%20of%20the%20Proposition%20P%20=%20NP.pdf?download=1\n[^31]: Show HN: How much time do you spend to create Instagram story banners? - https://www.craffted.app/\n[^32]: Internet service in Iran cut off or restricted during deadly protests - https://www.cbsnews.com/news/iran-cutting-internet-amid-deadly-protests/\n[^33]: What a 1955 Computer Taught Me - https://twitter.com/andrejsshell/status/2009380667046473887\n[^34]: Grokcode - https://github.com/maximus242/grokcode\n[^35]: Inside China's Six-Decade Campaign to Dominate Rare Earths - https://www.nytimes.com/2025/12/31/business/china-rare-earths-history.html\n[^36]: Sigment – fine-grained reactive framework for building fast apps - https://sigment.dev/\n[^37]: Open Slopware - https://codeberg.org/gen-ai-transparency/open-slopware\n[^38]: AI Copilot Keeps Berkeley’s X-Ray Particle Accelerator on Track - https://blogs.nvidia.com/blog/ai-copilot-berkeley-x-ray-particle-accelerator/\n[^39]: Japan Science and Technology Agency Develops NVIDIA-Powered Moonshot Robot for Elderly Care - https://blogs.nvidia.com/blog/japan-science-technology-agency-develops-moonshot-robot/\n[^40]: More Ways to Play, More Games to Love — GeForce NOW Wraps CES With Linux Support, Fire TV App, Flight Stick Controls - https://blogs.nvidia.com/blog/geforce-now-thursday-ces-2026-recap/\n[^41]: December 2025 (version 1.108) - https://code.visualstudio.com/updates/v1_108\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **Chase to become new issuer of Apple Card \n**\n   - 출처: Apple Newsroom\n   - 링크: https://www.apple.com/newsroom/2026/01/chase-to-become-new-issuer-of-apple-card/\n\n2. **Netomi’s lessons for scaling agentic systems into the enterprise**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/netomi\n\n3. **OpenAI for Healthcare**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/openai-for-healthcare\n\n4. **Gmail is entering the Gemini era**\n   - 출처: Gemini\n   - 링크: https://blog.google/products-and-platforms/products/gmail/gmail-is-entering-the-gemini-era/\n\n5. **미국의 베네수엘라 ‘침공’에 대한 베팅 지급을 거부한 Polymarket**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25670\n\n6. **델, 소비자들은 AI PC에 관심 없다는 사실을 인정**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25669\n\n7. **미 이민세관단속국(ICE), 감시 기술 대규모 구매에 나서다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25668\n\n8. **미니애폴리스에서 ICE 요원 총격으로 운전자 사망**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25667\n\n9. **Tailscale 상태 파일 암호화, 기본 설정에서 비활성화됨**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25666\n\n10. **미국 구인 건수, 1년 넘게 최저 수준으로 감소**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25665\n\n11. **ChatGPT Health**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25664\n\n12. **LaTeX 커피 얼룩 (LaTeX Coffee Stains)**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25663\n\n13. **A4 용지 이야기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25662\n\n14. **Show GN: deep-dives.ai - 바이브 코딩으로 만든 개미 투자자용 AI 서비스**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25661\n\n15. **Chrome Dev for Android Update**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2026/01/chrome-dev-for-android-update.html\n\n16. **Improving product analytics with Rovo Dev CLI**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/developer/improving-product-analytics-with-rovo-dev-cli\n\n17. **Gmail is entering the Gemini era**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/products-and-platforms/products/gmail/gmail-is-entering-the-gemini-era/\n\n18. **Tips for AI Coding with Ralph Wiggum**\n   - 출처: Hacker News\n   - 링크: https://www.aihero.dev/tips-for-ai-coding-with-ralph-wiggum\n\n19. **Agcom: 14M fine to Cloudflare for failing to block pirated content**\n   - 출처: Hacker News\n   - 링크: https://en.ilsole24ore.com/art/agcom-sanctions-14-million-cloudflare-for-not-blocking-pirated-content-AIJzbul\n\n20. **Tiny viral 'switch' offers hope against drug-resistant bacteria**\n   - 출처: Hacker News\n   - 링크: https://phys.org/news/2025-12-tiny-viral-drug-resistant-bacteria.html\n\n21. **'Clip to Discourse' Chrome Extension**\n   - 출처: Hacker News\n   - 링크: https://chromewebstore.google.com/detail/clip-to-discourse/copdhiejkkdblhdcdjapcoalldkondhi\n\n22. **TikZ Paper-Folding Diagrams Library**\n   - 출처: Hacker News\n   - 링크: https://tikz.dev/library-folding\n\n23. **AI-generated police report states Utah officer was turned into a frog**\n   - 출처: Hacker News\n   - 링크: https://www.upi.com/Odd_News/2026/01/05/Heber-City-Police-Department-AI-program-officer-frog/9641767634540/\n\n24. **Scaling is not the story anymore. What GPT 6 might change**\n   - 출처: Hacker News\n   - 링크: https://otieu.com/4/10436307\n\n25. **Side-by-side comparison of how AI models answer moral dilemmas**\n   - 출처: Hacker News\n   - 링크: https://civai.org/p/ai-values\n\n26. **DevX to BotX**\n   - 출처: Hacker News\n   - 링크: https://slowtechred.substack.com/p/devx-vs-botx\n\n27. **Ask HN: Where is legacy codebase maintenance headed?**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=46547015\n\n28. **Made a website where you can share Claude fails/wins with a questionable name**\n   - 출처: Hacker News\n   - 링크: https://www.isclauderetarded.today/\n\n29. **Becoming an AI Company**\n   - 출처: Hacker News\n   - 링크: https://candid.dev/blog/becoming-an-ai-company\n\n30. **A possible syntactic inconsistency inside the P vs. NP formulation**\n   - 출처: Hacker News\n   - 링크: https://zenodo.org/records/18107880/files/On%20the%20Syntactic%20Ill-Formedness%20of%20the%20Proposition%20P%20=%20NP.pdf?download=1\n\n31. **Show HN: How much time do you spend to create Instagram story banners?**\n   - 출처: Hacker News\n   - 링크: https://www.craffted.app/\n\n32. **Internet service in Iran cut off or restricted during deadly protests**\n   - 출처: Hacker News\n   - 링크: https://www.cbsnews.com/news/iran-cutting-internet-amid-deadly-protests/\n\n33. **What a 1955 Computer Taught Me**\n   - 출처: Hacker News\n   - 링크: https://twitter.com/andrejsshell/status/2009380667046473887\n\n34. **Grokcode**\n   - 출처: Hacker News\n   - 링크: https://github.com/maximus242/grokcode\n\n35. **Inside China's Six-Decade Campaign to Dominate Rare Earths**\n   - 출처: Hacker News\n   - 링크: https://www.nytimes.com/2025/12/31/business/china-rare-earths-history.html\n\n36. **Sigment – fine-grained reactive framework for building fast apps**\n   - 출처: Hacker News\n   - 링크: https://sigment.dev/\n\n37. **Open Slopware**\n   - 출처: Hacker News\n   - 링크: https://codeberg.org/gen-ai-transparency/open-slopware\n\n38. **AI Copilot Keeps Berkeley’s X-Ray Particle Accelerator on Track**\n   - 출처: NVIDIA Blog\n   - 링크: https://blogs.nvidia.com/blog/ai-copilot-berkeley-x-ray-particle-accelerator/\n\n39. **Japan Science and Technology Agency Develops NVIDIA-Powered Moonshot Robot for Elderly Care**\n   - 출처: NVIDIA Blog\n   - 링크: https://blogs.nvidia.com/blog/japan-science-technology-agency-develops-moonshot-robot/\n\n40. **More Ways to Play, More Games to Love — GeForce NOW Wraps CES With Linux Support, Fire TV App, Flight Stick Controls**\n   - 출처: NVIDIA Blog\n   - 링크: https://blogs.nvidia.com/blog/geforce-now-thursday-ces-2026-recap/\n\n41. **December 2025 (version 1.108)**\n   - 출처: Visual Studio Code - Code Editing. Redefined.\n   - 링크: https://code.visualstudio.com/updates/v1_108\n\n\n",
+  "articles": [
+    {
+      "title": "Chase to become new issuer of Apple Card \n",
+      "link": "https://www.apple.com/newsroom/2026/01/chase-to-become-new-issuer-of-apple-card/",
+      "source": "Apple Newsroom",
+      "category": "tech",
+      "publishedAt": "2026-01-07T22:45:21.949Z",
+      "description": "Today, Apple and Chase announced that Chase will become the new issuer of Apple Card, with an expected transition in approximately 24 months."
+    },
+    {
+      "title": "Netomi’s lessons for scaling agentic systems into the enterprise",
+      "link": "https://openai.com/index/netomi",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2026-01-08T13:00:00Z",
+      "description": "How Netomi scales enterprise AI agents using GPT-4.1 and GPT-5.2—combining concurrency, governance, and multi-step reasoning for reliable production workflows."
+    },
+    {
+      "title": "OpenAI for Healthcare",
+      "link": "https://openai.com/index/openai-for-healthcare",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2026-01-08T12:00:00Z",
+      "description": "OpenAI for Healthcare enables secure, enterprise-grade AI that supports HIPAA compliance—reducing administrative burden and supporting clinical workflows."
+    },
+    {
+      "title": "Gmail is entering the Gemini era",
+      "link": "https://blog.google/products-and-platforms/products/gmail/gmail-is-entering-the-gemini-era/",
+      "source": "Gemini",
+      "category": "tech",
+      "publishedAt": "2026-01-08T13:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/01-8_GmailGemini-4_1.max-600x600.format-webp.webp\"\u003eLearn more about the next era of Gmail, now using Gemini 3 and Personal Intelligence."
+    },
+    {
+      "title": "미국의 베네수엘라 ‘침공’에 대한 베팅 지급을 거부한 Polymarket",
+      "link": "https://news.hada.io/topic?id=25670",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-09T06:37:19+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003ePolymarket\u003c/strong\u003e이 미국의 베네수엘라 ‘침공’ 여부에 대한 베팅 결과 지급을 \u003cstrong\u003e거부한 사건\u003c/strong\u003e이 발생\u003c/li\u003e\n\u003cli\u003e해당 플랫폼은 \u003cstrong\u003e예측시장 기반 암호화 서비스\u003c/strong\u003e로, 정치·경제 사건에 대한 베팅을 운영\u003c/li\u003e\n\u003cli\u003e이번 사건은 \u003cstrong\u003e‘침공’의 정의와 판정 기준\u003c/st...\u003c/p\u003e"
+    },
+    {
+      "title": "델, 소비자들은 AI PC에 관심 없다는 사실을 인정",
+      "link": "https://news.hada.io/topic?id=25669",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-09T06:34:18+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eCES 2026에서 \u003cstrong\u003eDell은 AI 중심 마케팅을 배제한 제품 발표\u003c/strong\u003e를 진행하며, 최근 몇 년간의 AI 과열 분위기와 대비되는 접근을 보임\u003c/li\u003e\n\u003cli\u003e발표에서는 \u003cstrong\u003eXPS 및 Alienware 노트북, Area-51 데스크톱, 신규 모니터\u003c/strong\u003e 등 구체적 하드웨어 중심의 제품군이 소개됨\u003c/li\u003e\n\u003cli\u003eDell 측은...\u003c/p\u003e"
+    },
+    {
+      "title": "미 이민세관단속국(ICE), 감시 기술 대규모 구매에 나서다",
+      "link": "https://news.hada.io/topic?id=25668",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-09T04:33:20+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e미국 \u003cstrong\u003e이민세관단속국(ICE)\u003c/strong\u003e 이 2025년 예산 287억 달러를 확보하며, 감시 기술 전반에 걸친 \u003cstrong\u003e대규모 구매 행보\u003c/strong\u003e를 진행 중임\u003c/li\u003e\n\u003cli\u003eICE는 \u003cstrong\u003e휴대폰 해킹·스파이웨어·소셜미디어 감시·얼굴인식·차량번호판 추적\u003c/strong\u003e 등 다양한 감시 도구를 민간업체로부터 계약해...\u003c/p\u003e"
+    },
+    {
+      "title": "미니애폴리스에서 ICE 요원 총격으로 운전자 사망",
+      "link": "https://news.hada.io/topic?id=25667",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-09T03:33:41+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e미니애폴리스에서 \u003cstrong\u003e이민세관단속국(ICE)\u003c/strong\u003e 요원이 이민 단속 중 한 여성을 총격으로 사망하게 함\u003c/li\u003e\n\u003cli\u003e사망자는 \u003cstrong\u003e37세 미국 시민 Renee Nicole Good\u003c/strong\u003e로, 현장에 있었지만 단속 대상은 아니었던 것으로 알려짐\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e국토안보부(DHS)\u003c/strong\u003e 는 여성이 차량을 이...\u003c/p\u003e"
+    },
+    {
+      "title": "Tailscale 상태 파일 암호화, 기본 설정에서 비활성화됨",
+      "link": "https://news.hada.io/topic?id=25666",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-09T02:32:58+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eTailscale v1.92.5\u003c/strong\u003e 버전에서 Linux와 Windows 클라이언트의 \u003cstrong\u003e상태 파일 암호화(state file encryption)\u003c/strong\u003e 및 \u003cstrong\u003e하드웨어 인증 키\u003c/strong\u003e 기능이 기본적으로 비활성화됨\u003c/li\u003e\n\u003cli\u003eTPM 장치가 재설정되거나 교체된 경우에도 클라이언트가 정상적으로 시작되며, 하드웨어...\u003c/p\u003e"
+    },
+    {
+      "title": "미국 구인 건수, 1년 넘게 최저 수준으로 감소",
+      "link": "https://news.hada.io/topic?id=25665",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-09T01:33:33+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eBloomberg 웹페이지는 \u003cstrong\u003e로봇 인증 절차 안내문\u003c/strong\u003e만 표시되어 기사 본문 접근이 불가능한 상태\u003c/li\u003e\n\u003cli\u003e페이지에는 \u003cstrong\u003eJavaScript와 쿠키 허용 필요\u003c/strong\u003e 및 \u003cstrong\u003e브라우저 설정 확인 요청\u003c/strong\u003e 문구가 포함\u003c/li\u003e\n\u003cli\u003e이용자는 \u003cstrong\u003e“I’m not a robot” 확인 상자 클릭\u003c/st...\u003c/p\u003e"
+    },
+    {
+      "title": "ChatGPT Health",
+      "link": "https://news.hada.io/topic?id=25664",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-08T23:37:40+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e개인 건강 정보와 \u003cstrong\u003eChatGPT의 인공지능\u003c/strong\u003e을 안전하게 연결해 건강 상태를 이해하고 관리할 수 있도록 지원하는 서비스\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e의료 정보 보호를 위한 암호화·분리 구조\u003c/strong\u003e를 적용하고, 건강 관련 대화는 모델 학습에 사용되지 않음\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e전자 의료 기록(EHR)\u003c/str...\u003c/p\u003e"
+    },
+    {
+      "title": "LaTeX 커피 얼룩 (LaTeX Coffee Stains)",
+      "link": "https://news.hada.io/topic?id=25663",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-08T23:34:40+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eLaTeX 문서에 커피 얼룩을 자동으로 추가\u003c/strong\u003e할 수 있는 패키지로, 수작업으로 이미지를 삽입하던 과정을 단순화함\u003c/li\u003e\n\u003cli\u003e네 가지 형태의 얼룩(A~D)을 제공하며, \u003cstrong\u003e투명도·크기·회전각·위치\u003c/strong\u003e를 세밀하게 조정 가능\u003c/li\u003e\n\u003cli\u003e설치 후 \u003ccode\u003e\\usepackage{coffeestains}\u003c/code\u003e를...\u003c/p\u003e"
+    },
+    {
+      "title": "A4 용지 이야기",
+      "link": "https://news.hada.io/topic?id=25662",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-08T20:33:06+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eA4 용지 한 장\u003c/strong\u003e을 이용해 간단히 물건의 크기를 재는 \u003cstrong\u003e비공식적 측정법\u003c/strong\u003e을 소개\u003c/li\u003e\n\u003cli\u003eA4 용지는 \u003cstrong\u003e√2의 가로세로 비율\u003c/strong\u003e을 유지하며 절반으로 잘라도 동일한 비율을 가지는 \u003cstrong\u003eISO 규격 시리즈\u003c/strong\u003e의 일부\u003c/li\u003e\n\u003cli\u003eA0부터 시작해 절반씩 나누면 ...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: deep-dives.ai - 바이브 코딩으로 만든 개미 투자자용 AI 서비스",
+      "link": "https://news.hada.io/topic?id=25661",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-08T18:05:14+09:00",
+      "description": "\u003cp\u003e현명한 가치 투자자가 되고 싶지만, 현실은 탐욕과 공포에 휩쓸려 사팔사팔하는 평범한 개미 투자자입니다.\u003c/p\u003e\n\u003cp\u003e이렇게 바보같이 투자하지 않도록 도와주는 서비스가 있으면 좋겠다고 생각했는데 제가 원하는 서비스는 없더라구요.\u003c/p\u003e\n\u003cp\u003e그래서 클로드와 같이 직접 만들었습니다.\u003c/p\u003e\n\u003cp\u003edeep-dives.ai는 이런 걸"
+    },
+    {
+      "title": "Chrome Dev for Android Update",
+      "link": "http://chromereleases.googleblog.com/2026/01/chrome-dev-for-android-update.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2026-01-08T10:58:32.889-08:00",
+      "description": "\u003cp\u003eHi everyone! We've just released Chrome Dev 145 (145.0.7620.0) for Android. It's now available on \u003ca href=\"https://play.google.com/store/apps/details?id=com.chrome.dev\"\u003eGoogle Play\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eYou can see a partial list of the changes in the \u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/145.0.7587.4..145.0.7620.0?pretty=fuller\u0026amp;n=10000\"\u003eGit log\u003c/a\u003e. For details on new features, check out the \u003ca href=\"https://blog.chromium.org\"\u003eChromium blog\u003c/a\u003e, and for details on web platform updates, check \u003ca href=\"https://www.chromestatus.com/features#milestone%3D145\"\u003ehere\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eIf you find a new issue, please let us know by \u003ca href=\"https://code.google.com/p/chromium/issues/entry?template=Android%20Issue\"\u003efiling a bug\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eChrome Release Team\u003cbr /\u003e\u003ca href=\"https://www.google.com/chrome\"\u003e\u003c/a\u003e\u003ca href=\"https://www.google.com/chrome\"\u003eGoogle Chrome\u003c/a\u003e\u003c/p\u003e"
+    },
+    {
+      "title": "Improving product analytics with Rovo Dev CLI",
+      "link": "https://www.atlassian.com/blog/developer/improving-product-analytics-with-rovo-dev-cli",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-07T23:19:27Z",
+      "description": "\u003cp\u003eWhen we’re building AI-powered developer tools (Rovo Dev CLI), our ability to learn from the real usage data is just...\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/developer/improving-product-analytics-with-rovo-dev-cli\"\u003eImproving product analytics with Rovo Dev CLI\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Gmail is entering the Gemini era",
+      "link": "https://blog.google/products-and-platforms/products/gmail/gmail-is-entering-the-gemini-era/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-08T13:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/01-8_GmailGemini-4_1.max-600x600.format-webp.webp\"\u003eLearn more about the next era of Gmail, now using Gemini 3 and Personal Intelligence."
+    },
+    {
+      "title": "Tips for AI Coding with Ralph Wiggum",
+      "link": "https://www.aihero.dev/tips-for-ai-coding-with-ralph-wiggum",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-08T22:04:19Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.aihero.dev/tips-for-ai-coding-with-ralph-wiggum\"\u003ehttps://www.aihero.dev/tips-for-ai-coding-with-ralph-wiggum\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46547129\"\u003ehttps://news.ycombinator.com/item?id=46547129\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Agcom: 14M fine to Cloudflare for failing to block pirated content",
+      "link": "https://en.ilsole24ore.com/art/agcom-sanctions-14-million-cloudflare-for-not-blocking-pirated-content-AIJzbul",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-08T22:00:44Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://en.ilsole24ore.com/art/agcom-sanctions-14-million-cloudflare-for-not-blocking-pirated-content-AIJzbul\"\u003ehttps://en.ilsole24ore.com/art/agcom-sanctions-14-million-cloudflare-for-not-blocking-pirated-content-AIJzbul\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46547098\"\u003ehttps://news.ycombinator.com/item?id=46547098\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Tiny viral 'switch' offers hope against drug-resistant bacteria",
+      "link": "https://phys.org/news/2025-12-tiny-viral-drug-resistant-bacteria.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-08T21:59:19Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://phys.org/news/2025-12-tiny-viral-drug-resistant-bacteria.html\"\u003ehttps://phys.org/news/2025-12-tiny-viral-drug-resistant-bacteria.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46547085\"\u003ehttps://news.ycombinator.com/item?id=46547085\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "'Clip to Discourse' Chrome Extension",
+      "link": "https://chromewebstore.google.com/detail/clip-to-discourse/copdhiejkkdblhdcdjapcoalldkondhi",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-08T21:58:20Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://chromewebstore.google.com/detail/clip-to-discourse/copdhiejkkdblhdcdjapcoalldkondhi\"\u003ehttps://chromewebstore.google.com/detail/clip-to-discourse/copdhiejkkdblhdcdjapcoalldkondhi\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46547073\"\u003ehttps://news.ycombinator.com/item?id=46547073\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "TikZ Paper-Folding Diagrams Library",
+      "link": "https://tikz.dev/library-folding",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-08T21:57:21Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://tikz.dev/library-folding\"\u003ehttps://tikz.dev/library-folding\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46547062\"\u003ehttps://news.ycombinator.com/item?id=46547062\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "AI-generated police report states Utah officer was turned into a frog",
+      "link": "https://www.upi.com/Odd_News/2026/01/05/Heber-City-Police-Department-AI-program-officer-frog/9641767634540/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-08T21:57:02Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.upi.com/Odd_News/2026/01/05/Heber-City-Police-Department-AI-program-officer-frog/9641767634540/\"\u003ehttps://www.upi.com/Odd_News/2026/01/05/Heber-City-Police-Department-AI-program-officer-frog/9641767634540/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46547060\"\u003ehttps://news.ycombinator.com/item?id=46547060\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Scaling is not the story anymore. What GPT 6 might change",
+      "link": "https://otieu.com/4/10436307",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-08T21:55:27Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://otieu.com/4/10436307\"\u003ehttps://otieu.com/4/10436307\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46547043\"\u003ehttps://news.ycombinator.com/item?id=46547043\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Side-by-side comparison of how AI models answer moral dilemmas",
+      "link": "https://civai.org/p/ai-values",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-08T21:53:06Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://civai.org/p/ai-values\"\u003ehttps://civai.org/p/ai-values\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46547024\"\u003ehttps://news.ycombinator.com/item?id=46547024\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "DevX to BotX",
+      "link": "https://slowtechred.substack.com/p/devx-vs-botx",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-08T21:52:37Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://slowtechred.substack.com/p/devx-vs-botx\"\u003ehttps://slowtechred.substack.com/p/devx-vs-botx\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46547017\"\u003ehttps://news.ycombinator.com/item?id=46547017\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Ask HN: Where is legacy codebase maintenance headed?",
+      "link": "https://news.ycombinator.com/item?id=46547015",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-08T21:52:32Z",
+      "description": "\n\u003cp\u003eI've seen a few anecdotes lately that say that they use Claude Code on legacy codebase and with relatively little supervision it can work on complex problems. Then the claim that Claude Code writes most of its own code, and that they no longer mentor their newcomers - instead, AI answers their questions and they can start making meaningful changes within the first few days. To me it sounds almost too good to be true, so I'd love to have some reality check.\u003cp\u003eI've spent most of my career in legacy codebases, reading, tracing behavior, making careful changes, and writing tests to protect them. I've taken a sabbatical though, which ends soon, and I'm quite worried and excited to what has happened during this time.\u003cp\u003eFor those working on legacy codebases:\u003cp\u003e- Has the workflow really shifted to prompting AI, reviewing output, and maintaining .md instructions?\u003cp\u003e- Does your company allow Claude Code, Codex or similar tools? If not, what do you use?\u003cp\u003e- Do companies worry about costs and code privacy?\u003cp\u003e- Where do you think this is headed, a year from now?\u003cp\u003eConcrete examples, good or bad, would be especially helpful. Thanks.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46547015\"\u003ehttps://news.ycombinator.com/item?id=46547015\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Made a website where you can share Claude fails/wins with a questionable name",
+      "link": "https://www.isclauderetarded.today/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-08T21:50:06Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.isclauderetarded.today/\"\u003ehttps://www.isclauderetarded.today/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46546990\"\u003ehttps://news.ycombinator.com/item?id=46546990\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Becoming an AI Company",
+      "link": "https://candid.dev/blog/becoming-an-ai-company",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-08T21:49:54Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://candid.dev/blog/becoming-an-ai-company\"\u003ehttps://candid.dev/blog/becoming-an-ai-company\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46546987\"\u003ehttps://news.ycombinator.com/item?id=46546987\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "A possible syntactic inconsistency inside the P vs. NP formulation",
+      "link": "https://zenodo.org/records/18107880/files/On%20the%20Syntactic%20Ill-Formedness%20of%20the%20Proposition%20P%20=%20NP.pdf?download=1",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-08T21:48:51Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://zenodo.org/records/18107880/files/On%20the%20Syntactic%20Ill-Formedness%20of%20the%20Proposition%20P%20=%20NP.pdf?download=1\"\u003ehttps://zenodo.org/records/18107880/files/On%20the%20Syntactic%20Ill-Formedness%20of%20the%20Proposition%20P%20=%20NP.pdf?download=1\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46546975\"\u003ehttps://news.ycombinator.com/item?id=46546975\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: How much time do you spend to create Instagram story banners?",
+      "link": "https://www.craffted.app/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-08T21:48:29Z",
+      "description": "\n\u003cp\u003eMe and my GF used this Christmas holidays to build an Instagram Story Generator app.\u003cp\u003eWe've identified a repeating pattern while generating Instagram banners so why not to have an AI app which will generate them for you? No editors like Photoshop or Canva, just a chat based UI.\u003cp\u003eWe would love to hear your feedback and recommendations what use cases you got and which template styles you prefer to be added.\u003cp\u003eYou can try it for free here: craffted.app\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46546969\"\u003ehttps://news.ycombinator.com/item?id=46546969\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Internet service in Iran cut off or restricted during deadly protests",
+      "link": "https://www.cbsnews.com/news/iran-cutting-internet-amid-deadly-protests/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-08T21:48:02Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.cbsnews.com/news/iran-cutting-internet-amid-deadly-protests/\"\u003ehttps://www.cbsnews.com/news/iran-cutting-internet-amid-deadly-protests/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46546966\"\u003ehttps://news.ycombinator.com/item?id=46546966\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "What a 1955 Computer Taught Me",
+      "link": "https://twitter.com/andrejsshell/status/2009380667046473887",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-08T21:46:24Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://twitter.com/andrejsshell/status/2009380667046473887\"\u003ehttps://twitter.com/andrejsshell/status/2009380667046473887\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46546956\"\u003ehttps://news.ycombinator.com/item?id=46546956\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Grokcode",
+      "link": "https://github.com/maximus242/grokcode",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-08T21:46:21Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/maximus242/grokcode\"\u003ehttps://github.com/maximus242/grokcode\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46546953\"\u003ehttps://news.ycombinator.com/item?id=46546953\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Inside China's Six-Decade Campaign to Dominate Rare Earths",
+      "link": "https://www.nytimes.com/2025/12/31/business/china-rare-earths-history.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-08T21:44:36Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nytimes.com/2025/12/31/business/china-rare-earths-history.html\"\u003ehttps://www.nytimes.com/2025/12/31/business/china-rare-earths-history.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46546928\"\u003ehttps://news.ycombinator.com/item?id=46546928\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 4\u003c/p\u003e\n\u003cp\u003e# Comments: 3\u003c/p\u003e\n"
+    },
+    {
+      "title": "Sigment – fine-grained reactive framework for building fast apps",
+      "link": "https://sigment.dev/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-08T21:42:25Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://sigment.dev/\"\u003ehttps://sigment.dev/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46546900\"\u003ehttps://news.ycombinator.com/item?id=46546900\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Open Slopware",
+      "link": "https://codeberg.org/gen-ai-transparency/open-slopware",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-08T21:41:36Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://codeberg.org/gen-ai-transparency/open-slopware\"\u003ehttps://codeberg.org/gen-ai-transparency/open-slopware\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46546896\"\u003ehttps://news.ycombinator.com/item?id=46546896\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "AI Copilot Keeps Berkeley’s X-Ray Particle Accelerator on Track",
+      "link": "https://blogs.nvidia.com/blog/ai-copilot-berkeley-x-ray-particle-accelerator/",
+      "source": "NVIDIA Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-08T17:00:41Z",
+      "description": "In the rolling hills of Berkeley, California, an AI agent is supporting high-stakes physics experiments at the Advanced Light Source (ALS) particle accelerator. Researchers at the Lawrence Berkeley National Laboratory ALS facility recently deployed the Accelerator Assistant, a large language model (LLM)-driven system to keep X-ray research on track. The Accelerator Assistant — powered by\t\u003ca class=\"read-more\" href=\"https://blogs.nvidia.com/blog/ai-copilot-berkeley-x-ray-particle-accelerator/\"\u003e\n\t\tRead Article\t\t\u003cspan data-icon=\"y\"\u003e\u003c/span\u003e\n\t\u003c/a\u003e\n\t"
+    },
+    {
+      "title": "Japan Science and Technology Agency Develops NVIDIA-Powered Moonshot Robot for Elderly Care",
+      "link": "https://blogs.nvidia.com/blog/japan-science-technology-agency-develops-moonshot-robot/",
+      "source": "NVIDIA Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-08T16:00:29Z",
+      "description": "The next universal technology since the smartphone is on the horizon — and it may be a little less pocket friendly. The Moonshot research program, funded by the Japan Science and Technology Agency and accelerated by NVIDIA AI and robotics technologies, is working to create a world by 2050 where AI-powered, autonomously learning robots are\t\u003ca class=\"read-more\" href=\"https://blogs.nvidia.com/blog/japan-science-technology-agency-develops-moonshot-robot/\"\u003e\n\t\tRead Article\t\t\u003cspan data-icon=\"y\"\u003e\u003c/span\u003e\n\t\u003c/a\u003e\n\t"
+    },
+    {
+      "title": "More Ways to Play, More Games to Love — GeForce NOW Wraps CES With Linux Support, Fire TV App, Flight Stick Controls",
+      "link": "https://blogs.nvidia.com/blog/geforce-now-thursday-ces-2026-recap/",
+      "source": "NVIDIA Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-08T14:00:00Z",
+      "description": "NVIDIA is wrapping up a big week at the CES trade show with a set of GeForce NOW announcements that are bringing more ways to play and more games to the cloud. From new native apps for Linux and Amazon Fire TV streaming sticks to hands-on throttle-and-stick (HOTAS) support for simulation fans and a new\t\u003ca class=\"read-more\" href=\"https://blogs.nvidia.com/blog/geforce-now-thursday-ces-2026-recap/\"\u003e\n\t\tRead Article\t\t\u003cspan data-icon=\"y\"\u003e\u003c/span\u003e\n\t\u003c/a\u003e\n\t"
+    },
+    {
+      "title": "December 2025 (version 1.108)",
+      "link": "https://code.visualstudio.com/updates/v1_108",
+      "source": "Visual Studio Code - Code Editing. Redefined.",
+      "category": "tech",
+      "publishedAt": "2026-01-08T17:00:00Z",
+      "description": "\n      \u003cp\u003eLearn what is new in the Visual Studio Code December 2025 Release (1.108).\u003c/p\u003e\n      \u003cp\u003e\u003ca href=\"https://code.visualstudio.com/updates/v1_108\"\u003eRead the full article\u003c/a\u003e\u003c/p\u003e\n    "
+    }
+  ],
+  "generatedAt": "2026-01-09T07:09:45.233853921+09:00"
+}
