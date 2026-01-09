@@ -1,0 +1,306 @@
+{
+  "date": "2026-01-10",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2026년 1월 9일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** AI 인프라 확보를 위한 OpenAI와 소프트뱅크의 거대 동맹, AI가 가속화하는 정적 타입 언어로의 회귀, 그리고 베트남의 디지털 시민 점수제 도입 논란.\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### OpenAI와 소프트뱅크, SB Energy와 파트너십 체결: '스타게이트'를 향한 전력 확보전\nOpenAI가 소프트뱅크 그룹 및 그 자회사인 SB Energy와 전략적 파트너십을 맺었습니다. 이는 단순한 투자를 넘어, AI 모델 구동에 필수적인 막대한 전력 인프라를 확보하기 위한 행보로 해석됩니다. 특히 '스타게이트(Stargate)' 프로젝트로 대변되는 초거대 AI 데이터센터 구축을 위해 재생 에너지 공급망을 선점하려는 의도가 엿보입니다.\n\n\u003e **Key Point:** AI 경쟁의 본질이 '모델 성능'에서 '에너지 인프라' 확보전으로 이동하고 있음을 보여주는 상징적 사건입니다. [^2]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. AI는 왜 개발자를 '타입(Typed) 언어'로 이끄는가?\n- **What:** GitHub의 분석에 따르면, AI 코딩 도구의 확산이 역설적으로 TypeScript, Rust, Go와 같은 정적 타입 언어의 채택을 가속화하고 있습니다.\n- **Why:** AI가 생성한 코드는 인간이 검증해야 하는데, 타입 시스템이 제공하는 명시적인 제약 조건이 AI가 짠 코드의 오류를 사전에 걸러내고 문맥을 파악하는 데 훨씬 유리하기 때문입니다.\n- **Impact:** \"빠른 개발\"을 위해 동적 언어(Python, JS)를 쓰던 시대에서, \"AI와의 협업 안정성\"을 위해 정적 언어를 선호하는 시대로의 전환이 예상됩니다. [^1]\n\n### 2. 앤스로픽, 더 효율적인 '헌법적 분류기(Constitutional Classifiers)++' 공개\n- **What:** 앤스로픽이 AI 모델의 탈옥(Jailbreak)을 방지하고 안전성을 높이는 새로운 분류기 기술을 발표했습니다.\n- **Why:** 기존 안전 장치들이 모델의 유용성을 해치거나 리소스를 많이 잡아먹던 문제를 해결하고, 더 적은 비용으로 정교한 방어막을 구축하기 위함입니다.\n- **Impact:** 기업용 AI 도입 시 가장 큰 걸림돌인 '안전성'과 '비용 효율성' 두 마리 토끼를 잡는 기술적 진보가 될 것입니다. [^9]\n\n### 3. 베트남 공안부, VNeID 앱에 '디지털 시민 점수제' 도입 제안\n- **What:** 베트남 공안부가 국가 신원 확인 앱인 VNeID에 시민들의 디지털 활동을 기반으로 점수를 매기는 시스템 도입을 제안했습니다.\n- **Why:** 표면적으로는 디지털 행정의 효율화를 내세우지만, 실질적으로는 시민 통제 강화라는 우려가 제기됩니다.\n- **Impact:** 중국의 사회 신용 시스템과 유사한 형태의 디지털 감시 체계가 동남아시아로 확산될 수 있다는 지정학적/인권적 우려를 낳고 있습니다. [^18]\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Framework** | **Embassy** | Rust와 async/await를 기반으로 한 현대적 임베디드 프레임워크. 안전하고 비동기적인 임베디드 개발 지원. [^27] |\n| **Tool** | **Azayaka** | macOS 메뉴바에서 화면과 시스템 오디오를 간편하게 녹화할 수 있는 오픈소스 도구. [^10] |\n| **Model** | **Sopro TTS** | CPU에서도 실행 가능한 1억 6,900만 파라미터 규모의 제로샷 음성 복제 TTS 모델. [^28] |\n| **DevOps** | **Deno on PyPI** | Deno가 PyPI 배포를 공식화하여 Python 생태계에서도 Deno 런타임을 쉽게 설치/활용 가능해짐. [^16] |\n| **App** | **Hermit-AI** | ZIM 파일(위키백과 등)을 위한 오프라인, 프라이버시 중심의 RAG 챗봇. 인터넷 없이 지식 탐색 가능. [^8] |\n| **Web** | **Lshort** | 실시간으로 링크 클릭 트래픽을 3D 지구본으로 시각화해주는 단축 URL 서비스. [^7] |\n| **Template** | **Fullstack Starter** | AI-native 앱 개발을 위해 즉시 상용화 가능한 수준으로 구성된 모노레포 템플릿. [^32] |\n| **Theory** | **푸리에 변환** | \"불합리할 정도로 뛰어난 효용성\"을 가진 푸리에 변환에 대한 깊이 있는 수학적/공학적 에세이. [^25] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n\n#### 💻 개발 \u0026 인프라\n* **Datadog의 Codex 활용**: 데이터독이 시스템 수준의 코드 리뷰 자동화를 위해 OpenAI Codex를 도입했습니다. [^3]\n* **WhatsApp의 RAM 식성**: 왓츠앱 데스크탑이 20MB에서 3GB까지 메모리를 점유하는 현상을 고발한 영상이 화제입니다. [^4]\n* **보안은 개발자 경험(DX) 문제**: Docker는 보안이 규제가 아니라 개발 프로세스의 기초 경험으로 통합되어야 한다고 주장합니다. [^36]\n* **Chrome Dev 업데이트**: 데스크탑용 크롬 개발자 버전의 최신 업데이트가 배포되었습니다. [^35]\n* **AI 코딩 도구의 품질 저하?**: 최근 AI 코딩 어시스턴트들의 성능이 오히려 나빠지고 있다는 개발자들의 토론입니다. [^30]\n* **AI-SLOP Detector**: AI가 생성한 과장되고 거짓된 코드(Slop)를 탐지하는 도구가 등장했습니다. [^31]\n* **Vibe Kanban**: AI 코딩 에이전트의 작업을 병렬로 시각화하고 관리하는 칸반 보드입니다. [^34]\n\n#### 🤖 AI \u0026 미래 기술\n* **AGI는 이미 왔는가?**: 우리가 인지하지 못하는 사이에 AGI(일반 인공지능)의 기준점이 이미 통과되었을 수 있다는 철학적 고찰입니다. [^12]\n* **칼 뉴포트의 AI 에이전트 비평**: 2025년이 되었음에도 AI 에이전트가 기대만큼 세상을 바꾸지 못한 이유를 분석했습니다. [^33]\n* **NVIDIA 리테일 청사진**: 엔비디아가 소매업 파이프라인을 위한 멀티 에이전트 지능형 창고 및 카탈로그 관리 AI 청사진을 공개했습니다. [^37]\n* **팀 AI 자신감 높이기**: 아틀라시안이 핸즈온 워크숍을 통해 팀 전체의 AI 활용 자신감을 높이는 전략을 공유했습니다. [^24]\n\n#### 🌍 사회 \u0026 이슈\n* **버튼은 이제 레거시(Legacy)다**: 물리적 버튼이 달린 제품을 출시하는 것은 이미 구시대적이라는 도발적인 UI/UX 칼럼입니다. [^6]\n* **코딩 대회의 몰락?**: 예전만큼 활발하지 않은 코딩 대회(Coding Competitions)의 현주소와 이유를 묻는 커뮤니티 토론입니다. [^11]\n* **소프트웨어 개발의 재미 찾기**: 번아웃된 개발자들이 다시 코딩의 즐거움을 찾을 수 있는 방법에 대해 논의합니다. [^21]\n* **구글 데이터센터의 비밀**: 구글 데이터센터 근무자가 내부의 충격적인(?) 실상을 폭로한다는 영상입니다. [^14]\n* **FBI 감시 리스트에 오르기 전**: 팔란티어(Palantir), 엡스타인, NYT를 엮은 음모론적 성격의 글이 화제가 되고 있습니다. [^13]\n* **미네소타 총격 사건 논란**: ICE 요원 총격 사건과 관련해 FBI가 공동 수사를 거부하고 증거 접근이 차단된 상황을 다룹니다. [^29]\n* **살인을 살인이라 부르자**: 사회적 사건에 대한 명확한 용어 정의를 촉구하는 칼럼입니다. [^26]\n* **자유주의의 표류**: 정당들이 제약(Constraint)의 언어를 배우면서 치르는 비용에 대한 정치적 분석입니다. [^23]\n\n#### 🎨 문화 \u0026 기타\n* **사람처럼 글쓰기**: AI 시대에 인간다운 글쓰기란 무엇인지에 대한 로리 페니(Laurie Penny)의 에세이입니다. [^15]\n* **슬픔의 노래(1903)**: W.E.B. 듀보이스가 1903년에 쓴 흑인 영가(Sorrow Songs)의 아름다움에 대한 고전 텍스트입니다. [^5]\n* **Belize MLS 구축기**: 벨리즈에 부동산 매물 시스템(MLS)이 없어 직접 만들었다는 개발자의 사이드 프로젝트 후기입니다. [^19]\n* **Catfishing 게임**: 위키백과 문서를 보고 정답을 맞히는 퀴즈 게임입니다. [^20]\n* **인류 음악 타임스탬프**: 인간이 만든 음악 컬렉션에 타임스탬프를 찍어 보존하려는 프로젝트입니다. [^22]\n* **Ping6.it**: IPv6 핑 테스트를 위한 간단한 네트워크 도구입니다. [^17]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘 뉴스는 '**AI의 물리적/기술적 현실화**'로 요약됩니다. OpenAI는 전력을 찾아 나서고(Top Story), 개발자들은 AI가 짠 코드를 검증하기 위해 다시 엄격한 타입 언어로 돌아가고 있습니다(Deep Dive 1). 한편으로는 베트남의 사례처럼 기술이 감시 도구로 변질될 우려도 커지고 있네요. 기술의 발전 속도만큼이나, 그것을 지탱할 인프라와 윤리에 대한 고민이 깊어지는 하루입니다.\n\n---\n\n[^1]: Why AI is pushing developers toward typed languages - https://github.blog/ai-and-ml/llms/why-ai-is-pushing-developers-toward-typed-languages/\n[^2]: OpenAI and SoftBank Group partner with SB Energy - https://openai.com/index/stargate-sb-energy-partnership\n[^3]: Datadog uses Codex for system-level code review - https://openai.com/index/datadog\n[^4]: WhatsApp Ate My RAM: 20MB →3GB (WTF Meta?) [video] - https://www.youtube.com/watch?v=1IkGgr6xCkQ\n[^5]: Web Du Bois on the beauty of sorrow songs (1903) - https://www.laphamsquarterly.org/music/unforgettable\n[^6]: Every product still shipping buttons is legacy - https://fortunate-anchovy-938.notion.site/Every-product-still-shipping-buttons-is-already-legacy-2e3fb5780e7480a68154f217a1be573f?source=copy_link\n[^7]: Show HN: Lshort – Real-time link tracking with globe visualization - https://app.lshort.sh/online\n[^8]: Hermit-AI – An offline, privacy-first RAG chatbot for ZIM files - https://news.ycombinator.com/item?id=46559882\n[^9]: Constitutional Classifiers++: More efficient protection against jailbreaks - https://www.anthropic.com/research/next-generation-constitutional-classifiers\n[^10]: Azakaya: macOS menu bar screen and audio recorder - https://github.com/Mnpn/Azayaka\n[^11]: Ask HN: What Happened to Coding Competions? - https://news.ycombinator.com/item?id=46559831\n[^12]: What if AGI has already happened? - https://deadneurons.substack.com/p/what-if-agi-has-already-happened\n[^13]: My final message before I'm on an FBI watchlist: Palantir, Epstein, \u0026 the NYT - https://zigguratmag.substack.com/p/my-final-message-before-im-on-an\n[^14]: I Worked at a Google Data Center: What I Saw Will Shock You [video] - https://www.youtube.com/watch?v=wLX_w0TtBpY\n[^15]: How to Write Like a Person - https://lauriepenny.substack.com/p/how-to-write-like-a-person\n[^16]: Deno has made its PyPI distribution official - https://github.com/denoland/deno/issues/31254\n[^17]: Show HN: Ping6.it - https://ping6.it\n[^18]: VN Ministry of Public Security proposes digital citizen scoring system on VNeID - https://vietnamlawmagazine.vn/mps-proposes-digital-citizen-scoring-system-on-vneid-76244.html\n[^19]: Belize doesn't have a MLS so I built it for them - https://www.realestatemap.bz/\n[^20]: Catfishing – The Wikipedia Guessing Game - https://catfishing.net/\n[^21]: Ask HN: How to make working in software fun again? - https://news.ycombinator.com/item?id=46559728\n[^22]: Timestamping a collection of human-created music - https://projecttimestamper.org/blog/music/\n[^23]: Parties learn to speak the language of constraint – and what it costs them - https://www.waleed-shahid.com/p/why-is-liberalism-adrift\n[^24]: How hands-on workshops boost teamwide AI confidence - https://www.atlassian.com/blog/strategy/how-workshops-boost-ai-confidence\n[^25]: 푸리에 변환의 불합리할 정도로 뛰어난 효용성 - https://news.hada.io/topic?id=25700\n[^26]: 살인을 살인이라 부르자 - https://news.hada.io/topic?id=25699\n[^27]: Embassy - Rust와 async 기반의 현대적 임베디드 프레임워크 - https://news.hada.io/topic?id=25698\n[^28]: Sopro TTS: CPU에서 실행되는 제로샷 음성 복제 지원 1억6900만 파라미터 TTS 모델 - https://news.hada.io/topic?id=25697\n[^29]: 미네소타 당국, ICE 총격 사망 사건 증거 접근 불가…FBI는 공동 수사 거부 - https://news.hada.io/topic?id=25696\n[^30]: AI 코딩 보조 도구가 점점 나빠지고 있는가? - https://news.hada.io/topic?id=25695\n[^31]: Show GN: AI-SLOP Detector — AI가 만든 ‘과장 거짓 코드’ 분석 탐지 도구 - https://news.hada.io/topic?id=25694\n[^32]: Show GN: Fullstack Starter - AI-native 개발을 위한 프로덕션 레디 모노레포 템플릿 - https://news.hada.io/topic?id=25691\n[^33]: 칼 뉴포트가 분석한 AI 에이전트 2025년 약속이 빗나간 이유 - https://news.hada.io/topic?id=25689\n[^34]: Vibe Kanban: AI 코딩 에이전트 작업을 병렬로 관리하는 칸반 보드 - https://news.hada.io/topic?id=25688\n[^35]: Chrome Dev for Desktop Update - http://chromereleases.googleblog.com/2026/01/chrome-dev-for-desktop-update.html\n[^36]: Security Is a Developer Experience Problem, Rooted in Our Foundations - https://www.docker.com/blog/security-is-a-developer-experience-problem-rooted-in-our-foundations/\n[^37]: NVIDIA Unveils Multi-Agent Intelligent Warehouse and Catalog Enrichment AI Blueprints to Power the Retail Pipeline - https://blogs.nvidia.com/blog/multi-agent-intelligent-warehouse-and-catalog-enrichment-blueprints/\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **Why AI is pushing developers toward typed languages**\n   - 출처: GitHub Blog\n   - 링크: https://github.blog/ai-and-ml/llms/why-ai-is-pushing-developers-toward-typed-languages/\n\n2. **OpenAI and SoftBank Group partner with SB Energy**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/stargate-sb-energy-partnership\n\n3. **Datadog uses Codex for system-level code review**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/datadog\n\n4. **WhatsApp Ate My RAM: 20MB →3GB (WTF Meta?) [video]**\n   - 출처: Hacker News\n   - 링크: https://www.youtube.com/watch?v=1IkGgr6xCkQ\n\n5. **Web Du Bois on the beauty of sorrow songs (1903)**\n   - 출처: Hacker News\n   - 링크: https://www.laphamsquarterly.org/music/unforgettable\n\n6. **Every product still shipping buttons is legacy**\n   - 출처: Hacker News\n   - 링크: https://fortunate-anchovy-938.notion.site/Every-product-still-shipping-buttons-is-already-legacy-2e3fb5780e7480a68154f217a1be573f?source=copy_link\n\n7. **Show HN: Lshort – Real-time link tracking with globe visualization**\n   - 출처: Hacker News\n   - 링크: https://app.lshort.sh/online\n\n8. **Hermit-AI – An offline, privacy-first RAG chatbot for ZIM files**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=46559882\n\n9. **Constitutional Classifiers++: More efficient protection against jailbreaks**\n   - 출처: Hacker News\n   - 링크: https://www.anthropic.com/research/next-generation-constitutional-classifiers\n\n10. **Azakaya: macOS menu bar screen and audio recorder**\n   - 출처: Hacker News\n   - 링크: https://github.com/Mnpn/Azayaka\n\n11. **Ask HN: What Happened to Coding Competions?**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=46559831\n\n12. **What if AGI has already happened?**\n   - 출처: Hacker News\n   - 링크: https://deadneurons.substack.com/p/what-if-agi-has-already-happened\n\n13. **My final message before I'm on an FBI watchlist: Palantir, Epstein, \u0026 the NYT**\n   - 출처: Hacker News\n   - 링크: https://zigguratmag.substack.com/p/my-final-message-before-im-on-an\n\n14. **I Worked at a Google Data Center: What I Saw Will Shock You [video]**\n   - 출처: Hacker News\n   - 링크: https://www.youtube.com/watch?v=wLX_w0TtBpY\n\n15. **How to Write Like a Person**\n   - 출처: Hacker News\n   - 링크: https://lauriepenny.substack.com/p/how-to-write-like-a-person\n\n16. **Deno has made its PyPI distribution official**\n   - 출처: Hacker News\n   - 링크: https://github.com/denoland/deno/issues/31254\n\n17. **Show HN: Ping6.it**\n   - 출처: Hacker News\n   - 링크: https://ping6.it\n\n18. **VN Ministry of Public Security proposes digital citizen scoring system on VNeID**\n   - 출처: Hacker News\n   - 링크: https://vietnamlawmagazine.vn/mps-proposes-digital-citizen-scoring-system-on-vneid-76244.html\n\n19. **Belize doesn't have a MLS so I built it for them**\n   - 출처: Hacker News\n   - 링크: https://www.realestatemap.bz/\n\n20. **Catfishing – The Wikipedia Guessing Game**\n   - 출처: Hacker News\n   - 링크: https://catfishing.net/\n\n21. **Ask HN: How to make working in software fun again?**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=46559728\n\n22. **Timestamping a collection of human-created music**\n   - 출처: Hacker News\n   - 링크: https://projecttimestamper.org/blog/music/\n\n23. **Parties learn to speak the language of constraint – and what it costs them**\n   - 출처: Hacker News\n   - 링크: https://www.waleed-shahid.com/p/why-is-liberalism-adrift\n\n24. **How hands-on workshops boost teamwide AI confidence **\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/strategy/how-workshops-boost-ai-confidence\n\n25. **푸리에 변환의 불합리할 정도로 뛰어난 효용성**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25700\n\n26. **살인을 살인이라 부르자**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25699\n\n27. **Embassy - Rust와 async 기반의 현대적 임베디드 프레임워크 **\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25698\n\n28. **Sopro TTS: CPU에서 실행되는 제로샷 음성 복제 지원 1억6900만 파라미터 TTS 모델**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25697\n\n29. **미네소타 당국, ICE 총격 사망 사건 증거 접근 불가…FBI는 공동 수사 거부**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25696\n\n30. **AI 코딩 보조 도구가 점점 나빠지고 있는가?**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25695\n\n31. **Show GN: AI-SLOP Detector — AI가 만든 ‘과장 거짓 코드’ 분석 탐지 도구**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25694\n\n32. **Show GN: Fullstack Starter - AI-native 개발을 위한 프로덕션 레디 모노레포 템플릿**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25691\n\n33. **칼 뉴포트가 분석한 AI 에이전트 2025년 약속이 빗나간 이유**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25689\n\n34. **Vibe Kanban: AI 코딩 에이전트 작업을 병렬로 관리하는 칸반 보드**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25688\n\n35. **Chrome Dev for Desktop Update**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2026/01/chrome-dev-for-desktop-update.html\n\n36. **Security Is a Developer Experience Problem, Rooted in Our Foundations**\n   - 출처: Docker Blog\n   - 링크: https://www.docker.com/blog/security-is-a-developer-experience-problem-rooted-in-our-foundations/\n\n37. **NVIDIA Unveils Multi-Agent Intelligent Warehouse and Catalog Enrichment AI Blueprints to Power the Retail Pipeline**\n   - 출처: NVIDIA Blog\n   - 링크: https://blogs.nvidia.com/blog/multi-agent-intelligent-warehouse-and-catalog-enrichment-blueprints/\n\n\n",
+  "articles": [
+    {
+      "title": "Why AI is pushing developers toward typed languages",
+      "link": "https://github.blog/ai-and-ml/llms/why-ai-is-pushing-developers-toward-typed-languages/",
+      "source": "GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-08T22:25:54Z",
+      "description": "\u003cp\u003eAI is settling the “typed vs. untyped” debate by turning type systems into the safety net for code you didn’t write yourself.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/ai-and-ml/llms/why-ai-is-pushing-developers-toward-typed-languages/\"\u003eWhy AI is pushing developers toward typed languages\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "OpenAI and SoftBank Group partner with SB Energy",
+      "link": "https://openai.com/index/stargate-sb-energy-partnership",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2026-01-09T11:00:00Z",
+      "description": "OpenAI and SoftBank Group partner with SB Energy to develop multi-gigawatt AI data center campuses, including a 1.2 GW Texas facility supporting the Stargate initiative."
+    },
+    {
+      "title": "Datadog uses Codex for system-level code review",
+      "link": "https://openai.com/index/datadog",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2026-01-09T00:00:00Z",
+      "description": "OpenAI and Datadog brand graphic with the OpenAI wordmark on the left, the Datadog logo on the right, and a central abstract brown fur-like texture panel on a white background."
+    },
+    {
+      "title": "WhatsApp Ate My RAM: 20MB →3GB (WTF Meta?) [video]",
+      "link": "https://www.youtube.com/watch?v=1IkGgr6xCkQ",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-09T21:58:09Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.youtube.com/watch?v=1IkGgr6xCkQ\"\u003ehttps://www.youtube.com/watch?v=1IkGgr6xCkQ\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46559963\"\u003ehttps://news.ycombinator.com/item?id=46559963\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Web Du Bois on the beauty of sorrow songs (1903)",
+      "link": "https://www.laphamsquarterly.org/music/unforgettable",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-09T21:57:09Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.laphamsquarterly.org/music/unforgettable\"\u003ehttps://www.laphamsquarterly.org/music/unforgettable\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46559950\"\u003ehttps://news.ycombinator.com/item?id=46559950\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Every product still shipping buttons is legacy",
+      "link": "https://fortunate-anchovy-938.notion.site/Every-product-still-shipping-buttons-is-already-legacy-2e3fb5780e7480a68154f217a1be573f?source=copy_link",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-09T21:56:47Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://fortunate-anchovy-938.notion.site/Every-product-still-shipping-buttons-is-already-legacy-2e3fb5780e7480a68154f217a1be573f?source=copy_link\"\u003ehttps://fortunate-anchovy-938.notion.site/Every-product-still-shipping-buttons-is-already-legacy-2e3fb5780e7480a68154f217a1be573f?source=copy_link\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46559944\"\u003ehttps://news.ycombinator.com/item?id=46559944\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Lshort – Real-time link tracking with globe visualization",
+      "link": "https://app.lshort.sh/online",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-09T21:54:21Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://app.lshort.sh/online\"\u003ehttps://app.lshort.sh/online\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46559912\"\u003ehttps://news.ycombinator.com/item?id=46559912\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Hermit-AI – An offline, privacy-first RAG chatbot for ZIM files",
+      "link": "https://news.ycombinator.com/item?id=46559882",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-09T21:51:20Z",
+      "description": "\n\u003cp\u003echat with the entire Wikipedia library (and your own docs) without a single bit of data leaving my machine.\u003cp\u003eWhat makes it different? Standard RAG often picks the wrong chunks or gets confused by similar articles. Hermit uses a Multi-Joint Architecture:\u003cp\u003eEntity Extraction: It understands who or what you're asking about before searching.\nJIT Indexing: It dynamically indexes only the relevant articles into an ephemeral FAISS index for every query.\nVerification Gate: A final joint verifies the premise against the source text to kill hallucinations.\nIt runs on GGUF models via llama-cpp-python and supports any ZIM file (Kiwix).\u003cp\u003eCheck it out: [https://github.com/0nspaceshipearth/Hermit-AI] I'd love to hear your thoughts on the multi-joint pipeline approach!\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46559882\"\u003ehttps://news.ycombinator.com/item?id=46559882\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Constitutional Classifiers++: More efficient protection against jailbreaks",
+      "link": "https://www.anthropic.com/research/next-generation-constitutional-classifiers",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-09T21:50:09Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.anthropic.com/research/next-generation-constitutional-classifiers\"\u003ehttps://www.anthropic.com/research/next-generation-constitutional-classifiers\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46559865\"\u003ehttps://news.ycombinator.com/item?id=46559865\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Azakaya: macOS menu bar screen and audio recorder",
+      "link": "https://github.com/Mnpn/Azayaka",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-09T21:49:38Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/Mnpn/Azayaka\"\u003ehttps://github.com/Mnpn/Azayaka\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46559856\"\u003ehttps://news.ycombinator.com/item?id=46559856\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Ask HN: What Happened to Coding Competions?",
+      "link": "https://news.ycombinator.com/item?id=46559831",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-09T21:47:16Z",
+      "description": "\n\u003cp\u003eI hadn't thought about these in a while, but what happened to Topcoder, Code Jam, etc.?  I did some quick research and saw that those two shut down in 2023, but there wasn't much explanation as to why.  I thought of this because people keep talking about how productive they are with LLM coding tools, and I thought it would be fun to put the people proclaiming this (along with their LLM tools) up against people not using LLMs in a topcoder competition.  Turns out, those competitions don't exist anymore and I'm sad.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46559831\"\u003ehttps://news.ycombinator.com/item?id=46559831\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "What if AGI has already happened?",
+      "link": "https://deadneurons.substack.com/p/what-if-agi-has-already-happened",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-09T21:47:14Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://deadneurons.substack.com/p/what-if-agi-has-already-happened\"\u003ehttps://deadneurons.substack.com/p/what-if-agi-has-already-happened\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46559830\"\u003ehttps://news.ycombinator.com/item?id=46559830\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "My final message before I'm on an FBI watchlist: Palantir, Epstein, \u0026 the NYT",
+      "link": "https://zigguratmag.substack.com/p/my-final-message-before-im-on-an",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-09T21:46:15Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://zigguratmag.substack.com/p/my-final-message-before-im-on-an\"\u003ehttps://zigguratmag.substack.com/p/my-final-message-before-im-on-an\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46559816\"\u003ehttps://news.ycombinator.com/item?id=46559816\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "I Worked at a Google Data Center: What I Saw Will Shock You [video]",
+      "link": "https://www.youtube.com/watch?v=wLX_w0TtBpY",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-09T21:43:41Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.youtube.com/watch?v=wLX_w0TtBpY\"\u003ehttps://www.youtube.com/watch?v=wLX_w0TtBpY\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46559788\"\u003ehttps://news.ycombinator.com/item?id=46559788\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "How to Write Like a Person",
+      "link": "https://lauriepenny.substack.com/p/how-to-write-like-a-person",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-09T21:42:04Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://lauriepenny.substack.com/p/how-to-write-like-a-person\"\u003ehttps://lauriepenny.substack.com/p/how-to-write-like-a-person\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46559766\"\u003ehttps://news.ycombinator.com/item?id=46559766\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Deno has made its PyPI distribution official",
+      "link": "https://github.com/denoland/deno/issues/31254",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-09T21:41:27Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/denoland/deno/issues/31254\"\u003ehttps://github.com/denoland/deno/issues/31254\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46559761\"\u003ehttps://news.ycombinator.com/item?id=46559761\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Ping6.it",
+      "link": "https://ping6.it",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-09T21:41:17Z",
+      "description": "\n\u003cp\u003eping6.it can compare IPv4 vs IPv6 side by side, from the same probes.\u003cp\u003eYou can run:\n- ping\n- traceroute\n- mtr\n- dns\n- http\n…and immediately see where v6 behaves differently (latency, loss, reachability, path).\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46559757\"\u003ehttps://news.ycombinator.com/item?id=46559757\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "VN Ministry of Public Security proposes digital citizen scoring system on VNeID",
+      "link": "https://vietnamlawmagazine.vn/mps-proposes-digital-citizen-scoring-system-on-vneid-76244.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-09T21:39:36Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://vietnamlawmagazine.vn/mps-proposes-digital-citizen-scoring-system-on-vneid-76244.html\"\u003ehttps://vietnamlawmagazine.vn/mps-proposes-digital-citizen-scoring-system-on-vneid-76244.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46559747\"\u003ehttps://news.ycombinator.com/item?id=46559747\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 3\u003c/p\u003e\n"
+    },
+    {
+      "title": "Belize doesn't have a MLS so I built it for them",
+      "link": "https://www.realestatemap.bz/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-09T21:39:34Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.realestatemap.bz/\"\u003ehttps://www.realestatemap.bz/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46559745\"\u003ehttps://news.ycombinator.com/item?id=46559745\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Catfishing – The Wikipedia Guessing Game",
+      "link": "https://catfishing.net/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-09T21:39:15Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://catfishing.net/\"\u003ehttps://catfishing.net/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46559741\"\u003ehttps://news.ycombinator.com/item?id=46559741\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Ask HN: How to make working in software fun again?",
+      "link": "https://news.ycombinator.com/item?id=46559728",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-09T21:37:43Z",
+      "description": "\n\u003cp\u003eAs the title implies I'm experiencing a lull.\u003cp\u003eI'm a software engineer in games and big tech for a combined 15 years. Coding is my biggest passion and I'll still do it when I retire.\u003cp\u003eHowever, a large part of me wants to get into an entirely different industry.\u003cp\u003eI've identified the reason to be how intellectually unstimulating coding has become (due to vibe coding).\u003cp\u003eThe AI tools are incredible - but in terms of learning and self development, vibe coding as an education form lacks depth and the classic sense of mastery. I feel like I've learned 90% of everything there is to know about vibe coding. The last 10% is just marginal gains.\u003cp\u003eI live for the thrilling moments in software development - I was in the industry early enough to roll out software on our own server racks. As a game dev, I regularly implemented algorithms (such as path finding, physics integrations and rendering logic). I also got to work with Mixed Reality headsets and help define UX paradigms.\u003cp\u003eI feel like there's now a stigma around DIY coding - one should simply use an off-the-shelf solution or AI.\u003cp\u003eI get so much pleasure in doing deep work, but nowadays, any feature that takes more than 2 days to implement gets eyebrows raised.\u003cp\u003eAm I overthinking it?\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46559728\"\u003ehttps://news.ycombinator.com/item?id=46559728\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Timestamping a collection of human-created music",
+      "link": "https://projecttimestamper.org/blog/music/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-09T21:36:14Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://projecttimestamper.org/blog/music/\"\u003ehttps://projecttimestamper.org/blog/music/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46559707\"\u003ehttps://news.ycombinator.com/item?id=46559707\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Parties learn to speak the language of constraint – and what it costs them",
+      "link": "https://www.waleed-shahid.com/p/why-is-liberalism-adrift",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-09T21:35:50Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.waleed-shahid.com/p/why-is-liberalism-adrift\"\u003ehttps://www.waleed-shahid.com/p/why-is-liberalism-adrift\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46559705\"\u003ehttps://news.ycombinator.com/item?id=46559705\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "How hands-on workshops boost teamwide AI confidence ",
+      "link": "https://www.atlassian.com/blog/strategy/how-workshops-boost-ai-confidence",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-09T20:39:03Z",
+      "description": "\u003cp\u003eWhen teams learn by doing, AI stops feeling abstract and starts driving real behavior change, from higher usage to stronger everyday skills.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/strategy/how-workshops-boost-ai-confidence\"\u003eHow hands-on workshops boost teamwide AI confidence \u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "푸리에 변환의 불합리할 정도로 뛰어난 효용성",
+      "link": "https://news.hada.io/topic?id=25700",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-10T06:37:32+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e푸리에 변환\u003c/strong\u003e이 실제 기술 응용에서 얼마나 강력하게 작동하는지를 보여주는 발표 자료 모음\u003c/li\u003e\n\u003cli\u003e발표자는 \u003cstrong\u003eTeardown 2025\u003c/strong\u003e 행사에서 OFDM(직교 주파수 분할 다중화) 관련 사례를 중심으로 설명\u003c/li\u003e\n\u003cli\u003e슬라이드 PDF, \u003cstrong\u003eJupyter 노트북\u003c/strong\u003e, \u003cstrong\u003eDVB-T ...\u003c/p\u003e"
+    },
+    {
+      "title": "살인을 살인이라 부르자",
+      "link": "https://news.hada.io/topic?id=25699",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-10T06:34:32+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e미니애폴리스에서 \u003cstrong\u003eRenee Good\u003c/strong\u003e가 \u003cstrong\u003eICE 요원 Jonathan Ross\u003c/strong\u003e에게 총격으로 사망한 사건이 발생, 명백히 정당화될 수 없는 행위로 묘사됨\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e뉴욕타임스의 프레임별 분석 영상\u003c/strong\u003e은 세 개의 각도에서 사건을 보여주며, 정부 인사들의 ‘정당방위’ 혹은 ‘국...\u003c/p\u003e"
+    },
+    {
+      "title": "Embassy - Rust와 async 기반의 현대적 임베디드 프레임워크 ",
+      "link": "https://news.hada.io/topic?id=25698",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-10T05:33:16+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e안전하고 효율적인 임베디드 애플리케이션을 빠르게 개발할 수 있도록 설계된 \u003cstrong\u003e차세대 프레임워크\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e런타임이나 가비지 컬렉터 없이 \u003cstrong\u003e컴파일 타임 메모리·스레드 안전성\u003c/strong\u003e을 확보하며, \u003cstrong\u003eRTOS 없이도 멀티태스킹\u003c/strong\u003e을 수행\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eHAL, 네트워킹...\u003c/p\u003e"
+    },
+    {
+      "title": "Sopro TTS: CPU에서 실행되는 제로샷 음성 복제 지원 1억6900만 파라미터 TTS 모델",
+      "link": "https://news.hada.io/topic?id=25697",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-10T03:33:23+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eSopro TTS\u003c/strong\u003e는 영어 기반의 경량 \u003cstrong\u003e텍스트-음성 변환 모델\u003c/strong\u003e로, 제로샷 음성 복제와 스트리밍 생성을 지원\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e1억6900만 개 파라미터\u003c/strong\u003e를 가지며, \u003cstrong\u003eCPU에서 0.25 RTF\u003c/strong\u003e 속도로 30초 오디오를 약 7.5초에 생성\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e3~12초 길이...\u003c/p\u003e"
+    },
+    {
+      "title": "미네소타 당국, ICE 총격 사망 사건 증거 접근 불가…FBI는 공동 수사 거부",
+      "link": "https://news.hada.io/topic?id=25696",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-10T02:32:48+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e미네소타주 수사국은 \u003cstrong\u003e이민세관단속국(ICE) 요원에 의한 총격 사망 사건\u003c/strong\u003e 수사에서 배제되어 사건 자료와 증거에 접근할 수 없다고 발표\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e연방검찰청(U.S. Attorney’s Office)\u003c/strong\u003e 이 당초 FBI와 공동으로 진행하기로 한 수사에서 미네소타주 기관의 참여를 차단함\u003c/li\u003e...\u003c/p\u003e"
+    },
+    {
+      "title": "AI 코딩 보조 도구가 점점 나빠지고 있는가?",
+      "link": "https://news.hada.io/topic?id=25695",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-10T01:33:46+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e최근 \u003cstrong\u003eAI 코딩 보조 도구의 전반적인 품질 저하\u003c/strong\u003e가 나타나며, 작업 속도와 결과 정확도가 이전보다 나빠지는 흐름\u003c/li\u003e\n\u003cli\u003e최신 \u003cstrong\u003e대형 언어 모델(LLM)\u003c/strong\u003e 은 문법 오류를 줄이는 대신, 실행은 되지만 결과가 틀린 \u003cstrong\u003e조용한 실패(silent failure)\u003c/strong\u003e 를 더 자주 만들어...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: AI-SLOP Detector — AI가 만든 ‘과장 거짓 코드’ 분석 탐지 도구",
+      "link": "https://news.hada.io/topic?id=25694",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-09T21:45:47+09:00",
+      "description": "\u003cp\u003e##이 도구는 개인적인 실패 경험에서 출발했습니다.\u003c/p\u003e\n\u003cp\u003e며칠 전, 저는 자신만만하게\u003cbr /\u003e\n“HRPO-X v1.0.1 – 하이브리드 추론 최적화 프레임워크 구현체”라는\u003cbr /\u003e\n거창한 이름의 리포지토리를 공개했습니다.\u003cbr /\u003e\n최신 논문을 기반으로 아키텍처를 구현했다고 믿었던 프로젝트였습니다.\u003c/p\u003e\n\u003cp\u003e하지만 공개"
+    },
+    {
+      "title": "Show GN: Fullstack Starter - AI-native 개발을 위한 프로덕션 레디 모노레포 템플릿",
+      "link": "https://news.hada.io/topic?id=25691",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-09T19:35:49+09:00",
+      "description": "\u003cp\u003e안드레 카파시가 최근 이런 글을 남겼습니다. \u0026quot;지난 1년간 등장한 것들을 제대로 엮기만 하면 10배는 강력해질 수 있을 것 같은데, 그걸 못 하면 실력 문제다.\u0026quot; 하지만 에이전트, 서브에이전트, 프롬프트, 컨텍스트, MCP, 워크플로우... 매뉴얼 없이 던져진 도구이기도 합니다.\u003c/p\u003e\n\u003cp\u003e알렉스 와미는 \u0026quot"
+    },
+    {
+      "title": "칼 뉴포트가 분석한 AI 에이전트 2025년 약속이 빗나간 이유",
+      "link": "https://news.hada.io/topic?id=25689",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-09T17:55:32+09:00",
+      "description": "\u003cp\u003e2025년 OpenAI 샘 알트먼 등은 AI 에이전트가 노동력에 합류해 생산성을 혁신할 것이라고 예측했으나, 실제 제품(예: ChatGPT Agent)은 단순 작업도 실패하며 기대에 미치지 못했다. Cal Newport는 프로그래밍 외 영역으로 능력이 전이되지 않았고, LLM 기반 기술의 한계 때문이라고 분석. 안드레이 카파시도 “에이전...\u003c/p\u003e"
+    },
+    {
+      "title": "Vibe Kanban: AI 코딩 에이전트 작업을 병렬로 관리하는 칸반 보드",
+      "link": "https://news.hada.io/topic?id=25688",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-09T17:14:06+09:00",
+      "description": "\u003cp\u003eClaude Code, OpenAI Codex 등의 AI 코딩 에이전트가 작업을 수행하는 동안 발생하는 대기 시간을 활용하여, 여러 작업을 안전하게 병렬로 실행하고 관리할 수 있게 돕는 오픈 소스 데스크탑 애플리케이션.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e주요 특징\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e격리된 Git 작업 트리(Worktrees):\u003c/strong\u003e 각 작"
+    },
+    {
+      "title": "Chrome Dev for Desktop Update",
+      "link": "http://chromereleases.googleblog.com/2026/01/chrome-dev-for-desktop-update.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2026-01-09T09:13:34.366-08:00",
+      "description": "\u003cp\u003eThe Dev channel has been updated to 145.0.7620.3 for Windows, Mac and Linux.\u003c/p\u003e\u003cp\u003eA partial list of changes is available in the \u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/145.0.7587.5..145.0.7620.3?pretty=fuller\u0026amp;n=10000\"\u003eGit log\u003c/a\u003e. Interested in \u003ca href=\"https://www.chromium.org/getting-involved/dev-channel/\"\u003eswitching\u003c/a\u003e release channels? Find out \u003ca href=\"https://www.chromium.org/getting-involved/dev-channel/\"\u003ehow\u003c/a\u003e. If you find a new issue, please let us know by \u003ca href=\"https://crbug.com/\"\u003efiling a bug\u003c/a\u003e. The \u003ca href=\"https://productforums.google.com/forum/#!forum/chrome\"\u003ecommunity help forum\u003c/a\u003e is also a great place to reach out for help or learn about common issues.\u003c/p\u003e\u003cp\u003eChrome Release Team\u003cbr /\u003e\u003ca href=\"https://www.google.com/chrome\"\u003e\u003c/a\u003e\u003ca href=\"https://www.google.com/chrome\"\u003eGoogle Chrome\u003c/a\u003e\u003c/p\u003e"
+    },
+    {
+      "title": "Security Is a Developer Experience Problem, Rooted in Our Foundations",
+      "link": "https://www.docker.com/blog/security-is-a-developer-experience-problem-rooted-in-our-foundations/",
+      "source": "Docker Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-09T16:11:53Z",
+      "description": "For more than a decade, the industry has tried to improve software security by pushing it closer to developers. We moved scanners into CI, added security checks to pull requests, and asked teams to respond faster to an ever-growing stream of vulnerabilities. And yet, the underlying problems have not gone away. The issue is not..."
+    },
+    {
+      "title": "NVIDIA Unveils Multi-Agent Intelligent Warehouse and Catalog Enrichment AI Blueprints to Power the Retail Pipeline",
+      "link": "https://blogs.nvidia.com/blog/multi-agent-intelligent-warehouse-and-catalog-enrichment-blueprints/",
+      "source": "NVIDIA Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-09T14:00:02Z",
+      "description": "Every “that was easy” shopping moment is made possible by teams working to hit shipping deadlines, scrambling to fix missing product details and striving to provide curated shopping experiences. Behind the scenes, workers are dealing with the reality of aging systems, siloed data and rising customer expectations — a combination that makes consistency and speed\t\u003ca class=\"read-more\" href=\"https://blogs.nvidia.com/blog/multi-agent-intelligent-warehouse-and-catalog-enrichment-blueprints/\"\u003e\n\t\tRead Article\t\t\u003cspan data-icon=\"y\"\u003e\u003c/span\u003e\n\t\u003c/a\u003e\n\t"
+    }
+  ],
+  "generatedAt": "2026-01-10T07:09:26.766582027+09:00"
+}
