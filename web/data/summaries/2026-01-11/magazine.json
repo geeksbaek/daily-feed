@@ -1,0 +1,266 @@
+{
+  "date": "2026-01-11",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2026년 1월 10일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** AI가 수학 난제인 에르되시 문제를 해결하며 과학적 추론 능력을 입증했고, 보안 업계는 하드코딩된 비밀번호와 백도어 논란으로 시끄러운 가운데, 개발자들은 Rust 기반의 새로운 Python 도구들에 열광하고 있습니다.\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### 🤖 AI, 수학계의 오랜 난제 '에르되시 문제 #728' 자율 해결\n수학자 폴 에르되시(Paul Erdős)가 남긴 수많은 난제 중 하나인 #728번 문제가 AI에 의해 해결되었습니다. 단순한 계산 지원이 아니라, AI가 거의 자율적으로 증명 과정을 도출했다는 점이 충격적입니다. 이는 LLM(거대언어모델)이 단순한 언어 처리를 넘어 고도의 논리적 추론과 수학적 발견의 영역으로 진입했음을 시사하는 강력한 신호입니다. 특히 2026년 현재, AI가 과학적 발견의 '보조자'에서 '주체'로 전환되는 변곡점에 있음을 보여줍니다.\n\u003e **Key Point:** AI가 인간 수학자의 개입을 최소화한 상태에서 복잡한 수학적 증명을 완료, 과학 연구의 패러다임 변화 예고 [^4]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. AI 에이전트 개발의 핵심: '평가(Evals)' 정복하기\n- **What:** Anthropic이 AI 에이전트의 성능을 측정하고 개선하기 위한 실용적인 가이드와 방법론을 공개했습니다. 단순한 답변 생성이 아닌, 복잡한 작업을 수행하는 에이전트의 성공 여부를 판단하는 구체적인 코드와 워크플로우를 포함합니다.\n- **Why:** 2026년 개발 트렌드가 '챗봇'에서 '에이전트'로 넘어갔지만, \"이 에이전트가 일을 잘하는가?\"를 판단할 객관적 지표(Metric)를 만드는 것은 여전히 어렵기 때문입니다.\n- **Impact:** 개발자들은 이제 '감(Vibes)'에 의존하던 테스트에서 벗어나, 도메인 특화된 평가 셋을 구축하여 에이전트의 신뢰성을 엔지니어링 수준으로 끌어올릴 수 있게 되었습니다. [^8][^31]\n\n### 2. 감시 사회의 두 얼굴: 허술한 보안과 백도어 요구\n- **What:** 미국의 주요 감시 카메라 업체인 Flock Safety가 장비에 관리자 비밀번호를 53회나 하드코딩한 사실이 드러났습니다. 반면, 영국 정부는 통신 규제 기관(Ofcom)에 암호화 백도어 탐색을 명령했습니다.\n- **Why:** Flock Safety의 사례는 인프라 보안의 기본조차 지켜지지 않는 현실을 보여주는 반면, 정부는 범죄 예방을 명분으로 강력한 암호화 무력화를 시도하고 있습니다.\n- **Impact:** \"보안 업체도 믿을 수 없는데, 정부가 백도어까지 요구한다면 개인정보는 어디에 있는가?\"라는 프라이버시 딜레마가 심화될 전망입니다. [^5][^26]\n\n### 3. 마크다운(Markdown)은 어떻게 세상을 지배했나\n- **What:** 개발자 문서를 넘어 슬랙, 노션, 블로그까지, 마크다운이 텍스트 포맷의 표준이 된 이유를 분석했습니다.\n- **Why:** 복잡한 워드 프로세서 포맷과 달리, 마크다운은 '순수 텍스트'로서의 이식성과 가독성을 동시에 잡았습니다. 특정 벤더에 종속되지 않는다는 점이 승리 요인입니다.\n- **Impact:** AI 시대에도 마크다운은 LLM이 가장 이해하기 쉬운 포맷으로서 그 지위가 더욱 공고해질 것입니다. [^2]\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **Ty (by Ruff team)** | Ruff 제작사가 만든 Rust 기반의 초고속 Python 타입 체커. Mypy의 느린 속도를 해결하려는 시도 [^6] |\n| **Tool** | **Orion for Linux** | 가볍고 빠른 웹킷 기반 브라우저 Orion의 리눅스 알파 버전 공개 [^7] |\n| **Tool** | **buse** | 터미널에서 브라우저를 자동화할 수 있는 새로운 도구 [^17] |\n| **Tool** | **Sebastos** | Standard Ebooks를 위한 동기화(Sync) 클라이언트 [^16] |\n| **Tool** | **Ted Mosby** | 건축 관련 위키(Wiki) 작업을 돕는 오픈소스 Claude 에이전트 [^29] |\n| **Tool** | **Rest API Tools** | 100% 무료로 제공되는 REST API 테스트 및 개발 도구 모음 [^20] |\n| **Paper** | **Math for CS (PDF)** | 2018년판 컴퓨터 과학을 위한 수학 교재 PDF, 여전히 유효한 필독서 [^11] |\n| **Event** | **Game Off 2025** | GitHub 주관 게임 잼 수상작 발표. '빛, 파도, 표류'를 주제로 한 오픈소스 게임들 [^1] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라 \u0026 AI\n*   **Show GN: 결정론적 LLM 에이전트**: 상태머신(State Machine)을 활용해 LLM의 환각을 통제하고 예측 가능한 행동을 하도록 만든 데모입니다. [^9]\n*   **2026년 LLM 코딩 워크플로우**: 구글 엔지니어 Addy Osmani가 제안하는, AI와 함께하는 최신 코딩 작업 방식입니다. [^30]\n*   **LangChain의 통찰**: 소프트웨어엔 코드가 문서라면, AI엔 '실행 추적(Traces)'이 문서 역할을 한다는 주장입니다. [^32]\n*   **Positron의 VS Code 독립**: 데이터 과학 IDE인 Positron이 VS Code의 그늘에서 벗어나 독자적인 UI/UX를 강화하고 있습니다. [^21]\n*   **SSH 접속 불가 사태**: 서버에 SSH 접속이 안 되지만, 이를 쿨하게 받아들이고 해결해 나가는 개발자의 기록입니다. [^13]\n*   **Ajax.aspnetcdn.com 인증서 만료**: 마이크로소프트의 주요 CDN 인증서가 만료되어 일부 구형 웹사이트에 장애가 발생했습니다. [^25]\n*   **비정형 문서 수집 파이프라인**: 복잡한 문서 데이터를 AI가 처리 가능한 형태로 변환하는 기술적 논의입니다. [^15]\n\n#### 🔬 과학 \u0026 건강 \u0026 사회\n*   **운동 vs 우울증**: 운동이 우울증 치료제만큼이나 효과적일 수 있다는 연구 결과가 주목받고 있습니다. [^3]\n*   **자폐증 진단 테스트 논란**: 기업들은 모발/피부로 자폐를 진단한다고 홍보하지만, 과학적 근거는 아직 빈약합니다. [^18]\n*   **거대 아나콘다 발견**: 아마존 생태계에 대한 기존 지식을 뒤집는 새로운 거대 아나콘다 종이 발견되었습니다. [^28]\n*   **뉴질랜드 측지 데이터 모델**: 지각 변동이 잦은 뉴질랜드의 2000년 기준 좌표계 변형 모델에 대한 기술적 문서입니다. [^23]\n*   **인류의 승리 (Humanity Wins)**: AI 시대에도 결국 인간성이 승리할 것이라는 LessWrong의 철학적 에세이입니다. [^14]\n*   **People Not People**: 디자인과 웹에서 '사람'을 다루는 방식에 대한 비평적 에세이입니다. [^19]\n\n#### 💼 비즈니스 \u0026 기타\n*   **CES 2026 최고의 제품들**: 올해 CES를 빛낸 혁신적인 하드웨어와 가전 제품 총정리입니다. [^10]\n*   **테슬라 독일 판매 급감**: 테슬라의 독일 내 판매량이 정점 대비 72%나 하락했습니다. 전기차 시장의 지각 변동이 감지됩니다. [^27]\n*   **보안 실패의 본질**: 보안 사고는 기술적 결함보다 조직적, 인간적 요인에서 비롯된다는 심층 분석입니다. [^12]\n*   **Bellingcat 미니애폴리스 영상 분석**: 총격 사건 당시 요원의 총기 위치를 비디오 분석을 통해 과학적으로 검증했습니다. [^22]\n*   **Arbitration**: 스포츠 경기를 양쪽 팬덤의 관점에서 동시에 경험할 수 있게 해주는 독특한 앱입니다. [^24]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘 소식들은 '**도구의 진화**'와 '**신뢰의 위기**'로 요약됩니다. AI는 수학 문제를 풀고(Top Story), 개발 도구는 Rust로 더 빨라지고 있습니다(Ty, Orion). 하지만 보안 카메라의 비밀번호 관리 소홀(Flock Safety)이나 검증되지 않은 자폐 진단 상술은 기술 발전의 그림자를 보여줍니다. 기술을 '만드는' 것만큼이나, 그것을 '검증'하고 '안전하게 운영'하는 것이 2026년의 핵심 과제임을 잊지 마세요.\n\n---\n\n### Footnotes\n[^1]: Light waves, rising tides, and drifting ships: Game Off 2025 winners - https://github.blog/open-source/gaming/light-waves-rising-tides-and-drifting-ships-game-off-2025-winners/\n[^2]: 마크다운이 세상을 장악한 이유 - https://news.hada.io/topic?id=25717\n[^3]: 운동이 우울증 치료만큼 효과적일 수 있음 - https://news.hada.io/topic?id=25716\n[^4]: 에르되시 문제 #728, AI가 거의 자율적으로 해결 - https://news.hada.io/topic?id=25715\n[^5]: 미국 감시 인프라의 비밀번호를 53회 하드코딩한 Flock Safety - https://news.hada.io/topic?id=25714\n[^6]: Mypy에서 Ty로: Ruff 제작사가 만든 초고속 Rust 기반 Python 타입 체커 도입 가이드 - https://news.hada.io/topic?id=25713\n[^7]: 리눅스용 오리온 알파 버전 공개 - https://news.hada.io/topic?id=25712\n[^8]: Anthropic 엔지니어링: AI 에이전트 평가(Evals)의 실용적 가이드와 방법론 - https://news.hada.io/topic?id=25711\n[^9]: Show GN: 상태머신 기반의 결정론적 LLM 에이전트 데모 - https://news.hada.io/topic?id=25710\n[^10]: CES 2026 최고의 제품들 - https://news.hada.io/topic?id=25708\n[^11]: 컴퓨터 과학을 위한 수학 (2018) [PDF] - https://news.hada.io/topic?id=25707\n[^12]: The Nature of Security Failure - https://news.ycombinator.com/item?id=46570345\n[^13]: I Cannot SSH into My Server Anymore (and That's Fine) - https://soap.coffee/~lthms/posts/i-cannot-ssh-into-my-server-anymore.html\n[^14]: Humanity Wins - https://www.lesswrong.com/posts/dw3NZot9kKcY5dacL/how-humanity-wins\n[^15]: Unstructured Document Ingestion Pipeline - https://news.ycombinator.com/item?id=46570301\n[^16]: Show HN: Sebastos: a sync client for Standard Ebooks - https://github.com/grahame/sebastos\n[^17]: Show HN: buse – automate your browser from the terminal - https://github.com/rinvii/buse\n[^18]: Tests for Autism? Companies Are Selling Them, but Research Is Still Scant - https://www.nytimes.com/2026/01/07/health/autism-tests-skin-hair-antibodies.html\n[^19]: People Not People - https://robinrendle.com/notes/people-not-people/\n[^20]: 100% free rest API tools - https://restapitools.com/\n[^21]: Zap the sidebar and focus: Positron peeling away from VS Code - https://bsky.app/profile/libbyheeren.bsky.social/post/3mc2dw4ntek2e\n[^22]: Bellingcat: Positioning of the Agent's Gun at the Shooting in Minneapolis [video] - https://www.youtube.com/watch?v=N9C-ubG6wrQ\n[^23]: New Zealand geodetic datum deformation model - https://www.linz.govt.nz/guidance/geodetic-system/coordinate-systems-used-new-zealand/geodetic-datums/new-zealand-geodetic-datum-2000-nzgd2000/new-zealand-geodetic-datum-2000-deformation-model\n[^24]: Show HN: Arbitration, a way to experience live sports through both fanbases - https://www.app.arbi.gg/\n[^25]: Ajax.aspnetcdn.com Expired TLS Cert - https://news.ycombinator.com/item?id=46570177\n[^26]: UK Orders Ofcom to Explore Encryption Backdoors - https://reclaimthenet.org/uk-orders-ofcom-to-explore-encryption-backdoors\n[^27]: Tesla's Germany Sales Down 72% from Their Peak - https://cleantechnica.com/2026/01/08/teslas-germany-sales-down-72-from-their-peak/\n[^28]: Giant Anaconda the discovery that is rewriting what we know about the Amazon - https://comuniq.xyz/post?t=693\n[^29]: Show HN: Show HN: Ted Mosby – open-source Claude agent for architectural wikis - https://www.npmjs.com/package/ted-mosby\n[^30]: LLM coding workflow going into 2026 - https://medium.com/@addyosmani/my-llm-coding-workflow-going-into-2026-52fe1681325e\n[^31]: Writing Evals for AI agents - https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents\n[^32]: In software, the code documents the app. In AI, the traces do. - https://blog.langchain.com/in-software-the-code-documents-the-app-in-ai-the-traces-do/\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **Light waves, rising tides, and drifting ships: Game Off 2025 winners**\n   - 출처: GitHub Blog\n   - 링크: https://github.blog/open-source/gaming/light-waves-rising-tides-and-drifting-ships-game-off-2025-winners/\n\n2. **마크다운이 세상을 장악한 이유**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25717\n\n3. **운동이 우울증 치료만큼 효과적일 수 있음**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25716\n\n4. **에르되시 문제 #728, AI가 거의 자율적으로 해결**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25715\n\n5. **미국 감시 인프라의 비밀번호를 53회 하드코딩한 Flock Safety**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25714\n\n6. **Mypy에서 Ty로: Ruff 제작사가 만든 초고속 Rust 기반 Python 타입 체커 도입 가이드**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25713\n\n7. **리눅스용 오리온 알파 버전 공개**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25712\n\n8. **Anthropic 엔지니어링: AI 에이전트 평가(Evals)의 실용적 가이드와 방법론**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25711\n\n9. **Show GN: 상태머신 기반의 결정론적 LLM 에이전트 데모**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25710\n\n10. **CES 2026 최고의 제품들**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25708\n\n11. **컴퓨터 과학을 위한 수학 (2018) [PDF]**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25707\n\n12. **The Nature of Security Failure**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=46570345\n\n13. **I Cannot SSH into My Server Anymore (and That's Fine)**\n   - 출처: Hacker News\n   - 링크: https://soap.coffee/~lthms/posts/i-cannot-ssh-into-my-server-anymore.html\n\n14. **Humanity Wins**\n   - 출처: Hacker News\n   - 링크: https://www.lesswrong.com/posts/dw3NZot9kKcY5dacL/how-humanity-wins\n\n15. **Unstructured Document Ingestion Pipeline**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=46570301\n\n16. **Show HN: Sebastos: a sync client for Standard Ebooks**\n   - 출처: Hacker News\n   - 링크: https://github.com/grahame/sebastos\n\n17. **Show HN: buse – automate your browser from the terminal**\n   - 출처: Hacker News\n   - 링크: https://github.com/rinvii/buse\n\n18. **Tests for Autism? Companies Are Selling Them, but Research Is Still Scant**\n   - 출처: Hacker News\n   - 링크: https://www.nytimes.com/2026/01/07/health/autism-tests-skin-hair-antibodies.html\n\n19. **People Not People**\n   - 출처: Hacker News\n   - 링크: https://robinrendle.com/notes/people-not-people/\n\n20. **100% free rest API tools**\n   - 출처: Hacker News\n   - 링크: https://restapitools.com/\n\n21. **Zap the sidebar and focus: Positron peeling away from VS Code**\n   - 출처: Hacker News\n   - 링크: https://bsky.app/profile/libbyheeren.bsky.social/post/3mc2dw4ntek2e\n\n22. **Bellingcat: Positioning of the Agent's Gun at the Shooting in Minneapolis [video]**\n   - 출처: Hacker News\n   - 링크: https://www.youtube.com/watch?v=N9C-ubG6wrQ\n\n23. **New Zealand geodetic datum deformation model**\n   - 출처: Hacker News\n   - 링크: https://www.linz.govt.nz/guidance/geodetic-system/coordinate-systems-used-new-zealand/geodetic-datums/new-zealand-geodetic-datum-2000-nzgd2000/new-zealand-geodetic-datum-2000-deformation-model\n\n24. **Show HN: Arbitration, a way to experience live sports through both fanbases**\n   - 출처: Hacker News\n   - 링크: https://www.app.arbi.gg/\n\n25. **Ajax.aspnetcdn.com Expired TLS Cert**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=46570177\n\n26. **UK Orders Ofcom to Explore Encryption Backdoors**\n   - 출처: Hacker News\n   - 링크: https://reclaimthenet.org/uk-orders-ofcom-to-explore-encryption-backdoors\n\n27. **Tesla's Germany Sales Down 72% from Their Peak**\n   - 출처: Hacker News\n   - 링크: https://cleantechnica.com/2026/01/08/teslas-germany-sales-down-72-from-their-peak/\n\n28. **Giant Anaconda the discovery that is rewriting what we know about the Amazon**\n   - 출처: Hacker News\n   - 링크: https://comuniq.xyz/post?t=693\n\n29. **Show HN: Show HN: Ted Mosby – open-source Claude agent for architectural wikis**\n   - 출처: Hacker News\n   - 링크: https://www.npmjs.com/package/ted-mosby\n\n30. **LLM coding workflow going into 2026**\n   - 출처: Hacker News\n   - 링크: https://medium.com/@addyosmani/my-llm-coding-workflow-going-into-2026-52fe1681325e\n\n31. **Writing Evals for AI agents**\n   - 출처: Hacker News\n   - 링크: https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents\n\n32. **In software, the code documents the app. In AI, the traces do.**\n   - 출처: LangChain Blog\n   - 링크: https://blog.langchain.com/in-software-the-code-documents-the-app-in-ai-the-traces-do/\n\n\n",
+  "articles": [
+    {
+      "title": "Light waves, rising tides, and drifting ships: Game Off 2025 winners",
+      "link": "https://github.blog/open-source/gaming/light-waves-rising-tides-and-drifting-ships-game-off-2025-winners/",
+      "source": "GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-10T21:36:00Z",
+      "description": "\u003cp\u003eOut of more than 700 games submitted to Game Off 2025, these ten winners stand out for creativity, craft, and bold interpretations of the WAVES theme. All are free to play, with source code available to explore.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/open-source/gaming/light-waves-rising-tides-and-drifting-ships-game-off-2025-winners/\"\u003eLight waves, rising tides, and drifting ships: Game Off 2025 winners\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "마크다운이 세상을 장악한 이유",
+      "link": "https://news.hada.io/topic?id=25717",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-11T01:37:46+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e단순한 \u003cstrong\u003e텍스트 기반 포맷\u003c/strong\u003e이 전 세계 기술 산업의 공통 언어로 자리 잡아, AI 시스템부터 일상적인 메모 앱까지 폭넓게 사용됨\u003c/li\u003e\n\u003cli\u003e2004년 \u003cstrong\u003eJohn Gruber\u003c/strong\u003e가 블로깅 편집의 불편함을 해결하기 위해 만든 포맷으로, 누구나 쉽게 웹 문서를 작성할 수 있게 함\u003c/li\u003e\n\u003cli\u003e개발자...\u003c/p\u003e"
+    },
+    {
+      "title": "운동이 우울증 치료만큼 효과적일 수 있음",
+      "link": "https://news.hada.io/topic?id=25716",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-11T01:34:46+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e운동이 우울증 완화에 심리치료와 유사한 수준의 효과\u003c/strong\u003e를 보인다는 대규모 임상시험 검토 결과 제시\u003c/li\u003e\n\u003cli\u003e항우울제와 비교했을 때도 \u003cstrong\u003e유사한 개선 효과\u003c/strong\u003e가 관찰되었으나, 해당 근거의 확실성은 낮은 수준으로 평가됨\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e가벼운~중간 강도의 운동을 여러 차...\u003c/p\u003e"
+    },
+    {
+      "title": "에르되시 문제 #728, AI가 거의 자율적으로 해결",
+      "link": "https://news.hada.io/topic?id=25715",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-10T16:33:31+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e에르되시 문제 #728\u003c/strong\u003e이 최근 \u003cstrong\u003eAI 도구에 의해 거의 자율적으로 해결\u003c/strong\u003e되며 수학 연구 자동화의 새로운 이정표를 세움\u003c/li\u003e\n\u003cli\u003e문제는 원래 \u003cstrong\u003eErdős, Graham, Ruzsa, Strauss\u003c/strong\u003e가 1975년에 제기한 \u003cstrong\u003e이항계수의 소인수분해 관련 질문\u003c/strong\u003e으로, 애매한 ...\u003c/p\u003e"
+    },
+    {
+      "title": "미국 감시 인프라의 비밀번호를 53회 하드코딩한 Flock Safety",
+      "link": "https://news.hada.io/topic?id=25714",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-10T15:32:45+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e미국 전역의 \u003cstrong\u003e감시 네트워크를 운영하는 Flock Safety\u003c/strong\u003e가 ArcGIS API 키를 하드코딩해 53개의 공개 자바스크립트 번들에서 노출시킨 사실이 확인됨\u003c/li\u003e\n\u003cli\u003e이 키는 \u003cstrong\u003e약 12,000개 기관의 위치·탐지 데이터를 통합 관리하는 ArcGIS 환경\u003c/strong\u003e에 접근할 수 있었으며, IP·리퍼러 제한이...\u003c/p\u003e"
+    },
+    {
+      "title": "Mypy에서 Ty로: Ruff 제작사가 만든 초고속 Rust 기반 Python 타입 체커 도입 가이드",
+      "link": "https://news.hada.io/topic?id=25713",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-10T14:46:46+09:00",
+      "description": "\u003cp\u003e요약:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eAstral(Ruff 제작사)에서 공개한 Rust 기반의 새로운 Python 타입 체커 'ty'의 도입 및 마이그레이션 방법을 다룹니다.\u003c/li\u003e\n\u003cli\u003e'ty'는 기본적으로 Mypy의 엄격(strict) 모드와 유사하게 동작하며, 'uv'를 통한 설치 및 실행을 기본적으로 지원합니다.\u003c/li\u003e\n\u003cli\u003e아직 공식 pre-commit 지원은 없으"
+    },
+    {
+      "title": "리눅스용 오리온 알파 버전 공개",
+      "link": "https://news.hada.io/topic?id=25712",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-10T14:32:56+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eKagi의 웹 브라우저 Orion\u003c/strong\u003e이 리눅스용 \u003cstrong\u003e알파 단계 버전\u003c/strong\u003e으로 공개되어 초기 테스트가 가능함\u003c/li\u003e\n\u003cli\u003e이 버전은 \u003cstrong\u003e시각적 구성요소 전반\u003c/strong\u003e이 구현되어 있으며, 메뉴·대화상자·툴바 등 기본 UI가 작동함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e탭 관리 기능\u003c/strong\u003e이 대부분 완성...\u003c/p\u003e"
+    },
+    {
+      "title": "Anthropic 엔지니어링: AI 에이전트 평가(Evals)의 실용적 가이드와 방법론",
+      "link": "https://news.hada.io/topic?id=25711",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-10T13:32:34+09:00",
+      "description": "\u003cp\u003e요약:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e기존 LLM 벤치마크만으로는 도구 사용과 다단계 추론을 수행하는 'AI 에이전트'의 성능을 정확히 측정하기 어려움.\u003c/li\u003e\n\u003cli\u003e에이전트 평가는 소프트웨어 테스트와 유사하게 단위 테스트(Unit Tests)와 통합 테스트(Integration Tests)를 결합해야 함.\u003c/li\u003e\n\u003cli\u003e결정론적 코드 채점(Code-based)과"
+    },
+    {
+      "title": "Show GN: 상태머신 기반의 결정론적 LLM 에이전트 데모",
+      "link": "https://news.hada.io/topic?id=25710",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-10T12:59:51+09:00",
+      "description": "\u003cp\u003e상태 머신을 기반으로 한 결정론적 LLM 에이전트 아키텍처를 실험적으로 구현한 데모입니다.\u003c/p\u003e\n\u003cp\u003e모든 사용자 상태는 서버가 아닌 브라우저의 IndexedDB에 저장되며,\u003cbr /\u003e\nLLM은 실행이나 상태 변경이 아니라 사용자 입력을 의도로 해석 및 분류하는 단계에만 사용됩니다.\u003c/p\u003e\n\u003cp\u003e데모 환경에서는 하루 최대 30회"
+    },
+    {
+      "title": "CES 2026 최고의 제품들",
+      "link": "https://news.hada.io/topic?id=25708",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-10T11:31:02+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eNYT Wirecutter 가 뽑은 가장 손에 넣고 싶은 제품들 리스트\u003c/li\u003e\n\u003cli\u003e2026년 CES는 \u003cstrong\u003e\u0026quot;서투른 로봇의 해\u0026quot;\u003c/strong\u003e :\n\u003cul\u003e\n\u003cli\u003eSwitchBot, LG, Sharpa, Unitree 등이 빨래 개기(어설프게), 카드 딜링(매우 느리게), 탁구(의아하게), 격투기(이상하게)를 수행하는 로봇 시연\u003c/li\u003e\n\u003cli\u003e춤추는 로...\u003c/p\u003e"
+    },
+    {
+      "title": "컴퓨터 과학을 위한 수학 (2018) [PDF]",
+      "link": "https://news.hada.io/topic?id=25707",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-10T09:55:33+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eMIT에서 제공하는 \u003cstrong\u003e컴퓨터 과학 전공자를 위한 수학 교재\u003c/strong\u003e로, 논리와 증명부터 확률, 재귀, 그래프 이론까지 핵심 수학 개념을 체계적으로 다룸\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e증명, 구조, 카운팅, 확률, 점화식\u003c/strong\u003e의 다섯 파트로 구성되어 있으며, 각 파트는 이론적 기초와 컴퓨터 과학 응용을 함께...\u003c/p\u003e"
+    },
+    {
+      "title": "The Nature of Security Failure",
+      "link": "https://news.ycombinator.com/item?id=46570345",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-10T22:01:29Z",
+      "description": "\n\u003cp\u003eWhat I Learned After Studying Real-World Hacking Attacks?\u003cp\u003eI had conceived that successful hacking requires pure technical skill: new exploits, clever payloads, and deep knowledge of operating systems. Then I started reading opinions on post-incident breach reports, leaked attack timelines, and other such things, and that failed to hold up.\nReal-life attacks benefit much more from simple things.\u003cp\u003eMost Breaches Start With Something Boring :\nSo incidents benefit from credential reuse from a previous breach, an exposed admin interface, a misconfigured cloud service, and a successful phishing email.\nThese aren't edge cases: They are defaults. An attacker doesn't have to be creative when the same mistakes repeat across organizations.\nWhat amazed me was the operationally careless manner in which many technically \"secure\" systems were treated. The vulnerabilities were not unknown; they were just tolerated.\u003cp\u003ePhishing Works Because It Is Context-Based, Not Ignorance-Based :\nI had supposed that phishing must target naive users. Far from it, the data suggest that many of the victims were engineers, managers, and administrators.\nPhishing works because it mocks up normal workflows. Messages drop in during busy hours, mirror internal tools, and apply time pressure. The design isn't one to nail everybody; it's to catch somebody at the wrong moment.\nSecurity wisdom often tells one to look for \"obvious\" red flags. Real attacks do not have to be perfect; they only need to be plausible.\u003cp\u003eMisconfiguration Is Deadlier than Vulnerabilities :\nIn reading through the incident analyses, I was struck by how rarely zero-day exploits came into play. More often than not, attackers simply stumbled on services that should not have been public. \nOpen S3 buckets, unsecured dashboards, default credentials, and overly permissive roles showed up repeatedly. These issues weren't hidden; they were discoverable through routine scanning.\nWhat surprised me was how long some of these exposures existed before being exploited. The window wasn't minutes; it wasn't hours; it was months.\u003cp\u003eThe Attackers Optimize for Silence :\nAnother fallacy I held was that attackers engaged in speedy work once inside. In fact, many breaches involved prolonged dwell times. Attackers moved largely unhurriedly, keeping their heads low to avoid alerting any, and maximizing their persistence.\nThe immediate harm was never the objective; the plan was continued access. By the time the defenders turned up heads, the attackers already had a mental map of the systems and pilfered data. \nThis really made me rethink detection. It is not only about quickness; it is about being seen.\u003cp\u003eQuietly Failing Security Tools :\nMany environments under breach had up-to-date security stacks. It was not the lack of tools that caused failure; it was that alerts were drowned out in noise, logs were not reviewed, and ownership was ambivalent.\nSecurity was not eroded through any significant process of failure, but it was neglected. Over a period of time, exceptions accumulated, and temporary decisions took on a life of their own.\u003cp\u003eBoring Practices Prevent Non-Boring Incidents : \nThe most effective forms of defence were also the most mundane:\n⦁Enforced multi-factor authentication\n⦁Limited credential reuse\n⦁Reduced default access\n⦁Regular audits of exposed services\n⦁None of this is new. Perhaps that's the issue.\u003cp\u003eStudying raw attacks flipped my mental model. Scaling it, hack is not so much about sophistication as about reliability. Attackers win when defenders repeat the same predictable mistakes.\u003cp\u003e\"Security does not fail by shouting; it fails by stealth.\"\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46570345\"\u003ehttps://news.ycombinator.com/item?id=46570345\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "I Cannot SSH into My Server Anymore (and That's Fine)",
+      "link": "https://soap.coffee/~lthms/posts/i-cannot-ssh-into-my-server-anymore.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-10T21:59:33Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://soap.coffee/~lthms/posts/i-cannot-ssh-into-my-server-anymore.html\"\u003ehttps://soap.coffee/~lthms/posts/i-cannot-ssh-into-my-server-anymore.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46570333\"\u003ehttps://news.ycombinator.com/item?id=46570333\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Humanity Wins",
+      "link": "https://www.lesswrong.com/posts/dw3NZot9kKcY5dacL/how-humanity-wins",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-10T21:57:18Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.lesswrong.com/posts/dw3NZot9kKcY5dacL/how-humanity-wins\"\u003ehttps://www.lesswrong.com/posts/dw3NZot9kKcY5dacL/how-humanity-wins\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46570315\"\u003ehttps://news.ycombinator.com/item?id=46570315\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Unstructured Document Ingestion Pipeline",
+      "link": "https://news.ycombinator.com/item?id=46570301",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-10T21:54:40Z",
+      "description": "\n\u003cp\u003eHi all, I am designing an AWS-based unstructured document ingestion platform (PDF/DOCX/PPTX/XLSX) for large-scale enterprise repositories, using vision-language models to normalize pages into layout-aware markdown and then building search/RAG indexes or extract structured data.\u003cp\u003eFor those who have built something similar recently, what approach did you use to preserve document structure reliably in the normalized markdown (headings, reading order, nested tables, page boundaries), especially when documents are messy or scanned?\nDid you do page-level extraction only, or did you use overlapping windows / multi-page context to handle tables and sections spanning pages?\u003cp\u003eOn the indexing side, do you store only chunks + embeddings, or do you also persist richer metadata per chunk (page ranges, heading hierarchy, has_table/contains_image flags, extraction confidence/quality notes, source pointers) and if so, what proved most valuable? How does that help in the agent retrieval process?\u003cp\u003eWhat prompt patterns worked best for layout-heavy pages (multi-column text, complex tables, footnotes, repeated headers/footers), and what failed in practice?\u003cp\u003eHow did you evaluate extraction quality at scale beyond spot checks (golden sets, automatic heuristics, diffing across runs/models, table-structure metrics)?\u003cp\u003eAny lessons learned, anti-patterns, or “if I did it again” recommendations would be very helpful.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46570301\"\u003ehttps://news.ycombinator.com/item?id=46570301\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Sebastos: a sync client for Standard Ebooks",
+      "link": "https://github.com/grahame/sebastos",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-10T21:53:59Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/grahame/sebastos\"\u003ehttps://github.com/grahame/sebastos\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46570297\"\u003ehttps://news.ycombinator.com/item?id=46570297\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: buse – automate your browser from the terminal",
+      "link": "https://github.com/rinvii/buse",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-10T21:53:34Z",
+      "description": "\n\u003cp\u003eI wanted to control the browser from the terminal so I made buse:\u003cp\u003ebuse browser-1            # open chrome\u003cp\u003ebuse browser-1 navigate \"\u003ca href=\"https://example.com\" rel=\"nofollow\"\u003ehttps://example.com\u003c/a\u003e\"\u003cp\u003ebuse browser-2            # open a second browser\u003cp\u003ebuse browser-2 search \"cat\"\u003cp\u003ebuse browser-1 observe    # returns JSON about the page\u003cp\u003ebuse browser-1 click 16   # clicks on the learn more link\u003cp\u003eI've been reading about agentic computer use and I tried to use MCPs and Browserbase, but there was just a lot of friction for me. So, I brought it to the CLI instead.\u003cp\u003e\u003ca href=\"https://github.com/rinvii/buse\" rel=\"nofollow\"\u003ehttps://github.com/rinvii/buse\u003c/a\u003e\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46570293\"\u003ehttps://news.ycombinator.com/item?id=46570293\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Tests for Autism? Companies Are Selling Them, but Research Is Still Scant",
+      "link": "https://www.nytimes.com/2026/01/07/health/autism-tests-skin-hair-antibodies.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-10T21:48:13Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nytimes.com/2026/01/07/health/autism-tests-skin-hair-antibodies.html\"\u003ehttps://www.nytimes.com/2026/01/07/health/autism-tests-skin-hair-antibodies.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46570248\"\u003ehttps://news.ycombinator.com/item?id=46570248\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "People Not People",
+      "link": "https://robinrendle.com/notes/people-not-people/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-10T21:44:10Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://robinrendle.com/notes/people-not-people/\"\u003ehttps://robinrendle.com/notes/people-not-people/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46570217\"\u003ehttps://news.ycombinator.com/item?id=46570217\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "100% free rest API tools",
+      "link": "https://restapitools.com/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-10T21:43:50Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://restapitools.com/\"\u003ehttps://restapitools.com/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46570212\"\u003ehttps://news.ycombinator.com/item?id=46570212\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Zap the sidebar and focus: Positron peeling away from VS Code",
+      "link": "https://bsky.app/profile/libbyheeren.bsky.social/post/3mc2dw4ntek2e",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-10T21:43:15Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://bsky.app/profile/libbyheeren.bsky.social/post/3mc2dw4ntek2e\"\u003ehttps://bsky.app/profile/libbyheeren.bsky.social/post/3mc2dw4ntek2e\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46570207\"\u003ehttps://news.ycombinator.com/item?id=46570207\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Bellingcat: Positioning of the Agent's Gun at the Shooting in Minneapolis [video]",
+      "link": "https://www.youtube.com/watch?v=N9C-ubG6wrQ",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-10T21:42:59Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.youtube.com/watch?v=N9C-ubG6wrQ\"\u003ehttps://www.youtube.com/watch?v=N9C-ubG6wrQ\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46570203\"\u003ehttps://news.ycombinator.com/item?id=46570203\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 5\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "New Zealand geodetic datum deformation model",
+      "link": "https://www.linz.govt.nz/guidance/geodetic-system/coordinate-systems-used-new-zealand/geodetic-datums/new-zealand-geodetic-datum-2000-nzgd2000/new-zealand-geodetic-datum-2000-deformation-model",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-10T21:42:02Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.linz.govt.nz/guidance/geodetic-system/coordinate-systems-used-new-zealand/geodetic-datums/new-zealand-geodetic-datum-2000-nzgd2000/new-zealand-geodetic-datum-2000-deformation-model\"\u003ehttps://www.linz.govt.nz/guidance/geodetic-system/coordinate-systems-used-new-zealand/geodetic-datums/new-zealand-geodetic-datum-2000-nzgd2000/new-zealand-geodetic-datum-2000-deformation-model\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46570196\"\u003ehttps://news.ycombinator.com/item?id=46570196\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Arbitration, a way to experience live sports through both fanbases",
+      "link": "https://www.app.arbi.gg/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-10T21:41:33Z",
+      "description": "\n\u003cp\u003eHey HN - long-time reader, first-time Show HN.\u003cp\u003eI built a sports app called Arbitration[1] primarily for experiencing live professional games. The original itch was pretty simple: during close or rivalry games I’d constantly flip between two team game threads on Reddit to see how each side was reacting to the same play.\u003cp\u003eArbitration puts both fanbases’ live reactions in one place, synced to the game clock. It doesn’t generate opinions or takes — it just curates what fans are already saying, in real time.\u003cp\u003eFeel free to checkout the first NFL playoff game of the year, Rams @ Panthers: \u003ca href=\"https://www.app.arbi.gg/scores/nfl/20260110-8-5\" rel=\"nofollow\"\u003ehttps://www.app.arbi.gg/scores/nfl/20260110-8-5\u003c/a\u003e\u003cp\u003eFor folks curious about the tech:\u003cp\u003e- Agents are used to curate and rank live fan posts (not generate content)\n- Live DraftKings props come from a websocket snooper[2]\n- Google Gemini is used only to structure and summarize live prop data\n- Rust backend, React frontend, anonymous sessions, no accounts.\n- Mostly built for myself, but figured others here might enjoy it.\n- iOS app coming soon!\u003cp\u003eHappy to answer questions :)\u003cp\u003e- [1] \u003ca href=\"https://arbi.gg\" rel=\"nofollow\"\u003ehttps://arbi.gg\u003c/a\u003e\n- [2] DraftKings websocket snooper: \u003ca href=\"https://github.com/stonehedgelabs/snuper\" rel=\"nofollow\"\u003ehttps://github.com/stonehedgelabs/snuper\u003c/a\u003e\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46570192\"\u003ehttps://news.ycombinator.com/item?id=46570192\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Ajax.aspnetcdn.com Expired TLS Cert",
+      "link": "https://news.ycombinator.com/item?id=46570177",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-10T21:39:28Z",
+      "description": "\n\u003cp\u003ehttps://ajax.aspnetcdn.com/ has an expired certificate. Maybe we can learn something from this. Are folks still struggling with getting their certs renewed? Monitoring them? How do you /your team / company avoid this?\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46570177\"\u003ehttps://news.ycombinator.com/item?id=46570177\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "UK Orders Ofcom to Explore Encryption Backdoors",
+      "link": "https://reclaimthenet.org/uk-orders-ofcom-to-explore-encryption-backdoors",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-10T21:36:26Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://reclaimthenet.org/uk-orders-ofcom-to-explore-encryption-backdoors\"\u003ehttps://reclaimthenet.org/uk-orders-ofcom-to-explore-encryption-backdoors\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46570158\"\u003ehttps://news.ycombinator.com/item?id=46570158\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 6\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Tesla's Germany Sales Down 72% from Their Peak",
+      "link": "https://cleantechnica.com/2026/01/08/teslas-germany-sales-down-72-from-their-peak/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-10T21:34:44Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://cleantechnica.com/2026/01/08/teslas-germany-sales-down-72-from-their-peak/\"\u003ehttps://cleantechnica.com/2026/01/08/teslas-germany-sales-down-72-from-their-peak/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46570148\"\u003ehttps://news.ycombinator.com/item?id=46570148\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Giant Anaconda the discovery that is rewriting what we know about the Amazon",
+      "link": "https://comuniq.xyz/post?t=693",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-10T21:31:25Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://comuniq.xyz/post?t=693\"\u003ehttps://comuniq.xyz/post?t=693\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46570123\"\u003ehttps://news.ycombinator.com/item?id=46570123\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Show HN: Ted Mosby – open-source Claude agent for architectural wikis",
+      "link": "https://www.npmjs.com/package/ted-mosby",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-10T21:30:43Z",
+      "description": "\n\u003cp\u003eInspired by DeepWiki, which I love! I wrote about my thoughts on agent-generated \narchitectural wikis a few days ago: \u003ca href=\"https://dakota.codes/blog/agent-generated-architectural-wikis\" rel=\"nofollow\"\u003ehttps://dakota.codes/blog/agent-generated-architectural-wiki...\u003c/a\u003e\u003cp\u003eTed Mosby (the architect) generates documentation where every concept links to exact source code \n(file:line references). Uses RAG with FAISS for semantic search, generates Mermaid \ndiagrams, and includes an automatic verification loop that keeps generating until \nall internal links resolve.\u003cp\u003eBuilt on top of the Claude Agent SDK (using buildanagentworkshop.com) Feedback welcome!! :)\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46570117\"\u003ehttps://news.ycombinator.com/item?id=46570117\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "LLM coding workflow going into 2026",
+      "link": "https://medium.com/@addyosmani/my-llm-coding-workflow-going-into-2026-52fe1681325e",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-10T21:30:30Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://medium.com/@addyosmani/my-llm-coding-workflow-going-into-2026-52fe1681325e\"\u003ehttps://medium.com/@addyosmani/my-llm-coding-workflow-going-into-2026-52fe1681325e\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46570115\"\u003ehttps://news.ycombinator.com/item?id=46570115\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Writing Evals for AI agents",
+      "link": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-10T21:29:08Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents\"\u003ehttps://www.anthropic.com/engineering/demystifying-evals-for-ai-agents\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46570105\"\u003ehttps://news.ycombinator.com/item?id=46570105\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "In software, the code documents the app. In AI, the traces do.",
+      "link": "https://blog.langchain.com/in-software-the-code-documents-the-app-in-ai-the-traces-do/",
+      "source": "LangChain Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-10T17:39:27Z",
+      "description": "\u003cp\u003e\u003cstrong\u003eTL;DR\u003c/strong\u003e\u003c/p\u003e\u003cul\u003e\u003cli\u003e\u003cstrong\u003eIn traditional software, you read the code to understand what the app does - the decision logic lives in your codebase\u003c/strong\u003e\u003c/li\u003e\u003cli\u003e\u003cstrong\u003eIn AI agents, the code is just scaffolding - the actual decision-making happens in the model at runtime\u003c/strong\u003e\u003c/li\u003e\u003cli\u003e\u003cstrong\u003eBecause of this, the source of truth for what\u003c/strong\u003e\u003c/li\u003e\u003c/ul\u003e"
+    }
+  ],
+  "generatedAt": "2026-01-11T07:09:03.931212607+09:00"
+}
