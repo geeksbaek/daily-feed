@@ -1,0 +1,338 @@
+{
+  "date": "2026-01-13",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2026년 1월 12일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** 구글과 애플의 역사적인 AI 공동 성명 발표부터 메타의 원자력 에너지 확보, 그리고 깃허브가 제안하는 새로운 프롬프트 엔지니어링 패러다임까지, 2026년 테크 업계의 지각 변동을 확인하세요.\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### 🤝 구글과 애플, 역사적인 공동 성명 발표 (Joint Statement)\n구글과 애플이 공식 블로그를 통해 공동 성명을 발표했습니다. 구체적인 내용은 '미니멀리스트 AI 발표(Minimalist AI Announcement)'로 묘사되며, 두 거대 기업이 AI 기술 표준 혹은 상호 운용성에 대해 협력하기로 한 것으로 보입니다. 이는 모바일 생태계와 AI 통합에 있어 전례 없는 협력을 의미하며, 실리콘밸리 내 경쟁 구도에 큰 변화를 예고합니다.\n\n\u003e **Key Point:** 양대 모바일 OS 거인이 AI 분야에서 손을 잡았습니다. 이는 단순한 제휴를 넘어, AI 규제 대응 및 생태계 통합을 위한 전략적 '휴전'이자 '동맹'으로 해석됩니다. [^8] [^10] [^24]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. 메타, AI 구동을 위한 6.6GW 원자력 프로젝트 가동\n- **What:** 메타(Meta)가 미국 내 AI 인프라 확장을 위해 최대 6.6기가와트(GW) 규모의 원자력 에너지 프로젝트를 발표했습니다.\n- **Why:** AI 데이터센터의 전력 소비량이 급증함에 따라, 안정적이고 탄소 중립적인 에너지원 확보가 생존의 필수 조건이 되었기 때문입니다.\n- **Impact:** 빅테크 기업들이 단순한 기술 기업을 넘어 '에너지 인프라' 기업으로 변모하고 있음을 보여줍니다. 이는 향후 에너지 시장 가격과 정책에도 직접적인 영향을 미칠 것입니다. [^16]\n\n### 2. 프롬프트 엔지니어링의 진화: '컨텍스트 엔지니어링'\n- **What:** 깃허브(GitHub)가 더 나은 AI 결과를 얻기 위해 '프롬프트'보다 '컨텍스트(Context)' 설계에 집중할 것을 제안했습니다.\n- **Why:** 모델의 성능은 질문(Prompt) 자체보다, 모델이 참조할 수 있는 정보의 맥락(Context)을 얼마나 잘 구조화하느냐에 달려있기 때문입니다.\n- **Impact:** 개발자들은 이제 화려한 프롬프트 작성 기술보다, RAG(검색 증강 생성) 시스템 구축과 데이터 전처리 및 맥락화 능력에 더 집중해야 합니다. [^4]\n\n### 3. 메타의 CSS 확장성 해결책: StyleX\n- **What:** 메타 엔지니어링 팀이 대규모 웹 애플리케이션을 위한 CSS 솔루션 'StyleX'에 대한 심층 분석을 공유했습니다.\n- **Why:** 기존 CSS-in-JS 방식의 런타임 오버헤드를 줄이면서도, 대규모 팀이 충돌 없이 스타일을 관리할 수 있는 시스템이 필요했습니다.\n- **Impact:** 컴포넌트 기반 개발 환경에서 성능 저하 없이 스타일 시스템을 구축하려는 프론트엔드 개발자들에게 새로운 표준(De facto) 후보로 떠오를 전망입니다. [^3]\n\n### 4. 제미나이(Gemini) API, 파일 크기 및 입력 지원 대폭 확대\n- **What:** 구글이 제미나이 API의 파일 업로드 크기 제한을 늘리고, 지원하는 입력 포맷을 확장했습니다.\n- **Why:** 멀티모달 AI 개발 수요가 늘어남에 따라, 개발자들이 더 긴 문서와 고해상도 미디어를 한 번에 처리할 수 있도록 지원하기 위함입니다.\n- **Impact:** AI 애플리케이션이 처리할 수 있는 데이터의 양과 질이 향상되어, 더 복잡한 분석 및 창작 도구 개발이 가능해집니다. [^6] [^9]\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **VS Code Insiders (v1.109)** | 2026년 1월 최신 빌드 업데이트. 새로운 편집 기능 미리보기 제공. [^2] |\n| **Tool** | **Ferrite** | Rust로 제작된 마크다운 편집기. 네이티브 Mermaid 다이어그램 렌더링 지원으로 속도 최적화. [^11] |\n| **Game** | **13KiB Game** | 윈도우, 리눅스, 브라우저에서 모두 실행되는 단일 파일 게임. 극한의 최적화 사례. [^15] |\n| **Lib** | **Hmap** | C언어로 구현된 딕셔너리(Dictionary) 라이브러리. 임베디드나 시스템 프로그래밍에 유용. [^40] |\n| **Tool** | **Superwiser** | 사용자가 Claude Code를 어떻게 제어했는지 기억하여 맞춤형 가이드를 제공하는 플러그인. [^29] |\n| **Infra** | **Atomic Symlink** | macOS에서 URL 기반으로 작동하는 원자적(Atomic) 심볼릭 링크 배포 도구. [^37] |\n| **Paper** | **Erlang JIT** | Erlang 언어의 JIT(Just-In-Time) 컴파일러 도입 과정과 기술적 난관 극복기. [^34] |\n| **Fun** | **River Runner** | 빗방울이 떨어졌을 때 바다까지 흘러가는 경로를 시각화해주는 인터랙티브 지도. [^28] |\n| **Dev** | **M-pesa SDK** | 아프리카 모바일 결제 시스템 M-pesa 연동을 쉽게 만들어주는 자바스크립트 SDK. [^27] |\n| **Retro** | **Mini-IBM PC** | Adafruit 부품을 활용해 제작한 초소형 IBM PC 레플리카 프로젝트. [^33] |\n| **Game** | **Mtetris** | X11/Motif 기반으로 제작된 레트로 스타일 테트리스 게임. [^36] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n\n#### 💻 개발 \u0026 인프라 \u0026 AI\n*   **소프트웨어 엔지니어링의 향후 2년**: AI 도입 가속화에 따른 개발자 직무 변화와 생존 전략에 대한 전망입니다. [^14]\n*   **Anthropic, 경쟁 제품 개발 금지**: Claude Code를 사용하여 경쟁 AI 코딩 도구를 만드는 것을 약관으로 금지했습니다. [^17]\n*   **데이터베이스 트레이드오프 이해하기**: 성능, 가용성, 내구성 간의 균형을 맞추는 DB 선택 프레임워크를 제시합니다. [^31]\n*   **Claude Code 품질 패턴 교육**: 커스텀 스킬을 통해 Claude에게 코드 품질 패턴을 가르치는 방법을 소개합니다. [^32]\n*   **Gentoo Linux 2025 회고**: 대표적인 소스 기반 리눅스 배포판인 젠투의 지난 1년 성과와 업데이트 요약입니다. [^19]\n*   **Mattermost v11 업데이트 논란**: 오픈소스 슬랙 대안인 Mattermost가 무료 버전의 UI 메시지 조회 제한(1만 개)을 강제하여 커뮤니티의 반발을 사고 있습니다. [^35]\n*   **NVIDIA \u0026 Multiply Labs**: 로봇 공학을 활용해 세포 치료제 바이오 제조 공정을 확장하는 혁신 사례입니다. [^41]\n\n#### 💼 비즈니스 \u0026 경제\n*   **Apple 서비스 부문 신기록**: 2025년 애플의 서비스 매출(앱스토어, iCloud 등)이 역대 최고치를 경신했습니다. [^1]\n*   **Google Display \u0026 Video 360**: 라이브 스포츠 중계 광고를 위한 새로운 입찰 기능이 추가되었습니다. [^7]\n*   **집을 살 것인가, 빌릴 것인가?**: 2026년 경제 상황에서 주택 매매와 임대의 유불리를 분석한 이코노미스트 기사입니다. [^22]\n\n#### 🧪 과학 \u0026 바이오\n*   **은하계 생명체 존재 확률**: 은하계에서 가장 흔한 별 주위를 도는 행성에는 복잡한 생명체가 존재하기 어려울 수 있다는 연구 결과입니다. [^25]\n*   **시력을 되찾은 혁신적 눈 주사**: 세계 최초로 안구 주사를 통해 시력을 회복한 환자의 사례가 BBC에 보도되었습니다. [^39]\n*   **자폐 아들을 위한 AI 노래**: AI를 활용해 자폐 스펙트럼을 가진 아들에 대한 노래를 만든 감동적인 사연입니다. [^38]\n\n#### 🗣️ 문화 \u0026 커뮤니티 \u0026 기타\n*   **Google 검색, 미국 250주년 기념**: 구글 검색에 미국 건국 250주년을 기념하는 이스터에그가 추가되었습니다. [^5]\n*   **내 집 광섬유 네트워크 분해기**: 가정용 광섬유 네트워크 장비를 문자 그대로 분해하며 하드웨어를 탐구한 흥미로운 글입니다. [^13]\n*   **현재 작업 중인 것은? (2026년 1월)**: 개발자 커뮤니티 GeekNews 회원들의 현재 프로젝트를 공유하는 월간 스레드입니다. [^12]\n*   **클린 랭귀지(Clean Language)**: 정체된 개인과 팀을 움직이게 하는 소통 기술에 대한 Q\u0026A입니다. [^18]\n*   **미미로그(Mimilog)**: 외국어 학습 동기 부여를 위한 새로운 앱 서비스가 소개되었습니다. [^20]\n*   **잘 관리된 커뮤니티 찾기**: Hacker News 유저들이 질 좋은 토론이 오가는 온라인 커뮤니티를 찾는 방법에 대해 논의합니다. [^21]\n*   **디자인으로서의 프롬프팅**: 프롬프트 작성을 단순 기술이 아닌 디자인 프로세스의 일환으로 보는 시각을 제시합니다. [^23]\n*   **분열생성(Schismogenesis)**: 사회 집단이 서로를 차별화하기 위해 행동 양식을 정의하는 인류학적 개념에 대한 위키피디아 링크입니다. [^26]\n*   **공동체를 파괴하는 8가지 방법**: 의도치 않게 커뮤니티나 공동체를 망가뜨리는 흔한 실수들을 풍자적으로 분석했습니다. [^30]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘 가장 눈에 띄는 것은 단연 **구글과 애플의 공동 성명**입니다. 모바일 OS와 AI 생태계를 양분하던 두 거인이 손을 잡았다는 것은, AI 기술이 이제 '경쟁' 단계를 넘어 '표준화'와 '인프라' 단계로 진입했음을 시사합니다. 한편, 메타의 원자력 프로젝트는 AI가 디지털 세계를 넘어 물리적 에너지 시장까지 뒤흔들고 있음을 보여줍니다. 개발자 여러분은 깃허브의 조언처럼 '프롬프트 깎기'를 넘어 '컨텍스트 설계자'로 거듭날 준비를 하셔야겠습니다.\n\n---\n\n### Footnotes\n[^1]: 2025 marked a record-breaking year for Apple services - https://www.apple.com/newsroom/2026/01/2025-marked-a-record-breaking-year-for-apple-services/\n[^2]: January 2026 Insiders (version 1.109) - https://code.visualstudio.com/updates/v1_109\n[^3]: CSS at Scale With StyleX - https://engineering.fb.com/2026/01/12/web/css-at-scale-with-stylex/\n[^4]: Want better AI outputs? Try context engineering. - https://github.blog/ai-and-ml/generative-ai/want-better-ai-outputs-try-context-engineering/\n[^5]: Google Search is celebrating 250 years of America. - https://blog.google/products-and-platforms/products/search/americas-250th-search-easter-egg/\n[^6]: Increased file size limits and expanded inputs support in Gemini API - https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-new-file-limits/\n[^7]: New biddable capabilities for live sports with Display \u0026 Video 360 - https://blog.google/products/marketingplatform/360/new-biddable-capabilities-for-live-sports-with-display-video-360/\n[^8]: Joint statement from Google and Apple - https://blog.google/company-news/inside-google/company-announcements/joint-statement-google-apple/\n[^9]: Increased file size limits and expanded inputs support in Gemini API - https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-new-file-limits/\n[^10]: Joint statement from Google and Apple - https://blog.google/company-news/inside-google/company-announcements/joint-statement-google-apple/\n[^11]: Ferrite – Rust로 제작된 네이티브 Mermaid 다이어그램 렌더링 지원 Markdown 편집기 - https://news.hada.io/topic?id=25772\n[^12]: 현재 작업 중인 것은 무엇입니까? (2026년 1월) - https://news.hada.io/topic?id=25771\n[^13]: 내 집 광섬유 네트워크가 문자 그대로 분해되었다 - https://news.hada.io/topic?id=25770\n[^14]: 소프트웨어 엔지니어링의 향후 2년 - https://news.hada.io/topic?id=25769\n[^15]: 이 게임은 Windows, Linux, 브라우저에서 실행되는 단일 13KiB 파일임 - https://news.hada.io/topic?id=25768\n[^16]: 메타, 미국 AI 혁신을 위한 최대 6.6GW 규모의 원자력 에너지 프로젝트 발표 - https://news.hada.io/topic?id=25767\n[^17]: Anthropic: Claude Code를 이용해 Claude Code 경쟁 제품을 개발하는 행위 금지 - https://news.hada.io/topic?id=25766\n[^18]: Ask GN: 클린 랭귀지- 정체된 개인과, 팀을 움직이는 결정적 기술 - https://news.hada.io/topic?id=25765\n[^19]: Gentoo Linux 2025 회고 - https://news.hada.io/topic?id=25764\n[^20]: Show GN: [외국어 배우기] 오늘을 그냥 넘기고 싶지 않을 때, 미미로그 - https://news.hada.io/topic?id=25762\n[^21]: Ask HN: How do you find well-moderated communities - https://news.ycombinator.com/item?id=46594856\n[^22]: Is it better to rent or buy? - https://www.economist.com/finance-and-economics/2026/01/07/is-it-better-to-rent-or-buy\n[^23]: Prompting as Design - https://substack.com/inbox/post/184360602\n[^24]: Apple and Google's Minimalist AI Announcement Is a Flex - https://www.siliconsnark.com/apple-and-googles-minimalist-ai-announcement-is-a-flex/\n[^25]: Complex life on planets orbiting the galaxy's most common stars may be unlikely - https://phys.org/news/2026-01-complex-life-planets-orbiting-galaxy.html\n[^26]: Schismogenesis - https://en.wikipedia.org/wiki/Schismogenesis\n[^27]: I built an SDK to make M-pesa integration easy - https://payments-js.singularity.co.ke/\n[^28]: River Runner - https://river-runner.samlearner.com/\n[^29]: Show HN: Superwiser -- A plugin that remembers how you steer Claude Code - https://github.com/mu4farooqi/superwiser\n[^30]: How to Kill a Commune in 8 Easy Steps - https://supernuclear.substack.com/p/how-to-kill-a-commune-in-8-easy-steps\n[^31]: Understanding databases tradeoffs in performance, availability and durability - https://www.bitsxpages.com/p/frameworks-for-understanding-databases\n[^32]: Teaching Claude Code Quality Patterns with a Custom Skill - https://pydevtools.com/blog/dignified-python-313-claude-skill/\n[^33]: A Mini-IBM PC Using an Adafruit Fruit Jam - https://adafruit-playground.com/u/AnneBarela/pages/a-mini-ibm-pc-using-an-adafruit-fruit-jam\n[^34]: The Road to the Erlang JIT - https://www.erlang.org/blog/the-road-to-the-jit/\n[^35]: Tell HN: Mattermost \"upgrade\" to v11 enforces 10k UI message limit - https://news.ycombinator.com/item?id=46594673\n[^36]: Mtetris: Tetris-Like Game in X11/Motif - http://codefromabove.com/2025/08/mtetris-tetris-like-game-in-x11-motif/\n[^37]: Show HN: Atomic symlink deployments that work on macOS URL - https://github.com/mojoatomic/atomic-deployments\n[^38]: AI generated song about my son who has autism - https://open.spotify.com/album/1BGfJSTjSQJkkxv4gJEK2z\n[^39]: Revolutionary eye injection saved my sight, says first-ever patient - https://www.bbc.com/news/articles/c89qyv98lzdo\n[^40]: Hmap –- Dictionary Library in C - https://github.com/cecinuga/hmap\n[^41]: AI’s Next Revolution: Multiply Labs Is Scaling Robotics-Driven Cell Therapy Biomanufacturing Labs - https://blogs.nvidia.com/blog/multiply-labs-isaac-omniverse/\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **2025 marked a record-breaking year for Apple services\n**\n   - 출처: Apple Newsroom\n   - 링크: https://www.apple.com/newsroom/2026/01/2025-marked-a-record-breaking-year-for-apple-services/\n\n2. **January 2026 Insiders (version 1.109)**\n   - 출처: Visual Studio Code - Code Editing. Redefined.\n   - 링크: https://code.visualstudio.com/updates/v1_109\n\n3. **CSS at Scale With StyleX**\n   - 출처: Meta Engineering\n   - 링크: https://engineering.fb.com/2026/01/12/web/css-at-scale-with-stylex/\n\n4. **Want better AI outputs? Try context engineering.**\n   - 출처: GitHub Blog\n   - 링크: https://github.blog/ai-and-ml/generative-ai/want-better-ai-outputs-try-context-engineering/\n\n5. **Google Search is celebrating 250 years of America.**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/products-and-platforms/products/search/americas-250th-search-easter-egg/\n\n6. **Increased file size limits and expanded inputs support in Gemini API**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-new-file-limits/\n\n7. **New biddable capabilities for live sports with Display \u0026 Video 360**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/products/marketingplatform/360/new-biddable-capabilities-for-live-sports-with-display-video-360/\n\n8. **Joint statement from Google and Apple**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/company-news/inside-google/company-announcements/joint-statement-google-apple/\n\n9. **Increased file size limits and expanded inputs support in Gemini API**\n   - 출처: Gemini\n   - 링크: https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-new-file-limits/\n\n10. **Joint statement from Google and Apple**\n   - 출처: Gemini\n   - 링크: https://blog.google/company-news/inside-google/company-announcements/joint-statement-google-apple/\n\n11. **Ferrite – Rust로 제작된 네이티브 Mermaid 다이어그램 렌더링 지원 Markdown 편집기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25772\n\n12. **현재 작업 중인 것은 무엇입니까? (2026년 1월)**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25771\n\n13. **내 집 광섬유 네트워크가 문자 그대로 분해되었다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25770\n\n14. **소프트웨어 엔지니어링의 향후 2년**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25769\n\n15. **이 게임은 Windows, Linux, 브라우저에서 실행되는 단일 13KiB 파일임**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25768\n\n16. **메타, 미국 AI 혁신을 위한 최대 6.6GW 규모의 원자력 에너지 프로젝트 발표**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25767\n\n17. **Anthropic: Claude Code를 이용해 Claude Code 경쟁 제품을 개발하는 행위 금지**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25766\n\n18. **Ask GN: 클린 랭귀지- 정체된 개인과, 팀을 움직이는 결정적 기술**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25765\n\n19. **Gentoo Linux 2025 회고**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25764\n\n20. **Show GN: [외국어 배우기] 오늘을 그냥 넘기고 싶지 않을 때, 미미로그**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25762\n\n21. **Ask HN: How do you find well-moderated communities**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=46594856\n\n22. **Is it better to rent or buy?**\n   - 출처: Hacker News\n   - 링크: https://www.economist.com/finance-and-economics/2026/01/07/is-it-better-to-rent-or-buy\n\n23. **Prompting as Design**\n   - 출처: Hacker News\n   - 링크: https://substack.com/inbox/post/184360602\n\n24. **Apple and Google's Minimalist AI Announcement Is a Flex**\n   - 출처: Hacker News\n   - 링크: https://www.siliconsnark.com/apple-and-googles-minimalist-ai-announcement-is-a-flex/\n\n25. **Complex life on planets orbiting the galaxy's most common stars may be unlikely**\n   - 출처: Hacker News\n   - 링크: https://phys.org/news/2026-01-complex-life-planets-orbiting-galaxy.html\n\n26. **Schismogenesis**\n   - 출처: Hacker News\n   - 링크: https://en.wikipedia.org/wiki/Schismogenesis\n\n27. **I built an SDK to make M-pesa integration easy**\n   - 출처: Hacker News\n   - 링크: https://payments-js.singularity.co.ke/\n\n28. **River Runner**\n   - 출처: Hacker News\n   - 링크: https://river-runner.samlearner.com/\n\n29. **Show HN: Superwiser -- A plugin that remembers how you steer Claude Code**\n   - 출처: Hacker News\n   - 링크: https://github.com/mu4farooqi/superwiser\n\n30. **How to Kill a Commune in 8 Easy Steps**\n   - 출처: Hacker News\n   - 링크: https://supernuclear.substack.com/p/how-to-kill-a-commune-in-8-easy-steps\n\n31. **Understanding databases tradeoffs in performance, availability and durability**\n   - 출처: Hacker News\n   - 링크: https://www.bitsxpages.com/p/frameworks-for-understanding-databases\n\n32. **Teaching Claude Code Quality Patterns with a Custom Skill**\n   - 출처: Hacker News\n   - 링크: https://pydevtools.com/blog/dignified-python-313-claude-skill/\n\n33. **A Mini-IBM PC Using an Adafruit Fruit Jam**\n   - 출처: Hacker News\n   - 링크: https://adafruit-playground.com/u/AnneBarela/pages/a-mini-ibm-pc-using-an-adafruit-fruit-jam\n\n34. **The Road to the Erlang JIT**\n   - 출처: Hacker News\n   - 링크: https://www.erlang.org/blog/the-road-to-the-jit/\n\n35. **Tell HN: Mattermost \"upgrade\" to v11 enforces 10k UI message limit**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=46594673\n\n36. **Mtetris: Tetris-Like Game in X11/Motif**\n   - 출처: Hacker News\n   - 링크: http://codefromabove.com/2025/08/mtetris-tetris-like-game-in-x11-motif/\n\n37. **Show HN: Atomic symlink deployments that work on macOS URL**\n   - 출처: Hacker News\n   - 링크: https://github.com/mojoatomic/atomic-deployments\n\n38. **AI generated song about my son who has autism**\n   - 출처: Hacker News\n   - 링크: https://open.spotify.com/album/1BGfJSTjSQJkkxv4gJEK2z\n\n39. **Revolutionary eye injection saved my sight, says first-ever patient**\n   - 출처: Hacker News\n   - 링크: https://www.bbc.com/news/articles/c89qyv98lzdo\n\n40. **Hmap –- Dictionary Library in C**\n   - 출처: Hacker News\n   - 링크: https://github.com/cecinuga/hmap\n\n41. **AI’s Next Revolution: Multiply Labs Is Scaling Robotics-Driven Cell Therapy Biomanufacturing Labs**\n   - 출처: NVIDIA Blog\n   - 링크: https://blogs.nvidia.com/blog/multiply-labs-isaac-omniverse/\n\n\n",
+  "articles": [
+    {
+      "title": "2025 marked a record-breaking year for Apple services\n",
+      "link": "https://www.apple.com/newsroom/2026/01/2025-marked-a-record-breaking-year-for-apple-services/",
+      "source": "Apple Newsroom",
+      "category": "tech",
+      "publishedAt": "2026-01-12T13:58:28.857Z",
+      "description": "2025 was a record-breaking year for Apple services, marked by unprecedented growth, global expansion, and continuous innovation."
+    },
+    {
+      "title": "January 2026 Insiders (version 1.109)",
+      "link": "https://code.visualstudio.com/updates/v1_109",
+      "source": "Visual Studio Code - Code Editing. Redefined.",
+      "category": "tech",
+      "publishedAt": "2026-02-04T17:00:00Z",
+      "description": "\n      \u003cp\u003eLearn what is new in the Visual Studio Code January 2026 Release (1.109).\u003c/p\u003e\n      \u003cp\u003e\u003ca href=\"https://code.visualstudio.com/updates/v1_109\"\u003eRead the full article\u003c/a\u003e\u003c/p\u003e\n    "
+    },
+    {
+      "title": "CSS at Scale With StyleX",
+      "link": "https://engineering.fb.com/2026/01/12/web/css-at-scale-with-stylex/",
+      "source": "Meta Engineering",
+      "category": "tech",
+      "publishedAt": "2026-01-12T18:34:59Z",
+      "description": "\u003cp\u003eBuild a large enough website with a large enough codebase, and you’ll eventually find that CSS presents challenges at scale. It’s no different at Meta, which is why we open-sourced StyleX, a solution for CSS at scale. StyleX combines the ergonomics of CSS-in-JS with the performance of static CSS. It allows atomic styling of components [...]\u003c/p\u003e\n\u003cp\u003e\u003ca class=\"btn btn-secondary understrap-read-more-link\" href=\"https://engineering.fb.com/2026/01/12/web/css-at-scale-with-stylex/\"\u003eRead More...\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eThe post \u003ca rel=\"nofollow\" href=\"https://engineering.fb.com/2026/01/12/web/css-at-scale-with-stylex/\"\u003eCSS at Scale With StyleX\u003c/a\u003e appeared first on \u003ca rel=\"nofollow\" href=\"https://engineering.fb.com\"\u003eEngineering at Meta\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Want better AI outputs? Try context engineering.",
+      "link": "https://github.blog/ai-and-ml/generative-ai/want-better-ai-outputs-try-context-engineering/",
+      "source": "GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-12T17:00:00Z",
+      "description": "\u003cp\u003eLearn how custom instructions, reusable prompts, and custom agents help GitHub Copilot deliver more accurate results.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/ai-and-ml/generative-ai/want-better-ai-outputs-try-context-engineering/\"\u003eWant better AI outputs? Try context engineering.\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Google Search is celebrating 250 years of America.",
+      "link": "https://blog.google/products-and-platforms/products/search/americas-250th-search-easter-egg/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-12T17:30:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/America250EasterEgg_Social.max-600x600.format-webp.webp\"\u003e2026 marks the 250th anniversary of America’s independence. To help kick things off, we’re launching a fun surprise in Search.Starting today, you’ll see a special animat…"
+    },
+    {
+      "title": "Increased file size limits and expanded inputs support in Gemini API",
+      "link": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-new-file-limits/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-12T17:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/GeminiAPI-File_Input_Expan_Keyw.max-600x600.format-webp.webp\"\u003eThe Gemini API now supports increased inline file size limit of 100MB and new file inputs from GCS buckets and any HTTP/Signed URL."
+    },
+    {
+      "title": "New biddable capabilities for live sports with Display \u0026 Video 360",
+      "link": "https://blog.google/products/marketingplatform/360/new-biddable-capabilities-for-live-sports-with-display-video-360/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-12T16:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_NBCU_Winter_Olympics_thu.max-600x600.format-webp_xbNKNzh.webp\"\u003eA look at the latest features to help brands connect with customers in a busy year for live sports."
+    },
+    {
+      "title": "Joint statement from Google and Apple",
+      "link": "https://blog.google/company-news/inside-google/company-announcements/joint-statement-google-apple/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-12T11:33:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/3_SocialShare_gradient.max-600x600.format-webp.webp\"\u003eApple and Google have entered into a multi-year collaboration under which the next generation of Apple Foundation Models will be based on Google's Gemini models and clou…"
+    },
+    {
+      "title": "Increased file size limits and expanded inputs support in Gemini API",
+      "link": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-new-file-limits/",
+      "source": "Gemini",
+      "category": "tech",
+      "publishedAt": "2026-01-12T17:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/GeminiAPI-File_Input_Expan_Keyw.max-600x600.format-webp.webp\"\u003eThe Gemini API now supports increased inline file size limit of 100MB and new file inputs from GCS buckets and any HTTP/Signed URL."
+    },
+    {
+      "title": "Joint statement from Google and Apple",
+      "link": "https://blog.google/company-news/inside-google/company-announcements/joint-statement-google-apple/",
+      "source": "Gemini",
+      "category": "tech",
+      "publishedAt": "2026-01-12T11:33:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/3_SocialShare_gradient.max-600x600.format-webp.webp\"\u003eApple and Google have entered into a multi-year collaboration under which the next generation of Apple Foundation Models will be based on Google's Gemini models and clou…"
+    },
+    {
+      "title": "Ferrite – Rust로 제작된 네이티브 Mermaid 다이어그램 렌더링 지원 Markdown 편집기",
+      "link": "https://news.hada.io/topic?id=25772",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-13T03:42:45+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eFerrite\u003c/strong\u003e는 Markdown, JSON, YAML, TOML 파일을 빠르고 가볍게 편집할 수 있는 \u003cstrong\u003eRust 기반 텍스트 에디터\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eegui 프레임워크\u003c/strong\u003e를 사용해 네이티브 수준의 반응성과 크로스플랫폼 실행 환경을 제공\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eWYSIWYG 미리보기\u003c/strong\u003e, \u003cst...\u003c/p\u003e"
+    },
+    {
+      "title": "현재 작업 중인 것은 무엇입니까? (2026년 1월)",
+      "link": "https://news.hada.io/topic?id=25771",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-13T03:39:45+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eHacker News 커뮤니티\u003c/strong\u003e가 매달 진행하는 공개 토론 스레드로, 사용자들이 자신이 개발 중인 프로젝트나 아이디어를 공유함\u003c/li\u003e\n\u003cli\u003e참여자들은 \u003cstrong\u003e스타트업, 오픈소스, 개인 개발, 연구 프로젝트\u003c/strong\u003e 등 다양한 분야의 진행 상황을 소개함\u003c/li\u003e\n\u003cli\u003e댓글을 통해 \u003cstrong\u003e기술 스택...\u003c/p\u003e"
+    },
+    {
+      "title": "내 집 광섬유 네트워크가 문자 그대로 분해되었다",
+      "link": "https://news.hada.io/topic?id=25770",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-13T03:36:45+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e주택 내부에 매설된 \u003cstrong\u003e광섬유 케이블이 손으로 만지자 부서지고 금속선이 튀어나오는 등 물리적으로 붕괴된 사례\u003c/strong\u003e가 발생\u003c/li\u003e\n\u003cli\u003e케이블은 \u003cstrong\u003eFS.com에서 구매한 군용 등급(armoured) 제품\u003c/strong\u003e으로, 약 3년 반 전 설치되어 \u003cstrong\u003ePVC 배관을 통해 시멘트 바닥 아래에 매설\u003c/strong...\u003c/p\u003e"
+    },
+    {
+      "title": "소프트웨어 엔지니어링의 향후 2년",
+      "link": "https://news.hada.io/topic?id=25769",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-13T02:33:51+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eAI 코딩 에이전트의 확산\u003c/strong\u003e으로 개발 방식이 급격히 변화하며, 기업은 성장보다 \u003cstrong\u003e효율성과 숙련 인력 중심의 구조\u003c/strong\u003e로 전환 중\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e주니어 개발자 채용 감소\u003c/strong\u003e와 \u003cstrong\u003eAI 보조를 전제로 한 새로운 역할 구조\u003c/strong\u003e가 병존하며, 생존 전략의 재정의 필...\u003c/p\u003e"
+    },
+    {
+      "title": "이 게임은 Windows, Linux, 브라우저에서 실행되는 단일 13KiB 파일임",
+      "link": "https://news.hada.io/topic?id=25768",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-13T01:33:08+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e13KiB 크기의 단일 파일\u003c/strong\u003e로 Windows, Linux, 브라우저에서 모두 실행되는 \u003cstrong\u003eSnake 게임\u003c/strong\u003e으로, 세 플랫폼을 하나의 소스에서 지원\u003c/li\u003e\n\u003cli\u003e뱀을 조작해 먹이를 먹고 벽에 부딪히지 않도록 하는 \u003cstrong\u003e고전적인 Snake 규칙\u003c/strong\u003e을 따르며, 점수·레벨·미로 구조가 포함됨...\u003c/p\u003e"
+    },
+    {
+      "title": "메타, 미국 AI 혁신을 위한 최대 6.6GW 규모의 원자력 에너지 프로젝트 발표",
+      "link": "https://news.hada.io/topic?id=25767",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-13T00:33:55+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e메타가 \u003cstrong\u003eVistra, TerraPower, Oklo\u003c/strong\u003e와의 협약을 통해 기존 원전의 수명 연장과 차세대 원자로 개발을 추진하며, 최대 \u003cstrong\u003e6.6GW의 청정 전력\u003c/strong\u003e을 확보\u003c/li\u003e\n\u003cli\u003e이 협약은 \u003cstrong\u003e미국 내 원자력 인프라 강화\u003c/strong\u003e와 \u003cstrong\u003eAI 산업 전력 수요 대응\u003c/strong\u003e을 목표로 하며, 오...\u003c/p\u003e"
+    },
+    {
+      "title": "Anthropic: Claude Code를 이용해 Claude Code 경쟁 제품을 개발하는 행위 금지",
+      "link": "https://news.hada.io/topic?id=25766",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-12T22:32:56+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eAnthropic\u003c/strong\u003e이 자사 \u003cstrong\u003eClaude Code\u003c/strong\u003e를 사용해 경쟁 코드를 만드는 것을 금지함\u003c/li\u003e\n\u003cli\u003e이 제한은 \u003cstrong\u003eClaude Code의 이용 약관\u003c/strong\u003e에 명시된 조항으로 언급됨\u003c/li\u003e\n\u003cli\u003e사용자는 Claude Code를 활용해 \u003cstrong\u003e유사한 코드 생성 AI\u003c/strong\u003e를 개발할 수 없음\u003c/li\u003e\n...\u003c/p\u003e"
+    },
+    {
+      "title": "Ask GN: 클린 랭귀지- 정체된 개인과, 팀을 움직이는 결정적 기술",
+      "link": "https://news.hada.io/topic?id=25765",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-12T22:07:05+09:00",
+      "description": "\u003ch4\u003e클린 랭귀지: 정체된 개인과 팀을 움직이는 결정적 기술 – 핵심 정리\u003c/h4\u003e\n\u003cp\u003e이 글은 업무 소통이 막히는 진짜 이유가 \u003cstrong\u003e의사소통 기술 부족\u003c/strong\u003e이 아니라, 우리가 \u003cstrong\u003e말하지 않은 빈칸을 너무 빨리 해석과 판단으로 채워버리는 습관\u003c/strong\u003e에 있음을 짚는다. 저자는 이 정체를 풀어내는 핵심 개...\u003c/p\u003e"
+    },
+    {
+      "title": "Gentoo Linux 2025 회고",
+      "link": "https://news.hada.io/topic?id=25764",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-12T21:33:14+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e2025년 Gentoo Linux는 \u003cstrong\u003e새 개발자 영입, 패키지 확장, 빌드 인프라 개선\u003c/strong\u003e 등 다양한 변화를 진행\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eEAPI 9 도입\u003c/strong\u003e, \u003cstrong\u003eCodeberg로의 이전 계획\u003c/strong\u003e, \u003cstrong\u003eWSL용 이미지 제공\u003c/strong\u003e, \u003cstrong\u003eRust·Ada·D 부트스트랩 개선\u003c/strong\u003e 등 주요 기술 업데이트...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: [외국어 배우기] 오늘을 그냥 넘기고 싶지 않을 때, 미미로그",
+      "link": "https://news.hada.io/topic?id=25762",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-12T20:15:02+09:00",
+      "description": "\u003cp\u003e미미로그는 하루 100자 이내의 가벼운 로그를 쓰면 AI가 내 이야기를 기반으로 외국어 학습 콘텐츠를 만들어주는 앱입니다.\u003c/p\u003e\n\u003cp\u003e왜 만들었나요?\u003c/p\u003e\n\u003cp\u003e오늘 하루도 그냥 지나가는 게 아쉬웠습니다. 뭔가 남기고 싶은데 일기는 부담스럽고, 외국어 공부는 매번 작심삼일. 그래서 생각했습니다 — 한 줄이라도 쓰면"
+    },
+    {
+      "title": "Ask HN: How do you find well-moderated communities",
+      "link": "https://news.ycombinator.com/item?id=46594856",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-12T21:58:12Z",
+      "description": "\n\u003cp\u003eI started using internet many years ago and it felt vast, with unlimited amount of novel ideas to discover. Now it feels like 90% (speculative number) of online discourse happens on relatively few platforms like Facebook, a site formerly known as Twitter, TikTok, Reddit, and Discord. Most platforms have become slop stores. Reddit is still half-decent but increasingly overrun by bot traffic. Discord communities have no real discovery mechanism and it is concentrated only on present and forces users to follow what's the hot topic right now.\u003cp\u003eThe bot problem is huge because they shape opinions and often are very good at staying undetected by non-expert users.\u003cp\u003eHN remains one of the few places where, despite its size, moderation has kept the high bar of quality. I can respect a contrary opinion here because I trust an actual person wrote it after genuine thought.\u003cp\u003eA few years ago I predicted that as bots flood open platforms, people would retreat into smaller, closed communities sized by their capacity to moderate effectively. Although back then it was based on nothing else but a gut feeling, today I already see for myself that it seems to be happening. But this creates a discovery problem: how do you find these places? And there is a tension that healthy communities need fresh members and perspectives but growth makes moderation harder.\u003cp\u003eHow do you find communities with HN-level discourse quality? I am not asking about niche specialist communities but this balanced discussion on a wide variety of topics, not only tech. Also please share your thoughts regarding my prediction about \"walled-garden\" communities and do you think my prediction is correct?\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46594856\"\u003ehttps://news.ycombinator.com/item?id=46594856\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Is it better to rent or buy?",
+      "link": "https://www.economist.com/finance-and-economics/2026/01/07/is-it-better-to-rent-or-buy",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-12T21:57:05Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.economist.com/finance-and-economics/2026/01/07/is-it-better-to-rent-or-buy\"\u003ehttps://www.economist.com/finance-and-economics/2026/01/07/is-it-better-to-rent-or-buy\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46594847\"\u003ehttps://news.ycombinator.com/item?id=46594847\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Prompting as Design",
+      "link": "https://substack.com/inbox/post/184360602",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-12T21:56:44Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://substack.com/inbox/post/184360602\"\u003ehttps://substack.com/inbox/post/184360602\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46594844\"\u003ehttps://news.ycombinator.com/item?id=46594844\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Apple and Google's Minimalist AI Announcement Is a Flex",
+      "link": "https://www.siliconsnark.com/apple-and-googles-minimalist-ai-announcement-is-a-flex/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-12T21:53:44Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.siliconsnark.com/apple-and-googles-minimalist-ai-announcement-is-a-flex/\"\u003ehttps://www.siliconsnark.com/apple-and-googles-minimalist-ai-announcement-is-a-flex/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46594807\"\u003ehttps://news.ycombinator.com/item?id=46594807\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Complex life on planets orbiting the galaxy's most common stars may be unlikely",
+      "link": "https://phys.org/news/2026-01-complex-life-planets-orbiting-galaxy.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-12T21:51:36Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://phys.org/news/2026-01-complex-life-planets-orbiting-galaxy.html\"\u003ehttps://phys.org/news/2026-01-complex-life-planets-orbiting-galaxy.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46594775\"\u003ehttps://news.ycombinator.com/item?id=46594775\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Schismogenesis",
+      "link": "https://en.wikipedia.org/wiki/Schismogenesis",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-12T21:48:44Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://en.wikipedia.org/wiki/Schismogenesis\"\u003ehttps://en.wikipedia.org/wiki/Schismogenesis\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46594746\"\u003ehttps://news.ycombinator.com/item?id=46594746\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "I built an SDK to make M-pesa integration easy",
+      "link": "https://payments-js.singularity.co.ke/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-12T21:46:43Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://payments-js.singularity.co.ke/\"\u003ehttps://payments-js.singularity.co.ke/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46594725\"\u003ehttps://news.ycombinator.com/item?id=46594725\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "River Runner",
+      "link": "https://river-runner.samlearner.com/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-12T21:46:36Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://river-runner.samlearner.com/\"\u003ehttps://river-runner.samlearner.com/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46594722\"\u003ehttps://news.ycombinator.com/item?id=46594722\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Superwiser -- A plugin that remembers how you steer Claude Code",
+      "link": "https://github.com/mu4farooqi/superwiser",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-12T21:46:13Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/mu4farooqi/superwiser\"\u003ehttps://github.com/mu4farooqi/superwiser\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46594717\"\u003ehttps://news.ycombinator.com/item?id=46594717\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "How to Kill a Commune in 8 Easy Steps",
+      "link": "https://supernuclear.substack.com/p/how-to-kill-a-commune-in-8-easy-steps",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-12T21:44:43Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://supernuclear.substack.com/p/how-to-kill-a-commune-in-8-easy-steps\"\u003ehttps://supernuclear.substack.com/p/how-to-kill-a-commune-in-8-easy-steps\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46594702\"\u003ehttps://news.ycombinator.com/item?id=46594702\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Understanding databases tradeoffs in performance, availability and durability",
+      "link": "https://www.bitsxpages.com/p/frameworks-for-understanding-databases",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-12T21:44:32Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.bitsxpages.com/p/frameworks-for-understanding-databases\"\u003ehttps://www.bitsxpages.com/p/frameworks-for-understanding-databases\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46594701\"\u003ehttps://news.ycombinator.com/item?id=46594701\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Teaching Claude Code Quality Patterns with a Custom Skill",
+      "link": "https://pydevtools.com/blog/dignified-python-313-claude-skill/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-12T21:44:00Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://pydevtools.com/blog/dignified-python-313-claude-skill/\"\u003ehttps://pydevtools.com/blog/dignified-python-313-claude-skill/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46594696\"\u003ehttps://news.ycombinator.com/item?id=46594696\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "A Mini-IBM PC Using an Adafruit Fruit Jam",
+      "link": "https://adafruit-playground.com/u/AnneBarela/pages/a-mini-ibm-pc-using-an-adafruit-fruit-jam",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-12T21:43:42Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://adafruit-playground.com/u/AnneBarela/pages/a-mini-ibm-pc-using-an-adafruit-fruit-jam\"\u003ehttps://adafruit-playground.com/u/AnneBarela/pages/a-mini-ibm-pc-using-an-adafruit-fruit-jam\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46594691\"\u003ehttps://news.ycombinator.com/item?id=46594691\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Road to the Erlang JIT",
+      "link": "https://www.erlang.org/blog/the-road-to-the-jit/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-12T21:42:02Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.erlang.org/blog/the-road-to-the-jit/\"\u003ehttps://www.erlang.org/blog/the-road-to-the-jit/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46594677\"\u003ehttps://news.ycombinator.com/item?id=46594677\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Tell HN: Mattermost \"upgrade\" to v11 enforces 10k UI message limit",
+      "link": "https://news.ycombinator.com/item?id=46594673",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-12T21:41:42Z",
+      "description": "\n\u003cp\u003eI've self-hosted Mattermost since 2019 (originally to escape Slack’s retention limits for family chat; logistics, photos, random history). It was a huge hurdle getting them all on Slack, and then moving them again to Mattermost.\u003cp\u003eThis morning, I upgraded our long-running Omnibus install from v10.9.1 → v11, following Mattermost's explicit deprecation notice[0] and recommendation to switch to standard Binary/Docker/k8s/etc deployment.\u003cp\u003eUpgrade went cleanly:\u003cp\u003ePostgres migration fine\nData still present in DB\nService came back up in minutes\u003cp\u003ePost-restart the UI shows:\n“10,000-message limit reached. Messages sent before May 16, 2023 are hidden.”\nClarification: no DELETE FROM anywhere. All rows still in PostgreSQL. The limit is UI/view-layer only, retroactively applied after \"upgrade\".\u003cp\u003eChecked beforehand:\u003cp\u003e- Omnibus deprecation announcement [0]\n- v11 upgrade guide [4]\n- Admin console nags/links\u003cp\u003eNone mentioned that an in-place upgrade would activate hard visibility caps on pre-existing data. First indication was the running instance after restart.\u003cp\u003eCurrently (as of 2026-01-12_1337):\u003cp\u003e- https://mattermost.com/pl/mattermost-entry-limits (In-App Link to Limits) [1] 404s (Page not found)\n- https://mattermost.com/pricing/ (also an in-app link) [2] only has “Contact Sales”, no enumerated limits (or prices).\n- https://docs.mattermost.com/administration-guide/manage/product-limits.html [3], used Kagi to find this, no mention of message limits\u003cp\u003eI'm happy to pay for supported software. The friction is the surprise enforcement on self-hosted + self-managed DB. Upgrade path quietly turned history into a licensed feature without forewarning in the upgrade docs.\u003cp\u003eFor now:\u003cp\u003eWe're leaving the v11 instance up (secure, current messages flow normally). The system console and dashboard aren't loading correctly, possibly due to the message limits, possibly due to other issues.\u003cp\u003eI'm thinking some sort of rsync + static HTML archive of current visible history + DB dump for offline search. I'm afraid future policy changes could further gate access, and would love recommendations.\u003cp\u003ePosting mostly as warning to other long-running Omnibus users (small groups, families, hobby servers) who are about to upgrade and may not expect the view limit to kick in retroactively.\u003cp\u003eIf your install predates the limit introduction and has \u003e10k messages, test upgrade in staging first—or assume the docs are incomplete on enforcement timing. Don't expect to get help in the forum [5], the last post (before mine today) is from October 2025 and the moderator directed to the Gitlab Omnibus thread which doesn't provide details on message limits or answer the other questions.\u003cp\u003eCurious if others hit surprises on the v11 \"upgrade\", and if anyone has any suggestions.\u003cp\u003e[0] https://github.com/mattermost/mattermost-omnibus\n[1] https://mattermost.com/pl/mattermost-entry-limits\n[2] https://mattermost.com/pricing/\n[3] https://docs.mattermost.com/administration-guide/manage/product-limits.html\n[4] https://docs.mattermost.com/deployment-guide/server/deploy-linux.html\n[5] https://forum.mattermost.com/t/clarification-needed-for-the-upgrade-to-v11/25344\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46594673\"\u003ehttps://news.ycombinator.com/item?id=46594673\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 3\u003c/p\u003e\n"
+    },
+    {
+      "title": "Mtetris: Tetris-Like Game in X11/Motif",
+      "link": "http://codefromabove.com/2025/08/mtetris-tetris-like-game-in-x11-motif/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-12T21:40:56Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"http://codefromabove.com/2025/08/mtetris-tetris-like-game-in-x11-motif/\"\u003ehttp://codefromabove.com/2025/08/mtetris-tetris-like-game-in-x11-motif/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46594665\"\u003ehttps://news.ycombinator.com/item?id=46594665\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Atomic symlink deployments that work on macOS URL",
+      "link": "https://github.com/mojoatomic/atomic-deployments",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-12T21:40:53Z",
+      "description": "\n\u003cp\u003eMost \"atomic\" deployment scripts aren't atomic.\nIf you're using the standard symlink swap pattern for zero-downtime deploys, you've probably seen this:\u003cp\u003ebash\nln -sfn releases/20260112 current\nLooks atomic. It's not. Run it through strace:\u003cp\u003esymlink(\"releases/20260112\", \"current\") = -1 EEXIST\nunlink(\"current\") = 0\nsymlink(\"releases/20260112\", \"current\") = 0\nThere's a window where current doesn't exist. Under load, some requests get ENOENT.\nThe fix is well-documented for Linux:\u003cp\u003ebash\nln -s releases/20260112 .tmp/current.$$ \nmv -T .tmp/current.$$ current\nThe mv -T calls rename(2) which atomically replaces the symlink. Problem solved.\nExcept on macOS. BSD mv doesn't have -T, and it follows symlinks differently. The Capistrano/Deployer communities have known about this for over a decade. Most just accept the race condition on Mac, or tell you to develop on Linux.\nI needed something that works on both (MSP managing mixed fleets - Linux servers, Mac dev machines, CI runners on both). The solution turned out to be Python's os.replace(), which calls rename(2) directly:\u003cp\u003ebash\nif [[ \"$platform\" == \"linux\" ]]; then\n    ln -s \"releases/$rel_id\" \"$tmp_link\"\n    mv -T \"$tmp_link\" \"current\"\nelse\n    ln -s \"releases/$rel_id\" \"$tmp_link\"\n    python3 -c \"import os; os.replace('$tmp_link', 'current')\"\nfi\nI wrapped this in a deployment script with:\n* Platform detection (GNU vs BSD coreutils)\n* Directory-based locking with stale PID detection\n* Automatic rollback on SIGINT/SIGTERM\n* State machine cleanup (knows whether to rollback vs just clean up temp files)\nSingle bash script, no runtime dependencies beyond python3 (which is everywhere now).\nGitHub: [\u003ca href=\"https://github.com/mojoatomic/atomic-deployments.git\" rel=\"nofollow\"\u003ehttps://github.com/mojoatomic/atomic-deployments.git\u003c/a\u003e]\u003cp\u003eQ: Why not just use Capistrano/Deployer/Shipit?\nA: Those are great if you're already in that ecosystem. I needed a single script I could drop into any CI pipeline without pulling in Ruby/PHP/Node. Also, Deployer's own code shows it falls back to non-atomic on systems without mv -T.\nQ: Why not use containers/Kubernetes?\nA: Not everyone is on k8s. Lots of us still deploy to VMs, bare metal, edge devices. Symlink swaps are still the simplest zero-downtime pattern for those environments.\nQ: Python dependency defeats the \"no dependencies\" claim\nA: Fair. But python3 ships with macOS and virtually every Linux distro. It's as close to \"always there\" as you get. The alternative is writing a small C binary, which creates a different dependency problem.\nQ: What about NFS/network filesystems?\nA: Don't. rename(2) atomicity guarantees don't hold across network filesystems. This is for local filesystems only.\nQ: What about the renameat2() RENAME_EXCHANGE flag?\nA: That's Linux 3.15+ only and requires glibc 2.28+. It does a true atomic swap of two paths, which is even better. But it's not portable, so I stuck with the symlink + rename pattern that works everywhere.\nQ: Does this handle shared directories (logs, uploads, etc.)?\nA: Not in scope for this script. It just does the atomic swap. Capistrano-style shared directory symlinking is a separate concern.\u003cp\u003eKey technical points \n1. ln -sfn is unlink + symlink, not atomic\n2. mv -T on Linux calls rename(2) which IS atomic\n3. BSD mv follows symlinks, breaking the pattern\n4. Python's os.replace() calls rename(2) directly on all POSIX systems\n5. Capistrano's workaround (create symlink in subdirectory, mv with relative path) works but requires their Ruby runtime\n6. The script detects platform by checking if mv --version returns GNU, not by uname (more reliable for edge cases like GNU coreutils on Mac via Homebrew)\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46594664\"\u003ehttps://news.ycombinator.com/item?id=46594664\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "AI generated song about my son who has autism",
+      "link": "https://open.spotify.com/album/1BGfJSTjSQJkkxv4gJEK2z",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-12T21:40:48Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://open.spotify.com/album/1BGfJSTjSQJkkxv4gJEK2z\"\u003ehttps://open.spotify.com/album/1BGfJSTjSQJkkxv4gJEK2z\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46594661\"\u003ehttps://news.ycombinator.com/item?id=46594661\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Revolutionary eye injection saved my sight, says first-ever patient",
+      "link": "https://www.bbc.com/news/articles/c89qyv98lzdo",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-12T21:38:10Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.bbc.com/news/articles/c89qyv98lzdo\"\u003ehttps://www.bbc.com/news/articles/c89qyv98lzdo\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46594645\"\u003ehttps://news.ycombinator.com/item?id=46594645\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Hmap –- Dictionary Library in C",
+      "link": "https://github.com/cecinuga/hmap",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-12T21:35:45Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/cecinuga/hmap\"\u003ehttps://github.com/cecinuga/hmap\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46594623\"\u003ehttps://news.ycombinator.com/item?id=46594623\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "AI’s Next Revolution: Multiply Labs Is Scaling Robotics-Driven Cell Therapy Biomanufacturing Labs",
+      "link": "https://blogs.nvidia.com/blog/multiply-labs-isaac-omniverse/",
+      "source": "NVIDIA Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-12T15:00:48Z",
+      "description": "Startup works with leading cell therapy companies to bring robotics manufacturing into the clean room, reducing costs by more than 70% while accelerating output compared with legacy systems.  "
+    }
+  ],
+  "generatedAt": "2026-01-13T07:09:44.177264588+09:00"
+}
