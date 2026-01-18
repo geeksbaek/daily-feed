@@ -1,0 +1,266 @@
+{
+  "date": "2026-01-19",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2026년 1월 18일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** OpenAI가 정의하는 AI 에이전트의 경제학, ClickHouse의 전략적 인수, 그리고 화성 탐사를 향한 정치적 드라이브가 맞물린 역동적인 하루입니다.\n\n---\n\n## 🏆 Top Story: AI의 진화, 도구에서 '대리인(Agency)'으로\n### OpenAI: 인간의 자율성을 위한 AI \u0026 지능 가치에 따른 비즈니스 확장\nOpenAI가 두 개의 중요한 아티클을 통해 2026년 AI의 방향성을 제시했습니다. 단순한 챗봇을 넘어, 인간의 목표를 수행하는 '**에이전트(Agency)**'로서의 AI를 정의하고, 이에 따른 새로운 비즈니스 모델을 제안했습니다.\n\n*   **핵심 내용:** AI는 인간의 대체재가 아니라, 인간의 의지(Agency)를 확장하는 도구여야 함을 강조합니다. 동시에 기업이 AI 지능의 가치에 따라 어떻게 확장(Scale)할 수 있는지에 대한 경제적 청사진을 제시했습니다. 이는 단순 구독 모델을 넘어, AI가 창출한 '결과물'에 가치를 매기는 시대로의 전환을 암시합니다.\n*   **시사점:** 2026년은 AI가 '말하는' 단계에서 '일하는' 단계로 완전히 넘어가는 원년이 될 것입니다. 기업들은 이제 AI 도입을 비용 절감이 아닌, 지능형 자산 확보의 관점에서 접근해야 합니다.\n\n\u003e **Key Point:** AI의 역할이 '정보 제공'에서 '자율적 업무 수행'으로 이동하며, 이에 따른 비즈니스 가치 평가 기준도 재편되고 있습니다. [^2] [^8]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n\n### 1. ClickHouse, LLM 관측 플랫폼 Langfuse 인수\n- **What:** 실시간 데이터 분석 DB인 ClickHouse가 오픈소스 LLM 엔지니어링 플랫폼인 Langfuse를 인수했습니다.\n- **Why:** 벡터 데이터베이스와 실시간 분석 기능을 결합하여, 기업들이 LLM 애플리케이션의 성능과 비용을 정밀하게 모니터링하고 최적화할 수 있도록 돕기 위함입니다.\n- **Impact:** 데이터 인프라 기업들이 단순 저장소를 넘어 'AI 운영체제(AI Ops)' 영역으로 빠르게 확장하고 있음을 보여줍니다. [^26]\n\n### 2. LWN.net, 사상 최악의 스크레이퍼 공격 직면\n- **What:** 리눅스 커널 및 오픈소스 뉴스의 성지인 LWN이 AI 학습용으로 추정되는 대규모 봇 공격으로 서비스 장애를 겪고 있습니다.\n- **Why:** 양질의 기술 텍스트 데이터가 부족해진 AI 기업들이 유료/전문 커뮤니티까지 무차별적으로 긁어가고 있기 때문입니다.\n- **Impact:** \"AI가 학습할 데이터를 생산하는 인간 커뮤니티를 AI가 파괴하는\" 역설적인 상황이 심화되며, 웹 생태계의 방어 기제(Paywall 등)가 더욱 강화될 전망입니다. [^24]\n\n### 3. 트럼프의 '화성 성조기' 공약과 우주 경쟁 가속화\n- **What:** 트럼프가 화성에 성조기를 꽂겠다는 강력한 우주 탐사 의지를 재확인했습니다.\n- **Why:** 우주 패권이 단순한 과학 탐사를 넘어 지정학적, 군사적 우위와 직결된다는 판단 때문입니다.\n- **Impact:** NASA와 SpaceX 등 민간 우주 기업에 대한 지원이 대폭 늘어날 것이며, 2020년대 후반 유인 화성 탐사 계획이 급물살을 탈 것으로 보입니다. [^6]\n\n### 4. 독감 없는 세상, 현실이 되다?\n- **What:** mRNA 기술을 활용한 범용 독감 백신의 발전으로 계절성 독감의 종식 가능성이 제기되었습니다.\n- **Why:** 기존 백신보다 빠르고 정확하게 변이에 대응할 수 있는 mRNA 플랫폼이 성숙했기 때문입니다.\n- **Impact:** 공중 보건의 패러다임이 '치료'에서 완벽한 '예방'으로 이동하며, 겨울철 의료 시스템 부하가 획기적으로 줄어들 수 있습니다. [^14]\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **VS Code 1.109** | 2026년 1월 최신 업데이트. 코드 편집 경험을 재정의하는 기능 개선 포함. [^1] |\n| **Security** | **PolyMorph** | APE, Zig, WASM을 지원하는 오픈소스 다중 언어(Polyglot) 맬웨어 탐지 도구. [^9] |\n| **Library** | **Metrique** | Rust로 작성된 고성능 메트릭 라이브러리. 넓은 범위의 이벤트 처리에 최적화됨. [^12] |\n| **DevOps** | **Perry** | Tailscale을 활용하여 셀프 호스팅 가능한 개발 환경을 구축해주는 도구. [^17] |\n| **Language** | **Kip** | 터키어 문법의 격(Case) 시스템에 기반하여 설계된 독창적인 프로그래밍 언어. [^29] |\n| **AI Model** | **FLUX.2 [klein]** | 상호작용형 시각 지능(Visual Intelligence)을 목표로 하는 새로운 멀티모달 모델. [^30] |\n| **Design** | **MapToPoster** | 도시 지도를 예술적인 포스터로 자동 변환해주는 디자인 도구. [^32] |\n| **Paper** | **Rust Compilation** | Rust의 거대한 컴파일 유닛(Compilation Units) 문제와 해결책을 다룬 PingCAP의 기술 블로그. [^19] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n\n#### 💻 개발 \u0026 인프라 \u0026 하드웨어\n*   **MS 패치 오류**: 최신 윈도우 패치 이후 PC가 종료되지 않는 버그가 발생해 사용자 원성 폭발. [^31]\n*   **System76 노트북 수리**: 20분 만에 리눅스 노트북을 직접 수리한 경험기, 수리 용이성의 중요성. [^4]\n*   **라이트 모드 인플레이션**: UI 디자인에서 흰색 배경(Light Mode)이 과도하게 사용되는 현상에 대한 비평. [^27]\n*   **위키백과 25주년**: 뉴스 형식이 아니더라도 역사를 기록하는 매체로서 25년간 증명된 가치. [^25]\n*   **C64 Ultimate 리뷰**: 1982년의 향수를 완벽하게 재현한 코모도어 64 최신 하드웨어 리뷰. [^18]\n\n#### 🧪 과학 \u0026 건강 \u0026 환경\n*   **우주 정거장 바이러스**: 우주에서 진화한 바이러스가 지구 박테리아를 더 효과적으로 죽인다는 연구 결과. [^20]\n*   **태양 흑점 폭발**: X1.9 등급의 강력한 태양 플레어가 발생, 지구 방향 CME(코로나 질량 방출) 동반. [^13]\n*   **코코넛 오일 효과**: 오일 풀링(Oil Pulling)이 구강 위생과 치은염 완화에 효과가 있다는 연구. [^16]\n*   **2025년 기후 기록**: 지난 2025년이 관측 사상 세 번째로 더운 해로 기록됨. [^23]\n\n#### 🌏 사회 \u0026 경제 \u0026 문화\n*   **NYC 택시의 부활**: 우버/리프트 등 승차 공유 서비스를 압도하고 있는 뉴욕 택시의 현황 분석 영상. [^15]\n*   **그린란드 관세 전쟁**: 그린란드가 통제를 반대한다는 이유로 유럽 8개국 수입품에 10% 관세 부과. [^28]\n*   **신원 산업가들(Identity Industrialists)**: 디지털 신원 증명이 거대 산업화되는 현상에 대한 비판적 에세이. [^10]\n*   **가장 아름다운 공항**: 샌프란시스코 공항(SFO)이 세계에서 가장 아름다운 공항으로 선정됨. [^7]\n*   **도스토옙스키 읽기**: 도스토옙스키 문학이 생각보다 어렵지 않으며 독학으로 충분히 즐길 수 있다는 에세이. [^3]\n*   **랄프 위검의 실패**: 심슨 가족의 캐릭터 '랄프'가 더 이상 현대 유머 코드에 작동하지 않는 이유. [^22]\n*   **체스 마스터 아난드**: 전설적인 체스 챔피언 비스와나탄 아난드의 수읽기를 분석한 영상. [^5]\n\n#### 🎮 게임 \u0026 토이 프로젝트\n*   **브라우저 포커 (Kosmi)**: 화상 채팅 기능이 내장된 웹 기반 친구 대전 포커 게임. [^11]\n*   **마우스 배틀 시스템**: 마우스/트랙패드 조작만으로 진행되는 독특한 브라우저 전투 시스템 데모. [^21]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘 뉴스는 '**확장(Expansion)**'과 '**반작용(Reaction)**'으로 요약됩니다. AI는 에이전트로 확장하려 하고(OpenAI), 인류는 화성으로 확장하려 합니다(트럼프). 반면, 데이터 스크래핑에 대한 반작용(LWN)과 승차 공유 앱에 대한 반작용(NYC 택시)도 만만치 않습니다. 기술의 발전 속도만큼이나, 그에 적응하거나 저항하는 인간 사회의 움직임도 주의 깊게 지켜봐야 할 시점입니다.\n\n---\n\n### Footnotes\n[^1]: January 2026 Insiders (version 1.109) - https://code.visualstudio.com/updates/v1_109\n[^2]: AI for self empowerment - https://openai.com/index/ai-for-human-agency\n[^3]: Dostoyevsky Isn't Difficult - https://www.autodidacts.io/dostoyevsky-isnt-difficult/\n[^4]: Fixing My System76 Laptop in 20 Minutes or Less - https://danielmangum.com/posts/fix-system76-laptop-20-min/\n[^5]: The chessmaster and his moves (Vishwanathan Anand) - https://www.youtube.com/watch?v=thZrYd7yDhk\n[^6]: Trump Pledges to 'Plant the Stars and Stripes' on Mars - https://www.meritalk.com/articles/trump-pledges-to-plant-the-stars-and-stripes-on-mars/\n[^7]: San Francisco Airport wins most beautiful airport award - https://www.travelandleisure.com/most-beautiful-airport-in-the-world-prix-versailles-11879655\n[^8]: A business that scales with the value of intelligence - https://openai.com/index/a-business-that-scales-with-the-value-of-intelligence/\n[^9]: PolyMorph – Open-source APE / Zig / WASM polyglot malware detector - https://github.com/xonoxitron/polymorph\n[^10]: The Identity Industrialists - https://designobserver.com/the-identity-industrialists/\n[^11]: Show HN: Play poker with friends in the browser – with built-in video chat - https://kosmi.io/poker/\n[^12]: Metrique: A high performance Rust metrics library designed for wide events - https://github.com/awslabs/metrique\n[^13]: X1.9 solar flare with earth-directed CME - https://www.spaceweatherlive.com/en/news/view/599/20260118-x1-9-solar-flare-with-earth-directed-cme.html\n[^14]: A world without flu is possible - https://www.vox.com/future-perfect/474808/flu-season-vaccine-hospitalizations-mrna-shots\n[^15]: Why NYC Taxis Are Crushing the Ride-Share Revolution [video] - https://www.youtube.com/watch?v=3FqIn-MOk3g\n[^16]: Coconut oil for oral hygiene gives a promising result - https://jglobaloralhealth.org/effectiveness-of-coconut-oil-pulling-as-an-adjuvant-to-oral-hygiene-procedure-on-plaque-induced-gingivitis-among-middle-aged-adults-an-interventional-study/\n[^17]: Show HN: Perry – self-hosted dev environments over Tailscale - https://github.com/gricha/perry\n[^18]: Commodore 64 Ultimate review – it's like 1982 all over again - https://www.theguardian.com/games/2026/jan/15/commodore-64-ultimate-review-computer\n[^19]: Rust's Compilation Units - https://www.pingcap.com/blog/rust-huge-compilation-units/\n[^20]: Viruses that evolved on the space station are more effective at killing bacteria - https://www.livescience.com/health/viruses-infections-disease/viruses-that-evolved-on-the-space-station-and-were-sent-back-to-earth-were-more-effective-at-killing-bacteria\n[^21]: Try My Mouse/Trackpad Driven Battle System in the Browser - https://jslegend.itch.io/hydralia-donovans-demise-battle-demo\n[^22]: Someone needs to say it: Ralph Wiggum Doesn't Work - https://twitter.com/pedronauck/status/2013000073156714772\n[^23]: 2025년은 기록상 세 번째로 더운 해였다 - https://news.hada.io/topic?id=25936\n[^24]: LWN이 지금까지 겪은 가장 심각한 스크레이퍼 공격을 받고 있음 - https://news.hada.io/topic?id=25935\n[^25]: 뉴스처럼 보이지 않아도 뉴스가 될 수 있음을 25년간 증명한 위키백과 - https://news.hada.io/topic?id=25934\n[^26]: ClickHouse, Langfuse 인수 - https://news.hada.io/topic?id=25932\n[^27]: 라이트 모드의 ‘InFFFFFFlation’ 현상 - https://news.hada.io/topic?id=25931\n[^28]: 그린란드 통제 반대 이유로 8개 유럽국 수입품에 10% 관세 부과 발표 - https://news.hada.io/topic?id=25930\n[^29]: 터키어 문법 격(case)에 기반한 프로그래밍 언어 Kip - https://news.hada.io/topic?id=25929\n[^30]: FLUX.2 [klein]: 상호작용형 시각 지능을 향하여 - https://news.hada.io/topic?id=25928\n[^31]: 마이크로소프트 패치 이후 PC가 종료를 거부함 - https://news.hada.io/topic?id=25927\n[^32]: 도시 지도를 예술 포스터로 변환하는 MapToPoster - https://news.hada.io/topic?id=25926\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **January 2026 Insiders (version 1.109)**\n   - 출처: Visual Studio Code - Code Editing. Redefined.\n   - 링크: https://code.visualstudio.com/updates/v1_109\n\n2. **AI for self empowerment**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/ai-for-human-agency\n\n3. **Dostoyevsky Isn't Difficult**\n   - 출처: Hacker News\n   - 링크: https://www.autodidacts.io/dostoyevsky-isnt-difficult/\n\n4. **Fixing My System76 Laptop in 20 Minutes or Less**\n   - 출처: Hacker News\n   - 링크: https://danielmangum.com/posts/fix-system76-laptop-20-min/\n\n5. **The chessmaster and his moves (Vishwanathan Anand)**\n   - 출처: Hacker News\n   - 링크: https://www.youtube.com/watch?v=thZrYd7yDhk\n\n6. **Trump Pledges to 'Plant the Stars and Stripes' on Mars**\n   - 출처: Hacker News\n   - 링크: https://www.meritalk.com/articles/trump-pledges-to-plant-the-stars-and-stripes-on-mars/\n\n7. **San Francisco Airport wins most beautiful airport award**\n   - 출처: Hacker News\n   - 링크: https://www.travelandleisure.com/most-beautiful-airport-in-the-world-prix-versailles-11879655\n\n8. **A business that scales with the value of intelligence**\n   - 출처: Hacker News\n   - 링크: https://openai.com/index/a-business-that-scales-with-the-value-of-intelligence/\n\n9. **PolyMorph – Open-source APE / Zig / WASM polyglot malware detector**\n   - 출처: Hacker News\n   - 링크: https://github.com/xonoxitron/polymorph\n\n10. **The Identity Industrialists**\n   - 출처: Hacker News\n   - 링크: https://designobserver.com/the-identity-industrialists/\n\n11. **Show HN: Play poker with friends in the browser – with built-in video chat**\n   - 출처: Hacker News\n   - 링크: https://kosmi.io/poker/\n\n12. **Metrique: A high performance Rust metrics library designed for wide events**\n   - 출처: Hacker News\n   - 링크: https://github.com/awslabs/metrique\n\n13. **X1.9 solar flare with earth-directed CME**\n   - 출처: Hacker News\n   - 링크: https://www.spaceweatherlive.com/en/news/view/599/20260118-x1-9-solar-flare-with-earth-directed-cme.html\n\n14. **A world without flu is possible**\n   - 출처: Hacker News\n   - 링크: https://www.vox.com/future-perfect/474808/flu-season-vaccine-hospitalizations-mrna-shots\n\n15. **Why NYC Taxis Are Crushing the Ride-Share Revolution [video]**\n   - 출처: Hacker News\n   - 링크: https://www.youtube.com/watch?v=3FqIn-MOk3g\n\n16. **Coconut oil for oral hygiene gives a promising result**\n   - 출처: Hacker News\n   - 링크: https://jglobaloralhealth.org/effectiveness-of-coconut-oil-pulling-as-an-adjuvant-to-oral-hygiene-procedure-on-plaque-induced-gingivitis-among-middle-aged-adults-an-interventional-study/\n\n17. **Show HN: Perry – self-hosted dev environments over Tailscale**\n   - 출처: Hacker News\n   - 링크: https://github.com/gricha/perry\n\n18. **Commodore 64 Ultimate review – it's like 1982 all over again**\n   - 출처: Hacker News\n   - 링크: https://www.theguardian.com/games/2026/jan/15/commodore-64-ultimate-review-computer\n\n19. **Rust's Compilation Units**\n   - 출처: Hacker News\n   - 링크: https://www.pingcap.com/blog/rust-huge-compilation-units/\n\n20. **Viruses that evolved on the space station are more effective at killing bacteria**\n   - 출처: Hacker News\n   - 링크: https://www.livescience.com/health/viruses-infections-disease/viruses-that-evolved-on-the-space-station-and-were-sent-back-to-earth-were-more-effective-at-killing-bacteria\n\n21. **Try My Mouse/Trackpad Driven Battle System in the Browser**\n   - 출처: Hacker News\n   - 링크: https://jslegend.itch.io/hydralia-donovans-demise-battle-demo\n\n22. **Someone needs to say it: Ralph Wiggum Doesn't Work**\n   - 출처: Hacker News\n   - 링크: https://twitter.com/pedronauck/status/2013000073156714772\n\n23. **2025년은 기록상 세 번째로 더운 해였다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25936\n\n24. **LWN이 지금까지 겪은 가장 심각한 스크레이퍼 공격을 받고 있음**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25935\n\n25. **뉴스처럼 보이지 않아도 뉴스가 될 수 있음을 25년간 증명한 위키백과**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25934\n\n26. **ClickHouse, Langfuse 인수**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25932\n\n27. **라이트 모드의 ‘InFFFFFFlation’ 현상**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25931\n\n28. **그린란드 통제 반대 이유로 8개 유럽국 수입품에 10% 관세 부과 발표**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25930\n\n29. **터키어 문법 격(case)에 기반한 프로그래밍 언어 Kip**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25929\n\n30. **FLUX.2 [klein]: 상호작용형 시각 지능을 향하여**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25928\n\n31. **마이크로소프트 패치 이후 PC가 종료를 거부함**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25927\n\n32. **도시 지도를 예술 포스터로 변환하는 MapToPoster**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25926\n\n\n",
+  "articles": [
+    {
+      "title": "January 2026 Insiders (version 1.109)",
+      "link": "https://code.visualstudio.com/updates/v1_109",
+      "source": "Visual Studio Code - Code Editing. Redefined.",
+      "category": "tech",
+      "publishedAt": "2026-02-04T17:00:00Z",
+      "description": "\n      \u003cp\u003eLearn what is new in the Visual Studio Code January 2026 Release (1.109).\u003c/p\u003e\n      \u003cp\u003e\u003ca href=\"https://code.visualstudio.com/updates/v1_109\"\u003eRead the full article\u003c/a\u003e\u003c/p\u003e\n    "
+    },
+    {
+      "title": "AI for self empowerment",
+      "link": "https://openai.com/index/ai-for-human-agency",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2026-01-18T12:00:00Z",
+      "description": "How AI can expand human agency by closing the capability overhang—helping people, businesses, and countries unlock real productivity, growth, and opportunity."
+    },
+    {
+      "title": "Dostoyevsky Isn't Difficult",
+      "link": "https://www.autodidacts.io/dostoyevsky-isnt-difficult/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-18T21:59:54Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.autodidacts.io/dostoyevsky-isnt-difficult/\"\u003ehttps://www.autodidacts.io/dostoyevsky-isnt-difficult/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46672575\"\u003ehttps://news.ycombinator.com/item?id=46672575\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Fixing My System76 Laptop in 20 Minutes or Less",
+      "link": "https://danielmangum.com/posts/fix-system76-laptop-20-min/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-18T21:59:17Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://danielmangum.com/posts/fix-system76-laptop-20-min/\"\u003ehttps://danielmangum.com/posts/fix-system76-laptop-20-min/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46672571\"\u003ehttps://news.ycombinator.com/item?id=46672571\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The chessmaster and his moves (Vishwanathan Anand)",
+      "link": "https://www.youtube.com/watch?v=thZrYd7yDhk",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-18T21:53:22Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.youtube.com/watch?v=thZrYd7yDhk\"\u003ehttps://www.youtube.com/watch?v=thZrYd7yDhk\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46672517\"\u003ehttps://news.ycombinator.com/item?id=46672517\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Trump Pledges to 'Plant the Stars and Stripes' on Mars",
+      "link": "https://www.meritalk.com/articles/trump-pledges-to-plant-the-stars-and-stripes-on-mars/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-18T21:52:15Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.meritalk.com/articles/trump-pledges-to-plant-the-stars-and-stripes-on-mars/\"\u003ehttps://www.meritalk.com/articles/trump-pledges-to-plant-the-stars-and-stripes-on-mars/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46672512\"\u003ehttps://news.ycombinator.com/item?id=46672512\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "San Francisco Airport wins most beautiful airport award",
+      "link": "https://www.travelandleisure.com/most-beautiful-airport-in-the-world-prix-versailles-11879655",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-18T21:52:13Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.travelandleisure.com/most-beautiful-airport-in-the-world-prix-versailles-11879655\"\u003ehttps://www.travelandleisure.com/most-beautiful-airport-in-the-world-prix-versailles-11879655\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46672511\"\u003ehttps://news.ycombinator.com/item?id=46672511\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "A business that scales with the value of intelligence",
+      "link": "https://openai.com/index/a-business-that-scales-with-the-value-of-intelligence/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-18T21:51:19Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://openai.com/index/a-business-that-scales-with-the-value-of-intelligence/\"\u003ehttps://openai.com/index/a-business-that-scales-with-the-value-of-intelligence/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46672505\"\u003ehttps://news.ycombinator.com/item?id=46672505\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "PolyMorph – Open-source APE / Zig / WASM polyglot malware detector",
+      "link": "https://github.com/xonoxitron/polymorph",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-18T21:51:12Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/xonoxitron/polymorph\"\u003ehttps://github.com/xonoxitron/polymorph\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46672502\"\u003ehttps://news.ycombinator.com/item?id=46672502\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Identity Industrialists",
+      "link": "https://designobserver.com/the-identity-industrialists/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-18T21:49:14Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://designobserver.com/the-identity-industrialists/\"\u003ehttps://designobserver.com/the-identity-industrialists/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46672486\"\u003ehttps://news.ycombinator.com/item?id=46672486\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Play poker with friends in the browser – with built-in video chat",
+      "link": "https://kosmi.io/poker/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-18T21:47:08Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://kosmi.io/poker/\"\u003ehttps://kosmi.io/poker/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46672473\"\u003ehttps://news.ycombinator.com/item?id=46672473\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Metrique: A high performance Rust metrics library designed for wide events",
+      "link": "https://github.com/awslabs/metrique",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-18T21:46:59Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/awslabs/metrique\"\u003ehttps://github.com/awslabs/metrique\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46672472\"\u003ehttps://news.ycombinator.com/item?id=46672472\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "X1.9 solar flare with earth-directed CME",
+      "link": "https://www.spaceweatherlive.com/en/news/view/599/20260118-x1-9-solar-flare-with-earth-directed-cme.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-18T21:45:33Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.spaceweatherlive.com/en/news/view/599/20260118-x1-9-solar-flare-with-earth-directed-cme.html\"\u003ehttps://www.spaceweatherlive.com/en/news/view/599/20260118-x1-9-solar-flare-with-earth-directed-cme.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46672464\"\u003ehttps://news.ycombinator.com/item?id=46672464\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "A world without flu is possible",
+      "link": "https://www.vox.com/future-perfect/474808/flu-season-vaccine-hospitalizations-mrna-shots",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-18T21:43:46Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.vox.com/future-perfect/474808/flu-season-vaccine-hospitalizations-mrna-shots\"\u003ehttps://www.vox.com/future-perfect/474808/flu-season-vaccine-hospitalizations-mrna-shots\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46672451\"\u003ehttps://news.ycombinator.com/item?id=46672451\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Why NYC Taxis Are Crushing the Ride-Share Revolution [video]",
+      "link": "https://www.youtube.com/watch?v=3FqIn-MOk3g",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-18T21:43:34Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.youtube.com/watch?v=3FqIn-MOk3g\"\u003ehttps://www.youtube.com/watch?v=3FqIn-MOk3g\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46672449\"\u003ehttps://news.ycombinator.com/item?id=46672449\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Coconut oil for oral hygiene gives a promising result",
+      "link": "https://jglobaloralhealth.org/effectiveness-of-coconut-oil-pulling-as-an-adjuvant-to-oral-hygiene-procedure-on-plaque-induced-gingivitis-among-middle-aged-adults-an-interventional-study/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-18T21:42:56Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://jglobaloralhealth.org/effectiveness-of-coconut-oil-pulling-as-an-adjuvant-to-oral-hygiene-procedure-on-plaque-induced-gingivitis-among-middle-aged-adults-an-interventional-study/\"\u003ehttps://jglobaloralhealth.org/effectiveness-of-coconut-oil-pulling-as-an-adjuvant-to-oral-hygiene-procedure-on-plaque-induced-gingivitis-among-middle-aged-adults-an-interventional-study/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46672444\"\u003ehttps://news.ycombinator.com/item?id=46672444\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Perry – self-hosted dev environments over Tailscale",
+      "link": "https://github.com/gricha/perry",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-18T21:42:21Z",
+      "description": "\n\u003cp\u003eHey folks! Perry is a project I was working on for a couple of weeks that I wanted to share. It's an alternative for me for dealing with worktrees on local environments, esp. when I use coding agents. This framework helps me manage containers on my host called workspaces.\u003cp\u003eOn creation each one is pre-registered with Tailscale, and accessible directly via it's project name on your tailnet. For instance if I want to start working on feature-a, I'd run `perry start feature-a` from any of my machines, and after a while it would be available over http://feature-a.\u003cp\u003eThis is great for continuing my coding agent sessions on the go for both Claude Code/Opencode: \u003ca href=\"https://gricha.github.io/perry/docs/workflows/opencode\" rel=\"nofollow\"\u003ehttps://gricha.github.io/perry/docs/workflows/opencode\u003c/a\u003e You can easily access them from Termius over Tailscale, or, in case of Opencode, just open a web ui via http://feature-a:4096\u003cp\u003eMy main goal was to be able to work on separate features/projects and have runtime isolation.\u003cp\u003eIt's an early version but I do rely on it for my side projects. I wouldn't say the security is there (at all) to use it for anything other than that, at least at the moment. Let me know what you think!\u003cp\u003e---\u003cp\u003eSadly the project has been found by crypto scammers, and token(s) have been created that try to associate themselves with the project. This project and I myself am not affiliated with any crypto tokens. I don't endorse or condone its use.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46672440\"\u003ehttps://news.ycombinator.com/item?id=46672440\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Commodore 64 Ultimate review – it's like 1982 all over again",
+      "link": "https://www.theguardian.com/games/2026/jan/15/commodore-64-ultimate-review-computer",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-18T21:42:03Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.theguardian.com/games/2026/jan/15/commodore-64-ultimate-review-computer\"\u003ehttps://www.theguardian.com/games/2026/jan/15/commodore-64-ultimate-review-computer\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46672437\"\u003ehttps://news.ycombinator.com/item?id=46672437\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Rust's Compilation Units",
+      "link": "https://www.pingcap.com/blog/rust-huge-compilation-units/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-18T21:42:02Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.pingcap.com/blog/rust-huge-compilation-units/\"\u003ehttps://www.pingcap.com/blog/rust-huge-compilation-units/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46672435\"\u003ehttps://news.ycombinator.com/item?id=46672435\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Viruses that evolved on the space station are more effective at killing bacteria",
+      "link": "https://www.livescience.com/health/viruses-infections-disease/viruses-that-evolved-on-the-space-station-and-were-sent-back-to-earth-were-more-effective-at-killing-bacteria",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-18T21:41:08Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.livescience.com/health/viruses-infections-disease/viruses-that-evolved-on-the-space-station-and-were-sent-back-to-earth-were-more-effective-at-killing-bacteria\"\u003ehttps://www.livescience.com/health/viruses-infections-disease/viruses-that-evolved-on-the-space-station-and-were-sent-back-to-earth-were-more-effective-at-killing-bacteria\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46672425\"\u003ehttps://news.ycombinator.com/item?id=46672425\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Try My Mouse/Trackpad Driven Battle System in the Browser",
+      "link": "https://jslegend.itch.io/hydralia-donovans-demise-battle-demo",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-18T21:40:48Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://jslegend.itch.io/hydralia-donovans-demise-battle-demo\"\u003ehttps://jslegend.itch.io/hydralia-donovans-demise-battle-demo\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46672421\"\u003ehttps://news.ycombinator.com/item?id=46672421\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Someone needs to say it: Ralph Wiggum Doesn't Work",
+      "link": "https://twitter.com/pedronauck/status/2013000073156714772",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-18T21:39:28Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://twitter.com/pedronauck/status/2013000073156714772\"\u003ehttps://twitter.com/pedronauck/status/2013000073156714772\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46672413\"\u003ehttps://news.ycombinator.com/item?id=46672413\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 3\u003c/p\u003e\n"
+    },
+    {
+      "title": "2025년은 기록상 세 번째로 더운 해였다",
+      "link": "https://news.hada.io/topic?id=25936",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-19T06:33:12+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e평년보다 \u003cstrong\u003e상대적으로 시원해야 할 해\u003c/strong\u003e였음에도, 2025년은 \u003cstrong\u003e기록상 가장 더운 해 중 하나\u003c/strong\u003e로 나타남\u003c/li\u003e\n\u003cli\u003e유럽과 미국의 주요 \u003cstrong\u003e기후·기상 관측 기관\u003c/strong\u003e들이 2025년의 데이터를 발표함\u003c/li\u003e\n\u003cli\u003e이 보고서들은 \u003cstrong\u003e지구 온난화의 가속화\u003c/strong\u003e와 일관된 ...\u003c/p\u003e"
+    },
+    {
+      "title": "LWN이 지금까지 겪은 가장 심각한 스크레이퍼 공격을 받고 있음",
+      "link": "https://news.hada.io/topic?id=25935",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-19T04:37:00+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eLWN.net\u003c/strong\u003e이 수만 개의 주소에서 발생한 \u003cstrong\u003e대규모 스크레이핑 기반 DDoS 공격\u003c/strong\u003e을 받고 있으며, 사이트 응답 속도가 저하되고 있음\u003c/li\u003e\n\u003cli\u003eJonathan Corbet은 \u003cstrong\u003eAI 관련 스크레이퍼\u003c/strong\u003e로부터 사이트를 방어해야 하는 상황을 언급하며, 독자 접근에 장벽을 두고 싶지...\u003c/p\u003e"
+    },
+    {
+      "title": "뉴스처럼 보이지 않아도 뉴스가 될 수 있음을 25년간 증명한 위키백과",
+      "link": "https://news.hada.io/topic?id=25934",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-19T04:34:00+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e위키백과의 25주년\u003c/strong\u003e을 맞아, 이 플랫폼이 전통적 뉴스 형식과 다른 방식으로 세계의 사건을 기록하고 있다는 점이 강조됨\u003c/li\u003e\n\u003cli\u003e매주 가장 많이 수정된 문서를 보여주는 \u003cstrong\u003eWeeklypedia\u003c/strong\u003e를 통해, 자원봉사자들이 시사 사건을 백과사전식으로 정리하는 과정을 확인할 수 있음...\u003c/p\u003e"
+    },
+    {
+      "title": "ClickHouse, Langfuse 인수",
+      "link": "https://news.hada.io/topic?id=25932",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-19T03:42:38+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eClickHouse가 Langfuse를 인수\u003c/strong\u003e, 양사는 오픈소스 기반 AI 엔지니어링 플랫폼 개발을 지속\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eLangfuse는 오픈소스와 셀프호스팅 모델을 유지\u003c/strong\u003e, 라이선스나 클라우드 서비스 운영 방식에 즉각적 변화 없음\u003c/li\u003e\n\u003cli\u003eClickHouse의 \u003cstrong\u003e기술·리소스 지원으로 성능, ...\u003c/p\u003e"
+    },
+    {
+      "title": "라이트 모드의 ‘InFFFFFFlation’ 현상",
+      "link": "https://news.hada.io/topic?id=25931",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-19T03:39:38+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eMacOS의 기본 UI 밝기\u003c/strong\u003e가 지난 16년간 꾸준히 증가해, 최신 버전에서는 거의 \u003cstrong\u003e100% 흰색 수준\u003c/strong\u003e에 도달\u003c/li\u003e\n\u003cli\u003e작성자는 \u003cstrong\u003eMacOS 스크린샷 라이브러리\u003c/strong\u003e에서 각 버전의 창 이미지를 수집해 \u003cstrong\u003ePillow로 평균 명도\u003c/strong\u003e를 계산하고 이를 그래프로 시각화...\u003c/p\u003e"
+    },
+    {
+      "title": "그린란드 통제 반대 이유로 8개 유럽국 수입품에 10% 관세 부과 발표",
+      "link": "https://news.hada.io/topic?id=25930",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-19T03:36:38+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e미국이 \u003cstrong\u003e그린란드 통제권\u003c/strong\u003e을 확보하려는 과정에서, 이에 반대한 \u003cstrong\u003e8개 유럽국\u003c/strong\u003e에 대해 10% \u003cstrong\u003e수입 관세\u003c/strong\u003e를 부과할 계획이 발표됨\u003c/li\u003e\n\u003cli\u003e대상 국가는 \u003cstrong\u003e덴마크, 노르웨이, 스웨덴, 프랑스, 독일, 영국, 네덜란드, 핀란드\u003c/strong\u003e이며, 6월 1일까지 합의가...\u003c/p\u003e"
+    },
+    {
+      "title": "터키어 문법 격(case)에 기반한 프로그래밍 언어 Kip",
+      "link": "https://news.hada.io/topic?id=25929",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-19T02:32:37+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eKip\u003c/strong\u003e은 터키어의 \u003cstrong\u003e문법 격과 서법(mood)\u003c/strong\u003e 을 타입 시스템에 통합한 \u003cstrong\u003e실험적 프로그래밍 언어\u003c/strong\u003e로, 자연어 형태론과 타입 이론의 결합을 탐구함\u003c/li\u003e\n\u003cli\u003e터키어의 \u003cstrong\u003e명사 격 변화와 모음 조화\u003c/strong\u003e를 코드 구조에 반영해, 함수 인자 관계를 격 접미사...\u003c/p\u003e"
+    },
+    {
+      "title": "FLUX.2 [klein]: 상호작용형 시각 지능을 향하여",
+      "link": "https://news.hada.io/topic?id=25928",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-19T01:32:43+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eFLUX.2 [klein]\u003c/strong\u003e 은 이미지 생성과 편집을 통합한 \u003cstrong\u003e초고속 시각 생성 모델군\u003c/strong\u003e으로, 1초 미만의 추론 속도와 소비자용 GPU 호환성을 제공\u003c/li\u003e\n\u003cli\u003e텍스트-이미지, 이미지 편집, 다중 참조 생성 기능을 \u003cstrong\u003e단일 아키텍처\u003c/strong\u003e에서 지원하며, 품질은 대형 모델 수준 유...\u003c/p\u003e"
+    },
+    {
+      "title": "마이크로소프트 패치 이후 PC가 종료를 거부함",
+      "link": "https://news.hada.io/topic?id=25927",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-19T00:41:47+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e1월 \u003cstrong\u003ePatch Tuesday 업데이트\u003c/strong\u003e 이후 일부 \u003cstrong\u003eWindows 11 23H2 PC\u003c/strong\u003e가 종료나 최대 절전 모드로 전환되지 않는 문제 발생\u003c/li\u003e\n\u003cli\u003e원인은 \u003cstrong\u003eSecure Launch 기능\u003c/strong\u003e과 관련된 버그로, 가상화 기반 보안을 사용하는 시스템에서 종료·재시작·최대 절전이 완료되지 않음\u003c/l...\u003c/p\u003e"
+    },
+    {
+      "title": "도시 지도를 예술 포스터로 변환하는 MapToPoster",
+      "link": "https://news.hada.io/topic?id=25926",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-19T00:38:47+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e전 세계 \u003cstrong\u003e도시 지도를 미니멀한 예술 포스터\u003c/strong\u003e로 생성할 수 있는 Python 기반 오픈소스 도구\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eOpenStreetMap(OSMnx)\u003c/strong\u003e 데이터를 활용해 도로, 수로, 공원 등의 지형 요소를 시각화하고, \u003cstrong\u003ematplotlib\u003c/strong\u003e으로 렌더링\u003c/li\u003e\n\u003cli\u003e17가지 \u003cstrong\u003e테마 스타일\u003c/s...\u003c/p\u003e"
+    }
+  ],
+  "generatedAt": "2026-01-19T07:08:59.384718726+09:00"
+}
