@@ -1,0 +1,274 @@
+{
+  "date": "2026-01-20",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2026년 1월 19일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** Cloudflare가 인터넷 신뢰의 근간인 ACME 프로토콜 취약점을 해결했으며, 경량화된 AI 모델 Flux.2 Klein이 공개되었고, 개발자들은 '소프트웨어 스타트업의 종말'과 '죽은 인터넷 이론' 사이에서 미래를 고민하고 있습니다.\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### 인터넷 보안의 방패, Cloudflare의 ACME 취약점 방어\nCloudflare가 HTTPS 인증서 발급의 핵심인 ACME(Automated Certificate Management Environment) 검증 로직에서 발견된 심각한 취약점을 완화했습니다. 이 취약점은 공격자가 도메인 소유권을 조작하여 부정 인증서를 발급받을 수 있는 잠재적 위험을 내포하고 있었습니다. Cloudflare는 이를 신속히 패치하여 인터넷 트러스트 체인(Trust Chain)을 보호했습니다. 이는 단순한 버그 수정을 넘어, 자동화된 보안 인프라의 무결성을 지키기 위한 중요한 조치입니다.\n\u003e **Key Point:** 인터넷 보안의 핵심인 인증서 발급 프로세스의 허점을 선제적으로 차단하여 대규모 보안 사고를 예방했습니다. [^2]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. 오픈소스 AI의 경량화 혁명: Flux.2 Klein\nBlack Forest Labs의 Flux.2 모델이 'Klein'이라는 이름의 4B(40억 파라미터) 버전으로 공개되었습니다. 특히 순수 C언어 기반의 추론(Inference) 구현체와 함께 등장하여, 무거운 Python 종속성 없이도 고성능 이미지 생성이 가능해졌습니다. 이는 엣지 디바이스나 저사양 하드웨어에서도 고품질 AI를 구동할 수 있는 길을 열어줍니다.\n- **What:** 40억 파라미터의 경량화 모델 Flux.2 Klein과 C 기반 추론 엔진 공개.\n- **Why:** 거대 모델의 연산 비용 문제를 해결하고 접근성을 높이기 위함.\n- **Impact:** AI 아트 생성 도구들이 더 가벼워지고, 다양한 애플리케이션(플로터 등)에 쉽게 통합될 것입니다. [^9][^24][^20]\n\n### 2. AI 시대의 철학적 논쟁: '죽은 인터넷'과 '추론하는 기계'\n인터넷의 대부분이 봇(Bot)과 AI 생성 콘텐츠로 채워졌다는 '죽은 인터넷 이론(Dead Internet Theory)'이 다시금 주목받고 있습니다. 이와 동시에 AI가 단순히 데이터를 역류(Regurgitate)시키는 '확률적 앵무새'인지, 아니면 진정한 '추론(Reason)'을 하는지에 대한 논쟁도 뜨겁습니다. 최근 벤치마크 점수 회귀 분석은 프론티어 LLM들이 약 3~5조 파라미터 규모임을 시사하며, 모델의 크기와 지능 사이의 상관관계를 다시 생각하게 합니다.\n- **What:** AI 생성 콘텐츠의 범람과 AI 지능의 본질에 대한 회의론과 옹호론의 대립.\n- **Why:** AI가 생성한 수학 증명이나 콘텐츠가 인간의 발견을 대체하는지, 흉내 내는지에 대한 검증 필요성 대두.\n- **Impact:** 콘텐츠 소비 방식의 변화와 AI 모델의 평가 기준이 '암기'에서 '추론'으로 이동할 것입니다. [^7][^18][^26][^28]\n\n### 3. 개발자의 딜레마: 스타트업은 여전히 유효한가?\nHacker News에서는 \"소프트웨어 스타트업이 지금도 할 만한가?\"에 대한 뜨거운 토론이 이어지고 있습니다. AI 코딩 도구의 발전(예: Claude Code, Nanolang)으로 진입 장벽은 낮아졌지만, 시장 포화와 거대 기술 기업의 지배력 강화로 성공 확률은 낮아졌다는 비관론과, 여전히 기회는 있다는 낙관론이 충돌하고 있습니다.\n- **What:** 소프트웨어 창업의 효용성에 대한 현직자들의 격렬한 토론.\n- **Why:** AI로 인한 생산성 향상이 경쟁 심화로 이어지는 역설적 상황.\n- **Impact:** 1인 유니콘 기업의 등장 가능성과 전통적 SaaS 모델의 붕괴가 동시에 점쳐집니다. [^12][^31]\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Dev** | **VS Code Insiders (Jan 2026)** | 버전 1.109 업데이트. 최신 기능을 가장 먼저 체험할 수 있는 빌드. [^1] |\n| **Rust** | **AxumKit** | 프로덕션 레벨의 Rust 백엔드 API 템플릿. Axum 프레임워크 기반. [^4] |\n| **Kotlin** | **kotlin-excel-dsl** | Kotlin DSL을 사용하여 엑셀 파일을 타입 안전(Type-safe)하게 생성하는 라이브러리. [^10] |\n| **AI Tool** | **Sonar CiteScout** | AI가 답변을 생성할 때 참조한 링크와 출처를 역추적하여 찾아주는 도구. [^22] |\n| **Lang** | **Nanolang** | 코딩 LLM이 작성하기 쉽도록 설계된 초소형 실험적 프로그래밍 언어. [^31] |\n| **Paper** | **Origami Programming** | 종이접기(Origami)의 수학적 원리를 프로그래밍과 알고리즘에 적용하는 연구. [^27] |\n| **Fun** | **Claude Code Achievements** | AI 코딩 도구인 Claude Code 사용을 게임처럼 즐길 수 있게 만든 업적 시스템. [^6] |\n| **Resource** | **Package Manager Glossary** | 개발 생태계의 다양한 패키지 매니저 용어를 정리한 용어집. [^29] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n\n#### 💻 개발 \u0026 인프라\n*   **Live Map of What's Running**: 전직 Cloudflare SRE가 만든 실시간 실행 프로세스 시각화 맵. [^23]\n*   **Remote \u0026 LangChain**: Remote사가 LangChain과 LangGraph를 활용해 수천 명의 고객 온보딩을 자동화한 사례. [^33]\n*   **Trustless Dead Man's Switch**: 암호화폐 자산을 위한 신뢰가 필요 없는(Trustless) 데드맨 스위치 프로토콜. [^16]\n\n#### 🤖 AI \u0026 데이터\n*   **Txt2plotter**: Flux.2에서 생성된 이미지를 펜 플로터용 센터라인 벡터로 변환하는 도구. [^20]\n*   **AI in Education Debate**: AI 교육 논쟁이 자꾸 핵심을 놓치는 이유에 대한 비평. [^13]\n*   **Illusion of Discovery**: AI가 생성한 '열린 수학 문제' 증명이 실제로는 발견의 환상일 수 있다는 분석. [^18]\n\n#### ⚖️ 사회, 정책 \u0026 프라이버시\n*   **Texas Police Tracking**: 텍사스 경찰이 휴대전화 추적 소프트웨어에 수백만 달러를 썼지만 사용 내역은 비공개 상태입니다. [^8]\n*   **Minnesota vs Surveillance**: 미네소타주가 트럼프 행정부의 이민세관단속국(ICE) 감시에 맞서 데이터를 보호하려는 움직임. [^32]\n*   **Roundup Lawsuit**: 미 대법원이 제초제 라운드업(Roundup)이 소송으로부터 면책되는지 여부를 결정합니다. [^17]\n\n#### 🎨 디자인 \u0026 문화\n*   **ThinkNext Design**: 미래지향적 디자인 트렌드와 철학을 다루는 아티클. [^5]\n*   **Tesselation Art**: 기하학적 패턴의 반복, 테셀레이션 예술의 세계. [^15]\n*   **Origami and Programming**: 종이접기와 프로그래밍의 구조적 유사성에 대한 에세이. [^19]\n*   **Apple Creator Studio**: 애플의 크리에이터 스튜디오에 대한 관찰과 비평. [^11]\n\n#### 🌍 일반 뉴스 \u0026 기타\n*   **Spain Train Crash**: 스페인에서 발생한 고속열차 충돌 사고로 최소 39명이 사망했습니다. [^3]\n*   **Autism Spectrum**: 자폐 스펙트럼이라는 개념 자체가 완전히 틀렸을 수 있다는 새로운 과학적 시각. [^25]\n*   **Industrial Waste Glacier**: 인도의 대리석 폐기물 매립지가 마치 빙하처럼 빛나는 기이한 풍경. [^30]\n*   **US Territorial Acquisitions**: 미국 영토 획득의 역사를 정리한 위키피디아 테이블. [^14]\n*   **Wordle First Word**: 워들(Wordle) 게임을 시작할 때 가장 좋은 첫 단어에 대한 분석. [^21]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘은 **보안(Cloudflare)**과 **오픈소스 AI(Flux.2)**가 기술적으로 가장 돋보이는 하루였습니다. 하지만 그 이면에는 '죽은 인터넷 이론'이나 '스타트업의 생존'과 같은, 기술 발전이 가져온 **실존적 고민**들이 깊게 깔려 있습니다. AI가 코드를 짜고(Nanolang), 그림을 그리고(Flux), 심지어 인터넷 트래픽의 주류가 되어가는 세상에서, 인간 개발자와 창작자가 설 곳은 어디일까요? 그 답을 찾기 위한 도구들(Geek's Corner)도 계속 나오고 있다는 점이 흥미롭습니다.\n\n---\n\n### Footnotes\n[^1]: January 2026 Insiders (version 1.109) - https://code.visualstudio.com/updates/v1_109\n[^2]: How we mitigated a vulnerability in Cloudflare’s ACME validation logic - https://blog.cloudflare.com/acme-path-vulnerability/\n[^3]: 스페인 고속열차 충돌 사고로 최소 39명 사망 - https://news.hada.io/topic?id=25964\n[^4]: Show GN: AxumKit - 프로덕션 수준의 Rust 백엔드 API 템플릿 - https://news.hada.io/topic?id=25963\n[^5]: ThinkNext Design - https://news.hada.io/topic?id=25962\n[^6]: Show GN: Claude Code Achievements - Claude Code를 게임처럼 즐기는 업적 시스템 - https://news.hada.io/topic?id=25961\n[^7]: 죽은 인터넷 이론 - https://news.hada.io/topic?id=25959\n[^8]: 그림자 속 휴대전화 추적 소프트웨어에 수백만 달러를 투자한 텍사스 경찰, 사용 내역은 공개하지 않아 - https://news.hada.io/topic?id=25957\n[^9]: Flux 2 Klein 순수 C 기반 추론 - https://news.hada.io/topic?id=25956\n[^10]: Show GN: kotlin-excel-dsl - Kotlin DSL로 엑셀 파일을 타입 세이프하게 생성하기 - https://news.hada.io/topic?id=25955\n[^11]: Apple Creator Studio에 관한 소고와 관찰 - https://news.hada.io/topic?id=25954\n[^12]: Ask HN: 소프트웨어 스타트업, 지금도 할 만한가요? - https://news.hada.io/topic?id=25953\n[^13]: Why the AI-in-Education Debate Keeps Missing the Point - https://gilpignol.substack.com/p/why-the-ai-in-education-debate-keeps\n[^14]: United States Territorial Acquisitions - https://en.wikipedia.org/wiki/United_States_territorial_acquisitions_table\n[^15]: Tesselation - https://mymodernmet.com/tessellation-art/\n[^16]: Trustless dead man's switch for crypto - https://www.deadhandprotocol.com/\n[^17]: US Supreme Court to decide if the pesticide Roundup is shielded from lawsuits - https://www.nytimes.com/2026/01/16/climate/supreme-court-roundup-pesticide.html\n[^18]: The Illusion of Discovery: AI-Generated Proofs of 'Open' Math Problems - https://bpatwa.substack.com/p/the-illusion-of-discovery-ai-generated\n[^19]: Origami and Programming - https://medium.com/@amitzur/origami-and-programming-4bddee3a1cb1\n[^20]: Show HN: Txt2plotter – True centerline vectors from Flux.2 for pen plotters - https://github.com/malvarezcastillo/txt2plotter\n[^21]: A good first word for Wordle - https://explainextended.com/2022/01/27/a-good-first-word-for-wordle/\n[^22]: Show HN: Sonar CiteScout – Find the links AI relies on to answer a prompt - https://trysonar.ai/tools/citescout\n[^23]: Show HN: Former Cloudflare SRE building a live map of what's running - https://news.ycombinator.com/item?id=46685040\n[^24]: Flux.2 Klein 4B (Apache 2.0) - https://huggingface.co/black-forest-labs/FLUX.2-klein-4B\n[^25]: What if the idea of the autism spectrum is completely wrong? - https://www.newscientist.com/article/2509117-what-if-the-idea-of-the-autism-spectrum-is-completely-wrong/\n[^26]: Regressions on benchmark scores suggest frontier LLMs ~3-5T params - https://aimlbling-about.ninerealmlabs.com/blog/benchmarks-predict-model-size/\n[^27]: Origami Programming [pdf] - https://www.cs.ox.ac.uk/people/jeremy.gibbons/publications/origami.pdf\n[^28]: Do AI models reason or regurgitate? Why AI is not merely a \"stochastic parrot\" - https://bigthink.com/the-present/do-ai-models-reason-or-regurgitate/\n[^29]: Package Manager Glossary - https://nesbitt.io/2026/01/13/package-manager-glossary.html\n[^30]: The industrial waste site that glitters like a glacier - https://www.nationalgeographic.com/environment/article/kishangarh-dumping-yard-marble-india\n[^31]: Nanolang: A tiny experimental language designed to be targeted by coding LLMs - https://github.com/jordanhubbard/nanolang\n[^32]: Minnesota wants to win a war of attrition - https://www.theverge.com/policy/863632/minnesota-walz-trump-sousveillance-ice\n[^33]: How Remote uses LangChain and LangGraph to onboard thousands of customers with AI - https://www.blog.langchain.com/customers-remote/\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **January 2026 Insiders (version 1.109)**\n   - 출처: Visual Studio Code - Code Editing. Redefined.\n   - 링크: https://code.visualstudio.com/updates/v1_109\n\n2. **How we mitigated a vulnerability in Cloudflare’s ACME validation logic**\n   - 출처: Cloudflare Blog\n   - 링크: https://blog.cloudflare.com/acme-path-vulnerability/\n\n3. **스페인 고속열차 충돌 사고로 최소 39명 사망**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25964\n\n4. **Show GN:  AxumKit - 프로덕션 수준의 Rust 백엔드 API 템플릿**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25963\n\n5. **ThinkNext Design**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25962\n\n6. **Show GN: Claude Code Achievements - Claude Code를 게임처럼 즐기는 업적 시스템**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25961\n\n7. **죽은 인터넷 이론**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25959\n\n8. **그림자 속 휴대전화 추적 소프트웨어에 수백만 달러를 투자한 텍사스 경찰, 사용 내역은 공개하지 않아**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25957\n\n9. **Flux 2 Klein 순수 C 기반 추론**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25956\n\n10. **Show GN: kotlin-excel-dsl - Kotlin DSL로 엑셀 파일을 타입 세이프하게 생성하기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25955\n\n11. **Apple Creator Studio에 관한 소고와 관찰**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25954\n\n12. **Ask HN: 소프트웨어 스타트업, 지금도 할 만한가요?**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=25953\n\n13. **Why the AI-in-Education Debate Keeps Missing the Point**\n   - 출처: Hacker News\n   - 링크: https://gilpignol.substack.com/p/why-the-ai-in-education-debate-keeps\n\n14. **United States Territorial Acquisitions**\n   - 출처: Hacker News\n   - 링크: https://en.wikipedia.org/wiki/United_States_territorial_acquisitions_table\n\n15. **Tesselation**\n   - 출처: Hacker News\n   - 링크: https://mymodernmet.com/tessellation-art/\n\n16. **Trustless dead man's switch for crypto**\n   - 출처: Hacker News\n   - 링크: https://www.deadhandprotocol.com/\n\n17. **US Supreme Court to decide if the pesticide Roundup is shielded from lawsuits**\n   - 출처: Hacker News\n   - 링크: https://www.nytimes.com/2026/01/16/climate/supreme-court-roundup-pesticide.html\n\n18. **The Illusion of Discovery: AI-Generated Proofs of 'Open' Math Problems**\n   - 출처: Hacker News\n   - 링크: https://bpatwa.substack.com/p/the-illusion-of-discovery-ai-generated\n\n19. **Origami and Programming**\n   - 출처: Hacker News\n   - 링크: https://medium.com/@amitzur/origami-and-programming-4bddee3a1cb1\n\n20. **Show HN: Txt2plotter – True centerline vectors from Flux.2 for pen plotters**\n   - 출처: Hacker News\n   - 링크: https://github.com/malvarezcastillo/txt2plotter\n\n21. **A good first word for Wordle**\n   - 출처: Hacker News\n   - 링크: https://explainextended.com/2022/01/27/a-good-first-word-for-wordle/\n\n22. **Show HN: Sonar CiteScout – Find the links AI relies on to answer a prompt**\n   - 출처: Hacker News\n   - 링크: https://trysonar.ai/tools/citescout\n\n23. **Show HN: Former Cloudflare SRE building a live map of what's running**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=46685040\n\n24. **Flux.2 Klein 4B (Apache 2.0)**\n   - 출처: Hacker News\n   - 링크: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B\n\n25. **What if the idea of the autism spectrum is completely wrong?**\n   - 출처: Hacker News\n   - 링크: https://www.newscientist.com/article/2509117-what-if-the-idea-of-the-autism-spectrum-is-completely-wrong/\n\n26. **Regressions on benchmark scores suggest frontier LLMs ~3-5T params**\n   - 출처: Hacker News\n   - 링크: https://aimlbling-about.ninerealmlabs.com/blog/benchmarks-predict-model-size/\n\n27. **Origami Programming [pdf]**\n   - 출처: Hacker News\n   - 링크: https://www.cs.ox.ac.uk/people/jeremy.gibbons/publications/origami.pdf\n\n28. **Do AI models reason or regurgitate? Why AI is not merely a \"stochastic parrot\"**\n   - 출처: Hacker News\n   - 링크: https://bigthink.com/the-present/do-ai-models-reason-or-regurgitate/\n\n29. **Package Manager Glossary**\n   - 출처: Hacker News\n   - 링크: https://nesbitt.io/2026/01/13/package-manager-glossary.html\n\n30. **The industrial waste site that glitters like a glacier**\n   - 출처: Hacker News\n   - 링크: https://www.nationalgeographic.com/environment/article/kishangarh-dumping-yard-marble-india\n\n31. **Nanolang: A tiny experimental language designed to be targeted by coding LLMs**\n   - 출처: Hacker News\n   - 링크: https://github.com/jordanhubbard/nanolang\n\n32. **Minnesota wants to win a war of attrition**\n   - 출처: Hacker News\n   - 링크: https://www.theverge.com/policy/863632/minnesota-walz-trump-sousveillance-ice\n\n33. **How Remote uses LangChain and LangGraph to onboard thousands of customers with AI**\n   - 출처: LangChain Blog\n   - 링크: https://www.blog.langchain.com/customers-remote/\n\n\n",
+  "articles": [
+    {
+      "title": "January 2026 Insiders (version 1.109)",
+      "link": "https://code.visualstudio.com/updates/v1_109",
+      "source": "Visual Studio Code - Code Editing. Redefined.",
+      "category": "tech",
+      "publishedAt": "2026-02-04T17:00:00Z",
+      "description": "\n      \u003cp\u003eLearn what is new in the Visual Studio Code January 2026 Release (1.109).\u003c/p\u003e\n      \u003cp\u003e\u003ca href=\"https://code.visualstudio.com/updates/v1_109\"\u003eRead the full article\u003c/a\u003e\u003c/p\u003e\n    "
+    },
+    {
+      "title": "How we mitigated a vulnerability in Cloudflare’s ACME validation logic",
+      "link": "https://blog.cloudflare.com/acme-path-vulnerability/",
+      "source": "Cloudflare Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-19T14:00:00Z",
+      "description": " A vulnerability was recently identified in Cloudflare’s automation of certificate validation. Here we explain the vulnerability and outline the steps we’ve taken to mitigate it.  "
+    },
+    {
+      "title": "스페인 고속열차 충돌 사고로 최소 39명 사망",
+      "link": "https://news.hada.io/topic?id=25964",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-20T05:33:30+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e남부 스페인 아다무스(Adamuz) 인근에서 \u003cstrong\u003e마드리드행 고속열차가 탈선 후 맞은편 열차와 충돌\u003c/strong\u003e, 최소 39명이 사망하고 수십 명이 부상\u003c/li\u003e\n\u003cli\u003e두 열차에는 \u003cstrong\u003e승객과 승무원 약 400명\u003c/strong\u003e이 탑승했으며, 122명이 치료를 받았고 43명은 병원에 입원 중, 그중 13명은 중환자실에 있음...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN:  AxumKit - 프로덕션 수준의 Rust 백엔드 API 템플릿",
+      "link": "https://news.hada.io/topic?id=25963",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-20T03:42:15+09:00",
+      "description": "\u003cp\u003eRust로 백엔드를 만들어보면서 자주 쓰게 되는 구조와 패턴들을 정리해서 템플릿으로 만들었습니다.\u003c/p\u003e\n\u003ch2\u003e포함된 기능\u003c/h2\u003e\n\u003cp\u003e🔐 인증: Redis 세션 + OAuth2 (Google/GitHub)\u003cbr /\u003e\n🗄️ 데이터베이스: PostgreSQL + SeaORM + migrations\u003cbr /\u003e\n⚙️ 백그라운드 워커: NATS JetStream (이메일, 검색 인덱싱, cron"
+    },
+    {
+      "title": "ThinkNext Design",
+      "link": "https://news.hada.io/topic?id=25962",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-20T01:33:21+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e브랜드 정체성과 가치\u003c/strong\u003e를 시각적·물리적·경험적으로 구현하는 디자인 철학을 중심으로, 감성과 목적을 결합한 창의적 결과물 제시\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e공감과 목적성\u003c/strong\u003e을 출발점으로 사용자의 욕구를 이해하고, 새로운 것과 익숙한 것을 재해석하는 접근 강조\u003c/li\u003e\n\u003cli\u003eIBM과 Lenovo 제...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: Claude Code Achievements - Claude Code를 게임처럼 즐기는 업적 시스템",
+      "link": "https://news.hada.io/topic?id=25961",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-19T21:47:52+09:00",
+      "description": "\u003cp\u003eClaude Code를 처음 배울 때 어떤 기능이 있는지, 뭘 써봐야 하는지 막막할 수 있습니다.\u003c/p\u003e\n\u003cp\u003e이 플러그인은 Claude Code 사용 경험을 게임화합니다.\u003cbr /\u003e\n파일 편집, 커밋, MCP 연동, 서브에이전트 활용 등 다양한 기능을 사용할 때마다\u003cbr /\u003e\n업적이 해금되고 알림이 뜹니다.\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e🏆 4개 스킬 트리에 "
+    },
+    {
+      "title": "죽은 인터넷 이론",
+      "link": "https://news.hada.io/topic?id=25959",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-19T19:33:30+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eAI 생성 콘텐츠\u003c/strong\u003e가 인터넷 상호작용의 상당 부분을 차지하게 된 현상을 다룸\u003c/li\u003e\n\u003cli\u003eHackerNews에서 \u003cstrong\u003e오픈소스 프로젝트의 AI 생성 여부\u003c/strong\u003e를 두고 벌어진 논쟁을 계기로, 작성자는 댓글조차 AI가 쓴 것처럼 보이는 패턴을 관찰\u003c/li\u003e\n\u003cli\u003e과거 IRC와 phpBB 포럼 시절에는 \u003cstr...\u003c/p\u003e"
+    },
+    {
+      "title": "그림자 속 휴대전화 추적 소프트웨어에 수백만 달러를 투자한 텍사스 경찰, 사용 내역은 공개하지 않아",
+      "link": "https://news.hada.io/topic?id=25957",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-19T15:36:50+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e텍사스 여러 경찰 기관이 \u003cstrong\u003eAI 기반 휴대전화 위치 추적 소프트웨어 ‘Tangles’\u003c/strong\u003e 에 최소 800만 달러 이상을 지출했으나, 실제 사용 사례나 성과를 공개하지 않음\u003c/li\u003e\n\u003cli\u003e이 소프트웨어는 \u003cstrong\u003e이스라엘 군 출신들이 설립한 Cobwebs Technologies\u003c/strong\u003e가 개발했으며, 현재는 \u003cstrong\u003eP...\u003c/p\u003e"
+    },
+    {
+      "title": "Flux 2 Klein 순수 C 기반 추론",
+      "link": "https://news.hada.io/topic?id=25956",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-19T15:33:50+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eFLUX.2-klein-4B 모델\u003c/strong\u003e을 이용해 텍스트나 이미지를 입력으로 \u003cstrong\u003e이미지를 생성\u003c/strong\u003e하는 순수 C 구현체\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e외부 의존성 없이 동작\u003c/strong\u003e하며, 선택적으로 \u003cstrong\u003eBLAS 또는 Metal 가속\u003c/strong\u003e을 통해 최대 30배 속도 향상 가능\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eQwen3-4B 텍...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: kotlin-excel-dsl - Kotlin DSL로 엑셀 파일을 타입 세이프하게 생성하기",
+      "link": "https://news.hada.io/topic?id=25955",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-19T12:52:19+09:00",
+      "description": "\u003cp\u003eKotlin에서 엑셀 파일을 만들 때마다 Apache POI의 장황한 코드가 불편했습니다. 셀 하나 만들려면 Workbook → Sheet → Row → Cell을 거쳐야 하고, 스타일 적용은 더 복잡하죠.\u003c/p\u003e\n\u003cp\u003e그래서 Kotlin DSL로 엑셀 생성을 단순화하는 라이브러리를 만들었습니다.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eGitHub:\u003c/strong\u003e https://github.co"
+    },
+    {
+      "title": "Apple Creator Studio에 관한 소고와 관찰",
+      "link": "https://news.hada.io/topic?id=25954",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-19T11:18:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eApple이 \u003cstrong\u003eFinal Cut Pro, Logic Pro, Motion, Pixelmator Pro\u003c/strong\u003e 등 전문 창작 앱을 하나의 \u003cstrong\u003eCreator Studio 구독 번들\u003c/strong\u003e로 묶어 출시했으며, iWork 앱(Keynote, Pages, Numbers)의 일부 신기능도 유료화\u003c/li\u003e\n\u003cli\u003e새로운 앱 아이콘들은 \u003cstrong\u003eLiquid Glass 디자인 가이드라인\u003c/s...\u003c/p\u003e"
+    },
+    {
+      "title": "Ask HN: 소프트웨어 스타트업, 지금도 할 만한가요?",
+      "link": "https://news.hada.io/topic?id=25953",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-19T10:36:02+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e소프트웨어에서 \u003cstrong\u003e해자(moat)\u003c/strong\u003e 가 약해졌고 \u003cstrong\u003e대기업이 빠르게 복제할수 있기 때문\u003c/strong\u003e에 걱정이라는 질문에 대한 답변들\u003c/li\u003e\n\u003cli\u003e기능이 아니라 \u003cstrong\u003e실행·유통·신뢰·워크플로 이해\u003c/strong\u003e가 핵심 경쟁력이 되면서 해자가 이동했음\u003c/li\u003e\n\u003cli\u003e대기업보다 더 현실적인 위협으로...\u003c/p\u003e"
+    },
+    {
+      "title": "Why the AI-in-Education Debate Keeps Missing the Point",
+      "link": "https://gilpignol.substack.com/p/why-the-ai-in-education-debate-keeps",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-19T22:04:03Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://gilpignol.substack.com/p/why-the-ai-in-education-debate-keeps\"\u003ehttps://gilpignol.substack.com/p/why-the-ai-in-education-debate-keeps\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46685145\"\u003ehttps://news.ycombinator.com/item?id=46685145\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "United States Territorial Acquisitions",
+      "link": "https://en.wikipedia.org/wiki/United_States_territorial_acquisitions_table",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-19T22:02:36Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://en.wikipedia.org/wiki/United_States_territorial_acquisitions_table\"\u003ehttps://en.wikipedia.org/wiki/United_States_territorial_acquisitions_table\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46685134\"\u003ehttps://news.ycombinator.com/item?id=46685134\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Tesselation",
+      "link": "https://mymodernmet.com/tessellation-art/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-19T22:01:05Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://mymodernmet.com/tessellation-art/\"\u003ehttps://mymodernmet.com/tessellation-art/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46685112\"\u003ehttps://news.ycombinator.com/item?id=46685112\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Trustless dead man's switch for crypto",
+      "link": "https://www.deadhandprotocol.com/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-19T22:00:19Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.deadhandprotocol.com/\"\u003ehttps://www.deadhandprotocol.com/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46685107\"\u003ehttps://news.ycombinator.com/item?id=46685107\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "US Supreme Court to decide if the pesticide Roundup is shielded from lawsuits",
+      "link": "https://www.nytimes.com/2026/01/16/climate/supreme-court-roundup-pesticide.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-19T21:59:48Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nytimes.com/2026/01/16/climate/supreme-court-roundup-pesticide.html\"\u003ehttps://www.nytimes.com/2026/01/16/climate/supreme-court-roundup-pesticide.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46685096\"\u003ehttps://news.ycombinator.com/item?id=46685096\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Illusion of Discovery: AI-Generated Proofs of 'Open' Math Problems",
+      "link": "https://bpatwa.substack.com/p/the-illusion-of-discovery-ai-generated",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-19T21:58:50Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://bpatwa.substack.com/p/the-illusion-of-discovery-ai-generated\"\u003ehttps://bpatwa.substack.com/p/the-illusion-of-discovery-ai-generated\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46685079\"\u003ehttps://news.ycombinator.com/item?id=46685079\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Origami and Programming",
+      "link": "https://medium.com/@amitzur/origami-and-programming-4bddee3a1cb1",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-19T21:58:13Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://medium.com/@amitzur/origami-and-programming-4bddee3a1cb1\"\u003ehttps://medium.com/@amitzur/origami-and-programming-4bddee3a1cb1\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46685073\"\u003ehttps://news.ycombinator.com/item?id=46685073\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Txt2plotter – True centerline vectors from Flux.2 for pen plotters",
+      "link": "https://github.com/malvarezcastillo/txt2plotter",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-19T21:57:03Z",
+      "description": "\n\u003cp\u003eI’ve been working on a project to bridge the gap between AI generation and my AxiDraw, and I think I finally have a workflow that avoids the usual headaches.\u003cp\u003eIf you’ve tried plotting AI-generated images, you probably know the struggle: generic tracing tools (like Potrace) trace the \u003ci\u003eoutline\u003c/i\u003e of a line, resulting in double-strokes that ruin the look and take twice as long to plot.\u003cp\u003eWhat I tried previously:\u003cp\u003e- Potrace / Inkscape Trace: Great for filled shapes, but results in \"hollow\" lines for line art.\u003cp\u003e- Canny Edge Detection: Often too messy; it picks up noise and creates jittery paths.\u003cp\u003e- Standard SDXL: Struggled with geometric coherence, often breaking lines or hallucinating perspective.\u003cp\u003e- A bunch of projects that claimed to be txt2svg but which produced extremely poor results, at least for pen plotting. (Chat2SVG, StarVector, OmniSVG, DeepSVG, SVG-VAE, VectorFusion, DiffSketcher, SVGDreamer, SVGDreamer++, NeuralSVG, SVGFusion, VectorWeaver, SwiftSketch, CLIPasso, CLIPDraw, InternSVG)\u003cp\u003eMy Approach:\u003cp\u003eI ended up writing a Python tool that combines a few specific technologies to get a true \"centerline\" vector:\u003cp\u003e1. Prompt Engineering: An LLM rewrites the prompt to enforce a \"Technical Drawing\" style optimized for the generator.\u003cp\u003e2. Generation: I'm using Flux.2-dev (4-bit). It seems significantly better than SDXL at maintaining straight lines and coherent geometry.\u003cp\u003e3. Skeletonization: This is the key part. Instead of tracing contours, I use Lee’s Method (via scikit-image) to erode the image down to a 1-pixel wide skeleton. This recovers the actual stroke path.\u003cp\u003e4. Graph Conversion: The pixel skeleton is converted into a graph to identify nodes and edges, pruning out small artifacts/noise.\u003cp\u003e5. Optimization: Finally, I feed it into vpype to merge segments and sort the paths (TSP) so the plotter isn't jumping around constantly.\u003cp\u003eYou can see the results in the examples inside the Github repo.\u003cp\u003eThe project is currently quite barebones, but it produces better results than other options I've tested so I'm publishing it. I'm interested in implementing better pre/post processing, API-based generation, and identifying shapes for cross-hatching.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46685064\"\u003ehttps://news.ycombinator.com/item?id=46685064\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "A good first word for Wordle",
+      "link": "https://explainextended.com/2022/01/27/a-good-first-word-for-wordle/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-19T21:56:13Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://explainextended.com/2022/01/27/a-good-first-word-for-wordle/\"\u003ehttps://explainextended.com/2022/01/27/a-good-first-word-for-wordle/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46685055\"\u003ehttps://news.ycombinator.com/item?id=46685055\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Sonar CiteScout – Find the links AI relies on to answer a prompt",
+      "link": "https://trysonar.ai/tools/citescout",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-19T21:55:35Z",
+      "description": "\n\u003cp\u003eHey HN!\u003cp\u003eI'm experimenting with tools that you help you understand what kind of content affects your visibility in AI search queries.\u003cp\u003eI built something that lets you quickly run a prompt on ChatGPT, Perplexity, Google AI Overview several times in the browser and grabs all the links AI cites and ranks them. The idea is to eventually help you reach out to authors and get backlinks to your own product.\u003cp\u003eYou can try it out here: \u003ca href=\"https://trysonar.ai/tools/citescout\" rel=\"nofollow\"\u003ehttps://trysonar.ai/tools/citescout\u003c/a\u003e\u003cp\u003eUse discount code HACKERNEWS100 to get 10x, 25x queries for free\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46685047\"\u003ehttps://news.ycombinator.com/item?id=46685047\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Former Cloudflare SRE building a live map of what's running",
+      "link": "https://news.ycombinator.com/item?id=46685040",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-19T21:55:01Z",
+      "description": "\n\u003cp\u003eHey HN, I’m Kenneth. I spent several years as a Senior SRE at Cloudflare.\u003cp\u003eOne thing that became painfully clear over time is that most outages, security issues, and compliance fire drills don’t come from a lack of tools. They come from missing context. People don’t know what’s running, how things connect, or what changed recently, especially once systems sprawl across clouds, repos, and teams.\u003cp\u003eThat’s why I’m building OpsCompanion.\u003cp\u003eThe goal is simple: keep a live, shared picture of what’s actually running and how it fits together.\u003cp\u003eOpsCompanion helps engineers:\u003cp\u003eSee a live, visual map of services, infrastructure, and dependencies\u003cp\u003eAnswer “what changed?” without digging through five tools, Slack threads, or outdated docs\u003cp\u003ePreserve operational context so the next person on call isn’t starting from zero\u003cp\u003eThis isn’t about adding more logs or alerts, or slapping AI on top of existing dashboards. It’s about capturing the mental model experienced operators carry in their heads and keeping it shared and up to date.\u003cp\u003eIt’s still early, and there are rough edges. I’ve opened it up to a small group of engineers who work close to production so I can get honest feedback. If it’s useful, great. If not, I genuinely want to understand why and what would make it better.\u003cp\u003eYou can try it here:\n\u003ca href=\"https://opscompanion.ai/?utm_source=hn\u0026utm_medium=show_hn\u0026utm_campaign=jan_2026\" rel=\"nofollow\"\u003ehttps://opscompanion.ai/?utm_source=hn\u0026utm_medium=show_hn\u0026ut...\u003c/a\u003e\u003cp\u003eI’ll be around in the comments. Happy to answer technical questions, hear skepticism, get a bit roasted, or talk about what actually breaks in real systems.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46685040\"\u003ehttps://news.ycombinator.com/item?id=46685040\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 2\u003c/p\u003e\n"
+    },
+    {
+      "title": "Flux.2 Klein 4B (Apache 2.0)",
+      "link": "https://huggingface.co/black-forest-labs/FLUX.2-klein-4B",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-19T21:54:03Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://huggingface.co/black-forest-labs/FLUX.2-klein-4B\"\u003ehttps://huggingface.co/black-forest-labs/FLUX.2-klein-4B\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46685035\"\u003ehttps://news.ycombinator.com/item?id=46685035\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 12\u003c/p\u003e\n\u003cp\u003e# Comments: 5\u003c/p\u003e\n"
+    },
+    {
+      "title": "What if the idea of the autism spectrum is completely wrong?",
+      "link": "https://www.newscientist.com/article/2509117-what-if-the-idea-of-the-autism-spectrum-is-completely-wrong/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-19T21:53:40Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.newscientist.com/article/2509117-what-if-the-idea-of-the-autism-spectrum-is-completely-wrong/\"\u003ehttps://www.newscientist.com/article/2509117-what-if-the-idea-of-the-autism-spectrum-is-completely-wrong/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46685031\"\u003ehttps://news.ycombinator.com/item?id=46685031\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Regressions on benchmark scores suggest frontier LLMs ~3-5T params",
+      "link": "https://aimlbling-about.ninerealmlabs.com/blog/benchmarks-predict-model-size/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-19T21:52:58Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://aimlbling-about.ninerealmlabs.com/blog/benchmarks-predict-model-size/\"\u003ehttps://aimlbling-about.ninerealmlabs.com/blog/benchmarks-predict-model-size/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46685016\"\u003ehttps://news.ycombinator.com/item?id=46685016\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Origami Programming [pdf]",
+      "link": "https://www.cs.ox.ac.uk/people/jeremy.gibbons/publications/origami.pdf",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-19T21:52:12Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.cs.ox.ac.uk/people/jeremy.gibbons/publications/origami.pdf\"\u003ehttps://www.cs.ox.ac.uk/people/jeremy.gibbons/publications/origami.pdf\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46685010\"\u003ehttps://news.ycombinator.com/item?id=46685010\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Do AI models reason or regurgitate? Why AI is not merely a \"stochastic parrot\"",
+      "link": "https://bigthink.com/the-present/do-ai-models-reason-or-regurgitate/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-19T21:51:46Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://bigthink.com/the-present/do-ai-models-reason-or-regurgitate/\"\u003ehttps://bigthink.com/the-present/do-ai-models-reason-or-regurgitate/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46685004\"\u003ehttps://news.ycombinator.com/item?id=46685004\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Package Manager Glossary",
+      "link": "https://nesbitt.io/2026/01/13/package-manager-glossary.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-19T21:49:51Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://nesbitt.io/2026/01/13/package-manager-glossary.html\"\u003ehttps://nesbitt.io/2026/01/13/package-manager-glossary.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46684975\"\u003ehttps://news.ycombinator.com/item?id=46684975\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The industrial waste site that glitters like a glacier",
+      "link": "https://www.nationalgeographic.com/environment/article/kishangarh-dumping-yard-marble-india",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-19T21:49:28Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nationalgeographic.com/environment/article/kishangarh-dumping-yard-marble-india\"\u003ehttps://www.nationalgeographic.com/environment/article/kishangarh-dumping-yard-marble-india\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46684972\"\u003ehttps://news.ycombinator.com/item?id=46684972\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Nanolang: A tiny experimental language designed to be targeted by coding LLMs",
+      "link": "https://github.com/jordanhubbard/nanolang",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-19T21:48:07Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/jordanhubbard/nanolang\"\u003ehttps://github.com/jordanhubbard/nanolang\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46684958\"\u003ehttps://news.ycombinator.com/item?id=46684958\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Minnesota wants to win a war of attrition",
+      "link": "https://www.theverge.com/policy/863632/minnesota-walz-trump-sousveillance-ice",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-19T21:44:38Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.theverge.com/policy/863632/minnesota-walz-trump-sousveillance-ice\"\u003ehttps://www.theverge.com/policy/863632/minnesota-walz-trump-sousveillance-ice\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46684913\"\u003ehttps://news.ycombinator.com/item?id=46684913\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 4\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "How Remote uses LangChain and LangGraph to onboard thousands of customers with AI",
+      "link": "https://www.blog.langchain.com/customers-remote/",
+      "source": "LangChain Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-19T16:00:07Z",
+      "description": "\u003cp\u003e\u003cem\u003eGuest post written by Jos\u0026#xE9; Mussa (Staff Software Engineer @ Remote)\u003c/em\u003e\u003c/p\u003e\u003cp\u003e\u003ca href=\"https://remote.com/?ref=blog.langchain.com\"\u003e\u003cu\u003eRemote\u003c/u\u003e\u003c/a\u003e is a fast-growing startup helping companies hire, manage, and pay employees globally from a single platform. Remote\u0026#x2019;s customers operate across many countries and regulatory environments, and they trust Remote as the system of record for their\u003c/p\u003e"
+    }
+  ],
+  "generatedAt": "2026-01-20T07:09:51.908702596+09:00"
+}
