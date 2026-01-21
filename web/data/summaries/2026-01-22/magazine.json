@@ -1,0 +1,496 @@
+{
+  "date": "2026-01-22",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2026년 1월 21일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** 엔비디아가 정의한 AI 인프라의 미래, 구글과 OpenAI가 벌이는 교육 시장 점유율 전쟁, 그리고 에이전트 AI의 실효성에 대한 논쟁이 뜨거운 하루입니다.\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### 🌍 인류 역사상 최대의 인프라 구축: 엔비디아 젠슨 황의 다보스 선언\n엔비디아 CEO 젠슨 황이 다보스 포럼(WEF)에서 현재 진행 중인 AI 인프라 확장을 \"인류 역사상 가장 큰 규모의 컴퓨팅 인프라 구축\"이라고 정의했습니다. 그는 AI 생태계를 '5단 케이크(Five-Layer Cake)'에 비유하며, 칩셋부터 최종 애플리케이션에 이르는 계층 구조가 어떻게 산업 전반을 재편할지 설명했습니다. 이는 단순한 하드웨어 판매를 넘어, 국가 단위의 '소버린 AI(Sovereign AI)' 구축이 필수적인 시대가 도래했음을 시사합니다.\n\u003e **Key Point:** AI 인프라는 이제 기업의 투자를 넘어 국가 경쟁력을 좌우하는 핵심 자산이 되었습니다. [^59]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. 교실로 들어온 AI 전쟁: Google vs OpenAI\n구글과 OpenAI가 교육 시장(EdTech)을 두고 정면으로 충돌하고 있습니다.\n- **What:** 구글은 'Bett 2026'을 기점으로 제미나이(Gemini)를 클래스룸, 크롬북, Vids 등 교육용 도구 전반에 통합하고, 옥스퍼드 대학 및 칸 아카데미와 협력하여 고등 교육용 AI 도구를 출시했습니다. 반면, OpenAI는 국가 차원의 AI 교육 도입을 지원하는 'Edu for Countries'를 발표했습니다.\n- **Why:** 미래 세대인 학생들에게 자사 AI 생태계를 먼저 노출시켜 '락인(Lock-in)' 효과를 노리는 동시에, 교육 데이터라는 양질의 텍스트를 확보하기 위함입니다.\n- **Impact:** 구글은 기존 워크스페이스 점유율을 방어하려 하고, OpenAI는 정부와의 직접 협력을 통해 공교육 인프라 자체를 공략하고 있습니다. [^3][^23][^25][^27][^31]\n\n### 2. \"AI 에이전트, 진짜 돈이 됩니까?\" : 기대와 검증\nAI 에이전트 기술이 성숙기에 접어들며 실효성 검증 단계에 진입했습니다.\n- **What:** 랭체인(LangChain)은 복잡한 에이전트 구축을 돕는 'Deep Agents'와 템플릿 빌더를 공개했고, 오픈소스 진영에서는 9개의 Claude 에이전트가 협업하는 시스템이나 결정론적 제어 플레인인 'Faramesh'가 등장했습니다.\n- **Why:** 단순 챗봇을 넘어 실제 업무를 수행(Action)하는 에이전트에 대한 수요가 폭발하고 있으나, \"실제로 코딩 에이전트가 효과가 있는가?\"에 대한 회의적인 시각과 증거를 요구하는 목소리도 커지고 있습니다.\n- **Impact:** 기업들은 이제 '신기한 데모'가 아닌, 실제 워크플로우에서의 안정성과 비용 효율성을 기준으로 에이전트 도입을 결정하게 될 것입니다. [^7][^12][^39][^60][^61]\n\n### 3. 메타(Meta) 법무팀의 윤리적 붕괴\n메타의 법무팀이 기업의 윤리적 의무를 저버렸다는 내부 고발 및 분석이 제기되었습니다.\n- **What:** 메타 내부 법무팀이 규제 회피와 이익 극대화를 위해 윤리적 가이드라인을 무시하거나 우회했다는 주장이 나왔습니다.\n- **Why:** 빅테크 기업 내에서 '성장'과 '안전'이 충돌할 때, 법무팀이 견제 장치가 아닌 경영진의 방패막이로 전락하는 현상을 보여줍니다.\n- **Impact:** 이는 향후 AI 규제 및 플랫폼 책임론과 맞물려 빅테크 기업에 대한 법적 감시가 더욱 강화되는 계기가 될 것입니다. [^5]\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **GitHub Copilot CLI** | 터미널에서 자연어로 명령어를 실행하는 Copilot CLI의 필수 슬래시 커맨드 치트시트입니다. [^1][^37] |\n| **Tool** | **CmdLens** | Claude Code 명령어 실행 전, 해당 명령의 위험도를 자동으로 분석하고 경고해주는 보안 플러그인입니다. [^8] |\n| **Tool** | **Grov** | AI 코딩 에이전트를 위한 오픈소스 멀티플레이어 환경으로, 협업 코딩의 새로운 가능성을 제시합니다. [^51] |\n| **Tool** | **mdto.page** | 마크다운(Markdown) 문서를 즉시 공유 가능한 웹페이지나 PDF로 변환해주는 간편 도구입니다. [^14] |\n| **Paper** | **AssetOpsBench** | AI 에이전트 벤치마크와 실제 산업 현장 간의 격차를 줄이기 위해 IBM과 Hugging Face가 제안한 새로운 평가 프레임워크입니다. [^20] |\n| **Resource** | **PostgreSQL 최적화** | 전통적인 인덱싱 외에 잘 알려지지 않은 비전통적 DB 최적화 기법을 다룹니다. [^9] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n\n#### 💻 개발 \u0026 인프라\n*   **VS Code 2026년 1월 업데이트 (v1.109)**: 새로운 기능과 버그 수정이 포함된 최신 버전이 릴리스되었습니다. [^32]\n*   **IntelliJ IDEA Conf 2026**: JVM 생태계 개발자들을 위한 컨퍼런스 일정이 공개되었습니다. [^58]\n*   **Chrome 업데이트**: 데스크탑(Stable/Beta), iOS, Android용 크롬 브라우저가 일제히 보안 및 기능 업데이트를 진행했습니다. [^15][^16][^17][^18][^19]\n*   **IPv6 보안 오해**: IPv6는 NAT(네트워크 주소 변환)가 없다고 해서 보안에 취약한 것이 아니라는 기술적 분석입니다. [^6]\n*   **Slack의 B2C 잠재력**: 슬랙이 가진 '맥락(Context)' 데이터가 향후 B2C 플랫폼으로서 엄청난 가치를 지닌다는 분석입니다. [^10]\n*   **Google Antigravity**: Jira 앱 개발을 위한 구글의 새로운 프레임워크 리뷰입니다. [^36]\n*   **AI 협업 합의**: 개발팀 내에서 AI 도구 사용에 대한 명확한 규칙(Working Agreement)을 정하는 것이 생산성을 높인다는 아틀라시안의 조언입니다. [^35]\n*   **Terminal UIs (Ruby)**: 루비(Ruby) 언어로 터미널 UI를 구축하는 현대적인 방법론을 소개합니다. [^52]\n*   **Unicode Explorer**: 유니코드 문자를 탐색하고 검색할 수 있는 웹 기반 도구입니다. [^56]\n*   **Review.fast**: 풀 리퀘스트(PR)를 더 쉽게 이해하고 리뷰할 수 있도록 돕는 도구입니다. [^40]\n*   **FSNotes 7**: 맥용 초고속 플레인 텍스트 메모 앱의 메이저 업데이트 버전입니다. [^54]\n*   **Velvet**: 멀티모달 프로그램 검증을 위한 새로운 프레임워크 연구입니다. [^47]\n*   **Robust Software**: 영국 법률에서 소프트웨어를 설명할 때 'Robust(견고한)'라는 단어가 어떻게 해석되는지에 대한 고찰입니다. [^50]\n\n#### 🤖 AI \u0026 데이터\n*   **Higgsfield**: 간단한 아이디어를 영화 같은 소셜 비디오로 변환해주는 OpenAI의 새로운 파트너/기술 소개입니다. [^2]\n*   **국가적 역량 오버행(Overhang)**: 국가들이 AI 잠재력을 낭비하지 않고 실제 역량으로 전환하는 방법에 대한 OpenAI의 제언입니다. [^4]\n*   **엔비디아 주가 예측**: 엔비디아 주가 폭락 확률을 수학적으로 모델링하여 예측한 흥미로운 시도입니다. [^13]\n*   **Palantir CEO 발언**: AI가 대규모 이민의 필요성을 없앨 것이라는 팔란티어 CEO의 논쟁적인 발언입니다. [^45]\n*   **AI 시민 행동 계획**: 지금 당장 시작할 수 있는 AI 시대의 시민 행동 가이드 영상입니다. [^49]\n*   **ImproveThis**: 수신자에 맞춰 메시지 톤을 자동으로 다듬어주는 AI 도구입니다. [^53]\n\n#### ☁️ 구글 생태계 \u0026 교육 (Education Blitz)\n*   **유튜브 2026 계획**: 닐 모한(Neal Mohan)이 밝힌 2026년 유튜브의 주요 로드맵입니다. [^22]\n*   **프리미엄 AI 교육**: 교사와 학생을 위한 프리미엄 구글 AI 기능이 확대 제공됩니다. [^24]\n*   **SAT 연습 with Gemini**: 제미나이를 통해 SAT 모의고사를 연습할 수 있는 기능이 추가되었습니다. [^26][^33]\n*   **Google Vids 우승작**: 2025년 구글 Vids 교육 영화제 우승작이 발표되었습니다. [^28]\n*   **ChromeOS 교실 협업**: 교실 내 협업을 지원하는 크롬OS의 새로운 도구들이 공개되었습니다. [^29]\n*   **Workspace 보안 강화**: 교육용 구글 워크스페이스에 새로운 보안 및 AI 감지 기능이 추가되었습니다. [^30]\n*   **Fitbit 2026 목표**: 새해 건강 목표 달성을 돕는 핏빗의 3가지 주요 건강 통계 데이터입니다. [^21]\n*   **Gemini \u0026 Classroom**: 제미나이와 구글 클래스룸의 통합 업데이트 내용입니다. [^34]\n\n#### 🔬 과학 \u0026 사회 \u0026 기타\n*   **캘리포니아 가뭄 해소**: 25년 만에 캘리포니아의 가뭄이 완전히 해소되었다는 기후 뉴스입니다. [^11]\n*   **우주 구조 형성 이론**: 우주 구조 형성을 설명하는 새로운 모델인 'Blowtorch Theory'가 소개되었습니다. [^38]\n*   **가장 오래된 손자국**: 술라웨시 동굴에서 발견된 손 스텐실이 인류 역사상 가장 오래된 암각화로 밝혀졌습니다. [^43]\n*   **Polymarket 스푸핑**: 예측 시장 플랫폼 폴리마켓에서 발생하는 시세 조종(Spoofing) 현상에 대한 분석입니다. [^41]\n*   **가격 정책과 신뢰**: SaaS 가격 모델 변경이 언제 사용자 신뢰를 깨뜨리는지에 대한 토론입니다. [^46]\n*   **일회용 전자기기**: 일회용 전자기기의 분해 산물이 환경에 미치는 영향에 대한 네이처 논문입니다. [^57]\n*   **Gertrude Stein**: 작가 거트루드 스타인에 대한 위키피디아 문서가 화제가 되었습니다. [^42]\n*   **Pencil**: 창의적인 작업을 돕는 도구(또는 플랫폼) 'Pencil'에 대한 소개입니다. [^44]\n*   **Non-zero-sum 게임**: 비영합(Non-zero-sum) 개념과 창발적 현상을 다루는 시뮬레이션 게임 모음입니다. [^48]\n*   **4천만 달러짜리 직업**: 2019년의 글이 재조명되었으며, 고액 연봉 직업의 이면을 다룹니다. [^55]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘 뉴스는 \"**인프라와 교육**\"이라는 두 가지 거대한 축으로 요약됩니다. 엔비디아는 하드웨어 인프라를 깔고, 구글과 OpenAI는 그 위에서 자라날 미래 세대(교육)를 선점하려 경쟁하고 있습니다. 한편, 개발자들에게는 '에이전트'가 단순한 흥미를 넘어 실제 '도구'로 정착할 수 있을지 검증하는 시기가 도래했습니다. 기술의 발전 속도만큼이나, 이를 받아들이는 사회적/윤리적 합의(메타 사태, AI 시민 행동)도 중요해지고 있음을 잊지 말아야겠습니다.\n\n---\n\n[^1]: A cheat sheet to slash commands in GitHub Copilot CLI - https://github.blog/ai-and-ml/github-copilot/a-cheat-sheet-to-slash-commands-in-github-copilot-cli/\n[^2]: How Higgsfield turns simple ideas into cinematic social videos - https://openai.com/index/higgsfield\n[^3]: Introducing Edu for Countries - https://openai.com/index/edu-for-countries\n[^4]: How countries can end the capability overhang - https://openai.com/index/how-countries-can-end-the-capability-overhang\n[^5]: 메타 법무팀이 윤리적 의무를 저버렸다 - https://news.hada.io/topic?id=26022\n[^6]: IPv6는 NAT가 없다고 해서 보안에 취약하지 않다 - https://news.hada.io/topic?id=26021\n[^7]: 에이전틱 코딩이 실제로 효과가 있는지에 대한 증거를 묻는 질문 - https://news.hada.io/topic?id=26020\n[^8]: Show GN: CmdLens - Claude Code 명령어 실행 전 위험도를 자동으로 표시하는 플러그인 - https://news.hada.io/topic?id=26019\n[^9]: 비전통적 PostgreSQL 최적화 기법 - https://news.hada.io/topic?id=26018\n[^10]: 인공지능 시대의 Slack: 금광 \"맥락\"을 독점하는 진짜 돈 버는 B2C 플랫폼 - https://news.hada.io/topic?id=26017\n[^11]: 캘리포니아, 25년 만에 가뭄 완전 해소 - https://news.hada.io/topic?id=26015\n[^12]: Show GN: 9개의 Claude 에이전트가 협업하는 멀티에이전트 개발 시스템 - https://news.hada.io/topic?id=26013\n[^13]: Nvidia 주가 폭락 확률 예측 - https://news.hada.io/topic?id=26012\n[^14]: Show GN: mdto.page – 마크다운을 바로 공유 가능한 웹페이지와 PDF로 - https://news.hada.io/topic?id=26011\n[^15]: Chrome Beta for Desktop Update - http://chromereleases.googleblog.com/2026/01/chrome-beta-for-desktop-update_01668970978.html\n[^16]: Chrome Beta for iOS Update - http://chromereleases.googleblog.com/2026/01/chrome-beta-for-ios-update_022058612.html\n[^17]: Chrome Beta for Android Update - http://chromereleases.googleblog.com/2026/01/chrome-beta-for-android-update_0352630723.html\n[^18]: Chrome for Android Update - http://chromereleases.googleblog.com/2026/01/chrome-for-android-update_0513998776.html\n[^19]: Stable Channel Update for Desktop - http://chromereleases.googleblog.com/2026/01/stable-channel-update-for-desktop_20.html\n[^20]: AssetOpsBench: Bridging the Gap Between AI Agent Benchmarks and Industrial Reality - https://huggingface.co/blog/ibm-research/assetopsbench-playground-on-hugging-face\n[^21]: 3 Fitbit holiday health stats to help you plan for 2026 goals - https://blog.google/products-and-platforms/devices/fitbit/holiday-health-data-new-year-goals/\n[^22]: Check out what YouTube has planned for 2026. - https://blog.google/products-and-platforms/products/youtube/neal-mohan-letter-2026/\n[^23]: Collaborating with Khan Academy to build the best AI tools for learners - https://blog.google/products-and-platforms/products/education/khan-academy-partnership/\n[^24]: Premium Google AI for more educators and students - https://blog.google/products-and-platforms/products/education/bett26-premium-ai/\n[^25]: Google and Oxford University are collaborating to provide students and faculty with AI tools for higher education - https://blog.google/products-and-platforms/products/education/oxford-gemini-notebooklm/\n[^26]: Prep for the SAT with practice tests in Gemini - https://blog.google/products-and-platforms/products/education/practice-sat-gemini/\n[^27]: Transform teaching and learning with updates to Gemini and Google Classroom - https://blog.google/products-and-platforms/products/education/bett-2026-gemini-classroom-updates/\n[^28]: Meet the winner of the 2025 Google Vids Education Film Festival. - https://blog.google/feed/google-vids-education-film-festival-winner/\n[^29]: New ChromeOS tools to support classroom collaboration - https://blog.google/products-and-platforms/products/education/chromeos-chromebooks-bett-2026/\n[^30]: New security and AI detection features for Google Workspace for Education - https://blog.google/products-and-platforms/products/education/security-ai-features/\n[^31]: Bett 2026: Celebrating the art of teaching and the science of learning - https://blog.google/products-and-platforms/products/education/collection-bett-2026/\n[^32]: January 2026 Insiders (version 1.109) - https://code.visualstudio.com/updates/v1_109\n[^33]: Prep for the SAT with practice tests in Gemini - https://blog.google/products-and-platforms/products/education/practice-sat-gemini/\n[^34]: Transform teaching and learning with updates to Gemini and Google Classroom - https://blog.google/products-and-platforms/products/education/bett-2026-gemini-classroom-updates/\n[^35]: How co-creating AI working agreements drives confidence and clarity - https://www.atlassian.com/blog/teamwork/ai-working-agreements\n[^36]: Review of Google Antigravity for Building Jira Apps - https://www.atlassian.com/blog/developer/review-of-google-antigravity-for-building-jira-apps\n[^37]: A cheat sheet to slash commands in GitHub Copilot CLI - https://github.blog/ai-and-ml/github-copilot/a-cheat-sheet-to-slash-commands-in-github-copilot-cli/\n[^38]: The Blowtorch Theory: A New Model for Structure Formation in the Universe - https://www.theseedsofscience.pub/p/the-blowtorch-theory-a-new-model\n[^39]: Faramesh – The first deterministic execution control plane for AI agents - https://github.com/faramesh/faramesh-core\n[^40]: Review.fast – make every pull request easy to understand - https://review.fast/\n[^41]: Spoofing on Polymarket - https://rajivsethi.substack.com/p/guessing-games\n[^42]: Gertrude Stein - https://en.wikipedia.org/wiki/Gertrude_Stein\n[^43]: Hand stencils in Sulawesi cave are oldest-known rock art - https://www.nature.com/articles/s41586-025-09968-y\n[^44]: Pencil - https://www.pencil.dev/\n[^45]: Palantir CEO says AI to make large-scale immigration obsolete - https://www.mercurynews.com/2026/01/20/palantir-ceo-says-ai-to-make-large-scale-immigration-obsolete/\n[^46]: Ask HN: When does changing pricing models break user trust? - https://news.ycombinator.com/item?id=46712071\n[^47]: Multi-Modal Program Verification in Velvet - https://proofsandintuitions.net/2026/01/21/multi-modal-verification-velvet/\n[^48]: Simulations and games about non-zero-sum concepts and emergent phenomena - https://nonzerosum.games/arcade.html\n[^49]: What We Can Do–Starting Now, a Daily Civic Action Plan [video] - https://www.youtube.com/watch?v=gdBsLrGamtM\n[^50]: The use of the word 'robust' to describe software in UK law - https://ials.blogs.sas.ac.uk/2019/06/25/the-use-of-the-word-robust-to-describe-software-code/\n[^51]: Show HN: Grov – Multiplayer for AI Coding Agents (Open Source) - https://grov.dev/\n[^52]: Terminal UIs, the Ruby Way - https://www.ratatui-ruby.dev/\n[^53]: Show HN: ImproveThis, refine messages based on who you're writing to - https://improvethis.ai\n[^54]: FSNotes 7 – Remarkable fast plain text notes - https://fsnot.es/v7/\n[^55]: The 40M Dollar Job (2019) - https://idiallo.com/blog/the-40-million-dollar-job\n[^56]: Show HN: Unicode Explorer – Explore, Search, and Learn Unicode - https://unicode-detector-nine.vercel.app/\n[^57]: End-of-Life usefulness of degradation by products from transient electronics - https://www.nature.com/articles/s41528-025-00411-w\n[^58]: IntelliJ IDEA Conf 2026: Learn From the People Building the JVM Ecosystem - https://blog.jetbrains.com/idea/2026/01/intellij-idea-conf-2026-learn-from-the-people-building-the-jvm-ecosystem/\n[^59]: ‘Largest Infrastructure Buildout in Human History’: Jensen Huang on AI’s ‘Five-Layer Cake’ at Davos - https://blogs.nvidia.com/blog/davos-wef-blackrock-ceo-larry-fink-jensen-huang/\n[^60]: Deploy agents instantly with Agent Builder templates - https://www.blog.langchain.com/introducing-agent-builder-template-library/\n[^61]: Building Multi-Agent Applications with Deep Agents - https://www.blog.langchain.com/building-multi-agent-applications-with-deep-agents/\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **A cheat sheet to slash commands in GitHub Copilot CLI**\n   - 출처: GitHub Blog\n   - 링크: https://github.blog/ai-and-ml/github-copilot/a-cheat-sheet-to-slash-commands-in-github-copilot-cli/\n\n2. **How Higgsfield turns simple ideas into cinematic social videos**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/higgsfield\n\n3. **Introducing Edu for Countries**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/edu-for-countries\n\n4. **How countries can end the capability overhang**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/how-countries-can-end-the-capability-overhang\n\n5. **메타 법무팀이 윤리적 의무를 저버렸다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26022\n\n6. **IPv6는 NAT가 없다고 해서 보안에 취약하지 않다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26021\n\n7. **에이전틱 코딩이 실제로 효과가 있는지에 대한 증거를 묻는 질문**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26020\n\n8. **Show GN: CmdLens - Claude Code 명령어 실행 전 위험도를 자동으로 표시하는 플러그인**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26019\n\n9. **비전통적 PostgreSQL 최적화 기법**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26018\n\n10. **인공지능 시대의 Slack: 금광 \"맥락\"을 독점하는 진짜 돈 버는 B2C 플랫폼**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26017\n\n11. **캘리포니아, 25년 만에 가뭄 완전 해소**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26015\n\n12. **Show GN: 9개의 Claude 에이전트가 협업하는 멀티에이전트 개발 시스템**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26013\n\n13. **Nvidia 주가 폭락 확률 예측**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26012\n\n14. **Show GN: mdto.page – 마크다운을 바로 공유 가능한 웹페이지와 PDF로**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26011\n\n15. **Chrome Beta for Desktop Update**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2026/01/chrome-beta-for-desktop-update_01668970978.html\n\n16. **Chrome Beta for iOS Update**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2026/01/chrome-beta-for-ios-update_022058612.html\n\n17. **Chrome Beta for Android Update**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2026/01/chrome-beta-for-android-update_0352630723.html\n\n18. **Chrome for Android Update**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2026/01/chrome-for-android-update_0513998776.html\n\n19. **Stable Channel Update for Desktop**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2026/01/stable-channel-update-for-desktop_20.html\n\n20. **AssetOpsBench: Bridging the Gap Between AI Agent Benchmarks and Industrial Reality**\n   - 출처: Hugging Face - Blog\n   - 링크: https://huggingface.co/blog/ibm-research/assetopsbench-playground-on-hugging-face\n\n21. **3 Fitbit holiday health stats to help you plan for 2026 goals**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/products-and-platforms/devices/fitbit/holiday-health-data-new-year-goals/\n\n22. **Check out what YouTube has planned for 2026.**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/products-and-platforms/products/youtube/neal-mohan-letter-2026/\n\n23. **Collaborating with Khan Academy to build the best AI tools for learners**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/products-and-platforms/products/education/khan-academy-partnership/\n\n24. **Premium Google AI for more educators and students**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/products-and-platforms/products/education/bett26-premium-ai/\n\n25. **Google and Oxford University are collaborating to provide students and faculty with AI tools for higher education**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/products-and-platforms/products/education/oxford-gemini-notebooklm/\n\n26. **Prep for the SAT with practice tests in Gemini**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/products-and-platforms/products/education/practice-sat-gemini/\n\n27. **Transform teaching and learning with updates to Gemini and Google Classroom**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/products-and-platforms/products/education/bett-2026-gemini-classroom-updates/\n\n28. **Meet the winner of the 2025 Google Vids Education Film Festival.**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/feed/google-vids-education-film-festival-winner/\n\n29. **New ChromeOS tools to support classroom collaboration**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/products-and-platforms/products/education/chromeos-chromebooks-bett-2026/\n\n30. **New security and AI detection features for Google Workspace for Education**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/products-and-platforms/products/education/security-ai-features/\n\n31. **Bett 2026: Celebrating the art of teaching and the science of learning**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/products-and-platforms/products/education/collection-bett-2026/\n\n32. **January 2026 Insiders (version 1.109)**\n   - 출처: Visual Studio Code - Code Editing. Redefined.\n   - 링크: https://code.visualstudio.com/updates/v1_109\n\n33. **Prep for the SAT with practice tests in Gemini**\n   - 출처: Gemini\n   - 링크: https://blog.google/products-and-platforms/products/education/practice-sat-gemini/\n\n34. **Transform teaching and learning with updates to Gemini and Google Classroom**\n   - 출처: Gemini\n   - 링크: https://blog.google/products-and-platforms/products/education/bett-2026-gemini-classroom-updates/\n\n35. **How co-creating AI working agreements drives confidence and clarity**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/teamwork/ai-working-agreements\n\n36. **Review of Google Antigravity for Building Jira Apps**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/developer/review-of-google-antigravity-for-building-jira-apps\n\n37. **A cheat sheet to slash commands in GitHub Copilot CLI**\n   - 출처: The latest on GitHub Copilot - The GitHub Blog\n   - 링크: https://github.blog/ai-and-ml/github-copilot/a-cheat-sheet-to-slash-commands-in-github-copilot-cli/\n\n38. **The Blowtorch Theory: A New Model for Structure Formation in the Universe**\n   - 출처: Hacker News\n   - 링크: https://www.theseedsofscience.pub/p/the-blowtorch-theory-a-new-model\n\n39. **Faramesh – The first deterministic execution control plane for AI agents**\n   - 출처: Hacker News\n   - 링크: https://github.com/faramesh/faramesh-core\n\n40. **Review.fast – make every pull request easy to understand**\n   - 출처: Hacker News\n   - 링크: https://review.fast/\n\n41. **Spoofing on Polymarket**\n   - 출처: Hacker News\n   - 링크: https://rajivsethi.substack.com/p/guessing-games\n\n42. **Gertrude Stein**\n   - 출처: Hacker News\n   - 링크: https://en.wikipedia.org/wiki/Gertrude_Stein\n\n43. **Hand stencils in Sulawesi cave are oldest-known rock art**\n   - 출처: Hacker News\n   - 링크: https://www.nature.com/articles/s41586-025-09968-y\n\n44. **Pencil**\n   - 출처: Hacker News\n   - 링크: https://www.pencil.dev/\n\n45. **Palantir CEO says AI to make large-scale immigration obsolete**\n   - 출처: Hacker News\n   - 링크: https://www.mercurynews.com/2026/01/20/palantir-ceo-says-ai-to-make-large-scale-immigration-obsolete/\n\n46. **Ask HN: When does changing pricing models break user trust?**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=46712071\n\n47. **Multi-Modal Program Verification in Velvet**\n   - 출처: Hacker News\n   - 링크: https://proofsandintuitions.net/2026/01/21/multi-modal-verification-velvet/\n\n48. **Simulations and games about non-zero-sum concepts and emergent phenomena**\n   - 출처: Hacker News\n   - 링크: https://nonzerosum.games/arcade.html\n\n49. **What We Can Do–Starting Now, a Daily Civic Action Plan [video]**\n   - 출처: Hacker News\n   - 링크: https://www.youtube.com/watch?v=gdBsLrGamtM\n\n50. **The use of the word 'robust' to describe software in UK law**\n   - 출처: Hacker News\n   - 링크: https://ials.blogs.sas.ac.uk/2019/06/25/the-use-of-the-word-robust-to-describe-software-code/\n\n51. **Show HN: Grov – Multiplayer for AI Coding Agents (Open Source)**\n   - 출처: Hacker News\n   - 링크: https://grov.dev/\n\n52. **Terminal UIs, the Ruby Way**\n   - 출처: Hacker News\n   - 링크: https://www.ratatui-ruby.dev/\n\n53. **Show HN: ImproveThis, refine messages based on who you're writing to**\n   - 출처: Hacker News\n   - 링크: https://improvethis.ai\n\n54. **FSNotes 7 – Remarkable fast plain text notes**\n   - 출처: Hacker News\n   - 링크: https://fsnot.es/v7/\n\n55. **The 40M Dollar Job (2019)**\n   - 출처: Hacker News\n   - 링크: https://idiallo.com/blog/the-40-million-dollar-job\n\n56. **Show HN: Unicode Explorer – Explore, Search, and Learn Unicode**\n   - 출처: Hacker News\n   - 링크: https://unicode-detector-nine.vercel.app/\n\n57. **End-of-Life usefulness of degradation by products from transient electronics**\n   - 출처: Hacker News\n   - 링크: https://www.nature.com/articles/s41528-025-00411-w\n\n58. **IntelliJ IDEA Conf 2026: Learn From the People Building the JVM Ecosystem**\n   - 출처: IntelliJ IDEA : IntelliJ IDEA – the IDE for Professional Development in Java and Kotlin | The JetBrains Blog\n   - 링크: https://blog.jetbrains.com/idea/2026/01/intellij-idea-conf-2026-learn-from-the-people-building-the-jvm-ecosystem/\n\n59. **‘Largest Infrastructure Buildout in Human History’: Jensen Huang on AI’s ‘Five-Layer Cake’ at Davos**\n   - 출처: NVIDIA Blog\n   - 링크: https://blogs.nvidia.com/blog/davos-wef-blackrock-ceo-larry-fink-jensen-huang/\n\n60. **Deploy agents instantly with Agent Builder templates**\n   - 출처: LangChain Blog\n   - 링크: https://www.blog.langchain.com/introducing-agent-builder-template-library/\n\n61. **Building Multi-Agent Applications with Deep Agents**\n   - 출처: LangChain Blog\n   - 링크: https://www.blog.langchain.com/building-multi-agent-applications-with-deep-agents/\n\n\n",
+  "articles": [
+    {
+      "title": "A cheat sheet to slash commands in GitHub Copilot CLI",
+      "link": "https://github.blog/ai-and-ml/github-copilot/a-cheat-sheet-to-slash-commands-in-github-copilot-cli/",
+      "source": "GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-21T17:09:10Z",
+      "description": "\u003cp\u003eRun tests, fix code, and get support—right in your workflow. Stay focused and let Copilot handle the busywork.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/ai-and-ml/github-copilot/a-cheat-sheet-to-slash-commands-in-github-copilot-cli/\"\u003eA cheat sheet to slash commands in GitHub Copilot CLI\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "How Higgsfield turns simple ideas into cinematic social videos",
+      "link": "https://openai.com/index/higgsfield",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2026-01-21T10:00:00Z",
+      "description": "Discover how Higgsfield gives creators cinematic, social-first video output from simple inputs using OpenAI GPT-4.1, GPT-5, and Sora 2."
+    },
+    {
+      "title": "Introducing Edu for Countries",
+      "link": "https://openai.com/index/edu-for-countries",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2026-01-21T01:00:00Z",
+      "description": "Edu for Countries is a new OpenAI initiative helping governments use AI to modernize education systems and build future-ready workforces."
+    },
+    {
+      "title": "How countries can end the capability overhang",
+      "link": "https://openai.com/index/how-countries-can-end-the-capability-overhang",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2026-01-21T01:00:00Z",
+      "description": "Our latest report reveals stark differences in advanced AI adoption across countries and outlines new initiatives to help nations capture productivity gains from AI."
+    },
+    {
+      "title": "메타 법무팀이 윤리적 의무를 저버렸다",
+      "link": "https://news.hada.io/topic?id=26022",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-22T06:33:08+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e메타의 법무팀이 아동 착취 증거를 파기하고 연구 결과를 은폐\u003c/strong\u003e하며, 변호사-의뢰인 특권 뒤에 숨은 사실이 내부 문서와 법원 기록을 통해 드러남\u003c/li\u003e\n\u003cli\u003e이러한 행태는 1970~80년대 \u003cstrong\u003e빅토바코 변호사들이 진실을 은폐했던 관행\u003c/strong\u003e을 그대로 답습한 것으로, 공공의 신뢰와 법적...\u003c/p\u003e"
+    },
+    {
+      "title": "IPv6는 NAT가 없다고 해서 보안에 취약하지 않다",
+      "link": "https://news.hada.io/topic?id=26021",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-22T05:33:21+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eIPv4가 NAT를 기본적으로 사용하기 때문에 더 안전하다는 주장은 \u003cstrong\u003e보안과 주소 변환의 혼동\u003c/strong\u003e에서 비롯됨\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eNAT(Network Address Translation)\u003c/strong\u003e 은 보안 기능이 아니라 \u003cstrong\u003eIPv4 주소 부족을 해결하기 위한 주소 절약 메커니즘\u003c/strong\u003e임\u003c/li\u003e\n\u003cli\u003eNAT의 동작은 포...\u003c/p\u003e"
+    },
+    {
+      "title": "에이전틱 코딩이 실제로 효과가 있는지에 대한 증거를 묻는 질문",
+      "link": "https://news.hada.io/topic?id=26020",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-22T02:33:43+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e에이전틱 코딩(agentic coding)\u003c/strong\u003e 이 실제 개발 현장에서 작동하는지에 대한 \u003cstrong\u003e경험적 증거\u003c/strong\u003e를 요청하는 질문임\u003c/li\u003e\n\u003cli\u003e자동화된 코드 생성이나 \u003cstrong\u003eAI 에이전트 기반 프로그래밍\u003c/strong\u003e의 실효성을 검증하려는 목적\u003c/li\u003e\n\u003cli\u003e커뮤니티 내에서 \u003cstrong\u003e성공 사례, 실패 ...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: CmdLens - Claude Code 명령어 실행 전 위험도를 자동으로 표시하는 플러그인",
+      "link": "https://news.hada.io/topic?id=26019",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-21T22:59:49+09:00",
+      "description": "\u003cp\u003eClaude Code가 Bash 명령어를 실행할 때 위험도와 복구 방법을 자동으로 표시해주는 플러그인입니다.\u003c/p\u003e\n\u003cp\u003e주요 기능:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e모든 명령어에 🟢 Safe / 🟡 Caution / 🔴 Danger 위험도 표시\u003c/li\u003e\n\u003cli\u003e복구 가능 여부와 되돌리는 방법 안내\u003c/li\u003e\n\u003cli\u003e외부 API 호출 없음, 추가 패키지 불필요\u003c/li\u003e\n\u003cli\u003e한국어/"
+    },
+    {
+      "title": "비전통적 PostgreSQL 최적화 기법",
+      "link": "https://news.hada.io/topic?id=26018",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-21T21:32:48+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003ePostgreSQL 쿼리 성능을 높이기 위한 비전통적 최적화 방법\u003c/strong\u003e을 제시하며, 기존 인덱스 추가나 쿼리 재작성 외의 창의적 접근을 다룸\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e체크 제약조건 기반의 전체 테이블 스캔 제거\u003c/strong\u003e, \u003cstrong\u003e함수 기반 인덱스로 낮은 카디널리티 최적화\u003c/strong\u003e, \u003cstrong\u003eHash 인덱...\u003c/p\u003e"
+    },
+    {
+      "title": "인공지능 시대의 Slack: 금광 \"맥락\"을 독점하는 진짜 돈 버는 B2C 플랫폼",
+      "link": "https://news.hada.io/topic?id=26017",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-21T20:58:03+09:00",
+      "description": "\u003cp\u003eAI 시대의 진짜 금광은 \u003cstrong\u003e“맥락(Context)” 독점\u003c/strong\u003e이며, 이를 가장 편리하게 관리·활용하게 해주는 \u003cstrong\u003eB2C 인터페이스 플랫폼\u003c/strong\u003e이 승자가 될 것.\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e인공지능 시대의 새로운 Slack\u003c/strong\u003e → 인간-AI-인간 협업을 연결하는 중앙 맥락 관리 플랫폼\u003c/li\u003e\n\u003cli\u003e(Slack = "
+    },
+    {
+      "title": "캘리포니아, 25년 만에 가뭄 완전 해소",
+      "link": "https://news.hada.io/topic?id=26015",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-21T18:33:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e기록적인 \u003cstrong\u003e겨울 폭우\u003c/strong\u003e 이후 캘리포니아 전역에서 25년 만에 처음으로 \u003cstrong\u003e‘비정상적 건조 지역’이 0%\u003c/strong\u003e 로 확인됨\u003c/li\u003e\n\u003cli\u003e주 전역의 \u003cstrong\u003e17개 주요 저수지 중 14곳\u003c/strong\u003e이 70% 이상 수위를 유지하며, \u003cstrong\u003e산불 위험도 거의 제로 수준\u003c/strong\u003e으로 평가됨\u003c/li\u003e\n\u003cli\u003e...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: 9개의 Claude 에이전트가 협업하는 멀티에이전트 개발 시스템",
+      "link": "https://news.hada.io/topic?id=26013",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-21T17:06:26+09:00",
+      "description": "\u003cp\u003e9개의 전문화된 Claude 에이전트가 협업하여 소프트웨어 개발을 자동화하는 시스템입니다.\u003c/p\u003e\n\u003ch3\u003e어떤 프로젝트인가요?\u003c/h3\u003e\n\u003cp\u003e사용자가 \u0026quot;TODO 앱 만들어줘\u0026quot;라고 요청하면, 9개의 AI 에이전트가 실제 개발팀처럼 역할을 나눠 작업합니다:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eOrchestrator: 전체 워크플로우 관리\u003c/li\u003e\n\u003cli\u003eReq"
+    },
+    {
+      "title": "Nvidia 주가 폭락 확률 예측",
+      "link": "https://news.hada.io/topic?id=26012",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-21T14:33:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e2026년 예측 대회에서 \u003cstrong\u003eNvidia 주가가 2026년 중 하루라도 100달러 이하로 떨어질 확률\u003c/strong\u003e을 계산한 분석임\u003c/li\u003e\n\u003cli\u003e단순 무편향 랜덤워크 대신, \u003cstrong\u003e수익률과 변동성의 시간 규모 차이\u003c/strong\u003e를 고려한 모델을 사용함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e옵션 시장의 암묵적 변동성(implied volatility)...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: mdto.page – 마크다운을 바로 공유 가능한 웹페이지와 PDF로",
+      "link": "https://news.hada.io/topic?id=26011",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-21T12:45:44+09:00",
+      "description": "\u003cp\u003emdto.page는 마크다운 파일을 업로드하면\u003cbr /\u003e\n유효 기간이 있는 공유 가능한 웹페이지를 바로 만들어주는 작은 도구입니다.\u003cbr /\u003e\n생성된 페이지는 pdf로도 다운로드할 수 있습니다.\u003c/p\u003e\n\u003cp\u003e이력서, 문서, 노트 등을 마크다운으로 작성해두고\u003cbr /\u003e\n로그인이나 별도 설정 없이 빠르게 공유하고 싶어서 만들었습니다"
+    },
+    {
+      "title": "Chrome Beta for Desktop Update",
+      "link": "http://chromereleases.googleblog.com/2026/01/chrome-beta-for-desktop-update_01668970978.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2026-01-21T10:13:33.228-08:00",
+      "description": "\u003cp\u003eThe Beta channel has been updated to 145.0.7632.18 for Windows, Mac and Linux.\u003c/p\u003e\u003cp\u003eA partial list of changes is available in the \u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/145.0.7632.5..145.0.7632.18?pretty=fuller\u0026amp;n=10000\"\u003eGit log\u003c/a\u003e. Interested in \u003ca href=\"https://www.chromium.org/getting-involved/dev-channel/\"\u003eswitching\u003c/a\u003e release channels? Find out \u003ca href=\"https://www.chromium.org/getting-involved/dev-channel/\"\u003ehow\u003c/a\u003e. If you find a new issue, please let us know by \u003ca href=\"https://crbug.com/\"\u003efiling a bug\u003c/a\u003e. The \u003ca href=\"https://productforums.google.com/forum/#!forum/chrome\"\u003ecommunity help forum\u003c/a\u003e is also a great place to reach out for help or learn about common issues.\u003c/p\u003e\u003cp\u003eChrome Release Team\u003cbr /\u003e\u003ca href=\"https://www.google.com/chrome\"\u003e\u003c/a\u003e\u003ca href=\"https://www.google.com/chrome\"\u003eGoogle Chrome\u003c/a\u003e\u003c/p\u003e"
+    },
+    {
+      "title": "Chrome Beta for iOS Update",
+      "link": "http://chromereleases.googleblog.com/2026/01/chrome-beta-for-ios-update_022058612.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2026-01-21T08:58:32.737-08:00",
+      "description": "\u003cp\u003eHi everyone! We've just released Chrome Beta 145 (145.0.7632.16) for iOS; it'll become available on App Store in the next few days.\u003c/p\u003e\u003cp\u003eYou can see a partial list of the changes in the \u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/145.0.7632.3..145.0.7632.16?pretty=fuller\u0026amp;n=10000\"\u003eGit log\u003c/a\u003e. If you find a new issue, please let us know by \u003ca href=\"https://code.google.com/p/chromium/issues/entry?template=iOS%20Issue\"\u003efiling a bug\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eChrome Release Team\u003cbr /\u003e\u003ca href=\"https://www.google.com/chrome\"\u003e\u003c/a\u003e\u003ca href=\"https://www.google.com/chrome\"\u003eGoogle Chrome\u003c/a\u003e\u003c/p\u003e"
+    },
+    {
+      "title": "Chrome Beta for Android Update",
+      "link": "http://chromereleases.googleblog.com/2026/01/chrome-beta-for-android-update_0352630723.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2026-01-21T05:13:32.546-08:00",
+      "description": "\u003cp\u003eHi everyone! We've just released Chrome Beta 145 (145.0.7632.19) for Android. It's now available on \u003ca href=\"https://play.google.com/store/apps/details?id=com.chrome.beta\"\u003eGoogle Play\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eYou can see a partial list of the changes in the \u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/145.0.7632.7..145.0.7632.19?pretty=fuller\u0026amp;n=10000\"\u003eGit log\u003c/a\u003e. For details on new features, check out the \u003ca href=\"https://blog.chromium.org\"\u003eChromium blog\u003c/a\u003e, and for details on web platform updates, check \u003ca href=\"https://www.chromestatus.com/features#milestone%3D145\"\u003ehere\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eIf you find a new issue, please let us know by \u003ca href=\"https://code.google.com/p/chromium/issues/entry?template=Android%20Issue\"\u003efiling a bug\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eChrome Release Team\u003cbr /\u003e\u003ca href=\"https://www.google.com/chrome\"\u003e\u003c/a\u003e\u003ca href=\"https://www.google.com/chrome\"\u003eGoogle Chrome\u003c/a\u003e\u003c/p\u003e"
+    },
+    {
+      "title": "Chrome for Android Update",
+      "link": "http://chromereleases.googleblog.com/2026/01/chrome-for-android-update_0513998776.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2026-01-20T17:00:00-08:00",
+      "description": "\u003cp\u003e\u0026nbsp;Hi, everyone! We've just released Chrome 144 (144.0.7559.90) for Android. It'll become\u0026nbsp;\u003ca href=\"https://play.google.com/store/apps/details?id=com.android.chrome\"\u003eavailable on Google Play\u003c/a\u003e\u0026nbsp;over the next few days.\u0026nbsp;\u003c/p\u003e\u003cp\u003eThis release includes stability and performance improvements. You can see a full list of the changes in the\u0026nbsp;\u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/144.0.7559.76..144.0.7559.90?pretty=fuller\u0026amp;n=10000\"\u003eGit log.\u003c/a\u003e\u0026nbsp;If you find a new issue, please let us know by\u0026nbsp;\u003ca href=\"https://code.google.com/p/chromium/issues/entry?template=Android%20Issue\"\u003efiling a bug\u003c/a\u003e.\u003c/p\u003e\u003cdiv\u003e\u003cbr /\u003e\u003c/div\u003e\u003cdiv\u003eAndroid releases contain the same security fixes as their corresponding\u0026nbsp;\u003ca href=\"https://chromereleases.googleblog.com/2026/01/stable-channel-update-for-desktop_20.html\"\u003eDesktop releases\u003c/a\u003e\u0026nbsp;(Windows \u0026amp; Mac: 144.0.7559.96/.97, Linux: 144.0.7559.96) unless otherwise noted.\u003c/div\u003e\u003cdiv\u003e\u003cdiv\u003e\u003cbr /\u003e\u003c/div\u003e\u003cdiv\u003e\u003cdiv\u003e\u003cbr /\u003e\u003c/div\u003e\u003cdiv\u003eHarry Souders\u003cbr /\u003e\u003ca href=\"https://www.google.com/chrome/\"\u003eGoogle Chrome\u003c/a\u003e\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e"
+    },
+    {
+      "title": "Stable Channel Update for Desktop",
+      "link": "http://chromereleases.googleblog.com/2026/01/stable-channel-update-for-desktop_20.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2026-01-20T14:15:00-08:00",
+      "description": "\u003cp\u003e\u003cspan style=\"font-family: arial;\"\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" style=\"color: rgba(0, 0, 0, 0.87); font-size: large;\"\u003eThe Stable channel has been updated to 144.0.7559.96/.97 for Windows/Mac\u0026nbsp; and\u0026nbsp;\u003c/span\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" style=\"color: rgba(0, 0, 0, 0.87); font-size: large;\"\u003e144.0.7559.96\u0026nbsp;for Linux, which will roll out over the coming days/weeks. A full list of changes in this build is available in the\u0026nbsp;\u003c/span\u003e\u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/144.0.7559.60..144.0.7559.97?pretty=fuller\u0026amp;n=10000\" style=\"color: #4184f3; font-size: large; text-decoration-line: none;\"\u003eLog\u003c/a\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" style=\"color: rgba(0, 0, 0, 0.87); font-size: large;\"\u003e.\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" style=\"color: rgba(0, 0, 0, 0.87); font-family: inherit; font-size: large;\"\u003e\u003cbr /\u003e\u003c/span\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"background-color: white; color: #666666; font-family: Arial,sans-serif; font-size: 16pt; font-style: normal; font-variant: normal; font-weight: 400; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; white-space: pre;\"\u003eSecurity Fixes and Rewards\u003c/span\u003e\u003c/p\u003e\u003cp style=\"text-align: left;\"\u003e\u003ci\u003e\u003cspan style=\"font-family: arial;\"\u003eNote: Access to bug details and links may be kept restricted until a majority of users are updated with a fix. We will also retain restrictions if the bug exists in a third party library that other projects similarly depend on, but haven’t yet fixed.\u003c/span\u003e\u003c/i\u003e\u003c/p\u003e\u003cp\u003e\u003cspan style=\"font-family: arial;\"\u003e\u003cbr /\u003eThis update includes \u003ca href=\"https://issues.chromium.org/issues?q=customfield1223088:1-M144\"\u003e1\u003c/a\u003e security fix. Below, we highlight fixes that were contributed by external researchers. Please see the \u003ca href=\"https://www.chromium.org/Home/chromium-security\"\u003eChrome Security Page\u003c/a\u003e for more information.\u003c/span\u003e\u003c/p\u003e\u003cspan style=\"font-family: arial;\"\u003e\u003cbr /\u003e[TBD][\u003ca href=\"https://issues.chromium.org/issues/473851441\"\u003e473851441\u003c/a\u003e] High CVE-2026-1220: Race in V8. Reported by @p1nky4745 on 2026-01-07\u003cbr /\u003e\u003cbr /\u003e\u003cbr /\u003eWe would also like to thank all security researchers that worked with us during the development cycle to prevent security bugs from ever reaching the stable channel.\u003cbr /\u003e\u003cbr /\u003e\u003c/span\u003e\u003cp dir=\"ltr\" style=\"line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: arial;\"\u003e\u003cspan style=\"background-color: white; color: #666666; font-style: normal; font-variant: normal; font-weight: 400; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;\"\u003eMany of our security bugs are detected using \u003c/span\u003e\u003ca href=\"https://code.google.com/p/address-sanitizer/wiki/AddressSanitizer\" style=\"text-decoration: none;\"\u003e\u003cspan style=\"background-color: white; color: #1155cc; font-style: normal; font-variant: normal; font-weight: 400; text-decoration-skip-ink: none; text-decoration: underline; vertical-align: baseline; white-space: pre-wrap;\"\u003eAddressSanitizer\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"background-color: white; color: #666666; font-style: normal; font-variant: normal; font-weight: 400; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;\"\u003e, \u003c/span\u003e\u003ca href=\"https://code.google.com/p/memory-sanitizer/wiki/MemorySanitizer\" style=\"text-decoration: none;\"\u003e\u003cspan style=\"background-color: white; color: #1155cc; font-style: normal; font-variant: normal; font-weight: 400; text-decoration-skip-ink: none; text-decoration: underline; vertical-align: baseline; white-space: pre-wrap;\"\u003eMemorySanitizer\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"background-color: white; color: #666666; font-style: normal; font-variant: normal; font-weight: 400; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;\"\u003e, \u003c/span\u003e\u003ca href=\"https://www.chromium.org/developers/testing/undefinedbehaviorsanitizer\" style=\"text-decoration: none;\"\u003e\u003cspan style=\"background-color: white; color: #1155cc; font-style: normal; font-variant: normal; font-weight: 400; text-decoration-skip-ink: none; text-decoration: underline; vertical-align: baseline; white-space: pre-wrap;\"\u003eUndefinedBehaviorSanitizer\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"background-color: white; color: #666666; font-style: normal; font-variant: normal; font-weight: 400; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;\"\u003e, \u003c/span\u003e\u003ca href=\"https://www.chromium.org/developers/testing/control-flow-integrity/\" style=\"text-decoration: none;\"\u003e\u003cspan style=\"background-color: white; color: #1155cc; font-style: normal; font-variant: normal; font-weight: 400; text-decoration-skip-ink: none; text-decoration: underline; vertical-align: baseline; white-space: pre-wrap;\"\u003eControl Flow Integrity\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"background-color: white; color: #666666; font-style: normal; font-variant: normal; font-weight: 400; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;\"\u003e, \u003c/span\u003e\u003ca href=\"https://chromium.googlesource.com/chromium/src/+/HEAD/testing/libfuzzer/README.md\" style=\"text-decoration: none;\"\u003e\u003cspan style=\"background-color: white; color: #1155cc; font-style: normal; font-variant: normal; font-weight: 400; text-decoration-skip-ink: none; text-decoration: underline; vertical-align: baseline; white-space: pre-wrap;\"\u003elibFuzzer\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"background-color: white; color: #666666; font-style: normal; font-variant: normal; font-weight: 400; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;\"\u003e, or \u003c/span\u003e\u003ca href=\"https://github.com/google/afl\" style=\"text-decoration: none;\"\u003e\u003cspan style=\"background-color: white; color: #1155cc; font-style: normal; font-variant: normal; font-weight: 400; text-decoration-skip-ink: none; text-decoration: underline; vertical-align: baseline; white-space: pre-wrap;\"\u003eAFL\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"background-color: white; color: #666666; font-style: normal; font-variant: normal; font-weight: 400; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;\"\u003e.\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e\u003cp style=\"color: rgba(0, 0, 0, 0.87); font-size: 17px;\"\u003e\u003cspan style=\"font-family: arial;\"\u003e\u003cspan style=\"color: #666666; font-size: medium;\"\u003eI\u003c/span\u003e\u003cspan style=\"color: #666666; font-size: large;\"\u003enterested in switching release channels? Find out how\u0026nbsp;\u003c/span\u003e\u003ca href=\"https://www.chromium.org/getting-involved/dev-channel\" style=\"color: #4184f3; font-size: large; text-decoration-line: none;\"\u003ehere\u003c/a\u003e\u003cspan style=\"color: #666666; font-size: large;\"\u003e. If you find a new issue, please let us know by\u0026nbsp;\u003c/span\u003e\u003ca href=\"https://crbug.com/\" style=\"color: #4184f3; font-size: large; text-decoration-line: none;\"\u003efiling a bug\u003c/a\u003e\u003cspan style=\"color: #666666; font-size: large;\"\u003e. The\u0026nbsp;\u003c/span\u003e\u003ca href=\"https://support.google.com/chrome/community\" style=\"color: #4184f3; font-size: large; text-decoration-line: none;\"\u003ecommunity help forum\u003c/a\u003e\u003cspan style=\"color: #666666; font-size: large;\"\u003e\u0026nbsp;is also a great place to reach out for help or learn about common issues.\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e\u003cp style=\"color: rgba(0, 0, 0, 0.87); font-size: 17px;\"\u003e\u003cspan style=\"color: #666666; font-size: medium; white-space-collapse: preserve;\"\u003e\u003cspan style=\"font-family: arial;\"\u003e\u003cbr style=\"content: \u0026quot; \u0026quot;; display: block; padding: 4px;\" /\u003e\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e\u003cp style=\"color: rgba(0, 0, 0, 0.87); font-size: 17px;\"\u003e\u003cspan style=\"font-size: medium;\"\u003e\u003cspan style=\"font-family: arial;\"\u003e\u003cspan color=\"rgba(0, 0, 0, 0.54)\" style=\"display: block; font-size: 14px; line-height: 24px; margin-bottom: 16px;\"\u003e\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e\u003cp style=\"color: rgba(0, 0, 0, 0.87); font-size: 17px;\"\u003e\u003cspan style=\"font-family: arial;\"\u003e\u003cspan face=\"Roboto, sans-serif\" style=\"color: #666666;\"\u003e\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e\u003cp style=\"color: rgba(0, 0, 0, 0.87); font-size: 17px;\"\u003e\u003cspan style=\"font-family: arial;\"\u003e\u003cspan face=\"Roboto, sans-serif\" style=\"color: #666666;\"\u003e\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e\u003cp style=\"color: rgba(0, 0, 0, 0.87); font-size: 17px;\"\u003e\u003cspan style=\"font-family: arial;\"\u003e\u003cspan face=\"Roboto, sans-serif\" style=\"color: #666666;\"\u003e\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e\u003cp style=\"color: rgba(0, 0, 0, 0.87); font-size: 17px;\"\u003e\u003cspan style=\"font-family: arial;\"\u003e\u003cspan face=\"Roboto, sans-serif\" style=\"color: #666666;\"\u003e\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e\u003cp style=\"color: rgba(0, 0, 0, 0.87); font-size: 17px;\"\u003e\u003cspan style=\"font-family: arial;\"\u003e\u003cspan face=\"Roboto, sans-serif\" style=\"color: #666666;\"\u003e\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e\u003cp style=\"color: rgba(0, 0, 0, 0.87); font-size: 17px;\"\u003e\u003cspan style=\"font-family: arial;\"\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" style=\"font-size: large;\"\u003e\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cspan style=\"font-family: arial;\"\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" style=\"color: rgba(0, 0, 0, 0.87); font-size: large;\"\u003e\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e\u003cdiv style=\"color: rgba(0, 0, 0, 0.87); font-size: 17px;\"\u003e\u003cspan style=\"font-size: medium;\"\u003e\u003cspan style=\"font-family: arial;\"\u003e\u003cspan style=\"color: #666666; white-space-collapse: preserve;\"\u003eSrinivas Sista\u003cbr style=\"content: \u0026quot; \u0026quot;; display: block; padding: 4px;\" /\u003e\u003c/span\u003e\u003cspan style=\"color: #666666;\"\u003eGoogle Chrome\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003c/div\u003e"
+    },
+    {
+      "title": "AssetOpsBench: Bridging the Gap Between AI Agent Benchmarks and Industrial Reality",
+      "link": "https://huggingface.co/blog/ibm-research/assetopsbench-playground-on-hugging-face",
+      "source": "Hugging Face - Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-21T06:25:31Z"
+    },
+    {
+      "title": "3 Fitbit holiday health stats to help you plan for 2026 goals",
+      "link": "https://blog.google/products-and-platforms/devices/fitbit/holiday-health-data-new-year-goals/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-21T17:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Wearablefestive_season_02_1600x.max-600x600.format-webp.webp\"\u003eHere’s how the recent festive season affected health stats, revealed by Fitbit and Pixel Watch wearable data."
+    },
+    {
+      "title": "Check out what YouTube has planned for 2026.",
+      "link": "https://blog.google/products-and-platforms/products/youtube/neal-mohan-letter-2026/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-21T14:01:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/YOUTUBE_BLOG_-_NEAL_S_LETTER_SQ.max-600x600.format-webp.webp\"\u003eYouTube CEO Neal Mohan laid out his top priorities for the platform for 2026."
+    },
+    {
+      "title": "Collaborating with Khan Academy to build the best AI tools for learners",
+      "link": "https://blog.google/products-and-platforms/products/education/khan-academy-partnership/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-21T08:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/khanacademy_Hero.max-600x600.format-webp.webp\"\u003eNew AI-powered learning tools are coming to Khan Academy, built with Google’s Gemini models."
+    },
+    {
+      "title": "Premium Google AI for more educators and students",
+      "link": "https://blog.google/products-and-platforms/products/education/bett26-premium-ai/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-21T08:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/BETT26_BlogHeader_GemDrop-WSStu.max-600x600.format-webp.webp\"\u003eWe’re making select Gemini in Workspace capabilities available to more educators and students at no additional cost, and sharing ways all Education users can use Google …"
+    },
+    {
+      "title": "Google and Oxford University are collaborating to provide students and faculty with AI tools for higher education",
+      "link": "https://blog.google/products-and-platforms/products/education/oxford-gemini-notebooklm/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-21T08:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Oxford_image_for_blogpost.max-600x600.format-webp.webp\"\u003eOxford University students and faculty will get access to advanced AI tools, including Gemini for Education and NotebookLM, following a successful pilot."
+    },
+    {
+      "title": "Prep for the SAT with practice tests in Gemini",
+      "link": "https://blog.google/products-and-platforms/products/education/practice-sat-gemini/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-21T08:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/BETT26_Blogheader_Gemini_Practi.max-600x600.format-webp.webp\"\u003eGemini now offers full-length, no-cost practice SATs, featuring content from The Princeton Review."
+    },
+    {
+      "title": "Transform teaching and learning with updates to Gemini and Google Classroom",
+      "link": "https://blog.google/products-and-platforms/products/education/bett-2026-gemini-classroom-updates/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-21T08:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/BETT26_BlogHeader_GeminiClassro.max-600x600.format-webp_buwMTAR.webp\"\u003eSave time and do your best work with new capabilities, like practice SATs in Gemini, and audio and video recordings in Google Classroom."
+    },
+    {
+      "title": "Meet the winner of the 2025 Google Vids Education Film Festival.",
+      "link": "https://blog.google/feed/google-vids-education-film-festival-winner/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-21T08:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/eduwinnerjan2026_Social.max-600x600.format-webp.webp\"\u003eLast year, we made basic access to Google Vids, our AI-powered video creation app, available to all Google Workspace for Education users. We also launched the inaugural …"
+    },
+    {
+      "title": "New ChromeOS tools to support classroom collaboration",
+      "link": "https://blog.google/products-and-platforms/products/education/chromeos-chromebooks-bett-2026/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-21T08:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/010-BETT26-ClassToolsBlogHeader.max-600x600.format-webp.webp\"\u003eModernize your classroom with AI-powered Chromebooks, Gemini in Chrome, and new ways to engage and collaborate with students with powerful Class tools features and a new…"
+    },
+    {
+      "title": "New security and AI detection features for Google Workspace for Education",
+      "link": "https://blog.google/products-and-platforms/products/education/security-ai-features/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-21T08:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/BETT26_BlogHeader_SecurityAI_Ja.max-600x600.format-webp.webp\"\u003eDiscover new online safety tools: ransomware detection, refined admin controls, AI-generated image verification."
+    },
+    {
+      "title": "Bett 2026: Celebrating the art of teaching and the science of learning",
+      "link": "https://blog.google/products-and-platforms/products/education/collection-bett-2026/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-21T08:00:00Z"
+    },
+    {
+      "title": "January 2026 Insiders (version 1.109)",
+      "link": "https://code.visualstudio.com/updates/v1_109",
+      "source": "Visual Studio Code - Code Editing. Redefined.",
+      "category": "tech",
+      "publishedAt": "2026-02-04T17:00:00Z",
+      "description": "\n      \u003cp\u003eLearn what is new in the Visual Studio Code January 2026 Release (1.109).\u003c/p\u003e\n      \u003cp\u003e\u003ca href=\"https://code.visualstudio.com/updates/v1_109\"\u003eRead the full article\u003c/a\u003e\u003c/p\u003e\n    "
+    },
+    {
+      "title": "Prep for the SAT with practice tests in Gemini",
+      "link": "https://blog.google/products-and-platforms/products/education/practice-sat-gemini/",
+      "source": "Gemini",
+      "category": "tech",
+      "publishedAt": "2026-01-21T08:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/BETT26_Blogheader_Gemini_Practi.max-600x600.format-webp.webp\"\u003eGemini now offers full-length, no-cost practice SATs, featuring content from The Princeton Review."
+    },
+    {
+      "title": "Transform teaching and learning with updates to Gemini and Google Classroom",
+      "link": "https://blog.google/products-and-platforms/products/education/bett-2026-gemini-classroom-updates/",
+      "source": "Gemini",
+      "category": "tech",
+      "publishedAt": "2026-01-21T08:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/BETT26_BlogHeader_GeminiClassro.max-600x600.format-webp_buwMTAR.webp\"\u003eSave time and do your best work with new capabilities, like practice SATs in Gemini, and audio and video recordings in Google Classroom."
+    },
+    {
+      "title": "How co-creating AI working agreements drives confidence and clarity",
+      "link": "https://www.atlassian.com/blog/teamwork/ai-working-agreements",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-21T21:56:58Z",
+      "description": "\u003cp\u003eGet your team aligned on the who, what, when, where, and why of using AI.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/teamwork/ai-working-agreements\"\u003eHow co-creating AI working agreements drives confidence and clarity\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Review of Google Antigravity for Building Jira Apps",
+      "link": "https://www.atlassian.com/blog/developer/review-of-google-antigravity-for-building-jira-apps",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-21T21:31:26Z",
+      "description": "\u003cp\u003eGoogle recently launched Antigravity, a fork of Visual Studio Code providing an AI agent centric approach to software development. What...\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/developer/review-of-google-antigravity-for-building-jira-apps\"\u003eReview of Google Antigravity for Building Jira Apps\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "A cheat sheet to slash commands in GitHub Copilot CLI",
+      "link": "https://github.blog/ai-and-ml/github-copilot/a-cheat-sheet-to-slash-commands-in-github-copilot-cli/",
+      "source": "The latest on GitHub Copilot - The GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-21T17:09:10Z",
+      "description": "\u003cp\u003eRun tests, fix code, and get support—right in your workflow. Stay focused and let Copilot handle the busywork.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/ai-and-ml/github-copilot/a-cheat-sheet-to-slash-commands-in-github-copilot-cli/\"\u003eA cheat sheet to slash commands in GitHub Copilot CLI\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Blowtorch Theory: A New Model for Structure Formation in the Universe",
+      "link": "https://www.theseedsofscience.pub/p/the-blowtorch-theory-a-new-model",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-21T22:01:07Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.theseedsofscience.pub/p/the-blowtorch-theory-a-new-model\"\u003ehttps://www.theseedsofscience.pub/p/the-blowtorch-theory-a-new-model\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46712210\"\u003ehttps://news.ycombinator.com/item?id=46712210\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Faramesh – The first deterministic execution control plane for AI agents",
+      "link": "https://github.com/faramesh/faramesh-core",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-21T22:00:44Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/faramesh/faramesh-core\"\u003ehttps://github.com/faramesh/faramesh-core\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46712202\"\u003ehttps://news.ycombinator.com/item?id=46712202\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 2\u003c/p\u003e\n"
+    },
+    {
+      "title": "Review.fast – make every pull request easy to understand",
+      "link": "https://review.fast/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-21T21:59:41Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://review.fast/\"\u003ehttps://review.fast/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46712192\"\u003ehttps://news.ycombinator.com/item?id=46712192\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Spoofing on Polymarket",
+      "link": "https://rajivsethi.substack.com/p/guessing-games",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-21T21:58:21Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://rajivsethi.substack.com/p/guessing-games\"\u003ehttps://rajivsethi.substack.com/p/guessing-games\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46712177\"\u003ehttps://news.ycombinator.com/item?id=46712177\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Gertrude Stein",
+      "link": "https://en.wikipedia.org/wiki/Gertrude_Stein",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-21T21:57:14Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://en.wikipedia.org/wiki/Gertrude_Stein\"\u003ehttps://en.wikipedia.org/wiki/Gertrude_Stein\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46712157\"\u003ehttps://news.ycombinator.com/item?id=46712157\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Hand stencils in Sulawesi cave are oldest-known rock art",
+      "link": "https://www.nature.com/articles/s41586-025-09968-y",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-21T21:54:19Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nature.com/articles/s41586-025-09968-y\"\u003ehttps://www.nature.com/articles/s41586-025-09968-y\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46712125\"\u003ehttps://news.ycombinator.com/item?id=46712125\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Pencil",
+      "link": "https://www.pencil.dev/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-21T21:53:18Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.pencil.dev/\"\u003ehttps://www.pencil.dev/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46712113\"\u003ehttps://news.ycombinator.com/item?id=46712113\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Palantir CEO says AI to make large-scale immigration obsolete",
+      "link": "https://www.mercurynews.com/2026/01/20/palantir-ceo-says-ai-to-make-large-scale-immigration-obsolete/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-21T21:50:03Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.mercurynews.com/2026/01/20/palantir-ceo-says-ai-to-make-large-scale-immigration-obsolete/\"\u003ehttps://www.mercurynews.com/2026/01/20/palantir-ceo-says-ai-to-make-large-scale-immigration-obsolete/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46712076\"\u003ehttps://news.ycombinator.com/item?id=46712076\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Ask HN: When does changing pricing models break user trust?",
+      "link": "https://news.ycombinator.com/item?id=46712071",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-21T21:49:41Z",
+      "description": "\n\u003cp\u003eI’m curious how people here think about this.\u003cp\u003eMany apps start with a one-time purchase.\nClear deal. You pay once, you own the features.\u003cp\u003eAt some point, the business model changes:\nsubscriptions are introduced,\nand features people already paid for disappear\nor become locked behind a new paywall.\u003cp\u003eI understand why subscriptions exist.\nRecurring revenue makes products easier to sustain.\u003cp\u003eBut from a user perspective, this feels like changing the rules after the fact.\nNot a price increase for new users —\nbut a retroactive change for existing ones.\u003cp\u003eI recently added GPX import to a project I work on,\nspecifically to avoid data lock-in.\nThe idea was simple:\neven if someone stops using the app,\ntheir data should remain usable elsewhere.\u003cp\u003eThis raised a broader question for me:\u003cp\u003e• Is it ever acceptable to change the deal for existing users?\n• Where is the line between sustainable monetization and broken trust?\n• How do you think about “ownership” in software you paid for once?\u003cp\u003eGenuinely interested in perspectives from founders and users.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46712071\"\u003ehttps://news.ycombinator.com/item?id=46712071\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Multi-Modal Program Verification in Velvet",
+      "link": "https://proofsandintuitions.net/2026/01/21/multi-modal-verification-velvet/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-21T21:47:09Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://proofsandintuitions.net/2026/01/21/multi-modal-verification-velvet/\"\u003ehttps://proofsandintuitions.net/2026/01/21/multi-modal-verification-velvet/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46712031\"\u003ehttps://news.ycombinator.com/item?id=46712031\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Simulations and games about non-zero-sum concepts and emergent phenomena",
+      "link": "https://nonzerosum.games/arcade.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-21T21:42:27Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://nonzerosum.games/arcade.html\"\u003ehttps://nonzerosum.games/arcade.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46711979\"\u003ehttps://news.ycombinator.com/item?id=46711979\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "What We Can Do–Starting Now, a Daily Civic Action Plan [video]",
+      "link": "https://www.youtube.com/watch?v=gdBsLrGamtM",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-21T21:42:12Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.youtube.com/watch?v=gdBsLrGamtM\"\u003ehttps://www.youtube.com/watch?v=gdBsLrGamtM\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46711975\"\u003ehttps://news.ycombinator.com/item?id=46711975\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The use of the word 'robust' to describe software in UK law",
+      "link": "https://ials.blogs.sas.ac.uk/2019/06/25/the-use-of-the-word-robust-to-describe-software-code/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-21T21:42:02Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://ials.blogs.sas.ac.uk/2019/06/25/the-use-of-the-word-robust-to-describe-software-code/\"\u003ehttps://ials.blogs.sas.ac.uk/2019/06/25/the-use-of-the-word-robust-to-describe-software-code/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46711970\"\u003ehttps://news.ycombinator.com/item?id=46711970\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Grov – Multiplayer for AI Coding Agents (Open Source)",
+      "link": "https://grov.dev/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-21T21:40:48Z",
+      "description": "\n\u003cp\u003eHi HN, I'm Tony.\u003cp\u003eI built Grov because I hit a wall with current AI coding assistants: they are \"single-player.\" The moment I kill a terminal pane or close a chat session, the high-level reasoning and architectural decisions generated during that session are lost. If a teammate touches that same code an hour later, their agent has to re-derive everything from scratch or read many documentation files for basically any feature implemented or bug fixed.\u003cp\u003eI wanted to stop writing a lot of docs for everything just to give context to my agents or have to re-explain to my agents what my teammate did and why.\u003cp\u003eGrov is an open-source context layer that effectively gives your team's AI agents a shared, persistent memory.\u003cp\u003eHere is the technical approach:\u003cp\u003e1. Decision-grain memory, not document storage: When you sync a memory, Grov structures knowledge at the decision level. We capture the specific aspect (e.g., \"Auth Strategy\"), the choice made (\"JWT\"), and the reasoning (\"Stateless for scaling\"). Crucially, when your codebase evolves, we don't overwrite memories, we mark old decisions as superseded and link them to the new choice. This gives your team an audit trail of architectural evolution, not just the current snapshot.\u003cp\u003e2. Git-like branches for memories: Teams experimenting with different approaches can create memory branches. Memories on a feature branch stay isolated until you are ready to merge. Access control mirrors Git: main is team-wide, while feature branches keep noise isolated. When you merge the branch, those accumulated insights become instantly available to everyone's agents.\u003cp\u003e3. Two-stage injection (Token Optimization): The expensive part of shared memory isn't storage it's the context window. Loading 10 irrelevant memories wastes tokens and confuses the model. Grov uses a \"Preview → Expand\" strategy:\n Preview: A hybrid semantic/keyword search returns lightweight memory summaries (~100 tokens). \n Expand: The full reasoning traces (~500-1k tokens) are only injected if the agent explicitly requests more detail. This typically results in a 50-70% token reduction per session compared to raw context dumping.\u003cp\u003eThe result: Your teammate's agent doesn't waste 5 minutes re-exploring why you chose Postgres over Redis, or re-reading auth middleware. It just knows, because your agent already figured it out and shared it.\u003cp\u003eGithub: \u003ca href=\"https://github.com/TonyStef/Grov\" rel=\"nofollow\"\u003ehttps://github.com/TonyStef/Grov\u003c/a\u003e\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46711958\"\u003ehttps://news.ycombinator.com/item?id=46711958\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 5\u003c/p\u003e\n\u003cp\u003e# Comments: 2\u003c/p\u003e\n"
+    },
+    {
+      "title": "Terminal UIs, the Ruby Way",
+      "link": "https://www.ratatui-ruby.dev/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-21T21:34:54Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.ratatui-ruby.dev/\"\u003ehttps://www.ratatui-ruby.dev/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46711888\"\u003ehttps://news.ycombinator.com/item?id=46711888\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: ImproveThis, refine messages based on who you're writing to",
+      "link": "https://improvethis.ai",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-21T21:34:03Z",
+      "description": "\n\u003cp\u003eHi HN,\u003cp\u003eI recently shipped a small MVP called ImproveThis, and I wanted to share the thinking behind it and get feedback from the community.\u003cp\u003eThe core idea is simple: the same message can sound very different depending on who it’s sent to. A note to a manager, a colleague, or a friend often needs a different tone, even if the intent is the same.\u003cp\u003eImproveThis lets users define people they commonly write to and refines text accordingly.\nWhat’s interesting to me isn’t the AI part, but the product decisions around it.\u003cp\u003eI actually bought the domain back in May 2025, but between a full time job and personal commitments, I kept postponing it. Recently, I decided to stop optimizing for “perfect” and instead ship something usable and learn from real usage.\u003cp\u003eA few deliberate choices in this MVP:\n- No pricing plans yet\n- No payment integration\n- One free plan with 100 refinements per month\n- No credit card required\u003cp\u003eAt this stage, I’m prioritizing usage patterns and feedback over monetization. I want to understand:\nWhen people actually use this\nWhether the “who you’re writing to” framing is helpful\nWhat feels unnecessary or missing\u003cp\u003eI’m sharing this here because HN discussions tend to surface practical feedback that’s hard to get elsewhere.\nHappy to answer questions about the product, the decisions behind it, or where I’m unsure. Feedback very welcome.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46711878\"\u003ehttps://news.ycombinator.com/item?id=46711878\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "FSNotes 7 – Remarkable fast plain text notes",
+      "link": "https://fsnot.es/v7/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-21T21:31:03Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://fsnot.es/v7/\"\u003ehttps://fsnot.es/v7/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46711845\"\u003ehttps://news.ycombinator.com/item?id=46711845\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The 40M Dollar Job (2019)",
+      "link": "https://idiallo.com/blog/the-40-million-dollar-job",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-21T21:30:07Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://idiallo.com/blog/the-40-million-dollar-job\"\u003ehttps://idiallo.com/blog/the-40-million-dollar-job\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46711832\"\u003ehttps://news.ycombinator.com/item?id=46711832\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Unicode Explorer – Explore, Search, and Learn Unicode",
+      "link": "https://unicode-detector-nine.vercel.app/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-21T21:29:19Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://unicode-detector-nine.vercel.app/\"\u003ehttps://unicode-detector-nine.vercel.app/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46711829\"\u003ehttps://news.ycombinator.com/item?id=46711829\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "End-of-Life usefulness of degradation by products from transient electronics",
+      "link": "https://www.nature.com/articles/s41528-025-00411-w",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-21T21:29:12Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nature.com/articles/s41528-025-00411-w\"\u003ehttps://www.nature.com/articles/s41528-025-00411-w\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46711827\"\u003ehttps://news.ycombinator.com/item?id=46711827\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "IntelliJ IDEA Conf 2026: Learn From the People Building the JVM Ecosystem",
+      "link": "https://blog.jetbrains.com/idea/2026/01/intellij-idea-conf-2026-learn-from-the-people-building-the-jvm-ecosystem/",
+      "source": "IntelliJ IDEA : IntelliJ IDEA – the IDE for Professional Development in Java and Kotlin | The JetBrains Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-21T15:05:55Z",
+      "description": "You’re invited to IntelliJ IDEA Conf 2026 – a free online conference for developers working across the JVM ecosystem. Join us for two days of in-depth technical talks, practical insights, and conversations with experts who build and shape modern Java and Kotlin development. The conference will take place online on March 26–27, 2026, with sessions [\u0026#8230;]"
+    },
+    {
+      "title": "‘Largest Infrastructure Buildout in Human History’: Jensen Huang on AI’s ‘Five-Layer Cake’ at Davos",
+      "link": "https://blogs.nvidia.com/blog/davos-wef-blackrock-ceo-larry-fink-jensen-huang/",
+      "source": "NVIDIA Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-21T12:50:16Z",
+      "description": "AI is becoming the foundation of the “largest infrastructure buildout in human history,” spanning energy and computing infrastructure, AI models and applications, NVIDIA founder and CEO Jensen Huang said during a World Economic Forum discussion with BlackRock CEO Larry Fink."
+    },
+    {
+      "title": "Deploy agents instantly with Agent Builder templates",
+      "link": "https://www.blog.langchain.com/introducing-agent-builder-template-library/",
+      "source": "LangChain Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-21T17:00:00Z",
+      "description": "Introducing the Agent Builder Template Library: a collection of ready-to-deploy agents for common tasks, equipped with the tools you already use."
+    },
+    {
+      "title": "Building Multi-Agent Applications with Deep Agents",
+      "link": "https://www.blog.langchain.com/building-multi-agent-applications-with-deep-agents/",
+      "source": "LangChain Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-21T16:30:00Z",
+      "description": "Breaking down complex tasks across specialized agents is one of the most effective approaches to building capable AI systems. In this post, we'll show you how to build multi-agent systems with Deep Agents."
+    }
+  ],
+  "generatedAt": "2026-01-22T07:11:20.264537677+09:00"
+}
