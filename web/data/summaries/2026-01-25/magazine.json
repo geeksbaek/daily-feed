@@ -1,0 +1,266 @@
+{
+  "date": "2026-01-25",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2026년 1월 24일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** VS Code가 정의하는 새로운 코딩의 미래, 테슬라의 구독 모델 전환 논란, 그리고 '코딩'에서 '조각(Sculpting)'으로 진화하는 개발 패러다임의 변화.\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### VS Code 1.109: \"코드 편집의 재정의(Code Editing. Redefined)\"\n마이크로소프트가 VS Code의 2026년 1월 인사이더 빌드(v1.109)를 공개했습니다. 이번 업데이트의 슬로건은 \"Code Editing. Redefined\"로, 단순한 기능 추가를 넘어 에디터의 본질적인 변화를 예고하고 있습니다. 최근 트렌드인 '에이전트 기반 코딩'과 '바이브 코딩(Vibe Coding)' 흐름에 맞춰, IDE 자체가 단순한 텍스트 편집기를 넘어 AI 에이전트들의 오케스트레이션 플랫폼으로 진화하고 있음을 시사합니다. [^1]\n\n\u003e **Key Point:** 단순한 자동 완성을 넘어, 개발자가 '지휘자'가 되고 AI가 '연주자'가 되는 새로운 IDE UX의 시작점.\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. 테슬라, 오토파일럿 무료 시대 종료? 구독제 전면화\n테슬라가 기존에 기본 제공되던 '오토파일럿' 기능을 중단하고, 기본적인 차선 유지 기능조차 월 99달러의 구독 모델로 전환한다는 소식입니다.\n- **What:** 무료였던 기본 ADAS 기능을 유료 구독으로 전환.\n- **Why:** 하드웨어 판매 수익 둔화에 따른 소프트웨어 수익(Recurring Revenue) 모델 강화 전략.\n- **Impact:** \"안전 기능을 인질로 잡는다\"는 소비자 반발과 함께, 자동차 업계 전반의 '기능 구독화(Feature on Demand)' 트렌드가 가속화될 전망입니다. [^5]\n\n### 2. \"나는 더 이상 코드를 쓰지 않는다, 조각할 뿐\"\n개발자 커뮤니티에서 코딩의 정의가 바뀌고 있습니다. Jerpint.io의 블로그와 'Gas Town' 관련 글들은 LLM 시대의 개발자가 '작성자(Writer)'에서 '조각가(Sculptor)'로 변모하고 있음을 논합니다.\n- **What:** 처음부터 코드를 짜는 것이 아니라, AI가 생성한 거대한 덩어리를 깎아내고 다듬는 방식(Vibe Coding)으로의 전환.\n- **Why:** AI(Codex 등)의 산출물은 방대하지만 완벽하지 않으므로, 이를 검증하고 정제하는 능력이 더 중요해짐.\n- **Impact:** 주니어 개발자에게 요구되는 역량이 '문법 숙지'에서 '시스템 설계 및 리뷰 능력'으로 급격히 이동하고 있습니다. [^7][^22]\n\n### 3. Radicle: 중앙 집중식 플랫폼을 넘어서\nGitHub와 같은 중앙 집중식 코드 저장소의 대안으로 P2P 기반의 'Radicle'이 주목받고 있습니다.\n- **What:** 자율적이고 검열 불가능한 코드 협업 네트워크(Code Forge).\n- **Why:** 특정 기업의 정책 변경이나 서비스 중단 리스크로부터 자유로운 오픈소스 생태계 필요성 대두.\n- **Impact:** Web3 및 탈중앙화 철학을 가진 프로젝트들을 중심으로 코드 저장소의 다변화가 예상됩니다. [^3]\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **winapp CLI** | 윈도우 앱 개발을 위한 새로운 공식 CLI 도구 발표. [^21] |\n| **Tool** | **Grainrad** | 브라우저 기반의 ASCII 아트 및 디더링(Dithering) 효과 생성 도구. [^13] |\n| **Analysis** | **Codex Internals** | OpenAI Codex CLI의 에이전트 루프와 프롬프트 캐싱 전략을 역공학으로 분석한 글. [^8][^9] |\n| **Paper** | **OptiMind** | 최적화 문제 해결을 위해 설계된 마이크로소프트의 새로운 연구 모델. [^19] |\n| **Paper** | **Divergent Creativity** | 인간과 LLM의 확산적 창의성(Divergent Creativity) 차이를 분석한 네이처 논문. [^31] |\n| **DevOps** | **Terraform Actions** | 테라폼 액션의 심층 분석 및 활용 가이드. [^26] |\n| **Hobby** | **Vinyl Boot** | 바이닐 레코드(LP)를 이용해 리눅스를 부팅하는 기상천외한 해킹 프로젝트. [^6] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **Docker Hardened Images**: 기업용 체험판을 통해 도커의 보안 강화 이미지를 최대한 활용하는 방법(Part 2). [^2]\n* **Markdown Viewer**: 파이어폭스 사용자를 위한 마크다운 뷰어 확장 프로그램 추천. [^14]\n* **Writing a Go SQL Driver**: Go 언어용 SQL 드라이버를 직접 작성해보는 기술 튜토리얼. [^25]\n* **Policy-Based Routing**: OpenWrt 라우터에서 정책 기반 라우팅을 설정하는 방법. [^24]\n* **Isolating Claude Code**: Claude Code 실행 환경을 격리하여 보안을 강화하는 방법론. [^28]\n* **지니 길들이기**: 켄트 벡(Kent Beck)의 스타일로 LLM을 다루는 방법에 대한 고찰. [^12]\n\n#### 🤖 AI \u0026 데이터\n* **AI 옥수수 재배**: AI가 농업, 특히 옥수수 재배에 미칠 수 있는 영향과 가능성. [^10]\n* **Google Search Update**: 구글의 웹 검색 제품 및 프로그래머블 검색 엔진 기능 업데이트 소식. [^11]\n* **Information Entropy**: 정보 엔트로피 개념을 활용해 실험 대상을 선택하고 의사결정을 내리는 방법. [^15]\n\n#### 🐧 리눅스 \u0026 OS\n* **Daxfs**: 리눅스의 새로운 파일 시스템으로 제안된 Daxfs 소식. [^16]\n* **CachyOS 2026**: 2026년 1월 업데이트로 Plasma 로그인 매니저 전환 및 Wayland 라이브 ISO 도입. [^17]\n\n#### 🚗 모빌리티 \u0026 산업\n* **중국 전기 트럭 급성장**: 2025년 중국 내 하이브리드 및 전기 세미 트럭 판매량이 23만 대를 돌파. [^29]\n* **스마트카 회의론**: \"우리는 스마트카를 원한 적 없다\"는 자동차 칼럼, 과도한 기술 도입 비판. [^23]\n* **항공 대란**: 미국 전역의 겨울 폭풍으로 12,000편 이상의 항공편 결항 사태 발생. [^18]\n* **좌석 등받이의 심리학**: 항공기 좌석 디자인 심리학이 어떻게 비즈니스 제국을 건설했는지 분석. [^30]\n\n#### 🌍 문화 \u0026 기타\n* **새로운 YC 홈페이지**: 스타트업 액셀러레이터 Y Combinator의 홈페이지 리뉴얼 소식. [^4]\n* **Dorodango**: 1999년 일본을 강타했던 '흙구슬 만들기' 취미에 대한 회고 영상. [^20]\n* **온라인 하층민**: \"만성적으로 온라인에 접속해 있는 사람들이 새로운 하층민이 될 것\"이라는 사회 비평 영상. [^27]\n* **Just Do Things**: \"진지하게 말하는데, 그냥 하면 된다\"는 해커톤/메이커 정신을 강조한 글. [^32]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘 뉴스는 '**도구의 진화'와 '인간 역할의 변화**'로 요약됩니다. VS Code는 에이전트 플랫폼으로 진화하고 있고, 개발자는 코드를 '작성'하는 것에서 '조각'하는 것으로 역할을 바꾸고 있습니다. 반면, 테슬라의 구독제 전환이나 스마트카에 대한 피로감은 \"기술이 인간을 위해 존재하는가, 수익을 위해 존재하는가\"에 대한 질문을 던집니다. 주말 동안 흙구슬(Dorodango)을 빚거나 LP로 부팅을 시도해보며 아날로그와 디지털의 균형을 맞춰보는 건 어떨까요?\n\n[^1]: January 2026 Insiders (version 1.109) - https://code.visualstudio.com/updates/v1_109\n[^2]: Making the Most of Your Docker Hardened Images Enterprise Trial – Part 2 - https://www.docker.com/blog/making-the-most-of-your-docker-hardened-images-enterprise-trial-part-2/\n[^3]: Radicle: 자율적 코드 포지 - https://news.hada.io/topic?id=26095\n[^4]: 새로운 YC 홈페이지 - https://news.hada.io/topic?id=26094\n[^5]: 테슬라, 오토파일럿 중단하고 차선 유지 기능을 월 99달러 구독제로 전환 - https://news.hada.io/topic?id=26093\n[^6]: 바이닐 레코드로 부팅하기 - https://news.hada.io/topic?id=26092\n[^7]: 가스 타운의 에이전트 패턴, 설계 병목, 그리고 대규모 바이브코딩 - https://news.hada.io/topic?id=26091\n[^8]: Codex 에이전트 루프 해체하기 - https://news.hada.io/topic?id=26090\n[^9]: OpenAI Codex CLI 내부 동작 분석: 에이전트 루프와 프롬프트 캐싱 전략 - https://news.hada.io/topic?id=26089\n[^10]: AI가 옥수수를 재배할 수 있을까? - https://news.hada.io/topic?id=26088\n[^11]: 구글, 웹 검색 제품 및 Programmable Search Engine 기능 업데이트 - https://news.hada.io/topic?id=26087\n[^12]: 지니 길들이기: \"Kent Beck처럼\" - https://news.hada.io/topic?id=26086\n[^13]: Grainrad: Browser ASCII/Dithering Tool - https://grainrad.com/\n[^14]: Markdown Viewer – Get This Extension for Firefox (En-US) - https://addons.mozilla.org/en-US/firefox/addon/markdown-viewer-extension/\n[^15]: Using Information Entropy to Make Choices / Choose Experiments - https://blog.demofox.org/2025/10/05/using-information-entropy-to-make-choices-choose-experiments/\n[^16]: Daxfs Proposed as Newest Linux File-System - https://www.phoronix.com/news/DAXFS-Linux-File-System\n[^17]: CachyOS Starts 2026 by Switching to Plasma Login Manager, Live ISO Using Wayland - https://www.phoronix.com/news/CachyOS-January-2026\n[^18]: Almost 12,000 flights canceled as major winter storm bears down across US - https://ktla.com/news/nationworld/ap-over-8000-flights-canceled-as-major-winter-storm-bears-down-across-much-of-the-us/\n[^19]: OptiMind: Research Model Designed for Optimization - https://huggingface.co/blog/microsoft/optimind\n[^20]: Dorodango: the hobby that took over Japan in 1999 - https://www.youtube.com/watch?v=2H0r81kv5GA\n[^21]: Announcing winapp, the Windows App Development CLI - https://blogs.windows.com/windowsdeveloper/2026/01/22/announcing-winapp-the-windows-app-development-cli/\n[^22]: I don't write code anymore – I sculpt it - https://www.jerpint.io/blog/2026-01-24-i-dont-write-code-anymore-i-sculpt-it/\n[^23]: We didn't ask for 'smart' cars – so why are we getting them? - https://www.autocar.co.uk/opinion/new-cars/we-didn%E2%80%99t-ask-smart-cars-so-why-are-we-getting-them\n[^24]: Policy-Based Routing on an OpenWrt Router - https://dariusz.wieckiewicz.org/en/policy-based-routing-openwrt\n[^25]: Writing a Go SQL Driver - https://www.dolthub.com/blog/2026-01-23-golang-sql-drivers/\n[^26]: Terraform Actions: Deep-Dive - https://mattias.engineer/blog/2025/terraform-actions-deep-dive/\n[^27]: The chronically online will become a new underclass [video] - https://www.youtube.com/watch?v=Bm2Q9HkbLsQ\n[^28]: Isolating Claude Code - https://yieldcode.blog/post/isolating-claude-code/\n[^29]: Hybrid and electric semi truck sales topped 231,000 units 2025 – in China alone - https://electrek.co/2026/01/24/hybrid-and-electric-semi-truck-sales-topped-231000-units-2025-in-china-alone/\n[^30]: Seat-back psychology helped a WA business build a dynasty - https://www.seattletimes.com/business/boeing-aerospace/how-seat-back-psychology-helped-a-wa-business-build-a-dynasty/\n[^31]: Divergent creativity in humans and large language models - https://www.nature.com/articles/s41598-025-25157-3\n[^32]: Im fucking serious, you can just do things - https://vibe.devpost.com\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **January 2026 Insiders (version 1.109)**\n   - 출처: Visual Studio Code - Code Editing. Redefined.\n   - 링크: https://code.visualstudio.com/updates/v1_109\n\n2. **Making the Most of Your Docker Hardened Images Enterprise Trial – Part 2**\n   - 출처: Docker Blog\n   - 링크: https://www.docker.com/blog/making-the-most-of-your-docker-hardened-images-enterprise-trial-part-2/\n\n3. **Radicle: 자율적 코드 포지**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26095\n\n4. **새로운 YC 홈페이지**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26094\n\n5. **테슬라, 오토파일럿 중단하고 차선 유지 기능을 월 99달러 구독제로 전환**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26093\n\n6. **바이닐 레코드로 부팅하기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26092\n\n7. **가스 타운의 에이전트 패턴, 설계 병목, 그리고 대규모 바이브코딩**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26091\n\n8. **Codex 에이전트 루프 해체하기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26090\n\n9. **OpenAI Codex CLI 내부 동작 분석: 에이전트 루프와 프롬프트 캐싱 전략**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26089\n\n10. **AI가 옥수수를 재배할 수 있을까?**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26088\n\n11. **구글, 웹 검색 제품 및 Programmable Search Engine 기능 업데이트**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26087\n\n12. **지니 길들이기: \"Kent Beck처럼\"**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26086\n\n13. **Grainrad: Browser ASCII/Dithering Tool**\n   - 출처: Hacker News\n   - 링크: https://grainrad.com/\n\n14. **Markdown Viewer – Get This Extension for Firefox (En-US)**\n   - 출처: Hacker News\n   - 링크: https://addons.mozilla.org/en-US/firefox/addon/markdown-viewer-extension/\n\n15. **Using Information Entropy to Make Choices / Choose Experiments**\n   - 출처: Hacker News\n   - 링크: https://blog.demofox.org/2025/10/05/using-information-entropy-to-make-choices-choose-experiments/\n\n16. **Daxfs Proposed as Newest Linux File-System**\n   - 출처: Hacker News\n   - 링크: https://www.phoronix.com/news/DAXFS-Linux-File-System\n\n17. **CachyOS Starts 2026 by Switching to Plasma Login Manager, Live ISO Using Wayland**\n   - 출처: Hacker News\n   - 링크: https://www.phoronix.com/news/CachyOS-January-2026\n\n18. **Almost 12,000 flights canceled as major winter storm bears down across US**\n   - 출처: Hacker News\n   - 링크: https://ktla.com/news/nationworld/ap-over-8000-flights-canceled-as-major-winter-storm-bears-down-across-much-of-the-us/\n\n19. **OptiMind: Research Model Designed for Optimization**\n   - 출처: Hacker News\n   - 링크: https://huggingface.co/blog/microsoft/optimind\n\n20. **Dorodango: the hobby that took over Japan in 1999**\n   - 출처: Hacker News\n   - 링크: https://www.youtube.com/watch?v=2H0r81kv5GA\n\n21. **Announcing winapp, the Windows App Development CLI**\n   - 출처: Hacker News\n   - 링크: https://blogs.windows.com/windowsdeveloper/2026/01/22/announcing-winapp-the-windows-app-development-cli/\n\n22. **I don't write code anymore – I sculpt it**\n   - 출처: Hacker News\n   - 링크: https://www.jerpint.io/blog/2026-01-24-i-dont-write-code-anymore-i-sculpt-it/\n\n23. **We didn't ask for 'smart' cars – so why are we getting them?**\n   - 출처: Hacker News\n   - 링크: https://www.autocar.co.uk/opinion/new-cars/we-didn%E2%80%99t-ask-smart-cars-so-why-are-we-getting-them\n\n24. **Policy-Based Routing on an OpenWrt Router**\n   - 출처: Hacker News\n   - 링크: https://dariusz.wieckiewicz.org/en/policy-based-routing-openwrt\n\n25. **Writing a Go SQL Driver**\n   - 출처: Hacker News\n   - 링크: https://www.dolthub.com/blog/2026-01-23-golang-sql-drivers/\n\n26. **Terraform Actions: Deep-Dive**\n   - 출처: Hacker News\n   - 링크: https://mattias.engineer/blog/2025/terraform-actions-deep-dive/\n\n27. **The chronically online will become a new underclass [video]**\n   - 출처: Hacker News\n   - 링크: https://www.youtube.com/watch?v=Bm2Q9HkbLsQ\n\n28. **Isolating Claude Code**\n   - 출처: Hacker News\n   - 링크: https://yieldcode.blog/post/isolating-claude-code/\n\n29. **Hybrid and electric semi truck sales topped 231,000 units 2025 – in China alone**\n   - 출처: Hacker News\n   - 링크: https://electrek.co/2026/01/24/hybrid-and-electric-semi-truck-sales-topped-231000-units-2025-in-china-alone/\n\n30. **Seat-back psychology helped a WA business build a dynasty**\n   - 출처: Hacker News\n   - 링크: https://www.seattletimes.com/business/boeing-aerospace/how-seat-back-psychology-helped-a-wa-business-build-a-dynasty/\n\n31. **Divergent creativity in humans and large language models**\n   - 출처: Hacker News\n   - 링크: https://www.nature.com/articles/s41598-025-25157-3\n\n32. **Im fucking serious, you can just do things**\n   - 출처: Hacker News\n   - 링크: https://vibe.devpost.com\n\n\n",
+  "articles": [
+    {
+      "title": "January 2026 Insiders (version 1.109)",
+      "link": "https://code.visualstudio.com/updates/v1_109",
+      "source": "Visual Studio Code - Code Editing. Redefined.",
+      "category": "tech",
+      "publishedAt": "2026-02-04T17:00:00Z",
+      "description": "\n      \u003cp\u003eLearn what is new in the Visual Studio Code January 2026 Release (1.109).\u003c/p\u003e\n      \u003cp\u003e\u003ca href=\"https://code.visualstudio.com/updates/v1_109\"\u003eRead the full article\u003c/a\u003e\u003c/p\u003e\n    "
+    },
+    {
+      "title": "Making the Most of Your Docker Hardened Images Enterprise Trial – Part 2",
+      "link": "https://www.docker.com/blog/making-the-most-of-your-docker-hardened-images-enterprise-trial-part-2/",
+      "source": "Docker Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-24T20:24:39Z",
+      "description": "Verifying Security and Compliance of Docker Hardened Images In Part 1 of this series, we migrated a Node.js service to Docker Hardened Images (DHI) and measured impressive results: 100% vulnerability elimination, 90% package reduction, and 41.5% size decrease. We extracted the SBOM and saw compliance labels for FIPS, STIG, and CIS. The numbers look compelling...."
+    },
+    {
+      "title": "Radicle: 자율적 코드 포지",
+      "link": "https://news.hada.io/topic?id=26095",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-25T05:37:02+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eRadicle\u003c/strong\u003e은 Git 위에 구축된 \u003cstrong\u003e탈중앙형 오픈소스 코드 협업 네트워크\u003c/strong\u003e로, 중앙 서버 없이 동료 간 직접 저장소를 복제하고 관리함\u003c/li\u003e\n\u003cli\u003e모든 데이터와 \u003cstrong\u003e소셜 아티팩트\u003c/strong\u003e는 공개키 암호로 서명되어 \u003cstrong\u003e진위와 작성자 검증\u003c/strong\u003e이 가능함\u003c/li\u003e\n\u003cli\u003e사...\u003c/p\u003e"
+    },
+    {
+      "title": "새로운 YC 홈페이지",
+      "link": "https://news.hada.io/topic?id=26094",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-25T05:34:02+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eY Combinator(이하 YC)\u003c/strong\u003e 는 2005년 설립된 스타트업 투자 기관으로, 매년 네 차례 선발된 기업에 \u003cstrong\u003e$500,000 투자\u003c/strong\u003e와 3개월 집중 프로그램을 제공\u003c/li\u003e\n\u003cli\u003e이 프로그램을 통해 \u003cstrong\u003eAirbnb, Stripe, Coinbase, DoorDash, Dropbox, Reddit, Replit\u003c/strong\u003e 등 다수의 유니콘...\u003c/p\u003e"
+    },
+    {
+      "title": "테슬라, 오토파일럿 중단하고 차선 유지 기능을 월 99달러 구독제로 전환",
+      "link": "https://news.hada.io/topic?id=26093",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-25T02:33:07+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e테슬라가 기존 \u003cstrong\u003eAutopilot 기능을 중단\u003c/strong\u003e하고, 차량의 \u003cstrong\u003e차선 유지 및 자율 조향 기능을 FSD(Fully Self-Driving)\u003c/strong\u003e 구독 서비스로만 제공\u003c/li\u003e\n\u003cli\u003e2월 14일까지는 \u003cstrong\u003e8,000달러 일시 결제\u003c/strong\u003e로 이용 가능하지만, 이후에는 \u003cstrong\u003e월 99달러 구독제\u003c/strong\u003e만 선택 가...\u003c/p\u003e"
+    },
+    {
+      "title": "바이닐 레코드로 부팅하기",
+      "link": "https://news.hada.io/topic?id=26092",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-25T00:37:21+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e일반적인 PC 부팅 매체 대신 \u003cstrong\u003e턴테이블(레코드 플레이어)\u003c/strong\u003e 을 이용해 IBM PC를 부팅한 실험\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e64KB 크기의 FreeDOS 기반 RAM 디스크 이미지\u003c/strong\u003e를 아날로그 오디오 신호로 변환해 10인치 바이닐에 기록\u003c/li\u003e\n\u003cli\u003ePC의 \u003cstrong\u003e카세트 인터페이스\u003c/strong\u003e를 활용해 오디오...\u003c/p\u003e"
+    },
+    {
+      "title": "가스 타운의 에이전트 패턴, 설계 병목, 그리고 대규모 바이브코딩",
+      "link": "https://news.hada.io/topic?id=26091",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-25T00:34:21+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eGas Town\u003c/strong\u003e은 여러 코딩 에이전트를 동시에 운영하는 \u003cstrong\u003eSteve Yegge의 실험적 오케스트레이터 시스템\u003c/strong\u003e으로, 자동화된 개발 환경의 미래를 탐색하는 \u003cstrong\u003e디자인 픽션\u003c/strong\u003e 형태의 프로젝트임\u003c/li\u003e\n\u003cli\u003e이 시스템은 수십 개의 에이전트가 협업해 코드를 작성하지만, 실제 ...\u003c/p\u003e"
+    },
+    {
+      "title": "Codex 에이전트 루프 해체하기",
+      "link": "https://news.hada.io/topic?id=26090",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-24T23:33:10+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eCodex CLI\u003c/strong\u003e는 로컬 환경에서 안전하고 효율적으로 \u003cstrong\u003e고품질 소프트웨어 변경을 수행하는 에이전트\u003c/strong\u003e로 설계됨\u003c/li\u003e\n\u003cli\u003e핵심 구조인 \u003cstrong\u003e에이전트 루프(agent loop)\u003c/strong\u003e 는 사용자 입력, 모델 추론, 도구 호출을 순환적으로 연결해 의미 있는 작업을 수행\u003c/li\u003e\n\u003cli\u003e루프...\u003c/p\u003e"
+    },
+    {
+      "title": "OpenAI Codex CLI 내부 동작 분석: 에이전트 루프와 프롬프트 캐싱 전략",
+      "link": "https://news.hada.io/topic?id=26089",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-24T22:52:08+09:00",
+      "description": "\u003cp\u003e요약:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e에이전트 루프(Agent Loop)의 구조\u003c/strong\u003e: Codex CLI가 사용자 입력, 모델 추론, 도구(Tool) 실행을 조율하여 실제 작업을 수행하는 순환적 프로세스를 상세히 설명합니다.\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e프롬프트 구성 및 Responses API\u003c/strong\u003e: 시스템 명령, 도구 정의, 로컬 환경 컨텍스트가"
+    },
+    {
+      "title": "AI가 옥수수를 재배할 수 있을까?",
+      "link": "https://news.hada.io/topic?id=26088",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-24T18:33:06+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eAI가 실제 옥수수를 재배하는 실험\u003c/strong\u003e으로, 모든 농사 의사결정을 인공지능 \u003cstrong\u003eClaude Code\u003c/strong\u003e가 수행\u003c/li\u003e\n\u003cli\u003eClaude Code는 \u003cstrong\u003e센서 데이터와 기상 예보를 통합 분석\u003c/strong\u003e해 파종, 관개, 수확 시점을 결정하고 \u003cstrong\u003e인간 운영자와 장비를 조율\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e시...\u003c/p\u003e"
+    },
+    {
+      "title": "구글, 웹 검색 제품 및 Programmable Search Engine 기능 업데이트",
+      "link": "https://news.hada.io/topic?id=26087",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-24T10:59:55+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eGoogle은 \u003cstrong\u003eProgrammable Search Engine(프로그래머블 검색 엔진)\u003c/strong\u003e 을 개편해 웹사이트별, 엔터프라이즈, 전체 웹 검색 등 \u003cstrong\u003e세 가지 사용 사례별 솔루션\u003c/strong\u003e으로 단순화함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e사이트 전용 검색\u003c/strong\u003e은 ‘Programmable Search Element’로 통합되어, 최대 50개 도...\u003c/p\u003e"
+    },
+    {
+      "title": "지니 길들이기: \"Kent Beck처럼\"",
+      "link": "https://news.hada.io/topic?id=26086",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-24T10:51:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eAI 코딩 도구(지니)에게 \u003cstrong\u003e\u0026quot;Kent Beck처럼 코딩해\u0026quot;\u003c/strong\u003e 라는 페르소나 프롬프트를 추가하면 코드 품질이 개선되는지 실험한 결과, 테스트 스타일과 변수 명명은 개선되었으나 \u003cstrong\u003e아키텍처 설계\u003c/strong\u003e는 변하지 않음\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eRope 데이터 구조\u003c/strong\u003e를 구현하는 프로...\u003c/p\u003e"
+    },
+    {
+      "title": "Grainrad: Browser ASCII/Dithering Tool",
+      "link": "https://grainrad.com/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-24T21:56:59Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://grainrad.com/\"\u003ehttps://grainrad.com/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46748139\"\u003ehttps://news.ycombinator.com/item?id=46748139\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Markdown Viewer – Get This Extension for Firefox (En-US)",
+      "link": "https://addons.mozilla.org/en-US/firefox/addon/markdown-viewer-extension/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-24T21:55:40Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://addons.mozilla.org/en-US/firefox/addon/markdown-viewer-extension/\"\u003ehttps://addons.mozilla.org/en-US/firefox/addon/markdown-viewer-extension/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46748128\"\u003ehttps://news.ycombinator.com/item?id=46748128\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Using Information Entropy to Make Choices / Choose Experiments",
+      "link": "https://blog.demofox.org/2025/10/05/using-information-entropy-to-make-choices-choose-experiments/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-24T21:55:28Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://blog.demofox.org/2025/10/05/using-information-entropy-to-make-choices-choose-experiments/\"\u003ehttps://blog.demofox.org/2025/10/05/using-information-entropy-to-make-choices-choose-experiments/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46748125\"\u003ehttps://news.ycombinator.com/item?id=46748125\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Daxfs Proposed as Newest Linux File-System",
+      "link": "https://www.phoronix.com/news/DAXFS-Linux-File-System",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-24T21:54:14Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.phoronix.com/news/DAXFS-Linux-File-System\"\u003ehttps://www.phoronix.com/news/DAXFS-Linux-File-System\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46748112\"\u003ehttps://news.ycombinator.com/item?id=46748112\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "CachyOS Starts 2026 by Switching to Plasma Login Manager, Live ISO Using Wayland",
+      "link": "https://www.phoronix.com/news/CachyOS-January-2026",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-24T21:53:44Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.phoronix.com/news/CachyOS-January-2026\"\u003ehttps://www.phoronix.com/news/CachyOS-January-2026\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46748106\"\u003ehttps://news.ycombinator.com/item?id=46748106\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Almost 12,000 flights canceled as major winter storm bears down across US",
+      "link": "https://ktla.com/news/nationworld/ap-over-8000-flights-canceled-as-major-winter-storm-bears-down-across-much-of-the-us/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-24T21:53:15Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://ktla.com/news/nationworld/ap-over-8000-flights-canceled-as-major-winter-storm-bears-down-across-much-of-the-us/\"\u003ehttps://ktla.com/news/nationworld/ap-over-8000-flights-canceled-as-major-winter-storm-bears-down-across-much-of-the-us/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46748101\"\u003ehttps://news.ycombinator.com/item?id=46748101\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "OptiMind: Research Model Designed for Optimization",
+      "link": "https://huggingface.co/blog/microsoft/optimind",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-24T21:53:15Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://huggingface.co/blog/microsoft/optimind\"\u003ehttps://huggingface.co/blog/microsoft/optimind\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46748100\"\u003ehttps://news.ycombinator.com/item?id=46748100\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Dorodango: the hobby that took over Japan in 1999",
+      "link": "https://www.youtube.com/watch?v=2H0r81kv5GA",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-24T21:49:10Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.youtube.com/watch?v=2H0r81kv5GA\"\u003ehttps://www.youtube.com/watch?v=2H0r81kv5GA\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46748079\"\u003ehttps://news.ycombinator.com/item?id=46748079\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Announcing winapp, the Windows App Development CLI",
+      "link": "https://blogs.windows.com/windowsdeveloper/2026/01/22/announcing-winapp-the-windows-app-development-cli/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-24T21:49:04Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://blogs.windows.com/windowsdeveloper/2026/01/22/announcing-winapp-the-windows-app-development-cli/\"\u003ehttps://blogs.windows.com/windowsdeveloper/2026/01/22/announcing-winapp-the-windows-app-development-cli/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46748078\"\u003ehttps://news.ycombinator.com/item?id=46748078\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "I don't write code anymore – I sculpt it",
+      "link": "https://www.jerpint.io/blog/2026-01-24-i-dont-write-code-anymore-i-sculpt-it/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-24T21:49:01Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.jerpint.io/blog/2026-01-24-i-dont-write-code-anymore-i-sculpt-it/\"\u003ehttps://www.jerpint.io/blog/2026-01-24-i-dont-write-code-anymore-i-sculpt-it/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46748077\"\u003ehttps://news.ycombinator.com/item?id=46748077\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "We didn't ask for 'smart' cars – so why are we getting them?",
+      "link": "https://www.autocar.co.uk/opinion/new-cars/we-didn%E2%80%99t-ask-smart-cars-so-why-are-we-getting-them",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-24T21:48:18Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.autocar.co.uk/opinion/new-cars/we-didn%E2%80%99t-ask-smart-cars-so-why-are-we-getting-them\"\u003ehttps://www.autocar.co.uk/opinion/new-cars/we-didn%E2%80%99t-ask-smart-cars-so-why-are-we-getting-them\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46748071\"\u003ehttps://news.ycombinator.com/item?id=46748071\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 5\u003c/p\u003e\n\u003cp\u003e# Comments: 2\u003c/p\u003e\n"
+    },
+    {
+      "title": "Policy-Based Routing on an OpenWrt Router",
+      "link": "https://dariusz.wieckiewicz.org/en/policy-based-routing-openwrt",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-24T21:48:15Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://dariusz.wieckiewicz.org/en/policy-based-routing-openwrt\"\u003ehttps://dariusz.wieckiewicz.org/en/policy-based-routing-openwrt\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46748069\"\u003ehttps://news.ycombinator.com/item?id=46748069\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 4\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Writing a Go SQL Driver",
+      "link": "https://www.dolthub.com/blog/2026-01-23-golang-sql-drivers/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-24T21:48:14Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.dolthub.com/blog/2026-01-23-golang-sql-drivers/\"\u003ehttps://www.dolthub.com/blog/2026-01-23-golang-sql-drivers/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46748068\"\u003ehttps://news.ycombinator.com/item?id=46748068\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Terraform Actions: Deep-Dive",
+      "link": "https://mattias.engineer/blog/2025/terraform-actions-deep-dive/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-24T21:48:03Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://mattias.engineer/blog/2025/terraform-actions-deep-dive/\"\u003ehttps://mattias.engineer/blog/2025/terraform-actions-deep-dive/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46748067\"\u003ehttps://news.ycombinator.com/item?id=46748067\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The chronically online will become a new underclass [video]",
+      "link": "https://www.youtube.com/watch?v=Bm2Q9HkbLsQ",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-24T21:46:10Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.youtube.com/watch?v=Bm2Q9HkbLsQ\"\u003ehttps://www.youtube.com/watch?v=Bm2Q9HkbLsQ\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46748045\"\u003ehttps://news.ycombinator.com/item?id=46748045\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Isolating Claude Code",
+      "link": "https://yieldcode.blog/post/isolating-claude-code/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-24T21:46:04Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://yieldcode.blog/post/isolating-claude-code/\"\u003ehttps://yieldcode.blog/post/isolating-claude-code/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46748043\"\u003ehttps://news.ycombinator.com/item?id=46748043\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Hybrid and electric semi truck sales topped 231,000 units 2025 – in China alone",
+      "link": "https://electrek.co/2026/01/24/hybrid-and-electric-semi-truck-sales-topped-231000-units-2025-in-china-alone/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-24T21:45:56Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://electrek.co/2026/01/24/hybrid-and-electric-semi-truck-sales-topped-231000-units-2025-in-china-alone/\"\u003ehttps://electrek.co/2026/01/24/hybrid-and-electric-semi-truck-sales-topped-231000-units-2025-in-china-alone/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46748041\"\u003ehttps://news.ycombinator.com/item?id=46748041\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Seat-back psychology helped a WA business build a dynasty",
+      "link": "https://www.seattletimes.com/business/boeing-aerospace/how-seat-back-psychology-helped-a-wa-business-build-a-dynasty/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-24T21:45:34Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.seattletimes.com/business/boeing-aerospace/how-seat-back-psychology-helped-a-wa-business-build-a-dynasty/\"\u003ehttps://www.seattletimes.com/business/boeing-aerospace/how-seat-back-psychology-helped-a-wa-business-build-a-dynasty/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46748039\"\u003ehttps://news.ycombinator.com/item?id=46748039\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Divergent creativity in humans and large language models",
+      "link": "https://www.nature.com/articles/s41598-025-25157-3",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-24T21:45:34Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nature.com/articles/s41598-025-25157-3\"\u003ehttps://www.nature.com/articles/s41598-025-25157-3\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46748038\"\u003ehttps://news.ycombinator.com/item?id=46748038\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Im fucking serious, you can just do things",
+      "link": "https://vibe.devpost.com",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-24T21:42:18Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://vibe.devpost.com\"\u003ehttps://vibe.devpost.com\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46748010\"\u003ehttps://news.ycombinator.com/item?id=46748010\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    }
+  ],
+  "generatedAt": "2026-01-25T07:09:00.753281341+09:00"
+}
