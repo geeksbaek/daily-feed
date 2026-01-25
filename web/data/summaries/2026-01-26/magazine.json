@@ -1,0 +1,266 @@
+{
+  "date": "2026-01-26",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2026년 1월 25일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** 폴란드 전력망을 노린 파괴적 사이버 공격부터 영국 상원의 16세 미만 SNS 금지 법안 통과, 그리고 AI 코딩 에이전트가 초래한 새로운 보안 취약점까지, 기술과 사회의 충돌이 격화되고 있습니다.\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### 폴란드 전력망 강타: 전례 없는 '와이퍼(Wiper)' 악성코드 공격\n유럽의 지정학적 긴장이 고조되는 가운데, 폴란드 전력망을 타깃으로 한 대규모 사이버 공격이 보고되었습니다. 이번 공격은 금전적 이득을 노리는 랜섬웨어가 아니라, 시스템 데이터를 영구적으로 삭제하여 복구를 불가능하게 만드는 '와이퍼(Wiper)' 악성코드가 사용되었다는 점에서 그 심각성이 큽니다. 이는 단순 해킹을 넘어선 하이브리드 전쟁의 일환으로 해석될 수 있으며, 국가 기반 시설 보안에 대한 경각심을 최고조로 끌어올리고 있습니다.\n\u003e **Key Point:** 데이터 파괴를 목적으로 하는 와이퍼 악성코드가 국가 핵심 인프라(전력망)를 직접 타격했으며, 이는 사이버전의 양상이 물리적 피해를 동반한 파괴 공작으로 진화했음을 시사합니다. [^6]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. AI와 보안의 역설: Python 3.14와 Claude Code의 위험한 만남\n- **What:** Python 3.14의 새로운 원격 디버깅 기능과 AI 코딩 도구인 Claude Code를 결합했을 때 발생하는 심각한 보안 취약점(Pwnage)이 공개되었습니다.\n- **Why:** 개발 편의성을 위해 설계된 기능들이 AI 에이전트의 자동화된 권한과 만났을 때, 공격자가 원격으로 코드를 실행(RCE)할 수 있는 경로가 의도치 않게 열리게 됩니다.\n- **Impact:** AI 코딩 어시스턴트 도입이 가속화되는 기업 환경에서, 개발 도구의 기본 설정과 AI의 권한 관리에 대한 전면적인 보안 재검토가 필요해졌습니다. [^18]\n\n### 2. 영국 상원, 16세 미만 소셜 미디어 금지 법안 가결\n- **What:** 영국 상원(House of Lords)이 16세 미만 청소년의 소셜 미디어 사용을 법적으로 금지하는 강력한 법안을 통과시켰습니다.\n- **Why:** 청소년 정신 건강 보호와 온라인 유해 콘텐츠 노출 방지가 주된 이유이며, 알고리즘 중독성에 대한 사회적 우려가 반영된 결과입니다.\n- **Impact:** 이 법안이 최종 발효될 경우, 플랫폼 기업들의 연령 인증 시스템 도입 의무화는 물론, 전 세계 다른 국가들의 아동/청소년 디지털 규제 정책에도 막대한 영향을 미칠 것으로 보입니다. [^26]\n\n### 3. 유럽의 '디지털 독립' 선언과 메신저 상호운용성\n- **What:** 유럽이 미국 중심의 인터넷 기술 의존도에서 벗어나려는 움직임을 가속화하고 있습니다. 이와 맞물려 유럽 최초로 WhatsApp과 상호운용이 가능한 채팅 앱 'BirdyChat'이 출시되었습니다.\n- **Why:** EU의 디지털 시장법(DMA) 준수 및 데이터 주권 확보가 핵심 동력입니다. 거대 테크 기업의 독점을 막고 사용자 선택권을 넓히기 위함입니다.\n- **Impact:** 폐쇄적이었던 메신저 생태계가 개방형으로 전환되는 신호탄이 될 수 있으며, 글로벌 테크 기업들의 유럽 내 사업 전략 수정이 불가피해졌습니다. [^7] [^11]\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Dev Tool** | **VS Code Jan 2026 (v1.109)** | 최신 인사이더 빌드 업데이트. 코드 편집 경험을 재정의하는 기능 개선 포함. [^1] |\n| **Language** | **Chromium C++ Bans** | 크로미움 프로젝트에서 사용 금지된 C++ 기능 목록. 대규모 프로젝트의 코드 스타일 가이드로 참고 가치 높음. [^5] |\n| **Paper** | **Russ Cox: Floating Point** | Go 언어 개발자 Russ Cox가 제안하는 더 쉽고 빠르며 간단한 부동 소수점 변환 알고리즘 혁신. [^10] |\n| **AI Tool** | **Cori** | Raw SQL 없이도 AI 에이전트에게 안전하게 DB 쓰기 권한을 부여하는 Rust 기반 오픈소스 커널. [^24] |\n| **Utility** | **Ghostree** | Ghostty 터미널의 포크 버전으로, Git 워크트리(worktree) 관리 기능이 내장됨. [^17] |\n| **Utility** | **SystemPulse** | macOS 메뉴바에서 미니 그래프로 시스템 상태를 모니터링하는 경량 네이티브 앱. [^31] |\n| **Design** | **Software Design Principles** | 실무에서 진짜 중요한 소프트웨어 설계 원칙들을 정리한 뉴스레터 아티클. [^32] |\n| **Paper** | **Sagas (2012)** | 분산 시스템 트랜잭션 관리에 대한 고전 논문(Saga 패턴) 재조명. [^23] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n\n#### 💻 개발 \u0026 인프라 \u0026 AI\n* **Spring \u0026 MySQL 문서 번역 워크플로**: 공식 문서를 번역하고 검색할 수 있는 시스템 개발기 (Show GN). [^9]\n* **Docker Hardened Images**: 도커의 강화된 이미지 엔터프라이즈 트라이얼 활용법 파트 3. [^12]\n* **Codebase by Agent for Agent**: AI 에이전트가 AI를 위해 구축한 코드베이스 실험. [^16]\n* **LLM을 활용한 도메인 특화 압축**: 텍스트 압축 효율을 높이기 위해 LLM을 수작업으로 튜닝한 엔지니어링 사례. [^27]\n* **레거시 시스템을 위한 RAG**: 7,432페이지 분량의 문서를 3초 만에 답변하는 시스템으로 변환한 사례. [^28]\n* **Spreadsheets and Vi and JSON**: 스프레드시트와 Vi, JSON을 결합한 독특한 프로젝트. [^22]\n\n#### 🔬 과학 \u0026 하드웨어\n* **라즈베리 파이 드래그 레이스**: Pi 1부터 Pi 5까지 세대별 성능을 비교한 벤치마크. [^3]\n* **Clarity-1 위성 사후 분석**: 저궤도 위성 임무의 비행 데이터와 이미지를 포함한 상세 분석 보고서. [^4]\n* **연구 데이터 소실 사고**: 클릭 한 번으로 2년치 학술 연구 데이터가 사라진 안타까운 사례와 교훈. [^13]\n* **LED 조명과 시각 성능**: 더 넓은 스펙트럼 보완 없이는 LED가 시각 성능을 저하시킬 수 있다는 네이처 논문. [^20]\n\n#### 🌐 웹 \u0026 소셜 \u0026 트렌드\n* **블로그에 Bluesky 댓글 달기**: 개인 블로그에 탈중앙화 SNS인 Bluesky를 댓글 시스템으로 연동한 튜토리얼. [^8]\n* **WorldChaosMap**: 전 세계의 불안정 상황을 실시간으로 보여주는 라이브 지도 서비스. [^29]\n* **VPN 비교 스프레드시트**: 다양한 VPN 서비스의 성능과 보안을 비교 정리한 자료. [^30]\n* **파리의 자전거 혁명**: 파리의 도시 자전거 정책 성공 사례에서 세계가 배울 점. [^21]\n\n#### 📚 문화 \u0026 기타\n* **도덕경 (어슐러 K. 르 귄 번역)**: SF 거장 르 귄이 해석한 노자의 도덕경 소개. [^2]\n* **Munros, Corbetts, Grahams**: 스코틀랜드 산의 높이별 분류법(먼로, 코벳 등) 차이점 설명. [^14]\n* **공간적 사고를 위한 비주얼 보드**: 고성능 미니멀리스트 비주얼 보드 도구 소개. [^15]\n* **Computer Chronicles**: 80-90년대 전설적인 컴퓨터 TV 쇼 아카이브 사이트. [^19]\n* **영국 AI/양자 연구자 비자 수수료 환급**: 인재 유치를 위해 영국 정부가 연구자들의 비자 비용을 지원. [^25]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘 뉴스는 '**보안'과 '규제**'라는 두 가지 거대한 파도가 기술계를 덮치고 있음을 보여줍니다. 폴란드 전력망 공격과 Python/Claude 취약점은 물리적/디지털 세계 모두에서 보안 위협이 얼마나 정교해지고 있는지 경고합니다. 반면, 영국의 SNS 금지법과 유럽의 기술 독립 움직임은 기술의 무한한 확장에 제동을 걸려는 사회적 합의의 과정을 보여줍니다. 개발자라면 오늘 소개된 **Russ Cox의 부동 소수점 글**과 **Chromium C++ 가이드**는 꼭 일독을 권합니다. 기본기가 탄탄해야 변화의 파도 속에서도 중심을 잡을 수 있으니까요.\n\n---\n\n[^1]: January 2026 Insiders (version 1.109) - https://code.visualstudio.com/updates/v1_109\n[^2]: 도덕경 – 어슐러 K. 르 귄 번역 - https://news.hada.io/topic?id=26116\n[^3]: 라즈베리 파이 드래그 레이스: Pi 1부터 Pi 5까지의 성능 비교 - https://news.hada.io/topic?id=26115\n[^4]: 저궤도 위성 임무 Clarity-1의 사후 분석 (이미지 및 비행 데이터 포함) - https://news.hada.io/topic?id=26114\n[^5]: Chromium에서 금지된 C++ 기능들 - https://news.hada.io/topic?id=26113\n[^6]: 폴란드 전력망을 노린 전례 없는 와이퍼 악성코드 공격 - https://news.hada.io/topic?id=26112\n[^7]: 유럽, 미국 인터넷 기술 의존에서 벗어나려는 움직임 - https://news.hada.io/topic?id=26111\n[^8]: 내 블로그에 Bluesky 댓글 섹션을 추가했다 - https://news.hada.io/topic?id=26110\n[^9]: Show GN: 공식 문서 번역 워크플로 개발 – Spring \u0026 MySQL 공식 문서 번역 및 검색 - https://news.hada.io/topic?id=26108\n[^10]: [Russ Cox] 부동 소수점 변환의 혁신: 더 쉽고, 더 빠르며, 더 간단하게 - https://news.hada.io/topic?id=26107\n[^11]: BirdyChat, 유럽 최초의 WhatsApp 상호운용 채팅 앱으로 출시 - https://news.hada.io/topic?id=26105\n[^12]: Making the Most of Your Docker Hardened Images Enterprise Trial – Part 3 - https://www.docker.com/blog/making-the-most-of-your-docker-hardened-images-enterprise-trial-part-3/\n[^13]: When two years of academic work vanished with a single click - https://www.nature.com/articles/d41586-025-04064-7\n[^14]: Munros, Corbetts, Grahams and Donalds: What's the Difference? - https://www.thehighlandmountaincompany.co.uk/post/munros-corbetts-grahams-and-donalds-what-s-the-difference\n[^15]: A high-performance, minimalist visual board for spatial thinkers - https://vb.lokryn.com\n[^16]: A Codebase by an Agent for an Agent - https://ampcode.com/by-an-agent-for-an-agent\n[^17]: Show HN: Ghostree is a Ghostty fork with worktree management built in - https://github.com/sidequery/ghostree\n[^18]: Python 3.14 Remote Debugging and Claude Code = Pwnage - https://github.com/promptromp/python-remote-debug-skill\n[^19]: Show HN: Computer Chronicles - https://computerchronicles.tv\n[^20]: LED lighting undermines visual performance unless supplemented by wider spectra - https://www.nature.com/articles/s41598-026-35389-6\n[^21]: What the world can learn from Paris's cycling revolution - https://momentummag.com/what-the-world-can-learn-from-pariss-cycling-revolution/\n[^22]: Spreadsheets and Vi and JSON - https://awalgarg.me/untitled_project\n[^23]: Sagas (2012) - https://vasters.com/archive/Sagas.html\n[^24]: Cori – Give agents safe DB write access without raw SQL (open source in Rust) - https://github.com/cori-do/cori-kernel\n[^25]: UK to reimburse visa fees for AI and quantum researchers - https://www.timeshighereducation.com/news/uk-reimburse-visa-fees-ai-and-quantum-researchers\n[^26]: House of Lords votes for under-16s social media ban - https://www.computing.co.uk/news/2026/legislation-regulation/peers-vote-for-under-16-social-media-ban\n[^27]: Hand-Crafting Domain-Specific Compression with an LLM - https://engineering.nanit.com/hand-crafting-domain-specific-compression-with-an-llm-3c42f5c2b070\n[^28]: RAG for Legacy Systems: 7,432 Pages to 3s Answers - https://clouatre.ca/posts/rag-legacy-systems/\n[^29]: WorldChaosMap: A live map of global instability - https://www.worldchaosmap.app/\n[^30]: VPN Comparison Spreadsheet - https://old.reddit.com/r/rateVPNs/comments/1gw58mk/the_ultimate_vpn_comparison_spreadsheet/\n[^31]: Show HN: A lightweight, native macOS menubar app for monitoring with mini graphs - https://github.com/bluewave-labs/systempulse\n[^32]: Software Design Principles That Matter - https://newsletter.francofernando.com/p/software-design-principles-that-matter\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **January 2026 Insiders (version 1.109)**\n   - 출처: Visual Studio Code - Code Editing. Redefined.\n   - 링크: https://code.visualstudio.com/updates/v1_109\n\n2. **도덕경 – 어슐러 K. 르 귄 번역**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26116\n\n3. **라즈베리 파이 드래그 레이스: Pi 1부터 Pi 5까지의 성능 비교**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26115\n\n4. **저궤도 위성 임무 Clarity-1의 사후 분석 (이미지 및 비행 데이터 포함)**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26114\n\n5. **Chromium에서 금지된 C++ 기능들**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26113\n\n6. **폴란드 전력망을 노린 전례 없는 와이퍼 악성코드 공격**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26112\n\n7. **유럽, 미국 인터넷 기술 의존에서 벗어나려는 움직임**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26111\n\n8. **내 블로그에 Bluesky 댓글 섹션을 추가했다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26110\n\n9. **Show GN: 공식 문서 번역 워크플로 개발 – Spring \u0026 MySQL 공식 문서 번역 및 검색**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26108\n\n10. **[Russ Cox] 부동 소수점 변환의 혁신: 더 쉽고, 더 빠르며, 더 간단하게**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26107\n\n11. **BirdyChat, 유럽 최초의 WhatsApp 상호운용 채팅 앱으로 출시**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26105\n\n12. **Making the Most of Your Docker Hardened Images Enterprise Trial – Part 3**\n   - 출처: Docker Blog\n   - 링크: https://www.docker.com/blog/making-the-most-of-your-docker-hardened-images-enterprise-trial-part-3/\n\n13. **When two years of academic work vanished with a single click**\n   - 출처: Hacker News\n   - 링크: https://www.nature.com/articles/d41586-025-04064-7\n\n14. **Munros, Corbetts, Grahams and Donalds: What's the Difference?**\n   - 출처: Hacker News\n   - 링크: https://www.thehighlandmountaincompany.co.uk/post/munros-corbetts-grahams-and-donalds-what-s-the-difference\n\n15. **A high-performance, minimalist visual board for spatial thinkers**\n   - 출처: Hacker News\n   - 링크: https://vb.lokryn.com\n\n16. **A Codebase by an Agent for an Agent**\n   - 출처: Hacker News\n   - 링크: https://ampcode.com/by-an-agent-for-an-agent\n\n17. **Show HN: Ghostree is a Ghostty fork with worktree management built in**\n   - 출처: Hacker News\n   - 링크: https://github.com/sidequery/ghostree\n\n18. **Python 3.14 Remote Debugging and Claude Code = Pwnage**\n   - 출처: Hacker News\n   - 링크: https://github.com/promptromp/python-remote-debug-skill\n\n19. **Show HN: Computer Chronicles**\n   - 출처: Hacker News\n   - 링크: https://computerchronicles.tv\n\n20. **LED lighting undermines visual performance unless supplemented by wider spectra**\n   - 출처: Hacker News\n   - 링크: https://www.nature.com/articles/s41598-026-35389-6\n\n21. **What the world can learn from Paris's cycling revolution**\n   - 출처: Hacker News\n   - 링크: https://momentummag.com/what-the-world-can-learn-from-pariss-cycling-revolution/\n\n22. **Spreadsheets and Vi and JSON**\n   - 출처: Hacker News\n   - 링크: https://awalgarg.me/untitled_project\n\n23. **Sagas (2012)**\n   - 출처: Hacker News\n   - 링크: https://vasters.com/archive/Sagas.html\n\n24. **Cori – Give agents safe DB write access without raw SQL (open source in Rust)**\n   - 출처: Hacker News\n   - 링크: https://github.com/cori-do/cori-kernel\n\n25. **UK to reimburse visa fees for AI and quantum researchers**\n   - 출처: Hacker News\n   - 링크: https://www.timeshighereducation.com/news/uk-reimburse-visa-fees-ai-and-quantum-researchers\n\n26. **House of Lords votes for under-16s social media ban**\n   - 출처: Hacker News\n   - 링크: https://www.computing.co.uk/news/2026/legislation-regulation/peers-vote-for-under-16-social-media-ban\n\n27. **Hand-Crafting Domain-Specific Compression with an LLM**\n   - 출처: Hacker News\n   - 링크: https://engineering.nanit.com/hand-crafting-domain-specific-compression-with-an-llm-3c42f5c2b070\n\n28. **RAG for Legacy Systems: 7,432 Pages to 3s Answers**\n   - 출처: Hacker News\n   - 링크: https://clouatre.ca/posts/rag-legacy-systems/\n\n29. **WorldChaosMap: A live map of global instability**\n   - 출처: Hacker News\n   - 링크: https://www.worldchaosmap.app/\n\n30. **VPN Comparison Spreadsheet**\n   - 출처: Hacker News\n   - 링크: https://old.reddit.com/r/rateVPNs/comments/1gw58mk/the_ultimate_vpn_comparison_spreadsheet/\n\n31. **Show HN: A lightweight, native macOS menubar app for monitoring with mini graphs**\n   - 출처: Hacker News\n   - 링크: https://github.com/bluewave-labs/systempulse\n\n32. **Software Design Principles That Matter**\n   - 출처: Hacker News\n   - 링크: https://newsletter.francofernando.com/p/software-design-principles-that-matter\n\n\n",
+  "articles": [
+    {
+      "title": "January 2026 Insiders (version 1.109)",
+      "link": "https://code.visualstudio.com/updates/v1_109",
+      "source": "Visual Studio Code - Code Editing. Redefined.",
+      "category": "tech",
+      "publishedAt": "2026-02-04T17:00:00Z",
+      "description": "\n      \u003cp\u003eLearn what is new in the Visual Studio Code January 2026 Release (1.109).\u003c/p\u003e\n      \u003cp\u003e\u003ca href=\"https://code.visualstudio.com/updates/v1_109\"\u003eRead the full article\u003c/a\u003e\u003c/p\u003e\n    "
+    },
+    {
+      "title": "도덕경 – 어슐러 K. 르 귄 번역",
+      "link": "https://news.hada.io/topic?id=26116",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-26T05:32:43+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eLao Tzu의 『도덕경』\u003c/strong\u003e 을 어슐러 K. 르 귄이 영어로 옮긴 버전으로, 시적 언어와 간결한 해석이 특징\u003c/li\u003e\n\u003cli\u003e르 귄은 이 작업을 \u003cstrong\u003e‘번역’이 아닌 ‘재현(rendition)’\u003c/strong\u003e 으로 규정하며, 중국어 원문 대신 Paul Carus의 1898년판을 참고\u003c/li\u003e\n\u003cli\u003e각 장에는 르 귄의 \u003cstrong...\u003c/p\u003e"
+    },
+    {
+      "title": "라즈베리 파이 드래그 레이스: Pi 1부터 Pi 5까지의 성능 비교",
+      "link": "https://news.hada.io/topic?id=26115",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-26T04:41:15+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e2012년 첫 출시된 \u003cstrong\u003eRaspberry Pi 1부터 2023년의 Pi 5까지\u003c/strong\u003e 약 13년간의 성능 발전을 실제 테스트로 비교\u003c/li\u003e\n\u003cli\u003e각 세대의 \u003cstrong\u003eCPU·GPU 성능, 전력 효율, 네트워크 속도, 저장장치 성능\u003c/strong\u003e을 동일 조건에서 측정\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003ePi 5는 Pi 1 대비 약 600배 빠른 CPU 성능\u003c/stro...\u003c/p\u003e"
+    },
+    {
+      "title": "저궤도 위성 임무 Clarity-1의 사후 분석 (이미지 및 비행 데이터 포함)",
+      "link": "https://news.hada.io/topic?id=26114",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-26T04:38:15+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eAlbedo의 첫 위성 \u003cstrong\u003eClarity-1\u003c/strong\u003e은 초저궤도(VLEO)에서의 지속 운용 가능성을 입증하며, 상업 위성으로는 전례 없는 환경에서 성공적으로 작동함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e공기저항 계수\u003c/strong\u003e가 설계 목표보다 12% 우수했고, \u003cstrong\u003e원자산소(AO)\u003c/strong\u003e 내구성이 검증되어 275km 고도에서 5년 수...\u003c/p\u003e"
+    },
+    {
+      "title": "Chromium에서 금지된 C++ 기능들",
+      "link": "https://news.hada.io/topic?id=26113",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-26T04:35:15+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eChromium 프로젝트는 최신 \u003cstrong\u003eC++ 표준 기능의 사용 범위와 금지 항목\u003c/strong\u003e을 명확히 정의해 코드 일관성과 보안성을 유지함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eC++11~C++23\u003c/strong\u003e까지 각 표준별로 허용·금지·검토(TBD) 상태가 구분되며, \u003cstrong\u003eAbseil 라이브러리\u003c/strong\u003e도 동일한 기준을 적용받음\u003c/li\u003e\n\u003cli\u003e금...\u003c/p\u003e"
+    },
+    {
+      "title": "폴란드 전력망을 노린 전례 없는 와이퍼 악성코드 공격",
+      "link": "https://news.hada.io/topic?id=26112",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-26T02:34:27+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e폴란드의 \u003cstrong\u003e전력망\u003c/strong\u003e이 러시아와 연계된 것으로 추정되는 \u003cstrong\u003e새로운 와이퍼 악성코드(DynoWiper)\u003c/strong\u003e 공격을 받았으나, 전력 공급에는 차질이 발생하지 않음\u003c/li\u003e\n\u003cli\u003e공격은 \u003cstrong\u003e2025년 12월 말\u003c/strong\u003e에 발생했으며, \u003cstrong\u003e재생에너지 설비와 배전 운영자 간 통신\u003c/strong\u003e을...\u003c/p\u003e"
+    },
+    {
+      "title": "유럽, 미국 인터넷 기술 의존에서 벗어나려는 움직임",
+      "link": "https://news.hada.io/topic?id=26111",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-25T23:36:52+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e유럽은 \u003cstrong\u003e미국 빅테크 중심의 인터넷 인프라 의존\u003c/strong\u003e이 가져올 위험을 줄이기 위해 \u003cstrong\u003e디지털 자립\u003c/strong\u003e을 강화 중임\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eAWS, Microsoft Azure, Google Cloud\u003c/strong\u003e가 유럽 \u003cstrong\u003e클라우드 시장의 약 70%\u003c/strong\u003e 를 점유하고 있으며, 이는 기술적·지정학적 리스크를...\u003c/p\u003e"
+    },
+    {
+      "title": "내 블로그에 Bluesky 댓글 섹션을 추가했다",
+      "link": "https://news.hada.io/topic?id=26110",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-25T23:33:51+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e정적 사이트에서도 \u003cstrong\u003eBluesky API\u003c/strong\u003e를 이용해 댓글을 표시할 수 있도록 구현한 사례\u003c/li\u003e\n\u003cli\u003eBluesky가 \u003cstrong\u003e계정 인증, 스팸 관리, 저장소, 모더레이션\u003c/strong\u003e을 처리하므로 별도 서버 유지가 불필요\u003c/li\u003e\n\u003cli\u003e구현은 약 \u003cstrong\u003e200줄의 TypeScript 코드\u003c/strong\u003e로 구성되며, \u003ccode\u003e@blu...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: 공식 문서 번역 워크플로 개발 – Spring \u0026 MySQL 공식 문서 번역 및 검색",
+      "link": "https://news.hada.io/topic?id=26108",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-25T22:30:02+09:00",
+      "description": "\u003ch4\u003e소개\u003c/h4\u003e\n\u003cp\u003e안녕하세요.\u003c/p\u003e\n\u003cp\u003e이번에 공식 문서 시리즈를 번역하는 워크플로를 만들었고,  Mysql 과 Spring boot 의 번역 결과를 검색 가능한 형태로 공개했습니다.\u003c/p\u003e\n\u003cp\u003e저는 면접 전후로 공식 문서를 훑어보는 편인데, 비슷한 용도로 쓰실 분들께도 도움이 되었으면 좋겠습니다.\u003c/p\u003e\n\u003cp\u003e실제 프롬프트, 서비"
+    },
+    {
+      "title": "[Russ Cox] 부동 소수점 변환의 혁신: 더 쉽고, 더 빠르며, 더 간단하게",
+      "link": "https://news.hada.io/topic?id=26107",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-25T22:07:04+09:00",
+      "description": "\u003cp\u003e요약:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eRuss Cox가 제안하는 새로운 부동 소수점 변환 알고리즘은 기존의 복잡한 알고리즘(Ryū, Dragonbox 등)보다 단순하면서도 성능이 뛰어납니다.\u003c/li\u003e\n\u003cli\u003e'Unrounded Scaling'이라는 핵심 프리미티브를 통해 2진수와 10진수 사이의 변환을 64비트 곱셈 한 번 수준으로 가속화합니다.\u003c/li\u003e\n\u003cli\u003e이 구"
+    },
+    {
+      "title": "BirdyChat, 유럽 최초의 WhatsApp 상호운용 채팅 앱으로 출시",
+      "link": "https://news.hada.io/topic?id=26105",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-25T09:49:24+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eBirdyChat\u003c/strong\u003e이 \u003cstrong\u003eDigital Markets Act(DMA)\u003c/strong\u003e 하에서 \u003cstrong\u003eWhatsApp과 메시지를 주고받을 수 있는 유럽 최초의 채팅 앱\u003c/strong\u003e으로 발표됨\u003c/li\u003e\n\u003cli\u003e이번 상호운용 기능으로 \u003cstrong\u003eBirdyChat 사용자\u003c/strong\u003e는 \u003cstrong\u003eWhatsApp 사용자와 전화번호만으로 직접 대화\u003c/stro...\u003c/p\u003e"
+    },
+    {
+      "title": "Making the Most of Your Docker Hardened Images Enterprise Trial – Part 3",
+      "link": "https://www.docker.com/blog/making-the-most-of-your-docker-hardened-images-enterprise-trial-part-3/",
+      "source": "Docker Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-25T17:51:40Z",
+      "description": "Customizing Docker Hardened Images In Part 1 and Part 2, we established the baseline. You migrated a service to a Docker Hardened Image (DHI), witnessed the vulnerability count drop to zero, and verified the cryptographic signatures and SLSA provenance that make DHI a compliant foundation. But no matter how secure a base image is, it..."
+    },
+    {
+      "title": "When two years of academic work vanished with a single click",
+      "link": "https://www.nature.com/articles/d41586-025-04064-7",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-25T21:53:55Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nature.com/articles/d41586-025-04064-7\"\u003ehttps://www.nature.com/articles/d41586-025-04064-7\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46758752\"\u003ehttps://news.ycombinator.com/item?id=46758752\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Munros, Corbetts, Grahams and Donalds: What's the Difference?",
+      "link": "https://www.thehighlandmountaincompany.co.uk/post/munros-corbetts-grahams-and-donalds-what-s-the-difference",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-25T21:53:38Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.thehighlandmountaincompany.co.uk/post/munros-corbetts-grahams-and-donalds-what-s-the-difference\"\u003ehttps://www.thehighlandmountaincompany.co.uk/post/munros-corbetts-grahams-and-donalds-what-s-the-difference\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46758748\"\u003ehttps://news.ycombinator.com/item?id=46758748\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "A high-performance, minimalist visual board for spatial thinkers",
+      "link": "https://vb.lokryn.com",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-25T21:51:06Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://vb.lokryn.com\"\u003ehttps://vb.lokryn.com\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46758718\"\u003ehttps://news.ycombinator.com/item?id=46758718\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "A Codebase by an Agent for an Agent",
+      "link": "https://ampcode.com/by-an-agent-for-an-agent",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-25T21:48:21Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://ampcode.com/by-an-agent-for-an-agent\"\u003ehttps://ampcode.com/by-an-agent-for-an-agent\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46758687\"\u003ehttps://news.ycombinator.com/item?id=46758687\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Ghostree is a Ghostty fork with worktree management built in",
+      "link": "https://github.com/sidequery/ghostree",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-25T21:47:54Z",
+      "description": "\n\u003cp\u003eWith agents, I have I found myself using worktrees more and more. First manually, then with conductor.build, then with worktrunk.dev.\u003cp\u003eI prefer using coding CLIs instead of UI wrappers as the terminal tends to be more performant (depending on the agent you choose) and you get access to new features immediately.\u003cp\u003eGhostty is a bit challening to automate today— I considered building a complementary app to Ghostty at first. But since I have been building native mac apps on the side lately (as well as tools for agents, consuming their logs etc) I figured I would just modify Ghostty to have native worktree management.\u003cp\u003eYou can download with homebrew via: brew install sidequery/tap/ghostree\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46758682\"\u003ehttps://news.ycombinator.com/item?id=46758682\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Python 3.14 Remote Debugging and Claude Code = Pwnage",
+      "link": "https://github.com/promptromp/python-remote-debug-skill",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-25T21:47:51Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/promptromp/python-remote-debug-skill\"\u003ehttps://github.com/promptromp/python-remote-debug-skill\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46758680\"\u003ehttps://news.ycombinator.com/item?id=46758680\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Computer Chronicles",
+      "link": "https://computerchronicles.tv",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-25T21:44:36Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://computerchronicles.tv\"\u003ehttps://computerchronicles.tv\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46758648\"\u003ehttps://news.ycombinator.com/item?id=46758648\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "LED lighting undermines visual performance unless supplemented by wider spectra",
+      "link": "https://www.nature.com/articles/s41598-026-35389-6",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-25T21:44:10Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nature.com/articles/s41598-026-35389-6\"\u003ehttps://www.nature.com/articles/s41598-026-35389-6\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46758644\"\u003ehttps://news.ycombinator.com/item?id=46758644\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 6\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "What the world can learn from Paris's cycling revolution",
+      "link": "https://momentummag.com/what-the-world-can-learn-from-pariss-cycling-revolution/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-25T21:42:04Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://momentummag.com/what-the-world-can-learn-from-pariss-cycling-revolution/\"\u003ehttps://momentummag.com/what-the-world-can-learn-from-pariss-cycling-revolution/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46758621\"\u003ehttps://news.ycombinator.com/item?id=46758621\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Spreadsheets and Vi and JSON",
+      "link": "https://awalgarg.me/untitled_project",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-25T21:42:04Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://awalgarg.me/untitled_project\"\u003ehttps://awalgarg.me/untitled_project\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46758620\"\u003ehttps://news.ycombinator.com/item?id=46758620\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Sagas (2012)",
+      "link": "https://vasters.com/archive/Sagas.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-25T21:42:02Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://vasters.com/archive/Sagas.html\"\u003ehttps://vasters.com/archive/Sagas.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46758619\"\u003ehttps://news.ycombinator.com/item?id=46758619\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Cori – Give agents safe DB write access without raw SQL (open source in Rust)",
+      "link": "https://github.com/cori-do/cori-kernel",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-25T21:41:28Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/cori-do/cori-kernel\"\u003ehttps://github.com/cori-do/cori-kernel\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46758614\"\u003ehttps://news.ycombinator.com/item?id=46758614\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "UK to reimburse visa fees for AI and quantum researchers",
+      "link": "https://www.timeshighereducation.com/news/uk-reimburse-visa-fees-ai-and-quantum-researchers",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-25T21:40:25Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.timeshighereducation.com/news/uk-reimburse-visa-fees-ai-and-quantum-researchers\"\u003ehttps://www.timeshighereducation.com/news/uk-reimburse-visa-fees-ai-and-quantum-researchers\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46758606\"\u003ehttps://news.ycombinator.com/item?id=46758606\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "House of Lords votes for under-16s social media ban",
+      "link": "https://www.computing.co.uk/news/2026/legislation-regulation/peers-vote-for-under-16-social-media-ban",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-25T21:39:56Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.computing.co.uk/news/2026/legislation-regulation/peers-vote-for-under-16-social-media-ban\"\u003ehttps://www.computing.co.uk/news/2026/legislation-regulation/peers-vote-for-under-16-social-media-ban\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46758600\"\u003ehttps://news.ycombinator.com/item?id=46758600\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 2\u003c/p\u003e\n"
+    },
+    {
+      "title": "Hand-Crafting Domain-Specific Compression with an LLM",
+      "link": "https://engineering.nanit.com/hand-crafting-domain-specific-compression-with-an-llm-3c42f5c2b070",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-25T21:36:46Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://engineering.nanit.com/hand-crafting-domain-specific-compression-with-an-llm-3c42f5c2b070\"\u003ehttps://engineering.nanit.com/hand-crafting-domain-specific-compression-with-an-llm-3c42f5c2b070\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46758565\"\u003ehttps://news.ycombinator.com/item?id=46758565\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "RAG for Legacy Systems: 7,432 Pages to 3s Answers",
+      "link": "https://clouatre.ca/posts/rag-legacy-systems/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-25T21:31:59Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://clouatre.ca/posts/rag-legacy-systems/\"\u003ehttps://clouatre.ca/posts/rag-legacy-systems/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46758503\"\u003ehttps://news.ycombinator.com/item?id=46758503\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "WorldChaosMap: A live map of global instability",
+      "link": "https://www.worldchaosmap.app/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-25T21:31:26Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.worldchaosmap.app/\"\u003ehttps://www.worldchaosmap.app/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46758496\"\u003ehttps://news.ycombinator.com/item?id=46758496\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "VPN Comparison Spreadsheet",
+      "link": "https://old.reddit.com/r/rateVPNs/comments/1gw58mk/the_ultimate_vpn_comparison_spreadsheet/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-25T21:29:29Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://old.reddit.com/r/rateVPNs/comments/1gw58mk/the_ultimate_vpn_comparison_spreadsheet/\"\u003ehttps://old.reddit.com/r/rateVPNs/comments/1gw58mk/the_ultimate_vpn_comparison_spreadsheet/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46758470\"\u003ehttps://news.ycombinator.com/item?id=46758470\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: A lightweight, native macOS menubar app for monitoring with mini graphs",
+      "link": "https://github.com/bluewave-labs/systempulse",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-25T21:28:18Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/bluewave-labs/systempulse\"\u003ehttps://github.com/bluewave-labs/systempulse\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46758460\"\u003ehttps://news.ycombinator.com/item?id=46758460\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Software Design Principles That Matter",
+      "link": "https://newsletter.francofernando.com/p/software-design-principles-that-matter",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-25T21:27:57Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://newsletter.francofernando.com/p/software-design-principles-that-matter\"\u003ehttps://newsletter.francofernando.com/p/software-design-principles-that-matter\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46758456\"\u003ehttps://news.ycombinator.com/item?id=46758456\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    }
+  ],
+  "generatedAt": "2026-01-26T07:09:03.814409809+09:00"
+}
