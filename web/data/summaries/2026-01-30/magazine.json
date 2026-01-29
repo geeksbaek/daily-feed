@@ -1,0 +1,448 @@
+{
+  "date": "2026-01-30",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2026년 1월 29일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** 구글 딥마인드가 '무한한 인터랙티브 세계'를 생성하는 AI를 공개했고, 애플은 역대 최고 분기 실적을 달성했으며, OpenAI는 모델 라인업을 대대적으로 정리했습니다.\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### 🧞‍♂️ Google DeepMind 'Project Genie': 게임 개발의 패러다임을 바꾸다\n구글 딥마인드가 단순한 비디오 생성을 넘어, 사용자가 직접 플레이할 수 있는 '무한한 인터랙티브 세계'를 생성하는 AI 모델 **Project Genie**를 공개했습니다. 이는 기존의 생성형 AI가 이미지나 영상을 '보여주는' 단계에 머물렀던 것에서 한 단계 도약하여, 행동(Action)에 반응하는 가상 환경을 구축했다는 점에서 기술적 특이점으로 평가받습니다.\n\n*   **핵심 기술:** 텍스트나 이미지 프롬프트만으로 2D 플랫포머 게임과 같은 조작 가능한 환경을 즉시 생성.\n*   **의의:** 게임 개발의 민주화뿐만 아니라, 로봇 학습을 위한 시뮬레이션 환경 구축에도 혁신적인 변화를 예고합니다.\n\n\u003e **Key Point:** \"보는 AI\"에서 \"플레이하는 AI\"로의 진화. 생성형 AI가 정적인 콘텐츠를 넘어 동적인 상호작용의 영역을 정복하기 시작했습니다. [^21] [^22] [^24] [^49] [^51]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n\n### 1. 🍎 애플, 역대 최고 분기 매출 달성 및 서비스 수익 모델 강화\n애플이 2026 회계연도 1분기 실적을 발표하며 역대 최고 매출인 1,438억 달러를 기록했습니다. 아이폰 판매 호조가 주효했습니다. 한편, 애플은 iOS 앱 내 Patreon 창작자 수익에 대해서도 최대 30% 수수료를 부과하기로 결정하며 '애플 세(Tax)' 논란을 재점화했습니다.\n- **What:** 분기 매출 신기록 달성 및 인앱 결제 수수료 정책 강화.\n- **Why:** 하드웨어 판매의 견고함과 서비스 부문 수익 극대화 전략의 병행.\n- **Impact:** 창작자 경제(Creator Economy)에 대한 플랫폼의 지배력이 강화되며, 이에 대한 반발과 규제 논의도 가속화될 전망입니다. [^2] [^15] [^39]\n\n### 2. 🤖 OpenAI, 모델 라인업 대정비 \u0026 내부 데이터 에이전트 공개\nOpenAI가 GPT-4o, GPT-4.1 등 기존 모델들의 은퇴를 발표하며 라인업을 단순화했습니다. 동시에 내부적으로 사용하는 '데이터 에이전트(Data Agent)'의 작동 방식을 공개했습니다.\n- **What:** 구형 모델 서비스 종료 및 자체 데이터 처리 자동화 기술 공개.\n- **Why:** 최신 모델(o시리즈 등)로의 리소스 집중 및 기업용 AI 솔루션으로서의 기술력 과시.\n- **Impact:** 개발자들은 최신 API로의 마이그레이션을 서둘러야 하며, 기업들은 OpenAI의 데이터 에이전트 아키텍처를 참고하여 자체 자동화 파이프라인을 구축할 것으로 보입니다. [^3] [^4]\n\n### 3. 🦾 NVIDIA, 로봇 제어와 자율주행의 미래 'Cosmos' \u0026 'DRIVE AV'\nNVIDIA가 로봇 제어를 위한 'Cosmos Policy'와 벤츠 S-클래스에 탑재될 레벨4 준비 아키텍처인 'DRIVE AV'를 공개했습니다. 또한 리눅스 PC에서도 GeForce NOW를 통해 RTX 게이밍을 지원합니다.\n- **What:** 물리적 AI(Physical AI)를 위한 오픈 모델 및 프레임워크 대거 공개.\n- **Why:** 단순한 AI 연산을 넘어, 실제 물리 세계를 제어하는 로보틱스와 자율주행 시장의 표준 플랫폼 지위 공고화.\n- **Impact:** 로봇 공학자와 자동차 제조사들이 NVIDIA 생태계에 더욱 깊숙이 종속될 가능성이 큽니다. [^5] [^52] [^53] [^54]\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Editor** | **VS Code Insiders 1.109** | 최신 1.109 버전 업데이트. 코드 편집 경험 재정의. [^1] |\n| **Tool** | **Daggr** | Hugging Face 공개. 프로그래밍 방식으로 앱을 체이닝하고 시각적으로 검사하는 도구. [^6] |\n| **Tool** | **lx** | 개발자의 완전한 통제하에 작동하는 '바이브 코딩(Vibe Coding)' 도구. [^14] |\n| **Tool** | **Explain Plan Visualizer** | Datadog에서 공개한 SQL 실행 계획 시각화 도구. [^31] |\n| **AI** | **Moltworker** | Cloudflare 기반의 셀프 호스팅 개인용 AI 에이전트 (미니 모델 제외). [^50] |\n| **Social** | **Misskey \u0026 Sharkey** | 오픈소스 소셜 네트워크 서비스 Misskey와 그 포크인 Sharkey(Mastodon 호환). [^37] [^38] |\n| **LLM** | **Engram llama.cpp** | GTP-OSS:120B 모델을 위한 llama.cpp 개념 증명(POC). [^43] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n\n#### 💻 개발 \u0026 인프라 \u0026 웹\n*   **Chrome 업데이트**: 데스크톱, 안드로이드, iOS용 크롬의 최신 안정/개발 버전이 일제히 릴리스되었습니다. [^17] [^18] [^19] [^20]\n*   **슈퍼 몽키 볼 웹 이식**: 고전 게임이 웹사이트로 완벽하게 이식되어 브라우저 기술의 발전을 보여줍니다. [^7]\n*   **안드로이드 데스크톱 유출**: 안드로이드의 새로운 데스크톱 인터페이스가 유출되어 생산성 향상이 기대됩니다. [^8]\n*   **Encrypt It Already**: 모든 웹 트래픽의 암호화를 촉구하는 캠페인 사이트입니다. [^34]\n*   **AxonWave.store**: 온라인 쇼핑몰을 쉽게 구축할 수 있는 빌더 서비스입니다. [^47]\n\n#### 🤖 AI \u0026 데이터\n*   **Yahoo 'Scout'**: Anthropic의 Claude를 기반으로 한 야후의 AI 검색 엔진 베타가 출시되었습니다. [^16]\n*   **Atlassian Rovo \u0026 AI**: AI 코드 리뷰로 PR 시간을 45% 단축하고, 데모 시연만으로 AI 사용량이 2배 급증하는 등 리더십 효과를 입증했습니다. [^26] [^27] [^28]\n*   **BigQuery 대화형 분석**: 구글 클라우드가 BigQuery에 자연어 기반 데이터 분석 기능을 도입했습니다. [^55]\n*   **Golden Datasets**: AI 앱 개발의 첫걸음으로 고품질 '골든 데이터셋' 구축의 중요성을 강조한 글입니다. [^32]\n*   **AI 채용 트렌드**: 2026년 1월 기준, 채용 공고에서 AI 기술 요구 사항이 어디에 집중되고 있는지 분석했습니다. [^33]\n*   **영국 AI Skills Hub**: PwC가 410만 파운드를 수주하여 영국 정부의 AI 기술 허브를 제작합니다. [^12]\n*   **에이전트 루프**: 에이전트 앱을 설계하고 확장하는 두 가지 루프 방식에 대한 고찰입니다. [^41]\n\n#### 🏭 산업 \u0026 비즈니스\n*   **ASML 구조조정**: 반도체 장비 기업 ASML이 약 1,700개 직무를 감축할 가능성이 제기되었습니다. [^11]\n*   **테슬라 모델 S/X 중단**: 테슬라가 플래그십 모델인 S와 X의 생산을 중단한다는 소식입니다. [^13]\n*   **YC 신청서 무료 리뷰**: YC 창업자들의 피드백을 포함해 YC 지원서를 무료로 리뷰해주는 서비스가 등장했습니다. [^36]\n*   **HSBC 이메일 논란**: \"이메일은 그렇게 작동하지 않습니다\"라는 제목으로 HSBC의 기술적 이해 부족을 지적하는 글이 화제입니다. [^9]\n\n#### ⚖️ 사회, 보안 \u0026 기타\n*   **예일대 전액 장학금**: 소득 20만 달러 이하 가정에 등록금을 전액 면제해 줍니다. [^42]\n*   **투명망토 현실화**: 과학자들이 투명화 기술(Invisibility)을 현실로 만들고 있다는 내셔널 지오그래픽의 보도입니다. [^30]\n*   **회춘 임상 시험**: 인간을 대상으로 한 회춘(Rejuvenation) 방법의 첫 테스트가 곧 시작됩니다. [^45]\n*   **미국의 사이버 약점**: 미국의 사이버 보안 취약성이 자초한 것인지 분석하는 안보 관련 기고문입니다. [^46]\n*   **구글 TAG 게시판**: 2025년 4분기 위협 분석 그룹(TAG)의 보안 리포트가 공개되었습니다. [^23]\n*   **EFF 셧다운 연대**: 전자프런티어재단(EFF)이 'National Shutdown'에 연대하여 금요일 휴무를 공지했습니다. [^48]\n*   **백신 법원 개혁**: 백신 법원을 찾았던 10대가 이제 변호사가 되어 시스템 개혁을 자문하고 있습니다. [^40]\n*   **HN 아케이드**: 해커뉴스(HN) 스타일의 아케이드 게임 모음이 화제입니다. [^10]\n*   **Technopaganism**: 기술과 영성의 관계를 다룬 에세이 \"Letter to Stella\"가 주목받고 있습니다. [^29]\n*   **Athena to Clawdbot**: Athena 봇이 종료되고 Clawdbot으로 대체된다는 소식입니다. [^35]\n*   **CHM 2026 펠로우**: 컴퓨터 역사 박물관(CHM)이 2026년 4월 25일 새로운 펠로우들을 축하할 예정입니다. [^44]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘은 **구글 딥마인드의 'Project Genie'**가 단연 돋보입니다. 텍스트로 게임을 만들어내는 세상이라니, 메타버스나 게임 산업의 지형도가 완전히 바뀔 것 같네요. 한편, **애플의 역대급 실적**과 **ASML/테슬라의 생산 조정** 소식은 기술 산업 내에서도 '잘 팔리는 것'과 '변화가 필요한 것'의 명암이 뚜렷해지고 있음을 보여줍니다. 개발자분들은 **VS Code 업데이트**와 **OpenAI의 모델 정리** 소식을 꼭 챙기시길 바랍니다.\n\n---\n\n[^1]: January 2026 Insiders (version 1.109) - https://code.visualstudio.com/updates/v1_109\n[^2]: Apple reports first quarter results - https://www.apple.com/newsroom/2026/01/apple-reports-first-quarter-results/\n[^3]: Inside OpenAI’s in-house data agent - https://openai.com/index/inside-our-in-house-data-agent\n[^4]: Retiring GPT-4o, GPT-4.1, GPT-4.1 mini, and OpenAI o4-mini in ChatGPT - https://openai.com/index/retiring-gpt-4o-and-older-models\n[^5]: Introducing NVIDIA Cosmos Policy for Advanced Robot Control - https://huggingface.co/blog/nvidia/cosmos-policy-for-robot-control\n[^6]: Introducing Daggr: Chain apps programmatically, inspect visually - https://huggingface.co/blog/daggr\n[^7]: 슈퍼 몽키 볼이 웹사이트로 이식됨 - https://news.hada.io/topic?id=26236\n[^8]: 안드로이드 데스크톱 인터페이스 유출 - https://news.hada.io/topic?id=26235\n[^9]: 이메일은 그렇게 작동하지 않습니다, HSBC - https://news.hada.io/topic?id=26234\n[^10]: HN 아케이드 - https://news.hada.io/topic?id=26233\n[^11]: ASML 인력 구조조정, 약 1,700개 직무 순감축 가능성 - https://news.hada.io/topic?id=26232\n[^12]: 영국 정부의 ‘AI Skills Hub’, PwC가 410만 파운드에 제작 - https://news.hada.io/topic?id=26231\n[^13]: 테슬라, 모델 S와 X 생산 중단 - https://news.hada.io/topic?id=26229\n[^14]: Show GN: lx: 완전한 개발자의 통제하의 바이브 코딩 도구 - https://news.hada.io/topic?id=26228\n[^15]: 애플, iOS 앱 내 모든 Patreon 창작자 수익에서 최대 30% 수수료 부과 예정 - https://news.hada.io/topic?id=26227\n[^16]: Yahoo, Anthropic의 Claude 기반 AI 검색 엔진 ‘Scout’ 베타 출시 - https://news.hada.io/topic?id=26226\n[^17]: Chrome Dev for Desktop Update - http://chromereleases.googleblog.com/2026/01/chrome-dev-for-desktop-update_02006887966.html\n[^18]: Chrome Dev for Android Update - http://chromereleases.googleblog.com/2026/01/chrome-dev-for-android-update_0510970764.html\n[^19]: Chrome for Android Update - http://chromereleases.googleblog.com/2026/01/chrome-for-android-update_01981585122.html\n[^20]: Chrome Stable for iOS Update - http://chromereleases.googleblog.com/2026/01/chrome-stable-for-ios-update_012598964.html\n[^21]: Project Genie: Experimenting with infinite, interactive worlds - https://blog.google/innovation-and-ai/models-and-research/google-deepmind/project-genie/\n[^22]: Project Genie: Experimenting with infinite, interactive worlds - https://blog.google/innovation-and-ai/models-and-research/google-deepmind/project-genie/\n[^23]: TAG Bulletin: Q4 2025 - https://blog.google/threat-analysis-group/tag-bulletin-q4-2025/\n[^24]: Project Genie: Experimenting with infinite, interactive worlds - https://blog.google/innovation-and-ai/models-and-research/google-deepmind/project-genie/\n[^25]: Gemini in navigation is now available for walking and cycling in Google Maps. - https://blog.google/products-and-platforms/products/maps/gemini-navigation-biking-walking/\n[^26]: Introducing Rovo Think Deeper: Stronger reasoning, right when you need it - https://www.atlassian.com/blog/announcements/rovo-think-deeper\n[^27]: The leadership effect: How a single demo nearly doubled AI usage - https://www.atlassian.com/blog/leadership/leadership-ai-demos-boost-usage\n[^28]: How Atlassian cut PR cycle time by 45% with AI code reviews - https://www.atlassian.com/blog/announcements/how-we-cut-pr-cycle-time-with-ai-code-reviews\n[^29]: Letter to Stella, or What Technopaganism Isn't - https://olu.online/letter-to-stella/\n[^30]: How scientists are making the power of invisibility a reality - https://www.nationalgeographic.com/science/article/invisibility-science-fiction-reality-technology\n[^31]: Explain Plan Visualizer - https://explain.datadoghq.com/\n[^32]: Golden Datasets: The Essential First Step for AI-Powered Apps - https://www.dianapfeil.com/ai/2026/01/20/golden-datasets.html\n[^33]: Where AI skills are showing up in job postings - https://jobswithgpt.com/blog/ai_jobs_jan_2026/\n[^34]: Encrypt It Already - https://www.encryptitalready.org/\n[^35]: Good Bye Athena Hello Clawdbot - https://twitter.com/austinbv/status/2016662313135431907\n[^36]: Show HN: We review YC applications for free – with feedback from YC founders - https://www.ycroaster.com\n[^37]: Misskey is free and open-source software for creating social networking services - https://misskey-hub.net/en/\n[^38]: Mastodon: Sharkey is a Misskey fork, following upstream changes when possible - https://joinsharkey.org/\n[^39]: Apple announces all-time record in revenue, iPhone sales - https://sixcolors.com/post/2026/01/apple-announces-all-time-quarterly-record-of-143-8b/\n[^40]: Teen Sought Vaccine Court. His Former Lawyer Now Advises on Its Overhaul - https://kffhealthnews.org/news/article/vicp-vaccine-court-cases-moved-lawsuits-lawyers-merck-hpv-rfk-allies-hhs/\n[^41]: The Two Agentic Loops - https://archgw-tau.vercel.app/blog/the-two-agentic-loops-how-to-design-and-scale-agentic-apps\n[^42]: Yale Offers Free Tuition to Families with Incomes Under $200k - https://www.nytimes.com/2026/01/27/us/yale-free-tuition.html\n[^43]: Engram llama.cpp POC for GTP-OSS:120B - https://github.com/feers77/engram_llama\n[^44]: April 25, 2026, CHM will celebrate the 2026 Fellows - https://computerhistory.org/2026-fellow-awards/\n[^45]: The first human test of a rejuvenation method will begin \"shortly\" - https://www.technologyreview.com/2026/01/27/1131796/the-first-human-test-of-a-rejuvenation-method-will-begin-shortly/-of-a-rejuvenation-method-will-begin-shortly/\u0026ved=2ahUKEwiX38bH3LGSAxWFEEQIHdyBCQEQFnoECB8QAQ\u0026sqi=2\u0026usg=AOvVaw2wYpuKGz79evTqRLpLxvV5\n[^46]: Is America's Cyber Weakness Self-Inflicted? - https://warontherocks.com/2026/01/is-americas-cyber-weakness-self-inflicted/\n[^47]: AxonWave.store: An Online Shopping Store Builder - https://axonwave.store\n[^48]: EFF to Close Friday in Solidarity with National Shutdown - https://www.eff.org/deeplinks/2026/01/eff-close-friday-solidarity-national-shutdown\n[^49]: Project Genie: Experimenting with infinite, interactive worlds - https://deepmind.google/blog/project-genie-experimenting-with-infinite-interactive-worlds/\n[^50]: Introducing Moltworker: a self-hosted personal AI agent, minus the minis - https://blog.cloudflare.com/moltworker-self-hosted-ai-agent/\n[^51]: Project Genie: Experimenting with infinite, interactive worlds - https://deepmind.google/blog/project-genie-experimenting-with-infinite-interactive-worlds/\n[^52]: Mercedes-Benz Unveils New S-Class Built on NVIDIA DRIVE AV, Which Enables an L4-Ready Architecture - https://blogs.nvidia.com/blog/mercedes-benz-l4-s-class-drive-av-platform/\n[^53]: Into the Omniverse: Physical AI Open Models and Frameworks Advance Robots and Autonomous Systems - https://blogs.nvidia.com/blog/physical-ai-open-models-robot-autonomous-systems-omniverse/\n[^54]: GeForce NOW Brings GeForce RTX Gaming to Linux PCs - https://blogs.nvidia.com/blog/geforce-now-thursday-linux/\n[^55]: Introducing Conversational Analytics in BigQuery - https://cloud.google.com/blog/products/data-analytics/introducing-conversational-analytics-in-bigquery/\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **January 2026 Insiders (version 1.109)**\n   - 출처: Visual Studio Code - Code Editing. Redefined.\n   - 링크: https://code.visualstudio.com/updates/v1_109\n\n2. **Apple reports first quarter results\n**\n   - 출처: Apple Newsroom\n   - 링크: https://www.apple.com/newsroom/2026/01/apple-reports-first-quarter-results/\n\n3. **Inside OpenAI’s in-house data agent**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/inside-our-in-house-data-agent\n\n4. **Retiring GPT-4o, GPT-4.1, GPT-4.1 mini, and OpenAI o4-mini in ChatGPT**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/retiring-gpt-4o-and-older-models\n\n5. **Introducing NVIDIA Cosmos Policy for Advanced Robot Control**\n   - 출처: Hugging Face - Blog\n   - 링크: https://huggingface.co/blog/nvidia/cosmos-policy-for-robot-control\n\n6. **Introducing Daggr: Chain apps programmatically, inspect visually**\n   - 출처: Hugging Face - Blog\n   - 링크: https://huggingface.co/blog/daggr\n\n7. **슈퍼 몽키 볼이 웹사이트로 이식됨**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26236\n\n8. **안드로이드 데스크톱 인터페이스 유출**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26235\n\n9. **이메일은 그렇게 작동하지 않습니다, HSBC**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26234\n\n10. **HN 아케이드**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26233\n\n11. **ASML 인력 구조조정, 약 1,700개 직무 순감축 가능성**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26232\n\n12. **영국 정부의 ‘AI Skills Hub’, PwC가 410만 파운드에 제작**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26231\n\n13. **테슬라, 모델 S와 X 생산 중단**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26229\n\n14. **Show GN: lx: 완전한 개발자의 통제하의 바이브 코딩 도구**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26228\n\n15. **애플, iOS 앱 내 모든 Patreon 창작자 수익에서 최대 30% 수수료 부과 예정**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26227\n\n16. **Yahoo, Anthropic의 Claude 기반 AI 검색 엔진 ‘Scout’ 베타 출시**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26226\n\n17. **Chrome Dev for Desktop Update**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2026/01/chrome-dev-for-desktop-update_02006887966.html\n\n18. **Chrome Dev for Android Update**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2026/01/chrome-dev-for-android-update_0510970764.html\n\n19. **Chrome for Android Update**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2026/01/chrome-for-android-update_01981585122.html\n\n20. **Chrome Stable for iOS Update**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2026/01/chrome-stable-for-ios-update_012598964.html\n\n21. **Project Genie: Experimenting with infinite, interactive worlds**\n   - 출처: Google DeepMind\n   - 링크: https://blog.google/innovation-and-ai/models-and-research/google-deepmind/project-genie/\n\n22. **Project Genie: Experimenting with infinite, interactive worlds**\n   - 출처: AI\n   - 링크: https://blog.google/innovation-and-ai/models-and-research/google-deepmind/project-genie/\n\n23. **TAG Bulletin: Q4 2025**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/threat-analysis-group/tag-bulletin-q4-2025/\n\n24. **Project Genie: Experimenting with infinite, interactive worlds**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/innovation-and-ai/models-and-research/google-deepmind/project-genie/\n\n25. **Gemini in navigation is now available for walking and cycling in Google Maps.**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/products-and-platforms/products/maps/gemini-navigation-biking-walking/\n\n26. **Introducing Rovo Think Deeper: Stronger reasoning, right when you need it**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/announcements/rovo-think-deeper\n\n27. **The leadership effect: How a single demo nearly doubled AI usage**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/leadership/leadership-ai-demos-boost-usage\n\n28. **How Atlassian cut PR cycle time by 45% with AI code reviews**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/announcements/how-we-cut-pr-cycle-time-with-ai-code-reviews\n\n29. **Letter to Stella, or What Technopaganism Isn't**\n   - 출처: Hacker News\n   - 링크: https://olu.online/letter-to-stella/\n\n30. **How scientists are making the power of invisibility a reality**\n   - 출처: Hacker News\n   - 링크: https://www.nationalgeographic.com/science/article/invisibility-science-fiction-reality-technology\n\n31. **Explain Plan Visualizer**\n   - 출처: Hacker News\n   - 링크: https://explain.datadoghq.com/\n\n32. **Golden Datasets: The Essential First Step for AI-Powered Apps**\n   - 출처: Hacker News\n   - 링크: https://www.dianapfeil.com/ai/2026/01/20/golden-datasets.html\n\n33. **Where AI skills are showing up in job postings**\n   - 출처: Hacker News\n   - 링크: https://jobswithgpt.com/blog/ai_jobs_jan_2026/\n\n34. **Encrypt It Already**\n   - 출처: Hacker News\n   - 링크: https://www.encryptitalready.org/\n\n35. **Good Bye Athena Hello Clawdbot**\n   - 출처: Hacker News\n   - 링크: https://twitter.com/austinbv/status/2016662313135431907\n\n36. **Show HN: We review YC applications for free – with feedback from YC founders**\n   - 출처: Hacker News\n   - 링크: https://www.ycroaster.com\n\n37. **Misskey is free and open-source software for creating social networking services**\n   - 출처: Hacker News\n   - 링크: https://misskey-hub.net/en/\n\n38. **Mastodon: Sharkey is a Misskey fork, following upstream changes when possible**\n   - 출처: Hacker News\n   - 링크: https://joinsharkey.org/\n\n39. **Apple announces all-time record in revenue, iPhone sales**\n   - 출처: Hacker News\n   - 링크: https://sixcolors.com/post/2026/01/apple-announces-all-time-quarterly-record-of-143-8b/\n\n40. **Teen Sought Vaccine Court. His Former Lawyer Now Advises on Its Overhaul**\n   - 출처: Hacker News\n   - 링크: https://kffhealthnews.org/news/article/vicp-vaccine-court-cases-moved-lawsuits-lawyers-merck-hpv-rfk-allies-hhs/\n\n41. **The Two Agentic Loops**\n   - 출처: Hacker News\n   - 링크: https://archgw-tau.vercel.app/blog/the-two-agentic-loops-how-to-design-and-scale-agentic-apps\n\n42. **Yale Offers Free Tuition to Families with Incomes Under $200k**\n   - 출처: Hacker News\n   - 링크: https://www.nytimes.com/2026/01/27/us/yale-free-tuition.html\n\n43. **Engram llama.cpp POC for GTP-OSS:120B**\n   - 출처: Hacker News\n   - 링크: https://github.com/feers77/engram_llama\n\n44. **April 25, 2026, CHM will celebrate the 2026 Fellows**\n   - 출처: Hacker News\n   - 링크: https://computerhistory.org/2026-fellow-awards/\n\n45. **The first human test of a rejuvenation method will begin \"shortly\"**\n   - 출처: Hacker News\n   - 링크: https://www.technologyreview.com/2026/01/27/1131796/the-first-human-test-of-a-rejuvenation-method-will-begin-shortly/-of-a-rejuvenation-method-will-begin-shortly/\u0026ved=2ahUKEwiX38bH3LGSAxWFEEQIHdyBCQEQFnoECB8QAQ\u0026sqi=2\u0026usg=AOvVaw2wYpuKGz79evTqRLpLxvV5\n\n46. **Is America's Cyber Weakness Self-Inflicted?**\n   - 출처: Hacker News\n   - 링크: https://warontherocks.com/2026/01/is-americas-cyber-weakness-self-inflicted/\n\n47. **AxonWave.store: An Online Shopping Store Builder**\n   - 출처: Hacker News\n   - 링크: https://axonwave.store\n\n48. **EFF to Close Friday in Solidarity with National Shutdown**\n   - 출처: Hacker News\n   - 링크: https://www.eff.org/deeplinks/2026/01/eff-close-friday-solidarity-national-shutdown\n\n49. **Project Genie: Experimenting with infinite, interactive worlds**\n   - 출처: Google DeepMind Blog\n   - 링크: https://deepmind.google/blog/project-genie-experimenting-with-infinite-interactive-worlds/\n\n50. **Introducing Moltworker: a self-hosted personal AI agent, minus the minis**\n   - 출처: Cloudflare Blog\n   - 링크: https://blog.cloudflare.com/moltworker-self-hosted-ai-agent/\n\n51. **Project Genie: Experimenting with infinite, interactive worlds**\n   - 출처: DeepMind\n   - 링크: https://deepmind.google/blog/project-genie-experimenting-with-infinite-interactive-worlds/\n\n52. **Mercedes-Benz Unveils New S-Class Built on NVIDIA DRIVE AV, Which Enables an L4-Ready Architecture**\n   - 출처: NVIDIA Blog\n   - 링크: https://blogs.nvidia.com/blog/mercedes-benz-l4-s-class-drive-av-platform/\n\n53. **Into the Omniverse: Physical AI Open Models and Frameworks Advance Robots and Autonomous Systems**\n   - 출처: NVIDIA Blog\n   - 링크: https://blogs.nvidia.com/blog/physical-ai-open-models-robot-autonomous-systems-omniverse/\n\n54. **GeForce NOW Brings GeForce RTX Gaming to Linux PCs**\n   - 출처: NVIDIA Blog\n   - 링크: https://blogs.nvidia.com/blog/geforce-now-thursday-linux/\n\n55. **Introducing Conversational Analytics in BigQuery**\n   - 출처: AI \u0026 Machine Learning\n   - 링크: https://cloud.google.com/blog/products/data-analytics/introducing-conversational-analytics-in-bigquery/\n\n\n",
+  "articles": [
+    {
+      "title": "January 2026 Insiders (version 1.109)",
+      "link": "https://code.visualstudio.com/updates/v1_109",
+      "source": "Visual Studio Code - Code Editing. Redefined.",
+      "category": "tech",
+      "publishedAt": "2026-02-04T17:00:00Z",
+      "description": "\n      \u003cp\u003eLearn what is new in the Visual Studio Code January 2026 Release (1.109).\u003c/p\u003e\n      \u003cp\u003e\u003ca href=\"https://code.visualstudio.com/updates/v1_109\"\u003eRead the full article\u003c/a\u003e\u003c/p\u003e\n    "
+    },
+    {
+      "title": "Apple reports first quarter results\n",
+      "link": "https://www.apple.com/newsroom/2026/01/apple-reports-first-quarter-results/",
+      "source": "Apple Newsroom",
+      "category": "tech",
+      "publishedAt": "2026-01-29T21:30:32.541Z",
+      "description": "Apple today announced financial results for its fiscal 2026 first quarter ended December 27, 2025."
+    },
+    {
+      "title": "Inside OpenAI’s in-house data agent",
+      "link": "https://openai.com/index/inside-our-in-house-data-agent",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2026-01-29T10:00:00Z",
+      "description": "How OpenAI built an in-house AI data agent that uses GPT-5, Codex, and memory to reason over massive datasets and deliver reliable insights in minutes."
+    },
+    {
+      "title": "Retiring GPT-4o, GPT-4.1, GPT-4.1 mini, and OpenAI o4-mini in ChatGPT",
+      "link": "https://openai.com/index/retiring-gpt-4o-and-older-models",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2026-01-29T00:00:00Z",
+      "description": "On February 13, 2026, alongside the previously announced retirement⁠ of GPT‑5 (Instant, Thinking, and Pro), we will retire GPT‑4o, GPT‑4.1, GPT‑4.1 mini, and OpenAI o4-mini from ChatGPT. In the API, there are no changes at this time."
+    },
+    {
+      "title": "Introducing NVIDIA Cosmos Policy for Advanced Robot Control",
+      "link": "https://huggingface.co/blog/nvidia/cosmos-policy-for-robot-control",
+      "source": "Hugging Face - Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-29T17:03:25Z"
+    },
+    {
+      "title": "Introducing Daggr: Chain apps programmatically, inspect visually",
+      "link": "https://huggingface.co/blog/daggr",
+      "source": "Hugging Face - Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-29T00:00:00Z"
+    },
+    {
+      "title": "슈퍼 몽키 볼이 웹사이트로 이식됨",
+      "link": "https://news.hada.io/topic?id=26236",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-30T05:37:15+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eSuper Monkey Ball 1\u003c/strong\u003e의 기본 플레이를 웹 브라우저에서 직접 실행할 수 있는 형태로 제공\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eBeginner, Advanced, Expert\u003c/strong\u003e 난이도를 포함하며, \u003cstrong\u003eSMB2 모드\u003c/strong\u003e와 \u003cstrong\u003e스토리 모드\u003c/strong\u003e 선택 가능\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e자이로 센서 조정\u003c/strong\u003e, ...\u003c/p\u003e"
+    },
+    {
+      "title": "안드로이드 데스크톱 인터페이스 유출",
+      "link": "https://news.hada.io/topic?id=26235",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-30T05:34:15+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eChromium 이슈 트래커의 버그 보고서\u003c/strong\u003e를 통해 \u003cstrong\u003e안드로이드 데스크톱 인터페이스\u003c/strong\u003e가 처음으로 공개됨\u003c/li\u003e\n\u003cli\u003e유출된 스크린샷은 \u003cstrong\u003eHP Elite Dragonfly 13.5 Chromebook\u003c/strong\u003e에서 촬영되었으며, \u003cstrong\u003eAluminum OS(ALOS)\u003c/strong\u003e 라는 코드명과 \u003cstrong\u003eAndroid ...\u003c/p\u003e"
+    },
+    {
+      "title": "이메일은 그렇게 작동하지 않습니다, HSBC",
+      "link": "https://news.hada.io/topic?id=26234",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-30T04:33:26+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eHSBC가 고객의 \u003cstrong\u003e이메일 수신 여부를 추적 픽셀로 판단\u003c/strong\u003e한 결과, 실제로는 정상 수신 중인 고객에게 “메일이 반송됐다”는 잘못된 통지를 보냄\u003c/li\u003e\n\u003cli\u003e은행은 고객이 이메일 주소를 업데이트해야 한다고 요구했으나, \u003cstrong\u003e고객 계정에는 이미 올바른 주소가 등록되어 있었음\u003c/strong\u003e\n\u003c/li...\u003c/p\u003e"
+    },
+    {
+      "title": "HN 아케이드",
+      "link": "https://news.hada.io/topic?id=26233",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-30T03:32:59+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eHacker News 커뮤니티에서 소개된 게임들을 한곳에 모아 탐색할 수 있는 웹사이트\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e사용자는 다양한 \u003cstrong\u003eHN 게시물 기반 게임\u003c/strong\u003e을 한눈에 확인 가능\u003c/li\u003e\n\u003cli\u003e사이트는 \u003cstrong\u003e간단한 인터페이스\u003c/strong\u003e로 구성되어 있으며, 별도의 설치 없이 바로 이용 가능\u003c/li\u003e\n\u003cl...\u003c/p\u003e"
+    },
+    {
+      "title": "ASML 인력 구조조정, 약 1,700개 직무 순감축 가능성",
+      "link": "https://news.hada.io/topic?id=26232",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-30T02:33:32+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eASML은 \u003cstrong\u003e엔지니어링과 혁신 중심의 조직 재편\u003c/strong\u003e을 추진하며, 기술(Technology) 및 IT 부문을 간소화할 계획\u003c/li\u003e\n\u003cli\u003e기술 조직은 기존 \u003cstrong\u003e프로젝트/매트릭스 구조에서 제품·모듈 중심 구조\u003c/strong\u003e로 전환해 의사결정과 프로세스를 단순화\u003c/li\u003e\n\u003cli\u003e이 과정에서 일부 \u003cstrong\u003e리더십 직무...\u003c/p\u003e"
+    },
+    {
+      "title": "영국 정부의 ‘AI Skills Hub’, PwC가 410만 파운드에 제작",
+      "link": "https://news.hada.io/topic?id=26231",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-30T00:32:54+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e영국 정부가 \u003cstrong\u003e2030년까지 1,000만 명에게 AI 기술을 제공\u003c/strong\u003e하겠다는 목표로 ‘AI Skills Hub’ 웹사이트를 공개\u003c/li\u003e\n\u003cli\u003e이 사이트는 \u003cstrong\u003ePwC가 약 410만 파운드(약 565만 달러)\u003c/strong\u003e 에 납품했으며, 실제 기능은 외부 학습 플랫폼으로의 \u003cstrong\u003e링크 제공에 그침\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e...\u003c/p\u003e"
+    },
+    {
+      "title": "테슬라, 모델 S와 X 생산 중단",
+      "link": "https://news.hada.io/topic?id=26229",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-29T22:33:19+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e테슬라가 \u003cstrong\u003e모델 S와 모델 X 차량 생산을 종료\u003c/strong\u003e하고, 캘리포니아 프리몬트 공장을 \u003cstrong\u003e휴머노이드 로봇 Optimus 생산라인으로 전환\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e두 모델은 테슬라의 \u003cstrong\u003e가장 오래된 차량\u003c/strong\u003e으로, 최근 몇 년간 \u003cstrong\u003e전기차 경쟁 심화로 가격 인하\u003c/strong\u003e가 이어짐\u003c/l...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: lx: 완전한 개발자의 통제하의 바이브 코딩 도구",
+      "link": "https://news.hada.io/topic?id=26228",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-29T19:56:45+09:00",
+      "description": "\u003ch3\u003e서론\u003c/h3\u003e\n\u003cp\u003e안녕하세요. 컴퓨터 공학에 흥미가 있는 학생입니다. 이번에 \u003ca href=\"https://github.com/chebread/lx\"\u003elx\u003c/a\u003e 라는 프로그램을 개발하게 되어 글을 읽기만 하던 GeekNews에 처음으로 포스팅을 해보고자 합니다.\u003c/p\u003e\n\u003cp\u003e근래에 AI에게 자연어로 명령하면 코드를 알아서 다 짜주는 바이브 코딩이 대세입"
+    },
+    {
+      "title": "애플, iOS 앱 내 모든 Patreon 창작자 수익에서 최대 30% 수수료 부과 예정",
+      "link": "https://news.hada.io/topic?id=26227",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-29T19:32:59+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e애플이 \u003cstrong\u003eiOS Patreon 결제에 App Store 인앱결제 적용\u003c/strong\u003e을 요구하며, \u003cstrong\u003e2026년 11월 1일까지 인앱결제 시스템으로 전환\u003c/strong\u003e을 요구함\u003c/li\u003e\n\u003cli\u003ePatreon 앱에서의 후원 결제를 \u003cstrong\u003e디지털 상품\u003c/strong\u003e으로 간주하고, \u003cstrong\u003e최대 30% 수수료\u003c/strong\u003e를 부과하는 정책을 유지...\u003c/p\u003e"
+    },
+    {
+      "title": "Yahoo, Anthropic의 Claude 기반 AI 검색 엔진 ‘Scout’ 베타 출시",
+      "link": "https://news.hada.io/topic?id=26226",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-29T17:00:21+09:00",
+      "description": "\u003cp\u003eMicrosoft Bing grounding API + Yahoo 30년 검색 데이터 + 2.5억 사용자 인사이트 활용\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e가장 큰 차별점: 링크 적극 노출\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e다른 AI 검색 (ChatGPT, Perplexity, Google AI Mode)은 링크 숨김 또는 아이콘/연한 버튼 처리\u003c/li\u003e\n\u003cli\u003eScout는 답변 본문에 파란색 링크 직접 삽입 + "
+    },
+    {
+      "title": "Chrome Dev for Desktop Update",
+      "link": "http://chromereleases.googleblog.com/2026/01/chrome-dev-for-desktop-update_02006887966.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2026-01-29T11:13:33.765-08:00",
+      "description": "\u003cp\u003eThe Dev channel has been updated to 146.0.7655.3 for Windows, Mac and Linux.\u003c/p\u003e\u003cp\u003eA partial list of changes is available in the \u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/146.0.7647.4..146.0.7655.3?pretty=fuller\u0026amp;n=10000\"\u003eGit log\u003c/a\u003e. Interested in \u003ca href=\"https://www.chromium.org/getting-involved/dev-channel/\"\u003eswitching\u003c/a\u003e release channels? Find out \u003ca href=\"https://www.chromium.org/getting-involved/dev-channel/\"\u003ehow\u003c/a\u003e. If you find a new issue, please let us know by \u003ca href=\"https://crbug.com/\"\u003efiling a bug\u003c/a\u003e. The \u003ca href=\"https://productforums.google.com/forum/#!forum/chrome\"\u003ecommunity help forum\u003c/a\u003e is also a great place to reach out for help or learn about common issues.\u003c/p\u003e\u003cp\u003eChrome Release Team\u003cbr /\u003e\u003ca href=\"https://www.google.com/chrome\"\u003e\u003c/a\u003e\u003ca href=\"https://www.google.com/chrome\"\u003eGoogle Chrome\u003c/a\u003e\u003c/p\u003e"
+    },
+    {
+      "title": "Chrome Dev for Android Update",
+      "link": "http://chromereleases.googleblog.com/2026/01/chrome-dev-for-android-update_0510970764.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2026-01-29T05:58:32.686-08:00",
+      "description": "\u003cp\u003eHi everyone! We've just released Chrome Dev 146 (146.0.7655.6) for Android. It's now available on \u003ca href=\"https://play.google.com/store/apps/details?id=com.chrome.dev\"\u003eGoogle Play\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eYou can see a partial list of the changes in the \u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/146.0.7647.8..146.0.7655.6?pretty=fuller\u0026amp;n=10000\"\u003eGit log\u003c/a\u003e. For details on new features, check out the \u003ca href=\"https://blog.chromium.org\"\u003eChromium blog\u003c/a\u003e, and for details on web platform updates, check \u003ca href=\"https://www.chromestatus.com/features#milestone%3D146\"\u003ehere\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eIf you find a new issue, please let us know by \u003ca href=\"https://code.google.com/p/chromium/issues/entry?template=Android%20Issue\"\u003efiling a bug\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eChrome Release Team\u003cbr /\u003e\u003ca href=\"https://www.google.com/chrome\"\u003e\u003c/a\u003e\u003ca href=\"https://www.google.com/chrome\"\u003eGoogle Chrome\u003c/a\u003e\u003c/p\u003e"
+    },
+    {
+      "title": "Chrome for Android Update",
+      "link": "http://chromereleases.googleblog.com/2026/01/chrome-for-android-update_01981585122.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2026-01-28T16:30:00-08:00",
+      "description": "\u003cp\u003e\u0026nbsp;Hello Everyone! We've just released Chrome 145 (145.0.7632.26) for Android to a small percentage of users. It'll become\u0026nbsp;\u003ca href=\"https://play.google.com/store/apps/details?id=com.android.chrome\"\u003eavailable on Google Play\u003c/a\u003e\u0026nbsp;over the next few days. You can find more details about early Stable releases\u0026nbsp;\u003ca href=\"https://developer.chrome.com/blog/early-stable/\"\u003ehere\u003c/a\u003e.\u003c/p\u003eThis release includes stability and performance improvements. You can see a full list of the changes in the\u0026nbsp;\u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/144.0.7559.109..145.0.7632.26?pretty=fuller\u0026amp;n=10000\"\u003eGit log\u003c/a\u003e. If you find a new issue, please let us know by\u0026nbsp;\u003ca href=\"https://code.google.com/p/chromium/issues/entry?template=Android%20Issue\"\u003efiling a bug\u003c/a\u003e.\u003cbr /\u003e\u003cbr /\u003eHarry Souders\u003cbr /\u003e\u003ca href=\"https://www.google.com/chrome/\"\u003eGoogle Chrome\u003c/a\u003e"
+    },
+    {
+      "title": "Chrome Stable for iOS Update",
+      "link": "http://chromereleases.googleblog.com/2026/01/chrome-stable-for-ios-update_012598964.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2026-01-28T16:13:32.989-08:00",
+      "description": "\u003cp\u003eHi everyone! We've just released Chrome Stable 145 (145.0.7632.34) for iOS; it'll become available on App Store in the next few hours.\u003c/p\u003e\u003cp\u003eThis release includes stability and performance improvements. You can see a full list of the changes in the \u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/144.0.7559.95..145.0.7632.34?pretty=fuller\u0026amp;n=10000\"\u003eGit log\u003c/a\u003e. If you find a new issue, please let us know by \u003ca href=\"https://code.google.com/p/chromium/issues/entry?template=iOS%20Issue\"\u003efiling a bug\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eChrome Release Team\u003cbr /\u003e\u003ca href=\"https://www.google.com/chrome\"\u003e\u003c/a\u003e\u003ca href=\"https://www.google.com/chrome\"\u003eGoogle Chrome\u003c/a\u003e\u003c/p\u003e"
+    },
+    {
+      "title": "Project Genie: Experimenting with infinite, interactive worlds",
+      "link": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/project-genie/",
+      "source": "Google DeepMind",
+      "category": "tech",
+      "publishedAt": "2026-01-29T17:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/genie-3__project-genie__hero-fi.max-600x600.format-webp_d7CisM6.webp\"\u003eGoogle AI Ultra subscribers in the U.S. can now try out Project Genie."
+    },
+    {
+      "title": "Project Genie: Experimenting with infinite, interactive worlds",
+      "link": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/project-genie/",
+      "source": "AI",
+      "category": "tech",
+      "publishedAt": "2026-01-29T17:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/genie-3__project-genie__hero-fi.max-600x600.format-webp_d7CisM6.webp\"\u003eGoogle AI Ultra subscribers in the U.S. can now try out Project Genie."
+    },
+    {
+      "title": "TAG Bulletin: Q4 2025",
+      "link": "https://blog.google/threat-analysis-group/tag-bulletin-q4-2025/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-29T19:30:00Z",
+      "description": "An overview of coordinated influence operation campaigns terminated on our platforms in Q4 2025."
+    },
+    {
+      "title": "Project Genie: Experimenting with infinite, interactive worlds",
+      "link": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/project-genie/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-29T17:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/genie-3__project-genie__hero-fi.max-600x600.format-webp_d7CisM6.webp\"\u003eGoogle AI Ultra subscribers in the U.S. can now try out Project Genie."
+    },
+    {
+      "title": "Gemini in navigation is now available for walking and cycling in Google Maps.",
+      "link": "https://blog.google/products-and-platforms/products/maps/gemini-navigation-biking-walking/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-29T14:30:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/original_videos/wagtailvideo-amm2bjbb_thumb.jpg\"\u003eGemini in navigation helps you get things done while driving — it’s like talking to a friend in the passenger seat. Now, it’s launching for walking and cycling.When you’…"
+    },
+    {
+      "title": "Introducing Rovo Think Deeper: Stronger reasoning, right when you need it",
+      "link": "https://www.atlassian.com/blog/announcements/rovo-think-deeper",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-29T16:45:00Z",
+      "description": "\u003cp\u003eWe’ve all been there: you ask Rovo, AI that’s integrated in your workflow, a question and get an answer that’s...\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/announcements/rovo-think-deeper\"\u003eIntroducing Rovo Think Deeper: Stronger reasoning, right when you need it\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "The leadership effect: How a single demo nearly doubled AI usage",
+      "link": "https://www.atlassian.com/blog/leadership/leadership-ai-demos-boost-usage",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-29T15:51:31Z",
+      "description": "\u003cp\u003eInside the 90% spike in AI usage that followed one live demo – and what other leaders can learn from it.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/leadership/leadership-ai-demos-boost-usage\"\u003eThe leadership effect: How a single demo nearly doubled AI usage\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "How Atlassian cut PR cycle time by 45% with AI code reviews",
+      "link": "https://www.atlassian.com/blog/announcements/how-we-cut-pr-cycle-time-with-ai-code-reviews",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-29T00:25:11Z",
+      "description": "\u003cp\u003eWe had a PR problem at Atlassian. Our median time from PR to merge had crept up to over 3...\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/announcements/how-we-cut-pr-cycle-time-with-ai-code-reviews\"\u003eHow Atlassian cut PR cycle time by 45% with AI code reviews\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Letter to Stella, or What Technopaganism Isn't",
+      "link": "https://olu.online/letter-to-stella/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-29T22:00:51Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://olu.online/letter-to-stella/\"\u003ehttps://olu.online/letter-to-stella/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46817322\"\u003ehttps://news.ycombinator.com/item?id=46817322\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "How scientists are making the power of invisibility a reality",
+      "link": "https://www.nationalgeographic.com/science/article/invisibility-science-fiction-reality-technology",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-29T22:00:21Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nationalgeographic.com/science/article/invisibility-science-fiction-reality-technology\"\u003ehttps://www.nationalgeographic.com/science/article/invisibility-science-fiction-reality-technology\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46817313\"\u003ehttps://news.ycombinator.com/item?id=46817313\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Explain Plan Visualizer",
+      "link": "https://explain.datadoghq.com/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-29T22:00:16Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://explain.datadoghq.com/\"\u003ehttps://explain.datadoghq.com/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46817312\"\u003ehttps://news.ycombinator.com/item?id=46817312\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Golden Datasets: The Essential First Step for AI-Powered Apps",
+      "link": "https://www.dianapfeil.com/ai/2026/01/20/golden-datasets.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-29T21:59:46Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.dianapfeil.com/ai/2026/01/20/golden-datasets.html\"\u003ehttps://www.dianapfeil.com/ai/2026/01/20/golden-datasets.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46817308\"\u003ehttps://news.ycombinator.com/item?id=46817308\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Where AI skills are showing up in job postings",
+      "link": "https://jobswithgpt.com/blog/ai_jobs_jan_2026/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-29T21:59:37Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://jobswithgpt.com/blog/ai_jobs_jan_2026/\"\u003ehttps://jobswithgpt.com/blog/ai_jobs_jan_2026/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46817305\"\u003ehttps://news.ycombinator.com/item?id=46817305\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Encrypt It Already",
+      "link": "https://www.encryptitalready.org/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-29T21:59:24Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.encryptitalready.org/\"\u003ehttps://www.encryptitalready.org/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46817303\"\u003ehttps://news.ycombinator.com/item?id=46817303\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Good Bye Athena Hello Clawdbot",
+      "link": "https://twitter.com/austinbv/status/2016662313135431907",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-29T21:59:06Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://twitter.com/austinbv/status/2016662313135431907\"\u003ehttps://twitter.com/austinbv/status/2016662313135431907\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46817302\"\u003ehttps://news.ycombinator.com/item?id=46817302\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: We review YC applications for free – with feedback from YC founders",
+      "link": "https://www.ycroaster.com",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-29T21:57:41Z",
+      "description": "\n\u003cp\u003eHi HN,\nWe just launched YC Roaster, a free YC application review service run by Lobster Capital.\nIf you’re applying to Y Combinator, you can submit your application and get written feedback from founders who’ve actually gone through YC and built real companies.\nHow it works\n* You submit your YC application (PDF)\n* It’s reviewed by successful YC founders in our network\n* Everyone gets written feedback\n* If we think you have a strong shot, we offer a short 1-on-1 Zoom call\nWhy are we doing this for free? Lobster Capital is a VC fund that exclusively invests in YC companies. We’ve reviewed hundreds of YC applications over the years and backed 100+ YC startups. This is our way of giving back, and hopefully helping more strong teams get in.\nThere’s no guarantee of acceptance, no pitch requirement, and no obligation to talk to us afterward.\nWhat we’re curious about\n* What parts of the YC application do founders struggle with the most?\n* What feedback have you found most useful when applying?\nWebsite: \u003ca href=\"https://www.ycroaster.com\" rel=\"nofollow\"\u003ehttps://www.ycroaster.com\u003c/a\u003e\nHappy to answer questions or take feedback (including criticism).\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46817278\"\u003ehttps://news.ycombinator.com/item?id=46817278\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Misskey is free and open-source software for creating social networking services",
+      "link": "https://misskey-hub.net/en/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-29T21:57:16Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://misskey-hub.net/en/\"\u003ehttps://misskey-hub.net/en/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46817272\"\u003ehttps://news.ycombinator.com/item?id=46817272\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Mastodon: Sharkey is a Misskey fork, following upstream changes when possible",
+      "link": "https://joinsharkey.org/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-29T21:56:28Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://joinsharkey.org/\"\u003ehttps://joinsharkey.org/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46817262\"\u003ehttps://news.ycombinator.com/item?id=46817262\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Apple announces all-time record in revenue, iPhone sales",
+      "link": "https://sixcolors.com/post/2026/01/apple-announces-all-time-quarterly-record-of-143-8b/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-29T21:55:50Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://sixcolors.com/post/2026/01/apple-announces-all-time-quarterly-record-of-143-8b/\"\u003ehttps://sixcolors.com/post/2026/01/apple-announces-all-time-quarterly-record-of-143-8b/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46817252\"\u003ehttps://news.ycombinator.com/item?id=46817252\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Teen Sought Vaccine Court. His Former Lawyer Now Advises on Its Overhaul",
+      "link": "https://kffhealthnews.org/news/article/vicp-vaccine-court-cases-moved-lawsuits-lawyers-merck-hpv-rfk-allies-hhs/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-29T21:55:09Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://kffhealthnews.org/news/article/vicp-vaccine-court-cases-moved-lawsuits-lawyers-merck-hpv-rfk-allies-hhs/\"\u003ehttps://kffhealthnews.org/news/article/vicp-vaccine-court-cases-moved-lawsuits-lawyers-merck-hpv-rfk-allies-hhs/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46817243\"\u003ehttps://news.ycombinator.com/item?id=46817243\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Two Agentic Loops",
+      "link": "https://archgw-tau.vercel.app/blog/the-two-agentic-loops-how-to-design-and-scale-agentic-apps",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-29T21:54:51Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://archgw-tau.vercel.app/blog/the-two-agentic-loops-how-to-design-and-scale-agentic-apps\"\u003ehttps://archgw-tau.vercel.app/blog/the-two-agentic-loops-how-to-design-and-scale-agentic-apps\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46817237\"\u003ehttps://news.ycombinator.com/item?id=46817237\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Yale Offers Free Tuition to Families with Incomes Under $200k",
+      "link": "https://www.nytimes.com/2026/01/27/us/yale-free-tuition.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-29T21:54:39Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nytimes.com/2026/01/27/us/yale-free-tuition.html\"\u003ehttps://www.nytimes.com/2026/01/27/us/yale-free-tuition.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46817234\"\u003ehttps://news.ycombinator.com/item?id=46817234\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 2\u003c/p\u003e\n"
+    },
+    {
+      "title": "Engram llama.cpp POC for GTP-OSS:120B",
+      "link": "https://github.com/feers77/engram_llama",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-29T21:53:16Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/feers77/engram_llama\"\u003ehttps://github.com/feers77/engram_llama\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46817206\"\u003ehttps://news.ycombinator.com/item?id=46817206\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "April 25, 2026, CHM will celebrate the 2026 Fellows",
+      "link": "https://computerhistory.org/2026-fellow-awards/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-29T21:53:11Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://computerhistory.org/2026-fellow-awards/\"\u003ehttps://computerhistory.org/2026-fellow-awards/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46817204\"\u003ehttps://news.ycombinator.com/item?id=46817204\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The first human test of a rejuvenation method will begin \"shortly\"",
+      "link": "https://www.technologyreview.com/2026/01/27/1131796/the-first-human-test-of-a-rejuvenation-method-will-begin-shortly/-of-a-rejuvenation-method-will-begin-shortly/\u0026ved=2ahUKEwiX38bH3LGSAxWFEEQIHdyBCQEQFnoECB8QAQ\u0026sqi=2\u0026usg=AOvVaw2wYpuKGz79evTqRLpLxvV5",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-29T21:53:10Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.technologyreview.com/2026/01/27/1131796/the-first-human-test-of-a-rejuvenation-method-will-begin-shortly/-of-a-rejuvenation-method-will-begin-shortly/\u0026ved=2ahUKEwiX38bH3LGSAxWFEEQIHdyBCQEQFnoECB8QAQ\u0026sqi=2\u0026usg=AOvVaw2wYpuKGz79evTqRLpLxvV5\"\u003ehttps://www.technologyreview.com/2026/01/27/1131796/the-first-human-test-of-a-rejuvenation-method-will-begin-shortly/-of-a-rejuvenation-method-will-begin-shortly/\u0026ved=2ahUKEwiX38bH3LGSAxWFEEQIHdyBCQEQFnoECB8QAQ\u0026sqi=2\u0026usg=AOvVaw2wYpuKGz79evTqRLpLxvV5\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46817203\"\u003ehttps://news.ycombinator.com/item?id=46817203\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Is America's Cyber Weakness Self-Inflicted?",
+      "link": "https://warontherocks.com/2026/01/is-americas-cyber-weakness-self-inflicted/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-29T21:52:44Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://warontherocks.com/2026/01/is-americas-cyber-weakness-self-inflicted/\"\u003ehttps://warontherocks.com/2026/01/is-americas-cyber-weakness-self-inflicted/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46817200\"\u003ehttps://news.ycombinator.com/item?id=46817200\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "AxonWave.store: An Online Shopping Store Builder",
+      "link": "https://axonwave.store",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-29T21:52:40Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://axonwave.store\"\u003ehttps://axonwave.store\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46817198\"\u003ehttps://news.ycombinator.com/item?id=46817198\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "EFF to Close Friday in Solidarity with National Shutdown",
+      "link": "https://www.eff.org/deeplinks/2026/01/eff-close-friday-solidarity-national-shutdown",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-29T21:51:52Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.eff.org/deeplinks/2026/01/eff-close-friday-solidarity-national-shutdown\"\u003ehttps://www.eff.org/deeplinks/2026/01/eff-close-friday-solidarity-national-shutdown\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46817187\"\u003ehttps://news.ycombinator.com/item?id=46817187\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 6\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Project Genie: Experimenting with infinite, interactive worlds",
+      "link": "https://deepmind.google/blog/project-genie-experimenting-with-infinite-interactive-worlds/",
+      "source": "Google DeepMind Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-29T17:01:05Z",
+      "description": "Google AI Ultra subscribers in the U.S. can try out Project Genie, an experimental research prototype that lets you create and explore worlds."
+    },
+    {
+      "title": "Introducing Moltworker: a self-hosted personal AI agent, minus the minis",
+      "link": "https://blog.cloudflare.com/moltworker-self-hosted-ai-agent/",
+      "source": "Cloudflare Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-29T14:00:00Z",
+      "description": " Moltworker is a middleware Worker and adapted scripts that allows running Moltbot (formerly Clawdbot) on Cloudflare's Sandbox SDK and our Developer Platform APIs. So you can self-host an AI personal assistant — without any new hardware. "
+    },
+    {
+      "title": "Project Genie: Experimenting with infinite, interactive worlds",
+      "link": "https://deepmind.google/blog/project-genie-experimenting-with-infinite-interactive-worlds/",
+      "source": "DeepMind",
+      "category": "tech",
+      "publishedAt": "2026-01-29T17:01:05Z",
+      "description": "Google AI Ultra subscribers in the U.S. can try out Project Genie, an experimental research prototype that lets you create and explore worlds."
+    },
+    {
+      "title": "Mercedes-Benz Unveils New S-Class Built on NVIDIA DRIVE AV, Which Enables an L4-Ready Architecture",
+      "link": "https://blogs.nvidia.com/blog/mercedes-benz-l4-s-class-drive-av-platform/",
+      "source": "NVIDIA Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-29T18:00:31Z",
+      "description": "Mercedes-Benz is marking 140 years of automotive innovation with a new S-Class built for the AI era, bringing together automotive safety and NVIDIA’s advanced autonomous driving platform to enable a level 4-ready architecture designed for trust. The new S-Class with MB.OS, which will be equipped with the NVIDIA DRIVE Hyperion architecture and full-stack NVIDIA DRIVE\t\u003ca class=\"read-more\" href=\"https://blogs.nvidia.com/blog/mercedes-benz-l4-s-class-drive-av-platform/\"\u003e\n\t\tRead Article\t\t\u003cspan data-icon=\"y\"\u003e\u003c/span\u003e\n\t\u003c/a\u003e\n\t"
+    },
+    {
+      "title": "Into the Omniverse: Physical AI Open Models and Frameworks Advance Robots and Autonomous Systems",
+      "link": "https://blogs.nvidia.com/blog/physical-ai-open-models-robot-autonomous-systems-omniverse/",
+      "source": "NVIDIA Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-29T17:00:21Z",
+      "description": "Open source has become essential for driving innovation in robotics and autonomy. By providing access to critical infrastructure — from simulation frameworks to AI models — NVIDIA is enabling collaborative development that accelerates the path to safer, more capable autonomous systems. "
+    },
+    {
+      "title": "GeForce NOW Brings GeForce RTX Gaming to Linux PCs",
+      "link": "https://blogs.nvidia.com/blog/geforce-now-thursday-linux/",
+      "source": "NVIDIA Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-29T14:00:49Z",
+      "description": "Get ready to game — the native GeForce NOW app for Linux PCs is now available in beta, letting Linux desktops tap directly into GeForce RTX performance from the cloud. Alongside the expansion comes ten new games, including The Bard’s Tale IV: Director’s Cut and The Bard’s Tale Trilogy for a leveled-up gaming weekend. And\t\u003ca class=\"read-more\" href=\"https://blogs.nvidia.com/blog/geforce-now-thursday-linux/\"\u003e\n\t\tRead Article\t\t\u003cspan data-icon=\"y\"\u003e\u003c/span\u003e\n\t\u003c/a\u003e\n\t"
+    },
+    {
+      "title": "Introducing Conversational Analytics in BigQuery",
+      "link": "https://cloud.google.com/blog/products/data-analytics/introducing-conversational-analytics-in-bigquery/",
+      "source": "AI \u0026 Machine Learning",
+      "category": "tech",
+      "publishedAt": "2026-01-29T17:00:00Z",
+      "description": "\u003cdiv class=\"block-paragraph_advanced\"\u003e\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eBusinesses want to move quickly and make informed decisions, but the explosion of data in today’s organizations often can leave knowledge teams buried and business users waiting in lengthy queues for the data insights they need. AI agents promise to fundamentally change this relationship, empowering users to move faster from data to action.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eToday, we are unveiling Conversational Analytics in \u003c/span\u003e\u003ca href=\"https://cloud.google.com/bigquery\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eBigQuery\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e in preview. This new offering allows users to analyze data using natural language, breaking down the knowledge walls and time sinks that have long been the norm. Following the \u003c/span\u003e\u003ca href=\"https://cloud.google.com/blog/products/business-intelligence/looker-conversational-analytics-now-ga/\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003egeneral availability of Conversational Analytics in Looker\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e, this integration brings a sophisticated AI-powered reasoning engine directly into BigQuery Studio.\u003c/span\u003e\u003c/p\u003e\n\u003ch3\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eData insights for data professionals, made conversational\u003c/span\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eConversational Analytics in BigQuery is more than a simple chatbot. It’s an intelligent agent that leverages the latest Gemini\u003c/span\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003e \u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003emodels to generate, execute, and visualize answers grounded in your specific business context directly\u003c/span\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e \u003c/span\u003e\u003cspan style=\"vertical-align: baseline;\"\u003ein BigQuery’s secure and scalable environment. \u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eWith Conversational Analytics in BigQuery, technical and business teams can build and deploy intelligent agents at the source, leveraging their existing data and metadata for rapid innovation. Now you can create \u003c/span\u003e\u003cspan style=\"vertical-align: baseline;\"\u003econtext- and business-aware agents right where the data lives, so that all users get smart insights, coached by trusted analysts, without ever having to wait for answers in a queue or learn SQL!\u003c/span\u003e\u003c/p\u003e\u003c/div\u003e\n\u003cdiv class=\"block-image_full_width\"\u003e\n\n\n\n\n\n\n  \n    \u003cdiv class=\"article-module h-c-page\"\u003e\n      \u003cdiv class=\"h-c-grid\"\u003e\n  \n\n    \u003cfigure class=\"article-image--large\n      \n      \n        h-c-grid__col\n        h-c-grid__col--6 h-c-grid__col--offset-3\n        \n        \n      \"\n      \u003e\n\n      \n      \n        \n        \u003cimg\n            src=\"https://storage.googleapis.com/gweb-cloudblog-publish/original_images/1_image.gif\"\n        \n          alt=\"1_image\"\u003e\n        \n        \u003c/a\u003e\n      \n        \u003cfigcaption class=\"article-image__caption \"\u003e\u003cp data-block-key=\"f9fuz\"\u003eFig.1 - Conversational Analytics in BigQuery\u003c/p\u003e\u003c/figcaption\u003e\n      \n    \u003c/figure\u003e\n\n  \n      \u003c/div\u003e\n    \u003c/div\u003e\n  \n\n\n\n\n\u003c/div\u003e\n\u003cdiv class=\"block-paragraph_advanced\"\u003e\u003ch3\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eFrom question to trusted answer in seconds\u003c/strong\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eUnlike simple data tools, Conversational Analytics in BigQuery uses your business metadata and production logic to build trust between the user and their data.\u003c/span\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e \u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eWhen a user asks a question, the agent employs a multi-stage workflow to guarantee that every response is both precise and contextually relevant. These AI-driven insights provide users with comprehensive analysis through summarized answers, raw data results, and visualizations, supplemented by follow-up questions to facilitate further investigation.\u003c/span\u003e\u003c/p\u003e\u003c/div\u003e\n\u003cdiv class=\"block-image_full_width\"\u003e\n\n\n\n\n\n\n  \n    \u003cdiv class=\"article-module h-c-page\"\u003e\n      \u003cdiv class=\"h-c-grid\"\u003e\n  \n\n    \u003cfigure class=\"article-image--large\n      \n      \n        h-c-grid__col\n        h-c-grid__col--6 h-c-grid__col--offset-3\n        \n        \n      \"\n      \u003e\n\n      \n      \n        \n        \u003cimg\n            src=\"https://storage.googleapis.com/gweb-cloudblog-publish/original_images/2_image.gif\"\n        \n          alt=\"2_image\"\u003e\n        \n        \u003c/a\u003e\n      \n        \u003cfigcaption class=\"article-image__caption \"\u003e\u003cp data-block-key=\"f9fuz\"\u003eFig.2 - Conversational Analytics in BigQuery\u003c/p\u003e\u003c/figcaption\u003e\n      \n    \u003c/figure\u003e\n\n  \n      \u003c/div\u003e\n    \u003c/div\u003e\n  \n\n\n\n\n\u003c/div\u003e\n\u003cdiv class=\"block-paragraph_advanced\"\u003e\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eConversational Analytics in BigQuery is characterized by:\u003c/span\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eBeing grounded in reality:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e By leveraging your BigQuery schema, metadata, and custom instructions, the agent ensures SQL generation is based on internal logic rather than generic assumptions.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eVerified queries and trusted logic:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e To maintain consistency with production metrics, you can ground the agent in verified queries and User Defined Functions (UDFs). This leverages your team’s enterprise-ready assets so you don’t have to reinvent the wheel.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eTransparent logic and summarization:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e To give you confidence, the agent surfaces its \"thinking process\" and the generated SQL behind every answer. It then synthesizes the insights it gained across thousands of rows and provides a concise executive summary explaining the \"why\" behind the numbers.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eSecurity and governance by design: \u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eUsers only access data they are authorized to view, with every query logged for auditing within the BigQuery compliance framework.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eBeyond queries: Predict what’s next in seconds\u003c/span\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eWhile most tools report on data retrospectively, Conversational Analytics in BigQuery transforms the experience from retrospective to predictive. By leveraging BigQuery AI, agents can forecast outcomes and uncover hidden patterns using simple language.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eBehind the scenes, the agent uses functions like \u003c/span\u003e\u003ccode style=\"vertical-align: baseline;\"\u003eAI.FORECAST\u003c/code\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e to predict trends or \u003c/span\u003e\u003ccode style=\"vertical-align: baseline;\"\u003eAI.DETECT_ANOMALIES\u003c/code\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e to surface outliers in real-time. This allows any user to perform advanced predictive analytics in seconds, without leaving the chat interface. The agent leverages generative AI to distill millions of rows into a clear story, quickly making insights that are contextual and easy to share.\u003c/span\u003e\u003c/p\u003e\u003c/div\u003e\n\u003cdiv class=\"block-image_full_width\"\u003e\n\n\n\n\n\n\n  \n    \u003cdiv class=\"article-module h-c-page\"\u003e\n      \u003cdiv class=\"h-c-grid\"\u003e\n  \n\n    \u003cfigure class=\"article-image--large\n      \n      \n        h-c-grid__col\n        h-c-grid__col--6 h-c-grid__col--offset-3\n        \n        \n      \"\n      \u003e\n\n      \n      \n        \n        \u003cimg\n            src=\"https://storage.googleapis.com/gweb-cloudblog-publish/original_images/3_image.gif\"\n        \n          alt=\"3_image\"\u003e\n        \n        \u003c/a\u003e\n      \n        \u003cfigcaption class=\"article-image__caption \"\u003e\u003cp data-block-key=\"f9fuz\"\u003eFig.3 - Leveraging BigQuery AI functions for predictive analytics\u003c/p\u003e\u003c/figcaption\u003e\n      \n    \u003c/figure\u003e\n\n  \n      \u003c/div\u003e\n    \u003c/div\u003e\n  \n\n\n\n\n\u003c/div\u003e\n\u003cdiv class=\"block-paragraph_advanced\"\u003e\u003ch3\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eUnlocking the value of unstructured data\u003c/strong\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eWith Conversational Analytics in BigQuery, you’re not limited to data in rows and columns. The agent can reason across unstructured data, such as images stored in BigQuery object tables. This lets you query your entire data estate from a single interface, transforming previously inaccessible information into actionable insights with no manual processing.\u003c/span\u003e\u003c/p\u003e\u003c/div\u003e\n\u003cdiv class=\"block-image_full_width\"\u003e\n\n\n\n\n\n\n  \n    \u003cdiv class=\"article-module h-c-page\"\u003e\n      \u003cdiv class=\"h-c-grid\"\u003e\n  \n\n    \u003cfigure class=\"article-image--large\n      \n      \n        h-c-grid__col\n        h-c-grid__col--6 h-c-grid__col--offset-3\n        \n        \n      \"\n      \u003e\n\n      \n      \n        \n        \u003cimg\n            src=\"https://storage.googleapis.com/gweb-cloudblog-publish/original_images/4_image.gif\"\n        \n          alt=\"4_image\"\u003e\n        \n        \u003c/a\u003e\n      \n        \u003cfigcaption class=\"article-image__caption \"\u003e\u003cp data-block-key=\"f9fuz\"\u003eFig.4 - Conversational Analytics in BigQuery supports unstructured data\u003c/p\u003e\u003c/figcaption\u003e\n      \n    \u003c/figure\u003e\n\n  \n      \u003c/div\u003e\n    \u003c/div\u003e\n  \n\n\n\n\n\u003c/div\u003e\n\u003cdiv class=\"block-paragraph_advanced\"\u003e\u003ch3\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eBring agents to life\u003c/strong\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eWe built Conversational Analytics in BigQuery to let you transform raw data into active, intelligent agents with minimal effort. By simply connecting your tables and adding specific business instructions and metadata, you can move beyond manual queries to automated insights. BigQuery's assisted authoring helps you create quality agents quickly, which can then be shared across Looker Studio Pro the BigQuery UI. \u003c/span\u003e\u003c/p\u003e\u003c/div\u003e\n\u003cdiv class=\"block-image_full_width\"\u003e\n\n\n\n\n\n\n  \n    \u003cdiv class=\"article-module h-c-page\"\u003e\n      \u003cdiv class=\"h-c-grid\"\u003e\n  \n\n    \u003cfigure class=\"article-image--large\n      \n      \n        h-c-grid__col\n        h-c-grid__col--6 h-c-grid__col--offset-3\n        \n        \n      \"\n      \u003e\n\n      \n      \n        \n        \u003cimg\n            src=\"https://storage.googleapis.com/gweb-cloudblog-publish/images/5_dU0rNXJ.max-1000x1000.jpg\"\n        \n          alt=\"5_image\"\u003e\n        \n        \u003c/a\u003e\n      \n    \u003c/figure\u003e\n\n  \n      \u003c/div\u003e\n    \u003c/div\u003e\n  \n\n\n\n\n\u003c/div\u003e\n\u003cdiv class=\"block-paragraph_advanced\"\u003e\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eThe agents can also be integrated into their own custom apps and existing agentic ecosystems via the \u003c/span\u003e\u003ca href=\"https://codelabs.developers.google.com/ca-api-bigquery#0\" rel=\"noopener\" target=\"_blank\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eAPI\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e and \u003c/span\u003e\u003ca href=\"https://google.github.io/adk-docs/tools/google-cloud/data-agent/\" rel=\"noopener\" target=\"_blank\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eADK tools\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e.\u003c/span\u003e\u003c/p\u003e\n\u003ch3\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eTransform your data analytics today\u003c/strong\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eIf you’re ready to tackle the data analytics bottleneck, you can access the preview of Conversational Analytics in BigQuery starting \u003c/span\u003e\u003ca href=\"https://console.cloud.google.com/bigquery\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003etoday\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e. For more information, including a deep dive into best practices for context-based grounding and API integration, please refer to our \u003c/span\u003e\u003ca href=\"https://docs.cloud.google.com/bigquery/docs/conversational-analytics\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003edocumentation\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e or \u003c/span\u003e\u003ca href=\"http://cloud.google.com/use-cases/data-analytics-agents\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003elearn more\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e about Google Cloud’s AI agents for data analytics.\u003c/span\u003e\u003c/p\u003e\u003c/div\u003e"
+    }
+  ],
+  "generatedAt": "2026-01-30T07:12:25.854005492+09:00"
+}
