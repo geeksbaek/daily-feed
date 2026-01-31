@@ -1,0 +1,266 @@
+{
+  "date": "2026-02-01",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2026년 1월 31일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** AI 코딩 에이전트를 위한 안전한 샌드박스 환경의 등장부터 8K TV 시장의 몰락, 그리고 대규모 개발 조직의 운영 노하우까지 기술 생태계의 진화와 현실 자각이 공존하는 하루입니다.\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### Docker Sandboxes: AI 코딩 에이전트를 위한 안전지대\nAI가 코드를 작성하는 것을 넘어, 이제는 스스로 실행하고 테스트하는 '에이전트(Agent)' 시대로 진입했습니다. Docker가 발표한 'Docker Sandboxes'는 Claude Code와 같은 코딩 에이전트가 감독 없이도(Unsupervised) 안전하게 작업을 수행할 수 있도록 격리된 환경을 제공합니다. 이는 로컬 개발 환경을 오염시키지 않으면서 AI에게 복잡한 작업을 위임할 수 있는 핵심 인프라가 될 것입니다. 개발자는 이제 AI가 실수로 시스템을 망가뜨릴 걱정 없이 \"가서 고쳐와\"라고 명령할 수 있게 되었습니다.\n\u003e **Key Point:** AI 에이전트의 자율성을 보장하면서도 시스템 안전을 지키는 '격리 기술'이 2026년 개발 생산성의 핵심 열쇠입니다. [^12]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. Kimi K2.5: 추론 능력 강화와 기술 보고서 공개\n중국의 AI 스타트업 Moonshot AI가 Kimi k2.5 모델의 기술 보고서를 공개했습니다. 단순한 성능 향상을 넘어, 복잡한 추론과 긴 문맥 처리에 있어 어떤 아키텍처적 개선이 있었는지를 담고 있습니다. 이는 오픈 소스 진영과 경쟁 모델들에게 중요한 벤치마크 자료가 될 것이며, AI 모델의 투명성 요구에 대한 응답이기도 합니다.\n- **What:** Kimi K2.5 모델의 아키텍처 및 성능 평가를 담은 기술 보고서(PDF) 공개.\n- **Why:** 독자적인 모델링 기술과 학습 방법론을 공유하여 기술적 리더십을 입증하기 위함.\n- **Impact:** LLM 연구자들에게 새로운 최적화 아이디어를 제공하고, 글로벌 AI 모델 경쟁을 가속화. [^5]\n\n### 2. Microsoft 365의 '생산성 점수', 감시 도구인가?\nMicrosoft 365가 사용자의 활동을 실시간으로 추적하여 관리자에게 보고하는 기능이 다시금 도마 위에 올랐습니다. 기업은 '생산성 최적화'라고 주장하지만, 직원 입장에서는 '디지털 판옵티콘'이나 다름없습니다. 특히 원격 근무가 보편화된 2026년, 업무 툴의 데이터 수집 범위와 프라이버시 침해 경계에 대한 논쟁이 격화되고 있습니다.\n- **What:** MS 365가 이메일, 채팅 등 사용자 활동을 세밀하게 추적하는 기능에 대한 우려 제기.\n- **Why:** 데이터 기반의 인사 관리가 가능해졌지만, 개인정보 보호와 노동 감시라는 윤리적 문제 충돌.\n- **Impact:** 기업용 소프트웨어 도입 시 '직원 프라이버시 보호'가 노사 간의 주요 쟁점이 될 전망. [^6]\n\n### 3. 토스(Toss) 프론트엔드 챕터 140명 조직 운영의 비밀\n한국의 핀테크 유니콘 토스가 140명 규모의 거대 프론트엔드 조직을 어떻게 효율적으로 운영하는지 공유했습니다. 단순히 인원만 많은 것이 아니라, 표준화된 라이브러리, 일관된 코드 컨벤션, 그리고 자율과 책임을 조화시킨 문화가 핵심입니다. 이는 스케일업(Scale-up) 단계에 있는 모든 기술 기업에게 훌륭한 레퍼런스입니다.\n- **What:** 140명 규모의 개발 조직을 하나의 팀처럼 움직이게 하는 시스템과 문화 공유.\n- **Why:** 조직이 커질수록 발생하는 비효율(Silo 현상)을 기술적/문화적 장치로 해결.\n- **Impact:** 대규모 테크 조직의 운영 표준(Playbook)으로서 업계에 영감을 줌. [^11]\n\n### 4. 8K TV의 몰락: 소비자는 원하지 않는다\nTV 제조사들이 수년간 밀어붙였던 8K 해상도가 결국 시장의 외면을 받고 있습니다. LG전자를 비롯한 주요 제조사들이 8K 라인업을 축소하거나 전략을 수정하고 있습니다. 인간의 눈으로 4K와 8K를 구분하기 힘들다는 생물학적 한계와, 8K 콘텐츠 부재라는 생태계의 한계가 맞물린 결과입니다. 기술 과잉(Over-engineering)이 시장 수요와 불일치한 대표적 사례로 남게 되었습니다.\n- **What:** TV 업계가 8K TV의 대중화 실패를 인정하고 전략 수정.\n- **Why:** 4K 대비 뚜렷한 시각적 이점 부재 및 콘텐츠 부족으로 소비자 구매 유인 실패.\n- **Impact:** 하드웨어 스펙 경쟁보다는 AI 화질 개선 등 실질적 사용자 경험(UX) 향상으로 경쟁 축 이동. [^17]\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **VS Code Jan 2026 (v1.109)** | 마이크로소프트의 코드 에디터 최신 업데이트. AI 기능 통합 및 성능 개선 포함. [^1] |\n| **Tool** | **Grid** | 브라우저 기반의 무료 로컬 우선 3D 프린팅/CNC 슬라이서. 설치 없이 사용 가능. [^7] |\n| **Tool** | **Warden** | 코드 리뷰를 위한 에이전트 기반 프레임워크. Sentry 개발팀 공개. [^15] |\n| **Tool** | **Peerweb** | WebTorrent 기술을 활용하여 중앙 서버 없이 웹사이트를 호스팅하는 탈중앙화 솔루션. [^3] |\n| **Paper** | **AI-augmented Spectrometer** | 실리콘 플랫폼 상의 AI 증강 광자 포획 분광계 칩 연구. [^32] |\n| **Resource** | **This Year in LLVM (2025)** | 2025년 한 해 동안 LLVM 컴파일러 인프라의 주요 변경 사항과 발전 흐름 정리. [^20] |\n| **Project** | **Scratch TPU** | RTL 설계부터 MLIR 컴파일러, 런타임까지 바닥부터 직접 만든 TPU 프로젝트 (Jax 구동). [^27] |\n| **Project** | **OSS Kernel for AI** | AI의 의사결정을 다시 재생(Replay)하고 비교(Diff)할 수 있는 소형 오픈소스 커널. [^16] |\n| **Video** | **USB Cable Making** | USB 케이블 하나를 만드는 데 왜 4년이나 걸렸는지 보여주는 하드웨어 제작의 고충과 디테일. [^24] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n\n#### 💻 개발 \u0026 인프라\n* **AI 지원이 코딩 기술에 미치는 영향**: AI 도구 사용이 주니어 개발자의 기술 습득 곡선을 어떻게 변화시키는지에 대한 고찰. [^10]\n* **GitHub Stars vs Issues**: 깃허브 스타 수보다 이슈(Issue) 처리 현황이 프로젝트의 건전성을 더 잘 보여준다는 분석. [^23]\n* **OpenClaw/Moltbook 우려**: 해당 프로젝트의 지속 가능성과 잠재적 위험에 대한 커뮤니티의 우려 섞인 질문. [^19]\n* **Rate Limits와 재시도(Retries)**: 속도 제한 상황에서 단순 재시도가 과연 올바른 추상화인지에 대한 아키텍처 토론. [^25]\n* **HTTP 고양이들**: HTTP 상태 코드를 고양이 사진으로 보여주는 개발자 밈(Meme) 사이트 소개. [^9]\n* **Gmail/Draft 오류**: 지메일 임시보관함 기능 등에서 발생하는 최근 버그에 대한 사용자들의 불만 토로. [^26]\n\n#### 💰 비즈니스 \u0026 경제\n* **위스콘신 데이터센터 비밀 계약**: 수십억 달러 규모의 데이터센터 유치를 위해 지역사회가 비밀유지계약(NDA)을 체결, 투명성 논란. [^2]\n* **Factify 7,300만 달러 투자 유치**: 문서 처리를 위한 AI 인프라 구축 스타트업 Factify가 대규모 자금 조달 성공. [^13]\n* **미국 경제 붕괴설**: 현재의 경제 지표들을 근거로 미국 경제의 위기를 경고하는 비관적 분석. [^8]\n* **Michael Ovitz 팟캐스트**: 할리우드 에이전트의 전설 마이클 오비츠가 말하는 '관계의 비즈니스' 통찰. [^30]\n\n#### 🛡️ 보안 \u0026 사회\n* **Kimwolf 봇넷**: 기업 및 정부 네트워크에 잠복해 있는 새로운 봇넷 위협 발견. [^18]\n* **Don Lemon 기소 이론**: 미네소타 교회 예배 방해 혐의와 관련된 돈 레몬(Don Lemon)에 대한 정부의 기소 논리. [^14]\n* **주거 프로그램과 빈곤 탈출**: 주거지 이동이 아이들의 교우 관계를 바꾸고, 결과적으로 빈곤 탈출에 기여한다는 연구. [^31]\n\n#### 🔬 과학 \u0026 역사\n* **오트밀과 콜레스테롤**: 이틀간의 오트밀 섭취만으로도 콜레스테롤 수치 개선 효과가 있다는 건강 정보. [^4]\n* **홍역 백신의 비밀**: 홍역 백신이 홍역뿐만 아니라 다른 감염병까지 예방하는 면역학적 미스터리 규명. [^21]\n* **중성자별 충돌 시뮬레이션**: NASA 슈퍼컴퓨터가 밝혀낸 중성자별 병합 시의 복잡한 자기장 구조. [^22]\n* **인터넷 라디오의 역사**: 2020년까지의 인터넷 라디오 발전사를 다룬 디지털 아카이브. [^28]\n* **Conrad Gessner**: 근대 동물학의 시조로 불리는 스위스 박물학자 콘라트 게스너에 대한 위키피디아 조명. [^29]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘 뉴스는 '**현실적인 최적화**'라는 키워드로 묶입니다. AI는 이제 신기한 장난감을 넘어 Docker 샌드박스 안에서 실질적인 업무를 수행하는 단계(Top Story)로 들어왔고, TV 시장은 8K라는 허상 대신 4K의 현실을 택했습니다(Deep Dive). 토스의 조직 운영론이나 Kimi의 기술 보고서 또한 뜬구름 잡는 이야기가 아닌 '어떻게 잘 만들고 운영할 것인가'에 대한 구체적인 해답들입니다. 기술은 결국 인간의 삶과 업무를 얼마나 실질적으로 개선하느냐로 가치가 증명됩니다.\n\n---\n\n### Footnotes\n[^1]: January 2026 Insiders (version 1.109) - https://code.visualstudio.com/updates/v1_109\n[^2]: 위스콘신 여러 지역사회가 수십억 달러 규모 데이터센터 유치를 위해 비밀유지 계약을 체결 - https://news.hada.io/topic?id=26286\n[^3]: Peerweb: WebTorrent을 통한 탈중앙화 웹사이트 호스팅 - https://news.hada.io/topic?id=26285\n[^4]: 이틀간의 오트밀 섭취가 콜레스테롤 수치를 낮춘다 - https://news.hada.io/topic?id=26284\n[^5]: Kimi K2.5 기술 보고서 [PDF] - https://news.hada.io/topic?id=26283\n[^6]: Microsoft 365가 실시간으로 사용자를 추적한다? - https://news.hada.io/topic?id=26282\n[^7]: Grid: 무료, 로컬 우선, 브라우저 기반 3D 프린팅/CNC/레이저 슬라이서 - https://news.hada.io/topic?id=26281\n[^8]: 미국 경제 붕괴가 곧 일어날 수밖에 없는 이유 - https://news.hada.io/topic?id=26280\n[^9]: HTTP 고양이들 - https://news.hada.io/topic?id=26278\n[^10]: AI 지원이 코딩 기술 형성에 미치는 영향 - https://news.hada.io/topic?id=26275\n[^11]: 토스 프론트엔드 챕터 140명 조직을 운영하며 배운 것 - https://news.hada.io/topic?id=26274\n[^12]: Docker Sandboxes: Run Claude Code and Other Coding Agents Unsupervised (but Safely) - https://www.docker.com/blog/docker-sandboxes-run-claude-code-and-other-coding-agents-unsupervised-but-safely/\n[^13]: Factify Raises $73M to Create AI Infrastructure for Documents - https://www.forbes.com/sites/gilpress/2026/01/28/factify-raises-73-million-to-create-ai-infrastructure-for-documents/\n[^14]: Govt's Theory for Prosecuting Don Lemon as to Disruption of Minn. Church Service - https://reason.com/volokh/2026/01/31/governments-theory-for-prosecuting-don-lemon-as-to-disruption-of-minneapolis-church-service/\n[^15]: Show HN: Warden – agent based framework for reviewing code - https://warden.sentry.dev\n[^16]: Show HN: I built a small OSS kernel for replaying and diffing AI decisions - https://news.ycombinator.com/item?id=46841302\n[^17]: The TV industry concedes that the future may not be in 8K - https://arstechnica.com/gadgets/2026/01/lg-joins-the-rest-of-the-world-accepts-that-people-dont-want-8k-tvs/\n[^18]: Kimwolf Botnet Lurking in Corporate, Govt. Networks - https://krebsonsecurity.com/2026/01/kimwolf-botnet-lurking-in-corporate-govt-networks/\n[^19]: Ask HN: How can this OpenClaw/Moltbook thing not end badly? - https://news.ycombinator.com/item?id=46841216\n[^20]: This Year in LLVM (2025) - https://www.npopov.com/2026/01/31/This-year-in-LLVM-2025.html\n[^21]: How does the measles vaccine protect against other infectious diseases? - https://www.npr.org/sections/goatsandsoda/2015/05/07/404963436/scientists-crack-a-50-year-old-mystery-about-the-measles-vaccine\n[^22]: NASA Supercomputer Probes Tangled Magnetospheres of Merging Neutron Stars - https://svs.gsfc.nasa.gov/14884/\n[^23]: Everyone is comparing GitHub stars. But what about issues? - https://github-history.com/anomalyco/opencode\u0026openclaw/openclaw\u0026facebook/react\u0026vercel/next.js?showClosed=true\n[^24]: Why It Took Me 4 Years to Make a USB Cable [video] - https://www.youtube.com/watch?v=OT_iyvOy0Tk\n[^25]: Ask HN: Are retries the wrong abstraction under rate limits? - https://news.ycombinator.com/item?id=46841137\n[^26]: Ask HN: Gmail/Draft Problems? - https://news.ycombinator.com/item?id=46841105\n[^27]: TPU I built from scratch – RTL, MLIR compiler, PJRT runtime, runs Jax - https://twitter.com/PatrickToulme/status/2017706776288719194\n[^28]: Surfing Through the Digital Airwaves: A History of Internet Radio (2020) - https://thehistoryoftheweb.com/internet-radio/\n[^29]: Conrad Gessner - https://en.wikipedia.org/wiki/Conrad_Gessner\n[^30]: Michael Ovitz: The Business of Relationships - https://fs.blog/knowledge-project-podcast/michael-ovitz/\n[^31]: Housing program helped kids escape poverty – by changing who they befriended - https://www.npr.org/2026/01/28/nx-s1-5691692/hope-vi-public-housing-opportunity-insights-raj-chetty\n[^32]: AI-augmented photon-trapping spectrometer-on-a-chip on silicon platform - https://www.spiedigitallibrary.org/journals/advanced-photonics/volume-8/issue-01/016008/AI-augmented-photon-trapping-spectrometer-on-a-chip-on-silicon/10.1117/1.AP.8.1.016008.full\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **January 2026 Insiders (version 1.109)**\n   - 출처: Visual Studio Code - Code Editing. Redefined.\n   - 링크: https://code.visualstudio.com/updates/v1_109\n\n2. **위스콘신 여러 지역사회가 수십억 달러 규모 데이터센터 유치를 위해 비밀유지 계약을 체결**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26286\n\n3. **Peerweb: WebTorrent을 통한 탈중앙화 웹사이트 호스팅**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26285\n\n4. **이틀간의 오트밀 섭취가 콜레스테롤 수치를 낮춘다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26284\n\n5. **Kimi K2.5 기술 보고서 [PDF]**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26283\n\n6. **Microsoft 365가 실시간으로 사용자를 추적한다?**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26282\n\n7. **Grid: 무료, 로컬 우선, 브라우저 기반 3D 프린팅/CNC/레이저 슬라이서**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26281\n\n8. **미국 경제 붕괴가 곧 일어날 수밖에 없는 이유**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26280\n\n9. **HTTP 고양이들**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26278\n\n10. **AI 지원이 코딩 기술 형성에 미치는 영향**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26275\n\n11. **토스 프론트엔드 챕터 140명 조직을 운영하며 배운 것**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26274\n\n12. **Docker Sandboxes: Run Claude Code and Other Coding Agents Unsupervised (but Safely)**\n   - 출처: Docker Blog\n   - 링크: https://www.docker.com/blog/docker-sandboxes-run-claude-code-and-other-coding-agents-unsupervised-but-safely/\n\n13. **Factify Raises $73M to Create AI Infrastructure for Documents**\n   - 출처: Hacker News\n   - 링크: https://www.forbes.com/sites/gilpress/2026/01/28/factify-raises-73-million-to-create-ai-infrastructure-for-documents/\n\n14. **Govt's Theory for Prosecuting Don Lemon as to Disruption of Minn. Church Service**\n   - 출처: Hacker News\n   - 링크: https://reason.com/volokh/2026/01/31/governments-theory-for-prosecuting-don-lemon-as-to-disruption-of-minneapolis-church-service/\n\n15. **Show HN: Warden – agent based framework for reviewing code**\n   - 출처: Hacker News\n   - 링크: https://warden.sentry.dev\n\n16. **Show HN: I built a small OSS kernel for replaying and diffing AI decisions**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=46841302\n\n17. **The TV industry concedes that the future may not be in 8K**\n   - 출처: Hacker News\n   - 링크: https://arstechnica.com/gadgets/2026/01/lg-joins-the-rest-of-the-world-accepts-that-people-dont-want-8k-tvs/\n\n18. **Kimwolf Botnet Lurking in Corporate, Govt. Networks**\n   - 출처: Hacker News\n   - 링크: https://krebsonsecurity.com/2026/01/kimwolf-botnet-lurking-in-corporate-govt-networks/\n\n19. **Ask HN: How can this OpenClaw/Moltbook thing not end badly?**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=46841216\n\n20. **This Year in LLVM (2025)**\n   - 출처: Hacker News\n   - 링크: https://www.npopov.com/2026/01/31/This-year-in-LLVM-2025.html\n\n21. **How does the measles vaccine protect against other infectious diseases?**\n   - 출처: Hacker News\n   - 링크: https://www.npr.org/sections/goatsandsoda/2015/05/07/404963436/scientists-crack-a-50-year-old-mystery-about-the-measles-vaccine\n\n22. **NASA Supercomputer Probes Tangled Magnetospheres of Merging Neutron Stars**\n   - 출처: Hacker News\n   - 링크: https://svs.gsfc.nasa.gov/14884/\n\n23. **Everyone is comparing GitHub stars. But what about issues?**\n   - 출처: Hacker News\n   - 링크: https://github-history.com/anomalyco/opencode\u0026openclaw/openclaw\u0026facebook/react\u0026vercel/next.js?showClosed=true\n\n24. **Why It Took Me 4 Years to Make a USB Cable [video]**\n   - 출처: Hacker News\n   - 링크: https://www.youtube.com/watch?v=OT_iyvOy0Tk\n\n25. **Ask HN: Are retries the wrong abstraction under rate limits?**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=46841137\n\n26. **Ask HN: Gmail/Draft Problems?**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=46841105\n\n27. **TPU I built from scratch – RTL, MLIR compiler, PJRT runtime, runs Jax**\n   - 출처: Hacker News\n   - 링크: https://twitter.com/PatrickToulme/status/2017706776288719194\n\n28. **Surfing Through the Digital Airwaves: A History of Internet Radio (2020)**\n   - 출처: Hacker News\n   - 링크: https://thehistoryoftheweb.com/internet-radio/\n\n29. **Conrad Gessner**\n   - 출처: Hacker News\n   - 링크: https://en.wikipedia.org/wiki/Conrad_Gessner\n\n30. **Michael Ovitz: The Business of Relationships**\n   - 출처: Hacker News\n   - 링크: https://fs.blog/knowledge-project-podcast/michael-ovitz/\n\n31. **Housing program helped kids escape poverty – by changing who they befriended**\n   - 출처: Hacker News\n   - 링크: https://www.npr.org/2026/01/28/nx-s1-5691692/hope-vi-public-housing-opportunity-insights-raj-chetty\n\n32. **AI-augmented photon-trapping spectrometer-on-a-chip on silicon platform**\n   - 출처: Hacker News\n   - 링크: https://www.spiedigitallibrary.org/journals/advanced-photonics/volume-8/issue-01/016008/AI-augmented-photon-trapping-spectrometer-on-a-chip-on-silicon/10.1117/1.AP.8.1.016008.full\n\n\n",
+  "articles": [
+    {
+      "title": "January 2026 Insiders (version 1.109)",
+      "link": "https://code.visualstudio.com/updates/v1_109",
+      "source": "Visual Studio Code - Code Editing. Redefined.",
+      "category": "tech",
+      "publishedAt": "2026-02-04T17:00:00Z",
+      "description": "\n      \u003cp\u003eLearn what is new in the Visual Studio Code January 2026 Release (1.109).\u003c/p\u003e\n      \u003cp\u003e\u003ca href=\"https://code.visualstudio.com/updates/v1_109\"\u003eRead the full article\u003c/a\u003e\u003c/p\u003e\n    "
+    },
+    {
+      "title": "위스콘신 여러 지역사회가 수십억 달러 규모 데이터센터 유치를 위해 비밀유지 계약을 체결",
+      "link": "https://news.hada.io/topic?id=26286",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-01T05:32:59+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e위스콘신의 최소 4개 지방정부가 \u003cstrong\u003e데이터센터 개발사와 비밀유지계약(NDA)\u003c/strong\u003e 을 맺어 대규모 프로젝트를 1년 이상 비공개로 추진함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eMeta, Microsoft, Viridian Acquisitions\u003c/strong\u003e 등 글로벌 기업이 관련된 프로젝트로, 총 7건의 데이터센터 개발 규모는 \u003cstrong\u003e570억 달러...\u003c/p\u003e"
+    },
+    {
+      "title": "Peerweb: WebTorrent을 통한 탈중앙화 웹사이트 호스팅",
+      "link": "https://news.hada.io/topic?id=26285",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-01T04:32:37+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eWebTorrent 기반 피어 투 피어 네트워크\u003c/strong\u003e를 이용해 웹사이트를 중앙 서버 없이 배포하는 시스템\u003c/li\u003e\n\u003cli\u003e사용자는 \u003cstrong\u003e웹사이트 폴더를 드래그 앤 드롭\u003c/strong\u003e하여 업로드하고, 고유한 \u003cstrong\u003ePeerWeb 링크\u003c/strong\u003e를 통해 공유 가능\u003c/li\u003e\n\u003cli\u003e브라우저 탭을 열어두거나 \u003cstrong\u003e데스...\u003c/p\u003e"
+    },
+    {
+      "title": "이틀간의 오트밀 섭취가 콜레스테롤 수치를 낮춘다",
+      "link": "https://news.hada.io/topic?id=26284",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-01T03:33:27+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e오트밀 기반 식단\u003c/strong\u003e이 대사 증후군 환자의 \u003cstrong\u003eLDL 콜레스테롤을 10% 감소\u003c/strong\u003e시키는 효과를 보임\u003c/li\u003e\n\u003cli\u003e참가자들은 \u003cstrong\u003e이틀 동안 하루 300g의 오트밀\u003c/strong\u003e만 섭취하며, 평소 섭취량의 절반 수준의 칼로리를 소비\u003c/li\u003e\n\u003cli\u003e오트밀 섭취군은 \u003cstrong\u003e체중 2kg 감소\u003c/stron...\u003c/p\u003e"
+    },
+    {
+      "title": "Kimi K2.5 기술 보고서 [PDF]",
+      "link": "https://news.hada.io/topic?id=26283",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-01T02:32:18+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eKimi K2.5\u003c/strong\u003e는 Moonshot AI가 공개한 대형 언어 모델의 \u003cstrong\u003e기술적 세부사항을 정리한 보고서\u003c/strong\u003e임\u003c/li\u003e\n\u003cli\u003e모델의 \u003cstrong\u003e아키텍처, 학습 데이터, 성능 평가\u003c/strong\u003e 등 핵심 기술 요소를 다룸\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eKimi 시리즈의 최신 버전\u003c/strong\u003e으로, 이전 세대 대비 개선된 ...\u003c/p\u003e"
+    },
+    {
+      "title": "Microsoft 365가 실시간으로 사용자를 추적한다?",
+      "link": "https://news.hada.io/topic?id=26282",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-01T00:41:45+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eMicrosoft 365의 \u003cstrong\u003e새 업데이트\u003c/strong\u003e가 직원의 \u003cstrong\u003e실시간 위치를 추적\u003c/strong\u003e할 수 있도록 변경되어, 원격 근무 중 위치 숨기기가 사실상 불가능해짐\u003c/li\u003e\n\u003cli\u003e이 기능은 \u003cstrong\u003eTeams의 Windows, Mac, 모바일 앱\u003c/strong\u003e 전반에 적용되어, 회사 네트워크 외부에서도 접속 위치가 표시됨\u003c/l...\u003c/p\u003e"
+    },
+    {
+      "title": "Grid: 무료, 로컬 우선, 브라우저 기반 3D 프린팅/CNC/레이저 슬라이서",
+      "link": "https://news.hada.io/topic?id=26281",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-01T00:38:45+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eGrid.Space\u003c/strong\u003e는 브라우저만으로 3D 프린팅, CNC, 레이저 커팅을 학습할 수 있는 \u003cstrong\u003e무료 STEM 교육용 제작 도구\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e설치나 계정 생성 없이 실행되며, \u003cstrong\u003e모든 데이터가 로컬에서 처리\u003c/strong\u003e되어 개인정보 보호를 보장\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eWindows, Mac, Linux, Ch...\u003c/p\u003e"
+    },
+    {
+      "title": "미국 경제 붕괴가 곧 일어날 수밖에 없는 이유",
+      "link": "https://news.hada.io/topic?id=26280",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-01T00:35:45+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e2025년에 예측했던 \u003cstrong\u003e대규모 경기 붕괴\u003c/strong\u003e가 일어나지 않았지만, 2026년 현재 다시 그 가능성이 제기됨\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e실업률 곡선\u003c/strong\u003e과 \u003cstrong\u003e역전된 수익률 곡선\u003c/strong\u003e이 전통적으로 경기 침체의 신호로 간주되며, 아직 그 예측이 틀렸다고 볼 수 없음\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e은과 금...\u003c/p\u003e"
+    },
+    {
+      "title": "HTTP 고양이들",
+      "link": "https://news.hada.io/topic?id=26278",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-31T21:32:43+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eHTTP 상태 코드를 \u003cstrong\u003e고양이 이미지\u003c/strong\u003e로 표현한 웹 서비스로, 각 코드별로 시각적 반응을 제공\u003c/li\u003e\n\u003cli\u003e사용자는 \u003ccode\u003ehttps://http.cat/[status_code]\u003c/code\u003e 형식의 URL을 통해 \u003cstrong\u003e특정 상태 코드 이미지\u003c/strong\u003e를 바로 조회 가능\u003c/li\u003e\n\u003cli\u003e\n\u003ccode\u003e.jpg\u003c/code\u003e 확장자를 추가하면 \u003cstro...\u003c/p\u003e"
+    },
+    {
+      "title": "AI 지원이 코딩 기술 형성에 미치는 영향",
+      "link": "https://news.hada.io/topic?id=26275",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-31T17:33:12+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e앤트로픽이 \u003cstrong\u003eAI 코딩 도우미를 사용하는게 개발자의 학습과 숙련도에 어떤 영향을 주는지\u003c/strong\u003e 실험적으로 검증한 연구\u003c/li\u003e\n\u003cli\u003e무작위 통제 실험 결과, \u003cstrong\u003eAI를 사용한 그룹의 개념 이해도와 디버깅 능력이 평균 17% 낮았으며\u003c/strong\u003e, 속도 향상은 통계적으로 유의하지 않았음\u003c/li\u003e\n\u003cli\u003e그...\u003c/p\u003e"
+    },
+    {
+      "title": "토스 프론트엔드 챕터 140명 조직을 운영하며 배운 것",
+      "link": "https://news.hada.io/topic?id=26274",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-01-31T15:53:56+09:00",
+      "description": "\u003cp\u003e조직의 탁월함은 사람으로 만들지만 지속성은 시스템이 만든다\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e토스 프론트엔드 챕터 리드로 2년 반간 고민해온 대규모 조직 운영 경험을 정리한 글\u003c/li\u003e\n\u003cli\u003e토스 프론트엔드 챕터는 커뮤니티 기준 250명, 코어 챕터만 140명 규모의 대조직\u003c/li\u003e\n\u003cli\u003e10명일 때와 140명일 때는 게임의 룰 자체가 다르며"
+    },
+    {
+      "title": "Docker Sandboxes: Run Claude Code and Other Coding Agents Unsupervised (but Safely)",
+      "link": "https://www.docker.com/blog/docker-sandboxes-run-claude-code-and-other-coding-agents-unsupervised-but-safely/",
+      "source": "Docker Blog",
+      "category": "tech",
+      "publishedAt": "2026-01-30T23:39:54Z",
+      "description": "We introduced Docker Sandboxes in experimental preview a few months ago. Today, we’re launching the next evolution with microVM isolation, available now for macOS and Windows.  We started Docker Sandboxes to answer the question: How do I run Claude Code or Gemini CLI safely? Sandboxes provide disposable, isolated environments purpose-built for coding agents. Each agent..."
+    },
+    {
+      "title": "Factify Raises $73M to Create AI Infrastructure for Documents",
+      "link": "https://www.forbes.com/sites/gilpress/2026/01/28/factify-raises-73-million-to-create-ai-infrastructure-for-documents/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-31T22:00:37Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.forbes.com/sites/gilpress/2026/01/28/factify-raises-73-million-to-create-ai-infrastructure-for-documents/\"\u003ehttps://www.forbes.com/sites/gilpress/2026/01/28/factify-raises-73-million-to-create-ai-infrastructure-for-documents/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46841334\"\u003ehttps://news.ycombinator.com/item?id=46841334\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Govt's Theory for Prosecuting Don Lemon as to Disruption of Minn. Church Service",
+      "link": "https://reason.com/volokh/2026/01/31/governments-theory-for-prosecuting-don-lemon-as-to-disruption-of-minneapolis-church-service/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-31T21:59:38Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://reason.com/volokh/2026/01/31/governments-theory-for-prosecuting-don-lemon-as-to-disruption-of-minneapolis-church-service/\"\u003ehttps://reason.com/volokh/2026/01/31/governments-theory-for-prosecuting-don-lemon-as-to-disruption-of-minneapolis-church-service/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46841325\"\u003ehttps://news.ycombinator.com/item?id=46841325\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Warden – agent based framework for reviewing code",
+      "link": "https://warden.sentry.dev",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-31T21:59:32Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://warden.sentry.dev\"\u003ehttps://warden.sentry.dev\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46841323\"\u003ehttps://news.ycombinator.com/item?id=46841323\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: I built a small OSS kernel for replaying and diffing AI decisions",
+      "link": "https://news.ycombinator.com/item?id=46841302",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-31T21:56:55Z",
+      "description": "\n\u003cp\u003eI’ve been hacking on a small open-source project called Verist and figured I’d share it here to get some early feedback.\u003cp\u003eWhat kept bothering me with AI features in production wasn’t really how to build them, but everything that comes after: explaining why something happened, reproducing it weeks later, or changing prompts/models without breaking things in subtle ways.\u003cp\u003eLogs helped a bit, but not enough.\nAgent frameworks felt too implicit for my taste.\nAnd model upgrades were honestly scary, outputs would change and it wasn’t always obvious where or why.\u003cp\u003eSo I ended up building a very small, explicit kernel where each AI step can be replayed, diffed, and reviewed. Think something like Git-style workflows for AI decisions, but without trying to be a framework or a runtime.\u003cp\u003eIt’s not an agent framework, not a chat UI, and not a platform, just a TypeScript library focused on explicit state, audit events, and replay + diff.\u003cp\u003eRepo: \u003ca href=\"https://github.com/verist-ai/verist\" rel=\"nofollow\"\u003ehttps://github.com/verist-ai/verist\u003c/a\u003e\u003cp\u003eI’m especially curious if others here have run into similar issues shipping AI features to prod, or if this feels like overkill. Happy to answer questions or hear criticism.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46841302\"\u003ehttps://news.ycombinator.com/item?id=46841302\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The TV industry concedes that the future may not be in 8K",
+      "link": "https://arstechnica.com/gadgets/2026/01/lg-joins-the-rest-of-the-world-accepts-that-people-dont-want-8k-tvs/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-31T21:52:49Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://arstechnica.com/gadgets/2026/01/lg-joins-the-rest-of-the-world-accepts-that-people-dont-want-8k-tvs/\"\u003ehttps://arstechnica.com/gadgets/2026/01/lg-joins-the-rest-of-the-world-accepts-that-people-dont-want-8k-tvs/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46841265\"\u003ehttps://news.ycombinator.com/item?id=46841265\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Kimwolf Botnet Lurking in Corporate, Govt. Networks",
+      "link": "https://krebsonsecurity.com/2026/01/kimwolf-botnet-lurking-in-corporate-govt-networks/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-31T21:47:04Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://krebsonsecurity.com/2026/01/kimwolf-botnet-lurking-in-corporate-govt-networks/\"\u003ehttps://krebsonsecurity.com/2026/01/kimwolf-botnet-lurking-in-corporate-govt-networks/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46841219\"\u003ehttps://news.ycombinator.com/item?id=46841219\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Ask HN: How can this OpenClaw/Moltbook thing not end badly?",
+      "link": "https://news.ycombinator.com/item?id=46841216",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-31T21:46:33Z",
+      "description": "\n\u003cp\u003eI don't see how we can avoid a major security incident or major hack on the internet, next week maybe ?\u003cp\u003eWe have thousands of pattern matching bots that were trained on human knowledge but on human behavior too. That means crimes, hacks, etc ...\u003cp\u003eThey have a lot of technical knowledge, they're online 24/7, there's thousands of them, without any supervision. They can pretty much scan the internet for vulnerabilities 24/7.\u003cp\u003eThis will end badly, well, actually this won't end, but there's gonna be major problems soon.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46841216\"\u003ehttps://news.ycombinator.com/item?id=46841216\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "This Year in LLVM (2025)",
+      "link": "https://www.npopov.com/2026/01/31/This-year-in-LLVM-2025.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-31T21:44:23Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.npopov.com/2026/01/31/This-year-in-LLVM-2025.html\"\u003ehttps://www.npopov.com/2026/01/31/This-year-in-LLVM-2025.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46841187\"\u003ehttps://news.ycombinator.com/item?id=46841187\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "How does the measles vaccine protect against other infectious diseases?",
+      "link": "https://www.npr.org/sections/goatsandsoda/2015/05/07/404963436/scientists-crack-a-50-year-old-mystery-about-the-measles-vaccine",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-31T21:42:02Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.npr.org/sections/goatsandsoda/2015/05/07/404963436/scientists-crack-a-50-year-old-mystery-about-the-measles-vaccine\"\u003ehttps://www.npr.org/sections/goatsandsoda/2015/05/07/404963436/scientists-crack-a-50-year-old-mystery-about-the-measles-vaccine\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46841163\"\u003ehttps://news.ycombinator.com/item?id=46841163\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "NASA Supercomputer Probes Tangled Magnetospheres of Merging Neutron Stars",
+      "link": "https://svs.gsfc.nasa.gov/14884/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-31T21:41:53Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://svs.gsfc.nasa.gov/14884/\"\u003ehttps://svs.gsfc.nasa.gov/14884/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46841160\"\u003ehttps://news.ycombinator.com/item?id=46841160\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Everyone is comparing GitHub stars. But what about issues?",
+      "link": "https://github-history.com/anomalyco/opencode\u0026openclaw/openclaw\u0026facebook/react\u0026vercel/next.js?showClosed=true",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-31T21:40:43Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github-history.com/anomalyco/opencode\u0026openclaw/openclaw\u0026facebook/react\u0026vercel/next.js?showClosed=true\"\u003ehttps://github-history.com/anomalyco/opencode\u0026openclaw/openclaw\u0026facebook/react\u0026vercel/next.js?showClosed=true\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46841145\"\u003ehttps://news.ycombinator.com/item?id=46841145\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Why It Took Me 4 Years to Make a USB Cable [video]",
+      "link": "https://www.youtube.com/watch?v=OT_iyvOy0Tk",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-31T21:40:01Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.youtube.com/watch?v=OT_iyvOy0Tk\"\u003ehttps://www.youtube.com/watch?v=OT_iyvOy0Tk\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46841139\"\u003ehttps://news.ycombinator.com/item?id=46841139\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Ask HN: Are retries the wrong abstraction under rate limits?",
+      "link": "https://news.ycombinator.com/item?id=46841137",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-31T21:39:45Z",
+      "description": "\n\u003cp\u003eOver the last few years, I’ve watched a lot of production systems fail in ways that feel… strangely predictable.\u003cp\u003eWhen services hit 429s or timeouts, the standard response is almost always the same: retries with backoff, sleep loops, jitter, etc. This is treated as a best practice across languages and platforms.\u003cp\u003eBut in systems with high concurrency, fan-out, or shared downstream dependencies, retries often seem to amplify load instead of smoothing it. What starts as localized failure can turn into retry storms, thundering herds, and cascading outages.\u003cp\u003eIt’s made me wonder whether retries are solving the wrong problem at the wrong layer — treating a coordination issue as an application-level error-handling concern.\u003cp\u003eI wrote up a longer piece exploring this idea and arguing for making failure boring again by handling it at a different layer:\nhttps://www.ezthrottle.network/blog/making-failure-boring-again\u003cp\u003eCurious how this matches others’ experience:\u003cp\u003eHave retries actually improved stability for you under sustained rate limiting?\u003cp\u003eHave you seen cases where they clearly made things worse?\u003cp\u003eIf retries aren’t the right abstraction, what is?\u003cp\u003eInterested in war stories, counterexamples, and alternative approaches.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46841137\"\u003ehttps://news.ycombinator.com/item?id=46841137\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Ask HN: Gmail/Draft Problems?",
+      "link": "https://news.ycombinator.com/item?id=46841105",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-31T21:36:06Z",
+      "description": "\n\u003cp\u003eI've been using GMail for many years both privately and inside Workspace.\u003cp\u003eRecently I've had \u003ci\u003emulitple\u003c/i\u003e problems where drafts disappear, sometimes even after I send them.  My partner's seen this as well on a completely unrelated workspace enterprise account.\u003cp\u003eOn top of that,I've noticed that my \"Drafts\" are conspicuously missing entries since mid-November.  I've got a pretty good rate of leaving drafts and ideas half formed in email.\u003cp\u003e(I'm not looking for advice, guidance, or berating for this behavior – I've already gotten an earful from my team.)\u003cp\u003eHas anyone else seen this?  Perhaps take a look in drafts and see what's missing!\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46841105\"\u003ehttps://news.ycombinator.com/item?id=46841105\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "TPU I built from scratch – RTL, MLIR compiler, PJRT runtime, runs Jax",
+      "link": "https://twitter.com/PatrickToulme/status/2017706776288719194",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-31T21:34:29Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://twitter.com/PatrickToulme/status/2017706776288719194\"\u003ehttps://twitter.com/PatrickToulme/status/2017706776288719194\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46841093\"\u003ehttps://news.ycombinator.com/item?id=46841093\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Surfing Through the Digital Airwaves: A History of Internet Radio (2020)",
+      "link": "https://thehistoryoftheweb.com/internet-radio/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-31T21:33:33Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://thehistoryoftheweb.com/internet-radio/\"\u003ehttps://thehistoryoftheweb.com/internet-radio/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46841084\"\u003ehttps://news.ycombinator.com/item?id=46841084\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Conrad Gessner",
+      "link": "https://en.wikipedia.org/wiki/Conrad_Gessner",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-31T21:33:16Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://en.wikipedia.org/wiki/Conrad_Gessner\"\u003ehttps://en.wikipedia.org/wiki/Conrad_Gessner\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46841082\"\u003ehttps://news.ycombinator.com/item?id=46841082\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Michael Ovitz: The Business of Relationships",
+      "link": "https://fs.blog/knowledge-project-podcast/michael-ovitz/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-31T21:32:27Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://fs.blog/knowledge-project-podcast/michael-ovitz/\"\u003ehttps://fs.blog/knowledge-project-podcast/michael-ovitz/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46841074\"\u003ehttps://news.ycombinator.com/item?id=46841074\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Housing program helped kids escape poverty – by changing who they befriended",
+      "link": "https://www.npr.org/2026/01/28/nx-s1-5691692/hope-vi-public-housing-opportunity-insights-raj-chetty",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-31T21:30:56Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.npr.org/2026/01/28/nx-s1-5691692/hope-vi-public-housing-opportunity-insights-raj-chetty\"\u003ehttps://www.npr.org/2026/01/28/nx-s1-5691692/hope-vi-public-housing-opportunity-insights-raj-chetty\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46841066\"\u003ehttps://news.ycombinator.com/item?id=46841066\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "AI-augmented photon-trapping spectrometer-on-a-chip on silicon platform",
+      "link": "https://www.spiedigitallibrary.org/journals/advanced-photonics/volume-8/issue-01/016008/AI-augmented-photon-trapping-spectrometer-on-a-chip-on-silicon/10.1117/1.AP.8.1.016008.full",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-01-31T21:30:39Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.spiedigitallibrary.org/journals/advanced-photonics/volume-8/issue-01/016008/AI-augmented-photon-trapping-spectrometer-on-a-chip-on-silicon/10.1117/1.AP.8.1.016008.full\"\u003ehttps://www.spiedigitallibrary.org/journals/advanced-photonics/volume-8/issue-01/016008/AI-augmented-photon-trapping-spectrometer-on-a-chip-on-silicon/10.1117/1.AP.8.1.016008.full\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46841063\"\u003ehttps://news.ycombinator.com/item?id=46841063\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    }
+  ],
+  "generatedAt": "2026-02-01T07:09:45.154579209+09:00"
+}
