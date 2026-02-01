@@ -1,0 +1,266 @@
+{
+  "date": "2026-02-02",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2026년 2월 1일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** AI가 인간의 마음을 읽는 '마음 이론' 테스트에서 성인 수준에 도달했으며, 자율 에이전트를 위한 보안 및 제어 도구들이 쏟아져 나오고 있습니다.\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### 🧠 AI, 인간의 마음을 읽다: 성인 수준의 '마음 이론(ToM)' 도달\n최근 연구에 따르면 대규모 언어 모델(LLM)이 인간의 신념, 의도, 감정을 추론하는 고차원적인 '마음 이론(Theory of Mind)' 테스트에서 성인 인간과 대등한 성능을 보였습니다. 이는 AI가 단순히 텍스트를 생성하는 것을 넘어, 상대방의 심리 상태를 시뮬레이션하고 이해할 수 있는 단계로 진입했음을 시사합니다.\n\n이 연구 결과는 인간-AI 상호작용(HRI)의 질을 획기적으로 높일 수 있는 잠재력을 가지지만, 동시에 AI가 인간을 기만하거나 조종할 수 있는 능력 또한 갖추게 되었다는 윤리적 우려를 동반합니다.\n\n\u003e **Key Point:** LLM이 단순 정보 처리를 넘어 사회적 인지 능력의 핵심인 '타인의 마음 유추' 영역까지 정복했습니다. [^2]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. 자율 AI 에이전트의 시대: 통제와 진화\nAI 에이전트가 단순히 코드를 짜는 것을 넘어 스스로 학습하고 권한을 관리하는 도구들이 대거 등장했습니다.\n- **What:** **IntentBound**는 자율 에이전트가 수행하려는 작업의 '의도'를 파악해 권한을 부여하는 보안 시스템이며 [^3], **Smith**는 병렬로 작동하는 여러 코딩 에이전트를 시각적으로 관리하는 관제실 역할을 합니다 [^12]. 또한 **OpenRAPP**는 에이전트가 GitHub PR을 통해 스스로 세계를 진화시키는 실험을 보여줍니다 [^16].\n- **Why:** 에이전트의 자율성이 높아질수록, 이들이 시스템에 미치는 영향을 모니터링하고 제어할 안전장치(Guardrail)가 필수적이기 때문입니다.\n- **Impact:** AI 개발의 패러다임이 '챗봇'에서 스스로 판단하고 행동하는 '자율 에이전트' 생태계로 빠르게 이동하고 있습니다.\n\n### 2. 감시 기술의 그림자: 시위자 식별과 권리 박탈\n미국 이민세관단속국(ICE)이 시위 현장에서 개인을 식별하는 데 모바일 앱을 사용했다는 논란이 일었습니다.\n- **What:** ICE가 'Mobile Fortify' 앱을 사용하여 시위자를 식별하고, 이를 근거로 Global Entry나 PreCheck 같은 여행 편의 자격을 박탈한 사례가 보고되었습니다. [^24]\n- **Why:** 공공장소에서의 익명성과 표현의 자유가 디지털 감시 기술에 의해 어떻게 침해될 수 있는지 보여주는 적나라한 사례입니다.\n- **Impact:** 기술이 행정적 처벌의 도구로 사용됨에 따라 프라이버시 보호와 안면 인식 기술 규제에 대한 논의가 다시금 격화될 전망입니다.\n\n### 3. 개발자 경험(DX)의 진화: 클라우드와 로컬의 조화\n구글과 마이크로소프트가 각각 데이터베이스와 에디터 영역에서 개발 생산성을 높이는 업데이트를 내놓았습니다.\n- **What:** **Google Cloud**는 AlloyDB를 위한 관리형 커넥션 풀링(Managed Connection Pooling)을 도입해 DB 연결 효율을 극대화했고 [^8], **VS Code**는 1.109 Insiders 버전을 통해 코드 편집 경험을 재정의하는 새로운 기능들을 테스트 중입니다 [^1].\n- **Why:** 서버리스 환경과 대규모 트래픽 처리가 일상화되면서, 인프라 관리의 복잡성을 줄이고 코딩 자체에 집중할 수 있는 환경이 중요해졌습니다.\n- **Impact:** 백엔드 인프라의 자동화와 프론트엔드 도구의 지능화가 동시에 진행되며 개발 속도가 더욱 가속화될 것입니다.\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **OxCaml Webserver** | 메모리 할당이 없는(Zero-allocation) 초고속 OCaml 웹서버 구현체 [^6] |\n| **Tool** | **Macmon** | Apple Silicon(M1/M2/M3)을 위한 `sudo`가 필요 없는 경량 성능 모니터링 도구 [^21] |\n| **Lib** | **ThorVG 1.0** | Lottie 등을 지원하는 경량 크로스플랫폼 벡터 그래픽 엔진 1.0 릴리즈 [^28] |\n| **Lang** | **Lily** | 정적 타이핑과 인터프리터 언어의 장점을 결합한 프로그래밍 언어 [^13] |\n| **App** | **Echo** | 로컬 우선(Local-first) 방식의 킨들 스타일 리더기 (주석 및 LLM 채팅 지원) [^9] |\n| **HW** | **Magnetic Core USB** | 1950년대 자기 코어 메모리 기술로 만든 128바이트(GB 아님) USB 드라이브 프로젝트 [^15] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n\n#### 🤖 AI \u0026 데이터\n* **자동 프로그래밍**: AI가 코드를 작성하는 시대, 프로그래머의 역할 변화에 대한 고찰 [^30]\n* **사고의 외주화**: 생성형 AI에 의존하여 인간의 비판적 사고가 줄어드는 현상에 대한 비평 [^23]\n* **생성형 AI와 위키백과**: 2025년 한 해 동안 AI가 위키백과 편집 생태계에 미친 영향 분석 [^22]\n* **Stigg**: 엔터프라이즈 고객을 위한 임베디드 AI 사용량 제어 및 비용 한도 관리 솔루션 [^11] [^14]\n* **AI 에이전트의 기반**: 현대 AI 에이전트를 구동하는 기술적 기반에 대한 논의 [^20]\n\n#### 💻 개발 \u0026 인프라\n* **드라이런(dry-run)의 장점**: 명령 실행 전 결과를 미리 확인하는 옵션의 중요성과 안전성 [^27]\n* **IP 위치 찾기**: CLI에서 지연 시간(Latency)을 이용해 IP의 물리적 위치를 추적하는 기법 [^26]\n* **Zig Agent Skill**: Zig 언어를 사용하여 에이전트 스킬을 제작하는 튜토리얼 [^17]\n\n#### 🕹️ 하드웨어 \u0026 레트로\n* **Nvidia Shield TV**: 10년간의 업데이트 지원으로 안드로이드 기기 중 가장 긴 수명을 기록한 비결 [^25]\n* **Ninjutsu Sora V3**: 프로 게이머를 위한 초경량 고성능 게이밍 마우스 리뷰 [^4]\n* **Audio on Hp300**: OpenBSD에서 구형 HP300 워크스테이션의 오디오를 지원하기 위한 개발기 [^10]\n\n#### 🌍 문화, 사회 \u0026 기타\n* **Futurama 에피소드**: Fox 방송사의 간섭에서 작가들을 해방시켰던 전설적인 에피소드 비화 [^5]\n* **이란 언론인 압박**: 이란 정부가 망명 언론인들의 가족을 소환하여 활동 중단을 협박 [^18]\n* **Google Black History Month**: 2026년 흑인 역사의 달을 맞아 구글이 공개한 문화 및 창의성 캠페인 [^32]\n* **Wallace \u0026 Gromit 서체**: 아드만 스튜디오의 감성을 담은 맞춤형 폰트 'Buttered Crumpet' 공개 [^31]\n* **노트 수집 vs 실행**: 자료만 모으고 실행하지 못하는 '수집가의 오류'에 대한 생산성 토론 [^29]\n* **아파트 인터넷 속도**: 아파트 환경에서 인터넷 속도를 개선하기 위한 HN 유저들의 조언 [^19]\n* **Escutcheon**: 가구의 열쇠 구멍을 덮는 장식판(Escutcheon)에 대한 위키백과 항목 [^7]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘 뉴스는 '**AI의 인간화**'와 '**도구의 고도화**'로 요약됩니다. LLM이 인간의 마음을 이해하는 수준에 도달했다는 소식은 놀랍지만, 동시에 시위자 식별 앱처럼 기술이 감시의 도구가 되는 현실은 섬뜩하기도 합니다. 한편, 128바이트짜리 자기 코어 USB를 만드는 괴짜(Geek)들의 열정은 여전히 기술이 주는 순수한 즐거움을 상기시켜 줍니다. 기술의 발전 속도만큼이나, 그것을 어떻게 쓸지에 대한 고민도 깊어져야 할 시점입니다.\n\n---\n\n[^1]: January 2026 Insiders (version 1.109) - https://code.visualstudio.com/updates/v1_109\n[^2]: LLMs achieve adult human performance on higher-order \"theory of mind\" tasks - https://pmc.ncbi.nlm.nih.gov/articles/PMC12808479/\n[^3]: IntentBound: Purpose-aware authorization for autonomous AI agents - https://news.ycombinator.com/item?id=46849827\n[^4]: Show HN: Pro Gamer Gear- the Ninjutsu Sora V3 - https://xthe.com/news/pro-gamer-gear-the-ninjutsu-sora-v3/\n[^5]: The Futurama Episode That Set the Show's Writers Free from Fox's Terrible Notes - https://www.slashfilm.com/1408546/futurama-episode-set-writers-free-fox/\n[^6]: My (very) fast zero-allocation webserver using OxCaml - https://anil.recoil.org/notes/oxcaml-httpz\n[^7]: Escutcheon - https://en.wikipedia.org/wiki/Escutcheon_(furniture)\n[^8]: Google Introduces Managed Connection Pooling for AlloyDB - https://www.infoq.com/news/2026/01/alloydb-managed-connection-pool/\n[^9]: Show HN: Echo – Local-first kindle-like reader with annotations and LLM chat - https://github.com/tibi-iorga/echo-reading\n[^10]: Audio on Hp300 - http://miod.online.fr/software/openbsd/stories/arcofi.html\n[^11]: Embedded AI usage controls and spend limits for your enterprise customers - https://www.stigg.io/ai-usage-management\n[^12]: Show HN: Smith – A visual control room for managing parallel coding agents - https://trysmith.dev/\n[^13]: Lily Programming Language - https://lily-lang.org\n[^14]: Embedded AI usage controls and spend limits for your enterprise customers - https://stigg-x.webflow.io/ai-usage-management\n[^15]: Magnetic core memory 128-byte USB drive - https://www.tomshardware.com/pc-components/usb-flash-drives/researcher-builds-bizarre-128-byte-usb-drive-the-size-of-a-dinner-plate-using-ancient-pre-semiconductor-magnetic-core-memory-technology-data-disappears-once-it-is-read-requiring-special-handling\n[^16]: Show HN: OpenRAPP – AI agents autonomously evolve a world via GitHub PRs - https://kody-w.github.io/openrapp/rappbook/\n[^17]: Making a Zig Agent Skill - https://austinrude.com/blog/making-a-zig-agent-skill/\n[^18]: Iran summons families of exiled journalists to halt their activities - https://www.iranintl.com/en/202602017863\n[^19]: Ask HN: How can I get decent internet speeds in my apartment? - https://news.ycombinator.com/item?id=46849706\n[^20]: The foundation powering modern AI agents - https://news.ycombinator.com/item?id=46849704\n[^21]: Macmon: Sudoless performance monitoring for Apple processors. CPU / GPU / RAM us - https://github.com/vladkens/macmon\n[^22]: 생성형 AI와 위키백과 편집: 2025년에 배운 것들 - https://news.hada.io/topic?id=26319\n[^23]: 사고의 외주화 - https://news.hada.io/topic?id=26317\n[^24]: 시위자 식별에 ICE 앱 ‘Mobile Fortify’ 사용, Global Entry·PreCheck 자격 박탈 발생 - https://news.hada.io/topic?id=26315\n[^25]: Nvidia의 10년간 노력으로 Shield TV를 가장 오래 업데이트된 안드로이드 기기로 만든 과정 - https://news.hada.io/topic?id=26314\n[^26]: 우리는 ipinfo를 집에서 사용한다, 또는 지연 시간을 이용해 CLI에서 IP의 위치를 찾는 방법 - https://news.hada.io/topic?id=26313\n[^27]: 드라이런(dry-run) 옵션의 장점에 대하여 - https://news.hada.io/topic?id=26312\n[^28]: ThorVG 1.0 릴리즈 - 경량 크로스플랫폼 벡터 그래픽 엔진 - https://news.hada.io/topic?id=26311\n[^29]: 노트와 링크를 모으지만 실행으로 옮기기 어려운 문제에 대한 토론 - https://news.hada.io/topic?id=26310\n[^30]: 자동 프로그래밍 - https://news.hada.io/topic?id=26309\n[^31]: Wallace와 Gromit을 위한 맞춤 서체 Buttered Crumpet - https://news.hada.io/topic?id=26308\n[^32]: We're celebrating Black history, culture and creativity. - https://blog.google/company-news/outreach-and-initiatives/creating-opportunity/black-history-month-2026/\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **January 2026 Insiders (version 1.109)**\n   - 출처: Visual Studio Code - Code Editing. Redefined.\n   - 링크: https://code.visualstudio.com/updates/v1_109\n\n2. **LLMs achieve adult human performance on higher-order \"theory of mind\" tasks**\n   - 출처: Hacker News\n   - 링크: https://pmc.ncbi.nlm.nih.gov/articles/PMC12808479/\n\n3. **IntentBound: Purpose-aware authorization for autonomous AI agents**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=46849827\n\n4. **Show HN: Pro Gamer Gear- the Ninjutsu Sora V3**\n   - 출처: Hacker News\n   - 링크: https://xthe.com/news/pro-gamer-gear-the-ninjutsu-sora-v3/\n\n5. **The Futurama Episode That Set the Show's Writers Free from Fox's Terrible Notes**\n   - 출처: Hacker News\n   - 링크: https://www.slashfilm.com/1408546/futurama-episode-set-writers-free-fox/\n\n6. **My (very) fast zero-allocation webserver using OxCaml**\n   - 출처: Hacker News\n   - 링크: https://anil.recoil.org/notes/oxcaml-httpz\n\n7. **Escutcheon**\n   - 출처: Hacker News\n   - 링크: https://en.wikipedia.org/wiki/Escutcheon_(furniture)\n\n8. **Google Introduces Managed Connection Pooling for AlloyDB**\n   - 출처: Hacker News\n   - 링크: https://www.infoq.com/news/2026/01/alloydb-managed-connection-pool/\n\n9. **Show HN: Echo – Local-first kindle-like reader with annotations and LLM chat**\n   - 출처: Hacker News\n   - 링크: https://github.com/tibi-iorga/echo-reading\n\n10. **Audio on Hp300**\n   - 출처: Hacker News\n   - 링크: http://miod.online.fr/software/openbsd/stories/arcofi.html\n\n11. **Embedded AI usage controls and spend limits for your enterprise customers**\n   - 출처: Hacker News\n   - 링크: https://www.stigg.io/ai-usage-management\n\n12. **Show HN: Smith – A visual control room for managing parallel coding agents**\n   - 출처: Hacker News\n   - 링크: https://trysmith.dev/\n\n13. **Lily Programming Language**\n   - 출처: Hacker News\n   - 링크: https://lily-lang.org\n\n14. **Embedded AI usage controls and spend limits for your enterprise customers**\n   - 출처: Hacker News\n   - 링크: https://stigg-x.webflow.io/ai-usage-management\n\n15. **Magnetic core memory 128-byte USB drive**\n   - 출처: Hacker News\n   - 링크: https://www.tomshardware.com/pc-components/usb-flash-drives/researcher-builds-bizarre-128-byte-usb-drive-the-size-of-a-dinner-plate-using-ancient-pre-semiconductor-magnetic-core-memory-technology-data-disappears-once-it-is-read-requiring-special-handling\n\n16. **Show HN: OpenRAPP – AI agents autonomously evolve a world via GitHub PRs**\n   - 출처: Hacker News\n   - 링크: https://kody-w.github.io/openrapp/rappbook/\n\n17. **Making a Zig Agent Skill**\n   - 출처: Hacker News\n   - 링크: https://austinrude.com/blog/making-a-zig-agent-skill/\n\n18. **Iran summons families of exiled journalists to halt their activities**\n   - 출처: Hacker News\n   - 링크: https://www.iranintl.com/en/202602017863\n\n19. **Ask HN: How can I get decent internet speeds in my apartment?**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=46849706\n\n20. **The foundation powering modern AI agents**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=46849704\n\n21. **Macmon: Sudoless performance monitoring for Apple processors. CPU / GPU / RAM us**\n   - 출처: Hacker News\n   - 링크: https://github.com/vladkens/macmon\n\n22. **생성형 AI와 위키백과 편집: 2025년에 배운 것들**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26319\n\n23. **사고의 외주화**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26317\n\n24. **시위자 식별에 ICE 앱 ‘Mobile Fortify’ 사용, Global Entry·PreCheck 자격 박탈 발생**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26315\n\n25. **Nvidia의 10년간 노력으로 Shield TV를 가장 오래 업데이트된 안드로이드 기기로 만든 과정**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26314\n\n26. **우리는 ipinfo를 집에서 사용한다, 또는 지연 시간을 이용해 CLI에서 IP의 위치를 찾는 방법**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26313\n\n27. **드라이런(dry-run) 옵션의 장점에 대하여**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26312\n\n28. **ThorVG 1.0 릴리즈 - 경량 크로스플랫폼 벡터 그래픽 엔진**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26311\n\n29. **노트와 링크를 모으지만 실행으로 옮기기 어려운 문제에 대한 토론**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26310\n\n30. **자동 프로그래밍**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26309\n\n31. **Wallace와 Gromit을 위한 맞춤 서체 Buttered Crumpet**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26308\n\n32. **We're celebrating Black history, culture and creativity.**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/company-news/outreach-and-initiatives/creating-opportunity/black-history-month-2026/\n\n\n",
+  "articles": [
+    {
+      "title": "January 2026 Insiders (version 1.109)",
+      "link": "https://code.visualstudio.com/updates/v1_109",
+      "source": "Visual Studio Code - Code Editing. Redefined.",
+      "category": "tech",
+      "publishedAt": "2026-02-04T17:00:00Z",
+      "description": "\n      \u003cp\u003eLearn what is new in the Visual Studio Code January 2026 Release (1.109).\u003c/p\u003e\n      \u003cp\u003e\u003ca href=\"https://code.visualstudio.com/updates/v1_109\"\u003eRead the full article\u003c/a\u003e\u003c/p\u003e\n    "
+    },
+    {
+      "title": "LLMs achieve adult human performance on higher-order \"theory of mind\" tasks",
+      "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12808479/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-01T22:04:57Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC12808479/\"\u003ehttps://pmc.ncbi.nlm.nih.gov/articles/PMC12808479/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46849843\"\u003ehttps://news.ycombinator.com/item?id=46849843\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "IntentBound: Purpose-aware authorization for autonomous AI agents",
+      "link": "https://news.ycombinator.com/item?id=46849827",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-01T22:02:57Z",
+      "description": "\n\u003cp\u003eI built the first working implementation of Intent-Bound Authorization (IBA) - runtime enforcement that validates every AI agent action against declared human intent.\u003cp\u003eThe problem: Traditional auth (OAuth, RBAC) asks \"who can do what\" but never asks \"why are you doing this?\" When AI agents can plan and pivot autonomously, this becomes a $3.8B problem (2024 breach total).\u003cp\u003eIBA relocates the trust boundary from access grant to execution - agents are trusted only while they can justify actions against explicit intent.\u003cp\u003eLive demo: https://www.aiethicshq.com/demo.html\n(Watch it block a HIPAA violation in 3.7ms)\u003cp\u003eWorking code: https://github.com/Grokipaedia/Intent-Bound\u003cp\u003eKey insight: Autonomous systems should not be trusted because they have permission - only because they can continuously justify their actions against declared intent.\u003cp\u003eWould have prevented Wormhole ($600M), plus the entire class of \"legitimate credentials, malicious intent\" attacks.\u003cp\u003eIntegrates with Anthropic MCP, Azure OpenAI, AWS Bedrock.\u003cp\u003eHappy to discuss the architecture or answer questions about implementation.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46849827\"\u003ehttps://news.ycombinator.com/item?id=46849827\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Pro Gamer Gear- the Ninjutsu Sora V3",
+      "link": "https://xthe.com/news/pro-gamer-gear-the-ninjutsu-sora-v3/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-01T22:02:38Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://xthe.com/news/pro-gamer-gear-the-ninjutsu-sora-v3/\"\u003ehttps://xthe.com/news/pro-gamer-gear-the-ninjutsu-sora-v3/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46849825\"\u003ehttps://news.ycombinator.com/item?id=46849825\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Futurama Episode That Set the Show's Writers Free from Fox's Terrible Notes",
+      "link": "https://www.slashfilm.com/1408546/futurama-episode-set-writers-free-fox/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-01T22:02:29Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.slashfilm.com/1408546/futurama-episode-set-writers-free-fox/\"\u003ehttps://www.slashfilm.com/1408546/futurama-episode-set-writers-free-fox/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46849822\"\u003ehttps://news.ycombinator.com/item?id=46849822\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "My (very) fast zero-allocation webserver using OxCaml",
+      "link": "https://anil.recoil.org/notes/oxcaml-httpz",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-01T21:58:42Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://anil.recoil.org/notes/oxcaml-httpz\"\u003ehttps://anil.recoil.org/notes/oxcaml-httpz\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46849792\"\u003ehttps://news.ycombinator.com/item?id=46849792\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Escutcheon",
+      "link": "https://en.wikipedia.org/wiki/Escutcheon_(furniture)",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-01T21:58:21Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://en.wikipedia.org/wiki/Escutcheon_(furniture)\"\u003ehttps://en.wikipedia.org/wiki/Escutcheon_(furniture)\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46849789\"\u003ehttps://news.ycombinator.com/item?id=46849789\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Google Introduces Managed Connection Pooling for AlloyDB",
+      "link": "https://www.infoq.com/news/2026/01/alloydb-managed-connection-pool/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-01T21:58:16Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.infoq.com/news/2026/01/alloydb-managed-connection-pool/\"\u003ehttps://www.infoq.com/news/2026/01/alloydb-managed-connection-pool/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46849788\"\u003ehttps://news.ycombinator.com/item?id=46849788\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Echo – Local-first kindle-like reader with annotations and LLM chat",
+      "link": "https://github.com/tibi-iorga/echo-reading",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-01T21:57:46Z",
+      "description": "\n\u003cp\u003eHi HN,\u003cp\u003eLong time lurker here. I'm kind of nervous to post this, but I built a tool for myself that I wanted to share with you.\u003cp\u003eProblem: I have A LOT of technical PDFs sitting around on my computer. I use ChatGPT a lot to deep-dive into the reading, but it was pretty distracting even with a split screen view, since I had to copy paste content from one window to the other.\u003cp\u003eSolution: A kindle-like reader that allows me to send context to a chat window and discuss more about it.\u003cp\u003eIt has full portability through a sync file and uses your own API key.\u003cp\u003eDisclaimer: I'm a Product Manager and a Designer. This was 100% vibe coded in Cursor as a tool for myself, but I wanted to share it in case anyone might find it useful.\u003cp\u003eRepo: \u003ca href=\"https://github.com/tibi-iorga/echo-reading\" rel=\"nofollow\"\u003ehttps://github.com/tibi-iorga/echo-reading\u003c/a\u003e\u003cp\u003eTry it at: \u003ca href=\"https://echoreading.com\" rel=\"nofollow\"\u003ehttps://echoreading.com\u003c/a\u003e\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46849787\"\u003ehttps://news.ycombinator.com/item?id=46849787\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Audio on Hp300",
+      "link": "http://miod.online.fr/software/openbsd/stories/arcofi.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-01T21:56:14Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"http://miod.online.fr/software/openbsd/stories/arcofi.html\"\u003ehttp://miod.online.fr/software/openbsd/stories/arcofi.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46849775\"\u003ehttps://news.ycombinator.com/item?id=46849775\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Embedded AI usage controls and spend limits for your enterprise customers",
+      "link": "https://www.stigg.io/ai-usage-management",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-01T21:54:17Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.stigg.io/ai-usage-management\"\u003ehttps://www.stigg.io/ai-usage-management\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46849763\"\u003ehttps://news.ycombinator.com/item?id=46849763\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 2\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Smith – A visual control room for managing parallel coding agents",
+      "link": "https://trysmith.dev/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-01T21:53:44Z",
+      "description": "\n\u003cp\u003eI was running 3-5 Claude Code sessions in parallel using worktrees and tmux. I kept losing track of which agent needed input and which was stuck on permissions.\u003cp\u003eSo I built Smith: one screen to see all your agents, their status, and jump to whichever one needs you.\u003cp\u003eIf this sounds useful, sign up for early access.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46849757\"\u003ehttps://news.ycombinator.com/item?id=46849757\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Lily Programming Language",
+      "link": "https://lily-lang.org",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-01T21:53:12Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://lily-lang.org\"\u003ehttps://lily-lang.org\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46849753\"\u003ehttps://news.ycombinator.com/item?id=46849753\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Embedded AI usage controls and spend limits for your enterprise customers",
+      "link": "https://stigg-x.webflow.io/ai-usage-management",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-01T21:53:02Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://stigg-x.webflow.io/ai-usage-management\"\u003ehttps://stigg-x.webflow.io/ai-usage-management\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46849750\"\u003ehttps://news.ycombinator.com/item?id=46849750\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Magnetic core memory 128-byte USB drive",
+      "link": "https://www.tomshardware.com/pc-components/usb-flash-drives/researcher-builds-bizarre-128-byte-usb-drive-the-size-of-a-dinner-plate-using-ancient-pre-semiconductor-magnetic-core-memory-technology-data-disappears-once-it-is-read-requiring-special-handling",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-01T21:51:31Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.tomshardware.com/pc-components/usb-flash-drives/researcher-builds-bizarre-128-byte-usb-drive-the-size-of-a-dinner-plate-using-ancient-pre-semiconductor-magnetic-core-memory-technology-data-disappears-once-it-is-read-requiring-special-handling\"\u003ehttps://www.tomshardware.com/pc-components/usb-flash-drives/researcher-builds-bizarre-128-byte-usb-drive-the-size-of-a-dinner-plate-using-ancient-pre-semiconductor-magnetic-core-memory-technology-data-disappears-once-it-is-read-requiring-special-handling\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46849738\"\u003ehttps://news.ycombinator.com/item?id=46849738\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: OpenRAPP – AI agents autonomously evolve a world via GitHub PRs",
+      "link": "https://kody-w.github.io/openrapp/rappbook/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-01T21:51:05Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://kody-w.github.io/openrapp/rappbook/\"\u003ehttps://kody-w.github.io/openrapp/rappbook/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46849732\"\u003ehttps://news.ycombinator.com/item?id=46849732\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Making a Zig Agent Skill",
+      "link": "https://austinrude.com/blog/making-a-zig-agent-skill/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-01T21:50:59Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://austinrude.com/blog/making-a-zig-agent-skill/\"\u003ehttps://austinrude.com/blog/making-a-zig-agent-skill/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46849731\"\u003ehttps://news.ycombinator.com/item?id=46849731\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Iran summons families of exiled journalists to halt their activities",
+      "link": "https://www.iranintl.com/en/202602017863",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-01T21:47:38Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.iranintl.com/en/202602017863\"\u003ehttps://www.iranintl.com/en/202602017863\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46849715\"\u003ehttps://news.ycombinator.com/item?id=46849715\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 34\u003c/p\u003e\n\u003cp\u003e# Comments: 11\u003c/p\u003e\n"
+    },
+    {
+      "title": "Ask HN: How can I get decent internet speeds in my apartment?",
+      "link": "https://news.ycombinator.com/item?id=46849706",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-01T21:46:33Z",
+      "description": "\n\u003cp\u003eI feel like I’m going crazy.\u003cp\u003eI live in a dense metropolitan area (Hollywood, Los Angeles), surrounded on all sides by buildings with fiber and high-speed cable. Yet I can’t get any wired internet service in my small, old 5-unit building.\u003cp\u003eRight now I’m forced to use Verizon 5G Home Internet. Download speeds are fine, but latency is bad and upload speeds are abysmal (5 Mbps), which is a real problem for my work (large uploads, remote collaboration, etc).\u003cp\u003eThings I’ve tried:\u003cp\u003e- AT\u0026T / Frontier / other major players — none service my address\u003cp\u003e- Starry — does not service my address\u003cp\u003e- Spectrum — They claimed they service my address. The technician showed up and searched around the building for ~1 hour. Then said they’d need approval from their boss to install a box. The next day, their boss calls and says it won’t be possible — something about construction being too expensive / not feasible. (This is who recommended I try Starry)\u003cp\u003eAs far as I can tell, I have:\u003cp\u003e- No fiber\u003cp\u003e- No cable\u003cp\u003e- No DSL\u003cp\u003eIs there any realistic way to pressure or incentivize an ISP to wire a small building? Or is there a creative solution I’m overlooking?\u003cp\u003eIt feels absurd to have to move homes just because I’m stuck with cellular internet in 2026 in the middle of Los Angeles.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46849706\"\u003ehttps://news.ycombinator.com/item?id=46849706\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "The foundation powering modern AI agents",
+      "link": "https://news.ycombinator.com/item?id=46849704",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-01T21:46:21Z",
+      "description": "\n\u003cp\u003eafter 10+ years of building apps, I noticed something frustrating. every project started the same way.\u003cp\u003ebuilding login, signup, password reset, setting up payments and subscriptions, creating the admin dashboard, finally, the actual product.\u003cp\u003eI kept rebuilding the same foundation. and I kept making the same mistakes before remembering the lessons from previous projects.\u003cp\u003eso I built http://starterbase.dev. not a complex framework. a clean starting point that reflects how I actually structure production apps after years of learning what works.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46849704\"\u003ehttps://news.ycombinator.com/item?id=46849704\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Macmon: Sudoless performance monitoring for Apple processors. CPU / GPU / RAM us",
+      "link": "https://github.com/vladkens/macmon",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-01T21:42:04Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/vladkens/macmon\"\u003ehttps://github.com/vladkens/macmon\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46849675\"\u003ehttps://news.ycombinator.com/item?id=46849675\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "생성형 AI와 위키백과 편집: 2025년에 배운 것들",
+      "link": "https://news.hada.io/topic?id=26319",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-02T05:32:49+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e위키에듀케이션은 2025년 동안 \u003cstrong\u003e생성형 AI(ChatGPT 등)\u003c/strong\u003e 가 위키백과 편집에 미치는 영향을 체계적으로 조사함\u003c/li\u003e\n\u003cli\u003eAI 탐지 도구 \u003cstrong\u003ePangram\u003c/strong\u003e을 활용해 2022년 이후 작성된 3,078개 문서를 분석한 결과, \u003cstrong\u003e178개 문서가 AI 작성으로 의심\u003c/strong\u003e되었으며 그중 \u003cstron...\u003c/p\u003e"
+    },
+    {
+      "title": "사고의 외주화",
+      "link": "https://news.hada.io/topic?id=26317",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-02T04:32:57+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e대규모 언어 모델(LLM)\u003c/strong\u003e 사용이 인간의 인지 능력을 약화시킬 수 있다는 우려를 중심으로, 어떤 사고 활동을 기계에 맡겨서는 안 되는지를 논의함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e개인적 의사소통과 글쓰기\u003c/strong\u003e에서 LLM을 사용하는 것은 표현의 진정성과 신뢰를 훼손하며, 인간의 사고력과 자기표현 ...\u003c/p\u003e"
+    },
+    {
+      "title": "시위자 식별에 ICE 앱 ‘Mobile Fortify’ 사용, Global Entry·PreCheck 자격 박탈 발생",
+      "link": "https://news.hada.io/topic?id=26315",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-02T03:37:35+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eICE가 ‘Mobile Fortify’ 앱을 사용해 얼굴과 지문을 비접촉 방식으로 스캔\u003c/strong\u003e, 개인의 이름과 신상 정보를 즉시 조회하는 사례가 법원 문서에서 드러남\u003c/li\u003e\n\u003cli\u003e이러한 \u003cstrong\u003e식별 행위 이후 Global Entry와 TSA PreCheck 자격이 취소되는 사례\u003c/strong\u003e가 보고되며, 신뢰 여행자 프로그램...\u003c/p\u003e"
+    },
+    {
+      "title": "Nvidia의 10년간 노력으로 Shield TV를 가장 오래 업데이트된 안드로이드 기기로 만든 과정",
+      "link": "https://news.hada.io/topic?id=26314",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-02T03:34:35+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eNvidia Shield TV\u003c/strong\u003e는 2015년 출시 이후 10년 가까이 지속적인 \u003cstrong\u003e소프트웨어 업데이트\u003c/strong\u003e를 받아온 안드로이드 기반 셋톱박스임\u003c/li\u003e\n\u003cli\u003e당시 대부분의 안드로이드 기기가 1~2회 업데이트에 그쳤던 상황에서, \u003cstrong\u003e장기 지원 정책\u003c/strong\u003e은 매우 이례적이었음\u003c/li\u003e\n\u003cli\u003eNvid...\u003c/p\u003e"
+    },
+    {
+      "title": "우리는 ipinfo를 집에서 사용한다, 또는 지연 시간을 이용해 CLI에서 IP의 위치를 찾는 방법",
+      "link": "https://news.hada.io/topic?id=26313",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-02T02:32:56+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e지연 시간(latency)\u003c/strong\u003e 을 활용해 IP 주소를 \u003cstrong\u003e국가·주·도시 단위로 추정\u003c/strong\u003e할 수 있는 \u003cstrong\u003eCLI 도구\u003c/strong\u003e가 개발됨\u003c/li\u003e\n\u003cli\u003e이 도구는 \u003cstrong\u003eGlobalping 네트워크의 3000개 이상 프로브\u003c/strong\u003e를 이용해, 각 IP에 대해 \u003cstrong\u003eping과 traceroute 측정\u003c/strong\u003e을 수...\u003c/p\u003e"
+    },
+    {
+      "title": "드라이런(dry-run) 옵션의 장점에 대하여",
+      "link": "https://news.hada.io/topic?id=26312",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-02T01:33:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e보고서 생성 애플리케이션 개발 과정에서 \u003cstrong\u003e–dry-run 옵션\u003c/strong\u003e을 추가해 실행 결과를 시뮬레이션할 수 있도록 한 사례\u003c/li\u003e\n\u003cli\u003e이 옵션은 실제 변경 없이 어떤 작업이 수행될지를 출력해, \u003cstrong\u003e안전한 테스트와 빠른 피드백\u003c/strong\u003e을 가능하게 함\u003c/li\u003e\n\u003cli\u003e개발자는 이를 통해 설정과 접근성...\u003c/p\u003e"
+    },
+    {
+      "title": "ThorVG 1.0 릴리즈 - 경량 크로스플랫폼 벡터 그래픽 엔진",
+      "link": "https://news.hada.io/topic?id=26311",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-02T00:40:29+09:00",
+      "description": "\u003cp\u003ev0에서 v1으로의 세대 전환 - 단순한 기능 추가를 넘어, 렌더링 품질과 성능 향상, 그리고 실제 플랫폼과의 통합성 개선에 초점을 둔 릴리즈.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e[주요 업데이트 사항]\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e렌더링 \u0026amp; 시각 품질\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e텍스트 렌더링 개선 (더 정밀한 레이아웃 처리)\u003c/li\u003e\n\u003cli\u003e시"
+    },
+    {
+      "title": "노트와 링크를 모으지만 실행으로 옮기기 어려운 문제에 대한 토론",
+      "link": "https://news.hada.io/topic?id=26310",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-02T00:32:49+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e개인이 \u003cstrong\u003e노트나 링크를 과도하게 저장\u003c/strong\u003e하지만 이를 실제 행동으로 연결하지 못하는 현상에 대한 질문 제기\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e정보 수집 습관\u003c/strong\u003e이 생산성 향상보다 오히려 실행 지연으로 이어지는 사례 공유\u003c/li\u003e\n\u003cli\u003e여러 사용자가 \u003cstrong\u003e지식 관리 도구\u003c/strong\u003e나 워크플로우를 사용...\u003c/p\u003e"
+    },
+    {
+      "title": "자동 프로그래밍",
+      "link": "https://news.hada.io/topic?id=26309",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-01T23:33:09+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eAI 보조를 활용한 소프트웨어 작성 과정\u003c/strong\u003e을 ‘자동 프로그래밍’이라 정의하며, 이는 곧 일반적인 개발 방식으로 자리 잡을 것이라는 관점\u003c/li\u003e\n\u003cli\u003e동일한 \u003cstrong\u003eLLM(대형 언어 모델)\u003c/strong\u003e 을 사용하더라도, 인간의 \u003cstrong\u003e직관·설계·지속적 개입\u003c/strong\u003e에 따라 결과가 크게 달라짐...\u003c/p\u003e"
+    },
+    {
+      "title": "Wallace와 Gromit을 위한 맞춤 서체 Buttered Crumpet",
+      "link": "https://news.hada.io/topic?id=26308",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-01T22:32:43+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eAardman의 대표 캐릭터 \u003cstrong\u003eWallace \u0026amp; Gromit\u003c/strong\u003e을 위해 제작된 새로운 맞춤 서체 \u003cstrong\u003eButtered Crumpet\u003c/strong\u003e은 영화, 인쇄, 디지털 전반에서 일관된 시각 언어를 제공\u003c/li\u003e\n\u003cli\u003e서체는 \u003cstrong\u003e따뜻하고 개성 있는 톤\u003c/strong\u003e을 목표로 하며, Oswald Cooper의 Cooper Black 드로잉에서...\u003c/p\u003e"
+    },
+    {
+      "title": "We're celebrating Black history, culture and creativity.",
+      "link": "https://blog.google/company-news/outreach-and-initiatives/creating-opportunity/black-history-month-2026/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-01T11:06:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/the-art-of-hip-hop-beat-making-.max-600x600.format-webp.webp\"\u003eWe’re celebrating Black History Month by highlighting the creators, developers and businesses at the heart of the Black community, and we’re launching new features and c…"
+    }
+  ],
+  "generatedAt": "2026-02-02T07:09:57.724495744+09:00"
+}
