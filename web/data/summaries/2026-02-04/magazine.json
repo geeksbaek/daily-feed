@@ -1,0 +1,455 @@
+{
+  "date": "2026-02-04",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2026년 2월 3일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** 일론 머스크의 xAI가 SpaceX에 1.25조 달러에 인수되며 '우주적' AI 인프라 통합이 시작되었고, 애플과 MS는 '에이전틱 코딩' 시대를 본격화했습니다.\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### 🚀 SpaceX, xAI 전격 인수: 1.25조 달러 규모의 'AI + 우주' 결합\n일론 머스크의 우주 기업 SpaceX가 그의 인공지능 기업 xAI를 1조 2,500억 달러(약 1,700조 원) 규모의 전액 주식 교환 방식으로 인수했습니다. 이는 단순한 기업 합병을 넘어, SpaceX의 스타링크(통신) 및 태양광 에너지 인프라와 xAI의 대규모 컴퓨팅(Dojo/Colossus) 능력을 수직 계열화하려는 전략으로 풀이됩니다.\n\n*   **배경:** xAI는 이미 멤피스 데이터센터 확장을 위해 SpaceX의 기술적 지원을 받고 있었습니다.\n*   **전망:** 이번 합병으로 '지구상에서 가장 강력한 AI'와 '지구 밖으로 나가는 유일한 운송 수단'이 결합하며, 자율주행(Tesla)을 제외한 머스크의 모든 기술 자산이 하나의 거대한 생태계로 묶이게 되었습니다.\n\n\u003e **Key Point:** 데이터센터 전력 확보와 글로벌 통신망, 그리고 AI 모델 학습이 하나의 파이프라인으로 통합되는 '초거대 기술 독점체'의 탄생입니다. [^20][^36][^51]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. 코딩의 미래는 '에이전트(Agentic)'다\n애플과 마이크로소프트가 동시에 '에이전트 기반 코딩'을 강화하고 있습니다. 단순 자동 완성을 넘어, 개발자의 의도를 파악하고 스스로 작업을 수행하는 단계로 진입했습니다.\n- **What:** 애플은 **Xcode 26.3** 업데이트를 통해 '에이전틱 코딩' 기능을 해제했고[^2], VS Code는 2026년 1월 업데이트(v1.109)로 에디팅 기능을 재정의했습니다[^1]. 마이크로소프트 내부에서는 **Claude Code**가 급속도로 확산 중입니다[^21].\n- **Why:** 개발 생산성의 임계점을 돌파하기 위해, 도구가 단순 보조를 넘어 '동료' 수준의 자율성을 갖추기 시작했습니다.\n- **Impact:** 개발 속도는 빨라지겠지만, 앤스로픽(Anthropic)의 연구에 따르면 이러한 AI 도구가 주니어 개발자의 학습 기회를 박탈하고 장기적인 역량 저하를 초래할 수 있다는 경고도 제기됩니다[^16].\n\n### 2. 보안 경보: 개발자 도구와 소셜 플랫폼의 위기\n개발자들이 신뢰하는 도구들이 잇따라 공격받고 있습니다. 공급망 보안과 API 관리에 비상이 걸렸습니다.\n- **What:** 국민 에디터인 **Notepad++**가 국가 지원 해커에 의해 탈취되어 악성코드가 심어졌으며[^24], AI 소셜 네트워크 **Moltbook**에서는 해킹으로 인해 150만 개의 API 키가 유출되었습니다[^11].\n- **Why:** 개발자 도구는 시스템 권한이 높고, AI 서비스는 고가의 API 키를 다루기 때문에 해커들의 집중 타깃이 되고 있습니다.\n- **Impact:** 즉각적인 Notepad++ 업데이트 및 사용 중인 모든 AI 서비스의 API 키 재발급(Rotation)이 필요합니다.\n\n### 3. 오픈소스 AI 생태계의 반격과 진화\nDeepSeek 사태 1년 후, 오픈소스 진영은 효율성과 지역화(Localization)로 승부하고 있습니다.\n- **What:** 허깅페이스는 DeepSeek 이후 글로벌 오픈소스 생태계가 'AI+'로 진화했음을 회고했습니다[^5]. H Company는 UI 현지화에 특화된 **Holo2** 모델을 공개했고[^4], 인텔(Intel)은 엔비디아 독주를 막기 위해 GPU 시장 진입을 선언했습니다[^48].\n- **Why:** 폐쇄형 모델(Closed Source)의 비용 부담을 줄이고, 특정 언어나 UI에 특화된 경량화 모델에 대한 수요가 폭발하고 있습니다.\n- **Impact:** 범용 AGI 경쟁과 별개로, 특정 도메인(UI, 코딩, 로컬 언어)에 특화된 '작고 강한' 모델들이 실무에 더 빠르게 도입될 것입니다.\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **Sandy** | 답답한 AI 에이전트를 개선하기 위해 개발자가 직접 만든, 매번 생각을 정리하는 AI 에이전트 [^10] |\n| **Tool** | **Termux** | 안드로이드에서 리눅스 환경을 완벽하게 구동하는 터미널 에뮬레이터 (패키지 확장성 우수) [^19] |\n| **Tool** | **Hans** | ICMP(핑) 패킷을 통해 IP 트래픽을 터널링하는 독특한 네트워크 도구 [^34] |\n| **Tool** | **Minimal** | CVE 취약점을 최소화하여 보안성을 극대화한 컨테이너 이미지 컬렉션 [^25] |\n| **Guide** | **Claude Concepts** | Claude 사용법과 개념을 완벽하게 정리한 가이드 (GitHub) [^39] |\n| **Paper** | **Training Design** | 텍스트-이미지 모델 학습 시 절제(Ablation) 연구를 통해 얻은 교훈과 디자인 원칙 [^6] |\n| **Tip** | **Python Regex** | 파이썬 정규식에서 `^ $` 대신 `\\A \\z`를 써야 하는 보안적 이유 [^42] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n\n#### 💻 개발 \u0026 인프라\n*   **Git 에이전트 식별**: Git 커밋 시 AI 에이전트의 정체성을 명확히 하는 표준 제안 [^46]\n*   **One Ego, Any Model**: 멀티 AI 모델 시대를 위한 맥락(Context) 지갑 서비스 [^18]\n*   **Sudo의 아버지**: 30년 넘게 `sudo` 명령어를 유지보수해 온 Todd C. Miller 인터뷰 [^17]\n*   **Cloudflare R2**: 로컬 업로드 기능 지원으로 글로벌 업로드 성능 개선 [^56]\n*   **GitHub Octoverse**: 가장 빠르게 성장하는 도구들을 통해 본 소프트웨어 개발 트렌드 [^55]\n*   **Atlassian 팀워크**: 팀 소통 오류 해결법[^53] 및 파이프라인 속도 향상 팁[^54]\n\n#### 🍎 애플 \u0026 모바일\n*   **Time Machine 버그**: 애플의 최신 Tahoe 업데이트가 또다시 타임머신 백업을 망가뜨렸다는 보고 [^28]\n*   **iOS SDK 정책**: 향후 앱 제출 시 요구되는 최소 SDK 버전 가이드라인 발표 [^31]\n*   **Chrome 업데이트**: 안드로이드[^7], 데스크톱(Stable)[^8], ChromeOS(LTS)[^9] 보안 및 기능 패치 배포.\n\n#### 🔬 과학 \u0026 기술 탐구\n*   **생체전기 협력**: 세포들이 생체전기를 이용해 집단 의사결정을 내린다는 연구 결과 [^26]\n*   **지구 자기장 미스터리**: 맨틀 속 거대한 암석 덩어리(Blob)가 지구 자기장에 영향을 미침 [^43]\n*   **만델브로의 정체**: 프랙탈의 아버지 베누아 만델브로가 '고슴도치'였는지 '여우'였는지 분석한 논문 [^44]\n*   **빛의 속도는 없다**: 물리학적 관점에서 '빛의 속도' 개념에 대한 도발적 고찰 [^40]\n*   **달리기와 명상**: 경쟁 없는 장거리 달리기가 웰빙과 자기 조절에 미치는 명상적 효과 [^35]\n\n#### 🌐 사회 \u0026 이슈\n*   **TSA 수수료 불법**: 신분증 없이 비행 시 부과하던 45달러 수수료는 불법이라는 판결 [^15]\n*   **미국 해상 풍력**: 중단되었던 해상 풍력 발전 공사가 전면 재개 명령을 받음 [^13]\n*   **Xikipedia**: 위키피디아를 틱톡/릴스처럼 '둠스크롤' 할 수 있게 만든 사이트 [^22]\n*   **Anki 소유권 이전**: 암기 도구 Anki의 소유권이 AnkiHub로 넘어감 [^14]\n*   **프랑스 vs X**: 프랑스의 X(트위터) 규제가 보여주는 표현의 자유 논쟁 [^37]\n*   **OpenAI Sora**: 비디오 생성 AI 'Sora'의 피드 철학 공개 [^3]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘 가장 눈에 띄는 흐름은 '**통합'과 '자율**'입니다. 머스크는 하드웨어(로켓)와 소프트웨어(AI)를 물리적으로 통합했고, 개발 도구들은 코드를 대신 짜주는 자율 에이전트로 진화하고 있습니다. 하지만 Notepad++ 해킹 사례에서 보듯, 우리가 의존하는 도구의 신뢰성은 언제든 무너질 수 있습니다. 편리함(AI 코딩)을 취하되, 보안(API 관리)과 기본기(직접 학습)를 놓치지 않는 균형 감각이 필요한 시점입니다.\n\n---\n\n[^1]: January 2026 Insiders (version 1.109) - https://code.visualstudio.com/updates/v1_109\n[^2]: Xcode 26.3 unlocks the power of agentic coding - https://www.apple.com/newsroom/2026/02/xcode-26-point-3-unlocks-the-power-of-agentic-coding/\n[^3]: The Sora feed philosophy - https://openai.com/index/sora-feed-philosophy\n[^4]: H Company's new Holo2 model takes the lead in UI Localization - https://huggingface.co/blog/Hcompany/introducing-holo2-235b-a22b\n[^5]: The Future of the Global Open-Source AI Ecosystem: From DeepSeek to AI+ - https://huggingface.co/blog/huggingface/one-year-since-the-deepseek-moment-blog-3\n[^6]: Training Design for Text-to-Image Models: Lessons from Ablations - https://huggingface.co/blog/Photoroom/prx-part2\n[^7]: Chrome for Android Update - http://chromereleases.googleblog.com/2026/02/chrome-for-android-update.html\n[^8]: Stable Channel Update for Desktop - http://chromereleases.googleblog.com/2026/02/stable-channel-update-for-desktop.html\n[^9]: Long Term Support Channel Update for ChromeOS - http://chromereleases.googleblog.com/2026/02/long-term-support-channel-update-for.html\n[^10]: Show GN: Sandy - AI 에이전트가 매번 생각하는게 답답해서 만들었습니다 - https://news.hada.io/topic?id=26372\n[^11]: 몰트북 해킹: AI 소셜 네트워크에서 150만 개의 API 키 노출 - https://news.hada.io/topic?id=26371\n[^12]: 개발자의 직관과 읽기 좋은 코드, 그리고 뇌과학 - https://news.hada.io/topic?id=26369\n[^13]: 미국 해상 풍력 발전 공사 전면 재개 명령 - https://news.hada.io/topic?id=26368\n[^14]: Anki 소유권, AnkiHub로 이전 - https://news.hada.io/topic?id=26367\n[^15]: TSA의 ‘신분증 없이 비행 시 45달러 수수료’는 불법 - https://news.hada.io/topic?id=26366\n[^16]: AI 코딩 도구가 개발자 학습을 방해한다, Anthropic 연구 발견 - https://news.hada.io/topic?id=26364\n[^17]: Todd C. Miller – 30년 넘게 Sudo를 유지보수한 개발자 - https://news.hada.io/topic?id=26363\n[^18]: Show GN: One Ego, Any Model – 멀티 AI 시대를 위한 맥락 지갑 - https://news.hada.io/topic?id=26362\n[^19]: Termux - 다양한 패키지로 확장 가능한 Android용 터미널 에뮬레이터 - https://news.hada.io/topic?id=26361\n[^20]: xAI가 SpaceX에 합류 - https://news.hada.io/topic?id=26360\n[^21]: Claude Code가 마이크로소프트 내부에서 급속히 확산 중 - https://news.hada.io/topic?id=26359\n[^22]: 위키피디아를 소셜 미디어 피드처럼 ‘둠스크롤’할 수 있는 Xikipedia - https://news.hada.io/topic?id=26358\n[^23]: 에이전틱 결제 프로토콜 지도: 왜 난립하는가 - https://news.hada.io/topic?id=26357\n[^24]: Notepad++가 국가 지원 해커에 의해 탈취됨 - https://news.hada.io/topic?id=26355\n[^25]: Minimal - CVE 취약점이 최소화된 컨테이너 이미지 컬렉션 - https://news.hada.io/topic?id=26354\n[^26]: 세포는 ‘생체전기’를 이용해 협력하고 집단 결정을 내린다 - https://news.hada.io/topic?id=26353\n[^27]: PF 매뉴얼북 4판 (The Book of PF, 4th Edition) - https://news.hada.io/topic?id=26352\n[^28]: Apple이 Tahoe 업데이트에서 Time Machine을 다시 망가뜨림 - https://news.hada.io/topic?id=26351\n[^29]: Draw with the World’s Wind: Artist Jitish Kallat makes the invisible visible - https://blog.google/company-news/outreach-and-initiatives/arts-culture/wind-study-hilbert-curve/\n[^30]: Here’s how to tune into the Winter Olympics with Google - https://blog.google/products-and-platforms/products/search/winter-olympics-2026/\n[^31]: Upcoming SDK minimum requirements - https://developer.apple.com/news/?id=ueeok6yw\n[^32]: HackNews the Hypocrisy - https://news.ycombinator.com/item?id=46877908\n[^33]: Do you think .md domains will become popular? - https://news.ycombinator.com/item?id=46877900\n[^34]: Hans – IP over ICMP - https://code.gerade.org/hans/\n[^35]: Running is my meditation (2024) [pdf] - https://research-repository.rmit.edu.au/articles/thesis/_Running_is_my_meditation_an_investigation_of_the_meditative_qualities_of_non-competitive_long-distance_running_and_their_role_in_the_self-regulation_of_wellbeing/27599559/1/files/50795373.pdf\n[^36]: Elon Musk's SpaceX Officially Acquires Elon Musk's xAI - https://techcrunch.com/2026/02/02/elon-musk-spacex-acquires-xai-data-centers-space-merger/\n[^37]: The Digital Bastille: What France's War with X Tells Us About Free Speech - https://www.sebs.website/blog/the-digital-bastille\n[^38]: Intel Panther Lake Shows Strong Linux CPU Performance and Power Efficiency - https://www.phoronix.com/review/intel-core-ultra-x7-358h-linux\n[^39]: Complete Guide to Claude Concepts - https://github.com/luongnv89/claude-howto/blob/main/claude_concepts_guide.md\n[^40]: No Such Thing as Speed of Light - http://www.russbishop.net/no-such-thing-as-speed-of-light#61429\n[^41]: LLM Quantization and NVFP4 - http://ternarysearch.blogspot.com/2026/02/llm-quantization-and-nvfp4.html\n[^42]: Use \"\\A \\z\", not \"^ $\" with Python regular expressions - https://sethmlarson.dev/use-backslash-A-and-z-not-%5E-and-$-with-python-regular-expressions\n[^43]: Giant 'blobs' of rock influence Earth's magnetic field - https://theconversation.com/how-giant-blobs-of-rock-have-influenced-earths-magnetic-field-for-millions-of-years-new-research-272378\n[^44]: Was Benoit Mandelbrot a hedgehog or a fox? - https://arxiv.org/abs/2602.01122\n[^45]: Probabilities - https://arxiv.org/abs/2601.18853\n[^46]: Agent Identity for Git Commits - https://justin.poehnelt.com/posts/agent-identity-git-commits/\n[^47]: CL-32 latest firmware [video] - https://www.youtube.com/watch?v=UpiWlSyU1A4\n[^48]: Intel will start making GPUs - https://techcrunch.com/2026/02/03/intel-will-start-making-gpus-a-market-dominated-by-nvidia/\n[^49]: CL-32 - https://cl-32.com/\n[^50]: Sam Altman Hires Dylan Scandinaro as Head of Preparedness - https://twitter.com/sama/status/2018800541716107477\n[^51]: SpaceX Acquires xAI in $1.25T All-Stock Deal - https://www.cnbc.com/2026/02/02/elon-musk-spacex-xai-ipo.html\n[^52]: 5 micro-challenges to make your team stronger this week - https://www.atlassian.com/blog/teamwork/micro-challenges-to-make-your-team-stronger\n[^53]: How to get your team unstuck from constant miscommunication - https://www.atlassian.com/blog/loom/how-to-get-your-team-unstuck-from-constant-miscommunication\n[^54]: Power up your pipeline workflow with 24x and 32x step sizes - https://www.atlassian.com/blog/bitbucket/power-up-your-pipeline-workflow-with-24x-and-32x-step-sizes\n[^55]: What the fastest-growing tools reveal about how software is being built - https://github.blog/news-insights/octoverse/what-the-fastest-growing-tools-reveal-about-how-software-is-being-built/\n[^56]: Improve global upload performance with R2 Local Uploads - https://blog.cloudflare.com/r2-local-uploads/\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **January 2026 Insiders (version 1.109)**\n   - 출처: Visual Studio Code - Code Editing. Redefined.\n   - 링크: https://code.visualstudio.com/updates/v1_109\n\n2. **Xcode 26.3 unlocks the power of agentic coding\n**\n   - 출처: Apple Newsroom\n   - 링크: https://www.apple.com/newsroom/2026/02/xcode-26-point-3-unlocks-the-power-of-agentic-coding/\n\n3. **The Sora feed philosophy**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/sora-feed-philosophy\n\n4. **H Company's new Holo2 model takes the lead in UI Localization**\n   - 출처: Hugging Face - Blog\n   - 링크: https://huggingface.co/blog/Hcompany/introducing-holo2-235b-a22b\n\n5. **The Future of the Global Open-Source AI Ecosystem: From DeepSeek to AI+**\n   - 출처: Hugging Face - Blog\n   - 링크: https://huggingface.co/blog/huggingface/one-year-since-the-deepseek-moment-blog-3\n\n6. **Training Design for Text-to-Image Models: Lessons from Ablations**\n   - 출처: Hugging Face - Blog\n   - 링크: https://huggingface.co/blog/Photoroom/prx-part2\n\n7. **Chrome for Android Update**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2026/02/chrome-for-android-update.html\n\n8. **Stable Channel Update for Desktop**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2026/02/stable-channel-update-for-desktop.html\n\n9. **Long Term Support Channel Update for ChromeOS**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2026/02/long-term-support-channel-update-for.html\n\n10. **Show GN: Sandy - AI 에이전트가 매번 생각하는게 답답해서 만들었습니다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26372\n\n11. **몰트북 해킹: AI 소셜 네트워크에서 150만 개의 API 키 노출**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26371\n\n12. **개발자의 직관과 읽기 좋은 코드, 그리고 뇌과학: 우리는 왜 특정 코드에 편안함을 느낄까?**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26369\n\n13. **미국 해상 풍력 발전 공사 전면 재개 명령**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26368\n\n14. **Anki 소유권, AnkiHub로 이전**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26367\n\n15. **TSA의 ‘신분증 없이 비행 시 45달러 수수료’는 불법**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26366\n\n16. **AI 코딩 도구가 개발자 학습을 방해한다, Anthropic 연구 발견**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26364\n\n17. **Todd C. Miller – 30년 넘게 Sudo를 유지보수한 개발자**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26363\n\n18. **Show GN: One Ego, Any Model – 멀티 AI 시대를 위한 맥락 지갑**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26362\n\n19. **Termux - 다양한 패키지로 확장 가능한 Android용 터미널 에뮬레이터**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26361\n\n20. **xAI가 SpaceX에 합류**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26360\n\n21. **Claude Code가 마이크로소프트 내부에서 급속히 확산 중**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26359\n\n22. **위키피디아를 소셜 미디어 피드처럼 ‘둠스크롤’할 수 있는 Xikipedia**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26358\n\n23. **에이전틱 결제 프로토콜 지도: 왜 난립하는가**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26357\n\n24. **Notepad++가 국가 지원 해커에 의해 탈취됨**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26355\n\n25. **Minimal - CVE 취약점이 최소화된 컨테이너 이미지 컬렉션**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26354\n\n26. **세포는 ‘생체전기’를 이용해 협력하고 집단 결정을 내린다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26353\n\n27. **PF 매뉴얼북 4판 (The Book of PF, 4th Edition)**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26352\n\n28. **Apple이 Tahoe 업데이트에서 Time Machine을 다시 망가뜨림**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26351\n\n29. **Draw with the World’s Wind: Artist Jitish Kallat makes the invisible visible**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/company-news/outreach-and-initiatives/arts-culture/wind-study-hilbert-curve/\n\n30. **Here’s how to tune into the Winter Olympics with Google**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/products-and-platforms/products/search/winter-olympics-2026/\n\n31. **Upcoming SDK minimum requirements**\n   - 출처: Latest News - Apple Developer\n   - 링크: https://developer.apple.com/news/?id=ueeok6yw\n\n32. **HackNews the Hypocrisy**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=46877908\n\n33. **Do you think .md domains will become popular?**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=46877900\n\n34. **Hans – IP over ICMP**\n   - 출처: Hacker News\n   - 링크: https://code.gerade.org/hans/\n\n35. **Running is my meditation (2024) [pdf]**\n   - 출처: Hacker News\n   - 링크: https://research-repository.rmit.edu.au/articles/thesis/_Running_is_my_meditation_an_investigation_of_the_meditative_qualities_of_non-competitive_long-distance_running_and_their_role_in_the_self-regulation_of_wellbeing/27599559/1/files/50795373.pdf\n\n36. **Elon Musk's SpaceX Officially Acquires Elon Musk's xAI**\n   - 출처: Hacker News\n   - 링크: https://techcrunch.com/2026/02/02/elon-musk-spacex-acquires-xai-data-centers-space-merger/\n\n37. **The Digital Bastille: What France's War with X Tells Us About Free Speech**\n   - 출처: Hacker News\n   - 링크: https://www.sebs.website/blog/the-digital-bastille\n\n38. **Intel Panther Lake Shows Strong Linux CPU Performance and Power Efficiency**\n   - 출처: Hacker News\n   - 링크: https://www.phoronix.com/review/intel-core-ultra-x7-358h-linux\n\n39. **Complete Guide to Claude Concepts**\n   - 출처: Hacker News\n   - 링크: https://github.com/luongnv89/claude-howto/blob/main/claude_concepts_guide.md\n\n40. **No Such Thing as Speed of Light**\n   - 출처: Hacker News\n   - 링크: http://www.russbishop.net/no-such-thing-as-speed-of-light#61429\n\n41. **LLM Quantization and NVFP4**\n   - 출처: Hacker News\n   - 링크: http://ternarysearch.blogspot.com/2026/02/llm-quantization-and-nvfp4.html\n\n42. **Use \"\\A \\z\", not \"^ $\" with Python regular expressions – Seth Larson**\n   - 출처: Hacker News\n   - 링크: https://sethmlarson.dev/use-backslash-A-and-z-not-%5E-and-$-with-python-regular-expressions\n\n43. **Giant 'blobs' of rock influence Earth's magnetic field**\n   - 출처: Hacker News\n   - 링크: https://theconversation.com/how-giant-blobs-of-rock-have-influenced-earths-magnetic-field-for-millions-of-years-new-research-272378\n\n44. **Was Benoit Mandelbrot a hedgehog or a fox?**\n   - 출처: Hacker News\n   - 링크: https://arxiv.org/abs/2602.01122\n\n45. **Probabilities**\n   - 출처: Hacker News\n   - 링크: https://arxiv.org/abs/2601.18853\n\n46. **Agent Identity for Git Commits**\n   - 출처: Hacker News\n   - 링크: https://justin.poehnelt.com/posts/agent-identity-git-commits/\n\n47. **CL-32 latest firmware [video]**\n   - 출처: Hacker News\n   - 링크: https://www.youtube.com/watch?v=UpiWlSyU1A4\n\n48. **Intel will start making GPUs**\n   - 출처: Hacker News\n   - 링크: https://techcrunch.com/2026/02/03/intel-will-start-making-gpus-a-market-dominated-by-nvidia/\n\n49. **CL-32**\n   - 출처: Hacker News\n   - 링크: https://cl-32.com/\n\n50. **Sam Altman Hires Dylan Scandinaro as Head of Preparedness**\n   - 출처: Hacker News\n   - 링크: https://twitter.com/sama/status/2018800541716107477\n\n51. **SpaceX Acquires xAI in $1.25T All-Stock Deal**\n   - 출처: Hacker News\n   - 링크: https://www.cnbc.com/2026/02/02/elon-musk-spacex-xai-ipo.html\n\n52. **5 micro-challenges to make your team stronger this week**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/teamwork/micro-challenges-to-make-your-team-stronger\n\n53. **How to get your team unstuck from constant miscommunication**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/loom/how-to-get-your-team-unstuck-from-constant-miscommunication\n\n54. **Power up your pipeline workflow with 24x and 32x step sizes**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/bitbucket/power-up-your-pipeline-workflow-with-24x-and-32x-step-sizes\n\n55. **What the fastest-growing tools reveal about how software is being built**\n   - 출처: GitHub Blog\n   - 링크: https://github.blog/news-insights/octoverse/what-the-fastest-growing-tools-reveal-about-how-software-is-being-built/\n\n56. **Improve global upload performance with R2 Local Uploads**\n   - 출처: Cloudflare Blog\n   - 링크: https://blog.cloudflare.com/r2-local-uploads/\n\n\n",
+  "articles": [
+    {
+      "title": "January 2026 Insiders (version 1.109)",
+      "link": "https://code.visualstudio.com/updates/v1_109",
+      "source": "Visual Studio Code - Code Editing. Redefined.",
+      "category": "tech",
+      "publishedAt": "2026-02-04T17:00:00Z",
+      "description": "\n      \u003cp\u003eLearn what is new in the Visual Studio Code January 2026 Release (1.109).\u003c/p\u003e\n      \u003cp\u003e\u003ca href=\"https://code.visualstudio.com/updates/v1_109\"\u003eRead the full article\u003c/a\u003e\u003c/p\u003e\n    "
+    },
+    {
+      "title": "Xcode 26.3 unlocks the power of agentic coding\n",
+      "link": "https://www.apple.com/newsroom/2026/02/xcode-26-point-3-unlocks-the-power-of-agentic-coding/",
+      "source": "Apple Newsroom",
+      "category": "tech",
+      "publishedAt": "2026-02-03T17:59:16.02Z",
+      "description": "Xcode 26.3 introduces support for agentic coding, a new way in Xcode for developers to build apps, powered by coding agents from Anthropic and OpenAI."
+    },
+    {
+      "title": "The Sora feed philosophy",
+      "link": "https://openai.com/index/sora-feed-philosophy",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2026-02-03T00:00:00Z",
+      "description": "Discover the Sora feed philosophy—built to spark creativity, foster connections, and keep experiences safe with personalized recommendations, parental controls, and strong guardrails."
+    },
+    {
+      "title": "H Company's new Holo2 model takes the lead in UI Localization",
+      "link": "https://huggingface.co/blog/Hcompany/introducing-holo2-235b-a22b",
+      "source": "Hugging Face - Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-03T17:40:14Z"
+    },
+    {
+      "title": "The Future of the Global Open-Source AI Ecosystem: From DeepSeek to AI+",
+      "link": "https://huggingface.co/blog/huggingface/one-year-since-the-deepseek-moment-blog-3",
+      "source": "Hugging Face - Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-03T15:03:19Z"
+    },
+    {
+      "title": "Training Design for Text-to-Image Models: Lessons from Ablations",
+      "link": "https://huggingface.co/blog/Photoroom/prx-part2",
+      "source": "Hugging Face - Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-03T11:25:53Z"
+    },
+    {
+      "title": "Chrome for Android Update",
+      "link": "http://chromereleases.googleblog.com/2026/02/chrome-for-android-update.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2026-02-03T12:45:00-08:00",
+      "description": "\u003cp\u003e\u0026nbsp;Hi, everyone! We've just released Chrome 144 (144.0.7559.132) for Android. It'll become\u0026nbsp;\u003ca href=\"https://play.google.com/store/apps/details?id=com.android.chrome\"\u003eavailable on Google Play\u003c/a\u003e\u0026nbsp;over the next few days.\u0026nbsp;\u003c/p\u003e\u003cp\u003eThis release includes stability and performance improvements. You can see a full list of the changes in the\u0026nbsp;\u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/144.0.7559.109..144.0.7559.132?pretty=fuller\u0026amp;n=10000\"\u003eGit log.\u003c/a\u003e\u0026nbsp;If you find a new issue, please let us know by\u0026nbsp;\u003ca href=\"https://code.google.com/p/chromium/issues/entry?template=Android%20Issue\"\u003efiling a bug\u003c/a\u003e.\u003c/p\u003e\u003cdiv\u003e\u003cbr /\u003e\u003c/div\u003e\u003cdiv\u003eAndroid releases contain the same security fixes as their corresponding\u0026nbsp;\u003ca href=\"https://chromereleases.googleblog.com/2026/02/stable-channel-update-for-desktop.html\"\u003eDesktop releases\u003c/a\u003e\u0026nbsp;(Windows \u0026amp; Mac: 144.0.7559.132/.133, Linux: 144.0.7559.132) unless otherwise noted.\u003c/div\u003e\u003cdiv\u003e\u003cdiv\u003e\u003cbr /\u003e\u003c/div\u003e\u003cdiv\u003e\u003cdiv\u003eKrishna Govind\u003c/div\u003e\u003cdiv\u003e\u003ca href=\"https://www.google.com/chrome/\"\u003eGoogle Chrome\u003c/a\u003e\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e"
+    },
+    {
+      "title": "Stable Channel Update for Desktop",
+      "link": "http://chromereleases.googleblog.com/2026/02/stable-channel-update-for-desktop.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2026-02-03T12:43:00-08:00",
+      "description": "\u003cp\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" style=\"color: rgba(0, 0, 0, 0.87); font-family: arial; font-size: large;\"\u003eThe Stable channel has been updated to 144.0.7559.132/.133 for Windows/Mac\u0026nbsp; and\u0026nbsp;\u003c/span\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" style=\"color: rgba(0, 0, 0, 0.87); font-family: arial; font-size: large;\"\u003e144.0.7559.132 for Linux, which will roll out over the coming days/weeks. A full list of changes in this build is available in the\u0026nbsp;\u003c/span\u003e\u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/144.0.7559.110..144.0.7559.133?pretty=fuller\u0026amp;n=10000\" style=\"color: #4184f3; font-family: arial; font-size: large; text-decoration-line: none;\"\u003eLog\u003c/a\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" style=\"color: rgba(0, 0, 0, 0.87); font-family: arial; font-size: large;\"\u003e.\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cspan style=\"color: #666666; font-family: Arial, sans-serif; font-size: 16pt; white-space-collapse: preserve;\"\u003eSecurity Fixes and Rewards\u003c/span\u003e\u003c/p\u003e\u003cp style=\"text-align: left;\"\u003e\u003ci\u003e\u003cspan style=\"font-family: arial; font-size: medium;\"\u003eNote: Access to bug details and links may be kept restricted until a majority of users are updated with a fix. We will also retain restrictions if the bug exists in a third party library that other projects similarly depend on, but haven’t yet fixed.\u003c/span\u003e\u003c/i\u003e\u003c/p\u003e\u003cp\u003e\u003cbr /\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003e\u003cspan style=\"font-family: arial; font-size: medium;\"\u003eThis update includes \u003ca href=\"https://issues.chromium.org/issues?q=customfield1223088:3-M144\"\u003e2\u003c/a\u003e security fixes. Below, we highlight fixes that were contributed by external researchers. Please see the \u003ca href=\"https://www.chromium.org/Home/chromium-security\"\u003eChrome Security Page\u003c/a\u003e for more information.\u003cbr /\u003e\u003cbr /\u003e\u003cbr /\u003e[N/A][\u003ca href=\"https://issues.chromium.org/issues/478942410\"\u003e478942410\u003c/a\u003e] High CVE-2026-1861: Heap buffer overflow in libvpx. Reported by Google on 2026-01-26\u003cbr /\u003e\u003cbr /\u003e[TBD][\u003ca href=\"https://issues.chromium.org/issues/479726070\"\u003e479726070\u003c/a\u003e] High CVE-2026-1862: Type Confusion in V8. Reported by Chaoyuan Peng (@ret2happy) on 2026-01-29\u003cbr /\u003e\u003cbr /\u003e\u003cbr /\u003e\u003cbr /\u003eWe would also like to thank all security researchers that worked with us during the development cycle to prevent security bugs from ever reaching the stable channel.\u003cbr /\u003e\u003cbr /\u003e\u003cbr /\u003e\u003cbr /\u003e\u003cbr /\u003e\u003c/span\u003e\u003cspan style=\"color: #666666; font-family: Arial, sans-serif;\"\u003e\u003cspan style=\"font-size: 13pt; white-space-collapse: preserve;\"\u003eMany of our security bugs are detected using \u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003ca href=\"https://code.google.com/p/address-sanitizer/wiki/AddressSanitizer\" style=\"text-decoration-line: none;\"\u003e\u003cspan style=\"color: #1155cc; font-family: Arial, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-decoration-line: underline; text-decoration-skip-ink: none; vertical-align: baseline; white-space-collapse: preserve;\"\u003eAddressSanitizer\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"color: #666666; font-family: Arial, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e, \u003c/span\u003e\u003ca href=\"https://code.google.com/p/memory-sanitizer/wiki/MemorySanitizer\" style=\"text-decoration-line: none;\"\u003e\u003cspan style=\"color: #1155cc; font-family: Arial, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-decoration-line: underline; text-decoration-skip-ink: none; vertical-align: baseline; white-space-collapse: preserve;\"\u003eMemorySanitizer\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"color: #666666; font-family: Arial, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e, \u003c/span\u003e\u003ca href=\"https://www.chromium.org/developers/testing/undefinedbehaviorsanitizer\" style=\"text-decoration-line: none;\"\u003e\u003cspan style=\"color: #1155cc; font-family: Arial, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-decoration-line: underline; text-decoration-skip-ink: none; vertical-align: baseline; white-space-collapse: preserve;\"\u003eUndefinedBehaviorSanitizer\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"color: #666666; font-family: Arial, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e, \u003c/span\u003e\u003ca href=\"https://www.chromium.org/developers/testing/control-flow-integrity/\" style=\"text-decoration-line: none;\"\u003e\u003cspan style=\"color: #1155cc; font-family: Arial, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-decoration-line: underline; text-decoration-skip-ink: none; vertical-align: baseline; white-space-collapse: preserve;\"\u003eControl Flow Integrity\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"color: #666666; font-family: Arial, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e, \u003c/span\u003e\u003ca href=\"https://chromium.googlesource.com/chromium/src/+/HEAD/testing/libfuzzer/README.md\" style=\"text-decoration-line: none;\"\u003e\u003cspan style=\"color: #1155cc; font-family: Arial, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-decoration-line: underline; text-decoration-skip-ink: none; vertical-align: baseline; white-space-collapse: preserve;\"\u003elibFuzzer\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"color: #666666; font-family: Arial, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e, or \u003c/span\u003e\u003ca href=\"https://github.com/google/afl\" style=\"text-decoration-line: none;\"\u003e\u003cspan style=\"color: #1155cc; font-family: Arial, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-decoration-line: underline; text-decoration-skip-ink: none; vertical-align: baseline; white-space-collapse: preserve;\"\u003eAFL\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"color: #666666; font-family: Arial, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e.\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" style=\"color: rgba(0, 0, 0, 0.87); font-family: arial; font-size: large;\"\u003e\u003cbr /\u003e\u003c/span\u003e\u003c/p\u003e\u003cp style=\"color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px;\"\u003e\u003cspan style=\"color: #666666; font-family: arial; font-size: large;\"\u003eInterested in switching release channels? Find out how\u0026nbsp;\u003c/span\u003e\u003ca href=\"https://www.chromium.org/getting-involved/dev-channel\" style=\"color: #4184f3; font-family: arial; font-size: large; text-decoration-line: none;\"\u003ehere\u003c/a\u003e\u003cspan style=\"color: #666666; font-family: arial; font-size: large;\"\u003e. If you find a new issue, please let us know by\u0026nbsp;\u003c/span\u003e\u003ca href=\"https://crbug.com/\" style=\"color: #4184f3; font-family: arial; font-size: large; text-decoration-line: none;\"\u003efiling a bug\u003c/a\u003e\u003cspan style=\"color: #666666; font-family: arial; font-size: large;\"\u003e. The\u0026nbsp;\u003c/span\u003e\u003ca href=\"https://support.google.com/chrome/community\" style=\"color: #4184f3; font-family: arial; font-size: large; text-decoration-line: none;\"\u003ecommunity help forum\u003c/a\u003e\u003cspan style=\"color: #666666; font-family: arial; font-size: large;\"\u003e\u0026nbsp;is also a great place to reach out for help or learn about common issues.\u003c/span\u003e\u003c/p\u003e\u003cp style=\"color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px;\"\u003e\u003cspan style=\"color: #666666; font-family: arial; font-size: medium; white-space-collapse: preserve;\"\u003e\u003cbr /\u003e\u003c/span\u003e\u003c/p\u003e\u003cp style=\"color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px;\"\u003e\u003cspan style=\"color: #666666; font-family: arial; font-size: medium; white-space-collapse: preserve;\"\u003eSrinivas Sista\u003c/span\u003e\u003c/p\u003e\u003cdiv style=\"color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px;\"\u003e\u003cspan style=\"font-size: medium;\"\u003e\u003cspan style=\"font-family: arial;\"\u003e\u003cspan style=\"color: #666666;\"\u003eGoogle Chrome\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003c/div\u003e"
+    },
+    {
+      "title": "Long Term Support Channel Update for ChromeOS",
+      "link": "http://chromereleases.googleblog.com/2026/02/long-term-support-channel-update-for.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2026-02-03T10:21:00-08:00",
+      "description": "\u003cp\u003e\u003cspan style=\"font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003eA new LTC\u0026nbsp; version \u003c/span\u003e\u003cspan style=\"background-color: white; font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e144.0.7559.108 \u003c/span\u003e\u003cspan style=\"font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e(Platform Version: 16503.60.0\u003c/span\u003e\u003cspan style=\"background-color: white; font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e), is being\u003c/span\u003e\u003cspan style=\"font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e rolled out for most ChromeOS devices.\u0026nbsp;\u003c/span\u003e\u003c/p\u003e\u003cspan id=\"docs-internal-guid-ffc38a17-7fff-bea0-b39e-8fa2c2610f9b\"\u003e\u003cp dir=\"ltr\" style=\"line-height: 1.656; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003eIf you have devices in the LTC channel, they will be updated to this version. The LTS channel remains on LTS-138 until April 21st, 2026.\u0026nbsp;\u003c/span\u003e\u003c/p\u003e\u003cbr /\u003e\u003cp dir=\"ltr\" style=\"line-height: 1.656; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003eRelease notes for LTC-144 can be found\u003c/span\u003e\u003ca href=\"https://support.google.com/chrome/a/answer/12239814\" style=\"text-decoration-line: none;\"\u003e\u003cspan style=\"color: black; font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e \u003c/span\u003e\u003cspan style=\"color: #4184f3; font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-decoration-line: underline; text-decoration-skip-ink: none; vertical-align: baseline; white-space-collapse: preserve;\"\u003ehere\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e\u0026nbsp;\u003c/span\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height: 1.656; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003eWant to know more about Long-term Support? Click\u003c/span\u003e\u003ca href=\"https://support.google.com/chrome/a/answer/11333726\" style=\"text-decoration-line: none;\"\u003e\u003cspan style=\"color: black; font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e \u003c/span\u003e\u003cspan style=\"color: #4184f3; font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-decoration-line: underline; text-decoration-skip-ink: none; vertical-align: baseline; white-space-collapse: preserve;\"\u003ehere\u003c/span\u003e\u003c/a\u003e\u003c/p\u003e\u003cbr /\u003e\u003cbr /\u003e\u003cp dir=\"ltr\" style=\"line-height: 1.656; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003eAndy Wu\u003c/span\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height: 1.656; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003eGoogle Chrome OS\u003c/span\u003e\u003c/p\u003e\u003cdiv\u003e\u003cspan style=\"font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e\u003cbr /\u003e\u003c/span\u003e\u003c/div\u003e\u003c/span\u003e"
+    },
+    {
+      "title": "Show GN: Sandy - AI 에이전트가 매번 생각하는게 답답해서 만들었습니다",
+      "link": "https://news.hada.io/topic?id=26372",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-04T00:36:41+09:00",
+      "description": "\u003cp\u003eAI 에이전트에 산데비스탄을 달아줬습니다.\u003c/p\u003e\n\u003cp\u003e자동화 에이전트가 사람보다 느리면 의미가 있을까요?\u003cbr /\u003e\n클릭 한 번에 몇 초씩 멈칫거리는 게 답답해서 생각해봤습니다.\u003cbr /\u003e\n사람도 반복하면 생각 없이 손이 먼저 움직이잖아요. AI도 그렇게 할 수 있지 않을까?\u003c/p\u003e\n\u003cp\u003e🐢 기존 에이전트\u003cbr /\u003e\nObserve → L"
+    },
+    {
+      "title": "몰트북 해킹: AI 소셜 네트워크에서 150만 개의 API 키 노출",
+      "link": "https://news.hada.io/topic?id=26371",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-04T00:33:24+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eAI 에이전트 전용 소셜 플랫폼 \u003cstrong\u003eMoltbook\u003c/strong\u003e의 데이터베이스가 잘못 구성되어, 150만 개의 \u003cstrong\u003eAPI 인증 토큰\u003c/strong\u003e과 3만5천 개의 이메일, 비공개 메시지가 외부에 노출됨\u003c/li\u003e\n\u003cli\u003e클라이언트 측 자바스크립트에 \u003cstrong\u003eSupabase API 키\u003c/strong\u003e가 하드코딩되어 있었고, \u003cstrong\u003eRow L...\u003c/p\u003e"
+    },
+    {
+      "title": "개발자의 직관과 읽기 좋은 코드, 그리고 뇌과학: 우리는 왜 특정 코드에 편안함을 느낄까?",
+      "link": "https://news.hada.io/topic?id=26369",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-03T21:16:22+09:00",
+      "description": "\u003cp\u003e'읽기 좋은 코드'에 대한 논의는 흔히 개인의 취항이나 관습의 영역으로 치부되지만, 사실 그 기저에는 인지과학적 원리가 작동하고 있습니다. 이 글은 개발자의 '직관'을 뇌과학적 관점에서 분해하고, 가독성이라는 추상적인 감각을 논리적인 구조로 분석합니다.\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e\n\u003cp\u003e직관은 마법이 아닌 고도의 패턴 매"
+    },
+    {
+      "title": "미국 해상 풍력 발전 공사 전면 재개 명령",
+      "link": "https://news.hada.io/topic?id=26368",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-03T20:34:31+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e미국 법원이 \u003cstrong\u003e모든 해상 풍력 발전 건설 재개\u003c/strong\u003e를 명령하며, 트럼프 행정부의 차단 조치를 중단시킴\u003c/li\u003e\n\u003cli\u003e트럼프 행정부는 \u003cstrong\u003e해상 및 일부 육상 풍력 프로젝트 인허가를 금지하는 행정명령\u003c/strong\u003e을 발동했으나, 법원은 이를 \u003cstrong\u003e자의적이고 변덕적인 조치\u003c/strong\u003e로 판결해 무...\u003c/p\u003e"
+    },
+    {
+      "title": "Anki 소유권, AnkiHub로 이전",
+      "link": "https://news.hada.io/topic?id=26367",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-03T18:33:10+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eAnki의 소유권이 AnkiHub로 이전\u003c/strong\u003e되며, 새로운 리더십 아래에서 프로젝트의 발전 방향이 재정비되는 과정\u003c/li\u003e\n\u003cli\u003eAnkiHub는 \u003cstrong\u003e학생 중심의 교육 기술 회사\u003c/strong\u003e로, Anki의 오픈소스 철학과 사용자 중심 원칙을 유지할 것을 명시\u003c/li\u003e\n\u003cli\u003e향후 \u003cstrong\u003eUI/UX 개선\u003c/strong\u003e, \u003cstr...\u003c/p\u003e"
+    },
+    {
+      "title": "TSA의 ‘신분증 없이 비행 시 45달러 수수료’는 불법",
+      "link": "https://news.hada.io/topic?id=26366",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-03T15:33:17+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e미국 \u003cstrong\u003eTSA(교통안전청)\u003c/strong\u003e 이 REAL ID가 없는 승객에게 \u003cstrong\u003e45달러 수수료를 부과\u003c/strong\u003e하기 시작했으나, 현행 법률상 신분증 제시나 수수료 납부 의무는 없음\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e국내선 탑승 시 신분증 제시를 요구하는 법률은 존재하지 않으며\u003c/strong\u003e, 1996년 클린턴 행정부의 행정명령...\u003c/p\u003e"
+    },
+    {
+      "title": "AI 코딩 도구가 개발자 학습을 방해한다, Anthropic 연구 발견",
+      "link": "https://news.hada.io/topic?id=26364",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-03T14:31:13+09:00",
+      "description": "\u003cp\u003e\u003cstrong\u003e핵심 한 줄 요약\u003c/strong\u003e\u003cbr /\u003e\nAI 코딩 도구는 사용 방식에 따라 학습을 돕거나 망칠 수 있다. 개념 이해를 위한 적극적 질문이 핵심이며, 완전 위임은 속도도 학습도 모두 놓친다.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e연구 개요\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eAnthropic 연구팀 진행\u003c/li\u003e\n\u003cli\u003e대상: 52명 소프트웨어 엔지니어\u003c/li\u003e\n...\u003c/p\u003e"
+    },
+    {
+      "title": "Todd C. Miller – 30년 넘게 Sudo를 유지보수한 개발자",
+      "link": "https://news.hada.io/topic?id=26363",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-03T13:32:45+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eSudo 프로젝트의 주요 유지관리자\u003c/strong\u003e로 30년 이상 활동하며, 현재는 지속적인 유지보수와 개발을 위한 \u003cstrong\u003e후원자를 찾고 있음\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e개인 웹사이트에는 \u003cstrong\u003e논문, 이력서, TiVo 해킹 자료, OpenBSD 관련 작업\u003c/strong\u003e 등 다양한 기술 자료가 정리되어 있음\u003c/li\u003e\n\u003cli\u003e\n\u003cs...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: One Ego, Any Model – 멀티 AI 시대를 위한 맥락 지갑",
+      "link": "https://news.hada.io/topic?id=26362",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-03T11:33:41+09:00",
+      "description": "\u003cp\u003e개인적인 불편함에서 시작한 프로젝트를 공유합니다.\u003c/p\u003e\n\u003cp\u003e저는 작업에 따라 ChatGPT, Claude, Gemini, 로컬 LLM을 계속 바꿔 씁니다.\u003cbr /\u003e\n그런데 모델을 옮길 때마다\u003cbr /\u003e\n“제가 누구인지, 지금 뭘 하고 있는지”\u003cbr /\u003e\n다시 설명해야 하는 게 늘 스트레스였습니다.\u003c/p\u003e\n\u003cp\u003e그래서 맥락을 모델이 아니라,...\u003c/p\u003e"
+    },
+    {
+      "title": "Termux - 다양한 패키지로 확장 가능한 Android용 터미널 에뮬레이터",
+      "link": "https://news.hada.io/topic?id=26361",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-03T09:56:26+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eAndroid에서 \u003cstrong\u003e리눅스 환경과 터미널 기능\u003c/strong\u003e을 제공하는 오픈소스 앱으로, 다양한 패키지를 설치해 확장 가능\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eTermux:API, Boot, Float, Styling, Tasker, Widget\u003c/strong\u003e 등 여러 플러그인 앱을 통해 기능을 보완\u003c/li\u003e\n\u003cli\u003e설치는 \u003cstrong\u003eF-Droid, GitHub, Google Play(실험...\u003c/p\u003e"
+    },
+    {
+      "title": "xAI가 SpaceX에 합류",
+      "link": "https://news.hada.io/topic?id=26360",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-03T09:53:26+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eSpaceX가 xAI를 인수\u003c/strong\u003e해 로켓, 위성 인터넷, 모바일 통신, AI를 통합한 수직 통합 혁신 엔진을 구축하며, 지상과 우주를 아우르는 인프라 확장 시작\u003c/li\u003e\n\u003cli\u003e현재 AI 발전은 \u003cstrong\u003e지상 데이터센터의 전력·냉각 한계\u003c/strong\u003e에 묶여 있으며, 글로벌 전력 수요를 감당하기 어려운 구조라는...\u003c/p\u003e"
+    },
+    {
+      "title": "Claude Code가 마이크로소프트 내부에서 급속히 확산 중",
+      "link": "https://news.hada.io/topic?id=26359",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-03T09:50:26+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eAnthropic의 Claude Code\u003c/strong\u003e가 Microsoft 내부에서 빠르게 확산되며, 개발자뿐 아니라 비개발자도 활용 중임\u003c/li\u003e\n\u003cli\u003eMicrosoft는 \u003cstrong\u003eGitHub Copilot을 외부 고객에게 판매\u003c/strong\u003e하면서도 내부적으로는 Claude Code 사용을 장려하고 있음\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eCoreAI, Experiences + Dev...\u003c/p\u003e"
+    },
+    {
+      "title": "위키피디아를 소셜 미디어 피드처럼 ‘둠스크롤’할 수 있는 Xikipedia",
+      "link": "https://news.hada.io/topic?id=26358",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-03T09:47:26+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eXikipedia\u003c/strong\u003e는 Simple Wikipedia의 문서를 \u003cstrong\u003e소셜 미디어 피드 형태\u003c/strong\u003e로 보여주는 웹 애플리케이션\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e머신러닝 없이도\u003c/strong\u003e 사용자의 클릭 패턴을 기반으로 \u003cstrong\u003e유사 콘텐츠를 추천\u003c/strong\u003e하는 알고리듬을 시연\u003c/li\u003e\n\u003cli\u003e모든 연산은 \u003cstrong\u003e로컬에서...\u003c/p\u003e"
+    },
+    {
+      "title": "에이전틱 결제 프로토콜 지도: 왜 난립하는가",
+      "link": "https://news.hada.io/topic?id=26357",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-03T09:46:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eAI 에이전트가 자율적으로 구매·지불·정산을 수행하기 위해 \u003cstrong\u003e여러 결제 프로토콜이 병렬적으로 등장\u003c/strong\u003e하고 있음\u003c/li\u003e\n\u003cli\u003eACP, UCP, AP2, x402 등은 모두 결제를 다루지만, \u003cstrong\u003e상거래·B2B·에이전트 간 결제\u003c/strong\u003e처럼 \u003cstrong\u003e서로 다른 문제 영역\u003c/strong\u003e을 겨냥함\u003c/li\u003e\n\u003cli\u003e인터넷은 ...\u003c/p\u003e"
+    },
+    {
+      "title": "Notepad++가 국가 지원 해커에 의해 탈취됨",
+      "link": "https://news.hada.io/topic?id=26355",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-03T09:41:25+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eNotepad++ 공식 웹사이트 업데이트 트래픽이 공격자 서버로 리디렉션된 보안 침해 사건\u003c/strong\u003e이 발생\u003c/li\u003e\n\u003cli\u003e공격은 \u003cstrong\u003e호스팅 제공업체 인프라 수준의 침해\u003c/strong\u003e를 통해 이루어졌으며, Notepad++ 코드 자체의 취약점은 아님\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e2025년 6월부터 12월 2일까지\u003c/strong\u003e 공...\u003c/p\u003e"
+    },
+    {
+      "title": "Minimal - CVE 취약점이 최소화된 컨테이너 이미지 컬렉션",
+      "link": "https://news.hada.io/topic?id=26354",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-03T09:31:02+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e프로덕션 환경의 보안 취약점(CVE)을 최소화\u003c/strong\u003e하기 위해 설계된 경량 컨테이너 이미지 모음\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eChainguard의 apko\u003c/strong\u003e와 \u003cstrong\u003eWolfi 패키지\u003c/strong\u003e를 기반으로 매일 재빌드되어 최신 보안 패치를 반영\u003c/li\u003e\n\u003cli\u003e불필요한 패키지를 제거해 \u003cstrong\u003e공격 표면을 최소화...\u003c/p\u003e"
+    },
+    {
+      "title": "세포는 ‘생체전기’를 이용해 협력하고 집단 결정을 내린다",
+      "link": "https://news.hada.io/topic?id=26353",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-03T08:32:48+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e상피조직 세포들이 전기 신호를 통해 비정상 세포를 배출하는 과정\u003c/strong\u003e이 밝혀짐\u003c/li\u003e\n\u003cli\u003e세포막 전위의 변화가 \u003cstrong\u003e세포 축출(extrusion)\u003c/strong\u003e 의 시작점으로 작용하며, 약하거나 에너지가 부족한 세포를 식별\u003c/li\u003e\n\u003cli\u003e건강한 세포는 전위 불균형을 복구하지만, 손상된 세포는 이를 유...\u003c/p\u003e"
+    },
+    {
+      "title": "PF 매뉴얼북 4판 (The Book of PF, 4th Edition)",
+      "link": "https://news.hada.io/topic?id=26352",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-03T07:36:45+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eOpenBSD의 패킷 필터 PF\u003c/strong\u003e를 중심으로 한 방화벽 구축과 네트워크 보안을 다루는 실무 지침서\u003c/li\u003e\n\u003cli\u003e최신판에서는 \u003cstrong\u003eIPv6, 듀얼 스택 구성, 트래픽 셰이핑, NAT, 무선 네트워킹, 스팸 차단, 장애 조치, 로깅\u003c/strong\u003e 등 최신 기능을 포함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eIPv4·IPv6 규칙 세트 작성...\u003c/p\u003e"
+    },
+    {
+      "title": "Apple이 Tahoe 업데이트에서 Time Machine을 다시 망가뜨림",
+      "link": "https://news.hada.io/topic?id=26351",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-03T07:33:45+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003emacOS \u003cstrong\u003eTahoe 업데이트 이후 Time Machine 백업이 두 대의 Mac에서 조용히 중단된 문제\u003c/strong\u003e가 발생\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eSynology NAS를 SMB로 연결해 백업\u003c/strong\u003e하던 환경에서 오류 메시지 없이 약 두 달간 백업이 멈춰 있었음\u003c/li\u003e\n\u003cli\u003e원인은 \u003cstrong\u003eApple이 SMB 기본 설정을 일방적으로 변경...\u003c/p\u003e"
+    },
+    {
+      "title": "Draw with the World’s Wind: Artist Jitish Kallat makes the invisible visible",
+      "link": "https://blog.google/company-news/outreach-and-initiatives/arts-culture/wind-study-hilbert-curve/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-03T10:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Copy_of_Artboard_1.max-600x600.format-webp.webp\"\u003eWind Study (Hilbert Curve) is a new interactive experience from Google Arts \u0026 Culture that takes you inside artist Jitish Kallat’s work."
+    },
+    {
+      "title": "Here’s how to tune into the Winter Olympics with Google",
+      "link": "https://blog.google/products-and-platforms/products/search/winter-olympics-2026/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-03T08:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/2026_Winterolympics_02_2096X118.max-600x600.format-webp.webp\"\u003eLearn more about using Google tools to stay in the know on the 2026 Winter Olympics."
+    },
+    {
+      "title": "Upcoming SDK minimum requirements",
+      "link": "https://developer.apple.com/news/?id=ueeok6yw",
+      "source": "Latest News - Apple Developer",
+      "category": "tech",
+      "publishedAt": "2026-02-03T06:00:30Z",
+      "description": "\u003cp\u003eStarting April 28, 2026, apps and games uploaded to App Store Connect need to meet the following minimum requirements:\u003c/p\u003e\u003cul\u003e\n\u003cli\u003eiOS and iPadOS apps must be built with the iOS 26 \u0026amp; iPadOS 26 SDK or later\u003c/li\u003e\n\u003cli\u003etvOS apps must be built with the tvOS 26 SDK or later\u003c/li\u003e\n\u003cli\u003evisionOS apps must be built with the visionOS 26 SDK or later\u003c/li\u003e\n\u003cli\u003ewatchOS apps must be built with the watchOS 26 SDK or later\u003c/li\u003e\n\u003c/ul\u003e\u003cp\u003e\u003ca href=\"https://developer.apple.com/app-store/submitting/\"\u003eLearn more \u003cspan class=\"icon icon-after icon-chevronright nowrap\"\u003eabout submitting\u003c/span\u003e\u003c/a\u003e\u003c/p\u003e"
+    },
+    {
+      "title": "HackNews the Hypocrisy",
+      "link": "https://news.ycombinator.com/item?id=46877908",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-03T21:58:00Z",
+      "description": "\n\u003cp\u003eYoure not news. Your old people with no intellectual space.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46877908\"\u003ehttps://news.ycombinator.com/item?id=46877908\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Do you think .md domains will become popular?",
+      "link": "https://news.ycombinator.com/item?id=46877900",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-03T21:57:23Z",
+      "description": "\n\u003cp\u003eWith the recent surge of collaboration with AI via markdown files (heartbeat.md, memory.md, etc), could this be the next popular TLD? It's impossible to find a good .com these days and even .ai is getting so competitive. But there's still even one-word .md (Moldova) domains around. What do you think?\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46877900\"\u003ehttps://news.ycombinator.com/item?id=46877900\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Hans – IP over ICMP",
+      "link": "https://code.gerade.org/hans/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-03T21:56:41Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://code.gerade.org/hans/\"\u003ehttps://code.gerade.org/hans/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46877895\"\u003ehttps://news.ycombinator.com/item?id=46877895\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Running is my meditation (2024) [pdf]",
+      "link": "https://research-repository.rmit.edu.au/articles/thesis/_Running_is_my_meditation_an_investigation_of_the_meditative_qualities_of_non-competitive_long-distance_running_and_their_role_in_the_self-regulation_of_wellbeing/27599559/1/files/50795373.pdf",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-03T21:53:40Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://research-repository.rmit.edu.au/articles/thesis/_Running_is_my_meditation_an_investigation_of_the_meditative_qualities_of_non-competitive_long-distance_running_and_their_role_in_the_self-regulation_of_wellbeing/27599559/1/files/50795373.pdf\"\u003ehttps://research-repository.rmit.edu.au/articles/thesis/_Running_is_my_meditation_an_investigation_of_the_meditative_qualities_of_non-competitive_long-distance_running_and_their_role_in_the_self-regulation_of_wellbeing/27599559/1/files/50795373.pdf\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46877866\"\u003ehttps://news.ycombinator.com/item?id=46877866\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Elon Musk's SpaceX Officially Acquires Elon Musk's xAI",
+      "link": "https://techcrunch.com/2026/02/02/elon-musk-spacex-acquires-xai-data-centers-space-merger/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-03T21:53:39Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://techcrunch.com/2026/02/02/elon-musk-spacex-acquires-xai-data-centers-space-merger/\"\u003ehttps://techcrunch.com/2026/02/02/elon-musk-spacex-acquires-xai-data-centers-space-merger/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46877865\"\u003ehttps://news.ycombinator.com/item?id=46877865\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Digital Bastille: What France's War with X Tells Us About Free Speech",
+      "link": "https://www.sebs.website/blog/the-digital-bastille",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-03T21:53:15Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.sebs.website/blog/the-digital-bastille\"\u003ehttps://www.sebs.website/blog/the-digital-bastille\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46877860\"\u003ehttps://news.ycombinator.com/item?id=46877860\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Intel Panther Lake Shows Strong Linux CPU Performance and Power Efficiency",
+      "link": "https://www.phoronix.com/review/intel-core-ultra-x7-358h-linux",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-03T21:53:10Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.phoronix.com/review/intel-core-ultra-x7-358h-linux\"\u003ehttps://www.phoronix.com/review/intel-core-ultra-x7-358h-linux\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46877858\"\u003ehttps://news.ycombinator.com/item?id=46877858\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Complete Guide to Claude Concepts",
+      "link": "https://github.com/luongnv89/claude-howto/blob/main/claude_concepts_guide.md",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-03T21:53:08Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/luongnv89/claude-howto/blob/main/claude_concepts_guide.md\"\u003ehttps://github.com/luongnv89/claude-howto/blob/main/claude_concepts_guide.md\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46877857\"\u003ehttps://news.ycombinator.com/item?id=46877857\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "No Such Thing as Speed of Light",
+      "link": "http://www.russbishop.net/no-such-thing-as-speed-of-light#61429",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-03T21:53:07Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"http://www.russbishop.net/no-such-thing-as-speed-of-light#61429\"\u003ehttp://www.russbishop.net/no-such-thing-as-speed-of-light#61429\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46877856\"\u003ehttps://news.ycombinator.com/item?id=46877856\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "LLM Quantization and NVFP4",
+      "link": "http://ternarysearch.blogspot.com/2026/02/llm-quantization-and-nvfp4.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-03T21:52:46Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"http://ternarysearch.blogspot.com/2026/02/llm-quantization-and-nvfp4.html\"\u003ehttp://ternarysearch.blogspot.com/2026/02/llm-quantization-and-nvfp4.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46877848\"\u003ehttps://news.ycombinator.com/item?id=46877848\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Use \"\\A \\z\", not \"^ $\" with Python regular expressions – Seth Larson",
+      "link": "https://sethmlarson.dev/use-backslash-A-and-z-not-%5E-and-$-with-python-regular-expressions",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-03T21:52:23Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://sethmlarson.dev/use-backslash-A-and-z-not-%5E-and-$-with-python-regular-expressions\"\u003ehttps://sethmlarson.dev/use-backslash-A-and-z-not-%5E-and-$-with-python-regular-expressions\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46877845\"\u003ehttps://news.ycombinator.com/item?id=46877845\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Giant 'blobs' of rock influence Earth's magnetic field",
+      "link": "https://theconversation.com/how-giant-blobs-of-rock-have-influenced-earths-magnetic-field-for-millions-of-years-new-research-272378",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-03T21:50:51Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://theconversation.com/how-giant-blobs-of-rock-have-influenced-earths-magnetic-field-for-millions-of-years-new-research-272378\"\u003ehttps://theconversation.com/how-giant-blobs-of-rock-have-influenced-earths-magnetic-field-for-millions-of-years-new-research-272378\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46877823\"\u003ehttps://news.ycombinator.com/item?id=46877823\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Was Benoit Mandelbrot a hedgehog or a fox?",
+      "link": "https://arxiv.org/abs/2602.01122",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-03T21:50:38Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://arxiv.org/abs/2602.01122\"\u003ehttps://arxiv.org/abs/2602.01122\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46877820\"\u003ehttps://news.ycombinator.com/item?id=46877820\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Probabilities",
+      "link": "https://arxiv.org/abs/2601.18853",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-03T21:49:42Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://arxiv.org/abs/2601.18853\"\u003ehttps://arxiv.org/abs/2601.18853\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46877807\"\u003ehttps://news.ycombinator.com/item?id=46877807\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Agent Identity for Git Commits",
+      "link": "https://justin.poehnelt.com/posts/agent-identity-git-commits/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-03T21:48:09Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://justin.poehnelt.com/posts/agent-identity-git-commits/\"\u003ehttps://justin.poehnelt.com/posts/agent-identity-git-commits/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46877784\"\u003ehttps://news.ycombinator.com/item?id=46877784\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "CL-32 latest firmware [video]",
+      "link": "https://www.youtube.com/watch?v=UpiWlSyU1A4",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-03T21:46:45Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.youtube.com/watch?v=UpiWlSyU1A4\"\u003ehttps://www.youtube.com/watch?v=UpiWlSyU1A4\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46877776\"\u003ehttps://news.ycombinator.com/item?id=46877776\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Intel will start making GPUs",
+      "link": "https://techcrunch.com/2026/02/03/intel-will-start-making-gpus-a-market-dominated-by-nvidia/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-03T21:46:09Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://techcrunch.com/2026/02/03/intel-will-start-making-gpus-a-market-dominated-by-nvidia/\"\u003ehttps://techcrunch.com/2026/02/03/intel-will-start-making-gpus-a-market-dominated-by-nvidia/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46877768\"\u003ehttps://news.ycombinator.com/item?id=46877768\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "CL-32",
+      "link": "https://cl-32.com/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-03T21:45:50Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://cl-32.com/\"\u003ehttps://cl-32.com/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46877764\"\u003ehttps://news.ycombinator.com/item?id=46877764\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Sam Altman Hires Dylan Scandinaro as Head of Preparedness",
+      "link": "https://twitter.com/sama/status/2018800541716107477",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-03T21:44:39Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://twitter.com/sama/status/2018800541716107477\"\u003ehttps://twitter.com/sama/status/2018800541716107477\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46877752\"\u003ehttps://news.ycombinator.com/item?id=46877752\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "SpaceX Acquires xAI in $1.25T All-Stock Deal",
+      "link": "https://www.cnbc.com/2026/02/02/elon-musk-spacex-xai-ipo.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-03T21:44:24Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.cnbc.com/2026/02/02/elon-musk-spacex-xai-ipo.html\"\u003ehttps://www.cnbc.com/2026/02/02/elon-musk-spacex-xai-ipo.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46877746\"\u003ehttps://news.ycombinator.com/item?id=46877746\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "5 micro-challenges to make your team stronger this week",
+      "link": "https://www.atlassian.com/blog/teamwork/micro-challenges-to-make-your-team-stronger",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-03T21:38:24Z",
+      "description": "\u003cp\u003eStrengthening your team’s performance doesn\u0026#8217;t have to mean a complete overhaul of your rituals and tools. A little consistency –...\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/teamwork/micro-challenges-to-make-your-team-stronger\"\u003e5 micro-challenges to make your team stronger this week\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "How to get your team unstuck from constant miscommunication",
+      "link": "https://www.atlassian.com/blog/loom/how-to-get-your-team-unstuck-from-constant-miscommunication",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-03T14:00:00Z",
+      "description": "\u003cp\u003eNew data shows miscommunication is quietly draining hours, trust, and momentum from teams – and that using the right mix of channels, including async video, actually helps.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/loom/how-to-get-your-team-unstuck-from-constant-miscommunication\"\u003eHow to get your team unstuck from constant miscommunication\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Power up your pipeline workflow with 24x and 32x step sizes",
+      "link": "https://www.atlassian.com/blog/bitbucket/power-up-your-pipeline-workflow-with-24x-and-32x-step-sizes",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-03T03:47:19Z",
+      "description": "\u003cp\u003eLast year we launched 16x step sizes as part of our commitment to improve Bitbucket Pipelines performance. Demand continues to...\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/bitbucket/power-up-your-pipeline-workflow-with-24x-and-32x-step-sizes\"\u003ePower up your pipeline workflow with 24x and 32x step sizes\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "What the fastest-growing tools reveal about how software is being built",
+      "link": "https://github.blog/news-insights/octoverse/what-the-fastest-growing-tools-reveal-about-how-software-is-being-built/",
+      "source": "GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-03T17:00:00Z",
+      "description": "\u003cp\u003eWhat languages are growing fastest, and why? What about the projects that people are interested in the most? Where are new developers cutting their teeth? Let’s take a look at Octoverse data to find out.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/news-insights/octoverse/what-the-fastest-growing-tools-reveal-about-how-software-is-being-built/\"\u003eWhat the fastest-growing tools reveal about how software is being built\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Improve global upload performance with R2 Local Uploads",
+      "link": "https://blog.cloudflare.com/r2-local-uploads/",
+      "source": "Cloudflare Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-03T14:00:00Z",
+      "description": " Local Uploads on R2 reduces request duration for uploads by up to 75%. It writes object data to a nearby location and asynchronously copies it to your bucket, all while data is available immediately.  "
+    }
+  ],
+  "generatedAt": "2026-02-04T07:14:23.468360282+09:00"
+}
