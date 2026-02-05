@@ -1,0 +1,641 @@
+{
+  "date": "2026-02-06",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2026년 2월 5일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** OpenAI의 GPT-5.3 Codex 출시로 코딩 AI의 성능이 비약적으로 상승했으며, VS Code와 Claude Code를 중심으로 '멀티 에이전트' 개발 환경이 표준으로 자리 잡고 있습니다.\n\n---\n\n## 🏆 Top Story: AI 코딩의 새로운 기준점\n### OpenAI, GPT-5.3-Codex 및 Frontier 모델 전격 공개\nOpenAI가 차세대 모델 라인업을 대거 공개했습니다. 특히 개발자들의 이목을 끄는 것은 **GPT-5.3-Codex**입니다. 기존 GPT-5.2 대비 추론 속도가 40% 향상되었으며, 시스템 카드를 통해 안전성과 코딩 정확도가 대폭 개선되었음이 입증되었습니다. 또한, 'OpenAI Frontier'라는 새로운 플래그십 라인업을 통해 범용 AI의 한계를 다시 한번 확장했습니다. 이는 단순한 코드 생성을 넘어, 복잡한 시스템 아키텍처 설계와 보안 감사까지 가능한 수준임을 시사합니다.\n\n\u003e **Key Point:** GPT-5.3-Codex 출시와 함께 기존 모델(GPT-5.2)의 속도도 40% 개선되어, AI 기반 개발 비용과 시간이 획기적으로 단축될 전망입니다. [^22][^46][^48][^49]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. 개발 환경의 패러다임 시프트: '멀티 에이전트'와 'MCP'\nVS Code와 GitHub가 개발의 미래를 '에이전트'로 정의했습니다. VS Code는 1.110 업데이트와 함께 **멀티 에이전트 개발(Multi-Agent Development)** 지원을 공식화했습니다. 이는 단일 AI 챗봇을 넘어, 여러 특화된 AI 에이전트가 협업하여 코드를 작성하는 환경을 의미합니다. 동시에 Google은 공식 MCP(Model Context Protocol) 서버 모음을 공개했고, 리버스 엔지니어링 도구인 Ghidra에도 MCP가 적용되는 등, AI와 도구를 연결하는 표준 프로토콜 경쟁이 치열해지고 있습니다.\n- **What:** VS Code의 멀티 에이전트 지원 및 GitHub의 Agentic CI(지속적 통합) 자동화 가이드 발표.\n- **Why:** 복잡해지는 소프트웨어 구조를 단일 LLM으로 처리하기엔 한계가 있어, 역할이 분담된 에이전트 협업이 필수적임.\n- **Impact:** 개발자는 이제 '코드 작성자'에서 에이전트들을 조율하는 '오케스트레이터'로 역할이 변화할 것입니다. [^1][^2][^3][^10][^33]\n\n### 2. Claude Code의 생태계 확장: 인프라부터 모바일 제어까지\nAnthropic의 Claude Code가 단순한 코딩 도구를 넘어 플랫폼으로 진화하고 있습니다. 인프라 관리를 위한 전용 기능, 팀 단위 협업을 위한 'Swarm Intelligence' 플러그인, 그리고 코드 베이스에 대한 깊은 통찰을 제공하는 `/insights` 기능이 추가되었습니다. 심지어 모바일에서 Claude Code를 원격 제어할 수 있는 서드파티 도구까지 등장하며 생태계가 급속도로 팽창하고 있습니다.\n- **What:** Claude Code의 인프라 관리 기능, 인사이트 기능 추가 및 Google Vertex AI에 Claude Opus 4.6 탑재.\n- **Why:** 코딩뿐만 아니라 배포, 운영, 분석까지 AI의 영역을 확장하려는 전략.\n- **Impact:** AWS, Google Cloud 등 클라우드 인프라 관리의 진입 장벽이 낮아지고, DevOps 업무의 상당 부분이 자동화될 것입니다. [^8][^16][^28][^79]\n\n### 3. 창과 방패의 대결: 보안 위협과 프라이버시\n보안 영역에서는 두 가지 상반된 뉴스가 주목받고 있습니다. Cloudflare는 2025년 4분기에 역사상 최대 규모인 **31.4 Tbps의 DDoS 공격**을 방어했다고 보고했습니다. 반면, 개인 프라이버시 측면에서는 아이폰의 '락다운 모드'가 FBI의 포렌식 시도를 막아냈다는 소식이 전해졌습니다. 이는 기술이 고도화될수록 공격의 규모도 커지지만, 개인 보안 기술 또한 강력해지고 있음을 보여줍니다.\n- **What:** 사상 최대 31.4 Tbps DDoS 공격 발생 및 아이폰 락다운 모드의 강력한 보안성 입증.\n- **Why:** AI를 이용한 자동화된 사이버 공격이 증가하는 한편, 제조사들의 보안 강화 조치가 실효를 거두고 있음.\n- **Impact:** 기업은 더 큰 대역폭의 방어 체계가 필요하며, 수사 기관과 테크 기업 간의 '암호화 전쟁'은 새로운 국면을 맞이할 것입니다. [^30][^77]\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **Ghidra MCP Server** | NSA의 리버스 엔지니어링 도구 Ghidra에 AI 에이전트(MCP)를 연동하여 분석 자동화 [^10] |\n| **Tool** | **AliSQL** | 알리바바의 MySQL 포크 버전. 벡터 엔진과 DuckDB를 통합하여 분석 성능 강화 [^24] |\n| **Tool** | **MatPy** | 순수 Python으로 작성된 선형 대수 라이브러리 (ODE 솔버 포함) [^51] |\n| **Tool** | **Linear MCP Fast** | 로컬 캐시를 활용해 Linear 이슈 트래커 읽기 속도를 10배 높인 MCP 서버 [^54] |\n| **Paper** | **Telomere Assembly** | 나노포어 심플렉스 리드를 활용한 효율적인 텔로미어 간 유전체 조립 기술 [^50] |\n| **Resource** | **Git's Magic Files** | Git의 숨겨진 설정 파일들과 그 활용법에 대한 심층 가이드 [^69] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n\n#### 💻 개발 \u0026 인프라\n* **Java Annotated Monthly (2026.02)**: 자바 생태계의 최신 소식과 튜토리얼을 정리한 월간 리포트 [^4][^76]\n* **SyGra Studio**: ServiceNow와 Hugging Face가 협력하여 만든 코드 생성용 AI 스튜디오 [^5]\n* **agent-skill-cast**: 여러 레포지토리의 AI 에이전트 스킬을 CLI로 동기화하는 도구 [^13]\n* **pycparser 재작성**: LLM 코딩 에이전트를 활용해 C 파서를 재작성한 사례 [^19]\n* **리눅스 AI 샌드박싱**: 리눅스 환경에서 AI 에이전트의 권한을 제한하고 격리하는 방법론 [^23]\n* **Bunny Database**: 빠르고 가벼운 새로운 데이터베이스 프로젝트 [^35]\n* **Chrome Dev/Android 업데이트**: 안드로이드용 크롬 브라우저의 최신 보안 및 기능 패치 [^38][^39]\n* **Dash0 CLI v1.0.0**: OpenTelemetry 기반의 관측성 도구 CLI 정식 출시 [^62]\n* **Merkle trees \u0026 Build systems**: OSTree와 Ninja 빌드 시스템에서 머클 트리를 활용하는 원리 [^63]\n\n#### 🤖 AI \u0026 ML\n* **Microsoft Copilot 문제**: 마이크로소프트의 챗봇이 최근 성능 저하 및 환각 문제에 직면함 [^9]\n* **Voxtral Transcribe 2**: 음성 인식 및 텍스트 변환을 위한 새로운 오픈 모델 공개 [^31]\n* **Natively Adaptive Interfaces**: 구글이 제안한 AI 기반의 적응형 접근성 인터페이스 프레임워크 [^40][^70]\n* **GPT-5 단백질 합성**: GPT-5 모델이 무세포 단백질 합성 비용을 낮추는 데 기여 [^44]\n* **ChatGPT 건강 상담**: ChatGPT를 활용한 건강 질문 가이드라인 발표 [^47]\n* **Sop-agents**: 마크다운으로 표준운영절차(SOP)를 작성하면 에이전트 팀을 구성해주는 도구 [^60]\n* **Flower Labs \u0026 Starcloud**: 궤도 상의 위성에서 연합 학습(Federated Learning) 마일스톤 달성 [^67]\n\n#### 💼 비즈니스 \u0026 사회\n* **워싱턴포스트와 베이조스**: 제프 베이조스의 소유 이후 워싱턴포스트가 겪고 있는 내부 갈등과 변화 분석 [^6]\n* **고령 직원 채용의 이점**: 경험 많은 직원을 유지하는 것이 기업 생산성에 미치는 긍정적 영향 [^7]\n* **엔 캐리 트레이드 청산**: 글로벌 금융 시장을 뒤흔든 대규모 엔화 자금 이동 분석 [^11]\n* **기니아충 박멸 임박**: 2025년 감염 사례가 단 10건에 불과, 인류 두 번째 박멸 질병 유력 [^12]\n* **B2B SaaS의 위기**: AI가 소프트웨어를 직접 생성하게 되면서 기존 SaaS 모델이 위협받고 있다는 주장 [^15]\n* **소프트웨어 서바이벌 3.0**: AI 시대에 살아남기 위해 개발자가 만들어야 할 제품에 대한 고찰 [^25]\n* **Starlink 성장**: 스페이스X의 스타링크가 전화 및 추가 인터넷 서비스로 수익 모델 확장 중 [^52]\n\n#### 📱 모바일 \u0026 컨슈머\n* **SessionCast**: 모바일에서 Claude Code를 원격으로 제어할 수 있는 무료 도구 [^18]\n* **로제타 페이지**: 블로그와 아티클을 전문적으로 번역해주는 서비스 [^20]\n* **소셜 아카이버**: 흩어진 SNS 포스팅을 한곳에 저장하고 관리하는 도구 [^27]\n* **Gemini 슈퍼볼 광고**: 구글이 슈퍼볼 시즌을 맞아 제미나이(Gemini)의 새로운 광고 캠페인 시작 [^36][^42][^72]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘 뉴스는 \"**AI가 도구를 넘어 동료가 되는 시점**\"을 명확히 보여줍니다. OpenAI의 GPT-5.3과 VS Code의 멀티 에이전트 지원은 개발자가 더 이상 코드를 '짜는' 사람이 아니라, 코드를 짜는 AI들을 '관리'하는 사람으로 변해야 함을 시사합니다. 한편, 31Tbps라는 경이로운 규모의 디도스 공격과 아이폰 보안 이슈는 기술 발전의 명과 암을 동시에 보여주네요. 변화의 속도가 현기증 날 정도지만, 핵심은 '자동화'와 '보안' 두 키워드에 있습니다.\n\n---\n\n[^1]: February 2026 Insiders (version 1.110) - https://code.visualstudio.com/updates/v1_110\n[^2]: Your Home for Multi-Agent Development - https://code.visualstudio.com/blogs/2026/02/05/multi-agent-development\n[^3]: Continuous AI in practice: What developers can automate today with agentic CI - https://github.blog/ai-and-ml/generative-ai/continuous-ai-in-practice-what-developers-can-automate-today-with-agentic-ci/\n[^4]: Java Annotated Monthly – February 2026 - https://blog.jetbrains.com/idea/2026/02/java-annotated-monthly-february-2026/\n[^5]: Introducing SyGra Studio - https://huggingface.co/blog/ServiceNow-AI/sygra-studio\n[^6]: 워싱턴포스트를 무너뜨린 제프 베이조스 - https://news.hada.io/topic?id=26432\n[^7]: 나이 많은 직원을 유지할 때 기업이 얻는 이점에 대해 더 많은 기업이 주목하는 이유 - https://news.hada.io/topic?id=26431\n[^8]: 인프라를 위한 Claude Code - https://news.hada.io/topic?id=26430\n[^9]: Microsoft의 Copilot 챗봇이 문제에 직면 - https://news.hada.io/topic?id=26429\n[^10]: Ghidra MCP 서버 – AI 기반 리버스 엔지니어링을 위한 110개 도구 제공 - https://news.hada.io/topic?id=26428\n[^11]: 대해제: 대규모 엔 캐리 트레이드 청산이 글로벌 시장을 뒤흔들다 - https://news.hada.io/topic?id=26427\n[^12]: 기니아충, 인류 두 번째 박멸 질병으로 향하다 — 2025년 인류 감염 10건만 보고 - https://news.hada.io/topic?id=26426\n[^13]: Show GN: agent-skill-cast - 여러 레포의 AI 에이전트 스킬을 동기화하는 CLI - https://news.hada.io/topic?id=26425\n[^15]: AI가 B2B SaaS를 죽이고 있다 - https://news.hada.io/topic?id=26423\n[^16]: Show GN: Claude Code 스웜 인텔리전스 플러그인 - https://news.hada.io/topic?id=26422\n[^18]: Show GN: SessionCast - 모바일에서 Claude Code 원격 제어하기 (무료) - https://news.hada.io/topic?id=26420\n[^19]: LLM 코딩 에이전트를 활용한 pycparser의 Recursive Descent 파서 재작성기 - https://news.hada.io/topic?id=26419\n[^20]: Show GN: 로제타 페이지 - 블로그, 아티클 번역 서비스 - https://news.hada.io/topic?id=26418\n[^22]: GPT-5.2와 GPT-5.2-Codex가 이제 40% 더 빨라짐 - https://news.hada.io/topic?id=26416\n[^23]: 리눅스에서 AI 에이전트를 샌드박싱하기 - https://news.hada.io/topic?id=26415\n[^24]: AliSQL - Alibaba의 오픈소스 MySQL 포크, 벡터 및 DuckDB 엔진 통합 - https://news.hada.io/topic?id=26414\n[^25]: 소프트웨어 서바이벌 3.0 – 무엇을 만들어야 살아남는가 - https://news.hada.io/topic?id=26413\n[^27]: Show GN: 소셜 아카이버 - SNS 포스팅의 저장 및 관리가 불편해서 만들었습니다 - https://news.hada.io/topic?id=26411\n[^28]: Claude Code에 /insights 기능 추가 - https://news.hada.io/topic?id=26409\n[^30]: 아이폰 ‘락다운 모드’ 때문에 FBI가 워싱턴포스트 기자의 아이폰을 열지 못함 - https://news.hada.io/topic?id=26407\n[^31]: Voxtral Transcribe 2 모델 공개 - https://news.hada.io/topic?id=26406\n[^33]: Google의 공식 MCP 서버 모음 - https://news.hada.io/topic?id=26404\n[^35]: Bunny Database - https://news.hada.io/topic?id=26402\n[^36]: Watch our new Gemini ad ahead of football’s biggest weekend - https://blog.google/company-news/inside-google/company-announcements/gemini-ad-new-home/\n[^38]: Chrome Dev for Android Update - http://chromereleases.googleblog.com/2026/02/chrome-dev-for-android-update.html\n[^39]: Chrome for Android Update - http://chromereleases.googleblog.com/2026/02/chrome-for-android-update_0634581710.html\n[^40]: Natively Adaptive Interfaces: A new framework for AI accessibility - https://blog.google/company-news/outreach-and-initiatives/accessibility/natively-adaptive-interfaces-ai-accessibility/\n[^42]: Watch our new Gemini ad ahead of football’s biggest weekend - https://blog.google/company-news/inside-google/company-announcements/gemini-ad-new-home/\n[^44]: GPT-5 lowers the cost of cell-free protein synthesis - https://openai.com/index/gpt-5-lowers-protein-synthesis-cost\n[^46]: Introducing OpenAI Frontier - https://openai.com/index/introducing-openai-frontier\n[^47]: Navigating health questions with ChatGPT - https://openai.com/index/navigating-health-questions\n[^48]: Introducing GPT-5.3-Codex - https://openai.com/index/introducing-gpt-5-3-codex\n[^49]: GPT-5.3-Codex System Card - https://openai.com/index/gpt-5-3-codex-system-card\n[^50]: Efficient near-telomere-to-telomere assembly of nanopore simplex reads - https://www.nature.com/articles/s41586-026-10105-6\n[^51]: MatPy – Pure Python linear algebra library with ODE solvers - https://github.com/njryan-boou/matpy\n[^52]: Starlink fuels SpaceX growth with potential phone, more internet services - https://www.reuters.com/business/media-telecom/starlink-fuels-spacex-growth-with-potential-phone-more-internet-services-2026-02-05/\n[^54]: Show HN: Linear MCP Fast – 10x faster Linear MCP reads from local cache - https://github.com/everything-chalna/linear-mcp-fast\n[^60]: Show HN: Sop-agents – Write Markdown, get coordinated agents - https://github.com/serverless-dna/sop-agents\n[^62]: Dash0 CLI v1.0.0 - https://github.com/dash0hq/dash0-cli\n[^63]: Merkle trees and build systems with OSTree and ninja - https://lwn.net/Articles/821367/\n[^67]: Flower Labs and Starcloud Reach a Major AI Milestone in Orbit - https://flower.ai/blog/2026-02-02-flower-labs-and-starcloud-reach-ai-milestone-in-orbit/\n[^69]: Git's Magic Files - https://nesbitt.io/2026/02/05/git-magic-files.html\n[^70]: Natively Adaptive Interfaces: A new framework for AI accessibility - https://blog.google/company-news/outreach-and-initiatives/accessibility/natively-adaptive-interfaces-ai-accessibility/\n[^72]: Watch our new Gemini ad ahead of football’s biggest weekend - https://blog.google/company-news/inside-google/company-announcements/gemini-ad-new-home/\n[^76]: Java Annotated Monthly – February 2026 - https://blog.jetbrains.com/idea/2026/02/java-annotated-monthly-february-2026/\n[^77]: 2025 Q4 DDoS threat report: A record-setting 31.4 Tbps attack caps a year of massive DDoS assaults - https://blog.cloudflare.com/ddos-threat-report-2025-q4/\n[^79]: Announcing Claude Opus 4.6 on Vertex AI - https://cloud.google.com/blog/products/ai-machine-learning/expanding-vertex-ai-with-claude-opus-4-6/\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **February 2026 Insiders (version 1.110)**\n   - 출처: Visual Studio Code - Code Editing. Redefined.\n   - 링크: https://code.visualstudio.com/updates/v1_110\n\n2. **Your Home for Multi-Agent Development**\n   - 출처: Visual Studio Code - Code Editing. Redefined.\n   - 링크: https://code.visualstudio.com/blogs/2026/02/05/multi-agent-development\n\n3. **Continuous AI in practice: What developers can automate today with agentic CI**\n   - 출처: GitHub Blog\n   - 링크: https://github.blog/ai-and-ml/generative-ai/continuous-ai-in-practice-what-developers-can-automate-today-with-agentic-ci/\n\n4. **Java Annotated Monthly – February 2026**\n   - 출처: Java Annotated : IntelliJ IDEA | The JetBrains Blog\n   - 링크: https://blog.jetbrains.com/idea/2026/02/java-annotated-monthly-february-2026/\n\n5. **Introducing SyGra Studio**\n   - 출처: Hugging Face - Blog\n   - 링크: https://huggingface.co/blog/ServiceNow-AI/sygra-studio\n\n6. **워싱턴포스트를 무너뜨린 제프 베이조스**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26432\n\n7. **나이 많은 직원을 유지할 때 기업이 얻는 이점에 대해 더 많은 기업이 주목하는 이유**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26431\n\n8. **인프라를 위한 Claude Code**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26430\n\n9. **Microsoft의 Copilot 챗봇이 문제에 직면**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26429\n\n10. **Ghidra MCP 서버 – AI 기반 리버스 엔지니어링을 위한 110개 도구 제공**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26428\n\n11. **대해제: 대규모 엔 캐리 트레이드 청산이 글로벌 시장을 뒤흔들다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26427\n\n12. **기니아충, 인류 두 번째 박멸 질병으로 향하다 — 2025년 인류 감염 10건만 보고**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26426\n\n13. **Show GN: agent-skill-cast - 여러 레포의 AI 에이전트 스킬을 동기화하는 CLI**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26425\n\n14. **에프스타인 PDF의 디지털 포렌식 사례 연구**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26424\n\n15. **AI가 B2B SaaS를 죽이고 있다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26423\n\n16. **Show GN: Claude Code 스웜 인텔리전스 플러그인**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26422\n\n17. **Show GN: Locatorjs를 Angular에서 쓰고 싶어서 만든 ngx-locator**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26421\n\n18. **Show GN: SessionCast - 모바일에서 Claude Code 원격 제어하기 (무료) **\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26420\n\n19. **LLM 코딩 에이전트를 활용한 pycparser의 Recursive Descent 파서 재작성기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26419\n\n20. **Show GN: 로제타 페이지 - 블로그, 아티클 번역 서비스**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26418\n\n21. **Ask GN: 에이전트 개발 관련한 커뮤니티를 추천해주심 감사하겠습니다 **\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26417\n\n22. **GPT-5.2와 GPT-5.2-Codex가 이제 40% 더 빨라짐**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26416\n\n23. **리눅스에서 AI 에이전트를 샌드박싱하기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26415\n\n24. **AliSQL - Alibaba의 오픈소스 MySQL 포크, 벡터 및 DuckDB 엔진 통합**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26414\n\n25. **소프트웨어 서바이벌 3.0 – 무엇을 만들어야 살아남는가**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26413\n\n26. **Clawdbot / OpenClaw에 대한 현실적이지만 매우 낙관적인 전망**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26412\n\n27. **Show GN: 소셜 아카이버 - SNS 포스팅의 저장 및 관리가 불편해서 만들었습니다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26411\n\n28. **Claude Code에 /insights 기능 추가**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26409\n\n29. **Claude는 사고를 위한 공간입니다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26408\n\n30. **아이폰 ‘락다운 모드’ 때문에 FBI가 워싱턴포스트 기자의 아이폰을 열지 못함**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26407\n\n31. **Voxtral Transcribe 2 모델 공개**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26406\n\n32. **깊이 생각하던 시절이 그리워요**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26405\n\n33. **Google의 공식 MCP 서버 모음**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26404\n\n34. **221 Cannon은 매물로 나와 있지 않음**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26403\n\n35. **Bunny Database**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26402\n\n36. **Watch our new Gemini ad ahead of football’s biggest weekend**\n   - 출처: Gemini\n   - 링크: https://blog.google/company-news/inside-google/company-announcements/gemini-ad-new-home/\n\n37. **Adding Canada Back to Our List of Accepted Countries of Incorporation**\n   - 출처: Y Combinator\n   - 링크: https://www.ycombinator.com/blog/adding-canada-back/\n\n38. **Chrome Dev for Android Update**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2026/02/chrome-dev-for-android-update.html\n\n39. **Chrome for Android Update**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2026/02/chrome-for-android-update_0634581710.html\n\n40. **Natively Adaptive Interfaces: A new framework for AI accessibility**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/company-news/outreach-and-initiatives/accessibility/natively-adaptive-interfaces-ai-accessibility/\n\n41. **How Google Cloud is helping Team USA elevate their tricks with AI**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/us-ski-snowboard-tool-winter-olympics-2026/\n\n42. **Watch our new Gemini ad ahead of football’s biggest weekend**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/company-news/inside-google/company-announcements/gemini-ad-new-home/\n\n43. **Q4 earnings call: Remarks from our CEO**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q4-2025/\n\n44. **GPT-5 lowers the cost of cell-free protein synthesis**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/gpt-5-lowers-protein-synthesis-cost\n\n45. **Introducing Trusted Access for Cyber**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/trusted-access-for-cyber\n\n46. **Introducing OpenAI Frontier**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/introducing-openai-frontier\n\n47. **Navigating health questions with ChatGPT**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/navigating-health-questions\n\n48. **Introducing GPT-5.3-Codex**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/introducing-gpt-5-3-codex\n\n49. **GPT-5.3-Codex System Card**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/gpt-5-3-codex-system-card\n\n50. **Efficient near-telomere-to-telomere assembly of nanopore simplex reads**\n   - 출처: Hacker News\n   - 링크: https://www.nature.com/articles/s41586-026-10105-6\n\n51. **MatPy – Pure Python linear algebra library with ODE solvers**\n   - 출처: Hacker News\n   - 링크: https://github.com/njryan-boou/matpy\n\n52. **Starlink fuels SpaceX growth with potential phone, more internet services**\n   - 출처: Hacker News\n   - 링크: https://www.reuters.com/business/media-telecom/starlink-fuels-spacex-growth-with-potential-phone-more-internet-services-2026-02-05/\n\n53. **OpenClaw (MoltBot) as a Service on DigitalOcean**\n   - 출처: Hacker News\n   - 링크: https://www.digitalocean.com/blog/openclaw-digitalocean-app-platform\n\n54. **Show HN: Linear MCP Fast – 10x faster Linear MCP reads from local cache**\n   - 출처: Hacker News\n   - 링크: https://github.com/everything-chalna/linear-mcp-fast\n\n55. **My Issues with ProtonMail**\n   - 출처: Hacker News\n   - 링크: https://tildeweb.nl/~michiel/protonmail-issues.html\n\n56. **Jane Street Blog – What if writing tests was a joyful experience?**\n   - 출처: Hacker News\n   - 링크: https://blog.janestreet.com/the-joy-of-expect-tests/\n\n57. **I accidentally became a FOSS maintainer**\n   - 출처: Hacker News\n   - 링크: https://www.hughrundle.net/i-accidentally-became-a-foss-maintainer-and-all-i-got-was-this-lousy-new-perspective-on-librarianship/\n\n58. **What Every Programmer Should Know About Memory [pdf]**\n   - 출처: Hacker News\n   - 링크: https://people.freebsd.org/~lstewart/articles/cpumemory.pdf\n\n59. **I design with Claude more than Figma now**\n   - 출처: Hacker News\n   - 링크: https://blog.janestreet.com/i-design-with-claude-code-more-than-figma-now-index/\n\n60. **Show HN: Sop-agents – Write Markdown, get coordinated agents**\n   - 출처: Hacker News\n   - 링크: https://github.com/serverless-dna/sop-agents\n\n61. **Binance denies issuing legal threats over insolvency allegations**\n   - 출처: Hacker News\n   - 링크: https://www.theblock.co/post/388578/binance-denies-issuing-legal-threats\n\n62. **Dash0 CLI v1.0.0**\n   - 출처: Hacker News\n   - 링크: https://github.com/dash0hq/dash0-cli\n\n63. **Merkle trees and build systems with OSTree and ninja**\n   - 출처: Hacker News\n   - 링크: https://lwn.net/Articles/821367/\n\n64. **Review of 1984 by Isaac Asimov (1980)**\n   - 출처: Hacker News\n   - 링크: https://www.newworker.org/ncptrory/1984.htm\n\n65. **Show HN: A note-taking tool for homebuyers**\n   - 출처: Hacker News\n   - 링크: https://tournotes.my/\n\n66. **Slack CLI for Agents (OSS)**\n   - 출처: Hacker News\n   - 링크: https://github.com/stablyai/agent-slack\n\n67. **Flower Labs and Starcloud Reach a Major AI Milestone in Orbit**\n   - 출처: Hacker News\n   - 링크: https://flower.ai/blog/2026-02-02-flower-labs-and-starcloud-reach-ai-milestone-in-orbit/\n\n68. **Show HN: Dream-team – assemble a team of Claude Code agents for your task**\n   - 출처: Hacker News\n   - 링크: https://github.com/drbscl/dream-team\n\n69. **Git's Magic Files**\n   - 출처: Hacker News\n   - 링크: https://nesbitt.io/2026/02/05/git-magic-files.html\n\n70. **Natively Adaptive Interfaces: A new framework for AI accessibility**\n   - 출처: AI\n   - 링크: https://blog.google/company-news/outreach-and-initiatives/accessibility/natively-adaptive-interfaces-ai-accessibility/\n\n71. **How Google Cloud is helping Team USA elevate their tricks with AI**\n   - 출처: AI\n   - 링크: https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/us-ski-snowboard-tool-winter-olympics-2026/\n\n72. **Watch our new Gemini ad ahead of football’s biggest weekend**\n   - 출처: AI\n   - 링크: https://blog.google/company-news/inside-google/company-announcements/gemini-ad-new-home/\n\n73. **Is AI the ultimate hackathon buddy? What we learned at ShipIt 61**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/teamwork/using-ai-for-hackathons\n\n74. **Our Q2 FY26 letter to shareholders**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/announcements/shareholder-letter-q2fy26\n\n75. **Webinar on Feb 10th: How to use AI to speed up your code review workflow**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/bitbucket/how-to-use-ai-to-speed-up-your-code-review-workflow\n\n76. **Java Annotated Monthly – February 2026**\n   - 출처: IntelliJ IDEA : IntelliJ IDEA – the IDE for Professional Development in Java and Kotlin | The JetBrains Blog\n   - 링크: https://blog.jetbrains.com/idea/2026/02/java-annotated-monthly-february-2026/\n\n77. **2025 Q4 DDoS threat report: A record-setting 31.4 Tbps attack caps a year of massive DDoS assaults**\n   - 출처: Cloudflare Blog\n   - 링크: https://blog.cloudflare.com/ddos-threat-report-2025-q4/\n\n78. **GeForce NOW Celebrates Six Years of Streaming With 24 Games in February**\n   - 출처: NVIDIA Blog\n   - 링크: https://blogs.nvidia.com/blog/geforce-now-thursday-feb-2026-games-list/\n\n79. **Announcing Claude Opus 4.6 on Vertex AI**\n   - 출처: AI \u0026 Machine Learning\n   - 링크: https://cloud.google.com/blog/products/ai-machine-learning/expanding-vertex-ai-with-claude-opus-4-6/\n\n\n",
+  "articles": [
+    {
+      "title": "February 2026 Insiders (version 1.110)",
+      "link": "https://code.visualstudio.com/updates/v1_110",
+      "source": "Visual Studio Code - Code Editing. Redefined.",
+      "category": "tech",
+      "publishedAt": "2026-03-04T17:00:00Z",
+      "description": "\n      \u003cp\u003eLearn what is new in the Visual Studio Code February 2026 Release (1.110).\u003c/p\u003e\n      \u003cp\u003e\u003ca href=\"https://code.visualstudio.com/updates/v1_110\"\u003eRead the full article\u003c/a\u003e\u003c/p\u003e\n    "
+    },
+    {
+      "title": "Your Home for Multi-Agent Development",
+      "link": "https://code.visualstudio.com/blogs/2026/02/05/multi-agent-development",
+      "source": "Visual Studio Code - Code Editing. Redefined.",
+      "category": "tech",
+      "publishedAt": "2026-02-05T00:00:00Z",
+      "description": "\n      \u003cp\u003eVS Code has become the unified interface for all your coding agents. Manage local, background, and cloud agents in one place, use Claude and Codex agents alongside Copilot, and benefit from open standards like MCP and Agent Skills.\u003c/p\u003e\n      \u003cp\u003e\u003ca href=\"https://code.visualstudio.com/blogs/2026/02/05/multi-agent-development\"\u003eRead the full article\u003c/a\u003e\u003c/p\u003e\n    "
+    },
+    {
+      "title": "Continuous AI in practice: What developers can automate today with agentic CI",
+      "link": "https://github.blog/ai-and-ml/generative-ai/continuous-ai-in-practice-what-developers-can-automate-today-with-agentic-ci/",
+      "source": "GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-05T17:00:00Z",
+      "description": "\u003cp\u003eThink of Continuous AI as background agents that operate in your repository for tasks that require reasoning.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/ai-and-ml/generative-ai/continuous-ai-in-practice-what-developers-can-automate-today-with-agentic-ci/\"\u003eContinuous AI in practice: What developers can automate today with agentic CI\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Java Annotated Monthly – February 2026",
+      "link": "https://blog.jetbrains.com/idea/2026/02/java-annotated-monthly-february-2026/",
+      "source": "Java Annotated : IntelliJ IDEA | The JetBrains Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-05T09:53:48Z",
+      "description": "February is a strange little month. Short, quiet, and typically uneventful. There are fewer distractions and fewer launches, which makes it the ideal time to slow down and take a look at what is actually driving the tech world at the moment. This issue leans into that calm, with Trisha Gee joining us as our [\u0026#8230;]"
+    },
+    {
+      "title": "Introducing SyGra Studio",
+      "link": "https://huggingface.co/blog/ServiceNow-AI/sygra-studio",
+      "source": "Hugging Face - Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-05T16:52:28Z"
+    },
+    {
+      "title": "워싱턴포스트를 무너뜨린 제프 베이조스",
+      "link": "https://news.hada.io/topic?id=26432",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-06T05:33:31+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e아마존 창업자 \u003cstrong\u003e제프 베이조스\u003c/strong\u003e가 2013년 워싱턴포스트를 인수했으나, 2026년 대규모 해고로 인해 신문이 심각한 쇠퇴 국면에 들어섬\u003c/li\u003e\n\u003cli\u003e2023년과 2024년에 각각 \u003cstrong\u003e7,700만 달러와 1억 달러의 손실\u003c/strong\u003e을 기록한 뒤, 베이조스는 더 이상 적자를 감내하지 않고 인력 감축을 단행...\u003c/p\u003e"
+    },
+    {
+      "title": "나이 많은 직원을 유지할 때 기업이 얻는 이점에 대해 더 많은 기업이 주목하는 이유",
+      "link": "https://news.hada.io/topic?id=26431",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-06T04:37:29+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e숙련된 중장년층 인력의 가치\u003c/strong\u003e가 재조명되며, 기업들이 이들을 유지하려는 움직임이 확산 중임\u003c/li\u003e\n\u003cli\u003eB\u0026amp;Q와 BMW 사례에서 \u003cstrong\u003e고령 근로자 중심의 실험이 생산성과 수익성 향상\u003c/strong\u003e으로 이어졌음\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eAARP, OECD, BCG 연구\u003c/strong\u003e는 50세 이상 근로자가 많은...\u003c/p\u003e"
+    },
+    {
+      "title": "인프라를 위한 Claude Code",
+      "link": "https://news.hada.io/topic?id=26430",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-06T04:34:29+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eFluid\u003c/strong\u003e는 AI 에이전트가 실제 인프라를 안전하게 다룰 수 있도록 \u003cstrong\u003e샌드박스 복제 환경\u003c/strong\u003e을 만드는 터미널 기반 도구\u003c/li\u003e\n\u003cli\u003e복제된 VM이나 \u003cstrong\u003eKubernetes 클러스터\u003c/strong\u003e에서 명령 실행, 파일 수정, 연결 테스트를 수행하고 결과를 \u003cstrong\u003eAnsible Playbook\u003c/strong...\u003c/p\u003e"
+    },
+    {
+      "title": "Microsoft의 Copilot 챗봇이 문제에 직면",
+      "link": "https://news.hada.io/topic?id=26429",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-06T03:37:48+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eMicrosoft의 Copilot 챗봇\u003c/strong\u003e이 운영 과정에서 여러 \u003cstrong\u003e기술적 문제와 사용자 불만\u003c/strong\u003e에 직면\u003c/li\u003e\n\u003cli\u003e일부 사용자는 \u003cstrong\u003e응답 오류, 부정확한 결과, 성능 저하\u003c/strong\u003e 등을 보고\u003c/li\u003e\n\u003cli\u003e기업 내부에서도 \u003cstrong\u003eAI 통합 전략과 품질 관리\u003c/strong\u003e에 대한 우려가 제기\u003c/l...\u003c/p\u003e"
+    },
+    {
+      "title": "Ghidra MCP 서버 – AI 기반 리버스 엔지니어링을 위한 110개 도구 제공",
+      "link": "https://news.hada.io/topic?id=26428",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-06T03:34:48+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eGhidra MCP Server\u003c/strong\u003e는 Ghidra의 리버스 엔지니어링 기능을 \u003cstrong\u003eAI 및 자동화 프레임워크\u003c/strong\u003e와 연결하는 \u003cstrong\u003eModel Context Protocol(MCP)\u003c/strong\u003e 서버\u003c/li\u003e\n\u003cli\u003e110개의 MCP 도구와 \u003cstrong\u003e132개 엔드포인트\u003c/strong\u003e를 통해 함수 분석, 데이터 구조 탐색, 문자열 추출 등 ...\u003c/p\u003e"
+    },
+    {
+      "title": "대해제: 대규모 엔 캐리 트레이드 청산이 글로벌 시장을 뒤흔들다",
+      "link": "https://news.hada.io/topic?id=26427",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-06T02:33:15+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e최근 \u003cstrong\u003e주식·암호화폐·금속 시장의 급등락\u003c/strong\u003e은 일본 엔 캐리 트레이드의 강제 청산에서 비롯된 현상으로 설명됨\u003c/li\u003e\n\u003cli\u003e일본은행(BOJ)의 \u003cstrong\u003e2025년 12월 금리 인상(0.75%)\u003c/strong\u003e 과 다카이치 사나에 내각의 긴축적 신호가 글로벌 자금 조달 구조를 급격히 변화시킴\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e노...\u003c/p\u003e"
+    },
+    {
+      "title": "기니아충, 인류 두 번째 박멸 질병으로 향하다 — 2025년 인류 감염 10건만 보고",
+      "link": "https://news.hada.io/topic?id=26426",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-06T00:34:28+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e기니아충 감염증(Dracunculiasis)\u003c/strong\u003e 이 2025년 전 세계에서 단 10건만 보고되며, 인류 두 번째 박멸 질병으로 가까워짐\u003c/li\u003e\n\u003cli\u003e1986년 박멸 프로그램 시작 당시 \u003cstrong\u003e3백50만 건\u003c/strong\u003e이던 감염이 40년 만에 거의 사라짐\u003c/li\u003e\n\u003cli\u003e2025년 인류 감염은 \u003cstrong\u003e차드 4건, 에티오피아 4건...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: agent-skill-cast - 여러 레포의 AI 에이전트 스킬을 동기화하는 CLI",
+      "link": "https://news.hada.io/topic?id=26425",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-05T23:46:26+09:00",
+      "description": "\u003cp\u003ezip이나 위키 대신 git으로 AI 에이전트의 스킬을 공유하는 CLI 도구를 만들어봤습니다.\u003cbr /\u003e\n마법을 시전하는 것처럼 스킬을 시전한다는 의미에서 이름을 cast로 지었습니다.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e[ 개발 계기 ]\u003c/strong\u003e\u003cbr /\u003e\n크게 2가지 계기가 있습니다.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e첫 번째 문제\u003c/strong\u003e\u003cbr /\u003e\n스킬을 만들고 "
+    },
+    {
+      "title": "에프스타인 PDF의 디지털 포렌식 사례 연구",
+      "link": "https://news.hada.io/topic?id=26424",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-05T21:33:26+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e미국 법무부가 \u003cstrong\u003eEpstein Files Transparency Act\u003c/strong\u003e에 따라 공개한 PDF 문서들을 대상으로, 파일 구조와 구문을 중심으로 한 \u003cstrong\u003e디지털 포렌식 분석\u003c/strong\u003e이 수행됨\u003c/li\u003e\n\u003cli\u003e분석 결과, 공개된 \u003cstrong\u003eEFTA 데이터세트 01–07의 PDF들은 올바르게 편집(redaction)\u003c/strong\u003e 되어 있으며...\u003c/p\u003e"
+    },
+    {
+      "title": "AI가 B2B SaaS를 죽이고 있다",
+      "link": "https://news.hada.io/topic?id=26423",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-05T17:33:32+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eAI 기반 ‘바이브 코딩(vibe coding)’\u003c/strong\u003e 의 확산으로 기업 고객이 직접 맞춤형 툴을 만들 수 있게 되면서 기존 \u003cstrong\u003eB2B SaaS 모델이 위협\u003c/strong\u003e받고 있음\u003c/li\u003e\n\u003cli\u003e고객들은 더 이상 고정된 SaaS 기능에 만족하지 않고, \u003cstrong\u003e유연성과 즉각적 커스터마이징\u003c/strong\u003e을 요구하며, 충...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: Claude Code 스웜 인텔리전스 플러그인",
+      "link": "https://news.hada.io/topic?id=26422",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-05T15:53:57+09:00",
+      "description": "\u003cp\u003e지인분이 만든, Claude Code 플러그인입니다.\u003cbr /\u003e\n저도 최근에 멀티에이전트 모드를 조금씩 들여다 보고 있는 와중에\u003cbr /\u003e\n이런거 출시하셨다고 해서 소개차 글을 올려봅니다.\u003cbr /\u003e\n깃허브에 많은 피드백을 주시면 개발자분께 많은 도움이 됩니다.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show GN: Locatorjs를 Angular에서 쓰고 싶어서 만든 ngx-locator",
+      "link": "https://news.hada.io/topic?id=26421",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-05T15:49:04+09:00",
+      "description": "\u003cp\u003e리액트 개발하면서 유용하게 쓴 LocatorJs 익스텐션이 앵귤러는 지원을 안해서 직접 라이브러리 형태로 만들어보았습니다.\u003cbr /\u003e\nAngular 개발자가 한국에 얼마나 있을지는 모르겠지만, 도움될까하여 올려봅니다. (저는 업무에 증맬루 잘 쓰고 있습니다)\u003c/p\u003e\n\u003cp\u003e아직 많이 부족한 주니어 개발자다보니 완성도가 좋지 "
+    },
+    {
+      "title": "Show GN: SessionCast - 모바일에서 Claude Code 원격 제어하기 (무료) ",
+      "link": "https://news.hada.io/topic?id=26420",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-05T15:03:51+09:00",
+      "description": "\u003cp\u003eSessionCast 개발자입니다. 만들게 된 계기부터 말씀드릴게요.\u003c/p\u003e\n\u003cp\u003e회사에서 밤새 프로젝트 작업을 해놨습니다.\u003cbr /\u003e\n다음 날 고객사 미팅에 갔는데...\u003c/p\u003e\n\u003cp\u003e\u0026quot;아, 문서를 안 만들어놨네. Claude한테 질문 한 번만 하면 되는데...\u0026quot;\u003c/p\u003e\n\u003cp\u003e노트북을 열어봤자 회사 PC의 Claude Code는 저 멀리.\u003cbr /\u003e\n"
+    },
+    {
+      "title": "LLM 코딩 에이전트를 활용한 pycparser의 Recursive Descent 파서 재작성기",
+      "link": "https://news.hada.io/topic?id=26419",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-05T14:20:37+09:00",
+      "description": "\u003cp\u003e요약:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e20년 가까이 PLY(Python Lex-Yacc)를 기반으로 작동하던 C 언어 파서 'pycparser'를 LLM 코딩 에이전트(Codex)를 활용해 수동 작성 방식의 Recursive Descent 파서로 완전히 교체한 과정을 다룹니다.\u003c/li\u003e\n\u003cli\u003e외부 의존성(PLY) 제거, 유지보수 난이도 감소, 성능 30% 향상이라는 성과를 거두었으"
+    },
+    {
+      "title": "Show GN: 로제타 페이지 - 블로그, 아티클 번역 서비스",
+      "link": "https://news.hada.io/topic?id=26418",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-05T14:16:16+09:00",
+      "description": "\u003cp\u003e혹시 좋은 해외 글을 번역해서 지인들에게 공유하고 싶은데, 매번 '브라우저 번역기 돌려봐'라고 말하기 번거롭지 않으셨나요?\u003c/p\u003e\n\u003cp\u003e브라우저 번역기의 퀄리티가 최신 AI에 비하면 떨어지기도 하고, 공유 받는사람의 브라우저에 따라서 다르기 때문에 고정된 번역결과를 제공하면 좋겠다는 생각이 있었는데요.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Ask GN: 에이전트 개발 관련한 커뮤니티를 추천해주심 감사하겠습니다 ",
+      "link": "https://news.hada.io/topic?id=26417",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-05T12:49:01+09:00",
+      "description": "\u003cp\u003e안녕하세요\u003c/p\u003e\n\u003cp\u003e저는 이번에 에이전트 개발 관련한 툴을 하나 만드려합니다\u003c/p\u003e\n\u003cp\u003e근데 실제로 사람들이 좋아할지는 모르니까\u003c/p\u003e\n\u003cp\u003e혼자 해서 완제품을 내고 반응 보는것보단 커뮤에 속해서 물어보고 공유도 하면서 진행하는게 좋을 것 같아요\u003c/p\u003e\n\u003cp\u003e혹시 관련한 레딧, 디스코드, 톡방, 사이트\u003c/p\u003e\n\u003cp\u003e이런거 "
+    },
+    {
+      "title": "GPT-5.2와 GPT-5.2-Codex가 이제 40% 더 빨라짐",
+      "link": "https://news.hada.io/topic?id=26416",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-05T12:15:11+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eGPT-5.2와 GPT-5.2-Codex\u003c/strong\u003e 모델의 처리 속도가 기존 대비 \u003cstrong\u003e40% 향상\u003c/strong\u003e됨\u003c/li\u003e\n\u003cli\u003e모든 API 사용자를 위해 추론 스택을 최적화\u003c/li\u003e\n\u003cli\u003e같은 모델과 같은 가중치지만, 더 낮은 지연시간을 확보\u003c/li\u003e\n\u003c/ul\u003e\n...\u003c/p\u003e"
+    },
+    {
+      "title": "리눅스에서 AI 에이전트를 샌드박싱하기",
+      "link": "https://news.hada.io/topic?id=26415",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-05T12:14:24+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eAI 개발 보조 도구\u003c/strong\u003e를 점점 더 자주 사용하는 상황에서, 시스템 안전성과 편의성을 모두 확보하기 위한 \u003cstrong\u003e샌드박스 실행 환경\u003c/strong\u003e이 필요해짐\u003c/li\u003e\n\u003cli\u003e기본적으로 Claude Code는 파일 접근이나 실행 시마다 허가를 요청하지만, 이는 반복적 확인으로 \u003cstrong\u003e작업 흐름을 방해\u003c/s...\u003c/p\u003e"
+    },
+    {
+      "title": "AliSQL - Alibaba의 오픈소스 MySQL 포크, 벡터 및 DuckDB 엔진 통합",
+      "link": "https://news.hada.io/topic?id=26414",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-05T12:11:26+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eAlibaba Group이 개발한 \u003cstrong\u003eMySQL 기반 오픈소스 브랜치\u003c/strong\u003e로, OLTP와 OLAP 기능을 통합한 데이터베이스 엔진\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eDuckDB 컬럼형 엔진\u003c/strong\u003e을 내장해 분석 쿼리에서 \u003cstrong\u003e최대 200배 빠른 성능\u003c/strong\u003e을 제공\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eHNSW 기반 벡터 검색\u003c/strong\u003e을 지원하며, 최...\u003c/p\u003e"
+    },
+    {
+      "title": "소프트웨어 서바이벌 3.0 – 무엇을 만들어야 살아남는가",
+      "link": "https://news.hada.io/topic?id=26413",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-05T11:31:02+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eAI가 모든 소프트웨어를 작성하는 시대에는 \u003cstrong\u003e토큰(추론 비용)을 절약하는 소프트웨어\u003c/strong\u003e가 \u003cstrong\u003e진화론적 선택 압력\u003c/strong\u003e을 통해 살아남게 될 것\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e생존 비율\u003c/strong\u003e 공식을 통해 소프트웨어의 적합도를 측정하며, 인지 절약이 인지 비용을 넘어서는 경우(1을 초과)에만...\u003c/p\u003e"
+    },
+    {
+      "title": "Clawdbot / OpenClaw에 대한 현실적이지만 매우 낙관적인 전망",
+      "link": "https://news.hada.io/topic?id=26412",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-05T11:04:06+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eOpenClaw\u003c/strong\u003e는 개인의 일정, 메시지, 웹 작업 등을 자동화해주는 \u003cstrong\u003eAI 비서형 시스템\u003c/strong\u003e으로, 최근 폭발적인 관심을 받고 있음\u003c/li\u003e\n\u003cli\u003e사용자는 OpenClaw를 통해 \u003cstrong\u003e문자 메시지 기반 일정 관리, 가격 모니터링, 가정 내 재고 관리, 예약 및 양식 자동화\u003c/strong\u003e 등을 수행...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: 소셜 아카이버 - SNS 포스팅의 저장 및 관리가 불편해서 만들었습니다",
+      "link": "https://news.hada.io/topic?id=26411",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-05T10:43:38+09:00",
+      "description": "\u003cp\u003eSNS를 개인적으로 많이 하지 않고, 좋아하지도 않습니다. 다만, SNS에서 좋은 글을 올려주시는 몇몇 분들 때문에 들어가서 종종 봅니다.\u003c/p\u003e\n\u003cp\u003e글들을 저장하기 위해 플랫폼에서 저장하기 같은 기능을 제공하는데 이게 결국 플랫폼마다 파편화 되어있습니다. 인스타그램에서 저장한 건 인스타그램에서만 볼 수 있고,"
+    },
+    {
+      "title": "Claude Code에 /insights 기능 추가",
+      "link": "https://news.hada.io/topic?id=26409",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-05T10:00:02+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e클로드 코드가 \u003cstrong\u003e지난 한 달간의 메시지 기록\u003c/strong\u003e을 읽어서 \u003cstrong\u003e사용 패턴을 분석\u003c/strong\u003e하고 보고서를 작성해줌\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e프로젝트들을 요약\u003c/strong\u003e해주고, Claude Code를 어떻게 사용하는지, 그리고 \u003cstrong\u003e워크플로 개선을 위한 제안\u003c/strong\u003e도 제공\u003c/li\u003e\n\u003cli\u003eClaude Code v2...\u003c/p\u003e"
+    },
+    {
+      "title": "Claude는 사고를 위한 공간입니다",
+      "link": "https://news.hada.io/topic?id=26408",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-05T09:47:32+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eAnthropic은 광고가 경쟁과 제품 발견에 기여함을 인정하지만, \u003cstrong\u003eClaude 대화 내 광고는 부적합\u003c/strong\u003e하다고 생각함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eClaude\u003c/strong\u003e는 사용자의 사고와 업무를 돕는 \u003cstrong\u003e광고 없는 AI 어시스턴트\u003c/strong\u003e로 설계되었으며,\u003cbr /\u003e\n\u003cstrong\u003e광고 기반 모델\u003c/strong\u003e은 사용자 이...\u003c/p\u003e"
+    },
+    {
+      "title": "아이폰 ‘락다운 모드’ 때문에 FBI가 워싱턴포스트 기자의 아이폰을 열지 못함",
+      "link": "https://news.hada.io/topic?id=26407",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-05T09:44:32+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e락다운 모드가 활성화된 아이폰\u003c/strong\u003e으로 인해 FBI가 압수한 기자의 기기를 포렌식 분석하지 못한 사실이 법원 문서에서 드러남\u003c/li\u003e\n\u003cli\u003e워싱턴포스트 기자의 아이폰은 압수 당시 \u003cstrong\u003e전원이 켜진 상태였지만 락다운 모드\u003c/strong\u003e로 인해 추출 불가 상태였음\u003c/li\u003e\n\u003cli\u003eFBI의 \u003cstrong\u003eComput...\u003c/p\u003e"
+    },
+    {
+      "title": "Voxtral Transcribe 2 모델 공개",
+      "link": "https://news.hada.io/topic?id=26406",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-05T09:41:32+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e초저지연 \u003cstrong\u003e실시간 음성 인식\u003c/strong\u003e과 \u003cstrong\u003e고정밀 화자 분리\u003c/strong\u003e 기능을 갖춘 \u003cstrong\u003e차세대 음성-텍스트 변환 모델\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e두 가지 모델로 구성되며, \u003cstrong\u003eVoxtral Mini Transcribe V2\u003c/strong\u003e는 배치 처리용, \u003cstrong\u003eVoxtral Realtime\u003c/strong\u003e은 실시간 응용을 위한 구...\u003c/p\u003e"
+    },
+    {
+      "title": "깊이 생각하던 시절이 그리워요",
+      "link": "https://news.hada.io/topic?id=26405",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-05T09:38:31+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eAI 코딩 도구의 등장으로 \u003cstrong\u003e깊이 사고하는 경험\u003c/strong\u003e이 급격히 줄어들면서, 엔지니어로서의 \u003cstrong\u003e성장이 정체\u003c/strong\u003e된 느낌을 받고 있음\u003c/li\u003e\n\u003cli\u003e내 안에 있는 \u003cstrong\u003e'빌더(Builder)'와 '싱커(Thinker)'\u003c/strong\u003e 중, \u003cstrong\u003e빌더는 AI 덕분에 만족\u003c/strong\u003e되지만 \u003cstrong\u003e싱커는 굶주리고...\u003c/p\u003e"
+    },
+    {
+      "title": "Google의 공식 MCP 서버 모음",
+      "link": "https://news.hada.io/topic?id=26404",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-05T09:28:38+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eGoogle이 관리하는 \u003cstrong\u003e원격 MCP 서버\u003c/strong\u003e와 \u003cstrong\u003e오픈소스 MCP 서버\u003c/strong\u003e의 공식 리스트\u003c/li\u003e\n\u003cli\u003e원격 서버는 \u003cstrong\u003eGoogle Maps, BigQuery, GKE, Compute Engine\u003c/strong\u003e 등 주요 Google Cloud 서비스와 연동 지원\u003c/li\u003e\n\u003cli\u003e오픈소스 서버는 \u003cstrong\u003eGoogle Workspace, Firebase, Cloud ...\u003c/p\u003e"
+    },
+    {
+      "title": "221 Cannon은 매물로 나와 있지 않음",
+      "link": "https://news.hada.io/topic?id=26403",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-05T08:33:34+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e미국 코네티컷주 윌턴의 \u003cstrong\u003e221 Cannon Road 부지\u003c/strong\u003e가 실제 소유자 동의 없이 반복적으로 매물로 등록되는 \u003cstrong\u003e부동산 사기 사건\u003c/strong\u003e 발생\u003c/li\u003e\n\u003cli\u003e사기범은 \u003cstrong\u003e소유자 행세\u003c/strong\u003e를 하며 부동산 중개인에게 접근, \u003cstrong\u003e정확한 토지 정보와 위조 신분증\u003c/strong\u003e을 이용해 거...\u003c/p\u003e"
+    },
+    {
+      "title": "Bunny Database",
+      "link": "https://news.hada.io/topic?id=26402",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-05T07:33:18+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eBunny Database\u003c/strong\u003e는 SQLite와 호환되는 \u003cstrong\u003e엣지 기반 관리형 데이터베이스 서비스\u003c/strong\u003e로, 유휴 시 자동으로 중단되고 전 세계 어디서나 낮은 지연시간을 유지함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eDBaaS 플랫폼의 고비용 구조\u003c/strong\u003e와 복잡한 설정 문제를 해결하기 위해, 간단한 배포와 사용량 기...\u003c/p\u003e"
+    },
+    {
+      "title": "Watch our new Gemini ad ahead of football’s biggest weekend",
+      "link": "https://blog.google/company-news/inside-google/company-announcements/gemini-ad-new-home/",
+      "source": "Gemini",
+      "category": "tech",
+      "publishedAt": "2026-02-05T14:30:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/SB_2026_New_Home_16_9_Thumbnail.max-600x600.format-webp.webp\"\u003eLearn more about Google’s new ad that will run during football’s Big Game on February 8."
+    },
+    {
+      "title": "Adding Canada Back to Our List of Accepted Countries of Incorporation",
+      "link": "https://www.ycombinator.com/blog/adding-canada-back/",
+      "source": "Y Combinator",
+      "category": "tech",
+      "publishedAt": "2026-02-05T17:00:00Z",
+      "description": "After hearing feedback from Canadian founders in our network, we are adding Canada back to our list of accepted countries of incorporation."
+    },
+    {
+      "title": "Chrome Dev for Android Update",
+      "link": "http://chromereleases.googleblog.com/2026/02/chrome-dev-for-android-update.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2026-02-05T07:43:51.422-08:00",
+      "description": "\u003cp\u003eHi everyone! We've just released Chrome Dev 146 (146.0.7668.0) for Android. It's now available on \u003ca href=\"https://play.google.com/store/apps/details?id=com.chrome.dev\"\u003eGoogle Play\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eYou can see a partial list of the changes in the \u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/146.0.7655.6..146.0.7668.0?pretty=fuller\u0026amp;n=10000\"\u003eGit log\u003c/a\u003e. For details on new features, check out the \u003ca href=\"https://blog.chromium.org\"\u003eChromium blog\u003c/a\u003e, and for details on web platform updates, check \u003ca href=\"https://www.chromestatus.com/features#milestone%3D146\"\u003ehere\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eIf you find a new issue, please let us know by \u003ca href=\"https://code.google.com/p/chromium/issues/entry?template=Android%20Issue\"\u003efiling a bug\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eChrome Release Team\u003cbr /\u003e\u003ca href=\"https://www.google.com/chrome\"\u003e\u003c/a\u003e\u003ca href=\"https://www.google.com/chrome\"\u003eGoogle Chrome\u003c/a\u003e\u003c/p\u003e"
+    },
+    {
+      "title": "Chrome for Android Update",
+      "link": "http://chromereleases.googleblog.com/2026/02/chrome-for-android-update_0634581710.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2026-02-04T16:00:00-08:00",
+      "description": "\u003cp\u003e\u0026nbsp;Hello Everyone! We've just released Chrome 145 (145.0.7632.45) for Android to a small percentage of users. It'll become\u0026nbsp;\u003ca href=\"https://play.google.com/store/apps/details?id=com.android.chrome\"\u003eavailable on Google Play\u003c/a\u003e\u0026nbsp;over the next few days. You can find more details about early Stable releases\u0026nbsp;\u003ca href=\"https://developer.chrome.com/blog/early-stable/\"\u003ehere\u003c/a\u003e.\u003c/p\u003eThis release includes stability and performance improvements. You can see a full list of the changes in the\u0026nbsp;\u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/145.0.7632.26..145.0.7632.45?pretty=fuller\u0026amp;n=10000\"\u003eGit log\u003c/a\u003e. If you find a new issue, please let us know by\u0026nbsp;\u003ca href=\"https://code.google.com/p/chromium/issues/entry?template=Android%20Issue\"\u003efiling a bug\u003c/a\u003e.\u003cbr /\u003e\u003cbr /\u003eHarry Souders\u003cbr /\u003e\u003ca href=\"https://www.google.com/chrome/\"\u003eGoogle Chrome\u003c/a\u003e"
+    },
+    {
+      "title": "Natively Adaptive Interfaces: A new framework for AI accessibility",
+      "link": "https://blog.google/company-news/outreach-and-initiatives/accessibility/natively-adaptive-interfaces-ai-accessibility/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-05T17:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Natively_Adaptive_Interfaces_He.max-600x600.format-webp.webp\"\u003eLearn how Google's NAI framework uses AI to make technology more adaptive, inclusive and helpful for everyone."
+    },
+    {
+      "title": "How Google Cloud is helping Team USA elevate their tricks with AI",
+      "link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/us-ski-snowboard-tool-winter-olympics-2026/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-05T16:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/helping_Team_USA_Hero.max-600x600.format-webp.webp\"\u003eGoogle Cloud built an industry-first AI tool to help U.S. Ski and Snowboard athletes."
+    },
+    {
+      "title": "Watch our new Gemini ad ahead of football’s biggest weekend",
+      "link": "https://blog.google/company-news/inside-google/company-announcements/gemini-ad-new-home/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-05T14:30:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/SB_2026_New_Home_16_9_Thumbnail.max-600x600.format-webp.webp\"\u003eLearn more about Google’s new ad that will run during football’s Big Game on February 8."
+    },
+    {
+      "title": "Q4 earnings call: Remarks from our CEO",
+      "link": "https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q4-2025/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-04T22:25:00Z",
+      "description": "Read CEO Sundar Pichai’s remarks from the Alphabet Q4 2025 earnings call."
+    },
+    {
+      "title": "GPT-5 lowers the cost of cell-free protein synthesis",
+      "link": "https://openai.com/index/gpt-5-lowers-protein-synthesis-cost",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2026-02-05T11:00:00Z",
+      "description": "An autonomous lab combining OpenAI’s GPT-5 with Ginkgo Bioworks’ cloud automation cut cell-free protein synthesis costs by 40% through closed-loop experimentation."
+    },
+    {
+      "title": "Introducing Trusted Access for Cyber",
+      "link": "https://openai.com/index/trusted-access-for-cyber",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2026-02-05T10:00:00Z",
+      "description": "OpenAI introduces Trusted Access for Cyber, a trust-based framework that expands access to frontier cyber capabilities while strengthening safeguards against misuse."
+    },
+    {
+      "title": "Introducing OpenAI Frontier",
+      "link": "https://openai.com/index/introducing-openai-frontier",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2026-02-05T06:00:00Z",
+      "description": "OpenAI Frontier is an enterprise platform for building, deploying, and managing AI agents with shared context, onboarding, permissions, and governance."
+    },
+    {
+      "title": "Navigating health questions with ChatGPT",
+      "link": "https://openai.com/index/navigating-health-questions",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2026-02-05T00:00:00Z",
+      "description": "A family shares how ChatGPT helped them prepare for critical cancer treatment decisions for their son alongside expert guidance from his doctors."
+    },
+    {
+      "title": "Introducing GPT-5.3-Codex",
+      "link": "https://openai.com/index/introducing-gpt-5-3-codex",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2026-02-05T00:00:00Z",
+      "description": "GPT-5.3-Codex is a Codex-native agent that pairs frontier coding performance with general reasoning to support long-horizon, real-world technical work."
+    },
+    {
+      "title": "GPT-5.3-Codex System Card",
+      "link": "https://openai.com/index/gpt-5-3-codex-system-card",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2026-02-05T00:00:00Z",
+      "description": "GPT‑5.3-Codex is the most capable agentic coding model to date, combining the frontier coding performance of GPT‑5.2-Codex with the reasoning and professional knowledge capabilities of GPT‑5.2. "
+    },
+    {
+      "title": "Efficient near-telomere-to-telomere assembly of nanopore simplex reads",
+      "link": "https://www.nature.com/articles/s41586-026-10105-6",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-05T22:03:05Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nature.com/articles/s41586-026-10105-6\"\u003ehttps://www.nature.com/articles/s41586-026-10105-6\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46906022\"\u003ehttps://news.ycombinator.com/item?id=46906022\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "MatPy – Pure Python linear algebra library with ODE solvers",
+      "link": "https://github.com/njryan-boou/matpy",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-05T22:02:44Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/njryan-boou/matpy\"\u003ehttps://github.com/njryan-boou/matpy\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46906016\"\u003ehttps://news.ycombinator.com/item?id=46906016\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Starlink fuels SpaceX growth with potential phone, more internet services",
+      "link": "https://www.reuters.com/business/media-telecom/starlink-fuels-spacex-growth-with-potential-phone-more-internet-services-2026-02-05/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-05T22:00:19Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.reuters.com/business/media-telecom/starlink-fuels-spacex-growth-with-potential-phone-more-internet-services-2026-02-05/\"\u003ehttps://www.reuters.com/business/media-telecom/starlink-fuels-spacex-growth-with-potential-phone-more-internet-services-2026-02-05/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46905992\"\u003ehttps://news.ycombinator.com/item?id=46905992\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "OpenClaw (MoltBot) as a Service on DigitalOcean",
+      "link": "https://www.digitalocean.com/blog/openclaw-digitalocean-app-platform",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-05T21:59:04Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.digitalocean.com/blog/openclaw-digitalocean-app-platform\"\u003ehttps://www.digitalocean.com/blog/openclaw-digitalocean-app-platform\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46905977\"\u003ehttps://news.ycombinator.com/item?id=46905977\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Linear MCP Fast – 10x faster Linear MCP reads from local cache",
+      "link": "https://github.com/everything-chalna/linear-mcp-fast",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-05T21:57:19Z",
+      "description": "\n\u003cp\u003eThe official Linear MCP works great for writes, but reads were killing my context window in Claude Code. Every query made API calls and returned verbose responses with full user objects and workflow states I didn't need.\nSo I built a read-only MCP server that reads directly from Linear.app's local IndexedDB cache on macOS. It decodes Y.js CRDT-encoded issue descriptions locally too. Zero API calls, smaller responses, no rate limits, works offline.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46905960\"\u003ehttps://news.ycombinator.com/item?id=46905960\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "My Issues with ProtonMail",
+      "link": "https://tildeweb.nl/~michiel/protonmail-issues.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-05T21:53:06Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://tildeweb.nl/~michiel/protonmail-issues.html\"\u003ehttps://tildeweb.nl/~michiel/protonmail-issues.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46905916\"\u003ehttps://news.ycombinator.com/item?id=46905916\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Jane Street Blog – What if writing tests was a joyful experience?",
+      "link": "https://blog.janestreet.com/the-joy-of-expect-tests/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-05T21:51:51Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://blog.janestreet.com/the-joy-of-expect-tests/\"\u003ehttps://blog.janestreet.com/the-joy-of-expect-tests/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46905896\"\u003ehttps://news.ycombinator.com/item?id=46905896\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "I accidentally became a FOSS maintainer",
+      "link": "https://www.hughrundle.net/i-accidentally-became-a-foss-maintainer-and-all-i-got-was-this-lousy-new-perspective-on-librarianship/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-05T21:51:34Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.hughrundle.net/i-accidentally-became-a-foss-maintainer-and-all-i-got-was-this-lousy-new-perspective-on-librarianship/\"\u003ehttps://www.hughrundle.net/i-accidentally-became-a-foss-maintainer-and-all-i-got-was-this-lousy-new-perspective-on-librarianship/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46905890\"\u003ehttps://news.ycombinator.com/item?id=46905890\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "What Every Programmer Should Know About Memory [pdf]",
+      "link": "https://people.freebsd.org/~lstewart/articles/cpumemory.pdf",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-05T21:50:49Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://people.freebsd.org/~lstewart/articles/cpumemory.pdf\"\u003ehttps://people.freebsd.org/~lstewart/articles/cpumemory.pdf\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46905880\"\u003ehttps://news.ycombinator.com/item?id=46905880\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "I design with Claude more than Figma now",
+      "link": "https://blog.janestreet.com/i-design-with-claude-code-more-than-figma-now-index/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-05T21:47:24Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://blog.janestreet.com/i-design-with-claude-code-more-than-figma-now-index/\"\u003ehttps://blog.janestreet.com/i-design-with-claude-code-more-than-figma-now-index/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46905837\"\u003ehttps://news.ycombinator.com/item?id=46905837\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Sop-agents – Write Markdown, get coordinated agents",
+      "link": "https://github.com/serverless-dna/sop-agents",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-05T21:45:04Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/serverless-dna/sop-agents\"\u003ehttps://github.com/serverless-dna/sop-agents\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46905810\"\u003ehttps://news.ycombinator.com/item?id=46905810\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Binance denies issuing legal threats over insolvency allegations",
+      "link": "https://www.theblock.co/post/388578/binance-denies-issuing-legal-threats",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-05T21:43:13Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.theblock.co/post/388578/binance-denies-issuing-legal-threats\"\u003ehttps://www.theblock.co/post/388578/binance-denies-issuing-legal-threats\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46905792\"\u003ehttps://news.ycombinator.com/item?id=46905792\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Dash0 CLI v1.0.0",
+      "link": "https://github.com/dash0hq/dash0-cli",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-05T21:43:05Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/dash0hq/dash0-cli\"\u003ehttps://github.com/dash0hq/dash0-cli\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46905791\"\u003ehttps://news.ycombinator.com/item?id=46905791\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Merkle trees and build systems with OSTree and ninja",
+      "link": "https://lwn.net/Articles/821367/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-05T21:42:02Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://lwn.net/Articles/821367/\"\u003ehttps://lwn.net/Articles/821367/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46905782\"\u003ehttps://news.ycombinator.com/item?id=46905782\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Review of 1984 by Isaac Asimov (1980)",
+      "link": "https://www.newworker.org/ncptrory/1984.htm",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-05T21:39:57Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.newworker.org/ncptrory/1984.htm\"\u003ehttps://www.newworker.org/ncptrory/1984.htm\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46905761\"\u003ehttps://news.ycombinator.com/item?id=46905761\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 7\u003c/p\u003e\n\u003cp\u003e# Comments: 2\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: A note-taking tool for homebuyers",
+      "link": "https://tournotes.my/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-05T21:39:31Z",
+      "description": "\n\u003cp\u003eEasily capture thoughts during home tours, helping to remember and compare homes you've visited. Most tools are built and marketed towards agents, whereas this is built with the prospective buyer (novel concept...I know :) ) in mind to address their pain points and help choose the best home for them. MVP, so UI is a bit rough, but specifically requesting feedback around would you find this helpful in your search? (open to any though ofc) Bonus points if you are actively searching and use it!\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46905752\"\u003ehttps://news.ycombinator.com/item?id=46905752\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Slack CLI for Agents (OSS)",
+      "link": "https://github.com/stablyai/agent-slack",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-05T21:38:51Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/stablyai/agent-slack\"\u003ehttps://github.com/stablyai/agent-slack\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46905745\"\u003ehttps://news.ycombinator.com/item?id=46905745\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Flower Labs and Starcloud Reach a Major AI Milestone in Orbit",
+      "link": "https://flower.ai/blog/2026-02-02-flower-labs-and-starcloud-reach-ai-milestone-in-orbit/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-05T21:37:53Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://flower.ai/blog/2026-02-02-flower-labs-and-starcloud-reach-ai-milestone-in-orbit/\"\u003ehttps://flower.ai/blog/2026-02-02-flower-labs-and-starcloud-reach-ai-milestone-in-orbit/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46905730\"\u003ehttps://news.ycombinator.com/item?id=46905730\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Dream-team – assemble a team of Claude Code agents for your task",
+      "link": "https://github.com/drbscl/dream-team",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-05T21:37:05Z",
+      "description": "\n\u003cp\u003eFollowing the launch of Claude Code's new agent teams (orchestration) feature, I built a plugin to streamline the workflow, by:\u003cp\u003e- Identifying where you need more skills \u0026 agents to complete a task\n- Searching or making new skills \u0026 agents to fill those gaps\n- Dispatching a team of these agents to solve your problem\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46905717\"\u003ehttps://news.ycombinator.com/item?id=46905717\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Git's Magic Files",
+      "link": "https://nesbitt.io/2026/02/05/git-magic-files.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-05T21:36:19Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://nesbitt.io/2026/02/05/git-magic-files.html\"\u003ehttps://nesbitt.io/2026/02/05/git-magic-files.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46905711\"\u003ehttps://news.ycombinator.com/item?id=46905711\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Natively Adaptive Interfaces: A new framework for AI accessibility",
+      "link": "https://blog.google/company-news/outreach-and-initiatives/accessibility/natively-adaptive-interfaces-ai-accessibility/",
+      "source": "AI",
+      "category": "tech",
+      "publishedAt": "2026-02-05T17:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Natively_Adaptive_Interfaces_He.max-600x600.format-webp.webp\"\u003eLearn how Google's NAI framework uses AI to make technology more adaptive, inclusive and helpful for everyone."
+    },
+    {
+      "title": "How Google Cloud is helping Team USA elevate their tricks with AI",
+      "link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/us-ski-snowboard-tool-winter-olympics-2026/",
+      "source": "AI",
+      "category": "tech",
+      "publishedAt": "2026-02-05T16:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/helping_Team_USA_Hero.max-600x600.format-webp.webp\"\u003eGoogle Cloud built an industry-first AI tool to help U.S. Ski and Snowboard athletes."
+    },
+    {
+      "title": "Watch our new Gemini ad ahead of football’s biggest weekend",
+      "link": "https://blog.google/company-news/inside-google/company-announcements/gemini-ad-new-home/",
+      "source": "AI",
+      "category": "tech",
+      "publishedAt": "2026-02-05T14:30:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/SB_2026_New_Home_16_9_Thumbnail.max-600x600.format-webp.webp\"\u003eLearn more about Google’s new ad that will run during football’s Big Game on February 8."
+    },
+    {
+      "title": "Is AI the ultimate hackathon buddy? What we learned at ShipIt 61",
+      "link": "https://www.atlassian.com/blog/teamwork/using-ai-for-hackathons",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-05T22:00:17Z",
+      "description": "\u003cp\u003eAI assistance helped hackathon teams brainstorm faster, break down work, troubleshoot in real time, and polish both projects and presentations. \u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/teamwork/using-ai-for-hackathons\"\u003eIs AI the ultimate hackathon buddy? What we learned at ShipIt 61\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Our Q2 FY26 letter to shareholders",
+      "link": "https://www.atlassian.com/blog/announcements/shareholder-letter-q2fy26",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-05T21:00:00Z",
+      "description": "\u003cp\u003e☁️ From the CEO We had a fantastic Q2. We’re building a bloody great business. I’m convinced AI is great...\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/announcements/shareholder-letter-q2fy26\"\u003eOur Q2 FY26 letter to shareholders\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Webinar on Feb 10th: How to use AI to speed up your code review workflow",
+      "link": "https://www.atlassian.com/blog/bitbucket/how-to-use-ai-to-speed-up-your-code-review-workflow",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-05T17:24:56Z",
+      "description": "\u003cp\u003eWith the rapid increase in AI-generated code, do you find yourself spending more time buried in PRs? Join us live...\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/bitbucket/how-to-use-ai-to-speed-up-your-code-review-workflow\"\u003eWebinar on Feb 10th: How to use AI to speed up your code review workflow\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Java Annotated Monthly – February 2026",
+      "link": "https://blog.jetbrains.com/idea/2026/02/java-annotated-monthly-february-2026/",
+      "source": "IntelliJ IDEA : IntelliJ IDEA – the IDE for Professional Development in Java and Kotlin | The JetBrains Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-05T09:53:48Z",
+      "description": "February is a strange little month. Short, quiet, and typically uneventful. There are fewer distractions and fewer launches, which makes it the ideal time to slow down and take a look at what is actually driving the tech world at the moment. This issue leans into that calm, with Trisha Gee joining us as our [\u0026#8230;]"
+    },
+    {
+      "title": "2025 Q4 DDoS threat report: A record-setting 31.4 Tbps attack caps a year of massive DDoS assaults",
+      "link": "https://blog.cloudflare.com/ddos-threat-report-2025-q4/",
+      "source": "Cloudflare Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-05T14:00:00Z",
+      "description": " The number of DDoS attacks more than doubled in 2025. The network layer is under particular threat as hyper-volumetric attacks grew 700%. "
+    },
+    {
+      "title": "GeForce NOW Celebrates Six Years of Streaming With 24 Games in February",
+      "link": "https://blogs.nvidia.com/blog/geforce-now-thursday-feb-2026-games-list/",
+      "source": "NVIDIA Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-05T14:00:53Z",
+      "description": "Break out the cake and green sprinkles — GeForce NOW is turning six. Since launch, members have streamed over 1 billion hours, and the party’s just getting started. Throughout February, members can look forward to new games, fresh ways to play across more devices and even more ways to bring RTX power to every screen\t\u003ca class=\"read-more\" href=\"https://blogs.nvidia.com/blog/geforce-now-thursday-feb-2026-games-list/\"\u003e\n\t\tRead Article\t\t\u003cspan data-icon=\"y\"\u003e\u003c/span\u003e\n\t\u003c/a\u003e\n\t"
+    },
+    {
+      "title": "Announcing Claude Opus 4.6 on Vertex AI",
+      "link": "https://cloud.google.com/blog/products/ai-machine-learning/expanding-vertex-ai-with-claude-opus-4-6/",
+      "source": "AI \u0026 Machine Learning",
+      "category": "tech",
+      "publishedAt": "2026-02-05T18:00:00Z",
+      "description": "\u003cdiv class=\"block-paragraph\"\u003e\u003cp data-block-key=\"tx35a\"\u003eAt Google Cloud, we’re committed to providing customers with the leading selection of models to build and scale production-ready AI apps and agents on a platform optimized for performance, trust, and global scale. Today, we’re further expanding Vertex AI’s curated collection of models with the addition of \u003ca href=\"https://www.anthropic.com/news/claude-opus-4-6\" target=\"_blank\"\u003eAnthropic’s newest release\u003c/a\u003e: \u003ca href=\"https://console.cloud.google.com/vertex-ai/publishers/anthropic/model-garden/claude-opus-4-6\"\u003e\u003cb\u003eClaude Opus 4.6\u003c/b\u003e\u003c/a\u003e.\u003c/p\u003e\u003cp data-block-key=\"efi3l\"\u003eClaude Opus 4.6 is Anthropic’s most powerful model yet. In addition to excelling at complex coding tasks and creating sophisticated agents, Opus 4.6 delivers a step-change in enterprise workflows—generating documents, spreadsheets, and presentations with professional polish and domain awareness. Top use cases include:\u003c/p\u003e\u003cul\u003e\u003cli data-block-key=\"7kouj\"\u003e\u003cb\u003eEnterprise workflows:\u003c/b\u003e Reach production-ready documents, spreadsheets, and presentations with fewer rounds of edits. Ideal for finance, legal, and other precision-critical verticals where polish and domain accuracy matter.\u003c/li\u003e\u003cli data-block-key=\"1c6sn\"\u003e\u003cb\u003eFinancial analysis:\u003c/b\u003e Connect the dots across regulatory filings, market reports, and internal data to surface insights.\u003c/li\u003e\u003cli data-block-key=\"bc2l7\"\u003e\u003cb\u003eCoding:\u003c/b\u003e Transform multi-day development projects into hours-long tasks, helping handle the full lifecycle from requirements gathering to implementation and maintenance with less oversight.\u003c/li\u003e\u003cli data-block-key=\"7j9pv\"\u003e\u003cb\u003eAgentic tasks:\u003c/b\u003e Orchestrate complex multi-step workflows across dozens of tools with improved reliability and recovery from errors.\u003c/li\u003e\u003cli data-block-key=\"730l1\"\u003e\u003cb\u003eComputer use:\u003c/b\u003e Unlock workflows that depend on complex visual interpretation and multi-step navigation.\u003c/li\u003e\u003c/ul\u003e\u003c/div\u003e\n\u003cdiv class=\"block-aside\"\u003e\u003cdl\u003e\n    \u003cdt\u003easide_block\u003c/dt\u003e\n    \u003cdd\u003e\u0026lt;ListValue: [StructValue([(\u0026#x27;title\u0026#x27;, \u0026#x27;Try Claude Opus 4.6 on Vertex AI\u0026#x27;), (\u0026#x27;body\u0026#x27;, \u0026lt;wagtail.rich_text.RichText object at 0x7f6153356e80\u0026gt;), (\u0026#x27;btn_text\u0026#x27;, \u0026#x27;Try today\u0026#x27;), (\u0026#x27;href\u0026#x27;, \u0026#x27;https://console.cloud.google.com/marketplace/product/anthropic/claude-opus-4-6\u0026#x27;), (\u0026#x27;image\u0026#x27;, None)])]\u0026gt;\u003c/dd\u003e\n\u003c/dl\u003e\u003c/div\u003e\n\u003cdiv class=\"block-paragraph_advanced\"\u003e\u003ch3\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eFeature availability\u003c/strong\u003e\u003c/h3\u003e\n\u003cdiv align=\"center\"\u003e\n\u003cdiv style=\"color: #5f6368; overflow-x: auto; overflow-y: hidden; width: 100%;\"\u003e\n\u003cdiv style=\"color: #5f6368; overflow-x: auto; overflow-y: hidden; width: 100%;\"\u003e\n\u003cdiv style=\"color: #5f6368; overflow-x: auto; overflow-y: hidden; width: 100%;\"\u003e\n\u003cdiv style=\"color: #5f6368; overflow-x: auto; overflow-y: hidden; width: 100%;\"\u003e\n\u003cdiv style=\"color: #5f6368; overflow-x: auto; overflow-y: hidden; width: 100%;\"\u003e\n\u003cdiv style=\"color: #5f6368; overflow-x: auto; overflow-y: hidden; width: 100%;\"\u003e\n\u003cdiv style=\"color: #5f6368; overflow-x: auto; overflow-y: hidden; width: 100%;\"\u003e\n\u003cdiv style=\"color: #5f6368; overflow-x: auto; overflow-y: hidden; width: 100%;\"\u003e\n\u003cdiv style=\"color: #5f6368; overflow-x: auto; overflow-y: hidden; width: 100%;\"\u003e\n\u003cdiv style=\"color: #5f6368; overflow-x: auto; overflow-y: hidden; width: 100%;\"\u003e\n\u003cdiv style=\"color: #5f6368; overflow-x: auto; overflow-y: hidden; width: 100%;\"\u003e\n\u003cdiv style=\"color: #5f6368; overflow-x: auto; overflow-y: hidden; width: 100%;\"\u003e\n\u003cdiv style=\"color: #5f6368; overflow-x: auto; overflow-y: hidden; width: 100%;\"\u003e\n\u003cdiv style=\"color: #5f6368; overflow-x: auto; overflow-y: hidden; width: 100%;\"\u003e\u003ctable style=\"width: 99.0862%;\"\u003e\u003ccolgroup\u003e\u003ccol style=\"width: 52.2029%;\"/\u003e\u003ccol style=\"width: 47.7971%;\"/\u003e\u003c/colgroup\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth scope=\"col\" style=\"vertical-align: top; border: 1px solid #000000; padding: 16px;\"\u003e\n\u003cp\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eFeature\u003c/strong\u003e\u003c/p\u003e\n\u003c/th\u003e\n\u003cth scope=\"col\" style=\"vertical-align: top; border: 1px solid #000000; padding: 16px;\"\u003e\n\u003cp\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eClaude Opus 4.6 on Vertex AI Availability\u003c/strong\u003e\u003c/p\u003e\n\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\n\u003ctr\u003e\n\u003ctd style=\"vertical-align: top; border: 1px solid #000000; padding: 16px;\"\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eAdaptive Thinking\u003c/span\u003e\u003c/p\u003e\n\u003c/td\u003e\n\u003ctd style=\"vertical-align: top; border: 1px solid #000000; padding: 16px;\"\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eGA \u003c/span\u003e\u003c/p\u003e\n\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd style=\"vertical-align: top; border: 1px solid #000000; padding: 16px;\"\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eFine-grained tool streaming toggle\u003c/span\u003e\u003c/p\u003e\n\u003c/td\u003e\n\u003ctd style=\"vertical-align: top; border: 1px solid #000000; padding: 16px;\"\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eGA\u003c/span\u003e\u003c/p\u003e\n\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd style=\"vertical-align: top; border: 1px solid #000000; padding: 16px;\"\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eEffort parameter\u003c/span\u003e\u003c/p\u003e\n\u003c/td\u003e\n\u003ctd style=\"vertical-align: top; border: 1px solid #000000; padding: 16px;\"\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eGA\u003c/span\u003e\u003c/p\u003e\n\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd style=\"vertical-align: top; border: 1px solid #000000; padding: 16px;\"\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e128k Output Tokens\u003c/span\u003e\u003c/p\u003e\n\u003c/td\u003e\n\u003ctd style=\"vertical-align: top; border: 1px solid #000000; padding: 16px;\"\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eGA\u003c/span\u003e\u003c/p\u003e\n\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd style=\"vertical-align: top; border: 1px solid #000000; padding: 16px;\"\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eCompaction API\u003c/span\u003e\u003c/p\u003e\n\u003c/td\u003e\n\u003ctd style=\"vertical-align: top; border: 1px solid #000000; padding: 16px;\"\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003ePreview\u003c/span\u003e\u003c/p\u003e\n\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd style=\"vertical-align: top; border: 1px solid #000000; padding: 16px;\"\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e1M Context Window\u003c/span\u003e\u003c/p\u003e\n\u003c/td\u003e\n\u003ctd style=\"vertical-align: top; border: 1px solid #000000; padding: 16px;\"\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003ePreview\u003c/span\u003e\u003c/p\u003e\n\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd style=\"vertical-align: top; border: 1px solid #000000; padding: 16px;\"\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eTool params quoting consistency\u003c/span\u003e\u003c/p\u003e\n\u003c/td\u003e\n\u003ctd style=\"vertical-align: top; border: 1px solid #000000; padding: 16px;\"\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eGA\u003c/span\u003e\u003c/p\u003e\n\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\n\u003c/table\u003e\u003c/div\u003e\n\u003c/div\u003e\n\u003c/div\u003e\n\u003c/div\u003e\n\u003c/div\u003e\n\u003c/div\u003e\n\u003c/div\u003e\n\u003c/div\u003e\n\u003c/div\u003e\n\u003c/div\u003e\n\u003c/div\u003e\n\u003c/div\u003e\n\u003c/div\u003e\n\u003c/div\u003e\n\u003c/div\u003e\n\u003ch3\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eBuild agentic systems with a complete AI stack\u003c/strong\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eVertex AI eliminates the trade-off between accessing frontier models and utilizing a world-class AI development platform. Because building sophisticated agents requires more than just a model, Vertex AI provides a complete agentic stack designed to manage the complexities of production, governance, and global scale. \u003c/span\u003e\u003c/p\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eRapidly build intelligent agents:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e Leverage the \u003c/span\u003e\u003ca href=\"https://cloud.google.com/products/agent-builder\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eVertex AI Agent Builder stack\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e—including the \u003c/span\u003e\u003ca href=\"https://google.github.io/adk-docs/\" rel=\"noopener\" target=\"_blank\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eAgent Development Kit\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e—to move multi-step agentic workflows from prototype to scaled production.\u003c/span\u003e\u003c/p\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eScale agents with fully managed services:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e Use \u003c/span\u003e\u003ca href=\"https://docs.cloud.google.com/agent-builder/agent-engine/overview\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eAgent Engine\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e to deploy and scale agents in a serverless environment. With Memory Bank and Sessions, your Claude-powered agents maintain persistent, long-term context across multiple interactions for a more natural user experience.\u003c/span\u003e\u003c/p\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eImprove performance and reduce costs:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e Maintain consistent performance during peak demand by reserving dedicated capacity at a fixed cost with Provisioned Throughput. To further improve efficiency, leverage features like \u003c/span\u003e\u003ca href=\"https://cloud.google.com/blog/products/ai-machine-learning/global-endpoint-for-claude-models-generally-available-on-vertex-ai?e=48754805\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003ethe global endpoint for Claude\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e, \u003c/span\u003e\u003ca href=\"https://docs.cloud.google.com/vertex-ai/generative-ai/docs/partner-models/claude/prompt-caching\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eprompt caching\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e with flexible Time To Live (TTL), \u003c/span\u003e\u003ca href=\"https://docs.cloud.google.com/vertex-ai/generative-ai/docs/partner-models/claude/batch\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003ebatch predictions\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e, \u003c/span\u003e\u003ca href=\"https://docs.cloud.google.com/vertex-ai/generative-ai/docs/partner-models/claude/web-search\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eweb search (preview)\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e, and a \u003c/span\u003e\u003ca href=\"https://docs.cloud.google.com/vertex-ai/generative-ai/docs/partner-models/claude/opus-4-6\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003e1M token context window (preview)\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e for Claude Opus 4.6.\u003c/span\u003e\u003c/p\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eRun on optimized infrastructure: \u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eVertex AI’s infrastructure is purpose-built to handle the compute demands of frontier models to help lower latency and improve efficiency.\u003c/span\u003e\u003c/p\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eGovern and secure at scale:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e Integrated governance controls keep agents on task and their actions logged. Secure the full AI stack including models and agents with Google Cloud’s foundational security and data residency controls, protect against novel AI threats like prompt injection and tool poisoning with\u003c/span\u003e \u003ca href=\"https://cloud.google.com/security/products/model-armor?e=48754805\u0026amp;hl=en\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eModel Armor\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e, and get advanced\u003c/span\u003e \u003ca href=\"https://cloud.google.com/security/securing-ai\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eAI Protection\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e in\u003c/span\u003e \u003ca href=\"https://cloud.google.com/security/products/security-command-center\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eSecurity Command Center\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e to prioritize AI risks and detect threats.\u003c/span\u003e\u003c/p\u003e\n\u003ch3\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eWhy builders choose Claude on Vertex AI\u003c/strong\u003e\u003c/h3\u003e\u003c/div\u003e\n\u003cdiv class=\"block-paragraph_with_image\"\u003e\u003cdiv class=\"article-module h-c-page\"\u003e\n  \u003cdiv class=\"h-c-grid uni-paragraph-wrap\"\u003e\n    \u003cdiv class=\"uni-paragraph\n      h-c-grid__col h-c-grid__col--8 h-c-grid__col-m--6 h-c-grid__col-l--6\n      h-c-grid__col--offset-2 h-c-grid__col-m--offset-3 h-c-grid__col-l--offset-3\"\u003e\n\n      \n\n\n\n\n\n\n  \n\n    \u003cfigure class=\"article-image--wrap-small\n      \n      \"\n      \u003e\n\n      \n      \n        \n        \u003cimg\n            src=\"https://storage.googleapis.com/gweb-cloudblog-publish/images/shopify_5g2sFtz.max-1000x1000.jpg\"\n        \n          alt=\"shopify\"\u003e\n        \n        \u003c/a\u003e\n      \n    \u003c/figure\u003e\n\n  \n\n\n\n\n\n      \u003cp data-block-key=\"qro5l\"\u003e“The combination of Claude and Vertex AI helps us empower millions of merchants with our AI-enabled commerce assistant, Sidekick. There’s been a lot of merchants that we’ve talked to that say Sidekick ‘feels like a lifeline for small businesses’ and helps them ‘come out on top’.”\u003cbr/\u003e- \u003cb\u003eAndrew McNamara, Director of Applied AI, Shopify\u003c/b\u003e\u003c/p\u003e\u003cp data-block-key=\"2ruvq\"\u003eRead the \u003ca href=\"https://cloud.google.com/customers/shopify?\"\u003ecase study\u003c/a\u003e\u003c/p\u003e\n    \u003c/div\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n\n\u003c/div\u003e\n\u003cdiv class=\"block-paragraph_with_image\"\u003e\u003cdiv class=\"article-module h-c-page\"\u003e\n  \u003cdiv class=\"h-c-grid uni-paragraph-wrap\"\u003e\n    \u003cdiv class=\"uni-paragraph\n      h-c-grid__col h-c-grid__col--8 h-c-grid__col-m--6 h-c-grid__col-l--6\n      h-c-grid__col--offset-2 h-c-grid__col-m--offset-3 h-c-grid__col-l--offset-3\"\u003e\n\n      \n\n\n\n\n\n\n  \n\n    \u003cfigure class=\"article-image--wrap-small\n      \n      \"\n      \u003e\n\n      \n      \n        \n        \u003cimg\n            src=\"https://storage.googleapis.com/gweb-cloudblog-publish/images/spring.max-1000x1000.jpg\"\n        \n          alt=\"spring\"\u003e\n        \n        \u003c/a\u003e\n      \n    \u003c/figure\u003e\n\n  \n\n\n\n\n\n      \u003cp data-block-key=\"qro5l\"\u003e“Claude in combination with Vertex AI, delivers stability and reliability for our customers when it comes to building code for complex multi-step tasks and executing tool calls.”\u003cbr/\u003e-\u003cb\u003e Amitay Gilboa, CEO, spring.new\u003c/b\u003e\u003c/p\u003e\u003cp data-block-key=\"74u7m\"\u003eRead the \u003ca href=\"https://cloud.google.com/customers/springnew\"\u003ecase study\u003c/a\u003e\u003c/p\u003e\n    \u003c/div\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n\n\u003c/div\u003e\n\u003cdiv class=\"block-paragraph_with_image\"\u003e\u003cdiv class=\"article-module h-c-page\"\u003e\n  \u003cdiv class=\"h-c-grid uni-paragraph-wrap\"\u003e\n    \u003cdiv class=\"uni-paragraph\n      h-c-grid__col h-c-grid__col--8 h-c-grid__col-m--6 h-c-grid__col-l--6\n      h-c-grid__col--offset-2 h-c-grid__col-m--offset-3 h-c-grid__col-l--offset-3\"\u003e\n\n      \n\n\n\n\n\n\n  \n\n    \u003cfigure class=\"article-image--wrap-small\n      \n      \"\n      \u003e\n\n      \n      \n        \n        \u003cimg\n            src=\"https://storage.googleapis.com/gweb-cloudblog-publish/images/telus_2m0A5TM.max-1000x1000.jpg\"\n        \n          alt=\"telus\"\u003e\n        \n        \u003c/a\u003e\n      \n    \u003c/figure\u003e\n\n  \n\n\n\n\n\n      \u003cp data-block-key=\"qro5l\"\u003e“Getting a model as powerful as Anthropic's Claude on Vertex AI is a win-win that makes life so much easier. We get a model that excels at tool calling on a comprehensive platform that integrates with our core Google Cloud workloads like GKE and Cloud Run — that's the magic.”\u003cbr/\u003e- \u003cb\u003eJustin Watts, Distinguished Engineer, TELUS\u003c/b\u003e\u003c/p\u003e\u003cp data-block-key=\"6cb9k\"\u003eRead the \u003ca href=\"https://cloud.google.com/customers/telusai\"\u003ecase study\u003c/a\u003e\u003c/p\u003e\n    \u003c/div\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n\n\u003c/div\u003e\n\u003cdiv class=\"block-paragraph_with_image\"\u003e\u003cdiv class=\"article-module h-c-page\"\u003e\n  \u003cdiv class=\"h-c-grid uni-paragraph-wrap\"\u003e\n    \u003cdiv class=\"uni-paragraph\n      h-c-grid__col h-c-grid__col--8 h-c-grid__col-m--6 h-c-grid__col-l--6\n      h-c-grid__col--offset-2 h-c-grid__col-m--offset-3 h-c-grid__col-l--offset-3\"\u003e\n\n      \n\n\n\n\n\n\n  \n\n    \u003cfigure class=\"article-image--wrap-small\n      \n      \"\n      \u003e\n\n      \n      \n        \n        \u003cimg\n            src=\"https://storage.googleapis.com/gweb-cloudblog-publish/images/augment_code.max-1000x1000.jpg\"\n        \n          alt=\"augment code\"\u003e\n        \n        \u003c/a\u003e\n      \n    \u003c/figure\u003e\n\n  \n\n\n\n\n\n      \u003cp data-block-key=\"qro5l\"\u003e“Thanks to the quality of Anthropic's technology and the ease of implementing it through Vertex AI, we switched our chat feature to Claude Sonnet 3.5 and improved performance in a single weekend.”\u003cbr/\u003e- \u003cb\u003eGuy Gur-Ari, co-founder of Augment Code\u003c/b\u003e\u003c/p\u003e\u003cp data-block-key=\"9rg02\"\u003eRead the \u003ca href=\"https://cloud.google.com/customers/augment\"\u003ecase study\u003c/a\u003e\u003c/p\u003e\n    \u003c/div\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n\n\u003c/div\u003e\n\u003cdiv class=\"block-paragraph_with_image\"\u003e\u003cdiv class=\"article-module h-c-page\"\u003e\n  \u003cdiv class=\"h-c-grid uni-paragraph-wrap\"\u003e\n    \u003cdiv class=\"uni-paragraph\n      h-c-grid__col h-c-grid__col--8 h-c-grid__col-m--6 h-c-grid__col-l--6\n      h-c-grid__col--offset-2 h-c-grid__col-m--offset-3 h-c-grid__col-l--offset-3\"\u003e\n\n      \n\n\n\n\n\n\n  \n\n    \u003cfigure class=\"article-image--wrap-small\n      \n      \"\n      \u003e\n\n      \n      \n        \n        \u003cimg\n            src=\"https://storage.googleapis.com/gweb-cloudblog-publish/images/paloalto_network.max-1000x1000.jpg\"\n        \n          alt=\"paloalto network\"\u003e\n        \n        \u003c/a\u003e\n      \n    \u003c/figure\u003e\n\n  \n\n\n\n\n\n      \u003cp data-block-key=\"axvy6\"\u003e“With Claude running on Vertex AI, we saw a 20% to 30% increase in code development velocity. Running Claude on Vertex AI not only accelerates development projects, it enables us to hardwire security into code before it ships.”\u003cbr/\u003e- \u003cb\u003eGunjan Patel, Director of Engineering, Office of the CPO at Palo Alto Networks\u003c/b\u003e\u003c/p\u003e\u003cp data-block-key=\"adrgi\"\u003eRead the \u003ca href=\"https://cloud.google.com/customers/palo-alto-networks\"\u003ecase study\u003c/a\u003e\u003c/p\u003e\n    \u003c/div\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n\n\u003c/div\u003e\n\u003cdiv class=\"block-paragraph_with_image\"\u003e\u003cdiv class=\"article-module h-c-page\"\u003e\n  \u003cdiv class=\"h-c-grid uni-paragraph-wrap\"\u003e\n    \u003cdiv class=\"uni-paragraph\n      h-c-grid__col h-c-grid__col--8 h-c-grid__col-m--6 h-c-grid__col-l--6\n      h-c-grid__col--offset-2 h-c-grid__col-m--offset-3 h-c-grid__col-l--offset-3\"\u003e\n\n      \n\n\n\n\n\n\n  \n\n    \u003cfigure class=\"article-image--wrap-small\n      \n      \"\n      \u003e\n\n      \n      \n        \n        \u003cimg\n            src=\"https://storage.googleapis.com/gweb-cloudblog-publish/images/replit_y7Kvqff.max-1000x1000.jpg\"\n        \n          alt=\"replit\"\u003e\n        \n        \u003c/a\u003e\n      \n    \u003c/figure\u003e\n\n  \n\n\n\n\n\n      \u003cp data-block-key=\"axvy6\"\u003e“Our AI agent is made more powerful through Claude models running on Vertex AI. This integration allows us to easily connect with other Google Cloud services, like Cloud Run, to work together behind the scenes to help customers turn their ideas into apps.”\u003cbr/\u003e- \u003cb\u003eAmjad Masad, Founder and CEO, Replit\u003c/b\u003e\u003c/p\u003e\u003cp data-block-key=\"8dvfn\"\u003eRead the \u003ca href=\"https://cloud.google.com/customers/replit\"\u003ecase study\u003c/a\u003e\u003c/p\u003e\n    \u003c/div\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n\n\u003c/div\u003e\n\u003cdiv class=\"block-paragraph_advanced\"\u003e\u003ch3\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eBuild enterprise agents with Claude Opus 4.6 on Vertex AI\u003c/strong\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eClaude Opus 4.6 is now \u003c/span\u003e\u003ca href=\"https://console.cloud.google.com/vertex-ai/publishers/anthropic/model-garden/claude-opus-4-6\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003egenerally available on Vertex AI\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e. Enterprises can also quickly deploy the model through \u003c/span\u003e\u003ca href=\"https://console.cloud.google.com/marketplace/product/anthropic/claude-opus-4-6\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eGoogle Cloud Marketplace\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e, streamlining procurement and billing.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eTo begin your development journey, explore our \u003c/span\u003e\u003ca href=\"https://github.com/GoogleCloudPlatform/vertex-ai-samples/blob/main/notebooks/official/generative_ai/anthropic_claude_intro.ipynb\" rel=\"noopener\" target=\"_blank\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003esample notebook\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e and visit our \u003c/span\u003e\u003ca href=\"https://cloud.google.com/vertex-ai/generative-ai/pricing#claude-models\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003edocumentation\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e for comprehensive pricing and regional availability details.\u003c/span\u003e\u003c/p\u003e\u003c/div\u003e"
+    }
+  ],
+  "generatedAt": "2026-02-06T07:12:33.522856405+09:00"
+}
