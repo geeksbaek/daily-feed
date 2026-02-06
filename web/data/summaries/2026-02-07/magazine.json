@@ -1,0 +1,450 @@
+{
+  "date": "2026-02-07",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2026년 2월 6일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** EU의 오픈소스 통신망 도입 실험과 AMD의 보안 취약점 방치 논란, 그리고 인간을 고용하는 AI 플랫폼의 등장까지 급변하는 기술 생태계를 확인하세요.\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### 🇪🇺 EU 집행위원회, MS Teams 대체제로 'Matrix' 오픈소스 도입 시험\n유럽연합(EU) 집행위원회가 내부 커뮤니케이션 도구로 마이크로소프트의 Teams 대신 오픈소스 프로토콜인 **Matrix** 기반의 솔루션을 시범 도입합니다. 이는 빅테크 의존도를 줄이고 '디지털 주권(Digital Sovereignty)'을 확보하려는 EU의 강력한 의지를 보여줍니다. Matrix는 분산형 네트워크 구조를 통해 데이터 보안과 상호운용성을 보장하며, 이번 시범 운영이 성공할 경우 공공 부문의 오픈소스 도입이 가속화될 전망입니다.\n\u003e **Key Point:** 빅테크 종속 탈피와 데이터 주권 확보를 위한 EU의 과감한 오픈소스 실험 [^7]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. 🛡️ AMD, 심각한 RCE 취약점 수정 거부 논란\n- **What:** AMD가 특정 프로세서 제품군에서 발견된 원격 코드 실행(RCE) 취약점에 대해 수정 패치를 제공하지 않겠다고 밝혔습니다.\n- **Why:** 해당 제품들이 지원 종료(EOL) 단계에 가깝거나 하드웨어 제약 등의 이유로 보이지만, RCE는 해커가 시스템을 완전히 장악할 수 있는 치명적인 결함입니다.\n- **Impact:** 보안 전문가들과 사용자들 사이에서 하드웨어 제조사의 책임 범위에 대한 비판이 거세지고 있으며, 신뢰도 하락이 우려됩니다. [^5]\n\n### 2. 🤖 AI가 인간을 고용한다? 'RentAHuman'과 에이전트의 진화\n- **What:** AI 에이전트가 작업을 수행하다가 막히는 부분이 생기면 인간에게 작업을 의뢰하고 비용을 지불하는 'RentAHuman' 플랫폼이 등장했습니다. 또한, 'Agent Teams'나 'SmythOS'처럼 AI끼리 팀을 이뤄 협업하는 기술도 쏟아지고 있습니다.\n- **Why:** AI의 자율성이 높아지면서 단순히 인간의 도구가 아니라, 업무의 주체로서 인간을 '리소스'로 활용하는 역전 현상이 발생하고 있습니다.\n- **Impact:** 'Human-in-the-loop'의 개념이 'AI-managed-human'으로 확장되며, 미래 노동 시장의 구조적 변화를 예고합니다. [^12][^28][^29]\n\n### 3. 📝 개발자 필독: VS Code 업데이트와 Daum 우편번호 API 변경\n- **What:** Visual Studio Code가 2026년 2월 버전(v1.110)을 공개하며 편집 기능을 강화했습니다. 한편, 한국 웹 개발의 필수 요소인 Daum(Kakao) 우편번호 서비스의 도메인과 JS API 네임스페이스 변경이 예고되었습니다.\n- **Why:** 서비스 안정화와 브랜드 통합 과정의 일환으로 보이며, 기존 연동 서비스들의 대대적인 수정이 필요합니다.\n- **Impact:** VS Code 업데이트로 개발 생산성이 향상되겠지만, Daum API 변경을 놓칠 경우 서비스 장애로 이어질 수 있어 즉각적인 대응이 요구됩니다. [^1][^18]\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **react-kakao-postcode** | 카카오 우편번호 서비스를 React에서 쉽게 사용할 수 있게 돕는 라이브러리 [^9] |\n| **Tool** | **Fiber** | Express.js 스타일의 고성능 Go 언어 웹 프레임워크 [^43] |\n| **Tool** | **Wine 11.2** | 리눅스/macOS에서 윈도우 앱을 실행하는 호환성 레이어 최신 업데이트 [^39] |\n| **Tool** | **MyFlames** | MySQL 쿼리 실행 계획을 대화형 플레임 그래프(FlameGraph)로 시각화 [^36] |\n| **Tool** | **Fjord** | 바닥부터 새로 만든 유닉스 계열 운영체제(OS) 프로젝트 [^48] |\n| **Tool** | **Memray** | Django 애플리케이션의 메모리 사용량을 프로파일링하는 도구 [^44] |\n| **Game** | **OpenCiv3** | 문명 3(Civilization III)의 오픈소스 크로스 플랫폼 재구현 프로젝트 [^49] |\n| **Paper** | **NumPy Parallelism** | 병렬 처리를 통해 NumPy 연산 속도를 극대화하는 방법 가이드 [^41] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n\n#### 🤖 AI \u0026 LLM (인공지능)\n* **Anthropic Opus 4.6 활용**: 최신 모델인 Opus 4.6을 최대한 활용하는 팁과 프로모션 정보가 공개되었습니다. [^13][^30]\n* **Craft Agents**: CLI 없이 자연어로 Claude Code를 제어하는 오픈소스 에이전트 UI입니다. [^15]\n* **WordPress MCP Adapter**: 워드프레스를 AI 에이전트와 연결하는 새로운 어댑터가 출시되었습니다. [^17]\n* **세계 모델(World Model)**: 로보틱스 분야에서 부족했던 퍼즐 조각인 '세계 모델'의 중요성을 다룹니다. [^21]\n* **병렬 Claude 컴파일러**: 여러 Claude 인스턴스를 병렬로 돌려 C 컴파일러를 구축한 실험입니다. [^22]\n* **OpenClaw**: Apple Intelligence가 보여줬어야 할 이상적인 모습을 구현한 오픈소스 프로젝트입니다. [^26]\n* **나의 AI 도입 여정**: 실제 비즈니스나 개인 워크플로우에 AI를 도입하며 겪은 경험담입니다. [^31]\n* **Jailbroken Gemini**: 탈옥된 제미나이 모델을 이용해 Opus 4.6으로 키네틱 무기를 설계하게 한 보안 실험입니다. [^35]\n* **Mindfulness \u0026 GenAI**: 마음챙김(Mindfulness)이 생성형 AI를 활용한 프로젝트 관리에 도움이 된다는 연구입니다. [^38]\n* **OpenAI 소식**: 한국 개인정보 처리방침 업데이트 및 AI 현지화(Localization) 전략이 발표되었습니다. [^53][^54]\n* **Vertex AI 최적화**: GKE Inference Gateway를 통해 Vertex AI의 지연 시간을 35% 단축한 사례입니다. [^55]\n\n#### 🔐 Security \u0026 Privacy (보안)\n* **Docker + Wiz VEX**: VEX(Vulnerability Exploitability eXchange)를 활용해 컨테이너 이미지의 취약점 노이즈를 줄이는 방법입니다. [^2]\n* **CIA World Factbook 중단**: CIA가 역사 깊은 'World Factbook' 발행을 중단하고 아카이브마저 삭제했습니다. [^8][^23]\n* **LinkedIn 확장 프로그램 검사**: 링크드인이 2,953개의 브라우저 확장 프로그램을 검사하며 데이터 수집을 단속하고 있습니다. [^16]\n* **내부 호스트명 유출**: 클라우드 환경에서 내부 호스트명이 외부로 유출될 때 발생하는 보안 위협을 다룹니다. [^25]\n* **Deflock 테러 조직 규정**: Flock CEO가 경쟁사인 Deflock을 '테러 조직'으로 규정하는 과격한 발언을 했습니다. [^24]\n* **데이터 포렌식**: 제프리 엡스타인 관련 데이터(PDF 복원, 타임라인 분석)를 기술적으로 분석한 글들이 화제입니다. [^6][^10]\n\n#### 💻 Dev \u0026 Infra (개발)\n* **Apple 개발자 소식**: 앱 리뷰 가이드라인이 업데이트되었으며, Swift 학생 챌린지 접수가 시작되었습니다. [^3][^4]\n* **Postgres 2026**: 2026년 현재, 복잡한 NoSQL 대신 \"그냥 Postgres를 쓰라\"는 조언이 여전히 유효함을 강조합니다. [^19]\n* **Azure PostgreSQL ChatGPT**: Azure의 PostgreSQL에서 ChatGPT 기능을 지원한다는 소식입니다. [^46]\n* **클라우드 소유론**: 클라우드를 임대(Rent)하지 말고 직접 하드웨어를 소유하라는 주장이 제기되었습니다. [^27]\n* **Chrome Dev 업데이트**: 데스크톱용 크롬 개발자 버전의 최신 업데이트가 배포되었습니다. [^32]\n* **컴파일러 코드 생성**: GCC와 Clang 모두 특정 상황에서 비효율적이거나 이상한 코드를 생성한다는 분석입니다. [^33]\n* **Emacs 설정**: straight.el과 use-package를 사용해 선언적이고 재현 가능한 Emacs 환경을 만드는 방법입니다. [^42]\n* **Janet as Database**: Janet 언어를 데이터베이스 용도로 활용하는 독특한 시도입니다. [^50]\n\n#### 🌍 Tech \u0026 Society (기술과 사회)\n* **BMW 수리할 권리 중단**: BMW의 새로운 혁신안이 사실상 사용자의 '수리할 권리'를 제한한다는 비판입니다. [^14]\n* **PMF vs MMF**: 제품-시장 적합성(PMF) 이전에 모델-시장 적합성(Model-Market Fit)을 먼저 확인해야 한다는 스타트업 조언입니다. [^20]\n* **1인 개발 회고**: 프로그램을 2.0 버전까지 업데이트하며 느낀 1인 개발자의 생생한 회고입니다. [^11]\n* **Covid-19와 메탄**: 팬데믹 기간 맑은 하늘이 역설적으로 메탄 배출 효과를 증폭시켰다는 연구 결과입니다. [^47]\n* **DNS 원리**: DNS가 어떻게 작동하는지 설명하는 친절한 가이드(Zine)입니다. [^51]\n* **단파 라디오 지도**: 전 세계 광대역 단파 라디오 수신기를 지도상에서 확인할 수 있는 사이트입니다. [^52]\n* **역사 속 기술**: 20세기 초 베를린에 계획되었던 현수식 철도(Suspension Railway)와 초기 기독교 문헌 아카이브가 소개되었습니다. [^37][^40]\n* **자기 계발**: \"당신에게 가장 필요했던 사람이 되라\"는 조언과 \"End Game Play\"에 대한 트윗이 주목받았습니다. [^34][^45]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘 뉴스는 '**주권(Sovereignty)**'이라는 키워드로 관통됩니다. EU는 통신 주권을 위해 오픈소스를 선택했고, 개발자들은 클라우드 임대 대신 하드웨어 소유를 고민하며, 사용자는 BMW와 AMD 사태를 통해 수리할 권리와 보안에 대한 제조사의 책임을 묻고 있습니다. 기술이 발전할수록 '누가 통제권을 갖는가'에 대한 질문은 더욱 중요해질 것입니다. 주말에는 Daum 우편번호 API 변경 사항을 꼭 체크해보세요!\n\n## Footnotes\n[^1]: February 2026 Insiders (version 1.110) - https://code.visualstudio.com/updates/v1_110\n[^2]: Reduce Vulnerability Noise with VEX: Wiz + Docker Hardened Images - https://www.docker.com/blog/reduce-vulnerability-noise-with-vex-wiz-docker-hardened-images/\n[^3]: Updated App Review Guidelines now available - https://developer.apple.com/news/?id=d75yllv4\n[^4]: Swift Student Challenge submissions are now open - https://developer.apple.com/news/?id=f0xw4t5r\n[^5]: AMD가 수정하지 않겠다고 한 원격 코드 실행(RCE) 취약점 - https://news.hada.io/topic?id=26467\n[^6]: 제프리 엡스타인을 만나지 않았던 때 - https://news.hada.io/topic?id=26466\n[^7]: 유럽연합 집행위원회, Microsoft Teams 대체를 위한 Matrix 오픈소스 통신 도입 시험 - https://news.hada.io/topic?id=26465\n[^8]: CIA가 ‘The World Factbook’ 발행을 중단하고 아카이브를 삭제 - https://news.hada.io/topic?id=26464\n[^9]: Show GN: react-kakao-postcode - 카카오 우편번호 서비스 React 라이브러리 - https://news.hada.io/topic?id=26463\n[^10]: 에이프스타인 PDF를 원본 인코딩 첨부파일에서 복원하기 - https://news.hada.io/topic?id=26462\n[^11]: Show GN: 1인 개발 프로그램 2.0까지 업데이트하며 느낀 것들 - https://news.hada.io/topic?id=26461\n[^12]: AI 에이전트가 인간을 고용한다, RentAHuman 플랫폼의 등장 - https://news.hada.io/topic?id=26460\n[^13]: Anthropic에서 소개하는 Opus 4.6 최대한 활용하기 - https://news.hada.io/topic?id=26459\n[^14]: BMW의 '새 혁신'은 사실상 수리할 권리에 대한 '중지' - https://news.hada.io/topic?id=26458\n[^15]: Craft Agents, CLI 없이 Claude Code를 쓰는 오픈소스 에이전트 UI - https://news.hada.io/topic?id=26457\n[^16]: LinkedIn이 2,953개의 브라우저 확장을 검사함 - https://news.hada.io/topic?id=26454\n[^17]: Abilities에서 AI 에이전트로: WordPress MCP Adapter 소개 - https://news.hada.io/topic?id=26453\n[^18]: Daum (Kakao) 우편번호 서비스 도메인 \u0026amp; JS API 네임스페이스 변경 안내 (사전 공지) - https://news.hada.io/topic?id=26451\n[^19]: 2026년, 그냥 Postgres를 쓰면 된다 - https://news.hada.io/topic?id=26449\n[^20]: PMF 전에 모델-마켓 핏(Model-Market Fit) 을 확인하세요 - https://news.hada.io/topic?id=26448\n[^21]: 로보틱스에서 빠진 퍼즐 조각: 세계 모델(World Model) - https://news.hada.io/topic?id=26447\n[^22]: 병렬 Claude 팀을 활용한 C 컴파일러 구축 - https://news.hada.io/topic?id=26446\n[^23]: CIA, ‘World Factbook’ 발행 중단 발표 - https://news.hada.io/topic?id=26445\n[^24]: Flock CEO가 Deflock을 ‘테러 조직’으로 규정 (2025) [영상] - https://news.hada.io/topic?id=26444\n[^25]: 내부 호스트명이 클라우드에 유출될 때 - https://news.hada.io/topic?id=26443\n[^26]: OpenClaw는 Apple Intelligence가 되었어야 할 모습 - https://news.hada.io/topic?id=26442\n[^27]: 클라우드를 임대하지 말고, 직접 소유하세요 - https://news.hada.io/topic?id=26441\n[^28]: SmythOS/sre - 에이전트형 AI를 위한 클라우드 네이티브 런타임 - https://news.hada.io/topic?id=26440\n[^29]: Agent Teams - Claude Code 세션 팀 오케스트레이션 - https://news.hada.io/topic?id=26439\n[^30]: Claude Opus 4.6 추가 사용 프로모션 - https://news.hada.io/topic?id=26438\n[^31]: 나의 AI 도입 여정 - https://news.hada.io/topic?id=26437\n[^32]: Chrome Dev for Desktop Update - http://chromereleases.googleblog.com/2026/02/chrome-dev-for-desktop-update.html\n[^33]: Both GCC and Clang generate strange/inefficient code - https://codingmarginalia.blogspot.com/2026/02/both-gcc-and-clang-generate.html\n[^34]: Choose to be the person you need the most - https://blog.aintapp.com/be-who-you-need-the-most/\n[^35]: Using a Jailbroken Gemini to Make Opus 4.6 Architect a Kinetic Kill Vehicle - https://recursion.wtf/posts/shadow_queen/\n[^36]: Visualize MySQL query execution plans as interactive FlameGraphs - https://github.com/vgrippa/myflames\n[^37]: Early Christian Writings - https://earlychristianwritings.com/\n[^38]: Mindfulness can support GenAI use in transforming project management - https://techxplore.com/news/2026-02-mindfulness-genai.html\n[^39]: Wine 11.2 – Run Windows Applications on Linux, BSD, Solaris and macOS - https://gitlab.winehq.org/wine/wine/-/releases/wine-11.2\n[^40]: In the early 20th century there were plans to build a Berlin suspension railway - https://old.reddit.com/r/berlin/comments/1qxs3gh/in_the_early_20th_century_there_were_plans_to/\n[^41]: Speeding Up NumPy with Parallelism - https://pythonspeed.com/articles/numpy-parallelism/\n[^42]: Declarative, Reproducible Emacs with straight.el and use-package - https://jakebox.github.io/posts/2026-02-05-declarative_reproducible.html\n[^43]: Fiber – An Express-inspired web framework written in Go - https://gofiber.io/\n[^44]: Django: Profile memory usage with Memray – Adam Johnson - https://adamj.eu/tech/2026/01/29/django-profile-memray/\n[^45]: End Game Play - https://twitter.com/WillManidis/status/2019850913599676524\n[^46]: Supporting ChatGPT on PostgreSQL in Azure - https://techcommunity.microsoft.com/blog/adforpostgresql/supporting-chatgpt-on-postgresql-in-azure/4490247\n[^47]: Covid-19 cleared the skies but also supercharged methane emissions - https://arstechnica.com/science/2026/02/covid-19-cleared-the-skies-but-also-supercharged-methane-emissions/\n[^48]: Fjord – A Unix-like OS built from scratch - https://codeberg.org/System44/fjord\n[^49]: OpenCiv3: Open-source, cross-platform reimagining of Civilization III - https://openciv3.org/\n[^50]: Using Janet as Database - https://www.1a-insec.net/blog/18-janet-as-database/\n[^51]: How DNS Works - https://wizardzines.com/zines/dns/\n[^52]: Wideband Shortwave Radio Receiver Map - http://rx.linkfanel.net/\n[^53]: Korea privacy policy - https://openai.com/policies/kr-privacy-policy\n[^54]: Making AI work for everyone, everywhere: our approach to localization - https://openai.com/index/our-approach-to-localization\n[^55]: How we cut Vertex AI latency by 35% with GKE Inference Gateway - https://cloud.google.com/blog/products/containers-kubernetes/how-gke-inference-gateway-improved-latency-for-vertex-ai/\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **February 2026 Insiders (version 1.110)**\n   - 출처: Visual Studio Code - Code Editing. Redefined.\n   - 링크: https://code.visualstudio.com/updates/v1_110\n\n2. **Reduce Vulnerability Noise with VEX: Wiz + Docker Hardened Images**\n   - 출처: Docker Blog\n   - 링크: https://www.docker.com/blog/reduce-vulnerability-noise-with-vex-wiz-docker-hardened-images/\n\n3. **Updated App Review Guidelines now available**\n   - 출처: Latest News - Apple Developer\n   - 링크: https://developer.apple.com/news/?id=d75yllv4\n\n4. **Swift Student Challenge submissions are now open**\n   - 출처: Latest News - Apple Developer\n   - 링크: https://developer.apple.com/news/?id=f0xw4t5r\n\n5. **AMD가 수정하지 않겠다고 한 원격 코드 실행(RCE) 취약점**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26467\n\n6. **제프리 엡스타인을 만나지 않았던 때**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26466\n\n7. **유럽연합 집행위원회, Microsoft Teams 대체를 위한 Matrix 오픈소스 통신 도입 시험**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26465\n\n8. **CIA가 ‘The World Factbook’ 발행을 중단하고 아카이브를 삭제**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26464\n\n9. **Show GN: react-kakao-postcode - 카카오 우편번호 서비스 React 라이브러리**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26463\n\n10. **에이프스타인 PDF를 원본 인코딩 첨부파일에서 복원하기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26462\n\n11. **Show GN: 1인 개발 프로그램 2.0까지 업데이트하며 느낀 것들**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26461\n\n12. **AI 에이전트가 인간을 고용한다, RentAHuman 플랫폼의 등장**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26460\n\n13. **Anthropic에서 소개하는 Opus 4.6 최대한 활용하기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26459\n\n14. **BMW의 '새 혁신'은 사실상 수리할 권리에 대한 '중지'**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26458\n\n15. **Craft Agents, CLI 없이 Claude Code를 쓰는 오픈소스 에이전트 UI**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26457\n\n16. **LinkedIn이 2,953개의 브라우저 확장을 검사함**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26454\n\n17. **Abilities에서 AI 에이전트로: WordPress MCP Adapter 소개**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26453\n\n18. **Daum (Kakao) 우편번호 서비스 도메인 \u0026amp; JS API 네임스페이스 변경 안내 (사전 공지)**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26451\n\n19. **2026년, 그냥 Postgres를 쓰면 된다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26449\n\n20. **PMF 전에 모델-마켓 핏(Model-Market Fit) 을 확인하세요**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26448\n\n21. **로보틱스에서 빠진 퍼즐 조각: 세계 모델(World Model)**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26447\n\n22. **병렬 Claude 팀을 활용한 C 컴파일러 구축**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26446\n\n23. **CIA, ‘World Factbook’ 발행 중단 발표**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26445\n\n24. **Flock CEO가 Deflock을 ‘테러 조직’으로 규정 (2025) [영상]**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26444\n\n25. **내부 호스트명이 클라우드에 유출될 때**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26443\n\n26. **OpenClaw는 Apple Intelligence가 되었어야 할 모습**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26442\n\n27. **클라우드를 임대하지 말고, 직접 소유하세요**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26441\n\n28. **SmythOS/sre - 에이전트형 AI를 위한 클라우드 네이티브 런타임**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26440\n\n29. **Agent Teams - Claude Code 세션 팀 오케스트레이션**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26439\n\n30. **Claude Opus 4.6 추가 사용 프로모션**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26438\n\n31. **나의 AI 도입 여정**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26437\n\n32. **Chrome Dev for Desktop Update**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2026/02/chrome-dev-for-desktop-update.html\n\n33. **Both GCC and Clang generate strange/inefficient code**\n   - 출처: Hacker News\n   - 링크: https://codingmarginalia.blogspot.com/2026/02/both-gcc-and-clang-generate.html\n\n34. **Choose to be the person you need the most**\n   - 출처: Hacker News\n   - 링크: https://blog.aintapp.com/be-who-you-need-the-most/\n\n35. **Using a Jailbroken Gemini to Make Opus 4.6 Architect a Kinetic Kill Vehicle**\n   - 출처: Hacker News\n   - 링크: https://recursion.wtf/posts/shadow_queen/\n\n36. **Visualize MySQL query execution plans as interactive FlameGraphs**\n   - 출처: Hacker News\n   - 링크: https://github.com/vgrippa/myflames\n\n37. **Early Christian Writings**\n   - 출처: Hacker News\n   - 링크: https://earlychristianwritings.com/\n\n38. **Mindfulness can support GenAI use in transforming project management**\n   - 출처: Hacker News\n   - 링크: https://techxplore.com/news/2026-02-mindfulness-genai.html\n\n39. **Wine 11.2 – Run Windows Applications on Linux, BSD, Solaris and macOS**\n   - 출처: Hacker News\n   - 링크: https://gitlab.winehq.org/wine/wine/-/releases/wine-11.2\n\n40. **In the early 20th century there were plans to build a Berlin suspension railway**\n   - 출처: Hacker News\n   - 링크: https://old.reddit.com/r/berlin/comments/1qxs3gh/in_the_early_20th_century_there_were_plans_to/\n\n41. **Speeding Up NumPy with Parallelism**\n   - 출처: Hacker News\n   - 링크: https://pythonspeed.com/articles/numpy-parallelism/\n\n42. **Declarative, Reproducible Emacs with straight.el and use-package**\n   - 출처: Hacker News\n   - 링크: https://jakebox.github.io/posts/2026-02-05-declarative_reproducible.html\n\n43. **Fiber – An Express-inspired web framework written in Go**\n   - 출처: Hacker News\n   - 링크: https://gofiber.io/\n\n44. **Django: Profile memory usage with Memray – Adam Johnson**\n   - 출처: Hacker News\n   - 링크: https://adamj.eu/tech/2026/01/29/django-profile-memray/\n\n45. **End Game Play**\n   - 출처: Hacker News\n   - 링크: https://twitter.com/WillManidis/status/2019850913599676524\n\n46. **Supporting ChatGPT on PostgreSQL in Azure**\n   - 출처: Hacker News\n   - 링크: https://techcommunity.microsoft.com/blog/adforpostgresql/supporting-chatgpt-on-postgresql-in-azure/4490247\n\n47. **Covid-19 cleared the skies but also supercharged methane emissions**\n   - 출처: Hacker News\n   - 링크: https://arstechnica.com/science/2026/02/covid-19-cleared-the-skies-but-also-supercharged-methane-emissions/\n\n48. **Fjord – A Unix-like OS built from scratch**\n   - 출처: Hacker News\n   - 링크: https://codeberg.org/System44/fjord\n\n49. **OpenCiv3: Open-source, cross-platform reimagining of Civilization III**\n   - 출처: Hacker News\n   - 링크: https://openciv3.org/\n\n50. **Using Janet as Database**\n   - 출처: Hacker News\n   - 링크: https://www.1a-insec.net/blog/18-janet-as-database/\n\n51. **How DNS Works**\n   - 출처: Hacker News\n   - 링크: https://wizardzines.com/zines/dns/\n\n52. **Wideband Shortwave Radio Receiver Map**\n   - 출처: Hacker News\n   - 링크: http://rx.linkfanel.net/\n\n53. **Korea privacy policy**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/policies/kr-privacy-policy\n\n54. **Making AI work for everyone, everywhere: our approach to localization**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/our-approach-to-localization\n\n55. **How we cut Vertex AI latency by 35% with GKE Inference Gateway**\n   - 출처: AI \u0026 Machine Learning\n   - 링크: https://cloud.google.com/blog/products/containers-kubernetes/how-gke-inference-gateway-improved-latency-for-vertex-ai/\n\n\n",
+  "articles": [
+    {
+      "title": "February 2026 Insiders (version 1.110)",
+      "link": "https://code.visualstudio.com/updates/v1_110",
+      "source": "Visual Studio Code - Code Editing. Redefined.",
+      "category": "tech",
+      "publishedAt": "2026-03-04T17:00:00Z",
+      "description": "\n      \u003cp\u003eLearn what is new in the Visual Studio Code February 2026 Release (1.110).\u003c/p\u003e\n      \u003cp\u003e\u003ca href=\"https://code.visualstudio.com/updates/v1_110\"\u003eRead the full article\u003c/a\u003e\u003c/p\u003e\n    "
+    },
+    {
+      "title": "Reduce Vulnerability Noise with VEX: Wiz + Docker Hardened Images",
+      "link": "https://www.docker.com/blog/reduce-vulnerability-noise-with-vex-wiz-docker-hardened-images/",
+      "source": "Docker Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-05T23:25:55Z",
+      "description": "Open source components power most modern applications. A new generation of hardened container images can establish a more secure foundation, but even with hardened images, vulnerability scanners often return dozens or hundreds of CVEs with little prioritization. This noise slows teams down and complicates security triage. The VEX (Vulnerability Exploitability eXchange) standard addresses the problem..."
+    },
+    {
+      "title": "Updated App Review Guidelines now available",
+      "link": "https://developer.apple.com/news/?id=d75yllv4",
+      "source": "Latest News - Apple Developer",
+      "category": "tech",
+      "publishedAt": "2026-02-06T08:00:56Z",
+      "description": "\u003cp\u003eThe App Review Guidelines have been revised to clarify that apps with random or anonymous chat are subject to the \u003ca href=\"https://developer.apple.com/app-store/review/guidelines/#user-generated-content\"\u003e1.2 User-Generated Content guideline\u003c/a\u003e.\u003c/p\u003e\u003cp class=\"sosumi margin-top-small\"\u003eTranslations of the guidelines will be available on \u003ca href=\"https://developer.apple.com/support/terms/\"\u003eApple Developer website\u003c/a\u003e within one month.\u003c/p\u003e"
+    },
+    {
+      "title": "Swift Student Challenge submissions are now open",
+      "link": "https://developer.apple.com/news/?id=f0xw4t5r",
+      "source": "Latest News - Apple Developer",
+      "category": "tech",
+      "publishedAt": "2026-02-06T06:00:56Z",
+      "description": "\u003cdiv class=\"inline-article-image\"\u003e\u003cimg src=\"https://devimages-cdn.apple.com/wwdc-services/articles/images/68650329-35C5-4A93-910F-40728667AB8B/2048.jpeg\" data-img-dark=\"https://devimages-cdn.apple.com/wwdc-services/articles/images/68650329-35C5-4A93-910F-40728667AB8B/2048.jpeg\" data-hires=\"false\" alt=\"Swift programming language logo (orange bird icon) inside a colorful gradient orb, with the number 26 in the background, representing Swift in 2026.\"\u003e\u003c/div\u003e\u003cp\u003eThe Swift Student Challenge is here! Submissions are now open through February 28, and students from all over the world are invited to submit their app playgrounds.\u003c/p\u003e\u003cp\u003e\u003ca href=\"https://developer.apple.com/swift-student-challenge/\"\u003eLearn more about \u003cspan class=\"icon icon-after icon-chevronright nowrap\"\u003ethe Challenge\u003c/span\u003e\u003c/a\u003e\u003c/p\u003e\u003cp\u003e\u003cstrong\u003eKey things to know\u003c/strong\u003e\u003c/p\u003e\u003cul\u003e\n\u003cli\u003eNo prior experience is needed. The Challenge is open to students of all levels who meet the \u003ca href=\"https://developer.apple.com/swift-student-challenge/eligibility/\"\u003eeligibility\u003c/a\u003e requirements.\u003c/li\u003e\n\u003cli\u003eThe Challenge is free to enter — all you need is access to a Mac or iPad with Xcode or Swift Playground.\u003c/li\u003e\n\u003cli\u003eYour app playground can be on any topic of your choice. The best app ideas come from subjects or experiences that you're passionate about. \u003c/li\u003e\n\u003cli\u003eYour app playground should be experienced within 3 minutes or less.\u003c/li\u003e\n\u003cli\u003eThe Swift Student Challenge is a great opportunity for students to build their skills and create something great.\u003c/li\u003e\n\u003c/ul\u003e\u003cp\u003e\u003cstrong\u003eLearn more\u003c/strong\u003e\u003c/p\u003e\u003cul\u003e\n\u003cli\u003e\u003ca href=\"https://developer.apple.com/videos/play/meet-with-apple/263/\"\u003eWatch a new video\u003c/a\u003e to learn from past winners and Apple experts.\u003c/li\u003e\n\u003cli\u003eExplore \u003ca href=\"https://developer.apple.com/swift-student-challenge/get-ready/\"\u003elearning resources\u003c/a\u003e.\u003c/li\u003e\n\u003c/ul\u003e"
+    },
+    {
+      "title": "AMD가 수정하지 않겠다고 한 원격 코드 실행(RCE) 취약점",
+      "link": "https://news.hada.io/topic?id=26467",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-07T05:37:23+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eAMD의 \u003cstrong\u003eAutoUpdate 소프트웨어\u003c/strong\u003e에서 원격 코드 실행(RCE) 취약점이 발견되어 보고되었으나, AMD는 이를 수정하지 않기로 결정함\u003c/li\u003e\n\u003cli\u003e업데이트 구성 파일에 저장된 URL이 \u003cstrong\u003eHTTP 프로토콜\u003c/strong\u003e을 사용해 실행 파일을 다운로드하도록 되어 있어, \u003cstrong\u003eMITM(중간자 공격)\u003c/stron...\u003c/p\u003e"
+    },
+    {
+      "title": "제프리 엡스타인을 만나지 않았던 때",
+      "link": "https://news.hada.io/topic?id=26466",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-07T05:34:23+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e양자정보 연구자 스콧 애런슨은 자신이 \u003cstrong\u003e제프리 엡스타인 관련 문서 26건에 이름이 등장\u003c/strong\u003e한다는 사실을 알고 놀랐다고 밝힘\u003c/li\u003e\n\u003cli\u003e그는 엡스타인을 \u003cstrong\u003e한 번도 만나거나 연락한 적이 없으며\u003c/strong\u003e, 2010년 ‘자연 속 암호학(Cryptography in Nature)’ 연구 자금 논의 과정에서 중개...\u003c/p\u003e"
+    },
+    {
+      "title": "유럽연합 집행위원회, Microsoft Teams 대체를 위한 Matrix 오픈소스 통신 도입 시험",
+      "link": "https://news.hada.io/topic?id=26465",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-07T03:33:23+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e유럽연합 집행위원회가 \u003cstrong\u003e유럽산 오픈소스 통신 소프트웨어\u003c/strong\u003e를 내부 커뮤니케이션에 시험 도입 중임\u003c/li\u003e\n\u003cli\u003e이 시스템은 \u003cstrong\u003eMatrix 프로토콜\u003c/strong\u003e을 기반으로 하며, \u003cstrong\u003e디지털 주권 확보\u003c/strong\u003e를 위한 노력의 일환으로 추진됨\u003c/li\u003e\n\u003cli\u003eMatrix는 \u003cstrong\u003e비영리단체가 관리하...\u003c/p\u003e"
+    },
+    {
+      "title": "CIA가 ‘The World Factbook’ 발행을 중단하고 아카이브를 삭제",
+      "link": "https://news.hada.io/topic?id=26464",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-07T01:33:04+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eCIA가 1971년부터 운영해 온 \u003cstrong\u003e공개 정보 데이터베이스 ‘The World Factbook’\u003c/strong\u003e 의 발행을 중단하고 웹사이트를 폐쇄함\u003c/li\u003e\n\u003cli\u003e사이트 전체가 \u003cstrong\u003e302 리디렉션\u003c/strong\u003e으로 전환되어, 기존 콘텐츠와 과거 버전 아카이브가 모두 접근 불가 상태가 됨\u003c/li\u003e\n\u003cli\u003e이 자료는 \u003cstrong\u003e공공 도...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: react-kakao-postcode - 카카오 우편번호 서비스 React 라이브러리",
+      "link": "https://news.hada.io/topic?id=26463",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-07T00:53:54+09:00",
+      "description": "\u003cp\u003e카카오 우편번호 서비스의 도메인 및 네임스페이스 변경(daum.Postcode → kakao.Postcode, CDN t1.daumcdn.net → t1.kakaocdn.net)에 대응하는 React 라이브러리입니다.\u003c/p\u003e\n\u003cp\u003ereact-daum-postcode에 영감을 받아, 2026년 3월 서비스 도메인 변경 전에 새로운 구조로 만들었습니다.\u003c/p\u003e\n\u003cp\u003e주요 특징:\u003c/p\u003e\n\u003cul\u003e\n\u003cl"
+    },
+    {
+      "title": "에이프스타인 PDF를 원본 인코딩 첨부파일에서 복원하기",
+      "link": "https://news.hada.io/topic?id=26462",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-06T22:32:56+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e미 법무부가 공개한 \u003cstrong\u003e에이프스타인 이메일 아카이브\u003c/strong\u003e는 잘못된 인코딩과 과도한 검열로 인해 심각한 오류와 비판을 받고 있음\u003c/li\u003e\n\u003cli\u003e일부 이메일에는 \u003cstrong\u003e\u003ccode\u003eContent-Transfer-Encoding: base64\u003c/code\u003e\u003c/strong\u003e 형식의 첨부파일이 그대로 포함되어 있어, 이 데이터를 복원하면 원본 ...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: 1인 개발 프로그램 2.0까지 업데이트하며 느낀 것들",
+      "link": "https://news.hada.io/topic?id=26461",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-06T20:14:51+09:00",
+      "description": "\u003cp\u003e3~4주 전에 GeekShow에 AutoBandStudio 출시 글을 올렸었습니다. (https://news.hada.io/topic?id=25731)\u003cbr /\u003e\n지금은 650회를 넘겼고 65개국에서 사용 중입니다.\u003c/p\u003e\n\u003cp\u003e그 사이에 느낀 것들을 공유합니다.\u003c/p\u003e\n\u003cp\u003e[1. 마케팅이 제일 어렵다.]\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e에브리타임, Reddit, 커리어리, 유튜브 쇼츠 다 해봤습니"
+    },
+    {
+      "title": "AI 에이전트가 인간을 고용한다, RentAHuman 플랫폼의 등장",
+      "link": "https://news.hada.io/topic?id=26460",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-06T20:09:46+09:00",
+      "description": "\u003cp\u003e\u003cstrong\u003e플랫폼 개요\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e창립자: 소프트웨어 엔지니어 Alexander Liteplo (크립토 배경)\u003c/li\u003e\n\u003cli\u003e출시 시기: 2026년 2월 초 (최근 며칠 전)\u003c/li\u003e\n\u003cli\u003e슬로건: “Robots need your body” (로봇이 당신의 몸을 원한다)\u003c/li\u003e\n\u003cli\u003e핵심 개념: AI 에이전트가 물리적 세계 작업을 인간에게 직접 위임·�"
+    },
+    {
+      "title": "Anthropic에서 소개하는 Opus 4.6 최대한 활용하기",
+      "link": "https://news.hada.io/topic?id=26459",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-06T17:25:54+09:00",
+      "description": "\u003cp\u003eClaude Opus 4.6는 의미 있는 업그레이드입니다. 복잡한 작업을 위해 맥락을 수집하고, 어려운 작업에 더 오래 매달리며, 독립적으로 작업할 때와 사용자에게 확인을 구할 때를 더 잘 판단합니다.\u003cbr /\u003e\nOpus 4.6는 여전히 Claude 특유의 개성과 가치관을 유지하지만, 약간의 행동 변화도 느낄 수 있습니다. 효과적으...\u003c/p\u003e"
+    },
+    {
+      "title": "BMW의 '새 혁신'은 사실상 수리할 권리에 대한 '중지'",
+      "link": "https://news.hada.io/topic?id=26458",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-06T16:10:09+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eBMW가 \u003cstrong\u003e자사 로고 모양의 독점 보안 나사\u003c/strong\u003e에 대한 특허를 출원, 이는 차량 소유자가 직접 수리하지 못하도록 설계된 구조\u003c/li\u003e\n\u003cli\u003e이 나사는 \u003cstrong\u003e브랜드 로고를 우선시한 디자인\u003c/strong\u003e으로, 일반 공구로는 토크를 견디지 못해 나사나 비트가 쉽게 손상됨\u003c/li\u003e\n\u003cli\u003e특허 문서에는 “\u003cstr...\u003c/p\u003e"
+    },
+    {
+      "title": "Craft Agents, CLI 없이 Claude Code를 쓰는 오픈소스 에이전트 UI",
+      "link": "https://news.hada.io/topic?id=26457",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-06T16:02:11+09:00",
+      "description": "\u003cp\u003eClaude Code의 터미널 불편함을 해결한 오픈소스 GUI 데스크톱 앱\u003cbr /\u003e\n개발자: Craft CTO 발린트 오로스 (Valint Orosz) → Apache 2.0 라이선스 공개\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e문제점 (기존 Claude Code)\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e플랜 검토 어려움\u003c/li\u003e\n\u003cli\u003e변경 이유 파악 힘듦\u003c/li\u003e\n\u003cli\u003e멀티태스킹 제한\u003c/li\u003e\n\u003cl"
+    },
+    {
+      "title": "LinkedIn이 2,953개의 브라우저 확장을 검사함",
+      "link": "https://news.hada.io/topic?id=26454",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-06T15:32:53+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eLinkedIn 웹사이트가 페이지를 불러올 때마다 \u003cstrong\u003e2,953개의 Chrome 확장 프로그램 존재 여부를 탐지\u003c/strong\u003e함\u003c/li\u003e\n\u003cli\u003e저장소는 LinkedIn이 확인하는 \u003cstrong\u003e모든 확장 ID와 이름, Chrome Web Store 링크\u003c/strong\u003e를 문서화함\u003c/li\u003e\n\u003cli\u003e전체 확장 중 \u003cstrong\u003e약 78%는 Chrome Web Store에서\u003c/strong\u003e,...\u003c/p\u003e"
+    },
+    {
+      "title": "Abilities에서 AI 에이전트로: WordPress MCP Adapter 소개",
+      "link": "https://news.hada.io/topic?id=26453",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-06T15:14:11+09:00",
+      "description": "\u003ch4\u003e핵심 요약\u003c/h4\u003e\n\u003cul\u003e\n\u003cli\u003eWordPress는 AI 에이전트 시대를 맞아 \u003cstrong\u003eAbilities API\u003c/strong\u003e(WordPress 6.9부터 도입)를 기반으로 한 새로운 공식 도구인 \u003cstrong\u003eWordPress MCP Adapter\u003c/strong\u003e를 발표.\u003c/li\u003e\n\u003cli\u003e이 어댑터는 WordPress 내부의 기능(Abilities)을 \u003cstrong\u003eModel Context Protocol (MCP)\u003c/stro...\u003c/p\u003e"
+    },
+    {
+      "title": "Daum (Kakao) 우편번호 서비스 도메인 \u0026amp; JS API 네임스페이스 변경 안내 (사전 공지)",
+      "link": "https://news.hada.io/topic?id=26451",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-06T12:01:15+09:00",
+      "description": "\u003col\u003e\n\u003cli\u003e공식 가이드 페이지\u003c/li\u003e\n\u003c/ol\u003e\n\u003cul\u003e\n\u003cli\u003e현재: \u003ca href=\"https://postcode.map.daum.net/guide\"\u003ehttps://postcode.map.daum.net/guide\u003c/a\u003e\n\u003c/li\u003e\n\u003cli\u003e2026-03-10 이후: \u003ccode\u003epostcode.map.kakao.com\u003c/code\u003e 으로 이전 예정\u003c/li\u003e\n\u003c/ul\u003e\n\u003col start=\"2\"\u003e\n\u003cli\u003eCDN 도메인 변경 (적용 완료)\u003c/li\u003e\n\u003c/ol\u003e\n\u003cul\u003e\n\u003cli\u003e기...\u003c/p\u003e"
+    },
+    {
+      "title": "2026년, 그냥 Postgres를 쓰면 된다",
+      "link": "https://news.hada.io/topic?id=26449",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-06T10:33:03+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003ePostgres\u003c/strong\u003e는 검색, 벡터, 시계열, 큐 등 다양한 기능을 하나의 데이터베이스에서 처리할 수 있는 \u003cstrong\u003e통합 플랫폼\u003c/strong\u003e임\u003c/li\u003e\n\u003cli\u003e여러 \u003cstrong\u003e전문 데이터베이스\u003c/strong\u003e를 사용하는 방식은 관리 복잡도, 보안, 백업, 장애 대응 등에서 \u003cstrong\u003e비효율과 위험\u003c/strong\u003e을 초래함...\u003c/p\u003e"
+    },
+    {
+      "title": "PMF 전에 모델-마켓 핏(Model-Market Fit) 을 확인하세요",
+      "link": "https://news.hada.io/topic?id=26448",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-06T10:21:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eAI 스타트업은 \u003cstrong\u003e제품-시장 적합성(PMF)\u003c/strong\u003e 이전에 현재 모델의 역량이 시장의 요구를 실제로 해결할 수 있는지 여부인 \u003cstrong\u003e모델-마켓 핏(MMF)\u003c/strong\u003e 확인이 필수\u003c/li\u003e\n\u003cli\u003eGPT-4 출시 이후 법률 AI 시장이 폭발적으로 성장했고, Claude 3.5 Sonnet 출시 이후 코딩 어시스턴트가 실제 \u003cstro...\u003c/p\u003e"
+    },
+    {
+      "title": "로보틱스에서 빠진 퍼즐 조각: 세계 모델(World Model)",
+      "link": "https://news.hada.io/topic?id=26447",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-06T10:06:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e소프트웨어 AI가 비약적으로 발전했음에도 \u003cstrong\u003e물리적 세계의 로봇\u003c/strong\u003e은 빨래 개기나 식기세척기 정리 같은 기본 작업조차 여전히 어려움\u003c/li\u003e\n\u003cli\u003e물리 세계는 \u003cstrong\u003e마찰, 가림(occlusion), 예측 불가능한 동역학, 무작위성\u003c/strong\u003e으로 가득 차 있어, 이는 텍스트 중심 AI 환경과 본질적으로 다...\u003c/p\u003e"
+    },
+    {
+      "title": "병렬 Claude 팀을 활용한 C 컴파일러 구축",
+      "link": "https://news.hada.io/topic?id=26446",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-06T09:55:47+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e16개의 Claude 에이전트\u003c/strong\u003e가 병렬로 협력해 \u003cstrong\u003eRust 기반 C 컴파일러\u003c/strong\u003e를 완성, Linux 6.9 커널을 빌드할 수 있는 수준에 도달\u003c/li\u003e\n\u003cli\u003e약 \u003cstrong\u003e2,000회 세션과 2만 달러 비용\u003c/strong\u003e으로 10만 줄 규모의 코드를 생성, \u003cstrong\u003ex86·ARM·RISC-V\u003c/strong\u003e 아키텍처를 지원\u003c/li...\u003c/p\u003e"
+    },
+    {
+      "title": "CIA, ‘World Factbook’ 발행 중단 발표",
+      "link": "https://news.hada.io/topic?id=26445",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-06T09:52:47+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eCIA가 전 세계 수백만 명이 이용하던 무료 온라인 데이터베이스 ‘World Factbook’의 발행을 중단\u003c/strong\u003e한다고 발표\u003c/li\u003e\n\u003cli\u003e이 자료집은 \u003cstrong\u003e언론인과 학계에서 자주 인용되던 국가별 통계 및 기본 정보\u003c/strong\u003e를 제공해 왔음\u003c/li\u003e\n\u003cli\u003eCIA 웹사이트 공지에는 \u003cstrong\u003e중단 사유가 명시되...\u003c/p\u003e"
+    },
+    {
+      "title": "Flock CEO가 Deflock을 ‘테러 조직’으로 규정 (2025) [영상]",
+      "link": "https://news.hada.io/topic?id=26444",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-06T09:49:47+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eFlock CEO\u003c/strong\u003e가 영상에서 경쟁 단체 \u003cstrong\u003eDeflock\u003c/strong\u003e을 ‘테러 조직’으로 언급\u003c/li\u003e\n\u003cli\u003e발언은 \u003cstrong\u003e공개 인터뷰 또는 발표 영상\u003c/strong\u003e 형태로 촬영된 것으로 확인\u003c/li\u003e\n\u003cli\u003e영상 내용 외 추가적인 \u003cstrong\u003e맥락, 근거, 반응\u003c/strong\u003e 등은 제공되지 않음\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eD...\u003c/p\u003e"
+    },
+    {
+      "title": "내부 호스트명이 클라우드에 유출될 때",
+      "link": "https://news.hada.io/topic?id=26443",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-06T09:46:47+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e가정용 \u003cstrong\u003eNAS 장비\u003c/strong\u003e의 웹 인터페이스가 내부 전용 호스트네임을 외부 서비스로 전송하는 사례 발견\u003c/li\u003e\n\u003cli\u003eNAS 웹 UI에 포함된 \u003cstrong\u003esentry.io 오류 보고 스크립트\u003c/strong\u003e가 스택 트레이스와 함께 내부 호스트네임을 외부로 전송\u003c/li\u003e\n\u003cli\u003esentry.io 측에서 해당 호스트네임으로 \u003cstrong\u003e...\u003c/p\u003e"
+    },
+    {
+      "title": "OpenClaw는 Apple Intelligence가 되었어야 할 모습",
+      "link": "https://news.hada.io/topic?id=26442",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-06T09:43:47+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eAI 에이전트 구동을 위해 \u003cstrong\u003eMac Mini 판매가 급증\u003c/strong\u003e하고 있으며, 이를 견인하는 것은 \u003cstrong\u003eOpenClaw\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e실제 컴퓨터를 조작·자동화\u003c/strong\u003e할 수 있는 AI 비서 프레임워크로, \u003cstrong\u003eMac 하드웨어의 킬러 앱\u003c/strong\u003e으로 부상\u003c/li\u003e\n\u003cli\u003eApple은 하드웨어·생태계·�...\u003c/p\u003e"
+    },
+    {
+      "title": "클라우드를 임대하지 말고, 직접 소유하세요",
+      "link": "https://news.hada.io/topic?id=26441",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-06T09:40:46+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eCommaAI\u003c/strong\u003e는 모든 모델 학습과 데이터 처리를 자체 \u003cstrong\u003e데이터센터\u003c/strong\u003e에서 수행하며, 약 \u003cstrong\u003e500만 달러 규모의 인프라\u003c/strong\u003e를 직접 운영중\u003c/li\u003e\n\u003cli\u003e클라우드 의존은 \u003cstrong\u003e비용 상승과 통제력 상실\u003c/strong\u003e로 이어질 수 있으며, 자체 컴퓨트 운영은 \u003cstrong\u003e엔지니어링...\u003c/p\u003e"
+    },
+    {
+      "title": "SmythOS/sre - 에이전트형 AI를 위한 클라우드 네이티브 런타임",
+      "link": "https://news.hada.io/topic?id=26440",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-06T09:31:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e에이전트형 AI의 OS 계층\u003c/strong\u003e을 목표로 만든 오픈소스 런타임 환경으로, \u003cstrong\u003e보안성·모듈성·확장성\u003c/strong\u003e을 갖춘 \u003cstrong\u003e클라우드 네이티브 플랫폼\u003c/strong\u003e 제공\u003c/li\u003e\n\u003cli\u003e로컬, 클라우드 및 엣지 환경 전반에서 AI 에이전트를 구축, 실행 및 관리할 수 있음\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eLLM, Ve...\u003c/p\u003e"
+    },
+    {
+      "title": "Agent Teams - Claude Code 세션 팀 오케스트레이션",
+      "link": "https://news.hada.io/topic?id=26439",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-06T09:25:56+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e여러 \u003cstrong\u003eClaude Code 인스턴스\u003c/strong\u003e를 하나의 팀으로 구성해 병렬로 작업을 분배·조율하는 실험적 기능으로, 리드 세션이 팀원을 생성하고 작업을 할당하며 결과를 종합\u003c/li\u003e\n\u003cli\u003e기존 \u003cstrong\u003e서브에이전트\u003c/strong\u003e와 달리 팀원 간 직접 메시지 교환이 가능하며, 사용자도 리드를 거치지 않고 개별 ...\u003c/p\u003e"
+    },
+    {
+      "title": "Claude Opus 4.6 추가 사용 프로모션",
+      "link": "https://news.hada.io/topic?id=26438",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-06T09:24:30+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eClaude Opus 4.6 출시\u003c/strong\u003e에 맞춰 Pro 및 Max 이용자에게 \u003cstrong\u003e한정 기간 동안 50달러 상당의 추가 사용 크레딧\u003c/strong\u003e을 제공\u003c/li\u003e\n\u003cli\u003e대상은 2026년 2월 4일 이전에 Pro 또는 Max 구독을 시작하고, 2월 16일 이전에 \u003cstrong\u003e추가 사용(extra usage)\u003c/strong\u003e 기능을 활성화한 사용자\u003c/li...\u003c/p\u003e"
+    },
+    {
+      "title": "나의 AI 도입 여정",
+      "link": "https://news.hada.io/topic?id=26437",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-06T09:23:49+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eHashiCorp를 엑싯하고 Ghostty를 만들고 있는 미첼 하시모토가 AI 도구를 실제 업무에 통합하기까지의 과정을 정리\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e비효율 → 적응 → 생산성 향상\u003c/strong\u003e의 세 단계로 구분하며, 각 단계에서의 시행착오와 학습 과정을 구체적으로 기록\u003c/li\u003e\n\u003cli\u003e챗봇 기반 코딩의 한계를 인식한 뒤, \u003cstr...\u003c/p\u003e"
+    },
+    {
+      "title": "Chrome Dev for Desktop Update",
+      "link": "http://chromereleases.googleblog.com/2026/02/chrome-dev-for-desktop-update.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2026-02-06T09:43:37.508-08:00",
+      "description": "\u003cp\u003eThe Dev channel has been updated to 146.0.7670.2 for Windows, Mac and Linux.\u003c/p\u003e\u003cp\u003eA partial list of changes is available in the \u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/146.0.7655.3..146.0.7670.2?pretty=fuller\u0026amp;n=10000\"\u003eGit log\u003c/a\u003e. Interested in \u003ca href=\"https://www.chromium.org/getting-involved/dev-channel/\"\u003eswitching\u003c/a\u003e release channels? Find out \u003ca href=\"https://www.chromium.org/getting-involved/dev-channel/\"\u003ehow\u003c/a\u003e. If you find a new issue, please let us know by \u003ca href=\"https://crbug.com/\"\u003efiling a bug\u003c/a\u003e. The \u003ca href=\"https://productforums.google.com/forum/#!forum/chrome\"\u003ecommunity help forum\u003c/a\u003e is also a great place to reach out for help or learn about common issues.\u003c/p\u003e\u003cp\u003eChrome Release Team\u003cbr /\u003e\u003ca href=\"https://www.google.com/chrome\"\u003e\u003c/a\u003e\u003ca href=\"https://www.google.com/chrome\"\u003eGoogle Chrome\u003c/a\u003e\u003c/p\u003e"
+    },
+    {
+      "title": "Both GCC and Clang generate strange/inefficient code",
+      "link": "https://codingmarginalia.blogspot.com/2026/02/both-gcc-and-clang-generate.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-06T22:07:21Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://codingmarginalia.blogspot.com/2026/02/both-gcc-and-clang-generate.html\"\u003ehttps://codingmarginalia.blogspot.com/2026/02/both-gcc-and-clang-generate.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46918795\"\u003ehttps://news.ycombinator.com/item?id=46918795\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Choose to be the person you need the most",
+      "link": "https://blog.aintapp.com/be-who-you-need-the-most/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-06T22:07:06Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://blog.aintapp.com/be-who-you-need-the-most/\"\u003ehttps://blog.aintapp.com/be-who-you-need-the-most/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46918792\"\u003ehttps://news.ycombinator.com/item?id=46918792\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Using a Jailbroken Gemini to Make Opus 4.6 Architect a Kinetic Kill Vehicle",
+      "link": "https://recursion.wtf/posts/shadow_queen/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-06T22:04:08Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://recursion.wtf/posts/shadow_queen/\"\u003ehttps://recursion.wtf/posts/shadow_queen/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46918766\"\u003ehttps://news.ycombinator.com/item?id=46918766\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Visualize MySQL query execution plans as interactive FlameGraphs",
+      "link": "https://github.com/vgrippa/myflames",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-06T22:02:13Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/vgrippa/myflames\"\u003ehttps://github.com/vgrippa/myflames\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46918741\"\u003ehttps://news.ycombinator.com/item?id=46918741\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Early Christian Writings",
+      "link": "https://earlychristianwritings.com/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-06T22:00:46Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://earlychristianwritings.com/\"\u003ehttps://earlychristianwritings.com/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46918727\"\u003ehttps://news.ycombinator.com/item?id=46918727\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Mindfulness can support GenAI use in transforming project management",
+      "link": "https://techxplore.com/news/2026-02-mindfulness-genai.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-06T22:00:33Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://techxplore.com/news/2026-02-mindfulness-genai.html\"\u003ehttps://techxplore.com/news/2026-02-mindfulness-genai.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46918721\"\u003ehttps://news.ycombinator.com/item?id=46918721\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Wine 11.2 – Run Windows Applications on Linux, BSD, Solaris and macOS",
+      "link": "https://gitlab.winehq.org/wine/wine/-/releases/wine-11.2",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-06T21:59:12Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://gitlab.winehq.org/wine/wine/-/releases/wine-11.2\"\u003ehttps://gitlab.winehq.org/wine/wine/-/releases/wine-11.2\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46918712\"\u003ehttps://news.ycombinator.com/item?id=46918712\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "In the early 20th century there were plans to build a Berlin suspension railway",
+      "link": "https://old.reddit.com/r/berlin/comments/1qxs3gh/in_the_early_20th_century_there_were_plans_to/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-06T21:57:21Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://old.reddit.com/r/berlin/comments/1qxs3gh/in_the_early_20th_century_there_were_plans_to/\"\u003ehttps://old.reddit.com/r/berlin/comments/1qxs3gh/in_the_early_20th_century_there_were_plans_to/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46918691\"\u003ehttps://news.ycombinator.com/item?id=46918691\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Speeding Up NumPy with Parallelism",
+      "link": "https://pythonspeed.com/articles/numpy-parallelism/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-06T21:57:18Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://pythonspeed.com/articles/numpy-parallelism/\"\u003ehttps://pythonspeed.com/articles/numpy-parallelism/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46918689\"\u003ehttps://news.ycombinator.com/item?id=46918689\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Declarative, Reproducible Emacs with straight.el and use-package",
+      "link": "https://jakebox.github.io/posts/2026-02-05-declarative_reproducible.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-06T21:57:17Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://jakebox.github.io/posts/2026-02-05-declarative_reproducible.html\"\u003ehttps://jakebox.github.io/posts/2026-02-05-declarative_reproducible.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46918688\"\u003ehttps://news.ycombinator.com/item?id=46918688\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Fiber – An Express-inspired web framework written in Go",
+      "link": "https://gofiber.io/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-06T21:57:09Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://gofiber.io/\"\u003ehttps://gofiber.io/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46918684\"\u003ehttps://news.ycombinator.com/item?id=46918684\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Django: Profile memory usage with Memray – Adam Johnson",
+      "link": "https://adamj.eu/tech/2026/01/29/django-profile-memray/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-06T21:55:59Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://adamj.eu/tech/2026/01/29/django-profile-memray/\"\u003ehttps://adamj.eu/tech/2026/01/29/django-profile-memray/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46918666\"\u003ehttps://news.ycombinator.com/item?id=46918666\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "End Game Play",
+      "link": "https://twitter.com/WillManidis/status/2019850913599676524",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-06T21:55:17Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://twitter.com/WillManidis/status/2019850913599676524\"\u003ehttps://twitter.com/WillManidis/status/2019850913599676524\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46918654\"\u003ehttps://news.ycombinator.com/item?id=46918654\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Supporting ChatGPT on PostgreSQL in Azure",
+      "link": "https://techcommunity.microsoft.com/blog/adforpostgresql/supporting-chatgpt-on-postgresql-in-azure/4490247",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-06T21:54:04Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://techcommunity.microsoft.com/blog/adforpostgresql/supporting-chatgpt-on-postgresql-in-azure/4490247\"\u003ehttps://techcommunity.microsoft.com/blog/adforpostgresql/supporting-chatgpt-on-postgresql-in-azure/4490247\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46918638\"\u003ehttps://news.ycombinator.com/item?id=46918638\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Covid-19 cleared the skies but also supercharged methane emissions",
+      "link": "https://arstechnica.com/science/2026/02/covid-19-cleared-the-skies-but-also-supercharged-methane-emissions/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-06T21:52:42Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://arstechnica.com/science/2026/02/covid-19-cleared-the-skies-but-also-supercharged-methane-emissions/\"\u003ehttps://arstechnica.com/science/2026/02/covid-19-cleared-the-skies-but-also-supercharged-methane-emissions/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46918625\"\u003ehttps://news.ycombinator.com/item?id=46918625\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Fjord – A Unix-like OS built from scratch",
+      "link": "https://codeberg.org/System44/fjord",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-06T21:51:56Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://codeberg.org/System44/fjord\"\u003ehttps://codeberg.org/System44/fjord\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46918616\"\u003ehttps://news.ycombinator.com/item?id=46918616\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "OpenCiv3: Open-source, cross-platform reimagining of Civilization III",
+      "link": "https://openciv3.org/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-06T21:51:23Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://openciv3.org/\"\u003ehttps://openciv3.org/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46918612\"\u003ehttps://news.ycombinator.com/item?id=46918612\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Using Janet as Database",
+      "link": "https://www.1a-insec.net/blog/18-janet-as-database/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-06T21:50:39Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.1a-insec.net/blog/18-janet-as-database/\"\u003ehttps://www.1a-insec.net/blog/18-janet-as-database/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46918610\"\u003ehttps://news.ycombinator.com/item?id=46918610\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "How DNS Works",
+      "link": "https://wizardzines.com/zines/dns/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-06T21:48:24Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://wizardzines.com/zines/dns/\"\u003ehttps://wizardzines.com/zines/dns/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46918591\"\u003ehttps://news.ycombinator.com/item?id=46918591\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Wideband Shortwave Radio Receiver Map",
+      "link": "http://rx.linkfanel.net/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-06T21:47:22Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"http://rx.linkfanel.net/\"\u003ehttp://rx.linkfanel.net/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46918584\"\u003ehttps://news.ycombinator.com/item?id=46918584\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Korea privacy policy",
+      "link": "https://openai.com/policies/kr-privacy-policy",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2026-02-06T10:00:00Z",
+      "description": "Korea privacy policy"
+    },
+    {
+      "title": "Making AI work for everyone, everywhere: our approach to localization",
+      "link": "https://openai.com/index/our-approach-to-localization",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2026-02-06T10:00:00Z",
+      "description": "OpenAI shares its approach to AI localization, showing how globally shared frontier models can be adapted to local languages, laws, and cultures without compromising safety."
+    },
+    {
+      "title": "How we cut Vertex AI latency by 35% with GKE Inference Gateway",
+      "link": "https://cloud.google.com/blog/products/containers-kubernetes/how-gke-inference-gateway-improved-latency-for-vertex-ai/",
+      "source": "AI \u0026 Machine Learning",
+      "category": "tech",
+      "publishedAt": "2026-02-06T18:00:00Z",
+      "description": "\u003cdiv class=\"block-paragraph_advanced\"\u003e\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eAs generative AI moves from experimentation to production, platform engineers face a universal challenge for inference serving: you need low latency, high throughput, and manageable costs. \u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eIt is a difficult balance. Traffic patterns vary wildly, from complex coding tasks that require processing huge amounts of data, to quick, chatty conversations that demand instant replies. Standard infrastructure often struggles to handle both efficiently.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eOur solution: \u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eTo solve this, the Vertex AI engineering team adopted the \u003c/span\u003e\u003ca href=\"https://docs.cloud.google.com/kubernetes-engine/docs/concepts/about-gke-inference-gateway\"\u003e\u003cstrong style=\"text-decoration: underline; vertical-align: baseline;\"\u003eGKE Inference Gateway\u003c/strong\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e. Built on the standard Kubernetes Gateway API, Inference Gateway solves the scale problem by adding two critical layers of intelligence:\u003c/span\u003e\u003c/p\u003e\n\u003col\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: decimal; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eLoad-aware routing:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e It scrapes real-time metrics (like KV Cache utilization) directly from the model server's Prometheus endpoints to route requests to the pod that can serve them fastest.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: decimal; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eContent-aware routing:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e It inspects request prefixes and routes to the pod that already has that context in its KV cache, avoiding expensive re-computation.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eBy migrating production workloads to this architecture, Vertex AI proves that this dual-layer intelligence is the key to unlocking performance at scale.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eHere’s how Vertex AI optimized its serving stack and how you can apply these same patterns to your own platform to unlock strict tail-latency guarantees, maximize cache efficiency to lower cost-per-token, and eliminate the engineering overhead of building custom schedulers.\u003c/span\u003e\u003c/p\u003e\n\u003ch3\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eThe results: Validated at production scale\u003c/strong\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eBy placing GKE Inference Gateway in front of the Vertex AI model servers, we achieved significant gains in both speed and efficiency compared to standard load balancing approaches.\u003c/span\u003e\u003c/p\u003e\u003c/div\u003e\n\u003cdiv class=\"block-image_full_width\"\u003e\n\n\n\n\n\n\n  \n    \u003cdiv class=\"article-module h-c-page\"\u003e\n      \u003cdiv class=\"h-c-grid\"\u003e\n  \n\n    \u003cfigure class=\"article-image--large\n      \n      \n        h-c-grid__col\n        h-c-grid__col--6 h-c-grid__col--offset-3\n        \n        \n      \"\n      \u003e\n\n      \n      \n        \n        \u003cimg\n            src=\"https://storage.googleapis.com/gweb-cloudblog-publish/images/Vertex-AI-Latency-Comparison.png5w.max-1000x1000.png\"\n        \n          alt=\"Vertex-AI-Latency-Comparison.png5w\"\u003e\n        \n        \u003c/a\u003e\n      \n    \u003c/figure\u003e\n\n  \n      \u003c/div\u003e\n    \u003c/div\u003e\n  \n\n\n\n\n\u003c/div\u003e\n\u003cdiv class=\"block-paragraph_advanced\"\u003e\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eThese results were validated on production traffic across diverse AI workloads, ranging from context-heavy coding agents to high-throughput conversational models.\u003c/span\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003e35% faster responses:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e Vertex AI reduced Time to First Token (TTFT) latency by over 35% for Qwen3-Coder by using GKE Inference Gateway.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003e2x better tail latency:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e For bursty chat workloads, Vertex AI improved Time to First Token (TTFT) P95 latency by 2x (52%) for Deepseek V3.1 by using GKE Inference Gateway.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eDoubled efficiency:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e By leveraging the gateway’s prefix-caching awareness, Vertex AI doubled its prefix cache hit rate (from 35% to 70%) by adopting GKE Inference Gateway.\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e\u003c/div\u003e\n\u003cdiv class=\"block-image_full_width\"\u003e\n\n\n\n\n\n\n  \n    \u003cdiv class=\"article-module h-c-page\"\u003e\n      \u003cdiv class=\"h-c-grid\"\u003e\n  \n\n    \u003cfigure class=\"article-image--large\n      \n      \n        h-c-grid__col\n        h-c-grid__col--6 h-c-grid__col--offset-3\n        \n        \n      \"\n      \u003e\n\n      \n      \n        \n        \u003cimg\n            src=\"https://storage.googleapis.com/gweb-cloudblog-publish/images/Cache-Hit-Rate-Charto.max-1000x1000.png\"\n        \n          alt=\"Cache-Hit-Rate-Charto\"\u003e\n        \n        \u003c/a\u003e\n      \n    \u003c/figure\u003e\n\n  \n      \u003c/div\u003e\n    \u003c/div\u003e\n  \n\n\n\n\n\u003c/div\u003e\n\u003cdiv class=\"block-paragraph_advanced\"\u003e\u003ch3\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eDeep dive: Two patterns for high-performance serving\u003c/strong\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eBuilding a production-grade inference router is deceptively complex because AI traffic isn't a single profile. At Vertex AI, we found that our workloads fell into two distinct traffic shapes, each requiring a different optimization strategy:\u003c/span\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eThe context-heavy workload (e.g., coding agents):\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e These requests involve massive context windows (like analyzing a whole codebase) that create sustained compute pressure. The bottleneck here is \u003c/span\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003ere-computation overhead\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eThe bursty workload (e.g., chat):\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e These are unpredictable, stochastic spikes of short queries. The bottleneck here is \u003c/span\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003equeue congestion\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e .\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eTo handle both traffic profiles simultaneously, here are two specific engineering challenges Vertex AI solved using GKE Inference Gateway. \u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003e1. Tuning multi-objective load balancing\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eA standard round-robin load balancer doesn't know which GPU holds the cached KV pairs for a specific prompt. This is particularly inefficient for 'context-heavy' workloads, where a cache miss means re-processing massive inputs from scratch. However, routing strictly for cache affinity can be dangerous; if everyone requests the same popular document, you create a node that gets overwhelmed while others sit idle.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eThe solution:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e Multi-objective tuning in GKE Inference Gateway uses a configurable scorer that balances conflicting signals. During the rollout of their new chat model, we here on the Vertex team tuned the weights for prefix:queue:kv-utilization.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eBy shifting the ratio from a default \u003c/span\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003e3:3:2\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e to \u003c/span\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003e3:5:2\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e (prioritizing queue depth slightly higher), we forced the scheduler to bypass \"hot\" nodes even if they had a cache hit. This configuration change immediately smoothed out traffic distribution while maintaining the high efficiency—doubling our prefix cache hit rate from 35% to 70%. \u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003e2. Managing queue depth for bursty traffic\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eInference platforms often struggle with variable load, especially from sudden concurrent bursts. Without protection, these requests can saturate a model server, leading to resource contention that affects everyone in the queue.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eThe solution:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e Instead of letting these requests hit the model server directly, GKE Inference Gateway enforces admission control at the ingress layer. By managing the queue upstream, the system ensures that individual pods are never resource-starved.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eThe data proves the value: while median latency remained stable, the \u003c/span\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eP95 latency improvement of 52%\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e shows that the gateway successfully absorbed the variance that typically plagues AI applications during heavy load.\u003c/span\u003e\u003c/p\u003e\n\u003ch3\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eWhat this means for platform builders\u003c/strong\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eHere’s our lesson: you don't need to reinvent the scheduler.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eInstead of maintaining custom infrastructure, you can use the GKE Inference Gateway. This gives you access to a scheduler proven by Google’s own internal workloads, ensuring you have robust protection against saturation without the maintenance overhead.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eReady to get started?\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e Learn more about configuring\u003c/span\u003e \u003ca href=\"https://docs.cloud.google.com/kubernetes-engine/docs/how-to/deploy-gke-inference-gateway\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eGKE Inference Gateway\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e for your workloads.\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e\u003c/div\u003e"
+    }
+  ],
+  "generatedAt": "2026-02-07T07:10:18.871228917+09:00"
+}
