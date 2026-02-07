@@ -1,0 +1,370 @@
+{
+  "date": "2026-02-08",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2026년 2월 7일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** 애플과 구글의 AI 동맹이 가시화되는 가운데, 틱톡의 중독성 디자인에 대한 유럽의 철퇴와 개발자 생산성을 위협하는 도구들에 대한 자성적인 목소리가 높아지고 있습니다.\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### 🍎 애플, 시리(Siri)에 구글 제미나이(Gemini) 탑재 최종 합의\n애플이 자사의 음성 비서 Siri에 구글의 생성형 AI 모델인 'Gemini'를 통합하는 계약을 마무리했다는 소식입니다. 이는 애플 인텔리전스(Apple Intelligence) 전략의 핵심 퍼즐이 완성되었음을 의미하며, 아이폰 사용자들은 곧 Siri를 통해 제미나이의 강력한 추론 및 생성 능력을 직접 경험하게 될 전망입니다.\n\n*   **배경:** 자체 LLM 개발과 병행하여, 최고 수준의 성능을 즉시 제공하기 위해 경쟁사인 구글과 손을 잡는 실용주의적 노선을 선택했습니다.\n*   **전망:** 이번 협력은 모바일 AI 검색 및 비서 시장의 판도를 뒤흔들 것이며, 오픈AI의 ChatGPT 통합에 이은 멀티 모델 전략의 일환으로 해석됩니다.\n\u003e **Key Point:** 애플 생태계 내에서 구글 AI의 영향력이 확대되며, 모바일 AI 비서의 성능 경쟁이 새로운 국면을 맞이했습니다. [^40]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. 🇪🇺 틱톡의 '중독성 디자인', 유럽에서 불법 판정 위기\n- **What:** 유럽 규제 당국이 틱톡의 무한 스크롤 및 알고리즘 추천 시스템이 사용자에게 '중독성'을 유발하도록 설계되었다며 이를 불법으로 간주했습니다.\n- **Why:** 디지털 서비스법(DSA)에 의거, 미성년자 보호 및 사용자의 정신 건강에 악영향을 미치는 '다크 패턴' 디자인에 대한 제재가 강화되고 있습니다.\n- **Impact:** 이 판결은 인스타그램 릴스, 유튜브 쇼츠 등 유사한 숏폼 플랫폼들의 UX/UI 설계에 즉각적인 수정 압박으로 작용할 것입니다. [^21]\n\n### 2. 🚗 Waymo 월드 모델: 자율주행 시뮬레이션의 진화\n- **What:** 웨이모(Waymo)가 실제 주행 데이터를 기반으로 현실 세계의 물리 법칙과 돌발 상황을 정교하게 모사하는 '월드 모델'을 공개했습니다.\n- **Why:** 실제 도로 주행만으로는 확보하기 어려운 희귀한 사고 케이스(Edge cases)를 시뮬레이션에서 무한히 생성하여 AI를 학습시키기 위함입니다.\n- **Impact:** 자율주행 AI의 안전성을 획기적으로 높이고, 학습 비용과 시간을 단축시키는 게임 체인저가 될 기술입니다. [^22]\n\n### 3. 📉 GitHub Actions가 엔지니어링 팀을 병들게 한다?\n- **What:** 편리함의 대명사였던 GitHub Actions가 복잡한 YAML 설정 지옥과 느린 피드백 루프로 인해 오히려 개발 생산성을 저해하고 있다는 비판이 제기되었습니다.\n- **Why:** 로컬 환경에서 재현하기 힘든 CI/CD 파이프라인 오류를 수정하기 위해 개발자들이 수많은 시간을 '대기'하는 데 소비하고 있기 때문입니다.\n- **Impact:** 로컬 중심의 빌드 시스템이나 더 직관적인 파이프라인 도구에 대한 니즈가 다시금 부상하고 있습니다. [^13]\n\n### 4. 📝 VS Code 1.110 업데이트: 코드 편집의 재정의\n- **What:** 세계에서 가장 인기 있는 에디터 VS Code가 1.110 버전(Insiders)을 통해 새로운 편집 경험을 선보였습니다.\n- **Why:** AI 코딩 어시스턴트와의 통합성을 강화하고, 대규모 코드베이스에서의 성능 최적화에 초점을 맞췄습니다.\n- **Impact:** 개발자들의 일상적인 워크플로우 효율성이 향상되며, IDE 시장에서의 독주 체제가 더욱 공고해질 것입니다. [^1]\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **Pitchfork** | 개발자를 위한 악마처럼 유용한 프로세스 관리자. 복잡한 데몬 관리를 단순화합니다. [^30] |\n| **Tool** | **LiteBox** | MS가 오픈소스로 공개한 보안 중심의 라이브러리 OS. 안전한 샌드박싱 환경을 제공합니다. [^5] |\n| **Tool** | **Vouch** | 오픈소스 기여자의 신뢰도를 관리하는 시스템. 메인테이너의 검토 부담을 줄여줍니다. [^34] |\n| **Tool** | **Vecti** | 텍스트 프롬프트로 디자인 요소를 생성하는 AI 도구. '빛의 속도'로 디자인 프로토타이핑이 가능합니다. [^4] |\n| **Tool** | **Tiny C Compiler** | 전설적인 초소형 C 컴파일러(TCC)가 업데이트되었습니다. 여전히 빠르고 가볍습니다. [^36] |\n| **Game** | **OpenCiv3** | 문명 III(Civilization III)를 오픈소스 및 크로스 플랫폼으로 재구현한 프로젝트입니다. [^15] |\n| **Tool** | **Terminal Hub** | 수십 개의 AI 에이전트를 백그라운드에서 동시에 실행하고 관리할 수 있는 웹 터미널입니다. [^16] |\n| **Tool** | **Mailhub** | 실제 이메일 주소를 숨기고 관리할 수 있는 프라이버시 중심의 이메일 포워딩 서비스입니다. [^14] |\n| **Lang** | **Coi** | 리액티브 웹 애플리케이션 구축을 위해 설계된 새로운 컴포넌트 기반 프로그래밍 언어입니다. [^24] |\n| **Tool** | **mcp-baepsae** | AI가 iOS 시뮬레이터를 직접 조작하여 앱 테스트를 수행할 수 있게 돕는 MCP 서버입니다. [^18] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n\n#### 💻 개발 \u0026 인프라\n*   **AI로 고품질 코드 작성법**: AI에게 문맥을 잘 제공하여 스파게티 코드를 피하는 프롬프트 엔지니어링 가이드입니다. [^2]\n*   **AI 에이전트와 .NET UI**: AI가 본 적 없는 UI 프레임워크의 API를 어떻게 파악하고 코딩하는지에 대한 실험입니다. [^6]\n*   **Heroku 업데이트**: 클라우드 플랫폼 Heroku의 최신 기능 개선 및 변경 사항입니다. [^10]\n*   **Emacs-tramp-RPC**: MsgPack-RPC를 사용하여 원격 파일 편집 성능을 극대화한 Emacs 백엔드입니다. [^42]\n*   **소프트웨어 엔지니어링의 제3의 황금기**: Grady Booch가 논하는 현재 소프트웨어 공학의 흐름과 미래입니다. [^8]\n\n#### 🤖 AI \u0026 데이터\n*   **OpenAI Frontier 공개**: OpenAI가 차세대 모델 혹은 연구 성과인 'Frontier'를 공개했습니다. [^17]\n*   **LLM으로 마이크로 SaaS 대체**: 연간 $120 비용의 SaaS 기능을 LLM 스크립트로 20분 만에 구현한 사례입니다. [^19]\n*   **AI 스크래퍼의 인내심**: 웹사이트 차단에 대응하는 AI 봇들의 행동 패턴을 분석한 글입니다. [^33]\n*   **소셜 앱의 미래**: 반응형(Reactive)에서 능동형(Proactive) AI 에이전트 중심의 소셜 앱으로의 전환을 예측합니다. [^32]\n\n#### 🛡️ 보안 \u0026 사회\n*   **구글 퀀텀 보안**: 다가오는 양자 컴퓨팅 시대, 암호화 보안을 어떻게 준비해야 하는지에 대한 구글의 제언입니다. [^25]\n*   **NY주 AI 경고문 의무화**: 뉴욕주가 AI 생성 뉴스 콘텐츠에 대해 'AI 생성' 라벨 부착을 의무화하는 법안을 발의했습니다. [^20]\n*   **이탈리아 철도 사보타주**: 이탈리아 철도망이 물리적 사보타주 공격을 받아 마비된 사건입니다. [^41]\n*   **OpenClaw 보안 위험**: 오픈소스 프로젝트 OpenClaw의 보안 취약점이 기업에 리스크가 될 수 있다는 분석입니다. [^39]\n*   **X (트위터) API 종량제**: X가 API 사용량에 따른 종량제(Pay-Per-Use) 가격 정책을 도입했습니다. [^11]\n\n#### 💡 팁 \u0026 기타\n*   **기억 상실 시 컴퓨터 접근 복구**: 기억을 잃었을 때를 대비한 디지털 유산 및 접근 권한 복구 가이드입니다. [^3]\n*   **Sheldon Brown 자전거 기술**: 자전거 정비의 바이블로 불리는 Sheldon Brown의 기술 아카이브입니다. [^7]\n*   **PDF 급한 서명**: PDF 문서에 빠르게 서명하거나 도장을 찍어야 할 때 유용한 팁입니다. [^9]\n*   **영화 '해커스' 애니메이션**: 1995년 영화 '해커스'의 시각적 경험을 웹으로 재현했습니다. [^12]\n*   **애플 뉴스 광고 비판**: 애플 뉴스에 노출되는 광고들의 품질과 사기성 논란에 대한 칼럼입니다. [^23]\n*   **레이저 무기 드론 격추**: 미 해군 USS Preble함이 레이저 무기로 드론 4기를 격추하는 테스트에 성공했습니다. [^26]\n*   **CSS 해변 풍경**: 순수 CSS로 구현한 움직이는 해변 풍경 데모입니다. [^27]\n*   **Epstein 파일 공개**: 엡스타인 관련 문서 중 삭제되었던 부분이 복구되어 공개되었습니다. [^28]\n*   **작업 공유 실패**: 자신의 작업을 공유하려다 실패한 해커뉴스 유저의 사연입니다. [^29]\n*   **You Are Here**: 현재 기술과 삶의 위치를 성찰하는 블로그 포스트입니다. [^31]\n*   **Claude로 만든 시계 펌웨어**: AI Claude를 활용해 데스크탑 시계용 펌웨어와 모니터링 앱을 만든 제작기입니다. [^35]\n*   **억만장자를 위한 행진**: Y Combinator 창업자가 캘리포니아 부유세에 반대하며 시위를 조직했다는 뉴스입니다. [^37]\n*   **아이디어 피드백 요청**: 새로운 스타트업 아이디어에 대한 피드백을 구하는 Ask HN 글입니다. [^38]\n*   **닌텐도 Wii 테마 포트폴리오**: 닌텐도 Wii UI 스타일로 꾸며진 독창적인 개발자 포트폴리오 사이트입니다. [^43]\n*   **자살의 반대말**: \"자살의 반대말은 무엇인가?\"에 대한 철학적 에세이입니다. [^44]\n*   **넷플릭스 극장 모드 제안**: 영화관의 '최악의 경험'(광고, 소음 등)을 재현하는 모드를 넣어달라는 풍자적인 제안입니다. [^45]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘 뉴스는 '**통합'과 '규제**'로 요약됩니다. 애플은 구글의 손을 잡아 AI 경쟁력을 수혈받았고, 유럽은 틱톡의 알고리즘에 제동을 걸며 기술의 윤리적 책임을 묻고 있습니다. 한편, 개발자들 사이에서는 GitHub Actions와 같은 도구가 주는 편리함 뒤에 숨겨진 '복잡성 비용'에 대한 회의론이 일고 있다는 점이 흥미롭습니다. 도구는 도구일 뿐, 주객이 전도되지 않도록 점검이 필요한 시점입니다.\n\n---\n\n### Footnotes\n[^1]: February 2026 Insiders (version 1.110) - https://code.visualstudio.com/updates/v1_110\n[^2]: AI로 고품질 코드를 효과적으로 작성하는 방법 - https://news.hada.io/topic?id=26491\n[^3]: 기억을 잃었을 때 컴퓨터 접근을 복구하는 방법 - https://news.hada.io/topic?id=26490\n[^4]: 벡티(Vecti) – 빛의 속도로 디자인하기 - https://news.hada.io/topic?id=26489\n[^5]: Microsoft가 오픈소스로 공개한 보안 중심 라이브러리 OS LiteBox - https://news.hada.io/topic?id=26488\n[^6]: AI가 본 적 없는 .NET UI 프레임워크로 IDE를 만들 때, 에이전트는 어떻게 API를 파악하는가 - https://news.hada.io/topic?id=26487\n[^7]: Sheldon Brown의 자전거 기술 정보 - https://news.hada.io/topic?id=26486\n[^8]: 소프트웨어 엔지니어링의 제3의 황금기 - Grady Booch - https://news.hada.io/topic?id=26485\n[^9]: Show GN: PDF에 급하게 서명이 필요하거나 날인이 필요할 때 - https://news.hada.io/topic?id=26484\n[^10]: Heroku 업데이트 - https://news.hada.io/topic?id=26483\n[^11]: X, Pay-Per-Use API 가격 플랜 도입 - https://news.hada.io/topic?id=26482\n[^12]: 해커스 (1995) 애니메이티드 익스피리언스 - https://news.hada.io/topic?id=26481\n[^13]: GitHub Actions가 엔지니어링 팀을 서서히 죽이고 있다 - https://news.hada.io/topic?id=26480\n[^14]: Show GN: Mailhub - 이메일 주소를 감추세요 - https://news.hada.io/topic?id=26479\n[^15]: 문명 III의 오픈소스, 크로스플랫폼 재구현 프로젝트 OpenCiv3 - https://news.hada.io/topic?id=26478\n[^16]: Show GN: Terminal Hub – AI Agent 수십 개를 백그라운드로 돌리기 위한 웹 터미널 - https://news.hada.io/topic?id=26477\n[^17]: OpenAI Frontier 공개 - https://news.hada.io/topic?id=26475\n[^18]: Show GN: mcp-baepsae – iOS 시뮬레이터를 AI가 직접 조작하는 MCP 서버 - https://news.hada.io/topic?id=26474\n[^19]: LLM으로 20분 만에 연간 $120짜리 마이크로 SaaS를 대체했어요 - https://news.hada.io/topic?id=26473\n[^20]: 뉴욕주, AI가 생성한 뉴스 콘텐츠에 'AI 생성' 경고문 부착 의무화 법안 발의 - https://news.hada.io/topic?id=26472\n[^21]: TikTok의 '중독성 디자인'이 유럽에서 불법으로 판정됨 - https://news.hada.io/topic?id=26471\n[^22]: Waymo 월드 모델: 자율주행 시뮬레이션의 새로운 경계 - https://news.hada.io/topic?id=26470\n[^23]: 이제 나는 애플 뉴스의 모든 광고가 사기라고 생각합니다 - https://news.hada.io/topic?id=26469\n[^24]: Coi - 리액티브 웹앱 구축용 컴포넌트 기반 언어 - https://news.hada.io/topic?id=26468\n[^25]: The quantum era is coming. Are we ready to secure it? - https://blog.google/innovation-and-ai/technology/safety-security/the-quantum-era-is-coming-are-we-ready-to-secure-it/\n[^26]: USS Preble Used Helios Laser to Zap Four Drones in Expanding Testing - https://www.twz.com/sea/uss-preble-used-helios-laser-to-zap-four-drones-in-expanding-testing\n[^27]: Show HN: Animated beach scene, made with CSS - https://ahmed-machine.github.io/beach-scene/\n[^28]: An update on unredacting select Epstein files – DBC12.pdf liberated - https://neosmart.net/blog/efta00400459-has-been-cracked-dbc12-pdf-liberated/\n[^29]: Was going to share my work - https://news.ycombinator.com/item?id=46928505\n[^30]: Pitchfork: A devilishly good process manager for developers - https://pitchfork.jdx.dev/\n[^31]: You Are Here - https://brooker.co.za/blog/2026/02/07/you-are-here.html\n[^32]: Why social apps need to become proactive, not reactive - https://www.heyflare.app/blog/from-reactive-to-proactive-how-ai-agents-will-reshape-social-apps\n[^33]: How patient are AI scrapers, anyway? – Random Thoughts - https://lars.ingebrigtsen.no/2026/02/07/how-patient-are-ai-scrapers-anyway/\n[^34]: Vouch: A contributor trust management system - https://github.com/mitchellh/vouch\n[^35]: I built a terminal monitoring app and custom firmware for a clock with Claude - https://duggan.ie/posts/i-built-a-terminal-monitoring-app-and-custom-firmware-for-a-desktop-clock-with-claude\n[^36]: Tiny C Compiler - https://bellard.org/tcc/\n[^37]: Y Combinator Founder Organizes 'March for Billionaires' - https://mlq.ai/news/ai-startup-founder-organizes-march-for-billionaires-protest-against-california-wealth-tax/\n[^38]: Ask HN: Need feedback on the idea I'm working on - https://news.ycombinator.com/item?id=46928430\n[^39]: OpenClaw Addresses Security Risks - https://thebiggish.com/news/openclaw-s-security-flaws-expose-enterprise-risk-22-of-deployments-unauthorized\n[^40]: Apple finalizes Gemini / Siri deal - https://www.engadget.com/ai/apple-reportedly-plans-to-reveal-its-gemini-powered-siri-in-february-174356923.html\n[^41]: Italy Railways Sabotaged - https://www.bbc.co.uk/news/articles/czr4rx04xjpo\n[^42]: Emacs-tramp-RPC: high-performance TRAMP back end using MsgPack-RPC - https://github.com/ArthurHeymans/emacs-tramp-rpc\n[^43]: Nintendo Wii Themed Portfolio - https://akiraux.vercel.app/\n[^44]: \"There must be something like the opposite of suicide \" - https://post.substack.com/p/there-must-be-something-like-the\n[^45]: Ask HN: Why doesn't Netflix add a “Theater Mode” that recreates the worst parts? - https://news.ycombinator.com/item?id=46928337\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **February 2026 Insiders (version 1.110)**\n   - 출처: Visual Studio Code - Code Editing. Redefined.\n   - 링크: https://code.visualstudio.com/updates/v1_110\n\n2. **AI로 고품질 코드를 효과적으로 작성하는 방법**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26491\n\n3. **기억을 잃었을 때 컴퓨터 접근을 복구하는 방법**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26490\n\n4. **벡티(Vecti) – 빛의 속도로 디자인하기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26489\n\n5. **Microsoft가 오픈소스로 공개한 보안 중심 라이브러리 OS LiteBox**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26488\n\n6. **AI가 본 적 없는 .NET UI 프레임워크로 IDE를 만들 때, 에이전트는 어떻게 API를 파악하는가**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26487\n\n7. **Sheldon Brown의 자전거 기술 정보**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26486\n\n8. **소프트웨어 엔지니어링의 제3의 황금기 - Grady Booch**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26485\n\n9. **Show GN: PDF에 급하게 서명이 필요하거나 날인이 필요할 때**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26484\n\n10. **Heroku 업데이트**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26483\n\n11. **X, Pay-Per-Use API 가격 플랜 도입**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26482\n\n12. **해커스 (1995) 애니메이티드 익스피리언스**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26481\n\n13. **GitHub Actions가 엔지니어링 팀을 서서히 죽이고 있다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26480\n\n14. **Show GN: Mailhub - 이메일 주소를 감추세요**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26479\n\n15. **문명 III의 오픈소스, 크로스플랫폼 재구현 프로젝트 OpenCiv3**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26478\n\n16. **Show GN: Terminal Hub – AI Agent 수십 개를 백그라운드로 돌리기 위한 웹 터미널**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26477\n\n17. **OpenAI Frontier 공개**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26475\n\n18. **Show GN: mcp-baepsae – iOS 시뮬레이터를 AI가 직접 조작하는 MCP 서버**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26474\n\n19. **LLM으로 20분 만에 연간 $120짜리 마이크로 SaaS를 대체했어요**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26473\n\n20. **뉴욕주, AI가 생성한 뉴스 콘텐츠에 'AI 생성' 경고문 부착 의무화 법안 발의**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26472\n\n21. **TikTok의 '중독성 디자인'이 유럽에서 불법으로 판정됨**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26471\n\n22. **Waymo 월드 모델: 자율주행 시뮬레이션의 새로운 경계**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26470\n\n23. **이제 나는 애플 뉴스의 모든 광고가 사기라고 생각합니다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26469\n\n24. **Coi - 리액티브 웹앱 구축용 컴포넌트 기반 언어**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26468\n\n25. **The quantum era is coming. Are we ready to secure it?**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/innovation-and-ai/technology/safety-security/the-quantum-era-is-coming-are-we-ready-to-secure-it/\n\n26. **USS Preble Used Helios Laser to Zap Four Drones in Expanding Testing**\n   - 출처: Hacker News\n   - 링크: https://www.twz.com/sea/uss-preble-used-helios-laser-to-zap-four-drones-in-expanding-testing\n\n27. **Show HN: Animated beach scene, made with CSS**\n   - 출처: Hacker News\n   - 링크: https://ahmed-machine.github.io/beach-scene/\n\n28. **An update on unredacting select Epstein files – DBC12.pdf liberated**\n   - 출처: Hacker News\n   - 링크: https://neosmart.net/blog/efta00400459-has-been-cracked-dbc12-pdf-liberated/\n\n29. **Was going to share my work**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=46928505\n\n30. **Pitchfork: A devilishly good process manager for developers**\n   - 출처: Hacker News\n   - 링크: https://pitchfork.jdx.dev/\n\n31. **You Are Here**\n   - 출처: Hacker News\n   - 링크: https://brooker.co.za/blog/2026/02/07/you-are-here.html\n\n32. **Why social apps need to become proactive, not reactive**\n   - 출처: Hacker News\n   - 링크: https://www.heyflare.app/blog/from-reactive-to-proactive-how-ai-agents-will-reshape-social-apps\n\n33. **How patient are AI scrapers, anyway? – Random Thoughts**\n   - 출처: Hacker News\n   - 링크: https://lars.ingebrigtsen.no/2026/02/07/how-patient-are-ai-scrapers-anyway/\n\n34. **Vouch: A contributor trust management system**\n   - 출처: Hacker News\n   - 링크: https://github.com/mitchellh/vouch\n\n35. **I built a terminal monitoring app and custom firmware for a clock with Claude**\n   - 출처: Hacker News\n   - 링크: https://duggan.ie/posts/i-built-a-terminal-monitoring-app-and-custom-firmware-for-a-desktop-clock-with-claude\n\n36. **Tiny C Compiler**\n   - 출처: Hacker News\n   - 링크: https://bellard.org/tcc/\n\n37. **Y Combinator Founder Organizes 'March for Billionaires'**\n   - 출처: Hacker News\n   - 링크: https://mlq.ai/news/ai-startup-founder-organizes-march-for-billionaires-protest-against-california-wealth-tax/\n\n38. **Ask HN: Need feedback on the idea I'm working on**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=46928430\n\n39. **OpenClaw Addresses Security Risks**\n   - 출처: Hacker News\n   - 링크: https://thebiggish.com/news/openclaw-s-security-flaws-expose-enterprise-risk-22-of-deployments-unauthorized\n\n40. **Apple finalizes Gemini / Siri deal**\n   - 출처: Hacker News\n   - 링크: https://www.engadget.com/ai/apple-reportedly-plans-to-reveal-its-gemini-powered-siri-in-february-174356923.html\n\n41. **Italy Railways Sabotaged**\n   - 출처: Hacker News\n   - 링크: https://www.bbc.co.uk/news/articles/czr4rx04xjpo\n\n42. **Emacs-tramp-RPC: high-performance TRAMP back end using MsgPack-RPC**\n   - 출처: Hacker News\n   - 링크: https://github.com/ArthurHeymans/emacs-tramp-rpc\n\n43. **Nintendo Wii Themed Portfolio**\n   - 출처: Hacker News\n   - 링크: https://akiraux.vercel.app/\n\n44. **\"There must be something like the opposite of suicide \"**\n   - 출처: Hacker News\n   - 링크: https://post.substack.com/p/there-must-be-something-like-the\n\n45. **Ask HN: Why doesn't Netflix add a “Theater Mode” that recreates the worst parts?**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=46928337\n\n\n",
+  "articles": [
+    {
+      "title": "February 2026 Insiders (version 1.110)",
+      "link": "https://code.visualstudio.com/updates/v1_110",
+      "source": "Visual Studio Code - Code Editing. Redefined.",
+      "category": "tech",
+      "publishedAt": "2026-03-04T17:00:00Z",
+      "description": "\n      \u003cp\u003eLearn what is new in the Visual Studio Code February 2026 Release (1.110).\u003c/p\u003e\n      \u003cp\u003e\u003ca href=\"https://code.visualstudio.com/updates/v1_110\"\u003eRead the full article\u003c/a\u003e\u003c/p\u003e\n    "
+    },
+    {
+      "title": "AI로 고품질 코드를 효과적으로 작성하는 방법",
+      "link": "https://news.hada.io/topic?id=26491",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-08T06:33:20+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eAI와 협업하는 개발 환경\u003c/strong\u003e에서는 인간이 프로젝트의 방향과 의사결정을 명확히 정의해야 품질을 유지할 수 있음\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e정확한 문서화\u003c/strong\u003e를 통해 AI와 다른 개발자 모두가 요구사항과 제약을 명확히 이해하도록 해야 함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e디버그 시스템과 코드 리뷰 체계...\u003c/p\u003e"
+    },
+    {
+      "title": "기억을 잃었을 때 컴퓨터 접근을 복구하는 방법",
+      "link": "https://news.hada.io/topic?id=26490",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-08T05:41:15+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e파일을 암호화하고 \u003cstrong\u003e복구 키를 여러 친구에게 분할해 보관\u003c/strong\u003e할 수 있는 오프라인 도구로, \u003cstrong\u003eShamir의 비밀 분할 알고리듬\u003c/strong\u003e을 사용\u003c/li\u003e\n\u003cli\u003e예를 들어 5명의 친구에게 키 조각을 나누고, \u003cstrong\u003e3명이 협력하면 복구 가능\u003c/strong\u003e, 단 한 명만으로는 접근 불가\u003c/li\u003e\n\u003cli\u003e각 친구...\u003c/p\u003e"
+    },
+    {
+      "title": "벡티(Vecti) – 빛의 속도로 디자인하기",
+      "link": "https://news.hada.io/topic?id=26489",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-08T05:38:15+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e복잡한 UX 워크플로를 \u003cstrong\u003e직관적인 시각적 솔루션\u003c/strong\u003e으로 전환하는 \u003cstrong\u003e협업형 디자인 도구\u003c/strong\u003e로, 브라우저 기반에서 작동\u003c/li\u003e\n\u003cli\u003e여러 사용자가 동시에 편집·검토할 수 있는 \u003cstrong\u003e실시간 협업 기능\u003c/strong\u003e과 \u003cstrong\u003e고성능 렌더링 엔진\u003c/strong\u003e을 제공\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e공유 ...\u003c/p\u003e"
+    },
+    {
+      "title": "Microsoft가 오픈소스로 공개한 보안 중심 라이브러리 OS LiteBox",
+      "link": "https://news.hada.io/topic?id=26488",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-08T05:35:15+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eLiteBox\u003c/strong\u003e는 커널 모드와 사용자 모드 실행을 모두 지원하는 \u003cstrong\u003e보안 중심 라이브러리 OS\u003c/strong\u003e로, 호스트 인터페이스를 최소화해 공격 표면을 줄이는 \u003cstrong\u003e샌드박싱 환경\u003c/strong\u003e 제공\u003c/li\u003e\n\u003cli\u003e시스템은 \u003cstrong\u003eRust 기반\u003c/strong\u003e으로 작성되었으며, \u003ccode\u003enix\u003c/code\u003e 및 \u003ccod...\u003c/p\u003e"
+    },
+    {
+      "title": "AI가 본 적 없는 .NET UI 프레임워크로 IDE를 만들 때, 에이전트는 어떻게 API를 파악하는가",
+      "link": "https://news.hada.io/topic?id=26487",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-08T02:49:40+09:00",
+      "description": "\u003cp\u003eAI 학습 데이터에 없는 신생 .NET UI 프레임워크로 IDE를 만들 때, HandMirror MCP로 어셈블리를 직접 검사해 첫 빌드 오류를 3개로 줄인 경험을 공유합니다.\u003c/p\u003e\n\u003cp\u003eHandMirror MCP로 NuGet 패키지의 컴파일된 어셈블리를 직접 검사하면, AI가 학습한 적 없는 신생 프레임워크에서도 정확한 API 시그니처를 파악해 첫"
+    },
+    {
+      "title": "Sheldon Brown의 자전거 기술 정보",
+      "link": "https://news.hada.io/topic?id=26486",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-08T00:33:05+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e자전거 정비와 구조 전반을 다루는 \u003cstrong\u003e기술 자료와 용어집\u003c/strong\u003e을 제공하는 웹사이트\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e브레이크, 기어, 프레임, 휠, 고정기어, 투어링, 수리 팁\u003c/strong\u003e 등 세부 주제별로 문서가 정리되어 있음\u003c/li\u003e\n\u003cli\u003e초보자용 가이드와 \u003cstrong\u003eDIY(직접 수리)\u003c/strong\u003e , \u003cstrong\u003e통근용 자전...\u003c/p\u003e"
+    },
+    {
+      "title": "소프트웨어 엔지니어링의 제3의 황금기 - Grady Booch",
+      "link": "https://news.hada.io/topic?id=26485",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-07T21:52:13+09:00",
+      "description": "\u003cp\u003e\u003cstrong\u003eThe third golden age of software engineering – thanks to AI, with Grady Booch\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e본 영상은 소프트웨어 공학의 선구자인 그레이디 부치(Grady Booch)와의 대담을 통해, 인공지능(AI)의 부상이 소프트웨어 엔지니어링의 종말을 의미한다는 주장을 반박하고, 오히려 우리가 '제3의 황금기'에"
+    },
+    {
+      "title": "Show GN: PDF에 급하게 서명이 필요하거나 날인이 필요할 때",
+      "link": "https://news.hada.io/topic?id=26484",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-07T21:22:21+09:00",
+      "description": "\u003cp\u003ePDF 무료라고 속이고 회사에서 설치해서 사용하면 아이피 추적해서 회사에서 사용은 저작권법 위반이라고 협박하는 것에 한 번 당해서 직접 만들어서 무료로 공개하였습니다!!\u003c/p\u003e\n"
+    },
+    {
+      "title": "Heroku 업데이트",
+      "link": "https://news.hada.io/topic?id=26483",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-07T17:33:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eHeroku가 \u003cstrong\u003e안정성·보안·신뢰성·지원 중심의 유지 엔지니어링 모델\u003c/strong\u003e로 전환하며, 새로운 기능 개발보다 품질과 운영 우수성 유지에 집중\u003c/li\u003e\n\u003cli\u003e현재 \u003cstrong\u003e모든 기존 및 신규 일반 고객\u003c/strong\u003e은 가격, 결제, 서비스, 일상적 사용 방식에 \u003cstrong\u003e변경 없이\u003c/strong\u003e Heroku를 계속 이용...\u003c/p\u003e"
+    },
+    {
+      "title": "X, Pay-Per-Use API 가격 플랜 도입",
+      "link": "https://news.hada.io/topic?id=26482",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-07T15:15:21+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e사용한 만큼만 비용\u003c/strong\u003e을 내는 종량제 방식\u003c/li\u003e\n\u003cli\u003e개발자 콘솔에서 \u003cstrong\u003e크레딧\u003c/strong\u003e을 먼저 구매하고, \u003cstrong\u003eAPI 요청시마다 차감\u003c/strong\u003e하는 구조\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e엔드포인트 별로 가격이 다름\u003c/strong\u003e : 게시물 생성 $0.010, 게시물 읽기 $0.005, DM 보내기 $0.015 등\u003c/li...\u003c/p\u003e"
+    },
+    {
+      "title": "해커스 (1995) 애니메이티드 익스피리언스",
+      "link": "https://news.hada.io/topic?id=26481",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-07T14:34:29+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e1995년 영화 \u003cstrong\u003e‘Hackers’\u003c/strong\u003e 를 기반으로 한 \u003cstrong\u003e인터랙티브 애니메이션 웹 경험\u003c/strong\u003e으로, 사용자가 직접 조작하며 탐험할 수 있는 형태\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e데스크톱\u003c/strong\u003e에서는 W,A,S,D 키로 이동하고 Q,E로 시점을 회전하며, \u003cstrong\u003e스페이스바와 쉬프트키\u003c/strong\u003e로 상하 이동...\u003c/p\u003e"
+    },
+    {
+      "title": "GitHub Actions가 엔지니어링 팀을 서서히 죽이고 있다",
+      "link": "https://news.hada.io/topic?id=26480",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-07T14:32:52+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eRepo에 기본으로 포함된 CI\u003c/strong\u003e라는 이유로 널리 쓰이지만, \u003cstrong\u003e구조적 비효율성과 불안정한 사용자 경험\u003c/strong\u003e이 개발자 생산성을 저하시킴\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e로그 뷰어의 느린 로딩과 브라우저 충돌\u003c/strong\u003e, 복잡한 \u003cstrong\u003eYAML 구문과 표현식 오류\u003c/strong\u003e가 반복적인 디버깅을 초...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: Mailhub - 이메일 주소를 감추세요",
+      "link": "https://news.hada.io/topic?id=26479",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-07T14:22:50+09:00",
+      "description": "\u003cp\u003e모두들 즐거운 주말 보내고 계실까요 😄\u003c/p\u003e\n\u003cp\u003e처음으로 제 프로젝트를 공개하려니 긴장되네요..ㅎㅎ\u003c/p\u003e\n\u003cp\u003e개인정보 유출 사건사고를 접하다가 만들어본 서비스입니다.\u003c/p\u003e\n\u003cp\u003e사실 전 Apple의 Hide My Email 서비스를 이용중인데요, Hide My Email은 iCloud 구독해야 쓸수있기도 하고, Safari나 애플 생태계에서 "
+    },
+    {
+      "title": "문명 III의 오픈소스, 크로스플랫폼 재구현 프로젝트 OpenCiv3",
+      "link": "https://news.hada.io/topic?id=26478",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-07T12:33:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e팬 커뮤니티가 \u003cstrong\u003eGodot 엔진과 C#\u003c/strong\u003e 으로 개발 중인 오픈소스 프로젝트로, _Civilization III_를 현대적으로 재구성한 형태\u003c/li\u003e\n\u003cli\u003e기존 게임의 \u003cstrong\u003e임의적 제한 제거\u003c/strong\u003e, \u003cstrong\u003e버그 수정\u003c/strong\u003e, \u003cstrong\u003e모드 확장성 강화\u003c/strong\u003e, \u003cstrong\u003e현대 그래픽 및 플랫폼 지원\u003c/stro...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: Terminal Hub – AI Agent 수십 개를 백그라운드로 돌리기 위한 웹 터미널",
+      "link": "https://news.hada.io/topic?id=26477",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-07T12:06:39+09:00",
+      "description": "\u003cp\u003e웹브라우져에서 터미널 환경을 사용할 수 있도록 만들었습니다.\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e터미널을 여러개 띄울 수 있고\u003c/li\u003e\n\u003cli\u003e터미널마다 이름을 붙일 수 있으며\u003c/li\u003e\n\u003cli\u003e웹 브라우져를 닫아도 터미널 세션은 유지되며\u003c/li\u003e\n\u003cli\u003e모바일 환경에서도 충분히 사용할 수 있습니다\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003e직접 써보고싶으신 분들은 gosud"
+    },
+    {
+      "title": "OpenAI Frontier 공개",
+      "link": "https://news.hada.io/topic?id=26475",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-07T11:11:02+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e기업이 \u003cstrong\u003eAI 에이전트\u003c/strong\u003e를 구축·배포·관리할 수 있도록 지원하는 새로운 \u003cstrong\u003e엔터프라이즈 플랫폼\u003c/strong\u003e으로, 실제 업무 수행을 위한 \u003cstrong\u003e공유 컨텍스트·온보딩·권한 관리\u003c/strong\u003e 기능을 제공\u003c/li\u003e\n\u003cli\u003e기존 시스템과 통합되어 \u003cstrong\u003e데이터·애플리케이션을 재구축하지 않고도\u003c/st...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: mcp-baepsae – iOS 시뮬레이터를 AI가 직접 조작하는 MCP 서버",
+      "link": "https://news.hada.io/topic?id=26474",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-07T10:16:16+09:00",
+      "description": "\u003cp\u003e안녕하세요, iOS 시뮬레이터와 macOS 앱을 AI 에이전트가 직접 자동화할 수 있는 MCP를 만들었습니다.\u003c/p\u003e\n\u003cp\u003e주요 기능:\u003c/p\u003e\n\u003cp\u003e• 32개 UI 자동화 도구 (탭, 스와이프, 텍스트 입력, 스크린샷 등)\u003cbr /\u003e\n• Swift 네이티브 브릿지로 빠른 성능\u003cbr /\u003e\n• Claude Code, Codex, Gemini, OpenCode 등 지원\u003cbr /\u003e\n사용 예"
+    },
+    {
+      "title": "LLM으로 20분 만에 연간 $120짜리 마이크로 SaaS를 대체했어요",
+      "link": "https://news.hada.io/topic?id=26473",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-07T09:51:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eSaaS가 LLM으로 대체될 것이라는 주장에 회의적이었으나, 직접 \u003cstrong\u003e연간 120달러의 링크드인/X 추천글 표시 서비스\u003c/strong\u003e를 20분 만에 자체 코드로 대체한 경험 공유\u003c/li\u003e\n\u003cli\u003e대체 대상은 \u003cstrong\u003e결제 시스템이 2023년부터 고장\u003c/strong\u003e난 채 방치되어 있었고 고객 지원도 깨진 링크를 보내주는 수준...\u003c/p\u003e"
+    },
+    {
+      "title": "뉴욕주, AI가 생성한 뉴스 콘텐츠에 'AI 생성' 경고문 부착 의무화 법안 발의",
+      "link": "https://news.hada.io/topic?id=26472",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-07T09:46:55+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e뉴욕주 의회에서 \u003cstrong\u003eAI가 생성한 뉴스 콘텐츠에 경고문을 부착하고 인간 검토를 의무화하는 법안\u003c/strong\u003e이 발의됨\u003c/li\u003e\n\u003cli\u003e법안명은 \u003cstrong\u003e‘NY FAIR News Act(New York Fundamental Artificial Intelligence Requirements in News Act)’\u003c/strong\u003e 로, 뉴스 산업의 투명성과 저널리즘 보호를 목표로...\u003c/p\u003e"
+    },
+    {
+      "title": "TikTok의 '중독성 디자인'이 유럽에서 불법으로 판정됨",
+      "link": "https://news.hada.io/topic?id=26471",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-07T09:43:55+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eEU 규제 당국이 TikTok의 \u003cstrong\u003e무한 스크롤\u003c/strong\u003e, 자동 재생, 추천 알고리듬 등 핵심 기능이 \u003cstrong\u003e중독성 디자인\u003c/strong\u003e에 해당한다는 예비 결정을 내림\u003c/li\u003e\n\u003cli\u003e이용자의 \u003cstrong\u003e신체적·정신적 건강\u003c/strong\u003e에 잠재적 해를 끼치며, 미성년자와 취약 성인 포함 전체 이용자에게 영향\u003c/li\u003e\n\u003cli\u003e소...\u003c/p\u003e"
+    },
+    {
+      "title": "Waymo 월드 모델: 자율주행 시뮬레이션의 새로운 경계",
+      "link": "https://news.hada.io/topic?id=26470",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-07T09:40:55+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e대규모 자율주행 시뮬레이션을 위한 \u003cstrong\u003e생성형 세계 모델\u003c/strong\u003e로, 현실과 유사한 환경을 실시간으로 재현함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eGenie 3\u003c/strong\u003e 기반으로 구축되어, \u003cstrong\u003e희귀하거나 극단적인 상황\u003c/strong\u003e(토네이도, 홍수, 동물 출현 등)을 실제처럼 재현 가능\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e운전 제어, 장...\u003c/p\u003e"
+    },
+    {
+      "title": "이제 나는 애플 뉴스의 모든 광고가 사기라고 생각합니다",
+      "link": "https://news.hada.io/topic?id=26469",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-07T09:37:55+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e애플이 \u003cstrong\u003eTaboola와 제휴해 광고를 제공\u003c/strong\u003e한 이후, Apple News 내 광고 품질이 급격히 악화됨\u003c/li\u003e\n\u003cli\u003e최근 노출되는 광고 다수가 \u003cstrong\u003eAI로 생성된 이미지와 허위 도메인 정보\u003c/strong\u003e를 사용한 사기성 형태로 확인됨\u003c/li\u003e\n\u003cli\u003e예시로 제시된 광고들은 \u003cstrong\u003e도메인이 최근 등록된 사이트...\u003c/p\u003e"
+    },
+    {
+      "title": "Coi - 리액티브 웹앱 구축용 컴포넌트 기반 언어",
+      "link": "https://news.hada.io/topic?id=26468",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-07T09:31:02+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e고성능 웹 애플리케이션 개발\u003c/strong\u003e을 목표로 설계된 \u003cstrong\u003e컴포넌트 기반 언어\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eWASM(WebAssembly)\u003c/strong\u003e 과 \u003cstrong\u003e정밀 반응형(fine-grained reactivity)\u003c/strong\u003e 구조를 결합\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e타입 안정성(type safety)\u003c/strong\u003e 을 핵심으로, 컴파일 시점...\u003c/p\u003e"
+    },
+    {
+      "title": "The quantum era is coming. Are we ready to secure it?",
+      "link": "https://blog.google/innovation-and-ai/technology/safety-security/the-quantum-era-is-coming-are-we-ready-to-secure-it/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-06T22:15:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/3_Hero.max-600x600.format-webp.webp\"\u003eGoogle shares an update on its work and suggestions for how policymakers can help everyone be more secure in the Quantum Era."
+    },
+    {
+      "title": "USS Preble Used Helios Laser to Zap Four Drones in Expanding Testing",
+      "link": "https://www.twz.com/sea/uss-preble-used-helios-laser-to-zap-four-drones-in-expanding-testing",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-07T21:58:06Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.twz.com/sea/uss-preble-used-helios-laser-to-zap-four-drones-in-expanding-testing\"\u003ehttps://www.twz.com/sea/uss-preble-used-helios-laser-to-zap-four-drones-in-expanding-testing\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46928550\"\u003ehttps://news.ycombinator.com/item?id=46928550\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Animated beach scene, made with CSS",
+      "link": "https://ahmed-machine.github.io/beach-scene/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-07T21:57:16Z",
+      "description": "\n\u003cp\u003eStarted as an experiment to make an animated curtain, and ended up with a beach. I was curious what level of graphics you can create with just CSS and HTML in 2026. I learned that some animations (like animating box-shadows and gradients) are expensive and there's some hardware acceleration special case for mobile OSes. There's a little JS to fetch the time and and autoplay a 24-hour cycle.\u003cp\u003e\u003ca href=\"https://github.com/ahmed-machine/beach-scene/tree/main\" rel=\"nofollow\"\u003ehttps://github.com/ahmed-machine/beach-scene/tree/main\u003c/a\u003e\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46928537\"\u003ehttps://news.ycombinator.com/item?id=46928537\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "An update on unredacting select Epstein files – DBC12.pdf liberated",
+      "link": "https://neosmart.net/blog/efta00400459-has-been-cracked-dbc12-pdf-liberated/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-07T21:57:16Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://neosmart.net/blog/efta00400459-has-been-cracked-dbc12-pdf-liberated/\"\u003ehttps://neosmart.net/blog/efta00400459-has-been-cracked-dbc12-pdf-liberated/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46928536\"\u003ehttps://news.ycombinator.com/item?id=46928536\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Was going to share my work",
+      "link": "https://news.ycombinator.com/item?id=46928505",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-07T21:53:47Z",
+      "description": "\n\u003cp\u003eBut Tan made trusting in this system difficult.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46928505\"\u003ehttps://news.ycombinator.com/item?id=46928505\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Pitchfork: A devilishly good process manager for developers",
+      "link": "https://pitchfork.jdx.dev/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-07T21:53:45Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://pitchfork.jdx.dev/\"\u003ehttps://pitchfork.jdx.dev/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46928503\"\u003ehttps://news.ycombinator.com/item?id=46928503\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "You Are Here",
+      "link": "https://brooker.co.za/blog/2026/02/07/you-are-here.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-07T21:49:30Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://brooker.co.za/blog/2026/02/07/you-are-here.html\"\u003ehttps://brooker.co.za/blog/2026/02/07/you-are-here.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46928470\"\u003ehttps://news.ycombinator.com/item?id=46928470\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Why social apps need to become proactive, not reactive",
+      "link": "https://www.heyflare.app/blog/from-reactive-to-proactive-how-ai-agents-will-reshape-social-apps",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-07T21:48:47Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.heyflare.app/blog/from-reactive-to-proactive-how-ai-agents-will-reshape-social-apps\"\u003ehttps://www.heyflare.app/blog/from-reactive-to-proactive-how-ai-agents-will-reshape-social-apps\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46928462\"\u003ehttps://news.ycombinator.com/item?id=46928462\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "How patient are AI scrapers, anyway? – Random Thoughts",
+      "link": "https://lars.ingebrigtsen.no/2026/02/07/how-patient-are-ai-scrapers-anyway/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-07T21:48:19Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://lars.ingebrigtsen.no/2026/02/07/how-patient-are-ai-scrapers-anyway/\"\u003ehttps://lars.ingebrigtsen.no/2026/02/07/how-patient-are-ai-scrapers-anyway/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46928455\"\u003ehttps://news.ycombinator.com/item?id=46928455\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Vouch: A contributor trust management system",
+      "link": "https://github.com/mitchellh/vouch",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-07T21:48:15Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/mitchellh/vouch\"\u003ehttps://github.com/mitchellh/vouch\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46928453\"\u003ehttps://news.ycombinator.com/item?id=46928453\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "I built a terminal monitoring app and custom firmware for a clock with Claude",
+      "link": "https://duggan.ie/posts/i-built-a-terminal-monitoring-app-and-custom-firmware-for-a-desktop-clock-with-claude",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-07T21:47:16Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://duggan.ie/posts/i-built-a-terminal-monitoring-app-and-custom-firmware-for-a-desktop-clock-with-claude\"\u003ehttps://duggan.ie/posts/i-built-a-terminal-monitoring-app-and-custom-firmware-for-a-desktop-clock-with-claude\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46928444\"\u003ehttps://news.ycombinator.com/item?id=46928444\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Tiny C Compiler",
+      "link": "https://bellard.org/tcc/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-07T21:45:54Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://bellard.org/tcc/\"\u003ehttps://bellard.org/tcc/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46928435\"\u003ehttps://news.ycombinator.com/item?id=46928435\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Y Combinator Founder Organizes 'March for Billionaires'",
+      "link": "https://mlq.ai/news/ai-startup-founder-organizes-march-for-billionaires-protest-against-california-wealth-tax/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-07T21:45:24Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://mlq.ai/news/ai-startup-founder-organizes-march-for-billionaires-protest-against-california-wealth-tax/\"\u003ehttps://mlq.ai/news/ai-startup-founder-organizes-march-for-billionaires-protest-against-california-wealth-tax/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46928433\"\u003ehttps://news.ycombinator.com/item?id=46928433\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Ask HN: Need feedback on the idea I'm working on",
+      "link": "https://news.ycombinator.com/item?id=46928430",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-07T21:44:56Z",
+      "description": "\n\u003cp\u003eHey everyone,\u003cp\u003eI’ve been noticing a lot of friends starting lifestyle businesses on Shopify. Most of them have multiple ideas but end up picking the one that gets the most positive feedback from friends.\u003cp\u003eI don’t think that’s the right way to start a business.\u003cp\u003eSo I’m building a platform that turns your business idea into a live landing page and then runs ads to test real demand.\u003cp\u003eI have a few early users right now and I’m trying to figure out how to reach more users. Would love to hear what you all think of this product.\u003cp\u003eIf you're someone who wants to brainstorm on this, pls dm. Would love to connect https://www.yogiwarps.com/\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46928430\"\u003ehttps://news.ycombinator.com/item?id=46928430\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "OpenClaw Addresses Security Risks",
+      "link": "https://thebiggish.com/news/openclaw-s-security-flaws-expose-enterprise-risk-22-of-deployments-unauthorized",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-07T21:44:28Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://thebiggish.com/news/openclaw-s-security-flaws-expose-enterprise-risk-22-of-deployments-unauthorized\"\u003ehttps://thebiggish.com/news/openclaw-s-security-flaws-expose-enterprise-risk-22-of-deployments-unauthorized\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46928424\"\u003ehttps://news.ycombinator.com/item?id=46928424\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Apple finalizes Gemini / Siri deal",
+      "link": "https://www.engadget.com/ai/apple-reportedly-plans-to-reveal-its-gemini-powered-siri-in-february-174356923.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-07T21:43:56Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.engadget.com/ai/apple-reportedly-plans-to-reveal-its-gemini-powered-siri-in-february-174356923.html\"\u003ehttps://www.engadget.com/ai/apple-reportedly-plans-to-reveal-its-gemini-powered-siri-in-february-174356923.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46928417\"\u003ehttps://news.ycombinator.com/item?id=46928417\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Italy Railways Sabotaged",
+      "link": "https://www.bbc.co.uk/news/articles/czr4rx04xjpo",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-07T21:43:34Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.bbc.co.uk/news/articles/czr4rx04xjpo\"\u003ehttps://www.bbc.co.uk/news/articles/czr4rx04xjpo\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46928412\"\u003ehttps://news.ycombinator.com/item?id=46928412\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Emacs-tramp-RPC: high-performance TRAMP back end using MsgPack-RPC",
+      "link": "https://github.com/ArthurHeymans/emacs-tramp-rpc",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-07T21:42:03Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/ArthurHeymans/emacs-tramp-rpc\"\u003ehttps://github.com/ArthurHeymans/emacs-tramp-rpc\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46928399\"\u003ehttps://news.ycombinator.com/item?id=46928399\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Nintendo Wii Themed Portfolio",
+      "link": "https://akiraux.vercel.app/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-07T21:37:55Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://akiraux.vercel.app/\"\u003ehttps://akiraux.vercel.app/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46928359\"\u003ehttps://news.ycombinator.com/item?id=46928359\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 2\u003c/p\u003e\n"
+    },
+    {
+      "title": "\"There must be something like the opposite of suicide \"",
+      "link": "https://post.substack.com/p/there-must-be-something-like-the",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-07T21:35:41Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://post.substack.com/p/there-must-be-something-like-the\"\u003ehttps://post.substack.com/p/there-must-be-something-like-the\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46928343\"\u003ehttps://news.ycombinator.com/item?id=46928343\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Ask HN: Why doesn't Netflix add a “Theater Mode” that recreates the worst parts?",
+      "link": "https://news.ycombinator.com/item?id=46928337",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-07T21:34:53Z",
+      "description": "\n\u003cp\u003eThe idea is to recreate the entire movie theater experience, including the worst parts.\u003cp\u003eThis mode would add audience reactions like laughter, gasps, and clapping at key moments, so movies feel like an event again.\u003cp\u003eBut it would also faithfully recreate the true theater experience:\u003cp\u003e* People shouting comments at the screen like they are part of the movie\u003cp\u003e* Someone standing up at the exact worst moment and blocking your view\u003cp\u003e* A person behind you explaining the plot to their friend in a whisper that is somehow louder than normal talking\u003cp\u003e* Random coughing fits that last way too long\u003cp\u003e* Someone’s phone lighting up like a small sun during a dark scene\u003cp\u003e* Constant seat shuffling and aggressive snack rustling\u003cp\u003eThis feature would remind people why watching movies at home is better. Conveniently, on Netflix.\u003cp\u003eWhat do you think of this idea?\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46928337\"\u003ehttps://news.ycombinator.com/item?id=46928337\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    }
+  ],
+  "generatedAt": "2026-02-08T07:11:19.058342387+09:00"
+}
