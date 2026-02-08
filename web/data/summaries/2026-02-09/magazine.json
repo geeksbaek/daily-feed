@@ -1,0 +1,338 @@
+{
+  "date": "2026-02-09",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2026년 2월 8일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** VS Code의 에디터 재정의 선언부터 AI 에이전트가 주도하는 '소프트웨어 팩토리'의 부상, 그리고 앤스로픽의 새로운 모델과 안전성 연구까지 기술 생태계의 급격한 지각변동을 확인하세요.\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### VS Code 2026년 2월 인사이더 업데이트 (v1.110): \"코드 편집의 재정의\"\n마이크로소프트가 Visual Studio Code의 1.110 버전(Insiders)을 공개하며 \"Code Editing. Redefined.\"라는 슬로건을 내걸었습니다. 이는 단순한 기능 추가를 넘어, 에디터의 핵심 작동 방식에 근본적인 변화가 있음을 시사합니다. AI 네이티브 기능의 심층 통합이나 성능 아키텍처의 쇄신이 포함된 것으로 보이며, 개발자 경험(DX)의 새로운 표준을 제시할 것으로 기대됩니다.\n\u003e **Key Point:** 전 세계 개발자의 표준 도구인 VS Code가 1.110 버전을 통해 편집 경험을 '재정의'하며, AI 시대에 맞는 새로운 코딩 패러다임을 예고했습니다. [^1]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. AI 에이전트, 프레임워크를 대체하고 '소프트웨어 팩토리'를 열다\n- **What:** 코딩 에이전트가 기존의 복잡한 프레임워크 학습 필요성을 낮추고 있으며, 소프트웨어 개발이 인간 중심의 '공예'에서 에이전트 중심의 '팩토리' 모델로 전환되고 있다는 분석이 나왔습니다. [^13][^20]\n- **Why:** AI가 코드를 직접 생성하고 관리하게 되면서, 개발자는 도구의 세부 사항보다 비즈니스 로직과 설계에 집중해야 하는 환경이 도래했기 때문입니다. 하지만 이에 대한 반작용으로 \"생성을 멈추고 생각을 하라\"는 비판적 목소리도 제기됩니다. [^25]\n- **Impact:** 개발자의 역할이 '작성자'에서 '감독관'으로 변화하며, 장인 정신의 상실을 우려하는 목소리와 생산성 혁명을 기대하는 시각이 공존하고 있습니다. [^17]\n\n### 2. 앤스로픽의 광폭 행보: Claude Opus 4.6 출시와 정렬(Alignment) 연구\n- **What:** 앤스로픽이 기존 대비 2.5배 빠르지만 가격은 6배 비싼 고성능 모델 'Claude Opus 4.6 Fast Mode'를 공개했습니다. 동시에 AI가 실패할 때 체계적인 오류보다 '갈팡질팡(Incoherent)'하는 것이 더 위험할 수 있다는 정렬 연구 결과를 발표했습니다. [^12][^15]\n- **Why:** 모델의 추론 능력이 향상됨에 따라 속도와 정확성 사이의 트레이드오프를 조절하는 'Fast Mode' 같은 옵션이 중요해졌으며, AI의 신뢰성을 확보하기 위한 안전 장치 연구가 필수적이기 때문입니다.\n- **Impact:** 고비용 고성능 AI 시장의 경쟁이 심화되는 한편, AI의 예측 불가능한 행동을 통제하려는 기술적 시도가 더욱 정교해질 전망입니다.\n\n### 3. 경제 지표의 경고: 고용 감소와 AI 인프라 병목\n- **What:** 미국이 대공황 이후 1월 기준 가장 빠른 고용 감소세를 기록했다는 충격적인 데이터가 나왔습니다. 반면, AI 열풍은 전 산업에 걸쳐 공급 부족을 초래하고 있으며, 아마존 데이터센터 확장이 전력망 지연으로 차질을 빚는 등 인프라 병목 현상이 심화되고 있습니다. [^7][^16][^37]\n- **Why:** AI 기술 투자는 폭발적으로 늘어나지만, 이를 뒷받침할 전력 인프라와 거시 경제의 고용 상황은 불균형을 이루고 있습니다.\n- **Impact:** 기술 섹터의 호황과 실물 경제의 침체 사이의 괴리가 커지며, 향후 기술 투자의 지속 가능성에 대한 우려가 제기될 수 있습니다.\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **SectorC** | 단 512바이트로 구현된 x86 C 컴파일러. 극한의 최적화를 보여줍니다. [^8] |\n| **Tool** | **Monty** | AI가 생성한 코드를 샌드박스 환경에서 안전하게 실행하는 경량 파이썬 인터프리터. [^21] |\n| **Tool** | **BreezyBox** | 리눅스 없이 ESP32-S3 마이크로컨트롤러에서 셸, Vi, C 컴파일러를 구동하는 데모. [^6] |\n| **Tool** | **Squre** | Rust로 작성된 오픈소스 바이너리 보호기(Binary Protector). [^34] |\n| **Tool** | **Yattee 2** | iOS/macOS용 개인정보 보호 중심의 비디오 플레이어. [^24] |\n| **Tool** | **EmulatorJS** | 웹 브라우저에서 콘솔 게임을 실행할 수 있게 해주는 프런트엔드 라이브러리. [^19] |\n| **Paper** | **Parametric Hubris** | 강제 검색(Forced Retrieval) 기법을 통해 SimpleQA 벤치마크에서 GPT-5를 능가했다고 주장하는 연구. [^39] |\n| **Lang** | **Scheme on Wasm** | 웹어셈블리(Wasm) 위에서 실행되는 Scheme 언어 프로젝트 'Hoot'. [^3] |\n| **Edu** | **TS Functors** | 타입스크립트로 펑터, 어플리케이티브, 모나드 등 함수형 프로그래밍 개념을 설명한 가이드. [^14] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n\n#### 💻 개발 \u0026 인프라 \u0026 SW\n* **응답 속도를 높이는 Fast Mode**: 사용자 경험을 위해 시스템 응답성을 최적화하는 기술적 접근법. [^2]\n* **25년간의 소프트웨어 개발 이야기**: 베테랑 개발자가 회고하는 기술 변화와 변하지 않는 가치들. [^4]\n* **C로 게임을 만드는 이유**: 현대 엔진 대신 순수 C언어로 게임을 개발하며 얻는 통찰과 즐거움. [^5]\n* **직접 만들지 않는 소프트웨어는 설계할 수 없다**: 구현 경험 없는 아키텍처 설계의 허상을 비판. [^9]\n* **Markdown Sticky notes for macOS**: 맥OS 바탕화면에 마크다운 메모를 띄워주는 유틸리티. [^10]\n* **프랑스 오픈소스 오피스 'La Suite numérique'**: 프랑스 정부 주도의 디지털 주권 확보를 위한 오픈소스 오피스 제품군. [^18]\n* **Claude Code's /Insights Command**: 클로드 코드의 인사이트 명령어가 작동하는 심층 원리 분석. [^22]\n* **OpenClaw on Jetson Nano**: 젯슨 나노 보드에 오픈소스 'OpenClaw'를 설치하는 가이드. [^27]\n* **WrapClaw**: Open Claw를 쉽게 사용할 수 있도록 감싼 관리형 SaaS 래퍼. [^32]\n* **Amp Code**: 개발자가 계속해서 다시 찾게 된다는 코드 에디터 Amp에 대한 리뷰. [^28]\n* **Making Sense of Entropies**: 정보 이론의 엔트로피 개념을 명확하게 정리한 글. [^38]\n* **브라우저 선택 가이드**: 크롬을 제외한 상위 4개 브라우저 추천 및 리뷰. [^30]\n\n#### 🧬 과학 \u0026 건강 \u0026 사회\n* **ADHD 약물과 BMI**: 사춘기 이전 아동의 메틸페니데이트 복용이 성인기 BMI와 신장에 미치는 영향 연구. [^31]\n* **유아 머리 성장과 자폐증**: 유아기 머리 성장 패턴과 자폐 스펙트럼 장애 위험 간의 연관성 보고. [^41]\n* **손글씨의 뇌 훈련 효과**: 키보드보다 손글씨 학습이 뇌 발달에 더 효과적이라는 네이처(Nature) 기사. [^40]\n* **뇌-음악 인터페이스**: 개인화된 플레이리스트로 음악적 전율(Chills)을 증폭시키는 인터페이스 연구. [^26]\n* **소셜 미디어 이용 변화 (2020-2024)**: 사용 감소, 파편화, 양극화가 심화되는 미국 소셜 미디어 트렌드 분석. [^35]\n* **일본 총선 전망**: 다카이치 총리가 조기 총선에서 압승할 것으로 예상된다는 BBC 보도. [^33]\n\n#### 🎸 기타 (Culture \u0026 Life)\n* **벨팅 보컬 가이드**: 고음 발성 기법인 '벨팅'을 안전하게 익히는 방법. [^11]\n* **스타트렉 제어 패널 DIY**: 홈 어시스턴트를 활용해 꿈의 LCARS 인터페이스를 구축한 제작기. [^29]\n* **두바이 초콜릿 실크 파이**: 40달러짜리 고급 디저트 파이에 대한 리뷰. [^23]\n* **Anki 언어 학습 팁**: 언어 학습을 위한 빈칸 뚫기(Cloze Deletions) 카드를 대량 생성하는 방법. [^36]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘 뉴스는 '**도구의 진화'와 '인간의 역할**' 사이의 긴장을 보여줍니다. VS Code와 Claude Opus는 더 강력해졌고, AI 에이전트는 아예 코딩을 대신하겠다고 나섰습니다. 하지만 동시에 \"직접 만들지 않으면 설계할 수 없다\"는 조언과 \"손글씨가 뇌를 훈련한다\"는 연구 결과는, 기술이 발전할수록 인간 고유의 사고와 경험이 더 중요해짐을 역설합니다. 512바이트 컴파일러를 만드는 'Geek'한 열정이 여전히 빛나는 이유이기도 합니다.\n\n---\n\n### Footnotes\n[^1]: February 2026 Insiders (version 1.110) - https://code.visualstudio.com/updates/v1_110\n[^2]: 응답 속도를 높이는 Fast Mode - https://news.hada.io/topic?id=26513\n[^3]: 웹어셈블리에서 실행되는 Scheme — Hoot 프로젝트 - https://news.hada.io/topic?id=26512\n[^4]: 25년간의 소프트웨어 개발 이야기 - https://news.hada.io/topic?id=26511\n[^5]: C로 게임을 만드는 이유 (그렇다, C로) - https://news.hada.io/topic?id=26510\n[^6]: 리눅스 없이 작동하는 ESP32-S3용 셸·앱 설치기·Vi·C 컴파일러 데모 BreezyBox - https://news.hada.io/topic?id=26509\n[^7]: 미국, 대공황 이후 1월 기준 가장 빠른 고용 감소세 기록 - https://news.hada.io/topic?id=26508\n[^8]: 512바이트로 만든 C 컴파일러 SectorC - https://news.hada.io/topic?id=26507\n[^9]: 직접 만들지 않는 소프트웨어는 설계할 수 없다 - https://news.hada.io/topic?id=26506\n[^10]: Show GN: Markdown Sticky notes for macOS - https://news.hada.io/topic?id=26505\n[^11]: 벨팅을 안전하게 익히는 보컬 가이드 - https://news.hada.io/topic?id=26504\n[^12]: AI가 실패할 때, 체계적 오류보다 갈팡질팡이 더 위험할 수 있다 (Anthropic Alignment Research) - https://news.hada.io/topic?id=26503\n[^13]: 코딩 에이전트가 내가 사용하던 모든 프레임워크를 대체했다 - https://news.hada.io/topic?id=26502\n[^14]: TypeScript로 이해하는 펑터, 어플리케이티브 펑터, 모나드 - https://news.hada.io/topic?id=26500\n[^15]: 2.5배 빠르고 6배 비싼 Claude Opus 4.6 Fast Mode 공개 - https://news.hada.io/topic?id=26499\n[^16]: AI 열풍이 다른 산업 전반에 걸쳐 공급 부족을 초래하고 있음 - https://news.hada.io/topic?id=26498\n[^17]: 우리의 장인 정신을 애도합니다 - https://news.hada.io/topic?id=26497\n[^18]: 프랑스의 오픈소스 온라인 오피스 제품군 ‘La Suite numérique’ - https://news.hada.io/topic?id=26496\n[^19]: EmulatorJS - 콘솔 게임을 위한 웹 기반 프런트엔드 - https://news.hada.io/topic?id=26495\n[^20]: 소프트웨어 팩토리와 에이전트 시대의 도래 - https://news.hada.io/topic?id=26493\n[^21]: Monty - AI 생성 코드를 안전하게 실행하는 경량 Python 인터프리터 - https://news.hada.io/topic?id=26492\n[^22]: How Claude Code's /Insights Command Works - https://www.zolkos.com/2026/02/04/deep-dive-how-claude-codes-insights-command-works.html\n[^23]: Achatz's new Dubai Chocolate Silk Pie is $40 - https://www.freep.com/story/news/columnists/neal-rubin/2026/02/08/achatz-homemade-pie-dubai-chocolate-valentines-day/88516230007/\n[^24]: Yattee 2 – Privacy oriented video player for iOS, tvOS and macOS - https://github.com/yattee/yattee/releases/tag/2.0.0-250\n[^25]: Stop Generating, Start Thinking - https://localghost.dev/blog/stop-generating-start-thinking/\n[^26]: A brain-music interface for enhancing music chills with personalized playlists - https://www.cell.com/iscience/fulltext/S2589-0042(25)02769-5?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS2589004225027695%3Fshowall%3Dtrue\n[^27]: Installing OpenClaw on a Jetson Nano - https://brtkwr.com/posts/2026-02-08-installing-openclaw-on-jetson-nano/\n[^28]: I keep coming back to Amp Code - https://asadjb.com/blog/2026-02-08-i-keep-coming-back-to-amp\n[^29]: How I Built the Star Trek control panel of my dreams - https://www.theverge.com/tech/862070/lcars-homes-assistant-star-trek\n[^30]: I've used nearly every browser out there, my choices (spoiler: not Chrome) - https://www.zdnet.com/article/my-top-4-browsers-chrome-not-included/\n[^31]: ADHD and Methylphenidate Use in Prepubertal Children and Adult BMI and Height - https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2843415\n[^32]: Show HN: WrapClaw – a managed SaaS wrapper around Open Claw - https://news.ycombinator.com/item?id=46938916\n[^33]: Japan's PM Takaichi on course for landslide victory in snap election - https://www.bbc.com/news/articles/cx2y7d2z29xo\n[^34]: Show HN: Squre – Open-source binary protector (Rust) - https://github.com/lilify-jp/Squre\n[^35]: Shifts in U.S. Social Media Use, 2020–2024: Decline, Fragmentation, Polarization - https://arxiv.org/abs/2510.25417\n[^36]: Bulk Generating Cloze Deletions for Learning a Language with Anki - https://sookocheff.com/post/language/bulk-generating-cloze-deletions-for-learning-a-language-with-anki/\n[^37]: Power grid delays challenge Amazon's data center expansion in Europe - https://www.reuters.com/sustainability/boards-policy-regulation/power-grid-delays-challenge-amazons-data-center-expansion-europe-2026-02-03/\n[^38]: Making Sense of Entropies - https://dpaletti.com/posts/entropies/\n[^39]: Show HN: Parametric Hubris – Beating GPT-5 on SimpleQA with forced retrieval - https://dev.thelastrag.de/veritas_benchmark\n[^40]: Learning Handwriting Trains the Brain - https://www.nature.com/articles/d41586-026-00320-6\n[^41]: Associations between infants' head growth patterns and risk of autism - https://www.psypost.org/study-reports-associations-between-infants-head-growth-patterns-and-risk-of-autism/\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **February 2026 Insiders (version 1.110)**\n   - 출처: Visual Studio Code - Code Editing. Redefined.\n   - 링크: https://code.visualstudio.com/updates/v1_110\n\n2. **응답 속도를 높이는 Fast Mode**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26513\n\n3. **웹어셈블리에서 실행되는 Scheme — Hoot 프로젝트**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26512\n\n4. **25년간의 소프트웨어 개발 이야기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26511\n\n5. **C로 게임을 만드는 이유 (그렇다, C로)**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26510\n\n6. **리눅스 없이 작동하는 ESP32-S3용 셸·앱 설치기·Vi·C 컴파일러 데모 BreezyBox**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26509\n\n7. **미국, 대공황 이후 1월 기준 가장 빠른 고용 감소세 기록**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26508\n\n8. **512바이트로 만든 C 컴파일러 SectorC**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26507\n\n9. **직접 만들지 않는 소프트웨어는 설계할 수 없다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26506\n\n10. **Show GN: Markdown Sticky notes for macOS**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26505\n\n11. **벨팅을 안전하게 익히는 보컬 가이드**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26504\n\n12. **AI가 실패할 때, 체계적 오류보다 갈팡질팡이 더 위험할 수 있다 (Anthropic Alignment Research)**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26503\n\n13. **코딩 에이전트가 내가 사용하던 모든 프레임워크를 대체했다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26502\n\n14. **TypeScript로 이해하는 펑터, 어플리케이티브 펑터, 모나드**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26500\n\n15. **2.5배 빠르고 6배 비싼 Claude Opus 4.6 Fast Mode 공개 **\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26499\n\n16. **AI 열풍이 다른 산업 전반에 걸쳐 공급 부족을 초래하고 있음**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26498\n\n17. **우리의 장인 정신을 애도합니다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26497\n\n18. **프랑스의 오픈소스 온라인 오피스 제품군 ‘La Suite numérique’**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26496\n\n19. **EmulatorJS - 콘솔 게임을 위한 웹 기반 프런트엔드**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26495\n\n20. **소프트웨어 팩토리와 에이전트 시대의 도래**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26493\n\n21. **Monty - AI 생성 코드를 안전하게 실행하는 경량 Python 인터프리터 **\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26492\n\n22. **How Claude Code's /Insights Command Works**\n   - 출처: Hacker News\n   - 링크: https://www.zolkos.com/2026/02/04/deep-dive-how-claude-codes-insights-command-works.html\n\n23. **Achatz's new Dubai Chocolate Silk Pie is $40**\n   - 출처: Hacker News\n   - 링크: https://www.freep.com/story/news/columnists/neal-rubin/2026/02/08/achatz-homemade-pie-dubai-chocolate-valentines-day/88516230007/\n\n24. **Yattee 2 – Privacy oriented video player for iOS, tvOS and macOS**\n   - 출처: Hacker News\n   - 링크: https://github.com/yattee/yattee/releases/tag/2.0.0-250\n\n25. **Stop Generating, Start Thinking**\n   - 출처: Hacker News\n   - 링크: https://localghost.dev/blog/stop-generating-start-thinking/\n\n26. **A brain-music interface for enhancing music chills with personalized playlists**\n   - 출처: Hacker News\n   - 링크: https://www.cell.com/iscience/fulltext/S2589-0042(25)02769-5?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS2589004225027695%3Fshowall%3Dtrue\n\n27. **Installing OpenClaw on a Jetson Nano**\n   - 출처: Hacker News\n   - 링크: https://brtkwr.com/posts/2026-02-08-installing-openclaw-on-jetson-nano/\n\n28. **I keep coming back to Amp Code**\n   - 출처: Hacker News\n   - 링크: https://asadjb.com/blog/2026-02-08-i-keep-coming-back-to-amp\n\n29. **How I Built the Star Trek control panel of my dreams**\n   - 출처: Hacker News\n   - 링크: https://www.theverge.com/tech/862070/lcars-homes-assistant-star-trek\n\n30. **I've used nearly every browser out there, my choices (spoiler: not Chrome)**\n   - 출처: Hacker News\n   - 링크: https://www.zdnet.com/article/my-top-4-browsers-chrome-not-included/\n\n31. **ADHD and Methylphenidate Use in Prepubertal Children and Adult BMI and Height**\n   - 출처: Hacker News\n   - 링크: https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2843415\n\n32. **Show HN: WrapClaw – a managed SaaS wrapper around Open Claw**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=46938916\n\n33. **Japan's PM Takaichi on course for landslide victory in snap election**\n   - 출처: Hacker News\n   - 링크: https://www.bbc.com/news/articles/cx2y7d2z29xo\n\n34. **Show HN: Squre – Open-source binary protector (Rust)**\n   - 출처: Hacker News\n   - 링크: https://github.com/lilify-jp/Squre\n\n35. **Shifts in U.S. Social Media Use, 2020–2024: Decline, Fragmentation, Polarization**\n   - 출처: Hacker News\n   - 링크: https://arxiv.org/abs/2510.25417\n\n36. **Bulk Generating Cloze Deletions for Learning a Language with Anki**\n   - 출처: Hacker News\n   - 링크: https://sookocheff.com/post/language/bulk-generating-cloze-deletions-for-learning-a-language-with-anki/\n\n37. **Power grid delays challenge Amazon's data center expansion in Europe**\n   - 출처: Hacker News\n   - 링크: https://www.reuters.com/sustainability/boards-policy-regulation/power-grid-delays-challenge-amazons-data-center-expansion-europe-2026-02-03/\n\n38. **Making Sense of Entropies**\n   - 출처: Hacker News\n   - 링크: https://dpaletti.com/posts/entropies/\n\n39. **Show HN: Parametric Hubris – Beating GPT-5 on SimpleQA with forced retrieval**\n   - 출처: Hacker News\n   - 링크: https://dev.thelastrag.de/veritas_benchmark\n\n40. **Learning Handwriting Trains the Brain**\n   - 출처: Hacker News\n   - 링크: https://www.nature.com/articles/d41586-026-00320-6\n\n41. **Associations between infants' head growth patterns and risk of autism**\n   - 출처: Hacker News\n   - 링크: https://www.psypost.org/study-reports-associations-between-infants-head-growth-patterns-and-risk-of-autism/\n\n\n",
+  "articles": [
+    {
+      "title": "February 2026 Insiders (version 1.110)",
+      "link": "https://code.visualstudio.com/updates/v1_110",
+      "source": "Visual Studio Code - Code Editing. Redefined.",
+      "category": "tech",
+      "publishedAt": "2026-03-04T17:00:00Z",
+      "description": "\n      \u003cp\u003eLearn what is new in the Visual Studio Code February 2026 Release (1.110).\u003c/p\u003e\n      \u003cp\u003e\u003ca href=\"https://code.visualstudio.com/updates/v1_110\"\u003eRead the full article\u003c/a\u003e\u003c/p\u003e\n    "
+    },
+    {
+      "title": "응답 속도를 높이는 Fast Mode",
+      "link": "https://news.hada.io/topic?id=26513",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-09T05:40:48+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eOpus 4.6 모델의 응답 지연을 줄이는 기능\u003c/strong\u003e으로, 동일한 품질을 유지하면서 더 빠른 결과를 제공\u003c/li\u003e\n\u003cli\u003e\n\u003ccode\u003e/fast\u003c/code\u003e 명령으로 \u003cstrong\u003eCLI나 VS Code 확장\u003c/strong\u003e에서 손쉽게 켜고 끌 수 있으며, 세션 간에도 설정이 유지됨\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e토큰당 비용이 높지만\u003c/strong\u003e 실...\u003c/p\u003e"
+    },
+    {
+      "title": "웹어셈블리에서 실행되는 Scheme — Hoot 프로젝트",
+      "link": "https://news.hada.io/topic?id=26512",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-09T05:37:48+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eScheme 코드를 WebAssembly(GC 지원 브라우저)\u003c/strong\u003e 에서 실행할 수 있도록 설계된 프로젝트로, Scheme→Wasm \u003cstrong\u003e컴파일러와 완전한 Wasm 툴체인\u003c/strong\u003e을 포함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eGNU Guile 기반\u003c/strong\u003e으로 구축되어 있으며, 추가 의존성이 없고 \u003cstrong\u003e자급형(toolchain self-contai...\u003c/p\u003e"
+    },
+    {
+      "title": "25년간의 소프트웨어 개발 이야기",
+      "link": "https://news.hada.io/topic?id=26511",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-09T05:34:48+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e대학 시절부터 시작된 \u003cstrong\u003e25년간의 프로그래밍 여정\u003c/strong\u003e을 회고하며, 기술보다 사람과 경험 중심의 이야기를 담은 회상록\u003c/li\u003e\n\u003cli\u003e첫 HTML 실습에서 개인 도메인을 얻기까지의 \u003cstrong\u003e웹 개발 입문 경험\u003c/strong\u003e과, 단순한 호기심이 평생의 진로로 이어진 과정\u003c/li\u003e\n\u003cli\u003e초기 경력에서 \u003cstrong\u003e보...\u003c/p\u003e"
+    },
+    {
+      "title": "C로 게임을 만드는 이유 (그렇다, C로)",
+      "link": "https://news.hada.io/topic?id=26510",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-09T02:32:55+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e개인 프로젝트의 모든 게임을 \u003cstrong\u003e‘순수 C’로 개발\u003c/strong\u003e하며, 이는 현재 드문 선택임\u003c/li\u003e\n\u003cli\u003e언어 선택의 핵심 기준은 \u003cstrong\u003e신뢰성, 이식성, 장기적 지속 가능성\u003c/strong\u003e으로, 특정 OS나 플랫폼에 종속되지 않음\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e단순성과 빠른 컴파일 속도\u003c/strong\u003e, 그리고 \u003cstrong\u003e엄격한...\u003c/p\u003e"
+    },
+    {
+      "title": "리눅스 없이 작동하는 ESP32-S3용 셸·앱 설치기·Vi·C 컴파일러 데모 BreezyBox",
+      "link": "https://news.hada.io/topic?id=26509",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-09T01:32:46+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eESP32-S3 마이크로컨트롤러를 \u003cstrong\u003e즉시 부팅 가능한 소형 PC\u003c/strong\u003e로 전환해 셸, 편집기, 컴파일러, 앱 설치기를 제공하는 데모 프로젝트\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eBreezyBox\u003c/strong\u003e는 ESP-IDF용 미니 셸 컴포넌트로, UNIX 유사 명령과 vterm, VFS 기능을 포함\u003c/li\u003e\n\u003cli\u003e이 데모는 \u003cstrong\u003eWaveshare ESP32-...\u003c/p\u003e"
+    },
+    {
+      "title": "미국, 대공황 이후 1월 기준 가장 빠른 고용 감소세 기록",
+      "link": "https://news.hada.io/topic?id=26508",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-09T00:32:55+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e미국의 \u003cstrong\u003e1월 고용 감소 속도\u003c/strong\u003e가 대공황 이후 가장 빠른 수준으로 나타남\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e일자리 상실 규모\u003c/strong\u003e가 최근 수년 중 최고치를 기록하며 경기 둔화 우려가 제기됨\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e고용시장 위축\u003c/strong\u003e이 특정 산업군에 집중되었는지 여부는 명확히 언급되지 않음\u003c/li\u003e\n...\u003c/p\u003e"
+    },
+    {
+      "title": "512바이트로 만든 C 컴파일러 SectorC",
+      "link": "https://news.hada.io/topic?id=26507",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-08T22:32:48+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003ex86-16 어셈블리로 작성된 \u003cstrong\u003eSectorC\u003c/strong\u003e는 x86 머신의 \u003cstrong\u003e부트 섹터(512바이트)\u003c/strong\u003e 안에 들어가는 초소형 C 컴파일러로, 실제 동작 가능한 프로그램을 작성할 수 있을 만큼의 \u003cstrong\u003eC 언어 부분집합\u003c/strong\u003e을 지원함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e전역 변수, 함수, if/while 문, 연산자, 포인...\u003c/p\u003e"
+    },
+    {
+      "title": "직접 만들지 않는 소프트웨어는 설계할 수 없다",
+      "link": "https://news.hada.io/topic?id=26506",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-08T18:24:23+09:00",
+      "description": "\u003cp\u003e대형 소프트웨어 시스템을 실제로 작업하는 엔지니어만이 설계 과정에 의미 있게 참여할 수 있으며, 구체적인 세부 사항에 대한 이해 없는 일반적인 설계 조언은 실무에서 무용함을 강조.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e일반적인 소프트웨어 설계(Generic software design)의 한계\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e도메인에 대한 이해는 있으"
+    },
+    {
+      "title": "Show GN: Markdown Sticky notes for macOS",
+      "link": "https://news.hada.io/topic?id=26505",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-08T17:23:14+09:00",
+      "description": "\u003cp\u003e항상 Markdown이 되는 Sticky notes가 있었으면 싶었는데요.\u003cbr /\u003e\nObsidian에 sticky note extension이 있기는 한데 electron이다보니 무거워서 Swift 기반으로 만들어(만들라고 시켜)봤습니다.\u003c/p\u003e\n\u003cp\u003eClaude Code로 만들었습니다.\u003c/p\u003e\n\u003ch4\u003e주요 기능\u003c/h4\u003e\n\u003cul\u003e\n\u003cli\u003e마크다운 실시간 렌더링 (헤딩, 볼드, 리스트, 테"
+    },
+    {
+      "title": "벨팅을 안전하게 익히는 보컬 가이드",
+      "link": "https://news.hada.io/topic?id=26504",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-08T16:33:04+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e21가지 \u003cstrong\u003e보컬 테크닉\u003c/strong\u003e을 다섯 범주로 정리한 온라인 학습용 참고서로, 초보자부터 숙련자까지 활용 가능한 구조\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eWarm-Up\u003c/strong\u003e, \u003cstrong\u003eAnatomy\u003c/strong\u003e, \u003cstrong\u003eVocal Myths\u003c/strong\u003e, \u003cstrong\u003eCVT Reference\u003c/strong\u003e 등 세부 섹션을 통해 발성 원리, 잘못된 조언, 과...\u003c/p\u003e"
+    },
+    {
+      "title": "AI가 실패할 때, 체계적 오류보다 갈팡질팡이 더 위험할 수 있다 (Anthropic Alignment Research)",
+      "link": "https://news.hada.io/topic?id=26503",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-08T13:53:02+09:00",
+      "description": "\u003cp\u003e(2026년 2월 기준 최신 추론 모델들의 실제 실패 패턴을 분석한 매우 중요한 인사이트)\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e핵심 주장\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e기존 AI 안전성 연구: 체계적 misalignment (잘못된 목표를 일관되게 추구) 중심\u003c/li\u003e\n\u003cli\u003e실제 최신 모델 실패 패턴: \u003cstrong\u003e비일관성·갈팡질팡 (variance / incoherence)\u003c/st"
+    },
+    {
+      "title": "코딩 에이전트가 내가 사용하던 모든 프레임워크를 대체했다",
+      "link": "https://news.hada.io/topic?id=26502",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-08T13:33:19+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e자동화된 프로그래밍\u003c/strong\u003e이 등장하면서 소프트웨어 개발의 구조적 변화가 가속화되고 있음\u003c/li\u003e\n\u003cli\u003e반복적 코딩 대신 \u003cstrong\u003e모델과 에이전트가 코드 생성을 담당\u003c/strong\u003e, 개발자는 설계와 의사결정에 집중 가능\u003c/li\u003e\n\u003cli\u003e기존 \u003cstrong\u003e프레임워크와 라이브러리의 복잡성\u003c/strong\u003e이 불필요하...\u003c/p\u003e"
+    },
+    {
+      "title": "TypeScript로 이해하는 펑터, 어플리케이티브 펑터, 모나드",
+      "link": "https://news.hada.io/topic?id=26500",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-08T12:00:06+09:00",
+      "description": "\u003cp\u003e본문\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e펑터의 map만으로는 해결할 수 없는 두 가지 문제(컨테이너 안 함수가 갇히는 문제, 합성 시 맥락 중첩 문제)에서 출발하여 어플리케이티브 펑터와 모나드까지 도달하는 과정을 TypeScript 코드로 설명\u003c/li\u003e\n\u003cli\u003e1988년 에우제니오 모지(Eugenio Moggi)가 프로그램을 A → B가 아닌 A → T(B)로 모"
+    },
+    {
+      "title": "2.5배 빠르고 6배 비싼 Claude Opus 4.6 Fast Mode 공개 ",
+      "link": "https://news.hada.io/topic?id=26499",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-08T11:44:43+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e동일한 \u003cstrong\u003eOpus 4.6 모델\u003c/strong\u003e을 사용하되 API 구성을 바꿔 \u003cstrong\u003e지연 시간을 최소화\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e빠른 반복, 라이브 디버깅 등 시간에 민감한 \u003cstrong\u003e대화형 작업\u003c/strong\u003e에 최적화\u003c/li\u003e\n\u003cli\u003eCLI 또는 VS Code 확장에서 \u003ccode\u003e/fast\u003c/code\u003e 입력해 \u003cstrong\u003e온·오프 토글\u003c/strong\u003e 또는 사...\u003c/p\u003e"
+    },
+    {
+      "title": "AI 열풍이 다른 산업 전반에 걸쳐 공급 부족을 초래하고 있음",
+      "link": "https://news.hada.io/topic?id=26498",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-08T10:36:09+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e주요 AI 기업 5곳의 올해 투자 규모가 약 \u003cstrong\u003e7,000억 달러\u003c/strong\u003e에 달하며, 이는 2025년 지출의 거의 두 배이자 미국 국방 예산의 3/4에 해당하는 전례 없는 수준\u003c/li\u003e\n\u003cli\u003e데이터센터 건설에 자원이 집중되면서 \u003cstrong\u003e전기기사 부족\u003c/strong\u003e, 메모리 칩 가격 상승, 스마트폰·PC 가격 인상 등 다른 ...\u003c/p\u003e"
+    },
+    {
+      "title": "우리의 장인 정신을 애도합니다",
+      "link": "https://news.hada.io/topic?id=26497",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-08T09:37:37+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eAI 코드 생성 도구의 부상\u003c/strong\u003e으로 인해 프로그래머의 역할이 단순한 검수자로 축소되고 있음\u003c/li\u003e\n\u003cli\u003eAI 코딩 도구의 가장 불편한 진실은 \u003cstrong\u003e실제로 작동한다\u003c/strong\u003e는 것이며, 이를 믿지 않는다면 6개월만 기다리면 됨\u003c/li\u003e\n\u003cli\u003e시니어 개발자가 도덕적 원칙으로 AI 사용을 거부할 수 ...\u003c/p\u003e"
+    },
+    {
+      "title": "프랑스의 오픈소스 온라인 오피스 제품군 ‘La Suite numérique’",
+      "link": "https://news.hada.io/topic?id=26496",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-08T09:34:36+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e프랑스 정부가 주도하는 \u003cstrong\u003e오픈소스 디지털 협업 플랫폼\u003c/strong\u003e으로, 온라인 오피스 환경을 위한 다양한 애플리케이션을 제공\u003c/li\u003e\n\u003cli\u003e주요 구성 요소는 \u003cstrong\u003e문서 협업, 화상회의, 파일 공유, 팀 관리\u003c/strong\u003e 등으로, Django와 React 기반으로 개발\u003c/li\u003e\n\u003cli\u003e모든 코드는 \u003cstrong\u003eMIT 라이선스...\u003c/p\u003e"
+    },
+    {
+      "title": "EmulatorJS - 콘솔 게임을 위한 웹 기반 프런트엔드",
+      "link": "https://news.hada.io/topic?id=26495",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-08T09:31:02+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eRetroArch\u003c/strong\u003e의 다양한 콘솔 에뮬레이션을 \u003cstrong\u003e웹 환경에서 실행\u003c/strong\u003e하기 위해 개발된 \u003cstrong\u003eJavaScript 기반 프런트엔드\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e브라우저만으로 \u003cstrong\u003eNintendo, Sega, Atari, PlayStation, Commodore\u003c/strong\u003e 등 주요 레트로 시스템을 지원하는 \u003cstrong\u003e셀프 호스팅...\u003c/p\u003e"
+    },
+    {
+      "title": "소프트웨어 팩토리와 에이전트 시대의 도래",
+      "link": "https://news.hada.io/topic?id=26493",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-08T08:40:33+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eStrongDM AI팀\u003c/strong\u003e은 \u003cstrong\u003e코드를 보지 않고도 고품질 소프트웨어를 만드는 Software Factory\u003c/strong\u003e 개념을 주장\u003c/li\u003e\n\u003cli\u003e명세/시나리오 기반으로 에이전트가 코드를 작성하고, 테스트 하네스를 실행, \u003cstrong\u003e인간의 검토 없이\u003c/strong\u003e 수렴하는 \u003cstrong\u003e비대화형 개발 방식\u003c/strong\u003e\n...\u003c/p\u003e"
+    },
+    {
+      "title": "Monty - AI 생성 코드를 안전하게 실행하는 경량 Python 인터프리터 ",
+      "link": "https://news.hada.io/topic?id=26492",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-08T07:33:03+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eAI가 생성한 코드를 안전하게 실행하기 위해 설계된 \u003cstrong\u003eRust 기반의 경량 Python 인터프리터\u003c/strong\u003e로, 컨테이너 샌드박스의 복잡성과 지연을 제거\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e파일시스템·환경변수·네트워크 접근을 완전히 차단\u003c/strong\u003e하고, 개발자가 지정한 외부 함수만 호출 가능\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e1 마이크...\u003c/p\u003e"
+    },
+    {
+      "title": "How Claude Code's /Insights Command Works",
+      "link": "https://www.zolkos.com/2026/02/04/deep-dive-how-claude-codes-insights-command-works.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-08T22:04:26Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.zolkos.com/2026/02/04/deep-dive-how-claude-codes-insights-command-works.html\"\u003ehttps://www.zolkos.com/2026/02/04/deep-dive-how-claude-codes-insights-command-works.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46939008\"\u003ehttps://news.ycombinator.com/item?id=46939008\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Achatz's new Dubai Chocolate Silk Pie is $40",
+      "link": "https://www.freep.com/story/news/columnists/neal-rubin/2026/02/08/achatz-homemade-pie-dubai-chocolate-valentines-day/88516230007/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-08T22:04:13Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.freep.com/story/news/columnists/neal-rubin/2026/02/08/achatz-homemade-pie-dubai-chocolate-valentines-day/88516230007/\"\u003ehttps://www.freep.com/story/news/columnists/neal-rubin/2026/02/08/achatz-homemade-pie-dubai-chocolate-valentines-day/88516230007/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46939003\"\u003ehttps://news.ycombinator.com/item?id=46939003\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Yattee 2 – Privacy oriented video player for iOS, tvOS and macOS",
+      "link": "https://github.com/yattee/yattee/releases/tag/2.0.0-250",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-08T21:58:26Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/yattee/yattee/releases/tag/2.0.0-250\"\u003ehttps://github.com/yattee/yattee/releases/tag/2.0.0-250\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46938961\"\u003ehttps://news.ycombinator.com/item?id=46938961\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Stop Generating, Start Thinking",
+      "link": "https://localghost.dev/blog/stop-generating-start-thinking/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-08T21:58:19Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://localghost.dev/blog/stop-generating-start-thinking/\"\u003ehttps://localghost.dev/blog/stop-generating-start-thinking/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46938958\"\u003ehttps://news.ycombinator.com/item?id=46938958\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "A brain-music interface for enhancing music chills with personalized playlists",
+      "link": "https://www.cell.com/iscience/fulltext/S2589-0042(25)02769-5?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS2589004225027695%3Fshowall%3Dtrue",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-08T21:57:16Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.cell.com/iscience/fulltext/S2589-0042(25)02769-5?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS2589004225027695%3Fshowall%3Dtrue\"\u003ehttps://www.cell.com/iscience/fulltext/S2589-0042(25)02769-5?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS2589004225027695%3Fshowall%3Dtrue\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46938945\"\u003ehttps://news.ycombinator.com/item?id=46938945\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Installing OpenClaw on a Jetson Nano",
+      "link": "https://brtkwr.com/posts/2026-02-08-installing-openclaw-on-jetson-nano/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-08T21:56:50Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://brtkwr.com/posts/2026-02-08-installing-openclaw-on-jetson-nano/\"\u003ehttps://brtkwr.com/posts/2026-02-08-installing-openclaw-on-jetson-nano/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46938941\"\u003ehttps://news.ycombinator.com/item?id=46938941\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "I keep coming back to Amp Code",
+      "link": "https://asadjb.com/blog/2026-02-08-i-keep-coming-back-to-amp",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-08T21:56:41Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://asadjb.com/blog/2026-02-08-i-keep-coming-back-to-amp\"\u003ehttps://asadjb.com/blog/2026-02-08-i-keep-coming-back-to-amp\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46938940\"\u003ehttps://news.ycombinator.com/item?id=46938940\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "How I Built the Star Trek control panel of my dreams",
+      "link": "https://www.theverge.com/tech/862070/lcars-homes-assistant-star-trek",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-08T21:55:20Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.theverge.com/tech/862070/lcars-homes-assistant-star-trek\"\u003ehttps://www.theverge.com/tech/862070/lcars-homes-assistant-star-trek\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46938927\"\u003ehttps://news.ycombinator.com/item?id=46938927\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "I've used nearly every browser out there, my choices (spoiler: not Chrome)",
+      "link": "https://www.zdnet.com/article/my-top-4-browsers-chrome-not-included/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-08T21:55:13Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.zdnet.com/article/my-top-4-browsers-chrome-not-included/\"\u003ehttps://www.zdnet.com/article/my-top-4-browsers-chrome-not-included/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46938926\"\u003ehttps://news.ycombinator.com/item?id=46938926\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "ADHD and Methylphenidate Use in Prepubertal Children and Adult BMI and Height",
+      "link": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2843415",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-08T21:54:34Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2843415\"\u003ehttps://jamanetwork.com/journals/jamanetworkopen/fullarticle/2843415\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46938920\"\u003ehttps://news.ycombinator.com/item?id=46938920\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: WrapClaw – a managed SaaS wrapper around Open Claw",
+      "link": "https://news.ycombinator.com/item?id=46938916",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-08T21:53:46Z",
+      "description": "\n\u003cp\u003eHi HN\u003cp\u003eI built WrapClaw, a SaaS wrapper around Open Claw.\u003cp\u003eOpen Claw is a developer-first tool that gives you a dedicated terminal to run tasks and AI workflows (including WhatsApp integrations). It’s powerful, but running it as a hosted, multi-user product requires a lot of infra work.\u003cp\u003eWrapClaw focuses on that missing layer.\u003cp\u003eWhat WrapClaw adds:\u003cp\u003eA dedicated terminal workspace per user\u003cp\u003eIsolated Docker containers for each workspace\u003cp\u003eAbility to scale CPU and RAM per user (e.g. 2GB → 4GB)\u003cp\u003eA no-code UI on top of Open Claw\u003cp\u003eManaged infra so users don’t deal with Docker or servers\u003cp\u003eThe goal is to make Open Claw usable as a proper SaaS while keeping the developer flexibility.\u003cp\u003eThis is early, and I’d love feedback on:\u003cp\u003eWhat infra controls are actually useful\u003cp\u003eWhether no-code on top of terminal tools makes sense\u003cp\u003ePricing expectations for managed compute\u003cp\u003eLink: \u003ca href=\"https://wrapclaw.com\" rel=\"nofollow\"\u003ehttps://wrapclaw.com\u003c/a\u003e\u003cp\u003eHappy to answer questions.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46938916\"\u003ehttps://news.ycombinator.com/item?id=46938916\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Japan's PM Takaichi on course for landslide victory in snap election",
+      "link": "https://www.bbc.com/news/articles/cx2y7d2z29xo",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-08T21:53:29Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.bbc.com/news/articles/cx2y7d2z29xo\"\u003ehttps://www.bbc.com/news/articles/cx2y7d2z29xo\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46938911\"\u003ehttps://news.ycombinator.com/item?id=46938911\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Squre – Open-source binary protector (Rust)",
+      "link": "https://github.com/lilify-jp/Squre",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-08T21:52:46Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/lilify-jp/Squre\"\u003ehttps://github.com/lilify-jp/Squre\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46938906\"\u003ehttps://news.ycombinator.com/item?id=46938906\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Shifts in U.S. Social Media Use, 2020–2024: Decline, Fragmentation, Polarization",
+      "link": "https://arxiv.org/abs/2510.25417",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-08T21:52:28Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://arxiv.org/abs/2510.25417\"\u003ehttps://arxiv.org/abs/2510.25417\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46938903\"\u003ehttps://news.ycombinator.com/item?id=46938903\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Bulk Generating Cloze Deletions for Learning a Language with Anki",
+      "link": "https://sookocheff.com/post/language/bulk-generating-cloze-deletions-for-learning-a-language-with-anki/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-08T21:50:07Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://sookocheff.com/post/language/bulk-generating-cloze-deletions-for-learning-a-language-with-anki/\"\u003ehttps://sookocheff.com/post/language/bulk-generating-cloze-deletions-for-learning-a-language-with-anki/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46938878\"\u003ehttps://news.ycombinator.com/item?id=46938878\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Power grid delays challenge Amazon's data center expansion in Europe",
+      "link": "https://www.reuters.com/sustainability/boards-policy-regulation/power-grid-delays-challenge-amazons-data-center-expansion-europe-2026-02-03/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-08T21:49:43Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.reuters.com/sustainability/boards-policy-regulation/power-grid-delays-challenge-amazons-data-center-expansion-europe-2026-02-03/\"\u003ehttps://www.reuters.com/sustainability/boards-policy-regulation/power-grid-delays-challenge-amazons-data-center-expansion-europe-2026-02-03/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46938873\"\u003ehttps://news.ycombinator.com/item?id=46938873\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Making Sense of Entropies",
+      "link": "https://dpaletti.com/posts/entropies/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-08T21:49:33Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://dpaletti.com/posts/entropies/\"\u003ehttps://dpaletti.com/posts/entropies/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46938869\"\u003ehttps://news.ycombinator.com/item?id=46938869\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Parametric Hubris – Beating GPT-5 on SimpleQA with forced retrieval",
+      "link": "https://dev.thelastrag.de/veritas_benchmark",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-08T21:45:54Z",
+      "description": "\n\u003cp\u003eJust finished reading \"Parametric Hubris\" by Martin Gehrken. It’s a fascinating deep dive into why frontier models hallucinate even when they have tools.\u003cp\u003eThe core thesis: Models suffer from \"Parametric Hubris\". They rely on their training data (lazy) instead of using search tools, even when browsing is enabled.\u003cp\u003eData: GPT-5 only triggers search in ~31% of prompts.\u003cp\u003eThe Fix: A pipeline called \"Veritas\" that forces 100% retrieval (no parametric memory allowed for answers).\u003cp\u003eResults: Achieves 89.1% F-Score on SimpleQA Verified (vs 51.6% for GPT-5 and 72.1% for Gemini 3 Pro).\u003cp\u003eCost/Model: Built on Gemini 2.5 Flash Lite (cheapest model) for ~$0.002 per query.\u003cp\u003eTrade-off: It’s slow (~115s per query), but accurate.\u003cp\u003eThe paper argues that hallucination isn't a capability problem, but an architectural discipline problem. Code and data are open source.\u003cp\u003ePaper/Repo: \u003ca href=\"https://github.com/lamLumae/Project-Lutum-Veritas\" rel=\"nofollow\"\u003ehttps://github.com/lamLumae/Project-Lutum-Veritas\u003c/a\u003e\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46938839\"\u003ehttps://news.ycombinator.com/item?id=46938839\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Learning Handwriting Trains the Brain",
+      "link": "https://www.nature.com/articles/d41586-026-00320-6",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-08T21:45:53Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nature.com/articles/d41586-026-00320-6\"\u003ehttps://www.nature.com/articles/d41586-026-00320-6\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46938838\"\u003ehttps://news.ycombinator.com/item?id=46938838\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Associations between infants' head growth patterns and risk of autism",
+      "link": "https://www.psypost.org/study-reports-associations-between-infants-head-growth-patterns-and-risk-of-autism/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-08T21:43:55Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.psypost.org/study-reports-associations-between-infants-head-growth-patterns-and-risk-of-autism/\"\u003ehttps://www.psypost.org/study-reports-associations-between-infants-head-growth-patterns-and-risk-of-autism/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46938820\"\u003ehttps://news.ycombinator.com/item?id=46938820\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    }
+  ],
+  "generatedAt": "2026-02-09T07:11:46.624844762+09:00"
+}
