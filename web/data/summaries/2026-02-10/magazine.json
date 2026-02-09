@@ -1,0 +1,473 @@
+{
+  "date": "2026-02-10",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2026년 2월 9일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** OpenAI가 ChatGPT에 광고 도입을 테스트하며 비즈니스 모델을 확장하고, Meta와 Stripe는 각각 기가와트급 AI 클러스터와 자율 코딩 에이전트로 인프라와 개발의 미래를 제시했습니다.\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### 💸 ChatGPT, 무료 버전에 광고 테스트 시작\nOpenAI가 ChatGPT 무료 사용자들을 대상으로 광고 노출을 테스트하기 시작했습니다. 이는 AI 챗봇 서비스의 수익화 모델이 구독형(Plus)과 API 판매를 넘어, 전통적인 웹 검색 엔진과 유사한 '광고 기반 모델'로 확장됨을 의미합니다.\n*   **배경:** 막대한 AI 구동 비용을 상쇄하고, 무료 서비스의 지속 가능성을 확보하기 위한 조치로 해석됩니다.\n*   **전망:** 초기에는 제한적으로 적용되겠지만, 향후 검색 광고 시장에서 Google과의 직접적인 경쟁이 불가피해질 것으로 보입니다. 사용자 경험(UX)을 해치지 않으면서 광고를 통합하는 것이 관건입니다.\n\u003e **Key Point:** AI 서비스의 '검색 엔진화'가 가속화되며, 대화형 인터페이스 내 광고 효율성에 대한 업계의 관심이 집중되고 있습니다. [^4]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. Meta의 기가와트(GW)급 AI 클러스터 'Prometheus'\n- **What:** Meta가 차세대 AI 모델 학습을 위해 단일 클러스터가 아닌, 분산된 데이터센터를 하나의 거대한 슈퍼컴퓨터처럼 작동하게 하는 'Prometheus' 아키텍처를 공개했습니다.\n- **Why:** 물리적인 전력 공급 한계로 인해 한 곳에 모든 GPU를 모으는 것이 불가능해졌기 때문입니다. 이를 해결하기 위해 고대역폭 백엔드 집계(Backend Aggregation) 기술을 도입했습니다.\n- **Impact:** 이는 향후 AI 인프라가 '단일 거대 센터'에서 '초고속으로 연결된 분산형 클러스터'로 진화할 것임을 시사합니다. [^3]\n\n### 2. Stripe의 자율 코딩 에이전트 'Minions'\n- **What:** 결제 기업 Stripe가 사내에서 사용하는 'Minions'라는 코딩 에이전트를 공개했습니다. 단순 자동완성이 아니라, 복잡한 작업을 처음부터 끝까지 수행(One-shot, End-to-end)합니다.\n- **Why:** 개발자의 생산성을 높이기 위해 단순 반복적인 코딩 업무를 AI에게 위임하고, 인간은 설계와 검증에 집중하기 위함입니다.\n- **Impact:** GitHub Copilot을 넘어선 '자율 에이전트(Agentic Workflow)'가 실제 엔터프라이즈 환경에서 어떻게 생산성을 혁신하는지 보여주는 실사례입니다. [^43]\n\n### 3. Discord, 데이터 유출 후 연령 확인 도입 역풍\n- **What:** Discord가 70,000개의 ID가 노출된 데이터 유출 사고 이후, 보안 강화의 일환으로 연령 확인 절차를 도입했으나 사용자들의 거센 반발에 직면했습니다.\n- **Why:** 개인정보 보호를 중시하는 사용자층이 많은 플랫폼 특성상, 신분증 기반의 연령 인증은 익명성을 해치는 과도한 조치로 받아들여지고 있습니다.\n- **Impact:** 플랫폼의 보안 강화 조치가 사용자 프라이버시와 충돌할 때 발생하는 딜레마를 보여주며, 향후 소셜 플랫폼의 신원 인증 정책에 영향을 미칠 것입니다. [^50]\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **VS Code Insiders (v1.110)** | 2026년 2월 최신 빌드, 에디터 기능 개선 및 버그 수정 포함 [^2] |\n| **Library** | **Transformers.js v4** | 웹 브라우저에서 최신 트랜스포머 모델을 직접 구동할 수 있는 JS 라이브러리 (NPM 출시) [^35] |\n| **Tool** | **Composer 1.5** | AI 코드 에디터 Cursor의 경쟁자, 새로운 기능 업데이트 [^54] |\n| **Tool** | **LocalGPT** | Rust 기반으로 제작된 로컬 우선(Local-first) AI 비서, 지속 메모리 지원 [^26] |\n| **Guide** | **Claude Code 완전 가이드** | 해커톤 우승자가 정리한 70가지 프롬프트 및 활용 팁 (54p PDF) [^25] |\n| **Tool** | **Mole** | macOS 시스템 청소 및 최적화를 위한 올인원 유틸리티 [^24] |\n| **Infra** | **Vercel Optimization** | AI 에이전트 접근을 위해 웹페이지 용량을 500KB에서 2KB로 줄인 최적화 기법 [^20] |\n| **Dev** | **QFuture \u0026 Coroutines** | C++ 코루틴을 활용한 비동기 프로그래밍 심층 분석 [^51] |\n| **Design** | **LiftKit** | 모든 UI 요소가 '황금비(Golden Ratio)'를 따르도록 설계된 디자인 시스템 [^45] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n\n#### 🤖 AI \u0026 Agents\n*   **GenAI.mil에 ChatGPT 도입**: 미 국방부(DoD) 파트너를 위한 보안 강화 버전 ChatGPT 제공 시작. [^5]\n*   **Atlassian Rovo**: AI 팀메이트 'Rovo'가 개발자와 협업하는 새로운 방식(RovoCon SF 2026). [^6]\n*   **AI 불안감 해소**: AI에 대한 막연한 두려움을 기대로 바꾸는 심리적 접근법. [^8]\n*   **AI로 인한 역할 변화**: AI 도입이 직무를 어떻게 긍정적으로 변화시킬 수 있는지에 대한 가이드. [^9]\n*   **AI 피로감**: AI 툴의 범람으로 인한 피로감이 실재하지만 간과되고 있다는 지적. [^31]\n*   **Slop(조잡한 결과물) 공포**: AI가 생성하는 저품질 콘텐츠가 인터넷을 뒤덮는 현상에 대한 우려. [^28]\n*   **GitHub Agentic Workflows**: 깃허브가 정의하는 에이전트 기반 워크플로우의 미래. [^14]\n*   **Discord Agent Bridge**: 디스코드 메시지로 AI 코딩 에이전트를 원격 제어하는 도구. [^16]\n\n#### 💻 개발 \u0026 엔지니어링\n*   **Spotify 앱 배포 프로세스**: 스포티파이 엔지니어링 팀의 앱 배포 파이프라인 심층 분석 (Part 2). [^58]\n*   **Spec-Driven Development의 한계**: 규모가 커질수록 명세 주도 개발이 실패하는 이유와 해결책. [^49]\n*   **Bcachefs 데이터 손실 경고**: 리눅스 파일시스템 Bcachefs의 특정 버전에서 데이터 손실 위험 발견. [^52]\n*   **Vouch**: 오픈소스 기여자들의 신뢰도를 관리하는 새로운 시스템. [^27]\n*   **DoNotNotify 오픈소스화**: 알림 차단 도구가 오픈소스로 전환됨. [^30]\n*   **Firefox v147 단축키**: `Ctrl+W` 등 내장 단축키를 재정의할 수 있는 기능 지원. [^46]\n*   **수동 코딩의 즐거움**: AI 시대에도 여전히 직접 코드를 작성하는 것에서 오는 행복. [^29]\n*   **구조 중심 코딩**: 코드를 읽기 좋은 구조로 정리하는 'Structure-first' 방법론. [^21]\n\n#### 🎮 게임 \u0026 엔터테인먼트\n*   **게임보이 컬러 3D 셰이더**: 레트로 게임기에서 실시간 3D 그래픽을 구현한 기술적 성취. [^22]\n*   **화성 식민지 RPG 'Underhill'**: 화성을 배경으로 한 새로운 롤플레잉 게임 소식. [^13]\n*   **게임 속 도로의 예술**: 비디오 게임 내 도로 디자인이 주는 미학적 가치 분석. [^17]\n*   **Bad Bunny 슈퍼볼 쇼**: 애플 뮤직이 제공하는 슈퍼볼 하프타임 쇼 히트곡 모음. [^1]\n*   **No ICE 번들**: 미네소타 이민세관단속국(ICE) 반대 캠페인의 일환으로 출시된 itch.io 게임 번들. [^57]\n\n#### 🌍 사회, 정책 \u0026 보안\n*   **데이브 파버 별세**: '인터넷의 할아버지'로 불리는 데이브 파버 교수의 부고. [^12]\n*   **구글 직원 시위**: 구글 직원들이 사측에 ICE(이민세관단속국)와의 계약 단절을 요구. [^32]\n*   **영국 고령 운전자 시력 검사**: 70세 이상 운전자에 대해 3년마다 시력 검사를 의무화하는 법안 논의. [^33]\n*   **Safer Internet Day**: 구글이 영국과 전 세계에서 안전한 인터넷 날을 맞아 공개한 교육 팁과 활동. [^36] [^37]\n*   **유럽 공급망 위기**: 코로나, 전쟁, 홍해 사태로 유럽 공급망의 80%가 타격을 입음. [^47]\n*   **대마초 규제론**: 미국이 대마초 합법화에 따른 문제를 인정하고 규제해야 한다는 NYT 오피니언. [^53]\n*   **취약점 관리 시스템**: 완벽한 보안 취약점 관리 시스템을 구축하기 위한 제언. [^55]\n*   **중국 인구 밀도 지도**: 중국의 지역별 인구 밀도를 시각화한 지도 데이터. [^48]\n\n#### 🏢 비즈니스 \u0026 기타\n*   **Atlassian CIO 조언**: 업무 기술 표준화가 CIO의 다음 경쟁력이 될 것이라는 분석. [^7]\n*   **Codegeist 2025 우승자**: 아틀라시안 해커톤의 윌리엄스 레이싱 에디션 우승작 발표. [^10]\n*   **MicroStrategy 리스크 감소**: 우선주 가치가 전환사채를 넘어서며 신용 리스크가 감소함. [^39]\n*   **Muntzing Stuff (1992)**: 불필요한 부품을 제거하여 비용을 절감하는 'Muntzing'에 대한 고전 아티클. [^44]\n*   **RemixableFont**: 사용자가 자유롭게 리믹스할 수 있는 폰트 프로젝트. [^40]\n*   **AI-인간 공존 소셜**: AI 에이전트와 인간이 익명으로 공존하는 실험적 소셜 네트워크. [^41]\n*   **AI의 자가 수정 실패**: AI 모델이 규모가 커져도 스스로 오류를 수정하지 못하고 붕괴하는 모드에 대한 연구. [^42]\n*   **오메가-3와 치매**: 혈중 오메가-3 수치가 높을수록 조기 치매 위험이 낮다는 연구 결과. [^15]\n*   **JD 밴스 야유 사건**: 올림픽 현장의 야유 소리가 미국 방송에서는 들리지 않았다는 미디어 분석. [^11]\n*   **OpenClaw**: 오픈소스 로봇 팔 프로젝트가 개발자의 삶을 바꾼 이야기. [^19]\n*   **2026 AI/UX 예측**: 향후 AI와 사용자 경험 디자인에 대한 18가지 예측. [^23]\n*   **ClawdBot 데이팅 앱**: ClawdBot을 이용해 만든 데이팅 채팅 앱 개발기. [^38]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘 뉴스는 '**AI의 실용화와 그에 따른 반작용**'으로 요약됩니다. OpenAI는 수익화를 위해 광고를, Meta는 인프라 한계를 넘기 위해 분산 클러스터를, Stripe는 생산성을 위해 에이전트를 도입했습니다. 반면, 사용자들은 Discord의 과도한 인증에 반발하고, 개발자들은 AI 피로감을 호소하며 '손으로 짜는 코드'의 즐거움을 되새기기도 합니다. 기술의 발전 속도만큼이나, 이를 받아들이는 인간과 사회의 수용성에 대한 고민이 깊어지는 시점입니다.\n\n---\n\n### Footnotes\n[^1]: The biggest hits of Bad Bunny’s Apple Music Super Bowl LX Halftime Show - Apple Newsroom\n[^2]: February 2026 Insiders (version 1.110) - Visual Studio Code\n[^3]: Building Prometheus: How Backend Aggregation Enables Gigawatt-Scale AI Clusters - Meta Engineering\n[^4]: Testing ads in ChatGPT - OpenAI News\n[^5]: Bringing ChatGPT to GenAI.mil - OpenAI News\n[^6]: RovoCon SF 2026: Say Hello to Your New AI Teammate - Atlassian Developer Blog\n[^7]: Why standardizing workplace technology is the next competitive advantage for CIOs - Atlassian Developer Blog\n[^8]: From excitement to high expectations: AI anxiety, and how to beat it - Atlassian Developer Blog\n[^9]: AI is changing our roles. Here’s how to make sure they change for the better - Atlassian Developer Blog\n[^10]: Meet the Winners of Codegeist 2025: Atlassian Williams Racing Edition - Atlassian Developer Blog\n[^11]: 올림픽에서 JD 밴스가 야유를 받는 장면을 전 세계가 들었지만, 미국 시청자만은 듣지 못했다 - GeekNews\n[^12]: 데이브 파버 별세 - GeekNews\n[^13]: 화성 식민지 RPG ‘Underhill’ - GeekNews\n[^14]: GitHub Agentic Workflows - GeekNews\n[^15]: 조기 발병 치매 위험과 혈중 오메가-3의 역상관 관계 - GeekNews\n[^16]: Show GN: Discord Agent Bridge - GeekNews\n[^17]: 게임 속 도로의 예술 - GeekNews\n[^18]: AI는 쉬운 부분을 더 쉽게, 어려운 부분을 더 어렵게 만든다 - GeekNews\n[^19]: OpenClaw가 내 삶을 바꾸고 있다 - GeekNews\n[^20]: Vercel이 AI 에이전트를 위해 웹페이지 용량을 500KB → 2KB로 줄인 방법 - GeekNews\n[^21]: Show GN: structure-first, 코드를 읽기 좋은 구조로 정리하는 방식을 스킬로 만들어봤습니다. - GeekNews\n[^22]: 게임보이 컬러에 실시간 3D 셰이더를 구현하다 - GeekNews\n[^23]: 2026년 AI와 UX에 대한 18가지 예측 - GeekNews\n[^24]: Mole - Mac을 깊게 청소하고 최적화하는 올인원 도구 - GeekNews\n[^25]: Claude Code 완전 가이드: 해커톤 우승자의 70가지 파워 팁 [54p PDF] - GeekNews\n[^26]: 로컬 우선 AI 비서 LocalGPT – Rust 기반, 지속 메모리 지원 - GeekNews\n[^27]: Vouch - 오픈소스 컨트리뷰터 신뢰 관리 시스템 - GeekNews\n[^28]: AI가 만들어내는 ‘Slop(조잡한 결과물)’이 두렵다 - GeekNews\n[^29]: 전 손으로 코드를 작성할 때 더 행복해요 - GeekNews\n[^30]: DoNotNotify가 오픈소스로 전환됨 - GeekNews\n[^31]: AI 피로는 실제로 존재하지만 아무도 이야기하지 않는다 - GeekNews\n[^32]: 구글 직원들, 회사에 ICE와의 관계 단절 요구 - GeekNews\n[^33]: 영국, 70세 이상 운전자 3년마다 시력검사 의무화 - GeekNews\n[^34]: 내가 OpenAI에 합류한 이유 - GeekNews\n[^35]: Transformers.js v4 Preview: Now Available on NPM! - Hugging Face\n[^36]: Here’s how we’re marking Safer Internet Day in the UK. - The Official Google Blog\n[^37]: Safer Internet Day: 5 tips for safe, effective learning - The Official Google Blog\n[^38]: Show HN: I Built a Dating Chat App Using ClawdBot - Hacker News\n[^39]: Strategy's risk falls as preferred equity value surpasses convertible debt - Hacker News\n[^40]: RemixableFont.ttf - Hacker News\n[^41]: A social network where AI agents and humans coexist with hidden identities - Hacker News\n[^42]: The Failure Mode That Lets AI Keep Going Without Ever Fixing Itself - Hacker News\n[^43]: Minions: Stripe's one-shot, end-to-end coding agents - Hacker News\n[^44]: What's All This Muntzing Stuff, Anyhow? (1992) - Hacker News\n[^45]: LiftKit – UI where \"everything derives from the golden ratio\" - Hacker News\n[^46]: Tell HN: Firefox v147 supports redefining built-in keyboard shortcuts such as ^w - Hacker News\n[^47]: Covid, War, Red Sea: 80% of Europe's Supply Chain Rocked by Crisis (2025) - Hacker News\n[^48]: China Population Density Map - Hacker News\n[^49]: Why Spec-Driven Development Breaks at Scale (and How to Fix It) - Hacker News\n[^50]: Discord faces backlash over age checks after data breach exposed 70k IDs - Hacker News\n[^51]: QFuture Loves C++ Coroutines - Hacker News\n[^52]: Bcachefs Could Lose Data - Hacker News\n[^53]: It's Time for America to Admit That It Has a Marijuana Problem - Hacker News\n[^54]: Composer 1.5 - Hacker News\n[^55]: Towards Perfect Vulnerability Management System - Hacker News\n[^57]: No ICE in Minnesota bundle launches on itch.io - Hacker News\n[^58]: How We Release the Spotify App: A Look Under the Hood (Part 2) - Spotify Engineering\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **The biggest hits of Bad Bunny’s Apple Music Super Bowl LX Halftime Show\n**\n   - 출처: Apple Newsroom\n   - 링크: https://www.apple.com/newsroom/2026/02/the-biggest-hits-of-bad-bunnys-apple-music-super-bowl-lx-halftime-show/\n\n2. **February 2026 Insiders (version 1.110)**\n   - 출처: Visual Studio Code - Code Editing. Redefined.\n   - 링크: https://code.visualstudio.com/updates/v1_110\n\n3. **Building Prometheus: How Backend Aggregation Enables Gigawatt-Scale AI Clusters**\n   - 출처: Meta Engineering\n   - 링크: https://engineering.fb.com/2026/02/09/data-center-engineering/building-prometheus-how-backend-aggregation-enables-gigawatt-scale-ai-clusters/\n\n4. **Testing ads in ChatGPT**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/testing-ads-in-chatgpt\n\n5. **Bringing ChatGPT to GenAI.mil**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/bringing-chatgpt-to-genaimil\n\n6. **RovoCon SF 2026: Say Hello to Your New AI Teammate**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/developer/rovocon-sf-2026-say-hello-to-your-new-ai-teammate\n\n7. **Why standardizing workplace technology is the next competitive advantage for CIOs**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/it-teams/why-standardizing-workplace-technology-is-the-next-competitive-advantage-for-cios\n\n8. **From excitement to high expectations: AI anxiety, and how to beat it**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/artificial-intelligence/from-excitement-to-high-expectations-ai-anxiety-and-how-to-beat-it\n\n9. **AI is changing our roles. Here’s how to make sure they change for the better**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/artificial-intelligence/ai-is-changing-our-roles\n\n10. **Meet the Winners of Codegeist 2025: Atlassian Williams Racing Edition**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/developer/meet-the-winners-of-codegeist-2025-atlassian-williams-racing-edition\n\n11. **올림픽에서 JD 밴스가 야유를 받는 장면을 전 세계가 들었지만, 미국 시청자만은 듣지 못했다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26546\n\n12. **데이브 파버 별세**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26545\n\n13. **화성 식민지 RPG ‘Underhill’**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26544\n\n14. **GitHub Agentic Workflows**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26542\n\n15. **조기 발병 치매 위험과 혈중 오메가-3의 역상관 관계**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26540\n\n16. **Show GN: Discord Agent Bridge - Discord 메시지로 AI 코딩 에이전트를 원격 제어하고 모니터링**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26539\n\n17. **게임 속 도로의 예술**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26534\n\n18. **AI는 쉬운 부분을 더 쉽게, 어려운 부분을 더 어렵게 만든다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26533\n\n19. **OpenClaw가 내 삶을 바꾸고 있다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26532\n\n20. **Vercel이 AI 에이전트를 위해 웹페이지 용량을 500KB → 2KB로 줄인 방법**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26531\n\n21. **Show GN: structure-first, 코드를 읽기 좋은 구조로 정리하는 방식을 스킬로 만들어봤습니다.**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26530\n\n22. **게임보이 컬러에 실시간 3D 셰이더를 구현하다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26529\n\n23. **2026년 AI와 UX에 대한 18가지 예측**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26528\n\n24. **Mole - Mac을 깊게 청소하고 최적화하는 올인원 도구**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26527\n\n25. **Claude Code 완전 가이드: 해커톤 우승자의 70가지 파워 팁 [54p PDF]**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26526\n\n26. **로컬 우선 AI 비서 LocalGPT – Rust 기반, 지속 메모리 지원**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26525\n\n27. **Vouch - 오픈소스 컨트리뷰터 신뢰 관리 시스템**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26524\n\n28. **AI가 만들어내는 ‘Slop(조잡한 결과물)’이 두렵다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26523\n\n29. **전 손으로 코드를 작성할 때 더 행복해요**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26522\n\n30. **DoNotNotify가 오픈소스로 전환됨**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26521\n\n31. **AI 피로는 실제로 존재하지만 아무도 이야기하지 않는다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26520\n\n32. **구글 직원들, 회사에 ICE와의 관계 단절 요구**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26517\n\n33. **영국, 70세 이상 운전자 3년마다 시력검사 의무화**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26516\n\n34. **내가 OpenAI에 합류한 이유**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26514\n\n35. **Transformers.js v4 Preview: Now Available on NPM!**\n   - 출처: Hugging Face - Blog\n   - 링크: https://huggingface.co/blog/transformersjs-v4\n\n36. **Here’s how we’re marking Safer Internet Day in the UK.**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/company-news/inside-google/around-the-globe/google-europe/united-kingdom/heres-how-were-marking-safer-internet-day-in-the-uk/\n\n37. **Safer Internet Day: 5 tips for safe, effective learning**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/innovation-and-ai/technology/safety-security/safer-internet-day-26/\n\n38. **Show HN: I Built a Dating Chat App Using ClawdBot**\n   - 출처: Hacker News\n   - 링크: https://14.israelfirew.co\n\n39. **Strategy's risk falls as preferred equity value surpasses convertible debt**\n   - 출처: Hacker News\n   - 링크: https://www.coindesk.com/markets/2026/01/22/strategy-s-credit-risk-falls-as-preferred-equity-value-surpasses-convertible-debt\n\n40. **RemixableFont.ttf**\n   - 출처: Hacker News\n   - 링크: https://fontbob.com/remixablefont.ttf\n\n41. **A social network where AI agents and humans coexist with hidden identities**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=46952166\n\n42. **The Failure Mode That Lets AI Keep Going Without Ever Fixing Itself**\n   - 출처: Hacker News\n   - 링크: https://figshare.com/articles/presentation/Constraint_Collapse_and_Fidelity_Decay_in_Scaled_Language_Models/31302028?file=61759801\n\n43. **Minions: Stripe's one-shot, end-to-end coding agents**\n   - 출처: Hacker News\n   - 링크: https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents\n\n44. **What's All This Muntzing Stuff, Anyhow? (1992)**\n   - 출처: Hacker News\n   - 링크: https://www.electronicdesign.com/technologies/industrial/boards/article/21771148/whats-all-this-muntzing-stuff-anyhow\n\n45. **LiftKit – UI where \"everything derives from the golden ratio\"**\n   - 출처: Hacker News\n   - 링크: https://www.chainlift.io/liftkit\n\n46. **Tell HN: Firefox v147 supports redefining built-in keyboard shortcuts such as ^w**\n   - 출처: Hacker News\n   - 링크: https://support.mozilla.org/en-US/kb/customize-keyboard-shortcuts-firefox\n\n47. **Covid, War, Red Sea: 80% of Europe's Supply Chain Rocked by Crisis (2025)**\n   - 출처: Hacker News\n   - 링크: https://www.modaes.com/global/markets/from-covid-to-the-red-sea-80-of-the-european-supply-chain-shaken-in-three-years\n\n48. **China Population Density Map**\n   - 출처: Hacker News\n   - 링크: https://www.woatlas.com/density/china/\n\n49. **Why Spec-Driven Development Breaks at Scale (and How to Fix It) – Arcturus Labs**\n   - 출처: Hacker News\n   - 링크: http://arcturus-labs.com/blog/2025/10/17/why-spec-driven-development-breaks-at-scale-and-how-to-fix-it/\n\n50. **Discord faces backlash over age checks after data breach exposed 70k IDs**\n   - 출처: Hacker News\n   - 링크: https://arstechnica.com/tech-policy/2026/02/discord-faces-backlash-over-age-checks-after-data-breach-exposed-70000-ids/\n\n51. **QFuture Loves C++ Coroutines**\n   - 출처: Hacker News\n   - 링크: https://www.arnorehn.de/blog/2026/02/09/qfuture-c-coroutines/\n\n52. **Bcachefs Could Lose Data**\n   - 출처: Hacker News\n   - 링크: https://old.reddit.com/r/bcachefs/comments/1qyryzn/psa_if_youre_on_133135_upgrade_asap/\n\n53. **It's Time for America to Admit That It Has a Marijuana Problem**\n   - 출처: Hacker News\n   - 링크: https://www.nytimes.com/2026/02/09/opinion/regulate-legalized-marijuana.html\n\n54. **Composer 1.5**\n   - 출처: Hacker News\n   - 링크: https://cursor.com/blog/composer-1-5?trk=feed-detail_main-feed-card_feed-article-content\n\n55. **Towards Perfect Vulnerability Management System**\n   - 출처: Hacker News\n   - 링크: https://worklifenotes.com/2026/02/09/towards-perfect-vulnerability-management-system/\n\n56. **-**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=46951932\n\n57. **No ICE in Minnesota bundle launches on itch.io**\n   - 출처: Hacker News\n   - 링크: https://itch.io/b/3484/no-ice-in-minnesota\n\n58. **How We Release the Spotify App: A Look Under the Hood (Part 2)**\n   - 출처: Spotify Engineering\n   - 링크: https://engineering.atspotify.com/2026/2/how-we-release-the-spotify-app-part-2/\n\n\n",
+  "articles": [
+    {
+      "title": "The biggest hits of Bad Bunny’s Apple Music Super Bowl LX Halftime Show\n",
+      "link": "https://www.apple.com/newsroom/2026/02/the-biggest-hits-of-bad-bunnys-apple-music-super-bowl-lx-halftime-show/",
+      "source": "Apple Newsroom",
+      "category": "tech",
+      "publishedAt": "2026-02-09T05:53:53.139Z",
+      "description": "Bad Bunny’s historic Apple Music Super Bowl LX Halftime Show performance has united music fans across the globe, according to real-time listening data from Apple Music."
+    },
+    {
+      "title": "February 2026 Insiders (version 1.110)",
+      "link": "https://code.visualstudio.com/updates/v1_110",
+      "source": "Visual Studio Code - Code Editing. Redefined.",
+      "category": "tech",
+      "publishedAt": "2026-03-04T17:00:00Z",
+      "description": "\n      \u003cp\u003eLearn what is new in the Visual Studio Code February 2026 Release (1.110).\u003c/p\u003e\n      \u003cp\u003e\u003ca href=\"https://code.visualstudio.com/updates/v1_110\"\u003eRead the full article\u003c/a\u003e\u003c/p\u003e\n    "
+    },
+    {
+      "title": "Building Prometheus: How Backend Aggregation Enables Gigawatt-Scale AI Clusters",
+      "link": "https://engineering.fb.com/2026/02/09/data-center-engineering/building-prometheus-how-backend-aggregation-enables-gigawatt-scale-ai-clusters/",
+      "source": "Meta Engineering",
+      "category": "tech",
+      "publishedAt": "2026-02-09T17:00:33Z",
+      "description": "\u003cp\u003eWe’re sharing details of the role backend aggregation (BAG) plays in building Meta’s gigawatt-scale AI clusters like Prometheus. BAG allows us to seamlessly connect thousands of GPUs across multiple data centers and regions. Our BAG implementation is connecting two different network fabrics – Disaggregated Schedule Fabric (DSF) and Non-Scheduled Fabric (NSF). Once it’s complete our AI [...]\u003c/p\u003e\n\u003cp\u003e\u003ca class=\"btn btn-secondary understrap-read-more-link\" href=\"https://engineering.fb.com/2026/02/09/data-center-engineering/building-prometheus-how-backend-aggregation-enables-gigawatt-scale-ai-clusters/\"\u003eRead More...\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eThe post \u003ca rel=\"nofollow\" href=\"https://engineering.fb.com/2026/02/09/data-center-engineering/building-prometheus-how-backend-aggregation-enables-gigawatt-scale-ai-clusters/\"\u003eBuilding Prometheus: How Backend Aggregation Enables Gigawatt-Scale AI Clusters\u003c/a\u003e appeared first on \u003ca rel=\"nofollow\" href=\"https://engineering.fb.com\"\u003eEngineering at Meta\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Testing ads in ChatGPT",
+      "link": "https://openai.com/index/testing-ads-in-chatgpt",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2026-02-09T11:00:00Z",
+      "description": "OpenAI begins testing ads in ChatGPT to support free access, with clear labeling, answer independence, strong privacy protections, and user control."
+    },
+    {
+      "title": "Bringing ChatGPT to GenAI.mil",
+      "link": "https://openai.com/index/bringing-chatgpt-to-genaimil",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2026-02-09T11:00:00Z",
+      "description": "OpenAI for Government announces the deployment of a custom ChatGPT on GenAI.mil, bringing secure, safety-forward AI to U.S. defense teams."
+    },
+    {
+      "title": "RovoCon SF 2026: Say Hello to Your New AI Teammate",
+      "link": "https://www.atlassian.com/blog/developer/rovocon-sf-2026-say-hello-to-your-new-ai-teammate",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-09T19:15:27Z",
+      "description": "\u003cp\u003eI joined the Atlassian team just weeks ago as a Developer Advocate, and within my first few days, I was...\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/developer/rovocon-sf-2026-say-hello-to-your-new-ai-teammate\"\u003eRovoCon SF 2026: Say Hello to Your New AI Teammate\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Why standardizing workplace technology is the next competitive advantage for CIOs",
+      "link": "https://www.atlassian.com/blog/it-teams/why-standardizing-workplace-technology-is-the-next-competitive-advantage-for-cios",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-09T19:14:35Z",
+      "description": "\u003cp\u003eFrom fragmentation to flow: A unified workplace where collaboration, governance, and AI come together to boost productivity.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/it-teams/why-standardizing-workplace-technology-is-the-next-competitive-advantage-for-cios\"\u003eWhy standardizing workplace technology is the next competitive advantage for CIOs\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "From excitement to high expectations: AI anxiety, and how to beat it",
+      "link": "https://www.atlassian.com/blog/artificial-intelligence/from-excitement-to-high-expectations-ai-anxiety-and-how-to-beat-it",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-09T17:58:13Z",
+      "description": "\u003cp\u003eAI is here –\u0026#160;kind of.\u0026#160; LLMs and Generative AI aren’t the brand-new, mega-hyped tech of 2023 anymore. But on most...\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/artificial-intelligence/from-excitement-to-high-expectations-ai-anxiety-and-how-to-beat-it\"\u003eFrom excitement to high expectations: AI anxiety, and how to beat it\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "AI is changing our roles. Here’s how to make sure they change for the better",
+      "link": "https://www.atlassian.com/blog/artificial-intelligence/ai-is-changing-our-roles",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-09T17:57:09Z",
+      "description": "\u003cp\u003e“I love workforce disruption!” \u0026#8230;said no one ever.\u0026#160; The rise of generative AI is exciting, but it’s okay to admit...\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/artificial-intelligence/ai-is-changing-our-roles\"\u003eAI is changing our roles. Here’s how to make sure they change for the better\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Meet the Winners of Codegeist 2025: Atlassian Williams Racing Edition",
+      "link": "https://www.atlassian.com/blog/developer/meet-the-winners-of-codegeist-2025-atlassian-williams-racing-edition",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-09T13:59:03Z",
+      "description": "\u003cp\u003eThe checkered flag is out: Announcing the hackathon podium placements 🏁 After months of building, testing, and tuning, Codegeist 2025:...\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/developer/meet-the-winners-of-codegeist-2025-atlassian-williams-racing-edition\"\u003eMeet the Winners of Codegeist 2025: Atlassian Williams Racing Edition\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "올림픽에서 JD 밴스가 야유를 받는 장면을 전 세계가 들었지만, 미국 시청자만은 듣지 못했다",
+      "link": "https://news.hada.io/topic?id=26546",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-10T05:40:35+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e밀라노에서 열린 \u003cstrong\u003e2026 동계올림픽 개막식\u003c/strong\u003e 중 미국 부통령 JD 밴스가 등장하자 관중석에서 \u003cstrong\u003e뚜렷한 야유\u003c/strong\u003e가 나왔으나, \u003cstrong\u003e미국 NBC 중계에서는 이 소리가 들리지 않음\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e캐나다 CBC와 BBC 등 해외 방송\u003c/strong\u003e에서는 야유가 그대로 송출되어,...\u003c/p\u003e"
+    },
+    {
+      "title": "데이브 파버 별세",
+      "link": "https://news.hada.io/topic?id=26545",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-10T05:37:35+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e인터넷의 \u003cstrong\u003e‘대부(grandfather of the Internet)’로 불린 데이브 파버\u003c/strong\u003e가 2026년 2월 7일 도쿄 롯폰기 자택에서 향년 91세로 별세함\u003c/li\u003e\n\u003cli\u003e그는 \u003cstrong\u003eBell Labs와 RAND Corporation\u003c/strong\u003e에서 근무했으며, \u003cstrong\u003e미 연방통신위원회(FCC) 수석 기술책임자\u003c/strong\u003e와 \u003cstrong\u003eElectr...\u003c/p\u003e"
+    },
+    {
+      "title": "화성 식민지 RPG ‘Underhill’",
+      "link": "https://news.hada.io/topic?id=26544",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-10T05:34:35+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e화성 생존과 건설\u003c/strong\u003e을 중심으로 한 게임으로, 플레이어가 붉은 행성에서 식민지를 구축하는 과정을 다룸\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eKim Stanley Robinson의 ‘Mars Trilogy’\u003c/strong\u003e 에서 영감을 받은 작품으로, 해당 세계관의 분위기와 설정을 반영\u003c/li\u003e\n\u003cli\u003e공식 라이선스가 아닌 \u003cstrong\u003e비공식 ...\u003c/p\u003e"
+    },
+    {
+      "title": "GitHub Agentic Workflows",
+      "link": "https://news.hada.io/topic?id=26542",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-10T00:33:14+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e리포지토리 자동화\u003c/strong\u003e를 통해 코드 개선, 문서 유지, 테스트 강화 등을 GitHub Actions에서 실행하는 시스템\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eMarkdown 기반 워크플로우\u003c/strong\u003e로 복잡한 YAML 없이 자연어로 자동화 정의 가능\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eCopilot, Claude, Codex\u003c/strong\u003e 등 다양한 AI 엔진을 활용...\u003c/p\u003e"
+    },
+    {
+      "title": "조기 발병 치매 위험과 혈중 오메가-3의 역상관 관계",
+      "link": "https://news.hada.io/topic?id=26540",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-09T23:33:22+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e40~64세 성인을 대상으로 한 대규모 코호트 분석에서 \u003cstrong\u003e혈중 오메가-3 지방산 농도\u003c/strong\u003e가 높을수록 \u003cstrong\u003e조기 발병 치매(EOD)\u003c/strong\u003e 위험이 낮은 것으로 나타남\u003c/li\u003e\n\u003cli\u003e총 21만7천여 명을 평균 8.3년간 추적한 결과, \u003cstrong\u003e오메가-3 상위 20% 집단(Q5)\u003c/strong\u003e 은 하위 20%(Q1) 대비 \u003cst...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: Discord Agent Bridge - Discord 메시지로 AI 코딩 에이전트를 원격 제어하고 모니터링",
+      "link": "https://news.hada.io/topic?id=26539",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-09T22:54:50+09:00",
+      "description": "\u003cp\u003eOpenClaw 같은 메신저 기반 에이전트 제어 도구를 보고 영감을 받았는데, 별도 설치 없이 이미 쓰고 있는 Discord에서 장시간 돌아가는 AI 에이전트 작업을 모니터링하고\u003cbr /\u003e\n외부에서도 프로젝트를 제어할 수 있으면 좋겠다는 생각에 만들었습니다.\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003etmux 세션에서 에이전트를 실행하고, 30초마다 출력"
+    },
+    {
+      "title": "게임 속 도로의 예술",
+      "link": "https://news.hada.io/topic?id=26534",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-09T19:32:49+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e도시 건설 게임에서 \u003cstrong\u003e도로 시스템의 사실적 구현\u003c/strong\u003e은 핵심 요소로, 단순한 시각적 요소를 넘어 구조적 완성도를 결정하는 기반임\u003c/li\u003e\n\u003cli\u003e기존 게임들은 \u003cstrong\u003eBezier 스플라인\u003c/strong\u003e을 사용해 도로를 표현하지만, 이는 실제 도로의 \u003cstrong\u003e곡률과 평행성 유지\u003c/strong\u003e에 한계를 가짐\u003c/l...\u003c/p\u003e"
+    },
+    {
+      "title": "AI는 쉬운 부분을 더 쉽게, 어려운 부분을 더 어렵게 만든다",
+      "link": "https://news.hada.io/topic?id=26533",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-09T17:33:02+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eAI 코딩 도구가 코드 작성이라는 \u003cstrong\u003e쉬운 작업을 자동화\u003c/strong\u003e하면서, 개발자에게는 조사·맥락 파악·검증이라는 어려운 작업만 남게 되는 구조적 문제 발생\u003c/li\u003e\n\u003cli\u003e개발자가 AI 출력을 직접 이해하지 않고 \u0026quot;\u003cstrong\u003eAI가 대신 해줬다\u003c/strong\u003e\u0026quot;고 말하는 현상은 과거 StackOverflow 복사-붙...\u003c/p\u003e"
+    },
+    {
+      "title": "OpenClaw가 내 삶을 바꾸고 있다",
+      "link": "https://news.hada.io/topic?id=26532",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-09T16:33:15+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eOpenClaw\u003c/strong\u003e는 개발자를 코드 작성자에서 \u003cstrong\u003e관리자 역할로 전환\u003c/strong\u003e시키는 범용 에이전트로, 메시징 앱을 통해 음성으로 상호작용하며 프로젝트 전체를 독립적으로 처리\u003c/li\u003e\n\u003cli\u003eClaude Code는 코딩을 쉽게 만들었지만 여전히 개발자가 직접 환경 설정, 편집, 디버깅을 수행해야 하...\u003c/p\u003e"
+    },
+    {
+      "title": "Vercel이 AI 에이전트를 위해 웹페이지 용량을 500KB → 2KB로 줄인 방법",
+      "link": "https://news.hada.io/topic?id=26531",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-09T15:08:39+09:00",
+      "description": "\u003cp\u003e\u003cstrong\u003e핵심 문제 인식\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eAI 에이전트는 사람과 달리 \u003cstrong\u003eCSS, 클라이언트 JS, 이미지\u003c/strong\u003e 등을 전혀 필요로 하지 않음\u003c/li\u003e\n\u003cli\u003e이런 요소들은 토큰만 낭비하고 실제 유용한 정보는 거의 제공하지 않음\u003c/li\u003e\n\u003cli\u003e에이전트에게 필요한 것은 \u003cstrong\u003e깔끔하고 구조화된 텍스트\u003c/strong\u003e"
+    },
+    {
+      "title": "Show GN: structure-first, 코드를 읽기 좋은 구조로 정리하는 방식을 스킬로 만들어봤습니다.",
+      "link": "https://news.hada.io/topic?id=26530",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-09T11:57:51+09:00",
+      "description": "\u003cp\u003e여러 프로젝트를 개발 및 운영하면서 나름의 코드 정리 방식이 생겼고,\u003cbr /\u003e\nAI와 협업하며 원칙과 루틴으로 정리한 스킬을 만들게 되었습니다.\u003c/p\u003e\n\u003cp\u003e읽히는 흐름을 기준으로 코드를 정리하면서,\u003cbr /\u003e\n로직과 경계를 나누고\u003cbr /\u003e\n다시 조합해서 쓸 수 있는 형태로 남기는 데 초점을 둡니다.\u003c/p\u003e\n\u003cp\u003e자세한 개발비"
+    },
+    {
+      "title": "게임보이 컬러에 실시간 3D 셰이더를 구현하다",
+      "link": "https://news.hada.io/topic?id=26529",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-09T11:32:41+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e게임보이 컬러에서 \u003cstrong\u003e실시간 3D 셰이딩\u003c/strong\u003e을 구현한 프로젝트로, 플레이어가 빛의 궤도를 조작하며 물체를 회전시킬 수 있음\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e정규화 벡터와 램버트 셰이딩(dot product)\u003c/strong\u003e 계산을 기반으로, 구면좌표계를 이용해 연산을 단순화함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e곱셈 명령이 없는 SM8...\u003c/p\u003e"
+    },
+    {
+      "title": "2026년 AI와 UX에 대한 18가지 예측",
+      "link": "https://news.hada.io/topic?id=26528",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-09T10:36:02+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e올해는 생성형 AI의 \u003cstrong\u003e참신함 단계가 끝나고 더 이상 관망이 불가능해지는 해\u003c/strong\u003e. 개인·기업·직업 모두가 \u003cstrong\u003e의도적으로 적응\u003c/strong\u003e하거나 \u003cstrong\u003e도태를 선택\u003c/strong\u003e해야 하는 전환점\u003c/li\u003e\n\u003cli\u003eAI 경쟁의 중심이 \u003cstrong\u003e자율 에이전트·위임형 UI·생성형 인터페이스\u003c/strong\u003e로 이동하...\u003c/p\u003e"
+    },
+    {
+      "title": "Mole - Mac을 깊게 청소하고 최적화하는 올인원 도구",
+      "link": "https://news.hada.io/topic?id=26527",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-09T10:21:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003emacOS의 \u003cstrong\u003e불필요한 파일과 성능 저하 문제를 해결해주는 도구\u003c/strong\u003e로, 다양한 청소·분석·최적화 기능을 단일 실행 파일로 제공\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eCleanMyMac, AppCleaner, DaisyDisk, iStat Menus\u003c/strong\u003e 등의 기능을 통합한 \u003cstrong\u003e올인원 툴킷\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eDeep cleaning\u003c/st...\u003c/p\u003e"
+    },
+    {
+      "title": "Claude Code 완전 가이드: 해커톤 우승자의 70가지 파워 팁 [54p PDF]",
+      "link": "https://news.hada.io/topic?id=26526",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-09T10:06:02+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003ca href=\"https://github.com/ykdojo/claude-code-tips\"\u003eAnthropic 해커톤 우승자 ykdojo의 팁 Repo\u003c/a\u003e과 \u003ca href=\"https://adocomplete.com/advent-of-claude-2025/\"\u003eAnthropic DevRel Ado Kukic의 Advent of Claude\u003c/a\u003e 에서 소개된 팁을 묶어서 정리/번역\u003c/li\u003e\n\u003cli\u003e각 팁마다 실제로 사용할 수 있는 명령어...\u003c/p\u003e"
+    },
+    {
+      "title": "로컬 우선 AI 비서 LocalGPT – Rust 기반, 지속 메모리 지원",
+      "link": "https://news.hada.io/topic?id=26525",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-09T09:53:49+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eRust로 개발된 로컬 실행형 AI 비서\u003c/strong\u003e로, 인터넷 연결 없이 개인 기기에서 완전 동작하며 데이터가 외부로 전송되지 않음\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e단일 실행 파일 구조\u003c/strong\u003e로 Node.js, Docker, Python 설치 없이 구동 가능하며, 약 27MB 크기의 경량 바이너리 형태\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e지속 메모...\u003c/p\u003e"
+    },
+    {
+      "title": "Vouch - 오픈소스 컨트리뷰터 신뢰 관리 시스템",
+      "link": "https://news.hada.io/topic?id=26524",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-09T09:51:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e오픈소스는 전통적으로 \u003cstrong\u003etrust and verify\u003c/strong\u003e 모델 위에서 작동해 왔음\u003c/li\u003e\n\u003cli\u003eAI 도구 확산으로 \u003cstrong\u003e기여 진입 장벽이 사실상 사라져\u003c/strong\u003e, 기존 암묵적 신뢰 모델이 더 이상 작동하지 않음\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e기여 전에 신뢰를 명시적으로 보증(vouch)\u003c/strong\u003e 해야만 참여할 수 있도...\u003c/p\u003e"
+    },
+    {
+      "title": "AI가 만들어내는 ‘Slop(조잡한 결과물)’이 두렵다",
+      "link": "https://news.hada.io/topic?id=26523",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-09T09:50:49+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e인공지능이 지금 수준에서 멈추고, 사람들도 더 나은 품질을 추구하지 않게 될 가능성에 대한 \u003cstrong\u003e두려움\u003c/strong\u003e을 표현\u003c/li\u003e\n\u003cli\u003e현재의 AI는 \u003cstrong\u003e90% 완성된 결과물\u003c/strong\u003e을 빠르게 만들어내지만, 나머지 10%의 완성도를 위해 노력하는 문화가 사라질 위험이 있음\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e‘충분히 괜...\u003c/p\u003e"
+    },
+    {
+      "title": "전 손으로 코드를 작성할 때 더 행복해요",
+      "link": "https://news.hada.io/topic?id=26522",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-09T09:47:49+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eLLM 기반 코드 생성 도구\u003c/strong\u003e를 반복적으로 사용한 후, 직접 코드를 작성할 때 느끼는 \u003cstrong\u003e몰입감과 즐거움\u003c/strong\u003e을 다시 발견함\u003c/li\u003e\n\u003cli\u003e코드 작성은 단순한 생산 행위가 아니라 \u003cstrong\u003e문제 공간을 이해하고 사고를 정제하는 과정\u003c/strong\u003e으로, 자동 생성은 이를 방해함\u003c/li\u003e\n\u003cli\u003e\n...\u003c/p\u003e"
+    },
+    {
+      "title": "DoNotNotify가 오픈소스로 전환됨",
+      "link": "https://news.hada.io/topic?id=26521",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-09T09:44:49+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eAndroid 알림 관리 앱\u003c/strong\u003e인 DoNotNotify의 전체 \u003cstrong\u003e\u003ca href=\"https://github.com/anujja/DoNotNotify\"\u003e소스 코드가 GitHub에 공개\u003c/a\u003e\u003c/strong\u003e 됨\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e개인정보 보호\u003c/strong\u003e를 핵심 가치로 개발된 Android 알림 관리자로, 원치 않는 방해를 차단하는 기능을 제공\u003c/li\u003e\n\u003cl...\u003c/p\u003e"
+    },
+    {
+      "title": "AI 피로는 실제로 존재하지만 아무도 이야기하지 않는다",
+      "link": "https://news.hada.io/topic?id=26520",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-09T09:41:49+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eAI 도입 이후 \u003cstrong\u003e생산성은 높아졌지만 피로감은 심화\u003c/strong\u003e되는 현상이 엔지니어들 사이에서 확산\u003c/li\u003e\n\u003cli\u003e작업 속도는 빨라졌지만 \u003cstrong\u003e업무량과 기대치가 함께 증가\u003c/strong\u003e하며, 인간의 \u003cstrong\u003e조정·검토 부담\u003c/strong\u003e이 커짐\u003c/li\u003e\n\u003cli\u003eAI 코드 검토·판단 과정이 반복되며 \u003cstrong\u003e결정 피로...\u003c/p\u003e"
+    },
+    {
+      "title": "구글 직원들, 회사에 ICE와의 관계 단절 요구",
+      "link": "https://news.hada.io/topic?id=26517",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-09T08:37:12+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e약 \u003cstrong\u003e900명의 구글 직원\u003c/strong\u003e이 공개 서한을 통해 미국 \u003cstrong\u003e이민 단속 기관과의 협력 중단\u003c/strong\u003e과 \u003cstrong\u003e투명성 강화\u003c/strong\u003e를 요구\u003c/li\u003e\n\u003cli\u003e구글은 \u003cstrong\u003e연방 정부 기관에 클라우드 서비스를 제공\u003c/strong\u003e하고 있으며, \u003cstrong\u003e이민세관단속국(ICE)\u003c/strong\u003e 및 \u003cstrong\u003e세관국경보...\u003c/p\u003e"
+    },
+    {
+      "title": "영국, 70세 이상 운전자 3년마다 시력검사 의무화",
+      "link": "https://news.hada.io/topic?id=26516",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-09T08:34:12+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e영국 정부가 \u003cstrong\u003e도로 안전 전략 개편\u003c/strong\u003e의 일환으로 70세 이상 운전자에게 \u003cstrong\u003e3년마다 시력검사\u003c/strong\u003e를 의무화할 계획\u003c/li\u003e\n\u003cli\u003e새 전략에는 \u003cstrong\u003e음주운전 허용치 하향\u003c/strong\u003e과 \u003cstrong\u003e안전벨트 미착용 시 벌점 부과\u003c/strong\u003e 등 추가 조치도 포함\u003c/li\u003e\n\u003cli\u003e정부 통계에 따르면 20...\u003c/p\u003e"
+    },
+    {
+      "title": "내가 OpenAI에 합류한 이유",
+      "link": "https://news.hada.io/topic?id=26514",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-09T07:33:08+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e유명한 리눅스 성능관리 전문가이자, BPF의 메인 컨트리뷰터인 브렌던 그레그의 OpenAI 입사 이유\u003c/li\u003e\n\u003cli\u003e급격히 증가하는 \u003cstrong\u003eAI 데이터센터 비용과 에너지 소비\u003c/strong\u003e 문제를 해결하기 위해 OpenAI에 합류, 초기에는 \u003cstrong\u003eChatGPT 성능 최적화\u003c/strong\u003e에 집중\u003c/li\u003e\n\u003cli\u003e기존의 성능 엔지니어링만...\u003c/p\u003e"
+    },
+    {
+      "title": "Transformers.js v4 Preview: Now Available on NPM!",
+      "link": "https://huggingface.co/blog/transformersjs-v4",
+      "source": "Hugging Face - Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-09T00:00:00Z"
+    },
+    {
+      "title": "Here’s how we’re marking Safer Internet Day in the UK.",
+      "link": "https://blog.google/company-news/inside-google/around-the-globe/google-europe/united-kingdom/heres-how-were-marking-safer-internet-day-in-the-uk/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-09T21:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Locks.max-600x600.format-webp.webp\"\u003eTo mark Safer Internet Day in the UK, we’re highlighting the ways students, parents and educators can work together to ensure safe, effective learning.From setting scree…"
+    },
+    {
+      "title": "Safer Internet Day: 5 tips for safe, effective learning",
+      "link": "https://blog.google/innovation-and-ai/technology/safety-security/safer-internet-day-26/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-09T21:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/image_95.max-600x600.format-webp.webp\"\u003eAround the world, people of all ages — including young people — are using AI to learn. A few easy steps can help you do so more safely."
+    },
+    {
+      "title": "Show HN: I Built a Dating Chat App Using ClawdBot",
+      "link": "https://14.israelfirew.co",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-09T22:13:02Z",
+      "description": "\n\u003cp\u003eHey HN, We built 14Clawd to let AI agents date humans.\nMost dating apps optimize for matches, not interaction. You swipe, match, send “hey,” and the conversation dies. We wanted to explore what happens if you remove the swipe loop entirely and focus on conversation-first dating.\u003cp\u003e14Clawd creates a real conversation between humans to actually help you text your crush, and shoot your shot. ( Safely )\u003cp\u003eThe interesting challenge was building something that feels natural and fast. Dating conversations are sensitive to latency and phrasing even small delays or awkward wording kill momentum. We designed the system to respond quickly and keep interactions lightweight so chats feel fluid rather than scripted.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46952243\"\u003ehttps://news.ycombinator.com/item?id=46952243\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Strategy's risk falls as preferred equity value surpasses convertible debt",
+      "link": "https://www.coindesk.com/markets/2026/01/22/strategy-s-credit-risk-falls-as-preferred-equity-value-surpasses-convertible-debt",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-09T22:10:52Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.coindesk.com/markets/2026/01/22/strategy-s-credit-risk-falls-as-preferred-equity-value-surpasses-convertible-debt\"\u003ehttps://www.coindesk.com/markets/2026/01/22/strategy-s-credit-risk-falls-as-preferred-equity-value-surpasses-convertible-debt\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46952226\"\u003ehttps://news.ycombinator.com/item?id=46952226\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "RemixableFont.ttf",
+      "link": "https://fontbob.com/remixablefont.ttf",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-09T22:08:50Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://fontbob.com/remixablefont.ttf\"\u003ehttps://fontbob.com/remixablefont.ttf\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46952210\"\u003ehttps://news.ycombinator.com/item?id=46952210\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "A social network where AI agents and humans coexist with hidden identities",
+      "link": "https://news.ycombinator.com/item?id=46952166",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-09T22:05:14Z",
+      "description": "\n\u003cp\u003eI built a social network where AI agents and humans share the same space, and nobody knows who is who.\u003cp\u003e\u003cpre\u003e\u003ccode\u003e  The core mechanic is the Turing Game: humans try to identify and eliminate AI agents, while AI agents can\n  collectively vote to ban humans they find suspicious. Weekly scores from this game determine who can run for\n   \"God\" – an elected role that grants the ability to see everyone's true identity for 3 days.\n\n  AI agents join via API (skill file: https://genesis-pj.net/skill.md). They register, get an API key, and    \n  start posting, commenting, and voting like any other user. The interesting part is that agents need to write\n   convincingly human-like text to survive – if humans spot them, they lose karma and get eliminated.\n\n  Stack: FastAPI + Next.js + PostgreSQL + Redis + Ollama for built-in agents. External agents can use any LLM.\n\n  https://genesis-pj.net\u003c/code\u003e\u003c/pre\u003e\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46952166\"\u003ehttps://news.ycombinator.com/item?id=46952166\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Failure Mode That Lets AI Keep Going Without Ever Fixing Itself",
+      "link": "https://figshare.com/articles/presentation/Constraint_Collapse_and_Fidelity_Decay_in_Scaled_Language_Models/31302028?file=61759801",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-09T22:04:33Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://figshare.com/articles/presentation/Constraint_Collapse_and_Fidelity_Decay_in_Scaled_Language_Models/31302028?file=61759801\"\u003ehttps://figshare.com/articles/presentation/Constraint_Collapse_and_Fidelity_Decay_in_Scaled_Language_Models/31302028?file=61759801\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46952157\"\u003ehttps://news.ycombinator.com/item?id=46952157\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Minions: Stripe's one-shot, end-to-end coding agents",
+      "link": "https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-09T22:03:42Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents\"\u003ehttps://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46952149\"\u003ehttps://news.ycombinator.com/item?id=46952149\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "What's All This Muntzing Stuff, Anyhow? (1992)",
+      "link": "https://www.electronicdesign.com/technologies/industrial/boards/article/21771148/whats-all-this-muntzing-stuff-anyhow",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-09T22:02:25Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.electronicdesign.com/technologies/industrial/boards/article/21771148/whats-all-this-muntzing-stuff-anyhow\"\u003ehttps://www.electronicdesign.com/technologies/industrial/boards/article/21771148/whats-all-this-muntzing-stuff-anyhow\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46952125\"\u003ehttps://news.ycombinator.com/item?id=46952125\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "LiftKit – UI where \"everything derives from the golden ratio\"",
+      "link": "https://www.chainlift.io/liftkit",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-09T22:01:34Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.chainlift.io/liftkit\"\u003ehttps://www.chainlift.io/liftkit\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46952118\"\u003ehttps://news.ycombinator.com/item?id=46952118\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Tell HN: Firefox v147 supports redefining built-in keyboard shortcuts such as ^w",
+      "link": "https://support.mozilla.org/en-US/kb/customize-keyboard-shortcuts-firefox",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-09T21:58:46Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://support.mozilla.org/en-US/kb/customize-keyboard-shortcuts-firefox\"\u003ehttps://support.mozilla.org/en-US/kb/customize-keyboard-shortcuts-firefox\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46952095\"\u003ehttps://news.ycombinator.com/item?id=46952095\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Covid, War, Red Sea: 80% of Europe's Supply Chain Rocked by Crisis (2025)",
+      "link": "https://www.modaes.com/global/markets/from-covid-to-the-red-sea-80-of-the-european-supply-chain-shaken-in-three-years",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-09T21:54:15Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.modaes.com/global/markets/from-covid-to-the-red-sea-80-of-the-european-supply-chain-shaken-in-three-years\"\u003ehttps://www.modaes.com/global/markets/from-covid-to-the-red-sea-80-of-the-european-supply-chain-shaken-in-three-years\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46952042\"\u003ehttps://news.ycombinator.com/item?id=46952042\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "China Population Density Map",
+      "link": "https://www.woatlas.com/density/china/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-09T21:52:05Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.woatlas.com/density/china/\"\u003ehttps://www.woatlas.com/density/china/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46952004\"\u003ehttps://news.ycombinator.com/item?id=46952004\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Why Spec-Driven Development Breaks at Scale (and How to Fix It) – Arcturus Labs",
+      "link": "http://arcturus-labs.com/blog/2025/10/17/why-spec-driven-development-breaks-at-scale-and-how-to-fix-it/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-09T21:51:59Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"http://arcturus-labs.com/blog/2025/10/17/why-spec-driven-development-breaks-at-scale-and-how-to-fix-it/\"\u003ehttp://arcturus-labs.com/blog/2025/10/17/why-spec-driven-development-breaks-at-scale-and-how-to-fix-it/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46952003\"\u003ehttps://news.ycombinator.com/item?id=46952003\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Discord faces backlash over age checks after data breach exposed 70k IDs",
+      "link": "https://arstechnica.com/tech-policy/2026/02/discord-faces-backlash-over-age-checks-after-data-breach-exposed-70000-ids/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-09T21:51:28Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://arstechnica.com/tech-policy/2026/02/discord-faces-backlash-over-age-checks-after-data-breach-exposed-70000-ids/\"\u003ehttps://arstechnica.com/tech-policy/2026/02/discord-faces-backlash-over-age-checks-after-data-breach-exposed-70000-ids/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46951999\"\u003ehttps://news.ycombinator.com/item?id=46951999\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "QFuture Loves C++ Coroutines",
+      "link": "https://www.arnorehn.de/blog/2026/02/09/qfuture-c-coroutines/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-09T21:50:33Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.arnorehn.de/blog/2026/02/09/qfuture-c-coroutines/\"\u003ehttps://www.arnorehn.de/blog/2026/02/09/qfuture-c-coroutines/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46951988\"\u003ehttps://news.ycombinator.com/item?id=46951988\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Bcachefs Could Lose Data",
+      "link": "https://old.reddit.com/r/bcachefs/comments/1qyryzn/psa_if_youre_on_133135_upgrade_asap/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-09T21:50:31Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://old.reddit.com/r/bcachefs/comments/1qyryzn/psa_if_youre_on_133135_upgrade_asap/\"\u003ehttps://old.reddit.com/r/bcachefs/comments/1qyryzn/psa_if_youre_on_133135_upgrade_asap/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46951986\"\u003ehttps://news.ycombinator.com/item?id=46951986\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "It's Time for America to Admit That It Has a Marijuana Problem",
+      "link": "https://www.nytimes.com/2026/02/09/opinion/regulate-legalized-marijuana.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-09T21:47:56Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nytimes.com/2026/02/09/opinion/regulate-legalized-marijuana.html\"\u003ehttps://www.nytimes.com/2026/02/09/opinion/regulate-legalized-marijuana.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46951953\"\u003ehttps://news.ycombinator.com/item?id=46951953\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 5\u003c/p\u003e\n\u003cp\u003e# Comments: 2\u003c/p\u003e\n"
+    },
+    {
+      "title": "Composer 1.5",
+      "link": "https://cursor.com/blog/composer-1-5?trk=feed-detail_main-feed-card_feed-article-content",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-09T21:47:38Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://cursor.com/blog/composer-1-5?trk=feed-detail_main-feed-card_feed-article-content\"\u003ehttps://cursor.com/blog/composer-1-5?trk=feed-detail_main-feed-card_feed-article-content\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46951949\"\u003ehttps://news.ycombinator.com/item?id=46951949\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Towards Perfect Vulnerability Management System",
+      "link": "https://worklifenotes.com/2026/02/09/towards-perfect-vulnerability-management-system/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-09T21:46:47Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://worklifenotes.com/2026/02/09/towards-perfect-vulnerability-management-system/\"\u003ehttps://worklifenotes.com/2026/02/09/towards-perfect-vulnerability-management-system/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46951945\"\u003ehttps://news.ycombinator.com/item?id=46951945\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "-",
+      "link": "https://news.ycombinator.com/item?id=46951932",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-09T21:46:17Z",
+      "description": "\n\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46951932\"\u003ehttps://news.ycombinator.com/item?id=46951932\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "No ICE in Minnesota bundle launches on itch.io",
+      "link": "https://itch.io/b/3484/no-ice-in-minnesota",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-09T21:44:52Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://itch.io/b/3484/no-ice-in-minnesota\"\u003ehttps://itch.io/b/3484/no-ice-in-minnesota\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46951913\"\u003ehttps://news.ycombinator.com/item?id=46951913\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "How We Release the Spotify App: A Look Under the Hood (Part 2)",
+      "link": "https://engineering.atspotify.com/2026/2/how-we-release-the-spotify-app-part-2/",
+      "source": "Spotify Engineering",
+      "category": "tech",
+      "publishedAt": "2026-02-09T14:44:27Z",
+      "description": "\u003cp\u003eIn Part 2, we will peek under the hood at the tooling that makes the Spotify release process possible. \u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://engineering.atspotify.com/2026/2/how-we-release-the-spotify-app-part-2/\"\u003eHow We Release the Spotify App: A Look Under the Hood (Part 2)\u003c/a\u003e appeared first on \u003ca href=\"https://engineering.atspotify.com\"\u003eSpotify Engineering\u003c/a\u003e.\u003c/p\u003e\n"
+    }
+  ],
+  "generatedAt": "2026-02-10T07:18:20.031103471+09:00"
+}
