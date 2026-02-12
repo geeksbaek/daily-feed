@@ -1,0 +1,585 @@
+{
+  "date": "2026-02-13",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2026년 2월 12일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** 구글(Gemini 3)과 OpenAI(GPT-5.3)가 동시에 '추론형 모델'로 격돌하는 가운데, 윈도우 메모장의 치명적 보안 취약점과 GitHub의 오픈소스 생태계 개편안이 발표되었습니다.\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### 구글, 과학적 추론을 위한 'Gemini 3 Deep Think' 공개\n구글 딥마인드(Google DeepMind)가 복잡한 과학, 연구, 엔지니어링 문제 해결에 특화된 차세대 모델 **Gemini 3 Deep Think**를 발표했습니다. 기존 LLM이 단순한 패턴 매칭에 강했다면, 이번 모델은 '시스템 2'적 사고(느리고 깊은 추론)를 강화하여 신약 개발, 물리학 시뮬레이션, 복잡한 코드 아키텍처 설계 등에서 인간 전문가 수준의 추론 능력을 입증했습니다. 이는 OpenAI의 o1/o3 시리즈에 대응하는 구글의 강력한 승부수로 해석됩니다.\n\n\u003e **Key Point:** 단순 생성을 넘어 '깊은 사고(Deep Think)'를 통해 과학적 난제를 해결하는 AI의 도약 [^7][^40][^62]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. OpenAI, 코딩 특화 경량 모델 'GPT-5.3-Codex-Spark' 출시\n- **What:** OpenAI가 GPT-5.3 아키텍처를 기반으로 하되, 코딩과 기술적 문제 해결에 최적화된 경량화 모델 'Codex-Spark'를 선보였습니다.\n- **Why:** 거대 모델의 비용 부담을 줄이면서도, 개발자 도구(IDE) 내에서 실시간으로 작동할 수 있는 고성능 '에이전트'가 필요했기 때문입니다.\n- **Impact:** GitHub Copilot 등 기존 코딩 어시스턴트의 속도와 정확도가 획기적으로 개선될 것으로 보이며, 로컬 LLM 시장에도 영향을 미칠 전망입니다. [^5]\n\n### 2. GitHub의 선언: \"오픈소스의 영원한 9월을 끝내겠다\"\n- **What:** GitHub가 오픈소스 메인테이너들의 번아웃을 막기 위한 대규모 정책과 도구를 발표했습니다. 스팸 이슈 자동 필터링, 기여금 모델 개선 등이 포함됩니다.\n- **Why:** AI로 생성된 저품질 PR(Pull Request)과 이슈가 폭증하며 오픈소스 생태계가 '영원한 9월(Eternal September, 신규 유입으로 인한 커뮤니티 품질 저하)'을 겪고 있기 때문입니다.\n- **Impact:** 오픈소스 관리자의 피로도를 낮추고, AI가 생성한 코드의 품질을 검증하는 새로운 표준이 자리 잡을 것입니다. [^2]\n\n### 3. 가장 단순한 앱의 배신: 윈도우 메모장 원격 코드 실행 취약점\n- **What:** 윈도우 11의 기본 '메모장(Notepad)' 앱에서 공격자가 특수하게 조작된 파일을 열게 하는 것만으로도 원격 코드를 실행(RCE)할 수 있는 치명적 취약점(CVE-2026-20841)이 발견되었습니다.\n- **Why:** 메모장의 기능이 고도화(탭 기능, 서식 등)되면서 레거시 코드와 신규 기능 간의 충돌이 보안 홀을 만든 것으로 분석됩니다.\n- **Impact:** \"메모장은 안전하다\"는 통념이 깨졌으며, 기업 보안 담당자들은 즉각적인 패치 배포가 필요합니다. [^15][^33]\n\n### 4. GLM-5: '바이브 코딩'에서 '에이전트 엔지니어링'으로\n- **What:** 중국의 Zhipu AI가 GLM-5를 공개했습니다. 이 모델은 단순 코딩 보조를 넘어, 복잡한 시스템을 설계하고 장기적인 작업을 수행하는 '에이전트' 능력에 초점을 맞췄습니다.\n- **Why:** AI 코딩 트렌드가 단순한 코드 생성(Vibe Coding)에서 전체 프로젝트를 조율하는 엔지니어링(Agent Engineering)으로 이동하고 있습니다.\n- **Impact:** 글로벌 AI 모델 경쟁이 '언어 능력'에서 '업무 수행 능력(Agency)'으로 완전히 전환되었음을 시사합니다. [^16][^35]\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **VS Code 1.110 (Insiders)** | 2026년 2월 최신 빌드, AI 편집 기능 강화 및 성능 최적화 포함 [^1] |\n| **Paper** | **OpenEnv** | 실제 환경에서 도구를 사용하는 AI 에이전트의 성능을 평가하는 새로운 벤치마크 프레임워크 [^4] |\n| **Tool** | **AutoRAG-Research** | 최신 RAG(검색 증강 생성) 논문의 파이프라인을 구현하고 비교 실험할 수 있는 도구 [^23] |\n| **Tool** | **Fluorite** | Flutter와 완전히 통합되어 앱 내에서 콘솔급 게임 그래픽을 구현하는 엔진 [^25] |\n| **Tool** | **winappCli** | 윈도우 앱 개발 및 관리를 위한 통합 CLI 도구 [^36] |\n| **Tool** | **Chunk Translator** | 긴 텍스트를 문맥에 맞게 잘게 쪼개어 LLM 번역 품질을 높이는 도구 [^19] |\n| **Tool** | **EncroGram** | \"모든 것이 감시당한다\"는 가정하에 설계된 초고보안 메시징 앱 [^43] |\n| **Tool** | **Openrappter** | GitHub Copilot SDK를 활용한 로컬 우선(Local-First) AI 에이전트 [^59] |\n| **Dev** | **Cloudflare Agents** | AI 에이전트가 읽기 쉬운 형태(Markdown)로 웹 콘텐츠를 변환해주는 기능 [^66] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n\n#### 💻 개발 \u0026 인프라\n*   **Supabase 장애 발생**: 2월 12일 데이터베이스 서비스 장애 발생, 현재 복구 중. [^52]\n*   **Meteor 3.4 업데이트**: Deferrables 기능을 통해 서버 시작 속도 대폭 향상. [^58]\n*   **파이썬의 동적 타이핑 문제**: 대규모 프로젝트에서 파이썬의 타입 시스템이 야기하는 유지보수 문제에 대한 심층 분석. [^60]\n*   **웹 기반 병합 충돌 편집기**: Git 충돌 해결을 웹 브라우저에서 시각적으로 처리하는 도구 공개. [^24]\n*   **Atlassian Rovo**: VS Code 및 Confluence에 통합된 AI 개발 비서 Rovo 정식 출시. [^63][^64]\n\n#### 🤖 AI \u0026 모델\n*   **구글 위협 보고서**: 공격자들이 AI를 활용해 피싱, 코드 난독화 등 사이버 공격을 고도화하는 방법 공개. [^8]\n*   **Vertex AI 벤치마크**: Gemini 3 Flash 모델의 Context Caching 및 레이턴시 성능 테스트 결과. [^20]\n*   **WordPress x Claude**: 워드프레스 공식 플러그인으로 Claude 연동 지원, 자동 글쓰기 및 관리 가능. [^21]\n*   **AI의 예측 능력**: AI가 인간 전문가보다 예측(Forecasting) 영역에서 더 뛰어난 성과를 보이기 시작했다는 분석. [^49]\n*   **픽셀(Pixel) 설날 번역**: 설 연휴를 맞아 구글 픽셀 폰의 실시간 번역 기능 업데이트. [^6]\n\n#### 🛡️ 보안 \u0026 프라이버시\n*   **크롬 확장 프로그램 스파이**: 사용자 브라우징 데이터를 몰래 수집하는 확장 프로그램 287개 적발. [^32]\n*   **아마존 링(Ring) 논란**: '잃어버린 개' 찾기 기능을 가장한 대규모 감시 네트워크 우려 확산. [^30][^56]\n*   **AI 장난감 개인정보 유출**: 어린이용 AI 장난감 제조사가 아이들의 대화 데이터를 노출한 사건 발생. [^55]\n*   **연령 인증 우회**: Discord, Twitch 등 주요 플랫폼의 연령 인증을 우회하는 기법들이 공유됨. [^26]\n*   **Munge 취약점**: 슈퍼컴퓨터 클러스터 관리 도구 Munge에서 20년 된 버퍼 오버플로우 취약점 발견. [^42]\n\n#### 🌍 테크 \u0026 사회\n*   **Y Combinator의 정치 참여**: CEO 가리 탄이 캘리포니아 정치 영향력 확대를 위해 '다크머니' 단체 출범. [^10]\n*   **엘패소 드론 사태**: 미군이 국경 지역 드론 침입에 대응해 레이저 무기 사용을 허가하고 공항 일시 폐쇄. [^12][^14]\n*   **아일랜드 예술가 기본소득**: 예술가들에게 기본소득을 지급하는 실험적 제도 시행. [^17]\n*   **NVIDIA AI Day**: 상파울루에서 열린 AI 데이 행사 및 Blackwell 칩을 통한 추론 비용 10배 절감 발표. [^69][^70]\n*   **NetNewsWire 23주년**: 맥(Mac) 생태계의 전설적인 RSS 리더가 23주년을 맞이함. [^11]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘은 **'추론하는 AI'의 시대**가 본격적으로 열린 날입니다. 구글의 Gemini 3 Deep Think와 OpenAI의 GPT-5.3 기반 모델들은 이제 단순한 대화를 넘어 과학적 발견과 복잡한 엔지니어링을 수행하려 합니다. 반면, **윈도우 메모장** 같은 가장 기초적인 도구에서 발견된 취약점은 기술의 발전 속에서도 기본 보안의 중요성을 다시금 일깨워줍니다. 화려한 AI 에이전트와 20년 된 보안 구멍이 공존하는 오늘, 여러분의 시스템은 안녕하신가요?\n\n---\n\n[^1]: February 2026 Insiders (version 1.110) - https://code.visualstudio.com/updates/v1_110\n[^2]: Welcome to the Eternal September of open source - https://github.blog/open-source/maintainers/welcome-to-the-eternal-september-of-open-source-heres-what-we-plan-to-do-for-maintainers/\n[^3]: GitHub availability report: January 2026 - https://github.blog/news-insights/company-news/github-availability-report-january-2026/\n[^4]: OpenEnv in Practice: Evaluating Tool-Using Agents - https://huggingface.co/blog/openenv-turing\n[^5]: Introducing GPT-5.3-Codex-Spark - https://openai.com/index/introducing-gpt-5-3-codex-spark\n[^6]: 3 ways you can use Pixel for translation help - https://blog.google/products-and-platforms/devices/pixel/lunar-new-year-2026-translation-tools/\n[^7]: Gemini 3 Deep Think: Advancing science - https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/\n[^8]: Threat actors are misusing AI report - https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gtig-report-ai-cyber-attacks-feb-2026/\n[^9]: 3 new experiences bridging AI with India’s heritage - https://blog.google/company-news/outreach-and-initiatives/arts-culture/india-ai-creativity/\n[^10]: Y Combinator CEO 가리 탄 '다크머니' 단체 출범 - https://news.hada.io/topic?id=26639\n[^11]: NetNewsWire 23주년 - https://news.hada.io/topic?id=26638\n[^12]: 엘패소 상공 폐쇄, 대드론 레이저 사용 허가 - https://news.hada.io/topic?id=26637\n[^13]: 지구가 온실행성 궤도로 진입할 위험 - https://news.hada.io/topic?id=26634\n[^14]: 엘패소 공항, 드론 침입으로 일시 폐쇄 - https://news.hada.io/topic?id=26633\n[^15]: Windows 11 메모장의 원격코드실행 취약점 - https://news.hada.io/topic?id=26632\n[^16]: GLM-5: 바이브 코딩에서 에이전트 엔지니어링으로 - https://news.hada.io/topic?id=26631\n[^17]: 아일랜드, 예술가 대상 기본소득 제도 시행 - https://news.hada.io/topic?id=26630\n[^18]: 왜 뱀파이어는 영원히 사는가 - https://news.hada.io/topic?id=26629\n[^19]: Show GN: Chunk Translator - https://news.hada.io/topic?id=26628\n[^20]: Vertex AI Context Caching 벤치마크 - https://news.hada.io/topic?id=26627\n[^21]: WordPress가 Claude와 연결됐다 - https://news.hada.io/topic?id=26626\n[^22]: 거대한 무언가가 일어나고 있어요 - https://news.hada.io/topic?id=26625\n[^23]: Show GN: AutoRAG-Research - https://news.hada.io/topic?id=26624\n[^24]: Show GN: 웹 기반 병합 충돌 편집기 - https://news.hada.io/topic?id=26623\n[^25]: Flutter와 완전 통합된 게임 엔진 Fluorite - https://news.hada.io/topic?id=26622\n[^26]: Discord/Twitch/Snapchat 연령 인증 우회 - https://news.hada.io/topic?id=26621\n[^27]: ZERO-Click 쇼핑의 시대 - https://news.hada.io/topic?id=26620\n[^28]: 정보는 결코 무료가 아니었다 - https://news.hada.io/topic?id=26618\n[^29]: Show GN: AI가 읽을 수 있는 URL 변환 데이터 허브 - https://news.hada.io/topic?id=26617\n[^30]: 아마존 링의 ‘잃어버린 개’ 광고와 감시 우려 - https://news.hada.io/topic?id=26616\n[^31]: 나폴레옹 기법: 일을 미뤄서 생산성 높이기 - https://news.hada.io/topic?id=26615\n[^32]: 사용자 데이터 수집 Chrome 확장 프로그램 287개 발견 - https://news.hada.io/topic?id=26614\n[^33]: Windows 메모장 앱 원격 코드 실행 취약점 CVE-2026-20841 - https://news.hada.io/topic?id=26613\n[^34]: Claude Code가 단순화되고 있나? - https://news.hada.io/topic?id=26612\n[^35]: GLM-5 공개: 시스템 엔지니어링 목표 - https://news.hada.io/topic?id=26611\n[^36]: winappCli - Windows 앱 개발 통합 CLI - https://news.hada.io/topic?id=26610\n[^37]: Stable Channel Update for Desktop - http://chromereleases.googleblog.com/2026/02/stable-channel-update-for-desktop_12.html\n[^38]: Chrome Dev for Android Update - http://chromereleases.googleblog.com/2026/02/chrome-dev-for-android-update_01474034929.html\n[^39]: Long Term Support Channel Update for ChromeOS - http://chromereleases.googleblog.com/2026/02/long-term-support-channel-update-for_11.html\n[^40]: Gemini 3 Deep Think (DeepMind) - https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/\n[^42]: Pwning Supercomputers — Vulnerability in Munge - https://blog.lexfo.fr/munge-heap-buffer-overflow.html\n[^43]: Show HN: EncroGram - https://encrogram.com\n[^44]: tv 0.15 Release Notes - https://alexpasmantier.github.io/television/developers/release-notes/0.15/\n[^45]: More Lessons from 14 years at Google - https://addyosmani.com/blog/14-more-lessons/\n[^46]: Harness Engineering - https://openai.com/index/harness-engineering/\n[^47]: Our New Observability Stack - https://engineering.merciyanis.com/blog/3-weeks-to-full-observability-our-deployment-journey\n[^48]: AI and Jobs - What 3 Decades Taught Me - https://getcoai.com/article/ai-and-jobs-what-three-decades-of-building-tech-taught-me-about-whats-coming/\n[^49]: AI Is Getting Scary Good at Making Predictions - https://www.theatlantic.com/technology/2026/02/ai-prediction-human-forecasters/685955/\n[^50]: This is how A Child Dies of Measles - https://www.theatlantic.com/ideas/2026/02/child-dies-measles-vaccines/685969/\n[^51]: Agents as Teammates - https://twitter.com/obie/status/2022061142294851837\n[^52]: Supabase Incident (12 Feb 2026) - https://status.supabase.com/incidents/pqrf96m6fzxk\n[^53]: Past Automation and Future A.I. [pdf] - https://web.stanford.edu/~chadj/JonesTonetti_Automation.pdf\n[^54]: General Motors Replies to Bill Gates - https://www.wussu.com/humour/gm.htm\n[^55]: AI toy maker exposed responses to children - https://www.nbcnews.com/tech/security/ai-toy-maker-exposed-thousands-responses-kids-senators-miko-rcna258326\n[^56]: Ring won't store your camera data without a subscription - https://www.reuters.com/world/guthrie-doorbell-video-delayed-by-difficult-data-recovery-privacy-advocates-2026-02-12/\n[^57]: Windows 11 now has a proper Task Manager - https://www.neowin.net/news/windows-11-now-has-a-proper-task-manager-with-performance-history-and-more/\n[^58]: Faster Server Startup in Meteor 3.4 - https://blog.galaxycloud.app/faster-server-startup-in-meteor-3-4-with-deferrables/\n[^59]: Openrappter- Local-First AI Agent - https://github.com/kody-w/openrappter\n[^60]: Python's Dynamic Typing Problem - https://www.whileforloop.com/en/blog/2026/02/10/python-dynamic-typing-problem/\n[^61]: Stay in Your Human Loop - https://bjar.substack.com/p/stay-in-your-human-loop\n[^62]: Gemini 3 Deep Think (DeepMind Blog) - https://deepmind.google/blog/gemini-3-deep-think-advancing-science-research-and-engineering/\n[^63]: Welcome to the future of Confluence with Atlassian Rovo - https://www.atlassian.com/blog/confluence/create-and-edit-with-rovo\n[^64]: Rovo Dev is now generally available in VS Code - https://www.atlassian.com/blog/announcements/rovo-dev-now-generally-available-in-vs-code\n[^66]: Introducing Markdown for Agents - https://blog.cloudflare.com/markdown-for-agents/\n[^68]: Join us for Interrupt: The Agent Conference - https://blog.langchain.com/join-us-for-interrupt-the-agent-conference/\n[^69]: Inside the Inaugural NVIDIA AI Day São Paulo - https://blogs.nvidia.com/blog/ai-day-sao-paulo/\n[^70]: Leading Inference Providers Cut AI Costs by up to 10x - https://blogs.nvidia.com/blog/inference-open-source-models-blackwell-reduce-cost-per-token/\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **February 2026 Insiders (version 1.110)**\n   - 출처: Visual Studio Code - Code Editing. Redefined.\n   - 링크: https://code.visualstudio.com/updates/v1_110\n\n2. **Welcome to the Eternal September of open source. Here’s what we plan to do for maintainers.**\n   - 출처: GitHub Blog\n   - 링크: https://github.blog/open-source/maintainers/welcome-to-the-eternal-september-of-open-source-heres-what-we-plan-to-do-for-maintainers/\n\n3. **GitHub availability report: January 2026**\n   - 출처: GitHub Blog\n   - 링크: https://github.blog/news-insights/company-news/github-availability-report-january-2026/\n\n4. **OpenEnv in Practice: Evaluating Tool-Using Agents in Real-World Environments**\n   - 출처: Hugging Face - Blog\n   - 링크: https://huggingface.co/blog/openenv-turing\n\n5. **Introducing GPT-5.3-Codex-Spark**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/introducing-gpt-5-3-codex-spark\n\n6. **3 ways you can use Pixel for translation help this Lunar Year.**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/products-and-platforms/devices/pixel/lunar-new-year-2026-translation-tools/\n\n7. **Gemini 3 Deep Think: Advancing science, research and engineering**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/\n\n8. **Our new report details the latest ways threat actors are misusing AI.**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gtig-report-ai-cyber-attacks-feb-2026/\n\n9. **3 new experiences bridging AI with India’s timeless heritage**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/company-news/outreach-and-initiatives/arts-culture/india-ai-creativity/\n\n10. **캘리포니아 정치에 영향력을 행사하기 위해 Y Combinator CEO 가리 탄이 ‘다크머니’ 단체를 출범**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26639\n\n11. **NetNewsWire 23주년**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26638\n\n12. **엘패소 상공 폐쇄, 국방부가 국경보호국에 대(對)드론 레이저 사용 허가**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26637\n\n13. **지구가 온실행성 궤도로 진입할 위험**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26634\n\n14. **엘패소 공항, **드론 침입**으로 일시 폐쇄**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26633\n\n15. **Windows 11 메모장의 원격코드실행 취약점**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26632\n\n16. **GLM-5: 바이브 코딩에서 에이전트 엔지니어링으로**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26631\n\n17. **아일랜드, 예술가 대상 기본소득 제도 시행**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26630\n\n18. **왜 뱀파이어는 영원히 사는가**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26629\n\n19. **Show GN: Chunk Translator: 긴 글도 잘게 쪼개 LLM에게 번역맡기기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26628\n\n20. **Vertex AI Context Caching + Priority PayGo 레이턴시 벤치마크 (400회, Gemini 3 Flash)**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26627\n\n21. **WordPress가 Claude와 연결됐다, 공식 연동으로 가능해진 것들**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26626\n\n22. **거대한 무언가가 일어나고 있어요**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26625\n\n23. **Show GN: AutoRAG-Research - 최신 RAG 논문 파이프라인 구현체 모음 및 비교 실험 도구**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26624\n\n24. **Show GN: 웹 기반 병합 충돌 편집기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26623\n\n25. **Flutter와 완전 통합된 콘솔급 게임 엔진 Fluorite**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26622\n\n26. **Discord/Twitch/Snapchat 연령 인증 우회**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26621\n\n27. **ZERO-Click 쇼핑의 시대 준비되셨나요?**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26620\n\n28. **정보는 결코 무료가 아니었다. 앞으로도 그럴 것이다.**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26618\n\n29. **Show GN: 무엇이든 즉시 AI가 읽을 수 있는 URL로 변환해주는 데이터 허브**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26617\n\n30. **아마존 링의 ‘잃어버린 개’ 광고, 대규모 감시 우려 속 반발 확산**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26616\n\n31. **나폴레옹 기법: 일을 미뤄서 생산성을 높이는 방법**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26615\n\n32. **사용자 브라우징 데이터를 수집하는 Chrome 확장 프로그램 287개 발견**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26614\n\n33. **Windows 메모장 앱 원격 코드 실행 취약점 CVE-2026-20841**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26613\n\n34. **Claude Code가 단순화되고 있나?**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26612\n\n35. **GLM-5 공개 : 복잡한 시스템 엔지니어링과 장기 에이전트 작업을 목표로 하는 모델**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26611\n\n36. **winappCli - Windows 앱 개발을 위한 통합 CLI **\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26610\n\n37. **Stable Channel Update for Desktop**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2026/02/stable-channel-update-for-desktop_12.html\n\n38. **Chrome Dev for Android Update**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2026/02/chrome-dev-for-android-update_01474034929.html\n\n39. **Long Term Support Channel Update for ChromeOS**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2026/02/long-term-support-channel-update-for_11.html\n\n40. **Gemini 3 Deep Think: Advancing science, research and engineering**\n   - 출처: Google DeepMind\n   - 링크: https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/\n\n41. **Gemini 3 Deep Think: Advancing science, research and engineering**\n   - 출처: Gemini\n   - 링크: https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/\n\n42. **Pwning Supercomputers — A 20 year old vulnerability in Munge**\n   - 출처: Hacker News\n   - 링크: https://blog.lexfo.fr/munge-heap-buffer-overflow.html\n\n43. **Show HN: EncroGram – Messaging When You Assume Everything Will Be Looked At**\n   - 출처: Hacker News\n   - 링크: https://encrogram.com\n\n44. **tv 0.15**\n   - 출처: Hacker News\n   - 링크: https://alexpasmantier.github.io/television/developers/release-notes/0.15/\n\n45. **More Lessons from 14 years at Google**\n   - 출처: Hacker News\n   - 링크: https://addyosmani.com/blog/14-more-lessons/\n\n46. **Harness Engineering**\n   - 출처: Hacker News\n   - 링크: https://openai.com/index/harness-engineering/\n\n47. **Our New Observability Stack**\n   - 출처: Hacker News\n   - 링크: https://engineering.merciyanis.com/blog/3-weeks-to-full-observability-our-deployment-journey\n\n48. **AI and Jobs - What 3 Decades of Building Tech Taught Me About What's Coming**\n   - 출처: Hacker News\n   - 링크: https://getcoai.com/article/ai-and-jobs-what-three-decades-of-building-tech-taught-me-about-whats-coming/\n\n49. **AI Is Getting Scary Good at Making Predictions**\n   - 출처: Hacker News\n   - 링크: https://www.theatlantic.com/technology/2026/02/ai-prediction-human-forecasters/685955/\n\n50. **This is how A Child Dies of Measles**\n   - 출처: Hacker News\n   - 링크: https://www.theatlantic.com/ideas/2026/02/child-dies-measles-vaccines/685969/\n\n51. **Agents as Teammates**\n   - 출처: Hacker News\n   - 링크: https://twitter.com/obie/status/2022061142294851837\n\n52. **Supabase Incident (12 Feb 2026)**\n   - 출처: Hacker News\n   - 링크: https://status.supabase.com/incidents/pqrf96m6fzxk\n\n53. **Past Automation and Future A.I.: How Weak Links Tame the Growth Explosion [pdf]**\n   - 출처: Hacker News\n   - 링크: https://web.stanford.edu/~chadj/JonesTonetti_Automation.pdf\n\n54. **General Motors Replies to Bill Gates**\n   - 출처: Hacker News\n   - 링크: https://www.wussu.com/humour/gm.htm\n\n55. **AI toy maker exposed responses to children**\n   - 출처: Hacker News\n   - 링크: https://www.nbcnews.com/tech/security/ai-toy-maker-exposed-thousands-responses-kids-senators-miko-rcna258326\n\n56. **Ring won't store your camera data without a subscription unless it is important**\n   - 출처: Hacker News\n   - 링크: https://www.reuters.com/world/guthrie-doorbell-video-delayed-by-difficult-data-recovery-privacy-advocates-2026-02-12/\n\n57. **Windows 11 now has a proper Task Manager with performance history and more**\n   - 출처: Hacker News\n   - 링크: https://www.neowin.net/news/windows-11-now-has-a-proper-task-manager-with-performance-history-and-more/\n\n58. **Faster Server Startup in Meteor 3.4 with Deferrables**\n   - 출처: Hacker News\n   - 링크: https://blog.galaxycloud.app/faster-server-startup-in-meteor-3-4-with-deferrables/\n\n59. **Openrappter- Local-First AI Agent Powered by GitHub Copilot SDK**\n   - 출처: Hacker News\n   - 링크: https://github.com/kody-w/openrappter\n\n60. **Python's Dynamic Typing Problem**\n   - 출처: Hacker News\n   - 링크: https://www.whileforloop.com/en/blog/2026/02/10/python-dynamic-typing-problem/\n\n61. **Stay in Your Human Loop**\n   - 출처: Hacker News\n   - 링크: https://bjar.substack.com/p/stay-in-your-human-loop\n\n62. **Gemini 3 Deep Think: Advancing science, research and engineering**\n   - 출처: Google DeepMind Blog\n   - 링크: https://deepmind.google/blog/gemini-3-deep-think-advancing-science-research-and-engineering/\n\n63. **Welcome to the future of creating and editing in Confluence with Atlassian Rovo**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/confluence/create-and-edit-with-rovo\n\n64. **Rovo Dev is now generally available in VS Code**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/announcements/rovo-dev-now-generally-available-in-vs-code\n\n65. **Gemini 3 Deep Think: Advancing science, research and engineering**\n   - 출처: AI\n   - 링크: https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/\n\n66. **Introducing Markdown for Agents**\n   - 출처: Cloudflare Blog\n   - 링크: https://blog.cloudflare.com/markdown-for-agents/\n\n67. **Gemini 3 Deep Think: Advancing science, research and engineering**\n   - 출처: DeepMind\n   - 링크: https://deepmind.google/blog/gemini-3-deep-think-advancing-science-research-and-engineering/\n\n68. **Join us for Interrupt: The Agent Conference**\n   - 출처: LangChain Blog\n   - 링크: https://blog.langchain.com/join-us-for-interrupt-the-agent-conference/\n\n69. **Code, Compute and Connection: Inside the Inaugural NVIDIA AI Day São Paulo**\n   - 출처: NVIDIA Blog\n   - 링크: https://blogs.nvidia.com/blog/ai-day-sao-paulo/\n\n70. **Leading Inference Providers Cut AI Costs by up to 10x With Open Source Models on NVIDIA Blackwell**\n   - 출처: NVIDIA Blog\n   - 링크: https://blogs.nvidia.com/blog/inference-open-source-models-blackwell-reduce-cost-per-token/\n\n71. **NVIDIA DGX Spark Powers Big Projects in Higher Education**\n   - 출처: NVIDIA Blog\n   - 링크: https://blogs.nvidia.com/blog/dgx-spark-higher-education/\n\n72. **GeForce NOW Turns Screens Into a Gaming Machine**\n   - 출처: NVIDIA Blog\n   - 링크: https://blogs.nvidia.com/blog/geforce-now-thursday-amazon-fire-tv-app/\n\n\n",
+  "articles": [
+    {
+      "title": "February 2026 Insiders (version 1.110)",
+      "link": "https://code.visualstudio.com/updates/v1_110",
+      "source": "Visual Studio Code - Code Editing. Redefined.",
+      "category": "tech",
+      "publishedAt": "2026-03-04T17:00:00Z",
+      "description": "\n      \u003cp\u003eLearn what is new in the Visual Studio Code February 2026 Release (1.110).\u003c/p\u003e\n      \u003cp\u003e\u003ca href=\"https://code.visualstudio.com/updates/v1_110\"\u003eRead the full article\u003c/a\u003e\u003c/p\u003e\n    "
+    },
+    {
+      "title": "Welcome to the Eternal September of open source. Here’s what we plan to do for maintainers.",
+      "link": "https://github.blog/open-source/maintainers/welcome-to-the-eternal-september-of-open-source-heres-what-we-plan-to-do-for-maintainers/",
+      "source": "GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-12T20:14:11Z",
+      "description": "\u003cp\u003eOpen source is hitting an “Eternal September.” As contribution friction drops, maintainers are adapting with new trust signals, triage approaches, and community-led solutions.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/open-source/maintainers/welcome-to-the-eternal-september-of-open-source-heres-what-we-plan-to-do-for-maintainers/\"\u003eWelcome to the Eternal September of open source. Here\u0026#8217;s what we plan to do for maintainers.\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "GitHub availability report: January 2026",
+      "link": "https://github.blog/news-insights/company-news/github-availability-report-january-2026/",
+      "source": "GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-11T23:12:34Z",
+      "description": "\u003cp\u003eIn January, we experienced two incidents that resulted in degraded performance across GitHub services.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/news-insights/company-news/github-availability-report-january-2026/\"\u003eGitHub availability report: January 2026\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "OpenEnv in Practice: Evaluating Tool-Using Agents in Real-World Environments",
+      "link": "https://huggingface.co/blog/openenv-turing",
+      "source": "Hugging Face - Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-12T00:00:00Z"
+    },
+    {
+      "title": "Introducing GPT-5.3-Codex-Spark",
+      "link": "https://openai.com/index/introducing-gpt-5-3-codex-spark",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2026-02-12T10:00:00Z",
+      "description": "Introducing GPT-5.3-Codex-Spark—our first real-time coding model. 15x faster generation, 128k context, now in research preview for ChatGPT Pro users."
+    },
+    {
+      "title": "3 ways you can use Pixel for translation help this Lunar Year.",
+      "link": "https://blog.google/products-and-platforms/devices/pixel/lunar-new-year-2026-translation-tools/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-12T17:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Translate_social_SOzf361.max-600x600.format-webp.webp\"\u003eLunar New Year is approaching, and 2026 is the Year of the Horse. Whether you’re traveling for the holiday or connecting with loved ones overseas, language barriers shou…"
+    },
+    {
+      "title": "Gemini 3 Deep Think: Advancing science, research and engineering",
+      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-12T16:13:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-3_deep-think_keyword_hea.max-600x600.format-webp.webp\"\u003eWe’re releasing a major upgrade to Gemini 3 Deep Think, our specialized reasoning mode."
+    },
+    {
+      "title": "Our new report details the latest ways threat actors are misusing AI.",
+      "link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gtig-report-ai-cyber-attacks-feb-2026/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-12T16:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/3_SocialShare_gradient.max-600x600.format-webp.webp\"\u003eLearn more about how threat actors are misusing AI, and what Google is doing to stop it."
+    },
+    {
+      "title": "3 new experiences bridging AI with India’s timeless heritage",
+      "link": "https://blog.google/company-news/outreach-and-initiatives/arts-culture/india-ai-creativity/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-12T10:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/MovingScripts_UI_Hindi_01.max-600x600.format-webp.webp\"\u003eAhead of the India AI Summit, Google Arts \u0026 Culture is releasing new experiences that delve into India’s cultural heritage."
+    },
+    {
+      "title": "캘리포니아 정치에 영향력을 행사하기 위해 Y Combinator CEO 가리 탄이 ‘다크머니’ 단체를 출범",
+      "link": "https://news.hada.io/topic?id=26639",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-13T05:33:15+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e가리 탄\u003c/strong\u003e은 샌프란시스코의 기술·정치 교차점에서 활동해온 인물로, 캘리포니아 전역을 대상으로 한 \u003cstrong\u003e정치 영향력 조직 ‘Garry’s List’\u003c/strong\u003e 를 설립\u003c/li\u003e\n\u003cli\u003e이 단체는 \u003cstrong\u003e501(c)(4) 비영리조직\u003c/strong\u003e으로 등록되어 있으며, 후보자·투표안 지지 활동과 함께 \u003cstrong\u003e...\u003c/p\u003e"
+    },
+    {
+      "title": "NetNewsWire 23주년",
+      "link": "https://news.hada.io/topic?id=26638",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-13T04:34:52+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e23년 전 처음 출시된 \u003cstrong\u003eMac용 RSS 리더 NetNewsWire\u003c/strong\u003e가 현재 7.0 버전을 배포하고 7.0.1 개발 중임\u003c/li\u003e\n\u003cli\u003e최근 대규모 릴리스 이후 \u003cstrong\u003e회귀 버그 수정과 세부 조정 작업\u003c/strong\u003e을 진행 중이며, GitHub에 관련 마일스톤과 할 일 목록을 공개함\u003c/li\u003e\n\u003cli\u003e여전히 \u003cstrong\u003e버그 수정, 기술...\u003c/p\u003e"
+    },
+    {
+      "title": "엘패소 상공 폐쇄, 국방부가 국경보호국에 대(對)드론 레이저 사용 허가",
+      "link": "https://news.hada.io/topic?id=26637",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-13T03:38:25+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e미 국방부가 \u003cstrong\u003e세관국경보호국(CBP)\u003c/strong\u003e 에 대(對)드론 레이저 사용을 허가한 직후, \u003cstrong\u003e연방항공청(FAA)\u003c/strong\u003e 이 텍사스 엘패소 상공을 일시적으로 폐쇄함\u003c/li\u003e\n\u003cli\u003eFAA는 “특별 보안 사유”로 모든 항공편을 중단했으며, 초기에는 \u003cstrong\u003e10일간 폐쇄\u003c/strong\u003e로 발표했으나 실제로는 ...\u003c/p\u003e"
+    },
+    {
+      "title": "지구가 온실행성 궤도로 진입할 위험",
+      "link": "https://news.hada.io/topic?id=26634",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-13T02:33:33+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e지구 기후 시스템이 임계점을 넘어설 가능성\u003c/strong\u003e을 다루는 연구로, 인류 활동이 장기적 온난화를 가속할 위험을 분석\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e‘온실행성(hothouse Earth)’\u003c/strong\u003e 은 지구가 스스로 온난화를 지속시키는 상태로, 인간의 개입 없이도 기온 상승이 이어지는 상황을 의미\u003c/li\u003e\n\u003cli\u003e논...\u003c/p\u003e"
+    },
+    {
+      "title": "엘패소 공항, **드론 침입**으로 일시 폐쇄",
+      "link": "https://news.hada.io/topic?id=26633",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-13T01:33:37+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e미국 \u003cstrong\u003e엘패소 국제공항\u003c/strong\u003e이 드론 침입으로 인해 일시적으로 운영이 중단됨\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e항공 당국과 보안 기관\u003c/strong\u003e이 공역 내 무단 드론 비행을 확인하고 즉시 비행 제한 조치를 시행\u003c/li\u003e\n\u003cli\u003e공항 내 \u003cstrong\u003e항공편 이착륙이 지연\u003c/strong\u003e되었으며, FAA가 관련 조사를 진행 중임...\u003c/p\u003e"
+    },
+    {
+      "title": "Windows 11 메모장의 원격코드실행 취약점",
+      "link": "https://news.hada.io/topic?id=26632",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-13T00:51:01+09:00",
+      "description": "\u003cp\u003e공격자는 사용자가 메모장에서 열린 마크다운 파일 내의 악성 링크를 클릭하도록 유도하여, 해당 애플리케이션이 검증되지 않은 프로토콜을 실행하고 원격 파일을 로드 및 실행하도록 만들 수 있습니다.\u003c/p\u003e\n"
+    },
+    {
+      "title": "GLM-5: 바이브 코딩에서 에이전트 엔지니어링으로",
+      "link": "https://news.hada.io/topic?id=26631",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-13T00:32:26+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eGLM-5\u003c/strong\u003e는 복잡한 시스템 엔지니어링과 장기적 에이전트 작업을 목표로 한 대규모 언어 모델로, \u003cstrong\u003e지능 효율성 향상\u003c/strong\u003e을 위한 확장 중심 설계임\u003c/li\u003e\n\u003cli\u003e전작 GLM-4.5 대비 \u003cstrong\u003e파라미터 수를 355B→744B\u003c/strong\u003e, \u003cstrong\u003e활성 파라미터를 32B→40B\u003c/strong\u003e, \u003cstrong\u003e사전...\u003c/p\u003e"
+    },
+    {
+      "title": "아일랜드, 예술가 대상 기본소득 제도 시행",
+      "link": "https://news.hada.io/topic?id=26630",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-12T23:33:27+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e아일랜드 정부가 \u003cstrong\u003e예술가와 창작자에게 기본소득을 지급하는 제도\u003c/strong\u003e를 도입\u003c/li\u003e\n\u003cli\u003e이 제도는 예술 활동의 \u003cstrong\u003e경제적 불안정성을 완화\u003c/strong\u003e하고 지속적인 창작을 지원하기 위한 목적\u003c/li\u003e\n\u003cli\u003e참여 예술가는 일정 기간 동안 \u003cstrong\u003e정기적 금전 지원\u003c/strong\u003e을 받게 됨\u003c/li\u003e\n\u003cli\u003e정...\u003c/p\u003e"
+    },
+    {
+      "title": "왜 뱀파이어는 영원히 사는가",
+      "link": "https://news.hada.io/topic?id=26629",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-12T22:33:22+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e현대 장수 연구의 혈액 교환 집착\u003c/strong\u003e을 뱀파이어 신화와 연결하며, 과학적 실험과 문화적 사례를 병치함\u003c/li\u003e\n\u003cli\u003e1864년 \u003cstrong\u003e파라비오시스(parabiosis)\u003c/strong\u003e 실험부터 2000년대 스탠퍼드 연구까지, 젊은 피가 노화를 되돌린다는 결과가 반복적으로 보고됨\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003ePeter Thi...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: Chunk Translator: 긴 글도 잘게 쪼개 LLM에게 번역맡기기",
+      "link": "https://news.hada.io/topic?id=26628",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-12T19:36:40+09:00",
+      "description": "\u003cp\u003e길게 작성한 블로그 글을 문장 누락없이 번역하고 싶어 글을 문단별로 나눠 번역한 후, 다시 합칠 수 있는 작은 html 도구를 만들어봤습니다.\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003echatgpt같은 llm에게 통째로 번역을 요청하다보면 한 문장씩 빼먹거나 마음대로 요약해버리거나 하는 등 한번에 잘 못하더라구요.\u003c/li\u003e\n\u003cli\u003e프롬프트를 더 깎아"
+    },
+    {
+      "title": "Vertex AI Context Caching + Priority PayGo 레이턴시 벤치마크 (400회, Gemini 3 Flash)",
+      "link": "https://news.hada.io/topic?id=26627",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-12T17:23:25+09:00",
+      "description": "\u003cp\u003eAI 챗봇 서비스에서 사용하는 ~7,500토큰 시스템 프롬프트(입력)와 ~100토큰 응답(출력) 기준으로, Vertex AI의 Context Caching과 이번에 새로 나온 신규 Priority PayGo의 레이턴시 개선 효과를 벤치마크\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e4가지 시나리오 (Standard/Priority × 캐싱/비캐싱), 각 100회, 총 400회 요청\u003c/li\u003e\n\u003cli\u003e모델: "
+    },
+    {
+      "title": "WordPress가 Claude와 연결됐다, 공식 연동으로 가능해진 것들",
+      "link": "https://news.hada.io/topic?id=26626",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-12T16:24:21+09:00",
+      "description": "\u003cp\u003e• WordPress.com이 Anthropic의 Claude와 \u003cstrong\u003e공식 커넥터\u003c/strong\u003e로 연동됨\u003cbr /\u003e\n• Claude가 WordPress.com 사이트의 \u003cstrong\u003e실제 데이터\u003c/strong\u003e를 자연어로 직접 조회·분석 가능\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e연동 특징\u003c/strong\u003e\u003cbr /\u003e\n• Anthropic 공식 커넥터 디렉토리 최초 WordPress 호스팅 서비스 등재\u003cbr /\u003e\n•"
+    },
+    {
+      "title": "거대한 무언가가 일어나고 있어요",
+      "link": "https://news.hada.io/topic?id=26625",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-12T15:30:13+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e2025년 이후 AI 모델의 발전 속도가 급격히 가속되며, \u003cstrong\u003e기술 업계 내부에서는 이미 직무 구조 변화가 현실화된 상황\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003eGPT-5.3 Codex와 Opus 4.6 공개 이후, 개발 업무가 설명만으로 완성되는 수준에 도달하며 \u003cstrong\u003e판단력과 감각까지 보이는 모델 등장\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003eAI가 스...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: AutoRAG-Research - 최신 RAG 논문 파이프라인 구현체 모음 및 비교 실험 도구",
+      "link": "https://news.hada.io/topic?id=26624",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-12T15:06:29+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eAI Agent 시대에도 RAG는 여전히 유효하며, 외부 지식과 문서가 필요한 경우 필수적으로 시스템에 포함되어야 하는 핵심 구성 요소임\u003c/li\u003e\n\u003cli\u003eAgent와 RAG를 결합한 Agentic RAG, 지식그래프를 사용하는 Graph RAG, 이미지 기반의 임베딩 모델을 활용하는 Multi-modal RAG 등의 분야 내에서 수없이 많은 최신 ...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: 웹 기반 병합 충돌 편집기",
+      "link": "https://news.hada.io/topic?id=26623",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-12T13:41:09+09:00",
+      "description": "Show GN: 웹 기반 병합 충돌 편집기"
+    },
+    {
+      "title": "Flutter와 완전 통합된 콘솔급 게임 엔진 Fluorite",
+      "link": "https://news.hada.io/topic?id=26622",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-12T13:37:06+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eFluorite\u003c/strong\u003e는 Flutter와 완전 통합된 최초의 \u003cstrong\u003e콘솔급 게임 엔진\u003c/strong\u003e으로, Dart로 직접 게임 코드를 작성할 수 있음\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eECS(Entity-Component-System)\u003c/strong\u003e 기반의 데이터 지향 구조를 사용하며, 핵심은 C++로 구현되어 \u003cstrong\u003e임베디드 하드웨어에서도 높은 성...\u003c/p\u003e"
+    },
+    {
+      "title": "Discord/Twitch/Snapchat 연령 인증 우회",
+      "link": "https://news.hada.io/topic?id=26621",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-12T13:34:06+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e여러 플랫폼의 \u003cstrong\u003e연령 인증 절차를 자동으로 성인으로 통과시키는 스크립트\u003c/strong\u003e가 공개됨\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eDiscord 콘솔에 코드를 붙여넣어 실행\u003c/strong\u003e하면, 자동으로 \u003ccode\u003e/age-verification/verify\u003c/code\u003e API 요청을 보내고 인증 완료 페이지로 이동함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eTwitch, Kick, Sn...\u003c/p\u003e"
+    },
+    {
+      "title": "ZERO-Click 쇼핑의 시대 준비되셨나요?",
+      "link": "https://news.hada.io/topic?id=26620",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-12T12:42:45+09:00",
+      "description": "\u003cp\u003e뉴스레터 구독 및 본문 영상 보기, https://maily.so/kkumaeunsonyeon/posts/2nzn78pkrp5\u003c/p\u003e\n\u003cp\u003e글로벌 빅테크 기업들은 현재 검색과 추천 중심의 이커머스에서 벗어나 AI 에이전트가 사용자의 의도를 이해하고 쇼핑의 전 과정을 자율적으로 수행하는 '에이전틱 커머스(Agentic Commerce)' 시대로의 전환을 주도하고"
+    },
+    {
+      "title": "정보는 결코 무료가 아니었다. 앞으로도 그럴 것이다.",
+      "link": "https://news.hada.io/topic?id=26618",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-12T12:21:50+09:00",
+      "description": "\u003cp\u003e(원제: Information Was Never Free. And It Never Will Be. / 작성자: Nate Ritter / 2026년 2월 10일 게시)\u003c/p\u003e\n\u003cp\u003e이 글은 디지털 시대에 “정보는 무료”라는 착각을 강하게 비판하며, 정보의 진짜 비용이 사라진 게 아니라 \u003cstrong\u003e형태만 바뀌었다\u003c/strong\u003e는 점을 핵심 주장으로 삼습니다.\u003c/p\u003e\n\u003cp\u003e한 문장 요약"
+    },
+    {
+      "title": "Show GN: 무엇이든 즉시 AI가 읽을 수 있는 URL로 변환해주는 데이터 허브",
+      "link": "https://news.hada.io/topic?id=26617",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-12T12:11:30+09:00",
+      "description": "\u003cp\u003e안녕하세요! LLM이나 AI 에이전트를 활용한 개발을 하다 보면, 데이터나 로그를 컨텍스트로 집어넣기 위해 매번 복사-붙여넣기를 하거나 HTML 스크래핑에 고생하는 경우가 많았습니다.\u003c/p\u003e\n\u003cp\u003e'AI에게 데이터를 더 쉽고 깨끗하게 전달할 방법은 없을까?'라는 고민에서 Pepput을 만들게 되었습니다.\u003c/p\u003e\n\u003cp\u003ePepput의 핵"
+    },
+    {
+      "title": "아마존 링의 ‘잃어버린 개’ 광고, 대규모 감시 우려 속 반발 확산",
+      "link": "https://news.hada.io/topic?id=26616",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-12T11:33:05+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eAI 기반 Search Party 기능\u003c/strong\u003e이 동네 카메라 영상을 분석해 잃어버린 개를 찾는 기술로 소개되었으나, \u003cstrong\u003e인간 추적 가능성\u003c/strong\u003e에 대한 우려가 제기됨\u003c/li\u003e\n\u003cli\u003e슈퍼볼 중계 중 방영된 30초 광고가 \u003cstrong\u003e이웃 감시를 미화\u003c/strong\u003e한다는 비판을 받으며, \u003cstrong\u003e대중 감시 사회...\u003c/p\u003e"
+    },
+    {
+      "title": "나폴레옹 기법: 일을 미뤄서 생산성을 높이는 방법",
+      "link": "https://news.hada.io/topic?id=26615",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-12T10:08:33+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e즉각 대응하지 않아도 자연히 해결될 가능성이 높은 업무를 \u003cstrong\u003e의도적으로 지연\u003c/strong\u003e시켜 시간과 에너지를 절약하는 생산성 기법\u003c/li\u003e\n\u003cli\u003e나폴레옹이 이탈리아 주둔 시절 서신을 \u003cstrong\u003e3주간 미개봉 상태\u003c/strong\u003e로 두었더니 4/5가 답장 불필요해졌다는 일화에서 유래\u003c/li\u003e\n\u003cli\u003e이메일, 기술 이슈...\u003c/p\u003e"
+    },
+    {
+      "title": "사용자 브라우징 데이터를 수집하는 Chrome 확장 프로그램 287개 발견",
+      "link": "https://news.hada.io/topic?id=26614",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-12T09:57:11+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e자동화된 \u003cstrong\u003eMITM(중간자 공격) 기반 스캐닝 파이프라인\u003c/strong\u003e을 통해 287개의 Chrome 확장 프로그램이 사용자의 브라우징 기록을 외부로 전송하는 행위를 탐지\u003c/li\u003e\n\u003cli\u003e이들 확장 프로그램은 총 \u003cstrong\u003e약 3,740만 회 설치\u003c/strong\u003e되어 있으며, 이는 전 세계 Chrome 사용자 약 1%에 해당\u003c/li\u003e\n\u003cli\u003e...\u003c/p\u003e"
+    },
+    {
+      "title": "Windows 메모장 앱 원격 코드 실행 취약점 CVE-2026-20841",
+      "link": "https://news.hada.io/topic?id=26613",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-12T09:54:11+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eWindows 메모장 앱에서 \u003cstrong\u003e명령 주입(command injection)\u003c/strong\u003e 취약점이 발견되어, 원격에서 코드 실행이 가능한 것으로 보고됨\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e인증되지 않은 공격자\u003c/strong\u003e가 네트워크를 통해 악성 명령을 실행할 수 있는 구조로, 사용자 개입이 필요\u003c/li\u003e\n\u003cli\u003e취약점은 \u003cstrong\u003eWindows Notep...\u003c/p\u003e"
+    },
+    {
+      "title": "Claude Code가 단순화되고 있나?",
+      "link": "https://news.hada.io/topic?id=26612",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-12T09:51:04+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e최신 버전 \u003cstrong\u003e2.1.20\u003c/strong\u003e에서 파일 읽기와 검색 패턴 표시가 모두 \u003cstrong\u003e단일 요약 문장\u003c/strong\u003e으로 대체되어, 사용자가 어떤 파일이나 패턴이 처리되는지 확인할 수 없게 됨\u003c/li\u003e\n\u003cli\u003e사용자들은 GitHub 이슈를 통해 \u003cstrong\u003e파일 경로와 검색 패턴 표시 복원\u003c/strong\u003e 또는 \u003cstrong\u003e토글 옵션 ...\u003c/p\u003e"
+    },
+    {
+      "title": "GLM-5 공개 : 복잡한 시스템 엔지니어링과 장기 에이전트 작업을 목표로 하는 모델",
+      "link": "https://news.hada.io/topic?id=26611",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-12T09:46:11+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e인공지능 \u003cstrong\u003e효율성과 장기적 작업 수행 능력\u003c/strong\u003e을 강화한 대규모 언어모델\u003c/li\u003e\n\u003cli\u003e전작 대비 \u003cstrong\u003e매개변수 7440억 개(활성 400억)\u003c/strong\u003e 로 확장되고, \u003cstrong\u003e사전학습 데이터 28.5조 토큰\u003c/strong\u003e으로 증가\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eDeepSeek Sparse Attention(DSA)\u003c/strong\u003e 통합으로 긴 문...\u003c/p\u003e"
+    },
+    {
+      "title": "winappCli - Windows 앱 개발을 위한 통합 CLI ",
+      "link": "https://news.hada.io/topic?id=26610",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-12T09:31:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003emicrosoft가 \u003cstrong\u003eWindows SDK 관리와 앱 패키징 자동화\u003c/strong\u003e를 위해 개발한 CLI 도구\u003c/li\u003e\n\u003cli\u003e다양한 프레임워크에서 \u003cstrong\u003eWindows 네이티브 기능\u003c/strong\u003e을 손쉽게 활용하도록 지원\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e앱 식별자(App Identity)\u003c/strong\u003e 생성, \u003cstrong\u003e매니페스트 관리\u003c/strong\u003e, \u003cstrong\u003e인증서...\u003c/p\u003e"
+    },
+    {
+      "title": "Stable Channel Update for Desktop",
+      "link": "http://chromereleases.googleblog.com/2026/02/stable-channel-update-for-desktop_12.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2026-02-12T12:02:00-08:00",
+      "description": "\u003cp\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" style=\"color: rgba(0, 0, 0, 0.87); font-family: arial; font-size: large;\"\u003eThe Stable channel has been updated to 145.0.7632.68 for Windows/Mac\u0026nbsp; and\u0026nbsp;\u003c/span\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" style=\"color: rgba(0, 0, 0, 0.87); font-family: arial; font-size: large;\"\u003e144.0.7559.67 for Linux, which will roll out over the coming days/weeks. A full list of changes in this build is available in the\u0026nbsp;\u003c/span\u003e\u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/145.0.7632.45..145.0.7632.68?pretty=fuller\u0026amp;n=10000\" style=\"color: #4184f3; font-family: arial; font-size: large; text-decoration-line: none;\"\u003eLog\u003c/a\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" style=\"color: rgba(0, 0, 0, 0.87); font-family: arial; font-size: large;\"\u003e.\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" style=\"color: rgba(0, 0, 0, 0.87); font-family: arial; font-size: large;\"\u003e\u003cbr /\u003e\u003c/span\u003e\u003c/p\u003e\u003cp style=\"color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px;\"\u003e\u003cspan style=\"color: #666666; font-family: arial; font-size: large;\"\u003eInterested in switching release channels? Find out how\u0026nbsp;\u003c/span\u003e\u003ca href=\"https://www.chromium.org/getting-involved/dev-channel\" style=\"color: #4184f3; font-family: arial; font-size: large; text-decoration-line: none;\"\u003ehere\u003c/a\u003e\u003cspan style=\"color: #666666; font-family: arial; font-size: large;\"\u003e. If you find a new issue, please let us know by\u0026nbsp;\u003c/span\u003e\u003ca href=\"https://crbug.com/\" style=\"color: #4184f3; font-family: arial; font-size: large; text-decoration-line: none;\"\u003efiling a bug\u003c/a\u003e\u003cspan style=\"color: #666666; font-family: arial; font-size: large;\"\u003e. The\u0026nbsp;\u003c/span\u003e\u003ca href=\"https://support.google.com/chrome/community\" style=\"color: #4184f3; font-family: arial; font-size: large; text-decoration-line: none;\"\u003ecommunity help forum\u003c/a\u003e\u003cspan style=\"color: #666666; font-family: arial; font-size: large;\"\u003e\u0026nbsp;is also a great place to reach out for help or learn about common issues.\u003c/span\u003e\u003c/p\u003e\u003cp style=\"color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px;\"\u003e\u003cspan style=\"color: #666666; font-family: arial; font-size: medium; white-space-collapse: preserve;\"\u003e\u003cbr style=\"content: \u0026quot; \u0026quot;; display: block; padding: 4px;\" /\u003e\u003c/span\u003e\u003c/p\u003e\u003cp style=\"color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px;\"\u003e\u003cspan style=\"color: #666666; font-family: arial; font-size: medium; white-space-collapse: preserve;\"\u003eSrinivas Sista\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" style=\"color: rgba(0, 0, 0, 0.87); font-family: arial; font-size: large;\"\u003e\u003c/span\u003e\u003c/p\u003e\u003cdiv style=\"color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px;\"\u003e\u003cspan style=\"font-size: medium;\"\u003e\u003cspan style=\"font-family: arial;\"\u003e\u003cspan style=\"color: #666666;\"\u003eGoogle Chrome\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003c/div\u003e"
+    },
+    {
+      "title": "Chrome Dev for Android Update",
+      "link": "http://chromereleases.googleblog.com/2026/02/chrome-dev-for-android-update_01474034929.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2026-02-12T05:43:37.025-08:00",
+      "description": "\u003cp\u003eHi everyone! We've just released Chrome Dev 147 (147.0.7681.2) for Android. It's now available on \u003ca href=\"https://play.google.com/store/apps/details?id=com.chrome.dev\"\u003eGoogle Play\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eYou can see a partial list of the changes in the \u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/146.0.7668.0..147.0.7681.2?pretty=fuller\u0026amp;n=10000\"\u003eGit log\u003c/a\u003e. For details on new features, check out the \u003ca href=\"https://blog.chromium.org\"\u003eChromium blog\u003c/a\u003e, and for details on web platform updates, check \u003ca href=\"https://www.chromestatus.com/features#milestone%3D147\"\u003ehere\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eIf you find a new issue, please let us know by \u003ca href=\"https://code.google.com/p/chromium/issues/entry?template=Android%20Issue\"\u003efiling a bug\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eChrome Release Team\u003cbr /\u003e\u003ca href=\"https://www.google.com/chrome\"\u003e\u003c/a\u003e\u003ca href=\"https://www.google.com/chrome\"\u003eGoogle Chrome\u003c/a\u003e\u003c/p\u003e"
+    },
+    {
+      "title": "Long Term Support Channel Update for ChromeOS",
+      "link": "http://chromereleases.googleblog.com/2026/02/long-term-support-channel-update-for_11.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2026-02-11T14:21:00-08:00",
+      "description": "A new LTS  version 138.0.7204.304 (Platform Version: 16295.89.0), is being rolled out for most ChromeOS devices.\u003cdiv\u003e\u003cbr /\u003e\u003c/div\u003e\u003cdiv\u003eRelease notes for LTS-138 can be found\u003ca href=\"https://support.google.com/chrome/a/answer/12239814\"\u003e here\u003c/a\u003e \u003cbr /\u003e\u003cbr /\u003eWant to know more about Long-term Support? Click\u003ca href=\"https://support.google.com/chrome/a/answer/11333726\"\u003e here\u003c/a\u003e\u003cbr /\u003e\u003cbr /\u003eAndy Wu\u003cbr /\u003eGoogle Chrome OS\u003c/div\u003e"
+    },
+    {
+      "title": "Gemini 3 Deep Think: Advancing science, research and engineering",
+      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/",
+      "source": "Google DeepMind",
+      "category": "tech",
+      "publishedAt": "2026-02-12T16:13:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-3_deep-think_keyword_hea.max-600x600.format-webp.webp\"\u003eWe’re releasing a major upgrade to Gemini 3 Deep Think, our specialized reasoning mode."
+    },
+    {
+      "title": "Gemini 3 Deep Think: Advancing science, research and engineering",
+      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/",
+      "source": "Gemini",
+      "category": "tech",
+      "publishedAt": "2026-02-12T16:13:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-3_deep-think_keyword_hea.max-600x600.format-webp.webp\"\u003eWe’re releasing a major upgrade to Gemini 3 Deep Think, our specialized reasoning mode."
+    },
+    {
+      "title": "Pwning Supercomputers — A 20 year old vulnerability in Munge",
+      "link": "https://blog.lexfo.fr/munge-heap-buffer-overflow.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-12T22:07:44Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://blog.lexfo.fr/munge-heap-buffer-overflow.html\"\u003ehttps://blog.lexfo.fr/munge-heap-buffer-overflow.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46995955\"\u003ehttps://news.ycombinator.com/item?id=46995955\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: EncroGram – Messaging When You Assume Everything Will Be Looked At",
+      "link": "https://encrogram.com",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-12T22:07:27Z",
+      "description": "\n\u003cp\u003eHi HN,\u003cp\u003eI’m not using EncroGram because I like clean UI or new apps. I’m using it because I assume that sooner or later, anything I touch might be examined — devices, servers, logs, timelines.\u003cp\u003eMost messaging apps focus on encrypting content. That’s table stakes now. What matters in practice is everything around the content: identifiers, metadata, backups, correlations, and the quiet assumptions built into the system.\u003cp\u003eEncroGram caught my attention because it seems to start from a different premise: reduce what exists in the first place. No accounts tied to phone numbers or emails. No analytics. No long-term server-side message storage by design. Fewer moving parts, fewer promises, fewer things to trust.\u003cp\u003eI’m not under the illusion that this makes communication safe or anonymous. Devices get seized. Networks get monitored. People make mistakes. Nothing here changes that. What it changes, at least in theory, is how much residual data is created by default, and how much of that data lives outside the endpoint.\u003cp\u003eFrom my point of view, that’s the real question: not “is it secure?”, but “what’s left behind when things go wrong?”\u003cp\u003eThis doesn’t feel like a mainstream product, and it probably shouldn’t be. It feels more like an experiment in being explicit about trade-offs and threat models instead of hiding them behind UX polish and legal language.\u003cp\u003eI’m posting this because I’m interested in technical criticism and discussion. Where does a low-retention or stateless approach actually help, and where does it fail? What assumptions does it still rely on that users like me might underestimate?\u003cp\u003eNot here to promote it — just interested in informed perspectives on the design choices.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46995951\"\u003ehttps://news.ycombinator.com/item?id=46995951\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "tv 0.15",
+      "link": "https://alexpasmantier.github.io/television/developers/release-notes/0.15/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-12T22:06:43Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://alexpasmantier.github.io/television/developers/release-notes/0.15/\"\u003ehttps://alexpasmantier.github.io/television/developers/release-notes/0.15/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46995943\"\u003ehttps://news.ycombinator.com/item?id=46995943\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "More Lessons from 14 years at Google",
+      "link": "https://addyosmani.com/blog/14-more-lessons/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-12T22:06:31Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://addyosmani.com/blog/14-more-lessons/\"\u003ehttps://addyosmani.com/blog/14-more-lessons/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46995942\"\u003ehttps://news.ycombinator.com/item?id=46995942\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Harness Engineering",
+      "link": "https://openai.com/index/harness-engineering/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-12T21:59:18Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://openai.com/index/harness-engineering/\"\u003ehttps://openai.com/index/harness-engineering/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46995861\"\u003ehttps://news.ycombinator.com/item?id=46995861\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Our New Observability Stack",
+      "link": "https://engineering.merciyanis.com/blog/3-weeks-to-full-observability-our-deployment-journey",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-12T21:58:04Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://engineering.merciyanis.com/blog/3-weeks-to-full-observability-our-deployment-journey\"\u003ehttps://engineering.merciyanis.com/blog/3-weeks-to-full-observability-our-deployment-journey\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46995850\"\u003ehttps://news.ycombinator.com/item?id=46995850\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "AI and Jobs - What 3 Decades of Building Tech Taught Me About What's Coming",
+      "link": "https://getcoai.com/article/ai-and-jobs-what-three-decades-of-building-tech-taught-me-about-whats-coming/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-12T21:57:48Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://getcoai.com/article/ai-and-jobs-what-three-decades-of-building-tech-taught-me-about-whats-coming/\"\u003ehttps://getcoai.com/article/ai-and-jobs-what-three-decades-of-building-tech-taught-me-about-whats-coming/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46995846\"\u003ehttps://news.ycombinator.com/item?id=46995846\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "AI Is Getting Scary Good at Making Predictions",
+      "link": "https://www.theatlantic.com/technology/2026/02/ai-prediction-human-forecasters/685955/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-12T21:56:40Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.theatlantic.com/technology/2026/02/ai-prediction-human-forecasters/685955/\"\u003ehttps://www.theatlantic.com/technology/2026/02/ai-prediction-human-forecasters/685955/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46995826\"\u003ehttps://news.ycombinator.com/item?id=46995826\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "This is how A Child Dies of Measles",
+      "link": "https://www.theatlantic.com/ideas/2026/02/child-dies-measles-vaccines/685969/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-12T21:55:57Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.theatlantic.com/ideas/2026/02/child-dies-measles-vaccines/685969/\"\u003ehttps://www.theatlantic.com/ideas/2026/02/child-dies-measles-vaccines/685969/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46995818\"\u003ehttps://news.ycombinator.com/item?id=46995818\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Agents as Teammates",
+      "link": "https://twitter.com/obie/status/2022061142294851837",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-12T21:55:50Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://twitter.com/obie/status/2022061142294851837\"\u003ehttps://twitter.com/obie/status/2022061142294851837\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46995817\"\u003ehttps://news.ycombinator.com/item?id=46995817\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Supabase Incident (12 Feb 2026)",
+      "link": "https://status.supabase.com/incidents/pqrf96m6fzxk",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-12T21:55:26Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://status.supabase.com/incidents/pqrf96m6fzxk\"\u003ehttps://status.supabase.com/incidents/pqrf96m6fzxk\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46995814\"\u003ehttps://news.ycombinator.com/item?id=46995814\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Past Automation and Future A.I.: How Weak Links Tame the Growth Explosion [pdf]",
+      "link": "https://web.stanford.edu/~chadj/JonesTonetti_Automation.pdf",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-12T21:55:26Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://web.stanford.edu/~chadj/JonesTonetti_Automation.pdf\"\u003ehttps://web.stanford.edu/~chadj/JonesTonetti_Automation.pdf\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46995813\"\u003ehttps://news.ycombinator.com/item?id=46995813\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "General Motors Replies to Bill Gates",
+      "link": "https://www.wussu.com/humour/gm.htm",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-12T21:54:38Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.wussu.com/humour/gm.htm\"\u003ehttps://www.wussu.com/humour/gm.htm\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46995803\"\u003ehttps://news.ycombinator.com/item?id=46995803\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "AI toy maker exposed responses to children",
+      "link": "https://www.nbcnews.com/tech/security/ai-toy-maker-exposed-thousands-responses-kids-senators-miko-rcna258326",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-12T21:54:28Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nbcnews.com/tech/security/ai-toy-maker-exposed-thousands-responses-kids-senators-miko-rcna258326\"\u003ehttps://www.nbcnews.com/tech/security/ai-toy-maker-exposed-thousands-responses-kids-senators-miko-rcna258326\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46995800\"\u003ehttps://news.ycombinator.com/item?id=46995800\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Ring won't store your camera data without a subscription unless it is important",
+      "link": "https://www.reuters.com/world/guthrie-doorbell-video-delayed-by-difficult-data-recovery-privacy-advocates-2026-02-12/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-12T21:52:09Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.reuters.com/world/guthrie-doorbell-video-delayed-by-difficult-data-recovery-privacy-advocates-2026-02-12/\"\u003ehttps://www.reuters.com/world/guthrie-doorbell-video-delayed-by-difficult-data-recovery-privacy-advocates-2026-02-12/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46995773\"\u003ehttps://news.ycombinator.com/item?id=46995773\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 3\u003c/p\u003e\n"
+    },
+    {
+      "title": "Windows 11 now has a proper Task Manager with performance history and more",
+      "link": "https://www.neowin.net/news/windows-11-now-has-a-proper-task-manager-with-performance-history-and-more/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-12T21:49:21Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.neowin.net/news/windows-11-now-has-a-proper-task-manager-with-performance-history-and-more/\"\u003ehttps://www.neowin.net/news/windows-11-now-has-a-proper-task-manager-with-performance-history-and-more/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46995742\"\u003ehttps://news.ycombinator.com/item?id=46995742\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 6\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Faster Server Startup in Meteor 3.4 with Deferrables",
+      "link": "https://blog.galaxycloud.app/faster-server-startup-in-meteor-3-4-with-deferrables/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-12T21:45:52Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://blog.galaxycloud.app/faster-server-startup-in-meteor-3-4-with-deferrables/\"\u003ehttps://blog.galaxycloud.app/faster-server-startup-in-meteor-3-4-with-deferrables/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46995705\"\u003ehttps://news.ycombinator.com/item?id=46995705\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Openrappter- Local-First AI Agent Powered by GitHub Copilot SDK",
+      "link": "https://github.com/kody-w/openrappter",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-12T21:45:37Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/kody-w/openrappter\"\u003ehttps://github.com/kody-w/openrappter\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46995701\"\u003ehttps://news.ycombinator.com/item?id=46995701\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Python's Dynamic Typing Problem",
+      "link": "https://www.whileforloop.com/en/blog/2026/02/10/python-dynamic-typing-problem/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-12T21:44:06Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.whileforloop.com/en/blog/2026/02/10/python-dynamic-typing-problem/\"\u003ehttps://www.whileforloop.com/en/blog/2026/02/10/python-dynamic-typing-problem/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46995680\"\u003ehttps://news.ycombinator.com/item?id=46995680\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Stay in Your Human Loop",
+      "link": "https://bjar.substack.com/p/stay-in-your-human-loop",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-12T21:44:02Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://bjar.substack.com/p/stay-in-your-human-loop\"\u003ehttps://bjar.substack.com/p/stay-in-your-human-loop\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=46995679\"\u003ehttps://news.ycombinator.com/item?id=46995679\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Gemini 3 Deep Think: Advancing science, research and engineering",
+      "link": "https://deepmind.google/blog/gemini-3-deep-think-advancing-science-research-and-engineering/",
+      "source": "Google DeepMind Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-12T16:15:09Z",
+      "description": "Our most specialized reasoning mode is now updated to solve modern science, research and engineering challenges."
+    },
+    {
+      "title": "Welcome to the future of creating and editing in Confluence with Atlassian Rovo",
+      "link": "https://www.atlassian.com/blog/confluence/create-and-edit-with-rovo",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-12T19:10:00Z",
+      "description": "\u003cp\u003eSay bye to the blank page with AI-powered content creation and editing\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/confluence/create-and-edit-with-rovo\"\u003eWelcome to the future of creating and editing in Confluence with Atlassian Rovo\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Rovo Dev is now generally available in VS Code",
+      "link": "https://www.atlassian.com/blog/announcements/rovo-dev-now-generally-available-in-vs-code",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-12T17:00:00Z",
+      "description": "\u003cp\u003eWe’re excited to announce that Rovo Dev is now generally available in VS Code as part of the Atlassian VS...\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/announcements/rovo-dev-now-generally-available-in-vs-code\"\u003eRovo Dev is now generally available in VS Code\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Gemini 3 Deep Think: Advancing science, research and engineering",
+      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/",
+      "source": "AI",
+      "category": "tech",
+      "publishedAt": "2026-02-12T16:13:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-3_deep-think_keyword_hea.max-600x600.format-webp.webp\"\u003eWe’re releasing a major upgrade to Gemini 3 Deep Think, our specialized reasoning mode."
+    },
+    {
+      "title": "Introducing Markdown for Agents",
+      "link": "https://blog.cloudflare.com/markdown-for-agents/",
+      "source": "Cloudflare Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-12T14:03:12Z",
+      "description": " The way content is discovered online is shifting, from traditional search engines to AI agents that need structured data from a Web built for humans. It’s time to consider not just human visitors, but start to treat agents as first-class citizens. Markdown for Agents automatically converts any HTML page requested from our network to markdown. "
+    },
+    {
+      "title": "Gemini 3 Deep Think: Advancing science, research and engineering",
+      "link": "https://deepmind.google/blog/gemini-3-deep-think-advancing-science-research-and-engineering/",
+      "source": "DeepMind",
+      "category": "tech",
+      "publishedAt": "2026-02-12T16:15:09Z",
+      "description": "Our most specialized reasoning mode is now updated to solve modern science, research and engineering challenges."
+    },
+    {
+      "title": "Join us for Interrupt: The Agent Conference",
+      "link": "https://blog.langchain.com/join-us-for-interrupt-the-agent-conference/",
+      "source": "LangChain Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-12T17:42:03Z",
+      "description": "\u003cp\u003eInterrupt - The Agent Conference by LangChain - is where builders come to learn what\u0026apos;s actually working in production. This year, we\u0026apos;re bringing together more than 1,000 developers, product leaders, researchers, and founders to share what\u0026apos;s coming next for agents\u0026#x2014;and how\u003c/p\u003e"
+    },
+    {
+      "title": "Code, Compute and Connection: Inside the Inaugural NVIDIA AI Day São Paulo",
+      "link": "https://blogs.nvidia.com/blog/ai-day-sao-paulo/",
+      "source": "NVIDIA Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-12T22:00:58Z",
+      "description": "The worldwide tour of NVIDIA AI Days — bringing together AI enthusiasts, developers, researchers and startups — made its latest stop in São Paulo, Brazil. "
+    },
+    {
+      "title": "Leading Inference Providers Cut AI Costs by up to 10x With Open Source Models on NVIDIA Blackwell",
+      "link": "https://blogs.nvidia.com/blog/inference-open-source-models-blackwell-reduce-cost-per-token/",
+      "source": "NVIDIA Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-12T16:00:46Z",
+      "description": "A diagnostic insight in healthcare. A character’s dialogue in an interactive game. An autonomous resolution from a customer service agent. Each of these AI-powered interactions is built on the same unit of intelligence: a token. Scaling these AI interactions requires businesses to consider whether they can afford more tokens. The answer lies in better tokenomics\t\u003ca class=\"read-more\" href=\"https://blogs.nvidia.com/blog/inference-open-source-models-blackwell-reduce-cost-per-token/\"\u003e\n\t\tRead Article\t\t\u003cspan data-icon=\"y\"\u003e\u003c/span\u003e\n\t\u003c/a\u003e\n\t"
+    },
+    {
+      "title": "NVIDIA DGX Spark Powers Big Projects in Higher Education",
+      "link": "https://blogs.nvidia.com/blog/dgx-spark-higher-education/",
+      "source": "NVIDIA Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-12T15:00:23Z",
+      "description": "At leading institutions across the globe, the NVIDIA DGX Spark desktop supercomputer is bringing data‑center‑class AI to lab benches, faculty offices and students’ systems. There’s even a DGX Spark hard at work in the South Pole, at the IceCube Neutrino Observatory run by the University of Wisconsin-Madison. The compact supercomputer’s petaflop‑class performance enables local deployment\t\u003ca class=\"read-more\" href=\"https://blogs.nvidia.com/blog/dgx-spark-higher-education/\"\u003e\n\t\tRead Article\t\t\u003cspan data-icon=\"y\"\u003e\u003c/span\u003e\n\t\u003c/a\u003e\n\t"
+    },
+    {
+      "title": "GeForce NOW Turns Screens Into a Gaming Machine",
+      "link": "https://blogs.nvidia.com/blog/geforce-now-thursday-amazon-fire-tv-app/",
+      "source": "NVIDIA Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-12T14:00:58Z",
+      "description": "The GeForce NOW sixth-anniversary festivities roll on this February, continuing a monthlong celebration of NVIDIA’s cloud gaming service. This week brings even more reasons to join the party, as GeForce NOW launches on a new platform with support for Amazon Fire TV devices, and eight new games to keep the streaming going strong. The new\t\u003ca class=\"read-more\" href=\"https://blogs.nvidia.com/blog/geforce-now-thursday-amazon-fire-tv-app/\"\u003e\n\t\tRead Article\t\t\u003cspan data-icon=\"y\"\u003e\u003c/span\u003e\n\t\u003c/a\u003e\n\t"
+    }
+  ],
+  "generatedAt": "2026-02-13T07:14:15.204691576+09:00"
+}
