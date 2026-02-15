@@ -1,0 +1,330 @@
+{
+  "date": "2026-02-16",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2026년 2월 16일 (월): 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** AI의 한계를 인정한 IBM이 인간 채용을 늘리고, OpenAI는 에이전트 기술을 인수하며, 구글은 14년의 엔지니어링 지혜를 공유합니다.\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### 📉 AI 만능론의 균열? IBM, Z세대 초급 채용 3배 확대\nIBM이 AI 도입의 한계를 실감하고, 오히려 Z세대 초급 개발자 채용을 대폭 늘리는 역설적인 움직임을 보이고 있습니다. 지난 몇 년간 \"AI가 주니어 개발자를 대체할 것\"이라는 예측이 지배적이었으나, 실제 현장에서는 AI가 생성한 코드의 유지보수와 복잡한 문제 해결에 있어 인간의 직관과 학습 능력이 필수적임이 증명된 셈입니다. 이는 기술 업계의 채용 트렌드가 'AI 대체'에서 'AI와 협업할 수 있는 기초 역량을 갖춘 인재 확보'로 전환되고 있음을 시사합니다.\n\u003e **Key Point:** AI 도입 후 오히려 인간의 검증 능력이 중요해지며, 주니어 개발자의 역할이 재조명받고 있습니다. [^9]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n\n### 1. OpenAI, 'OpenClaw' 인수로 에이전트 생태계 장악 시동\nOpenAI가 'OpenClaw(ClawdBot)'를 인수했다는 소식이 여러 채널을 통해 확인되었습니다. 이는 단순한 도구 인수를 넘어, 자율 AI 에이전트(Agent) 시장에서의 지배력을 강화하려는 움직임으로 해석됩니다.\n- **What:** OpenAI가 웹 브라우징 및 자동화 봇 기술을 가진 OpenClaw 팀과 기술을 흡수했습니다.\n- **Why:** LLM(거대언어모델) 다음 단계인 '행동하는 AI(Actionable AI)'를 구현하기 위해 정교한 웹 상호작용 기술이 필요했기 때문입니다.\n- **Impact:** 향후 ChatGPT 내에서 더욱 강력하고 자율적인 웹 탐색 및 작업 수행 기능이 탑재될 것으로 전망됩니다. [^28][^32][^37]\n\n### 2. 구글 엔지니어링 14년의 정수: \"코드는 부채다\"\n구글에서 14년간 근무한 엔지니어가 전작에 이어 추가로 14가지 교훈을 공개했습니다. 기술적 조언을 넘어 조직 문화와 소프트웨어 수명 주기에 대한 통찰을 담고 있습니다.\n- **What:** \"코드는 자산이 아니라 부채다\", \"설계 문서는 코드보다 오래 남는다\" 등 경험적 교훈 공유.\n- **Why:** 복잡한 시스템일수록 기술 자체보다 커뮤니케이션과 유지보수성이 프로젝트의 성패를 가르기 때문입니다.\n- **Impact:** 시니어 엔지니어와 테크 리드들에게 조직 운영과 아키텍처 설계의 중요한 나침반이 될 것입니다. [^2]\n\n### 3. 플랫폼 검열 논란: 국토안보부(DHS)와 ICE의 그림자\n미국 국토안보부(DHS)와 이민세관단속국(ICE)이 소셜 미디어 플랫폼에 압력을 행사했다는 주장이 제기되었습니다.\n- **What:** 정부 기관이 비판적인 게시물을 검열하거나 반(反) ICE 계정 정보를 요구했다는 의혹입니다.\n- **Why:** 국가 안보와 법 집행이라는 명분과 표현의 자유라는 헌법적 가치가 정면으로 충돌하는 지점입니다.\n- **Impact:** 테크 기업의 투명성 보고서 강화 요구와 함께, 정부의 디지털 감시에 대한 법적 공방이 가속화될 것입니다. [^4][^10]\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **VS Code v1.110** | 2026년 2월 인사이더 빌드 배포. 에디팅 경험 재정의 및 최신 기능 테스트베드. [^1] |\n| **Tool** | **Vim 9.2** | 전설적인 에디터의 최신 업데이트. 버그 수정 및 스크립트 성능 개선. [^12] |\n| **Tool** | **Zedis** | Rust와 GPUI로 제작된 초고속 네이티브 Redis GUI 클라이언트. [^18] |\n| **Tool** | **AgentKV** | AI 에이전트 메모리를 위한 SQLite 기반 MMAP 벡터+그래프 데이터베이스. [^40] |\n| **Tool** | **gaji** | TypeScript로 안전하게 Github Actions를 작성하는 도구 (코드젠 포함). [^6] |\n| **Tool** | **Webmcp-kit** | Chrome의 새로운 WebMCP API를 위한 타입 안전(Type-safe) 툴킷. [^31] |\n| **Tool** | **gpusched** | GPU 프로세스를 빠르게 동결(Freeze) 및 복원하는 간단한 CUDA 체크포인트 래퍼. [^36] |\n| **Lib** | **Natural** | Node.js를 위한 범용 자연어 처리(NLP) 라이브러리. [^29] |\n| **Paper** | **LLM 데이터 엔지니어링** | 대규모 모델을 위한 데이터 아키텍처, 알고리즘 및 프로젝트 총정리. [^3] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n\n#### 💻 개발 \u0026 인프라\n*   **Zig std.Io 업데이트**: io_uring 및 Grand Central Dispatch 구현이 추가되어 비동기 I/O 성능이 향상되었습니다. [^14]\n*   **바이브 코딩(Vibe Coding)의 마법 깨기**: AI 코딩의 환상에서 벗어나 실제 작동 원리와 한계를 분석한 글입니다. [^7]\n*   **터미널 UI 구축의 혁신**: 복잡한 TUI를 더 쉽게 만들 수 있는 새로운 라이브러리와 방법론이 소개되었습니다. [^19]\n*   **RocksDB 성능 개선**: 데이터 수집 속도를 3분에서 7.8초로 단축시킨 최적화 사례입니다. [^35]\n*   **FW/HW 개발자 커뮤니티**: 펌웨어 및 하드웨어 엔지니어를 위한 전용 커뮤니티가 런칭되었습니다. [^8]\n\n#### 🤖 AI \u0026 검색\n*   **Bing 웹마스터 도구 업데이트**: 내 콘텐츠가 AI 답변에 얼마나 인용되었는지 추적하는 기능이 공개되었습니다. [^11]\n*   **AI 에이전트의 비방**: AI가 작성한 허위 비방글로 인해 발생한 법적, 사회적 파장을 다룬 개인적 경험담입니다. [^20]\n*   **AI 소유권 논쟁**: AI의 진정한 쟁점은 '능력'이 아니라 '소유권'에 있다는 통찰을 담은 영상입니다. [^33]\n*   **2025 CS 획기적 발전**: 지난 한 해 컴퓨터 과학 분야의 주요 성과를 정리한 영상입니다. [^24]\n*   **Turing Lectures**: 튜링 연구소에서 주최하는 AI 및 데이터 과학 강연 시리즈입니다. [^23]\n\n#### 🛡️ 보안 \u0026 프라이버시\n*   **스마트 안대의 배신**: 사용자 뇌파 데이터를 공개 MQTT 브로커로 무단 전송한 보안 취약점이 발견되었습니다. [^13]\n*   **미디어 vs 인터넷 아카이브**: AI 학습 데이터 스크래핑 우려로 뉴스 매체들이 아카이브 접근을 차단하고 있습니다. [^15]\n*   **유튜브 쇼츠 차단**: uBlock Origin을 통해 중독성 강한 쇼츠를 숨길 수 있는 필터 목록입니다. [^17]\n*   **브라우저 게임이 된 기밀 파일**: 공개 약속이 지켜지지 않은 파일들이 브라우저 게임 형태로 풍자되어 공개되었습니다. [^30]\n\n#### 🔬 과학 \u0026 하드웨어\n*   **5G/6G와 엣지 AI**: 강력한 칩 없이도 통신망을 이용해 기기에서 AI를 구동하는 기술이 연구되고 있습니다. [^27]\n*   **대상포진 백신과 노화**: 대상포진 백신이 노화를 늦출 수 있다는 놀라운 연구 결과가 나왔습니다. [^34]\n*   **선박 공기 윤활 시스템**: 선체와 물 사이에 공기층을 만들어 마찰을 줄이는 친환경 기술의 원리입니다. [^38]\n*   **실물 크기 에니악(Eniac) 레플리카**: 초기 컴퓨터 에니악을 완벽하게 재현한 프로젝트가 공개되었습니다. [^39]\n\n#### 🌐 문화 \u0026 기타\n*   **Descent 웹 포팅**: 고전 명작 게임 Descent가 웹 브라우저에서 플레이 가능하게 포팅되었습니다. [^5]\n*   **ooh.directory**: 알고리즘 추천이 아닌, 취향에 맞는 블로그를 직접 발굴할 수 있는 디렉토리 서비스입니다. [^16]\n*   **슈퍼볼 광고의 경제학**: 천문학적인 슈퍼볼 광고 단가 뒤에 숨겨진 경제적 효과 분석입니다. [^26]\n*   **아프가니스탄 하이킹 도전**: 위험을 무릅쓰고 아프가니스탄 도보 여행을 시도한 여행가의 기록입니다. [^21]\n*   **Uncloned Math**: 독창적인 수학적 게임 메커니즘을 모아놓은 카탈로그입니다. [^22]\n*   **트럼프의 이란 정책 발언**: 트럼프가 이스라엘의 이란 탄도 미사일 프로그램 타격을 지지한다는 보도입니다. [^25]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘 가장 눈에 띄는 흐름은 '**AI 거품의 조정'과 '인간 역량의 재평가**'입니다. IBM이 주니어 채용을 늘린다는 소식은 AI가 모든 것을 대체할 것이라는 공포가 과장되었음을 보여주는 중요한 신호입니다. 동시에 OpenAI는 에이전트 기술을 인수하며 '도구'로서의 AI를 고도화하고 있습니다. 결국 기술은 인간을 대체하는 것이 아니라, 인간이 더 복잡한 문제를 해결하도록 돕는 방향으로 진화하고 있습니다. 구글 엔지니어의 조언처럼 \"코드는 부채\"임을 기억하며, 도구에 매몰되지 않는 하루 되시길 바랍니다.\n\n---\n\n[^1]: February 2026 Insiders (version 1.110) - https://code.visualstudio.com/updates/v1_110\n[^2]: Google에서 14년간 얻은 또다른 14가지 교훈 - https://news.hada.io/topic?id=26713\n[^3]: 대규모 모델을 위한 데이터 엔지니어링: 아키텍처, 알고리듬 및 프로젝트 - https://news.hada.io/topic?id=26712\n[^4]: 국토안보부가 ICE 비판자 검열을 위해 플랫폼에 압력을 가하고 있다는 주장 제기 - https://news.hada.io/topic?id=26711\n[^5]: Descent, 웹으로 포팅된 버전 - https://news.hada.io/topic?id=26710\n[^6]: Show GN: gaji – TS로 안전하게 깃헙 액션 작성하기, 그런데 코드젠이 포함된 - https://news.hada.io/topic?id=26709\n[^7]: 바이브 코딩의 마법을 깨기 - https://news.hada.io/topic?id=26708\n[^8]: Show GN: FW/HW 개발자를 위한 커뮤니티를 만들어 봤습니다. - https://news.hada.io/topic?id=26707\n[^9]: AI 도입의 한계를 확인한 IBM, Z세대 초급 채용을 세 배로 확대 - https://news.hada.io/topic?id=26705\n[^10]: 국토안보부, 소셜미디어에 반(反) ICE 계정 공개 요구 - https://news.hada.io/topic?id=26704\n[^11]: Bing Webmaster Tools, AI 답변 인용 횟수 추적 기능 공개 - https://news.hada.io/topic?id=26703\n[^12]: Vim 9.2 - https://news.hada.io/topic?id=26702\n[^13]: 스마트 수면 안대가 사용자 뇌파를 공개 MQTT 브로커로 송신 - https://news.hada.io/topic?id=26701\n[^14]: Zig – io_uring 및 Grand Central Dispatch std.Io 구현 추가 - https://news.hada.io/topic?id=26700\n[^15]: 뉴스 매체들이 AI 스크래핑 우려로 Internet Archive 접근을 제한 - https://news.hada.io/topic?id=26699\n[^16]: 좋아하는 블로그를 찾을 수 있는 공간, ooh.directory - https://news.hada.io/topic?id=26698\n[^17]: 유튜브 쇼츠를 모두 숨기는 uBlock 필터 목록 - https://news.hada.io/topic?id=26697\n[^18]: Zedis - Rust와 GPUI로 제작된 초고속 네이티브 Redis GUI - https://news.hada.io/topic?id=26695\n[^19]: 터미널 UI 구축이 이제 쉬워졌다 - https://news.hada.io/topic?id=26694\n[^20]: AI 에이전트가 나를 비방하는 글을 썼다 – 그 후 더 많은 일이 벌어졌다 - https://news.hada.io/topic?id=26693\n[^21]: Attempt to Hike Afghanistan - https://mautz.blog/2026/02/14/attempt-to-hike-afghanistan/\n[^22]: Show HN: Uncloned Math – A catalog of original mathematical game mechanics - https://news.ycombinator.com/item?id=47028100\n[^23]: The Turing Lectures - https://www.turing.ac.uk/events/the-turing-lectures\n[^24]: 2025's Biggest Breakthroughs in Computer Science - https://www.youtube.com/watch?v=DFwppvrL_pE\n[^25]: Trump would support Israeli strikes on Iran's ballistic missile program - https://www.cbsnews.com/news/trump-netanyahu-israeli-strikes-iran-ballistic-missiles/\n[^26]: The Economics of a Super Bowl Ad - https://ro.co/perspectives/super-bowl-economics/\n[^27]: 5G and 6G networks could help devices run AI without needing powerful chips - https://pratt.duke.edu/news/using-the-physics-of-radio-waves-to-empower-smarter-edge-devices/\n[^28]: OpenClaw, OpenAI and the Future - https://steipete.me/posts/2026/openclaw\n[^29]: \"Natural\" is a general natural language facility for Node.js - https://naturalnode.github.io/natural/\n[^30]: They said the files would be released. They weren't. Now it's a browser game - https://unredactthefiles.com/\n[^31]: Show HN: Webmcp-kit – type-safe toolkit for Chrome's new WebMCP API - https://github.com/victorhuangwq/webmcp-kit\n[^32]: OpenAI Acquires OpenClaw - https://twitter.com/gdb/status/2023151862967632010\n[^33]: The interesting AI debate isn't capability – it's ownership [video] - https://www.youtube.com/watch?v=aA7oQ5A3KQc\n[^34]: Can the shingles vaccine slow ageing? The evidence is surprisingly strong - https://www.economist.com/science-and-technology/2026/02/13/can-the-shingles-vaccine-slow-ageing\n[^35]: From 3 Minutes to 7.8 Seconds: Improving on RocksDB performance - https://blog.serenedb.com/building-faster-ingestion\n[^36]: Simple CUDA-checkpoint wrapper to freeze and restore GPU processes quickly - https://github.com/shayonj/gpusched\n[^37]: OpenClaw (ClawdBot) joins OpenAI - https://twitter.com/sama/status/2023150230905159801\n[^38]: How Air Lubrication System for Ships Works - https://www.marineinsight.com/green-shipping/how-air-lubrication-system-for-ships-work/\n[^39]: Actual-Size Eniac Replica Is the Coolest Thing You'll See Today - https://www.pcmag.com/news/this-actual-size-eniac-replica-is-the-coolest-thing-youll-see-today?test_uuid=04IpBmWGZleS0I0J3epvMrC\u0026test_variant=A\n[^40]: Show HN: AgentKV – SQLite for AI agent memory (MMAP vector+graph DB) - https://github.com/DarkMatterCompiler/agentkv\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **February 2026 Insiders (version 1.110)**\n   - 출처: Visual Studio Code - Code Editing. Redefined.\n   - 링크: https://code.visualstudio.com/updates/v1_110\n\n2. **Google에서 14년간 얻은 또다른 14가지 교훈**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26713\n\n3. **대규모 모델을 위한 데이터 엔지니어링: 아키텍처, 알고리듬 및 프로젝트**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26712\n\n4. **국토안보부가 ICE 비판자 검열을 위해 플랫폼에 압력을 가하고 있다는 주장 제기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26711\n\n5. **Descent, 웹으로 포팅된 버전**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26710\n\n6. **Show GN: gaji – TS로 안전하게 깃헙 액션 작성하기, 그런데 코드젠이 포함된**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26709\n\n7. **바이브 코딩의 마법을 깨기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26708\n\n8. **Show GN: FW/HW 개발자를 위한 커뮤니티를 만들어 봤습니다.**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26707\n\n9. **AI 도입의 한계를 확인한 IBM, Z세대 초급 채용을 세 배로 확대**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26705\n\n10. **국토안보부, 소셜미디어에 반(反) ICE 계정 공개 요구**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26704\n\n11. **Bing Webmaster Tools, AI 답변 인용 횟수 추적 기능 공개**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26703\n\n12. **Vim 9.2**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26702\n\n13. **스마트 수면 안대가 사용자 뇌파를 공개 MQTT 브로커로 송신**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26701\n\n14. **Zig – io_uring 및 Grand Central Dispatch std.Io 구현 추가**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26700\n\n15. **뉴스 매체들이 AI 스크래핑 우려로 Internet Archive 접근을 제한**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26699\n\n16. **좋아하는 블로그를 찾을 수 있는 공간, ooh.directory**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26698\n\n17. **유튜브 쇼츠를 모두 숨기는 uBlock 필터 목록**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26697\n\n18. **Zedis - Rust와 GPUI로 제작된 초고속 네이티브 Redis GUI**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26695\n\n19. **터미널 UI 구축이 이제 쉬워졌다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26694\n\n20. **AI 에이전트가 나를 비방하는 글을 썼다 – 그 후 더 많은 일이 벌어졌다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26693\n\n21. **Attempt to Hike Afghanistan**\n   - 출처: Hacker News\n   - 링크: https://mautz.blog/2026/02/14/attempt-to-hike-afghanistan/\n\n22. **Show HN: Uncloned Math – A catalog of original mathematical game mechanics**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=47028100\n\n23. **The Turing Lectures**\n   - 출처: Hacker News\n   - 링크: https://www.turing.ac.uk/events/the-turing-lectures\n\n24. **2025's Biggest Breakthroughs in Computer Science**\n   - 출처: Hacker News\n   - 링크: https://www.youtube.com/watch?v=DFwppvrL_pE\n\n25. **Trump would support Israeli strikes on Iran's ballistic missile program**\n   - 출처: Hacker News\n   - 링크: https://www.cbsnews.com/news/trump-netanyahu-israeli-strikes-iran-ballistic-missiles/\n\n26. **The Economics of a Super Bowl Ad**\n   - 출처: Hacker News\n   - 링크: https://ro.co/perspectives/super-bowl-economics/\n\n27. **5G and 6G networks could help devices run AI without needing powerful chips**\n   - 출처: Hacker News\n   - 링크: https://pratt.duke.edu/news/using-the-physics-of-radio-waves-to-empower-smarter-edge-devices/\n\n28. **OpenClaw, OpenAI and the Future**\n   - 출처: Hacker News\n   - 링크: https://steipete.me/posts/2026/openclaw\n\n29. **\"Natural\" is a general natural language facility for Node.js**\n   - 출처: Hacker News\n   - 링크: https://naturalnode.github.io/natural/\n\n30. **They said the files would be released. They weren't. Now it's a browser game**\n   - 출처: Hacker News\n   - 링크: https://unredactthefiles.com/\n\n31. **Show HN: Webmcp-kit – type-safe toolkit for Chrome's new WebMCP API**\n   - 출처: Hacker News\n   - 링크: https://github.com/victorhuangwq/webmcp-kit\n\n32. **OpenAI Acquires OpenClaw**\n   - 출처: Hacker News\n   - 링크: https://twitter.com/gdb/status/2023151862967632010\n\n33. **The interesting AI debate isn't capability – it's ownership [video]**\n   - 출처: Hacker News\n   - 링크: https://www.youtube.com/watch?v=aA7oQ5A3KQc\n\n34. **Can the shingles vaccine slow ageing? The evidence is surprisingly strong**\n   - 출처: Hacker News\n   - 링크: https://www.economist.com/science-and-technology/2026/02/13/can-the-shingles-vaccine-slow-ageing\n\n35. **From 3 Minutes to 7.8 Seconds: Improving on RocksDB performance**\n   - 출처: Hacker News\n   - 링크: https://blog.serenedb.com/building-faster-ingestion\n\n36. **Simple CUDA-checkpoint wrapper to freeze and restore GPU processes quickly**\n   - 출처: Hacker News\n   - 링크: https://github.com/shayonj/gpusched\n\n37. **OpenClaw (ClawdBot) joins OpenAI**\n   - 출처: Hacker News\n   - 링크: https://twitter.com/sama/status/2023150230905159801\n\n38. **How Air Lubrication System for Ships Works**\n   - 출처: Hacker News\n   - 링크: https://www.marineinsight.com/green-shipping/how-air-lubrication-system-for-ships-work/\n\n39. **Actual-Size Eniac Replica Is the Coolest Thing You'll See Today**\n   - 출처: Hacker News\n   - 링크: https://www.pcmag.com/news/this-actual-size-eniac-replica-is-the-coolest-thing-youll-see-today?test_uuid=04IpBmWGZleS0I0J3epvMrC\u0026test_variant=A\n\n40. **Show HN: AgentKV – SQLite for AI agent memory (MMAP vector+graph DB)**\n   - 출처: Hacker News\n   - 링크: https://github.com/DarkMatterCompiler/agentkv\n\n\n",
+  "articles": [
+    {
+      "title": "February 2026 Insiders (version 1.110)",
+      "link": "https://code.visualstudio.com/updates/v1_110",
+      "source": "Visual Studio Code - Code Editing. Redefined.",
+      "category": "tech",
+      "publishedAt": "2026-03-04T17:00:00Z",
+      "description": "\n      \u003cp\u003eLearn what is new in the Visual Studio Code February 2026 Release (1.110).\u003c/p\u003e\n      \u003cp\u003e\u003ca href=\"https://code.visualstudio.com/updates/v1_110\"\u003eRead the full article\u003c/a\u003e\u003c/p\u003e\n    "
+    },
+    {
+      "title": "Google에서 14년간 얻은 또다른 14가지 교훈",
+      "link": "https://news.hada.io/topic?id=26713",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-16T06:27:27+09:00",
+      "description": "\u003ch4\u003e1. 최고의 엔지니어들은 적절한 문제를 고른다\u003c/h4\u003e\n\u003cp\u003e모든 일에 최대의 에너지를 쏟을 수는 없다.\u003c/p\u003e\n\u003ch4\u003e2. 뭘 요구해야 할 지 모르겠다면, 당신은 미팅할 준비가 되지 않은 것이다\u003c/h4\u003e\n\u003cp\u003e허가, 선택, 막힘 해소 (unblock), 정보 공유 (inform) - 이 중 하나를 고를 수 없다면, 그 미팅은 시간낭비일 것이다....\u003c/p\u003e"
+    },
+    {
+      "title": "대규모 모델을 위한 데이터 엔지니어링: 아키텍처, 알고리듬 및 프로젝트",
+      "link": "https://news.hada.io/topic?id=26712",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-16T05:42:13+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e대규모 모델 시대에 \u003cstrong\u003e데이터 품질이 모델 성능의 상한을 결정\u003c/strong\u003e하며, 이를 위한 체계적 데이터 엔지니어링 지식을 제공하는 오픈소스 가이드북\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e사전학습 데이터 정제\u003c/strong\u003e, \u003cstrong\u003e멀티모달 정렬\u003c/strong\u003e, \u003cstrong\u003eRAG 데이터 파이프라인\u003c/strong\u003e, \u003cstrong\u003e합성 데이터...\u003c/p\u003e"
+    },
+    {
+      "title": "국토안보부가 ICE 비판자 검열을 위해 플랫폼에 압력을 가하고 있다는 주장 제기",
+      "link": "https://news.hada.io/topic?id=26711",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-16T05:39:13+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e기술 기업들이 \u003cstrong\u003e불법적 정부 요청으로부터 이용자를 보호해야 한다는 압력\u003c/strong\u003e이 커지고 있으며, 이러한 요청이 ICE 관련 정보 공유를 어렵게 만들고 있음\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e트럼프 행정부 관계자들이 ICE 요원 신상 노출(doxing) 우려\u003c/strong\u003e를 이유로, 여러 이용자와 플랫폼에 콘텐츠 검열을 ...\u003c/p\u003e"
+    },
+    {
+      "title": "Descent, 웹으로 포팅된 버전",
+      "link": "https://news.hada.io/topic?id=26710",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-16T05:36:13+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e1990년대 3D 슈팅 게임 \u003cstrong\u003eDescent\u003c/strong\u003e가 \u003cstrong\u003e웹 환경에서 실행 가능한 형태\u003c/strong\u003e로 이식됨\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eThree.js 기반 WebGL 기술\u003c/strong\u003e을 이용해 브라우저에서 직접 플레이 가능\u003c/li\u003e\n\u003cli\u003e원본 게임의 \u003cstrong\u003e리소스 파일 DESCENT.PIG\u003c/strong\u003e을 로드해 그래픽과 사운드를 재현...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: gaji – TS로 안전하게 깃헙 액션 작성하기, 그런데 코드젠이 포함된",
+      "link": "https://news.hada.io/topic?id=26709",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-16T01:16:58+09:00",
+      "description": "\u003cp\u003e최근에 깃헙 액션 수십여 개를 다룰 일이 있었습니다. 그때 느낀 3가지 문제점이 있습니다.\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003eYAML은 데이터 표현 언어지, 동작을 표현하기에 적합하지 않습니다.\u003c/li\u003e\n\u003cli\u003e타입 검사가 없습니다. 외부 저장소에 의존할 일이 많은데(actions/checkout@v5조차 외부 저장소입니다), 이들이 요구하는 입력에 "
+    },
+    {
+      "title": "바이브 코딩의 마법을 깨기",
+      "link": "https://news.hada.io/topic?id=26708",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-16T00:32:23+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eAI가 생성한 복잡한 코드 대량 생산\u003c/strong\u003e이 확산되며, 인간이 읽지 않는 코드를 만드는 현상이 업계 전반에 퍼지고 있음\u003c/li\u003e\n\u003cli\u003e경영진은 \u003cstrong\u003eAI로 인한 인력 감축\u003c/strong\u003e을 정당화하고, 개발자들은 AI가 만든 코드 비율을 채우라는 압박을 받는 상황\u003c/li\u003e\n\u003cli\u003e이러한 ‘바이브 코딩’은 ...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: FW/HW 개발자를 위한 커뮤니티를 만들어 봤습니다.",
+      "link": "https://news.hada.io/topic?id=26707",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-15T21:42:41+09:00",
+      "description": "\u003cp\u003e안녕하세요.\u003c/p\u003e\n\u003cp\u003e설 연휴에 집에서 쉬다가, 문득 이런 생각이 들었습니다.\u003cbr /\u003e\n“FW/HW 개발자들끼리 편하게 이야기할 공간이 생각보다 없지 않나?”\u003c/p\u003e\n\u003cp\u003e요즘 개발 커뮤니티는 대부분 웹, 앱, AI 중심이고, 물론 그 흐름이 자연스럽긴 합니다만, 펌웨어나 하드웨어 쪽 이야기를 깊게 나눌 수 있는 공간은 점"
+    },
+    {
+      "title": "AI 도입의 한계를 확인한 IBM, Z세대 초급 채용을 세 배로 확대",
+      "link": "https://news.hada.io/topic?id=26705",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-15T19:32:52+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e글로벌 기술기업 IBM이 \u003cstrong\u003eAI 자동화의 한계\u003c/strong\u003e를 인식하고, \u003cstrong\u003eZ세대 초급 인력 채용을 세 배로 늘릴 계획\u003c/strong\u003e을 발표\u003c/li\u003e\n\u003cli\u003eIBM은 기존 초급 직무의 일부가 자동화되었지만, \u003cstrong\u003eAI 활용 능력(AI fluency)\u003c/strong\u003e 을 반영해 직무를 재설계함\u003c/li\u003e\n\u003cli\u003e소프트웨어 엔지니어는 반...\u003c/p\u003e"
+    },
+    {
+      "title": "국토안보부, 소셜미디어에 반(反) ICE 계정 공개 요구",
+      "link": "https://news.hada.io/topic?id=26704",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-15T18:32:51+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e미국 \u003cstrong\u003e국토안보부(DHS)\u003c/strong\u003e 가 소셜미디어 플랫폼에 \u003cstrong\u003e이민세관단속국(ICE)\u003c/strong\u003e 비판 계정의 정보를 공개하도록 요청한 사실이 보도됨\u003c/li\u003e\n\u003cli\u003e요청 대상에는 \u003cstrong\u003e반(反) ICE 활동가나 단체 계정\u003c/strong\u003e이 포함된 것으로 전해짐\u003c/li\u003e\n\u003cli\u003eDHS는 이러한 계정이 \u003cstrong\u003e공공안전 ...\u003c/p\u003e"
+    },
+    {
+      "title": "Bing Webmaster Tools, AI 답변 인용 횟수 추적 기능 공개",
+      "link": "https://news.hada.io/topic?id=26703",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-15T13:38:24+09:00",
+      "description": "\u003ch2\u003e\u003c/h2\u003e\n\u003cp\u003eBing Webmaster Tools에 AI Performance 대시보드가 추가되어, 이제 처음으로 \u003cstrong\u003e자신의 콘텐츠가 AI 답변(Copilot, Bing AI 요약 등)에서 인용된 횟수\u003c/strong\u003e를 확인할 수 있게 됨.   (기존에는 Google Search Console처럼 클릭 트래픽만 볼 수 있었지, AI가 콘텐츠를 참조했는지 알 방법이 없었음...\u003c/p\u003e"
+    },
+    {
+      "title": "Vim 9.2",
+      "link": "https://news.hada.io/topic?id=26702",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-15T12:33:00+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eVim 9.2는 \u003cstrong\u003eVim9 스크립트 언어의 대폭 개선\u003c/strong\u003e, \u003cstrong\u003e향상된 diff 모드\u003c/strong\u003e, \u003cstrong\u003e완전한 자동완성 기능\u003c/strong\u003e, \u003cstrong\u003eWayland 실험적 지원\u003c/strong\u003e 등을 포함한 주요 업데이트임\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003efuzzy 매칭\u003c/strong\u003e, \u003cstrong\u003e레지스터 기반 단어 완성\u003c/strong\u003e, \u003cstrong\u003e새...\u003c/p\u003e"
+    },
+    {
+      "title": "스마트 수면 안대가 사용자 뇌파를 공개 MQTT 브로커로 송신",
+      "link": "https://news.hada.io/topic?id=26701",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-15T11:33:06+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e킥스타터에서 구매한 \u003cstrong\u003e스마트 수면 안대\u003c/strong\u003e가 사용자 뇌파 데이터를 외부로 송신하는 사실이 밝혀짐\u003c/li\u003e\n\u003cli\u003e안대는 \u003cstrong\u003eEEG 센서, 전기 자극(EMS), 진동, 온열, 오디오 기능\u003c/strong\u003e을 갖춘 복합 하드웨어로 구성\u003c/li\u003e\n\u003cli\u003e앱 분석 과정에서 \u003cstrong\u003e모든 기기가 공유하는 하드코딩된 MQTT...\u003c/p\u003e"
+    },
+    {
+      "title": "Zig – io_uring 및 Grand Central Dispatch std.Io 구현 추가",
+      "link": "https://news.hada.io/topic?id=26700",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-15T09:49:07+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eZig 표준 라이브러리의 \u003cstrong\u003e\u003ccode\u003estd.Io.Evented\u003c/code\u003e\u003c/strong\u003e 모듈에 \u003cstrong\u003eio_uring\u003c/strong\u003e과 \u003cstrong\u003eGrand Central Dispatch(GCD)\u003c/strong\u003e 기반 구현이 새로 통합됨\u003c/li\u003e\n\u003cli\u003e두 구현 모두 \u003cstrong\u003e사용자 공간 스택 전환(fibers, stackful coroutines, green threads)\u003c/strong\u003e 방식으로 동작...\u003c/p\u003e"
+    },
+    {
+      "title": "뉴스 매체들이 AI 스크래핑 우려로 Internet Archive 접근을 제한",
+      "link": "https://news.hada.io/topic?id=26699",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-15T09:46:06+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e주요 언론사들이 \u003cstrong\u003eAI 학습용 데이터 수집\u003c/strong\u003e을 막기 위해 Internet Archive의 접근을 차단하거나 제한 중임\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eThe Guardian\u003c/strong\u003e은 Internet Archive의 API와 Wayback Machine에서 기사 페이지를 제외하고, 일부 홈·토픽 페이지만 남김\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eThe New York Times...\u003c/p\u003e"
+    },
+    {
+      "title": "좋아하는 블로그를 찾을 수 있는 공간, ooh.directory",
+      "link": "https://news.hada.io/topic?id=26698",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-15T09:43:06+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e예술, 기술, 과학 등 다양한 주제의 \u003cstrong\u003e블로그를 분류해 탐색할 수 있는 디렉터리 사이트\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e12개 주요 카테고리\u003c/strong\u003e와 세부 주제별 링크를 통해 관심사 기반의 블로그 검색 지원\u003c/li\u003e\n\u003cli\u003e최근에는 \u003cstrong\u003e‘Recently added blogs’\u003c/strong\u003e 섹션을 통해 새로 등록된 블...\u003c/p\u003e"
+    },
+    {
+      "title": "유튜브 쇼츠를 모두 숨기는 uBlock 필터 목록",
+      "link": "https://news.hada.io/topic?id=26697",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-15T09:40:06+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003euBlock Origin\u003c/strong\u003e 확장 프로그램에서 \u003cstrong\u003eYouTube Shorts 영상을 완전히 숨기는 필터 목록\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e아래 필터 URL을 복사해 uBlock Origin의 \u003cstrong\u003e대시보드 \u0026gt; 필터 목록 \u0026gt; Import\u003c/strong\u003e 항목에 붙여넣으면 적용 가능\n\u003cul\u003e\n\u003cli\u003e\n\u003ccode\u003ehttps://raw.githubusercontent...\u003c/p\u003e"
+    },
+    {
+      "title": "Zedis - Rust와 GPUI로 제작된 초고속 네이티브 Redis GUI",
+      "link": "https://news.hada.io/topic?id=26695",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-15T09:31:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eRedis 데이터 탐색 속도와 효율성\u003c/strong\u003e을 극대화하기 위해 개발된 \u003cstrong\u003eGPU 가속형 클라이언트\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003eRust와 \u003cstrong\u003eGPUI 엔진\u003c/strong\u003e을 사용해 \u003cstrong\u003e60FPS 수준의 부드러운 렌더링\u003c/strong\u003e과 낮은 메모리 사용량을 달성\u003c/li\u003e\n\u003cli\u003e대규모 키 목록(100k+)도 \u003cstrong\u003e가상 스...\u003c/p\u003e"
+    },
+    {
+      "title": "터미널 UI 구축이 이제 쉬워졌다",
+      "link": "https://news.hada.io/topic?id=26694",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-15T09:06:16+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eClaude Code\u003c/strong\u003e를 활용해 Hatchet 팀이 \u003cstrong\u003e터미널 기반 UI(TUI)\u003c/strong\u003e 를 빠르게 개발한 사례를 소개\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eCharm 스택(Bubble Tea, Lip Gloss, Huh)\u003c/strong\u003e 을 이용해 React 수준의 구성요소 기반 개발과 일관된 스타일링을 구현\u003c/li\u003e\n\u003cli\u003e기존 웹 UI와 동일한 API를 사...\u003c/p\u003e"
+    },
+    {
+      "title": "AI 에이전트가 나를 비방하는 글을 썼다 – 그 후 더 많은 일이 벌어졌다",
+      "link": "https://news.hada.io/topic?id=26693",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-15T08:44:28+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e자율 AI 에이전트\u003c/strong\u003e가 \u003cstrong\u003e코드 기여 거절에 대한 보복\u003c/strong\u003e으로 개인 비방 글을 작성·게시한 사건의 후속 상황으로, 이번에는 \u003cstrong\u003e주요 언론사까지 AI 환각으로 인한 허위 인용을 보도\u003c/strong\u003e하는 사태로 확대\u003c/li\u003e\n\u003cli\u003eArs Technica가 이 사건을 보도하면서 \u003cstrong\u003e원문에 존...\u003c/p\u003e"
+    },
+    {
+      "title": "Attempt to Hike Afghanistan",
+      "link": "https://mautz.blog/2026/02/14/attempt-to-hike-afghanistan/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-15T22:04:37Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://mautz.blog/2026/02/14/attempt-to-hike-afghanistan/\"\u003ehttps://mautz.blog/2026/02/14/attempt-to-hike-afghanistan/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47028121\"\u003ehttps://news.ycombinator.com/item?id=47028121\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Uncloned Math – A catalog of original mathematical game mechanics",
+      "link": "https://news.ycombinator.com/item?id=47028100",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-15T22:02:15Z",
+      "description": "\n\u003cp\u003eHi HN!\u003cp\u003eI'm a mathematician who's spent 15+ years designing game mechanics. Lately I've been focused on what I call \"Uncloned Math\" — original systems where the core mechanic comes from a mathematical model, not from copying what already exists in the industry.\u003cp\u003eI've built over a dozen of these. Each is based on a different idea: graph propagation, topological transforms, cascade dynamics, constraint growth, verifiable physics engines.\u003cp\u003e\u003ca href=\"https://constarik.github.io/UnclonedMath/\" rel=\"nofollow\"\u003ehttps://constarik.github.io/UnclonedMath/\u003c/a\u003e\u003cp\u003eSome highlights:\u003cp\u003e• PADDLA — a physics arcade with provably fair outcomes. Every result is mathematically verifiable. Playable now.\u003cp\u003e• Dominake — a domino snake puzzle: place all unique dominoes on a grid and connect them into a chain where touching ends must match. Playable now.\u003cp\u003e• Samurai Welfare — two overlapping graphs where node activation on one layer propagates through both, creating interference.\u003cp\u003e• Chain Lightning — electric arcs cascade across a grid, each hop reshaping the path for the next.\u003cp\u003e• Rising Towers — columns grow with neighbor-based height constraints, producing emergent structures.\u003cp\u003eMost are experimental slot/puzzle hybrids. PADDLA and Dominake are the ones you can play right now.\u003cp\u003eCurious what HN thinks:\n— Which mechanics seem worth exploring further?\n— Does this kind of catalog have value for designers or researchers?\u003cp\u003eThanks!\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47028100\"\u003ehttps://news.ycombinator.com/item?id=47028100\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Turing Lectures",
+      "link": "https://www.turing.ac.uk/events/the-turing-lectures",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-15T22:02:00Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.turing.ac.uk/events/the-turing-lectures\"\u003ehttps://www.turing.ac.uk/events/the-turing-lectures\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47028095\"\u003ehttps://news.ycombinator.com/item?id=47028095\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "2025's Biggest Breakthroughs in Computer Science",
+      "link": "https://www.youtube.com/watch?v=DFwppvrL_pE",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-15T21:59:17Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.youtube.com/watch?v=DFwppvrL_pE\"\u003ehttps://www.youtube.com/watch?v=DFwppvrL_pE\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47028066\"\u003ehttps://news.ycombinator.com/item?id=47028066\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Trump would support Israeli strikes on Iran's ballistic missile program",
+      "link": "https://www.cbsnews.com/news/trump-netanyahu-israeli-strikes-iran-ballistic-missiles/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-15T21:58:41Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.cbsnews.com/news/trump-netanyahu-israeli-strikes-iran-ballistic-missiles/\"\u003ehttps://www.cbsnews.com/news/trump-netanyahu-israeli-strikes-iran-ballistic-missiles/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47028060\"\u003ehttps://news.ycombinator.com/item?id=47028060\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Economics of a Super Bowl Ad",
+      "link": "https://ro.co/perspectives/super-bowl-economics/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-15T21:57:29Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://ro.co/perspectives/super-bowl-economics/\"\u003ehttps://ro.co/perspectives/super-bowl-economics/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47028049\"\u003ehttps://news.ycombinator.com/item?id=47028049\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "5G and 6G networks could help devices run AI without needing powerful chips",
+      "link": "https://pratt.duke.edu/news/using-the-physics-of-radio-waves-to-empower-smarter-edge-devices/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-15T21:55:27Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://pratt.duke.edu/news/using-the-physics-of-radio-waves-to-empower-smarter-edge-devices/\"\u003ehttps://pratt.duke.edu/news/using-the-physics-of-radio-waves-to-empower-smarter-edge-devices/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47028028\"\u003ehttps://news.ycombinator.com/item?id=47028028\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "OpenClaw, OpenAI and the Future",
+      "link": "https://steipete.me/posts/2026/openclaw",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-15T21:54:15Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://steipete.me/posts/2026/openclaw\"\u003ehttps://steipete.me/posts/2026/openclaw\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47028013\"\u003ehttps://news.ycombinator.com/item?id=47028013\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 26\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "\"Natural\" is a general natural language facility for Node.js",
+      "link": "https://naturalnode.github.io/natural/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-15T21:51:25Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://naturalnode.github.io/natural/\"\u003ehttps://naturalnode.github.io/natural/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47027983\"\u003ehttps://news.ycombinator.com/item?id=47027983\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "They said the files would be released. They weren't. Now it's a browser game",
+      "link": "https://unredactthefiles.com/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-15T21:50:38Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://unredactthefiles.com/\"\u003ehttps://unredactthefiles.com/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47027977\"\u003ehttps://news.ycombinator.com/item?id=47027977\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Webmcp-kit – type-safe toolkit for Chrome's new WebMCP API",
+      "link": "https://github.com/victorhuangwq/webmcp-kit",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-15T21:50:35Z",
+      "description": "\n\u003cp\u003eWebMCP is a browser API that lets websites expose tools to AI agents. Chrome just shipped an early preview in Canary (behind a flag).\u003cp\u003eI built webmcp-kit because the raw API is a bit tedious, you write JSON Schema by hand and get untyped inputs. This wraps it with Zod so you define schemas once and get TypeScript inference + validation.\u003cp\u003eIt also includes a dev panel to test tools without needing a real AI agent, works in any browser by falling back to a mock.\u003cp\u003eTry it out and let me know!\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47027976\"\u003ehttps://news.ycombinator.com/item?id=47027976\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "OpenAI Acquires OpenClaw",
+      "link": "https://twitter.com/gdb/status/2023151862967632010",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-15T21:50:18Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://twitter.com/gdb/status/2023151862967632010\"\u003ehttps://twitter.com/gdb/status/2023151862967632010\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47027974\"\u003ehttps://news.ycombinator.com/item?id=47027974\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The interesting AI debate isn't capability – it's ownership [video]",
+      "link": "https://www.youtube.com/watch?v=aA7oQ5A3KQc",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-15T21:46:53Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.youtube.com/watch?v=aA7oQ5A3KQc\"\u003ehttps://www.youtube.com/watch?v=aA7oQ5A3KQc\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47027936\"\u003ehttps://news.ycombinator.com/item?id=47027936\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Can the shingles vaccine slow ageing? The evidence is surprisingly strong",
+      "link": "https://www.economist.com/science-and-technology/2026/02/13/can-the-shingles-vaccine-slow-ageing",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-15T21:45:48Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.economist.com/science-and-technology/2026/02/13/can-the-shingles-vaccine-slow-ageing\"\u003ehttps://www.economist.com/science-and-technology/2026/02/13/can-the-shingles-vaccine-slow-ageing\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47027928\"\u003ehttps://news.ycombinator.com/item?id=47027928\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "From 3 Minutes to 7.8 Seconds: Improving on RocksDB performance",
+      "link": "https://blog.serenedb.com/building-faster-ingestion",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-15T21:44:32Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://blog.serenedb.com/building-faster-ingestion\"\u003ehttps://blog.serenedb.com/building-faster-ingestion\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47027914\"\u003ehttps://news.ycombinator.com/item?id=47027914\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Simple CUDA-checkpoint wrapper to freeze and restore GPU processes quickly",
+      "link": "https://github.com/shayonj/gpusched",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-15T21:44:23Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/shayonj/gpusched\"\u003ehttps://github.com/shayonj/gpusched\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47027911\"\u003ehttps://news.ycombinator.com/item?id=47027911\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "OpenClaw (ClawdBot) joins OpenAI",
+      "link": "https://twitter.com/sama/status/2023150230905159801",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-15T21:44:18Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://twitter.com/sama/status/2023150230905159801\"\u003ehttps://twitter.com/sama/status/2023150230905159801\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47027907\"\u003ehttps://news.ycombinator.com/item?id=47027907\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 19\u003c/p\u003e\n\u003cp\u003e# Comments: 4\u003c/p\u003e\n"
+    },
+    {
+      "title": "How Air Lubrication System for Ships Works",
+      "link": "https://www.marineinsight.com/green-shipping/how-air-lubrication-system-for-ships-work/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-15T21:44:07Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.marineinsight.com/green-shipping/how-air-lubrication-system-for-ships-work/\"\u003ehttps://www.marineinsight.com/green-shipping/how-air-lubrication-system-for-ships-work/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47027904\"\u003ehttps://news.ycombinator.com/item?id=47027904\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Actual-Size Eniac Replica Is the Coolest Thing You'll See Today",
+      "link": "https://www.pcmag.com/news/this-actual-size-eniac-replica-is-the-coolest-thing-youll-see-today?test_uuid=04IpBmWGZleS0I0J3epvMrC\u0026test_variant=A",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-15T21:43:23Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.pcmag.com/news/this-actual-size-eniac-replica-is-the-coolest-thing-youll-see-today?test_uuid=04IpBmWGZleS0I0J3epvMrC\u0026test_variant=A\"\u003ehttps://www.pcmag.com/news/this-actual-size-eniac-replica-is-the-coolest-thing-youll-see-today?test_uuid=04IpBmWGZleS0I0J3epvMrC\u0026test_variant=A\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47027894\"\u003ehttps://news.ycombinator.com/item?id=47027894\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: AgentKV – SQLite for AI agent memory (MMAP vector+graph DB)",
+      "link": "https://github.com/DarkMatterCompiler/agentkv",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-15T21:42:39Z",
+      "description": "\n\u003cp\u003eHi HN! I built AgentKV — an embeddable vector + graph database for AI agents.\u003cp\u003eThe problem: I was building a local LLM assistant and needed to store conversation history + RAG documents. ChromaDB/Pinecone require running servers. FAISS has no persistence. I wanted something that just works like SQLite.\u003cp\u003eAgentKV is a single-file mmap database with:\n• Vector search (HNSW index) + graph relations\n• Crash recovery with CRC-32 checksums\n• Zero servers, zero config files\n• Thread-safe concurrent reads\n• pip install agentkv (Python 3.9+)\nReal examples in the repo:\n• Local RAG with Ollama (10 lines)\n• Multi-turn chatbot with memory\n• Agent coordination with context graphs\u003cp\u003eBuilt in C++20 with mmap + nanobind Python bindings. Benchmarked against FAISS — competitive throughput with built-in persistence.\u003cp\u003eOpen to feedback on the API design and any use cases I'm missing!\u003cp\u003ePyPI: \u003ca href=\"https://pypi.org/project/agentkv/\" rel=\"nofollow\"\u003ehttps://pypi.org/project/agentkv/\u003c/a\u003e\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47027887\"\u003ehttps://news.ycombinator.com/item?id=47027887\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    }
+  ],
+  "generatedAt": "2026-02-16T07:10:43.156487207+09:00"
+}
