@@ -1,0 +1,434 @@
+{
+  "date": "2026-02-17",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2026년 2월 16일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** 오픈소스 AI 'OpenClaw' 제작자의 OpenAI 합류와 NVIDIA의 압도적인 차세대 칩 발표, 그리고 Apple의 비디오 팟캐스트 진출까지 기술 생태계의 지각 변동이 감지된 하루입니다.\n\n---\n\n## 🏆 Top Story: AI 인재 전쟁과 'OpenClaw' 사가(Saga)\n### 오픈소스 AI의 별, OpenAI로 향하다\n오늘 기술계의 가장 뜨거운 감자는 단연 'OpenClaw'입니다. 혁신적인 오픈소스 AI 모델로 주목받던 OpenClaw(및 NanoClaw)의 제작자 Peter Steinberger가 OpenAI에 전격 합류했습니다. 이는 오픈소스 진영의 핵심 인재가 빅테크로 흡수되는 흐름을 보여주는 상징적인 사건입니다. [^27] [^31]\n\n동시에 Docker는 'NanoClaw'를 샌드박스 환경에서 구동하는 가이드를 발표하며 지원 사격에 나섰고 [^52], 클라우드 원클릭 배포 도구인 'Kimi Claw'까지 등장하며 생태계가 확장되고 있습니다. [^17] 하지만 TechCrunch는 \"모든 전문가가 OpenClaw에 열광하는 것은 아니다\"라며 과도한 하이프(Hype)를 경계하는 목소리를 냈습니다. [^43]\n\n\u003e **Key Point:** 오픈소스 AI 프로젝트가 성숙기에 접어들면서, 핵심 개발자의 거취와 상용화 가능성을 두고 빅테크와 커뮤니티 간의 긴장감이 고조되고 있습니다.\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n\n### 1. NVIDIA Blackwell Ultra: 에이전트 AI 시대를 열다\n- **What:** NVIDIA가 새로운 'Blackwell Ultra' 칩을 통해 에이전트 AI(Agentic AI) 구동 성능을 최대 50배 향상하고 비용을 35배 절감했다고 발표했습니다. [^53]\n- **Why:** 단순한 챗봇을 넘어 스스로 계획하고 행동하는 '에이전트 AI'가 차세대 트렌드로 부상함에 따라, 이를 뒷받침할 압도적인 연산 능력이 필수적이기 때문입니다.\n- **Impact:** 이러한 고성능 메모리/칩 수요 폭증은 역설적으로 소비자 가전 시장에 타격을 줄 수 있습니다. 2026년 말까지 AI 메모리 위기로 인해 다수의 가전 제조사가 파산할 것이라는 암울한 전망도 제기되었습니다. [^36]\n\n### 2. Apple 팟캐스트, '비디오'로 영역 확장\n- **What:** Apple이 Apple Podcasts 플랫폼에 새로운 비디오 경험을 도입했습니다. [^1]\n- **Why:** 유튜브가 팟캐스트 시장을 잠식하는 상황에서, 오디오 중심의 기존 플랫폼을 시각적 미디어로 확장하여 크리에이터와 청취자를 묶어두려는 전략입니다.\n- **Impact:** 팟캐스트 시장이 '듣는 콘텐츠'에서 '보는 콘텐츠'로 완전히 재편될 것이며, Spotify 및 YouTube와의 경쟁이 더욱 치열해질 전망입니다.\n\n### 3. 무너지는 인터넷 신뢰와 'AI 환각' 저널리즘\n- **What:** 저명한 IT 매체 Ars Technica가 AI 도구로 생성된 '허위 인용문'이 포함된 기사를 게재했다가 철회하는 소동이 벌어졌습니다. [^5]\n- **Why:** 저널리즘의 검증 시스템조차 AI의 그럴듯한 거짓말(Hallucination)에 뚫릴 수 있음을 보여줍니다. \"인터넷을 더 이상 신뢰할 수 없다\"는 주장이 힘을 얻고 있습니다. [^10]\n- **Impact:** 펄프 픽션의 공동 작가가 AI로 새 영화를 만든다는 소식 [^32]처럼 창작의 도구로 쓰이는 반면, 정보의 진위 여부를 가리는 사회적 비용은 급증할 것입니다.\n\n---\n\n## 🛠️ Geek's Corner: 개발자 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Editor** | **VS Code v1.110** | 2026년 2월 최신 업데이트 배포 (Insiders) [^2] |\n| **Tool** | **Git의 진화** | 향후 10년을 위한 Git의 새로운 기능과 방향성 논의 [^12] |\n| **Lib** | **Oat** | 의존성 없는 초경량 시맨틱 HTML/CSS/JS UI 라이브러리 [^22] |\n| **Tool** | **GoScript** | Go 코드를 TypeScript로 변환해주는 트랜스파일러 [^21] |\n| **Web** | **Gwtar** | 정적이고 효율적인 단일 파일 HTML 포맷 제안 [^4] |\n| **CSS** | **Modern CSS** | 2015년 스타일을 버리고 최신 스펙을 활용한 코드 스니펫 모음 [^14] |\n| **AI Dev** | **Jsiphon** | LLM 스트리밍을 위한 델타 추적/중의성 감지 지원 JSON 파서 [^16] |\n| **Fun** | **zlog** | 오직 AI와의 대화로만 구축한 블로그 엔진 [^8] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n\n#### 💻 개발 \u0026 인프라\n* **윈도우 네이티브 개발 환경 개선**: 윈도우에서의 개발 경험을 획기적으로 고친 사례 공유 [^23]\n* **Nightshift**: 남는 AI 토큰을 활용해 밤새 유지보수 PR을 자동 생성하는 도구 [^37]\n* **배포 실수**: 새 웹사이트 배포 마지막 단계에서 실수로 사이트를 삭제해버린 개발자의 사연 [^40]\n* **Google 검색 오류**: 구글이 멀쩡한 웹사이트를 '다운'된 것으로 오판하는 이슈 발생 [^15]\n* **KanVibe**: 브라우저부터 터미널까지 AI 에이전트를 칸반 보드로 관리하는 오픈소스 [^9]\n* **Clerk**: (구체적 내용 확인 필요하나) 비전 또는 인증 관련 새로운 업데이트 추정 [^38]\n* **LLMFeeder v2.1.0**: 여러 탭의 웹 내용을 LLM 컨텍스트용 마크다운으로 변환 [^49]\n* **sl 명령어**: `ls`를 잘못 쳤을 때 기차가 지나가는 애니메이션을 보여주는 고전 유틸리티 소개 [^50]\n\n#### 🤖 AI \u0026 데이터\n* **빠른 LLM 추론**: 두 가지 서로 다른 방식의 고속 추론 기법 소개 [^11]\n* **AI 기업 데이터**: NBER에서 발표한 기업들의 AI 도입 및 데이터 활용 보고서 [^39]\n* **네덜란드 정부 Claude 플러그인**: 공공 업무를 위한 Claude AI 플러그인 공개 [^47]\n* **OpenAI의 Slack?**: OpenAI가 협업 툴인 Slack을 직접 만들어야 한다는 주장 [^29]\n\n#### 🛡️ 보안 \u0026 프라이버시 \u0026 사회\n* **팔란티어 논란**: NYC 공립병원이 팔란티어에 수백만 달러 지급 [^6], Discord 나이 인증 연루설 [^30], Kim Dotcom의 해킹 주장 [^46]\n* **감시 국가**: Amazon Ring과 Google Nest가 초래한 감시 사회의 심각성 [^24]\n* **패스워드 매니저 취약점**: 스위스 연구진, 주요 패스워드 매니저에서 보안 공백 발견 [^35]\n* **EU 환경 규제**: 팔리지 않은 의류와 신발의 폐기를 금지하는 새 규정 도입 [^25]\n\n#### 🎮 게임 \u0026 문화 \u0026 기타\n* **마그누스 칼슨 우승**: 2026 FIDE 프리스타일(체스960) 세계 챔피언 등극 [^7]\n* **히데키 사토 별세**: 세가의 모든 콘솔을 설계한 전설적인 디자이너 타계 [^20]\n* **Flashpoint Archive**: 웹 게임과 애니메이션 20만여 개를 보존하는 프로젝트 [^19]\n* **NewPipe**: 유튜브 알고리즘과 숏츠(세로 영상)를 제거한 오픈소스 클라이언트 [^18]\n* **Sameshi**: 단 2KB 용량으로 구현된 Elo 1200급 체스 엔진 [^28]\n* **LT6502**: 6502 프로세서 기반으로 만든 자작(Homebrew) 노트북 [^13]\n\n#### 🚀 Show HN \u0026 Product\n* **Snapbyte**: HN, Reddit 등의 개인화된 이메일 요약 서비스 [^34]\n* **ZIT**: 생물학적 이동(locomotion) 렌더링을 위한 플랑크톤 이미지 툴 [^42]\n* **7desk**: 에이전시와 프리랜서를 위한 올인원 워크스페이스 [^44]\n* **TaxPal**: 1099 프리랜서를 위한 무료 세금 계산기 [^51]\n* **소프트웨어 고고학**: 2026년 시점에서 바라본 레거시 코드 분석의 의미 [^45]\n* **Copyleft 반대**: 소프트웨어 라이선싱과 카피레프트에 대한 반대 의견 [^48]\n* **RIP - Rest in Prompt**: 프롬프트 엔지니어링의 종말을 고하는 에세이 [^33]\n* **SaaS의 위기**: 버티컬 소프트웨어 10년 개발자의 회의론 (\"Are we cooked?\") [^41]\n* **Apple Beta**: 개발자를 위한 최신 베타 릴리즈 공개 [^3]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘은 '**OpenClaw**'라는 키워드가 개발자 커뮤니티를 강타했습니다. 오픈소스 AI가 기업에 흡수되는 과정은 과거 리눅스나 안드로이드의 역사를 떠올리게 하네요. 한편, **NVIDIA**가 쏘아 올린 하드웨어 혁신이 소비자 가전 시장의 메모리 부족 사태(파산 위기)로 이어질 수 있다는 전망은 기술 발전의 명과 암을 적나라하게 보여줍니다. 개발자 여러분은 오늘 소개된 **Git의 미래**나 **Modern CSS** 같은 실용적인 팁도 놓치지 마세요!\n\n[^1]: Apple introduces a new video podcast experience on Apple Podcasts - https://www.apple.com/newsroom/2026/02/apple-introduces-a-new-video-podcast-experience-on-apple-podcasts/\n[^2]: February 2026 Insiders (version 1.110) - https://code.visualstudio.com/updates/v1_110\n[^3]: Get ready with the latest beta releases - https://developer.apple.com/news/?id=xgkk9w83\n[^4]: Gwtar: 정적이고 효율적인 단일 파일 HTML 형식 - https://news.hada.io/topic?id=26743\n[^5]: Ars Technica가 \u0026quot;AI 도구가 생성한 허위 인용문\u0026quot;이 포함된 기사를 게재한 후 이를 철회 - https://news.hada.io/topic?id=26742\n[^6]: 뉴욕시 공립병원, 팔란티어에 수백만 달러 지급 - https://news.hada.io/topic?id=26741\n[^7]: 마그누스 칼슨, 2026 FIDE 프리스타일(체스960) 세계 챔피언 등극 - https://news.hada.io/topic?id=26740\n[^8]: Show GN: 오직 AI와의 대화로만 만들어본 블로그 엔진, zlog를 소개합니다. - https://news.hada.io/topic?id=26739\n[^9]: Show GN: KanVibe - 브라우저에서 터미널까지, AI 에이전트를 칸반으로 자동 관리하는 오픈소스 - https://news.hada.io/topic?id=26737\n[^10]: 인터넷을 더 이상 신뢰할 수 없다 - https://news.hada.io/topic?id=26736\n[^11]: 두 가지 다른 방식의 빠른 LLM 추론 기법 - https://news.hada.io/topic?id=26735\n[^12]: Git의 다음 10년을 위한 진화 - https://news.hada.io/topic?id=26734\n[^13]: LT6502: 6502 기반 홈브류 노트북 - https://news.hada.io/topic?id=26732\n[^14]: 모던 CSS 코드 스니펫: 더 이상 2015년처럼 CSS를 작성하지 말자 - https://news.hada.io/topic?id=26731\n[^15]: 구글이 귀하의 웹사이트가 다운되었다고 생각할 수 있습니다 - https://news.hada.io/topic?id=26730\n[^16]: Show GN: Jsiphon - 델타 추적과 중의성 감지를 지원하는 LLM 스트리밍용 JSON 파서 - https://news.hada.io/topic?id=26729\n[^17]: Kimi Claw - OpenClaw를 클라우드에 원클릭 배포해서 사용하기 - https://news.hada.io/topic?id=26728\n[^18]: 유튜브 알고리듬 피드와 세로 영상이 없는 오픈소스 클라이언트 NewPipe - https://news.hada.io/topic?id=26727\n[^19]: 웹 게임과 애니메이션 20만여 개를 보존한 Flashpoint Archive - https://news.hada.io/topic?id=26726\n[^20]: 세가의 모든 콘솔을 설계한 디자이너 히데키 사토 별세 - https://news.hada.io/topic?id=26725\n[^21]: GoScript - Go 코드를 TypeScript로 변환하는 트랜스파일러 - https://news.hada.io/topic?id=26724\n[^22]: Oat - 초경량, 제로 의존성, 시맨틱 HTML·CSS·JS UI 라이브러리 - https://news.hada.io/topic?id=26723\n[^23]: 윈도우 네이티브 개발 환경을 고쳤어요 - https://news.hada.io/topic?id=26722\n[^24]: 미국 감시국가의 심각성을 드러낸 Amazon Ring과 Google Nest - https://news.hada.io/topic?id=26721\n[^25]: EU, 판매되지 않은 의류·신발 폐기를 금지하는 새 규정 도입 - https://news.hada.io/topic?id=26720\n[^26]: ArchWiki 유지관리자들의 작업을 사랑함 - https://news.hada.io/topic?id=26719\n[^27]: OpenClaw 개발자 Peter Steinberger, OpenAI 합류 - https://news.hada.io/topic?id=26718\n[^28]: Sameshi – 2KB 안에 구현된 약 1200 Elo 체스 엔진 - https://news.hada.io/topic?id=26717\n[^29]: OpenAI가 Slack을 만들어야 하는 이유 - https://news.hada.io/topic?id=26716\n[^30]: Discord의 나이 인증 시스템 도입에 팔란티어 공동창업자가 연관되어 논란 - https://news.hada.io/topic?id=26715\n[^31]: OpenClaw 제작자, OpenAI에 합류 - https://news.hada.io/topic?id=26714\n[^32]: 'Pulp Fiction' Co-Writer Announces He's Using AI to Create 3 New Feature Films - https://nofilmschool.com/roger-avary-ai-films\n[^33]: RIP – Rest in Prompt - https://hugodaniel.com/posts/rip-rest-in-prompt/\n[^34]: Show HN: Snapbyte – personalized email digests from HN/Reddit/Lobsters - https://snapbyte.dev\n[^35]: Swiss researchers find password manager security gaps - https://www.swissinfo.ch/eng/various/researchers-find-major-security-gaps-in-password-managers/90951851\n[^36]: Many consumer electronics manufacturers 'will go bankrupt' by the end of 2026 - https://www.pcgamer.com/hardware/memory/many-consumer-electronics-manufacturers-will-go-bankrupt-or-exit-product-lines-by-the-end-of-2026-due-to-the-ai-memory-crisis-phison-ceo-reportedly-says/\n[^37]: Nightshift: Use your leftover CC/Codex tokens overnight for maintenance PRs - https://github.com/marcus/nightshift\n[^38]: Clerk - https://clerk.vision/\n[^39]: Firm Data on AI - https://www.nber.org/papers/w34836\n[^40]: Final step to put new website into production deleted it instead - https://www.theregister.com/2026/02/16/who_me/\n[^41]: 10 years building vertical software: are we cooked? - https://twitter.com/nicbstme/status/2023501562480644501\n[^42]: Show HN: ZIT: Zooplankton Image Tool for 2d rendering of biological locomotion - https://github.com/juleshenry/zooplankton-image-tool\n[^43]: After all the hype, some AI experts don't think OpenClaw is all that exciting - https://techcrunch.com/2026/02/16/after-all-the-hype-some-ai-experts-dont-think-openclaw-is-all-that-exciting/\n[^44]: Show HN: I built an all-in-one workspace for agencies and freelancers - https://www.7desk.io\n[^45]: Software Archeology in 2026 - https://xav.io/blog/software-archeology/\n[^46]: Kim Dotcom says Palantir allegedly hacked - https://twitter.com/KimDotcom/status/2023165849721536672\n[^47]: Dutch Government Claude Plugins - https://github.com/MinBZK/overheid-claude-plugins\n[^48]: Software licensing and my opposition to copyleft - https://github.com/BurntSushi/notes/blob/fae52f03a655c1294226482d4ddd70c55cf62af3/2020-10-29_licensing-and-copyleft.md\n[^49]: Show HN: LLMFeeder – Multi-tab web to Markdown for LLM context (v2.1.0) - https://news.ycombinator.com/item?id=47040739\n[^50]: Sl − display animations to correct users who accidentally enter sl instead of ls - https://man.cx/sl%286%29\n[^51]: Show HN: TaxPal – Free tax calculator for 1099 freelancers (Q1 due April 15) - https://taxpal-kappa.vercel.app\n[^52]: Running NanoClaw in a Docker Shell Sandbox - https://www.docker.com/blog/run-nanoclaw-in-docker-shell-sandboxes/\n[^53]: New SemiAnalysis InferenceX Data Shows NVIDIA Blackwell Ultra Delivers up to 50x Better Performance and 35x Lower Costs for Agentic AI - https://blogs.nvidia.com/blog/data-blackwell-ultra-performance-lower-cost-agentic-ai/\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **Apple introduces a new video podcast experience on Apple Podcasts\n**\n   - 출처: Apple Newsroom\n   - 링크: https://www.apple.com/newsroom/2026/02/apple-introduces-a-new-video-podcast-experience-on-apple-podcasts/\n\n2. **February 2026 Insiders (version 1.110)**\n   - 출처: Visual Studio Code - Code Editing. Redefined.\n   - 링크: https://code.visualstudio.com/updates/v1_110\n\n3. **Get ready with the latest beta releases**\n   - 출처: Latest News - Apple Developer\n   - 링크: https://developer.apple.com/news/?id=xgkk9w83\n\n4. **Gwtar: 정적이고 효율적인 단일 파일 HTML 형식**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26743\n\n5. **Ars Technica가 \u0026quot;AI 도구가 생성한 허위 인용문\u0026quot;이 포함된 기사를 게재한 후 이를 철회**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26742\n\n6. **뉴욕시 공립병원, 팔란티어에 수백만 달러 지급**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26741\n\n7. **마그누스 칼슨, 2026 FIDE 프리스타일(체스960) 세계 챔피언 등극**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26740\n\n8. **Show GN: 오직 AI와의 대화로만 만들어본 블로그 엔진, zlog를 소개합니다.**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26739\n\n9. **Show GN: KanVibe - 브라우저에서 터미널까지, AI 에이전트를 칸반으로 자동 관리하는 오픈소스**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26737\n\n10. **인터넷을 더 이상 신뢰할 수 없다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26736\n\n11. **두 가지 다른 방식의 빠른 LLM 추론 기법**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26735\n\n12. **Git의 다음 10년을 위한 진화**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26734\n\n13. **LT6502: 6502 기반 홈브류 노트북**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26732\n\n14. **모던 CSS 코드 스니펫: 더 이상 2015년처럼 CSS를 작성하지 말자**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26731\n\n15. **구글이 귀하의 웹사이트가 다운되었다고 생각할 수 있습니다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26730\n\n16. **Show GN: Jsiphon - 델타 추적과 중의성 감지를 지원하는 LLM 스트리밍용 JSON 파서**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26729\n\n17. **Kimi Claw - OpenClaw를 클라우드에 원클릭 배포해서 사용하기 **\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26728\n\n18. **유튜브 알고리듬 피드와 세로 영상이 없는 오픈소스 클라이언트 NewPipe**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26727\n\n19. **웹 게임과 애니메이션 20만여 개를 보존한 Flashpoint Archive**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26726\n\n20. **세가의 모든 콘솔을 설계한 디자이너 히데키 사토 별세**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26725\n\n21. **GoScript - Go 코드를 TypeScript로 변환하는 트랜스파일러**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26724\n\n22. **Oat - 초경량, 제로 의존성, 시맨틱 HTML·CSS·JS UI 라이브러리 **\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26723\n\n23. **윈도우 네이티브 개발 환경을 고쳤어요**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26722\n\n24. **미국 감시국가의 심각성을 드러낸 Amazon Ring과 Google Nest**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26721\n\n25. **EU, 판매되지 않은 의류·신발 폐기를 금지하는 새 규정 도입**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26720\n\n26. **ArchWiki 유지관리자들의 작업을 사랑함**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26719\n\n27. **OpenClaw 개발자 Peter Steinberger, OpenAI 합류**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26718\n\n28. **Sameshi – 2KB 안에 구현된 약 1200 Elo 체스 엔진**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26717\n\n29. **OpenAI가 Slack을 만들어야 하는 이유**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26716\n\n30. **Discord의 나이 인증 시스템 도입에 팔란티어 공동창업자가 연관되어 논란**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26715\n\n31. **OpenClaw 제작자, OpenAI에 합류**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26714\n\n32. **'Pulp Fiction' Co-Writer Announces He's Using AI to Create 3 New Feature Films**\n   - 출처: Hacker News\n   - 링크: https://nofilmschool.com/roger-avary-ai-films\n\n33. **RIP – Rest in Prompt**\n   - 출처: Hacker News\n   - 링크: https://hugodaniel.com/posts/rip-rest-in-prompt/\n\n34. **Show HN: Snapbyte – personalized email digests from HN/Reddit/Lobsters**\n   - 출처: Hacker News\n   - 링크: https://snapbyte.dev\n\n35. **Swiss researchers find password manager security gaps**\n   - 출처: Hacker News\n   - 링크: https://www.swissinfo.ch/eng/various/researchers-find-major-security-gaps-in-password-managers/90951851\n\n36. **Many consumer electronics manufacturers 'will go bankrupt' by the end of 2026**\n   - 출처: Hacker News\n   - 링크: https://www.pcgamer.com/hardware/memory/many-consumer-electronics-manufacturers-will-go-bankrupt-or-exit-product-lines-by-the-end-of-2026-due-to-the-ai-memory-crisis-phison-ceo-reportedly-says/\n\n37. **Nightshift: Use your leftover CC/Codex tokens overnight for maintenance PRs**\n   - 출처: Hacker News\n   - 링크: https://github.com/marcus/nightshift\n\n38. **Clerk**\n   - 출처: Hacker News\n   - 링크: https://clerk.vision/\n\n39. **Firm Data on AI**\n   - 출처: Hacker News\n   - 링크: https://www.nber.org/papers/w34836\n\n40. **Final step to put new website into production deleted it instead**\n   - 출처: Hacker News\n   - 링크: https://www.theregister.com/2026/02/16/who_me/\n\n41. **10 years building vertical software: are we cooked?**\n   - 출처: Hacker News\n   - 링크: https://twitter.com/nicbstme/status/2023501562480644501\n\n42. **Show HN: ZIT: Zooplankton Image Tool for 2d rendering of biological locomotion**\n   - 출처: Hacker News\n   - 링크: https://github.com/juleshenry/zooplankton-image-tool\n\n43. **After all the hype, some AI experts don't think OpenClaw is all that exciting**\n   - 출처: Hacker News\n   - 링크: https://techcrunch.com/2026/02/16/after-all-the-hype-some-ai-experts-dont-think-openclaw-is-all-that-exciting/\n\n44. **Show HN: I built an all-in-one workspace for agencies and freelancers**\n   - 출처: Hacker News\n   - 링크: https://www.7desk.io\n\n45. **Software Archeology in 2026**\n   - 출처: Hacker News\n   - 링크: https://xav.io/blog/software-archeology/\n\n46. **Kim Dotcom says Palantir allegedly hacked**\n   - 출처: Hacker News\n   - 링크: https://twitter.com/KimDotcom/status/2023165849721536672\n\n47. **Dutch Government Claude Plugins**\n   - 출처: Hacker News\n   - 링크: https://github.com/MinBZK/overheid-claude-plugins\n\n48. **Software licensing and my opposition to copyleft**\n   - 출처: Hacker News\n   - 링크: https://github.com/BurntSushi/notes/blob/fae52f03a655c1294226482d4ddd70c55cf62af3/2020-10-29_licensing-and-copyleft.md\n\n49. **Show HN: LLMFeeder – Multi-tab web to Markdown for LLM context (v2.1.0)**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=47040739\n\n50. **Sl − display animations to correct users who accidentally enter sl instead of ls**\n   - 출처: Hacker News\n   - 링크: https://man.cx/sl%286%29\n\n51. **Show HN: TaxPal – Free tax calculator for 1099 freelancers (Q1 due April 15)**\n   - 출처: Hacker News\n   - 링크: https://taxpal-kappa.vercel.app\n\n52. **Running NanoClaw in a Docker Shell Sandbox**\n   - 출처: Docker Blog\n   - 링크: https://www.docker.com/blog/run-nanoclaw-in-docker-shell-sandboxes/\n\n53. **New SemiAnalysis InferenceX Data Shows NVIDIA Blackwell Ultra Delivers up to 50x Better Performance and 35x Lower Costs for Agentic AI**\n   - 출처: NVIDIA Blog\n   - 링크: https://blogs.nvidia.com/blog/data-blackwell-ultra-performance-lower-cost-agentic-ai/\n\n\n",
+  "articles": [
+    {
+      "title": "Apple introduces a new video podcast experience on Apple Podcasts\n",
+      "link": "https://www.apple.com/newsroom/2026/02/apple-introduces-a-new-video-podcast-experience-on-apple-podcasts/",
+      "source": "Apple Newsroom",
+      "category": "tech",
+      "publishedAt": "2026-02-16T18:16:35.574Z",
+      "description": "Apple today announced a transformative update coming to Apple Podcasts this spring that will bring advanced video podcast capabilities to the app."
+    },
+    {
+      "title": "February 2026 Insiders (version 1.110)",
+      "link": "https://code.visualstudio.com/updates/v1_110",
+      "source": "Visual Studio Code - Code Editing. Redefined.",
+      "category": "tech",
+      "publishedAt": "2026-03-04T17:00:00Z",
+      "description": "\n      \u003cp\u003eLearn what is new in the Visual Studio Code February 2026 Release (1.110).\u003c/p\u003e\n      \u003cp\u003e\u003ca href=\"https://code.visualstudio.com/updates/v1_110\"\u003eRead the full article\u003c/a\u003e\u003c/p\u003e\n    "
+    },
+    {
+      "title": "Get ready with the latest beta releases",
+      "link": "https://developer.apple.com/news/?id=xgkk9w83",
+      "source": "Latest News - Apple Developer",
+      "category": "tech",
+      "publishedAt": "2026-02-16T07:00:14Z",
+      "description": "\u003cp\u003eThe beta versions of iOS 26.4, iPadOS 26.4, macOS 26.4, tvOS 26.4, visionOS 26.4, and watchOS 26.4 are now available. Get your apps ready by confirming they work as expected on these releases. And make sure to build and test with Xcode 26.4 beta to take advantage of the advancements in the latest SDKs.\u003c/p\u003e\u003cp\u003e\u003ca href=\"https://developer.apple.com/news/releases/\"\u003eView downloads and \u003cspan class=\"icon icon-after icon-chevronright nowrap\"\u003erelease notes\u003c/span\u003e\u003c/a\u003e\u003c/p\u003e\u003cp\u003e\u003ca href=\"https://developer.apple.com/documentation/xcode/testing-a-beta-os\"\u003eLearn about testing a \u003cspan class=\"icon icon-after icon-chevronright nowrap\"\u003ebeta OS\u003c/span\u003e\u003c/a\u003e\u003c/p\u003e\u003cp\u003e\u003ca href=\"https://developer.apple.com/bug-reporting/\"\u003eLearn about \u003cspan class=\"icon icon-after icon-chevronright nowrap\"\u003esending feedback\u003c/span\u003e\u003c/a\u003e\u003c/p\u003e"
+    },
+    {
+      "title": "Gwtar: 정적이고 효율적인 단일 파일 HTML 형식",
+      "link": "https://news.hada.io/topic?id=26743",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-17T06:32:57+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eGwtar\u003c/strong\u003e는 웹 브라우저가 효율적으로 \u003cstrong\u003e지연 로딩(lazy-loading)\u003c/strong\u003e 할 수 있는 \u003cstrong\u003e단일 HTML 아카이브 파일 형식\u003c/strong\u003e으로, 모든 자산을 포함하면서도 정적·단일·효율성을 동시에 달성함\u003c/li\u003e\n\u003cli\u003eHTML과 JavaScript 헤더 뒤에 \u003cstrong\u003etarball 형태의 원본 HTML 및 자산...\u003c/p\u003e"
+    },
+    {
+      "title": "Ars Technica가 \u0026quot;AI 도구가 생성한 허위 인용문\u0026quot;이 포함된 기사를 게재한 후 이를 철회",
+      "link": "https://news.hada.io/topic?id=26742",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-17T05:33:04+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e문제의 인용문은 실제 발언자가 하지 않은 말을 \u003cstrong\u003eAI가 생성했음에도 출처로 잘못 표기\u003c/strong\u003e된 것으로 확인\u003c/li\u003e\n\u003cli\u003e매체는 이번 사건을 \u003cstrong\u003e편집 기준의 심각한 실패\u003c/strong\u003e로 규정하고, 모든 직접 인용은 실제 발언을 반영해야 한다고 명시\u003c/li\u003e\n\u003cli\u003e내부 검토 결과 \u003cstrong\u003e추가적인 유사 ...\u003c/p\u003e"
+    },
+    {
+      "title": "뉴욕시 공립병원, 팔란티어에 수백만 달러 지급",
+      "link": "https://news.hada.io/topic?id=26741",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-17T04:32:52+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e뉴욕시 공립병원 시스템이 \u003cstrong\u003e팔란티어(Palantir)\u003c/strong\u003e 와 계약을 맺고 병원 청구 효율화를 위해 약 \u003cstrong\u003e400만 달러\u003c/strong\u003e를 지급함\u003c/li\u003e\n\u003cli\u003e팔란티어는 \u003cstrong\u003e메디케이드 및 공공복지 청구 자동화\u003c/strong\u003e를 위해 환자 건강기록을 스캔해 누락된 청구 기회를 찾아내는 소프트웨어를 제공함...\u003c/p\u003e"
+    },
+    {
+      "title": "마그누스 칼슨, 2026 FIDE 프리스타일(체스960) 세계 챔피언 등극",
+      "link": "https://news.hada.io/topic?id=26740",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-17T01:33:27+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e마그누스 칼슨\u003c/strong\u003e이 독일 바이센하우스에서 열린 \u003cstrong\u003e2026 FIDE 프리스타일 체스 세계선수권\u003c/strong\u003e에서 우승하며 첫 공식 FIDE 인정 타이틀을 획득\u003c/li\u003e\n\u003cli\u003e결승전에서 \u003cstrong\u003e파비아노 카루아나\u003c/strong\u003e를 상대로 2.5–1.5로 승리, 마지막 4국 무승부로 우승 확정\u003c/li\u003e\n\u003cli\u003e3국에서 ...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: 오직 AI와의 대화로만 만들어본 블로그 엔진, zlog를 소개합니다.",
+      "link": "https://news.hada.io/topic?id=26739",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-16T22:33:34+09:00",
+      "description": "\u003cp\u003e안녕하세요. AI의 도움을 받아 예전부터 구상해 왔던 블로그 프로젝트 'zlog'를 개발해 보았습니다.\u003c/p\u003e\n\u003cp\u003ezlog의 핵심 기능은 '구독과 통합'입니다.\u003cbr /\u003e\n다른 zlog 사용자의 특정 카테고리를 구독하여 내 블로그에서 내가 원하는 디자인으로 모아볼 수 있습니다. 관심 분야가 비슷한 친구들이나 동호회원들이 각자"
+    },
+    {
+      "title": "Show GN: KanVibe - 브라우저에서 터미널까지, AI 에이전트를 칸반으로 자동 관리하는 오픈소스",
+      "link": "https://news.hada.io/topic?id=26737",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-16T21:21:31+09:00",
+      "description": "\u003cp\u003eClaude Code 에이전트를 브랜치별로 5~10개 동시에 돌리다 보면, 어떤 에이전트가 작업 중이고, 어떤 게 내 답변을 기다리고 있고, 어떤 게 끝났는지 파악이 안 됩니다. tmux 세션을 하나하나 attach 해서 확인하는 건 너무 비효율적이었습니다.\u003c/p\u003e\n\u003cp\u003eKanVibe는 이 문제를 해결하기 위해 만든 셀프 호스팅 칸반 보드"
+    },
+    {
+      "title": "인터넷을 더 이상 신뢰할 수 없다",
+      "link": "https://news.hada.io/topic?id=26736",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-16T20:13:22+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e일본 세가 제네시스용 재발매 게임 \u003cstrong\u003e‘Phantasy Star Fukkokuban’\u003c/strong\u003e 을 검색하던 중, 실제 존재하지 않는 \u003cstrong\u003eAI 생성 허위 기사\u003c/strong\u003e를 발견한 사례를 중심으로 인터넷 신뢰 붕괴를 다룬 글\u003c/li\u003e\n\u003cli\u003e검색 결과 상위에 노출된 사이트가 \u003cstrong\u003e그래픽 향상·날씨 효과\u003c/strong\u003e 등 사실...\u003c/p\u003e"
+    },
+    {
+      "title": "두 가지 다른 방식의 빠른 LLM 추론 기법",
+      "link": "https://news.hada.io/topic?id=26735",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-16T20:12:00+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eAnthropic과 OpenAI\u003c/strong\u003e가 각각 자사 최고 코딩 모델의 \u003cstrong\u003e‘fast mode’\u003c/strong\u003e 를 공개하며 추론 속도를 대폭 향상시킴\u003c/li\u003e\n\u003cli\u003eAnthropic은 \u003cstrong\u003eOpus 4.6 모델을 그대로 사용\u003c/strong\u003e하면서 배치 크기를 줄여 최대 \u003cstrong\u003e2.5배 빠른 토큰 처리 속도\u003c/strong\u003e를 제공\u003c/li\u003e\n\u003cli\u003e...\u003c/p\u003e"
+    },
+    {
+      "title": "Git의 다음 10년을 위한 진화",
+      "link": "https://news.hada.io/topic?id=26734",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-16T20:10:59+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e전 세계 개발자들이 사용하는 \u003cstrong\u003eGit\u003c/strong\u003e이 향후 10년을 대비해 구조적 변화를 추진 중이며, \u003cstrong\u003e보안·확장성·사용성\u003c/strong\u003e을 중심으로 주요 개편이 진행되고 있음\u003c/li\u003e\n\u003cli\u003e가장 눈에 띄는 변화는 \u003cstrong\u003eSHA-1에서 SHA-256으로의 전환\u003c/strong\u003e으로, 2030년까지 SHA-1 사용이 금지될 예정이...\u003c/p\u003e"
+    },
+    {
+      "title": "LT6502: 6502 기반 홈브류 노트북",
+      "link": "https://news.hada.io/topic?id=26732",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-16T18:32:45+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e8MHz로 동작하는 \u003cstrong\u003e65C02 프로세서\u003c/strong\u003e와 \u003cstrong\u003e46KB RAM\u003c/strong\u003e, \u003cstrong\u003eBASIC ROM\u003c/strong\u003e을 탑재한 자작형 노트북 설계\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e9인치 디스플레이\u003c/strong\u003e, \u003cstrong\u003e내장 키보드\u003c/strong\u003e, \u003cstrong\u003eCompact Flash 저장장치\u003c/strong\u003e, \u003cstrong\u003e10000mAh 배터리\u003c/strong\u003e, \u003cstron...\u003c/p\u003e"
+    },
+    {
+      "title": "모던 CSS 코드 스니펫: 더 이상 2015년처럼 CSS를 작성하지 말자",
+      "link": "https://news.hada.io/topic?id=26731",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-16T15:33:05+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e오래된 \u003cstrong\u003eCSS 해킹 기법\u003c/strong\u003e과 이를 대체하는 \u003cstrong\u003e최신 네이티브 CSS 문법\u003c/strong\u003e을 나란히 비교해 보여주는 코드 모음\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eGrid, Flexbox, OKLCH 색상, container query, scroll-timeline\u003c/strong\u003e 등 최신 표준을 활용해 자바스크립트 의존도를 줄임\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e색상,...\u003c/p\u003e"
+    },
+    {
+      "title": "구글이 귀하의 웹사이트가 다운되었다고 생각할 수 있습니다",
+      "link": "https://news.hada.io/topic?id=26730",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-16T14:47:03+09:00",
+      "description": "구글이 귀하의 웹사이트가 다운되었다고 생각할 수 있습니다"
+    },
+    {
+      "title": "Show GN: Jsiphon - 델타 추적과 중의성 감지를 지원하는 LLM 스트리밍용 JSON 파서",
+      "link": "https://news.hada.io/topic?id=26729",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-16T14:19:00+09:00",
+      "description": "\u003cp\u003e안녕하세요, \u003cstrong\u003eJsiphon\u003c/strong\u003e을 소개합니다. LLM 스트리밍에 구조화된 응답을 사용할 때 흔히 발생하는 문제를 해결합니다.\u003c/p\u003e\n\u003cp\u003eLLM에 구조화된 응답(JSON모드)을 스트리밍과 같이 사용할 때 흔히 부분 응답 파싱하는 문제에 부딪히는데요. 이런 경우에 그냥 JSON.parse()할 수는 없고 반복적으로 불완전"
+    },
+    {
+      "title": "Kimi Claw - OpenClaw를 클라우드에 원클릭 배포해서 사용하기 ",
+      "link": "https://news.hada.io/topic?id=26728",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-16T12:23:14+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eOpenClaw\u003c/strong\u003e를 Kimi 플랫폼을 통해 \u003cstrong\u003e클라우드에 원클릭으로 몇 초안에 배포\u003c/strong\u003e 가능\u003c/li\u003e\n\u003cli\u003e복잡한 설정 없이 \u003cstrong\u003e24시간 온라인 상태\u003c/strong\u003e로 유지되며, 즉시 사용 가능한 형태로 제공됨\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eKimi K2.5 Thinking\u003c/strong\u003e이 적용되어 있으며, 다양한 스킬...\u003c/p\u003e"
+    },
+    {
+      "title": "유튜브 알고리듬 피드와 세로 영상이 없는 오픈소스 클라이언트 NewPipe",
+      "link": "https://news.hada.io/topic?id=26727",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-16T11:36:59+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e광고 없이 \u003cstrong\u003e가벼운 유튜브 시청 환경\u003c/strong\u003e을 제공하는 Android용 오픈소스 앱으로, Google API를 사용하지 않아 \u003cstrong\u003e개인정보 보호\u003c/strong\u003e 중심의 설계를 갖춤\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e오프라인 저장\u003c/strong\u003e, \u003cstrong\u003e백그라운드 재생\u003c/strong\u003e, \u003cstrong\u003e팝업 플레이어\u003c/strong\u003e 등 다양한 재생 ...\u003c/p\u003e"
+    },
+    {
+      "title": "웹 게임과 애니메이션 20만여 개를 보존한 Flashpoint Archive",
+      "link": "https://news.hada.io/topic?id=26726",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-16T11:33:59+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e웹 기반 \u003cstrong\u003e게임과 애니메이션을 장기 보존\u003c/strong\u003e하기 위한 커뮤니티 주도의 프로젝트로, 빠르게 변화하는 인터넷 환경에서 사라질 수 있는 콘텐츠를 보호함\u003c/li\u003e\n\u003cli\u003e2017년 12월 이후 \u003cstrong\u003e100여 종의 브라우저 플러그인과 웹 기술\u003c/strong\u003e을 아우르며 20만 개 이상의 작품을 보존\u003c/li\u003e\n\u003cli\u003e보존...\u003c/p\u003e"
+    },
+    {
+      "title": "세가의 모든 콘솔을 설계한 디자이너 히데키 사토 별세",
+      "link": "https://news.hada.io/topic?id=26725",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-16T10:32:32+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e세가의 \u003cstrong\u003e아케이드 및 가정용 콘솔 하드웨어 개발을 이끈 엔지니어 히데키 사토\u003c/strong\u003e가 향년 77세로 별세\u003c/li\u003e\n\u003cli\u003e그는 \u003cstrong\u003eMaster System, Mega Drive, Saturn, Dreamcast\u003c/strong\u003e 등 주요 콘솔의 설계를 총괄하며 세가 하드웨어 역사를 형성\u003c/li\u003e\n\u003cli\u003e1971년 세가 입사 후 2001~2003년 \u003cstro...\u003c/p\u003e"
+    },
+    {
+      "title": "GoScript - Go 코드를 TypeScript로 변환하는 트랜스파일러",
+      "link": "https://news.hada.io/topic?id=26724",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-16T09:51:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eGo와 TS간 비즈니스 로직 공유\u003c/strong\u003e를 목표로 개발된 \u003cstrong\u003eAST 기반 트랜스파일러\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003eGo 언어의 \u003cstrong\u003e알고리듬, 데이터 구조, 동시성 로직\u003c/strong\u003e을 TypeScript로 변환해 \u003cstrong\u003e백엔드와 프론트엔드 간 코드 재사용\u003c/strong\u003e 지원\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eStruct, Interface...\u003c/p\u003e"
+    },
+    {
+      "title": "Oat - 초경량, 제로 의존성, 시맨틱 HTML·CSS·JS UI 라이브러리 ",
+      "link": "https://news.hada.io/topic?id=26723",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-16T09:50:07+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eHTML과 CSS 기반의 초경량 UI 컴포넌트 라이브러리\u003c/strong\u003e로, 빌드 과정이나 프레임워크 의존성이 전혀 없는 구조\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e6KB CSS와 2.2KB JS\u003c/strong\u003e(압축 및 gzip 기준)만으로 구성되어, 웹 애플리케이션에 필요한 주요 UI 요소를 즉시 사용 가능\u003c/li\u003e\n\u003cli\u003e\n\u003ccode\u003e\u0026lt;button\u0026gt;\u003c/co...\u003c/p\u003e"
+    },
+    {
+      "title": "윈도우 네이티브 개발 환경을 고쳤어요",
+      "link": "https://news.hada.io/topic?id=26722",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-16T09:47:07+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e윈도우 네이티브 개발은 \u003cstrong\u003eVisual Studio 설치 의존성\u003c/strong\u003e으로 인해 복잡하고 비효율적\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e수십 GB 설치 용량\u003c/strong\u003e, \u003cstrong\u003e불투명한 구성 요소 관리\u003c/strong\u003e, \u003cstrong\u003e버전 불일치 문제\u003c/strong\u003e 등으로 개발자 생산성을 저하시킴\u003c/li\u003e\n\u003cli\u003e이를 해결하기 위해 \u003cstrong\u003e경량 ...\u003c/p\u003e"
+    },
+    {
+      "title": "미국 감시국가의 심각성을 드러낸 Amazon Ring과 Google Nest",
+      "link": "https://news.hada.io/topic?id=26721",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-16T09:44:07+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eAmazon Ring 광고와 Google Nest 사례\u003c/strong\u003e가 미국 내 \u003cstrong\u003e국가-기업 감시체계의 확산\u003c/strong\u003e을 드러냄\u003c/li\u003e\n\u003cli\u003eSuper Bowl 광고에서 Ring의 \u003cstrong\u003e‘Search Party’ 기능\u003c/strong\u003e이 공개되며, 이웃 간 카메라 연결을 통한 \u003cstrong\u003eAI 기반 탐색 네트워크\u003c/strong\u003e가 논란을 일으킴\u003c/li...\u003c/p\u003e"
+    },
+    {
+      "title": "EU, 판매되지 않은 의류·신발 폐기를 금지하는 새 규정 도입",
+      "link": "https://news.hada.io/topic?id=26720",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-16T09:41:07+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e유럽연합은 \u003cstrong\u003e판매되지 않은 의류·신발·패션 액세서리의 폐기 금지 규정\u003c/strong\u003e을 채택해, 낭비와 환경 피해를 줄이는 조치를 시행\u003c/li\u003e\n\u003cli\u003e새 규정은 \u003cstrong\u003eEcodesign for Sustainable Products Regulation(ESPR)\u003c/strong\u003e 에 따라 기업이 미판매 소비재 폐기 정보를 공개하도록 의무화\u003c/li\u003e\n\u003cli\u003e\n...\u003c/p\u003e"
+    },
+    {
+      "title": "ArchWiki 유지관리자들의 작업을 사랑함",
+      "link": "https://news.hada.io/topic?id=26719",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-16T09:38:06+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e자유 소프트웨어 문서화에 헌신하는 \u003cstrong\u003e유지관리자들\u003c/strong\u003e, 특히 \u003cstrong\u003eArchWiki 팀\u003c/strong\u003e의 노고에 대한 감사를 전함\u003c/li\u003e\n\u003cli\u003eArchWiki는 \u003cstrong\u003eArch Linux뿐 아니라 다양한 자유 소프트웨어 배포판\u003c/strong\u003e 사용자들이 참고하는 핵심 자료로 언급됨\u003c/li\u003e\n\u003cli\u003e이메일 클라이언트, 편집기, 윈...\u003c/p\u003e"
+    },
+    {
+      "title": "OpenClaw 개발자 Peter Steinberger, OpenAI 합류",
+      "link": "https://news.hada.io/topic?id=26718",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-16T09:24:24+09:00",
+      "description": "\u003cp\u003e피터 스타인버거가 차세대 개인 에이전트 개발을 주도하기 위해 OpenAI에 합류했습니다. 그는 미래에 매우 똑똑한 에이전트들이 서로 상호작용하며 사람들에게 매우 유용한 일들을 해낼 것이라는 놀라운 아이디어를 많이 가진 천재입니다. 우리는 이러한 아이디어가 곧 우리 제품의 핵심이 될 것으로 기대합니다.\u003c/p\u003e"
+    },
+    {
+      "title": "Sameshi – 2KB 안에 구현된 약 1200 Elo 체스 엔진",
+      "link": "https://news.hada.io/topic?id=26717",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-16T08:36:52+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e약 \u003cstrong\u003e2KB 크기\u003c/strong\u003e로 동작하는 \u003cstrong\u003e경량 체스 엔진\u003c/strong\u003e으로, 제한된 규칙 내에서 완전한 게임 진행이 가능함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e120셀 메일박스 보드\u003c/strong\u003e, \u003cstrong\u003e네가맥스 탐색\u003c/strong\u003e, \u003cstrong\u003e알파-베타 가지치기\u003c/strong\u003e 등 핵심 알고리듬을 포함함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e기물 가...\u003c/p\u003e"
+    },
+    {
+      "title": "OpenAI가 Slack을 만들어야 하는 이유",
+      "link": "https://news.hada.io/topic?id=26716",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-16T08:33:52+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eSam Altman이 \u0026quot;사람들이 어렵다고 생각하지만 실현되면 큰 영향을 줄 프로젝트\u0026quot;를 선택한다고 밝힌 가운데, \u003cstrong\u003eOpenAI가 Slack 대체 서비스를 구축해야 한다\u003c/strong\u003e는 @swyx의 제안\u003c/li\u003e\n\u003cli\u003eSlack은 2019년 \u003cstrong\u003e개발자 커뮤니티를 버리고 기업 시장으로 이동\u003c/strong\u003e했으며, 2021년 Sal...\u003c/p\u003e"
+    },
+    {
+      "title": "Discord의 나이 인증 시스템 도입에 팔란티어 공동창업자가 연관되어 논란",
+      "link": "https://news.hada.io/topic?id=26715",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-16T07:32:56+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eDiscord가 \u003cstrong\u003e글로벌 나이 인증 시스템\u003c/strong\u003e을 도입하며 일부 사용자를 대상으로 \u003cstrong\u003ePersona\u003c/strong\u003e라는 외부 인증업체와 협력 중임\u003c/li\u003e\n\u003cli\u003ePersona의 주요 투자자는 \u003cstrong\u003ePeter Thiel의 Founders Fund\u003c/strong\u003e로, Thiel은 \u003cstrong\u003ePalantir 공동창업자이자 감시 기술 기업가\u003c/strong\u003e로...\u003c/p\u003e"
+    },
+    {
+      "title": "OpenClaw 제작자, OpenAI에 합류",
+      "link": "https://news.hada.io/topic?id=26714",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-16T07:24:29+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eOpenClaw (이전 ClawdBot,MoltBot) 제작자 \u003cstrong\u003ePeter Steinberger가 OpenAI에 합류\u003c/strong\u003e해, 누구나 사용할 수 있는 \u003cstrong\u003eAI 에이전트 개발\u003c/strong\u003e에 집중할 것이라 밝힘\u003c/li\u003e\n\u003cli\u003eOpenClaw는 상업 회사로 전환되지 않고 \u003cstrong\u003e재단(foundation) 형태로 독립 운영\u003c/strong\u003e되어 오픈소스 및 독립...\u003c/p\u003e"
+    },
+    {
+      "title": "'Pulp Fiction' Co-Writer Announces He's Using AI to Create 3 New Feature Films",
+      "link": "https://nofilmschool.com/roger-avary-ai-films",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-16T22:01:57Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://nofilmschool.com/roger-avary-ai-films\"\u003ehttps://nofilmschool.com/roger-avary-ai-films\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47040928\"\u003ehttps://news.ycombinator.com/item?id=47040928\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "RIP – Rest in Prompt",
+      "link": "https://hugodaniel.com/posts/rip-rest-in-prompt/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-16T22:00:18Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://hugodaniel.com/posts/rip-rest-in-prompt/\"\u003ehttps://hugodaniel.com/posts/rip-rest-in-prompt/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47040910\"\u003ehttps://news.ycombinator.com/item?id=47040910\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Snapbyte – personalized email digests from HN/Reddit/Lobsters",
+      "link": "https://snapbyte.dev",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-16T21:58:37Z",
+      "description": "\n\u003cp\u003eCreator here. I built Snapbyte because I stopped having the time/energy to browse Hacker News / Reddit / Lobsters / Devto regularly, but I still wanted to keep up with things worth reading.\nSnapbyte collects posts from multiple tech communities, filters them based on your interests, summarises them, and sends you a personalised email digest on a schedule you choose.\u003cp\u003eYou can try it without creating an account (the homepage shows real example digests).\u003cp\u003eSome implementation details: Runs as a set of small services on my k8s cluster. Scraping via trafilatura. Summaries via gemini-3-flash-preview. Mix of TypeScript / Python / Go\u003cp\u003eHappy to answer questions, especially around scoring/filtering and what sources people would want next.\u003cp\u003eNote: if this post makes it to the HN front page, it’ll likely show up in Snapbyte digests tomorrow.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47040895\"\u003ehttps://news.ycombinator.com/item?id=47040895\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Swiss researchers find password manager security gaps",
+      "link": "https://www.swissinfo.ch/eng/various/researchers-find-major-security-gaps-in-password-managers/90951851",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-16T21:57:40Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.swissinfo.ch/eng/various/researchers-find-major-security-gaps-in-password-managers/90951851\"\u003ehttps://www.swissinfo.ch/eng/various/researchers-find-major-security-gaps-in-password-managers/90951851\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47040879\"\u003ehttps://news.ycombinator.com/item?id=47040879\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Many consumer electronics manufacturers 'will go bankrupt' by the end of 2026",
+      "link": "https://www.pcgamer.com/hardware/memory/many-consumer-electronics-manufacturers-will-go-bankrupt-or-exit-product-lines-by-the-end-of-2026-due-to-the-ai-memory-crisis-phison-ceo-reportedly-says/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-16T21:56:04Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.pcgamer.com/hardware/memory/many-consumer-electronics-manufacturers-will-go-bankrupt-or-exit-product-lines-by-the-end-of-2026-due-to-the-ai-memory-crisis-phison-ceo-reportedly-says/\"\u003ehttps://www.pcgamer.com/hardware/memory/many-consumer-electronics-manufacturers-will-go-bankrupt-or-exit-product-lines-by-the-end-of-2026-due-to-the-ai-memory-crisis-phison-ceo-reportedly-says/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47040864\"\u003ehttps://news.ycombinator.com/item?id=47040864\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Nightshift: Use your leftover CC/Codex tokens overnight for maintenance PRs",
+      "link": "https://github.com/marcus/nightshift",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-16T21:54:44Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/marcus/nightshift\"\u003ehttps://github.com/marcus/nightshift\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47040855\"\u003ehttps://news.ycombinator.com/item?id=47040855\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Clerk",
+      "link": "https://clerk.vision/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-16T21:53:29Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://clerk.vision/\"\u003ehttps://clerk.vision/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47040842\"\u003ehttps://news.ycombinator.com/item?id=47040842\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Firm Data on AI",
+      "link": "https://www.nber.org/papers/w34836",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-16T21:53:17Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nber.org/papers/w34836\"\u003ehttps://www.nber.org/papers/w34836\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47040840\"\u003ehttps://news.ycombinator.com/item?id=47040840\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Final step to put new website into production deleted it instead",
+      "link": "https://www.theregister.com/2026/02/16/who_me/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-16T21:51:14Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.theregister.com/2026/02/16/who_me/\"\u003ehttps://www.theregister.com/2026/02/16/who_me/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47040814\"\u003ehttps://news.ycombinator.com/item?id=47040814\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "10 years building vertical software: are we cooked?",
+      "link": "https://twitter.com/nicbstme/status/2023501562480644501",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-16T21:48:00Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://twitter.com/nicbstme/status/2023501562480644501\"\u003ehttps://twitter.com/nicbstme/status/2023501562480644501\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47040781\"\u003ehttps://news.ycombinator.com/item?id=47040781\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: ZIT: Zooplankton Image Tool for 2d rendering of biological locomotion",
+      "link": "https://github.com/juleshenry/zooplankton-image-tool",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-16T21:47:49Z",
+      "description": "\n\u003cp\u003eZIT is a tiny micro-library that takes zooplankton locomotion videos and renders them into 2D flattened static images, encoding motion over time into a single frame for compact analysis. Installable via pip install zooplankton-image-tool.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47040776\"\u003ehttps://news.ycombinator.com/item?id=47040776\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "After all the hype, some AI experts don't think OpenClaw is all that exciting",
+      "link": "https://techcrunch.com/2026/02/16/after-all-the-hype-some-ai-experts-dont-think-openclaw-is-all-that-exciting/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-16T21:47:42Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://techcrunch.com/2026/02/16/after-all-the-hype-some-ai-experts-dont-think-openclaw-is-all-that-exciting/\"\u003ehttps://techcrunch.com/2026/02/16/after-all-the-hype-some-ai-experts-dont-think-openclaw-is-all-that-exciting/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47040775\"\u003ehttps://news.ycombinator.com/item?id=47040775\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: I built an all-in-one workspace for agencies and freelancers",
+      "link": "https://www.7desk.io",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-16T21:47:27Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.7desk.io\"\u003ehttps://www.7desk.io\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47040770\"\u003ehttps://news.ycombinator.com/item?id=47040770\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Software Archeology in 2026",
+      "link": "https://xav.io/blog/software-archeology/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-16T21:46:52Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://xav.io/blog/software-archeology/\"\u003ehttps://xav.io/blog/software-archeology/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47040761\"\u003ehttps://news.ycombinator.com/item?id=47040761\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Kim Dotcom says Palantir allegedly hacked",
+      "link": "https://twitter.com/KimDotcom/status/2023165849721536672",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-16T21:45:49Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://twitter.com/KimDotcom/status/2023165849721536672\"\u003ehttps://twitter.com/KimDotcom/status/2023165849721536672\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47040754\"\u003ehttps://news.ycombinator.com/item?id=47040754\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 15\u003c/p\u003e\n\u003cp\u003e# Comments: 4\u003c/p\u003e\n"
+    },
+    {
+      "title": "Dutch Government Claude Plugins",
+      "link": "https://github.com/MinBZK/overheid-claude-plugins",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-16T21:45:33Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/MinBZK/overheid-claude-plugins\"\u003ehttps://github.com/MinBZK/overheid-claude-plugins\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47040746\"\u003ehttps://news.ycombinator.com/item?id=47040746\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Software licensing and my opposition to copyleft",
+      "link": "https://github.com/BurntSushi/notes/blob/fae52f03a655c1294226482d4ddd70c55cf62af3/2020-10-29_licensing-and-copyleft.md",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-16T21:45:18Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/BurntSushi/notes/blob/fae52f03a655c1294226482d4ddd70c55cf62af3/2020-10-29_licensing-and-copyleft.md\"\u003ehttps://github.com/BurntSushi/notes/blob/fae52f03a655c1294226482d4ddd70c55cf62af3/2020-10-29_licensing-and-copyleft.md\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47040743\"\u003ehttps://news.ycombinator.com/item?id=47040743\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: LLMFeeder – Multi-tab web to Markdown for LLM context (v2.1.0)",
+      "link": "https://news.ycombinator.com/item?id=47040739",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-16T21:44:49Z",
+      "description": "\n\u003cp\u003eHi HN! I shared LLMFeeder here 8 months ago when it was a simple one-click webpage-to-markdown tool. Since then, it's grown into something much more powerful, so I wanted to share the major updates.\u003cp\u003eThe original problem: copying documentation/articles to feed into ChatGPT, Claude, or coding assistants like Cursor meant dealing with ads, popups, and navigation clutter and using web mcp server usually bloats the context with irrelevant stuff.\u003cp\u003ev2.1.0 adds several features specifically for LLM power users:\u003cp\u003e- Multi-tab support: The #1 requested feature. Select multiple tabs with Ctrl/Cmd+Shift+Click, then convert all at once. Options: copy merged, download merged, or download as ZIP with separate files per tab. Great for research sessions where you need context from multiple sources!\u003cp\u003e- Right-click context menus: No need to open the popup. Just right-click anywhere on a page → \"Copy to Markdown\". When multiple tabs are selected, you get batch options in the menu.\u003cp\u003e- Token counter: Real-time estimation using the GPT-4/Claude tokenizer (cl100k_base). Shows a progress bar with configurable context limits (4K, 8K, 16K, 32K) so you don't accidentally overflow your context window.\u003cp\u003e- Include links toggle: Strip URLs when you don't need them to save tokens. `[link text](https://...)` becomes just `link text`.\nEverything still runs 100% client-side with zero tracking. The extension has grown to 1,000+ Chrome users and 200+ Firefox users.\u003cp\u003eTech stack: Mozilla Readability.js for content extraction, Turndown.js for Markdown conversion, and JSZip for multi-tab archives.\u003cp\u003eLinks:\u003cp\u003e- GitHub: \u003ca href=\"https://github.com/jatinkrmalik/LLMFeeder\" rel=\"nofollow\"\u003ehttps://github.com/jatinkrmalik/LLMFeeder\u003c/a\u003e\n- Chrome: \u003ca href=\"https://chromewebstore.google.com/detail/llmfeeder/cjjfhhapabcpcokkfldbiiojiphbifdk\" rel=\"nofollow\"\u003ehttps://chromewebstore.google.com/detail/llmfeeder/cjjfhhapa...\u003c/a\u003e\n- Firefox: \u003ca href=\"https://addons.mozilla.org/en-US/firefox/addon/llmfeeder/\" rel=\"nofollow\"\u003ehttps://addons.mozilla.org/en-US/firefox/addon/llmfeeder/\u003c/a\u003e\u003cp\u003eWould love feedback on what else would make the LLM context workflow smoother.\nWhat's still painful about feeding content to AI assistants?\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47040739\"\u003ehttps://news.ycombinator.com/item?id=47040739\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Sl − display animations to correct users who accidentally enter sl instead of ls",
+      "link": "https://man.cx/sl%286%29",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-16T21:44:22Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://man.cx/sl%286%29\"\u003ehttps://man.cx/sl%286%29\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47040729\"\u003ehttps://news.ycombinator.com/item?id=47040729\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: TaxPal – Free tax calculator for 1099 freelancers (Q1 due April 15)",
+      "link": "https://taxpal-kappa.vercel.app",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-16T21:42:11Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://taxpal-kappa.vercel.app\"\u003ehttps://taxpal-kappa.vercel.app\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47040712\"\u003ehttps://news.ycombinator.com/item?id=47040712\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Running NanoClaw in a Docker Shell Sandbox",
+      "link": "https://www.docker.com/blog/run-nanoclaw-in-docker-shell-sandboxes/",
+      "source": "Docker Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-16T14:00:00Z",
+      "description": "Ever wanted to run a personal AI assistant that monitors your WhatsApp messages 24/7, but worried about giving it access to your entire system? Docker Sandboxes' new shell sandbox type is the perfect solution. In this post, I'll show you how to run NanoClaw, a lightweight Claude-powered WhatsApp assistant, inside a secure, isolated Docker sandbox...."
+    },
+    {
+      "title": "New SemiAnalysis InferenceX Data Shows NVIDIA Blackwell Ultra Delivers up to 50x Better Performance and 35x Lower Costs for Agentic AI",
+      "link": "https://blogs.nvidia.com/blog/data-blackwell-ultra-performance-lower-cost-agentic-ai/",
+      "source": "NVIDIA Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-16T17:00:40Z",
+      "description": "The NVIDIA Blackwell platform has been widely adopted by leading inference providers such as Baseten, DeepInfra, Fireworks AI and Together AI to reduce cost per token by up to 10x. Now, the NVIDIA Blackwell Ultra platform is taking this momentum further for agentic AI. AI agents and coding assistants are driving explosive growth in software-programming-related\t\u003ca class=\"read-more\" href=\"https://blogs.nvidia.com/blog/data-blackwell-ultra-performance-lower-cost-agentic-ai/\"\u003e\n\t\tRead Article\t\t\u003cspan data-icon=\"y\"\u003e\u003c/span\u003e\n\t\u003c/a\u003e\n\t"
+    }
+  ],
+  "generatedAt": "2026-02-17T07:12:53.465721058+09:00"
+}
