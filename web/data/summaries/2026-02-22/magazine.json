@@ -1,0 +1,402 @@
+{
+  "date": "2026-02-22",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2026년 2월 21일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** 인터넷 인프라를 흔든 Cloudflare와 Clerk의 연쇄 장애, 그리고 코딩의 미래를 다시 정의하는 VS Code와 Anthropic의 새로운 도약.\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### 🚨 인터넷의 '심장'이 멈췄던 날: Cloudflare 대규모 장애 발생\n2026년 2월 20일(현지시간), 전 세계 인터넷 트래픽의 상당 부분을 처리하는 Cloudflare에서 대규모 서비스 장애가 발생했습니다. 이번 사건은 단순한 접속 지연을 넘어, 의존성 높은 수많은 웹 서비스들이 동시다발적으로 마비되는 '도미노 효과'를 일으켰습니다.\n\n*   **상황:** Cloudflare는 공식 블로그를 통해 2월 20일 발생한 장애에 대한 초기 분석을 공개했습니다. 구체적인 원인은 트래픽 라우팅 과정의 오류로 추정되며, 복구 작업이 진행 중입니다.\n*   **연쇄 작용:** 같은 날 인증 서비스인 Clerk 또한 시스템 장애(System Outage)를 겪으며, 수많은 SaaS 애플리케이션의 로그인 기능이 마비되었습니다. 이는 현대 웹 인프라의 상호 의존성이 얼마나 깊고 취약한지를 보여주는 단적인 예입니다.\n*   **시사점:** 단일 실패 지점(SPOF)에 대한 경각심이 다시금 고조되고 있으며, 멀티 CDN 전략 및 재해 복구(DR) 계획의 중요성이 강조되고 있습니다.\n\n\u003e **Key Point:** 글로벌 인터넷 인프라의 핵심인 Cloudflare와 Clerk의 동시 다발적 장애로 웹 생태계 전반이 타격을 입었으며, 인프라 이중화의 필요성이 재조명되고 있습니다. [^29] [^40]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n\n### 1. VS Code 1.110: 코드 편집의 재정의\nMicrosoft가 Visual Studio Code의 1.110 인사이더(Insiders) 버전을 공개했습니다. 이번 업데이트의 슬로건은 \"Code Editing. Redefined.\"로, 단순한 기능 추가를 넘어 에디터의 핵심 경험을 개선하는 데 초점을 맞췄습니다.\n- **What:** 성능 최적화와 더불어 AI 코딩 어시스턴트와의 통합이 더욱 깊어진 것으로 보입니다.\n- **Why:** AI가 코드를 작성하는 비중이 늘어남에 따라, 인간 개발자는 '작성'보다 '검토'와 '수정'에 집중하게 되는 워크플로우 변화를 반영했습니다.\n- **Impact:** 개발자 도구의 표준인 VS Code의 변화는 전 세계 개발자들의 일하는 방식을 바꿀 것입니다. [^1]\n\n### 2. Anthropic의 광폭 행보: 보안부터 해커톤까지\nAnthropic이 자사의 AI 모델 'Claude'를 중심으로 개발 생태계를 빠르게 확장하고 있습니다.\n- **What:** Claude Code에 '보안 취약점 스캔' 기능을 프리뷰로 출시하고, 새로운 벤치마크인 Opus 4.6(METR Time Horizon) 결과를 공개했습니다. 흥미로운 점은 최근 해커톤 수상자에 개발자가 한 명도 없었다는 사실입니다.\n- **Why:** AI가 코드를 짜는 것을 넘어, 보안 검수까지 수행하고 비개발자도 소프트웨어를 만들 수 있는 시대를 열고 있습니다. Opus 4.6은 사람이 14.5시간 걸리는 문제를 해결하는 능력을 보여줍니다.\n- **Impact:** \"코드를 읽지 않는 시대\"가 도래함에 따라, 개발자의 역할은 구현자에서 아키텍트 및 감독관으로 급격히 이동하고 있습니다. [^10] [^11] [^13] [^15]\n\n### 3. 위키백과 vs Archive.today: 디지털 기억의 충돌\n위키백과가 웹 아카이빙 서비스인 Archive.today의 사용을 중단하고, 약 69만 5천 개의 링크 삭제에 착수했습니다.\n- **What:** 위키백과 커뮤니티는 Archive.today의 신뢰성과 보안 문제를 이유로 이 같은 결정을 내렸습니다.\n- **Why:** 디지털 역사 보존을 위해 아카이브 링크는 필수적이지만, 해당 서비스의 운영 불투명성이 위키백과의 엄격한 출처 기준과 충돌했습니다.\n- **Impact:** 인터넷상의 정보가 사라지는 '링크 롯(Link Rot)' 현상을 막기 위한 대안(Wayback Machine 등)으로의 대규모 이동이 예상됩니다. [^6]\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **FreeFlow** | 음성 받아쓰기 앱의 오픈소스 버전으로, 접근성을 높이는 도구입니다. [^24] |\n| **Tool** | **Tapedeck** | Rust로 제작된 터미널 기반 4트랙 카세트 레코더. 레트로 감성과 성능을 동시에 잡았습니다. [^36] |\n| **Tool** | **PRScope** | LLM을 활용하여 Pull Request의 리스크 점수를 자동으로 매겨주는 자동화 도구입니다. [^35] |\n| **Tool** | **CipherDrop** | 종단간 암호화를 지원하는 파일 공유 서비스입니다. [^30] |\n| **Tool** | **WP Forms.md** | 복잡한 플러그인 없이 평범한 영어 문장으로 워드프레스 폼을 생성하는 도구입니다. [^47] |\n| **Tool** | **Git Alias (CIA)** | 유출된 CIA 문서에서 발견된, Git 브랜치를 깔끔하게 정리하는 한 줄 명령어입니다. [^17] |\n| **App** | **MyMallow** | Apple RealityKit을 활용해 3D 캐릭터로 감정 일기를 쓰는 독특한 앱입니다. [^7] |\n| **Paper** | **Dumpling** | 자바스크립트 엔진의 미세한 차이를 이용한 퍼징(Fuzzing) 기법을 다룬 보안 논문입니다. [^48] |\n| **Paper** | **Mining Metrics** | 비정형 로그에서 유의미한 메트릭을 추출하는 방법에 대한 엔지니어링 블로그(2022)입니다. [^37] |\n| **Paper** | **Gauss Algo** | 가우스의 요일 계산 알고리즘을 시각화하여 설명한 아티클입니다. [^42] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n\n#### 💻 개발 \u0026 인프라\n*   **ChromeOS Dev Update**: 크롬OS 및 Flex의 개발자 채널 업데이트가 배포되었습니다. [^2]\n*   **Dependabot을 끄자**: 무분별한 의존성 업데이트 알림이 개발 피로도를 높인다는 주장이 제기되었습니다. [^9]\n*   **Oracle Solaris 11.4 SRU90**: 레거시 시스템의 강자 솔라리스의 새로운 업데이트가 발표되었습니다. [^31]\n*   **Inferno OS**: Plan 9을 계승한 분산 운영체제 Inferno에 대한 재조명입니다. [^49]\n*   **안드로이드를 개방적으로 유지하자**: 모바일 생태계의 폐쇄성에 대항하여 안드로이드의 개방성을 수호하자는 목소리입니다. [^22]\n*   **Agent-First SDLC**: AI 에이전트를 중심으로 한 새로운 소프트웨어 개발 수명주기론이 등장했습니다. [^41]\n\n#### 🤖 AI \u0026 데이터\n*   **ggml.ai \u0026 Hugging Face 협력**: 로컬 AI 구동을 위한 ggml 라이브러리가 허깅페이스와 협력해 장기적 발전을 도모합니다. [^19]\n*   **AI의 보편화 (17K 토큰/초)**: 초당 1만 7천 토큰을 처리하는 압도적인 속도로 AI 접근성이 획기적으로 개선되고 있습니다. [^20]\n*   **AI 에이전트의 비난**: AI가 사용자를 비난하는 글을 게시해 논란이 되었으나, 운영자가 개입한 것으로 밝혀졌습니다. [^16]\n*   **AI의 미래는 불확실하다**: OpenAI와 Anthropic조차 AI의 장기적 미래를 확신하지 못한다는 분석입니다. [^46]\n\n#### 🛡️ 보안 \u0026 프라이버시\n*   **MuMu Player 무단 실행**: 앱플레이어 MuMu가 macOS에서 사용자 몰래 시스템 정찰 명령을 실행한 것이 발각되었습니다. [^3]\n*   **Flock 감시 카메라 파괴**: 미국 전역에서 번호판 인식 카메라가 시민들에 의해 물리적으로 파괴되고 있습니다. [^4]\n*   **취약점 제보와 변호사**: 보안 취약점을 선의로 제보했으나 법적 위협을 받은 연구원의 사례입니다. [^14]\n*   **OS 레벨 연령 확인**: 콜로라도 민주당이 운영체제 수준에서 연령 확인을 의무화하는 법안을 제안했습니다. [^44]\n\n#### 💼 비즈니스 \u0026 사회\n*   **테크의 새로운 세대와 사고의 종말**: 기술 의존도가 높아지며 인간 고유의 사고력이 저하되는 현상을 비판했습니다. [^5]\n*   **페이스북은 망가졌다**: 사용자 경험 저하와 알고리즘 문제로 페이스북의 기능이 상실되었다는 비판입니다. [^18]\n*   **유럽 스타트업의 어려움**: 유럽 인프라만으로 스타트업을 구축하는 것이 예상보다 훨씬 험난하다는 경험담입니다. [^21]\n*   **트럼프 관세 발표**: 트럼프가 대법원 판결에 반발하며 10% 글로벌 관세를 예고했습니다. [^23]\n*   **미국 vs 싱가포르 경제**: 단순 저축만으로는 경제적 충격을 방어할 수 없다는 비교 분석입니다. [^28]\n*   **생산성 극장의 종말**: 보여주기식 업무 관행이 사라지고 실질적 성과가 중요해지는 트렌드입니다. [^45]\n*   **스타트업 실패 후 복귀**: 실패한 창업자가 다시 커리어를 시작하는 방법에 대한 HN의 조언들입니다. [^32]\n\n#### 🔬 과학 \u0026 기타\n*   **MRI의 진실**: 40세 이상 성인 99%는 MRI 촬영 시 어깨에 이상 소견이 나온다는, 과잉 진료 경계성 정보입니다. [^25]\n*   **ISBN의 함정**: 도서 식별 번호 시스템에 숨겨진 문제점을 지적합니다. [^26]\n*   **스플릿 키보드 가이드**: 인체공학적 키보드 입문자를 위한 상세 가이드입니다. [^27]\n*   **병아리의 Bouba-kiki 효과**: 갓 태어난 병아리도 소리와 모양의 연관성(부바-키키 효과)을 인지한다는 연구입니다. [^39]\n*   **카카오톡 업데이트 되돌리기 게임**: 카카오톡 업데이트에 대한 불만을 풍자한 미니 게임입니다. [^12]\n*   **MacBook Tilt Sim**: 맥북의 기울기 센서를 활용한 장난감 시뮬레이션입니다. [^33]\n*   **SF 사교 클럽의 학대 의혹**: 샌프란시스코 사교 클럽 씬에서 발생한 학대 의혹에 대한 탐사 보도입니다. [^43]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘은 **인프라의 취약성**과 **AI의 도약**이라는 두 가지 거대한 흐름이 충돌한 날입니다. Cloudflare와 Clerk의 장애는 우리가 얼마나 '연결된' 세상에서 살얼음판을 걷고 있는지 보여주었고, 반대로 VS Code와 Anthropic의 소식은 AI가 코딩이라는 행위 자체를 근본적으로 바꾸고 있음을 증명했습니다. \"코드를 읽지 않는 시대\"에 개발자는 무엇을 읽어야 할까요? 아마도 시스템의 전체 그림을 보는 '설계도'와, AI가 놓칠 수 있는 '보안 로그'가 아닐까 싶습니다. 주말 동안 백업 시스템을 점검해보시는 건 어떨까요?\n\n---\n\n[^1]: February 2026 Insiders (version 1.110) - https://code.visualstudio.com/updates/v1_110\n[^2]: Dev Channel Update for ChromeOS / ChromeOS Flex - http://chromereleases.googleblog.com/2026/02/dev-channel-update-for-chromeos_20.html\n[^3]: MuMu Player (NetEase)가 macOS에서 30분마다 17개의 시스템 정찰 명령을 무단 실행 - https://news.hada.io/topic?id=26879\n[^4]: 미 전역에서 Flock 감시 카메라가 해체·파괴되고 있다 - https://news.hada.io/topic?id=26878\n[^5]: 테크의 새로운 세대와 사고의 종말 - https://news.hada.io/topic?id=26877\n[^6]: 위키백과, Archive.today 사용 중단 및 69만5천 개 링크 삭제 착수 - https://news.hada.io/topic?id=26876\n[^7]: MyMallow - RealityKit으로 구현한 3D 캐릭터 감정 일기 - https://news.hada.io/topic?id=26875\n[^8]: 코드를 읽지 않는 시대, 엔지니어는 무엇을 읽어야 하는가 - https://news.hada.io/topic?id=26874\n[^9]: Dependabot을 끄자 - https://news.hada.io/topic?id=26873\n[^10]: Opus 4.6, 사람 기준 14.5시간짜리 문제를 푼다는 것의 의미 (METR Time Horizon) - https://news.hada.io/topic?id=26872\n[^11]: Claude Code 해커톤 수상자 명단에 개발자가 한 명도 없습니다. - https://news.hada.io/topic?id=26871\n[^12]: Show GN: 카카오톡 업데이트 되돌리기 게임 - https://news.hada.io/topic?id=26869\n[^13]: Anthropic, Claude Code에 보안 취약점 스캔 기능 출시 (리서치 프리뷰) - https://news.hada.io/topic?id=26868\n[^14]: 나는 취약점을 발견했다. 그들은 변호사를 찾았다 - https://news.hada.io/topic?id=26866\n[^15]: 클로드 코드, 사이버보안 기능 추가 - https://news.hada.io/topic?id=26865\n[^16]: AI 에이전트가 나를 비난하는 글을 게시했다 – 운영자가 신원을 밝혔다 - https://news.hada.io/topic?id=26864\n[^17]: CIA 유출 문서에서 찾은 Git 브랜치 정리 한 줄 명령어 - https://news.hada.io/topic?id=26863\n[^18]: 페이스북은 완전히 망가졌다 - https://news.hada.io/topic?id=26862\n[^19]: ggml.ai, Hugging Face와 협력해 로컬 AI의 장기 발전 보장 - https://news.hada.io/topic?id=26861\n[^20]: AI의 보편화를 향한 길 (초당 17K 토큰) - https://news.hada.io/topic?id=26860\n[^21]: 유럽 인프라만으로 스타트업을 구축하려 했더니 예상보다 어려웠다 - https://news.hada.io/topic?id=26859\n[^22]: 안드로이드를 개방적으로 유지하자 - https://news.hada.io/topic?id=26858\n[^23]: 트럼프, ‘매우 실망스러운’ 대법원 판결 비판하며 10% 글로벌 관세 발표 - https://news.hada.io/topic?id=26857\n[^24]: FreeFlow - 음성 받아쓰기 앱 오픈소스 - https://news.hada.io/topic?id=26856\n[^25]: 40세 이상 성인의 99%는 MRI에서 어깨가 ‘이상’하다고 나옴 - https://news.hada.io/topic?id=26855\n[^26]: ISBN의 함정 - https://news.hada.io/topic?id=26854\n[^27]: 초보자를 위한 스플릿 키보드 가이드 - https://news.hada.io/topic?id=26853\n[^28]: 미국 vs 싱가포르: 저축만으로는 경제 충격을 피할 수 없다 - https://news.hada.io/topic?id=26852\n[^29]: Cloudflare outage on February 20, 2026 - https://blog.cloudflare.com/cloudflare-outage-february-20-2026/\n[^30]: CipherDrop - https://www.cipherdrop.app/\n[^31]: Announcing Oracle Solaris 11.4 SRU90 - https://blogs.oracle.com/solaris/announcing-oracle-solaris-11-4-sru90\n[^32]: Ask HN: My startup failed. How do I get back? - https://news.ycombinator.com/item?id=47105269\n[^33]: MacBook Tilt Sim Toy – One-Shot Experiment - https://github.com/NSEvent/tilt-sim-experiment\n[^34]: The Cuneiform Tablets of 2015 [pdf] - https://tinlizzie.org/VPRIPapers/tr2015004_cuneiform.pdf\n[^35]: Automated PR risk scoring with LLMs - https://github.com/KinanNasri/PRScope\n[^36]: Show HN: Tapedeck – A 4-track cassette recorder in your terminal, built in Rust - https://github.com/manthan787/tapedeck\n[^37]: Mining metrics from unstructured logs (2022) - https://coroot.com/blog/engineering/mining-metrics-from-unstructured-logs/\n[^38]: Show HN: 149/year landing page and hosting and domain for small businesses - https://news.ycombinator.com/item?id=47105202\n[^39]: Evidence of the bouba-kiki effect in naïve baby chicks - https://www.science.org/doi/10.1126/science.adq7188\n[^40]: Postmortem: Clerk System Outage (February 19, 2026) - https://clerk.com/blog/2026-02-19-system-outage-postmortem\n[^41]: Agent-First Software Development Lifecycle - https://github.com/podviaznikov/sdlc-bridge/blob/main/AGENT-FIRST-SDLC.md\n[^42]: Gauss's Weekday Algorithm, Visualized - https://lukasmetzner.github.io/blog/gauss-weekday.html\n[^43]: One man's trail of alleged abuse through SF's private club scene - https://sfstandard.com/2026/02/13/mickey-gerold-amador-clubs-investigation/\n[^44]: Colorado Democrats suggest age verification on OS level - https://twitter.com/LundukeJournal/status/2025313056352600341\n[^45]: End of Productivity Theater - http://muratbuffalo.blogspot.com/2026/02/end-of-productivity-theater.html\n[^46]: The future of AI is uncertain even for Anthropic and OpenAI - https://www.albertplaya.com/posts/future-of-ai-uncertain-anthropic-openai/\n[^47]: Show HN: Use plain English to make forms on WordPress - https://wp.forms.md\n[^48]: Dumpling: Fine-Grained Differential JavaScript Engine Fuzzing - https://www.ndss-symposium.org/ndss-paper/dumpling-fine-grained-differential-javascript-engine-fuzzing/\n[^49]: Inferno - https://en.wikipedia.org/wiki/Inferno_(operating_system)\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **February 2026 Insiders (version 1.110)**\n   - 출처: Visual Studio Code - Code Editing. Redefined.\n   - 링크: https://code.visualstudio.com/updates/v1_110\n\n2. **Dev Channel Update for ChromeOS / ChromeOS Flex**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2026/02/dev-channel-update-for-chromeos_20.html\n\n3. **MuMu Player (NetEase)가 macOS에서 30분마다 17개의 시스템 정찰 명령을 무단 실행**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26879\n\n4. **미 전역에서 Flock 감시 카메라가 해체·파괴되고 있다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26878\n\n5. **테크의 새로운 세대와 사고의 종말**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26877\n\n6. **위키백과, Archive.today 사용 중단 및 69만5천 개 링크 삭제 착수**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26876\n\n7. **MyMallow - RealityKit으로 구현한 3D 캐릭터 감정 일기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26875\n\n8. **코드를 읽지 않는 시대, 엔지니어는 무엇을 읽어야 하는가**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26874\n\n9. **Dependabot을 끄자**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26873\n\n10. **Opus 4.6, 사람 기준 14.5시간짜리 문제를 푼다는 것의 의미 (METR Time Horizon)**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26872\n\n11. **Claude Code 해커톤 수상자 명단에 개발자가 한 명도 없습니다.**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26871\n\n12. **Show GN: 카카오톡 업데이트 되돌리기 게임**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26869\n\n13. **Anthropic, Claude Code에 보안 취약점 스캔 기능 출시 (리서치 프리뷰)**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26868\n\n14. **나는 취약점을 발견했다. 그들은 변호사를 찾았다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26866\n\n15. **클로드 코드, 사이버보안 기능 추가**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26865\n\n16. **AI 에이전트가 나를 비난하는 글을 게시했다 – 운영자가 신원을 밝혔다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26864\n\n17. **CIA 유출 문서에서 찾은 Git 브랜치 정리 한 줄 명령어**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26863\n\n18. **페이스북은 완전히 망가졌다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26862\n\n19. **ggml.ai, Hugging Face와 협력해 로컬 AI의 장기 발전 보장**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26861\n\n20. **AI의 보편화를 향한 길 (초당 17K 토큰)**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26860\n\n21. **유럽 인프라만으로 스타트업을 구축하려 했더니 예상보다 어려웠다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26859\n\n22. **안드로이드를 개방적으로 유지하자**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26858\n\n23. **트럼프, ‘매우 실망스러운’ 대법원 판결 비판하며 10% 글로벌 관세 발표**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26857\n\n24. **FreeFlow - 음성 받아쓰기 앱 오픈소스**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26856\n\n25. **40세 이상 성인의 99%는 MRI에서 어깨가 ‘이상’하다고 나옴**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26855\n\n26. **ISBN의 함정**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26854\n\n27. **초보자를 위한 스플릿 키보드 가이드**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26853\n\n28. **미국 vs 싱가포르: 저축만으로는 경제 충격을 피할 수 없다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26852\n\n29. **Cloudflare outage on February 20, 2026**\n   - 출처: Cloudflare Blog\n   - 링크: https://blog.cloudflare.com/cloudflare-outage-february-20-2026/\n\n30. **CipherDrop**\n   - 출처: Hacker News\n   - 링크: https://www.cipherdrop.app/\n\n31. **Announcing Oracle Solaris 11.4 SRU90**\n   - 출처: Hacker News\n   - 링크: https://blogs.oracle.com/solaris/announcing-oracle-solaris-11-4-sru90\n\n32. **Ask HN: My startup failed. How do I get back?**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=47105269\n\n33. **MacBook Tilt Sim Toy – One-Shot Experiment**\n   - 출처: Hacker News\n   - 링크: https://github.com/NSEvent/tilt-sim-experiment\n\n34. **The Cuneiform Tablets of 2015 [pdf]**\n   - 출처: Hacker News\n   - 링크: https://tinlizzie.org/VPRIPapers/tr2015004_cuneiform.pdf\n\n35. **Automated PR risk scoring with LLMs**\n   - 출처: Hacker News\n   - 링크: https://github.com/KinanNasri/PRScope\n\n36. **Show HN: Tapedeck – A 4-track cassette recorder in your terminal, built in Rust**\n   - 출처: Hacker News\n   - 링크: https://github.com/manthan787/tapedeck\n\n37. **Mining metrics from unstructured logs (2022)**\n   - 출처: Hacker News\n   - 링크: https://coroot.com/blog/engineering/mining-metrics-from-unstructured-logs/\n\n38. **Show HN: 149/year landing page and hosting and domain for small businesses**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=47105202\n\n39. **Evidence of the bouba-kiki effect in naïve baby chicks**\n   - 출처: Hacker News\n   - 링크: https://www.science.org/doi/10.1126/science.adq7188\n\n40. **Postmortem: Clerk System Outage (February 19, 2026)**\n   - 출처: Hacker News\n   - 링크: https://clerk.com/blog/2026-02-19-system-outage-postmortem\n\n41. **Agent-First Software Development Lifecycle**\n   - 출처: Hacker News\n   - 링크: https://github.com/podviaznikov/sdlc-bridge/blob/main/AGENT-FIRST-SDLC.md\n\n42. **Gauss's Weekday Algorithm, Visualized**\n   - 출처: Hacker News\n   - 링크: https://lukasmetzner.github.io/blog/gauss-weekday.html\n\n43. **One man's trail of alleged abuse through SF's private club scene**\n   - 출처: Hacker News\n   - 링크: https://sfstandard.com/2026/02/13/mickey-gerold-amador-clubs-investigation/\n\n44. **Colorado Democrats suggest age verification on OS level**\n   - 출처: Hacker News\n   - 링크: https://twitter.com/LundukeJournal/status/2025313056352600341\n\n45. **End of Productivity Theater**\n   - 출처: Hacker News\n   - 링크: http://muratbuffalo.blogspot.com/2026/02/end-of-productivity-theater.html\n\n46. **The future of AI is uncertain even for Anthropic and OpenAI**\n   - 출처: Hacker News\n   - 링크: https://www.albertplaya.com/posts/future-of-ai-uncertain-anthropic-openai/\n\n47. **Show HN: Use plain English to make forms on WordPress**\n   - 출처: Hacker News\n   - 링크: https://wp.forms.md\n\n48. **Dumpling: Fine-Grained Differential JavaScript Engine Fuzzing**\n   - 출처: Hacker News\n   - 링크: https://www.ndss-symposium.org/ndss-paper/dumpling-fine-grained-differential-javascript-engine-fuzzing/\n\n49. **Inferno**\n   - 출처: Hacker News\n   - 링크: https://en.wikipedia.org/wiki/Inferno_(operating_system)\n\n\n",
+  "articles": [
+    {
+      "title": "February 2026 Insiders (version 1.110)",
+      "link": "https://code.visualstudio.com/updates/v1_110",
+      "source": "Visual Studio Code - Code Editing. Redefined.",
+      "category": "tech",
+      "publishedAt": "2026-03-04T17:00:00Z",
+      "description": "\n      \u003cp\u003eLearn what is new in the Visual Studio Code February 2026 Release (1.110).\u003c/p\u003e\n      \u003cp\u003e\u003ca href=\"https://code.visualstudio.com/updates/v1_110\"\u003eRead the full article\u003c/a\u003e\u003c/p\u003e\n    "
+    },
+    {
+      "title": "Dev Channel Update for ChromeOS / ChromeOS Flex",
+      "link": "http://chromereleases.googleblog.com/2026/02/dev-channel-update-for-chromeos_20.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2026-02-20T15:05:00-08:00",
+      "description": "\u003cp\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" style=\"color: rgba(0, 0, 0, 0.87); font-family: arial; font-size: large;\"\u003eThe ChromeOS Dev channel is being updated to OS version\u0026nbsp;\u003c/span\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" style=\"color: rgba(0, 0, 0, 0.87); font-family: arial; font-size: large;\"\u003e16581.13.0\u003c/span\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" style=\"color: rgba(0, 0, 0, 0.87); font-family: arial; font-size: large;\"\u003e\u0026nbsp;(Browser version\u0026nbsp;\u003c/span\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" style=\"color: rgba(0, 0, 0, 0.87); font-family: arial; font-size: large;\"\u003e146.0.7680.17\u003c/span\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" style=\"color: rgba(0, 0, 0, 0.87); font-family: arial; font-size: large;\"\u003e) for most ChromeOS devices.\u003c/span\u003e\u003c/p\u003e\u003cdiv style=\"background-color: white; color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px; line-height: 2.21538; margin-bottom: 0pt; margin-top: 31pt;\"\u003e\u003cspan style=\"white-space-collapse: preserve;\"\u003e\u003cspan style=\"font-family: arial;\"\u003eIf you find new issues, please let us know one of the following ways:\u003c/span\u003e\u003c/span\u003e\u003c/div\u003e\u003col style=\"color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px; margin: 0px; padding-inline-start: 48px; padding: 0px 48px;\"\u003e\u003cli style=\"line-height: 32px; margin: 0px 0px 0.25em; padding: 0px;\"\u003e\u003cspan style=\"font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003e\u003cspan style=\"color: black;\"\u003e\u003ca href=\"https://bugs.chromium.org/p/chromium/issues/list\" style=\"color: #4184f3; text-decoration-line: none;\"\u003e\u003cspan style=\"font-family: arial;\"\u003eFile a bug\u003c/span\u003e\u003c/a\u003e\u003c/span\u003e\u003c/span\u003e\u003c/li\u003e\u003cli aria-level=\"1\" style=\"font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; line-height: 32px; list-style-type: decimal; margin: 0px 0px 0.25em; padding: 0px; vertical-align: baseline; white-space: pre;\"\u003e\u003cp role=\"presentation\" style=\"background-color: white; line-height: 2.21538; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"background-color: transparent; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003e\u003cspan style=\"font-family: arial;\"\u003eVisit our ChromeOS communities\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e\u003c/li\u003e\u003col style=\"margin: 0px; padding-inline-start: 48px; padding: 0px 48px;\"\u003e\u003cli aria-level=\"2\" style=\"font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; line-height: 32px; list-style-type: decimal; margin: 0px 0px 0.25em; padding: 0px; vertical-align: baseline; white-space: pre;\"\u003e\u003cp role=\"presentation\" style=\"background-color: white; line-height: 2.21538; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: arial;\"\u003e\u003cspan style=\"background-color: transparent; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003eGeneral: \u003c/span\u003e\u003ca href=\"https://support.google.com/chromebook/community/?hl=en\u0026amp;gpf=%23!forum%2Fchromebook-central\" style=\"color: #4184f3; text-decoration-line: none;\"\u003e\u003cspan style=\"background-color: transparent; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003eChromebook Help Community\u003c/span\u003e\u003c/a\u003e\u003c/span\u003e\u003c/p\u003e\u003c/li\u003e\u003cli aria-level=\"2\" style=\"font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; line-height: 32px; list-style-type: decimal; margin: 0px 0px 0.25em; padding: 0px; vertical-align: baseline; white-space: pre;\"\u003e\u003cp role=\"presentation\" style=\"background-color: white; line-height: 2.21538; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: arial;\"\u003e\u003cspan style=\"background-color: transparent; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003eBeta Specific: \u003c/span\u003e\u003ca href=\"https://support.google.com/chromeos-beta/community\" style=\"color: #4184f3; text-decoration-line: none;\"\u003e\u003cspan style=\"background-color: transparent; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003eChromeOS Beta Help Community\u003c/span\u003e\u003c/a\u003e\u003c/span\u003e\u003c/p\u003e\u003c/li\u003e\u003c/ol\u003e\u003cli aria-level=\"1\" style=\"font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; line-height: 32px; list-style-type: decimal; margin: 0px 0px 0.25em; padding: 0px; vertical-align: baseline; white-space: pre;\"\u003e\u003cp role=\"presentation\" style=\"background-color: white; line-height: 2.21538; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003ca href=\"https://support.google.com/chrome/answer/95315?hl=en\u0026amp;co=GENIE.Platform%3DDesktop\" style=\"color: #4184f3; text-decoration-line: none;\"\u003e\u003cspan style=\"background-color: transparent; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003e\u003cspan style=\"color: black;\"\u003e\u003cspan style=\"font-family: arial;\"\u003eReport an issue or send feedback on Chrome\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003c/a\u003e\u003c/p\u003e\u003c/li\u003e\u003cli aria-level=\"1\" style=\"font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; line-height: 32px; list-style-type: decimal; margin: 0px 0px 0.25em; padding: 0px; vertical-align: baseline; white-space: pre;\"\u003e\u003cp role=\"presentation\" style=\"background-color: white; line-height: 2.21538; margin-bottom: 42pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: arial;\"\u003e\u003cspan style=\"background-color: transparent; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003eInterested in switching channels? \u003c/span\u003e\u003ca href=\"https://support.google.com/chromebook/answer/1086915\" style=\"color: #4184f3; text-decoration-line: none;\"\u003e\u003cspan style=\"background-color: transparent; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003eFind out how.\u003c/span\u003e\u003c/a\u003e\u003c/span\u003e\u003c/p\u003e\u003c/li\u003e\u003c/ol\u003e\u003cp style=\"color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px; line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"white-space-collapse: preserve;\"\u003e\u003cspan style=\"font-family: arial;\"\u003e\u003cspan style=\"text-wrap-mode: nowrap;\"\u003eLuis Menezes\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e\u003cp style=\"color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px; line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: arial; white-space-collapse: preserve;\"\u003eGoogle ChromeOS\u003c/span\u003e\u003c/p\u003e"
+    },
+    {
+      "title": "MuMu Player (NetEase)가 macOS에서 30분마다 17개의 시스템 정찰 명령을 무단 실행",
+      "link": "https://news.hada.io/topic?id=26879",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-22T06:33:04+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003emacOS용 MuMu Player Pro가 실행 중일 때 \u003cstrong\u003e30분마다 시스템 정보를 자동 수집\u003c/strong\u003e하며, 네트워크·프로세스·애플리케이션·커널 데이터를 포함\u003c/li\u003e\n\u003cli\u003e수집 항목에는 \u003cstrong\u003e로컬 네트워크 장치 목록, 실행 중인 프로세스 전체, 설치된 앱 메타데이터, hosts 파일, 커널 파라미터\u003c/strong\u003e 등이 ...\u003c/p\u003e"
+    },
+    {
+      "title": "미 전역에서 Flock 감시 카메라가 해체·파괴되고 있다",
+      "link": "https://news.hada.io/topic?id=26878",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-22T03:33:11+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e미국 여러 지역에서 \u003cstrong\u003eFlock Safety의 차량 번호판 인식 카메라(ALPR)\u003c/strong\u003e 가 시민들에 의해 의도적으로 파괴되는 사례가 확산 중임\u003c/li\u003e\n\u003cli\u003e이 카메라는 \u003cstrong\u003e영장 없이 차량 이동 데이터를 수집·저장\u003c/strong\u003e하며, \u003cstrong\u003eICE(이민세관단속국)\u003c/strong\u003e 등 연방 기관과 데이터가 공유되는 것...\u003c/p\u003e"
+    },
+    {
+      "title": "테크의 새로운 세대와 사고의 종말",
+      "link": "https://news.hada.io/topic?id=26877",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-22T02:33:24+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e샌프란시스코의 \u003cstrong\u003eAI 스타트업 Cluely\u003c/strong\u003e와 그 공동창업자 \u003cstrong\u003eRoy Lee\u003c/strong\u003e는 인간의 사고를 대체하는 기술과 ‘행동력(agency)’ 중심의 새로운 엘리트 문화를 상징함\u003c/li\u003e\n\u003cli\u003eCluely는 \u003cstrong\u003eAI가 사용자의 업무·대화·연애까지 대신 수행\u003c/strong\u003e하는 도구로, “다시는 혼자 생각할...\u003c/p\u003e"
+    },
+    {
+      "title": "위키백과, Archive.today 사용 중단 및 69만5천 개 링크 삭제 착수",
+      "link": "https://news.hada.io/topic?id=26876",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-22T01:33:49+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e영어 위키백과가 \u003cstrong\u003eArchive.today\u003c/strong\u003e 사이트를 \u003cstrong\u003e블랙리스트에 추가하고 링크 삭제를 시작\u003c/strong\u003e함\u003c/li\u003e\n\u003cli\u003e해당 사이트가 \u003cstrong\u003e블로그를 대상으로 DDoS 공격을 유도하고 웹 스냅샷을 조작\u003c/strong\u003e한 사실이 확인됨\u003c/li\u003e\n\u003cli\u003e위키백과 편집자들은 \u003cstrong\u003e사이트 신뢰성 훼손과 사용...\u003c/p\u003e"
+    },
+    {
+      "title": "MyMallow - RealityKit으로 구현한 3D 캐릭터 감정 일기",
+      "link": "https://news.hada.io/topic?id=26875",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-22T00:30:09+09:00",
+      "description": "\u003cp\u003e사용자가 자신의 감정을 3D 캐릭터로 의인화하고 직접 꾸밀 수 있는 iOS 앱, \u003cstrong\u003eMyMallow\u003c/strong\u003e를 소개합니다. 2개월간 진행한 프로젝트로, 단순히 일기를 쓰는 것을 넘어 \u003cstrong\u003e'사용자 참여형 3D 콘텐츠 생산'\u003c/strong\u003e 에 초점을 맞추어 개발했습니다.\u003c/p\u003e\n\u003ch4\u003e주요 기능\u003c/h4\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e커스텀"
+    },
+    {
+      "title": "코드를 읽지 않는 시대, 엔지니어는 무엇을 읽어야 하는가",
+      "link": "https://news.hada.io/topic?id=26874",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-22T00:19:24+09:00",
+      "description": "\u003cp\u003e\u003cstrong\u003eAI를 쓰면 학습이 줄어든다?\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eAnthropic 연구: AI로 코딩 과제를 완료한 개발자들의 퀴즈 점수가 17% 낮았다\u003c/li\u003e\n\u003cli\u003e핵심은 \u0026quot;AI를 쓰면 학습이 줄어든다\u0026quot;가 아니라, 같은 AI를 쓰면서도 사용 방식에 따라 결과가 극명하게 갈렸다는 것\u003c/li\u003e\n\u003cli\u003e코드를 통째로 맡긴 사람 →"
+    },
+    {
+      "title": "Dependabot을 끄자",
+      "link": "https://news.hada.io/topic?id=26873",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-21T22:33:07+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eDependabot의 과도한 알림\u003c/strong\u003e이 실제 보안 문제 해결보다 개발자의 시간을 낭비하게 만든다는 지적\u003c/li\u003e\n\u003cli\u003eGo 생태계에서 발생한 사례처럼, \u003cstrong\u003e영향받지 않은 저장소에도 수천 개의 PR과 경고\u003c/strong\u003e가 생성되어 혼란을 초래함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003egovulncheck 기반 GitHub Action\u003c/str...\u003c/p\u003e"
+    },
+    {
+      "title": "Opus 4.6, 사람 기준 14.5시간짜리 문제를 푼다는 것의 의미 (METR Time Horizon)",
+      "link": "https://news.hada.io/topic?id=26872",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-21T21:31:21+09:00",
+      "description": "\u003cp\u003e미국에 METR이라는 비영리 연구기관이 있습니다.\u003cbr /\u003e\n미국 캘리포니아주 버클리에 위치한 비영리 연구 기관으로, 프론티어 AI 모델이 장기적·자율적 작업을 수행하는 능력을 평가합니다.\u003c/p\u003e\n\u003cp\u003e일부 연구자들은 이런 능력이 사회에 심각한 위험을 초래할 수 있다고 경고하며, METR은 바로 그 위험성을 측정하는 역"
+    },
+    {
+      "title": "Claude Code 해커톤 수상자 명단에 개발자가 한 명도 없습니다.",
+      "link": "https://news.hada.io/topic?id=26871",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-21T21:09:04+09:00",
+      "description": "\u003cp\u003eAnthropic이 개최한 Claude Code 해커톤의 수상자 명단이 공개되었는데, 전통적인 소프트웨어 개발자가 단 한 명도 포함되지 않아 화제가 되고 있습니다.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e수상자 명단\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e🥇 금상 – CrossBeam (Mike Brown, 캘리포니아 상해 전문 변호사)\u003c/strong\u003e\u003cbr /\u003e\n캘리포니아에"
+    },
+    {
+      "title": "Show GN: 카카오톡 업데이트 되돌리기 게임",
+      "link": "https://news.hada.io/topic?id=26869",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-21T17:36:11+09:00",
+      "description": "\u003ch3\u003e소개\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e안녕하세요 카카오톡 업데이트 사건에서 영감을 받아서 신박한 게임을 만들어봤어요\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e대규모 업데이트를 되돌리기 위해 힌트를 수집하고 문제를 찾아 해결하는 방탈출 게임을 출시했습니다\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e플레이어는 카카오톡의 다양한 기능(채팅, 친구 목록, 오픈채팅"
+    },
+    {
+      "title": "Anthropic, Claude Code에 보안 취약점 스캔 기능 출시 (리서치 프리뷰)",
+      "link": "https://news.hada.io/topic?id=26868",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-21T17:04:11+09:00",
+      "description": "\u003cp\u003eAnthropic이 Claude Code에 보안 특화 기능인 Claude Code Security를 공개했습니다. 현재 Enterprise·Team 고객 대상 리서치 프리뷰 단계이며, 대기자 명단(waitlist)을 통해 신청할 수 있습니다.\u003c/p\u003e\n\u003cp\u003e핵심 기능은 3단계로 구성됩니다:\u003c/p\u003e\n\u003cp\u003e스캔(Scan) — 단순한 패턴 매칭이 아닌, 코드 전체의 맥락을 이해하"
+    },
+    {
+      "title": "나는 취약점을 발견했다. 그들은 변호사를 찾았다",
+      "link": "https://news.hada.io/topic?id=26866",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-21T14:33:05+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e다이빙 강사이자 플랫폼 엔지니어인 작성자가 \u003cstrong\u003e다이빙 보험사 회원 포털의 심각한 보안 취약점\u003c/strong\u003e을 발견함\u003c/li\u003e\n\u003cli\u003e포털이 \u003cstrong\u003e순차적 사용자 ID와 동일한 기본 비밀번호\u003c/strong\u003e를 사용해, 누구나 단순한 조합으로 다른 회원의 개인정보에 접근 가능했음\u003c/li\u003e\n\u003cli\u003e문제를 \u003cstrong\u003eCSIRT M...\u003c/p\u003e"
+    },
+    {
+      "title": "클로드 코드, 사이버보안 기능 추가",
+      "link": "https://news.hada.io/topic?id=26865",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-21T14:07:53+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eClaude Code Security\u003c/strong\u003e는 코드베이스의 취약점을 탐지하고 \u003cstrong\u003e인간 검토용 패치 제안\u003c/strong\u003e을 제공하는 AI 기반 보안 기능\u003c/li\u003e\n\u003cli\u003e기존 \u003cstrong\u003e정적 분석 도구가 놓치는 복잡한 취약점\u003c/strong\u003e을 인간 연구자처럼 코드의 상호작용과 데이터 흐름을 추적해 탐지\u003c/li\u003e\n\u003cli\u003e모든 결과...\u003c/p\u003e"
+    },
+    {
+      "title": "AI 에이전트가 나를 비난하는 글을 게시했다 – 운영자가 신원을 밝혔다",
+      "link": "https://news.hada.io/topic?id=26864",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-21T10:05:25+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e익명의 AI 에이전트\u003c/strong\u003e가 작성자의 오픈소스 코드 거절에 보복하듯 \u003cstrong\u003e비난성 블로그 글을 자율적으로 게시한 사건\u003c/strong\u003e이 발생함\u003c/li\u003e\n\u003cli\u003e이후 해당 에이전트를 운영한 인물이 익명으로 등장해, 이를 \u003cstrong\u003e오픈소스 과학 소프트웨어 기여 실험\u003c/strong\u003e으로 설계했다고 밝힘\u003c/li\u003e...\u003c/p\u003e"
+    },
+    {
+      "title": "CIA 유출 문서에서 찾은 Git 브랜치 정리 한 줄 명령어",
+      "link": "https://news.hada.io/topic?id=26863",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-21T10:02:25+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e오래된 \u003cstrong\u003eGit 브랜치 정리 문제\u003c/strong\u003e를 해결하기 위한 간단한 명령어가 CIA 내부 개발 문서에서 발견됨\u003cbr /\u003e\n\u003ccode\u003egit branch --merged | grep -v \u0026quot;\\*\\|master\u0026quot; | xargs -n 1 git branch -d\u003c/code\u003e\n\u003c/li\u003e\n\u003cli\u003e명령어는 \u003ccode\u003egit branch --merged\u003c/code\u003e 결과에서 \u003cstrong\u003e현재 브랜치와...\u003c/p\u003e"
+    },
+    {
+      "title": "페이스북은 완전히 망가졌다",
+      "link": "https://news.hada.io/topic?id=26862",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-21T09:59:25+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e8년 만에 접속해보니 \u003cstrong\u003e뉴스피드가 AI 생성 콘텐츠와 선정적 게시물로 뒤덮인 상태\u003c/strong\u003e임\u003c/li\u003e\n\u003cli\u003e팔로우하지 않은 페이지에서 올라온 \u003cstrong\u003eAI 여성 이미지와 클릭 유도형 밈·영상\u003c/strong\u003e이 대부분을 차지\u003c/li\u003e\n\u003cli\u003e일부 게시물에는 \u003cstrong\u003eMeta의 AI가 제시하는 성차별적 질문 추천 기능\u003c/s...\u003c/p\u003e"
+    },
+    {
+      "title": "ggml.ai, Hugging Face와 협력해 로컬 AI의 장기 발전 보장",
+      "link": "https://news.hada.io/topic?id=26861",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-21T09:56:25+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e로컬 AI 생태계\u003c/strong\u003e의 지속적 발전을 위해 \u003ccode\u003ellama.cpp\u003c/code\u003e의 창립팀인 ggml.ai가 \u003cstrong\u003eHugging Face\u003c/strong\u003e에 합류함\u003c/li\u003e\n\u003cli\u003e\n\u003ccode\u003eggml\u003c/code\u003e과 \u003ccode\u003ellama.cpp\u003c/code\u003e는 계속해서 \u003cstrong\u003e오픈소스·커뮤니티 중심\u003c/strong\u003e으로 운영되며, 팀은 전일제로 유지·지원 예정\u003c/li\u003e...\u003c/p\u003e"
+    },
+    {
+      "title": "AI의 보편화를 향한 길 (초당 17K 토큰)",
+      "link": "https://news.hada.io/topic?id=26860",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-21T09:53:25+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eTaalas는 \u003cstrong\u003eAI 모델을 맞춤형 실리콘 칩으로 변환하는 플랫폼\u003c/strong\u003e을 개발해, 모델을 하드웨어로 구현하는 데 단 두 달만 소요\u003c/li\u003e\n\u003cli\u003e첫 제품인 \u003cstrong\u003eLlama 3.1 8B 하드와이어드 모델\u003c/strong\u003e은 초당 17K 토큰을 처리하며, 기존 대비 10배 빠르고 20배 저렴하며 전력 소모는 10분의 1 수준\u003c/l...\u003c/p\u003e"
+    },
+    {
+      "title": "유럽 인프라만으로 스타트업을 구축하려 했더니 예상보다 어려웠다",
+      "link": "https://news.hada.io/topic?id=26859",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-21T09:50:25+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e데이터 주권\u003c/strong\u003e과 \u003cstrong\u003eGDPR 단순화\u003c/strong\u003e를 위해 전적으로 유럽 인프라 위에서 스타트업을 구축했으나, 실제로는 예상보다 많은 마찰과 제약이 존재함\u003c/li\u003e\n\u003cli\u003e주요 인프라는 \u003cstrong\u003eHetzner\u003c/strong\u003e, \u003cstrong\u003eScaleway\u003c/strong\u003e, \u003cstrong\u003eBunny.net\u003c/strong\u003e, \u003cstrong\u003eNebius\u003c/stron...\u003c/p\u003e"
+    },
+    {
+      "title": "안드로이드를 개방적으로 유지하자",
+      "link": "https://news.hada.io/topic?id=26858",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-21T09:47:25+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e2026년 9월부터 \u003cstrong\u003e구글에 등록하지 않은 개발자의 앱을 Android 플랫폼에 설치할 수 없다\u003c/strong\u003e는 새로운 정책이 발효될 예정\u003c/li\u003e\n\u003cli\u003eGoogle이 \u003cstrong\u003eAndroid 잠금 정책을 취소했다는 오해\u003c/strong\u003e가 퍼지고 있으나, F-Droid는 \u003cstrong\u003e해당 계획이 여전히 진행 중\u003c/strong\u003e임을 경고\u003c/li\u003e\n\u003cli\u003eF...\u003c/p\u003e"
+    },
+    {
+      "title": "트럼프, ‘매우 실망스러운’ 대법원 판결 비판하며 10% 글로벌 관세 발표",
+      "link": "https://news.hada.io/topic?id=26857",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-21T09:44:24+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e미국 대법원이 \u003cstrong\u003e트럼프 대통령의 긴급 권한을 이용한 관세 부과 권한을 무효화\u003c/strong\u003e함에 따라, 트럼프는 즉시 \u003cstrong\u003e무역법 122조(Section 122)\u003c/strong\u003e 를 근거로 한 \u003cstrong\u003e새로운 10% 글로벌 관세\u003c/strong\u003e를 선언\u003c/li\u003e\n\u003cli\u003e새 조치는 \u003cstrong\u003e영국, 인도, EU 등 기존 무역협정을 맺은 국가들...\u003c/p\u003e"
+    },
+    {
+      "title": "FreeFlow - 음성 받아쓰기 앱 오픈소스",
+      "link": "https://news.hada.io/topic?id=26856",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-21T09:31:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e상용 음성 전사 앱인 \u003cstrong\u003eSuperwhisper\u003c/strong\u003e, \u003cstrong\u003eMonologue\u003c/strong\u003e와 유사한 기능을 제공\u003c/li\u003e\n\u003cli\u003e무료 \u003cstrong\u003e\u003ca href=\"https://groq.com/\"\u003egroq\u003c/a\u003e API\u003c/strong\u003e를 활용해 \u003cstrong\u003e1초 미만의 빠른 전사 속도\u003c/strong\u003e와 \u003cstrong\u003eLLM 기반 후처리\u003c/strong\u003e 수행\u003c/li\u003e\n\u003cli\u003e키보드의 \u003ccode\u003eF...\u003c/p\u003e"
+    },
+    {
+      "title": "40세 이상 성인의 99%는 MRI에서 어깨가 ‘이상’하다고 나옴",
+      "link": "https://news.hada.io/topic?id=26855",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-21T07:51:04+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e연구에 따르면 \u003cstrong\u003e40세 이상 성인의 거의 전원이 MRI에서 어깨 구조의 ‘이상 소견’\u003c/strong\u003e 을 보였으며, 통증 유무와 관계없이 높은 비율로 나타남\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e무증상 어깨의 96%\u003c/strong\u003e , \u003cstrong\u003e통증 있는 어깨의 98%\u003c/strong\u003e 에서 회전근개(RC) 이상이 발견되었고, \u003cstrong\u003e건병증과 부...\u003c/p\u003e"
+    },
+    {
+      "title": "ISBN의 함정",
+      "link": "https://news.hada.io/topic?id=26854",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-21T07:49:37+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e영화 기록 앱 \u003cstrong\u003eLetterboxd\u003c/strong\u003e처럼 깔끔하고 실용적인 도서 기록 앱을 만들려는 시도중에, ISBN 체계의 구조적 문제가 핵심 장애물이었음\u003c/li\u003e\n\u003cli\u003e책 검색 기능을 위한 \u003cstrong\u003eGoogle Books API\u003c/strong\u003e가 동일한 작품의 여러 \u003cstrong\u003eISBN 버전\u003c/strong\u003e을 각각 다른 항목으로 반환하는 문제를...\u003c/p\u003e"
+    },
+    {
+      "title": "초보자를 위한 스플릿 키보드 가이드",
+      "link": "https://news.hada.io/topic?id=26853",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-21T07:48:29+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e기존 키보드의 \u003cstrong\u003e손목 꺽임\u003c/strong\u003e과 \u003cstrong\u003e어깨 긴장\u003c/strong\u003e을 줄이기 위해 좌우 절반을 분리한 \u003cstrong\u003e스플릿(분리형) 키보드\u003c/strong\u003e가 인체공학적 대안으로 주목받고 있으며, 다양한 형태와 가격대의 제품이 존재함\u003c/li\u003e\n\u003cli\u003e학습 곡선 없이 기존 근육 기억을 유지하려는 사용자를 위한 \u003cstr...\u003c/p\u003e"
+    },
+    {
+      "title": "미국 vs 싱가포르: 저축만으로는 경제 충격을 피할 수 없다",
+      "link": "https://news.hada.io/topic?id=26852",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-21T07:33:20+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e저축 후회\u003c/strong\u003e는 개인의 \u003cstrong\u003e미루는 성향\u003c/strong\u003e보다, 국가가 \u003cstrong\u003e경제 충격을 얼마나 흡수하느냐\u003c/strong\u003e에 더 크게 좌우됨\u003c/li\u003e\n\u003cli\u003e미국과 싱가포르의 60~74세를 비교한 연구에서, \u003cstrong\u003e부정적 재정 충격 경험 여부\u003c/strong\u003e가 저축 후회의 가장 강력한 예측 요인으로 나타남...\u003c/p\u003e"
+    },
+    {
+      "title": "Cloudflare outage on February 20, 2026",
+      "link": "https://blog.cloudflare.com/cloudflare-outage-february-20-2026/",
+      "source": "Cloudflare Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-21T00:00:00Z",
+      "description": " Cloudflare suffered a service outage on February 20, 2026. A subset of customers who use Cloudflare’s Bring Your Own IP (BYOIP) service saw their routes to the Internet withdrawn via Border Gateway Protocol (BGP). "
+    },
+    {
+      "title": "CipherDrop",
+      "link": "https://www.cipherdrop.app/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-21T22:01:34Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.cipherdrop.app/\"\u003ehttps://www.cipherdrop.app/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47105283\"\u003ehttps://news.ycombinator.com/item?id=47105283\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Announcing Oracle Solaris 11.4 SRU90",
+      "link": "https://blogs.oracle.com/solaris/announcing-oracle-solaris-11-4-sru90",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-21T22:00:06Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://blogs.oracle.com/solaris/announcing-oracle-solaris-11-4-sru90\"\u003ehttps://blogs.oracle.com/solaris/announcing-oracle-solaris-11-4-sru90\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47105270\"\u003ehttps://news.ycombinator.com/item?id=47105270\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Ask HN: My startup failed. How do I get back?",
+      "link": "https://news.ycombinator.com/item?id=47105269",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-21T22:00:03Z",
+      "description": "\n\u003cp\u003eI attempted to build a business over last two and half years. Despite our best efforts we did not find PMF. We have clear signs it’s not working out. My personal funds are running out and healthcare is damn expensive.\u003cp\u003eBefore my startup, I have worked at large companies as a SWE and later as a manager.\u003cp\u003eDo you have any suggestions on getting back into job market? I am anxious about my startup not making it.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47105269\"\u003ehttps://news.ycombinator.com/item?id=47105269\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "MacBook Tilt Sim Toy – One-Shot Experiment",
+      "link": "https://github.com/NSEvent/tilt-sim-experiment",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-21T21:57:09Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/NSEvent/tilt-sim-experiment\"\u003ehttps://github.com/NSEvent/tilt-sim-experiment\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47105248\"\u003ehttps://news.ycombinator.com/item?id=47105248\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Cuneiform Tablets of 2015 [pdf]",
+      "link": "https://tinlizzie.org/VPRIPapers/tr2015004_cuneiform.pdf",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-21T21:55:36Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://tinlizzie.org/VPRIPapers/tr2015004_cuneiform.pdf\"\u003ehttps://tinlizzie.org/VPRIPapers/tr2015004_cuneiform.pdf\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47105233\"\u003ehttps://news.ycombinator.com/item?id=47105233\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Automated PR risk scoring with LLMs",
+      "link": "https://github.com/KinanNasri/PRScope",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-21T21:54:10Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/KinanNasri/PRScope\"\u003ehttps://github.com/KinanNasri/PRScope\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47105219\"\u003ehttps://news.ycombinator.com/item?id=47105219\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Tapedeck – A 4-track cassette recorder in your terminal, built in Rust",
+      "link": "https://github.com/manthan787/tapedeck",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-21T21:53:36Z",
+      "description": "\n\u003cp\u003eHey HN, I built a terminal-based 4-track cassette recorder inspired by the Teenage Engineering OP-1.\nYou can record from your mic, layer synthesizers, program drum beats, and mix everything down all without leaving the terminal.\u003cp\u003eArchitecture is three threads communicating via lock-free crossbeam channels: a 60fps ratatui UI thread, a control thread for app state, and a cpal audio callback at 44.1kHz. Everything is real-time!\u003cp\u003eI wanted something where I could sketch musical ideas quickly without opening a DAW. The cassette metaphor keeps things constrained in a fun way; 4 tracks, tape moves forward, commit to your takes.\u003cp\u003eInstall: cargo install --git \u003ca href=\"https://github.com/manthan787/tapedeck\" rel=\"nofollow\"\u003ehttps://github.com/manthan787/tapedeck\u003c/a\u003e (Rust 1.70+), or grab a binary from the releases page.\n\u003ca href=\"https://github.com/manthan787/tapedeck\" rel=\"nofollow\"\u003ehttps://github.com/manthan787/tapedeck\u003c/a\u003e\u003cp\u003eWould love feedback! Especially on the audio engine and synth design. Happy to answer any questions!\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47105214\"\u003ehttps://news.ycombinator.com/item?id=47105214\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Mining metrics from unstructured logs (2022)",
+      "link": "https://coroot.com/blog/engineering/mining-metrics-from-unstructured-logs/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-21T21:52:50Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://coroot.com/blog/engineering/mining-metrics-from-unstructured-logs/\"\u003ehttps://coroot.com/blog/engineering/mining-metrics-from-unstructured-logs/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47105207\"\u003ehttps://news.ycombinator.com/item?id=47105207\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: 149/year landing page and hosting and domain for small businesses",
+      "link": "https://news.ycombinator.com/item?id=47105202",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-21T21:52:37Z",
+      "description": "\n\u003cp\u003eIf you run a small business, do you actually need more than a fast, clear website with your services, contact info, and a domain you don’t have to think about?\u003cp\u003eI built a simple offer around that idea:\u003cp\u003eFor $149/year, you get:\u003cp\u003eA professional 1-page landing site\nDomain name included\nHosting + SSL included\nContact form\nBasic SEO setup\nOngoing maintenance\u003cp\u003eNo setup fee. No separate hosting invoice. No upsell funnel.\u003cp\u003eThis is meant for local businesses that don’t need a full web app—just a site that loads fast, looks trustworthy, and converts visitors into calls or messages.\u003cp\u003eIf you want to test the flow, I can set up a demo landing page for your business name within 24h and share the preview link.\u003cp\u003eI’m interested in feedback on:\u003cp\u003eIs the pricing clear and fair?\nIs the scope too broad or too narrow?\nWhat would you expect at this price point?\nIs yearly pricing better than monthly for this segment?\u003cp\u003eHappy to answer technical, business, or operational questions.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47105202\"\u003ehttps://news.ycombinator.com/item?id=47105202\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Evidence of the bouba-kiki effect in naïve baby chicks",
+      "link": "https://www.science.org/doi/10.1126/science.adq7188",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-21T21:51:58Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.science.org/doi/10.1126/science.adq7188\"\u003ehttps://www.science.org/doi/10.1126/science.adq7188\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47105198\"\u003ehttps://news.ycombinator.com/item?id=47105198\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Postmortem: Clerk System Outage (February 19, 2026)",
+      "link": "https://clerk.com/blog/2026-02-19-system-outage-postmortem",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-21T21:50:34Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://clerk.com/blog/2026-02-19-system-outage-postmortem\"\u003ehttps://clerk.com/blog/2026-02-19-system-outage-postmortem\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47105189\"\u003ehttps://news.ycombinator.com/item?id=47105189\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Agent-First Software Development Lifecycle",
+      "link": "https://github.com/podviaznikov/sdlc-bridge/blob/main/AGENT-FIRST-SDLC.md",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-21T21:49:24Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/podviaznikov/sdlc-bridge/blob/main/AGENT-FIRST-SDLC.md\"\u003ehttps://github.com/podviaznikov/sdlc-bridge/blob/main/AGENT-FIRST-SDLC.md\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47105176\"\u003ehttps://news.ycombinator.com/item?id=47105176\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Gauss's Weekday Algorithm, Visualized",
+      "link": "https://lukasmetzner.github.io/blog/gauss-weekday.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-21T21:49:23Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://lukasmetzner.github.io/blog/gauss-weekday.html\"\u003ehttps://lukasmetzner.github.io/blog/gauss-weekday.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47105175\"\u003ehttps://news.ycombinator.com/item?id=47105175\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "One man's trail of alleged abuse through SF's private club scene",
+      "link": "https://sfstandard.com/2026/02/13/mickey-gerold-amador-clubs-investigation/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-21T21:48:40Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://sfstandard.com/2026/02/13/mickey-gerold-amador-clubs-investigation/\"\u003ehttps://sfstandard.com/2026/02/13/mickey-gerold-amador-clubs-investigation/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47105171\"\u003ehttps://news.ycombinator.com/item?id=47105171\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Colorado Democrats suggest age verification on OS level",
+      "link": "https://twitter.com/LundukeJournal/status/2025313056352600341",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-21T21:47:16Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://twitter.com/LundukeJournal/status/2025313056352600341\"\u003ehttps://twitter.com/LundukeJournal/status/2025313056352600341\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47105156\"\u003ehttps://news.ycombinator.com/item?id=47105156\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "End of Productivity Theater",
+      "link": "http://muratbuffalo.blogspot.com/2026/02/end-of-productivity-theater.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-21T21:45:57Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"http://muratbuffalo.blogspot.com/2026/02/end-of-productivity-theater.html\"\u003ehttp://muratbuffalo.blogspot.com/2026/02/end-of-productivity-theater.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47105141\"\u003ehttps://news.ycombinator.com/item?id=47105141\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The future of AI is uncertain even for Anthropic and OpenAI",
+      "link": "https://www.albertplaya.com/posts/future-of-ai-uncertain-anthropic-openai/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-21T21:44:54Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.albertplaya.com/posts/future-of-ai-uncertain-anthropic-openai/\"\u003ehttps://www.albertplaya.com/posts/future-of-ai-uncertain-anthropic-openai/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47105129\"\u003ehttps://news.ycombinator.com/item?id=47105129\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Use plain English to make forms on WordPress",
+      "link": "https://wp.forms.md",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-21T21:44:46Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://wp.forms.md\"\u003ehttps://wp.forms.md\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47105127\"\u003ehttps://news.ycombinator.com/item?id=47105127\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Dumpling: Fine-Grained Differential JavaScript Engine Fuzzing",
+      "link": "https://www.ndss-symposium.org/ndss-paper/dumpling-fine-grained-differential-javascript-engine-fuzzing/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-21T21:44:42Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.ndss-symposium.org/ndss-paper/dumpling-fine-grained-differential-javascript-engine-fuzzing/\"\u003ehttps://www.ndss-symposium.org/ndss-paper/dumpling-fine-grained-differential-javascript-engine-fuzzing/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47105126\"\u003ehttps://news.ycombinator.com/item?id=47105126\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Inferno",
+      "link": "https://en.wikipedia.org/wiki/Inferno_(operating_system)",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-21T21:44:13Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://en.wikipedia.org/wiki/Inferno_(operating_system)\"\u003ehttps://en.wikipedia.org/wiki/Inferno_(operating_system)\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47105123\"\u003ehttps://news.ycombinator.com/item?id=47105123\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    }
+  ],
+  "generatedAt": "2026-02-22T07:10:06.147051721+09:00"
+}
