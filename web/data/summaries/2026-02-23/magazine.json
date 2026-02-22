@@ -1,0 +1,378 @@
+{
+  "date": "2026-02-23",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2026년 2월 22일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** AI 하드웨어의 물리적 한계를 넘으려는 시도(Taalas)와 미·중 반도체/AI 패권 전쟁의 심화, 그리고 개발자를 위한 도구들의 폭발적인 진화.\n\n---\n\n## 🏆 Top Story: 하드웨어 2.0의 시작\n### LLM을 칩 위에 직접 ‘인쇄’하는 Taalas의 혁신\nAI 모델의 파라미터가 기하급수적으로 늘어나면서 GPU 기반의 범용 연산은 전력과 비용의 한계에 봉착했습니다. 스타트업 Taalas는 LLM(거대언어모델) 회로 자체를 실리콘 칩 위에 직접 구현(Hard-wired)하는 방식을 제안했습니다. 이는 소프트웨어를 하드웨어로 고정시키는 것으로, 범용성은 떨어지지만 전력 효율과 처리 속도 면에서 기존 GPU 대비 압도적인 성능을 낼 수 있습니다. \"소프트웨어 정의 하드웨어\"가 아닌 \"모델 정의 하드웨어\" 시대가 열리고 있음을 시사합니다.\n\u003e **Key Point:** 범용 GPU의 비효율을 제거하고 특정 AI 모델에 100% 최적화된 칩을 생산하여 비용 구조를 혁신하려는 시도. [^9]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. 美 백악관의 'AI 주권' 선언과 글로벌 표준 전쟁\n- **What:** 미국 백악관이 인도 AI 임팩트 서밋에서 \"미국 AI가 글로벌 표준\"이라며 강력한 AI 주권을 선언했습니다.\n- **Why:** AI 기술이 단순한 산업을 넘어 국가 안보와 직결되는 핵심 자산이 됨에 따라, 기술 표준을 선점하여 중국 등 경쟁국의 추격을 따돌리려는 의도입니다.\n- **Impact:** 각국의 '소버린 AI(Sovereign AI)' 구축 움직임이 가속화되는 동시에, 미국 중심의 기술 블록화가 심화될 전망입니다. [^15]\n\n### 2. 메모리 반도체 '치킨 게임'의 부활: CXMT의 공습\n- **What:** 중국 메모리 기업 CXMT가 구형 공정인 DDR4 메모리를 시장가 반값에 공급하며 물량 공세를 펼치고 있습니다.\n- **Why:** 삼성전자와 SK하이닉스의 주 수익원인 레거시(DDR4) 시장 수익성을 악화시켜, 차세대 HBM4(고대역폭메모리) 투자 여력을 꺾으려는 전략입니다.\n- **Impact:** 국내 기업들은 레거시 비중을 줄이고 HBM 등 고부가가치 영역으로의 전환을 더욱 서둘러야 하는 압박을 받게 되었습니다. [^3]\n\n### 3. Andrej Karpathy가 주목한 새로운 AI 계층 'Claws'\n- **What:** AI 석학 안드레 카패시(Andrej Karpathy)가 LLM 에이전트 위에 추가되는 새로운 계층(Layer)으로 'Claws'를 언급했습니다.\n- **Why:** 단순한 텍스트 생성을 넘어, 복잡한 도구 사용과 판단을 수행하는 에이전트 시스템의 신뢰성과 제어권을 확보하기 위한 구조적 필요성 때문입니다.\n- **Impact:** AI 에이전트 개발의 패러다임이 단일 모델 튜닝에서 '계층화된 아키텍처' 설계로 진화하고 있음을 보여줍니다. [^8][^21]\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **ntransformer** | 단일 RTX 3090 GPU에서 Llama 3.1 70B 모델을 구동하게 해주는 NVMe 직접 연결 추론 엔진. [^11] |\n| **Tool** | **sql-tap** | 터미널 UI(TUI) 기반으로 실시간 SQL 트래픽을 시각화하여 보여주는 도구. [^20] |\n| **Tool** | **llmfit** | 내 컴퓨터 사양에서 구동 가능한 LLM이 무엇인지 알려주는 유용한 유틸리티. [^33] |\n| **Tool** | **OpenGem** | API 키 없이 로드 밸런싱을 지원하는 Gemini API 프록시 (오픈소스). [^34] |\n| **Tool** | **Moakey** | iOS용 오픈소스 키보드 앱 '모아키' 공개. [^12] |\n| **Dev** | **VS Code v1.110** | 2026년 2월 인사이더 빌드 업데이트. (편집 기능 재정의). [^1] |\n| **Paper** | **Agent Memory** | LangChain 팀이 공개한 에이전트 빌더의 메모리 시스템 구축 방법론. [^25] |\n| **Paper** | **Cardiac Mapping** | 비침습적 방식으로 심장 부정맥을 특성화하는 3D 매핑 기술 논문. [^32] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n\n#### 💻 개발 \u0026 인프라 \u0026 AI\n* **Claude Code 업데이트**: 앱 미리보기, 코드 리뷰, PR 자동 수정/병합 기능이 추가되어 개발 에이전트로서의 입지 강화. [^17]\n* **Claude는 왜 Electron인가**: 네이티브 앱 대신 Electron을 선택한 기술적/비즈니스적 이유 분석. [^14]\n* **Quarkus**: 'Supersonic Subatomic Java'를 표방하는 쿠버네티스 네이티브 자바 스택. [^28]\n* **zclaw**: ESP32 마이크로컨트롤러(888KB 메모리)에서 구동되는 초경량 개인용 AI 비서. [^4]\n* **Agent Observability**: 에이전트 평가(Evaluation)를 강화하는 관측 가능성(Observability)의 중요성 (LangChain). [^26]\n* **Web Verbs**: 웹 상의 동작을 동사 형태로 정의하려는 시도 (MSR). [^35]\n* **FizzBuzz in Fortran 1**: 고전 포트란 1 언어로 구현해보는 피즈버즈. [^36]\n* **SKILL.md 벤치마크**: 어떤 SKILL.md 파일이 좋은지 판단하는 기준. [^41]\n* **Forge-Specific Git Folders**: 깃 저장소 폴더 구조를 호스팅 서비스(Forge)별로 관리하는 방법. [^29]\n* **Codex 방어적 코딩**: AI가 지나치게 방어적으로 코딩하는 것을 막는 방법에 대한 논의. [^37]\n\n#### 🌐 웹 \u0026 서비스 \u0026 비즈니스\n* **CERN 원조 브라우저**: 1989년 월드와이드웹의 시작점인 원조 브라우저를 재구현. [^2]\n* **uBlock AI 블랙리스트**: 광고 차단 도구 uBlock이 AI 관련 스크립트나 요소를 차단하기 시작. [^5]\n* **GameDate**: 서비스가 종료된 죽은 멀티플레이 게임을 되살리는 커뮤니티 사이트. [^6]\n* **Flickr의 URL 스키마**: 플리커의 독특하고 효율적인 URL 구조에 대한 숨겨진 이야기. [^30]\n* **AI 어시스턴트는 광고 회사다**: 모든 AI 비서 기업의 수익 모델이 결국 광고로 귀결된다는 비평. [^10]\n* **Bluesky 경계론**: 탈중앙화 SNS 블루스카이에 대한 비판적 시각. [^13]\n* **Xweather Live**: 광고 없는 인터랙티브 글로벌 벡터 날씨 지도. [^31]\n* **Delve and Dash**: 절차적으로 생성되는 미로를 탐험하는 레트로 던전 크롤러 게임. [^44]\n* **Curb**: 주차 문제를 해결하기 위한 소셜 주차 솔루션. [^45]\n* **GeekNews 업데이트**: 노캔뉴스에 '이슈 딥다이브' 기능 추가. [^7]\n\n#### 🛡️ 보안 \u0026 프라이버시\n* **PayPal 데이터 유출**: 6개월간 사용자 정보가 노출된 사고 공개. [^24]\n* **LinkedIn 신원 인증**: 인증 과정에서 넘어가는 개인정보의 위험성 경고. [^19]\n* **X 계정 피싱**: 정교한 피싱 공격으로 X(트위터) 계정을 탈취당한 사례와 교훈. [^40]\n* **보안 인가 신청서(1988)**: 과거 보안 인가 신청 시 주의해야 했던 항목들. [^18]\n* **러시아 암호화폐 제재 회피**: 러시아와 연계된 암호화폐 서비스들의 제재 회피 실태. [^39]\n\n#### 🗣️ 사회 \u0026 오피니언\n* **60% 실업률의 세계**: AI로 인해 실업률이 60%에 달했을 때 벌어질 일들에 대한 시뮬레이션. [^42]\n* **글로벌 로보토미에 저항하는 글쓰기**: 획일화된 사고에 저항하는 글쓰기의 중요성. [^27]\n* **창작자를 위한 취향 (2002)**: 창작자에게 '취향'이 왜 중요한지에 대한 고찰. [^16]\n* **실력 없음, 취향 없음**: 실력과 취향의 상관관계에 대한 짧은 에세이. [^23]\n* **생각의 필요성**: 원할 때만 생각하면 되는 시대에도 여전히 '생각'은 필요하다. [^43]\n* **바이오해커와 니코틴**: 생산성 향상을 위해 니코틴을 섭취하는 실리콘밸리 트렌드와 위험성. [^46]\n* **2026 데이터 엔지니어링 트렌드**: 향후 데이터 엔지니어링을 이끌 5가지 주요 흐름. [^22]\n* **미국 경기선행지수 하락**: 12월 미국 경기선행지수가 지속적으로 하락세. [^38]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘 뉴스는 '**AI의 물리적 실체화**'와 '**인간 고유성의 위기**'로 요약됩니다. Taalas와 같은 기업은 AI를 소프트웨어에서 하드웨어로 끌어내리고 있고, 반면 인간은 60% 실업률 시나리오나 '글로벌 로보토미(사고의 획일화)'를 걱정하며 자신의 취향과 생각하는 힘을 지키려 애쓰고 있습니다. 기술은 점점 더 효율적으로 변해가는데, 우리는 그 속에서 무엇을 지켜야 할지 고민해봐야 할 시점입니다.\n\n---\n\n[^1]: February 2026 Insiders (version 1.110) - https://code.visualstudio.com/updates/v1_110\n[^2]: CERN이 1989년 원조 웹 브라우저를 재구현 (2019) - https://news.hada.io/topic?id=26904\n[^3]: 중국 CXMT, DDR4 반값 공급으로 삼성·SK의 HBM4 경쟁에 압박 - https://news.hada.io/topic?id=26903\n[^4]: ESP32에서 888KB 이하로 구동되는 개인용 AI 비서 ‘zclaw’ - https://news.hada.io/topic?id=26902\n[^5]: AI uBlock 블랙리스트 - https://news.hada.io/topic?id=26901\n[^6]: 죽은 멀티플레이 게임을 되살리는 사이트, GameDate - https://news.hada.io/topic?id=26900\n[^7]: Show GN: 노캔뉴스 업데이트: '이슈 딥다이브' 기능 추가 - https://news.hada.io/topic?id=26899\n[^8]: Andrej Karpathy가 말하는 \u0026quot;Claws\u0026quot; - https://news.hada.io/topic?id=26897\n[^9]: LLM을 칩 위에 ‘인쇄’하는 Taalas의 방식 - https://news.hada.io/topic?id=26896\n[^10]: 모든 AI 어시스턴트 개발 기업은 이제 광고 회사임 - https://news.hada.io/topic?id=26895\n[^11]: 단일 RTX 3090에서 Llama 3.1 70B를 실행하는 NVMe-직접 GPU 추론 엔진 ‘ntransformer’ - https://news.hada.io/topic?id=26894\n[^12]: Show GN: ios용 모아키 키보드 - 오픈소스로 공개합니다 - https://news.hada.io/topic?id=26893\n[^13]: Bluesky를 경계하라 - https://news.hada.io/topic?id=26891\n[^14]: Claude는 왜 Electron 앱일까? - https://news.hada.io/topic?id=26890\n[^15]: 美 백악관, 인도 AI 임팩트 서밋서 ‘AI 주권’ 선언…“미국 AI가 글로벌 표준” - https://news.hada.io/topic?id=26889\n[^16]: 창작자를 위한 취향 (2002) - https://news.hada.io/topic?id=26888\n[^17]: Claude Code, 앱 미리보기·코드 리뷰·PR 자동 수정·병합 기능 추가 - https://news.hada.io/topic?id=26887\n[^18]: 보안 인가 신청서에 적지 말아야 할 것 (1988) - https://news.hada.io/topic?id=26886\n[^19]: LinkedIn 신원 인증을 하면 넘어가는 개인 정보들 - https://news.hada.io/topic?id=26885\n[^20]: sql-tap - 터미널 UI 기반 실시간 SQL 트래픽 뷰어 - https://news.hada.io/topic?id=26884\n[^21]: Claws는 이제 LLM 에이전트 위에 추가된 새로운 계층임 - https://news.hada.io/topic?id=26883\n[^22]: 2026년 데이터 엔지니어링의 향방 - 5가지 주요 트렌드 - https://news.hada.io/topic?id=26882\n[^23]: 실력 없음. 취향 없음. - https://news.hada.io/topic?id=26881\n[^24]: 페이팔, 6개월간 사용자 정보 노출된 데이터 유출 공개 - https://news.hada.io/topic?id=26880\n[^25]: How we built Agent Builder’s memory system - https://blog.langchain.com/how-we-built-agent-builders-memory-system/\n[^26]: Agent Observability Powers Agent Evaluation - https://blog.langchain.com/agent-observability-powers-agent-evaluation/\n[^27]: Writing Against the Global Lobotomy - https://kerkour.com/writing-against-the-global-lobotomy\n[^28]: Quarkus: Supersonic Subatomic Java - https://github.com/quarkusio/quarkus\n[^29]: Forge-Specific Git Repository Folders - https://nesbitt.io/2026/02/22/forge-specific-repository-folders.html\n[^30]: Unsung heroes: Flickr's URLs scheme - https://unsung.aresluna.org/unsung-heroes-flickrs-urls-scheme/\n[^31]: Xweather Live – Interactive global vector weather map (ad-free)) - https://live.xweather.com/\n[^32]: Volumetric Non-Invasive Cardiac Mapping for Global Arrhythmia Characterization - https://arxiv.org/abs/2510.17539\n[^33]: A tool to tell you what LLMs can run on your machine - https://github.com/AlexsJones/llmfit\n[^34]: Show HN: OpenGem – A Load-Balanced Gemini API Proxy (No API Key Required) - https://github.com/arifozgun/OpenGem\n[^35]: Web Verbs - https://github.com/nlweb-ai/MSR-Web-Verbs\n[^36]: FizzBuzz in Fortran 1 - https://mveg.es/posts/fizzbuzz-in-fortran-1/\n[^37]: Ask HN: How to get Codex to stop coding so defensively? - https://news.ycombinator.com/item?id=47111572\n[^38]: The Leading Economic Index for the US Continued to Decline in December - https://www.conference-board.org/topics/us-leading-indicators/index.cfm\n[^39]: Russia-linked cryptocurrency services and sanctions evasion - https://www.elliptic.co/blog/russia-linked-cryptocurrency-services-and-sanctions-evasion\n[^40]: I fell for a phishing attack and lost access to my X account - https://christianheilmann.com/2026/02/22/i-fell-for-a-phishing-attack-and-lost-access-to-my-x-account-here-are-five-mistakes-i-did-that-you-need-to-avoid/\n[^41]: How do you know which SKILL.md is good? - https://github.com/razbakov/skills-benchmark\n[^42]: What happens at 60% unemployment rate? - https://gruhn.me/blog/2026-02-22/\n[^43]: You still have to think. But only when you want to - https://undecidability.net/thinking/\n[^44]: Show HN: Delve and Dash – Quick retro dungeon crawler with procedural mazes - https://delvedash.com/\n[^45]: Show HN: Curb – Social Parking Solutions - https://curb-park.com/\n[^46]: Biohackers, wellness influencers are pushing nicotine as part of their 'stacks' - https://www.statnews.com/2026/02/20/nicotine-wellness-startups-productivity-boost-legal-gray-area/\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **February 2026 Insiders (version 1.110)**\n   - 출처: Visual Studio Code - Code Editing. Redefined.\n   - 링크: https://code.visualstudio.com/updates/v1_110\n\n2. **CERN이 1989년 원조 웹 브라우저를 재구현 (2019)**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26904\n\n3. **중국 CXMT, DDR4 반값 공급으로 삼성·SK의 HBM4 경쟁에 압박**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26903\n\n4. **ESP32에서 888KB 이하로 구동되는 개인용 AI 비서 ‘zclaw’**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26902\n\n5. **AI uBlock 블랙리스트**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26901\n\n6. **죽은 멀티플레이 게임을 되살리는 사이트, GameDate**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26900\n\n7. **Show GN: 노캔뉴스 업데이트: '이슈 딥다이브' 기능 추가**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26899\n\n8. **Andrej Karpathy가 말하는 \u0026quot;Claws\u0026quot;**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26897\n\n9. **LLM을 칩 위에 ‘인쇄’하는 Taalas의 방식**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26896\n\n10. **모든 AI 어시스턴트 개발 기업은 이제 광고 회사임**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26895\n\n11. **단일 RTX 3090에서 Llama 3.1 70B를 실행하는 NVMe-직접 GPU 추론 엔진 ‘ntransformer’**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26894\n\n12. **Show GN: ios용 모아키 키보드 - 오픈소스로 공개합니다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26893\n\n13. **Bluesky를 경계하라**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26891\n\n14. **Claude는 왜 Electron 앱일까?**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26890\n\n15. **美 백악관, 인도 AI 임팩트 서밋서 ‘AI 주권’ 선언…“미국 AI가 글로벌 표준”**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26889\n\n16. **창작자를 위한 취향 (2002)**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26888\n\n17. **Claude Code, 앱 미리보기·코드 리뷰·PR 자동 수정·병합 기능 추가**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26887\n\n18. **보안 인가 신청서에 적지 말아야 할 것 (1988)**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26886\n\n19. **LinkedIn 신원 인증을 하면 넘어가는 개인 정보들**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26885\n\n20. **sql-tap - 터미널 UI 기반 실시간 SQL 트래픽 뷰어**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26884\n\n21. **Claws는 이제 LLM 에이전트 위에 추가된 새로운 계층임**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26883\n\n22. **2026년 데이터 엔지니어링의 향방 - 5가지 주요 트렌드**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26882\n\n23. **실력 없음. 취향 없음.**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26881\n\n24. **페이팔, 6개월간 사용자 정보 노출된 데이터 유출 공개**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=26880\n\n25. **How we built Agent Builder’s memory system**\n   - 출처: LangChain Blog\n   - 링크: https://blog.langchain.com/how-we-built-agent-builders-memory-system/\n\n26. **Agent Observability Powers Agent Evaluation**\n   - 출처: LangChain Blog\n   - 링크: https://blog.langchain.com/agent-observability-powers-agent-evaluation/\n\n27. **Writing Against the Global Lobotomy**\n   - 출처: Hacker News\n   - 링크: https://kerkour.com/writing-against-the-global-lobotomy\n\n28. **Quarkus: Supersonic Subatomic Java**\n   - 출처: Hacker News\n   - 링크: https://github.com/quarkusio/quarkus\n\n29. **Forge-Specific Git Repository Folders**\n   - 출처: Hacker News\n   - 링크: https://nesbitt.io/2026/02/22/forge-specific-repository-folders.html\n\n30. **Unsung heroes: Flickr's URLs scheme**\n   - 출처: Hacker News\n   - 링크: https://unsung.aresluna.org/unsung-heroes-flickrs-urls-scheme/\n\n31. **Xweather Live – Interactive global vector weather map (ad-free))**\n   - 출처: Hacker News\n   - 링크: https://live.xweather.com/\n\n32. **Volumetric Non-Invasive Cardiac Mapping for Global Arrhythmia Characterization**\n   - 출처: Hacker News\n   - 링크: https://arxiv.org/abs/2510.17539\n\n33. **A tool to tell you what LLMs can run on your machine**\n   - 출처: Hacker News\n   - 링크: https://github.com/AlexsJones/llmfit\n\n34. **Show HN: OpenGem – A Load-Balanced Gemini API Proxy (No API Key Required)**\n   - 출처: Hacker News\n   - 링크: https://github.com/arifozgun/OpenGem\n\n35. **Web Verbs**\n   - 출처: Hacker News\n   - 링크: https://github.com/nlweb-ai/MSR-Web-Verbs\n\n36. **FizzBuzz in Fortran 1**\n   - 출처: Hacker News\n   - 링크: https://mveg.es/posts/fizzbuzz-in-fortran-1/\n\n37. **Ask HN: How to get Codex to stop coding so defensively?**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=47111572\n\n38. **The Leading Economic Index for the US Continued to Decline in December**\n   - 출처: Hacker News\n   - 링크: https://www.conference-board.org/topics/us-leading-indicators/index.cfm\n\n39. **Russia-linked cryptocurrency services and sanctions evasion**\n   - 출처: Hacker News\n   - 링크: https://www.elliptic.co/blog/russia-linked-cryptocurrency-services-and-sanctions-evasion\n\n40. **I fell for a phishing attack and lost access to my X account**\n   - 출처: Hacker News\n   - 링크: https://christianheilmann.com/2026/02/22/i-fell-for-a-phishing-attack-and-lost-access-to-my-x-account-here-are-five-mistakes-i-did-that-you-need-to-avoid/\n\n41. **How do you know which SKILL.md is good?**\n   - 출처: Hacker News\n   - 링크: https://github.com/razbakov/skills-benchmark\n\n42. **What happens at 60% unemployment rate?**\n   - 출처: Hacker News\n   - 링크: https://gruhn.me/blog/2026-02-22/\n\n43. **You still have to think. But only when you want to**\n   - 출처: Hacker News\n   - 링크: https://undecidability.net/thinking/\n\n44. **Show HN: Delve and Dash – Quick retro dungeon crawler with procedural mazes**\n   - 출처: Hacker News\n   - 링크: https://delvedash.com/\n\n45. **Show HN: Curb – Social Parking Solutions**\n   - 출처: Hacker News\n   - 링크: https://curb-park.com/\n\n46. **Biohackers, wellness influencers are pushing nicotine as part of their 'stacks'**\n   - 출처: Hacker News\n   - 링크: https://www.statnews.com/2026/02/20/nicotine-wellness-startups-productivity-boost-legal-gray-area/\n\n\n",
+  "articles": [
+    {
+      "title": "February 2026 Insiders (version 1.110)",
+      "link": "https://code.visualstudio.com/updates/v1_110",
+      "source": "Visual Studio Code - Code Editing. Redefined.",
+      "category": "tech",
+      "publishedAt": "2026-03-04T17:00:00Z",
+      "description": "\n      \u003cp\u003eLearn what is new in the Visual Studio Code February 2026 Release (1.110).\u003c/p\u003e\n      \u003cp\u003e\u003ca href=\"https://code.visualstudio.com/updates/v1_110\"\u003eRead the full article\u003c/a\u003e\u003c/p\u003e\n    "
+    },
+    {
+      "title": "CERN이 1989년 원조 웹 브라우저를 재구현 (2019)",
+      "link": "https://news.hada.io/topic?id=26904",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-23T05:41:23+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e1990년 CERN의 NeXT 컴퓨터에서 개발된 \u003cstrong\u003eWorldWideWeb 애플리케이션\u003c/strong\u003e은 오늘날 웹의 시초로 평가됨\u003c/li\u003e\n\u003cli\u003e2019년, 개발 30주년을 기념해 CERN이 \u003cstrong\u003e현대 브라우저 안에서 실행 가능한 원조 브라우저 복원판\u003c/strong\u003e을 제작\u003c/li\u003e\n\u003cli\u003e이 프로젝트는 \u003cstrong\u003eCERN \u0026amp; Society Foundat...\u003c/p\u003e"
+    },
+    {
+      "title": "중국 CXMT, DDR4 반값 공급으로 삼성·SK의 HBM4 경쟁에 압박",
+      "link": "https://news.hada.io/topic?id=26903",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-23T05:38:23+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e중국 \u003cstrong\u003eCXMT가 DDR4 메모리 가격을 절반 수준으로 인하\u003c/strong\u003e하며, 글로벌 공급 부족 속에서 구형 DRAM 시장 점유율 확대를 시도\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eHP·Dell 등 미국 기업과 Asus·Acer 등 대만 기업\u003c/strong\u003e이 CXMT 제품 품질 테스트 및 협력 검토에 나서며 수요 증가 조짐\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e삼성과...\u003c/p\u003e"
+    },
+    {
+      "title": "ESP32에서 888KB 이하로 구동되는 개인용 AI 비서 ‘zclaw’",
+      "link": "https://news.hada.io/topic?id=26902",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-23T05:35:22+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eESP32 보드에서 동작하는 초경량 AI 비서\u003c/strong\u003e로, 전체 펌웨어 크기가 888KiB 이하로 제한된 구조\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eC 언어로 작성\u003c/strong\u003e되었으며, GPIO 제어·스케줄링(cron)·지속 메모리·사용자 정의 도구를 \u003cstrong\u003e자연어로 조합\u003c/strong\u003e 가능\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eWi-Fi, TLS/암호화, 인증...\u003c/p\u003e"
+    },
+    {
+      "title": "AI uBlock 블랙리스트",
+      "link": "https://news.hada.io/topic?id=26901",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-23T04:36:51+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003euBlock Origin\u003c/strong\u003e에서 AI가 생성한 \u003cstrong\u003e콘텐츠 농장 사이트를 차단\u003c/strong\u003e하기 위한 공개 블랙리스트 프로젝트\u003c/li\u003e\n\u003cli\u003e생성형 AI가 작성한 웹사이트는 \u003cstrong\u003e광고와 추천 링크로 채워져 있으며 신뢰할 수 없는 정보\u003c/strong\u003e를 포함하는 경우가 많음\u003c/li\u003e\n\u003cli\u003e사용자는 \u003cstrong\u003elist....\u003c/p\u003e"
+    },
+    {
+      "title": "죽은 멀티플레이 게임을 되살리는 사이트, GameDate",
+      "link": "https://news.hada.io/topic?id=26900",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-23T04:33:51+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e오래된 \u003cstrong\u003e멀티플레이 게임 세션\u003c/strong\u003e을 다시 열어 플레이어를 모집하는 \u003cstrong\u003e커뮤니티 기반 플랫폼\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e사용자는 지역(NA, EU 등)과 시간대별로 \u003cstrong\u003e‘LIVE’ 또는 예정된 게임 이벤트\u003c/strong\u003e를 확인 가능\u003c/li\u003e\n\u003cli\u003e목록에는 \u003cstrong\u003eLethal League Blaze, Kane \u0026amp; Lynch...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: 노캔뉴스 업데이트: '이슈 딥다이브' 기능 추가",
+      "link": "https://news.hada.io/topic?id=26899",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-23T03:40:33+09:00",
+      "description": "\u003cp\u003e안녕하세요, 한달 전 도파민 빼고 맥락만 남기는 뉴스레터 '노캔뉴스'를 긱뉴스에 소개했던 1인 개발자입니다.\u003c/p\u003e\n\u003cp\u003e그동안 데일리 뉴스를 발행하면서, 매일의 단발성 뉴스만으로는 특정 이슈들의 전체 그림이 보이지 않는 문제를 해결하기 위해 새로운 기능인 '이슈 딥다이브'를 만들었습니다.\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e기능 "
+    },
+    {
+      "title": "Andrej Karpathy가 말하는 \u0026quot;Claws\u0026quot;",
+      "link": "https://news.hada.io/topic?id=26897",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-23T01:36:49+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eClaws\u003c/strong\u003e는 LLM 기반 \u003cstrong\u003eAI 에이전트 위에 구축된 새로운 계층\u003c/strong\u003e으로, 오케스트레이션·스케줄링·컨텍스트 관리·도구 호출·지속성 등을 확장하는 구조\u003c/li\u003e\n\u003cli\u003eAndrej Karpathy는 Mac Mini를 구입해 \u003cstrong\u003eOpenClaw\u003c/strong\u003e를 실험하며, 이를 “흥미롭고 흥분되는 AI 스택의 새로...\u003c/p\u003e"
+    },
+    {
+      "title": "LLM을 칩 위에 ‘인쇄’하는 Taalas의 방식",
+      "link": "https://news.hada.io/topic?id=26896",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-23T01:33:49+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eTaalas\u003c/strong\u003e는 Llama 3.1 8B 모델을 \u003cstrong\u003eASIC 칩\u003c/strong\u003e에 직접 새겨 넣어 초당 \u003cstrong\u003e17,000토큰\u003c/strong\u003e 추론 속도를 달성한 스타트업임\u003c/li\u003e\n\u003cli\u003eGPU 기반 시스템보다 \u003cstrong\u003e10배 저렴하고, 10배 적은 전력\u003c/strong\u003e, 그리고 \u003cstrong\u003e10배 빠른 추론 성능\u003c/strong\u003e을 주장함\u003c/li\u003e\n...\u003c/p\u003e"
+    },
+    {
+      "title": "모든 AI 어시스턴트 개발 기업은 이제 광고 회사임",
+      "link": "https://news.hada.io/topic?id=26895",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-23T00:37:31+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e주요 AI 기업들이 \u003cstrong\u003e광고 수익에 기반한 비즈니스 모델\u003c/strong\u003e로 전환하며, 사용자 주변의 모든 시각·청각 정보를 수집하는 \u003cstrong\u003e하드웨어 중심의 AI 어시스턴트\u003c/strong\u003e를 개발 중임\u003c/li\u003e\n\u003cli\u003e이러한 \u003cstrong\u003e항상 켜져 있는(Always-on)\u003c/strong\u003e AI는 음성 호출어 없이도 사용자의 일상 대화를 인...\u003c/p\u003e"
+    },
+    {
+      "title": "단일 RTX 3090에서 Llama 3.1 70B를 실행하는 NVMe-직접 GPU 추론 엔진 ‘ntransformer’",
+      "link": "https://news.hada.io/topic?id=26894",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-23T00:34:31+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eC++/CUDA 기반 LLM 추론 엔진\u003c/strong\u003e으로, GPU 메모리 스트리밍과 NVMe 직접 입출력을 통해 \u003cstrong\u003eLlama 70B 모델을 RTX 3090(24GB VRAM)\u003c/strong\u003e 에서 실행 가능\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e3단계 적응형 캐싱 구조\u003c/strong\u003e를 사용해 VRAM, 고정 RAM, NVMe/mmap을 자동 분할하며, mmap 대비 \u003cstrong\u003e최...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: ios용 모아키 키보드 - 오픈소스로 공개합니다",
+      "link": "https://news.hada.io/topic?id=26893",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-22T22:18:31+09:00",
+      "description": "\u003cp\u003eios에서 즐겨 쓰던 모아키 대용 'dev keyboard'라는 앱이 1달 전 즈음부터 앱스토어에서 내려갔습니다.\u003cbr /\u003e\n도저히 모바일 쿼티 키보드는 못 쓰겠더라고요.\u003cbr /\u003e\n그래서 직접 ios용 모아키 키보드를 개발했습니다.\u003cbr /\u003e\n3주 정도 실사용하면서 나름 괜찮아졌다고 생각해 공개합니다.\u003cbr /\u003e\n감사합니다!\u003c/p\u003e\n"
+    },
+    {
+      "title": "Bluesky를 경계하라",
+      "link": "https://news.hada.io/topic?id=26891",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-22T19:33:13+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eATProto 기반의 Bluesky\u003c/strong\u003e는 탈중앙화를 약속하지만, 실제로 대부분의 사용자 데이터가 \u003cstrong\u003eBluesky 서버에 집중\u003c/strong\u003e되어 있음\u003c/li\u003e\n\u003cli\u003e사용자는 개인 데이터 서버(PDS)를 직접 운영할 수 있지만, \u003cstrong\u003e편의성과 호환성\u003c/strong\u003e 때문에 거의 모두 Bluesky의 기본 서버를 이용함...\u003c/p\u003e"
+    },
+    {
+      "title": "Claude는 왜 Electron 앱일까?",
+      "link": "https://news.hada.io/topic?id=26890",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-22T13:33:15+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eElectron\u003c/strong\u003e은 HTML·CSS·JS 기반으로 \u003cstrong\u003eWindows, Mac, Linux를 동시에 지원\u003c/strong\u003e하는 데스크톱 앱을 만들 수 있는 프레임워크로, Slack·Discord·VS Code 등 다수의 앱이 이를 사용함\u003c/li\u003e\n\u003cli\u003e그러나 각 앱이 \u003cstrong\u003eChromium 엔진을 개별 포함\u003c/strong\u003e하기 때문에 용량이 크고, \u003cs...\u003c/p\u003e"
+    },
+    {
+      "title": "美 백악관, 인도 AI 임팩트 서밋서 ‘AI 주권’ 선언…“미국 AI가 글로벌 표준”",
+      "link": "https://news.hada.io/topic?id=26889",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-22T13:17:35+09:00",
+      "description": "\u003ch3\u003e미국, 인도 AI 임팩트 서밋서 \u0026quot;미국산 AI가 글로벌 골드 표준\u0026quot; 선언\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003eURL:\u003c/strong\u003e https://www.aninews.in/news/world/us/us-promotes-ai-sovereignty-and-exports-at-india-ai-impact-summit20260220133052\u003c/p\u003e\n\u003chr /\u003e\n\u003ch4\u003e서밋 개요\u003c/h4\u003e\n\u003cp\u003e2026년 2월 16~21일 인도 뉴델리 바라트 만"
+    },
+    {
+      "title": "창작자를 위한 취향 (2002)",
+      "link": "https://news.hada.io/topic?id=26888",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-22T11:32:03+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e좋은 디자인과 미적 감각\u003c/strong\u003e은 단순한 취향(Taste)이 아니라, 기술적 능력을 뛰어넘어 \u003cstrong\u003e아름다움을 인식하고 구현하는 능력\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e수학, 회화, 건축, 소프트웨어 등 \u003cstrong\u003e분야를 초월해 공통되는 \u0026quot;좋은 디자인\u0026quot;의 원칙\u003c/strong\u003e들을 체계적으로 정리해, \u003cstro...\u003c/p\u003e"
+    },
+    {
+      "title": "Claude Code, 앱 미리보기·코드 리뷰·PR 자동 수정·병합 기능 추가",
+      "link": "https://news.hada.io/topic?id=26887",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-22T09:51:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e클로드 코드 데스크톱\u003c/strong\u003e에서 개발 서버 실행과 앱 미리보기를 지원, 브라우저 전환 없이 UI·로그·오류 확인 가능\u003c/li\u003e\n\u003cli\u003e로컬 변경사항을 분석하는 \u003cstrong\u003eReview code 버튼\u003c/strong\u003e으로 푸시 전 버그·잠재 이슈를 인라인 코멘트로 확인 가능\u003c/li\u003e\n\u003cli\u003eGitHub PR 상태를 앱 내에서 추적하고...\u003c/p\u003e"
+    },
+    {
+      "title": "보안 인가 신청서에 적지 말아야 할 것 (1988)",
+      "link": "https://news.hada.io/topic?id=26886",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-22T09:37:58+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e12세 때 \u003cstrong\u003e암호학 책을 읽고 만든 비밀 코드\u003c/strong\u003e가 FBI의 첩보 사건으로 오해받은 일화를 다룸\u003c/li\u003e\n\u003cli\u003e분실한 \u003cstrong\u003e안경 케이스 속 암호 키\u003c/strong\u003e가 일본 스파이의 증거로 오인되어 FBI가 수주간 수사 진행\u003c/li\u003e\n\u003cli\u003e조사 후 FBI는 안경을 돌려줬지만 \u003cstrong\u003e암호 키는 기록용으로 보관\u003c/s...\u003c/p\u003e"
+    },
+    {
+      "title": "LinkedIn 신원 인증을 하면 넘어가는 개인 정보들",
+      "link": "https://news.hada.io/topic?id=26885",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-22T09:34:58+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eLinkedIn의 \u003cstrong\u003e신원 인증 절차\u003c/strong\u003e는 사용자가 여권과 얼굴 사진을 제출하면 완료되지만, 실제 데이터는 LinkedIn이 아닌 \u003cstrong\u003e미국 기업 Persona\u003c/strong\u003e로 전달됨\u003c/li\u003e\n\u003cli\u003ePersona는 여권 사진, \u003cstrong\u003e얼굴 인식용 생체정보\u003c/strong\u003e, \u003cstrong\u003eNFC 칩 데이터\u003c/strong\u003e, \u003cstrong\u003e기기 정보 및...\u003c/p\u003e"
+    },
+    {
+      "title": "sql-tap - 터미널 UI 기반 실시간 SQL 트래픽 뷰어",
+      "link": "https://news.hada.io/topic?id=26884",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-22T09:31:02+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003ePostgreSQL\u003c/strong\u003e, \u003cstrong\u003eMySQL\u003c/strong\u003e, \u003cstrong\u003eTiDB\u003c/strong\u003e 등 주요 데이터베이스의 쿼리 흐름을 \u003cstrong\u003e실시간으로 모니터링\u003c/strong\u003e 및 시각화\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e애플리케이션과 DB 사이 프록시(sql-tapd)\u003c/strong\u003e 가 모든 SQL 요청을 가로채고, 이를 \u003cstrong\u003egRPC 스트림\u003c/strong\u003e으...\u003c/p\u003e"
+    },
+    {
+      "title": "Claws는 이제 LLM 에이전트 위에 추가된 새로운 계층임",
+      "link": "https://news.hada.io/topic?id=26883",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-22T09:07:39+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eLLM 위에 에이전트가 추가된 이후, 그 위에서 \u003cstrong\u003e오케스트레이션·스케줄링·컨텍스트 관리·툴 호출·지속성\u003c/strong\u003e을 담당하는 \u003cstrong\u003eClaws 레이어\u003c/strong\u003e가 등장함\u003c/li\u003e\n\u003cli\u003e에이전트의 실행 구조를 한 단계 추상화해 \u003cstrong\u003e더 높은 수준의 자동화와 구성 가능성\u003c/strong\u003e 확보\u003c/li\u003e\n\u003cli\u003eOpenClaw는...\u003c/p\u003e"
+    },
+    {
+      "title": "2026년 데이터 엔지니어링의 향방 - 5가지 주요 트렌드",
+      "link": "https://news.hada.io/topic?id=26882",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-22T07:41:03+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e데이터 엔지니어링 분야는 AI 확산과 기술 부채 누적\u003c/strong\u003e이라는 이중 압력 속에서 양극화가 심화되는 흐름을 보임\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eAI 활용 수준\u003c/strong\u003e이 경쟁력의 핵심으로, 일상적 사용이 보편화되며 “AI 보조”라는 표현 자체가 사라질 전망\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e데이터 모델링과 시맨틱 ...\u003c/p\u003e"
+    },
+    {
+      "title": "실력 없음. 취향 없음.",
+      "link": "https://news.hada.io/topic?id=26881",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-22T07:40:29+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eLLM 시대에 누구나 앱을 만들 수 있게 되었지만, 진짜 장벽은 실력이 아닌 \u003cstrong\u003e취향(taste)\u003c/strong\u003e 이며, 이 장벽은 전혀 낮아지지 않았음\u003c/li\u003e\n\u003cli\u003e공개되는 \u003cstrong\u003e바이브 코딩 앱\u003c/strong\u003e 대부분이 포화된 아이디어의 조잡한 복제물로, \u003cstrong\u003e실력과 취향 모두 부족한 최하위 사분면\u003c/strong\u003e에 해...\u003c/p\u003e"
+    },
+    {
+      "title": "페이팔, 6개월간 사용자 정보 노출된 데이터 유출 공개",
+      "link": "https://news.hada.io/topic?id=26880",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-02-22T07:33:03+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e대출 신청 시스템 오류\u003c/strong\u003e로 인해 고객의 \u003cstrong\u003e민감한 개인정보\u003c/strong\u003e가 약 6개월간 외부에 노출됨\u003c/li\u003e\n\u003cli\u003e노출된 정보에는 \u003cstrong\u003e이름, 이메일, 전화번호, 사업장 주소, 사회보장번호, 생년월일\u003c/strong\u003e 등이 포함\u003c/li\u003e\n\u003cli\u003e페이팔은 문제를 발견한 다음날 \u003cstrong\u003e코드 변경을 되돌...\u003c/p\u003e"
+    },
+    {
+      "title": "How we built Agent Builder’s memory system",
+      "link": "https://blog.langchain.com/how-we-built-agent-builders-memory-system/",
+      "source": "LangChain Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-22T03:55:36Z",
+      "description": "A key part of Agent Builder is its memory system. In this article we cover our rationale for prioritizing a memory system, technical details of how we built it, learnings from building the memory system, what the memory system enables, and discuss future work."
+    },
+    {
+      "title": "Agent Observability Powers Agent Evaluation",
+      "link": "https://blog.langchain.com/agent-observability-powers-agent-evaluation/",
+      "source": "LangChain Blog",
+      "category": "tech",
+      "publishedAt": "2026-02-22T03:51:44Z",
+      "description": "You can't build reliable agents without understanding how they reason, and you can't validate improvements without systematic evaluation."
+    },
+    {
+      "title": "Writing Against the Global Lobotomy",
+      "link": "https://kerkour.com/writing-against-the-global-lobotomy",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-22T15:16:51Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://kerkour.com/writing-against-the-global-lobotomy\"\u003ehttps://kerkour.com/writing-against-the-global-lobotomy\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47111664\"\u003ehttps://news.ycombinator.com/item?id=47111664\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Quarkus: Supersonic Subatomic Java",
+      "link": "https://github.com/quarkusio/quarkus",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-22T15:14:52Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/quarkusio/quarkus\"\u003ehttps://github.com/quarkusio/quarkus\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47111650\"\u003ehttps://news.ycombinator.com/item?id=47111650\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Forge-Specific Git Repository Folders",
+      "link": "https://nesbitt.io/2026/02/22/forge-specific-repository-folders.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-22T15:13:28Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://nesbitt.io/2026/02/22/forge-specific-repository-folders.html\"\u003ehttps://nesbitt.io/2026/02/22/forge-specific-repository-folders.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47111640\"\u003ehttps://news.ycombinator.com/item?id=47111640\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Unsung heroes: Flickr's URLs scheme",
+      "link": "https://unsung.aresluna.org/unsung-heroes-flickrs-urls-scheme/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-22T15:13:14Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://unsung.aresluna.org/unsung-heroes-flickrs-urls-scheme/\"\u003ehttps://unsung.aresluna.org/unsung-heroes-flickrs-urls-scheme/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47111638\"\u003ehttps://news.ycombinator.com/item?id=47111638\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Xweather Live – Interactive global vector weather map (ad-free))",
+      "link": "https://live.xweather.com/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-22T15:12:15Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://live.xweather.com/\"\u003ehttps://live.xweather.com/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47111626\"\u003ehttps://news.ycombinator.com/item?id=47111626\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Volumetric Non-Invasive Cardiac Mapping for Global Arrhythmia Characterization",
+      "link": "https://arxiv.org/abs/2510.17539",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-22T15:12:04Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://arxiv.org/abs/2510.17539\"\u003ehttps://arxiv.org/abs/2510.17539\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47111624\"\u003ehttps://news.ycombinator.com/item?id=47111624\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "A tool to tell you what LLMs can run on your machine",
+      "link": "https://github.com/AlexsJones/llmfit",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-22T15:10:31Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/AlexsJones/llmfit\"\u003ehttps://github.com/AlexsJones/llmfit\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47111615\"\u003ehttps://news.ycombinator.com/item?id=47111615\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: OpenGem – A Load-Balanced Gemini API Proxy (No API Key Required)",
+      "link": "https://github.com/arifozgun/OpenGem",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-22T15:09:45Z",
+      "description": "\n\u003cp\u003eHi HN! I built OpenGem, an open-source, load-balanced proxy for the Gemini API that requires absolutely no paid API keys.\u003cp\u003eGitHub: \u003ca href=\"https://github.com/arifozgun/OpenGem\" rel=\"nofollow\"\u003ehttps://github.com/arifozgun/OpenGem\u003c/a\u003e\u003cp\u003eThe Context:\nLike many developers, I was constantly hitting \"429 Quota Exceeded\" errors while building AI agents and processing large payloads on free tiers. I wanted to build freely without calculating API costs for every test request.\u003cp\u003eHow it works:\nI reverse-engineered the official Gemini CLI authentication to get standard API access. However, a single free Google account quota depletes quickly. To solve this, I built a Smart Load Balancer at the core of OpenGem.\u003cp\u003eWhat it does:\n- You connect multiple idle/free Google accounts to the dashboard via OAuth.\n- OpenGem acts as a standard endpoint (`POST /v1beta/models/{model}`).\n- It routes traffic to the least-used account. If an account hits a real 429 quota limit, OpenGem instantly detects it, puts that account on a 60-minute cooldown, and seamlessly retries with the next available account. It differentiates between simple RPM bursts and actual limits.\u003cp\u003eTech specs:\n- Fully compatible with official Google SDKs (`@google/genai`), LangChain, and standard SSE streaming (no broken [DONE] chunks).\n- Supports native \"tools\" (Function Calling) for agentic workflows.\n- Raised payload limit to 50MB for massive contexts.\n- AES-256-GCM encryption for all sensitive configs and OAuth tokens at rest.\n- Toggle between Firebase Firestore or a fully offline Local JSON database.\u003cp\u003eIt’s strictly for educational purposes and personal research to bypass the friction of testing/prototyping. The entire project is MIT licensed.\u003cp\u003eI’m currently running it with my own side projects and it handles heavy agent tasks flawlessly. I would love any feedback on the load balancing logic, security implementations, or just general thoughts!\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47111607\"\u003ehttps://news.ycombinator.com/item?id=47111607\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Web Verbs",
+      "link": "https://github.com/nlweb-ai/MSR-Web-Verbs",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-22T15:09:22Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/nlweb-ai/MSR-Web-Verbs\"\u003ehttps://github.com/nlweb-ai/MSR-Web-Verbs\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47111603\"\u003ehttps://news.ycombinator.com/item?id=47111603\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "FizzBuzz in Fortran 1",
+      "link": "https://mveg.es/posts/fizzbuzz-in-fortran-1/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-22T15:06:09Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://mveg.es/posts/fizzbuzz-in-fortran-1/\"\u003ehttps://mveg.es/posts/fizzbuzz-in-fortran-1/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47111580\"\u003ehttps://news.ycombinator.com/item?id=47111580\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Ask HN: How to get Codex to stop coding so defensively?",
+      "link": "https://news.ycombinator.com/item?id=47111572",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-22T15:05:19Z",
+      "description": "\n\u003cp\u003eI primarily use typescript, and Codex tries and makes all fields in a type optional even though its obvious that optionality is not needed. It also uses tons of try / catches, swallows the errors and returns null / false from functions.\u003cp\u003eWhat I want is for it to use asserts instead of optionals, for it to let errors propagate.\u003cp\u003eWhat I have tried so far:\n- Specify my preferences in AGENTS.md file many times, yet it doesnt seem to make any difference in this aspect.\n- The rest of my code base does use asserts, and does not have unnecessary optionals, and yet it doesn't pick up that pattern.\u003cp\u003eWhat does work is that once it's done coding, I specifically tell it to go through the code and remove unnecessary optionals, and add asserts instead of defensive if conditions. But here too, I have to tell it to do so multiple times.\u003cp\u003eAny ideas to solve this would help. Thanks!\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47111572\"\u003ehttps://news.ycombinator.com/item?id=47111572\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Leading Economic Index for the US Continued to Decline in December",
+      "link": "https://www.conference-board.org/topics/us-leading-indicators/index.cfm",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-22T15:02:14Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.conference-board.org/topics/us-leading-indicators/index.cfm\"\u003ehttps://www.conference-board.org/topics/us-leading-indicators/index.cfm\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47111536\"\u003ehttps://news.ycombinator.com/item?id=47111536\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Russia-linked cryptocurrency services and sanctions evasion",
+      "link": "https://www.elliptic.co/blog/russia-linked-cryptocurrency-services-and-sanctions-evasion",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-22T15:01:40Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.elliptic.co/blog/russia-linked-cryptocurrency-services-and-sanctions-evasion\"\u003ehttps://www.elliptic.co/blog/russia-linked-cryptocurrency-services-and-sanctions-evasion\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47111531\"\u003ehttps://news.ycombinator.com/item?id=47111531\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "I fell for a phishing attack and lost access to my X account",
+      "link": "https://christianheilmann.com/2026/02/22/i-fell-for-a-phishing-attack-and-lost-access-to-my-x-account-here-are-five-mistakes-i-did-that-you-need-to-avoid/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-22T15:01:29Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://christianheilmann.com/2026/02/22/i-fell-for-a-phishing-attack-and-lost-access-to-my-x-account-here-are-five-mistakes-i-did-that-you-need-to-avoid/\"\u003ehttps://christianheilmann.com/2026/02/22/i-fell-for-a-phishing-attack-and-lost-access-to-my-x-account-here-are-five-mistakes-i-did-that-you-need-to-avoid/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47111530\"\u003ehttps://news.ycombinator.com/item?id=47111530\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "How do you know which SKILL.md is good?",
+      "link": "https://github.com/razbakov/skills-benchmark",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-22T15:00:55Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/razbakov/skills-benchmark\"\u003ehttps://github.com/razbakov/skills-benchmark\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47111522\"\u003ehttps://news.ycombinator.com/item?id=47111522\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "What happens at 60% unemployment rate?",
+      "link": "https://gruhn.me/blog/2026-02-22/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-22T15:00:27Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://gruhn.me/blog/2026-02-22/\"\u003ehttps://gruhn.me/blog/2026-02-22/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47111517\"\u003ehttps://news.ycombinator.com/item?id=47111517\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 2\u003c/p\u003e\n"
+    },
+    {
+      "title": "You still have to think. But only when you want to",
+      "link": "https://undecidability.net/thinking/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-22T15:00:03Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://undecidability.net/thinking/\"\u003ehttps://undecidability.net/thinking/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47111513\"\u003ehttps://news.ycombinator.com/item?id=47111513\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Delve and Dash – Quick retro dungeon crawler with procedural mazes",
+      "link": "https://delvedash.com/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-22T14:59:26Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://delvedash.com/\"\u003ehttps://delvedash.com/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47111510\"\u003ehttps://news.ycombinator.com/item?id=47111510\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Curb – Social Parking Solutions",
+      "link": "https://curb-park.com/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-22T14:59:10Z",
+      "description": "\n\u003cp\u003eThe first community of drivers helping each other park smarter and easier, anywhere.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47111507\"\u003ehttps://news.ycombinator.com/item?id=47111507\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Biohackers, wellness influencers are pushing nicotine as part of their 'stacks'",
+      "link": "https://www.statnews.com/2026/02/20/nicotine-wellness-startups-productivity-boost-legal-gray-area/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-02-22T14:59:02Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.statnews.com/2026/02/20/nicotine-wellness-startups-productivity-boost-legal-gray-area/\"\u003ehttps://www.statnews.com/2026/02/20/nicotine-wellness-startups-productivity-boost-legal-gray-area/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47111506\"\u003ehttps://news.ycombinator.com/item?id=47111506\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    }
+  ],
+  "generatedAt": "2026-02-23T07:10:22.276747288+09:00"
+}
