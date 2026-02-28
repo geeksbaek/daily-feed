@@ -63,7 +63,7 @@ Environment variables:
 
 Command-line flags:
 - `--feeds`: CSV file path (default: `feeds.csv`)
-- `--model`: Gemini model (default: `gemini-3-pro-preview`)
+- `--model`: Gemini model (default: `gemini-3.1-pro-preview`)
 - `--cutoff`: Hours to look back (default: 24)
 - `--timeout`: HTTP timeout seconds (default: 15)
 - `--preset`: Summary style (default: `magazine`), available: `magazine`
