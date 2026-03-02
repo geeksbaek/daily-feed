@@ -3,6 +3,7 @@ package feed
 import (
 	"context"
 	"encoding/xml"
+	"fmt"
 	"io"
 	"net"
 	"net/http"
@@ -73,8 +74,21 @@ func (p *processor) ProcessFeeds(ctx context.Context, feeds []models.Feed, cutof
 		allItems = append(allItems, item)
 	}
 
+	var feedErrors []error
 	for err := range errChan {
 		p.logger.Error(err.Error())
+		feedErrors = append(feedErrors, err)
+	}
+
+	totalFeeds := len(feeds)
+	failedFeeds := len(feedErrors)
+	successFeeds := totalFeeds - failedFeeds
+
+	p.logger.Info("피드 처리 결과: 전체 %d개, 성공 %d개, 실패 %d개, 수집된 기사 %d개",
+		totalFeeds, successFeeds, failedFeeds, len(allItems))
+
+	if totalFeeds > 0 && failedFeeds == totalFeeds {
+		return nil, fmt.Errorf("모든 피드 처리 실패 (%d/%d): 첫 번째 에러: %w", failedFeeds, totalFeeds, feedErrors[0])
 	}
 
 	return allItems, nil

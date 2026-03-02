@@ -101,27 +101,30 @@ func main() {
 		fmt.Printf("프리셋 '%s' 완료: %d개 기사 처리됨\n", preset, len(articles))
 	}
 
-	// 인덱스 파일 업데이트 (성공한 프리셋이 하나라도 있으면 업데이트)
-	if len(allSummaries) > 0 {
-		if err := updateIndex(today, presets, len(allSummaries[0].Articles)); err != nil {
-			fmt.Printf("인덱스 업데이트 실패: %v\n", err)
-		}
-	} else {
-		// 데이터가 없어도 인덱스는 업데이트 (빈 엔트리라도)
-		if err := updateIndex(today, presets, 0); err != nil {
-			fmt.Printf("인덱스 업데이트 실패: %v\n", err)
-		}
+	// 성공한 프리셋이 없거나 기사가 0개인 경우 실패 처리
+	if len(allSummaries) == 0 {
+		fmt.Printf("Daily Feed 생성 실패: 모든 프리셋에서 데이터 생성에 실패했습니다\n")
+		os.Exit(1)
 	}
 
-	fmt.Printf("Daily Feed 생성 완료: %s\n", today)
+	totalArticles := len(allSummaries[0].Articles)
+	if totalArticles == 0 {
+		fmt.Printf("Daily Feed 생성 실패: 수집된 기사가 0개입니다\n")
+		os.Exit(1)
+	}
 
-	// 푸시 알림 발송 (성공한 프리셋이 하나라도 있으면)
-	if len(allSummaries) > 0 {
-		if err := sendPushNotification(today); err != nil {
-			fmt.Printf("푸시 알림 발송 실패: %v\n", err)
-		} else {
-			fmt.Printf("푸시 알림 발송 완료: %s\n", today)
-		}
+	// 인덱스 파일 업데이트
+	if err := updateIndex(today, presets, totalArticles); err != nil {
+		fmt.Printf("인덱스 업데이트 실패: %v\n", err)
+	}
+
+	fmt.Printf("Daily Feed 생성 완료: %s (%d개 기사)\n", today, totalArticles)
+
+	// 푸시 알림 발송
+	if err := sendPushNotification(today); err != nil {
+		fmt.Printf("푸시 알림 발송 실패: %v\n", err)
+	} else {
+		fmt.Printf("푸시 알림 발송 완료: %s\n", today)
 	}
 }
 
