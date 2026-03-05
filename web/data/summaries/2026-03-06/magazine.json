@@ -1,0 +1,639 @@
+{
+  "date": "2026-03-06",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2026년 3월 6일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** OpenAI의 GPT-5.4 전격 공개로 AI 생태계가 또 한 번 요동치는 가운데, 아마존의 대규모 접속 장애와 AI 윤리 논쟁이 기술계의 뜨거운 화두로 떠올랐습니다.\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### OpenAI, 차세대 모델 'GPT-5.4' 전격 공개 및 추론 제어의 역설\nOpenAI가 마침내 차세대 AI 모델인 GPT-5.4를 공식 발표하며 AI 성능의 새로운 지평을 열었습니다. 특히 이번 발표와 함께 공개된 'Thinking System Card'와 연구 결과가 흥미롭습니다. OpenAI에 따르면, 최신 추론 모델들은 자신의 '생각의 사슬(Chain of Thought)'을 스스로 제어하는 데 어려움을 겪는 특성을 보였습니다. 하지만 연구진은 역설적으로 이러한 통제 불가능성이 모델의 투명성을 높이고 더 나은 문제 해결 능력을 제공하는 '긍정적인 현상'이라고 분석했습니다. AI가 인간의 지시를 맹목적으로 따르기보다, 고유의 논리적 전개를 유지하는 방향으로 진화하고 있음을 시사합니다.\n\u003e **Key Point:** GPT-5.4 출시와 함께, AI의 추론 과정 통제 불가능성이 오히려 성능 향상과 투명성의 열쇠임이 밝혀짐. [^51] [^52] [^53]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. GitHub Copilot, 누적 코드 리뷰 6,000만 건 돌파\n- **What:** GitHub Copilot이 전 세계적으로 6,000만 건 이상의 코드 리뷰를 수행하는 대기록을 세웠습니다. [^1] [^25]\n- **Why:** AI가 단순한 코드 자동 완성을 넘어, 코드의 품질을 검수하고 보안 취약점을 찾는 '동료 리뷰어(Peer Reviewer)'의 역할을 성공적으로 대체하고 있기 때문입니다.\n- **Impact:** 개발팀의 가장 큰 병목 현상 중 하나인 PR(Pull Request) 대기 시간이 획기적으로 줄어들며, 소프트웨어 배포 속도와 개발 생산성의 기준이 완전히 재정의될 전망입니다.\n\n### 2. 아마존(Amazon) 대규모 접속 장애 발생\n- **What:** 글로벌 이커머스 거인 아마존에서 결제 및 상품 리뷰 확인이 불가능한 대규모 서버 다운 사태가 발생했습니다. [^77]\n- **Why:** 정확한 원인은 조사 중이나, 글로벌 트래픽을 처리하는 핵심 인프라 및 결제 시스템에 심각한 오류가 발생한 것으로 추정됩니다.\n- **Impact:** 천문학적인 매출 손실은 물론, 클라우드 및 이커머스 거대 기업의 중앙집중형 인프라가 가진 취약성에 대한 업계의 불안감이 고조될 것입니다.\n\n### 3. Anthropic CEO, OpenAI의 군사 계약 맹비난\n- **What:** Anthropic의 CEO가 OpenAI의 군사 계약 관련 해명을 두고 \"명백한 거짓말(blatant lie)\"이라며 강도 높게 비판했습니다. [^35]\n- **Why:** AI 기술의 국방 및 군사적 활용을 둘러싸고, 안전을 최우선으로 하는 Anthropic과 상업적 확장을 꾀하는 OpenAI 간의 윤리적 기준 및 철학적 충돌이 수면 위로 드러난 것입니다.\n- **Impact:** AI 규제 및 정부/국방부와의 협력 가이드라인을 두고 빅테크 간의 파벌 형성 및 정치적 논쟁이 한층 격화될 것으로 예상됩니다.\n\n### 4. Roblox, 실시간 AI 채팅 필터링 도입\n- **What:** 메타버스 플랫폼 Roblox가 금지된 언어를 단순히 차단하는 대신 실시간으로 재작성(Rephrasing)하는 AI 필터링 시스템을 도입했습니다. [^66]\n- **Why:** 기존의 블라인드 처리 방식이 주는 사용자 경험 저하를 막고, 게임 내 자연스러운 대화 흐름을 유지하기 위함입니다.\n- **Impact:** 게임 및 소셜 플랫폼의 콘텐츠 모더레이션이 단순한 '검열'에서 문맥을 이해하는 '실시간 교정'으로 진화하는 새로운 표준을 제시했습니다.\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **Modular Diffusers** | Diffusion 파이프라인을 유연하게 구성할 수 있는 조합 가능한 모듈형 빌딩 블록 [^8] |\n| **Tool** | **Vercel agent-browser** | `--native` 기능이 새롭게 도입된 Vercel의 에이전트 브라우저 [^33] |\n| **Tool** | **언더로그 (Underlog)** | 책에 밑줄 친 문장을 촬영하면 AI가 인식해 디지털 서재로 옮겨주는 iOS 앱 [^34] |\n| **Tool** | **gws** | 터미널 환경에서 구글 워크스페이스를 효율적으로 관리할 수 있는 CLI 도구 [^40] |\n| **Tool** | **OpenAI Symphony** | 에이전트를 기반으로 프로젝트 관리를 자동화해주는 강력한 도구 [^46] |\n| **Tool** | **SitDeck** | 새롭게 공개된 프레젠테이션 및 덱(Deck) 제작 관련 프로젝트 [^64] |\n| **Tool** | **FastClaw** | 초보자와 전문가 모두 쉽게 사용할 수 있도록 설계된 강력한 AI 툴 [^70] |\n| **Tool** | **Tarmac** | Claude Code를 실행하기 전에 예상 비용을 미리 계산해주는 유용한 유틸리티 [^71] |\n| **Tool** | **StockMRRket** | 실제 MRR 데이터를 기반으로 인디 스타트업의 '주식'을 거래해보는 모의 플랫폼 [^75] |\n| **Paper** | **Generative Linguistics, LLMs...** | 생성 언어학과 LLM, 그리고 과학적 성공의 사회적 본질에 대한 심층 연구 논문 [^60] |\n| **Video** | **Pixel 10a Unboxing** | 구글의 새롭고 내구성 강한 스마트폰 Pixel 10a 공식 언박싱 영상 [^11] |\n| **Video** | **Mullvad VPN Ad** | 런던 거리 상영이 금지되어 화제가 된 Mullvad VPN의 파격적인 TV 광고 [^47] |\n| **Video** | **Jiang Xueqin** | 비대칭의 법칙(The Law of Asymmetry)에 대한 통찰을 담은 강연 영상 [^78] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **OpenTelemetry for Bitbucket**: Bitbucket 파이프라인에 웹훅을 통한 OpenTelemetry 추적 기능이 추가되었습니다. [^5]\n* **Engineering at AI scale**: 연결된 워크플로우가 개발 속도, 가시성, 거버넌스를 어떻게 향상시키는지에 대한 아틀라시안의 분석입니다. [^6]\n* **VS Code Insiders**: Visual Studio Code Insiders 1.111 버전 업데이트가 릴리스되었습니다. [^15]\n* **Cloudflare MTU Discovery**: 동적 경로 MTU 탐색을 통해 '조용한 패킷 드롭' 문제를 해결하고 클라이언트를 강화했습니다. [^19]\n* **Cloudflare IP Overlap**: 자동 반환 라우팅(Automatic Return Routing)으로 IP 중첩 문제를 해결하는 방법이 공개되었습니다. [^20]\n* **QUICker SASE client**: 더 빠른 SASE 클라이언트를 위해 QUIC 기반으로 프록시 모드를 재구축했습니다. [^21]\n* **Firefox about:config**: Firefox의 우클릭 메뉴를 about:config 설정을 통해 개선하는 팁이 공유되었습니다. [^28]\n* **새로운 Flash 만들기**: 과거의 영광이었던 Flash를 현대적으로 새롭게 구현하려는 시도와 회고입니다. [^39]\n* **Chrome Beta Update**: Chrome 데스크톱 및 안드로이드용 새로운 베타 버전이 업데이트되었습니다. [^49] [^50]\n* **Failed Pentest (2018)**: 2018년에 진행되었던 실패한 모의 해킹(Pentest)에 대한 흥미로운 회고록입니다. [^65]\n* **Port incident agent**: Port에서 인시던트 에이전트를 활용해 최근의 시스템 장애를 성공적으로 관리한 사례입니다. [^72]\n* **Async Rust**: 비동기 Rust 환경에서 Future를 절대 'Snooze'하면 안 되는 기술적 이유를 설명합니다. [^79]\n\n#### 🤖 AI \u0026 머신러닝\n* **Scaling AI opportunity**: GitHub과 Andela가 전하는 글로벌 AI 인재 및 기회 확장에 대한 인사이트입니다. [^2]\n* **Robotics AI on Embedded**: 임베디드 플랫폼에 로보틱스 AI를 도입하기 위한 데이터셋 기록 및 VLA 미세조정 방법입니다. [^7]\n* **Google I/O 2026**: Google I/O 사전 안내와 함께 AI 기반 게임 플레이 세션이 예고되었습니다. [^9]\n* **AI Visual Search**: Google AI가 사용자의 시각적 검색(Visual Search)을 이해하는 원리를 전문가가 설명합니다. [^10] [^22]\n* **February AI News**: 2월 한 달간 발표된 Google, DeepMind, Gemini의 최신 AI 뉴스 총정리입니다. [^12] [^17] [^18] [^23]\n* **Making agents practical**: 실제 개발 환경에서 AI 에이전트를 실용적으로 활용하는 방법론이 제시되었습니다. [^16]\n* **Evaluating Skills**: LangChain에서 AI 에이전트의 스킬을 평가하는 구체적인 방법론을 공개했습니다. [^24]\n* **Qwen3.5 미세조정**: 오픈소스 모델 Qwen3.5의 미세조정(Fine-tuning) 상세 가이드가 번역 공유되었습니다. [^30]\n* **AI 코드 라이선스 논란**: AI를 활용한 코드 재작성과 이에 따른 라이선스 변경의 법적 정당성 논란이 일고 있습니다. [^31]\n* **Claude Code HTTP Hook**: Claude Code에 외부 서비스와 연동할 수 있는 HTTP Hook 기능이 추가되었습니다. [^32]\n* **Claude Code 마케팅 팀**: 코딩 없이 Claude Code로 자율 AI 마케팅 팀을 구축해 1주일간 운영한 흥미로운 후기입니다. [^36]\n* **Qwen의 땅**: Qwen 생태계에서 일어나고 있는 심상치 않은 발전과 변화들에 대한 분석입니다. [^41]\n* **에이전틱 엔지니어링**: 실전에서 활용 가능한 에이전틱(Agentic) 엔지니어링 패턴들이 정리되었습니다. [^42]\n* **AI in Education**: 교육 분야에서의 AI 활용이 불평등을 넘어 새로운 기회로 이어지도록 보장하는 방안입니다. [^54]\n* **Five AI value models**: 비즈니스 혁신을 주도하는 5가지 핵심 AI 가치 모델이 제시되었습니다. [^55] [^68]\n* **ChatGPT for Excel**: Excel용 ChatGPT 도입 및 새로운 금융 데이터 통합 기능이 발표되었습니다. [^56]\n* **Nano Banana prompting**: Nano Banana 모델의 성능을 극대화하기 위한 궁극의 프롬프팅 가이드입니다. [^59]\n* **AI PR discard protocol**: 저품질 AI 생성 PR(Pull Request)을 효율적으로 처리하고 폐기하는 표준 프로토콜이 제안되었습니다. [^62]\n* **Why we hate LLM articles**: 우리가 LLM이 쓴 영혼 없는 글을 싫어하는 이유에 대한 Mo Samuels의 에세이입니다. [^73]\n* **How good is Claude**: Claude 모델의 실제 코딩 및 추론 성능이 과연 어느 정도인지 심층 검증한 리뷰입니다. [^74]\n\n#### 🌐 비즈니스 \u0026 IT 트렌드\n* **PM AI interviews**: 프로덕트 매니저가 AI를 활용해 월 30회 이상의 고객 인터뷰를 효율적으로 진행하는 노하우입니다. [^4]\n* **Google AI Center Berlin**: Google이 연구자와 리더들을 위한 허브로 베를린에 새로운 AI 센터를 오픈했습니다. [^14]\n* **정부 보조금 연구 논란**: 정부 보조금으로 수행된 연구 결과는 영리 학술지에 실리지 않아야 한다는 주장이 제기되었습니다. [^29]\n* **단순함과 승진**: 직장에서 '단순함(Simplicity)'을 추구하는 것만으로는 승진하기 어렵다는 현실적인 커리어 조언입니다. [^44]\n* **Adoption news channel**: OpenAI가 AI 도입 사례와 뉴스를 전문적으로 다루는 'Adoption' 채널을 신설했습니다. [^57]\n* **SaaSpocalypse**: 기업들이 갑자기 SaaS 모델의 미래와 비용 구조를 심각하게 걱정하기 시작한 이유를 분석합니다. [^69]\n* **댓글 창의 부활**: 웹사이트들이 무분별하게 댓글 창을 없앴던 것이 커뮤니티 유지에 큰 실수였음을 깨닫고 있습니다. [^76]\n\n#### 📱 모바일, 디바이스 \u0026 게임\n* **F1 on Apple TV**: 이번 주말 Formula 1®이 개막하며, 미국 내에서는 Apple TV를 통해 독점 중계됩니다. [^3]\n* **맥북 Neo**: 유명 테크 블로거 존 그루버가 애플의 새로운 맥북 Neo에 대한 생각과 관찰을 공유했습니다. [^37]\n* **모토로라 GrapheneOS**: 모토로라 기기들이 보안 OS인 GrapheneOS 설치를 위한 부트로더 잠금 해제 및 재잠금을 지원할 예정입니다. [^45]\n* **GeForce NOW**: NVIDIA의 클라우드 게이밍 서비스 GeForce NOW에 15개의 신작 게임이 대거 추가되었습니다. [^58]\n\n#### 🌍 사회, 보안 \u0026 기타\n* **Superpollutants pledge**: Google이 2030년까지 슈퍼 오염물질 퇴치를 위해 5천만 달러를 투자하겠다고 약속했습니다. [^13]\n* **Moss 픽셀 캔버스**: 캔버스의 모든 브러시가 하나의 작은 프로그램으로 동작하는 독특한 픽셀 아트 툴 'Moss'가 화제입니다. [^26]\n* **It turns out**: 기술계 문서나 발표에서 흔히 쓰이는 마법의 단어 '결국 밝혀지는 것(It turns out)'에 대한 고찰입니다. [^27]\n* **TikTok E2EE 거부**: TikTok이 사용자 안전과 모더레이션을 이유로 종단간 암호화(E2EE) 도입을 거부했습니다. [^38]\n* **플록 카메라 지도**: 감시 논란이 있는 플록(Flock) 카메라의 위치를 보여주는 인터랙티브 지도가 공개되었습니다. [^43]\n* **이란 전쟁 비용 추적기**: 이란의 전쟁 비용을 추적하던 오픈소스 프로젝트가 일시적으로 중단되었습니다. [^48]\n* **무굴 제국의 경제**: 해커뉴스에서 무굴 제국의 경제 구조에 대한 역사적 분석 글이 인기를 끌고 있습니다. [^61]\n* **바니 배우의 근황**: 과거 어린이 프로그램의 공룡 '바니(Barney)'를 연기했던 배우가 현재 탄트라 섹스 비즈니스를 운영 중이라는 소식입니다. [^63]\n* **HN 모바일 사이트**: Hacker News의 모바일 사이트 UI가 변경된 것인지 묻는 유저들의 질문이 올라왔습니다. [^67]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘 브리핑에서는 GPT-5.4의 등장으로 다시 한번 증명된 AI의 폭발적인 진화와, 이를 둘러싼 기업 간의 윤리적 갈등(Anthropic vs OpenAI)이 극명한 대비를 이뤘습니다. 기술의 발전 속도만큼이나, 이를 어떻게 통제하고 활용할 것인지에 대한 철학적 고민이 그 어느 때보다 중요한 시점입니다.\n\n[^1]: 60 million Copilot code reviews and counting - https://github.blog/ai-and-ml/github-copilot/60-million-copilot-code-reviews-and-counting/\n[^2]: Scaling AI opportunity across the globe: Learnings from GitHub and Andela - https://github.blog/developer-skills/career-growth/scaling-ai-opportunity-across-the-globe-learnings-from-github-and-andela/\n[^3]: Formula 1® begins this weekend, exclusively on Apple TV in the U.S. - https://www.apple.com/newsroom/2026/03/formula-1-begins-this-weekend-exclusively-on-apple-tv-in-the-us/\n[^4]: How a product manager conducts 30+ customer interviews per month with AI - https://www.atlassian.com/blog/artificial-intelligence/customer-insights-rovo-agent\n[^5]: OpenTelemetry traces for Bitbucket Pipelines via webhooks - https://www.atlassian.com/blog/bitbucket/bitbucket-pipelines-opentelemetry-traces-via-webhooks\n[^6]: Engineering at AI scale: how connected workflows unlock velocity, visibility, and governance - https://www.atlassian.com/blog/work-management/engineering-at-ai-scale-how-connected-workflows-unlock-velocity-visibility-and-governance\n[^7]: Bringing Robotics AI to Embedded Platforms: Dataset Recording, VLA Fine‑Tuning, and On‑Device Optimizations - https://huggingface.co/blog/nxp/bringing-robotics-ai-to-embedded-platforms\n[^8]: Introducing Modular Diffusers - Composable Building Blocks for Diffusion Pipelines - https://huggingface.co/blog/modular-diffusers\n[^9]: Play AI-based games in our I/O Save the date - https://blog.google/innovation-and-ai/technology/developers-tools/io-save-the-date-2026-gemini/\n[^10]: Ask a Techspert: How does AI understand my visual searches? - https://blog.google/company-news/inside-google/googlers/how-google-ai-visual-search-works/\n[^11]: Unbox the sleek, durable new Pixel 10a with us. - https://blog.google/products-and-platforms/devices/pixel/pixel-10a-unboxing-video/\n[^12]: The latest AI news we announced in February - https://blog.google/innovation-and-ai/products/google-ai-updates-february-2026/\n[^13]: We’re pledging $50 million through 2030 to take action on superpollutants. - https://blog.google/company-news/outreach-and-initiatives/sustainability/pledge-to-fight-superpollutants-2030/\n[^14]: We’re opening the Google AI Center Berlin as a hub for researchers, developers and leaders. - https://blog.google/company-news/inside-google/around-the-globe/google-europe/google-ai-center-berlin/\n[^15]: Insiders (version 1.111) - https://code.visualstudio.com/updates/v1_111\n[^16]: Making agents practical for real-world development - https://code.visualstudio.com/blogs/2026/03/05/making-agents-practical-for-real-world-development\n[^17]: The latest AI news we announced in February - https://blog.google/innovation-and-ai/products/google-ai-updates-february-2026/\n[^18]: The latest AI news we announced in February - https://blog.google/innovation-and-ai/products/google-ai-updates-february-2026/\n[^19]: Ending the \"silent drop\": how Dynamic Path MTU Discovery makes the Cloudflare One Client more resilient - https://blog.cloudflare.com/client-dynamic-path-mtu-discovery/\n[^20]: How Automatic Return Routing solves IP overlap - https://blog.cloudflare.com/automatic-return-routing-ip-overlap/\n[^21]: A QUICker SASE client: re-building Proxy Mode - https://blog.cloudflare.com/faster-sase-proxy-mode-quic/\n[^22]: Ask a Techspert: How does AI understand my visual searches? - https://blog.google/company-news/inside-google/googlers/how-google-ai-visual-search-works/\n[^23]: The latest AI news we announced in February - https://blog.google/innovation-and-ai/products/google-ai-updates-february-2026/\n[^24]: Evaluating Skills - https://blog.langchain.com/evaluating-skills/\n[^25]: 60 million Copilot code reviews and counting - https://github.blog/ai-and-ml/github-copilot/60-million-copilot-code-reviews-and-counting/\n[^26]: Moss — 모든 브러시가 작은 프로그램인 픽셀 캔버스 - https://news.hada.io/topic?id=27229\n[^27]: 결국 밝혀지는 것(It turns out) - https://news.hada.io/topic?id=27228\n[^28]: Firefox의 우클릭 메뉴를 about:config로 개선하기 - https://news.hada.io/topic?id=27227\n[^29]: 정부 보조금으로 수행된 연구는 영리 학술지에 실리지 않아야 함 - https://news.hada.io/topic?id=27226\n[^30]: Qwen3.5 미세조정 가이드 - https://news.hada.io/topic?id=27225\n[^31]: AI를 활용한 코드 재작성과 라이선스 변경의 법적 정당성 논란 - https://news.hada.io/topic?id=27222\n[^32]: Claude Code, HTTP Hook 기능 추가 - https://news.hada.io/topic?id=27219\n[^33]: Vercel agent-browser, --native 기능 도입 - https://news.hada.io/topic?id=27218\n[^34]: Show GN: 언더로그 - 밑줄 친 문장을 촬영하면 AI가 서재로 옮겨주는 iOS 앱 - https://news.hada.io/topic?id=27217\n[^35]: Anthropic CEO, OpenAI의 군사 계약 관련 발언을 ‘명백한 거짓말’이라 비판 - https://news.hada.io/topic?id=27214\n[^36]: 코딩없이 Claude Code로 자율 AI 마케팅 팀을 만들어 1주일간 운영한 이야기 - https://news.hada.io/topic?id=27213\n[^37]: 존 그루버 - 맥북 Neo에 대한 생각과 관찰 - https://news.hada.io/topic?id=27212\n[^38]: TikTok, 종단간 암호화 도입하지 않기로…“사용자 안전을 해친다” 주장 - https://news.hada.io/topic?id=27211\n[^39]: 새로운 Flash를 만들기 - https://news.hada.io/topic?id=27210\n[^40]: gws - 구글 워크스페이스 CLI - https://news.hada.io/topic?id=27209\n[^41]: Qwen의 땅에서 무언가 일어나고 있다 - https://news.hada.io/topic?id=27207\n[^42]: 에이전틱 엔지니어링 패턴 - https://news.hada.io/topic?id=27206\n[^43]: 플록 카메라의 인터랙티브 지도 - https://news.hada.io/topic?id=27205\n[^44]: 단순함으로는 승진하지 못한다 - https://news.hada.io/topic?id=27204\n[^45]: 모토로라 GrapheneOS 기기, 부트로더 잠금 해제 및 재잠금 지원 예정 - https://news.hada.io/topic?id=27203\n[^46]: OpenAI Symphony - 에이전트 기반 프로젝트 관리 자동화 도구 - https://news.hada.io/topic?id=27201\n[^47]: Mullvad VPN: 런던 거리에서 상영 금지된 TV 광고 [영상] - https://news.hada.io/topic?id=27200\n[^48]: 이란 전쟁 비용 추적기 — 일시 중단 - https://news.hada.io/topic?id=27199\n[^49]: Chrome Beta for Desktop Update - http://chromereleases.googleblog.com/2026/03/chrome-beta-for-desktop-update.html\n[^50]: Chrome Beta for Android Update - http://chromereleases.googleblog.com/2026/03/chrome-beta-for-android-update.html\n[^51]: Reasoning models struggle to control their chains of thought, and that’s good - https://openai.com/index/reasoning-models-chain-of-thought-controllability\n[^52]: GPT-5.4 Thinking System Card - https://openai.com/index/gpt-5-4-thinking-system-card\n[^53]: Introducing GPT-5.4 - https://openai.com/index/introducing-gpt-5-4\n[^54]: Ensuring AI use in education leads to opportunity - https://openai.com/index/ai-education-opportunity\n[^55]: The five AI value models driving business reinvention - https://openai.com/index/the-five-ai-value-models-driving-business-reinvention\n[^56]: Introducing ChatGPT for Excel and new financial data integrations - https://openai.com/index/chatgpt-for-excel\n[^57]: Introducing the Adoption news channel - https://openai.com/index/introducing-the-adoption-news-channel\n[^58]: March Into the Cloud With 15 New Games Coming to GeForce NOW - https://blogs.nvidia.com/blog/geforce-now-thursday-march-2026-games-list/\n[^59]: The ultimate Nano Banana prompting guide - https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana/\n[^60]: Generative Linguistics, LLMs, and the Social Nature of Scientific Success - https://arxiv.org/abs/2503.20088\n[^61]: Economy of the Mughal Empire - https://en.wikipedia.org/wiki/Economy_of_the_Mughal_Empire\n[^62]: A standard protocol to handle and discard low-effort, AI-Generated pull requests - https://406.fail/\n[^63]: The Guy Who Played Barney the Dinosaur Now Runs a Tantric Sex Business - https://www.vice.com/en/article/the-guy-who-played-barney-the-dinosaur-now-runs-a-tantric-sex-business/\n[^64]: Show HN: Check out my new project – SitDeck - https://sitdeck.com\n[^65]: Story of a Failed Pentest (2018) - https://web.archive.org/web/20181118010006/https://threader.app/thread/1063423110513418240\n[^66]: Roblox launches real-time AI chat rephrasing to filter out banned language - https://techcrunch.com/2026/03/05/roblox-launches-real-time-ai-chat-rephrasing-to-filter-out-banned-language/\n[^67]: Ask HN: Did you change the site on mobile? - https://news.ycombinator.com/item?id=47267868\n[^68]: The five AI value models driving business reinvention - https://openai.com/index/the-five-ai-value-models-driving-business-reinvention\n[^69]: SaaSpocalypse: Enterprises are suddenly worried about the future of SaaS - https://www.techcircle.in/2026/02/09/saaspocalypse-explained-why-enterprises-are-suddenly-worried-about-the-future-of-saas/\n[^70]: FastClaw: Strong and powerfull AI easy to use for new users or pro users - https://fastclaw.live/\n[^71]: Show HN: Tarmac – Know what Claude Code will cost before you run it - https://github.com/CodeSarthak/tarmac\n[^72]: How we would have managed a recent incident at Port with an incident agent - https://www.port.io/blog/how-we-would-have-managed-a-recent-incident-at-port-with-an-incident-agent\n[^73]: Mo Samuels wrote this blog post - https://idiallo.com/blog/why-we-hate-llm-articles\n[^74]: How good is Claude, really? - https://alinpanaitiu.com/blog/how-good-is-claude-really/\n[^75]: Show HN: StockMRRket – trade indie startup \"stocks\" priced from real MRR data - https://stockmrrket.com/\n[^76]: Whoops, Websites Realize That Killing Their Comment Sections Was a Mistake - https://www.techdirt.com/2026/02/03/whoops-websites-realize-that-killing-their-comment-sections-was-a-mistake/\n[^77]: Amazon down – live updates on outage as shoppers can't check out - https://www.tomsguide.com/computing/live/amazon-is-down-live-outage-report-as-users-cant-check-out-see-product-reviews-and-more\n[^78]: Jiang Xueqin – The Law of Asymmetry [video] - https://www.youtube.com/watch?v=t5oisJiorsU\n[^79]: Never snooze a future in async Rust - https://jacko.io/snooze.html\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **60 million Copilot code reviews and counting**\n   - 출처: GitHub Blog\n   - 링크: https://github.blog/ai-and-ml/github-copilot/60-million-copilot-code-reviews-and-counting/\n\n2. **Scaling AI opportunity across the globe: Learnings from GitHub and Andela**\n   - 출처: GitHub Blog\n   - 링크: https://github.blog/developer-skills/career-growth/scaling-ai-opportunity-across-the-globe-learnings-from-github-and-andela/\n\n3. **Formula 1® begins this weekend, exclusively on Apple TV in the U.S.\n**\n   - 출처: Apple Newsroom\n   - 링크: https://www.apple.com/newsroom/2026/03/formula-1-begins-this-weekend-exclusively-on-apple-tv-in-the-us/\n\n4. **How a product manager conducts 30+ customer interviews per month with AI**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/artificial-intelligence/customer-insights-rovo-agent\n\n5. **OpenTelemetry traces for Bitbucket Pipelines via webhooks**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/bitbucket/bitbucket-pipelines-opentelemetry-traces-via-webhooks\n\n6. **Engineering at AI scale: how connected workflows unlock velocity, visibility, and governance**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/work-management/engineering-at-ai-scale-how-connected-workflows-unlock-velocity-visibility-and-governance\n\n7. **Bringing Robotics AI to Embedded Platforms: Dataset Recording, VLA Fine‑Tuning, and On‑Device Optimizations**\n   - 출처: Hugging Face - Blog\n   - 링크: https://huggingface.co/blog/nxp/bringing-robotics-ai-to-embedded-platforms\n\n8. **Introducing Modular Diffusers - Composable Building Blocks for Diffusion Pipelines**\n   - 출처: Hugging Face - Blog\n   - 링크: https://huggingface.co/blog/modular-diffusers\n\n9. **Play AI-based games in our I/O Save the date**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/innovation-and-ai/technology/developers-tools/io-save-the-date-2026-gemini/\n\n10. **Ask a Techspert: How does AI understand my visual searches?**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/company-news/inside-google/googlers/how-google-ai-visual-search-works/\n\n11. **Unbox the sleek, durable new Pixel 10a with us.**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/products-and-platforms/devices/pixel/pixel-10a-unboxing-video/\n\n12. **The latest AI news we announced in February**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/innovation-and-ai/products/google-ai-updates-february-2026/\n\n13. **We’re pledging $50 million through 2030 to take action on superpollutants.**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/company-news/outreach-and-initiatives/sustainability/pledge-to-fight-superpollutants-2030/\n\n14. **We’re opening the Google AI Center Berlin as a hub for researchers, developers and leaders.**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/company-news/inside-google/around-the-globe/google-europe/google-ai-center-berlin/\n\n15. **Insiders (version 1.111)**\n   - 출처: Visual Studio Code - Code Editing. Redefined.\n   - 링크: https://code.visualstudio.com/updates/v1_111\n\n16. **Making agents practical for real-world development**\n   - 출처: Visual Studio Code - Code Editing. Redefined.\n   - 링크: https://code.visualstudio.com/blogs/2026/03/05/making-agents-practical-for-real-world-development\n\n17. **The latest AI news we announced in February**\n   - 출처: Google DeepMind\n   - 링크: https://blog.google/innovation-and-ai/products/google-ai-updates-february-2026/\n\n18. **The latest AI news we announced in February**\n   - 출처: Gemini\n   - 링크: https://blog.google/innovation-and-ai/products/google-ai-updates-february-2026/\n\n19. **Ending the \"silent drop\": how Dynamic Path MTU Discovery makes the Cloudflare One Client more resilient**\n   - 출처: Cloudflare Blog\n   - 링크: https://blog.cloudflare.com/client-dynamic-path-mtu-discovery/\n\n20. **How Automatic Return Routing solves IP overlap**\n   - 출처: Cloudflare Blog\n   - 링크: https://blog.cloudflare.com/automatic-return-routing-ip-overlap/\n\n21. **A QUICker SASE client: re-building Proxy Mode**\n   - 출처: Cloudflare Blog\n   - 링크: https://blog.cloudflare.com/faster-sase-proxy-mode-quic/\n\n22. **Ask a Techspert: How does AI understand my visual searches?**\n   - 출처: AI\n   - 링크: https://blog.google/company-news/inside-google/googlers/how-google-ai-visual-search-works/\n\n23. **The latest AI news we announced in February**\n   - 출처: AI\n   - 링크: https://blog.google/innovation-and-ai/products/google-ai-updates-february-2026/\n\n24. **Evaluating Skills**\n   - 출처: LangChain Blog\n   - 링크: https://blog.langchain.com/evaluating-skills/\n\n25. **60 million Copilot code reviews and counting**\n   - 출처: The latest on GitHub Copilot - The GitHub Blog\n   - 링크: https://github.blog/ai-and-ml/github-copilot/60-million-copilot-code-reviews-and-counting/\n\n26. **Moss — 모든 브러시가 작은 프로그램인 픽셀 캔버스**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27229\n\n27. **결국 밝혀지는 것(It turns out)**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27228\n\n28. **Firefox의 우클릭 메뉴를 about:config로 개선하기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27227\n\n29. **정부 보조금으로 수행된 연구는 영리 학술지에 실리지 않아야 함**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27226\n\n30. **Qwen3.5 미세조정 가이드**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27225\n\n31. **AI를 활용한 코드 재작성과 라이선스 변경의 법적 정당성 논란**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27222\n\n32. **Claude Code, HTTP Hook 기능 추가**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27219\n\n33. **Vercel agent-browser, --native 기능 도입**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27218\n\n34. **Show GN: 언더로그 - 밑줄 친 문장을 촬영하면 AI가 서재로 옮겨주는 iOS 앱**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27217\n\n35. **Anthropic CEO, OpenAI의 군사 계약 관련 발언을 ‘명백한 거짓말’이라 비판**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27214\n\n36. **코딩없이 Claude Code로 자율 AI 마케팅 팀을 만들어 1주일간 운영한 이야기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27213\n\n37. **존 그루버 - 맥북 Neo에 대한 생각과 관찰**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27212\n\n38. **TikTok, 종단간 암호화 도입하지 않기로…“사용자 안전을 해친다” 주장**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27211\n\n39. **새로운 Flash를 만들기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27210\n\n40. **gws - 구글 워크스페이스 CLI **\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27209\n\n41. **Qwen의 땅에서 무언가 일어나고 있다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27207\n\n42. **에이전틱 엔지니어링 패턴**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27206\n\n43. **플록 카메라의 인터랙티브 지도**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27205\n\n44. **단순함으로는 승진하지 못한다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27204\n\n45. **모토로라 GrapheneOS 기기, 부트로더 잠금 해제 및 재잠금 지원 예정**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27203\n\n46. **OpenAI Symphony - 에이전트 기반 프로젝트 관리 자동화 도구**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27201\n\n47. **Mullvad VPN: 런던 거리에서 상영 금지된 TV 광고 [영상]**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27200\n\n48. **이란 전쟁 비용 추적기 — 일시 중단**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27199\n\n49. **Chrome Beta for Desktop Update**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2026/03/chrome-beta-for-desktop-update.html\n\n50. **Chrome Beta for Android Update**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2026/03/chrome-beta-for-android-update.html\n\n51. **Reasoning models struggle to control their chains of thought, and that’s good**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/reasoning-models-chain-of-thought-controllability\n\n52. **GPT-5.4 Thinking System Card**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/gpt-5-4-thinking-system-card\n\n53. **Introducing GPT-5.4**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/introducing-gpt-5-4\n\n54. **Ensuring AI use in education leads to opportunity**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/ai-education-opportunity\n\n55. **The five AI value models driving business reinvention**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/the-five-ai-value-models-driving-business-reinvention\n\n56. **Introducing ChatGPT for Excel and new financial data integrations**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/chatgpt-for-excel\n\n57. **Introducing the Adoption news channel**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/introducing-the-adoption-news-channel\n\n58. **March Into the Cloud With 15 New Games Coming to GeForce NOW**\n   - 출처: NVIDIA Blog\n   - 링크: https://blogs.nvidia.com/blog/geforce-now-thursday-march-2026-games-list/\n\n59. **The ultimate Nano Banana prompting guide**\n   - 출처: AI \u0026 Machine Learning\n   - 링크: https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana/\n\n60. **Generative Linguistics, LLMs, and the Social Nature of Scientific Success**\n   - 출처: Hacker News\n   - 링크: https://arxiv.org/abs/2503.20088\n\n61. **Economy of the Mughal Empire**\n   - 출처: Hacker News\n   - 링크: https://en.wikipedia.org/wiki/Economy_of_the_Mughal_Empire\n\n62. **A standard protocol to handle and discard low-effort, AI-Generated pull requests**\n   - 출처: Hacker News\n   - 링크: https://406.fail/\n\n63. **The Guy Who Played Barney the Dinosaur Now Runs a Tantric Sex Business**\n   - 출처: Hacker News\n   - 링크: https://www.vice.com/en/article/the-guy-who-played-barney-the-dinosaur-now-runs-a-tantric-sex-business/\n\n64. **Show HN: Check out my new project – SitDeck**\n   - 출처: Hacker News\n   - 링크: https://sitdeck.com\n\n65. **Story of a Failed Pentest (2018)**\n   - 출처: Hacker News\n   - 링크: https://web.archive.org/web/20181118010006/https://threader.app/thread/1063423110513418240\n\n66. **Roblox launches real-time AI chat rephrasing to filter out banned language**\n   - 출처: Hacker News\n   - 링크: https://techcrunch.com/2026/03/05/roblox-launches-real-time-ai-chat-rephrasing-to-filter-out-banned-language/\n\n67. **Ask HN: Did you change the site on mobile?**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=47267868\n\n68. **The five AI value models driving business reinvention**\n   - 출처: Hacker News\n   - 링크: https://openai.com/index/the-five-ai-value-models-driving-business-reinvention\n\n69. **SaaSpocalypse: Enterprises are suddenly worried about the future of SaaS**\n   - 출처: Hacker News\n   - 링크: https://www.techcircle.in/2026/02/09/saaspocalypse-explained-why-enterprises-are-suddenly-worried-about-the-future-of-saas/\n\n70. **FastClaw: Strong and powerfull AI easy to use for new users or pro users**\n   - 출처: Hacker News\n   - 링크: https://fastclaw.live/\n\n71. **Show HN: Tarmac – Know what Claude Code will cost before you run it**\n   - 출처: Hacker News\n   - 링크: https://github.com/CodeSarthak/tarmac\n\n72. **How we would have managed a recent incident at Port with an incident agent**\n   - 출처: Hacker News\n   - 링크: https://www.port.io/blog/how-we-would-have-managed-a-recent-incident-at-port-with-an-incident-agent\n\n73. **Mo Samuels wrote this blog post**\n   - 출처: Hacker News\n   - 링크: https://idiallo.com/blog/why-we-hate-llm-articles\n\n74. **How good is Claude, really?**\n   - 출처: Hacker News\n   - 링크: https://alinpanaitiu.com/blog/how-good-is-claude-really/\n\n75. **Show HN: StockMRRket – trade indie startup \"stocks\" priced from real MRR data**\n   - 출처: Hacker News\n   - 링크: https://stockmrrket.com/\n\n76. **Whoops, Websites Realize That Killing Their Comment Sections Was a Mistake**\n   - 출처: Hacker News\n   - 링크: https://www.techdirt.com/2026/02/03/whoops-websites-realize-that-killing-their-comment-sections-was-a-mistake/\n\n77. **Amazon down – live updates on outage as shoppers can't check out**\n   - 출처: Hacker News\n   - 링크: https://www.tomsguide.com/computing/live/amazon-is-down-live-outage-report-as-users-cant-check-out-see-product-reviews-and-more\n\n78. **Jiang Xueqin – The Law of Asymmetry [video]**\n   - 출처: Hacker News\n   - 링크: https://www.youtube.com/watch?v=t5oisJiorsU\n\n79. **Never snooze a future in async Rust**\n   - 출처: Hacker News\n   - 링크: https://jacko.io/snooze.html\n\n\n",
+  "articles": [
+    {
+      "title": "60 million Copilot code reviews and counting",
+      "link": "https://github.blog/ai-and-ml/github-copilot/60-million-copilot-code-reviews-and-counting/",
+      "source": "GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-05T20:10:43Z",
+      "description": "\u003cp\u003eHow Copilot code review helps teams keep up with AI-accelerated code changes.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/ai-and-ml/github-copilot/60-million-copilot-code-reviews-and-counting/\"\u003e60 million Copilot code reviews and counting\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Scaling AI opportunity across the globe: Learnings from GitHub and Andela",
+      "link": "https://github.blog/developer-skills/career-growth/scaling-ai-opportunity-across-the-globe-learnings-from-github-and-andela/",
+      "source": "GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-05T17:00:00Z",
+      "description": "\u003cp\u003eDevelopers connected to Andela share how they’re learning AI tools inside real production workflows.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/developer-skills/career-growth/scaling-ai-opportunity-across-the-globe-learnings-from-github-and-andela/\"\u003eScaling AI opportunity across the globe: Learnings from GitHub and Andela\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Formula 1® begins this weekend, exclusively on Apple TV in the U.S.\n",
+      "link": "https://www.apple.com/newsroom/2026/03/formula-1-begins-this-weekend-exclusively-on-apple-tv-in-the-us/",
+      "source": "Apple Newsroom",
+      "category": "tech",
+      "publishedAt": "2026-03-05T13:59:20.483Z",
+      "description": "The 2026 FIA Formula One World Championship™ begins this weekend on Apple TV with the FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026."
+    },
+    {
+      "title": "How a product manager conducts 30+ customer interviews per month with AI",
+      "link": "https://www.atlassian.com/blog/artificial-intelligence/customer-insights-rovo-agent",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-05T16:37:18Z",
+      "description": "\u003cp\u003eWhat if customer conversations were automatic and human-centric, not ad hoc or manual? Here’s how one Atlassian PM built an AI-powered workflow to close the feedback loop at scale.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/artificial-intelligence/customer-insights-rovo-agent\"\u003eHow a product manager conducts 30+ customer interviews per month with AI\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "OpenTelemetry traces for Bitbucket Pipelines via webhooks",
+      "link": "https://www.atlassian.com/blog/bitbucket/bitbucket-pipelines-opentelemetry-traces-via-webhooks",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-05T01:08:28Z",
+      "description": "\u003cp\u003eContinuous delivery is only as good as your ability to understand what’s happening inside your pipelines. When a build is...\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/bitbucket/bitbucket-pipelines-opentelemetry-traces-via-webhooks\"\u003eOpenTelemetry traces for Bitbucket Pipelines via webhooks\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Engineering at AI scale: how connected workflows unlock velocity, visibility, and governance",
+      "link": "https://www.atlassian.com/blog/work-management/engineering-at-ai-scale-how-connected-workflows-unlock-velocity-visibility-and-governance",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-05T00:30:16Z",
+      "description": "\u003cp\u003eA pragmatic guide for tech leaders to unify tools, teams, and AI across the SDLC.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/work-management/engineering-at-ai-scale-how-connected-workflows-unlock-velocity-visibility-and-governance\"\u003eEngineering at AI scale: how connected workflows unlock velocity, visibility, and governance\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Bringing Robotics AI to Embedded Platforms: Dataset Recording, VLA Fine‑Tuning, and On‑Device Optimizations",
+      "link": "https://huggingface.co/blog/nxp/bringing-robotics-ai-to-embedded-platforms",
+      "source": "Hugging Face - Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-05T14:16:49Z"
+    },
+    {
+      "title": "Introducing Modular Diffusers - Composable Building Blocks for Diffusion Pipelines",
+      "link": "https://huggingface.co/blog/modular-diffusers",
+      "source": "Hugging Face - Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-05T00:00:00Z"
+    },
+    {
+      "title": "Play AI-based games in our I/O Save the date",
+      "link": "https://blog.google/innovation-and-ai/technology/developers-tools/io-save-the-date-2026-gemini/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-06T16:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/5GeminigamesI_O2026_Social.max-600x600.format-webp.webp\"\u003eFor this year’s I/O Save the date, we’re showing how anyone can build incredible games with help from Gemini."
+    },
+    {
+      "title": "Ask a Techspert: How does AI understand my visual searches?",
+      "link": "https://blog.google/company-news/inside-google/googlers/how-google-ai-visual-search-works/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-05T18:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Fan_out_query_hero.max-600x600.format-webp.webp\"\u003eLearn more about AI Mode in Search’s query fan-out method for visual search."
+    },
+    {
+      "title": "Unbox the sleek, durable new Pixel 10a with us.",
+      "link": "https://blog.google/products-and-platforms/devices/pixel/pixel-10a-unboxing-video/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-05T17:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/10aUboxing_Social.max-600x600.format-webp.webp\"\u003eThis new unboxing video from Google shows off the Pixel 10a’s sleek, durable design and brand new Berry color."
+    },
+    {
+      "title": "The latest AI news we announced in February",
+      "link": "https://blog.google/innovation-and-ai/products/google-ai-updates-february-2026/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-05T16:30:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Thumbnail_mPCqgRv.max-600x600.format-webp.webp\"\u003eHere are Google’s latest AI updates from February 2026"
+    },
+    {
+      "title": "We’re pledging $50 million through 2030 to take action on superpollutants.",
+      "link": "https://blog.google/company-news/outreach-and-initiatives/sustainability/pledge-to-fight-superpollutants-2030/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-05T14:15:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Screenshot_2026-02-10_at_11.56..max-600x600.format-webp.webp\"\u003eSuperpollutants have been responsible for close to half of planetary warming, and without action they’ll continue to warm the planet rapidly in the decades to come.That’…"
+    },
+    {
+      "title": "We’re opening the Google AI Center Berlin as a hub for researchers, developers and leaders.",
+      "link": "https://blog.google/company-news/inside-google/around-the-globe/google-europe/google-ai-center-berlin/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-05T12:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/TACHGOOGLE_LARSHUEBNER-5998.max-600x600.format-webp.webp\"\u003eToday we’re opening the Google AI Center Berlin. This new space will serve as a hub for leading AI researchers and developers from Google DeepMind, Google Research and G…"
+    },
+    {
+      "title": "Insiders (version 1.111)",
+      "link": "https://code.visualstudio.com/updates/v1_111",
+      "source": "Visual Studio Code - Code Editing. Redefined.",
+      "category": "tech",
+      "publishedAt": "2026-04-02T17:00:00Z",
+      "description": "\n      \u003cp\u003eLearn what is new in Visual Studio Code 1.111 (Insiders)\u003c/p\u003e\n      \u003cp\u003e\u003ca href=\"https://code.visualstudio.com/updates/v1_111\"\u003eRead the full article\u003c/a\u003e\u003c/p\u003e\n    "
+    },
+    {
+      "title": "Making agents practical for real-world development",
+      "link": "https://code.visualstudio.com/blogs/2026/03/05/making-agents-practical-for-real-world-development",
+      "source": "Visual Studio Code - Code Editing. Redefined.",
+      "category": "tech",
+      "publishedAt": "2026-03-05T00:00:00Z",
+      "description": "\n      \u003cp\u003eExplore agent orchestration, extensibility, and continuity in VS Code 1.110: lifecycle hooks, agent skills, session memory, and integrated browser tools.\u003c/p\u003e\n      \u003cp\u003e\u003ca href=\"https://code.visualstudio.com/blogs/2026/03/05/making-agents-practical-for-real-world-development\"\u003eRead the full article\u003c/a\u003e\u003c/p\u003e\n    "
+    },
+    {
+      "title": "The latest AI news we announced in February",
+      "link": "https://blog.google/innovation-and-ai/products/google-ai-updates-february-2026/",
+      "source": "Google DeepMind",
+      "category": "tech",
+      "publishedAt": "2026-03-05T16:30:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Thumbnail_mPCqgRv.max-600x600.format-webp.webp\"\u003eHere are Google’s latest AI updates from February 2026"
+    },
+    {
+      "title": "The latest AI news we announced in February",
+      "link": "https://blog.google/innovation-and-ai/products/google-ai-updates-february-2026/",
+      "source": "Gemini",
+      "category": "tech",
+      "publishedAt": "2026-03-05T16:30:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Thumbnail_mPCqgRv.max-600x600.format-webp.webp\"\u003eHere are Google’s latest AI updates from February 2026"
+    },
+    {
+      "title": "Ending the \"silent drop\": how Dynamic Path MTU Discovery makes the Cloudflare One Client more resilient",
+      "link": "https://blog.cloudflare.com/client-dynamic-path-mtu-discovery/",
+      "source": "Cloudflare Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-05T14:00:00Z",
+      "description": " The Cloudflare One Client now features the ability to actively probe and adjust packet sizes. This update eliminates the problems caused by tunnel layering and MTU differences, providing more stability and resiliency.  "
+    },
+    {
+      "title": "How Automatic Return Routing solves IP overlap",
+      "link": "https://blog.cloudflare.com/automatic-return-routing-ip-overlap/",
+      "source": "Cloudflare Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-05T06:00:00Z",
+      "description": " Automatic Return Routing (ARR) solves the common enterprise challenge of overlapping private IP addresses by using stateful flow tracking instead of traditional routing tables. This userspace-driven approach ensures return traffic reaches the correct origin tunnel without manual NAT or VRF configuration. "
+    },
+    {
+      "title": "A QUICker SASE client: re-building Proxy Mode",
+      "link": "https://blog.cloudflare.com/faster-sase-proxy-mode-quic/",
+      "source": "Cloudflare Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-05T06:00:00Z",
+      "description": " By transitioning the Cloudflare One Client to use QUIC streams for Proxy Mode, we eliminated the overhead of user-space TCP stacks, resulting in a 2x increase in throughput and significant latency reduction for end users.  "
+    },
+    {
+      "title": "Ask a Techspert: How does AI understand my visual searches?",
+      "link": "https://blog.google/company-news/inside-google/googlers/how-google-ai-visual-search-works/",
+      "source": "AI",
+      "category": "tech",
+      "publishedAt": "2026-03-05T18:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Fan_out_query_hero.max-600x600.format-webp.webp\"\u003eLearn more about AI Mode in Search’s query fan-out method for visual search."
+    },
+    {
+      "title": "The latest AI news we announced in February",
+      "link": "https://blog.google/innovation-and-ai/products/google-ai-updates-february-2026/",
+      "source": "AI",
+      "category": "tech",
+      "publishedAt": "2026-03-05T16:30:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Thumbnail_mPCqgRv.max-600x600.format-webp.webp\"\u003eHere are Google’s latest AI updates from February 2026"
+    },
+    {
+      "title": "Evaluating Skills",
+      "link": "https://blog.langchain.com/evaluating-skills/",
+      "source": "LangChain Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-05T18:00:49Z",
+      "description": "\u003cp\u003e\u003cem\u003eBy Robert Xu\u003c/em\u003e\u003c/p\u003e\u003cp\u003eRecently at LangChain we\u0026#x2019;ve been building skills to help coding agents like Codex, Claude Code, and Deep Agents CLI work with our ecosystem: namely, LangChain and \u003ca href=\"https://www.langchain.com/langsmith/evaluation?ref=blog.langchain.com\" rel=\"noreferrer\"\u003eLangSmith\u003c/a\u003e. This is not an effort unique to us - most (if not all) companies are exploring how to\u003c/p\u003e"
+    },
+    {
+      "title": "60 million Copilot code reviews and counting",
+      "link": "https://github.blog/ai-and-ml/github-copilot/60-million-copilot-code-reviews-and-counting/",
+      "source": "The latest on GitHub Copilot - The GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-05T20:10:43Z",
+      "description": "\u003cp\u003eHow Copilot code review helps teams keep up with AI-accelerated code changes.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/ai-and-ml/github-copilot/60-million-copilot-code-reviews-and-counting/\"\u003e60 million Copilot code reviews and counting\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Moss — 모든 브러시가 작은 프로그램인 픽셀 캔버스",
+      "link": "https://news.hada.io/topic?id=27229",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-06T05:33:06+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e128×128 픽셀 캔버스에서 \u003cstrong\u003e각 브러시가 독립적인 프로그램처럼 작동\u003c/strong\u003e해 색상과 패턴을 생성하는 도구\u003c/li\u003e\n\u003cli\u003e브러시는 \u003cstrong\u003e혼합, 확산, 흘림, 성장, 글리치\u003c/strong\u003e 등 다양한 동작을 수행하며, 모두 \u003cstrong\u003e사용자가 직접 수정 가능\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e캔버스의 각 셀은 데이터 단위로...\u003c/p\u003e"
+    },
+    {
+      "title": "결국 밝혀지는 것(It turns out)",
+      "link": "https://news.hada.io/topic?id=27228",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-06T01:37:43+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e“It turns out”이라는 표현\u003c/strong\u003e이 글쓰기에서 어떻게 작동하는지를 분석하며, 이 표현이 작가에게 주는 \u003cstrong\u003e편리한 수사적 효과\u003c/strong\u003e를 다룸\u003c/li\u003e\n\u003cli\u003e일상 대화나 영화 줄거리 설명처럼 \u003cstrong\u003e놀라움이나 발견의 어조\u003c/strong\u003e를 전달할 때 자연스럽게 쓰이지만, 논증에서는 \u003cstron...\u003c/p\u003e"
+    },
+    {
+      "title": "Firefox의 우클릭 메뉴를 about:config로 개선하기",
+      "link": "https://news.hada.io/topic?id=27227",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-06T01:34:42+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003emacOS의 \u003cstrong\u003e기본 Firefox 설치 환경\u003c/strong\u003e에서 우클릭 메뉴가 지나치게 복잡하고 불필요한 항목이 많다는 문제 제기\u003c/li\u003e\n\u003cli\u003e\n\u003ccode\u003eabout:config\u003c/code\u003e 설정을 통해 \u003cstrong\u003eAI 관련 버튼, 스크린샷, 번역, 링크 미리보기, 시각 검색 등\u003c/strong\u003e 여러 기능을 비활성화 가능\u003c/li\u003e\n\u003cli\u003e총 13개의 설정...\u003c/p\u003e"
+    },
+    {
+      "title": "정부 보조금으로 수행된 연구는 영리 학술지에 실리지 않아야 함",
+      "link": "https://news.hada.io/topic?id=27226",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-06T00:37:37+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e과학 연구의 \u003cstrong\u003e출판 구조가 세금으로 자금을 지원받는 연구를 영리 기업이 독점 판매하는 형태\u003c/strong\u003e로 작동하고 있음\u003c/li\u003e\n\u003cli\u003e연구자들은 정부 보조금으로 연구를 수행하지만, 결과물을 \u003cstrong\u003e유료 구독 기반의 학술지에 무료로 제공\u003c/strong\u003e하고 다시 그 접근권을 구매해야 하는 모순적 구조\u003c/l...\u003c/p\u003e"
+    },
+    {
+      "title": "Qwen3.5 미세조정 가이드",
+      "link": "https://news.hada.io/topic?id=27225",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-06T00:34:36+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eQwen3.5 모델군(0.8B~122B)\u003c/strong\u003e 을 Unsloth로 \u003cstrong\u003e텍스트 및 비전 기반 미세조정\u003c/strong\u003e할 수 있음\u003c/li\u003e\n\u003cli\u003eUnsloth는 \u003cstrong\u003eFA2 대비 1.5배 빠른 학습 속도\u003c/strong\u003e와 \u003cstrong\u003eVRAM 50% 절감\u003c/strong\u003e을 제공하며, \u003cstrong\u003ebf16 LoRA\u003c/strong\u003e 설정으로 효율적 학습 가능\u003c/li\u003e\n\u003cli\u003e\n...\u003c/p\u003e"
+    },
+    {
+      "title": "AI를 활용한 코드 재작성과 라이선스 변경의 법적 정당성 논란",
+      "link": "https://news.hada.io/topic?id=27222",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-05T23:34:26+09:00",
+      "description": "\u003ch4\u003e핵심 요약 (Top)\u003c/h4\u003e\n\u003cp\u003e오픈소스 라이브러리 \u003ccode\u003echardet\u003c/code\u003e이 AI(Claude)를 이용해 전체 코드를 재작성한 후 라이선스를 변경하려 시도했으나, 이에 대한 법적·윤리적 타당성 논란이 Hacker News에서 뜨겁게 달궈지고 있습니다. 주요 쟁점은 AI가 학습한 원본 코드의 영향력, '클린룸(Clean Room)' 설계의 ...\u003c/p\u003e"
+    },
+    {
+      "title": "Claude Code, HTTP Hook 기능 추가",
+      "link": "https://news.hada.io/topic?id=27219",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-05T17:11:48+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e기존의 \u003cstrong\u003e코맨드 훅\u003c/strong\u003e보다 더 사용하기 쉽고 안전함\u003c/li\u003e\n\u003cli\u003e클로드 코드가 훅 이벤트를 URL에 전송하고 답변을 기다리는 방식\u003c/li\u003e\n\u003cli\u003eCC의 상태를 보거나, 퍼미션등을 관리하는 웹앱을 구축 가능(로컬호스트도 됨)\u003c/li\u003e\n\u003cli\u003e이렇게 훅이 연결되면 웹 서버에서 변경을 배포하거나 DB등으로 관리...\u003c/p\u003e"
+    },
+    {
+      "title": "Vercel agent-browser, --native 기능 도입",
+      "link": "https://news.hada.io/topic?id=27218",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-05T16:54:16+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eAI 에이전트를 위한 \u003cstrong\u003e헤드리스 브라우저 자동화 CLI\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e기존 node.js + playwright + CDP 구조에서 Rust 바이너리가 CDP를 직접 호출하게 변경\u003c/li\u003e\n\u003cli\u003e독립실행형 데몬으로 런타임에 Node.js 프로세스가 없어서 메모리 사용량 감소 및 풋프린트도 작아짐\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eAI 친화적...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: 언더로그 - 밑줄 친 문장을 촬영하면 AI가 서재로 옮겨주는 iOS 앱",
+      "link": "https://news.hada.io/topic?id=27217",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-05T16:35:10+09:00",
+      "description": "\u003cp\u003e안녕하세요, 언더로그 만들고 있는 개발자입니다.\u003c/p\u003e\n\u003cp\u003e책을 읽다 밑줄 친 문장을 나중에 다시 보고 싶어서 사진을 찍어두는 분들\u003cbr /\u003e\n많으시죠? 저도 그랬는데, 결국 사진첩에 묻혀서 한 번도 다시 보지\u003cbr /\u003e\n않더라고요.\u003c/p\u003e\n\u003cp\u003e그래서 만들었습니다.\u003c/p\u003e\n\u003cp\u003e언더로그는 밑줄 친 문장을 촬영하면 AI(Gemini)가"
+    },
+    {
+      "title": "Anthropic CEO, OpenAI의 군사 계약 관련 발언을 ‘명백한 거짓말’이라 비판",
+      "link": "https://news.hada.io/topic?id=27214",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-05T15:33:16+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eAnthropic CEO Dario Amodei가 직원 메모를 통해 \u003cstrong\u003eOpenAI의 미 국방부 계약\u003c/strong\u003e을 \u0026quot;보여주기식 안전 조치(safety theater)\u0026quot;라 지칭하며 강하게 비판\u003c/li\u003e\n\u003cli\u003eAnthropic은 기존 2억 달러 규모의 군 계약을 보유하고 있었으나, 국방부가 \u003cstrong\u003e무제한 기술 접근\u003c/strong\u003e을 요구하면서 ...\u003c/p\u003e"
+    },
+    {
+      "title": "코딩없이 Claude Code로 자율 AI 마케팅 팀을 만들어 1주일간 운영한 이야기",
+      "link": "https://news.hada.io/topic?id=27213",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-05T13:56:33+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e7명 규모 AI SaaS 스타트업의 CEO가 \u003cstrong\u003eClaude Code의 실험적 Agent Teams 기능\u003c/strong\u003e을 활용해, CMO, 콘텐츠 작가, 소셜미디어 담당, HN 매니저, 성과 분석가로 구성된 \u003cstrong\u003e5인 AI 마케팅 팀\u003c/strong\u003e을 구축한 실전 경험기\u003c/li\u003e\n\u003cli\u003e코드를 한 줄도 직접 작성하지 않았으며, 에이전트 전체가 \u003cst...\u003c/p\u003e"
+    },
+    {
+      "title": "존 그루버 - 맥북 Neo에 대한 생각과 관찰",
+      "link": "https://news.hada.io/topic?id=27212",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-05T13:39:50+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e애플이 \u003cstrong\u003e599달러\u003c/strong\u003e라는 파격적인 가격으로 Neo를 출시하며, 기존에 999달러 이하 시장에 거의 진입하지 않았던 가격 전략의 변화를 보여줌\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eA18 Pro SoC\u003c/strong\u003e 기반의 완전 신규 설계 제품으로, 기존 구형 모델을 할인 판매하던 방식과 근본적으로 다른 접근\u003c/li\u003e\n\u003cli\u003e알루미...\u003c/p\u003e"
+    },
+    {
+      "title": "TikTok, 종단간 암호화 도입하지 않기로…“사용자 안전을 해친다” 주장",
+      "link": "https://news.hada.io/topic?id=27211",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-05T11:33:40+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eTikTok은 \u003cstrong\u003e종단간 암호화(E2EE)\u003c/strong\u003e 를 도입하지 않겠다고 밝혔으며, 이는 \u003cstrong\u003e경찰과 안전팀이 메시지를 확인할 수 없게 만들어 사용자 보호를 어렵게 한다\u003c/strong\u003e는 이유를 제시함\u003c/li\u003e\n\u003cli\u003e회사는 \u003cstrong\u003e특히 청소년 보호\u003c/strong\u003e를 위해 이 같은 결정을 내렸다고 설명하며, 경쟁사들과...\u003c/p\u003e"
+    },
+    {
+      "title": "새로운 Flash를 만들기",
+      "link": "https://news.hada.io/topic?id=27210",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-05T11:21:51+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eC#\u003c/strong\u003e, \u003cstrong\u003eAvalonia\u003c/strong\u003e, \u003cstrong\u003eSkiaSharp\u003c/strong\u003e로 개발된 차세대 \u003cstrong\u003e2D 애니메이션 저작 도구\u003c/strong\u003e로, Flash의 기능을 현대적으로 재구현\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eLinux, Mac, PC\u003c/strong\u003e에서 모두 동작하며, \u003cstrong\u003e타임라인·벡터 드로잉·심볼·트위닝·스크립팅\u003c/strong...\u003c/p\u003e"
+    },
+    {
+      "title": "gws - 구글 워크스페이스 CLI ",
+      "link": "https://news.hada.io/topic?id=27209",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-05T11:20:33+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eGoogle Workspace API 전체를 단일 CLI로 제어\u003c/strong\u003e할 수 있는 도구로, Drive·Gmail·Calendar·Sheets·Docs·Chat·Admin 등을 지원\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eGoogle Discovery Service\u003c/strong\u003e를 기반으로 런타임 시 명령 구성을 동적으로 생성해, 새로운 API가 추가되면 자동 반영\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eAI...\u003c/p\u003e"
+    },
+    {
+      "title": "Qwen의 땅에서 무언가 일어나고 있다",
+      "link": "https://news.hada.io/topic?id=27207",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-05T09:54:35+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eAlibaba의 \u003cstrong\u003eQwen 팀 핵심 연구진이 대거 사임\u003c/strong\u003e하면서, 최근 공개된 \u003cstrong\u003eQwen 3.5 모델 시리즈\u003c/strong\u003e의 향후가 불투명해짐\u003c/li\u003e\n\u003cli\u003e팀 리더 \u003cstrong\u003eLin Junyang\u003c/strong\u003e이 사임을 발표했고, 이어 여러 핵심 인력들이 동반 퇴사\u003c/li\u003e\n\u003cli\u003e최근 출시된 \u003cstrong\u003eQwen 3.5 모델 패밀리\u003c/st...\u003c/p\u003e"
+    },
+    {
+      "title": "에이전틱 엔지니어링 패턴",
+      "link": "https://news.hada.io/topic?id=27206",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-05T09:51:35+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eClaude Code·Codex 같은 코딩 에이전트 시대의 개발 방식\u003c/strong\u003e을 정리한 가이드로, 에이전트와 협업하는 \u003cstrong\u003e새로운 엔지니어링 패턴\u003c/strong\u003e 제시\u003c/li\u003e\n\u003cli\u003e코드 작성 비용이 급격히 낮아진 환경에서 \u003cstrong\u003e개발 습관과 워크플로를 어떻게 바꿔야 하는지\u003c/strong\u003e 다양한 패턴으로 설명...\u003c/p\u003e"
+    },
+    {
+      "title": "플록 카메라의 인터랙티브 지도",
+      "link": "https://news.hada.io/topic?id=27205",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-05T09:48:35+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e자동차 번호판 인식기(LPR)\u003c/strong\u003e 위치를 보여주는 \u003cstrong\u003e크라우드소싱 기반 지도 서비스\u003c/strong\u003e로, 사용자가 주변의 설치 지점을 확인할 수 있음\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eOpenStreetMap 커뮤니티 데이터\u003c/strong\u003e를 활용해 구축되었으며, 누구나 새로운 위치 정보를 추가할 수 있음\u003c/li\u003e\n\u003cli\u003e지도는...\u003c/p\u003e"
+    },
+    {
+      "title": "단순함으로는 승진하지 못한다",
+      "link": "https://news.hada.io/topic?id=27204",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-05T09:45:35+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e소프트웨어 엔지니어링 문화\u003c/strong\u003e에서 복잡한 시스템을 만드는 사람이 더 인정받고, 단순한 해결책을 선택한 사람은 평가받지 못하는 구조가 지속됨\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e승진 평가와 인터뷰, 설계 리뷰\u003c/strong\u003e 등에서 복잡성이 “영향력”으로 오인되어, 불필요한 추상화와 확장성을 추가하는 경...\u003c/p\u003e"
+    },
+    {
+      "title": "모토로라 GrapheneOS 기기, 부트로더 잠금 해제 및 재잠금 지원 예정",
+      "link": "https://news.hada.io/topic?id=27203",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-05T09:42:34+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e모토로라와 \u003cstrong\u003eGrapheneOS의 장기 협력\u003c/strong\u003e이 발표되었으며, 향후 출시될 기기들은 \u003cstrong\u003e보안·프라이버시 기준을 충족\u003c/strong\u003e하는 공식 GrapheneOS 지원 모델로 개발됨\u003c/li\u003e\n\u003cli\u003e이 기기들은 \u003cstrong\u003e다른 운영체제 설치 및 사용자 빌드의 GrapheneOS 사용\u003c/strong\u003e을 완전히 지원하며, 이는 Gr...\u003c/p\u003e"
+    },
+    {
+      "title": "OpenAI Symphony - 에이전트 기반 프로젝트 관리 자동화 도구",
+      "link": "https://news.hada.io/topic?id=27201",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-05T09:32:23+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e개발팀이 코드 작성 대신 \u003cstrong\u003e작업 단위 관리\u003c/strong\u003e에 집중할 수 있도록 지원\u003c/li\u003e\n\u003cli\u003e각 프로젝트 작업을 \u003cstrong\u003e격리된 자율 실행(run)\u003c/strong\u003e 형태로 전환해,\u003cbr /\u003e\n팀이 코딩 에이전트를 감독하지 않고 \u003cstrong\u003e업무를 관리\u003c/strong\u003e하고\u003cbr /\u003e\n에이전트는 독립적으로 구현을 수행하는 구조\u003c/li...\u003c/p\u003e"
+    },
+    {
+      "title": "Mullvad VPN: 런던 거리에서 상영 금지된 TV 광고 [영상]",
+      "link": "https://news.hada.io/topic?id=27200",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-05T07:36:40+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eMullvad VPN\u003c/strong\u003e이 영국에서 \u003cstrong\u003e방송 금지를 당한 TV 광고\u003c/strong\u003e를 공개\u003c/li\u003e\n\u003cli\u003e광고는 \u003cstrong\u003e프라이버시 보호와 감시 사회 비판\u003c/strong\u003e을 주제로 구성\u003c/li\u003e\n\u003cli\u003e영국 방송 규제 기관의 결정으로 \u003cstrong\u003eTV 송출이 차단\u003c/strong\u003e, 대신 \u003cstrong\u003e런던 거리 전광판\u003c/strong\u003e에서 상...\u003c/p\u003e"
+    },
+    {
+      "title": "이란 전쟁 비용 추적기 — 일시 중단",
+      "link": "https://news.hada.io/topic?id=27199",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-05T07:33:40+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e이란 전쟁 비용 추적기\u003c/strong\u003e는 전쟁 관련 비용 데이터를 실시간으로 집계·공개하는 프로젝트임\u003c/li\u003e\n\u003cli\u003e현재 운영이 \u003cstrong\u003e일시 중단\u003c/strong\u003e된 상태로, 데이터의 \u003cstrong\u003e정확성 검증 작업\u003c/strong\u003e이 진행 중임\u003c/li\u003e\n\u003cli\u003e프로젝트 팀은 모든 \u003cstrong\u003e비용 데이터와 업데이트의 신뢰성 확보...\u003c/p\u003e"
+    },
+    {
+      "title": "Chrome Beta for Desktop Update",
+      "link": "http://chromereleases.googleblog.com/2026/03/chrome-beta-for-desktop-update.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2026-03-05T10:58:33.847-08:00",
+      "description": "\u003cp\u003eThe Beta channel has been updated to 146.0.7680.65 for Windows, Mac and Linux.\u003c/p\u003e\u003cp\u003eA partial list of changes is available in the \u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/146.0.7680.31..146.0.7680.65?pretty=fuller\u0026amp;n=10000\"\u003eGit log\u003c/a\u003e. Interested in \u003ca href=\"https://www.chromium.org/getting-involved/dev-channel/\"\u003eswitching\u003c/a\u003e release channels? Find out \u003ca href=\"https://www.chromium.org/getting-involved/dev-channel/\"\u003ehow\u003c/a\u003e. If you find a new issue, please let us know by \u003ca href=\"https://crbug.com/\"\u003efiling a bug\u003c/a\u003e. The \u003ca href=\"https://productforums.google.com/forum/#!forum/chrome\"\u003ecommunity help forum\u003c/a\u003e is also a great place to reach out for help or learn about common issues.\u003c/p\u003e\u003cp\u003eChrome Release Team\u003cbr /\u003e\u003ca href=\"https://www.google.com/chrome\"\u003e\u003c/a\u003e\u003ca href=\"https://www.google.com/chrome\"\u003eGoogle Chrome\u003c/a\u003e\u003c/p\u003e"
+    },
+    {
+      "title": "Chrome Beta for Android Update",
+      "link": "http://chromereleases.googleblog.com/2026/03/chrome-beta-for-android-update.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2026-03-05T10:43:32.37-08:00",
+      "description": "\u003cp\u003eHi everyone! We've just released Chrome Beta 146 (146.0.7680.65) for Android. It's now available on \u003ca href=\"https://play.google.com/store/apps/details?id=com.chrome.beta\"\u003eGoogle Play\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eYou can see a partial list of the changes in the \u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/146.0.7680.31..146.0.7680.65?pretty=fuller\u0026amp;n=10000\"\u003eGit log\u003c/a\u003e. For details on new features, check out the \u003ca href=\"https://blog.chromium.org\"\u003eChromium blog\u003c/a\u003e, and for details on web platform updates, check \u003ca href=\"https://www.chromestatus.com/features#milestone%3D146\"\u003ehere\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eIf you find a new issue, please let us know by \u003ca href=\"https://code.google.com/p/chromium/issues/entry?template=Android%20Issue\"\u003efiling a bug\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eChrome Release Team\u003cbr /\u003e\u003ca href=\"https://www.google.com/chrome\"\u003e\u003c/a\u003e\u003ca href=\"https://www.google.com/chrome\"\u003eGoogle Chrome\u003c/a\u003e\u003c/p\u003e"
+    },
+    {
+      "title": "Reasoning models struggle to control their chains of thought, and that’s good",
+      "link": "https://openai.com/index/reasoning-models-chain-of-thought-controllability",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2026-03-05T10:00:00Z",
+      "description": "OpenAI introduces CoT-Control and finds reasoning models struggle to control their chains of thought, reinforcing monitorability as an AI safety safeguard."
+    },
+    {
+      "title": "GPT-5.4 Thinking System Card",
+      "link": "https://openai.com/index/gpt-5-4-thinking-system-card",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2026-03-05T10:00:00Z"
+    },
+    {
+      "title": "Introducing GPT-5.4",
+      "link": "https://openai.com/index/introducing-gpt-5-4",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2026-03-05T10:00:00Z",
+      "description": "Introducing GPT-5.4, OpenAI’s most most capable and efficient frontier model for professional work, with state-of-the-art coding, computer use, tool search, and 1M-token context."
+    },
+    {
+      "title": "Ensuring AI use in education leads to opportunity",
+      "link": "https://openai.com/index/ai-education-opportunity",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2026-03-05T09:00:00Z",
+      "description": "OpenAI shares new tools, certifications, and measurement resources to help schools and universities close AI capability gaps and expand opportunity."
+    },
+    {
+      "title": "The five AI value models driving business reinvention",
+      "link": "https://openai.com/index/the-five-ai-value-models-driving-business-reinvention",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2026-03-05T00:00:00Z",
+      "description": "Five AI value models show how leaders can sequence AI from workforce fluency to process reinvention and build durable business advantage."
+    },
+    {
+      "title": "Introducing ChatGPT for Excel and new financial data integrations",
+      "link": "https://openai.com/index/chatgpt-for-excel",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2026-03-05T00:00:00Z",
+      "description": "OpenAI introduces ChatGPT for Excel and new financial app integrations, powered by GPT-5.4 to accelerate modeling, research, and analysis in regulated environments."
+    },
+    {
+      "title": "Introducing the Adoption news channel",
+      "link": "https://openai.com/index/introducing-the-adoption-news-channel",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2026-03-05T00:00:00Z",
+      "description": "Practical insights and frameworks to turn AI progress into business advantage"
+    },
+    {
+      "title": "March Into the Cloud With 15 New Games Coming to GeForce NOW",
+      "link": "https://blogs.nvidia.com/blog/geforce-now-thursday-march-2026-games-list/",
+      "source": "NVIDIA Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-05T14:00:30Z",
+      "description": "March is in full bloom, and that means a fresh wave of games heading to the cloud. 15 new titles are joining the GeForce NOW library this month. Leading the March lineup is Pearl Abyss’ Crimson Desert, an open‑world action‑adventure set in a war‑torn fantasy land, alongside plenty of other games to explore. Whether looking [\u0026#8230;]"
+    },
+    {
+      "title": "The ultimate Nano Banana prompting guide",
+      "link": "https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana/",
+      "source": "AI \u0026 Machine Learning",
+      "category": "tech",
+      "publishedAt": "2026-03-05T17:00:00Z",
+      "description": "\u003cdiv class=\"block-paragraph_advanced\"\u003e\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eCreating precise, high-quality images often involves endless trial and error. You need a model that actually understands what you’re asking for. \u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eBuilt on the Gemini 3 family of models, Nano Banana models apply deep reasoning capabilities to fully understand your prompt before generating an image. So we spent weeks testing Nano Banana 2 and Nano Banana Pro against every use case we could imagine to test its limits. \u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eWe put together this guide to share exactly what we learned and how you can get the best results.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eWhat you’ll learn in this guide:\u003c/strong\u003e\u003c/p\u003e\n\u003col\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: decimal; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eModel overview\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: decimal; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eFull breakdown of tech specs\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: decimal; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eBest practices for effective prompting\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: decimal; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cspan style=\"vertical-align: baseline;\"\u003ePrompting frameworks\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: decimal; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eHow Nano Banana works with other creative models, Veo and Lyria.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ol\u003e\n\u003ch3\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eModel \u003c/span\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eoverview\u003c/span\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e \u003c/span\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eNano Banana models are advanced image generation and editing models that use real-world knowledge and deep reasoning capabilities to deliver precise, rich visual results. Most recently, \u003c/span\u003e\u003ca href=\"https://cloud.google.com/blog/products/ai-machine-learning/bringing-nano-banana-2-to-enterprise\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003ewe announced Nano Banana 2\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e, which shines in three ways: \u003c/span\u003e\u003c/span\u003e\u003c/p\u003e\n\u003col\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: decimal; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eMore accurate visuals:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e Nano Banana 2 is powered by real-time information and images from web search. This means better educational tools, localized marketing, travel apps, and more. \u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: decimal; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eFast, Pro-level features:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e We’ve unlocked premium features – from text rendering and translations, to upscaling to 2K/4K. Now, your creative teams can build cohesive narratives, storyboards, and product mockups.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: decimal; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003ePrecision control:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e Generate or edit images to fit any project requirement, with native support for 16:9, 9:16, 2:1, and more. Expect vibrant lighting and richer textures, whether you’re generating posters, marketing mockups, or ads.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ol\u003e\n\u003ch3\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eBreakdown of tech specs for Nano Banana 2 and Nano Banana Pro \u003c/span\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eBefore diving into prompting, here is a breakdown of what the models can handle via the API and Vertex AI (for latest details, always check the official \u003c/span\u003e\u003ca href=\"https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/3-pro-image\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eGemini 3 Pro Image\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e and \u003c/span\u003e\u003ca href=\"https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/3-1-flash-image\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eGemini 3.1 Flash Image\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e documentation):\u003c/span\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eContext windows:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e \u003cspan style=\"vertical-align: baseline;\"\u003eGemini 3.1 Flash Image (Nano Banana 2) supports a maximum of 131,072 input tokens , while Gemini 3 Pro Image (Nano Banana Pro) supports a maximum of 65,536 input tokens. Both models support a maximum of 32,768 output tokens.\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eResolutions:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e Built-in generation capabilities for 1K, 2K, and 4K visuals. Gemini 3.1 Flash Image adds the smaller 512px (0.5K) resolution.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eAspect ratios:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e Both models support 1:1, 3:2, 2:3, 3:4, 4:3, 4:5, 5:4, 9:16, 16:9, and 21:9. Gemini 3.1 Flash Image Preview also adds 1:4, 4:1, 1:8, and 8:1 aspect ratios.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eImage inputs:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e You can mix up to 14 reference object images in a single prompt. Supported MIME types include image/png, image/jpeg, image/webp, image/heic, and image/heif.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eDocument inputs:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e You can input text and pdf files. The maximum file size per file is 50 MB for API and Cloud Storage imports, or 7 MB for direct uploads through the Google Cloud console.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eOutputs:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e Both models output text and images.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eModel knowledge base:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e Both models have a knowledge cutoff date of January 2025.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eLive data\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e: Both models are powered by real-time information from web search\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eTrust \u0026amp; safety:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e \u003cspan style=\"vertical-align: baseline;\"\u003eAll generated images include \u003c/span\u003e\u003ca href=\"https://c2pa.org/\" rel=\"noopener\" target=\"_blank\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eC2PA\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e Content Credentials and a SynthID watermark. \u003c/span\u003e\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eTo see top features examples, \u003c/span\u003e\u003ca href=\"https://cloud.google.com/blog/products/ai-machine-learning/bringing-nano-banana-2-to-enterprise\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003echeck out this blog\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e. \u003c/span\u003e\u003c/p\u003e\n\u003ch3\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eBest practices for effective prompting\u003c/span\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eWhen it comes to effective prompting, there’s a few ways to ensure the visual you get is the visual you asked for. Here are some guidelines: \u003c/span\u003e\u003c/p\u003e\n\u003col\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: decimal; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eBe specific:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e Provide concrete details on subject, lighting, and composition. \u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: decimal; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eUse positive framing:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e Describe what you want, not what you don’t want (e.g. “empty street” instead of “no cars”).\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: decimal; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eControl the camera:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e Use photographic and cinematic terms like “low angle” and “aerial view”.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: decimal; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eIterate:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e Refine images with follow-up prompts in a conversational manner. \u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eThe key is to start a prompt with a strong verb that tells the model the primary operation you want to perform. \u003c/span\u003e\u003c/p\u003e\n\u003ch3\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eFive prompting frameworks\u003c/span\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e \u003c/span\u003e\u003c/h3\u003e\n\u003ch3\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e1. Image generation\u003c/span\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eWhen generating an image, your prompt structure depends entirely on whether you are using reference images or relying solely on text.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eText-to-image generation \u003c/span\u003e\u003cspan style=\"font-style: italic; vertical-align: baseline;\"\u003ewithout\u003c/span\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e references\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eWhen starting with a blank canvas, you are the director. A simple list of keywords won't cut it; you need to describe the scene narratively.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eFormula:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e [Subject] + [Action] + [Location/context] + [Composition] + [Style]\u003c/span\u003e\u003c/p\u003e\n\u003cp style=\"padding-left: 40px;\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eExample prompt:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e \u003c/span\u003e\u003cspan style=\"font-style: italic; vertical-align: baseline;\"\u003e[Subject] A striking fashion model wearing a tailored brown dress, sleek boots, and holding a structured handbag. [Action] Posing with a confident, statuesque stance, slightly turned. [Location/context] A seamless, deep cherry red studio backdrop. [Composition] Medium-full shot, center-framed. [Style] Fashion magazine style editorial, shot on medium-format analog film, pronounced grain, high saturation, cinematic lighting effect.\u003c/span\u003e\u003c/p\u003e\u003c/div\u003e\n\u003cdiv class=\"block-image_full_width\"\u003e\n\n\n\n\n\n\n  \n    \u003cdiv class=\"article-module h-c-page\"\u003e\n      \u003cdiv class=\"h-c-grid\"\u003e\n  \n\n    \u003cfigure class=\"article-image--large\n      \n      \n        h-c-grid__col\n        h-c-grid__col--6 h-c-grid__col--offset-3\n        \n        \n      \"\n      \u003e\n\n      \n      \n        \n        \u003cimg\n            src=\"https://storage.googleapis.com/gweb-cloudblog-publish/images/1_u1Xks1L.max-1000x1000.png\"\n        \n          alt=\"1\"\u003e\n        \n        \u003c/a\u003e\n      \n    \u003c/figure\u003e\n\n  \n      \u003c/div\u003e\n    \u003c/div\u003e\n  \n\n\n\n\n\u003c/div\u003e\n\u003cdiv class=\"block-paragraph_advanced\"\u003e\u003cp\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eMultimodal generation (generation \u003c/strong\u003e\u003cstrong style=\"font-style: italic; vertical-align: baseline;\"\u003ewith\u003c/strong\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003e references)\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eGemini allows you to combine multiple reference images to guide the final output. This is perfect for maintaining character consistency or merging a specific product into a new environment.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eFormula:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e [Reference images] + [Relationship instruction] + [New scenario]\u003c/span\u003e\u003c/p\u003e\n\u003cp style=\"padding-left: 40px;\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eExample Prompt:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e Using the attached napkin sketch as the structure and the attached fabric sample as the texture [References], transform this into a high-fidelity 3D armchair render [Relationship]. Place it in a sun-drenched, minimalist living room [New Scenario].\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"font-style: italic; vertical-align: baseline;\"\u003eNote: Nano Banana generated the source images for the examples below, as well. \u003c/span\u003e\u003c/p\u003e\u003c/div\u003e\n\u003cdiv class=\"block-image_full_width\"\u003e\n\n\n\n\n\n\n  \n    \u003cdiv class=\"article-module h-c-page\"\u003e\n      \u003cdiv class=\"h-c-grid\"\u003e\n  \n\n    \u003cfigure class=\"article-image--large\n      \n      \n        h-c-grid__col\n        h-c-grid__col--6 h-c-grid__col--offset-3\n        \n        \n      \"\n      \u003e\n\n      \n      \n        \n        \u003cimg\n            src=\"https://storage.googleapis.com/gweb-cloudblog-publish/images/2_hJWjDOO.max-1000x1000.jpg\"\n        \n          alt=\"2\"\u003e\n        \n        \u003c/a\u003e\n      \n    \u003c/figure\u003e\n\n  \n      \u003c/div\u003e\n    \u003c/div\u003e\n  \n\n\n\n\n\u003c/div\u003e\n\u003cdiv class=\"block-paragraph_advanced\"\u003e\u003ch3\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003e2. Image editing\u003c/strong\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eEditing requires a different mindset than generating. You already have a base image; your prompt needs to focus on what is changing and what is staying the same.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eConversational editing (\u003c/strong\u003e\u003cstrong style=\"font-style: italic; vertical-align: baseline;\"\u003ewithout\u003c/strong\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003e new references)\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eWhen you generate an image and want to tweak it conversationally:\u003c/span\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eSemantic masking (inpainting):\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e You can define a \"mask\" through text to edit a specific part of an image while leaving the rest untouched.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003ePrompting tip:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e Be explicit about what to keep exactly the same.\u003cbr/\u003e\u003cbr/\u003e\u003c/span\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eExample prompt:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e “Remove the man from the photo”\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\u003c/div\u003e\n\u003cdiv class=\"block-image_full_width\"\u003e\n\n\n\n\n\n\n  \n    \u003cdiv class=\"article-module h-c-page\"\u003e\n      \u003cdiv class=\"h-c-grid\"\u003e\n  \n\n    \u003cfigure class=\"article-image--large\n      \n      \n        h-c-grid__col\n        h-c-grid__col--6 h-c-grid__col--offset-3\n        \n        \n      \"\n      \u003e\n\n      \n      \n        \n        \u003cimg\n            src=\"https://storage.googleapis.com/gweb-cloudblog-publish/images/3_LmEW4oa.max-1000x1000.jpg\"\n        \n          alt=\"3\"\u003e\n        \n        \u003c/a\u003e\n      \n    \u003c/figure\u003e\n\n  \n      \u003c/div\u003e\n    \u003c/div\u003e\n  \n\n\n\n\n\u003c/div\u003e\n\u003cdiv class=\"block-paragraph_advanced\"\u003e\u003cp\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eComposition and style transfer (\u003c/strong\u003e\u003cstrong style=\"font-style: italic; vertical-align: baseline;\"\u003ewith\u003c/strong\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003e new references)\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eBring new images into the prompt to alter an existing one:\u003c/span\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eAdding elements:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e Upload a base image and an object image, and tell the model to combine them.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eStyle transfer:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e Upload a photo and ask the model to recreate its exact content in a different artistic style, such as transforming a photo of a modern city street into a Van Gogh-style painting.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eComposition \u003c/span\u003e\u003c/p\u003e\u003c/div\u003e\n\u003cdiv class=\"block-image_full_width\"\u003e\n\n\n\n\n\n\n  \n    \u003cdiv class=\"article-module h-c-page\"\u003e\n      \u003cdiv class=\"h-c-grid\"\u003e\n  \n\n    \u003cfigure class=\"article-image--large\n      \n      \n        h-c-grid__col\n        h-c-grid__col--6 h-c-grid__col--offset-3\n        \n        \n      \"\n      \u003e\n\n      \n      \n        \n        \u003cimg\n            src=\"https://storage.googleapis.com/gweb-cloudblog-publish/images/4_IiVo3T0.max-1000x1000.jpg\"\n        \n          alt=\"4\"\u003e\n        \n        \u003c/a\u003e\n      \n    \u003c/figure\u003e\n\n  \n      \u003c/div\u003e\n    \u003c/div\u003e\n  \n\n\n\n\n\u003c/div\u003e\n\u003cdiv class=\"block-paragraph_advanced\"\u003e\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eStyle transfer\u003c/span\u003e\u003c/p\u003e\u003c/div\u003e\n\u003cdiv class=\"block-image_full_width\"\u003e\n\n\n\n\n\n\n  \n    \u003cdiv class=\"article-module h-c-page\"\u003e\n      \u003cdiv class=\"h-c-grid\"\u003e\n  \n\n    \u003cfigure class=\"article-image--large\n      \n      \n        h-c-grid__col\n        h-c-grid__col--6 h-c-grid__col--offset-3\n        \n        \n      \"\n      \u003e\n\n      \n      \n        \n        \u003cimg\n            src=\"https://storage.googleapis.com/gweb-cloudblog-publish/images/5_EtDKJGi.max-1000x1000.jpg\"\n        \n          alt=\"5\"\u003e\n        \n        \u003c/a\u003e\n      \n    \u003c/figure\u003e\n\n  \n      \u003c/div\u003e\n    \u003c/div\u003e\n  \n\n\n\n\n\u003c/div\u003e\n\u003cdiv class=\"block-paragraph_advanced\"\u003e\u003ch3\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003e3. \u003cstrong style=\"vertical-align: baseline;\"\u003eReal-time information from web search\u003c/strong\u003e\u003c/strong\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eGemini Image models can actively search the web to generate images based on real-time information.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eHow prompting changes:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e Instead of describing a fictional scene, you instruct the model to retrieve real-world data and then specify how to visualize it.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eThe formula:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e [Source/Search request] + [Analytical task] + [Visual translation]\u003c/span\u003e\u003c/p\u003e\n\u003cp style=\"padding-left: 40px;\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eExample prompt:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e [Search for current weather and date in San Francisco] + [Analytically, use this data to modify the scene (e.g., if raining, make it look grey and rainy)] + [Visualize this in a miniature city-in-a-cup concept embedded within a realistic, modern smartphone UI.\u003c/span\u003e\u003c/p\u003e\u003c/div\u003e\n\u003cdiv class=\"block-image_full_width\"\u003e\n\n\n\n\n\n\n  \n    \u003cdiv class=\"article-module h-c-page\"\u003e\n      \u003cdiv class=\"h-c-grid\"\u003e\n  \n\n    \u003cfigure class=\"article-image--large\n      \n      \n        h-c-grid__col\n        h-c-grid__col--6 h-c-grid__col--offset-3\n        \n        \n      \"\n      \u003e\n\n      \n      \n        \n        \u003cimg\n            src=\"https://storage.googleapis.com/gweb-cloudblog-publish/images/6_aApDzHV.max-1000x1000.png\"\n        \n          alt=\"6\"\u003e\n        \n        \u003c/a\u003e\n      \n        \u003cfigcaption class=\"article-image__caption \"\u003e\u003cp data-block-key=\"k8ok1\"\u003eprompted on Tuesday 3rd March\u003c/p\u003e\u003c/figcaption\u003e\n      \n    \u003c/figure\u003e\n\n  \n      \u003c/div\u003e\n    \u003c/div\u003e\n  \n\n\n\n\n\u003c/div\u003e\n\u003cdiv class=\"block-paragraph_advanced\"\u003e\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eNano Banana 2 is powered by real-time information and images from web search. This feature is coming soon to Vertex AI, and will help your teams create more accurate visuals.\u003c/span\u003e\u003c/p\u003e\n\u003ch3\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003e4. Text rendering \u0026amp; localization\u003c/strong\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eNano Banana 2 and Nano Banana Pro excel at rendering sharp, legible text for impactful posters, diagrams, and product mockups. Furthermore, it supports state-of-the-art multilingual text generation in over 10 languages.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eTo get the best typographic results, follow these rules:\u003c/span\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eUse quotes:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e Enclose your desired words in quotes (e.g., \"Happy Birthday\" or \"URBAN EXPLORER\").\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eChoose a font:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e Describe the typography style or name of the font. Prompt for a \"bold, white, sans-serif font\" or \"Century Gothic 12px font\".\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eTranslate and localize:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e Write your prompt in one language and specify a target language for the text output. \u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eText-first hack:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e When generating text for an image, Gemini Image models work best if you first converse with it to generate the text concepts, and then ask for an image with that text.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eExample: A high-end, glossy commercial beauty shot of a sleek, minimalist nude-colored face moisturizer jar resting on a warm studio background. The lighting is soft and radiant. Next to the product, render three lines of text with the following exact styling: For the top line, the word 'GLOW' in a flowing, elegant Brush Script font. For the middle line, the text '10% OFF' in a heavy, blocky Impact font. For the bottom line, the text 'Your First Order' in a thin, minimalist Century Gothic font.\" Then translate the text into Korean and Arabic.\u003c/span\u003e\u003c/p\u003e\u003c/div\u003e\n\u003cdiv class=\"block-image_full_width\"\u003e\n\n\n\n\n\n\n  \n    \u003cdiv class=\"article-module h-c-page\"\u003e\n      \u003cdiv class=\"h-c-grid\"\u003e\n  \n\n    \u003cfigure class=\"article-image--large\n      \n      \n        h-c-grid__col\n        h-c-grid__col--6 h-c-grid__col--offset-3\n        \n        \n      \"\n      \u003e\n\n      \n      \n        \n        \u003cimg\n            src=\"https://storage.googleapis.com/gweb-cloudblog-publish/images/7_UAwHa5Q.max-1000x1000.jpg\"\n        \n          alt=\"7\"\u003e\n        \n        \u003c/a\u003e\n      \n    \u003c/figure\u003e\n\n  \n      \u003c/div\u003e\n    \u003c/div\u003e\n  \n\n\n\n\n\u003c/div\u003e\n\u003cdiv class=\"block-paragraph_advanced\"\u003e\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e“A typographic poster with a solid black background, bold letters spell \"New York\", filling the center of the frame. The text acts as a cut-out window. A photograph of New York skyline is visible ONLY inside the letterforms.”\u003c/span\u003e\u003c/p\u003e\u003c/div\u003e\n\u003cdiv class=\"block-image_full_width\"\u003e\n\n\n\n\n\n\n  \n    \u003cdiv class=\"article-module h-c-page\"\u003e\n      \u003cdiv class=\"h-c-grid\"\u003e\n  \n\n    \u003cfigure class=\"article-image--large\n      \n      \n        h-c-grid__col\n        h-c-grid__col--6 h-c-grid__col--offset-3\n        \n        \n      \"\n      \u003e\n\n      \n      \n        \n        \u003cimg\n            src=\"https://storage.googleapis.com/gweb-cloudblog-publish/images/8_0VEZU0t.max-1000x1000.png\"\n        \n          alt=\"8\"\u003e\n        \n        \u003c/a\u003e\n      \n    \u003c/figure\u003e\n\n  \n      \u003c/div\u003e\n    \u003c/div\u003e\n  \n\n\n\n\n\u003c/div\u003e\n\u003cdiv class=\"block-paragraph_advanced\"\u003e\u003ch3\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003e5. Prompting like a Creative Director \u003c/strong\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eTo elevate your results from good to breathtaking, you need to stop typing keywords and start directing the scene. The Gemini image models offer studio-quality controls. Here is how to prompt like a Creative Director:\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003e1. Design your lighting \u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eTell the model exactly how the scene is illuminated.\u003c/span\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cspan style=\"font-style: italic; vertical-align: baseline;\"\u003eStudio setups:\u003c/span\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e Ask for a \"three-point softbox setup\" to evenly light a product.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cspan style=\"font-style: italic; vertical-align: baseline;\"\u003eDramatic effects:\u003c/span\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e Prompt for \"Chiaroscuro lighting with harsh, high contrast\" or \"Golden hour backlighting creating long shadows\".\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e\u003c/div\u003e\n\u003cdiv class=\"block-image_full_width\"\u003e\n\n\n\n\n\n\n  \n    \u003cdiv class=\"article-module h-c-page\"\u003e\n      \u003cdiv class=\"h-c-grid\"\u003e\n  \n\n    \u003cfigure class=\"article-image--large\n      \n      \n        h-c-grid__col\n        h-c-grid__col--6 h-c-grid__col--offset-3\n        \n        \n      \"\n      \u003e\n\n      \n      \n        \n        \u003cimg\n            src=\"https://storage.googleapis.com/gweb-cloudblog-publish/images/9_uWOTmRL.max-1000x1000.jpg\"\n        \n          alt=\"9\"\u003e\n        \n        \u003c/a\u003e\n      \n    \u003c/figure\u003e\n\n  \n      \u003c/div\u003e\n    \u003c/div\u003e\n  \n\n\n\n\n\u003c/div\u003e\n\u003cdiv class=\"block-paragraph_advanced\"\u003e\u003cp\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003e2. Choose your camera, lens, and focus\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eUse specific hardware and photographic terminology to control the depth, distortion, and perspective of your shot .\u003c/span\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cspan style=\"font-style: italic; vertical-align: baseline;\"\u003eHardware:\u003c/span\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e Dictate the exact camera type to change the visual DNA of the image. Ask for the shot to be taken on a \u003c/span\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eGoPro\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e for an immersive, distorted action feel, a \u003c/span\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eFujifilm\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e camera for authentic color science, or a cheap \u003c/span\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003edisposable camera\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e for a raw, nostalgic flash aesthetic.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cspan style=\"font-style: italic; vertical-align: baseline;\"\u003eLens:\u003c/span\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e Force the perspective by explicitly requesting a \"low-angle shot with a shallow depth of field (f/1.8)\". If you need to show a vast scale, ask for a \"wide-angle lens\". For intricate details, specify a \"macro lens\".\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e\u003c/div\u003e\n\u003cdiv class=\"block-image_full_width\"\u003e\n\n\n\n\n\n\n  \n    \u003cdiv class=\"article-module h-c-page\"\u003e\n      \u003cdiv class=\"h-c-grid\"\u003e\n  \n\n    \u003cfigure class=\"article-image--large\n      \n      \n        h-c-grid__col\n        h-c-grid__col--6 h-c-grid__col--offset-3\n        \n        \n      \"\n      \u003e\n\n      \n      \n        \n        \u003cimg\n            src=\"https://storage.googleapis.com/gweb-cloudblog-publish/images/10_9bxTtAf.max-1000x1000.jpg\"\n        \n          alt=\"10\"\u003e\n        \n        \u003c/a\u003e\n      \n    \u003c/figure\u003e\n\n  \n      \u003c/div\u003e\n    \u003c/div\u003e\n  \n\n\n\n\n\u003c/div\u003e\n\u003cdiv class=\"block-paragraph_advanced\"\u003e\u003cp\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003e3. Define the color grading and film stock\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e \u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eThe texture and color of the final image set the emotional tone.\u003c/span\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eIf you want a nostalgic or gritty vibe, tell the model to render the image \"as if on 1980s color film, slightly grainy\".\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eFor a modern, moody aesthetic, ask for \"Cinematic color grading with muted teal tones\".\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\u003c/div\u003e\n\u003cdiv class=\"block-image_full_width\"\u003e\n\n\n\n\n\n\n  \n    \u003cdiv class=\"article-module h-c-page\"\u003e\n      \u003cdiv class=\"h-c-grid\"\u003e\n  \n\n    \u003cfigure class=\"article-image--large\n      \n      \n        h-c-grid__col\n        h-c-grid__col--6 h-c-grid__col--offset-3\n        \n        \n      \"\n      \u003e\n\n      \n      \n        \n        \u003cimg\n            src=\"https://storage.googleapis.com/gweb-cloudblog-publish/images/11_q9Kj7Vv.max-1000x1000.jpg\"\n        \n          alt=\"11\"\u003e\n        \n        \u003c/a\u003e\n      \n    \u003c/figure\u003e\n\n  \n      \u003c/div\u003e\n    \u003c/div\u003e\n  \n\n\n\n\n\u003c/div\u003e\n\u003cdiv class=\"block-paragraph_advanced\"\u003e\u003cp\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003e4. Emphasize materiality and texture\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e \u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eWhen generating logos, products, or characters, define their physical makeup. Don't just ask for a suit jacket; ask for \"navy blue tweed\". Instead of \"armor,\" describe \"ornate elven plate armor, etched with silver leaf patterns.\" If you are designing a mockup, specify the surface, like a \"minimalist ceramic coffee mug.\" \u003c/span\u003e\u003c/p\u003e\u003c/div\u003e\n\u003cdiv class=\"block-image_full_width\"\u003e\n\n\n\n\n\n\n  \n    \u003cdiv class=\"article-module h-c-page\"\u003e\n      \u003cdiv class=\"h-c-grid\"\u003e\n  \n\n    \u003cfigure class=\"article-image--large\n      \n      \n        h-c-grid__col\n        h-c-grid__col--6 h-c-grid__col--offset-3\n        \n        \n      \"\n      \u003e\n\n      \n      \n        \n        \u003cimg\n            src=\"https://storage.googleapis.com/gweb-cloudblog-publish/images/12_df59o1h.max-1000x1000.jpg\"\n        \n          alt=\"12\"\u003e\n        \n        \u003c/a\u003e\n      \n    \u003c/figure\u003e\n\n  \n      \u003c/div\u003e\n    \u003c/div\u003e\n  \n\n\n\n\n\u003c/div\u003e\n\u003cdiv class=\"block-paragraph_advanced\"\u003e\u003ch3\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eGo further\u003c/span\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eNano Banana Pro and Nano Banana 2 are designed to work seamlessly with our other generative creation models. \u003c/span\u003e\u003c/p\u003e\n\u003col\u003e\n\u003cli role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eNano Banana + Gemini:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e Gemini 3 can help you create prompts and with creative direction.\u003c/span\u003e\u003c/li\u003e\n\u003cli role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eNano Banana + Veo: \u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eCreate keyframes with Nano Banana to direct an animation, then use Veo to generate the video between them. Check out our Veo 3.1 prompting guide \u003c/span\u003e\u003ca href=\"https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-veo-3-1?e=48754805\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003ehere\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e. \u003c/span\u003e\u003c/li\u003e\n\u003cli\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eNano Banana + Veo + Lyria: \u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eGenerate your project’s visuals, then add a custom AI soundtrack with Lyria. Learn more about Lyria \u003c/span\u003e\u003ca href=\"https://deepmind.google/models/lyria/\" rel=\"noopener\" target=\"_blank\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003ehere\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e. \u003c/span\u003e\u003c/li\u003e\n\u003c/ol\u003e\u003c/div\u003e"
+    },
+    {
+      "title": "Generative Linguistics, LLMs, and the Social Nature of Scientific Success",
+      "link": "https://arxiv.org/abs/2503.20088",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-05T22:06:18Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://arxiv.org/abs/2503.20088\"\u003ehttps://arxiv.org/abs/2503.20088\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47267957\"\u003ehttps://news.ycombinator.com/item?id=47267957\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Economy of the Mughal Empire",
+      "link": "https://en.wikipedia.org/wiki/Economy_of_the_Mughal_Empire",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-05T22:05:57Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://en.wikipedia.org/wiki/Economy_of_the_Mughal_Empire\"\u003ehttps://en.wikipedia.org/wiki/Economy_of_the_Mughal_Empire\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47267954\"\u003ehttps://news.ycombinator.com/item?id=47267954\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "A standard protocol to handle and discard low-effort, AI-Generated pull requests",
+      "link": "https://406.fail/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-05T22:04:59Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://406.fail/\"\u003ehttps://406.fail/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47267947\"\u003ehttps://news.ycombinator.com/item?id=47267947\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Guy Who Played Barney the Dinosaur Now Runs a Tantric Sex Business",
+      "link": "https://www.vice.com/en/article/the-guy-who-played-barney-the-dinosaur-now-runs-a-tantric-sex-business/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-05T22:03:36Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.vice.com/en/article/the-guy-who-played-barney-the-dinosaur-now-runs-a-tantric-sex-business/\"\u003ehttps://www.vice.com/en/article/the-guy-who-played-barney-the-dinosaur-now-runs-a-tantric-sex-business/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47267929\"\u003ehttps://news.ycombinator.com/item?id=47267929\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Check out my new project – SitDeck",
+      "link": "https://sitdeck.com",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-05T22:03:00Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://sitdeck.com\"\u003ehttps://sitdeck.com\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47267923\"\u003ehttps://news.ycombinator.com/item?id=47267923\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Story of a Failed Pentest (2018)",
+      "link": "https://web.archive.org/web/20181118010006/https://threader.app/thread/1063423110513418240",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-05T22:01:26Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://web.archive.org/web/20181118010006/https://threader.app/thread/1063423110513418240\"\u003ehttps://web.archive.org/web/20181118010006/https://threader.app/thread/1063423110513418240\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47267909\"\u003ehttps://news.ycombinator.com/item?id=47267909\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Roblox launches real-time AI chat rephrasing to filter out banned language",
+      "link": "https://techcrunch.com/2026/03/05/roblox-launches-real-time-ai-chat-rephrasing-to-filter-out-banned-language/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-05T21:59:01Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://techcrunch.com/2026/03/05/roblox-launches-real-time-ai-chat-rephrasing-to-filter-out-banned-language/\"\u003ehttps://techcrunch.com/2026/03/05/roblox-launches-real-time-ai-chat-rephrasing-to-filter-out-banned-language/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47267887\"\u003ehttps://news.ycombinator.com/item?id=47267887\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Ask HN: Did you change the site on mobile?",
+      "link": "https://news.ycombinator.com/item?id=47267868",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-05T21:57:08Z",
+      "description": "\n\u003cp\u003eIt’s not wrapping titles in iOS safari’s landscape\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47267868\"\u003ehttps://news.ycombinator.com/item?id=47267868\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "The five AI value models driving business reinvention",
+      "link": "https://openai.com/index/the-five-ai-value-models-driving-business-reinvention",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-05T21:55:21Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://openai.com/index/the-five-ai-value-models-driving-business-reinvention\"\u003ehttps://openai.com/index/the-five-ai-value-models-driving-business-reinvention\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47267847\"\u003ehttps://news.ycombinator.com/item?id=47267847\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "SaaSpocalypse: Enterprises are suddenly worried about the future of SaaS",
+      "link": "https://www.techcircle.in/2026/02/09/saaspocalypse-explained-why-enterprises-are-suddenly-worried-about-the-future-of-saas/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-05T21:54:29Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.techcircle.in/2026/02/09/saaspocalypse-explained-why-enterprises-are-suddenly-worried-about-the-future-of-saas/\"\u003ehttps://www.techcircle.in/2026/02/09/saaspocalypse-explained-why-enterprises-are-suddenly-worried-about-the-future-of-saas/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47267829\"\u003ehttps://news.ycombinator.com/item?id=47267829\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "FastClaw: Strong and powerfull AI easy to use for new users or pro users",
+      "link": "https://fastclaw.live/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-05T21:53:21Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://fastclaw.live/\"\u003ehttps://fastclaw.live/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47267823\"\u003ehttps://news.ycombinator.com/item?id=47267823\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Tarmac – Know what Claude Code will cost before you run it",
+      "link": "https://github.com/CodeSarthak/tarmac",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-05T21:49:39Z",
+      "description": "\n\u003cp\u003eI built this because I kept getting surprised by Claude Code bills. A complex refactoring task that I expected to cost $2 would end up costing $15, and there was no way to know beforehand.\u003cp\u003eTarmac analyzes your prompt and gives you a cost range before Claude Code starts working. It uses conformal prediction trained on 3,000 real SWE-bench tasks — hitting 81% in-range accuracy on an 80% target.\u003cp\u003enpm install -g tarmac-cost — fully open source, runs locally, no tracking, no accounts.\u003cp\u003eWould love feedback on estimate accuracy for your use cases - that's what I'm most focused on improving\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47267782\"\u003ehttps://news.ycombinator.com/item?id=47267782\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "How we would have managed a recent incident at Port with an incident agent",
+      "link": "https://www.port.io/blog/how-we-would-have-managed-a-recent-incident-at-port-with-an-incident-agent",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-05T21:49:22Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.port.io/blog/how-we-would-have-managed-a-recent-incident-at-port-with-an-incident-agent\"\u003ehttps://www.port.io/blog/how-we-would-have-managed-a-recent-incident-at-port-with-an-incident-agent\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47267780\"\u003ehttps://news.ycombinator.com/item?id=47267780\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Mo Samuels wrote this blog post",
+      "link": "https://idiallo.com/blog/why-we-hate-llm-articles",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-05T21:46:48Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://idiallo.com/blog/why-we-hate-llm-articles\"\u003ehttps://idiallo.com/blog/why-we-hate-llm-articles\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47267750\"\u003ehttps://news.ycombinator.com/item?id=47267750\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "How good is Claude, really?",
+      "link": "https://alinpanaitiu.com/blog/how-good-is-claude-really/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-05T21:45:40Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://alinpanaitiu.com/blog/how-good-is-claude-really/\"\u003ehttps://alinpanaitiu.com/blog/how-good-is-claude-really/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47267729\"\u003ehttps://news.ycombinator.com/item?id=47267729\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: StockMRRket – trade indie startup \"stocks\" priced from real MRR data",
+      "link": "https://stockmrrket.com/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-05T21:45:11Z",
+      "description": "\n\u003cp\u003eHey HN,\nI built stockMRRket, a side project where you can buy/sell shares of real indie startups with virtual money.\u003cp\u003eThe core idea: prices are derived from real startup metrics (mainly MRR), so it behaves like a tiny market for internet startups.\u003cp\u003eIt’s built on top of trustMRR APIs, which made this possible. Thanks to Marc Lou for making this data available.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47267727\"\u003ehttps://news.ycombinator.com/item?id=47267727\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Whoops, Websites Realize That Killing Their Comment Sections Was a Mistake",
+      "link": "https://www.techdirt.com/2026/02/03/whoops-websites-realize-that-killing-their-comment-sections-was-a-mistake/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-05T21:45:01Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.techdirt.com/2026/02/03/whoops-websites-realize-that-killing-their-comment-sections-was-a-mistake/\"\u003ehttps://www.techdirt.com/2026/02/03/whoops-websites-realize-that-killing-their-comment-sections-was-a-mistake/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47267725\"\u003ehttps://news.ycombinator.com/item?id=47267725\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Amazon down – live updates on outage as shoppers can't check out",
+      "link": "https://www.tomsguide.com/computing/live/amazon-is-down-live-outage-report-as-users-cant-check-out-see-product-reviews-and-more",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-05T21:43:25Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.tomsguide.com/computing/live/amazon-is-down-live-outage-report-as-users-cant-check-out-see-product-reviews-and-more\"\u003ehttps://www.tomsguide.com/computing/live/amazon-is-down-live-outage-report-as-users-cant-check-out-see-product-reviews-and-more\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47267711\"\u003ehttps://news.ycombinator.com/item?id=47267711\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Jiang Xueqin – The Law of Asymmetry [video]",
+      "link": "https://www.youtube.com/watch?v=t5oisJiorsU",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-05T21:42:49Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.youtube.com/watch?v=t5oisJiorsU\"\u003ehttps://www.youtube.com/watch?v=t5oisJiorsU\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47267706\"\u003ehttps://news.ycombinator.com/item?id=47267706\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Never snooze a future in async Rust",
+      "link": "https://jacko.io/snooze.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-05T21:42:04Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://jacko.io/snooze.html\"\u003ehttps://jacko.io/snooze.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47267700\"\u003ehttps://news.ycombinator.com/item?id=47267700\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    }
+  ],
+  "generatedAt": "2026-03-06T07:14:58.724365891+09:00"
+}
