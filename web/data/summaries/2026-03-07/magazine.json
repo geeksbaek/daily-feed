@@ -1,0 +1,545 @@
+{
+  "date": "2026-03-07",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2026년 3월 6일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** GPT-5.4의 깜짝 등장과 엔비디아의 투자 지형 변화로 AI 생태계가 요동치는 가운데, 미 국방부의 Anthropic 제재와 대규모 보안 사고들이 겹치며 'AI 혁신'과 '인프라 보안'의 균형이 그 어느 때보다 중요해진 하루입니다.\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### GPT-5.4 전격 공개: AI 진화의 새로운 마일스톤\n오픈AI(OpenAI)가 차세대 대형 언어 모델인 **GPT-5.4**를 전격 공개했습니다. 이번 업데이트는 단순한 파라미터 확장을 넘어, 모델 스스로 논리적 오류를 교정하는 추론 능력의 극대화와 환각(Hallucination) 현상의 획기적인 감소에 초점을 맞춘 것으로 보입니다. 특히 에이전트 기반의 자율적 작업 수행 능력이 대폭 향상되어, 단순 챗봇을 넘어선 '실질적인 AI 동료'로서의 활용성이 기대됩니다.\n\u003e **Key Point:** AI 모델의 진화 속도가 다시 한번 가속화되며, 범용 인공지능(AGI)을 향한 빅테크 간의 기술 패권 경쟁이 새로운 국면을 맞이했습니다. [^43]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. 미 국방부, Anthropic을 '공급망 위험'으로 공식 지정\n- **What:** 미국 국방부(DoD)가 주요 AI 기업인 Anthropic을 공식적인 공급망 위험(Supply Chain Risk) 요소로 지정했습니다. [^19]\n- **Why:** 국가 안보와 직결된 민감한 데이터 처리 과정에서 AI 모델의 투명성 부족과 잠재적인 데이터 유출 및 편향성 우려가 핵심 원인으로 작용했습니다.\n- **Impact:** Anthropic의 B2G(기업-정부 간) 사업 확장에 급제동이 걸렸으며, 향후 국방/공공 부문에 진출하려는 모든 AI 기업들에게 훨씬 더 엄격한 보안 및 투명성 검증이 요구될 전망입니다.\n\n### 2. 엔비디아 젠슨 황, OpenAI·Anthropic 투자 축소 선언\n- **What:** 엔비디아(NVIDIA)의 CEO 젠슨 황이 OpenAI와 Anthropic 등 선도적인 AI 모델 개발사에 대한 투자를 축소하겠다고 발표했습니다. [^26]\n- **Why:** 자사의 칩을 사용하는 고객사들과의 잠재적 이해상충(Conflict of Interest)을 방지하고, 엔비디아 자체의 AI 플랫폼 및 생태계 구축에 자본을 집중하기 위한 전략적 선회입니다.\n- **Impact:** 막대한 컴퓨팅 자본을 바탕으로 성장해 온 거대 AI 스타트업들의 자금 조달 환경이 냉각될 수 있으며, AI 인프라 시장의 권력 지형이 하드웨어 중심으로 더욱 굳어질 수 있습니다.\n\n### 3. 위키백과, 관리자 계정 대량 유출로 초유의 '읽기 전용' 사태\n- **What:** 전 세계 지식의 보고인 위키백과가 관리자 계정 대량 유출 사태로 인해 일시적으로 사이트를 '읽기 전용' 모드로 전환했다가 복구했습니다. [^40]\n- **Why:** 크리덴셜 스터핑(Credential Stuffing) 또는 정교한 피싱 공격으로 인해 다수의 고권한 계정이 탈취되면서, 대규모 문서 훼손을 막기 위한 긴급 조치가 발동되었습니다.\n- **Impact:** 오픈소스 및 집단 지성 플랫폼의 취약한 보안 아키텍처가 도마 위에 올랐으며, 다중 인증(MFA) 강제화 등 플랫폼 전반의 보안 정책 대수술이 불가피해졌습니다.\n\n### 4. 구글 Chrome, '2주 출시 주기'로 초고속 전환\n- **What:** 구글이 2026년 9월부터 Chrome 브라우저의 정식 출시 주기를 기존 4주에서 2주 단위로 단축한다고 발표했습니다. [^36]\n- **Why:** 제로데이 취약점 등 급증하는 웹 보안 위협에 더욱 빠르게 대응하고, 새로운 웹 표준 및 기능을 지연 없이 사용자에게 전달하기 위함입니다.\n- **Impact:** 웹 개발자들과 기업 IT 관리자들은 브라우저 호환성 테스트와 업데이트 배포 주기를 두 배로 앞당겨야 하는 운영상의 압박을 받게 되었습니다.\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **GitHub Security Lab AI Framework** | 취약점 스캐닝을 자동화하는 오픈소스 AI 기반 보안 프레임워크 [^2] |\n| **Tool** | **VS Code Insiders v1.111** | 최신 편집 기능과 성능 개선이 적용된 VS Code 프리뷰 빌드 [^3] |\n| **Tool** | **NVIDIA NeMo Evaluator** | 대화형 LLM의 성능을 수 분 내에 평가할 수 있는 에이전트 스킬 세트 [^4] |\n| **Tool** | **Codex Security** | OpenAI가 리서치 프리뷰로 공개한 AI 기반 코드 보안 분석 도구 [^9] |\n| **Tool** | **start.spring.io in VS Code** | Spring Boot 프로젝트 생성기를 VS Code 내부에 직접 통합한 확장 프로그램 [^20] |\n| **Tool** | **Nvidia PersonaPlex 7B** | Apple Silicon에서 구동되는 Swift 기반 실시간 양방향 음성 대화 모델 [^27] |\n| **Tool** | **Calto** | 메모장처럼 자연스럽게 텍스트를 입력하면 줄 단위로 자동 계산되는 노트형 계산기 [^30] |\n| **Tool** | **mogcli** | Microsoft 365 환경을 제어하기 위해 설계된 AI 에이전트 친화적 CLI 도구 [^41] |\n| **Tool** | **wireguard-macos** | Mac Mini를 개인용 VPN 서버로 자동 구축해주는 오픈소스 스크립트 [^42] |\n| **Tool** | **SpeciesNet** | 야생동물 개체수 파악 및 보호를 위해 구글이 공개한 오픈소스 AI 비전 모델 [^44] [^45] |\n| **Tool** | **Mycelium** | 워크플로우(Workflow) 기반으로 설계된 독특한 Clojure 웹 프레임워크 [^48] |\n| **Tool** | **PlateSpinner** | 여러 AI 코딩 에이전트들의 작업을 시각적으로 조율하는 칸반(Kanban) 보드 [^52] |\n| **Tool** | **Auto-Co** | 14개의 AI 에이전트가 협력하여 스타트업을 자율적으로 운영하는 오픈소스 프로젝트 [^58] |\n| **Tool** | **Astrai-router** | 톰슨 샘플링과 에너지 인지 라우팅을 지원하는 고효율 오픈소스 LLM 라우터 [^63] |\n| **Tool** | **Aigate** | Claude, Cursor 등 AI 코딩 에이전트를 안전하게 격리하는 OS 레벨 샌드박스 [^65] |\n| **Paper** | **LLM Chain-of-Thought Research** | LLM이 CoT(생각의 사슬) 추론을 끝내기 전에 이미 정답을 알고 있다는 흥미로운 연구 결과 [^62] |\n| **Video** | **An IRC bot spawned the most prolific software** | 단순한 IRC 봇에서 시작되어 소프트웨어 역사에 큰 획을 그은 프로젝트 이야기 [^57] |\n| **Video** | **Aldous Huxley on the Power of Technology** | 올더스 헉슬리가 1961년에 남긴 '기술의 힘과 위험성'에 대한 통찰력 있는 인터뷰 [^59] |\n| **Video** | **Trump 1992 video** | 1992년 도널드 트럼프의 과거 발언을 담은 아카이브 영상 [^51] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **Atlassian Rovo AI 팀원 아키텍처**: AI의 '마법'을 실제 프로덕션 레벨의 Forge 코드로 구현하는 엔지니어링 여정 공개 [^5]\n* **AI 골든 프롬프트의 비밀**: 교차 기능 팀 파트너십이 어떻게 단순한 프롬프트를 실제 고객 가치로 변환했는지에 대한 사례 연구 [^6]\n* **Jira 클라우드 마이그레이션 확장**: 대규모 마이그레이션 시 발생하는 병목 현상을 식별하고 해결하는 아키텍처 접근법 [^7]\n* **좋은 소프트웨어는 멈출 때를 안다**: 무한정 실행되는 데몬보다, 명확한 종료 조건을 가진 소프트웨어 설계의 중요성 [^22]\n* **Python 'requests' API 설계 철학**: 직관적인 API 설계 원칙을 인간관계와 결혼 생활의 지혜에 빗댄 Kenneth Reitz의 에세이 [^23]\n* **Firefox 충돌 원인 분석**: 브라우저 크래시의 약 10%가 우주선(Cosmic Ray)이나 불량 RAM으로 인한 하드웨어 비트 플립(Bit-flip) 때문이라는 분석 [^24]\n* **Java Annotated Monthly (2026년 3월)**: Java 생태계 최신 소식, Kotlin 업데이트 및 커뮤니티 트렌드 총망라 [^47]\n* **The Start-Stop Problem**: 소프트웨어 개발 과정에서 잦은 컨텍스트 스위칭과 작업 중단이 생산성에 미치는 치명적 영향 [^50]\n* **Technical Beauty: FreeBSD Jails**: 컨테이너 기술의 원조격인 FreeBSD Jails가 가진 구조적 우아함과 보안성에 대한 찬사 [^54]\n* **CSS Proves Me Human**: 복잡한 CAPTCHA 대신 CSS의 특정 동작을 활용하여 봇과 인간을 구별하는 창의적인 접근법 [^55]\n* **Chrome Dev for Desktop Update**: 데스크톱 환경을 위한 최신 크롬 개발자 빌드 릴리스 [^14]\n* **Chrome Dev for Android Update**: 안드로이드 환경을 위한 최신 크롬 개발자 빌드 릴리스 [^15]\n\n#### 🤖 AI \u0026 LLM 트렌드\n* **Descript의 대규모 다국어 비디오 더빙**: AI를 활용해 화자의 입모양과 억양까지 자연스럽게 맞추는 다국어 더빙 파이프라인 구축기 [^10]\n* **Balyasny Asset Management의 AI 리서치 엔진**: 헤지펀드가 방대한 금융 데이터를 분석하기 위해 자체 구축한 투자용 AI 엔진 사례 [^11]\n* **AI 보조 재작성으로 인한 재라이선스 문제**: AI가 기존 오픈소스 코드를 재작성할 경우 발생하는 저작권 및 라이선스 오염 논란 [^17]\n* **AI 에이전트를 위한 CLI 재작성**: AI가 도구를 쉽게 사용할 수 있도록, 사람이 읽기 좋은 텍스트 대신 JSON 등 구조화된 출력을 내는 CLI의 필요성 [^29]\n* **Paperclip 프로젝트**: 인간의 개입을 완전히 배제하고 AI 에이전트들만으로 회사를 설립하고 운영하려는 실험적 시도 [^33]\n* **Grep은 죽었다 (Claude Code)**: AI 코딩 어시스턴트가 프로젝트의 전체 컨텍스트를 잃지 않고 기억하게 만드는 새로운 검색 및 인덱싱 방법론 [^35]\n* **LLM의 L은 \"거짓말(Lying)\"**: 대형 언어 모델의 본질적인 환각 현상과 신뢰성 문제를 꼬집는 비판적 에세이 [^38]\n* **구글 I/O 2026 Save the date**: 다가오는 구글 I/O 행사에서 AI 기반의 새로운 인터랙티브 게임 플레이 공개 예고 [^46]\n* **AI 생산성 역설**: AI가 업무를 자동화해 주지만, 결국 높아진 기대치 때문에 인간이 더 열심히 일하게 되는 현상에 대한 고찰 [^67]\n* **Celebrating Women in AI**: Docker의 MCP(Model Context Protocol) 전략을 이끄는 Cecilia Liu와의 심층 인터뷰 [^13]\n\n#### 🛡️ 보안 \u0026 프라이버시\n* **Anthropic과 Mozilla의 보안 파트너십**: Firefox 브라우저의 보안 취약점을 AI로 선제 대응하기 위한 양사 간의 협력 발표 [^1]\n* **Atlassian Rovo Dev Skills 보안 테스트**: Rovo AI를 활용해 개발 단계에서부터 보안 취약점을 자동으로 식별하고 수정하는 방법 [^8]\n* **Cloudflare One의 통합 데이터 보안**: 엔드포인트 디바이스부터 AI 프롬프트 입력창까지 아우르는 클라우드플레어의 제로 트러스트 보안 비전 [^12]\n* **Proton Mail 시위자 신원 확인 논란**: 종단간 암호화를 표방하는 Proton Mail이 FBI의 수사 협조 요청에 응해 시위자 정보를 제공한 사건 [^16]\n* **GitHub 이슈 제목으로 4,000대 머신 감염**: 악의적으로 조작된 GitHub 이슈 제목을 파싱하는 과정에서 발생한 대규모 개발자 PC 감염 사태 [^21]\n* **미국 세관국경보호청(CBP)의 위치 추적**: 정부 기관이 영장 없이 온라인 광고 생태계의 브로커 데이터를 구매해 시민들의 이동 경로를 추적한 사실 폭로 [^32]\n\n#### 📈 비즈니스 \u0026 테크 동향\n* **브랜드 시대 (The Brand Age)**: 폴 그레이엄이 예측한, 제품의 기능적 차별화가 사라진 AI 시대에 '브랜드'가 가지는 절대적 가치 [^18] [^31]\n* **코스피 상승장에 숟가락 얹기**: 국내 주식 투자자들을 위한 증권사별 수수료 및 이벤트 비교, 공모주 정보 큐레이션 사이트 소개 [^25]\n* **Cluely CEO의 매출 조작 인정**: 유망 스타트업 Cluely의 CEO Roy Lee가 투자 유치를 위해 작년 매출 수치를 부풀렸음을 공개적으로 시인 [^28]\n* **인재 전쟁의 역설**: 국가 차원에서 인재 양성에 막대한 자본을 쏟아붓는 나라들이 정작 글로벌 인재 유치전에서는 밀리고 있다는 분석 [^34]\n* **재라이선스 권한 분쟁**: 특정 오픈소스 프로젝트의 기여자들 사이에서 발생한 코드 재라이선스 권한 및 소유권에 대한 법적 분쟁 [^37]\n* **미국 관세 환급 명령**: 미 연방 판사가 정부를 상대로 기업들에게 1,300억 달러 이상의 부당 징수 관세를 환급하라는 메가톤급 판결을 내림 [^39]\n* **AI 기반 디지털 야간 투시경 (Indiegogo)**: 드론 비디오 피드와 AI 이미지 강화 기술을 결합한 전문가용 야간 투시 시스템 크라우드펀딩 [^49]\n* **AI 스타트업 전 CEO 고소전**: 회사의 기밀 이메일 41GB를 무단 반출하고 이력서를 위조한 혐의로 전직 CEO를 고소한 AI 스타트업 사건 [^53]\n* **영국 도박 위원회 암호화폐 결제 검토**: 불법 도박 사이트로의 이탈을 막기 위해 합법적인 라이선스 사이트에서도 암호화폐 결제를 허용하는 방안 논의 [^56]\n* **어린이 소셜 미디어 금지 국가 증가**: 미성년자의 정신 건강 보호를 위해 소셜 미디어 사용을 법적으로 금지하거나 제한하려는 국가들의 목록 [^60]\n* **화이트칼라의 블루칼라화**: AI의 화이트칼라 업무 대체로 인해, 오히려 육체적 노동과 현장 기술을 요하는 블루칼라 직업의 가치가 재평가되는 현상 [^61]\n* **Apple Macintosh HyperCard 아트 아카이브**: 초기 매킨토시 시절 하이퍼카드(HyperCard)로 제작된 레트로 디지털 아트워크 모음 [^64]\n* **미 연준(Fed) 토큰화 증권 규제 명확화**: 블록체인 기반의 토큰화된 증권(Tokenized Securities)을 취급하는 은행들을 위한 자본 규제 가이드라인 발표 [^66]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘 브리핑에서는 **AI의 눈부신 발전(GPT-5.4 공개)과 그 이면에 드리운 그림자(국방부 제재, 보안 사고)**가 극명하게 대비되었습니다. 기술이 고도화될수록 인프라 보안과 신뢰성의 가치는 더욱 높아집니다. 특히 위키백과 사태나 GitHub 이슈 감염 사건은 우리가 당연하게 여기던 오픈 생태계의 취약점을 찌르고 있습니다. 혁신의 속도를 즐기되, 안전벨트를 단단히 매야 할 시점입니다. 주말을 앞둔 금요일, 안전하고 평안한 하루 보내시길 바랍니다!\n\n[^1]: Partnering with Mozilla to improve Firefox’s security - https://www.anthropic.com/news/mozilla-firefox-security\n[^2]: How to scan for vulnerabilities with GitHub Security Lab’s open source AI-powered framework - https://github.blog/security/how-to-scan-for-vulnerabilities-with-github-security-labs-open-source-ai-powered-framework/\n[^3]: Insiders (version 1.111) - https://code.visualstudio.com/updates/v1_111\n[^4]: Conversational LLM Evaluations in Minutes with NVIDIA NeMo Evaluator Agent Skills - https://huggingface.co/blog/nvidia/model-evaluation-skill\n[^5]: Architecting a Rovo AI Teammate: From AI ‘Magic’ to Production-Ready Forge Code - https://www.atlassian.com/blog/it-teams/architecting-a-rovo-ai-teammate-from-ai-magic-to-production-ready-forge-code\n[^6]: Behind the Demo: How Cross‑functional Partnerships Turned AI “Golden Prompts” into Real Customer Value - https://www.atlassian.com/blog/artificial-intelligence/golden-prompts\n[^7]: Scaling Jira cloud Migrations, One Bottleneck at a Time - https://www.atlassian.com/blog/atlassian-engineering/scaling-jira-cloud-migrations-one-bottleneck-at-a-time\n[^8]: Supercharge your Security Testing with Rovo Dev Skills - https://www.atlassian.com/blog/developer/supercharge-your-security-with-rovo-dev-skills\n[^9]: Codex Security: now in research preview - https://openai.com/index/codex-security-now-in-research-preview\n[^10]: How Descript enables multilingual video dubbing at scale - https://openai.com/index/descript\n[^11]: How Balyasny Asset Management built an AI research engine for investing - https://openai.com/index/balyasny-asset-management\n[^12]: From the endpoint to the prompt: a unified data security vision in Cloudflare One - https://blog.cloudflare.com/unified-data-security/\n[^13]: Celebrating Women in AI: 3 Questions with Cecilia Liu on Leading Docker’s MCP Strategy - https://www.docker.com/blog/women-in-ai-cecilia-liu-docker-mcp-strategy/\n[^14]: Chrome Dev for Desktop Update - http://chromereleases.googleblog.com/2026/03/chrome-dev-for-desktop-update.html\n[^15]: Chrome Dev for Android Update - http://chromereleases.googleblog.com/2026/03/chrome-dev-for-android-update.html\n[^16]: Proton Mail이 FBI의 ‘Stop Cop City’ 시위자 신원 확인을 도운 사건 - https://news.hada.io/topic?id=27262\n[^17]: AI 보조 재작성으로 인한 재라이선스 문제 - https://news.hada.io/topic?id=27261\n[^18]: 브랜드 시대 - https://news.hada.io/topic?id=27260\n[^19]: Anthropic, 미 국방부로부터 공식적으로 공급망 위험으로 지정 - https://news.hada.io/topic?id=27259\n[^20]: Show GN: start.spring.io를 VS Code 안에 넣었습니다 - https://news.hada.io/topic?id=27258\n[^21]: GitHub 이슈 제목으로 4,000대 개발자 머신이 감염된 사건 - https://news.hada.io/topic?id=27257\n[^22]: 좋은 소프트웨어는 멈출 때를 안다 - https://news.hada.io/topic?id=27256\n[^23]: Python 'requests' API 설계 철학에서 배우는 인간관계와 결혼 생활의 원칙 (Kenneth Reitz) - https://news.hada.io/topic?id=27254\n[^24]: Firefox 충돌의 10%는 비트 플립(bit-flip)으로 인한 하드웨어 결함 때문 - https://news.hada.io/topic?id=27251\n[^25]: Show GN: 코스피 상승장에 숟가락 얹기 - 증권사 수수료/이벤트 비교 \u0026 공모주 사이트 - https://news.hada.io/topic?id=27250\n[^26]: 엔비디아 CEO 젠슨 황, OpenAI와 Anthropic 투자 축소 발표 - https://news.hada.io/topic?id=27249\n[^27]: Nvidia PersonaPlex 7B on Apple Silicon: Swift 기반 실시간 양방향 음성 대화 모델 - https://news.hada.io/topic?id=27248\n[^28]: Cluely CEO Roy Lee, 작년 매출 수치를 공개적으로 거짓 발표했음을 인정 - https://news.hada.io/topic?id=27247\n[^29]: AI 에이전트를 위해선 CLI를 다시 작성해야 합니다 - https://news.hada.io/topic?id=27246\n[^30]: Show GN: Calto - 메모처럼 쓰면 줄 단위로 계산되는 노트 계산기 - https://news.hada.io/topic?id=27245\n[^31]: 폴 그레이엄의 \"브랜드 시대 (The Brand Age)\" - https://news.hada.io/topic?id=27244\n[^32]: 미국 세관국경보호청(CBP), 온라인 광고 생태계를 활용해 사람들의 이동 경로 추적 - https://news.hada.io/topic?id=27243\n[^33]: Paperclip - 인간 개입 없는 회사 만들기 - https://news.hada.io/topic?id=27242\n[^34]: 인재에 돈을 가장 많이 쓰는 나라가 인재 전쟁에서 지고 있다 - https://news.hada.io/topic?id=27241\n[^35]: Grep은 죽었다: Claude Code가 기억하게 만드는 방법 - https://news.hada.io/topic?id=27239\n[^36]: 구글 Chrome, 2026년 9월부터 2주 출시 주기로 전환 - https://news.hada.io/topic?id=27238\n[^37]: 이 프로젝트를 재라이선스할 권리가 없음 - https://news.hada.io/topic?id=27236\n[^38]: LLM의 L은 \"거짓말(Lying)\"을 의미한다 - https://news.hada.io/topic?id=27235\n[^39]: 미 연방 판사, 정부에 1,300억 달러 이상의 관세 환급 개시 명령 - https://news.hada.io/topic?id=27234\n[^40]: 위키백과, 관리자 계정 대량 유출로 읽기 전용 모드 전환되었다가 복구 - https://news.hada.io/topic?id=27233\n[^41]: mogcli - Microsoft 365용 에이전트 친화적 CLI - https://news.hada.io/topic?id=27232\n[^42]: Show GN: wireguard-macos - Mac Mini용 VPN 서버 자동 구축 - https://news.hada.io/topic?id=27231\n[^43]: GPT‑5.4 공개 - https://news.hada.io/topic?id=27230\n[^44]: How our open-source AI model SpeciesNet is helping to promote wildlife conservation (AI) - https://blog.google/company-news/outreach-and-initiatives/sustainability/speciesnet-open-source-ai-wildlife/\n[^45]: How our open-source AI model SpeciesNet is helping to promote wildlife conservation (Google Blog) - https://blog.google/company-news/outreach-and-initiatives/sustainability/speciesnet-open-source-ai-wildlife/\n[^46]: Play AI-based games in our I/O Save the date - https://blog.google/innovation-and-ai/technology/developers-tools/io-save-the-date-2026-gemini/\n[^47]: Java Annotated Monthly – March 2026 - https://blog.jetbrains.com/idea/2026/03/java-annotated-monthly-march-2026/\n[^48]: A workflow driven web framework for Clojure - https://mycelium-clj.github.io/docs/guestbook.html\n[^49]: Show HN: An AI-powered digital night vision system with drone video feed - https://www.indiegogo.com/en/projects/atx-system/atx-shadow-x1-professional-ai-night-vision\n[^50]: The Start-Stop Problem - https://kramkarthik.com/the-start-stop-problem/\n[^51]: Trump makes questionable comments about young girls in 1992 video (2016) - https://www.youtube.com/watch?v=yRAPLodRnd4\n[^52]: Show HN: PlateSpinner – A Kanban board that orchestrates AI coding agents - https://github.com/moridinamael/platespinner\n[^53]: AI startup sues ex-CEO, saying he took 41GB of email and lied on Résumé - https://arstechnica.com/tech-policy/2026/03/ai-startup-sues-ex-ceo-saying-he-took-41gb-of-email-and-lied-on-resume/\n[^54]: Technical Beauty: FreeBSD Jails - https://vivianvoss.net/blog/technical-beauty-jails\n[^55]: CSS Proves Me Human - https://will-keleher.com/posts/this-css-makes-me-human/\n[^56]: UK Gambling Commission explores how to keep bettors on licensed sites - https://www.coindesk.com/policy/2026/02/27/uk-s-gambling-watchdog-explores-allowing-gamblers-to-pay-bets-with-crypto\n[^57]: An IRC bot spawned the most prolific software [video] - https://www.youtube.com/watch?v=ohzzGy5K9Dk\n[^58]: Show HN: Auto-Co – 14 AI agents that run a startup autonomously (open source) - https://github.com/NikitaDmitrieff/auto-co-meta\n[^59]: Aldous Huxley on the Power of Technology (1961) [video] - https://www.youtube.com/watch?v=ZCOGFSwrGNc\n[^60]: Countries moving to ban social media for children - https://techcrunch.com/2026/03/06/social-media-ban-children-countries-list/\n[^61]: White Collar Goes Blue - https://www.workingtheorys.com/p/white-collar\n[^62]: Research Shows Models Know Answers Before Finishing Chain-of-Thought Reasoning - https://www.simplenews.ai/news/research-shows-models-already-know-answers-before-finishing-chain-of-thought-reasoning-kmmd\n[^63]: Open-source LLM router with Thompson Sampling and energy-aware routing - https://github.com/beee003/astrai-router\n[^64]: Art Bits from Apple Macintosh HyperCard - https://archives.somnolescent.net/web/mari_v2/junk/hypercard/\n[^65]: Aigate – An OS-level sandbox for AI coding agents (Claude, Cursor) - https://github.com/AxeForging/aigate\n[^66]: Fed clarifies capital rules for tokenized securities - https://www.theblock.co/post/392506/fed-clarifies-rules-tokenized-securities-framework-technology-neutral\n[^67]: What if AI just makes us work harder? - https://www.ft.com/content/e8bb5ab1-4b4d-473e-8f76-e690443e9fb4\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **Partnering with Mozilla to improve Firefox’s security**\n   - 출처: Anthropic News\n   - 링크: https://www.anthropic.com/news/mozilla-firefox-security\n\n2. **How to scan for vulnerabilities with GitHub Security Lab’s open source AI-powered framework**\n   - 출처: GitHub Blog\n   - 링크: https://github.blog/security/how-to-scan-for-vulnerabilities-with-github-security-labs-open-source-ai-powered-framework/\n\n3. **Insiders (version 1.111)**\n   - 출처: Visual Studio Code - Code Editing. Redefined.\n   - 링크: https://code.visualstudio.com/updates/v1_111\n\n4. **Conversational LLM Evaluations in Minutes with NVIDIA NeMo Evaluator Agent Skills **\n   - 출처: Hugging Face - Blog\n   - 링크: https://huggingface.co/blog/nvidia/model-evaluation-skill\n\n5. **Architecting a Rovo AI Teammate: From AI ‘Magic’ to Production-Ready Forge Code**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/it-teams/architecting-a-rovo-ai-teammate-from-ai-magic-to-production-ready-forge-code\n\n6. **Behind the Demo: How Cross‑functional Partnerships Turned AI “Golden Prompts” into Real Customer Value**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/artificial-intelligence/golden-prompts\n\n7. **Scaling Jira cloud Migrations, One Bottleneck at a Time**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/atlassian-engineering/scaling-jira-cloud-migrations-one-bottleneck-at-a-time\n\n8. **Supercharge your Security Testing with Rovo Dev Skills**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/developer/supercharge-your-security-with-rovo-dev-skills\n\n9. **Codex Security: now in research preview **\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/codex-security-now-in-research-preview\n\n10. **How Descript enables multilingual video dubbing at scale**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/descript\n\n11. **How Balyasny Asset Management built an AI research engine for investing**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/balyasny-asset-management\n\n12. **From the endpoint to the prompt: a unified data security vision in Cloudflare One**\n   - 출처: Cloudflare Blog\n   - 링크: https://blog.cloudflare.com/unified-data-security/\n\n13. **Celebrating Women in AI: 3 Questions with Cecilia Liu on Leading Docker’s MCP Strategy**\n   - 출처: Docker Blog\n   - 링크: https://www.docker.com/blog/women-in-ai-cecilia-liu-docker-mcp-strategy/\n\n14. **Chrome Dev for Desktop Update**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2026/03/chrome-dev-for-desktop-update.html\n\n15. **Chrome Dev for Android Update**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2026/03/chrome-dev-for-android-update.html\n\n16. **Proton Mail이 FBI의 ‘Stop Cop City’ 시위자 신원 확인을 도운 사건**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27262\n\n17. **AI 보조 재작성으로 인한 재라이선스 문제**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27261\n\n18. **브랜드 시대**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27260\n\n19. **Anthropic, 미 국방부로부터 공식적으로 공급망 위험으로 지정**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27259\n\n20. **Show GN: start.spring.io를 VS Code 안에 넣었습니다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27258\n\n21. **GitHub 이슈 제목으로 4,000대 개발자 머신이 감염된 사건**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27257\n\n22. **좋은 소프트웨어는 멈출 때를 안다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27256\n\n23. **Python 'requests' API 설계 철학에서 배우는 인간관계와 결혼 생활의 원칙 (Kenneth Reitz)**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27254\n\n24. **Firefox 충돌의 10%는 비트 플립(bit-flip)으로 인한 하드웨어 결함 때문**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27251\n\n25. **Show GN: 코스피 상승장에 숟가락 얹기 - 증권사 수수료/이벤트 비교 \u0026amp; 공모주 사이트**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27250\n\n26. **엔비디아 CEO 젠슨 황, OpenAI와 Anthropic 투자 축소 발표**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27249\n\n27. **Nvidia PersonaPlex 7B on Apple Silicon: Swift 기반 실시간 양방향 음성 대화 모델**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27248\n\n28. **Cluely CEO Roy Lee, 작년 매출 수치를 공개적으로 거짓 발표했음을 인정**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27247\n\n29. **AI 에이전트를 위해선 CLI를 다시 작성해야 합니다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27246\n\n30. **Show GN: Calto - 메모처럼 쓰면 줄 단위로 계산되는 노트 계산기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27245\n\n31. **폴 그레이엄의 \u0026quot;브랜드 시대 (The Brand Age)\u0026quot; **\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27244\n\n32. **미국 세관국경보호청(CBP), 온라인 광고 생태계를 활용해 사람들의 이동 경로 추적**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27243\n\n33. **Paperclip - 인간 개입 없는 회사 만들기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27242\n\n34. **인재에 돈을 가장 많이 쓰는 나라가 인재 전쟁에서 지고 있다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27241\n\n35. **Grep은 죽었다: Claude Code가 기억하게 만드는 방법**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27239\n\n36. **구글 Chrome, 2026년 9월부터 2주 출시 주기로 전환**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27238\n\n37. **이 프로젝트를 재라이선스할 권리가 없음**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27236\n\n38. **LLM의 L은 \u0026quot;거짓말(Lying)\u0026quot;을 의미한다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27235\n\n39. **미 연방 판사, 정부에 1,300억 달러 이상의 관세 환급 개시 명령**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27234\n\n40. **위키백과, 관리자 계정 대량 유출로 읽기 전용 모드 전환되었다가 복구**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27233\n\n41. **mogcli - Microsoft 365용 에이전트 친화적 CLI**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27232\n\n42. **Show GN: wireguard-macos - Mac Mini용 VPN 서버 자동 구축**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27231\n\n43. **GPT‑5.4 공개**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27230\n\n44. **How our open-source AI model SpeciesNet is helping to promote wildlife conservation**\n   - 출처: AI\n   - 링크: https://blog.google/company-news/outreach-and-initiatives/sustainability/speciesnet-open-source-ai-wildlife/\n\n45. **How our open-source AI model SpeciesNet is helping to promote wildlife conservation**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/company-news/outreach-and-initiatives/sustainability/speciesnet-open-source-ai-wildlife/\n\n46. **Play AI-based games in our I/O Save the date**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/innovation-and-ai/technology/developers-tools/io-save-the-date-2026-gemini/\n\n47. **Java Annotated Monthly – March 2026**\n   - 출처: IntelliJ IDEA : IntelliJ IDEA – the IDE for Professional Development in Java and Kotlin | The JetBrains Blog\n   - 링크: https://blog.jetbrains.com/idea/2026/03/java-annotated-monthly-march-2026/\n\n48. **A workflow driven web framework for Clojure**\n   - 출처: Hacker News\n   - 링크: https://mycelium-clj.github.io/docs/guestbook.html\n\n49. **Show HN: An AI-powered digital night vision system with drone video feed**\n   - 출처: Hacker News\n   - 링크: https://www.indiegogo.com/en/projects/atx-system/atx-shadow-x1-professional-ai-night-vision\n\n50. **The Start-Stop Problem**\n   - 출처: Hacker News\n   - 링크: https://kramkarthik.com/the-start-stop-problem/\n\n51. **Trump makes questionable comments about young girls in 1992 video (2016)**\n   - 출처: Hacker News\n   - 링크: https://www.youtube.com/watch?v=yRAPLodRnd4\n\n52. **Show HN: PlateSpinner – A Kanban board that orchestrates AI coding agents**\n   - 출처: Hacker News\n   - 링크: https://github.com/moridinamael/platespinner\n\n53. **AI startup sues ex-CEO, saying he took 41GB of email and lied on Résumé**\n   - 출처: Hacker News\n   - 링크: https://arstechnica.com/tech-policy/2026/03/ai-startup-sues-ex-ceo-saying-he-took-41gb-of-email-and-lied-on-resume/\n\n54. **Technical Beauty: FreeBSD Jails**\n   - 출처: Hacker News\n   - 링크: https://vivianvoss.net/blog/technical-beauty-jails\n\n55. **CSS Proves Me Human**\n   - 출처: Hacker News\n   - 링크: https://will-keleher.com/posts/this-css-makes-me-human/\n\n56. **UK Gambling Commission explores how to keep bettors on licensed sites**\n   - 출처: Hacker News\n   - 링크: https://www.coindesk.com/policy/2026/02/27/uk-s-gambling-watchdog-explores-allowing-gamblers-to-pay-bets-with-crypto\n\n57. **An IRC bot spawned the most prolific software [video]**\n   - 출처: Hacker News\n   - 링크: https://www.youtube.com/watch?v=ohzzGy5K9Dk\n\n58. **Show HN: Auto-Co – 14 AI agents that run a startup autonomously (open source)**\n   - 출처: Hacker News\n   - 링크: https://github.com/NikitaDmitrieff/auto-co-meta\n\n59. **Aldous Huxley on the Power of Technology (1961) [video]**\n   - 출처: Hacker News\n   - 링크: https://www.youtube.com/watch?v=ZCOGFSwrGNc\n\n60. **Countries moving to ban social media for children**\n   - 출처: Hacker News\n   - 링크: https://techcrunch.com/2026/03/06/social-media-ban-children-countries-list/\n\n61. **White Collar Goes Blue**\n   - 출처: Hacker News\n   - 링크: https://www.workingtheorys.com/p/white-collar\n\n62. **Research Shows Models Know Answers Before Finishing Chain-of-Thought Reasoning**\n   - 출처: Hacker News\n   - 링크: https://www.simplenews.ai/news/research-shows-models-already-know-answers-before-finishing-chain-of-thought-reasoning-kmmd\n\n63. **Open-source LLM router with Thompson Sampling and energy-aware routing**\n   - 출처: Hacker News\n   - 링크: https://github.com/beee003/astrai-router\n\n64. **Art Bits from Apple Macintosh HyperCard**\n   - 출처: Hacker News\n   - 링크: https://archives.somnolescent.net/web/mari_v2/junk/hypercard/\n\n65. **Aigate – An OS-level sandbox for AI coding agents (Claude, Cursor)**\n   - 출처: Hacker News\n   - 링크: https://github.com/AxeForging/aigate\n\n66. **Fed clarifies capital rules for tokenized securities**\n   - 출처: Hacker News\n   - 링크: https://www.theblock.co/post/392506/fed-clarifies-rules-tokenized-securities-framework-technology-neutral\n\n67. **What if AI just makes us work harder?**\n   - 출처: Hacker News\n   - 링크: https://www.ft.com/content/e8bb5ab1-4b4d-473e-8f76-e690443e9fb4\n\n\n",
+  "articles": [
+    {
+      "title": "Partnering with Mozilla to improve Firefox’s security",
+      "link": "https://www.anthropic.com/news/mozilla-firefox-security",
+      "source": "Anthropic News",
+      "category": "tech",
+      "publishedAt": "2026-03-06T00:00:00Z",
+      "description": "Partnering with Mozilla to improve Firefox’s security"
+    },
+    {
+      "title": "How to scan for vulnerabilities with GitHub Security Lab’s open source AI-powered framework",
+      "link": "https://github.blog/security/how-to-scan-for-vulnerabilities-with-github-security-labs-open-source-ai-powered-framework/",
+      "source": "GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-06T21:09:04Z",
+      "description": "\u003cp\u003eGitHub Security Lab Taskflow Agent is very effective at finding Auth Bypasses, IDORs, Token Leaks, and other high-impact vulnerabilities.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/security/how-to-scan-for-vulnerabilities-with-github-security-labs-open-source-ai-powered-framework/\"\u003eHow to scan for vulnerabilities with GitHub Security Lab’s open source AI-powered framework\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Insiders (version 1.111)",
+      "link": "https://code.visualstudio.com/updates/v1_111",
+      "source": "Visual Studio Code - Code Editing. Redefined.",
+      "category": "tech",
+      "publishedAt": "2026-04-02T17:00:00Z",
+      "description": "\n      \u003cp\u003eLearn what is new in Visual Studio Code 1.111 (Insiders)\u003c/p\u003e\n      \u003cp\u003e\u003ca href=\"https://code.visualstudio.com/updates/v1_111\"\u003eRead the full article\u003c/a\u003e\u003c/p\u003e\n    "
+    },
+    {
+      "title": "Conversational LLM Evaluations in Minutes with NVIDIA NeMo Evaluator Agent Skills ",
+      "link": "https://huggingface.co/blog/nvidia/model-evaluation-skill",
+      "source": "Hugging Face - Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-06T18:56:10Z"
+    },
+    {
+      "title": "Architecting a Rovo AI Teammate: From AI ‘Magic’ to Production-Ready Forge Code",
+      "link": "https://www.atlassian.com/blog/it-teams/architecting-a-rovo-ai-teammate-from-ai-magic-to-production-ready-forge-code",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-06T18:25:14Z",
+      "description": "\u003cp\u003eI recently set out to build my first production-ready Rovo app, and the journey from \u0026#8216;hello world\u0026#8217; to a functional...\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/it-teams/architecting-a-rovo-ai-teammate-from-ai-magic-to-production-ready-forge-code\"\u003eArchitecting a Rovo AI Teammate: From AI \u0026#8216;Magic\u0026#8217; to Production-Ready Forge Code\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Behind the Demo: How Cross‑functional Partnerships Turned AI “Golden Prompts” into Real Customer Value",
+      "link": "https://www.atlassian.com/blog/artificial-intelligence/golden-prompts",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-06T18:00:00Z",
+      "description": "\u003cp\u003eHow cross‑functional teams used golden prompts to turn AI hype into reliable, accountable outcomes — on stage and in everyday work.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/artificial-intelligence/golden-prompts\"\u003eBehind the Demo: How Cross‑functional Partnerships Turned AI “Golden Prompts” into Real Customer Value\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Scaling Jira cloud Migrations, One Bottleneck at a Time",
+      "link": "https://www.atlassian.com/blog/atlassian-engineering/scaling-jira-cloud-migrations-one-bottleneck-at-a-time",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-06T05:18:55Z",
+      "description": "\u003cp\u003eOver the past year, the Jira Migrations team has been on a remarkable journey \u0026#8211; one that has taken our...\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/atlassian-engineering/scaling-jira-cloud-migrations-one-bottleneck-at-a-time\"\u003eScaling Jira cloud Migrations, One Bottleneck at a Time\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Supercharge your Security Testing with Rovo Dev Skills",
+      "link": "https://www.atlassian.com/blog/developer/supercharge-your-security-with-rovo-dev-skills",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-06T04:32:01Z",
+      "description": "\u003cp\u003eHi! Giuliana and Sam from Atlassian’s Security Testing team here. The Security Testing team oversees all penetration testing at Atlassian...\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/developer/supercharge-your-security-with-rovo-dev-skills\"\u003eSupercharge your Security Testing with Rovo Dev Skills\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Codex Security: now in research preview ",
+      "link": "https://openai.com/index/codex-security-now-in-research-preview",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2026-03-06T10:00:00Z",
+      "description": "Codex Security is an AI application security agent that analyzes project context to detect, validate, and patch complex vulnerabilities with higher confidence and less noise."
+    },
+    {
+      "title": "How Descript enables multilingual video dubbing at scale",
+      "link": "https://openai.com/index/descript",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2026-03-06T10:00:00Z",
+      "description": "Descript uses OpenAI models to scale multilingual video dubbing, optimizing translations for both meaning and timing so dubbed speech sounds natural across languages."
+    },
+    {
+      "title": "How Balyasny Asset Management built an AI research engine for investing",
+      "link": "https://openai.com/index/balyasny-asset-management",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2026-03-06T07:00:00Z",
+      "description": "See how Balyasny built an AI research system with GPT-5.4, rigorous model evaluation, and agent workflows to transform investment analysis at scale."
+    },
+    {
+      "title": "From the endpoint to the prompt: a unified data security vision in Cloudflare One",
+      "link": "https://blog.cloudflare.com/unified-data-security/",
+      "source": "Cloudflare Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-06T14:00:00Z",
+      "description": " Cloudflare One unifies data security from endpoint to prompt: RDP clipboard controls, operation-mapped logs, on-device DLP, and Microsoft 365 Copilot scanning via API CASB. "
+    },
+    {
+      "title": "Celebrating Women in AI: 3 Questions with Cecilia Liu on Leading Docker’s MCP Strategy",
+      "link": "https://www.docker.com/blog/women-in-ai-cecilia-liu-docker-mcp-strategy/",
+      "source": "Docker Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-06T12:59:30Z",
+      "description": "To celebrate International Women’s Day, we sat down with Cecilia Liu, Senior Product Manager at Docker, for three questions about the vision and strategy behind Docker’s MCP solutions. From shaping product direction to driving AI innovation, Cecilia plays a key role in defining how Docker enables secure, scalable AI tooling. Cecilia leads product management for..."
+    },
+    {
+      "title": "Chrome Dev for Desktop Update",
+      "link": "http://chromereleases.googleblog.com/2026/03/chrome-dev-for-desktop-update.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2026-03-06T11:13:33.33-08:00",
+      "description": "\u003cp\u003eThe Dev channel has been updated to 147.0.7719.3 for Windows, Mac and Linux.\u003c/p\u003e\u003cp\u003eA partial list of changes is available in the \u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/147.0.7703.0..147.0.7719.3?pretty=fuller\u0026amp;n=10000\"\u003eGit log\u003c/a\u003e. Interested in \u003ca href=\"https://www.chromium.org/getting-involved/dev-channel/\"\u003eswitching\u003c/a\u003e release channels? Find out \u003ca href=\"https://www.chromium.org/getting-involved/dev-channel/\"\u003ehow\u003c/a\u003e. If you find a new issue, please let us know by \u003ca href=\"https://crbug.com/\"\u003efiling a bug\u003c/a\u003e. The \u003ca href=\"https://productforums.google.com/forum/#!forum/chrome\"\u003ecommunity help forum\u003c/a\u003e is also a great place to reach out for help or learn about common issues.\u003c/p\u003e\u003cp\u003eChrome Release Team\u003cbr /\u003e\u003ca href=\"https://www.google.com/chrome\"\u003e\u003c/a\u003e\u003ca href=\"https://www.google.com/chrome\"\u003eGoogle Chrome\u003c/a\u003e\u003c/p\u003e"
+    },
+    {
+      "title": "Chrome Dev for Android Update",
+      "link": "http://chromereleases.googleblog.com/2026/03/chrome-dev-for-android-update.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2026-03-06T06:28:33.047-08:00",
+      "description": "\u003cp\u003eHi everyone! We've just released Chrome Dev 147 (147.0.7719.2) for Android. It's now available on \u003ca href=\"https://play.google.com/store/apps/details?id=com.chrome.dev\"\u003eGoogle Play\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eYou can see a partial list of the changes in the \u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/147.0.7703.3..147.0.7719.2?pretty=fuller\u0026amp;n=10000\"\u003eGit log\u003c/a\u003e. For details on new features, check out the \u003ca href=\"https://blog.chromium.org\"\u003eChromium blog\u003c/a\u003e, and for details on web platform updates, check \u003ca href=\"https://www.chromestatus.com/features#milestone%3D147\"\u003ehere\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eIf you find a new issue, please let us know by \u003ca href=\"https://code.google.com/p/chromium/issues/entry?template=Android%20Issue\"\u003efiling a bug\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eChrome Release Team\u003cbr /\u003e\u003ca href=\"https://www.google.com/chrome\"\u003e\u003c/a\u003e\u003ca href=\"https://www.google.com/chrome\"\u003eGoogle Chrome\u003c/a\u003e\u003c/p\u003e"
+    },
+    {
+      "title": "Proton Mail이 FBI의 ‘Stop Cop City’ 시위자 신원 확인을 도운 사건",
+      "link": "https://news.hada.io/topic?id=27262",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-07T03:32:57+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e개인정보 보호 중심 이메일 서비스 Proton Mail\u003c/strong\u003e이 미국 FBI의 요청과 관련해 \u003cstrong\u003e스위스 정부에 결제 데이터를 제공\u003c/strong\u003e, 이를 통해 익명 시위자의 신원이 확인됨\u003c/li\u003e\n\u003cli\u003e법원 기록에 따르면 Proton Mail은 \u003cstrong\u003e‘Stop Cop City’ 운동 관련 계정의 결제 정보\u003c/strong\u003e를 스위...\u003c/p\u003e"
+    },
+    {
+      "title": "AI 보조 재작성으로 인한 재라이선스 문제",
+      "link": "https://news.hada.io/topic?id=27261",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-07T02:37:58+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e오픈소스 프로젝트 \u003cstrong\u003echardet v7.0.0\u003c/strong\u003e이 AI 도구를 이용해 전체 코드를 다시 작성하고 \u003cstrong\u003eLGPL에서 MIT로 라이선스를 변경\u003c/strong\u003e함\u003c/li\u003e\n\u003cli\u003e원 저자는 이 과정이 \u003cstrong\u003eGPL 위반 가능성\u003c/strong\u003e이 있다고 주장하며, AI가 원본 코드를 학습한 상태에서 생성한 결과물은 \u003cstrong\u003e‘클린...\u003c/p\u003e"
+    },
+    {
+      "title": "브랜드 시대",
+      "link": "https://news.hada.io/topic?id=27260",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-07T02:34:58+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e1970년대 \u003cstrong\u003e스위스 시계 산업\u003c/strong\u003e은 일본 경쟁, 환율 급등, 쿼츠 기술의 등장으로 붕괴 위기에 직면했으며, 일부 기업은 \u003cstrong\u003e정밀 기계 제조업체에서 럭셔리 브랜드\u003c/strong\u003e로 전환해 생존함\u003c/li\u003e\n\u003cli\u003e이 전환으로 시계의 가치는 \u003cstrong\u003e기술적 정확성\u003c/strong\u003e이 아니라 \u003cstrong\u003e브랜드와 상...\u003c/p\u003e"
+    },
+    {
+      "title": "Anthropic, 미 국방부로부터 공식적으로 공급망 위험으로 지정",
+      "link": "https://news.hada.io/topic?id=27259",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-07T00:33:07+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e미 국방부가 \u003cstrong\u003eAnthropic을 공급망 위험으로 공식 분류\u003c/strong\u003e하며, 인공지능 분야에서의 긴장 고조\u003c/li\u003e\n\u003cli\u003e이번 조치는 \u003cstrong\u003e국가 안보와 기술 의존성\u003c/strong\u003e에 대한 우려 속에서 이루어진 결정\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eAnthropic의 AI 기술과 관련된 공급망 관리\u003c/strong\u003e가 정부의 감시 대상에 포...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: start.spring.io를 VS Code 안에 넣었습니다",
+      "link": "https://news.hada.io/topic?id=27258",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-06T20:56:33+09:00",
+      "description": "\u003cp\u003e\u003cstrong\u003eSpring Boot 프로젝트 만들 때마다 브라우저 왔다갔다 하는 게 불편해서 만들었습니다.\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e기존 MS 공식 Extension은 Command Palette에서 옵션을 한 단계씩 선택하는 방식이라 이전 단계로 돌아갈 수 없고, 프로젝트 설정과 의존성을 동시에 보면서 조정할 수 없습니다.\u003c/p\u003e\n\u003cp\u003eSpring Forge는"
+    },
+    {
+      "title": "GitHub 이슈 제목으로 4,000대 개발자 머신이 감염된 사건",
+      "link": "https://news.hada.io/topic?id=27257",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-06T18:33:02+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eGitHub 이슈 제목에 삽입된 \u003cstrong\u003e프롬프트 인젝션\u003c/strong\u003e이 AI 봇을 통해 실행되며, 약 4,000대의 개발자 시스템이 감염됨\u003c/li\u003e\n\u003cli\u003e공격자는 Cline의 \u003cstrong\u003eAI 기반 이슈 분류 봇\u003c/strong\u003e을 이용해 명령을 주입하고, 이를 통해 \u003cstrong\u003enpm 토큰\u003c/strong\u003e을 탈취함\u003c/li\u003e\n\u003cli\u003e탈취된 자격 증명으로 \u003cst...\u003c/p\u003e"
+    },
+    {
+      "title": "좋은 소프트웨어는 멈출 때를 안다",
+      "link": "https://news.hada.io/topic?id=27256",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-06T17:33:09+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e소프트웨어의 본질적 역할\u003c/strong\u003e은 자신이 해결해야 할 문제를 명확히 알고, 그 한계를 인식하는 데 있음\u003c/li\u003e\n\u003cli\u003e글은 \u003cstrong\u003e기존 도구가 불필요하게 확장되는 현상\u003c/strong\u003e을 풍자하며, \u003ccode\u003els\u003c/code\u003e 명령어가 AI 기능으로 대체되는 가상의 사례를 제시\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e좋은 소프트웨어...\u003c/p\u003e"
+    },
+    {
+      "title": "Python 'requests' API 설계 철학에서 배우는 인간관계와 결혼 생활의 원칙 (Kenneth Reitz)",
+      "link": "https://news.hada.io/topic?id=27254",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-06T17:05:47+09:00",
+      "description": "\u003ch4\u003e핵심 요약\u003c/h4\u003e\n\u003cp\u003ePython의 대표적인 HTTP 라이브러리 \u003ccode\u003erequests\u003c/code\u003e의 창시자 Kenneth Reitz가 API 설계 철학과 오픈소스 프로젝트 유지보수 경험을 결혼 생활에 빗대어 통찰한 에세이입니다. '개발자를 위한 직관적인 인터페이스(API for Humans)', '합리적인 기본값(Sensible Defaults)', '하위 호환성 ...\u003c/p\u003e"
+    },
+    {
+      "title": "Firefox 충돌의 10%는 비트 플립(bit-flip)으로 인한 하드웨어 결함 때문",
+      "link": "https://news.hada.io/topic?id=27251",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-06T15:33:41+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eFirefox 충돌 보고서 분석 결과, \u003cstrong\u003e비트 플립으로 인한 하드웨어 오류\u003c/strong\u003e가 전체 충돌의 상당 부분을 차지함\u003c/li\u003e\n\u003cli\u003e최근 일주일간 약 \u003cstrong\u003e47만 건의 충돌 보고서 중 2만5천 건\u003c/strong\u003e이 비트 플립 가능성이 있는 사례로 탐지됨\u003c/li\u003e\n\u003cli\u003e소프트웨어 버그가 아닌 \u003cstrong\u003e하드웨어 결함이 ...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: 코스피 상승장에 숟가락 얹기 - 증권사 수수료/이벤트 비교 \u0026amp; 공모주 사이트",
+      "link": "https://news.hada.io/topic?id=27250",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-06T15:18:42+09:00",
+      "description": "\u003cp\u003e안녕하세요. 최근 잠시 주춤하기는 했지만\u003cbr /\u003e\n삼전/하닉이 엄청 오르길래 주식에 관심을 갖게 되어 흩어져 있는 증권사 기본 정보들을 보기 편하게 모아본 사이트를 공유합니다.\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e증권사별 수수료 및 이벤트 비교\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003e증권사마다 다르고 찾기 번거로운 수수료 정보와 계좌 이벤트를 한곳에 "
+    },
+    {
+      "title": "엔비디아 CEO 젠슨 황, OpenAI와 Anthropic 투자 축소 발표",
+      "link": "https://news.hada.io/topic?id=27249",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-06T13:47:40+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e엔비디아는 \u003cstrong\u003eOpenAI와 Anthropic에 대한 최근 투자가 마지막이 될 것\u003c/strong\u003e이라고 밝혔으며, 두 회사의 \u003cstrong\u003e상장 이후 추가 투자 계획은 없다고 명시\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e황은 투자 축소 이유로 \u003cstrong\u003e상장 이후 투자 기회가 닫히기 때문\u003c/strong\u003e이라고 설명했지만, \u003cstrong\u003e이 설명이 충분하...\u003c/p\u003e"
+    },
+    {
+      "title": "Nvidia PersonaPlex 7B on Apple Silicon: Swift 기반 실시간 양방향 음성 대화 모델",
+      "link": "https://news.hada.io/topic?id=27248",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-06T13:46:31+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eApple Silicon\u003c/strong\u003e에서 \u003cstrong\u003eSwift/MLX\u003c/strong\u003e로 구현된 \u003cstrong\u003ePersonaPlex 7B\u003c/strong\u003e 모델이 \u003cstrong\u003e실시간 양방향 음성 대화\u003c/strong\u003e를 지원함\u003c/li\u003e\n\u003cli\u003e기존의 \u003cstrong\u003eASR→LLM→TTS\u003c/strong\u003e 3단계 음성 파이프라인을 하나의 모델로 통합해, \u003cstrong\u003e텍스트 변환 없이 오디오 입...\u003c/p\u003e"
+    },
+    {
+      "title": "Cluely CEO Roy Lee, 작년 매출 수치를 공개적으로 거짓 발표했음을 인정",
+      "link": "https://news.hada.io/topic?id=27247",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-06T13:27:17+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eAI 치팅 도구로 화제를 모은 스타트업 \u003cstrong\u003eCluely\u003c/strong\u003e의 CEO Roy Lee가 2025년 여름 TechCrunch에 공유한 \u003cstrong\u003e연간 반복 매출(ARR) 700만 달러\u003c/strong\u003e가 거짓이었음을 X를 통해 공식 인정\u003c/li\u003e\n\u003cli\u003e실제 당시 매출은 소비자 ARR 270만 달러, 기업 ARR 250만 달러로 \u003cstrong\u003e총 ARR 520만 달러, ...\u003c/p\u003e"
+    },
+    {
+      "title": "AI 에이전트를 위해선 CLI를 다시 작성해야 합니다",
+      "link": "https://news.hada.io/topic?id=27246",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-06T13:03:11+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e사람 중심 CLI와 \u003cstrong\u003eAI 에이전트 중심 CLI\u003c/strong\u003e는 설계 목표가 근본적으로 다르며, 기존 CLI를 에이전트용으로 개조하는 것은 비효율적\u003c/li\u003e\n\u003cli\u003e에이전트는 GUI가 아닌 \u003cstrong\u003e결정론적이고 기계 판독 가능한 출력\u003c/strong\u003e, 런타임에서 조회 가능한 자기 기술 스키마, 할루시네이션 방어 장치가 필...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: Calto - 메모처럼 쓰면 줄 단위로 계산되는 노트 계산기",
+      "link": "https://news.hada.io/topic?id=27245",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-06T12:44:25+09:00",
+      "description": "\u003cp\u003e안녕하세요. macOS에선 Numi를 잘 쓰고 있는데, 모바일에선 마땅한 게 없어서 직접 만들어봤습니다.\u003c/p\u003e\n\u003cp\u003e메모장처럼 텍스트를 입력하면 각 줄의 결과를 오른쪽에 바로 보여주는 계산기 앱입니다.\u003c/p\u003e\n\u003chr /\u003e\n\u003cp\u003e커피 = 4500\u003cbr /\u003e\n점심 = 12000\u003cbr /\u003e\n하루식비 = 커피 + 점심       → 16,500\u003cbr /\u003e\n한달 = 하루식"
+    },
+    {
+      "title": "폴 그레이엄의 \u0026quot;브랜드 시대 (The Brand Age)\u0026quot; ",
+      "link": "https://news.hada.io/topic?id=27244",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-06T12:34:11+09:00",
+      "description": "\u003cp\u003e폴 그레이엄이 스위스 시계 산업의 역사를 통해 \u003cstrong\u003e\u0026quot;브랜드 시대\u0026quot;\u003c/strong\u003e 라는 현상을 분석한 에세이입니다.\u003c/p\u003e\n\u003chr /\u003e\n\u003ch4\u003e1. 황금기 (1945~1970): 성능이 전부였던 시대\u003c/h4\u003e\n\u003cp\u003e스위스 시계 산업의 황금기는 \u003cstrong\u003e얼마나 얇고 정확한가\u003c/strong\u003e가 유일한 경쟁 기준이었습니다. 파텍 필립·바�"
+    },
+    {
+      "title": "미국 세관국경보호청(CBP), 온라인 광고 생태계를 활용해 사람들의 이동 경로 추적",
+      "link": "https://news.hada.io/topic?id=27243",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-06T12:32:58+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eCBP가 온라인 광고 산업의 위치 데이터\u003c/strong\u003e를 구매해 개인의 이동을 추적한 사실이 내부 국토안보부(DHS) 문서를 통해 확인됨\u003c/li\u003e\n\u003cli\u003e이 데이터는 \u003cstrong\u003e게임, 데이팅 앱, 피트니스 트래커 등 일반 앱\u003c/strong\u003e에서 수집된 정보로, 사용자의 세부 위치 변화를 장기간 파악할 수 있음\u003c/li\u003e\n\u003cl...\u003c/p\u003e"
+    },
+    {
+      "title": "Paperclip - 인간 개입 없는 회사 만들기",
+      "link": "https://news.hada.io/topic?id=27242",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-06T12:07:50+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eAI 에이전트 팀이 자율적으로 회사를 운영\u003c/strong\u003e하도록 설계된 오픈소스 오케스트레이션 도구\u003c/li\u003e\n\u003cli\u003e여러 AI 에이전트를 \u003cstrong\u003e조직도, 예산, 목표, 거버넌스 체계\u003c/strong\u003e로 통합 관리\n\u003cul\u003e\n\u003cli\u003eOpenClaw, Claude Code, Codex 등 다양한 에이전트를 직원으로 운용\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cs...\u003c/p\u003e"
+    },
+    {
+      "title": "인재에 돈을 가장 많이 쓰는 나라가 인재 전쟁에서 지고 있다",
+      "link": "https://news.hada.io/topic?id=27241",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-06T12:05:55+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e글로벌 AI·과학 인재 전쟁은 \u003cstrong\u003e돈보다 ‘어떤 환경과 기회를 제공하느냐’가 승패를 좌우\u003c/strong\u003e하고 있음.\u003c/li\u003e\n\u003cli\u003e미국의 \u003cstrong\u003eH-1B 비자 정치화와 연구비 삭감\u003c/strong\u003e이 글로벌 과학자 이동을 촉발함.\u003c/li\u003e\n\u003cli\u003e프랑스는 \u003cstrong\u003e“Choose France for Science”\u003c/strong\u003e 등으로 학문의 자유·�...\u003c/p\u003e"
+    },
+    {
+      "title": "Grep은 죽었다: Claude Code가 기억하게 만드는 방법",
+      "link": "https://news.hada.io/topic?id=27239",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-06T10:45:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e클로드 코드의 \u003cstrong\u003e세션 간 컨텍스트 유실 문제\u003c/strong\u003e를 해결하기 위해 로컬 검색 엔진 QMD와 /recall 스킬을 결합한 메모리 시스템 구축\u003c/li\u003e\n\u003cli\u003eQMD는 Obsidian 볼트를 인덱싱하는 \u003cstrong\u003e로컬 검색 엔진\u003c/strong\u003e으로, BM25·시맨틱·하이브리드 세 가지 검색 모드 지원\u003c/li\u003e\n\u003cli\u003e/recall 스킬은 시간...\u003c/p\u003e"
+    },
+    {
+      "title": "구글 Chrome, 2026년 9월부터 2주 출시 주기로 전환",
+      "link": "https://news.hada.io/topic?id=27238",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-06T10:02:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e2021년 6주에서 4주로 단축했던 크롬 출시 주기가 \u003cstrong\u003e2026년 9월부터 2주 주기\u003c/strong\u003e로 다시 한 번 빨라짐\u003c/li\u003e\n\u003cli\u003e웹 플랫폼이 지속적으로 발전하는 상황에서 \u003cstrong\u003e최신 성능 개선사항, 수정사항, 새로운 기능을 즉시 이용\u003c/strong\u003e할 수 있도록 하는 것이 목표\u003c/li\u003e\n\u003cli\u003e출시 빈도는 높아지지만 ...\u003c/p\u003e"
+    },
+    {
+      "title": "이 프로젝트를 재라이선스할 권리가 없음",
+      "link": "https://news.hada.io/topic?id=27236",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-06T09:46:37+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003ccode\u003echardet\u003c/code\u003e의 원 저자인 \u003cstrong\u003eMark Pilgrim\u003c/strong\u003e이 프로젝트의 \u003cstrong\u003eLGPL 라이선스 위반\u003c/strong\u003e을 지적하며, 최근 버전 7.0.0의 \u003cstrong\u003eMIT 라이선스 전환\u003c/strong\u003e을 철회할 것을 요구함\u003c/li\u003e\n\u003cli\u003e그는 유지보수자들이 “완전한 재작성”이라 주장하더라도, 원본 코드에 \u003cstrong\u003e직접...\u003c/p\u003e"
+    },
+    {
+      "title": "LLM의 L은 \u0026quot;거짓말(Lying)\u0026quot;을 의미한다",
+      "link": "https://news.hada.io/topic?id=27235",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-06T09:43:37+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eLLM 기반 코딩 도구들의 과대 광고에도 불구하고, 실제 소프트웨어 개발 결과물의 품질은 크게 나아지지 않았으며 오히려 \u003cstrong\u003e위조(forgery)\u003c/strong\u003e 에 가까운 산출물이 범람하고 있음\u003c/li\u003e\n\u003cli\u003eLLM이 하는 일의 본질은 개인이 자신 또는 타인의 \u003cstrong\u003e잠재적 산출물을 모방\u003c/strong\u003e하여 더 빠르게 만...\u003c/p\u003e"
+    },
+    {
+      "title": "미 연방 판사, 정부에 1,300억 달러 이상의 관세 환급 개시 명령",
+      "link": "https://news.hada.io/topic?id=27234",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-06T09:40:36+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e연방무역법원 판사가 트럼프 행정부에 대해 \u003cstrong\u003e대법원이 무효화한 글로벌 관세\u003c/strong\u003e로 징수된 1,300억 달러 이상의 환급 절차를 즉시 개시하라고 명령\u003c/li\u003e\n\u003cli\u003eCostco, FedEx, Pandora 등 대기업을 포함해 \u003cstrong\u003e2,000건 이상의 환급 소송\u003c/strong\u003e이 제기된 상태\u003c/li\u003e\n\u003cli\u003e행정부는 즉시 효력 발생...\u003c/p\u003e"
+    },
+    {
+      "title": "위키백과, 관리자 계정 대량 유출로 읽기 전용 모드 전환되었다가 복구",
+      "link": "https://news.hada.io/topic?id=27233",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-06T09:37:36+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e위키미디어 재단의 \u003cstrong\u003e상태 페이지\u003c/strong\u003e에 따르면, 2026년 3월 5일 위키백과를 포함한 여러 \u003cstrong\u003e위키 서비스가 일시적으로 읽기 전용 모드\u003c/strong\u003e로 전환됨\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e위키 접근 장애\u003c/strong\u003e로 시작되어, 이후 \u003cstrong\u003e수정 기능이 제한\u003c/strong\u003e되는 단계로 이어짐\u003c/li\u003e\n\u003cli\u003e원인은 ...\u003c/p\u003e"
+    },
+    {
+      "title": "mogcli - Microsoft 365용 에이전트 친화적 CLI",
+      "link": "https://news.hada.io/topic?id=27232",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-06T09:31:02+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eMicrosoft Graph API\u003c/strong\u003e 기반으로 개인/기업용 계정을 지원하는 \u003cstrong\u003e비공식 CLI 도구\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eMail, Calendar, Contacts, Groups, Tasks, OneDrive\u003c/strong\u003e 등 주요 워크로드 제어 명령 제공\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e스크립트 자동화\u003c/strong\u003e와 \u003cstrong\u003e대화형 인증 마법사...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: wireguard-macos - Mac Mini용 VPN 서버 자동 구축",
+      "link": "https://news.hada.io/topic?id=27231",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-06T09:09:57+09:00",
+      "description": "\u003cp\u003e요즘 오픈클로의 맥미니 열풍으로 인해 맥미니 수요가 급증중. 동시에 오픈클로 말고 맥미니로 할 수 있는거 없는지 찾아보는 사람들도 많아짐. 이에 따라 VPN 서버를 직접 구축하고자 하는 사람들도 늘어남.\u003c/p\u003e\n\u003cp\u003e실제로 집에서 VPN 서버를 생성하는건 꽤 가성비가 좋은 일임.\u003c/p\u003e\n\u003cp\u003eVPS는 한 달에 네트워크 비용"
+    },
+    {
+      "title": "GPT‑5.4 공개",
+      "link": "https://news.hada.io/topic?id=27230",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-06T08:48:50+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eChatGPT, API, Codex 전반에 적용되는 최신 \u003cstrong\u003e프런티어 모델\u003c/strong\u003e로, 추론·코딩·에이전트 워크플로우 성능을 통합\u003c/li\u003e\n\u003cli\u003e네이티브 컴퓨터 사용(computer-use) 기능을 내장하여, 에이전트가 웹사이트와 소프트웨어를 직접 조작하며 복잡한 워크플로우를 수행 가능\u003c/li\u003e\n\u003cli\u003e최대 \u003cstrong\u003e1M 토큰 컨...\u003c/p\u003e"
+    },
+    {
+      "title": "How our open-source AI model SpeciesNet is helping to promote wildlife conservation",
+      "link": "https://blog.google/company-news/outreach-and-initiatives/sustainability/speciesnet-open-source-ai-wildlife/",
+      "source": "AI",
+      "category": "tech",
+      "publishedAt": "2026-03-06T18:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/specieshero_v2.max-600x600.format-webp.webp\"\u003eAn overview of SpeciesNet, our open-source AI model that is helping people around the world protect and conserve wildlife."
+    },
+    {
+      "title": "How our open-source AI model SpeciesNet is helping to promote wildlife conservation",
+      "link": "https://blog.google/company-news/outreach-and-initiatives/sustainability/speciesnet-open-source-ai-wildlife/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-06T18:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/specieshero_v2.max-600x600.format-webp.webp\"\u003eAn overview of SpeciesNet, our open-source AI model that is helping people around the world protect and conserve wildlife."
+    },
+    {
+      "title": "Play AI-based games in our I/O Save the date",
+      "link": "https://blog.google/innovation-and-ai/technology/developers-tools/io-save-the-date-2026-gemini/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-06T16:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/5GeminigamesI_O2026_Social.max-600x600.format-webp.webp\"\u003eFor this year’s I/O Save the date, we’re showing how anyone can build incredible games with help from Gemini."
+    },
+    {
+      "title": "Java Annotated Monthly – March 2026",
+      "link": "https://blog.jetbrains.com/idea/2026/03/java-annotated-monthly-march-2026/",
+      "source": "IntelliJ IDEA : IntelliJ IDEA – the IDE for Professional Development in Java and Kotlin | The JetBrains Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-06T08:20:42Z",
+      "description": "A lot is happening in tech and beyond, and as we step into March, we have pulled together a fresh batch of articles, thought pieces, and videos to help you learn, connect, and see things from new angles.\u0026#160; This edition shines with Holly Cummins, whose sharp voice and sharp finds on Java bring both insight [\u0026#8230;]"
+    },
+    {
+      "title": "A workflow driven web framework for Clojure",
+      "link": "https://mycelium-clj.github.io/docs/guestbook.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-06T22:01:51Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://mycelium-clj.github.io/docs/guestbook.html\"\u003ehttps://mycelium-clj.github.io/docs/guestbook.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47281684\"\u003ehttps://news.ycombinator.com/item?id=47281684\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: An AI-powered digital night vision system with drone video feed",
+      "link": "https://www.indiegogo.com/en/projects/atx-system/atx-shadow-x1-professional-ai-night-vision",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-06T22:01:26Z",
+      "description": "\n\u003cp\u003eHi HN,\u003cp\u003eWe are working on a civilian AI night vision system.\u003cp\u003eIt’s a rugged digital night vision device that uses AI image enhancement to improve visibility in low-light environments.\u003cp\u003eOne feature we are experimenting with is connecting it with a drone so the drone’s camera feed can be transmitted directly into the night vision device.\u003cp\u003eThe idea is to extend situational awareness at night without using traditional analog night vision.\u003cp\u003eWe are preparing a crowdfunding campaign and would really appreciate feedback from the community.\u003cp\u003eWhat features would you consider most useful in a system like this?\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47281681\"\u003ehttps://news.ycombinator.com/item?id=47281681\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Start-Stop Problem",
+      "link": "https://kramkarthik.com/the-start-stop-problem/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-06T22:01:16Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://kramkarthik.com/the-start-stop-problem/\"\u003ehttps://kramkarthik.com/the-start-stop-problem/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47281678\"\u003ehttps://news.ycombinator.com/item?id=47281678\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Trump makes questionable comments about young girls in 1992 video (2016)",
+      "link": "https://www.youtube.com/watch?v=yRAPLodRnd4",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-06T22:00:09Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.youtube.com/watch?v=yRAPLodRnd4\"\u003ehttps://www.youtube.com/watch?v=yRAPLodRnd4\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47281670\"\u003ehttps://news.ycombinator.com/item?id=47281670\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: PlateSpinner – A Kanban board that orchestrates AI coding agents",
+      "link": "https://github.com/moridinamael/platespinner",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-06T21:57:55Z",
+      "description": "\n\u003cp\u003ePlateSpinner is a local web app that manages AI coding agents through a kanban board. You point it at a project directory, describe what you want, and it spawns headless Claude Code / Codex / Gemini sessions to generate tasks, plan implementations, and write code.\u003cp\u003eThe workflow is: Propose → Plan → Execute. Generation and planning run in read-only mode. Execution gets full write access, creates branches, commits changes, and captures diffs for review. There's also an \"autoclicker\" mode where an AI judge continuously decides what to do next, propose, plan, or execute, so you can just watch.\u003cp\u003eBuilt with React + Express + WebSocket. It doesn't call any cloud APIs directly — it shells out to the CLI tools the same way you would from a terminal.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47281650\"\u003ehttps://news.ycombinator.com/item?id=47281650\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "AI startup sues ex-CEO, saying he took 41GB of email and lied on Résumé",
+      "link": "https://arstechnica.com/tech-policy/2026/03/ai-startup-sues-ex-ceo-saying-he-took-41gb-of-email-and-lied-on-resume/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-06T21:56:10Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://arstechnica.com/tech-policy/2026/03/ai-startup-sues-ex-ceo-saying-he-took-41gb-of-email-and-lied-on-resume/\"\u003ehttps://arstechnica.com/tech-policy/2026/03/ai-startup-sues-ex-ceo-saying-he-took-41gb-of-email-and-lied-on-resume/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47281630\"\u003ehttps://news.ycombinator.com/item?id=47281630\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Technical Beauty: FreeBSD Jails",
+      "link": "https://vivianvoss.net/blog/technical-beauty-jails",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-06T21:54:47Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://vivianvoss.net/blog/technical-beauty-jails\"\u003ehttps://vivianvoss.net/blog/technical-beauty-jails\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47281614\"\u003ehttps://news.ycombinator.com/item?id=47281614\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "CSS Proves Me Human",
+      "link": "https://will-keleher.com/posts/this-css-makes-me-human/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-06T21:52:44Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://will-keleher.com/posts/this-css-makes-me-human/\"\u003ehttps://will-keleher.com/posts/this-css-makes-me-human/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47281593\"\u003ehttps://news.ycombinator.com/item?id=47281593\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "UK Gambling Commission explores how to keep bettors on licensed sites",
+      "link": "https://www.coindesk.com/policy/2026/02/27/uk-s-gambling-watchdog-explores-allowing-gamblers-to-pay-bets-with-crypto",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-06T21:50:23Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.coindesk.com/policy/2026/02/27/uk-s-gambling-watchdog-explores-allowing-gamblers-to-pay-bets-with-crypto\"\u003ehttps://www.coindesk.com/policy/2026/02/27/uk-s-gambling-watchdog-explores-allowing-gamblers-to-pay-bets-with-crypto\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47281559\"\u003ehttps://news.ycombinator.com/item?id=47281559\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "An IRC bot spawned the most prolific software [video]",
+      "link": "https://www.youtube.com/watch?v=ohzzGy5K9Dk",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-06T21:48:40Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.youtube.com/watch?v=ohzzGy5K9Dk\"\u003ehttps://www.youtube.com/watch?v=ohzzGy5K9Dk\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47281542\"\u003ehttps://news.ycombinator.com/item?id=47281542\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Auto-Co – 14 AI agents that run a startup autonomously (open source)",
+      "link": "https://github.com/NikitaDmitrieff/auto-co-meta",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-06T21:48:28Z",
+      "description": "\n\u003cp\u003eAuto-Co is an autonomous AI company OS — not a framework you build on, but a running system with an opinionated structure.\u003cp\u003eArchitecture:\n- 14 agents with expert personas (CEO/Bezos, CTO/Vogels, CFO/Campbell, Critic/Munger...)\n- Bash loop + Claude Code CLI — no custom inference, no vector stores\n- Shared markdown consensus file as the cross-cycle relay baton\n- Human escalation via Telegram for true blockers only (2 escalations in 12 cycles)\n- Every cycle must produce artifacts: code, deployments, docs\u003cp\u003eThe repo IS the live company. It built its own landing page, README, Docker stack, GitHub release, and community posts — all autonomously across 12 cycles of self-improvement.\u003cp\u003eWhat makes it different from AutoGen/CrewAI/LangGraph: those are building blocks. Auto-Co is the building. The decision hierarchy, safety guardrails, and convergence rules are baked in. You give it a mission and a Claude API key; it runs.\u003cp\u003eThe Critic agent (Munger persona) has been the most valuable: it runs a pre-mortem before every major decision and has killed several bad ideas before they got built.\u003cp\u003eStack: Bash + claude CLI + Node.js + Next.js + Railway + Supabase. Deliberately boring.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47281538\"\u003ehttps://news.ycombinator.com/item?id=47281538\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Aldous Huxley on the Power of Technology (1961) [video]",
+      "link": "https://www.youtube.com/watch?v=ZCOGFSwrGNc",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-06T21:48:07Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.youtube.com/watch?v=ZCOGFSwrGNc\"\u003ehttps://www.youtube.com/watch?v=ZCOGFSwrGNc\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47281534\"\u003ehttps://news.ycombinator.com/item?id=47281534\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Countries moving to ban social media for children",
+      "link": "https://techcrunch.com/2026/03/06/social-media-ban-children-countries-list/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-06T21:46:51Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://techcrunch.com/2026/03/06/social-media-ban-children-countries-list/\"\u003ehttps://techcrunch.com/2026/03/06/social-media-ban-children-countries-list/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47281519\"\u003ehttps://news.ycombinator.com/item?id=47281519\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "White Collar Goes Blue",
+      "link": "https://www.workingtheorys.com/p/white-collar",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-06T21:44:46Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.workingtheorys.com/p/white-collar\"\u003ehttps://www.workingtheorys.com/p/white-collar\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47281503\"\u003ehttps://news.ycombinator.com/item?id=47281503\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Research Shows Models Know Answers Before Finishing Chain-of-Thought Reasoning",
+      "link": "https://www.simplenews.ai/news/research-shows-models-already-know-answers-before-finishing-chain-of-thought-reasoning-kmmd",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-06T21:43:56Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.simplenews.ai/news/research-shows-models-already-know-answers-before-finishing-chain-of-thought-reasoning-kmmd\"\u003ehttps://www.simplenews.ai/news/research-shows-models-already-know-answers-before-finishing-chain-of-thought-reasoning-kmmd\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47281492\"\u003ehttps://news.ycombinator.com/item?id=47281492\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Open-source LLM router with Thompson Sampling and energy-aware routing",
+      "link": "https://github.com/beee003/astrai-router",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-06T21:43:46Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/beee003/astrai-router\"\u003ehttps://github.com/beee003/astrai-router\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47281486\"\u003ehttps://news.ycombinator.com/item?id=47281486\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Art Bits from Apple Macintosh HyperCard",
+      "link": "https://archives.somnolescent.net/web/mari_v2/junk/hypercard/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-06T21:43:39Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://archives.somnolescent.net/web/mari_v2/junk/hypercard/\"\u003ehttps://archives.somnolescent.net/web/mari_v2/junk/hypercard/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47281485\"\u003ehttps://news.ycombinator.com/item?id=47281485\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Aigate – An OS-level sandbox for AI coding agents (Claude, Cursor)",
+      "link": "https://github.com/AxeForging/aigate",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-06T21:43:19Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/AxeForging/aigate\"\u003ehttps://github.com/AxeForging/aigate\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47281482\"\u003ehttps://news.ycombinator.com/item?id=47281482\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Fed clarifies capital rules for tokenized securities",
+      "link": "https://www.theblock.co/post/392506/fed-clarifies-rules-tokenized-securities-framework-technology-neutral",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-06T21:42:22Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.theblock.co/post/392506/fed-clarifies-rules-tokenized-securities-framework-technology-neutral\"\u003ehttps://www.theblock.co/post/392506/fed-clarifies-rules-tokenized-securities-framework-technology-neutral\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47281463\"\u003ehttps://news.ycombinator.com/item?id=47281463\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "What if AI just makes us work harder?",
+      "link": "https://www.ft.com/content/e8bb5ab1-4b4d-473e-8f76-e690443e9fb4",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-06T21:39:55Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.ft.com/content/e8bb5ab1-4b4d-473e-8f76-e690443e9fb4\"\u003ehttps://www.ft.com/content/e8bb5ab1-4b4d-473e-8f76-e690443e9fb4\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47281443\"\u003ehttps://news.ycombinator.com/item?id=47281443\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 5\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    }
+  ],
+  "generatedAt": "2026-03-07T07:13:14.283804912+09:00"
+}
