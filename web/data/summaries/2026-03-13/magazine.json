@@ -1,0 +1,561 @@
+{
+  "date": "2026-03-13",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2026년 3월 13일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** Perplexity의 하드웨어 진출과 즉각적인 해킹 논란이 AI 폼팩터의 취약성을 드러낸 가운데, Apple은 50주년을 맞이하며 기술 생태계의 과거와 미래를 조명하고 있습니다. 온디바이스 AI와 에이전트 기술의 경량화·독립화 트렌드가 뚜렷합니다.\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### Perplexity 'Personal Computer' 전격 공개, 그러나 하루 만에 뚫린 보안\nAI 검색의 선두주자 Perplexity가 자체 하드웨어인 'Personal Computer'를 공개하며 디바이스 시장에 출사표를 던졌습니다. 하지만 출시 직후 한 해커가 기기를 해킹하여 무제한 'Claude Code' 접근 권한을 탈취하는 사건이 발생했습니다. \n이는 AI 기업들이 전용 하드웨어를 통해 서비스 락인(Lock-in)을 시도하고 있으나, 기기 내부에 하드코딩된 API 키나 권한 인증 구조가 얼마나 취약할 수 있는지를 극명하게 보여줍니다. AI 폼팩터 혁신이라는 야심 찬 행보 이면에, 엔드포인트 보안이라는 거대한 숙제가 남겨졌습니다.\n\u003e **Key Point:** AI 전용 기기의 등장은 필연적이나, 클라우드 기반 AI 모델과 로컬 하드웨어 간의 권한 증명(Auth) 아키텍처가 근본적으로 재설계되어야 함을 시사합니다. [^15] [^50]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. Apple, 'Think Different' 50주년 기념\n- **What:** 애플이 창립 50주년을 맞이하여 '다르게 생각하라(Think Different)' 철학의 반세기를 기념하는 대대적인 캠페인과 비전을 발표했습니다.\n- **Why:** 개인용 컴퓨터의 대중화부터 스마트폰 혁명, 그리고 최근의 공간 컴퓨팅(Vision Pro)과 온디바이스 AI(Apple Intelligence)에 이르기까지 기술의 변곡점을 주도해 온 역사를 강조하기 위함입니다.\n- **Impact:** 하드웨어와 소프트웨어의 완벽한 통합이라는 애플의 기조는 향후 AI 시대에도 강력한 무기가 될 것이며, 최근 리뷰어 존 그루버가 극찬한 '맥북 Neo' 등의 폼팩터 혁신으로 계속 이어질 전망입니다. [^1] [^23]\n\n### 2. NVIDIA AI-Q, DeepResearch 벤치마크 1위 달성\n- **What:** 엔비디아의 AI-Q 모델이 복잡한 추론과 연구 능력을 평가하는 DeepResearch Bench I \u0026 II에서 1위를 차지했습니다.\n- **Why:** 엔비디아는 더 이상 단순한 GPU 제조사가 아닙니다. 하드웨어 인프라를 넘어, 그 위에서 구동되는 최상위 티어의 추론(Reasoning) 모델까지 직접 장악하려는 풀스택 전략의 일환입니다.\n- **Impact:** OpenAI, Google 등 기존 AI 모델 명가들을 위협하는 결과로, 엔비디아 생태계(Omniverse, 로보틱스 등) 내에서 자체 모델의 활용도가 극대화될 것입니다. [^5]\n\n### 3. 1비트 LLM과 로컬 AI의 비약적 발전\n- **What:** 1비트 LLM을 위한 추론 프레임워크 'BitNet'이 주목받는 가운데, MLC-LLM을 활용해 iOS 기기에서 최신 모델인 Gemma 3를 로컬로 구동하는 방법이 공유되었습니다.\n- **Why:** 클라우드 API 비용과 지연 시간(Latency), 프라이버시 문제를 해결하기 위해 모델의 가중치를 극단적으로 압축(1-bit)하거나 모바일 NPU/GPU에 최적화하려는 수요가 폭발하고 있습니다.\n- **Impact:** 초경량화 기술의 발전으로 스마트폰이 독립적인 고성능 AI 에이전트로 진화하고 있으며, 이는 클라우드 의존도를 크게 낮출 것입니다. [^9] [^16]\n\n### 4. 엔터프라이즈 AI 에이전트: 종속성(Lock-in) 탈피 전략\n- **What:** Docker가 기업들의 AI 에이전트 도입 전략이 특정 벤더 종속을 피하고 '유연성(Flexibility)'을 확보하는 방향으로 이동하고 있다고 분석했습니다.\n- **Why:** 단일 AI 제공업체에 의존할 경우 비용 통제가 어렵고, 기술 발전 속도를 따라가지 못할 리스크가 크기 때문입니다.\n- **Impact:** 컨테이너 기술처럼 AI 에이전트 역시 표준화되고 이식 가능한 형태로 개발될 것이며, 멀티 모델/멀티 에이전트 오케스트레이션 도구의 중요성이 급증할 것입니다. [^6]\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **VS Code 1.112 Insiders** | 최신 기능이 사전 탑재된 VS Code의 새로운 인사이더 빌드 업데이트 [^4] |\n| **Tool** | **AutoKernel** | 복잡한 GPU 커널 최적화 연구를 자동으로 수행해주는 혁신적인 시스템 [^20] |\n| **Tool** | **ralph-loop** | 개발 업무 자동화를 위해 설계된 장시간 실행형(Long-running) AI 에이전트 루프 [^27] |\n| **Tool** | **deff** | 터미널 환경에서 직관적으로 코드 변경 사항을 확인할 수 있는 인터랙티브 git diff TUI 뷰어 [^33] |\n| **Tool** | **ZeroClaw** | 5MB 이하의 RAM과 10ms의 시작 시간을 자랑하는 Rust 기반 초경량 AI 에이전트 런타임 [^34] |\n| **Tool** | **FlowViz** | 로그인 없이 무료로 사용할 수 있는 웹 기반 Mermaid 다이어그램 에디터 [^59] |\n| **Tool** | **Copilot CLI Orchestrator** | Copilot CLI의 실행을 검증하고 비용을 추적할 수 있는 오케스트레이션 도구 [^63] |\n| **Tool** | **Claude Code Agent Registry** | 스킬을 갖춘 공유 가능한 Claude Code 에이전트를 구축하고 배포하는 방법 [^68] |\n| **Repo** | **Perlsky** | AT Protocol 기반의 개인 데이터 서버(PDS)를 Perl 5로 구현한 흥미로운 프로젝트 [^69] |\n| **Code** | **Diels-grabsch2 (2019)** | 자기 자신의 해시값을 계산해내는 기발한 구조의 Self Hashing C 프로그램 (IOCCC) [^53] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n\n#### 🤖 AI \u0026 데이터\n* **GitHub의 접근성 AI**: GitHub Copilot이 사용자 피드백을 바탕으로 접근성을 지속적으로 개선하는 AI 파이프라인을 구축했습니다. [^2] [^46]\n* **AI 면접관의 등장**: 사람이 아닌 AI 봇에게 직접 채용 면접을 받은 개발자의 생생한 후기가 화제입니다. [^11]\n* **도메인 특화 AI의 한계**: 부동산 도메인 AI를 직접 구축하며 겪은 다양한 LLM 모델별 성능과 특징 차이 분석기입니다. [^18]\n* **맥킨지 AI 해킹**: 글로벌 컨설팅 펌 맥킨지의 내부 AI 플랫폼이 어떻게 해킹되었는지 분석한 포스트모텀입니다. [^22]\n* **에이전트 시대의 방어 전략**: AI 에이전트가 보편화되더라도 '네트워크 효과'라는 전통적 해자는 여전히 유효하다는 분석입니다. [^28]\n* **Platform 37 \u0026 AI Exchange**: Google DeepMind가 영국에 AI 혁신과 발견을 위한 새로운 연구 공간을 오픈했습니다. [^37] [^43]\n* **호주 심장 건강 AI**: Google AI가 호주 농촌 지역 주민들의 심장 건강을 예측하고 개선하는 데 활용되고 있습니다. [^39] [^40]\n* **자연재해 예측 AI**: Gemini를 활용해 지역 사회의 자연재해를 더 정확히 예측하는 'Groundsource' 프로젝트가 공개되었습니다. [^41]\n* **Gemini 품은 Google Maps**: Google Maps가 Gemini를 도입하여 몰입형 내비게이션과 대화형 검색 경험을 제공합니다. [^42]\n* **Vertex AI 429 에러 방지**: Google Cloud에서 LLM 애플리케이션 구축 시 발생하는 API 호출 제한(429 Error)을 줄이는 아키텍처 가이드입니다. [^49]\n* **LLM을 위한 숨겨진 메시지**: 웹사이트 루트에 `llms.txt`를 배치하여 AI 크롤러에게 컨텍스트를 제공하는 새로운 표준 제안입니다. [^51]\n* **에이전트용 콘텐츠 최적화**: 사람이 아닌 AI 에이전트가 잘 읽고 이해할 수 있도록 웹 콘텐츠를 최적화하는 방법론입니다. [^55]\n* **AI 에이전트 보안 매핑**: 프로덕션 환경의 AI 에이전트를 IAM 역할, 도구, 네트워크 노출도와 매핑하여 관리하는 보안 전략입니다. [^61]\n* **Slop or Not**: 일상적인 글에서 AI가 쓴 글(Slop)과 사람이 쓴 글을 구별할 수 있는지 테스트하는 웹사이트가 등장했습니다. [^62]\n\n#### 💻 개발 \u0026 인프라\n* **GitHub 가용성 보고서**: 2026년 2월 기준 GitHub의 서비스 가용성 및 장애 대응 내역 리포트가 발행되었습니다. [^3]\n* **Chrome Dev for Android**: 안드로이드용 크롬 개발자 버전의 최신 업데이트가 릴리스되었습니다. [^7]\n* **ChromeOS LTS 업데이트**: 기업 및 교육 환경을 위한 ChromeOS 장기 지원 채널(LTS)의 보안 업데이트가 배포되었습니다. [^8]\n* **파이썬 공급망 보안**: 파이썬 패키지 생태계의 취약점을 막기 위한 '심층 방어(Defense in Depth)' 구현 가이드입니다. [^12]\n* **타입 해석 재설계**: 프로그래밍 언어의 타입 추론 및 해석 엔진을 재설계하면서 얻은 아키텍처 변경 사항 공유입니다. [^14]\n* **나만의 텍스트 에디터**: 기존 도구에 만족하지 못해 직접 텍스트 에디터를 개발하고 매일 실사용 중인 개발자의 이야기입니다. [^21]\n* **WebAssembly의 1급 시민화**: 웹 생태계에서 WebAssembly를 자바스크립트와 동등한 1급 언어로 격상시키려는 움직임입니다. [^24]\n* **JS DRM의 허상**: HotAudio의 자바스크립트 기반 복사 방지 기술이 단 3번의 시도 만에 무력화된 과정 분석입니다. [^26]\n* **Temporal API**: 자바스크립트의 고질적인 날짜/시간 처리 문제를 해결하기 위한 9년간의 여정과 Temporal API 소개입니다. [^29]\n* **Cloudflare 계정 보호**: 봇과 악의적 사용자의 공격으로부터 계정을 보호하는 Cloudflare의 새로운 어뷰징 방지 기능이 발표되었습니다. [^36]\n* **Chromium 드래그 앤 드롭**: 윈도우 환경의 Chromium 브라우저에서 다중 파일 드래그 앤 드롭을 지원하기 위한 설계 문서입니다. [^57]\n* **보안 제품 카탈로그**: 난해한 마케팅 용어 대신 직관적이고 솔직하게 사이버 보안 제품들을 설명해 놓은 카탈로그입니다. [^65]\n* **Simpleblogapi 론칭**: 누구나 쉽게 블로그 백엔드를 구축할 수 있도록 돕는 개인 개발자의 자체 API 서비스 론칭 소식입니다. [^67]\n\n#### 🏢 비즈니스 \u0026 테크 트렌드\n* **레고의 정밀도**: 0.002mm의 오차만을 허용하는 레고의 사출 성형 기술이 현대 제조업에 던지는 시사점입니다. [^10]\n* **죽은 인터넷 이론의 현실화**: 봇과 AI가 생성한 콘텐츠가 웹을 뒤덮으면서 '죽은 인터넷'이 더 이상 음모론이 아니라는 지적입니다. [^13]\n* **서비스가 새로운 소프트웨어다**: SaaS를 넘어, AI가 직접 노동(서비스)을 제공하는 형태가 미래 소프트웨어의 본질이 될 것이라는 주장입니다. [^17]\n* **추상화의 역설**: 기술의 추상화 수준이 높아질수록 근본 원리를 모르게 되어 개발 생산성이 오히려 저하될 수 있다는 고민입니다. [^19]\n* **서비스는 소프트웨어가 아니다**: 위 [^17]의 주장에 반박하며, 인간의 개입이 필요한 서비스는 결코 순수 소프트웨어로 대체될 수 없다는 의견입니다. [^25]\n* **DOGE 직원 내부고발**: 전직 정부효율부(DOGE) 직원이 사회보장국 데이터를 무단으로 유출했다는 내부고발이 제기되었습니다. [^30]\n* **가치 창출의 본질**: 보상에 집착하기보다 타인에게 실질적인 가치를 창출하는 데 집중하라는 커리어 조언입니다. [^31]\n* **Hacker News AI 댓글 금지**: HN 커뮤니티가 인간 간의 대화를 보존하기 위해 AI가 생성하거나 편집한 댓글을 전면 금지했습니다. [^32]\n* **범용 호흡기 백신**: 호흡기 감염과 알레르기 반응을 동시에 억제할 수 있는 혁신적인 범용 백신 연구 결과가 발표되었습니다. [^35]\n* **Spotify 2025 Wrapped**: 스포티파이의 연말 결산 캠페인 '2025 Wrapped'를 지탱한 대규모 데이터 처리 아키텍처 비하인드입니다. [^38]\n* **GSEC Summit 2026**: 구글이 주최한 '디지털 시대의 성장' 서밋에서 도출된 온라인 안전 및 보안에 관한 6가지 핵심 인사이트입니다. [^44]\n* **Google Play 유료 게임**: 구글 플레이가 유료 게임을 미리 체험해보고 구매할 수 있는 새로운 수익화 모델을 도입했습니다. [^45]\n* **NVIDIA Omniverse**: 산업용 AI와 디지털 트윈 기술이 제조 및 엔지니어링 산업을 어떻게 가속화하고 있는지 보여주는 사례입니다. [^47]\n* **GeForce NOW at GDC**: GDC 2026에서 엔비디아가 클라우드 게이밍 서비스 GeForce NOW의 새로운 기술적 도약을 발표했습니다. [^48]\n* **Build More Slop**: 완벽주의를 버리고 일단 조잡하더라도(Slop) 더 많은 것을 만들고 배포하라는 개발자 마인드셋 에세이입니다. [^52]\n* **Rivian R2 출시**: 리비안의 차세대 보급형 전기 SUV 'R2'가 $57,990의 가격으로 공식 출시되며 시장의 기대를 모으고 있습니다. [^54]\n* **Costco 관세 소송**: 코스트코가 수입 관세 환불 문제로 인해 고객으로부터 집단 소송을 당했습니다. [^56]\n* **Sequoia 파트너 되기**: 실리콘밸리 최고 벤처캐피탈인 세쿼이아 캐피탈의 파트너가 되는 법을 풍자적으로 다룬 웹사이트입니다. [^58]\n* **두바이 미사일 영상 체포**: 이란의 미사일 공격 영상을 촬영해 공유한 영국인 관광객 등 20명이 두바이에서 기소되었습니다. [^60]\n* **테레민 회로도**: 세계 최초의 전자 악기인 테레민(Theremin)을 직접 만들 수 있는 상세한 회로도 모음입니다. [^64]\n* **유학생 감소 위기**: 지정학적 이슈와 정책 변화로 인해 미국 대학들의 국제 학생 등록률이 급감할 수 있다는 경고입니다. [^66]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘 브리핑에서는 '**경계의 붕괴**'가 두드러집니다. Perplexity의 하드웨어 진출과 해킹 사건은 소프트웨어와 하드웨어의 경계가 얼마나 아슬아슬한지 보여주며, 1비트 LLM의 발전은 클라우드와 로컬 기기의 경계를 허물고 있습니다. AI가 코드를 짜고 면접을 보며 심지어 웹 콘텐츠의 주 소비자가 되어가는(llms.txt) 지금, Hacker News가 \"AI 댓글 금지\"를 선언한 것은 인간 고유의 영역을 지키려는 상징적인 저항으로 읽힙니다. 기술의 발전 속에서 '인간을 위한 가치'를 잃지 않는 하루 되시길 바랍니다.\n\n[^1]: Apple to celebrate 50 years of thinking different - https://www.apple.com/newsroom/2026/03/apple-to-celebrate-50-years-of-thinking-different/\n[^2]: Continuous AI for accessibility: How GitHub transforms feedback into inclusion - https://github.blog/ai-and-ml/github-copilot/continuous-ai-for-accessibility-how-github-transforms-feedback-into-inclusion/\n[^3]: GitHub availability report: February 2026 - https://github.blog/news-insights/company-news/github-availability-report-february-2026/\n[^4]: VS Code 1.112 Insiders - https://code.visualstudio.com/updates/v1_112\n[^5]: How NVIDIA AI-Q Reached #1 on DeepResearch Bench I and II - https://huggingface.co/blog/nvidia/how-nvidia-won-deepresearch-bench\n[^6]: Flexibility Over Lock-In: The Enterprise Shift in Agent Strategy - https://www.docker.com/blog/enterprise-shift-in-agent-strategy/\n[^7]: Chrome Dev for Android Update - http://chromereleases.googleblog.com/2026/03/chrome-dev-for-android-update_0519875545.html\n[^8]: Long Term Support Channel Update for ChromeOS - http://chromereleases.googleblog.com/2026/03/long-term-support-channel-update-for.html\n[^9]: 1비트 LLM을 위한 추론 프레임워크 BitNet - https://news.hada.io/topic?id=27444\n[^10]: 레고의 0.002mm 사양과 제조업에 미치는 영향 - https://news.hada.io/topic?id=27443\n[^11]: AI 봇에게 면접을 받았다 - https://news.hada.io/topic?id=27442\n[^12]: 파이썬 공급망 보안을 위한 심층 방어(Defense in Depth) 구현 가이드 - https://news.hada.io/topic?id=27441\n[^13]: 죽은 인터넷은 더 이상 이론이 아니다 - https://news.hada.io/topic?id=27440\n[^14]: 타입 해석 재설계와 언어 변경 사항 - https://news.hada.io/topic?id=27439\n[^15]: Perplexity, Personal Computer 공개 - https://news.hada.io/topic?id=27438\n[^16]: MLC-LLM으로 iOS에서 로컬 LLM(Gemma 3) 실행하기 - https://news.hada.io/topic?id=27437\n[^17]: 서비스가 새로운 소프트웨어다 - https://news.hada.io/topic?id=27436\n[^18]: 부동산 AI 만들면서 느낀 모델별 차이점 - https://news.hada.io/topic?id=27435\n[^19]: 더 높은 추상화 수준에서 일하는 게 좋은지 잘 모르겠네 - https://news.hada.io/topic?id=27434\n[^20]: AutoKernel: GPU 커널 자동 연구 시스템 - https://news.hada.io/topic?id=27433\n[^21]: 나만의 텍스트 에디터를 만들고, 매일 사용하고 있어요 - https://news.hada.io/topic?id=27432\n[^22]: 맥킨지의 AI 플랫폼을 해킹한 방법 - https://news.hada.io/topic?id=27431\n[^23]: 존 그루버의 맥북 Neo 리뷰 - https://news.hada.io/topic?id=27430\n[^24]: 웹에서 WebAssembly를 1급 언어로 만들기 - https://news.hada.io/topic?id=27429\n[^25]: 서비스는 소프트웨어가 되지 않을 것이다 - https://news.hada.io/topic?id=27428\n[^26]: JavaScript DRM의 허상: HotAudio 복사 보호를 3라운드 만에 무력화한 과정 - https://news.hada.io/topic?id=27427\n[^27]: ralph-loop - 장시간 실행형 AI 에이전트 루프로 개발 업무 자동화하기 - https://news.hada.io/topic?id=27426\n[^28]: 네트워크 효과에 역행하지 마라: 에이전트 시대에도 통하는 방어 전략 - https://news.hada.io/topic?id=27425\n[^29]: 자바스크립트의 시간 문제를 해결한 9년의 여정, Temporal - https://news.hada.io/topic?id=27424\n[^30]: 전직 DOGE 직원이 사회보장국 데이터를 새 직장으로 가져갔다는 내부고발 주장 - https://news.hada.io/topic?id=27423\n[^31]: 다른 사람에게 가치를 창출하고, 보상은 걱정하지 마세요. - https://news.hada.io/topic?id=27422\n[^32]: 생성된 댓글이나 AI가 편집한 댓글은 올리지 마세요. HN은 사람 간의 대화를 위한 공간입니다. - https://news.hada.io/topic?id=27421\n[^33]: deff - 인터랙티브한 git diff TUI 뷰어 - https://news.hada.io/topic?id=27420\n[^34]: Rust 기반 초경량 AI 에이전트 런타임 ZeroClaw 공개 (\u003c5MB RAM, 10ms 시작) - https://news.hada.io/topic?id=27418\n[^35]: 호흡기 감염과 알레르기 모두에 대응하는 범용 백신 - https://news.hada.io/topic?id=27417\n[^36]: Announcing Cloudflare Account Abuse Protection: prevent fraudulent attacks from bots and humans - https://blog.cloudflare.com/account-abuse-protection/\n[^37]: Platform 37 and The AI Exchange: new spaces for AI innovation and discovery - https://blog.google/company-news/inside-google/around-the-globe/google-europe/united-kingdom/platform-37-the-ai-exchange/\n[^38]: Inside the Archive: The Tech Behind Your 2025 Wrapped Highlights - https://engineering.atspotify.com/2026/3/inside-the-archive-2025-wrapped/\n[^39]: How AI is helping improve heart health in rural Australia (AI) - https://blog.google/innovation-and-ai/technology/health/google-ai-heart-health-australia/\n[^40]: How AI is helping improve heart health in rural Australia (The Official Google Blog) - https://blog.google/innovation-and-ai/technology/health/google-ai-heart-health-australia/\n[^41]: Groundsource: using AI to help communities better predict natural disasters - https://blog.google/innovation-and-ai/technology/research/gemini-help-communities-predict-crisis/\n[^42]: How we’re reimagining Maps with Gemini - https://blog.google/products-and-platforms/products/maps/ask-maps-immersive-navigation/\n[^43]: Platform 37 and The AI Exchange: new spaces for AI innovation and discovery (The Official Google Blog) - https://blog.google/company-news/inside-google/around-the-globe/google-europe/united-kingdom/platform-37-the-ai-exchange/\n[^44]: 6 takeaways from our “Growing Up in the Digital Age” Summit - https://blog.google/innovation-and-ai/technology/safety-security/gsec-summit-2026-recap/\n[^45]: New ways to try, buy and master paid games with Google Play - https://blog.google/products-and-platforms/platforms/google-play/google-play-paid-games-updates/\n[^46]: Continuous AI for accessibility: How GitHub transforms feedback into inclusion (The latest on GitHub Copilot) - https://github.blog/ai-and-ml/github-copilot/continuous-ai-for-accessibility-how-github-transforms-feedback-into-inclusion/\n[^47]: Into the Omniverse: How Industrial AI and Digital Twins Accelerate Design, Engineering and Manufacturing Across Industries - https://blogs.nvidia.com/blog/industrial-ai-digital-twins-omniverse/\n[^48]: GeForce NOW Raises the Game at the Game Developers Conference - https://blogs.nvidia.com/blog/geforce-now-thursday-gdc-2026/\n[^49]: Build Resilient LLM Applications on Vertex AI and Reduce 429 Errors - https://cloud.google.com/blog/products/ai-machine-learning/reduce-429-errors-on-vertex-ai/\n[^50]: I hacked Perplexity Computer and got unlimited Claude Code - https://twitter.com/YousifAstar/status/2032214543292850427\n[^51]: \"If you're an LLM, please read this\" - https://annas-archive.gl/blog/llms-txt.html\n[^52]: Build More Slop - https://iamwillwang.com/notes/build-more-slop/\n[^53]: Diels-grabsch2: Self Hashing C Program (2019) - https://www.ioccc.org/2019/diels-grabsch2/\n[^54]: Rivian R2 launch: Here's what $57,990 gets you - https://techcrunch.com/2026/03/12/rivian-r2-launch-heres-what-57990-gets-you/\n[^55]: Optimizing Content for Agents - https://cra.mr/optimizing-content-for-agents/\n[^56]: Costco Sued by Customer over Tariff Refund - https://www.wsj.com/business/retail/costco-sued-by-customer-over-tariff-refund-42e7c3c4\n[^57]: Design Document: Enabling Multi‑File Drag‑and‑Drop in Chromium on Windows - https://docs.google.com/document/d/1nHPDuEE876RMKwYBVzWgPvsek-9X1NhZuFyY5Q5Z6YU/edit?usp=sharing\n[^58]: Show HN: Become the Next Sequoia Partner - http://nextsequoiapartner.org/\n[^59]: FlowViz – A free, zero-login Mermaid diagram editor - https://flowviz.app/\n[^60]: British tourist among 20 charged in Dubai over videos of Iranian missile strikes - https://www.theguardian.com/world/2026/mar/12/british-tourist-among-20-charged-in-dubai-over-videos-of-iranian-missile-strikes\n[^61]: Mapping production AI agents to IAM roles, tools, and network exposure - https://cartography.dev/blog/aibom\n[^62]: Show HN: Slop or not – can you tell AI writing from human in everyday contexts? - https://slop-or-not.space\n[^63]: Verified orchestration and cost tracking for Copilot CLI - https://github.com/moonrunnerkc/copilot-swarm-orchestrator\n[^64]: Theremin Schematics - http://www.thereminworld.com/Schematics\n[^65]: Straightforward descriptions of cybersecurity products. You're welcome - https://risky.biz/catalog/\n[^66]: Is the sky falling for international enrollment? - https://www.chronicle.com/newsletter/latitudes/2026-03-11\n[^67]: Show HN: I've just launched my own API - https://docs.simpleblogapi.com\n[^68]: How to build a sharable Claude Code agent with skills - https://registry.gitagent.sh\n[^69]: Perlsky Is a Perl 5 Implementation of an at Protocol Personal Data Server - https://tangled.org/alice.mosphere.at/perlsky\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **Apple to celebrate 50 years of thinking different\n**\n   - 출처: Apple Newsroom\n   - 링크: https://www.apple.com/newsroom/2026/03/apple-to-celebrate-50-years-of-thinking-different/\n\n2. **Continuous AI for accessibility: How GitHub transforms feedback into inclusion**\n   - 출처: GitHub Blog\n   - 링크: https://github.blog/ai-and-ml/github-copilot/continuous-ai-for-accessibility-how-github-transforms-feedback-into-inclusion/\n\n3. **GitHub availability report: February 2026**\n   - 출처: GitHub Blog\n   - 링크: https://github.blog/news-insights/company-news/github-availability-report-february-2026/\n\n4. **VS Code 1.112 Insiders**\n   - 출처: Visual Studio Code - Code Editing. Redefined.\n   - 링크: https://code.visualstudio.com/updates/v1_112\n\n5. **How NVIDIA AI-Q Reached \\#1 on DeepResearch Bench I and II **\n   - 출처: Hugging Face - Blog\n   - 링크: https://huggingface.co/blog/nvidia/how-nvidia-won-deepresearch-bench\n\n6. **Flexibility Over Lock-In: The Enterprise Shift in Agent Strategy**\n   - 출처: Docker Blog\n   - 링크: https://www.docker.com/blog/enterprise-shift-in-agent-strategy/\n\n7. **Chrome Dev for Android Update**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2026/03/chrome-dev-for-android-update_0519875545.html\n\n8. **Long Term Support Channel Update for ChromeOS**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2026/03/long-term-support-channel-update-for.html\n\n9. **1비트 LLM을 위한 추론 프레임워크 BitNet**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27444\n\n10. **레고의 0.002mm 사양과 제조업에 미치는 영향**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27443\n\n11. **AI 봇에게 면접을 받았다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27442\n\n12. **파이썬 공급망 보안을 위한 심층 방어(Defense in Depth) 구현 가이드**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27441\n\n13. **죽은 인터넷은 더 이상 이론이 아니다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27440\n\n14. **타입 해석 재설계와 언어 변경 사항**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27439\n\n15. **Perplexity, Personal Computer 공개**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27438\n\n16. **MLC-LLM으로 iOS에서 로컬 LLM(Gemma 3) 실행하기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27437\n\n17. **서비스가 새로운 소프트웨어다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27436\n\n18. **부동산 AI 만들면서 느낀 모델별 차이점**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27435\n\n19. **더 높은 추상화 수준에서 일하는 게 좋은지 잘 모르겠네**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27434\n\n20. **AutoKernel: GPU 커널 자동 연구 시스템**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27433\n\n21. **나만의 텍스트 에디터를 만들고, 매일 사용하고 있어요**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27432\n\n22. **맥킨지의 AI 플랫폼을 해킹한 방법**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27431\n\n23. **존 그루버의 맥북 Neo 리뷰**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27430\n\n24. **웹에서 WebAssembly를 1급 언어로 만들기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27429\n\n25. **서비스는 소프트웨어가 되지 않을 것이다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27428\n\n26. **JavaScript DRM의 허상: HotAudio 복사 보호를 3라운드 만에 무력화한 과정**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27427\n\n27. **ralph-loop - 장시간 실행형 AI 에이전트 루프로 개발 업무 자동화하기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27426\n\n28. **네트워크 효과에 역행하지 마라: 에이전트 시대에도 통하는 방어 전략**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27425\n\n29. **자바스크립트의 시간 문제를 해결한 9년의 여정, Temporal**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27424\n\n30. **전직 DOGE 직원이 사회보장국 데이터를 새 직장으로 가져갔다는 내부고발 주장**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27423\n\n31. **다른 사람에게 가치를 창출하고, 보상은 걱정하지 마세요.**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27422\n\n32. **생성된 댓글이나 AI가 편집한 댓글은 올리지 마세요. HN은 사람 간의 대화를 위한 공간입니다.**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27421\n\n33. **deff - 인터랙티브한 git diff TUI 뷰어**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27420\n\n34. **Rust 기반 초경량 AI 에이전트 런타임 ZeroClaw 공개 (\u0026lt;5MB RAM, 10ms 시작)**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27418\n\n35. **호흡기 감염과 알레르기 모두에 대응하는 범용 백신**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27417\n\n36. **Announcing Cloudflare Account Abuse Protection: prevent fraudulent attacks from bots and humans**\n   - 출처: Cloudflare Blog\n   - 링크: https://blog.cloudflare.com/account-abuse-protection/\n\n37. **Platform 37 and The AI Exchange: new spaces for AI innovation and discovery**\n   - 출처: Google DeepMind\n   - 링크: https://blog.google/company-news/inside-google/around-the-globe/google-europe/united-kingdom/platform-37-the-ai-exchange/\n\n38. **Inside the Archive: The Tech Behind Your 2025 Wrapped Highlights**\n   - 출처: Spotify Engineering\n   - 링크: https://engineering.atspotify.com/2026/3/inside-the-archive-2025-wrapped/\n\n39. **How AI is helping improve heart health in rural Australia**\n   - 출처: AI\n   - 링크: https://blog.google/innovation-and-ai/technology/health/google-ai-heart-health-australia/\n\n40. **How AI is helping improve heart health in rural Australia**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/innovation-and-ai/technology/health/google-ai-heart-health-australia/\n\n41. **Groundsource: using AI to help communities better predict natural disasters**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/innovation-and-ai/technology/research/gemini-help-communities-predict-crisis/\n\n42. **How we’re reimagining Maps with Gemini**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/products-and-platforms/products/maps/ask-maps-immersive-navigation/\n\n43. **Platform 37 and The AI Exchange: new spaces for AI innovation and discovery**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/company-news/inside-google/around-the-globe/google-europe/united-kingdom/platform-37-the-ai-exchange/\n\n44. **6 takeaways from our “Growing Up in the Digital Age” Summit**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/innovation-and-ai/technology/safety-security/gsec-summit-2026-recap/\n\n45. **New ways to try, buy and master paid games with Google Play**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/products-and-platforms/platforms/google-play/google-play-paid-games-updates/\n\n46. **Continuous AI for accessibility: How GitHub transforms feedback into inclusion**\n   - 출처: The latest on GitHub Copilot - The GitHub Blog\n   - 링크: https://github.blog/ai-and-ml/github-copilot/continuous-ai-for-accessibility-how-github-transforms-feedback-into-inclusion/\n\n47. **Into the Omniverse: How Industrial AI and Digital Twins Accelerate Design, Engineering and Manufacturing Across Industries**\n   - 출처: NVIDIA Blog\n   - 링크: https://blogs.nvidia.com/blog/industrial-ai-digital-twins-omniverse/\n\n48. **GeForce NOW Raises the Game at the Game Developers Conference**\n   - 출처: NVIDIA Blog\n   - 링크: https://blogs.nvidia.com/blog/geforce-now-thursday-gdc-2026/\n\n49. **Build Resilient LLM Applications on Vertex AI and Reduce 429 Errors**\n   - 출처: AI \u0026 Machine Learning\n   - 링크: https://cloud.google.com/blog/products/ai-machine-learning/reduce-429-errors-on-vertex-ai/\n\n50. **I hacked Perplexity Computer and got unlimited Claude Code**\n   - 출처: Hacker News\n   - 링크: https://twitter.com/YousifAstar/status/2032214543292850427\n\n51. **\"If you're an LLM, please read this\"**\n   - 출처: Hacker News\n   - 링크: https://annas-archive.gl/blog/llms-txt.html\n\n52. **Build More Slop**\n   - 출처: Hacker News\n   - 링크: https://iamwillwang.com/notes/build-more-slop/\n\n53. **Diels-grabsch2: Self Hashing C Program (2019)**\n   - 출처: Hacker News\n   - 링크: https://www.ioccc.org/2019/diels-grabsch2/\n\n54. **Rivian R2 launch: Here's what $57,990 gets you**\n   - 출처: Hacker News\n   - 링크: https://techcrunch.com/2026/03/12/rivian-r2-launch-heres-what-57990-gets-you/\n\n55. **Optimizing Content for Agents**\n   - 출처: Hacker News\n   - 링크: https://cra.mr/optimizing-content-for-agents/\n\n56. **Costco Sued by Customer over Tariff Refund**\n   - 출처: Hacker News\n   - 링크: https://www.wsj.com/business/retail/costco-sued-by-customer-over-tariff-refund-42e7c3c4\n\n57. **Design Document: Enabling Multi‑File Drag‑and‑Drop in Chromium on Windows**\n   - 출처: Hacker News\n   - 링크: https://docs.google.com/document/d/1nHPDuEE876RMKwYBVzWgPvsek-9X1NhZuFyY5Q5Z6YU/edit?usp=sharing\n\n58. **Show HN: Become the Next Sequoia Partner**\n   - 출처: Hacker News\n   - 링크: http://nextsequoiapartner.org/\n\n59. **FlowViz – A free, zero-login Mermaid diagram editor**\n   - 출처: Hacker News\n   - 링크: https://flowviz.app/\n\n60. **British tourist among 20 charged in Dubai over videos of Iranian missile strikes**\n   - 출처: Hacker News\n   - 링크: https://www.theguardian.com/world/2026/mar/12/british-tourist-among-20-charged-in-dubai-over-videos-of-iranian-missile-strikes\n\n61. **Mapping production AI agents to IAM roles, tools, and network exposure**\n   - 출처: Hacker News\n   - 링크: https://cartography.dev/blog/aibom\n\n62. **Show HN: Slop or not – can you tell AI writing from human in everyday contexts?**\n   - 출처: Hacker News\n   - 링크: https://slop-or-not.space\n\n63. **Verified orchestration and cost tracking for Copilot CLI**\n   - 출처: Hacker News\n   - 링크: https://github.com/moonrunnerkc/copilot-swarm-orchestrator\n\n64. **Theremin Schematics**\n   - 출처: Hacker News\n   - 링크: http://www.thereminworld.com/Schematics\n\n65. **Straightforward descriptions of cybersecurity products. You're welcome**\n   - 출처: Hacker News\n   - 링크: https://risky.biz/catalog/\n\n66. **Is the sky falling for international enrollment?**\n   - 출처: Hacker News\n   - 링크: https://www.chronicle.com/newsletter/latitudes/2026-03-11\n\n67. **Show HN: I've just launched my own API**\n   - 출처: Hacker News\n   - 링크: https://docs.simpleblogapi.com\n\n68. **How to build a sharable Claude Code agent with skills**\n   - 출처: Hacker News\n   - 링크: https://registry.gitagent.sh\n\n69. **Perlsky Is a Perl 5 Implementation of an at Protocol Personal Data Server**\n   - 출처: Hacker News\n   - 링크: https://tangled.org/alice.mosphere.at/perlsky\n\n\n",
+  "articles": [
+    {
+      "title": "Apple to celebrate 50 years of thinking different\n",
+      "link": "https://www.apple.com/newsroom/2026/03/apple-to-celebrate-50-years-of-thinking-different/",
+      "source": "Apple Newsroom",
+      "category": "tech",
+      "publishedAt": "2026-03-12T12:59:02.678Z",
+      "description": "Apple today announced it will mark its 50th anniversary, celebrating five decades of thinking different and the innovations that helped shape the world."
+    },
+    {
+      "title": "Continuous AI for accessibility: How GitHub transforms feedback into inclusion",
+      "link": "https://github.blog/ai-and-ml/github-copilot/continuous-ai-for-accessibility-how-github-transforms-feedback-into-inclusion/",
+      "source": "GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-12T16:00:00Z",
+      "description": "\u003cp\u003eAI automates triage for accessibility feedback, allowing us to focus on fixing barriers—turning a chaotic backlog into continuous, rapid resolutions.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/ai-and-ml/github-copilot/continuous-ai-for-accessibility-how-github-transforms-feedback-into-inclusion/\"\u003eContinuous AI for accessibility: How GitHub transforms feedback into inclusion\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "GitHub availability report: February 2026",
+      "link": "https://github.blog/news-insights/company-news/github-availability-report-february-2026/",
+      "source": "GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-12T03:23:54Z",
+      "description": "\u003cp\u003eIn February, we experienced six incidents that resulted in degraded performance across GitHub services.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/news-insights/company-news/github-availability-report-february-2026/\"\u003eGitHub availability report: February 2026\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "VS Code 1.112 Insiders",
+      "link": "https://code.visualstudio.com/updates/v1_112",
+      "source": "Visual Studio Code - Code Editing. Redefined.",
+      "category": "tech",
+      "publishedAt": "2026-03-18T17:00:00Z",
+      "description": "\n      \u003cp\u003eLearn what's new in Visual Studio Code 1.112 (Insiders)\u003c/p\u003e\n      \u003cp\u003e\u003ca href=\"https://code.visualstudio.com/updates/v1_112\"\u003eRead the full article\u003c/a\u003e\u003c/p\u003e\n    "
+    },
+    {
+      "title": "How NVIDIA AI-Q Reached \\#1 on DeepResearch Bench I and II ",
+      "link": "https://huggingface.co/blog/nvidia/how-nvidia-won-deepresearch-bench",
+      "source": "Hugging Face - Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-12T03:53:34Z"
+    },
+    {
+      "title": "Flexibility Over Lock-In: The Enterprise Shift in Agent Strategy",
+      "link": "https://www.docker.com/blog/enterprise-shift-in-agent-strategy/",
+      "source": "Docker Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-12T12:50:49Z",
+      "description": "Building agents is now a strategic priority for 95% of respondents in our latest State of Agentic AI research, which surveyed more than 800 developers and decision-makers worldwide. The shift is happening quickly: agent adoption has moved beyond experiments and demos into early operational maturity. But the road to enterprise-scale adoption is still complex. The..."
+    },
+    {
+      "title": "Chrome Dev for Android Update",
+      "link": "http://chromereleases.googleblog.com/2026/03/chrome-dev-for-android-update_0519875545.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2026-03-12T07:13:32.66-07:00",
+      "description": "\u003cp\u003eHi everyone! We've just released Chrome Dev 148 (148.0.7728.3) for Android. It's now available on \u003ca href=\"https://play.google.com/store/apps/details?id=com.chrome.dev\"\u003eGoogle Play\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eYou can see a partial list of the changes in the \u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/147.0.7719.2..148.0.7728.3?pretty=fuller\u0026amp;n=10000\"\u003eGit log\u003c/a\u003e. For details on new features, check out the \u003ca href=\"https://blog.chromium.org\"\u003eChromium blog\u003c/a\u003e, and for details on web platform updates, check \u003ca href=\"https://www.chromestatus.com/features#milestone%3D148\"\u003ehere\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eIf you find a new issue, please let us know by \u003ca href=\"https://code.google.com/p/chromium/issues/entry?template=Android%20Issue\"\u003efiling a bug\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eChrome Release Team\u003cbr /\u003e\u003ca href=\"https://www.google.com/chrome\"\u003e\u003c/a\u003e\u003ca href=\"https://www.google.com/chrome\"\u003eGoogle Chrome\u003c/a\u003e\u003c/p\u003e"
+    },
+    {
+      "title": "Long Term Support Channel Update for ChromeOS",
+      "link": "http://chromereleases.googleblog.com/2026/03/long-term-support-channel-update-for.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2026-03-11T16:45:00-07:00",
+      "description": "\u003cp\u003e\u003cspan style=\"font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003eA new LTS-138\u0026nbsp; version \u003c/span\u003e\u003cspan style=\"background-color: white; font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e138.0.7204.306 \u003c/span\u003e\u003cspan style=\"font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e(Platform Version: \u003c/span\u003e\u003cspan style=\"background-color: white; font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e16295.91.0), is being\u003c/span\u003e\u003cspan style=\"font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e rolled out for most ChromeOS devices.\u003c/span\u003e\u003cspan style=\"font-family: Arial, sans-serif; font-size: 12pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e\u0026nbsp;\u003c/span\u003e\u003c/p\u003e\u003cspan id=\"docs-internal-guid-25c8781a-7fff-4530-14c9-3b549fad1def\"\u003e\u003cbr /\u003e\u003cp dir=\"ltr\" style=\"line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003eThis version includes selected security fixes including:\u003c/span\u003e\u003c/p\u003e\u003cbr /\u003e\u003cp dir=\"ltr\" style=\"line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003ca href=\"http://b/487383169\" style=\"text-decoration-line: none;\"\u003e\u003cspan style=\"color: #1155cc; font-family: Arial, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-decoration-line: underline; text-decoration-skip-ink: none; vertical-align: baseline; white-space-collapse: preserve;\"\u003e487383169\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"font-family: Arial, sans-serif; font-size: 15pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e\u0026nbsp; \u003c/span\u003e\u003cspan style=\"font-family: Arial, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003eHigh CVE-2026-3545 Insufficient data validation in Navigation.\u003c/span\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003ca href=\"http://b/484811719\" style=\"text-decoration-line: none;\"\u003e\u003cspan style=\"color: #1155cc; font-family: Arial, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-decoration-line: underline; text-decoration-skip-ink: none; vertical-align: baseline; white-space-collapse: preserve;\"\u003e484811719\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"font-family: Arial, sans-serif; font-size: 16pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e\u0026nbsp; \u003c/span\u003e\u003cspan style=\"font-family: Arial, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003eHigh CVE-2026-3541 Inappropriate implementation in CSS.\u003c/span\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003ca href=\"https://buganizer.corp.google.com/issues/485152421\" style=\"text-decoration-line: none;\"\u003e\u003cspan style=\"color: #1155cc; font-family: Arial, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-decoration-line: underline; text-decoration-skip-ink: none; vertical-align: baseline; white-space-collapse: preserve;\"\u003e485152421\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"font-family: Arial, sans-serif; font-size: 16pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e\u0026nbsp; \u003c/span\u003e\u003cspan style=\"font-family: Arial, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003eHigh CVE-2026-3542 Inappropriate implementation in WebAssembly.\u003c/span\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height: 1.656; margin-bottom: 27pt; margin-top: 19pt;\"\u003e\u003cspan style=\"font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003eRelease notes for LTS-138 can be found\u003c/span\u003e\u003ca href=\"https://support.google.com/chrome/a/answer/12239814\" style=\"text-decoration-line: none;\"\u003e\u003cspan style=\"color: black; font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e \u003c/span\u003e\u003cspan style=\"color: #4184f3; font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-decoration-line: underline; text-decoration-skip-ink: none; vertical-align: baseline; white-space-collapse: preserve;\"\u003ehere\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e\u0026nbsp;\u003c/span\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height: 1.656; margin-bottom: 27pt; margin-top: 19pt;\"\u003e\u003cspan style=\"font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003eWant to know more about Long-term Support? Click\u003c/span\u003e\u003ca href=\"https://support.google.com/chrome/a/answer/11333726\" style=\"text-decoration-line: none;\"\u003e\u003cspan style=\"color: black; font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e \u003c/span\u003e\u003cspan style=\"color: #4184f3; font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-decoration-line: underline; text-decoration-skip-ink: none; vertical-align: baseline; white-space-collapse: preserve;\"\u003ehere\u003c/span\u003e\u003c/a\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003eAndy Wu\u003c/span\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003eGoogle ChromeOS\u003c/span\u003e\u003c/p\u003e\u003cdiv\u003e\u003cspan style=\"font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e\u003cbr /\u003e\u003c/span\u003e\u003c/div\u003e\u003c/span\u003e"
+    },
+    {
+      "title": "1비트 LLM을 위한 추론 프레임워크 BitNet",
+      "link": "https://news.hada.io/topic?id=27444",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-13T01:38:03+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003ebitnet.cpp\u003c/strong\u003e는 1비트 대형언어모델(LLM)의 \u003cstrong\u003e공식 추론 프레임워크\u003c/strong\u003e로, CPU와 GPU에서 \u003cstrong\u003e빠르고 손실 없는 추론\u003c/strong\u003e을 지원\u003c/li\u003e\n\u003cli\u003eARM CPU에서 \u003cstrong\u003e1.37~5.07배 속도 향상\u003c/strong\u003e과 \u003cstrong\u003e55.4~70% 에너지 절감\u003c/strong\u003e, x86 CPU에서 \u003cstrong\u003e2.37~6.17...\u003c/p\u003e"
+    },
+    {
+      "title": "레고의 0.002mm 사양과 제조업에 미치는 영향",
+      "link": "https://news.hada.io/topic?id=27443",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-13T01:35:03+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e1958년에 생산된 \u003cstrong\u003e레고 블록이 오늘날 전 세계 공장에서 생산된 블록과 완벽히 호환\u003c/strong\u003e되는 것은 수십억 개의 부품을 연간 0.01mm 정밀도로 유지한 결과임\u003c/li\u003e\n\u003cli\u003e블록의 \u003cstrong\u003e결합력과 간섭 맞춤(interference fit)\u003c/strong\u003e 은 수백분의 1mm 단위로 설계되어, 0.02mm만 벗어나도 조립 불가...\u003c/p\u003e"
+    },
+    {
+      "title": "AI 봇에게 면접을 받았다",
+      "link": "https://news.hada.io/topic?id=27442",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-13T00:33:46+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eAI 아바타가 구직 면접을 진행하는 시대\u003c/strong\u003e가 도래하며, 지원자와 기업 모두에게 새로운 경험을 제공\u003c/li\u003e\n\u003cli\u003eCodeSignal, Humanly, Eightfold 등 여러 기업이 \u003cstrong\u003eAI 기반 화상 면접 플랫폼\u003c/strong\u003e을 개발해, 모든 지원자에게 1차 면접 기회를 제공\u003c/li\u003e\n\u003cli\u003e개발사들은 이 시스템이 \u003cs...\u003c/p\u003e"
+    },
+    {
+      "title": "파이썬 공급망 보안을 위한 심층 방어(Defense in Depth) 구현 가이드",
+      "link": "https://news.hada.io/topic?id=27441",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-13T00:13:24+09:00",
+      "description": "\u003cp\u003e\u003cstrong\u003e핵심 요약\u003c/strong\u003e\u003cbr /\u003e\n파이썬 패키지 생태계를 겨냥한 공급망 공격에 대응하기 위해 단일 통제에 의존하지 않는 다계층 방어 전략이 요구된다. 본문은 Ruff의 \u003ccode\u003eS\u003c/code\u003e(Bandit) 규칙을 활용한 정적 취약점 차단, \u003ccode\u003euv\u003c/code\u003e를 이용한 암호학적 해시 기반 의존성 고정, CI 환경에서의 \u003ccode\u003epi...\u003c/p\u003e"
+    },
+    {
+      "title": "죽은 인터넷은 더 이상 이론이 아니다",
+      "link": "https://news.hada.io/topic?id=27440",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-12T23:33:17+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e온라인 공간 전반에서 \u003cstrong\u003eAI 생성 콘텐츠와 봇 활동\u003c/strong\u003e이 급격히 확산되며, 인간 중심의 인터넷이 붕괴되고 있음\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eHacker News\u003c/strong\u003e는 신규 계정의 ShowHN 게시를 제한하고, \u003cstrong\u003eAI 생성 댓글 금지 규칙\u003c/strong\u003e을 추가함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eReddit\u003c/strong\u003e에서는 특정 ...\u003c/p\u003e"
+    },
+    {
+      "title": "타입 해석 재설계와 언어 변경 사항",
+      "link": "https://news.hada.io/topic?id=27439",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-12T21:33:30+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eZig 컴파일러의 \u003cstrong\u003e타입 해석(type resolution)\u003c/strong\u003e 로직이 전면 재설계되어, 내부 구조가 단순화되고 사용자에게도 가시적인 개선이 이루어짐\u003c/li\u003e\n\u003cli\u003e새 설계는 \u003cstrong\u003e타입 필드 분석을 지연(lazy)\u003c/strong\u003e 처리해, 초기화되지 않은 타입의 세부 구조를 불필요하게 검사하지 않음\u003c/li\u003e\n\u003cli\u003e\n\u003cs...\u003c/p\u003e"
+    },
+    {
+      "title": "Perplexity, Personal Computer 공개",
+      "link": "https://news.hada.io/topic?id=27438",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-12T20:33:44+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e기존 OS가 명령을 처리하는 방식과 달리, \u003cstrong\u003eAI OS는 목표(objectives)를 처리\u003c/strong\u003e함\n\u003cul\u003e\n\u003cli\u003e사용자가 세부 명령을 내리지 않아도, 시스템이 목표 달성을 위해 스스로 작동\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003ePerplexity Computer\u003c/strong\u003e와 \u003cstrong\u003eComet Assistant\u003c/strong\u003e가 결합되어 \u003cstrong\u003e항...\u003c/p\u003e"
+    },
+    {
+      "title": "MLC-LLM으로 iOS에서 로컬 LLM(Gemma 3) 실행하기",
+      "link": "https://news.hada.io/topic?id=27437",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-12T18:17:45+09:00",
+      "description": "\u003cp\u003e\u003cstrong\u003eGemma 3\u003c/strong\u003e 모델을 MLC-LLM을 통해 iOS 기기에서 로컬로 구동하는 방법과 실구동 성능 지표를 정리한 포스팅입니다.\u003c/p\u003e\n\u003ch4\u003e요약\u003c/h4\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eMLC-LLM 활용\u003c/strong\u003e: Metal API 가속을 통해 모바일 기기에서도 지연 시간(Latency)이 거의 없는 쾌적한 추론 환경 구축\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eG"
+    },
+    {
+      "title": "서비스가 새로운 소프트웨어다",
+      "link": "https://news.hada.io/topic?id=27436",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-12T16:59:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eAI 모델 성능이 향상될수록 도구(tool)가 아닌 \u003cstrong\u003e업무 결과(work)를 직접 판매\u003c/strong\u003e하는 서비스형 AI 기업이 차세대 거대 기업이 될 것이라는 논지로, 소프트웨어 기업이 서비스 기업처럼 작동하는 구조를 제시\u003c/li\u003e\n\u003cli\u003e모든 직무를 \u003cstrong\u003e지능(intelligence)과 판단(judgement)\u003c/strong\u003e 두 축으...\u003c/p\u003e"
+    },
+    {
+      "title": "부동산 AI 만들면서 느낀 모델별 차이점",
+      "link": "https://news.hada.io/topic?id=27435",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-12T13:55:00+09:00",
+      "description": "\u003cp\u003e많은 기술적인 이야기들이 있지만 오늘은 사용하는 모델에 대해서 얘기해 볼께요.\u003cbr /\u003e\n부동산AI를 만든 이유는 GPT, Claude 모두 부동산관련 답변이 정말 시원치 않습니다.\u003cbr /\u003e\n일단, 과거의 데이터를 현재의 데이터인양 떠들거나, 근거도 없이 부정확한 걸 사실인양 얘기하고 가격정보는 아예 틀리거나 인터넷 뉴...\u003c/p\u003e"
+    },
+    {
+      "title": "더 높은 추상화 수준에서 일하는 게 좋은지 잘 모르겠네",
+      "link": "https://news.hada.io/topic?id=27434",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-12T12:35:35+09:00",
+      "description": "\u003cp\u003eAI 도구가 생산성을 높여주지만 작업에서 영혼과 개성이 사라진다며, '평균'으로 수렴하는 AI 결과물에 저항해 자신만의 목소리를 지키겠다는 개발자·작가의 솔직한 성찰.\u003c/p\u003e\n\u003cp\u003e저자(Xe Iaso)는 AI 도구(특히 Claude, Cursor 등)를 사용하면서 코드 작성 대신 \u003cstrong\u003e의도(intent)를 설명\u003c/strong\u003e하고 위임하는 높"
+    },
+    {
+      "title": "AutoKernel: GPU 커널 자동 연구 시스템",
+      "link": "https://news.hada.io/topic?id=27433",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-12T11:45:03+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eKarpathy의 Autoresearch를 GPU 커널 최적화에 적용\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003ePyTorch 모델\u003c/strong\u003e을 입력하면 자동으로 \u003cstrong\u003eTriton 또는 CUDA C++ 커널\u003c/strong\u003e을 최적화하는 \u003cstrong\u003eGPU 커널 자동 연구 도구\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e모델의 \u003cstrong\u003e병목 커널을 프로파일링·추출·최적화·검증\u003c/strong\u003e하는 완전...\u003c/p\u003e"
+    },
+    {
+      "title": "나만의 텍스트 에디터를 만들고, 매일 사용하고 있어요",
+      "link": "https://news.hada.io/topic?id=27432",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-12T11:44:05+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e기존 \u003cstrong\u003eHowl 에디터의 한계\u003c/strong\u003e(개발 중단, 느린 검색, SSH 비호환, 터미널 미지원)로 인해 직접 새로운 TUI 텍스트 에디터를 개발함\u003c/li\u003e\n\u003cli\u003eHelix, VS Code, Vim, Neovim, Emacs 등 13개 에디터를 시도했으나 원하는 \u003cstrong\u003e조작 감각(Fingerspitzengefühl)\u003c/strong\u003e 을 충족하는 에디터가 없었...\u003c/p\u003e"
+    },
+    {
+      "title": "맥킨지의 AI 플랫폼을 해킹한 방법",
+      "link": "https://news.hada.io/topic?id=27431",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-12T11:39:18+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e맥킨지가 내부 직원용으로 구축한 \u003cstrong\u003eAI 플랫폼 ‘Lilli’\u003c/strong\u003e 에서 인증 없이 접근 가능한 취약점을 통해 전체 데이터베이스에 \u003cstrong\u003e읽기·쓰기 권한\u003c/strong\u003e이 획득됨\u003c/li\u003e\n\u003cli\u003e공격은 \u003cstrong\u003e자율 보안 에이전트\u003c/strong\u003e가 수행했으며, 공개된 API 문서의 200여 개 엔드포인트 중 22개가 인증...\u003c/p\u003e"
+    },
+    {
+      "title": "존 그루버의 맥북 Neo 리뷰",
+      "link": "https://news.hada.io/topic?id=27430",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-12T11:37:37+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e아이폰 16 프로와 동일한 \u003cstrong\u003eA18 Pro 칩\u003c/strong\u003e을 탑재한 \u003cstrong\u003e600달러 맥북 네오\u003c/strong\u003e는, 같은 가격대의 x86 PC 노트북이 \u003cstrong\u003e성능·디스플레이·빌드 품질\u003c/strong\u003e 어디에서도 경쟁할 수 없는 수준\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e8GB RAM에도 불구\u003c/strong\u003e하고 일반 생산성 작업에서 \u003cstrong\u003e체감 성능...\u003c/p\u003e"
+    },
+    {
+      "title": "웹에서 WebAssembly를 1급 언어로 만들기",
+      "link": "https://news.hada.io/topic?id=27429",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-12T11:34:37+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eWebAssembly는 2017년 첫 출시 이후 \u003cstrong\u003eC/C++ 등 저수준 언어 실행을 지원\u003c/strong\u003e하며 발전해 왔지만, 여전히 웹 플랫폼에서 \u003cstrong\u003e2급 언어로 취급\u003c/strong\u003e되고 있음\u003c/li\u003e\n\u003cli\u003eJavaScript만이 \u003cstrong\u003e웹 API와 직접 상호작용\u003c/strong\u003e할 수 있고, WebAssembly는 이를 위해 복잡한 \u003cstrong\u003eJS 바인딩...\u003c/p\u003e"
+    },
+    {
+      "title": "서비스는 소프트웨어가 되지 않을 것이다",
+      "link": "https://news.hada.io/topic?id=27428",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-12T10:31:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eAI가 서비스 기업을 소프트웨어 기업으로 전환한다는 벤처캐피털 업계의 \u003cstrong\u003e컨센서스가 확산\u003c/strong\u003e되고 있지만, 실제로는 \u003cstrong\u003e서비스 기업이 더 나은 서비스 기업이 되는 것\u003c/strong\u003e이지 \u003cstrong\u003e소프트웨어 기업으로 변하는 것이 아님\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e전문 서비스 지출의 상당 부분은 산출물...\u003c/p\u003e"
+    },
+    {
+      "title": "JavaScript DRM의 허상: HotAudio 복사 보호를 3라운드 만에 무력화한 과정",
+      "link": "https://news.hada.io/topic?id=27427",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-12T10:26:02+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e브라우저에서 실행되는 \u003cstrong\u003eJavaScript 기반 DRM\u003c/strong\u003e은 복호화된 오디오 데이터가 결국 JavaScript 접근 가능한 영역을 통과해야 하므로 근본적으로 우회 가능함\u003c/li\u003e\n\u003cli\u003eHotAudio는 NSFW ASMR 오디오 호스팅 플랫폼으로, \u003cstrong\u003eMediaSource Extensions API\u003c/strong\u003e를 활용한 자체 암호화·청크 전...\u003c/p\u003e"
+    },
+    {
+      "title": "ralph-loop - 장시간 실행형 AI 에이전트 루프로 개발 업무 자동화하기",
+      "link": "https://news.hada.io/topic?id=27426",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-12T10:19:02+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e반복하여 \u003cstrong\u003e작업 목록을 순회하며 완료될 때까지 수행\u003c/strong\u003e하는 \u003cstrong\u003e장시간 실행형 AI 루프 시스템\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eDocker 샌드박스 환경\u003c/strong\u003e에서 안전하게 \u003cstrong\u003eClaude Code\u003c/strong\u003e/Codex/Gemini등의 AI CLI를 실행\u003c/li\u003e\n\u003cli\u003e운영 방법\n\u003cul\u003e\n\u003cli\u003e1단계: Ralph 설치 \u003ccod...\u003c/p\u003e"
+    },
+    {
+      "title": "네트워크 효과에 역행하지 마라: 에이전트 시대에도 통하는 방어 전략",
+      "link": "https://news.hada.io/topic?id=27425",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-12T10:11:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e소프트웨어 마진이 압축되는 시대에 \u003cstrong\u003e네트워크 효과\u003c/strong\u003e는 여전히 지속 가능한 소프트웨어 비즈니스를 구축하는 가장 신뢰할 수 있는 경로\u003c/li\u003e\n\u003cli\u003e많은 사람들이 네트워크 효과라 부르는 것은 사실 \u003cstrong\u003e집계(aggregation) 우위\u003c/strong\u003e이며, 에이전트가 쉽게 복제할 수 있는 단일 플레이어 ...\u003c/p\u003e"
+    },
+    {
+      "title": "자바스크립트의 시간 문제를 해결한 9년의 여정, Temporal",
+      "link": "https://news.hada.io/topic?id=27424",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-12T09:47:02+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e자바스크립트의 \u003cstrong\u003eDate 객체 한계를 근본적으로 대체\u003c/strong\u003e하는 새로운 표준 \u003cstrong\u003eTemporal API\u003c/strong\u003e가 9년간의 개발 끝에 \u003cstrong\u003eECMAScript Stage 4\u003c/strong\u003e에 도달\u003c/li\u003e\n\u003cli\u003eTemporal은 \u003cstrong\u003e불변(immutable) 타입\u003c/strong\u003e, \u003cstrong\u003e명시적 시간대·달력 지원\u003c/strong\u003e, \u003cstrong\u003e나노초...\u003c/p\u003e"
+    },
+    {
+      "title": "전직 DOGE 직원이 사회보장국 데이터를 새 직장으로 가져갔다는 내부고발 주장",
+      "link": "https://news.hada.io/topic?id=27423",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-12T09:44:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e사회보장국 감찰실\u003c/strong\u003e이 전직 DOGE 엔지니어가 \u003cstrong\u003e민감한 데이터베이스 접근 권한을 이용해 정보를 외부로 반출했다는 의혹\u003c/strong\u003e을 조사 중임\u003c/li\u003e\n\u003cli\u003e내부고발에 따르면 해당 인물은 \u003cstrong\u003e두 개의 고위험 데이터베이스에 접근\u003c/strong\u003e했으며, 이를 \u003cstrong\u003e새로운 민간 고용주와...\u003c/p\u003e"
+    },
+    {
+      "title": "다른 사람에게 가치를 창출하고, 보상은 걱정하지 마세요.",
+      "link": "https://news.hada.io/topic?id=27422",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-12T09:41:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eAI를 쓰지 않으면 뒤처진다는 식의 \u003cstrong\u003e공포 마케팅\u003c/strong\u003e이 소셜 미디어에 만연하지만, 이는 완전한 허구임\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eAI는 마법이 아니라 단순한 탐색과 최적화의 연속선상\u003c/strong\u003e에 있는 기술로, 일부 영역에서는 이익이지만 전반적으로는 도구적 진보에 불과\u003c/li\u003e\n\u003cli\u003e타인에게 복잡성을 ...\u003c/p\u003e"
+    },
+    {
+      "title": "생성된 댓글이나 AI가 편집한 댓글은 올리지 마세요. HN은 사람 간의 대화를 위한 공간입니다.",
+      "link": "https://news.hada.io/topic?id=27421",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-12T09:38:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eHacker News는 \u003cstrong\u003e인간 간의 대화와 지적 호기심을 자극하는 주제\u003c/strong\u003e를 중심으로 운영되는 커뮤니티임\u003c/li\u003e\n\u003cli\u003e이제 \u003cstrong\u003eAI가 생성하거나 편집한 댓글은 금지\u003c/strong\u003e되며, 모든 대화는 사람 간의 상호작용이어야 한다고 가이드라인에 명시함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e친절하고 사려 깊은 토론 문화...\u003c/p\u003e"
+    },
+    {
+      "title": "deff - 인터랙티브한 git diff TUI 뷰어",
+      "link": "https://news.hada.io/topic?id=27420",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-12T09:31:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eSide-By-Side 비교 뷰\u003c/strong\u003e를 제공해 \u003cstrong\u003egit 변경사항을 직관적으로 검토\u003c/strong\u003e가능한 \u003cstrong\u003eRust 기반 TUI 도구\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e파일 단위 이동, \u003cstrong\u003e수직·수평 스크롤\u003c/strong\u003e, \u003cstrong\u003e문법 하이라이팅\u003c/strong\u003e, \u003cstrong\u003e추가/삭제 라인 색상 표시\u003c/strong\u003e 지원\u003c/li\u003e\n\u003cli...\u003c/p\u003e"
+    },
+    {
+      "title": "Rust 기반 초경량 AI 에이전트 런타임 ZeroClaw 공개 (\u0026lt;5MB RAM, 10ms 시작)",
+      "link": "https://news.hada.io/topic?id=27418",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-12T09:04:41+09:00",
+      "description": "\u003cp\u003eRust로 작성된 초경량 AI 에이전트 런타임 ZeroClaw 프로젝트가 공개되었습니다.\u003cbr /\u003e\nAI 모델, 도구 실행, 메모리, 채널 등을 추상화하여 에이전트 워크플로우를 실행할 수 있는 런타임 환경을 목표로 합니다.\u003c/p\u003e\n\u003cp\u003eZeroClaw의 특징\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e런타임 메모리 사용량 \u0026lt;5MB\u003c/li\u003e\n\u003cli\u003e약 10ms 콜드 스타트\u003c/li"
+    },
+    {
+      "title": "호흡기 감염과 알레르기 모두에 대응하는 범용 백신",
+      "link": "https://news.hada.io/topic?id=27417",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-12T07:33:15+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eStanford Medicine 연구진\u003c/strong\u003e이 쥐 실험에서 \u003cstrong\u003e바이러스·세균·알레르기 항원\u003c/strong\u003e에 모두 효과를 보이는 새로운 백신을 개발\u003c/li\u003e\n\u003cli\u003e이 백신은 \u003cstrong\u003e비강(코) 투여 방식\u003c/strong\u003e으로 전달되며, \u003cstrong\u003e수개월간 폐에서 광범위한 면역 보호\u003c/strong\u003e를 유지\u003c/li\u003e\n\u003cli\u003e기존 백신...\u003c/p\u003e"
+    },
+    {
+      "title": "Announcing Cloudflare Account Abuse Protection: prevent fraudulent attacks from bots and humans",
+      "link": "https://blog.cloudflare.com/account-abuse-protection/",
+      "source": "Cloudflare Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-12T05:00:00Z",
+      "description": " Blocking bots isn’t enough anymore. Cloudflare’s new fraud prevention capabilities — now available in Early Access — help stop account abuse before it starts. "
+    },
+    {
+      "title": "Platform 37 and The AI Exchange: new spaces for AI innovation and discovery",
+      "link": "https://blog.google/company-news/inside-google/around-the-globe/google-europe/united-kingdom/platform-37-the-ai-exchange/",
+      "source": "Google DeepMind",
+      "category": "tech",
+      "publishedAt": "2026-03-12T10:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Hero_Q93Ij5p.max-600x600.format-webp.webp\"\u003eGoogle’s newest London building, Platform 37, is named to honor Google DeepMind’s AlphaGo."
+    },
+    {
+      "title": "Inside the Archive: The Tech Behind Your 2025 Wrapped Highlights",
+      "link": "https://engineering.atspotify.com/2026/3/inside-the-archive-2025-wrapped/",
+      "source": "Spotify Engineering",
+      "category": "tech",
+      "publishedAt": "2026-03-12T20:42:22Z",
+      "description": "\u003cp\u003eWhat if we could identify interesting listening moments from your year, and tell you a story about them?\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://engineering.atspotify.com/2026/3/inside-the-archive-2025-wrapped/\"\u003eInside the Archive: The Tech Behind Your 2025 Wrapped Highlights\u003c/a\u003e appeared first on \u003ca href=\"https://engineering.atspotify.com\"\u003eSpotify Engineering\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "How AI is helping improve heart health in rural Australia",
+      "link": "https://blog.google/innovation-and-ai/technology/health/google-ai-heart-health-australia/",
+      "source": "AI",
+      "category": "tech",
+      "publishedAt": "2026-03-12T15:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AIHealth_v2_2096x1182_02.max-600x600.format-webp.webp\"\u003eA new Google AI initiative aims to improve heart health outcomes for people living in remote Australian communities."
+    },
+    {
+      "title": "How AI is helping improve heart health in rural Australia",
+      "link": "https://blog.google/innovation-and-ai/technology/health/google-ai-heart-health-australia/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-12T15:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AIHealth_v2_2096x1182_02.max-600x600.format-webp.webp\"\u003eA new Google AI initiative aims to improve heart health outcomes for people living in remote Australian communities."
+    },
+    {
+      "title": "Groundsource: using AI to help communities better predict natural disasters",
+      "link": "https://blog.google/innovation-and-ai/technology/research/gemini-help-communities-predict-crisis/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-12T13:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/FloodHub_Hero.max-600x600.format-webp.webp\"\u003eGroundsource is a new AI-powered methodology from Google Research that transforms millions of public records into actionable data."
+    },
+    {
+      "title": "How we’re reimagining Maps with Gemini",
+      "link": "https://blog.google/products-and-platforms/products/maps/ask-maps-immersive-navigation/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-12T12:30:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/How_were_reimagining_Maps_with_.max-600x600.format-webp.webp\"\u003eGoogle Maps has two new AI features: Ask Maps and Immersive Navigation."
+    },
+    {
+      "title": "Platform 37 and The AI Exchange: new spaces for AI innovation and discovery",
+      "link": "https://blog.google/company-news/inside-google/around-the-globe/google-europe/united-kingdom/platform-37-the-ai-exchange/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-12T10:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Hero_Q93Ij5p.max-600x600.format-webp.webp\"\u003eGoogle’s newest London building, Platform 37, is named to honor Google DeepMind’s AlphaGo."
+    },
+    {
+      "title": "6 takeaways from our “Growing Up in the Digital Age” Summit",
+      "link": "https://blog.google/innovation-and-ai/technology/safety-security/gsec-summit-2026-recap/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-12T09:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Growing_Up_in_the_Digital_Age-h.max-600x600.format-webp.webp\"\u003eThe Growing Up in the Digital Age Summit was hosted by Dublin’s Google Safety Engineering Center (GSEC)."
+    },
+    {
+      "title": "New ways to try, buy and master paid games with Google Play",
+      "link": "https://blog.google/products-and-platforms/platforms/google-play/google-play-paid-games-updates/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-11T23:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/YT_Thumbnail_-_16x9.max-600x600.format-webp.webp\"\u003eUpdates to Google Play include a new You tab, plus new features in the Apps tab and in Google Play Games."
+    },
+    {
+      "title": "Continuous AI for accessibility: How GitHub transforms feedback into inclusion",
+      "link": "https://github.blog/ai-and-ml/github-copilot/continuous-ai-for-accessibility-how-github-transforms-feedback-into-inclusion/",
+      "source": "The latest on GitHub Copilot - The GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-12T16:00:00Z",
+      "description": "\u003cp\u003eAI automates triage for accessibility feedback, allowing us to focus on fixing barriers—turning a chaotic backlog into continuous, rapid resolutions.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/ai-and-ml/github-copilot/continuous-ai-for-accessibility-how-github-transforms-feedback-into-inclusion/\"\u003eContinuous AI for accessibility: How GitHub transforms feedback into inclusion\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Into the Omniverse: How Industrial AI and Digital Twins Accelerate Design, Engineering and Manufacturing Across Industries",
+      "link": "https://blogs.nvidia.com/blog/industrial-ai-digital-twins-omniverse/",
+      "source": "NVIDIA Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-12T15:00:51Z",
+      "description": "Industrial AI, digital twins, AI physics and accelerated AI infrastructure are empowering companies across industries to accelerate and scale the design, simulation and optimization of products, processes and facilities before building in the real world."
+    },
+    {
+      "title": "GeForce NOW Raises the Game at the Game Developers Conference",
+      "link": "https://blogs.nvidia.com/blog/geforce-now-thursday-gdc-2026/",
+      "source": "NVIDIA Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-12T13:00:53Z",
+      "description": "GeForce NOW is bringing the game to the Game Developers Conference (GDC), running this week in San Francisco. While developers build the future of gaming, GeForce NOW is delivering it to gamers. The latest updates bring smoother performance, easier game discovery and a fresh lineup of blockbuster titles to the cloud. Game discoverability gets a [\u0026#8230;]"
+    },
+    {
+      "title": "Build Resilient LLM Applications on Vertex AI and Reduce 429 Errors",
+      "link": "https://cloud.google.com/blog/products/ai-machine-learning/reduce-429-errors-on-vertex-ai/",
+      "source": "AI \u0026 Machine Learning",
+      "category": "tech",
+      "publishedAt": "2026-03-12T16:00:00Z",
+      "description": "\u003cdiv class=\"block-paragraph_advanced\"\u003e\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eBuilding applications powered by Large Language Models (LLMs) on Vertex AI is exciting, but hitting a \u003c/span\u003e\u003ca href=\"https://docs.cloud.google.com/vertex-ai/generative-ai/docs/provisioned-throughput/error-code-429\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003e429 error\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e can be a frustrating roadblock. These errors signal that your requests are coming in faster than the service can handle them at that moment.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eLast year, we \u003c/span\u003e\u003ca href=\"https://cloud.google.com/blog/products/ai-machine-learning/learn-how-to-handle-429-resource-exhaustion-errors-in-your-llms?e=48754805\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003epublished a guide\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e to handling these 429 errors. In this article, we’ll dig deeper into Vertex AI’s consumption models and dives into architectural best practices for managing request flows. This way, you can build smooth, resilient, and truly scalable AI applications.\u003c/span\u003e\u003c/p\u003e\n\u003ch3\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eChoosing the right consumption option \u003c/span\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eVertex AI provides a range of consumption models designed to accommodate various API traffic types and volumes. Your primary strategy for minimizing 429 errors is selecting the consumption model that best aligns with your application’s unique traffic patterns. \u003c/span\u003e\u003c/p\u003e\u003c/div\u003e\n\u003cdiv class=\"block-image_full_width\"\u003e\n\n\n\n\n\n\n  \n    \u003cdiv class=\"article-module h-c-page\"\u003e\n      \u003cdiv class=\"h-c-grid\"\u003e\n  \n\n    \u003cfigure class=\"article-image--large\n      \n      \n        h-c-grid__col\n        h-c-grid__col--6 h-c-grid__col--offset-3\n        \n        \n      \"\n      \u003e\n\n      \n      \n        \n        \u003cimg\n            src=\"https://storage.googleapis.com/gweb-cloudblog-publish/images/Build_Resilient_LLM_Applications_on_Vertex.max-1000x1000.jpg\"\n        \n          alt=\"Build Resilient LLM Applications on Vertex AI and Reduce 429 Errors\"\u003e\n        \n        \u003c/a\u003e\n      \n    \u003c/figure\u003e\n\n  \n      \u003c/div\u003e\n    \u003c/div\u003e\n  \n\n\n\n\n\u003c/div\u003e\n\u003cdiv class=\"block-paragraph_advanced\"\u003e\u003cp\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eDefault options: \u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eThe default option with Gemini on Vertex AI is Standard Pay-as-you-go (Paygo). For \u003c/span\u003e\u003ca href=\"https://docs.cloud.google.com/vertex-ai/generative-ai/docs/standard-paygo\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eStandard Pay-as-you-go\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e (Paygo) traffic, Vertex AI uses a system with Usage Tiers. This dynamic approach allocates resources from a shared pool, where your organization’s historical spend determines your Usage Tier and baseline throughput (TPM). This baseline provides a predictable performance floor for typical workloads, while still allowing your application to burst beyond it on a best-effort basis.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eIf your application generates critical, user-facing traffic that can be unpredictable and require higher reliability than Standard Paygo, \u003c/span\u003e\u003ca href=\"https://docs.cloud.google.com/vertex-ai/generative-ai/docs/priority-paygo\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003ePriority Paygo\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e is designed for you. By adding the priority header to your requests, you signal that this traffic should be prioritized, reducing the likelihood of being throttled. \u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eFor applications with consistently high volumes of real-time traffic, \u003c/span\u003e\u003ca href=\"https://docs.cloud.google.com/vertex-ai/generative-ai/docs/provisioned-throughput/overview\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eProvisioned Throughput\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e (PT) is the only consumption option that provides isolation from the shared PayGo pool, offering a stable experience even during heavy contention on PayGo. With PT, you reserve and pay for a guaranteed throughput, ensuring your important traffic flows smoothly. \u003c/span\u003e\u003ca href=\"https://cloud.google.com/blog/products/ai-machine-learning/provisioned-throughput-on-vertex-ai?e=48754805\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eTo learn more about PT on Vertex AI, visit our guide here.\u003c/span\u003e\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eCost-effective options: \u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eFor traffic that isn't latency sensitive, Vertex AI offers more cost-effective options. The \u003c/span\u003e\u003ca href=\"https://docs.cloud.google.com/vertex-ai/generative-ai/docs/flex-paygo\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eFlex PayGo\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e is suited for latency-tolerant traffic, processing requests at a lower price. Large-scale, asynchronous jobs, such as offline analysis or bulk data enrichment, are best handled by \u003c/span\u003e\u003ca href=\"https://docs.cloud.google.com/vertex-ai/generative-ai/docs/multimodal/batch-prediction-gemini\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eBatch\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e. This service manages the entire workflow, including scaling and retries, over a longer period (around 24 hours), insulating your main application from this heavy load.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eComplex applications and hybrid approaches: \u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eComplex applications often leverage a hybrid approach: PT for essential real-time traffic, Priority Paygo for fluctuating traffic, Standard Paygo for general requests, and Batch/Flex for latency-tolerant and offline request flows. \u003c/span\u003e\u003c/p\u003e\n\u003ch3\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eFive ways to reduce 429 errors on Vertex AI\u003c/span\u003e\u003c/h3\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003e1. Implement smart retries\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eWhen your application encounters a temporary overload error like a 429 (Resource Exhausted) or 503 (Service Unavailable), an immediate retry is not recommended. The best practice is to implement a retry strategy called Exponential Backoff with Jitter. Exponential backoff means that the delay between retry attempts increases exponentially usually up to a predefined maximum delay. This gives the service time to recover from the overload condition. \u003c/span\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eSDK \u0026amp; libraries:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e The \u003c/span\u003e\u003ca href=\"https://docs.cloud.google.com/vertex-ai/generative-ai/docs/retry-strategy#configuring-retries\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eGoogle Gen AI SDK\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e  includes native retry behavior that can be configured via HttpRetryOptions in client parameters. However, you can also leverage specialized libraries like \u003c/span\u003e\u003ca href=\"https://github.com/jd/tenacity\" rel=\"noopener\" target=\"_blank\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eTenacity\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e (for Python) or build a custom solution. For a deeper dive, refer to this \u003c/span\u003e\u003ca href=\"https://cloud.google.com/blog/products/ai-machine-learning/learn-how-to-handle-429-resource-exhaustion-errors-in-your-llms\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eblog post\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eAgentic workflows:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e For developing agents, the \u003c/span\u003e\u003ca href=\"https://google.github.io/adk-docs/\" rel=\"noopener\" target=\"_blank\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eAgent Development Kit (ADK)\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e \u003c/span\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eoffers a\u003c/span\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e \u003c/span\u003e\u003ca href=\"https://google.github.io/adk-docs/integrations/reflect-and-retry/\" rel=\"noopener\" target=\"_blank\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eReflect and Retry plugin\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e that builds resilience into AI workflows by automatically intercepting 429 errors. \u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eInfrastructure \u0026amp; Gateway:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e Another robust option for building resilience is \u003c/span\u003e\u003ca href=\"https://github.com/GoogleCloudPlatform/apigee-samples/tree/main/llm-circuit-breaking\" rel=\"noopener\" target=\"_blank\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003ecircuit breaking with Apigee\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e, which enables you to manage traffic distribution and implement graceful failure handling. \u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003e2. Leverage global model routing\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eVertex AI's infrastructure is distributed across multiple regions. By default, if you target a specific regional endpoint, your request is served from that region. This means your application's availability is tied to the capacity of that single region. This is where the global endpoint becomes an effective tool for enhancing availability and resilience. Instead of being locked into one region, the global endpoint routes your traffic across a fleet of regions where there may be more availability, reducing the potential error rate.\u003c/span\u003e\u003c/p\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003e3. Reduce payload via context caching\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eAn effective way to reduce the load on Vertex AI is to avoid making calls for repetitive queries. Many production applications, especially chatbots and support systems, see similar questions asked frequently. Instead of re-processing these, you can implement \u003c/span\u003e\u003ca href=\"https://cloud.google.com/blog/products/ai-machine-learning/vertex-ai-context-caching?e=48754805\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003econtext caching\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e. With Context Caching, Gemini reuses precomputed cached tokens, allowing you to reduce your API traffic and throughput. This not only saves costs but also reduces latency for repeated content within your prompts. \u003c/span\u003e\u003c/p\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003e4. Optimize prompts\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eReducing the token count in each request directly lowers your TPM consumption and costs.\u003c/span\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eSummarization with Flash-Lite: \u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eBefore sending a long conversation history to a model like Gemini Pro, use a lightweight model like \u003c/span\u003e\u003ca href=\"https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash-lite\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eGemini 2.5 Flash-Lite\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e to summarize the context.\u003c/span\u003e\u003c/li\u003e\n\u003cli role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eAgent memory optimization: \u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eFor\u003c/span\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003e \u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eAgentic workloads you can leverage Vertex AI \u003c/span\u003e\u003ca href=\"https://docs.cloud.google.com/agent-builder/agent-engine/memory-bank/overview\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eAgent Engine Memory Bank\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e. Features like Memory Extraction and Consolidation allow you to distill meaningful facts from a conversation, ensuring your agent remains context-aware without raw chat history.\u003c/span\u003e\u003c/li\u003e\n\u003cli role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003ePrompt hygiene:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e Review your prompts and reduce overly verbose JSON schema descriptions (if the model is already familiar) and stripping excessive whitespace or redundant formatting.\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003e5. Shape traffic\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eSudden bursts of requests are a primary cause of 429 errors. Even if your average traffic rate is low, sharp spikes can strain resources. The goal is to smoothen traffic, spreading requests out over time. \u003c/span\u003e\u003c/p\u003e\n\u003ch3\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eGet started \u003c/span\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eReady to put these patterns into practice? Explore the\u003c/span\u003e\u003ca href=\"https://github.com/GoogleCloudPlatform/vertex-ai-samples/\" rel=\"noopener\" target=\"_blank\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003e Vertex AI samples on GitHub\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e, or jumpstart your next project with the \u003c/span\u003e\u003ca href=\"https://docs.cloud.google.com/vertex-ai/generative-ai/docs/learn/overview\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eGoogle Cloud Beginner’s Guide\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e, \u003c/span\u003e\u003ca href=\"https://docs.cloud.google.com/vertex-ai/generative-ai/docs/start\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eVertex AI quickstart\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e or start building your next AI agent with the  \u003c/span\u003e\u003ca href=\"https://google.github.io/adk-docs/\" rel=\"noopener\" target=\"_blank\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eAgent Development Kit (ADK)\u003c/span\u003e\u003c/a\u003e\u003c/p\u003e\u003c/div\u003e"
+    },
+    {
+      "title": "I hacked Perplexity Computer and got unlimited Claude Code",
+      "link": "https://twitter.com/YousifAstar/status/2032214543292850427",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-12T22:02:06Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://twitter.com/YousifAstar/status/2032214543292850427\"\u003ehttps://twitter.com/YousifAstar/status/2032214543292850427\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47357863\"\u003ehttps://news.ycombinator.com/item?id=47357863\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "\"If you're an LLM, please read this\"",
+      "link": "https://annas-archive.gl/blog/llms-txt.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-12T22:01:27Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://annas-archive.gl/blog/llms-txt.html\"\u003ehttps://annas-archive.gl/blog/llms-txt.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47357855\"\u003ehttps://news.ycombinator.com/item?id=47357855\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Build More Slop",
+      "link": "https://iamwillwang.com/notes/build-more-slop/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-12T22:00:58Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://iamwillwang.com/notes/build-more-slop/\"\u003ehttps://iamwillwang.com/notes/build-more-slop/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47357848\"\u003ehttps://news.ycombinator.com/item?id=47357848\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Diels-grabsch2: Self Hashing C Program (2019)",
+      "link": "https://www.ioccc.org/2019/diels-grabsch2/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-12T22:00:49Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.ioccc.org/2019/diels-grabsch2/\"\u003ehttps://www.ioccc.org/2019/diels-grabsch2/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47357846\"\u003ehttps://news.ycombinator.com/item?id=47357846\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Rivian R2 launch: Here's what $57,990 gets you",
+      "link": "https://techcrunch.com/2026/03/12/rivian-r2-launch-heres-what-57990-gets-you/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-12T22:00:16Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://techcrunch.com/2026/03/12/rivian-r2-launch-heres-what-57990-gets-you/\"\u003ehttps://techcrunch.com/2026/03/12/rivian-r2-launch-heres-what-57990-gets-you/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47357842\"\u003ehttps://news.ycombinator.com/item?id=47357842\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Optimizing Content for Agents",
+      "link": "https://cra.mr/optimizing-content-for-agents/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-12T22:00:11Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://cra.mr/optimizing-content-for-agents/\"\u003ehttps://cra.mr/optimizing-content-for-agents/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47357840\"\u003ehttps://news.ycombinator.com/item?id=47357840\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Costco Sued by Customer over Tariff Refund",
+      "link": "https://www.wsj.com/business/retail/costco-sued-by-customer-over-tariff-refund-42e7c3c4",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-12T21:59:47Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.wsj.com/business/retail/costco-sued-by-customer-over-tariff-refund-42e7c3c4\"\u003ehttps://www.wsj.com/business/retail/costco-sued-by-customer-over-tariff-refund-42e7c3c4\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47357832\"\u003ehttps://news.ycombinator.com/item?id=47357832\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Design Document: Enabling Multi‑File Drag‑and‑Drop in Chromium on Windows",
+      "link": "https://docs.google.com/document/d/1nHPDuEE876RMKwYBVzWgPvsek-9X1NhZuFyY5Q5Z6YU/edit?usp=sharing",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-12T21:58:45Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://docs.google.com/document/d/1nHPDuEE876RMKwYBVzWgPvsek-9X1NhZuFyY5Q5Z6YU/edit?usp=sharing\"\u003ehttps://docs.google.com/document/d/1nHPDuEE876RMKwYBVzWgPvsek-9X1NhZuFyY5Q5Z6YU/edit?usp=sharing\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47357819\"\u003ehttps://news.ycombinator.com/item?id=47357819\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Become the Next Sequoia Partner",
+      "link": "http://nextsequoiapartner.org/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-12T21:57:32Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"http://nextsequoiapartner.org/\"\u003ehttp://nextsequoiapartner.org/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47357805\"\u003ehttps://news.ycombinator.com/item?id=47357805\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "FlowViz – A free, zero-login Mermaid diagram editor",
+      "link": "https://flowviz.app/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-12T21:56:31Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://flowviz.app/\"\u003ehttps://flowviz.app/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47357792\"\u003ehttps://news.ycombinator.com/item?id=47357792\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "British tourist among 20 charged in Dubai over videos of Iranian missile strikes",
+      "link": "https://www.theguardian.com/world/2026/mar/12/british-tourist-among-20-charged-in-dubai-over-videos-of-iranian-missile-strikes",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-12T21:54:11Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.theguardian.com/world/2026/mar/12/british-tourist-among-20-charged-in-dubai-over-videos-of-iranian-missile-strikes\"\u003ehttps://www.theguardian.com/world/2026/mar/12/british-tourist-among-20-charged-in-dubai-over-videos-of-iranian-missile-strikes\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47357755\"\u003ehttps://news.ycombinator.com/item?id=47357755\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Mapping production AI agents to IAM roles, tools, and network exposure",
+      "link": "https://cartography.dev/blog/aibom",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-12T21:54:02Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://cartography.dev/blog/aibom\"\u003ehttps://cartography.dev/blog/aibom\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47357752\"\u003ehttps://news.ycombinator.com/item?id=47357752\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Slop or not – can you tell AI writing from human in everyday contexts?",
+      "link": "https://slop-or-not.space",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-12T21:53:23Z",
+      "description": "\n\u003cp\u003eI’ve been building a crowd-sourced AI detection benchmark. Two responses to the same prompt — one from a real human (pre-2022, provably pre prevalence of AI slop on the internet), one generated by AI. You pick the slop. Three wrong and you’re out.\u003cp\u003eThe dataset: 16K human posts from Reddit, Hacker News, and Yelp, each paired with AI generations from 6 models across two providers (Anthropic and OpenAI) at three capability tiers. Same prompt, length-matched, no adversarial coaching — just the model’s natural voice with platform context.\nEvery vote is logged with model, tier, source, response time, and position.\u003cp\u003eEarly findings from testing: Reddit posts are easy to spot (humans are too casual for AI to mimic), HN is significantly harder.\u003cp\u003eI'll be releasing the full dataset on HuggingFace and I'll publish a paper if I can get enough data via this crowdsourced study.\u003cp\u003eIf you play the HN-only mode, you’re helping calibrate how detectable AI is on here specifically.\u003cp\u003eWould love feedback on the pairs — are any trivially obvious? Are some genuinely hard?\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47357745\"\u003ehttps://news.ycombinator.com/item?id=47357745\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Verified orchestration and cost tracking for Copilot CLI",
+      "link": "https://github.com/moonrunnerkc/copilot-swarm-orchestrator",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-12T21:53:07Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/moonrunnerkc/copilot-swarm-orchestrator\"\u003ehttps://github.com/moonrunnerkc/copilot-swarm-orchestrator\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47357738\"\u003ehttps://news.ycombinator.com/item?id=47357738\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Theremin Schematics",
+      "link": "http://www.thereminworld.com/Schematics",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-12T21:52:53Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"http://www.thereminworld.com/Schematics\"\u003ehttp://www.thereminworld.com/Schematics\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47357735\"\u003ehttps://news.ycombinator.com/item?id=47357735\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Straightforward descriptions of cybersecurity products. You're welcome",
+      "link": "https://risky.biz/catalog/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-12T21:52:23Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://risky.biz/catalog/\"\u003ehttps://risky.biz/catalog/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47357729\"\u003ehttps://news.ycombinator.com/item?id=47357729\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Is the sky falling for international enrollment?",
+      "link": "https://www.chronicle.com/newsletter/latitudes/2026-03-11",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-12T21:45:49Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.chronicle.com/newsletter/latitudes/2026-03-11\"\u003ehttps://www.chronicle.com/newsletter/latitudes/2026-03-11\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47357647\"\u003ehttps://news.ycombinator.com/item?id=47357647\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: I've just launched my own API",
+      "link": "https://docs.simpleblogapi.com",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-12T21:45:06Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://docs.simpleblogapi.com\"\u003ehttps://docs.simpleblogapi.com\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47357636\"\u003ehttps://news.ycombinator.com/item?id=47357636\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "How to build a sharable Claude Code agent with skills",
+      "link": "https://registry.gitagent.sh",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-12T21:44:59Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://registry.gitagent.sh\"\u003ehttps://registry.gitagent.sh\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47357634\"\u003ehttps://news.ycombinator.com/item?id=47357634\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Perlsky Is a Perl 5 Implementation of an at Protocol Personal Data Server",
+      "link": "https://tangled.org/alice.mosphere.at/perlsky",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-12T21:44:51Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://tangled.org/alice.mosphere.at/perlsky\"\u003ehttps://tangled.org/alice.mosphere.at/perlsky\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47357633\"\u003ehttps://news.ycombinator.com/item?id=47357633\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    }
+  ],
+  "generatedAt": "2026-03-13T07:11:55.793730951+09:00"
+}
