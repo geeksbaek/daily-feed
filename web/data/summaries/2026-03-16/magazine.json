@@ -1,0 +1,362 @@
+{
+  "date": "2026-03-16",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2026년 3월 16일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** AI 메모리 슈퍼사이클로 인한 엔비디아의 HBM4 독식 예고부터, 몬태나주의 전국 최초 '컴퓨팅 권리법' 제정, 그리고 AI를 활용한 맞춤형 암 치료까지, 기술이 물리적 인프라와 생명과학의 경계를 허물고 있습니다.\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### 엔비디아, HBM4 시장 독식 예고... 끝나지 않은 AI 메모리 부족 사태\n2026년 모건스탠리 컨퍼런스에서 엔비디아 CEO 젠슨 황은 \"생산되는 모든 HBM4를 사들이겠다\"며 전례 없는 입도선매를 선언했습니다. 이는 2026년 하반기 출시 예정인 차세대 'Vera Rubin(베라 루빈)' 플랫폼의 막대한 메모리 요구량을 충족하기 위함입니다. 루빈 아키텍처는 16단 HBM4를 탑재해 무려 22TB/s의 대역폭을 요구하며, AI 모델이 단순 응답에서 '추론(Reasoning)' 중심으로 진화함에 따라 메모리 대역폭이 최대 병목으로 작용하고 있습니다. 엔비디아의 이러한 전략은 삼성, SK하이닉스 등 제조사들의 생산 라인을 HBM 중심으로 재편하게 만들어, 일반 소비자용 DRAM의 가격 상승과 공급 부족을 장기화하는 'AI 메모리 슈퍼사이클'을 고착화할 전망입니다. [^38]\n\u003e **Key Point:** 엔비디아의 차세대 AI 칩 'Vera Rubin'의 막대한 메모리 수요가 글로벌 DRAM 시장의 구조적 부족 사태를 2026년 이후까지 연장하고 있습니다. [^38]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. 몬태나, 전국 최초 ‘컴퓨팅 권리법’ 제정\n- **What:** 몬태나주가 미국 최초로 시민의 컴퓨팅 및 AI 도구 소유·활용 권리를 보장하는 'Right to Compute Act(SB 212)'를 통과시켰습니다. [^12]\n- **Why:** 캘리포니아 등 타 주에서 AI 규제를 강화하는 움직임에 반발하여, 정부의 과도한 기술 통제를 막고 개인의 디지털 프라이버시와 기술 접근성을 기본권으로 보호하기 위함입니다. [^12]\n- **Impact:** AI 산업 규제를 둘러싼 미국 내 주별 정책 파편화가 가속화될 것이며, 일각에서는 이를 대형 데이터센터 운영사를 보호하기 위한 기업 친화적 프레이밍으로 해석하기도 합니다. [^12]\n\n### 2. 우버 창업자 트래비스 캘러닉, 산업용 로봇 기업 'Atoms' 출범\n- **What:** 우버(Uber) 공동 창업자 트래비스 캘러닉이 8년간의 스텔스 모드를 깨고, 식품·광업·물류 산업을 겨냥한 로봇 기업 'Atoms'를 공식 발표했습니다. [^40]\n- **Why:** 범용 휴머노이드 로봇 대신, 특정 산업 환경에서 고효율로 작동하는 '바퀴 달린 특수 목적 로봇(Gainfully Employed Robots)'이 상업적 생존 가능성과 수익성이 훨씬 높다고 판단했기 때문입니다. [^40]\n- **Impact:** 빅테크들이 휴머노이드에 천문학적인 자본을 쏟아붓는 가운데, B2B 산업 현장의 실질적인 자동화와 물리적 AI(Physical AI) 혁신을 가속하는 강력한 대안 트렌드로 부상할 전망입니다. [^40]\n\n### 3. ChatGPT와 mRNA 백신으로 반려견 암 치료 성공\n- **What:** 호주의 한 테크 기업가가 ChatGPT와 머신러닝을 활용해 반려견의 악성 종양 DNA를 분석하고, 맞춤형 mRNA 백신을 설계하여 종양 크기를 50% 축소시켰습니다. [^19]\n- **Why:** AI 도구를 활용해 정상세포와 암세포의 돌연변이를 비교 분석함으로써, 기존의 값비싼 연구 인프라 없이도 정확한 치료 타깃을 특정할 수 있었기 때문입니다. [^19]\n- **Impact:** 시민 과학자와 AI의 결합이 전문 의학 기관과 협력해 실질적 성과를 낸 최초의 사례로, 향후 인간을 위한 초개인화·저비용 암 치료제 개발에 획기적인 이정표가 될 것입니다. [^19]\n\n### 4. MCP는 죽었다? 엔터프라이즈 AI의 핵심으로 부상하는 MCP\n- **What:** 최근 CLI 중심의 AI 에이전트가 유행하며 Model Context Protocol(MCP)이 과소평가받고 있으나, 조직 단위의 AI 엔지니어링에서는 여전히 필수적이라는 분석이 제기되었습니다. [^6]\n- **Why:** CLI는 토큰 절약에 유리하지만, HTTP 기반의 중앙화된 MCP는 보안, 인증, 텔레메트리, 최신 문서 동기화 등 기업 운영에 필수적인 관리 및 통제 기능을 제공하기 때문입니다. [^6]\n- **Impact:** AI 에이전트 도입이 개인 개발자를 넘어 엔터프라이즈 환경으로 확장됨에 따라, 가시성과 보안을 담보하는 MCP 아키텍처가 미래 AI 인프라의 표준으로 확고히 자리 잡을 것입니다. [^6]\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **VS Code 1.112 Insiders** | 최신 기능이 사전 적용된 VS Code 인사이더 빌드 [^1] |\n| **Tool** | **Han** | Rust로 작성된 한국어 기반 컴파일형 프로그래밍 언어 [^4] |\n| **Tool** | **GIMP 3.2** | 오픈소스 이미지 편집기 GIMP의 최신 3.2 릴리즈 [^7] |\n| **Tool** | **Claude Code Plugin** | Claude Code 세션의 컨텍스트를 쉽게 파악할 수 있는 플러그인 [^11] |\n| **Tool** | **NanoClaw** | 안전한 AI 에이전트 구축을 위한 오픈소스 컨테이너 아키텍처 [^13] |\n| **Library** | **Konglish/Kanabarum** | 한국어 외래어 발음 변환을 돕는 라이브러리 [^17] |\n| **Tool** | **diffnav** | GitHub 스타일의 Git diff 페이저 도구 [^20] |\n| **Tool** | **Hammerspoon** | Lua 기반의 강력한 macOS 데스크톱 자동화 도구 [^24] |\n| **Tool** | **Decision Guardian v1.2.0** | PR 단계에서 아키텍처 결정(ADR) 준수 여부를 강제하는 도구 [^25] |\n| **Tool** | **Focus mode** | 주의를 분산시키는 웹사이트를 차단하는 브라우저 확장 프로그램 [^28] |\n| **Tool** | **AI-as-Code** | 에이전트 팩토리를 위한 AI-as-Code 프레임워크 (Wave) [^33] |\n| **Tool** | **AgentFactory** | 코딩 에이전트를 위한 멀티 에이전트 플릿 관리 도구 [^35] |\n| **Tool** | **Tmux-nvim-navigator** | Neovim 설정 없이 Tmux와 매끄럽게 탐색을 연동하는 도구 [^42] |\n| **Tool** | **P.U.S.H. Protocol** | React/D3 기반 6-Node Mesh를 갖춘 자기 참조형 AI 엔진 [^44] |\n| **Video** | **You're not immune to propaganda** | 프로파간다의 영향력과 심리를 다룬 분석 영상 [^41] |\n| **Paper** | **POP instruction speed (2004)** | 리누스 토발즈와 제프 가직이 논의한 POP 명령어 속도 관련 아카이브 [^43] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 IT 인프라\n* **너의 실수까지 포함해 너를 알게 해줘**: 개발 과정에서의 실수와 경험을 통한 학습의 중요성을 다룬 에세이 [^9]\n* **Ageless Linux**: 나이를 알 수 없는 인간을 위한 소프트웨어라는 철학을 담은 독특한 리눅스 배포판/개념 [^18]\n* **진짜 내 일을 위한 Agentic Workflow**: 실무에 바로 적용 가능한 주도적 AI 에이전트 워크플로우 구축 가이드 [^22]\n* **맥북 네오에서 Parallels 가상 머신으로 윈도우 실행 가능 확인**: 최신 맥북 네오 환경에서 Parallels를 통한 윈도우 구동 테스트 결과 [^23]\n* **Cover Flow with Modern CSS**: 최신 CSS의 스크롤 구동 애니메이션을 활용해 커버 플로우를 구현하는 방법 (2025) [^26]\n\n#### 🚀 비즈니스 \u0026 스타트업\n* **창업자를 위한 마케팅**: 초기 스타트업 창업자가 알아야 할 실용적인 마케팅 전략과 팁 [^5]\n* **Claude 2026년 3월 사용량 프로모션**: 앤스로픽의 Claude AI 모델 3월 한정 사용량 프로모션 소식 [^10]\n* **Show GN: 티와모**: LCK(리그 오브 레전드 챔피언스 코리아) 기반의 가상 코인 거래소 프로젝트 [^15]\n* **Show GN: 다이소/올영/메가박스 재고 뺑뺑이 끝내기**: 인기 오프라인 매장의 재고를 쉽게 확인할 수 있는 자동화 툴 [^16]\n* **I'm building a way to verify resume claims with AI**: AI를 활용해 이력서 내용의 진위 여부를 검증하는 새로운 서비스 구축기 [^30]\n* **The Gen-Z Founders Trying to Get Guys to Stop Watching Porn**: 포르노 중독 해결을 위해 나선 Z세대 창업자들의 앱(Quittr) 스토리 [^31]\n* **From CIA to CEO**: 전직 CIA 요원들이 3,380억 달러 규모의 국방 테크 시장을 겨냥해 스타트업 CEO로 변신하는 트렌드 [^32]\n* **I built a game flop tracker**: 실패한 게임을 추적하는 사이트를 만들었다가 포브스에 보도되고 디도스 공격까지 받은 개발자 후기 [^34]\n\n#### 🌍 사회 \u0026 정책 \u0026 트렌드\n* **아이티 드론 공습으로 1,250명 사망**: 아이티에서 발생한 드론 공습으로 대규모 사상자가 발생하며 인권단체의 규탄이 이어짐 [^2]\n* **FCC 위원장이 이란 전쟁 비판 보도에 대해 방송사 면허를 위협**: 미국 FCC 위원장이 언론의 전쟁 비판 보도를 이유로 면허 취소를 압박한 논란 [^8]\n* **미국 경제 데이터의 신뢰성이 떨어질 때 벌어지는 일**: 공식 경제 지표의 신뢰도 하락이 시장과 정책 결정에 미치는 파급 효과 분석 [^14]\n* **OnlyFans ‘채터(Chatter)’로 일하는 삶**: 크리에이터를 대신해 팬들과 메시지를 주고받는 온리팬스 '채터'들의 노동 실태 [^21]\n* **Wikipedia Admin David Gerard Launders His Grudges...**: 위키백과 관리자가 개인적인 원한을 공적 기록에 반영하고 있다는 비판적 폭로 [^27]\n* **The US Is Counting Traffic Deaths Wrong**: 미국 교통사고 사망자 통계 산정 방식의 오류와 그로 인한 정책적 사각지대 지적 [^29]\n* **The Escalation Trap**: 현재 가시화되고 있는 4가지 전략적 에스컬레이션 패턴과 함정에 대한 지정학/사회적 분석 [^36]\n* **Are Computers Making Society More Unequal? (2013)**: 컴퓨터와 기술 발전이 사회적 불평등을 심화시키는지에 대한 2013년의 통찰 깊은 기사 [^37]\n\n#### 🔬 과학 \u0026 우주\n* **물속에서도 숨 쉬며 익사 위기에서 살아남는 뒤영벌 여왕벌**: 물속에서 최대 일주일간 생존할 수 있는 뒤영벌 여왕벌의 놀라운 생존 메커니즘 발견 [^3]\n* **Dassault Starts Vortex Spaceplane Parts Production**: 다쏘(Dassault)가 차세대 보텍스(Vortex) 우주 비행기의 부품 생산을 본격적으로 시작함 [^39]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘 브리핑에서는 하드웨어(엔비디아 HBM4), 소프트웨어(MCP 아키텍처), 그리고 생명과학(AI 암 치료)에 이르기까지 AI가 촉발한 거대한 연쇄 반응을 목격할 수 있었습니다. 특히 트래비스 캘러닉의 '특수 목적 로봇' 출범은 기술이 화려한 쇼케이스를 넘어 실질적인 산업 인프라로 스며들고 있음을 시사합니다. 기술의 발전 속도만큼이나, 몬태나주의 '컴퓨팅 권리법'처럼 이를 수용하고 통제하려는 사회적 합의의 과정도 흥미롭게 지켜봐야 할 시점입니다.\n\n[^1]: VS Code 1.112 Insiders - https://code.visualstudio.com/updates/v1_112\n[^2]: 아이티 드론 공습으로 1,250명 사망, 인권단체 “초법적 살해” 규탄 - https://news.hada.io/topic?id=27534\n[^3]: 물속에서도 숨 쉬며 익사 위기에서 살아남는 뒤영벌 여왕벌 - https://news.hada.io/topic?id=27533\n[^4]: Han – Rust로 작성된 한국어 기반 컴파일형 프로그래밍 언어 - https://news.hada.io/topic?id=27532\n[^5]: 창업자를 위한 마케팅 - https://news.hada.io/topic?id=27531\n[^6]: MCP는 죽었다; MCP 만세 - https://news.hada.io/topic?id=27530\n[^7]: GIMP 3.2 출시 - https://news.hada.io/topic?id=27529\n[^8]: FCC 위원장이 이란 전쟁 비판 보도에 대해 방송사 면허를 위협 - https://news.hada.io/topic?id=27528\n[^9]: 너의 실수까지 포함해 너를 알게 해줘 - https://news.hada.io/topic?id=27527\n[^10]: Claude 2026년 3월 사용량 프로모션 - https://news.hada.io/topic?id=27526\n[^11]: Show GN: Claude Code 세션의 컨텍스트를 쉽게 파악 가능한 플러그인 - https://news.hada.io/topic?id=27525\n[^12]: 몬태나, ‘컴퓨팅 권리법’ 제정으로 전국 첫 사례 기록 - https://news.hada.io/topic?id=27524\n[^13]: 안전한 AI 에이전트는 어떻게 만드는가 — NanoClaw 오픈소스 컨테이너 아키텍처 - https://news.hada.io/topic?id=27522\n[^14]: 미국 경제 데이터의 신뢰성이 떨어질 때 벌어지는 일 - https://news.hada.io/topic?id=27521\n[^15]: Show GN: 티와모: LCK 코인거래소 - https://news.hada.io/topic?id=27520\n[^16]: Show GN: 다이소/올영/메가박스 재고 뺑뺑이 끝내기 - https://news.hada.io/topic?id=27519\n[^17]: Show GN: Konglish/Kanabarum – 한국어 외래어 발음 변환 라이브러리 - https://news.hada.io/topic?id=27518\n[^18]: Ageless Linux – 나이를 알 수 없는 인간을 위한 소프트웨어 - https://news.hada.io/topic?id=27517\n[^19]: ChatGPT와 mRNA 백신으로 반려견 암 치료 — 인간 암 치료에도 희망 - https://news.hada.io/topic?id=27516\n[^20]: diffnav - GitHub 스타일의 Git diff pager - https://news.hada.io/topic?id=27515\n[^21]: OnlyFans ‘채터(Chatter)’로 일하는 삶 - https://news.hada.io/topic?id=27514\n[^22]: 진짜 내 일을 위한 Agentic Workflow - https://news.hada.io/topic?id=27513\n[^23]: 맥북 네오에서 Parallels 가상 머신으로 윈도우 실행 가능 확인 - https://news.hada.io/topic?id=27512\n[^24]: Hammerspoon - Lua로 구현된 강력한 macOS 데스크톱 자동화 도구 - https://news.hada.io/topic?id=27511\n[^25]: Show HN: Decision Guardian v1.2.0 – enforce architectural decisions at PR time - https://news.ycombinator.com/item?id=47392464\n[^26]: Cover Flow with Modern CSS: Scroll-Driven Animations in Action (2025) - https://addyosmani.com/blog/coverflow/\n[^27]: Wikipedia Admin David Gerard Launders His Grudges into the Public Record - https://www.tracingwoodgrains.com/p/reliable-sources-how-wikipedia-admin\n[^28]: Show HN: Focus mode, browser ext to block distracting websites - https://github.com/the-wc/focus-mode\n[^29]: The US Is Counting Traffic Deaths Wrong - https://www.bloomberg.com/news/articles/2026-03-10/how-deadly-are-us-roads-it-depends-on-how-you-count-traffic-fatalities\n[^30]: I'm building a way to verify resume claims with AI - https://news.ycombinator.com/item?id=47392424\n[^31]: The Gen-Z Founders Trying to Get Guys to Stop Watching Porn - https://nymag.com/intelligencer/article/porn-addiction-app-quittr-alex-slater-connor-mclaren.html\n[^32]: From CIA to CEO, Spies Step Out of the Shadows and into the Boardroom - https://www.bloomberg.com/news/features/2026-03-13/former-cia-spies-launch-defense-tech-startups-to-tap-338-billion-market\n[^33]: AI-as-Code for Agent Factories - https://re-cinq.github.io/wave/\n[^34]: I built a game flop tracker – got covered by Forbes and DDoS'd the same weekend - https://flopathon.cc\n[^35]: Multi-agent fleet management for coding agents - https://github.com/supaku/agentfactory\n[^36]: The Escalation Trap - https://escalationtrap.substack.com/p/four-strategic-patterns-now-visible\n[^37]: Are Computers Making Society More Unequal? (2013) - https://www.newyorker.com/business/currency/are-computers-making-society-more-unequal\n[^38]: Nvidia is cornering the HBM4 market - https://www.buysellram.com/blog/dram-shortage-wont-end-in-2026-why-nvidia-just-told-fabs-to-build-more-well-buy-it-all/\n[^39]: Dassault Starts Vortex Spaceplane Parts Production - https://aviationweek.com/space/launch-vehicles-propulsion/dassault-starts-vortex-spaceplane-parts-production\n[^40]: Travis Kalanick Debuts Plan for 'Gainfully Employed Robots' - https://www.bloomberg.com/news/articles/2026-03-13/ex-uber-ceo-kalanick-debuts-plan-for-gainfully-employed-robots\n[^41]: You're not immune to propaganda [video] - https://www.youtube.com/watch?v=dl2fnWIlDZg\n[^42]: Show HN: Tmux-nvim-navigator – Seamless navigation with zero Neovim config - https://github.com/sindrip/tmux-nvim-navigator\n[^43]: POP instruction speed (Jeff Garzik; Linus Torvalds) (2004) - https://yarchive.net/comp/linux/pop_instruction_speed.html\n[^44]: P.U.S..H. Protocol: Self-Referential AI Engine with 6-Node Mesh (React/D3) - https://chailifeotft.github.io/PUSH-Protocol/\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **VS Code 1.112 Insiders**\n   - 출처: Visual Studio Code - Code Editing. Redefined.\n   - 링크: https://code.visualstudio.com/updates/v1_112\n\n2. **아이티 드론 공습으로 1,250명 사망, 인권단체 “초법적 살해” 규탄**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27534\n\n3. **물속에서도 숨 쉬며 익사 위기에서 살아남는 뒤영벌 여왕벌**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27533\n\n4. **Han – Rust로 작성된 한국어 기반 컴파일형 프로그래밍 언어**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27532\n\n5. **창업자를 위한 마케팅**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27531\n\n6. **MCP는 죽었다; MCP 만세**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27530\n\n7. **GIMP 3.2 출시**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27529\n\n8. **FCC 위원장이 이란 전쟁 비판 보도에 대해 방송사 면허를 위협**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27528\n\n9. **너의 실수까지 포함해 너를 알게 해줘**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27527\n\n10. **Claude 2026년 3월 사용량 프로모션**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27526\n\n11. **Show GN: Claude Code 세션의 컨텍스트를 쉽게 파악 가능한 플러그인**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27525\n\n12. **몬태나, ‘컴퓨팅 권리법’ 제정으로 전국 첫 사례 기록**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27524\n\n13. **안전한 AI 에이전트는 어떻게 만드는가 — NanoClaw 오픈소스 컨테이너 아키텍처**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27522\n\n14. **미국 경제 데이터의 신뢰성이 떨어질 때 벌어지는 일**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27521\n\n15. **Show GN: 티와모: LCK 코인거래소**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27520\n\n16. **Show GN: 다이소/올영/메가박스 재고 뺑뺑이 끝내기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27519\n\n17. **Show GN: Konglish/Kanabarum – 한국어 외래어 발음 변환 라이브러리**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27518\n\n18. **Ageless Linux – 나이를 알 수 없는 인간을 위한 소프트웨어**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27517\n\n19. **ChatGPT와 mRNA 백신으로 반려견 암 치료 — 인간 암 치료에도 희망**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27516\n\n20. **diffnav - GitHub 스타일의 Git diff pager**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27515\n\n21. **OnlyFans ‘채터(Chatter)’로 일하는 삶**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27514\n\n22. **진짜 내 일을 위한 Agentic Workflow**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27513\n\n23. **맥북 네오에서 Parallels 가상 머신으로 윈도우 실행 가능 확인**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27512\n\n24. **Hammerspoon - Lua로 구현된 강력한 macOS 데스크톱 자동화 도구**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27511\n\n25. **Show HN: Decision Guardian v1.2.0 – enforce architectural decisions at PR time**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=47392464\n\n26. **Cover Flow with Modern CSS: Scroll-Driven Animations in Action (2025)**\n   - 출처: Hacker News\n   - 링크: https://addyosmani.com/blog/coverflow/\n\n27. **Wikipedia Admin David Gerard Launders His Grudges into the Public Record**\n   - 출처: Hacker News\n   - 링크: https://www.tracingwoodgrains.com/p/reliable-sources-how-wikipedia-admin\n\n28. **Show HN: Focus mode, browser ext to block distracting websites**\n   - 출처: Hacker News\n   - 링크: https://github.com/the-wc/focus-mode\n\n29. **The US Is Counting Traffic Deaths Wrong**\n   - 출처: Hacker News\n   - 링크: https://www.bloomberg.com/news/articles/2026-03-10/how-deadly-are-us-roads-it-depends-on-how-you-count-traffic-fatalities\n\n30. **I'm building a way to verify resume claims with AI**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=47392424\n\n31. **The Gen-Z Founders Trying to Get Guys to Stop Watching Porn**\n   - 출처: Hacker News\n   - 링크: https://nymag.com/intelligencer/article/porn-addiction-app-quittr-alex-slater-connor-mclaren.html\n\n32. **From CIA to CEO, Spies Step Out of the Shadows and into the Boardroom**\n   - 출처: Hacker News\n   - 링크: https://www.bloomberg.com/news/features/2026-03-13/former-cia-spies-launch-defense-tech-startups-to-tap-338-billion-market\n\n33. **AI-as-Code for Agent Factories**\n   - 출처: Hacker News\n   - 링크: https://re-cinq.github.io/wave/\n\n34. **I built a game flop tracker – got covered by Forbes and DDoS'd the same weekend**\n   - 출처: Hacker News\n   - 링크: https://flopathon.cc\n\n35. **Multi-agent fleet management for coding agents**\n   - 출처: Hacker News\n   - 링크: https://github.com/supaku/agentfactory\n\n36. **The Escalation Trap**\n   - 출처: Hacker News\n   - 링크: https://escalationtrap.substack.com/p/four-strategic-patterns-now-visible\n\n37. **Are Computers Making Society More Unequal? (2013)**\n   - 출처: Hacker News\n   - 링크: https://www.newyorker.com/business/currency/are-computers-making-society-more-unequal\n\n38. **Nvidia is cornering the HBM4 market**\n   - 출처: Hacker News\n   - 링크: https://www.buysellram.com/blog/dram-shortage-wont-end-in-2026-why-nvidia-just-told-fabs-to-build-more-well-buy-it-all/\n\n39. **Dassault Starts Vortex Spaceplane Parts Production**\n   - 출처: Hacker News\n   - 링크: https://aviationweek.com/space/launch-vehicles-propulsion/dassault-starts-vortex-spaceplane-parts-production\n\n40. **Travis Kalanick Debuts Plan for 'Gainfully Employed Robots'**\n   - 출처: Hacker News\n   - 링크: https://www.bloomberg.com/news/articles/2026-03-13/ex-uber-ceo-kalanick-debuts-plan-for-gainfully-employed-robots\n\n41. **You're not immune to propaganda [video]**\n   - 출처: Hacker News\n   - 링크: https://www.youtube.com/watch?v=dl2fnWIlDZg\n\n42. **Show HN: Tmux-nvim-navigator – Seamless navigation with zero Neovim config**\n   - 출처: Hacker News\n   - 링크: https://github.com/sindrip/tmux-nvim-navigator\n\n43. **POP instruction speed (Jeff Garzik; Linus Torvalds) (2004)**\n   - 출처: Hacker News\n   - 링크: https://yarchive.net/comp/linux/pop_instruction_speed.html\n\n44. **P.U.S..H. Protocol: Self-Referential AI Engine with 6-Node Mesh (React/D3)**\n   - 출처: Hacker News\n   - 링크: https://chailifeotft.github.io/PUSH-Protocol/\n\n\n",
+  "articles": [
+    {
+      "title": "VS Code 1.112 Insiders",
+      "link": "https://code.visualstudio.com/updates/v1_112",
+      "source": "Visual Studio Code - Code Editing. Redefined.",
+      "category": "tech",
+      "publishedAt": "2026-03-18T17:00:00Z",
+      "description": "\n      \u003cp\u003eLearn what's new in Visual Studio Code 1.112 (Insiders)\u003c/p\u003e\n      \u003cp\u003e\u003ca href=\"https://code.visualstudio.com/updates/v1_112\"\u003eRead the full article\u003c/a\u003e\u003c/p\u003e\n    "
+    },
+    {
+      "title": "아이티 드론 공습으로 1,250명 사망, 인권단체 “초법적 살해” 규탄",
+      "link": "https://news.hada.io/topic?id=27534",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-16T05:41:11+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e아이티 보안군과 민간 군사계약업체\u003c/strong\u003e가 10개월간 수행한 드론 공습으로 \u003cstrong\u003e1,250명 이상 사망\u003c/strong\u003e, 이 중 \u003cstrong\u003e17명은 어린이\u003c/strong\u003e로 확인됨\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eHuman Rights Watch(HRW)\u003c/strong\u003e 는 이 공격들이 \u003cstrong\u003e범죄조직과의 명확한 연관 없이 민간인을 살상\u003c/str...\u003c/p\u003e"
+    },
+    {
+      "title": "물속에서도 숨 쉬며 익사 위기에서 살아남는 뒤영벌 여왕벌",
+      "link": "https://news.hada.io/topic?id=27533",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-16T05:38:10+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e뒤영벌 여왕벌이 \u003cstrong\u003e물속에서도 호흡하며 일주일 이상 생존\u003c/strong\u003e할 수 있음이 실험으로 확인됨\u003c/li\u003e\n\u003cli\u003e겨울철 \u003cstrong\u003e토양 속에서 휴면(디아포즈)\u003c/strong\u003e 상태로 지내는 여왕벌이 \u003cstrong\u003e침수 상황에서도 산소를 흡수하고 이산화탄소를 배출\u003c/strong\u003e함이 관찰됨\u003c/li\u003e\n\u003cli\u003e연구진은 \u003cstrong\u003e무산...\u003c/p\u003e"
+    },
+    {
+      "title": "Han – Rust로 작성된 한국어 기반 컴파일형 프로그래밍 언어",
+      "link": "https://news.hada.io/topic?id=27532",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-16T05:35:10+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e한글 키워드\u003c/strong\u003e로 작성되는 정적 타입의 \u003cstrong\u003e컴파일형 언어\u003c/strong\u003e로, LLVM IR을 통해 네이티브 바이너리를 생성함\u003c/li\u003e\n\u003cli\u003eRust로 구현된 \u003cstrong\u003e컴파일러와 인터프리터\u003c/strong\u003e를 모두 제공하며, \u003ccode\u003ehgl\u003c/code\u003e CLI로 빌드·실행·REPL·LSP 기능을 지원함\u003c/li\u003e\n\u003cli\u003e\n\u003ccode\u003e함수\u003c/co...\u003c/p\u003e"
+    },
+    {
+      "title": "창업자를 위한 마케팅",
+      "link": "https://news.hada.io/topic?id=27531",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-16T04:37:27+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eSaaS·앱·스타트업의 첫 10·100·1000명 사용자 확보를 위한 실용 자료 모음\u003c/li\u003e\n\u003cli\u003e기술 중심 창업자가 \u003cstrong\u003e예산 없이 초기 사용자 확보\u003c/strong\u003e를 할 수 있도록 돕는 \u003cstrong\u003e실용적 마케팅 자료 모음집\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e런칭 플랫폼, 소셜 미디어, 이메일, 콘텐츠, SEO, 광고, 가격 전략...\u003c/p\u003e"
+    },
+    {
+      "title": "MCP는 죽었다; MCP 만세",
+      "link": "https://news.hada.io/topic?id=27530",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-16T04:34:27+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e최근 \u003cstrong\u003eCLI 중심의 유행\u003c/strong\u003e이 확산되며 MCP가 과거의 기술로 평가받고 있으나, 글은 \u003cstrong\u003e조직 단위의 AI 엔지니어링\u003c/strong\u003e에서는 여전히 MCP가 핵심임을 강조\u003c/li\u003e\n\u003cli\u003eCLI는 \u003cstrong\u003e토큰 절약\u003c/strong\u003e과 단순성에서 장점이 있으나, \u003cstrong\u003e맞춤형 CLI\u003c/strong\u003e의 경우 LLM이 사용법을 학...\u003c/p\u003e"
+    },
+    {
+      "title": "GIMP 3.2 출시",
+      "link": "https://news.hada.io/topic?id=27529",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-16T03:33:14+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e오픈소스 이미지 편집기 GIMP가 \u003cstrong\u003e버전 3.2\u003c/strong\u003e를 공개하며, 3.0 이후 1년간의 개발과 테스트 결과를 반영\u003c/li\u003e\n\u003cli\u003e새 버전은 \u003cstrong\u003e비파괴 레이어(Link Layers, Vector Layers)\u003c/strong\u003e 기능을 도입해 외부 이미지 연결과 벡터 기반 도형 편집을 지원\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eMyPaint 브러시 도구...\u003c/p\u003e"
+    },
+    {
+      "title": "FCC 위원장이 이란 전쟁 비판 보도에 대해 방송사 면허를 위협",
+      "link": "https://news.hada.io/topic?id=27528",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-16T02:37:23+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eFCC 위원장\u003c/strong\u003e이 이란 전쟁 관련 \u003cstrong\u003e비판적 보도\u003c/strong\u003e를 한 방송사들의 \u003cstrong\u003e면허를 위협했다는 주장\u003c/strong\u003e이 제기됨\u003c/li\u003e\n\u003cli\u003e관련 내용은 \u003cstrong\u003eBrendan Carr\u003c/strong\u003e의 X(구 트위터) 계정 게시물로 알려짐\u003c/li\u003e\n\u003cli\u003e게시물에는 “Don’t miss what’s happening. People o...\u003c/p\u003e"
+    },
+    {
+      "title": "너의 실수까지 포함해 너를 알게 해줘",
+      "link": "https://news.hada.io/topic?id=27527",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-16T02:34:23+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eLLM으로 다듬어진 메시지\u003c/strong\u003e가 인간 간의 진짜 의사소통을 흐리게 만든다는 문제 제기\u003c/li\u003e\n\u003cli\u003e사람이 직접 쓴 문장은 \u003cstrong\u003e단어 선택, 어조, 생략과 강조의 뉘앙스\u003c/strong\u003e를 통해 관계 맥락을 형성함\u003c/li\u003e\n\u003cli\u003e반면 LLM이 수정한 문장은 이러한 \u003cstrong\u003e개인적 표현의 흔적\u003c/strong\u003e을 제...\u003c/p\u003e"
+    },
+    {
+      "title": "Claude 2026년 3월 사용량 프로모션",
+      "link": "https://news.hada.io/topic?id=27526",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-16T00:33:06+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e2026년 3월 13일부터 27일까지 \u003cstrong\u003e비혼잡 시간대(미 동부시간 오전 8시~오후 2시 외)\u003c/strong\u003e 에 Claude 사용 한도가 \u003cstrong\u003e2배로 확대\u003c/strong\u003e됨\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eFree, Pro, Max, Team 요금제\u003c/strong\u003e 사용자에게 자동 적용되며, \u003cstrong\u003eEnterprise 요금제는 제외\u003c/strong\u003e됨\u003c/li\u003e\n\u003cli\u003e웹, 데스...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: Claude Code 세션의 컨텍스트를 쉽게 파악 가능한 플러그인",
+      "link": "https://news.hada.io/topic?id=27525",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-15T23:47:48+09:00",
+      "description": "\u003cp\u003eClaude Code를 터미널 여러 개에서 동시에 돌리다 보면,\u003cbr /\u003e\n탭을 전환할 때마다 \u0026quot;여기서 뭐 하고 있었지?\u0026quot; 하는 순간이 생기기 마련입니다.\u003cbr /\u003e\n스크롤을 올려서 이전 대화를 읽거나, 기억에 의존해야 하는데, 세션이 3-4개만 되어도 꽤 혼란스럽습니다.\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003eclaude-recall\u003c/code\u003e은 이 문제"
+    },
+    {
+      "title": "몬태나, ‘컴퓨팅 권리법’ 제정으로 전국 첫 사례 기록",
+      "link": "https://news.hada.io/topic?id=27524",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-15T23:33:17+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e몬태나주는 \u003cstrong\u003e‘Right to Compute Act(SB 212)’\u003c/strong\u003e 를 통과시켜 시민이 \u003cstrong\u003e컴퓨팅 및 인공지능 도구를 소유·활용할 권리\u003c/strong\u003e를 보장하는 첫 주가 됨\u003c/li\u003e\n\u003cli\u003e법안은 \u003cstrong\u003e정부 규제의 엄격한 제한\u003c/strong\u003e과 \u003cstrong\u003eAI 기반 중요 인프라의 안전 프로토콜\u003c/strong\u003e을 의무화함\u003c/li...\u003c/p\u003e"
+    },
+    {
+      "title": "안전한 AI 에이전트는 어떻게 만드는가 — NanoClaw 오픈소스 컨테이너 아키텍처",
+      "link": "https://news.hada.io/topic?id=27522",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-15T21:22:15+09:00",
+      "description": "\u003cp\u003eAI 에이전트에게 Bash를 주면 강력해지지만, 동시에 위험해진다. NanoClaw는 Claude Agent SDK(Claude Code)를 Docker 컨테이너 안에 격리해서 이 문제를 푸는 오픈소스 아키텍처다.\u003c/p\u003e\n\u003cp\u003eHost-Container 분리로 AI 작업을 격리하고, stdin/stdout 파이프로 포트 없이 통신하고, 볼륨 마운트 허용 목록으로 파일시스"
+    },
+    {
+      "title": "미국 경제 데이터의 신뢰성이 떨어질 때 벌어지는 일",
+      "link": "https://news.hada.io/topic?id=27521",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-15T15:33:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e미국 통계 데이터의 신뢰성 약화\u003c/strong\u003e가 정책 결정, 투자 판단, 시민 참여에 심각한 영향을 미치고 있음\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e응답률 하락\u003c/strong\u003e, \u003cstrong\u003e예산 축소\u003c/strong\u003e, \u003cstrong\u003e정치적 간섭\u003c/strong\u003e이 주요 원인으로 지적되며, 이는 데이터 대표성과 투명성을 훼손함\u003c/li\u003e\n\u003cli\u003e민간 데이...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: 티와모: LCK 코인거래소",
+      "link": "https://news.hada.io/topic?id=27520",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-15T14:32:44+09:00",
+      "description": "\u003ch2\u003e팀 코인을 거래할 수 있는 LCK 팬 커뮤니티.\u003c/h2\u003e\n\u003cp\u003e저는 시즌 2 부터 LCK 를 사랑해온 팬입니다.\u003c/p\u003e\n\u003cp\u003e조용히 즐기는 입장에서\u003cbr /\u003e\n최근들어 팬덤의 탈을 쓴 악플러들이 모든 커뮤니티 게시판을 점거해버려서 LCK 관련 글을 보기가 점점 힘들어졌습니다..\u003c/p\u003e\n\u003cp\u003e이러다가 선수 한 명 잡겠다 싶더라구요.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show GN: 다이소/올영/메가박스 재고 뺑뺑이 끝내기",
+      "link": "https://news.hada.io/topic?id=27519",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-15T13:23:07+09:00",
+      "description": "\u003cp\u003e안녕하세요~! 이번에 hmmhmmhm님이 올려주신 다이소 MCP를 활용해서 웹페이지를 제작했습니다\u003c/p\u003e\n\u003cp\u003e주요 기능은\u003cbr /\u003e\n3사 통합 검색: 다이소, 올리브영, 메가박스를 한 곳에서 검색\u003cbr /\u003e\n내 주변 지도: 지금 내 위치에서 가장 가까운 매장의 재고를 바로 확인\u003cbr /\u003e\n무료 재입고 알림: 품절된 제품이 들어오면 푸"
+    },
+    {
+      "title": "Show GN: Konglish/Kanabarum – 한국어 외래어 발음 변환 라이브러리",
+      "link": "https://news.hada.io/topic?id=27518",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-15T13:09:41+09:00",
+      "description": "\u003cp\u003e콩글리시, 콩패니즈 변환 라이브러리 제작했습니다.\u003cbr /\u003e\n(thank you → 땡큐, かわいい → 카와이)\u003c/p\u003e\n\u003cp\u003e본 프로젝트는 학술적 정합성보다 '한국인이 일상적으로 쓰고 읽는 표기'에 최적화된 오픈소스 라이브러리입니다.\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e\n\u003cp\u003e제작 동기\u003cbr /\u003e\n•\u0026quot;Blue Valentine\u0026quot;이라는 노래를 검색할 때,"
+    },
+    {
+      "title": "Ageless Linux – 나이를 알 수 없는 인간을 위한 소프트웨어",
+      "link": "https://news.hada.io/topic?id=27517",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-15T12:33:17+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eDebian 기반 운영체제\u003c/strong\u003e로, 사용자의 나이를 묻거나 저장하지 않는 것을 핵심 원칙으로 함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e캘리포니아 디지털 연령 보증법(AB 1043)\u003c/strong\u003e 의 나이 확인 의무 조항에 대해 \u003cstrong\u003e의도적 비준수(noncompliance)\u003c/strong\u003e 상태를 선언\u003c/li\u003e\n\u003cli\u003e법이 정의한 “운영체제 제...\u003c/p\u003e"
+    },
+    {
+      "title": "ChatGPT와 mRNA 백신으로 반려견 암 치료 — 인간 암 치료에도 희망",
+      "link": "https://news.hada.io/topic?id=27516",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-15T10:07:14+09:00",
+      "description": "\u003cp\u003e시드니의 테크 기업가 Paul Conyngham은 2024년 반려견 Rosie가 악성 비만세포종 진단을 받자 ChatGPT를 활용해 치료 아이디어를 탐색하고 유전자 데이터를 분석했습니다. UNSW 연구진과 협력해 DNA 시퀀싱으로 정상세포와 암세포의 돌연변이를 비교하고, 머신러닝 알고리즘으로 치료 타깃을 특정한 뒤 맞춤형 mRNA 백...\u003c/p\u003e"
+    },
+    {
+      "title": "diffnav - GitHub 스타일의 Git diff pager",
+      "link": "https://news.hada.io/topic?id=27515",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-15T09:31:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e\u003ca href=\"https://github.com/dandavison/delta\"\u003edelta\u003c/a\u003e\u003c/strong\u003e 의 렌더링 기능을 기반으로 \u003cstrong\u003eGitHub의 파일 트리 UI\u003c/strong\u003e를 \u003cstrong\u003e터미널\u003c/strong\u003e 환경에서 재현\u003c/li\u003e\n\u003cli\u003e파일 트리와 diff 내용을 \u003cstrong\u003e동시에 표시\u003c/strong\u003e해 대규모 코드 변경 내역을 \u003cstrong\u003e빠르게 시각적...\u003c/p\u003e"
+    },
+    {
+      "title": "OnlyFans ‘채터(Chatter)’로 일하는 삶",
+      "link": "https://news.hada.io/topic?id=27514",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-15T09:15:34+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eOnlyFans의 유료 구독자와 채팅하는 업무를 대행하는 \u003cstrong\u003e'채터'\u003c/strong\u003e 라 불리는 저임금 노동자들의 실태를 필리핀 현지 종사자 인터뷰를 통해 조명\u003c/li\u003e\n\u003cli\u003e필리핀 거주 한 여성은 고수익 OnlyFans 모델을 사칭하며 \u003cstrong\u003e시급 2달러 미만\u003c/strong\u003e으로 팬들과 성적 채팅(sexting)을 하는 업무의 고...\u003c/p\u003e"
+    },
+    {
+      "title": "진짜 내 일을 위한 Agentic Workflow",
+      "link": "https://news.hada.io/topic?id=27513",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-15T08:57:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eLablup의 신정규 대표가 \u003cstrong\u003e\u003ca href=\"https://go.backend.ai/ko/\"\u003eBackend.AI:GO\u003c/a\u003e\u003c/strong\u003e 를 40일간 개발하며 약 100만 줄의 코드를 \u003cstrong\u003e130억 토큰\u003c/strong\u003e으로 생성한 경험을 공유\u003c/li\u003e\n\u003cli\u003e에이전트 코딩 시대에는 \u003cstrong\u003e토큰 사용량\u003c/strong\u003e이 \u003cstrong\u003eIT 기업의 경쟁력\u003c/strong\u003e과 직결...\u003c/p\u003e"
+    },
+    {
+      "title": "맥북 네오에서 Parallels 가상 머신으로 윈도우 실행 가능 확인",
+      "link": "https://news.hada.io/topic?id=27512",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-15T07:50:36+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e가상화 소프트웨어 \u003cstrong\u003eParallels Desktop\u003c/strong\u003e이 \u003cstrong\u003eMacBook Neo\u003c/strong\u003e에서 정상 작동함이 확인되었으며, \u003cstrong\u003e기본 사용성 테스트\u003c/strong\u003e를 통과함\u003c/li\u003e\n\u003cli\u003e다만 \u003cstrong\u003e8GB RAM\u003c/strong\u003e 제한으로 인해 \u003cstrong\u003eWindows 11 VM 실행 시 macOS와 동시 사용 시 메모리 부족 가능성\u003c/str...\u003c/p\u003e"
+    },
+    {
+      "title": "Hammerspoon - Lua로 구현된 강력한 macOS 데스크톱 자동화 도구",
+      "link": "https://news.hada.io/topic?id=27511",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-15T07:33:11+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003emacOS 환경을 \u003cstrong\u003eLua 스크립트로 제어\u003c/strong\u003e할 수 있는 오픈소스 자동화 도구로, 운영체제와 스크립팅 엔진을 연결하는 \u003cstrong\u003e브리지 역할\u003c/strong\u003e을 수행\u003c/li\u003e\n\u003cli\u003e다양한 \u003cstrong\u003e확장 모듈(extensions)\u003c/strong\u003e 을 통해 시스템 기능을 노출하고, 이를 조합해 창 관리, 입력 제어 등 복잡한 작업...\u003c/p\u003e"
+    },
+    {
+      "title": "Show HN: Decision Guardian v1.2.0 – enforce architectural decisions at PR time",
+      "link": "https://news.ycombinator.com/item?id=47392464",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-15T22:06:01Z",
+      "description": "\n\u003cp\u003eThe tool is simple. You write your architectural decisions in a Markdown file what was decided, why, what was rejected. Decision Guardian maps those decisions to file glob patterns. When a PR touches a matched file, it posts a comment explaining the relevant decision.\u003cp\u003eNo database. No signup. Two lines of GitHub Actions YAML.\u003cp\u003ev1.2.0 fixes several rule-engine bugs that surfaced from real usage:\u003cp\u003eSilent false-positives when content rules had no type field (every template shipped broken)\u003cp\u003eOR-only logic for multi-condition rules with no way to require ALL conditions\u003cp\u003eDeleted lines were invisible to all matchers — removing guarded code never triggered a warning\u003cp\u003ejson_path rules failed silently for nested value edits because parent keys only appear as context lines in diffs\u003cp\u003eThe fixes came directly from people running this on production repositories and reporting what wasn't working. That feedback loop has been more valuable than anything I designed upfront.\u003cp\u003eIt also works as an npx CLI for pre-push checks outside GitHub Actions (GitLab CI, Jenkins, CircleCI, local hooks).\u003cp\u003eRepo: \u003ca href=\"https://github.com/DecispherHQ/decision-guardian\" rel=\"nofollow\"\u003ehttps://github.com/DecispherHQ/decision-guardian\u003c/a\u003e\nnpm: npx decision-guardian check\u003cp\u003eWould love your feedback\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47392464\"\u003ehttps://news.ycombinator.com/item?id=47392464\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Cover Flow with Modern CSS: Scroll-Driven Animations in Action (2025)",
+      "link": "https://addyosmani.com/blog/coverflow/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-15T22:05:24Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://addyosmani.com/blog/coverflow/\"\u003ehttps://addyosmani.com/blog/coverflow/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47392457\"\u003ehttps://news.ycombinator.com/item?id=47392457\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Wikipedia Admin David Gerard Launders His Grudges into the Public Record",
+      "link": "https://www.tracingwoodgrains.com/p/reliable-sources-how-wikipedia-admin",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-15T22:02:49Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.tracingwoodgrains.com/p/reliable-sources-how-wikipedia-admin\"\u003ehttps://www.tracingwoodgrains.com/p/reliable-sources-how-wikipedia-admin\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47392434\"\u003ehttps://news.ycombinator.com/item?id=47392434\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Focus mode, browser ext to block distracting websites",
+      "link": "https://github.com/the-wc/focus-mode",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-15T22:02:28Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/the-wc/focus-mode\"\u003ehttps://github.com/the-wc/focus-mode\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47392431\"\u003ehttps://news.ycombinator.com/item?id=47392431\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The US Is Counting Traffic Deaths Wrong",
+      "link": "https://www.bloomberg.com/news/articles/2026-03-10/how-deadly-are-us-roads-it-depends-on-how-you-count-traffic-fatalities",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-15T22:02:26Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.bloomberg.com/news/articles/2026-03-10/how-deadly-are-us-roads-it-depends-on-how-you-count-traffic-fatalities\"\u003ehttps://www.bloomberg.com/news/articles/2026-03-10/how-deadly-are-us-roads-it-depends-on-how-you-count-traffic-fatalities\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47392430\"\u003ehttps://news.ycombinator.com/item?id=47392430\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "I'm building a way to verify resume claims with AI",
+      "link": "https://news.ycombinator.com/item?id=47392424",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-15T22:01:46Z",
+      "description": "\n\u003cp\u003eA job post gets 500 applicants in an hour. Recruiters spend 6 seconds per resume. Nobody checks if any of it is true.\u003cp\u003eWe read your resume, test every skill you claimed, and give you a public profile that proves it. Employers stop guessing. Candidates with real skills stop losing to people who write better CVs.\u003cp\u003eIs this worth building?\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47392424\"\u003ehttps://news.ycombinator.com/item?id=47392424\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Gen-Z Founders Trying to Get Guys to Stop Watching Porn",
+      "link": "https://nymag.com/intelligencer/article/porn-addiction-app-quittr-alex-slater-connor-mclaren.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-15T22:00:51Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://nymag.com/intelligencer/article/porn-addiction-app-quittr-alex-slater-connor-mclaren.html\"\u003ehttps://nymag.com/intelligencer/article/porn-addiction-app-quittr-alex-slater-connor-mclaren.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47392415\"\u003ehttps://news.ycombinator.com/item?id=47392415\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "From CIA to CEO, Spies Step Out of the Shadows and into the Boardroom",
+      "link": "https://www.bloomberg.com/news/features/2026-03-13/former-cia-spies-launch-defense-tech-startups-to-tap-338-billion-market",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-15T22:00:12Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.bloomberg.com/news/features/2026-03-13/former-cia-spies-launch-defense-tech-startups-to-tap-338-billion-market\"\u003ehttps://www.bloomberg.com/news/features/2026-03-13/former-cia-spies-launch-defense-tech-startups-to-tap-338-billion-market\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47392408\"\u003ehttps://news.ycombinator.com/item?id=47392408\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "AI-as-Code for Agent Factories",
+      "link": "https://re-cinq.github.io/wave/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-15T21:59:33Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://re-cinq.github.io/wave/\"\u003ehttps://re-cinq.github.io/wave/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47392399\"\u003ehttps://news.ycombinator.com/item?id=47392399\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "I built a game flop tracker – got covered by Forbes and DDoS'd the same weekend",
+      "link": "https://flopathon.cc",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-15T21:59:13Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://flopathon.cc\"\u003ehttps://flopathon.cc\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47392394\"\u003ehttps://news.ycombinator.com/item?id=47392394\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 2\u003c/p\u003e\n"
+    },
+    {
+      "title": "Multi-agent fleet management for coding agents",
+      "link": "https://github.com/supaku/agentfactory",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-15T21:58:53Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/supaku/agentfactory\"\u003ehttps://github.com/supaku/agentfactory\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47392389\"\u003ehttps://news.ycombinator.com/item?id=47392389\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Escalation Trap",
+      "link": "https://escalationtrap.substack.com/p/four-strategic-patterns-now-visible",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-15T21:57:34Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://escalationtrap.substack.com/p/four-strategic-patterns-now-visible\"\u003ehttps://escalationtrap.substack.com/p/four-strategic-patterns-now-visible\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47392380\"\u003ehttps://news.ycombinator.com/item?id=47392380\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Are Computers Making Society More Unequal? (2013)",
+      "link": "https://www.newyorker.com/business/currency/are-computers-making-society-more-unequal",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-15T21:57:13Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.newyorker.com/business/currency/are-computers-making-society-more-unequal\"\u003ehttps://www.newyorker.com/business/currency/are-computers-making-society-more-unequal\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47392375\"\u003ehttps://news.ycombinator.com/item?id=47392375\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Nvidia is cornering the HBM4 market",
+      "link": "https://www.buysellram.com/blog/dram-shortage-wont-end-in-2026-why-nvidia-just-told-fabs-to-build-more-well-buy-it-all/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-15T21:54:10Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.buysellram.com/blog/dram-shortage-wont-end-in-2026-why-nvidia-just-told-fabs-to-build-more-well-buy-it-all/\"\u003ehttps://www.buysellram.com/blog/dram-shortage-wont-end-in-2026-why-nvidia-just-told-fabs-to-build-more-well-buy-it-all/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47392355\"\u003ehttps://news.ycombinator.com/item?id=47392355\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Dassault Starts Vortex Spaceplane Parts Production",
+      "link": "https://aviationweek.com/space/launch-vehicles-propulsion/dassault-starts-vortex-spaceplane-parts-production",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-15T21:53:33Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://aviationweek.com/space/launch-vehicles-propulsion/dassault-starts-vortex-spaceplane-parts-production\"\u003ehttps://aviationweek.com/space/launch-vehicles-propulsion/dassault-starts-vortex-spaceplane-parts-production\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47392351\"\u003ehttps://news.ycombinator.com/item?id=47392351\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Travis Kalanick Debuts Plan for 'Gainfully Employed Robots'",
+      "link": "https://www.bloomberg.com/news/articles/2026-03-13/ex-uber-ceo-kalanick-debuts-plan-for-gainfully-employed-robots",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-15T21:52:56Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.bloomberg.com/news/articles/2026-03-13/ex-uber-ceo-kalanick-debuts-plan-for-gainfully-employed-robots\"\u003ehttps://www.bloomberg.com/news/articles/2026-03-13/ex-uber-ceo-kalanick-debuts-plan-for-gainfully-employed-robots\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47392347\"\u003ehttps://news.ycombinator.com/item?id=47392347\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "You're not immune to propaganda [video]",
+      "link": "https://www.youtube.com/watch?v=dl2fnWIlDZg",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-15T21:52:55Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.youtube.com/watch?v=dl2fnWIlDZg\"\u003ehttps://www.youtube.com/watch?v=dl2fnWIlDZg\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47392346\"\u003ehttps://news.ycombinator.com/item?id=47392346\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Tmux-nvim-navigator – Seamless navigation with zero Neovim config",
+      "link": "https://github.com/sindrip/tmux-nvim-navigator",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-15T21:51:09Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/sindrip/tmux-nvim-navigator\"\u003ehttps://github.com/sindrip/tmux-nvim-navigator\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47392329\"\u003ehttps://news.ycombinator.com/item?id=47392329\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "POP instruction speed (Jeff Garzik; Linus Torvalds) (2004)",
+      "link": "https://yarchive.net/comp/linux/pop_instruction_speed.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-15T21:51:02Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://yarchive.net/comp/linux/pop_instruction_speed.html\"\u003ehttps://yarchive.net/comp/linux/pop_instruction_speed.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47392328\"\u003ehttps://news.ycombinator.com/item?id=47392328\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "P.U.S..H. Protocol: Self-Referential AI Engine with 6-Node Mesh (React/D3)",
+      "link": "https://chailifeotft.github.io/PUSH-Protocol/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-15T21:50:00Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://chailifeotft.github.io/PUSH-Protocol/\"\u003ehttps://chailifeotft.github.io/PUSH-Protocol/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47392321\"\u003ehttps://news.ycombinator.com/item?id=47392321\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    }
+  ],
+  "generatedAt": "2026-03-16T07:13:23.126825665+09:00"
+}
