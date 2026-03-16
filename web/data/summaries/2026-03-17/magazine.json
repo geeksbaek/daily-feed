@@ -1,0 +1,529 @@
+{
+  "date": "2026-03-17",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2026년 3월 16일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** AI가 코드 작성의 병목을 없애면서 '리뷰'라는 새로운 장벽이 생겨났고, 인프라 기업들은 '토큰'이라는 새로운 과금 단위를 통해 폭발적인 성장을 준비하고 있습니다. 한편, 애플은 H2 칩을 탑재해 한층 똑똑해진 AirPods Max 2를 선보였습니다.\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### Apple, H2 칩으로 무장한 'AirPods Max 2' 전격 공개\n애플이 아이코닉한 오버이어 디자인에 지능형 기능을 대거 탑재한 AirPods Max 2를 발표했습니다. 가장 큰 변화는 H2 칩의 도입입니다. 이를 통해 이전 세대 대비 1.5배 강력해진 액티브 노이즈 캔슬링(ANC)을 제공하며, 주변 환경에 맞춰 소음을 조절하는 '적응형 오디오(Adaptive Audio)'와 대화 시 볼륨을 낮춰주는 '대화 인지(Conversation Awareness)' 기능이 추가되었습니다. \n\n특히 주목할 점은 Apple Intelligence를 기반으로 한 '실시간 번역(Live Translation)' 기능과 USB-C 케이블 연결 시 지원되는 24-bit/48kHz 무손실 오디오입니다. 크리에이터를 위한 스튜디오급 오디오 녹음과 카메라 원격 제어 기능까지 더해져, 단순한 음향 기기를 넘어선 강력한 웨어러블 디바이스로 진화했습니다. 가격은 549달러로 책정되었습니다.\n\u003e **Key Point:** H2 칩과 Apple Intelligence의 결합으로 AirPods Max 2는 단순한 하이엔드 헤드폰을 넘어, 맥락을 이해하고 실시간 번역까지 수행하는 지능형 오디오 컴퓨터로 거듭났습니다. [^3]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. AI 인프라의 새로운 수익 모델: \"토큰 경로에 올라타라\"\n- **What:** 클라우드 시대의 핵심 과금 단위가 '컴퓨팅(Compute)'이었다면, AI 시대의 새로운 경제 단위는 '토큰(Token)'으로 전환되고 있습니다.\n- **Why:** 과거 AWS나 Datadog이 컴퓨팅 사용량에 비례해 성장했듯, 현재 Cursor와 같은 AI 코딩 에이전트들은 사용자가 토큰을 소비하는 경로 한가운데 위치하여 폭발적인 매출(ARR 20억 달러 돌파)을 기록하고 있습니다.\n- **Impact:** 단순히 구독료(Seat)를 받는 것을 넘어, 시스템이 토큰을 생성하고 소비하는 흐름에 비즈니스 모델을 직접 결합하는 기업만이 AI 인프라 시장의 차세대 승자가 될 것입니다. [^42]\n\n### 2. AI 코딩 시대의 역설: 병목은 '작성'이 아닌 '리뷰'\n- **What:** Claude와 같은 AI 도구 덕분에 개발자가 하루에 수천 줄의 코드를 쏟아내면서, 이제 코드 '작성'은 더 이상 병목이 아닙니다.\n- **Why:** 코드는 폭발적으로 생성되지만, 이를 검토하는 인간의 인지 능력은 그대로입니다. 완벽한 TDD(테스트 주도 개발) 환경이 갖춰져 있지 않다면, 쏟아지는 코드를 사람이 일일이 리뷰하는 것은 물리적으로 불가능에 가깝습니다.\n- **Impact:** 제대로 검토되지 않은 코드의 범람(Slopocalypse)은 제품 결함과 성능 저하로 이어지고 있습니다. 업계는 '코드 리뷰를 없애는 방법'이나 AI 보조 코딩 워크플로우에 대한 근본적인 재설계를 고민해야 할 시점입니다. [^9] [^35] [^43]\n\n### 3. 의료 로봇을 위한 물리적 AI(Physical AI)의 도약\n- **What:** 엔비디아와 허깅페이스가 수술용 로봇 등 의료 분야를 위한 최초의 대규모 오픈 데이터셋 'Open-H-Embodiment'와 VLA(Vision-Language-Action) 모델 'GR00T-H'를 공개했습니다.\n- **Why:** 기존 의료 AI가 스캔 이미지를 분석하는 '인지'에 머물렀다면, 실제 의료 현장에서는 물리적인 '행동(Doing)'이 필요합니다. 778시간의 수술 및 초음파 데이터를 학습한 이 모델은 시뮬레이션과 현실의 격차(Sim-to-Real)를 줄여줍니다.\n- **Impact:** 로봇이 스스로 판단하여 봉합 수술을 끝까지 수행하는 등, 의료 로봇 분야에서도 텍스트를 넘어선 '물리적 AI의 ChatGPT 모멘트'가 다가오고 있습니다. [^2]\n\n### 4. 인터넷 검열과 과잉 차단: 클라우드플레어의 '불법복제 방패' 소송\n- **What:** 클라우드플레어가 이탈리아 통신 규제 당국(AGCOM)의 '불법복제 방패(Piracy Shield)' 시스템과 관련해 부과된 1,400만 유로(약 200억 원)의 벌금에 불복해 항소했습니다.\n- **Why:** 이 시스템은 저작권자가 사법부의 감독이나 적법한 절차 없이 30분 만에 특정 IP를 차단할 수 있게 합니다. 이로 인해 우크라이나 정부 사이트, 학교, NGO 등 무고한 웹사이트들이 대거 차단되는 심각한 부작용이 발생했습니다.\n- **Impact:** 글로벌 매출을 기준으로 한 과도한 벌금 부과는 전 세계 테크 기업들에게 위협이 되고 있습니다. 이는 저작권 보호와 개방적이고 안전한 인터넷 인프라 유지 사이의 첨예한 갈등을 보여줍니다. [^56]\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **VS Code 1.112 Insiders** | 개발자들의 필수 에디터, VS Code의 최신 인사이더 빌드 업데이트 [^1] |\n| **Paper** | **Rigor in Analysis (2005)** | 뉴턴에서 코시까지 수학적 엄밀성의 발전을 다룬 흥미로운 논문 (PDF) [^10] |\n| **Paper** | **The flip side of AI ingenuity** | 딥마인드가 분석한 AI의 창의성이 초래할 수 있는 의도치 않은 결과(Specification gaming) [^11] |\n| **Tool** | **ContractShieldAI** | 계약서를 자동으로 분석하고 숨겨진 법적 위험을 표시해주는 AI 도구 [^16] |\n| **Tool** | **AllMy Ledger** | 클라우드 연동 없이 일회성 구매로 안전하게 사용하는 데스크톱 회계 소프트웨어 [^17] |\n| **Tool** | **ThresholdIQ** | 브라우저 기반으로 동작하는 가벼운 이상 탐지(Anomaly detection) 엔진 [^21] |\n| **Library** | **Rust Python Math** | Python의 수학 모듈과 1비트 단위까지 정확히 일치하는 결과를 내는 Rust 라이브러리 [^28] |\n| **Tool** | **oh-my-agent** | 실무 환경에 바로 적용할 수 있는 강력한 멀티 AI IDE 에이전트 하네스 [^30] |\n| **Tool** | **Link Reader App** | 단순한 링크 저장을 넘어, 본문을 읽기 좋게 변환해 다시 볼 수 있게 해주는 유틸리티 [^32] |\n| **Library** | **DOM Compression Agent** | 옴니모달 의존 없이 DOM을 압축하여 토큰을 절약하며 웹을 탐색하는 AI 에이전트 라이브러리 [^34] |\n| **Tool** | **Whennot2meet** | 기존 일정 조율 서비스(When2meet)의 발상을 뒤집어 안 되는 시간을 찾는 리버스 웬투밋 [^38] |\n| **Tool** | **Remodex** | OpenAI Codex를 원격으로 제어(Remote Control)할 수 있게 해주는 도구 [^44] |\n| **Tool** | **Chrome DevTools MCP** | 크롬 개발자 도구를 위한 Model Context Protocol(MCP) 구현체 [^46] |\n| **Tool** | **defuddle** | 어떤 웹페이지든 깔끔한 Markdown 형식으로 즉시 추출해주는 파싱 도구 [^49] |\n| **Tool** | **deploy cli** | LangChain 애플리케이션의 배포 과정을 획기적으로 간소화하는 새로운 CLI 도구 [^55] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 🤖 AI \u0026 LLM\n* **Roche Scales NVIDIA AI Factories Globally**: 로슈, 신약 개발 및 진단 솔루션 가속화를 위해 엔비디아 AI 팩토리를 글로벌 규모로 도입 [^4]\n* **NVIDIA DSX Air Boosts Time to Token**: 엔비디아 DSX Air, 가속화된 시뮬레이션을 통해 AI 팩토리의 토큰 생성 시간 대폭 단축 [^5]\n* **My custom agent used 87% fewer tokens**: MCP 도구에 '스킬'을 부여하여 커스텀 에이전트의 토큰 사용량을 무려 87% 절감한 최적화 사례 [^19]\n* **LLM과의 작업이 지치게 만드는 이유**: 예측 불가능성과 환각 현상 등 LLM을 다루는 개발자들이 겪는 인지적 피로감 분석 [^26]\n* **AI 출력물 무단 복붙 중단(Stop Sloppypasta)**: 무분별한 AI 생성 콘텐츠의 복사·붙여넣기를 경계하자는 자정 캠페인 [^31]\n* **LLM 아키텍처 갤러리**: 다양한 대형 언어 모델들의 내부 아키텍처 구조를 한눈에 볼 수 있게 모아둔 시각적 갤러리 [^36]\n* **AI 시대에도 프로그래밍을 배워야 하는가**: AI 코딩 도구의 비약적 발전 속에서 인간 프로그래머의 근본적인 역할과 학습의 필요성 고찰 [^39]\n* **머신러닝 시각적 입문 (2015)**: 머신러닝의 기본 개념을 직관적인 시각 자료로 훌륭하게 설명한 2015년의 명작 가이드 [^47]\n* **Spotify의 AI DJ의 끔찍한 어리석음**: 스포티파이 AI DJ의 엉뚱한 곡 선정과 맥락 없는 멘트에 대한 유저들의 비판적 리뷰 [^51]\n* **LangChain Announces Enterprise Agentic AI Platform**: 랭체인, 엔비디아와 협력하여 프로덕션 환경에 적합한 엔터프라이즈급 에이전틱 AI 플랫폼 발표 [^54]\n* **Giving you more transparency and control over your Gemini API costs**: 구글, 개발자들이 제미나이 API 비용을 더 투명하게 관리하고 제어할 수 있는 기능 추가 [^60]\n* **Google Cloud and NVIDIA expand AI innovation**: 구글 클라우드와 엔비디아, GTC 2026에서 전 산업에 걸친 AI 인프라 혁신 파트너십 대폭 확대 [^65]\n\n#### 💻 개발 \u0026 인프라\n* **Tell HN: Godaddy DNS resolution down for 2+ hours**: 글로벌 도메인 업체 고대디(GoDaddy)의 DNS 확인 서비스가 2시간 이상 중단된 대규모 장애 사태 [^6]\n* **Redpanda pushes the envelope on Nvidia Vera**: 고성능 스트리밍 플랫폼 레드판다, 엔비디아 베라(Vera) CPU 환경에서 한계에 도전하는 벤치마크 공개 [^24]\n* **Jazzband - 파이썬 오픈소스 커뮤니티 운영 종료**: 파이썬 프로젝트들을 공동으로 유지보수해오던 뜻깊은 커뮤니티 '재즈밴드'의 운영 종료 소식 [^27]\n* **Wayland 컴포지터와 윈도 관리자 분리**: 리눅스 디스플레이 서버인 Wayland 생태계에서 컴포지터와 창 관리자를 분리하려는 기술적 시도 [^29]\n* **Sparkling - TikTok의 크로스 플랫폼 인프라**: 전 세계 수억 명이 사용하는 틱톡의 고성능 크로스 플랫폼 인프라 '스파클링'의 내부 구조 [^41]\n* **49MB 웹페이지**: 최적화 실패와 무거운 리소스 탑재로 인해 단일 웹페이지 용량이 49MB에 달하는 사례를 통한 현대 웹 비판 [^45]\n* **커널 안티치트의 작동 방식**: 교묘해지는 게임 핵을 원천 차단하기 위해 OS 커널 수준에서 동작하는 안티치트 프로그램의 기술적 원리 [^50]\n* **Advancing semantic search for millions of Rovo users**: 아틀라시안, 수백만 Rovo 사용자를 위해 시맨틱 검색 엔진을 고도화한 엔지니어링 여정 공유 [^57]\n* **GitHub for Beginners**: 초보 개발자들을 위해 깃허브 액션(GitHub Actions)을 활용한 CI/CD 파이프라인 구축을 돕는 공식 가이드 [^58]\n* **Why Codex Security Doesn’t Include a SAST Report**: OpenAI 코덱스 보안 검토 과정에서 정적 분석(SAST) 보고서가 의도적으로 제외된 기술적 배경 [^59]\n* **Sunsetting Code With Me**: 젯브레인즈(JetBrains), IDE 내장 실시간 협업 코딩 도구인 'Code With Me'의 서비스 종료 공식 발표 [^64]\n\n#### 🌍 테크 \u0026 사회\n* **Ask HN: How to improve my OSINT middle east monitor**: 중동 지역의 지정학적 이슈를 추적하는 오픈소스 인텔리전스(OSINT) 모니터링 시스템 개선을 위한 집단 지성 요청 [^13]\n* **How Iranians are evading internet blocks**: 이란 국민들이 정부의 강력한 인터넷 검열을 우회하여 해외에 있는 가족들과 연락을 취하는 눈물겨운 방법들 [^14]\n* **Google kept featuring this Chrome extension**: 악성 코드로 변질된 크롬 확장 프로그램을 구글 웹스토어가 수개월간 추천 목록에 방치해 논란이 된 사건 [^15]\n* **The Freedom Stack**: 빅테크 기업의 생태계에 종속되지 않고 개인의 디지털 자유와 프라이버시를 지키기 위한 오픈소스 소프트웨어 스택 제안 [^22]\n* **나스닥의 수치**: 최근 나스닥 시장에서 관찰되는 비정상적인 지표들과 기술주 거품 붕괴 가능성에 대한 우려 섞인 시장 분석 [^33]\n* **유럽의 주권형 오피스 플랫폼 Office.eu**: 미국의 데이터 독점에 맞서 데이터 주권을 강조하는 유럽형 클라우드 오피스 플랫폼 'Office.eu' 공식 출시 [^37]\n* **캐나다 법안 C-22**: 캐나다 국민들의 대규모 메타데이터 수집 및 감시를 합법화하는 C-22 법안을 둘러싼 프라이버시 침해 논란 [^40]\n* **Google.org Future of Work**: 구글.org가 지난 5년간 진행한 '미래의 일자리' 이니셔티브의 성과와 다가올 AI 시대를 위한 사회적 교훈 [^61]\n* **Introducing AI Works for Europe**: 유럽 내 AI 기술 도입을 촉진하고 새로운 일자리 창출을 지원하기 위한 구글의 대규모 이니셔티브 [^62]\n* **Google has signed the Industry Accord Against Online Scams**: 구글, 갈수록 교묘해지는 온라인 사기 및 피싱 범죄 근절을 위해 테크 산업계 공동 협약에 서명 [^63]\n\n#### 🚀 과학, 하드웨어 \u0026 기타\n* **Play all the OnlyConnect connecting walls**: 영국의 유명 퀴즈쇼 'Only Connect'의 악명 높은 연결 벽(Connecting wall) 퍼즐들을 직접 풀어볼 수 있는 사이트 [^7]\n* **Iceland's Chief 'Lava Cooler'**: 아이슬란드의 화산 폭발에 대비해 마을을 덮치는 용암을 물로 식히는 막중한 임무를 맡은 전문가의 이야기 [^8]\n* **Has anyone critically examined Michael Levin's sorting algorithm claims?**: 생물학자 마이클 레빈이 제안한 새로운 정렬 알고리즘의 실제 효용성에 대한 컴퓨터 과학자들의 비판적 검토 [^12]\n* **Orb.Farm**: 브라우저 안에서 모래, 물, 식물, 생물들을 배치해 자신만의 작은 닫힌 생태계를 시뮬레이션할 수 있는 힐링 샌드박스 게임 [^18]\n* **Ending the Sugar Rush**: 숏폼 콘텐츠와 즉각적인 보상 등 단기적인 도파민에 집착하는 현대 사회의 '슈가 러시' 현상을 경계하는 에세이 [^20]\n* **Hydropower Line from Quebec to Queens**: 캐나다 퀘벡의 친환경 수력 발전 전력을 뉴욕 퀸즈까지 끌어와 100만 가구에 공급하는 거대 인프라 프로젝트 [^23]\n* **Solving Problems by Writing Out Questions and Answers**: 복잡한 문제에 직면했을 때, 스스로 묻고 답하는 글쓰기 과정을 통해 해답을 찾아내는 효과적인 방법론 [^25]\n* **랙마운트 수경재배**: 버려진 서버 랙(Rack)의 구조적 장점을 활용하여 공간 효율성을 극대화한 실내 수경재배 시스템 구축 DIY 프로젝트 [^48]\n* **$96 3D 프린팅 로켓**: 단돈 96달러로 제작한 3D 프린팅 로켓이 5달러짜리 저가 센서만으로 비행 중 궤적을 성공적으로 재계산한 놀라운 실험 [^52]\n* **독일 공군, 2029년까지 무인 협동 전투기(UCCA) 제공 예정**: 독일 공군이 유인 전투기를 보조하여 위험한 임무를 수행할 무인 협동 전투기(윙맨)를 2029년까지 실전 배치할 계획 [^53]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘 브리핑에서는 기술의 발전이 가져온 명암이 뚜렷하게 대비되었습니다. AI가 코드를 짜주는 시대가 도래했지만 역설적으로 '코드 리뷰'라는 거대한 병목이 생겨났고, 인프라 기업들은 '토큰'이라는 새로운 금맥을 찾아 비즈니스 모델을 재편하고 있습니다. 기술의 속도를 인간의 인지 능력과 제도가 어떻게 따라잡을 것인지, 그리고 클라우드플레어의 사례처럼 거대 플랫폼의 통제권과 열린 인터넷 사이의 균형을 어떻게 맞출 것인지 깊은 고민이 필요한 시점입니다.\n\n[^1]: VS Code 1.112 Insiders - https://code.visualstudio.com/updates/v1_112\n[^2]: The First Healthcare Robotics Dataset and Foundational Physical AI Models for Healthcare Robotics - https://huggingface.co/blog/nvidia/physical-ai-for-healthcare-robotics\n[^3]: Apple introduces AirPods Max 2 - https://www.apple.com/newsroom/2026/03/apple-introduces-airpods-max-2-powered-by-h2/\n[^4]: Roche Scales NVIDIA AI Factories Globally to Accelerate Drug Discovery, Diagnostic Solutions and Manufacturing Breakthroughs - https://blogs.nvidia.com/blog/roche-ai-factories-omniverse/\n[^5]: NVIDIA DSX Air Boosts Time to Token With Accelerated Simulation for AI Factories - https://blogs.nvidia.com/blog/dsx-air-simulation-ai-factories/\n[^6]: Tell HN: Godaddy DNS resolution down for 2+ hours - https://news.ycombinator.com/item?id=47405685\n[^7]: Play all the OnlyConnect connecting walls - https://1337raspberry.github.io/OCWall/\n[^8]: Iceland's Chief 'Lava Cooler' Is Bracing for the Next Eruption - https://www.nytimes.com/2026/03/15/world/europe/iceland-lava-volcano-eruption-grindavik.html\n[^9]: The bottleneck now is reviewing code, not writing it - https://mystudentfailedtheirmid.substack.com/p/the-bottleneck-now-is-reviewing-code\n[^10]: Rigor in Analysis: From Newton to Cauchy (2005) [pdf] - https://homsigmaa.net/wp-content/uploads/2025/03/2005-Collingwood-Rigor.pdf\n[^11]: The flip side of AI ingenuity (DeepMind, 2020) - https://deepmind.google/blog/specification-gaming-the-flip-side-of-ai-ingenuity/\n[^12]: Has anyone critically examined Michael Levin's sorting algorithm claims? - https://news.ycombinator.com/item?id=47405559\n[^13]: Ask HN: How to improve my OSINT middle east monitor - https://news.ycombinator.com/item?id=47405538\n[^14]: How Iranians are evading internet blocks to contact family abroad - https://www.bbc.com/news/articles/ckgl58y5943o\n[^15]: Google kept featuring this Chrome extension for months after it turned malicious - https://www.xda-developers.com/google-featuring-chrome-extension-months-malicious/\n[^16]: I built an AI tool that analyzes contracts and flags legal risks - https://contractshieldai.com\n[^17]: Show HN: AllMy Ledger – Desktop accounting software, one-time purchase, no cloud - https://allmy.software/ledger/\n[^18]: Orb.Farm - https://orb.farm/\n[^19]: My custom agent used 87% fewer tokens when I gave it Skills for its MCP tools - https://seroter.com/2026/03/16/my-custom-agent-used-87-fewer-tokens-when-i-gave-it-skills-for-its-mcp-tools/\n[^20]: Ending the Sugar Rush - https://civic.io/2026/03/16/ending-the-sugar-rush/\n[^21]: Show HN: ThresholdIQ – Browser-based anomaly detection Engine - https://thresholdiq.app\n[^22]: The Freedom Stack - https://www.ianbetteridge.com/the-freedom-stack/\n[^23]: Hydropower Line from Quebec to Queens Could Power a Million NYC Homes - https://www.nytimes.com/2026/03/16/nyregion/hydro-power-nyc.html\n[^24]: Redpanda pushes the envelope on Nvidia Vera - https://www.redpanda.com/blog/nvidia-vera-cpu-performance-benchmark\n[^25]: Solving Problems by Writing Out Questions and Answers - https://nguyenhuythanh.com/posts/problem-solving-qnas/\n[^26]: LLM과의 작업이 지치게 만드는 이유 - https://news.hada.io/topic?id=27565\n[^27]: Jazzband - 파이썬 오픈소스 커뮤니티 운영 종료 - https://news.hada.io/topic?id=27564\n[^28]: Python 수학 모듈과 1비트까지 일치하는 Rust 라이브러리 - https://news.hada.io/topic?id=27563\n[^29]: Wayland 컴포지터와 윈도 관리자 분리 - https://news.hada.io/topic?id=27561\n[^30]: Show GN: oh-my-agent — 실무용 멀티 AI IDE 에이전트 하네스 - https://news.hada.io/topic?id=27560\n[^31]: AI 출력물 무단 복붙 중단(Stop Sloppypasta) - https://news.hada.io/topic?id=27559\n[^32]: Show GN: 링크만 저장하는 게 아니라, 본문을 읽기 좋게 바꿔 다시 볼 수 있게 하는 앱을 만들었습니다. - https://news.hada.io/topic?id=27558\n[^33]: 나스닥의 수치 - https://news.hada.io/topic?id=27557\n[^34]: Show GN: 옴니모달 의존 없이 DOM 압축으로 Token 친화적이게 웹을 탐색하는 AI 에이전트 라이브러리 - https://news.hada.io/topic?id=27556\n[^35]: AI 보조 코딩이 당신의 업무에 어떤 영향을 주고 있나요? - https://news.hada.io/topic?id=27554\n[^36]: LLM 아키텍처 갤러리 - https://news.hada.io/topic?id=27553\n[^37]: 유럽의 주권형 오피스 플랫폼 Office.eu, 헤이그에서 공식 출시 - https://news.hada.io/topic?id=27552\n[^38]: Show GN: 리버스 웬투밋을 만들었습니다(Whennot2meet) - https://news.hada.io/topic?id=27551\n[^39]: AI 시대에도 프로그래밍을 배워야 하는가 - https://news.hada.io/topic?id=27550\n[^40]: 캐나다 법안 C-22, 캐나다인의 대규모 메타데이터 감시를 의무화 - https://news.hada.io/topic?id=27549\n[^41]: Sparkling - TikTok의 크로스 플랫폼 인프라 - https://news.hada.io/topic?id=27548\n[^42]: \"토큰 경로에 올라타라\" - AI 시대 인프라 기업의 핵심 수익화 전략 - https://news.hada.io/topic?id=27547\n[^43]: 코드 리뷰를 없애는 방법 - https://news.hada.io/topic?id=27546\n[^44]: Remodex - Remote Control for Codex - https://news.hada.io/topic?id=27545\n[^45]: 49MB 웹페이지 - https://news.hada.io/topic?id=27544\n[^46]: Chrome DevTools MCP - https://news.hada.io/topic?id=27543\n[^47]: 머신러닝 시각적 입문 (2015) - https://news.hada.io/topic?id=27542\n[^48]: 랙마운트 수경재배 - https://news.hada.io/topic?id=27541\n[^49]: defuddle - 어떤 웹페이지든 Markdown으로 추출합니다 - https://news.hada.io/topic?id=27540\n[^50]: 커널 안티치트의 작동 방식 - https://news.hada.io/topic?id=27539\n[^51]: Spotify의 AI DJ의 끔찍한 어리석음 - https://news.hada.io/topic?id=27538\n[^52]: $96 3D 프린팅 로켓, $5 센서로 비행 중 궤적 재계산 - https://news.hada.io/topic?id=27537\n[^53]: 독일 공군, 2029년까지 운용 가능한 무인 협동 전투기(UCCA) 제공 예정 - https://news.hada.io/topic?id=27535\n[^54]: LangChain Announces Enterprise Agentic AI Platform Built with NVIDIA - https://blog.langchain.com/nvidia-enterprise/\n[^55]: Introducing deploy cli - https://blog.langchain.com/introducing-deploy-cli/\n[^56]: Standing up for the open Internet: why we appealed Italy’s \"Piracy Shield\" fine - https://blog.cloudflare.com/standing-up-for-the-open-internet/\n[^57]: Advancing semantic search for millions of Rovo users - https://www.atlassian.com/blog/atlassian-engineering/advancing-rovo-semantic-search\n[^58]: GitHub for Beginners: Getting started with GitHub Actions - https://github.blog/developer-skills/github/github-for-beginners-getting-started-with-github-actions/\n[^59]: Why Codex Security Doesn’t Include a SAST Report - https://openai.com/index/why-codex-security-doesnt-include-sast\n[^60]: Giving you more transparency and control over your Gemini API costs - https://blog.google/innovation-and-ai/technology/developers-tools/more-control-over-gemini-api-costs/\n[^61]: Google.org Future of Work: 5 years of impact and lessons for the AI era - https://blog.google/company-news/outreach-and-initiatives/google-org/future-of-work-impact-report/\n[^62]: Introducing AI Works for Europe - https://blog.google/company-news/inside-google/around-the-globe/google-europe/ai-works-for-europe/\n[^63]: Google has signed the Industry Accord Against Online Scams and Fraud. - https://blog.google/innovation-and-ai/technology/safety-security/google-industry-accord-combat-scams-fraud/\n[^64]: Sunsetting Code With Me - https://blog.jetbrains.com/platform/2026/03/sunsetting-code-with-me/\n[^65]: Google Cloud and NVIDIA expand AI innovation across industries at GTC 2026 - https://cloud.google.com/blog/products/compute/google-cloud-ai-infrastructure-at-nvidia-gtc-2026/\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **VS Code 1.112 Insiders**\n   - 출처: Visual Studio Code - Code Editing. Redefined.\n   - 링크: https://code.visualstudio.com/updates/v1_112\n\n2. **The First Healthcare Robotics Dataset and Foundational Physical AI Models for Healthcare Robotics**\n   - 출처: Hugging Face - Blog\n   - 링크: https://huggingface.co/blog/nvidia/physical-ai-for-healthcare-robotics\n\n3. **Apple introduces AirPods Max 2\n**\n   - 출처: Apple Newsroom\n   - 링크: https://www.apple.com/newsroom/2026/03/apple-introduces-airpods-max-2-powered-by-h2/\n\n4. **Roche Scales NVIDIA AI Factories Globally to Accelerate Drug Discovery, Diagnostic Solutions and Manufacturing Breakthroughs**\n   - 출처: NVIDIA Blog\n   - 링크: https://blogs.nvidia.com/blog/roche-ai-factories-omniverse/\n\n5. **NVIDIA DSX Air Boosts Time to Token With Accelerated Simulation for AI Factories**\n   - 출처: NVIDIA Blog\n   - 링크: https://blogs.nvidia.com/blog/dsx-air-simulation-ai-factories/\n\n6. **Tell HN: Godaddy DNS resolution down for 2+ hours**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=47405685\n\n7. **Play all the OnlyConnect connecting walls**\n   - 출처: Hacker News\n   - 링크: https://1337raspberry.github.io/OCWall/\n\n8. **Iceland's Chief 'Lava Cooler' Is Bracing for the Next Eruption**\n   - 출처: Hacker News\n   - 링크: https://www.nytimes.com/2026/03/15/world/europe/iceland-lava-volcano-eruption-grindavik.html\n\n9. **The bottleneck now is reviewing code, not writing it**\n   - 출처: Hacker News\n   - 링크: https://mystudentfailedtheirmid.substack.com/p/the-bottleneck-now-is-reviewing-code\n\n10. **Rigor in Analysis: From Newton to Cauchy (2005) [pdf]**\n   - 출처: Hacker News\n   - 링크: https://homsigmaa.net/wp-content/uploads/2025/03/2005-Collingwood-Rigor.pdf\n\n11. **The flip side of AI ingenuity (DeepMind, 2020)**\n   - 출처: Hacker News\n   - 링크: https://deepmind.google/blog/specification-gaming-the-flip-side-of-ai-ingenuity/\n\n12. **Has anyone critically examined Michael Levin's sorting algorithm claims?**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=47405559\n\n13. **Ask HN: How to improve my OSINT middle east monitor**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=47405538\n\n14. **How Iranians are evading internet blocks to contact family abroad**\n   - 출처: Hacker News\n   - 링크: https://www.bbc.com/news/articles/ckgl58y5943o\n\n15. **Google kept featuring this Chrome extension for months after it turned malicious**\n   - 출처: Hacker News\n   - 링크: https://www.xda-developers.com/google-featuring-chrome-extension-months-malicious/\n\n16. **I built an AI tool that analyzes contracts and flags legal risks**\n   - 출처: Hacker News\n   - 링크: https://contractshieldai.com\n\n17. **Show HN: AllMy Ledger – Desktop accounting software, one-time purchase, no cloud**\n   - 출처: Hacker News\n   - 링크: https://allmy.software/ledger/\n\n18. **Orb.Farm**\n   - 출처: Hacker News\n   - 링크: https://orb.farm/\n\n19. **My custom agent used 87% fewer tokens when I gave it Skills for its MCP tools**\n   - 출처: Hacker News\n   - 링크: https://seroter.com/2026/03/16/my-custom-agent-used-87-fewer-tokens-when-i-gave-it-skills-for-its-mcp-tools/\n\n20. **Ending the Sugar Rush**\n   - 출처: Hacker News\n   - 링크: https://civic.io/2026/03/16/ending-the-sugar-rush/\n\n21. **Show HN: ThresholdIQ – Browser-based anomaly detection Engine**\n   - 출처: Hacker News\n   - 링크: https://thresholdiq.app\n\n22. **The Freedom Stack**\n   - 출처: Hacker News\n   - 링크: https://www.ianbetteridge.com/the-freedom-stack/\n\n23. **Hydropower Line from Quebec to Queens Could Power a Million NYC Homes**\n   - 출처: Hacker News\n   - 링크: https://www.nytimes.com/2026/03/16/nyregion/hydro-power-nyc.html\n\n24. **Redpanda pushes the envelope on Nvidia Vera**\n   - 출처: Hacker News\n   - 링크: https://www.redpanda.com/blog/nvidia-vera-cpu-performance-benchmark\n\n25. **Solving Problems by Writing Out Questions and Answers**\n   - 출처: Hacker News\n   - 링크: https://nguyenhuythanh.com/posts/problem-solving-qnas/\n\n26. **LLM과의 작업이 지치게 만드는 이유**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27565\n\n27. **Jazzband - 파이썬 오픈소스 커뮤니티 운영 종료**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27564\n\n28. **Python 수학 모듈과 1비트까지 일치하는 Rust 라이브러리**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27563\n\n29. **Wayland 컴포지터와 윈도 관리자 분리**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27561\n\n30. **Show GN: oh-my-agent — 실무용 멀티 AI IDE 에이전트 하네스**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27560\n\n31. **AI 출력물 무단 복붙 중단(Stop Sloppypasta)**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27559\n\n32. **Show GN: 링크만 저장하는 게 아니라, 본문을 읽기 좋게 바꿔 다시 볼 수 있게 하는 앱을 만들었습니다.**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27558\n\n33. **나스닥의 수치**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27557\n\n34. **Show GN: 옴니모달 의존 없이 DOM 압축으로 Token 친화적이게 웹을 탐색하는 AI 에이전트 라이브러리**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27556\n\n35. **AI 보조 코딩이 당신의 업무에 어떤 영향을 주고 있나요?**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27554\n\n36. **LLM 아키텍처 갤러리**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27553\n\n37. **유럽의 주권형 오피스 플랫폼 Office.eu, 헤이그에서 공식 출시**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27552\n\n38. **Show GN: 리버스 웬투밋을 만들었습니다(Whennot2meet)**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27551\n\n39. **AI 시대에도 프로그래밍을 배워야 하는가**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27550\n\n40. **캐나다 법안 C-22, 캐나다인의 대규모 메타데이터 감시를 의무화**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27549\n\n41. **Sparkling - TikTok의 크로스 플랫폼 인프라**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27548\n\n42. **\u0026quot;토큰 경로에 올라타라\u0026quot; - AI 시대 인프라 기업의 핵심 수익화 전략**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27547\n\n43. **코드 리뷰를 없애는 방법**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27546\n\n44. **Remodex - Remote Control for Codex**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27545\n\n45. **49MB 웹페이지**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27544\n\n46. **Chrome DevTools MCP**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27543\n\n47. **머신러닝 시각적 입문 (2015)**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27542\n\n48. **랙마운트 수경재배**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27541\n\n49. **defuddle - 어떤 웹페이지든 Markdown으로 추출합니다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27540\n\n50. **커널 안티치트의 작동 방식**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27539\n\n51. **Spotify의 AI DJ의 끔찍한 어리석음**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27538\n\n52. **$96 3D 프린팅 로켓, $5 센서로 비행 중 궤적 재계산**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27537\n\n53. **독일 공군, 2029년까지 운용 가능한 무인 협동 전투기(UCCA) 제공 예정**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27535\n\n54. **LangChain Announces Enterprise Agentic AI Platform Built with NVIDIA**\n   - 출처: LangChain Blog\n   - 링크: https://blog.langchain.com/nvidia-enterprise/\n\n55. **Introducing deploy cli**\n   - 출처: LangChain Blog\n   - 링크: https://blog.langchain.com/introducing-deploy-cli/\n\n56. **Standing up for the open Internet: why we appealed Italy’s \"Piracy Shield\" fine**\n   - 출처: Cloudflare Blog\n   - 링크: https://blog.cloudflare.com/standing-up-for-the-open-internet/\n\n57. **Advancing semantic search for millions of Rovo users**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/atlassian-engineering/advancing-rovo-semantic-search\n\n58. **GitHub for Beginners: Getting started with GitHub Actions**\n   - 출처: GitHub Blog\n   - 링크: https://github.blog/developer-skills/github/github-for-beginners-getting-started-with-github-actions/\n\n59. **Why Codex Security Doesn’t Include a SAST Report**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/why-codex-security-doesnt-include-sast\n\n60. **Giving you more transparency and control over your Gemini API costs**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/innovation-and-ai/technology/developers-tools/more-control-over-gemini-api-costs/\n\n61. **Google.org Future of Work: 5 years of impact and lessons for the AI era**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/company-news/outreach-and-initiatives/google-org/future-of-work-impact-report/\n\n62. **Introducing AI Works for Europe**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/company-news/inside-google/around-the-globe/google-europe/ai-works-for-europe/\n\n63. **Google has signed the Industry Accord Against Online Scams and Fraud.**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/innovation-and-ai/technology/safety-security/google-industry-accord-combat-scams-fraud/\n\n64. **Sunsetting Code With Me**\n   - 출처: IntelliJ IDEA : IntelliJ IDEA – the IDE for Professional Development in Java and Kotlin | The JetBrains Blog\n   - 링크: https://blog.jetbrains.com/platform/2026/03/sunsetting-code-with-me/\n\n65. **Google Cloud and NVIDIA expand AI innovation across industries at GTC 2026**\n   - 출처: AI \u0026 Machine Learning\n   - 링크: https://cloud.google.com/blog/products/compute/google-cloud-ai-infrastructure-at-nvidia-gtc-2026/\n\n\n",
+  "articles": [
+    {
+      "title": "VS Code 1.112 Insiders",
+      "link": "https://code.visualstudio.com/updates/v1_112",
+      "source": "Visual Studio Code - Code Editing. Redefined.",
+      "category": "tech",
+      "publishedAt": "2026-03-18T17:00:00Z",
+      "description": "\n      \u003cp\u003eLearn what's new in Visual Studio Code 1.112 (Insiders)\u003c/p\u003e\n      \u003cp\u003e\u003ca href=\"https://code.visualstudio.com/updates/v1_112\"\u003eRead the full article\u003c/a\u003e\u003c/p\u003e\n    "
+    },
+    {
+      "title": "The First Healthcare Robotics Dataset and Foundational Physical AI Models for Healthcare Robotics",
+      "link": "https://huggingface.co/blog/nvidia/physical-ai-for-healthcare-robotics",
+      "source": "Hugging Face - Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-16T21:58:40Z"
+    },
+    {
+      "title": "Apple introduces AirPods Max 2\n",
+      "link": "https://www.apple.com/newsroom/2026/03/apple-introduces-airpods-max-2-powered-by-h2/",
+      "source": "Apple Newsroom",
+      "category": "tech",
+      "publishedAt": "2026-03-16T12:59:07.527Z",
+      "description": "Apple announced AirPods Max 2, bringing even better ANC, elevated sound quality, and intelligent features to the iconic over-ear design."
+    },
+    {
+      "title": "Roche Scales NVIDIA AI Factories Globally to Accelerate Drug Discovery, Diagnostic Solutions and Manufacturing Breakthroughs",
+      "link": "https://blogs.nvidia.com/blog/roche-ai-factories-omniverse/",
+      "source": "NVIDIA Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-16T20:30:59Z",
+      "description": "Roche's new deployment spans more than 3,500 NVIDIA Blackwell GPUs across its worldwide operations and embedded across the entire value chain, massively scaling R\u0026#038;D productivity, next-generation diagnostics and manufacturing efficiencies."
+    },
+    {
+      "title": "NVIDIA DSX Air Boosts Time to Token With Accelerated Simulation for AI Factories",
+      "link": "https://blogs.nvidia.com/blog/dsx-air-simulation-ai-factories/",
+      "source": "NVIDIA Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-16T20:00:48Z",
+      "description": "Setting up AI factories in simulation — decreasing deployment time from months to days — is  accelerating the next industrial revolution.  Nowhere was that more apparent than at GTC 2026, in San Jose, where NVIDIA founder and CEO Jensen Huang introduced NVIDIA DSX Air. Part of NVIDIA DSX Sim in the DSX platform, NVIDIA’s blueprint [\u0026#8230;]"
+    },
+    {
+      "title": "Tell HN: Godaddy DNS resolution down for 2+ hours",
+      "link": "https://news.ycombinator.com/item?id=47405685",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-16T22:12:11Z",
+      "description": "\n\u003cp\u003eTheir DNS resolution has been severely degraded for 2+ hours impacting websites and now their status page just crashed as well.\nhttps://status.godaddy.com\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47405685\"\u003ehttps://news.ycombinator.com/item?id=47405685\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Play all the OnlyConnect connecting walls",
+      "link": "https://1337raspberry.github.io/OCWall/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-16T22:10:49Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://1337raspberry.github.io/OCWall/\"\u003ehttps://1337raspberry.github.io/OCWall/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47405670\"\u003ehttps://news.ycombinator.com/item?id=47405670\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Iceland's Chief 'Lava Cooler' Is Bracing for the Next Eruption",
+      "link": "https://www.nytimes.com/2026/03/15/world/europe/iceland-lava-volcano-eruption-grindavik.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-16T22:10:47Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nytimes.com/2026/03/15/world/europe/iceland-lava-volcano-eruption-grindavik.html\"\u003ehttps://www.nytimes.com/2026/03/15/world/europe/iceland-lava-volcano-eruption-grindavik.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47405668\"\u003ehttps://news.ycombinator.com/item?id=47405668\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "The bottleneck now is reviewing code, not writing it",
+      "link": "https://mystudentfailedtheirmid.substack.com/p/the-bottleneck-now-is-reviewing-code",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-16T22:03:54Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://mystudentfailedtheirmid.substack.com/p/the-bottleneck-now-is-reviewing-code\"\u003ehttps://mystudentfailedtheirmid.substack.com/p/the-bottleneck-now-is-reviewing-code\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47405583\"\u003ehttps://news.ycombinator.com/item?id=47405583\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Rigor in Analysis: From Newton to Cauchy (2005) [pdf]",
+      "link": "https://homsigmaa.net/wp-content/uploads/2025/03/2005-Collingwood-Rigor.pdf",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-16T22:03:39Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://homsigmaa.net/wp-content/uploads/2025/03/2005-Collingwood-Rigor.pdf\"\u003ehttps://homsigmaa.net/wp-content/uploads/2025/03/2005-Collingwood-Rigor.pdf\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47405579\"\u003ehttps://news.ycombinator.com/item?id=47405579\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "The flip side of AI ingenuity (DeepMind, 2020)",
+      "link": "https://deepmind.google/blog/specification-gaming-the-flip-side-of-ai-ingenuity/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-16T22:03:19Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://deepmind.google/blog/specification-gaming-the-flip-side-of-ai-ingenuity/\"\u003ehttps://deepmind.google/blog/specification-gaming-the-flip-side-of-ai-ingenuity/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47405572\"\u003ehttps://news.ycombinator.com/item?id=47405572\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Has anyone critically examined Michael Levin's sorting algorithm claims?",
+      "link": "https://news.ycombinator.com/item?id=47405559",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-16T22:02:28Z",
+      "description": "\n\u003cp\u003eAfter hearing Michael Levin on Lex Fridman and Tim Ferriss, I was genuinely blown away by his claim that deterministic sorting algorithms exhibit emergent clustering behavior — that similar algorithms spontaneously group together in chimeric arrays. He frames this as discovering \"free compute\" and evidence of basal intelligence in minimal systems.\u003cp\u003eThen I listened to Brett Hall's critique on TokCast, and it clicked.\u003cp\u003eThe key move Levin makes is converting top-down sorting algorithms into agentic ones — each array element acts autonomously based on local rules. Once you do that, you're no longer studying the original algorithm. You're studying emergent behavior in agent-based systems, which is well-trodden ground. John Conway's Game of Life (1970) and Stephen Wolfram's \"A New Kind of Science\" (2002) established decades ago that simple local rules produce complex emergent patterns.\u003cp\u003eThe clustering result isn't surprising once you recognize the methodological shift. Of course\nagents following different local strategies will self-segregate — that's what agent-based models do.\u003cp\u003eWhat concerns me more is that this framing went unchallenged on two of the biggest podcasts in tech/science. Fridman is an ML researcher. The question \"how does making the algorithm agentic change what you're actually studying?\" seems like an obvious one to ask.\u003cp\u003eHas anyone here dug into the paper's methodology? Am I missing something, or is the novelty claim overstated?\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47405559\"\u003ehttps://news.ycombinator.com/item?id=47405559\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Ask HN: How to improve my OSINT middle east monitor",
+      "link": "https://news.ycombinator.com/item?id=47405538",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-16T22:00:29Z",
+      "description": "\n\u003cp\u003eI built this and currently data comes from X post's\u003cp\u003eI feel like I am a few iteration cycles away from making this truly life saving or extremely valuable\u003cp\u003emaybe tapping into some other data sources, or communication feeds... im not sure, this is my open question and turning to HN for ideas.\u003cp\u003ehttps://www.situation-monitor.org/\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47405538\"\u003ehttps://news.ycombinator.com/item?id=47405538\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "How Iranians are evading internet blocks to contact family abroad",
+      "link": "https://www.bbc.com/news/articles/ckgl58y5943o",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-16T22:00:26Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.bbc.com/news/articles/ckgl58y5943o\"\u003ehttps://www.bbc.com/news/articles/ckgl58y5943o\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47405536\"\u003ehttps://news.ycombinator.com/item?id=47405536\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Google kept featuring this Chrome extension for months after it turned malicious",
+      "link": "https://www.xda-developers.com/google-featuring-chrome-extension-months-malicious/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-16T21:59:49Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.xda-developers.com/google-featuring-chrome-extension-months-malicious/\"\u003ehttps://www.xda-developers.com/google-featuring-chrome-extension-months-malicious/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47405529\"\u003ehttps://news.ycombinator.com/item?id=47405529\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "I built an AI tool that analyzes contracts and flags legal risks",
+      "link": "https://contractshieldai.com",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-16T21:59:25Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://contractshieldai.com\"\u003ehttps://contractshieldai.com\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47405525\"\u003ehttps://news.ycombinator.com/item?id=47405525\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: AllMy Ledger – Desktop accounting software, one-time purchase, no cloud",
+      "link": "https://allmy.software/ledger/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-16T21:58:33Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://allmy.software/ledger/\"\u003ehttps://allmy.software/ledger/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47405518\"\u003ehttps://news.ycombinator.com/item?id=47405518\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Orb.Farm",
+      "link": "https://orb.farm/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-16T21:55:58Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://orb.farm/\"\u003ehttps://orb.farm/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47405487\"\u003ehttps://news.ycombinator.com/item?id=47405487\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "My custom agent used 87% fewer tokens when I gave it Skills for its MCP tools",
+      "link": "https://seroter.com/2026/03/16/my-custom-agent-used-87-fewer-tokens-when-i-gave-it-skills-for-its-mcp-tools/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-16T21:54:08Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://seroter.com/2026/03/16/my-custom-agent-used-87-fewer-tokens-when-i-gave-it-skills-for-its-mcp-tools/\"\u003ehttps://seroter.com/2026/03/16/my-custom-agent-used-87-fewer-tokens-when-i-gave-it-skills-for-its-mcp-tools/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47405469\"\u003ehttps://news.ycombinator.com/item?id=47405469\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Ending the Sugar Rush",
+      "link": "https://civic.io/2026/03/16/ending-the-sugar-rush/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-16T21:52:42Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://civic.io/2026/03/16/ending-the-sugar-rush/\"\u003ehttps://civic.io/2026/03/16/ending-the-sugar-rush/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47405447\"\u003ehttps://news.ycombinator.com/item?id=47405447\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: ThresholdIQ – Browser-based anomaly detection Engine",
+      "link": "https://thresholdiq.app",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-16T21:52:39Z",
+      "description": "\n\u003cp\u003eThersholdIQ - Automatic Anomaly detection engine\u003cp\u003e100 % Client Side Architecture , Data never leaves your browser\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47405446\"\u003ehttps://news.ycombinator.com/item?id=47405446\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Freedom Stack",
+      "link": "https://www.ianbetteridge.com/the-freedom-stack/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-16T21:51:09Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.ianbetteridge.com/the-freedom-stack/\"\u003ehttps://www.ianbetteridge.com/the-freedom-stack/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47405431\"\u003ehttps://news.ycombinator.com/item?id=47405431\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Hydropower Line from Quebec to Queens Could Power a Million NYC Homes",
+      "link": "https://www.nytimes.com/2026/03/16/nyregion/hydro-power-nyc.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-16T21:46:56Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nytimes.com/2026/03/16/nyregion/hydro-power-nyc.html\"\u003ehttps://www.nytimes.com/2026/03/16/nyregion/hydro-power-nyc.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47405387\"\u003ehttps://news.ycombinator.com/item?id=47405387\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Redpanda pushes the envelope on Nvidia Vera",
+      "link": "https://www.redpanda.com/blog/nvidia-vera-cpu-performance-benchmark",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-16T21:46:52Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.redpanda.com/blog/nvidia-vera-cpu-performance-benchmark\"\u003ehttps://www.redpanda.com/blog/nvidia-vera-cpu-performance-benchmark\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47405385\"\u003ehttps://news.ycombinator.com/item?id=47405385\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Solving Problems by Writing Out Questions and Answers",
+      "link": "https://nguyenhuythanh.com/posts/problem-solving-qnas/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-16T21:44:02Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://nguyenhuythanh.com/posts/problem-solving-qnas/\"\u003ehttps://nguyenhuythanh.com/posts/problem-solving-qnas/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47405356\"\u003ehttps://news.ycombinator.com/item?id=47405356\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "LLM과의 작업이 지치게 만드는 이유",
+      "link": "https://news.hada.io/topic?id=27565",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-17T03:32:26+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e장시간 \u003cstrong\u003eClaude나 Codex 같은 LLM과 협업\u003c/strong\u003e할 때 피로감이 누적되면 생산성이 급격히 떨어짐\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e피로로 인한 프롬프트 품질 저하\u003c/strong\u003e가 결과의 질을 악화시키며, 중간에 모델을 끊거나 수정할수록 성능이 더 나빠짐\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e피드백 루프가 느리고 컨텍스트가 과도...\u003c/p\u003e"
+    },
+    {
+      "title": "Jazzband - 파이썬 오픈소스 커뮤니티 운영 종료",
+      "link": "https://news.hada.io/topic?id=27564",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-16T23:09:58+09:00",
+      "description": "\u003cp\u003e\u003ca href=\"https://github.com/jazzband/\"\u003eJazzband Organization\u003c/a\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eJazzband: 여러 파이썬 패키지를 여러 maintainer가 함께 관리하던 \u0026quot;공동 유지\u0026quot; 오픈소스 커뮤니티\n\u003cul\u003e\n\u003cli\u003e대표적인 오픈소스 프로젝트로는 pip-tools, tablib, django-auditlog, djangorestframework-simplejwt 가 있음"
+    },
+    {
+      "title": "Python 수학 모듈과 1비트까지 일치하는 Rust 라이브러리",
+      "link": "https://news.hada.io/topic?id=27563",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-16T20:54:17+09:00",
+      "description": "\u003cp\u003epymath는 python의 math, cmath 를 Rust로 재구현한 라이브러리입니다.\u003c/p\u003e\n\u003cp\u003e1비트의 오차도 남기지 않기 때문에 기존의 파이썬 코드를 Rust로 교체할 때 그대로 바꿔 넣을 수 있습니다.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Wayland 컴포지터와 윈도 관리자 분리",
+      "link": "https://news.hada.io/topic?id=27561",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-16T20:33:36+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e기존 Wayland 환경은 \u003cstrong\u003e컴포지터와 윈도 관리자가 하나의 프로그램\u003c/strong\u003e으로 결합된 구조였으나, river 0.4.0은 이를 \u003cstrong\u003e별도 프로세스로 분리\u003c/strong\u003e함\u003c/li\u003e\n\u003cli\u003e새로운 \u003cstrong\u003eriver-window-management-v1 프로토콜\u003c/strong\u003e은 윈도 관리자에게 창 배치, 키 바인딩 등 정책 전권을 부여하면...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: oh-my-agent — 실무용 멀티 AI IDE 에이전트 하네스",
+      "link": "https://news.hada.io/topic?id=27560",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-16T19:32:57+09:00",
+      "description": "\u003cp\u003e에이전트에게 “TODO 앱 만들어줘”라고 하면 뭔가를 만들긴 합니다. 문제는 자주 엉뚱한 걸 만들고, 범위를 벗어나고, 같은 실수를 반복한다는 점입니다.\u003c/p\u003e\n\u003cp\u003e이런 문제를 해결하려고 초기엔 AGENTS.md, 최근엔 Skills 같은 구조적 접근이 많이 등장했습니다. 하지만 실제로 공유되는 스킬들을 보면 몇 가지 공통"
+    },
+    {
+      "title": "AI 출력물 무단 복붙 중단(Stop Sloppypasta)",
+      "link": "https://news.hada.io/topic?id=27559",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-16T17:33:18+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e‘Sloppypasta’\u003c/strong\u003e 는 검토되지 않은 \u003cstrong\u003eLLM(대형 언어 모델)\u003c/strong\u003e 의 출력을 그대로 복사해 다른 사람에게 보내는 행위를 뜻하며, 수신자에게 불필요한 검증 부담을 전가하는 \u003cstrong\u003e비예의적 행동\u003c/strong\u003e으로 지적됨\u003c/li\u003e\n\u003cli\u003e이러한 메시지는 \u003cstrong\u003e읽기와 검증의 비대칭성...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: 링크만 저장하는 게 아니라, 본문을 읽기 좋게 바꿔 다시 볼 수 있게 하는 앱을 만들었습니다.",
+      "link": "https://news.hada.io/topic?id=27558",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-16T16:09:02+09:00",
+      "description": "\u003cp\u003e저장한 링크를 다시 읽기 쉽게 정리해주는 Stackbox 앱을 만들었습니다!\u003c/p\u003e\n\u003cp\u003e단순히 링크만 보관하는 게 아니라, 저장한 웹페이지의 본문을 읽기 좋은 화면으로 바꿔서 다시 볼 수 있게 만드는 데 초점을 두고 있습니다.\u003c/p\u003e\n\u003cp\u003e주요 기능은 아래와 같습니다!!\u003c/p\u003e\n\u003cp\u003e•읽기 화면 정리\u003cbr /\u003e\n저장한 링크의 본문을"
+    },
+    {
+      "title": "나스닥의 수치",
+      "link": "https://news.hada.io/topic?id=27557",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-16T15:33:30+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e나스닥이 제안한 새로운 지수 규칙 변경안\u003c/strong\u003e이 대형 IPO 기업, 특히 \u003cstrong\u003eSpaceX 상장을 위한 특혜 구조\u003c/strong\u003e로 비판받고 있음\u003c/li\u003e\n\u003cli\u003e제안서에는 신규 상장 기업을 \u003cstrong\u003e15거래일 만에 나스닥100 지수에 편입\u003c/strong\u003e할 수 있는 \u003cstrong\u003e‘Fast Entry’ 예외 조항\u003c/strong\u003e이 포...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: 옴니모달 의존 없이 DOM 압축으로 Token 친화적이게 웹을 탐색하는 AI 에이전트 라이브러리",
+      "link": "https://news.hada.io/topic?id=27556",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-16T15:25:27+09:00",
+      "description": "\u003cp\u003e\u003cem\u003e평소에는 GN 가끔 읽어보기만 하다가 투고는 처음이네요. 잘 부탁드립니다!\u003c/em\u003e\u003c/p\u003e\n\u003chr /\u003e\n\u003cp\u003e\u003cem\u003e옴니모달이라는 불확실한 현존 Web Surf agent 대신, CDP로 받은 DOM을 LLM이 이해할 수 있도록 최소한으로 포매팅, 압축해서 MCP로 만들면 어떠할까?\u003c/em\u003e 라는 아이디어에서 출발해 만들어 본 라이브러리입니다"
+    },
+    {
+      "title": "AI 보조 코딩이 당신의 업무에 어떤 영향을 주고 있나요?",
+      "link": "https://news.hada.io/topic?id=27554",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-16T13:33:37+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eAI 코딩 도구\u003c/strong\u003e가 실제 업무 환경에서 어떻게 활용되고 있는지에 대한 경험 공유 요청\u003c/li\u003e\n\u003cli\u003e개발자들이 \u003cstrong\u003e생산성 향상, 코드 품질, 학습 효과\u003c/strong\u003e 등에 어떤 변화를 느끼는지 논의 대상\u003c/li\u003e\n\u003cli\u003e일부는 \u003cstrong\u003eGitHub Copilot, ChatGPT, Codeium\u003c/strong\u003e 등 도구 사용 경험을...\u003c/p\u003e"
+    },
+    {
+      "title": "LLM 아키텍처 갤러리",
+      "link": "https://news.hada.io/topic?id=27553",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-16T12:32:43+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e최신 \u003cstrong\u003e대형 언어 모델(LLM)\u003c/strong\u003e 들의 구조 도식과 핵심 사양을 한눈에 정리한 온라인 갤러리로, 2024~2026년 공개된 주요 모델들을 포함\u003c/li\u003e\n\u003cli\u003e각 모델은 \u003cstrong\u003e파라미터 규모, 디코더 유형, 어텐션 방식, 주요 설계 포인트\u003c/strong\u003e를 요약한 표 형태로 구성\u003c/li\u003e\n\u003cli\u003e자료는 Sebastian Rasc...\u003c/p\u003e"
+    },
+    {
+      "title": "유럽의 주권형 오피스 플랫폼 Office.eu, 헤이그에서 공식 출시",
+      "link": "https://news.hada.io/topic?id=27552",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-16T11:33:00+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e유럽 소유의 오피스 대안 플랫폼\u003c/strong\u003e이 네덜란드 헤이그에서 공식 출시되어, Microsoft Office와 Google Workspace에 대한 \u003cstrong\u003e완전한 유럽산 대체재\u003c/strong\u003e를 제시\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e오픈소스 기술\u003c/strong\u003e과 \u003cstrong\u003e유럽 내 인프라\u003c/strong\u003e를 기반으로 구축되어, 조직이 데이터와 디...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: 리버스 웬투밋을 만들었습니다(Whennot2meet)",
+      "link": "https://news.hada.io/topic?id=27551",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-16T11:11:06+09:00",
+      "description": "\u003cp\u003e학생회장을 하다보면 종종 일정을 수합받아야 하는 일이 있습니다.\u003c/p\u003e\n\u003cp\u003e그런데 되는 일정을 물어보면 사람들은 최소한의 시간을 선택하는 경향이 있더군요.\u003c/p\u003e\n\u003cp\u003e그래서 행동경제학을 적용하여 가장 많은 가능시간을 확보하기 위해서는 \u0026quot;Opt-out\u0026quot; 형태의 시간 수합이 적절하다고 생각하였습니다.\u003c/p\u003e\n"
+    },
+    {
+      "title": "AI 시대에도 프로그래밍을 배워야 하는가",
+      "link": "https://news.hada.io/topic?id=27550",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-16T10:51:43+09:00",
+      "description": "\u003cp\u003eMontana State University 컴퓨터공학과 교수이자 htmx 창시자인 Carson Gross가 \u0026quot;AI 시대에도 프로그래밍을 커리어로 추구해야 하는가?\u0026quot;에 대해 \u0026quot;Yes, and…(그렇다, 그리고…)\u0026quot;라고 답하는 에세이.\u003c/p\u003e\n\u003ch3\u003e\u0026quot;Yes\u0026quot; — 그렇다\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e프로그래밍의 본질은 컴퓨터를 이용한 문제"
+    },
+    {
+      "title": "캐나다 법안 C-22, 캐나다인의 대규모 메타데이터 감시를 의무화",
+      "link": "https://news.hada.io/topic?id=27549",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-16T10:32:58+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e캐나다 정부가 \u003cstrong\u003e‘합법적 접근법(Lawful Access Act)’인 법안 C-22\u003c/strong\u003e를 도입하며, 통신사업자와 인터넷 서비스 제공자(ISP)에 대한 \u003cstrong\u003e감시·감청 협력 의무\u003c/strong\u003e를 강화함\u003c/li\u003e\n\u003cli\u003e새 법안은 \u003cstrong\u003e영장 없는 정보 접근 권한\u003c/strong\u003e을 대폭 축소했지만, \u003cstrong\u003e통신망 감시 인프...\u003c/p\u003e"
+    },
+    {
+      "title": "Sparkling - TikTok의 크로스 플랫폼 인프라",
+      "link": "https://news.hada.io/topic?id=27548",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-16T10:31:02+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eTikTok이 자사 앱에서 \u003cstrong\u003eLynx 엔진을 프로덕션 규모로 운용\u003c/strong\u003e하기 위해 구축한 인프라 계층을 오픈소스로 공개. 앱 스캐폴딩부터 빌드, 네이티브 브릿지, 내비게이션까지 통합 제공\u003c/li\u003e\n\u003cli\u003eReact Native에 \u003cstrong\u003eExpo\u003c/strong\u003e가 필요하듯, Lynx 엔진 위에서 실제 앱을 운용하기 위한 프로덕션...\u003c/p\u003e"
+    },
+    {
+      "title": "\u0026quot;토큰 경로에 올라타라\u0026quot; - AI 시대 인프라 기업의 핵심 수익화 전략",
+      "link": "https://news.hada.io/topic?id=27547",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-16T10:09:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e클라우드 시대 최대 인프라 기업들은 \u003cstrong\u003e플랫폼의 핵심 소비 단위(컴퓨트)\u003c/strong\u003e 에 직접 수익 모델을 연동시켜 성장했으며, AI 시대에는 그 단위가 \u003cstrong\u003e토큰\u003c/strong\u003e으로 전환 중\u003c/li\u003e\n\u003cli\u003eSnowflake, Datadog, Cloudflare 등은 워크로드 실행 경로에 직접 위치해 컴퓨트 활동 증가에 따라 \u003cstro...\u003c/p\u003e"
+    },
+    {
+      "title": "코드 리뷰를 없애는 방법",
+      "link": "https://news.hada.io/topic?id=27546",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-16T10:05:02+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eAI가 생성하는 코드의 양과 규모가 기하급수적으로 증가하면서, 기존의 \u003cstrong\u003e수동 코드 리뷰 방식\u003c/strong\u003e이 더 이상 유효하지 않은 상황\u003c/li\u003e\n\u003cli\u003eAI 도입률이 높은 팀은 작업 완료량이 21% 증가하고 PR 병합은 98% 늘었지만, \u003cstrong\u003ePR 리뷰 시간은 91% 증가\u003c/strong\u003e하는 역설적 현상 발생\u003c/li\u003e\n\u003cli\u003e코...\u003c/p\u003e"
+    },
+    {
+      "title": "Remodex - Remote Control for Codex",
+      "link": "https://news.hada.io/topic?id=27545",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-16T10:02:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eOpenAI Codex\u003c/strong\u003e를 \u003cstrong\u003e아이폰에서 원격 제어\u003c/strong\u003e가능한 오픈소스 브리지앱\u003c/li\u003e\n\u003cli\u003e맥에서 Codex 런타임을 실행하고, \u003cstrong\u003eWebSocket 릴레이 세션\u003c/strong\u003e을 통해 폰과 실시간 E2E 암호화 연결 지원\u003c/li\u003e\n\u003cli\u003e턴이 끝나거나, 응답 기다릴시 인앱 알림 지원\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eFa...\u003c/p\u003e"
+    },
+    {
+      "title": "49MB 웹페이지",
+      "link": "https://news.hada.io/topic?id=27544",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-16T09:58:54+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e뉴욕타임스 웹사이트의 한 기사 페이지가 \u003cstrong\u003e422개의 네트워크 요청과 49MB 데이터 전송\u003c/strong\u003e을 발생시키며, 단순한 기사 열람조차 과도한 리소스를 요구함\u003c/li\u003e\n\u003cli\u003e페이지 로딩 과정에서 \u003cstrong\u003e수십 개의 광고 입찰 요청과 추적 스크립트\u003c/strong\u003e가 동시에 실행되어, 브라우저 CPU와 배터리를 소...\u003c/p\u003e"
+    },
+    {
+      "title": "Chrome DevTools MCP",
+      "link": "https://news.hada.io/topic?id=27543",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-16T09:55:54+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eChrome DevTools MCP 서버\u003c/strong\u003e가 코딩 에이전트가 \u003cstrong\u003e활성 브라우저 세션에 직접 연결\u003c/strong\u003e할 수 있도록 개선됨\u003c/li\u003e\n\u003cli\u003e이 기능을 통해 에이전트는 \u003cstrong\u003e로그인된 세션을 재사용\u003c/strong\u003e하거나 \u003cstrong\u003eDevTools의 활성 디버깅 세션에 접근\u003c/strong\u003e 가능\u003c/li\u003e\n\u003cli\u003eChrome M144(베...\u003c/p\u003e"
+    },
+    {
+      "title": "머신러닝 시각적 입문 (2015)",
+      "link": "https://news.hada.io/topic?id=27542",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-16T09:52:54+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e컴퓨터가 \u003cstrong\u003e통계적 학습(statistical learning)\u003c/strong\u003e 기법을 이용해 데이터에서 패턴을 자동으로 식별하고 예측을 수행하는 과정을 시각적으로 설명함\u003c/li\u003e\n\u003cli\u003e주택 데이터셋을 활용해 \u003cstrong\u003e뉴욕과 샌프란시스코 주택을 구분하는 모델\u003c/strong\u003e을 만드는 과정을 단계별로 시각화함\u003c/li\u003e\n\u003cli\u003e\n\u003cst...\u003c/p\u003e"
+    },
+    {
+      "title": "랙마운트 수경재배",
+      "link": "https://news.hada.io/topic?id=27541",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-16T09:49:54+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e여분의 \u003cstrong\u003e서버 캐비닛을 이용해 상추를 재배한 실험\u003c/strong\u003e으로, IT 장비용 랙을 농업용으로 전환한 사례\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e홍수·배수형(ebb and flow)\u003c/strong\u003e 수경재배 방식을 적용해, 영양분이 포함된 물을 주기적으로 순환시킴\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e서버랙 선반, 저장용 플라스틱 박스, 수중 펌프,...\u003c/p\u003e"
+    },
+    {
+      "title": "defuddle - 어떤 웹페이지든 Markdown으로 추출합니다",
+      "link": "https://news.hada.io/topic?id=27540",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-16T09:47:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e웹페이지의 불필요한 \u003cstrong\u003e댓글, 사이드바, 헤더, 푸터를 제거하고 핵심 본문만 정제해 HTML/마크다운으로 추출\u003c/strong\u003e하는 콘텐츠 파서\u003c/li\u003e\n\u003cli\u003e유튜브 영상은 대화를 화자별로 분리해서 추출해줌(0.12.0부터)\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eObsidian Web Clipper\u003c/strong\u003e용으로 개발되었으나, 브라우저·Node.js 등...\u003c/p\u003e"
+    },
+    {
+      "title": "커널 안티치트의 작동 방식",
+      "link": "https://news.hada.io/topic?id=27539",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-16T09:46:54+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e현대의 \u003cstrong\u003e커널 기반 안티치트 시스템\u003c/strong\u003e은 Windows 환경에서 가장 복잡한 보안 소프트웨어 중 하나로, 게임 실행 중에도 커널 수준에서 메모리와 시스템 이벤트를 감시함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e유저모드 보호의 한계\u003c/strong\u003e를 극복하기 위해 커널 드라이버를 활용하며, 프로세스·스레드 생성, 이미지...\u003c/p\u003e"
+    },
+    {
+      "title": "Spotify의 AI DJ의 끔찍한 어리석음",
+      "link": "https://news.hada.io/topic?id=27538",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-16T09:43:54+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eSpotify의 \u003cstrong\u003eAI DJ 기능\u003c/strong\u003e이 클래식 음악을 제대로 인식하지 못하는 사례를 통해 \u003cstrong\u003eAI의 한계와 음악 메타데이터의 문제\u003c/strong\u003e를 드러냄\u003c/li\u003e\n\u003cli\u003e사용자가 “Beethoven의 7번 교향곡”을 요청했을 때, AI는 \u003cstrong\u003e작품의 구조나 악장 순서\u003c/strong\u003e를 이해하지 못하고 엉뚱한 악장이나...\u003c/p\u003e"
+    },
+    {
+      "title": "$96 3D 프린팅 로켓, $5 센서로 비행 중 궤적 재계산",
+      "link": "https://news.hada.io/topic?id=27537",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-16T09:40:54+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e소비자용 전자부품과 \u003cstrong\u003e3D 프린팅 부품\u003c/strong\u003e으로 제작된 저비용 \u003cstrong\u003e로켓 발사기 및 유도 로켓 시스템\u003c/strong\u003e의 개념 증명 프로토타입\u003c/li\u003e\n\u003cli\u003e로켓은 \u003cstrong\u003eESP32 비행 컴퓨터\u003c/strong\u003e와 \u003cstrong\u003eMPU6050 관성측정장치(IMU)\u003c/strong\u003e 를 사용해 비행 중 \u003cstrong\u003e접이식 날개와 카나드 안정...\u003c/p\u003e"
+    },
+    {
+      "title": "독일 공군, 2029년까지 운용 가능한 무인 협동 전투기(UCCA) 제공 예정",
+      "link": "https://news.hada.io/topic?id=27535",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-16T08:32:59+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eAirbus가 \u003cstrong\u003eKratos의 Valkyrie 전투 드론 2대\u003c/strong\u003e를 기반으로 한 \u003cstrong\u003e유럽형 임무 시스템 탑재 무인 전투기\u003c/strong\u003e를 준비 중임\u003c/li\u003e\n\u003cli\u003e해당 기체에는 \u003cstrong\u003eMARS(Multiplatform Autonomous Reconfigurable and Secure)\u003c/strong\u003e 시스템이 장착되며, \u003cstrong\u003eAI 기반 ‘MindShare’ 소프트...\u003c/p\u003e"
+    },
+    {
+      "title": "LangChain Announces Enterprise Agentic AI Platform Built with NVIDIA",
+      "link": "https://blog.langchain.com/nvidia-enterprise/",
+      "source": "LangChain Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-16T21:31:28Z",
+      "description": "\u003cp\u003e\u003cem\u003eComprehensive agent engineering platform combined with NVIDIA AI enables enterprises to build, deploy, and monitor production-grade AI agents at scale\u003c/em\u003e\u003c/p\u003e\u003cp\u003e\u003ca href=\"https://www.prnewswire.com/news-releases/langchain-announces-enterprise-agentic-ai-platform-built-with-nvidia-302714006.html?ref=blog.langchain.com\"\u003e\u003cem\u003ePress Release\u003c/em\u003e\u003c/a\u003e\u003c/p\u003e\u003cp\u003e\u003cstrong\u003eSAN FRANCISCO, March 16, 2026 /PRNewswire/ \u003c/strong\u003e\u0026#x2014; LangChain, the agent engineering company behind LangSmith and open-source frameworks that have surpassed 1 billion downloads, today announced a comprehensive integration\u003c/p\u003e"
+    },
+    {
+      "title": "Introducing deploy cli",
+      "link": "https://blog.langchain.com/introducing-deploy-cli/",
+      "source": "LangChain Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-16T17:20:21Z",
+      "description": "\u003cp\u003eWe\u0026#x2019;re excited to introduce the deploy cli, a new set of commands within the \u003ccode\u003elanggraph-cli\u003c/code\u003e package that makes it simple to deploy and manage agents directly from the command line.\u003c/p\u003e\u003cp\u003eThe first command in this new set, \u003ccode\u003elanggraph deploy\u003c/code\u003e, lets you deploy an agent to \u003ca href=\"https://docs.langchain.com/langsmith/deployments?ref=blog.langchain.com#langsmith-deployment\"\u003eLangSmith Deployment\u003c/a\u003e in\u003c/p\u003e"
+    },
+    {
+      "title": "Standing up for the open Internet: why we appealed Italy’s \"Piracy Shield\" fine",
+      "link": "https://blog.cloudflare.com/standing-up-for-the-open-internet/",
+      "source": "Cloudflare Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-16T19:00:00Z",
+      "description": " Cloudflare is appealing a €14 million fine from Italian regulators over \"Piracy Shield,\" a system that forces providers to block content without oversight. We are challenging this framework to protect the Internet from disproportionate overblocking and lack of due process. "
+    },
+    {
+      "title": "Advancing semantic search for millions of Rovo users",
+      "link": "https://www.atlassian.com/blog/atlassian-engineering/advancing-rovo-semantic-search",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-16T20:30:00Z",
+      "description": "\u003cp\u003eRovo brings meaning‑aware search, chat, and agents to Jira, Confluence, and your connected tools, so teams can quickly find the...\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/atlassian-engineering/advancing-rovo-semantic-search\"\u003eAdvancing semantic search for millions of Rovo users\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "GitHub for Beginners: Getting started with GitHub Actions",
+      "link": "https://github.blog/developer-skills/github/github-for-beginners-getting-started-with-github-actions/",
+      "source": "GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-16T16:00:00Z",
+      "description": "\u003cp\u003eSet up your first GitHub Actions workflow in this how-to guide.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/developer-skills/github/github-for-beginners-getting-started-with-github-actions/\"\u003eGitHub for Beginners: Getting started with GitHub Actions\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Why Codex Security Doesn’t Include a SAST Report",
+      "link": "https://openai.com/index/why-codex-security-doesnt-include-sast",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2026-03-16T00:00:00Z",
+      "description": "A deep dive into why Codex Security doesn’t rely on traditional SAST, instead using AI-driven constraint reasoning and validation to find real vulnerabilities with fewer false positives."
+    },
+    {
+      "title": "Giving you more transparency and control over your Gemini API costs",
+      "link": "https://blog.google/innovation-and-ai/technology/developers-tools/more-control-over-gemini-api-costs/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-16T17:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Limit_Hero.max-600x600.format-webp.webp\"\u003eGoogle introduces new features in AI Studio to enable developers to set monthly spend caps and scale effectively."
+    },
+    {
+      "title": "Google.org Future of Work: 5 years of impact and lessons for the AI era",
+      "link": "https://blog.google/company-news/outreach-and-initiatives/google-org/future-of-work-impact-report/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-16T08:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google.org_Future_of_Work-hero.max-600x600.format-webp.webp\"\u003eAs we all look toward the AI era, we’re sharing what we learned in a new report."
+    },
+    {
+      "title": "Introducing AI Works for Europe",
+      "link": "https://blog.google/company-news/inside-google/around-the-globe/google-europe/ai-works-for-europe/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-16T08:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/EuropeAIWorks_Hero.max-600x600.format-webp.webp\"\u003eAnnouncing AI Works for Europe, our new initiative to provide AI skills and training to help people and businesses across the continent."
+    },
+    {
+      "title": "Google has signed the Industry Accord Against Online Scams and Fraud.",
+      "link": "https://blog.google/innovation-and-ai/technology/safety-security/google-industry-accord-combat-scams-fraud/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-16T06:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Against_Online_Scams_and_Fraud_.max-600x600.format-webp.webp\"\u003eA look at Google’s support for the Industry Accord Against Online Scams and Fraud and its ongoing work to fight scammers."
+    },
+    {
+      "title": "Sunsetting Code With Me",
+      "link": "https://blog.jetbrains.com/platform/2026/03/sunsetting-code-with-me/",
+      "source": "IntelliJ IDEA : IntelliJ IDEA – the IDE for Professional Development in Java and Kotlin | The JetBrains Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-16T08:51:40Z",
+      "description": "Code With Me has been part of JetBrains IDEs for years, providing real-time collaborative coding and pair programming directly inside your development environment. It enabled teams to share a workspace, tackle issues together, and learn from one another without leaving the IDE. Today, we’re announcing plans to gradually sunset Code With Me. In this post, [\u0026#8230;]"
+    },
+    {
+      "title": "Google Cloud and NVIDIA expand AI innovation across industries at GTC 2026",
+      "link": "https://cloud.google.com/blog/products/compute/google-cloud-ai-infrastructure-at-nvidia-gtc-2026/",
+      "source": "AI \u0026 Machine Learning",
+      "category": "tech",
+      "publishedAt": "2026-03-16T16:00:00Z",
+      "description": "\u003cdiv class=\"block-paragraph_advanced\"\u003e\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eThe era of agentic AI is fundamentally changing enterprise infrastructure needs. As organizations build systems capable of dynamic reasoning and autonomous execution, the underlying infrastructure must evolve as well. Scaling these agentic workloads alongside massive mixture-of-experts (MoE) architectures demands a deeply optimized co-engineered stack.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eTo meet these demands, we’ve built the Google Cloud AI Hypercomputer, an AI-optimized infrastructure as a service, that integrates performance-optimized hardware, leading software, open frameworks, and flexible consumption models into a single, cohesive system to deliver ultra-low latency, high-throughput, and cost-effective inference. To give our customers even more options within this integrated architecture, we are expanding our partnership with NVIDIA.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eThis week at NVIDIA GTC 2026, Google Cloud and NVIDIA are expanding our partnership with a wave of new announcements, showcasing a co-engineered AI infrastructure foundation:\u003c/span\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eInfrastructure and hardware\u003c/strong\u003e\u003c/li\u003e\n\u003cul\u003e\n\u003cli aria-level=\"2\" style=\"list-style-type: circle; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eStrong momentum for Google Cloud G4 VMs, powered by NVIDIA RTX Pro\u003c/span\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e\u003csup\u003e™\u003c/sup\u003e\u003c/span\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e 6000 Blackwell Server Edition\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"2\" style=\"list-style-type: circle; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cspan style=\"vertical-align: baseline;\"\u003ePreview of flexible, fractional G4 VMs using NVIDIA vGPU technology — a first in the industry for NVIDIA RTX Pro\u003csup\u003e™\u003c/sup\u003e\u003c/span\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e 6000 Blackwell Server Edition\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"2\" style=\"list-style-type: circle; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eUpcoming support for NVIDIA Vera Rubin NVL72 Platform\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eSoftware and platform\u003c/strong\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cul\u003e\n\u003cli aria-level=\"2\" style=\"list-style-type: circle; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eNVIDIA Dynamo integration with GKE Inference Gateway\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"2\" style=\"list-style-type: circle; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eEnhanced NVIDIA support across Vertex AI Training and Model Garden\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eEcosystem\u003c/strong\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cul\u003e\n\u003cli aria-level=\"2\" style=\"list-style-type: circle; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eLaunch of a dedicated public sector AI startup accelerator program\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eLet’s take a closer look at the announcements.\u003c/span\u003e\u003c/p\u003e\n\u003ch3\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eAccelerating AI workloads with G4 VMs\u003c/span\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eG4 VMs, powered by NVIDIA RTX Pro 6000 Blackwell Server Edition GPUs, are built to power a diverse spectrum of high-performance workloads — from advanced spatial computing to complete AI development lifecycles. For instance, companies like Otto Group \u003c/span\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eOne.O \u003c/span\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eand WPP use the G4 to run physically accurate simulations and real-time 3D rendering at scale.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eBeyond simulation, the G4 also shines in model fine-tuning and inference, particularly for models ranging from 30B to more than 100B parameters. By leveraging 4-bit floating point (FP4) precision and Google’s peer-to-peer (P2P) communication, customers are achieving \u003c/span\u003e\u003ca href=\"https://cloud.google.com/blog/products/compute/g4-vms-p2p-fabric-boosts-multi-gpu-workloads\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003ehigher throughput for model serving and considerable latency reductions\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e, enabling a new class of real-time, multimodal AI agents and highly responsive generative AI applications.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eHere are some examples of how customers are already leveraging the performance and efficiency of G4 VMs to accelerate their most demanding workloads:\u003c/span\u003e\u003c/p\u003e\n\u003cp style=\"padding-left: 40px;\"\u003e\u003cspan style=\"font-style: italic; vertical-align: baseline;\"\u003e“\u003c/span\u003e\u003cspan style=\"font-style: italic; vertical-align: baseline;\"\u003eGoogle Cloud’s G4 VMs give us the scalable GPU backbone we need to push billions of miles of photorealistic simulation through our pipeline. The 4x lift in throughput means our ML teams can iterate faster, train on richer data, and validate edge cases long before our models ever see the real world.\u003c/span\u003e\u003cspan style=\"font-style: italic; vertical-align: baseline;\"\u003e” \u003c/span\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e– Sony Mohapatra, Director, AI/ML Engineering, General Motors\u003c/span\u003e\u003c/p\u003e\n\u003cp style=\"padding-left: 40px;\"\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e“\u003c/span\u003e\u003cspan style=\"font-style: italic; vertical-align: baseline;\"\u003eNow with G4 VMs powered by NVIDIA Blackwell, we're pushing our multimodal models even further — faster inference, better reliability, instant replies across languages. The goal stays the same: making voice agents that work at enterprise scale without compromise. We are excited to keep building together and see what our customers deploy with this.” \u003c/span\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e– Mati Staniszewski, Cofounder, ElevenLabs\u003c/span\u003e\u003c/p\u003e\n\u003cp style=\"padding-left: 40px;\"\u003e\u003cspan style=\"font-style: italic; vertical-align: baseline;\"\u003e“Google Cloud G4 VMs provide the computational backbone for our Robotic Coordination Layer, allowing us to synchronize autonomous fleets across our logistics centers with millisecond precision. By simulating complex warehouse environments in a high-fidelity digital twin, we can optimize our entire supply chain virtually before a single robot moves on the floor.”\u003c/span\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e – \u003c/span\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eDr. Stefan Borsutzky, CEO of Otto Group One.O\u003c/span\u003e\u003c/p\u003e\n\u003cp style=\"padding-left: 40px;\"\u003e\u003cspan style=\"font-style: italic; vertical-align: baseline;\"\u003e“After transitioning to G4 VMs, we achieved a 50% reduction in processing latency and 6x increase in throughput just by updating our Terraform scripts. It’s rare to get that kind of performance boost for our core workloads without adding any operational overhead.”\u003c/span\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e – Alfonso Acosta, Head of Engineering, Imgix\u003c/span\u003e\u003c/p\u003e\n\u003ch3\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eIntroducing fractional G4 VMs \u003c/span\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eWe are excited to announce the preview of fractional G4 VMs, providing a highly efficient and cost-effective entry point for AI and graphics workloads. These new configurations, using NVIDIA virtual GPU (vGPU) technology, allow you to leverage the power of the NVIDIA RTX PRO 6000 Blackwell Server Edition GPUs in flexible, smaller increments, so you can right-size your infrastructure to match the specific demands of your applications.\u003c/span\u003e\u003c/p\u003e\n\u003cp style=\"padding-left: 40px;\"\u003e\u003cem\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e“Enterprises need unprecedented flexibility to scale complex, agentic AI workloads. With Google Cloud, we’re introducing fractional G4 VMs powered by NVIDIA RTX PRO 6000 to let customers right‑size GPU capacity and maximize ROI. Together with our co‑engineered stack – from NVIDIA NeMo on Vertex AI to NVIDIA Dynamo with GKE – we’re delivering an open, high‑performance platform for next‑generation reasoning and MoE models.” \u003c/span\u003e\u003c/em\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e– Ian Buck, VP / General Manager, Hyperscale and HPC, NVIDIA\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eBy providing more granular access to advanced hardware, fractional G4 VMs let you optimize resource allocation and reduce overhead without sacrificing performance. You can now select from additional GPU slice sizes for your specific needs:\u003c/span\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003e1/2 GPU:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e Ideal for more intensive tasks such as LLM inference, robotics sensor simulation, and high-fidelity 3D rendering.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003e1/4 GPU:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e Optimized for mainstream workloads, including mid-range creative design, video transcoding, and real-time data visualization.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003e1/8 GPU:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e Great for lightweight applications such as remote desktops, productivity tools, and entry-level streaming services.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eThese flexible G4 size portfolio let you:\u003c/span\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eRight-size infrastructure:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e Precisely match GPU capacity to application demands, ranging from lightweight remote desktops to intensive data processing.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eMaximize cost efficiency:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e Lower operational overhead by utilizing — and paying for — only the fractional GPU resources you need for specific tasks.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eScale diverse workloads:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e Power a broad spectrum of innovation, from high-fidelity creative design and streaming to complex robotics simulations and real-time inference.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eThese fractional G4 VMs can be managed by Google Kubernetes Engine (GKE), allowing developers to use advanced container binpacking to achieve even higher price-performance and resource utilization. When managed through Dynamic Workload Scheduler, you can set fallback priorities for fractional slices. This significantly improves obtainability by allowing the scheduler to automatically find available GPU configurations for each workload.\u003c/span\u003e\u003c/p\u003e\n\u003cp style=\"padding-left: 40px;\"\u003e\u003cspan style=\"font-style: italic; vertical-align: baseline;\"\u003e“\u003c/span\u003e\u003cspan style=\"font-style: italic; vertical-align: baseline;\"\u003eThe G4 vGPU’s flexible sizing allows us to precisely tailor compute resources to the scale of each molecular simulation, ensuring maximum efficiency across our drug discovery pipeline. This granular control means our researchers can seamlessly pivot between smaller workflows and massive parallel processing without being constrained by fixed hardware configurations.\u003c/span\u003e\u003cspan style=\"font-style: italic; vertical-align: baseline;\"\u003e” \u003c/span\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e– Shane Brauner, \u003c/span\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eEVP, CIO, Schrödinger\u003c/span\u003e\u003c/p\u003e\n\u003ch3\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eScaling AI Hypercomputer with NVIDIA Vera Rubin NVL72\u003c/span\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eBuilding on our deep engineering partnership with NVIDIA, we’re proud to support the successor to NVIDIA Blackwell architecture, the recently announced NVIDIA Vera Rubin platform. We plan to be among the first cloud providers to offer NVIDIA Vera Rubin NVL72 rack-scale systems in the second half of 2026, integrating them into our AI Hypercomputer architecture to empower the next generation of reasoning and agentic AI. \u003c/span\u003e\u003c/p\u003e\n\u003ch3\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eDelivering efficiency across the AI infrastructure stack \u003c/span\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eAs part of our commitment to a fully open ecosystem, we are excited to announce the integration of Dynamo and GKE \u003c/span\u003e\u003ca href=\"https://docs.cloud.google.com/kubernetes-engine/docs/concepts/about-gke-inference-gateway\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eInference Gateway\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e. This integration provides a modular, open-source control plane across the application layer and the hardware. By combining Dynamo with Inference Gateway on GKE, teams can tailor their infrastructure to their exact needs, allowing them to extract the maximum ROI from accelerators, accelerate time-to-market for new AI models, and future-proof their deployments.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eYou can learn to maximize performance for massive MoE architectures through new \u003c/span\u003e\u003ca href=\"https://cloud.google.com/blog/products/compute/scaling-moe-inference-with-nvidia-dynamo-on-google-cloud-a4x?e=48754805\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eadvanced scaling recipes\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e for A4X VMs (powered by NVIDIA GB200 NVL72 and Dynamo). These configurations show how to overcome memory and interconnect bottlenecks when running AI inference workloads on AI Hypercomputer.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eWe are also enhancing resource obtainability through the Dynamic Workload Scheduler, with Calendar Mode and Flex Start for A4X and A4X Max (powered by NVIDIA GB300 NVL72), as well as new Flex Start support for G4 VMs. Dynamic Workload Scheduler lets you reserve the precise capacity that you need, or use flexible start windows. \u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eSnap, a long-time Google Cloud customer, achieved significant cost savings by migrating two of its primary data processing pipelines to Google Cloud G2 VMs powered by NVIDIA L4 Tensor Core GPUs. This was made possible by leveraging Spark on GKE alongside NVIDIA’s new cuDF libraries, which automated the optimization of its shuffle-heavy workloads for optimal GPU efficiency. \u003c/span\u003e\u003ca href=\"https://www.nvidia.com/gtc/session-catalog/sessions/gtc26-s81678/\" rel=\"noopener\" target=\"_blank\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eLearn more at GTC session S81678.\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e \u003c/span\u003e\u003c/p\u003e\n\u003ch3\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eAdvancing Vertex AI training and Model Garden \u003c/span\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eWe are meeting the demands of next-generation AI with two major infrastructure advancements to \u003c/span\u003e\u003ca href=\"https://docs.cloud.google.com/vertex-ai/docs/training/training-clusters/overview\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eVertex AI training clusters\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e. First, support for \u003c/span\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eA4X VM domains\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e lets you leverage Vertex AI’s managed infrastructure and framework capabilities for massive-scale training on \u003c/span\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eNVIDIA GB200 NVL72 \u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003erack-scale systems. To ensure these intensive workloads remain uninterrupted, new hardware resiliency capabilities let you apply configurable, proactive fault detection scans, which identify and mitigate potential hardware issues before they can disrupt critical “hero” training runs. These capabilities enable higher goodput and helps ensure that multi-week training jobs stay on track without costly restarts.\u003c/span\u003e\u003c/p\u003e\n\u003cp style=\"padding-left: 40px;\"\u003e\u003cspan style=\"font-style: italic; vertical-align: baseline;\"\u003e“We are setting a new standard for the agentic enterprise — delivering highly capable, consistent, accurate, and responsive AI agents with Google and NVIDIA. By leveraging Vertex AI training clusters on \u003c/span\u003e\u003cspan style=\"font-style: italic; vertical-align: baseline;\"\u003eNVIDIA GB200 NVL72\u003c/span\u003e\u003cspan style=\"font-style: italic; vertical-align: baseline;\"\u003e to power our Agentforce 360 Platform, we’ve eliminated infrastructure bottlenecks to keep our GPUs fully saturated. This high-performance, resilient architecture allows our researchers to focus on innovation at scale, driving substantial gains for our most complex reasoning workloads.” - \u003c/span\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eSilvio Savarese, Chief Scientist, Salesforce\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eAt the same time, we continue to broaden Vertex AI Model Garden with support for \u003c/span\u003e\u003ca href=\"https://console.cloud.google.com/vertex-ai/publishers/nvidia/model-garden/nemotron-3-super\" rel=\"noopener\" target=\"_blank\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eNVIDIA’s Nemotron 3\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e family of open models. These include the Nemotron 3 Nano, featuring one-click deployment to simplify integration into private VPCs. We’ve also expanded our catalog to include the NVIDIA Nemotron 3 Super 120B model for immediate access to high-performance, large-scale reasoning. To maximize the value of these models, we’ve integrated NVIDIA’s latest performance libraries directly into Vertex AI to optimize popular open-source models on NVIDIA TensorRT-LLM. \u003c/span\u003e\u003c/p\u003e\n\u003ch3\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eEmpowering public sector AI startups \u003c/span\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eTo foster continued innovation within the ecosystem, Google Public Sector and NVIDIA are launching an AI startup accelerator program. This year-long initiative will support a select cohort of AI-focused Independent Software Vendors (ISVs) building solutions for the public sector.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eParticipants gain dual access to both NVIDIA Inception and Google Cloud’s ISV accelerator resources. Kicking off at GTC and continuing through Google Cloud Next, this joint program will equip emerging technology leaders with the co-engineered infrastructure, technical guidance, and go-to-market support required to scale mission-critical public sector applications. To learn more about the program, please complete the \u003c/span\u003e\u003ca href=\"https://docs.google.com/forms/d/e/1FAIpQLSci71lEfkHJKb9wVN2UmXVGaOk3DeB84mW5dve8ulo9kl60pg/viewform\" rel=\"noopener\" target=\"_blank\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003einterest form\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e. Additional cohorts will be selected and announced in the future.\u003c/span\u003e\u003c/p\u003e\n\u003ch3\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eCo-engineering collaboration powers every layer of the AI stack\u003c/span\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eThe transition to complex, agentic AI demands more than just raw compute. It requires a fully optimized, co-engineered stack. By integrating flexible hardware like fractional G4 instances and the upcoming Vera Rubin platform into our AI Hypercomputer architecture, and pairing it with deep software co-engineering, we provide the scale, resilience, and efficiency you need to turn your most ambitious AI visions into reality.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eComing to GTC? Stop by booth #513 to learn more and talk to our team. And you can always learn more about our collaboration with NVIDIA at \u003c/span\u003e\u003ca href=\"http://cloud.google.com/NVIDIA\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003ecloud.google.com/NVIDIA\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e.\u003c/span\u003e\u003c/p\u003e\u003c/div\u003e"
+    }
+  ],
+  "generatedAt": "2026-03-17T07:18:20.360912797+09:00"
+}
