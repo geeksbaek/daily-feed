@@ -1,0 +1,537 @@
+{
+  "date": "2026-03-19",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2026년 3월 18일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** OpenAI의 초경량 모델 GPT-5.4 Mini/Nano 출시로 실시간 AI 생태계가 가속화되는 가운데, IBM의 110억 달러 규모 Confluent 인수와 메타/틱톡의 알고리즘 윤리 논란 등 기술의 눈부신 발전과 그 이면의 과제가 뚜렷하게 교차한 하루였습니다.\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### OpenAI, GPT‑5.4 Mini 및 Nano 전격 공개\nOpenAI가 속도와 비용 효율성을 극대화한 경량형 AI 모델 'GPT-5.4 Mini'와 'Nano'를 공개했습니다. Mini 모델은 코딩 및 추론 능력에서 상위 모델인 GPT-5.4에 근접한 성능을 내면서도 지연시간(Latency)을 대폭 줄여 속도를 2배 이상 끌어올렸습니다. 특히 새롭게 선보인 Nano 모델은 분류, 데이터 추출 등 대량의 단순 작업을 초저비용으로 처리하는 데 특화되었습니다. 이번 발표는 \"가장 좋은 모델이 항상 가장 큰 모델은 아니다\"라는 OpenAI의 철학을 보여주며, 코딩 보조 도구나 실시간 멀티모달 에이전트처럼 '즉각적인 반응'이 필수적인 서비스 생태계에 큰 지각변동을 예고합니다.\n\u003e **Key Point:** 성능, 속도, 비용의 완벽한 균형을 맞춘 경량 모델 라인업 완성으로, 지연 없는 실시간 AI 에이전트의 대중화가 앞당겨질 전망입니다. [^45]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. IBM, 110억 달러에 실시간 데이터 플랫폼 'Confluent' 인수\n- **What:** IBM이 아파치 카프카(Apache Kafka) 기반의 데이터 스트리밍 선도 기업 Confluent를 약 110억 달러(주당 31달러)에 인수 완료했습니다.\n- **Why:** 기업용 AI와 자율 에이전트가 제대로 작동하려면 과거의 정적 데이터가 아닌 '실시간으로 흐르는 신뢰할 수 있는 데이터'가 필수적이기 때문입니다.\n- **Impact:** Confluent의 스트리밍 기술이 IBM의 watsonx.data 및 메인프레임(IBM Z)과 결합되면서, 엔터프라이즈 AI 시장은 단순한 '실험' 단계를 넘어 실시간 데이터 기반의 '실제 비즈니스 운영' 단계로 빠르게 전환될 것입니다. [^66]\n\n### 2. 8만 1천 명의 사용자가 AI에게 진정으로 원하는 것\n- **What:** Anthropic이 전 세계 159개국 81,000명의 Claude 사용자를 대상으로 진행한 역대 최대 규모의 AI 심층 인터뷰 결과를 발표했습니다.\n- **Why:** 대중이 AI를 통해 단순히 업무 생산성만 높이려는 것이 아니라, 궁극적으로 '삶의 질 향상(시간적 자유, 정서적 지원, 개인적 성장)'을 원한다는 구체적인 열망을 파악하기 위함입니다.\n- **Impact:** AI 발전이 가져오는 '빛과 그림자(예: 학습 도구로서의 유용성 vs 인지 능력 퇴화 우려, 시간 절약 vs 끝없는 업무 압박)'가 공존함이 확인되었으며, 향후 AI는 단순한 속도 경쟁을 넘어 인간의 웰빙을 실질적으로 향상시키는 방향으로 설계되어야 함을 시사합니다. [^8]\n\n### 3. 메타와 틱톡, 참여 유도를 위한 유해 콘텐츠 방치 논란\n- **What:** 메타와 틱톡이 사용자 참여를 극대화하기 위해 분노와 혐오를 유발하는 유해 콘텐츠 노출을 의도적으로 허용했다는 내부고발자들의 충격적인 증언이 나왔습니다.\n- **Why:** 내부 연구 결과, 도덕적 자극이나 분노를 유발하는 '경계선 콘텐츠'가 사용자의 체류 시간과 플랫폼 수익을 가장 효과적으로 늘려주기 때문입니다.\n- **Impact:** 빅테크 기업이 아동 안전과 사회적 악영향보다 단기적 주가와 수익을 우선시했다는 구조적 문제가 폭로됨에 따라, 소셜 미디어 알고리즘에 대한 정부의 강력한 규제와 투명성 요구가 전 세계적으로 거세질 전망입니다. [^21]\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **Visual Studio Code 1.113** | 개발자들의 필수 에디터 VS Code의 최신 1.113 릴리스 [^1] |\n| **Tool** | **Visual Studio Code 1.112** | 이전 버전인 VS Code 1.112 릴리스 업데이트 내역 [^2] |\n| **Tool** | **Next.js 16.2** | Turbopack 안정화 및 AI 기능이 대폭 개선된 Next.js 최신 릴리스 [^5] [^6] [^7] |\n| **Tool** | **Nemotron 3 Nano 4B** | 로컬 환경에서 효율적으로 구동 가능한 NVIDIA의 소형 하이브리드 AI 모델 [^11] |\n| **Tool** | **Get Shit Done** | Claude Code를 위한 메타 프롬프트, 컨텍스트 엔지니어링 및 명세 기반 개발 시스템 [^24] |\n| **Tool** | **위키위키위키** | DB 없이 텍스트 파일 기반으로 가볍게 동작하는 PHP 위키 엔진 [^25] |\n| **Tool** | **FFmpeg 8.1** | 강력한 오픈소스 멀티미디어 프레임워크 FFmpeg의 최신 8.1 메이저 업데이트 [^26] |\n| **Tool** | **Mistral AI Forge** | Mistral AI가 새롭게 출시한 개발자 및 에이전트 구축용 도구 모음 [^28] |\n| **Tool** | **틸노트** | 키워드 하나만 입력하면 AI가 알아서 지식 노트를 작성해주는 생산성 도구 [^31] |\n| **Tool** | **ClawTeam** | 여러 AI 에이전트를 하나의 '팀'으로 구성하여 협업하게 만드는 오픈소스 [^33] |\n| **Tool** | **AIEndpoint** | AI 에이전트가 모든 웹서비스를 즉시 이해하고 사용할 수 있도록 돕는 오픈 표준 API [^35] |\n| **Tool** | **Unsloth Studio** | 로컬 환경에서 AI 모델을 훈련하고 실행할 수 있는 직관적인 노코드 웹 UI [^36] |\n| **Tool** | **Claude Cowork Dispatch** | 어디서든 Claude에게 작업을 지시하고 관리할 수 있는 디스패치 도구 [^37] |\n| **Tool** | **Open SWE** | 사내 맞춤형 코딩 에이전트를 구축하기 위한 오픈소스 프레임워크 [^38] |\n| **Tool** | **cmux** | AI 코딩 에이전트에 최적화된 Ghostty 기반의 macOS용 고성능 터미널 [^44] |\n| **Tool** | **Pervaziv AI Code Review** | GitHub Action 기반으로 동작하는 자동화된 AI 코드 리뷰 도구 [^51] |\n| **Tool** | **turboAPI** | Zig HTTP 코어를 사용하여 기존 대비 7배 빠른 FastAPI 호환 Python 프레임워크 [^53] |\n| **Tool** | **Gea** | 현존하는 가장 빠른 속도를 자랑하는 컴파일형 UI 프레임워크 [^58] |\n| **Tool** | **AlexClaw** | Elixir/OTP 기반으로 구축된 강력한 BEAM 네이티브 개인용 자율 AI 에이전트 [^59] |\n| **Tool** | **Toshy** | Linux 키보드 단축키를 macOS 환경처럼 자연스럽게 동작하도록 매핑해주는 도구 [^64] |\n| **Tool** | **Radicle 1.7.0** | P2P 기반의 탈중앙화 코드 협업 플랫폼 Radicle의 1.7.0 (Daffodil) 릴리스 [^65] |\n| **Paper** | **Shannon entropy derivation** | 정보이론의 핵심인 섀넌 엔트로피에 대한 대안적이고 직관적인 수학적 도출 과정을 다룬 아티클 [^61] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n\n#### 🤖 AI \u0026 Robotics\n* **From Simulation to Production: How to Build Robots With AI**: AI를 활용해 시뮬레이션 환경에서 실제 로봇을 학습시키고 배포하는 엔비디아의 방법론 [^3]\n* **Meet the AI workflows that keep your projects – and Jira board – moving**: 회의 내용과 버그 리포트를 바탕으로 Jira 보드 관리를 자동화하는 Atlassian의 AI 워크플로우 [^4]\n* **Polly is generally available everywhere you work in LangSmith**: LangSmith의 강력한 평가 도구 Polly가 정식 출시되어 모든 워크스페이스에서 사용 가능 [^17]\n* **Introducing “vibe design” with Stitch**: Google Labs가 선보인 AI 기반 UI 디자인 도구 'Stitch'와 감각적인 '바이브 디자인' 개념 [^18]\n* **Ask GN: AI 사용 방법에 대한 글이 많습니다만, 어떻게 해야하는지 잘 모르겠습니다.**: 넘쳐나는 AI 정보 속에서 실제적이고 효율적인 프롬프트 활용법을 묻는 커뮤니티 토론 [^22]\n* **The Mirage of Career Inertia in the AI Era**: AI 시대에 기존 경력의 관성에 기대는 것이 왜 위험한지 분석한 커리어 인사이트 [^48]\n* **I built an AI baseball manager that runs all 30 MLB teams**: 30개 MLB 팀의 로스터와 전략을 동시에 운영하는 흥미로운 AI 야구 매니저 시뮬레이션 [^57]\n* **iCloud Photo Sharing Sucks – Can AI Help Me Replace It?**: 불편한 기존 클라우드 사진 공유 방식을 AI 기술로 혁신하려는 아이디어 [^60]\n* **Stop Building AI \"Teams.\" Start Building Software Factories.**: 고립된 AI 전담팀을 만드는 대신 조직 전체를 소프트웨어 팩토리 관점으로 혁신해야 한다는 주장 [^63]\n\n#### 🌐 Web, Browser \u0026 OS\n* **Beta Channel Update for ChromeOS / ChromeOS Flex**: 크롬북 사용자를 위한 ChromeOS 및 Flex의 최신 베타 채널 업데이트 배포 [^12]\n* **Chrome for Android Update**: 보안 및 안정성이 개선된 안드로이드용 Chrome 브라우저 최신 업데이트 [^13]\n* **Stable Channel Update for Desktop**: 윈도우, 맥, 리눅스를 위한 데스크톱용 Chrome 브라우저 안정화 채널 업데이트 [^14]\n* **Chrome Beta for iOS Update**: 아이폰 및 아이패드 사용자를 위한 iOS용 Chrome 브라우저 베타 업데이트 [^15]\n* **Kagi Small Web**: 프리미엄 검색 엔진 Kagi가 선보이는 작고 독립적인 고품질 웹사이트 큐레이션 서비스 [^40]\n* **Kagi Translate가 이제 LinkedIn Speak을 출력 언어로 지원**: Kagi 번역기에 링크드인 특유의 과장된 비즈니스 화법으로 번역해주는 유머러스한 기능 추가 [^43]\n* **What's on HTTP?**: HTTP 프로토콜 상에서 일어나는 흥미로운 트래픽 현상과 데이터를 시각적으로 탐구하는 웹사이트 [^56]\n\n#### 💻 Dev, Infra \u0026 Security\n* **From the Captain’s Chair: Naga Santhosh Reddy Vootukuri**: Docker 캡틴이 전하는 컨테이너 생태계 인사이트와 개발자로서의 성장 경험담 [^10]\n* **Introducing Custom Regions for precision data control**: Cloudflare가 기업의 엄격한 데이터 주권 제어를 돕기 위해 도입한 커스텀 리전 기능 [^16]\n* **코드 작성 속도가 문제라고 생각했다면 더 큰 문제가 있다**: 개발 생산성의 진짜 병목은 타이핑 속도가 아니라 요구사항 이해와 설계에 있다는 통찰 [^23]\n* **Python 3.15의 JIT이 다시 정상 궤도에 오르다**: 성능 향상의 핵심인 Python 3.15 JIT 컴파일러의 긍정적인 개발 진행 상황 [^27]\n* **Ask GN: 비밀번호관리자 1Password 의 추천 대안이 있을까요?**: 1Password를 대체할 만한 안전하고 합리적인 비밀번호 관리자에 대한 개발자들의 추천 [^29]\n* **오픈 소스 보안 작업은 “특별”하지 않다**: 오픈소스 보안 유지보수 역시 마법이 아닌 일반적인 소프트웨어 엔지니어링의 연장선이라는 의견 [^30]\n* **Slug 알고리듬 10주년**: 웹 URL을 깔끔하게 만들어주는 Slug 생성 알고리즘의 10년 역사와 발전 과정 회고 [^32]\n* **모든 검토 단계가 속도를 10배 늦춘다**: 과도한 코드 리뷰와 승인 절차가 애자일한 개발 속도에 미치는 치명적인 악영향 [^34]\n* **Ten years late to the dbt party (DuckDB edition)**: DuckDB를 활용해 데이터 빌드 툴(dbt) 생태계에 뒤늦게 합류한 데이터 엔지니어의 생생한 경험기 [^47]\n* **Show HN: Prepare for coding interviews via deliberate practice**: 단순 암기가 아닌 의도적 수련(deliberate practice) 방식을 적용한 코딩 인터뷰 준비 플랫폼 [^55]\n\n#### 🏢 Tech, Business \u0026 Society\n* **Friend Bubbles: Enhancing Social Discovery on Facebook Reels**: Facebook Reels에서 지인들의 관심사를 연결해주는 새로운 머신러닝 기능 'Friend Bubbles' [^9]\n* **How we’ve made our products with recycled materials**: Google 하드웨어 제품에 재활용 소재를 적용한 엔지니어링 과정과 지속가능성 보고서 [^19]\n* **Google’s response to the CMA’s consultation on potential requirements for Search**: 영국 경쟁시장청(CMA)의 검색 엔진 규제안에 대한 Google의 공식적인 반박 및 답변 [^20]\n* **마이크로소프트의 ‘해킹 불가능한’ Xbox One, ‘Bliss’에 의해 해킹됨**: 절대 뚫리지 않는다던 Xbox One 보안이 해커 그룹 Bliss에 의해 결국 무너진 사건 [^39]\n* **미국 SEC, 분기별 보고 의무 폐지 준비 중**: 미국 증권거래위원회(SEC)가 기업의 단기주의를 타파하기 위해 분기별 실적 보고 의무 폐지를 검토 중인 소식 [^41]\n* **메타의 20억 달러 연령 인증 기술 로비 배후를 밝혀낸 Reddit 사용자**: 메타의 대규모 연령 인증 법안 로비 활동을 집요하게 추적해낸 한 레딧 유저의 활약상 [^42]\n* **Starlink Mini를 백업 회선으로 활용하기**: 위성 인터넷 Starlink Mini를 기존 망 장애 시 비상용 백업 인터넷으로 구축하는 실용적인 가이드 [^46]\n* **'Ketman' and doublethink: what it costs to comply with tyranny (2017)**: 억압적인 체제나 기업 문화에 순응할 때 발생하는 심리적 비용과 '이중사고'를 다룬 깊이 있는 에세이 [^49]\n* **Acquihires, often used by Big Tech, are a 'red flag,' DOJ antitrust head says**: 미 법무부가 빅테크의 꼼수 인수인 '인재 영입용 인수(Acquihire)'를 반독점 적신호로 규정하고 감시를 강화함 [^50]\n* **'I'm not political': Tim Cook resp to backlash ag. relationship w. Trump admin**: 트럼프 행정부와의 밀착 관계에 대한 비판에 \"나는 정치적이지 않다\"며 선을 그은 애플 CEO 팀 쿡 [^52]\n* **Coal plant forced to stay open due to emergency order isn't even running**: 전력난 비상 명령으로 가동이 연장된 석탄 발전소가 실제로는 운영조차 되지 않고 있는 황당한 논란 [^54]\n* **Rolls-Royce scraps goal to go all-electric by 2030**: 럭셔리 자동차 브랜드 롤스로이스가 2030년까지 100% 전기차로 전환하려던 계획을 시장 상황 악화로 전면 백지화 [^62]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘 브리핑에서는 AI가 실험실을 벗어나 실시간 비즈니스와 일상으로 깊숙이 침투하고 있음을 확인할 수 있었습니다. 초경량 모델의 등장과 실시간 데이터 인프라의 결합은 기술적 도약을 의미하지만, 동시에 알고리즘의 윤리적 책임과 인간의 웰빙이라는 무거운 과제를 우리에게 던지고 있습니다. 속도만큼이나 올바른 방향 설정이 중요한 시점입니다.\n\n[^1]: Visual Studio Code 1.113 - https://code.visualstudio.com/updates/v1_113\n[^2]: Visual Studio Code 1.112 - https://code.visualstudio.com/updates/v1_112\n[^3]: From Simulation to Production: How to Build Robots With AI - https://blogs.nvidia.com/blog/build-robots-with-ai/\n[^4]: Meet the AI workflows that keep your projects – and Jira board – moving - https://www.atlassian.com/blog/loom/turn-meetings-and-bugs-into-action\n[^5]: Next.js 16.2: AI Improvements - https://nextjs.org/blog/next-16-2-ai\n[^6]: Turbopack: What's New in Next.js 16.2 - https://nextjs.org/blog/next-16-2-turbopack\n[^7]: Next.js 16.2 - https://nextjs.org/blog/next-16-2\n[^8]: What 81,000 people want from AI - https://www.anthropic.com/81k-interviews\n[^9]: Friend Bubbles: Enhancing Social Discovery on Facebook Reels - https://engineering.fb.com/2026/03/18/ml-applications/friend-bubbles-enhancing-social-discovery-on-facebook-reels/\n[^10]: From the Captain’s Chair: Naga Santhosh Reddy Vootukuri - https://www.docker.com/blog/from-the-captains-chair-naga-santhosh-reddy-vootukuri/\n[^11]: Nemotron 3 Nano 4B: A Compact Hybrid Model for Efficient Local AI - https://huggingface.co/blog/nvidia/nemotron-3-nano-4b\n[^12]: Beta Channel Update for ChromeOS / ChromeOS Flex - http://chromereleases.googleblog.com/2026/03/beta-channel-update-for-chromeos_18.html\n[^13]: Chrome for Android Update - http://chromereleases.googleblog.com/2026/03/chrome-for-android-update_18.html\n[^14]: Stable Channel Update for Desktop - http://chromereleases.googleblog.com/2026/03/stable-channel-update-for-desktop_18.html\n[^15]: Chrome Beta for iOS Update - http://chromereleases.googleblog.com/2026/03/chrome-beta-for-ios-update_0860997599.html\n[^16]: Introducing Custom Regions for precision data control - https://blog.cloudflare.com/custom-regions/\n[^17]: Polly is generally available everywhere you work in LangSmith - https://blog.langchain.com/polly-langsmith-ga/\n[^18]: Introducing “vibe design” with Stitch - https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-ai-ui-design/\n[^19]: How we’ve made our products with recycled materials - https://blog.google/company-news/outreach-and-initiatives/sustainability/new-recycled-materials-guide/\n[^20]: Google’s response to the CMA’s consultation on potential requirements for Search - https://blog.google/company-news/inside-google/around-the-globe/google-europe/cma-response/\n[^21]: 메타와 틱톡, 참여 유도를 위해 유해 콘텐츠 노출을 허용했다는 내부고발자 증언 - https://news.hada.io/topic?id=27626\n[^22]: Ask GN: AI 사용 방법에 대한 글이 많습니다만, 어떻게 해야하는지 잘 모르겠습니다. - https://news.hada.io/topic?id=27625\n[^23]: 코드 작성 속도가 문제라고 생각했다면 더 큰 문제가 있다 - https://news.hada.io/topic?id=27624\n[^24]: Get Shit Done - Claude Code용 메타 프롬프트·컨텍스트 엔지니어링·명세 기반 개발 시스템 - https://news.hada.io/topic?id=27622\n[^25]: Show GN: 위키위키위키: 텍스트 파일 기반 PHP 위키 엔진 - https://news.hada.io/topic?id=27621\n[^26]: FFmpeg 8.1 - https://news.hada.io/topic?id=27619\n[^27]: Python 3.15의 JIT이 다시 정상 궤도에 오르다 - https://news.hada.io/topic?id=27618\n[^28]: Mistral AI, Forge 출시 - https://news.hada.io/topic?id=27616\n[^29]: Ask GN: 비밀번호관리자 1Password 의 추천 대안이 있을까요? - https://news.hada.io/topic?id=27615\n[^30]: 오픈 소스 보안 작업은 “특별”하지 않다 - https://news.hada.io/topic?id=27613\n[^31]: Show GN: 틸노트 - 키워드 하나로 AI가 노트를 써주는 지식관리 도구 - https://news.hada.io/topic?id=27611\n[^32]: Slug 알고리듬 10주년 - https://news.hada.io/topic?id=27610\n[^33]: ClawTeam — AI 에이전트를 “팀”으로 만드는 오픈소스 - https://news.hada.io/topic?id=27609\n[^34]: 모든 검토 단계가 속도를 10배 늦춘다 - https://news.hada.io/topic?id=27608\n[^35]: Show GN: AIEndpoint — AI 에이전트가 모든 웹서비스를 즉시 이해할 수 있는 /ai 엔드포인트 오픈 표준 - https://news.hada.io/topic?id=27607\n[^36]: Unsloth Studio - 로컬에서 AI 모델을 훈련하고 실행하는 오픈소스 노코드 웹 UI - https://news.hada.io/topic?id=27606\n[^37]: Claude Cowork Dispatch - 어디서든 Claude에게 작업시키기 - https://news.hada.io/topic?id=27605\n[^38]: Open SWE: 사내 코딩 에이전트를 위한 오픈소스 프레임워크 - https://news.hada.io/topic?id=27604\n[^39]: 마이크로소프트의 ‘해킹 불가능한’ Xbox One, ‘Bliss’에 의해 해킹됨 - https://news.hada.io/topic?id=27603\n[^40]: Kagi Small Web - https://news.hada.io/topic?id=27602\n[^41]: 미국 SEC, 분기별 보고 의무 폐지 준비 중 - https://news.hada.io/topic?id=27601\n[^42]: 메타의 20억 달러 연령 인증 기술 로비 배후를 밝혀낸 Reddit 사용자 - https://news.hada.io/topic?id=27600\n[^43]: Kagi Translate가 이제 LinkedIn Speak을 출력 언어로 지원 - https://news.hada.io/topic?id=27599\n[^44]: cmux - AI 코딩 에이전트를 위한 Ghostty 기반 macOS용 터미널 - https://news.hada.io/topic?id=27598\n[^45]: OpenAI, GPT‑5.4 Mini 및 Nano 공개 - https://news.hada.io/topic?id=27597\n[^46]: Starlink Mini를 백업 회선으로 활용하기 - https://news.hada.io/topic?id=27596\n[^47]: Ten years late to the dbt party (DuckDB edition) - https://rmoff.net/2026/02/19/ten-years-late-to-the-dbt-party-duckdb-edition/\n[^48]: The Mirage of Career Inertia in the AI Era: Questions to Ask and Answer Today - https://foggyfuture.substack.com/p/the-mirage-of-career-inertia-in-the\n[^49]: 'Ketman' and doublethink: what it costs to comply with tyranny (2017) - https://aeon.co/ideas/ketman-and-doublethink-what-it-costs-to-comply-with-tyranny\n[^50]: Acquihires, often used by Big Tech, are a 'red flag,' DOJ antitrust head says - https://www.reuters.com/world/acquihires-often-used-by-big-tech-are-red-flag-doj-antitrust-head-says-2026-03-18/\n[^51]: Pervaziv AI Code Review GitHub Action - https://github.com/marketplace/actions/pervaziv-ai-code-review\n[^52]: 'I'm not political': Tim Cook resp to backlash ag. relationship w. Trump admin - https://www.businessinsider.com/tim-cook-response-trump-relationship-criticism-2026-3\n[^53]: FastAPI-compatible Python framework with Zig HTTP core; 7x faster - https://github.com/justrach/turboAPI\n[^54]: Coal plant forced to stay open due to emergency order isn't even running - https://arstechnica.com/science/2026/03/coal-plant-forced-to-stay-open-due-to-emergency-order-isnt-even-running/\n[^55]: Show HN: Prepare for coding interviews via deliberate practice - https://interviewtraner.com/home/\n[^56]: What's on HTTP? - https://whatsonhttp.com/\n[^57]: I built an AI baseball manager that runs all 30 MLB teams - https://deepdugout.com/\n[^58]: Gea – The fastest compiled UI framework - https://github.com/dashersw/gea\n[^59]: A BEAM-native personal autonomous AI agent built on Elixir/OTP - https://github.com/thatsme/AlexClaw\n[^60]: iCloud Photo Sharing Sucks – Can AI Help Me Replace It? - https://medium.com/@DougDonohoe/icloud-photo-sharing-sucks-can-ai-help-me-replace-it-3b48fdd1350c\n[^61]: An alternative derivation of Shannon entropy - https://iczelia.net/posts/shannon-deriv/\n[^62]: Rolls-Royce scraps goal to go all-electric by 2030 - https://www.theguardian.com/business/2026/mar/18/rolls-royce-scraps-all-electric-car-company\n[^63]: Stop Building AI \"Teams.\" Start Building Software Factories. – Owen Zanzal - https://medium.com/devops-ai/stop-building-ai-teams-start-building-software-factories-627cef5d09eb\n[^64]: Make your Linux keyboard act like a 'Tosh - https://github.com/RedBearAK/Toshy\n[^65]: Radicle 1.7.0 – Daffodil - https://radicle.xyz/2026/03/18/radicle-1.7.0\n[^66]: IBM completes acquisition of Confluent - https://newsroom.ibm.com/2026-03-17-ibm-completes-acquisition-of-confluent,-making-real-time-data-the-engine-of-enterprise-ai-and-agents\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **Visual Studio Code 1.113 **\n   - 출처: Visual Studio Code - Code Editing. Redefined.\n   - 링크: https://code.visualstudio.com/updates/v1_113\n\n2. **Visual Studio Code 1.112**\n   - 출처: Visual Studio Code - Code Editing. Redefined.\n   - 링크: https://code.visualstudio.com/updates/v1_112\n\n3. **From Simulation to Production: How to Build Robots With AI**\n   - 출처: NVIDIA Blog\n   - 링크: https://blogs.nvidia.com/blog/build-robots-with-ai/\n\n4. **Meet the AI workflows that keep your projects – and Jira board – moving**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/loom/turn-meetings-and-bugs-into-action\n\n5. **Next.js 16.2: AI Improvements**\n   - 출처: Next.js Blog\n   - 링크: https://nextjs.org/blog/next-16-2-ai\n\n6. **Turbopack: What's New in Next.js 16.2**\n   - 출처: Next.js Blog\n   - 링크: https://nextjs.org/blog/next-16-2-turbopack\n\n7. **Next.js 16.2**\n   - 출처: Next.js Blog\n   - 링크: https://nextjs.org/blog/next-16-2\n\n8. **What 81,000 people want from AI**\n   - 출처: Anthropic News\n   - 링크: https://www.anthropic.com/81k-interviews\n\n9. **Friend Bubbles: Enhancing Social Discovery on Facebook Reels**\n   - 출처: Meta Engineering\n   - 링크: https://engineering.fb.com/2026/03/18/ml-applications/friend-bubbles-enhancing-social-discovery-on-facebook-reels/\n\n10. **From the Captain’s Chair: Naga Santhosh Reddy Vootukuri**\n   - 출처: Docker Blog\n   - 링크: https://www.docker.com/blog/from-the-captains-chair-naga-santhosh-reddy-vootukuri/\n\n11. **Nemotron 3 Nano 4B: A Compact Hybrid Model for Efficient Local AI**\n   - 출처: Hugging Face - Blog\n   - 링크: https://huggingface.co/blog/nvidia/nemotron-3-nano-4b\n\n12. **Beta Channel Update for ChromeOS / ChromeOS Flex**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2026/03/beta-channel-update-for-chromeos_18.html\n\n13. **Chrome for Android Update**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2026/03/chrome-for-android-update_18.html\n\n14. **Stable Channel Update for Desktop**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2026/03/stable-channel-update-for-desktop_18.html\n\n15. **Chrome Beta for iOS Update**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2026/03/chrome-beta-for-ios-update_0860997599.html\n\n16. **Introducing Custom Regions for precision data control**\n   - 출처: Cloudflare Blog\n   - 링크: https://blog.cloudflare.com/custom-regions/\n\n17. **Polly is generally available everywhere you work in LangSmith**\n   - 출처: LangChain Blog\n   - 링크: https://blog.langchain.com/polly-langsmith-ga/\n\n18. **Introducing “vibe design” with Stitch**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-ai-ui-design/\n\n19. **How we’ve made our products with recycled materials**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/company-news/outreach-and-initiatives/sustainability/new-recycled-materials-guide/\n\n20. **Google’s response to the CMA’s consultation on potential requirements for Search**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/company-news/inside-google/around-the-globe/google-europe/cma-response/\n\n21. **메타와 틱톡, 참여 유도를 위해 유해 콘텐츠 노출을 허용했다는 내부고발자 증언**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27626\n\n22. **Ask GN: AI 사용 방법에 대한 글이 많습니다만, 어떻게 해야하는지 잘 모르겠습니다.**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27625\n\n23. **코드 작성 속도가 문제라고 생각했다면 더 큰 문제가 있다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27624\n\n24. **Get Shit Done - Claude Code용 메타 프롬프트·컨텍스트 엔지니어링·명세 기반 개발 시스템**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27622\n\n25. **Show GN: 위키위키위키: 텍스트 파일 기반 PHP 위키 엔진**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27621\n\n26. **FFmpeg 8.1**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27619\n\n27. **Python 3.15의 JIT이 다시 정상 궤도에 오르다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27618\n\n28. **Mistral AI, Forge 출시**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27616\n\n29. **Ask GN: 비밀번호관리자 1Password 의 추천 대안이 있을까요?**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27615\n\n30. **오픈 소스 보안 작업은 “특별”하지 않다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27613\n\n31. **Show GN: 틸노트 - 키워드 하나로 AI가 노트를 써주는 지식관리 도구**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27611\n\n32. **Slug 알고리듬 10주년**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27610\n\n33. **ClawTeam — AI 에이전트를 “팀”으로 만드는 오픈소스**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27609\n\n34. **모든 검토 단계가 속도를 10배 늦춘다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27608\n\n35. **Show GN: AIEndpoint — AI 에이전트가 모든 웹서비스를 즉시 이해할 수 있는 /ai 엔드포인트 오픈 표준**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27607\n\n36. **Unsloth Studio - 로컬에서 AI 모델을 훈련하고 실행하는 오픈소스 노코드 웹 UI**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27606\n\n37. **Claude Cowork Dispatch - 어디서든 Claude에게 작업시키기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27605\n\n38. **Open SWE: 사내 코딩 에이전트를 위한 오픈소스 프레임워크**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27604\n\n39. **마이크로소프트의 ‘해킹 불가능한’ Xbox One, ‘Bliss’에 의해 해킹됨**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27603\n\n40. **Kagi Small Web**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27602\n\n41. **미국 SEC, 분기별 보고 의무 폐지 준비 중**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27601\n\n42. **메타의 20억 달러 연령 인증 기술 로비 배후를 밝혀낸 Reddit 사용자**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27600\n\n43. **Kagi Translate가 이제 LinkedIn Speak을 출력 언어로 지원**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27599\n\n44. **cmux - AI 코딩 에이전트를 위한 Ghostty 기반 macOS용 터미널**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27598\n\n45. **OpenAI, GPT‑5.4 Mini 및 Nano 공개**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27597\n\n46. **Starlink Mini를 백업 회선으로 활용하기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27596\n\n47. **Ten years late to the dbt party (DuckDB edition)**\n   - 출처: Hacker News\n   - 링크: https://rmoff.net/2026/02/19/ten-years-late-to-the-dbt-party-duckdb-edition/\n\n48. **The Mirage of Career Inertia in the AI Era: Questions to Ask and Answer Today**\n   - 출처: Hacker News\n   - 링크: https://foggyfuture.substack.com/p/the-mirage-of-career-inertia-in-the\n\n49. **'Ketman' and doublethink: what it costs to comply with tyranny (2017)**\n   - 출처: Hacker News\n   - 링크: https://aeon.co/ideas/ketman-and-doublethink-what-it-costs-to-comply-with-tyranny\n\n50. **Acquihires, often used by Big Tech, are a 'red flag,' DOJ antitrust head says**\n   - 출처: Hacker News\n   - 링크: https://www.reuters.com/world/acquihires-often-used-by-big-tech-are-red-flag-doj-antitrust-head-says-2026-03-18/\n\n51. **Pervaziv AI Code Review GitHub Action**\n   - 출처: Hacker News\n   - 링크: https://github.com/marketplace/actions/pervaziv-ai-code-review\n\n52. **'I'm not political': Tim Cook resp to backlash ag. relationship w. Trump admin**\n   - 출처: Hacker News\n   - 링크: https://www.businessinsider.com/tim-cook-response-trump-relationship-criticism-2026-3\n\n53. **FastAPI-compatible Python framework with Zig HTTP core; 7x faster**\n   - 출처: Hacker News\n   - 링크: https://github.com/justrach/turboAPI\n\n54. **Coal plant forced to stay open due to emergency order isn't even running**\n   - 출처: Hacker News\n   - 링크: https://arstechnica.com/science/2026/03/coal-plant-forced-to-stay-open-due-to-emergency-order-isnt-even-running/\n\n55. **Show HN: Prepare for coding interviews via deliberate practice**\n   - 출처: Hacker News\n   - 링크: https://interviewtraner.com/home/\n\n56. **What's on HTTP?**\n   - 출처: Hacker News\n   - 링크: https://whatsonhttp.com/\n\n57. **I built an AI baseball manager that runs all 30 MLB teams**\n   - 출처: Hacker News\n   - 링크: https://deepdugout.com/\n\n58. **Gea – The fastest compiled UI framework**\n   - 출처: Hacker News\n   - 링크: https://github.com/dashersw/gea\n\n59. **A BEAM-native personal autonomous AI agent built on Elixir/OTP**\n   - 출처: Hacker News\n   - 링크: https://github.com/thatsme/AlexClaw\n\n60. **iCloud Photo Sharing Sucks – Can AI Help Me Replace It?**\n   - 출처: Hacker News\n   - 링크: https://medium.com/@DougDonohoe/icloud-photo-sharing-sucks-can-ai-help-me-replace-it-3b48fdd1350c\n\n61. **An alternative derivation of Shannon entropy**\n   - 출처: Hacker News\n   - 링크: https://iczelia.net/posts/shannon-deriv/\n\n62. **Rolls-Royce scraps goal to go all-electric by 2030**\n   - 출처: Hacker News\n   - 링크: https://www.theguardian.com/business/2026/mar/18/rolls-royce-scraps-all-electric-car-company\n\n63. **Stop Building AI \"Teams.\" Start Building Software Factories. – Owen Zanzal**\n   - 출처: Hacker News\n   - 링크: https://medium.com/devops-ai/stop-building-ai-teams-start-building-software-factories-627cef5d09eb\n\n64. **Make your Linux keyboard act like a 'Tosh**\n   - 출처: Hacker News\n   - 링크: https://github.com/RedBearAK/Toshy\n\n65. **Radicle 1.7.0 – Daffodil**\n   - 출처: Hacker News\n   - 링크: https://radicle.xyz/2026/03/18/radicle-1.7.0\n\n66. **IBM completes acquisition of Confluent**\n   - 출처: Hacker News\n   - 링크: https://newsroom.ibm.com/2026-03-17-ibm-completes-acquisition-of-confluent,-making-real-time-data-the-engine-of-enterprise-ai-and-agents\n\n\n",
+  "articles": [
+    {
+      "title": "Visual Studio Code 1.113 ",
+      "link": "https://code.visualstudio.com/updates/v1_113",
+      "source": "Visual Studio Code - Code Editing. Redefined.",
+      "category": "tech",
+      "publishedAt": "2026-03-25T17:00:00Z",
+      "description": "\n      \u003cp\u003eLearn what's new in Visual Studio Code 1.113 (Insiders)\u003c/p\u003e\n      \u003cp\u003e\u003ca href=\"https://code.visualstudio.com/updates/v1_113\"\u003eRead the full article\u003c/a\u003e\u003c/p\u003e\n    "
+    },
+    {
+      "title": "Visual Studio Code 1.112",
+      "link": "https://code.visualstudio.com/updates/v1_112",
+      "source": "Visual Studio Code - Code Editing. Redefined.",
+      "category": "tech",
+      "publishedAt": "2026-03-18T17:00:00Z",
+      "description": "\n      \u003cp\u003eLearn what's new in Visual Studio Code 1.112\u003c/p\u003e\n      \u003cp\u003e\u003ca href=\"https://code.visualstudio.com/updates/v1_112\"\u003eRead the full article\u003c/a\u003e\u003c/p\u003e\n    "
+    },
+    {
+      "title": "From Simulation to Production: How to Build Robots With AI",
+      "link": "https://blogs.nvidia.com/blog/build-robots-with-ai/",
+      "source": "NVIDIA Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-18T13:00:13Z",
+      "description": "The latest open models and frameworks from NVIDIA bring together simulation, robot learning and embedded compute to accelerate cloud-to-robot workflows. "
+    },
+    {
+      "title": "Meet the AI workflows that keep your projects – and Jira board – moving",
+      "link": "https://www.atlassian.com/blog/loom/turn-meetings-and-bugs-into-action",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-18T16:31:17Z",
+      "description": "\u003cp\u003eIntroducing Loom’s deeper integrations with Jira: enhanced bug reporting mode with technical context and AI-suggested Jira work item updates.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/loom/turn-meetings-and-bugs-into-action\"\u003eMeet the AI workflows that keep your projects – and Jira board – moving\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Next.js 16.2: AI Improvements",
+      "link": "https://nextjs.org/blog/next-16-2-ai",
+      "source": "Next.js Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-18T20:00:00Z",
+      "description": "Next.js 16.2 ships AGENTS.md in create-next-app, browser log forwarding, dev server lock file with PID, and next-browser for AI agent debugging."
+    },
+    {
+      "title": "Turbopack: What's New in Next.js 16.2",
+      "link": "https://nextjs.org/blog/next-16-2-turbopack",
+      "source": "Next.js Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-18T20:00:00Z",
+      "description": "Turbopack in Next.js 16.2 brings faster builds, SRI support, postcss.config.ts, tree shaking of dynamic imports, Server Fast Refresh, inline loader configuration, and over 200 bug fixes."
+    },
+    {
+      "title": "Next.js 16.2",
+      "link": "https://nextjs.org/blog/next-16-2",
+      "source": "Next.js Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-18T20:00:00Z",
+      "description": "Next.js 16.2 includes Adapters, rendering performance improvements, improved debugging and error pages, and more."
+    },
+    {
+      "title": "What 81,000 people want from AI",
+      "link": "https://www.anthropic.com/81k-interviews",
+      "source": "Anthropic News",
+      "category": "tech",
+      "publishedAt": "2026-03-18T00:00:00Z",
+      "description": "What 81,000 people want from AI"
+    },
+    {
+      "title": "Friend Bubbles: Enhancing Social Discovery on Facebook Reels",
+      "link": "https://engineering.fb.com/2026/03/18/ml-applications/friend-bubbles-enhancing-social-discovery-on-facebook-reels/",
+      "source": "Meta Engineering",
+      "category": "tech",
+      "publishedAt": "2026-03-18T18:19:33Z",
+      "description": "\u003cp\u003eFriend bubbles in Facebook Reels highlight Reels your friends have liked or reacted to, helping you discover new content and making it easier to connect over shared interests. This article explains the technical architecture behind friend bubbles, including how machine learning estimates relationship strength and ranks content your friends have interacted with to create more [...]\u003c/p\u003e\n\u003cp\u003e\u003ca class=\"btn btn-secondary understrap-read-more-link\" href=\"https://engineering.fb.com/2026/03/18/ml-applications/friend-bubbles-enhancing-social-discovery-on-facebook-reels/\"\u003eRead More...\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eThe post \u003ca rel=\"nofollow\" href=\"https://engineering.fb.com/2026/03/18/ml-applications/friend-bubbles-enhancing-social-discovery-on-facebook-reels/\"\u003eFriend Bubbles: Enhancing Social Discovery on Facebook Reels\u003c/a\u003e appeared first on \u003ca rel=\"nofollow\" href=\"https://engineering.fb.com\"\u003eEngineering at Meta\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "From the Captain’s Chair: Naga Santhosh Reddy Vootukuri",
+      "link": "https://www.docker.com/blog/from-the-captains-chair-naga-santhosh-reddy-vootukuri/",
+      "source": "Docker Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-18T16:00:12Z",
+      "description": "Docker Captains are leaders from the developer community that are both experts in their field and are passionate about sharing their Docker knowledge with others. “From the Captain’s Chair” is a blog series where we get a closer look at one Captain to learn more about them and their experiences.  Today we are interviewing Naga..."
+    },
+    {
+      "title": "Nemotron 3 Nano 4B: A Compact Hybrid Model for Efficient Local AI",
+      "link": "https://huggingface.co/blog/nvidia/nemotron-3-nano-4b",
+      "source": "Hugging Face - Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-17T23:17:07Z"
+    },
+    {
+      "title": "Beta Channel Update for ChromeOS / ChromeOS Flex",
+      "link": "http://chromereleases.googleblog.com/2026/03/beta-channel-update-for-chromeos_18.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2026-03-18T11:10:00-07:00",
+      "description": "\u003cp\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" style=\"color: rgba(0, 0, 0, 0.87); font-family: arial; font-size: large;\"\u003eThe ChromeOS Beta channel is being updated to OS version\u0026nbsp;\u003c/span\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" style=\"color: rgba(0, 0, 0, 0.87); font-family: arial; font-size: large;\"\u003e16581.37.0\u003c/span\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" style=\"color: rgba(0, 0, 0, 0.87); font-family: arial; font-size: large;\"\u003e\u0026nbsp;(Browser version\u0026nbsp;\u003c/span\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" style=\"color: rgba(0, 0, 0, 0.87); font-family: arial; font-size: large;\"\u003e146.0.7680.152\u003c/span\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" style=\"color: rgba(0, 0, 0, 0.87); font-family: arial; font-size: large;\"\u003e) for most ChromeOS devices.\u003c/span\u003e\u003c/p\u003e\u003cdiv style=\"background-color: white; color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px; line-height: 2.21538; margin-bottom: 0pt; margin-top: 31pt;\"\u003e\u003cspan style=\"white-space-collapse: preserve;\"\u003e\u003cspan style=\"font-family: arial;\"\u003eIf you find new issues, please let us know one of the following ways:\u003c/span\u003e\u003c/span\u003e\u003c/div\u003e\u003col style=\"color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px; margin: 0px; padding-inline-start: 48px; padding: 0px 48px;\"\u003e\u003cli style=\"line-height: 32px; margin: 0px 0px 0.25em; padding: 0px;\"\u003e\u003cspan style=\"font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003e\u003cspan style=\"color: black;\"\u003e\u003ca href=\"https://bugs.chromium.org/p/chromium/issues/list\" style=\"color: #4184f3; text-decoration-line: none;\"\u003e\u003cspan style=\"font-family: arial;\"\u003eFile a bug\u003c/span\u003e\u003c/a\u003e\u003c/span\u003e\u003c/span\u003e\u003c/li\u003e\u003cli aria-level=\"1\" style=\"font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; line-height: 32px; list-style-type: decimal; margin: 0px 0px 0.25em; padding: 0px; vertical-align: baseline; white-space: pre;\"\u003e\u003cp role=\"presentation\" style=\"background-color: white; line-height: 2.21538; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"background-color: transparent; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003e\u003cspan style=\"font-family: arial;\"\u003eVisit our ChromeOS communities\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e\u003c/li\u003e\u003col style=\"margin: 0px; padding-inline-start: 48px; padding: 0px 48px;\"\u003e\u003cli aria-level=\"2\" style=\"font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; line-height: 32px; list-style-type: decimal; margin: 0px 0px 0.25em; padding: 0px; vertical-align: baseline; white-space: pre;\"\u003e\u003cp role=\"presentation\" style=\"background-color: white; line-height: 2.21538; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: arial;\"\u003e\u003cspan style=\"background-color: transparent; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003eGeneral: \u003c/span\u003e\u003ca href=\"https://support.google.com/chromebook/community/?hl=en\u0026amp;gpf=%23!forum%2Fchromebook-central\" style=\"color: #4184f3; text-decoration-line: none;\"\u003e\u003cspan style=\"background-color: transparent; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003eChromebook Help Community\u003c/span\u003e\u003c/a\u003e\u003c/span\u003e\u003c/p\u003e\u003c/li\u003e\u003cli aria-level=\"2\" style=\"font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; line-height: 32px; list-style-type: decimal; margin: 0px 0px 0.25em; padding: 0px; vertical-align: baseline; white-space: pre;\"\u003e\u003cp role=\"presentation\" style=\"background-color: white; line-height: 2.21538; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: arial;\"\u003e\u003cspan style=\"background-color: transparent; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003eBeta Specific: \u003c/span\u003e\u003ca href=\"https://support.google.com/chromeos-beta/community\" style=\"color: #4184f3; text-decoration-line: none;\"\u003e\u003cspan style=\"background-color: transparent; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003eChromeOS Beta Help Community\u003c/span\u003e\u003c/a\u003e\u003c/span\u003e\u003c/p\u003e\u003c/li\u003e\u003c/ol\u003e\u003cli aria-level=\"1\" style=\"font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; line-height: 32px; list-style-type: decimal; margin: 0px 0px 0.25em; padding: 0px; vertical-align: baseline; white-space: pre;\"\u003e\u003cp role=\"presentation\" style=\"background-color: white; line-height: 2.21538; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003ca href=\"https://support.google.com/chrome/answer/95315?hl=en\u0026amp;co=GENIE.Platform%3DDesktop\" style=\"color: #4184f3; text-decoration-line: none;\"\u003e\u003cspan style=\"background-color: transparent; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003e\u003cspan style=\"color: black;\"\u003e\u003cspan style=\"font-family: arial;\"\u003eReport an issue or send feedback on Chrome\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003c/a\u003e\u003c/p\u003e\u003c/li\u003e\u003cli aria-level=\"1\" style=\"font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; line-height: 32px; list-style-type: decimal; margin: 0px 0px 0.25em; padding: 0px; vertical-align: baseline; white-space: pre;\"\u003e\u003cp role=\"presentation\" style=\"background-color: white; line-height: 2.21538; margin-bottom: 42pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: arial;\"\u003e\u003cspan style=\"background-color: transparent; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003eInterested in switching channels? \u003c/span\u003e\u003ca href=\"https://support.google.com/chromebook/answer/1086915\" style=\"color: #4184f3; text-decoration-line: none;\"\u003e\u003cspan style=\"background-color: transparent; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline;\"\u003eFind out how.\u003c/span\u003e\u003c/a\u003e\u003c/span\u003e\u003c/p\u003e\u003c/li\u003e\u003c/ol\u003e\u003cp style=\"color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px; line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"white-space-collapse: preserve;\"\u003e\u003cspan style=\"font-family: arial;\"\u003e\u003cspan style=\"text-wrap-mode: nowrap;\"\u003eLuis Menezes\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e\u003cp style=\"color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px; line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: arial; white-space-collapse: preserve;\"\u003eGoogle ChromeOS\u003c/span\u003e\u003c/p\u003e"
+    },
+    {
+      "title": "Chrome for Android Update",
+      "link": "http://chromereleases.googleblog.com/2026/03/chrome-for-android-update_18.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2026-03-18T10:56:00-07:00",
+      "description": "\u003cp\u003e\u0026nbsp; Hi, everyone! We've just released Chrome 146 (146.0.76380.153) for Android. It'll become\u0026nbsp;\u003ca href=\"https://play.google.com/store/apps/details?id=com.android.chrome\"\u003eavailable on Google Play\u003c/a\u003e\u0026nbsp;over the next few days.\u0026nbsp;\u003c/p\u003e\u003cp\u003eThis release includes stability and performance improvements. You can see a full list of the changes in the\u0026nbsp;\u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/146.0.7680.119..146.0.7680.153?pretty=fuller\u0026amp;n=10000\"\u003eGit log\u003c/a\u003e.\u0026nbsp;If you find a new issue, please let us know by\u0026nbsp;\u003ca href=\"https://code.google.com/p/chromium/issues/entry?template=Android%20Issue\"\u003efiling a bug\u003c/a\u003e.\u003c/p\u003e\u003cdiv\u003e\u003cbr /\u003e\u003c/div\u003e\u003cdiv\u003eAndroid releases contain the same security fixes as their corresponding\u003ca href=\"https://chromereleases.googleblog.com/2026/03/stable-channel-update-for-desktop_18.html\"\u003e\u0026nbsp;Desktop releases\u003c/a\u003e\u0026nbsp;(Windows \u0026amp; Mac: 146.0.7680.79/.80, Linux:\u0026nbsp;\u0026nbsp;146.0.7680.79) unless otherwise noted.\u003c/div\u003e\u003cdiv\u003e\u003cdiv\u003e\u003cbr /\u003e\u003c/div\u003e\u003cdiv\u003e\u003cdiv\u003eKrishna Govind\u003c/div\u003e\u003cdiv\u003e\u003ca href=\"https://www.google.com/chrome/\"\u003eGoogle Chrome\u003c/a\u003e\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e"
+    },
+    {
+      "title": "Stable Channel Update for Desktop",
+      "link": "http://chromereleases.googleblog.com/2026/03/stable-channel-update-for-desktop_18.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2026-03-18T10:21:00-07:00",
+      "description": "\u003cp\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" style=\"color: rgba(0, 0, 0, 0.87); font-family: arial; font-size: large;\"\u003eThe Stable channel has been updated to 146.0.7680.153/154 for Windows/Mac\u0026nbsp; and\u0026nbsp;\u003c/span\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" style=\"color: rgba(0, 0, 0, 0.87); font-family: arial; font-size: large;\"\u003e146.0.7680.153 for Linux, which will roll out over the coming days/weeks. A full list of changes in this build is available in the\u0026nbsp;\u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/146.0.7680.80..146.0.7680.154?pretty=fuller\u0026amp;n=10000\" style=\"color: #4184f3; text-decoration-line: none;\"\u003eLog\u003c/a\u003e\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cbr /\u003e\u003c/p\u003e\u003cp style=\"color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px;\"\u003e\u003cspan style=\"color: #666666; font-family: arial; font-size: large;\"\u003eInterested in switching release channels? Find out how\u0026nbsp;\u003c/span\u003e\u003ca href=\"https://www.chromium.org/getting-involved/dev-channel\" style=\"color: #4184f3; font-family: arial; font-size: large; text-decoration-line: none;\"\u003ehere\u003c/a\u003e\u003cspan style=\"color: #666666; font-family: arial; font-size: large;\"\u003e. If you find a new issue, please let us know by\u0026nbsp;\u003c/span\u003e\u003ca href=\"https://crbug.com/\" style=\"color: #4184f3; font-family: arial; font-size: large; text-decoration-line: none;\"\u003efiling a bug\u003c/a\u003e\u003cspan style=\"color: #666666; font-family: arial; font-size: large;\"\u003e. The\u0026nbsp;\u003c/span\u003e\u003ca href=\"https://support.google.com/chrome/community\" style=\"color: #4184f3; font-family: arial; font-size: large; text-decoration-line: none;\"\u003ecommunity help forum\u003c/a\u003e\u003cspan style=\"color: #666666; font-family: arial; font-size: large;\"\u003e\u0026nbsp;is also a great place to reach out for help or learn about common issues.\u003c/span\u003e\u003c/p\u003e\u003cp style=\"color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px;\"\u003e\u003cspan style=\"color: #666666; font-family: arial; font-size: medium; white-space-collapse: preserve;\"\u003e\u003cbr style=\"content: \u0026quot; \u0026quot;; display: block; padding: 4px;\" /\u003e\u003c/span\u003e\u003c/p\u003e\u003cp style=\"color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px;\"\u003e\u003cspan style=\"color: #666666; font-family: arial; font-size: medium; white-space-collapse: preserve;\"\u003eSrinivas Sista\u003c/span\u003e\u003c/p\u003e\u003cp style=\"color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px;\"\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" style=\"font-family: arial; font-size: large;\"\u003e\u003c/span\u003e\u003c/p\u003e\u003cdiv style=\"color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px;\"\u003e\u003cspan style=\"font-size: medium;\"\u003e\u003cspan style=\"font-family: arial;\"\u003e\u003cspan style=\"color: #666666;\"\u003eGoogle Chrome\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003c/div\u003e"
+    },
+    {
+      "title": "Chrome Beta for iOS Update",
+      "link": "http://chromereleases.googleblog.com/2026/03/chrome-beta-for-ios-update_0860997599.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2026-03-18T08:58:33.019-07:00",
+      "description": "\u003cp\u003eHi everyone! We've just released Chrome Beta 147 (147.0.7727.11) for iOS; it'll become available on App Store in the next few days.\u003c/p\u003e\u003cp\u003eYou can see a partial list of the changes in the \u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/147.0.7727.2..147.0.7727.11?pretty=fuller\u0026amp;n=10000\"\u003eGit log\u003c/a\u003e. If you find a new issue, please let us know by \u003ca href=\"https://code.google.com/p/chromium/issues/entry?template=iOS%20Issue\"\u003efiling a bug\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eChrome Release Team\u003cbr /\u003e\u003ca href=\"https://www.google.com/chrome\"\u003e\u003c/a\u003e\u003ca href=\"https://www.google.com/chrome\"\u003eGoogle Chrome\u003c/a\u003e\u003c/p\u003e"
+    },
+    {
+      "title": "Introducing Custom Regions for precision data control",
+      "link": "https://blog.cloudflare.com/custom-regions/",
+      "source": "Cloudflare Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-18T13:00:00Z",
+      "description": " We are expanding Regional Services with new pre-defined regions and the launch of Custom Regions. Customers can now define precise geographical boundaries for data processing, tailored to meet their compliance and performance needs. "
+    },
+    {
+      "title": "Polly is generally available everywhere you work in LangSmith",
+      "link": "https://blog.langchain.com/polly-langsmith-ga/",
+      "source": "LangChain Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-18T15:38:58Z",
+      "description": "\u003cp\u003eDebugging agents is different from debugging anything else you\u0026apos;ve built. Traces run hundreds of steps deep, prompts span thousands of lines, and when something goes wrong, the context that caused it is buried somewhere in the middle.\u003c/p\u003e\u003cp\u003eWe built Polly to be the AI assistant that can read\u003c/p\u003e"
+    },
+    {
+      "title": "Introducing “vibe design” with Stitch",
+      "link": "https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-ai-ui-design/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-18T18:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Stitch_Keyword_Hero_Visual.max-600x600.format-webp.webp\"\u003eStitch is evolving into an AI-native platform that allows anyone to create, iterate, and collaborate on high-fidelity UI."
+    },
+    {
+      "title": "How we’ve made our products with recycled materials",
+      "link": "https://blog.google/company-news/outreach-and-initiatives/sustainability/new-recycled-materials-guide/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-18T15:25:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/RecylcedMaterials_hero.max-600x600.format-webp.webp\"\u003eGoogle is publishing its Recycled Materials Guide, which shares engineering, design, and operations insights."
+    },
+    {
+      "title": "Google’s response to the CMA’s consultation on potential requirements for Search",
+      "link": "https://blog.google/company-news/inside-google/around-the-globe/google-europe/cma-response/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-18T12:50:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/CMA.max-600x600.format-webp.webp\"\u003eGoogle is working with the UK’s CMA to ensure new digital market rules promote fairness and choice while protecting user experience."
+    },
+    {
+      "title": "메타와 틱톡, 참여 유도를 위해 유해 콘텐츠 노출을 허용했다는 내부고발자 증언",
+      "link": "https://news.hada.io/topic?id=27626",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-19T05:33:15+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e내부고발자들은 \u003cstrong\u003eMeta와 TikTok이 알고리듬이 분노를 유발할수록 참여율이 높아진다는 내부 연구 결과를 알고도\u003c/strong\u003e, 더 많은 유해 콘텐츠를 사용자 피드에 노출시켰다고 폭로함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eMeta 엔지니어는 주가 하락을 이유로 ‘경계선 콘텐츠’ 노출을 늘리라는 지시\u003c/strong\u003e를 받았다고...\u003c/p\u003e"
+    },
+    {
+      "title": "Ask GN: AI 사용 방법에 대한 글이 많습니다만, 어떻게 해야하는지 잘 모르겠습니다.",
+      "link": "https://news.hada.io/topic?id=27625",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-19T04:35:48+09:00",
+      "description": "\u003cp\u003e주로 Claude를 사용해서 여러 에이전트들을 만들어서 워크플로우를 설정해서 자동으로 설계, 개발, 테스트 다 한다고들 합니다. 그런 방법에 대한 글들은 많지만, 실제로 작동하는것이 어떨지 궁금합니다. 설계, 개발, 시험, 등을 다른 모델로 사용하여 어떤 모델이 어떤 일에 적합한지에 대한 글도 많습니다.\u003c/p\u003e\n\u003cp"
+    },
+    {
+      "title": "코드 작성 속도가 문제라고 생각했다면 더 큰 문제가 있다",
+      "link": "https://news.hada.io/topic?id=27624",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-19T04:33:44+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eAI 코딩 도구\u003c/strong\u003e가 개발 속도를 높인다고 하지만, 실제 병목은 코드 작성이 아닌 \u003cstrong\u003e조직의 비효율적 프로세스\u003c/strong\u003e에 있음\u003c/li\u003e\n\u003cli\u003e코드 생산량을 늘리면 리뷰 대기, 배포 지연, 불명확한 요구사항 등 \u003cstrong\u003e비개발 단계의 정체\u003c/strong\u003e가 심화됨\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eThe Goal\u003c/st...\u003c/p\u003e"
+    },
+    {
+      "title": "Get Shit Done - Claude Code용 메타 프롬프트·컨텍스트 엔지니어링·명세 기반 개발 시스템",
+      "link": "https://news.hada.io/topic?id=27622",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-19T03:36:52+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eClaude Code\u003c/strong\u003e 및 여러 AI 코딩 런타임에서 \u003cstrong\u003e명세 기반 개발(spec-driven development)\u003c/strong\u003e 을 자동화하는 경량 시스템으로, 복잡한 워크플로 없이 프로젝트를 완성하도록 지원\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e컨텍스트 엔지니어링\u003c/strong\u003e과 \u003cstrong\u003eXML 기반 프롬프트 구조화\u003c/strong\u003e, \u003cst...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: 위키위키위키: 텍스트 파일 기반 PHP 위키 엔진",
+      "link": "https://news.hada.io/topic?id=27621",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-19T03:30:44+09:00",
+      "description": "\u003cp\u003e안녕하세요. 긱뉴스가 만들어진 이래 거의 매일 즐겨 찾는 민구홍이라고 합니다. 관심 있는, 또는 관심을 두고 싶은 분야의 주요 소식뿐 아니라 기술, 나아가 생활을 대하는 태도를 배운 이곳에 이렇게 인사드릴 수 있어서 기쁘고 설렙니다.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e위키위키위키(WikiWikiWiki)\u003c/strong\u003e 는 텍스트 파일 기반"
+    },
+    {
+      "title": "FFmpeg 8.1",
+      "link": "https://news.hada.io/topic?id=27619",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-19T01:33:26+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e오디오와 비디오를 \u003cstrong\u003e녹화·변환·스트리밍\u003c/strong\u003e할 수 있는 크로스플랫폼 멀티미디어 프레임워크로, 최신 버전 8.1 “Hoare”가 공개됨\u003c/li\u003e\n\u003cli\u003e이번 버전은 \u003cstrong\u003exHE-AAC Mps212 및 MPEG-H 디코딩\u003c/strong\u003e, \u003cstrong\u003eEXIF 메타데이터 파싱\u003c/strong\u003e, \u003cstrong\u003eLCEVC 메타데이터 처리\u003c/strong\u003e를 지...\u003c/p\u003e"
+    },
+    {
+      "title": "Python 3.15의 JIT이 다시 정상 궤도에 오르다",
+      "link": "https://news.hada.io/topic?id=27618",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-18T23:32:58+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eCPython의 \u003cstrong\u003eJIT 컴파일러가 macOS AArch64에서 11~12%, x86_64 Linux에서 5~6%\u003c/strong\u003e 빠른 성능을 달성하며 목표를 조기 달성\u003c/li\u003e\n\u003cli\u003e3.13~3.14 버전에서는 JIT이 인터프리터보다 느렸으나, \u003cstrong\u003e커뮤니티 중심 개발과 구조 개선\u003c/strong\u003e으로 성능이 크게 향상\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e트레이스 기록...\u003c/p\u003e"
+    },
+    {
+      "title": "Mistral AI, Forge 출시",
+      "link": "https://news.hada.io/topic?id=27616",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-18T21:33:25+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eForge\u003c/strong\u003e는 기업이 자체 \u003cstrong\u003e내부 지식 기반의 AI 모델\u003c/strong\u003e을 구축할 수 있도록 하는 시스템으로, 공공 데이터 중심의 기존 모델 한계를 보완함\u003c/li\u003e\n\u003cli\u003e내부 문서, 코드베이스, 운영 데이터 등을 활용해 \u003cstrong\u003e도메인 특화 모델\u003c/strong\u003e을 학습시키며, 사전학습·후학습·강화학습 �...\u003c/p\u003e"
+    },
+    {
+      "title": "Ask GN: 비밀번호관리자 1Password 의 추천 대안이 있을까요?",
+      "link": "https://news.hada.io/topic?id=27615",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-18T19:26:35+09:00",
+      "description": "\u003cp\u003e오랫동안 1Password 를 사용해왔고, 개인적으로는 2FA, Passkey, 게스트 비밀번호 공유 기능에 만족하면서 1Password 를 쓰고 있는데요. (제가 쓰는 플랫폼 (맥, 브라우저, 안드로이드 폰) 에서 잘 지원이 되어서 만족하면서 쓰고 있습니다.)\u003c/p\u003e\n\u003cp\u003e다만 이번 구독갱신 때 가격 인상도 있고, 다른 좋은 대안들도 요즘"
+    },
+    {
+      "title": "오픈 소스 보안 작업은 “특별”하지 않다",
+      "link": "https://news.hada.io/topic?id=27613",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-18T16:12:08+09:00",
+      "description": "\u003ch4\u003e핵심 요약\u003c/h4\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e보안의 탈신비화\u003c/strong\u003e: 보안 업무를 특수한 영역으로 치부하는 '보안 예외주의'를 비판하며, 이를 일반적인 엔지니어링 범주 내에서 다뤄야 함을 강조합니다.\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e리스크 관리의 통합\u003c/strong\u003e: 보안 사고를 마법 같은 재앙이 아닌, 시스템의 가용성(Availabili...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: 틸노트 - 키워드 하나로 AI가 노트를 써주는 지식관리 도구",
+      "link": "https://news.hada.io/topic?id=27611",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-18T15:03:08+09:00",
+      "description": "\u003cp\u003e안녕하세요. 틸노트를 만들고 있는 wislan입니다.\u003c/p\u003e\n\u003cp\u003e2022년에 TIL 노트 앱으로 처음 소개드렸는데, 4년간 많은 변화가 있었습니다. 지금은 AI가 직접 리서치하고 노트를 써주는 지식관리 플랫폼이 되었습니다.\u003c/p\u003e\n\u003cp\u003e주요 변화\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eAI 에이전트: 키워드나 프롬프트를 입력하면 AI가 웹 검색, 노트 검색"
+    },
+    {
+      "title": "Slug 알고리듬 10주년",
+      "link": "https://news.hada.io/topic?id=27610",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-18T14:32:41+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eGPU에서 \u003cstrong\u003eBézier 곡선 기반 폰트 렌더링\u003c/strong\u003e을 수행하는 Slug 알고리듬이 개발된 지 10년이 되었음\u003c/li\u003e\n\u003cli\u003e이 기술은 \u003cstrong\u003e텍스처 없이 직접 벡터 데이터를 렌더링\u003c/strong\u003e하며, 게임·CAD·영상 편집·의료 장비 등 다양한 산업에서 사용됨\u003c/li\u003e\n\u003cli\u003e최근 버전에서는 \u003cstrong\u003eband split 최적화...\u003c/p\u003e"
+    },
+    {
+      "title": "ClawTeam — AI 에이전트를 “팀”으로 만드는 오픈소스",
+      "link": "https://news.hada.io/topic?id=27609",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-18T13:10:33+09:00",
+      "description": "\u003cp\u003e요즘 AI 에이전트는 정말 많습니다.\u003cbr /\u003e\nCodex, Claude Code, OpenClaw 등… 이제 “혼자 일하는 에이전트”는 흔한 시대입니다.\u003c/p\u003e\n\u003cp\u003e그런데 문제는 하나입니다.\u003c/p\u003e\n\u003cp\u003e에이전트는 똑똑하지만, 혼자 일한다는 것\u003c/p\u003e\n\u003cp\u003e복잡한 작업을 하려면 결국 사람이 여러 에이전트를 붙이고\u003cbr /\u003e\n컨텍스트를 나누고, 결과"
+    },
+    {
+      "title": "모든 검토 단계가 속도를 10배 늦춘다",
+      "link": "https://news.hada.io/topic?id=27608",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-18T11:33:05+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e조직 내 승인·검토 단계가 늘어날수록 업무 처리 속도가 기하급수적으로 느려지는 구조\u003c/strong\u003e를 설명하며, 실제로 각 승인 단계가 약 10배씩 지연을 초래함을 사례로 제시\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eAI 도입이 이 지연 문제를 해결하지 못함\u003c/strong\u003e을 지적하며, 코드 작성 속도는 빨라져도 검토·승인 과...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: AIEndpoint — AI 에이전트가 모든 웹서비스를 즉시 이해할 수 있는 /ai 엔드포인트 오픈 표준",
+      "link": "https://news.hada.io/topic?id=27607",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-18T10:58:19+09:00",
+      "description": "\u003cp\u003e안녕하세요.\u003c/p\u003e\n\u003cp\u003eAI와 함께 개발을 진행하면서, 다른 사이트 리뷰 등을 진행하다 보면 금방 토큰이 바닥나 리셋을 기다려야 하는 일이 종종 있었습니다.\u003cbr /\u003e\n생각해보니, AI는 \u0026quot;사람이 사람의 눈으로 읽을 수 있는 화면을 보고 있지 않을까\u0026quot; 라는 생각이 들더라고요.\u003cbr /\u003e\n해서 토큰을 줄이고, AI의 "
+    },
+    {
+      "title": "Unsloth Studio - 로컬에서 AI 모델을 훈련하고 실행하는 오픈소스 노코드 웹 UI",
+      "link": "https://news.hada.io/topic?id=27606",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-18T10:46:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e텍스트, 오디오, 임베딩, 비전 등 다양한 AI 모델의 \u003cstrong\u003e로컬 실행과 학습\u003c/strong\u003e을 하나의 인터페이스에서 지원하는 오픈소스 도구\u003c/li\u003e\n\u003cli\u003e맥/윈/리눅스에서 \u003cstrong\u003eGGUF/safetensor 모델\u003c/strong\u003e을 로컬 실행 가능하며, 학습 시 최대 \u003cstrong\u003e2배 빠른 속도\u003c/strong\u003e와 \u003cstrong\u003e70% 적은 VRAM\u003c/str...\u003c/p\u003e"
+    },
+    {
+      "title": "Claude Cowork Dispatch - 어디서든 Claude에게 작업시키기",
+      "link": "https://news.hada.io/topic?id=27605",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-18T10:33:02+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e휴대폰이나 데스크톱 어디서든 Claude에게 작업을 지시하면, \u003cstrong\u003e데스크톱 컴퓨터의 로컬 파일과 커넥터, 플러그인\u003c/strong\u003e을 활용해 작업을 수행하고 결과를 메시지로 전달하는 기능\u003c/li\u003e\n\u003cli\u003e하나의 \u003cstrong\u003e지속적인 대화 스레드\u003c/strong\u003e를 유지하므로, 이전 작업의 컨텍스트를 그대로 이어서 활용 가...\u003c/p\u003e"
+    },
+    {
+      "title": "Open SWE: 사내 코딩 에이전트를 위한 오픈소스 프레임워크",
+      "link": "https://news.hada.io/topic?id=27604",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-18T10:32:02+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eStripe, Ramp, Coinbase 등 주요 엔지니어링 조직이 독립적으로 구축한 사내 코딩 에이전트들이 \u003cstrong\u003e유사한 아키텍처 패턴\u003c/strong\u003e으로 수렴하고 있으며, 이를 오픈소스로 구현한 프레임워크가 Open SWE\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e\u003ca href=\"https://github.com/langchain-ai/deepagents\"\u003eDeep Agents\u003c/a\u003e\u003c/strong...\u003c/p\u003e"
+    },
+    {
+      "title": "마이크로소프트의 ‘해킹 불가능한’ Xbox One, ‘Bliss’에 의해 해킹됨",
+      "link": "https://news.hada.io/topic?id=27603",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-18T09:50:39+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e2013년 출시 이후 보안이 뚫리지 않았던 \u003cstrong\u003eXbox One\u003c/strong\u003e이 ‘Bliss’라는 \u003cstrong\u003e전압 글리치(Voltage Glitch)\u003c/strong\u003e 공격으로 완전히 해킹됨\u003c/li\u003e\n\u003cli\u003e한 연구자가 \u003cstrong\u003eRE//verse 2026 컨퍼런스\u003c/strong\u003e에서 이 해킹을 시연하며, 두 번의 정밀한 전압 변조로 \u003cstrong\u003e부트 ROM 수준의 보안...\u003c/p\u003e"
+    },
+    {
+      "title": "Kagi Small Web",
+      "link": "https://news.hada.io/topic?id=27602",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-18T09:47:39+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e개인 블로그·독립 유튜브 채널·웹코믹\u003c/strong\u003e 등 인간 중심의 콘텐츠를 탐색할 수 있는 플랫폼\u003c/li\u003e\n\u003cli\u003e인터넷을 \u003cstrong\u003e‘거대한 이웃 동네’\u003c/strong\u003e 로 비유하며, 사람 간의 연결을 회복하려는 취지로 설계\u003c/li\u003e\n\u003cli\u003e최근 7일 이내 게시물만 노출해 \u003cstrong\u003e신선한 콘텐츠 순환\u003c/strong\u003e을 유...\u003c/p\u003e"
+    },
+    {
+      "title": "미국 SEC, 분기별 보고 의무 폐지 준비 중",
+      "link": "https://news.hada.io/topic?id=27601",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-18T09:44:39+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e미국 \u003cstrong\u003e증권거래위원회(SEC)\u003c/strong\u003e 가 상장기업의 \u003cstrong\u003e분기별 재무보고 의무를 폐지\u003c/strong\u003e할 계획을 준비 중임\u003c/li\u003e\n\u003cli\u003e이 조치는 \u003cstrong\u003e기업의 행정 부담 완화\u003c/strong\u003e와 \u003cstrong\u003e단기 실적 중심 경영 완화\u003c/strong\u003e를 목표로 함\u003c/li\u003e\n\u003cli\u003eSEC는 \u003cstrong\u003e연간 또는 반기 보고 체계로 전환...\u003c/p\u003e"
+    },
+    {
+      "title": "메타의 20억 달러 연령 인증 기술 로비 배후를 밝혀낸 Reddit 사용자",
+      "link": "https://news.hada.io/topic?id=27600",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-18T09:41:39+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e메타가 \u003cstrong\u003e비영리 단체 네트워크를 통해 20억 달러를 우회 지원\u003c/strong\u003e하며, 애플과 구글에 감시 인프라 구축을 강제하는 법안을 추진한 사실이 드러남\u003c/li\u003e\n\u003cli\u003e이 법안은 \u003cstrong\u003e운영체제(OS) 수준의 API를 의무화\u003c/strong\u003e해 모든 기기에 영구적인 신원 추적 기능을 내장하도록 요구함\u003c/li\u003e\n\u003cli\u003e로비...\u003c/p\u003e"
+    },
+    {
+      "title": "Kagi Translate가 이제 LinkedIn Speak을 출력 언어로 지원",
+      "link": "https://news.hada.io/topic?id=27599",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-18T09:38:39+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eKagi Translate\u003c/strong\u003e는 다양한 언어 간 번역을 지원하는 웹 기반 번역 서비스\u003c/li\u003e\n\u003cli\u003e새롭게 \u003cstrong\u003e‘LinkedIn Speak’\u003c/strong\u003e 이 출력 언어로 추가되어, 사용자가 텍스트를 LinkedIn 스타일의 표현으로 변환 가능\u003c/li\u003e\n\u003cli\u003e서비스는 \u003cstrong\u003e문장 교정(Proofread)\u003c/strong\u003e, \u003cstrong\u003e사전(...\u003c/p\u003e"
+    },
+    {
+      "title": "cmux - AI 코딩 에이전트를 위한 Ghostty 기반 macOS용 터미널",
+      "link": "https://news.hada.io/topic?id=27598",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-18T09:31:02+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e네이티브 터미널 앱\u003c/strong\u003e(Swift \u0026amp; AppKit)으로 \u003cstrong\u003eElectron 기반 앱보다 빠른 실행 속도와 낮은 메모리 사용량\u003c/strong\u003e 제공\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eGhostty 엔진(libghostty)\u003c/strong\u003e 을 사용, 기존 Ghostty 설정(테마·폰트·색상)을 그대로 사용 가능\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e세로 탭 UI\u003c/stro...\u003c/p\u003e"
+    },
+    {
+      "title": "OpenAI, GPT‑5.4 Mini 및 Nano 공개",
+      "link": "https://news.hada.io/topic?id=27597",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-18T09:22:20+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eGPT‑5.4의 성능을 빠르고 효율적인 형태로 구현\u003c/li\u003e\n\u003cli\u003eGPT‑5.4 mini는 \u003cstrong\u003e코딩·추론·멀티모달 이해·도구 사용\u003c/strong\u003e에서 GPT‑5 mini 대비 크게 향상되었으며, 속도는 2배 이상 빠름\u003c/li\u003e\n\u003cli\u003eGPT‑5.4 nano는 \u003cstrong\u003e가장 작고 저렴한 모델\u003c/strong\u003e로, 분류·데이터 추출·랭킹·보조 코딩 작업에...\u003c/p\u003e"
+    },
+    {
+      "title": "Starlink Mini를 백업 회선으로 활용하기",
+      "link": "https://news.hada.io/topic?id=27596",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-18T08:33:22+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e가정용 네트워크의 \u003cstrong\u003e보조 인터넷 회선\u003c/strong\u003e으로 Starlink Mini를 구성해, 주 회선(FTTP) 장애 시 자동 전환되는 구조를 구현\u003c/li\u003e\n\u003cli\u003e월 \u003cstrong\u003e£4.50의 ‘Standby Mode’ 요금제\u003c/strong\u003e를 통해 저속 무제한 데이터와 필요 시 즉시 복귀 가능한 대역폭 제공\u003c/li\u003e\n\u003cli\u003e본체 가격은 \u003cstrong\u003e£159...\u003c/p\u003e"
+    },
+    {
+      "title": "Ten years late to the dbt party (DuckDB edition)",
+      "link": "https://rmoff.net/2026/02/19/ten-years-late-to-the-dbt-party-duckdb-edition/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-18T22:13:03Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://rmoff.net/2026/02/19/ten-years-late-to-the-dbt-party-duckdb-edition/\"\u003ehttps://rmoff.net/2026/02/19/ten-years-late-to-the-dbt-party-duckdb-edition/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47432056\"\u003ehttps://news.ycombinator.com/item?id=47432056\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Mirage of Career Inertia in the AI Era: Questions to Ask and Answer Today",
+      "link": "https://foggyfuture.substack.com/p/the-mirage-of-career-inertia-in-the",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-18T22:11:46Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://foggyfuture.substack.com/p/the-mirage-of-career-inertia-in-the\"\u003ehttps://foggyfuture.substack.com/p/the-mirage-of-career-inertia-in-the\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47432042\"\u003ehttps://news.ycombinator.com/item?id=47432042\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "'Ketman' and doublethink: what it costs to comply with tyranny (2017)",
+      "link": "https://aeon.co/ideas/ketman-and-doublethink-what-it-costs-to-comply-with-tyranny",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-18T22:11:21Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://aeon.co/ideas/ketman-and-doublethink-what-it-costs-to-comply-with-tyranny\"\u003ehttps://aeon.co/ideas/ketman-and-doublethink-what-it-costs-to-comply-with-tyranny\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47432037\"\u003ehttps://news.ycombinator.com/item?id=47432037\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Acquihires, often used by Big Tech, are a 'red flag,' DOJ antitrust head says",
+      "link": "https://www.reuters.com/world/acquihires-often-used-by-big-tech-are-red-flag-doj-antitrust-head-says-2026-03-18/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-18T22:10:54Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.reuters.com/world/acquihires-often-used-by-big-tech-are-red-flag-doj-antitrust-head-says-2026-03-18/\"\u003ehttps://www.reuters.com/world/acquihires-often-used-by-big-tech-are-red-flag-doj-antitrust-head-says-2026-03-18/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47432034\"\u003ehttps://news.ycombinator.com/item?id=47432034\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Pervaziv AI Code Review GitHub Action",
+      "link": "https://github.com/marketplace/actions/pervaziv-ai-code-review",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-18T22:10:47Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/marketplace/actions/pervaziv-ai-code-review\"\u003ehttps://github.com/marketplace/actions/pervaziv-ai-code-review\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47432032\"\u003ehttps://news.ycombinator.com/item?id=47432032\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "'I'm not political': Tim Cook resp to backlash ag. relationship w. Trump admin",
+      "link": "https://www.businessinsider.com/tim-cook-response-trump-relationship-criticism-2026-3",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-18T22:09:55Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.businessinsider.com/tim-cook-response-trump-relationship-criticism-2026-3\"\u003ehttps://www.businessinsider.com/tim-cook-response-trump-relationship-criticism-2026-3\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47432025\"\u003ehttps://news.ycombinator.com/item?id=47432025\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "FastAPI-compatible Python framework with Zig HTTP core; 7x faster",
+      "link": "https://github.com/justrach/turboAPI",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-18T22:06:08Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/justrach/turboAPI\"\u003ehttps://github.com/justrach/turboAPI\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47431994\"\u003ehttps://news.ycombinator.com/item?id=47431994\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Coal plant forced to stay open due to emergency order isn't even running",
+      "link": "https://arstechnica.com/science/2026/03/coal-plant-forced-to-stay-open-due-to-emergency-order-isnt-even-running/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-18T22:02:10Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://arstechnica.com/science/2026/03/coal-plant-forced-to-stay-open-due-to-emergency-order-isnt-even-running/\"\u003ehttps://arstechnica.com/science/2026/03/coal-plant-forced-to-stay-open-due-to-emergency-order-isnt-even-running/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47431962\"\u003ehttps://news.ycombinator.com/item?id=47431962\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Prepare for coding interviews via deliberate practice",
+      "link": "https://interviewtraner.com/home/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-18T22:00:38Z",
+      "description": "\n\u003cp\u003eI built InterviewTraner to fix how people prepare for coding interviews. Most people grind LeetCode problems randomly or follow static lists, which is not very effective. InterviewTraner uses a deliberate practice engine to intelligently schedule which problems you should work on and when.\nHow it works:\u003cp\u003e- 1,800+ LeetCode problems organized into a prerequisite graph across all major topics (arrays, trees, graphs, DP, etc.).\u003cp\u003e- The engine starts you on easy problems and only unlocks harder topics once you've demonstrated mastery of their prerequisites.\u003cp\u003e- Spaced repetition, mastery learning, interleaving, and other strategies ensure you practice what you need.\u003cp\u003e- Powerful filtering features to only practice a subset of problems when you are in a rush.\u003cp\u003eWhat makes it different from just doing LeetCode or some curated sets? The problems are static and you will have to waste time figuring out what to practice. InterviewTraner turns those static problems into a dynamic experience personalized and optimized for you.\u003cp\u003eI plan on eventually expanding the curriculum beyond coding interviews to anything in the software engineering process that can fit into short and repeatable exercises.\u003cp\u003eI originally built Trane, the practice engine powering it, to optimize my music practice. The core insight (skills have prerequisites and practice should respect that structure) applies equally well to coding interviews.\u003cp\u003ePricing:\u003cp\u003e- Free lite license (includes all array, string, recursion, hash table, and stack problems).\u003cp\u003e- $10/month for all 1,800+ problems (launch price with LAUNCH code, I plan the normal price to be $20/month).\u003cp\u003eHappy to answer questions about the deliberate practice approach, the scheduling algorithm, or anything else.\u003cp\u003eLinks:\u003cp\u003eInterviewTraner: \u003ca href=\"https://interviewtraner.com\" rel=\"nofollow\"\u003ehttps://interviewtraner.com\u003c/a\u003e\u003cp\u003ePictures Are For Babies (same engine applied to learning to read and write): \u003ca href=\"https://picturesareforbabies.com\" rel=\"nofollow\"\u003ehttps://picturesareforbabies.com\u003c/a\u003e\u003cp\u003eTrane: \u003ca href=\"https://github.com/trane-project/trane\" rel=\"nofollow\"\u003ehttps://github.com/trane-project/trane\u003c/a\u003e\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47431950\"\u003ehttps://news.ycombinator.com/item?id=47431950\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "What's on HTTP?",
+      "link": "https://whatsonhttp.com/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-18T21:57:58Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://whatsonhttp.com/\"\u003ehttps://whatsonhttp.com/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47431930\"\u003ehttps://news.ycombinator.com/item?id=47431930\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "I built an AI baseball manager that runs all 30 MLB teams",
+      "link": "https://deepdugout.com/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-18T21:53:21Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://deepdugout.com/\"\u003ehttps://deepdugout.com/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47431889\"\u003ehttps://news.ycombinator.com/item?id=47431889\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Gea – The fastest compiled UI framework",
+      "link": "https://github.com/dashersw/gea",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-18T21:53:10Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/dashersw/gea\"\u003ehttps://github.com/dashersw/gea\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47431888\"\u003ehttps://news.ycombinator.com/item?id=47431888\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "A BEAM-native personal autonomous AI agent built on Elixir/OTP",
+      "link": "https://github.com/thatsme/AlexClaw",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-18T21:52:33Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/thatsme/AlexClaw\"\u003ehttps://github.com/thatsme/AlexClaw\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47431883\"\u003ehttps://news.ycombinator.com/item?id=47431883\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "iCloud Photo Sharing Sucks – Can AI Help Me Replace It?",
+      "link": "https://medium.com/@DougDonohoe/icloud-photo-sharing-sucks-can-ai-help-me-replace-it-3b48fdd1350c",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-18T21:51:51Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://medium.com/@DougDonohoe/icloud-photo-sharing-sucks-can-ai-help-me-replace-it-3b48fdd1350c\"\u003ehttps://medium.com/@DougDonohoe/icloud-photo-sharing-sucks-can-ai-help-me-replace-it-3b48fdd1350c\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47431873\"\u003ehttps://news.ycombinator.com/item?id=47431873\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "An alternative derivation of Shannon entropy",
+      "link": "https://iczelia.net/posts/shannon-deriv/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-18T21:51:15Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://iczelia.net/posts/shannon-deriv/\"\u003ehttps://iczelia.net/posts/shannon-deriv/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47431869\"\u003ehttps://news.ycombinator.com/item?id=47431869\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Rolls-Royce scraps goal to go all-electric by 2030",
+      "link": "https://www.theguardian.com/business/2026/mar/18/rolls-royce-scraps-all-electric-car-company",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-18T21:51:01Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.theguardian.com/business/2026/mar/18/rolls-royce-scraps-all-electric-car-company\"\u003ehttps://www.theguardian.com/business/2026/mar/18/rolls-royce-scraps-all-electric-car-company\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47431867\"\u003ehttps://news.ycombinator.com/item?id=47431867\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Stop Building AI \"Teams.\" Start Building Software Factories. – Owen Zanzal",
+      "link": "https://medium.com/devops-ai/stop-building-ai-teams-start-building-software-factories-627cef5d09eb",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-18T21:50:46Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://medium.com/devops-ai/stop-building-ai-teams-start-building-software-factories-627cef5d09eb\"\u003ehttps://medium.com/devops-ai/stop-building-ai-teams-start-building-software-factories-627cef5d09eb\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47431861\"\u003ehttps://news.ycombinator.com/item?id=47431861\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Make your Linux keyboard act like a 'Tosh",
+      "link": "https://github.com/RedBearAK/Toshy",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-18T21:50:38Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/RedBearAK/Toshy\"\u003ehttps://github.com/RedBearAK/Toshy\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47431859\"\u003ehttps://news.ycombinator.com/item?id=47431859\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Radicle 1.7.0 – Daffodil",
+      "link": "https://radicle.xyz/2026/03/18/radicle-1.7.0",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-18T21:50:28Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://radicle.xyz/2026/03/18/radicle-1.7.0\"\u003ehttps://radicle.xyz/2026/03/18/radicle-1.7.0\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47431856\"\u003ehttps://news.ycombinator.com/item?id=47431856\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "IBM completes acquisition of Confluent",
+      "link": "https://newsroom.ibm.com/2026-03-17-ibm-completes-acquisition-of-confluent,-making-real-time-data-the-engine-of-enterprise-ai-and-agents",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-18T21:50:07Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://newsroom.ibm.com/2026-03-17-ibm-completes-acquisition-of-confluent,-making-real-time-data-the-engine-of-enterprise-ai-and-agents\"\u003ehttps://newsroom.ibm.com/2026-03-17-ibm-completes-acquisition-of-confluent,-making-real-time-data-the-engine-of-enterprise-ai-and-agents\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47431852\"\u003ehttps://news.ycombinator.com/item?id=47431852\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    }
+  ],
+  "generatedAt": "2026-03-19T07:17:26.910932891+09:00"
+}
