@@ -1,0 +1,440 @@
+{
+  "date": "2026-03-21",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2026년 3월 20일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** AI가 소프트웨어를 넘어 로봇(NVIDIA), 스마트폰(Amazon), 개발 인프라(OpenAI) 등 물리적 세계와 플랫폼의 근간으로 수직 통합되며 생태계 장악 경쟁이 본격화되고 있습니다.\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### NVIDIA GTC 2026: AI의 다음 시대를 열다\n젠슨 황 CEO는 GTC 2026 기조연설에서 단순한 텍스트 생성형 AI를 넘어, 스스로 추론하고 행동하는 '에이전틱 AI(Agentic AI)'와 현실 세계와 상호작용하는 '물리적 AI(Physical AI)'의 시대를 선언했습니다. 엔비디아는 차세대 AI 인프라인 'Vera Rubin' 시스템을 공개하며, 로봇공학, 헬스케어, 통신 등 전 산업에 걸쳐 AI가 물리적 세계와 결합하는 'AI 팩토리'의 본격적인 확장을 예고했습니다.\n\u003e **Key Point:** AI는 이제 화면 속 챗봇을 넘어, 물리적 세계의 로봇과 자율 에이전트를 구동하는 거대한 인프라로 진화하고 있습니다. [^2]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. Cursor, 자체 개발 AI 모델 Composer 2 출시\n- **What:** 코딩 특화 AI 에디터 Cursor가 자체 개발한 코딩 전용 AI 모델 'Composer 2'를 전격 출시했습니다.\n- **Why:** 외부 모델(Claude, GPT 등)에 대한 의존도를 낮추고, 코딩 에이전트 시장에서 수직 통합을 이루어 가격 경쟁력과 성능을 동시에 확보하기 위함입니다.\n- **Impact:** 프런티어급 코딩 성능을 훨씬 저렴한 가격에 제공함으로써, AI 코딩 도구 생태계의 판도를 뒤흔들 강력한 게임 체인저가 될 전망입니다. [^9]\n\n### 2. 아마존, 10년 만에 AI 스마트폰으로 재도전\n- **What:** 아마존이 'Fire Phone'의 뼈아픈 실패 이후 10여 년 만에 'Transformer'라는 코드명으로 AI 중심의 스마트폰 개발을 추진 중입니다.\n- **Why:** 알렉사(Alexa) 기반의 강력한 AI 비서를 통해 기존 앱스토어 생태계를 우회하고, 자사의 쇼핑 및 콘텐츠 생태계와 사용자를 24시간 밀착 연결하기 위해서입니다.\n- **Impact:** 애플과 삼성이 장악한 스마트폰 시장에 '앱이 필요 없는 AI 네이티브 기기'라는 새로운 패러다임을 제시할 수 있을지 업계의 이목이 집중되고 있습니다. [^48]\n\n### 3. 파이썬 생태계의 핵심 Astral, OpenAI 합류\n- **What:** 초고속 파이썬 도구(Ruff, uv 등)를 개발해 수억 회의 다운로드를 기록한 Astral이 OpenAI의 Codex 팀에 합류했습니다.\n- **Why:** OpenAI가 단순한 AI 모델 API 제공을 넘어, 개발자들이 매일 사용하는 도구 생태계(Tooling layer)를 직접 장악하여 AI 네이티브 개발 환경을 주도하려는 전략적 행보입니다.\n- **Impact:** Astral의 도구들은 계속 오픈소스로 유지되지만, 거대 AI 기업이 개발 인프라의 '생산 수단'을 흡수함에 따라 오픈소스 생태계의 독립성에 대한 우려와 기대가 교차하고 있습니다. [^27]\n\n### 4. 일론 머스크, 트위터 인수 관련 투자자 기만 평결\n- **What:** 2022년 트위터(현 X) 인수 당시 일론 머스크가 투자자들을 의도적으로 기만했다는 연방 배심원단의 평결이 나왔습니다.\n- **Why:** 440억 달러의 인수 가격을 낮추거나 거래를 파기하기 위해 봇(가짜 계정) 문제 등을 과장하여 주가 하락을 유도했다는 혐의가 인정되었습니다.\n- **Impact:** 이번 패소로 인해 머스크는 막대한 규모의 손해배상 책임을 지게 될 가능성이 커졌으며, 그의 변칙적인 기업 인수 방식에 법적 제동이 걸렸습니다. [^37]\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **Visual Studio Code 1.113** | 전 세계 개발자들의 필수 에디터 VS Code의 최신 업데이트 릴리스 [^1] |\n| **Tool** | **Vercel AI SDK Plugin** | 코딩 에이전트(Claude Code 등)에 Vercel 플랫폼 지식을 실시간 주입하는 플러그인 [^16] |\n| **Tool** | **KittenTTS** | 25MB 이하의 초경량으로 엣지 디바이스에서도 구동 가능한 최신 음성 합성 모델 [^11] |\n| **Tool** | **open-pencil** | Figma를 대체할 수 있는 강력한 AI 기반 오픈소스 디자인 편집기 [^28] |\n| **Tool** | **Visa CLI** | AI 에이전트가 터미널 환경에서 직접 결제를 수행할 수 있는 커머스 도구 (베타) [^31] |\n| **Tool** | **Agent Use Interface (AUI)** | 사용자가 자신만의 AI 에이전트를 직접 가져와 연결할 수 있는 범용 인터페이스 [^32] |\n| **Tool** | **fortransky** | Fortran으로 작성된 터미널 전용 Bluesky / AT Proto 클라이언트 [^33] |\n| **Tool** | **V3SP3R** | AI를 활용하여 해킹 도구인 Flipper Zero를 제어하는 혁신적인 프로젝트 [^39] |\n| **Tool** | **Notchi** | Claude Code의 활동 상태에 반응하는 귀여운 macOS 노치 컴패니언 앱 [^40] |\n| **Tool** | **daily-monkey-type** | 매일 타자 연습을 강제하도록 '바이브 코딩'으로 구축한 재미있는 시스템 [^45] |\n| **Paper** | **Domain-Specific Embedding** | 단 하루 만에 특정 도메인에 특화된 임베딩 모델을 파인튜닝하고 구축하는 가이드 [^3] |\n| **Paper** | **Mellea 0.4.0 \u0026 Granite** | Mellea 0.4.0의 새로운 기능과 IBM Granite 라이브러리의 최신 릴리스 소식 [^4] |\n| **Video** | **젠슨 황 유튜브 대담** | Nvidia의 미래, 물리적 AI, 에이전트 컴퓨팅의 부상에 대한 젠슨 황 CEO의 심층 인터뷰 [^12] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **macOS 26에서 .internal 등 커스텀 DNS 설정이 작동하지 않음**: 최신 macOS 업데이트 후 로컬 개발 환경의 DNS 설정에 문제가 발생했습니다. [^8]\n* **하네스 엔지니어링이란?**: AI 모델의 성능을 극대화하기 위해 주변 시스템(Harness)을 설계하는 새로운 엔지니어링 트렌드를 소개합니다. [^19]\n* **충분히 상세한 명세는 코드다**: AI 코딩 시대에 명세서가 정밀해지면 결국 코드와 동일한 역할을 하게 된다는 통찰입니다. [^24]\n* **My Problem with MCP**: 최근 각광받는 Model Context Protocol(MCP)의 한계와 문제점을 지적한 개발자의 글입니다. [^36]\n* **Adding Live Reload to a Static Site Generator Written in Go**: Go 언어로 작성된 정적 사이트 생성기에 라이브 리로드 기능을 추가하는 튜토리얼입니다. [^43]\n* **We rewrote our Rust WASM Parser in TypeScript – and it got 3x Faster**: Rust WASM 파서를 TypeScript로 재작성하여 오히려 3배의 성능 향상을 이룬 흥미로운 사례입니다. [^44]\n* **Ruby vs. Python: Why I Choose Happiness over Hype**: 유행(Python)보다 개발자의 행복(Ruby)을 선택한 이유를 다룬 에세이입니다. [^46]\n* **Tony Hoare and His Imprint on Computer Science**: 컴퓨터 과학의 거장 토니 호어(Tony Hoare)의 업적과 발자취를 돌아봅니다. [^49]\n* **25 Years of Eggs**: 25년간의 개발과 프로젝트 경험을 회고하는 감동적인 개발자 에세이입니다. [^51]\n\n#### 🤖 AI \u0026 에이전트\n* **일상적으로 사용하는 Claude Code 팁과 모범 사례 50가지**: Claude Code의 활용도를 200% 끌어올릴 수 있는 실전 팁 모음입니다. [^14]\n* **Claude Cowork를 두 번째 직원처럼 활용하는 방법**: AI를 단순한 도구가 아닌 실제 팀원처럼 온보딩하고 활용하는 노하우입니다. [^15]\n* **Anthropic, OpenCode에 법적 요청 발송**: Anthropic이 자사 시스템 프롬프트 유출 등을 이유로 OpenCode 저장소에 삭제를 요청했습니다. [^18]\n* **Claude Code Channels 공개 - Telegram/Discord로 작업 지시 가능**: 스마트폰 메신저를 통해 Claude Code에 직접 작업을 지시할 수 있는 기능이 추가되었습니다. [^29]\n* **Google AI Studio, 새로운 \"풀스택 바이브 코딩 환경\"으로 업그레이드**: 프롬프트만으로 프로덕션급 앱을 만들 수 있는 멀티플레이어 코딩 환경이 공개되었습니다. [^30]\n* **Blocking the Internet Archive Won't Stop AI, Only Erase the Web's History**: 인터넷 아카이브 차단이 AI 학습을 막지 못하고 웹의 역사만 지울 것이라는 EFF의 경고입니다. [^38]\n* **Claude dispatch: assign tasks to Claude from anywhere**: 어디서든 Claude에게 작업을 할당할 수 있는 새로운 디스패치 기능이 추가되었습니다. [^41]\n\n#### 📈 비즈니스 \u0026 테크 트렌드\n* **We’re launching the Top Sports Podcasts on YouTube...**: 구글이 브랜드와 스포츠 팬을 연결하기 위해 YouTube에 최고 인기 스포츠 팟캐스트 라인업을 론칭했습니다. [^5]\n* **Delve – 가짜 컴플라이언스 서비스**: 기업의 컴플라이언스(규제 준수)를 허위로 통과시켜주는 가짜 서비스의 실태를 고발합니다. [^6]\n* **Waymo 안전 영향**: 웨이모 자율주행 택시가 실제 도로 안전에 미치는 긍정적/부정적 영향을 분석한 리포트입니다. [^7]\n* **Adobe, 구독 해지 방해 혐의로 미국 법무부에 1억 5천만 달러 합의**: 어도비가 복잡한 구독 취소 절차로 인해 거액의 벌금을 물게 되었습니다. [^13]\n* **MAU? \"4명\" \"ㅋㅋ\"**: 과장된 스타트업 지표(MAU)의 민낯을 꼬집는 촌철살인의 글입니다. [^17]\n* ‘**당신의 짜증이 곧 상품이다**’: 웹페이지 하나에 수백 개의 트래커가 붙어 로딩을 지연시키는 현대 웹의 광고 수익 모델을 비판합니다. [^22]\n* **검증되지 않은 Android 앱 사이드로딩을 위한 Google의 새로운 24시간 절차 공개**: 구글이 안드로이드 앱 사이드로딩 시 보안 검증을 위해 24시간을 대기하게 하는 새 정책을 도입했습니다. [^23]\n* **Trio charged over alleged plot to smuggle Nvidia chips from US to China**: 미국에서 중국으로 엔비디아 AI 칩을 밀수출하려던 일당 3명이 기소되었습니다. [^47]\n* **Long Term Support Channel Update for ChromeOS**: 기업 및 교육용 ChromeOS의 장기 지원(LTS) 채널이 새롭게 업데이트되었습니다. [^52]\n* **Chrome Beta for Desktop Update**: 데스크톱용 크롬 브라우저의 최신 베타 버전이 릴리스되었습니다. [^53]\n* **Chrome Beta for Android Update**: 안드로이드용 크롬 브라우저의 최신 베타 버전이 릴리스되었습니다. [^54]\n\n#### 🌍 사회 \u0026 라이프\n* **4Chan, 영국 온라인 안전법 위반으로 52만 파운드 벌금 부과받자 AI 햄스터 이미지로 조롱**: 4Chan이 벌금 부과에 반발하며 AI로 생성한 조롱성 이미지를 게시해 논란입니다. [^10]\n* **경찰 급습 영상 사용 관련 민사 재판에서 Afroman 승소**: 래퍼 Afroman이 자택을 급습한 경찰의 영상을 뮤직비디오에 사용한 재판에서 승소했습니다. [^20]\n* **덴마크, 그린란드 문제로 미국과의 전면전을 준비했다는 보도**: 과거 덴마크가 그린란드 영유권을 두고 미국과의 군사적 충돌까지 고려했다는 충격적인 보도입니다. [^21]\n* **오스틴의 신규 주택 건설 급증이 임대료 하락을 이끌다**: 텍사스 오스틴의 공격적인 주택 공급 확대가 실제 임대료 하락으로 이어졌다는 분석입니다. [^25]\n* **Afroman, 오하이오 경찰 명예훼손 소송에서 무죄 판결**: Afroman이 경찰을 조롱한 혐의로 피소된 명예훼손 소송에서도 최종 무죄를 선고받았습니다. [^26]\n* **Probability Calculator: Chances That Your Friend Bails Tonight**: 오늘 밤 친구가 약속을 파투 낼 확률을 계산해주는 유쾌한 풍자 글입니다. [^34]\n* **Jury says firm must pay $22.5M after pregnant employee's baby died**: 임신한 직원의 업무 강요로 아기가 사망한 사건에 대해 회사가 2,250만 달러를 배상하라는 판결이 나왔습니다. [^35]\n* **Are we in for a super El Niño this year? Early projections say maybe**: 올해 전 세계적인 기상이변을 몰고 올 '슈퍼 엘니뇨'가 발생할 수 있다는 초기 전망이 나왔습니다. [^42]\n* **Heart Attack and Stroke Risk Jumps When People Stop Taking GLP-1s**: 위고비 등 GLP-1 비만 치료제 복용을 중단할 경우 심장마비 및 뇌졸중 위험이 급증한다는 연구 결과입니다. [^50]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘의 테크 씬은 \"**AI의 수직 통합과 물리적 확장**\"으로 요약할 수 있습니다. 엔비디아가 GTC 2026을 통해 AI를 로봇과 산업 현장으로 끌어내렸다면, Cursor와 아마존은 각각 코딩 에디터와 스마트폰이라는 플랫폼에서 AI 모델을 내재화하며 생태계 장악에 나섰습니다. 특히 OpenAI가 파이썬 핵심 도구인 Astral을 품은 것은, AI가 단순히 코드를 짜주는 조수를 넘어 개발 인프라 그 자체가 되려 한다는 강력한 신호입니다. 기술의 발전이 우리의 도구와 일상을 어떻게 재정의하고 있는지 깊이 고민해볼 시점입니다.\n\n[^1]: Visual Studio Code 1.113 - https://code.visualstudio.com/updates/v1_113\n[^2]: NVIDIA GTC 2026: Live Updates on What’s Next in AI - https://blogs.nvidia.com/blog/gtc-2026-news/\n[^3]: Build a Domain-Specific Embedding Model in Under a Day - https://huggingface.co/blog/nvidia/domain-specific-embedding-finetune\n[^4]: What's New in Mellea 0.4.0 + Granite Libraries Release - https://huggingface.co/blog/ibm-granite/granite-libraries\n[^5]: We’re launching the Top Sports Podcasts on YouTube for brands to align with sports fans. - https://blog.google/products/ads-commerce/were-launching-the-top-sports-podcasts-on-youtube-for-brands-to-align-with-sports-fans/\n[^6]: Delve – 가짜 컴플라이언스 서비스 - https://news.hada.io/topic?id=27685\n[^7]: Waymo 안전 영향 - https://news.hada.io/topic?id=27684\n[^8]: macOS 26에서 .internal 등 커스텀 DNS 설정이 작동하지 않음 - https://news.hada.io/topic?id=27683\n[^9]: Cursor, 자체 개발 AI 모델 Composer 2 출시 - 프런티어급 성능에 저렴한 가격 - https://news.hada.io/topic?id=27682\n[^10]: 4Chan, 영국 온라인 안전법 위반으로 52만 파운드 벌금 부과받자 AI 햄스터 이미지로 조롱 - https://news.hada.io/topic?id=27681\n[^11]: GitHub - KittenML/KittenTTS: 25MB 이하의 최신 음성 합성(TTS) 모델 - https://news.hada.io/topic?id=27680\n[^12]: 젠슨 황: Nvidia의 미래와 물리적 AI, 에이전트의 부상 [유튜브] - https://news.hada.io/topic?id=27679\n[^13]: Adobe, 구독 해지 방해 혐의로 미국 법무부에 1억 5천만 달러(약 2,249억 원) 합의 - https://news.hada.io/topic?id=27678\n[^14]: 일상적으로 사용하는 Claude Code 팁과 모범 사례 50가지 - https://news.hada.io/topic?id=27677\n[^15]: Claude Cowork를 두 번째 직원처럼 활용하는 방법 - https://news.hada.io/topic?id=27674\n[^16]: Vercel, 코딩 에이전트를 위한 플러그인 출시 - https://news.hada.io/topic?id=27673\n[^17]: MAU? \"4명\" \"ㅋㅋ\" - https://news.hada.io/topic?id=27672\n[^18]: Anthropic, OpenCode에 법적 요청 발송 - https://news.hada.io/topic?id=27671\n[^19]: 하네스 엔지니어링이란? - https://news.hada.io/topic?id=27667\n[^20]: 경찰 급습 영상 사용 관련 민사 재판에서 Afroman 승소 - https://news.hada.io/topic?id=27666\n[^21]: 덴마크, 그린란드 문제로 미국과의 전면전을 준비했다는 보도 - https://news.hada.io/topic?id=27665\n[^22]: ‘당신의 짜증이 곧 상품이다’ - https://news.hada.io/topic?id=27664\n[^23]: 검증되지 않은 Android 앱 사이드로딩을 위한 Google의 새로운 24시간 절차 공개 - https://news.hada.io/topic?id=27663\n[^24]: 충분히 상세한 명세는 코드다 - https://news.hada.io/topic?id=27662\n[^25]: 오스틴의 신규 주택 건설 급증이 임대료 하락을 이끌다 - https://news.hada.io/topic?id=27661\n[^26]: Afroman, 오하이오 경찰 명예훼손 소송에서 무죄 판결 - https://news.hada.io/topic?id=27660\n[^27]: Astral, OpenAI에 합류 - https://news.hada.io/topic?id=27659\n[^28]: open-pencil - Figma 대체용 AI 기반 디자인 편집기 - https://news.hada.io/topic?id=27658\n[^29]: Claude Code Channels 공개 - Telegram/Discord로 작업 지시 가능 - https://news.hada.io/topic?id=27657\n[^30]: Google AI Studio, 새로운 \"풀스택 바이브 코딩 환경\"으로 업그레이드 - https://news.hada.io/topic?id=27656\n[^31]: Visa CLI — AI 에이전트가 직접 결제하는 커맨드라인 커머스 도구 (베타) - https://news.hada.io/topic?id=27655\n[^32]: Show HN: Agent Use Interface (AUI) – let users bring their own AI agent - https://github.com/FRE-Studios/Agent-Use-Interface\n[^33]: Show HN: We built a terminal-only Bluesky / AT Proto client written in Fortran - https://github.com/FormerLab/fortransky\n[^34]: Probability Calculator: Chances That Your Friend Bails Tonight - https://www.newyorker.com/humor/shouts-murmurs/probability-calculator-chances-that-your-friend-bails-tonight\n[^35]: Jury says firm must pay $22.5M after pregnant employee's baby died - https://www.cincinnati.com/story/news/local/2026/03/18/cincinnati-area-jury-awards-22-5m-in-wrongful-death-case-against-tql/89213401007/\n[^36]: My Problem with MCP - https://tomyandell.dev/blog/my-problem-with-mcp\n[^37]: Elon Musk misled Twitter investors ahead of $44B acquisition, jury says - https://www.cnbc.com/2026/03/20/elon-musk-determined-to-be-liable-for-misleading-twitter-investors.html\n[^38]: Blocking the Internet Archive Won't Stop AI, Only Erase the Web's History - https://www.eff.org/deeplinks/2026/03/blocking-internet-archive-wont-stop-ai-it-will-erase-webs-historical-record\n[^39]: Control Flipper Zero with AI - https://github.com/elder-plinius/V3SP3R\n[^40]: Notchi: macOS notch companion that reacts to Claude Code activity - https://github.com/sk-ruban/notchi\n[^41]: Claude dispatch: assign tasks to Claude from anywhere - https://support.claude.com/en/articles/13947068-assign-tasks-to-claude-from-anywhere-in-cowork\n[^42]: Are we in for a super El Niño this year? Early projections say maybe - https://www.cbc.ca/news/science/super-el-nino-9.7133680\n[^43]: Adding Live Reload to a Static Site Generator Written in Go - https://jon.chrt.dev/2026/03/20/adding-live-reload-to-a-static-site-generator-written-in-go.html\n[^44]: We rewrote our Rust WASM Parser in TypeScript – and it got 3x Faster - https://www.openui.com/blog/rust-wasm-parser\n[^45]: I vibe-coded a system that forces me to do my daily MonkeyType practice - https://github.com/Kshitiz1403/daily-monkey-type\n[^46]: Ruby vs. Python: Why I Choose Happiness over Hype - https://norvilis.com/ruby-vs-python-why-i-choose-happiness-over-hype/\n[^47]: Trio charged over alleged plot to smuggle Nvidia chips from US to China - https://www.bbc.com/news/articles/cy41ly2d9wko\n[^48]: Amazon plans smartphone comeback more than a decade after Fire Phone flop - https://www.reuters.com/technology/amazon-plans-smartphone-comeback-more-than-decade-after-fire-phone-flop-2026-03-20/\n[^49]: Tony Hoare and His Imprint on Computer Science - https://cacm.acm.org/blogcacm/tony-hoare-and-his-imprint-on-computer-science/\n[^50]: Heart Attack and Stroke Risk Jumps When People Stop Taking GLP-1s - https://nautil.us/whiplash-heart-attack-and-stroke-risk-jumps-when-people-stop-taking-glp-1s-1279029\n[^51]: 25 Years of Eggs - https://www.john-rush.com/posts/eggs-25-years-20260219.html\n[^52]: Long Term Support Channel Update for ChromeOS - http://chromereleases.googleblog.com/2026/03/long-term-support-channel-update-for_20.html\n[^53]: Chrome Beta for Desktop Update - http://chromereleases.googleblog.com/2026/03/chrome-beta-for-desktop-update_01396741538.html\n[^54]: Chrome Beta for Android Update - http://chromereleases.googleblog.com/2026/03/chrome-beta-for-android-update_02092514597.html\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **Visual Studio Code 1.113 **\n   - 출처: Visual Studio Code - Code Editing. Redefined.\n   - 링크: https://code.visualstudio.com/updates/v1_113\n\n2. **NVIDIA GTC 2026: Live Updates on What’s Next in AI**\n   - 출처: NVIDIA Blog\n   - 링크: https://blogs.nvidia.com/blog/gtc-2026-news/\n\n3. **Build a Domain-Specific Embedding Model in Under a Day**\n   - 출처: Hugging Face - Blog\n   - 링크: https://huggingface.co/blog/nvidia/domain-specific-embedding-finetune\n\n4. **What's New in Mellea 0.4.0 + Granite Libraries Release**\n   - 출처: Hugging Face - Blog\n   - 링크: https://huggingface.co/blog/ibm-granite/granite-libraries\n\n5. **We’re launching the Top Sports Podcasts on YouTube for brands to align with sports fans.**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/products/ads-commerce/were-launching-the-top-sports-podcasts-on-youtube-for-brands-to-align-with-sports-fans/\n\n6. **Delve – 가짜 컴플라이언스 서비스**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27685\n\n7. **Waymo 안전 영향**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27684\n\n8. **macOS 26에서 .internal 등 커스텀 DNS 설정이 작동하지 않음**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27683\n\n9. **Cursor, 자체 개발 AI 모델 Composer 2 출시 - 프런티어급 성능에 저렴한 가격**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27682\n\n10. **4Chan, 영국 온라인 안전법 위반으로 52만 파운드 벌금 부과받자 AI 햄스터 이미지로 조롱**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27681\n\n11. **GitHub - KittenML/KittenTTS: 25MB 이하의 최신 음성 합성(TTS) 모델**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27680\n\n12. **젠슨 황: Nvidia의 미래와 물리적 AI, 에이전트의 부상 [유튜브]**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27679\n\n13. **Adobe, 구독 해지 방해 혐의로 미국 법무부에 1억 5천만 달러(약 2,249억 원) 합의**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27678\n\n14. **일상적으로 사용하는 Claude Code 팁과 모범 사례 50가지**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27677\n\n15. **Claude Cowork를 두 번째 직원처럼 활용하는 방법**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27674\n\n16. **Vercel, 코딩 에이전트를 위한 플러그인 출시**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27673\n\n17. **MAU? \u0026quot;4명\u0026quot; \u0026quot;ㅋㅋ\u0026quot;**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27672\n\n18. **Anthropic, OpenCode에 법적 요청 발송**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27671\n\n19. **하네스 엔지니어링이란?**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27667\n\n20. **경찰 급습 영상 사용 관련 민사 재판에서 Afroman 승소**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27666\n\n21. **덴마크, 그린란드 문제로 미국과의 전면전을 준비했다는 보도**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27665\n\n22. **‘당신의 짜증이 곧 상품이다’**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27664\n\n23. **검증되지 않은 Android 앱 사이드로딩을 위한 Google의 새로운 24시간 절차 공개**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27663\n\n24. **충분히 상세한 명세는 코드다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27662\n\n25. **오스틴의 신규 주택 건설 급증이 임대료 하락을 이끌다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27661\n\n26. **Afroman, 오하이오 경찰 명예훼손 소송에서 무죄 판결**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27660\n\n27. **Astral, OpenAI에 합류**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27659\n\n28. **open-pencil - Figma 대체용 AI 기반 디자인 편집기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27658\n\n29. **Claude Code Channels 공개 - Telegram/Discord로 작업 지시 가능**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27657\n\n30. **Google AI Studio, 새로운 \u0026quot;풀스택 바이브 코딩 환경\u0026quot;으로 업그레이드**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27656\n\n31. **Visa CLI — AI 에이전트가 직접 결제하는 커맨드라인 커머스 도구 (베타)**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27655\n\n32. **Show HN: Agent Use Interface (AUI) – let users bring their own AI agent**\n   - 출처: Hacker News\n   - 링크: https://github.com/FRE-Studios/Agent-Use-Interface\n\n33. **Show HN: We built a terminal-only Bluesky / AT Proto client written in Fortran**\n   - 출처: Hacker News\n   - 링크: https://github.com/FormerLab/fortransky\n\n34. **Probability Calculator: Chances That Your Friend Bails Tonight**\n   - 출처: Hacker News\n   - 링크: https://www.newyorker.com/humor/shouts-murmurs/probability-calculator-chances-that-your-friend-bails-tonight\n\n35. **Jury says firm must pay $22.5M after pregnant employee's baby died**\n   - 출처: Hacker News\n   - 링크: https://www.cincinnati.com/story/news/local/2026/03/18/cincinnati-area-jury-awards-22-5m-in-wrongful-death-case-against-tql/89213401007/\n\n36. **My Problem with MCP**\n   - 출처: Hacker News\n   - 링크: https://tomyandell.dev/blog/my-problem-with-mcp\n\n37. **Elon Musk misled Twitter investors ahead of $44B acquisition, jury says**\n   - 출처: Hacker News\n   - 링크: https://www.cnbc.com/2026/03/20/elon-musk-determined-to-be-liable-for-misleading-twitter-investors.html\n\n38. **Blocking the Internet Archive Won't Stop AI, Only Erase the Web's History**\n   - 출처: Hacker News\n   - 링크: https://www.eff.org/deeplinks/2026/03/blocking-internet-archive-wont-stop-ai-it-will-erase-webs-historical-record\n\n39. **Control Flipper Zero with AI**\n   - 출처: Hacker News\n   - 링크: https://github.com/elder-plinius/V3SP3R\n\n40. **Notchi: macOS notch companion that reacts to Claude Code activity**\n   - 출처: Hacker News\n   - 링크: https://github.com/sk-ruban/notchi\n\n41. **Claude dispatch: assign tasks to Claude from anywhere**\n   - 출처: Hacker News\n   - 링크: https://support.claude.com/en/articles/13947068-assign-tasks-to-claude-from-anywhere-in-cowork\n\n42. **Are we in for a super El Niño this year? Early projections say maybe**\n   - 출처: Hacker News\n   - 링크: https://www.cbc.ca/news/science/super-el-nino-9.7133680\n\n43. **Adding Live Reload to a Static Site Generator Written in Go**\n   - 출처: Hacker News\n   - 링크: https://jon.chrt.dev/2026/03/20/adding-live-reload-to-a-static-site-generator-written-in-go.html\n\n44. **We rewrote our Rust WASM Parser in TypeScript – and it got 3x Faster**\n   - 출처: Hacker News\n   - 링크: https://www.openui.com/blog/rust-wasm-parser\n\n45. **I vibe-coded a system that forces me to do my daily MonkeyType practice**\n   - 출처: Hacker News\n   - 링크: https://github.com/Kshitiz1403/daily-monkey-type\n\n46. **Ruby vs. Python: Why I Choose Happiness over Hype**\n   - 출처: Hacker News\n   - 링크: https://norvilis.com/ruby-vs-python-why-i-choose-happiness-over-hype/\n\n47. **Trio charged over alleged plot to smuggle Nvidia chips from US to China**\n   - 출처: Hacker News\n   - 링크: https://www.bbc.com/news/articles/cy41ly2d9wko\n\n48. **Amazon plans smartphone comeback more than a decade after Fire Phone flop**\n   - 출처: Hacker News\n   - 링크: https://www.reuters.com/technology/amazon-plans-smartphone-comeback-more-than-decade-after-fire-phone-flop-2026-03-20/\n\n49. **Tony Hoare and His Imprint on Computer Science**\n   - 출처: Hacker News\n   - 링크: https://cacm.acm.org/blogcacm/tony-hoare-and-his-imprint-on-computer-science/\n\n50. **Heart Attack and Stroke Risk Jumps When People Stop Taking GLP-1s**\n   - 출처: Hacker News\n   - 링크: https://nautil.us/whiplash-heart-attack-and-stroke-risk-jumps-when-people-stop-taking-glp-1s-1279029\n\n51. **25 Years of Eggs**\n   - 출처: Hacker News\n   - 링크: https://www.john-rush.com/posts/eggs-25-years-20260219.html\n\n52. **Long Term Support Channel Update for ChromeOS**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2026/03/long-term-support-channel-update-for_20.html\n\n53. **Chrome Beta for Desktop Update**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2026/03/chrome-beta-for-desktop-update_01396741538.html\n\n54. **Chrome Beta for Android Update**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2026/03/chrome-beta-for-android-update_02092514597.html\n\n\n",
+  "articles": [
+    {
+      "title": "Visual Studio Code 1.113 ",
+      "link": "https://code.visualstudio.com/updates/v1_113",
+      "source": "Visual Studio Code - Code Editing. Redefined.",
+      "category": "tech",
+      "publishedAt": "2026-03-25T17:00:00Z",
+      "description": "\n      \u003cp\u003eLearn what's new in Visual Studio Code 1.113 (Insiders)\u003c/p\u003e\n      \u003cp\u003e\u003ca href=\"https://code.visualstudio.com/updates/v1_113\"\u003eRead the full article\u003c/a\u003e\u003c/p\u003e\n    "
+    },
+    {
+      "title": "NVIDIA GTC 2026: Live Updates on What’s Next in AI",
+      "link": "https://blogs.nvidia.com/blog/gtc-2026-news/",
+      "source": "NVIDIA Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-20T00:15:17Z",
+      "description": "Rolling coverage from San Jose, including NVIDIA CEO Jensen Huang’s keynote, news highlights, live demos and on‑the‑ground color through March 19."
+    },
+    {
+      "title": "Build a Domain-Specific Embedding Model in Under a Day",
+      "link": "https://huggingface.co/blog/nvidia/domain-specific-embedding-finetune",
+      "source": "Hugging Face - Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-20T19:38:16Z"
+    },
+    {
+      "title": "What's New in Mellea 0.4.0 + Granite Libraries Release",
+      "link": "https://huggingface.co/blog/ibm-granite/granite-libraries",
+      "source": "Hugging Face - Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-20T14:14:46Z"
+    },
+    {
+      "title": "We’re launching the Top Sports Podcasts on YouTube for brands to align with sports fans.",
+      "link": "https://blog.google/products/ads-commerce/were-launching-the-top-sports-podcasts-on-youtube-for-brands-to-align-with-sports-fans/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-20T15:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/US_en_AMER_Reach_0s_Static.max-600x600.format-webp.webp\"\u003eYouTube is where all sports come to life — because no sporting event or game would be complete without the commentary, breakdowns and analysis surrounding it. In 2025 al…"
+    },
+    {
+      "title": "Delve – 가짜 컴플라이언스 서비스",
+      "link": "https://news.hada.io/topic?id=27685",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-21T05:33:40+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eDelve 플랫폼\u003c/strong\u003e이 실제 보안 통제 없이 \u003cstrong\u003e‘준수한 것처럼 보이게 만드는 시스템’\u003c/strong\u003e 으로 운영되고 있음이 폭로됨\u003c/li\u003e\n\u003cli\u003e내부 조사와 유출된 스프레드시트 분석 결과, \u003cstrong\u003e감사 보고서·테스트·결론이 Delve에 의해 자동 생성\u003c/strong\u003e되고 인도 기반 인증 기관들이 이를 ...\u003c/p\u003e"
+    },
+    {
+      "title": "Waymo 안전 영향",
+      "link": "https://news.hada.io/topic?id=27684",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-21T03:34:13+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eWaymo는 \u003cstrong\u003e자율주행 시스템의 안전 데이터를 공개\u003c/strong\u003e하며, 사람이 운전할 때보다 도로를 더 안전하게 만들고 있음을 수치로 제시\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e170.7백만 마일의 무인 주행(Rider-Only)\u003c/strong\u003e 데이터를 기반으로, 인간 운전 대비 \u003cstrong\u003e심각한 부상 사고 92% 감소\u003c/strong\u003e, \u003cstrong\u003e에어...\u003c/p\u003e"
+    },
+    {
+      "title": "macOS 26에서 .internal 등 커스텀 DNS 설정이 작동하지 않음",
+      "link": "https://news.hada.io/topic?id=27683",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-21T02:33:58+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003emacOS 26.3.1에서 \u003cstrong\u003e\u003ccode\u003e/etc/resolver/\u003c/code\u003e 기반 도메인별 DNS 설정이 비표준 TLD에 대해 무효화됨\u003c/strong\u003e, 기존 로컬 개발 환경이 중단되는 문제 발생\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e\u003ccode\u003emDNSResponder\u003c/code\u003e가 커스텀 TLD 요청을 mDNS로만 처리\u003c/strong\u003e하며, 지정된 유니캐스트 네임서버를 전혀 참조하...\u003c/p\u003e"
+    },
+    {
+      "title": "Cursor, 자체 개발 AI 모델 Composer 2 출시 - 프런티어급 성능에 저렴한 가격",
+      "link": "https://news.hada.io/topic?id=27682",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-20T21:34:01+09:00",
+      "description": "\u003cp\u003eCursor가 자체 개발한 코딩 특화 AI 모델 Composer 2를 공개했습니다.\u003c/p\u003e\n\u003ch2\u003e성능\u003c/h2\u003e\n\u003cp\u003e모든 주요 벤치마크에서 전작 대비 큰 폭의 향상을 기록했습니다.\u003c/p\u003e\n\u003ch3\u003e세 가지 테스트로 모델을 평가했습니다.\u003c/h3\u003e\n\u003cp\u003eCursorBench — Cursor가 자체 제작한 실제 코딩 작업 벤치마크입니다. Composer 1 → 1.5 → 2로"
+    },
+    {
+      "title": "4Chan, 영국 온라인 안전법 위반으로 52만 파운드 벌금 부과받자 AI 햄스터 이미지로 조롱",
+      "link": "https://news.hada.io/topic?id=27681",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-20T20:33:50+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e영국 규제기관 \u003cstrong\u003eOfcom이 온라인 안전법 위반\u003c/strong\u003e으로 미국 기반 커뮤니티 4Chan에 \u003cstrong\u003e총 52만 파운드의 벌금\u003c/strong\u003e을 부과함\u003c/li\u003e\n\u003cli\u003e주요 위반 내용은 \u003cstrong\u003e아동이 포르노그래피에 접근하지 못하도록 하는 연령 확인 미이행(45만 파운드)\u003c/strong\u003e, \u003cstrong\u003e불법 콘텐츠 위험 평가 미...\u003c/p\u003e"
+    },
+    {
+      "title": "GitHub - KittenML/KittenTTS: 25MB 이하의 최신 음성 합성(TTS) 모델",
+      "link": "https://news.hada.io/topic?id=27680",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-20T16:33:09+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eONNX 기반의 \u003cstrong\u003e경량 텍스트-음성 변환(TTS)\u003c/strong\u003e 라이브러리로, CPU만으로 고품질 음성 합성을 수행\u003c/li\u003e\n\u003cli\u003e모델 크기는 \u003cstrong\u003e15M~80M 파라미터(25~80MB)\u003c/strong\u003e 범위로, GPU 없이도 효율적 실행 가능\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e8가지 내장 음성\u003c/strong\u003e과 \u003cstrong\u003e속도 조절\u003c/strong\u003e, \u003cstrong\u003e텍스...\u003c/p\u003e"
+    },
+    {
+      "title": "젠슨 황: Nvidia의 미래와 물리적 AI, 에이전트의 부상 [유튜브]",
+      "link": "https://news.hada.io/topic?id=27679",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-20T16:03:02+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eNvidia CEO 젠슨 황이 All-In 팟캐스트에 출연해 \u003cstrong\u003eGroq 인수\u003c/strong\u003e, 추론 폭발, 물리적 AI, 에이전트 컴퓨팅, AI 산업의 PR 위기 등 광범위한 주제를 다룬 인터뷰\u003c/li\u003e\n\u003cli\u003eNvidia는 GPU 회사에서 \u003cstrong\u003eAI 팩토리 회사\u003c/strong\u003e로 진화했으며, 에이전트 처리를 위한 이기종 컴퓨팅 아키텍처에 Gro...\u003c/p\u003e"
+    },
+    {
+      "title": "Adobe, 구독 해지 방해 혐의로 미국 법무부에 1억 5천만 달러(약 2,249억 원) 합의",
+      "link": "https://news.hada.io/topic?id=27678",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-20T15:23:29+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003eAdobe가 구독 플랜의 조기 해지 수수료(Early Termination Fee)를 작은 글씨와 눈에 띄지 않는 하이퍼링크로 숨기고, 해지 과정을 불필요한 단계·지연·비요청 제안·경고로 의도적으로 복잡하게 만든 혐의\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e미국 법무부(DOJ)와 FTC가 온라인 소비자 신뢰 회복법(ROSCA) 위반으로 소송, 총 "
+    },
+    {
+      "title": "일상적으로 사용하는 Claude Code 팁과 모범 사례 50가지",
+      "link": "https://news.hada.io/topic?id=27677",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-20T14:15:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eClaude Code를 이미 사용 중인 개발자를 위한 \u003cstrong\u003e50가지 실전 팁 모음\u003c/strong\u003e으로, Anthropic 공식 문서, 개발자 Boris Cherny, 커뮤니티 경험, 1년간의 일일 사용 경험을 바탕으로 정리\u003c/li\u003e\n\u003cli\u003e\n\u003ccode\u003ecc\u003c/code\u003e alias, \u003ccode\u003e!\u003c/code\u003e 접두사, \u003cstrong\u003eEsc 되감기\u003c/strong\u003e 등 세션 운영 단축키부터...\u003c/p\u003e"
+    },
+    {
+      "title": "Claude Cowork를 두 번째 직원처럼 활용하는 방법",
+      "link": "https://news.hada.io/topic?id=27674",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-20T14:04:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e마케터 대부분이 Claude의 \u003cstrong\u003eChat 기능\u003c/strong\u003e만 사용하지만, Claude 앱에 내장된 에이전틱 데스크톱 도구 \u003cstrong\u003eCowork\u003c/strong\u003e를 활용하면 업무 역량을 두 배로 늘릴 수 있음\u003c/li\u003e\n\u003cli\u003eCowork는 컴퓨터 폴더에 대한 \u003cstrong\u003e직접 읽기/쓰기 권한\u003c/strong\u003e을 가지고, 사용자가 감독하지 않아도 다단...\u003c/p\u003e"
+    },
+    {
+      "title": "Vercel, 코딩 에이전트를 위한 플러그인 출시",
+      "link": "https://news.hada.io/topic?id=27673",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-20T14:01:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e에이전트가 Vercel 프로젝트의 플랫폼 지식을 실시간으로 활용할 수 있도록 지원하는 플러그인\u003c/li\u003e\n\u003cli\u003e파일 편집과 터미널 명령 등 \u003cstrong\u003e실시간 활동을 관찰\u003c/strong\u003e하여 Vercel 관련 지식을 에이전트 컨텍스트에 동적으로 주입하는 방식\u003c/li\u003e\n\u003cli\u003eNext.js, AI SDK, Turborepo 등 \u003cstrong\u003e47개 이상의 스...\u003c/p\u003e"
+    },
+    {
+      "title": "MAU? \u0026quot;4명\u0026quot; \u0026quot;ㅋㅋ\u0026quot;",
+      "link": "https://news.hada.io/topic?id=27672",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-20T13:02:42+09:00",
+      "description": "\u003cp\u003e본 글은 가족 구성원 4명만을 대상으로 하는 폐쇄형 SNS \u0026quot;Kimitter\u0026quot;의 2주간 개발 과정을 회고하기 위한 목적으로 작성한 글을 Claude를 통해 \u0026quot;GeekNews 말투\u0026quot;로 변환한 글입니다.\u003cbr /\u003e\n대충 훑어보니 Claude는 GeekNews체가 뭔지 모르는것 같네요.\u003cbr /\u003e\n말투가 맘에 안드신다면 URL을 통해 제...\u003c/p\u003e"
+    },
+    {
+      "title": "Anthropic, OpenCode에 법적 요청 발송",
+      "link": "https://news.hada.io/topic?id=27671",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-20T12:33:37+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eOpenCode 저장소에서 \u003cstrong\u003eAnthropic 관련 코드와 인증 기능이 법적 요청에 따라 삭제됨\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e삭제 항목에는 \u003cstrong\u003eAnthropic 시스템 프롬프트 파일\u003c/strong\u003e, \u003cstrong\u003eopencode-anthropic-auth 플러그인\u003c/strong\u003e, \u003cstrong\u003eClaude Pro/Max OAuth 흐름\u003c/strong\u003e, \u003cstrong\u003eAnthropic 관련 헤...\u003c/p\u003e"
+    },
+    {
+      "title": "하네스 엔지니어링이란?",
+      "link": "https://news.hada.io/topic?id=27667",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-20T10:05:10+09:00",
+      "description": "\u003cp\u003eAI 에이전트 성능 = 모델 + 하네스\u003c/p\u003e\n\u003cp\u003e최근 하네스 엔지니어링이 점점 더 중요해지고 있는데요, 클로드와 함께 조사한 내용 공유드립니다.\u003c/p\u003e\n"
+    },
+    {
+      "title": "경찰 급습 영상 사용 관련 민사 재판에서 Afroman 승소",
+      "link": "https://news.hada.io/topic?id=27666",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-20T10:03:18+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e오하이오 배심원단이 래퍼 \u003cstrong\u003eAfroman\u003c/strong\u003e이 2022년 자택 급습 영상을 뮤직비디오에 사용한 사건에서 \u003cstrong\u003e민사 재판 승소 판결\u003c/strong\u003e을 내림\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e7명의 보안관실 소속 경찰관\u003c/strong\u003e이 자신들의 이미지 사용으로 \u003cstrong\u003e모욕감과 정신적 고통, 평판 손상\u003c/strong\u003e을 입었다며...\u003c/p\u003e"
+    },
+    {
+      "title": "덴마크, 그린란드 문제로 미국과의 전면전을 준비했다는 보도",
+      "link": "https://news.hada.io/topic?id=27665",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-20T10:00:18+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e1월 덴마크가 \u003cstrong\u003e그린란드 문제를 둘러싸고 미국과의 전면전을 준비했다는 보도\u003c/strong\u003e가 제기됨\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e프랑스, 독일, 북유럽 국가들\u003c/strong\u003e이 덴마크에 군사적 지원을 제공한 것으로 전해짐\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e정예 부대와 실탄을 장착한 F-35 전투기\u003c/strong\u003e가 배치되었으며, 침공을 막...\u003c/p\u003e"
+    },
+    {
+      "title": "‘당신의 짜증이 곧 상품이다’",
+      "link": "https://news.hada.io/topic?id=27664",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-20T09:57:18+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e뉴욕 타임스 웹사이트 하나의 페이지가 \u003cstrong\u003e422개 네트워크 요청과 49MB 데이터\u003c/strong\u003e를 로드하며, 페이지 안정화까지 2분이 걸리는 현실이 현대 웹의 심각한 퇴행을 보여줌\u003c/li\u003e\n\u003cli\u003e광고, 모달, 자동재생 영상으로 가득 찬 웹 페이지들이 \u003cstrong\u003e조회 가능성(viewability)과 체류 시간(time-on-page)...\u003c/p\u003e"
+    },
+    {
+      "title": "검증되지 않은 Android 앱 사이드로딩을 위한 Google의 새로운 24시간 절차 공개",
+      "link": "https://news.hada.io/topic?id=27663",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-20T09:54:18+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e구글은 \u003cstrong\u003e2026/9월부터 개발자 검증 프로그램\u003c/strong\u003e을 시행해, 인증되지 않은 앱의 설치를 제한할 예정\u003c/li\u003e\n\u003cli\u003e숙련 사용자는 검증을 우회해 앱을 설치할 수 있으나, \u003cstrong\u003e숨겨진 설정\u003c/strong\u003e을 통해 \u003cstrong\u003e24시간 대기 시간\u003c/strong\u003e을 거쳐야 완전히 적용됨\u003c/li\u003e\n\u003cli\u003eGoogle은 이 지연이 ...\u003c/p\u003e"
+    },
+    {
+      "title": "충분히 상세한 명세는 코드다",
+      "link": "https://news.hada.io/topic?id=27662",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-20T09:51:17+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e에이전틱 코딩\u003c/strong\u003e이면 \u0026quot;명세 문서로 코드를 대체할 수 있다\u0026quot;는 주장에 대해, 명세가 충분히 정밀해지면 결국 \u003cstrong\u003e코드와 동일한 형태\u003c/strong\u003e로 수렴할 수밖에 없다는 근본적 한계 지적\u003c/li\u003e\n\u003cli\u003eOpenAI의 \u003cstrong\u003eSymphony\u003c/strong\u003e 프로젝트를 보면, 해당 SPEC.md가 명세가 아...\u003c/p\u003e"
+    },
+    {
+      "title": "오스틴의 신규 주택 건설 급증이 임대료 하락을 이끌다",
+      "link": "https://news.hada.io/topic?id=27661",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-20T09:48:17+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e2010년대 급격한 인구 유입으로 \u003cstrong\u003e주택 부족과 임대료 급등\u003c/strong\u003e을 겪던 오스틴은 2015년 이후 대규모 주택 공급 확대 정책을 시행\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e용도지역 변경, 주차 의무 완화, ADU(부속 주택) 허용 확대\u003c/strong\u003e 등 규제 개혁을 통해 2015~2024년 사이 \u003cstrong\u003e12만 호(30%)\u003c/strong\u003e 의 신...\u003c/p\u003e"
+    },
+    {
+      "title": "Afroman, 오하이오 경찰 명예훼손 소송에서 무죄 판결",
+      "link": "https://news.hada.io/topic?id=27660",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-20T09:45:17+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e힙합 가수 \u003cstrong\u003eAfroman(본명 Joseph Foreman)\u003c/strong\u003e 이 자신의 집을 급습한 오하이오 경찰관들을 풍자한 \u003cstrong\u003e뮤직비디오 관련 명예훼손 소송에서 무죄 판결\u003c/strong\u003e을 받음\u003c/li\u003e\n\u003cli\u003e그는 2022년 \u003cstrong\u003e마약 수색으로 인한 재산 피해 보상금 마련\u003c/strong\u003e을 위해 자택 CCTV 영상을 활용한 풍자곡...\u003c/p\u003e"
+    },
+    {
+      "title": "Astral, OpenAI에 합류",
+      "link": "https://news.hada.io/topic?id=27659",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-20T09:42:17+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003ePython 개발 생산성을 높이는 \u003cstrong\u003e도구 생태계 Astral\u003c/strong\u003e이 OpenAI의 \u003cstrong\u003eCodex 팀\u003c/strong\u003e에 합류함\u003c/li\u003e\n\u003cli\u003eAstral은 \u003cstrong\u003eRuff, uv, ty\u003c/strong\u003e 등 수억 회 다운로드된 오픈소스 도구를 통해 현대 Python 개발의 핵심 인프라로 자리 잡음\u003c/li\u003e\n\u003cli\u003eOpenAI는 인수 후에도 Astral의 \u003cstro...\u003c/p\u003e"
+    },
+    {
+      "title": "open-pencil - Figma 대체용 AI 기반 디자인 편집기",
+      "link": "https://news.hada.io/topic?id=27658",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-20T09:31:02+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eAI 중심 설계 철학\u003c/strong\u003e을 가진 차세대 개방형 오픈소스 디자인 도구\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e.fig 파일 직접 읽기·쓰기\u003c/strong\u003e를 지원해 Figma 프로젝트를 그대로 열고 수정 가능\u003c/li\u003e\n\u003cli\u003e채팅 인터페이스에서 명령을 입력하면 90여 개의 \u003cstrong\u003eAI 도구\u003c/strong\u003e가 도형 생성, 속성 변경, 자동 레...\u003c/p\u003e"
+    },
+    {
+      "title": "Claude Code Channels 공개 - Telegram/Discord로 작업 지시 가능",
+      "link": "https://news.hada.io/topic?id=27657",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-20T09:07:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eMCP 서버를 통해 \u003cstrong\u003e외부 메시지·알림·웹훅을 실행 중인 세션에 푸시\u003c/strong\u003e 가능\u003c/li\u003e\n\u003cli\u003e핵심은 \u003cstrong\u003e스마트폰에서 Telegram이나 Discord로 Claude Code에 직접 메시지를 보내\u003c/strong\u003e 작업을 지시하고 결과를 받아볼 수 있다는 것\u003c/li\u003e\n\u003cli\u003e양방향 통신을 지원하여 Claude가 이벤트를 읽고 \u003cstr...\u003c/p\u003e"
+    },
+    {
+      "title": "Google AI Studio, 새로운 \u0026quot;풀스택 바이브 코딩 환경\u0026quot;으로 업그레이드",
+      "link": "https://news.hada.io/topic?id=27656",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-20T09:02:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e프롬프트만으로 \u003cstrong\u003e프로덕션급 애플리케이션\u003c/strong\u003e을 제작 가능해짐\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eGoogle Antigravity\u003c/strong\u003e 코딩 에이전트를 기반으로 멀티플레이어 경험, 외부 라이브러리 설치, 데이터베이스·인증까지 통합 지원\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eFirebase 연동\u003c/strong\u003e을 통해 Cloud Firestore 데이터베...\u003c/p\u003e"
+    },
+    {
+      "title": "Visa CLI — AI 에이전트가 직접 결제하는 커맨드라인 커머스 도구 (베타)",
+      "link": "https://news.hada.io/topic?id=27655",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-20T08:52:28+09:00",
+      "description": "\u003cp\u003eVisa와 CryptoLabs가 만든 visa-cli는 AI 코딩 에이전트에게 결제 능력을 부여하는 CLI 툴입니다. API 키 없이 프로그래매틱 카드 결제가 가능하며, 현재 베타 접근 신청을 받고 있습니다.\u003cbr /\u003e\n주요 특징\u003cbr /\u003e\n∙\t이미지 생성 API 온디맨드 결제 — 선불 계정 없이 이미지 생성 엔드포인트 비용 즉시 처리\u003cbr /\u003e\n∙...\u003c/p\u003e"
+    },
+    {
+      "title": "Show HN: Agent Use Interface (AUI) – let users bring their own AI agent",
+      "link": "https://github.com/FRE-Studios/Agent-Use-Interface",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-20T22:08:27Z",
+      "description": "\n\u003cp\u003eAs I started building AI integrations, I came to realize that for many projects, the the best agentic experience is one that simply enables the user's personal agent to take actions within your app.\u003cp\u003eThe existing options like MCP or A2A are quite involved and for simple apps that are already URL parameter driven, those options seem like overkill.\u003cp\u003eThis led me to prototype the Agent Use Interface (AUI) spec.\u003cp\u003eThe idea is simple: a lightweight, open spec that makes any app \"agent-navigable.\" You drop an XML file at /agents/aui.xml that describes the URL-parameter-driven actions your app supports, like search, create, filter, etc. And that way any AI agent can read aui.xml, understand what's possible, and construct URLs on behalf of the user.\u003cp\u003eThat's it. No SDK. No auth flow. No API keys. Just a catalog of what your app can do, written for LLMs to understand.\u003cp\u003eIs there something like this that already exists? Is the approach too simple to be useful?\u003cp\u003eIf your app already supports Universal Links or is otherwise URL parameter driven you could probably add support for AUI in an afternoon.\u003cp\u003eSee a working example:\n\u003ca href=\"https://habittiles.app/agents/aui.xml\" rel=\"nofollow\"\u003ehttps://habittiles.app/agents/aui.xml\u003c/a\u003e\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47461338\"\u003ehttps://news.ycombinator.com/item?id=47461338\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: We built a terminal-only Bluesky / AT Proto client written in Fortran",
+      "link": "https://github.com/FormerLab/fortransky",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-20T22:06:51Z",
+      "description": "\n\u003cp\u003eYes, that Fortran.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47461321\"\u003ehttps://news.ycombinator.com/item?id=47461321\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Probability Calculator: Chances That Your Friend Bails Tonight",
+      "link": "https://www.newyorker.com/humor/shouts-murmurs/probability-calculator-chances-that-your-friend-bails-tonight",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-20T22:05:55Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.newyorker.com/humor/shouts-murmurs/probability-calculator-chances-that-your-friend-bails-tonight\"\u003ehttps://www.newyorker.com/humor/shouts-murmurs/probability-calculator-chances-that-your-friend-bails-tonight\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47461312\"\u003ehttps://news.ycombinator.com/item?id=47461312\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Jury says firm must pay $22.5M after pregnant employee's baby died",
+      "link": "https://www.cincinnati.com/story/news/local/2026/03/18/cincinnati-area-jury-awards-22-5m-in-wrongful-death-case-against-tql/89213401007/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-20T22:04:56Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.cincinnati.com/story/news/local/2026/03/18/cincinnati-area-jury-awards-22-5m-in-wrongful-death-case-against-tql/89213401007/\"\u003ehttps://www.cincinnati.com/story/news/local/2026/03/18/cincinnati-area-jury-awards-22-5m-in-wrongful-death-case-against-tql/89213401007/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47461302\"\u003ehttps://news.ycombinator.com/item?id=47461302\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "My Problem with MCP",
+      "link": "https://tomyandell.dev/blog/my-problem-with-mcp",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-20T22:04:44Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://tomyandell.dev/blog/my-problem-with-mcp\"\u003ehttps://tomyandell.dev/blog/my-problem-with-mcp\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47461299\"\u003ehttps://news.ycombinator.com/item?id=47461299\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Elon Musk misled Twitter investors ahead of $44B acquisition, jury says",
+      "link": "https://www.cnbc.com/2026/03/20/elon-musk-determined-to-be-liable-for-misleading-twitter-investors.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-20T22:03:33Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.cnbc.com/2026/03/20/elon-musk-determined-to-be-liable-for-misleading-twitter-investors.html\"\u003ehttps://www.cnbc.com/2026/03/20/elon-musk-determined-to-be-liable-for-misleading-twitter-investors.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47461287\"\u003ehttps://news.ycombinator.com/item?id=47461287\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Blocking the Internet Archive Won't Stop AI, Only Erase the Web's History",
+      "link": "https://www.eff.org/deeplinks/2026/03/blocking-internet-archive-wont-stop-ai-it-will-erase-webs-historical-record",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-20T21:59:43Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.eff.org/deeplinks/2026/03/blocking-internet-archive-wont-stop-ai-it-will-erase-webs-historical-record\"\u003ehttps://www.eff.org/deeplinks/2026/03/blocking-internet-archive-wont-stop-ai-it-will-erase-webs-historical-record\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47461250\"\u003ehttps://news.ycombinator.com/item?id=47461250\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Control Flipper Zero with AI",
+      "link": "https://github.com/elder-plinius/V3SP3R",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-20T21:54:17Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/elder-plinius/V3SP3R\"\u003ehttps://github.com/elder-plinius/V3SP3R\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47461173\"\u003ehttps://news.ycombinator.com/item?id=47461173\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Notchi: macOS notch companion that reacts to Claude Code activity",
+      "link": "https://github.com/sk-ruban/notchi",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-20T21:54:03Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/sk-ruban/notchi\"\u003ehttps://github.com/sk-ruban/notchi\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47461166\"\u003ehttps://news.ycombinator.com/item?id=47461166\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Claude dispatch: assign tasks to Claude from anywhere",
+      "link": "https://support.claude.com/en/articles/13947068-assign-tasks-to-claude-from-anywhere-in-cowork",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-20T21:53:20Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://support.claude.com/en/articles/13947068-assign-tasks-to-claude-from-anywhere-in-cowork\"\u003ehttps://support.claude.com/en/articles/13947068-assign-tasks-to-claude-from-anywhere-in-cowork\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47461151\"\u003ehttps://news.ycombinator.com/item?id=47461151\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Are we in for a super El Niño this year? Early projections say maybe",
+      "link": "https://www.cbc.ca/news/science/super-el-nino-9.7133680",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-20T21:52:58Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.cbc.ca/news/science/super-el-nino-9.7133680\"\u003ehttps://www.cbc.ca/news/science/super-el-nino-9.7133680\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47461148\"\u003ehttps://news.ycombinator.com/item?id=47461148\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Adding Live Reload to a Static Site Generator Written in Go",
+      "link": "https://jon.chrt.dev/2026/03/20/adding-live-reload-to-a-static-site-generator-written-in-go.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-20T21:51:22Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://jon.chrt.dev/2026/03/20/adding-live-reload-to-a-static-site-generator-written-in-go.html\"\u003ehttps://jon.chrt.dev/2026/03/20/adding-live-reload-to-a-static-site-generator-written-in-go.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47461128\"\u003ehttps://news.ycombinator.com/item?id=47461128\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "We rewrote our Rust WASM Parser in TypeScript – and it got 3x Faster",
+      "link": "https://www.openui.com/blog/rust-wasm-parser",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-20T21:48:06Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.openui.com/blog/rust-wasm-parser\"\u003ehttps://www.openui.com/blog/rust-wasm-parser\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47461094\"\u003ehttps://news.ycombinator.com/item?id=47461094\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "I vibe-coded a system that forces me to do my daily MonkeyType practice",
+      "link": "https://github.com/Kshitiz1403/daily-monkey-type",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-20T21:47:22Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/Kshitiz1403/daily-monkey-type\"\u003ehttps://github.com/Kshitiz1403/daily-monkey-type\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47461086\"\u003ehttps://news.ycombinator.com/item?id=47461086\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Ruby vs. Python: Why I Choose Happiness over Hype",
+      "link": "https://norvilis.com/ruby-vs-python-why-i-choose-happiness-over-hype/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-20T21:46:40Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://norvilis.com/ruby-vs-python-why-i-choose-happiness-over-hype/\"\u003ehttps://norvilis.com/ruby-vs-python-why-i-choose-happiness-over-hype/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47461081\"\u003ehttps://news.ycombinator.com/item?id=47461081\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Trio charged over alleged plot to smuggle Nvidia chips from US to China",
+      "link": "https://www.bbc.com/news/articles/cy41ly2d9wko",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-20T21:46:15Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.bbc.com/news/articles/cy41ly2d9wko\"\u003ehttps://www.bbc.com/news/articles/cy41ly2d9wko\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47461071\"\u003ehttps://news.ycombinator.com/item?id=47461071\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Amazon plans smartphone comeback more than a decade after Fire Phone flop",
+      "link": "https://www.reuters.com/technology/amazon-plans-smartphone-comeback-more-than-decade-after-fire-phone-flop-2026-03-20/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-20T21:46:06Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.reuters.com/technology/amazon-plans-smartphone-comeback-more-than-decade-after-fire-phone-flop-2026-03-20/\"\u003ehttps://www.reuters.com/technology/amazon-plans-smartphone-comeback-more-than-decade-after-fire-phone-flop-2026-03-20/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47461069\"\u003ehttps://news.ycombinator.com/item?id=47461069\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Tony Hoare and His Imprint on Computer Science",
+      "link": "https://cacm.acm.org/blogcacm/tony-hoare-and-his-imprint-on-computer-science/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-20T21:43:16Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://cacm.acm.org/blogcacm/tony-hoare-and-his-imprint-on-computer-science/\"\u003ehttps://cacm.acm.org/blogcacm/tony-hoare-and-his-imprint-on-computer-science/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47461036\"\u003ehttps://news.ycombinator.com/item?id=47461036\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Heart Attack and Stroke Risk Jumps When People Stop Taking GLP-1s",
+      "link": "https://nautil.us/whiplash-heart-attack-and-stroke-risk-jumps-when-people-stop-taking-glp-1s-1279029",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-20T21:42:16Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://nautil.us/whiplash-heart-attack-and-stroke-risk-jumps-when-people-stop-taking-glp-1s-1279029\"\u003ehttps://nautil.us/whiplash-heart-attack-and-stroke-risk-jumps-when-people-stop-taking-glp-1s-1279029\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47461018\"\u003ehttps://news.ycombinator.com/item?id=47461018\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "25 Years of Eggs",
+      "link": "https://www.john-rush.com/posts/eggs-25-years-20260219.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-20T21:42:04Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.john-rush.com/posts/eggs-25-years-20260219.html\"\u003ehttps://www.john-rush.com/posts/eggs-25-years-20260219.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47461015\"\u003ehttps://news.ycombinator.com/item?id=47461015\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Long Term Support Channel Update for ChromeOS",
+      "link": "http://chromereleases.googleblog.com/2026/03/long-term-support-channel-update-for_20.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2026-03-20T13:58:00-07:00",
+      "description": "\u003cp\u003e\u003cspan style=\"font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003eA new LTS-138\u0026nbsp; version \u003c/span\u003e\u003cspan style=\"background-color: white; font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e138.0.7204.307 \u003c/span\u003e\u003cspan style=\"font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e(Platform Version: \u003c/span\u003e\u003cspan style=\"background-color: white; font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e16295.92.0), is being\u003c/span\u003e\u003cspan style=\"font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e rolled out for most ChromeOS devices.\u003c/span\u003e\u003cspan style=\"font-family: Arial, sans-serif; font-size: 12pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e\u0026nbsp;\u003c/span\u003e\u003c/p\u003e\u003cspan id=\"docs-internal-guid-ca60ecb4-7fff-0474-e462-b897a954fe31\"\u003e\u003cbr /\u003e\u003cp dir=\"ltr\" style=\"line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003eThis version includes selected security fixes including:\u003c/span\u003e\u003c/p\u003e\u003cbr /\u003e\u003cp dir=\"ltr\" style=\"line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003ca href=\"http://b/474435504\" style=\"text-decoration-line: none;\"\u003e\u003cspan style=\"color: #1155cc; font-family: Arial, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-decoration-line: underline; text-decoration-skip-ink: none; vertical-align: baseline; white-space-collapse: preserve;\"\u003e474435504\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"font-family: Arial, sans-serif; font-size: 15pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e\u0026nbsp; \u003c/span\u003e\u003cspan style=\"font-family: Arial, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003eHigh CVE-2026-1504 Inappropriate implementation in Background Fetch API.\u003c/span\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003ca href=\"https://g-issues.chromium.org/issues/483853098\" style=\"text-decoration-line: none;\"\u003e\u003cspan style=\"color: #1155cc; font-family: Arial, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-decoration-line: underline; text-decoration-skip-ink: none; vertical-align: baseline; white-space-collapse: preserve;\"\u003e483853098\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"font-family: Arial, sans-serif; font-size: 16pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e\u0026nbsp; \u003c/span\u003e\u003cspan style=\"font-family: Arial, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003eHigh CVE-2026-3539 Object lifecycle issue in DevTools.\u003c/span\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height: 1.656; margin-bottom: 27pt; margin-top: 19pt;\"\u003e\u003cspan style=\"font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003eRelease notes for LTS-138 can be found\u003c/span\u003e\u003ca href=\"https://support.google.com/chrome/a/answer/12239814\" style=\"text-decoration-line: none;\"\u003e\u003cspan style=\"color: black; font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e \u003c/span\u003e\u003cspan style=\"color: #4184f3; font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-decoration-line: underline; text-decoration-skip-ink: none; vertical-align: baseline; white-space-collapse: preserve;\"\u003ehere\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e\u0026nbsp;\u003c/span\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height: 1.656; margin-bottom: 27pt; margin-top: 19pt;\"\u003e\u003cspan style=\"font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003eWant to know more about Long-term Support? Click\u003c/span\u003e\u003ca href=\"https://support.google.com/chrome/a/answer/11333726\" style=\"text-decoration-line: none;\"\u003e\u003cspan style=\"color: black; font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e \u003c/span\u003e\u003cspan style=\"color: #4184f3; font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-decoration-line: underline; text-decoration-skip-ink: none; vertical-align: baseline; white-space-collapse: preserve;\"\u003ehere\u003c/span\u003e\u003c/a\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003eAndy Wu\u003c/span\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003eGoogle ChromeOS\u003c/span\u003e\u003c/p\u003e\u003cdiv\u003e\u003cspan style=\"font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e\u003cbr /\u003e\u003c/span\u003e\u003c/div\u003e\u003c/span\u003e"
+    },
+    {
+      "title": "Chrome Beta for Desktop Update",
+      "link": "http://chromereleases.googleblog.com/2026/03/chrome-beta-for-desktop-update_01396741538.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2026-03-20T09:28:33.334-07:00",
+      "description": "\u003cp\u003eThe Beta channel has been updated to 147.0.7727.15 for Windows, Mac and Linux.\u003c/p\u003e\u003cp\u003eA partial list of changes is available in the \u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/147.0.7727.3..147.0.7727.15?pretty=fuller\u0026amp;n=10000\"\u003eGit log\u003c/a\u003e. Interested in \u003ca href=\"https://www.chromium.org/getting-involved/dev-channel/\"\u003eswitching\u003c/a\u003e release channels? Find out \u003ca href=\"https://www.chromium.org/getting-involved/dev-channel/\"\u003ehow\u003c/a\u003e. If you find a new issue, please let us know by \u003ca href=\"https://crbug.com/\"\u003efiling a bug\u003c/a\u003e. The \u003ca href=\"https://productforums.google.com/forum/#!forum/chrome\"\u003ecommunity help forum\u003c/a\u003e is also a great place to reach out for help or learn about common issues.\u003c/p\u003e\u003cp\u003eChrome Release Team\u003cbr /\u003e\u003ca href=\"https://www.google.com/chrome\"\u003e\u003c/a\u003e\u003ca href=\"https://www.google.com/chrome\"\u003eGoogle Chrome\u003c/a\u003e\u003c/p\u003e"
+    },
+    {
+      "title": "Chrome Beta for Android Update",
+      "link": "http://chromereleases.googleblog.com/2026/03/chrome-beta-for-android-update_02092514597.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2026-03-20T07:43:32.238-07:00",
+      "description": "\u003cp\u003eHi everyone! We've just released Chrome Beta 147 (147.0.7727.14) for Android. It's now available on \u003ca href=\"https://play.google.com/store/apps/details?id=com.chrome.beta\"\u003eGoogle Play\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eYou can see a partial list of the changes in the \u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/147.0.7727.2..147.0.7727.14?pretty=fuller\u0026amp;n=10000\"\u003eGit log\u003c/a\u003e. For details on new features, check out the \u003ca href=\"https://blog.chromium.org\"\u003eChromium blog\u003c/a\u003e, and for details on web platform updates, check \u003ca href=\"https://www.chromestatus.com/features#milestone%3D147\"\u003ehere\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eIf you find a new issue, please let us know by \u003ca href=\"https://code.google.com/p/chromium/issues/entry?template=Android%20Issue\"\u003efiling a bug\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eChrome Release Team\u003cbr /\u003e\u003ca href=\"https://www.google.com/chrome\"\u003e\u003c/a\u003e\u003ca href=\"https://www.google.com/chrome\"\u003eGoogle Chrome\u003c/a\u003e\u003c/p\u003e"
+    }
+  ],
+  "generatedAt": "2026-03-21T07:13:38.636432234+09:00"
+}
