@@ -1,0 +1,402 @@
+{
+  "date": "2026-03-22",
+  "preset": "magazine",
+  "summary": "# ☕️ 2026년 3월 21일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** AI 모델의 범용화(Commoditization) 우려가 커지는 가운데, AI 칩 밀수 스캔들과 군사 안보 분야의 데이터 유출 이슈가 글로벌 기술 지형을 뒤흔들고 있습니다.\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### OpenClaw의 'ChatGPT 모멘트', AI 모델 범용화(Commoditization) 우려 촉발\n엔비디아(Nvidia) GTC 컨퍼런스에서 젠슨 황 CEO가 불과 6개월 전만 해도 존재하지 않았던 'OpenClaw'를 집중 조명하면서 업계에 큰 파장이 일고 있습니다. OpenClaw의 급부상은 AI 모델 자체가 누구나 쉽게 접근할 수 있는 '원자재(Commodity)'로 전락하고 있다는 우려를 낳고 있습니다. 이는 OpenAI나 Anthropic처럼 모델 자체를 판매하는 기업들의 수익성에 의문을 제기하며, 향후 AI 산업의 부가가치가 '모델 개발'에서 '모델을 활용한 상위 서비스 및 애플리케이션'으로 이동할 것임을 시사합니다.\n\u003e **Key Point:** AI 모델의 기술적 장벽이 급격히 낮아지며 범용화됨에 따라, AI 산업의 핵심 경쟁력이 '모델'에서 '응용 서비스'로 이동하는 패러다임 전환이 시작되었습니다. [^43]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. Super Micro, 25억 달러 규모 AI 칩 밀수 스캔들로 주가 25% 폭락\n- **What:** 서버 제조업체 Super Micro(SMCI)의 공동 창업자 월리 리아오(Wally Liaw)가 미국의 수출 통제를 우회해 중국에 25억 달러 규모의 AI 칩(Nvidia GPU 등)을 밀수한 혐의로 체포되며 주가가 25% 이상 폭락했습니다.\n- **Why:** 페이퍼 컴퍼니와 '더미 서버'를 활용해 세관을 속이는 등 조직적인 밀수 정황이 드러났으며, 이는 미국 정부의 대중국 첨단 반도체 수출 통제망에 심각한 구멍이 뚫렸음을 의미합니다.\n- **Impact:** SMCI의 기업 지배구조 및 규제 리스크가 극대화되었으며, 향후 미국 정부의 AI 하드웨어 수출 통제 및 공급망 감시가 전례 없는 수준으로 강화될 전망입니다. [^9]\n\n### 2. 'StravaLeaks': 피트니스 앱이 노출한 프랑스 항공모함의 실시간 위치\n- **What:** 프랑스 해군 장교가 피트니스 앱 '스트라바(Strava)'를 켠 채 핵 추진 항공모함 '샤를 드골(Charles de Gaulle)' 갑판에서 조깅을 하여, 지중해 상의 군함 위치가 실시간으로 노출되었습니다.\n- **Why:** 스마트워치와 피트니스 앱의 GPS 기록이 '공개'로 설정되어 있었기 때문이며, 프랑스 매체 르몽드(Le Monde)의 'StravaLeaks' 보도를 통해 군사 보안의 치명적 허점이 다시 한번 드러났습니다.\n- **Impact:** 중동 지역의 군사적 긴장이 고조되는 가운데 발생한 이번 사건으로 인해, 전 세계 군대 및 보안 기관의 스마트 기기 사용 및 데이터 공유에 대한 전면적인 통제와 규정 개정이 불가피해 보입니다. [^19]\n\n### 3. 미 국방부, 군사 시스템 전반에 Palantir AI 전면 도입\n- **What:** 미국 국방부(Pentagon)가 팔란티어(Palantir)의 AI를 미군의 핵심 군사 시스템으로 전면 도입하기로 결정했습니다.\n- **Why:** 현대전에서 데이터 분석과 자율 무기 체계, 전장 상황 인식의 중요성이 극대화됨에 따라, 검증된 국방 AI 솔루션을 통해 군사적 우위를 점하기 위함입니다.\n- **Impact:** 군사 작전의 의사결정 속도와 정확성이 비약적으로 향상될 것으로 보이나, 자율 살상 무기 및 감시 체계에 대한 윤리적 논란과 AI 군비 경쟁이 더욱 가속화될 것입니다. [^42]\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **alogin** | TUI, 멀티홉 게이트웨이, 암호화 저장소를 갖춘 SSH 접속 관리 도구 (Go) [^2] |\n| **Tool** | **Cockpit** | 서버 관리를 직관적으로 할 수 있는 웹 기반 그래픽 인터페이스 [^5] |\n| **Video** | **Andrej Karpathy 강연** | 코드 에이전트, AutoResearch, 그리고 AI의 루피(Loopy) 시대에 대한 통찰 [^11] |\n| **Tool** | **Noq** | n0에서 개발한 새로운 Rust 기반의 초고속 QUIC 구현체 [^13] |\n| **Tool** | **Cluefin-Dure** | 증권사 및 DART API를 활용하여 국내 주식을 분석하는 멀티 AI 에이전트 [^15] |\n| **Tool** | **Ghostling** | 필수적인 기능만 담아 가볍게 구현한 Minimum Viable 터미널 에뮬레이터 [^17] |\n| **Tool** | **OpenCode** | 개발자의 코딩을 돕는 강력한 오픈소스 AI 코딩 에이전트 [^18] |\n| **Tool** | **Tabularis** | 개발자를 위해 설계된 직관적인 크로스플랫폼 데이터베이스 관리 애플리케이션 [^24] |\n| **Tool** | **DevMem** | CLI 기반으로 문서를 자동 업데이트하고 체인지로그를 캡처하는 도구 [^31] |\n| **Tool** | **Floci** | 로컬 환경에서 AWS 서비스를 테스트할 수 있는 무료 오픈소스 에뮬레이터 [^34] |\n| **Tool** | **Airygen** | 워드프레스 웹사이트의 검색 엔진 최적화를 돕는 새로운 SEO 플러그인 [^35] |\n| **Paper** | **Aging Redefined** | 긍정적인 노화 신념이 인지 및 신체적 기능 향상에 미치는 영향을 분석한 연구 [^36] |\n| **Paper** | **A Chess Playing Machine** | 클로드 섀넌(Claude Shannon)이 1950년에 작성한 체스 기계에 관한 역사적 논문 [^46] |\n| **Tool** | **WorthBuild** | 새로운 SaaS 아이디어의 시장성과 타당성을 검증해 주는 도구 [^47] |\n| **Tool** | **Tooscut** | WebGPU와 WASM을 활용해 브라우저에서 바로 실행되는 전문 비디오 편집기 [^48] |\n| **Tool** | **Travel Hacking Toolkit** | AI를 활용하여 항공권 포인트를 검색하고 여행 계획을 세워주는 툴킷 [^49] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **Visual Studio Code 1.113**: 전 세계 개발자들의 필수 에디터 VS Code의 최신 1.113 버전 업데이트가 릴리스되었습니다. [^1]\n* **실행 중인 세션에 채널을 통해 이벤트 푸시하기**: 실시간 세션 관리를 위한 효율적인 이벤트 푸시 아키텍처 구현 방법이 공유되었습니다. [^10]\n* **MacBook M5 Pro와 Qwen3.5 기반 로컬 AI 보안 시스템**: 최신 M5 Pro 칩과 Qwen3.5 모델을 활용하여 오프라인 환경에서 작동하는 AI 보안 구축 사례입니다. [^12]\n* **Cursor Composer 2는 Kimi K2.5에 RL을 적용한 모델로 확인**: 인기 코딩 AI인 Cursor의 새 버전이 Kimi K2.5 모델에 강화학습(RL)을 적용한 것으로 밝혀졌습니다. [^14]\n* **풀 리퀘스트는 죽었다, 풀 리퀘스트 만세**: 기존의 코드 리뷰와 협업 방식인 PR(Pull Request)의 한계와 새로운 대안에 대한 논의입니다. [^16]\n* **Claude Code, 클라우드 기반 예약 작업 기능 추가**: Claude Code에 클라우드 환경에서 작업을 예약하고 자동 실행할 수 있는 기능이 도입되었습니다. [^25]\n* **Apple, 인기 '바이브 코딩' 앱 업데이트를 조용히 차단**: 애플이 앱스토어에서 인기 있는 특정 AI 코딩 앱의 업데이트 승인을 거부해 논란이 일고 있습니다. [^26]\n* **Rust WASM 파서를 TypeScript로 다시 작성했더니 3배 빨라졌다**: 기존 Rust 기반 WASM 파서를 TypeScript로 포팅하여 성능을 대폭 향상시킨 흥미로운 사례입니다. [^27]\n* **GPT-5.4로 세련된 프론트엔드 디자인하기**: 최신 GPT-5.4 모델을 활용하여 고품질의 프론트엔드 UI/UX 디자인을 생성하는 노하우입니다. [^28]\n* **Alternatives for returning multiple values from a Python function**: 파이썬에서 여러 값을 반환할 때 사용할 수 있는 다양한 대안과 베스트 프랙티스입니다. [^38]\n* **A Saturday with OpenClaw**: 주말 동안 화제의 AI 모델인 OpenClaw를 직접 사용해 본 개발자의 생생한 후기입니다. [^40]\n* **Turbo Pascal Deconstructed**: 전설적인 프로그래밍 언어 터보 파스칼(Turbo Pascal)의 내부 구조와 역사를 심층 분석합니다. [^44]\n\n#### 🛡️ 보안 \u0026 플랫폼\n* **Azure Entra ID 로그인 로그 우회 취약점 세 번째와 네 번째 사례 공개**: 마이크로소프트 Azure의 인증 시스템에서 로그를 우회할 수 있는 심각한 취약점이 연이어 발견되었습니다. [^3]\n* **Wayland가 리눅스 데스크탑을 10년 뒤로 되돌렸는가?**: 리눅스 디스플레이 서버인 Wayland의 도입이 오히려 데스크탑 환경의 파편화와 퇴보를 불렀다는 비판적 의견입니다. [^4]\n* **Bing 검색 \"카카오톡\" 상위 3개 결과가 전부 중국발 피싱**: 빙(Bing) 검색 엔진에서 카카오톡 검색 시 피싱 사이트가 최상단에 노출되는 보안 문제가 발생했습니다. [^6]\n* **Windows 품질에 대한 우리의 약속**: 마이크로소프트가 최근 불거진 윈도우 OS의 품질 저하 논란에 대해 개선을 약속하는 공식 입장을 발표했습니다. [^23]\n* **Attempts to post the latest Trivy security incident have been marked [dead]**: 유명 보안 도구 Trivy의 최신 보안 사고 관련 게시물들이 해커뉴스에서 지속적으로 삭제 처리되고 있습니다. [^33]\n\n#### 🌍 비즈니스 \u0026 사회\n* **HP, 고객지원 전화에 15분 강제 대기 적용 실험 후 철회**: HP가 고객지원 센터에 의도적으로 15분 대기 시간을 두는 실험을 했다가 거센 비난을 받고 철회했습니다. [^7]\n* **척 노리스 사망: ‘워커 텍사스 레인저’ 액션 아이콘, 향년 86세**: 전설적인 액션 배우이자 인터넷 밈의 아이콘인 척 노리스가 86세의 나이로 타계했습니다. [^20]\n* **ArXiv, 코넬 대학교로부터의 독립을 선언**: 세계 최대의 논문 사전 출판 저장소인 ArXiv가 코넬 대학교의 그늘에서 벗어나 독립적인 운영을 선언했습니다. [^21]\n* **뒤처져도 괜찮습니다, 고마워요!**: 끊임없이 쏟아지는 기술 트렌드 속에서 모든 것을 따라잡지 않아도 괜찮다는 개발자의 위로 섞인 에세이입니다. [^22]\n* **Time Nuts**: 초정밀 시간 측정과 원자시계에 열광하는 매니아 커뮤니티 'Time Nuts'를 소개합니다. [^32]\n* **Related UI elements should not appear unrelated**: UI 디자인 시 연관된 요소들은 시각적으로도 반드시 연결되어 보여야 한다는 UX 디자인 원칙입니다. [^41]\n* **President Nixon's Address About Oil Shortages (1973)**: 1973년 오일 쇼크 당시 닉슨 대통령의 대국민 연설을 통해 현재의 에너지/자원 위기를 되돌아봅니다. [^45]\n\n#### 🧬 과학 \u0026 라이프\n* **일본의 젓가락 사용 금기 용어집**: 일본 문화에서 젓가락을 사용할 때 피해야 할 다양한 금기 행동과 용어들을 정리한 글입니다. [^8]\n* **Steam / GOG용 OpenTTD 변경 사항 업데이트**: 명작 교통 시뮬레이션 게임 OpenTTD의 스팀 및 GOG 버전 최신 패치 노트가 공개되었습니다. [^29]\n* **The Genetic Secrets of Sperm Warfare**: 정자들 사이에서 벌어지는 치열한 생존 경쟁과 그 속에 숨겨진 유전학적 비밀을 다룬 과학 기사입니다. [^30]\n* **Show HN: The Longest Click**: 마우스 버튼을 얼마나 오래 누르고 있을 수 있는지 인내심을 테스트하는 흥미로운 웹 게임입니다. [^37]\n* **FOMO.nyc – what are you doing tonight?**: 뉴욕의 다양한 이벤트와 즐길 거리를 큐레이션하여 '포모(FOMO)' 증후군을 해결해 주는 서비스입니다. [^39]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘 브리핑에서는 AI 기술의 급격한 발전이 가져온 명암이 뚜렷하게 대비되었습니다. OpenClaw의 등장으로 AI 모델의 범용화가 가속화되며 산업 지형이 요동치고 있고, 이면에서는 첨단 AI 칩을 둘러싼 대규모 밀수 범죄가 적발되었습니다. 또한, 단순한 피트니스 앱이 국가 안보를 위협하는 'StravaLeaks' 사태는 초연결 시대에 우리가 무심코 생산하는 데이터가 얼마나 치명적인 무기가 될 수 있는지 경고하고 있습니다. 기술의 발전 속도만큼이나, 이를 다루는 우리의 윤리적, 보안적 인식의 성숙이 그 어느 때보다 절실한 시점입니다.\n\n[^1]: Visual Studio Code 1.113 - https://code.visualstudio.com/updates/v1_113\n[^2]: Show GN: alogin – TUI, 멀티홉 게이트웨이, 암호화 저장소를 갖춘 SSH 접속 관리 도구 (Go) - https://news.hada.io/topic?id=27716\n[^3]: Azure Entra ID 로그인 로그 우회 취약점 세 번째와 네 번째 사례 공개 - https://news.hada.io/topic?id=27715\n[^4]: Wayland가 리눅스 데스크탑을 10년 뒤로 되돌렸는가? - https://news.hada.io/topic?id=27714\n[^5]: 서버용 웹 기반 그래픽 인터페이스 Cockpit - https://news.hada.io/topic?id=27713\n[^6]: Bing 검색 \"카카오톡\" 상위 3개 결과가 전부 중국발 피싱 - https://news.hada.io/topic?id=27712\n[^7]: HP, 고객지원 전화에 15분 강제 대기 적용 실험 후 철회 - https://news.hada.io/topic?id=27711\n[^8]: 일본의 젓가락 사용 금기 용어집 - https://news.hada.io/topic?id=27710\n[^9]: Super Micro 주가, 공동창업자의 25억 달러 규모 AI 칩 밀수 혐의 기소 후 25% 급락 - https://news.hada.io/topic?id=27709\n[^10]: 실행 중인 세션에 채널을 통해 이벤트 푸시하기 - https://news.hada.io/topic?id=27708\n[^11]: Andrej Karpathy가 말하는 코드 에이전트, AutoResearch, 그리고 AI의 루피(Loopy) 시대 [유튜브] - https://news.hada.io/topic?id=27706\n[^12]: MacBook M5 Pro와 Qwen3.5 기반 로컬 AI 보안 시스템 - https://news.hada.io/topic?id=27705\n[^13]: Noq: n0의 새로운 Rust 기반 QUIC 구현체 - https://news.hada.io/topic?id=27703\n[^14]: Cursor Composer 2는 Kimi K2.5에 RL을 적용한 모델로 확인 - https://news.hada.io/topic?id=27702\n[^15]: Show GN: Cluefin-Dure - 증권사/DART API를 활용한 국내주식 멀티 AI 에이전트 - https://news.hada.io/topic?id=27701\n[^16]: 풀 리퀘스트는 죽었다, 풀 리퀘스트 만세 - https://news.hada.io/topic?id=27700\n[^17]: Ghostling - Minimum Viable 터미널 에뮬레이터 - https://news.hada.io/topic?id=27699\n[^18]: OpenCode – 오픈소스 AI 코딩 에이전트 - https://news.hada.io/topic?id=27698\n[^19]: 'StravaLeaks': Le Monde, 피트니스 앱을 통해 프랑스 항공모함 위치를 실시간으로 추적 - https://news.hada.io/topic?id=27697\n[^20]: 척 노리스 사망: ‘워커 텍사스 레인저’ 액션 아이콘, 향년 86세 - https://news.hada.io/topic?id=27696\n[^21]: ArXiv, 코넬 대학교로부터의 독립을 선언 - https://news.hada.io/topic?id=27694\n[^22]: 뒤처져도 괜찮습니다, 고마워요! - https://news.hada.io/topic?id=27693\n[^23]: Windows 품질에 대한 우리의 약속 - https://news.hada.io/topic?id=27692\n[^24]: Tabularis - 개발자용 크로스플랫폼 DB 관리 애플리케이션 - https://news.hada.io/topic?id=27691\n[^25]: Claude Code, 클라우드 기반 예약 작업 기능 추가 - https://news.hada.io/topic?id=27690\n[^26]: Apple, 인기 '바이브 코딩' 앱 업데이트를 조용히 차단 - https://news.hada.io/topic?id=27689\n[^27]: Rust WASM 파서를 TypeScript로 다시 작성했더니 3배 빨라졌다 - https://news.hada.io/topic?id=27688\n[^28]: GPT-5.4로 세련된 프론트엔드 디자인하기 - https://news.hada.io/topic?id=27687\n[^29]: Steam / GOG용 OpenTTD 변경 사항 업데이트 - https://news.hada.io/topic?id=27686\n[^30]: The Genetic Secrets of Sperm Warfare - https://nautil.us/the-genetic-secrets-of-sperm-warfare-1278928\n[^31]: DevMem: A CLI Based Auto-Updating Documentation and Changelog Capture - https://fun-tomato-aiuks1hrge.edgeone.app/\n[^32]: Time Nuts - http://leapsecond.com/time-nuts.htm\n[^33]: Attempts to post the latest Trivy security incident have been marked [dead] - https://news.ycombinator.com/from?site=github.com%2Faquasecurity\n[^34]: Floci – A free, open-source local AWS emulator - https://github.com/hectorvent/floci\n[^35]: Show HN: Airygen – A brand new WordPress SEO plugin - https://www.airygen.com/en\n[^36]: Aging Redefined: Cognitive and Physical Improvement with Positive Age Beliefs - https://www.mdpi.com/2308-3417/11/2/28\n[^37]: Show HN: The Longest Click - https://longest-click.4m1r.dev/\n[^38]: Alternatives for returning multiple values from a Python function - https://stackoverflow.com/questions/354883/alternatives-for-returning-multiple-values-from-a-python-function\n[^39]: FOMO.nyc – what are you doing tonight? - https://fomo.nyc/\n[^40]: A Saturday with OpenClaw - https://twitter.com/jeffweisbein/status/2035464534446469606\n[^41]: Related UI elements should not appear unrelated - https://rakhim.exotext.com/related-ui-elements-should-not-appear-unrelated\n[^42]: US to embed Palantir AI across military - https://thecradle.co/articles-id/36667\n[^43]: OpenClaw's ChatGPT moment sparks concern that AI models are becoming commodities - https://www.cnbc.com/2026/03/21/openclaw-chatgpt-moment-sparks-concern-ai-models-becoming-commodities.html\n[^44]: Turbo Pascal Deconstructed - https://simonwillison.net/2026/Mar/20/turbo-pascal/\n[^45]: President Nixon's Address About Oil Shortages (1973) - https://www.presidency.ucsb.edu/documents/address-the-nation-about-policies-deal-with-the-energy-shortages\n[^46]: A Chess Playing Machine – Shannon (1950) [pdf] - https://www.paradise.caltech.edu/ist4/lectures/shannonchess1950.pdf\n[^47]: WorthBuild – SaaS idea validation tool - https://worthbuild.io/\n[^48]: Professional video editing, right in the browser with WebGPU and WASM - https://tooscut.app/\n[^49]: Show HN: Travel Hacking Toolkit – Points search and trip planning with AI - https://github.com/borski/travel-hacking-toolkit",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **Visual Studio Code 1.113 **\n   - 출처: Visual Studio Code - Code Editing. Redefined.\n   - 링크: https://code.visualstudio.com/updates/v1_113\n\n2. **Show GN: alogin – TUI, 멀티홉 게이트웨이, 암호화 저장소를 갖춘 SSH 접속 관리 도구 (Go)**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27716\n\n3. **Azure Entra ID 로그인 로그 우회 취약점 세 번째와 네 번째 사례 공개**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27715\n\n4. **Wayland가 리눅스 데스크탑을 10년 뒤로 되돌렸는가?**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27714\n\n5. **서버용 웹 기반 그래픽 인터페이스 Cockpit**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27713\n\n6. **Bing 검색 \u0026quot;카카오톡\u0026quot; 상위 3개 결과가 전부 중국발 피싱**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27712\n\n7. **HP, 고객지원 전화에 15분 강제 대기 적용 실험 후 철회**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27711\n\n8. **일본의 젓가락 사용 금기 용어집**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27710\n\n9. **Super Micro 주가, 공동창업자의 25억 달러 규모 AI 칩 밀수 혐의 기소 후 25% 급락**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27709\n\n10. **실행 중인 세션에 채널을 통해 이벤트 푸시하기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27708\n\n11. **Andrej Karpathy가 말하는 코드 에이전트, AutoResearch, 그리고 AI의 루피(Loopy) 시대 [유튜브]**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27706\n\n12. **MacBook M5 Pro와 Qwen3.5 기반 로컬 AI 보안 시스템**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27705\n\n13. **Noq: n0의 새로운 Rust 기반 QUIC 구현체**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27703\n\n14. **Cursor Composer 2는 Kimi K2.5에 RL을 적용한 모델로 확인**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27702\n\n15. **Show GN: Cluefin-Dure - 증권사/DART API를 활용한 국내주식 멀티 AI 에이전트**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27701\n\n16. **풀 리퀘스트는 죽었다, 풀 리퀘스트 만세**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27700\n\n17. **Ghostling - Minimum Viable 터미널 에뮬레이터**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27699\n\n18. **OpenCode – 오픈소스 AI 코딩 에이전트**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27698\n\n19. **'StravaLeaks': Le Monde, 피트니스 앱을 통해 프랑스 항공모함 위치를 실시간으로 추적**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27697\n\n20. **척 노리스 사망: ‘워커 텍사스 레인저’ 액션 아이콘, 향년 86세**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27696\n\n21. **ArXiv, 코넬 대학교로부터의 독립을 선언**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27694\n\n22. **뒤처져도 괜찮습니다, 고마워요!**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27693\n\n23. **Windows 품질에 대한 우리의 약속**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27692\n\n24. **Tabularis - 개발자용 크로스플랫폼 DB 관리 애플리케이션**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27691\n\n25. **Claude Code, 클라우드 기반 예약 작업 기능 추가**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27690\n\n26. **Apple, 인기 '바이브 코딩' 앱 업데이트를 조용히 차단**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27689\n\n27. **Rust WASM 파서를 TypeScript로 다시 작성했더니 3배 빨라졌다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27688\n\n28. **GPT-5.4로 세련된 프론트엔드 디자인하기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27687\n\n29. **Steam / GOG용 OpenTTD 변경 사항 업데이트**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27686\n\n30. **The Genetic Secrets of Sperm Warfare**\n   - 출처: Hacker News\n   - 링크: https://nautil.us/the-genetic-secrets-of-sperm-warfare-1278928\n\n31. **DevMem: A CLI Based Auto-Updating Documentation and Changelog Capture**\n   - 출처: Hacker News\n   - 링크: https://fun-tomato-aiuks1hrge.edgeone.app/\n\n32. **Time Nuts**\n   - 출처: Hacker News\n   - 링크: http://leapsecond.com/time-nuts.htm\n\n33. **Attempts to post the latest Trivy security incident have been marked [dead]**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/from?site=github.com%2Faquasecurity\n\n34. **Floci – A free, open-source local AWS emulator**\n   - 출처: Hacker News\n   - 링크: https://github.com/hectorvent/floci\n\n35. **Show HN: Airygen – A brand new WordPress SEO plugin**\n   - 출처: Hacker News\n   - 링크: https://www.airygen.com/en\n\n36. **Aging Redefined: Cognitive and Physical Improvement with Positive Age Beliefs**\n   - 출처: Hacker News\n   - 링크: https://www.mdpi.com/2308-3417/11/2/28\n\n37. **Show HN: The Longest Click**\n   - 출처: Hacker News\n   - 링크: https://longest-click.4m1r.dev/\n\n38. **Alternatives for returning multiple values from a Python function**\n   - 출처: Hacker News\n   - 링크: https://stackoverflow.com/questions/354883/alternatives-for-returning-multiple-values-from-a-python-function\n\n39. **FOMO.nyc – what are you doing tonight?**\n   - 출처: Hacker News\n   - 링크: https://fomo.nyc/\n\n40. **A Saturday with OpenClaw**\n   - 출처: Hacker News\n   - 링크: https://twitter.com/jeffweisbein/status/2035464534446469606\n\n41. **Related UI elements should not appear unrelated**\n   - 출처: Hacker News\n   - 링크: https://rakhim.exotext.com/related-ui-elements-should-not-appear-unrelated\n\n42. **US to embed Palantir AI across military**\n   - 출처: Hacker News\n   - 링크: https://thecradle.co/articles-id/36667\n\n43. **OpenClaw's ChatGPT moment sparks concern that AI models are becoming commodities**\n   - 출처: Hacker News\n   - 링크: https://www.cnbc.com/2026/03/21/openclaw-chatgpt-moment-sparks-concern-ai-models-becoming-commodities.html\n\n44. **Turbo Pascal Deconstructed**\n   - 출처: Hacker News\n   - 링크: https://simonwillison.net/2026/Mar/20/turbo-pascal/\n\n45. **President Nixon's Address About Oil Shortages (1973)**\n   - 출처: Hacker News\n   - 링크: https://www.presidency.ucsb.edu/documents/address-the-nation-about-policies-deal-with-the-energy-shortages\n\n46. **A Chess Playing Machine – Shannon (1950) [pdf]**\n   - 출처: Hacker News\n   - 링크: https://www.paradise.caltech.edu/ist4/lectures/shannonchess1950.pdf\n\n47. **WorthBuild – SaaS idea validation tool**\n   - 출처: Hacker News\n   - 링크: https://worthbuild.io/\n\n48. **Professional video editing, right in the browser with WebGPU and WASM**\n   - 출처: Hacker News\n   - 링크: https://tooscut.app/\n\n49. **Show HN: Travel Hacking Toolkit – Points search and trip planning with AI**\n   - 출처: Hacker News\n   - 링크: https://github.com/borski/travel-hacking-toolkit\n\n\n",
+  "articles": [
+    {
+      "title": "Visual Studio Code 1.113 ",
+      "link": "https://code.visualstudio.com/updates/v1_113",
+      "source": "Visual Studio Code - Code Editing. Redefined.",
+      "category": "tech",
+      "publishedAt": "2026-03-25T17:00:00Z",
+      "description": "\n      \u003cp\u003eLearn what's new in Visual Studio Code 1.113 (Insiders)\u003c/p\u003e\n      \u003cp\u003e\u003ca href=\"https://code.visualstudio.com/updates/v1_113\"\u003eRead the full article\u003c/a\u003e\u003c/p\u003e\n    "
+    },
+    {
+      "title": "Show GN: alogin – TUI, 멀티홉 게이트웨이, 암호화 저장소를 갖춘 SSH 접속 관리 도구 (Go)",
+      "link": "https://news.hada.io/topic?id=27716",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-22T06:35:23+09:00",
+      "description": "\u003cp\u003e2000년대 초부터 개인용 SSH 자동화 도구를 Bash + Expect 스크립트로 만들어 써왔습니다.\u003cbr /\u003e\n20년간 패치하다가 결국 Go로 완전히 재작성해서 오픈소스로 공개했습니다.\u003c/p\u003e\n\u003cp\u003ehttps://github.com/emusal/alogin2\u003c/p\u003e\n\u003cp\u003e핵심 문제 의식: 수십 대 서버를 사용자, 포트, 게이트웨이 경로, 자격증명이\u003cbr /\u003e\n제각각"
+    },
+    {
+      "title": "Azure Entra ID 로그인 로그 우회 취약점 세 번째와 네 번째 사례 공개",
+      "link": "https://news.hada.io/topic?id=27715",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-22T06:33:25+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e2023년 이후 \u003cstrong\u003eAzure Entra ID 로그인 로그 우회 취약점\u003c/strong\u003e이 총 4건 발견되었으며, 최근 두 건은 \u003cstrong\u003e정상 토큰 발급이 가능한 심각한 문제\u003c/strong\u003e로 확인됨\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eGraphGoblin\u003c/strong\u003e은 OAuth2 ROPC 흐름에서 \u003ccode\u003escope\u003c/code\u003e 파라미터를 반복 입력해 \u003cstrong\u003e로그 생성을...\u003c/p\u003e"
+    },
+    {
+      "title": "Wayland가 리눅스 데스크탑을 10년 뒤로 되돌렸는가?",
+      "link": "https://news.hada.io/topic?id=27714",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-22T03:37:42+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e1980년대 개발된 \u003cstrong\u003eX11\u003c/strong\u003e의 복잡성을 대체하기 위해 등장한 \u003cstrong\u003eWayland\u003c/strong\u003e는 단순한 디스플레이 프로토콜을 목표로 했으나, 17년이 지난 지금도 완성도 논란이 지속됨\u003c/li\u003e\n\u003cli\u003e전체 시장의 \u003cstrong\u003e40~60% 수준 채택\u003c/strong\u003e에 그치며, \u003cstrong\u003ePipeWire\u003c/strong\u003e 등 다른 시스템 구...\u003c/p\u003e"
+    },
+    {
+      "title": "서버용 웹 기반 그래픽 인터페이스 Cockpit",
+      "link": "https://news.hada.io/topic?id=27713",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-22T03:34:41+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e웹 브라우저에서 실행되는 \u003cstrong\u003eLinux 서버 관리용 그래픽 인터페이스\u003c/strong\u003e로, 실제 시스템 세션과 직접 상호작용하는 \u003cstrong\u003e경량형 관리자 도구\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e시스템 자원, 네트워크, 스토리지, 로그 등을 시각적으로 제어할 수 있는 \u003cstrong\u003e대화형 관리 환경\u003c/strong\u003e 제공\u003c/li\u003e\n\u003cli\u003e\n\u003cstron...\u003c/p\u003e"
+    },
+    {
+      "title": "Bing 검색 \u0026quot;카카오톡\u0026quot; 상위 3개 결과가 전부 중국발 피싱",
+      "link": "https://news.hada.io/topic?id=27712",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-22T02:34:28+09:00",
+      "description": "\u003ch2\u003eBing 검색 \u0026quot;카카오톡\u0026quot; 상위 3개 결과가 전부 중국발 피싱\u003c/h2\u003e\n\u003cp\u003eBing에서 \u0026quot;카카오톡\u0026quot; 검색 시 상위 3개(\u003ccode\u003eapps-kakaocorp[.]com\u003c/code\u003e, \u003ccode\u003eapps-kakaotalk[.]com\u003c/code\u003e, \u003ccode\u003epc-kakaotalk[.]com\u003c/code\u003e)가 전부 피싱. 인프라 및 코드를 분석한 결과:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e필터링"
+    },
+    {
+      "title": "HP, 고객지원 전화에 15분 강제 대기 적용 실험 후 철회",
+      "link": "https://news.hada.io/topic?id=27711",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-22T02:33:22+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eHP가 유럽 일부 국가에서 \u003cstrong\u003e고객지원 전화 연결 전 15분 대기시간을 강제로 적용\u003c/strong\u003e하는 정책을 시행함\u003c/li\u003e\n\u003cli\u003e이 조치는 고객이 \u003cstrong\u003e디지털 셀프솔브(self-solve)\u003c/strong\u003e 채널을 더 많이 이용하도록 유도하기 위한 목적이었음\u003c/li\u003e\n\u003cli\u003e고객은 실제 대기 여부와 관계없이 \u003cstrong\u003e15분 후...\u003c/p\u003e"
+    },
+    {
+      "title": "일본의 젓가락 사용 금기 용어집",
+      "link": "https://news.hada.io/topic?id=27710",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-21T23:33:23+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e일본 식사 예절에서 \u003cstrong\u003e젓가락 사용 시 피해야 할 행동\u003c/strong\u003e을 정리한 용어집으로, 이러한 행위는 ‘\u003cstrong\u003e키라이바시(kiraibashi)\u003c/strong\u003e’라 불림\u003c/li\u003e\n\u003cli\u003e젓가락을 입보다 높이 들거나, 국물에 씻거나, 음식을 뒤적이는 등 \u003cstrong\u003e무례하거나 금기시되는 행동\u003c/strong\u003e이 다수 포함됨\u003c/li\u003e\n...\u003c/p\u003e"
+    },
+    {
+      "title": "Super Micro 주가, 공동창업자의 25억 달러 규모 AI 칩 밀수 혐의 기소 후 25% 급락",
+      "link": "https://news.hada.io/topic?id=27709",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-21T22:33:04+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eSuper Micro Computer\u003c/strong\u003e 공동창업자가 \u003cstrong\u003e25억 달러 규모 AI 칩 밀수 혐의\u003c/strong\u003e로 기소되며 주가가 \u003cstrong\u003e25% 하락\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e미국 법무부는 그가 \u003cstrong\u003eNvidia 등 미국산 AI 칩을 중국으로 불법 수출\u003c/strong\u003e한 혐의를 받고 있다고 발표\u003c/li\u003e\n\u003cli\u003e기소장에는 \u003cstrong\u003e...\u003c/p\u003e"
+    },
+    {
+      "title": "실행 중인 세션에 채널을 통해 이벤트 푸시하기",
+      "link": "https://news.hada.io/topic?id=27708",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-21T20:33:34+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eClaude Code의 Channels\u003c/strong\u003e는 외부 시스템의 메시지나 웹훅을 \u003cstrong\u003e실행 중인 세션으로 직접 전달\u003c/strong\u003e해 Claude가 즉시 반응하도록 하는 기능\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eMCP 서버\u003c/strong\u003e를 통해 이벤트를 주고받으며, 세션이 열려 있는 동안만 이벤트가 도착하므로 \u003cstrong\u003e지속 실행 환경...\u003c/p\u003e"
+    },
+    {
+      "title": "Andrej Karpathy가 말하는 코드 에이전트, AutoResearch, 그리고 AI의 루피(Loopy) 시대 [유튜브]",
+      "link": "https://news.hada.io/topic?id=27706",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-21T15:17:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eAI 코드 에이전트의 등장으로 소프트웨어 개발 방식이 근본적으로 변화했으며, 2024년 12월을 기점으로 \u003cstrong\u003e직접 코딩 비중이 80%에서 거의 0%\u003c/strong\u003e 로 급감한 체감적 전환이 발생\u003c/li\u003e\n\u003cli\u003e개인이 여러 에이전트를 \u003cstrong\u003e병렬로 운영\u003c/strong\u003e하며 기능 단위로 작업을 배분하는 방식이 새로운 개발 ...\u003c/p\u003e"
+    },
+    {
+      "title": "MacBook M5 Pro와 Qwen3.5 기반 로컬 AI 보안 시스템",
+      "link": "https://news.hada.io/topic?id=27705",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-21T14:45:55+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eQwen3.5-9B 모델\u003c/strong\u003e이 \u003cstrong\u003eMacBook Pro M5\u003c/strong\u003e에서 완전 로컬로 실행되어 \u003cstrong\u003eGPT-5.4 대비 4포인트 낮은 93.8% 성능\u003c/strong\u003e을 기록\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e96개 테스트와 15개 스위트\u003c/strong\u003e로 구성된 \u003cstrong\u003eHomeSec-Bench\u003c/strong\u003e에서 도구 사용, 보안 분류, 이벤트 중복 제거...\u003c/p\u003e"
+    },
+    {
+      "title": "Noq: n0의 새로운 Rust 기반 QUIC 구현체",
+      "link": "https://news.hada.io/topic?id=27703",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-21T14:44:27+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003en0 팀이 개발한 \u003cstrong\u003enoq\u003c/strong\u003e는 \u003cstrong\u003eRust로 작성된 범용 QUIC 구현체\u003c/strong\u003e로, \u003cstrong\u003e멀티패스\u003c/strong\u003e와 \u003cstrong\u003eNAT 트래버설\u003c/strong\u003e을 지원\u003c/li\u003e\n\u003cli\u003e기존 iroh의 \u003cstrong\u003eQuinn 기반 구조 한계\u003c/strong\u003e를 해결하기 위해 \u003cstrong\u003e독립 코드베이스\u003c/strong\u003e로 전환해 개발됨\u003c/li\u003e\n\u003cli\u003e\n...\u003c/p\u003e"
+    },
+    {
+      "title": "Cursor Composer 2는 Kimi K2.5에 RL을 적용한 모델로 확인",
+      "link": "https://news.hada.io/topic?id=27702",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-21T14:31:39+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eOpenAI \u003cstrong\u003ebase URL 조작\u003c/strong\u003e을 통해 요청 경로에 \u003ccode\u003ekimi-k2p5-rl\u003c/code\u003e이 포함된 것이 발견되며, Composer 2가 \u003cstrong\u003eKimi K2.5 + 강화학습(RL)\u003c/strong\u003e 기반임이 드러남\u003c/li\u003e\n\u003cli\u003e이전 버전에서는 차단되던 요청이 Composer 2에서는 노출되었고, 이후 \u003cstrong\u003e즉시 차단 패치\u003c/strong\u003e가 이...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: Cluefin-Dure - 증권사/DART API를 활용한 국내주식 멀티 AI 에이전트",
+      "link": "https://news.hada.io/topic?id=27701",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-21T14:20:16+09:00",
+      "description": "\u003cp\u003e안녕하세요.\u003c/p\u003e\n\u003cp\u003e6개월 전에 \u003ca href=\"https://news.hada.io/topic?id=22951\"\u003ecluefin\u003c/a\u003e 프로젝트를 공유했었는데요,\u003cbr /\u003e\n이번에는 cluefin에 만든 openapi 패키지(증권사, DART RestAPI)를\u003cbr /\u003e\nAI 에이전트가 사용할 수 있는 도구로 연결해서 투자 리서치 멀티 에이전트 프로젝트 \u0026quot;\u003ca href=\"https://g"
+    },
+    {
+      "title": "풀 리퀘스트는 죽었다, 풀 리퀘스트 만세",
+      "link": "https://news.hada.io/topic?id=27700",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-21T14:14:02+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eAI가 코드를 작성하는 시대에 \u003cstrong\u003e풀 리퀘스트(PR) 리뷰 방식\u003c/strong\u003e이 근본적으로 바뀌어야 하며, 현재의 리뷰 프로세스는 AI 코딩 워크플로우에 맞지 않음\u003c/li\u003e\n\u003cli\u003e리뷰어가 \u0026quot;왜 이렇게 했나?\u0026quot;라고 질문하면 개발자가 AI에게 다시 물어 답변을 붙여넣는 구조로, \u003cstrong\u003e인간이 중개인(midd...\u003c/p\u003e"
+    },
+    {
+      "title": "Ghostling - Minimum Viable 터미널 에뮬레이터",
+      "link": "https://news.hada.io/topic?id=27699",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-21T10:45:40+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003elibghostty C API\u003c/strong\u003e를 기반으로 한 최소 기능의 터미널 데모로, 단일 C 파일과 \u003cstrong\u003eRaylib 렌더링\u003c/strong\u003e을 사용해 동작\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003elibghostty-vt\u003c/strong\u003e의 기능을 검증하기 위한 구조로, GPU 렌더링 대신 \u003cstrong\u003e2D 그래픽 기반 터미널 구현\u003c/strong\u003e을 보여줌\u003c/li\u003e\n\u003cli\u003e\n\u003cs...\u003c/p\u003e"
+    },
+    {
+      "title": "OpenCode – 오픈소스 AI 코딩 에이전트",
+      "link": "https://news.hada.io/topic?id=27698",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-21T10:33:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e터미널, IDE, 데스크톱 환경에서 코드 작성을 지원하는 \u003cstrong\u003e오픈소스 AI 코딩 에이전트\u003c/strong\u003e로, macOS·Windows·Linux용 \u003cstrong\u003e데스크톱 베타 앱\u003c/strong\u003e을 제공\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eClaude, GPT, Gemini\u003c/strong\u003e 등 다양한 모델 제공자와 연동되며, \u003cstrong\u003e무료 모델\u003c/strong\u003e도 포함\u003c/li\u003e\n\u003cli\u003e\n\u003cs...\u003c/p\u003e"
+    },
+    {
+      "title": "'StravaLeaks': Le Monde, 피트니스 앱을 통해 프랑스 항공모함 위치를 실시간으로 추적",
+      "link": "https://news.hada.io/topic?id=27697",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-21T09:47:29+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e프랑스 해군 장교가 \u003cstrong\u003eStrava\u003c/strong\u003e 피트니스 앱에 공개 프로필로 운동 기록을 업로드하면서, 지중해에서 작전 중인 \u003cstrong\u003e항공모함 Charles de Gaulle\u003c/strong\u003e의 정확한 위치가 실시간으로 노출\u003c/li\u003e\n\u003cli\u003eLe Monde가 해당 데이터와 \u003cstrong\u003e위성 이미지\u003c/strong\u003e를 교차 검증하여 키프로스 북서쪽...\u003c/p\u003e"
+    },
+    {
+      "title": "척 노리스 사망: ‘워커 텍사스 레인저’ 액션 아이콘, 향년 86세",
+      "link": "https://news.hada.io/topic?id=27696",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-21T09:44:28+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e무술 챔피언이자 \u003cstrong\u003e‘워커, 텍사스 레인저’\u003c/strong\u003e 주연으로 유명한 척 노리스가 하와이에서 별세, 향년 86세\u003c/li\u003e\n\u003cli\u003e가족은 “그가 가족 곁에서 평화롭게 세상을 떠났다”고 밝혔으며, \u003cstrong\u003e믿음과 헌신으로 삶을 살았다\u003c/strong\u003e고 전함\u003c/li\u003e\n\u003cli\u003e노리스는 \u003cstrong\u003e유도, 가라테, 태권도, 탕수...\u003c/p\u003e"
+    },
+    {
+      "title": "ArXiv, 코넬 대학교로부터의 독립을 선언",
+      "link": "https://news.hada.io/topic?id=27694",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-21T09:41:28+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e1991년 설립된 선구적인 논문 사전 공개 서버 \u003cstrong\u003eArXiv.org\u003c/strong\u003e가 7월 1일부터 \u003cstrong\u003eCornell University로부터 독립한 비영리 법인\u003c/strong\u003e으로 전환\u003c/li\u003e\n\u003cli\u003e독립을 통해 \u003cstrong\u003e기부자 기반 확대와 기술 인력 확충\u003c/strong\u003e을 추진하며, 연간 30만 건에 달하는 \u003cstrong\u003e급증하는 논문 제출량...\u003c/p\u003e"
+    },
+    {
+      "title": "뒤처져도 괜찮습니다, 고마워요!",
+      "link": "https://news.hada.io/topic?id=27693",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-21T09:38:28+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e암호화폐와 AI 도구\u003c/strong\u003e 등 새로운 기술에 대한 \u003cstrong\u003eFOMO(놓칠까 봐 두려움)\u003c/strong\u003e 를 무기화하는 현상에 대해 \u0026quot;기다려도 괜찮다\u0026quot;고 얘기하는 글\u003c/li\u003e\n\u003cli\u003e암호화폐 초기 시절 \u0026quot;뒤처지고 싶지 않지?\u0026quot;라는 말이 회의적 태도를 무너뜨리는 \u003cstrong\u003e교묘한 압박 수단\u003c/s...\u003c/p\u003e"
+    },
+    {
+      "title": "Windows 품질에 대한 우리의 약속",
+      "link": "https://news.hada.io/topic?id=27692",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-21T09:33:13+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eMicrosoft는 사용자 피드백을 반영해 \u003cstrong\u003eWindows 11의 품질·성능·신뢰성·완성도\u003c/strong\u003e를 전반적으로 높이는 계획을 발표\u003c/li\u003e\n\u003cli\u003e3~4월에 \u003cstrong\u003eWindows Insider 빌드\u003c/strong\u003e를 통해 작업 표시줄 이동, Copilot 통합 조정, 업데이트 제어 강화 등 주요 변경을 미리보기 형태로 제공\u003c/li\u003e\n\u003cli\u003e연중...\u003c/p\u003e"
+    },
+    {
+      "title": "Tabularis - 개발자용 크로스플랫폼 DB 관리 애플리케이션",
+      "link": "https://news.hada.io/topic?id=27691",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-21T09:31:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eTauri+React\u003c/strong\u003e로 제작되어 윈/맥/리눅스 지원\u003c/li\u003e\n\u003cli\u003eMySQL/MariaDB, PostgreSQL, SQLite 지원, \u003cstrong\u003e다중 스키마 및 다중 데이터베이스 연결\u003c/strong\u003e 기능 제공\u003c/li\u003e\n\u003cli\u003e빠른 성능 + 보안성 + 미려한 UI 를 중점으로 설계\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e트리 뷰 인터페이스\u003c/strong\u003e로 테이블, 컬...\u003c/p\u003e"
+    },
+    {
+      "title": "Claude Code, 클라우드 기반 예약 작업 기능 추가",
+      "link": "https://news.hada.io/topic?id=27690",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-21T09:01:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e로컬 머신에서 클로드 코드를 실행하지 않아도\u003c/strong\u003e 설정한 일정에 따라 자동으로 작업 수행 가능\u003c/li\u003e\n\u003cli\u003e레포지토리(단일/복수), 스케줄, 프롬프트를 지정하면 \u003cstrong\u003e클라우드 인프라\u003c/strong\u003e에서 Claude가 해당 작업을 반복 실행\u003c/li\u003e\n\u003cli\u003e열린 PR의 일괄 검토, 승인된 이슈 기반으로 자동...\u003c/p\u003e"
+    },
+    {
+      "title": "Apple, 인기 '바이브 코딩' 앱 업데이트를 조용히 차단",
+      "link": "https://news.hada.io/topic?id=27689",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-21T08:47:02+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eReplit, Vibecode 등 자연어 프롬프트로 앱을 만들 수 있는 \u003cstrong\u003e바이브 코딩 앱\u003c/strong\u003e들이 App Store 업데이트를 차단당한 상태로, Apple은 기존 App Store 규정 위반을 이유로 변경을 요구 중\u003c/li\u003e\n\u003cli\u003eApple은 앱이 \u003cstrong\u003e자체 기능을 변경하는 코드를 실행\u003c/strong\u003e하는 것을 금지하는 오래된 규정...\u003c/p\u003e"
+    },
+    {
+      "title": "Rust WASM 파서를 TypeScript로 다시 작성했더니 3배 빨라졌다",
+      "link": "https://news.hada.io/topic?id=27688",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-21T08:34:58+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eRust로 작성된 WASM 파서\u003c/strong\u003e는 구조적으로 빠르지만, \u003cstrong\u003eJS-WASM 경계에서의 데이터 복사와 직렬화 오버헤드\u003c/strong\u003e가 성능 병목으로 드러남\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e\u003ccode\u003eserde-wasm-bindgen\u003c/code\u003e을 통한 직접 객체 반환\u003c/strong\u003e은 JSON 직렬화보다 9~29% 느렸으며, 이는 런타임 간 세밀...\u003c/p\u003e"
+    },
+    {
+      "title": "GPT-5.4로 세련된 프론트엔드 디자인하기",
+      "link": "https://news.hada.io/topic?id=27687",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-21T08:00:04+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eOpenAI가 \u003cstrong\u003eGPT-5.4의 프론트엔드 개발 역량\u003c/strong\u003e을 끌어올리기 위한 실전 프롬프팅 기법과 디자인 가이드를 공개\u003c/li\u003e\n\u003cli\u003e이미지 이해력, \u003cstrong\u003e기능 완성도\u003c/strong\u003e, 컴퓨터 사용(Computer Use) 능력이 핵심 개선 축으로, 이전 모델 대비 시각적으로 세련되고 야심찬 결과물 생성 가능\u003c/li\u003e\n\u003cl...\u003c/p\u003e"
+    },
+    {
+      "title": "Steam / GOG용 OpenTTD 변경 사항 업데이트",
+      "link": "https://news.hada.io/topic?id=27686",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-21T07:33:25+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eAtari의 Transport Tycoon Deluxe 재출시\u003c/strong\u003e와 관련해 OpenTTD의 Steam·GOG 배포 방식이 조정됨\u003c/li\u003e\n\u003cli\u003e새로운 이용자는 두 플랫폼에서 OpenTTD를 이용하기 전에 \u003cstrong\u003eTransport Tycoon Deluxe를 먼저 구매해야 함\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e공식 웹사이트에서는 여전히 \u003cstrong\u003e무료 다운로드...\u003c/p\u003e"
+    },
+    {
+      "title": "The Genetic Secrets of Sperm Warfare",
+      "link": "https://nautil.us/the-genetic-secrets-of-sperm-warfare-1278928",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-21T22:01:06Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://nautil.us/the-genetic-secrets-of-sperm-warfare-1278928\"\u003ehttps://nautil.us/the-genetic-secrets-of-sperm-warfare-1278928\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47471926\"\u003ehttps://news.ycombinator.com/item?id=47471926\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "DevMem: A CLI Based Auto-Updating Documentation and Changelog Capture",
+      "link": "https://fun-tomato-aiuks1hrge.edgeone.app/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-21T22:00:20Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://fun-tomato-aiuks1hrge.edgeone.app/\"\u003ehttps://fun-tomato-aiuks1hrge.edgeone.app/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47471922\"\u003ehttps://news.ycombinator.com/item?id=47471922\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Time Nuts",
+      "link": "http://leapsecond.com/time-nuts.htm",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-21T21:57:19Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"http://leapsecond.com/time-nuts.htm\"\u003ehttp://leapsecond.com/time-nuts.htm\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47471888\"\u003ehttps://news.ycombinator.com/item?id=47471888\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Attempts to post the latest Trivy security incident have been marked [dead]",
+      "link": "https://news.ycombinator.com/from?site=github.com%2Faquasecurity",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-21T21:49:56Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://news.ycombinator.com/from?site=github.com%2Faquasecurity\"\u003ehttps://news.ycombinator.com/from?site=github.com%2Faquasecurity\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47471805\"\u003ehttps://news.ycombinator.com/item?id=47471805\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Floci – A free, open-source local AWS emulator",
+      "link": "https://github.com/hectorvent/floci",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-21T21:49:15Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/hectorvent/floci\"\u003ehttps://github.com/hectorvent/floci\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47471801\"\u003ehttps://news.ycombinator.com/item?id=47471801\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Airygen – A brand new WordPress SEO plugin",
+      "link": "https://www.airygen.com/en",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-21T21:45:05Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.airygen.com/en\"\u003ehttps://www.airygen.com/en\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47471767\"\u003ehttps://news.ycombinator.com/item?id=47471767\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Aging Redefined: Cognitive and Physical Improvement with Positive Age Beliefs",
+      "link": "https://www.mdpi.com/2308-3417/11/2/28",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-21T21:43:50Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.mdpi.com/2308-3417/11/2/28\"\u003ehttps://www.mdpi.com/2308-3417/11/2/28\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47471757\"\u003ehttps://news.ycombinator.com/item?id=47471757\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: The Longest Click",
+      "link": "https://longest-click.4m1r.dev/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-21T21:42:01Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://longest-click.4m1r.dev/\"\u003ehttps://longest-click.4m1r.dev/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47471736\"\u003ehttps://news.ycombinator.com/item?id=47471736\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Alternatives for returning multiple values from a Python function",
+      "link": "https://stackoverflow.com/questions/354883/alternatives-for-returning-multiple-values-from-a-python-function",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-21T21:40:17Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://stackoverflow.com/questions/354883/alternatives-for-returning-multiple-values-from-a-python-function\"\u003ehttps://stackoverflow.com/questions/354883/alternatives-for-returning-multiple-values-from-a-python-function\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47471722\"\u003ehttps://news.ycombinator.com/item?id=47471722\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "FOMO.nyc – what are you doing tonight?",
+      "link": "https://fomo.nyc/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-21T21:36:17Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://fomo.nyc/\"\u003ehttps://fomo.nyc/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47471684\"\u003ehttps://news.ycombinator.com/item?id=47471684\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "A Saturday with OpenClaw",
+      "link": "https://twitter.com/jeffweisbein/status/2035464534446469606",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-21T21:35:16Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://twitter.com/jeffweisbein/status/2035464534446469606\"\u003ehttps://twitter.com/jeffweisbein/status/2035464534446469606\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47471674\"\u003ehttps://news.ycombinator.com/item?id=47471674\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Related UI elements should not appear unrelated",
+      "link": "https://rakhim.exotext.com/related-ui-elements-should-not-appear-unrelated",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-21T21:33:35Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://rakhim.exotext.com/related-ui-elements-should-not-appear-unrelated\"\u003ehttps://rakhim.exotext.com/related-ui-elements-should-not-appear-unrelated\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47471659\"\u003ehttps://news.ycombinator.com/item?id=47471659\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "US to embed Palantir AI across military",
+      "link": "https://thecradle.co/articles-id/36667",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-21T21:33:10Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://thecradle.co/articles-id/36667\"\u003ehttps://thecradle.co/articles-id/36667\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47471655\"\u003ehttps://news.ycombinator.com/item?id=47471655\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 5\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "OpenClaw's ChatGPT moment sparks concern that AI models are becoming commodities",
+      "link": "https://www.cnbc.com/2026/03/21/openclaw-chatgpt-moment-sparks-concern-ai-models-becoming-commodities.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-21T21:32:52Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.cnbc.com/2026/03/21/openclaw-chatgpt-moment-sparks-concern-ai-models-becoming-commodities.html\"\u003ehttps://www.cnbc.com/2026/03/21/openclaw-chatgpt-moment-sparks-concern-ai-models-becoming-commodities.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47471649\"\u003ehttps://news.ycombinator.com/item?id=47471649\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Turbo Pascal Deconstructed",
+      "link": "https://simonwillison.net/2026/Mar/20/turbo-pascal/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-21T21:32:50Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://simonwillison.net/2026/Mar/20/turbo-pascal/\"\u003ehttps://simonwillison.net/2026/Mar/20/turbo-pascal/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47471647\"\u003ehttps://news.ycombinator.com/item?id=47471647\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "President Nixon's Address About Oil Shortages (1973)",
+      "link": "https://www.presidency.ucsb.edu/documents/address-the-nation-about-policies-deal-with-the-energy-shortages",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-21T21:30:59Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.presidency.ucsb.edu/documents/address-the-nation-about-policies-deal-with-the-energy-shortages\"\u003ehttps://www.presidency.ucsb.edu/documents/address-the-nation-about-policies-deal-with-the-energy-shortages\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47471628\"\u003ehttps://news.ycombinator.com/item?id=47471628\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 4\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "A Chess Playing Machine – Shannon (1950) [pdf]",
+      "link": "https://www.paradise.caltech.edu/ist4/lectures/shannonchess1950.pdf",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-21T21:30:17Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.paradise.caltech.edu/ist4/lectures/shannonchess1950.pdf\"\u003ehttps://www.paradise.caltech.edu/ist4/lectures/shannonchess1950.pdf\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47471618\"\u003ehttps://news.ycombinator.com/item?id=47471618\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "WorthBuild – SaaS idea validation tool",
+      "link": "https://worthbuild.io/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-21T21:28:12Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://worthbuild.io/\"\u003ehttps://worthbuild.io/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47471608\"\u003ehttps://news.ycombinator.com/item?id=47471608\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Professional video editing, right in the browser with WebGPU and WASM",
+      "link": "https://tooscut.app/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-21T21:27:50Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://tooscut.app/\"\u003ehttps://tooscut.app/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47471601\"\u003ehttps://news.ycombinator.com/item?id=47471601\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Travel Hacking Toolkit – Points search and trip planning with AI",
+      "link": "https://github.com/borski/travel-hacking-toolkit",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-21T21:25:03Z",
+      "description": "\n\u003cp\u003eI use points and miles for most of my travel. Every booking comes down to the same decision: use points or pay cash? To answer that, you need award availability across multiple programs, cash prices, your current balances, transfer partner ratios, and the math to compare them. I got tired of doing it manually across a dozen tabs.\u003cp\u003eThis toolkit teaches Claude Code and OpenCode how to do it. 7 skills (markdown files with API docs and curl examples) and 6 MCP servers (real-time tools the AI calls directly).\u003cp\u003eIt searches award flights across 25+ mileage programs (Seats.aero), compares cash prices (Google Flights, Skiplagged, Kiwi.com, Duffel), pulls your loyalty balances (AwardWallet), searches hotels (Trivago, LiteAPI, Airbnb, Booking.com), finds ferry routes across 33 countries, and looks up weird hidden gems near your destination (Atlas Obscura).\u003cp\u003eReference data is included: transfer partner ratios for Chase UR, Amex MR, Bilt, Capital One, and Citi TY. Point valuations sourced from TPG, Upgraded Points, OMAAT, and View From The Wing. Alliance membership, sweet spot redemptions, booking windows, hotel chain brand lookups.\u003cp\u003e5 of the 6 MCP servers need zero API keys. Clone, run setup.sh, start \nsearching.\u003cp\u003eSkills are, as usual, plain markdown. They work in OpenCode and Claude Code automatically (I added a tiny setup script), and they'll work in anything else that supports skills.\u003cp\u003ePRs welcome! Help me expand the toolkit! :)\u003cp\u003e\u003ca href=\"https://github.com/borski/travel-hacking-toolkit\" rel=\"nofollow\"\u003ehttps://github.com/borski/travel-hacking-toolkit\u003c/a\u003e\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47471573\"\u003ehttps://news.ycombinator.com/item?id=47471573\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    }
+  ],
+  "generatedAt": "2026-03-22T07:10:56.166869333+09:00"
+}
