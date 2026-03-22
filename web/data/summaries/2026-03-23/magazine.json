@@ -1,0 +1,386 @@
+{
+  "date": "2026-03-23",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2026년 3월 23일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** 코딩부터 검색까지 AI 에이전트가 주도하는 '자동화의 시대'가 본격화되는 가운데, 오프라인의 가치와 인간 고유의 사고를 지키려는 사회적 반작용이 동시에 일어나는 변곡점의 하루입니다.\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### IDE의 죽음? (The Death of the IDE?)\n소프트웨어 개발의 상징이었던 통합 개발 환경(IDE)의 종말이 거론되고 있습니다. 과거 개발자들은 에디터 화면에 코드를 한 줄씩 타이핑하며 문법 오류를 잡는 데 시간을 쏟았지만, 이제는 AI 에이전트가 그 역할을 대체하고 있습니다. 최근 급부상한 AI 코딩 어시스턴트와 Agentic 워크플로우는 개발자를 '코더(Coder)'에서 '시스템 설계자(Architect)'로 격상시키고 있습니다. 코드를 직접 작성하는 행위 자체의 비중이 줄어들면서, 미래의 개발 도구는 코드를 편집하는 창이 아니라 AI 에이전트들의 작업을 지휘하고 검토하는 '오케스트레이션 대시보드' 형태로 진화할 것입니다.\n\u003e **Key Point:** AI의 발전으로 개발자는 단순 코딩에서 벗어나 문제 해결과 아키텍처 설계에 집중하게 되며, 전통적인 IDE는 점차 레거시 도구로 전락할 가능성이 높습니다. [^24]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. Google 검색, AI로 뉴스 헤드라인을 교체하기 시작\n- **What:** 구글이 검색 결과에서 언론사의 원본 뉴스 헤드라인 대신 AI가 생성한 요약 헤드라인을 노출하기 시작했습니다.\n- **Why:** 사용자가 검색 결과 페이지(SERP)를 이탈하지 않고 구글 생태계 내에서 정보를 소비하도록 유도하기 위함입니다.\n- **Impact:** 언론사 웹사이트로의 트래픽 급감이 예상되며, 저작권 침해 및 원본 콘텐츠 제공자에 대한 보상 문제가 글로벌 규제 당국의 핵심 쟁점으로 떠오를 것입니다. [^19]\n\n### 2. 오리건 학교 휴대전화 사용 금지: ‘몰입하는 학생들, 즐거운 교사들’\n- **What:** 미국 오리건주의 학교들이 교내 휴대전화 사용을 전면 금지한 후 긍정적인 변화를 겪고 있습니다.\n- **Why:** 소셜 미디어와 숏폼 콘텐츠로 인한 학생들의 주의력 결핍과 정신 건강 악화를 막기 위한 강력한 조치입니다.\n- **Impact:** 학생들의 수업 몰입도와 교우 관계가 눈에 띄게 개선되었으며, 교사들의 직업 만족도도 상승했습니다. 이는 기술 과몰입에 대한 '디지털 디톡스' 정책이 타 지역으로 확산되는 기폭제가 될 것입니다. [^6]\n\n### 3. Tinybox – 120B 파라미터를 지원하는 오프라인 AI 머신\n- **What:** 1,200억(120B) 개의 파라미터를 가진 거대 언어 모델을 클라우드 연결 없이 로컬에서 구동할 수 있는 하드웨어 'Tinybox'가 주목받고 있습니다.\n- **Why:** 기업과 연구소들이 데이터 프라이버시를 보호하면서도 고성능 AI를 지연 시간(Latency) 없이 사용하고자 하는 수요가 폭발하고 있기 때문입니다.\n- **Impact:** 빅테크의 클라우드 인프라에 종속되지 않는 '온프레미스 AI' 생태계가 가속화되며, 엣지 컴퓨팅 하드웨어 시장의 새로운 표준을 제시할 것입니다. [^17]\n\n### 4. 이란 전쟁발 에너지 위기, 재생에너지 전환의 촉매제\n- **What:** 중동 지역의 지정학적 긴장과 이란 전쟁 여파로 촉발된 에너지 위기가 아시아를 비롯한 글로벌 재생에너지 전환을 압박하고 있습니다.\n- **Why:** 화석 연료 공급망의 취약성이 국가 안보와 직결된다는 사실이 다시 한번 증명되었기 때문입니다.\n- **Impact:** 단순한 환경 보호 목적을 넘어 '에너지 안보' 차원에서 태양광, 풍력 등 재생에너지 인프라 투자가 전 세계적으로 폭발적으로 증가할 전망입니다. [^33]\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **Visual Studio Code 1.113** | 최신 업데이트로 코드 편집 경험을 재정의하는 새로운 기능들이 대거 추가되었습니다. [^1] |\n| **Tool** | **Grafeo** | Rust로 구축되어 극강의 성능을 자랑하는 빠르고 경량화된 임베디드 그래프 데이터베이스입니다. [^2] |\n| **Tool** | **Floci** | 로컬 환경에서 AWS 서비스를 무료로 테스트할 수 있는 오픈소스 에뮬레이터입니다. [^3] |\n| **Tool** | **Tooscut** | 브라우저 상에서 WebGPU와 WASM을 활용해 구동되는 전문가급 영상 편집기입니다. [^8] |\n| **Tool** | **MonoPix** | AI가 생성한 어색한 가짜 픽셀아트를 정교한 진짜 픽셀아트로 복원해주는 도구입니다. [^10] |\n| **Tool** | **Thask** | 프로젝트 의존성을 노드 그래프로 시각화하고, AI 에이전트가 직접 조회 및 수정할 수 있게 해줍니다. [^11] |\n| **Tool** | **vvrite** | 오픈소스로 개발된 macOS 전용 온디바이스 AI 음성 타이핑 애플리케이션입니다. [^16] |\n| **Tool** | **onecli** | AI 에이전트들이 시스템에 접근할 수 있도록 돕는 안전한 시크릿 게이트웨이 도구입니다. [^25] |\n| **Repo** | **AI DevOps Actions** | AI 네이티브 저장소의 CI/CD를 위한 9가지 필수 GitHub Actions 모음입니다. [^31] |\n| **Repo** | **ClawMem** | 개발자들의 메모리 관리와 최적화를 돕는 새로운 오픈소스 프로젝트입니다. [^45] |\n| **Repo** | **DrBradStanfield/Roadmap** | 수명 연장 및 건강 관리를 위한 과학적 로드맵을 정리한 GitHub 저장소입니다. [^41] |\n| **Method** | **Gemini + Claude 리뷰** | 두 AI 모델을 병렬 파이프라인으로 구축하여 블로그 글의 품질을 자동 검증하는 방법론입니다. [^7] |\n| **Method** | **Knowledge Agents** | 임베딩(Embeddings) 기술 없이도 효율적인 지식 기반 AI 에이전트를 구축하는 가이드입니다. [^42] |\n| **Paper** | **Omnilingual MT** | 메타(Meta)가 발표한 무려 1,600개 언어를 지원하는 혁신적인 다국어 기계 번역 모델입니다. [^14] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n\n#### 🤖 AI \u0026 미래 업무 환경\n* **월 15만원짜리 Claude Code가 바꾼 아이디어-실행 사이클**: 저렴한 AI 코딩 도구가 개인의 아이디어를 실제 프로덕트로 구현하는 속도를 혁신적으로 단축시켰습니다. [^9]\n* **SaaS의 미래는 Agentic**: 사용자가 직접 조작하는 소프트웨어를 넘어, 목표만 주어지면 AI가 알아서 수행하는 에이전트 기반 SaaS가 대세가 될 것입니다. [^13]\n* **중국의 오픈클로 열풍에 대하여**: 중국 내에서 오픈소스 AI 모델을 활용한 독자적인 생태계 구축 움직임이 거세지고 있습니다. [^15]\n* **생각 — 빠르게, 느리게, 그리고 인공지능으로**: AI가 인간의 인지 과정과 사고 방식을 근본적으로 어떻게 재구성하고 있는지에 대한 깊은 고찰입니다. [^26]\n* **Fun crafts done by AI agents**: AI 에이전트들이 만들어낸 재미있는 창작물들을 모아보고, 인간이 이를 구독하는 새로운 형태의 플랫폼입니다. [^38]\n* **AI's impact on private equity**: AI 심층 연구를 바탕으로 사모펀드(PE) 시장에 AI가 미칠 파괴적 혁신과 투자 지형 변화를 분석했습니다. [^43]\n\n#### 💻 개발 \u0026 인프라\n* **404 Deno CEO not found**: Deno의 CEO와 관련된 유머러스하면서도 커뮤니티의 이목을 끄는 해프닝이 발생했습니다. [^12]\n* **Ubuntu 26.04, ‘무음 sudo 비밀번호 입력’ 종료**: 46년간 유지되던 터미널의 비밀번호 입력 무음 정책이 보안 시각화를 위해 변경됩니다. [^18]\n* **The Diminished Art of Coding**: 코딩이라는 행위 자체가 예술적 가치를 잃고 단순 조립으로 전락하고 있다는 개발자의 에세이입니다. [^30]\n\n#### 🏛️ 테크 정책 \u0026 사회\n* **파리 시장의 교통 개혁이 만든 변화와 논란**: 앤 이달고 시장의 강력한 친환경 교통 정책이 파리 도심에 가져온 명암을 조명합니다. [^5]\n* **아동 보호를 인터넷 접근 통제로 바꾸지 말라**: 아동 보호를 빌미로 한 과도한 인터넷 검열과 통제 정책에 대한 비판적 시각입니다. [^21]\n* **인터넷 아카이브 차단은 웹의 역사를 지운다**: AI 크롤링을 막기 위한 아카이브 차단이 결국 인류의 디지털 유산을 훼손한다는 지적입니다. [^23]\n* **O2Fail – Mobile Phone Content Control (2010)**: 과거 모바일 콘텐츠 통제 정책의 실패 사례를 돌아보며 현재의 규제를 경고합니다. [^36]\n* **FAA Ends Use of 'See and Avoid' for Helicopters**: 미 연방항공청이 혼잡한 공항 근처 헬리콥터의 육안 회피 비행 정책을 종료하며 안전을 강화합니다. [^39]\n\n#### 🎨 UX, 디자인 \u0026 OS\n* **macOS Tahoe의 메뉴 아이콘 숨기기**: 복잡해진 맥OS 상단 메뉴바 아이콘들을 깔끔하게 정리하고 숨기는 팁이 공유되었습니다. [^4]\n* **디자인 프로세스는 죽지 않았다, 압축되었을 뿐**: AI 시대에 디자인 과정이 사라진 것이 아니라, 도구의 발전으로 고도로 압축되고 효율화되었다는 분석입니다. [^20]\n\n#### 🕹️ 레트로, 게임 \u0026 흥미로운 프로젝트\n* **TI-82/83/83+ 계산기용 Drugwars (2011)**: 과거 공학용 계산기에서 즐기던 전설적인 텍스트 기반 게임의 추억을 회상합니다. [^27]\n* **The Tale of My Retrocomputing Infrastructure**: 오래된 레트로 컴퓨터들을 현대적인 인프라로 묶어 활용하는 덕후의 흥미로운 구축기입니다. [^34]\n* **Show HN: Playra**: 새로운 형태의 인터랙티브 웹 경험을 제공하는 사이드 프로젝트가 공개되었습니다. [^44]\n* **HunterPrey, a persistent SSH PvP world**: SSH 터미널 접속만으로 즐길 수 있는 독특한 텍스트 기반 PvP 게임의 알파 버전이 출시되었습니다. [^46]\n* **Association rule mining on 21.6M poker hands**: 2,160만 개의 포커 핸드 데이터를 연관 규칙 마이닝으로 분석해 패턴을 찾아낸 흥미로운 데이터 프로젝트입니다. [^47]\n\n#### 💡 인사이트 \u0026 에세이\n* **시간이 필요한 것들**: 모든 것이 즉각적인 시대에, 여전히 숙성과 기다림이 필요한 것들의 가치를 역설합니다. [^22]\n* **The Necessity of Being**: 시뮬레이션 우주론을 넘어, 인간 존재의 필연성과 철학적 의미를 탐구한 깊이 있는 에세이입니다. [^28]\n* **The First Time I Saw a Calculator**: 처음 계산기를 보았을 때의 경이로움을 통해 현대 기술의 '새로움'이 주는 감각을 되짚어봅니다. [^29]\n* **WTDW Your Innovation Fails?**: 혁신 프로젝트가 실패했을 때 조직과 개인이 취해야 할 올바른 대처법을 제시합니다. [^32]\n* **Talking with Robin Brooks**: 경제학자 폴 크루그먼이 로빈 브룩스와 만나 글로벌 거시 경제와 환율에 대해 나눈 대담입니다. [^40]\n\n#### 🌐 기타 단신\n* **Kitty.cards**: 로그인 없이 웹에서 바로 Apple Wallet용 커스텀 카드를 만들 수 있는 유용한 서비스입니다. [^35]\n* **Kash Patel's Nike Shoes Weren't Customized by Nike**: 정치인 캐쉬 파텔의 화려한 커스텀 나이키 신발이 실제로는 나이키 공식 제작이 아니라는 팩트체크 기사입니다. [^37]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘 브리핑에서는 극단적인 두 가지 흐름이 교차하는 것을 볼 수 있습니다. 한편에서는 AI가 코딩(IDE의 죽음)과 검색(구글 AI 헤드라인) 등 지식 노동의 근간을 자동화하며 효율성의 끝을 향해 달려가고 있습니다. 하지만 다른 한편에서는 오리건주의 학교 스마트폰 금지, 레트로 컴퓨팅에 대한 향수, '시간이 필요한 것들'에 대한 에세이처럼 아날로그적 가치와 인간 고유의 사유를 지켜내려는 강력한 반작용이 일어나고 있습니다. 기술이 모든 것을 압축하는 시대, 역설적으로 '인간으로 존재함(The Necessity of Being)'의 의미를 묻는 하루입니다.\n\n[^1]: Visual Studio Code 1.113 - https://code.visualstudio.com/updates/v1_113\n[^2]: Grafeo – Rust로 구축된 빠르고 경량의 임베디드 그래프 데이터베이스 - https://news.hada.io/topic?id=27745\n[^3]: Floci – 무료 오픈소스 로컬 AWS 에뮬레이터 - https://news.hada.io/topic?id=27744\n[^4]: macOS Tahoe의 메뉴 아이콘 숨기기 - https://news.hada.io/topic?id=27743\n[^5]: 파리 시장, 앤 이달고의 교통 개혁이 만든 도시의 변화와 논란 - https://news.hada.io/topic?id=27741\n[^6]: 오리건 학교 휴대전화 사용 금지: ‘몰입하는 학생들, 즐거운 교사들’ - https://news.hada.io/topic?id=27740\n[^7]: Gemini + Claude 병렬 리뷰 파이프라인으로 블로그 품질 자동 검증하기 - https://news.hada.io/topic?id=27739\n[^8]: Tooscut - 브라우저에서 WebGPU와 WASM으로 구현된 전문 영상 편집기 - https://news.hada.io/topic?id=27738\n[^9]: 월 15만원짜리 Claude Code가 바꾼 아이디어-실행 사이클 - https://news.hada.io/topic?id=27736\n[^10]: Show GN: MonoPix - AI가 만든 가짜 픽셀아트를 진짜 픽셀아트로 복원 - https://news.hada.io/topic?id=27735\n[^11]: Show GN: Thask – 프로젝트 의존성을 노드 그래프로 시각화하고 AI 에이전트가 조회/수정 가능 - https://news.hada.io/topic?id=27734\n[^12]: 404 Deno CEO not found - https://news.hada.io/topic?id=27733\n[^13]: SaaS의 미래는 Agentic - https://news.hada.io/topic?id=27732\n[^14]: 메타의 1,600개 언어용 Omnilingual MT - https://news.hada.io/topic?id=27731\n[^15]: 중국의 오픈클로 열풍에 대하여 - https://news.hada.io/topic?id=27730\n[^16]: Show GN: vvrite — 오픈소스 macOS 온디바이스 AI 음성 타이핑 앱 - https://news.hada.io/topic?id=27728\n[^17]: Tinybox – 120B 파라미터를 지원하는 오프라인 AI 머신 - https://news.hada.io/topic?id=27727\n[^18]: Ubuntu 26.04, 46년 만에 ‘무음 sudo 비밀번호 입력’ 종료 - https://news.hada.io/topic?id=27726\n[^19]: Google 검색, AI로 뉴스 헤드라인을 교체하기 시작 - https://news.hada.io/topic?id=27725\n[^20]: 디자인 프로세스는 죽지 않았다, 압축되었을 뿐 - https://news.hada.io/topic?id=27724\n[^21]: 아동 보호를 인터넷 접근 통제로 바꾸지 말라 - https://news.hada.io/topic?id=27723\n[^22]: 시간이 필요한 것들 - https://news.hada.io/topic?id=27722\n[^23]: 인터넷 아카이브 차단은 AI를 막지 못하지만 웹의 역사 기록을 지워버림 - https://news.hada.io/topic?id=27721\n[^24]: IDE의 죽음? - https://news.hada.io/topic?id=27720\n[^25]: onecli - AI 에이전트용 시크릿 게이트웨이 - https://news.hada.io/topic?id=27719\n[^26]: 생각 — 빠르게, 느리게, 그리고 인공지능으로: AI가 인간의 사고 방식을 어떻게 재구성하고 있는가 - https://news.hada.io/topic?id=27718\n[^27]: TI-82/83/83+ 계산기용 Drugwars (2011) - https://news.hada.io/topic?id=27717\n[^28]: The Necessity of Being | An essay beyond the simulation. - https://simontlbt.substack.com/p/the-necessity-of-being\n[^29]: The First Time I Saw a Calculator: On Modernity and Newness - https://peterhimmelman.substack.com/p/the-first-time-i-saw-a-calculator\n[^30]: The Diminished Art of Coding - https://nolanlawson.com/2026/03/22/the-diminished-art-of-coding/\n[^31]: AI DevOps Actions: 9 GitHub Actions for CI/CD in AI-Native Repos - https://github.com/ollieb89/ai-devops-actions\n[^32]: WTDW Your Innovation Fails? - https://www.brettmacfarlane.com/blog/2026/failure\n[^33]: Iran war energy crisis is a renewable energy wake-up call - https://apnews.com/article/middle-east-wars-renewable-energy-asia-4b5fe0693ce5816472c905db85f7da6e\n[^34]: The Tale of My Retrocomputing Infrastructure - https://plbrault.com/blog-posts/the-tale-of-my-retrocomputing-infrastructure/\n[^35]: Show HN: Kitty.cards – Create Apple Wallet cards online (no login) - https://kitty.cards/\n[^36]: O2Fail – What You Need to Know About Mobile Phone Content Control (2010) - https://shkspr.mobi/blog/2011/03/o2fail-what-you-need-to-know-about-mobile-phone-content-control/\n[^37]: Kash Patel's Nike Shoes Weren't Customized by Nike - https://www.yellopolitics.com/p/kash-patels-garish-custom-shoes-werent\n[^38]: Fun crafts done by AI agents – humans subscribe to read - https://crafthunt.ai/\n[^39]: FAA Ends Use of 'See and Avoid' for Helicopters Near Busy Airports - https://www.nytimes.com/2026/03/18/us/politics/faa-visual-separation-policy.html\n[^40]: Talking with Robin Brooks - https://paulkrugman.substack.com/p/talking-with-robin-brooks\n[^41]: GitHub – DrBradStanfield/Roadmap - https://github.com/DrBradStanfield/roadmap\n[^42]: Build knowledge agents without embeddings - https://vercel.com/blog/build-knowledge-agents-without-embeddings\n[^43]: AI's impact on private equity – based on AI deep research - https://ai-transformation.fyi/\n[^44]: Show HN: Playra - https://playra-app.vercel.app/\n[^45]: ClawMem - https://github.com/yoloshii/ClawMem\n[^46]: Alpha release: HunterPrey, a persistent SSH PvP world - https://hunterprey.com/\n[^47]: Show HN: Association rule mining on 21.6M poker hands - https://pattern.poker\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **Visual Studio Code 1.113 **\n   - 출처: Visual Studio Code - Code Editing. Redefined.\n   - 링크: https://code.visualstudio.com/updates/v1_113\n\n2. **Grafeo – Rust로 구축된 빠르고 경량의 임베디드 그래프 데이터베이스**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27745\n\n3. **Floci – 무료 오픈소스 로컬 AWS 에뮬레이터**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27744\n\n4. **macOS Tahoe의 메뉴 아이콘 숨기기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27743\n\n5. **파리 시장, 앤 이달고의 교통 개혁이 만든 도시의 변화와 논란**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27741\n\n6. **오리건 학교 휴대전화 사용 금지: ‘몰입하는 학생들, 즐거운 교사들’**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27740\n\n7. **Gemini + Claude 병렬 리뷰 파이프라인으로 블로그 품질 자동 검증하기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27739\n\n8. **Tooscut - 브라우저에서 WebGPU와 WASM으로 구현된 전문 영상 편집기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27738\n\n9. **월 15만원짜리 Claude Code가 바꾼 아이디어-실행 사이클**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27736\n\n10. **Show GN: MonoPix - AI가 만든 가짜 픽셀아트를 진짜 픽셀아트로 복원**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27735\n\n11. **Show GN: Thask – 프로젝트 의존성을 노드 그래프로 시각화하고 AI 에이전트가 조회/수정 가능**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27734\n\n12. **404 Deno CEO not found**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27733\n\n13. **SaaS의 미래는 Agentic**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27732\n\n14. **메타의 1,600개 언어용 Omnilingual MT**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27731\n\n15. **중국의 오픈클로 열풍에 대하여**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27730\n\n16. **Show GN: vvrite — 오픈소스 macOS 온디바이스 AI 음성 타이핑 앱**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27728\n\n17. **Tinybox – 120B 파라미터를 지원하는 오프라인 AI 머신**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27727\n\n18. **Ubuntu 26.04, 46년 만에 ‘무음 sudo 비밀번호 입력’ 종료**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27726\n\n19. **Google 검색, AI로 뉴스 헤드라인을 교체하기 시작**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27725\n\n20. **디자인 프로세스는 죽지 않았다, 압축되었을 뿐**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27724\n\n21. **아동 보호를 인터넷 접근 통제로 바꾸지 말라**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27723\n\n22. **시간이 필요한 것들**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27722\n\n23. **인터넷 아카이브 차단은 AI를 막지 못하지만 웹의 역사 기록을 지워버림**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27721\n\n24. **IDE의 죽음?**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27720\n\n25. **onecli - AI 에이전트용 시크릿 게이트웨이**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27719\n\n26. **생각 — 빠르게, 느리게, 그리고 인공지능으로: AI가 인간의 사고 방식을 어떻게 재구성하고 있는가**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27718\n\n27. **TI-82/83/83+ 계산기용 Drugwars (2011)**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27717\n\n28. **The Necessity of Being | An essay beyond the simulation.**\n   - 출처: Hacker News\n   - 링크: https://simontlbt.substack.com/p/the-necessity-of-being\n\n29. **The First Time I Saw a Calculator: On Modernity and Newness**\n   - 출처: Hacker News\n   - 링크: https://peterhimmelman.substack.com/p/the-first-time-i-saw-a-calculator\n\n30. **The Diminished Art of Coding**\n   - 출처: Hacker News\n   - 링크: https://nolanlawson.com/2026/03/22/the-diminished-art-of-coding/\n\n31. **AI DevOps Actions: 9 GitHub Actions for CI/CD in AI-Native Repos**\n   - 출처: Hacker News\n   - 링크: https://github.com/ollieb89/ai-devops-actions\n\n32. **WTDW Your Innovation Fails?**\n   - 출처: Hacker News\n   - 링크: https://www.brettmacfarlane.com/blog/2026/failure\n\n33. **Iran war energy crisis is a renewable energy wake-up call**\n   - 출처: Hacker News\n   - 링크: https://apnews.com/article/middle-east-wars-renewable-energy-asia-4b5fe0693ce5816472c905db85f7da6e\n\n34. **The Tale of My Retrocomputing Infrastructure**\n   - 출처: Hacker News\n   - 링크: https://plbrault.com/blog-posts/the-tale-of-my-retrocomputing-infrastructure/\n\n35. **Show HN: Kitty.cards – Create Apple Wallet cards online (no login)**\n   - 출처: Hacker News\n   - 링크: https://kitty.cards/\n\n36. **O2Fail – What You Need to Know About Mobile Phone Content Control (2010)**\n   - 출처: Hacker News\n   - 링크: https://shkspr.mobi/blog/2011/03/o2fail-what-you-need-to-know-about-mobile-phone-content-control/\n\n37. **Kash Patel's Nike Shoes Weren't Customized by Nike**\n   - 출처: Hacker News\n   - 링크: https://www.yellopolitics.com/p/kash-patels-garish-custom-shoes-werent\n\n38. **Fun crafts done by AI agents – humans subscribe to read**\n   - 출처: Hacker News\n   - 링크: https://crafthunt.ai/\n\n39. **FAA Ends Use of 'See and Avoid' for Helicopters Near Busy Airports**\n   - 출처: Hacker News\n   - 링크: https://www.nytimes.com/2026/03/18/us/politics/faa-visual-separation-policy.html\n\n40. **Talking with Robin Brooks**\n   - 출처: Hacker News\n   - 링크: https://paulkrugman.substack.com/p/talking-with-robin-brooks\n\n41. **GitHub – DrBradStanfield/Roadmap**\n   - 출처: Hacker News\n   - 링크: https://github.com/DrBradStanfield/roadmap\n\n42. **Build knowledge agents without embeddings**\n   - 출처: Hacker News\n   - 링크: https://vercel.com/blog/build-knowledge-agents-without-embeddings\n\n43. **AI's impact on private equity – based on AI deep research**\n   - 출처: Hacker News\n   - 링크: https://ai-transformation.fyi/\n\n44. **Show HN: Playra**\n   - 출처: Hacker News\n   - 링크: https://playra-app.vercel.app/\n\n45. **ClawMem**\n   - 출처: Hacker News\n   - 링크: https://github.com/yoloshii/ClawMem\n\n46. **Alpha release: HunterPrey, a persistent SSH PvP world**\n   - 출처: Hacker News\n   - 링크: https://hunterprey.com/\n\n47. **Show HN: Association rule mining on 21.6M poker hands**\n   - 출처: Hacker News\n   - 링크: https://pattern.poker\n\n\n",
+  "articles": [
+    {
+      "title": "Visual Studio Code 1.113 ",
+      "link": "https://code.visualstudio.com/updates/v1_113",
+      "source": "Visual Studio Code - Code Editing. Redefined.",
+      "category": "tech",
+      "publishedAt": "2026-03-25T17:00:00Z",
+      "description": "\n      \u003cp\u003eLearn what's new in Visual Studio Code 1.113 (Insiders)\u003c/p\u003e\n      \u003cp\u003e\u003ca href=\"https://code.visualstudio.com/updates/v1_113\"\u003eRead the full article\u003c/a\u003e\u003c/p\u003e\n    "
+    },
+    {
+      "title": "Grafeo – Rust로 구축된 빠르고 경량의 임베디드 그래프 데이터베이스",
+      "link": "https://news.hada.io/topic?id=27745",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-23T05:33:20+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eRust로 개발된 \u003cstrong\u003e고성능 그래프 데이터베이스\u003c/strong\u003e로, 임베디드 및 서버 모드 모두에서 작동하며 낮은 메모리 사용량을 유지\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eLabeled Property Graph(LPG)\u003c/strong\u003e 와 \u003cstrong\u003eRDF 트리플\u003c/strong\u003e 모델을 모두 지원해 소셜 네트워크부터 시맨틱 웹까지 폭넓은 활용 가능\u003c/li\u003e\n\u003cl...\u003c/p\u003e"
+    },
+    {
+      "title": "Floci – 무료 오픈소스 로컬 AWS 에뮬레이터",
+      "link": "https://news.hada.io/topic?id=27744",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-23T02:33:06+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eFloci\u003c/strong\u003e는 계정 등록이나 인증 없이 바로 실행 가능한 \u003cstrong\u003e무료 오픈소스 AWS 로컬 에뮬레이터\u003c/strong\u003e로, 단일 명령으로 구동되는 경량 구조\u003c/li\u003e\n\u003cli\u003eLocalStack 커뮤니티 에디션의 \u003cstrong\u003e2026년 서비스 종료\u003c/strong\u003e 이후를 대비한 \u003cstrong\u003e제한 없는 대안\u003c/strong\u003e으로, \u003cstrong\u003eM...\u003c/p\u003e"
+    },
+    {
+      "title": "macOS Tahoe의 메뉴 아이콘 숨기기",
+      "link": "https://news.hada.io/topic?id=27743",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-23T01:32:55+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003emacOS \u003cstrong\u003eTahoe 버전에서 메뉴에 새 아이콘이 추가되며 디자인 논란\u003c/strong\u003e이 발생\u003c/li\u003e\n\u003cli\u003e일부 아이콘의 \u003cstrong\u003e의미 불명확성과 일관성 부족\u003c/strong\u003e으로 메뉴 탐색이 어려워졌음\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eSteve Troughton-Smith\u003c/strong\u003e가 메뉴 아이콘을 숨길 수 있는 \u003cstrong\u003e터미널 명령어\u003c/strong\u003e...\u003c/p\u003e"
+    },
+    {
+      "title": "파리 시장, 앤 이달고의 교통 개혁이 만든 도시의 변화와 논란",
+      "link": "https://news.hada.io/topic?id=27741",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-23T00:37:32+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e파리는 \u003cstrong\u003e자동차 중심 도시에서 보행자 중심 도시\u003c/strong\u003e로 전환되며, 주요 도로와 광장이 차량 통행 금지 구역으로 바뀜\u003c/li\u003e\n\u003cli\u003e대규모 \u003cstrong\u003e자전거 도로 확충\u003c/strong\u003e과 센강 정화 사업으로 도시 환경이 개선되고, 시민의 자전거 이용률이 크게 증가\u003c/li\u003e\n\u003cli\u003e반면 \u003cstrong\u003e교통 체증과 버스 이...\u003c/p\u003e"
+    },
+    {
+      "title": "오리건 학교 휴대전화 사용 금지: ‘몰입하는 학생들, 즐거운 교사들’",
+      "link": "https://news.hada.io/topic?id=27740",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-23T00:34:31+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e오리건 주정부가 \u003cstrong\u003e공립학교 내 학생 휴대전화 사용을 전면 금지\u003c/strong\u003e한 이후, 교사와 학생 모두 \u003cstrong\u003e수업 집중도와 교실 분위기 개선\u003c/strong\u003e을 체감\u003c/li\u003e\n\u003cli\u003e교사들은 학생 간 \u003cstrong\u003e대화와 협력 증가\u003c/strong\u003e, 수업 참여도 향상으로 \u003cstrong\u003e교직 만족도 회복\u003c/strong\u003e을 언급\u003c/li\u003e\n\u003cli\u003e...\u003c/p\u003e"
+    },
+    {
+      "title": "Gemini + Claude 병렬 리뷰 파이프라인으로 블로그 품질 자동 검증하기",
+      "link": "https://news.hada.io/topic?id=27739",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-22T21:54:26+09:00",
+      "description": "\u003cp\u003e블로그 검수를 AI 5명한테 맡겼더니 실제로 잡아냈습니다\u003c/p\u003e\n\u003cp\u003e글 쓰고 나서 직접 퇴고하는 게 가장 힘들었습니다. AI가 뽑아낸 초안을 라인 단위로 읽고 고치는 데 매번 오랜시간 걸렸습니다.\u003cbr /\u003e\n그래서 직접 AI한테 AI를 검수시키는 파이프라인을 만들어봤습니다.\u003c/p\u003e\n\u003cp\u003e** 구조는 단순하게 잡았습니다 **...\u003c/p\u003e"
+    },
+    {
+      "title": "Tooscut - 브라우저에서 WebGPU와 WASM으로 구현된 전문 영상 편집기",
+      "link": "https://news.hada.io/topic?id=27738",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-22T21:33:22+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e브라우저에서 실행되는 \u003cstrong\u003e전문 영상 편집기\u003c/strong\u003e로, 설치 없이 GPU 가속과 실시간 미리보기를 지원\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eWebGPU와 Rust/WASM\u003c/strong\u003e 기반 합성 엔진을 통해 네이티브 수준의 성능을 제공\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e멀티 트랙 타임라인\u003c/strong\u003e, \u003cstrong\u003e크로스 트랜지션\u003c/strong\u003e, \u003cstrong\u003e...\u003c/p\u003e"
+    },
+    {
+      "title": "월 15만원짜리 Claude Code가 바꾼 아이디어-실행 사이클",
+      "link": "https://news.hada.io/topic?id=27736",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-22T20:01:45+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eClaude Code\u003c/strong\u003e 월 구독 후 3D 그래픽, RAG, 뉴스레터 자동화 등을 사전 지식 없이 몇 시간 만에 구현하는 경험을 함. 코드를 한 줄도 들여다보지 않아도 \u0026quot;돌아가는\u0026quot; 수준을 넘어, 하루 종일 잡고 있어도 \u003cstrong\u003e할당량의 1/3도 못 쓸\u003c/strong\u003e 만큼 여유가 있음\u003c/li\u003e\n\u003cli\u003e\u0026quot;아이...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: MonoPix - AI가 만든 가짜 픽셀아트를 진짜 픽셀아트로 복원",
+      "link": "https://news.hada.io/topic?id=27735",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-22T14:50:08+09:00",
+      "description": "\u003cp\u003eAI가 만든 픽셀아트는 확대해보면 대부분 “진짜 픽셀아트”가 아닙니다.\u003cbr /\u003e\n경계가 흐릿하고, 그리드가 어긋나고, 한 칸 안에 색이 섞여 있습니다.\u003c/p\u003e\n\u003cp\u003e그래서 이런 이미지를 실제 픽셀 그리드로 다시 맞춰주는 툴을 만들었습니다.\u003c/p\u003e\n\u003cp\u003e사용해보시고 편하게 피드백 부탁드립니다.\u003c/p\u003e\n\u003cp\u003e데모: \u003ca href=\"ht"
+    },
+    {
+      "title": "Show GN: Thask – 프로젝트 의존성을 노드 그래프로 시각화하고 AI 에이전트가 조회/수정 가능",
+      "link": "https://news.hada.io/topic?id=27734",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-22T14:05:55+09:00",
+      "description": "\u003cp\u003e프로젝트의 기능, 태스크, 버그를 노드로, 의존관계를 엣지로 시각화하는 셀프 호스팅 도구입니다.\u003c/p\u003e\n\u003cp\u003e만들게 된 이유:\u003cbr /\u003e\nAI 코딩 도구(Claude Code, Cursor)로 코드를 빠르게 만들 수 있게 됐는데,\u003cbr /\u003e\n프로젝트가 커지면 \u0026quot;이 API 바꾸면 어디가 깨지는지\u0026quot;를 추적하기 어렵습니다.\u003cbr /\u003e\n스프레"
+    },
+    {
+      "title": "404 Deno CEO not found",
+      "link": "https://news.hada.io/topic?id=27733",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-22T12:39:49+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e최근 \u003cstrong\u003eDeno의 대규모 해고와 인력 이탈\u003c/strong\u003e이 이어지며, 공식 웹사이트 일부가 404 오류를 반환하는 등 혼란이 드러남\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e490만 달러 시드 투자와 2,100만 달러 시리즈 A 자금\u003c/strong\u003e에도 불구하고 수익화에 실패했고, \u003cstrong\u003eDeno Deploy\u003c/strong\u003e는 성능 문제로 사용자 관심을...\u003c/p\u003e"
+    },
+    {
+      "title": "SaaS의 미래는 Agentic",
+      "link": "https://news.hada.io/topic?id=27732",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-22T12:38:27+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e기존 SaaS의 한계는 기능 부족이 아니라 \u003cstrong\u003e사용자가 직접 조작해야 하는 운용 부담\u003c/strong\u003e에 있으며, 다음 세대는 이를 줄이는 \u003cstrong\u003e‘상호작용 세금’ 제거\u003c/strong\u003e에 초점\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eAI 내장형 SaaS\u003c/strong\u003e를 넘어, 소프트웨어가 사용자를 대신해 행동하는 \u003cstrong\u003e에이전트 중심 구조...\u003c/p\u003e"
+    },
+    {
+      "title": "메타의 1,600개 언어용 Omnilingual MT",
+      "link": "https://news.hada.io/topic?id=27731",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-22T12:37:25+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eMeta AI\u003c/strong\u003e가 개발한 \u003cstrong\u003eOmnilingual Machine Translation(OMT)\u003c/strong\u003e 은 1,600개 이상의 언어를 지원하는 최초의 기계번역 시스템으로, 기존 NLLB 프로젝트의 200개 언어 한계를 넘어섬\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e공개 코퍼스·역번역·데이터 마이닝\u003c/strong\u003e을 결합해 저자원 및 소수 언어까지...\u003c/p\u003e"
+    },
+    {
+      "title": "중국의 오픈클로 열풍에 대하여",
+      "link": "https://news.hada.io/topic?id=27730",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-22T11:35:12+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e요즘 미국, 일본, 중국, 유럽 모두 openclaw를 시작으로 하는 에이전트 이야기가 대다수 입니다.\u003c/li\u003e\n\u003cli\u003e국내에서도 개발자 커뮤니티나 인공지능 커뮤니티에서는 다소 뜨거운 주제이나 뭔가 다른 곳 처럼 대중화는 안되고 있는 인상이 강합니다.\u003c/li\u003e\n\u003cli\u003e이 차이는 어디서 오는 걸까요? 이런 아쉬움에 몇자 ...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: vvrite — 오픈소스 macOS 온디바이스 AI 음성 타이핑 앱",
+      "link": "https://news.hada.io/topic?id=27728",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-22T10:48:59+09:00",
+      "description": "\u003cp\u003e안녕하세요, 저는 원래 superwhisper나 spokenly 같은 기존 음성 타이핑 도구들과 8bitdo micro 게임패드를 연결해서 사용하고 있었습니다. 근데 묘하게 네트워크 레이턴시가 거슬리더라구요.\u003c/p\u003e\n\u003cp\u003e그래서 로컬 모델을 계속 테스트해보고 있었는데, 이번에 Qwen3-ASR 모델을 써보고 이거다 싶었습니다. 빠릿빠릿하면"
+    },
+    {
+      "title": "Tinybox – 120B 파라미터를 지원하는 오프라인 AI 머신",
+      "link": "https://news.hada.io/topic?id=27727",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-22T10:37:55+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003etinygrad\u003c/strong\u003e는 단순성과 성능을 결합한 \u003cstrong\u003e신경망 프레임워크\u003c/strong\u003e로, 최소 연산 구조로 복잡한 모델을 구현\u003c/li\u003e\n\u003cli\u003e이를 기반으로 한 \u003cstrong\u003etinybox\u003c/strong\u003e는 딥러닝 학습과 추론을 위한 \u003cstrong\u003e고성능 오프라인 AI 컴퓨터\u003c/strong\u003e로, red·green·exa 세 가지 모델로 제공됨...\u003c/p\u003e"
+    },
+    {
+      "title": "Ubuntu 26.04, 46년 만에 ‘무음 sudo 비밀번호 입력’ 종료",
+      "link": "https://news.hada.io/topic?id=27726",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-22T10:34:55+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eUbuntu 26.04 LTS에서는 \u003ccode\u003esudo\u003c/code\u003e 명령 실행 시 \u003cstrong\u003e비밀번호 입력마다 별표(*)가 표시되는 시각적 피드백\u003c/strong\u003e이 기본 활성화됨\u003c/li\u003e\n\u003cli\u003e이 기능은 \u003cstrong\u003eRust로 재작성된 sudo-rs\u003c/strong\u003e 도입으로 가능해졌으며, Canonical이 Ubuntu 25.10부터 이를 기본 sudo로 채택함\u003c/li\u003e\n\u003cli\u003e일부 ...\u003c/p\u003e"
+    },
+    {
+      "title": "Google 검색, AI로 뉴스 헤드라인을 교체하기 시작",
+      "link": "https://news.hada.io/topic?id=27725",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-22T10:26:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eGoogle이 검색 결과에서 언론사가 작성한 \u003cstrong\u003e뉴스 헤드라인을 AI가 생성한 제목으로 교체\u003c/strong\u003e하는 실험을 전통적인 \u0026quot;10개의 파란 링크\u0026quot; 검색에서도 시작\u003c/li\u003e\n\u003cli\u003eThe Verge는 자사가 작성하지 않은 헤드라인이 Google 검색 결과에 표시되는 사례를 다수 발견했으며, 일부는 \u003cstrong\u003e원래 ...\u003c/p\u003e"
+    },
+    {
+      "title": "디자인 프로세스는 죽지 않았다, 압축되었을 뿐",
+      "link": "https://news.hada.io/topic?id=27724",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-22T09:47:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eAI가 디자인 작업 속도를 높이면서 \u0026quot;프로세스를 버려라\u0026quot;는 주장이 확산되고 있지만, 이는 숙련된 디자이너의 작업 방식을 \u003cstrong\u003e오해한 결과\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e숙련된 디자이너가 \u0026quot;그냥 만들기 시작했다\u0026quot;고 말할 때, 실제로는 수년간 축적된 경험을 통해 \u003cstrong\u003e프로세스를 내면화하고...\u003c/p\u003e"
+    },
+    {
+      "title": "아동 보호를 인터넷 접근 통제로 바꾸지 말라",
+      "link": "https://news.hada.io/topic?id=27723",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-22T09:41:34+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e전 세계에서 확산 중인 \u003cstrong\u003e연령 확인 제도\u003c/strong\u003e가 단순한 아동 보호를 넘어 \u003cstrong\u003e인터넷 접근 구조 자체를 재편\u003c/strong\u003e하고 있음\u003c/li\u003e\n\u003cli\u003e이 제도는 ‘접근 전 신원 증명’이라는 \u003cstrong\u003e접근 통제 아키텍처\u003c/strong\u003e로 작동하며, 일부는 \u003cstrong\u003e운영체제 수준의 신원 계층\u003c/strong\u003e으로 확장...\u003c/p\u003e"
+    },
+    {
+      "title": "시간이 필요한 것들",
+      "link": "https://news.hada.io/topic?id=27722",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-22T09:38:34+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e성숙과 가치\u003c/strong\u003e는 빠른 성취가 아니라 오랜 시간의 축적에서 생김\u003c/li\u003e\n\u003cli\u003e나무의 성장, 오래된 부동산, 장인 제품처럼 \u003cstrong\u003e시간이 만든 자산\u003c/strong\u003e은 돈으로 대체 불가\u003c/li\u003e\n\u003cli\u003e현대의 \u003cstrong\u003e속도 중심 문화\u003c/strong\u003e는 개발과 창업에서도 퍼져 있으나, 진정한 성과는 \u003cstrong\u003e지속...\u003c/p\u003e"
+    },
+    {
+      "title": "인터넷 아카이브 차단은 AI를 막지 못하지만 웹의 역사 기록을 지워버림",
+      "link": "https://news.hada.io/topic?id=27721",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-22T09:35:34+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e1990년대 중반부터 웹과 신문을 보존해온 \u003cstrong\u003e인터넷 아카이브\u003c/strong\u003e는 Wayback Machine을 통해 1조 개 이상의 웹페이지를 저장하고 있음\u003c/li\u003e\n\u003cli\u003e최근 \u003cstrong\u003e뉴욕타임스와 가디언\u003c/strong\u003e 등 주요 언론이 AI 스크래핑 우려로 아카이브의 크롤링을 차단하기 시작함\u003c/li\u003e\n\u003cli\u003e이러한 조치는 \u003cstrong\u003e...\u003c/p\u003e"
+    },
+    {
+      "title": "IDE의 죽음?",
+      "link": "https://news.hada.io/topic?id=27720",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-22T09:32:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e개발자의 작업 중심이 IDE의 라인 단위 코드 편집에서 \u003cstrong\u003e에이전트 오케스트레이션 및 감독 인터페이스\u003c/strong\u003e로 이동하고 있으며, Cursor Glass, Claude Code Web, GitHub Copilot Agent 등 다양한 도구가 이 전환을 가속화하는 중\u003c/li\u003e\n\u003cli\u003e새로운 개발 루프는 \u003cstrong\u003e\u0026quot;의도 명세 → 위임 → 관...\u003c/p\u003e"
+    },
+    {
+      "title": "onecli - AI 에이전트용 시크릿 게이트웨이",
+      "link": "https://news.hada.io/topic?id=27719",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-22T09:31:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eAI 에이전트와 외부 API 사이에 위치한 \u003cstrong\u003e보안 프록시 게이트웨이\u003c/strong\u003e로 API 키를 직접 노출하지 않고, 요청 시점에 \u003cstrong\u003e자동 주입\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e실제 키는 내부 \u003cstrong\u003eAES-256-GCM 암호화 저장소\u003c/strong\u003e에 보관\u003c/li\u003e\n\u003cli\u003eRust 기반 \u003cstrong\u003e고속 HTTP 게이트웨이\u003c/strong\u003e + Next.js...\u003c/p\u003e"
+    },
+    {
+      "title": "생각 — 빠르게, 느리게, 그리고 인공지능으로: AI가 인간의 사고 방식을 어떻게 재구성하고 있는가",
+      "link": "https://news.hada.io/topic?id=27718",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-22T09:06:57+09:00",
+      "description": "\u003ch2\u003eThinking—Fast, Slow, and Artificial\u003c/h2\u003e\n\u003ch4\u003eAI는 도구가 아니라 ‘세 번째 사고 시스템’이라는 연구\u003c/h4\u003e\n\u003cul\u003e\n\u003cli\u003e2026년 1월, 펜실베이니아대 와튼스쿨\n\u003cul\u003e\n\u003cli\u003eSteven D. Shaw (박사과정 연구자)\u003c/li\u003e\n\u003cli\u003eGideon Nave (마케팅/행동과학 교수)\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e인간 사고 모델을 System 1 / 2 → Sys...\u003c/p\u003e"
+    },
+    {
+      "title": "TI-82/83/83+ 계산기용 Drugwars (2011)",
+      "link": "https://news.hada.io/topic?id=27717",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-22T07:33:59+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e1980년대 IBM PC용 BASIC 게임을 기반으로 한 \u003cstrong\u003e거래 시뮬레이션 게임\u003c/strong\u003e으로, TI-82·83·83+ 계산기에서 \u003cstrong\u003eTI-BASIC\u003c/strong\u003e으로 실행되는 버전\u003c/li\u003e\n\u003cli\u003e플레이어는 여섯 도시를 이동하며 \u003cstrong\u003e마약을 사고팔고 빚을 갚으며 한 달간 최대 수익을 추구\u003c/strong\u003e, 무작위 사건과 경찰 추격...\u003c/p\u003e"
+    },
+    {
+      "title": "The Necessity of Being | An essay beyond the simulation.",
+      "link": "https://simontlbt.substack.com/p/the-necessity-of-being",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-22T22:07:59Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://simontlbt.substack.com/p/the-necessity-of-being\"\u003ehttps://simontlbt.substack.com/p/the-necessity-of-being\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47482730\"\u003ehttps://news.ycombinator.com/item?id=47482730\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The First Time I Saw a Calculator: On Modernity and Newness",
+      "link": "https://peterhimmelman.substack.com/p/the-first-time-i-saw-a-calculator",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-22T22:06:56Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://peterhimmelman.substack.com/p/the-first-time-i-saw-a-calculator\"\u003ehttps://peterhimmelman.substack.com/p/the-first-time-i-saw-a-calculator\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47482718\"\u003ehttps://news.ycombinator.com/item?id=47482718\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Diminished Art of Coding",
+      "link": "https://nolanlawson.com/2026/03/22/the-diminished-art-of-coding/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-22T22:06:41Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://nolanlawson.com/2026/03/22/the-diminished-art-of-coding/\"\u003ehttps://nolanlawson.com/2026/03/22/the-diminished-art-of-coding/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47482714\"\u003ehttps://news.ycombinator.com/item?id=47482714\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "AI DevOps Actions: 9 GitHub Actions for CI/CD in AI-Native Repos",
+      "link": "https://github.com/ollieb89/ai-devops-actions",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-22T22:06:13Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/ollieb89/ai-devops-actions\"\u003ehttps://github.com/ollieb89/ai-devops-actions\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47482709\"\u003ehttps://news.ycombinator.com/item?id=47482709\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "WTDW Your Innovation Fails?",
+      "link": "https://www.brettmacfarlane.com/blog/2026/failure",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-22T22:01:47Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.brettmacfarlane.com/blog/2026/failure\"\u003ehttps://www.brettmacfarlane.com/blog/2026/failure\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47482675\"\u003ehttps://news.ycombinator.com/item?id=47482675\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Iran war energy crisis is a renewable energy wake-up call",
+      "link": "https://apnews.com/article/middle-east-wars-renewable-energy-asia-4b5fe0693ce5816472c905db85f7da6e",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-22T22:01:03Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://apnews.com/article/middle-east-wars-renewable-energy-asia-4b5fe0693ce5816472c905db85f7da6e\"\u003ehttps://apnews.com/article/middle-east-wars-renewable-energy-asia-4b5fe0693ce5816472c905db85f7da6e\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47482667\"\u003ehttps://news.ycombinator.com/item?id=47482667\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Tale of My Retrocomputing Infrastructure",
+      "link": "https://plbrault.com/blog-posts/the-tale-of-my-retrocomputing-infrastructure/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-22T22:00:56Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://plbrault.com/blog-posts/the-tale-of-my-retrocomputing-infrastructure/\"\u003ehttps://plbrault.com/blog-posts/the-tale-of-my-retrocomputing-infrastructure/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47482664\"\u003ehttps://news.ycombinator.com/item?id=47482664\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Kitty.cards – Create Apple Wallet cards online (no login)",
+      "link": "https://kitty.cards/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-22T21:54:26Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://kitty.cards/\"\u003ehttps://kitty.cards/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47482603\"\u003ehttps://news.ycombinator.com/item?id=47482603\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "O2Fail – What You Need to Know About Mobile Phone Content Control (2010)",
+      "link": "https://shkspr.mobi/blog/2011/03/o2fail-what-you-need-to-know-about-mobile-phone-content-control/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-22T21:54:24Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://shkspr.mobi/blog/2011/03/o2fail-what-you-need-to-know-about-mobile-phone-content-control/\"\u003ehttps://shkspr.mobi/blog/2011/03/o2fail-what-you-need-to-know-about-mobile-phone-content-control/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47482602\"\u003ehttps://news.ycombinator.com/item?id=47482602\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Kash Patel's Nike Shoes Weren't Customized by Nike",
+      "link": "https://www.yellopolitics.com/p/kash-patels-garish-custom-shoes-werent",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-22T21:52:46Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.yellopolitics.com/p/kash-patels-garish-custom-shoes-werent\"\u003ehttps://www.yellopolitics.com/p/kash-patels-garish-custom-shoes-werent\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47482585\"\u003ehttps://news.ycombinator.com/item?id=47482585\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Fun crafts done by AI agents – humans subscribe to read",
+      "link": "https://crafthunt.ai/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-22T21:49:13Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://crafthunt.ai/\"\u003ehttps://crafthunt.ai/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47482539\"\u003ehttps://news.ycombinator.com/item?id=47482539\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 2\u003c/p\u003e\n"
+    },
+    {
+      "title": "FAA Ends Use of 'See and Avoid' for Helicopters Near Busy Airports",
+      "link": "https://www.nytimes.com/2026/03/18/us/politics/faa-visual-separation-policy.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-22T21:47:04Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nytimes.com/2026/03/18/us/politics/faa-visual-separation-policy.html\"\u003ehttps://www.nytimes.com/2026/03/18/us/politics/faa-visual-separation-policy.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47482522\"\u003ehttps://news.ycombinator.com/item?id=47482522\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Talking with Robin Brooks",
+      "link": "https://paulkrugman.substack.com/p/talking-with-robin-brooks",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-22T21:45:57Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://paulkrugman.substack.com/p/talking-with-robin-brooks\"\u003ehttps://paulkrugman.substack.com/p/talking-with-robin-brooks\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47482513\"\u003ehttps://news.ycombinator.com/item?id=47482513\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "GitHub – DrBradStanfield/Roadmap",
+      "link": "https://github.com/DrBradStanfield/roadmap",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-22T21:42:30Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/DrBradStanfield/roadmap\"\u003ehttps://github.com/DrBradStanfield/roadmap\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47482490\"\u003ehttps://news.ycombinator.com/item?id=47482490\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Build knowledge agents without embeddings",
+      "link": "https://vercel.com/blog/build-knowledge-agents-without-embeddings",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-22T21:41:19Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://vercel.com/blog/build-knowledge-agents-without-embeddings\"\u003ehttps://vercel.com/blog/build-knowledge-agents-without-embeddings\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47482477\"\u003ehttps://news.ycombinator.com/item?id=47482477\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "AI's impact on private equity – based on AI deep research",
+      "link": "https://ai-transformation.fyi/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-22T21:41:06Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://ai-transformation.fyi/\"\u003ehttps://ai-transformation.fyi/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47482473\"\u003ehttps://news.ycombinator.com/item?id=47482473\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Playra",
+      "link": "https://playra-app.vercel.app/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-22T21:38:28Z",
+      "description": "\n\u003cp\u003eAn e-commerce platform for every creator\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47482450\"\u003ehttps://news.ycombinator.com/item?id=47482450\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "ClawMem",
+      "link": "https://github.com/yoloshii/ClawMem",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-22T21:37:11Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/yoloshii/ClawMem\"\u003ehttps://github.com/yoloshii/ClawMem\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47482432\"\u003ehttps://news.ycombinator.com/item?id=47482432\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Alpha release: HunterPrey, a persistent SSH PvP world",
+      "link": "https://hunterprey.com/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-22T21:36:36Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://hunterprey.com/\"\u003ehttps://hunterprey.com/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47482425\"\u003ehttps://news.ycombinator.com/item?id=47482425\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Association rule mining on 21.6M poker hands",
+      "link": "https://pattern.poker",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-22T21:34:23Z",
+      "description": "\n\u003cp\u003eWe built this as a side project that grew out of something completely different.\u003cp\u003eI work on ET-Miner [\u003ca href=\"https://zenodo.org/records/18674353\" rel=\"nofollow\"\u003ehttps://zenodo.org/records/18674353\u003c/a\u003e], which is  a GPU-accelerated frequent itemset mining pipeline based on the infamous apriori-algorithm. We came with the idea to reformulate the algorithm into a fully vectorized implementation, using a boolean transaction matrix representation,CUDA kernels + Rust group builder for index construction to speed up computations. The original use case was mining protein structure patterns from AlphaFold, where we processed 109.2M proteins and extracted 16.8 billion frequent itemsets for protein structural motif discovery. At some point I realized the same pipeline could be pointed at any domain with structured categorical data, so I pointed it at poker, one of my long-standing hobbies.\u003cp\u003eWhat we learned: Most of the \"surprising\" patterns the mining surfaces are things good players already know intuitively: positional advantages, aggression frequency correlations, stack-to-pot ratios. But seeing them as statistically validated itemsets with exact support counts is different from folk wisdom. A few patterns around multi-way pot dynamics and specific board texture interactions were genuinely non-obvious to the poker players we showed them to. Modern GTO solvers have no solutions for these multi-way pot scenarios. Oh, controversial, but donk-betting is a ~40% winner's exclusive rule\u003cp\u003eData is completely free to exlore. In total 1.4m rules have been mined from the PHH dataset published here: \u003ca href=\"https://zenodo.org/records/13997158\" rel=\"nofollow\"\u003ehttps://zenodo.org/records/13997158\u003c/a\u003e.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47482410\"\u003ehttps://news.ycombinator.com/item?id=47482410\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    }
+  ],
+  "generatedAt": "2026-03-23T07:11:29.223463786+09:00"
+}
