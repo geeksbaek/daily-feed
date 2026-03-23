@@ -1,0 +1,578 @@
+{
+  "date": "2026-03-24",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2026년 3월 24일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** OpenAI의 파격적인 자본 유치와 애플 WWDC 2026 발표 등, 빅테크 기업들의 엔터프라이즈 및 생태계 장악을 위한 인프라·AI 경쟁이 한층 더 치열해지고 있습니다.\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### OpenAI, 엔터프라이즈 AI 시장 장악 위해 PEF에 '17.5% 수익 보장' 파격 제안\nOpenAI가 TPG, Bain Capital 등 대형 사모펀드(PEF)를 대상으로 100억 달러(약 13조 원) 규모의 조인트 벤처(JV) 투자를 유치하며, 우선주 투자에서는 이례적인 '**최소 17.5% 수익 보장**'이라는 파격적인 조건을 내걸었습니다. 이는 경쟁사인 Anthropic과의 엔터프라이즈 시장 점유율 확보 경쟁에서 우위를 점하기 위한 공격적인 승부수입니다. PEF가 보유한 수백 개의 포트폴리오 기업에 자사의 AI 모델을 일괄 도입하여 단기간에 B2B 생태계를 장악하려는 전략으로 풀이됩니다.\n\u003e **Key Point:** 막대한 자본이 필요한 AI 인프라 구축과 B2B 시장 선점을 위해, OpenAI가 전례 없는 수익 보장 카드까지 꺼내들며 자본 시장의 룰을 흔들고 있습니다. [^41] [^42]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. Apple WWDC 2026, 6월 8일 개최 확정\n- **What:** 애플이 연례 개발자 회의인 WWDC 2026을 6월 8일부터 12일까지 개최한다고 공식 발표했습니다.\n- **Why:** iOS 27, macOS 27 등 차세대 운영체제 공개와 함께, Google Gemini 모델 기반으로 구동되는 향상된 Siri 및 Apple Intelligence의 새로운 기능들을 선보일 예정입니다.\n- **Impact:** 작년의 'Liquid Glass' 디자인 개편을 다듬고 AI 통합을 고도화함으로써, 애플 생태계 내 사용자 경험이 한층 더 개인화되고 강력해질 것으로 전망됩니다. [^3] [^4]\n\n### 2. 미국 FCC, 국가 안보 이유로 외국산 라우터 전면 금지 추진\n- **What:** 미국 연방통신위원회(FCC)가 외국에서 제조된 소비자용 라우터를 'Covered List(규제 대상 목록)'에 추가하여 미국 내 판매를 사실상 금지했습니다.\n- **Why:** Volt Typhoon 등 외국산 네트워크 장비를 경유한 대규모 사이버 공격이 빈발함에 따라, 백악관 주도의 범부처 위원회가 이를 심각한 국가 안보 및 사이버 보안 위협으로 규정했기 때문입니다.\n- **Impact:** 미국 내 가정용 및 기업용 네트워크 인프라 장비 시장의 대대적인 공급망 재편이 불가피하며, 글로벌 통신 장비 제조사들에게 막대한 타격을 줄 것으로 예상됩니다. [^45] [^48]\n\n### 3. Cloudflare, 캐시 대신 코어를 선택한 'Gen 13' 서버 론칭\n- **What:** Cloudflare가 192코어 AMD EPYC Turin 9965 프로세서를 탑재한 차세대 'Gen 13' 서버를 전격 도입했습니다.\n- **Why:** 기존 C 기반 스택을 Rust 기반의 'FL2'로 재작성하면서 대용량 L3 캐시에 대한 의존도를 낮추고, 대신 코어 수에 비례해 선형적으로 확장되는 아키텍처를 완성했습니다.\n- **Impact:** 하드웨어와 소프트웨어의 완벽한 코디자인(Co-design)을 통해 지연 시간(Latency) 증가 없이 컴퓨팅 처리량을 2배 늘리고 전력 효율을 50% 개선하는 혁신을 이뤄냈습니다. [^66] [^67]\n\n### 4. Anthropic, 8만 1천 명의 목소리로 증명한 AI의 진짜 쓰임새\n- **What:** Anthropic이 무려 81,000명의 사용자를 대상으로 진행한 대규모 인터뷰 결과를 담은 \"81k Interviews\" 보고서를 공개했습니다.\n- **Why:** AI가 단순한 기술적 호기심을 넘어 실제 비즈니스와 일상 워크플로우에서 어떻게 가치를 창출하고 있는지 데이터로 입증하기 위함입니다.\n- **Impact:** 허상이나 과장광고(Hype)가 아닌, 실무자들이 체감하는 진짜 AI 유스케이스를 제시함으로써 향후 AI 프로덕트 개발의 실질적인 나침반 역할을 할 것입니다. [^10]\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **Visual Studio Code 1.113** | 최신 VS Code 업데이트 릴리스 [^1] |\n| **Tool** | **RTS LLM Benchmark** | 1대1 RTS 게임 환경을 활용하여 구축한 새로운 LLM 성능 벤치마크 [^6] |\n| **Tool** | **Stock Report Bot** | GitHub Actions와 Telegram을 활용한 개인용 증시 리포트 자동화 봇 오픈소스 [^8] |\n| **Tool** | **Domain-Driven AI App** | 도메인 지식을 기반으로 서비스를 구축하는 인간지능 주도형 개발 애플리케이션 [^9] |\n| **Tool** | **AI Babysitter** | Siri, Claude Code, Obsidian을 결합하여 만든 AI 베이비시터 프로젝트 [^15] |\n| **Tool** | **GPUtray** | 시스템 트레이에서 간편하게 GPU 상태를 모니터링할 수 있는 툴 [^16] |\n| **Tool** | **KakaoTalk Clone** | 카카오톡 대화 기록을 기반으로 특정 사람의 말투를 복제하는 서비스 [^20] |\n| **Tool** | **CausalImpact Python** | Google의 CausalImpact R 패키지를 Python으로 포팅한 라이브러리 (Rust 기반 Gibbs 샘플러 사용) [^22] |\n| **Tool** | **skills-cleaner** | 설치된 스킬들의 유사성을 비교하고 중복 기능을 식별해 불필요한 스킬을 제거하는 도구 [^25] |\n| **Paper** | **Flash-MoE** | 일반 노트북 환경에서 3,970억 파라미터 규모의 모델을 실행할 수 있게 해주는 연구 [^28] |\n| **Tool** | **gstack** | Claude Code를 활용하여 가상의 엔지니어링 팀을 구축하는 도구 [^30] |\n| **Tool** | **Project NOMAD** | 오프라인 환경에서도 끊김 없이 작동하는 지식 및 AI 서버 프로젝트 [^31] |\n| **Tool** | **Impeccable** | AI 하네스를 통해 디자인 작업의 완성도와 효율성을 높여주는 도구 [^36] |\n| **Resource** | **FFmpeg 101 (2024)** | 미디어 처리 도구 FFmpeg의 기초부터 활용까지 다루는 2024년 최신 가이드 [^40] |\n| **Paper** | **Vibe physics** | AI 대학원생의 관점에서 바라본 'Vibe physics'에 관한 Anthropic의 연구 [^52] |\n| **Resource** | **Claude Code Cheat Sheet** | 매일 자동 업데이트되는 출력 가능한 Claude Code 치트 시트 [^53] |\n| **Resource** | **AI Dev Tools Benchmark** | GitHub CLI, MCP, Tool Search, Code Mode의 성능과 차이점을 비교 분석한 벤치마크 [^55] |\n| **Resource** | **Ironwood TPUs Guide** | 개발자를 위한 Google Cloud Ironwood TPU 기반 대규모 모델 학습 가이드 [^71] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 아키텍처\n* **NixOS를 사랑하는 이유**: 선언적 환경 구성과 재현성으로 각광받는 NixOS의 장점 분석 [^7]\n* **롤러코스터 타이쿤의 최적화 기준**: 어셈블리어로 작성된 고전 명작 게임의 내부 구조와 최적화 기법 분석 [^11]\n* **코드의 죽음은 과장되었다**: AI 시대에도 여전히 코딩과 개발자의 역할이 중요하다는 업계의 공통된 목소리 (관련 기사 3건 병합) [^13] [^17] [^21]\n* **Windows 네이티브 앱 개발이 엉망인 이유**: 파편화된 프레임워크와 레거시 문제로 고통받는 윈도우 앱 생태계 비판 [^29]\n* **버전 관리의 미래**: Git을 넘어선 차세대 버전 관리 시스템의 발전 방향성 고찰 [^33]\n* **JavaScript 비대화의 세 가지 축**: 현대 웹 개발에서 JS 번들 사이즈가 기하급수적으로 커지는 근본 원인 3가지 [^34]\n* **Testing Swift's C interoperability**: Raylib 및 WASI 환경에서 Swift와 C 언어 간의 상호 운용성 테스트 결과 [^47]\n* **Sneaky Header Blocker Trick**: CSS를 활용해 교묘하게 헤더 블로커를 구현하는 웹 개발 트릭 [^54]\n* **Making a Language**: 자신만의 프로그래밍 언어를 바닥부터 설계하고 구현하는 과정 연재 [^56]\n\n#### 🤖 AI \u0026 데이터\n* **GitHub AI Security**: GitHub가 AI 기반 탐지 기능을 통해 애플리케이션 보안 커버리지를 대폭 확장 [^2]\n* **NVIDIA OpenShell**: 자율 AI 에이전트가 설계 단계부터 보안을 갖추도록 지원하는 NVIDIA의 새로운 프레임워크 [^5]\n* **Pinterest MCP Ecosystem**: Pinterest가 AI 에이전트를 위해 프로덕션 환경에 MCP(Model Context Protocol) 생태계를 구축한 방법 [^14]\n* **OpenClaw의 명암**: 겉보기엔 완벽해 보이지만 심각한 보안 취약점을 내포한 자율 에이전트 OpenClaw 분석 [^26]\n* **ChatGPT 5.2 한계**: 최신 모델인 ChatGPT 5.2조차 특정 독일어 단어(\"geschniegelt\")의 뉘앙스를 제대로 설명하지 못하는 사례 [^51]\n* **Anthropic for Science**: 과학 연구 발전을 위한 AI 활용을 다루는 Anthropic의 새로운 공식 블로그 론칭 [^59]\n* **Google NewFront 2026**: Google이 마케팅 플랫폼에 Gemini 모델의 이점을 도입하며 새로운 광고 생태계 발표 [^62]\n* **Creating with Sora Safely**: OpenAI가 동영상 생성 AI 'Sora'를 안전하게 활용하기 위한 가이드라인과 안전 조치 공개 [^68]\n* **Agent Authorization**: LangChain에서 소개하는 AI 에이전트 권한 부여(Authorization)의 두 가지 다른 접근 방식 [^70]\n\n#### 🛡️ 보안 \u0026 인프라\n* **GrapheneOS의 프라이버시**: 개인 정보 수집 없이 누구나 안전하게 사용할 수 있는 모바일 OS, GrapheneOS 조명 [^12]\n* **Cloudflare archive.today 차단 논란**: Cloudflare가 archive.today를 C\u0026C/Botnet으로 분류하여 1.1.1.2 DNS에서 접속이 차단된 이슈 [^32]\n* **$80M USR Stablecoin 해킹**: 해커가 8천만 달러 규모의 가짜 USR 스테이블코인을 발행해 ETH로 스왑한 대형 탈취 사건 [^43]\n* **인프라 건설 붐**: 데이터센터, 발전소, 공장 등 대규모 인프라 건설 시장의 호황과 사이클 분석 [^44]\n* **M-Trends 2026 Report**: 기업 사이버 보안 강화 방안과 최신 위협 동향을 담은 Google Cloud의 연례 보안 보고서 [^61]\n* **Chrome for Android Update**: 보안 패치와 성능 개선을 포함한 안드로이드용 Chrome 브라우저 최신 업데이트 [^64]\n* **Chrome Desktop Update**: 데스크톱 환경을 위한 Chrome 브라우저의 안정화 채널(Stable Channel) 업데이트 배포 [^65]\n\n#### 💼 비즈니스 \u0026 테크\n* **Xiaomi mimo-v2-pro**: 압도적인 가성비를 앞세워 시장을 공략하는 샤오미의 새로운 하드웨어 모델 [^23]\n* **PC Gamer의 RSS 리더 추천**: 37MB에 달하는 무거운 웹 기사 대신 가벼운 RSS 리더 사용을 권장하는 미디어의 역설 [^24]\n* **United 항공 헤드폰 규정**: 기내에서 헤드폰 사용을 거부하고 소음을 유발하는 승객을 퇴출할 수 있도록 한 United 항공의 새 규정 [^37]\n* **서구권 EV 후퇴의 위험성**: 서구 자동차 제조사들의 전기차 전환 지연이 결국 산업적 퇴보로 이어질 수 있다는 경고 [^38]\n* **AspireConf 2026**: .NET Aspire 생태계와 클라우드 네이티브 개발을 다루는 AspireConf 2026 컨퍼런스 개최 안내 [^49]\n* **Google Water Stewardship**: 모두를 위한 수자원 확보를 목표로 하는 Google의 2026년 지속가능성 투자 포트폴리오 [^63]\n* **LangChain at Google Cloud Next**: Google Cloud Next 2026 행사에 참여하여 AI 생태계 확장을 논의하는 LangChain [^69]\n\n#### 🌍 컬처 \u0026 사이언스\n* **세 가지 유형의 나쁜 매니저**: 조직 문화를 망치는 나쁜 관리자의 3가지 전형적인 특징과 대처법 [^18]\n* **여백 만들기**: 끊임없이 일하는 대신 '덜 하는 것(여백)'이 어떻게 더 큰 성취를 이끌어내는지에 대한 고찰 [^19]\n* **고객센터 직접 전화하기**: 자사 제품의 문제점(도그푸딩)을 깨닫기 위해 경영진이 직접 고객센터에 전화해봐야 한다는 조언 [^27]\n* **Hormuz Minesweeper**: 계속 이기는 것에 지루함을 느낄 때 즐기기 좋은 독특한 컨셉의 지뢰찾기 게임 [^35]\n* **대마초와 정신질환 연구**: 대마초가 불안, 우울증, PTSD 치료에 실질적인 효과가 없음을 밝혀낸 대규모 연구 결과 [^39]\n* **일광 노출과 흑색종**: 햇빛 노출 빈도와 흑색종(피부암)으로 인한 사망률 간의 상관관계를 분석한 의학 논문 [^46]\n* **The Ant-Ssembly Line**: 개미들의 고도화된 분업과 조립 라인 시스템을 관찰한 흥미로운 생물학 에세이 [^50]\n* **NYU 교수진 파업**: 급여 인상과 고용 안정성 보장을 요구하며 파업에 돌입한 뉴욕대학교(NYU) 교수진 소식 [^57]\n* **인도네시아의 산성 테러**: 목소리를 내면 산성 테러를 당하는 인도네시아의 끔찍한 인권 탄압 실태 고발 [^58]\n* **예상보다 오래 걸리는 일들**: 소프트웨어 개발을 포함한 모든 프로젝트가 항상 예상보다 오래 걸리는 이유에 대한 에세이 [^60]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘 브리핑에서는 자본과 인프라를 무기로 엔터프라이즈 시장을 삼키려는 OpenAI의 거침없는 행보와, 하드웨어-소프트웨어 최적화로 한계를 돌파한 Cloudflare의 사례가 특히 돋보였습니다. 기술의 발전이 단순히 '더 나은 코드'를 넘어 '어떻게 비즈니스와 국가 안보의 지형을 바꾸는지'를 명확히 보여주는 하루입니다.\n\n[^1]: Visual Studio Code 1.113 - https://code.visualstudio.com/updates/v1_113\n[^2]: GitHub expands application security coverage with AI‑powered detections - https://github.blog/security/application-security/github-expands-application-security-coverage-with-ai-powered-detections/\n[^3]: Apple’s Worldwide Developers Conference returns the week of June 8 - https://www.apple.com/newsroom/2026/03/apples-worldwide-developers-conference-returns-the-week-of-june-8/\n[^4]: WWDC26: June 8-12, 2026 - https://developer.apple.com/news/?id=yi8qj25k\n[^5]: How Autonomous AI Agents Become Secure by Design With NVIDIA OpenShell - https://blogs.nvidia.com/blog/secure-autonomous-ai-agents-openshell/\n[^6]: 1대1 RTS 게임으로 만든 LLM 벤치마크 - https://news.hada.io/topic?id=27785\n[^7]: NixOS를 사랑하는 이유 - https://news.hada.io/topic?id=27784\n[^8]: Show GN: GitHub Actions와 Telegram으로 만든 개인용 증시 리포트 자동화 봇 오픈소스 - https://news.hada.io/topic?id=27783\n[^9]: Show GN: 도메인 지식을 기반으로 서비스를 구축하는 인간지능 주도형 개발 어플리케이션\"을 소개합니다! - https://news.hada.io/topic?id=27781\n[^10]: 81,000명이 말한 AI의 진짜 쓰임새 (Anthropic “81k Interviews”) - https://news.hada.io/topic?id=27779\n[^11]: 롤러코스터 타이쿤의 최적화 기준: 내부 구조 분석 - https://news.hada.io/topic?id=27778\n[^12]: GrapheneOS는 개인 정보 없이 누구나 계속 사용할 수 있음 - https://news.hada.io/topic?id=27777\n[^13]: 코드의 죽음은 과장된 주장임 - https://news.hada.io/topic?id=27776\n[^14]: Pinterest가 AI에이전트를 위한 프로덕션 MCP 에코시스템을 구축한 방법 - https://news.hada.io/topic?id=27775\n[^15]: Siri + Claude Code + Obsidian 으로 만든 AI 베이비시터 - https://news.hada.io/topic?id=27774\n[^16]: Show GN: GPUtray - GPU tray 모니터링 툴 - https://news.hada.io/topic?id=27773\n[^17]: 코드의 죽음은 과장되었다 - https://news.hada.io/topic?id=27772\n[^18]: 세 가지 유형의 나쁜 매니저 - https://news.hada.io/topic?id=27771\n[^19]: 여백 만들기: 덜 하는 것이 위대함을 만드는 방법 - https://news.hada.io/topic?id=27770\n[^20]: Show GN: 카카오톡 대화를 기반한 사람 말투 복제 서비스 - https://news.hada.io/topic?id=27769\n[^21]: 코드의 죽음 보고는 크게 과장되었다 - https://news.hada.io/topic?id=27768\n[^22]: Show GN: Google CausalImpact R 패키지를 Python으로 포팅 (Gibbs 샘플러는 Rust) - https://news.hada.io/topic?id=27767\n[^23]: Xiaomi mimo-v2-pro - 극가성비 샤오미 모델 - https://news.hada.io/topic?id=27764\n[^24]: PC Gamer가 37MB 용량의 계속 다운로드되는 기사에서 RSS 리더를 추천 - https://news.hada.io/topic?id=27763\n[^25]: Show GN: skills-cleaner - 설치된 Skills의 유사성을 비교하고, 중복 기능을 식별하고 불필요한 Skill을 제거할 ... - https://news.hada.io/topic?id=27762\n[^26]: OpenClaw는 꿈처럼 보이지만 보안 악몽에 가까운 자율 에이전트 - https://news.hada.io/topic?id=27760\n[^27]: 도그푸딩에 지쳤다면, 자기 회사 고객센터에 직접 전화해 보세요 - https://news.hada.io/topic?id=27759\n[^28]: Flash-MoE - 노트북에서 3,970억 파라미터 모델을 실행 - https://news.hada.io/topic?id=27758\n[^29]: Windows 네이티브 앱 개발이 엉망인 이유 - https://news.hada.io/topic?id=27757\n[^30]: gstack - Claude Code로 만드는 가상 엔지니어링 팀 - https://news.hada.io/topic?id=27756\n[^31]: Project NOMAD - 오프라인에서도 끊기지 않는 지식과 AI 서버 - https://news.hada.io/topic?id=27755\n[^32]: Cloudflare가 archive.today를 \"C\u0026C/Botnet\"으로 분류, 1.1.1.2에서 해석 불가 - https://news.hada.io/topic?id=27754\n[^33]: 버전 관리의 미래 - https://news.hada.io/topic?id=27753\n[^34]: JavaScript 비대화의 세 가지 축 - https://news.hada.io/topic?id=27752\n[^35]: Hormuz Minesweeper – 이기는 게 지겹다고 느낄 때 - https://news.hada.io/topic?id=27751\n[^36]: Impeccable - AI 하네스가 더 디자인 잘하게 만들기 - https://news.hada.io/topic?id=27750\n[^37]: 헤드폰 사용 거부 승객, 이제 United 항공편에서 퇴출 가능 - https://news.hada.io/topic?id=27749\n[^38]: 서구 자동차 제조사의 전기차 후퇴, 산업적 퇴보로 이어질 위험 - https://news.hada.io/topic?id=27748\n[^39]: 대규모 연구, 대마초가 불안·우울·외상후스트레스장애(PTSD)에 효과 없음 확인 - https://news.hada.io/topic?id=27747\n[^40]: FFmpeg 101 (2024) - https://news.hada.io/topic?id=27746\n[^41]: I don't understand how OpenAI can guarantee 17.5% returns - https://www.bankless.com/read/news/openai-guarantees-17-5-minimum-returns-to-private-market-investors-reuters\n[^42]: OpenAI sweetens private equity pitch amid enterprise turf war with Anthropic - https://www.reuters.com/business/openai-sweetens-private-equity-pitch-amid-enterprise-turf-war-with-anthropic-2026-03-23/\n[^43]: Hacker Mints $80M USD Worth of USR Stablecoins - https://bfmtimes.com/hacker-mints-80-million-worth-of-fake-stablecoins-and-swaps-them-for-eth/\n[^44]: Construction of Data Centers, Power Plants, Factories, and Office Buildings - https://wolfstreet.com/2026/03/23/construction-of-data-centers-power-plants-factories-and-office-buildings-boom-bust/\n[^45]: FCC Adds Routers Produced in Foreign Countries to Covered List - https://www.fcc.gov/document/fcc-adds-routers-produced-foreign-countries-covered-list\n[^46]: Sun Exposure and Mortality from Melanoma - https://pubmed.ncbi.nlm.nih.gov/15687362/\n[^47]: Testing Swift's C interoperability with Raylib and WASI - https://carette.xyz/posts/swift_c_compatibility_with_raylib/\n[^48]: FCC considering a ban for all foreign-made routers - https://bsky.app/profile/ericjgeller.com/post/3mhqxf2pzvz2j\n[^49]: AspireConf 2026 - https://aspire.dev/aspireconf/\n[^50]: The Ant-Ssembly Line - https://hallofdreams.org/posts/the-ant-ssembly-line/\n[^51]: Chat GPT 5.2 cannot explain the German word \"geschniegelt\" - https://old.reddit.com/r/ChatGPT/comments/1r4goxh/chat_gpt_52_cannot_explain_the_word_geschniegelt/\n[^52]: Vibe physics: The AI grad student - https://www.anthropic.com/research/vibe-physics\n[^53]: Printable Claude Code Cheat Sheet (auto-updated daily) - https://cc.storyfox.cz\n[^54]: Sneaky Header Blocker Trick - https://www.joshwcomeau.com/css/header-blockers/?from=newsletter\n[^55]: I benchmarked GitHub CLI, MCP, Tool Search, Code Mode so we know the differences - https://medium.com/@kunchenguid/i-benchmarked-github-cli-vs-mcp-vs-tool-search-vs-code-mode-turns-out-the-best-solution-is-none-93528d5039e4\n[^56]: Making a Language - https://thunderseethe.dev/series/making-a-language/\n[^57]: NYU Professors Begin Strike over Pay and Job Protections - https://www.nytimes.com/2026/03/23/nyregion/nyu-professors-strike.html\n[^58]: Don't Speak Up or You Are Getting Burned by Acid: Andrie Yunus (Indonesia) - https://www.techgalery.com/2026/03/dont-speak-up-or-you-are-getting-burned.html\n[^59]: Anthropic for Science Blog - https://www.anthropic.com/research/introducing-anthropic-science\n[^60]: Things Will Take Longer Than You Think They Will - https://dontbreakprod.com/posts/things-will-take-longer-than-you-think-they-will\n[^61]: The M-Trends 2026 report shows how to strengthen business cybersecurity. - https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/m-trends-2026-report-cybersecurity/\n[^62]: Google NewFront 2026: introducing the Gemini advantage - https://blog.google/products/marketingplatform/360/gemini-models-advantage-google-marketing-platform/\n[^63]: Investing in a water-secure future for all - https://blog.google/company-news/outreach-and-initiatives/sustainability/2026-water-stewardship-portfolio/\n[^64]: Chrome for Android Update - http://chromereleases.googleblog.com/2026/03/chrome-for-android-update_23.html\n[^65]: Stable Channel Update for Desktop - http://chromereleases.googleblog.com/2026/03/stable-channel-update-for-desktop_23.html\n[^66]: Inside Gen 13: how we built our most powerful server yet - https://blog.cloudflare.com/gen13-config/\n[^67]: Launching Cloudflare’s Gen 13 servers: trading cache for cores for 2x edge compute performance - https://blog.cloudflare.com/gen13-launch/\n[^68]: Creating with Sora Safely - https://openai.com/index/creating-with-sora-safely\n[^69]: Join LangChain at Google Cloud Next 2026 - https://blog.langchain.com/join-langchain-at-google-cloud-next-2026/\n[^70]: Two different types of agent authorization - https://blog.langchain.com/two-different-types-of-agent-authorization/\n[^71]: A developer’s guide to training with Ironwood TPUs - https://cloud.google.com/blog/products/compute/training-large-models-on-ironwood-tpus/\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **Visual Studio Code 1.113 **\n   - 출처: Visual Studio Code - Code Editing. Redefined.\n   - 링크: https://code.visualstudio.com/updates/v1_113\n\n2. **GitHub expands application security coverage with AI‑powered detections**\n   - 출처: GitHub Blog\n   - 링크: https://github.blog/security/application-security/github-expands-application-security-coverage-with-ai-powered-detections/\n\n3. **Apple’s Worldwide Developers Conference returns the week of June 8\n**\n   - 출처: Apple Newsroom\n   - 링크: https://www.apple.com/newsroom/2026/03/apples-worldwide-developers-conference-returns-the-week-of-june-8/\n\n4. **WWDC26: June 8-12, 2026**\n   - 출처: Latest News - Apple Developer\n   - 링크: https://developer.apple.com/news/?id=yi8qj25k\n\n5. **How Autonomous AI Agents Become Secure by Design With NVIDIA OpenShell**\n   - 출처: NVIDIA Blog\n   - 링크: https://blogs.nvidia.com/blog/secure-autonomous-ai-agents-openshell/\n\n6. **1대1 RTS 게임으로 만든 LLM 벤치마크**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27785\n\n7. **NixOS를 사랑하는 이유**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27784\n\n8. **Show GN: GitHub Actions와 Telegram으로 만든 개인용 증시 리포트 자동화 봇 오픈소스**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27783\n\n9. **Show GN: 도메인 지식을 기반으로 서비스를 구축하는 인간지능 주도형 개발 어플리케이션\u0026quot;을 소개합니다!**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27781\n\n10. **81,000명이 말한 AI의 진짜 쓰임새 (Anthropic “81k Interviews”)**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27779\n\n11. **롤러코스터 타이쿤의 최적화 기준: 내부 구조 분석**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27778\n\n12. **GrapheneOS는 개인 정보 없이 누구나 계속 사용할 수 있음**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27777\n\n13. **코드의 죽음은 과장된 주장임**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27776\n\n14. **Pinterest가 AI에이전트를 위한 프로덕션 MCP 에코시스템을 구축한 방법**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27775\n\n15. **Siri + Claude Code + Obsidian 으로 만든 AI 베이비시터**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27774\n\n16. **Show GN: GPUtray - GPU tray 모니터링 툴**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27773\n\n17. **코드의 죽음은 과장되었다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27772\n\n18. **세 가지 유형의 나쁜 매니저**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27771\n\n19. **여백 만들기: 덜 하는 것이 위대함을 만드는 방법**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27770\n\n20. **Show GN: 카카오톡 대화를 기반한 사람 말투 복제 서비스**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27769\n\n21. **코드의 죽음 보고는 크게 과장되었다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27768\n\n22. **Show GN: Google CausalImpact R 패키지를 Python으로 포팅 (Gibbs 샘플러는 Rust)**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27767\n\n23. **Xiaomi mimo-v2-pro - 극가성비 샤오미 모델**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27764\n\n24. **PC Gamer가 37MB 용량의 계속 다운로드되는 기사에서 RSS 리더를 추천**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27763\n\n25. **Show GN: skills-cleaner - 설치된 Skills의 유사성을 비교하고, 중복 기능을 식별하고 불필요한 Skill을 제거할 ...**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27762\n\n26. **OpenClaw는 꿈처럼 보이지만 보안 악몽에 가까운 자율 에이전트**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27760\n\n27. **도그푸딩에 지쳤다면, 자기 회사 고객센터에 직접 전화해 보세요**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27759\n\n28. **Flash-MoE - 노트북에서 3,970억 파라미터 모델을 실행**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27758\n\n29. **Windows 네이티브 앱 개발이 엉망인 이유**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27757\n\n30. **gstack - Claude Code로 만드는 가상 엔지니어링 팀**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27756\n\n31. **Project NOMAD - 오프라인에서도 끊기지 않는 지식과 AI 서버**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27755\n\n32. **Cloudflare가 archive.today를 \u0026quot;C\u0026amp;C/Botnet\u0026quot;으로 분류, 1.1.1.2에서 해석 불가**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27754\n\n33. **버전 관리의 미래**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27753\n\n34. **JavaScript 비대화의 세 가지 축**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27752\n\n35. **Hormuz Minesweeper – 이기는 게 지겹다고 느낄 때**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27751\n\n36. **Impeccable - AI 하네스가 더 디자인 잘하게 만들기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27750\n\n37. **헤드폰 사용 거부 승객, 이제 United 항공편에서 퇴출 가능**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27749\n\n38. **서구 자동차 제조사의 전기차 후퇴, 산업적 퇴보로 이어질 위험**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27748\n\n39. **대규모 연구, 대마초가 불안·우울·외상후스트레스장애(PTSD)에 효과 없음 확인**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27747\n\n40. **FFmpeg 101 (2024)**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27746\n\n41. **I don't understand how OpenAI can guarantee 17.5% returns**\n   - 출처: Hacker News\n   - 링크: https://www.bankless.com/read/news/openai-guarantees-17-5-minimum-returns-to-private-market-investors-reuters\n\n42. **OpenAI sweetens private equity pitch amid enterprise turf war with Anthropic**\n   - 출처: Hacker News\n   - 링크: https://www.reuters.com/business/openai-sweetens-private-equity-pitch-amid-enterprise-turf-war-with-anthropic-2026-03-23/\n\n43. **Hacker Mints $80M USD Worth of USR Stablecoins**\n   - 출처: Hacker News\n   - 링크: https://bfmtimes.com/hacker-mints-80-million-worth-of-fake-stablecoins-and-swaps-them-for-eth/\n\n44. **Construction of Data Centers, Power Plants, Factories, and Office Buildings**\n   - 출처: Hacker News\n   - 링크: https://wolfstreet.com/2026/03/23/construction-of-data-centers-power-plants-factories-and-office-buildings-boom-bust/\n\n45. **FCC Adds Routers Produced in Foreign Countries to Covered List**\n   - 출처: Hacker News\n   - 링크: https://www.fcc.gov/document/fcc-adds-routers-produced-foreign-countries-covered-list\n\n46. **Sun Exposure and Mortality from Melanoma**\n   - 출처: Hacker News\n   - 링크: https://pubmed.ncbi.nlm.nih.gov/15687362/\n\n47. **Testing Swift's C interoperability with Raylib and WASI**\n   - 출처: Hacker News\n   - 링크: https://carette.xyz/posts/swift_c_compatibility_with_raylib/\n\n48. **FCC considering a ban for all foreign-made routers**\n   - 출처: Hacker News\n   - 링크: https://bsky.app/profile/ericjgeller.com/post/3mhqxf2pzvz2j\n\n49. **AspireConf 2026**\n   - 출처: Hacker News\n   - 링크: https://aspire.dev/aspireconf/\n\n50. **The Ant-Ssembly Line**\n   - 출처: Hacker News\n   - 링크: https://hallofdreams.org/posts/the-ant-ssembly-line/\n\n51. **Chat GPT 5.2 cannot explain the German word \"geschniegelt\"**\n   - 출처: Hacker News\n   - 링크: https://old.reddit.com/r/ChatGPT/comments/1r4goxh/chat_gpt_52_cannot_explain_the_word_geschniegelt/\n\n52. **Vibe physics: The AI grad student**\n   - 출처: Hacker News\n   - 링크: https://www.anthropic.com/research/vibe-physics\n\n53. **Printable Claude Code Cheat Sheet (auto-updated daily)**\n   - 출처: Hacker News\n   - 링크: https://cc.storyfox.cz\n\n54. **Sneaky Header Blocker Trick**\n   - 출처: Hacker News\n   - 링크: https://www.joshwcomeau.com/css/header-blockers/?from=newsletter\n\n55. **I benchmarked GitHub CLI, MCP, Tool Search, Code Mode so we know the differences**\n   - 출처: Hacker News\n   - 링크: https://medium.com/@kunchenguid/i-benchmarked-github-cli-vs-mcp-vs-tool-search-vs-code-mode-turns-out-the-best-solution-is-none-93528d5039e4\n\n56. **Making a Language**\n   - 출처: Hacker News\n   - 링크: https://thunderseethe.dev/series/making-a-language/\n\n57. **NYU Professors Begin Strike over Pay and Job Protections**\n   - 출처: Hacker News\n   - 링크: https://www.nytimes.com/2026/03/23/nyregion/nyu-professors-strike.html\n\n58. **Don't Speak Up or You Are Getting Burned by Acid: Andrie Yunus (Indonesia)**\n   - 출처: Hacker News\n   - 링크: https://www.techgalery.com/2026/03/dont-speak-up-or-you-are-getting-burned.html\n\n59. **Anthropic for Science Blog**\n   - 출처: Hacker News\n   - 링크: https://www.anthropic.com/research/introducing-anthropic-science\n\n60. **Things Will Take Longer Than You Think They Will**\n   - 출처: Hacker News\n   - 링크: https://dontbreakprod.com/posts/things-will-take-longer-than-you-think-they-will\n\n61. **The M-Trends 2026 report shows how to strengthen business cybersecurity.**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/m-trends-2026-report-cybersecurity/\n\n62. **Google NewFront 2026: introducing the Gemini advantage**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/products/marketingplatform/360/gemini-models-advantage-google-marketing-platform/\n\n63. **Investing in a water-secure future for all**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/company-news/outreach-and-initiatives/sustainability/2026-water-stewardship-portfolio/\n\n64. **Chrome for Android Update**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2026/03/chrome-for-android-update_23.html\n\n65. **Stable Channel Update for Desktop**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2026/03/stable-channel-update-for-desktop_23.html\n\n66. **Inside Gen 13: how we built our most powerful server yet**\n   - 출처: Cloudflare Blog\n   - 링크: https://blog.cloudflare.com/gen13-config/\n\n67. **Launching Cloudflare’s Gen 13 servers: trading cache for cores for 2x edge compute performance**\n   - 출처: Cloudflare Blog\n   - 링크: https://blog.cloudflare.com/gen13-launch/\n\n68. **Creating with Sora Safely**\n   - 출처: OpenAI News\n   - 링크: https://openai.com/index/creating-with-sora-safely\n\n69. **Join LangChain at Google Cloud Next 2026**\n   - 출처: LangChain Blog\n   - 링크: https://blog.langchain.com/join-langchain-at-google-cloud-next-2026/\n\n70. **Two different types of agent authorization**\n   - 출처: LangChain Blog\n   - 링크: https://blog.langchain.com/two-different-types-of-agent-authorization/\n\n71. **A developer’s guide to training with Ironwood TPUs**\n   - 출처: AI \u0026 Machine Learning\n   - 링크: https://cloud.google.com/blog/products/compute/training-large-models-on-ironwood-tpus/\n\n\n",
+  "articles": [
+    {
+      "title": "Visual Studio Code 1.113 ",
+      "link": "https://code.visualstudio.com/updates/v1_113",
+      "source": "Visual Studio Code - Code Editing. Redefined.",
+      "category": "tech",
+      "publishedAt": "2026-03-25T17:00:00Z",
+      "description": "\n      \u003cp\u003eLearn what's new in Visual Studio Code 1.113 (Insiders)\u003c/p\u003e\n      \u003cp\u003e\u003ca href=\"https://code.visualstudio.com/updates/v1_113\"\u003eRead the full article\u003c/a\u003e\u003c/p\u003e\n    "
+    },
+    {
+      "title": "GitHub expands application security coverage with AI‑powered detections",
+      "link": "https://github.blog/security/application-security/github-expands-application-security-coverage-with-ai-powered-detections/",
+      "source": "GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-23T16:00:00Z",
+      "description": "\u003cp\u003eCodeQL and AI‑powered detections work together in GitHub Code Security to identify vulnerabilities across more languages and frameworks.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/security/application-security/github-expands-application-security-coverage-with-ai-powered-detections/\"\u003eGitHub expands application security coverage with AI‑powered detections\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Apple’s Worldwide Developers Conference returns the week of June 8\n",
+      "link": "https://www.apple.com/newsroom/2026/03/apples-worldwide-developers-conference-returns-the-week-of-june-8/",
+      "source": "Apple Newsroom",
+      "category": "tech",
+      "publishedAt": "2026-03-23T17:00:08.05Z",
+      "description": "Apple today announced it will host its annual Worldwide Developers Conference (WWDC) online from June 8-12."
+    },
+    {
+      "title": "WWDC26: June 8-12, 2026",
+      "link": "https://developer.apple.com/news/?id=yi8qj25k",
+      "source": "Latest News - Apple Developer",
+      "category": "tech",
+      "publishedAt": "2026-03-23T09:45:37Z",
+      "description": "\u003cdiv class=\"inline-article-image\"\u003e\u003cimg src=\"https://devimages-cdn.apple.com/wwdc-services/articles/images/3E1B72CB-1443-4D0A-A838-6419526422A6/2048.jpeg\" data-img-dark=\"https://devimages-cdn.apple.com/wwdc-services/articles/images/3E1B72CB-1443-4D0A-A838-6419526422A6/2048.jpeg\" data-hires=\"false\" alt=\"The WWDC26 logo in a gray-to-white gradient against a black background. The first two letters (WW) are in dark gray, the middle two letters (DC) are in a lighter gray, and the final two numbers (26) are glowing white.\"\u003e\u003c/div\u003e\u003cp\u003eJoin the worldwide developer community online for a week of technology, creativity, and community.\u003c/p\u003e\u003cp\u003eBe there for the reveal of the latest Apple tools, frameworks, and features. Learn to elevate your apps and games through video sessions hosted by Apple engineers and designers. Engage with Apple experts in labs and connect with the worldwide developer community. All online and free.\u003c/p\u003e\u003cp\u003e\u003ca href=\"https://developer.apple.com/wwdc26/\"\u003eLearn more about \u003cspan class=\"icon icon-after icon-chevronright nowrap\"\u003eWWDC26 \u0026gt;\u003c/span\u003e\u003c/a\u003e\u003c/p\u003e"
+    },
+    {
+      "title": "How Autonomous AI Agents Become Secure by Design With NVIDIA OpenShell",
+      "link": "https://blogs.nvidia.com/blog/secure-autonomous-ai-agents-openshell/",
+      "source": "NVIDIA Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-23T15:00:03Z",
+      "description": "Autonomous agents mark a new inflection point in AI. Systems are no longer limited to generating responses or reasoning through tasks. They can take action: Agents can read files, use tools, write and run code, and execute workflows across enterprise systems, all while expanding their own capabilities.  Application-layer risk grows exponentially when agents continuously improve [\u0026#8230;]"
+    },
+    {
+      "title": "1대1 RTS 게임으로 만든 LLM 벤치마크",
+      "link": "https://news.hada.io/topic?id=27785",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-24T01:39:31+09:00",
+      "description": "1대1 RTS 게임으로 만든 LLM 벤치마크"
+    },
+    {
+      "title": "NixOS를 사랑하는 이유",
+      "link": "https://news.hada.io/topic?id=27784",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-23T23:33:53+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eNix 패키지 관리자\u003c/strong\u003e를 기반으로 한 NixOS는 시스템 전체를 코드로 정의하고, 언제든 \u003cstrong\u003e결정적·재현 가능한 상태로 복원\u003c/strong\u003e할 수 있는 구조를 가짐\u003c/li\u003e\n\u003cli\u003e모든 설정과 패키지를 \u003cstrong\u003e하나의 선언적 구성 파일\u003c/strong\u003e로 관리해, 새 장비에서도 동일한 환경을 \u003cstrong\u003e단일 ...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: GitHub Actions와 Telegram으로 만든 개인용 증시 리포트 자동화 봇 오픈소스",
+      "link": "https://news.hada.io/topic?id=27783",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-23T23:33:04+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e만든 목적\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eOpenClaw로 재태크 관련 작업을 자동화하는 사례가 많이 보였음\u003c/li\u003e\n\u003cli\u003e그러나 많은 작업은 LLM과 맥미니 없이도 충분히 자동화 가능함\u003c/li\u003e\n\u003cli\u003e즉, 유용한 \u0026quot;규칙 기반\u0026quot; 자동화 도구 만들기 실험\u003c/li\u003e\n\u003cli\u003eGitHub Actions만으로 매일 실행되는 배치 봇 구성\u003c/li\u003e\n\u003c/ul"
+    },
+    {
+      "title": "Show GN: 도메인 지식을 기반으로 서비스를 구축하는 인간지능 주도형 개발 어플리케이션\u0026quot;을 소개합니다!",
+      "link": "https://news.hada.io/topic?id=27781",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-23T22:21:09+09:00",
+      "description": "\u003cp\u003e시작은 오픈클로 같은거 하고 싶은데 오픈클로 설정 너무 어렵고 API토큰 사용 너무 부담스럽고 막상 설치해보니 느어무 느리고, 그래서 구독내에서 해결하고 싶어서 찾아보니 takoPI라고 텔레그램으로 터미널 에이전트(claude-code같은것들)를 사용하게 해주는 프로젝트가 있어서 제 주력 매터모스터를 사용하기 위해...\u003c/p\u003e"
+    },
+    {
+      "title": "81,000명이 말한 AI의 진짜 쓰임새 (Anthropic “81k Interviews”)",
+      "link": "https://news.hada.io/topic?id=27779",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-23T17:53:48+09:00",
+      "description": "\u003cp\u003e최근 Anthropic이 공개한 “81k Interviews” 프로젝트는 지금까지의 AI 논의에서 빠져 있던 중요한 질문을 던집니다. 우리는 AI를 이야기할 때 AGI, 자동화, 일자리 대체 같은 거시적인 주제에 집중하지만, 실제 사용자들이 AI를 어떻게 느끼고 사용하는지에 대한 대규모 정성 데이터는 거의 없었습니다. 이 프로젝트...\u003c/p\u003e"
+    },
+    {
+      "title": "롤러코스터 타이쿤의 최적화 기준: 내부 구조 분석",
+      "link": "https://news.hada.io/topic?id=27778",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-23T17:33:21+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e1999년작 \u003cstrong\u003eRollerCoaster Tycoon\u003c/strong\u003e은 거의 전부 \u003cstrong\u003e어셈블리어로 작성된 시뮬레이션 게임\u003c/strong\u003e으로, 수천 명의 손님을 실시간으로 처리하면서도 안정적인 성능을 유지한 사례로 평가됨\u003c/li\u003e\n\u003cli\u003e개발자 \u003cstrong\u003eChris Sawyer\u003c/strong\u003e는 고수준 언어 대신 저수준 제어를 택해, \u003cstrong\u003e...\u003c/p\u003e"
+    },
+    {
+      "title": "GrapheneOS는 개인 정보 없이 누구나 계속 사용할 수 있음",
+      "link": "https://news.hada.io/topic?id=27777",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-23T15:38:17+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e전 세계 사용자가 \u003cstrong\u003e신원 확인이나 계정 등록 없이\u003c/strong\u003e GrapheneOS를 설치하고 사용할 수 있도록 정책을 유지\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003ePixel 6a\u003c/strong\u003e는 2027년 7~8월까지 지원되며, 이후에는 \u003cstrong\u003e보안 업데이트 중단으로 지원 종료\u003c/strong\u003e 예정\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eMotorola와의 협력\u003c/strong\u003e을...\u003c/p\u003e"
+    },
+    {
+      "title": "코드의 죽음은 과장된 주장임",
+      "link": "https://news.hada.io/topic?id=27776",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-23T15:35:17+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e프로그래밍은 \u003cstrong\u003e모호한 명세를 정밀하게 다듬어 가는 창조 행위\u003c/strong\u003e로, AI는 영어 명세를 코드로 변환해 이 과정을 가속함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e‘Vibe coding’\u003c/strong\u003e 은 감각적 개발 방식을 가능하게 하지만, 추상화의 누수로 인한 \u003cstrong\u003e복잡성과 버그 문제\u003c/strong\u003e를 피할 수 없음\u003c/li\u003e\n\u003cli...\u003c/p\u003e"
+    },
+    {
+      "title": "Pinterest가 AI에이전트를 위한 프로덕션 MCP 에코시스템을 구축한 방법",
+      "link": "https://news.hada.io/topic?id=27775",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-23T13:34:02+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eMCP\u003c/strong\u003e를 AI 에이전트의 도구 연결 표준으로 채택해, IDE·내부 챗·AI 에이전트 등 실제 엔지니어링 워크플로우에 프로덕션 수준으로 통합한 Pinterest의 구축 경험\u003c/li\u003e\n\u003cli\u003e단일 모놀리식 서버 대신 \u003cstrong\u003e도메인별 다수의 MCP 서버\u003c/strong\u003e(Presto, Spark, Airflow 등)와 \u003cstrong\u003e중앙 레지...\u003c/p\u003e"
+    },
+    {
+      "title": "Siri + Claude Code + Obsidian 으로 만든 AI 베이비시터",
+      "link": "https://news.hada.io/topic?id=27774",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-23T12:47:00+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e신생아 육아 시 수유·배변 기록을 음성만으로 해결하는 시스템을 Siri + Claude Code + Obsidian 조합으로 구축한 사례\u003c/li\u003e\n\u003cli\u003eObsidian vault에 CLAUDE.md 파일을 작성해 테이블 구조와 기록 방식을 AI에 학습\u003c/li\u003e\n\u003cli\u003eMac Mini에서 Claude Code를 상시 구동하고, \u003ca href=\"https://github.com/runbear-io/...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: GPUtray - GPU tray 모니터링 툴",
+      "link": "https://news.hada.io/topic?id=27773",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-23T12:10:54+09:00",
+      "description": "\u003cp\u003e윈도우용 GPU 시스템 트레이 모니터링 툴입니다.\u003cbr /\u003e\nGPU 사용률을 확인할 일이 많아 만들어 보았습니다.\u003cbr /\u003e\nCPU 사용률, 메모리 사용률, GPU 사용률, GPU 메모리 사용률, GPU 온도 중에서 선택해서 트레이에서 모니터링할 수 있습니다.\u003cbr /\u003e\n우클릭하면 그래프도 보여주고 로그도 기록해서 나중에 분석할 수도...\u003c/p\u003e"
+    },
+    {
+      "title": "코드의 죽음은 과장되었다",
+      "link": "https://news.hada.io/topic?id=27772",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-23T11:53:21+09:00",
+      "description": "\u003ch3\u003e도입 — 영어 스펙의 착각\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u0026quot;충분히 상세한 명세는 코드다\u0026quot;라는 글에서 영감을 받아 시작. 영어 명세는 직관적으로 정밀해 보이지만, 실제로 구현하려 하면 모호함이 드러남\u003c/li\u003e\n\u003cli\u003e\u0026quot;모든 것은 정밀하게 만들려 하기 전까지는 모호하다\u0026quot; — 버트런드 러셀\u003c/li\u003e\n\u003cli\u003e프로그래밍은...\u003c/p\u003e"
+    },
+    {
+      "title": "세 가지 유형의 나쁜 매니저",
+      "link": "https://news.hada.io/topic?id=27771",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-23T11:42:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e실리콘밸리에서 실제로 겪은 세 가지 유형의 나쁜 매니저(The Artist, The Dictator, The Knife)를 통해 \u003cstrong\u003e매니저와 리더의 차이\u003c/strong\u003e를 분석\u003c/li\u003e\n\u003cli\u003eThe Artist는 창작물에만 몰두하며 \u003cstrong\u003e사람의 가치를 경시\u003c/strong\u003e하는 유형으로, 팀원이 왜 중요한지를 이해하지 못하거나 관심을 두지 않...\u003c/p\u003e"
+    },
+    {
+      "title": "여백 만들기: 덜 하는 것이 위대함을 만드는 방법",
+      "link": "https://news.hada.io/topic?id=27770",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-23T11:39:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e집중(Focus)\u003c/strong\u003e 은 스타트업과 대기업 모두에게 주어지는 단 하나의 조언이지만, 그 실질적 의미는 \u0026quot;대부분의 일을 멈추는 것\u0026quot;에서 시작됨\u003c/li\u003e\n\u003cli\u003e부적합한 고객, 소모적인 관계, 불필요한 지표 추구를 중단할 때 \u003cstrong\u003e가장 중요한 일에 투자할 시간과 에너지\u003c/strong\u003e의 여백이...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: 카카오톡 대화를 기반한 사람 말투 복제 서비스",
+      "link": "https://news.hada.io/topic?id=27769",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-23T11:29:33+09:00",
+      "description": "\u003cp\u003e안녕하세요. 해커톤에서 재밌는 프로젝트를 하나 만들게 되었습니다.\u003c/p\u003e\n\u003cp\u003e프로젝트를 굉장히 많이 만들었는데, 그 중에서 소개해보고 싶은 프로젝트를 이 곳에 공개합니다.\u003c/p\u003e\n\u003cp\u003e전여친, 전남친, 떠나보낸 가족 등 얘기를 하고 싶지만 할 수 없는 사람이 있는데, 카카오톡에 이전 대화 기록이 있다면 복원해서 대"
+    },
+    {
+      "title": "코드의 죽음 보고는 크게 과장되었다",
+      "link": "https://news.hada.io/topic?id=27768",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-23T11:28:57+09:00",
+      "description": "\u003cp\u003e\u003cstrong\u003e영어 명세는 생각만큼 정밀하지 않다\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u0026quot;정밀하게 만들어보기 전까지는 모든 것이 얼마나 모호한지 모른다\u0026quot; — 버트런드 러셀\u003c/li\u003e\n\u003cli\u003e프로그래밍은 글쓰기처럼, 하면서 점점 다듬어가는 반복적 활동\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cstrong\u003e바이브 코딩의 한계\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eAI가 영"
+    },
+    {
+      "title": "Show GN: Google CausalImpact R 패키지를 Python으로 포팅 (Gibbs 샘플러는 Rust)",
+      "link": "https://news.hada.io/topic?id=27767",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-23T11:26:11+09:00",
+      "description": "\u003cp\u003eGoogle의 CausalImpact R 패키지를 Python으로 포팅했습니다.\u003cbr /\u003e\nGibbs 샘플러를 Rust로 구현하고 PyO3로 Python에서 호출합니다.\u003cbr /\u003e\nTensorFlow 불필요, R 대비 약 30배 빠릅니다.\u003cbr /\u003e\n만든 이유:\u003cbr /\u003e\n기존 Python 포팅들에 문제가 있었습니다. pycausalimpact는\u003cbr /\u003e\nMLE를 사용해서 R과 결과가 다릅니다...\u003c/p\u003e"
+    },
+    {
+      "title": "Xiaomi mimo-v2-pro - 극가성비 샤오미 모델",
+      "link": "https://news.hada.io/topic?id=27764",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-23T10:44:54+09:00",
+      "description": "\u003cp\u003e최신 모델이 나와 한 번 써 봤어요.\u003cbr /\u003e\n일단, 저는 중국모델들에 대한 거부감이 컸어요.\u003cbr /\u003e\n가장 큰 문제는 중국말이 섞여 나오는 문제여서 사람들이 보는 결과물에서는 중국 모델을 사용할 수가 없었죠.\u003cbr /\u003e\n그리고 실제 공개되는 벤치마크 성능대비 성능도 더 떨어진다고 느꼈죠.\u003c/p\u003e\n\u003cp\u003e근데 테스트해보고"
+    },
+    {
+      "title": "PC Gamer가 37MB 용량의 계속 다운로드되는 기사에서 RSS 리더를 추천",
+      "link": "https://news.hada.io/topic?id=27763",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-23T10:32:51+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003ePC Gamer가 \u003cstrong\u003eRSS 리더 추천 기사\u003c/strong\u003e를 게재했지만, 정작 해당 웹페이지 자체가 \u003cstrong\u003e37MB 초기 로딩\u003c/strong\u003e에 광고 5개가 덕지덕지 붙은 아이러니한 구조\u003c/li\u003e\n\u003cli\u003e페이지 접속 시 알림 팝업, 기사를 가리는 뉴스레터 팝업, 흐려진 배경, 최소 \u003cstrong\u003e5개의 광고\u003c/strong\u003e가 사용자를 맞이함...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: skills-cleaner - 설치된 Skills의 유사성을 비교하고, 중복 기능을 식별하고 불필요한 Skill을 제거할 ...",
+      "link": "https://news.hada.io/topic?id=27762",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-23T10:22:00+09:00",
+      "description": "\u003cp\u003e안녕하세요. Claude Plugin, Skills 많이들 설치해서 사용하고 있으실텐데요.\u003cbr /\u003e\nPlugin 설치할 때마다 많은 Skills.md가 .claude/plugin 디렉토리 안에 생성되고 있는데 정작 얼마나 많은 Skills.md 파일들이\u003cbr /\u003e\n만들어지는 지, 중복되는 기능의 Skill.md는 없는지 관리가 되지 않아서 불편함을 느꼈습니다....\u003c/p\u003e"
+    },
+    {
+      "title": "OpenClaw는 꿈처럼 보이지만 보안 악몽에 가까운 자율 에이전트",
+      "link": "https://news.hada.io/topic?id=27760",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-23T10:16:51+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eOpus 기반의 \u003cstrong\u003e차세대 자율 에이전트 OpenClaw\u003c/strong\u003e는 이메일, 캘린더, 홈 자동화 등 다양한 앱을 통합해 개인 비서처럼 작동함\u003c/li\u003e\n\u003cli\u003e그러나 \u003cstrong\u003eSkillHub 스킬 검증 부재\u003c/strong\u003e, \u003cstrong\u003e토큰 노출\u003c/strong\u003e, \u003cstrong\u003e메모리 오염\u003c/strong\u003e 등 다수의 취약점이 발견되어 심각한 보안 위험...\u003c/p\u003e"
+    },
+    {
+      "title": "도그푸딩에 지쳤다면, 자기 회사 고객센터에 직접 전화해 보세요",
+      "link": "https://news.hada.io/topic?id=27759",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-23T10:13:50+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e자사 제품을 직접 사용하는 \u003cstrong\u003e도그푸딩\u003c/strong\u003e은 테크 업계의 오랜 원칙이지만 실제 고객의 불만 경험까지 체험하는 데는 역부족\u003c/li\u003e\n\u003cli\u003e대기업의 \u003cstrong\u003e고객센터 자동응답 시스템\u003c/strong\u003e은 기술 혁신을 내세우지만 실제 고객 불만을 해결하지 못함\u003c/li\u003e\n\u003cli\u003eJeff Bezos가 직접 자사 고객 서비스...\u003c/p\u003e"
+    },
+    {
+      "title": "Flash-MoE - 노트북에서 3,970억 파라미터 모델을 실행",
+      "link": "https://news.hada.io/topic?id=27758",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-23T10:10:50+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e397B 파라미터의 \u003cstrong\u003eMixture-of-Experts 모델\u003c/strong\u003e을 \u003cstrong\u003eMacBook Pro(48GB RAM)\u003c/strong\u003e 에서 초당 4.4토큰 이상으로 실행하는 \u003cstrong\u003eC/Metal 기반 추론 엔진\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e전체 209GB 모델을 \u003cstrong\u003eSSD에서 스트리밍\u003c/strong\u003e하며, \u003cstrong\u003ePython이나 프레임워크 없이\u003c/strong\u003e C와...\u003c/p\u003e"
+    },
+    {
+      "title": "Windows 네이티브 앱 개발이 엉망인 이유",
+      "link": "https://news.hada.io/topic?id=27757",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-23T10:07:50+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eWindows 네이티브 앱 개발 생태계는 수십 년간 이어진 \u003cstrong\u003e프레임워크 단절과 반복적 재설계\u003c/strong\u003e로 인해 2025년 현재도 실질적인 개발 생산성을 제공하지 못하는 상태임\u003c/li\u003e\n\u003cli\u003eWin32부터 MFC, WinForms, WPF, WinRT, UWP를 거쳐 \u003cstrong\u003eWinUI 3\u003c/strong\u003e까지 7단계의 UI 프레임워크 변천에도 불구...\u003c/p\u003e"
+    },
+    {
+      "title": "gstack - Claude Code로 만드는 가상 엔지니어링 팀",
+      "link": "https://news.hada.io/topic?id=27756",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-23T10:06:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eYC CEO Garry Tan\u003c/strong\u003e이 만들어서 사용하는 AI로 구성된 \u003cstrong\u003e오픈소스 소프트웨어 팩토리\u003c/strong\u003e로 한 명이 20명 팀처럼 일하게 구성\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eThink → Plan → Build → Review → Test → Ship → Reflect\u003c/strong\u003e 순서로 스프린트 전체를 커버하는 슬래시 커맨드로 구성하고...\u003c/p\u003e"
+    },
+    {
+      "title": "Project NOMAD - 오프라인에서도 끊기지 않는 지식과 AI 서버",
+      "link": "https://news.hada.io/topic?id=27755",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-23T10:04:50+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e인터넷 연결 없이 \u003cstrong\u003e지식, 지도, 교육, AI 도구\u003c/strong\u003e를 모두 실행할 수 있는 \u003cstrong\u003e무료 오픈소스 오프라인 서버\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eWikipedia, Project Gutenberg, 의료 참고서, Khan Academy 강좌\u003c/strong\u003e 등 방대한 자료를 \u003cstrong\u003eKiwix\u003c/strong\u003e와 \u003cstrong\u003eKolibri\u003c/strong\u003e 기반으...\u003c/p\u003e"
+    },
+    {
+      "title": "Cloudflare가 archive.today를 \u0026quot;C\u0026amp;C/Botnet\u0026quot;으로 분류, 1.1.1.2에서 해석 불가",
+      "link": "https://news.hada.io/topic?id=27754",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-23T10:01:50+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eCloudflare DNS 서비스\u003c/strong\u003e가 \u003cstrong\u003earchive.today 도메인\u003c/strong\u003e을 \u003cstrong\u003e명령·제어(C\u0026amp;C) 또는 봇넷 관련 사이트\u003c/strong\u003e로 분류함\u003c/li\u003e\n\u003cli\u003e이에 따라 \u003cstrong\u003e1.1.1.2 보안 DNS\u003c/strong\u003e를 통해 해당 도메인이 \u003cstrong\u003e정상적으로 해석되지 않음\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003erada...\u003c/p\u003e"
+    },
+    {
+      "title": "버전 관리의 미래",
+      "link": "https://news.hada.io/topic?id=27753",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-23T09:58:50+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eManyana\u003c/strong\u003e는 Bram Cohen이 개발한 \u003cstrong\u003eCRDT 기반 버전 관리 프로토타입\u003c/strong\u003e으로, 병합 충돌을 제거하고 히스토리를 구조적으로 보존하는 새로운 접근을 제시함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eCRDT(Conflict-Free Replicated Data Type)\u003c/strong\u003e 을 활용해 병합이 항상 성공하며, 충돌을 단순한 ...\u003c/p\u003e"
+    },
+    {
+      "title": "JavaScript 비대화의 세 가지 축",
+      "link": "https://news.hada.io/topic?id=27752",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-23T09:55:50+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003enpm 생태계에서 \u003cstrong\u003e의존성 트리의 비대화\u003c/strong\u003e가 주요 문제로 지적되며, 이는 오래된 런타임 지원, 원자적 패키지 구조, 오래된 ponyfill 사용에서 비롯됨\u003c/li\u003e\n\u003cli\u003e구형 엔진 호환성과 \u003cstrong\u003ecross-realm 안전성\u003c/strong\u003e을 이유로 유지되는 작은 유틸리티 패키지들이 현대 환경에서도 불필요하게 ...\u003c/p\u003e"
+    },
+    {
+      "title": "Hormuz Minesweeper – 이기는 게 지겹다고 느낄 때",
+      "link": "https://news.hada.io/topic?id=27751",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-23T09:52:49+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e고전 \u003cstrong\u003e지뢰찾기 규칙\u003c/strong\u003e을 기반으로, \u003cstrong\u003e호르무즈 해협\u003c/strong\u003e을 배경으로 한 웹 게임\u003c/li\u003e\n\u003cli\u003e플레이어는 \u003cstrong\u003e물을 정리하고 지뢰를 표시하며 항로를 유지\u003c/strong\u003e해야 하는 구조\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e좌클릭·우클릭·더블클릭\u003c/strong\u003e으로 칸을 열거나 깃발을 표시하는 \u003cstrong\u003e직관...\u003c/p\u003e"
+    },
+    {
+      "title": "Impeccable - AI 하네스가 더 디자인 잘하게 만들기",
+      "link": "https://news.hada.io/topic?id=27750",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-23T09:52:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eClaude Code, Codex\u003c/strong\u003e 등의 \u003cstrong\u003e프론트엔드 품질 향상\u003c/strong\u003e을 위해 디자인 어휘와 명령어 체계를 제공하는 \u003cstrong\u003e오픈소스 스킬 패키지\u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003eAnthropic의 \u003ccode\u003efrontend-design\u003c/code\u003e 스킬에 기반한 확장판으로 \u003cstrong\u003e타이포그래피/색상/레이아웃/모션\u003c/strong\u003e 등...\u003c/p\u003e"
+    },
+    {
+      "title": "헤드폰 사용 거부 승객, 이제 United 항공편에서 퇴출 가능",
+      "link": "https://news.hada.io/topic?id=27749",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-23T08:37:46+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eUnited Airlines\u003c/strong\u003e가 운송 약관을 개정해, \u003cstrong\u003e기내에서 헤드폰 없이 오디오·비디오를 재생하는 승객\u003c/strong\u003e을 탑승 거부하거나 하차시킬 수 있도록 규정함\u003c/li\u003e\n\u003cli\u003e이 조치는 최근 급증한 \u003cstrong\u003e소란 승객 문제\u003c/strong\u003e에 대응하기 위한 것으로, 2025년 한 해에만 \u003cstrong\u003e1,600건 ...\u003c/p\u003e"
+    },
+    {
+      "title": "서구 자동차 제조사의 전기차 후퇴, 산업적 퇴보로 이어질 위험",
+      "link": "https://news.hada.io/topic?id=27748",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-23T08:34:46+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e서구 주요 제조사들이 \u003cstrong\u003e전기차 투자 축소와 내연기관 회귀\u003c/strong\u003e로 과거 디트로이트의 전략적 실패를 반복 중임\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eBYD·Leapmotor 등 중국 전기차 브랜드\u003c/strong\u003e가 유럽 시장을 빠르게 장악하며, BYD는 테슬라를 제치고 세계 최대 전기차 판매사로 부상\u003c/li\u003e\n\u003cli\u003e미국은 \u003cstrong\u003e세...\u003c/p\u003e"
+    },
+    {
+      "title": "대규모 연구, 대마초가 불안·우울·외상후스트레스장애(PTSD)에 효과 없음 확인",
+      "link": "https://news.hada.io/topic?id=27747",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-23T07:37:17+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e_The Lancet Psychiatry_에 발표된 \u003cstrong\u003e54건의 무작위 대조시험 메타분석\u003c/strong\u003e에서 의료용 대마초가 \u003cstrong\u003e불안·우울·PTSD 치료에 효과가 없고\u003c/strong\u003e, 정신 건강을 악화시킬 수 있음이 확인됨\u003c/li\u003e\n\u003cli\u003e연구에 따르면 미국·캐나다 성인 중 약 \u003cstrong\u003e27%가 의료용 대마초를 사용\u003c/strong\u003e하며, 그...\u003c/p\u003e"
+    },
+    {
+      "title": "FFmpeg 101 (2024)",
+      "link": "https://news.hada.io/topic?id=27746",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-23T07:34:17+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e오디오와 비디오를 인코딩·디코딩·트랜스코딩하고 스트리밍할 수 있는 \u003cstrong\u003eFFmpeg 프레임워크의 구조와 사용법\u003c/strong\u003e을 다룸\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003effmpeg, ffplay, ffprobe\u003c/strong\u003e 등 명령줄 도구와 \u003cstrong\u003elibavcodec, libavformat, libavfilter\u003c/strong\u003e 등 핵심 라이브러리의 역할을 구체적으로 설명...\u003c/p\u003e"
+    },
+    {
+      "title": "I don't understand how OpenAI can guarantee 17.5% returns",
+      "link": "https://www.bankless.com/read/news/openai-guarantees-17-5-minimum-returns-to-private-market-investors-reuters",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-23T22:04:40Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.bankless.com/read/news/openai-guarantees-17-5-minimum-returns-to-private-market-investors-reuters\"\u003ehttps://www.bankless.com/read/news/openai-guarantees-17-5-minimum-returns-to-private-market-investors-reuters\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47495765\"\u003ehttps://news.ycombinator.com/item?id=47495765\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "OpenAI sweetens private equity pitch amid enterprise turf war with Anthropic",
+      "link": "https://www.reuters.com/business/openai-sweetens-private-equity-pitch-amid-enterprise-turf-war-with-anthropic-2026-03-23/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-23T22:02:14Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.reuters.com/business/openai-sweetens-private-equity-pitch-amid-enterprise-turf-war-with-anthropic-2026-03-23/\"\u003ehttps://www.reuters.com/business/openai-sweetens-private-equity-pitch-amid-enterprise-turf-war-with-anthropic-2026-03-23/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47495727\"\u003ehttps://news.ycombinator.com/item?id=47495727\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Hacker Mints $80M USD Worth of USR Stablecoins",
+      "link": "https://bfmtimes.com/hacker-mints-80-million-worth-of-fake-stablecoins-and-swaps-them-for-eth/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-23T22:01:15Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://bfmtimes.com/hacker-mints-80-million-worth-of-fake-stablecoins-and-swaps-them-for-eth/\"\u003ehttps://bfmtimes.com/hacker-mints-80-million-worth-of-fake-stablecoins-and-swaps-them-for-eth/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47495719\"\u003ehttps://news.ycombinator.com/item?id=47495719\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Construction of Data Centers, Power Plants, Factories, and Office Buildings",
+      "link": "https://wolfstreet.com/2026/03/23/construction-of-data-centers-power-plants-factories-and-office-buildings-boom-bust/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-23T21:59:56Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://wolfstreet.com/2026/03/23/construction-of-data-centers-power-plants-factories-and-office-buildings-boom-bust/\"\u003ehttps://wolfstreet.com/2026/03/23/construction-of-data-centers-power-plants-factories-and-office-buildings-boom-bust/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47495698\"\u003ehttps://news.ycombinator.com/item?id=47495698\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "FCC Adds Routers Produced in Foreign Countries to Covered List",
+      "link": "https://www.fcc.gov/document/fcc-adds-routers-produced-foreign-countries-covered-list",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-23T21:58:47Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.fcc.gov/document/fcc-adds-routers-produced-foreign-countries-covered-list\"\u003ehttps://www.fcc.gov/document/fcc-adds-routers-produced-foreign-countries-covered-list\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47495684\"\u003ehttps://news.ycombinator.com/item?id=47495684\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Sun Exposure and Mortality from Melanoma",
+      "link": "https://pubmed.ncbi.nlm.nih.gov/15687362/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-23T21:56:55Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://pubmed.ncbi.nlm.nih.gov/15687362/\"\u003ehttps://pubmed.ncbi.nlm.nih.gov/15687362/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47495657\"\u003ehttps://news.ycombinator.com/item?id=47495657\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Testing Swift's C interoperability with Raylib and WASI",
+      "link": "https://carette.xyz/posts/swift_c_compatibility_with_raylib/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-23T21:56:23Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://carette.xyz/posts/swift_c_compatibility_with_raylib/\"\u003ehttps://carette.xyz/posts/swift_c_compatibility_with_raylib/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47495654\"\u003ehttps://news.ycombinator.com/item?id=47495654\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "FCC considering a ban for all foreign-made routers",
+      "link": "https://bsky.app/profile/ericjgeller.com/post/3mhqxf2pzvz2j",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-23T21:54:49Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://bsky.app/profile/ericjgeller.com/post/3mhqxf2pzvz2j\"\u003ehttps://bsky.app/profile/ericjgeller.com/post/3mhqxf2pzvz2j\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47495638\"\u003ehttps://news.ycombinator.com/item?id=47495638\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "AspireConf 2026",
+      "link": "https://aspire.dev/aspireconf/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-23T21:51:51Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://aspire.dev/aspireconf/\"\u003ehttps://aspire.dev/aspireconf/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47495612\"\u003ehttps://news.ycombinator.com/item?id=47495612\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 4\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Ant-Ssembly Line",
+      "link": "https://hallofdreams.org/posts/the-ant-ssembly-line/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-23T21:51:45Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://hallofdreams.org/posts/the-ant-ssembly-line/\"\u003ehttps://hallofdreams.org/posts/the-ant-ssembly-line/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47495609\"\u003ehttps://news.ycombinator.com/item?id=47495609\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Chat GPT 5.2 cannot explain the German word \"geschniegelt\"",
+      "link": "https://old.reddit.com/r/ChatGPT/comments/1r4goxh/chat_gpt_52_cannot_explain_the_word_geschniegelt/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-23T21:47:42Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://old.reddit.com/r/ChatGPT/comments/1r4goxh/chat_gpt_52_cannot_explain_the_word_geschniegelt/\"\u003ehttps://old.reddit.com/r/ChatGPT/comments/1r4goxh/chat_gpt_52_cannot_explain_the_word_geschniegelt/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47495568\"\u003ehttps://news.ycombinator.com/item?id=47495568\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 5\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Vibe physics: The AI grad student",
+      "link": "https://www.anthropic.com/research/vibe-physics",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-23T21:45:19Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.anthropic.com/research/vibe-physics\"\u003ehttps://www.anthropic.com/research/vibe-physics\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47495538\"\u003ehttps://news.ycombinator.com/item?id=47495538\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Printable Claude Code Cheat Sheet (auto-updated daily)",
+      "link": "https://cc.storyfox.cz",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-23T21:44:20Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://cc.storyfox.cz\"\u003ehttps://cc.storyfox.cz\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47495527\"\u003ehttps://news.ycombinator.com/item?id=47495527\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Sneaky Header Blocker Trick",
+      "link": "https://www.joshwcomeau.com/css/header-blockers/?from=newsletter",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-23T21:41:00Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.joshwcomeau.com/css/header-blockers/?from=newsletter\"\u003ehttps://www.joshwcomeau.com/css/header-blockers/?from=newsletter\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47495483\"\u003ehttps://news.ycombinator.com/item?id=47495483\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "I benchmarked GitHub CLI, MCP, Tool Search, Code Mode so we know the differences",
+      "link": "https://medium.com/@kunchenguid/i-benchmarked-github-cli-vs-mcp-vs-tool-search-vs-code-mode-turns-out-the-best-solution-is-none-93528d5039e4",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-23T21:40:24Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://medium.com/@kunchenguid/i-benchmarked-github-cli-vs-mcp-vs-tool-search-vs-code-mode-turns-out-the-best-solution-is-none-93528d5039e4\"\u003ehttps://medium.com/@kunchenguid/i-benchmarked-github-cli-vs-mcp-vs-tool-search-vs-code-mode-turns-out-the-best-solution-is-none-93528d5039e4\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47495475\"\u003ehttps://news.ycombinator.com/item?id=47495475\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Making a Language",
+      "link": "https://thunderseethe.dev/series/making-a-language/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-23T21:40:03Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://thunderseethe.dev/series/making-a-language/\"\u003ehttps://thunderseethe.dev/series/making-a-language/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47495470\"\u003ehttps://news.ycombinator.com/item?id=47495470\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "NYU Professors Begin Strike over Pay and Job Protections",
+      "link": "https://www.nytimes.com/2026/03/23/nyregion/nyu-professors-strike.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-23T21:39:32Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.nytimes.com/2026/03/23/nyregion/nyu-professors-strike.html\"\u003ehttps://www.nytimes.com/2026/03/23/nyregion/nyu-professors-strike.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47495465\"\u003ehttps://news.ycombinator.com/item?id=47495465\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Don't Speak Up or You Are Getting Burned by Acid: Andrie Yunus (Indonesia)",
+      "link": "https://www.techgalery.com/2026/03/dont-speak-up-or-you-are-getting-burned.html",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-23T21:38:36Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.techgalery.com/2026/03/dont-speak-up-or-you-are-getting-burned.html\"\u003ehttps://www.techgalery.com/2026/03/dont-speak-up-or-you-are-getting-burned.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47495451\"\u003ehttps://news.ycombinator.com/item?id=47495451\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Anthropic for Science Blog",
+      "link": "https://www.anthropic.com/research/introducing-anthropic-science",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-23T21:37:23Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.anthropic.com/research/introducing-anthropic-science\"\u003ehttps://www.anthropic.com/research/introducing-anthropic-science\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47495434\"\u003ehttps://news.ycombinator.com/item?id=47495434\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Things Will Take Longer Than You Think They Will",
+      "link": "https://dontbreakprod.com/posts/things-will-take-longer-than-you-think-they-will",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-23T21:33:32Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://dontbreakprod.com/posts/things-will-take-longer-than-you-think-they-will\"\u003ehttps://dontbreakprod.com/posts/things-will-take-longer-than-you-think-they-will\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47495398\"\u003ehttps://news.ycombinator.com/item?id=47495398\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The M-Trends 2026 report shows how to strengthen business cybersecurity.",
+      "link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/m-trends-2026-report-cybersecurity/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-23T15:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/MT26_Report-Cover-Dividers_8.5x.max-600x600.format-webp.webp\"\u003eLearn more about the evolving threat landscape based on Mandiant's new M-Trends 2026 cybersecurity report."
+    },
+    {
+      "title": "Google NewFront 2026: introducing the Gemini advantage",
+      "link": "https://blog.google/products/marketingplatform/360/gemini-models-advantage-google-marketing-platform/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-23T15:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/BLOG_1920x1080px.max-600x600.format-webp.webp\"\u003eAn overview of how Gemini models bring unmatched value to Google Marketing Platform."
+    },
+    {
+      "title": "Investing in a water-secure future for all",
+      "link": "https://blog.google/company-news/outreach-and-initiatives/sustainability/2026-water-stewardship-portfolio/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-23T13:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/water-hero.max-600x600.format-webp.webp\"\u003eFor World Water Day we’re releasing our 2026 Water Stewardship Project Portfolio summary report and sharing details on new partnerships."
+    },
+    {
+      "title": "Chrome for Android Update",
+      "link": "http://chromereleases.googleblog.com/2026/03/chrome-for-android-update_23.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2026-03-23T14:02:00-07:00",
+      "description": "\u003cp\u003e\u0026nbsp; \u0026nbsp;Hi, everyone! We've just released Chrome 146 (146.0.76380.164) for Android. It'll become\u0026nbsp;\u003ca href=\"https://play.google.com/store/apps/details?id=com.android.chrome\"\u003eavailable on Google Play\u003c/a\u003e\u0026nbsp;over the next few days.\u0026nbsp;\u003c/p\u003e\u003cp\u003eThis release includes stability and performance improvements. You can see a full list of the changes in the\u0026nbsp;\u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/146.0.7680.153..146.0.7680.164?pretty=fuller\u0026amp;n=10000\"\u003eGit log\u003c/a\u003e.\u0026nbsp;If you find a new issue, please let us know by\u0026nbsp;\u003ca href=\"https://code.google.com/p/chromium/issues/entry?template=Android%20Issue\"\u003efiling a bug\u003c/a\u003e.\u003c/p\u003e\u003cdiv\u003e\u003cbr /\u003e\u003c/div\u003e\u003cdiv\u003eAndroid releases contain the same security fixes as their corresponding\u003ca href=\"https://chromereleases.googleblog.com/2026/03/stable-channel-update-for-desktop_23.html\"\u003e\u0026nbsp;Desktop releases\u003c/a\u003e\u0026nbsp;(Windows \u0026amp; Mac: 146.0.7680.164/.165, Linux:\u0026nbsp;\u0026nbsp;146.0.7680.164) unless otherwise noted.\u003c/div\u003e\u003cdiv\u003e\u003cdiv\u003e\u003cbr /\u003e\u003c/div\u003e\u003cdiv\u003e\u003cdiv\u003eKrishna Govind\u003c/div\u003e\u003cdiv\u003e\u003ca href=\"https://www.google.com/chrome/\"\u003eGoogle Chrome\u003c/a\u003e\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e"
+    },
+    {
+      "title": "Stable Channel Update for Desktop",
+      "link": "http://chromereleases.googleblog.com/2026/03/stable-channel-update-for-desktop_23.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2026-03-23T12:20:00-07:00",
+      "description": "\u003cp\u003e\u0026nbsp;\u003cspan color=\"rgba(0, 0, 0, 0.87)\" style=\"color: rgba(0, 0, 0, 0.87); font-family: arial; font-size: large;\"\u003eThe Stable channel has been updated to 146.0.7680.164/165 for Windows/Mac\u0026nbsp; and\u0026nbsp;\u003c/span\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" style=\"color: rgba(0, 0, 0, 0.87); font-family: arial; font-size: large;\"\u003e146.0.7680.164 for Linux, which will roll out over the coming days/weeks. A full list of changes in this build is available in the\u0026nbsp;\u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/146.0.7680.154..146.0.7680.165?pretty=fuller\u0026amp;n=10000\" style=\"color: #4184f3; text-decoration-line: none;\"\u003eLog\u003c/a\u003e\u003c/span\u003e\u003c/p\u003e\u003cp\u003e\u003cbr /\u003e\u003c/p\u003e\u003cp style=\"color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px;\"\u003e\u003cspan style=\"color: #666666; font-family: arial; font-size: large;\"\u003eInterested in switching release channels? Find out how\u0026nbsp;\u003c/span\u003e\u003ca href=\"https://www.chromium.org/getting-involved/dev-channel\" style=\"color: #4184f3; font-family: arial; font-size: large; text-decoration-line: none;\"\u003ehere\u003c/a\u003e\u003cspan style=\"color: #666666; font-family: arial; font-size: large;\"\u003e. If you find a new issue, please let us know by\u0026nbsp;\u003c/span\u003e\u003ca href=\"https://crbug.com/\" style=\"color: #4184f3; font-family: arial; font-size: large; text-decoration-line: none;\"\u003efiling a bug\u003c/a\u003e\u003cspan style=\"color: #666666; font-family: arial; font-size: large;\"\u003e. The\u0026nbsp;\u003c/span\u003e\u003ca href=\"https://support.google.com/chrome/community\" style=\"color: #4184f3; font-family: arial; font-size: large; text-decoration-line: none;\"\u003ecommunity help forum\u003c/a\u003e\u003cspan style=\"color: #666666; font-family: arial; font-size: large;\"\u003e\u0026nbsp;is also a great place to reach out for help or learn about common issues.\u003c/span\u003e\u003c/p\u003e\u003cp style=\"color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px;\"\u003e\u003cspan style=\"color: #666666; font-family: arial; font-size: medium; white-space-collapse: preserve;\"\u003e\u003cbr style=\"content: \u0026quot; \u0026quot;; display: block; padding: 4px;\" /\u003e\u003c/span\u003e\u003c/p\u003e\u003cp style=\"color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px;\"\u003e\u003cspan style=\"color: #666666; font-family: arial; font-size: medium; white-space-collapse: preserve;\"\u003eSrinivas Sista\u003c/span\u003e\u003c/p\u003e\u003cp style=\"color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px;\"\u003e\u003cspan color=\"rgba(0, 0, 0, 0.87)\" style=\"font-family: arial; font-size: large;\"\u003e\u003c/span\u003e\u003c/p\u003e\u003cdiv style=\"color: rgba(0, 0, 0, 0.87); font-family: Roboto, sans-serif; font-size: 17px;\"\u003e\u003cspan style=\"font-size: medium;\"\u003e\u003cspan style=\"font-family: arial;\"\u003e\u003cspan style=\"color: #666666;\"\u003eGoogle Chrome\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003c/div\u003e"
+    },
+    {
+      "title": "Inside Gen 13: how we built our most powerful server yet",
+      "link": "https://blog.cloudflare.com/gen13-config/",
+      "source": "Cloudflare Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-23T13:00:00Z",
+      "description": " Cloudflare's Gen 13 servers introduce AMD EPYC™ Turin 9965 processors and a transition to 100 GbE networking to meet growing traffic demands. In this technical deep dive, we explain the engineering rationale behind each major component selection. "
+    },
+    {
+      "title": "Launching Cloudflare’s Gen 13 servers: trading cache for cores for 2x edge compute performance",
+      "link": "https://blog.cloudflare.com/gen13-launch/",
+      "source": "Cloudflare Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-23T13:00:00Z",
+      "description": " Cloudflare’s Gen 13 servers double our compute throughput by rethinking the balance between cache and cores. Moving to high-core-count AMD EPYC ™ Turin CPUs, we traded large L3 cache for raw compute density. By running our new Rust-based FL2 stack, we completely mitigated the latency penalty to unlock twice the performance. "
+    },
+    {
+      "title": "Creating with Sora Safely",
+      "link": "https://openai.com/index/creating-with-sora-safely",
+      "source": "OpenAI News",
+      "category": "tech",
+      "publishedAt": "2026-03-23T00:00:00Z",
+      "description": "To address the novel safety challenges posed by a state-of-the-art video model as well as a new social creation platform, we’ve built Sora 2 and the Sora app with safety at the foundation. Our approach is anchored in concrete protections."
+    },
+    {
+      "title": "Join LangChain at Google Cloud Next 2026",
+      "link": "https://blog.langchain.com/join-langchain-at-google-cloud-next-2026/",
+      "source": "LangChain Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-23T21:37:58Z",
+      "description": "\u003chr\u003e\u003cp\u003eIf you\u0026apos;re attending Google Cloud Next 2026 in Las Vegas this year and working on agent development, here\u0026apos;s what we have planned.\u003c/p\u003e\u003ch2 id=\"visit-us-at-booth-5006\"\u003eVisit Us at Booth #5006\u003c/h2\u003e\u003cp\u003eWe\u0026apos;ll be at Booth #5006 in the Expo Hall at the Mandalay Bay Convention Center, April 22-24.\u003c/p\u003e"
+    },
+    {
+      "title": "Two different types of agent authorization",
+      "link": "https://blog.langchain.com/two-different-types-of-agent-authorization/",
+      "source": "LangChain Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-23T17:29:28Z",
+      "description": "LangSmith Fleet introduces two types of agent authorization: Assistants, which use the end user's own credentials, and Claws, which use a fixed set of credentials."
+    },
+    {
+      "title": "A developer’s guide to training with Ironwood TPUs",
+      "link": "https://cloud.google.com/blog/products/compute/training-large-models-on-ironwood-tpus/",
+      "source": "AI \u0026 Machine Learning",
+      "category": "tech",
+      "publishedAt": "2026-03-23T16:00:00Z",
+      "description": "\u003cdiv class=\"block-paragraph_advanced\"\u003e\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eThe transition toward trillion-parameter AI models has created an exponential demand for computational resources, testing the limits of traditional infrastructure. The seventh-generation Ironwood TPU features Google’s custom-designed AI infrastructure: It is engineered to scale as a holistic system supporting pods of up to 9,216 chips by combining Inter-Chip Interconnect (ICI), Optical Circuit Switch (OCS), Data Center Network (DCN) and massive aggregated High Bandwidth Memory (HBM) capacity. In addition, Ironwood features an integrated co-design between hardware architecture and software, introducing innovations such as Compiler-Centric XLA and Python-native kernels like Pallas and Mosaic. Together, these features significantly scale organizations’ capacity to train and serve sophisticated frontier models, optimize the entire AI lifecycle and enable sustained high performance. \u003c/span\u003e\u003c/p\u003e\u003c/div\u003e\n\u003cdiv class=\"block-image_full_width\"\u003e\n\n\n\n\n\n\n  \n    \u003cdiv class=\"article-module h-c-page\"\u003e\n      \u003cdiv class=\"h-c-grid\"\u003e\n  \n\n    \u003cfigure class=\"article-image--large\n      \n      \n        h-c-grid__col\n        h-c-grid__col--6 h-c-grid__col--offset-3\n        \n        \n      \"\n      \u003e\n\n      \n      \n        \n        \u003cimg\n            src=\"https://storage.googleapis.com/gweb-cloudblog-publish/images/image1_YpVMWLp.max-1000x1000.jpg\"\n        \n          alt=\"image1\"\u003e\n        \n        \u003c/a\u003e\n      \n    \u003c/figure\u003e\n\n  \n      \u003c/div\u003e\n    \u003c/div\u003e\n  \n\n\n\n\n\u003c/div\u003e\n\u003cdiv class=\"block-paragraph_advanced\"\u003e\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eThis technical overview explores the specific methods and tools within the JAX and MaxText ecosystems designed to refine training efficiency and reach peak performance on Ironwood hardware.\u003c/span\u003e\u003c/p\u003e\n\u003ch2\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eKey optimization strategies for Ironwood\u003c/span\u003e\u003c/h2\u003e\n\u003ch3\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e1. Leverage native FP8 with MaxText\u003c/span\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eIronwood is the first TPU generation with native 8-bit floating point (FP8) support in its Matrix Multiply Units (MXUs). By utilizingFP8 precision for weights, activations, and gradients, users can theoretically double throughput compared to Brain Floating Point 16 (BF16). When FP8 recipes are configured correctly, increased efficiency is achievable without compromising model quality. \u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eTo implement these FP8 training recipes, users can start with the \u003c/span\u003e\u003ca href=\"https://github.com/google/qwix\" rel=\"noopener\" target=\"_blank\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eQwix\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e library. This functionality is enabled by specifying the relevant flags within the MaxText configuration. ,  \u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eSee our blog post, \u003c/span\u003e\u003ca href=\"https://discuss.google.dev/t/inside-the-optimization-of-fp8-training-on-ironwood/336681\" rel=\"noopener\" target=\"_blank\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eInside the optimization of FP8 training on Ironwood\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e, in the Google Developer forums for more details.\u003c/span\u003e\u003c/p\u003e\n\u003ch3\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e2. Accelerate with Tokamax kernels\u003c/span\u003e\u003c/h3\u003e\n\u003cp\u003e\u003ca href=\"https://github.com/openxla/tokamax/tree/main\" rel=\"noopener\" target=\"_blank\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eTokamax\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e is a library of high-performance JAX kernels optimized for TPUs. These kernels are designed to mitigate specific bottlenecks through the following mechanisms:\u003c/span\u003e\u003c/p\u003e\n\u003col\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: decimal; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eSplash Attention\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e: This mechanism addresses the I/O limitations inherent in standard attention processes. By maintaining computations within on-chip SRAM, it is particularly effective for processing long context lengths where memory bandwidth typically becomes a constraint. \u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: decimal; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eMegablox Grouped Matrix Multiplication (GMM)\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e: This manages the “ragged” tensors often found in Mixture of Experts (MoE) models. By utilizing GMM, the system avoids inefficient padding and ensures higher utilization of the MXU. \u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: decimal; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eKernel tuning\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e: The Tokamax library includes \u003c/span\u003e\u003ca href=\"https://github.com/openxla/tokamax/blob/main/tokamax/experimental/utils/tuning/tpu/README.md\" rel=\"noopener\" target=\"_blank\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eUtilities\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e for hyperparameter optimization. These tools allow for the adjustment of tile sizes and other configurations to align with the specific memory hierarchy of the Ironwood TPU.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ol\u003e\n\u003ch3\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e3.  Offload collectives to SparseCore\u003c/span\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eThe fourth-generation SparseCores in Ironwood are processors specifically designed to manage irregular memory access patterns. By using specific \u003c/span\u003e\u003ca href=\"https://github.com/AI-Hypercomputer/maxtext/blob/c0abc4c0c0a98e02413d7b6c669927d013467045/benchmarks/xla_flags_library.py#L70-L116\" rel=\"noopener\" target=\"_blank\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eXLA flags\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e, users can offload collective communication operations—such as \u003c/span\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eAll-Gather\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e and \u003c/span\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eReduce-Scatter\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e—directly to the SparseCore.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eThis offloading mechanism allows the TensorCores to remain dedicated to primary model computations while communication tasks execute in parallel. This functional overlap is a critical strategy for hiding communication latency and ensuring consistent data throughput to the MXUs.\u003c/span\u003e\u003c/p\u003e\n\u003ch3\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e4. Fine-tune the memory pipeline on VMEM\u003c/span\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eVMEM, a critical part of the TPU memory architecture, is a fast on-chip SRAM that is designed to optimize kernel performance. You can improve the overall speed of execution by tuning the allocation of VMEM between  current operation and future weight prefetch. For example, increasing the VMEM reserved for the current scope allows increasing the tile sizes used by the kernel, which can increase kernel performance by removing potential memory stalls. \u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eRefer to \u003c/span\u003e\u003ca href=\"https://docs.jax.dev/en/latest/pallas/tpu/pipelining.html\" rel=\"noopener\" target=\"_blank\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eTPU Pipelining\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e for more on TPU memory architecture.\u003c/span\u003e\u003c/p\u003e\n\u003ch3\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e5. Choose optimal sharding strategies\u003c/span\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eLastly, MaxText supports various parallelism techniques which are available on all TPUs. The best choice depends on model size, architecture (Dense vs. MoE), and sequence length. Selecting a proper sharding strategy can improve the performance of the model:\u003c/span\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eFully Sharded Data Parallelism (FSDP)\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e: This is the preferred strategy for training large models that exceed the memory capacity of a single chip. FSDP shards model weights, gradients, and optimizer states across multiple chips. Increasing the per-device batch size and introducing more compute can hide the latency of the All-Gather operations and improve efficiency.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eTensor Parallelism (TP)\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e: Shards individual tensors. Given Ironwood's high arithmetic intensity, TP is most effective for very large model dimensions. Leveraging TP with a dimension of 2 can take advantage of the fast die-to-die interconnect on Ironwood's dual-chiplet design.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eExpert Parallelism (EP)\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e: Helpful for MoE models to distribute experts across devices.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eContext Parallelism (CP)\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e: Necessary for very long sequences, sharding activations along the sequence dimension.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eHybrid approaches\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e: Combining strategies is often required to balance compute, memory, and communication on large-scale runs.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eSee the \u003c/span\u003e\u003ca href=\"https://discuss.google.dev/t/optimizing-frontier-model-training-on-tpu-v7x-ironwood/336983/2\" rel=\"noopener\" target=\"_blank\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eOptimizing Frontier Model Training on TPU v7x Ironwood\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e post in the Developer forums for more detail on techniques 2-5 above.\u003c/span\u003e\u003c/p\u003e\n\u003ch2\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eThe Ironwood advantage: System-level performance\u003c/strong\u003e\u003c/h2\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eThese optimization techniques, coupled with Ironwood's architectural strengths like the high-speed 3D Torus Inter-Chip Interconnect (ICI) and massive HBM capacity, create a highly performant platform for training frontier models. The tight co-design across hardware, compilers (XLA), and frameworks (JAX, MaxText) ensures you can extract maximum performance from your AI Infrastructure.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eReady to accelerate your AI journey? Explore the resources below to dive deeper into each optimization method.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eFurther reading\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli role=\"presentation\"\u003e\u003ca href=\"https://discuss.google.dev/t/inside-the-optimization-of-fp8-training-on-ironwood/336681\" rel=\"noopener\" target=\"_blank\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eInside the optimization of FP8 training on Ironwood\u003c/span\u003e\u003c/a\u003e\u003c/li\u003e\n\u003cli role=\"presentation\"\u003e\u003ca href=\"https://discuss.google.dev/t/optimizing-frontier-model-training-on-tpu-v7x-ironwood/336983/2\" rel=\"noopener\" target=\"_blank\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eOptimizing Frontier Model Training on TPU v7x Ironwood\u003c/span\u003e\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003chr/\u003e\n\u003cp\u003e\u003csub\u003e\u003cspan style=\"font-style: italic; vertical-align: baseline;\"\u003eA special thanks to \u003c/span\u003e\u003cem\u003e\u003cspan data-rich-links='{\"per_n\":\"Hina Jajoo\",\"per_e\":\"hjajoo@google.com\",\"type\":\"person\"}' style=\"vertical-align: baseline;\"\u003eHina Jajoo\u003c/span\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e and \u003c/span\u003e\u003cspan data-rich-links='{\"per_n\":\"Amanda Liang\",\"per_e\":\"amandaliang@google.com\",\"type\":\"person\"}' style=\"vertical-align: baseline;\"\u003eAmanda Liang\u003c/span\u003e\u003c/em\u003e\u003cspan style=\"font-style: italic; vertical-align: baseline;\"\u003e for their contributions to this blog post.\u003c/span\u003e\u003c/sub\u003e\u003c/p\u003e\u003c/div\u003e"
+    }
+  ],
+  "generatedAt": "2026-03-24T07:17:02.419658945+09:00"
+}
