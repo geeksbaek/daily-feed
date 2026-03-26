@@ -1,0 +1,714 @@
+{
+  "date": "2026-03-27",
+  "preset": "magazine",
+  "summary": "\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ 2026년 3월 27일: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** AI 에이전트 시대를 뒷받침할 하드웨어(Arm AGI CPU)와 실시간 음성 AI(Gemini 3.1)의 도약, 그리고 소셜 미디어의 사회적 책임에 대한 빅테크의 법적 시련이 교차하는 하루입니다.\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### 구글, 실시간 음성 AI의 진화 'Gemini 3.1 Flash Live' 공개\n구글이 오디오 AI를 더욱 자연스럽고 신뢰할 수 있게 만드는 데 초점을 맞춘 'Gemini 3.1 Flash Live'를 발표했습니다. 이번 업데이트는 단순한 텍스트 처리 속도 향상을 넘어, 인간의 대화 뉘앙스를 이해하고 실시간으로 반응하는 '네이티브 오디오' 처리 능력을 극대화했습니다. 특히 개발자들이 실시간 대화형 에이전트를 쉽게 구축할 수 있도록 API와 도구 지원을 강화하여, 고객 서비스부터 개인 비서까지 음성 기반 AI 인터페이스의 대중화를 앞당길 것으로 보입니다.\n\u003e **Key Point:** 텍스트 중심에서 '실시간 음성(Audio-First)'으로 AI 인터랙션의 패러다임이 전환되며, 오픈AI의 고급 음성 모드와 본격적인 경쟁이 시작되었습니다. [^16][^17][^43][^77][^82][^84]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. Arm, 에이전트형 AI 클라우드 시대를 위한 'AGI CPU' 발표\n- **What:** Arm이 2026년 3월 24일, AGI(범용 인공지능) 및 AI 에이전트 워크로드에 특화된 새로운 CPU 아키텍처를 공식 발표했습니다.\n- **Why:** 기존의 GPU 중심 하드웨어는 대규모 병렬 학습에는 유리하지만, 연속적으로 추론하고 자율적으로 판단해야 하는 '에이전트형 AI' 구동 시 메모리 병목과 전력 비효율이 발생하기 때문입니다.\n- **Impact:** AI 인프라의 중심이 '학습(Training)'에서 '자율 추론 및 실행(Agentic Inference)'으로 이동함에 따라, 클라우드 데이터센터의 실리콘 지형도가 크게 재편될 전망입니다. [^60][^74]\n\n### 2. 메타와 유튜브, 소셜 미디어 중독 및 아동 보호 실패로 유죄 판결\n- **What:** 배심원단이 메타와 유튜브의 알고리즘이 소셜 미디어 중독을 유발한 과실을 인정했으며, 메타는 자사 플랫폼 내 아동 성착취 사건에 대해서도 법적 책임을 지게 되었습니다.\n- **Why:** 빅테크의 추천 알고리즘이 사용자의 정신 건강, 특히 미성년자에게 미치는 해악에 대해 플랫폼의 방조 책임을 묻는 사회적 합의와 법적 선례가 확립되고 있습니다.\n- **Impact:** 단순한 벌금을 넘어, 빅테크 기업들이 사용자 참여도(Engagement)를 극대화하는 현재의 핵심 비즈니스 모델과 알고리즘을 근본적으로 수정해야 하는 강력한 규제 압박에 직면했습니다. [^44][^50]\n\n### 3. OpenAI, '에로틱 챗봇' 출시 계획 무기한 보류\n- **What:** OpenAI가 자사 AI 모델에서 성인용(NSFW) 콘텐츠 및 에로틱 챗봇을 허용하려던 계획을 '무기한 보류'하기로 결정했습니다.\n- **Why:** 브랜드 안전성 확보, 글로벌 규제 당국의 엄격한 감시, 그리고 AI 윤리 및 정렬(Alignment) 문제에 대한 내부적 부담이 작용한 것으로 분석됩니다.\n- **Impact:** OpenAI가 엔터프라이즈 및 B2B 시장에 집중하는 사이, '검열 없는 AI'를 원하는 수요는 오픈소스 진영이나 틈새 경쟁사들로 빠르게 이동할 것입니다. [^21]\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **Visual Studio Code 1.114** | VS Code의 최신 업데이트 릴리스 [^2] |\n| **Tool** | **LogXide** | 기존 대비 12.5배 빠른 Rust 기반의 Python 로깅 프레임워크 [^57] |\n| **Tool** | **gitagent** | AI 에이전트의 정의 및 관리를 표준화하기 위한 Git 기반 도구 [^70] |\n| **Tool** | **Expect** | AI 에이전트가 실제 브라우저 환경에서 코드를 테스트할 수 있게 해주는 도구 [^64] |\n| **Tool** | **cq** | AI 에이전트들이 코딩 문제를 해결할 수 있도록 돕는 에이전트 전용 Stack Overflow [^72] |\n| **Tool** | **Chops** | 흩어진 AI 에이전트 스킬들을 한 곳에서 통합 관리하는 macOS 전용 앱 [^53] |\n| **Tool** | **Memoir** | 11개 이상의 개발 도구와 모든 기기 간에 AI 코딩 메모리를 동기화하는 도구 [^39] |\n| **Tool** | **Arxivify** | 아무 문장이나 입력하면 실제 논문 초록(Abstract) 형태의 이미지로 변환해주는 유머/유틸리티 도구 [^49] |\n| **Tool** | **Convene** | 이벤트 주최자를 위한 마켓플레이스 및 종합 관리 소프트웨어 [^38] |\n| **Paper** | **ARC-AGI-3** | 차세대 AGI의 추론 및 문제 해결 능력을 평가하기 위한 최신 벤치마크 지표 [^47] |\n| **Video** | **N64 Open-World Engine** | 닌텐도 64 콘솔용 홈브루 오픈월드 게임 엔진을 바닥부터 개발하는 과정을 담은 영상 [^25] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n\n#### 🤖 AI \u0026 Data\n* **Google TurboQuant**: 극한의 데이터 압축 기술로 AI 모델의 연산 효율성을 재정의하는 기술 공개 [^62]\n* **Claude Code Auto Mode**: Anthropic이 자율 코딩 에이전트 모드를 어떻게 설계했는지 비하인드 스토리 공유 [^59]\n* **Kensho \u0026 LangGraph**: 신뢰할 수 있는 금융 데이터 검색을 위해 다중 에이전트 프레임워크를 구축한 사례 [^79]\n* **Deep Agents Evals**: 복잡한 추론을 수행하는 'Deep Agents'를 위한 평가 시스템 구축 방법론 [^80]\n* **Agent Harness Middleware**: 미들웨어를 활용해 에이전트 하네스를 커스터마이징하는 방법 [^81]\n* **Gemini 앱 마이그레이션**: 사용자의 기존 AI 메모리와 채팅 기록을 Gemini 앱으로 쉽게 이전하는 기능 지원 [^11][^42]\n* **MedGemma Impact Challenge**: 의료 특화 AI 모델을 활용한 챌린지 우승자 공식 발표 [^14]\n* **AlphaEvolve**: FM Logistic이 물류창고 규모의 복잡한 외판원 문제(TSP)를 AI로 해결한 사례 [^88]\n* **IntelliJ IDEA AI**: 에이전트 스킬을 통합하여 Java 애플리케이션 개발을 지원하는 AI 기능 업데이트 [^85]\n* **UC Berkeley AI 리터러시**: 대학생들이 AI를 학습 파트너로 어떻게 활용하고 있는지에 대한 인사이트 [^87]\n* **나노 바나나 효과**: AI가 건축 시각화 및 디자인 프로세스를 어떻게 근본적으로 재편하고 있는지 분석 [^61]\n* **개인 백과사전**: AI 시대에 자신만의 지식 베이스(개인 백과사전)를 구축하는 트렌드 [^48]\n* **AI 붐과 다중 위기**: 현재의 AI 발전 방향이 기후 변화 등 인류의 '다중 위기(Polycrisis)' 해결에 부합하지 않는다는 비판 [^31]\n* **AI 면접 대처법**: 기술 면접 중 지원자가 명백하게 AI 어시스턴트를 사용할 때 면접관이 대처하는 방법 (Hacker News 토론) [^28]\n* **Claude 세션 제한**: Reddit을 통해 공유된 Claude AI의 세션 제한 정책 업데이트 안내 [^35]\n* **AI와 창의성 대담**: James Manyika와 래퍼 LL COOL J가 나누는 AI와 예술적 창의성에 관한 대화 [^12][^75]\n* **aicasebook.dev**: 실무에 참고할 만한 양질의 AI 개발 환경 구축 사례를 모아둔 웹사이트 [^56]\n* **케이-스킬**: 한국인 사용자의 컨텍스트에 맞춘 유용한 AI 프롬프트/스킬 모음집 [^52]\n\n#### 💻 개발 \u0026 인프라\n* **GitHub Actions 보안**: 2026년 GitHub Actions의 보안 강화 로드맵 발표 [^3]\n* **오픈소스 취약점 동향**: 지난 1년간의 CVE, 보안 권고, 멀웨어 등 오픈소스 공급망 보안 트렌드 분석 보고서 [^4]\n* **ChromeOS LTS**: 안정성을 중시하는 기업/교육용 ChromeOS 장기 지원(LTS) 채널 업데이트 [^5]\n* **Chrome 브라우저 업데이트**: 데스크톱 및 Android용 Chrome Dev 및 정식 버전의 최신 업데이트 배포 [^6][^7][^8]\n* **Cloudflare K8s 픽스**: 단 한 줄의 Kubernetes 설정 수정으로 연간 600시간의 엔지니어링 리소스를 절약한 사례 [^86]\n* **Bitbucket Flaky Tests**: Bitbucket 테스트 환경에 간헐적 실패(Flaky) 테스트를 자동 감지하는 기능 도입 [^83]\n* **20년 된 Python 라이브러리**: 유지보수된 지 20년이 넘은 레거시 Python 라이브러리를 현대적으로 재작성한 경험담 [^26]\n* **Pyrefly 설계 교훈**: 정적 타입 검사기 Pyre를 개발하며 얻은 교훈이 새로운 Pyrefly 설계에 미친 영향 [^23]\n* **장기 실행 앱 하네스**: 오랫동안 실행되는 백그라운드 애플리케이션의 안정성을 위한 하네스 설계 가이드 [^66]\n* **소프트웨어 엔지니어 조언**: 시니어 개발자들이 흔히 하는 조언 중 실제로는 커리어에 위험할 수 있는 조언들 [^69]\n* **프레임워크 무용론**: \"어떤 프레임워크를 쓰느냐는 중요하지 않다\"는 주장에 대한 심도 있는 반론 [^36]\n* **Gemini CLI 버그**: 다수의 사용자 환경에서 Gemini CLI가 정상 작동하지 않는 이슈 발생 (GitHub Issue) [^34]\n\n#### 🌐 빅테크 \u0026 비즈니스\n* **Apple 미국 제조 파트너십**: Apple이 미국 내 제조 프로그램(American Manufacturing Program)에 새로운 파트너사 추가 [^1]\n* **Google 축구 국가대표팀 파트너십**: 글로벌 축구 대회를 앞두고 다수의 국가대표팀과 공식 파트너십 체결 [^9][^41]\n* **Google Search Live**: 실시간 검색 기능인 'Search Live'의 글로벌 서비스 지역 대폭 확대 [^18][^78]\n* **iOS 실시간 번역**: iOS 기기에서 헤드폰을 착용하면 실시간 개인 통역기처럼 작동하는 기능 추가 [^13][^76]\n* **Google TV 화면 보호기**: Google 기기의 고품질 화면 보호기 사진을 촬영한 숨겨진 사진작가들 조명 [^10]\n* **Demand Gen Drop**: 3월 업데이트를 통해 광고주의 크리에이티브 퍼포먼스를 향상시키는 새로운 기능 제공 [^15]\n* **NVIDIA GTC Omniverse**: 물리적 AI 시대를 구동하기 위한 가상 시뮬레이션 세계 'Omniverse'의 비전 제시 [^19]\n* **GeForce NOW 신작**: NVIDIA의 클라우드 게임 서비스에 5개의 새로운 타이틀 스트리밍 추가 [^20]\n* **Netflix 요금 인상**: 넷플릭스가 수익성 강화를 위해 1년 만에 두 번째 구독료 인상 단행 [^24]\n* **Meta AI 리더 출국 제한**: Meta가 인수한 AI 스타트업의 핵심 리더들이 중국 당국에 의해 출국이 제한되는 사태 발생 [^22]\n* **Apple 버그 리포트 논란**: 사용자가 '미수정 확인'을 명시적으로 하지 않으면 Apple이 임의로 버그 리포트를 닫아버리는 정책 논란 [^45]\n* **Apple 충성 고객 이탈**: 폐쇄적인 생태계와 최근 행보에 실망하여 \"Apple이 나를 잃었다\"고 선언한 개발자의 글 화제 [^46]\n* **EU 개인 메시지 스캔**: 유럽연합(EU)이 아동 보호를 명분으로 개인의 종단간 암호화 메시지와 사진을 스캔하려는 법안 지속 추진 [^67]\n\n#### 🌍 사회, 지정학 \u0026 기타\n* **이란 호르무즈 해협 통제**: 이란이 새로운 통행료 징수 시스템을 도입하여 호르무즈 해협의 해상 트래픽을 사실상 통제 중 [^27]\n* **이란 석유 수익 급증**: 호르무즈 해협을 통한 유일한 안정적 수출국 지위를 확보한 이란의 석유 수익이 폭등 [^29]\n* **미국의 이란 전략 부재**: 명확한 전략 부재로 인해 미국이 이란과의 갈등에서 스스로 자충수를 두고 있다는 지정학적 분석 [^58]\n* **슬로베니아 선거 조작 의혹**: 슬로베니아 당국이 이스라엘의 민간 정보기업 'Black Cube'의 선거 개입 및 조작 시도 혐의 제기 [^63]\n* **라과디아 공항 안전 경고**: 뉴욕 라과디아 공항의 치명적 활주로 충돌 사고 발생 수개월 전부터 조종사들의 안전 경고가 있었음이 밝혀짐 [^73]\n* **Flighty Airports**: 전 세계 주요 공항의 실시간 운항 지연 현황을 직관적으로 보여주는 지도 서비스 [^65]\n* **테슬라 해킹 프로젝트**: 테슬라 Model 3의 컴퓨터 부품을 따로 구매해 책상 위에서 구동시키는 하드웨어 해킹 사례 [^55]\n* **유튜브 디톡스 확장 프로그램**: 무의식적인 유튜브 시청 중독에서 벗어나기 위해 개발된 브라우저 확장 프로그램 [^51]\n* **새마을금고 비교 웹 앱**: 전국 새마을금고의 금리, 경영평가등급, BIS 비율 등을 한눈에 비교할 수 있는 유용한 웹 서비스 [^54]\n* **1992년 ANSI 아트**: 1992년 미국 대선 당시 유행했던 레트로 감성의 ANSI 아트 \"텔레코믹스\" 아카이브 [^30]\n* **전문가의 모호한 답변**: \"상황에 따라 다릅니다(It depends)\"라며 전문가들이 명확한 직답을 피하는 진짜 이유 [^32]\n* **레트로 GUI 탐험**: 과거 향수를 자극하는 초창기 데스크톱 그래픽 사용자 인터페이스(GUI) 디자인 살펴보기 [^33]\n* **속도의 철학**: 번아웃을 막기 위해 '속도를 늦춰야 하는 이유'와 역설적으로 '속도를 늦춰야 빨라진다'는 업무 철학 [^68][^71]\n* **업계 용어(Jargon) 비판**: 본질을 흐리고 소통을 방해하는 불필요한 테크 업계 전문 용어 남용에 대한 비판 에세이 [^40]\n* **The Enhancement**: 인간의 능력 향상과 기술 진보의 경계에 대해 고찰한 철학적 에세이 [^37]\n\n---\n\n## 📝 큐레이터의 한마디\n오늘은 AI의 '실행력'이 돋보이는 하루입니다. 구글의 Gemini 3.1 Flash Live가 인간의 입과 귀를 대체할 실시간 음성 인터페이스를 제시했다면, Arm의 AGI CPU는 이러한 AI 에이전트들이 지치지 않고 생각할 수 있는 강력한 심장을 예고했습니다. 한편, 메타와 유튜브의 유죄 판결은 기술의 발전 속도만큼이나 '책임의 무게'도 무거워지고 있음을 시사합니다. 기술이 우리의 일상과 사회 시스템 깊숙이 스며들수록, 혁신과 윤리 사이의 균형을 잡기 위한 진통은 계속될 것입니다.\n\n[^1]: Apple adds new partners to its American Manufacturing Program - https://www.apple.com/newsroom/2026/03/apple-adds-new-partners-to-its-american-manufacturing-program/\n[^2]: Visual Studio Code 1.114 - https://code.visualstudio.com/updates/v1_114\n[^3]: What’s coming to our GitHub Actions 2026 security roadmap - https://github.blog/news-insights/product-news/whats-coming-to-our-github-actions-2026-security-roadmap/\n[^4]: A year of open source vulnerability trends: CVEs, advisories, and malware - https://github.blog/security/supply-chain-security/a-year-of-open-source-vulnerability-trends-cves-advisories-and-malware/\n[^5]: Long Term Support Channel Update for ChromeOS - http://chromereleases.googleblog.com/2026/03/long-term-support-channel-update-for_26.html\n[^6]: Chrome Dev for Android Update - http://chromereleases.googleblog.com/2026/03/chrome-dev-for-android-update_01339259797.html\n[^7]: Chrome Dev for Desktop Update - http://chromereleases.googleblog.com/2026/03/chrome-dev-for-desktop-update_025587525.html\n[^8]: Chrome for Android Update - http://chromereleases.googleblog.com/2026/03/chrome-for-android-update_0888810258.html\n[^9]: We’re partnering with multiple national teams ahead of soccer’s biggest global showdown. - https://blog.google/company-news/inside-google/company-announcements/soccer-nationalteam-partnerships/\n[^10]: The surprising photographers behind Google screensavers - https://blog.google/products-and-platforms/platforms/google-tv/google-devices-screensavers-photography/\n[^11]: Make the switch: Bring your AI memories and chat history to Gemini - https://blog.google/innovation-and-ai/products/gemini-app/switch-to-gemini-app/\n[^12]: Watch James Manyika talk AI and creativity with LL COOL J. - https://blog.google/innovation-and-ai/technology/ai/ll-cool-j-dialogues/\n[^13]: Transform your headphones into a live personal translator on iOS. - https://blog.google/products-and-platforms/products/translate/live-translate-with-headphones/\n[^14]: Announcing the winners of the MedGemma Impact Challenge - https://blog.google/innovation-and-ai/technology/health/med-gemma-impact-challenge/\n[^15]: Upgrade your creative performance with March’s Demand Gen Drop. - https://blog.google/products/ads-commerce/demand-gen-drop-march-2026/\n[^16]: Gemini 3.1 Flash Live: Making audio AI more natural and reliable - https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-live/\n[^17]: Build real-time conversational agents with Gemini 3.1 Flash Live - https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-3-1-flash-live/\n[^18]: Search Live is expanding globally - https://blog.google/products-and-platforms/products/search/search-live-global-expansion/\n[^19]: Into the Omniverse: NVIDIA GTC Showcases Virtual Worlds Powering the Physical AI Era - https://blogs.nvidia.com/blog/gtc-2026-virtual-worlds-physical-ai/\n[^20]: Game On: Five New Titles Now Streaming on GeForce NOW - https://blogs.nvidia.com/blog/geforce-now-thursday-screamer/\n[^21]: OpenAI puts erotic chatbot plans on hold 'indefinitely' - https://www.ft.com/content/de9bf0af-b241-424f-8229-5870b1c0d93d\n[^22]: Leaders of AI Firm Bought by Meta Are Restricted from Leaving China - https://www.wsj.com/tech/leaders-of-ai-firm-bought-by-meta-are-restricted-from-leaving-china-6b79da34\n[^23]: Lessons from Pyre That Shaped Pyrefly – Pyrefly - https://pyrefly.org/blog/lessons-from-pyre/\n[^24]: Netflix raising prices for a second time in a year - https://variety.com/2026/tv/news/netflix-raising-prices-second-time-in-a-year-1236700999/\n[^25]: A Homebrew Open-World Engine for the N64 [video] - https://www.youtube.com/watch?v=lXxmIw9axWw\n[^26]: Rewriting a 20-year-old Python library - https://www.b-list.org/weblog/2026/mar/23/20-year-library/\n[^27]: Iran's toll booth system is now controlling Hormuz traffic - https://www.lloydslist.com/LL1156720/Tehrans-toll-booth-system-is-now-controlling-Hormuz-traffic\n[^28]: Ask HN: How do you deal with obvious AI assistant usage in interviews - https://news.ycombinator.com/item?id=47536365\n[^29]: Iran oil revenue soars as it's the only exporter out of Hormuz - https://financialpost.com/commodities/energy/oil-gas/iran-oil-revenue-soars-hormuz\n[^30]: The ANSI art \"telecomics\" of the 1992 election - https://breakintochat.com/blog/2026/03/25/don-lokke-and-mack-the-mouse/\n[^31]: The AI boom wasn't built for the polycrisis - https://www.theatlantic.com/technology/2026/03/ai-boom-polycrisis/686559/\n[^32]: Why experts rarely give you a straight answer - https://idiallo.com/blog/it-depends-experts-never-give-straight-answers\n[^33]: A Look at Some Retro Desktop Graphical User Interfaces - https://www.goto10retro.com/p/a-look-at-some-retro-desktop-graphical\n[^34]: Gemini CLI not working for many users - https://github.com/google-gemini/gemini-cli/issues/23795\n[^35]: Update on Session Limits – /U/ClaudeOfficial - https://old.reddit.com/r/ClaudeAI/comments/1s4idaq/update_on_session_limits/\n[^36]: Framework Doesn't Matter - https://cemrehancavdar.com/2026/02/19/your-framework-may-not-matter/\n[^37]: The Enhancement - https://theattempts.substack.com/p/the-enhancement\n[^38]: Show HN: Convene – Marketplace and management software for event organizers - https://convene.markets/\n[^39]: Show HN: Memoir – Sync your AI coding memory across 11 tools and every device - https://github.com/camgitt/memoir\n[^40]: Jargon Sucks - https://om.co/2026/03/26/jargon-sucks/\n[^41]: We’re partnering with multiple national teams ahead of soccer’s biggest global showdown. - https://blog.google/company-news/inside-google/company-announcements/soccer-nationalteam-partnerships/\n[^42]: Make the switch: Bring your AI memories and chat history to Gemini - https://blog.google/innovation-and-ai/products/gemini-app/switch-to-gemini-app/\n[^43]: Gemini 3.1 Flash Live: Making audio AI more natural and reliable - https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-live/\n[^44]: 배심원단, 자사 플랫폼에서의 아동 성착취 사건에 대해 Meta의 책임 인정 - https://news.hada.io/topic?id=27893\n[^45]: Apple, 사용자가 직접 ‘미수정 확인’을 하지 않으면 버그 리포트를 임의로 닫는 문제 - https://news.hada.io/topic?id=27892\n[^46]: Apple이 나를 잃었다 - https://news.hada.io/topic?id=27891\n[^47]: ARC-AGI-3 - https://news.hada.io/topic?id=27890\n[^48]: 개인 백과사전 - https://news.hada.io/topic?id=27889\n[^49]: Show GN: Arxivify - 아무 문장이나 넣으면 논문 초록 이미지를 만들어줍니다 - https://news.hada.io/topic?id=27888\n[^50]: Meta와 YouTube, 소셜미디어 중독 유발 과실로 유죄 판결 - https://news.hada.io/topic?id=27887\n[^51]: Show GN: 유튜브 중독을 벗어나기 위한 디톡스 확장프로그램을 만들었습니다. - https://news.hada.io/topic?id=27884\n[^52]: Show GN: 케이-스킬 : 한국인을 위한 스킬 모음집 - https://news.hada.io/topic?id=27881\n[^53]: Chops - AI 에이전트 스킬을 한 곳에서 관리하는 macOS 앱 - https://news.hada.io/topic?id=27880\n[^54]: Show GN: 전국 새마을금고 금리와 경영평가등급/BIS등을 한눈에 비교하는 웹 앱 - https://news.hada.io/topic?id=27879\n[^55]: 테슬라 Model 3 컴퓨터를 사고 차량 부품으로 책상 위에서 구동하기 - https://news.hada.io/topic?id=27877\n[^56]: Show GN: aicasebook.dev | AI 개발 환경 사례집 (볼만한 정보를 지향) - https://news.hada.io/topic?id=27876\n[^57]: Show GN: LogXide — 12.5배 빠른 Rust 기반 Python 로깅 프레임워크 - https://news.hada.io/topic?id=27875\n[^58]: 이란 전쟁: 전략 부재가 초래한 미국의 자충수 - https://news.hada.io/topic?id=27874\n[^59]: Anthropic이 Claude Code Auto Mode를 설계한 방법 - https://news.hada.io/topic?id=27872\n[^60]: Arm AGI CPU 출시 (2026년 3월 24일 Arm 공식 발표) - https://news.hada.io/topic?id=27871\n[^61]: 나노 바나나 효과: AI가 건축 시각화를 재편하는 방법 - https://news.hada.io/topic?id=27870\n[^62]: 구글 TurboQuant: 극한 압축으로 AI 효율성을 재정의하다 - https://news.hada.io/topic?id=27867\n[^63]: 슬로베니아 당국, 이스라엘 기업 Black Cube의 선거 조작 시도 혐의 제기 - https://news.hada.io/topic?id=27866\n[^64]: Expect - 에이전트가 실제 브라우저에서 코드를 테스트하는 도구 - https://news.hada.io/topic?id=27865\n[^65]: Flighty Airports - 전 세계 공항의 실시간 운항 지연 현황 지도 - https://news.hada.io/topic?id=27864\n[^66]: 장기 실행 애플리케이션 개발을 위한 하네스 설계 - https://news.hada.io/topic?id=27863\n[^67]: EU는 여전히 개인 메시지와 사진을 스캔하려 함 - https://news.hada.io/topic?id=27862\n[^68]: 속도를 늦춰야 하는 이유 - https://news.hada.io/topic?id=27861\n[^69]: 소프트웨어 엔지니어를 위한 위험한 조언 - https://news.hada.io/topic?id=27860\n[^70]: gitagent - AI 에이전트 정의 및 관리를 위한 Git 기반 표준 - https://news.hada.io/topic?id=27859\n[^71]: 속도를 늦춰야 빨라진다 - https://news.hada.io/topic?id=27858\n[^72]: cq - 에이전트를 위한 Stack Overflow - https://news.hada.io/topic?id=27855\n[^73]: 라과디아 공항 조종사들, 치명적 활주로 충돌 전 수개월간 안전 경고 - https://news.hada.io/topic?id=27854\n[^74]: Arm AGI CPU 발표 - 에이전트형 AI 클라우드 시대를 위한 실리콘 기반 - https://news.hada.io/topic?id=27853\n[^75]: Watch James Manyika talk AI and creativity with LL COOL J. - https://blog.google/innovation-and-ai/technology/ai/ll-cool-j-dialogues/\n[^76]: Transform your headphones into a live personal translator on iOS. - https://blog.google/products-and-platforms/products/translate/live-translate-with-headphones/\n[^77]: Gemini 3.1 Flash Live: Making audio AI more natural and reliable - https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-live/\n[^78]: Search Live is expanding globally - https://blog.google/products-and-platforms/products/search/search-live-global-expansion/\n[^79]: How Kensho built a multi-agent framework with LangGraph to solve trusted financial data retrieval - https://blog.langchain.com/customers-kensho/\n[^80]: How we build evals for Deep Agents - https://blog.langchain.com/how-we-build-evals-for-deep-agents/\n[^81]: How Middleware Lets You Customize Your Agent Harness - https://blog.langchain.com/how-middleware-lets-you-customize-your-agent-harness/\n[^82]: Gemini 3.1 Flash Live: Making audio AI more natural and reliable - https://deepmind.google/blog/gemini-3-1-flash-live-making-audio-ai-more-natural-and-reliable/\n[^83]: Introducing Flaky Test Detection in Bitbucket Tests - https://www.atlassian.com/blog/bitbucket/introducing-flaky-test-detection-in-bitbucket-tests\n[^84]: Gemini 3.1 Flash Live: Making audio AI more natural and reliable - https://deepmind.google/blog/gemini-3-1-flash-live-making-audio-ai-more-natural-and-reliable/\n[^85]: AI-Assisted Java Application Development with Agent Skills - https://blog.jetbrains.com/idea/2026/03/ai-assisted-java-application-development-with-agent-skills/\n[^86]: A one-line Kubernetes fix that saved 600 hours a year - https://blog.cloudflare.com/one-line-kubernetes-fix-saved-600-hours-a-year/\n[^87]: The new AI literacy: Insights from student developers - https://cloud.google.com/blog/topics/developers-practitioners/how-uc-berkeley-students-use-ai-as-a-learning-partner/\n[^88]: How FM Logistic tackled the traveling salesman problem at warehouse scale with AlphaEvolve - https://cloud.google.com/blog/products/ai-machine-learning/how-fm-logistic-tackled-the-traveling-salesman-problem-at-warehouse-scale-with-alphaevolve/\n\u003cREPORT_STRUCTURE_END\u003e",
+  "systemPrompt": "당신은 매일 아침 기술 뉴스를 정리해주는 '프리미엄 테크 뉴스 브리핑 봇'입니다.\n\n**핵심 목표:**\n1. **정보의 완결성:** 제공된 피드 데이터(30개 이상)를 절대 누락하지 말고 모두 포함하세요.\n2. **정보의 위계화:** 모든 정보를 나열하는 대신, 중요도에 따라 섹션을 나누어 강약을 조절하세요.\n3. **가독성 극대화:** 바쁜 현대인이 3분 안에 훑어볼 수 있도록 매거진 스타일로 편집하세요.\n4. **URL 컨텍스트 활용:** 제공된 URL의 실제 콘텐츠를 분석하여, 제목 뒤에 숨겨진 맥락과 통찰을 찾아내세요.\n\n**콘텐츠 분류 및 작성 알고리즘 (반드시 준수):**\n1. 🏆 Top Story (1개): 가장 파급력이 크고 중요한 뉴스 1개를 선정하여 심층 분석.\n2. 🔍 Deep Dive (3~4개): 업계 주요 트렌드 뉴스 선정 (What/Why/Impact 구조).\n3. 🛠️ Geek's Corner: 개발 도구, 라이브러리, 논문, 영상은 반드시 이 섹션의 '표(Table)'로 정리.\n4. ⚡ Lightning Round: 위 섹션에 포함되지 않은 **나머지 모든 뉴스**를 주제별로 분류하여 1줄 요약. (절대 누락 금지)\n\n**인용(Citation) 규칙 🚨 CRITICAL:**\n- 문장이나 항목 끝에 반드시 `[^n]` 형태로 출처를 남기세요.\n- 보고서 맨 마지막에 `[^n]: 기사제목 - URL` 리스트를 생성하세요.\n\n**보고서 출력 템플릿:**\n\u003cREPORT_STRUCTURE_START\u003e\n# ☕️ {오늘날짜}: 데일리 테크 브리핑\n\n\u003e **💡 오늘의 한 줄 요약:** {{전체 핵심 요약}}\n\n---\n\n## 🏆 Top Story: 오늘의 헤드라인\n### {{기사 제목}}\n{{심층 분석 내용}}\n\u003e **Key Point:** {{핵심 요약}} [^n]\n\n---\n\n## 🔍 주요 이슈 Deep Dive\n### 1. {{제목}}\n- **What:** {{요약}}\n- **Why:** {{이유}}\n- **Impact:** {{전망}} [^n]\n\n(3~4개 항목 작성)\n\n---\n\n## 🛠️ Geek's Corner: 도구 \u0026 리소스\n| 구분 | 이름 | 설명 |\n| :--- | :--- | :--- |\n| **Tool** | **{{이름}}** | {{설명}} [^n] |\n| **Paper** | **{{제목}}** | {{주제}} [^n] |\n\n---\n\n## ⚡️ Lightning Round: 분야별 단신 모음\n#### 💻 개발 \u0026 인프라\n* **{{제목}}**: {{1줄 요약}} [^n]\n(나머지 카테고리 계속)\n\n---\n\n## 📝 큐레이터의 한마디\n{{총평}}\n\n{{Footnotes}}\n\u003cREPORT_STRUCTURE_END\u003e",
+  "userPrompt": "다음 RSS 피드 데이터를 분석하여, 시스템 프롬프트에 정의된 '데일리 테크 브리핑' 형식으로 보고서를 작성해주세요.\n\n**입력 데이터:**\n1. **Apple adds new partners to its American Manufacturing Program\n**\n   - 출처: Apple Newsroom\n   - 링크: https://www.apple.com/newsroom/2026/03/apple-adds-new-partners-to-its-american-manufacturing-program/\n\n2. **Visual Studio Code 1.114**\n   - 출처: Visual Studio Code - Code Editing. Redefined.\n   - 링크: https://code.visualstudio.com/updates/v1_114\n\n3. **What’s coming to our GitHub Actions 2026 security roadmap**\n   - 출처: GitHub Blog\n   - 링크: https://github.blog/news-insights/product-news/whats-coming-to-our-github-actions-2026-security-roadmap/\n\n4. **A year of open source vulnerability trends: CVEs, advisories, and malware**\n   - 출처: GitHub Blog\n   - 링크: https://github.blog/security/supply-chain-security/a-year-of-open-source-vulnerability-trends-cves-advisories-and-malware/\n\n5. **Long Term Support Channel Update for ChromeOS**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2026/03/long-term-support-channel-update-for_26.html\n\n6. **Chrome Dev for Android Update**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2026/03/chrome-dev-for-android-update_01339259797.html\n\n7. **Chrome Dev for Desktop Update**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2026/03/chrome-dev-for-desktop-update_025587525.html\n\n8. **Chrome for Android Update**\n   - 출처: Google Chrome Releases\n   - 링크: http://chromereleases.googleblog.com/2026/03/chrome-for-android-update_0888810258.html\n\n9. **We’re partnering with multiple national teams ahead of soccer’s biggest global showdown.**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/company-news/inside-google/company-announcements/soccer-nationalteam-partnerships/\n\n10. **The surprising photographers behind Google screensavers**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/products-and-platforms/platforms/google-tv/google-devices-screensavers-photography/\n\n11. **Make the switch: Bring your AI memories and chat history to Gemini**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/innovation-and-ai/products/gemini-app/switch-to-gemini-app/\n\n12. **Watch James Manyika talk AI and creativity with LL COOL J.**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/innovation-and-ai/technology/ai/ll-cool-j-dialogues/\n\n13. **Transform your headphones into a live personal translator on iOS.**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/products-and-platforms/products/translate/live-translate-with-headphones/\n\n14. **Announcing the winners of the MedGemma Impact Challenge**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/innovation-and-ai/technology/health/med-gemma-impact-challenge/\n\n15. **Upgrade your creative performance with March’s Demand Gen Drop.**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/products/ads-commerce/demand-gen-drop-march-2026/\n\n16. **Gemini 3.1 Flash Live: Making audio AI more natural and reliable**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-live/\n\n17. **Build real-time conversational agents with Gemini 3.1 Flash Live**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-3-1-flash-live/\n\n18. **Search Live is expanding globally**\n   - 출처: The Official Google Blog\n   - 링크: https://blog.google/products-and-platforms/products/search/search-live-global-expansion/\n\n19. **Into the Omniverse: NVIDIA GTC Showcases Virtual Worlds Powering the Physical AI Era**\n   - 출처: NVIDIA Blog\n   - 링크: https://blogs.nvidia.com/blog/gtc-2026-virtual-worlds-physical-ai/\n\n20. **Game On: Five New Titles Now Streaming on GeForce NOW**\n   - 출처: NVIDIA Blog\n   - 링크: https://blogs.nvidia.com/blog/geforce-now-thursday-screamer/\n\n21. **OpenAI puts erotic chatbot plans on hold 'indefinitely'**\n   - 출처: Hacker News\n   - 링크: https://www.ft.com/content/de9bf0af-b241-424f-8229-5870b1c0d93d\n\n22. **Leaders of AI Firm Bought by Meta Are Restricted from Leaving China**\n   - 출처: Hacker News\n   - 링크: https://www.wsj.com/tech/leaders-of-ai-firm-bought-by-meta-are-restricted-from-leaving-china-6b79da34\n\n23. **Lessons from Pyre That Shaped Pyrefly – Pyrefly**\n   - 출처: Hacker News\n   - 링크: https://pyrefly.org/blog/lessons-from-pyre/\n\n24. **Netflix raising prices for a second time in a year**\n   - 출처: Hacker News\n   - 링크: https://variety.com/2026/tv/news/netflix-raising-prices-second-time-in-a-year-1236700999/\n\n25. **A Homebrew Open-World Engine for the N64 [video]**\n   - 출처: Hacker News\n   - 링크: https://www.youtube.com/watch?v=lXxmIw9axWw\n\n26. **Rewriting a 20-year-old Python library**\n   - 출처: Hacker News\n   - 링크: https://www.b-list.org/weblog/2026/mar/23/20-year-library/\n\n27. **Iran's toll booth system is now controlling Hormuz traffic**\n   - 출처: Hacker News\n   - 링크: https://www.lloydslist.com/LL1156720/Tehrans-toll-booth-system-is-now-controlling-Hormuz-traffic\n\n28. **Ask HN: How do you deal with obvious AI assistant usage in interviews**\n   - 출처: Hacker News\n   - 링크: https://news.ycombinator.com/item?id=47536365\n\n29. **Iran oil revenue soars as it's the only exporter out of Hormuz**\n   - 출처: Hacker News\n   - 링크: https://financialpost.com/commodities/energy/oil-gas/iran-oil-revenue-soars-hormuz\n\n30. **The ANSI art \"telecomics\" of the 1992 election**\n   - 출처: Hacker News\n   - 링크: https://breakintochat.com/blog/2026/03/25/don-lokke-and-mack-the-mouse/\n\n31. **The AI boom wasn't built for the polycrisis**\n   - 출처: Hacker News\n   - 링크: https://www.theatlantic.com/technology/2026/03/ai-boom-polycrisis/686559/\n\n32. **Why experts rarely give you a straight answer**\n   - 출처: Hacker News\n   - 링크: https://idiallo.com/blog/it-depends-experts-never-give-straight-answers\n\n33. **A Look at Some Retro Desktop Graphical User Interfaces**\n   - 출처: Hacker News\n   - 링크: https://www.goto10retro.com/p/a-look-at-some-retro-desktop-graphical\n\n34. **Gemini CLI not working for many users**\n   - 출처: Hacker News\n   - 링크: https://github.com/google-gemini/gemini-cli/issues/23795\n\n35. **Update on Session Limits – /U/ClaudeOfficial**\n   - 출처: Hacker News\n   - 링크: https://old.reddit.com/r/ClaudeAI/comments/1s4idaq/update_on_session_limits/\n\n36. **Framework Doesn't Matter**\n   - 출처: Hacker News\n   - 링크: https://cemrehancavdar.com/2026/02/19/your-framework-may-not-matter/\n\n37. **The Enhancement**\n   - 출처: Hacker News\n   - 링크: https://theattempts.substack.com/p/the-enhancement\n\n38. **Show HN: Convene – Marketplace and management software for event organizers**\n   - 출처: Hacker News\n   - 링크: https://convene.markets/\n\n39. **Show HN: Memoir – Sync your AI coding memory across 11 tools and every device**\n   - 출처: Hacker News\n   - 링크: https://github.com/camgitt/memoir\n\n40. **Jargon Sucks**\n   - 출처: Hacker News\n   - 링크: https://om.co/2026/03/26/jargon-sucks/\n\n41. **We’re partnering with multiple national teams ahead of soccer’s biggest global showdown.**\n   - 출처: Gemini\n   - 링크: https://blog.google/company-news/inside-google/company-announcements/soccer-nationalteam-partnerships/\n\n42. **Make the switch: Bring your AI memories and chat history to Gemini**\n   - 출처: Gemini\n   - 링크: https://blog.google/innovation-and-ai/products/gemini-app/switch-to-gemini-app/\n\n43. **Gemini 3.1 Flash Live: Making audio AI more natural and reliable**\n   - 출처: Gemini\n   - 링크: https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-live/\n\n44. **배심원단, 자사 플랫폼에서의 아동 성착취 사건에 대해 Meta의 책임 인정**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27893\n\n45. **Apple, 사용자가 직접 ‘미수정 확인’을 하지 않으면 버그 리포트를 임의로 닫는 문제**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27892\n\n46. **Apple이 나를 잃었다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27891\n\n47. **ARC-AGI-3**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27890\n\n48. **개인 백과사전**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27889\n\n49. **Show GN: Arxivify - 아무 문장이나 넣으면 논문 초록 이미지를 만들어줍니다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27888\n\n50. **Meta와 YouTube, 소셜미디어 중독 유발 과실로 유죄 판결**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27887\n\n51. **Show GN: 유튜브 중독을 벗어나기 위한 디톡스 확장프로그램을 만들었습니다.**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27884\n\n52. **Show GN: 케이-스킬 : 한국인을 위한 스킬 모음집**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27881\n\n53. **Chops - AI 에이전트 스킬을 한 곳에서 관리하는 macOS 앱**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27880\n\n54. **Show GN: 전국 새마을금고 금리와 경영평가등급/BIS등을 한눈에 비교하는 웹 앱**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27879\n\n55. **테슬라 Model 3 컴퓨터를 사고 차량 부품으로 책상 위에서 구동하기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27877\n\n56. **Show GN: aicasebook.dev | AI 개발 환경 사례집 (볼만한 정보를 지향)**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27876\n\n57. **Show GN: LogXide — 12.5배 빠른 Rust 기반 Python 로깅 프레임워크**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27875\n\n58. **이란 전쟁: 전략 부재가 초래한 미국의 자충수**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27874\n\n59. **Anthropic이 Claude Code Auto Mode를 설계한 방법**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27872\n\n60. **Arm AGI CPU 출시 (2026년 3월 24일 Arm 공식 발표)**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27871\n\n61. **나노 바나나 효과: AI가 건축 시각화를 재편하는 방법**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27870\n\n62. **구글 TurboQuant: 극한 압축으로 AI 효율성을 재정의하다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27867\n\n63. **슬로베니아 당국, 이스라엘 기업 Black Cube의 선거 조작 시도 혐의 제기**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27866\n\n64. **Expect - 에이전트가 실제 브라우저에서 코드를 테스트하는 도구**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27865\n\n65. **Flighty Airports - 전 세계 공항의 실시간 운항 지연 현황 지도**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27864\n\n66. **장기 실행 애플리케이션 개발을 위한 하네스 설계**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27863\n\n67. **EU는 여전히 개인 메시지와 사진을 스캔하려 함**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27862\n\n68. **속도를 늦춰야 하는 이유**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27861\n\n69. **소프트웨어 엔지니어를 위한 위험한 조언**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27860\n\n70. **gitagent - AI 에이전트 정의 및 관리를 위한 Git 기반 표준**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27859\n\n71. **속도를 늦춰야 빨라진다**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27858\n\n72. **cq - 에이전트를 위한 Stack Overflow**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27855\n\n73. **라과디아 공항 조종사들, 치명적 활주로 충돌 전 수개월간 안전 경고**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27854\n\n74. **Arm AGI CPU 발표 - 에이전트형 AI 클라우드 시대를 위한 실리콘 기반**\n   - 출처: GeekNews\n   - 링크: https://news.hada.io/topic?id=27853\n\n75. **Watch James Manyika talk AI and creativity with LL COOL J.**\n   - 출처: AI\n   - 링크: https://blog.google/innovation-and-ai/technology/ai/ll-cool-j-dialogues/\n\n76. **Transform your headphones into a live personal translator on iOS.**\n   - 출처: AI\n   - 링크: https://blog.google/products-and-platforms/products/translate/live-translate-with-headphones/\n\n77. **Gemini 3.1 Flash Live: Making audio AI more natural and reliable**\n   - 출처: AI\n   - 링크: https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-live/\n\n78. **Search Live is expanding globally**\n   - 출처: AI\n   - 링크: https://blog.google/products-and-platforms/products/search/search-live-global-expansion/\n\n79. **How Kensho built a multi-agent framework with LangGraph to solve trusted financial data retrieval**\n   - 출처: LangChain Blog\n   - 링크: https://blog.langchain.com/customers-kensho/\n\n80. **How we build evals for Deep Agents**\n   - 출처: LangChain Blog\n   - 링크: https://blog.langchain.com/how-we-build-evals-for-deep-agents/\n\n81. **How Middleware Lets You Customize Your Agent Harness**\n   - 출처: LangChain Blog\n   - 링크: https://blog.langchain.com/how-middleware-lets-you-customize-your-agent-harness/\n\n82. **Gemini 3.1 Flash Live: Making audio AI more natural and reliable**\n   - 출처: Google DeepMind Blog\n   - 링크: https://deepmind.google/blog/gemini-3-1-flash-live-making-audio-ai-more-natural-and-reliable/\n\n83. **Introducing Flaky Test Detection in Bitbucket Tests**\n   - 출처: Atlassian Developer Blog\n   - 링크: https://www.atlassian.com/blog/bitbucket/introducing-flaky-test-detection-in-bitbucket-tests\n\n84. **Gemini 3.1 Flash Live: Making audio AI more natural and reliable**\n   - 출처: DeepMind\n   - 링크: https://deepmind.google/blog/gemini-3-1-flash-live-making-audio-ai-more-natural-and-reliable/\n\n85. **AI-Assisted Java Application Development with Agent Skills**\n   - 출처: IntelliJ IDEA : IntelliJ IDEA – the IDE for Professional Development in Java and Kotlin | The JetBrains Blog\n   - 링크: https://blog.jetbrains.com/idea/2026/03/ai-assisted-java-application-development-with-agent-skills/\n\n86. **A one-line Kubernetes fix that saved 600 hours a year**\n   - 출처: Cloudflare Blog\n   - 링크: https://blog.cloudflare.com/one-line-kubernetes-fix-saved-600-hours-a-year/\n\n87. **The new AI literacy: Insights from student developers**\n   - 출처: AI \u0026 Machine Learning\n   - 링크: https://cloud.google.com/blog/topics/developers-practitioners/how-uc-berkeley-students-use-ai-as-a-learning-partner/\n\n88. **How FM Logistic tackled the traveling salesman problem at warehouse scale with AlphaEvolve**\n   - 출처: AI \u0026 Machine Learning\n   - 링크: https://cloud.google.com/blog/products/ai-machine-learning/how-fm-logistic-tackled-the-traveling-salesman-problem-at-warehouse-scale-with-alphaevolve/\n\n\n",
+  "articles": [
+    {
+      "title": "Apple adds new partners to its American Manufacturing Program\n",
+      "link": "https://www.apple.com/newsroom/2026/03/apple-adds-new-partners-to-its-american-manufacturing-program/",
+      "source": "Apple Newsroom",
+      "category": "tech",
+      "publishedAt": "2026-03-26T13:00:36.652Z",
+      "description": "Apple announced new members of its American Manufacturing Program, expanding the company’s commitment to bring more advanced manufacturing to the U.S."
+    },
+    {
+      "title": "Visual Studio Code 1.114",
+      "link": "https://code.visualstudio.com/updates/v1_114",
+      "source": "Visual Studio Code - Code Editing. Redefined.",
+      "category": "tech",
+      "publishedAt": "2026-04-01T17:00:00Z",
+      "description": "\n      \u003cp\u003eLearn what's new in Visual Studio Code 1.114 (Insiders)\u003c/p\u003e\n      \u003cp\u003e\u003ca href=\"https://code.visualstudio.com/updates/v1_114\"\u003eRead the full article\u003c/a\u003e\u003c/p\u003e\n    "
+    },
+    {
+      "title": "What’s coming to our GitHub Actions 2026 security roadmap",
+      "link": "https://github.blog/news-insights/product-news/whats-coming-to-our-github-actions-2026-security-roadmap/",
+      "source": "GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-26T16:49:14Z",
+      "description": "\u003cp\u003eA look at GitHub Actions’ 2026 roadmap, outlining how secure defaults, policy controls, and CI/CD observability harden the software supply chain end to end.\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/news-insights/product-news/whats-coming-to-our-github-actions-2026-security-roadmap/\"\u003eWhat\u0026#8217;s coming to our GitHub Actions 2026 security roadmap\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "A year of open source vulnerability trends: CVEs, advisories, and malware",
+      "link": "https://github.blog/security/supply-chain-security/a-year-of-open-source-vulnerability-trends-cves-advisories-and-malware/",
+      "source": "GitHub Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-26T16:00:00Z",
+      "description": "\u003cp\u003eReviewed advisories hit a four-year low, malware advisories surged, and CNA publishing grew—here’s what changed and what it means for your triage and response. \u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://github.blog/security/supply-chain-security/a-year-of-open-source-vulnerability-trends-cves-advisories-and-malware/\"\u003eA year of open source vulnerability trends: CVEs, advisories, and malware\u003c/a\u003e appeared first on \u003ca href=\"https://github.blog\"\u003eThe GitHub Blog\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Long Term Support Channel Update for ChromeOS",
+      "link": "http://chromereleases.googleblog.com/2026/03/long-term-support-channel-update-for_26.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2026-03-26T14:04:00-07:00",
+      "description": "\u003cp\u003e\u003cspan style=\"font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003eA new LTC\u0026nbsp; version \u003c/span\u003e\u003cspan style=\"background-color: white; font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e144.0.7559.247 \u003c/span\u003e\u003cspan style=\"font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e(Platform Version: 16503.79.0\u003c/span\u003e\u003cspan style=\"background-color: white; font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e), is being\u003c/span\u003e\u003cspan style=\"font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e rolled out for most ChromeOS devices.\u0026nbsp;\u003c/span\u003e\u003c/p\u003e\u003cspan id=\"docs-internal-guid-e53bbd0e-7fff-840a-c51a-b6f43746de0f\"\u003e\u003cp dir=\"ltr\" style=\"line-height: 1.9871999999999999; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003eIf you have devices in the LTC channel, they will be updated to this version. The LTS channel remains on LTS-138 until April 21st, 2026.\u0026nbsp;\u003c/span\u003e\u003c/p\u003e\u003cbr /\u003e\u003cp dir=\"ltr\" style=\"line-height: 1.9871999999999999; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003eRelease notes for LTC-144 can be found\u003c/span\u003e\u003ca href=\"https://support.google.com/chrome/a/answer/12239814\" style=\"text-decoration-line: none;\"\u003e\u003cspan style=\"color: black; font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e \u003c/span\u003e\u003cspan style=\"color: #4184f3; font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-decoration-line: underline; text-decoration-skip-ink: none; vertical-align: baseline; white-space-collapse: preserve;\"\u003ehere\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e\u0026nbsp;\u003c/span\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height: 1.9871999999999999; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003eWant to know more about Long-term Support? Click\u003c/span\u003e\u003ca href=\"https://support.google.com/chrome/a/answer/11333726\" style=\"text-decoration-line: none;\"\u003e\u003cspan style=\"color: black; font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e \u003c/span\u003e\u003cspan style=\"color: #4184f3; font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; text-decoration-line: underline; text-decoration-skip-ink: none; vertical-align: baseline; white-space-collapse: preserve;\"\u003ehere\u003c/span\u003e\u003c/a\u003e\u003c/p\u003e\u003cbr /\u003e\u003cp dir=\"ltr\" style=\"line-height: 1.9871999999999999; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003eAndy Wu\u003c/span\u003e\u003c/p\u003e\u003cp dir=\"ltr\" style=\"line-height: 1.9871999999999999; margin-bottom: 0pt; margin-top: 0pt;\"\u003e\u003cspan style=\"font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003eGoogle Chrome OS\u003c/span\u003e\u003c/p\u003e\u003cdiv\u003e\u003cspan style=\"font-family: Roboto, sans-serif; font-size: 13pt; font-variant-alternates: normal; font-variant-east-asian: normal; font-variant-emoji: normal; font-variant-numeric: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;\"\u003e\u003cbr /\u003e\u003c/span\u003e\u003c/div\u003e\u003c/span\u003e"
+    },
+    {
+      "title": "Chrome Dev for Android Update",
+      "link": "http://chromereleases.googleblog.com/2026/03/chrome-dev-for-android-update_01339259797.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2026-03-26T09:43:32.911-07:00",
+      "description": "\u003cp\u003eHi everyone! We've just released Chrome Dev 148 (148.0.7752.0) for Android. It's now available on \u003ca href=\"https://play.google.com/store/apps/details?id=com.chrome.dev\"\u003eGoogle Play\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eYou can see a partial list of the changes in the \u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/148.0.7739.3..148.0.7752.0?pretty=fuller\u0026amp;n=10000\"\u003eGit log\u003c/a\u003e. For details on new features, check out the \u003ca href=\"https://blog.chromium.org\"\u003eChromium blog\u003c/a\u003e, and for details on web platform updates, check \u003ca href=\"https://www.chromestatus.com/features#milestone%3D148\"\u003ehere\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eIf you find a new issue, please let us know by \u003ca href=\"https://code.google.com/p/chromium/issues/entry?template=Android%20Issue\"\u003efiling a bug\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eChrome Release Team\u003cbr /\u003e\u003ca href=\"https://www.google.com/chrome\"\u003e\u003c/a\u003e\u003ca href=\"https://www.google.com/chrome\"\u003eGoogle Chrome\u003c/a\u003e\u003c/p\u003e"
+    },
+    {
+      "title": "Chrome Dev for Desktop Update",
+      "link": "http://chromereleases.googleblog.com/2026/03/chrome-dev-for-desktop-update_025587525.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2026-03-26T09:28:33.448-07:00",
+      "description": "\u003cp\u003eThe Dev channel has been updated to 148.0.7753.0 for Windows, Mac and Linux.\u003c/p\u003e\u003cp\u003eA partial list of changes is available in the \u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/148.0.7743.0..148.0.7753.0?pretty=fuller\u0026amp;n=10000\"\u003eGit log\u003c/a\u003e. Interested in \u003ca href=\"https://www.chromium.org/getting-involved/dev-channel/\"\u003eswitching\u003c/a\u003e release channels? Find out \u003ca href=\"https://www.chromium.org/getting-involved/dev-channel/\"\u003ehow\u003c/a\u003e. If you find a new issue, please let us know by \u003ca href=\"https://crbug.com/\"\u003efiling a bug\u003c/a\u003e. The \u003ca href=\"https://productforums.google.com/forum/#!forum/chrome\"\u003ecommunity help forum\u003c/a\u003e is also a great place to reach out for help or learn about common issues.\u003c/p\u003e\u003cp\u003eChrome Release Team\u003cbr /\u003e\u003ca href=\"https://www.google.com/chrome\"\u003e\u003c/a\u003e\u003ca href=\"https://www.google.com/chrome\"\u003eGoogle Chrome\u003c/a\u003e\u003c/p\u003e"
+    },
+    {
+      "title": "Chrome for Android Update",
+      "link": "http://chromereleases.googleblog.com/2026/03/chrome-for-android-update_0888810258.html",
+      "source": "Google Chrome Releases",
+      "category": "tech",
+      "publishedAt": "2026-03-25T17:00:00-07:00",
+      "description": "\u003cp\u003e\u0026nbsp;Hello Everyone! We've just released Chrome 147 (147.0.7727.24) for Android to a small percentage of users. It'll become\u0026nbsp;\u003ca href=\"https://play.google.com/store/apps/details?id=com.android.chrome\"\u003eavailable on Google Play\u003c/a\u003e\u0026nbsp;over the next few days. You can find more details about early Stable releases\u0026nbsp;\u003ca href=\"https://developer.chrome.com/blog/early-stable/\"\u003ehere\u003c/a\u003e.\u003c/p\u003eThis release includes stability and performance improvements. You can see a full list of the changes in the\u0026nbsp;\u003ca href=\"https://chromium.googlesource.com/chromium/src/+log/146.0.7680.164..147.0.7727.24?pretty=fuller\u0026amp;n=10000\"\u003eGit log\u003c/a\u003e. If you find a new issue, please let us know by\u0026nbsp;\u003ca href=\"https://code.google.com/p/chromium/issues/entry?template=Android%20Issue\"\u003efiling a bug\u003c/a\u003e.\u003cbr /\u003e\u003cbr /\u003eHarry Souders\u003cbr /\u003e\u003ca href=\"https://www.google.com/chrome/\"\u003eGoogle Chrome\u003c/a\u003e"
+    },
+    {
+      "title": "We’re partnering with multiple national teams ahead of soccer’s biggest global showdown.",
+      "link": "https://blog.google/company-news/inside-google/company-announcements/soccer-nationalteam-partnerships/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-26T20:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/WorldCup20261_social.max-600x600.format-webp.webp\"\u003eThe countdown to a summer of unforgettable soccer is officially on! This year, we're helping fans explore the tournament, find inspiration and get closer to the action b…"
+    },
+    {
+      "title": "The surprising photographers behind Google screensavers",
+      "link": "https://blog.google/products-and-platforms/platforms/google-tv/google-devices-screensavers-photography/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-26T19:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Screensaver_social.max-600x600.format-webp.webp\"\u003eGet the origin story behind the stunning wallpapers you see on Google TV Streamer, Nest Hub and other Google TV devices."
+    },
+    {
+      "title": "Make the switch: Bring your AI memories and chat history to Gemini",
+      "link": "https://blog.google/innovation-and-ai/products/gemini-app/switch-to-gemini-app/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-26T19:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/PlayStore_Promo_Switch-To-Gemin.max-600x600.format-webp.webp\"\u003eThe Gemini app just made it easier to switch from another AI chat app, without starting from scratch."
+    },
+    {
+      "title": "Watch James Manyika talk AI and creativity with LL COOL J.",
+      "link": "https://blog.google/innovation-and-ai/technology/ai/ll-cool-j-dialogues/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-26T17:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Approved_thumbnail_with_logo.max-600x600.format-webp.webp\"\u003eIn the latest episode of our Dialogues on Technology and Society series, LL COOL J sits down with James Manyika."
+    },
+    {
+      "title": "Transform your headphones into a live personal translator on iOS.",
+      "link": "https://blog.google/products-and-platforms/products/translate/live-translate-with-headphones/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-26T16:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Static-InterstitialscreenJapane.max-600x600.format-webp.webp\"\u003eGoogle Translate’s Live translate with headphones is officially arriving on iOS! And we're expanding the capability for both iOS and Android users to even more countries…"
+    },
+    {
+      "title": "Announcing the winners of the MedGemma Impact Challenge",
+      "link": "https://blog.google/innovation-and-ai/technology/health/med-gemma-impact-challenge/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-26T16:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/MedGemma_Impact_Challenge_Hero.max-600x600.format-webp.webp\"\u003eThe winners of the MedGemma Impact Challenge demonstrated the potential of Google’s open medical models for solving diverse healthcare challenges."
+    },
+    {
+      "title": "Upgrade your creative performance with March’s Demand Gen Drop.",
+      "link": "https://blog.google/products/ads-commerce/demand-gen-drop-march-2026/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-26T16:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Demand_Gen_March_Drop_YTAM_Fram.max-600x600.format-webp.webp\"\u003eLearn more about our latest Demand Gen Drop and ways to maximize campaign performance in Demand Gen campaigns."
+    },
+    {
+      "title": "Gemini 3.1 Flash Live: Making audio AI more natural and reliable",
+      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-live/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-26T15:21:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-3.1-flash-live_blog_head.max-600x600.format-webp.webp\"\u003eGemini 3.1 Flash Live is now available across Google products."
+    },
+    {
+      "title": "Build real-time conversational agents with Gemini 3.1 Flash Live",
+      "link": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-3-1-flash-live/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-26T15:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/build_with_gemini-3.1-flash-liv.max-600x600.format-webp.webp\"\u003eGoogle is launching Gemini 3.1 Flash Live via the Live API in Google AI Studio, for building realtime voice and vision agents."
+    },
+    {
+      "title": "Search Live is expanding globally",
+      "link": "https://blog.google/products-and-platforms/products/search/search-live-global-expansion/",
+      "source": "The Official Google Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-26T15:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Search_Live_blog_header.max-600x600.format-webp.webp\"\u003eWe’re expanding Search Live globally, to all languages and locations where AI Mode is available."
+    },
+    {
+      "title": "Into the Omniverse: NVIDIA GTC Showcases Virtual Worlds Powering the Physical AI Era",
+      "link": "https://blogs.nvidia.com/blog/gtc-2026-virtual-worlds-physical-ai/",
+      "source": "NVIDIA Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-26T15:00:56Z",
+      "description": "Editor’s note: This post is part of Into the Omniverse, a series focused on how developers, 3D practitioners, and enterprises can transform their workflows using the latest advances in OpenUSD and NVIDIA Omniverse. NVIDIA GTC last week showcased a turning point in physical AI: Robots, vehicles and factories are scaling from single use cases and [\u0026#8230;]"
+    },
+    {
+      "title": "Game On: Five New Titles Now Streaming on GeForce NOW",
+      "link": "https://blogs.nvidia.com/blog/geforce-now-thursday-screamer/",
+      "source": "NVIDIA Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-26T13:00:47Z",
+      "description": "That gaming backlog won’t clear itself — GeForce NOW is here to help. Stream the latest titles straight from the cloud across a variety of devices. This week, five new titles are ready to play instantly in the cloud gaming platform’s library. Screamer drifts onto the scene with retro‑racing attitude and pixel‑perfect speed. Plus, Honkai: Star Rail Version [\u0026#8230;]"
+    },
+    {
+      "title": "OpenAI puts erotic chatbot plans on hold 'indefinitely'",
+      "link": "https://www.ft.com/content/de9bf0af-b241-424f-8229-5870b1c0d93d",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-26T22:06:57Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.ft.com/content/de9bf0af-b241-424f-8229-5870b1c0d93d\"\u003ehttps://www.ft.com/content/de9bf0af-b241-424f-8229-5870b1c0d93d\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47536436\"\u003ehttps://news.ycombinator.com/item?id=47536436\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Leaders of AI Firm Bought by Meta Are Restricted from Leaving China",
+      "link": "https://www.wsj.com/tech/leaders-of-ai-firm-bought-by-meta-are-restricted-from-leaving-china-6b79da34",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-26T22:03:52Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.wsj.com/tech/leaders-of-ai-firm-bought-by-meta-are-restricted-from-leaving-china-6b79da34\"\u003ehttps://www.wsj.com/tech/leaders-of-ai-firm-bought-by-meta-are-restricted-from-leaving-china-6b79da34\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47536406\"\u003ehttps://news.ycombinator.com/item?id=47536406\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Lessons from Pyre That Shaped Pyrefly – Pyrefly",
+      "link": "https://pyrefly.org/blog/lessons-from-pyre/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-26T22:03:00Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://pyrefly.org/blog/lessons-from-pyre/\"\u003ehttps://pyrefly.org/blog/lessons-from-pyre/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47536396\"\u003ehttps://news.ycombinator.com/item?id=47536396\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Netflix raising prices for a second time in a year",
+      "link": "https://variety.com/2026/tv/news/netflix-raising-prices-second-time-in-a-year-1236700999/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-26T22:02:48Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://variety.com/2026/tv/news/netflix-raising-prices-second-time-in-a-year-1236700999/\"\u003ehttps://variety.com/2026/tv/news/netflix-raising-prices-second-time-in-a-year-1236700999/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47536393\"\u003ehttps://news.ycombinator.com/item?id=47536393\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "A Homebrew Open-World Engine for the N64 [video]",
+      "link": "https://www.youtube.com/watch?v=lXxmIw9axWw",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-26T22:02:20Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.youtube.com/watch?v=lXxmIw9axWw\"\u003ehttps://www.youtube.com/watch?v=lXxmIw9axWw\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47536391\"\u003ehttps://news.ycombinator.com/item?id=47536391\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Rewriting a 20-year-old Python library",
+      "link": "https://www.b-list.org/weblog/2026/mar/23/20-year-library/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-26T22:02:05Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.b-list.org/weblog/2026/mar/23/20-year-library/\"\u003ehttps://www.b-list.org/weblog/2026/mar/23/20-year-library/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47536387\"\u003ehttps://news.ycombinator.com/item?id=47536387\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Iran's toll booth system is now controlling Hormuz traffic",
+      "link": "https://www.lloydslist.com/LL1156720/Tehrans-toll-booth-system-is-now-controlling-Hormuz-traffic",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-26T22:01:20Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.lloydslist.com/LL1156720/Tehrans-toll-booth-system-is-now-controlling-Hormuz-traffic\"\u003ehttps://www.lloydslist.com/LL1156720/Tehrans-toll-booth-system-is-now-controlling-Hormuz-traffic\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47536381\"\u003ehttps://news.ycombinator.com/item?id=47536381\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Ask HN: How do you deal with obvious AI assistant usage in interviews",
+      "link": "https://news.ycombinator.com/item?id=47536365",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-26T21:59:48Z",
+      "description": "\n\u003cp\u003eI've been interviewing for technical candidates in my current role, and I'm seeing what I believe is a relatively high rate of AI assistants/overlays during interviews.  The role I'm hiring for is a Sr. Release Engineer, and even (what appear to be) qualified candidates are showing up obviously reading from prompts.  I say obviously for two reasons:\u003cp\u003e1. I can SEE them reading.  Their eyes go back and forth, and it's clear they are reading.\u003cp\u003e2. They NEVER stop talking.  Normally getting answers out of engineers requires a legitimate question with a sound purpose.  I'm getting _immediate_ answers with well thought out, multi-point rationale.\u003cp\u003eSo...I'm rejecting all of those candidates the instant I detect it.  How are everyone else doing this?\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47536365\"\u003ehttps://news.ycombinator.com/item?id=47536365\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Iran oil revenue soars as it's the only exporter out of Hormuz",
+      "link": "https://financialpost.com/commodities/energy/oil-gas/iran-oil-revenue-soars-hormuz",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-26T21:55:04Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://financialpost.com/commodities/energy/oil-gas/iran-oil-revenue-soars-hormuz\"\u003ehttps://financialpost.com/commodities/energy/oil-gas/iran-oil-revenue-soars-hormuz\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47536316\"\u003ehttps://news.ycombinator.com/item?id=47536316\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The ANSI art \"telecomics\" of the 1992 election",
+      "link": "https://breakintochat.com/blog/2026/03/25/don-lokke-and-mack-the-mouse/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-26T21:54:18Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://breakintochat.com/blog/2026/03/25/don-lokke-and-mack-the-mouse/\"\u003ehttps://breakintochat.com/blog/2026/03/25/don-lokke-and-mack-the-mouse/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47536306\"\u003ehttps://news.ycombinator.com/item?id=47536306\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "The AI boom wasn't built for the polycrisis",
+      "link": "https://www.theatlantic.com/technology/2026/03/ai-boom-polycrisis/686559/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-26T21:53:35Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.theatlantic.com/technology/2026/03/ai-boom-polycrisis/686559/\"\u003ehttps://www.theatlantic.com/technology/2026/03/ai-boom-polycrisis/686559/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47536296\"\u003ehttps://news.ycombinator.com/item?id=47536296\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 3\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "Why experts rarely give you a straight answer",
+      "link": "https://idiallo.com/blog/it-depends-experts-never-give-straight-answers",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-26T21:52:44Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://idiallo.com/blog/it-depends-experts-never-give-straight-answers\"\u003ehttps://idiallo.com/blog/it-depends-experts-never-give-straight-answers\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47536286\"\u003ehttps://news.ycombinator.com/item?id=47536286\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 1\u003c/p\u003e\n"
+    },
+    {
+      "title": "A Look at Some Retro Desktop Graphical User Interfaces",
+      "link": "https://www.goto10retro.com/p/a-look-at-some-retro-desktop-graphical",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-26T21:50:06Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://www.goto10retro.com/p/a-look-at-some-retro-desktop-graphical\"\u003ehttps://www.goto10retro.com/p/a-look-at-some-retro-desktop-graphical\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47536263\"\u003ehttps://news.ycombinator.com/item?id=47536263\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Gemini CLI not working for many users",
+      "link": "https://github.com/google-gemini/gemini-cli/issues/23795",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-26T21:49:42Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/google-gemini/gemini-cli/issues/23795\"\u003ehttps://github.com/google-gemini/gemini-cli/issues/23795\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47536256\"\u003ehttps://news.ycombinator.com/item?id=47536256\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 2\u003c/p\u003e\n"
+    },
+    {
+      "title": "Update on Session Limits – /U/ClaudeOfficial",
+      "link": "https://old.reddit.com/r/ClaudeAI/comments/1s4idaq/update_on_session_limits/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-26T21:47:23Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://old.reddit.com/r/ClaudeAI/comments/1s4idaq/update_on_session_limits/\"\u003ehttps://old.reddit.com/r/ClaudeAI/comments/1s4idaq/update_on_session_limits/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47536232\"\u003ehttps://news.ycombinator.com/item?id=47536232\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 2\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Framework Doesn't Matter",
+      "link": "https://cemrehancavdar.com/2026/02/19/your-framework-may-not-matter/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-26T21:46:31Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://cemrehancavdar.com/2026/02/19/your-framework-may-not-matter/\"\u003ehttps://cemrehancavdar.com/2026/02/19/your-framework-may-not-matter/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47536224\"\u003ehttps://news.ycombinator.com/item?id=47536224\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "The Enhancement",
+      "link": "https://theattempts.substack.com/p/the-enhancement",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-26T21:46:08Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://theattempts.substack.com/p/the-enhancement\"\u003ehttps://theattempts.substack.com/p/the-enhancement\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47536219\"\u003ehttps://news.ycombinator.com/item?id=47536219\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Convene – Marketplace and management software for event organizers",
+      "link": "https://convene.markets/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-26T21:45:29Z",
+      "description": "\n\u003cp\u003eWe're software developers and farmers market/pop-up event organizers. In the past year we've run close to 200 events in NJ on Convene.markets - a booking engine, event management platform, and vendor marketplace for organizers to discover and connect with local makers, food purveyors, \u0026 farmers. We've spent the past few months opening up our platform for other organizers to now run their events and we'd love to connect with anyone running a farmers market, street festival or community event in the NJ/PA/NY region.\u003c/p\u003e\n\u003chr\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47536210\"\u003ehttps://news.ycombinator.com/item?id=47536210\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Show HN: Memoir – Sync your AI coding memory across 11 tools and every device",
+      "link": "https://github.com/camgitt/memoir",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-26T21:44:34Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://github.com/camgitt/memoir\"\u003ehttps://github.com/camgitt/memoir\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47536200\"\u003ehttps://news.ycombinator.com/item?id=47536200\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "Jargon Sucks",
+      "link": "https://om.co/2026/03/26/jargon-sucks/",
+      "source": "Hacker News",
+      "category": "tech",
+      "publishedAt": "2026-03-26T21:44:05Z",
+      "description": "\n\u003cp\u003eArticle URL: \u003ca href=\"https://om.co/2026/03/26/jargon-sucks/\"\u003ehttps://om.co/2026/03/26/jargon-sucks/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eComments URL: \u003ca href=\"https://news.ycombinator.com/item?id=47536192\"\u003ehttps://news.ycombinator.com/item?id=47536192\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003ePoints: 1\u003c/p\u003e\n\u003cp\u003e# Comments: 0\u003c/p\u003e\n"
+    },
+    {
+      "title": "We’re partnering with multiple national teams ahead of soccer’s biggest global showdown.",
+      "link": "https://blog.google/company-news/inside-google/company-announcements/soccer-nationalteam-partnerships/",
+      "source": "Gemini",
+      "category": "tech",
+      "publishedAt": "2026-03-26T20:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/WorldCup20261_social.max-600x600.format-webp.webp\"\u003eThe countdown to a summer of unforgettable soccer is officially on! This year, we're helping fans explore the tournament, find inspiration and get closer to the action b…"
+    },
+    {
+      "title": "Make the switch: Bring your AI memories and chat history to Gemini",
+      "link": "https://blog.google/innovation-and-ai/products/gemini-app/switch-to-gemini-app/",
+      "source": "Gemini",
+      "category": "tech",
+      "publishedAt": "2026-03-26T19:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/PlayStore_Promo_Switch-To-Gemin.max-600x600.format-webp.webp\"\u003eThe Gemini app just made it easier to switch from another AI chat app, without starting from scratch."
+    },
+    {
+      "title": "Gemini 3.1 Flash Live: Making audio AI more natural and reliable",
+      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-live/",
+      "source": "Gemini",
+      "category": "tech",
+      "publishedAt": "2026-03-26T15:21:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-3.1-flash-live_blog_head.max-600x600.format-webp.webp\"\u003eGemini 3.1 Flash Live is now available across Google products."
+    },
+    {
+      "title": "배심원단, 자사 플랫폼에서의 아동 성착취 사건에 대해 Meta의 책임 인정",
+      "link": "https://news.hada.io/topic?id=27893",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-27T06:33:21+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e뉴멕시코 주 배심원단이 \u003cstrong\u003eMeta가 Facebook과 Instagram에서 아동을 성범죄자로부터 보호하지 못했다\u003c/strong\u003e며 주법 위반 판결을 내림\u003c/li\u003e\n\u003cli\u003eMeta는 \u003cstrong\u003e‘불공정·기만적 상행위’ 및 ‘비양심적 행위’\u003c/strong\u003e 로 인정되어 \u003cstrong\u003e3억7,500만 달러 배상\u003c/strong\u003e 명령을 받았으며, 항소 방침...\u003c/p\u003e"
+    },
+    {
+      "title": "Apple, 사용자가 직접 ‘미수정 확인’을 하지 않으면 버그 리포트를 임의로 닫는 문제",
+      "link": "https://news.hada.io/topic?id=27892",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-27T04:33:20+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eApple이 \u003cstrong\u003eFeedback Assistant\u003c/strong\u003e를 통해 보고된 버그를, 사용자가 “아직 수정되지 않았음”을 \u003cstrong\u003e직접 확인(verify)\u003c/strong\u003e 하지 않으면 자동으로 종료함\u003c/li\u003e\n\u003cli\u003e3년간 응답이 없던 \u003cstrong\u003e네트워크 필터 확장 관련 개인정보 유출 버그(FB12088655)\u003c/strong\u003e 에 대해, Apple이 갑자기 ...\u003c/p\u003e"
+    },
+    {
+      "title": "Apple이 나를 잃었다",
+      "link": "https://news.hada.io/topic?id=27891",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-27T01:38:14+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e오랜 기간 Apple 제품을 사용해 온 사용자가 \u003cstrong\u003e개인 용도로 Apple 생태계를 떠나고 Linux·Android로 전환\u003c/strong\u003e을 선언\u003c/li\u003e\n\u003cli\u003e이탈 이유로 \u003cstrong\u003eGatekeeper 정책의 제약\u003c/strong\u003e, \u003cstrong\u003emacOS 26의 디자인 실패\u003c/strong\u003e, \u003cstrong\u003e신용카드 기반 나이 인증 문제\u003c/strong\u003e를 지적\u003c/li\u003e\n\u003cli\u003ema...\u003c/p\u003e"
+    },
+    {
+      "title": "ARC-AGI-3",
+      "link": "https://news.hada.io/topic?id=27890",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-27T01:35:13+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eARC-AGI-3\u003c/strong\u003e는 AI 에이전트의 \u003cstrong\u003e인간 수준 지능을 측정하기 위한 최초의 상호작용형 추론 벤치마크\u003c/strong\u003e로, 환경 탐색과 적응 학습 능력을 평가함\u003c/li\u003e\n\u003cli\u003e모든 과제는 \u003cstrong\u003e인간이 해결 가능한 환경\u003c/strong\u003e으로 구성되며, \u003cstrong\u003e시간에 따른 기술 습득 효율성과 장기 계획 ...\u003c/p\u003e"
+    },
+    {
+      "title": "개인 백과사전",
+      "link": "https://news.hada.io/topic?id=27889",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-26T23:33:28+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e팬데믹 이후 발견한 \u003cstrong\u003e1,351장의 가족 사진\u003c/strong\u003e을 정리하며 기억을 구조화하기 위해 \u003cstrong\u003eMediaWiki 기반 개인 위키\u003c/strong\u003e를 구축함\u003c/li\u003e\n\u003cli\u003e위키 형식으로 \u003cstrong\u003e사진, 인물, 사건을 연결\u003c/strong\u003e하면서 가족사와 개인사를 기사 형태로 재구성함\u003c/li\u003e\n\u003cli\u003e이후 \u003cstrong\u003eGoogle Photos, 위...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: Arxivify - 아무 문장이나 넣으면 논문 초록 이미지를 만들어줍니다",
+      "link": "https://news.hada.io/topic?id=27888",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-26T22:47:52+09:00",
+      "description": "\u003cp\u003e아무 문장 (헛소리라도) 넣으면 그럴싸한 논문 초록 이미지를 만들어주는 기능입니다\u003cbr /\u003e\n제목, 저자, 소속, Abstract, Keywords를 붙여주고, 결과물이 꽤 진지해서 더 웃깁니다.\u003c/p\u003e\n\u003cp\u003e예를 들어\u003cbr /\u003e\n\u0026quot;빵냄새가 나서 너무 배고파\u0026quot; 를 넣으면\u003c/p\u003e\n\u003cp\u003e\u0026quot;후각 자극에 의한 위장관 연동운동 항진 및 "
+    },
+    {
+      "title": "Meta와 YouTube, 소셜미디어 중독 유발 과실로 유죄 판결",
+      "link": "https://news.hada.io/topic?id=27887",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-26T22:33:53+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e로스앤젤레스 카운티 배심원단이 \u003cstrong\u003eMeta와 YouTube가 중독적 기능을 설계해 사용자에게 정신적 피해를 초래했다\u003c/strong\u003e고 판단\u003c/li\u003e\n\u003cli\u003eMeta는 \u003cstrong\u003e420만 달러\u003c/strong\u003e, YouTube는 \u003cstrong\u003e180만 달러\u003c/strong\u003e의 배상 명령을 받았으며, 이는 \u003cstrong\u003e소셜미디어 중독을 개인 상해로 인정한 첫 판...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: 유튜브 중독을 벗어나기 위한 디톡스 확장프로그램을 만들었습니다.",
+      "link": "https://news.hada.io/topic?id=27884",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-26T20:43:48+09:00",
+      "description": "\u003cp\u003e생산적인 하루를 보내고 싶은데 어떤 날은 집중이 잘 되고, 어떤  날은 하루종일 산만합니다.  왜 그런가 제 행동을 되짚어 가면서 고민해 봤더니, 아침에 유튜브를 안 본 날이 집중력이 더 좋다는 걸 깨닫게 되었습니다.\u003c/p\u003e\n\u003cp\u003e처음에는 개인용으로 유튜브 전체를 차단하는 스크립트를 만들어 썼는데요. 제 사용 패"
+    },
+    {
+      "title": "Show GN: 케이-스킬 : 한국인을 위한 스킬 모음집",
+      "link": "https://news.hada.io/topic?id=27881",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-26T16:44:01+09:00",
+      "description": "\u003cp\u003e한국인인가요? 이 스킬 모음집을 다운로드 받아 두세요. 언젠가 무조건 쓸 때가 옵니다!\u003cbr /\u003e\nSRT, KTX, KBO, 로또, 당근, 쿠팡, 카톡, 정부24, 홈택스 등등 귀찮은 것을 AI 에이전트에게 다 시켜버리세요.\u003c/p\u003e\n\u003cp\u003eClaude code, codex, opencode 등 각종 코딩 에이전트 지원합니다.\u003c/p\u003e\n\u003ch3\u003e현재 지원\u003c/h3\u003e\n\u003cul\u003e\n\u003cli"
+    },
+    {
+      "title": "Chops - AI 에이전트 스킬을 한 곳에서 관리하는 macOS 앱",
+      "link": "https://news.hada.io/topic?id=27880",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-26T16:16:06+09:00",
+      "description": "\u003cp\u003eClaude Code, Cursor, Codex, Windsurf, Amp 등 여러 AI 코딩 에이전트의 스킬 파일을 하나의 macOS 앱에서 탐색·편집·관리할 수 있는 오픈소스 도구입니다.\u003c/p\u003e\n\u003cp\u003edotfile을 직접 뒤지지 않아도 되며, 툴별로 올바른 보일러플레이트를 자동 생성해 새 스킬을 만들 수 있습니다. FSEvents 기반 실시간 파일 감지, 이"
+    },
+    {
+      "title": "Show GN: 전국 새마을금고 금리와 경영평가등급/BIS등을 한눈에 비교하는 웹 앱",
+      "link": "https://news.hada.io/topic?id=27879",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-26T15:33:45+09:00",
+      "description": "\u003cp\u003e안녕하세요, 전국 새마을금고의 예/적금 금리와 해당 지점의 경영 안정성을 함께 비교할 수 있는 웹 서비스(https://mgija.com)를 만들어 공유해 봅니다.\u003c/p\u003e\n\u003cp\u003e만든 계기\u003cbr /\u003e\n새마을금고는 각 법인(지점)마다 금리가 다르고 특판도 자주 나오지만, 이를 한곳에서 편하게 비교하기가 쉽지 않았습니다. 게다가 최근"
+    },
+    {
+      "title": "테슬라 Model 3 컴퓨터를 사고 차량 부품으로 책상 위에서 구동하기",
+      "link": "https://news.hada.io/topic?id=27877",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-26T14:32:52+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e테슬라 버그 바운티 참여\u003c/strong\u003e를 위해 eBay에서 \u003cstrong\u003eModel 3의 MCU와 오토파일럿 컴퓨터\u003c/strong\u003e를 구입해 데스크탑 환경에서 구동 시도\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e12V 전원 공급기와 터치스크린 모듈\u003c/strong\u003e을 추가 연결해 부팅에 성공했으며, \u003cstrong\u003e이더넷 포트\u003c/strong\u003e를 통해 내부 네트워크...\u003c/p\u003e"
+    },
+    {
+      "title": "Show GN: aicasebook.dev | AI 개발 환경 사례집 (볼만한 정보를 지향)",
+      "link": "https://news.hada.io/topic?id=27876",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-26T13:55:46+09:00",
+      "description": "\u003ch3\u003e배경\u003c/h3\u003e\n\u003cp\u003e작년에 Claude Code 커맨드 위주 세팅을 하고 만족하면서 썼음.\u003cbr /\u003e\n그런데 올해 스킬 공유나 다른 방법론들 알게 되면서\u003cbr /\u003e\n스스로 몇개월 만에 미개해졌다고 느낌.\u003c/p\u003e\n\u003cp\u003e\u003cem\u003e남들은 어떻게 쓰고, 커뮤니티 의견은 어떠한가?\u003c/em\u003e\u003cbr /\u003e\n이걸 따라가고 검색하는 서비스를 만들어봄.\u003c/p\u003e\n\u003cp\u003e\u003ca "
+    },
+    {
+      "title": "Show GN: LogXide — 12.5배 빠른 Rust 기반 Python 로깅 프레임워크",
+      "link": "https://news.hada.io/topic?id=27875",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-26T12:34:40+09:00",
+      "description": "\u003cp\u003e안녕하세요, Python 웹 애플리케이션 및 데이터 파이프라인과 같은 고부하 환경에서 파일 I/O 및 로깅 병목을 겪는 분들을 위한 \u003cstrong\u003eLogXide\u003c/strong\u003e를 소개합니다.\u003c/p\u003e\n\u003ch4\u003e1. 만든 이유 (The Problem)\u003c/h4\u003e\n\u003cp\u003ePython의 기본 \u003ccode\u003elogging\u003c/code\u003e 모듈은 순수 Python으로 작성되어 있습니다. 일반적인 환경에"
+    },
+    {
+      "title": "이란 전쟁: 전략 부재가 초래한 미국의 자충수",
+      "link": "https://news.hada.io/topic?id=27874",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-26T12:34:19+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e의회 승인 없이 개시된 불법적 전쟁\u003c/strong\u003e으로, 미국의 \u003cstrong\u003e전략적 판단 실패\u003c/strong\u003e가 장기적 손실을 초래한 사례로 평가됨\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e이란의 지리·인구 규모와 체제 구조\u003c/strong\u003e는 침공과 정권 붕괴를 어렵게 만들어, \u003cstrong\u003e공습 중심의 전쟁 계획이 비현실적 도박\u003c/strong\u003e이...\u003c/p\u003e"
+    },
+    {
+      "title": "Anthropic이 Claude Code Auto Mode를 설계한 방법",
+      "link": "https://news.hada.io/topic?id=27872",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-26T12:05:02+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e클로드 코드 사용자의 93%가 권한 프롬프트를 그냥 승인하는 \u003cstrong\u003e승인 피로\u003c/strong\u003e 현상을 해결하기 위해, 모델 기반 분류기로 승인 결정을 자동화하는 \u003cstrong\u003eauto mode\u003c/strong\u003e가 새로 도입\u003c/li\u003e\n\u003cli\u003eauto mode는 입력 레이어의 \u003cstrong\u003e프롬프트 인젝션 프로브\u003c/strong\u003e와 출력 레이어의 \u003cstrong\u003e트...\u003c/p\u003e"
+    },
+    {
+      "title": "Arm AGI CPU 출시 (2026년 3월 24일 Arm 공식 발표)",
+      "link": "https://news.hada.io/topic?id=27871",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-26T12:01:26+09:00",
+      "description": "\u003cp\u003eArm이 회사 역사상 처음으로 \u003cstrong\u003e자체 설계한 실리콘 제품(프로덕션 실리콘)\u003c/strong\u003e 을 출시하며 컴퓨트 플랫폼을 크게 확장했습니다.\u003cbr /\u003e\n그 첫 제품이 바로 \u003cstrong\u003eArm AGI CPU\u003c/strong\u003e입니다.\u003c/p\u003e\n\u003ch4\u003e주요 내용\u003c/h4\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eArm AGI CPU\u003c/strong\u003e는 \u003cstrong\u003e에이전틱 AI(Agentic AI)\u003c/stron"
+    },
+    {
+      "title": "나노 바나나 효과: AI가 건축 시각화를 재편하는 방법",
+      "link": "https://news.hada.io/topic?id=27870",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-26T10:07:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e최신 이미지 생성 모델인 \u003cstrong\u003eGemini 3 Pro Image\u003c/strong\u003e(코드명 \u0026quot;Nano Banana Pro\u0026quot;)가 건축 시각화 업계에서 흥분과 불안을 동시에 촉발\u003c/li\u003e\n\u003cli\u003e기존 AI 도구와 차별화되는 핵심은 \u003cstrong\u003e도면 해독 능력(blueprint literacy)\u003c/strong\u003e 으로, 평면도를 추상적 선이 아닌 건축 지시로 해석...\u003c/p\u003e"
+    },
+    {
+      "title": "구글 TurboQuant: 극한 압축으로 AI 효율성을 재정의하다",
+      "link": "https://news.hada.io/topic?id=27867",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-26T09:47:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e고차원 벡터의 \u003cstrong\u003e메모리 오버헤드 문제\u003c/strong\u003e를 근본적으로 해결하는 양자화 알고리듬 세트로, LLM의 키-값 캐시 압축과 벡터 검색 모두에 적용 가능\u003c/li\u003e\n\u003cli\u003ePolarQuant로 데이터를 고품질 압축한 뒤, QJL 알고리듬으로 잔여 오차를 1비트만으로 제거하는 \u003cstrong\u003e2단계 압축 구조\u003c/strong\u003e\n\u003c/li\u003e\n...\u003c/p\u003e"
+    },
+    {
+      "title": "슬로베니아 당국, 이스라엘 기업 Black Cube의 선거 조작 시도 혐의 제기",
+      "link": "https://news.hada.io/topic?id=27866",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-26T09:46:10+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e이스라엘 정보회사 Black Cube\u003c/strong\u003e가 슬로베니아 총선에 개입해 결과를 조작하려 한 혐의로 \u003cstrong\u003e정부의 공식 비난\u003c/strong\u003e을 받음\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e텔아비브발 전용기\u003c/strong\u003e를 타고 입국한 요원들이 \u003cstrong\u003e극우 포퓰리스트 야당 본부\u003c/strong\u003e를 방문한 사실이 확인됨\u003c/li\u003e\n\u003cli\u003e\n\u003cst...\u003c/p\u003e"
+    },
+    {
+      "title": "Expect - 에이전트가 실제 브라우저에서 코드를 테스트하는 도구",
+      "link": "https://news.hada.io/topic?id=27865",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-26T09:46:02+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e코드 변경 사항을 분석해 \u003cstrong\u003e실제 브라우저 기반 테스트 플랜\u003c/strong\u003e을 \u003cstrong\u003e자동 생성 및 실행\u003c/strong\u003e하는 CLI\u003c/li\u003e\n\u003cli\u003eClaude 또는 Codex를 \u003cstrong\u003e에이전트 백엔드\u003c/strong\u003e로 선택 가능하며, 자연어 명령으로 테스트 흐름을 지정할 수 있음\u003c/li\u003e\n\u003cli\u003e세가지 옵션으로 테스트: \u003ccode\u003echanges...\u003c/p\u003e"
+    },
+    {
+      "title": "Flighty Airports - 전 세계 공항의 실시간 운항 지연 현황 지도",
+      "link": "https://news.hada.io/topic?id=27864",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-26T09:43:10+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e전 세계 주요 공항의 \u003cstrong\u003e실시간 지연·결항 상태\u003c/strong\u003e를 시각적으로 보여주는 대시보드형 서비스\u003c/li\u003e\n\u003cli\u003e각 공항별 \u003cstrong\u003e출발·도착 지연 시간\u003c/strong\u003e, \u003cstrong\u003e지연 비율\u003c/strong\u003e, \u003cstrong\u003e결항 및 경보 상태\u003c/strong\u003e를 함께 표시해 운항 상황을 한눈에 파악 가능\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e북미 주요...\u003c/p\u003e"
+    },
+    {
+      "title": "장기 실행 애플리케이션 개발을 위한 하네스 설계",
+      "link": "https://news.hada.io/topic?id=27863",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-26T09:41:02+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eAnthropic이 \u003cstrong\u003e프론트엔드 디자인 품질 향상\u003c/strong\u003e과 \u003cstrong\u003e장기 자율 코딩\u003c/strong\u003e이라는 두 가지 문제를 동시에 해결하기 위해 GAN에서 영감을 받은 멀티 에이전트 구조를 개발\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e생성기(generator)와 평가기(evaluator)\u003c/strong\u003e 를 분리하는 구조로, 주관적 디자인 품질을 구체...\u003c/p\u003e"
+    },
+    {
+      "title": "EU는 여전히 개인 메시지와 사진을 스캔하려 함",
+      "link": "https://news.hada.io/topic?id=27862",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-26T09:40:09+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eChat Control 제안\u003c/strong\u003e은 모든 개인 디지털 통신을 자동으로 검사해 암호화된 메시지와 사진까지 감시 대상으로 포함함\u003c/li\u003e\n\u003cli\u003e이 조치는 \u003cstrong\u003e프라이버시와 데이터 보호 권리\u003c/strong\u003e를 약화시키며, \u003cstrong\u003eEU 시민 전체를 감시 대상\u003c/strong\u003e으로 만드는 구조임\u003c/li\u003e\n\u003cli\u003e자동 스캐너의...\u003c/p\u003e"
+    },
+    {
+      "title": "속도를 늦춰야 하는 이유",
+      "link": "https://news.hada.io/topic?id=27861",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-26T09:37:09+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e최근 \u003cstrong\u003eAI 코딩 에이전트\u003c/strong\u003e의 확산으로 개발 속도는 빨라졌지만, \u003cstrong\u003e소프트웨어 품질 저하와 불안정성\u003c/strong\u003e이 심화되고 있음\u003c/li\u003e\n\u003cli\u003e에이전트가 \u003cstrong\u003e반복 학습 능력 없이 동일한 오류를 누적\u003c/strong\u003e하며, 대규모 코드베이스에서는 \u003cstrong\u003e검색 재현율 저하와 복잡성 폭증\u003c/stro...\u003c/p\u003e"
+    },
+    {
+      "title": "소프트웨어 엔지니어를 위한 위험한 조언",
+      "link": "https://news.hada.io/topic?id=27860",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-26T09:34:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e실력 있는 시니어 엔지니어에게는 유용하지만 미숙한 엔지니어에게는 해가 될 수 있는 \u003cstrong\u003e\u0026quot;위험한 조언(dangerous advice)\u0026quot;\u003c/strong\u003e 개념을 다루는 글\n\u003cul\u003e\n\u003cli\u003e프로덕션 SQL 접근 권한 같은 것은 \u003cstrong\u003e\u0026quot;날카로운 도구(sharp tools)\u0026quot;\u003c/strong\u003e 임\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e스스로 업...\u003c/p\u003e"
+    },
+    {
+      "title": "gitagent - AI 에이전트 정의 및 관리를 위한 Git 기반 표준",
+      "link": "https://news.hada.io/topic?id=27859",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-26T09:31:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eGit Repo를 클론\u003c/strong\u003e 하는 것만으로 \u003cstrong\u003e에이전트를 구성 가능\u003c/strong\u003e하며, 버전 관리/협업/컴플라이언스 기능을 내장\u003c/li\u003e\n\u003cli\u003eClaude Code, OpenAI, CrewAI, Lyzr 등 다양한 AI 프레임워크와 호환, 하나의 정의로 여러 런타임에 배포 가능\u003c/li\u003e\n\u003cli\u003e\n\u003ccode\u003eagent.yaml\u003c/code\u003e + \u003ccode\u003eSO...\u003c/p\u003e"
+    },
+    {
+      "title": "속도를 늦춰야 빨라진다",
+      "link": "https://news.hada.io/topic?id=27858",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-26T09:21:01+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eAI 시대에 가장 반직관적인 실천은 \u003cstrong\u003e언제 속도를 늦출지 아는 것\u003c/strong\u003e이며, 실행이 저렴해질수록 그 앞 단계의 의사결정이 더 중요해짐\u003c/li\u003e\n\u003cli\u003eDaniel Kahneman의 \u003cstrong\u003eSystem 1(빠른 패턴 매칭)과 System 2(느린 분석적 사고)\u003c/strong\u003e 프레임워크를 AI 시대 소프트웨어 개발에 적용\u003c/li\u003e\n\u003cli...\u003c/p\u003e"
+    },
+    {
+      "title": "cq - 에이전트를 위한 Stack Overflow",
+      "link": "https://news.hada.io/topic?id=27855",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-26T08:53:02+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eMozilla AI가 공개한 \u003cstrong\u003ecq\u003c/strong\u003e는 AI 코딩 에이전트들이 학습한 지식을 공유하고, 동일한 실수를 반복하지 않도록 설계된 \u003cstrong\u003e공유 지식 커먼즈(shared commons)\u003c/strong\u003e 프로젝트\u003c/li\u003e\n\u003cli\u003eStack Overflow가 2014년 월 20만 건 이상의 질문에서 2025년 12월 \u003cstrong\u003e3,862건으로 급감\u003c/strong\u003e...\u003c/p\u003e"
+    },
+    {
+      "title": "라과디아 공항 조종사들, 치명적 활주로 충돌 전 수개월간 안전 경고",
+      "link": "https://news.hada.io/topic?id=27854",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-26T08:33:19+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003e라과디아 공항에서 발생한 \u003cstrong\u003e활주로 충돌 사고\u003c/strong\u003e 이전, 조종사들이 \u003cstrong\u003e관제 지시 오류·시야 불량·교통 혼잡\u003c/strong\u003e 등 반복적 위험을 NASA 보고서에 제기함\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eAviation Safety Reporting System\u003c/strong\u003e에는 착륙기와 이륙기가 \u003cstrong\u003e300피트 거리까지 접근\u003c/strong\u003e한...\u003c/p\u003e"
+    },
+    {
+      "title": "Arm AGI CPU 발표 - 에이전트형 AI 클라우드 시대를 위한 실리콘 기반",
+      "link": "https://news.hada.io/topic?id=27853",
+      "source": "GeekNews",
+      "category": "tech",
+      "publishedAt": "2026-03-26T07:33:26+09:00",
+      "description": "\u003cul\u003e\n\u003cli\u003eArm이 \u003cstrong\u003eNeoverse 플랫폼 기반의 AGI CPU\u003c/strong\u003e를 공개하며, 자율적 AI 인프라를 위한 생산 준비형 실리콘을 직접 제공\u003c/li\u003e\n\u003cli\u003e이 CPU는 \u003cstrong\u003e고밀도 랙 환경에서의 병렬 AI 워크로드\u003c/strong\u003e를 위해 최적화되어, 지속 부하에서도 높은 단일 스레드 성능과 메모리 대역폭을 유지\u003c/li\u003e\n\u003cli\u003e\n\u003cstr...\u003c/p\u003e"
+    },
+    {
+      "title": "Watch James Manyika talk AI and creativity with LL COOL J.",
+      "link": "https://blog.google/innovation-and-ai/technology/ai/ll-cool-j-dialogues/",
+      "source": "AI",
+      "category": "tech",
+      "publishedAt": "2026-03-26T17:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Approved_thumbnail_with_logo.max-600x600.format-webp.webp\"\u003eIn the latest episode of our Dialogues on Technology and Society series, LL COOL J sits down with James Manyika."
+    },
+    {
+      "title": "Transform your headphones into a live personal translator on iOS.",
+      "link": "https://blog.google/products-and-platforms/products/translate/live-translate-with-headphones/",
+      "source": "AI",
+      "category": "tech",
+      "publishedAt": "2026-03-26T16:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Static-InterstitialscreenJapane.max-600x600.format-webp.webp\"\u003eGoogle Translate’s Live translate with headphones is officially arriving on iOS! And we're expanding the capability for both iOS and Android users to even more countries…"
+    },
+    {
+      "title": "Gemini 3.1 Flash Live: Making audio AI more natural and reliable",
+      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-live/",
+      "source": "AI",
+      "category": "tech",
+      "publishedAt": "2026-03-26T15:21:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-3.1-flash-live_blog_head.max-600x600.format-webp.webp\"\u003eGemini 3.1 Flash Live is now available across Google products."
+    },
+    {
+      "title": "Search Live is expanding globally",
+      "link": "https://blog.google/products-and-platforms/products/search/search-live-global-expansion/",
+      "source": "AI",
+      "category": "tech",
+      "publishedAt": "2026-03-26T15:00:00Z",
+      "description": "\u003cimg src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Search_Live_blog_header.max-600x600.format-webp.webp\"\u003eWe’re expanding Search Live globally, to all languages and locations where AI Mode is available."
+    },
+    {
+      "title": "How Kensho built a multi-agent framework with LangGraph to solve trusted financial data retrieval",
+      "link": "https://blog.langchain.com/customers-kensho/",
+      "source": "LangChain Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-26T19:39:21Z",
+      "description": "Discover how Kensho, S\u0026P Global’s AI innovation engine, leveraged LangGraph to create its Grounding framework–a unified agentic access layer solving fragmented financial data retrieval at enterprise scale."
+    },
+    {
+      "title": "How we build evals for Deep Agents",
+      "link": "https://blog.langchain.com/how-we-build-evals-for-deep-agents/",
+      "source": "LangChain Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-26T15:18:56Z",
+      "description": "\u003cdiv class=\"kg-card kg-callout-card kg-callout-card-grey\"\u003e\u003cdiv class=\"kg-callout-emoji\"\u003e\u0026#x1F4A1;\u003c/div\u003e\u003cdiv class=\"kg-callout-text\"\u003e\u003cb\u003e\u003cstrong style=\"white-space: pre-wrap;\"\u003eTLDR:\u003c/strong\u003e\u003c/b\u003e The best agent evals directly measure an agent behavior we care about. Here\u0026apos;s how we source data, create metrics, and run well-scoped, targeted experiments over time to make agents more accurate and reliable.\u003c/div\u003e\u003c/div\u003e\u003ch2 id=\"evals-shape-agent-behavior\"\u003eEvals shape agent behavior\u003c/h2\u003e\u003cp\u003eWe\u0026#x2019;ve been curating evaluations to measure and\u003c/p\u003e"
+    },
+    {
+      "title": "How Middleware Lets You Customize Your Agent Harness",
+      "link": "https://blog.langchain.com/how-middleware-lets-you-customize-your-agent-harness/",
+      "source": "LangChain Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-26T14:53:27Z",
+      "description": "\u003cp\u003eAgent harnesses are what help build an agent, they connect an LLM to its environment and let it do things.\u003c/p\u003e\u003cp\u003eWhen you\u0026#x2019;re building an agent, it\u0026#x2019;s likely you\u0026#x2019;ll want build an application specific agent harness. \u0026#x201C;Agent Middleware\u0026#x201D; empowers you to build on\u003c/p\u003e"
+    },
+    {
+      "title": "Gemini 3.1 Flash Live: Making audio AI more natural and reliable",
+      "link": "https://deepmind.google/blog/gemini-3-1-flash-live-making-audio-ai-more-natural-and-reliable/",
+      "source": "Google DeepMind Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-26T15:23:35Z",
+      "description": "Our latest voice model has improved precision and lower latency to make voice interactions more fluid, natural and precise."
+    },
+    {
+      "title": "Introducing Flaky Test Detection in Bitbucket Tests",
+      "link": "https://www.atlassian.com/blog/bitbucket/introducing-flaky-test-detection-in-bitbucket-tests",
+      "source": "Atlassian Developer Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-26T21:00:00Z",
+      "description": "\u003cp\u003eShip faster with signal, not noise Flaky tests erode trust in your pipeline, waste CI minutes, and slow down deployments....\u003c/p\u003e\n\u003cp\u003eThe post \u003ca href=\"https://www.atlassian.com/blog/bitbucket/introducing-flaky-test-detection-in-bitbucket-tests\"\u003eIntroducing Flaky Test Detection in Bitbucket Tests\u003c/a\u003e appeared first on \u003ca href=\"https://www.atlassian.com/blog\"\u003eWork Life by Atlassian\u003c/a\u003e.\u003c/p\u003e\n"
+    },
+    {
+      "title": "Gemini 3.1 Flash Live: Making audio AI more natural and reliable",
+      "link": "https://deepmind.google/blog/gemini-3-1-flash-live-making-audio-ai-more-natural-and-reliable/",
+      "source": "DeepMind",
+      "category": "tech",
+      "publishedAt": "2026-03-26T15:23:35Z",
+      "description": "Our latest voice model has improved precision and lower latency to make voice interactions more fluid, natural and precise."
+    },
+    {
+      "title": "AI-Assisted Java Application Development with Agent Skills",
+      "link": "https://blog.jetbrains.com/idea/2026/03/ai-assisted-java-application-development-with-agent-skills/",
+      "source": "IntelliJ IDEA : IntelliJ IDEA – the IDE for Professional Development in Java and Kotlin | The JetBrains Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-26T13:21:10Z",
+      "description": "Agent-assisted development is quickly becoming a common mode of software development. New techniques are emerging to help LLMs generate code that matches your preferences and standards. One common approach is to create an AGENTS.md, CLAUDE.md, or GEMINI.md file with project details, build instructions, and coding guidelines. The AI agent loads this file into context on [\u0026#8230;]"
+    },
+    {
+      "title": "A one-line Kubernetes fix that saved 600 hours a year",
+      "link": "https://blog.cloudflare.com/one-line-kubernetes-fix-saved-600-hours-a-year/",
+      "source": "Cloudflare Blog",
+      "category": "tech",
+      "publishedAt": "2026-03-26T13:00:00Z",
+      "description": " When we investigated why our Atlantis instance took 30 minutes to restart, we discovered a bottleneck in how Kubernetes handles volume permissions. By adjusting the fsGroupChangePolicy, we reduced restart times to 30 seconds. "
+    },
+    {
+      "title": "The new AI literacy: Insights from student developers",
+      "link": "https://cloud.google.com/blog/topics/developers-practitioners/how-uc-berkeley-students-use-ai-as-a-learning-partner/",
+      "source": "AI \u0026 Machine Learning",
+      "category": "tech",
+      "publishedAt": "2026-03-26T17:00:00Z",
+      "description": "\u003cdiv class=\"block-paragraph_advanced\"\u003e\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eAI has made it easier than ever for student developers to work efficiently, tackle harder problems, and pursue ambitious projects. But for students earning technical degrees, these new capabilities also create genuine tensions around learning. \u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eHow much should I use AI? What should I use it for? \u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eAs 90% of technology professionals now use AI in their daily work according to \u003c/span\u003e\u003ca href=\"https://dora.dev/dora-report-2025/\" rel=\"noopener\" target=\"_blank\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eGoogle's DORA 2025 report\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e, understanding how the next generation navigates these tools matters more than ever. Contrary to fears that students use AI to cheat or are becoming intellectually lazy, our research with UC Berkeley students reveals something different. Students treated AI as a learning partner rather than a shortcut, using it strategically for some tasks while deliberately turning it off for others. \u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eAs AI becomes foundational to software development, the question isn't whether to adopt these tools but how to work with them thoughtfully. The students at UC Berkeley are showing us one answer: with curiosity, caution, and a commitment to genuine learning that technology can support but never replace.\u003c/span\u003e\u003c/p\u003e\n\u003ch3\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eThe research\u003c/span\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eOur team of four student researchers (Andrew Harlan, Mindy Tsai, Kenny Ly Hong, and Karissa Wong) conducted a mixed methods research project with UC Berkeley students in Computer Science, Electrical Engineering, Design, and Data Science to understand how they're integrating AI into their academic work. \u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eA separate UC Berkeley study (conducted by Edward Fraser, Jessie Deng, and Eileen Thai) used eye-tracking technology to observe how developers with one to five years of experience actually interact with AI coding assistants. Both student teams were supported by dedicated mentors, with Googlers Harini Sampath, Becky Sohn, and Derek DeBellis advising the mixed methods research, and UC Berkeley Professor John Chuang, PhD, advising the eye-tracking study.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eTogether, these studies reveal three key insights about how students balance AI's capabilities with their need to develop genuine expertise. The patterns emerging among students closely mirror what DORA research has found in professional developers.\u003c/span\u003e\u003c/p\u003e\n\u003ch3\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eFinding #1: The 24/7 office hour\u003c/span\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eAI as a tutor, not a shortcut\u003c/span\u003e\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eWhen asked to describe their relationship with AI, every student in our study used educational terms. They referred to  AI as a \"tutor\" or \"teacher,\" not an assistant or productivity tool.\u003c/span\u003e\u003c/p\u003e\n\u003cp style=\"padding-left: 40px;\"\u003e\u003cspan style=\"font-style: italic; vertical-align: baseline;\"\u003e\"AI is a teacher...in the sense that it is most helpful for understanding dense content and potentially parts of code that are prewritten in the database to allow for fundamental understanding of the project.\"\u003c/span\u003e\u003c/p\u003e\n\u003cp style=\"padding-left: 40px;\"\u003e\u003cspan style=\"font-style: italic; vertical-align: baseline;\"\u003e\"I use [AI] as my own private tutor...to [cover] any specific topics in the classes or lectures...not just in CS classes but in all classes.\"\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eThis framing matters because it reveals strategic use rather than dependency. Rather than asking AI to complete assignments, students described using AI metacognitively to identify gaps in their knowledge, clarify confusing concepts, and guide their learning process. They used AI to summarize academic papers mentioned in lectures so they could decide which ones warranted deeper reading. They asked AI to explain why their code produced specific errors.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eOne student explained their workflow:\u003c/span\u003e\u003c/p\u003e\n\u003cp style=\"padding-left: 40px;\"\u003e\u003cspan style=\"font-style: italic; vertical-align: baseline;\"\u003e\"When I don't understand what my professor is explaining, I ask AI to help me understand the concept or what a piece of code is doing. If I don't know how to begin a lab, I give the prompt to AI to figure out where to start, then write the code myself and ask AI to correct my work.\"\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eFor students with learning disabilities, this constant availability addresses a real access gap:\u003c/span\u003e\u003c/p\u003e\n\u003cp style=\"padding-left: 40px;\"\u003e\u003cspan style=\"font-style: italic; vertical-align: baseline;\"\u003e\"As a student with a learning disability, I need more time to understand a problem. AI has helped me a lot—it's like having a 24/7 TA.\"\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eBy extending access beyond limited office hours, AI allows students to iterate on their understanding without waiting for help. This frees up cognitive space for higher-level thinking:\u003c/span\u003e\u003c/p\u003e\n\u003cp style=\"padding-left: 40px;\"\u003e\u003cspan style=\"font-style: italic; vertical-align: baseline;\"\u003e\"I spend less time actually coding and more time on big picture ideation. Now, my time is spent thinking through logic, concepts, and coming up with ideas creatively, rather than producing code manually.\"\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eThese accounts portray AI as a scaffold for exploration rather than a producer of finished work. This mirrors what DORA research found: when AI handles routine toil, developers can focus more energy on delivering user value.\u003c/span\u003e\u003c/p\u003e\n\u003ch3\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eFinding #2: Active resistance to overdependence\u003c/span\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eBuilding guardrails to protect learning\u003c/span\u003e\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eDespite embracing AI as a learning tool, students expressed genuine anxiety about becoming too dependent on it.\u003c/span\u003e\u003c/p\u003e\n\u003cp style=\"padding-left: 40px;\"\u003e\u003cspan style=\"font-style: italic; vertical-align: baseline;\"\u003e\"If AI disappeared, I'd struggle more with figuring out how to solve things on my own.\"\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eIn a recent study using EEG to measure brain activity during essay writing, researchers found that AI users showed weaker cognitive engagement patterns compared to those using search engines or no tools, and frequent AI users who later wrote without assistance remembered less of their content and felt less ownership over it, what the authors termed \"cognitive debt”.\u003csup\u003e1\u003c/sup\u003e\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eOur research revealed a positive signal: rather than passively accepting this risk, students responded by establishing deliberate boundaries.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eOne mechanical engineering student described how she's developed a competency-based system over years of working with electronics: \u003c/span\u003e\u003c/p\u003e\n\u003cp style=\"padding-left: 40px;\"\u003e\u003cspan style=\"font-style: italic; vertical-align: baseline;\"\u003e\"When I use basic sensors like a servo or ultrasonic, I can still code that myself. But when I have more complex sensors where I don't necessarily know the exact functions, that's when I'll use AI.\" She explained her reasoning: \"I have the background to understand why things aren't working, but I don't always know the direct language to fix it, so AI is good for helping overcome that.\"\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eFor a recent project building a tactile storytelling tool, she knew the basic concept but needed help structuring the counting and comparison system. \"AI was really useful in setting up that structure, but I still had to code after to fine-tune it.\" She's clear about the division of labor: \"I'm still working with doing the code myself. I wouldn't say that I'm just handing it off like a technical expert. I'm working in tandem with it. I have to be the initiator of what I want it to actually do. If I just give it a blind request, it's not useful at all.\"\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eEven when students do engage AI, they often set explicit rules:\u003c/span\u003e\u003c/p\u003e\n\u003cp style=\"padding-left: 40px;\"\u003e\u003cspan style=\"font-style: italic; vertical-align: baseline;\"\u003e\"Sometimes I tell AI not to give me the full answer, just to guide me in the right direction.\"\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eStudents have developed several specific strategies to prevent overreliance:\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eLimiting access to powerful models:\u003c/strong\u003e\u003c/p\u003e\n\u003cp style=\"padding-left: 40px;\"\u003e\u003cspan style=\"font-style: italic; vertical-align: baseline;\"\u003e\"I don't want to pay for AI tools because it could lead me to overuse the models.\"\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eAlternating between assisted and unassisted work:\u003c/strong\u003e\u003c/p\u003e\n\u003cp style=\"padding-left: 40px;\"\u003e\u003cspan style=\"font-style: italic; vertical-align: baseline;\"\u003e\"I have actually gone back to hand-coding for certain things, like a for-loop for example.\"\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eWarning against \"vibe coding\":\u003c/strong\u003e\u003c/p\u003e\n\u003cp style=\"padding-left: 40px;\"\u003e\u003cspan style=\"font-style: italic; vertical-align: baseline;\"\u003e\"AI tools can definitely be a good companion to boost developer productivity. However, one needs to be very mindful and not get used to vibe coding. It's very important to understand and validate the code AI is generating and use it appropriately.\"\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eThis anxiety is itself metacognitive awareness. Students recognize that the path of least resistance may not be the path of greatest learning. This mirrors DORA's findings: despite 90% adoption, about 30% of practitioners report little to no trust in AI-generated code. Effective AI use requires mastering critical evaluation and verification, not just adoption.\u003c/span\u003e\u003c/p\u003e\n\u003ch3\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eFinding #3: Knowing when to use AI and when to turn it off\u003c/span\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eWhat the eye-tracking data reveals\u003c/span\u003e\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eA separate study using eye-tracking technology provides behavioral validation. When researchers observed developers with one to five years of experience interacting with AI coding assistants, they found stark differences in AI engagement depending on task type:\u003c/span\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eDuring interpretive tasks\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e requiring deep understanding: \u0026lt;1% visual attention on AI\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eDuring mechanical tasks\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e like boilerplate code: 19% visual attention on AI\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eDevelopers actively ignored AI suggestions during complex work, even when those suggestions were accurate and could save time. AI creates cognitive load during deep understanding work, and experienced developers know when to turn it off.\u003c/span\u003e\u003c/p\u003e\n\u003ch3\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eStrategic selectivity, not blanket adoption\u003c/span\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eStudents in our interviews echoed this context-dependent approach:\u003c/span\u003e\u003c/p\u003e\n\u003cp style=\"padding-left: 40px;\"\u003e\u003cspan style=\"font-style: italic; vertical-align: baseline;\"\u003e\"I typically use AI to generate ideas for a starting point.\"\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"font-style: italic; vertical-align: baseline;\"\u003e\"Despite knowing AI was allowed, I wanted to go through the friction of learning and failing and having space for creativity.\"\u003c/span\u003e\u003c/p\u003e\n\u003ch3\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eCustomization matters\u003c/span\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eMost AI coding assistants now let developers toggle inline suggestions, enable on-demand only modes, or adjust suggestion frequency. By experimenting with these settings, developers can align AI behavior with the cognitive demands of different tasks, reducing disruption during deep work while maintaining assistance for routine tasks.\u003c/span\u003e\u003c/p\u003e\n\u003ch3\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eWhat this means for the industry\u003c/span\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eStudents are modeling the future of AI-augmented development\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eThe students in these studies are ahead of the curve. They've developed a literacy that knows when to engage AI, how to verify its output, and when to work manually to preserve understanding. For teams navigating AI adoption, the student experience offers direction:\u003c/span\u003e\u003c/p\u003e\n\u003col\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: decimal; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eExperiment with customization\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e to find configurations that support rather than disrupt work\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: decimal; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eBuild verification practices\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e into workflows rather than accepting suggestions uncritically\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: decimal; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eCreate space for unassisted work\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e on complex problems where understanding matters more than speed\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eAs AI becomes foundational to software development, the question isn't whether to adopt these tools but how to work with them thoughtfully. The students at UC Berkeley are showing us one answer: with curiosity, caution, and a commitment to genuine learning that technology can support but never replace.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eTo learn more about how professionals across the industry are navigating AI adoption, \u003c/span\u003e\u003ca href=\"https://dora.dev/dora-report-2025/\" rel=\"noopener\" target=\"_blank\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003edownload the DORA 2025 State of AI-assisted Software Development Report\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e. You can also \u003c/span\u003e\u003ca href=\"https://dora.dev/insights/tags/uc-berkeley/\" rel=\"noopener\" target=\"_blank\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eread the full research articles from our collaboration with researchers at UC Berkeley.\u003c/span\u003e\u003c/a\u003e\u003c/p\u003e\n\u003chr/\u003e\n\u003cp\u003e\u003csup\u003e\u003cem\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e1. Kosmyna, Nataliya, et al. \"Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task.\" \u003c/span\u003e\u003cspan style=\"vertical-align: baseline;\"\u003earXiv\u003c/span\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e, 10 June 2025, doi:10.48550/arXiv.2506.08872. Accessed 28 Jan. 2026.\u003c/span\u003e\u003c/em\u003e\u003c/sup\u003e\u003c/p\u003e\u003c/div\u003e"
+    },
+    {
+      "title": "How FM Logistic tackled the traveling salesman problem at warehouse scale with AlphaEvolve",
+      "link": "https://cloud.google.com/blog/products/ai-machine-learning/how-fm-logistic-tackled-the-traveling-salesman-problem-at-warehouse-scale-with-alphaevolve/",
+      "source": "AI \u0026 Machine Learning",
+      "category": "tech",
+      "publishedAt": "2026-03-26T16:00:00Z",
+      "description": "\u003cdiv class=\"block-paragraph_advanced\"\u003e\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eThe traveling salesman problem asks a deceptively simple question: What's the shortest route that visits every point exactly once? It's one of the hardest problems in computer science, and mathematicians have been working on it for nearly a century. It's also what \u003c/span\u003e\u003ca href=\"https://www.fmlogistic.com/about-us/\" rel=\"noopener\" target=\"_blank\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eFM Logistic\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e's warehouse operators face every day in Poland.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eThe facility spans eight football fields. It holds over 17,700 picking locations. And across every shift, up to several dozen operators on ride-on electric trucks crisscross the floor collecting cartons, each one navigating dozens of storage locations per tour. Every unnecessary step adds up: in time, in wear on the fleet, and in delayed fulfillment.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eFM Logistic, a global logistics provider operating in over 14 countries, had already optimized their routing once. Their existing model used a fast, cost-prioritized allocation logic built for real-time responsiveness. It worked well, but it made decisions step by step, which limited how well it could coordinate routes across the full warehouse. With dozens of operators working the same floor across shifts, even a small routing improvement would compound quickly.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eSo they turned to \u003c/span\u003e\u003ca href=\"https://cloud.google.com/blog/products/ai-machine-learning/alphaevolve-on-google-cloud?e=0\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eAlphaEvolve\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e on Google Cloud.\u003c/span\u003e\u003c/p\u003e\n\u003ch3\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eTeaching an AI to write better algorithms\u003c/span\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eAlphaEvolve is an evolutionary coding agent that generates and refines algorithms autonomously using Gemini models. Rather than calculating a schedule from fixed rules, it works as a coding partner: writing new code, scoring it, and iterating until it finds a better solution than the one it started with.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eThe team didn't start from scratch. They gave AlphaEvolve a \"seed\" program: their existing algorithm, which made routing decisions one step at a time based on what looked best in the moment. This gave the agent a working baseline that already solved the problem, just not optimally. From there, AlphaEvolve used Gemini to generate variations of this code, introducing mutations and new logic to see if it could beat the human-designed original.\u003c/span\u003e\u003c/p\u003e\n\u003ch3\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eMeasuring what good looks like\u003c/span\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eFor AlphaEvolve to improve, it needs a way to measure how well each algorithm performs. FM Logistic designed a custom evaluation function using a representative dataset of 60 tours (over one hour of workforce data), letting the agent test thousands of generated algorithms against real-world conditions.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eThe evaluation scored every new piece of code on a primary goal: minimize the average travel distance per pick, while avoiding operational failures. The team built in specific penalties to steer the model away from unworkable solutions — things like exceeding forklift capacity, missing pending orders, assigning the same box twice, violating FIFO priority for older orders, or exceeding the computation time required for real-time operations.\u003c/span\u003e\u003c/p\u003e\n\u003ch3\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eThe results\u003c/span\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eThe new routing logic delivered immediate, measurable gains over the previous best baseline:\u003c/span\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e10.4% improvement in routing efficiency over the previous best solution.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: disc; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e15,000+ fewer kilometers of warehouse travel per year at full operational scale.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eThat efficiency gives FM Logistic room to handle larger order volumes with the same team and equipment, without adding headcount or expanding their fleet.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"font-style: italic; vertical-align: baseline;\"\u003e\"Through our partnership with Google Cloud and the implementation of AlphaEvolve and Gemini, we further optimized our routing approach for fast-moving operations,\" \u003c/span\u003e\u003cspan style=\"vertical-align: baseline;\"\u003esaid Rodolphe Bey, Group CIO at FM Logistic.\u003c/span\u003e\u003cspan style=\"font-style: italic; vertical-align: baseline;\"\u003e \"The 10.4% improvement was achieved on top of an already highly optimized baseline, where further gains are typically hard to come by. This translates directly to faster fulfillment, improved working conditions for our teams, and reduced wear on our fleet.\"\u003c/span\u003e\u003c/p\u003e\n\u003ch3\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eWhat the winning algorithm actually does\u003c/span\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eBy running a series of experiments, each generating hundreds of candidate programs, AlphaEvolve developed a new algorithm that outperformed the previous best human-engineered one. The result is a set of clear, human-readable rules that warehouse teams can review and adjust as needs change.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eThe three core improvements:\u003c/span\u003e\u003c/p\u003e\n\u003col\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: decimal; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eDensity-based starting points (Anchor selection):\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e The previous system chose a starting mission based on the single location where the most missions overlapped. The new algorithm looks more broadly, identifying clusters of items that are close together and using those dense areas as \"starting anchors\" for building routes. Every tour begins with a highly efficient core.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: decimal; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eTwo-step filtering with distance simulation:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e To maintain real-time speed, the algorithm uses a two-stage process. First, a quick filter eliminates orders that do not fit the route's logic. Second, a precise distance simulation runs only on the best remaining candidates to find the most efficient path, without slowing down warehouse operations.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli aria-level=\"1\" style=\"list-style-type: decimal; vertical-align: baseline;\"\u003e\n\u003cp role=\"presentation\"\u003e\u003cstrong style=\"vertical-align: baseline;\"\u003eFlexible route building:\u003c/strong\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e If the algorithm can’t fill a truck efficiently around a specific starting point, it doesn’t force a bad route. It returns those orders to the main pool so they can be picked up by a better-fitting route later, improving efficiency across the entire warehouse.\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ol\u003e\n\u003ch3\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eWhat’s next\u003c/span\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"vertical-align: baseline;\"\u003eThe Poland pilot demonstrated what evolutionary AI can do for complex routing at warehouse scale. FM Logistic is now exploring extensions — applying the algorithm to other high-volume e-commerce facilities, researching how \u003c/span\u003e\u003ca href=\"https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/AlphaEvolve.pdf\" rel=\"noopener\" target=\"_blank\"\u003e\u003cspan style=\"text-decoration: underline; vertical-align: baseline;\"\u003eAlphaEvolve\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"vertical-align: baseline;\"\u003e might help optimize road transport for less-than-truckload shipments, and investigating AI-driven product placement inside warehouses to further cut travel distances.\u003c/span\u003e\u003c/p\u003e\n\u003chr/\u003e\n\u003cp\u003e\u003csup\u003e\u003cspan\u003e\u003cspan style=\"font-style: italic; vertical-align: baseline;\"\u003eThis project was a collaboration between the FM logistic team including: Mateusz Klimowicz, Jarosław Urbański, Florent Martin and Alberto Brogio and the AI for Science team at Google Cloud including (but not limited to): Kartik Sanu, Laurynas Tamulevičius, Nicolas Stroppa, Chris Page,Gary Ng, John Semerdjian, Skandar Hannachi, Vishal Agarwal and Anant Nawalgaria as well as our partners at Google DeepMind \u003c/span\u003e\u003c/span\u003e\u003c/sup\u003e\u003c/p\u003e\u003c/div\u003e"
+    }
+  ],
+  "generatedAt": "2026-03-27T07:13:18.557408453+09:00"
+}
